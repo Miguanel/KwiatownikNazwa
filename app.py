@@ -288,26 +288,58 @@ def szukaj_terapeutyczna():
 
 
 # --- LOGIKA GENERATORA ---
-
 @app.route('/generator', methods=['GET', 'POST'])
 def generator():
     # 1. Przygotowanie danych o roślinach i ich częściach
     all_plants_ids = get_all_plants_list()
     plants_data = []
-    all_properties = set()  # Zbiór wszystkich właściwości do podpowiedzi
+    all_properties = set()
 
     for pid in all_plants_ids:
         data = get_plant_data(pid)
         if data and 'czesci_rosliny' in data:
-            parts_info = {}  # Słownik: nazwa_części -> właściwości
+            parts_info = {}
+
+            # Pobieramy ostrzeżenie ogólne dla całej rośliny i czyścimy je
+            raw_general_warn = data.get('ostrzezenia')
+            general_warn_str = ""
+            if isinstance(raw_general_warn, list):
+                general_warn_str = " ".join(raw_general_warn)
+            elif isinstance(raw_general_warn, str):
+                general_warn_str = raw_general_warn
 
             for part_name, part_data in data['czesci_rosliny'].items():
-                # Pobieramy właściwości (np. "moczopędne, przeciwzapalne")
+                # A. Właściwości
                 props_text = part_data.get('wlasciwości', '') or part_data.get('wlasciwosci', '')
-                parts_info[part_name] = props_text
 
-                # Dodajemy pojedyncze słowa do listy podpowiedzi (dla wyszukiwarki)
-                # Czyścimy z przecinków i spacji
+                # B. Składniki aktywne
+                ingr_raw = part_data.get('skladniki_aktywne', [])
+                if isinstance(ingr_raw, list):
+                    ingr_text = ", ".join(ingr_raw)
+                else:
+                    ingr_text = str(ingr_raw) if ingr_raw else ""
+
+                # C. Ostrzeżenia dla części
+                part_warn_raw = part_data.get('ostrzezenia')
+                part_warn_str = ""
+
+                if part_warn_raw:
+                    # Jeśli część ma własne ostrzeżenie
+                    if isinstance(part_warn_raw, list):
+                        part_warn_str = " ".join(part_warn_raw)
+                    else:
+                        part_warn_str = str(part_warn_raw)
+                else:
+                    # Fallback: Jeśli część nie ma, bierzemy ogólne
+                    part_warn_str = general_warn_str
+
+                # D. Zapisujemy dane
+                parts_info[part_name] = {
+                    'props': props_text,
+                    'ingr': ingr_text,
+                    'warn': part_warn_str  # To zawsze jest teraz stringiem
+                }
+
                 if props_text:
                     words = [p.strip().lower() for p in props_text.replace(',', ' ').split() if len(p) > 3]
                     all_properties.update(words)
@@ -315,43 +347,31 @@ def generator():
             plants_data.append({
                 'slug': pid,
                 'nazwa_pl': data.get('nazwa_pl', 'Nieznana'),
-                'parts': parts_info,  # Przekazujemy też właściwości części!
-                'warnings': data.get('ostrzezenia', '')
+                'parts': parts_info,
+                'warnings': general_warn_str  # Przekazujemy czysty string do atrybutu HTML
             })
 
-    # Sortujemy rośliny alfabetycznie
     plants_data.sort(key=lambda x: x['nazwa_pl'])
 
-    # 2. Obsługa komentarzy (Dziennik Laboratoryjny)
-    comments = Comment.query.filter_by(plant_id='generator_tool').order_by(Comment.date_posted.desc()).all()
+    # 2. Obsługa komentarzy
+    comments = Comment.query.filter_by(plant_id='generator').order_by(Comment.date_posted.desc()).all()
 
     if request.method == 'POST':
-        # Obsługa dodawania notatki
-        if not current_user.is_authenticated:
-            flash('Musisz być zalogowany, aby zapisać notatkę.', 'warning')
-            return redirect(url_for('login'))
-
-        content = request.form.get('content')
-        is_private = request.form.get('is_private') == 'on'
-
-        if content:
-            new_comment = Comment(
-                content=content,
-                user_id=current_user.id,
-                plant_id='generator_tool',
-                is_private=is_private,
-                author=current_user
-            )
-            db.session.add(new_comment)
-            db.session.commit()
-            flash('Zapisano notatkę do dziennika.', 'success')
+        if current_user.is_authenticated:
+            content = request.form.get('content')
+            is_private = request.form.get('is_private') == 'on'
+            if content:
+                new_comment = Comment(content=content, user_id=current_user.id, plant_id='generator',
+                                      is_private=is_private)
+                db.session.add(new_comment)
+                db.session.commit()
+                flash('Dodano notatkę do generatora.', 'success')
             return redirect(url_for('generator'))
+        else:
+            flash('Musisz być zalogowany, aby dodawać notatki.', 'danger')
 
-    return render_template('generator.html',
-                           plants=plants_data,
-                           suggestions=sorted(list(all_properties)),
+    return render_template('generator.html', plants=plants_data, suggestions=sorted(list(all_properties)),
                            comments=comments)
-
 # --- AUTENTYKACJA ---
 
 @app.route('/register', methods=['GET', 'POST'])

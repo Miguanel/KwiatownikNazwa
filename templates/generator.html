@@ -22,10 +22,10 @@
         border-radius: 0;
     }
 
-    /* --- KARTY WYBORU CZĘŚCI (To jest nowość!) --- */
+    /* --- KARTY WYBORU CZĘŚCI --- */
     .parts-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
         gap: 15px;
         margin-top: 15px;
     }
@@ -53,19 +53,27 @@
     .part-name {
         font-family: 'Playfair Display', serif;
         font-weight: bold;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         color: #3e4a3d;
-        margin-bottom: 5px;
+        margin-bottom: 8px;
         text-transform: capitalize;
         border-bottom: 1px dashed #ddd;
         padding-bottom: 5px;
     }
 
-    .part-props {
-        font-size: 0.9rem;
-        color: #666;
-        font-style: italic;
-        line-height: 1.4;
+    .part-info-block {
+        font-size: 0.85rem;
+        margin-bottom: 6px;
+        color: #555;
+        line-height: 1.3;
+    }
+    .part-info-label {
+        font-weight: bold;
+        color: #2d5a27;
+        display: block;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        margin-bottom: 2px;
     }
 
     /* --- TABELA --- */
@@ -79,39 +87,85 @@
         background: #3e4a3d;
         color: white;
         padding: 12px;
-        text-align: center;
+        text-align: left;
         font-family: 'Playfair Display', serif;
         letter-spacing: 0.5px;
+        border-right: 1px solid rgba(255,255,255,0.1);
     }
     .lab-table td {
-        padding: 10px;
+        padding: 12px;
         border-bottom: 1px solid #eee;
-        text-align: center;
         vertical-align: middle;
     }
     .lab-table tr:last-child {
         border-bottom: 2px solid #3e4a3d;
     }
 
+    .col-ingredients {
+        font-size: 0.8rem;
+        color: #555;
+        line-height: 1.3;
+        font-style: italic;
+    }
+
     .vol-input {
-        width: 80px;
+        width: 70px;
         text-align: center;
         border: 1px solid #ccc;
         padding: 5px;
         font-weight: bold;
         font-family: 'Crimson Text', serif;
     }
+    .vol-input:focus {
+        border-color: #2d5a27;
+        background: #f1f8e9;
+        outline: none;
+    }
 
+    /* Ikony */
     .lock-btn {
         background: none;
         border: none;
         cursor: pointer;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         color: #ccc;
+        transition: 0.2s;
     }
+    .lock-btn:hover { color: #888; }
     .lock-btn.locked { color: #b8860b; }
 
-    /* Sekcja Filtrowania */
+    .delete-btn {
+        border: none;
+        background: none;
+        color: #c62828;
+        font-size: 1.5rem;
+        cursor: pointer;
+        line-height: 1;
+        transition: 0.2s;
+    }
+    .delete-btn:hover { color: #ff0000; transform: scale(1.2); }
+
+    /* STYL OSTRZEŻENIA (Trójkąt) */
+    .warning-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #d32f2f;
+        font-size: 1.3rem;
+        margin-left: 10px;
+        vertical-align: middle;
+        animation: pulse 2s infinite;
+    }
+    .warning-btn:hover {
+        transform: scale(1.2);
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.1); opacity: 0.8; }
+        100% { transform: scale(1); opacity: 1; }
+    }
+
     .filter-box {
         background: #e9f0e8;
         padding: 20px;
@@ -132,11 +186,11 @@
         <div class="row g-4 align-items-end mb-4">
             <div class="col-md-6">
                 <label><strong>Docelowa Objętość (ml):</strong></label>
-                <input type="number" id="totalVolume" value="500" step="50" class="retro-input" oninput="recalculateAll()">
+                <input type="number" id="totalVolume" value="500" step="50" class="retro-input" oninput="recalculate()">
             </div>
             <div class="col-md-6">
                 <label><strong>Typ Ekstrakcji (Proporcja):</strong></label>
-                <select id="ratio" class="retro-select" onchange="recalculateAll()">
+                <select id="ratio" class="retro-select" onchange="recalculate()">
                     <option value="5">1:5 (Nalewka klasyczna)</option>
                     <option value="10">1:10 (Nalewka lekka / Odwar)</option>
                     <option value="3">1:3 (Intrakt mocny)</option>
@@ -173,7 +227,7 @@
 
         <div id="partsContainer" style="margin-top: 20px; display: none; padding: 20px; background: #f9f9f9; border: 1px solid #ddd;">
             <strong style="display: block; margin-bottom: 15px; color: #3e4a3d; font-size: 1.1rem;">
-                Dostępne surowce (Kliknij, aby dodać do tabeli):
+                Dostępne surowce (Kliknij kartę, aby dodać):
             </strong>
 
             <div id="partButtons" class="parts-grid"></div>
@@ -186,27 +240,26 @@
         <h3 style="margin-top: 0; color: #2d5a27; display: flex; justify-content: space-between; align-items: center;">
             2. Protokół Składników
             <small style="font-size: 0.9rem; color: #666; font-weight: normal;">
-                <i class="bi bi-info-circle"></i> Zmiana wybranej wartości zamraża jej automatyczną zmiane 🔒
+                <i class="bi bi-info-circle"></i> Zmiana wartości zamraża ją automatycznie 🔒
             </small>
         </h3>
 
         <table class="lab-table">
             <thead>
                 <tr>
-                    <th style="text-align: left;">Roślina (Surowiec)</th>
-                    <th>Waga (g)</th>
-                    <th>Płyn (ml)</th>
-                    <th>Status</th>
-                    <th>Usuń</th>
+                    <th style="width: 30%;">Roślina (Surowiec)</th>
+                    <th style="width: 15%; text-align: center;">Waga (g)</th>
+                    <th style="width: 15%; text-align: center;">Płyn (ml)</th>
+                    <th style="width: 30%;">Składniki aktywne</th>
+                    <th style="width: 10%; text-align: center;">Usuń</th>
                 </tr>
             </thead>
-            <tbody id="ingredientsTableBody">
-                </tbody>
+            <tbody id="ingredientsTableBody"></tbody>
             <tfoot style="font-weight: bold; background: #fdfaf0;">
                 <tr>
-                    <td style="text-align: left; padding: 15px;">RAZEM:</td>
-                    <td id="totalWeightDisplay">0.0 g</td>
-                    <td id="totalVolumeDisplay">0.0 ml</td>
+                    <td style="padding: 15px;">RAZEM:</td>
+                    <td id="totalWeightDisplay" style="text-align: center;">0.0 g</td>
+                    <td id="totalVolumeDisplay" style="text-align: center;">0.0 ml</td>
                     <td colspan="2"></td>
                 </tr>
             </tfoot>
@@ -221,18 +274,13 @@
 
     <div class="comments-section">
         <h3 style="color: #3e4a3d;">Dziennik Laboratoryjny</h3>
-
         {% if current_user.is_authenticated %}
             <form method="POST" action="{{ url_for('generator') }}" style="background: #fdfaf0; padding: 20px; border: 1px solid #d1c7a7; margin-bottom: 30px;">
                 <textarea name="content" placeholder="Zapisz swoje obserwacje..." required style="width: 100%; height: 80px; padding: 10px; border: 1px solid #ccc; margin-bottom: 10px; font-family: inherit;"></textarea>
-
                 <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
                     <input type="checkbox" name="is_private" id="priv_note" style="cursor: pointer;">
-                    <label for="priv_note" style="cursor: pointer; font-weight: bold; color: #3e4a3d;">
-                        🔒 Notatka prywatna
-                    </label>
+                    <label for="priv_note" style="cursor: pointer; font-weight: bold; color: #3e4a3d;">🔒 Notatka prywatna</label>
                 </div>
-
                 <button type="submit" class="btn-green" style="border: none; cursor: pointer; background: #3e4a3d; color: white; padding: 8px 16px;">Dodaj wpis</button>
             </form>
         {% else %}
@@ -242,13 +290,7 @@
         <div class="comments-list">
             {% for comment in comments %}
                 {% if (not comment.is_private) or (current_user.is_authenticated and comment.user_id == current_user.id) %}
-                <div style="
-                    margin-bottom: 15px;
-                    padding: 15px;
-                    background: {{ '#fff9c4' if comment.is_private else '#fff' }};
-                    border-left: 4px solid {{ '#fbc02d' if comment.is_private else '#3e4a3d' }};
-                    box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-
+                <div style="margin-bottom: 15px; padding: 15px; background: {{ '#fff9c4' if comment.is_private else '#fff' }}; border-left: 4px solid {{ '#fbc02d' if comment.is_private else '#3e4a3d' }}; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
                     <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: #666; margin-bottom: 5px;">
                         <strong>{{ comment.author.username }}</strong>
                         <span>{{ comment.date_posted.strftime('%Y-%m-%d %H:%M') }}</span>
@@ -263,8 +305,31 @@
     </div>
 </div>
 
+<div class="modal fade" id="warningModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="border: 2px solid #d32f2f; background: #fff5f5;">
+            <div class="modal-header" style="border-bottom: 1px solid #ffcdd2; background: #ffebee;">
+                <h5 class="modal-title" style="color: #c62828; font-weight: bold;">
+                    <i class="bi bi-exclamation-triangle-fill"></i> Ostrzeżenie
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="color: #333; font-size: 1.1rem;">
+                <p id="warningModalText">...</p>
+            </div>
+            <div class="modal-footer" style="border-top: 1px solid #ffcdd2; background: #ffebee;">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Rozumiem</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script>
+    // --- ZMIENNE GLOBALNE ---
     let ingredients = [];
+    let currentPlantName = "";
+    let currentPlantPartsData = {};
+    let currentPlantWarnings = ""; // NOWE: Przechowuje ogólne ostrzeżenie dla rośliny
 
     const plantSelector = document.getElementById('plantSelector');
     const partsContainer = document.getElementById('partsContainer');
@@ -283,11 +348,12 @@
             const opt = options[i];
             if (opt.disabled) continue;
 
-            const partsData = JSON.parse(opt.getAttribute('data-parts') || '{}');
-            // Złączamy wszystkie opisy w jeden ciąg
+            let partsData = {};
+            try { partsData = JSON.parse(opt.getAttribute('data-parts') || '{}'); } catch(e){}
+
             let allProps = "";
             for (let key in partsData) {
-                allProps += partsData[key] + " ";
+                allProps += (partsData[key].props || "") + " ";
             }
             allProps = allProps.toLowerCase();
 
@@ -303,71 +369,79 @@
         partsContainer.style.display = 'none';
     });
 
-    // --- 2. WYBÓR ROŚLINY (Generowanie Kart) ---
+    // --- 2. WYBÓR ROŚLINY ---
     plantSelector.addEventListener('change', function() {
         const option = this.options[this.selectedIndex];
-        // data-parts zawiera słownik: { "kora": "ściągające, przeciwzapalne", "liść": "..." }
-        const partsData = JSON.parse(option.getAttribute('data-parts'));
-        const warnings = option.getAttribute('data-warnings');
-        const plantName = option.value;
-        const currentSearch = propSearch.value.toLowerCase();
 
-        // Ostrzeżenia
-        if (warnings && warnings !== 'None') {
-            warningsContainer.innerHTML = '<strong>⚠️ Ostrzeżenie dla gatunku:</strong> ' + warnings;
+        try {
+            currentPlantPartsData = JSON.parse(option.getAttribute('data-parts'));
+        } catch(e) {
+            currentPlantPartsData = {};
+        }
+
+        currentPlantName = option.value;
+
+        // Pobieramy ostrzeżenie ogólne (np. "Roślina toksyczna")
+        const warningsAttr = option.getAttribute('data-warnings');
+        currentPlantWarnings = (warningsAttr && warningsAttr !== 'None') ? warningsAttr : "";
+
+        // Wyświetlenie ostrzeżenia pod kartami (informacyjnie)
+        if (currentPlantWarnings.trim() !== '') {
+            warningsContainer.innerHTML = '<strong>⚠️ Ostrzeżenie dla gatunku:</strong> ' + currentPlantWarnings;
             warningsContainer.style.display = 'block';
         } else {
             warningsContainer.style.display = 'none';
         }
 
         partButtons.innerHTML = '';
-        const partsKeys = Object.keys(partsData);
+        const partsKeys = Object.keys(currentPlantPartsData);
 
         if (partsKeys.length > 0) {
             partsKeys.forEach(partName => {
-                const props = partsData[partName];
+                const data = currentPlantPartsData[partName];
+                const props = data.props || "Brak danych";
+                const ingr = data.ingr ? String(data.ingr) : "Brak danych";
 
-                // Podświetlenie szukanej frazy (opcjonalne bajery)
-                let displayProps = props;
-                if(currentSearch.length > 2) {
-                    const regex = new RegExp(`(${currentSearch})`, 'gi');
-                    displayProps = props.replace(regex, '<span style="background:#ffeb3b; font-weight:bold;">$1</span>');
-                }
-
-                // Tworzymy KARTĘ (div), a nie zwykły przycisk
                 let card = document.createElement('div');
                 card.className = 'part-card-btn';
-                card.onclick = () => addIngredient(plantName, partName);
+                card.onclick = () => addIngredientFromCurrent(partName);
 
                 card.innerHTML = `
                     <div class="part-name">${partName}</div>
-                    <div class="part-props">${displayProps}</div>
+                    <div class="part-info-block"><span class="part-info-label">Właściwości:</span> ${props}</div>
+                    <div class="part-info-block"><span class="part-info-label">Składniki:</span> <span style="color: #2d5a27;">${ingr}</span></div>
                 `;
-
                 partButtons.appendChild(card);
             });
-        } else {
-            // Fallback
-            let card = document.createElement('div');
-            card.className = 'part-card-btn';
-            card.innerHTML = `<div class="part-name">Ziele/Całość</div><div class="part-props">Brak szczegółowych danych</div>`;
-            card.onclick = () => addIngredient(plantName, "Ziele/Całość");
-            partButtons.appendChild(card);
         }
         partsContainer.style.display = 'block';
     });
 
-    // --- 3. LOGIKA LABORATORIUM ---
-    function addIngredient(name, part) {
+    // --- 3. DODAWANIE DO TABELI (POPRAWIONE) ---
+    function addIngredientFromCurrent(partName) {
+        const data = currentPlantPartsData[partName];
+
+        // --- LOGIKA OSTRZEŻEŃ ---
+        // 1. Sprawdź czy cześć ma swoje ostrzeżenie
+        let finalWarn = "";
+        if (data.warn && String(data.warn).trim() !== "") {
+            finalWarn = String(data.warn);
+        }
+        // 2. Jeśli nie ma, użyj ostrzeżenia ogólnego rośliny (fallback)
+        else if (currentPlantWarnings && currentPlantWarnings.trim() !== "") {
+            finalWarn = currentPlantWarnings;
+        }
+
         ingredients.push({
             id: Date.now(),
-            name: name,
-            part: part,
+            name: currentPlantName,
+            part: partName,
+            ingr: data.ingr || "Brak danych",
+            warn: finalWarn, // Zapisujemy znalezione ostrzeżenie
             volume: 0,
             locked: false
         });
         recalculate();
-        // Opcjonalnie: scroll do tabeli
         document.querySelector('.lab-table').scrollIntoView({behavior: 'smooth'});
     }
 
@@ -393,6 +467,7 @@
         }
     }
 
+    // --- 4. PRZELICZANIE ---
     function recalculate() {
         const totalVol = parseFloat(document.getElementById('totalVolume').value) || 0;
         const ratio = parseFloat(document.getElementById('ratio').value) || 5;
@@ -423,6 +498,7 @@
         render();
     }
 
+    // --- 5. RENDEROWANIE TABELI ---
     function render() {
         const tbody = document.getElementById('ingredientsTableBody');
         tbody.innerHTML = '';
@@ -432,30 +508,44 @@
             sumW += i.weight;
             sumV += i.volume;
 
+            // Logika wyświetlania ikony ostrzeżenia
+            let warningHtml = '';
+            const warningText = i.warn ? String(i.warn) : "";
+
+            if (warningText.trim().length > 0) {
+                // Dodajemy klasę 'pulse' dla lepszej widoczności
+                warningHtml = `
+                    <button class="warning-btn" onclick="showWarning(${i.id})" title="Kliknij, aby zobaczyć ostrzeżenie">
+                        <i class="bi bi-exclamation-triangle-fill"></i>
+                    </button>
+                `;
+            }
+
             const tr = document.createElement('tr');
             tr.innerHTML = `
-                <td style="text-align: left;">
-                    <strong style="color: #3e4a3d;">${i.name}</strong> <br>
+                <td style="text-align: left; vertical-align: top;">
+                    <div style="display: flex; align-items: center;">
+                        <strong style="color: #3e4a3d; font-size: 1.1rem; margin-right: 5px;">${i.name}</strong>
+                        ${warningHtml}
+                    </div>
                     <small style="color: #666;">Surowiec: ${i.part}</small>
                 </td>
-                <td style="color: #2d5a27; font-weight: bold;">
+                <td style="color: #2d5a27; font-weight: bold; text-align: center; vertical-align: top;">
                     ${i.weight.toFixed(1)} g
                 </td>
-                <td>
-                    <input type="number"
-                           class="vol-input"
-                           value="${i.volume.toFixed(1)}"
+                <td style="text-align: center; position: relative; vertical-align: top;">
+                    <input type="number" class="vol-input" value="${i.volume.toFixed(1)}"
                            onchange="updateVolume(${i.id}, this.value)">
-                </td>
-                <td>
-                    <button class="lock-btn ${i.locked ? 'locked' : ''}" onclick="toggleLock(${i.id})" title="Zablokuj/Odblokuj wartość">
+                    <button class="lock-btn ${i.locked ? 'locked' : ''}" onclick="toggleLock(${i.id})"
+                            style="position: absolute; right: 5px; top: 12px;">
                         <i class="bi ${i.locked ? 'bi-lock-fill' : 'bi-unlock'}"></i>
                     </button>
                 </td>
-                <td>
-                    <button onclick="removeIngredient(${i.id})" style="border: none; background: none; color: #c62828; cursor: pointer;">
-                        <i class="bi bi-trash"></i>
-                    </button>
+                <td class="col-ingredients" style="vertical-align: top;">
+                    ${i.ingr}
+                </td>
+                <td style="text-align: center; vertical-align: top;">
+                    <button onclick="removeIngredient(${i.id})" class="delete-btn">&times;</button>
                 </td>
             `;
             tbody.appendChild(tr);
@@ -472,6 +562,15 @@
         } else {
             alertBox.style.display = 'none';
             document.getElementById('totalVolumeDisplay').style.color = 'black';
+        }
+    }
+
+    function showWarning(id) {
+        const item = ingredients.find(i => i.id === id);
+        if (item && item.warn) {
+            document.getElementById('warningModalText').innerText = item.warn;
+            const modal = new bootstrap.Modal(document.getElementById('warningModal'));
+            modal.show();
         }
     }
 </script>
