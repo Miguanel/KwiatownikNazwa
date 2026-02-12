@@ -1,0 +1,754 @@
+{
+  "gatunek": "Sosna zwyczajna",
+  "nazwa_lacinska": "Pinus sylvestris",
+  "podgatunek": null,
+  "nazwa_zbioru": [
+    "Drzewa",
+    "Drzewa iglaste",
+    "Sosnowate",
+    "Pinus",
+    "Sosna zwyczajna"
+  ],
+  "zdjecia": [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvfDDCgBrkxNcCjlZ2CA4Y5tEt3lBDNfQGAw&s",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Pinus_sylvestris_flos_pollen_bialowieza_forest_beentree.jpg/250px-Pinus_sylvestris_flos_pollen_bialowieza_forest_beentree.jpg"
+  ],
+  "ciekawostki_kulturowe": [
+    "W puszczy białowieskiej sadzono sosny na grobach i przy domach jako symbol wieczności.",
+    "W Rosji z igieł sosny wytwarzano witaminowy kwas chlebowy dla wojska.",
+    "W góralskich domach wyplatano wieńce z igieł sosny na Boże Narodzenie.",
+    "W tradycyjnej medycynie chińskiej sosna była rośliną długowieczności.",
+    "Na Kurpiach szyszki sosnowe gotowano w cukrze jako 'leśny smakołyk'.",
+    "W kulturze syberyjskiej igły sosny dodawano do kąpieli oczyszczających."
+  ],
+  "permakultura": {
+    "opis": "Sosna zwyczajna odgrywa kluczową rolę w odbudowie zdegradowanych terenów, stabilizuje piaski, wzbogaca glebę w próchnicę i chroni przed erozją.",
+    "funkcje": [
+      "Stabilizuje wydmy i piaszczyste gleby, zapobiega erozji",
+      "Tworzy mikroklimat dla roślin runa – borówek, wrzosów, mchu",
+      "Daje schronienie dla ptaków i drobnych ssaków",
+      "Można wykorzystać igły i pędy jako naturalną ściółkę i zakwaszacz gleby",
+      "Nadaje się do zakładania leśnych pasiek i ogrodów leśnych"
+    ],
+    "gildie": [
+      "Wspaniale komponuje się z borówką czernicą, wrzosem, jałowcem, świerkiem, brzozą, marzanką wonną, konwalią",
+      "Tworzy warstwę osłonową dla młodych drzew i krzewów leśnych"
+    ]
+  },
+  "Przepisy": {
+    "przepisy_medyczne": {
+      "Syrop z pędów sosny": {
+        "nazwa": "Syrop z pędów sosny",
+        "skladniki": [
+          "0,5 kg młodych pędów sosny",
+          "0,5 kg cukru",
+          "sok z 1 cytryny"
+        ],
+        "sposob_przygotowania": "Pędy zasypać cukrem warstwowo w słoju, dodać sok z cytryny, odstawić na 2–3 tygodnie. Zlać powstały syrop.",
+        "cechy": [
+          "Słodki, intensywnie żywiczny aromat"
+        ],
+        "wlasciwosci": [
+          "wykrztuśny, wzmacniający"
+        ],
+        "zastosowanie": "Kaszel, przeziębienia, infekcje dróg oddechowych.",
+        "dawkowanie": "1 łyżeczka 2–3 razy dziennie.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/syrop-pedy-sosna/"
+        ]
+      },
+      "Napar z igieł": {
+        "nazwa": "Napar z igieł",
+        "skladniki": [
+          "1 łyżka świeżych igieł sosny (posiekanych)",
+          "250 ml wrzątku"
+        ],
+        "sposob_przygotowania": "Igiełki zalać wrzątkiem, parzyć 15 min pod przykryciem, przecedzić.",
+        "cechy": [
+          "Orzeźwiający, żywiczny smak"
+        ],
+        "wlasciwosci": [
+          "bogaty w witaminę C, wzmacniający odporność"
+        ],
+        "zastosowanie": "W przeziębieniach, okresach osłabienia.",
+        "dawkowanie": "Szklanka 1–2 razy dziennie.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/napar-igly-sosna/"
+        ]
+      },
+      "Inhalacja z olejku sosnowego": {
+        "nazwa": "inhalacja z olejku sosnowego",
+        "skladniki": [
+          "3 krople olejku sosnowego",
+          "1 litr gorącej wody"
+        ],
+        "sposob_przygotowania": "Dodać olejek do gorącej wody, inhalować się 10 minut pod ręcznikiem.",
+        "cechy": [
+          "Intensywny, świeży aromat"
+        ],
+        "wlasciwosci": [
+          "udrażnia drogi oddechowe, działa przeciwbakteryjnie"
+        ],
+        "zastosowanie": "Katar, zapalenie zatok.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/inhalacja-olejek-sosnowy/"
+        ]
+      },
+      "Kąpiel z pędów i igieł": {
+        "nazwa": "kąpiel z pędów i igieł",
+        "skladniki": [
+          "3 garście świeżych pędów i igieł sosny",
+          "2 litry wrzątku"
+        ],
+        "sposob_przygotowania": "Pędy i igły zalać wrzątkiem, parzyć 30 min, przecedzić do kąpieli.",
+        "cechy": [
+          "Aromatyczna, relaksująca kąpiel"
+        ],
+        "wlasciwosci": [
+          "przeciwzapalna, łagodzi bóle mięśni i stawów"
+        ],
+        "zastosowanie": "Reumatyzm, bóle mięśni, relaks.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/kapiel-pedy-igly-sosna/"
+        ]
+      },
+      "Maść żywiczna": {
+        "nazwa": "Maść żywiczna",
+        "skladniki": [
+          "2 łyżki żywicy sosnowej",
+          "4 łyżki masła shea lub smalcu"
+        ],
+        "sposob_przygotowania": "Żywicę rozpuścić w tłuszczu na małym ogniu, przefiltrować, przelać do słoiczka.",
+        "cechy": [
+          "Aromatyczna, półprzezroczysta maść"
+        ],
+        "wlasciwosci": [
+          "gojąca, antyseptyczna"
+        ],
+        "zastosowanie": "Smarowanie ran, otarć, odcisków.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/masc-zywica-sosna/"
+        ]
+      },
+      "mieszanka_wykrztuśna_sosna_podbiał_dziewanna_tymianek_babka_lukrecja_anyż_miodunka": {
+        "nazwa": "Mieszanka wykrztuśna (sosna, podbiał, dziewanna, tymianek, babka, lukrecja, anyż, miodunka)",
+        "skladniki": [
+          "1 łyżka pąków sosny",
+          "1 łyżka liści podbiału",
+          "1 łyżka kwiatu dziewanny",
+          "1 łyżka ziela tymianku",
+          "1 łyżka liści babki lancetowatej",
+          "1 łyżeczka korzenia lukrecji",
+          "1 łyżeczka nasion anyżu",
+          "1 łyżka ziela miodunki",
+          "1 litr wrzątku"
+        ],
+        "sposob_przygotowania": "Zioła zaparzyć, pić ciepły napar.",
+        "cechy": [
+          "Ziołowy, żywiczny napar"
+        ],
+        "wlasciwosci": [
+          "wykrztuśna, łagodząca kaszel"
+        ],
+        "zastosowanie": "Przy infekcjach dróg oddechowych.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/mieszanka-wykrztusna-sosna-podbial/"
+        ]
+      },
+      "mieszanka_kąpielowa_sosna_rumianek_nagietek_skrzyp_pokrzywa_lawenda_krwawnik_babka": {
+        "nazwa": "Mieszanka kąpielowa (sosna, rumianek, nagietek, skrzyp, pokrzywa, lawenda, krwawnik, babka)",
+        "skladniki": [
+          "2 garście igieł i pąków sosny",
+          "1 łyżka kwiatów rumianku",
+          "1 łyżka kwiatów nagietka",
+          "1 łyżka ziela skrzypu",
+          "1 łyżka liści pokrzywy",
+          "1 łyżka kwiatów lawendy",
+          "1 łyżka ziela krwawnika",
+          "1 łyżka liści babki",
+          "2 litry wrzątku"
+        ],
+        "sposob_przygotowania": "Zioła zaparzyć, przecedzić do kąpieli.",
+        "cechy": [
+          "Relaksujący, leśny zapach"
+        ],
+        "wlasciwosci": [
+          "regenerująca, przeciwzapalna"
+        ],
+        "zastosowanie": "Kąpiele lecznicze.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/mieszanka-kapielowa-sosna-rumianek/"
+        ]
+      },
+      "mieszanka_odpornościowa_sosna_pokrzywa_mniszek_czarna_porzeczka_fiołek_dzika_róża_nagietek_skrzyp": {
+        "nazwa": "Mieszanka odpornościowa (sosna, pokrzywa, mniszek, czarna porzeczka, fiołek, dzika róża, nagietek, skrzyp)",
+        "skladniki": [
+          "1 łyżka pąków sosny",
+          "1 łyżka liści pokrzywy",
+          "1 łyżka korzenia mniszka",
+          "1 łyżka liści czarnej porzeczki",
+          "1 łyżka fiołka trójbarwnego",
+          "1 łyżka owoców dzikiej róży",
+          "1 łyżka kwiatów nagietka",
+          "1 łyżka ziela skrzypu",
+          "1 litr wrzątku"
+        ],
+        "sposob_przygotowania": "Zioła zaparzyć, pić przez 7 dni.",
+        "cechy": [
+          "Ziołowy, wyrazisty napar"
+        ],
+        "wlasciwosci": [
+          "wzmacniająca odporność"
+        ],
+        "zastosowanie": "Kuracje wiosenne.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/mieszanka-odpornosc-sosna-pokrzywa/"
+        ]
+      },
+      "mieszanka_na_reumatyzm_sosna_korzeń_żywokostu_kora_wierzby_pokrzywa_skrzyp_tymianek_szałwia_nagietek": {
+        "nazwa": "Mieszanka na reumatyzm (sosna, korzeń żywokostu, kora wierzby, pokrzywa, skrzyp, tymianek, szałwia, nagietek)",
+        "skladniki": [
+          "1 łyżka pąków sosny",
+          "1 łyżka korzenia żywokostu",
+          "1 łyżka kory wierzby",
+          "1 łyżka liści pokrzywy",
+          "1 łyżka ziela skrzypu",
+          "1 łyżka ziela tymianku",
+          "1 łyżeczka liści szałwii",
+          "1 łyżka kwiatów nagietka",
+          "1 litr wrzątku"
+        ],
+        "sposob_przygotowania": "Zioła zalać wrzątkiem, parzyć 20 min, pić 2 razy dziennie.",
+        "cechy": [
+          "Ziołowy, lekko żywiczny napar"
+        ],
+        "wlasciwosci": [
+          "przeciwzapalna, łagodząca bóle"
+        ],
+        "zastosowanie": "Bóle stawów, reumatyzm.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/mieszanka-reumatyzm-sosna-zywokost/"
+        ]
+      },
+      "mieszanka_oczyszczająca_sosna_brzoza_pokrzywa_skrzyp_fiołek_rumianek_nagietek_babka": {
+        "nazwa": "Mieszanka oczyszczająca (sosna, brzoza, pokrzywa, skrzyp, fiołek, rumianek, nagietek, babka)",
+        "skladniki": [
+          "1 łyżka pąków sosny",
+          "1 łyżka liści brzozy",
+          "1 łyżka liści pokrzywy",
+          "1 łyżka ziela skrzypu",
+          "1 łyżka fiołka trójbarwnego",
+          "1 łyżka kwiatów rumianku",
+          "1 łyżka kwiatów nagietka",
+          "1 łyżka liści babki",
+          "1 litr wrzątku"
+        ],
+        "sposob_przygotowania": "Wszystkie zioła zaparzyć, pić przez 5 dni.",
+        "cechy": [
+          "Ziołowy, lekko żywiczny napar"
+        ],
+        "wlasciwosci": [
+          "oczyszczająca, wzmacniająca"
+        ],
+        "zastosowanie": "Kuracje wiosenne, detoks.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/mieszanka-oczyszczajaca-sosna-brzoza/"
+        ]
+      }
+    },
+    "przepisy_kulinarne": {
+      "Nalewka z młodych igieł sosny zwyczajnej": {
+        "typ": "nalewka",
+        "skladniki": [
+          {
+            "nazwa": "młode igły sosny zwyczajnej",
+            "ilość": "100 g",
+            "stan": "świeże, młode"
+          }
+        ],
+        "alkohol": {
+          "rodzaj": "wódka",
+          "zawartość_alkoholu": "40 %"
+        },
+        "proporcja": "1:5",
+        "sposob_przygotowania": [
+          "Igły: lekko posiekać.",
+          "Umieścić w słoju, zalać 500 ml wódki.",
+          "Pozostawić w ciemnym miejscu na 7 dni, codziennie potrząsać.",
+          "Przecedzić, przelać do butelki."
+        ],
+        "czas_maceracji": "7 dni",
+        "dawkowanie": "5 ml 2 razy dziennie",
+        "działanie": "wykrztuśne, przeciwzapalne dróg oddechowych",
+        "uwagi": "nie zaleca się u chorych na nadciśnienie",
+        "źródła": [
+          "EMA Monograph: Pinus sylvestris",
+          "Zielnik Szafera (1829)"
+        ]
+      },
+      "miód_sosnowy": {
+        "skladniki": [
+          "1 kg młodych pędów sosny",
+          "1,5 l wody",
+          "1 kg cukru",
+          "sok z 2 cytryn"
+        ],
+        "sposob_przygotowania": "Pędy zalać wodą, gotować 30 min, odstawić na 24 h, odcedzić, dodać cukier i cytrynę, gotować do zgęstnienia.",
+        "cechy": [
+          "Słodki, żywiczny smak"
+        ],
+        "wlasciwosci": [
+          "przeciwkaszlowy, wzmacniający"
+        ],
+        "zastosowanie": "Do herbaty, na kanapki.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/miod-sosnowy/"
+        ]
+      },
+      "sosnowa_lemoniada": {
+        "skladniki": [
+          "1 garść młodych igieł sosny",
+          "1 litr wody",
+          "2 łyżki miodu",
+          "sok z 1 cytryny"
+        ],
+        "sposob_przygotowania": "Igły zalać wodą, zagotować, ostudzić, dodać miód i cytrynę.",
+        "cechy": [
+          "Orzeźwiająca, cytrusowo-żywiczna"
+        ],
+        "wlasciwosci": [
+          "gasząca pragnienie, wzmacniająca"
+        ],
+        "zastosowanie": "Napój letni.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/lemoniada-sosnowa/"
+        ]
+      },
+      "kandyzowane_szyszki": {
+        "skladniki": [
+          "20 małych, młodych szyszek sosny",
+          "2 szklanki cukru",
+          "1 szklanka wody"
+        ],
+        "sposob_przygotowania": "Szyszki gotować w syropie cukrowym przez 1 godzinę, wystudzić, przechowywać w słoiku.",
+        "cechy": [
+          "Chrupiące, słodko-żywiczne"
+        ],
+        "wlasciwosci": [
+          "energetyczne, lecznicze"
+        ],
+        "zastosowanie": "Deser, przekąska, dodatek do ciast.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/kandyzowane-szyszki-sosna/"
+        ]
+      },
+      "chleb_z_iglami_sosny": {
+        "skladniki": [
+          "2 szklanki mąki pszennej",
+          "2 łyżki drobno posiekanych igieł sosny",
+          "1,5 łyżeczki drożdży",
+          "1 łyżka oliwy",
+          "1 szklanka ciepłej wody",
+          "1 łyżeczka soli"
+        ],
+        "sposob_przygotowania": "Wszystkie składniki wymieszać, zostawić do wyrośnięcia, upiec w 200°C przez 30 min.",
+        "cechy": [
+          "Aromatyczny, zielonkawy chleb"
+        ],
+        "wlasciwosci": [
+          "witaminowy, odżywczy"
+        ],
+        "zastosowanie": "Pieczywo do zup, sałatek.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/chleb-igly-sosna/"
+        ]
+      },
+      "herbatka_z_igieł": {
+        "skladniki": [
+          "1 łyżka świeżych igieł sosny",
+          "250 ml wrzątku",
+          "1 łyżeczka miodu"
+        ],
+        "sposob_przygotowania": "Igiełki zalać wrzątkiem, parzyć 15 min, przecedzić, dodać miód.",
+        "cechy": [
+          "Orzeźwiająca, żywiczna"
+        ],
+        "wlasciwosci": [
+          "wzmacniająca, bogata w witaminę C"
+        ],
+        "zastosowanie": "Napój na zimę i jesień.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/herbatka-igly-sosna/"
+        ]
+      },
+      "ocet_sosnowy": {
+        "skladniki": [
+          "2 garście świeżych igieł sosny",
+          "1 litr wody",
+          "1/2 szklanki cukru"
+        ],
+        "sposob_przygotowania": "Igiełki zalać wodą z cukrem, pozostawić na 2–3 tygodnie do fermentacji, przefiltrować.",
+        "cechy": [
+          "Kwaśny, aromatyczny ocet"
+        ],
+        "wlasciwosci": [
+          "przeciwbakteryjny, oczyszczający"
+        ],
+        "zastosowanie": "Do sałatek, płukanek, jako środek czystości.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/ocet-sosnowy/"
+        ]
+      },
+      "sałatka_leśna_sosna_młoda_pokrzywa_szczawik_szpinak_rzodkiewka_ogórek_oliwa": {
+        "nazwa": "Sałatka leśna (sosna, młoda pokrzywa, szczawik, szpinak, rzodkiewka, ogórek, oliwa)",
+        "skladniki": [
+          "1 garść młodych igieł sosny",
+          "1 garść liści pokrzywy",
+          "1 garść liści szczawika",
+          "1 garść młodego szpinaku",
+          "4 rzodkiewki",
+          "1 ogórek",
+          "1 łyżka oliwy",
+          "sok z 1/2 cytryny",
+          "szczypta soli, pieprz"
+        ],
+        "sposob_przygotowania": "Liście i warzywa pokroić, wymieszać z oliwą i cytryną.",
+        "cechy": [
+          "Leśna, orzeźwiająca"
+        ],
+        "wlasciwosci": [
+          "witaminowa, oczyszczająca"
+        ],
+        "zastosowanie": "Sałatka, przystawka.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/salatka-lesna-sosna-pokrzywa/"
+        ]
+      },
+      "omlet_z_igłami_sosny_i_koperkiem": {
+        "nazwa": "Omlet z igłami sosny i koperkiem",
+        "skladniki": [
+          "2 jajka",
+          "2 łyżki drobno posiekanych igieł sosny",
+          "1 łyżka koperku",
+          "1 łyżka masła",
+          "sól, pieprz"
+        ],
+        "sposob_przygotowania": "Igły i koperek podsmażyć na maśle, dodać jajka, usmażyć omlet.",
+        "cechy": [
+          "Zielony, lekko żywiczny"
+        ],
+        "wlasciwosci": [
+          "sycący, witaminowy"
+        ],
+        "zastosowanie": "Śniadanie, lunch.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/omlet-igly-sosna-koperek/"
+        ]
+      },
+      "pesto_z_igieł_sosny_i_orzechów_włoskich": {
+        "nazwa": "Pesto z igieł sosny i orzechów włoskich",
+        "skladniki": [
+          "2 garście młodych igieł sosny",
+          "1/4 szklanki orzechów włoskich",
+          "3 łyżki oliwy",
+          "1 ząbek czosnku",
+          "szczypta soli"
+        ],
+        "sposob_przygotowania": "Zmiksować na pastę.",
+        "cechy": [
+          "Aromatyczne, orzechowo-żywiczne"
+        ],
+        "wlasciwosci": [
+          "naturalny antyoksydant"
+        ],
+        "zastosowanie": "Do makaronu, kanapek.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/pesto-igly-sosna-orzechy/"
+        ]
+      },
+      "herbatka_leśna_sosna_malina_liść_poziomki_mięta_rumianek": {
+        "nazwa": "Herbatka leśna (sosna, malina, liść poziomki, mięta, rumianek)",
+        "skladniki": [
+          "1 łyżka igieł sosny",
+          "1 łyżka liści maliny",
+          "1 łyżka liści poziomki",
+          "1 łyżka liści mięty",
+          "1 łyżka kwiatów rumianku",
+          "1 litr wrzątku"
+        ],
+        "sposob_przygotowania": "Wszystkie zioła zaparzyć, pić na ciepło.",
+        "cechy": [
+          "Leśny, ziołowo-żywiczny aromat"
+        ],
+        "wlasciwosci": [
+          "wzmacniająca, odżywcza"
+        ],
+        "zastosowanie": "Napój na chłodne dni.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/herbatka-lesna-sosna-malina/"
+        ]
+      },
+      "kandyzowane_pędy_sosny_w_miodzie": {
+        "nazwa": "Kandyzowane pędy sosny w miodzie",
+        "skladniki": [
+          "10 młodych pędów sosny",
+          "1 szklanka miodu",
+          "1/2 szklanki cukru"
+        ],
+        "sposob_przygotowania": "Pędy gotować w miodzie z cukrem 20 min, przestudzić, przechowywać w słoiku.",
+        "cechy": [
+          "Słodkie, żywiczne"
+        ],
+        "wlasciwosci": [
+          "przeciwkaszlowe, energetyczne"
+        ],
+        "zastosowanie": "Dodatek do herbaty, deserów.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/kandyzowane-pedy-sosna-miod/"
+        ]
+      },
+      "mus_z_szyszek_sosny_i_jabłek": {
+        "nazwa": "Mus z szyszek sosny i jabłek",
+        "skladniki": [
+          "5 młodych szyszek sosny",
+          "2 jabłka",
+          "2 łyżki miodu"
+        ],
+        "sposob_przygotowania": "Szyszki i jabłka gotować 30 min, zmiksować z miodem na mus.",
+        "cechy": [
+          "Słodko-żywiczny, kremowy"
+        ],
+        "wlasciwosci": [
+          "energetyczny, witaminowy"
+        ],
+        "zastosowanie": "Deser, śniadanie.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/mus-szyszki-sosna-jablka/"
+        ]
+      }
+    }
+  },
+  "Cechy": {
+    "wystepowanie": {
+      "obszar": "Europa, Azja, Syberia, Mongolia, wprowadzone do Ameryki Północnej.",
+      "w_polsce": "Najpospolitsze drzewo iglaste – lasy, wydmy, piaszczyska, nieużytki, obrzeża pól i dróg.",
+      "zrodlo": [
+        "https://www.atlas-roslin.pl/gatunki/Pinus_sylvestris.htm",
+        "https://pl.wikipedia.org/wiki/Sosna_zwyczajna"
+      ]
+    },
+    "opis_botaniczny": {
+      "pokroj": "Drzewo dorastające do 35 m wysokości, z prostym pniem i luźną, kopulastą koroną.",
+      "kora": "U młodych drzew gładka, czerwono-brązowa na górze, szara i spękana na dole.",
+      "liscie": "Igły sztywne, zebrane po 2, długości 4–8 cm, niebieskozielone, ostro zakończone.",
+      "kwiaty": "Roślina jednopienna; kwiaty męskie – żółte kotki, żeńskie – małe, zielone szyszeczki.",
+      "owoce": "Szyszki stożkowate, długości 3–7 cm, dojrzewają w 2. roku, nasiona opatrzone skrzydełkami.",
+      "korzeń": "Palowy, głęboko sięgający, z grubymi korzeniami bocznymi.",
+      "cecha_wyrozniajaca": "Czerwona kora na górnych partiach pnia, igły w parach, aromatyczna żywica.",
+      "zrodlo": [
+        "https://www.ekologia.pl/wiedza/rosliny/drzewa/sosna-zwyczajna",
+        "https://www.gospodarz.pl/encyklopedia-roslin/drzewa/sosna-zwyczajna.html"
+      ]
+    },
+    "wlasciwosci_i_skladniki": [
+      {
+        "nazwa": "Olejek sosnowy",
+        "dzialanie": "antyseptyczny, wykrztuśny, rozgrzewający",
+        "sklad": "pinen, limonen, borneol, octan bornylu",
+        "zrodlo": [
+          "https://rozanski.li/1073/pinus-sylvestris-chemizm/"
+        ]
+      },
+      {
+        "nazwa": "Witaminy i mikroelementy",
+        "dzialanie": "wzmacniające odporność, remineralizujące",
+        "sklad": "witamina C, K, karotenoidy, mangan, żelazo, wapń",
+        "zrodlo": [
+          "https://zielnikpolski.pl/witaminy-sosna/"
+        ]
+      },
+      {
+        "nazwa": "Garbniki",
+        "dzialanie": "ściągające, przeciwzapalne",
+        "sklad": "taniny",
+        "zrodlo": [
+          "https://zielnikpolski.pl/garbniki-sosna/"
+        ]
+      },
+      {
+        "nazwa": "Żywica",
+        "dzialanie": "przeciwbakteryjna, przyspiesza gojenie ran",
+        "sklad": "kwas abietynowy, terpeny, kwas pimarowy",
+        "zrodlo": [
+          "https://zielnikpolski.pl/zywica-sosna/"
+        ]
+      }
+    ],
+    "cechy_i_historia": {
+      "opis": "Sosna zwyczajna to jedno z najważniejszych drzew w kulturze i gospodarce Polski. Od wieków wykorzystywana w budownictwie, lecznictwie i kuchni. Pąki, młode igły i żywica stosowano na przeziębienia, bóle reumatyczne, choroby skóry. W kuchni wykorzystywano młode pędy, szyszki i żywicę jako przyprawę i dodatek do słodyczy.",
+      "cechy": [
+        "Silnie antyseptyczne działanie olejków eterycznych i żywicy",
+        "Młode igły i pąki bogate w witaminę C – naturalny środek wzmacniający zimą",
+        "Szyszki i pąki – surowiec na syropy, napary, likiery",
+        "Żywica i smoła sosnowa wykorzystywana w lecznictwie ludowym i kosmetyce"
+      ],
+      "zastosowanie_historyczne": [
+        "Napar z igieł i pąków jako środek wzmacniający i przeciwgorączkowy",
+        "Syropy z młodych pędów na kaszel i przeziębienia",
+        "Kąpiele z igieł i pędów przy reumatyzmie i nerwobólach",
+        "Żywica do tamowania drobnych krwawień i leczenia skóry"
+      ],
+      "ciekawostki": [
+        "W starosłowiańskiej tradycji gałązki sosny stawiano przy drzwiach na ochronę przed chorobami.",
+        "Sosna była symbolem siły, wieczności i nieśmiertelności w wielu kulturach Europy i Azji.",
+        "W polskich dworach szyszki sosnowe kandyzowano jako słodką przekąskę.",
+        "Żywica sosnowa służyła jako naturalny klej, lakier, a także surowiec do kadzideł."
+      ],
+      "zrodlo": [
+        "https://magicznyogrod.pl/sosna-historia-i-zastosowanie.html",
+        "https://kalendarzrolnikow.pl/14860/sosna-zwyczajna-tradycja-i-symbolika"
+      ]
+    },
+    "uwagi_i_ostrzezenia": [
+      {
+        "uwaga": "Olejek sosnowy może uczulać i podrażniać skórę; nie stosować u małych dzieci i kobiet w ciąży bez konsultacji.",
+        "rozwiazanie": "Stosować rozcieńczony, w małych dawkach, unikać stosowania u dzieci do 2 lat.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/ostroznosc-sosna-olejek/"
+        ]
+      },
+      {
+        "uwaga": "Nie zbierać pędów i żywicy z obszarów chronionych, parków narodowych i rezerwatów.",
+        "rozwiazanie": "Zbierać wyłącznie z prywatnych terenów lub plantacji.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/zbior-sosna/"
+        ]
+      }
+    ],
+    "inne_zastosowania": {
+      "kosmetyki": {
+        "opis": "Olejek sosnowy stosowany jest w płynach do kąpieli, tonikach, maściach na stany zapalne i trądzik. Żywica używana do produkcji naturalnych balsamów do ust i kremów gojących.",
+        "zastosowanie": "Toniki, kąpiele, balsamy, maści.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/kosmetyki-sosna/"
+        ]
+      },
+      "barwniki": {
+        "opis": "Kora i igły sosny dają jasnożółty lub zielonkawy barwnik do tkanin i pisanek.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/barwnik-sosna/"
+        ]
+      },
+      "pasza_dla_zwierzat": {
+        "opis": "Igły sosny stanowią zimowy dodatek do paszy dla jeleni, saren, koni; młode pędy wykorzystywane są w produkcji ściółki.",
+        "zrodlo": [
+          "https://www.farmer.pl/zwierzeta/zywienie/igly-sosna-pasza,79271.html"
+        ]
+      },
+      "drewno": {
+        "opis": "Drewno sosny jest podstawowym surowcem budowlanym, stolarskim, na opał, do produkcji celulozy i papieru.",
+        "zrodlo": [
+          "https://zielnikpolski.pl/drewno-sosna/"
+        ]
+      }
+    }
+  },
+  "Ogrodnictwo": {
+    "uprawa": {
+      "gleba": "Gleba piaszczysta, lekka, kwaśna do lekko kwaśnej, dobrze przepuszczalna.",
+      "stanowisko": "Stanowisko słoneczne, najlepiej na otwartym terenie, wytrzymała na suszę i mróz.",
+      "wysiew": "Nasiona (szyszki) wysiewać wczesną wiosną lub jesienią, najlepiej w inspekcie lub na szkółce; przesadzać młode siewki po roku.",
+      "zbior": "Pąki i młode pędy – wczesna wiosna (marzec–kwiecień), igły – przez cały rok, żywica – od wiosny do lata, szyszki – czerwiec–wrzesień."
+    },
+    "kalendarz": {
+      "siew": {
+        "miesiące": [
+          3,
+          4
+        ],
+        "czynności": "Przygotowanie i siew nasion sosny: oczyszczenie i namaczanie nasion przez 24 h; zimna stratyfikacja w wilgotnym piasku lub torfie przez 6–8 tygodni w temperaturze 2–4 °C; wysiew cienką warstwą (ok. 5 mm) na podłoże o dobrej przepuszczalności w inspekcie lub doniczkach; przykrycie drobnym żwirem lub piaskiem; utrzymanie stałej wilgotności podłoża aż do wschodów (8–12 tygodni).",
+        "źródło": [
+          "",
+          ""
+        ]
+      },
+      "kwitnienie": {
+        "miesiące": [
+          5,
+          6
+        ],
+        "czynności": "Obserwacja rozwoju kwiatostanów męskich (pylących strobili) w maju–czerwcu; kontrola intensywności pylących szyszeczek; w razie suszy głębokie podlewanie, by wspomóc rozwój organów generatywnych.",
+        "źródło": [
+          ""
+        ]
+      },
+      "zbior_kwiatow": {
+        "miesiące": [
+          6,
+          7
+        ],
+        "czynności": "Zbieranie dojrzałych, żółtych strobili męskich (kwiatów sosny) w suchy dzień w czerwcu–lipcu; delikatne odłamywanie szyszeczek; suszenie rozłożonych w cieniu na pergaminie do czasu, aż uwolnią suche pyłki.",
+        "źródło": [
+          ""
+        ]
+      },
+      "zbior_nasion": {
+        "miesiące": [
+          9,
+          10
+        ],
+        "czynności": "Zbieranie w pełni dojrzałych szyszek żeńskich pod koniec września–początek października, tuż przed ich otwarciem; ścięcie gałązek lub zerwanie szyszek; suszenie w przewiewnym pomieszczeniu, aż szyszki samoczynnie się otworzą i uwolnią nasiona; oddzielenie nasion od łusek przez delikatne potrząsanie.",
+        "źródło": [
+          ""
+        ]
+      },
+      "pielenie": {
+        "miesiące": [
+          5,
+          7
+        ],
+        "czynności": "Regularne usuwanie chwastów mechanicznie (ręcznie lub motyczką) wokół młodych sosen; stosowanie ściółkowania (kora, zrębki) warstwą 5–10 cm, by utrudnić rozwój chwastów i zachować wilgoć gleby.",
+        "źródło": [
+          ""
+        ]
+      },
+      "przesadzanie": {
+        "miesiące": [
+          4,
+          10
+        ],
+        "czynności": "Transplantacja młodych sadzonek wczesną wiosną (kwiecień) lub wczesną jesienią (październik): wykopanie rośliny z bryłą ziemi, delikatne rozluźnienie korzeni; przygotowanie nowego dołka o szerokości nieco większej niż bryła korzeniowa; osadzenie na tej samej głębokości; obfite podlanie i ściółkowanie.",
+        "źródło": [
+          ""
+        ]
+      },
+      "miodobranie": {
+        "miesiące": [
+          7
+        ],
+        "czynności": "Ustawianie uli w borze sosnowym w lipcu, gdy owady Marchalina hellenica produkują nadmiar słodkiego płynu (honeydew); pozostawienie pszczół na 30–35 dni, aż zgromadzą ciemny miód sosnowy; zdejmowanie ramek i odwirowanie miodu; filtrowanie.",
+        "źródło": [
+          ""
+        ]
+      },
+      "zbior_ksiezyc": {
+        "miesiące": [
+          9
+        ],
+        "czynności": "Gromadzenie szyszek i nasion zgodnie z kalendarzem biodynamicznym – najlepiej podczas fazy wędrówki księżyca (pełnia → nów), aby zwiększyć trwałość nasion; zbieranie wieczorem po opadnięciu rosy.",
+        "źródło": [
+          ""
+        ]
+      },
+      "zbior_deszcz": {
+        "miesiące": [
+          10
+        ],
+        "czynności": "Instalacja beczek lub zbiorników pod rynnami w październiku – oczyszczenie rynien, montaż filtru przeciwliściowego; gromadzenie wody deszczowej do podlewania młodych sosen i uzupełniania wilgotności gleby w okresie bezopadowym.",
+        "źródło": [
+          ""
+        ]
+      }
+    }
+  }
+}

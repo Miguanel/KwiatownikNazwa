@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Forum Kwiatownika</h1>
+<p>Tutaj znajdziesz wszystkie opinie użytkowników oraz możesz zostawić komentarz ogólny.</p>
+
+<section style="background: #eee; padding: 20px; border-radius: 5px; margin-bottom: 30px;">
+    <h3>Dodaj komentarz ogólny</h3>
+    {% if current_user.is_authenticated %}
+        <form action="{{ url_for('all_comments') }}" method="POST">
+            <textarea name="content" placeholder="Napisz coś o projekcie lub zadaj pytanie..." required style="width: 100%; height: 60px;"></textarea><br>
+            <button type="submit">Opublikuj wpis ogólny</button>
+        </form>
+    {% else %}
+        <p>Musisz być zalogowany, aby dodawać wpisy.</p>
+    {% endif %}
+</section>
+
+<div class="all-comments-list">
+    {% for comment in comments %}
+        <div style="background: white; border: 1px solid #ddd; padding: 15px; margin-bottom: 10px; position: relative;">
+            <strong>{{ comment.author.username }}</strong>
+            {% if comment.plant_id %}
+                <span style="background: #3e4a3d; color: white; padding: 2px 8px; font-size: 0.7rem; border-radius: 10px; margin-left: 10px;">
+                    Dotyczy: <a href="{{ url_for('plant_detail', plant_id=comment.plant_id) }}" style="color: gold;">{{ comment.plant_id.replace('_', ' ') }}</a>
+                </span>
+            {% else %}
+                <span style="background: #666; color: white; padding: 2px 8px; font-size: 0.7rem; border-radius: 10px; margin-left: 10px;">Komentarz ogólny</span>
+            {% endif %}
+            
+            <p>{{ comment.content }}</p>
+            <small style="color: #999;">Data: {{ comment.date_posted.strftime('%Y-%m-%d %H:%M') }}</small>
+            
+            <div style="margin-top: 10px;">
+                {% if current_user == comment.author or current_user.is_admin %}
+                    <a href="{{ url_for('edit_comment', comment_id=comment.id) }}">Edytuj</a> | 
+                    <a href="{{ url_for('delete_comment', comment_id=comment.id) }}" style="color: red;">Usuń</a>
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

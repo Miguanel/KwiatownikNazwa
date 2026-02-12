@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<div style="max-width: 400px; margin: 0 auto; text-align: center;">
+    <h2>Załóż konto w Zielniku</h2>
+    <form method="POST">
+        <input type="text" name="username" placeholder="Wybierz login" required style="width: 100%; padding: 10px; margin: 5px 0;"><br>
+        <input type="password" name="password" placeholder="Wybierz hasło" required style="width: 100%; padding: 10px; margin: 5px 0;"><br>
+        <button type="submit" style="width: 100%; padding: 10px; background: #3e4a3d; color: white; border: none; margin-top: 10px;">Zarejestruj</button>
+    </form>
+</div>
+{% endblock %}

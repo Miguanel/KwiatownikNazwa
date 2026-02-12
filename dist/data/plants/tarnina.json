@@ -1,0 +1,93 @@
+{
+  "id": "tarnina",
+  "nazwa_pl": "Śliwa tarnina",
+  "nazwa_lat": "Prunus spinosa",
+  "rodzina": "Różowate",
+  "opis": "Gęsty, ciernisty krzew o ciemnej korze, tworzący niemal nieprzebyte zarośla (czyżnie). Jest jedną z najważniejszych roślin dla dzikiej fauny w Europie.",
+  "czesci_rosliny": {
+    "kwiaty": {
+      "nazwa_surowca": "Flos Pruni spinosae",
+      "opis_botaniczny": "Białe, drobne, pięciopłatkowe kwiaty pojawiające się przed liśćmi. Wydzielają delikatny zapach migdałów.",
+      "skladniki_aktywne": ["Flawonoidy (kwercetyna, kemferol)", "Glikozydy cyjanogenne (amigdalina w śladowych ilościach)", "Garbniki", "Cukry", "Sole mineralne"],
+      "wlasciwości": "Łagodnie przeczyszczające, moczopędne, przeciwzapalne, uszczelniające naczynia włosowate.",
+      "czas_zbioru": "Kwiecień - Maj (na początku kwitnienia, w dni słoneczne)."
+    },
+    "owoce": {
+      "nazwa_surowca": "Fructus Pruni spinosae",
+      "opis_botaniczny": "Kuliste pestkowce o barwie ciemnoniebieskiej z sinym nalotem. Miąższ cierpki i kwaśny.",
+      "skladniki_aktywne": ["Garbniki (do 3%)", "Kwasy organiczne", "Witaminy (C, B, prowitamina A)", "Antocyjany", "Pektyny"],
+      "wlasciwości": "Silnie ściągające, przeciwbiegunkowe, antybakteryjne, antyoksydacyjne.",
+      "czas_zbioru": "Październik - Listopad (najlepiej po pierwszych przymrozkach, co redukuje cierpkość)."
+    },
+    "kora": {
+      "nazwa_surowca": "Cortex Pruni spinosae",
+      "opis_botaniczny": "Ciemna, niemal czarna, z licznymi krótkopędami przekształconymi w silne ciernie.",
+      "skladniki_aktywne": ["Garbniki", "Glikozydy"],
+      "wlasciwości": "Przeciwgorączkowe, ściągające (stosowana rzadziej niż owoce).",
+      "czas_zbioru": "Wczesna wiosna lub jesień."
+    },
+    "liscie": {
+      "nazwa_surowca": "Folium Pruni spinosae",
+      "opis_botaniczny": "Małe, eliptyczne, brzegiem drobno piłkowane.",
+      "skladniki_aktywne": ["Glikozydy", "Garbniki"],
+      "wlasciwości": "Moczopędne, pomocniczo w stanach zapalnych dróg moczowych.",
+      "czas_zbioru": "Czerwiec - Lipiec."
+    }
+  },
+  "zastosowanie": {
+    "medyczne": "Napar z kwiatów stosuje się jako łagodny środek przeczyszczający dla dzieci i osób starszych. Odwar z owoców jest niezastąpiony przy biegunkach i nieżytach żołądka.",
+    "kulinarne": "Wyrób słynnej tarninówki, dżemów (po przemrożeniu owoców), konfitur oraz jako dodatek do herbat owocowych.",
+    "ogrodowe": "Tworzenie żywopłotów obronnych, stabilizacja skarp dzięki silnym rozłogom korzeniowym."
+  },
+  "permakultura": {
+    "funkcje": [
+        "Naturalna bariera dla zwierząt hodowlanych (kolce)",
+        "Siedlisko lęgowe dla rzadkich ptaków (np. gąsiorek)",
+        "Wczesny pożytki dla pszczół",
+        "Wiązanie azotu (pośrednio przez wspieranie mikrobiomu)"
+    ],
+    "gildie": [
+      {"nazwa": "Dąb szypułkowy", "rola": "Dominanta, osłona"},
+      {"nazwa": "Dzika róża", "rola": "Współtwórca zarośli ochronnych"},
+      {"nazwa": "Głóg", "rola": "Sąsiad w pasie wiatrochronnym"}
+    ],
+    "opis_ekologiczny": "Tarnina jest rośliną pionierską. W sukcesji leśnej przygotowuje miejsce dla dębów, chroniąc młode siewki drzew przed zgryzaniem przez sarny."
+  },
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Zbiór kwiatów na napary",
+        "miesiace": [4, 5],
+        "opis": "Zbieramy tylko świeżo rozwinięte koszyczki bez szypułek.",
+        "faza_ksiezyca": "Księżyc przybywający (faza kwiatu)",
+        "pora_dnia": "Południe (gdy opadnie rosa)",
+        "pogoda": "Pełne słońce, brak wiatru",
+        "wplyw_ksiezyca": "Najwyższa zawartość olejków eterycznych."
+      },
+      {
+        "czynnosc": "Rozmnażanie z odrostów korzeniowych",
+        "miesiace": [3, 11],
+        "opis": "Oddzielanie młodych roślin wyrastających z korzeni matczynych.",
+        "faza_ksiezyca": "Księżyc ubywający",
+        "pora_dnia": "Wieczór",
+        "pogoda": "Pochmurno, duża wilgotność powietrza",
+        "wplyw_ksiezyca": "Ułatwia regenerację systemu korzeniowego."
+      },
+      {
+        "czynnosc": "Zbiór owoców na przetwory",
+        "miesiace": [10, 11],
+        "opis": "Czekamy do pierwszych mrozów lub zbieramy i mrozimy w zamrażarce przez 48h.",
+        "faza_ksiezyca": "Pełnia",
+        "pora_dnia": "Popołudnie",
+        "pogoda": "Sucho",
+        "wplyw_ksiezyca": "Maksymalna kumulacja cukrów w owocu."
+      }
+    ]
+  },
+  "ciekawostki": [
+    "W tradycji ludowej tarnina zwiastowała 'zimną zośkę' (ochłodzenie w czasie kwitnienia).",
+    "Z drewna tarniny wyrabiano najtwardsze laski i rękojeści narzędzi.",
+    "Wierzono, że korona cierniowa Chrystusa była wykonana z tarniny."
+  ],
+  "ostrzezenia": "Pestki tarniny zawierają amigdalinę (kwas pruski) i nie powinny być spożywane. Przetwory z owoców należy zawsze drylować."
+}

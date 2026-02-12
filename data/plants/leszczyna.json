@@ -1,0 +1,38 @@
+{
+  "id": "leszczyna",
+  "nazwa_pl": "Leszczyna pospolita",
+  "nazwa_lat": "Corylus avellana",
+  "rodzina": "Brzozowate",
+  "opis": "Krzew dorastający do 5m, tworzący gęste zarośla. Znany z jadalnych orzechów i elastycznych pędów.",
+  "czesci_rosliny": {
+    "liscie": {
+      "nazwa_surowca": "Folium Coryli",
+      "wlasciwości": "Ściągające, przeciwzapalne, uszczelniające naczynia krwionośne.",
+      "czas_zbioru": "Maj - Czerwiec"
+    },
+    "owoce": {
+      "nazwa_surowca": "Nux Coryli (Orzechy)",
+      "wlasciwości": "Wysokoenergetyczne, bogate w witaminę E i kwasy nienasycone.",
+      "czas_zbioru": "Sierpień - Wrzesień"
+    }
+  },
+  "permakultura": {
+    "funkcje": ["Producent biomasy", "Osłona przed wiatrem", "Pokarm dla fauny"],
+    "gildie": [
+      {"nazwa": "Dąb szypułkowy", "rola": "Piętro wysokie, osłona"},
+      {"nazwa": "Czosnek niedźwiedzi", "rola": "Runo"}
+    ]
+  },
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Zbiór orzechów",
+        "miesiace": [8, 9],
+        "faza_ksiezyca": "Księżyc ubywający",
+        "pora_dnia": "Południe",
+        "pogoda": "Słoneczna",
+        "wplyw_ksiezyca": "Sprzyja trwałości orzechów w przechowywaniu."
+      }
+    ]
+  }
+}

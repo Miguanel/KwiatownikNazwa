@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div style="max-width: 400px; margin: 0 auto; text-align: center;">
+    <h2>Logowanie</h2>
+    <form method="POST">
+        <input type="text" name="username" placeholder="Login" required style="width: 100%; padding: 10px; margin: 5px 0;"><br>
+        <input type="password" name="password" placeholder="Hasło" required style="width: 100%; padding: 10px; margin: 5px 0;"><br>
+        <button type="submit" style="width: 100%; padding: 10px; background: #3e4a3d; color: white; border: none; margin-top: 10px;">Zaloguj się</button>
+    </form>
+    <p>Nie masz konta? <a href="{{ url_for('register') }}">Zarejestruj się</a></p>
+</div>
+{% endblock %}

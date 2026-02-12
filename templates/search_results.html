@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="search-container">
+    <h1>🔎 Wyszukiwarka Terapeutyczna</h1>
+    
+    <form action="{{ url_for('search_symptoms') }}" method="GET" style="margin-bottom: 40px;">
+        <input type="text" name="query" value="{{ query }}" placeholder="Wpisz objaw (np. gardło, zapalenie, trawienie)..." 
+               class="input-field" style="width: 70%; padding: 15px;">
+        <button type="submit" class="btn-green" style="padding: 15px 30px;">Szukaj Rozwiązania</button>
+    </form>
+
+    {% if query %}
+        <h3>Wyniki dla: "{{ query }}"</h3>
+        {% if results %}
+            <div class="results-list" style="display: grid; gap: 20px;">
+                {% for r in results %}
+                <div class="result-card" style="border: 1px solid #d1c7a7; background: white; padding: 20px; border-left: 5px solid #3e4a3d;">
+                    <div style="display: flex; justify-content: space-between; align-items: start;">
+                        <div>
+                            <h4 style="margin: 0; font-size: 1.3rem;">{{ r.part_name|capitalize }} {{ r.plant_name }}</h4>
+                            <small><em>{{ r.latin_part }}</em></small>
+                        </div>
+                        <a href="{{ url_for('plant_detail', plant_id=r.plant_id) }}" class="btn-green" style="font-size: 0.8rem; padding: 5px 15px;">Zobacz pełny opis</a>
+                    </div>
+                    <p style="margin: 15px 0;"><strong>Sugerowane działanie:</strong> {{ r.effect }}</p>
+                    <div style="font-size: 0.85rem; color: #666;">
+                        📅 Optymalny czas zbioru tego surowca: <strong>{{ r.time }}</strong>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>Niestety nie znaleźliśmy surowca o takim działaniu w Twoim aktualnym zielniku.</p>
+        {% endif %}
+    {% endif %}
+</div>
+{% endblock %}

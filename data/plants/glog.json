@@ -1,0 +1,38 @@
+{
+  "id": "glog",
+  "nazwa_pl": "Głóg jednoszyjkowy",
+  "nazwa_lat": "Crataegus monogyna",
+  "rodzina": "Różowate",
+  "opis": "Ciernisty krzew lub małe drzewo. Kluczowa roślina dla zdrowia serca.",
+  "czesci_rosliny": {
+    "kwiaty": {
+      "nazwa_surowca": "Inflorescentia Crataegi",
+      "wlasciwości": "Nasercowe, obniżające ciśnienie krwi.",
+      "czas_zbioru": "Maj"
+    },
+    "owoce": {
+      "nazwa_surowca": "Fructus Crataegi",
+      "wlasciwości": "Wzmacniające naczynia krwionośne, witaminowe.",
+      "czas_zbioru": "Wrzesień - Październik"
+    }
+  },
+  "permakultura": {
+    "funkcje": ["Bariera ochronna (kolce)", "Siedlisko dla ptaków", "Wsparcie zapylaczy"],
+    "gildie": [
+      {"nazwa": "Dąb szypułkowy", "rola": "Filar gildii"},
+      {"nazwa": "Tarnina", "rola": "Zarośla ochronne"}
+    ]
+  },
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Zbiór kwiatów",
+        "miesiace": [5],
+        "faza_ksiezyca": "Księżyc przybywający (faza kwiatu)",
+        "pora_dnia": "Poranek (po rosie)",
+        "pogoda": "Słoneczna",
+        "wplyw_ksiezyca": "Maksymalna koncentracja flawonoidów."
+      }
+    ]
+  }
+}

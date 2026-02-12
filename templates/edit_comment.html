@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Edytuj swój komentarz</h2>
+<form method="POST">
+    <textarea name="content" style="width: 100%; height: 150px; padding: 10px;">{{ comment.content }}</textarea><br>
+    <button type="submit" style="background: #3e4a3d; color: white; padding: 10px 20px; border: none; margin-top: 10px;">Zapisz zmiany</button>
+    <a href="{{ url_for('all_comments') }}" style="margin-left: 15px; color: #666;">Anuluj</a>
+</form>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<header style="text-align: center; margin-bottom: 40px;">
+    <h1>Kwiatownik: Encyklopedia Roślin Europy</h1>
+    <p style="font-style: italic;">"Odkryj tajemnice flory Środkowej Europy – od tradycyjnych ziół po rośliny zapomniane."</p>
+</header>
+
+<section>
+    <h2>Spis roślin w bazie</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px;">
+        {% for plant in plants %}
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">{{ plant.replace('_', ' ') }}</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="{{ url_for('plant_detail', plant_id=plant) }}" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        {% else %}
+        <p>Obecnie brak roślin w bazie danych JSON. Dodaj pliki do folderu data/plants.</p>
+        {% endfor %}
+    </div>
+</section>
+
+<hr style="margin: 40px 0; border: 0; border-top: 1px double #3e4a3d;">
+
+<section style="background-color: #fdfdfd; padding: 20px;">
+    <h3>O Projekcie</h3>
+    <p>
+        Kwiatownik to nie tylko baza danych, to interaktywny zielnik stworzony z myślą o pasjonatach botaniki. 
+        Każdy wpis opiera się na rzetelnych źródłach i łączy wiedzę naukową z tradycją ludową.
+    </p>
+    <ul>
+        <li><strong>Edukacja:</strong> Poznaj właściwości chemiczne i biologię roślin.</li>
+        <li><strong>Praktyka:</strong> Skorzystaj z generatorów nalewek i mieszanek ziołowych.</li>
+        <li><strong>Społeczność:</strong> Dziel się swoimi spostrzeżeniami w sekcji komentarzy.</li>
+    </ul>
+</section>
+{% endblock %}

@@ -1,0 +1,233 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="perma-section" style="max-width: 1100px; margin: 0 auto; padding: 20px;">
+    <header style="text-align: center; margin-bottom: 40px;">
+        <h1 style="color: #3e4a3d; font-size: 2.5rem; margin-bottom: 10px;">🕸️ Projektant Gildii Permakulturowych</h1>
+        <p style="color: #555; font-size: 1.1rem;">Odkryj synergis między roślinami i buduj stabilne ekosystemy.</p>
+    </header>
+
+    <div class="search-container" style="background: #f4f1ea; border: 2px dashed #3e4a3d; border-radius: 20px; padding: 30px; margin-bottom: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+        <form method="POST" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: flex-end;">
+
+            <div style="flex: 2; min-width: 280px;">
+                <label for="search_query" style="display: block; margin-bottom: 8px; font-weight: bold; color: #3e4a3d;">Wpisz nazwę rośliny:</label>
+                <input type="text"
+                       id="search_query"
+                       name="search_query"
+                       list="plant-suggestions"
+                       placeholder="np. Dąb szypułkowy..."
+                       style="width: 100%; padding: 12px 20px; border-radius: 25px; border: 2px solid #3e4a3d; outline: none; font-size: 1rem;">
+                <datalist id="plant-suggestions">
+                    {% for p in all_plants %}
+                        <option value="{{ p.name }}">
+                    {% endfor %}
+                </datalist>
+            </div>
+
+
+            <button type="submit" style="background: #3e4a3d; color: white; padding: 12px 30px; border-radius: 25px; border: none; cursor: pointer; font-weight: bold; transition: 0.3s; height: 50px;">
+                Analizuj
+            </button>
+        </form>
+    </div>
+
+    {% if selected_plant %}
+    <div class="guild-results-wrapper" style="animation: fadeIn 0.8s ease-in-out;">
+
+        <div class="guild-map-viewport" style="position: relative; width: 100%; height: 600px; display: flex; align-items: center; justify-content: center; margin: 40px 0;">
+
+            <div class="center-node" style="z-index: 10; background: #3e4a3d; color: white; width: 180px; height: 180px; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; box-shadow: 0 0 40px rgba(62, 74, 61, 0.3); border: 5px solid white;">
+                <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.8;">Gatunek bazowy</span>
+                <strong style="font-size: 1.3rem; padding: 0 15px; display: block; margin-top: 5px;">{{ selected_plant.nazwa_pl }}</strong>
+            </div>
+
+            <div class="companions-container" style="position: absolute; width: 100%; height: 100%;">
+                {% for companion in companions %}
+                    {# Obliczamy kąt i przekazujemy go jako zmienną CSS --angle #}
+                    {% set angle = loop.index0 * (360 / companions|length) %}
+                    <div class="companion-node" style="--angle: {{ angle }}deg;">
+                        {% if companion.id %}
+                            <a href="{{ url_for('plant_detail', plant_id=companion.id) }}" style="text-decoration: none; color: inherit;">
+                                <div class="c-card linked">
+                                    <strong>{{ companion.nazwa }}</strong>
+                                    <span class="rola-tag">{{ companion.rola }}</span>
+                                    <div class="click-hint">Zobacz kartę ⮕</div>
+                                </div>
+                            </a>
+                        {% else %}
+                            <div class="c-card unlinked">
+                                <strong>{{ companion.nazwa }}</strong>
+                                <span class="rola-tag">{{ companion.rola }}</span>
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+
+        <div class="details" style="margin-top: 60px;">
+            <div style="text-align: center; margin-bottom: 30px;">
+                <h3 style="display: inline-block; border-bottom: 3px solid #b8860b; padding-bottom: 5px; color: #3e4a3d;">
+                    Charakterystyka Systemowa: {{ selected_plant.nazwa_pl }}
+                </h3>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+                <div class="info-box">
+                    <h4 style="color: #3e4a3d; display: flex; align-items: center; gap: 10px;">
+                        <span style="font-size: 1.5rem;">🌿</span> Rola w gildii
+                    </h4>
+                    <p>{{ selected_plant.permakultura.opis if selected_plant.permakultura.opis else "Ta roślina pełni funkcję dominanty lub wsparcia w zależności od piętra roślinności." }}</p>
+                </div>
+
+                <div class="info-box" style="border-left-color: #b8860b;">
+                    <h4 style="color: #b8860b; display: flex; align-items: center; gap: 10px;">
+                        <span style="font-size: 1.5rem;">⚙️</span> Funkcje ekosystemowe
+                    </h4>
+                    <ul style="list-style: none; padding: 0;">
+                        {% for f in selected_plant.permakultura.funkcje %}
+                            <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+                                <span style="position: absolute; left: 0; color: #b8860b;">•</span> {{ f }}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>
+
+<style>
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .c-card {
+        padding: 15px 20px;
+        border-radius: 15px;
+        text-align: center;
+        min-width: 160px;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        position: relative;
+    }
+
+    .linked {
+        background: white;
+        border: 2px solid #3e4a3d;
+        cursor: pointer;
+    }
+
+    .linked strong { color: #3e4a3d; }
+
+    .linked:hover {
+        background: #3e4a3d !important;
+        transform: scale(1.1) translateY(-5px);
+        z-index: 20;
+    }
+
+    .linked:hover strong { color: white !important; }
+    .linked:hover .rola-tag { color: #d1c7a7 !important; }
+    .linked:hover .click-hint { opacity: 1; }
+
+    .unlinked {
+        background: #fcfcfc;
+        border: 2px dashed #ccc;
+        opacity: 0.8;
+    }
+
+    .unlinked strong { color: #777; }
+
+    .rola-tag {
+        display: block;
+        font-size: 0.7rem;
+        color: #b8860b;
+        text-transform: uppercase;
+        margin-top: 5px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+    }
+
+    .click-hint {
+        font-size: 0.6rem;
+        color: #a5d6a7;
+        margin-top: 8px;
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    .info-box {
+        background: white;
+        padding: 30px;
+        border-left: 6px solid #3e4a3d;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.03);
+        border-radius: 0 15px 15px 0;
+        line-height: 1.6;
+    }
+
+    .center-node::after {
+        content: '';
+        position: absolute;
+        width: 220px;
+        height: 220px;
+        border: 1px solid rgba(62, 74, 61, 0.1);
+        border-radius: 50%;
+        z-index: -1;
+    }
+
+    /* Ukrycie surowego datalist w niektórych przeglądarkach */
+    input::-webkit-calendar-picker-indicator {
+        opacity: 0.5;
+        cursor: pointer;
+    }
+</style>
+<style>
+    /* Kontener dla towarzyszy */
+    .companions-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Pozycjonowanie węzłów towarzyszy */
+    .companion-node {
+        position: absolute;
+        /* Używamy zmiennej --angle przekazanej z Jinja2 */
+        transform: rotate(var(--angle)) translate(260px) rotate(calc(-1 * var(--angle)));
+        transition: all 0.3s ease;
+    }
+
+    /* Reszta Twoich stylów kart */
+    .c-card {
+        padding: 15px 20px;
+        border-radius: 15px;
+        text-align: center;
+        min-width: 160px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        background: white;
+    }
+
+    .linked { border: 2px solid #3e4a3d; cursor: pointer; }
+    .linked:hover {
+        background: #3e4a3d !important;
+        transform: scale(1.1);
+        z-index: 100;
+    }
+    .linked:hover strong { color: white; }
+    .linked:hover .rola-tag { color: #d1c7a7; }
+    .linked:hover .click-hint { opacity: 1; }
+
+    .unlinked { border: 2px dashed #ccc; opacity: 0.7; color: #777; }
+    .rola-tag { display: block; font-size: 0.7rem; color: #b8860b; text-transform: uppercase; margin-top: 5px; font-weight: bold; }
+    .click-hint { font-size: 0.6rem; color: #a5d6a7; margin-top: 8px; opacity: 0; transition: 0.3s; }
+
+    /* Efekt pulsującego tła pod mapą */
+    .guild-map-viewport {
+        background: radial-gradient(circle, rgba(233, 240, 232, 0.5) 0%, rgba(255, 255, 255, 1) 70%);
+    }
+</style>
+{% endblock %}

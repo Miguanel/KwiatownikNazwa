@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="search-container" style="max-width: 800px; margin: 0 auto; padding: 40px 20px;">
+    <h1 style="text-align: center; color: #3e4a3d;">🔍 Wyszukiwarka Terapeutyczna</h1>
+    <p style="text-align: center; color: #666;">Wpisz dolegliwość lub pożądane działanie (np. "ściągające", "serce", "trawienie").</p>
+
+    <form method="POST" style="margin-top: 30px; display: flex; gap: 10px;">
+        <input type="text" 
+               name="query" 
+               list="keyword-suggestions" 
+               placeholder="Czego szukasz?" 
+               value="{{ query }}"
+               required
+               style="flex-grow: 1; padding: 15px; border: 2px solid #3e4a3d; border-radius: 30px; font-size: 1.1rem; outline: none;">
+        
+        <datalist id="keyword-suggestions">
+            {% for word in suggestions %}
+                <option value="{{ word }}">
+            {% endfor %}
+        </datalist>
+
+        <button type="submit" style="background: #3e4a3d; color: white; border: none; padding: 0 30px; border-radius: 30px; cursor: pointer; font-weight: bold;">
+            Szukaj
+        </button>
+    </form>
+
+    
+
+    {% if query %}
+    <div class="results" style="margin-top: 50px;">
+        <h3>Wyniki dla: "<span style="color: #b8860b;">{{ query }}</span>"</h3>
+        
+        {% if results %}
+            <div style="display: grid; gap: 20px;">
+                {% for plant in results %}
+                <a href="{{ url_for('plant_detail', plant_id=plant.id) }}" style="text-decoration: none; color: inherit;">
+                    <div class="result-card" style="background: white; border: 1px solid #d1c7a7; padding: 20px; border-radius: 8px; transition: transform 0.2s;">
+                        <h4 style="margin: 0; color: #3e4a3d;">{{ plant.nazwa_pl }} ({{ plant.nazwa_lat }})</h4>
+                        <p style="font-size: 0.9rem; color: #666; margin: 10px 0;">
+                            {% if plant.zastosowanie and plant.zastosowanie.medyczne %}
+                                {{ plant.zastosowanie.medyczne | truncate(150) }}
+                            {% elif plant.opis %}
+                                {{ plant.opis | truncate(150) }}
+                            {% else %}
+                                Brak opisu medycznego dla tej rośliny.
+                            {% endif %}
+                        </p>
+                        <span style="font-size: 0.8rem; color: #b8860b; font-weight: bold;">Zobacz szczegóły i receptury ⮕</span>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p style="text-align: center; color: #999; margin-top: 30px;">Nie znaleziono roślin o takim działaniu w naszej bazie.</p>
+        {% endif %}
+    </div>
+    {% endif %}
+</div>
+
+<style>
+    .result-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        border-color: #3e4a3d;
+    }
+</style>
+{% endblock %}

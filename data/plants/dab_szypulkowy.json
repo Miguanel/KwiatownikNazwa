@@ -1,0 +1,147 @@
+{
+  "id": "dab_szypulkowy",
+  "nazwa_pl": "Dąb szypułkowy",
+  "nazwa_lat": "Quercus robur",
+  "rodzina": "Bukowate",
+  "opis": "Potężne drzewo liściaste, długowieczne, o szerokiej koronie. Jest najważniejszym gatunkiem lasotwórczym w Europie Środkowej.",
+
+  "czesci_rosliny": {
+    "kora": {
+      "nazwa_surowca": "Cortex Quercus",
+      "opis_botaniczny": "Gładka i lśniąca u młodych okazów, z czasem staje się grubą, głęboko spękaną skorupą.",
+      "skladniki_aktywne": ["Garbniki taninowe (do 20%)", "Kwasy fenolowe", "Flawonoidy", "Sole mineralne"],
+      "wlasciwości": "Silnie ściągające, przeciwzapalne, hamujące drobne krwawienia.",
+      "czas_zbioru": "Wiosna (marzec-kwiecień), zanim pojawią się liście, z młodych, gładkich gałęzi.",
+      "ostrzezenia": "Nie stosować wewnętrznie odwarów z kory przy dużych uszkodzeniach skóry oraz w ostrych stanach niewydolności serca."
+    },
+    "liscie": {
+      "nazwa_surowca": "Folium Quercus",
+      "opis_botaniczny": "Krótkoogonkowe, o nieregularnie klapowanych brzegach, skórzaste, z charakterystycznymi uszkami u nasady.",
+      "skladniki_aktywne": ["Garbniki", "Kwercetyna", "Związki żywiczne"],
+      "wlasciwości": "Antyseptyczne, ściągające, stosowane głównie zewnętrznie w medycynie ludowej.",
+      "czas_zbioru": "Czerwiec - Lipiec (młode liście)."
+    },
+    "owoce": {
+      "nazwa_surowca": "Glandes Quercus (Żołędzie)",
+      "opis_botaniczny": "Owalne orzechy osadzone w miseczkach na długich szypułkach (stąd nazwa gatunku).",
+      "skladniki_aktywne": ["Skrobia", "Tłuszcze", "Białka", "Garbniki (wymagają wyługowania)"],
+      "wlasciwości": "Odżywcze, po obróbce termicznej i wodnej działają przeciwbiegunkowo i wzmacniająco.",
+      "czas_zbioru": "Wrzesień - Październik (gdy same opadają).",
+      "ostrzezenia": "Nadmiar garbników hamuje wchłanianie żelaza i witamin."
+    }
+  },
+
+  "zastosowanie": {
+    "medyczne": "Odwar z kory: stany zapalne jamy ustnej, gardła, odmrożenia i oparzenia. Żołędzie: biegunki, rekonwalescencja.",
+    "kulinarne": "Kawa żołędziowa, mąka do wypieku chleba (po ługowaniu), dodatki do pasztetów.",
+    "ogrodowe": "Gatunek kluczowy dla bioróżnorodności, siedlisko dla setek gatunków owadów, produkcja wysokiej jakości próchnicy."
+  },
+
+  "ostrzezenia": ["Nie stosować wewnętrznie odwarów z kory przy dużych uszkodzeniach skóry oraz w ostrych stanach niewydolności serca.",
+                  "Nadmiar garbników hamuje wchłanianie żelaza i witamin."],
+
+  "ciekawostki": [
+    "Dęby są jednymi z najbardziej miododajnych drzew nie przez kwiaty, lecz przez spadź dębową.",
+    "Kora dębu była historycznie głównym surowcem w garbarstwie do wyprawiania skór.",
+    "W legendach dąb był drzewem kosmicznym, łączącym świat podziemny z niebem."
+  ],
+
+  "permakultura": {
+    "funkcje": [
+      "Pompa mineralna (głębokie korzenie wyciągają minerały na powierzchnię)",
+      "Naturalny wiatrochron",
+      "Producent żołędzi dla systemów wypasu (silvopasture)"
+    ],
+    "gildie": [
+      {
+        "nazwa": "Leszczyna pospolita",
+        "rola": "Piętro niższe, produkcja biomasy i orzechów"
+      },
+      {
+        "nazwa": "Głóg jednoszyjkowy",
+        "rola": "Strażnik (bariera kolczasta) i wsparcie zapylaczy"
+      },
+      {
+        "nazwa": "Śliwa tarnina",
+        "rola": "Zarośla ochronne i stabilizacja gleby"
+      },
+      {
+        "nazwa": "Poziomka pospolita",
+        "rola": "Żywy mulcz (okrywa runa)"
+      },
+      {
+        "nazwa": "Marzanka wonna (Przytulia wonna)",
+        "rola": "Runo leśne i bioindykator gleby"
+      },
+      {
+        "nazwa": "Trufle",
+        "rola": "Symbioza mikoryzowa (strefa korzeniowa)"
+      }
+    ]
+  },
+
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Siew (bezpośredni)",
+        "miesiace": [10, 11],
+        "opis": "Siew dojrzałych żołędzi bezpośrednio do gruntu na głębokość 5-7 cm.",
+        "faza_ksiezyca": "Księżyc ubywający (faza korzenia)",
+        "pora_dnia": "Poranek",
+        "pogoda": "Dzień bezmroźny, wilgotna gleba",
+        "wplyw_ksiezyca": "Sprzyja szybkiemu ukorzenianiu i zapobiega gniciu nasion."
+      },
+      {
+        "czynnosc": "Zbiór kory",
+        "miesiace": [3, 4],
+        "opis": "Pozyskiwanie młodej, gładkiej kory z gałęzi przeznaczonych do przycinki.",
+        "faza_ksiezyca": "Nów lub pierwszy kwartał",
+        "pora_dnia": "Przedpołudnie",
+        "pogoda": "Słonecznie, sucho (ważne dla procesu suszenia)",
+        "wplyw_ksiezyca": "Wzrost soków w górnych partiach rośliny zwiększa zawartość garbników."
+      },
+      {
+        "czynnosc": "Obserwacja kwitnienia",
+        "miesiace": [5],
+        "opis": "Monitorowanie rozwoju kwiatów męskich (kotek) i żeńskich.",
+        "faza_ksiezyca": "Pełnia",
+        "pora_dnia": "Południe",
+        "pogoda": "Lekki wiatr (sprzyja zapylaniu krzyżowemu)",
+        "wplyw_ksiezyca": "Maksymalna witalność rośliny i emisja pyłku."
+      },
+      {
+        "czynnosc": "Zbiór owoców (żołędzi)",
+        "miesiace": [9, 10],
+        "opis": "Zbiór w pełni dojrzałych orzechów opadłych na ziemię.",
+        "faza_ksiezyca": "Księżyc ubywający",
+        "pora_dnia": "Popołudnie (po opadnięciu rosy)",
+        "pogoda": "Sucho i słonecznie",
+        "wplyw_ksiezyca": "Mniejsza zawartość wody w owocach sprzyja lepszemu przechowywaniu."
+      }
+    ]
+  },
+
+  "przepisy_medyczne": [
+    {
+      "czesc_uzyta": "kora",
+      "nazwa": "Odwar do nasiadówek i płukanek",
+      "skladniki": "2 łyżki kory, 1 litr wody",
+      "przygotowanie": "Gotować 15 minut, odstawić na 10 minut. Stosować zewnętrznie."
+    },
+    {
+      "czesc_uzyta": "owoce",
+      "nazwa": "Mąka żołędziowa",
+      "skladniki": "Dojrzałe żołędzie, woda, popiół drzewny (opcjonalnie)",
+      "przygotowanie": "Żołędzie obrać, moczyć w wodzie zmieniając ją przez 3-4 dni (ługowanie garbników), wysuszyć i zmielić."
+    }
+  ],
+
+  "przepisy_kulinarne": [
+    {
+      "czesc_uzyta": "owoce",
+      "nazwa": "Staropolska kawa żołędziowa",
+      "skladniki": "Uprażone żołędzie, korzeń cykorii, goździki",
+      "przygotowanie": "Zmielone składniki gotować 2-3 minuty. Podawać z miodem i mlekiem."
+    }
+  ]
+}

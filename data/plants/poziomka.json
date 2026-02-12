@@ -1,0 +1,38 @@
+{
+  "id": "poziomka",
+  "nazwa_pl": "Poziomka pospolita",
+  "nazwa_lat": "Fragaria vesca",
+  "rodzina": "Różowate",
+  "opis": "Bylina tworząca rozłogi, rosnąca w widnych lasach i na porębach.",
+  "czesci_rosliny": {
+    "liscie": {
+      "nazwa_surowca": "Folium Fragariae",
+      "wlasciwości": "Moczopędne, detoksykujące, ściągające.",
+      "czas_zbioru": "Kwiecień - Czerwiec"
+    },
+    "owoce": {
+      "nazwa_surowca": "Fructus Fragariae",
+      "wlasciwości": "Odżywcze, bogate w witaminę C i żelazo.",
+      "czas_zbioru": "Czerwiec - Lipiec"
+    }
+  },
+  "permakultura": {
+    "funkcje": ["Okrywa gleby (mulcz)", "Akumulator składników odżywczych"],
+    "gildie": [
+      {"nazwa": "Dąb szypułkowy", "rola": "Dostawca cienia"},
+      {"nazwa": "Leszczyna", "rola": "Sąsiad z piętra wyższego"}
+    ]
+  },
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Sadzenie rozłogów",
+        "miesiace": [4, 5, 8, 9],
+        "faza_ksiezyca": "Księżyc przybywający",
+        "pora_dnia": "Wieczór",
+        "pogoda": "Pochmurna, wilgotna",
+        "wplyw_ksiezyca": "Przyspiesza zakorzenianie się nowych sadzonek."
+      }
+    ]
+  }
+}

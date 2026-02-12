@@ -1,0 +1,211 @@
+{% extends "base.html" %}
+
+{% block content %}
+<article class="plant-detail-container">
+    <header style="text-align: center; margin-bottom: 40px;">
+        <h1 style="font-size: 3rem; margin-bottom: 0;">{{ plant.nazwa_pl }}</h1>
+        <p style="font-style: italic; color: #5a6b5a; font-size: 1.4rem;">{{ plant.nazwa_lat }} | Rodzina: {{ plant.rodzina }}</p>
+        <div style="width: 100px; height: 3px; background: #3e4a3d; margin: 20px auto;"></div>
+        <p style="max-width: 700px; margin: 0 auto; font-size: 1.2rem;">{{ plant.opis }}</p>
+    </header>
+
+    <section class="morphology-section">
+        <h2 style="text-align: center;">Morfologia i Surowce Zielarskie</h2>
+        <div class="parts-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 30px;">
+            {% for klucz, dane in plant.czesci_rosliny.items() %}
+            <div class="part-card" style="background: #fff; border: 1px solid #d1c7a7; padding: 20px; position: relative; border-radius: 4px;">
+                <span style="position: absolute; top: -10px; right: 10px; background: #3e4a3d; color: white; padding: 2px 12px; font-size: 0.8rem; text-transform: uppercase;">{{ klucz }}</span>
+                <h3 style="margin-top: 0; color: #3e4a3d;">{{ dane.nazwa_surowca }}</h3>
+                <p><strong>Cechy:</strong> {{ dane.opis_botaniczny }}</p>
+                <p><strong>Właściwości:</strong> {{ dane.wlasciwości }}</p>
+                <div style="background: #f9f7f2; padding: 10px; border-left: 3px solid #b8860b; font-size: 0.9rem;">
+                    <strong>Składniki:</strong> {{ dane.skladniki_aktywne|join(', ') }}<br>
+                    <strong>Zbiór:</strong> {{ dane.czas_zbioru }}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <hr style="margin: 50px 0; border: 0; border-top: 1px double #d1c7a7;">
+
+    <section class="garden-calendar" style="margin-bottom: 50px;">
+        <h2 style="text-align: center;">📅 Kalendarz Prac i Zjawisk Fenologicznych</h2>
+        <p style="text-align: center; color: #666; margin-bottom: 30px;">Harmonogram uwzględniający fazy księżyca oraz warunki atmosferyczne.</p>
+
+        <div class="calendar-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px;">
+            {% for zadanie in plant.kalendarz_ogrodnika.zadania %}
+            <div class="task-card" style="border: 1px solid #3e4a3d; padding: 20px; background: #fff; box-shadow: 5px 5px 0px #e9f0e8;">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                    <h4 style="color: #3e4a3d; margin: 0; font-size: 1.2rem;">{{ zadanie.czynnosc }}</h4>
+                    <span style="background: #3e4a3d; color: white; padding: 3px 10px; border-radius: 15px; font-size: 0.75rem;">
+                        Miesiące: {{ zadanie.miesiace|join(', ') }}
+                    </span>
+                </div>
+                <p style="font-size: 0.95rem; line-height: 1.4;">{{ zadanie.opis }}</p>
+
+                <div class="biodynamic-specs" style="margin-top: 15px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.85rem;">
+                    <div style="background: #fdfaf0; padding: 8px;">🌙 <strong>Księżyc:</strong><br>{{ zadanie.faza_ksiezyca }}</div>
+                    <div style="background: #fdfaf0; padding: 8px;">☀️ <strong>Pora dnia:</strong><br>{{ zadanie.pora_dnia }}</div>
+                    <div style="background: #fdfaf0; padding: 8px;">☁️ <strong>Pogoda:</strong><br>{{ zadanie.pogoda }}</div>
+                    <div style="background: #e9f0e8; padding: 8px; grid-column: span 2;">
+                        <strong>Wpływ kosmiczny:</strong> {{ zadanie.wplyw_ksiezyca }}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+
+
+    <hr style="margin: 50px 0; border: 0; border-top: 1px double #d1c7a7;">
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+        <section>
+            <h2>Apteka i Kuchnia</h2>
+
+            <h3 style="color: #8b0000;">Przepisy Medyczne</h3>
+            {% for przepis in plant.przepisy_medyczne %}
+            <div style="margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
+                <strong style="font-size: 1.1rem;">{{ przepis.nazwa }}</strong>
+                <span style="font-size: 0.8rem; color: #666;">(Surowiec: {{ przepis.czesc_uzyta }})</span>
+                <p style="margin: 5px 0;"><em>Składniki:</em> {{ przepis.skladniki }}</p>
+                <p style="margin: 5px 0;">{{ przepis.przygotowanie }}</p>
+            </div>
+            {% endfor %}
+
+            <h3 style="color: #2d5a27;">Przepisy Kulinarne</h3>
+            {% for przepis in plant.przepisy_kulinarne %}
+            <div style="background: #f4f1ea; padding: 15px; margin-bottom: 15px;">
+                <strong>{{ przepis.nazwa }}</strong><br>
+                <small>Użyta część: {{ przepis.czesc_uzyta }}</small>
+                <p>{{ przepis.przygotowanie }}</p>
+            </div>
+            {% endfor %}
+        </section>
+
+        <section>
+            <h2>Wiedza i Ekologia</h2>
+
+            <div style="background: #fff5f5; border: 1px solid #feb2b2; padding: 20px; margin-bottom: 30px;">
+                <h3 style="color: #c53030; margin-top: 0;">⚠️ Ostrzeżenia</h3>
+                <p>{{ plant.ostrzezenia }}</p>
+            </div>
+
+            <div style="background: #e9f0e8; border: 1px solid #3e4a3d; padding: 25px; border-radius: 8px;">
+                <h3 style="margin-top: 0; display: flex; align-items: center; gap: 10px;">
+                    <span style="font-size: 1.5rem;">🌳</span> Gildia Permakulturowa
+                </h3>
+                <p style="font-weight: bold; color: #2d5a27; margin-bottom: 10px; border-bottom: 1px solid #3e4a3d; padding-bottom: 5px;">
+                    Rośliny wspierające i ich rola:
+                </p>
+
+                <div class="guild-list" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-bottom: 20px;">
+                    {% if plant.permakultura.gildie is iterable and plant.permakultura.gildie is not string %}
+                        {# JEŚLI GILDIA JEST LISTĄ (OBIEKTÓW LUB NAPISÓW) #}
+                        {% for g in plant.permakultura.gildie %}
+                            <div style="background: rgba(255,255,255,0.5); padding: 8px 12px; border-radius: 4px; font-size: 0.9rem;">
+                                {% if g is mapping %}
+                                    <strong>{{ g.nazwa }}</strong><br>
+                                    <small style="color: #666;">{{ g.rola }}</small>
+                                {% else %}
+                                    <strong>{{ g }}</strong>
+                                {% endif %}
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        {# JEŚLI GILDIA JEST PO PROSTU TEKSTEM #}
+                        <p style="font-size: 0.95rem; line-height: 1.5;">{{ plant.permakultura.gildie }}</p>
+                    {% endif %}
+                </div>
+
+
+
+    <p style="font-weight: bold; color: #2d5a27; margin-top: 20px; border-bottom: 1px solid #3e4a3d; padding-bottom: 5px;">
+        Funkcje systemowe:
+    </p>
+    <ul style="padding-left: 20px; margin-top: 10px;">
+        {% for funkcja in plant.permakultura.funkcje %}
+            <li style="margin-bottom: 5px; font-size: 0.95rem;">{{ funkcja }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+            <div style="margin-top: 30px;">
+                <h3>Ciekawostki</h3>
+                <ul>
+                {% for ciekawostka in plant.ciekawostki %}
+                    <li>{{ ciekawostka }}</li>
+                {% endfor %}
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <hr style="margin: 50px 0;">
+    <section class="comments-section">
+        <h3>Interakcje i Notatki</h3>
+
+        {% if current_user.is_authenticated %}
+            <form action="{{ url_for('add_comment', plant_id=plant_id) }}" method="POST" style="margin-bottom: 30px; background: #fdfaf0; padding: 20px; border: 1px solid #d1c7a7;">
+                <textarea name="content" placeholder="Dodaj swoją uwagę lub prywatną notatkę o tej roślinie..." required style="width: 100%; height: 80px; padding: 10px; border: 1px solid #d1c7a7; margin-bottom: 10px;"></textarea>
+
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                    <input type="checkbox" name="is_private" id="is_private" style="width: 18px; height: 18px; cursor: pointer;">
+                    <label for="is_private" style="cursor: pointer; font-weight: bold; color: #3e4a3d;">
+                        🔒 Zapisz jako prywatną notatkę (widoczną tylko dla Ciebie)
+                    </label>
+                </div>
+
+                <button type="submit" style="background: #3e4a3d; color: white; padding: 10px 20px; border: none; cursor: pointer; transition: 0.3s;">
+                    Opublikuj wpis
+                </button>
+            </form>
+        {% else %}
+            <p style="background: #f9f9f9; padding: 15px; border: 1px dashed #ccc; text-align: center;">
+                <em>Zaloguj się, aby dodać komentarz lub prywatną notatkę.</em>
+            </p>
+        {% endif %}
+
+        <div class="comments-list">
+            {% for comment in comments %}
+                {# Rozróżnienie wizualne: Notatka prywatna (żółta) vs Komentarz publiczny (biały) #}
+                <div class="comment-item" style="
+                    margin-bottom: 20px;
+                    padding: 20px;
+                    border-radius: 4px;
+                    {% if comment.is_private %}
+                        background: #fff9c4; border-left: 5px solid #fbc02d; box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+                    {% else %}
+                        background: #fff; border-bottom: 1px solid #eee;
+                    {% endif %}
+                ">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span>
+                            <strong style="color: #3e4a3d;">{{ comment.author.username }}</strong>
+                            {% if comment.is_private %}
+                                <span style="margin-left: 10px; font-size: 0.8rem; background: #fbc02d; color: #000; padding: 2px 8px; border-radius: 10px;">
+                                    🔒 MOJA NOTATKA
+                                </span>
+                            {% endif %}
+                        </span>
+                        <small style="color: #999;">{{ comment.date_posted.strftime('%Y-%m-%d %H:%M') }}</small>
+                    </div>
+
+                    <p style="margin: 15px 0; color: #333; line-height: 1.5;">{{ comment.content }}</p>
+
+                    {% if current_user == comment.author or current_user.is_admin %}
+                        <div style="font-size: 0.85rem; border-top: 1px solid rgba(0,0,0,0.05); padding-top: 10px;">
+                            <a href="{{ url_for('edit_comment', comment_id=comment.id) }}" style="color: #4e5d4c; text-decoration: none; font-weight: bold;">[Edytuj]</a>
+                            <a href="{{ url_for('delete_comment', comment_id=comment.id) }}" style="color: #a94442; text-decoration: none; margin-left: 15px;" onclick="return confirm('Czy na pewno chcesz usunąć ten wpis?')">[Usuń]</a>
+                        </div>
+                    {% endif %}
+                </div>
+            {% else %}
+                <p style="color: #999; text-align: center;">Brak wpisów dla tej rośliny.</p>
+            {% endfor %}
+        </div>
+    </section>
+</article>
+{% endblock %}

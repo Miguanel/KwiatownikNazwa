@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="generator-container">
+    <h1>Zaawansowany Kreator Receptur</h1>
+
+    <form method="POST" class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+            <div>
+                <label>Typ mikstury:</label>
+                <select name="gen_type" class="input-field">
+                    <option value="nalewka">Nalewka (1:5)</option>
+                    <option value="napar">Napar/Mieszanka (1:10)</option>
+                </select>
+            </div>
+            <div>
+                <label>Objętość docelowa (ml):</label>
+                <input type="number" name="volume" value="500" step="50" class="input-field">
+            </div>
+        </div>
+        <div class="search-box" style="margin-bottom: 20px; padding: 15px; background: #e9f0e8;">
+            <label for="prop_search"><strong>Wyszukaj po właściwościach (np. uspokajające, przeciwzapalne):</strong></label>
+            <input type="text" id="prop_search" list="prop_list" placeholder="Zacznij pisać..." style="width: 100%; padding: 10px;">
+
+            <datalist id="prop_list">
+                {% for prop in suggestions %}
+                    <option value="{{ prop }}">
+                {% endfor %}
+            </datalist>
+        </div>
+
+        <div id="parts_container">
+            {% for plant in plants_with_parts %}
+                <div class="plant-group" data-plant-name="{{ plant.name }}">
+                    <h4>{{ plant.name }}</h4>
+                    {% for part in plant.parts %}
+                        <div class="part-item" data-props="{{ part.properties }}">
+                            <input type="checkbox" name="selected_parts" value="{{ plant.id }}:{{ part.name }}" id="{{ plant.id }}_{{ part.name }}">
+                            <label for="{{ plant.id }}_{{ part.name }}">
+                                {{ part.name }} <small>({{ part.properties }})</small>
+                            </label>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </div>
+
+
+
+        <button type="submit" class="btn-green" style="width: 100%; margin-top: 20px;">Generuj Protokół Farmakopealny</button>
+    </form>
+
+    {% if result %}
+    <div class="recipe-result" style="margin-top: 40px; border: 3px double #3e4a3d; padding: 30px; background: #fdfaf0;">
+        <h2 style="text-align: center; border-bottom: 1px solid #3e4a3d; padding-bottom: 10px;">
+            Protokół Sporządzenia: {{ result.type|upper }}
+        </h2>
+
+        <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+            <tr style="background: #3e4a3d; color: white;">
+                <th style="padding: 10px; text-align: left;">Surowiec (Pharmacopoeia)</th>
+                <th style="padding: 10px; text-align: right;">Ilość (masa)</th>
+            </tr>
+            {% for p in result.proportions %}
+            <tr style="border-bottom: 1px solid #d1c7a7;">
+                <td style="padding: 10px;">
+                    <strong>{{ p.label }}</strong><br>
+                    <small style="color: #666;">Działanie: {{ p.desc }}</small>
+                </td>
+                <td style="padding: 10px; text-align: right; font-weight: bold;">{{ p.value }}</td>
+            </tr>
+            {% endfor %}
+            <tr style="background: #eee;">
+                <td style="padding: 10px;"><strong>Rozpuszczalnik (Alkohol/Woda)</strong></td>
+                <td style="padding: 10px; text-align: right; font-weight: bold;">{{ result.volume }}ml</td>
+            </tr>
+        </table>
+
+        {% if result.warnings %}
+        <div style="background: #fff5f5; border: 1px solid #feb2b2; padding: 15px; margin-top: 20px;">
+            <strong style="color: #c53030;">⚠️ Przeciwwskazania dla użytych części:</strong>
+            <ul style="margin: 5px 0; font-size: 0.85rem;">
+                {% for w in result.warnings %}
+                    <li>{{ w }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+        <p style="font-style: italic; font-size: 0.8rem; margin-top: 20px; text-align: center;">
+            Wygenerowano przez system {{ config['APP_NAME'] if config['APP_NAME'] else 'Kwiatownik' }} dnia {{ now }}
+        </p>
+    </div>
+    {% endif %}
+</div>
+
+<script>
+document.getElementById('prop_search').addEventListener('input', function(e) {
+    let filter = e.target.value.toLowerCase();
+    let partItems = document.querySelectorAll('.part-item');
+    let plantGroups = document.querySelectorAll('.plant-group');
+
+    partItems.forEach(item => {
+        let props = item.getAttribute('data-props').toLowerCase();
+        // Jeśli wpisano frazę, pokaż tylko pasujące części
+        if (props.includes(filter) || filter === "") {
+            item.style.display = "block";
+        } else {
+            item.style.display = "none";
+        }
+    });
+
+    // Ukryj nagłówki roślin, jeśli żadna ich część nie pasuje
+    plantGroups.forEach(group => {
+        let visibleParts = group.querySelectorAll('.part-item[style="display: block;"]').length;
+        group.style.display = visibleParts > 0 ? "block" : "none";
+    });
+});
+</script>
+
+{% endblock %}

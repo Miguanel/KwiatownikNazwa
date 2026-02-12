@@ -1,0 +1,62 @@
+{
+  "id": "marzanka_wonna",
+  "nazwa_pl": "Marzanka wonna (Przytulia wonna)",
+  "nazwa_lat": "Galium odoratum",
+  "rodzina": "Marzanowate",
+  "opis": "Niska bylina leśna o okółkowych liściach i drobnych białych kwiatach. Słynie z intensywnego zapachu świeżego siana po wysuszeniu.",
+  "czesci_rosliny": {
+    "ziele": {
+      "nazwa_surowca": "Herba Asperulae (Herba Galii odorati)",
+      "opis_botaniczny": "Cienkie łodygi z charakterystycznymi okółkami lancetowatych liści. Rośnie dywanowo.",
+      "skladniki_aktywne": ["Glikozydy kumarynowe (asperulozyd)", "Flawonoidy", "Garbniki", "Kwasy organiczne", "Gorycze"],
+      "wlasciwości": "Uspokajające, przeciwskurczowe, poprawiające krążenie żylne, przeciwzapalne.",
+      "czas_zbioru": "Kwiecień - Maj (przed kwitnieniem lub na samym początku)."
+    }
+  },
+  "zastosowanie": {
+    "medyczne": "Stosowana w stanach napięcia nerwowego, bezsenności oraz pomocniczo przy żylakach i hemoroidach.",
+    "kulinarne": "Główny składnik 'Majtrank' (wina majowego). Nadaje aromat lodom, syropom i tytoniowi.",
+    "ogrodowe": "Doskonała roślina okrywowa do głębokiego cienia pod koronami dużych drzew."
+  },
+  "permakultura": {
+    "funkcje": [
+        "Okrywa runa leśnego (zapobiega erozji)",
+        "Bioindykator gleb bogatych w próchnicę",
+        "Roślina miododajna dla specyficznych grup owadów"
+    ],
+    "gildie": [
+      {"nazwa": "Dąb szypułkowy", "rola": "Dostawca cienia i kwaśnej próchnicy"},
+      {"nazwa": "Czosnek niedźwiedzi", "rola": "Sąsiad z runa"},
+      {"nazwa": "Buk zwyczajny", "rola": "Alternatywna dominanta"}
+    ],
+    "opis_ekologiczny": "Marzanka tworzy symbiozę z dębami, ponieważ doskonale znosi garbniki uwalniane z liści dębu do gleby."
+  },
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Zbiór ziela",
+        "miesiace": [5],
+        "opis": "Ścinamy całe pędy tuż przed pełnym rozkwitem.",
+        "faza_ksiezyca": "Pierwsza kwadra (Księżyc przybywający)",
+        "pora_dnia": "Poranek",
+        "pogoda": "Chłodno, cień",
+        "wplyw_ksiezyca": "Sprzyja zachowaniu zielonego koloru po wysuszeniu."
+      },
+      {
+        "czynnosc": "Dzielenie kęp",
+        "miesiace": [3, 9],
+        "opis": "Rozmnażanie przez podział podziemnych kłączy.",
+        "faza_ksiezyca": "Nów (faza korzenia)",
+        "pora_dnia": "Wieczór",
+        "pogoda": "Wilgotno",
+        "wplyw_ksiezyca": "Minimalizuje szok po przesadzeniu."
+      }
+    ]
+  },
+  "ciekawostki": [
+    "Zapach marzanki pochodzi od kumaryny, która uwalnia się dopiero po naruszeniu struktury rośliny lub jej zwiędnięciu.",
+    "W średniowieczu wieszano ją w kościołach, by neutralizować nieprzyjemne zapachy.",
+    "W nadmiarze może powodować bóle głowy (ze względu na kumarynę)."
+  ],
+  "ostrzezenia": "Nie należy przekraczać dawek terapeutycznych. Kumaryna w dużych ilościach jest toksyczna dla wątroby. Unikać w ciąży."
+}

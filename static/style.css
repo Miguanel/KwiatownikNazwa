@@ -1,0 +1,188 @@
+/* Import czcionek: Klasyczna szeryfowa do treści i ozdobna do nagłówków */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
+:root {
+    --bg-color: #fdfaf0;        /* Kolor pergaminu */
+    --accent-green: #2d5a27;    /* Ciemna zieleń roślinna */
+    --text-color: #2c2c2c;      /* Kolor atramentu */
+    --border-color: #d1c7a7;    /* Kolor starego papieru */
+    --warning-red: #8b0000;     /* Głęboka czerwień  */
+}
+
+body {
+    background-color: #f4f1ea;
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); /* Subtelna tekstura papieru */
+    color: var(--text-color);
+    font-family: 'Crimson Text', serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* --- Nawigacja --- */
+nav {
+    background-color: var(--accent-green);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px rgba(255,255,255,0.5);
+}
+
+/* --- Główny Kontener --- */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 50px;
+    background: var(--bg-color);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.05), -5px -5px 15px rgba(0,0,0,0.05);
+    border: 1px solid var(--border-color);
+    position: relative;
+}
+
+/* Efekt ozdobnej ramki wewnątrz kontenera */
+.container::before {
+    content: "";
+    position: absolute;
+    top: 10px; left: 10px; right: 10px; bottom: 10px;
+    border: 1px solid var(--border-color);
+    pointer-events: none;
+}
+
+/* --- Nagłówki --- */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--accent-green);
+}
+
+h1 { font-size: 2.8rem; text-align: center; margin-bottom: 0.5rem; }
+h2 { border-bottom: 2px solid var(--border-color); padding-bottom: 5px; }
+
+/* --- Karta Rośliny (Index) --- */
+.plant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.plant-card {
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.btn-green {
+    background-color: var(--accent-green);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0;
+    border: none;
+    cursor: pointer;
+    font-family: 'Crimson Text', serif;
+    font-size: 1rem;
+}
+
+.btn-green:hover {
+    background-color: #1e3d1a;
+}
+
+/* --- Komentarze --- */
+.comment {
+    background: rgba(255,255,255,0.5);
+    border-left: 3px solid var(--accent-green);
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.comment-meta {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.admin-badge {
+    color: #b8860b;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+/* --- Formularze --- */
+input[type="text"], input[type="password"], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    background: #fff;
+    font-family: inherit;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+/* --- Flash Messages --- */
+.flash {
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid;
+}
+.flash-success { background: #e8f5e9; border-color: #2d5a27; color: #2d5a27; }
+.flash-danger { background: #ffebee; border-color: var(--warning-red); color: var(--warning-red); }
+
+/* Stopka */
+footer {
+    text-align: center;
+    margin: 40px 0;
+    color: #888;
+    font-style: italic;
+}
+
+.part-card:hover {
+    border-color: var(--accent-green) !important;
+    box-shadow: 0 4px 15px rgba(62, 74, 61, 0.1);
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+<style>
+    .companion-card-link:hover {
+        background: #f0f4f0 !important;
+        border-color: #b8860b !important;
+        transform: scale(1.1);
+        z-index: 20;
+    }
+    .companion-card-link:hover .link-hint {
+        opacity: 1;
+    }
+    /* Animacja pulsowania */
+    .center-node {
+        animation: pulse 3s infinite;
+    }
+    @keyframes pulse {
+        0% { box-shadow: 0 0 0 0 rgba(62, 74, 61, 0.4); }
+        70% { box-shadow: 0 0 0 20px rgba(62, 74, 61, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(62, 74, 61, 0); }
+    }
+</style>
