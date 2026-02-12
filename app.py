@@ -22,8 +22,17 @@ app = Flask(__name__,
             template_folder=resource_path('templates'),
             static_folder=resource_path('static'))
 app.config['SECRET_KEY'] = 'twoj_super_tajny_klucz_123'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///kwiatownik.db'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///kwiatownik.db'
 app.config['JSON_DATA_FOLDER'] = 'data/plants'
+
+# Pobiera URL bazy z ustawień serwera, a jeśli go nie ma (lokalnie), używa SQLite
+DATABASE_URL = os.getenv('DATABASE_URL')
+# WAŻNE: Render/Neon często wymagają poprawki protokołu z postgres:// na postgresql://
+if DATABASE_URL and DATABASE_URL.startswith("postgres://"):
+    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
+
+app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL or 'sqlite:///local.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 login_manager = LoginManager(app)
@@ -47,6 +56,10 @@ class Comment(db.Model):
     is_private = db.Column(db.Boolean, default=False)
     plant_id = db.Column(db.String(100), nullable=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+
+
+with app.app_context():
+    db.create_all()
 
 
 @login_manager.user_loader
@@ -389,7 +402,6 @@ def logout():
 
 if __name__ == '__main__':
     with app.app_context():
-        db.create_all()
         if not os.path.exists(app.config['JSON_DATA_FOLDER']):
             os.makedirs(app.config['JSON_DATA_FOLDER'])
 
