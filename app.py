@@ -73,13 +73,24 @@ def load_user(user_id):
 
 # --- FUNKCJE POMOCNICZE (JSON) ---
 
-def get_plant_data(plant_name):
-    """Wczytuje dane o roślinie z pliku JSON."""
-    file_path = os.path.join(app.config['JSON_DATA_FOLDER'], f"{plant_name}.json")
-    if os.path.exists(file_path):
-        with open(file_path, 'r', encoding='utf-8') as f:
+def get_plant_data(pid):
+    # Zakładam, że Twoja ścieżka wygląda tak:
+    path = os.path.join('data', f'{pid}.json')
+
+    if not os.path.exists(path):
+        print(f"BŁĄD: Plik {path} nie istnieje!")
+        return None
+
+    if os.path.getsize(path) == 0:
+        print(f"BŁĄD: Plik {path} jest pustY (0 bajtów)!")
+        return None
+
+    try:
+        with open(path, 'r', encoding='utf-8') as f:
             return json.load(f)
-    return None
+    except json.JSONDecodeError:
+        print(f"BŁĄD: Plik {path} zawiera niepoprawny format JSON!")
+        return None
 
 
 def get_all_plants_list():
