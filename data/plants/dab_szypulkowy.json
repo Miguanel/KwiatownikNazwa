@@ -2,146 +2,217 @@
   "id": "dab_szypulkowy",
   "nazwa_pl": "Dąb szypułkowy",
   "nazwa_lat": "Quercus robur",
-  "rodzina": "Bukowate",
-  "opis": "Potężne drzewo liściaste, długowieczne, o szerokiej koronie. Jest najważniejszym gatunkiem lasotwórczym w Europie Środkowej.",
+  "rodzina": "Bukowate (Fagaceae)",
+  "opis": "Monumentalne, długowieczne drzewo liściaste osiągające do 40m wysokości. Posiada szeroką, nieregularną koronę i głęboki system korzeniowy. Jest gatunkiem kluczowym dla europejskich ekosystemów leśnych, dającym schronienie setkom gatunków owadów, ptaków i grzybów. W tradycji słowiańskiej drzewo święte, poświęcone Perunowi, symbolizujące siłę i trwałość.",
+
+  "profil_energetyczny": {
+    "smak": "Cierpki, gorzki, lekko ściągający",
+    "termika": "Chłodna",
+    "wilgotnosc": "Osuszająca",
+    "zywiol": "Ziemia",
+    "opis": "Silnie osuszający i tonizujący (obkurczający). W energetyce tradycyjnej stosowany do 'zatrzymywania przepływów' – tamuje krew, hamuje biegunkę, zmniejsza nadmierną potliwość i wysięki skórne."
+  },
+
+  "wymagania": {
+    "stanowisko": "Pełne słońce (szczególnie w fazie wzrostu), w starszym wieku toleruje półcień.",
+    "gleba": "Głęboka, żyzna, gliniasta lub piaszczysto-gliniasta, bogata w próchnicę.",
+    "ph_gleby": "6.0 - 7.5 (Lekko kwaśna do obojętnej).",
+    "mrozoodpornosc": "Strefa 4 (Całkowicie mrozoodporny w polskich warunkach).",
+    "woda": "Lubi gleby świeże i wilgotne, znosi okresowe zalewanie wodami rzecznymi (lasy łęgowe), ale jest też odporny na okresowe susze dzięki palowemu systemowi korzeniowemu."
+  },
+
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Liście posiadają charakterystyczne 'uszka' u nasady blaszki (obejmują ogonek).",
+      "Żołędzie osadzone są na długich szypułkach (stąd nazwa gatunkowa), po 1-3 sztuki.",
+      "Kora u starszych drzew głęboko i podłużnie spękana, ciemnoszara."
+    ],
+    "mozliwe_pomyłki": [
+      {
+        "nazwa": "Dąb bezszypułkowy (Quercus petraea)",
+        "roznica": "Żołędzie 'siedzące' bezpośrednio na gałązce (bez szypułek), liście na dłuższych ogonkach, bez 'uszek' u nasady. Właściwości lecznicze obu dębów są tożsame."
+      },
+      {
+        "nazwa": "Dąb czerwony (Quercus rubra)",
+        "roznica": "Gatunek inwazyjny z Ameryki. Liście mają ostro zakończone klapy (z ośćmi). Kora długo pozostaje gładka. Mniejsze znaczenie zielarskie."
+      }
+    ]
+  },
 
   "czesci_rosliny": {
     "kora": {
       "nazwa_surowca": "Cortex Quercus",
-      "opis_botaniczny": "Gładka i lśniąca u młodych okazów, z czasem staje się grubą, głęboko spękaną skorupą.",
-      "skladniki_aktywne": ["Garbniki taninowe (do 20%)", "Kwasy fenolowe", "Flawonoidy", "Sole mineralne"],
-      "wlasciwości": "Silnie ściągające, przeciwzapalne, hamujące drobne krwawienia.",
-      "czas_zbioru": "Wiosna (marzec-kwiecień), zanim pojawią się liście, z młodych, gładkich gałęzi.",
-      "ostrzezenia": "Nie stosować wewnętrznie odwarów z kory przy dużych uszkodzeniach skóry oraz w ostrych stanach niewydolności serca."
+      "opis_botaniczny": "Pozyskiwana wyłącznie z młodych pni i gałęzi (tzw. kora lustrzana) o grubości do kilku centymetrów, zanim pojawi się wierzchnia warstwa korka. Powinna być gładka, lśniąca, srebrzysto-szara.",
+      "skladniki_aktywne": [
+        "Garbniki skondensowane (katechinowe) - do 20%",
+        "Kwasy fenolowe (galusowy, elagowy)",
+        "Trójterpeny (frydelina)",
+        "Flawonoidy (kwercetyna)",
+        "Sole mineralne"
+      ],
+      "wlasciwości": "Silnie ściągające, przeciwzapalne, antyseptyczne, przeciwbiegunkowe, hamujące drobne krwawienia.",
+      "czas_zbioru": "Wczesna wiosna (marzec-kwiecień), w okresie ruszania soków, co ułatwia zdejmowanie kory.",
+      "ostrzezenia": "Nie stosować wewnętrznie przy zaparciach i niedokrwistości (blokuje żelazo). Kąpiele niewskazane przy rozległych uszkodzeniach skóry i niewydolności serca (nadciśnienie III stopnia)."
     },
     "liscie": {
       "nazwa_surowca": "Folium Quercus",
-      "opis_botaniczny": "Krótkoogonkowe, o nieregularnie klapowanych brzegach, skórzaste, z charakterystycznymi uszkami u nasady.",
-      "skladniki_aktywne": ["Garbniki", "Kwercetyna", "Związki żywiczne"],
-      "wlasciwości": "Antyseptyczne, ściągające, stosowane głównie zewnętrznie w medycynie ludowej.",
-      "czas_zbioru": "Czerwiec - Lipiec (młode liście)."
+      "opis_botaniczny": "Skórzaste, odwrotnie jajowate, z 3-7 parami zaokrąglonych klap. Zbierane młode, zdrowe, bez galasów i oznak mączniaka.",
+      "skladniki_aktywne": [
+        "Garbniki",
+        "Flawonoidy",
+        "Fitoncydy",
+        "Związki żywiczne"
+      ],
+      "wlasciwości": "Łagodnie ściągające, bakteriostatyczne. Stosowane do płukanek przy łupieżu i przetłuszczających się włosach oraz do kąpieli relaksacyjnych.",
+      "czas_zbioru": "Czerwiec - Lipiec (gdy są w pełni rozwinięte, ale wciąż elastyczne).",
+      "ostrzezenia": "Bezpieczniejsze w użyciu niż kora, ale nadal mogą wysuszać skórę przy długotrwałym stosowaniu."
     },
     "owoce": {
       "nazwa_surowca": "Glandes Quercus (Żołędzie)",
-      "opis_botaniczny": "Owalne orzechy osadzone w miseczkach na długich szypułkach (stąd nazwa gatunku).",
-      "skladniki_aktywne": ["Skrobia", "Tłuszcze", "Białka", "Garbniki (wymagają wyługowania)"],
-      "wlasciwości": "Odżywcze, po obróbce termicznej i wodnej działają przeciwbiegunkowo i wzmacniająco.",
-      "czas_zbioru": "Wrzesień - Październik (gdy same opadają).",
-      "ostrzezenia": "Nadmiar garbników hamuje wchłanianie żelaza i witamin."
+      "opis_botaniczny": "Jednonasienne orzechy osadzone w miseczkach. Zbierane, gdy są w pełni dojrzałe (brązowe) i same opadają z drzewa.",
+      "skladniki_aktywne": [
+        "Skrobia (ok. 40%)",
+        "Tłuszcze",
+        "Białka",
+        "Garbniki (wymagają usunięcia przez ługowanie)",
+        "Witaminy z grupy B",
+        "Minerały (potas, magnez)"
+      ],
+      "wlasciwości": "Wysoko odżywcze (po przetworzeniu), przeciwbiegunkowe, ogólnie wzmacniające organizm (rekonwalescencja). Kawa żołędziowa reguluje trawienie.",
+      "czas_zbioru": "Wrzesień - Październik.",
+      "ostrzezenia": "Surowe żołędzie są trujące dla ludzi i wielu zwierząt domowych (konie, psy) z powodu wysokiej zawartości tanin. Wymagają obróbki termicznej lub wodnej."
+    },
+    "galasy": {
+      "nazwa_surowca": "Galla (Dębianki)",
+      "opis_botaniczny": "Kuliste narośla na liściach powstające w wyniku nakłucia przez owada (galasówkę dębiankę).",
+      "skladniki_aktywne": [
+        "Bardzo wysokie stężenie tanin (do 70%)",
+        "Kwas galusowy"
+      ],
+      "wlasciwości": "Najsilniejszy surowiec garbnikowy. Historycznie używany do wyrobu atramentu i w garbarstwie, rzadziej w medycynie (silne oparzenia).",
+      "czas_zbioru": "Późne lato, zanim owad opuści galas (dla najwyższej zawartości garbników).",
+      "ostrzezenia": "Wyłącznie do użytku zewnętrznego i technicznego. Silnie drażniące żołądek."
     }
   },
 
   "zastosowanie": {
-    "medyczne": "Odwar z kory: stany zapalne jamy ustnej, gardła, odmrożenia i oparzenia. Żołędzie: biegunki, rekonwalescencja.",
-    "kulinarne": "Kawa żołędziowa, mąka do wypieku chleba (po ługowaniu), dodatki do pasztetów.",
-    "ogrodowe": "Gatunek kluczowy dla bioróżnorodności, siedlisko dla setek gatunków owadów, produkcja wysokiej jakości próchnicy."
+    "medyczne": "Odwar z kory jest standardem w leczeniu nadmiernej potliwości stóp oraz w nasiadówkach przy hemoroidach i stanach zapalnych narządów płciowych. Wewnętrznie przy ostrych biegunkach.",
+    "kulinarne": "Mąka żołędziowa (po wyługowaniu goryczy) jako dodatek do chleba (bezglutenowa). Kawa żołędziowa jako substytut kofeiny, bezpieczny dla dzieci i osób z nadciśnieniem.",
+    "ogrodowe": "Liście dębu rozkładają się powoli, tworząc doskonałą ziemię liściową (kwaśną) dla roślin wrzosowatych. Wywar z kory służy jako naturalny środek przeciwgrzybiczy do ochrony roślin.",
+    "rzemieslnicze": "Tradycyjne garbowanie skór. Produkcja atramentu żelazowo-galusowego (historyczny standard średniowiecza). Barwienie wełny i tkanin na kolory od beżu, przez brąz, aż do czerni (z solami żelaza)."
   },
 
-  "ostrzezenia": ["Nie stosować wewnętrznie odwarów z kory przy dużych uszkodzeniach skóry oraz w ostrych stanach niewydolności serca.",
-                  "Nadmiar garbników hamuje wchłanianie żelaza i witamin."],
+  "interakcje": "Preparaty z dębu (bogate w garbniki) tworzą nierozpuszczalne kompleksy z wieloma lekami, uniemożliwiając ich wchłonięcie. Dotyczy to zwłaszcza: preparatów żelaza, magnezu, wapnia, alkaloidów sercowych i leków psychotropowych. Należy zachować odstęp min. 2-3 godziny między spożyciem przetworów dębowych a przyjęciem leków.",
 
   "ciekawostki": [
-    "Dęby są jednymi z najbardziej miododajnych drzew nie przez kwiaty, lecz przez spadź dębową.",
-    "Kora dębu była historycznie głównym surowcem w garbarstwie do wyprawiania skór.",
-    "W legendach dąb był drzewem kosmicznym, łączącym świat podziemny z niebem."
+    "Dąb 'Bartek', najsłynniejszy polski dąb, ma około 670 lat, choć legendy przypisują mu ponad 1000.",
+    "W medycynie ludowej woda zbierająca się w dziuplach dębowych była uważana za lekarstwo na brodawki i kurzajki.",
+    "Szynka Parmeńska zawdzięcza swój smak temu, że świnie są karmione żołędziami dębowymi.",
+    "Drewno dębu czernieje pod wpływem długotrwałego przebywania w wodzie (tzw. czarny dąb), stając się twardym jak kamień i cennym materiałem jubilerskim."
   ],
 
   "permakultura": {
     "funkcje": [
-      "Pompa mineralna (głębokie korzenie wyciągają minerały na powierzchnię)",
-      "Naturalny wiatrochron",
-      "Producent żołędzi dla systemów wypasu (silvopasture)"
+      "Dynamiczny akumulator (korzenie wyciągają wapń i potas z głębokich warstw)",
+      "Drzewo mateczne (szkieletowe) w systemach leśnych",
+      "Produkcja paszy wysokokalorycznej dla zwierząt (świnie, drób)",
+      "Tworzenie mikroklimatu i wiatrochronu"
     ],
     "gildie": [
-      {
-        "nazwa": "Leszczyna pospolita",
-        "rola": "Piętro niższe, produkcja biomasy i orzechów"
-      },
-      {
-        "nazwa": "Głóg jednoszyjkowy",
-        "rola": "Strażnik (bariera kolczasta) i wsparcie zapylaczy"
-      },
-      {
-        "nazwa": "Śliwa tarnina",
-        "rola": "Zarośla ochronne i stabilizacja gleby"
-      },
-      {
-        "nazwa": "Poziomka pospolita",
-        "rola": "Żywy mulcz (okrywa runa)"
-      },
-      {
-        "nazwa": "Marzanka wonna (Przytulia wonna)",
-        "rola": "Runo leśne i bioindykator gleby"
-      },
-      {
-        "nazwa": "Trufle",
-        "rola": "Symbioza mikoryzowa (strefa korzeniowa)"
-      }
+      { "nazwa": "Leszczyna pospolita", "rola": "Warstwa krzewów, toleruje cień dębu" },
+      { "nazwa": "Głóg jednoszyjkowy", "rola": "Ochrona pnia przed zwierzętami, wsparcie dla ptaków" },
+      { "nazwa": "Porzeczka czarna", "rola": "Warstwa owoconośna w rzucie korony" },
+      { "nazwa": "Żywokost lekarski", "rola": "Ściółkowanie, przyspieszanie rozkładu liści dębu" },
+      { "nazwa": "Grzyby mikoryzowe (Borowik, Trufla)", "rola": "Symbioza korzeniowa, wymiana składników" }
     ]
   },
 
   "kalendarz_ogrodnika": {
     "zadania": [
       {
-        "czynnosc": "Siew (bezpośredni)",
-        "miesiace": [10, 11],
-        "opis": "Siew dojrzałych żołędzi bezpośrednio do gruntu na głębokość 5-7 cm.",
-        "faza_ksiezyca": "Księżyc ubywający (faza korzenia)",
-        "pora_dnia": "Poranek",
-        "pogoda": "Dzień bezmroźny, wilgotna gleba",
-        "wplyw_ksiezyca": "Sprzyja szybkiemu ukorzenianiu i zapobiega gniciu nasion."
-      },
-      {
-        "czynnosc": "Zbiór kory",
+        "czynnosc": "Pozyskiwanie kory",
         "miesiace": [3, 4],
-        "opis": "Pozyskiwanie młodej, gładkiej kory z gałęzi przeznaczonych do przycinki.",
-        "faza_ksiezyca": "Nów lub pierwszy kwartał",
-        "pora_dnia": "Przedpołudnie",
-        "pogoda": "Słonecznie, sucho (ważne dla procesu suszenia)",
-        "wplyw_ksiezyca": "Wzrost soków w górnych partiach rośliny zwiększa zawartość garbników."
+        "opis": "Zbiór z młodych gałązek (3-5 cm średnicy) ścinanych podczas wiosennych prześwietleń lasu. Kora musi łatwo odchodzić od drewna.",
+        "faza_ksiezyca": "Nów lub I kwadra (soki ruszają w górę)",
+        "pora_dnia": "Suchy poranek po zejściu rosy",
+        "pogoda": "Dni słoneczne i wietrzne (sprzyja wstępnemu podsuszeniu)",
+        "wplyw_ksiezyca": "Wzmożony przepływ soków zwiększa aktywność enzymatyczną surowca."
       },
       {
-        "czynnosc": "Obserwacja kwitnienia",
-        "miesiace": [5],
-        "opis": "Monitorowanie rozwoju kwiatów męskich (kotek) i żeńskich.",
-        "faza_ksiezyca": "Pełnia",
-        "pora_dnia": "Południe",
-        "pogoda": "Lekki wiatr (sprzyja zapylaniu krzyżowemu)",
-        "wplyw_ksiezyca": "Maksymalna witalność rośliny i emisja pyłku."
+        "czynnosc": "Siew żołędzi",
+        "miesiace": [10, 11],
+        "opis": "Wysiew świeżo zebranych żołędzi. Nie znoszą one przesuszenia, dlatego siew jesienny jest skuteczniejszy niż wiosenny.",
+        "faza_ksiezyca": "Księżyc ubywający (faza korzenia)",
+        "pora_dnia": "Dowolna",
+        "pogoda": "Przed zamarznięciem gruntu",
+        "wplyw_ksiezyca": "Skierowanie energii w dół sprzyja rozwojowi korzenia palowego."
       },
       {
-        "czynnosc": "Zbiór owoców (żołędzi)",
+        "czynnosc": "Zbiór żołędzi",
         "miesiace": [9, 10],
-        "opis": "Zbiór w pełni dojrzałych orzechów opadłych na ziemię.",
-        "faza_ksiezyca": "Księżyc ubywający",
-        "pora_dnia": "Popołudnie (po opadnięciu rosy)",
-        "pogoda": "Sucho i słonecznie",
-        "wplyw_ksiezyca": "Mniejsza zawartość wody w owocach sprzyja lepszemu przechowywaniu."
+        "opis": "Zbieramy tylko orzechy brązowe, które same opadły. Zielone są niedojrzałe i bezwartościowe kulinarnie.",
+        "faza_ksiezyca": "Pełnia lub III kwadra",
+        "pora_dnia": "Słoneczne popołudnie",
+        "pogoda": "Sucho (mokre żołędzie szybko pleśnieją)",
+        "wplyw_ksiezyca": "Sprzyja gromadzeniu skrobi i tłuszczów w nasionach."
       }
     ]
   },
 
   "przepisy_medyczne": [
     {
-      "czesc_uzyta": "kora",
-      "nazwa": "Odwar do nasiadówek i płukanek",
-      "skladniki": "2 łyżki kory, 1 litr wody",
-      "przygotowanie": "Gotować 15 minut, odstawić na 10 minut. Stosować zewnętrznie."
-    },
-    {
-      "czesc_uzyta": "owoce",
-      "nazwa": "Mąka żołędziowa",
-      "skladniki": "Dojrzałe żołędzie, woda, popiół drzewny (opcjonalnie)",
-      "przygotowanie": "Żołędzie obrać, moczyć w wodzie zmieniając ją przez 3-4 dni (ługowanie garbników), wysuszyć i zmielić."
+      "tytul": "Odwar z kory dębu (Kąpiel / Nasiadówka)",
+      "typ": "medyczne",
+      "metoda": "odwar",
+      "tagi": ["skóra", "hemoroidy", "nadpotliwość"],
+      "skladniki": [
+        "Kora dębu (suszona, rozdrobniona): 4 łyżki stołowe",
+        "Woda: 1 litr"
+      ],
+      "sposob_przygotowania": [
+        "Korę zalać zimną wodą w garnku emaliowanym.",
+        "Doprowadzić powoli do wrzenia i gotować na wolnym ogniu pod przykryciem przez 15-20 minut.",
+        "Odstawić na 10 minut do naciągnięcia.",
+        "Przecedzić bezpośrednio do wanny (kąpiel) lub miednicy (nasiadówka/moczenie stóp)."
+      ],
+      "dawkowanie": "Stosować zewnętrznie 1-2 razy dziennie. Czas kąpieli ok. 15-20 minut.",
+      "uwagi": "Nie stosować mydła podczas kąpieli leczniczej (zmydla garbniki).",
+      "zrodla": ["Farmakopea Polska", "H. Różański"],
+      "roslina": "Dąb szypułkowy",
+      "nazwa_lacinska": "Quercus robur",
+      "slug": "dab_szypulkowy",
+      "cechy": ["ściągający", "brązowy kolor", "zapach lasu"],
+      "wlasciwosci": ["przeciwzapalna", "antyseptyczna", "przeciwpotna"]
     }
   ],
 
   "przepisy_kulinarne": [
     {
-      "czesc_uzyta": "owoce",
-      "nazwa": "Staropolska kawa żołędziowa",
-      "skladniki": "Uprażone żołędzie, korzeń cykorii, goździki",
-      "przygotowanie": "Zmielone składniki gotować 2-3 minuty. Podawać z miodem i mlekiem."
+      "tytul": "Tradycyjna Kawa Żołędziowa",
+      "typ": "kulinarne",
+      "metoda": "prażenie",
+      "tagi": ["bez kofeiny", "napój", "wzmacniające"],
+      "skladniki": [
+        "Dojrzałe żołędzie (ilość dowolna)",
+        "Woda (do ługowania)",
+        "Przyprawy (kardamon, cynamon, goździki) - opcjonalnie",
+        "Mleko lub napój roślinny"
+      ],
+      "sposob_przygotowania": [
+        "Obrane żołędzie zalać wodą i odstawić na 24h. Wodę zmieniać, aż przestanie być brązowa (ługowanie garbników).",
+        "Wyługowane żołędzie wysuszyć, a następnie uprażyć w piekarniku lub na suchej patelni na ciemnobrązowy kolor (uważać, by nie spalić).",
+        "Uprażone orzechy zmielić w młynku do kawy.",
+        "Gotować 1 czubatą łyżeczkę proszku na szklankę wody przez 3-5 minut."
+      ],
+      "dawkowanie": "Pić 1-2 filiżanki dziennie jako zamiennik kawy.",
+      "uwagi": "Napój jest bardzo sycący i regenerujący. Można mieszać z korzeniem cykorii.",
+      "zrodla": ["Kuchnia staropolska", "Survival leśny"],
+      "roslina": "Dąb szypułkowy",
+      "nazwa_lacinska": "Quercus robur",
+      "slug": "dab_szypulkowy",
+      "cechy": ["orzechowy smak", "głęboki aromat", "kolor kawy"],
+      "wlasciwosci": ["odżywcza", "regulująca trawienie"]
     }
-  ]
+  ],
+  "ostrzezenia": "Nie stosować wewnętrznie odwarów z kory przy dużych uszkodzeniach skóry oraz w ostrych stanach niewydolności serca. Nadmiar garbników hamuje wchłanianie żelaza i witamin."
 }
