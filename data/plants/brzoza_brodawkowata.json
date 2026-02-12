@@ -1,0 +1,188 @@
+{
+  "id": "brzoza_brodawkowata",
+  "nazwa_pl": "Brzoza brodawkowata",
+  "nazwa_lat": "Betula pendula",
+  "rodzina": "Brzozowate (Betulaceae)",
+  "opis": "Smukłe, eleganckie drzewo o charakterystycznej białej korze i zwisających gałęziach. Jest gatunkiem pionierskim, niezwykle odpornym na trudne warunki, który jako pierwszy zasiedla nieużytki, przygotowując grunt pod inne gatunki drzew. W tradycji północnej Brzoza jest symbolem odrodzenia, czystości i powrotu wiosny. Jej liście, pąki i sok (oskoła) stanowią fundament wiosennych kuracji detoksykujących.",
+
+  "profil_energetyczny": {
+    "smak": "Słodki (sok), gorzki, lekko cierpki (liście, pąki)",
+    "termika": "Chłodna",
+    "wilgotnosc": "Osuszająca i poruszająca płyny",
+    "zywiol": "Woda i Powietrze",
+    "opis": "Brzoza jest mistrzynią 'przepływu'. Działa na organizm jak filtr, który otwiera zastoje płynów, płucze nerki i usuwa 'wilgotne gorąco' odpowiedzialne za stany zapalne stawów i obrzęki. Ma energię łagodną, ale niezwykle skuteczną w oczyszczaniu krwi."
+  },
+
+  "wymagania": {
+    "stanowisko": "Pełne słońce. Jest skrajnie światłożądna – w cieniu szybko marnieje.",
+    "gleba": "Skrajnie tolerancyjna; od suchych piasków po torfowiska. Najlepiej rośnie na glebach lekkich i przepuszczalnych.",
+    "ph_gleby": "4.5 - 6.5 (Wyraźnie kwasolubna).",
+    "mrozoodpornosc": "Strefa 2 (Jedno z najodporniejszych drzew na świecie, sięga aż po koło podbiegunowe).",
+    "woda": "Znosi zarówno suszę, jak i okresowe zalewanie, choć preferuje umiarkowaną wilgotność."
+  },
+
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Biała, łuszcząca się okrężnie kora (u starych drzew u nasady czarna i spękana).",
+      "Liście trójkątne lub rombowate, o zaostrzonym wierzchołku, podwójnie piłkowane.",
+      "Gałązki pokryte licznymi, drobnymi, żywicznymi brodawkami (stąd nazwa).",
+      "Młode pędy cienkie, wiotkie i charakterystycznie zwisające."
+    ],
+    "mozliwe_pomyłki": [
+      {
+        "nazwa": "Brzoza omszona (Betula pubescens)",
+        "roznica": "Brzoza omszona ma liście bardziej jajowate, spodem miękko owłosione, a gałązki są gładkie (bez brodawek) i nie zwisają tak silnie."
+      },
+      {
+        "nazwa": "Osika (Populus tremula)",
+        "roznica": "Kora osiki jest zielonkawoszara i gładka, a ogonki liściowe spłaszczone, co sprawia, że liście 'drżą' na wietrze."
+      }
+    ]
+  },
+
+  "czesci_rosliny": {
+    "liscie": {
+      "nazwa_surowca": "Folium Betulae",
+      "opis_botaniczny": "Młode liście, wciąż lekko lepkie od żywicy, zbierane w maju. Powinny być intensywnie zielone i zdrowe.",
+      "skladniki_aktywne": [
+        "Flawonoidy (hiperozyd, kwercetyna)",
+        "Saponiny",
+        "Olejek eteryczny",
+        "Garbniki",
+        "Witamina C"
+      ],
+      "wlasciwości": "Silnie moczopędne (bez podrażniania nerek), napotne, odtruwające, przeciwreumatyczne.",
+      "czas_zbioru": "Maj (młode liście).",
+      "ostrzezenia": "Nie stosować przy dużych obrzękach wywołanych niewydolnością serca."
+    },
+    "sok": {
+      "nazwa_surowca": "Succus Betulae (Oskoła)",
+      "opis_botaniczny": "Przezroczysty, lekko słodkawy płyn pozyskiwany z pni wczesną wiosną.",
+      "skladniki_aktywne": [
+        "Sole mineralne (potas, wapń, magnez, żelazo)",
+        "Aminokwasy",
+        "Witaminy z grupy B",
+        "Naturalne cukry (fruktoza, glukoza)"
+      ],
+      "wlasciwości": "Ogólnie wzmacniające, regenerujące, poprawiające metabolizm, oczyszczające skórę.",
+      "czas_zbioru": "Marzec - Kwiecień (gdy pąki pęcznieją, ale liście jeszcze się nie rozwinęły).",
+      "ostrzezenia": "Świeży sok psuje się w ciągu 2-3 dni; należy go przechowywać w lodówce lub konserwować alkoholem."
+    },
+    "paki": {
+      "nazwa_surowca": "Gemmae Betulae",
+      "opis_botaniczny": "Pączki liściowe zbierane w okresie nabrzmiewania, pełne żywic.",
+      "skladniki_aktywne": ["Olejek eteryczny", "Żywice", "Flawonoidy"],
+      "wlasciwości": "Silniej odkażające drogi moczowe niż liście, działają silnie żółciopędnie i przeciwzapalnie.",
+      "czas_zbioru": "Luty - Marzec.",
+      "ostrzezenia": "Mogą podrażniać żołądek przy stosowaniu na czczo."
+    },
+    "kora": {
+      "nazwa_surowca": "Cortex Betulae",
+      "opis_botaniczny": "Biała warstwa kory, bogata w betulinę.",
+      "skladniki_aktywne": ["Betulina (nawet do 30%)", "Kwas betulinowy", "Lupeol"],
+      "wlasciwości": "Przeciwnowotworowe (badania nad czerniakiem), silnie przeciwzapalne, przeciwwirusowe.",
+      "czas_zbioru": "Cały rok (najlepiej z powalonych drzew)."
+    }
+  },
+
+  "zastosowanie": {
+    "medyczne": "Kamica nerkowa, dna moczanowa (usuwanie kwasu moczowego), reumatyzm, infekcje dróg moczowych. Zewnętrznie w leczeniu łuszczycy, trądziku i wypadaniu włosów.",
+    "kulinarne": "Picie świeżego soku (oskoły) jako napoju izotonicznego. Odparowany sok tworzy rzadki, ale bardzo aromatyczny syrop brzozowy. Młode liście jako dodatek do wiosennych zup.",
+    "ogrodowe": "Osuszanie terenów podmokłych, tworzenie jasnych, świetlistych ogrodów. Brzozy poprawiają strukturę gleby dzięki dużej ilości opadających liści.",
+    "rzemieslnicze": "Kora brzozowa (dziegieć) to historyczny klej i środek konserwujący. Kora zewnętrzna służy do wyrobu wodoodpornych pojemników, butów i jako najlepsza naturalna rozpałka do ognia (pali się nawet mokra). Drewno cenione w meblarstwie i jako opał o wysokiej kaloryczności."
+  },
+
+  "interakcje": "Przetwory z brzozy mogą nasilać działanie leków moczopędnych. Osoby uczulone na aspirynę powinny zachować ostrożność (zawartość salicylanów w niektórych gatunkach brzóz).",
+
+  "ciekawostki": [
+    "Dziegieć brzozowy był 'super-klejem' epoki kamienia – używano go do mocowania grotów strzał.",
+    "Ötzi, 'Człowiek Lodu', miał przy sobie hubę brzozową (czyreń), która służyła mu jako apteczka podróżna.",
+    "Brzoza produkuje fitoncydy – substancje, które sterylizują powietrze wokół drzewa w promieniu kilku metrów.",
+    "W Rosji i Skandynawii gałązki brzozowe są nieodzownym elementem sauny, służąc do masażu pobudzającego krążenie."
+  ],
+
+  "permakultura": {
+    "funkcje": [
+      "Dynamiczny akumulator (wyciąga minerały z głębokich warstw gleby).",
+      "Drzewo pielęgnacyjne (chroni wolniej rosnące gatunki przed mrozem).",
+      "Producent biomasy szybko rozkładającej się.",
+      "Siedlisko dla wielu gatunków grzybów (Koźlarz babka, Muchomor czerwony)."
+    ],
+    "gildie": [
+      { "nazwa": "Sosna zwyczajna", "rola": "Tworzą razem naturalne lasy pionierskie." },
+      { "nazwa": "Borówka brusznica", "rola": "Krzewinka runa preferująca kwaśne podłoże brzozowe." },
+      { "nazwa": "Wrzos zwyczajny", "rola": "Naturalny partner na piaszczystych wrzosowiskach." },
+      { "nazwa": "Grzyb: Koźlarz brzozowy", "rola": "Ścisła symbioza mikoryzowa." }
+    ]
+  },
+
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Pozyskiwanie oskoły (soku)",
+        "miesiace": [3, 4],
+        "opis": "Wiercenie otworu na głębokość 2-3 cm w pniu i zbieranie soku do naczynia przez rurkę.",
+        "faza_ksiezyca": "Księżyc przybywający (od nowiu do pełni)",
+        "pora_dnia": "Cała doba (najintensywniej w południe)",
+        "pogoda": "Słoneczne dni, mroźne noce",
+        "wplyw_ksiezyca": "Zwiększa ciśnienie osmotyczne i intensywność wypływu soków."
+      },
+      {
+        "czynnosc": "Zbiór liści majowych",
+        "miesiace": [5],
+        "opis": "Obrywanie młodych, lepkich liści z dolnych gałęzi.",
+        "faza_ksiezyca": "Pełnia",
+        "pora_dnia": "Przedpołudnie",
+        "pogoda": "Sucho i ciepło",
+        "wplyw_ksiezyca": "Maksymalna zawartość flawonoidów i olejków eterycznych."
+      }
+    ]
+  },
+
+  "przepisy_medyczne": [
+    {
+      "tytul": "Wiosenny Odwar na Detoks Nerek",
+      "typ": "medyczne",
+      "metoda": "odwar",
+      "tagi": ["nerki", "detoks", "obrzęki"],
+      "skladniki": [
+        "Suszone liście brzozy: 2 łyżki",
+        "Woda: 500 ml"
+      ],
+      "sposob_przygotowania": [
+        "Liście zalać wodą i doprowadzić do wrzenia.",
+        "Gotować na bardzo małym ogniu przez 3-5 minut.",
+        "Odstawić na 15 minut pod przykryciem, przecedzić."
+      ],
+      "dawkowanie": "Pić 3 razy dziennie po pół szklanki między posiłkami.",
+      "uwagi": "Wypłukuje piasek z nerek i redukuje obrzęki nóg.",
+      "roslina": "Brzoza brodawkowata",
+      "slug": "brzoza_brodawkowata",
+      "cechy": ["słomkowy kolor", "lekko gorzki smak"],
+      "wlasciwosci": ["moczopędna", "odtruwająca"]
+    }
+  ],
+
+  "przepisy_kulinarne": [
+    {
+      "tytul": "Lemoniada z Oskoły",
+      "typ": "kulinarne",
+      "metoda": "mieszanie",
+      "tagi": ["napój", "witaminy", "orzeźwienie"],
+      "skladniki": [
+        "Świeży sok z brzozy: 1 litr",
+        "Sok z połowy cytryny",
+        "Kilka listków świeżej mięty"
+      ],
+      "sposob_przygotowania": [
+        "Składniki wymieszać w szklanym dzbanku.",
+        "Podawać mocno schłodzone."
+      ],
+      "dawkowanie": "Pić dowolnie w okresie wiosennym.",
+      "uwagi": "Idealny napój po wysiłku fizycznym, bogaty w elektrolity.",
+      "roslina": "Brzoza brodawkowata",
+      "slug": "brzoza_brodawkowata"
+    }
+  ],
+  "ostrzezenia": "Pyłek brzozy jest silnym alergenem wziewnym w okresie kwietnia i maja. Osoby z niedrożnością dróg moczowych powinny skonsultować kurację z lekarzem."
+}

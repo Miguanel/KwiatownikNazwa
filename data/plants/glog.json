@@ -2,37 +2,215 @@
   "id": "glog",
   "nazwa_pl": "Głóg jednoszyjkowy",
   "nazwa_lat": "Crataegus monogyna",
-  "rodzina": "Różowate",
-  "opis": "Ciernisty krzew lub małe drzewo. Kluczowa roślina dla zdrowia serca.",
+  "rodzina": "Różowate (Rosaceae)",
+  "opis": "Długowieczny, ciernisty krzew lub małe drzewo dorastające do 6-10 metrów. Nazywany 'Chlebem Serca', jest jedną z najważniejszych roślin kardiologicznych w fitoterapii zachodniej. Tworzy gęste, trudne do przebycia zarośla, dając schronienie ptakom. Wiosną obsypuje się białym kwieciem o specyficznym zapachu, jesienią rodzi czerwone owoce.",
+
+  "profil_energetyczny": {
+    "smak": "Kwaśny, lekko słodki, cierpki",
+    "termika": "Neutralna do lekko ciepłej",
+    "wilgotnosc": "Neutralna",
+    "zywiol": "Ogień (Serce) i Ziemia (Żołądek)",
+    "opis": "Wspaniały tonik Qi serca. Nie stymuluje gwałtownie, lecz stabilizuje i odżywia. Otwiera serce na poziomie emocjonalnym (uspokaja Shen), pomaga przy 'ciężkości' na klatce piersiowej wywołanej smutkiem lub stresem. Wspomaga trawienie tłustych pokarmów."
+  },
+
+  "wymagania": {
+    "stanowisko": "Słoneczne do półcienistego (w pełnym słońcu obficiej kwitnie i owocuje).",
+    "gleba": "Tolerancyjny, ale preferuje gleby gliniasto-piaszczyste, zasadowe (wapienne), umiarkowanie wilgotne.",
+    "ph_gleby": "6.0 - 8.0 (Lekko kwaśna do zasadowej).",
+    "mrozoodpornosc": "Strefa 4 (Całkowicie mrozoodporny, odporny na wiatr).",
+    "woda": "Wytrzymały na suszę dzięki głębokiemu systemowi korzeniowemu."
+  },
+
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Wewnątrz owocu znajduje się TYLKO JEDNA pestka (stąd nazwa 'jednoszyjkowy').",
+      "Liście są głęboko wcięte (3-7 klap), wcięcia sięgają często do połowy nerwu głównego.",
+      "Ostre ciernie o długości 1-2 cm na pędach."
+    ],
+    "mozliwe_pomyłki": [
+      {
+        "nazwa": "Głóg dwuszyjkowy (Crataegus laevigata)",
+        "roznica": "Owoce mają 2 (rzadziej 3) pestki. Liście są płyciej klapowane, bardziej jajowate. Obydwa gatunki są równocenne leczniczo i można je mieszać."
+      },
+      {
+        "nazwa": "Róża dzika (Rosa canina)",
+        "roznica": "Owoce (szupinki) są większe, wewnątrz mają wiele owłosionych orzeszków, a pędy mają zakrzywione kolce, nie proste ciernie."
+      }
+    ]
+  },
+
   "czesci_rosliny": {
     "kwiaty": {
-      "nazwa_surowca": "Inflorescentia Crataegi",
-      "wlasciwości": "Nasercowe, obniżające ciśnienie krwi.",
-      "czas_zbioru": "Maj"
+      "nazwa_surowca": "Inflorescentia Crataegi (Kwiatostan z liściem)",
+      "opis_botaniczny": "Białe kwiaty zebrane w baldachogrona, z charakterystycznymi różowymi pylnikami, zbierane wraz z najbliższymi liśćmi przykwiatowymi.",
+      "skladniki_aktywne": [
+        "Flawonoidy (witeksyna, hiperozyd) - kluczowe dla serca",
+        "Procyjanidyny oligomeryczne (OPC)",
+        "Aminy",
+        "Fitosterole"
+      ],
+      "wlasciwości": "Rozszerzają naczynia wieńcowe, zwiększają przepływ tlenu do serca, delikatnie obniżają ciśnienie, działają uspokajająco (mocniej niż owoce).",
+      "czas_zbioru": "Maj - Czerwiec (na początku kwitnienia, gdy część pąków jest jeszcze zamknięta).",
+      "ostrzezenia": "Suszyć w cieniu i przewiewie (szybko ciemnieją). Nie zbierać przekwitłych kwiatów."
     },
     "owoce": {
       "nazwa_surowca": "Fructus Crataegi",
-      "wlasciwości": "Wzmacniające naczynia krwionośne, witaminowe.",
-      "czas_zbioru": "Wrzesień - Październik"
+      "opis_botaniczny": "Czerwone, mączyste owoce rzekome (pozorne) wielkości grochu, z jedną pestką w środku.",
+      "skladniki_aktywne": [
+        "Procyjanidyny",
+        "Witaminy (C, z grupy B)",
+        "Pektyny",
+        "Kwasy organiczne",
+        "Sole mineralne (potas, magnez, wapń)"
+      ],
+      "wlasciwości": "Tonik mięśnia sercowego (wzmacnia siłę skurczu), uszczelnia naczynia krwionośne, działa przeciwmiażdżycowo i łagodnie nasennie.",
+      "czas_zbioru": "Wrzesień - Październik (gdy są w pełni dojrzałe, ciemnoczerwone).",
+      "ostrzezenia": "Przemrożenie owoców sprawia, że stają się miękkie i słodsze (dobre na przetwory), ale trudniejsze do suszenia."
     }
   },
+
+  "zastosowanie": {
+    "medyczne": "Niezastąpiony w 'sercu starczym' (osłabienie wydolności), przy kołataniach serca na tle nerwowym, w początkowym stadium nadciśnienia oraz w rekonwalescencji po zawale. Działa powoli, ale trwale.",
+    "kulinarne": "Owoce (po usunięciu pestek) nadają się na dżemy, wina, nalewki i jako dodatek do mąki (w czasach głodu suszone owoce mielono na mąkę). Młode pączki liściowe są jadalną, orzechową przekąską ('chleb kukułczy').",
+    "ogrodowe": "Doskonała roślina na żywopłoty obronne (ciernie). Ważna roślina miododajna i pożytek dla ptaków zimą.",
+    "rzemieslnicze": "Drewno głogu jest niezwykle twarde, ciężkie i spoiste. Używane do wyrobu trzonków do narzędzi, lasek, a dawniej do części mechanizmów młynów. Idealna podkładka do szczepienia szlachetnych odmian grusz i jabłoni."
+  },
+
+  "interakcje": "Głóg potęguje działanie glikozydów naparstnicy (leki nasercowe) oraz beta-blokerów. Osoby przyjmujące leki na serce lub nadciśnienie powinny skonsultować kurację głogową z lekarzem (może być konieczna redukcja dawki leków syntetycznych).",
+
+  "ciekawostki": [
+    "W mitologii celtyckiej głóg był strażnikiem wrót do świata wróżek. Ścięcie samotnego głogu przynosiło pecha.",
+    "Drewno głogu pali się w bardzo wysokiej temperaturze, dawniej używane w piecach piekarniczych.",
+    "Jezusowa korona cierniowa miała być spleciona z gałęzi głogu (lub głożyny).",
+    "Angielska nazwa 'Hawthorn' pochodzi od słowa 'Hage' (żywopłot) - od wieków był to krzew grodzący pola."
+  ],
+
   "permakultura": {
-    "funkcje": ["Bariera ochronna (kolce)", "Siedlisko dla ptaków", "Wsparcie zapylaczy"],
+    "funkcje": [
+      "Roślina pionierska i barierowa (żywopłot obronny)",
+      "Siedlisko i stołówka dla ptaków (bezpieczne gniazdowanie w cierniach)",
+      "Wsparcie dla owadów zapylających",
+      "Podkładka do szczepienia drzew owocowych"
+    ],
     "gildie": [
-      {"nazwa": "Dąb szypułkowy", "rola": "Filar gildii"},
-      {"nazwa": "Tarnina", "rola": "Zarośla ochronne"}
+      { "nazwa": "Dąb szypułkowy", "rola": "Piętro wysokie, głóg rośnie w jego cieniu" },
+      { "nazwa": "Grusza / Jabłoń", "rola": "Można szczepić na głogu, tworząc dzikie sady" },
+      { "nazwa": "Melisa lekarska", "rola": "Zioło uspokajające, uzupełnia działanie głogu" },
+      { "nazwa": "Mniszek lekarski", "rola": "Dynamiczny akumulator, przyciąga zapylacze" }
     ]
   },
+
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór kwiatów",
         "miesiace": [5],
-        "faza_ksiezyca": "Księżyc przybywający (faza kwiatu)",
-        "pora_dnia": "Poranek (po rosie)",
-        "pogoda": "Słoneczna",
-        "wplyw_ksiezyca": "Maksymalna koncentracja flawonoidów."
+        "opis": "Zbiór całych kwiatostanów wraz z 2-3 listkami, gdy pierwsze kwiaty się otwierają, a reszta jest w pąkach.",
+        "faza_ksiezyca": "Pełnia lub Księżyc przybywający (faza kwiatu)",
+        "pora_dnia": "Suchy poranek, zaraz po obeschnięciu rosy",
+        "pogoda": "Słonecznie, ciepło",
+        "wplyw_ksiezyca": "Najwyższa koncentracja olejków i flawonoidów."
+      },
+      {
+        "czynnosc": "Sadzenie / Szczepienie",
+        "miesiace": [3, 11],
+        "opis": "Sadzenie nagich korzeni jesienią lub wiosną. Szczepienie grusz na głogu (wiosna).",
+        "faza_ksiezyca": "Księżyc przybywający (szczepienie) lub ubywający (sadzenie)",
+        "pora_dnia": "Pochmurno",
+        "pogoda": "Wilgotno, temperatura powyżej 0°C",
+        "wplyw_ksiezyca": "Wzrost soków sprzyja zrastaniu się zrazu z podkładką."
+      },
+      {
+        "czynnosc": "Zbiór owoców",
+        "miesiace": [9, 10],
+        "opis": "Zrywanie dojrzałych, twardych owoców do suszenia. Na przetwory można zbierać po przymrozkach.",
+        "faza_ksiezyca": "Księżyc ubywający",
+        "pora_dnia": "Popołudnie",
+        "pogoda": "Słonecznie i sucho",
+        "wplyw_ksiezyca": "Owoce są trwalsze i mniej podatne na psucie."
       }
     ]
-  }
+  },
+
+  "przepisy_medyczne": [
+    {
+      "tytul": "Intrakt Głogowy (Stabilizujący Serce)",
+      "typ": "medyczne",
+      "metoda": "intrakt",
+      "tagi": ["serce", "nadciśnienie", "nerwica", "bezsenność"],
+      "skladniki": [
+        "Świeże kwiaty głogu: 100g",
+        "Alkohol 40-60% (gorący): 500ml"
+      ],
+      "sposob_przygotowania": [
+        "Świeżo zebrane kwiaty zalać w słoiku gorącym alkoholem (ok. 60-70°C). Gorący alkohol stabilizuje enzymy i zapobiega rozkładowi flawonoidów.",
+        "Zakręcić słoik i odstawić w ciemne miejsce na 14 dni.",
+        "Wstrząsać co kilka dni.",
+        "Przecedzić i przelać do ciemnej butelki."
+      ],
+      "dawkowanie": "30-40 kropli 2-3 razy dziennie. Stosować regularnie przez min. 3 miesiące.",
+      "uwagi": "Intrakt jest stabilniejszy niż zwykła nalewka z suszu.",
+      "zrodla": ["Dr H. Różański", "Tradycja aptekarska"],
+      "roslina": "Głóg jednoszyjkowy",
+      "nazwa_lacinska": "Crataegus monogyna",
+      "slug": "glog",
+      "cechy": ["kolor bursztynowy", "zapach miodowy"],
+      "wlasciwosci": ["uspokajająca", "przeciwskurczowa", "nasercowa"]
+    },
+    {
+      "tytul": "Mieszanka 'Spokojne Serce'",
+      "typ": "medyczne",
+      "metoda": "napar",
+      "tagi": ["nerwica", "kołatanie serca", "stres"],
+      "skladniki": [
+        "Kwiat głogu: 2 części",
+        "Ziele serdecznika: 1 część",
+        "Liść melisy: 1 część",
+        "Szyszki chmielu: 0.5 części"
+      ],
+      "sposob_przygotowania": [
+        "Wymieszać zioła.",
+        "1 łyżkę mieszanki zalać szklanką wrzątku.",
+        "Parzyć pod przykryciem 20 minut."
+      ],
+      "dawkowanie": "Pić 2 razy dziennie, rano i wieczorem.",
+      "uwagi": "Doskonała przy kołataniach serca na tle emocjonalnym.",
+      "zrodla": ["Przepisy klasztorne"],
+      "roslina": "Głóg jednoszyjkowy",
+      "nazwa_lacinska": "Crataegus monogyna",
+      "slug": "glog",
+      "cechy": ["gorzkawy smak", "ziołowy aromat"],
+      "wlasciwosci": ["wyciszająca", "regulująca rytm serca"]
+    }
+  ],
+
+  "przepisy_kulinarne": [
+    {
+      "tytul": "Wino Głogowe (Na krążenie)",
+      "typ": "kulinarne",
+      "metoda": "fermentacja",
+      "tagi": ["wino", "krążenie", "odporność"],
+      "skladniki": [
+        "Owoce głogu (przemrożone, zmiażdżone): 2kg",
+        "Woda: 5 litrów",
+        "Cukier: 1.5kg",
+        "Drożdże winiarskie (typ Malaga lub Madera)"
+      ],
+      "sposob_przygotowania": [
+        "Owoce zalać wrzątkiem w pojemniku fermentacyjnym, dodać połowę cukru rozpuszczonego w wodzie.",
+        "Po ostudzeniu dodać matkę drożdżową.",
+        "Po tygodniu burzliwej fermentacji dodać resztę cukru.",
+        "Po miesiącu oddzielić owoce, wino przenieść do balona do cichej fermentacji."
+      ],
+      "dawkowanie": "Kieliszek do obiadu.",
+      "uwagi": "Wino głogowe dojrzewa długo – najlepsze jest po roku leżakowania.",
+      "zrodla": ["Domowy Winiarz"],
+      "roslina": "Głóg jednoszyjkowy",
+      "nazwa_lacinska": "Crataegus monogyna",
+      "slug": "glog",
+      "cechy": ["kolor rubinowy", "smak wytrawny/półsłodki"],
+      "wlasciwosci": ["rozgrzewająca", "poprawiająca krążenie"]
+    }
+  ],
+  "ostrzezenia": "Głóg potęguje działanie leków nasercowych (glikozydów) i obniżających ciśnienie. Nie stosować samowolnie przy zaawansowanej niewydolności serca wymagającej hospitalizacji."
 }

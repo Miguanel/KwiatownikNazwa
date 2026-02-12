@@ -7750,14 +7750,18 @@
         "Zalać winem 5–7 dni, wstrząsać, przecedzić."
       ],
       "dawkowanie": "20–30 ml 1× dziennie.",
-      "uwagi": "Tradycyjny przepis historyczny. Nie stosować w ciąży/karmieniu, u dzieci oraz przy chorobach przewlekłych bez konsultacji. Przerwać przy objawach nadwrażliwości.",
+      "uwagi": ["Tradycyjny przepis historyczny. ",
+                "Nie stosować w ciąży/karmieniu, u dzieci oraz przy chorobach przewlekłych bez konsultacji.",
+                "Przerwać przy objawach nadwrażliwości."],
       "zrodla": [
         "Syreniusz S. — Zielnik (1613)"
       ],
       "roslina": "Dąb szypułkowy",
       "nazwa_lacinska": "Quercus robur",
       "slug": "dab_szypulkowy",
-      "wlasciwosci": "Kora dębu działa ściągająco, przeciwzapalnie i przeciwbakteryjnie. Tradycyjnie stosowana była przy biegunkach, stanach zapalnych jamy ustnej i gardła oraz do przemywań ran. Zawiera garbniki katechinowe.",
+      "wlasciwosci": ["Kora dębu działa ściągająco, przeciwzapalnie i przeciwbakteryjnie.",
+                      "Tradycyjnie stosowana była przy biegunkach, stanach zapalnych jamy ustnej i gardła oraz do przemywań ran.",
+                      "Zawiera garbniki katechinowe."],
       "cechy": "Nalewka o głębokiej, ciemnobrunatnej barwie, cierpkim i gorzkawym smaku, o drzewnym aromacie."
     },
     {
@@ -7915,7 +7919,8 @@
       "roslina": "Szczawik zajęczy",
       "nazwa_lacinska": "Oxalis acetosella",
       "slug": "szczawik_zajeczy",
-      "wlasciwosci": "Szczawik zajęczy zawiera szczawiany, działa lekko moczopędnie i odświeżająco. W tradycji stosowany przy gorączkach i wzmocnieniu organizmu.",
+      "wlasciwosci": ["Szczawik zajęczy zawiera szczawiany, działa lekko moczopędnie i odświeżająco.",
+                      " W tradycji stosowany przy gorączkach i wzmocnieniu organizmu."],
       "cechy": "Miód pitny o złocistym kolorze z delikatną zielonkawą nutą, kwaśno-słodkim smaku i świeżym aromacie."
     },
     {

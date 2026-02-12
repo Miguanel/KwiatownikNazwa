@@ -1,0 +1,165 @@
+{
+  "id": "jalowiec_pospolity",
+  "nazwa_pl": "Jałowiec pospolity",
+  "nazwa_lat": "Juniperus communis",
+  "rodzina": "Cyprysowate (Cupressaceae)",
+  "opis": "Zimozielony krzew lub niskie drzewo o niezwykle zmiennym pokroju – od płożącego po kolumnowy. Jest gatunkiem wybitnie pionierskim, zdolnym do przeżycia w skrajnie trudnych warunkach, na jałowych piaskach (stąd nazwa). Charakteryzuje się kłującymi igłami i dwuletnim cyklem dojrzewania owoców. Jałowiec jest rośliną dwupienną, co oznacza, że owoce znajdziemy tylko na okazach żeńskich. Jego zapach to kwintesencja czystego, żywicznego powietrza.",
+
+  "profil_energetyczny": {
+    "smak": "Ostry, słodkawo-żywiczny, gorzki",
+    "termika": "Gorąca",
+    "wilgotnosc": "Wybitnie osuszająca",
+    "zywiol": "Ogień i Ziemia",
+    "opis": "Jałowiec to 'rozgrzewacz wnętrza'. Jego energia 'wypala' zimną wilgoć z organizmu, rozpuszczając zastoje w nerkach i układzie trawiennym. Działa jak wewnętrzny kominek, który pobudza krążenie i mobilizuje siły obronne do walki z infekcjami."
+  },
+
+  "wymagania": {
+    "stanowisko": "Pełne słońce. Jałowiec kocha światło; w cieniu rzednie, choruje i traci aromat.",
+    "gleba": "Bardzo małe wymagania. Rośnie na piaskach, wydmach i kamienistych zboczach. Nienawidzi gleb ciężkich, mokrych i zasolonych.",
+    "ph_gleby": "5.0 - 7.5 (Bardzo tolerancyjny).",
+    "mrozoodpornosc": "Strefa 2 (Całkowicie mrozoodporny, znosi najcięższe polskie zimy).",
+    "woda": "Ekstremalnie odporny na suszę; podlewanie potrzebne tylko młodym sadzonkom."
+  },
+
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Igły sztywne, bardzo kłujące, zebrane w okółki po trzy, z szerokim białym paskiem na górnej stronie.",
+      "Szyszkojagody (owoce) kuliste, w pierwszym roku zielone, w drugim granatowoczarne z niebieskawym nalotem woskowym.",
+      "Kora cienka, włóknista, łuszcząca się podłużnymi pasmami.",
+      "Zapach intensywnie balsamiczny, żywiczny po roztarciu jakiejkolwiek części rośliny."
+    ],
+    "mozliwe_pomyłki": [
+      {
+        "nazwa": "Jałowiec sabiński (Juniperus sabina)",
+        "roznica": "ŚMIERTELNIE TRUJĄCY. Ma liście w formie przylegających łusek (nie igieł) i bardzo nieprzyjemny zapach po roztarciu. Uprawiany głównie jako krzew ozdobny."
+      }
+    ]
+  },
+
+  "czesci_rosliny": {
+    "szyszkojagody": {
+      "nazwa_surowca": "Fructus Juniperi",
+      "opis_botaniczny": "Dojrzałe, ciemne owoce zbierane jesienią drugiego roku.",
+      "skladniki_aktywne": [
+        "Olejek eteryczny (bogaty w alfa-pinen i terpinen-4-ol)",
+        "Flawonoidy",
+        "Garbniki",
+        "Cukry (inwertyty - do 30%)",
+        "Kwasy organiczne",
+        "Żywice"
+      ],
+      "wlasciwości": "Silnie moczopędne, żółciopędne, odkażające drogi moczowe, pobudzające wydzielanie soku żołądkowego, przeciwreumatyczne.",
+      "czas_zbioru": "Październik - Listopad.",
+      "ostrzezenia": "Nie stosować przy ostrych stanach zapalnych nerek!"
+    },
+    "drewno_i_igły": {
+      "nazwa_surowca": "Lignum et Acus Juniperi",
+      "wlasciwości": "Stosowane do aromatycznych kąpieli i okadzeń (dym jałowcowy ma najsilniejsze właściwości bakteriobójcze spośród krajowych roślin).",
+      "czas_zbioru": "Cały rok."
+    }
+  },
+
+  "zastosowanie": {
+    "medyczne": "Obrzęki spowodowane niewydolnością krążenia, kamica nerkowa (piasek), przewlekłe zapalenia dróg moczowych, zaburzenia trawienia (wzdęcia, brak apetytu), reumatyzm i artretyzm (zewnętrznie).",
+    "kulinarne": "Przyprawa do ciężkich mięs (dziczyzna, wołowina), składnik bigosu, pasztetów i marynat. Podstawa ginu oraz tradycyjnego piwa jałowcowego (Kozicowe).",
+    "ogrodowe": "Roślina strukturalna do ogrodów suchych i skalnych. Naturalny filtr powietrza (wydziela mnóstwo fitoncydów).",
+    "rzemieslnicze": "Drewno jałowcowe jest niezwykle trwałe, pięknie pachnie i ma unikalny rysunek. Używane do wyrobu lasek, fajek i drobnej galanterii kuchennej."
+  },
+
+  "interakcje": "Może nasilać działanie leków moczopędnych i przeciwcukrzycowych (obniża poziom cukru).",
+
+  "ciekawostki": [
+    "Dym z palonego jałowca był używany podczas epidemii do odkażania domów i szpitali – współczesne badania potwierdziły, że zabija on większość bakterii zawieszonych w powietrzu.",
+    "Szyszkojagody jałowca potrzebują aż dwóch lat, by dojrzeć. Dlatego na jednym krzewie można jednocześnie zobaczyć owoce zielone (tegoroczne) i czarne (zeszłoroczne).",
+    "W tradycji ludowej gałązki jałowca wkładano za święte obrazy, aby chronić dom przed piorunami i złymi mocami.",
+    "Mówi się, że jałowiec 'wyciąga chorobę z kości' – to odniesienie do jego skuteczności w leczeniu bólów reumatycznych.",
+    "Jagody jałowca są jedynym składnikiem ginu, który nadaje mu charakterystyczny 'leśny' smak."
+  ],
+
+  "permakultura": {
+    "funkcje": [
+      "Pionier na skrajnie ubogich glebach (rekultywacja).",
+      "Schronienie i baza pokarmowa dla ptaków zimujących (np. kwiczołów).",
+      "Producent najsilniejszych fitoncydów w ogrodzie (sterylizacja otoczenia).",
+      "Bariera przeciwwietrzna w ogrodach stepowych."
+    ],
+    "gildie": [
+      { "nazwa": "Wrzos zwyczajny", "rola": "Tworzą razem klasyczny ekosystem wrzosowisk na piaskach." },
+      { "nazwa": "Brzoza brodawkowata", "rola": "Jałowiec często stanowi dolne piętro w rzadkich lasach brzozowych." }
+    ]
+  },
+
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Zbiór owoców",
+        "miesiace": [10, 11],
+        "opis": "Zbieranie wyłącznie czarnych, dojrzałych owoców poprzez otrząsanie ich na rozłożone pod krzewem płótno.",
+        "faza_ksiezyca": "Księżyc ubywający",
+        "pora_dnia": "Dowolna, byle sucho",
+        "wplyw_ksiezyca": "Sprzyja lepszemu przechowywaniu surowca i koncentracji olejków."
+      }
+    ]
+  },
+
+  "przepisy_medyczne": [
+    {
+      "tytul": "Nalewka Jałowcówka (Na trawienie i stawy)",
+      "typ": "medyczne",
+      "metoda": "maceracja",
+      "tagi": ["trawienie", "reumatyzm", "nerki", "rozgrzewanie"],
+      "skladniki": [
+        "Dojrzałe jagody jałowca (lekko rozgniecione): 50g",
+        "Alkohol 70%: 0.5 l"
+      ],
+      "sposob_przygotowania": [
+        "Jagody zalać alkoholem w słoiku.",
+        "Macerować przez 2 tygodnie w ciepłym i ciemnym miejscu.",
+        "Przefiltrować."
+      ],
+      "dawkowanie": "Wewnętrznie: 10-15 kropli na wodę przy wzdęciach. Zewnętrznie: wcierać w bolące stawy.",
+      "uwagi": "Nalewka ma bardzo silne działanie rozgrzewające.",
+      "roslina": "Jałowiec pospolity",
+      "slug": "jalowiec_pospolity",
+      "cechy": ["żywiczny zapach", "słomkowy kolor"],
+      "wlasciwosci": ["żółciopędna", "przeciwreumatyczna"]
+    },
+    {
+      "tytul": "Kuracja Kneippa (Detoks jagodowy)",
+      "typ": "medyczne",
+      "metoda": "żucie",
+      "tagi": ["detoks", "metabolizm", "krew"],
+      "skladniki": [
+        "Świeże, dojrzałe jagody jałowca"
+      ],
+      "sposob_przygotowania": [
+        "Kuracja polega na powolnym żuciu jagód: 1 dnia - 4 jagody, każdego kolejnego dnia o jedną więcej, aż do 15 jagód, a potem redukcja o jedną dziennie aż do 4."
+      ],
+      "uwagi": "Doskonale czyści krew i poprawia metabolizm. Nie stosować przy chorych nerkach!",
+      "roslina": "Jałowiec pospolity",
+      "slug": "jalowiec_pospolity"
+    }
+  ],
+
+  "przepisy_kulinarne": [
+    {
+      "tytul": "Domowa Sól Jałowcowa do dziczyzny",
+      "typ": "kulinarne",
+      "metoda": "ucieranie",
+      "tagi": ["przyprawa", "mięso", "las"],
+      "skladniki": [
+        "Suszone jagody jałowca: 2 łyżki",
+        "Sól kamienna gruba: 200g",
+        "Opcjonalnie: kilka igieł sosny lub świerka"
+      ],
+      "sposob_przygotowania": [
+        "Jałowiec utłuc w moździerzu na gruby proszek.",
+        "Wymieszać z solą i zamknąć w szczelnym słoiku."
+      ],
+      "uwagi": "Najlepsza przyprawa do domowego bigosu i pieczonych mięs.",
+      "roslina": "Jałowiec pospolity",
+      "slug": "jalowiec_pospolity"
+    }
+  ],
+  "ostrzezenia": "NIE STOSOWAĆ W CIĄŻY (powoduje skurcze macicy i może być poronny) oraz przy stanach zapalnych nerek. Kuracja jałowcem nie powinna trwać dłużej niż 3-4 tygodnie, gdyż olejek jałowcowy może podrażniać miąższ nerek."
+}

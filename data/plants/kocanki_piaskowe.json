@@ -1,0 +1,128 @@
+{
+  "id": "kocanki_piaskowe",
+  "nazwa_pl": "Kocanki piaskowe",
+  "nazwa_lat": "Helichrysum arenarium",
+  "rodzina": "Astrowate (Asteraceae)",
+  "opis": "Wieloletnia roślina zielna o charakterystycznym srebrzystym owłosieniu, dorastająca do 30 cm. Występuje na piaszczystych nieużytkach, wydmach i w świetlistych borach sosnowych. Jej kwiatostany to intensywnie żółte, kuliste koszyczki, które w dotyku są suche i szeleszczące (stąd nazwa 'suchołuski'). Jest to roślina wybitnie przystosowana do skrajnej suszy i silnego nasłonecznienia.",
+
+  "profil_energetyczny": {
+    "smak": "Gorzki, lekko korzenny",
+    "termika": "Neutralna ku chłodnej",
+    "wilgotnosc": "Osuszająca",
+    "zywiol": "Ogień i Ziemia",
+    "opis": "Kocanki to 'odblokowywacz' dróg żółciowych. Ich energia rozprasza zastoje 'gorącej wilgoci' w wątrobie, przywracając płynność procesom trawiennym. Działają jak wewnętrzne światło, które rozjaśnia metabolizm i pomaga organizmowi radzić sobie z ciężkostrawnymi tłuszczami."
+  },
+
+  "wymagania": {
+    "stanowisko": "Pełne słońce. W cieniu roślina traci swoje srebrzyste owłosienie i nie kwitnie.",
+    "gleba": "Uboga, piaszczysta, przepuszczalna, sucha. Wybitnie nie lubi nawożenia i stojącej wody.",
+    "ph_gleby": "5.5 - 7.5 (Lekko kwaśna do obojętnej).",
+    "mrozoodpornosc": "Strefa 4 (Całkowicie mrozoodporna).",
+    "woda": "Bardzo małe zapotrzebowanie; jedna z najbardziej odpornych na suszę roślin krajowych."
+  },
+
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Cała roślina pokryta gęstym, białym, filcowatym kutnerem (srebrzysty wygląd).",
+      "Kwiaty zebrane w jaskrawożółte, kuliste koszyczki o suchych, błoniastych listkach okrywy.",
+      "Liście dolne lancetowate, górne równowąskie, przylegające do łodygi.",
+      "Kwiaty nie więdną po zerwaniu – zachowują formę i kolor przez lata."
+    ],
+    "mozliwe_pomyłki": [
+      {
+        "nazwa": "Kocanki włoskie (Helichrysum italicum)",
+        "roznica": "To popularne 'ziele curry'. Ma znacznie silniejszy, przyprawowy zapach i jest krzewinką (nie byliną). W Polsce nie zimuje w gruncie."
+      },
+      {
+        "nazwa": "Uczep trójlistkowy",
+        "roznica": "Ma żółte kwiaty, ale zupełnie inne liście i nie jest srebrzysto owłosiony."
+      }
+    ]
+  },
+
+  "czesci_rosliny": {
+    "kwiatostany": {
+      "nazwa_surowca": "Inflorescentia Helichrysi (Flos Stoechados)",
+      "opis_botaniczny": "Całe koszyczki kwiatowe zbierane na początku kwitnienia, gdy są jeszcze zamknięte lub półotwarte.",
+      "skladniki_aktywne": [
+        "Flawonoidy (m.in. chalkon - izosalipurpozyd, nadający żółty kolor)",
+        "Olejek eteryczny (pinen, cyneol)",
+        "Ftalidy (działanie rozkurczowe)",
+        "Garbniki",
+        "Woski i żywice"
+      ],
+      "wlasciwości": "Silnie żółciopędne i żółciotwórcze, rozkurczowe na drogi żółciowe i jelita, przeciwzapalne, wzmacniające czynność wątroby, bakteriobójcze.",
+      "czas_zbioru": "Lipiec - Sierpień.",
+      "ostrzezenia": "W Polsce roślina objęta częściową ochroną gatunkową! Zbiór ze stanu dzikiego do celów handlowych wymaga zezwolenia."
+    }
+  },
+
+  "zastosowanie": {
+    "medyczne": "Niewydolność wątroby, przewlekłe zapalenie dróg żółciowych, kamica żółciowa (pomocniczo), zaburzenia trawienia tłuszczów, brak apetytu, detoksykacja organizmu.",
+    "kulinarne": "BRAK (zbyt gorzkie). Choć ich krewniaczka (kocanka włoska) jest cenioną przyprawą.",
+    "ogrodowe": "Roślina do ogrodów skalnych, żwirowych i na suche murki. Doskonała na suche bukiety i wieńce.",
+    "rzemieslnicze": "Naturalny żółty barwnik do tkanin (dzięki izosalipurpozydowi)."
+  },
+
+  "interakcje": "Może nasilać działanie leków żółciopędnych i rozkurczowych. Nie łączyć z lekami przy ostrej niedrożności dróg żółciowych.",
+
+  "ciekawostki": [
+    "Nazwa 'Helichrysum' pochodzi od greckich słów 'helios' (słońce) i 'chrysos' (złoto).",
+    "Ludowa nazwa 'kocanki' wzięła się od miękkich, owłosionych pędów, które w dotyku przypominają łapki kota.",
+    "W medycynie ludowej kocanki były uważane za symbol wieczności i używane do dekorowania przydrożnych krzyży oraz grobów.",
+    "Są jedynym krajowym surowcem zawierającym izosalipurpozyd – związek o niezwykle silnym działaniu ochronnym na komórki wątroby (hepatoprotekcyjnym).",
+    "Kocanki są rośliną wskaźnikową najuboższych piasków – tam, gdzie rosną, ziemia jest niemal pozbawiona próchnicy."
+  ],
+
+  "permakultura": {
+    "funkcje": [
+      "Stabilizacja lotnych piasków i wydm.",
+      "Pionierska roślina dla terenów zdegradowanych (rekultywacja).",
+      "Pożytek dla dzikich pszczół i motyli w okresach największych upałów.",
+      "Producent biomasy bogatej w specyficzne minerały pustynne."
+    ],
+    "gildie": [
+      { "nazwa": "Wrzos zwyczajny", "rola": "Tworzą razem ekosystemy suchych wrzosowisk." },
+      { "nazwa": "Macierzanka piaskowa", "rola": "Idealny partner na piaszczyste, słoneczne stanowiska." },
+      { "nazwa": "Sosna zwyczajna", "rola": "Kocanki to naturalny element runa w suchych borach." }
+    ]
+  },
+
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Zbiór kwiatostanów",
+        "miesiace": [7, 8],
+        "opis": "Ścinanie całych baldachogron na początku kwitnienia. Suszenie w pęczkach 'głowami w dół' w ciemnym miejscu (by zachować kolor).",
+        "faza_ksiezyca": "Księżyc przybywający (faza kwiatu)",
+        "pora_dnia": "Południe (najwyższe stężenie olejków)",
+        "pogoda": "Pełne słońce"
+      }
+    ]
+  },
+
+  "przepisy_medyczne": [
+    {
+      "tytul": "Napar 'Lekka Wątroba'",
+      "typ": "medyczne",
+      "metoda": "napar",
+      "tagi": ["wątroba", "żółć", "trawienie", "detoks"],
+      "skladniki": [
+        "Suszone kwiaty kocanek: 1 łyżka stołowa",
+        "Woda: 250 ml"
+      ],
+      "sposob_przygotowania": [
+        "Kwiaty zalać wrzącą wodą.",
+        "Parzyć pod przykryciem 15-20 minut (nie gotować, by nie stracić olejków).",
+        "Przecedzić."
+      ],
+      "dawkowanie": "Pić 1/2 szklanki 2-3 razy dziennie na 30 minut przed jedzeniem.",
+      "uwagi": "Napar ma specyficzny, ziołowy aromat i lekko gorzki smak.",
+      "roslina": "Kocanki piaskowe",
+      "slug": "kocanki_piaskowe",
+      "cechy": ["żółty kolor", "korzenny zapach"],
+      "wlasciwosci": ["żółciopędna", "rozkurczowa"]
+    }
+  ],
+  "ostrzezenia": "NIE STOSOWAĆ przy niedrożności dróg żółciowych (kamienie blokujące przewód). Osoby z chorobą wrzodową żołądka powinny skonsultować się z lekarzem (gorycze zwiększają wydzielanie kwasu solnego)."
+}

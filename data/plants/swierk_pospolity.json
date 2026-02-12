@@ -1,0 +1,173 @@
+{
+  "id": "swierk_pospolity",
+  "nazwa_pl": "Świerk pospolity",
+  "nazwa_lat": "Picea abies",
+  "rodzina": "Sosnowate (Pinaceae)",
+  "opis": "Wysokie, majestatyczne drzewo iglaste o regularnym, stożkowatym pokroju, osiągające nawet 50 m wysokości. Świerk charakteryzuje się płytkim, talerzowym systemem korzeniowym, co czyni go podatnym na wiatrołomy, ale pozwala zasiedlać płytkie gleby górskie. Jego młode, fioletowo-czerwone szyszki i jasnozielone przyrosty wiosenne są skarbnicą witamin i terpenów. Świerk jest kluczowym gatunkiem lasotwórczym, tworzącym specyficzny, chłodny i wilgotny mikroklimat.",
+
+  "profil_energetyczny": {
+    "smak": "Żywiczny, kwaśny (młode pędy), gorzki",
+    "termika": "Rozgrzewająca",
+    "wilgotnosc": "Osuszająca",
+    "zywiol": "Ziemia i Powietrze",
+    "opis": "Świerk buduje wewnętrzną strukturę i 'pion'. Jego energia pomaga oczyścić umysł z chaosu i skupić się na celu. Fizycznie działa silnie oczyszczająco na płuca, pomagając odkrztusić zastoinową flegmę i przywrócić swobodny oddech."
+  },
+
+  "wymagania": {
+    "stanowisko": "Słoneczne do półcienistego. Dobrze znosi ocienienie w młodości, ale jako dorosłe drzewo potrzebuje światła.",
+    "gleba": "Glinisto-piaszczysta, świeża, zasobna w składniki odżywcze. Źle rośnie na suchych piaskach (w przeciwieństwie do sosny).",
+    "ph_gleby": "4.0 - 5.5 (Wyraźnie kwasolubny).",
+    "mrozoodpornosc": "Strefa 3 (Całkowicie odporny na mrozy, ale wrażliwy na późne przymrozki majowe, które niszczą młode pędy).",
+    "woda": "Wymaga dużej wilgotności powietrza i gleby. Bardzo wrażliwy na suszę i obniżenie poziomu wód gruntowych."
+  },
+
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Igły krótkie (1-2 cm), zaostrzone, kłujące, czworokątne w przekroju, osadzone na gałązce pojedynczo na małych guzkach.",
+      "Szyszki zwisające ku dołowi (u jodły stoją pionowo), po dojrzeniu opadają w całości.",
+      "Młode pędy wiosenne mają jaskrawy, jasnozielony kolor, kontrastujący ze starym igliwiem.",
+      "Kora czerwonobrązowa lub szarobrązowa, łuszcząca się w postaci okrągławych łusek."
+    ],
+    "mozliwe_pomyłki": [
+      {
+        "nazwa": "Jodła pospolita (Abies alba)",
+        "roznica": "Igły jodły są płaskie, mają dwa białe paski pod spodem i nie kłują (są tępo zakończone). Szyszki jodły stoją pionowo i rozpadają się na drzewie."
+      },
+      {
+        "nazwa": "Daglezja zielona (Pseudotsuga menziesii)",
+        "roznica": "Daglezja ma szyszki z charakterystycznymi 'trójzębnymi' łuskami wystającymi na zewnątrz; igły po roztarciu pachną cytrusami."
+      }
+    ]
+  },
+
+  "czesci_rosliny": {
+    "pedy_majowe": {
+      "nazwa_surowca": "Turiones Piceae",
+      "opis_botaniczny": "Młode przyrosty zbierane wiosną, gdy są miękkie i mają jasnozielony kolor.",
+      "skladniki_aktywne": [
+        "Olejek eteryczny (octan bornylu, limonen, pinen)",
+        "Witamina C (bardzo wysokie stężenie)",
+        "Glikozydy (piceina)",
+        "Garbniki",
+        "Żywice"
+      ],
+      "wlasciwości": "Silnie wykrztuśne, przeciwzapalne, witaminizujące, pobudzające wydzielanie soków trawiennych.",
+      "czas_zbioru": "Kwiecień - Maj.",
+      "ostrzezenia": "Zbiór wierzchołków hamuje wzrost drzewa w górę – zbieraj tylko z bocznych gałęzi."
+    },
+    "zywica": {
+      "nazwa_surowca": "Resina Piceae",
+      "opis_botaniczny": "Naturalna wydzielina pni powstająca przy zranieniu kory.",
+      "skladniki_aktywne": ["Kwasy żywiczne", "Terpentyna", "Olejek eteryczny"],
+      "wlasciwości": "Silnie bakteriobójcze i grzybobójcze. Wykorzystywana do produkcji maści na rany i czyraki.",
+      "czas_zbioru": "Cały rok (najlepiej jesień)."
+    },
+    "igliwie": {
+      "nazwa_surowca": "Acus Piceae",
+      "wlasciwości": "Kąpiele odkażające, inhalacje, źródło witaminy C w zimie.",
+      "czas_zbioru": "Zima (największa koncentracja witamin)."
+    }
+  },
+
+  "zastosowanie": {
+    "medyczne": "Przeziębienia, uporczywy kaszel, zapalenie oskrzeli i zatok (inhalacje), reumatyzm (kąpiele i smarowania), zmęczenie i wyczerpanie nerwowe.",
+    "kulinarne": "Syrop z młodych pędów, ocet świerkowy, sól świerkowa, 'piwo świerkowe' (tradycyjny napój fermentowany). Młode pędy można jeść na surowo (mają cytrusowy, kwaśny smak).",
+    "ogrodowe": "Wysokie żywopłoty przeciwwietrzne i chroniące przed hałasem. Drewno świerkowe po spaleniu daje doskonały popiół bogaty w potas.",
+    "rzemieslnicze": "Drewno świerkowe jest podstawowym surowcem w lutnictwie (tzw. drewno rezonansowe – z niego powstają płyty wierzchnie skrzypiec Stradivariusa). Służy też do produkcji papieru i materiałów budowlanych."
+  },
+
+  "interakcje": "Kąpiele świerkowe mogą nasilać reakcje u osób z niewydolnością serca i nadciśnieniem (zbyt mocne rozgrzanie). Olejek może drażnić skórę przy stosowaniu bez rozcieńczenia.",
+
+  "ciekawostki": [
+    "Najstarsze znane drzewo na świecie (pod względem genetycznym) to świerk 'Old Tjikko' w Szwecji – jego system korzeniowy ma ponad 9550 lat.",
+    "Świerk produkuje więcej tlenu niż sosna, ponieważ posiada gęstsze i trwalsze igliwie (igły żyją do 7-10 lat).",
+    "W przeciwieństwie do sosny, świerk pali się gwałtownie i 'strzela' iskrami (przez pęcherzyki żywicy), co czyni go niebezpiecznym w otwartych kominkach.",
+    "W medycynie ludowej żywicę świerkową żuto jak gumę, aby wyleczyć stany zapalne dziąseł i wybielić zęby."
+  ],
+
+  "permakultura": {
+    "funkcje": [
+      "Budowa wiatrochronów i ekranów akustycznych.",
+      "Producent kwaśnej ściółki i biomasy.",
+      "Gospodarz dla grzybów (Borowik szlachetny, Rydz świerkowy).",
+      "Retencja wody w krajobrazie (zatrzymuje wilgoć w cieniu swojej korony)."
+    ],
+    "gildie": [
+      { "nazwa": "Borowik szlachetny", "rola": "Tworzy jedną z najsilniejszych symbioz mikoryzowych." },
+      { "nazwa": "Szczawik zajęczy", "rola": "Naturalny mieszkaniec runa cienistych lasów świerkowych." },
+      { "nazwa": "Jarzębina", "rola": "Częsty towarzysz w reglu górnym." }
+    ]
+  },
+
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Zbiór pędów na syrop",
+        "miesiace": [5],
+        "opis": "Zbiór jasnych przyrostów, gdy mają 3-5 cm długości. Są wtedy najbardziej soczyste.",
+        "faza_ksiezyca": "Księżyc przybywający (od nowiu do pełni)",
+        "pora_dnia": "Przedpołudnie",
+        "pogoda": "Słoneczna i sucha",
+        "wplyw_ksiezyca": "Maksymalna koncentracja witaminy C i cukrów w pędach."
+      },
+      {
+        "czynnosc": "Zbiór żywicy",
+        "miesiace": [10, 11],
+        "opis": "Pozyskiwanie twardych, zastygłych grudek żywicy z pni.",
+        "faza_ksiezyca": "Księżyc ubywający",
+        "pora_dnia": "Dowolna",
+        "pogoda": "Chłodna (żywica jest twardsza i mniej lepiąca)",
+        "wplyw_ksiezyca": "Sprzyja gojeniu ran drzewa po pobraniu surowca."
+      }
+    ]
+  },
+
+  "przepisy_medyczne": [
+    {
+      "tytul": "Maść Żywiczna (Na trudne rany i stawy)",
+      "typ": "medyczne",
+      "metoda": "ekstrakcja tłuszczowa",
+      "tagi": ["skóra", "stawy", "antybiotyk", "rany"],
+      "skladniki": [
+        "Żywica świerkowa (czysta): 50g",
+        "Wosk pszczeli: 20g",
+        "Oliwa z oliwek lub olej lniany: 150ml"
+      ],
+      "sposob_przygotowania": [
+        "Olej podgrzać w kąpieli wodnej.",
+        "Dodać rozdrobnioną żywicę i mieszać do całkowitego rozpuszczenia (może to zająć sporo czasu).",
+        "Przecedzić przez gęste sito, by usunąć resztki kory.",
+        "Dodać wosk pszczeli i mieszać do połączenia.",
+        "Przelać do małych słoiczków."
+      ],
+      "dawkowanie": "Smarować bolące stawy lub trudno gojące się rany 2 razy dziennie.",
+      "uwagi": "Maść ma silny, balsamiczny zapach i działa jak naturalny antybiotyk.",
+      "roslina": "Świerk pospolity",
+      "slug": "swierk_pospolity",
+      "cechy": ["balsamiczny zapach", "jasnobrązowy kolor"],
+      "wlasciwosci": ["bakteriobójcza", "rozgrzewająca"]
+    }
+  ],
+
+  "przepisy_kulinarne": [
+    {
+      "tytul": "Ocet Świerkowy (Leśny Tonik)",
+      "typ": "kulinarne",
+      "metoda": "maceracja",
+      "tagi": ["ocet", "trawienie", "odporność"],
+      "skladniki": [
+        "Młode pędy świerka: 1 szklanka",
+        "Ocet jabłkowy (najlepiej domowy): 500ml"
+      ],
+      "sposob_przygotowania": [
+        "Pędy włożyć do słoika, zalać octem.",
+        "Odstawić na 2 tygodnie w ciemne miejsce.",
+        "Przefiltrować."
+      ],
+      "uwagi": "Doskonały do sałatek lub jako płukanka do włosów (nadaje blask i leczy łupież).",
+      "roslina": "Świerk pospolity",
+      "slug": "swierk_pospolity"
+    }
+  ],
+  "ostrzezenia": "Unikać stosowania u osób z astmą oskrzelową i krztuścem (inhalacje mogą wywołać skurcz krtani). Nie zbierać surowca w rezerwatach i parkach narodowych."
+}

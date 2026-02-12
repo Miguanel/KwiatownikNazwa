@@ -1,0 +1,158 @@
+{
+  "id": "jarzab_pospolity",
+  "nazwa_pl": "Jarząb pospolity (Jarzębina)",
+  "nazwa_lat": "Sorbus aucuparia",
+  "rodzina": "Różowate (Rosaceae)",
+  "opis": "Niewielkie drzewo lub krzew o gładkiej, szarej korze i charakterystycznych, pierzastych liściach. Jarząb jest gatunkiem pionierskim, niezwykle odpornym na trudne warunki klimatyczne, rosnącym od nizin aż po piętro kosodrzewiny w górach. Jego jaskrawoczerwone owoce są nie tylko ozdobą, ale i cennym surowcem zielarskim, który ze względu na zawartość kwasu parasorbowego wymaga specjalnej obróbki przed spożyciem.",
+
+  "profil_energetyczny": {
+    "smak": "Kwaśny, cierpki, gorzki",
+    "termika": "Chłodna",
+    "wilgotnosc": "Osuszająca",
+    "zywiol": "Ogień i Powietrze",
+    "opis": "Jarzębina działa silnie ściągająco i oczyszczająco. Chłodzi stany zapalne układu moczowego i jelit. W energetyce tradycyjnej uważana za roślinę, która 'rozjaśnia krew' i pomaga usunąć zastoje limfatyczne oraz mentalną ciężkość."
+  },
+
+  "wymagania": {
+    "stanowisko": "Słoneczne do półcienistego. Najobficiej owocuje w pełnym słońcu.",
+    "gleba": "Bardzo małe wymagania; rośnie na piaskach, torfowiskach i glebach kamienistych. Nie lubi jedynie gleb silnie wapiennych i zasolonych.",
+    "ph_gleby": "4.5 - 6.5 (Kwasolubny do obojętnego).",
+    "mrozoodpornosc": "Strefa 2 (Ekstremalnie odporny na mrozy i wiatry).",
+    "woda": "Dobrze znosi okresowe susze, ale najlepiej czuje się przy umiarkowanej wilgotności podłoża."
+  },
+
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Liście nieparzystopierzaste, złożone z 9-15 lancetowatych, piłkowanych listków.",
+      "Kwiaty białe, zebrane w gęste, płaskie baldachogrona, o charakterystycznym, nieco mdłym zapachu.",
+      "Owoce to kuliste, jaskrawoczerwone lub pomarańczowe jagody (pozorne), zebrane w zwisające kiście.",
+      "Pąki zimowe są duże, ciemne i wyraźnie owłosione (klucz do odróżnienia od jarzębu mącznego)."
+    ],
+    "mozliwe_pomyłki": [
+      {
+        "nazwa": "Jarząb szwedzki (Sorbus intermedia)",
+        "roznica": "Liście są pojedyncze, tylko wrębne lub klapowane (nie pierzaste), spodem szaro owłosione."
+      },
+      {
+        "nazwa": "Bez hebd (Sambucus ebulus)",
+        "roznica": "Owoce bzu hebd są czarne i wzniesione do góry, owoce jarzębiny są czerwone i zwisające."
+      }
+    ]
+  },
+
+  "czesci_rosliny": {
+    "owoce": {
+      "nazwa_surowca": "Fructus Sorbi",
+      "opis_botaniczny": "Dojrzałe owoce zbierane jesienią. UWAGA: Surowe owoce zawierają kwas parasorbowy, który jest toksyczny (powoduje wymioty i biegunkę).",
+      "skladniki_aktywne": [
+        "Witamina C (porównywalnie do cytrusów)",
+        "Karotenoidy (prowitamina A)",
+        "Sorbitol (naturalny słodzik bezpieczny dla diabetyków)",
+        "Kwasy organiczne (jabłkowy, winowy)",
+        "Garbniki",
+        "Pektyny"
+      ],
+      "wlasciwości": "Moczopędne, przeciwzapalne w obrębie jelit i dróg moczowych, lekko przeczyszczające, witaminizujące, przeciwmiażdżycowe.",
+      "czas_zbioru": "Wrzesień - Październik (najlepiej po przymrozkach).",
+      "ostrzezenia": "Zawsze poddawać obróbce termicznej lub przemrożeniu – to neutralizuje toksyczny kwas parasorbowy."
+    },
+    "kwiaty": {
+      "nazwa_surowca": "Flos Sorbi",
+      "wlasciwości": "Łagodnie moczopędne i rozkurczowe, stosowane rzadziej niż owoce.",
+      "czas_zbioru": "Maj - Czerwiec."
+    }
+  },
+
+  "zastosowanie": {
+    "medyczne": "Przewlekłe nieżyty żołądka, biegunki (owoce suszone), zaparcia (świeży sok gotowany), kamica nerkowa, awitaminoza, profilaktyka chorób serca.",
+    "kulinarne": "Konfitura z jarzębiny (idealna do dziczyzny i serów), nalewka 'Jarzębiak', soki, galaretki. Owoce jarzębiny jadalnej (odmiana 'Edulis') są pozbawione goryczy.",
+    "ogrodowe": "Roślina pionierska, biocenotyczna (przyciąga mnóstwo ptaków, m.in. jemiołuszki i gile). Świetna do zadrzewień śródpolnych i pasów wiatrochronnych.",
+    "rzemieslnicze": "Drewno jarzębu jest twarde, ciężkie i elastyczne. Cenione w tokarstwie i do wyrobu lasek oraz trzonków narzędzi."
+  },
+
+  "interakcje": "Brak istotnych interakcji z lekami, jednak ze względu na działanie moczopędne może nasilać efekt leków diuretycznych.",
+
+  "ciekawostki": [
+    "W tradycji celtyckiej jarzębina była drzewem życia i ochrony – sadzono ją przy domach, aby odstraszała złe duchy i czarownice.",
+    "Owoce jarzębiny zawierają kwas sorbowy, który jest jednym z najpopularniejszych na świecie naturalnych konserwantów żywności (E200).",
+    "Gorycz owoców znika po przemrożeniu, ponieważ skrobia przekształca się w cukry, a kwas parasorbowy ulega rozpadowi.",
+    "Jarzębina potrafi przetrwać w górach na wysokościach, gdzie inne drzewa liściaste już nie dają sobie rady."
+  ],
+
+  "permakultura": {
+    "funkcje": [
+      "Kluczowy dostawca pokarmu dla ptaków zimujących (tzw. stołówka dla gili).",
+      "Pionier regenerujący uboższe gleby.",
+      "Dostawca biomasy o szybkim tempie rozkładu.",
+      "Wypełniacz w gildiach drzew owocowych (przyciąga zapylacze i ptaki owadożerne)."
+    ],
+    "gildie": [
+      { "nazwa": "Świerk pospolity", "rola": "Często współwystępuje z jarzębiną w reglu górnym." },
+      { "nazwa": "Dzika róża", "rola": "Tworzą razem gęste zarośla biocenotyczne na miedzach." },
+      { "nazwa": "Borówka brusznica", "rola": "Roślina runa preferująca to samo kwaśne podłoże." }
+    ]
+  },
+
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Zbiór owoców na przetwory",
+        "miesiace": [10, 11],
+        "opis": "Zbiór po pierwszych przymrozkach. Jeśli zbierasz wcześniej, włóż owoce do zamrażarki na 48h.",
+        "faza_ksiezyca": "Księżyc ubywający",
+        "pora_dnia": "Popołudnie",
+        "pogoda": "Sucha",
+        "wplyw_ksiezyca": "Zapewnia lepszą trwałość surowca w procesie suszenia."
+      }
+    ]
+  },
+
+  "przepisy_medyczne": [
+    {
+      "tytul": "Odwilż Jelitowa (Na zaparcia i detoks)",
+      "typ": "medyczne",
+      "metoda": "odwar",
+      "tagi": ["trawienie", "nerki", "witaminy"],
+      "skladniki": [
+        "Suszone owoce jarzębiny: 1 łyżka",
+        "Woda: 250 ml"
+      ],
+      "sposob_przygotowania": [
+        "Owoce zalać wodą.",
+        "Gotować pod przykryciem przez 5 minut.",
+        "Odstawić na 15 minut, przecedzić."
+      ],
+      "dawkowanie": "Pić pół szklanki 2 razy dziennie.",
+      "uwagi": "Działa łagodnie przeczyszczająco i odkaża drogi moczowe.",
+      "roslina": "Jarząb pospolity",
+      "slug": "jarzab_pospolity",
+      "cechy": ["cierpki, owocowy smak", "czerwonawy kolor"],
+      "wlasciwosci": ["witaminizująca", "moczopędna"]
+    }
+  ],
+
+  "przepisy_kulinarne": [
+    {
+      "tytul": "Konfitura 'Jarzębinowa Rozkosz' do mięs",
+      "typ": "kulinarne",
+      "metoda": "smażenie",
+      "tagi": ["konfitura", "dodatek do mięs", "dziczyzna"],
+      "skladniki": [
+        "Owoce jarzębiny (przemrożone): 1 kg",
+        "Gruszki lub jabłka: 0.5 kg",
+        "Cukier: 0.8 kg",
+        "Goździki: kilka sztuk"
+      ],
+      "sposob_przygotowania": [
+        "Owoce jarzębiny zblanszować (wrzucić na wrzątek na 2 minuty) - to usunie resztę goryczy.",
+        "Gruszki obrać i pokroić w kostkę.",
+        "Wszystko smażyć z cukrem na małym ogniu, aż zgęstnieje.",
+        "Gorące przełożyć do słoików."
+      ],
+      "uwagi": "Genialny dodatek do camemberta z grilla lub pieczonej kaczki.",
+      "roslina": "Jarząb pospolity",
+      "slug": "jarzab_pospolity"
+    }
+  ],
+  "ostrzezenia": "NIGDY nie jedz dużej ilości surowych owoców jarzębiny! Kwas parasorbowy może wywołać silne zatrucie. Osoby z ciężkimi chorobami nerek powinny skonsultować się z lekarzem."
+}

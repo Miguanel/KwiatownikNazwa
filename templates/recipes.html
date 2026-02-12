@@ -237,21 +237,36 @@
                         <div class="modal-body p-4">
                             {% if recipe.cechy or recipe.wlasciwosci %}
                             <div style="margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed #d1c7a7;">
+
                                 {% if recipe.cechy %}
                                     <div style="margin-bottom: 10px;">
                                         <strong style="color: #3e4a3d;">Cechy sensoryczne:</strong><br>
-                                        {% for c in recipe.cechy %}
-                                            <span class="info-tag">{{ c }}</span>
-                                        {% endfor %}
+
+                                        {# SPRAWDZENIE: Czy to tekst (string)? #}
+                                        {% if recipe.cechy is string %}
+                                            <span class="info-tag">{{ recipe.cechy }}</span>
+                                        {% else %}
+                                            {# Jeśli to lista, robimy pętlę #}
+                                            {% for c in recipe.cechy %}
+                                                <span class="info-tag">{{ c }}</span>
+                                            {% endfor %}
+                                        {% endif %}
                                     </div>
                                 {% endif %}
 
                                 {% if recipe.wlasciwosci %}
                                     <div>
                                         <strong style="color: #2d5a27;">Właściwości:</strong><br>
-                                        {% for w in recipe.wlasciwosci %}
-                                            <span class="info-tag" style="background: #e8f5e9; border-color: #c8e6c9;">{{ w }}</span>
-                                        {% endfor %}
+
+                                        {# SPRAWDZENIE: Czy to tekst (string)? #}
+                                        {% if recipe.wlasciwosci is string %}
+                                            <span class="info-tag" style="background: #e8f5e9; border-color: #c8e6c9;">{{ recipe.wlasciwosci }}</span>
+                                        {% else %}
+                                            {# Jeśli to lista, robimy pętlę #}
+                                            {% for w in recipe.wlasciwosci %}
+                                                <span class="info-tag" style="background: #e8f5e9; border-color: #c8e6c9;">{{ w }}</span>
+                                            {% endfor %}
+                                        {% endif %}
                                     </div>
                                 {% endif %}
                             </div>

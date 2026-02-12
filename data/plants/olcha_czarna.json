@@ -1,0 +1,129 @@
+{
+  "id": "olcha_czarna",
+  "nazwa_pl": "Olcha czarna (Olsza)",
+  "nazwa_lat": "Alnus glutinosa",
+  "rodzina": "Brzozowate (Betulaceae)",
+  "opis": "Średniej wielkości drzewo liściaste, osiągające do 25-30 m wysokości, o smukłym pniu i ciemnej, głęboko spękanej korze. Jest gatunkiem kluczowym dla terenów podmokłych (olsów). Olcha posiada unikalną cechę – jej korzenie żyją w symbiozie z promieniowcami (Frankia), które wiążą azot atmosferyczny, dzięki czemu drzewo to naturalnie nawozi glebę, na której rośnie. Drewno po ścięciu charakterystycznie zmienia kolor z białego na intensywnie pomarańczowo-czerwony.",
+
+  "profil_energetyczny": {
+    "smak": "Cierpki, gorzki",
+    "termika": "Zimna",
+    "wilgotnosc": "Wybitnie osuszająca (ściągająca)",
+    "zywiol": "Woda i Ziemia",
+    "opis": "Olcha to 'bariera dla wilgoci'. Jej energia jest mocno ściągająca – potrafi 'zamknąć' rozszerzone naczynia i zatrzymać wysięki. Działa chłodząco na stany zapalne skóry i błon śluzowych, będąc potężnym lekarstwem na wszystko, co 'płynie' nadmiarowo (krwotoki, biegunki)."
+  },
+
+  "wymagania": {
+    "stanowisko": "Słoneczne do półcienistego. Wymaga dużej ilości światła, by wytworzyć gęstą koronę.",
+    "gleba": "Mokra, bagienna, żyzna, próchniczna. Toleruje stojącą wodę, ale nie znosi gleb suchych i piaszczystych.",
+    "ph_gleby": "5.5 - 7.5 (Tolerancyjna, preferuje podłoża lekko kwaśne do obojętnych).",
+    "mrozoodpornosc": "Strefa 3 (Całkowicie mrozoodporna).",
+    "woda": "Wybitnie wysokie zapotrzebowanie; idealna do terenów o wysokim poziomie wód gruntowych."
+  },
+
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Liście odwrotnie jajowate, o TĘPYM lub wciętym wierzchołku (brak ostrego czubka – kluczowa cecha!).",
+      "Owoce to małe, zdrewniałe 'szyszeczki' (strobile), które zwisają na długich szypułkach i pozostają na drzewie przez zimę.",
+      "Młode pędy i pąki są lepkie (stąd nazwa 'glutinosa').",
+      "Kora ciemna, prawie czarna, łuszcząca się w formie drobnych płytek."
+    ],
+    "mozliwe_pomyłki": [
+      {
+        "nazwa": "Olcha szara (Alnus incana)",
+        "roznica": "Olcha szara ma liście OSTRO zakończone, spodem szarawe i owłosione. Rośnie na suchszych stanowiskach (np. w górach)."
+      }
+    ]
+  },
+
+  "czesci_rosliny": {
+    "kora": {
+      "nazwa_surowca": "Cortex Alni",
+      "opis_botaniczny": "Pozyskiwana wiosną z młodych, gładkich gałęzi.",
+      "skladniki_aktywne": [
+        "Garbniki (do 20% - bardzo wysokie stężenie)",
+        "Kwasy polifenolowe",
+        "Triterpeny",
+        "Substancje żywiczne"
+      ],
+      "wlasciwości": "Silnie ściągające, przeciwzapalne, przeciwkrwotoczne, przeciwgorączkowe.",
+      "czas_zbioru": "Marzec - Kwiecień."
+    },
+    "liscie": {
+      "nazwa_surowca": "Folium Alni",
+      "wlasciwości": "Moczopędne, napotne; stosowane zewnętrznie na wrzody i trudno gojące się rany.",
+      "czas_zbioru": "Maj - Czerwiec."
+    },
+    "szyszki": {
+      "nazwa_surowca": "Strobili Alni",
+      "wlasciwości": "Wybitnie bogate w garbniki; stosowane w akwarystyce do dezynfekcji wody oraz w leczeniu biegunek.",
+      "czas_zbioru": "Wrzesień - Marzec (suche, zdrewniałe)."
+    }
+  },
+
+  "zastosowanie": {
+    "medyczne": "Biegunki, krwawienia z przewodu pokarmowego, stany zapalne gardła i jamy ustnej (płukanki), hemoroidy, potliwość nóg, trudno gojące się rany.",
+    "kulinarne": "BRAK. Ze względu na ogromną ilość garbników jest niejadalna.",
+    "ogrodowe": "Umacnianie brzegów stawów i rzek. Naturalne nawożenie gleby azotem.",
+    "rzemieslnicze": "Drewno olchowe to najlepszy surowiec do budowli wodnych (pale, mosty). Używane w lutnictwie (korpusy gitar Fender) oraz do wędzenia (nadaje piękny kolor i aromat wędlinom)."
+  },
+
+  "interakcje": "Długotrwałe stosowanie wewnętrzne może ograniczać wchłanianie żelaza i witamin ze względu na garbniki.",
+
+  "ciekawostki": [
+    "Wenecja stoi na palach z drewna olchowego. Drewno to, będąc stale pod wodą, nie gnije, lecz kamienieje, stając się niezwykle twardym.",
+    "W medycynie ludowej świeże liście olchy rozkładano w stajniach i domach, by przyciągały pchły – gdy owady weszły w lepkie liście, wynoszono je i palono.",
+    "Olcha 'krwawi' po ścięciu – białe drewno w kontakcie z powietrzem utlenia się na pomarańczowo, co w dawnych wierzeniach czyniło ją drzewem magicznym, połączonym ze światem duchów.",
+    "Suche szyszki olchy są cenione przez akwarystów na całym świecie; wydzielają garbniki i kwasy huminowe, które chronią ikrę przed pleśnią.",
+    "Węgiel drzewny z olchy był dawniej uważany za najlepszy do produkcji prochu strzelniczego."
+  ],
+
+  "permakultura": {
+    "funkcje": [
+      "Wiązanie azotu (Nitrogen Fixer) – poprawia żyzność sąsiednich roślin.",
+      "Stabilizacja brzegów zbiorników wodnych (potężny, choć płytki system korzeniowy).",
+      "Producent biomasy bogatej w azot.",
+      "Siedlisko dla specyficznych grzybów i owadów związanych z wodą."
+    ],
+    "gildie": [
+      { "nama": "Wierzba biała", "rola": "Tworzą razem naturalne lasy łęgowe nadrzeczne." },
+      { "nazwa": "Kaczeniec (Knieć błotna)", "rola": "Roślina runa preferująca podmokłe warunki pod olchami." },
+      { "nazwa": "Czeremcha zwyczajna", "rola": "Towarzysz w wilgotnych zaroślach." }
+    ]
+  },
+
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Zbiór szyszek do celów leczniczych",
+        "miesiace": [10, 11, 12, 1, 2],
+        "opis": "Zbiór suchych, czarnych szyszek bezpośrednio z drzewa.",
+        "faza_ksiezyca": "Księżyc ubywający",
+        "wplyw_ksiezyca": "Maksymalizuje koncentrację garbników."
+      }
+    ]
+  },
+
+  "przepisy_medyczne": [
+    {
+      "tytul": "Odwar z szyszek (Na biegunkę i gardło)",
+      "typ": "medyczne",
+      "metoda": "odwar",
+      "tagi": ["biegunka", "gardło", "ściągające", "odkażające"],
+      "skladniki": [
+        "Suche szyszki olchy: 1 łyżka (ok. 5-7 sztuk)",
+        "Woda: 250 ml"
+      ],
+      "sposob_przygotowania": [
+        "Szyszki zalać wodą, doprowadzić do wrzenia.",
+        "Gotować 10 minut na małym ogniu.",
+        "Przecedzić."
+      ],
+      "dawkowanie": "Pić po 1/4 szklanki 3-4 razy dziennie (biegunka) lub płukać gardło.",
+      "uwagi": "Odwar jest bardzo ciemny i ma silnie ściągający smak.",
+      "roslina": "Olcha czarna",
+      "slug": "olcha_czarna"
+    }
+  ],
+  "ostrzezenia": "Nie stosować wewnętrznie przy zaparciach. Zbiór kory z żywych drzew na terenach lasów państwowych jest zabroniony bez zgody leśniczego."
+}

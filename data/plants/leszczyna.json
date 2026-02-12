@@ -2,37 +2,138 @@
   "id": "leszczyna",
   "nazwa_pl": "Leszczyna pospolita",
   "nazwa_lat": "Corylus avellana",
-  "rodzina": "Brzozowate",
-  "opis": "Krzew dorastający do 5m, tworzący gęste zarośla. Znany z jadalnych orzechów i elastycznych pędów.",
+  "rodzina": "Brzozowate (Betulaceae)",
+  "opis": "Szybkorosnący, wielopniowy krzew dorastający do 5-8 metrów. Jest jedną z najwcześniej kwitnących roślin w Polsce, stanowiąc kluczowe źródło białkowego pyłku dla pszczół po zimie. Jej pędy cechują się niezwykłą giętkością, co od wieków wykorzystuje się w budownictwie i plecionkarstwie.",
+
+  "profil_energetyczny": {
+    "smak": "Słodki (orzechy), cierpki i gorzki (liście, kora)",
+    "termika": "Neutralna",
+    "wilgotnosc": "Nawilżająca (orzechy), osuszająca (liście)",
+    "zywiol": "Powietrze",
+    "opis": "Orzechy odżywiają krew i wzmacniają system nerwowy (budują 'Jing'). Liście działają tonizująco na naczynia krwionośne, 'podnosząc' energię i zapobiegając zastojom żylnym."
+  },
+
+  "wymagania": {
+    "stanowisko": "Słoneczne do półcienistego. W cieniu rośnie dobrze, ale owocuje skąpo.",
+    "gleba": "Żyzna, próchniczna, lekko wilgotna, bogata w wapń. Nie lubi gleb kwaśnych i bagiennych.",
+    "ph_gleby": "6.5 - 7.5 (Obojętna do lekko zasadowej).",
+    "mrozoodpornosc": "Strefa 4 (Wybitnie odporna na mrozy).",
+    "woda": "Wymaga umiarkowanej wilgotności; wrażliwa na suszę w okresie zawiązywania orzechów."
+  },
+
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Kwiaty męskie (kotki) zwisają z gałęzi całą zimę, żółkną i pylą w lutym/marcu.",
+      "Liście szerokojajowate, sercowate u nasady, miękko owłosione z obu stron.",
+      "Młode pędy pokryte są charakterystycznymi, gruczołowatymi włoskami o czerwonawym zabarwieniu."
+    ],
+    "mozliwe_pomyłki": [
+      {
+        "nazwa": "Grab pospolity (Carpinus betulus)",
+        "roznica": "Liście grabu są sztywniejsze, mają bardziej regularne unerwienie i nie są sercowate u nasady."
+      }
+    ]
+  },
+
   "czesci_rosliny": {
     "liscie": {
       "nazwa_surowca": "Folium Coryli",
-      "wlasciwości": "Ściągające, przeciwzapalne, uszczelniające naczynia krwionośne.",
-      "czas_zbioru": "Maj - Czerwiec"
+      "opis_botaniczny": "Duże, podwójnie piłkowane liście, zbierane młode, w pełni wyrośnięte, ale bez przebarwień.",
+      "skladniki_aktywne": ["Garbniki katechinowe", "Flawonoidy (kwercetyna, mirycetyna)", "Kwasy fenolowe", "Olejek eteryczny"],
+      "wlasciwości": "Uszczelniające naczynia krwionośne, przeciwzapalne, ściągające, przeciwobrzękowe.",
+      "czas_zbioru": "Maj - Czerwiec.",
+      "ostrzezenia": "Zewnętrznie bezpieczne; wewnętrznie mogą powodować lekkie zaparcia przy nadużywaniu."
     },
     "owoce": {
-      "nazwa_surowca": "Nux Coryli (Orzechy)",
-      "wlasciwości": "Wysokoenergetyczne, bogate w witaminę E i kwasy nienasycone.",
-      "czas_zbioru": "Sierpień - Wrzesień"
+      "nazwa_surowca": "Nux Coryli (Orzechy laskowe)",
+      "opis_botaniczny": "Twarde orzechy zamknięte w listkowatych, powycinanych okrywach owocowych.",
+      "skladniki_aktywne": ["Nienasycone kwasy tłuszczowe", "Witamina E (tokoferol)", "Magnez", "Potas", "Białka roślinne"],
+      "wlasciwości": "Wysokoenergetyczne, wspierające pracę mózgu i serca, neuroprotekcyjne.",
+      "czas_zbioru": "Sierpień - Wrzesień.",
+      "ostrzezenia": "Silny alergen. Osoby uczulone na pyłek brzozy często wykazują reakcję krzyżową na orzechy laskowe."
+    },
+    "kora": {
+      "nazwa_surowca": "Cortex Coryli",
+      "opis_botaniczny": "Gładka, popielatoszara kora pozyskiwana z młodych gałęzi jesienią lub wczesną wiosną.",
+      "skladniki_aktywne": ["Garbniki (do 10%)", "Związki trójterpenowe (betulina)", "Kwasy organiczne"],
+      "wlasciwości": "Przeciwgorączkowe, ściągające, stosowane w leczeniu żylaków i hemoroidów.",
+      "czas_zbioru": "Marzec - Kwiecień (przed liśćmi) lub Październik."
     }
   },
+
+  "zastosowanie": {
+    "medyczne": "Napar z liści stosowany w przewlekłej niewydolności żylnej, obrzękach nóg oraz stanach zapalnych dróg moczowych. Kora służy do przemywania trudno gojących się ran.",
+    "kulinarne": "Orzechy spożywane na surowo, w wyrobach cukierniczych i jako baza do masła orzechowego. Olej leszczynowy tłoczony na zimno jest ceniony w kuchni gourmet.",
+    "ogrodowe": "Doskonała roślina osłonowa i żywopłotowa. Produkuje ogromne ilości biomasy i wysokiej jakości ziemi liściowej.",
+    "rzemieslnicze": "Witki leszczynowe to najlepszy surowiec do wyplatania koszy, płotów oraz tradycyjnych konstrukcji ogrodowych (np. wsporników do fasoli). Tradycyjny surowiec na różdżki radiestezyjne."
+  },
+
+  "interakcje": "Ze względu na garbniki w liściach, preparaty leszczynowe mogą osłabiać wchłanianie żelaza i leków przyjmowanych doustnie.",
+
+  "ciekawostki": [
+    "W tradycji ludowej leszczyna była uznawana za drzewo magiczne, chroniące przed urokami i piorunami.",
+    "Wiewiórka potrafi ocenić, czy orzech jest pełny, sprawdzając jego ciężar – rzadko myli się i gryzie pusty owoc.",
+    "Pyłek leszczyny jest pierwszym, wysokobiałkowym pokarmem, który pozwala pszczołom na regenerację po zimie."
+  ],
+
   "permakultura": {
-    "funkcje": ["Producent biomasy", "Osłona przed wiatrem", "Pokarm dla fauny"],
+    "funkcje": [
+      "Producent biomasy (technika coppicing - ogławianie)",
+      "Osłona przed wiatrem dla delikatniejszych gatunków",
+      "Pokarm dla fauny (wiewiórki, popielice, ptaki)"
+    ],
     "gildie": [
-      {"nazwa": "Dąb szypułkowy", "rola": "Piętro wysokie, osłona"},
-      {"nazwa": "Czosnek niedźwiedzi", "rola": "Runo"}
+      { "nazwa": "Dąb szypułkowy", "rola": "Dominanta; leszczyna rośnie w jego cieniu (drugie piętro)" },
+      { "nazwa": "Czosnek niedźwiedzi", "rola": "Roślina runa; kwitnie przed pełnym ulistnieniem leszczyny" },
+      { "nazwa": "Żywokost lekarski", "rola": "Akumulator potasu u nasady krzewu" }
     ]
   },
+
   "kalendarz_ogrodnika": {
     "zadania": [
       {
-        "czynnosc": "Zbiór orzechów",
-        "miesiace": [8, 9],
+        "czynnosc": "Cięcie rzemieślnicze (ogławianie)",
+        "miesiace": [1, 2],
+        "opis": "Wycinanie najstarszych pędów u nasady w celu pobudzenia wzrostu prostych, elastycznych witek.",
         "faza_ksiezyca": "Księżyc ubywający",
         "pora_dnia": "Południe",
-        "pogoda": "Słoneczna",
-        "wplyw_ksiezyca": "Sprzyja trwałości orzechów w przechowywaniu."
+        "pogoda": "Suchy, mroźny dzień",
+        "wplyw_ksiezyca": "Ogranicza 'płacz' rośliny i przyspiesza gojenie ran przed wiosną."
+      },
+      {
+        "czynnosc": "Zbiór liści",
+        "miesiace": [5, 6],
+        "opis": "Zbiór liści bez ogonków, gdy osiągną pełną wielkość, ale są jeszcze młode i soczyście zielone.",
+        "faza_ksiezyca": "Księżyc przybywający (faza liścia)",
+        "pora_dnia": "Przedpołudnie (po rosie)",
+        "pogoda": "Słonecznie",
+        "wplyw_ksiezyca": "Zwiększa koncentrację substancji czynnych w zielonych częściach rośliny."
       }
     ]
-  }
+  },
+
+  "przepisy_medyczne": [
+    {
+      "tytul": "Napar 'Lekkie Nogi' na żylaki",
+      "typ": "medyczne",
+      "metoda": "napar",
+      "tagi": ["żylaki", "krążenie", "obrzęki"],
+      "skladniki": [
+        "Liście leszczyny (suszone): 1 łyżka stołowa",
+        "Woda: 250 ml"
+      ],
+      "sposob_przygotowania": [
+        "Zioła zalać wrzątkiem.",
+        "Parzyć pod przykryciem przez 15-20 minut.",
+        "Przecedzić przez gęste sito."
+      ],
+      "dawkowanie": "Pić 2 razy dziennie po szklance. Można stosować również jako okłady na zmęczone nogi.",
+      "uwagi": "Regularność stosowania jest kluczowa dla efektów naczyniowych.",
+      "roslina": "Leszczyna pospolita",
+      "slug": "leszczyna",
+      "cechy": ["ziołowy zapach", "jasnożółty kolor"],
+      "wlasciwosci": ["tonizująca naczynia", "przeciwobrzękowa"]
+    }
+  ],
+  "ostrzezenia": "Alergia na orzechy laskowe może być bardzo silna. Osoby z niedokrwistością powinny ograniczyć picie herbat z liści (garbniki)."
 }

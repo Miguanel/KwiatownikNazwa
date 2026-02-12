@@ -1,0 +1,136 @@
+{
+  "id": "wiaz_pospolity",
+  "nazwa_pl": "Wiąz pospolity (Wiąz polny)",
+  "nazwa_lat": "Ulmus minor",
+  "rodzina": "Wiązowate (Ulmaceae)",
+  "opis": "Długowieczne drzewo liściaste dorastające do 30 m wysokości, o gęstej, kopulastej koronie. Charakterystyczne dla wiązu są jego liście – szorstkie i wyraźnie asymetryczne u nasady. Kora jest ciemnobrunatna, głęboko spękana, czasem z naroślami korkowymi na młodszych gałęziach. Wiąz to drzewo dolin rzecznych, które dzięki swojej potężnej strukturze i giętkości przez wieki dostarczało drewna do zadań specjalnych.",
+
+  "profil_energetyczny": {
+    "smak": "Gorzki, cierpki, śluzowaty",
+    "termika": "Chłodna",
+    "wilgotnosc": "Osuszająca (zewnętrznie) i nawilżająca (śluzowa - wewnętrznie)",
+    "zywiol": "Ziemia i Woda",
+    "opis": "Wiąz to 'uszczelniacz tkanek'. Jego energia działa stabilizująco na błony śluzowe i skórę. Chłodzi stany zapalne układu pokarmowego i 'ściąga' rozproszone soki ustrojowe, przywracając ciału integralność strukturalną."
+  },
+
+  "wymagania": {
+    "stanowisko": "Słoneczne do półcienistego. Kocha doliny rzeczne, ale dobrze znosi też warunki miejskie (odporny na zanieczyszczenia).",
+    "gleba": "Żyzna, głęboka, wilgotna, próchniczna, najlepiej madowa lub gliniasta. Nienawidzi skrajnych piasków.",
+    "ph_gleby": "6.0 - 8.0 (Neutralna do zasadowej).",
+    "mrozoodpornosc": "Strefa 5 (Całkowicie mrozoodporny, choć wrażliwy na gwałtowne skoki temperatur wiosną).",
+    "woda": "Wysokie zapotrzebowanie; wiąz jest naturalnym elementem lasów łęgowych, więc potrzebuje stałego dostępu do wilgoci gruntowej."
+  },
+
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Liście u nasady są wyraźnie ASYMETRYCZNE (jedna połowa blaszki zaczyna się niżej niż druga).",
+      "Blaszka liściowa w dotyku jest bardzo szorstka (jak papier ścierny).",
+      "Owoce to płaskie, skrzydełkowate orzeszki (samary), ułożone w gęste pęczki, pojawiające się przed liśćmi.",
+      "Kora na gałązkach często tworzy charakterystyczne listewki korkowe."
+    ],
+    "mozliwe_pomyłki": [
+      {
+        "nazwa": "Wiąz szypułkowy (Ulmus laevis)",
+        "roznica": "Owoce wiszą na długich szypułkach (u pospolitego są siedzące), a brzeg skrzydełka owocu jest rzęskowato owłosiony."
+      },
+      {
+        "nazwa": "Grab pospolity",
+        "roznica": "Grab ma liście symetryczne u nasady i gładką korę ze smugami."
+      }
+    ]
+  },
+
+  "czesci_rosliny": {
+    "kora_wewnetrzna": {
+      "nazwa_surowca": "Cortex Ulmi",
+      "opis_botaniczny": "Młoda kora (łyko) pozyskiwana wiosną z gałęzi.",
+      "skladniki_aktywne": [
+        "Śluzy (do 15%)",
+        "Garbniki (do 12%)",
+        "Flawonoidy",
+        "Fitoestrogeny",
+        "Kwas salicylowy"
+      ],
+      "wlasciwości": "Silnie ściągające, przeciwzapalne, powlekające osłonowo na żołądek, przeciwreumatyczne.",
+      "czas_zbioru": "Kwiecień - Maj (przed liśćmi)."
+    },
+    "liscie": {
+      "nazwa_surowca": "Folium Ulmi",
+      "wlasciwości": "Stosowane zewnętrznie jako środek gojący rany i hamujący drobne krwawienia.",
+      "czas_zbioru": "Czerwiec."
+    }
+  },
+
+  "zastosowanie": {
+    "medyczne": "Chroniczne biegunki, nieżyty żołądka i jelit, hemoroidy, stany zapalne jamy ustnej. Zewnętrznie: egzemy, oparzenia, trudno gojące się rany, trądzik.",
+    "kulinarne": "Młode, zielone owoce (samary) są jadalne na surowo – mają delikatnie orzechowy smak i są świetnym dodatkiem do sałatek wiosennych.",
+    "ogrodowe": "Wspaniałe drzewo cieniujące, dawniej masowo sadzone w parkach i alejach. Dzisiaj wymaga monitorowania pod kątem chorób grzybowych.",
+    "rzemieslnicze": "Drewno wiązowe jest ekstremalnie trwałe, nie pęka i jest odporne na gnicie w wodzie. Używane do budowy łodzi, kół wozów, łuków oraz w meblarstwie artystycznym."
+  },
+
+  "interakcje": "Ze względu na dużą ilość śluzów, wyciągi z wiązu mogą opóźniać wchłanianie leków syntetycznych – zachować odstęp 2h.",
+
+  "ciekawostki": [
+    "Wiele fundamentów starych budynków w Amsterdamie i Wenecji opiera się na palach z drewna wiązowego, które pod wodą kamienieje zamiast gnić.",
+    "Termin 'asymetryczna nasada liścia' to najprostszy sposób, by zaimponować każdemu na spacerze w lesie – to unikalny podpis rodziny wiązowatych.",
+    "W mitologii greckiej wiąz był drzewem poświęconym Morfeuszowi, bogu snu – wierzono, że pod jego liśćmi rodzą się sny.",
+    "Choroba holenderska wiązów, która zniszczyła miliony drzew, jest przenoszona przez małego chrząszcza – ogłodka.",
+    "Wiązowe drewno było preferowanym surowcem do budowy długich łuków (longbows) przed upowszechnieniem się cisu."
+  ],
+
+  "permakultura": {
+    "funkcje": [
+      "Producent biomasy bogatej w wapń.",
+      "Stabilizacja brzegów rzek i terenów zalewowych.",
+      "Gospodarz dla rzadkich gatunków motyli (np. ogończyk wiązowiec).",
+      "Źródło liści na wysokobiałkową paszę dla zwierząt."
+    ],
+    "gildie": [
+      { "nazwa": "Olcha czarna", "rola": "Tworzą razem naturalne łęgi wiązowo-jesionowe." },
+      { "nazwa": "Jesion wyniosły", "rola": "Najczęstszy towarzysz w siedliskach wilgotnych." },
+      { "nazwa": "Chmiel zwyczajny", "rola": "Chmiel chętnie wspina się po szorstkich pniach wiązu." }
+    ]
+  },
+
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Zbiór owoców (samar) do jedzenia",
+        "miesiace": [4, 5],
+        "opis": "Zrywanie soczystych, zielonych owoców, zanim zaczną drewnieć.",
+        "faza_ksiezyca": "Księżyc przybywający"
+      },
+      {
+        "czynnosc": "Pozyskiwanie kory",
+        "miesiace": [3, 4],
+        "opis": "Zdejmij korę z gałęzi pozyskanych podczas cięć pielęgnacyjnych.",
+        "faza_ksiezyca": "Nów (faza kory/korzenia)"
+      }
+    ]
+  },
+
+  "przepisy_medyczne": [
+    {
+      "tytul": "Odwar z kory 'Bariera Żołądkowa'",
+      "typ": "medyczne",
+      "metoda": "odwar",
+      "tagi": ["żołądek", "biegunka", "osłona", "jelita"],
+      "skladniki": [
+        "Rozdrobniona kora wiązu: 1 łyżka stołowa",
+        "Woda: 300 ml"
+      ],
+      "sposob_przygotowania": [
+        "Korę zalać wodą i gotować na małym ogniu przez 10-15 minut.",
+        "Odstawić na 20 minut, przecedzić.",
+        "Płyn będzie miał lekko śluzowatą konsystencję."
+      ],
+      "dawkowanie": "Pić po pół szklanki 3 razy dziennie przed posiłkiem.",
+      "uwagi": "Doskonały przy nadkwasocie i wrzodach żołądka.",
+      "roslina": "Wiąz pospolity",
+      "slug": "wiaz_pospolity",
+      "cechy": ["lekko czerwonawy kolor", "śluzowata tekstura"],
+      "wlasciwosci": ["osłonowa", "ściągająca"]
+    }
+  ],
+  "ostrzezenia": "Zbiór kory z żywych drzew w lasach jest nielegalny. Pozyskuj surowiec tylko z drzew powalonych lub przeznaczonych do wycinki. Nie stosować długotrwale bez konsultacji z zielarzem."
+}

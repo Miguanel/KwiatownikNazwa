@@ -1,0 +1,182 @@
+{
+  "id": "mniszek_lekarski",
+  "nazwa_pl": "Mniszek lekarski",
+  "nazwa_lat": "Taraxacum officinale",
+  "rodzina": "Astrowate (Asteraceae)",
+  "opis": "Wieloletnia bylina o grubym korzeniu palowym i charakterystycznych, ząbkowanych liściach zebranych w przyziemną rozetę. Cała roślina zawiera biały sok mleczny. Mniszek jest symbolem witalności i przetrwania – potrafi przebić się przez asfalt i odrodzić z najmniejszego kawałka korzenia. W fitoterapii uznawany za jeden z najskuteczniejszych naturalnych środków żółciopędnych i oczyszczających krew.",
+
+  "profil_energetyczny": {
+    "smak": "Gorzki, słodkawy (korzeń jesienią)",
+    "termika": "Zimna",
+    "wilgotnosc": "Osuszająca",
+    "zywiol": "Ziemia i Woda",
+    "opis": "Wybitnie chłodzi 'ogień wątroby'. Usuwa gorąco i wilgoć z dolnego ogrzewacza, co przekłada się na czystą cerę i sprawny metabolizm. Pomaga rozproszyć złość i frustrację zmagazynowaną w ciele (według medycyny chińskiej powiązaną z wątrobą)."
+  },
+
+  "wymagania": {
+    "stanowisko": "Pełne słońce. W cieniu liście stają się wybujałe, ale roślina rzadziej kwitnie.",
+    "gleba": "Żyzna, próchniczna, zasobna w azot. Jest rośliną wskaźnikową gleb bogatych w składniki mineralne.",
+    "ph_gleby": "6.0 - 7.5 (Obojętna do lekko zasadowej).",
+    "mrozoodpornosc": "Strefa 3 (Ekstremalnie odporny).",
+    "woda": "Lubi umiarkowaną wilgotność, ale dzięki długiemu korzeniowi palowemu (do 50 cm) świetnie radzi sobie z suszą."
+  },
+
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Z każdej rozety wyrastają bezlistne, puste w środku szypułki zakończone jednym koszyczkiem kwiatowym.",
+      "Po przełamaniu dowolnej części wypływa gęsty, biały, gorzki sok mleczny.",
+      "Liście mają charakterystyczne, trójkątne klapy skierowane w stronę nasady (stąd nazwa 'zęby lwa').",
+      "Owocostan to puszysta kula (dmuchawiec) złożona z niełupek z aparatem lotnym."
+    ],
+    "mozliwe_pomyłki": [
+      {
+        "nazwa": "Mlecz polny (Sonchus arvensis)",
+        "roznica": "Mlecz ma ulistnioną, rozgałęzioną łodygę, na której znajduje się wiele kwiatów. Mniszek ma zawsze jedną łodygę (szypułkę) na jeden kwiat i nie ma liści na łodydze."
+      },
+      {
+        "nazwa": "Goryczel jastrzębcowaty",
+        "roznica": "Łodygi goryczela są pełne w środku i pokryte szorstkimi włoskami; mniszek ma łodygę gładką i pustą."
+      }
+    ]
+  },
+
+  "czesci_rosliny": {
+    "liscie": {
+      "nazwa_surowca": "Folium Taraxaci",
+      "opis_botaniczny": "Młode liście zbierane wczesną wiosną, zanim roślina zakwitnie (później stają się bardzo gorzkie).",
+      "skladniki_aktywne": [
+        "Flawonoidy",
+        "Potas (bardzo wysokie stężenie)",
+        "Gorycze (taraksacyna)",
+        "Witaminy A, C, K",
+        "Krzemionka"
+      ],
+      "wlasciwości": "Silnie moczopędne (bez wypłukiwania potasu, bo same go dostarczają), oczyszczające drogi moczowe, wspomagające trawienie.",
+      "czas_zbioru": "Marzec - Kwiecień.",
+      "ostrzezenia": "Brak przy zachowaniu dawek terapeutycznych."
+    },
+    "korzen": {
+      "nazwa_surowca": "Radix Taraxaci",
+      "opis_botaniczny": "Korzeń palowy, mięsisty, na zewnątrz brunatny, wewnątrz biały.",
+      "skladniki_aktywne": [
+        "Inulina (nawet do 40% jesienią - naturalny prebiotyk)",
+        "Fitosterole (taraksasterol)",
+        "Gorycze",
+        "Garbniki",
+        "Kwasy fenolowe"
+      ],
+      "wlasciwości": "Żółciopędne i żółciotwórcze, ochronne dla miąższu wątroby, obniżające poziom cukru i cholesterolu we krwi, prebiotyczne.",
+      "czas_zbioru": "Październik - Listopad (najwyższa zawartość inuliny) lub wczesna wiosna.",
+      "ostrzezenia": "Nie stosować przy niedrożności dróg żółciowych."
+    },
+    "kwiaty": {
+      "nazwa_surowca": "Flos Taraxaci",
+      "opis_botaniczny": "Złocistożółte koszyczki kwiatowe zbierane w pełnym słońcu.",
+      "skladniki_aktywne": ["Luteina", "Flawonoidy", "Olejek eteryczny", "Pyłek kwiatowy"],
+      "wlasciwości": "Leczniczo stosowane głównie w syropach na kaszel (działanie powlekające) oraz jako środek poprawiający odporność.",
+      "czas_zbioru": "Kwiecień - Maj."
+    }
+  },
+
+  "zastosowanie": {
+    "medyczne": "Niewydolność wątroby, kamica żółciowa (profilaktyka), zaburzenia trawienia, obrzęki, reumatyzm, cukrzyca typu II. Zewnętrznie: świeży sok mleczny leczy brodawki i kurzajki.",
+    "kulinarne": "Młode liście jako baza sałatek (z jajkiem i boczkiem), korzeń jako substytut kawy (po uprażeniu), kwiaty do wyrobu 'miodku majowego' oraz wina mniszkowego.",
+    "ogrodowe": "Mniszek spulchnia glebę swoim długim korzeniem i wyciąga minerały z głębokich warstw. Jest kluczowym pożytkiem dla pszczół w okresie budowy siły rodziny.",
+    "rzemieslnicze": "Z soku mlecznego niektórych odmian mniszka (np. mniszek kok-saghyz) można wytwarzać naturalny kauczuk."
+  },
+
+  "interakcje": "Może nasilać działanie leków przeciwcukrzycowych (ryzyko hipoglikemii). Zmniejsza wchłanianie niektórych antybiotyków (cyprofloksacyna). Zwiększa poziom litu w organizmie.",
+
+  "ciekawostki": [
+    "Francuska nazwa mniszka 'pissenlit' dosłownie oznacza 'sikaj do łóżka', co odnosi się do jego silnych właściwości moczopędnych.",
+    "Mniszek zamyka swoje kwiaty na noc oraz podczas pochmurnej pogody, chroniąc pyłek przed wilgocią.",
+    "W chrześcijaństwie mniszek symbolizował pasję Chrystusa ze względu na swój gorzki smak.",
+    "Gorycz liści mniszka znika prawie całkowicie, jeśli na kilka dni przed zbiorem przykryje się je ciemnym naczyniem (proces wybielania)."
+  ],
+
+  "permakultura": {
+    "funkcje": [
+      "Dynamiczny akumulator potasu, wapnia, miedzi i żelaza.",
+      "Roślina wskaźnikowa wysokiej zawartości azotu i zagęszczenia gleby.",
+      "Wczesnowiosenny bufet dla zapylaczy.",
+      "Producent etylenu (gaz ten przyspiesza dojrzewanie sąsiadujących owoców)."
+    ],
+    "gildie": [
+      { "nazwa": "Drzewa owocowe", "rola": "Mniszek pod drzewami przyciąga owady zapylające i produkuje etylen ułatwiający dojrzewanie owoców." },
+      { "nazwa": "Pomidory", "rola": "Wspomaga rozwój pomidorów poprzez udostępnianie minerałów z głębszych warstw ziemi." }
+    ]
+  },
+
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Zbiór korzeni jesiennych",
+        "miesiace": [10, 11],
+        "opis": "Wykopywanie korzeni po zwiędnięciu liści. Wtedy inulina jest najgęstsza.",
+        "faza_ksiezyca": "Nów (faza korzenia)",
+        "pora_dnia": "Późne popołudnie",
+        "pogoda": "Wilgotna gleba (łatwiej wyciągnąć korzeń w całości)",
+        "wplyw_ksiezyca": "Księżyc w nowiu sprzyja gromadzeniu substancji zapasowych w podziemnych częściach rośliny."
+      },
+      {
+        "czynnosc": "Zbiór kwiatów na syrop",
+        "miesiace": [4, 5],
+        "opis": "Zbieranie samych główek kwiatowych bez szypułek.",
+        "faza_ksiezyca": "Pełnia",
+        "pora_dnia": "Samo południe (kwiaty w pełni otwarte)",
+        "pogoda": "Bezchmurnie, gorąco",
+        "wplyw_ksiezyca": "Gwarantuje najwyższą zawartość pyłku i nektaru."
+      }
+    ]
+  },
+
+  "przepisy_medyczne": [
+    {
+      "tytul": "Odwar z korzenia (Regeneracja Wątroby)",
+      "typ": "medyczne",
+      "metoda": "odwar",
+      "tagi": ["wątroba", "trawienie", "cukier", "detoks"],
+      "skladniki": [
+        "Suszony korzeń mniszka: 2 łyżki",
+        "Woda: 500 ml"
+      ],
+      "sposob_przygotowania": [
+        "Rozdrobniony korzeń zalać zimną wodą.",
+        "Gotować pod przykryciem na małym ogniu przez 10-15 minut.",
+        "Odstawić na 10 minut i przecedzić."
+      ],
+      "dawkowanie": "Pić pół szklanki 2-3 razy dziennie przed posiłkiem.",
+      "uwagi": "Skutecznie pobudza wydzielanie żółci i obniża poziom cukru.",
+      "roslina": "Mniszek lekarski",
+      "slug": "mniszek_lekarski",
+      "cechy": ["ciemny kolor", "gorzki, ziemisty smak"],
+      "wlasciwosci": ["żółciopędna", "ochronna na wątrobę"]
+    }
+  ],
+
+  "przepisy_kulinarne": [
+    {
+      "tytul": "Syrop 'Miód Mniszkowy' (Na odporność)",
+      "typ": "kulinarne",
+      "metoda": "gotowanie",
+      "tagi": ["syrop", "odporność", "kaszel"],
+      "skladniki": [
+        "Kwiaty mniszka: ok. 400-500 sztuk",
+        "Cukier: 1 kg",
+        "Woda: 1 litr",
+        "Cytryny: 2 sztuki"
+      ],
+      "sposob_przygotowania": [
+        "Kwiaty rozłożyć na białym papierze na godzinę (by wyszły owady).",
+        "Zalać wodą i gotować 15-20 minut.",
+        "Odstawić na noc.",
+        "Przecisnąć przez gazę, dodać cukier i sok z cytryny.",
+        "Gotować na małym ogniu przez 1,5 - 2 godziny (bez przykrycia), aż uzyska konsystencję miodu."
+      ],
+      "uwagi": "Doskonały do herbaty zamiast miodu pszczelego.",
+      "roslina": "Mniszek lekarski",
+      "slug": "mniszek_lekarski"
+    }
+  ],
+  "ostrzezenia": "Przeciwwskazany w niedrożności dróg żółciowych, ropniaku pęcherzyka żółciowego oraz przy niedrożności jelit. Może nasilać dolegliwości przy chorobie wrzodowej żołądka (zwiększa wydzielanie kwasu)."
+}

@@ -2,37 +2,121 @@
   "id": "poziomka",
   "nazwa_pl": "Poziomka pospolita",
   "nazwa_lat": "Fragaria vesca",
-  "rodzina": "Różowate",
-  "opis": "Bylina tworząca rozłogi, rosnąca w widnych lasach i na porębach.",
+  "rodzina": "Różowate (Rosaceae)",
+  "opis": "Mała, wieloletnia bylina leśna tworząca liczne rozłogi. Słynie z niepowtarzalnego aromatu owoców, ale w zielarstwie jej liście są cenione wyżej niż owoce jako jeden z najbezpieczniejszych i najskuteczniejszych środków oczyszczających drogi moczowe i krew.",
+
+  "profil_energetyczny": {
+    "smak": "Kwaśno-słodki (owoce), cierpki (liście)",
+    "termika": "Chłodna",
+    "wilgotnosc": "Nawilżająca (owoce), osuszająca (liście)",
+    "zywiol": "Woda",
+    "opis": "Owoce budują płyny ciała i gaszą pragnienie (Jin). Liście 'przepłukują' nerki, usuwając wilgotne gorąco i toksyny metaboliczne (np. kwas moczowy)."
+  },
+
+  "wymagania": {
+    "stanowisko": "Półcień do słonecznego (na słońcu owoce są słodsze, w cieniu liście są okazalsze).",
+    "gleba": "Lekka, piaszczysto-gliniasta, bogata w próchnicę, umiarkowanie wilgotna.",
+    "ph_gleby": "5.5 - 6.5 (Lekko kwaśna).",
+    "mrozoodpornosc": "Strefa 3 (Bardzo wysoka mrozoodporność).",
+    "woda": "Lubi stałą wilgotność; znosi susze przechodząc w stan uśpienia, ale wtedy nie owocuje."
+  },
+
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Liście trójdzielne, grubo piłkowane, spodem jedwabisto owłosione.",
+      "Kwiaty pięciopłatkowe, białe z wyraźnym żółtym środkiem, osadzone na szypułkach.",
+      "Owoce drobne, czerwone, o nasionach (orzeszkach) osadzonych na powierzchni dna kwiatowego."
+    ],
+    "mozliwe_pomyłki": [
+      {
+        "nazwa": "Poziomkówka indyjska (Duchesnea indica)",
+        "roznica": "Kwiaty żółte (nie białe), owoce wzniesione ku górze, niesmaczne i pozbawione aromatu."
+      }
+    ]
+  },
+
   "czesci_rosliny": {
     "liscie": {
       "nazwa_surowca": "Folium Fragariae",
-      "wlasciwości": "Moczopędne, detoksykujące, ściągające.",
-      "czas_zbioru": "Kwiecień - Czerwiec"
+      "opis_botaniczny": "Młode liście zbierane bez ogonków przed owocowaniem rośliny.",
+      "skladniki_aktywne": ["Garbniki katechinowe (do 10%)", "Flawonoidy (kwercetyna, rutyna)", "Witamina C", "Kwasy organiczne"],
+      "wlasciwości": "Moczopędne, ściągające, przeciwzapalne w obrębie jelit, detoksykujące krew.",
+      "czas_zbioru": "Kwiecień - Maj.",
+      "ostrzezenia": "Bezpieczny surowiec, może być stosowany u dzieci i seniorów."
     },
     "owoce": {
       "nazwa_surowca": "Fructus Fragariae",
-      "wlasciwości": "Odżywcze, bogate w witaminę C i żelazo.",
-      "czas_zbioru": "Czerwiec - Lipiec"
+      "opis_botaniczny": "Owoce rzekome (rozrośnięte dno kwiatowe).",
+      "skladniki_aktywne": ["Sole mineralne (żelazo, wapń)", "Witaminy z grupy B i C", "Kwas salicylowy", "Pektyny"],
+      "wlasciwości": "Odkwaszające organizm, ogólnie wzmacniające, przeciwreumatyczne.",
+      "czas_zbioru": "Czerwiec - Lipiec.",
+      "ostrzezenia": "U osób wrażliwych mogą wywoływać reakcje alergiczne (pokrzywkę)."
     }
   },
+
+  "zastosowanie": {
+    "medyczne": "Standard w leczeniu kamicy nerkowej, dny moczanowej (oczyszczanie stawów z kwasu moczowego) oraz przewlekłych biegunek u dzieci. Owoce poprawiają morfologię krwi.",
+    "kulinarne": "Owoce deserowe o najwyższym aromacie. Liście po poddaniu procesowi fermentacji dają herbatę o smaku zbliżonym do Earl Grey.",
+    "ogrodowe": "Idealna roślina zadarniająca ('żywy mulcz'), chroniąca glebę przed erozją i utratą wilgoci.",
+    "rzemieslnicze": "Sok z owoców poziomki był historycznie używany jako naturalny, czerwony barwnik spożywczy oraz kosmetyczny (naturalny róż do policzków)."
+  },
+
+  "interakcje": "Brak znanych szkodliwych interakcji z lekami syntetycznymi. Bezpieczna dla osób przyjmujących leki na nadciśnienie.",
+
+  "ciekawostki": [
+    "Poziomka botanicznie nie jest jagodą, lecz owocem zbiorowym złożonym z setek małych orzeszków.",
+    "Karol Linneusz, słynny przyrodnik, wyleczył się z ciężkiej dny moczanowej stosując kurację świeżymi poziomkami.",
+    "Jedna poziomka leśna posiada więcej związków aromatycznych niż kilkanaście hodowlanych truskawek."
+  ],
+
   "permakultura": {
-    "funkcje": ["Okrywa gleby (mulcz)", "Akumulator składników odżywczych"],
+    "funkcje": [
+      "Żywy mulcz (okrywa runa leśnego)",
+      "Akumulator mikroelementów z górnej warstwy gleby",
+      "Wsparcie dla owadów zapylających wczesnym latem"
+    ],
     "gildie": [
-      {"nazwa": "Dąb szypułkowy", "rola": "Dostawca cienia"},
-      {"nazwa": "Leszczyna", "rola": "Sąsiad z piętra wyższego"}
+      { "nazwa": "Dąb szypułkowy", "rola": "Kocha lekkie zakwaszenie gleby pod dębami" },
+      { "nazwa": "Leszczyna", "rola": "Poziomka rośnie na obrzeżach kęp leszczyny" }
     ]
   },
+
   "kalendarz_ogrodnika": {
     "zadania": [
       {
-        "czynnosc": "Sadzenie rozłogów",
-        "miesiace": [4, 5, 8, 9],
+        "czynnosc": "Rozmnażanie przez rozłogi",
+        "miesiace": [4, 8],
+        "opis": "Odcinanie ukorzenionych sadzonek przybyszowych i sadzenie w nowym miejscu.",
         "faza_ksiezyca": "Księżyc przybywający",
         "pora_dnia": "Wieczór",
-        "pogoda": "Pochmurna, wilgotna",
-        "wplyw_ksiezyca": "Przyspiesza zakorzenianie się nowych sadzonek."
+        "pogoda": "Wilgotno, pochmurno",
+        "wplyw_ksiezyca": "Przyspiesza budowę biomasy liściowej i ułatwia zakorzenienie przed zimą."
       }
     ]
-  }
+  },
+
+  "przepisy_medyczne": [
+    {
+      "tytul": "Herbatka Oczyszczająca Krew",
+      "typ": "medyczne",
+      "metoda": "napar",
+      "tagi": ["detoks", "nerki", "dna moczanowa"],
+      "skladniki": [
+        "Liście poziomki (suszone): 1 część",
+        "Ziele brzozy: 1 część",
+        "Ziele nawłoci: 1 część"
+      ],
+      "sposob_przygotowania": [
+        "Zioła wymieszać.",
+        "1 łyżkę mieszanki zalać szklanką wrzątku.",
+        "Parzyć pod przykryciem przez 15 minut."
+      ],
+      "dawkowanie": "Pić 3 razy dziennie przez 2-3 tygodnie jako kurację detoksykującą stawy.",
+      "uwagi": "Wspomaga przemianę materii i usuwanie kwasu moczowego.",
+      "roslina": "Poziomka pospolita",
+      "slug": "poziomka",
+      "cechy": ["lekko cierpki smak", "jasny napar"],
+      "wlasciwosci": ["moczopędna", "oczyszczająca"]
+    }
+  ]
 }

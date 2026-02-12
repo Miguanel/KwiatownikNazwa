@@ -1,0 +1,145 @@
+{
+  "id": "cykoria_podroznik",
+  "nazwa_pl": "Cykoria podróżnik",
+  "nazwa_lat": "Cichorium intybus",
+  "rodzina": "Astrowate (Asteraceae)",
+  "opis": "Wieloletnia roślina zielna o głębokim korzeniu palowym i sztywnych, rozgałęzionych łodygach. Słynie z jaskrawoniebieskich (rzadziej białych lub różowych) kwiatostanów, które otwierają się tylko w pełnym słońcu. Jako roślina ruderalna, towarzyszy człowiekowi od tysiącleci, rosnąc na miedzach, ugorach i przydrożach. Jest przodkiem wielu odmian uprawnych, takich jak cykoria sałatkowa czy radicchio.",
+
+  "profil_energetyczny": {
+    "smak": "Wyraźnie gorzki, lekko słodkawy (korzeń)",
+    "termika": "Chłodna",
+    "wilgotnosc": "Osuszająca",
+    "zywiol": "Ziemia i Powietrze",
+    "opis": "Cykoria to 'aktywator ognia trawiennego' bez przegrzewania organizmu. Jej gorycz pobudza soki żołądkowe i żółć, chłodząc jednocześnie stany zapalne wątroby. Działa oczyszczająco na krew i pomaga usuwać 'mentalną ociężałość'."
+  },
+
+  "wymagania": {
+    "stanowisko": "Pełne słońce. Kwiaty cykorii są światłoczułe – w cieniu roślina marnieje i nie kwitnie.",
+    "gleba": "Przepuszczalna, piaszczysto-gliniasta, bogata w wapń. Dzięki korzeniowi sięgającemu 2 metrów w głąb ziemi, radzi sobie na glebach suchych i zbitych.",
+    "ph_gleby": "6.5 - 8.0 (Neutralna do zasadowej).",
+    "mrozoodpornosc": "Strefa 4 (Całkowicie mrozoodporna).",
+    "woda": "Niskie zapotrzebowanie; jest wybitnie odporna na suszę."
+  },
+
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Kwiaty intensywnie błękitne, o języczkowych płatkach ząbkowanych na końcach.",
+      "Łodyga sztywna, kanciasta, szorstko owłosiona, po przełamaniu wydziela biały sok mleczny.",
+      "Liście dolne (rozetowe) pierzastowcięte, podobne do liści mniszka; liście łodygowe mniejsze, lancetowate.",
+      "Długi, gruby, mięsisty korzeń palowy o jasnobrunatnej barwie."
+    ],
+    "mozliwe_pomyłki": [
+      {
+        "nazwa": "Sałata kompasowa (Lactuca serriola)",
+        "roznica": "Ma drobne, żółte kwiaty i liście ustawione pionowo w płaszczyźnie północ-południe."
+      }
+    ]
+  },
+
+  "czesci_rosliny": {
+    "korzen": {
+      "nazwa_surowca": "Radix Cichorii",
+      "opis_botaniczny": "Wykopywany jesienią (październik/listopad) u roślin jednorocznych.",
+      "skladniki_aktywne": [
+        "Inulina (do 40% - potężny prebiotyk)",
+        "Glikozydy intybiny (nadają gorzki smak)",
+        "Kwasy polifenolowe",
+        "Fitosterole",
+        "Sole mineralne (potas, magnez)"
+      ],
+      "wlasciwości": "Żółciopędne, żółciotwórcze, wspomagające trawienie, obniżające poziom cukru we krwi, prebiotyczne (karmi dobre bakterie jelitowe).",
+      "czas_zbioru": "Październik - Listopad."
+    },
+    "ziele": {
+      "nazwa_surowca": "Herba Cichorii",
+      "wlasciwości": "Moczopędne, wzmacniające żołądek, lekko przeczyszczające.",
+      "czas_zbioru": "Lipiec - Sierpień (czas kwitnienia)."
+    }
+  },
+
+  "zastosowanie": {
+    "medyczne": "Zaburzenia trawienia, brak apetytu, niedoczynność wątroby, zaparcia, wspomaganie odchudzania, profilaktyka cukrzycy typu II, osłabienie organizmu po antybiotykoterapii.",
+    "kulinarne": "Korzeń po wysuszeniu, uprażeniu i zmieleniu to baza słynnej kawy cykorii. Młode liście wiosenne są jadalne (do sałatek), choć gorzkie. Pąki kwiatowe można marynować jak kapary.",
+    "ogrodowe": "Roślina miododajna o bardzo długim okresie kwitnienia. Jej głębokie korzenie spulchniają glebę i wyciągają minerały z głębi ziemi.",
+    "rzemieslnicze": "Z kwiatów cykorii można uzyskać delikatny niebieski barwnik, choć jest on mało trwały."
+  },
+
+  "interakcje": "Może nasilać działanie leków żółciopędnych. Inulina może wpływać na tempo wchłaniania niektórych leków (należy zachować odstęp czasowy).",
+
+  "ciekawostki": [
+    "Karol Linneusz umieścił cykorię w swoim 'zegarze kwiatowym' – jej kwiaty otwierają się regularnie między 5 a 6 rano, a zamykają między 14 a 15 po południu.",
+    "W medycynie ludowej cykorię nazywano 'podróżnikiem', bo według legendy roślina ta powstała z dziewczyny czekającej na powrót ukochanego przy drodze.",
+    "Kawa z cykorii zyskała ogromną popularność w Europie podczas blokad kontynentalnych w czasach Napoleona, gdy brakowało prawdziwej kawy.",
+    "W starożytnym Egipcie cykoria była ceniona jako środek oczyszczający krew i lecznictwo wątroby.",
+    "Cykoria jest jedną z nielicznych roślin, których kwiaty są czysto niebieskie (bez domieszki fioletu)."
+  ],
+
+  "permakultura": {
+    "funkcje": [
+      "Dynamiczny akumulator minerałów (wapń, potas, miedź).",
+      "Głębokie spulchnianie zbitej gleby (tillage radish).",
+      "Bardzo wysoka miododajność w okresach letnich susz.",
+      "Pasza lecznicza dla zwierząt gospodarskich (naturalne odrobaczanie)."
+    ],
+    "gildie": [
+      { "nazwa": "Lucerna", "rola": "Często występują razem na pastwiskach, poprawiając strukturę gleby." },
+      { "nazwa": "Dzika marchew", "rola": "Partnerzy z suchych przydroży." }
+    ]
+  },
+
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Zbiór korzeni na kawę",
+        "miesiace": [10, 11],
+        "opis": "Wykopywanie długich korzeni. Wymaga użycia wąskiego szpadla.",
+        "faza_ksiezyca": "Księżyc ubywający",
+        "pora_dnia": "Wieczór"
+      }
+    ]
+  },
+
+  "przepisy_medyczne": [
+    {
+      "tytul": "Odwar Trawienny 'Złota Wątroba'",
+      "typ": "medyczne",
+      "metoda": "odwar",
+      "tagi": ["trawienie", "wątroba", "detoks", "cukier"],
+      "skladniki": [
+        "Suszony korzeń cykorii: 1 łyżeczka",
+        "Woda: 250 ml"
+      ],
+      "sposob_przygotowania": [
+        "Zalać wodą, doprowadzić do wrzenia.",
+        "Gotować na małym ogniu przez 3-5 minut.",
+        "Odstawić na 15 minut, przecedzić."
+      ],
+      "dawkowanie": "Pić pół szklanki 2 razy dziennie przed jedzeniem.",
+      "uwagi": "Skutecznie pobudza wydzielanie żółci.",
+      "roslina": "Cykoria podróżnik",
+      "slug": "cykoria_podroznik"
+    }
+  ],
+
+  "przepisy_kulinarne": [
+    {
+      "tytul": "Domowa Kawa z Cykorii",
+      "typ": "kulinarne",
+      "metoda": "prażenie",
+      "tagi": ["kawa", "bez kofeiny", "korzeń"],
+      "skladniki": [
+        "Świeże korzenie cykorii"
+      ],
+      "sposob_przygotowania": [
+        "Korzenie dokładnie umyć, pokroić w drobną kostkę.",
+        "Wysuszyć w piekarniku lub suszarce.",
+        "Suche kawałki uprażyć na patelni bez tłuszczu, aż staną się ciemnobrązowe i aromatyczne.",
+        "Zmielić w młynku do kawy."
+      ],
+      "uwagi": "Można parzyć samą lub z dodatkiem kawy zbożowej.",
+      "roslina": "Cykoria podróżnik",
+      "slug": "cykoria_podroznik"
+    }
+  ],
+  "ostrzezenia": "Nie stosować przy niedrożności dróg żółciowych oraz przy ostrych stanach zapalnych pęcherzyka żółciowego. Ze względu na wysoką zawartość inuliny, nagłe wprowadzenie dużych ilości cykorii do diety może powodować wzdęcia."
+}

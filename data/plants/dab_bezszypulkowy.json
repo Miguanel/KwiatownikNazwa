@@ -1,0 +1,179 @@
+{
+  "id": "dab_bezszypulkowy",
+  "nazwa_pl": "Dąb bezszypułkowy",
+  "nazwa_lat": "Quercus petraea",
+  "rodzina": "Bukowate (Fagaceae)",
+  "opis": "Majestatyczne drzewo liściaste, osiągające do 30-35 m wysokości. W odróżnieniu od swojego brata (dębu szypułkowego), posiada smuklejszą sylwetkę i prosty pień, który częściej zachowuje się aż do wierzchołka korony. Jest gatunkiem bardziej odpornym na suszę i uboższe gleby, często dominującym w lasach wyżynnych i górskich. Długowieczny, dożywający 500-800 lat.",
+
+  "profil_energetyczny": {
+    "smak": "Gorzki, silnie cierpki",
+    "termika": "Chłodna",
+    "wilgotnosc": "Osuszająca",
+    "zywiol": "Ziemia",
+    "opis": "Energia dębu bezszypułkowego jest skondensowana i stabilizująca. Jako surowiec wybitnie ściągający, 'zamyka' tkanki, tamuje wycieki (biegunki, krwawienia) i wzmacnia bariery ochronne organizmu. Idealny dla osób o konstytucji 'wilgotnej' i skłonnościach do obrzęków."
+  },
+
+  "wymagania": {
+    "stanowisko": "Słoneczne do lekko zacienionego. Jest bardziej światłożądny od dębu szypułkowego w fazie dojrzałej.",
+    "gleba": "Lżejsza, piaszczysto-gliniasta, przepuszczalna. Dobrze radzi sobie na glebach kamienistych i uboższych.",
+    "ph_gleby": "4.5 - 6.5 (Preferuje gleby lekko kwaśne, źle znosi gleby silnie wapienne).",
+    "mrozoodpornosc": "Strefa 4 (Całkowicie mrozoodporny w Polsce).",
+    "woda": "Umiarkowane; posiada wysoką tolerancję na suszę dzięki głębokiemu systemowi korzeniowemu, nie znosi natomiast wysokiego poziomu wód gruntowych i zalewania."
+  },
+
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Owoce (żołędzie) są 'siedzące' – wyrastają bezpośrednio na gałązkach, bez długich szypułek.",
+      "Liście mają długie ogonki (1-3 cm), co nadaje koronie bardziej 'miękki' wygląd.",
+      "Nasada liścia jest klinowata, bez charakterystycznych 'uszek' (w przeciwieństwie do dębu szypułkowego).",
+      "Kora jest nieco cieńsza i płyciej spękana niż u dębu szypułkowego."
+    ],
+    "mozliwe_pomyłki": [
+      {
+        "nazwa": "Dąb szypułkowy (Quercus robur)",
+        "roznica": "Odwrotność cech: żołędzie na długich szypułkach, liście na bardzo krótkich ogonkach z 'uszkami' u nasady."
+      },
+      {
+        "nazwa": "Kasztan jadalny (Castanea sativa)",
+        "roznica": "Podobna kora u starszych okazów, ale liście kasztana są pojedyncze, lancetowate i ostro piłkowane, bez klap."
+      }
+    ]
+  },
+
+  "czesci_rosliny": {
+    "kora": {
+      "nazwa_surowca": "Cortex Quercus",
+      "opis_botaniczny": "Pozyskiwana z młodych, gładkich pni i gałęzi o srebrzystej barwie (tzw. kora lustrzana). Zawiera najwięcej garbników przed wytworzeniem martwicy korkowej.",
+      "skladniki_aktywne": [
+        "Garbniki katechinowe (8-20%)",
+        "Kwas galusowy i elagowy",
+        "Flawonoidy (kwercetyna)",
+        "Związki trójterpenowe",
+        "Pektyny"
+      ],
+      "wlasciwości": "Silnie ściągające, antyseptyczne, przeciwzapalne, przeciwbiegunkowe, uszczelniające naczynia włosowate.",
+      "czas_zbioru": "Marzec - Kwiecień (okres ruszania soków, przed rozwinięciem liści).",
+      "ostrzezenia": "Nie stosować wewnętrznie przy chorobie wrzodowej żołądka w fazie zaostrzenia."
+    },
+    "liscie": {
+      "nazwa_surowca": "Folium Quercus",
+      "opis_botaniczny": "Regularnie klapowane, skórzaste, ciemnozielone, od spodu lekko jaśniejsze. Jesienią przebarwiają się na żółtobrązowo i często pozostają na drzewie przez całą zimę (marcescencja).",
+      "skladniki_aktywne": ["Garbniki", "Kwercetyna", "Związki żywiczne", "Fitoncydy"],
+      "wlasciwości": "Łagodnie ściągające, przeciwbakteryjne. Wywar z liści jest ceniony w pielęgnacji cery tłustej i trądzikowej.",
+      "czas_zbioru": "Czerwiec - Sierpień."
+    },
+    "owoce": {
+      "nazwa_surowca": "Glandes Quercus (Żołędzie)",
+      "opis_botaniczny": "Orzechy osadzone w miseczkach pokrytych płaskimi, gęstymi łuskami. Występują po 2-5 w skupieniu.",
+      "skladniki_aktywne": ["Skrobia", "Białka", "Tłuszcze", "Garbniki (taniny)", "Witaminy z grupy B"],
+      "wlasciwości": "Odżywcze (po wyługowaniu), wzmacniające układ pokarmowy, regulujące metabolizm glukozy.",
+      "czas_zbioru": "Wrzesień - Październik.",
+      "ostrzezenia": "Taniny w surowych żołędziach mogą powodować uszkodzenia nerek u zwierząt domowych i silne bóle brzucha u ludzi."
+    }
+  },
+
+  "zastosowanie": {
+    "medyczne": "Płukanki przy stanach zapalnych jamy ustnej i gardła, nasiadówki przy hemoroidach, kąpiele stóp przy nadpotliwości. Wewnętrznie odwar przy nieżytach jelit.",
+    "kulinarne": "Mąka żołędziowa jako baza do chleba i zagęstnik do zup (tradycyjne pożywienie survivalowe). Kawa żołędziowa wspomagająca rekonwalescencję.",
+    "ogrodowe": "Doskonałe drzewo parkowe i krajobrazowe, dające czerstwy, leśny mikroklimat. Wykorzystywane w rekultywacji terenów piaszczystych.",
+    "rzemieslnicze": "Drewno dębu bezszypułkowego jest wyżej cenione w stolarstwie artystycznym niż dębu szypułkowego ze względu na prostsze słoje i mniejszą skłonność do pękania. Główne źródło dębiny na beczki do wina (tzw. francuski dąb)."
+  },
+
+  "interakcje": "Garbniki dębowe hamują wchłanianie alkaloidów, soli metali ciężkich oraz witaminy B12. Może neutralizować działanie niektórych antybiotyków i leków przeciwdepresyjnych.",
+
+  "ciekawostki": [
+    "Dąb bezszypułkowy jest symbolem narodowym Walii.",
+    "Jego żołędzie są mniejsze niż u dębu szypułkowego, ale zawierają średnio więcej skrobi.",
+    "Zjawisko 'marcescencji' (zatrzymywania suchych liści na zimę) chroni pąki przed mrozem i zgryzaniem przez sarny.",
+    "W produkcji winiarskiej dąb bezszypułkowy daje winu więcej aromatów wanilii i przypraw korzennych niż dąb szypułkowy."
+  ],
+
+  "permakultura": {
+    "funkcje": [
+      "Dynamiczny akumulator (akumulacja wapnia w liściach)",
+      "Główny dostawca drewna konstrukcyjnego wysokiej jakości",
+      "Budowa próchnicy kwaśnej (ziemia liściowa)",
+      "Tworzenie siedlisk dla ginących gatunków chrząszczy (np. kozioróg dębosz)"
+    ],
+    "gildie": [
+      { "nazwa": "Buk zwyczajny", "rola": "Naturalny partner w lasach mieszanych" },
+      { "nazwa": "Borówka czernica", "rola": "Roślina runa preferująca kwaśne podłoże dębu" },
+      { "nazwa": "Jarząb pospolity", "rola": "Wsparcie dla ptaków, mniejsze wymagania glebowe" },
+      { "nazwa": "Grzyby: Kurka (Pieprznik jadalny)", "rola": "Symbioza mikoryzowa" }
+    ]
+  },
+
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Zbiór kory (lustrzanej)",
+        "miesiace": [3, 4],
+        "opis": "Zdejmowanie kory płatami z gałęzi pozyskanych podczas wiosennej wycinki sanitarno-technicznej.",
+        "faza_ksiezyca": "Księżyc przybywający (faza liścia/soku)",
+        "pora_dnia": "Przedpołudnie",
+        "pogoda": "Słonecznie i ciepło (kora łatwiej 'schodzi')",
+        "wplyw_ksiezyca": "Maksymalny ruch soków ułatwia oddzielenie kory od miazgi."
+      },
+      {
+        "czynnosc": "Sadzenie / Przesadzanie",
+        "miesiace": [10, 11],
+        "opis": "Sadzenie młodych dębów z bryłą korzeniową lub z nagim korzeniem.",
+        "faza_ksiezyca": "Nów (faza korzenia)",
+        "pora_dnia": "Późne popołudnie",
+        "pogoda": "Pochmurno, duża wilgotność",
+        "wplyw_ksiezyca": "Skupienie energii w systemie korzeniowym sprzyja przyjęciu się sadzonki."
+      }
+    ]
+  },
+
+  "przepisy_medyczne": [
+    {
+      "tytul": "Płukanka na stany zapalne jamy ustnej",
+      "typ": "medyczne",
+      "metoda": "odwar",
+      "tagi": ["dziąsła", "gardło", "antyseptyka"],
+      "skladniki": [
+        "Kora dębu bezszypułkowego (suszona): 1 łyżka stołowa",
+        "Woda: 1 szklanka (250 ml)"
+      ],
+      "sposob_przygotowania": [
+        "Korę zalać wodą i doprowadzić do wrzenia.",
+        "Gotować pod przykryciem na małym ogniu przez 10-15 minut.",
+        "Odstawić na 15 minut, przecedzić."
+      ],
+      "dawkowanie": "Płukać usta i gardło 3-4 razy dziennie. Nie połykać.",
+      "uwagi": "Może czasowo barwić zęby i język na ciemny kolor.",
+      "roslina": "Dąb bezszypułkowy",
+      "slug": "dab_bezszypulkowy",
+      "cechy": ["cierpki smak", "ciemny kolor"],
+      "wlasciwosci": ["przeciwzapalna", "ściągająca"]
+    }
+  ],
+
+  "przepisy_kulinarne": [
+    {
+      "tytul": "Wzmacniająca Kawa Żołędziowa (Bezszypułkowa)",
+      "typ": "kulinarne",
+      "metoda": "prażenie",
+      "tagi": ["napój", "energia", "trawienie"],
+      "skladniki": [
+        "Żołędzie dębu bezszypułkowego: 1 kg",
+        "Woda: kilka litrów",
+        "Sól morska (szczypta)"
+      ],
+      "sposob_przygotowania": [
+        "Żołędzie obrać, pokroić na kawałki i moczyć w wodzie przez 3 dni, zmieniając wodę rano i wieczorem (ługowanie).",
+        "Ostatnie moczenie wykonać w wodzie z solą.",
+        "Wysuszyć w piekarniku (50°C), a następnie uprażyć na złoty brąz w temp. 180°C.",
+        "Zmielić drobno w młynku żarnowym."
+      ],
+      "dawkowanie": "1-2 filiżanki dziennie, najlepiej rano.",
+      "uwagi": "Dąb bezszypułkowy daje kawę o nieco łagodniejszym aromacie niż szypułkowy.",
+      "roslina": "Dąb bezszypułkowy",
+      "slug": "dab_bezszypulkowy",
+      "cechy": ["palony aromat", "głęboki brąz"],
+      "wlasciwosci": ["pobudzająca", "wzmacniająca śledzionę"]
+    }
+  ],
+  "ostrzezenia": "Nie stosować wewnętrznie odwarów z kory przy niedokrwistości (garbniki blokują żelazo). Kąpiele dębowe są przeciwwskazane przy nadciśnieniu III stopnia."
+}

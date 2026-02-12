@@ -1,0 +1,167 @@
+{
+  "id": "babka_lancetowata",
+  "nazwa_pl": "Babka lancetowata",
+  "nazwa_lat": "Plantago lanceolata",
+  "rodzina": "Babkowate (Plantaginaceae)",
+  "opis": "Wieloletnia, niska bylina o charakterystycznych, wąskich liściach zebranych w przyziemną rozetę. Jest rośliną niezwykle odporną na deptanie i trudne warunki siedliskowe. Wiosną i latem wytwarza bezlistne szypułki zakończone kłosowatym kwiatostanem z drobnymi, białymi pręcikami. W tradycji ludowej nazywana 'języczkami polnymi' lub 'zielem św. Rocha', patrona od chorób zakaźnych.",
+
+  "profil_energetyczny": {
+    "smak": "Słony, lekko gorzki, cierpki",
+    "termika": "Chłodna",
+    "wilgotnosc": "Nawilżająca (śluzowa), ale jednocześnie ściągająca",
+    "zywiol": "Ziemia i Woda",
+    "opis": "Babka jest wybitną rośliną 'łagodzącą'. Chłodzi stany zapalne błon śluzowych i skóry, nawilża suche tkanki (np. przy suchym kaszlu), a jednocześnie dzięki garbnikom potrafi obkurczyć i osuszyć sączące się rany. Działa jak inteligentny opatrunek biologiczny."
+  },
+
+  "wymagania": {
+    "stanowisko": "Pełne słońce do półcienia. Bardzo elastyczna pod względem oświetlenia.",
+    "gleba": "Przepuszczalna, piaszczysto-gliniasta, umiarkowanie żyzna. Dobrze znosi gleby udeptane i zbite.",
+    "ph_gleby": "5.5 - 7.5 (Tolerancyjna).",
+    "mrozoodpornosc": "Strefa 3 (Całkowicie mrozoodporna).",
+    "woda": "Lubi umiarkowaną wilgotność, ale posiada silny system korzeniowy, który pozwala jej przetrwać susze."
+  },
+
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Liście długie, wąskie (lancetowate), z 3-7 wyraźnymi, równoległymi nerwami biegnącymi wzdłuż blaszki.",
+      "Nerwy liściowe są bardzo mocne i elastyczne - po przerwaniu liścia ciągną się jak nitki.",
+      "Kwiatostan to krótki, brunatny kłos na szczycie długiej, bruzdowanej szypułki.",
+      "Wokół kłosa pojawiają się białe, delikatne pręciki tworzące 'aureolę'."
+    ],
+    "mozliwe_pomyłki": [
+      {
+        "nazwa": "Babka zwyczajna (Plantago major)",
+        "roznica": "Babka zwyczajna ma liście szerokojajowate i kłosy kwiatowe bardzo długie (na całej długości szypułki). Obie rośliny są lecznicze, ale lancetowata jest uważana za silniejszą w działaniu na drogi oddechowe."
+      }
+    ]
+  },
+
+  "czesci_rosliny": {
+    "liscie": {
+      "nazwa_surowca": "Folium Plantaginis lanceolatae",
+      "opis_botaniczny": "Świeże lub suszone liście zbierane w czasie kwitnienia rośliny.",
+      "skladniki_aktywne": [
+        "Glikozydy irydoidowe (aukubina, katalpol) - działanie przeciwzapalne i bakteriobójcze",
+        "Śluzy (do 6%) - działanie osłaniające",
+        "Garbniki (ok. 6%)",
+        "Flawonoidy",
+        "Krzemionka rozpuszczalna",
+        "Witamina C i K",
+        "Sole mineralne (bogactwo cynku i boru)"
+      ],
+      "wlasciwości": "Wykrztuśne (rozrzedza śluz), powlekające drogi oddechowe, przeciwzapalne, osłonowe na żołądek, przyspieszające gojenie ran.",
+      "czas_zbioru": "Maj - Sierpień.",
+      "ostrzezenia": "Liście po zbiorze łatwo czernieją; należy je suszyć szybko w temperaturze do 40°C."
+    }
+  },
+
+  "zastosowanie": {
+    "medyczne": "Wewnętrznie: suchy, uporczywy kaszel, nieżyt gardła, zapalenie oskrzeli, choroba wrzodowa żołądka. Zewnętrznie: ukąszenia owadów (pszczoły, komary), drobne rany, oparzenia, stany zapalne spojówek (okłady).",
+    "kulinarne": "Młode liście (bardzo wczesną wiosną) mają lekki posmak pieczarek. Można je dodawać do sałatek, smażyć w cieście naleśnikowym lub dusić jak szpinak.",
+    "ogrodowe": "Roślina miododajna i pyłkodajna. Jej obecność na trawniku wskazuje na gleby o dobrej strukturze, ale mocno udeptane.",
+    "rzemieslnicze": "Sok z liści babki był dawniej używany jako składnik naturalnych atramentów oraz do garbowania delikatnych skór."
+  },
+
+  "interakcje": "Śluzy zawarte w babce mogą opóźniać wchłanianie innych leków przyjmowanych doustnie. Zaleca się zachowanie odstępu 1-2 godzin.",
+
+  "ciekawostki": [
+    "W medycynie anglosaskiej babka była uważana za jedną z dziewięciu świętych ziół podarowanych ludzkości przez boga Wodana.",
+    "Nasiona babki lancetowatej są blisko spokrewnione z babką płesznik (psyllium) i również mają właściwości regulujące trawienie.",
+    "Dawni wędrowcy wkładali liście babki do butów, aby zapobiegać pęcherzom i leczyć otarcia stóp (stąd nazwa 'panis viae' - chleb drożny).",
+    "Świeży sok z babki potrafi zneutralizować jad wielu owadów oraz ból po oparzeniu pokrzywą."
+  ],
+
+  "permakultura": {
+    "funkcje": [
+      "Dynamiczny akumulator mikroelementów (cynk, bor, magnez).",
+      "Roślina pionierska na terenach zdewastowanych i udeptanych.",
+      "Pokarm dla gąsienic rzadkich motyli (np. Przeplatka didyma).",
+      "Wsparcie dla struktury gleby (korzenie rozbijają zbite warstwy ziemi)."
+    ],
+    "gildie": [
+      { "nazwa": "Krwawnik pospolity", "rola": "Tworzą razem 'apteczkę łąkową' - krwawnik tamuje krew, babka goi tkankę." },
+      { "nazwa": "Koniczyna biała", "rola": "Babka kocha azot dostarczany przez koniczynę na trawnikach." }
+    ]
+  },
+
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Zbiór liści na syrop",
+        "miesiace": [5, 6],
+        "opis": "Zbiór najładniejszych liści przed pełnią kwitnienia, by zachować najwięcej śluzów.",
+        "faza_ksiezyca": "Księżyc przybywający (faza liścia)",
+        "pora_dnia": "Przedpołudnie (zaraz po rosie)",
+        "pogoda": "Słoneczna i sucha",
+        "wplyw_ksiezyca": "Zwiększa turgor liści i zawartość składników odżywczych."
+      }
+    ]
+  },
+
+  "przepisy_medyczne": [
+    {
+      "tytul": "Syrop Babkowy na Kaszel (Sposób 'Zimny')",
+      "typ": "medyczne",
+      "metoda": "maceracja cukrowa",
+      "tagi": ["kaszel", "gardło", "odporność", "dzieci"],
+      "skladniki": [
+        "Świeże liście babki lancetowatej: ok. 500g",
+        "Cukier lub miód: ok. 500g",
+        "Woda: odrobina (jeśli używamy cukru)"
+      ],
+      "sposob_przygotowania": [
+        "Liście dokładnie umyć, osuszyć i drobno posiekać lub zmielić w maszynce.",
+        "W słoiku układać warstwami: warstwa babki (mocno ugniatać!), warstwa cukru.",
+        "Ostatnią warstwą musi być cukier.",
+        "Słoik szczelnie zamknąć i odstawić w CIEMNE, chłodne miejsce na 3-4 tygodnie (tradycyjnie słoik zakopywano w ziemi, by utrzymać stałą temperaturę).",
+        "Po tym czasie przecisnąć syrop przez gęstą gazę i krótko spasteryzować (do 60 stopni) dla trwałości."
+      ],
+      "dawkowanie": "Dzieci: 1 łyżeczka 3 razy dziennie. Dorośli: 1 łyżka 3 razy dziennie.",
+      "uwagi": "Niezastąpiony przy suchym, 'szczekającym' kaszlu.",
+      "roslina": "Babka lancetowata",
+      "slug": "babka_lancetowata",
+      "cechy": ["ciemnobrązowy kolor", "słodki, ziołowy smak"],
+      "wlasciwosci": ["wykrztuśna", "osłonowa"]
+    },
+    {
+      "tytul": "Błyskawiczny Opatrunek na Ukąszenia",
+      "typ": "medyczne",
+      "metoda": "świeży surowiec",
+      "tagi": ["owady", "pszczoły", "opuchlizna"],
+      "skladniki": [
+        "Jeden świeży liść babki lancetowatej"
+      ],
+      "sposob_przygotowania": [
+        "Liść mocno rozgnieść w dłoniach, aż puści zielony sok (można go też lekko przeżuć).",
+        "Przykłożyć bezpośrednio na miejsce po ukąszeniu lub oparzeniu pokrzywą."
+      ],
+      "dawkowanie": "Zmieniać opatrunek co 15 minut do ustąpienia bólu.",
+      "roslina": "Babka lancetowata",
+      "slug": "babka_lancetowata"
+    }
+  ],
+
+  "przepisy_kulinarne": [
+    {
+      "tytul": "Leśne Chipsy z Babki",
+      "typ": "kulinarne",
+      "metoda": "smażenie",
+      "tagi": ["przekąska", "dzika kuchnia"],
+      "skladniki": [
+        "Duże liście babki lancetowatej",
+        "Ciasto naleśnikowe (gęste)",
+        "Olej do smażenia",
+        "Sól"
+      ],
+      "sposob_przygotowania": [
+        "Liście zanurzać w cieście, trzymając za ogonek.",
+        "Smażyć na złoty kolor na rozgrzanym oleju.",
+        "Odsączyć na papierze i posolić."
+      ],
+      "uwagi": "Zaskakująca przekąska o lekkim aromacie grzybowym.",
+      "roslina": "Babka lancetowata",
+      "slug": "babka_lancetowata"
+    }
+  ],
+  "ostrzezenia": "Nie zbierać babki z poboczy dróg (akumuluje metale ciężkie i zanieczyszczenia komunikacyjne). W rzadkich przypadkach może powodować reakcje alergiczne u osób wrażliwych."
+}

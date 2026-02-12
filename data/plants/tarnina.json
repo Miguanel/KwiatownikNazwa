@@ -1,93 +1,122 @@
 {
-  "id": "tarnina",
-  "nazwa_pl": "Śliwa tarnina",
-  "nazwa_lat": "Prunus spinosa",
-  "rodzina": "Różowate",
-  "opis": "Gęsty, ciernisty krzew o ciemnej korze, tworzący niemal nieprzebyte zarośla (czyżnie). Jest jedną z najważniejszych roślin dla dzikiej fauny w Europie.",
-  "czesci_rosliny": {
-    "kwiaty": {
-      "nazwa_surowca": "Flos Pruni spinosae",
-      "opis_botaniczny": "Białe, drobne, pięciopłatkowe kwiaty pojawiające się przed liśćmi. Wydzielają delikatny zapach migdałów.",
-      "skladniki_aktywne": ["Flawonoidy (kwercetyna, kemferol)", "Glikozydy cyjanogenne (amigdalina w śladowych ilościach)", "Garbniki", "Cukry", "Sole mineralne"],
-      "wlasciwości": "Łagodnie przeczyszczające, moczopędne, przeciwzapalne, uszczelniające naczynia włosowate.",
-      "czas_zbioru": "Kwiecień - Maj (na początku kwitnienia, w dni słoneczne)."
-    },
-    "owoce": {
-      "nazwa_surowca": "Fructus Pruni spinosae",
-      "opis_botaniczny": "Kuliste pestkowce o barwie ciemnoniebieskiej z sinym nalotem. Miąższ cierpki i kwaśny.",
-      "skladniki_aktywne": ["Garbniki (do 3%)", "Kwasy organiczne", "Witaminy (C, B, prowitamina A)", "Antocyjany", "Pektyny"],
-      "wlasciwości": "Silnie ściągające, przeciwbiegunkowe, antybakteryjne, antyoksydacyjne.",
-      "czas_zbioru": "Październik - Listopad (najlepiej po pierwszych przymrozkach, co redukuje cierpkość)."
-    },
-    "kora": {
-      "nazwa_surowca": "Cortex Pruni spinosae",
-      "opis_botaniczny": "Ciemna, niemal czarna, z licznymi krótkopędami przekształconymi w silne ciernie.",
-      "skladniki_aktywne": ["Garbniki", "Glikozydy"],
-      "wlasciwości": "Przeciwgorączkowe, ściągające (stosowana rzadziej niż owoce).",
-      "czas_zbioru": "Wczesna wiosna lub jesień."
-    },
-    "liscie": {
-      "nazwa_surowca": "Folium Pruni spinosae",
-      "opis_botaniczny": "Małe, eliptyczne, brzegiem drobno piłkowane.",
-      "skladniki_aktywne": ["Glikozydy", "Garbniki"],
-      "wlasciwości": "Moczopędne, pomocniczo w stanach zapalnych dróg moczowych.",
-      "czas_zbioru": "Czerwiec - Lipiec."
-    }
+  "id": "poziomka",
+  "nazwa_pl": "Poziomka pospolita",
+  "nazwa_lat": "Fragaria vesca",
+  "rodzina": "Różowate (Rosaceae)",
+  "opis": "Mała, wieloletnia bylina leśna tworząca liczne rozłogi. Słynie z niepowtarzalnego aromatu owoców, ale w zielarstwie jej liście są cenione wyżej niż owoce jako jeden z najbezpieczniejszych i najskuteczniejszych środków oczyszczających drogi moczowe i krew.",
+
+  "profil_energetyczny": {
+    "smak": "Kwaśno-słodki (owoce), cierpki (liście)",
+    "termika": "Chłodna",
+    "wilgotnosc": "Nawilżająca (owoce), osuszająca (liście)",
+    "zywiol": "Woda",
+    "opis": "Owoce budują płyny ciała i gaszą pragnienie (Jin). Liście 'przepłukują' nerki, usuwając wilgotne gorąco i toksyny metaboliczne (np. kwas moczowy)."
   },
-  "zastosowanie": {
-    "medyczne": "Napar z kwiatów stosuje się jako łagodny środek przeczyszczający dla dzieci i osób starszych. Odwar z owoców jest niezastąpiony przy biegunkach i nieżytach żołądka.",
-    "kulinarne": "Wyrób słynnej tarninówki, dżemów (po przemrożeniu owoców), konfitur oraz jako dodatek do herbat owocowych.",
-    "ogrodowe": "Tworzenie żywopłotów obronnych, stabilizacja skarp dzięki silnym rozłogom korzeniowym."
+
+  "wymagania": {
+    "stanowisko": "Półcień do słonecznego (na słońcu owoce są słodsze, w cieniu liście są okazalsze).",
+    "gleba": "Lekka, piaszczysto-gliniasta, bogata w próchnicę, umiarkowanie wilgotna.",
+    "ph_gleby": "5.5 - 6.5 (Lekko kwaśna).",
+    "mrozoodpornosc": "Strefa 3 (Bardzo wysoka mrozoodporność).",
+    "woda": "Lubi stałą wilgotność; znosi susze przechodząc w stan uśpienia, ale wtedy nie owocuje."
   },
-  "permakultura": {
-    "funkcje": [
-        "Naturalna bariera dla zwierząt hodowlanych (kolce)",
-        "Siedlisko lęgowe dla rzadkich ptaków (np. gąsiorek)",
-        "Wczesny pożytki dla pszczół",
-        "Wiązanie azotu (pośrednio przez wspieranie mikrobiomu)"
+
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Liście trójdzielne, grubo piłkowane, spodem jedwabisto owłosione.",
+      "Kwiaty pięciopłatkowe, białe z wyraźnym żółtym środkiem, osadzone na szypułkach.",
+      "Owoce drobne, czerwone, o nasionach (orzeszkach) osadzonych na powierzchni dna kwiatowego."
     ],
-    "gildie": [
-      {"nazwa": "Dąb szypułkowy", "rola": "Dominanta, osłona"},
-      {"nazwa": "Dzika róża", "rola": "Współtwórca zarośli ochronnych"},
-      {"nazwa": "Głóg", "rola": "Sąsiad w pasie wiatrochronnym"}
-    ],
-    "opis_ekologiczny": "Tarnina jest rośliną pionierską. W sukcesji leśnej przygotowuje miejsce dla dębów, chroniąc młode siewki drzew przed zgryzaniem przez sarny."
-  },
-  "kalendarz_ogrodnika": {
-    "zadania": [
+    "mozliwe_pomyłki": [
       {
-        "czynnosc": "Zbiór kwiatów na napary",
-        "miesiace": [4, 5],
-        "opis": "Zbieramy tylko świeżo rozwinięte koszyczki bez szypułek.",
-        "faza_ksiezyca": "Księżyc przybywający (faza kwiatu)",
-        "pora_dnia": "Południe (gdy opadnie rosa)",
-        "pogoda": "Pełne słońce, brak wiatru",
-        "wplyw_ksiezyca": "Najwyższa zawartość olejków eterycznych."
-      },
-      {
-        "czynnosc": "Rozmnażanie z odrostów korzeniowych",
-        "miesiace": [3, 11],
-        "opis": "Oddzielanie młodych roślin wyrastających z korzeni matczynych.",
-        "faza_ksiezyca": "Księżyc ubywający",
-        "pora_dnia": "Wieczór",
-        "pogoda": "Pochmurno, duża wilgotność powietrza",
-        "wplyw_ksiezyca": "Ułatwia regenerację systemu korzeniowego."
-      },
-      {
-        "czynnosc": "Zbiór owoców na przetwory",
-        "miesiace": [10, 11],
-        "opis": "Czekamy do pierwszych mrozów lub zbieramy i mrozimy w zamrażarce przez 48h.",
-        "faza_ksiezyca": "Pełnia",
-        "pora_dnia": "Popołudnie",
-        "pogoda": "Sucho",
-        "wplyw_ksiezyca": "Maksymalna kumulacja cukrów w owocu."
+        "nazwa": "Poziomkówka indyjska (Duchesnea indica)",
+        "roznica": "Kwiaty żółte (nie białe), owoce wzniesione ku górze, niesmaczne i pozbawione aromatu."
       }
     ]
   },
+
+  "czesci_rosliny": {
+    "liscie": {
+      "nazwa_surowca": "Folium Fragariae",
+      "opis_botaniczny": "Młode liście zbierane bez ogonków przed owocowaniem rośliny.",
+      "skladniki_aktywne": ["Garbniki katechinowe (do 10%)", "Flawonoidy (kwercetyna, rutyna)", "Witamina C", "Kwasy organiczne"],
+      "wlasciwości": "Moczopędne, ściągające, przeciwzapalne w obrębie jelit, detoksykujące krew.",
+      "czas_zbioru": "Kwiecień - Maj.",
+      "ostrzezenia": "Bezpieczny surowiec, może być stosowany u dzieci i seniorów."
+    },
+    "owoce": {
+      "nazwa_surowca": "Fructus Fragariae",
+      "opis_botaniczny": "Owoce rzekome (rozrośnięte dno kwiatowe).",
+      "skladniki_aktywne": ["Sole mineralne (żelazo, wapń)", "Witaminy z grupy B i C", "Kwas salicylowy", "Pektyny"],
+      "wlasciwości": "Odkwaszające organizm, ogólnie wzmacniające, przeciwreumatyczne.",
+      "czas_zbioru": "Czerwiec - Lipiec.",
+      "ostrzezenia": "U osób wrażliwych mogą wywoływać reakcje alergiczne (pokrzywkę)."
+    }
+  },
+
+  "zastosowanie": {
+    "medyczne": "Standard w leczeniu kamicy nerkowej, dny moczanowej (oczyszczanie stawów z kwasu moczowego) oraz przewlekłych biegunek u dzieci. Owoce poprawiają morfologię krwi.",
+    "kulinarne": "Owoce deserowe o najwyższym aromacie. Liście po poddaniu procesowi fermentacji dają herbatę o smaku zbliżonym do Earl Grey.",
+    "ogrodowe": "Idealna roślina zadarniająca ('żywy mulcz'), chroniąca glebę przed erozją i utratą wilgoci.",
+    "rzemieslnicze": "Sok z owoców poziomki był historycznie używany jako naturalny, czerwony barwnik spożywczy oraz kosmetyczny (naturalny róż do policzków)."
+  },
+
+  "interakcje": "Brak znanych szkodliwych interakcji z lekami syntetycznymi. Bezpieczna dla osób przyjmujących leki na nadciśnienie.",
+
   "ciekawostki": [
-    "W tradycji ludowej tarnina zwiastowała 'zimną zośkę' (ochłodzenie w czasie kwitnienia).",
-    "Z drewna tarniny wyrabiano najtwardsze laski i rękojeści narzędzi.",
-    "Wierzono, że korona cierniowa Chrystusa była wykonana z tarniny."
+    "Poziomka botanicznie nie jest jagodą, lecz owocem zbiorowym złożonym z setek małych orzeszków.",
+    "Karol Linneusz, słynny przyrodnik, wyleczył się z ciężkiej dny moczanowej stosując kurację świeżymi poziomkami.",
+    "Jedna poziomka leśna posiada więcej związków aromatycznych niż kilkanaście hodowlanych truskawek."
   ],
-  "ostrzezenia": "Pestki tarniny zawierają amigdalinę (kwas pruski) i nie powinny być spożywane. Przetwory z owoców należy zawsze drylować."
+
+  "permakultura": {
+    "funkcje": [
+      "Żywy mulcz (okrywa runa leśnego)",
+      "Akumulator mikroelementów z górnej warstwy gleby",
+      "Wsparcie dla owadów zapylających wczesnym latem"
+    ],
+    "gildie": [
+      { "nazwa": "Dąb szypułkowy", "rola": "Kocha lekkie zakwaszenie gleby pod dębami" },
+      { "nazwa": "Leszczyna", "rola": "Poziomka rośnie na obrzeżach kęp leszczyny" }
+    ]
+  },
+
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Rozmnażanie przez rozłogi",
+        "miesiace": [4, 8],
+        "opis": "Odcinanie ukorzenionych sadzonek przybyszowych i sadzenie w nowym miejscu.",
+        "faza_ksiezyca": "Księżyc przybywający",
+        "pora_dnia": "Wieczór",
+        "pogoda": "Wilgotno, pochmurno",
+        "wplyw_ksiezyca": "Przyspiesza budowę biomasy liściowej i ułatwia zakorzenienie przed zimą."
+      }
+    ]
+  },
+
+  "przepisy_medyczne": [
+    {
+      "tytul": "Herbatka Oczyszczająca Krew",
+      "typ": "medyczne",
+      "metoda": "napar",
+      "tagi": ["detoks", "nerki", "dna moczanowa"],
+      "skladniki": [
+        "Liście poziomki (suszone): 1 część",
+        "Ziele brzozy: 1 część",
+        "Ziele nawłoci: 1 część"
+      ],
+      "sposob_przygotowania": [
+        "Zioła wymieszać.",
+        "1 łyżkę mieszanki zalać szklanką wrzątku.",
+        "Parzyć pod przykryciem przez 15 minut."
+      ],
+      "dawkowanie": "Pić 3 razy dziennie przez 2-3 tygodnie jako kurację detoksykującą stawy.",
+      "uwagi": "Wspomaga przemianę materii i usuwanie kwasu moczowego.",
+      "roslina": "Poziomka pospolita",
+      "slug": "poziomka",
+      "cechy": ["lekko cierpki smak", "jasny napar"],
+      "wlasciwosci": ["moczopędna", "oczyszczająca"]
+    }
+  ]
 }

@@ -1,0 +1,180 @@
+{
+  "id": "lopian_wiekszy",
+  "nazwa_pl": "Łopian większy",
+  "nazwa_lat": "Arctium lappa",
+  "rodzina": "Astrowate (Asteraceae)",
+  "opis": "Dwuletnia, potężna roślina o monumentalnym pokroju, dorastająca do 2 metrów wysokości. W pierwszym roku tworzy rozetę ogromnych liści, a w drugim silnie rozgałęzioną łodygę z kwiatostanami. Charakterystyczne koszyczki kwiatowe są otoczone haczykowatymi listkami okrywy, które po dojrzeniu zamieniają się w rzepy. Posiada niezwykle długi, mięsisty korzeń palowy, który sięga głęboko w glebę, wydobywając z niej minerały niedostępne dla innych roślin.",
+
+  "profil_energetyczny": {
+    "smak": "Gorzki, słodkawy, mdły",
+    "termika": "Chłodna",
+    "wilgotnosc": "Osuszająca (detoksykująca)",
+    "zywiol": "Ziemia",
+    "opis": "Łopian to 'gruntowny sprzątacz'. Jego energia kieruje się w dół, poruszając zastoje w układzie limfatycznym i moczowym. Chłodzi stany zapalne skóry wynikające z 'gorąca krwi' (toksyny). Działa uziemiająco, pomagając organizmowi pozbyć się tego, co zbędne i szkodliwe."
+  },
+
+  "wymagania": {
+    "stanowisko": "Słoneczne do półcienistego. Wymaga dużej przestrzeni.",
+    "gleba": "Głęboka, żyzna, próchniczna, wilgotna, najlepiej gliniasto-piaszczysta. Na twardej, zbitej ziemi korzeń staje się pokręcony i trudny do wydobycia.",
+    "ph_gleby": "6.5 - 7.5 (Obojętna).",
+    "mrozoodpornosc": "Strefa 3 (Całkowicie mrozoodporny).",
+    "woda": "Wysokie zapotrzebowanie, szczególnie w fazie wzrostu liści; znosi okresowe susze dzięki głębokiemu systemowi korzeniowemu."
+  },
+
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Liście ogromne (do 50 cm), sercowate, spodem szaro-kutnerowate (filcowate).",
+      "Ogonki liściowe są PEŁNE w środku (klucz do odróżnienia od łopianu mniejszego).",
+      "Kwiaty purpurowe, rurkowate, zebrane w koszyczki o średnicy 3-4 cm.",
+      "Okrywa koszyczka zakończona haczykami, które bardzo łatwo czepiają się tkanin i sierści."
+    ],
+    "mozliwe_pomyłki": [
+      {
+        "nazwa": "Łopian mniejszy (Arctium minus)",
+        "roznica": "Jest znacznie mniejszy, a jego ogonki liściowe są PUSTE (rurkowate) w środku. Koszyczki kwiatowe są mniejsze i tworzą grona."
+      },
+      {
+        "nazwa": "Lepiężnik różowy (Petasites hybridus)",
+        "roznica": "Liście lepiężnika są równie duże, ale pojawiają się nad brzegami wód i nie mają tak długiego ogonka wznoszącego liść wysoko."
+      }
+    ]
+  },
+
+  "czesci_rosliny": {
+    "korzen": {
+      "nazwa_surowca": "Radix Bardanae",
+      "opis_botaniczny": "Wykopywany jesienią (z roślin jednorocznych) lub wczesną wiosną (z dwuletnich, zanim wypuszczą pęd).",
+      "skladniki_aktywne": [
+        "Inulina (do 45% - potężny prebiotyk)",
+        "Poliacetyleny (działanie antybiotyczne)",
+        "Fitosterole",
+        "Olejek eteryczny",
+        "Kwasy fenolowe",
+        "Sole mineralne (bogactwo potasu i magnezu)"
+      ],
+      "wlasciwości": "Silnie oczyszczające krew, żółciopędne, moczopędne, przeciwcukrzycowe (obniża cukier), przeciwbakteryjne i przeciwgrzybicze.",
+      "czas_zbioru": "Październik - Listopad lub Marzec.",
+      "ostrzezenia": "Suszyć w temp. do 50°C. Korzeń jest bardzo twardy po ususzeniu, wymaga zmielenia."
+    },
+    "liscie": {
+      "nazwa_surowca": "Folium Bardanae",
+      "wlasciwości": "Stosowane głównie zewnętrznie do okładów na wrzody, stłuczenia i trudno gojące się rany.",
+      "czas_zbioru": "Maj - Sierpień."
+    },
+    "owoce/nasiona": {
+      "nazwa_surowca": "Fructus Bardanae",
+      "wlasciwości": "W medycynie chińskiej (Niu Bang Zi) stosowane na gorączkę i ból gardła.",
+      "czas_zbioru": "Sierpień - Wrzesień."
+    }
+  },
+
+  "zastosowanie": {
+    "medyczne": "Trądzik, czyraczność, łuszczyca, egzemy, łojotokowe zapalenie skóry, cukrzyca (pomocniczo), reumatyzm, kamica nerkowa, wypadanie włosów i łupież (zewnętrznie).",
+    "kulinarne": "Korzeń jest popularnym warzywem w Japonii (Gobo). Można go smażyć, dusić lub dodawać do zup – ma orzechowy, lekko ziemisty smak. Młode ogonki liściowe po obraniu można jeść jak szparagi.",
+    "ogrodowe": "Producent ogromnej ilości biomasy. Wyciągi z liści stosuje się przeciwko mączniakowi i mszycom.",
+    "rzemieslnicze": "Sok z korzenia był bazą do produkcji tradycyjnych preparatów wzmacniających czarne barwniki tkanin."
+  },
+
+  "interakcje": "Może nasilać działanie leków obniżających poziom cukru we krwi (hipoglikemizujących). Ze względu na działanie moczopędne, należy zachować ostrożność przy jednoczesnym stosowaniu diuretyków.",
+
+  "ciekawostki": [
+    "Inżynier Georges de Mestral w 1941 roku po powrocie ze spaceru z psem zauważył rzepy łopianu na swojej kurtce. Pod mikroskopem zobaczył tysiące haczyków – tak narodził się pomysł na zapięcia Velcro.",
+    "W Japonii łopian (Gobo) jest uznawany za klucz do długowieczności i zdrowego przewodu pokarmowego.",
+    "Łopian był jednym ze składników słynnej herbaty 'Essiac', używanej w tradycyjnej medycynie Kanady jako wsparcie w chorobach nowotworowych.",
+    "Korzeń łopianu w połączeniu z korzeniem mniszka tworzy klasyczny brytyjski napój bezalkoholowy 'Dandelion and Burdock', pity od średniowiecza.",
+    "W medycynie ludowej wierzono, że liść łopianu przyłożony do głowy potrafi wyciągnąć ból migrenowy."
+  ],
+
+  "permakultura": {
+    "funkcje": [
+      "Dynamiczny akumulator minerałów z głębokich warstw gleby.",
+      "Potężny producent biomasy i cienia dla mniejszych roślin.",
+      "Siedlisko dla pożytecznych owadów i pająków w gęstwinie liści.",
+      "Napowietrzanie ciężkich gleb systemem korzeniowym."
+    ],
+    "gildie": [
+      { "nazwa": "Żywokost", "rola": "Wspólnie tworzą potężną strefę akumulacji minerałów na obrzeżach ogrodu." },
+      { "nazwa": "Dynia", "rola": "Ogromne liście łopianu mogą służyć jako naturalna osłona przed wiatrem dla płożących się dyń." }
+    ]
+  },
+
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Wykopywanie korzeni",
+        "miesiace": [10, 11],
+        "opis": "Zbiór z roślin jednorocznych (tych bez pędu kwiatowego). Wymaga głębokiego szpadla.",
+        "faza_ksiezyca": "Nów",
+        "pora_dnia": "Wieczór",
+        "wplyw_ksiezyca": "Maksymalizuje zawartość inuliny w korzeniu."
+      }
+    ]
+  },
+
+  "przepisy_medyczne": [
+    {
+      "tytul": "Olej Łopianowy na porost włosów",
+      "typ": "kosmetyczne",
+      "metoda": "maceracja olejowa",
+      "tagi": ["włosy", "łupież", "łysienie", "skóra głowy"],
+      "skladniki": [
+        "Suszony korzeń łopianu (rozdrobniony): 50g",
+        "Olej migdałowy lub słonecznikowy: 200ml"
+      ],
+      "sposob_przygotowania": [
+        "Korzeń zalać olejem w słoiku.",
+        "Podgrzewać w kąpieli wodnej (ok. 50°C) przez 3 godziny.",
+        "Odstawić na 2 tygodnie w ciemne miejsce, codziennie wstrząsając.",
+        "Przefiltrować."
+      ],
+      "dawkowanie": "Wcierać w skórę głowy 2 razy w tygodniu na godzinę przed myciem.",
+      "uwagi": "Najlepszy naturalny środek na wzmocnienie cebulek włosowych.",
+      "roslina": "Łopian większy",
+      "slug": "lopian_wiekszy",
+      "cechy": ["słomkowy kolor", "delikatny zapach"],
+      "wlasciwosci": ["odżywcza", "przeciwłupieżowa"]
+    },
+    {
+      "tytul": "Odwar Oczyszczający Cera-Detox",
+      "typ": "medyczne",
+      "metoda": "odwar",
+      "tagi": ["trądzik", "detoks", "krew", "metabolizm"],
+      "skladniki": [
+        "Rozdrobniony korzeń łopianu: 1 łyżka",
+        "Woda: 300ml"
+      ],
+      "sposob_przygotowania": [
+        "Zalać wodą, doprowadzić do wrzenia.",
+        "Gotować na małym ogniu przez 10 minut.",
+        "Odstawić na 15 minut, przecedzić."
+      ],
+      "dawkowanie": "Pić pół szklanki 3 razy dziennie przed posiłkiem.",
+      "roslina": "Łopian większy",
+      "slug": "lopian_wiekszy"
+    }
+  ],
+
+  "przepisy_kulinarne": [
+    {
+      "tytul": "Kinpira Gobo (Japoński Łopian Smażony)",
+      "typ": "kulinarne",
+      "metoda": "smażenie",
+      "tagi": ["warzywo", "kuchnia azjatycka", "zdrowie"],
+      "skladniki": [
+        "Korzeń łopianu: 200g",
+        "Marchew: 100g",
+        "Sos sojowy, olej sezamowy, ziarna sezamu"
+      ],
+      "sposob_przygotowania": [
+        "Łopian i marchew pokroić w cienkie słupki (zapałki).",
+        "Smażyć na oleju sezamowym, aż zmiękną.",
+        "Dodać sos sojowy i odrobinę cukru, smażyć do odparowania płynu.",
+        "Posypać sezamem."
+      ],
+      "uwagi": "Doskonałe danie wspierające trawienie.",
+      "roslina": "Łopian większy",
+      "slug": "lopian_wiekszy"
+    }
+  ],
+  "ostrzezenia": "Nie stosować w czasie ciąży. U osób z bardzo wrażliwym układem pokarmowym duże dawki inuliny mogą powodować wzdęcia."
+}

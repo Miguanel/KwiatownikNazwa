@@ -1,0 +1,123 @@
+{
+  "id": "kozlek_lekarski",
+  "nazwa_pl": "Kozłek lekarski (Waleriana)",
+  "nazwa_lat": "Valeriana officinalis",
+  "rodzina": "Kozłkowate (Valerianaceae)",
+  "opis": "Wieloletnia, wysoka bylina (do 1,5 m) występująca na wilgotnych łąkach i w zaroślach. Charakteryzuje się baldachowatymi kwiatostanami o słodkim, mdłym zapachu, które w miarę suszenia korzenia zmieniają się w bardzo intensywny, charakterystyczny aromat. Kozłek jest jednym z najstarszych znanych ludzkości środków uspokajających, stosowanym już w starożytnej Grecji i Rzymie jako 'panaceum' na dolegliwości nerwowe.",
+
+  "profil_energetyczny": {
+    "smak": "Ostry, gorzki, lekko słodkawy",
+    "termika": "Ciepła",
+    "wilgotnosc": "Osuszająca",
+    "zywiol": "Ziemia i Woda",
+    "opis": "Kozłek to 'kotwica emocjonalna'. Jego energia sprowadza nadmiar rozproszonego Qi z głowy w dół, uziemiając i uspokajając gonitwę myśli. Działa rozkurczowo na fizyczne napięcia powstałe pod wpływem stresu (tzw. 'ścisk w żołądku')."
+  },
+
+  "wymagania": {
+    "stanowisko": "Słoneczne do półcienistego. Najlepiej czuje się w miejscach jasnych, ale o wilgotnym powietrzu.",
+    "gleba": "Żyzna, próchniczna, wilgotna, zasobna w wapń. Kocha doliny rzeczne i torfowiska.",
+    "ph_gleby": "6.5 - 7.5 (Obojętna do lekko zasadowej).",
+    "mrozoodpornosc": "Strefa 4 (Całkowicie mrozoodporny).",
+    "woda": "Wysokie zapotrzebowanie; w czasie suszy korzeń drewnieje i traci wartość leczniczą."
+  },
+
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Liście nieparzystopierzaste, naprzeciwległe, z licznymi listkami (często ząbkowanymi).",
+      "Kwiaty drobne, białe lub bladoróżowe, zebrane w gęste baldachogrona na szczycie pędu.",
+      "Kłącze krótkie, grube, z licznymi cienkimi korzonkami – po przełamaniu wydziela 'zapach waleriany'.",
+      "Łodyga pusta w środku, bruzdowana."
+    ],
+    "mozliwe_pomyłki": [
+      {
+        "nazwa": "Głowaczek olbrzymi (Cephalaria gigantea)",
+        "roznica": "Ma znacznie większe, kuliste, żółtawe kwiatostany i nie posiada charakterystycznego zapachu korzenia."
+      }
+    ]
+  },
+
+  "czesci_rosliny": {
+    "korzen_i_klacze": {
+      "nazwa_surowca": "Radix Valerianae cum Rhizomate",
+      "opis_botaniczny": "Wykopywane jesienią (wrzesień/październik) lub wczesną wiosną u roślin dwuletnich.",
+      "skladniki_aktywne": [
+        "Waleropotriaty (działanie uspokajające)",
+        "Olejek eteryczny (kwas walerenowy - hamuje rozkład GABA w mózgu)",
+        "Alkaloidy pirydynowe",
+        "Garbniki",
+        "Kwasy organiczne"
+      ],
+      "wlasciwości": "Silnie uspokajające, ułatwiające zasypianie, rozkurczowe (mięśnie gładkie), obniżające pobudliwość kory mózgowej.",
+      "czas_zbioru": "Wrzesień - Październik.",
+      "ostrzezenia": "Suszyć w temp. do 35°C. Zapach korzenia jest bardzo atrakcyjny dla kotów – należy chronić suszarnię!"
+    }
+  },
+
+  "zastosowanie": {
+    "medyczne": "Bezsenność, stany lękowe, nerwice serca i przewodu pokarmowego, bolesne miesiączki, migreny na tle nerwowym, trudności w koncentracji wywołane stresem.",
+    "kulinarne": "BRAK. Roślina o bardzo specyficznym smaku, używana wyłącznie jako lek.",
+    "ogrodowe": "Roślina miododajna, przyciąga wiele gatunków owadów zapylających. W ogrodach ozdobnych ceniona za ażurowy pokrój.",
+    "rzemieslnicze": "Wyciągi z kozłka są stosowane w rolnictwie biodynamicznym do wzmacniania odporności roślin na przymrozki (opryski)."
+  },
+
+  "interakcje": "Nasila działanie leków nasennych, uspokajających i przeciwdepresyjnych. Nie łączyć z alkoholem. Może osłabiać koncentrację (ostrożnie przy prowadzeniu pojazdów).",
+
+  "ciekawostki": [
+    "Zapach schnącego korzenia kozłka działa na koty jak silny afrodyzjak i narkotyk (podobny do kocimiętki) – koty potrafią wygrzebać świeżo posadzony korzeń z ziemi.",
+    "W średniowieczu wierzono, że kozłek chroni przed czarami i elfami, dlatego wieszano go nad drzwiami domów.",
+    "Kwas walerenowy działa na receptory GABA w mózgu w podobny sposób jak benzodiazepiny (np. Valium), ale w sposób znacznie łagodniejszy i bez potencjału uzależniającego.",
+    "Nazwa 'waleriana' pochodzi prawdopodobnie od łacińskiego 'valere' – być zdrowym, silnym.",
+    "Szczurołap z Hameln według niektórych legend używał korzenia kozłka, aby zwabić szczury, które (podobnie jak koty) są wrażliwe na ten zapach."
+  ],
+
+  "permakultura": {
+    "funkcje": [
+      "Dynamiczny akumulator fosforu.",
+      "Wspomaganie aktywności dżdżownic w glebie.",
+      "Kluczowy składnik preparatów biodynamicznych (preparat 507).",
+      "Siedlisko dla bzygów."
+    ],
+    "gildie": [
+      { "nazwa": "Pomidory", "rola": "Kozłek poprawia smak i zdrowotność pomidorów rosnących w pobliżu." },
+      { "nazwa": "Żywokost", "rola": "Partnerzy w wilgotnych, żyznych strefach ogrodu." }
+    ]
+  },
+
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Wykopywanie korzeni",
+        "miesiace": [10],
+        "opis": "Pozyskiwanie surowca z roślin dwuletnich. Korzenie należy szybko umyć i rozdrobnić przed suszeniem.",
+        "faza_ksiezyca": "Nów (faza korzenia)",
+        "pora_dnia": "Wieczór",
+        "wplyw_ksiezyca": "Maksymalizuje siłę działania waleropotriatów."
+      }
+    ]
+  },
+
+  "przepisy_medyczne": [
+    {
+      "tytul": "Nalewka Walerianowa 'Dobry Sen'",
+      "typ": "medyczne",
+      "metoda": "maceracja alkoholowa",
+      "tagi": ["sen", "stres", "nerwy", "uspokojenie"],
+      "skladniki": [
+        "Suszony korzeń kozłka: 50g",
+        "Alkohol 70%: 250ml"
+      ],
+      "sposob_przygotowania": [
+        "Korzeń zalać alkoholem w szczelnym słoiku.",
+        "Macerować 14 dni w ciemnym miejscu.",
+        "Przefiltrować."
+      ],
+      "dawkowanie": "20-30 kropli na wodę, godzinę przed snem.",
+      "uwagi": "Nie stosować codziennie przez dłuższy czas (powyżej 2 tygodni) – może wywołać efekt paradoksalny (pobudzenie).",
+      "roslina": "Kozłek lekarski",
+      "slug": "kozlek_lekarski",
+      "cechy": ["intensywny zapach", "brunatny kolor"],
+      "wlasciwosci": ["uspokajająca", "nasenna"]
+    }
+  ],
+  "ostrzezenia": "Nie stosować u dzieci poniżej 12 roku życia bez konsultacji. U niektórych osób kozłek może powodować tzw. 'hangover' (ociężałość poranną). Przerwać stosowanie co najmniej 2 tygodnie przed planowaną operacją (wpływ na narkozę)."
+}

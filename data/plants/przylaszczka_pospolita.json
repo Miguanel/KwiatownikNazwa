@@ -1,0 +1,123 @@
+{
+  "id": "przylaszczka_pospolita",
+  "nazwa_pl": "Przylaszczka pospolita",
+  "nazwa_lat": "Hepatica nobilis",
+  "rodzina": "Jaskrowate (Ranunculaceae)",
+  "opis": "Niewielka, wieloletnia bylina leśna, osiągająca 10-20 cm wysokości. Jest jednym z najwcześniej kwitnących gatunków w Europie Środkowej, często przebijając się przez zeszłoroczne liście jeszcze przed pojawieniem się nowej zieleni. Jej trójklapowe liście są skórzaste i zimozielone, a błękitnofioletowe kwiaty zamykają się na noc i podczas deszczu. W Polsce jest pod ścisłą ochroną gatunkową.",
+
+  "profil_energetyczny": {
+    "smak": "Gorzki, cierpki, lekko piekący (świeża)",
+    "termika": "Chłodna",
+    "wilgotnosc": "Osuszająca",
+    "zywiol": "Ziemia i Woda",
+    "opis": "Przylaszczka działa 'otwierająco' na zastoje w wątrobie i pęcherzyku żółciowym. Chłodzi stany zapalne dróg żółciowych i pomaga w usuwaniu 'gorącej wilgoci' z organizmu. Ma energię regenerującą, powiązaną z wczesnowiosennym budzeniem się sił witalnych."
+  },
+
+  "wymagania": {
+    "stanowisko": "Cień lub półcień. Typowa roślina runa lasów liściastych (bukowych i dębowych).",
+    "gleba": "Żyzna, próchniczna, bogata w wapń, umiarkowanie wilgotna.",
+    "ph_gleby": "7.0 - 8.0 (Zasadowa, wapienna).",
+    "mrozoodpornosc": "Strefa 4 (Całkowicie mrozoodporna).",
+    "woda": "Lubi wilgoć wiosną, latem znosi okresowe przesuszenie pod osłoną koron drzew."
+  },
+
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Liście trójklapowe, o sercowatej nasadzie, spodem często przebarwione na fioletowo.",
+      "Kwiaty zazwyczaj błękitne lub fioletowe (rzadziej różowe lub białe) z licznymi pręcikami.",
+      "Szypułki kwiatowe gęsto, miękko owłosione.",
+      "Brak płatków korony – ich rolę pełnią barwne działki kielicha."
+    ],
+    "mozliwe_pomyłki": [
+      {
+        "nazwa": "Zawilec gajowy (Anemone nemorosa)",
+        "roznica": "Zawilec ma liście mocno powcinane (nie trójklapowe) i kwiaty zazwyczaj białe."
+      }
+    ]
+  },
+
+  "czesci_rosliny": {
+    "ziele": {
+      "nazwa_surowca": "Herba Hepaticae",
+      "opis_botaniczny": "Liście i kwiaty zbierane w okresie kwitnienia. W celach leczniczych stosuje się wyłącznie surowiec suszony.",
+      "skladniki_aktywne": [
+        "Glikozyd ranunkulina (podczas suszenia rozpada się na nieaktywną anemoninę)",
+        "Flawonoidy (kwercetyna)",
+        "Antocyjany",
+        "Garbniki",
+        "Saponiny"
+      ],
+      "wlasciwości": "Żółciopędne, moczopędne, wspomagające metabolizm wątroby, przeciwzapalne w obrębie jamy ustnej.",
+      "czas_zbioru": "Marzec - Kwiecień.",
+      "ostrzezenia": "ŚWIEŻA roślina jest toksyczna! Zawiera protoanemoninę, która silnie drażni skórę, błony śluzowe i układ pokarmowy. Podczas suszenia toksyna ta znika."
+    }
+  },
+
+  "zastosowanie": {
+    "medyczne": "Tradycyjnie w leczeniu kamicy żółciowej, zastojów żółci i przewlekłych stanów zapalnych wątroby. Zewnętrznie: płukanki w stanach zapalnych dziąseł i gardła.",
+    "kulinarne": "BRAK. Roślina nie nadaje się do spożycia.",
+    "ogrodowe": "Wybitna roślina ozdobna do ogrodów cienistych, naturalistycznych i skalnych. Tworzy piękne, błękitne kępy.",
+    "rzemieslnicze": "Brak znaczących zastosowań rzemieślniczych poza dekoracyjnymi."
+  },
+
+  "interakcje": "Może nasilać działanie leków żółciopędnych. Nie stosować przy niedrożności dróg żółciowych.",
+
+  "ciekawostki": [
+    "Nazwa 'Hepatica' pochodzi od greckiego 'hepar' (wątroba), co odnosi się do kształtu liści.",
+    "Nasiona przylaszczki są roznoszone przez mrówki (myrmekochoria) – posiadają specjalne wyrostki (elajosomy), które są przysmakiem mrówek.",
+    "Przylaszczka kwitnie dopiero po około 7 latach od wykiełkowania z nasiona.",
+    "W Polsce zbiór ze stanu dzikiego jest zabroniony – surowiec można pozyskiwać wyłącznie z upraw ogrodowych."
+  ],
+
+  "permakultura": {
+    "funkcje": [
+      "Wczesnowiosenny pożytek pyłkowy dla pierwszych dzikich pszczół i trzmieli.",
+      "Roślina okrywowa do głębokiego cienia pod drzewami liściastymi.",
+      "Bioindykator gleb wapiennych i lasów o charakterze naturalnym."
+    ],
+    "gildie": [
+      { "nazwa": "Buk zwyczajny", "rola": "Tworzy pod bukami naturalne, stabilne zbiorowiska runa." },
+      { "nazwa": "Marzanka wonna", "rola": "Sąsiad z runa leśnego, mają podobne wymagania siedliskowe." },
+      { "nazwa": "Wawrzynek wilczełyko", "rola": "Krzew towarzyszący w lasach wapiennych." }
+    ]
+  },
+
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Obserwacja kwitnienia / Zbiór z upraw",
+        "miesiace": [3, 4],
+        "opis": "Zbiór liści z upraw własnych (nie z lasu!). Suszenie w przewiewnym miejscu.",
+        "faza_ksiezyca": "Księżyc przybywający",
+        "pora_dnia": "Przedpołudnie",
+        "pogoda": "Słoneczna (kwiaty muszą być otwarte)",
+        "wplyw_ksiezyca": "Wspomaga trwałość barwy kwiatów w suszu."
+      }
+    ]
+  },
+
+  "przepisy_medyczne": [
+    {
+      "tytul": "Napar Przylaszczkowy na drogi żółciowe",
+      "typ": "medyczne",
+      "metoda": "napar",
+      "tagi": ["wątroba", "żółć", "detoks"],
+      "skladniki": [
+        "Suszone ziele przylaszczki: 1 łyżeczka",
+        "Woda: 250 ml"
+      ],
+      "sposob_przygotowania": [
+        "Suszone ziele zalać wrzącą wodą.",
+        "Parzyć pod przykryciem przez 15 minut.",
+        "Przecedzić."
+      ],
+      "dawkowanie": "Pić 2 razy dziennie po pół szklanki.",
+      "uwagi": "Stosować wyłącznie surowiec dobrze wysuszony!",
+      "roslina": "Przylaszczka pospolita",
+      "slug": "przylaszczka_pospolita",
+      "cechy": ["lekko gorzki smak", "jasny napar"],
+      "wlasciwosci": ["żółciopędna", "moczopędna"]
+    }
+  ],
+  "ostrzezenia": "ROŚLINA POD OCHRONĄ – NIE ZBIERAĆ W LESIE! Świeże ziele jest silnie drażniące i toksyczne. Unikać stosowania w ciąży i podczas karmienia piersią."
+}

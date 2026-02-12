@@ -1,0 +1,166 @@
+{
+  "id": "podbial_pospolity",
+  "nazwa_pl": "Podbiał pospolity",
+  "nazwa_lat": "Tussilago farfara",
+  "rodzina": "Astrowate (Asteraceae)",
+  "opis": "Wieloletnia bylina, jeden z najwcześniejszych zwiastunów wiosny. Charakterystyczny ze względu na cykl życiowy: najpierw (marzec/kwiecień) wyrastają łodygi z żółtymi kwiatostanami, a dopiero po ich przekwitnięciu pojawiają się duże, sercowate liście. Podbiał jest rośliną pionierską, uwielbiającą gliniaste nasypy i osuwiska. Przez wieki był uważany za najważniejszy lek na kaszel, palony nawet w formie tytoniu ziołowego dla astmatyków.",
+
+  "profil_energetyczny": {
+    "smak": "Słodki, śluzowaty, lekko gorzki",
+    "termika": "Neutralna ku chłodnej",
+    "wilgotnosc": "Nawilżająca (wybitnie śluzowa)",
+    "zywiol": "Ziemia i Powietrze",
+    "opis": "Podbiał to 'plaster' na wysuszone drogi oddechowe. Jego energia łagodzi 'ogień' w płucach i krtani, nawilżając suchy, drażniący kaszel. Pomaga przywrócić swobodny przepływ Qi w klatce piersiowej, przynosząc ulgę w stanach duszności."
+  },
+
+  "wymagania": {
+    "stanowisko": "Słoneczne. Jako roślina pionierska potrzebuje dużo światła do rozwoju kwiatów.",
+    "gleba": "Ciężka, gliniasta, wilgotna, zasobna w wapń. Często spotykany na terenach przekształconych przez człowieka, w rowach i na skarpach.",
+    "ph_gleby": "7.0 - 8.5 (Zasadowa).",
+    "mrozoodpornosc": "Strefa 3 (Całkowicie mrozoodporny).",
+    "woda": "Lubi stałą wilgoć, ale radzi sobie na glinie, która dobrze trzyma wodę nawet w czasie suszy."
+  },
+
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Kwiaty żółte, przypominające mniszek, ale osadzone na łodygach pokrytych czerwonawymi łuskami (nie gładkich).",
+      "Liście pojawiają się po kwitnieniu; są duże, sercowate, o ząbkowanym brzegu.",
+      "Spód liścia pokryty jest gęstym, białym kutnerem (filcem), który w dotyku jest chłodny, podczas gdy wierzch jest gładki i ciepły.",
+      "Kształt liścia przypomina odcisk kopyta końskiego (stąd ludowa nazwa 'końskie kopyto')."
+    ],
+    "mozliwe_pomyłki": [
+      {
+        "nazwa": "Mniszek lekarski (Taraxacum officinale)",
+        "roznica": "Mniszek ma gładką, pustą szypułkę z mleczkiem; podbiał ma łodygę łuskowatą i bez soku mlecznego."
+      },
+      {
+        "nazwa": "Lepiężnik różowy (Petasites hybridus)",
+        "roznica": "Liście lepiężnika są gigantyczne (nawet do 1 m średnicy), a kwiaty są zebrane w gęste grona (nie pojedyncze koszyczki)."
+      }
+    ]
+  },
+
+  "czesci_rosliny": {
+    "kwiaty": {
+      "nazwa_surowca": "Flos Farfarae",
+      "opis_botaniczny": "Koszyczki kwiatowe zbierane na samym początku kwitnienia, zanim w pełni się otworzą.",
+      "skladniki_aktywne": [
+        "Flawonoidy",
+        "Śluzy",
+        "Gorycze",
+        "Olejek eteryczny",
+        "Śladowe ilości alkaloidów pirolizydynowych"
+      ],
+      "wlasciwości": "Rozkurczowe na drogi oddechowe, łagodnie wykrztuśne, przeciwzapalne.",
+      "czas_zbioru": "Marzec - Kwiecień.",
+      "ostrzezenia": "Kwiaty mają silniejsze działanie rozkurczowe niż liście."
+    },
+    "liscie": {
+      "nazwa_surowca": "Folium Farfarae",
+      "opis_botaniczny": "Młode liście (wielkości dłoni) zbierane w maju i czerwcu, bez ogonków.",
+      "skladniki_aktywne": [
+        "Bardzo duża ilość śluzów (do 10%)",
+        "Garbniki",
+        "Inulina",
+        "Cynk (wysoka zawartość)",
+        "Kwasy organiczne"
+      ],
+      "wlasciwości": "Wybitnie osłaniające, powlekające, przeciwzapalne, ściągające.",
+      "czas_zbioru": "Maj - Czerwiec.",
+      "ostrzezenia": "Zawierają alkaloidy pirolizydynowe – nie stosować kuracji dłuższych niż 4-6 tygodni w roku."
+    }
+  },
+
+  "zastosowanie": {
+    "medyczne": "Uporczywy, suchy kaszel, chrypka, zapalenie krtani i oskrzeli, astma (pomocniczo). Zewnętrznie: okłady na stany zapalne skóry, czyraki i oparzenia.",
+    "kulinarne": "Młode liście mogą być spożywane po ugotowaniu (podobne do szpinaku), ale ze względu na alkaloidy nie jest to zalecane w dużych ilościach. Kwiaty bywają używane do dekoracji sałatek.",
+    "ogrodowe": "Roślina pionierska do stabilizacji skarp i nasypów. Bardzo ważny pierwszy pożytek dla dzikich pszczół.",
+    "rzemieslnicze": "Biały 'filc' ze spodu liści był dawniej używany jako hubka do krzesiwa po odpowiednim przygotowaniu."
+  },
+
+  "interakcje": "Nie łączyć z lekami obciążającymi wątrobę. Może nasilać działanie leków przeciwkaszlowych.",
+
+  "ciekawostki": [
+    "W medycynie ludowej podbiał nazywano 'ośle kopytko' lub 'boże lico'.",
+    "Jest to jedna z nielicznych roślin, u której spód liścia jest zawsze zimny w dotyku – dawniej przykładano liście 'zimną stroną' do czoła podczas gorączki.",
+    "Dym z palonych liści podbiału był wdychany przez astmatyków na długo przed wynalezieniem nowoczesnych inhalatorów.",
+    "Kwiaty podbiału reagują na słońce: otwierają się rano i zamykają wieczorem oraz przed deszczem.",
+    "W starożytnym Rzymie aptekarze mieli wizerunek podbiału nad drzwiami jako symbol skutecznego lekarstwa."
+  ],
+
+  "permakultura": {
+    "functions": [
+      "Dynamiczny akumulator cynku i siarki.",
+      "Stabilizator gleb gliniastych i osuwiskowych.",
+      "Kluczowy pożytek dla pierwszych zapylaczy po zimie.",
+      "Bioindykator gleb ciężkich i mokrych."
+    ],
+    "gildie": [
+      { "nazwa": "Wierzba", "rola": "Często rosną razem na brzegach wód i rowów." },
+      { "nazwa": "Mniszek lekarski", "rola": "Konkurują o te same wczesnowiosenne nisze ekologiczne." }
+    ]
+  },
+
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Zbiór kwiatów",
+        "miesiace": [3, 4],
+        "opis": "Zbiór koszyczków bez szypułek rano, po osuszeniu rosy.",
+        "faza_ksiezyca": "Księżyc przybywający (faza kwiatu)",
+        "pora_dnia": "Przedpołudnie",
+        "pogoda": "Słoneczna"
+      },
+      {
+        "czynnosc": "Zbiór liści",
+        "miesiace": [5, 6],
+        "opis": "Zrywanie młodych liści bez plam rdzy.",
+        "faza_ksiezyca": "Księżyc ubywający (faza liścia/osuszania)",
+        "wplyw_ksiezyca": "Ułatwia proces suszenia i zachowanie śluzów."
+      }
+    ]
+  },
+
+  "przepisy_medyczne": [
+    {
+      "tytul": "Napar na suchy kaszel 'Aksamitne Gardło'",
+      "typ": "medyczne",
+      "metoda": "napar",
+      "tagi": ["kaszel", "chrypka", "gardło", "śluz"],
+      "skladniki": [
+        "Suszone liście podbiału: 1 łyżka",
+        "Suszone kwiaty podbiału: 1 łyżeczka",
+        "Woda: 250 ml"
+      ],
+      "sposob_przygotowania": [
+        "Zioła zalać wrzątkiem.",
+        "Parzyć pod przykryciem 15 minut.",
+        "Przecedzić."
+      ],
+      "dawkowanie": "Pić małymi łykami 3 razy dziennie po pół szklanki.",
+      "uwagi": "Można dodać miód lipowy dla wzmocnienia efektu.",
+      "roslina": "Podbiał pospolity",
+      "slug": "podbial_pospolity",
+      "cechy": ["lekko śluzowata konsystencja", "łagodny smak"],
+      "wlasciwosci": ["osłonowa", "wykrztuśna"]
+    },
+    {
+      "tytul": "Syrop z liści (Metoda na zimno)",
+      "typ": "medyczne",
+      "metoda": "zasypywanie cukrem",
+      "tagi": ["kaszel", "zima", "odporność"],
+      "skladniki": [
+        "Świeże liście podbiału",
+        "Cukier lub miód"
+      ],
+      "sposob_przygotowania": [
+        "Liście drobno pokroić, ułożyć w słoiku warstwami, przesypując cukrem.",
+        "Odstawić w ciemne miejsce na 2 tygodnie.",
+        "Zlać syrop i przechowywać w lodówce."
+      ],
+      "roslina": "Podbiał pospolity",
+      "slug": "podbial_pospolity"
+    }
+  ],
+  "ostrzezenia": "Ze względu na zawartość alkaloidów pirolizydynowych (działanie hepatotoksyczne), podbiału nie wolno stosować u kobiet w ciąży, matek karmiących oraz u małych dzieci. Kuracja nie powinna trwać dłużej niż 4-6 tygodni w roku. Osoby z uszkodzeniem wątroby powinny unikać tej rośliny."
+}

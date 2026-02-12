@@ -1,0 +1,205 @@
+{
+  "id": "kasztanowiec_zwyczajny",
+  "nazwa_pl": "Kasztanowiec zwyczajny (biały)",
+  "nazwa_lat": "Aesculus hippocastanum",
+  "rodzina": "Mydleńcowate (Sapindaceae)",
+  "opis": "Potężne, majestatyczne drzewo o gęstej, kopulastej koronie, dorastające do 25-30 metrów. Słynie z dłoniastych liści oraz wzniesionych, wiechowatych kwiatostanów przypominających świeczniki. Kasztanowiec jest 'żywą apteką' układu krążenia – jego kora, kwiaty i nasiona zawierają escynę, substancję o unikalnych właściwościach uszczelniających naczynia krwionośne. Drzewo to, choć obce geograficznie, stało się integralnym elementem polskiej tradycji i krajobrazu parkowego.",
+
+  "profil_energetyczny": {
+    "smak": "Gorzki, cierpki, mdły",
+    "termika": "Chłodna",
+    "wilgotnosc": "Osuszająca i ściągająca",
+    "zywiol": "Metal i Ziemia",
+    "opis": "Kasztanowiec posiada energię 'zamykającą'. Ściąga tkanki, hamuje wysięki i wzmacnia bariery naczyniowe. Działa na organizm stabilizująco, pomagając 'utrzymać' płyny wewnątrz naczyń, zapobiegając ich ucieczce do przestrzeni międzykomórkowej (obrzęki)."
+  },
+
+  "wymagania": {
+    "stanowisko": "Słoneczne do półcienistego. Wymaga dużej przestrzeni dla prawidłowego rozwoju korony.",
+    "gleba": "Żyzna, głęboka, próchniczna, umiarkowanie wilgotna. Najlepiej rośnie na glebach piaszczysto-gliniastych.",
+    "ph_gleby": "6.0 - 7.5 (Obojętna do lekko zasadowej).",
+    "mrozoodpornosc": "Strefa 4 (Całkowicie mrozoodporny, ale wrażliwy na zanieczyszczenia solą drogową).",
+    "woda": "Wymaga stałej wilgotności; źle znosi długotrwałe susze, które osłabiają go w walce ze szkodnikami."
+  },
+
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Liście dłoniaste, złożone z 5-7 odwrotnie jajowatych listków, osiągające do 25 cm długości.",
+      "Pąki zimowe są bardzo duże, ciemnobrązowe i charakterystycznie LEPKO-żywiczne.",
+      "Kwiaty białe z żółtymi lub czerwonymi plamkami wewnątrz, zebrane w gęste, wyprostowane wiechy (świece).",
+      "Owoce (kasztany) to kuliste, kolczaste torebki zawierające 1-3 lśniące, brązowe nasiona z dużą, jasną plamką (znaczkiem)."
+    ],
+    "mozliwe_pomyłki": [
+      {
+        "nazwa": "Kasztan jadalny (Castanea sativa)",
+        "roznica": "Zupełnie inna rodzina (bukowate). Ma liście pojedyncze, lancetowate i ostro piłkowane. Owoce są mniejsze, ukryte w bardzo gęsto kolczastej 'jeżowatej' okrywie, jadalne po upieczeniu."
+      },
+      {
+        "nazwa": "Kasztanowiec czerwony (Aesculus ×carnea)",
+        "roznica": "Ma mniejsze, ciemnozielone, pomarszczone liście i kwiaty o intensywnie czerwonej barwie; owoce są prawie gładkie, bez kolców."
+      }
+    ]
+  },
+
+  "czesci_rosliny": {
+    "kwiaty": {
+      "nazwa_surowca": "Flos Hippocastani",
+      "opis_botaniczny": "Całe kwiatostany zbierane w maju, gdy środkowe kwiaty są w pełni rozwinięte.",
+      "skladniki_aktywne": [
+        "Flawonoidy (kwercetyna, rutyna)",
+        "Escyna (saponiny trójterpenowe)",
+        "Garbniki",
+        "Kwasy fenolowe"
+      ],
+      "wlasciwości": "Uszczelniające naczynia włosowate, przeciwzapalne, przeciwobrzękowe, lekko uspokajające.",
+      "czas_zbioru": "Maj.",
+      "ostrzezenia": "Suszyć szybko w zacienionym miejscu, by nie straciły białej barwy."
+    },
+    "owoce": {
+      "nazwa_surowca": "Semen Hippocastani (Nasiona kasztanowca)",
+      "opis_botaniczny": "Dojrzałe, brązowe nasiona wypadające z kolczastych torebek.",
+      "skladniki_aktywne": [
+        "Mieszanina saponin zwana escyną (do 13%)",
+        "Skrobia",
+        "Cukry",
+        "Olej tłusty",
+        "Flawonoidy"
+      ],
+      "wlasciwości": "Zwiększają elastyczność naczyń krwionośnych, poprawiają krążenie obwodowe i mózgowe, działają przeciwagregacyjnie (rozrzedzają lekko krew).",
+      "czas_zbioru": "Wrzesień - Październik.",
+      "ostrzezenia": "Niejadalne dla ludzi w stanie surowym! Zawierają toksyczne saponiny drażniące przewód pokarmowy."
+    },
+    "kora": {
+      "nazwa_surowca": "Cortex Hippocastani",
+      "opis_botaniczny": "Gładka kora z młodych gałęzi, pozyskiwana wiosną.",
+      "skladniki_aktywne": ["Kumaryny (eskulina, fraksyna)", "Garbniki", "Flawonoidy"],
+      "wlasciwości": "Silnie ściągające, przeciwkrwotoczne, hamujące wysięki. Stosowana głównie zewnętrznie.",
+      "czas_zbioru": "Marzec - Kwiecień."
+    }
+  },
+
+  "zastosowanie": {
+    "medyczne": "Przewlekła niewydolność żylna, żylaki nóg, hemoroidy, obrzęki pooperacyjne i pourazowe, krwiaki, zapalenie pochewek ścięgnistych, odmrożenia, zaburzenia ukrwienia mózgu.",
+    "kulinarne": "BRAK. Kasztany są trujące dla ludzi. Wykorzystywane jedynie po specjalistycznej ekstrakcji przemysłowej.",
+    "ogrodowe": "Drzewo parkowe i alejowe, dostarczające głębokiego cienia. Ważny pożytek dla pszczół i trzmieli (nektar i pyłek).",
+    "rzemieslnicze": "Drewno jest miękkie i lekkie, używane w rzeźbiarstwie, tokarstwie oraz do produkcji celulozy. Nasiona bogate w saponiny służyły dawniej jako surowiec do produkcji kleju i domowego mydła."
+  },
+
+  "interakcje": "Przetwory z kasztanowca mogą nasilać działanie leków przeciwzakrzepowych. Nie stosować łącznie z antybiotykami aminoglikozydowymi (może zwiększać ich nefrotoksyczność).",
+
+  "ciekawostki": [
+    "Kwitnienie kasztanowców w Polsce jest tradycyjnym sygnałem rozpoczęcia egzaminów maturalnych.",
+    "Owoce kasztanowca są przysmakiem dla dzików i saren, ale dla ludzi, koni i psów mogą być szkodliwe.",
+    "Kasztany noszone w kieszeni miały według wierzeń ludowych chronić przed reumatyzmem i 'wyciągać' złą energię (promieniowanie z żył wodnych).",
+    "Wyciąg z kasztanowca jest kluczowym składnikiem prawie każdego żelu na 'ciężkie nogi' dostępnego w aptekach."
+  ],
+
+  "permakultura": {
+    "funkcje": [
+      "Producent dużej ilości biomasy (liście bogate w minerały).",
+      "Źródło naturalnych saponin do prania ekologicznego.",
+      "Drzewo chroniące mniejsze rośliny przed wiatrem i słońcem.",
+      "Siedlisko dla ptaków i owadów."
+    ],
+    "gildie": [
+      { "nazwa": "Lipa drobnolistna", "rola": "Partner w nasadzeniach parkowych, wzmacniający bioróżnorodność pożytków." },
+      { "nazwa": "Barwinek pospolity", "rola": "Roślina okrywowa pod koroną kasztanowca, znosząca głęboki cień." }
+    ],
+    "zagrozenia": "Szrotówek kasztanowcowiaczek – inwazyjny motyl, którego larwy niszczą liście. W permakulturze kluczowe jest grabienie i utylizacja liści jesienią, by przerwać cykl życiowy szkodnika."
+  },
+
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Zbiór kwiatów",
+        "miesiace": [5],
+        "opis": "Zbiór całych świec kwiatowych w pełnym rozkwicie.",
+        "faza_ksiezyca": "Księżyc przybywający (faza kwiatu)",
+        "pora_dnia": "Południe (kwiaty suche i ciepłe)",
+        "pogoda": "Słoneczna",
+        "wplyw_ksiezyca": "Zapewnia najwyższą koncentrację flawonoidów i olejków."
+      },
+      {
+        "czynnosc": "Zbiór kasztanów na nalewkę",
+        "miesiace": [9, 10],
+        "opis": "Zbieranie świeżo spadłych, lśniących nasion.",
+        "faza_ksiezyca": "Księżyc ubywający",
+        "pogoda": "Sucha",
+        "wplyw_ksiezyca": "Sprzyja trwałości surowca i koncentracji escyny."
+      },
+      {
+        "czynnosc": "Grabienie i utylizacja liści",
+        "miesiace": [10, 11],
+        "opis": "Krytyczne zadanie: grabienie liści i ich kompostowanie w pryzmach o wysokiej temperaturze lub głębokie zakopywanie, aby zniszczyć poczwarki szrotówka.",
+        "faza_ksiezyca": "Dowolna"
+      }
+    ]
+  },
+
+  "przepisy_medyczne": [
+    {
+      "tytul": "Intrakt z Kwiatów Kasztanowca (Na naczynia)",
+      "typ": "medyczne",
+      "metoda": "intrakt (ekstrakcja na gorąco)",
+      "tagi": ["żylaki", "naczynka", "obrzęki", "hemoroidy"],
+      "skladniki": [
+        "Świeże kwiaty kasztanowca (same kwiatuszki bez grubych łodyg): 100g",
+        "Alkohol 40-60% (gorący): 500ml"
+      ],
+      "sposob_przygotowania": [
+        "Świeże kwiaty zalać alkoholem podgrzanym do ok. 70 stopni.",
+        "Szczelnie zamknąć i odstawić na 14 dni w ciemne miejsce.",
+        "Codziennie wstrząsać.",
+        "Przefiltrować przez gazę."
+      ],
+      "dawkowanie": "20-30 kropli na kieliszek wody 2-3 razy dziennie przez 3 tygodnie.",
+      "uwagi": "Intrakt jest skuteczniejszy niż zwykła nalewka, bo gorący alkohol stabilizuje escynę.",
+      "roslina": "Kasztanowiec zwyczajny",
+      "slug": "kasztanowiec_zwyczajny",
+      "cechy": ["słomkowy kolor", "gorzki smak"],
+      "wlasciwosci": ["uszczelniająca naczynia", "przeciwzapalna"]
+    },
+    {
+      "tytul": "Maść Kasztanowa 'Lekkie Nogi'",
+      "typ": "medyczne",
+      "metoda": "ekstrakcja tłuszczowa",
+      "tagi": ["obrzęki", "zmęczone nogi", "stłuczenia"],
+      "skladniki": [
+        "Świeże kasztany (rozdrobnione/zmielone): 5-6 sztuk",
+        "Smalec gęsi lub masło Shea: 100g",
+        "Alkohol 70%: 1 łyżka (do skropienia kasztanów)"
+      ],
+      "sposob_przygotowania": [
+        "Zmielone kasztany skropić alkoholem i odstawić na 15 minut.",
+        "Tłuszcz rozpuścić w kąpieli wodnej, dodać kasztany.",
+        "Ogrzewać przez 2 godziny na bardzo małym ogniu (nie smażyć!).",
+        "Przecedzić przez gęstą gazę, póki gorące.",
+        "Przechowywać w lodówce."
+      ],
+      "dawkowanie": "Smarować nogi od dołu do góry (w stronę serca) wieczorem.",
+      "roslina": "Kasztanowiec zwyczajny",
+      "slug": "kasztanowiec_zwyczajny"
+    }
+  ],
+
+  "przepisy_kulinarne": [
+    {
+      "tytul": "Kasztanowy Płyn do Prania (Permakultura)",
+      "typ": "gospodarcze",
+      "metoda": "gotowanie",
+      "tagi": ["eko-dom", "zero waste", "mydło"],
+      "skladniki": [
+        "Kasztany: 10-15 sztuk",
+        "Woda: 1 litr"
+      ],
+      "sposob_przygotowania": [
+        "Kasztany pokroić na drobne kawałki lub zetrzeć.",
+        "Zalać wodą i gotować przez 15-20 minut, aż powstanie gęsta piana.",
+        "Przecedzić płyn przez sito."
+      ],
+      "uwagi": "Stosować zamiast płynu do prania tkanin kolorowych (nie nadaje się do białych, może lekko żółcić). Świetny do mycia naczyń i rąk w ogrodzie.",
+      "roslina": "Kasztanowiec zwyczajny",
+      "slug": "kasztanowiec_zwyczajny"
+    }
+  ],
+  "ostrzezenia": "Nie stosować wewnętrznie przy ciężkich schorzeniach nerek oraz w pierwszym trymestrze ciąży. Kasztany są trujące dla dzieci i zwierząt domowych – przechowywać z dala od nich przetwory."
+}

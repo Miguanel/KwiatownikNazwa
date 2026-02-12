@@ -1,0 +1,163 @@
+{
+  "id": "czeremcha_zwyczajna",
+  "nazwa_pl": "Czeremcha zwyczajna",
+  "nazwa_lat": "Prunus padus",
+  "rodzina": "Różowate (Rosaceae)",
+  "opis": "Drzewo lub duży krzew o gęstej koronie, dorastający do 15 m wysokości. Najbardziej rozpoznawalna dzięki zwisającym, białym gronom kwiatów o intensywnym, wręcz odurzającym zapachu. Kora czeremchy po potarciu wydziela charakterystyczny zapach migdałów (wynik obecności amigdaliny). Jest to roślina wskaźnikowa dla żyznych i wilgotnych siedlisk leśnych, nazywana dawniej 'kocierpką' ze względu na cierpki smak owoców.",
+
+  "profil_energetyczny": {
+    "smak": "Cierpki, gorzki, lekko słodki (owoce)",
+    "termika": "Chłodna",
+    "wilgotnosc": "Osuszająca (ściągająca)",
+    "zywiol": "Woda i Powietrze",
+    "opis": "Czeremcha działa wybitnie 'ściągająco' na tkanki. Jej energia pomaga zatrzymać nadmiar płynów (biegunki, wysięki) i uspokoić 'rozbiegane' procesy zapalne. Na poziomie psychicznym jej zapach działa euforycznie, ale długotrwałe przebywanie w jego zasięgu może powodować senność i uspokojenie."
+  },
+
+  "wymagania": {
+    "stanowisko": "Słoneczne do półcienistego. Najlepiej kwitnie i owocuje w pełnym świetle.",
+    "gleba": "Żyzna, próchniczna, wilgotna, zasobna w składniki mineralne. Często spotykana w lasach łęgowych i olsach.",
+    "ph_gleby": "5.5 - 7.5 (Tolerancyjna, preferuje lekko kwaśne do obojętnych).",
+    "mrozoodpornosc": "Strefa 3 (Całkowicie mrozoodporna).",
+    "woda": "Wysokie zapotrzebowanie; źle znosi przesuszenie podłoża, kocha sąsiedztwo cieków wodnych."
+  },
+
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Kwiaty białe, zebrane w długie, zwisające grona (w przeciwieństwie do czeremchy amerykańskiej, u której grona są wzniesione).",
+      "Kora ciemnobrunatna, prawie czarna, po zarysowaniu pachnie intensywnie migdałami/lekarstwem.",
+      "Liście eliptyczne, brzegiem drobno piłkowane, z dwoma miodnikami u nasady blaszki (na ogonku).",
+      "Owoce to kuliste, lśniące, czarne pestkowce o bardzo cierpkim smaku."
+    ],
+    "mozliwe_pomyłki": [
+      {
+        "nazwa": "Czeremcha amerykańska (Prunus serotina)",
+        "roznica": "Gatunek inwazyjny. Ma liście skórzaste i błyszczące, a kwiatostany są wyprostowane, nie zwisające. Kwitnie ok. 2 tygodnie później."
+      },
+      {
+        "nazwa": "Kruszyna pospolita (Frangula alnus)",
+        "roznica": "Ma całobrzegie liście (nie piłkowane) i owoce, które dojrzewają nierównomiernie (na jednej gałązce są zielone, czerwone i czarne)."
+      }
+    ]
+  },
+
+  "czesci_rosliny": {
+    "owoce": {
+      "nazwa_surowca": "Fructus Pruni padi",
+      "opis_botaniczny": "Dojrzałe, czarne owoce zbierane późnym latem.",
+      "skladniki_aktywne": [
+        "Antocyjany",
+        "Garbniki (bardzo wysokie stężenie)",
+        "Witamina C",
+        "Kwasy organiczne",
+        "Amigdalina (w pestkach)"
+      ],
+      "wlasciwości": "Silnie ściągające, przeciwbiegunkowe, uszczelniające naczynia krwionośne, moczopędne.",
+      "czas_zbioru": "Sierpień - Wrzesień.",
+      "ostrzezenia": "Nie rozgryzać i nie spożywać pestek w dużych ilościach ze względu na glikozydy cyjanogenne."
+    },
+    "kora": {
+      "nazwa_surowca": "Cortex Pruni padi",
+      "opis_botaniczny": "Kora z młodych gałęzi pozyskiwana wiosną lub jesienią.",
+      "skladniki_aktywne": ["Glikozydy cyjanogenne (pruzyna, amigdalina)", "Garbniki", "Fitoncydy"],
+      "wlasciwości": "Naprzemienne działanie napotne i moczopędne, uspokajające kaszel (wycisza ośrodek kaszlu), przeciwreumatyczne.",
+      "czas_zbioru": "Kwiecień lub Październik.",
+      "ostrzezenia": "Wymaga precyzyjnego dawkowania – zawiera prekursory kwasu pruskiego (cyjanowodoru)."
+    },
+    "kwiaty": {
+      "nazwa_surowca": "Flos Pruni padi",
+      "wlasciwości": "Lekko uspokajające i napotne; napary stosowane jako tonik do przemywania oczu (zapalenie spojówek).",
+      "czas_zbioru": "Maj."
+    }
+  },
+
+  "zastosowanie": {
+    "medyczne": "Biegunki, nieżyty jelit, uporczywy kaszel (zapalenie oskrzeli), reumatyzm, stany zapalne układu moczowego. Zewnętrznie: do przemywania ran i oczu.",
+    "kulinarne": "Soki, konfitury (często przecierane przez sito, by pozbyć się pestek), nalewki (tzw. czeremchówka). W Rosji wysuszone i zmielone owoce z pestkami używane są jako aromatyczna mąka do ciast.",
+    "ogrodowe": "Roślina miododajna i biocenotyczna (pokarm dla ptaków). Drewno czeremchy jest cenione w stolarstwie artystycznym.",
+    "rzemieslnicze": "Z kory i owoców uzyskuje się naturalne barwniki (odcienie fioletu i szarości). Wyciąg z liści działa owadobójczo (fitoncydy)."
+  },
+
+  "interakcje": "Przetwory z kory mogą potęgować działanie leków uspokajających i przeciwkaszlowych. Ze względu na zawartość garbników, mogą ograniczać wchłanianie żelaza i niektórych leków.",
+
+  "ciekawostki": [
+    "Czeremcha produkuje tak silne fitoncydy, że postawienie bukietu kwiatów w małym pokoju może wywołać ból głowy u domowników.",
+    "W medycynie ludowej wierzono, że zapach czeremchy odpędza 'złe powietrze' i zarazę.",
+    "Owoce czeremchy są ulubionym pokarmem ptaków, które nie trawią pestek, przez co przyczyniają się do rozsiewania drzewa.",
+    "Amerykańska kuzynka (Czeremcha amerykańska) jest jednym z najgroźniejszych gatunków inwazyjnych w polskich lasach, wypierając rodzime dęby i sosny."
+  ],
+
+  "permakultura": {
+    "funkcje": [
+      "Budowa pasów wiatrochronnych na wilgotnych terenach.",
+      "Producent biomasy i pożytku dla zapylaczy.",
+      "Roślina pułapkowa dla niektórych szkodników sadowniczych.",
+      "Szybkie zacienianie brzegów zbiorników wodnych."
+    ],
+    "gildie": [
+      { "nazwa": "Olcha czarna", "rola": "Tworzą razem naturalne łęgi." },
+      { "nazwa": "Bez czarny", "rola": "Często współwystępują na obrzeżach wilgotnych lasów." },
+      { "nazwa": "Kalina koralowa", "rola": "Partner w gęstych zaroślach nadrzecznych." }
+    ]
+  },
+
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Zbiór owoców na przetwory",
+        "miesiace": [8, 9],
+        "opis": "Zbiór całych gron, gdy owoce są lśniąco czarne i lekko miękkie.",
+        "faza_ksiezyca": "Księżyc ubywający",
+        "pora_dnia": "Południe",
+        "pogoda": "Słoneczna",
+        "wplyw_ksiezyca": "Zapewnia wyższą koncentrację cukrów i lepszą trwałość soku."
+      }
+    ]
+  },
+
+  "przepisy_medyczne": [
+    {
+      "tytul": "Odwar z kory na suchy kaszel",
+      "typ": "medyczne",
+      "metoda": "odwar",
+      "tagi": ["kaszel", "oskrzela", "uspokojenie"],
+      "skladniki": [
+        "Suszona kora czeremchy: 1 łyżeczka",
+        "Woda: 250 ml"
+      ],
+      "sposob_przygotowania": [
+        "Korę zalać wodą i gotować pod przykryciem na małym ogniu przez 5-8 minut.",
+        "Odstawić na 15 minut, przecedzić."
+      ],
+      "dawkowanie": "Pić 2-3 razy dziennie po 2 łyżki stołowe (nie całą szklankę!).",
+      "uwagi": "Kwas pruski powstający z amigdaliny w małych dawkach wycisza ośrodek kaszlu.",
+      "roslina": "Czeremcha zwyczajna",
+      "slug": "czeremcha_zwyczajna",
+      "cechy": ["zapach migdałowy", "gorzki smak"],
+      "wlasciwosci": ["przeciwkaszlowa", "uspokajająca"]
+    }
+  ],
+
+  "przepisy_kulinarne": [
+    {
+      "tytul": "Syrop Czeremchowy (Aromatyczna Baza)",
+      "typ": "kulinarne",
+      "metoda": "gotowanie",
+      "tagi": ["syrop", "desery", "witaminy"],
+      "skladniki": [
+        "Owoce czeremchy: 1 kg",
+        "Cukier: 0.5 kg",
+        "Sok z jednej cytryny"
+      ],
+      "sposob_przygotowania": [
+        "Owoce zalać niewielką ilością wody i gotować 15 minut.",
+        "Przetrzeć przez gęste sito (pestki muszą zostać na sicie!).",
+        "Do uzyskanego soku dodać cukier i sok z cytryny, krótko zagotować.",
+        "Rozlać do słoików."
+      ],
+      "uwagi": "Syrop ma obłędny, niemal perfumeryjny aromat.",
+      "roslina": "Czeremcha zwyczajna",
+      "slug": "czeremcha_zwyczajna"
+    }
+  ],
+  "ostrzezenia": "Pestki i kora zawierają amigdalinę, która w organizmie uwalnia toksyczny cyjanowodór. Nie stosować w ciąży, podczas karmienia piersią i u małych dzieci. Przetworów z całych owoców z pestkami nie należy przechowywać dłużej niż rok."
+}

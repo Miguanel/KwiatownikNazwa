@@ -2,61 +2,137 @@
   "id": "marzanka_wonna",
   "nazwa_pl": "Marzanka wonna (Przytulia wonna)",
   "nazwa_lat": "Galium odoratum",
-  "rodzina": "Marzanowate",
-  "opis": "Niska bylina leśna o okółkowych liściach i drobnych białych kwiatach. Słynie z intensywnego zapachu świeżego siana po wysuszeniu.",
+  "rodzina": "Marzanowate (Rubiaceae)",
+  "opis": "Niska, dywanowa bylina dna lasów bukowych i dębowych. Charakteryzuje się pięknymi, białymi kwiatami i okółkowymi liśćmi. Jej najcenniejszą cechą jest intensywny zapach świeżego siana, który uwalnia się po zwiędnięciu lub wysuszeniu rośliny, co zawdzięcza obecności kumaryny.",
+
+  "profil_energetyczny": {
+    "smak": "Słodki, lekko gorzki",
+    "termika": "Chłodna",
+    "wilgotnosc": "Osuszająca",
+    "zywiol": "Powietrze",
+    "opis": "Relaksuje wątrobę, otwiera zastoje energetyczne i uspokaja umysł (Shen). Pomaga rozluźnić napięcia mięśniowe wywołane stresem."
+  },
+
+  "wymagania": {
+    "stanowisko": "Głęboki cień do półcienia. Typowa roślina leśna, źle znosi bezpośrednie słońce.",
+    "gleba": "Bogata w próchnicę, leśna, luźna, stale umiarkowanie wilgotna.",
+    "ph_gleby": "6.0 - 7.0 (Obojętna do lekko kwaśnej).",
+    "mrozoodpornosc": "Strefa 4 (Całkowicie mrozoodporna).",
+    "woda": "Wymaga stałej wilgotności; przesuszenie podłoża powoduje szybkie więdnięcie."
+  },
+
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Liście lancetowate zebrane w okółki po 6-8 sztuk wokół kanciastej łodygi.",
+      "Kwiaty drobne, śnieżnobiałe, czteropłatkowe, o zapachu miodu.",
+      "Roślina po wysuszeniu często przybiera ciemniejszą, niemal czarną barwę, co jest cechą naturalną."
+    ],
+    "mozliwe_pomyłki": [
+      {
+        "nazwa": "Przytulia czepna (Galium aparine)",
+        "roznica": "Przytulia czepna posiada haczykowate włoski, którymi 'czepia się' ubrań; marzanka jest gładka."
+      }
+    ]
+  },
+
   "czesci_rosliny": {
     "ziele": {
-      "nazwa_surowca": "Herba Asperulae (Herba Galii odorati)",
-      "opis_botaniczny": "Cienkie łodygi z charakterystycznymi okółkami lancetowatych liści. Rośnie dywanowo.",
-      "skladniki_aktywne": ["Glikozydy kumarynowe (asperulozyd)", "Flawonoidy", "Garbniki", "Kwasy organiczne", "Gorycze"],
-      "wlasciwości": "Uspokajające, przeciwskurczowe, poprawiające krążenie żylne, przeciwzapalne.",
-      "czas_zbioru": "Kwiecień - Maj (przed kwitnieniem lub na samym początku)."
+      "nazwa_surowca": "Herba Asperulae",
+      "opis_botaniczny": "Nadziemne części rośliny zbierane tuż przed lub na samym początku kwitnienia.",
+      "skladniki_aktywne": ["Glikozydy kumarynowe (asperulozyd)", "Flawonoidy", "Garbniki", "Gorycze", "Kwasy organiczne"],
+      "wlasciwości": "Uspokajające, przeciwskurczowe, poprawiające krążenie żylne, moczopędne.",
+      "czas_zbioru": "Kwiecień - Maj.",
+      "ostrzezenia": "Zawiera kumarynę. Przedawkowanie może prowadzić do silnych bólów głowy i nudności."
     }
   },
+
   "zastosowanie": {
-    "medyczne": "Stosowana w stanach napięcia nerwowego, bezsenności oraz pomocniczo przy żylakach i hemoroidach.",
-    "kulinarne": "Główny składnik 'Majtrank' (wina majowego). Nadaje aromat lodom, syropom i tytoniowi.",
-    "ogrodowe": "Doskonała roślina okrywowa do głębokiego cienia pod koronami dużych drzew."
+    "medyczne": "Niezastąpiona w nerwicach wegetatywnych, bólach migrenowych na tle napięciowym oraz trudnościach z zasypianiem. Wspomaga drenaż limfatyczny.",
+    "kulinarne": "Główny aromat tradycyjnego wina majowego (Majtrank). Służy do aromatyzowania syropów, lodów i domowych likierów.",
+    "ogrodowe": "Doskonała roślina okrywowa do całkowitego cienia pod drzewami liściastymi. Tworzy gęste runo.",
+    "rzemieslnicze": "Historycznie suszone ziele marzanki wkładano do pościeli i szaf, aby nadać im zapach świeżości i odstraszać mole."
   },
+
+  "interakcje": "Kumaryna może nasilać działanie leków przeciwzakrzepowych (antykoagulantów). Nie stosować łącznie bez konsultacji.",
+
+  "ciekawostki": [
+    "Zapach marzanki uwalnia się dopiero po naruszeniu struktury komórkowej rośliny – to zapach jej 'umierania'.",
+    "W średniowieczu marzankę rozrzucano na podłogach kościołów podczas świąt, by neutralizować zaduch w tłumie wiernych.",
+    "Majtrank (wino majowe) pito w kręgach germańskich na powitanie wiosny, by 'rozpędzić zimowy smutek'."
+  ],
+
   "permakultura": {
     "funkcje": [
-        "Okrywa runa leśnego (zapobiega erozji)",
-        "Bioindykator gleb bogatych w próchnicę",
-        "Roślina miododajna dla specyficznych grup owadów"
+      "Okrywa runa (mulcz żywy) zapobiegający erozji gleby w cieniu",
+      "Bioindykator gleb bogatych w próchnicę",
+      "Wsparcie dla specyficznych grup nocnych motyli"
     ],
     "gildie": [
-      {"nazwa": "Dąb szypułkowy", "rola": "Dostawca cienia i kwaśnej próchnicy"},
-      {"nazwa": "Czosnek niedźwiedzi", "rola": "Sąsiad z runa"},
-      {"nazwa": "Buk zwyczajny", "rola": "Alternatywna dominanta"}
-    ],
-    "opis_ekologiczny": "Marzanka tworzy symbiozę z dębami, ponieważ doskonale znosi garbniki uwalniane z liści dębu do gleby."
+      { "nazwa": "Dąb szypułkowy", "rola": "Dominanta; marzanka toleruje dębowe garbniki w glebie" },
+      { "nazwa": "Czosnek niedźwiedzi", "rola": "Sąsiad z runa leśnego; mają podobne wymagania" }
+    ]
   },
+
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór ziela",
         "miesiace": [5],
-        "opis": "Ścinamy całe pędy tuż przed pełnym rozkwitem.",
+        "opis": "Ścinanie pędów 2-3 cm nad ziemią, zanim kwiaty w pełni się rozwiną.",
         "faza_ksiezyca": "Pierwsza kwadra (Księżyc przybywający)",
-        "pora_dnia": "Poranek",
-        "pogoda": "Chłodno, cień",
-        "wplyw_ksiezyca": "Sprzyja zachowaniu zielonego koloru po wysuszeniu."
-      },
-      {
-        "czynnosc": "Dzielenie kęp",
-        "miesiace": [3, 9],
-        "opis": "Rozmnażanie przez podział podziemnych kłączy.",
-        "faza_ksiezyca": "Nów (faza korzenia)",
-        "pora_dnia": "Wieczór",
-        "pogoda": "Wilgotno",
-        "wplyw_ksiezyca": "Minimalizuje szok po przesadzeniu."
+        "pora_dnia": "Poranek po zejściu rosy",
+        "pogoda": "Chłodny, pochmurny dzień",
+        "wplyw_ksiezyca": "Zapewnia wyższą soczystość i lepsze uwalnianie aromatu podczas suszenia."
       }
     ]
   },
-  "ciekawostki": [
-    "Zapach marzanki pochodzi od kumaryny, która uwalnia się dopiero po naruszeniu struktury rośliny lub jej zwiędnięciu.",
-    "W średniowieczu wieszano ją w kościołach, by neutralizować nieprzyjemne zapachy.",
-    "W nadmiarze może powodować bóle głowy (ze względu na kumarynę)."
+
+  "przepisy_medyczne": [
+    {
+      "tytul": "Nalewka 'Spokojna Noc'",
+      "typ": "medyczne",
+      "metoda": "macerat",
+      "tagi": ["sen", "uspokojenie", "migrena"],
+      "skladniki": [
+        "Świeże ziele marzanki: 50g",
+        "Alkohol 40-60%: 250ml"
+      ],
+      "sposob_przygotowania": [
+        "Ziele lekko ugnieść (by uwolnić kumarynę).",
+        "Zalać alkoholem w szczelnym słoiku.",
+        "Macerować przez 10 dni w ciemnym miejscu.",
+        "Przecedzić i przelać do butelek z ciemnego szkła."
+      ],
+      "dawkowanie": "20-30 kropli na kieliszek wody przed snem.",
+      "uwagi": "Nie stosować dłużej niż 2 tygodnie bez przerwy.",
+      "roslina": "Marzanka wonna",
+      "slug": "marzanka_wonna",
+      "cechy": ["słodki, siana aromat", "kolor oliwkowy"],
+      "wlasciwosci": ["nasenna", "relaksująca"]
+    }
   ],
-  "ostrzezenia": "Nie należy przekraczać dawek terapeutycznych. Kumaryna w dużych ilościach jest toksyczna dla wątroby. Unikać w ciąży."
+
+  "przepisy_kulinarne": [
+    {
+      "tytul": "Tradycyjny Majtrank (Wino Majowe)",
+      "typ": "kulinarne",
+      "metoda": "macerat",
+      "tagi": ["wino", "wiosna", "aromatyczne"],
+      "skladniki": [
+        "Lekko podwiędnięte ziele marzanki: 1 mały pęczek",
+        "Białe wino wytrawne: 1 butelka",
+        "Truskawki lub poziomki do dekoracji"
+      ],
+      "sposob_przygotowania": [
+        "Pęczek marzanki zanurzyć w winie (tylko ziele, bez ciętych końcówek, by uniknąć goryczy).",
+        "Macerować przez 30-60 minut w lodówce.",
+        "Wyjąć marzankę, dodać owoce i podawać dobrze schłodzone."
+      ],
+      "dawkowanie": "Kieliszek towarzysko.",
+      "uwagi": "Zbyt długa maceracja (powyżej godziny) sprawi, że wino będzie zbyt intensywne i może wywołać ból głowy.",
+      "roslina": "Marzanka wonna",
+      "slug": "marzanka_wonna"
+    }
+  ],
+  "ostrzezenia": "Bezwzględnie unikać w ciąży. Kumaryna w dużych dawkach działa toksycznie na wątrobę."
 }

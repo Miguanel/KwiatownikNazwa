@@ -1,0 +1,170 @@
+{
+  "id": "niecierpek",
+  "nazwa_pl": "Niecierpek pospolity",
+  "nazwa_lat": "Impatiens noli-tangere",
+  "rodzina": "Niecierpkowate (Balsaminaceae)",
+  "opis": "Jednoroczna roślina zielna, rosnąca w wilgotnych, cienistych lasach i nad brzegami strumieni. Jej nazwa łacińska 'noli-tangere' (nie dotykaj mnie) oraz polska 'niecierpek' odnoszą się do niezwykłej cechy owoców: dojrzałe torebki przy najmniejszym dotyku pękają, gwałtownie wyrzucając nasiona na odległość kilku metrów. Jest to roślina o półprzezroczystych, soczystych łodygach, będąca skarbnicą związków flawonoidowych i rzadkich kwasów tłuszczowych.",
+
+  "profil_energetyczny": {
+    "smak": "Gorzki, lekko cierpki, śluzowaty",
+    "termika": "Chłodna",
+    "wilgotnosc": "Nawilżająca (kojąca)",
+    "zywiol": "Woda",
+    "opis": "Niecierpek to 'strażnik spokoju'. Chłodzi stany zapalne skóry i błon śluzowych, łagodzi 'gorąco' reakcji alergicznych. Na poziomie psychicznym (zgodnie z terapią Bacha) pomaga osobom niecierpliwym, porywczym i żyjącym w ciągłym napięciu czasowym, przywracając wewnętrzny rytm i łagodność."
+  },
+
+  "wymagania": {
+    "stanowisko": "Cień do półcienia. Wybitnie nie lubi bezpośredniego, palącego słońca.",
+    "gleba": "Bardzo wilgotna, żyzna, próchniczna, zasobna w azot. Często rośnie w miejscach, gdzie woda podsiąka pod powierzchnię.",
+    "ph_gleby": "5.5 - 7.0 (Lekko kwaśna do obojętnej).",
+    "mrozoodpornosc": "Brak (roślina jednoroczna, ginie przy pierwszym przymrozku, ale obficie rozsiewa nasiona).",
+    "woda": "Bardzo wysokie zapotrzebowanie; roślina natychmiast więdnie przy braku wilgoci w glebie."
+  },
+
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Łodyga soczysta, niemal przezroczysta, zgrubiała w węzłach.",
+      "Liście jajowate, grubo piłkowane, o delikatnej strukturze.",
+      "Kwiaty żółte (u noli-tangere) z dużą, zakrzywioną ostrogą, zwisające na cienkich szypułkach.",
+      "Owoce to podłużne torebki, które po dojrzeniu skręcają się gwałtownie przy dotknięciu."
+    ],
+    "mozliwe_pomyłki": [
+      {
+        "nazwa": "Niecierpek gruczołowaty (Impatiens glandulifera)",
+        "roznica": "Inwazyjny gigant (do 2 m), ma kwiaty różowe lub fioletowe i silny, słodki zapach. Ma analogiczne właściwości lecznicze."
+      },
+      {
+        "nazwa": "Niecierpek drobnokwiatowy (Impatiens parviflora)",
+        "roznica": "Małe, bladożółte kwiaty, prosta ostroga. Gatunek inwazyjny, bardzo pospolity, również leczniczy."
+      }
+    ]
+  },
+
+  "czesci_rosliny": {
+    "ziele": {
+      "nazwa_surowca": "Herba Impatientis",
+      "opis_botaniczny": "Cała nadziemna część rośliny zbierana w czasie kwitnienia.",
+      "skladniki_aktywne": [
+        "Flawonoidy (kwercetyna, kemferol)",
+        "Naftochinony (lanson - o silnym działaniu przeciwgrzybiczym)",
+        "Inhibitory 5-alfa-reduktazy (kluczowe w leczeniu trądziku hormonalnego)",
+        "Kwasy fenolowe",
+        "Fitosterole",
+        "Saponiny"
+      ],
+      "wlasciwości": "Przeciwzapalne, antyandrogenne (hamuje łysienie i trądzik), przeciwgrzybicze, moczopędne, regenerujące skórę (hamuje autoagresję immunologiczną).",
+      "czas_zbioru": "Czerwiec - Sierpień.",
+      "ostrzezenia": "Suszyć w temperaturze do 40°C. Świeże ziele w dużych dawkach może działać drażniąco na przewód pokarmowy."
+    },
+    "nasiona": {
+      "nazwa_surowca": "Semen Impatientis",
+      "opis_botaniczny": "Dojrzałe nasiona zbierane jesienią.",
+      "skladniki_aktywne": ["Kwasy tłuszczowe (parynarowy, punicynowy)", "Białka"],
+      "wlasciwości": "Odżywcze, regenerujące, wspierające gospodarkę hormonalną.",
+      "czas_zbioru": "Sierpień - Wrzesień."
+    }
+  },
+
+  "zastosowanie": {
+    "medyczne": "Trądzik pospolity i różowaty, łuszczyca, atopowe zapalenie skóry (AZS), łysienie androgenowe, stany zapalne prostaty, grzybice skóry i paznokci, alergie kontaktowe.",
+    "kulinarne": "Młode pędy i liście (po ugotowaniu!) są jadalne w niektórych kulturach, ale mają niską wartość smakową. Nasiona mają przyjemny, orzechowy smak i mogą być dodatkiem do sałatek.",
+    "ogrodowe": "Roślina miododajna (szczególnie gatunki inwazyjne są uwielbiane przez trzmiele). Idealna do zadarniania bardzo cienistych i wilgotnych zakątków ogrodu.",
+    "rzemieslnicze": "Sok z niecierpka (szczególnie gruczołowatego) zawiera barwniki naftochinonowe, które mogą trwale barwić wełnę i jedwab na odcienie brązu i pomarańczu."
+  },
+
+  "interakcje": "Dzięki działaniu antyandrogennemu może wspomagać leczenie farmakologiczne łagodnego przerostu prostaty i trądziku hormonalnego. Brak znanych negatywnych interakcji z lekami chemicznymi.",
+
+  "ciekawostki": [
+    "Niecierpek jest jednym z głównych składników słynnych 'Kropel Ratunkowych' (Rescue Remedy) dr. Bacha.",
+    "W Ameryce Północnej lokalne gatunki niecierpka (Jewelweed) są używane jako antidotum na oparzenia trującym bluszczem (Poison Ivy).",
+    "Nasiona są wyrzucane z owocu z prędkością dochodzącą do kilku metrów na sekundę.",
+    "Sok ze świeżego niecierpka po przyłożeniu do skóry uwalnia enzymy rozkładające chitynę, co tłumaczy jego skuteczność w walce z grzybicami."
+  ],
+
+  "permakultura": {
+    "funkcje": [
+      "Okrywa runa w strefach mokrych (Wetland management).",
+      "Późnoletni pożytek nektarowy dla trzmieli (szczególnie odmiany fioletowe).",
+      "Bioindykator stałej wilgotności i czystości podłoża.",
+      "Roślina pionierska w cienistych wyrwach leśnych."
+    ],
+    "gildie": [
+      { "nazwa": "Wierzba biała", "rola": "Niecierpek kocha wilgotny cień pod wierzbami." },
+      { "nazwa": "Pokrzywa zwyczajna", "rola": "Często rosną razem na żyznych, azotowych brzegach wód." },
+      { "nazwa": "Wiąz", "rola": "Partner w lasach łęgowych." }
+    ]
+  },
+
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Zbiór ziela na świeży sok/ocet",
+        "miesiace": [7, 8],
+        "opis": "Zbiór całych roślin w fazie kwitnienia. Najlepiej przetwarzać od razu po zbiorze.",
+        "faza_ksiezyca": "Księżyc przybywający (faza liścia/kwiatu)",
+        "pora_dnia": "Poranek (kiedy roślina jest najbardziej turgorowa)",
+        "pogoda": "Pochmurno, wilgotno",
+        "wplyw_ksiezyca": "Zapewnia maksymalną ilość soku komórkowego bogatego w enzymy."
+      }
+    ]
+  },
+
+  "przepisy_medyczne": [
+    {
+      "tytul": "Ocet Niecierpkowy (Na trądzik i łojotok)",
+      "typ": "medyczne",
+      "metoda": "maceracja octowa",
+      "tagi": ["trądzik", "cera tłusta", "hormony", "skóra"],
+      "skladniki": [
+        "Świeże ziele niecierpka (rozdrobnione): 1 szklanka",
+        "Ocet jabłkowy lub winny: 2 szklanki"
+      ],
+      "sposob_przygotowania": [
+        "Ziele zalać octem w słoiku.",
+        "Macerować przez 14 dni w ciemnym miejscu.",
+        "Przecedzić."
+      ],
+      "dawkowanie": "Stosować jako tonik po rozcieńczeniu z wodą (1 łyżka octu na pół szklanki wody).",
+      "uwagi": "Hamuje działanie androgenów na skórę, zmniejszając przetłuszczanie i wypryski.",
+      "roslina": "Niecierpek pospolity",
+      "slug": "niecierpek",
+      "cechy": ["lekko żywiczny zapach", "jasnożółty kolor"],
+      "wlasciwosci": ["antyandrogenna", "antyseptyczna"]
+    },
+    {
+      "tytul": "Okład na 'Piekącą Skórę' (Ugryzienia, Alergie)",
+      "typ": "medyczne",
+      "metoda": "świeża miazga",
+      "tagi": ["ukąszenia", "świąd", "pokrzywka", "ratunek"],
+      "skladniki": [
+        "Garść świeżego, soczystego ziela niecierpka"
+      ],
+      "sposob_przygotowania": [
+        "Ziele rozgnieść w moździerzu lub w dłoniach, aż puści sok.",
+        "Przykładać bezpośrednio na swędzące miejsca, oparzenia pokrzywą lub zmiany alergiczne."
+      ],
+      "dawkowanie": "Trzymać okład przez 20 minut.",
+      "roslina": "Niecierpek pospolity",
+      "slug": "niecierpek"
+    }
+  ],
+
+  "przepisy_kulinarne": [
+    {
+      "tytul": "Dzika Przekąska - Orzeszki Niecierpka",
+      "typ": "kulinarne",
+      "metoda": "zbiór bezpośredni",
+      "tagi": ["przekąska", "survival", "nasiona"],
+      "skladniki": [
+        "Dojrzałe nasiona niecierpka (zbierane do woreczka, by nie uciekły)"
+      ],
+      "sposob_przygotowania": [
+        "Nasiona można jeść na surowo (smakują jak orzechy włoskie) lub lekko uprażyć na suchej patelni."
+      ],
+      "uwagi": "Bogate w zdrowe tłuszcze i białko.",
+      "roslina": "Niecierpek pospolity",
+      "slug": "niecierpek"
+    }
+  ],
+  "ostrzezenia": "W rzadkich przypadkach świeży sok może barwić skórę na pomarańczowo. Nie stosować wewnętrznie w dużych dawkach bez konsultacji, gdyż może zadziałać silnie przeczyszczająco."
+}

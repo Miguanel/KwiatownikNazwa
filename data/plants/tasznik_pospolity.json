@@ -1,0 +1,138 @@
+{
+  "id": "tasznik_pospolity",
+  "nazwa_pl": "Tasznik pospolity",
+  "nazwa_lat": "Capsella bursa-pastoris",
+  "rodzina": "Kapustowate (Brassicaceae)",
+  "opis": "Jednoroczna lub dwuletnia roślina zielna, pospolita na całym świecie. Tasznik jest niesamowicie plastyczny – potrafi osiągnąć 50 cm wysokości na żyznej glebie lub zaledwie 5 cm w szczelinie chodnika. Jego najbardziej rozpoznawalną cechą są małe, trójkątne, sercowate łuszczynki (owoce). Jest to jedna z pierwszych roślin budzących się do życia wiosną, często kwitnąca nawet podczas łagodnych zim.",
+
+  "profil_energetyczny": {
+    "smak": "Ostry, słony, lekko gorzki",
+    "termika": "Chłodna",
+    "wilgotnosc": "Osuszająca (ściągająca)",
+    "zywiol": "Ziemia",
+    "opis": "Tasznik to 'tamponada natury'. Jego energia jest wybitnie skupiająca i ściągająca. Pomaga zatrzymać rozproszoną krew (krwotoki) i ujędrnić zwiotczałe tkanki. Działa chłodząco na stany zapalne dróg moczowych i macicy."
+  },
+
+  "wymagania": {
+    "stanowisko": "Słoneczne. Jako roślina pionierska kocha pełne światło.",
+    "gleba": "Każda. Preferuje jednak gleby zasobne w azot, piaszczysto-gliniaste. Częsty na polach uprawnych, w ogrodach i przy drogach.",
+    "ph_gleby": "5.0 - 8.0 (Bardzo tolerancyjny).",
+    "mrozoodpornosc": "Strefa 2 (Ekstremalnie odporny; nasiona kiełkują nawet w temp. 2-3°C).",
+    "woda": "Umiarkowane zapotrzebowanie; w czasie suszy szybko przechodzi do fazy owocowania."
+  },
+
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Owoce to małe, spłaszczone, trójkątno-sercowate łuszczynki.",
+      "Liście odziomkowe zebrane w rozetę, pierzastowcięte (podobne do mniszka), liście łodygowe mniejsze, lancetowate, obejmujące łodygę.",
+      "Kwiaty bardzo drobne, białe, czteropłatkowe, zebrane w wydłużone grona.",
+      "Łodyga pojedyncza lub rozgałęziona, wzniesiona, do 50 cm wysokości."
+    ],
+    "mozliwe_pomyłki": [
+      {
+        "nazwa": "Tobołki polne (Thlaspi arvense)",
+        "roznica": "Owoce tobołków są znacznie większe, okrągłe, z szerokim skrzydełkiem i głębokim wycięciem na szczycie. Pachną wyraźnie czosnkiem po roztarciu."
+      }
+    ]
+  },
+
+  "czesci_rosliny": {
+    "ziele": {
+      "nazwa_surowca": "Herba Bursae pastoris",
+      "opis_botaniczny": "Całe nadziemne części rośliny zbierane w czasie kwitnienia, gdy mają już pierwsze zielone owoce.",
+      "skladniki_aktywne": [
+        "Aminy biogenne (cholina, acetylocholina, histamina, tyramina)",
+        "Flawonoidy (kwercetyna, rutyna)",
+        "Garbniki",
+        "Witamina K, C i kwasy organiczne",
+        "Sole mineralne (bogactwo potasu)"
+      ],
+      "wlasciwości": "Przeciwkrwotoczne (zwęża naczynia krwionośne), tonizujące mięśnie gładkie macicy, moczopędne, obniżające ciśnienie krwi.",
+      "czas_zbioru": "Kwiecień - Wrzesień.",
+      "ostrzezenia": "Surowiec traci właściwości podczas długiego przechowywania. Najlepiej używać ziela świeżego lub rocznego."
+    }
+  },
+
+  "zastosowanie": {
+    "medyczne": "Zbyt obfite miesiączki, krwawienia z nosa, drobne krwawienia z przewodu pokarmowego, żylaki odbytu (hemoroidy), rany cięte (zewnętrznie), wspomaganie pracy serca.",
+    "kulinarne": "Młode liście z rozety (marzec) mają ostry, rzeżuchowy smak i są doskonałe do sałatek. Nasiona mogą służyć jako zamiennik pieprzu. W Azji tasznik jest cenionym warzywem uprawnym.",
+    "ogrodowe": "Roślina wskaźnikowa gleb bogatych w azot. Służy jako pożytek dla małych zapylaczy.",
+    "rzemieslnicze": "Brak znaczących zastosowań."
+  },
+
+  "interakcje": "Nie łączyć z lekami przeciwzakrzepowymi bez konsultacji lekarskiej (ze względu na witaminę K). Może nasilać działanie leków obniżających ciśnienie.",
+
+  "ciekawostki": [
+    "Tasznik jest rośliną 'protomięsożerną' – jego nasiona po zmoczeniu wydzielają lepki śluz, który wabi i zabija drobne organizmy glebowe (np. nicienie), dostarczając kiełkującej roślinie azotu.",
+    "Podczas I wojny światowej tasznik był powszechnie używany w szpitalach polowych jako zamiennik sporyszu (ergotu) do hamowania krwotoków macicznych.",
+    "Jedna roślina może wyprodukować do 40 000 nasion, które zachowują zdolność kiełkowania w ziemi przez kilkanaście lat.",
+    "W Chinach tasznik jest symbolem szczęścia i bogactwa (ze względu na sakiewkowaty kształt owoców).",
+    "Ziele tasznika zaatakowane przez grzyba (biała rdza) staje się białe i zniekształcone – takiego surowca nie wolno zbierać!"
+  ],
+
+  "permakultura": {
+    "funkcje": [
+      "Dynamiczny akumulator sodu i potasu.",
+      "Szybki mulcz żywy na pustych grządkach warzywnych.",
+      "Baza pokarmowa dla ptaków (nasiona).",
+      "Pomoc w zwalczaniu nicieni w glebie (dzięki właściwościom nasion)."
+    ],
+    "gildie": [
+      { "nazwa": "Marchew", "rola": "Tasznik spulchnia wierzchnią warstwę gleby przed wysiewem marchwi." },
+      { "nazwa": "Kapusta", "rola": "Jako krewniak kapusty, może być rośliną wskaźnikową dla chorób (np. kiły kapuścianej)." }
+    ]
+  },
+
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Zbiór ziela",
+        "miesiace": [5, 6],
+        "opis": "Ścinanie całej rośliny w czasie kwitnienia. Unikać roślin z białawym nalotem (grzyb).",
+        "faza_ksiezyca": "Księżyc przybywający (faza kwiatu)",
+        "pora_dnia": "Przedpołudnie",
+        "pogoda": "Słoneczna"
+      }
+    ]
+  },
+
+  "przepisy_medyczne": [
+    {
+      "tytul": "Napar Przeciwkrwotoczny 'Moc Serca'",
+      "typ": "medyczne",
+      "metoda": "napar",
+      "tagi": ["miesiączka", "krwotok", "naczynia", "witaminy"],
+      "skladniki": [
+        "Suszone ziele tasznika: 1 łyżka stołowa",
+        "Woda: 250 ml"
+      ],
+      "sposob_przygotowania": [
+        "Zioło zalać wrzątkiem.",
+        "Parzyć pod przykryciem 15 minut.",
+        "Przecedzić."
+      ],
+      "dawkowanie": "Pić 2-3 szklanki dziennie małymi porcjami w przypadku obfitych krwawień menstruacyjnych.",
+      "uwagi": "Najlepiej działa przygotowany ze świeżego ziela (zwiększyć ilość do 2 łyżek).",
+      "roslina": "Tasznik pospolity",
+      "slug": "tasznik_pospolity",
+      "cechy": ["słomkowy kolor", "ziołowy smak"],
+      "wlasciwosci": ["przeciwkrwotoczna", "ściągająca"]
+    },
+    {
+      "tytul": "Okład na krwawiące rany",
+      "typ": "medyczne",
+      "metoda": "świeża miazga",
+      "tagi": ["rany", "pierwsza pomoc", "skóra"],
+      "skladniki": [
+        "Świeże ziele tasznika"
+      ],
+      "sposob_przygotowania": [
+        "Ziele umyć i dokładnie rozgnieść na papkę.",
+        "Przyłożyć do czystej rany i owinąć gazą."
+      ],
+      "roslina": "Tasznik pospolity",
+      "slug": "tasznik_pospolity"
+    }
+  ],
+  "ostrzezenia": "BEZWZGLĘDNIE NIE STOSOWAĆ W CIĄŻY (może powodować skurcze macicy). Nie stosować przy zakrzepicy i skłonności do zatorów."
+}
