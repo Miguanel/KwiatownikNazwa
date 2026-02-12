@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kwiatownik - Cyfrowy Zielnik</title>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <style>
         body { font-family: 'Crimson Text', serif; background-color: #f4f1ea; color: #2c2c2c; margin: 0; }
@@ -16,6 +17,27 @@
         .flash-danger { background-color: #f8d7da; color: #721c24; }
         footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #666; }
     </style>
+    <style>
+        /* Nadpisanie Bootstrapa, żeby nie psuł tła i fontów */
+        body {
+            font-family: 'Crimson Text', serif;
+            background-color: #f4f1ea;
+            color: #2c2c2c;
+            margin: 0;
+        }
+        /* Reszta Twoich stylów lokalnych z base.html... */
+        nav { background-color: #3e4a3d; color: white; padding: 1rem; display: flex; justify-content: space-between; }
+        nav a { color: white; text-decoration: none; margin: 0 10px; }
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .flash { padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 4px; }
+        .flash-success { background-color: #d4edda; color: #155724; }
+        .flash-danger { background-color: #f8d7da; color: #721c24; }
+        footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #666; }
+
+        /* FIX dla linków w nawigacji (Bootstrap lubi je zmieniać na niebieskie) */
+        nav a { color: white !important; text-decoration: none; }
+        a { text-decoration: none; color: inherit; }
+    </style>
 </head>
 <body>
 
@@ -23,6 +45,7 @@
     <div>
         <a href="{{ url_for('index') }}"><strong>🌿 Kwiatownik</strong></a>
         <a href="{{ url_for('generator') }}"><strong>🌿 Generatory</strong></a>
+        <a href="{{ url_for('przepisy') }}"><strong>🌿 Przepisy</strong></a>
         <a href="{{ url_for('gildie') }}"><strong>🌿 Gildie</strong></a>
         <a href="{{ url_for('szukaj_terapeutyczna') }}"><strong>🌿 Szukaj objawów</strong></a>
         <a href="{{ url_for('all_comments') }}">Wszystkie Komentarze</a>
@@ -52,8 +75,8 @@
 </div>
 
 <footer>
-    <p>&copy; 2024 Kwiatownik - Akademicki Projekt Zielnika</p>
+    <p>&copy; 1396 Kwiatownik - Akademicki Projekt Zielnika</p>
 </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

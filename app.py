@@ -1,8 +1,9 @@
 import os
 import json
 import sys
+import re
 from datetime import datetime
-from flask import Flask, render_template, request, redirect, url_for, flash, abort
+from flask import Flask, render_template, request, redirect, url_for, flash, abort, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, UserMixin, login_user, logout_user, login_required, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -67,7 +68,7 @@ with app.app_context():
 
 @login_manager.user_loader
 def load_user(user_id):
-    return User.query.get(int(user_id))
+    return db.session.get(User, int(user_id))
 
 
 # --- FUNKCJE POMOCNICZE (JSON) ---
@@ -290,77 +291,66 @@ def szukaj_terapeutyczna():
 
 @app.route('/generator', methods=['GET', 'POST'])
 def generator():
+    # 1. Przygotowanie danych o roślinach i ich częściach
     all_plants_ids = get_all_plants_list()
-    plants_with_parts = []
-    all_properties = set()
+    plants_data = []
+    all_properties = set()  # Zbiór wszystkich właściwości do podpowiedzi
 
     for pid in all_plants_ids:
         data = get_plant_data(pid)
         if data and 'czesci_rosliny' in data:
-            parts_info = []
+            parts_info = {}  # Słownik: nazwa_części -> właściwości
+
             for part_name, part_data in data['czesci_rosliny'].items():
-                props = part_data.get('wlasciwości', '').lower()
-                all_properties.update([p.strip() for p in props.replace(',', ' ').split() if len(p) > 3])
+                # Pobieramy właściwości (np. "moczopędne, przeciwzapalne")
+                props_text = part_data.get('wlasciwości', '') or part_data.get('wlasciwosci', '')
+                parts_info[part_name] = props_text
 
-                parts_info.append({
-                    'name': part_name,
-                    'properties': props
-                })
+                # Dodajemy pojedyncze słowa do listy podpowiedzi (dla wyszukiwarki)
+                # Czyścimy z przecinków i spacji
+                if props_text:
+                    words = [p.strip().lower() for p in props_text.replace(',', ' ').split() if len(p) > 3]
+                    all_properties.update(words)
 
-            plants_with_parts.append({
-                'id': pid,
-                'name': data.get('nazwa_pl'),
-                'parts': parts_info
+            plants_data.append({
+                'slug': pid,
+                'nazwa_pl': data.get('nazwa_pl', 'Nieznana'),
+                'parts': parts_info,  # Przekazujemy też właściwości części!
+                'warnings': data.get('ostrzezenia', '')
             })
 
-    result = None
+    # Sortujemy rośliny alfabetycznie
+    plants_data.sort(key=lambda x: x['nazwa_pl'])
+
+    # 2. Obsługa komentarzy (Dziennik Laboratoryjny)
+    comments = Comment.query.filter_by(plant_id='generator_tool').order_by(Comment.date_posted.desc()).all()
+
     if request.method == 'POST':
-        selected_items = request.form.getlist('selected_parts')
-        gen_type = request.form.get('gen_type')
-        volume = int(request.form.get('volume', 500))
+        # Obsługa dodawania notatki
+        if not current_user.is_authenticated:
+            flash('Musisz być zalogowany, aby zapisać notatkę.', 'warning')
+            return redirect(url_for('login'))
 
-        if selected_items:
-            recipe_ingredients = []
-            warnings = []
+        content = request.form.get('content')
+        is_private = request.form.get('is_private') == 'on'
 
-            for item in selected_items:
-                plant_id, part_name = item.split(':')
-                data = get_plant_data(plant_id)
-                part_data = data['czesci_rosliny'][part_name]
+        if content:
+            new_comment = Comment(
+                content=content,
+                user_id=current_user.id,
+                plant_id='generator_tool',
+                is_private=is_private,
+                author=current_user
+            )
+            db.session.add(new_comment)
+            db.session.commit()
+            flash('Zapisano notatkę do dziennika.', 'success')
+            return redirect(url_for('generator'))
 
-                recipe_ingredients.append({
-                    'plant_name': data['nazwa_pl'],
-                    'part_name': part_name,
-                    'latin_name': part_data.get('nazwa_surowca', ''),
-                    'properties': part_data.get('wlasciwości', '')
-                })
-                if data.get('ostrzezenia'):
-                    warnings.append(f"{data['nazwa_pl']} ({part_name}): {data['ostrzezenia']}")
-
-            herb_weight = volume / 5 if gen_type == 'nalewka' else volume / 10
-
-            result = {
-                'type': gen_type,
-                'volume': volume,
-                'ingredients': recipe_ingredients,
-                'proportions': [],
-                'warnings': list(set(warnings))  # usunięcie duplikatów
-            }
-
-            for ing in recipe_ingredients:
-                weight = herb_weight / len(recipe_ingredients)
-                result['proportions'].append({
-                    'label': f"{ing['part_name'].capitalize()} {ing['plant_name']} ({ing['latin_name']})",
-                    'value': f"{round(weight, 1)}g",
-                    'desc': ing['properties']
-                })
-    now = f" {datetime.now().day}.{datetime.now().month}.{datetime.now().year}"
     return render_template('generator.html',
-                           plants_with_parts=plants_with_parts,
+                           plants=plants_data,
                            suggestions=sorted(list(all_properties)),
-                           now=now,
-                           result=result)
-
+                           comments=comments)
 
 # --- AUTENTYKACJA ---
 
@@ -402,7 +392,109 @@ def logout():
     logout_user()
     return redirect(url_for('index'))
 
+# Przepisy
 
+def load_recipes():
+    recipes = []
+    # Zakładam, że pliki nazywają się tak jak poniżej - sprawdź to!
+    files = ['data/przepisy/przepisy_medyczne.json', 'data/przepisy/przepisy_kulinarne.json']
+
+    for file_path in files:
+        # Pamiętaj o użyciu resource_path jeśli nadal budujesz .exe!
+        # Jeśli uruchamiasz lokalnie/na Render, wystarczy os.path.join
+        try:
+            # full_path = resource_path(file_path) # Odkomentuj dla wersji .exe
+            full_path = os.path.join(app.root_path, file_path)  # Dla wersji standardowej
+
+            with open(full_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+
+                # POPRAWKA: Twoje dane są w kluczu "przepisy"
+                if isinstance(data, dict) and "przepisy" in data:
+                    recipes.extend(data["przepisy"])
+                elif isinstance(data, list):
+                    recipes.extend(data)
+
+        except FileNotFoundError:
+            print(f"Ostrzeżenie: Nie znaleziono pliku {file_path}")
+        except Exception as e:
+            print(f"Błąd ładowania pliku {file_path}: {e}")
+
+    return recipes
+
+
+@app.route('/przepisy', methods=['GET'])
+def przepisy():
+    query = request.args.get('q', '').lower().strip()
+    all_recipes = load_recipes()
+    results = []
+
+    if query:
+        for recipe in all_recipes:
+            # Łączymy wszystkie ważne pola w jeden ciąg tekstowy do przeszukania
+            # Obsługujemy sytuację, gdzie pole może być puste (None)
+            ingredients = " ".join(recipe.get('skladniki', []))
+            properties = " ".join(recipe.get('wlasciwosci', []))
+            features = " ".join(recipe.get('cechy', []))
+
+            # Dodajemy też nazwę rośliny i tytuł
+            searchable_text = (
+                f"{recipe.get('tytul', '')} "
+                f"{recipe.get('roslina', '')} "
+                f"{ingredients} {properties} {features}"
+            ).lower()
+
+            if query in searchable_text:
+                results.append(recipe)
+    else:
+        # Jeśli nic nie wpisano, pokazujemy np. losowe 20 lub wszystkie (zależy od wydajności)
+        results = all_recipes
+
+    return render_template('recipes.html', results=results, query=query)
+
+
+@app.route('/api/recipe_suggestions')
+def recipe_suggestions():
+    """Zwraca listę pojedynczych słów kluczowych (bez śmieci i spójników)"""
+    all_recipes = load_recipes()
+    keywords = set()
+
+    # Słowa do zignorowania (spójniki, przyimki, jednostki miary)
+    STOP_WORDS = {
+        'w', 'z', 'i', 'o', 'a', 'do', 'na', 'po', 'ze', 'za', 'się', 'lub', 'jak',
+        'ml', 'g', 'kg', 'dag', 'lyz', 'łyż', 'łyżka', 'łyżeczka', 'szklanki', 'szklanka',
+        'proporcja', 'ok', 'szt', 'sztuk', 'litr', 'gram', 'często', 'bardzo', 'jest'
+    }
+
+    def clean_and_split(text):
+        if not text:
+            return []
+        # 1. Usuń cyfry i znaki specjalne (zostaw tylko litery i spacje)
+        text = re.sub(r'[^\w\s]', '', text)
+        # 2. Zamień na małe litery i podziel na słowa
+        words = text.lower().split()
+        # 3. Filtruj: słowo musi mieć min. 3 litery, nie być liczbą i nie być na liście STOP_WORDS
+        return [w for w in words if len(w) > 2 and not w.isdigit() and w not in STOP_WORDS]
+
+    for r in all_recipes:
+        # Analizujemy składniki (które są listą długich opisów)
+        for skladnik in r.get('skladniki', []):
+            keywords.update(clean_and_split(skladnik))
+
+        # Analizujemy właściwości i cechy
+        for prop in r.get('wlasciwosci', []):
+            keywords.update(clean_and_split(prop))
+
+        for cecha in r.get('cechy', []):
+            keywords.update(clean_and_split(cecha))
+
+        # Analizujemy nazwę rośliny i tytuł
+        keywords.update(clean_and_split(r.get('roslina', '')))
+        # Opcjonalnie tytuł (jeśli chcesz podpowiadać np. "nalewka")
+        keywords.update(clean_and_split(r.get('tytul', '')))
+
+    # Sortujemy alfabetycznie
+    return jsonify(sorted(list(keywords)))
 if __name__ == '__main__':
     with app.app_context():
         if not os.path.exists(app.config['JSON_DATA_FOLDER']):
