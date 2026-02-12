@@ -34,7 +34,10 @@ if DATABASE_URL and DATABASE_URL.startswith("postgres://"):
 app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL or 'sqlite:///local.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-db = SQLAlchemy(app)
+db = SQLAlchemy(app, engine_options={
+    "pool_pre_ping": True,
+    "pool_recycle": 300,
+})
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
 
