@@ -72,11 +72,23 @@ def load_user(user_id):
 
 
 # --- FUNKCJE POMOCNICZE (JSON) ---
+def normalize_slug(text):
+    """Zamienia polskie znaki na ich odpowiedniki i przygotowuje bezpieczny slug."""
+    accents = {
+        'ą': 'a', 'ć': 'c', 'ę': 'e', 'ł': 'l', 'ń': 'n',
+        'ó': 'o', 'ś': 's', 'ź': 'z', 'ż': 'z'
+    }
+    text = text.lower().replace(" ", "_")
+    for char, replacement in accents.items():
+        text = text.replace(char, replacement)
+    return text
+
 
 def get_plant_data(pid):
     # Zakładam, że Twoja ścieżka wygląda tak:
-    slug = pid.lower().replace(" ", "_")
-    path = os.path.join('data\\plants', f'{slug}.json')
+    slug = normalize_slug(pid)
+    slug = slug.lower().replace(" ", "_")
+    path = os.path.join('data', 'plants', f'{slug}.json')
 
     if not os.path.exists(path):
         print(f"BŁĄD: Plik {path} nie istnieje!")
