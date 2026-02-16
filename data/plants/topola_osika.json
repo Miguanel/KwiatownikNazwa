@@ -1,0 +1,125 @@
+{
+  "id": "topola_osika",
+  "nazwa_pl": "Topola osika (Osika)",
+  "nazwa_lat": "Populus tremula",
+  "rodzina": "Wierzbowate (Salicaceae)",
+  "opis": "Szybkorosnące drzewo o smukłej sylwetce, dorastające do 20–30 metrów. Charakterystyczną cechą osiki jest jej kora – u młodych drzew gładka, jasnozielonkawa lub kremowa, z wiekiem ciemniejąca i pękająca u nasady. Liście osiki są niemal okrągłe, ząbkowane, osadzone na bardzo długich i bocznie spłaszczonych ogonkach, co powoduje ich charakterystyczne drżenie nawet przy bezwietrznej pogodzie.",
+
+  "profil_energetyczny": {
+    "smak": "Gorzki, ściągający",
+    "termika": "Zimna",
+    "wilgotnosc": "Osuszająca",
+    "zywiol": "Powietrze",
+    "opis": "Osika to 'chłodnica' organizmu. Jej energia wygasza ogień gorączki i uśmierza ból wynikający ze stanów zapalnych. Jako drzewo 'powietrzne', pomaga rozproszyć zastoje mentalne i lęki, przynosząc ulgę w stanach nadmiernego napięcia emocjonalnego."
+  },
+
+  "wymagania": {
+    "stanowisko": "Pełne słońce. Jest gatunkiem wybitnie światłożądnym; w cieniu innych drzew szybko zamiera.",
+    "gleba": "Mało wymagająca. Rośnie zarówno na glebach piaszczystych, jak i gliniastych, choć najlepiej czuje się na podłożu świeżym i żyznym.",
+    "ph_gleby": "5.5 - 7.5 (Tolerancyjna).",
+    "mrozoodpornosc": "Strefa 2 (Ekstremalnie odporna na mrozy, występuje aż po tundrę).",
+    "woda": "Umiarkowane zapotrzebowanie; dobrze znosi okresowe susze, ale najlepiej rośnie przy stałej wilgotności."
+  },
+
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Liście drżące na długich, spłaszczonych ogonkach.",
+      "Kora jasnozielonkawo-szara, gładka z charakterystycznymi rombowatymi przetchlinkami.",
+      "Pączki są długie, ostre, lepkie i pachnące żywicą (podobnie jak u czarnej topoli).",
+      "Kwiaty zebrane w zwisające kotki, pojawiają się wczesną wiosną przed liśćmi."
+    ],
+    "mozliwe_pomyłki": [
+      {
+        "nazwa": "Topola biała (Populus alba)",
+        "roznica": "Ma liście od spodu gęsto, śnieżnobiało owłosione i klapowane (podobne do klonu)."
+      },
+      {
+        "nazwa": "Brzoza brodawkowata",
+        "roznica": "Ma białą, łuszczącą się korę (osika nigdy się nie łuszczy) i zupełnie inny kształt liści (trójkątno-romboidalne)."
+      }
+    ]
+  },
+
+  "czesci_rosliny": {
+    "kora": {
+      "nazwa_surowca": "Cortex Populi tremulae",
+      "opis_botaniczny": "Kora pozyskiwana wiosną z młodych gałęzi (2-4 letnich).",
+      "skladniki_aktywne": [
+        "Glikozydy fenolowe (salicyna, populina - działają jak aspiryna)",
+        "Flawonoidy",
+        "Garbniki",
+        "Olejki eteryczne"
+      ],
+      "wlasciwości": "Przeciwgorączkowe, przeciwbólowe, przeciwzapalne, moczopędne, odkażające drogi moczowe.",
+      "czas_zbioru": "Marzec - Kwiecień."
+    },
+    "pączki": {
+      "nazwa_surowca": "Gemmae Populi",
+      "wlasciwości": "Silnie antybiotyczne, wykrztuśne; stosowane w maściach na bóle stawów.",
+      "czas_zbioru": "Luty - Marzec (przed pęknięciem)."
+    }
+  },
+
+  "zastosowanie": {
+    "medyczne": "Gorączka, przeziębienie, reumatyzm, artretyzm, zapalenie pęcherza, przerost prostaty (pomocniczo), nerwobóle.",
+    "kulinarne": "BRAK. Kora jest bardzo gorzka, choć jadalna w sytuacjach survivalowych (po wysuszeniu i zmieleniu jako dodatek do mąki).",
+    "ogrodowe": "Szybkie tworzenie osłon przeciwwietrznych i rekultywacja nieużytków. Jesienią liście przebarwiają się na piękny, złoty kolor.",
+    "rzemieslnicze": "Drewno osikowe jest lekkie i miękkie. To najlepszy surowiec do produkcji zapałek, patyczków do lodów oraz gontów (nie pęka pod wpływem słońca)."
+  },
+
+  "interakcje": "Nasila działanie niesteroidowych leków przeciwzapalnych (NLPZ). Może zwiększać ryzyko krwawień przy stosowaniu leków przeciwzakrzepowych.",
+
+  "ciekawostki": [
+    "Osika tworzy systemy klonalne – całe gaje mogą być jednym organizmem połączonym wspólnym systemem korzeniowym. Najstarszy taki system (Pando w USA) ma ok. 80 000 lat.",
+    "W medycynie ludowej wierzono, że osika 'odciąga ból', dlatego przykładano kawałki drewna do bolących miejsc.",
+    "Powiedzenie 'drżeć jak osika' ma podłoże biologiczne – ogonek liściowy jest spłaszczony prostopadle do blaszki liścia, co wywołuje turbulencje przy najmniejszym ruchu powietrza.",
+    "Z pączków osiki pszczoły zbierają substancje żywiczne, które służą im do produkcji propolisu.",
+    "W chrześcijańskiej legendzie osika drży ze wstydu, bo z jej drewna rzekomo wykonano krzyż Chrystusa (choć botanicznie jest to mało prawdopodobne w tamtym regionie)."
+  ],
+
+  "permakultura": {
+    "funkcje": [
+      "Producent ogromnej ilości biomasy (szybki wzrost).",
+      "Naturalny filtr zanieczyszczeń powietrza.",
+      "Siedlisko dla rzadkich gatunków owadów i grzybów.",
+      "Służy jako 'drzewo-niania' dla wolniej rosnących gatunków dąbrowy."
+    ],
+    "gildie": [
+      { "nazwa": "Świerk pospolity", "rola": "Osika osłania młode świerki przed słońcem i mrozem." },
+      { "nazwa": "Kozlarz czerwony", "rola": "Grzyb ten żyje w ścisłej symbiozie mikoryzowej z osiką." }
+    ]
+  },
+
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Zbiór pączków",
+        "miesiace": [2, 3],
+        "opis": "Zbieranie lepkich, pachnących pączków z gałęzi powalonych przez wiatr.",
+        "faza_ksiezyca": "Księżyc przybywający"
+      }
+    ]
+  },
+
+  "przepisy_medyczne": [
+    {
+      "tytul": "Odwar z kory 'Leśna Aspiryna'",
+      "typ": "medyczne",
+      "metoda": "odwar",
+      "tagi": ["gorączka", "ból", "stawy", "przeziębienie"],
+      "skladniki": [
+        "Suszona kora osiki: 1 łyżka stołowa",
+        "Woda: 250 ml"
+      ],
+      "sposob_przygotowania": [
+        "Korę zalać wodą i gotować 10-15 minut.",
+        "Odstawić na 20 minut, przecedzić."
+      ],
+      "dawkowanie": "Pić 2-3 razy dziennie po pół szklanki przy gorączce lub bólach reumatycznych.",
+      "uwagi": "Smak jest bardzo gorzki, można dodać miodu.",
+      "roslina": "Topola osika",
+      "slug": "topola_osika"
+    }
+  ],
+  "ostrzezenia": "Nie stosować u osób uczulonych na salicylany (aspirynę). Nie podawać dzieciom poniżej 12 roku życia (ryzyko zespołu Reye'a, podobnie jak przy aspirynie)."
+}

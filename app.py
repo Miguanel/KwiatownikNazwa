@@ -75,7 +75,8 @@ def load_user(user_id):
 
 def get_plant_data(pid):
     # Zakładam, że Twoja ścieżka wygląda tak:
-    path = os.path.join('data/plants', f'{pid}.json')
+    slug = pid.lower().replace(" ", "_")
+    path = os.path.join('data\\plants', f'{slug}.json')
 
     if not os.path.exists(path):
         print(f"BŁĄD: Plik {path} nie istnieje!")
