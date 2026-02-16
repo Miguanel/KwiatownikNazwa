@@ -87,7 +87,6 @@ def normalize_slug(text):
 def get_plant_data(pid):
     # Zakładam, że Twoja ścieżka wygląda tak:
     slug = normalize_slug(pid)
-    slug = slug.lower().replace(" ", "_")
     path = os.path.join('data', 'plants', f'{slug}.json')
 
     if not os.path.exists(path):
