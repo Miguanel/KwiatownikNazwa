@@ -37,22 +37,22 @@
                 <div class="p-3">
 
                     <div class="d-flex justify-content-between align-items-start mb-3 border-bottom border-secondary-subtle pb-2">
-                        <span style="min-width: 140px; font-weight: bold; color: #2d5a27;">☀️ Stanowisko:</span>
+                        <span style="min-width: 140px; font-weight: bold; color: #2d5a27;">Stanowisko:</span>
                         <span style="text-align: right; font-weight: 600; line-height: 1.3;">{{ plant.wymagania.stanowisko }}</span>
                     </div>
 
                     <div class="d-flex justify-content-between align-items-start mb-3 border-bottom border-secondary-subtle pb-2">
-                        <span style="min-width: 100px; font-weight: bold; color: #2d5a27;">🌱 Gleba:</span>
+                        <span style="min-width: 100px; font-weight: bold; color: #2d5a27;">Gleba:</span>
                         <span style="text-align: right; font-weight: 600; line-height: 1.3;">{{ plant.wymagania.gleba }}</span>
                     </div>
 
                     <div class="d-flex justify-content-between align-items-start mb-3 border-bottom border-secondary-subtle pb-2">
-                        <span style="min-width: 100px; font-weight: bold; color: #2d5a27;">💧 Woda:</span>
+                        <span style="min-width: 100px; font-weight: bold; color: #2d5a27;">Woda:</span>
                         <span style="text-align: right; font-weight: 600; line-height: 1.3;">{{ plant.wymagania.woda }}</span>
                     </div>
 
                     <div class="d-flex justify-content-between align-items-start">
-                        <span style="min-width: 160px; font-weight: bold; color: #2d5a27;">❄️ Mrozoodporność:</span>
+                        <span style="min-width: 160px; font-weight: bold; color: #2d5a27;">Mrozoodporność:</span>
                         <span style="text-align: right; font-weight: 600; line-height: 1.3;">{{ plant.wymagania.mrozoodpornosc }}</span>
                     </div>
 
@@ -89,7 +89,7 @@
     <hr style="margin: 50px 0; border-top: 1px double #d1c7a7;">
 
     <section class="morphology-section mb-5">
-        <h2 style="text-align: center; margin-bottom: 30px;">🌿 Surowce Zielarskie</h2>
+        <h2 style="text-align: center; margin-bottom: 30px;">Surowce Zielarskie</h2>
         <div class="parts-grid">
             {% for klucz, dane in plant.czesci_rosliny.items() %}
             <div class="part-card">
@@ -103,7 +103,7 @@
                 </div>
 
                 <div class="ingredients-box">
-                    <strong>🧪 Składniki aktywne:</strong>
+                    <strong>Składniki aktywne:</strong>
                     <div class="d-flex flex-wrap gap-1 mt-1">
                         {% if dane.skladniki_aktywne is string %}
                             <span class="chem-tag">{{ dane.skladniki_aktywne }}</span>
@@ -131,7 +131,7 @@
 
     {% if plant.zastosowanie %}
     <section class="mb-5">
-        <h2 style="text-align: center; margin-bottom: 30px;">🛠️ Zastosowanie Praktyczne</h2>
+        <h2 style="text-align: center; margin-bottom: 30px;">Zastosowanie Praktyczne</h2>
         <div class="row g-4">
             <div class="col-md-6">
                 <div class="use-card h-100">
@@ -185,7 +185,7 @@
 
     <div class="row g-5 mb-5">
         <div class="col-lg-6">
-            <h3 class="section-title">📅 Kalendarz Biodynamiczny</h3>
+            <h3 class="section-title">Kalendarz Biodynamiczny</h3>
             <div class="calendar-list">
                 {% for zadanie in plant.kalendarz_ogrodnika.zadania %}
                 <div class="calendar-item mb-3 p-3 bg-white border">
@@ -214,7 +214,7 @@
         </div>
 
         <div class="col-lg-6">
-            <h3 class="section-title">🌳 Permakultura</h3>
+            <h3 class="section-title">Permakultura</h3>
             <div class="bg-white p-4 border h-100">
                 <p><strong>Funkcje w ekosystemie:</strong></p>
                 <ul>
