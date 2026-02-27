@@ -217,7 +217,7 @@ def delete_comment(comment_id):
 # --- GILDIE ---
 
 
-@app.route('/gildie', methods=['GET', 'POST'])
+@app.route('/gildie/', methods=['GET', 'POST'])
 def gildie():
     all_plants_ids = get_all_plants_list()
     all_plants_data = []
@@ -285,7 +285,7 @@ def get_all_therapeutic_keywords():
     return sorted([word for word in keywords if len(word) > 3])
 
 
-@app.route('/szukaj_terapeutyczna', methods=['GET', 'POST'])
+@app.route('/szukaj_terapeutyczna/', methods=['GET', 'POST'])
 def szukaj_terapeutyczna():
     suggestions = get_all_therapeutic_keywords()  # Pobieramy słowa do autouzupełniania
     results = []
@@ -311,7 +311,7 @@ def szukaj_terapeutyczna():
 
 
 # --- LOGIKA GENERATORA ---
-@app.route('/generator', methods=['GET', 'POST'])
+@app.route('/generator/', methods=['GET', 'POST'])
 def generator():
     # 1. Przygotowanie danych o roślinach i ich częściach
     all_plants_ids = get_all_plants_list()
@@ -469,7 +469,7 @@ def load_recipes():
     return recipes
 
 
-@app.route('/przepisy', methods=['GET'])
+@app.route('/przepisy/', methods=['GET'])
 def przepisy():
     query = request.args.get('q', '').lower().strip()
     all_recipes = load_recipes()
