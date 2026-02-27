@@ -138,7 +138,6 @@
         background-color: #e9f0e8;
     }
 
-    /* Nowe style dla dodatkowych informacji w modalu */
     .info-tag {
         display: inline-block;
         background: #fff;
@@ -160,30 +159,38 @@
     </header>
 
     <div class="search-container">
-        <form action="{{ url_for('przepisy') }}" method="GET" class="position-relative">
+        <form id="recipeSearchForm" class="position-relative">
             <label for="recipeSearch" style="font-weight: bold; color: #3e4a3d; margin-bottom: 5px; display: block;">
                 Wyszukaj w księdze przepisów:
             </label>
             <div class="input-group">
                 <input type="text"
-                       name="q"
                        id="recipeSearch"
                        class="form-control retro-input"
                        placeholder="Wpisz składnik (np. mięta) lub dolegliwość (np. trawienie)..."
-                       value="{{ query }}"
                        autocomplete="off">
-                <button type="submit" class="btn-green" style="border: 1px solid #3e4a3d; border-left: none;">SZUKAJ</button>
+<!--                <button type="submit" class="btn-green" style="border: 1px solid #3e4a3d; border-left: none;">SZUKAJ</button>-->
             </div>
             <div id="suggestionsList" class="list-group position-absolute w-100" style="z-index: 1000; display: none;"></div>
         </form>
     </div>
 
-    <div class="row g-4">
+    <div id="noResultsMessage" class="col-12 text-center py-5" style="display: none;">
+        <div style="background: #fff; padding: 30px; border: 1px dashed #d1c7a7;">
+            <h3 style="color: #666;">Brak wyników w księdze.</h3>
+            <p>Nie znaleziono przepisu dla wpisanej frazy.</p>
+            <button onclick="clearSearch()" class="btn-green">Wyczyść i pokaż wszystko</button>
+        </div>
+    </div>
+
+    <div class="row g-4" id="recipesGrid">
         {% if results %}
             {% for recipe in results %}
-            <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-                <div class="recipe-card">
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch recipe-wrapper">
 
+                <div class="d-none search-data">{{ recipe | string | lower }}</div>
+
+                <div class="recipe-card w-100">
                     <div style="display: flex; justify-content: space-between; align-items: start;">
                         {% if recipe.typ == 'medyczne' %}
                             <span class="recipe-stamp stamp-med">⚕ Apteka</span>
@@ -241,12 +248,9 @@
                                 {% if recipe.cechy %}
                                     <div style="margin-bottom: 10px;">
                                         <strong style="color: #3e4a3d;">Cechy sensoryczne:</strong><br>
-
-                                        {# SPRAWDZENIE: Czy to tekst (string)? #}
                                         {% if recipe.cechy is string %}
                                             <span class="info-tag">{{ recipe.cechy }}</span>
                                         {% else %}
-                                            {# Jeśli to lista, robimy pętlę #}
                                             {% for c in recipe.cechy %}
                                                 <span class="info-tag">{{ c }}</span>
                                             {% endfor %}
@@ -257,12 +261,9 @@
                                 {% if recipe.wlasciwosci %}
                                     <div>
                                         <strong style="color: #2d5a27;">Właściwości:</strong><br>
-
-                                        {# SPRAWDZENIE: Czy to tekst (string)? #}
                                         {% if recipe.wlasciwosci is string %}
                                             <span class="info-tag" style="background: #e8f5e9; border-color: #c8e6c9;">{{ recipe.wlasciwosci }}</span>
                                         {% else %}
-                                            {# Jeśli to lista, robimy pętlę #}
                                             {% for w in recipe.wlasciwosci %}
                                                 <span class="info-tag" style="background: #e8f5e9; border-color: #c8e6c9;">{{ w }}</span>
                                             {% endfor %}
@@ -284,7 +285,6 @@
 
                                 <div class="col-lg-7">
                                     <h4 style="color: #3e4a3d; margin-top: 0;">🔥 Przygotowanie</h4>
-
                                     <div style="font-size: 1.05rem; line-height: 1.7;">
                                         {% if recipe.sposob_przygotowania is string %}
                                             <p style="white-space: pre-line;">{{ recipe.sposob_przygotowania }}</p>
@@ -326,40 +326,72 @@
                 </div>
             </div>
             {% endfor %}
-
-        {% else %}
-            {% if query %}
-            <div class="col-12 text-center py-5">
-                <div style="background: #fff; padding: 30px; border: 1px dashed #d1c7a7;">
-                    <h3 style="color: #666;">Brak wyników w księdze.</h3>
-                    <p>Nie znaleziono przepisu dla frazy: <strong>{{ query }}</strong></p>
-                    <a href="{{ url_for('przepisy') }}" class="btn-green">Wyczyść i pokaż wszystko</a>
-                </div>
-            </div>
-            {% endif %}
         {% endif %}
     </div>
 </div>
 
 <script>
+    // --- LOKALNA WYSZUKIWARKA I AUTOUZUPEŁNIANIE ---
+
+    const searchForm = document.getElementById('recipeSearchForm');
     const searchInput = document.getElementById('recipeSearch');
     const suggestionsList = document.getElementById('suggestionsList');
-    let keywords = [];
+    const recipeWrappers = document.querySelectorAll('.recipe-wrapper');
+    const noResultsMessage = document.getElementById('noResultsMessage');
 
-    // Pobierz słowa przy starcie
-    fetch('/api/recipe_suggestions')
-        .then(r => r.json())
-        .then(data => keywords = data)
-        .catch(err => console.error("Błąd ładowania podpowiedzi:", err));
+    let keywords = new Set();
+    const stopWords = ['w', 'z', 'i', 'o', 'a', 'do', 'na', 'po', 'ze', 'za', 'się', 'lub', 'jak', 'ml', 'g', 'kg', 'dag', 'lyz', 'łyż', 'łyżka', 'łyżeczka', 'szklanki', 'szklanka', 'proporcja', 'ok', 'szt', 'sztuk', 'litr', 'gram', 'często', 'bardzo', 'jest'];
 
+    // Budowanie bazy słów kluczowych bezpośrednio z treści wygenerowanej przez Jinja
+    recipeWrappers.forEach(wrapper => {
+        const rawText = wrapper.querySelector('.search-data').textContent;
+        // Czyszczenie i rozdzielanie tekstu na słowa
+        const words = rawText.replace(/[^\w\sęóąśłżźćń]/gi, '').split(/\s+/);
+
+        words.forEach(word => {
+            if (word.length > 2 && !!word.match(/^[a-z]+$/i) && !stopWords.includes(word)) {
+                keywords.add(word);
+            }
+        });
+    });
+
+    const keywordsArray = Array.from(keywords).sort();
+
+    // Filtrowanie na bieżąco (ukrywanie/pokazywanie kart)
+    function filterRecipes(query) {
+        let visibleCount = 0;
+
+        recipeWrappers.forEach(wrapper => {
+            const dataText = wrapper.querySelector('.search-data').textContent;
+
+            if (dataText.includes(query)) {
+                wrapper.classList.remove('d-none');
+                visibleCount++;
+            } else {
+                wrapper.classList.add('d-none');
+            }
+        });
+
+        if (visibleCount === 0) {
+            noResultsMessage.style.display = 'block';
+        } else {
+            noResultsMessage.style.display = 'none';
+        }
+    }
+
+    // Obsługa wpisywania i podpowiedzi
     searchInput.addEventListener('input', function() {
-        const val = this.value.toLowerCase();
+        const val = this.value.toLowerCase().trim();
         suggestionsList.innerHTML = '';
         suggestionsList.style.display = 'none';
 
+        // Uruchamiamy filtrowanie kart na żywo
+        filterRecipes(val);
+
         if (val.length < 2) return;
 
-        const filtered = keywords.filter(k => k.toLowerCase().includes(val)).slice(0, 6);
+        // Budowanie listy podpowiedzi lokalnie
+        const filtered = keywordsArray.filter(k => k.includes(val)).slice(0, 6);
 
         if (filtered.length > 0) {
             suggestionsList.style.display = 'block';
@@ -373,16 +405,29 @@
                 btn.onclick = () => {
                     searchInput.value = word;
                     suggestionsList.style.display = 'none';
-                    searchInput.parentElement.parentElement.submit();
+                    filterRecipes(word);
                 };
                 suggestionsList.appendChild(btn);
             });
         }
     });
 
+    // Zatrzymanie przeładowania przy enterze
+    searchForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        filterRecipes(searchInput.value.toLowerCase().trim());
+        suggestionsList.style.display = 'none';
+    });
+
+    // Ukrywanie podpowiedzi przy kliknięciu gdzie indziej
     document.addEventListener('click', e => {
         if (e.target !== searchInput) suggestionsList.style.display = 'none';
     });
+
+    function clearSearch() {
+        searchInput.value = '';
+        filterRecipes('');
+    }
 </script>
 
 {% endblock %}

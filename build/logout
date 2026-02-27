@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwiatownik - Cyfrowy Zielnik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body { font-family: 'Crimson Text', serif; background-color: #f4f1ea; color: #2c2c2c; margin: 0; }
+        nav { background-color: #3e4a3d; color: white; padding: 1rem; display: flex; justify-content: space-between; }
+        nav a { color: white; text-decoration: none; margin: 0 10px; }
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .flash { padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 4px; }
+        .flash-success { background-color: #d4edda; color: #155724; }
+        .flash-danger { background-color: #f8d7da; color: #721c24; }
+        footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #666; }
+    </style>
+    <style>
+        /* Nadpisanie Bootstrapa, żeby nie psuł tła i fontów */
+        body {
+            font-family: 'Crimson Text', serif;
+            background-color: #f4f1ea;
+            color: #2c2c2c;
+            margin: 0;
+        }
+        /* Reszta Twoich stylów lokalnych z base.html... */
+        nav { background-color: #3e4a3d; color: white; padding: 1rem; display: flex; justify-content: space-between; }
+        nav a { color: white; text-decoration: none; margin: 0 10px; }
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .flash { padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 4px; }
+        .flash-success { background-color: #d4edda; color: #155724; }
+        .flash-danger { background-color: #f8d7da; color: #721c24; }
+        footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #666; }
+
+        /* FIX dla linków w nawigacji (Bootstrap lubi je zmieniać na niebieskie) */
+        nav a { color: white !important; text-decoration: none; }
+        a { text-decoration: none; color: inherit; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div>
+        <a href="/"><strong>🌿 Kwiatownik</strong></a>
+        <a href="/generator"><strong>🌿 Generatory</strong></a>
+        <a href="/przepisy"><strong>🌿 Przepisy</strong></a>
+        <a href="/gildie"><strong>🌿 Gildie</strong></a>
+        <a href="#" class="frozen-feature">Wszystkie Komentarze</a>
+    </div>
+    <div class="frozen-feature" title="Logowanie wyłączone w wersji statycznej">
+        <a href="#">Logowanie</a>
+        <a href="#">Rejestracja</a>
+    </div>
+</nav>
+
+<div class="container">
+    
+      
+    
+
+    
+<header style="text-align: center; margin-bottom: 40px;">
+    <h1>Kwiatownik: Encyklopedia Roślin Europy</h1>
+    <p style="font-style: italic;">"Odkryj tajemnice flory Środkowej Europy – od tradycyjnych ziół po rośliny zapomniane."</p>
+</header>
+
+<section>
+    <h2>Spis roślin w bazie</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px;">
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">babka lancetowata</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/babka_lancetowata" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">bez czarny</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/bez_czarny" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">borowka czarna</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/borowka_czarna" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">brzoza brodawkowata</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/brzoza_brodawkowata" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">buk zwyczajny</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/buk_zwyczajny" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">chmiel zwyczajny</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/chmiel_zwyczajny" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">cykoria podroznik</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/cykoria_podroznik" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">czeremcha zwyczajna</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/czeremcha_zwyczajna" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">czosnek niedzwiezi</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/czosnek_niedzwiezi" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">dab bezszypulkowy</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/dab_bezszypulkowy" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">dab czerwony</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/dab_czerwony" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">dab szypulkowy</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/dab_szypulkowy" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">dzika roza</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/dzika_roza" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">dziurawiec zwyczajny</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/dziurawiec_zwyczajny" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">fiolek trojbarwny</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/fiolek_trojbarwny" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">glistnik jaskolcze ziele</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/glistnik_jaskolcze_ziele" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">glog</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/glog" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">grab pospolity</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/grab_pospolity" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">jalowiec pospolity</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/jalowiec_pospolity" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">jarzab pospolity</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/jarzab_pospolity" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">jasnota biala</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/jasnota_biala" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">jesion wyniosly</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/jesion_wyniosly" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">kalina koralowa</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/kalina_koralowa" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">kasztanowiec zwyczajny</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/kasztanowiec_zwyczajny" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">kocanki piaskowe</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/kocanki_piaskowe" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">kozlek lekarski</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/kozlek_lekarski" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">krwawnik pospolity</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/krwawnik_pospolity" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">leszczyna</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/leszczyna" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">lipa drobnolistna</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/lipa_drobnolistna" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">lopian mniejszy</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/lopian_mniejszy" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">lopian wiekszy</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/lopian_wiekszy" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">macierzanka piaskowa</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/macierzanka_piaskowa" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">malina wlasciwa</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/malina_wlasciwa" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">marzanka</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/marzanka" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">mniszek lekarski</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/mniszek_lekarski" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">modrzew europejski</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/modrzew_europejski" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">nawloc</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/nawloc" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">niecierpek</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/niecierpek" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">olcha czarna</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/olcha_czarna" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">piolun</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/piolun" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">podbial pospolity</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/podbial_pospolity" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">pokrzywa zwyczajna</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/pokrzywa_zwyczajna" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">poziomka</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/poziomka" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">przylaszczka pospolita</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/przylaszczka_pospolita" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">przytulia czepna</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/przytulia_czepna" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">rokitnik zwyczajny</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/rokitnik_zwyczajny" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">rumianek pospolity</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/rumianek_pospolity" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">skrzyp polny</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/skrzyp_polny" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">sosna zwyczajna</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/sosna_zwyczajna" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">swierk pospolity</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/swierk_pospolity" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">tarnina</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/tarnina" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">tasznik pospolity</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/tasznik_pospolity" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">topola osika</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/topola_osika" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">wiaz pospolity</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/wiaz_pospolity" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">wierzba biala</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/wierzba_biala" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">wrotycz pospolity</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/wrotycz_pospolity" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
+            <h3 style="margin-top: 0; text-transform: capitalize;">zywokost lekarski</h3>
+            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
+            <a href="/plant/zywokost_lekarski" 
+               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
+               Czytaj więcej
+            </a>
+        </div>
+        
+    </div>
+</section>
+
+<hr style="margin: 40px 0; border: 0; border-top: 1px double #3e4a3d;">
+
+<section style="background-color: #fdfdfd; padding: 20px;">
+    <h3>O Projekcie</h3>
+    <p>
+        Kwiatownik to nie tylko baza danych, to interaktywny zielnik stworzony z myślą o pasjonatach botaniki. 
+        Każdy wpis opiera się na rzetelnych źródłach i łączy wiedzę naukową z tradycją ludową.
+    </p>
+    <ul>
+        <li><strong>Edukacja:</strong> Poznaj właściwości chemiczne i biologię roślin.</li>
+        <li><strong>Praktyka:</strong> Skorzystaj z generatorów nalewek i mieszanek ziołowych.</li>
+        <li><strong>Społeczność:</strong> Dziel się swoimi spostrzeżeniami w sekcji komentarzy.</li>
+    </ul>
+</section>
+
+</div>
+
+<footer>
+    <p>&copy; 1396 Kwiatownik - Akademicki Projekt Zielnika</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<div id="frozenModal" class="frozen-modal-overlay">
+    <div class="frozen-modal-content">
+        <span class="frozen-modal-close" onclick="closeFrozenModal()">&times;</span>
+        <h3 style="color: #2d5a27;"><i class="bi bi-info-circle"></i> Funkcja wstrzymana</h3>
+        <p class="mt-3">
+            Aby aplikacja mogła być dostępna za darmo i działać błyskawicznie, przeszliśmy na wersję statyczną.
+            Moduł logowania i komentarzy jest obecnie <strong>wyłączony</strong>.
+        </p>
+        <p>
+            Jeśli projekt Ci się podoba i chcesz wesprzeć jego rozwój, możesz postawić mi wirtualną kawę! 🌱
+        </p>
+        <a href="https://buycoffee.to/miguana" target="_blank" class="btn btn-warning mt-3 fw-bold" style="background-color: #d4a017; border: none; color: white; padding: 10px 20px;">
+            <i class="bi bi-cup-hot"></i> Postaw Kawę
+        </a>
+    </div>
+</div>
+
+<script>
+    const frozenElements = document.querySelectorAll('.frozen-feature');
+    const modal = document.getElementById('frozenModal'); // Jeśli nie ma HTMLa wyżej, to tutaj wyskakuje Twój błąd (null)
+
+    frozenElements.forEach(el => {
+        el.addEventListener('click', function(e) {
+            e.preventDefault();
+            if(modal) { // Zabezpieczenie, żeby skrypt nie "wybuchał"
+                modal.style.display = "block";
+            } else {
+                console.error("Nie znaleziono okienka frozenModal w kodzie HTML!");
+            }
+        });
+    });
+
+    function closeFrozenModal() {
+        if(modal) modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            closeFrozenModal();
+        }
+    }
+</script>
+
+</body>
+</html>

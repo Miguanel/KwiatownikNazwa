@@ -1,0 +1,2161 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwiatownik - Cyfrowy Zielnik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body { font-family: 'Crimson Text', serif; background-color: #f4f1ea; color: #2c2c2c; margin: 0; }
+        nav { background-color: #3e4a3d; color: white; padding: 1rem; display: flex; justify-content: space-between; }
+        nav a { color: white; text-decoration: none; margin: 0 10px; }
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .flash { padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 4px; }
+        .flash-success { background-color: #d4edda; color: #155724; }
+        .flash-danger { background-color: #f8d7da; color: #721c24; }
+        footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #666; }
+    </style>
+    <style>
+        /* Nadpisanie Bootstrapa, żeby nie psuł tła i fontów */
+        body {
+            font-family: 'Crimson Text', serif;
+            background-color: #f4f1ea;
+            color: #2c2c2c;
+            margin: 0;
+        }
+        /* Reszta Twoich stylów lokalnych z base.html... */
+        nav { background-color: #3e4a3d; color: white; padding: 1rem; display: flex; justify-content: space-between; }
+        nav a { color: white; text-decoration: none; margin: 0 10px; }
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .flash { padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 4px; }
+        .flash-success { background-color: #d4edda; color: #155724; }
+        .flash-danger { background-color: #f8d7da; color: #721c24; }
+        footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #666; }
+
+        /* FIX dla linków w nawigacji (Bootstrap lubi je zmieniać na niebieskie) */
+        nav a { color: white !important; text-decoration: none; }
+        a { text-decoration: none; color: inherit; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div>
+        <a href="/"><strong>🌿 Kwiatownik</strong></a>
+        <a href="/generator"><strong>🌿 Generatory</strong></a>
+        <a href="/przepisy"><strong>🌿 Przepisy</strong></a>
+        <a href="/gildie"><strong>🌿 Gildie</strong></a>
+        <a href="#" class="frozen-feature">Wszystkie Komentarze</a>
+    </div>
+    <div class="frozen-feature" title="Logowanie wyłączone w wersji statycznej">
+        <a href="#">Logowanie</a>
+        <a href="#">Rejestracja</a>
+    </div>
+</nav>
+
+<div class="container">
+    
+      
+    
+
+    
+<style>
+    /* --- STYLIZACJA LABORATORIUM --- */
+    .lab-panel {
+        background: #fff;
+        border: 1px solid #d1c7a7;
+        padding: 25px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        margin-bottom: 40px;
+        border-radius: 4px;
+    }
+
+    .retro-select, .retro-input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #3e4a3d;
+        font-family: 'Crimson Text', serif;
+        font-size: 1.05rem;
+        background: #fdfaf0;
+        border-radius: 0;
+    }
+
+    /* --- KARTY WYBORU CZĘŚCI --- */
+    .parts-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .part-card-btn {
+        background: #fff;
+        border: 1px solid #d1c7a7;
+        padding: 15px;
+        text-align: left;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .part-card-btn:hover {
+        border-color: #2d5a27;
+        background: #f1f8e9;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .part-name {
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #3e4a3d;
+        margin-bottom: 8px;
+        text-transform: capitalize;
+        border-bottom: 1px dashed #ddd;
+        padding-bottom: 5px;
+    }
+
+    .part-info-block {
+        font-size: 0.85rem;
+        margin-bottom: 6px;
+        color: #555;
+        line-height: 1.3;
+    }
+    .part-info-label {
+        font-weight: bold;
+        color: #2d5a27;
+        display: block;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        margin-bottom: 2px;
+    }
+
+    /* --- TABELA --- */
+    .lab-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background: #fff;
+    }
+    .lab-table th {
+        background: #3e4a3d;
+        color: white;
+        padding: 12px;
+        text-align: left;
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 0.5px;
+        border-right: 1px solid rgba(255,255,255,0.1);
+    }
+    .lab-table td {
+        padding: 12px;
+        border-bottom: 1px solid #eee;
+        vertical-align: middle;
+    }
+    .lab-table tr:last-child {
+        border-bottom: 2px solid #3e4a3d;
+    }
+
+    .col-ingredients {
+        font-size: 0.8rem;
+        color: #555;
+        line-height: 1.3;
+        font-style: italic;
+    }
+
+    .vol-input {
+        width: 70px;
+        text-align: center;
+        border: 1px solid #ccc;
+        padding: 5px;
+        font-weight: bold;
+        font-family: 'Crimson Text', serif;
+    }
+    .vol-input:focus {
+        border-color: #2d5a27;
+        background: #f1f8e9;
+        outline: none;
+    }
+
+    /* Ikony */
+    .lock-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 1.1rem;
+        color: #ccc;
+        transition: 0.2s;
+    }
+    .lock-btn:hover { color: #888; }
+    .lock-btn.locked { color: #b8860b; }
+
+    .delete-btn {
+        border: none;
+        background: none;
+        color: #c62828;
+        font-size: 1.5rem;
+        cursor: pointer;
+        line-height: 1;
+        transition: 0.2s;
+    }
+    .delete-btn:hover { color: #ff0000; transform: scale(1.2); }
+
+    /* STYL OSTRZEŻENIA (Trójkąt) */
+    .warning-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #d32f2f;
+        font-size: 1.3rem;
+        margin-left: 10px;
+        vertical-align: middle;
+        animation: pulse 2s infinite;
+    }
+    .warning-btn:hover {
+        transform: scale(1.2);
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.1); opacity: 0.8; }
+        100% { transform: scale(1); opacity: 1; }
+    }
+
+    .filter-box {
+        background: #e9f0e8;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-left: 5px solid #3e4a3d;
+    }
+</style>
+
+<div class="container">
+    <header style="text-align: center; margin-bottom: 40px;">
+        <h1>Laboratorium Zielarskie</h1>
+        <p style="font-style: italic;">"Zaprojektuj precyzyjną recepturę. System automatycznie zbilansuje proporcje."</p>
+    </header>
+
+    <div class="lab-panel">
+        <h3 style="margin-top: 0; color: #2d5a27; border-bottom: 1px dashed #d1c7a7; padding-bottom: 10px;">1. Parametry i Składniki</h3>
+
+        <div class="row g-4 align-items-end mb-4">
+            <div class="col-md-6">
+                <label><strong>Docelowa Objętość (ml):</strong></label>
+                <input type="number" id="totalVolume" value="500" step="50" class="retro-input" oninput="recalculate()">
+            </div>
+            <div class="col-md-6">
+                <label><strong>Typ Ekstrakcji (Proporcja):</strong></label>
+                <select id="ratio" class="retro-select" onchange="recalculate()">
+                    <option value="5">1:5 (Nalewka klasyczna)</option>
+                    <option value="10">1:10 (Nalewka lekka / Odwar)</option>
+                    <option value="3">1:3 (Intrakt mocny)</option>
+                    <option value="1">1:1 (Alkoholatura)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="filter-box">
+            <label style="font-weight: bold; color: #3e4a3d;">🔍 Szukaj po właściwościach (np. uspokajające):</label>
+            <input type="text" id="propSearch" list="propList" class="retro-input" placeholder="Wpisz efekt, którego szukasz..." style="margin-top: 5px;">
+            <datalist id="propList">
+                
+                    <option value="&#39;czerwonego">
+                
+                    <option value="(akwaretyczne">
+                
+                    <option value="(antyneuralgiczne)">
+                
+                    <option value="(badania">
+                
+                    <option value="(bez">
+                
+                    <option value="(blokują">
+                
+                    <option value="(depurativum)">
+                
+                    <option value="(depuratywne)">
+                
+                    <option value="(dym">
+                
+                    <option value="(działanie">
+                
+                    <option value="(hamuje">
+                
+                    <option value="(karmi">
+                
+                    <option value="(leczenie">
+                
+                    <option value="(mięśnie">
+                
+                    <option value="(mocniej">
+                
+                    <option value="(niu">
+                
+                    <option value="(obniża">
+                
+                    <option value="(odbudowa">
+                
+                    <option value="(okłady).">
+                
+                    <option value="(oleum">
+                
+                    <option value="(pobudza">
+                
+                    <option value="(przeciwszkorbutowe).">
+                
+                    <option value="(płukania)">
+                
+                    <option value="(rekonwalescencja).">
+                
+                    <option value="(rozrzedza">
+                
+                    <option value="(rozrzedzają">
+                
+                    <option value="(silne">
+                
+                    <option value="(spazmolityczne)">
+                
+                    <option value="(szczególnie">
+                
+                    <option value="(tonik">
+                
+                    <option value="(tradycyjnie">
+                
+                    <option value="(trombocytów).">
+                
+                    <option value="(udrażnia">
+                
+                    <option value="(układ">
+                
+                    <option value="(usuwa">
+                
+                    <option value="(wszawica">
+                
+                    <option value="(wycisza">
+                
+                    <option value="(wzmacnia">
+                
+                    <option value="(zapalenie">
+                
+                    <option value="(zawierają">
+                
+                    <option value="(zwiększa">
+                
+                    <option value="(zwęża">
+                
+                    <option value="(zwłaszcza">
+                
+                    <option value="(łagodny">
+                
+                    <option value="adaptogen">
+                
+                    <option value="aftach">
+                
+                    <option value="aktywności">
+                
+                    <option value="akwarystyce">
+                
+                    <option value="anabolicznie">
+                
+                    <option value="analogiczne">
+                
+                    <option value="anemii)">
+                
+                    <option value="antyandrogenne">
+                
+                    <option value="antybakteryjne.">
+                
+                    <option value="antybiotyczne">
+                
+                    <option value="antyoksydacyjne">
+                
+                    <option value="antyseptyczne">
+                
+                    <option value="antyseptyczne.">
+                
+                    <option value="antywirusowe">
+                
+                    <option value="apetyt.">
+                
+                    <option value="aromatazy">
+                
+                    <option value="aromatycznych">
+                
+                    <option value="atramentu">
+                
+                    <option value="autoagresję">
+                
+                    <option value="bakterie">
+                
+                    <option value="bakteriobójcze">
+                
+                    <option value="bakteriobójcze.">
+                
+                    <option value="bakteriostatyczne">
+                
+                    <option value="bakteriostatyczne.">
+                
+                    <option value="bang">
+                
+                    <option value="bardziej">
+                
+                    <option value="bezpiecznymi.">
+                
+                    <option value="biegunek.">
+                
+                    <option value="biegunkach">
+                
+                    <option value="bogata">
+                
+                    <option value="bogate">
+                
+                    <option value="bph)">
+                
+                    <option value="brodawki">
+                
+                    <option value="bóle">
+                
+                    <option value="błony">
+                
+                    <option value="cebulek">
+                
+                    <option value="celach">
+                
+                    <option value="ceniony">
+                
+                    <option value="cery">
+                
+                    <option value="chińskiej">
+                
+                    <option value="chlorków)">
+                
+                    <option value="cholesterolu">
+                
+                    <option value="chorobach">
+                
+                    <option value="chorobie">
+                
+                    <option value="chłonne)">
+                
+                    <option value="chłonny;">
+                
+                    <option value="ciężkich.">
+                
+                    <option value="ciśnienie">
+                
+                    <option value="cukier)">
+                
+                    <option value="cukru">
+                
+                    <option value="cukru.">
+                
+                    <option value="cykl">
+                
+                    <option value="czerniakiem)">
+                
+                    <option value="czyniąc">
+                
+                    <option value="czynność">
+                
+                    <option value="czyraki.">
+                
+                    <option value="czyszczenia">
+                
+                    <option value="delikatnie">
+                
+                    <option value="detoksykujące">
+                
+                    <option value="dezynfekcji">
+                
+                    <option value="dobre">
+                
+                    <option value="dostarczają)">
+                
+                    <option value="drobne">
+                
+                    <option value="drogi">
+                
+                    <option value="dróg">
+                
+                    <option value="działa">
+                
+                    <option value="działają">
+                
+                    <option value="działające">
+                
+                    <option value="działanie">
+                
+                    <option value="dzikiego">
+                
+                    <option value="dziąseł.">
+                
+                    <option value="dłoni.">
+                
+                    <option value="ekstraktów">
+                
+                    <option value="elastyczność">
+                
+                    <option value="elektrolitów)">
+                
+                    <option value="energetyczny)">
+                
+                    <option value="energii">
+                
+                    <option value="estrogenne">
+                
+                    <option value="fagina">
+                
+                    <option value="farmaceutycznych.">
+                
+                    <option value="garbarstwie">
+                
+                    <option value="garbniki).">
+                
+                    <option value="garbniki;">
+                
+                    <option value="garbnikowy.">
+                
+                    <option value="gardła.">
+                
+                    <option value="gemmoterapii">
+                
+                    <option value="glisty">
+                
+                    <option value="glukozy.">
+                
+                    <option value="gojenie">
+                
+                    <option value="gojące">
+                
+                    <option value="gojący">
+                
+                    <option value="gorycz.">
+                
+                    <option value="gorączkę">
+                
+                    <option value="gospodarkę">
+                
+                    <option value="gospodarskich.">
+                
+                    <option value="gruczołu">
+                
+                    <option value="grypy">
+                
+                    <option value="grzybobójcze.">
+                
+                    <option value="gładkie">
+                
+                    <option value="gładkie)">
+                
+                    <option value="gładką">
+                
+                    <option value="głównie">
+                
+                    <option value="główny">
+                
+                    <option value="hamowanie">
+                
+                    <option value="hamujące">
+                
+                    <option value="hamujący">
+                
+                    <option value="hemoroidów.">
+                
+                    <option value="historycznie">
+                
+                    <option value="hormonalny">
+                
+                    <option value="hormonalną.">
+                
+                    <option value="hyperici)">
+                
+                    <option value="idealne">
+                
+                    <option value="ilości">
+                
+                    <option value="immunologiczną).">
+                
+                    <option value="immunostymulujące">
+                
+                    <option value="inhalacje">
+                
+                    <option value="inhalacji">
+                
+                    <option value="inhalacji.">
+                
+                    <option value="jako">
+                
+                    <option value="jamy">
+                
+                    <option value="jałowcowy">
+                
+                    <option value="jelit">
+                
+                    <option value="jelita">
+                
+                    <option value="jelitowe).">
+                
+                    <option value="jest">
+                
+                    <option value="kamicy">
+                
+                    <option value="kaszel">
+                
+                    <option value="kaszlu)">
+                
+                    <option value="katarze">
+                
+                    <option value="kawa">
+                
+                    <option value="kawy">
+                
+                    <option value="kluczowy">
+                
+                    <option value="kofeiny).">
+                
+                    <option value="komórek)">
+                
+                    <option value="kora.">
+                
+                    <option value="kory">
+                
+                    <option value="kostną">
+                
+                    <option value="kości">
+                
+                    <option value="krajowych">
+                
+                    <option value="krew">
+                
+                    <option value="krew).">
+                
+                    <option value="krew.">
+                
+                    <option value="krokowego">
+                
+                    <option value="krwawienia">
+                
+                    <option value="krwawienia.">
+                
+                    <option value="krwi">
+                
+                    <option value="krwi.">
+                
+                    <option value="krwionośne">
+                
+                    <option value="krwionośne)">
+                
+                    <option value="krwionośnych">
+                
+                    <option value="krwiotwórcze">
+                
+                    <option value="krążenia.">
+                
+                    <option value="krążenie">
+                
+                    <option value="kurzajki">
+                
+                    <option value="kwas">
+                
+                    <option value="kwasu">
+                
+                    <option value="kąpielach">
+                
+                    <option value="kąpiele">
+                
+                    <option value="kąpieli">
+                
+                    <option value="kłykciny.">
+                
+                    <option value="leczenie">
+                
+                    <option value="leczeniu">
+                
+                    <option value="leczniczo">
+                
+                    <option value="leczniczych">
+                
+                    <option value="lekko">
+                
+                    <option value="libido">
+                
+                    <option value="liczbę">
+                
+                    <option value="limfatyczne">
+                
+                    <option value="liści">
+                
+                    <option value="liście">
+                
+                    <option value="ludowej).">
+                
+                    <option value="macicy">
+                
+                    <option value="macicy)">
+                
+                    <option value="materii">
+                
+                    <option value="maści">
+                
+                    <option value="maściach">
+                
+                    <option value="medycynie">
+                
+                    <option value="metabolizm">
+                
+                    <option value="metali">
+                
+                    <option value="miesiączkowanie">
+                
+                    <option value="miesiączkowy.">
+                
+                    <option value="mikrokrążenie">
+                
+                    <option value="minerały">
+                
+                    <option value="miąższu">
+                
+                    <option value="mięśnia">
+                
+                    <option value="mięśnie">
+                
+                    <option value="mięśniówkę">
+                
+                    <option value="moczopędne">
+                
+                    <option value="moczopędne.">
+                
+                    <option value="moczowe">
+                
+                    <option value="moczowe.">
+                
+                    <option value="moczowego">
+                
+                    <option value="moczowy)">
+                
+                    <option value="moczowych">
+                
+                    <option value="mózgowe">
+                
+                    <option value="mózgowej.">
+                
+                    <option value="mózgu">
+                
+                    <option value="mężczyzn">
+                
+                    <option value="mężczyzn.">
+                
+                    <option value="nabłonki">
+                
+                    <option value="naczynia">
+                
+                    <option value="naczynia.">
+                
+                    <option value="naczynkowej.">
+                
+                    <option value="naczyń">
+                
+                    <option value="nadmiernej">
+                
+                    <option value="najsilniejsze">
+                
+                    <option value="najsilniejszy">
+                
+                    <option value="napar">
+                
+                    <option value="napary">
+                
+                    <option value="napotne">
+                
+                    <option value="napotne;">
+                
+                    <option value="naprzemienne">
+                
+                    <option value="nasennie.">
+                
+                    <option value="nastrój.">
+                
+                    <option value="naturalny">
+                
+                    <option value="nawóz">
+                
+                    <option value="nerek">
+                
+                    <option value="nerek)">
+                
+                    <option value="nerkowej).">
+                
+                    <option value="neuroprotekcyjne.">
+                
+                    <option value="obniżają">
+                
+                    <option value="obniżające">
+                
+                    <option value="obrzęki">
+                
+                    <option value="obrębie">
+                
+                    <option value="obwodowe">
+                
+                    <option value="ochrona">
+                
+                    <option value="ochronne">
+                
+                    <option value="oczu">
+                
+                    <option value="oczyszczające">
+                
+                    <option value="oczyszczająco.">
+                
+                    <option value="oczyszczający">
+                
+                    <option value="oddechowe">
+                
+                    <option value="oddechowych">
+                
+                    <option value="odkażające">
+                
+                    <option value="odkażające.">
+                
+                    <option value="odkwaszające">
+                
+                    <option value="odporność.">
+                
+                    <option value="odtruwające">
+                
+                    <option value="odtruwające.">
+                
+                    <option value="odświeżające">
+                
+                    <option value="odżywcze">
+                
+                    <option value="ogrodnictwie.">
+                
+                    <option value="ogólnie">
+                
+                    <option value="oka.">
+                
+                    <option value="okadzeń">
+                
+                    <option value="okładów">
+                
+                    <option value="oleju&#39;">
+                
+                    <option value="oparzenia">
+                
+                    <option value="oparzenia).">
+                
+                    <option value="oraz">
+                
+                    <option value="organizm">
+                
+                    <option value="orzeszki">
+                
+                    <option value="osłaniające">
+                
+                    <option value="osłonowe">
+                
+                    <option value="osłonowo">
+                
+                    <option value="owadów.">
+                
+                    <option value="owoce).">
+                
+                    <option value="owoce.">
+                
+                    <option value="owsiki">
+                
+                    <option value="ośrodek">
+                
+                    <option value="pasożyty">
+                
+                    <option value="paznokci.">
+                
+                    <option value="paznokcie.">
+                
+                    <option value="pielęgnacji">
+                
+                    <option value="pobudliwość">
+                
+                    <option value="pobudzające">
+                
+                    <option value="podnosi">
+                
+                    <option value="podrażniania">
+                
+                    <option value="pokarm.">
+                
+                    <option value="pokarmowy">
+                
+                    <option value="pokarmowych">
+                
+                    <option value="polsce">
+                
+                    <option value="pomaga">
+                
+                    <option value="pomocne">
+                
+                    <option value="pomocniczo">
+                
+                    <option value="poprawa">
+                
+                    <option value="poprawia">
+                
+                    <option value="poprawiają">
+                
+                    <option value="poprawiające">
+                
+                    <option value="poprawiający">
+                
+                    <option value="popęd">
+                
+                    <option value="potasu">
+                
+                    <option value="potliwości">
+                
+                    <option value="potliwości.">
+                
+                    <option value="powlekające">
+                
+                    <option value="powlekające)">
+                
+                    <option value="poziom">
+                
+                    <option value="pozyskiwanie">
+                
+                    <option value="pracę">
+                
+                    <option value="prebiotyczne">
+                
+                    <option value="prebiotyczne.">
+                
+                    <option value="problemach">
+                
+                    <option value="produkcji">
+                
+                    <option value="prostatę">
+                
+                    <option value="przeciwagregacyjnie">
+                
+                    <option value="przeciwbakteryjne">
+                
+                    <option value="przeciwbakteryjne.">
+                
+                    <option value="przeciwbiegunkowe">
+                
+                    <option value="przeciwbiegunkowo">
+                
+                    <option value="przeciwbólowe">
+                
+                    <option value="przeciwcukrzycowe">
+                
+                    <option value="przeciwdepresyjne">
+                
+                    <option value="przeciwgorączkowe">
+                
+                    <option value="przeciwgorączkowe.">
+                
+                    <option value="przeciwgorączkowo">
+                
+                    <option value="przeciwgrzybicze">
+                
+                    <option value="przeciwgrzybicze.">
+                
+                    <option value="przeciwkamicze.">
+                
+                    <option value="przeciwkamienne">
+                
+                    <option value="przeciwkrwotoczne">
+                
+                    <option value="przeciwmiażdżycowe.">
+                
+                    <option value="przeciwmiażdżycowo">
+                
+                    <option value="przeciwnowotworowe">
+                
+                    <option value="przeciwnowotworowe.">
+                
+                    <option value="przeciwobrzękowe">
+                
+                    <option value="przeciwobrzękowe.">
+                
+                    <option value="przeciwpasożytnicze">
+                
+                    <option value="przeciwreumatyczne">
+                
+                    <option value="przeciwreumatyczne.">
+                
+                    <option value="przeciwskurczowe">
+                
+                    <option value="przeciwuczuleniowe">
+                
+                    <option value="przeciwwirusowe.">
+                
+                    <option value="przeciwzakrzepowe">
+                
+                    <option value="przeciwzapalne">
+                
+                    <option value="przeciwzapalne.">
+                
+                    <option value="przeciwzapalnie.">
+                
+                    <option value="przeczyszczające">
+                
+                    <option value="przeczyszczające.">
+                
+                    <option value="przemianę">
+                
+                    <option value="przemywania">
+                
+                    <option value="przepływ">
+                
+                    <option value="przerost">
+                
+                    <option value="przetworzeniu)">
+                
+                    <option value="przetłuszczających">
+                
+                    <option value="przy">
+                
+                    <option value="przyspieszające">
+                
+                    <option value="pęcherza.">
+                
+                    <option value="płciowy.">
+                
+                    <option value="płodności">
+                
+                    <option value="płukanek">
+                
+                    <option value="płukankę">
+                
+                    <option value="płytek">
+                
+                    <option value="ran.">
+                
+                    <option value="rany">
+                
+                    <option value="rany.">
+                
+                    <option value="regeneracja">
+                
+                    <option value="regeneruje">
+                
+                    <option value="regenerujące">
+                
+                    <option value="reguluje">
+                
+                    <option value="regulujące">
+                
+                    <option value="relaksacyjnych.">
+                
+                    <option value="remineralizujące">
+                
+                    <option value="reumatyzmie">
+                
+                    <option value="rozgrzewające">
+                
+                    <option value="rozkurczowe">
+                
+                    <option value="rozkurczowe.">
+                
+                    <option value="rozkładowi">
+                
+                    <option value="rozszerzają">
+                
+                    <option value="roślin).">
+                
+                    <option value="ruch">
+                
+                    <option value="rzadziej">
+                
+                    <option value="rzęsek)">
+                
+                    <option value="same">
+                
+                    <option value="serca">
+                
+                    <option value="serce">
+                
+                    <option value="sercowego">
+                
+                    <option value="siatkówce">
+                
+                    <option value="silnie">
+                
+                    <option value="silniej">
+                
+                    <option value="silny">
+                
+                    <option value="silnych">
+                
+                    <option value="siłę">
+                
+                    <option value="skoncentrowane">
+                
+                    <option value="skoncentrowane.">
+                
+                    <option value="skurczu)">
+                
+                    <option value="skórnych.">
+                
+                    <option value="skóry">
+                
+                    <option value="skóry.">
+                
+                    <option value="skórę">
+                
+                    <option value="skórę.">
+                
+                    <option value="soku">
+                
+                    <option value="soków">
+                
+                    <option value="specyficzne">
+                
+                    <option value="spojówek).">
+                
+                    <option value="sporządzania">
+                
+                    <option value="spośród">
+                
+                    <option value="stan">
+                
+                    <option value="stanach">
+                
+                    <option value="stanu">
+                
+                    <option value="stawy">
+                
+                    <option value="stawów)">
+                
+                    <option value="stawów.">
+                
+                    <option value="stosowana">
+                
+                    <option value="stosowane">
+                
+                    <option value="stosowanego">
+                
+                    <option value="stosowany">
+                
+                    <option value="stosuje">
+                
+                    <option value="stóp">
+                
+                    <option value="stłuczenia">
+                
+                    <option value="substytut">
+                
+                    <option value="superfood:">
+                
+                    <option value="surowiec">
+                
+                    <option value="suszone:">
+                
+                    <option value="syropach">
+                
+                    <option value="służą">
+                
+                    <option value="tamujące">
+                
+                    <option value="tasiemce)">
+                
+                    <option value="temperaturę)">
+                
+                    <option value="tkankę">
+                
+                    <option value="tlenu">
+                
+                    <option value="tonik">
+                
+                    <option value="tonizujące">
+                
+                    <option value="trawienie">
+                
+                    <option value="trawienie.">
+                
+                    <option value="trawiennych">
+                
+                    <option value="trawiennych.">
+                
+                    <option value="trudno">
+                
+                    <option value="trądzik)">
+                
+                    <option value="trądzikowej.">
+                
+                    <option value="tłustej">
+                
+                    <option value="ukąszenia">
+                
+                    <option value="układ">
+                
+                    <option value="układu">
+                
+                    <option value="ulega">
+                
+                    <option value="uprażeniu">
+                
+                    <option value="uspokajające">
+                
+                    <option value="uspokajające.">
+                
+                    <option value="uspokajająco">
+                
+                    <option value="ustnej.">
+                
+                    <option value="usunąć">
+                
+                    <option value="usuwanie">
+                
+                    <option value="uszczelnia">
+                
+                    <option value="uszczelniające">
+                
+                    <option value="utraty">
+                
+                    <option value="ułatwiające">
+                
+                    <option value="używana">
+                
+                    <option value="używany">
+                
+                    <option value="warzywo">
+                
+                    <option value="wewnętrzne">
+                
+                    <option value="wiatropędne">
+                
+                    <option value="wielokrotnego">
+                
+                    <option value="wieńcowe">
+                
+                    <option value="wirusów">
+                
+                    <option value="witaminizujące">
+                
+                    <option value="witaminizujące.">
+                
+                    <option value="witaminy">
+                
+                    <option value="wnikanie">
+                
+                    <option value="wody">
+                
+                    <option value="wrzody">
+                
+                    <option value="wrzodów">
+                
+                    <option value="wsparcie">
+                
+                    <option value="wspiera">
+                
+                    <option value="wspierające">
+                
+                    <option value="wspomaga">
+                
+                    <option value="wspomagające">
+                
+                    <option value="wybitnie">
+                
+                    <option value="wydalanie">
+                
+                    <option value="wydzielanie">
+                
+                    <option value="wykorzystywana">
+                
+                    <option value="wykorzystywane">
+                
+                    <option value="wykrztuśne">
+                
+                    <option value="wykrztuśne;">
+                
+                    <option value="wykwintne">
+                
+                    <option value="wymagają">
+                
+                    <option value="wypłukiwania">
+                
+                    <option value="wyrobu">
+                
+                    <option value="wysięki.">
+                
+                    <option value="wysoko">
+                
+                    <option value="wysokoenergetyczne">
+                
+                    <option value="wysokoenergetyczny">
+                
+                    <option value="wywar">
+                
+                    <option value="wyługowaniu)">
+                
+                    <option value="wyłącznie">
+                
+                    <option value="wzdęciach">
+                
+                    <option value="względu">
+                
+                    <option value="wzmacniające">
+                
+                    <option value="wzmacniający">
+                
+                    <option value="wzmacnianie">
+                
+                    <option value="wątroby">
+                
+                    <option value="węzły">
+                
+                    <option value="właściwości">
+                
+                    <option value="włosach">
+                
+                    <option value="włosowate">
+                
+                    <option value="włosowate.">
+                
+                    <option value="włosowych.">
+                
+                    <option value="włosy">
+                
+                    <option value="włosów">
+                
+                    <option value="zabronione.">
+                
+                    <option value="zapaleniu">
+                
+                    <option value="zapalnych">
+                
+                    <option value="zasypianie">
+                
+                    <option value="zatok">
+                
+                    <option value="zatok.">
+                
+                    <option value="zatruciach">
+                
+                    <option value="zewnętrzne">
+                
+                    <option value="zewnętrznie">
+                
+                    <option value="zewnętrznie.">
+                
+                    <option value="ziarninowanie">
+                
+                    <option value="zimie.">
+                
+                    <option value="zwiększa">
+                
+                    <option value="zwiększają">
+                
+                    <option value="zwyrodnieniowej">
+                
+                    <option value="łagodnie">
+                
+                    <option value="łodygi">
+                
+                    <option value="ługowania">
+                
+                    <option value="łupieżu">
+                
+                    <option value="łysienie">
+                
+                    <option value="łączną">
+                
+                    <option value="ściągające">
+                
+                    <option value="ściągające.">
+                
+                    <option value="śladowe">
+                
+                    <option value="śluz)">
+                
+                    <option value="śluzowe">
+                
+                    <option value="śluzówki">
+                
+                    <option value="śluzówkę">
+                
+                    <option value="środek">
+                
+                    <option value="świerzb)">
+                
+                    <option value="świeże:">
+                
+                    <option value="świeży">
+                
+                    <option value="świeżych">
+                
+                    <option value="źródło">
+                
+                    <option value="żołądek">
+                
+                    <option value="żołądka">
+                
+                    <option value="żołądkowego">
+                
+                    <option value="żołędziowa">
+                
+                    <option value="żucie">
+                
+                    <option value="żylaków">
+                
+                    <option value="żylne">
+                
+                    <option value="żółciopędne">
+                
+                    <option value="żółciopędne.">
+                
+                    <option value="żółciopędnie">
+                
+                    <option value="żółciotwórcze">
+                
+                    <option value="żółciowe">
+                
+                    <option value="żółciowe)">
+                
+            </datalist>
+        </div>
+
+        <div class="row g-3">
+            <div class="col-md-12">
+                <label><strong>Wybierz Gatunek Rośliny:</strong> <span id="plantCountBadge" class="badge bg-secondary">57 dostępnych</span></label>
+                <select id="plantSelector" class="retro-select">
+                    <option value="" disabled selected>-- Kliknij, aby wybrać roślinę z listy --</option>
+                    
+                        <option value="Babka lancetowata"
+                                data-parts='{"liscie": {"ingr": "Glikozydy irydoidowe (aukubina, katalpol) - dzia\u0142anie przeciwzapalne i bakteriob\u00f3jcze, \u015aluzy (do 6%) - dzia\u0142anie os\u0142aniaj\u0105ce, Garbniki (ok. 6%), Flawonoidy, Krzemionka rozpuszczalna, Witamina C i K, Sole mineralne (bogactwo cynku i boru)", "props": "Wykrztu\u015bne (rozrzedza \u015bluz), powlekaj\u0105ce drogi oddechowe, przeciwzapalne, os\u0142onowe na \u017co\u0142\u0105dek, przyspieszaj\u0105ce gojenie ran.", "warn": "Li\u015bcie po zbiorze \u0142atwo czerniej\u0105; nale\u017cy je suszy\u0107 szybko w temperaturze do 40\u00b0C."}}'
+                                data-warnings="Nie zbierać babki z poboczy dróg (akumuluje metale ciężkie i zanieczyszczenia komunikacyjne). W rzadkich przypadkach może powodować reakcje alergiczne u osób wrażliwych.">
+                            Babka lancetowata
+                        </option>
+                    
+                        <option value="Bez czarny"
+                                data-parts='{"kwiaty": {"ingr": "Flawonoidy (rutyna, kwercetyna), Kwasy fenolowe (chlorogenowy), \u015aluzy, Olejek eteryczny, Sole mineralne (potas)", "props": "Silnie napotne, obni\u017caj\u0105ce gor\u0105czk\u0119, uszczelniaj\u0105ce naczynia w\u0142osowate, wykrztu\u015bne, moczop\u0119dne.", "warn": "Nale\u017cy odcina\u0107 ca\u0142e baldachy, ale do suszenia i przetwor\u00f3w najlepiej oddzieli\u0107 same kwiaty od grubych, zielonych \u0142ody\u017cek (zawieraj\u0105 sambunigryn\u0119)."}, "owoce": {"ingr": "Antocyjany (sambucyna), Witaminy (A, C, z grupy B), Kwasy organiczne, Pektyny, Glikozydy cyjanogenne (sambunigryna - rozk\u0142ada si\u0119 w wysokiej temperaturze)", "props": "Antywirusowe (blokuj\u0105 wnikanie wirus\u00f3w grypy do kom\u00f3rek), immunostymuluj\u0105ce, przeciwb\u00f3lowe, lekko przeczyszczaj\u0105ce i odtruwaj\u0105ce.", "warn": "NIGDY nie spo\u017cywa\u0107 surowych owoc\u00f3w ani soku na zimno! Zawarta w nich sambunigryna powoduje silne nudno\u015bci, wymioty i zawroty g\u0142owy. Obr\u00f3bka termiczna (gotowanie) ca\u0142kowicie neutralizuje toksyn\u0119."}}'
+                                data-warnings="Surowe owoce i sok z surowych owoców są toksyczne! Zawsze poddawaj owoce obróbce termicznej (gotowanie, pieczenie). Nie stosować kwiatów bzu przy ostrym zapaleniu nerek.">
+                            Bez czarny
+                        </option>
+                    
+                        <option value="Borówka czarna (Jagoda)"
+                                data-parts='{"liscie": {"ingr": "Neomirtilina (tzw. ro\u015blinna insulina - obni\u017ca poziom cukru), Arbutyna (odka\u017ca drogi moczowe), Garbniki, Flawonoidy", "props": "Przeciwcukrzycowe, moczop\u0119dne, przeciwzapalne w obr\u0119bie p\u0119cherza.", "warn": "D\u0142ugotrwa\u0142e stosowanie wysokich dawek li\u015bci mo\u017ce powodowa\u0107 anemi\u0119 (ze wzgl\u0119du na garbniki)."}, "owoce": {"ingr": "Antocyjany (mirtilina - wzmacnia naczynia i wzrok), Garbniki (do 7% w \u015bwie\u017cych, wi\u0119cej w suszonych), Pektyny, Witaminy (C, B1, B2, PP, A), Kwasy organiczne", "props": "\u015awie\u017ce: lekko przeczyszczaj\u0105ce i witaminizuj\u0105ce. Suszone: silnie przeciwbiegunkowe, odka\u017caj\u0105ce jelita, poprawiaj\u0105ce mikrokr\u0105\u017cenie w siatk\u00f3wce oka.", "warn": "Nale\u017cy dok\u0142adnie my\u0107 jagody le\u015bne (ryzyko b\u0105blowicy!)."}}'
+                                data-warnings="Zawsze myj owoce leśne przed spożyciem ze względu na ryzyko zakażenia bąblowicą (Echinokokoza). Osoby z chorobą wrzodową żołądka powinny unikać świeżych jagód w dużych ilościach.">
+                            Borówka czarna (Jagoda)
+                        </option>
+                    
+                        <option value="Brzoza brodawkowata"
+                                data-parts='{"kora": {"ingr": "Betulina (nawet do 30%), Kwas betulinowy, Lupeol", "props": "Przeciwnowotworowe (badania nad czerniakiem), silnie przeciwzapalne, przeciwwirusowe.", "warn": "Py\u0142ek brzozy jest silnym alergenem wziewnym w okresie kwietnia i maja. Osoby z niedro\u017cno\u015bci\u0105 dr\u00f3g moczowych powinny skonsultowa\u0107 kuracj\u0119 z lekarzem."}, "liscie": {"ingr": "Flawonoidy (hiperozyd, kwercetyna), Saponiny, Olejek eteryczny, Garbniki, Witamina C", "props": "Silnie moczop\u0119dne (bez podra\u017cniania nerek), napotne, odtruwaj\u0105ce, przeciwreumatyczne.", "warn": "Nie stosowa\u0107 przy du\u017cych obrz\u0119kach wywo\u0142anych niewydolno\u015bci\u0105 serca."}, "paki": {"ingr": "Olejek eteryczny, \u017bywice, Flawonoidy", "props": "Silniej odka\u017caj\u0105ce drogi moczowe ni\u017c li\u015bcie, dzia\u0142aj\u0105 silnie \u017c\u00f3\u0142ciop\u0119dnie i przeciwzapalnie.", "warn": "Mog\u0105 podra\u017cnia\u0107 \u017co\u0142\u0105dek przy stosowaniu na czczo."}, "sok": {"ingr": "Sole mineralne (potas, wap\u0144, magnez, \u017celazo), Aminokwasy, Witaminy z grupy B, Naturalne cukry (fruktoza, glukoza)", "props": "Og\u00f3lnie wzmacniaj\u0105ce, regeneruj\u0105ce, poprawiaj\u0105ce metabolizm, oczyszczaj\u0105ce sk\u00f3r\u0119.", "warn": "\u015awie\u017cy sok psuje si\u0119 w ci\u0105gu 2-3 dni; nale\u017cy go przechowywa\u0107 w lod\u00f3wce lub konserwowa\u0107 alkoholem."}}'
+                                data-warnings="Pyłek brzozy jest silnym alergenem wziewnym w okresie kwietnia i maja. Osoby z niedrożnością dróg moczowych powinny skonsultować kurację z lekarzem.">
+                            Brzoza brodawkowata
+                        </option>
+                    
+                        <option value="Buk zwyczajny"
+                                data-parts='{"kora": {"ingr": "", "props": "Dzia\u0142a przeciwgor\u0105czkowo i przeciwbiegunkowo (ze wzgl\u0119du na garbniki).", "warn": "Surowa bukiew w du\u017cych ilo\u015bciach mo\u017ce by\u0107 toksyczna dla dzieci i zwierz\u0105t domowych (fagina). Zawsze poddawaj orzeszki obr\u00f3bce termicznej."}, "liscie": {"ingr": "Kwercetyna, Garbniki, \u015aluzy, Kwasy organiczne", "props": "Przeciwzapalne, antyseptyczne, \u0142agodnie \u015bci\u0105gaj\u0105ce. \u017bucie \u015bwie\u017cych li\u015bci pomaga przy aftach i zapaleniu dzi\u0105se\u0142.", "warn": "Surowa bukiew w du\u017cych ilo\u015bciach mo\u017ce by\u0107 toksyczna dla dzieci i zwierz\u0105t domowych (fagina). Zawsze poddawaj orzeszki obr\u00f3bce termicznej."}, "owoce_bukiew": {"ingr": "Olej t\u0142usty (do 40%), Skrobia, Bia\u0142ka, Fagina (alkaloid toksyczny w du\u017cych ilo\u015bciach)", "props": "Wysokoenergetyczny pokarm. Po upra\u017ceniu fagina ulega rozk\u0142adowi, czyni\u0105c orzeszki bezpiecznymi.", "warn": "Nie je\u015b\u0107 du\u017cej ilo\u015bci surowych orzeszk\u00f3w \u2013 fagina mo\u017ce wywo\u0142a\u0107 zawroty g\u0142owy i halucynacje."}}'
+                                data-warnings="Surowa bukiew w dużych ilościach może być toksyczna dla dzieci i zwierząt domowych (fagina). Zawsze poddawaj orzeszki obróbce termicznej.">
+                            Buk zwyczajny
+                        </option>
+                    
+                        <option value="Bylica piołun"
+                                data-parts='{"ziele": {"ingr": "Glicerydy gorczyczne (absyntyna, anabsyntyna), Olejek eteryczny (bogaty w tujon, izotujon, chamazulen), Flawonoidy (artemetyna), Garbniki, Sole mineralne (potas)", "props": "Silnie \u017c\u00f3\u0142ciop\u0119dne, pobudzaj\u0105ce wydzielanie sok\u00f3w trawiennych, rozkurczowe, przeciwpaso\u017cytnicze, odka\u017caj\u0105ce, poprawiaj\u0105ce apetyt.", "warn": "Tujon w nadmiarze jest neurotoksyczny (powoduje drgawki i halucynacje). Stosowa\u0107 kr\u00f3tkotrwale!"}}'
+                                data-warnings="BEZWZGLĘDNIE NIE STOSOWAĆ W CIĄŻY I PODCZAS KARMIENIA (działa poronnie i przechodzi do mleka, czyniąc je gorzkim). Zakaz stosowania przy wrzodach żołądka i dwunastnicy oraz przy skłonnościach do krwawień. Długotrwałe stosowanie może prowadzić do uzależnienia i uszkodzeń układu nerwowego.">
+                            Bylica piołun
+                        </option>
+                    
+                        <option value="Chmiel zwyczajny"
+                                data-parts='{"lupulina": {"ingr": "", "props": "Skoncentrowane dzia\u0142anie uspokajaj\u0105ce i hamuj\u0105ce pop\u0119d p\u0142ciowy.", "warn": "Ze wzgl\u0119du na dzia\u0142anie na uk\u0142ad hormonalny, chmiel nie jest zalecany ch\u0142opcom w okresie dojrzewania oraz m\u0119\u017cczyznom z zaburzeniami erekcji. Mo\u017ce powodowa\u0107 nadmiern\u0105 senno\u015b\u0107 \u2013 nie stosowa\u0107 przed prowadzeniem pojazd\u00f3w."}, "pedy_wiosenne": {"ingr": "", "props": "Wykwintne warzywo, bogate w witaminy i minera\u0142y, dzia\u0142aj\u0105ce lekko oczyszczaj\u0105co.", "warn": "Ze wzgl\u0119du na dzia\u0142anie na uk\u0142ad hormonalny, chmiel nie jest zalecany ch\u0142opcom w okresie dojrzewania oraz m\u0119\u017cczyznom z zaburzeniami erekcji. Mo\u017ce powodowa\u0107 nadmiern\u0105 senno\u015b\u0107 \u2013 nie stosowa\u0107 przed prowadzeniem pojazd\u00f3w."}, "szyszki": {"ingr": "Olejek eteryczny (mircen, humulen, kariofilen), \u017bywice (humulony i lupulony - tzw. gorycze chmielowe), Flawonoidy (ksantohumol - pot\u0119\u017cny antyoksydant), Fitoestrogeny (8-prenylonaryngenina - najsilniejszy znany fitoestrogen ro\u015blinny)", "props": "Silnie uspokajaj\u0105ce, u\u0142atwiaj\u0105ce zasypianie, bakteriostatyczne, przeciwgrzybicze, estrogenne, rozkurczowe.", "warn": "Nie stosowa\u0107 u kobiet z nowotworami hormonozale\u017cnymi (np. rak piersi) ze wzgl\u0119du na silne dzia\u0142anie estrogenne."}}'
+                                data-warnings="Ze względu na działanie na układ hormonalny, chmiel nie jest zalecany chłopcom w okresie dojrzewania oraz mężczyznom z zaburzeniami erekcji. Może powodować nadmierną senność – nie stosować przed prowadzeniem pojazdów.">
+                            Chmiel zwyczajny
+                        </option>
+                    
+                        <option value="Cykoria podróżnik"
+                                data-parts='{"korzen": {"ingr": "Inulina (do 40% - pot\u0119\u017cny prebiotyk), Glikozydy intybiny (nadaj\u0105 gorzki smak), Kwasy polifenolowe, Fitosterole, Sole mineralne (potas, magnez)", "props": "\u017b\u00f3\u0142ciop\u0119dne, \u017c\u00f3\u0142ciotw\u00f3rcze, wspomagaj\u0105ce trawienie, obni\u017caj\u0105ce poziom cukru we krwi, prebiotyczne (karmi dobre bakterie jelitowe).", "warn": "Nie stosowa\u0107 przy niedro\u017cno\u015bci dr\u00f3g \u017c\u00f3\u0142ciowych oraz przy ostrych stanach zapalnych p\u0119cherzyka \u017c\u00f3\u0142ciowego. Ze wzgl\u0119du na wysok\u0105 zawarto\u015b\u0107 inuliny, nag\u0142e wprowadzenie du\u017cych ilo\u015bci cykorii do diety mo\u017ce powodowa\u0107 wzd\u0119cia."}, "ziele": {"ingr": "", "props": "Moczop\u0119dne, wzmacniaj\u0105ce \u017co\u0142\u0105dek, lekko przeczyszczaj\u0105ce.", "warn": "Nie stosowa\u0107 przy niedro\u017cno\u015bci dr\u00f3g \u017c\u00f3\u0142ciowych oraz przy ostrych stanach zapalnych p\u0119cherzyka \u017c\u00f3\u0142ciowego. Ze wzgl\u0119du na wysok\u0105 zawarto\u015b\u0107 inuliny, nag\u0142e wprowadzenie du\u017cych ilo\u015bci cykorii do diety mo\u017ce powodowa\u0107 wzd\u0119cia."}}'
+                                data-warnings="Nie stosować przy niedrożności dróg żółciowych oraz przy ostrych stanach zapalnych pęcherzyka żółciowego. Ze względu na wysoką zawartość inuliny, nagłe wprowadzenie dużych ilości cykorii do diety może powodować wzdęcia.">
+                            Cykoria podróżnik
+                        </option>
+                    
+                        <option value="Czeremcha zwyczajna"
+                                data-parts='{"kora": {"ingr": "Glikozydy cyjanogenne (pruzyna, amigdalina), Garbniki, Fitoncydy", "props": "Naprzemienne dzia\u0142anie napotne i moczop\u0119dne, uspokajaj\u0105ce kaszel (wycisza o\u015brodek kaszlu), przeciwreumatyczne.", "warn": "Wymaga precyzyjnego dawkowania \u2013 zawiera prekursory kwasu pruskiego (cyjanowodoru)."}, "kwiaty": {"ingr": "", "props": "Lekko uspokajaj\u0105ce i napotne; napary stosowane jako tonik do przemywania oczu (zapalenie spoj\u00f3wek).", "warn": "Pestki i kora zawieraj\u0105 amigdalin\u0119, kt\u00f3ra w organizmie uwalnia toksyczny cyjanowod\u00f3r. Nie stosowa\u0107 w ci\u0105\u017cy, podczas karmienia piersi\u0105 i u ma\u0142ych dzieci. Przetwor\u00f3w z ca\u0142ych owoc\u00f3w z pestkami nie nale\u017cy przechowywa\u0107 d\u0142u\u017cej ni\u017c rok."}, "owoce": {"ingr": "Antocyjany, Garbniki (bardzo wysokie st\u0119\u017cenie), Witamina C, Kwasy organiczne, Amigdalina (w pestkach)", "props": "Silnie \u015bci\u0105gaj\u0105ce, przeciwbiegunkowe, uszczelniaj\u0105ce naczynia krwiono\u015bne, moczop\u0119dne.", "warn": "Nie rozgryza\u0107 i nie spo\u017cywa\u0107 pestek w du\u017cych ilo\u015bciach ze wzgl\u0119du na glikozydy cyjanogenne."}}'
+                                data-warnings="Pestki i kora zawierają amigdalinę, która w organizmie uwalnia toksyczny cyjanowodór. Nie stosować w ciąży, podczas karmienia piersią i u małych dzieci. Przetworów z całych owoców z pestkami nie należy przechowywać dłużej niż rok.">
+                            Czeremcha zwyczajna
+                        </option>
+                    
+                        <option value="Czosnek niedźwiedzi"
+                                data-parts='{"cebule": {"ingr": "", "props": "Dzia\u0142anie analogiczne do li\u015bci, ale bardziej skoncentrowane. W Polsce ich pozyskiwanie ze stanu dzikiego jest zabronione.", "warn": "RO\u015aLINA POD OCHRON\u0104 CZ\u0118\u015aCIOW\u0104 \u2013 pozyskuj tylko z legalnych \u017ar\u00f3de\u0142 lub uprawy. Bezwzgl\u0119dnie sprawd\u017a zapach ka\u017cdego li\u015bcia, by wykluczy\u0107 pomy\u0142k\u0119 z truj\u0105c\u0105 konwali\u0105! Nie stosowa\u0107 przy chorobie wrzodowej \u017co\u0142\u0105dka."}, "liscie": {"ingr": "Allicyna i ajoen (silne zwi\u0105zki siarki), Winyloditiiny, Witaminy (A, C, E), Minera\u0142y (selen, mangan, \u017celazo, magnez), Saponiny, Adenozyna (rozrzedza krew)", "props": "Silnie bakteriob\u00f3jcze, przeciwgrzybicze, obni\u017caj\u0105ce ci\u015bnienie krwi, przeciwzakrzepowe, pobudzaj\u0105ce trawienie, odtruwaj\u0105ce z metali ci\u0119\u017ckich.", "warn": "Li\u015bcie trac\u0105 90% w\u0142a\u015bciwo\u015bci po wysuszeniu. Nale\u017cy je stosowa\u0107 \u015bwie\u017ce, mrozi\u0107 lub konserwowa\u0107 w oleju/alkoholu."}}'
+                                data-warnings="ROŚLINA POD OCHRONĄ CZĘŚCIOWĄ – pozyskuj tylko z legalnych źródeł lub uprawy. Bezwzględnie sprawdź zapach każdego liścia, by wykluczyć pomyłkę z trującą konwalią! Nie stosować przy chorobie wrzodowej żołądka.">
+                            Czosnek niedźwiedzi
+                        </option>
+                    
+                        <option value="Dzika róża"
+                                data-parts='{"nasiona": {"ingr": "", "props": "Moczop\u0119dne i przeciwkamienne (tradycyjnie stosowane w kamicy nerkowej).", "warn": "W\u0142oski otaczaj\u0105ce nasiona musz\u0105 by\u0107 dok\u0142adnie usuni\u0119te przed spo\u017cyciem (powoduj\u0105 silne sw\u0119dzenie)."}, "owoce_pozorne": {"ingr": "Witamina C (nawet do 3000 mg/100g \u2013 najwi\u0119cej w\u015br\u00f3d krajowych ro\u015blin), Galaktolipidy (GOPO \u2013 unikalny zwi\u0105zek o dzia\u0142aniu przeciwzapalnym na stawy), Karotenoidy (likopen, beta-karoten), Flawonoidy, Pektyny, Kwasy organiczne", "props": "Silnie wzmacniaj\u0105ce, immunostymuluj\u0105ce, przeciwzapalne (zw\u0142aszcza w chorobie zwyrodnieniowej staw\u00f3w), uszczelniaj\u0105ce naczynia krwiono\u015bne, lekko moczop\u0119dne.", "warn": "Witamin\u0119 C niszczy wysoka temperatura i \u015bwiat\u0142o \u2013 owoce nale\u017cy suszy\u0107 w temp. do 40\u00b0C."}, "p\u0142atki": {"ingr": "", "props": "\u015aci\u0105gaj\u0105ce, przeciwzapalne, poprawiaj\u0105ce nastr\u00f3j. Stosowane w piel\u0119gnacji cery naczynkowej.", "warn": "Podczas przygotowywania owoc\u00f3w nale\u017cy u\u017cywa\u0107 r\u0119kawiczek (w\u0142oski dra\u017cni\u0105 sk\u00f3r\u0119). Osoby ze sk\u0142onno\u015bci\u0105 do powstawania kamieni nerkowych (szczawianowych) powinny skonsultowa\u0107 si\u0119 z lekarzem przed przyjmowaniem du\u017cych dawek witaminy C z r\u00f3\u017cy."}}'
+                                data-warnings="Podczas przygotowywania owoców należy używać rękawiczek (włoski drażnią skórę). Osoby ze skłonnością do powstawania kamieni nerkowych (szczawianowych) powinny skonsultować się z lekarzem przed przyjmowaniem dużych dawek witaminy C z róży.">
+                            Dzika róża
+                        </option>
+                    
+                        <option value="Dziurawiec zwyczajny"
+                                data-parts='{"kwiaty": {"ingr": "Bardzo wysoka zawarto\u015b\u0107 hiperycyny i olejk\u00f3w", "props": "G\u0142\u00f3wny surowiec do wyrobu \u0027Czerwonego Oleju\u0027 (Oleum Hyperici) stosowanego na oparzenia i b\u00f3le staw\u00f3w.", "warn": "Bezwzgl\u0119dnie unika\u0107 opalania i solarium podczas stosowania dziurawca (ryzyko przebarwie\u0144 i oparze\u0144 sk\u00f3ry). Nie \u0142\u0105czy\u0107 z lekami syntetycznymi bez konsultacji z lekarzem!"}, "ziele": {"ingr": "Hiperycyna (czerwony barwnik), Hiperforyna (odpowiedzialna za dzia\u0142anie przeciwdepresyjne), Flawonoidy (kwercetyna, rutyna), Garbniki katechinowe (do 10%), Olejek eteryczny, Hiperozyd", "props": "Przeciwdepresyjne, uspokajaj\u0105ce, \u017c\u00f3\u0142ciop\u0119dne, rozkurczowe na drogi \u017c\u00f3\u0142ciowe i naczynia krwiono\u015bne, przeciwzapalne.", "warn": "Powoduje fotouczulenie \u2013 podczas kuracji nale\u017cy unika\u0107 ekspozycji na silne s\u0142o\u0144ce."}}'
+                                data-warnings="Bezwzględnie unikać opalania i solarium podczas stosowania dziurawca (ryzyko przebarwień i oparzeń skóry). Nie łączyć z lekami syntetycznymi bez konsultacji z lekarzem!">
+                            Dziurawiec zwyczajny
+                        </option>
+                    
+                        <option value="Dąb bezszypułkowy"
+                                data-parts='{"kora": {"ingr": "Garbniki katechinowe (8-20%), Kwas galusowy i elagowy, Flawonoidy (kwercetyna), Zwi\u0105zki tr\u00f3jterpenowe, Pektyny", "props": "Silnie \u015bci\u0105gaj\u0105ce, antyseptyczne, przeciwzapalne, przeciwbiegunkowe, uszczelniaj\u0105ce naczynia w\u0142osowate.", "warn": "Nie stosowa\u0107 wewn\u0119trznie przy chorobie wrzodowej \u017co\u0142\u0105dka w fazie zaostrzenia."}, "liscie": {"ingr": "Garbniki, Kwercetyna, Zwi\u0105zki \u017cywiczne, Fitoncydy", "props": "\u0141agodnie \u015bci\u0105gaj\u0105ce, przeciwbakteryjne. Wywar z li\u015bci jest ceniony w piel\u0119gnacji cery t\u0142ustej i tr\u0105dzikowej.", "warn": "Nie stosowa\u0107 wewn\u0119trznie odwar\u00f3w z kory przy niedokrwisto\u015bci (garbniki blokuj\u0105 \u017celazo). K\u0105piele d\u0119bowe s\u0105 przeciwwskazane przy nadci\u015bnieniu III stopnia."}, "owoce": {"ingr": "Skrobia, Bia\u0142ka, T\u0142uszcze, Garbniki (taniny), Witaminy z grupy B", "props": "Od\u017cywcze (po wy\u0142ugowaniu), wzmacniaj\u0105ce uk\u0142ad pokarmowy, reguluj\u0105ce metabolizm glukozy.", "warn": "Taniny w surowych \u017co\u0142\u0119dziach mog\u0105 powodowa\u0107 uszkodzenia nerek u zwierz\u0105t domowych i silne b\u00f3le brzucha u ludzi."}}'
+                                data-warnings="Nie stosować wewnętrznie odwarów z kory przy niedokrwistości (garbniki blokują żelazo). Kąpiele dębowe są przeciwwskazane przy nadciśnieniu III stopnia.">
+                            Dąb bezszypułkowy
+                        </option>
+                    
+                        <option value="Dąb czerwony"
+                                data-parts='{"kora": {"ingr": "Garbniki skondensowane (nawet do 25%), Kwasy fenolowe, Flawonoidy, Sole mineralne", "props": "Silnie \u015bci\u0105gaj\u0105ce, przeciwzapalne, antyseptyczne. U\u017cywana g\u0142\u00f3wnie zewn\u0119trznie.", "warn": "Z powodu bardzo wysokiej koncentracji tanin mo\u017ce silniej dra\u017cni\u0107 \u017co\u0142\u0105dek ni\u017c kora d\u0119bu szypu\u0142kowego."}, "liscie": {"ingr": "Garbniki, Kwercetyna, Kwasy organiczne", "props": "\u015aci\u0105gaj\u0105ce, pomocne w piel\u0119gnacji cery t\u0142ustej i w k\u0105pielach przy nadmiernej potliwo\u015bci.", "warn": "Kora d\u0119bu czerwonego dzia\u0142a silniej \u015bci\u0105gaj\u0105co ni\u017c inne gatunki \u2013 nie stosowa\u0107 na otwarte, krwawi\u0105ce rany (tworzy twardy strup, pod kt\u00f3rym mog\u0105 rozwija\u0107 si\u0119 bakterie). Unika\u0107 kontaktu z \u017celazem (czernieje)."}, "owoce": {"ingr": "Skrobia, T\u0142uszcze, Bia\u0142ka, Bardzo wysoka zawarto\u015b\u0107 tanin (bardzo gorzkie)", "props": "Od\u017cywcze, ale wymagaj\u0105 wielokrotnego \u0142ugowania (p\u0142ukania), by usun\u0105\u0107 gorycz.", "warn": "Surowe \u017co\u0142\u0119dzie s\u0105 niejadalne i mog\u0105 powodowa\u0107 zatrucia u zwierz\u0105t monogastrycznych (konie, psy)."}}'
+                                data-warnings="Kora dębu czerwonego działa silniej ściągająco niż inne gatunki – nie stosować na otwarte, krwawiące rany (tworzy twardy strup, pod którym mogą rozwijać się bakterie). Unikać kontaktu z żelazem (czernieje).">
+                            Dąb czerwony
+                        </option>
+                    
+                        <option value="Dąb szypułkowy"
+                                data-parts='{"galasy": {"ingr": "Bardzo wysokie st\u0119\u017cenie tanin (do 70%), Kwas galusowy", "props": "Najsilniejszy surowiec garbnikowy. Historycznie u\u017cywany do wyrobu atramentu i w garbarstwie, rzadziej w medycynie (silne oparzenia).", "warn": "Wy\u0142\u0105cznie do u\u017cytku zewn\u0119trznego i technicznego. Silnie dra\u017cni\u0105ce \u017co\u0142\u0105dek."}, "kora": {"ingr": "Garbniki skondensowane (katechinowe) - do 20%, Kwasy fenolowe (galusowy, elagowy), Tr\u00f3jterpeny (frydelina), Flawonoidy (kwercetyna), Sole mineralne", "props": "Silnie \u015bci\u0105gaj\u0105ce, przeciwzapalne, antyseptyczne, przeciwbiegunkowe, hamuj\u0105ce drobne krwawienia.", "warn": "Nie stosowa\u0107 wewn\u0119trznie przy zaparciach i niedokrwisto\u015bci (blokuje \u017celazo). K\u0105piele niewskazane przy rozleg\u0142ych uszkodzeniach sk\u00f3ry i niewydolno\u015bci serca (nadci\u015bnienie III stopnia)."}, "liscie": {"ingr": "Garbniki, Flawonoidy, Fitoncydy, Zwi\u0105zki \u017cywiczne", "props": "\u0141agodnie \u015bci\u0105gaj\u0105ce, bakteriostatyczne. Stosowane do p\u0142ukanek przy \u0142upie\u017cu i przet\u0142uszczaj\u0105cych si\u0119 w\u0142osach oraz do k\u0105pieli relaksacyjnych.", "warn": "Bezpieczniejsze w u\u017cyciu ni\u017c kora, ale nadal mog\u0105 wysusza\u0107 sk\u00f3r\u0119 przy d\u0142ugotrwa\u0142ym stosowaniu."}, "owoce": {"ingr": "Skrobia (ok. 40%), T\u0142uszcze, Bia\u0142ka, Garbniki (wymagaj\u0105 usuni\u0119cia przez \u0142ugowanie), Witaminy z grupy B, Minera\u0142y (potas, magnez)", "props": "Wysoko od\u017cywcze (po przetworzeniu), przeciwbiegunkowe, og\u00f3lnie wzmacniaj\u0105ce organizm (rekonwalescencja). Kawa \u017co\u0142\u0119dziowa reguluje trawienie.", "warn": "Surowe \u017co\u0142\u0119dzie s\u0105 truj\u0105ce dla ludzi i wielu zwierz\u0105t domowych (konie, psy) z powodu wysokiej zawarto\u015bci tanin. Wymagaj\u0105 obr\u00f3bki termicznej lub wodnej."}}'
+                                data-warnings="Nie stosować wewnętrznie odwarów z kory przy dużych uszkodzeniach skóry oraz w ostrych stanach niewydolności serca. Nadmiar garbników hamuje wchłanianie żelaza i witamin.">
+                            Dąb szypułkowy
+                        </option>
+                    
+                        <option value="Fiołek trójbarwny (Bratek polny)"
+                                data-parts='{"ziele": {"ingr": "Flawonoidy (do 2% - m.in. rutyna, kt\u00f3ra uszczelnia naczynia), Salicylany (naturalny prekursor aspiryny - dzia\u0142anie przeciwzapalne), Saponiny (u\u0142atwiaj\u0105 odkrztuszanie), \u015aluzy, Witamina C i E, Sole mineralne", "props": "Moczop\u0119dne, napotne, odtruwaj\u0105ce (depuratywne), uszczelniaj\u0105ce naczynia w\u0142osowate, wykrztu\u015bne, przeciwzapalne.", "warn": "Ze wzgl\u0119du na w\u0142a\u015bciwo\u015bci moczop\u0119dne i salicylany, nie nadu\u017cywa\u0107 przy ci\u0119\u017ckiej niewydolno\u015bci nerek. U niekt\u00f3rych os\u00f3b d\u0142ugotrwa\u0142e picie mo\u017ce powodowa\u0107 lekko metaliczny posmak w ustach."}}'
+                                data-warnings="Ze względu na właściwości moczopędne i salicylany, nie nadużywać przy ciężkiej niewydolności nerek. U niektórych osób długotrwałe picie może powodować lekko metaliczny posmak w ustach.">
+                            Fiołek trójbarwny (Bratek polny)
+                        </option>
+                    
+                        <option value="Glistnik jaskółcze ziele"
+                                data-parts='{"korzen": {"ingr": "Znacznie wy\u017csze st\u0119\u017cenie alkaloid\u00f3w ni\u017c w zielu (nawet do 3%)", "props": "Stosowany g\u0142\u00f3wnie do sporz\u0105dzania silnych ekstrakt\u00f3w farmaceutycznych.", "warn": "RO\u015aLINA SILNIE DZIA\u0141AJ\u0104CA I POTENCJALNIE TOKSYCZNA. Nie stosowa\u0107 w ci\u0105\u017cy (powoduje skurcze macicy), przy jaskrze (podnosi ci\u015bnienie wewn\u0105trzga\u0142kowe) oraz przy chorobie wrzodowej \u017co\u0142\u0105dka. Przedawkowanie objawia si\u0119 pieczeniem w ustach, wymiotami i krwaw\u0105 biegunk\u0105."}, "sok_mleczny": {"ingr": "", "props": "\u015awie\u017cy sok z \u0142odygi stosowany wy\u0142\u0105cznie zewn\u0119trznie na kurzajki, brodawki i k\u0142ykciny.", "warn": "Silnie dra\u017cni\u0105cy \u2013 chroni\u0107 oczy! Mo\u017ce powodowa\u0107 oparzenia zdrowej sk\u00f3ry."}, "ziele": {"ingr": "Alkaloidy izochinolinowe (chelidonina, chelerytryna, sangwinaryna, koptyzyna), Kwasy organiczne (chelidonowy), Flawonoidy, Saponiny, Enzymy proteolityczne (rozpuszczaj\u0105ce bia\u0142ka wirusowe w kurzajkach)", "props": "Silnie rozkurczowe na mi\u0119\u015bnie g\u0142adkie (uk\u0142ad pokarmowy, drogi \u017c\u00f3\u0142ciowe), \u017c\u00f3\u0142ciop\u0119dne, uspokajaj\u0105ce, przeciwb\u00f3lowe, bakteriob\u00f3jcze, przeciwwirusowe.", "warn": "Mo\u017ce dzia\u0142a\u0107 toksycznie na w\u0105trob\u0119 przy d\u0142ugotrwa\u0142ym stosowaniu lub przedawkowaniu. Nie przekracza\u0107 zalecanych dawek!"}}'
+                                data-warnings="ROŚLINA SILNIE DZIAŁAJĄCA I POTENCJALNIE TOKSYCZNA. Nie stosować w ciąży (powoduje skurcze macicy), przy jaskrze (podnosi ciśnienie wewnątrzgałkowe) oraz przy chorobie wrzodowej żołądka. Przedawkowanie objawia się pieczeniem w ustach, wymiotami i krwawą biegunką.">
+                            Glistnik jaskółcze ziele
+                        </option>
+                    
+                        <option value="Grab pospolity"
+                                data-parts='{"liscie": {"ingr": "Garbniki, Flawonoidy, Witamina C, Kwasy polifenolowe", "props": "\u015aci\u0105gaj\u0105ce, przeciwzapalne, hamuj\u0105ce drobne krwawienia. Napar stosuje si\u0119 do przemywania ran i jako p\u0142ukank\u0119 do gard\u0142a.", "warn": "Ze wzgl\u0119du na wysok\u0105 zawarto\u015b\u0107 garbnik\u00f3w w li\u015bciach, osoby z przewlek\u0142ymi zaparciami powinny ograniczy\u0107 stosowanie wewn\u0119trzne napar\u00f3w."}, "p\u0105ki": {"ingr": "Zwi\u0105zki specyficzne dla tkanek merystematycznych, Fitohormony", "props": "Kluczowy surowiec w gemmoterapii \u2013 regeneruje \u015bluz\u00f3wk\u0119 dr\u00f3g oddechowych, wspomaga prac\u0119 zatok i zwi\u0119ksza liczb\u0119 p\u0142ytek krwi (trombocyt\u00f3w).", "warn": "Ze wzgl\u0119du na wysok\u0105 zawarto\u015b\u0107 garbnik\u00f3w w li\u015bciach, osoby z przewlek\u0142ymi zaparciami powinny ograniczy\u0107 stosowanie wewn\u0119trzne napar\u00f3w."}}'
+                                data-warnings="Ze względu na wysoką zawartość garbników w liściach, osoby z przewlekłymi zaparciami powinny ograniczyć stosowanie wewnętrzne naparów.">
+                            Grab pospolity
+                        </option>
+                    
+                        <option value="Głóg jednoszyjkowy"
+                                data-parts='{"kwiaty": {"ingr": "Flawonoidy (witeksyna, hiperozyd) - kluczowe dla serca, Procyjanidyny oligomeryczne (OPC), Aminy, Fitosterole", "props": "Rozszerzaj\u0105 naczynia wie\u0144cowe, zwi\u0119kszaj\u0105 przep\u0142yw tlenu do serca, delikatnie obni\u017caj\u0105 ci\u015bnienie, dzia\u0142aj\u0105 uspokajaj\u0105co (mocniej ni\u017c owoce).", "warn": "Suszy\u0107 w cieniu i przewiewie (szybko ciemniej\u0105). Nie zbiera\u0107 przekwit\u0142ych kwiat\u00f3w."}, "owoce": {"ingr": "Procyjanidyny, Witaminy (C, z grupy B), Pektyny, Kwasy organiczne, Sole mineralne (potas, magnez, wap\u0144)", "props": "Tonik mi\u0119\u015bnia sercowego (wzmacnia si\u0142\u0119 skurczu), uszczelnia naczynia krwiono\u015bne, dzia\u0142a przeciwmia\u017cd\u017cycowo i \u0142agodnie nasennie.", "warn": "Przemro\u017cenie owoc\u00f3w sprawia, \u017ce staj\u0105 si\u0119 mi\u0119kkie i s\u0142odsze (dobre na przetwory), ale trudniejsze do suszenia."}}'
+                                data-warnings="Głóg potęguje działanie leków nasercowych (glikozydów) i obniżających ciśnienie. Nie stosować samowolnie przy zaawansowanej niewydolności serca wymagającej hospitalizacji.">
+                            Głóg jednoszyjkowy
+                        </option>
+                    
+                        <option value="Jarząb pospolity (Jarzębina)"
+                                data-parts='{"kwiaty": {"ingr": "", "props": "\u0141agodnie moczop\u0119dne i rozkurczowe, stosowane rzadziej ni\u017c owoce.", "warn": "NIGDY nie jedz du\u017cej ilo\u015bci surowych owoc\u00f3w jarz\u0119biny! Kwas parasorbowy mo\u017ce wywo\u0142a\u0107 silne zatrucie. Osoby z ci\u0119\u017ckimi chorobami nerek powinny skonsultowa\u0107 si\u0119 z lekarzem."}, "owoce": {"ingr": "Witamina C (por\u00f3wnywalnie do cytrus\u00f3w), Karotenoidy (prowitamina A), Sorbitol (naturalny s\u0142odzik bezpieczny dla diabetyk\u00f3w), Kwasy organiczne (jab\u0142kowy, winowy), Garbniki, Pektyny", "props": "Moczop\u0119dne, przeciwzapalne w obr\u0119bie jelit i dr\u00f3g moczowych, lekko przeczyszczaj\u0105ce, witaminizuj\u0105ce, przeciwmia\u017cd\u017cycowe.", "warn": "Zawsze poddawa\u0107 obr\u00f3bce termicznej lub przemro\u017ceniu \u2013 to neutralizuje toksyczny kwas parasorbowy."}}'
+                                data-warnings="NIGDY nie jedz dużej ilości surowych owoców jarzębiny! Kwas parasorbowy może wywołać silne zatrucie. Osoby z ciężkimi chorobami nerek powinny skonsultować się z lekarzem.">
+                            Jarząb pospolity (Jarzębina)
+                        </option>
+                    
+                        <option value="Jasnota biała"
+                                data-parts='{"kwiaty": {"ingr": "Irydoidy (m.in. lamalbina), Flawonoidy (kwercetyna, izokwercytryna), \u015aluzy (wysoka zawarto\u015b\u0107), Saponiny, Olejek eteryczny, Garbniki", "props": "Przeciwzapalne, hamuj\u0105ce drobne krwawienia, wykrztu\u015bne, os\u0142onowe na drogi oddechowe i uk\u0142ad pokarmowy, reguluj\u0105ce cykl miesi\u0105czkowy.", "warn": "Surowiec bardzo delikatny \u2013 suszy\u0107 w cieniu, by kwiaty nie \u015bciemnia\u0142y."}, "ziele": {"ingr": "Garbniki, Sole mineralne, \u015aluzy, Flawonoidy", "props": "Oczyszczaj\u0105ce krew, lekko moczop\u0119dne, \u015bci\u0105gaj\u0105ce przy biegunkach i problemach sk\u00f3rnych.", "warn": "Jasnota bia\u0142a jest bezpieczna, ale przy problemach z krzepliwo\u015bci\u0105 krwi (powa\u017cne stany) warto skonsultowa\u0107 si\u0119 z lekarzem ze wzgl\u0119du na obecno\u015b\u0107 irydoid\u00f3w. Nie zbiera\u0107 ro\u015blin z miejsc zanieczyszczonych (przy drogach)."}}'
+                                data-warnings="Jasnota biała jest bezpieczna, ale przy problemach z krzepliwością krwi (poważne stany) warto skonsultować się z lekarzem ze względu na obecność irydoidów. Nie zbierać roślin z miejsc zanieczyszczonych (przy drogach).">
+                            Jasnota biała
+                        </option>
+                    
+                        <option value="Jałowiec pospolity"
+                                data-parts='{"drewno_i_ig\u0142y": {"ingr": "", "props": "Stosowane do aromatycznych k\u0105pieli i okadze\u0144 (dym ja\u0142owcowy ma najsilniejsze w\u0142a\u015bciwo\u015bci bakteriob\u00f3jcze spo\u015br\u00f3d krajowych ro\u015blin).", "warn": "NIE STOSOWA\u0106 W CI\u0104\u017bY (powoduje skurcze macicy i mo\u017ce by\u0107 poronny) oraz przy stanach zapalnych nerek. Kuracja ja\u0142owcem nie powinna trwa\u0107 d\u0142u\u017cej ni\u017c 3-4 tygodnie, gdy\u017c olejek ja\u0142owcowy mo\u017ce podra\u017cnia\u0107 mi\u0105\u017csz nerek."}, "szyszkojagody": {"ingr": "Olejek eteryczny (bogaty w alfa-pinen i terpinen-4-ol), Flawonoidy, Garbniki, Cukry (inwertyty - do 30%), Kwasy organiczne, \u017bywice", "props": "Silnie moczop\u0119dne, \u017c\u00f3\u0142ciop\u0119dne, odka\u017caj\u0105ce drogi moczowe, pobudzaj\u0105ce wydzielanie soku \u017co\u0142\u0105dkowego, przeciwreumatyczne.", "warn": "Nie stosowa\u0107 przy ostrych stanach zapalnych nerek!"}}'
+                                data-warnings="NIE STOSOWAĆ W CIĄŻY (powoduje skurcze macicy i może być poronny) oraz przy stanach zapalnych nerek. Kuracja jałowcem nie powinna trwać dłużej niż 3-4 tygodnie, gdyż olejek jałowcowy może podrażniać miąższ nerek.">
+                            Jałowiec pospolity
+                        </option>
+                    
+                        <option value="Jesion wyniosły"
+                                data-parts='{"kora": {"ingr": "Glikozydy kumarynowe (fraksyna, fraksetyna - dzia\u0142aj\u0105 podobnie do chininy), Garbniki, Gorycze", "props": "Przeciwgor\u0105czkowe, przeciwzapalne, wzmacniaj\u0105ce naczynia w\u0142osowate, \u017c\u00f3\u0142ciop\u0119dne.", "warn": "Obecnie jesiony w Europie s\u0105 zagro\u017cone przez grzyba *Hymenoscyphus fraxineus* (zamieranie jesion\u00f3w) \u2013 przy zbiorze nale\u017cy unika\u0107 drzew wykazuj\u0105cych objawy choroby (uschni\u0119te wierzcho\u0142ki p\u0119d\u00f3w)."}, "liscie": {"ingr": "Kwercetyna i inne flawonoidy, Mannitol (naturalny \u015brodek moczop\u0119dny), Garbniki, Kwasy organiczne, Kumaryny (fraksyna)", "props": "Moczop\u0119dne, oczyszczaj\u0105ce krew (depurativum), wspomagaj\u0105ce usuwanie kwasu moczowego, przeciwreumatyczne.", "warn": "Obecnie jesiony w Europie s\u0105 zagro\u017cone przez grzyba *Hymenoscyphus fraxineus* (zamieranie jesion\u00f3w) \u2013 przy zbiorze nale\u017cy unika\u0107 drzew wykazuj\u0105cych objawy choroby (uschni\u0119te wierzcho\u0142ki p\u0119d\u00f3w)."}}'
+                                data-warnings="Obecnie jesiony w Europie są zagrożone przez grzyba *Hymenoscyphus fraxineus* (zamieranie jesionów) – przy zbiorze należy unikać drzew wykazujących objawy choroby (uschnięte wierzchołki pędów).">
+                            Jesion wyniosły
+                        </option>
+                    
+                        <option value="Kalina koralowa"
+                                data-parts='{"kora": {"ingr": "Glikozyd viburnina (odpowiada za dzia\u0142anie rozkurczowe), Garbniki (do 5%), Flawonoidy, Kumaryny (skopolina), Kwasy organiczne (walerianowy, mas\u0142owy)", "props": "Silnie rozkurczowe na mi\u0119\u015bni\u00f3wk\u0119 g\u0142adk\u0105 (zw\u0142aszcza macicy), przeciwkrwotoczne, uspokajaj\u0105ce, obni\u017caj\u0105ce ci\u015bnienie krwi.", "warn": "Zbi\u00f3r z dzikich stanowisk wymaga zezwolenia (ro\u015blina pod ochron\u0105 cz\u0119\u015bciow\u0105 w lasach pa\u0144stwowych)."}, "kwiaty": {"ingr": "", "props": "Napotne, przeciwzapalne, wspomagaj\u0105ce trawienie.", "warn": "Zbi\u00f3r owoc\u00f3w z dzikich stanowisk w lasach mo\u017ce by\u0107 ograniczony prawnie. Nigdy nie jedz du\u017cej ilo\u015bci surowych, twardych owoc\u00f3w \u2013 mo\u017ce to spowodowa\u0107 silne podra\u017cnienie \u017co\u0142\u0105dka i wymioty."}, "owoce": {"ingr": "Witamina C i E, Antocyjany, Kr\u00f3tko\u0142a\u0144cuchowe kwasy t\u0142uszczowe (m.in. kwas mas\u0142owy - rzadko\u015b\u0107 w \u015bwiecie ro\u015blin!), Pektyny, Saponiny", "props": "Wzmacniaj\u0105ce serce, moczop\u0119dne, witaminizuj\u0105ce, \u0142agodnie uspokajaj\u0105ce.", "warn": "Surowe owoce w wi\u0119kszej ilo\u015bci s\u0105 lekko toksyczne (powoduj\u0105 wymioty). Wymagaj\u0105 mro\u017cenia lub gotowania."}}'
+                                data-warnings="Zbiór owoców z dzikich stanowisk w lasach może być ograniczony prawnie. Nigdy nie jedz dużej ilości surowych, twardych owoców – może to spowodować silne podrażnienie żołądka i wymioty.">
+                            Kalina koralowa
+                        </option>
+                    
+                        <option value="Kasztanowiec zwyczajny (biały)"
+                                data-parts='{"kora": {"ingr": "Kumaryny (eskulina, fraksyna), Garbniki, Flawonoidy", "props": "Silnie \u015bci\u0105gaj\u0105ce, przeciwkrwotoczne, hamuj\u0105ce wysi\u0119ki. Stosowana g\u0142\u00f3wnie zewn\u0119trznie.", "warn": "Nie stosowa\u0107 wewn\u0119trznie przy ci\u0119\u017ckich schorzeniach nerek oraz w pierwszym trymestrze ci\u0105\u017cy. Kasztany s\u0105 truj\u0105ce dla dzieci i zwierz\u0105t domowych \u2013 przechowywa\u0107 z dala od nich przetwory."}, "kwiaty": {"ingr": "Flawonoidy (kwercetyna, rutyna), Escyna (saponiny tr\u00f3jterpenowe), Garbniki, Kwasy fenolowe", "props": "Uszczelniaj\u0105ce naczynia w\u0142osowate, przeciwzapalne, przeciwobrz\u0119kowe, lekko uspokajaj\u0105ce.", "warn": "Suszy\u0107 szybko w zacienionym miejscu, by nie straci\u0142y bia\u0142ej barwy."}, "owoce": {"ingr": "Mieszanina saponin zwana escyn\u0105 (do 13%), Skrobia, Cukry, Olej t\u0142usty, Flawonoidy", "props": "Zwi\u0119kszaj\u0105 elastyczno\u015b\u0107 naczy\u0144 krwiono\u015bnych, poprawiaj\u0105 kr\u0105\u017cenie obwodowe i m\u00f3zgowe, dzia\u0142aj\u0105 przeciwagregacyjnie (rozrzedzaj\u0105 lekko krew).", "warn": "Niejadalne dla ludzi w stanie surowym! Zawieraj\u0105 toksyczne saponiny dra\u017cni\u0105ce przew\u00f3d pokarmowy."}}'
+                                data-warnings="Nie stosować wewnętrznie przy ciężkich schorzeniach nerek oraz w pierwszym trymestrze ciąży. Kasztany są trujące dla dzieci i zwierząt domowych – przechowywać z dala od nich przetwory.">
+                            Kasztanowiec zwyczajny (biały)
+                        </option>
+                    
+                        <option value="Kocanki piaskowe"
+                                data-parts='{"kwiatostany": {"ingr": "Flawonoidy (m.in. chalkon - izosalipurpozyd, nadaj\u0105cy \u017c\u00f3\u0142ty kolor), Olejek eteryczny (pinen, cyneol), Ftalidy (dzia\u0142anie rozkurczowe), Garbniki, Woski i \u017cywice", "props": "Silnie \u017c\u00f3\u0142ciop\u0119dne i \u017c\u00f3\u0142ciotw\u00f3rcze, rozkurczowe na drogi \u017c\u00f3\u0142ciowe i jelita, przeciwzapalne, wzmacniaj\u0105ce czynno\u015b\u0107 w\u0105troby, bakteriob\u00f3jcze.", "warn": "W Polsce ro\u015blina obj\u0119ta cz\u0119\u015bciow\u0105 ochron\u0105 gatunkow\u0105! Zbi\u00f3r ze stanu dzikiego do cel\u00f3w handlowych wymaga zezwolenia."}}'
+                                data-warnings="NIE STOSOWAĆ przy niedrożności dróg żółciowych (kamienie blokujące przewód). Osoby z chorobą wrzodową żołądka powinny skonsultować się z lekarzem (gorycze zwiększają wydzielanie kwasu solnego).">
+                            Kocanki piaskowe
+                        </option>
+                    
+                        <option value="Kozłek lekarski (Waleriana)"
+                                data-parts='{"korzen_i_klacze": {"ingr": "Waleropotriaty (dzia\u0142anie uspokajaj\u0105ce), Olejek eteryczny (kwas walerenowy - hamuje rozk\u0142ad GABA w m\u00f3zgu), Alkaloidy pirydynowe, Garbniki, Kwasy organiczne", "props": "Silnie uspokajaj\u0105ce, u\u0142atwiaj\u0105ce zasypianie, rozkurczowe (mi\u0119\u015bnie g\u0142adkie), obni\u017caj\u0105ce pobudliwo\u015b\u0107 kory m\u00f3zgowej.", "warn": "Suszy\u0107 w temp. do 35\u00b0C. Zapach korzenia jest bardzo atrakcyjny dla kot\u00f3w \u2013 nale\u017cy chroni\u0107 suszarni\u0119!"}}'
+                                data-warnings="Nie stosować u dzieci poniżej 12 roku życia bez konsultacji. U niektórych osób kozłek może powodować tzw. &#39;hangover&#39; (ociężałość poranną). Przerwać stosowanie co najmniej 2 tygodnie przed planowaną operacją (wpływ na narkozę).">
+                            Kozłek lekarski (Waleriana)
+                        </option>
+                    
+                        <option value="Krwawnik pospolity"
+                                data-parts='{"kwiaty": {"ingr": "Najwy\u017csze st\u0119\u017cenie chamazulenu i flawonoid\u00f3w", "props": "Silnie przeciwzapalne i rozkurczowe. Idealne do inhalacji przy katarze i stanach zapalnych zatok.", "warn": "Krwawnika nie nale\u017cy stosowa\u0107 w okresie ci\u0105\u017cy (mo\u017ce dzia\u0142a\u0107 stymuluj\u0105co na macic\u0119) oraz podczas karmienia piersi\u0105. Mo\u017ce wywo\u0142ywa\u0107 fotouczulenie u os\u00f3b o bardzo jasnej karnacji. W przypadku wyst\u0105pienia wysypki (alergia na azuleny), przerwa\u0107 stosowanie."}, "ziele": {"ingr": "Olejek eteryczny (bogaty w azuleny, m.in. chamazulen - o niebieskiej barwie), Achilleina (alkaloid o dzia\u0142aniu przeciwkrwotocznym), Flawonoidy (apigenina, luteolina), Garbniki, Gorycze, Sole mineralne (bardzo wysoka zawarto\u015b\u0107 magnezu i manganu)", "props": "Przeciwzapalne, przeciwskurczowe, pobudzaj\u0105ce wydzielanie sok\u00f3w trawiennych, tamuj\u0105ce krwawienia wewn\u0119trzne i zewn\u0119trzne, antybakteryjne.", "warn": "Mo\u017ce powodowa\u0107 alergie sk\u00f3rne u os\u00f3b wra\u017cliwych na ro\u015bliny astrowate."}}'
+                                data-warnings="Krwawnika nie należy stosować w okresie ciąży (może działać stymulująco na macicę) oraz podczas karmienia piersią. Może wywoływać fotouczulenie u osób o bardzo jasnej karnacji. W przypadku wystąpienia wysypki (alergia na azuleny), przerwać stosowanie.">
+                            Krwawnik pospolity
+                        </option>
+                    
+                        <option value="Leszczyna pospolita"
+                                data-parts='{"kora": {"ingr": "Garbniki (do 10%), Zwi\u0105zki tr\u00f3jterpenowe (betulina), Kwasy organiczne", "props": "Przeciwgor\u0105czkowe, \u015bci\u0105gaj\u0105ce, stosowane w leczeniu \u017cylak\u00f3w i hemoroid\u00f3w.", "warn": "Alergia na orzechy laskowe mo\u017ce by\u0107 bardzo silna. Osoby z niedokrwisto\u015bci\u0105 powinny ograniczy\u0107 picie herbat z li\u015bci (garbniki)."}, "liscie": {"ingr": "Garbniki katechinowe, Flawonoidy (kwercetyna, mirycetyna), Kwasy fenolowe, Olejek eteryczny", "props": "Uszczelniaj\u0105ce naczynia krwiono\u015bne, przeciwzapalne, \u015bci\u0105gaj\u0105ce, przeciwobrz\u0119kowe.", "warn": "Zewn\u0119trznie bezpieczne; wewn\u0119trznie mog\u0105 powodowa\u0107 lekkie zaparcia przy nadu\u017cywaniu."}, "owoce": {"ingr": "Nienasycone kwasy t\u0142uszczowe, Witamina E (tokoferol), Magnez, Potas, Bia\u0142ka ro\u015blinne", "props": "Wysokoenergetyczne, wspieraj\u0105ce prac\u0119 m\u00f3zgu i serca, neuroprotekcyjne.", "warn": "Silny alergen. Osoby uczulone na py\u0142ek brzozy cz\u0119sto wykazuj\u0105 reakcj\u0119 krzy\u017cow\u0105 na orzechy laskowe."}}'
+                                data-warnings="Alergia na orzechy laskowe może być bardzo silna. Osoby z niedokrwistością powinny ograniczyć picie herbat z liści (garbniki).">
+                            Leszczyna pospolita
+                        </option>
+                    
+                        <option value="Lipa drobnolistna"
+                                data-parts='{"kwiaty": {"ingr": "Flawonoidy (tilirozyd, kwercetyna, rutyna) - dzia\u0142anie napotne i przeciwzapalne, \u015aluzy (do 10%) - dzia\u0142anie os\u0142aniaj\u0105ce i powlekaj\u0105ce, Olejek eteryczny (z farnesolem) - nadaje zapach i uspokaja, Garbniki, Kwasy organiczne", "props": "Silnie napotne (obni\u017ca temperatur\u0119), przeciwzapalne, os\u0142aniaj\u0105ce b\u0142ony \u015bluzowe, \u0142agodnie uspokajaj\u0105ce, moczop\u0119dne.", "warn": "Suszy\u0107 w temp. do 35\u00b0C, by nie straci\u0107 cennego olejku farnesolu."}, "liscie": {"ingr": "Witamina C, Chlorofil, \u015aluzy, Garbniki", "props": "Pomocniczo w chorobach uk\u0142adu moczowego oraz jako \u015brodek oczyszczaj\u0105cy sk\u00f3r\u0119 (ok\u0142ady).", "warn": "Osoby z zaawansowan\u0105 niewydolno\u015bci\u0105 serca powinny unika\u0107 picia du\u017cych ilo\u015bci herbaty lipowej (zbytnie obci\u0105\u017cenie serca przy intensywnym poceniu si\u0119)."}, "wegiel": {"ingr": "", "props": "Silnie ch\u0142onny; stosowany w zatruciach pokarmowych, wzd\u0119ciach oraz do czyszczenia ran.", "warn": "Zbyt cz\u0119ste stosowanie mo\u017ce prowadzi\u0107 do zapar\u0107."}}'
+                                data-warnings="Osoby z zaawansowaną niewydolnością serca powinny unikać picia dużych ilości herbaty lipowej (zbytnie obciążenie serca przy intensywnym poceniu się).">
+                            Lipa drobnolistna
+                        </option>
+                    
+                        <option value="Macierzanka piaskowa"
+                                data-parts='{"ziele": {"ingr": "Olejek eteryczny (bogaty w tymol i karwakrol - pot\u0119\u017cne antyseptyki), Garbniki, Flawonoidy, Kwasy polifenolowe (m.in. kwas rozmarynowy), Sole mineralne (bogactwo litu i manganu)", "props": "Silnie wykrztu\u015bne (pobudza ruch rz\u0119sek), przeciwbakteryjne, rozkurczowe, wiatrop\u0119dne, odka\u017caj\u0105ce drogi oddechowe i moczowe.", "warn": "Suszy\u0107 w cieniu i przewiewie w temp. do 35\u00b0C, aby zachowa\u0107 olejki."}}'
+                                data-warnings="Ze względu na wysoką zawartość tymolu, nie należy nadużywać naparów z macierzanki przy ciężkich schorzeniach tarczycy (nadczynność). W dawkach kulinarnych całkowicie bezpieczna.">
+                            Macierzanka piaskowa
+                        </option>
+                    
+                        <option value="Malina właściwa"
+                                data-parts='{"liscie": {"ingr": "Garbniki elagowe (do 10% - silne dzia\u0142anie \u015bci\u0105gaj\u0105ce), Flawonoidy, Fragarzyna (alkaloid wp\u0142ywaj\u0105cy na mi\u0119\u015bnie macicy), Witamina C, Kwasy polifenolowe", "props": "\u015aci\u0105gaj\u0105ce, przeciwbiegunkowe, tonizuj\u0105ce mi\u0119\u015bnie g\u0142adkie (szczeg\u00f3lnie macicy), przeciwzapalne, moczop\u0119dne.", "warn": "Napar z li\u015bci malin tradycyjnie odradzany wczesnej ci\u0105\u017cy, zalecany dopiero przed samym porodem (tonizacja)."}, "owoce": {"ingr": "Kwasy organiczne (cytrynowy, jab\u0142kowy, salicylowy), Witaminy (C, E, B1, B2, B6), Antocyjany, Pektyny, Sole mineralne (potas, magnez, wap\u0144, \u017celazo), Ketony malinowe", "props": "Napotne, przeciwgor\u0105czkowe, przeciwzapalne, witaminizuj\u0105ce.", "warn": "Suszone owoce maliny trac\u0105 sporo aromatu, dlatego najlepiej przetwarza\u0107 je na syropy lub mrozi\u0107."}}'
+                                data-warnings="Liście maliny mogą u niektórych osób działać lekko zapierająco (przez garbniki). Stosowanie herbaty z liści malin w ciąży powinno być skonsultowane z lekarzem lub położną (zazwyczaj zalecane od 36. tygodnia).">
+                            Malina właściwa
+                        </option>
+                    
+                        <option value="Marzanka wonna (Przytulia wonna)"
+                                data-parts='{"ziele": {"ingr": "Glikozydy kumarynowe (asperulozyd), Flawonoidy, Garbniki, Gorycze, Kwasy organiczne", "props": "Uspokajaj\u0105ce, przeciwskurczowe, poprawiaj\u0105ce kr\u0105\u017cenie \u017cylne, moczop\u0119dne.", "warn": "Zawiera kumaryn\u0119. Przedawkowanie mo\u017ce prowadzi\u0107 do silnych b\u00f3l\u00f3w g\u0142owy i nudno\u015bci."}}'
+                                data-warnings="Bezwzględnie unikać w ciąży. Kumaryna w dużych dawkach działa toksycznie na wątrobę.">
+                            Marzanka wonna (Przytulia wonna)
+                        </option>
+                    
+                        <option value="Mniszek lekarski"
+                                data-parts='{"korzen": {"ingr": "Inulina (nawet do 40% jesieni\u0105 - naturalny prebiotyk), Fitosterole (taraksasterol), Gorycze, Garbniki, Kwasy fenolowe", "props": "\u017b\u00f3\u0142ciop\u0119dne i \u017c\u00f3\u0142ciotw\u00f3rcze, ochronne dla mi\u0105\u017cszu w\u0105troby, obni\u017caj\u0105ce poziom cukru i cholesterolu we krwi, prebiotyczne.", "warn": "Nie stosowa\u0107 przy niedro\u017cno\u015bci dr\u00f3g \u017c\u00f3\u0142ciowych."}, "kwiaty": {"ingr": "Luteina, Flawonoidy, Olejek eteryczny, Py\u0142ek kwiatowy", "props": "Leczniczo stosowane g\u0142\u00f3wnie w syropach na kaszel (dzia\u0142anie powlekaj\u0105ce) oraz jako \u015brodek poprawiaj\u0105cy odporno\u015b\u0107.", "warn": "Przeciwwskazany w niedro\u017cno\u015bci dr\u00f3g \u017c\u00f3\u0142ciowych, ropniaku p\u0119cherzyka \u017c\u00f3\u0142ciowego oraz przy niedro\u017cno\u015bci jelit. Mo\u017ce nasila\u0107 dolegliwo\u015bci przy chorobie wrzodowej \u017co\u0142\u0105dka (zwi\u0119ksza wydzielanie kwasu)."}, "liscie": {"ingr": "Flawonoidy, Potas (bardzo wysokie st\u0119\u017cenie), Gorycze (taraksacyna), Witaminy A, C, K, Krzemionka", "props": "Silnie moczop\u0119dne (bez wyp\u0142ukiwania potasu, bo same go dostarczaj\u0105), oczyszczaj\u0105ce drogi moczowe, wspomagaj\u0105ce trawienie.", "warn": "Brak przy zachowaniu dawek terapeutycznych."}}'
+                                data-warnings="Przeciwwskazany w niedrożności dróg żółciowych, ropniaku pęcherzyka żółciowego oraz przy niedrożności jelit. Może nasilać dolegliwości przy chorobie wrzodowej żołądka (zwiększa wydzielanie kwasu).">
+                            Mniszek lekarski
+                        </option>
+                    
+                        <option value="Modrzew europejski"
+                                data-parts='{"igly_i_mlode_pedy": {"ingr": "Witamina C (ogromne ilo\u015bci), Olejek eteryczny, Flawonoidy", "props": "Witaminizuj\u0105ce, napotne, moczop\u0119dne, uszczelniaj\u0105ce naczynia.", "warn": "Osoby z astm\u0105 oskrzelow\u0105 powinny zachowa\u0107 ostro\u017cno\u015b\u0107 przy inhalacjach olejkami eterycznymi (ryzyko skurczu oskrzeli). Drewno modrzewiowe pali si\u0119 bardzo \u0027strzelaj\u0105c\u0027 iskrami \u2013 nie nadaje si\u0119 do otwartych komink\u00f3w."}, "kora": {"ingr": "", "props": "Bogata w garbniki; stosowana do k\u0105pieli przy nadmiernej potliwo\u015bci st\u00f3p i d\u0142oni.", "warn": "Osoby z astm\u0105 oskrzelow\u0105 powinny zachowa\u0107 ostro\u017cno\u015b\u0107 przy inhalacjach olejkami eterycznymi (ryzyko skurczu oskrzeli). Drewno modrzewiowe pali si\u0119 bardzo \u0027strzelaj\u0105c\u0027 iskrami \u2013 nie nadaje si\u0119 do otwartych komink\u00f3w."}, "zywica": {"ingr": "Olejek eteryczny (do 25% - pinen, limonen), Kwasy \u017cywiczne (kwas abietynowy), Laryksynol", "props": "Silnie antyseptyczne, wykrztu\u015bne, rozgrzewaj\u0105ce, przeciwreumatyczne.", "warn": "Stosowana g\u0142\u00f3wnie zewn\u0119trznie w ma\u015bciach; wewn\u0119trznie tylko w preparatach aptecznych."}}'
+                                data-warnings="Osoby z astmą oskrzelową powinny zachować ostrożność przy inhalacjach olejkami eterycznymi (ryzyko skurczu oskrzeli). Drewno modrzewiowe pali się bardzo &#39;strzelając&#39; iskrami – nie nadaje się do otwartych kominków.">
+                            Modrzew europejski
+                        </option>
+                    
+                        <option value="Nawłoć pospolita"
+                                data-parts='{"ziele": {"ingr": "Flawonoidy (rutyna, kwercetyna - uszczelniaj\u0105 naczynia), Saponiny tr\u00f3jterpenowe (dzia\u0142anie przeciwgrzybicze i moczop\u0119dne), Garbniki (do 10%), Glikozydy fenolowe (lejokarpozyd - unikalny dla S. virgaurea, dzia\u0142a silnie przeciwzapalnie i przeciwb\u00f3lowo), Olejek eteryczny, Kwas kawowy i chlorogenowy", "props": "Moczop\u0119dne (akwaretyczne - zwi\u0119ksza przep\u0142yw wody bez utraty elektrolit\u00f3w), odka\u017caj\u0105ce drogi moczowe, przeciwzapalne, \u015bci\u0105gaj\u0105ce, przeciwkamicze.", "warn": "Nie stosowa\u0107 przy obrz\u0119kach spowodowanych niewydolno\u015bci\u0105 serca lub nerek bez konsultacji medycznej."}}'
+                                data-warnings="Nie stosować przy przewlekłych chorobach nerek przebiegających z obrzękami (wymagana konsultacja lekarska). Ze względu na zawartość garbników, długotrwałe przyjmowanie może ograniczać wchłanianie żelaza.">
+                            Nawłoć pospolita
+                        </option>
+                    
+                        <option value="Niecierpek pospolity"
+                                data-parts='{"nasiona": {"ingr": "Kwasy t\u0142uszczowe (parynarowy, punicynowy), Bia\u0142ka", "props": "Od\u017cywcze, regeneruj\u0105ce, wspieraj\u0105ce gospodark\u0119 hormonaln\u0105.", "warn": "W rzadkich przypadkach \u015bwie\u017cy sok mo\u017ce barwi\u0107 sk\u00f3r\u0119 na pomara\u0144czowo. Nie stosowa\u0107 wewn\u0119trznie w du\u017cych dawkach bez konsultacji, gdy\u017c mo\u017ce zadzia\u0142a\u0107 silnie przeczyszczaj\u0105co."}, "ziele": {"ingr": "Flawonoidy (kwercetyna, kemferol), Naftochinony (lanson - o silnym dzia\u0142aniu przeciwgrzybiczym), Inhibitory 5-alfa-reduktazy (kluczowe w leczeniu tr\u0105dziku hormonalnego), Kwasy fenolowe, Fitosterole, Saponiny", "props": "Przeciwzapalne, antyandrogenne (hamuje \u0142ysienie i tr\u0105dzik), przeciwgrzybicze, moczop\u0119dne, regeneruj\u0105ce sk\u00f3r\u0119 (hamuje autoagresj\u0119 immunologiczn\u0105).", "warn": "Suszy\u0107 w temperaturze do 40\u00b0C. \u015awie\u017ce ziele w du\u017cych dawkach mo\u017ce dzia\u0142a\u0107 dra\u017cni\u0105co na przew\u00f3d pokarmowy."}}'
+                                data-warnings="W rzadkich przypadkach świeży sok może barwić skórę na pomarańczowo. Nie stosować wewnętrznie w dużych dawkach bez konsultacji, gdyż może zadziałać silnie przeczyszczająco.">
+                            Niecierpek pospolity
+                        </option>
+                    
+                        <option value="Olcha czarna (Olsza)"
+                                data-parts='{"kora": {"ingr": "Garbniki (do 20% - bardzo wysokie st\u0119\u017cenie), Kwasy polifenolowe, Triterpeny, Substancje \u017cywiczne", "props": "Silnie \u015bci\u0105gaj\u0105ce, przeciwzapalne, przeciwkrwotoczne, przeciwgor\u0105czkowe.", "warn": "Nie stosowa\u0107 wewn\u0119trznie przy zaparciach. Zbi\u00f3r kory z \u017cywych drzew na terenach las\u00f3w pa\u0144stwowych jest zabroniony bez zgody le\u015bniczego."}, "liscie": {"ingr": "", "props": "Moczop\u0119dne, napotne; stosowane zewn\u0119trznie na wrzody i trudno goj\u0105ce si\u0119 rany.", "warn": "Nie stosowa\u0107 wewn\u0119trznie przy zaparciach. Zbi\u00f3r kory z \u017cywych drzew na terenach las\u00f3w pa\u0144stwowych jest zabroniony bez zgody le\u015bniczego."}, "szyszki": {"ingr": "", "props": "Wybitnie bogate w garbniki; stosowane w akwarystyce do dezynfekcji wody oraz w leczeniu biegunek.", "warn": "Nie stosowa\u0107 wewn\u0119trznie przy zaparciach. Zbi\u00f3r kory z \u017cywych drzew na terenach las\u00f3w pa\u0144stwowych jest zabroniony bez zgody le\u015bniczego."}}'
+                                data-warnings="Nie stosować wewnętrznie przy zaparciach. Zbiór kory z żywych drzew na terenach lasów państwowych jest zabroniony bez zgody leśniczego.">
+                            Olcha czarna (Olsza)
+                        </option>
+                    
+                        <option value="Podbiał pospolity"
+                                data-parts='{"kwiaty": {"ingr": "Flawonoidy, \u015aluzy, Gorycze, Olejek eteryczny, \u015aladowe ilo\u015bci alkaloid\u00f3w pirolizydynowych", "props": "Rozkurczowe na drogi oddechowe, \u0142agodnie wykrztu\u015bne, przeciwzapalne.", "warn": "Kwiaty maj\u0105 silniejsze dzia\u0142anie rozkurczowe ni\u017c li\u015bcie."}, "liscie": {"ingr": "Bardzo du\u017ca ilo\u015b\u0107 \u015bluz\u00f3w (do 10%), Garbniki, Inulina, Cynk (wysoka zawarto\u015b\u0107), Kwasy organiczne", "props": "Wybitnie os\u0142aniaj\u0105ce, powlekaj\u0105ce, przeciwzapalne, \u015bci\u0105gaj\u0105ce.", "warn": "Zawieraj\u0105 alkaloidy pirolizydynowe \u2013 nie stosowa\u0107 kuracji d\u0142u\u017cszych ni\u017c 4-6 tygodni w roku."}}'
+                                data-warnings="Ze względu na zawartość alkaloidów pirolizydynowych (działanie hepatotoksyczne), podbiału nie wolno stosować u kobiet w ciąży, matek karmiących oraz u małych dzieci. Kuracja nie powinna trwać dłużej niż 4-6 tygodni w roku. Osoby z uszkodzeniem wątroby powinny unikać tej rośliny.">
+                            Podbiał pospolity
+                        </option>
+                    
+                        <option value="Pokrzywa zwyczajna"
+                                data-parts='{"korzen": {"ingr": "Sterole ro\u015blinne (beta-sitosterol), Lignany, Sole mineralne (bogactwo krzemu), Lektyny", "props": "Specyficzne dzia\u0142anie na prostat\u0119 (\u0142agodny przerost gruczo\u0142u krokowego - BPH), hamowanie aktywno\u015bci aromatazy, wzmacnianie cebulek w\u0142osowych.", "warn": "Wymaga d\u0142ugiego gotowania (odwar)."}, "liscie": {"ingr": "Chlorofil (naturalny budulec krwi), Witaminy (K, C, B2, kwas pantotenowy), Minera\u0142y (\u017celazo, magnez, wap\u0144, krzem, potas), Flawonoidy, Krzemionka rozpuszczalna", "props": "Krwiotw\u00f3rcze (leczenie anemii), moczop\u0119dne, detoksykuj\u0105ce (usuwa kwas moczowy), poprawiaj\u0105ce przemian\u0119 materii, wzmacniaj\u0105ce w\u0142osy i paznokcie.", "warn": "Nie stosowa\u0107 przy cystach i nowotworach macicy bez konsultacji (mo\u017ce stymulowa\u0107 wzrost tkanek)."}, "nasiona": {"ingr": "Nienasycone kwasy t\u0142uszczowe (linolowy), Witamina E, Karotenoidy, Fitosterole", "props": "Naturalny adaptogen, silny \u015brodek wzmacniaj\u0105cy (tonik energetyczny), wsparcie nerek, poprawa p\u0142odno\u015bci u m\u0119\u017cczyzn.", "warn": "Zbyt du\u017ca ilo\u015b\u0107 mo\u017ce powodowa\u0107 nadpobudliwo\u015b\u0107 (dzia\u0142anie silnie stymuluj\u0105ce)."}}'
+                                data-warnings="Pokrzywa może zatrzymywać owulację, jeśli jest stosowana w nadmiarze – osoby starające się o dziecko powinny zachować umiar. Przy chorobach nerek (kłębuszkowe zapalenie) skonsultować z lekarzem.">
+                            Pokrzywa zwyczajna
+                        </option>
+                    
+                        <option value="Poziomka pospolita"
+                                data-parts='{"liscie": {"ingr": "Garbniki katechinowe (do 10%), Flawonoidy (kwercetyna, rutyna), Witamina C, Kwasy organiczne", "props": "Moczop\u0119dne, \u015bci\u0105gaj\u0105ce, przeciwzapalne w obr\u0119bie jelit, detoksykuj\u0105ce krew.", "warn": "Bezpieczny surowiec, mo\u017ce by\u0107 stosowany u dzieci i senior\u00f3w."}, "owoce": {"ingr": "Sole mineralne (\u017celazo, wap\u0144), Witaminy z grupy B i C, Kwas salicylowy, Pektyny", "props": "Odkwaszaj\u0105ce organizm, og\u00f3lnie wzmacniaj\u0105ce, przeciwreumatyczne.", "warn": "U os\u00f3b wra\u017cliwych mog\u0105 wywo\u0142ywa\u0107 reakcje alergiczne (pokrzywk\u0119)."}}'
+                                data-warnings="">
+                            Poziomka pospolita
+                        </option>
+                    
+                        <option value="Poziomka pospolita"
+                                data-parts='{"liscie": {"ingr": "Garbniki katechinowe (do 10%), Flawonoidy (kwercetyna, rutyna), Witamina C, Kwasy organiczne", "props": "Moczop\u0119dne, \u015bci\u0105gaj\u0105ce, przeciwzapalne w obr\u0119bie jelit, detoksykuj\u0105ce krew.", "warn": "Bezpieczny surowiec, mo\u017ce by\u0107 stosowany u dzieci i senior\u00f3w."}, "owoce": {"ingr": "Sole mineralne (\u017celazo, wap\u0144), Witaminy z grupy B i C, Kwas salicylowy, Pektyny", "props": "Odkwaszaj\u0105ce organizm, og\u00f3lnie wzmacniaj\u0105ce, przeciwreumatyczne.", "warn": "U os\u00f3b wra\u017cliwych mog\u0105 wywo\u0142ywa\u0107 reakcje alergiczne (pokrzywk\u0119)."}}'
+                                data-warnings="">
+                            Poziomka pospolita
+                        </option>
+                    
+                        <option value="Przylaszczka pospolita"
+                                data-parts='{"ziele": {"ingr": "Glikozyd ranunkulina (podczas suszenia rozpada si\u0119 na nieaktywn\u0105 anemonin\u0119), Flawonoidy (kwercetyna), Antocyjany, Garbniki, Saponiny", "props": "\u017b\u00f3\u0142ciop\u0119dne, moczop\u0119dne, wspomagaj\u0105ce metabolizm w\u0105troby, przeciwzapalne w obr\u0119bie jamy ustnej.", "warn": "\u015aWIE\u017bA ro\u015blina jest toksyczna! Zawiera protoanemonin\u0119, kt\u00f3ra silnie dra\u017cni sk\u00f3r\u0119, b\u0142ony \u015bluzowe i uk\u0142ad pokarmowy. Podczas suszenia toksyna ta znika."}}'
+                                data-warnings="ROŚLINA POD OCHRONĄ – NIE ZBIERAĆ W LESIE! Świeże ziele jest silnie drażniące i toksyczne. Unikać stosowania w ciąży i podczas karmienia piersią.">
+                            Przylaszczka pospolita
+                        </option>
+                    
+                        <option value="Przytulia czepna"
+                                data-parts='{"nasiona": {"ingr": "", "props": "Po upra\u017ceniu s\u0142u\u017c\u0105 jako substytut kawy (zawieraj\u0105 \u015bladowe ilo\u015bci kofeiny).", "warn": "Przytulia jest bardzo bezpieczna, jednak jej silne dzia\u0142anie moczop\u0119dne mo\u017ce u niekt\u00f3rych os\u00f3b powodowa\u0107 przej\u015bciow\u0105 sucho\u015b\u0107 w ustach. Zawsze pij dodatkow\u0105 szklank\u0119 wody podczas kuracji."}, "ziele": {"ingr": "Irydoidy (m.in. asperulozyd - dzia\u0142anie przeciwzapalne), Flawonoidy (kwercetyna), Garbniki, Kwasy polifenolowe, Krzemionka, Kumaryny, Enzymy (podpuszczka ro\u015blinna)", "props": "Limfatyczne (udra\u017cnia w\u0119z\u0142y ch\u0142onne), moczop\u0119dne, przeciwzapalne, \u015bci\u0105gaj\u0105ce, oczyszczaj\u0105ce krew, przeciwnowotworowe (w medycynie ludowej).", "warn": "Najlepiej dzia\u0142a jako \u015bwie\u017cy sok lub macerat na zimno; suszenie os\u0142abia jej moc enzymatyczn\u0105."}}'
+                                data-warnings="Przytulia jest bardzo bezpieczna, jednak jej silne działanie moczopędne może u niektórych osób powodować przejściową suchość w ustach. Zawsze pij dodatkową szklankę wody podczas kuracji.">
+                            Przytulia czepna
+                        </option>
+                    
+                        <option value="Rokitnik zwyczajny"
+                                data-parts='{"liscie": {"ingr": "", "props": "Przeciwzapalne, pomocne w reumatyzmie i chorobach sk\u00f3ry. Napar z li\u015bci wspiera trawienie.", "warn": "Ze wzgl\u0119du na wysok\u0105 zawarto\u015b\u0107 kwas\u00f3w owocowych, rokitnik nie jest zalecany osobom z ostrym zapaleniem w\u0105troby, trzustki oraz przy kamicy \u017c\u00f3\u0142ciowej."}, "nasiona": {"ingr": "Olej rokitnikowy (bogaty w nienasycone kwasy t\u0142uszczowe)", "props": "Regeneracja \u015bluz\u00f3wki \u017co\u0142\u0105dka, leczenie wrzod\u00f3w, ochrona uk\u0142adu kr\u0105\u017cenia.", "warn": "Ze wzgl\u0119du na wysok\u0105 zawarto\u015b\u0107 kwas\u00f3w owocowych, rokitnik nie jest zalecany osobom z ostrym zapaleniem w\u0105troby, trzustki oraz przy kamicy \u017c\u00f3\u0142ciowej."}, "owoce": {"ingr": "Witamina C (nawet do 1000 mg/100g - 15 razy wi\u0119cej ni\u017c w cytrynie), Karotenoidy (beta-karoten, likopen, zeaksantyna), Kwasy t\u0142uszczowe Omega-3, 6, 9 oraz rzadki Omega-7 (kwas palmitoleinowy), Witaminy E, K i z grupy B, Flawonoidy (kwercetyna, rutyna)", "props": "Silnie antyoksydacyjne, immunostymuluj\u0105ce, regeneruj\u0105ce nab\u0142onki, przeciwzapalne, przeciwnowotworowe.", "warn": "Zbi\u00f3r jest trudny ze wzgl\u0119du na ciernie i mi\u0119kko\u015b\u0107 owoc\u00f3w \u2013 tradycyjnie stosuje si\u0119 metod\u0119 \u0027mro\u017cenia\u0027 ca\u0142ych ga\u0142\u0119zi."}}'
+                                data-warnings="Ze względu na wysoką zawartość kwasów owocowych, rokitnik nie jest zalecany osobom z ostrym zapaleniem wątroby, trzustki oraz przy kamicy żółciowej.">
+                            Rokitnik zwyczajny
+                        </option>
+                    
+                        <option value="Rumianek pospolity"
+                                data-parts='{"kwiaty": {"ingr": "Olejek eteryczny (do 1.5%, bogaty w chamazulen i alfa-bisabolol), Flawonoidy (g\u0142\u00f3wnie apigenina - silne dzia\u0142anie uspokajaj\u0105ce), Kumaryny (umbeliferon, herniaryna), \u015aluzy, Zwi\u0105zki acetylenowe, Cholina", "props": "Przeciwzapalne, rozkurczowe (spazmolityczne), wiatrop\u0119dne, odka\u017caj\u0105ce, przeciwuczuleniowe, przyspieszaj\u0105ce gojenie ran.", "warn": "Suszy\u0107 w temp. do 35\u00b0C, aby nie odparowa\u0107 olejk\u00f3w."}}'
+                                data-warnings="Osoby uczulone na rośliny z rodziny Astrowatych (np. arnka, piołun, nawłoć) powinny zachować szczególną ostrożność – rumianek może wywołać u nich wstrząs anafilaktyczny lub wysypkę.">
+                            Rumianek pospolity
+                        </option>
+                    
+                        <option value="Skrzyp polny"
+                                data-parts='{"ziele": {"ingr": "Krzemionka rozpuszczalna (do 10% - kwas krzemowy), Flawonoidy (ekwizetryna, izokwercytryna), Saponiny (ekwizetonina), Kwasy organiczne (akonitowy, jab\u0142kowy), Sole mineralne (potas, magnez, mangan), Fitosterole", "props": "Moczop\u0119dne (zwi\u0119ksza wydalanie chlork\u00f3w), przeciwobrz\u0119kowe, remineralizuj\u0105ce (odbudowa ko\u015bci i staw\u00f3w), przeciwkrwotoczne, poprawiaj\u0105ce stan sk\u00f3ry, w\u0142os\u00f3w i paznokci.", "warn": "D\u0142ugotrwa\u0142e stosowanie mo\u017ce powodowa\u0107 niedob\u00f3r witaminy B1 (tiaminy) ze wzgl\u0119du na zawarto\u015b\u0107 enzymu antywitaminowego \u2013 antytiaminazy."}}'
+                                data-warnings="Nie stosować przy kłębuszkowym zapaleniu nerek oraz przy obrzękach wywołanych niewydolnością serca. Przy długotrwałych kuracjach (powyżej miesiąca) należy uzupełniać witaminę B1.">
+                            Skrzyp polny
+                        </option>
+                    
+                        <option value="Sosna zwyczajna"
+                                data-parts='{"ig\u0142y": {"ingr": "Olejek eteryczny, Witamina C, Karoten, Flawonoidy", "props": "Witaminizuj\u0105ce, od\u015bwie\u017caj\u0105ce, antyseptyczne. Wykorzystywane g\u0142\u00f3wnie do k\u0105pieli leczniczych i inhalacji.", "warn": "Nie stosowa\u0107 olejku sosnowego u os\u00f3b z krztu\u015bcem i astm\u0105 oskrzelow\u0105 (mo\u017ce wywo\u0142a\u0107 skurcz krtani). Zbi\u00f3r p\u0119d\u00f3w w lasach pa\u0144stwowych bez zgody le\u015bniczego jest nielegalny."}, "paki_i_pedy": {"ingr": "Olejek eteryczny (bogaty w alfa- i beta-pinen, limonen, borneol), \u017bywice, Witamina C (bardzo wysokie st\u0119\u017cenie), Garbniki, Gorycze, Sole mineralne", "props": "Silnie wykrztu\u015bne, przeciwbakteryjne, napotne, odka\u017caj\u0105ce drogi moczowe, og\u00f3lnie wzmacniaj\u0105ce (przeciwszkorbutowe).", "warn": "Nie zbiera\u0107 p\u0119d\u00f3w wierzcho\u0142kowych (g\u0142\u00f3wnych), aby nie zahamowa\u0107 wzrostu drzewa."}, "py\u0142ek": {"ingr": "Naturalne fitoandrogeny (m.in. testosteron, androstendion), Aminokwasy (ponad 20 rodzaj\u00f3w), Antyoksydanty, Enzymy", "props": "Superfood: podnosi poziom energii, wspiera uk\u0142ad hormonalny m\u0119\u017cczyzn, dzia\u0142a anabolicznie, poprawia libido i odporno\u015b\u0107.", "warn": "Silny alergen dla os\u00f3b uczulonych na py\u0142ki traw i drzew iglastych."}}'
+                                data-warnings="Nie stosować olejku sosnowego u osób z krztuścem i astmą oskrzelową (może wywołać skurcz krtani). Zbiór pędów w lasach państwowych bez zgody leśniczego jest nielegalny.">
+                            Sosna zwyczajna
+                        </option>
+                    
+                        <option value="Tasznik pospolity"
+                                data-parts='{"ziele": {"ingr": "Aminy biogenne (cholina, acetylocholina, histamina, tyramina), Flawonoidy (kwercetyna, rutyna), Garbniki, Witamina K, C i kwasy organiczne, Sole mineralne (bogactwo potasu)", "props": "Przeciwkrwotoczne (zw\u0119\u017ca naczynia krwiono\u015bne), tonizuj\u0105ce mi\u0119\u015bnie g\u0142adkie macicy, moczop\u0119dne, obni\u017caj\u0105ce ci\u015bnienie krwi.", "warn": "Surowiec traci w\u0142a\u015bciwo\u015bci podczas d\u0142ugiego przechowywania. Najlepiej u\u017cywa\u0107 ziela \u015bwie\u017cego lub rocznego."}}'
+                                data-warnings="BEZWZGLĘDNIE NIE STOSOWAĆ W CIĄŻY (może powodować skurcze macicy). Nie stosować przy zakrzepicy i skłonności do zatorów.">
+                            Tasznik pospolity
+                        </option>
+                    
+                        <option value="Topola osika (Osika)"
+                                data-parts='{"kora": {"ingr": "Glikozydy fenolowe (salicyna, populina - dzia\u0142aj\u0105 jak aspiryna), Flawonoidy, Garbniki, Olejki eteryczne", "props": "Przeciwgor\u0105czkowe, przeciwb\u00f3lowe, przeciwzapalne, moczop\u0119dne, odka\u017caj\u0105ce drogi moczowe.", "warn": "Nie stosowa\u0107 u os\u00f3b uczulonych na salicylany (aspiryn\u0119). Nie podawa\u0107 dzieciom poni\u017cej 12 roku \u017cycia (ryzyko zespo\u0142u Reye\u0027a, podobnie jak przy aspirynie)."}, "p\u0105czki": {"ingr": "", "props": "Silnie antybiotyczne, wykrztu\u015bne; stosowane w ma\u015bciach na b\u00f3le staw\u00f3w.", "warn": "Nie stosowa\u0107 u os\u00f3b uczulonych na salicylany (aspiryn\u0119). Nie podawa\u0107 dzieciom poni\u017cej 12 roku \u017cycia (ryzyko zespo\u0142u Reye\u0027a, podobnie jak przy aspirynie)."}}'
+                                data-warnings="Nie stosować u osób uczulonych na salicylany (aspirynę). Nie podawać dzieciom poniżej 12 roku życia (ryzyko zespołu Reye&#39;a, podobnie jak przy aspirynie).">
+                            Topola osika (Osika)
+                        </option>
+                    
+                        <option value="Wierzba biała"
+                                data-parts='{"kora": {"ingr": "Glikozydy fenolowe (salicyna, salikortyna, populina) - w organizmie metabolizowane do kwasu salicylowego, Garbniki (do 10%), Flawonoidy, Kwasy fenolowe", "props": "Przeciwgor\u0105czkowe, przeciwzapalne, przeciwb\u00f3lowe (antyneuralgiczne), przeciwreumatyczne, odka\u017caj\u0105ce.", "warn": "Naturalna salicyna jest bezpieczniejsza dla \u017co\u0142\u0105dka ni\u017c syntetyczna aspiryna, ale osoby z chorob\u0105 wrzodow\u0105 powinny zachowa\u0107 ostro\u017cno\u015b\u0107."}, "liscie": {"ingr": "", "props": "\u0141agodnie moczop\u0119dne i przeciwzapalne, rzadziej stosowane ni\u017c kora.", "warn": "Nie podawa\u0107 dzieciom poni\u017cej 12 roku \u017cycia podczas infekcji wirusowych (ryzyko Zespo\u0142u Reye\u2019a \u2013 rzadkie, ale gro\u017ane powik\u0142anie po salicylanach). Nie stosowa\u0107 przy astmie aspirynowej."}}'
+                                data-warnings="Nie podawać dzieciom poniżej 12 roku życia podczas infekcji wirusowych (ryzyko Zespołu Reye’a – rzadkie, ale groźne powikłanie po salicylanach). Nie stosować przy astmie aspirynowej.">
+                            Wierzba biała
+                        </option>
+                    
+                        <option value="Wiąz pospolity (Wiąz polny)"
+                                data-parts='{"kora_wewnetrzna": {"ingr": "\u015aluzy (do 15%), Garbniki (do 12%), Flawonoidy, Fitoestrogeny, Kwas salicylowy", "props": "Silnie \u015bci\u0105gaj\u0105ce, przeciwzapalne, powlekaj\u0105ce os\u0142onowo na \u017co\u0142\u0105dek, przeciwreumatyczne.", "warn": "Zbi\u00f3r kory z \u017cywych drzew w lasach jest nielegalny. Pozyskuj surowiec tylko z drzew powalonych lub przeznaczonych do wycinki. Nie stosowa\u0107 d\u0142ugotrwale bez konsultacji z zielarzem."}, "liscie": {"ingr": "", "props": "Stosowane zewn\u0119trznie jako \u015brodek goj\u0105cy rany i hamuj\u0105cy drobne krwawienia.", "warn": "Zbi\u00f3r kory z \u017cywych drzew w lasach jest nielegalny. Pozyskuj surowiec tylko z drzew powalonych lub przeznaczonych do wycinki. Nie stosowa\u0107 d\u0142ugotrwale bez konsultacji z zielarzem."}}'
+                                data-warnings="Zbiór kory z żywych drzew w lasach jest nielegalny. Pozyskuj surowiec tylko z drzew powalonych lub przeznaczonych do wycinki. Nie stosować długotrwale bez konsultacji z zielarzem.">
+                            Wiąz pospolity (Wiąz polny)
+                        </option>
+                    
+                        <option value="Wrotycz pospolity"
+                                data-parts='{"kwiaty": {"ingr": "Olejek eteryczny (bogaty w beta-tujon, izotujon, kamfor\u0119, borneol), Laktony seskwiterpenowe (tanacetyna), Flawonoidy (aksylaryna, kwercetyna), Kwasy fenolowe", "props": "Przeciwpaso\u017cytnicze (na owsiki, glisty, tasiemce), przeciwgrzybicze, silnie \u017c\u00f3\u0142ciop\u0119dne, pobudzaj\u0105ce miesi\u0105czkowanie, odka\u017caj\u0105ce.", "warn": "Zawiera TUJON \u2013 zwi\u0105zek neurotoksyczny. Stosowa\u0107 wy\u0142\u0105cznie pod kontrol\u0105 i nigdy w ci\u0105\u017cy!"}, "ziele": {"ingr": "", "props": "G\u0142\u00f3wnie stosowane zewn\u0119trznie na paso\u017cyty sk\u00f3ry (wszawica, \u015bwierzb) oraz w celach gospodarskich.", "warn": "BEZWZGL\u0118DNIE NIE STOSOWA\u0106 W CI\u0104\u017bY (powoduje skurcze macicy i mo\u017ce doprowadzi\u0107 do poronienia). Przedawkowanie powoduje zawroty g\u0142owy, krwiomocz i omamy. Przechowywa\u0107 z dala od dzieci!"}}'
+                                data-warnings="BEZWZGLĘDNIE NIE STOSOWAĆ W CIĄŻY (powoduje skurcze macicy i może doprowadzić do poronienia). Przedawkowanie powoduje zawroty głowy, krwiomocz i omamy. Przechowywać z dala od dzieci!">
+                            Wrotycz pospolity
+                        </option>
+                    
+                        <option value="Łopian mniejszy"
+                                data-parts='{"korzen": {"ingr": "Inulina (prebiotyk), Poliacetyleny (naturalne antybiotyki), Lignany (arktygenina), Garbniki, \u015aluzy", "props": "Oczyszczaj\u0105ce krew, wspomagaj\u0105ce przemian\u0119 materii, \u017c\u00f3\u0142ciop\u0119dne, przeciwzapalne, reguluj\u0105ce poziom cukru.", "warn": "Zbi\u00f3r korzeni drugorocznych (po zakwitni\u0119ciu) jest bezcelowy \u2013 staj\u0105 si\u0119 one zdrewnia\u0142e, puste w \u015brodku i pozbawione warto\u015bci leczniczych."}, "liscie": {"ingr": "", "props": "Stosowane zewn\u0119trznie do ok\u0142ad\u00f3w na obrz\u0119ki, stawy i uk\u0105szenia owad\u00f3w.", "warn": "Zbi\u00f3r korzeni drugorocznych (po zakwitni\u0119ciu) jest bezcelowy \u2013 staj\u0105 si\u0119 one zdrewnia\u0142e, puste w \u015brodku i pozbawione warto\u015bci leczniczych."}}'
+                                data-warnings="Zbiór korzeni drugorocznych (po zakwitnięciu) jest bezcelowy – stają się one zdrewniałe, puste w środku i pozbawione wartości leczniczych.">
+                            Łopian mniejszy
+                        </option>
+                    
+                        <option value="Łopian większy"
+                                data-parts='{"korzen": {"ingr": "Inulina (do 45% - pot\u0119\u017cny prebiotyk), Poliacetyleny (dzia\u0142anie antybiotyczne), Fitosterole, Olejek eteryczny, Kwasy fenolowe, Sole mineralne (bogactwo potasu i magnezu)", "props": "Silnie oczyszczaj\u0105ce krew, \u017c\u00f3\u0142ciop\u0119dne, moczop\u0119dne, przeciwcukrzycowe (obni\u017ca cukier), przeciwbakteryjne i przeciwgrzybicze.", "warn": "Suszy\u0107 w temp. do 50\u00b0C. Korze\u0144 jest bardzo twardy po ususzeniu, wymaga zmielenia."}, "liscie": {"ingr": "", "props": "Stosowane g\u0142\u00f3wnie zewn\u0119trznie do ok\u0142ad\u00f3w na wrzody, st\u0142uczenia i trudno goj\u0105ce si\u0119 rany.", "warn": "Nie stosowa\u0107 w czasie ci\u0105\u017cy. U os\u00f3b z bardzo wra\u017cliwym uk\u0142adem pokarmowym du\u017ce dawki inuliny mog\u0105 powodowa\u0107 wzd\u0119cia."}, "owoce/nasiona": {"ingr": "", "props": "W medycynie chi\u0144skiej (Niu Bang Zi) stosowane na gor\u0105czk\u0119 i b\u00f3l gard\u0142a.", "warn": "Nie stosowa\u0107 w czasie ci\u0105\u017cy. U os\u00f3b z bardzo wra\u017cliwym uk\u0142adem pokarmowym du\u017ce dawki inuliny mog\u0105 powodowa\u0107 wzd\u0119cia."}}'
+                                data-warnings="Nie stosować w czasie ciąży. U osób z bardzo wrażliwym układem pokarmowym duże dawki inuliny mogą powodować wzdęcia.">
+                            Łopian większy
+                        </option>
+                    
+                        <option value="Świerk pospolity"
+                                data-parts='{"igliwie": {"ingr": "", "props": "K\u0105piele odka\u017caj\u0105ce, inhalacje, \u017ar\u00f3d\u0142o witaminy C w zimie.", "warn": "Unika\u0107 stosowania u os\u00f3b z astm\u0105 oskrzelow\u0105 i krztu\u015bcem (inhalacje mog\u0105 wywo\u0142a\u0107 skurcz krtani). Nie zbiera\u0107 surowca w rezerwatach i parkach narodowych."}, "pedy_majowe": {"ingr": "Olejek eteryczny (octan bornylu, limonen, pinen), Witamina C (bardzo wysokie st\u0119\u017cenie), Glikozydy (piceina), Garbniki, \u017bywice", "props": "Silnie wykrztu\u015bne, przeciwzapalne, witaminizuj\u0105ce, pobudzaj\u0105ce wydzielanie sok\u00f3w trawiennych.", "warn": "Zbi\u00f3r wierzcho\u0142k\u00f3w hamuje wzrost drzewa w g\u00f3r\u0119 \u2013 zbieraj tylko z bocznych ga\u0142\u0119zi."}, "zywica": {"ingr": "Kwasy \u017cywiczne, Terpentyna, Olejek eteryczny", "props": "Silnie bakteriob\u00f3jcze i grzybob\u00f3jcze. Wykorzystywana do produkcji ma\u015bci na rany i czyraki.", "warn": "Unika\u0107 stosowania u os\u00f3b z astm\u0105 oskrzelow\u0105 i krztu\u015bcem (inhalacje mog\u0105 wywo\u0142a\u0107 skurcz krtani). Nie zbiera\u0107 surowca w rezerwatach i parkach narodowych."}}'
+                                data-warnings="Unikać stosowania u osób z astmą oskrzelową i krztuścem (inhalacje mogą wywołać skurcz krtani). Nie zbierać surowca w rezerwatach i parkach narodowych.">
+                            Świerk pospolity
+                        </option>
+                    
+                        <option value="Żywokost lekarski"
+                                data-parts='{"korzen": {"ingr": "Alantoina (do 1.5% - rekordowa ilo\u015b\u0107), \u015aluzy (do 30%), Garbniki, Kwas rozmarynowy (silne dzia\u0142anie przeciwzapalne), Alkaloidy pirolizydynowe (symfytyna, echimidyna), Asparagina", "props": "Regeneruj\u0105ce tkank\u0119 kostn\u0105 i \u0142\u0105czn\u0105, przeciwzapalne, powlekaj\u0105ce, przyspieszaj\u0105ce ziarninowanie ran.", "warn": "Ze wzgl\u0119du na alkaloidy pirolizydynowe (toksyczno\u015b\u0107 dla w\u0105troby), wsp\u00f3\u0142czesna medycyna zaleca stosowanie WY\u0141\u0104CZNIE zewn\u0119trzne."}, "liscie": {"ingr": "", "props": "Stosowane g\u0142\u00f3wnie do ok\u0142ad\u00f3w na st\u0142uczenia oraz jako naw\u00f3z w ogrodnictwie.", "warn": "STOSOWA\u0106 WY\u0141\u0104CZNIE ZEWN\u0118TRZNIE. Alkaloidy pirolizydynowe mog\u0105 uszkodzi\u0107 w\u0105trob\u0119 przy spo\u017cyciu. Nie stosowa\u0107 na rany g\u0142\u0119bokie i zaka\u017cone (ryzyko uwi\u0119zienia infekcji pod szybko zrastaj\u0105c\u0105 si\u0119 tkank\u0105). Nie stosowa\u0107 u kobiet w ci\u0105\u017cy i dzieci."}}'
+                                data-warnings="STOSOWAĆ WYŁĄCZNIE ZEWNĘTRZNIE. Alkaloidy pirolizydynowe mogą uszkodzić wątrobę przy spożyciu. Nie stosować na rany głębokie i zakażone (ryzyko uwięzienia infekcji pod szybko zrastającą się tkanką). Nie stosować u kobiet w ciąży i dzieci.">
+                            Żywokost lekarski
+                        </option>
+                    
+                </select>
+            </div>
+        </div>
+
+        <div id="partsContainer" style="margin-top: 20px; display: none; padding: 20px; background: #f9f9f9; border: 1px solid #ddd;">
+            <strong style="display: block; margin-bottom: 15px; color: #3e4a3d; font-size: 1.1rem;">
+                Dostępne surowce (Kliknij kartę, aby dodać):
+            </strong>
+
+            <div id="partButtons" class="parts-grid"></div>
+
+            <div id="warningsContainer" style="margin-top: 20px; color: #c62828; font-size: 0.95rem; background: #ffebee; padding: 10px; border: 1px solid #ef9a9a; display: none;"></div>
+        </div>
+    </div>
+
+    <div class="lab-panel">
+        <h3 style="margin-top: 0; color: #2d5a27; display: flex; justify-content: space-between; align-items: center;">
+            2. Protokół Składników
+            <small style="font-size: 0.9rem; color: #666; font-weight: normal;">
+                <i class="bi bi-info-circle"></i> Zmiana wartości zamraża ją automatycznie 🔒
+            </small>
+        </h3>
+
+        <table class="lab-table">
+            <thead>
+                <tr>
+                    <th style="width: 30%;">Roślina (Surowiec)</th>
+                    <th style="width: 15%; text-align: center;">Waga (g)</th>
+                    <th style="width: 15%; text-align: center;">Płyn (ml)</th>
+                    <th style="width: 30%;">Składniki aktywne</th>
+                    <th style="width: 10%; text-align: center;">Usuń</th>
+                </tr>
+            </thead>
+            <tbody id="ingredientsTableBody"></tbody>
+            <tfoot style="font-weight: bold; background: #fdfaf0;">
+                <tr>
+                    <td style="padding: 15px;">RAZEM:</td>
+                    <td id="totalWeightDisplay" style="text-align: center;">0.0 g</td>
+                    <td id="totalVolumeDisplay" style="text-align: center;">0.0 ml</td>
+                    <td colspan="2"></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div id="alertBox" style="display: none; background: #ffebee; color: #c62828; padding: 10px; margin-top: 10px; border: 1px solid #ef9a9a;">
+            <strong>⚠️ Błąd:</strong> Suma składników przekracza docelową objętość! Zwiększ objętość całkowitą.
+        </div>
+    </div>
+
+    <hr style="margin: 50px 0; border-top: 1px double #d1c7a7;">
+
+    <div class="comments-section frozen-feature">
+        <h3 style="color: #3e4a3d;">Dziennik Laboratoryjny</h3>
+        
+            <div class="alert alert-warning text-center">Zaloguj się, aby prowadzić dziennik laboratoryjny.</div>
+        
+
+        <div class="comments-list">
+            
+                <p style="text-align: center; color: #999; font-style: italic;">Jeszcze brak wpisów w dzienniku.</p>
+            
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="warningModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="border: 2px solid #d32f2f; background: #fff5f5;">
+            <div class="modal-header" style="border-bottom: 1px solid #ffcdd2; background: #ffebee;">
+                <h5 class="modal-title" style="color: #c62828; font-weight: bold;">
+                    <i class="bi bi-exclamation-triangle-fill"></i> Ostrzeżenie
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="color: #333; font-size: 1.1rem;">
+                <p id="warningModalText">...</p>
+            </div>
+            <div class="modal-footer" style="border-top: 1px solid #ffcdd2; background: #ffebee;">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Rozumiem</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // --- ZMIENNE GLOBALNE ---
+    let ingredients = [];
+    let currentPlantName = "";
+    let currentPlantPartsData = {};
+    let currentPlantWarnings = ""; // NOWE: Przechowuje ogólne ostrzeżenie dla rośliny
+
+    const plantSelector = document.getElementById('plantSelector');
+    const partsContainer = document.getElementById('partsContainer');
+    const partButtons = document.getElementById('partButtons');
+    const warningsContainer = document.getElementById('warningsContainer');
+    const propSearch = document.getElementById('propSearch');
+    const plantCountBadge = document.getElementById('plantCountBadge');
+
+    // --- 1. FILTROWANIE ROŚLIN ---
+    propSearch.addEventListener('input', function() {
+        const filter = this.value.toLowerCase().trim();
+        const options = plantSelector.getElementsByTagName('option');
+        let visibleCount = 0;
+
+        for (let i = 0; i < options.length; i++) {
+            const opt = options[i];
+            if (opt.disabled) continue;
+
+            let partsData = {};
+            try { partsData = JSON.parse(opt.getAttribute('data-parts') || '{}'); } catch(e){}
+
+            let allProps = "";
+            for (let key in partsData) {
+                allProps += (partsData[key].props || "") + " ";
+            }
+            allProps = allProps.toLowerCase();
+
+            if (filter === "" || allProps.includes(filter)) {
+                opt.style.display = "";
+                visibleCount++;
+            } else {
+                opt.style.display = "none";
+            }
+        }
+        plantCountBadge.innerText = visibleCount + " pasujących";
+        plantSelector.value = "";
+        partsContainer.style.display = 'none';
+    });
+
+    // --- 2. WYBÓR ROŚLINY ---
+    plantSelector.addEventListener('change', function() {
+        const option = this.options[this.selectedIndex];
+
+        try {
+            currentPlantPartsData = JSON.parse(option.getAttribute('data-parts'));
+        } catch(e) {
+            currentPlantPartsData = {};
+        }
+
+        currentPlantName = option.value;
+
+        // Pobieramy ostrzeżenie ogólne (np. "Roślina toksyczna")
+        const warningsAttr = option.getAttribute('data-warnings');
+        currentPlantWarnings = (warningsAttr && warningsAttr !== 'None') ? warningsAttr : "";
+
+        // Wyświetlenie ostrzeżenia pod kartami (informacyjnie)
+        if (currentPlantWarnings.trim() !== '') {
+            warningsContainer.innerHTML = '<strong>⚠️ Ostrzeżenie dla gatunku:</strong> ' + currentPlantWarnings;
+            warningsContainer.style.display = 'block';
+        } else {
+            warningsContainer.style.display = 'none';
+        }
+
+        partButtons.innerHTML = '';
+        const partsKeys = Object.keys(currentPlantPartsData);
+
+        if (partsKeys.length > 0) {
+            partsKeys.forEach(partName => {
+                const data = currentPlantPartsData[partName];
+                const props = data.props || "Brak danych";
+                const ingr = data.ingr ? String(data.ingr) : "Brak danych";
+
+                let card = document.createElement('div');
+                card.className = 'part-card-btn';
+                card.onclick = () => addIngredientFromCurrent(partName);
+
+                card.innerHTML = `
+                    <div class="part-name">${partName}</div>
+                    <div class="part-info-block"><span class="part-info-label">Właściwości:</span> ${props}</div>
+                    <div class="part-info-block"><span class="part-info-label">Składniki:</span> <span style="color: #2d5a27;">${ingr}</span></div>
+                `;
+                partButtons.appendChild(card);
+            });
+        }
+        partsContainer.style.display = 'block';
+    });
+
+    // --- 3. DODAWANIE DO TABELI (POPRAWIONE) ---
+    function addIngredientFromCurrent(partName) {
+        const data = currentPlantPartsData[partName];
+
+        // --- LOGIKA OSTRZEŻEŃ ---
+        // 1. Sprawdź czy cześć ma swoje ostrzeżenie
+        let finalWarn = "";
+        if (data.warn && String(data.warn).trim() !== "") {
+            finalWarn = String(data.warn);
+        }
+        // 2. Jeśli nie ma, użyj ostrzeżenia ogólnego rośliny (fallback)
+        else if (currentPlantWarnings && currentPlantWarnings.trim() !== "") {
+            finalWarn = currentPlantWarnings;
+        }
+
+        ingredients.push({
+            id: Date.now(),
+            name: currentPlantName,
+            part: partName,
+            ingr: data.ingr || "Brak danych",
+            warn: finalWarn, // Zapisujemy znalezione ostrzeżenie
+            volume: 0,
+            locked: false
+        });
+        recalculate();
+        document.querySelector('.lab-table').scrollIntoView({behavior: 'smooth'});
+    }
+
+    function removeIngredient(id) {
+        ingredients = ingredients.filter(i => i.id !== id);
+        recalculate();
+    }
+
+    function toggleLock(id) {
+        const item = ingredients.find(i => i.id === id);
+        if (item) {
+            item.locked = !item.locked;
+            recalculate();
+        }
+    }
+
+    function updateVolume(id, val) {
+        const item = ingredients.find(i => i.id === id);
+        if (item) {
+            item.volume = parseFloat(val) || 0;
+            item.locked = true;
+            recalculate();
+        }
+    }
+
+    // --- 4. PRZELICZANIE ---
+    function recalculate() {
+        const totalVol = parseFloat(document.getElementById('totalVolume').value) || 0;
+        const ratio = parseFloat(document.getElementById('ratio').value) || 5;
+
+        let lockedVol = 0;
+        let unlockedCount = 0;
+
+        ingredients.forEach(i => {
+            if (i.locked) {
+                lockedVol += i.volume;
+            } else {
+                unlockedCount++;
+            }
+        });
+
+        let remaining = totalVol - lockedVol;
+        if (remaining < 0) remaining = 0;
+
+        const volPerItem = unlockedCount > 0 ? (remaining / unlockedCount) : 0;
+
+        ingredients.forEach(i => {
+            if (!i.locked) {
+                i.volume = volPerItem;
+            }
+            i.weight = i.volume / ratio;
+        });
+
+        render();
+    }
+
+    // --- 5. RENDEROWANIE TABELI ---
+    function render() {
+        const tbody = document.getElementById('ingredientsTableBody');
+        tbody.innerHTML = '';
+        let sumW = 0, sumV = 0;
+
+        ingredients.forEach(i => {
+            sumW += i.weight;
+            sumV += i.volume;
+
+            // Logika wyświetlania ikony ostrzeżenia
+            let warningHtml = '';
+            const warningText = i.warn ? String(i.warn) : "";
+
+            if (warningText.trim().length > 0) {
+                // Dodajemy klasę 'pulse' dla lepszej widoczności
+                warningHtml = `
+                    <button class="warning-btn" onclick="showWarning(${i.id})" title="Kliknij, aby zobaczyć ostrzeżenie">
+                        <i class="bi bi-exclamation-triangle-fill"></i>
+                    </button>
+                `;
+            }
+
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td style="text-align: left; vertical-align: top;">
+                    <div style="display: flex; align-items: center;">
+                        <strong style="color: #3e4a3d; font-size: 1.1rem; margin-right: 5px;">${i.name}</strong>
+                        ${warningHtml}
+                    </div>
+                    <small style="color: #666;">Surowiec: ${i.part}</small>
+                </td>
+                <td style="color: #2d5a27; font-weight: bold; text-align: center; vertical-align: top;">
+                    ${i.weight.toFixed(1)} g
+                </td>
+                <td style="text-align: center; position: relative; vertical-align: top;">
+                    <input type="number" class="vol-input" value="${i.volume.toFixed(1)}"
+                           onchange="updateVolume(${i.id}, this.value)">
+                    <button class="lock-btn ${i.locked ? 'locked' : ''}" onclick="toggleLock(${i.id})"
+                            style="position: absolute; right: 5px; top: 12px;">
+                        <i class="bi ${i.locked ? 'bi-lock-fill' : 'bi-unlock'}"></i>
+                    </button>
+                </td>
+                <td class="col-ingredients" style="vertical-align: top;">
+                    ${i.ingr}
+                </td>
+                <td style="text-align: center; vertical-align: top;">
+                    <button onclick="removeIngredient(${i.id})" class="delete-btn">&times;</button>
+                </td>
+            `;
+            tbody.appendChild(tr);
+        });
+
+        document.getElementById('totalWeightDisplay').innerText = sumW.toFixed(1) + ' g';
+        document.getElementById('totalVolumeDisplay').innerText = sumV.toFixed(1) + ' ml';
+
+        const totalSet = parseFloat(document.getElementById('totalVolume').value) || 0;
+        const alertBox = document.getElementById('alertBox');
+        if (sumV > totalSet + 1) {
+            alertBox.style.display = 'block';
+            document.getElementById('totalVolumeDisplay').style.color = '#c62828';
+        } else {
+            alertBox.style.display = 'none';
+            document.getElementById('totalVolumeDisplay').style.color = 'black';
+        }
+    }
+
+    function showWarning(id) {
+        const item = ingredients.find(i => i.id === id);
+        if (item && item.warn) {
+            document.getElementById('warningModalText').innerText = item.warn;
+            const modal = new bootstrap.Modal(document.getElementById('warningModal'));
+            modal.show();
+        }
+    }
+</script>
+
+</div>
+
+<footer>
+    <p>&copy; 1396 Kwiatownik - Akademicki Projekt Zielnika</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<div id="frozenModal" class="frozen-modal-overlay">
+    <div class="frozen-modal-content">
+        <span class="frozen-modal-close" onclick="closeFrozenModal()">&times;</span>
+        <h3 style="color: #2d5a27;"><i class="bi bi-info-circle"></i> Funkcja wstrzymana</h3>
+        <p class="mt-3">
+            Aby aplikacja mogła być dostępna za darmo i działać błyskawicznie, przeszliśmy na wersję statyczną.
+            Moduł logowania i komentarzy jest obecnie <strong>wyłączony</strong>.
+        </p>
+        <p>
+            Jeśli projekt Ci się podoba i chcesz wesprzeć jego rozwój, możesz postawić mi wirtualną kawę! 🌱
+        </p>
+        <a href="https://buycoffee.to/miguana" target="_blank" class="btn btn-warning mt-3 fw-bold" style="background-color: #d4a017; border: none; color: white; padding: 10px 20px;">
+            <i class="bi bi-cup-hot"></i> Postaw Kawę
+        </a>
+    </div>
+</div>
+
+<script>
+    const frozenElements = document.querySelectorAll('.frozen-feature');
+    const modal = document.getElementById('frozenModal'); // Jeśli nie ma HTMLa wyżej, to tutaj wyskakuje Twój błąd (null)
+
+    frozenElements.forEach(el => {
+        el.addEventListener('click', function(e) {
+            e.preventDefault();
+            if(modal) { // Zabezpieczenie, żeby skrypt nie "wybuchał"
+                modal.style.display = "block";
+            } else {
+                console.error("Nie znaleziono okienka frozenModal w kodzie HTML!");
+            }
+        });
+    });
+
+    function closeFrozenModal() {
+        if(modal) modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            closeFrozenModal();
+        }
+    }
+</script>
+
+</body>
+</html>

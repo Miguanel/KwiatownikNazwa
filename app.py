@@ -395,6 +395,8 @@ def generator():
 
     return render_template('generator.html', plants=plants_data, suggestions=sorted(list(all_properties)),
                            comments=comments)
+
+
 # --- AUTENTYKACJA ---
 
 @app.route('/register', methods=['GET', 'POST'])
@@ -434,6 +436,7 @@ def login():
 def logout():
     logout_user()
     return redirect(url_for('index'))
+
 
 # Przepisy
 
@@ -538,6 +541,51 @@ def recipe_suggestions():
 
     # Sortujemy alfabetycznie
     return jsonify(sorted(list(keywords)))
+
+
+@app.route('/api/all_recipes.json')
+def api_all_recipes():
+    """Endpoint dla wersji statycznej - zwraca wszystkie przepisy w jednym pliku"""
+    all_recipes = []
+
+    # Ścieżki do plików z przepisami
+    med_path = os.path.join('data', 'przepisy', 'przepisy_medyczne.json')
+    kul_path = os.path.join('data', 'przepisy', 'przepisy_kulinarne.json')
+
+    # Ładowanie medycznych
+    if os.path.exists(med_path):
+        with open(med_path, 'r', encoding='utf-8') as f:
+            try:
+                all_recipes.extend(json.load(f))
+            except json.JSONDecodeError:
+                pass
+
+    # Ładowanie kulinarnych
+    if os.path.exists(kul_path):
+        with open(kul_path, 'r', encoding='utf-8') as f:
+            try:
+                all_recipes.extend(json.load(f))
+            except json.JSONDecodeError:
+                pass
+
+    return jsonify(all_recipes)
+
+
+@app.route('/api/all_plants.json')
+def api_all_plants():
+    """Endpoint dla wersji statycznej - zwraca całą bazę w jednym pliku"""
+    all_plants_data = []
+
+    # Zakładam, że get_all_plants_list() to Twoja funkcja zwracająca listę ID (np. ['wrotycz_pospolity', ...])
+    for pid in get_all_plants_list():
+        data = get_plant_data(pid)
+        if data:
+            data['slug'] = pid  # Dodajemy slug, żeby JavaScript wiedział, jak zbudować link do rośliny
+            all_plants_data.append(data)
+
+    return jsonify(all_plants_data)
+
+
 if __name__ == '__main__':
     with app.app_context():
         if not os.path.exists(app.config['JSON_DATA_FOLDER']):

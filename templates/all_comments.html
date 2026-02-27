@@ -4,7 +4,7 @@
 <h1>Forum Kwiatownika</h1>
 <p>Tutaj znajdziesz wszystkie opinie użytkowników oraz możesz zostawić komentarz ogólny.</p>
 
-<section style="background: #eee; padding: 20px; border-radius: 5px; margin-bottom: 30px;">
+<section class="frozen-feature" style="background: #eee; padding: 20px; border-radius: 5px; margin-bottom: 30px;">
     <h3>Dodaj komentarz ogólny</h3>
     {% if current_user.is_authenticated %}
         <form action="{{ url_for('all_comments') }}" method="POST">

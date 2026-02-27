@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwiatownik - Cyfrowy Zielnik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body { font-family: 'Crimson Text', serif; background-color: #f4f1ea; color: #2c2c2c; margin: 0; }
+        nav { background-color: #3e4a3d; color: white; padding: 1rem; display: flex; justify-content: space-between; }
+        nav a { color: white; text-decoration: none; margin: 0 10px; }
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .flash { padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 4px; }
+        .flash-success { background-color: #d4edda; color: #155724; }
+        .flash-danger { background-color: #f8d7da; color: #721c24; }
+        footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #666; }
+    </style>
+    <style>
+        /* Nadpisanie Bootstrapa, żeby nie psuł tła i fontów */
+        body {
+            font-family: 'Crimson Text', serif;
+            background-color: #f4f1ea;
+            color: #2c2c2c;
+            margin: 0;
+        }
+        /* Reszta Twoich stylów lokalnych z base.html... */
+        nav { background-color: #3e4a3d; color: white; padding: 1rem; display: flex; justify-content: space-between; }
+        nav a { color: white; text-decoration: none; margin: 0 10px; }
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .flash { padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 4px; }
+        .flash-success { background-color: #d4edda; color: #155724; }
+        .flash-danger { background-color: #f8d7da; color: #721c24; }
+        footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #666; }
+
+        /* FIX dla linków w nawigacji (Bootstrap lubi je zmieniać na niebieskie) */
+        nav a { color: white !important; text-decoration: none; }
+        a { text-decoration: none; color: inherit; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div>
+        <a href="/"><strong>🌿 Kwiatownik</strong></a>
+        <a href="/generator"><strong>🌿 Generatory</strong></a>
+        <a href="/przepisy"><strong>🌿 Przepisy</strong></a>
+        <a href="/gildie"><strong>🌿 Gildie</strong></a>
+        <a href="#" class="frozen-feature">Wszystkie Komentarze</a>
+    </div>
+    <div class="frozen-feature" title="Logowanie wyłączone w wersji statycznej">
+        <a href="#">Logowanie</a>
+        <a href="#">Rejestracja</a>
+    </div>
+</nav>
+
+<div class="container">
+    
+      
+    
+
+    
+<article class="plant-detail-container">
+
+    <header style="text-align: center; margin-bottom: 40px;">
+        <h1 style="font-size: 3.5rem; margin-bottom: 5px; color: #3e4a3d;">Kozłek lekarski (Waleriana)</h1>
+        <p style="font-style: italic; color: #5a6b5a; font-size: 1.4rem; font-family: 'Playfair Display', serif;">
+            Valeriana officinalis <span style="font-size: 1rem; color: #888;">| Rodzina: Kozłkowate (Valerianaceae)</span>
+        </p>
+        <div style="width: 120px; height: 4px; background: #b8860b; margin: 20px auto;"></div>
+        <p style="max-width: 800px; margin: 0 auto; font-size: 1.15rem; line-height: 1.8;">Wieloletnia, wysoka bylina (do 1,5 m) występująca na wilgotnych łąkach i w zaroślach. Charakteryzuje się baldachowatymi kwiatostanami o słodkim, mdłym zapachu, które w miarę suszenia korzenia zmieniają się w bardzo intensywny, charakterystyczny aromat. Kozłek jest jednym z najstarszych znanych ludzkości środków uspokajających, stosowanym już w starożytnej Grecji i Rzymie jako &#39;panaceum&#39; na dolegliwości nerwowe.</p>
+    </header>
+
+    <div class="row g-4 mb-5">
+        
+        <div class="col-md-6">
+            <div class="info-card h-100">
+                <h4 class="card-header-custom"><i class="bi bi-fire"></i> Profil Energetyczny</h4>
+                <div class="p-3">
+                    <ul class="list-unstyled">
+                        <li><strong>Smak:</strong> Ostry, gorzki, lekko słodkawy</li>
+                        <li><strong>Termika:</strong> Ciepła</li>
+                        <li><strong>Wilgotność:</strong> Osuszająca</li>
+                        <li><strong>Żywioł:</strong> Ziemia i Woda</li>
+                    </ul>
+                    <p class="small text-muted mt-2 border-top pt-2"><em>"Kozłek to &#39;kotwica emocjonalna&#39;. Jego energia sprowadza nadmiar rozproszonego Qi z głowy w dół, uziemiając i uspokajając gonitwę myśli. Działa rozkurczowo na fizyczne napięcia powstałe pod wpływem stresu (tzw. &#39;ścisk w żołądku&#39;)."</em></p>
+                </div>
+            </div>
+        </div>
+        
+
+        
+        <div class="col-md-6">
+            <div class="info-card h-100" style="border-color: #5a6b5a;">
+                <h4 class="card-header-custom" style="background: #e9f0e8; color: #2d5a27;"><i class="bi bi-flower1"></i> Wymagania Siedliskowe</h4>
+                <div class="p-3">
+
+                    <div class="d-flex justify-content-between align-items-start mb-3 border-bottom border-secondary-subtle pb-2">
+                        <span style="min-width: 140px; font-weight: bold; color: #2d5a27;">Stanowisko:</span>
+                        <span style="text-align: right; font-weight: 600; line-height: 1.3;">Słoneczne do półcienistego. Najlepiej czuje się w miejscach jasnych, ale o wilgotnym powietrzu.</span>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-start mb-3 border-bottom border-secondary-subtle pb-2">
+                        <span style="min-width: 100px; font-weight: bold; color: #2d5a27;">Gleba:</span>
+                        <span style="text-align: right; font-weight: 600; line-height: 1.3;">Żyzna, próchniczna, wilgotna, zasobna w wapń. Kocha doliny rzeczne i torfowiska.</span>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-start mb-3 border-bottom border-secondary-subtle pb-2">
+                        <span style="min-width: 100px; font-weight: bold; color: #2d5a27;">Woda:</span>
+                        <span style="text-align: right; font-weight: 600; line-height: 1.3;">Wysokie zapotrzebowanie; w czasie suszy korzeń drewnieje i traci wartość leczniczą.</span>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-start">
+                        <span style="min-width: 160px; font-weight: bold; color: #2d5a27;">Mrozoodporność:</span>
+                        <span style="text-align: right; font-weight: 600; line-height: 1.3;">Strefa 4 (Całkowicie mrozoodporny).</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    
+    <section class="mb-5 p-4" style="background: #fff; border: 1px dashed #3e4a3d;">
+        <h3 style="color: #3e4a3d;"><i class="bi bi-search"></i> Jak rozpoznać?</h3>
+        <ul style="margin-bottom: 20px;">
+            
+                <li>Liście nieparzystopierzaste, naprzeciwległe, z licznymi listkami (często ząbkowanymi).</li>
+            
+                <li>Kwiaty drobne, białe lub bladoróżowe, zebrane w gęste baldachogrona na szczycie pędu.</li>
+            
+                <li>Kłącze krótkie, grube, z licznymi cienkimi korzonkami – po przełamaniu wydziela &#39;zapach waleriany&#39;.</li>
+            
+                <li>Łodyga pusta w środku, bruzdowana.</li>
+            
+        </ul>
+
+        
+        <div class="alert alert-warning">
+            <strong>⚠️ Możliwe pomyłki:</strong>
+            <ul class="mb-0 mt-2">
+                
+                    <li>
+                        <strong>Głowaczek olbrzymi (Cephalaria gigantea):</strong> Ma znacznie większe, kuliste, żółtawe kwiatostany i nie posiada charakterystycznego zapachu korzenia.
+                    </li>
+                
+            </ul>
+        </div>
+        
+    </section>
+    
+
+    <hr style="margin: 50px 0; border-top: 1px double #d1c7a7;">
+
+    <section class="morphology-section mb-5">
+        <h2 style="text-align: center; margin-bottom: 30px;">Surowce Zielarskie</h2>
+        <div class="parts-grid">
+            
+            <div class="part-card">
+                <span class="part-badge">korzen_i_klacze</span>
+                <h3 class="mt-2 text-capitalize">Radix Valerianae cum Rhizomate</h3>
+                <p class="text-muted small mb-2">Wykopywane jesienią (wrzesień/październik) lub wczesną wiosną u roślin dwuletnich.</p>
+
+                <div class="mb-3">
+                    <strong>Działanie:</strong><br>
+                    Silnie uspokajające, ułatwiające zasypianie, rozkurczowe (mięśnie gładkie), obniżające pobudliwość kory mózgowej.
+                </div>
+
+                <div class="ingredients-box">
+                    <strong>Składniki aktywne:</strong>
+                    <div class="d-flex flex-wrap gap-1 mt-1">
+                        
+                            
+                                <span class="chem-tag">Waleropotriaty (działanie uspokajające)</span>
+                            
+                                <span class="chem-tag">Olejek eteryczny (kwas walerenowy - hamuje rozkład GABA w mózgu)</span>
+                            
+                                <span class="chem-tag">Alkaloidy pirydynowe</span>
+                            
+                                <span class="chem-tag">Garbniki</span>
+                            
+                                <span class="chem-tag">Kwasy organiczne</span>
+                            
+                        
+                    </div>
+                </div>
+
+                
+                <div class="mt-2 text-danger small">
+                    <strong>⚠️ Uwaga:</strong> Suszyć w temp. do 35°C. Zapach korzenia jest bardzo atrakcyjny dla kotów – należy chronić suszarnię!
+                </div>
+                
+
+                <div class="mt-3 pt-2 border-top text-end small text-muted">
+                    🕒 Zbiór: <strong>Wrzesień - Październik.</strong>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    
+    <section class="mb-5">
+        <h2 style="text-align: center; margin-bottom: 30px;">Zastosowanie Praktyczne</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="use-card h-100">
+                    <h4 style="color: #8b0000;"><i class="bi bi-bandaid"></i> Medycyna</h4>
+                    <p>Bezsenność, stany lękowe, nerwice serca i przewodu pokarmowego, bolesne miesiączki, migreny na tle nerwowym, trudności w koncentracji wywołane stresem.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="use-card h-100">
+                    <h4 style="color: #d4a017;"><i class="bi bi-cup-hot"></i> Kuchnia</h4>
+                    <p>BRAK. Roślina o bardzo specyficznym smaku, używana wyłącznie jako lek.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="use-card h-100">
+                    <h4 style="color: #5d4037;"><i class="bi bi-tools"></i> Rzemiosło</h4>
+                    <p>Wyciągi z kozłka są stosowane w rolnictwie biodynamicznym do wzmacniania odporności roślin na przymrozki (opryski).</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="use-card h-100">
+                    <h4 style="color: #2d5a27;"><i class="bi bi-tree"></i> Ogród</h4>
+                    <p>Roślina miododajna, przyciąga wiele gatunków owadów zapylających. W ogrodach ozdobnych ceniona za ażurowy pokrój.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <section class="safety-section p-4 mb-5" style="border-left: 5px solid #c62828; background: #fff5f5; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+        <h3 style="color: #c62828;"><i class="bi bi-exclamation-octagon-fill"></i> Bezpieczeństwo i Interakcje</h3>
+
+        
+        <div class="mb-3">
+            <strong>💊 Interakcje z lekami:</strong>
+            <p>Nasila działanie leków nasennych, uspokajających i przeciwdepresyjnych. Nie łączyć z alkoholem. Może osłabiać koncentrację (ostrożnie przy prowadzeniu pojazdów).</p>
+        </div>
+        
+
+        
+        <div>
+            <strong>🚫 Przeciwwskazania ogólne:</strong>
+            <p>Nie stosować u dzieci poniżej 12 roku życia bez konsultacji. U niektórych osób kozłek może powodować tzw. &#39;hangover&#39; (ociężałość poranną). Przerwać stosowanie co najmniej 2 tygodnie przed planowaną operacją (wpływ na narkozę).</p>
+        </div>
+        
+    </section>
+    
+
+    <div class="row g-5 mb-5">
+        <div class="col-lg-6">
+            <h3 class="section-title">Kalendarz Biodynamiczny</h3>
+            <div class="calendar-list">
+                
+                <div class="calendar-item mb-3 p-3 bg-white border">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <strong>Wykopywanie korzeni</strong>
+                        <span class="badge bg-secondary ms-2">Miesiąc: 10</span>
+                    </div>
+                    <p class="small mb-2 mt-2">Pozyskiwanie surowca z roślin dwuletnich. Korzenie należy szybko umyć i rozdrobnić przed suszeniem.</p>
+
+                    <div class="d-flex flex-wrap gap-2 mt-2">
+                        <span class="badge bg-light text-dark border" style="white-space: normal; text-align: left; line-height: 1.4;">
+                            🌑 Nów (faza korzenia)
+                        </span>
+                        <span class="badge bg-light text-dark border" style="white-space: normal; text-align: left; line-height: 1.4;">
+                            ☁️ 
+                        </span>
+                        
+                        <span class="badge bg-light text-dark border" style="white-space: normal; text-align: left; line-height: 1.4; background-color: #fdfaf0 !important;">
+                            ✨ Maksymalizuje siłę działania waleropotriatów.
+                        </span>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <h3 class="section-title">Permakultura</h3>
+            <div class="bg-white p-4 border h-100">
+                <p><strong>Funkcje w ekosystemie:</strong></p>
+                <ul>
+                    
+                        <li>Dynamiczny akumulator fosforu.</li>
+                    
+                        <li>Wspomaganie aktywności dżdżownic w glebie.</li>
+                    
+                        <li>Kluczowy składnik preparatów biodynamicznych (preparat 507).</li>
+                    
+                        <li>Siedlisko dla bzygów.</li>
+                    
+                </ul>
+
+                <p class="mt-4"><strong>Gildia (Dobrzy sąsiedzi):</strong></p>
+                <div class="d-flex flex-wrap gap-2">
+                    
+                        <span class="badge bg-success p-2">
+                            Pomidory
+                        </span>
+                    
+                        <span class="badge bg-success p-2">
+                            Żywokost
+                        </span>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <section class="mb-5 p-4" style="background: #e9f0e8; border-radius: 8px;">
+        <h3>💡 Czy wiesz, że...</h3>
+        <ul>
+            
+                <li class="mb-2">Zapach schnącego korzenia kozłka działa na koty jak silny afrodyzjak i narkotyk (podobny do kocimiętki) – koty potrafią wygrzebać świeżo posadzony korzeń z ziemi.</li>
+            
+                <li class="mb-2">W średniowieczu wierzono, że kozłek chroni przed czarami i elfami, dlatego wieszano go nad drzwiami domów.</li>
+            
+                <li class="mb-2">Kwas walerenowy działa na receptory GABA w mózgu w podobny sposób jak benzodiazepiny (np. Valium), ale w sposób znacznie łagodniejszy i bez potencjału uzależniającego.</li>
+            
+                <li class="mb-2">Nazwa &#39;waleriana&#39; pochodzi prawdopodobnie od łacińskiego &#39;valere&#39; – być zdrowym, silnym.</li>
+            
+                <li class="mb-2">Szczurołap z Hameln według niektórych legend używał korzenia kozłka, aby zwabić szczury, które (podobnie jak koty) są wrażliwe na ten zapach.</li>
+            
+        </ul>
+    </section>
+    
+
+    <hr style="margin: 50px 0;">
+
+    <section class="comments-section frozen-feature">
+        <h3>📝 Notatki i Obserwacje</h3>
+
+        
+            <div class="alert alert-light border text-center">
+                <a href="/login">Zaloguj się</a>, aby dodawać notatki.
+            </div>
+        
+
+        <div class="comments-list">
+            
+        </div>
+    </section>
+
+</article>
+
+<style>
+    .info-card {
+        background: #fff;
+        border: 1px solid #b8860b;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    .card-header-custom {
+        background: #fff8e1;
+        color: #b8860b;
+        padding: 10px 15px;
+        margin: 0;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+        font-family: 'Playfair Display', serif;
+    }
+
+    .parts-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+    .part-card {
+        background: #fff;
+        border: 1px solid #d1c7a7;
+        padding: 25px;
+        position: relative;
+        transition: transform 0.2s;
+    }
+    .part-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+    .part-badge {
+        position: absolute; top: -10px; right: 20px;
+        background: #3e4a3d; color: white;
+        padding: 4px 12px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px;
+    }
+
+    .chem-tag {
+        background: #f1f8e9; color: #33691e;
+        border: 1px solid #dcedc8;
+        padding: 2px 8px; font-size: 0.8rem; border-radius: 10px;
+    }
+
+    .use-card {
+        background: #fff;
+        padding: 20px;
+        border-left: 4px solid #ddd;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+    .section-title {
+        border-bottom: 2px solid #3e4a3d;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        color: #3e4a3d;
+    }
+</style>
+
+</div>
+
+<footer>
+    <p>&copy; 1396 Kwiatownik - Akademicki Projekt Zielnika</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<div id="frozenModal" class="frozen-modal-overlay">
+    <div class="frozen-modal-content">
+        <span class="frozen-modal-close" onclick="closeFrozenModal()">&times;</span>
+        <h3 style="color: #2d5a27;"><i class="bi bi-info-circle"></i> Funkcja wstrzymana</h3>
+        <p class="mt-3">
+            Aby aplikacja mogła być dostępna za darmo i działać błyskawicznie, przeszliśmy na wersję statyczną.
+            Moduł logowania i komentarzy jest obecnie <strong>wyłączony</strong>.
+        </p>
+        <p>
+            Jeśli projekt Ci się podoba i chcesz wesprzeć jego rozwój, możesz postawić mi wirtualną kawę! 🌱
+        </p>
+        <a href="https://buycoffee.to/miguana" target="_blank" class="btn btn-warning mt-3 fw-bold" style="background-color: #d4a017; border: none; color: white; padding: 10px 20px;">
+            <i class="bi bi-cup-hot"></i> Postaw Kawę
+        </a>
+    </div>
+</div>
+
+<script>
+    const frozenElements = document.querySelectorAll('.frozen-feature');
+    const modal = document.getElementById('frozenModal'); // Jeśli nie ma HTMLa wyżej, to tutaj wyskakuje Twój błąd (null)
+
+    frozenElements.forEach(el => {
+        el.addEventListener('click', function(e) {
+            e.preventDefault();
+            if(modal) { // Zabezpieczenie, żeby skrypt nie "wybuchał"
+                modal.style.display = "block";
+            } else {
+                console.error("Nie znaleziono okienka frozenModal w kodzie HTML!");
+            }
+        });
+    });
+
+    function closeFrozenModal() {
+        if(modal) modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            closeFrozenModal();
+        }
+    }
+</script>
+
+</body>
+</html>
