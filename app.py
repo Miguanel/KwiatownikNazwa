@@ -120,7 +120,7 @@ def index():
     return render_template('index.html', plants=plants)
 
 
-@app.route('/plant/<plant_id>')
+@app.route('/plant/<plant_id>/')
 def plant_detail(plant_id):
     plant_data = get_plant_data(plant_id)
     if not plant_data:
@@ -399,7 +399,7 @@ def generator():
 
 # --- AUTENTYKACJA ---
 
-@app.route('/register', methods=['GET', 'POST'])
+@app.route('/register/', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
         username = request.form.get('username')
@@ -421,7 +421,7 @@ def register():
     return render_template('register.html')
 
 
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('/login/', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
         user = User.query.filter_by(username=request.form.get('username')).first()
@@ -432,7 +432,7 @@ def login():
     return render_template('login.html')
 
 
-@app.route('/logout')
+@app.route('/logout/')
 def logout():
     logout_user()
     return redirect(url_for('index'))

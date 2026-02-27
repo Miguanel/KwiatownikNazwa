@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwiatownik - Cyfrowy Zielnik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body { font-family: 'Crimson Text', serif; background-color: #f4f1ea; color: #2c2c2c; margin: 0; }
+        nav { background-color: #3e4a3d; color: white; padding: 1rem; display: flex; justify-content: space-between; }
+        nav a { color: white; text-decoration: none; margin: 0 10px; }
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .flash { padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 4px; }
+        .flash-success { background-color: #d4edda; color: #155724; }
+        .flash-danger { background-color: #f8d7da; color: #721c24; }
+        footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #666; }
+    </style>
+    <style>
+        /* Nadpisanie Bootstrapa, żeby nie psuł tła i fontów */
+        body {
+            font-family: 'Crimson Text', serif;
+            background-color: #f4f1ea;
+            color: #2c2c2c;
+            margin: 0;
+        }
+        /* Reszta Twoich stylów lokalnych z base.html... */
+        nav { background-color: #3e4a3d; color: white; padding: 1rem; display: flex; justify-content: space-between; }
+        nav a { color: white; text-decoration: none; margin: 0 10px; }
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .flash { padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 4px; }
+        .flash-success { background-color: #d4edda; color: #155724; }
+        .flash-danger { background-color: #f8d7da; color: #721c24; }
+        footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #666; }
+
+        /* FIX dla linków w nawigacji (Bootstrap lubi je zmieniać na niebieskie) */
+        nav a { color: white !important; text-decoration: none; }
+        a { text-decoration: none; color: inherit; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div>
+        <a href="/"><strong>🌿 Kwiatownik</strong></a>
+        <a href="/generator/"><strong>🌿 Generatory</strong></a>
+        <a href="/przepisy/"><strong>🌿 Przepisy</strong></a>
+        <a href="/gildie/"><strong>🌿 Gildie</strong></a>
+        <a href="#" class="frozen-feature">Wszystkie Komentarze</a>
+    </div>
+    <div class="frozen-feature" title="Logowanie wyłączone w wersji statycznej">
+        <a href="#">Logowanie</a>
+        <a href="#">Rejestracja</a>
+    </div>
+</nav>
+
+<div class="container">
+    
+      
+    
+
+    
+<article class="plant-detail-container">
+
+    <header style="text-align: center; margin-bottom: 40px;">
+        <h1 style="font-size: 3.5rem; margin-bottom: 5px; color: #3e4a3d;">Skrzyp polny</h1>
+        <p style="font-style: italic; color: #5a6b5a; font-size: 1.4rem; font-family: 'Playfair Display', serif;">
+            Equisetum arvense <span style="font-size: 1rem; color: #888;">| Rodzina: Skrzypowate (Equisetaceae)</span>
+        </p>
+        <div style="width: 120px; height: 4px; background: #b8860b; margin: 20px auto;"></div>
+        <p style="max-width: 800px; margin: 0 auto; font-size: 1.15rem; line-height: 1.8;">Wieloletnia roślina zarodnikowa o unikalnym cyklu życiowym, wykształcająca dwa rodzaje pędów: wiosenne (brązowe, płonne) oraz letnie (zielone, ulistnione). Jest żywą skamieliną, której przodkowie dominowali na Ziemi w karbonie. Skrzyp słynie z niezwykle wysokiej zawartości krzemionki, która nadaje mu szorstkość i czyni go jednym z najlepszych naturalnych surowców wzmacniających tkankę łączną, kości oraz naczynia krwionośne.</p>
+    </header>
+
+    <div class="row g-4 mb-5">
+        
+        <div class="col-md-6">
+            <div class="info-card h-100">
+                <h4 class="card-header-custom"><i class="bi bi-fire"></i> Profil Energetyczny</h4>
+                <div class="p-3">
+                    <ul class="list-unstyled">
+                        <li><strong>Smak:</strong> Słony, lekko słodki, cierpki</li>
+                        <li><strong>Termika:</strong> Chłodna</li>
+                        <li><strong>Wilgotność:</strong> Osuszająca</li>
+                        <li><strong>Żywioł:</strong> Ziemia i Woda</li>
+                    </ul>
+                    <p class="small text-muted mt-2 border-top pt-2"><em>"Skrzyp działa jak &#39;architekt&#39; organizmu. Dostarcza struktury tam, gdzie tkanki stają się wiotkie lub kruche. Wyciąga nadmiar wilgoci z dolnego ogrzewacza (pęcherz, nerki), jednocześnie &#39;utwardzając&#39; bariery ochronne ciała."</em></p>
+                </div>
+            </div>
+        </div>
+        
+
+        
+        <div class="col-md-6">
+            <div class="info-card h-100" style="border-color: #5a6b5a;">
+                <h4 class="card-header-custom" style="background: #e9f0e8; color: #2d5a27;"><i class="bi bi-flower1"></i> Wymagania Siedliskowe</h4>
+                <div class="p-3">
+
+                    <div class="d-flex justify-content-between align-items-start mb-3 border-bottom border-secondary-subtle pb-2">
+                        <span style="min-width: 140px; font-weight: bold; color: #2d5a27;">Stanowisko:</span>
+                        <span style="text-align: right; font-weight: 600; line-height: 1.3;">Pełne słońce do półcienia.</span>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-start mb-3 border-bottom border-secondary-subtle pb-2">
+                        <span style="min-width: 100px; font-weight: bold; color: #2d5a27;">Gleba:</span>
+                        <span style="text-align: right; font-weight: 600; line-height: 1.3;">Wilgotna, gliniasto-piaszczysta, zasobna w krzemionkę. Jest rośliną wskaźnikową gleb wilgotnych i kwaśnych, ale adaptuje się do niemal każdych warunków.</span>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-start mb-3 border-bottom border-secondary-subtle pb-2">
+                        <span style="min-width: 100px; font-weight: bold; color: #2d5a27;">Woda:</span>
+                        <span style="text-align: right; font-weight: 600; line-height: 1.3;">Lubi dużą wilgotność podłoża; często spotykany na brzegach rowów, nasypach i polach o wysokim poziomie wód gruntowych.</span>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-start">
+                        <span style="min-width: 160px; font-weight: bold; color: #2d5a27;">Mrozoodporność:</span>
+                        <span style="text-align: right; font-weight: 600; line-height: 1.3;">Strefa 3 (Całkowicie odporny, zimuje w postaci głębokich kłączy).</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    
+    <section class="mb-5 p-4" style="background: #fff; border: 1px dashed #3e4a3d;">
+        <h3 style="color: #3e4a3d;"><i class="bi bi-search"></i> Jak rozpoznać?</h3>
+        <ul style="margin-bottom: 20px;">
+            
+                <li>Występowanie dwóch pędów: brązowy wiosenny (z kłosem zarodnikowym) oraz zielony letni (przypominający małą choinkę).</li>
+            
+                <li>Zielone pędy są szorstkie w dotyku (ze względu na kryształki krzemu).</li>
+            
+                <li>Pierwszy człon gałązek bocznych jest DŁUŻSZY niż pochwa liściowa na pędzie głównym (kluczowa cecha odróżniająca od gatunków trujących).</li>
+            
+                <li>Łodyga pędu letniego jest pusta w środku.</li>
+            
+        </ul>
+
+        
+        <div class="alert alert-warning">
+            <strong>⚠️ Możliwe pomyłki:</strong>
+            <ul class="mb-0 mt-2">
+                
+                    <li>
+                        <strong>Skrzyp błotny (Equisetum palustre):</strong> UWAGA: Silnie toksyczny! U skrzypu błotnego pierwszy człon gałązki jest KRÓTSZY niż pochwa pędu głównego. Skrzyp błotny zawiera trujące alkaloidy (błotniarkę).
+                    </li>
+                
+                    <li>
+                        <strong>Skrzyp leśny (Equisetum sylvaticum):</strong> Ma gałązki wielokrotnie rozgałęzione, co nadaje mu bardzo delikatny, &#39;puchaty&#39; wygląd.
+                    </li>
+                
+            </ul>
+        </div>
+        
+    </section>
+    
+
+    <hr style="margin: 50px 0; border-top: 1px double #d1c7a7;">
+
+    <section class="morphology-section mb-5">
+        <h2 style="text-align: center; margin-bottom: 30px;">Surowce Zielarskie</h2>
+        <div class="parts-grid">
+            
+            <div class="part-card">
+                <span class="part-badge">ziele</span>
+                <h3 class="mt-2 text-capitalize">Herba Equiseti</h3>
+                <p class="text-muted small mb-2">Zielone pędy letnie zbierane od czerwca do sierpnia, gdy są w pełni wykształcone i sprężyste.</p>
+
+                <div class="mb-3">
+                    <strong>Działanie:</strong><br>
+                    Moczopędne (zwiększa wydalanie chlorków), przeciwobrzękowe, remineralizujące (odbudowa kości i stawów), przeciwkrwotoczne, poprawiające stan skóry, włosów i paznokci.
+                </div>
+
+                <div class="ingredients-box">
+                    <strong>Składniki aktywne:</strong>
+                    <div class="d-flex flex-wrap gap-1 mt-1">
+                        
+                            
+                                <span class="chem-tag">Krzemionka rozpuszczalna (do 10% - kwas krzemowy)</span>
+                            
+                                <span class="chem-tag">Flawonoidy (ekwizetryna, izokwercytryna)</span>
+                            
+                                <span class="chem-tag">Saponiny (ekwizetonina)</span>
+                            
+                                <span class="chem-tag">Kwasy organiczne (akonitowy, jabłkowy)</span>
+                            
+                                <span class="chem-tag">Sole mineralne (potas, magnez, mangan)</span>
+                            
+                                <span class="chem-tag">Fitosterole</span>
+                            
+                        
+                    </div>
+                </div>
+
+                
+                <div class="mt-2 text-danger small">
+                    <strong>⚠️ Uwaga:</strong> Długotrwałe stosowanie może powodować niedobór witaminy B1 (tiaminy) ze względu na zawartość enzymu antywitaminowego – antytiaminazy.
+                </div>
+                
+
+                <div class="mt-3 pt-2 border-top text-end small text-muted">
+                    🕒 Zbiór: <strong>Czerwiec - Sierpień.</strong>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    
+    <section class="mb-5">
+        <h2 style="text-align: center; margin-bottom: 30px;">Zastosowanie Praktyczne</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="use-card h-100">
+                    <h4 style="color: #8b0000;"><i class="bi bi-bandaid"></i> Medycyna</h4>
+                    <p>Kamica nerkowa (płukanie piasku), krwawienia z dróg moczowych, łamliwość paznokci, wypadanie włosów, osteoporoza (wspomaganie zrostu kości), miażdżyca (uszczelnianie naczyń).</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="use-card h-100">
+                    <h4 style="color: #d4a017;"><i class="bi bi-cup-hot"></i> Kuchnia</h4>
+                    <p>Młode pędy wiosenne w niektórych kulturach (np. Japonia - &#39;tsukushi&#39;) są spożywane po ugotowaniu jako warzywo, jednak w Polsce stosuje się głównie ziele letnie do celów leczniczych.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="use-card h-100">
+                    <h4 style="color: #5d4037;"><i class="bi bi-tools"></i> Rzemiosło</h4>
+                    <p>Sztywne pędy skrzypu, ze względu na zawartość krzemu, były dawniej używane jako naturalny papier ścierny do polerowania drewna, cyny i mosiądzu (stąd nazwa &#39;cyna-zioło&#39;).</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="use-card h-100">
+                    <h4 style="color: #2d5a27;"><i class="bi bi-tree"></i> Ogród</h4>
+                    <p>Niezastąpiony surowiec do sporządzania odwarów chroniących inne rośliny przed chorobami grzybowymi (mączniak, rdza). Krzemionka ze skrzypu &#39;utwardza&#39; ściany komórkowe liści, czyniąc je nieprzebijalnymi dla grzybni.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <section class="safety-section p-4 mb-5" style="border-left: 5px solid #c62828; background: #fff5f5; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+        <h3 style="color: #c62828;"><i class="bi bi-exclamation-octagon-fill"></i> Bezpieczeństwo i Interakcje</h3>
+
+        
+        <div class="mb-3">
+            <strong>💊 Interakcje z lekami:</strong>
+            <p>Może nasilać działanie leków moczopędnych. Przyspiesza wydalanie litu z organizmu. Nie łączyć z dużą ilością alkoholu (nasilenie niedoboru witaminy B1).</p>
+        </div>
+        
+
+        
+        <div>
+            <strong>🚫 Przeciwwskazania ogólne:</strong>
+            <p>Nie stosować przy kłębuszkowym zapaleniu nerek oraz przy obrzękach wywołanych niewydolnością serca. Przy długotrwałych kuracjach (powyżej miesiąca) należy uzupełniać witaminę B1.</p>
+        </div>
+        
+    </section>
+    
+
+    <div class="row g-5 mb-5">
+        <div class="col-lg-6">
+            <h3 class="section-title">Kalendarz Biodynamiczny</h3>
+            <div class="calendar-list">
+                
+                <div class="calendar-item mb-3 p-3 bg-white border">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <strong>Zbiór ziela letniego</strong>
+                        <span class="badge bg-secondary ms-2">Miesiąc: 6, 7</span>
+                    </div>
+                    <p class="small mb-2 mt-2">Zbiór w połowie lata, gdy pędy są soczyście zielone, ale już twarde (bogate w krzem).</p>
+
+                    <div class="d-flex flex-wrap gap-2 mt-2">
+                        <span class="badge bg-light text-dark border" style="white-space: normal; text-align: left; line-height: 1.4;">
+                            🌑 Księżyc przybywający (faza liścia/łodygi)
+                        </span>
+                        <span class="badge bg-light text-dark border" style="white-space: normal; text-align: left; line-height: 1.4;">
+                            ☁️ Pełne słońce (skrzyp musi szybko wyschnąć, by nie stracił właściwości)
+                        </span>
+                        
+                        <span class="badge bg-light text-dark border" style="white-space: normal; text-align: left; line-height: 1.4; background-color: #fdfaf0 !important;">
+                            ✨ Zapewnia wyższą koncentrację kwasu krzemowego w soku komórkowym.
+                        </span>
+                        
+                    </div>
+                </div>
+                
+                <div class="calendar-item mb-3 p-3 bg-white border">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <strong>Opryski zapobiegawcze</strong>
+                        <span class="badge bg-secondary ms-2">Miesiąc: 5, 6, 7</span>
+                    </div>
+                    <p class="small mb-2 mt-2">Stosowanie odwaru ze skrzypu na rośliny zagrożone chorobami grzybowymi.</p>
+
+                    <div class="d-flex flex-wrap gap-2 mt-2">
+                        <span class="badge bg-light text-dark border" style="white-space: normal; text-align: left; line-height: 1.4;">
+                            🌑 Pełnia
+                        </span>
+                        <span class="badge bg-light text-dark border" style="white-space: normal; text-align: left; line-height: 1.4;">
+                            ☁️ Bezwietrzna
+                        </span>
+                        
+                        <span class="badge bg-light text-dark border" style="white-space: normal; text-align: left; line-height: 1.4; background-color: #fdfaf0 !important;">
+                            ✨ W fazie pełni rośliny intensywniej chłoną minerały przez aparaty szparkowe.
+                        </span>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <h3 class="section-title">Permakultura</h3>
+            <div class="bg-white p-4 border h-100">
+                <p><strong>Funkcje w ekosystemie:</strong></p>
+                <ul>
+                    
+                        <li>Dynamiczny akumulator krzemu, wapnia i magnezu.</li>
+                    
+                        <li>Naturalny fungicyd (preparaty ze skrzypu to fundament ekologicznej ochrony sadu).</li>
+                    
+                        <li>Wskaźnik wysokiego poziomu wód gruntowych i braku przewietrzania gleby (gleby zbite).</li>
+                    
+                </ul>
+
+                <p class="mt-4"><strong>Gildia (Dobrzy sąsiedzi):</strong></p>
+                <div class="d-flex flex-wrap gap-2">
+                    
+                        <span class="badge bg-success p-2">
+                            Pomidory / Ogórki
+                        </span>
+                    
+                        <span class="badge bg-success p-2">
+                            Wierzba
+                        </span>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <section class="mb-5 p-4" style="background: #e9f0e8; border-radius: 8px;">
+        <h3>💡 Czy wiesz, że...</h3>
+        <ul>
+            
+                <li class="mb-2">Skrzyp jest jedną z nielicznych roślin, która potrafi akumulować w swoich tkankach złoto (choć w ilościach śladowych).</li>
+            
+                <li class="mb-2">Gdyby nie paprotniki (w tym przodkowie skrzypów), nie mielibyśmy dzisiaj złóż węgla kamiennego.</li>
+            
+                <li class="mb-2">Szum, jaki słychać podczas chodzenia po skrzypach, to odgłos pękających kryształków krzemionki.</li>
+            
+                <li class="mb-2">W kosmetyce &#39;płukanka skrzypowa&#39; to najstarszy znany sposób na nadanie włosom &#39;szklanego&#39; blasku i twardości.</li>
+            
+        </ul>
+    </section>
+    
+
+    <hr style="margin: 50px 0;">
+
+    <section class="comments-section frozen-feature">
+        <h3>📝 Notatki i Obserwacje</h3>
+
+        
+            <div class="alert alert-light border text-center">
+                <a href="/login/">Zaloguj się</a>, aby dodawać notatki.
+            </div>
+        
+
+        <div class="comments-list">
+            
+        </div>
+    </section>
+
+</article>
+
+<style>
+    .info-card {
+        background: #fff;
+        border: 1px solid #b8860b;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    .card-header-custom {
+        background: #fff8e1;
+        color: #b8860b;
+        padding: 10px 15px;
+        margin: 0;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+        font-family: 'Playfair Display', serif;
+    }
+
+    .parts-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+    .part-card {
+        background: #fff;
+        border: 1px solid #d1c7a7;
+        padding: 25px;
+        position: relative;
+        transition: transform 0.2s;
+    }
+    .part-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+    .part-badge {
+        position: absolute; top: -10px; right: 20px;
+        background: #3e4a3d; color: white;
+        padding: 4px 12px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px;
+    }
+
+    .chem-tag {
+        background: #f1f8e9; color: #33691e;
+        border: 1px solid #dcedc8;
+        padding: 2px 8px; font-size: 0.8rem; border-radius: 10px;
+    }
+
+    .use-card {
+        background: #fff;
+        padding: 20px;
+        border-left: 4px solid #ddd;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+    .section-title {
+        border-bottom: 2px solid #3e4a3d;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        color: #3e4a3d;
+    }
+</style>
+
+</div>
+
+<footer>
+    <p>&copy; 1396 Kwiatownik - Akademicki Projekt Zielnika</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<div id="frozenModal" class="frozen-modal-overlay">
+    <div class="frozen-modal-content">
+        <span class="frozen-modal-close" onclick="closeFrozenModal()">&times;</span>
+        <h3 style="color: #2d5a27;"><i class="bi bi-info-circle"></i> Funkcja wstrzymana</h3>
+        <p class="mt-3">
+            Aby aplikacja mogła być dostępna za darmo i działać błyskawicznie, przeszliśmy na wersję statyczną.
+            Moduł logowania i komentarzy jest obecnie <strong>wyłączony</strong>.
+        </p>
+        <p>
+            Jeśli projekt Ci się podoba i chcesz wesprzeć jego rozwój, możesz postawić mi wirtualną kawę! 🌱
+        </p>
+        <a href="https://buycoffee.to/miguana" target="_blank" class="btn btn-warning mt-3 fw-bold" style="background-color: #d4a017; border: none; color: white; padding: 10px 20px;">
+            <i class="bi bi-cup-hot"></i> Postaw Kawę
+        </a>
+    </div>
+</div>
+
+<script>
+    const frozenElements = document.querySelectorAll('.frozen-feature');
+    const modal = document.getElementById('frozenModal'); // Jeśli nie ma HTMLa wyżej, to tutaj wyskakuje Twój błąd (null)
+
+    frozenElements.forEach(el => {
+        el.addEventListener('click', function(e) {
+            e.preventDefault();
+            if(modal) { // Zabezpieczenie, żeby skrypt nie "wybuchał"
+                modal.style.display = "block";
+            } else {
+                console.error("Nie znaleziono okienka frozenModal w kodzie HTML!");
+            }
+        });
+    });
+
+    function closeFrozenModal() {
+        if(modal) modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            closeFrozenModal();
+        }
+    }
+</script>
+
+</body>
+</html>

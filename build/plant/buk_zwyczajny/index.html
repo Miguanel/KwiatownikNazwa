@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwiatownik - Cyfrowy Zielnik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body { font-family: 'Crimson Text', serif; background-color: #f4f1ea; color: #2c2c2c; margin: 0; }
+        nav { background-color: #3e4a3d; color: white; padding: 1rem; display: flex; justify-content: space-between; }
+        nav a { color: white; text-decoration: none; margin: 0 10px; }
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .flash { padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 4px; }
+        .flash-success { background-color: #d4edda; color: #155724; }
+        .flash-danger { background-color: #f8d7da; color: #721c24; }
+        footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #666; }
+    </style>
+    <style>
+        /* Nadpisanie Bootstrapa, żeby nie psuł tła i fontów */
+        body {
+            font-family: 'Crimson Text', serif;
+            background-color: #f4f1ea;
+            color: #2c2c2c;
+            margin: 0;
+        }
+        /* Reszta Twoich stylów lokalnych z base.html... */
+        nav { background-color: #3e4a3d; color: white; padding: 1rem; display: flex; justify-content: space-between; }
+        nav a { color: white; text-decoration: none; margin: 0 10px; }
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .flash { padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 4px; }
+        .flash-success { background-color: #d4edda; color: #155724; }
+        .flash-danger { background-color: #f8d7da; color: #721c24; }
+        footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #666; }
+
+        /* FIX dla linków w nawigacji (Bootstrap lubi je zmieniać na niebieskie) */
+        nav a { color: white !important; text-decoration: none; }
+        a { text-decoration: none; color: inherit; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div>
+        <a href="/"><strong>🌿 Kwiatownik</strong></a>
+        <a href="/generator/"><strong>🌿 Generatory</strong></a>
+        <a href="/przepisy/"><strong>🌿 Przepisy</strong></a>
+        <a href="/gildie/"><strong>🌿 Gildie</strong></a>
+        <a href="#" class="frozen-feature">Wszystkie Komentarze</a>
+    </div>
+    <div class="frozen-feature" title="Logowanie wyłączone w wersji statycznej">
+        <a href="#">Logowanie</a>
+        <a href="#">Rejestracja</a>
+    </div>
+</nav>
+
+<div class="container">
+    
+      
+    
+
+    
+<article class="plant-detail-container">
+
+    <header style="text-align: center; margin-bottom: 40px;">
+        <h1 style="font-size: 3.5rem; margin-bottom: 5px; color: #3e4a3d;">Buk zwyczajny</h1>
+        <p style="font-style: italic; color: #5a6b5a; font-size: 1.4rem; font-family: 'Playfair Display', serif;">
+            Fagus sylvatica <span style="font-size: 1rem; color: #888;">| Rodzina: Bukowate (Fagaceae)</span>
+        </p>
+        <div style="width: 120px; height: 4px; background: #b8860b; margin: 20px auto;"></div>
+        <p style="max-width: 800px; margin: 0 auto; font-size: 1.15rem; line-height: 1.8;">Potężne drzewo liściaste o gęstej koronie, dorastające do 30-40 m wysokości. Jego kora jest unikalna w polskim krajobrazie – pozostaje gładka i popielatoszara przez całe życie drzewa. Buk tworzy specyficzne ekosystemy zwane buczynami, gdzie przez gęste ulistnienie do dna lasu dociera bardzo mało światła. Jest to drzewo długowieczne (do 300-400 lat), będące filarem europejskiej gospodarki leśnej i etnobotaniki.</p>
+    </header>
+
+    <div class="row g-4 mb-5">
+        
+        <div class="col-md-6">
+            <div class="info-card h-100">
+                <h4 class="card-header-custom"><i class="bi bi-fire"></i> Profil Energetyczny</h4>
+                <div class="p-3">
+                    <ul class="list-unstyled">
+                        <li><strong>Smak:</strong> Słodkawy, cierpki, trawiasty (liście)</li>
+                        <li><strong>Termika:</strong> Chłodna</li>
+                        <li><strong>Wilgotność:</strong> Stabilizująca</li>
+                        <li><strong>Żywioł:</strong> Ziemia i Powietrze</li>
+                    </ul>
+                    <p class="small text-muted mt-2 border-top pt-2"><em>"Buk to energia struktury, jasności umysłu i stabilności. Jego obecność uspokaja rozbiegane myśli i pomaga &#39;osadzić się&#39; w rzeczywistości. Leczniczo chłodzi stany zapalne i ściąga tkanki, pomagając w regeneracji."</em></p>
+                </div>
+            </div>
+        </div>
+        
+
+        
+        <div class="col-md-6">
+            <div class="info-card h-100" style="border-color: #5a6b5a;">
+                <h4 class="card-header-custom" style="background: #e9f0e8; color: #2d5a27;"><i class="bi bi-flower1"></i> Wymagania Siedliskowe</h4>
+                <div class="p-3">
+
+                    <div class="d-flex justify-content-between align-items-start mb-3 border-bottom border-secondary-subtle pb-2">
+                        <span style="min-width: 140px; font-weight: bold; color: #2d5a27;">Stanowisko:</span>
+                        <span style="text-align: right; font-weight: 600; line-height: 1.3;">Cieniste do słonecznego. Jako młode drzewo wybitnie cienioznośne. Wymaga dużej wilgotności powietrza.</span>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-start mb-3 border-bottom border-secondary-subtle pb-2">
+                        <span style="min-width: 100px; font-weight: bold; color: #2d5a27;">Gleba:</span>
+                        <span style="text-align: right; font-weight: 600; line-height: 1.3;">Żyzna, świeża, zasobna w wapń. Nienawidzi gleb bardzo suchych, piaszczystych oraz silnie podmokłych.</span>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-start mb-3 border-bottom border-secondary-subtle pb-2">
+                        <span style="min-width: 100px; font-weight: bold; color: #2d5a27;">Woda:</span>
+                        <span style="text-align: right; font-weight: 600; line-height: 1.3;">Wysokie wymagania wilgotnościowe; buk cierpi podczas suchych, gorących lat.</span>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-start">
+                        <span style="min-width: 160px; font-weight: bold; color: #2d5a27;">Mrozoodporność:</span>
+                        <span style="text-align: right; font-weight: 600; line-height: 1.3;">Strefa 5 (Wrażliwy na spóźnione przymrozki majowe, które niszczą młode liście).</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    
+    <section class="mb-5 p-4" style="background: #fff; border: 1px dashed #3e4a3d;">
+        <h3 style="color: #3e4a3d;"><i class="bi bi-search"></i> Jak rozpoznać?</h3>
+        <ul style="margin-bottom: 20px;">
+            
+                <li>Kora zawsze gładka, popielatoszara, przypominająca skórę słonia.</li>
+            
+                <li>Pąki zimowe są bardzo charakterystyczne: długie (do 2 cm), wrzecionowate i ostro zakończone (wyglądają jak cygara).</li>
+            
+                <li>Liście jajowate, lśniące, o falistym brzegu (młode liście są jedwabiście owłosione na brzegach).</li>
+            
+                <li>Owoce (bukiew) to trójgraniaste orzeszki ukryte w kolczastej okrywie (kupuli), która pęka na cztery klapy.</li>
+            
+        </ul>
+
+        
+        <div class="alert alert-warning">
+            <strong>⚠️ Możliwe pomyłki:</strong>
+            <ul class="mb-0 mt-2">
+                
+                    <li>
+                        <strong>Grab pospolity (Carpinus betulus):</strong> Kora grabu ma ciemniejsze, faliste smugi (&#39;mięśnie&#39;), pąki są znacznie krótsze i przylegają do gałązki, a brzegi liści są wyraźnie piłkowane.
+                    </li>
+                
+            </ul>
+        </div>
+        
+    </section>
+    
+
+    <hr style="margin: 50px 0; border-top: 1px double #d1c7a7;">
+
+    <section class="morphology-section mb-5">
+        <h2 style="text-align: center; margin-bottom: 30px;">Surowce Zielarskie</h2>
+        <div class="parts-grid">
+            
+            <div class="part-card">
+                <span class="part-badge">liscie</span>
+                <h3 class="mt-2 text-capitalize">Folium Fagi</h3>
+                <p class="text-muted small mb-2">Najcenniejsze są młode, jasnozielone liście zbierane w maju.</p>
+
+                <div class="mb-3">
+                    <strong>Działanie:</strong><br>
+                    Przeciwzapalne, antyseptyczne, łagodnie ściągające. Żucie świeżych liści pomaga przy aftach i zapaleniu dziąseł.
+                </div>
+
+                <div class="ingredients-box">
+                    <strong>Składniki aktywne:</strong>
+                    <div class="d-flex flex-wrap gap-1 mt-1">
+                        
+                            
+                                <span class="chem-tag">Kwercetyna</span>
+                            
+                                <span class="chem-tag">Garbniki</span>
+                            
+                                <span class="chem-tag">Śluzy</span>
+                            
+                                <span class="chem-tag">Kwasy organiczne</span>
+                            
+                        
+                    </div>
+                </div>
+
+                
+
+                <div class="mt-3 pt-2 border-top text-end small text-muted">
+                    🕒 Zbiór: <strong>Maj - Czerwiec.</strong>
+                </div>
+            </div>
+            
+            <div class="part-card">
+                <span class="part-badge">owoce_bukiew</span>
+                <h3 class="mt-2 text-capitalize">Fructus Fagi</h3>
+                <p class="text-muted small mb-2">Trójkątne orzeszki zbierane po opadnięciu (wrzesień/październik).</p>
+
+                <div class="mb-3">
+                    <strong>Działanie:</strong><br>
+                    Wysokoenergetyczny pokarm. Po uprażeniu fagina ulega rozkładowi, czyniąc orzeszki bezpiecznymi.
+                </div>
+
+                <div class="ingredients-box">
+                    <strong>Składniki aktywne:</strong>
+                    <div class="d-flex flex-wrap gap-1 mt-1">
+                        
+                            
+                                <span class="chem-tag">Olej tłusty (do 40%)</span>
+                            
+                                <span class="chem-tag">Skrobia</span>
+                            
+                                <span class="chem-tag">Białka</span>
+                            
+                                <span class="chem-tag">Fagina (alkaloid toksyczny w dużych ilościach)</span>
+                            
+                        
+                    </div>
+                </div>
+
+                
+                <div class="mt-2 text-danger small">
+                    <strong>⚠️ Uwaga:</strong> Nie jeść dużej ilości surowych orzeszków – fagina może wywołać zawroty głowy i halucynacje.
+                </div>
+                
+
+                <div class="mt-3 pt-2 border-top text-end small text-muted">
+                    🕒 Zbiór: <strong>Wrzesień - Październik.</strong>
+                </div>
+            </div>
+            
+            <div class="part-card">
+                <span class="part-badge">kora</span>
+                <h3 class="mt-2 text-capitalize">Cortex Fagi</h3>
+                <p class="text-muted small mb-2"></p>
+
+                <div class="mb-3">
+                    <strong>Działanie:</strong><br>
+                    Działa przeciwgorączkowo i przeciwbiegunkowo (ze względu na garbniki).
+                </div>
+
+                <div class="ingredients-box">
+                    <strong>Składniki aktywne:</strong>
+                    <div class="d-flex flex-wrap gap-1 mt-1">
+                        
+                            
+                        
+                    </div>
+                </div>
+
+                
+
+                <div class="mt-3 pt-2 border-top text-end small text-muted">
+                    🕒 Zbiór: <strong>Wczesna wiosna.</strong>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    
+    <section class="mb-5">
+        <h2 style="text-align: center; margin-bottom: 30px;">Zastosowanie Praktyczne</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="use-card h-100">
+                    <h4 style="color: #8b0000;"><i class="bi bi-bandaid"></i> Medycyna</h4>
+                    <p>Stany zapalne jamy ustnej (liście), gorączka (wyciągi z kory), choroby skóry (dziegieć bukowy - Pix fagi).</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="use-card h-100">
+                    <h4 style="color: #d4a017;"><i class="bi bi-cup-hot"></i> Kuchnia</h4>
+                    <p>Młode liście w maju są jadalne na surowo (smakują jak kwaśna sałata). Orzeszki bukowe po uprażeniu smakują jak orzechy laskowe lub piniowe. Olej z bukwi jest jadalny i bardzo trwały.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="use-card h-100">
+                    <h4 style="color: #5d4037;"><i class="bi bi-tools"></i> Rzemiosło</h4>
+                    <p>Drewno bukowe jest twarde i giętkie po obróbce parą (meble Thoneta). Doskonałe do produkcji przyborów kuchennych i parkietów.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="use-card h-100">
+                    <h4 style="color: #2d5a27;"><i class="bi bi-tree"></i> Ogród</h4>
+                    <p>Wspaniałe żywopłoty (buk zatrzymuje suche liście na zimę, co daje osłonę wizualną). Tworzenie mikroklimatu leśnego.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <section class="safety-section p-4 mb-5" style="border-left: 5px solid #c62828; background: #fff5f5; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+        <h3 style="color: #c62828;"><i class="bi bi-exclamation-octagon-fill"></i> Bezpieczeństwo i Interakcje</h3>
+
+        
+        <div class="mb-3">
+            <strong>💊 Interakcje z lekami:</strong>
+            <p>Brak istotnych interakcji przy stosowaniu zewnętrznym i kulinarnym (prażone orzeszki).</p>
+        </div>
+        
+
+        
+        <div>
+            <strong>🚫 Przeciwwskazania ogólne:</strong>
+            <p>Surowa bukiew w dużych ilościach może być toksyczna dla dzieci i zwierząt domowych (fagina). Zawsze poddawaj orzeszki obróbce termicznej.</p>
+        </div>
+        
+    </section>
+    
+
+    <div class="row g-5 mb-5">
+        <div class="col-lg-6">
+            <h3 class="section-title">Kalendarz Biodynamiczny</h3>
+            <div class="calendar-list">
+                
+                <div class="calendar-item mb-3 p-3 bg-white border">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <strong>Zbiór młodych liści na sałatkę</strong>
+                        <span class="badge bg-secondary ms-2">Miesiąc: 5</span>
+                    </div>
+                    <p class="small mb-2 mt-2">Zbieraj liście, gdy są jeszcze miękkie i mają jasny kolor.</p>
+
+                    <div class="d-flex flex-wrap gap-2 mt-2">
+                        <span class="badge bg-light text-dark border" style="white-space: normal; text-align: left; line-height: 1.4;">
+                            🌑 Księżyc przybywający
+                        </span>
+                        <span class="badge bg-light text-dark border" style="white-space: normal; text-align: left; line-height: 1.4;">
+                            ☁️ 
+                        </span>
+                        
+                    </div>
+                </div>
+                
+                <div class="calendar-item mb-3 p-3 bg-white border">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <strong>Zbiór bukwi</strong>
+                        <span class="badge bg-secondary ms-2">Miesiąc: 9, 10</span>
+                    </div>
+                    <p class="small mb-2 mt-2">Zbieranie nasion z ziemi po silniejszych wiatrach.</p>
+
+                    <div class="d-flex flex-wrap gap-2 mt-2">
+                        <span class="badge bg-light text-dark border" style="white-space: normal; text-align: left; line-height: 1.4;">
+                            🌑 Księżyc ubywający
+                        </span>
+                        <span class="badge bg-light text-dark border" style="white-space: normal; text-align: left; line-height: 1.4;">
+                            ☁️ 
+                        </span>
+                        
+                        <span class="badge bg-light text-dark border" style="white-space: normal; text-align: left; line-height: 1.4; background-color: #fdfaf0 !important;">
+                            ✨ Mniejsza wilgotność nasion ułatwia ich przechowywanie i prażenie.
+                        </span>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <h3 class="section-title">Permakultura</h3>
+            <div class="bg-white p-4 border h-100">
+                <p><strong>Funkcje w ekosystemie:</strong></p>
+                <ul>
+                    
+                        <li>Producent biomasy (liście buka rozkładają się wolno, tworząc cenną ściółkę bukową).</li>
+                    
+                        <li>Nurse tree (drzewo piastun) dla roślin cieniolubnych.</li>
+                    
+                        <li>Retencja wody w glebie leśnej.</li>
+                    
+                        <li>Siedlisko dla specyficznych grzybów (np. Gąska bukowa, Boczniak).</li>
+                    
+                </ul>
+
+                <p class="mt-4"><strong>Gildia (Dobrzy sąsiedzi):</strong></p>
+                <div class="d-flex flex-wrap gap-2">
+                    
+                        <span class="badge bg-success p-2">
+                            Zawilec gajowy
+                        </span>
+                    
+                        <span class="badge bg-success p-2">
+                            Jodła pospolita
+                        </span>
+                    
+                        <span class="badge bg-success p-2">
+                            Żywiec cebulkowy
+                        </span>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <section class="mb-5 p-4" style="background: #e9f0e8; border-radius: 8px;">
+        <h3>💡 Czy wiesz, że...</h3>
+        <ul>
+            
+                <li class="mb-2">Słowo &#39;książka&#39; w wielu językach (ang. book, niem. Buch) wywodzi się od nazwy buka (Boke/Buche), ponieważ dawni Germanie używali bukowych deseczek do rycia run.</li>
+            
+                <li class="mb-2">Bukiew to &#39;leśny chleb&#39; dla dzików, saren i ptaków. Lata nasienne (kiedy buk owocuje masowo) zdarzają się raz na 5-8 lat i są kluczowe dla przetrwania fauny.</li>
+            
+                <li class="mb-2">Kora buka jest tak gładka, ponieważ drzewo to nie potrafi tworzyć martwicy korkowej tak szybko jak dąb. Jest przez to wrażliwe na silne nasłonecznienie (tzw. oparzelina kory).</li>
+            
+                <li class="mb-2">Popiół z drewna bukowego zawiera dużo potasu i był dawniej używany do produkcji szkła oraz jako nawóz i środek do prania ubrań.</li>
+            
+                <li class="mb-2">Świeże liście buka, zerwane prosto z drzewa w maju, zawierają mnóstwo witaminy C i są doskonałym survivalowym źródłem energii.</li>
+            
+        </ul>
+    </section>
+    
+
+    <hr style="margin: 50px 0;">
+
+    <section class="comments-section frozen-feature">
+        <h3>📝 Notatki i Obserwacje</h3>
+
+        
+            <div class="alert alert-light border text-center">
+                <a href="/login/">Zaloguj się</a>, aby dodawać notatki.
+            </div>
+        
+
+        <div class="comments-list">
+            
+        </div>
+    </section>
+
+</article>
+
+<style>
+    .info-card {
+        background: #fff;
+        border: 1px solid #b8860b;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    .card-header-custom {
+        background: #fff8e1;
+        color: #b8860b;
+        padding: 10px 15px;
+        margin: 0;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+        font-family: 'Playfair Display', serif;
+    }
+
+    .parts-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+    .part-card {
+        background: #fff;
+        border: 1px solid #d1c7a7;
+        padding: 25px;
+        position: relative;
+        transition: transform 0.2s;
+    }
+    .part-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+    .part-badge {
+        position: absolute; top: -10px; right: 20px;
+        background: #3e4a3d; color: white;
+        padding: 4px 12px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px;
+    }
+
+    .chem-tag {
+        background: #f1f8e9; color: #33691e;
+        border: 1px solid #dcedc8;
+        padding: 2px 8px; font-size: 0.8rem; border-radius: 10px;
+    }
+
+    .use-card {
+        background: #fff;
+        padding: 20px;
+        border-left: 4px solid #ddd;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+    .section-title {
+        border-bottom: 2px solid #3e4a3d;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        color: #3e4a3d;
+    }
+</style>
+
+</div>
+
+<footer>
+    <p>&copy; 1396 Kwiatownik - Akademicki Projekt Zielnika</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<div id="frozenModal" class="frozen-modal-overlay">
+    <div class="frozen-modal-content">
+        <span class="frozen-modal-close" onclick="closeFrozenModal()">&times;</span>
+        <h3 style="color: #2d5a27;"><i class="bi bi-info-circle"></i> Funkcja wstrzymana</h3>
+        <p class="mt-3">
+            Aby aplikacja mogła być dostępna za darmo i działać błyskawicznie, przeszliśmy na wersję statyczną.
+            Moduł logowania i komentarzy jest obecnie <strong>wyłączony</strong>.
+        </p>
+        <p>
+            Jeśli projekt Ci się podoba i chcesz wesprzeć jego rozwój, możesz postawić mi wirtualną kawę! 🌱
+        </p>
+        <a href="https://buycoffee.to/miguana" target="_blank" class="btn btn-warning mt-3 fw-bold" style="background-color: #d4a017; border: none; color: white; padding: 10px 20px;">
+            <i class="bi bi-cup-hot"></i> Postaw Kawę
+        </a>
+    </div>
+</div>
+
+<script>
+    const frozenElements = document.querySelectorAll('.frozen-feature');
+    const modal = document.getElementById('frozenModal'); // Jeśli nie ma HTMLa wyżej, to tutaj wyskakuje Twój błąd (null)
+
+    frozenElements.forEach(el => {
+        el.addEventListener('click', function(e) {
+            e.preventDefault();
+            if(modal) { // Zabezpieczenie, żeby skrypt nie "wybuchał"
+                modal.style.display = "block";
+            } else {
+                console.error("Nie znaleziono okienka frozenModal w kodzie HTML!");
+            }
+        });
+    });
+
+    function closeFrozenModal() {
+        if(modal) modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            closeFrozenModal();
+        }
+    }
+</script>
+
+</body>
+</html>

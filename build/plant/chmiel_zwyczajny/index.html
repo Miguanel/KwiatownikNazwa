@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwiatownik - Cyfrowy Zielnik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body { font-family: 'Crimson Text', serif; background-color: #f4f1ea; color: #2c2c2c; margin: 0; }
+        nav { background-color: #3e4a3d; color: white; padding: 1rem; display: flex; justify-content: space-between; }
+        nav a { color: white; text-decoration: none; margin: 0 10px; }
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .flash { padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 4px; }
+        .flash-success { background-color: #d4edda; color: #155724; }
+        .flash-danger { background-color: #f8d7da; color: #721c24; }
+        footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #666; }
+    </style>
+    <style>
+        /* Nadpisanie Bootstrapa, żeby nie psuł tła i fontów */
+        body {
+            font-family: 'Crimson Text', serif;
+            background-color: #f4f1ea;
+            color: #2c2c2c;
+            margin: 0;
+        }
+        /* Reszta Twoich stylów lokalnych z base.html... */
+        nav { background-color: #3e4a3d; color: white; padding: 1rem; display: flex; justify-content: space-between; }
+        nav a { color: white; text-decoration: none; margin: 0 10px; }
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .flash { padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 4px; }
+        .flash-success { background-color: #d4edda; color: #155724; }
+        .flash-danger { background-color: #f8d7da; color: #721c24; }
+        footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #666; }
+
+        /* FIX dla linków w nawigacji (Bootstrap lubi je zmieniać na niebieskie) */
+        nav a { color: white !important; text-decoration: none; }
+        a { text-decoration: none; color: inherit; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div>
+        <a href="/"><strong>🌿 Kwiatownik</strong></a>
+        <a href="/generator/"><strong>🌿 Generatory</strong></a>
+        <a href="/przepisy/"><strong>🌿 Przepisy</strong></a>
+        <a href="/gildie/"><strong>🌿 Gildie</strong></a>
+        <a href="#" class="frozen-feature">Wszystkie Komentarze</a>
+    </div>
+    <div class="frozen-feature" title="Logowanie wyłączone w wersji statycznej">
+        <a href="#">Logowanie</a>
+        <a href="#">Rejestracja</a>
+    </div>
+</nav>
+
+<div class="container">
+    
+      
+    
+
+    
+<article class="plant-detail-container">
+
+    <header style="text-align: center; margin-bottom: 40px;">
+        <h1 style="font-size: 3.5rem; margin-bottom: 5px; color: #3e4a3d;">Chmiel zwyczajny</h1>
+        <p style="font-style: italic; color: #5a6b5a; font-size: 1.4rem; font-family: 'Playfair Display', serif;">
+            Humulus lupulus <span style="font-size: 1rem; color: #888;">| Rodzina: Konopiowate (Cannabaceae)</span>
+        </p>
+        <div style="width: 120px; height: 4px; background: #b8860b; margin: 20px auto;"></div>
+        <p style="max-width: 800px; margin: 0 auto; font-size: 1.15rem; line-height: 1.8;">Wieloletnia, dwupienna roślina pnąca (bylina), której pędy co roku zamierają, by wiosną wyrosnąć z podziemnego kłącza (karpy). Chmiel wspina się owijając wokół podpór zawsze w prawą stronę (zgodnie z ruchem wskazówek zegara). Jest rośliną o ogromnej sile witalnej, potrafiącą dorosnąć do 8-10 metrów w ciągu jednego sezonu. W fitoterapii ceniony za unikalną żywicę – lupulinę, która jest jednym z najskuteczniejszych naturalnych środków uspokajających.</p>
+    </header>
+
+    <div class="row g-4 mb-5">
+        
+        <div class="col-md-6">
+            <div class="info-card h-100">
+                <h4 class="card-header-custom"><i class="bi bi-fire"></i> Profil Energetyczny</h4>
+                <div class="p-3">
+                    <ul class="list-unstyled">
+                        <li><strong>Smak:</strong> Wybitnie gorzki, aromatyczny</li>
+                        <li><strong>Termika:</strong> Zimna</li>
+                        <li><strong>Wilgotność:</strong> Osuszająca</li>
+                        <li><strong>Żywioł:</strong> Powietrze i Woda</li>
+                    </ul>
+                    <p class="small text-muted mt-2 border-top pt-2"><em>"Chmiel działa jako &#39;środek chłodzący&#39; dla rozpalonego umysłu. Gorzki smak &#39;ściąga&#39; energię w dół, pomagając uziemić osoby nadpobudliwe, nerwowe i cierpiące na bezsenność. Rozluźnia napięcia w splotach nerwowych i chłodzi nadmiar pożądania (działanie anafrodyzyjne u mężczyzn)."</em></p>
+                </div>
+            </div>
+        </div>
+        
+
+        
+        <div class="col-md-6">
+            <div class="info-card h-100" style="border-color: #5a6b5a;">
+                <h4 class="card-header-custom" style="background: #e9f0e8; color: #2d5a27;"><i class="bi bi-flower1"></i> Wymagania Siedliskowe</h4>
+                <div class="p-3">
+
+                    <div class="d-flex justify-content-between align-items-start mb-3 border-bottom border-secondary-subtle pb-2">
+                        <span style="min-width: 140px; font-weight: bold; color: #2d5a27;">Stanowisko:</span>
+                        <span style="text-align: right; font-weight: 600; line-height: 1.3;">Słoneczne do półcienistego. Wymaga miejsc osłoniętych od silnych wiatrów, które mogą zrywać pędy z podpór.</span>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-start mb-3 border-bottom border-secondary-subtle pb-2">
+                        <span style="min-width: 100px; font-weight: bold; color: #2d5a27;">Gleba:</span>
+                        <span style="text-align: right; font-weight: 600; line-height: 1.3;">Głęboka, żyzna, próchniczna, wilgotna, bogata w azot. Najlepiej rośnie na madach nadrzecznych i czarnoziemach.</span>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-start mb-3 border-bottom border-secondary-subtle pb-2">
+                        <span style="min-width: 100px; font-weight: bold; color: #2d5a27;">Woda:</span>
+                        <span style="text-align: right; font-weight: 600; line-height: 1.3;">Wysokie zapotrzebowanie na wodę, szczególnie w okresie intensywnego wzrostu i zawiązywania szyszek.</span>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-start">
+                        <span style="min-width: 160px; font-weight: bold; color: #2d5a27;">Mrozoodporność:</span>
+                        <span style="text-align: right; font-weight: 600; line-height: 1.3;">Strefa 4 (Część podziemna jest całkowicie mrozoodporna).</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    
+    <section class="mb-5 p-4" style="background: #fff; border: 1px dashed #3e4a3d;">
+        <h3 style="color: #3e4a3d;"><i class="bi bi-search"></i> Jak rozpoznać?</h3>
+        <ul style="margin-bottom: 20px;">
+            
+                <li>Łodyga wspinająca się, kanciasta, pokryta haczykowatymi włoskami, które ułatwiają czepianie się podpór i mogą ranić skórę.</li>
+            
+                <li>Liście naprzeciwległe, sercowate, zazwyczaj 3-5 klapowe, grubo piłkowane, bardzo szorstkie.</li>
+            
+                <li>Owoce (szyszki) występują tylko na okazach żeńskich – są to jajowate kwiatostany złożone z dachówkowato zachodzących na siebie listków.</li>
+            
+                <li>Lupulina – żółty, lepki proszek widoczny na wewnętrznej stronie łusek szyszki.</li>
+            
+        </ul>
+
+        
+        <div class="alert alert-warning">
+            <strong>⚠️ Możliwe pomyłki:</strong>
+            <ul class="mb-0 mt-2">
+                
+                    <li>
+                        <strong>Przestęp biały (Bryonia alba):</strong> Również pnącze, ale ma wąsy czepne (chmiel ich nie ma – owija się całą łodygą) i czarne owoce jagodowe. Przestęp jest trujący.
+                    </li>
+                
+                    <li>
+                        <strong>Powój polny:</strong> Ma gładkie łodygi, lejkowate kwiaty i owija się w lewą stronę.
+                    </li>
+                
+            </ul>
+        </div>
+        
+    </section>
+    
+
+    <hr style="margin: 50px 0; border-top: 1px double #d1c7a7;">
+
+    <section class="morphology-section mb-5">
+        <h2 style="text-align: center; margin-bottom: 30px;">Surowce Zielarskie</h2>
+        <div class="parts-grid">
+            
+            <div class="part-card">
+                <span class="part-badge">szyszki</span>
+                <h3 class="mt-2 text-capitalize">Strobilus Lupuli</h3>
+                <p class="text-muted small mb-2">Żeńskie kwiatostany zbierane pod koniec lata, gdy stają się elastyczne i mają złocisto-zielony kolor.</p>
+
+                <div class="mb-3">
+                    <strong>Działanie:</strong><br>
+                    Silnie uspokajające, ułatwiające zasypianie, bakteriostatyczne, przeciwgrzybicze, estrogenne, rozkurczowe.
+                </div>
+
+                <div class="ingredients-box">
+                    <strong>Składniki aktywne:</strong>
+                    <div class="d-flex flex-wrap gap-1 mt-1">
+                        
+                            
+                                <span class="chem-tag">Olejek eteryczny (mircen, humulen, kariofilen)</span>
+                            
+                                <span class="chem-tag">Żywice (humulony i lupulony - tzw. gorycze chmielowe)</span>
+                            
+                                <span class="chem-tag">Flawonoidy (ksantohumol - potężny antyoksydant)</span>
+                            
+                                <span class="chem-tag">Fitoestrogeny (8-prenylonaryngenina - najsilniejszy znany fitoestrogen roślinny)</span>
+                            
+                        
+                    </div>
+                </div>
+
+                
+                <div class="mt-2 text-danger small">
+                    <strong>⚠️ Uwaga:</strong> Nie stosować u kobiet z nowotworami hormonozależnymi (np. rak piersi) ze względu na silne działanie estrogenne.
+                </div>
+                
+
+                <div class="mt-3 pt-2 border-top text-end small text-muted">
+                    🕒 Zbiór: <strong>Sierpień - Wrzesień.</strong>
+                </div>
+            </div>
+            
+            <div class="part-card">
+                <span class="part-badge">lupulina</span>
+                <h3 class="mt-2 text-capitalize">Lupulinum</h3>
+                <p class="text-muted small mb-2">Gruczoły włoskowe (żółty proszek) otrząsane z wysuszonych szyszek.</p>
+
+                <div class="mb-3">
+                    <strong>Działanie:</strong><br>
+                    Skoncentrowane działanie uspokajające i hamujące popęd płciowy.
+                </div>
+
+                <div class="ingredients-box">
+                    <strong>Składniki aktywne:</strong>
+                    <div class="d-flex flex-wrap gap-1 mt-1">
+                        
+                            
+                        
+                    </div>
+                </div>
+
+                
+
+                <div class="mt-3 pt-2 border-top text-end small text-muted">
+                    🕒 Zbiór: <strong>Wrzesień (po wysuszeniu szyszek).</strong>
+                </div>
+            </div>
+            
+            <div class="part-card">
+                <span class="part-badge">pedy_wiosenne</span>
+                <h3 class="mt-2 text-capitalize">Młode pędy (szparagi chmielowe)</h3>
+                <p class="text-muted small mb-2">Podziemne lub świeżo wyrastające nad ziemię białe pędy zbierane w marcu i kwietniu.</p>
+
+                <div class="mb-3">
+                    <strong>Działanie:</strong><br>
+                    Wykwintne warzywo, bogate w witaminy i minerały, działające lekko oczyszczająco.
+                </div>
+
+                <div class="ingredients-box">
+                    <strong>Składniki aktywne:</strong>
+                    <div class="d-flex flex-wrap gap-1 mt-1">
+                        
+                            
+                        
+                    </div>
+                </div>
+
+                
+
+                <div class="mt-3 pt-2 border-top text-end small text-muted">
+                    🕒 Zbiór: <strong>Marzec - Kwiecień.</strong>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    
+    <section class="mb-5">
+        <h2 style="text-align: center; margin-bottom: 30px;">Zastosowanie Praktyczne</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="use-card h-100">
+                    <h4 style="color: #8b0000;"><i class="bi bi-bandaid"></i> Medycyna</h4>
+                    <p>Trudności w zasypianiu, stany lękowe, nadpobudliwość, napięcie nerwowe, zaburzenia okresu przekwitania (uderzenia gorąca), problemy trawienne (brak łaknienia), nadmierne libido u mężczyzn.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="use-card h-100">
+                    <h4 style="color: #d4a017;"><i class="bi bi-cup-hot"></i> Kuchnia</h4>
+                    <p>Piwowarstwo (nadaje goryczkę i aromat, konserwuje piwo). Młode pędy chmielu smażone na maśle są uważane za jedno z najdroższych i najsmaczniejszych dzikich warzyw (tzw. szparagi chmielowe).</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="use-card h-100">
+                    <h4 style="color: #5d4037;"><i class="bi bi-tools"></i> Rzemiosło</h4>
+                    <p>Wyciągi z chmielu stosuje się w kosmetykach przeciwstarzeniowych (ksantohumol) oraz w szamponach dla blondynek. Włókna z łodyg chmielu mogą być używane do wyrobu grubego papieru i sznurów.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="use-card h-100">
+                    <h4 style="color: #2d5a27;"><i class="bi bi-tree"></i> Ogród</h4>
+                    <p>Szybko rosnąca roślina osłonowa do tworzenia zielonych ścian i altan. Wymaga silnych podpór.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <section class="safety-section p-4 mb-5" style="border-left: 5px solid #c62828; background: #fff5f5; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+        <h3 style="color: #c62828;"><i class="bi bi-exclamation-octagon-fill"></i> Bezpieczeństwo i Interakcje</h3>
+
+        
+        <div class="mb-3">
+            <strong>💊 Interakcje z lekami:</strong>
+            <p>Potęguje działanie leków uspokajających, nasennych i alkoholu. Ze względu na działanie estrogenne może wchodzić w interakcje z hormonalną terapią zastępczą i środkami antykoncepcyjnymi.</p>
+        </div>
+        
+
+        
+        <div>
+            <strong>🚫 Przeciwwskazania ogólne:</strong>
+            <p>Ze względu na działanie na układ hormonalny, chmiel nie jest zalecany chłopcom w okresie dojrzewania oraz mężczyznom z zaburzeniami erekcji. Może powodować nadmierną senność – nie stosować przed prowadzeniem pojazdów.</p>
+        </div>
+        
+    </section>
+    
+
+    <div class="row g-5 mb-5">
+        <div class="col-lg-6">
+            <h3 class="section-title">Kalendarz Biodynamiczny</h3>
+            <div class="calendar-list">
+                
+                <div class="calendar-item mb-3 p-3 bg-white border">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <strong>Zbiór szparagów chmielowych</strong>
+                        <span class="badge bg-secondary ms-2">Miesiąc: 3, 4</span>
+                    </div>
+                    <p class="small mb-2 mt-2">Odgrzebywanie ziemi wokół karpy i wycinanie białych, podziemnych pędów.</p>
+
+                    <div class="d-flex flex-wrap gap-2 mt-2">
+                        <span class="badge bg-light text-dark border" style="white-space: normal; text-align: left; line-height: 1.4;">
+                            🌑 Księżyc przybywający
+                        </span>
+                        <span class="badge bg-light text-dark border" style="white-space: normal; text-align: left; line-height: 1.4;">
+                            ☁️ 
+                        </span>
+                        
+                        <span class="badge bg-light text-dark border" style="white-space: normal; text-align: left; line-height: 1.4; background-color: #fdfaf0 !important;">
+                            ✨ Większa kruchość i soczystość pędów.
+                        </span>
+                        
+                    </div>
+                </div>
+                
+                <div class="calendar-item mb-3 p-3 bg-white border">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <strong>Zbiór szyszek</strong>
+                        <span class="badge bg-secondary ms-2">Miesiąc: 8, 9</span>
+                    </div>
+                    <p class="small mb-2 mt-2">Zbiór całych szyszek z okazów żeńskich, gdy po naciśnięciu szeleszczą i szybko wracają do pierwotnego kształtu.</p>
+
+                    <div class="d-flex flex-wrap gap-2 mt-2">
+                        <span class="badge bg-light text-dark border" style="white-space: normal; text-align: left; line-height: 1.4;">
+                            🌑 Pełnia
+                        </span>
+                        <span class="badge bg-light text-dark border" style="white-space: normal; text-align: left; line-height: 1.4;">
+                            ☁️ Sucha i słoneczna
+                        </span>
+                        
+                        <span class="badge bg-light text-dark border" style="white-space: normal; text-align: left; line-height: 1.4; background-color: #fdfaf0 !important;">
+                            ✨ Najwyższe stężenie olejków eterycznych w lupulinie.
+                        </span>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <h3 class="section-title">Permakultura</h3>
+            <div class="bg-white p-4 border h-100">
+                <p><strong>Funkcje w ekosystemie:</strong></p>
+                <ul>
+                    
+                        <li>Akumulator dynamiczny azotu i krzemionki.</li>
+                    
+                        <li>Błyskawiczna produkcja biomasy do mulczowania.</li>
+                    
+                        <li>Pionowa warstwa w ogrodzie leśnym (pnącze).</li>
+                    
+                        <li>Schronienie dla owadów w gęstych splotach pędów.</li>
+                    
+                </ul>
+
+                <p class="mt-4"><strong>Gildia (Dobrzy sąsiedzi):</strong></p>
+                <div class="d-flex flex-wrap gap-2">
+                    
+                        <span class="badge bg-success p-2">
+                            Wierzba
+                        </span>
+                    
+                        <span class="badge bg-success p-2">
+                            Pokrzywa
+                        </span>
+                    
+                        <span class="badge bg-success p-2">
+                            Drzewa owocowe
+                        </span>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <section class="mb-5 p-4" style="background: #e9f0e8; border-radius: 8px;">
+        <h3>💡 Czy wiesz, że...</h3>
+        <ul>
+            
+                <li class="mb-2">Chmiel to najszybciej rosnąca bylina w polskiej florze – w sprzyjających warunkach pędy rosną 10-15 cm na dobę.</li>
+            
+                <li class="mb-2">W starożytności chmiel uważano za &#39;wilka wierzbowego&#39; (Lupus salictarius), ponieważ obserwowano, jak dusi wierzby, owijając się wokół nich.</li>
+            
+                <li class="mb-2">Szyszki chmielu są naturalnym konserwantem – to dzięki nim piwo mogło przetrwać długie transporty morskie w czasach kolonialnych (styl IPA).</li>
+            
+                <li class="mb-2">Pracownicy przy zbiorze chmielu często skarżyli się na nadmierną senność – to wynik wdychania lotnych olejków i kontaktu lupuliny ze skórą.</li>
+            
+        </ul>
+    </section>
+    
+
+    <hr style="margin: 50px 0;">
+
+    <section class="comments-section frozen-feature">
+        <h3>📝 Notatki i Obserwacje</h3>
+
+        
+            <div class="alert alert-light border text-center">
+                <a href="/login/">Zaloguj się</a>, aby dodawać notatki.
+            </div>
+        
+
+        <div class="comments-list">
+            
+        </div>
+    </section>
+
+</article>
+
+<style>
+    .info-card {
+        background: #fff;
+        border: 1px solid #b8860b;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    .card-header-custom {
+        background: #fff8e1;
+        color: #b8860b;
+        padding: 10px 15px;
+        margin: 0;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+        font-family: 'Playfair Display', serif;
+    }
+
+    .parts-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+    .part-card {
+        background: #fff;
+        border: 1px solid #d1c7a7;
+        padding: 25px;
+        position: relative;
+        transition: transform 0.2s;
+    }
+    .part-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+    .part-badge {
+        position: absolute; top: -10px; right: 20px;
+        background: #3e4a3d; color: white;
+        padding: 4px 12px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px;
+    }
+
+    .chem-tag {
+        background: #f1f8e9; color: #33691e;
+        border: 1px solid #dcedc8;
+        padding: 2px 8px; font-size: 0.8rem; border-radius: 10px;
+    }
+
+    .use-card {
+        background: #fff;
+        padding: 20px;
+        border-left: 4px solid #ddd;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+    .section-title {
+        border-bottom: 2px solid #3e4a3d;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        color: #3e4a3d;
+    }
+</style>
+
+</div>
+
+<footer>
+    <p>&copy; 1396 Kwiatownik - Akademicki Projekt Zielnika</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<div id="frozenModal" class="frozen-modal-overlay">
+    <div class="frozen-modal-content">
+        <span class="frozen-modal-close" onclick="closeFrozenModal()">&times;</span>
+        <h3 style="color: #2d5a27;"><i class="bi bi-info-circle"></i> Funkcja wstrzymana</h3>
+        <p class="mt-3">
+            Aby aplikacja mogła być dostępna za darmo i działać błyskawicznie, przeszliśmy na wersję statyczną.
+            Moduł logowania i komentarzy jest obecnie <strong>wyłączony</strong>.
+        </p>
+        <p>
+            Jeśli projekt Ci się podoba i chcesz wesprzeć jego rozwój, możesz postawić mi wirtualną kawę! 🌱
+        </p>
+        <a href="https://buycoffee.to/miguana" target="_blank" class="btn btn-warning mt-3 fw-bold" style="background-color: #d4a017; border: none; color: white; padding: 10px 20px;">
+            <i class="bi bi-cup-hot"></i> Postaw Kawę
+        </a>
+    </div>
+</div>
+
+<script>
+    const frozenElements = document.querySelectorAll('.frozen-feature');
+    const modal = document.getElementById('frozenModal'); // Jeśli nie ma HTMLa wyżej, to tutaj wyskakuje Twój błąd (null)
+
+    frozenElements.forEach(el => {
+        el.addEventListener('click', function(e) {
+            e.preventDefault();
+            if(modal) { // Zabezpieczenie, żeby skrypt nie "wybuchał"
+                modal.style.display = "block";
+            } else {
+                console.error("Nie znaleziono okienka frozenModal w kodzie HTML!");
+            }
+        });
+    });
+
+    function closeFrozenModal() {
+        if(modal) modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            closeFrozenModal();
+        }
+    }
+</script>
+
+</body>
+</html>
