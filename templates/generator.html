@@ -172,6 +172,35 @@
         margin-bottom: 20px;
         border-left: 5px solid #3e4a3d;
     }
+    /* --- RESPONSYWNOŚĆ TABELI --- */
+    .table-responsive-wrapper {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* Płynne przewijanie na iOS */
+        margin-bottom: 20px;
+        border: 1px solid #e0e0e0;
+        border-radius: 5px;
+    }
+
+    .lab-table {
+        margin-bottom: 0; /* Usuwamy dolny margines z samej tabeli */
+        min-width: 600px; /* Wymuszamy minimalną szerokość, żeby kolumny się nie zgniotły */
+    }
+
+    /* --- STYL KLIKALNEGO SKŁADNIKA (WIKIPEDIA) --- */
+    .wiki-clickable {
+        cursor: pointer;
+        color: #3e4a3d;
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-underline-offset: 4px;
+        transition: color 0.2s ease;
+    }
+
+    .wiki-clickable:hover {
+        color: #b8860b;
+    }
 </style>
 
 <div class="container">
@@ -243,8 +272,8 @@
                 <i class="bi bi-info-circle"></i> Zmiana wartości zamraża ją automatycznie 🔒
             </small>
         </h3>
-
-        <table class="lab-table">
+        <div class="table-responsive-wrapper">
+            <table class="lab-table" style="width: 100%; border-collapse: collapse; margin-top: 20px;">
             <thead>
                 <tr>
                     <th style="width: 30%;">Roślina (Surowiec)</th>
@@ -264,7 +293,7 @@
                 </tr>
             </tfoot>
         </table>
-
+        </div>
         <div id="alertBox" style="display: none; background: #ffebee; color: #c62828; padding: 10px; margin-top: 10px; border: 1px solid #ef9a9a;">
             <strong>⚠️ Błąd:</strong> Suma składników przekracza docelową objętość! Zwiększ objętość całkowitą.
         </div>
@@ -525,7 +554,9 @@
             tr.innerHTML = `
                 <td style="text-align: left; vertical-align: top;">
                     <div style="display: flex; align-items: center;">
-                        <strong style="color: #3e4a3d; font-size: 1.1rem; margin-right: 5px;">${i.name}</strong>
+                        <strong class="wiki-clickable" onclick="fetchWikiInfo('${i.name}')" title="Kliknij, aby przeczytać w Wikipedii" style="font-size: 1.1rem; margin-right: 5px;">
+                            ${i.name}
+                        </strong>
                         ${warningHtml}
                     </div>
                     <small style="color: #666;">Surowiec: ${i.part}</small>
@@ -573,5 +604,83 @@
             modal.show();
         }
     }
+// --- 6. POBIERANIE DANYCH Z WIKIPEDII ---
+    async function fetchWikiInfo(plantName) {
+        // Pokaż modal i ustaw status ładowania
+        const wikiModal = new bootstrap.Modal(document.getElementById('wikiModal'));
+        document.getElementById('wikiTitle').innerText = plantName;
+        document.getElementById('wikiContent').innerHTML = `
+            <div class="text-center">
+                <div class="spinner-border text-success" role="status"></div>
+                <p class="mt-2">Przeszukuję księgi Wikipedii...</p>
+            </div>`;
+        wikiModal.show();
+
+        try {
+            // Pobieramy dane z polskiej Wikipedii
+            const response = await fetch(`https://pl.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(plantName)}`);
+
+            if (!response.ok) throw new Error('Nie znaleziono artykułu');
+
+            const data = await response.json();
+
+            // Budujemy zawartość (zdjęcie + tekst + przycisk)
+            let htmlContent = "";
+
+            if (data.thumbnail && data.thumbnail.source) {
+                htmlContent += `<img src="${data.thumbnail.source}" alt="${plantName}" style="float: left; max-width: 120px; border-radius: 8px; margin: 0 15px 10px 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">`;
+            }
+
+            htmlContent += `<p style="text-align: justify;">${data.extract}</p>`;
+            htmlContent += `<div style="clear: both;"></div>`;
+
+            htmlContent += `
+                <div style="text-align: right; margin-top: 15px;">
+                    <a href="${data.content_urls.desktop.page}" target="_blank" rel="noopener noreferrer"
+                       style="background: #b8860b; color: white; padding: 8px 15px; border-radius: 20px; text-decoration: none; font-size: 0.9rem; font-weight: bold; display: inline-block;">
+                       Czytaj więcej na Wikipedii <i class="bi bi-box-arrow-up-right"></i>
+                    </a>
+                </div>
+            `;
+
+            document.getElementById('wikiContent').innerHTML = htmlContent;
+
+        } catch (error) {
+            // Komunikat, jeśli roślina ma inną nazwę w Wiki
+            document.getElementById('wikiContent').innerHTML = `
+                <div class="alert alert-warning text-center" style="background: #fff8e1; border: 1px solid #b8860b; color: #856404;">
+                    <i class="bi bi-exclamation-triangle-fill fs-4"></i><br>
+                    Niestety, nie udało się znaleźć bezpośredniego artykułu dla: <strong>${plantName}</strong>.<br>
+                    <small>Spróbuj sprawdzić nazwę łacińską.</small>
+                    <div style="margin-top: 15px;">
+                        <a href="https://pl.wikipedia.org/wiki/Specjalna:Szukaj?search=${encodeURIComponent(plantName)}" target="_blank" class="btn btn-sm btn-outline-secondary">
+                            Szukaj ręcznie w Wikipedii
+                        </a>
+                    </div>
+                </div>
+            `;
+        }
+    }
+
 </script>
+
+<div class="modal fade" id="wikiModal" tabindex="-1" aria-labelledby="wikiModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="border-radius: 10px; border: 2px solid #3e4a3d;">
+      <div class="modal-header" style="background: #f4f1ea; border-bottom: 1px solid #d1c7a7;">
+        <h5 class="modal-title" id="wikiModalLabel" style="color: #3e4a3d; font-family: 'Playfair Display', serif; font-weight: bold;">
+            <i class="bi bi-book"></i> <span id="wikiTitle">Wyszukiwanie...</span>
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
+      </div>
+      <div class="modal-body" id="wikiContent" style="font-family: 'Crimson Text', serif; font-size: 1.1rem; line-height: 1.6;">
+        <div class="text-center">
+            <div class="spinner-border text-success" role="status"></div>
+            <p class="mt-2">Przeszukuję księgi Wikipedii...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 {% endblock %}
