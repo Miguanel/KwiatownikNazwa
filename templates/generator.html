@@ -528,6 +528,35 @@
     }
 
     // --- 5. RENDEROWANIE TABELI ---
+
+    function smartFormatIngredient(item) {
+        const trimmed = item.trim();
+        if (trimmed === "Brak danych" || trimmed === "") return item;
+
+        // Sprawdzamy czy mamy do czynienia z witaminami
+        const isVitamin = trimmed.toLowerCase().includes("witamina");
+
+        if (isVitamin) {
+            // Logika dla witamin: "Witaminy (A, B1, C)" -> "Witaminy (" + klikalne A, B1, C + ")"
+            // Szukamy symboli witamin (pojedyncze litery lub litera+cyfra)
+            return trimmed.replace(/([A-Z][0-9]?)/g, (match) => {
+                // Zamieniamy symbole na klikalne linki, ale wyszukujemy "witamina X"
+                return `<span class="wiki-clickable" onclick="fetchWikiInfo('witamina ${match}')" title="Szukaj witaminy ${match}">${match}</span>`;
+            });
+        } else {
+            // Logika dla reszty: "Antocyjany (opis)" -> klikalne "Antocyjany" + reszta tekstu normalnie
+            if (trimmed.includes('(')) {
+                const parts = trimmed.split('(');
+                const mainTerm = parts[0].trim();
+                const rest = parts.slice(1).join('('); // Na wypadek wielu nawiasów
+
+                return `<span class="wiki-clickable" onclick="fetchWikiInfo('${mainTerm}')" title="Szukaj '${mainTerm}'">${mainTerm}</span> (${rest}`;
+            } else {
+                // Jeśli nie ma nawiasów, po prostu robimy całość klikalną
+                return `<span class="wiki-clickable" onclick="fetchWikiInfo('${trimmed}')">${trimmed}</span>`;
+            }
+        }
+    }
     function render() {
         const tbody = document.getElementById('ingredientsTableBody');
         tbody.innerHTML = '';
@@ -573,12 +602,7 @@
                     </button>
                 </td>
                 <td class="col-ingredients" style="vertical-align: top;">
-                    ${i.ingr.split(',').map(item => {
-                        const trimmed = item.trim();
-                        // Jeśli brak danych, nie rób linku
-                        if (trimmed === "Brak danych" || trimmed === "") return item;
-                        return `<span class="wiki-clickable" onclick="fetchWikiInfo('${trimmed}')" title="Szukaj '${trimmed}' w Wikipedii">${trimmed}</span>`;
-                    }).join(', ')}
+                    ${i.ingr.split(',').map(item => smartFormatIngredient(item)).join(', ')}
                 </td>
                 <td style="text-align: center; vertical-align: top;">
                     <button onclick="removeIngredient(${i.id})" class="delete-btn">&times;</button>
