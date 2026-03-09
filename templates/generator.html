@@ -553,8 +553,8 @@
             const tr = document.createElement('tr');
             tr.innerHTML = `
                 <td style="text-align: left; vertical-align: top;">
-                    <div style="display: flex; align-items: center;">
-                        <strong class="wiki-clickable" onclick="fetchWikiInfo('${i.name}')" title="Kliknij, aby przeczytać w Wikipedii" style="font-size: 1.1rem; margin-right: 5px;">
+                    <div style="flex; align-items: center;">
+                        <strong class="wiki-clickable" onclick="fetchWikiInfo('${i.name}')" title="Kliknij, aby przeczytać o roślinie" style="font-size: 1.1rem; margin-right: 5px;">
                             ${i.name}
                         </strong>
                         ${warningHtml}
@@ -573,7 +573,12 @@
                     </button>
                 </td>
                 <td class="col-ingredients" style="vertical-align: top;">
-                    ${i.ingr}
+                    ${i.ingr.split(',').map(item => {
+                        const trimmed = item.trim();
+                        // Jeśli brak danych, nie rób linku
+                        if (trimmed === "Brak danych" || trimmed === "") return item;
+                        return `<span class="wiki-clickable" onclick="fetchWikiInfo('${trimmed}')" title="Szukaj '${trimmed}' w Wikipedii">${trimmed}</span>`;
+                    }).join(', ')}
                 </td>
                 <td style="text-align: center; vertical-align: top;">
                     <button onclick="removeIngredient(${i.id})" class="delete-btn">&times;</button>
