@@ -3,6 +3,346 @@
   "zrodlo_danych": "Zebrane z plików gatunków w Kwiatowniku",
   "przepisy": [
     {
+      "tytul": "eliksir nerkowy wiosenne oczyszczenie",
+      "typ": "medyczny",
+      "metoda": "napar",
+      "tagi": ["oskoła", "wiosna", "nerki", "oczyszczanie"],
+      "skladniki": [
+        "1 litr świeżej oskoły (soku z brzozy)",
+        "20 g suszonych młodych liści brzozy (lub świeżych pączków)",
+        "10 g korzenia mniszka lekarskiego"
+      ],
+      "sposob_przygotowania": "Oskołę podgrzać do 80°C (nie doprowadzać do wrzenia). Zalać nią liście brzozy i korzeń mniszka, a następnie parzyć pod przykryciem przez 20 minut. Przecedzić.",
+      "dawkowanie": "2 szklanki dziennie przez 14 dni.",
+      "uwagi": "Należy uważać przy ostrych stanach zapalnych dróg moczowych. Sok pobierać z zachowaniem higieny drzewa.",
+      "zrodla": [
+        "Tradycyjne receptury ludowe",
+        "Zapiski etnobotaniczne o zastosowaniu oskoły"
+      ],
+      "roslina": "Brzoza brodawkowata",
+      "nazwa_lacinska": "Betula pendula",
+      "slug": "brzoza_brodawkowata",
+      "cechy": [
+        "Złocisty płyn, łagodny, lekko drzewny smak"
+      ],
+      "wlasciwosci": [
+        "wspiera filtrację nerek",
+        "usuwa złogi kwasu moczowego",
+        "działa moczopędnie"
+      ]
+    },
+    {
+      "tytul": "nalewka z dziewanny złoty oddech",
+      "typ": "medyczny",
+      "metoda": "macerat alkoholowy",
+      "tagi": ["zima", "odporność", "kaszel", "układ oddechowy"],
+      "skladniki": [
+        "2 garście suszonych kwiatów dziewanny",
+        "0,5 litra czystej wódki",
+        "3 goździki (dla aromatu i wzmocnienia antyseptycznego)"
+      ],
+      "sposob_przygotowania": "Kwiaty zalać alkoholem w wyparzonym słoju, dodać goździki. Trzymać w ciemnym miejscu przez 3 tygodnie, codziennie wstrząsając. Przefiltrować przez gęstą gazę.",
+      "dawkowanie": "15-20 kropel na pół szklanki wody w razie potrzeby.",
+      "uwagi": "Ważne dokładne przefiltrowanie, aby usunąć drobne włoski z kwiatów, które mogą drażnić gardło.",
+      "zrodla": [
+        "Archiwum Kwiatownika - Zimowe Sekrety"
+      ],
+      "roslina": "Dziewanna drobnokwiatowa",
+      "nazwa_lacinska": "Verbascum thapsus",
+      "slug": "dziewanna_drobnokwiatowa",
+      "cechy": [
+        "Złocisto-żółta barwa, miodowo-korzenny zapach"
+      ],
+      "wlasciwosci": [
+        "działa powlekająco na drogi oddechowe",
+        "łagodzi suchy kaszel",
+        "działa antyseptycznie"
+      ]
+    },
+    {
+      "tytul": "odwar z kory wierzby (naturalna aspiryna)",
+      "typ": "medyczny",
+      "metoda": "odwar",
+      "tagi": ["przeziębienie", "bóle stawów", "gorączka"],
+      "skladniki": [
+        "1 łyżeczka rozdrobnionej kory wierzby",
+        "250 ml zimnej wody"
+      ],
+      "sposob_przygotowania": "Korę zalać zimną wodą, doprowadzić do wrzenia i gotować na małym ogniu przez 10 minut. Odstawić na 15 minut, a następnie przecedzić.",
+      "dawkowanie": "1 filiżanka do 3 razy dziennie podczas infekcji.",
+      "uwagi": "Nie stosować u osób uczulonych na salicylany oraz u dzieci poniżej 12 roku życia bez konsultacji.",
+      "zrodla": [
+        "Archiwum Kwiatownika",
+        "ESCOP Monographs — Salicis cortex"
+      ],
+      "roslina": "Wierzba biała",
+      "nazwa_lacinska": "Salix alba",
+      "slug": "wierzba_biala",
+      "cechy": [
+        "Ciemnobrązowy odwar, silnie cierpki, gorzki smak"
+      ],
+      "wlasciwosci": [
+        "przeciwbólowy",
+        "przeciwgorączkowy",
+        "przeciwzapalny (źródło salicyny)"
+      ]
+    },
+    {
+      "tytul": "wcierka z szyszek olchy czarnej",
+      "typ": "medyczny",
+      "metoda": "odwar",
+      "tagi": ["włosy", "skóra głowy", "łojotok"],
+      "skladniki": [
+        "2 łyżki stołowe rozdrobnionych szyszek olszy czarnej",
+        "400 ml wody"
+      ],
+      "sposob_przygotowania": "Szyszki zalać wodą, gotować przez 15 minut. Po wystudzeniu dokładnie odcedzić. Wcierać w umytą skórę głowy, nie spłukiwać.",
+      "dawkowanie": "Stosować 1-2 razy w tygodniu.",
+      "uwagi": "Może delikatnie przyciemniać jasne włosy (działanie garbników).",
+      "zrodla": [
+        "Archiwum Kwiatownika - farbowanie i pielęgnacja"
+      ],
+      "roslina": "Olsza czarna",
+      "nazwa_lacinska": "Alnus glutinosa",
+      "slug": "olsza_czarna",
+      "cechy": [
+        "Ciemny, brązowy płyn o mocnym, ściągającym zapachu"
+      ],
+      "wlasciwosci": [
+        "silnie ściągające",
+        "redukuje przetłuszczanie się skóry głowy",
+        "działa antybakteryjnie"
+      ]
+    },
+    {
+      "tytul": "macerat z alkanny barwierskiej",
+      "typ": "medyczny",
+      "metoda": "macerat olejowy",
+      "tagi": ["kosmetyki", "skóra", "włosy", "barwienie"],
+      "skladniki": [
+        "2 łyżki sproszkowanego korzenia alkanny",
+        "100 ml oleju bazowego (np. lnianego lub z nasion malin)"
+      ],
+      "sposob_przygotowania": "Proszek zalać olejem w żaroodpornym naczyniu. Podgrzewać w kąpieli wodnej (temp. ok. 60-70°C) przez 2 godziny, aż olej nabierze głęboko czerwono-fioletowego koloru. Odstawić na dobę, przefiltrować.",
+      "dawkowanie": "Zewnętrznie, jako dodatek do masek na włosy lub maści kojących.",
+      "uwagi": "Silnie brudzi. Barwnik alkannina nie rozpuszcza się w wodzie, wyłącznie w tłuszczach i alkoholu.",
+      "zrodla": [
+        "Kwiatownik - Alchemia Ziołowa"
+      ],
+      "roslina": "Alkanna barwierska",
+      "nazwa_lacinska": "Alkanna tinctoria",
+      "slug": "alkanna_barwierska",
+      "cechy": [
+        "Olej o głębokiej, krwisto-fioletowej barwie"
+      ],
+      "wlasciwosci": [
+        "barwiące",
+        "wspomaga gojenie",
+        "działa łagodząco na skórę"
+      ]
+    },
+    {
+      "tytul": "wzmacniający napar z wiosennej pokrzywy",
+      "typ": "medyczny",
+      "metoda": "napar",
+      "tagi": ["wiosna", "wzmocnienie", "żelazo", "oczyszczanie"],
+      "skladniki": [
+        "2 garście świeżych, młodych szczytów pokrzywy (zbieranych przed kwitnieniem)",
+        "500 ml wrzątku"
+      ],
+      "sposob_przygotowania": "Świeże liście opłukać, lekko pognieść, zalać wrzątkiem i parzyć pod przykryciem przez 15 minut. Można dodać kilka kropel soku z cytryny w celu lepszego przyswajania żelaza.",
+      "dawkowanie": "1-2 szklanki dziennie w formie wiosennej kuracji.",
+      "uwagi": "Zbierać wyłącznie w czystych miejscach, z dala od dróg.",
+      "zrodla": [
+        "Archiwum Kwiatownika - Skarby spod śniegu"
+      ],
+      "roslina": "Pokrzywa zwyczajna",
+      "nazwa_lacinska": "Urtica dioica",
+      "slug": "pokrzywa_zwyczajna",
+      "cechy": [
+        "Jasnozielony napar, zapach świeżej zieleniny"
+      ],
+      "wlasciwosci": [
+        "krwiotwórcze",
+        "bogate w żelazo i krzemionkę",
+        "poprawia przemianę materii"
+      ]
+    },
+    {
+      "tytul": "galaretka z oskoły i leśnych fiołków",
+      "typ": "kulinarny",
+      "metoda": "żelowanie",
+      "tagi": ["deser", "wiosna", "fiołek", "oskoła"],
+      "skladniki": [
+        "500 ml oskoły (soku z brzozy)",
+        "2 łyżki miodu lipowego",
+        "2 łyżeczki agaru (lub żelatyny)",
+        "Garść świeżych kwiatów fiołka wonnego"
+      ],
+      "sposob_przygotowania": "Fiołki opłukać i ułożyć w miseczkach. Oskołę podgrzać z miodem i agarem, doprowadzając do wrzenia na 1 minutę. Gdy płyn lekko przestygnie, delikatnie zalać kwiaty. Schłodzić w lodówce do stężenia.",
+      "dawkowanie": "Porcja deserowa.",
+      "uwagi": "Nie gotować fiołków, ponieważ stracą barwę i delikatny aromat.",
+      "zrodla": [
+        "Opracowanie własne Kwiatownika"
+      ],
+      "roslina": "Fiołek wonny",
+      "nazwa_lacinska": "Viola odorata",
+      "slug": "fiolek_wonny",
+      "cechy": [
+        "Przezroczysta galaretka z zatopionymi, fioletowymi kwiatami. Mineralno-kwiatowy smak."
+      ],
+      "wlasciwosci": [
+        "orzeźwiające",
+        "nawadniające",
+        "estetyczne urozmaicenie diety"
+      ]
+    },
+    {
+      "tytul": "tradycyjne wino brzozowe (fermentowana oskoła)",
+      "typ": "kulinarny",
+      "metoda": "fermentacja",
+      "tagi": ["napój", "fermentacja", "historia", "oskoła"],
+      "skladniki": [
+        "5 litrów świeżej oskoły",
+        "50 g suszonego korzenia rzewienia (lub garść liści czarnej porzeczki dla obniżenia pH)",
+        "Odrobina drożdży winiarskich (opcjonalnie, w tradycji fermentowało dziko)"
+      ],
+      "sposob_przygotowania": "Oskołę zlać do czystego gąsiora (dawniej dębowych beczek). Dodać rzewień/liście porzeczki w celu zakwaszenia środowiska. Zamknąć rurką fermentacyjną i odstawić w chłodne miejsce na kilka tygodni.",
+      "dawkowanie": "Kieliszek do posiłku.",
+      "uwagi": "Fermentacja musi przebiegać w warunkach beztlenowych, by oskoła nie zaoctowała.",
+      "zrodla": [
+        "Historyczne zapiski etnobotaniczne"
+      ],
+      "roslina": "Brzoza brodawkowata",
+      "nazwa_lacinska": "Betula pendula",
+      "slug": "brzoza_brodawkowata",
+      "cechy": [
+        "Lekko musujący, kwaskowaty napój o profilu cydru"
+      ],
+      "wlasciwosci": [
+        "naturalny izotonik",
+        "źródło probiotyków",
+        "bogate w salicylany"
+      ]
+    },
+    {
+      "tytul": "syrop z młodych pędów sosny",
+      "typ": "kulinarny",
+      "metoda": "maceracja cukrowa",
+      "tagi": ["syrop", "wiosna", "sosna", "odporność"],
+      "skladniki": [
+        "1 kg młodych pędów sosny (zbieranych w maju, do 10 cm długości)",
+        "800 g cukru (lub ksylitolu/miodu)"
+      ],
+      "sposob_przygotowania": "Pędy oczyścić z brązowych łusek, lekko rozbić tłuczkiem. W wyparzonym słoju układać naprzemiennie warstwy pędów i cukru. Ugniatać, zasypać grubą warstwą cukru na górze. Odstawić na 2-3 tygodnie na słoneczny parapet. Odcedzić i zlać do butelek.",
+      "dawkowanie": "1 łyżka stołowa dodawana do herbaty lub wody.",
+      "uwagi": "Nie zbierać pędów z czubków drzew, aby nie hamować ich wzrostu.",
+      "zrodla": [
+        "Tradycyjne polskie przepisy domowe"
+      ],
+      "roslina": "Sosna zwyczajna",
+      "nazwa_lacinska": "Pinus sylvestris",
+      "slug": "sosna_zwyczajna",
+      "cechy": [
+        "Gęsty, bursztynowy syrop o bardzo silnym, żywicznym aromacie"
+      ],
+      "wlasciwosci": [
+        "wykrztuśne",
+        "bogate w witaminę C",
+        "wzmacnia odporność"
+      ]
+    },
+    {
+      "tytul": "wiosenne pesto z czosnku niedźwiedziego",
+      "typ": "kulinarny",
+      "metoda": "blendowanie",
+      "tagi": ["dodatek", "sos", "wiosna", "czosnek niedźwiedzi"],
+      "skladniki": [
+        "2 duże garście świeżych liści czosnku niedźwiedziego",
+        "50 g pestek słonecznika lub orzechów włoskich (podprażonych)",
+        "50 g twardego sera dojrzewającego (np. Bursztyn, Parmezan)",
+        "100 ml dobrej jakości oliwy z oliwek",
+        "Szczypta soli i pieprzu"
+      ],
+      "sposob_przygotowania": "Liście umyć i osuszyć. Zblendować wszystkie składniki na jednolitą masę, powoli dolewając oliwę do uzyskania odpowiedniej konsystencji.",
+      "dawkowanie": "Jako dodatek do makaronów, pieczywa lub sałatek.",
+      "uwagi": "UWAGA: Wczesną wiosną nie pomylić z liśćmi trującej konwalii majowej lub zimowita jesiennego!",
+      "zrodla": [
+        "Kulinaria ziołowe"
+      ],
+      "roslina": "Czosnek niedźwiedzi",
+      "nazwa_lacinska": "Allium ursinum",
+      "slug": "czosnek_niedzwedzi",
+      "cechy": [
+        "Intensywnie zielona pasta, silnie czosnkowy, świeży aromat"
+      ],
+      "wlasciwosci": [
+        "bakteriobójcze",
+        "obniża ciśnienie krwi",
+        "stymuluje trawienie"
+      ]
+    },
+    {
+      "tytul": "fałszywe kapary z pączków mniszka",
+      "typ": "kulinarny",
+      "metoda": "marynowanie",
+      "tagi": ["marynaty", "przystawka", "mniszek"],
+      "skladniki": [
+        "2 szklanki mocno zamkniętych, twardych pączków mniszka lekarskiego",
+        "1 szklanka octu jabłkowego",
+        "0,5 szklanki wody",
+        "1 łyżeczka soli, 1 łyżeczka cukru",
+        "Przyprawy: ziarna gorczycy, pieprz czarny, listek laurowy"
+      ],
+      "sposob_przygotowania": "Pączki ciasno ułożyć w wyparzonych słoiczkach. Wodę zagotować z octem, solą, cukrem i przyprawami. Gorącą zalewą zalać pączki, zakręcić słoiki. Odstawić na minimum 2 tygodnie do przegryzienia.",
+      "dawkowanie": "Dodatek kulinarny.",
+      "uwagi": "Pączki muszą być zbierane nisko przy ziemi, zanim łodyga zacznie rosnąć.",
+      "zrodla": [
+        "Kulinaria dzikich roślin jadalnych"
+      ],
+      "roslina": "Mniszek lekarski",
+      "nazwa_lacinska": "Taraxacum officinale",
+      "slug": "mniszek_lekarski",
+      "cechy": [
+        "Twarde, kwaśno-słone kuleczki o lekko goryczkowym finiszu"
+      ],
+      "wlasciwosci": [
+        "pobudza wydzielanie soków żołądkowych",
+        "wspiera pracę wątroby"
+      ]
+    },
+    {
+      "tytul": "zupa krem z młodej pokrzywy i ziemniaków",
+      "typ": "kulinarny",
+      "metoda": "gotowanie",
+      "tagi": ["zupa", "danie główne", "pokrzywa", "wiosna"],
+      "skladniki": [
+        "Duża miska młodych szczytów pokrzywy",
+        "4 ziemniaki",
+        "1 cebula, 2 ząbki czosnku",
+        "1 litr bulionu warzywnego",
+        "2 łyżki masła klarowanego, sól, pieprz, gałka muszkatołowa",
+        "Opcjonalnie: śmietanka lub mleko kokosowe do zabielenia"
+      ],
+      "sposob_przygotowania": "Cebulę i czosnek zeszklić na maśle w garnku. Dodać pokrojone w kostkę ziemniaki, zalać bulionem, gotować do miękkości (ok. 15 minut). Na koniec dorzucić przepłukaną pokrzywę, gotować jeszcze tylko 2 minuty (aby nie straciła koloru i witamin). Zblendować na gładki krem, doprawić.",
+      "dawkowanie": "Porcja obiadowa.",
+      "uwagi": "Krótkie gotowanie neutralizuje parzydełka, ale zachowuje cenne minerały.",
+      "zrodla": [
+        "Archiwum Kwiatownika - gotowanie z naturą"
+      ],
+      "roslina": "Pokrzywa zwyczajna",
+      "nazwa_lacinska": "Urtica dioica",
+      "slug": "pokrzywa_zwyczajna",
+      "cechy": [
+        "Gęsta, aksamitna, szmaragdowo-zielona zupa"
+      ],
+      "wlasciwosci": [
+        "odżywcza",
+        "remineralizująca",
+        "wysoka zawartość witaminy K"
+      ]
+    },
+    {
       "tytul": "napar z ziele skrzypu",
       "typ": "medyczny",
       "metoda": "",
@@ -56,6 +396,7 @@
         "bogaty w krzemionkę, wzmacnia kości i stawy, wspomaga regenerację skóry"
       ]
     },
+
     {
       "tytul": "kąpiel na rany i skórę",
       "typ": "medyczny",
