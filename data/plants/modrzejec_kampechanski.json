@@ -1,0 +1,111 @@
+{
+  "id": "modrzejec_kampechianski",
+  "nazwa_pl": "Modrzejec kampechiański (Logwood)",
+  "nazwa_lat": "Haematoxylum campechianum",
+  "rodzina": "Bobowate (Fabaceae)",
+  "opis": "Cierniste drzewo tropikalne pochodzące z Ameryki Środkowej. Choć nie jest to roślina rodzima dla Europy, jej twardziel (serce drewna) przez wieki stanowiła jeden z najważniejszych surowców importowanych w rzemiośle farbiarskim. Modrzejec pozwala uzyskać z jednego kawałka drewna niezwykle szerokie spektrum kolorów – od fioletów, przez błękity, aż po absolutną czerń. Z botanicznego punktu widzenia to roślina bogata w taniny, o potężnych właściwościach antyseptycznych.",
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Pień krępy i mocno powykrzywiany, pokryty szarą korą.",
+      "Twardziel drewna bezpośrednio po ścięciu krwisto-czerwona, na powietrzu ciemnieje do fioletowo-brunatnej.",
+      "Pierzaste liście i drobne, jasnożółte kwiaty zebrane w grona.",
+      "Gałęzie opatrzone mocnymi cierniami."
+    ],
+    "mozliwe_pomylki": "W strefie tropikalnej bywa mylony z brezylką (Caesalpinia). W Europie pomyłka w naturze jest niemożliwa ze względu na brak występowania, nabywa się jedynie gotowy surowiec w postaci ciemnych wiórów."
+  },
+  "profil_energetyczny": {
+    "smak": "Bardzo cierpki, na finiszu lekko słodkawy",
+    "termika": "Chłodna",
+    "wilgotnosc": "Wybitnie osuszająca",
+    "zywiol": "Woda i Eter",
+    "opis": "Energia modrzejca jest skupiająca i 'chłodząca'. Działa kojąco na stany zapalne, doskonale domykając łuski włosa i tkanki skórne dzięki ogromnej zawartości garbników. Zatrzymuje to, co ucieka."
+  },
+  "wymagania": {
+    "stanowisko": "Wyłącznie szklarniowe w Europie, wymaga pełnego słońca i bardzo wysokiej wilgotności powietrza.",
+    "gleba": "Żyzna, cięższa, ale z dobrym drenażem.",
+    "ph_gleby": "6.0 - 7.5.",
+    "woda": "Wysokie zapotrzebowanie. W naturze często rośnie na podmokłych, zalewowych nizinach tropikalnych i obrzeżach lasów namorzynowych.",
+    "mrozoodpornosc": "Brak mrozoodporności (strefa 10-11). Roślina ginie przy temperaturach poniżej 5°C.",
+    "zbiory": "Do celów barwierskich pozyskuje się wyłącznie twardziel ze starych, ponad 10-letnich drzew."
+  },
+  "czesci_roslin": [
+    "Drewno twardzielowe (Lignum Campechianum) – zrębki lub proszek."
+  ],
+  "zastosowanie": [
+    "Barwienie włosów i tkanin (fiolety, czernie w połączeniu z solami żelaza).",
+    "Laboratoria histologiczne (hematoksylina jest podstawowym barwnikiem mikroskopowym).",
+    "Fitoterapia (środek o silnym działaniu ściągającym przy biegunkach)."
+  ],
+  "interakcje": [
+    "Potężna ilość garbników sprawia, że modrzejec blokuje wchłanianie żelaza i wielu leków doustnych (alkaloidów). Nie należy łączyć naparów z suplementacją."
+  ],
+  "ciekawostki": [
+    "Kontrola nad lasami modrzejcowymi w zatoce Campeche była w XVII w. na tyle dochodowa, że stała się zarzewiem wojen i napadów pirackich wspieranych przez koronę brytyjską.",
+    "Barwnik hematoksylina do dziś jest niezbędny w diagnostyce medycznej, np. do barwienia próbek nowotworowych."
+  ],
+  "gildie": [
+    "Gildia tropikalna/szklarniowa: W oranżeriach może rosnąć w towarzystwie wanilii, storczyków epifitycznych oraz bromelii, korzystając z tej samej wysokiej wilgotności powietrza."
+  ],
+  "kalendarz_ogrodnika": {
+    "siew": "Cały rok w ogrzewanych szklarniach z systemem zamgławiania.",
+    "sadzenie": "Wymaga ciągłego stanowiska w temperaturze powyżej 18°C.",
+    "kwitnienie": "W warunkach naturalnych wczesną wiosną.",
+    "zbior": "Ścinka starych drzew na twardziel."
+  },
+  "przepisy_medyczne": [
+    {
+      "tytul": "Ekstrakt ściągający na stany zapalne (Skóra i Scalp)",
+      "typ": "medyczne",
+      "metoda": "napar",
+      "tagi": ["skóra głowy", "antyseptyka", "łojotok", "stany zapalne"],
+      "skladniki": [
+        "Wiórki drewna modrzejca: 1 łyżka",
+        "Woda: 500 ml"
+      ],
+      "sposob_przygotowania": [
+        "Zalać wiórki wrzątkiem w szklanym naczyniu.",
+        "Parzyć pod przykryciem 20 minut, aż płyn stanie się ciemnofioletowy/purpurowy.",
+        "Przecedzić przez gęste sito lub filtr papierowy."
+      ],
+      "dawkowanie": "Stosować wyłącznie zewnętrznie jako płukankę lub kompres.",
+      "uwagi": "Roztwór pozostawi fioletowy ślad na jasnej skórze i zafarbuje ręczniki.",
+      "roslina": "Modrzejec kampechiański",
+      "slug": "modrzejec_kampechianski",
+      "cechy": ["purpurowy roztwór", "zapach drewna"],
+      "wlasciwosci": ["silnie bakteriobójcze", "hamowanie wysięków", "ściągające"]
+    }
+  ],
+  "przepisy_kulinarne": [
+    {
+      "tytul": "Macerat z drewna (Historyczne barwienie destylatów)",
+      "typ": "kulinarne",
+      "metoda": "maceracja alkoholowa",
+      "tagi": ["alkohol", "barwnik", "tradycja", "nalewki"],
+      "skladniki": [
+        "Wiórki modrzejca: 1 łyżeczka",
+        "Wódka lub czysty spirytus rozcieńczony: 100 ml"
+      ],
+      "sposob_przygotowania": [
+        "Zalać wiórki alkoholem i odstawić na 2-3 dni w ciemne miejsce.",
+        "Dokładnie przefiltrować.",
+        "Używać po kilka kropel do barwienia domowych likierów na fioletowy kolor."
+      ],
+      "dawkowanie": "Jako dodatek estetyczny, kilkanaście kropel na butelkę nalewki.",
+      "uwagi": "Zbyt duża ilość doda alkoholowi cierpkości drewna.",
+      "roslina": "Modrzejec kampechiański",
+      "slug": "modrzejec_kampechianski",
+      "cechy": ["głęboki ciemny kolor", "ekstrakt alkoholowy"],
+      "wlasciwosci": ["poprawa trawienia (garbniki)"]
+    }
+  ],
+  "alchemia_barw": {
+    "glowny_barwnik": "Hematoksylina (wskaźnik pH)",
+    "efekt_na_wlosach": "Fiolety, chłodne brązy, stalowe szarości.",
+    "modyfikatory_ph": [
+      { "dodatek": "Ałun (zaprawa)", "efekt": "Utrwalenie koloru i uzyskanie czystego, wyrazistego fioletu." },
+      { "dodatek": "Soda oczyszczona", "efekt": "Przejście w stronę ciemnego błękitu i fioletu królewskiego." },
+      { "dodatek": "Ocet (kwas)", "efekt": "Przejście w stronę żółto-czerwonawą." }
+    ],
+    "ostrzezenia_bhp": "Bez odpowiedniego zakwaszenia końcowego podczas spłukiwania, kolor z modrzejca potrafi szybko 'zblednąć' do szarości pod wpływem zasadowych szamponów."
+  }
+}
