@@ -31,11 +31,11 @@
   "czesci_roslin": [
     "Drewno twardzielowe (Lignum Campechianum) – zrębki lub proszek."
   ],
-  "zastosowanie": [
-    "Barwienie włosów i tkanin (fiolety, czernie w połączeniu z solami żelaza).",
-    "Laboratoria histologiczne (hematoksylina jest podstawowym barwnikiem mikroskopowym).",
-    "Fitoterapia (środek o silnym działaniu ściągającym przy biegunkach)."
-  ],
+  "zastosowanie": {
+    "Barwienie włosów": "Barwienie włosów i tkanin (fiolety, czernie w połączeniu z solami żelaza).",
+    "Laboratoria histologiczne": "Laboratoria histologiczne (hematoksylina jest podstawowym barwnikiem mikroskopowym).",
+    "Fitoterapia": "Fitoterapia (środek o silnym działaniu ściągającym przy biegunkach)."
+  },
   "interakcje": [
     "Potężna ilość garbników sprawia, że modrzejec blokuje wchłanianie żelaza i wielu leków doustnych (alkaloidów). Nie należy łączyć naparów z suplementacją."
   ],
@@ -57,7 +57,12 @@
       "tytul": "Ekstrakt ściągający na stany zapalne (Skóra i Scalp)",
       "typ": "medyczne",
       "metoda": "napar",
-      "tagi": ["skóra głowy", "antyseptyka", "łojotok", "stany zapalne"],
+      "tagi": [
+        "skóra głowy",
+        "antyseptyka",
+        "łojotok",
+        "stany zapalne"
+      ],
       "skladniki": [
         "Wiórki drewna modrzejca: 1 łyżka",
         "Woda: 500 ml"
@@ -71,8 +76,15 @@
       "uwagi": "Roztwór pozostawi fioletowy ślad na jasnej skórze i zafarbuje ręczniki.",
       "roslina": "Modrzejec kampechiański",
       "slug": "modrzejec_kampechianski",
-      "cechy": ["purpurowy roztwór", "zapach drewna"],
-      "wlasciwosci": ["silnie bakteriobójcze", "hamowanie wysięków", "ściągające"]
+      "cechy": [
+        "purpurowy roztwór",
+        "zapach drewna"
+      ],
+      "wlasciwosci": [
+        "silnie bakteriobójcze",
+        "hamowanie wysięków",
+        "ściągające"
+      ]
     }
   ],
   "przepisy_kulinarne": [
@@ -80,7 +92,12 @@
       "tytul": "Macerat z drewna (Historyczne barwienie destylatów)",
       "typ": "kulinarne",
       "metoda": "maceracja alkoholowa",
-      "tagi": ["alkohol", "barwnik", "tradycja", "nalewki"],
+      "tagi": [
+        "alkohol",
+        "barwnik",
+        "tradycja",
+        "nalewki"
+      ],
       "skladniki": [
         "Wiórki modrzejca: 1 łyżeczka",
         "Wódka lub czysty spirytus rozcieńczony: 100 ml"
@@ -94,17 +111,31 @@
       "uwagi": "Zbyt duża ilość doda alkoholowi cierpkości drewna.",
       "roslina": "Modrzejec kampechiański",
       "slug": "modrzejec_kampechianski",
-      "cechy": ["głęboki ciemny kolor", "ekstrakt alkoholowy"],
-      "wlasciwosci": ["poprawa trawienia (garbniki)"]
+      "cechy": [
+        "głęboki ciemny kolor",
+        "ekstrakt alkoholowy"
+      ],
+      "wlasciwosci": [
+        "poprawa trawienia (garbniki)"
+      ]
     }
   ],
   "alchemia_barw": {
     "glowny_barwnik": "Hematoksylina (wskaźnik pH)",
     "efekt_na_wlosach": "Fiolety, chłodne brązy, stalowe szarości.",
     "modyfikatory_ph": [
-      { "dodatek": "Ałun (zaprawa)", "efekt": "Utrwalenie koloru i uzyskanie czystego, wyrazistego fioletu." },
-      { "dodatek": "Soda oczyszczona", "efekt": "Przejście w stronę ciemnego błękitu i fioletu królewskiego." },
-      { "dodatek": "Ocet (kwas)", "efekt": "Przejście w stronę żółto-czerwonawą." }
+      {
+        "dodatek": "Ałun (zaprawa)",
+        "efekt": "Utrwalenie koloru i uzyskanie czystego, wyrazistego fioletu."
+      },
+      {
+        "dodatek": "Soda oczyszczona",
+        "efekt": "Przejście w stronę ciemnego błękitu i fioletu królewskiego."
+      },
+      {
+        "dodatek": "Ocet (kwas)",
+        "efekt": "Przejście w stronę żółto-czerwonawą."
+      }
     ],
     "ostrzezenia_bhp": "Bez odpowiedniego zakwaszenia końcowego podczas spłukiwania, kolor z modrzejca potrafi szybko 'zblednąć' do szarości pod wpływem zasadowych szamponów."
   }

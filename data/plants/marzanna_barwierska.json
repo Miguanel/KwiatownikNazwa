@@ -28,15 +28,19 @@
     "mrozoodpornosc": "Wysoka (strefa 5). Bez problemu zimuje w polskim klimacie pod warunkiem odpowiedniego drenażu.",
     "zbiory": "Kłącza wykopuje się dopiero w 3. roku uprawy, późną jesienią, kiedy roślina zgromadzi maksimum barwnika."
   },
-  "czesci_roslin": [
-    "Kłącze i korzeń (Rhizoma et Radix Rubiae) – główny surowiec barwierski i medyczny.",
-    "Ziele (rzadziej stosowane w ludowej medycynie weterynaryjnej)."
-  ],
-  "zastosowanie": [
-    "Farbiarstwo (trwały czerwony barwnik do tkanin i włosów).",
-    "Fitoterapia (leczenie kamicy nerkowej i dróg moczowych).",
-    "Rzemiosło historyczne i rekonstrukcje."
-  ],
+  "czesci_rosliny": {
+    "korzeń": {
+      "wlasciwości": "silnie barwiące, moczopędne, rozpuszczające złogi",
+      "opis_botaniczny": "Podziemne kłącza o intensywnym czerwonym kolorze."
+    }
+  },
+  "zastosowanie": {
+    "medyczne": "Leczenie kamicy nerkowej i dróg moczowych.",
+    "kulinarne": "Historyczny barwnik spożywczy.",
+    "Farbiarstwo": "(trwały czerwony barwnik do tkanin i włosów).",
+    "Fitoterapia": "(leczenie kamicy nerkowej i dróg moczowych).",
+    "Rzemiosło": "historyczne i rekonstrukcje."
+  },
   "interakcje": [
     "Może wchodzić w interakcje z lekami moczopędnymi oraz rozrzedzającymi krew.",
     "Barwniki mogą czasowo maskować wyniki badań laboratoryjnych moczu."
@@ -59,7 +63,12 @@
       "tytul": "Odwar na złogi nerkowe (Litotryptologiczny)",
       "typ": "medyczne",
       "metoda": "odwar",
-      "tagi": ["nerki", "kamica", "oczyszczanie", "drogi moczowe"],
+      "tagi": [
+        "nerki",
+        "kamica",
+        "oczyszczanie",
+        "drogi moczowe"
+      ],
       "skladniki": [
         "Sproszkowany korzeń marzanny: 1 łyżeczka",
         "Woda: 300 ml (najlepiej miękka)"
@@ -73,8 +82,15 @@
       "uwagi": "Uwaga: Może barwić mocz i pot na czerwonawy kolor. Nie stosować w ciąży.",
       "roslina": "Marzanna barwierska",
       "slug": "marzanna_barwierska",
-      "cechy": ["ceglasto-czerwony kolor", "ziemisty aromat"],
-      "wlasciwosci": ["rozpuszczanie kamieni fosforanowych i szczawianowych", "rozkurczowa", "moczopędna"]
+      "cechy": [
+        "ceglasto-czerwony kolor",
+        "ziemisty aromat"
+      ],
+      "wlasciwosci": [
+        "rozpuszczanie kamieni fosforanowych i szczawianowych",
+        "rozkurczowa",
+        "moczopędna"
+      ]
     }
   ],
   "przepisy_kulinarne": [
@@ -82,7 +98,12 @@
       "tytul": "Historyczny barwnik do lukru i ciast (Alizarynowy róż)",
       "typ": "kulinarne",
       "metoda": "ekstrakcja",
-      "tagi": ["barwnik", "tradycja", "deser", "dodatki"],
+      "tagi": [
+        "barwnik",
+        "tradycja",
+        "deser",
+        "dodatki"
+      ],
       "skladniki": [
         "Sproszkowany korzeń marzanny: szczypta (ok. 1-2g)",
         "Woda: 50 ml",
@@ -98,16 +119,27 @@
       "uwagi": "W większych ilościach nada potrawie gorzki posmak.",
       "roslina": "Marzanna barwierska",
       "slug": "marzanna_barwierska",
-      "cechy": ["intensywnie barwiący", "płynny ekstrakt"],
-      "wlasciwosci": ["estetyczne"]
+      "cechy": [
+        "intensywnie barwiący",
+        "płynny ekstrakt"
+      ],
+      "wlasciwosci": [
+        "estetyczne"
+      ]
     }
   ],
   "alchemia_barw": {
     "glowny_barwnik": "Alizaryna, Purpuryna",
     "efekt_na_wlosach": "Od brzoskwiniowego blondu po głęboką czerwień mahoniową.",
     "modyfikatory_ph": [
-      { "dodatek": "Kwas (np. ocet jabłkowy, hibiskus)", "efekt": "Przesunięcie w stronę jasnej pomarańczy i ciepłego złota." },
-      { "dodatek": "Zasada (np. soda oczyszczona)", "efekt": "Pogłębienie czerwieni, przejście w tony bordowe i wiśniowe." }
+      {
+        "dodatek": "Kwas (np. ocet jabłkowy, hibiskus)",
+        "efekt": "Przesunięcie w stronę jasnej pomarańczy i ciepłego złota."
+      },
+      {
+        "dodatek": "Zasada (np. soda oczyszczona)",
+        "efekt": "Pogłębienie czerwieni, przejście w tony bordowe i wiśniowe."
+      }
     ],
     "ostrzezenia_bhp": "Korzeń silnie brudzi skórę i narzędzia. Przebarwienia z ceramiki bywają trudne do usunięcia."
   }
