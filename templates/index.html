@@ -145,15 +145,39 @@
         return window.location.origin + "/plant/" + id + "/";
     }
 
-    // --- RENDER KART ---
+    // --- RENDEROWANIE KART BESTIARIUSZA ---
     function renderBestiary() {
         const grid = document.getElementById('bestiaryGrid');
+        if (!grid) return; // Zabezpieczenie przed błędem jeśli brak kontenera
+
+        grid.innerHTML = ''; // Czyścimy na starcie
+
+        if (plantsData.length === 0) {
+            grid.innerHTML = '<p style="color: #9c9284; grid-column: 1 / -1;">Brak wpisów w bestiariuszu. Dodaj pliki JSON.</p>';
+            return;
+        }
+
         plantsData.forEach(plant => {
             const card = document.createElement('div');
             card.className = 'witcher-card';
+
             const imgUrl = plant.zdjecie_url || plant.zdjecie || plant.image;
-            const imgHtml = imgUrl ? `<div class="witcher-card-img" style="background-image: url('${imgUrl}')"></div>` : `<div class="witcher-card-img"><i class="ra ra-leaf" style="font-size: 40px; color: #362e25;"></i></div>`;
-            card.innerHTML = `${imgHtml}<div class="witcher-card-title">${plant.nazwa_pl}</div><a href="${baseUrl.replace('PLACEHOLDER', plant.id)}" class="witcher-btn">Zbadaj</a>`;
+            const imgHtml = imgUrl
+                ? `<div class="witcher-card-img" style="background-image: url('${imgUrl}')"></div>`
+                : `<div class="witcher-card-img"><i class="ra ra-leaf"></i></div>`;
+
+            // TUTAJ POPRAWKA: Używamy nowej funkcji zamiast baseUrl
+            const plantUrl = getPlantUrl(plant.id);
+            const rodzina = plant.rodzina || 'Roślina nieznanego pochodzenia';
+
+            card.innerHTML = `
+                ${imgHtml}
+                <div class="witcher-card-content">
+                    <h3 class="witcher-card-title">${plant.nazwa_pl}</h3>
+                    <p class="witcher-card-desc">${rodzina}</p>
+                    <a href="${plantUrl}" class="witcher-btn">Zbadaj</a>
+                </div>
+            `;
             grid.appendChild(card);
         });
     }
