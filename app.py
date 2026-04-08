@@ -282,19 +282,42 @@ def get_all_therapeutic_keywords():
 
     for pid in all_plants_ids:
         data = get_plant_data(pid)
-        if data:
-            for czesc in data.get('czesci_rosliny', {}).values():
-                wlasciwosci = czesc.get('wlasciwości', '')
-                # Rozbijamy tekst na słowa i czyścimy z przecinków
-                words = [w.strip().lower() for w in wlasciwosci.replace(',', ' ').replace('.', ' ').split()]
-                keywords.update(words)
 
-            # Pobieramy słowa z zastosowania medycznego
-            medyczne = data.get('zastosowanie', {}).get('medyczne', '')
-            med_words = [w.strip().lower() for w in medyczne.replace(',', ' ').replace('.', ' ').split()]
-            keywords.update(med_words)
+        # Sprawdzamy, czy dane w ogóle istnieją
+        if not data:
+            continue
 
-    # Filtrujemy zbyt krótkie słowa (poniżej 4 znaków), aby uniknąć spójników
+        # --- KLUCZOWA POPRAWKA: Sprawdzenie typu danych ---
+        if not isinstance(data, dict):
+            print(f"!!! KRYTYCZNY BŁĄD: Plik '{pid}.json' ma zły format (jest LISTĄ zamiast OBIEKTEM).")
+            continue
+
+        try:
+            # Bezpieczne pobieranie części rośliny
+            czesci = data.get('czesci_rosliny', {})
+            if isinstance(czesci, dict):
+                for czesc in czesci.values():
+                    if isinstance(czesc, dict):
+                        wlasciwosci = czesc.get('wlasciwości', '')
+                        words = [w.strip().lower() for w in wlasciwosci.replace(',', ' ').replace('.', ' ').split()]
+                        keywords.update(words)
+
+            # Bezpieczne pobieranie zastosowania
+            zastosowanie = data.get('zastosowanie', {})
+            if isinstance(zastosowanie, dict):
+                medyczne = zastosowanie.get('medyczne', '')
+                if isinstance(medyczne, str):
+                    med_words = [w.strip().lower() for w in medyczne.replace(',', ' ').replace('.', ' ').split()]
+                    keywords.update(med_words)
+            else:
+                # Jeśli 'zastosowanie' to np. tekst zamiast obiektu w JSON
+                print(f"!!! OSTRZEŻENIE: Plik '{pid}.json' ma złą strukturę pola 'zastosowanie'.")
+
+        except Exception as e:
+            print(f"!!! BŁĄD podczas procesowania pliku '{pid}.json': {e}")
+            continue
+
+    # Filtrujemy zbyt krótkie słowa (poniżej 4 znaków)
     return sorted([word for word in keywords if len(word) > 3])
 
 
