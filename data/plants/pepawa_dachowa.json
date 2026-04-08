@@ -1,61 +1,90 @@
 {
-    "id": "pepawa_dachowa",
-    "nazwa_pl": "Pępawa dachowa",
-    "nazwa_lat": "Crepis tectorum",
-    "rodzina": "Astrowate (Asteraceae)",
-    "opis": "Roślina jednoroczna lub dwuletnia, rzadziej wieloletnia chwastowata roślina polna i ruderalna. Wyrasta na wysokość od 20 do 90 cm. Tworzy wzniesioną, sztywną i często rozgałęzioną łodygę. Podobnie jak wiele innych astrowatych o żółtych kwiatach, wydziela biały sok mleczny, przez co przez laików wrzucana jest do 'wora' z napisem mlecz/mniszek.",
-    "identyfikacja": {
-      "cechy_kluczowe": [
-        "Łodyga wzniesiona, zazwyczaj rozgałęziona, wewnątrz pełna, bruzdkowana.",
-        "Obecny sok mleczny.",
-        "Liście odziomkowe głęboko zatokowo ząbkowane, liście łodygowe wąskie (równowąskie) o strzałkowatej nasadzie.",
-        "Drobne, żółte koszyczki kwiatowe zebrane w podbaldachy na szczytach pędów."
-      ],
-      "mozliwe_pomylki": "Mlecz polny – mlecz ma grubsze, puste w środku łodygi, a jego liście są znacznie szersze. Pępawa dwuletnia (Crepis biennis) – jest większa, o szerszych, mocniej powcinanych liściach łodygowych."
-    },
-    "profil_energetyczny": {
-      "smak": "Gorzkawy",
-      "termika": "Chłodna",
-      "wilgotnosc": "Neutralna",
-      "zywiol": "Powietrze",
-      "opis": "Nie posiada głęboko opisanego profilu w tradycyjnym ziołolecznictwie, działa lekko oczyszczająco."
-    },
-    "wymagania": {
-      "stanowisko": "Silnie nasłonecznione.",
-      "gleba": "Uboga, piaszczysta, sucha. Typowy gatunek ruderalny, rosnący przy drogach, na nasypach.",
-      "ph_gleby": "5.0 - 7.0",
-      "woda": "Toleruje suszę.",
-      "mrozoodpornosc": "Odporna (jako roślina zimująca w fazie rozety).",
-      "zbiory": "Rzadko zbierana w celach innych niż chwast rolniczy."
-    },
-    "czesci_roslin": [
-      "Brak części w powszechnym użyciu."
-    ],
-    "zastosowanie": [
-      "Jako roślina pastwiskowa o słabym znaczeniu.",
-      "W zielarstwie ludowym zapomniana; bywała używana zewnętrznie na uspokojenie skóry."
-    ],
-    "interakcje": [
-      "Brak danych."
-    ],
-    "ciekawostki": [
-      "Nazwa gatunkowa 'tectorum' (dachowa) wzięła się stąd, że w dawnych czasach nasiona łatwo rozsiewały się i kiełkowały na słomianych i ziemnych strzechach chałup."
-    ],
-    "gildie": [
-      "Roślina pionierska na bardzo ubogich i zniszczonych glebach (hałdy, nasypy kolejowe)."
-    ],
-    "kalendarz_ogrodnika": {
-      "siew": "Rozsiewa się bardzo plennie przez puch kielichowy.",
-      "sadzenie": "Nie dotyczy.",
-      "kwitnienie": "Czerwiec - Wrzesień.",
-      "zbior": "Brak danych."
-    },
-    "przepisy_medyczne": [],
-    "przepisy_kulinarne": [],
-    "alchemia_barw": {
-      "glowny_barwnik": "Brak",
-      "efekt_na_wlosach": "Brak.",
-      "modyfikatory_ph": [],
-      "ostrzezenia_bhp": "Bezpieczna, choć bezużyteczna barwiersko."
-    }
-  }
+"id": "pepawa_dachowa",
+"nazwa_pl": "Pępawa dachowa",
+"nazwa_lat": "Crepis tectorum",
+"rodzina": "Astrowate (Asteraceae)",
+"opis": "Roślina jednoroczna lub dwuletnia, rzadziej wieloletnia chwastowata roślina polna i ruderalna. Wyrasta na wysokość od 20 do 90 cm. Tworzy wzniesioną, sztywną i często bardzo mocno rozgałęzioną łodygę. Podobnie jak wiele innych astrowatych o żółtych kwiatach, wydziela biały sok mleczny, przez co przez laików wrzucana jest do ogólnego worka z napisem 'mlecz' lub 'mniszek'.",
+"profil_energetyczny": {
+"smak": "Gorzkawy",
+"termika": "Chłodna",
+"wilgotnosc": "Neutralna",
+"zywiol": "Powietrze",
+"opis": "Nie posiada głęboko opisanego profilu w tradycyjnym ziołolecznictwie, działa lekko oczyszczająco na powierzchniowym poziomie."
+},
+"wymagania": {
+"stanowisko": "Silnie nasłonecznione.",
+"gleba": "Uboga, piaszczysta, sucha. Typowy gatunek ruderalny, rosnący przy drogach, na nasypach i murach.",
+"ph_gleby": "5.0 - 7.0",
+"mrozoodpornosc": "Odporna jako roślina zimująca w fazie rozety.",
+"woda": "Świetnie toleruje suszę i brak wody."
+},
+"identyfikacja": {
+"cechy_kluczowe": [
+"Łodyga wzniesiona, zazwyczaj silnie rozgałęziona, wewnątrz pełna, podłużnie bruzdkowana.",
+"Obecny biały sok mleczny.",
+"Liście odziomkowe głęboko zatokowo ząbkowane, natomiast wyższe liście łodygowe są bardzo wąskie (równowąskie) o strzałkowatej nasadzie.",
+"Drobne, bladożółte koszyczki kwiatowe zebrane w podbaldachy na szczytach licznych pędów."
+],
+"mozliwe_pomylki": [
+{
+"nazwa": "Mlecz polny (Sonchus arvensis)",
+"roznica": "Mlecz polny ma grubsze, puste w środku łodygi, a jego liście są znacznie szersze i bardziej mięsiste."
+},
+{
+"nazwa": "Pępawa dwuletnia (Crepis biennis)",
+"roznica": "Jest większa, jej koszyczki kwiatowe są okazalsze, a liście łodygowe szersze i mocniej powcinane."
+}
+]
+},
+"czesci_rosliny": {
+"ziele": {
+"nazwa_surowca": "Herba Crepidis",
+"opis_botaniczny": "Część nadziemna mało istotna terapeutycznie.",
+"skladniki_aktywne": [
+"Gorycze",
+"Węglowodany złożone"
+],
+"wlasciwosci": "Marginalne.",
+"czas_zbioru": "Nie zbiera się komercyjnie.",
+"ostrzezenia": "Brak."
+}
+},
+"zastosowanie": {
+"medyczne": "W zielarstwie ludowym całkowicie zapomniana; bywała używana zewnętrznie w formie papki na otarcia skóry.",
+"kulinarne": "W czasie głodu gotowano młode rozety, jednak roślina jest sucha i mało smaczna.",
+"ogrodowe": "Chwast upraw i terenów zaniedbanych.",
+"rzemieslnicze": "Brak."
+},
+"interakcje": [
+"Brak danych."
+],
+"ciekawostki": [
+"Nazwa gatunkowa 'tectorum' (dachowa) wzięła się stąd, że w dawnych wiekach nasiona tej rośliny z łatwością rozsiewały się i kiełkowały na słomianych oraz ziemnych strzechach wiejskich chałup."
+],
+"permakultura": {
+"funkcje": [
+"Roślina pionierska inicjująca sukcesję na bardzo ubogich, wręcz jałowych i zniszczonych glebach (hałdy, zręby, nasypy kolejowe)."
+],
+"gildie": [
+{
+"nazwa": "Tereny zdegradowane",
+"rola": "Zatrzymuje erozję wiatrową pierwszej warstwy podłoża."
+}
+]
+},
+"kalendarz_ogrodnika": {
+"siew": "Rozsiewa się bardzo plennie przez puch kielichowy jesienią.",
+"sadzenie": "Nie dotyczy.",
+"kwitnienie": "Czerwiec - Wrzesień.",
+"zadania": []
+},
+"przepisy_medyczne": [],
+"przepisy_kulinarne": [],
+"alchemia_barw": {
+"glowny_barwnik": "Brak",
+"efekt_na_wlosach": "Brak.",
+"modyfikatory_ph": [],
+"ostrzezenia_bhp": "Bezpieczna, ale bezużyteczna barwiersko."
+},
+"ostrzezenia": "Chwast rolniczy, bezpieczny w kontakcie."
+}

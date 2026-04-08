@@ -1,65 +1,91 @@
-[
-
-
-
-  {
-    "id": "brodawnik_zwyczajny",
-    "nazwa_pl": "Brodawnik zwyczajny",
-    "nazwa_lat": "Leontodon hispidus",
-    "rodzina": "Astrowate (Asteraceae)",
-    "opis": "Bylina łąkowa bardzo często mylona z mniszkiem lekarskim ze względu na żółte koszyczki kwiatowe i rozetę liści odziomkowych. Jednak w przeciwieństwie do mniszka, liście brodawnika są zazwyczaj szorstko owłosione, a jego bezlistna łodyga nie jest dętą rurką.",
-    "identyfikacja": {
-      "cechy_kluczowe": [
-        "Łodyga (głąbik) jest pełna w środku, a nie rurkowata i pusta jak u mniszka.",
-        "Łodyga i liście są często pokryte sztywnymi, rozwidlonymi włoskami.",
-        "Brak soku mlecznego (lub jest go bardzo niewiele, wodnisty).",
-        "Pączki kwiatowe przed rozwinięciem zwisają (u mniszka są wzniesione)."
+{
+  "id": "brodawnik_zwyczajny",
+  "nazwa_pl": "Brodawnik zwyczajny",
+  "nazwa_lat": "Leontodon hispidus",
+  "rodzina": "Astrowate (Asteraceae)",
+  "opis": "Bylina łąkowa bardzo często mylona z mniszkiem lekarskim ze względu na żółte koszyczki kwiatowe i rozetę liści odziomkowych. Jednak w przeciwieństwie do mniszka, liście brodawnika są zazwyczaj szorstko owłosione, a jego bezlistna łodyga nie jest dętą rurką. Tworzy typowy krajobraz tradycyjnych łąk kośnych.",
+  "profil_energetyczny": {
+    "smak": "Gorzkawy, trawiasty",
+    "termika": "Neutralna",
+    "wilgotnosc": "Neutralna",
+    "zywiol": "Ziemia",
+    "opis": "Działanie słabe, rzadko stosowany w profilowaniu terapeutycznym. Silnie wrośnięty w ziemię."
+  },
+  "wymagania": {
+    "stanowisko": "Słoneczne.",
+    "gleba": "Preferuje gleby wilgotne, łąkowe, żyzne, wapienne.",
+    "ph_gleby": "6.0 - 7.5",
+    "mrozoodpornosc": "Pełna (Strefa 4).",
+    "woda": "Roślina umiarkowanie wilgociolubna."
+  },
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Łodyga (głąbik) jest PEŁNA w środku, a nie rurkowata i pusta jak u mniszka.",
+      "Łodyga i liście są często pokryte sztywnymi, rozwidlonymi włoskami.",
+      "Brak soku mlecznego (lub jest go bardzo niewiele i jest wodnisty).",
+      "Pączki kwiatowe przed rozwinięciem zwisają ku dołowi (u mniszka są wzniesione)."
+    ],
+    "mozliwe_pomylki": [
+      {
+        "nazwa": "Mniszek lekarski",
+        "roznica": "Mniszek ma pustą, gładką (nieowłosioną) łodygę i wydziela bardzo obfity sok mleczny."
+      },
+      {
+        "nazwa": "Prosiennicznik szorstki (Hypochaeris radicata)",
+        "roznica": "Podobny, ale łodyga prosiennicznika jest lekko ulistniona drobnymi łuskami i zwykle rozgałęziona w górnej części."
+      }
+    ]
+  },
+  "czesci_rosliny": {
+    "ziele": {
+      "nazwa_surowca": "Herba Leontodoni",
+      "opis_botaniczny": "Części nadziemne, głównie liście i kwiaty.",
+      "skladniki_aktywne": [
+        "Flawonoidy",
+        "Błonnik"
       ],
-      "mozliwe_pomylki": "Mniszek lekarski – jego łodyga jest pusta i gładka, wydziela obfity sok mleczny. Prosiennicznik szorstki – podobny, ale jego łodyga jest lekko ulistniona (łuskowato) i rozgałęziona."
-    },
-    "profil_energetyczny": {
-      "smak": "Gorzkawy, trawiasty",
-      "termika": "Neutralna",
-      "wilgotnosc": "Neutralna",
-      "zywiol": "Ziemia",
-      "opis": "Działanie słabe, rzadko stosowany w profilowaniu terapeutycznym."
-    },
-    "wymagania": {
-      "stanowisko": "Słoneczne.",
-      "gleba": "Preferuje gleby wilgotne, łąkowe, żyzne.",
-      "ph_gleby": "5.5 - 7.0",
-      "woda": "Roślina umiarkowanie wilgociolubna.",
-      "mrozoodpornosc": "Pełna.",
-      "zbiory": "Brak istotnego znaczenia zielarskiego."
-    },
-    "czesci_roslin": [
-      "Kwiaty i młode liście (bardzo rzadko wykorzystywane)"
-    ],
-    "zastosowanie": [
-      "Gatunek łąkowy, paszowy dla zwierząt roślinożernych.",
-      "Dawniej kwiaty bywały używane do barwienia tkanin na żółto, ale o niskiej trwałości."
-    ],
-    "interakcje": [
-      "Brak danych."
-    ],
-    "ciekawostki": [
-      "Łacińska nazwa 'Leontodon' oznacza ząb lwa, tak samo jak u mniszka, co potęguje lingwistyczne i botaniczne pomyłki."
-    ],
-    "gildie": [
-      "Typowy składnik tradycyjnych, bogatych gatunkowo łąk kośnych."
-    ],
-    "kalendarz_ogrodnika": {
-      "siew": "Rozsiewa się naturalnie.",
-      "sadzenie": "Brak.",
-      "kwitnienie": "Czerwiec - Wrzesień.",
-      "zbior": "Nie dotyczy."
-    },
-    "przepisy_medyczne": [],
-    "przepisy_kulinarne": [],
-    "alchemia_barw": {
-      "glowny_barwnik": "Flawonoidy (słabe)",
-      "efekt_na_wlosach": "Brak użytecznego zastosowania.",
-      "modyfikatory_ph": [],
-      "ostrzezenia_bhp": "Brak."
+      "wlasciwosci": "Bardzo słabe działanie terapeutyczne, głównie paszowe.",
+      "czas_zbioru": "Lato.",
+      "ostrzezenia": "Brak."
     }
   },
+  "zastosowanie": {
+    "medyczne": "Praktycznie zapomniany w fitoterapii, historycznie używany w mieszankach łąkowych na trawienie.",
+    "kulinarne": "Paszowe dla zwierząt roślinożernych.",
+    "ogrodowe": "Ważny składnik różnorodnych łąk kwietnych.",
+    "rzemieslnicze": "Dawniej kwiaty bywały używane do barwienia wełny na żółto-zielono."
+  },
+  "interakcje": [
+    "Brak danych."
+  ],
+  "ciekawostki": [
+    "Łacińska nazwa 'Leontodon' oznacza ząb lwa – tak samo jak u mniszka, co potęguje pomyłki również u początkujących botaników."
+  ],
+  "permakultura": {
+    "funkcje": [
+      "Stabilizacja luźnych gleb łąkowych.",
+      "Pokarm dla bydła."
+    ],
+    "gildie": [
+      {
+        "nazwa": "Łąka kośna",
+        "rola": "Współtworzy warstwę runa z trawami, dając pożytek owadom."
+      }
+    ]
+  },
+  "kalendarz_ogrodnika": {
+    "siew": "Rozsiewa się naturalnie wiatropylnie.",
+    "sadzenie": "Brak.",
+    "kwitnienie": "Czerwiec - Wrzesień.",
+    "zadania": []
+  },
+  "przepisy_medyczne": [],
+  "przepisy_kulinarne": [],
+  "alchemia_barw": {
+    "glowny_barwnik": "Flawonoidy (słabe)",
+    "efekt_na_wlosach": "Brak użytecznego zastosowania do włosów.",
+    "modyfikatory_ph": [],
+    "ostrzezenia_bhp": "Bezpieczny."
+  },
+  "ostrzezenia": "Brak."
+}

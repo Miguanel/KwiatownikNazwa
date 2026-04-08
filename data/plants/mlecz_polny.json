@@ -1,117 +1,143 @@
- {
-    "id": "mlecz_polny",
-    "nazwa_pl": "Mlecz polny",
-    "nazwa_lat": "Sonchus arvensis",
-    "rodzina": "Astrowate (Asteraceae)",
-    "opis": "Bylina polna, uciążliwy chwast upraw o silnym, rozgałęzionym systemie korzeniowym (rozłogi). Wytwarza wysokie (do 150 cm), wzniesione i ulistnione łodygi. Kwiatostany są żółte, znacznie większe niż u mlecza zwyczajnego, zebrane w baldachokształtne wiechy na szczytach pędów. Charakterystyczne są gruczołowate włoski na szypułkach i okrywach koszyczków.",
-    "identyfikacja": {
-      "cechy_kluczowe": [
-        "Łodyga dęta (pusta), ale ulistniona i rozgałęziona na szczycie.",
-        "Obecny biały sok mleczny.",
-        "Liście na łodydze mają zaokrąglone uszka, którymi obejmują pęd.",
-        "Włoski gruczołowe (często żółtawe) na szypułkach pod koszyczkami kwiatowymi.",
-        "Wiele kwiatostanów na jednej roślinie."
-      ],
-      "mozliwe_pomylki": "Mniszek lekarski – mniszek nie ma ulistnionej łodygi i posiada tylko 1 kwiat. Mlecz zwyczajny (Sonchus oleraceus) – jest rośliną jednoroczną, nie ma rozłogów, a jego uszka przy liściach są ostro zakończone, nie ma też gruczołowatych włosków."
-    },
-    "profil_energetyczny": {
-      "smak": "Gorzki",
-      "termika": "Chłodna",
-      "wilgotnosc": "Nawilżająca do neutralnej",
-      "zywiol": "Woda",
-      "opis": "Działa łagodnie oczyszczająco i moczopędnie, choć w fitoterapii stosowany marginalnie w porównaniu do mniszka."
-    },
-    "wymagania": {
-      "stanowisko": "Słoneczne.",
-      "gleba": "Gliniaste, wilgotne, bogate w azot i potas.",
-      "ph_gleby": "6.0 - 7.5",
-      "woda": "Toleruje okresowe zalewanie, preferuje wilgoć.",
-      "mrozoodpornosc": "Bylina mrozoodporna.",
-      "zbiory": "Liście wiosną."
-    },
-    "czesci_roslin": [
-      "Młode liście (jadalne przed kwitnieniem)"
-    ],
-    "zastosowanie": [
-      "Kulinaria (młode liście traktowane jak dzikie warzywo po ugotowaniu).",
-      "Ziołolecznictwo ludowe (okłady z liści na stany zapalne skóry)."
-    ],
-    "interakcje": [
-      "Brak znanych silnych interakcji."
-    ],
-    "ciekawostki": [
-      "Niezwykle trudny do wyplewienia w rolnictwie z powodu kruchych korzeni, z których każdy fragment tworzy nową roślinę.",
-      "Kwiaty zamykają się po południu i podczas deszczu."
-    ],
-    "gildie": [
-      "Gatunek wskaźnikowy dla gleb ciężkich i zasobnych."
-    ],
-    "kalendarz_ogrodnika": {
-      "siew": "Rozmnaża się głównie wegetatywnie z korzeni.",
-      "sadzenie": "Brak.",
-      "kwitnienie": "Czerwiec - Październik.",
-      "zbior": "Wiosna (liście)."
-    },
-    "przepisy_medyczne": [
-      {
-        "tytul": "Okład z liści mlecza polnego",
-        "typ": "medyczne",
-        "metoda": "kataplazm",
-        "tagi": [
-          "skóra",
-          "oparzenia",
-          "stany zapalne"
-        ],
-        "skladniki": [
-          "Świeże liście mlecza polnego"
-        ],
-        "sposob_przygotowania": [
-          "Liście umyć i rozgnieść w moździerzu na papkę."
-        ],
-        "dawkowanie": "Przykładać na drobne otarcia lub oparzenia słoneczne.",
-        "roslina": "Mlecz polny",
-        "slug": "mlecz_polny",
-        "cechy": [
-          "zielona papka"
-        ],
-        "wlasciwosci": [
-          "kojące",
-          "przeciwzapalne"
-        ]
-      }
-    ],
-    "przepisy_kulinarne": [
-      {
-        "tytul": "Duszony mlecz polny z czosnkiem",
-        "typ": "kulinarne",
-        "metoda": "duszenie",
-        "tagi": [
-          "dzika kuchnia",
-          "dodatek"
-        ],
-        "skladniki": [
-          "2 garście młodych liści mlecza polnego",
-          "1 ząbek czosnku, oliwa, sól"
-        ],
-        "sposob_przygotowania": [
-          "Liście obgotować we wrzątku przez 3 minuty, by usunąć gorycz.",
-          "Odsączyć i podsmażyć krótko na oliwie z czosnkiem."
-        ],
-        "dawkowanie": "Porcja warzywna.",
-        "roslina": "Mlecz polny",
-        "slug": "mlecz_polny",
-        "cechy": [
-          "smak zbliżony do cykorii"
-        ],
-        "wlasciwosci": [
-          "odżywcze"
-        ]
-      }
-    ],
-    "alchemia_barw": {
-      "glowny_barwnik": "Brak znaczących",
-      "efekt_na_wlosach": "Brak zastosowania.",
-      "modyfikatory_ph": [],
-      "ostrzezenia_bhp": "Brak."
-    }
-  }
+{
+"id": "mlecz_polny",
+"nazwa_pl": "Mlecz polny",
+"nazwa_lat": "Sonchus arvensis",
+"rodzina": "Astrowate (Asteraceae)",
+"opis": "Bylina polna, uciążliwy chwast upraw o silnym, rozgałęzionym systemie korzeniowym (rozłogi). Wytwarza wysokie (do 150 cm), wzniesione i ulistnione łodygi. Kwiatostany są żółte, znacznie większe niż u mlecza zwyczajnego, zebrane w baldachokształtne wiechy na szczytach pędów. Charakterystyczne są gruczołowate włoski na szypułkach i okrywach koszyczków.",
+"profil_energetyczny": {
+"smak": "Gorzki",
+"termika": "Chłodna",
+"wilgotnosc": "Nawilżająca do neutralnej",
+"zywiol": "Woda",
+"opis": "Działa łagodnie oczyszczająco i moczopędnie, choć w fitoterapii stosowany marginalnie w porównaniu do mniszka. Rozprasza ciepło."
+},
+"wymagania": {
+"stanowisko": "Słoneczne.",
+"gleba": "Gliniaste, wilgotne, bogate w azot i potas.",
+"ph_gleby": "6.0 - 7.5",
+"mrozoodpornosc": "Pełna.",
+"woda": "Toleruje okresowe zalewanie, preferuje wilgoć."
+},
+"identyfikacja": {
+"cechy_kluczowe": [
+"Łodyga dęta (pusta w środku), ulistniona i rozgałęziona.",
+"Obecny biały sok mleczny po przełamaniu.",
+"Liście na łodydze mają zaokrąglone uszka, którymi obejmują pęd.",
+"Włoski gruczołowe (często żółtawe) na szypułkach pod koszyczkami kwiatowymi.",
+"Wiele kwiatostanów na jednej roślinie."
+],
+"mozliwe_pomylki": [
+{
+"nazwa": "Mniszek lekarski",
+"roznica": "Mniszek ma bezlistną, gładką łodygę zakończoną tylko jednym kwiatem."
+},
+{
+"nazwa": "Mlecz zwyczajny",
+"roznica": "Mlecz zwyczajny nie ma gruczołowatych włosków pod koszyczkami, jego uszka przy liściach są ostre (strzałkowate), i jest to roślina jednoroczna (bez rozłogów)."
+}
+]
+},
+"czesci_rosliny": {
+"liscie": {
+"nazwa_surowca": "Folium Sonchi",
+"opis_botaniczny": "Młode liście zbierane wczesną wiosną, błyszczące z wierzchu.",
+"skladniki_aktywne": [
+"Węglowodany",
+"Witamina C",
+"Gorycze"
+],
+"wlasciwosci": "Lekko moczopędne, odżywcze po ugotowaniu.",
+"czas_zbioru": "Kwiecień - Maj.",
+"ostrzezenia": "Starsze liście mogą być zbyt gorzkie i twarde do spożycia."
+}
+},
+"zastosowanie": {
+"medyczne": "Ziołolecznictwo ludowe: okłady ze zgniecionych liści na drobne oparzenia słoneczne i stany zapalne skóry.",
+"kulinarne": "Młode liście traktowane jak dzikie warzywo, zazwyczaj po ugotowaniu lub blanszowaniu ze względu na goryczkę.",
+"ogrodowe": "Chwast ruderalny i segetalny, uciążliwy ze względu na rozłogi.",
+"rzemieslnicze": "Brak."
+},
+"interakcje": [
+"Brak znanych silnych interakcji z lekami."
+],
+"ciekawostki": [
+"Niezwykle trudny do wyplewienia w rolnictwie z powodu kruchych korzeni, z których każdy fragment tworzy nową roślinę.",
+"Kwiaty zamykają się popołudniu (około godziny 14) i podczas deszczu."
+],
+"permakultura": {
+"funkcje": [
+"Roślina wskaźnikowa gleb ciężkich, gliniastych i podmokłych."
+],
+"gildie": [
+{
+"nazwa": "Pola uprawne",
+"rola": "Konkuruje z uprawami o potas i wodę."
+}
+]
+},
+"kalendarz_ogrodnika": {
+"siew": "Rozsiewa się nasionami i przez rozłogi korzeniowe.",
+"sadzenie": "Nie dotyczy.",
+"kwitnienie": "Czerwiec - Październik.",
+"zadania": [
+{
+"czynnosc": "Zbiór liści kulinarnych",
+"miesiace": [4, 5],
+"opis": "Zbiór najmłodszych, najbardziej kruchych liści przed wykształceniem łodygi kwiatowej.",
+"faza_ksiezyca": "Pierwsza kwadra",
+"pora_dnia": "Rano",
+"pogoda": "Pochmurno",
+"wplyw_ksiezyca": "Sprzyja soczystości liści."
+}
+]
+},
+"przepisy_medyczne": [
+{
+"tytul": "Okład z liści mlecza polnego",
+"typ": "medyczne",
+"metoda": "kataplazm",
+"tagi": ["skóra", "oparzenia", "stany zapalne"],
+"skladniki": [
+"Świeże liście mlecza polnego"
+],
+"sposob_przygotowania": [
+"Liście umyć i rozgnieść w moździerzu na papkę."
+],
+"dawkowanie": "Przykładać na drobne otarcia lub oparzenia słoneczne na 20 minut.",
+"uwagi": "Stosować wyłącznie zewnętrznie.",
+"roslina": "Mlecz polny",
+"slug": "mlecz_polny",
+"cechy": ["zielona papka"],
+"wlasciwosci": ["kojące", "przeciwzapalne"]
+}
+],
+"przepisy_kulinarne": [
+{
+"tytul": "Duszony mlecz polny z czosnkiem",
+"typ": "kulinarne",
+"metoda": "duszenie",
+"tagi": ["dzika kuchnia", "dodatek"],
+"skladniki": [
+"2 garście młodych liści mlecza polnego",
+"1 ząbek czosnku, oliwa, sól"
+],
+"sposob_przygotowania": [
+"Liście obgotować we wrzątku przez 3 minuty, by usunąć gorycz.",
+"Odsączyć i podsmażyć krótko na patelni na oliwie z czosnkiem."
+],
+"dawkowanie": "Porcja warzywna do obiadu.",
+"uwagi": "Smak przypomina cykorię.",
+"roslina": "Mlecz polny",
+"slug": "mlecz_polny",
+"cechy": ["lekko gorzkawy, przypominający szpinak z nutą cykorii"],
+"wlasciwosci": ["odżywcze"]
+}
+],
+"alchemia_barw": {
+"glowny_barwnik": "Brak znaczących",
+"efekt_na_wlosach": "Brak zastosowania.",
+"modyfikatory_ph": [],
+"ostrzezenia_bhp": "Bezpieczny."
+},
+"ostrzezenia": "Brak istotnych przeciwwskazań, roślina bezpieczna."
+}
