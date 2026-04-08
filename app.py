@@ -116,8 +116,21 @@ def get_all_plants_list():
 
 @app.route('/')
 def index():
-    plants = get_all_plants_list()
-    return render_template('index.html', plants=plants)
+    plants = get_all_plants_list()  # Twoja stara funkcja zwracająca ['mniszek_lekarski', 'chmiel_zwyczajny']
+
+    # KROK 1: Pobieramy pełne obiekty słownikowe dla każdej rośliny
+    full_data_list = []
+    for plant_id in plants:
+        plant_data = get_plant_data(plant_id)  # Funkcja, która wczytuje zawartość pliku JSON
+        if plant_data:
+            full_data_list.append(plant_data)
+
+    # KROK 2: Przekazujemy zserializowane dane do szablonu
+    return render_template(
+        'index.html',
+        plants=plants,
+        plants_full_data=json.dumps(full_data_list)
+    )
 
 
 @app.route('/plant/<plant_id>/')

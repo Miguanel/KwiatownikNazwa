@@ -1,41 +1,338 @@
 {% extends "base.html" %}
 
 {% block content %}
-<header style="text-align: center; margin-bottom: 40px;">
-    <h1>Kwiatownik: Encyklopedia Roślin Europy</h1>
-    <p style="font-style: italic;">"Odkryj tajemnice flory Środkowej Europy – od tradycyjnych ziół po rośliny zapomniane."</p>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rpg-awesome/0.2.0/css/rpg-awesome.min.css">
+<style>
+    /* KONSTRUKCJA SEKCJI */
+    .search-section {
+        text-align: center;
+        padding: 40px 0;
+        position: relative;
+        min-height: 650px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        background: radial-gradient(circle, rgba(244,241,234,0.8) 0%, rgba(255,255,255,0) 70%);
+    }
+
+    .central-node {
+        position: relative;
+        z-index: 200;
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .search-input {
+        width: 100%;
+        padding: 15px 20px;
+        font-family: 'Georgia', serif;
+        font-size: 18px;
+        color: #2b2b2b;
+        background: #fdfbf7;
+        border: 2px solid #5a4f41;
+        border-radius: 3px;
+        box-shadow: inset 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.1);
+        outline: none;
+    }
+
+    /* Listy podpowiedzi */
+    .suggestions-above, .suggestions-below {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background: #fdfbf7;
+        border: 2px solid #5a4f41;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        max-height: 200px;
+        overflow-y: auto;
+        display: none;
+        text-align: left;
+        z-index: 210;
+    }
+    .suggestions-above { bottom: 100%; border-radius: 5px 5px 0 0; margin-bottom: 5px; }
+    .suggestions-below { top: 100%; border-radius: 0 0 5px 5px; margin-top: 5px; }
+
+    .suggestion-item { padding: 12px 15px; cursor: pointer; border-bottom: 1px solid #e0dcd3; font-family: 'Georgia', serif; }
+    .suggestion-item:hover { background-color: #ede9df; }
+    .suggestion-category { font-size: 10px; color: #8a9a5b; text-transform: uppercase; margin-bottom: 2px; }
+    .symptom-category { color: #9b4b4b; }
+
+    /* SATELITY (Rośliny) */
+    .guild-satellite {
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        background: #f4f1ea;
+        border: 2px solid #5a4f41;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+        font-size: 11px;
+        color: #2b2b2b;
+        cursor: pointer;
+        box-shadow: inset 0 0 15px rgba(0,0,0,0.08), 0 5px 15px rgba(0,0,0,0.15);
+        z-index: 50;
+        opacity: 0;
+        pointer-events: auto;
+    }
+    .guild-satellite.active { opacity: 1; transition: opacity 0.5s ease; }
+    .guild-satellite:hover { border-color: #8a9a5b; z-index: 100; }
+
+    /* WNUKI (Przepisy) */
+    .recipe-satellite {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: #3e4a3d;
+        border: 1px solid #d1b880;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 8px;
+        font-size: 9px;
+        color: #d1b880;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        z-index: 40;
+        opacity: 0;
+    }
+    .recipe-satellite.active { opacity: 1; transition: opacity 0.5s ease; }
+
+    .guild-icon { font-size: 26px; color: #3e4a3d; margin-bottom: 5px; }
+    .recipe-icon { font-size: 20px; color: #d1b880; margin-bottom: 3px; }
+    .guild-title { font-family: 'Georgia', serif; font-weight: bold; color: #5a4f41; }
+
+    /* BESTIARIUSZ */
+    .bestiary-header { font-family: 'Georgia', serif; border-bottom: 2px solid #8a9a5b; padding-bottom: 10px; margin: 40px 0; text-transform: uppercase; }
+    .bestiary-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 30px; }
+    .witcher-card { background: #23201d; border: 1px solid #4a3e31; border-radius: 3px; overflow: hidden; display: flex; flex-direction: column; }
+    .witcher-card-img { height: 180px; background-size: cover; background-position: center; border-bottom: 2px solid #362e25; display: flex; align-items: center; justify-content: center; }
+    .witcher-card-title { font-family: 'Georgia', serif; color: #d1b880; padding: 15px 10px; font-size: 18px; text-align: center; }
+    .witcher-btn { display: block; background: #3a2b21; color: #d1b880; padding: 10px; text-align: center; text-decoration: none; margin: 0 15px 15px 15px; border: 1px solid #5a4b3a; text-transform: uppercase; font-size: 11px; }
+</style>
+
+<header style="text-align: center; padding: 20px 0;">
+    <h1 style="font-family: 'Georgia', serif;">Kwiatownik: Encyklopedia Roślin</h1>
 </header>
 
-<section>
-    <h2>Spis roślin w bazie</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px;">
-        {% for plant in plants %}
-        <div style="border: 1px solid #dcdcdc; padding: 15px; border-radius: 5px; background: #fafafa; text-align: center;">
-            <h3 style="margin-top: 0; text-transform: capitalize;">{{ plant.replace('_', ' ') }}</h3>
-            <p>Zobacz szczegółowe opisy botaniczne, kulinarne i medyczne.</p>
-            <a href="{{ url_for('plant_detail', plant_id=plant) }}" 
-               style="display: inline-block; background: #3e4a3d; color: white; padding: 8px 15px; border-radius: 3px; text-decoration: none;">
-               Czytaj więcej
-            </a>
-        </div>
-        {% else %}
-        <p>Obecnie brak roślin w bazie danych JSON. Dodaj pliki do folderu data/plants.</p>
-        {% endfor %}
+<section class="search-section" id="guildNetwork">
+    <div class="central-node">
+        <div id="symptomSuggestions" class="suggestions-above"></div>
+        <input type="text" id="universalSearch" class="search-input" placeholder="Wpisz objaw (np. kaszel) lub roślinę..." autocomplete="off">
+        <div id="plantSuggestions" class="suggestions-below"></div>
     </div>
 </section>
 
-<hr style="margin: 40px 0; border: 0; border-top: 1px double #3e4a3d;">
-
-<section style="background-color: #fdfdfd; padding: 20px;">
-    <h3>O Projekcie</h3>
-    <p>
-        Kwiatownik to nie tylko baza danych, to interaktywny zielnik stworzony z myślą o pasjonatach botaniki. 
-        Każdy wpis opiera się na rzetelnych źródłach i łączy wiedzę naukową z tradycją ludową.
-    </p>
-    <ul>
-        <li><strong>Edukacja:</strong> Poznaj właściwości chemiczne i biologię roślin.</li>
-        <li><strong>Praktyka:</strong> Skorzystaj z generatorów nalewek i mieszanek ziołowych.</li>
-        <li><strong>Społeczność:</strong> Dziel się swoimi spostrzeżeniami w sekcji komentarzy.</li>
-    </ul>
+<section>
+    <h2 class="bestiary-header">Bestiariusz Roślin</h2>
+    <div id="bestiaryGrid" class="bestiary-grid"></div>
 </section>
+
+<script>
+    const plantsData = {{ plants_full_data | default('[]') | safe }};
+    const baseUrl = "{{ url_for('plant_detail', plant_id='PLACEHOLDER') }}";
+
+    // --- RENDER KART ---
+    function renderBestiary() {
+        const grid = document.getElementById('bestiaryGrid');
+        plantsData.forEach(plant => {
+            const card = document.createElement('div');
+            card.className = 'witcher-card';
+            const imgUrl = plant.zdjecie_url || plant.zdjecie || plant.image;
+            const imgHtml = imgUrl ? `<div class="witcher-card-img" style="background-image: url('${imgUrl}')"></div>` : `<div class="witcher-card-img"><i class="ra ra-leaf" style="font-size: 40px; color: #362e25;"></i></div>`;
+            card.innerHTML = `${imgHtml}<div class="witcher-card-title">${plant.nazwa_pl}</div><a href="${baseUrl.replace('PLACEHOLDER', plant.id)}" class="witcher-btn">Zbadaj</a>`;
+            grid.appendChild(card);
+        });
+    }
+    renderBestiary();
+
+    // --- SŁOWNIK OBJAWÓW ---
+    const symptomMap = {};
+    plantsData.forEach(plant => {
+        let tags = new Set();
+        if(plant.przepisy_medyczne) plant.przepisy_medyczne.forEach(p => p.tagi?.forEach(t => tags.add(t.toLowerCase())));
+        if(plant.przepisy_kulinarne) plant.przepisy_kulinarne.forEach(p => p.tagi?.forEach(t => tags.add(t.toLowerCase())));
+        tags.forEach(tag => {
+            if(!symptomMap[tag]) symptomMap[tag] = [];
+            symptomMap[tag].push({ id: plant.id, nazwa: plant.nazwa_pl, rola: `Leczy: ${tag}` });
+        });
+    });
+
+    // --- WYSZUKIWARKA ---
+    const universalSearch = document.getElementById('universalSearch');
+    const plantBox = document.getElementById('plantSuggestions');
+    const symptomBox = document.getElementById('symptomSuggestions');
+    const networkContainer = document.getElementById('guildNetwork');
+
+    let activeSatellites = [];
+    let mouseX = -1000, mouseY = -1000, animationFrameId;
+
+    document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; });
+
+    universalSearch.addEventListener('input', function() {
+        const query = this.value.toLowerCase();
+        plantBox.innerHTML = ''; symptomBox.innerHTML = ''; clearSatellites();
+        if (query.length < 2) { plantBox.style.display = 'none'; symptomBox.style.display = 'none'; return; }
+
+        const filteredPlants = plantsData.filter(p => p.nazwa_pl.toLowerCase().includes(query));
+        if (filteredPlants.length > 0) {
+            plantBox.style.display = 'block';
+            filteredPlants.forEach(plant => {
+                const div = document.createElement('div');
+                div.className = 'suggestion-item';
+                div.innerHTML = `<span class="suggestion-category">Roślina</span><strong>${plant.nazwa_pl}</strong>`;
+                div.onclick = () => { universalSearch.value = plant.nazwa_pl; plantBox.style.display = 'none'; symptomBox.style.display = 'none'; spawnEntities(plant.permakultura?.gildie || plant.gildie?.map(g=>({nazwa:g, rola:"Powiązanie"})) || []); };
+                plantBox.appendChild(div);
+            });
+        }
+
+        const filteredSymptoms = Object.keys(symptomMap).filter(s => s.includes(query));
+        if (filteredSymptoms.length > 0) {
+            symptomBox.style.display = 'block';
+            filteredSymptoms.forEach(sym => {
+                const div = document.createElement('div');
+                div.className = 'suggestion-item';
+                div.innerHTML = `<span class="suggestion-category symptom-category">Objaw</span><strong>${sym}</strong>`;
+                div.onclick = () => { universalSearch.value = sym; plantBox.style.display = 'none'; symptomBox.style.display = 'none'; spawnEntities(symptomMap[sym]); };
+                symptomBox.appendChild(div);
+            });
+        }
+    });
+
+    function getWitcherIcon(nazwa, rola) {
+        const text = (nazwa + " " + rola).toLowerCase();
+        if (text.includes('drzew')) return 'ra-pine-tree';
+        if (text.includes('lecz') || text.includes('kaszel')) return 'ra-health';
+        return 'ra-leaf';
+    }
+
+    // --- GENERATOR ROŚLIN ---
+    function spawnEntities(entities) {
+        clearSatellites();
+        const rect = networkContainer.getBoundingClientRect();
+        const radius = window.innerWidth > 768 ? 240 : 160;
+        const angleStep = (2 * Math.PI) / (entities.length || 1);
+
+        entities.forEach((entity, index) => {
+            const angle = index * angleStep;
+            const el = document.createElement('div');
+            el.className = 'guild-satellite';
+            el.innerHTML = `<i class="guild-icon ra ${getWitcherIcon(entity.nazwa, entity.rola)}"></i><div class="guild-title">${entity.nazwa}</div>`;
+
+            el.onclick = (e) => {
+                e.stopPropagation();
+                const plant = plantsData.find(p => p.nazwa_pl === entity.nazwa || p.id === entity.id);
+                if (plant) {
+                    const currentSym = universalSearch.value.toLowerCase();
+                    const recipes = plant.przepisy_medyczne?.filter(r => r.tagi?.some(t => t.toLowerCase().includes(currentSym))) || [];
+                    if (recipes.length > 0) spawnRecipes(plant, el, recipes);
+                    else window.location.href = baseUrl.replace('PLACEHOLDER', plant.id);
+                }
+            };
+
+            networkContainer.appendChild(el);
+            activeSatellites.push({
+                element: el,
+                baseX: (rect.width/2) + Math.cos(angle)*radius,
+                baseY: (rect.height/2) + Math.sin(angle)*radius,
+                x: rect.width/2, y: rect.height/2,
+                vx: 0, vy: 0,
+                randomOffset: Math.random()*10
+            });
+            setTimeout(() => el.classList.add('active'), 50 * index);
+        });
+        if (!animationFrameId) animateSatellites();
+    }
+
+    // --- GENERATOR PRZEPISÓW (Dzieci) ---
+    function spawnRecipes(plant, parentEl, recipes) {
+        const parentObj = activeSatellites.find(s => s.element === parentEl);
+        if (!parentObj) return;
+
+        const recipeRadius = 110;
+        const angleStep = (2 * Math.PI) / recipes.length;
+
+        recipes.forEach((recipe, index) => {
+            const angle = index * angleStep;
+            const el = document.createElement('div');
+            el.className = 'recipe-satellite';
+            el.innerHTML = `<i class="recipe-icon ra ra-base-potion"></i><div style="font-weight:bold">${recipe.tytul}</div>`;
+            el.onclick = (e) => { e.stopPropagation(); window.location.href = baseUrl.replace('PLACEHOLDER', plant.id) + "#przepisy"; };
+
+            networkContainer.appendChild(el);
+            activeSatellites.push({
+                element: el,
+                isChild: true,
+                parent: parentObj,
+                offsetX: Math.cos(angle)*recipeRadius,
+                offsetY: Math.sin(angle)*recipeRadius,
+                x: parentObj.x, y: parentObj.y,
+                vx: 0, vy: 0,
+                randomOffset: Math.random()
+            });
+            setTimeout(() => el.classList.add('active'), 50 * index);
+        });
+    }
+
+    // --- SILNIK FIZYKI (POPRAWIONY) ---
+    function animateSatellites() {
+        const time = Date.now() * 0.0003;
+        const rect = networkContainer.getBoundingClientRect();
+        const lmx = mouseX - rect.left, lmy = mouseY - rect.top;
+
+        activeSatellites.forEach(sat => {
+            let tx, ty;
+
+            // Warunek celu: albo orbita wokół centrum, albo wokół rodzica
+            if (sat.isChild) {
+                tx = sat.parent.x + sat.offsetX;
+                ty = sat.parent.y + sat.offsetY;
+            } else {
+                tx = sat.baseX + Math.sin(time + sat.randomOffset) * 15;
+                ty = sat.baseY + Math.cos(time + sat.randomOffset * 2) * 15;
+            }
+
+            // Odpychanie od myszki
+            const dxM = sat.x - lmx, dyM = sat.y - lmy;
+            const distM = Math.sqrt(dxM*dxM + dyM*dyM);
+            let fx = 0, fy = 0;
+            if (distM < 100 && distM > 0) {
+                const force = (100 - distM) / 100;
+                fx = (dxM / distM) * force * 2.5;
+                fy = (dyM / distM) * force * 2.5;
+            }
+
+            // Sprężyna do celu + siła od myszki
+            sat.vx += (tx - sat.x) * 0.04 + fx;
+            sat.vy += (ty - sat.y) * 0.04 + fy;
+
+            sat.vx *= 0.88; sat.vy *= 0.88; // Tarcie
+            sat.x += sat.vx; sat.y += sat.vy;
+
+            // Render pozycji
+            sat.element.style.left = "0px";
+            sat.element.style.top = "0px";
+            sat.element.style.transform = `translate(calc(-50% + ${sat.x}px), calc(-50% + ${sat.y}px))`;
+        });
+
+        if (activeSatellites.length > 0) animationFrameId = requestAnimationFrame(animateSatellites);
+        else animationFrameId = null;
+    }
+
+    function clearSatellites() {
+        activeSatellites.forEach(s => s.element.remove());
+        activeSatellites = [];
+        cancelAnimationFrame(animationFrameId);
+        animationFrameId = null;
+    }
+</script>
 {% endblock %}

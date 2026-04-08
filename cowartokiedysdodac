@@ -128,3 +128,109 @@ Jemioła pospolita (Viscum album) – do Twoich "Zimowych Sekretów".
 Dziewięćsił bezłodygowy (Carlina acaulis) – piękna roślina górska o bogatej symbolice ludowej.
 
 Bylica pospolita (Artemisia vulgaris) – siostra piołunu, najważniejsza roślina ochronna w kulturze słowiańskiej.
+
+-=============-==-=-==
+dobra robimy to:
+Przeniesienie „Kwiatownika” z wersji statycznej (HTML/JS) do pełnoprawnego frameworka Django (Python) to potężny skok jakościowy. Otwiera to drogę do paneli administracyjnych, logowania użytkowników (np. zapisywania ich „drzew umiejętności”), baz danych i zaawansowanych generatorów.
+
+Oto kompleksowy, krok po kroku plan migracji na przyszły miesiąc, podzielony na 4 tygodnie. Plan zakłada, że masz już pliki JSON i statyczny frontend, które teraz „ożywimy”.
+
+Tydzień 1: Fundamenty i Modelowanie Bazy Danych
+Celem pierwszego tygodnia jest przygotowanie środowiska i przetłumaczenie Twoich plików JSON na modele relacyjnej bazy danych (SQLite na start, później PostgreSQL).
+
+Zadania:
+
+Inicjalizacja projektu:
+
+Instalacja Django (pip install django).
+
+Utworzenie projektu (django-admin startproject kwiatownik_core).
+
+Utworzenie głównej aplikacji (python manage.py startapp encyclopedia).
+
+Projektowanie Modeli (Models.py):
+
+Zamiana struktury JSON na klasy Django.
+
+Model Plant (id, nazwa_pl, nazwa_lat, rodzina, opis, stanowisko, gleba, itp.).
+
+Model EnergyProfile (smak, termika, wilgotnosc, zywiol - połączony relacją OneToOne z Plant).
+
+Model Recipe (tytul, typ [medyczny/kulinarny], skladniki, sposob_przygotowania - połączony relacją ForeignKey z Plant).
+
+Konfiguracja Panelu Admina:
+
+Rejestracja modeli w admin.py, abyś mógł dodawać nowe rośliny wyklikując je w wygodnym interfejsie (koniec z ręczną edycją JSON!).
+
+Migracja danych (Skrypt importu):
+
+Napisanie krótkiego skryptu w Pythonie (tzw. management command), który zaczyta Twoje obecne pliki .json i automatycznie utworzy z nich rekordy w nowej bazie danych Django.
+
+Tydzień 2: Widoki, Szablony i Routing
+Celem drugiego tygodnia jest odtworzenie Twojego obecnego frontendu (strony głównej, listy roślin, karty pojedynczej rośliny) z użyciem silnika szablonów Django.
+
+Zadania:
+
+Konfiguracja szablonów i plików statycznych:
+
+Przeniesienie Twojego CSS, JS i obrazków do folderu static/.
+
+Przeniesienie plików HTML do folderu templates/ i podział na bazowy szablon (base.html z nagłówkiem/stopką) oraz szablony dziedziczące.
+
+Budowa Widoków (Views.py i Urls.py):
+
+index_view: Strona główna z wyszukiwarką.
+
+plant_list_view: Lista wszystkich roślin (z paginacją i prostym filtrowaniem z bazy).
+
+plant_detail_view: Karta konkretnej rośliny (zaciągająca dane, przepisy i profil energetyczny z bazy, pod dany URL np. /roslina/mniszek-lekarski/).
+
+Integracja wyszukiwarki „Gildii”:
+
+Podpięcie Twojego skryptu JS z „układem słonecznym” do endpointu Django (widok zwracający listę roślin w formacie JSON dla JavaScriptu – to tzw. mikro-API).
+
+Tydzień 3: Logika Biznesowa (Konfigurator i Drzewo)
+Ten tydzień to serce nowej funkcjonalności. Wersja statyczna była ograniczona; z Django możemy budować złożoną logikę po stronie serwera.
+
+Zadania:
+
+Aplikacja "Alchemia" (startapp alchemy):
+
+Odtworzenie logiki konfiguratora barw. Wysłanie formularza (stan wyjściowy włosów) przez użytkownika, przeliczenie w Pythonie i zwrócenie wyniku.
+
+System użytkowników (Opcjonalnie, ale warto):
+
+Włączenie domyślnego systemu autoryzacji Django (django.contrib.auth).
+
+Zbudowanie profili (UserProfile), gdzie użytkownicy mogą zapisywać ulubione przepisy lub swoje „Drzewo Koloru”.
+
+Zabezpieczenia (BHP):
+
+Stworzenie logiki filtrującej, która automatycznie dodaje ogromny, czerwony alert na stronie przepisu, jeśli roślina ma flagę is_toxic = True w bazie danych.
+
+Tydzień 4: Testowanie, Optymalizacja i Deploy (Render)
+Skoro Kwiatownik już był na platformie Render, wdrożenie Django będzie wymagało tylko zmiany konfiguracji.
+
+Zadania:
+
+Bezpieczeństwo i Optymalizacja:
+
+Ukrycie sekretów (SECRET_KEY) w zmiennych środowiskowych (.env).
+
+Wyłączenie trybu DEBUG = True dla środowiska produkcyjnego.
+
+Konfiguracja bazy danych PostgreSQL (wymagane na Renderze do produkcji).
+
+Konfiguracja Gunicorn i WhiteNoise:
+
+Django potrzebuje serwera WSGI (Gunicorn) do działania.
+
+Biblioteka WhiteNoise posłuży do serwowania Twoich pięknych plików CSS/JS w produkcji.
+
+Deploy na Render.com:
+
+Zmiana skryptu budującego w ustawieniach Rendera na: pip install -r requirements.txt && python manage.py migrate && python manage.py collectstatic --noinput.
+
+Uruchomienie aplikacji za pomocą komendy Web Service.
+
+---------------------==hhohooho sad= --= -=-=-= -=-= -=-=
