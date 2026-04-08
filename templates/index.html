@@ -139,9 +139,7 @@
 
 <script>
     const plantsData = {{ plants_full_data | default('[]') | safe }};
-    // Zamiast generować pełny link z PLACEHOLDER, generujemy go dynamicznie
     function getPlantUrl(id) {
-        // To stworzy linki typu /plant/mniszek_lekarski/ bez drażnienia generatora stron
         return window.location.origin + "/plant/" + id + "/";
     }
 
