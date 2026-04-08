@@ -28,9 +28,12 @@
     "mrozoodpornosc": "Brak mrozoodporności (strefa 10-11). Roślina ginie przy temperaturach poniżej 5°C.",
     "zbiory": "Do celów barwierskich pozyskuje się wyłącznie twardziel ze starych, ponad 10-letnich drzew."
   },
-  "czesci_roslin": [
-    "Drewno twardzielowe (Lignum Campechianum) – zrębki lub proszek."
-  ],
+  "czesci_rosliny": {
+    "drewno": {
+      "wlasciwości": "garbnikowe, antyseptyczne, barwierskie",
+      "opis_botaniczny": "Ciemne, ciężkie serce drewna tropikalnego."
+    }
+  },
   "zastosowanie": {
     "Barwienie włosów": "Barwienie włosów i tkanin (fiolety, czernie w połączeniu z solami żelaza).",
     "Laboratoria histologiczne": "Laboratoria histologiczne (hematoksylina jest podstawowym barwnikiem mikroskopowym).",
