@@ -10,57 +10,131 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rpg-awesome/0.2.0/css/rpg-awesome.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <style>
-        body { font-family: 'Crimson Text', serif; background-color: #f4f1ea; color: #2c2c2c; margin: 0; }
-        nav { background-color: #3e4a3d; color: white; padding: 1rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #5a4f41; }
+        body { font-family: 'Crimson Text', serif; background-color: #f4f1ea; color: #2c2c2c; margin: 0; padding-top: 110px; }
 
-        /* Stylizacja ikon w menu */
-        nav i { margin-right: 5px; font-size: 1.1rem; color: #d1b880; }
-        nav a { color: white !important; text-decoration: none; margin: 0 15px; font-weight: bold; transition: color 0.3s; }
+        .main-header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+
+        nav { background-color: #3e4a3d; color: white; padding: 0.5rem 1rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #5a4f41; }
+        nav i { margin-right: 5px; font-size: 1rem; color: #d1b880; }
+        nav a { color: white !important; text-decoration: none; margin: 0 10px; font-weight: bold; font-size: 0.9rem; transition: color 0.3s; }
         nav a:hover { color: #d1b880 !important; }
 
-        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); border: 1px solid #dcdcdc; }
+        /* --- WSPÓLNE CECHY PRZEWIJANYCH PASKÓW --- */
+        .scrollable-banner {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            cursor: grab;
+            user-select: none;
+        }
+        .scrollable-banner::-webkit-scrollbar { display: none; }
+        .scrollable-banner:active { cursor: grabbing; }
+        .scrollable-content { display: flex; flex-wrap: nowrap; }
 
-        .flash { padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 4px; }
-        .flash-success { background-color: #d4edda; color: #155724; }
-        .flash-danger { background-color: #f8d7da; color: #721c24; }
+        /* --- 1. PASEK ALMANACHU (ASTRO-RIBBON) --- */
+        .astro-ribbon {
+            background-color: #23201d;
+            border-bottom: 1px solid #8a7a58;
+            color: #d1b880;
+            padding: 6px 15px;
+            font-size: 0.75rem;
+        }
+        .astro-item { display: flex; align-items: center; gap: 6px; margin-right: 30px; }
+        .astro-item i { font-size: 1.1rem; color: #8a9a5b; }
+        .astro-item div { display: flex; align-items: baseline; gap: 4px; }
+        .astro-label { font-size: 0.65rem; text-transform: uppercase; color: #a89f91; letter-spacing: 0.5px; }
+        .astro-value { font-weight: bold; font-family: 'Georgia', serif; font-size: 0.85rem; }
 
-        footer { text-align: center; padding: 40px 20px; font-size: 0.9rem; color: #5a4f41; border-top: 1px double #3e4a3d; }
+        /* --- 2. ZŁOTY PASEK CIEKAWOSTEK (MARQUEE) --- */
+        .marquee-wrapper {
+            background-color: #1a1714;
+            color: #8a9a5b;
+            padding: 8px 15px;
+            border-bottom: 2px solid #3a2b21;
+        }
+        .marquee-item {
+            font-size: 0.75rem;
+            font-style: italic;
+            letter-spacing: 0.5px;
+            margin-right: 60px;
+        }
+        .marquee-item i { color: #d1b880; margin-right: 5px; }
+
+        @media (max-width: 768px) {
+            body { padding-top: 100px; }
+            nav { padding: 0.4rem; flex-wrap: wrap; justify-content: center; gap: 5px; }
+            .frozen-feature { display: none; }
+        }
+
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.05); border: 1px solid #e0dcd3; border-radius: 4px; }
+        .flash { padding: 8px 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; font-size: 0.9rem; }
+        .flash-success { background-color: #d4edda; color: #155724; border-color: #c3e6cb; }
+        .flash-danger { background-color: #f8d7da; color: #721c24; border-color: #f5c6cb; }
+        footer { text-align: center; padding: 30px 20px; font-size: 0.8rem; color: #7a6a58; border-top: 1px dashed #dcdcdc; margin-top: 40px; }
         footer i { color: #8a9a5b; margin-right: 5px; }
 
         /* MODAL FIX */
-        .frozen-modal-overlay {
-            display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7);
-        }
-        .frozen-modal-content {
-            background-color: #f4f1ea; margin: 15% auto; padding: 30px; border: 2px solid #5a4f41; width: 80%; max-width: 500px; position: relative; font-family: 'Crimson Text', serif; text-align: center;
-        }
-        .frozen-modal-close { position: absolute; right: 15px; top: 10px; font-size: 28px; cursor: pointer; color: #5a4f41; }
-
+        .frozen-modal-overlay { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(35, 32, 29, 0.8); }
+        .frozen-modal-content { background-color: #f4f1ea; margin: 15% auto; padding: 25px; border: 1px solid #8a7a58; width: 90%; max-width: 400px; position: relative; font-family: 'Crimson Text', serif; text-align: center; border-radius: 4px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); }
+        .frozen-modal-close { position: absolute; right: 15px; top: 10px; font-size: 24px; cursor: pointer; color: #5a4f41; transition: color 0.2s; }
+        .frozen-modal-close:hover { color: #9b4b4b; }
         a { text-decoration: none; color: inherit; }
     </style>
 </head>
 <body>
 
-<nav>
-    <div>
-        <a href="{{ url_for('index') }}"><i class="ra ra-leaf"></i> Kwiatownik</a>
-        <a href="{{ url_for('generator') }}"><i class="ra ra-flask"></i> Generatory</a>
-        <a href="{{ url_for('przepisy') }}"><i class="ra ra-cauldron"></i> Przepisy</a>
-        <a href="{{ url_for('gildie') }}"><i class="ra ra-pawn"></i> Gildie</a>
-        <a href="#" class="frozen-feature"><i class="ra ra-speech-bubble"></i> Komentarze</a>
+<header class="main-header">
+    <nav>
+        <div>
+            <a href="{{ url_for('index') }}"><i class="ra ra-leaf"></i> Kwiatownik</a>
+            <a href="{{ url_for('generator') }}"><i class="ra ra-flask"></i> Generatory</a>
+            <a href="{{ url_for('przepisy') }}"><i class="ra ra-cauldron"></i> Przepisy</a>
+            <a href="{{ url_for('gildie') }}"><i class="ra ra-pawn"></i> Gildie</a>
+            <a href="#" class="frozen-feature"><i class="ra ra-speech-bubble"></i> Komentarze</a>
+        </div>
+        <div class="frozen-feature" title="Zablokowane w wersji statycznej">
+            <a href="#"><i class="ra ra-player"></i> Logowanie</a>
+        </div>
+    </nav>
+
+    <div class="astro-ribbon scrollable-banner" id="banner-astro">
+        <div class="scrollable-content">
+            <div class="astro-item"><i class="ra ra-compass"></i><div><span class="astro-label">Lokacja:</span><span class="astro-value">{{ astro.location if astro else 'Czyżowice' }}</span></div></div>
+            <div class="astro-item"><i class="ra ra-sun"></i><div><span class="astro-label">Pogoda:</span><span class="astro-value">{{ astro.temp if astro else '15°C' }}</span><span class="astro-label" style="margin-left:4px;">Wilg:</span><span class="astro-value">{{ astro.humidity if astro else '60%' }}</span></div></div>
+            <div class="astro-item"><i class="ra ra-moon-sun"></i><div><span class="astro-label">Księżyc:</span><span class="astro-value">{{ astro.phase_name if astro else 'Przybywający' }}</span></div></div>
+            <div class="astro-item"><i class="ra ra-fire"></i><div><span class="astro-label">Żywioł:</span><span class="astro-value">{{ astro.element if astro else 'Ogień' }}</span></div></div>
+            <div class="astro-item"><i class="ra ra-crystal-ball"></i><div><span class="astro-label">Wibracja:</span><span class="astro-value">{{ astro.numerology if astro else '5' }}</span></div></div>
+            <div class="astro-item"><i class="ra ra-dragon"></i><div><span class="astro-label">Patron Roku:</span><span class="astro-value">{{ astro.japanese if astro else 'Koń' }}</span></div></div>
+            <div class="astro-item" style="margin-right:0;"><i class="ra ra-trefoil"></i><div><span class="astro-label">Koło Roku:</span><span class="astro-value">{{ astro.festival if astro else 'Jare Gody (Ostara)' }}</span></div></div>
+        </div>
     </div>
-    <div class="frozen-feature" title="Zablokowane w wersji statycznej">
-        <a href="#"><i class="ra ra-player"></i> Logowanie</a>
+
+    <div class="marquee-wrapper scrollable-banner" id="banner-marquee">
+        <div class="scrollable-content">
+            {% if knowledge %}
+                {% for item in knowledge %}
+                <span class="marquee-item"><i class="ra ra-scroll-unfurled"></i> <strong>{{ item.typ }} ({{ item.roslina }}):</strong> {{ item.tresc }}</span>
+                {% endfor %}
+            {% else %}
+                <span class="marquee-item"><i class="ra ra-scroll-unfurled"></i> <strong>Ciekawostka:</strong> Dąb szypułkowy ściąga najwięcej piorunów ze wszystkich drzew w lesie.</span>
+                <span class="marquee-item"><i class="ra ra-scroll-unfurled"></i> <strong>Protip:</strong> Zbiór korzeni mniszka wykonuj przy księżycu ubywającym.</span>
+                <span class="marquee-item"><i class="ra ra-scroll-unfurled"></i> <strong>Wiedza:</strong> Syrop z pędów sosny działa wykrztuśnie.</span>
+            {% endif %}
+        </div>
     </div>
-</nav>
+</header>
 
 <div class="container">
     {% with messages = get_flashed_messages(with_categories=true) %}
-      {% if messages %}
-        {% for category, message in messages %}
-          <div class="flash flash-{{ category }}">{{ message }}</div>
-        {% endfor %}
-      {% endif %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="flash flash-{{ category }}">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
     {% endwith %}
 
     {% block content %}{% endblock %}
@@ -70,43 +144,100 @@
     <p><i class="ra ra-hourglass"></i> ROK 1396 &copy; Kwiatownik - Akademicki Projekt Zielnika</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 <div id="frozenModal" class="frozen-modal-overlay">
     <div class="frozen-modal-content">
         <span class="frozen-modal-close" onclick="closeFrozenModal()">&times;</span>
-        <h3 style="color: #3e4a3d;"><i class="ra ra-parchment"></i> Funkcja wstrzymana</h3>
-        <p class="mt-3">
-            Aby aplikacja mogła być dostępna za darmo i działać błyskawicznie, przeszliśmy na wersję statyczną.
-            Moduł logowania i komentarzy jest obecnie <strong>wyłączony</strong>.
-        </p>
-        <p>
-            Jeśli projekt Ci się podoba i chcesz wesprzeć jego rozwój, możesz postawić mi wirtualną kawę! 🌱
-        </p>
-        <a href="https://buycoffee.to/miguana" target="_blank" class="btn mt-3 fw-bold" style="background-color: #3a2b21; border: 1px solid #5a4b3a; color: #d1b880; padding: 10px 20px;">
+        <h4 style="color: #3e4a3d; margin-bottom: 15px;"><i class="ra ra-parchment"></i> Funkcja wstrzymana</h4>
+        <p style="font-size: 0.95rem; color: #5a4f41;">Aby aplikacja mogła być dostępna za darmo i działać błyskawicznie, przeszliśmy na wersję statyczną. Moduł logowania i komentarzy jest obecnie wyłączony.</p>
+        <a href="https://buycoffee.to/miguana" target="_blank" class="btn mt-3 fw-bold" style="background-color: #3a2b21; border: 1px solid #5a4b3a; color: #d1b880; padding: 8px 16px; font-size: 0.9rem;">
             <i class="ra ra-beer"></i> Postaw Kufel Kawy
         </a>
     </div>
 </div>
 
 <script>
-    const modal = document.getElementById('frozenModal');
+    // --- INTELIGENTNY SYSTEM PRZEWIJANIA PASKÓW ---
+    function setupInfiniteScroller(wrapperId, speed) {
+        const wrapper = document.getElementById(wrapperId);
+        if (!wrapper) return;
+        const content = wrapper.querySelector('.scrollable-content');
 
+        // Duplikujemy zawartość paska, aby mógł się płynnie zapętlać
+        content.innerHTML += content.innerHTML;
+
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+        let exactScroll = 0; // Płynny licznik sub-pikseli
+
+        // Autoscroll
+        function autoScroll() {
+            if (!isDown) {
+                exactScroll += speed;
+                // Jeśli dojechaliśmy do końca "pierwszej kopii", wracamy na początek dla iluzji nieskończoności
+                if (exactScroll >= wrapper.scrollWidth / 2) {
+                    exactScroll = 0;
+                }
+                wrapper.scrollLeft = exactScroll;
+            } else {
+                // Gdy człowiek dotyka, aktualizujemy licznik by nie szarpało
+                exactScroll = wrapper.scrollLeft;
+            }
+            requestAnimationFrame(autoScroll);
+        }
+        requestAnimationFrame(autoScroll);
+
+        // --- OBSŁUGA MYSZKI I DOTYKU ---
+        function startDrag(pageX) {
+            isDown = true;
+            startX = pageX - wrapper.offsetLeft;
+            scrollLeft = wrapper.scrollLeft;
+        }
+
+        function doDrag(pageX) {
+            if (!isDown) return;
+            const walk = (pageX - wrapper.offsetLeft - startX) * 1.5; // Siła poślizgu
+            wrapper.scrollLeft = scrollLeft - walk;
+        }
+
+        // Mysz
+        wrapper.addEventListener('mousedown', (e) => startDrag(e.pageX));
+        wrapper.addEventListener('mouseleave', () => { isDown = false; });
+        wrapper.addEventListener('mouseup', () => { isDown = false; });
+        wrapper.addEventListener('mousemove', (e) => {
+            if(!isDown) return;
+            e.preventDefault();
+            doDrag(e.pageX);
+        });
+
+        // Telefony (Dotyk)
+        wrapper.addEventListener('touchstart', (e) => startDrag(e.touches[0].pageX), {passive: true});
+        wrapper.addEventListener('touchend', () => { isDown = false; });
+        wrapper.addEventListener('touchmove', (e) => doDrag(e.touches[0].pageX), {passive: true});
+    }
+
+    // Odpalamy skrypty dla obu banerów
+    document.addEventListener("DOMContentLoaded", function() {
+        // Górny pasek z ikonami - porusza się niesamowicie powoli i majestatycznie
+        setupInfiniteScroller('banner-astro', 0.2);
+
+        // Pasek z Ciekawostkami - porusza się ciut szybciej (ale wciąż spokojnie i powoli)
+        setupInfiniteScroller('banner-marquee', 0.6);
+    });
+
+    // --- OBSŁUGA MODALU ---
+    const modal = document.getElementById('frozenModal');
     document.querySelectorAll('.frozen-feature').forEach(el => {
         el.addEventListener('click', function(e) {
             e.preventDefault();
             if(modal) modal.style.display = "block";
         });
     });
-
     function closeFrozenModal() {
         if(modal) modal.style.display = "none";
     }
-
     window.onclick = function(event) {
-        if (event.target == modal) {
-            closeFrozenModal();
-        }
+        if (event.target == modal) closeFrozenModal();
     }
 </script>
 

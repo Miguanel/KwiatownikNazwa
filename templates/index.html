@@ -19,7 +19,7 @@
 
     .central-node {
         position: relative;
-        z-index: 200;
+        z-index: 300;
         width: 100%;
         max-width: 450px;
     }
@@ -36,20 +36,37 @@
         box-shadow: inset 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.1);
         outline: none;
     }
-
-    /* Listy podpowiedzi */
-    .suggestions-above, .suggestions-below {
-        position: absolute;
-        left: 0;
+.central-node {
+        position: relative;
+        z-index: 300;
         width: 100%;
+        max-width: 600px; /* Nieco poszerzamy, by zmieścić dwie kolumny */
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Kontener trzymający obie listy obok siebie */
+    .suggestions-container {
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        margin-top: 5px;
+    }
+
+    .suggestions-above, .suggestions-below {
+        position: static; /* Wyłączamy absolutne pozycjonowanie dla dzieci */
+        flex: 1; /* Każda lista bierze 50% szerokości */
         background: #fdfbf7;
         border: 2px solid #5a4f41;
         box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-        max-height: 200px;
+        max-height: 250px;
         overflow-y: auto;
-        display: none;
+        display: none; /* Sterowane przez JS */
         text-align: left;
-        z-index: 210;
+        z-index: 310;
+        border-radius: 5px;
     }
     .suggestions-above { bottom: 100%; border-radius: 5px 5px 0 0; margin-bottom: 5px; }
     .suggestions-below { top: 100%; border-radius: 0 0 5px 5px; margin-top: 5px; }
@@ -59,11 +76,11 @@
     .suggestion-category { font-size: 10px; color: #8a9a5b; text-transform: uppercase; margin-bottom: 2px; }
     .symptom-category { color: #9b4b4b; }
 
-    /* SATELITY (Rośliny) */
+    /* SATELITY (Rośliny na karuzeli 3D) */
     .guild-satellite {
         position: absolute;
-        width: 130px;
-        height: 130px;
+        width: 150px;
+        height: 150px;
         background: #f4f1ea;
         border: 2px solid #5a4f41;
         border-radius: 50%;
@@ -72,52 +89,232 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        padding: 10px;
-        font-size: 11px;
+        padding: 12px;
         color: #2b2b2b;
         cursor: pointer;
-        box-shadow: inset 0 0 15px rgba(0,0,0,0.08), 0 5px 15px rgba(0,0,0,0.15);
+        box-shadow: inset 0 0 15px rgba(0,0,0,0.08), 0 5px 15px rgba(0,0,0,0.3);
         z-index: 50;
-        opacity: 0;
-        pointer-events: auto;
+        will-change: transform, opacity;
     }
-    .guild-satellite.active { opacity: 1; transition: opacity 0.5s ease; }
-    .guild-satellite:hover { border-color: #8a9a5b; z-index: 100; }
+    .guild-satellite:hover { border-color: #8a9a5b; }
+    .guild-icon { font-size: 28px; color: #3e4a3d; margin-bottom: 2px; }
+    .guild-title { font-family: 'Georgia', serif; font-weight: bold; color: #5a4f41; font-size: 13px; line-height: 1.1; margin-bottom: 4px; }
+    .guild-desc {
+        font-size: 9.5px;
+        line-height: 1.2;
+        color: #4a3e31;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
 
-    /* WNUKI (Przepisy) */
-    .recipe-satellite {
+    /* KARUZELA PRZEPISÓW / CZYNNOŚCI */
+    .carousel-container {
         position: absolute;
-        width: 100px;
-        height: 100px;
+        bottom: 0%; /* Obniżamy, żeby mieć więcej miejsca u góry na dok */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 800px;
+        height: 280px; /* ZWIĘKSZAMY WYSOKOŚĆ, by pomieścić listę pod kafelkiem */
+        display: flex;
+        align-items: flex-start; /* Kafelki trzymają się góry kontenera */
+        padding-top: 20px;
+        overflow-x: auto;
+        scroll-behavior: auto;
+        scrollbar-width: none;
+        z-index: 250;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s ease;
+        padding-left: 40%;
+        padding-right: 40%;
+    }
+    .carousel-container::-webkit-scrollbar { display: none; }
+    .carousel-container.active { opacity: 1; pointer-events: auto; }
+
+    /* Kafelki w karuzeli */
+    .carousel-item {
+        position: relative; /* Ważne dla pozycjonowania listy */
+        flex: 0 0 auto;
+        width: 140px;
+        height: 140px;
+        margin: 0 10px;
         background: #3e4a3d;
         border: 1px solid #d1b880;
-        border-radius: 50%;
+        border-radius: 12px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
-        padding: 8px;
-        font-size: 9px;
+        padding: 12px;
         color: #d1b880;
-        cursor: pointer;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        z-index: 40;
-        opacity: 0;
+        cursor: grab;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        transform-origin: center top; /* Powiększa się w dół */
+        user-select: none;
     }
-    .recipe-satellite.active { opacity: 1; transition: opacity 0.5s ease; }
+    .carousel-item:active { cursor: grabbing; }
+    .carousel-icon { font-size: 32px; margin-bottom: 8px; color: #d1b880; }
+    .carousel-title { font-weight: bold; font-family: 'Georgia', serif; font-size: 11px; margin-bottom: 4px;}
+    .carousel-desc { font-size: 9px; color: #a89f91; }
 
-    .guild-icon { font-size: 26px; color: #3e4a3d; margin-bottom: 5px; }
-    .recipe-icon { font-size: 20px; color: #d1b880; margin-bottom: 3px; }
-    .guild-title { font-family: 'Georgia', serif; font-weight: bold; color: #5a4f41; }
-
+    /* NOWOŚĆ: ROZWIJANA LISTA ROŚLIN POD ZADANIEM */
+    .task-plants-list {
+        position: absolute;
+        top: 105%; /* Ląduje idealnie pod kafelkiem */
+        left: 50%;
+        transform: translateX(-50%);
+        background: #23201d;
+        border: 1px solid #d1b880;
+        border-radius: 6px;
+        padding: 6px;
+        display: none;
+        flex-direction: column;
+        gap: 2px;
+        width: 150px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        z-index: 10;
+    }
+    .carousel-item:hover .task-plants-list {
+        display: flex; /* Pokazuje listę po najechaniu */
+        animation: slideDown 0.2s ease forwards;
+    }
+    @keyframes slideDown {
+        from { opacity: 0; transform: translate(-50%, -10px); }
+        to { opacity: 1; transform: translate(-50%, 0); }
+    }
+    .task-plant-item {
+        font-size: 10px;
+        font-family: 'Georgia', serif;
+        color: #d1b880;
+        padding: 6px 4px;
+        border-bottom: 1px solid #3a2b21;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    .task-plant-item:last-child { border: none; }
+    .task-plant-item:hover {
+        color: #fff;
+        background: #8a9a5b;
+        border-radius: 4px;
+        border-bottom-color: transparent;
+    }
     /* BESTIARIUSZ */
     .bestiary-header { font-family: 'Georgia', serif; border-bottom: 2px solid #8a9a5b; padding-bottom: 10px; margin: 40px 0; text-transform: uppercase; }
     .bestiary-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 30px; }
-    .witcher-card { background: #23201d; border: 1px solid #4a3e31; border-radius: 3px; overflow: hidden; display: flex; flex-direction: column; }
-    .witcher-card-img { height: 180px; background-size: cover; background-position: center; border-bottom: 2px solid #362e25; display: flex; align-items: center; justify-content: center; }
-    .witcher-card-title { font-family: 'Georgia', serif; color: #d1b880; padding: 15px 10px; font-size: 18px; text-align: center; }
-    .witcher-btn { display: block; background: #3a2b21; color: #d1b880; padding: 10px; text-align: center; text-decoration: none; margin: 0 15px 15px 15px; border: 1px solid #5a4b3a; text-transform: uppercase; font-size: 11px; }
+    .witcher-card {
+        background: #23201d;
+        border: 1px solid #4a3e31;
+        border-radius: 4px;
+        height: 420px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+    .witcher-card-img { height: 60%; background-size: cover; background-position: center; border-bottom: 2px solid #8a7a58; }
+    .witcher-card-content { height: 30%; padding: 15px; display: flex; flex-direction: column; justify-content: center; text-align: center; }
+    .witcher-btn {
+        height: 10%; display: flex; align-items: center; justify-content: center;
+        background: #3a2b21; color: #d1b880; text-decoration: none; border-top: 1px solid #5a4b3a;
+        font-size: 11px; text-transform: uppercase; letter-spacing: 1px;
+    }
+
+    /* W STRUKTURZE CSS index.html podmień klasę .task-plants-list i dodaj .task-meta */
+
+    .task-plants-list {
+        position: absolute;
+        top: 105%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #23201d;
+        border: 1px solid #d1b880;
+        border-radius: 6px;
+        padding: 6px;
+        display: none;
+        flex-direction: column;
+        gap: 2px;
+        width: 150px; /* Lekko poszerzona */
+        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        z-index: 10;
+    }
+
+    .task-meta {
+        font-size: 8.5px;
+        color: #a89f91;
+        padding: 4px;
+        border-bottom: 1px dashed #5a4f41;
+        margin-bottom: 6px;
+        text-align: left;
+        line-height: 1.3;
+    }
+    .task-meta span { color: #d1b880; font-weight: bold; }
+
+    /* --- OPTYMALIZACJA MOBILNA DLA ORBITY I KARUZELI --- */
+    @media (max-width: 768px) {
+        /* Mniejsze bąbelki roślin */
+        .guild-satellite {
+            width: 90px;
+            height: 90px;
+            padding: 6px;
+        }
+        .guild-icon { font-size: 22px; margin-bottom: 2px; }
+        .guild-title { font-size: 10px; margin-bottom: 2px; }
+        .guild-desc { font-size: 8px; -webkit-line-clamp: 2; }
+
+        /* Mniejsza karuzela na dole */
+        .carousel-container {
+            height: 180px;
+            padding: 0 5%; /* Znacznie mniej pustego miejsca po bokach */
+            bottom: 2%;
+        }
+        .carousel-item {
+            width: 100px;
+            height: 100px;
+            padding: 8px;
+        }
+        .carousel-icon { font-size: 24px; margin-bottom: 4px; }
+        .carousel-title { font-size: 9px; }
+
+        /* Lista rozwijana zadań dopasowana rozmiarem */
+        .task-plants-list { width: 120px; }
+
+        /* Zmniejszenie szerokości centralnego paska wyszukiwania */
+        .central-node { max-width: 90%; }
+
+        /* Zmniejszenie sekcji wyszukiwania, żeby nie generowała pustego miejsca */
+        .search-section { min-height: 550px; }
+    }
+
+    /* --- STYLIZACJA MODALA PRZEPISÓW (Przeniesiona z recipes.html) --- */
+    .modal-content {
+        border-radius: 0 !important;
+        border: 2px solid #3e4a3d !important;
+        background-color: #fdfaf0 !important;
+        font-family: 'Crimson Text', serif;
+    }
+    .modal-header {
+        border-bottom: 1px solid #d1c7a7;
+        background: #f4f1ea;
+    }
+    .modal-footer {
+        border-top: 1px solid #d1c7a7;
+        background: #f4f1ea;
+    }
+    .info-tag {
+        display: inline-block;
+        background: #fff;
+        border: 1px solid #ccc;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-size: 0.85rem;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        color: #555;
+    }
 </style>
 
 <header style="text-align: center; padding: 20px 0;">
@@ -126,10 +323,13 @@
 
 <section class="search-section" id="guildNetwork">
     <div class="central-node">
-        <div id="symptomSuggestions" class="suggestions-above"></div>
-        <input type="text" id="universalSearch" class="search-input" placeholder="Wpisz objaw (np. kaszel) lub roślinę..." autocomplete="off">
-        <div id="plantSuggestions" class="suggestions-below"></div>
+        <input type="text" id="universalSearch" class="search-input"
+               placeholder="Wpisz objaw (np. kaszel) lub sezon (np. wiosna)..." autocomplete="off">
+
+        <div class="suggestions-container">
+            <div id="plantSuggestions" class="suggestions-above"></div> <div id="symptomSuggestions" class="suggestions-below"></div> </div>
     </div>
+    <div id="recipeCarousel" class="carousel-container"></div>
 </section>
 
 <section>
@@ -137,78 +337,144 @@
     <div id="bestiaryGrid" class="bestiary-grid"></div>
 </section>
 
-<script>
-    const plantsData = {{ plants_full_data | default('[]') | safe }};
-    function getPlantUrl(id) {
-        return window.location.origin + "/plant/" + id + "/";
-    }
-
-    // --- RENDEROWANIE KART BESTIARIUSZA ---
-    function renderBestiary() {
-        const grid = document.getElementById('bestiaryGrid');
-        if (!grid) return; // Zabezpieczenie przed błędem jeśli brak kontenera
-
-        grid.innerHTML = ''; // Czyścimy na starcie
-
-        if (plantsData.length === 0) {
-            grid.innerHTML = '<p style="color: #9c9284; grid-column: 1 / -1;">Brak wpisów w bestiariuszu. Dodaj pliki JSON.</p>';
-            return;
-        }
-
-        plantsData.forEach(plant => {
-            const card = document.createElement('div');
-            card.className = 'witcher-card';
-
-            const imgUrl = plant.zdjecie_url || plant.zdjecie || plant.image;
-            const imgHtml = imgUrl
-                ? `<div class="witcher-card-img" style="background-image: url('${imgUrl}')"></div>`
-                : `<div class="witcher-card-img"><i class="ra ra-leaf"></i></div>`;
-
-            // TUTAJ POPRAWKA: Używamy nowej funkcji zamiast baseUrl
-            const plantUrl = getPlantUrl(plant.id);
-            const rodzina = plant.rodzina || 'Roślina nieznanego pochodzenia';
-
-            card.innerHTML = `
-                ${imgHtml}
-                <div class="witcher-card-content">
-                    <h3 class="witcher-card-title">${plant.nazwa_pl}</h3>
-                    <p class="witcher-card-desc">${rodzina}</p>
-                    <a href="${plantUrl}" class="witcher-btn">Zbadaj</a>
+<div class="modal fade" id="dynamicRecipeModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h2 id="modalRecipeTitle" style="margin: 0; font-size: 1.8rem; border: none;">Tytuł Przepisu</h2>
+                    <p style="margin: 0; color: #666; font-style: italic;">
+                        Gatunek: <strong id="modalRecipePlantName">Roślina</strong>
+                    </p>
                 </div>
-            `;
-            grid.appendChild(card);
-        });
-    }
-    renderBestiary();
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
 
-    // --- SŁOWNIK OBJAWÓW ---
-    const symptomMap = {};
-    plantsData.forEach(plant => {
-        let tags = new Set();
-        if(plant.przepisy_medyczne) plant.przepisy_medyczne.forEach(p => p.tagi?.forEach(t => tags.add(t.toLowerCase())));
-        if(plant.przepisy_kulinarne) plant.przepisy_kulinarne.forEach(p => p.tagi?.forEach(t => tags.add(t.toLowerCase())));
-        tags.forEach(tag => {
-            if(!symptomMap[tag]) symptomMap[tag] = [];
-            symptomMap[tag].push({ id: plant.id, nazwa: plant.nazwa_pl, rola: `Leczy: ${tag}` });
-        });
-    });
+            <div class="modal-body p-4">
+                <div id="modalRecipeTags" style="margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed #d1c7a7; display:none;">
+                    </div>
 
-    // --- WYSZUKIWARKA ---
+                <div class="row">
+                    <div class="col-lg-5" style="border-right: 1px dashed #d1c7a7;">
+                        <h4 style="color: #b8860b; margin-top: 0;">🛒 Składniki</h4>
+                        <ul id="modalRecipeIngredients" style="list-style-type: square; padding-left: 20px;">
+                            </ul>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <h4 style="color: #3e4a3d; margin-top: 0;">🔥 Przygotowanie</h4>
+                        <div id="modalRecipePreparation" style="font-size: 1.05rem; line-height: 1.7;">
+                            </div>
+
+                        <div id="modalRecipeDosage" style="display:none; background: #e3f2fd; border: 1px solid #90caf9; padding: 15px; margin-top: 20px; border-radius: 4px;">
+                            </div>
+
+                        <div id="modalRecipeNotes" style="display:none; background: #ffebee; border: 1px solid #ef9a9a; padding: 15px; margin-top: 15px; color: #c62828; border-radius: 4px;">
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+  // --- 1. DANE I ZMIENNE GLOBALNE ---
+    const plantsData = {{ plants_full_data | default('[]') | safe }};
+    const kalendarz = {{ calendar_data | default('{}') | safe }};
+
+    // Pobieramy przepisy i dbamy, by nie było duplikacji deklaracji
+    let recipesData = {{ recipes_full_data | default('[]') | safe }};
+    if (!Array.isArray(recipesData)) recipesData = [];
+
+    let globalRotation = 0;
+    let currentRotationSpeed = 0;
+    let activeSatellites = [];
+    let mouseX = -1000, mouseY = -1000, animationFrameId;
+    let dockedSat = null;
+
     const universalSearch = document.getElementById('universalSearch');
     const plantBox = document.getElementById('plantSuggestions');
     const symptomBox = document.getElementById('symptomSuggestions');
     const networkContainer = document.getElementById('guildNetwork');
+    const carousel = document.getElementById('recipeCarousel');
 
-    let activeSatellites = [];
-    let mouseX = -1000, mouseY = -1000, animationFrameId;
+    // --- 2. BUDOWANIE MAPY WYSZUKIWANIA (Objawy, Efekty, Kaszel) ---
+    const symptomMap = {};
 
+    function addSymptom(text, roslinaName, plantId) {
+        if (!text || text.length < 3) return;
+        // Rozbijamy tekst po przecinkach i średnikach na wypadek gdyby opis był długi
+        const parts = text.split(/[,;]/);
+        parts.forEach(part => {
+            const cleanTag = part.trim().toLowerCase();
+            if (cleanTag.length < 3) return;
+
+            if (!symptomMap[cleanTag]) symptomMap[cleanTag] = [];
+            if (!symptomMap[cleanTag].find(item => item.nazwa === roslinaName)) {
+                symptomMap[cleanTag].push({ id: plantId, nazwa: roslinaName, rola: `Działanie: ${cleanTag}` });
+            }
+        });
+    }
+
+    // Przeszukujemy nową bazę przepisów pod kątem zastosowania i efektów
+    recipesData.forEach(recipe => {
+        const plant = plantsData.find(p => p.nazwa_pl.toLowerCase() === (recipe.roslina || "").toLowerCase());
+        const plantId = plant ? plant.id : null;
+        const rName = recipe.roslina || "Nieznana";
+
+        // Szukamy w polach: zastosowanie, cechy, efekty (dodane dla pewności)
+        addSymptom(recipe.zastosowanie ? (Array.isArray(recipe.zastosowanie) ? recipe.zastosowanie.join(', ') : recipe.zastosowanie) : "", rName, plantId);
+        addSymptom(recipe.cechy ? (Array.isArray(recipe.cechy) ? recipe.cechy.join(', ') : recipe.cechy) : "", rName, plantId);
+        addSymptom(recipe.efekty ? (Array.isArray(recipe.efekty) ? recipe.efekty.join(', ') : recipe.efekty) : "", rName, plantId);
+    });
+
+    // --- 3. BUDOWANIE MAPY KALENDARZA (Sezony, Miesiące, Czynności) ---
+    const calendarSearchMap = {};
+    if (kalendarz.okresy) {
+        Object.keys(kalendarz.okresy).forEach(okres => {
+            calendarSearchMap[okres.toLowerCase()] = { type: 'Miesiąc/Sezon', data: kalendarz.okresy[okres].zadania, label: okres };
+        });
+    }
+    if (kalendarz.czynnosci) {
+        Object.keys(kalendarz.czynnosci).forEach(czynnosc => {
+            calendarSearchMap[czynnosc.toLowerCase()] = { type: 'Czynność', data: [kalendarz.czynnosci[czynnosc]], label: czynnosc };
+        });
+    }
+
+    // --- 4. OBSŁUGA WYSZUKIWARKI ---
     document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; });
 
     universalSearch.addEventListener('input', function() {
-        const query = this.value.toLowerCase();
+        const query = this.value.toLowerCase().trim();
         plantBox.innerHTML = ''; symptomBox.innerHTML = ''; clearSatellites();
+        carousel.classList.remove('active');
+
+        plantBox.style.display = 'none';
+        symptomBox.style.display = 'none';
+
         if (query.length < 2) { plantBox.style.display = 'none'; symptomBox.style.display = 'none'; return; }
 
+        // Szukanie w Kalendarzu
+        const matchedCalendar = Object.keys(calendarSearchMap).filter(k => k.includes(query));
+        if (matchedCalendar.length > 0) {
+            symptomBox.style.display = 'block';
+            matchedCalendar.forEach(k => {
+                const item = calendarSearchMap[k];
+                const div = document.createElement('div');
+                div.className = 'suggestion-item';
+                div.innerHTML = `<span class="suggestion-category" style="color:#e6a817">${item.type}</span><strong>${item.label}</strong>`;
+                div.onclick = () => {
+                    universalSearch.value = item.label;
+                    plantBox.style.display = 'none'; symptomBox.style.display = 'none';
+                    spawnSeasonNode(item.label, item.data);
+                };
+                symptomBox.appendChild(div);
+            });
+        }
+
+        // Szukanie w Roślinach
         const filteredPlants = plantsData.filter(p => p.nazwa_pl.toLowerCase().includes(query));
         if (filteredPlants.length > 0) {
             plantBox.style.display = 'block';
@@ -216,149 +482,584 @@
                 const div = document.createElement('div');
                 div.className = 'suggestion-item';
                 div.innerHTML = `<span class="suggestion-category">Roślina</span><strong>${plant.nazwa_pl}</strong>`;
-                div.onclick = () => { universalSearch.value = plant.nazwa_pl; plantBox.style.display = 'none'; symptomBox.style.display = 'none'; spawnEntities(plant.permakultura?.gildie || plant.gildie?.map(g=>({nazwa:g, rola:"Powiązanie"})) || []); };
+                div.onclick = () => {
+                    universalSearch.value = plant.nazwa_pl;
+                    plantBox.style.display = 'none'; symptomBox.style.display = 'none';
+                    spawnEntities(plant.permakultura?.gildie || plant.gildie?.map(g=>({nazwa:g, rola:"Powiązanie"})) || []);
+                };
                 plantBox.appendChild(div);
             });
         }
 
+        // Szukanie w Zastosowaniach / Efektach (Kaszel itp.)
         const filteredSymptoms = Object.keys(symptomMap).filter(s => s.includes(query));
         if (filteredSymptoms.length > 0) {
             symptomBox.style.display = 'block';
             filteredSymptoms.forEach(sym => {
                 const div = document.createElement('div');
                 div.className = 'suggestion-item';
-                div.innerHTML = `<span class="suggestion-category symptom-category">Objaw</span><strong>${sym}</strong>`;
-                div.onclick = () => { universalSearch.value = sym; plantBox.style.display = 'none'; symptomBox.style.display = 'none'; spawnEntities(symptomMap[sym]); };
+                div.innerHTML = `<span class="suggestion-category symptom-category">Zastosowanie</span><strong>${sym}</strong>`;
+                div.onclick = () => {
+                    universalSearch.value = sym;
+                    plantBox.style.display = 'none'; symptomBox.style.display = 'none';
+                    spawnEntities(symptomMap[sym]);
+                };
                 symptomBox.appendChild(div);
             });
         }
     });
 
-    function getWitcherIcon(nazwa, rola) {
-        const text = (nazwa + " " + rola).toLowerCase();
-        if (text.includes('drzew')) return 'ra-pine-tree';
-        if (text.includes('lecz') || text.includes('kaszel')) return 'ra-health';
-        return 'ra-leaf';
-    }
-
-    // --- GENERATOR ROŚLIN ---
-    function spawnEntities(entities) {
+    // --- 5. LOGIKA WĘZŁÓW I SATELITÓW ---
+    function spawnSeasonNode(seasonName, tasks) {
         clearSatellites();
         const rect = networkContainer.getBoundingClientRect();
-        const radius = window.innerWidth > 768 ? 240 : 160;
-        const angleStep = (2 * Math.PI) / (entities.length || 1);
+        const el = document.createElement('div');
+        el.className = 'guild-satellite active';
+        el.innerHTML = `<i class="guild-icon ra ra-sun"></i><div class="guild-title">${seasonName.toUpperCase()}</div><div class="guild-desc">Zadania sezonowe</div>`;
+        networkContainer.appendChild(el);
+        const satObj = { element: el, baseAngle: 0, x: rect.width/2, y: rect.height/2, vx: 0, vy: 0 };
+        activeSatellites.push(satObj);
+        dockedSat = satObj;
+        populateCarousel(tasks, "task");
+        if (!animationFrameId) animateSatellites();
+    }
+
+    function spawnEntities(entities) {
+        clearSatellites();
+        dockedSat = null;
+        carousel.classList.remove('active');
+        const rect = networkContainer.getBoundingClientRect();
 
         entities.forEach((entity, index) => {
-            const angle = index * angleStep;
+            const angleStep = (2 * Math.PI) / (entities.length || 1);
             const el = document.createElement('div');
             el.className = 'guild-satellite';
-            el.innerHTML = `<i class="guild-icon ra ${getWitcherIcon(entity.nazwa, entity.rola)}"></i><div class="guild-title">${entity.nazwa}</div>`;
+            el.innerHTML = `<i class="guild-icon ra ${getWitcherIcon(entity)}"></i><div class="guild-title">${entity.nazwa}</div><div class="guild-desc">${entity.rola}</div>`;
 
             el.onclick = (e) => {
                 e.stopPropagation();
+                if (isDown) return;
                 const plant = plantsData.find(p => p.nazwa_pl === entity.nazwa || p.id === entity.id);
+                if (dockedSat && activeSatellites.find(s => s.element === el) === dockedSat) {
+                    if (plant) window.location.href = getPlantUrl(plant.id);
+                    return;
+                }
+                dockedSat = activeSatellites.find(s => s.element === el);
                 if (plant) {
-                    const currentSym = universalSearch.value.toLowerCase();
-                    const recipes = plant.przepisy_medyczne?.filter(r => r.tagi?.some(t => t.toLowerCase().includes(currentSym))) || [];
-                    if (recipes.length > 0) spawnRecipes(plant, el, recipes);
-                    else window.location.href = baseUrl.replace('PLACEHOLDER', plant.id);
+                    let recipes = recipesData.filter(r => r.roslina && r.roslina.toLowerCase() === plant.nazwa_pl.toLowerCase());
+                    populateCarousel(recipes, "recipe", plant.id);
+                } else {
+                    carousel.classList.remove('active');
                 }
             };
-
             networkContainer.appendChild(el);
-            activeSatellites.push({
-                element: el,
-                baseX: (rect.width/2) + Math.cos(angle)*radius,
-                baseY: (rect.height/2) + Math.sin(angle)*radius,
-                x: rect.width/2, y: rect.height/2,
-                vx: 0, vy: 0,
-                randomOffset: Math.random()*10
-            });
-            setTimeout(() => el.classList.add('active'), 50 * index);
+            activeSatellites.push({ element: el, baseAngle: index * angleStep, x: rect.width/2, y: rect.height/2, vx: 0, vy: 0 });
         });
         if (!animationFrameId) animateSatellites();
     }
 
-    // --- GENERATOR PRZEPISÓW (Dzieci) ---
-    function spawnRecipes(plant, parentEl, recipes) {
-        const parentObj = activeSatellites.find(s => s.element === parentEl);
-        if (!parentObj) return;
-
-        const recipeRadius = 110;
-        const angleStep = (2 * Math.PI) / recipes.length;
-
-        recipes.forEach((recipe, index) => {
-            const angle = index * angleStep;
-            const el = document.createElement('div');
-            el.className = 'recipe-satellite';
-            el.innerHTML = `<i class="recipe-icon ra ra-base-potion"></i><div style="font-weight:bold">${recipe.tytul}</div>`;
-            el.onclick = (e) => { e.stopPropagation(); window.location.href = baseUrl.replace('PLACEHOLDER', plant.id) + "#przepisy"; };
-
-            networkContainer.appendChild(el);
-            activeSatellites.push({
-                element: el,
-                isChild: true,
-                parent: parentObj,
-                offsetX: Math.cos(angle)*recipeRadius,
-                offsetY: Math.sin(angle)*recipeRadius,
-                x: parentObj.x, y: parentObj.y,
-                vx: 0, vy: 0,
-                randomOffset: Math.random()
-            });
-            setTimeout(() => el.classList.add('active'), 50 * index);
-        });
-    }
-
-    // --- SILNIK FIZYKI (POPRAWIONY) ---
     function animateSatellites() {
-        const time = Date.now() * 0.0003;
         const rect = networkContainer.getBoundingClientRect();
-        const lmx = mouseX - rect.left, lmy = mouseY - rect.top;
+        const centerX = rect.width / 2, centerY = rect.height / 2;
+        const localMouseX = mouseX - rect.left;
+        const deltaX = localMouseX - centerX;
+
+        let targetRotationSpeed = (Math.abs(deltaX) > 50 && mouseY > rect.top && mouseY < rect.bottom) ? deltaX * 0.00003 : 0;
+        currentRotationSpeed += (targetRotationSpeed - currentRotationSpeed) * 0.05;
+        globalRotation += currentRotationSpeed;
+
+        const orbitingSats = activeSatellites.filter(s => s !== dockedSat);
+        const orbitingCount = orbitingSats.length;
+        const isDesktop = window.innerWidth > 768;
+        const mainRadiusX = Math.min((isDesktop ? 130 : 80) + (orbitingCount * 30), isDesktop ? 320 : 160);
+        const mainRadiusY = Math.min((isDesktop ? 40 : 30) + (orbitingCount * 12), isDesktop ? 120 : 60);
+
+        if (orbitingCount > 0) {
+            const angleStep = (2 * Math.PI) / orbitingCount;
+            orbitingSats.forEach((sat, i) => {
+                let diff = (i * angleStep) - sat.baseAngle;
+                while (diff > Math.PI) diff -= 2 * Math.PI;
+                while (diff < -Math.PI) diff += 2 * Math.PI;
+                sat.baseAngle += diff * 0.06;
+            });
+        }
 
         activeSatellites.forEach(sat => {
-            let tx, ty;
-
-            // Warunek celu: albo orbita wokół centrum, albo wokół rodzica
-            if (sat.isChild) {
-                tx = sat.parent.x + sat.offsetX;
-                ty = sat.parent.y + sat.offsetY;
+            let orbitX, orbitY, scale, zIndex, opacity;
+            if (sat === dockedSat) {
+                orbitX = centerX; orbitY = centerY - (isDesktop ? 100 : 60);
+                scale = isDesktop ? 1.3 : 1.1; opacity = 1; zIndex = 200;
+                sat.element.style.borderColor = "#d1b880";
+                sat.element.style.boxShadow = "0 0 30px rgba(209, 184, 128, 0.4)";
             } else {
-                tx = sat.baseX + Math.sin(time + sat.randomOffset) * 15;
-                ty = sat.baseY + Math.cos(time + sat.randomOffset * 2) * 15;
+                let currentAngle = sat.baseAngle + globalRotation;
+                orbitX = centerX + Math.cos(currentAngle) * mainRadiusX;
+                orbitY = centerY + Math.sin(currentAngle) * mainRadiusY;
+                const depth = -Math.sin(currentAngle);
+                scale = 0.85 + (depth * 0.35); opacity = (0.6 + (depth * 0.4)) * (dockedSat ? 0.3 : 1);
+                zIndex = Math.floor(100 + depth * 50);
+                sat.element.style.borderColor = dockedSat ? "rgba(90, 79, 65, 0.3)" : "#5a4f41";
+                sat.element.style.boxShadow = "inset 0 0 15px rgba(0,0,0,0.3)";
             }
-
-            // Odpychanie od myszki
-            const dxM = sat.x - lmx, dyM = sat.y - lmy;
-            const distM = Math.sqrt(dxM*dxM + dyM*dyM);
-            let fx = 0, fy = 0;
-            if (distM < 100 && distM > 0) {
-                const force = (100 - distM) / 100;
-                fx = (dxM / distM) * force * 2.5;
-                fy = (dyM / distM) * force * 2.5;
-            }
-
-            // Sprężyna do celu + siła od myszki
-            sat.vx += (tx - sat.x) * 0.04 + fx;
-            sat.vy += (ty - sat.y) * 0.04 + fy;
-
-            sat.vx *= 0.88; sat.vy *= 0.88; // Tarcie
-            sat.x += sat.vx; sat.y += sat.vy;
-
-            // Render pozycji
-            sat.element.style.left = "0px";
-            sat.element.style.top = "0px";
-            sat.element.style.transform = `translate(calc(-50% + ${sat.x}px), calc(-50% + ${sat.y}px))`;
+            sat.vx += (orbitX - sat.x) * 0.1; sat.vy += (orbitY - sat.y) * 0.1;
+            sat.vx *= 0.7; sat.vy *= 0.7; sat.x += sat.vx; sat.y += sat.vy;
+            sat.element.style.opacity = opacity.toFixed(2);
+            sat.element.style.zIndex = zIndex;
+            sat.element.style.transform = `translate(calc(-50% + ${sat.x - centerX}px), calc(-50% + ${sat.y - centerY}px)) scale(${scale.toFixed(2)})`;
         });
-
         if (activeSatellites.length > 0) animationFrameId = requestAnimationFrame(animateSatellites);
-        else animationFrameId = null;
     }
 
     function clearSatellites() {
         activeSatellites.forEach(s => s.element.remove());
         activeSatellites = [];
-        cancelAnimationFrame(animationFrameId);
-        animationFrameId = null;
+        if (animationFrameId) { cancelAnimationFrame(animationFrameId); animationFrameId = null; }
     }
+
+    // --- 6. OBSŁUGA DOLNEJ KARUZELI ---
+    let isDown = false, startX, scrollLeft;
+    carousel.addEventListener('mousedown', (e) => { isDown = true; startX = e.pageX - carousel.offsetLeft; scrollLeft = carousel.scrollLeft; });
+    carousel.addEventListener('mouseleave', () => isDown = false);
+    carousel.addEventListener('mouseup', () => isDown = false);
+    carousel.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        carousel.scrollLeft = scrollLeft - (e.pageX - carousel.offsetLeft - startX) * 1.5;
+    });
+
+    carousel.addEventListener('scroll', () => {
+        const items = carousel.querySelectorAll('.carousel-item');
+        const center = carousel.getBoundingClientRect().left + carousel.offsetWidth / 2;
+        items.forEach(item => {
+            const dist = Math.abs(center - (item.getBoundingClientRect().left + item.offsetWidth / 2));
+            item.style.transform = `scale(${Math.max(1 - (dist / (carousel.offsetWidth / 2)) * 0.4, 0.6)})`;
+            item.style.opacity = Math.max(1 - (dist / (carousel.offsetWidth / 2)) * 0.8, 0);
+        });
+    });
+
+    function populateCarousel(items, type, parentId = null) {
+        carousel.innerHTML = '';
+        if (items.length === 0) { carousel.classList.remove('active'); return; }
+        items.forEach(item => {
+            const el = document.createElement('div');
+            el.className = 'carousel-item';
+            if (type === "recipe") {
+                el.innerHTML = `<i class="carousel-icon ra ra-scroll"></i><div class="carousel-title">${item.tytul}</div>`;
+                el.addEventListener('click', (e) => { e.stopPropagation(); if(!isDown) openRecipeModal(item, parentId); });
+            } else {
+                let meta = (item.faza || item.pora || item.pogoda) ? `<div class="task-meta">${item.faza ? `<div>🌙 Faza: <span>${item.faza}</span></div>`:''}${item.pora ? `<div>⏳ Pora: <span>${item.pora}</span></div>`:''}${item.pogoda ? `<div>⛅ Warunki: <span>${item.pogoda}</span></div>`:''}</div>` : '';
+                let plants = (item.rosliny || []).map(p => `<div class="task-plant-item" onclick="if(!isDown){ universalSearch.value='${p}'; universalSearch.dispatchEvent(new Event('input')); }">${p}</div>`).join('');
+                el.innerHTML = `<i class="carousel-icon ra ${item.icon || 'ra-leaf'}"></i><div class="carousel-title">${item.tytul}</div><div class="carousel-desc">${item.desc}</div><div class="task-plants-list">${meta}${plants}</div>`;
+            }
+            carousel.appendChild(el);
+        });
+        carousel.classList.add('active');
+        setTimeout(() => { carousel.scrollLeft = 0; carousel.dispatchEvent(new Event('scroll')); }, 50);
+    }
+
+    // --- 7. MODAL I BESTIARIUSZ ---
+    function openRecipeModal(recipe, plantId) {
+        try {
+            document.getElementById('modalRecipeTitle').innerText = recipe.tytul || "Przepis";
+            document.getElementById('modalRecipePlantName').innerText = recipe.roslina || "Nieznana";
+            const ing = document.getElementById('modalRecipeIngredients');
+            ing.innerHTML = Array.isArray(recipe.skladniki) ? recipe.skladniki.map(s => `<li>${s}</li>`).join('') : `<li>${recipe.skladniki || 'Brak danych'}</li>`;
+            const prep = document.getElementById('modalRecipePreparation');
+            prep.innerHTML = Array.isArray(recipe.sposob_przygotowania) ? `<ol>${recipe.sposob_przygotowania.map(k => `<li>${k}</li>`).join('')}</ol>` : `<p>${recipe.sposob_przygotowania || 'Brak danych'}</p>`;
+
+            const tags = document.getElementById('modalRecipeTags');
+            let tagContent = "";
+            if(recipe.zastosowanie) tagContent += `<strong style="color:#9b4b4b">Zastosowanie:</strong><br>${(Array.isArray(recipe.zastosowanie)?recipe.zastosowanie:[recipe.zastosowanie]).map(t => `<span class="info-tag" style="background:#ffebee">${t}</span>`).join('')}<br>`;
+            if(recipe.cechy) tagContent += `<strong style="color:#2d5a27">Cechy:</strong><br>${(Array.isArray(recipe.cechy)?recipe.cechy:[recipe.cechy]).map(t => `<span class="info-tag" style="background:#e8f5e9">${t}</span>`).join('')}`;
+            tags.innerHTML = tagContent; tags.style.display = tagContent ? 'block' : 'none';
+
+            const src = document.getElementById('modalRecipeNotes');
+            src.innerHTML = recipe.zrodla ? `<strong>📚 Źródła:</strong> ${Array.isArray(recipe.zrodla)?recipe.zrodla.join(', '):recipe.zrodla}` : '';
+            src.style.display = recipe.zrodla ? 'block' : 'none';
+            bootstrap.Modal.getOrCreateInstance(document.getElementById('dynamicRecipeModal')).show();
+        } catch (e) { console.error(e); }
+    }
+
+    function renderBestiary() {
+        const grid = document.getElementById('bestiaryGrid');
+        if (!grid) return;
+        grid.innerHTML = plantsData.map(plant => `<div class="witcher-card"><div class="witcher-card-img" style="background-image: url('${plant.zdjecie_url || plant.zdjecie || plant.image || ''}')"></div><div class="witcher-card-content"><h3 class="witcher-card-title">${plant.nazwa_pl}</h3><p class="witcher-card-desc">${plant.rodzina || ''}</p><a href="${getPlantUrl(plant.id)}" class="witcher-btn">Zbadaj</a></div></div>`).join('');
+    }
+    function renderBestiary() {
+        const grid = document.getElementById('bestiaryGrid');
+        if (!grid) return;
+
+        grid.innerHTML = plantsData.map(plant => `
+            <div class="witcher-card">
+                <div class="witcher-card-img" style="background-image: url('${plant.zdjecie_url || plant.zdjecie || plant.image || ''}')"></div>
+                <div class="witcher-card-content">
+                    <h3 class="witcher-card-title">${plant.nazwa_pl}</h3>
+                    <p class="witcher-card-desc">${plant.rodzina || ''}</p>
+                    <a href="${getPlantUrl(plant.id)}" class="witcher-btn">Zbadaj</a>
+                </div>
+            </div>
+        `).join('');
+    }
+    renderBestiary();
+
 </script>
+
+
+<!--<script>-->
+<!--    // -&#45;&#45; ZMIENNE GLOBALNE I DANE -&#45;&#45;-->
+<!--    const plantsData = {{ plants_full_data | default('[]') | safe }};-->
+<!--    const kalendarz = {{ calendar_data | default('{}') | safe }};-->
+
+<!--   // NOWOŚĆ: Odbieramy główną bazę przepisów z Pythona! (z fallbackiem)-->
+<!--    let recipesData = {{ recipes_full_data | default('[]') | safe }};-->
+<!--    if (!Array.isArray(recipesData)) recipesData = []; // Zabezpieczenie przed błędem z konsoli-->
+
+<!--    let globalRotation = 0;-->
+<!--    let currentRotationSpeed = 0;-->
+<!--    let activeSatellites = [];-->
+<!--    let mouseX = -1000, mouseY = -1000, animationFrameId;-->
+<!--    let dockedSat = null;-->
+
+<!--    const universalSearch = document.getElementById('universalSearch');-->
+<!--    const plantBox = document.getElementById('plantSuggestions');-->
+<!--    const symptomBox = document.getElementById('symptomSuggestions');-->
+<!--    const networkContainer = document.getElementById('guildNetwork');-->
+<!--    const carousel = document.getElementById('recipeCarousel');-->
+
+<!--    // -&#45;&#45; BAZY DANYCH DLA WYSZUKIWARKI -&#45;&#45;-->
+<!--    let recipesData = {{ recipes_full_data | default('[]') | safe }};-->
+<!--    if (!Array.isArray(recipesData)) recipesData = []; // Zabezpieczenie przed błędem z konsoli-->
+
+<!--    // 1. BUDOWANIE MAPY OBJAWÓW (np. Kaszel, Wątroba)-->
+<!--    const symptomMap = {};-->
+
+<!--    function addSymptom(tag, roslinaName, plantId) {-->
+<!--        if (!tag || tag.length < 3) return;-->
+<!--        const cleanTag = tag.trim().toLowerCase();-->
+<!--        if (!symptomMap[cleanTag]) symptomMap[cleanTag] = [];-->
+
+<!--        // Zapobiegamy dublowaniu tej samej rośliny-->
+<!--        if (!symptomMap[cleanTag].find(item => item.nazwa === roslinaName)) {-->
+<!--            symptomMap[cleanTag].push({ id: plantId, nazwa: roslinaName, rola: `Zastosowanie: ${cleanTag}` });-->
+<!--        }-->
+<!--    }-->
+
+<!--    recipesData.forEach(recipe => {-->
+<!--        const plant = plantsData.find(p => p.nazwa_pl.toLowerCase() === (recipe.roslina || "").toLowerCase());-->
+<!--        const plantId = plant ? plant.id : null;-->
+<!--        const rName = recipe.roslina || "Nieznana";-->
+
+<!--        // Wyłuskiwanie z 'zastosowanie' (obsługa i list i tekstu)-->
+<!--        if (Array.isArray(recipe.zastosowanie)) {-->
+<!--            recipe.zastosowanie.forEach(t => addSymptom(t, rName, plantId));-->
+<!--        } else if (typeof recipe.zastosowanie === 'string') {-->
+<!--            recipe.zastosowanie.split(',').forEach(t => addSymptom(t, rName, plantId));-->
+<!--        }-->
+
+<!--        // Dodatkowo wyciągamy słowa z 'cechy', żeby reagowało na więcej słów-->
+<!--        if (Array.isArray(recipe.cechy)) {-->
+<!--            recipe.cechy.forEach(t => addSymptom(t, rName, plantId));-->
+<!--        } else if (typeof recipe.cechy === 'string') {-->
+<!--            recipe.cechy.split(',').forEach(t => addSymptom(t, rName, plantId));-->
+<!--        }-->
+<!--    });-->
+
+<!--    // 2. BUDOWANIE MAPY KALENDARZA (np. Luty, Zima, Zbiór oskoły)-->
+<!--    const calendarSearchMap = {};-->
+<!--    if (kalendarz.okresy) {-->
+<!--        Object.keys(kalendarz.okresy).forEach(okres => {-->
+<!--            calendarSearchMap[okres.toLowerCase()] = { type: 'Miesiąc/Sezon', data: kalendarz.okresy[okres].zadania, label: okres };-->
+<!--        });-->
+<!--    }-->
+<!--    if (kalendarz.czynnosci) {-->
+<!--        Object.keys(kalendarz.czynnosci).forEach(czynnosc => {-->
+<!--            // Czynności wrzucamy w tablicę, żeby pasowały strukturą do karuzeli-->
+<!--            calendarSearchMap[czynnosc.toLowerCase()] = { type: 'Czynność', data: [kalendarz.czynnosci[czynnosc]], label: czynnosc };-->
+<!--        });-->
+<!--    }-->
+
+<!--    // -&#45;&#45; FUNKCJE POMOCNICZE -&#45;&#45;-->
+<!--    function getPlantUrl(id) { return window.location.origin + "/plant/" + id + "/"; }-->
+<!--    function getWitcherIcon(plant, isRecipe = false) {-->
+<!--        if (isRecipe) return 'ra-scroll';-->
+<!--        const rodzina = (plant.rodzina || "").toLowerCase();-->
+<!--        const nazwa = (plant.nazwa_pl || "").toLowerCase();-->
+<!--        if (rodzina.includes('bukowate') || rodzina.includes('sosnowate') || nazwa.includes('dąb')) return 'ra-pine-tree';-->
+<!--        return 'ra-herb';-->
+<!--    }-->
+
+<!--    // -&#45;&#45; WYSZUKIWARKA -&#45;&#45;-->
+<!--    document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; });-->
+
+<!--    universalSearch.addEventListener('input', function() {-->
+<!--        const query = this.value.toLowerCase();-->
+<!--        plantBox.innerHTML = ''; symptomBox.innerHTML = ''; clearSatellites();-->
+<!--        carousel.classList.remove('active');-->
+
+<!--        if (query.length < 2) { plantBox.style.display = 'none'; symptomBox.style.display = 'none'; return; }-->
+
+<!--        // 1. Kalendarz (Zima, Luty, Oskoła, Syrop, itp.)-->
+<!--        const matchedCalendar = Object.keys(calendarSearchMap).filter(k => k.includes(query));-->
+<!--        if (matchedCalendar.length > 0) {-->
+<!--            symptomBox.style.display = 'block';-->
+<!--            matchedCalendar.forEach(k => {-->
+<!--                const item = calendarSearchMap[k];-->
+<!--                const div = document.createElement('div');-->
+<!--                div.className = 'suggestion-item';-->
+<!--                div.innerHTML = `<span class="suggestion-category" style="color:#e6a817">${item.type}</span><strong>${item.label}</strong>`;-->
+<!--                div.onclick = () => {-->
+<!--                    universalSearch.value = item.label;-->
+<!--                    plantBox.style.display = 'none'; symptomBox.style.display = 'none';-->
+<!--                    spawnSeasonNode(item.label, item.data);-->
+<!--                };-->
+<!--                symptomBox.appendChild(div);-->
+<!--            });-->
+<!--        }-->
+
+<!--        // 2. Rośliny-->
+<!--        const filteredPlants = plantsData.filter(p => p.nazwa_pl.toLowerCase().includes(query));-->
+<!--        if (filteredPlants.length > 0) {-->
+<!--            plantBox.style.display = 'block';-->
+<!--            filteredPlants.forEach(plant => {-->
+<!--                const div = document.createElement('div');-->
+<!--                div.className = 'suggestion-item';-->
+<!--                div.innerHTML = `<span class="suggestion-category">Roślina</span><strong>${plant.nazwa_pl}</strong>`;-->
+<!--                div.onclick = () => {-->
+<!--                    universalSearch.value = plant.nazwa_pl;-->
+<!--                    plantBox.style.display = 'none'; symptomBox.style.display = 'none';-->
+<!--                    spawnEntities(plant.permakultura?.gildie || plant.gildie?.map(g=>({nazwa:g, rola:"Powiązanie"})) || []);-->
+<!--                };-->
+<!--                plantBox.appendChild(div);-->
+<!--            });-->
+<!--        }-->
+
+<!--        // 3. Objawy / Zastosowanie (Kaszel, Wątroba, Gorączka, itp.)-->
+<!--        const filteredSymptoms = Object.keys(symptomMap).filter(s => s.includes(query));-->
+<!--        if (filteredSymptoms.length > 0) {-->
+<!--            symptomBox.style.display = 'block';-->
+<!--            filteredSymptoms.forEach(sym => {-->
+<!--                const div = document.createElement('div');-->
+<!--                div.className = 'suggestion-item';-->
+<!--                div.innerHTML = `<span class="suggestion-category symptom-category">Zastosowanie</span><strong>${sym}</strong>`;-->
+<!--                div.onclick = () => {-->
+<!--                    universalSearch.value = sym;-->
+<!--                    plantBox.style.display = 'none'; symptomBox.style.display = 'none';-->
+<!--                    spawnEntities(symptomMap[sym]);-->
+<!--                };-->
+<!--                symptomBox.appendChild(div);-->
+<!--            });-->
+<!--        }-->
+<!--    });-->
+
+<!--    // -&#45;&#45; LOGIKA WĘZŁÓW -&#45;&#45;-->
+<!--    function spawnSeasonNode(seasonName, tasks) {-->
+<!--        clearSatellites();-->
+<!--        const rect = networkContainer.getBoundingClientRect();-->
+<!--        const el = document.createElement('div');-->
+<!--        el.className = 'guild-satellite active';-->
+<!--        el.innerHTML = `<i class="guild-icon ra ra-sun"></i><div class="guild-title">${seasonName.toUpperCase()}</div><div class="guild-desc">Zadania sezonowe</div>`;-->
+<!--        networkContainer.appendChild(el);-->
+<!--        const satObj = { element: el, baseAngle: 0, x: rect.width/2, y: rect.height/2, vx: 0, vy: 0 };-->
+<!--        activeSatellites.push(satObj);-->
+<!--        dockedSat = satObj;-->
+
+<!--        populateCarousel(tasks, "task");-->
+<!--        if (!animationFrameId) animateSatellites();-->
+<!--    }-->
+
+<!--    function spawnEntities(entities) {-->
+<!--        clearSatellites();-->
+<!--        dockedSat = null;-->
+<!--        carousel.classList.remove('active');-->
+<!--        const rect = networkContainer.getBoundingClientRect();-->
+
+<!--        entities.forEach((entity, index) => {-->
+<!--            const angleStep = (2 * Math.PI) / (entities.length || 1);-->
+<!--            const baseAngle = index * angleStep;-->
+
+<!--            const el = document.createElement('div');-->
+<!--            el.className = 'guild-satellite';-->
+<!--            el.innerHTML = `<i class="guild-icon ra ${getWitcherIcon(entity, false)}"></i><div class="guild-title">${entity.nazwa}</div><div class="guild-desc">${entity.rola}</div>`;-->
+
+<!--            el.onclick = (e) => {-->
+<!--                e.stopPropagation();-->
+<!--                if (isDown) return;-->
+
+<!--                const plant = plantsData.find(p => p.nazwa_pl === entity.nazwa || p.id === entity.id);-->
+
+<!--                if (dockedSat && activeSatellites.find(s => s.element === el) === dockedSat) {-->
+<!--                    if (plant) window.location.href = getPlantUrl(plant.id);-->
+<!--                    return;-->
+<!--                }-->
+
+<!--                dockedSat = activeSatellites.find(s => s.element === el);-->
+
+<!--                if (plant) {-->
+<!--                    // Szukamy przepisów DLA TEJ ROŚLINY w głównej bazie przepisów-->
+<!--                    let recipes = recipesData.filter(r => r.roslina && r.roslina.toLowerCase() === plant.nazwa_pl.toLowerCase());-->
+<!--                    populateCarousel(recipes, "recipe", plant.id);-->
+<!--                } else {-->
+<!--                    carousel.classList.remove('active');-->
+<!--                }-->
+<!--            };-->
+
+<!--            networkContainer.appendChild(el);-->
+<!--            activeSatellites.push({ element: el, baseAngle: baseAngle, x: rect.width/2, y: rect.height/2, vx: 0, vy: 0 });-->
+<!--        });-->
+
+<!--        if (!animationFrameId) animateSatellites();-->
+<!--    }-->
+
+<!--    // (TUTAJ JEST TWOJA FIZYKA animateSatellites - ZOSTAJE BEZ ZMIAN)-->
+<!--    // Poniżej wklej ten kod modala i reszty funkcji:-->
+
+<!--    let isDown = false, startX, scrollLeft;-->
+<!--    carousel.addEventListener('mousedown', (e) => { isDown = true; startX = e.pageX - carousel.offsetLeft; scrollLeft = carousel.scrollLeft; });-->
+<!--    carousel.addEventListener('mouseleave', () => { isDown = false; });-->
+<!--    carousel.addEventListener('mouseup', () => { isDown = false; });-->
+<!--    carousel.addEventListener('mousemove', (e) => {-->
+<!--        if (!isDown) return;-->
+<!--        e.preventDefault();-->
+<!--        const walk = (e.pageX - carousel.offsetLeft - startX) * 1.5;-->
+<!--        carousel.scrollLeft = scrollLeft - walk;-->
+<!--    });-->
+
+<!--    carousel.addEventListener('scroll', updateCarouselEffect);-->
+
+<!--    function updateCarouselEffect() {-->
+<!--        const items = carousel.querySelectorAll('.carousel-item');-->
+<!--        const center = carousel.getBoundingClientRect().left + carousel.offsetWidth / 2;-->
+<!--        items.forEach(item => {-->
+<!--            const distance = Math.abs(center - (item.getBoundingClientRect().left + item.offsetWidth / 2));-->
+<!--            const maxDist = carousel.offsetWidth / 2;-->
+<!--            let scale = Math.max(1 - (distance / maxDist) * 0.4, 0.6);-->
+<!--            let opacity = Math.max(1 - (distance / maxDist) * 0.8, 0);-->
+<!--            item.style.transform = `scale(${scale})`;-->
+<!--            item.style.opacity = opacity;-->
+<!--        });-->
+<!--    }-->
+
+<!--    function populateCarousel(items, type, parentId = null) {-->
+<!--        carousel.innerHTML = '';-->
+<!--        if (items.length === 0) { carousel.classList.remove('active'); return; }-->
+
+<!--        items.forEach(item => {-->
+<!--            const el = document.createElement('div');-->
+<!--            el.className = 'carousel-item';-->
+
+<!--            if (type === "recipe") {-->
+<!--                el.innerHTML = `<i class="carousel-icon ra ra-scroll"></i><div class="carousel-title">${item.tytul}</div>`;-->
+<!--                el.addEventListener('click', (e) => {-->
+<!--                    e.stopPropagation();-->
+<!--                    if(!isDown) openRecipeModal(item, parentId);-->
+<!--                });-->
+<!--            } else if (type === "task") {-->
+<!--                let metaHtml = '';-->
+<!--                if (item.faza || item.pora || item.pogoda) {-->
+<!--                    metaHtml = `<div class="task-meta">-->
+<!--                        ${item.faza ? `<div>🌙 Faza: <span>${item.faza}</span></div>` : ''}-->
+<!--                        ${item.pora ? `<div>⏳ Pora: <span>${item.pora}</span></div>` : ''}-->
+<!--                        ${item.pogoda ? `<div>⛅ Warunki: <span>${item.pogoda}</span></div>` : ''}-->
+<!--                    </div>`;-->
+<!--                }-->
+<!--                let baseHtml = `<i class="carousel-icon ra ${item.icon || 'ra-leaf'}"></i><div class="carousel-title">${item.tytul}</div><div class="carousel-desc">${item.desc}</div>`;-->
+<!--                if (item.rosliny && item.rosliny.length > 0) {-->
+<!--                    const plantsListHtml = item.rosliny.map(p => `<div class="task-plant-item" onclick="if(!isDown) searchPlantFromTask('${p}')">${p}</div>`).join('');-->
+<!--                    baseHtml += `<div class="task-plants-list">${metaHtml}${plantsListHtml}</div>`;-->
+<!--                }-->
+<!--                el.innerHTML = baseHtml;-->
+<!--            }-->
+<!--            carousel.appendChild(el);-->
+<!--        });-->
+
+<!--        carousel.classList.add('active');-->
+<!--        setTimeout(() => { carousel.scrollLeft = 0; updateCarouselEffect(); }, 50);-->
+<!--    }-->
+
+<!--    function clearSatellites() {-->
+<!--        activeSatellites.forEach(s => s.element.remove());-->
+<!--        activeSatellites = [];-->
+<!--        if (animationFrameId) { cancelAnimationFrame(animationFrameId); animationFrameId = null; }-->
+<!--    }-->
+
+<!--    // Pamiętaj wkleić tutaj z powrotem funkcję animateSatellites() z poprzednich wersji-->
+
+<!--    // -&#45;&#45; KULOODPORNY MODAL ZGODNY Z NOWYM JSONEM -&#45;&#45;-->
+<!--    function openRecipeModal(recipe, plantId) {-->
+<!--        try {-->
+<!--            document.getElementById('modalRecipeTitle').innerText = recipe.tytul || "Przepis";-->
+<!--            document.getElementById('modalRecipePlantName').innerText = recipe.roslina || "Nieznana Roślina";-->
+
+<!--            // 1. Składniki-->
+<!--            const ingContainer = document.getElementById('modalRecipeIngredients');-->
+<!--            ingContainer.innerHTML = '';-->
+<!--            if (Array.isArray(recipe.skladniki)) {-->
+<!--                recipe.skladniki.forEach(skladnik => {-->
+<!--                    ingContainer.innerHTML += `<li style="margin-bottom: 5px;">${skladnik}</li>`;-->
+<!--                });-->
+<!--            } else {-->
+<!--                ingContainer.innerHTML = '<li style="color: #888;">Brak danych o składnikach.</li>';-->
+<!--            }-->
+
+<!--            // 2. Przygotowanie-->
+<!--            const prepContainer = document.getElementById('modalRecipePreparation');-->
+<!--            prepContainer.innerHTML = '';-->
+<!--            if (Array.isArray(recipe.sposob_przygotowania)) {-->
+<!--                const list = recipe.sposob_przygotowania.map(krok => `<li style="margin-bottom: 10px;">${krok}</li>`).join('');-->
+<!--                prepContainer.innerHTML = `<ol style="padding-left: 20px;">${list}</ol>`;-->
+<!--            } else if (recipe.sposob_przygotowania) {-->
+<!--                prepContainer.innerHTML = `<p style="white-space: pre-line;">${recipe.sposob_przygotowania}</p>`;-->
+<!--            } else {-->
+<!--                prepContainer.innerHTML = '<p style="color: #888;">Brak instrukcji przygotowania.</p>';-->
+<!--            }-->
+
+<!--            // 3. Tagi (Cechy i Zastosowanie z nowego JSON)-->
+<!--            const tagsContainer = document.getElementById('modalRecipeTags');-->
+<!--            tagsContainer.innerHTML = '';-->
+<!--            let hasTags = false;-->
+
+<!--            if (Array.isArray(recipe.zastosowanie) && recipe.zastosowanie.length > 0) {-->
+<!--                hasTags = true;-->
+<!--                tagsContainer.innerHTML += '<strong style="color: #9b4b4b;">Zastosowanie: </strong><br>';-->
+<!--                recipe.zastosowanie.forEach(tag => {-->
+<!--                    tagsContainer.innerHTML += `<span class="info-tag" style="background: #ffebee; border-color: #ffcdd2;">${tag}</span>`;-->
+<!--                });-->
+<!--                tagsContainer.innerHTML += '<br><br>';-->
+<!--            }-->
+
+<!--            if (Array.isArray(recipe.cechy) && recipe.cechy.length > 0) {-->
+<!--                hasTags = true;-->
+<!--                tagsContainer.innerHTML += '<strong style="color: #2d5a27;">Cechy: </strong><br>';-->
+<!--                recipe.cechy.forEach(tag => {-->
+<!--                    tagsContainer.innerHTML += `<span class="info-tag" style="background: #e8f5e9; border-color: #c8e6c9;">${tag}</span>`;-->
+<!--                });-->
+<!--            }-->
+<!--            tagsContainer.style.display = hasTags ? 'block' : 'none';-->
+
+<!--            // 4. Źródła (Zamiast Uwag)-->
+<!--            const notesBlock = document.getElementById('modalRecipeNotes');-->
+<!--            if (Array.isArray(recipe.zrodla) && recipe.zrodla.length > 0) {-->
+<!--                notesBlock.style.display = 'block';-->
+<!--                notesBlock.innerHTML = `<strong>📚 Źródła:</strong> ${recipe.zrodla.join(', ')}`;-->
+<!--            } else {-->
+<!--                notesBlock.style.display = 'none';-->
+<!--            }-->
+
+<!--            // Ukrywamy stare pole dawkowania, bo nie ma go w nowym JSON-->
+<!--            document.getElementById('modalRecipeDosage').style.display = 'none';-->
+
+<!--            // 5. Wywołanie okienka-->
+<!--            const modalEl = document.getElementById('dynamicRecipeModal');-->
+<!--            const myModal = bootstrap.Modal.getOrCreateInstance(modalEl);-->
+<!--            myModal.show();-->
+
+<!--        } catch (error) {-->
+<!--            console.error("Błąd ładowania modala:", error);-->
+<!--            alert("Błąd ładowania. Sprawdź konsolę.");-->
+<!--        }-->
+<!--    }-->
+
+<!--</script>-->
+
+
 {% endblock %}

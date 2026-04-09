@@ -8,6 +8,9 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, UserMixin, login_user, logout_user, login_required, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
 
+from astro_engine import get_astrological_data
+from data_builder import build_calendar_from_jsons, get_random_knowledge_pool
+
 
 def resource_path(relative_path):
     """ Zwraca absolutną ścieżkę do zasobu, działa dla dev i dla PyInstaller """
@@ -113,23 +116,52 @@ def get_all_plants_list():
 
 
 # --- TRASY (ROUTES) ---
+def get_all_recipes():
+    all_recipes = []
+    # Lista ścieżek do Twoich plików
+    files = [
+        'data/przepisy/przepisy_kulinarne.json',
+        'data/przepisy/przepisy_medyczne.json'
+    ]
+
+    for file_path in files:
+        if os.path.exists(file_path):
+            try:
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                    # Jeśli plik zawiera listę, używamy extend, aby dodać elementy do all_recipes
+                    if isinstance(data, list):
+                        all_recipes.extend(data)
+                    else:
+                        # Jeśli pojedynczy obiekt, używamy append
+                        all_recipes.append(data)
+            except Exception as e:
+                print(f"Błąd ładowania pliku {file_path}: {e}")
+
+    return all_recipes
 
 @app.route('/')
 def index():
     plants = get_all_plants_list()  # Twoja stara funkcja zwracająca ['mniszek_lekarski', 'chmiel_zwyczajny']
+    dynamic_calendar = build_calendar_from_jsons()
+    recipes = get_all_recipes()
+    astro = get_astrological_data()  # Czyżowice domyślnie
+    knowledge = get_random_knowledge_pool()
 
-    # KROK 1: Pobieramy pełne obiekty słownikowe dla każdej rośliny
     full_data_list = []
     for plant_id in plants:
         plant_data = get_plant_data(plant_id)  # Funkcja, która wczytuje zawartość pliku JSON
         if plant_data:
             full_data_list.append(plant_data)
 
-    # KROK 2: Przekazujemy zserializowane dane do szablonu
     return render_template(
         'index.html',
         plants=plants,
-        plants_full_data=json.dumps(full_data_list)
+        plants_full_data=json.dumps(full_data_list),
+        calendar_data=json.dumps(dynamic_calendar),
+        astro=astro,
+        knowledge=knowledge,
+        recipes_full_data=json.dumps(recipes)  # <-- DODANA LINIA
     )
 
 
