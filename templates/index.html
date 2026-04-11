@@ -383,6 +383,10 @@
         addSymptom(recipe.wlasciwosci, rName, plantId);
         if (recipe.efekty) addSymptom(recipe.efekty, rName, plantId);
         if (recipe.tagi) addSymptom(recipe.tagi, rName, plantId);
+
+        // NOWOŚĆ: Szukamy w metodzie (np. "syrop") i składnikach!
+        if (recipe.metoda) addSymptom(recipe.metoda, rName, plantId);
+        if (recipe.skladniki) addSymptom(recipe.skladniki, rName, plantId);
     });
 
     plantsData.forEach(plant => {
