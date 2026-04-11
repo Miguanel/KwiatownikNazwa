@@ -129,11 +129,12 @@ def get_all_recipes():
             try:
                 with open(file_path, 'r', encoding='utf-8') as f:
                     data = json.load(f)
-                    # Jeśli plik zawiera listę, używamy extend, aby dodać elementy do all_recipes
-                    if isinstance(data, list):
+                    # POPRAWKA: Jeśli to słownik, wyciągnij listę z klucza "przepisy"
+                    if isinstance(data, dict) and "przepisy" in data:
+                        all_recipes.extend(data["przepisy"])
+                    elif isinstance(data, list):
                         all_recipes.extend(data)
                     else:
-                        # Jeśli pojedynczy obiekt, używamy append
                         all_recipes.append(data)
             except Exception as e:
                 print(f"Błąd ładowania pliku {file_path}: {e}")
