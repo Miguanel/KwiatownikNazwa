@@ -219,10 +219,23 @@
 
     // Odpalamy skrypty dla obu banerów
     document.addEventListener("DOMContentLoaded", function() {
+
+        // --- NOWOŚĆ: LOSOWANIE KOLEJNOŚCI CIEKAWOSTEK ---
+        const marqueeContent = document.querySelector('#banner-marquee .scrollable-content');
+        if (marqueeContent) {
+            const items = Array.from(marqueeContent.children);
+            // Algorytm mieszający
+            for (let i = items.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                marqueeContent.appendChild(items[j]);
+            }
+        }
+        // ----------------------------------------------
+
         // Górny pasek z ikonami - porusza się niesamowicie powoli i majestatycznie
         setupInfiniteScroller('banner-astro', 0.2);
 
-        // Pasek z Ciekawostkami - porusza się ciut szybciej (ale wciąż spokojnie i powoli)
+        // Pasek z Ciekawostkami - porusza się ciut szybciej
         setupInfiniteScroller('banner-marquee', 0.6);
     });
 

@@ -1,342 +1,399 @@
 {% extends "base.html" %}
 
 {% block content %}
-<article class="plant-detail-container">
+<div class="grimmoire-wrapper" style="background-image: url('{{ plant.url.pokrój if plant.url else '' }}');">
+    <div class="grimmoire-overlay"></div>
 
-    <header style="text-align: center; margin-bottom: 40px;">
-        <h1 style="font-size: 3.5rem; margin-bottom: 5px; color: #3e4a3d;">{{ plant.nazwa_pl }}</h1>
-        <p style="font-style: italic; color: #5a6b5a; font-size: 1.4rem; font-family: 'Playfair Display', serif;">
-            {{ plant.nazwa_lat }} <span style="font-size: 1rem; color: #888;">| Rodzina: {{ plant.rodzina }}</span>
-        </p>
-        <div style="width: 120px; height: 4px; background: #b8860b; margin: 20px auto;"></div>
-        <p style="max-width: 800px; margin: 0 auto; font-size: 1.15rem; line-height: 1.8;">{{ plant.opis }}</p>
-    </header>
+    <article class="grimmoire-container">
 
-    <div class="row g-4 mb-5">
-        {% if plant.profil_energetyczny %}
-        <div class="col-md-6">
-            <div class="info-card h-100">
-                <h4 class="card-header-custom"><i class="bi bi-fire"></i> Profil Energetyczny</h4>
-                <div class="p-3">
-                    <ul class="list-unstyled">
-                        <li><strong>Smak:</strong> {{ plant.profil_energetyczny.smak }}</li>
-                        <li><strong>Termika:</strong> {{ plant.profil_energetyczny.termika }}</li>
-                        <li><strong>Wilgotność:</strong> {{ plant.profil_energetyczny.wilgotnosc }}</li>
-                        <li><strong>Żywioł:</strong> {{ plant.profil_energetyczny.zywiol }}</li>
-                    </ul>
-                    <p class="small text-muted mt-2 border-top pt-2"><em>"{{ plant.profil_energetyczny.opis }}"</em></p>
+        <header class="grimmoire-hero">
+            <h1 class="hero-title">{{ plant.nazwa_pl }}</h1>
+            <p class="hero-subtitle">{{ plant.nazwa_lat }} <span class="hero-family">| {{ plant.rodzina }}</span></p>
+            <div class="hero-divider"></div>
+            <p class="hero-desc">{{ plant.opis }}</p>
+
+            {% if plant.url %}
+            <div class="plant-gallery">
+                {% for klucz, link in plant.url.items() %}
+                <div class="gallery-thumb" onclick="openLightbox('{{ link }}', '{{ klucz }}')">
+                    <img src="{{ link }}" alt="{{ klucz }}">
+                    <span class="gallery-caption">{{ klucz }}</span>
                 </div>
-            </div>
-        </div>
-        {% endif %}
-
-        {% if plant.wymagania %}
-        <div class="col-md-6">
-            <div class="info-card h-100" style="border-color: #5a6b5a;">
-                <h4 class="card-header-custom" style="background: #e9f0e8; color: #2d5a27;"><i class="bi bi-flower1"></i> Wymagania Siedliskowe</h4>
-                <div class="p-3">
-
-                    <div class="d-flex justify-content-between align-items-start mb-3 border-bottom border-secondary-subtle pb-2">
-                        <span style="min-width: 140px; font-weight: bold; color: #2d5a27;">Stanowisko:</span>
-                        <span style="text-align: right; font-weight: 600; line-height: 1.3;">{{ plant.wymagania.stanowisko }}</span>
-                    </div>
-
-                    <div class="d-flex justify-content-between align-items-start mb-3 border-bottom border-secondary-subtle pb-2">
-                        <span style="min-width: 100px; font-weight: bold; color: #2d5a27;">Gleba:</span>
-                        <span style="text-align: right; font-weight: 600; line-height: 1.3;">{{ plant.wymagania.gleba }}</span>
-                    </div>
-
-                    <div class="d-flex justify-content-between align-items-start mb-3 border-bottom border-secondary-subtle pb-2">
-                        <span style="min-width: 100px; font-weight: bold; color: #2d5a27;">Woda:</span>
-                        <span style="text-align: right; font-weight: 600; line-height: 1.3;">{{ plant.wymagania.woda }}</span>
-                    </div>
-
-                    <div class="d-flex justify-content-between align-items-start">
-                        <span style="min-width: 160px; font-weight: bold; color: #2d5a27;">Mrozoodporność:</span>
-                        <span style="text-align: right; font-weight: 600; line-height: 1.3;">{{ plant.wymagania.mrozoodpornosc }}</span>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        {% endif %}
-    </div>
-
-    {% if plant.identyfikacja %}
-    <section class="mb-5 p-4" style="background: #fff; border: 1px dashed #3e4a3d;">
-        <h3 style="color: #3e4a3d;"><i class="bi bi-search"></i> Jak rozpoznać?</h3>
-        <ul style="margin-bottom: 20px;">
-            {% for cecha in plant.identyfikacja.cechy_kluczowe %}
-                <li>{{ cecha }}</li>
-            {% endfor %}
-        </ul>
-
-        {% if plant.identyfikacja.mozliwe_pomyłki %}
-        <div class="alert alert-warning">
-            <strong>⚠️ Możliwe pomyłki:</strong>
-            <ul class="mb-0 mt-2">
-                {% for pomylka in plant.identyfikacja.mozliwe_pomyłki %}
-                    <li>
-                        <strong>{{ pomylka.nazwa }}:</strong> {{ pomylka.roznica }}
-                    </li>
                 {% endfor %}
-            </ul>
-        </div>
-        {% endif %}
-    </section>
-    {% endif %}
-
-    <hr style="margin: 50px 0; border-top: 1px double #d1c7a7;">
-
-    <section class="morphology-section mb-5">
-        <h2 style="text-align: center; margin-bottom: 30px;">Surowce Zielarskie</h2>
-        <div class="parts-grid">
-            {% for klucz, dane in plant.czesci_rosliny.items() %}
-            <div class="part-card">
-                <span class="part-badge">{{ klucz }}</span>
-                <h3 class="mt-2 text-capitalize">{{ dane.nazwa_surowca }}</h3>
-                <p class="text-muted small mb-2">{{ dane.opis_botaniczny }}</p>
-
-                <div class="mb-3">
-                    <strong>Działanie:</strong><br>
-                    {{ dane.wlasciwości }}
-                </div>
-
-                <div class="ingredients-box">
-                    <strong>Składniki aktywne:</strong>
-                    <div class="d-flex flex-wrap gap-1 mt-1">
-                        {% if dane.skladniki_aktywne is string %}
-                            <span class="chem-tag">{{ dane.skladniki_aktywne }}</span>
-                        {% else %}
-                            {% for skladnik in dane.skladniki_aktywne %}
-                                <span class="chem-tag">{{ skladnik }}</span>
-                            {% endfor %}
-                        {% endif %}
-                    </div>
-                </div>
-
-                {% if dane.ostrzezenia %}
-                <div class="mt-2 text-danger small">
-                    <strong>⚠️ Uwaga:</strong> {{ dane.ostrzezenia }}
-                </div>
-                {% endif %}
-
-                <div class="mt-3 pt-2 border-top text-end small text-muted">
-                    🕒 Zbiór: <strong>{{ dane.czas_zbioru }}</strong>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </section>
-
-    {% if plant.zastosowanie %}
-    <section class="mb-5">
-        <h2 style="text-align: center; margin-bottom: 30px;">Zastosowanie Praktyczne</h2>
-        <div class="row g-4">
-            <div class="col-md-6">
-                <div class="use-card h-100">
-                    <h4 style="color: #8b0000;"><i class="bi bi-bandaid"></i> Medycyna</h4>
-                    <p>{{ plant.zastosowanie.medyczne }}</p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="use-card h-100">
-                    <h4 style="color: #d4a017;"><i class="bi bi-cup-hot"></i> Kuchnia</h4>
-                    <p>{{ plant.zastosowanie.kulinarne }}</p>
-                </div>
-            </div>
-            {% if plant.zastosowanie.rzemieslnicze %}
-            <div class="col-md-6">
-                <div class="use-card h-100">
-                    <h4 style="color: #5d4037;"><i class="bi bi-tools"></i> Rzemiosło</h4>
-                    <p>{{ plant.zastosowanie.rzemieslnicze }}</p>
-                </div>
             </div>
             {% endif %}
-            <div class="col-md-6">
-                <div class="use-card h-100">
-                    <h4 style="color: #2d5a27;"><i class="bi bi-tree"></i> Ogród</h4>
-                    <p>{{ plant.zastosowanie.ogrodowe }}</p>
+        </header>
+
+        <div class="grimmoire-book">
+
+            {% if plant.profil_energetyczny or plant.wymagania %}
+            <details class="grimmoire-tab">
+                <summary><i class="ra ra-moon-sun"></i> Natura i Siedlisko</summary>
+                <div class="tab-content">
+
+                    {% if plant.profil_energetyczny %}
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-burning-embers"></i> Profil Energetyczny</summary>
+                        <div class="subtab-content">
+                            <ul class="sub-list">
+                                <li><strong>Smak:</strong> {{ plant.profil_energetyczny.smak }}</li>
+                                <li><strong>Termika:</strong> {{ plant.profil_energetyczny.termika }}</li>
+                                <li><strong>Wilgotność:</strong> {{ plant.profil_energetyczny.wilgotnosc }}</li>
+                                <li><strong>Żywioł:</strong> {{ plant.profil_energetyczny.zywiol }}</li>
+                            </ul>
+                            <p class="energy-quote">"{{ plant.profil_energetyczny.opis }}"</p>
+                        </div>
+                    </details>
+                    {% endif %}
+
+                    {% if plant.wymagania %}
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-compass"></i> Wymagania Siedliskowe</summary>
+                        <div class="subtab-content">
+                            <ul class="sub-list">
+                                <li><strong>Stanowisko:</strong> {{ plant.wymagania.stanowisko }}</li>
+                                <li><strong>Gleba:</strong> {{ plant.wymagania.gleba }}</li>
+                                <li><strong>Woda:</strong> {{ plant.wymagania.woda }}</li>
+                                <li><strong>Mrozoodporność:</strong> {{ plant.wymagania.mrozoodpornosc }}</li>
+                            </ul>
+                        </div>
+                    </details>
+                    {% endif %}
+
                 </div>
-            </div>
-        </div>
-    </section>
-    {% endif %}
+            </details>
+            {% endif %}
 
-    {% if plant.interakcje or plant.ostrzezenia %}
-    <section class="safety-section p-4 mb-5" style="border-left: 5px solid #c62828; background: #fff5f5; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-        <h3 style="color: #c62828;"><i class="bi bi-exclamation-octagon-fill"></i> Bezpieczeństwo i Interakcje</h3>
+            {% if plant.identyfikacja %}
+            <details class="grimmoire-tab">
+                <summary><i class="ra ra-eye-monster"></i> Rozpoznawanie w terenie</summary>
+                <div class="tab-content">
+                    <ul class="feature-list">
+                        {% for cecha in plant.identyfikacja.cechy_kluczowe %}
+                            <li><i class="ra ra-leaf"></i> {{ cecha }}</li>
+                        {% endfor %}
+                    </ul>
 
-        {% if plant.interakcje %}
-        <div class="mb-3">
-            <strong>💊 Interakcje z lekami:</strong>
-            <p>{{ plant.interakcje }}</p>
-        </div>
-        {% endif %}
-
-        {% if plant.ostrzezenia %}
-        <div>
-            <strong>🚫 Przeciwwskazania ogólne:</strong>
-            <p>{{ plant.ostrzezenia }}</p>
-        </div>
-        {% endif %}
-    </section>
-    {% endif %}
-
-    <div class="row g-5 mb-5">
-        <div class="col-lg-6">
-            <h3 class="section-title">Kalendarz Biodynamiczny</h3>
-            <div class="calendar-list">
-                {% for zadanie in plant.kalendarz_ogrodnika.zadania %}
-                <div class="calendar-item mb-3 p-3 bg-white border">
-                    <div class="d-flex justify-content-between align-items-start">
-                        <strong>{{ zadanie.czynnosc }}</strong>
-                        <span class="badge bg-secondary ms-2">Miesiąc: {{ zadanie.miesiace|join(', ') }}</span>
-                    </div>
-                    <p class="small mb-2 mt-2">{{ zadanie.opis }}</p>
-
-                    <div class="d-flex flex-wrap gap-2 mt-2">
-                        <span class="badge bg-light text-dark border" style="white-space: normal; text-align: left; line-height: 1.4;">
-                            🌑 {{ zadanie.faza_ksiezyca }}
-                        </span>
-                        <span class="badge bg-light text-dark border" style="white-space: normal; text-align: left; line-height: 1.4;">
-                            ☁️ {{ zadanie.pogoda }}
-                        </span>
-                        {% if zadanie.wplyw_ksiezyca %}
-                        <span class="badge bg-light text-dark border" style="white-space: normal; text-align: left; line-height: 1.4; background-color: #fdfaf0 !important;">
-                            ✨ {{ zadanie.wplyw_ksiezyca }}
-                        </span>
-                        {% endif %}
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-
-        <div class="col-lg-6">
-            <h3 class="section-title">Permakultura</h3>
-            <div class="bg-white p-4 border h-100">
-                <p><strong>Funkcje w ekosystemie:</strong></p>
-                <ul>
-                    {% for f in plant.permakultura.funkcje %}
-                        <li>{{ f }}</li>
-                    {% endfor %}
-                </ul>
-
-                <p class="mt-4"><strong>Gildia (Dobrzy sąsiedzi):</strong></p>
-                <div class="d-flex flex-wrap gap-2">
-                    {% for g in plant.permakultura.gildie %}
-                        <span class="badge bg-success p-2">
-                            {{ g.nazwa if g.nazwa else g }}
-                        </span>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
-
-    {% if plant.ciekawostki %}
-    <section class="mb-5 p-4" style="background: #e9f0e8; border-radius: 8px;">
-        <h3>💡 Czy wiesz, że...</h3>
-        <ul>
-            {% for c in plant.ciekawostki %}
-                <li class="mb-2">{{ c }}</li>
-            {% endfor %}
-        </ul>
-    </section>
-    {% endif %}
-
-    <hr style="margin: 50px 0;">
-
-    <section class="comments-section frozen-feature">
-        <h3>📝 Notatki i Obserwacje</h3>
-
-        {% if current_user.is_authenticated %}
-            <form action="{{ url_for('add_comment', plant_id=plant_id) }}" method="POST" class="mb-4 p-3 bg-white border">
-                <textarea name="content" class="form-control mb-2" placeholder="Twój wpis..." rows="3"></textarea>
-                <div class="form-check">
-                    <input type="checkbox" name="is_private" id="is_private" class="form-check-input">
-                    <label for="is_private" class="form-check-label">Notatka prywatna 🔒</label>
-                </div>
-                <button type="submit" class="btn btn-green mt-2">Dodaj wpis</button>
-            </form>
-        {% else %}
-            <div class="alert alert-light border text-center">
-                <a href="{{ url_for('login') }}">Zaloguj się</a>, aby dodawać notatki.
-            </div>
-        {% endif %}
-
-        <div class="comments-list">
-            {% for comment in comments %}
-            <div class="card mb-3 {{ 'border-warning' if comment.is_private else '' }}">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                        <strong>{{ comment.author.username }}</strong>
-                        <small class="text-muted">{{ comment.date_posted.strftime('%Y-%m-%d') }}</small>
-                    </div>
-                    <p class="mt-2 mb-0">{{ comment.content }}</p>
-                    {% if comment.is_private %}
-                        <span class="badge bg-warning text-dark mt-2">Prywatne</span>
+                    {% if plant.identyfikacja.mozliwe_pomyłki %}
+                    <details class="grimmoire-subtab danger-subtab">
+                        <summary><i class="ra ra-skull"></i> Możliwe pomyłki (Zagrożenia!)</summary>
+                        <div class="subtab-content warning-box">
+                            {% for pomylka in plant.identyfikacja.mozliwe_pomyłki %}
+                                <p><strong>{{ pomylka.nazwa }}:</strong> {{ pomylka.roznica }}</p>
+                            {% endfor %}
+                        </div>
+                    </details>
                     {% endif %}
                 </div>
-            </div>
-            {% endfor %}
-        </div>
-    </section>
+            </details>
+            {% endif %}
 
-</article>
+            {% if plant.czesci_rosliny %}
+            <details class="grimmoire-tab">
+                <summary><i class="ra ra-fizzing-flask"></i> Surowce i Zbiory</summary>
+                <div class="tab-content">
+                    {% for klucz, dane in plant.czesci_rosliny.items() %}
+                    <details class="grimmoire-subtab part-subtab">
+                        <summary>
+                            <span class="subtab-title-group">
+                                <i class="ra ra-potion"></i> {{ dane.nazwa_surowca }} <span class="part-badge">{{ klucz }}</span>
+                            </span>
+                        </summary>
+                        <div class="subtab-content">
+                            <p class="part-desc">{{ dane.opis_botaniczny }}</p>
+
+                            <div class="part-effects">
+                                <strong>Działanie:</strong> {{ dane.wlasciwości }}
+                            </div>
+
+                            <div class="part-chem mt-3">
+                                <strong>Substancje czynne:</strong>
+                                <div class="chem-tags">
+                                    {% if dane.skladniki_aktywne is string %}
+                                        <a href="https://pl.wikipedia.org/wiki/Special:Search?search={{ dane.skladniki_aktywne | urlencode }}" target="_blank" class="chem-link">{{ dane.skladniki_aktywne }} <i class="ra ra-book"></i></a>
+                                    {% else %}
+                                        {% for skladnik in dane.skladniki_aktywne %}
+                                            <a href="https://pl.wikipedia.org/wiki/Special:Search?search={{ skladnik | urlencode }}" target="_blank" class="chem-link">{{ skladnik }} <i class="ra ra-book"></i></a>
+                                        {% endfor %}
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            {% if dane.ostrzezenia %}
+                            <div class="part-warning"><i class="ra ra-poison-cloud"></i> {{ dane.ostrzezenia }}</div>
+                            {% endif %}
+
+                            <div class="part-time"><i class="ra ra-hourglass"></i> Zbiór: <strong>{{ dane.czas_zbioru }}</strong></div>
+                        </div>
+                    </details>
+                    {% endfor %}
+                </div>
+            </details>
+            {% endif %}
+
+            {% if plant.zastosowanie %}
+            <details class="grimmoire-tab">
+                <summary><i class="ra ra-anvil"></i> Praktyczne Zastosowanie</summary>
+                <div class="tab-content">
+                    {% if plant.zastosowanie.medyczne %}
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-health"></i> Medycyna</summary>
+                        <div class="subtab-content"><p>{{ plant.zastosowanie.medyczne }}</p></div>
+                    </details>
+                    {% endif %}
+
+                    {% if plant.zastosowanie.kulinarne %}
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-meat"></i> Kuchnia</summary>
+                        <div class="subtab-content"><p>{{ plant.zastosowanie.kulinarne }}</p></div>
+                    </details>
+                    {% endif %}
+
+                    {% if plant.zastosowanie.rzemieslnicze %}
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-hammer"></i> Rzemiosło</summary>
+                        <div class="subtab-content"><p>{{ plant.zastosowanie.rzemieslnicze }}</p></div>
+                    </details>
+                    {% endif %}
+
+                    {% if plant.zastosowanie.ogrodowe %}
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-pine-tree"></i> Ogród</summary>
+                        <div class="subtab-content"><p>{{ plant.zastosowanie.ogrodowe }}</p></div>
+                    </details>
+                    {% endif %}
+                </div>
+            </details>
+            {% endif %}
+
+            {% if plant.interakcje or plant.ostrzezenia %}
+            <details class="grimmoire-tab danger-tab">
+                <summary><i class="ra ra-bleeding-eye"></i> Bezpieczeństwo i Interakcje</summary>
+                <div class="tab-content">
+                    {% if plant.interakcje %}
+                    <details class="grimmoire-subtab danger-subtab" open>
+                        <summary><i class="ra ra-potion"></i> Interakcje z lekami</summary>
+                        <div class="subtab-content danger-block"><p>{{ plant.interakcje }}</p></div>
+                    </details>
+                    {% endif %}
+
+                    {% if plant.ostrzezenia %}
+                    <details class="grimmoire-subtab danger-subtab" open>
+                        <summary><i class="ra ra-lightning-bolt"></i> Przeciwwskazania</summary>
+                        <div class="subtab-content danger-block"><p>{{ plant.ostrzezenia }}</p></div>
+                    </details>
+                    {% endif %}
+                </div>
+            </details>
+            {% endif %}
+
+            {% if plant.kalendarz_ogrodnika or plant.permakultura %}
+            <details class="grimmoire-tab">
+                <summary><i class="ra ra-cycle"></i> Cykl Życia i Ekosystem</summary>
+                <div class="tab-content">
+
+                    {% if plant.kalendarz_ogrodnika %}
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-sickle"></i> Kalendarz Biodynamiczny</summary>
+                        <div class="subtab-content task-list">
+                            {% for zadanie in plant.kalendarz_ogrodnika.zadania %}
+                            <div class="task-item">
+                                <div class="task-head">
+                                    <strong>{{ zadanie.czynnosc }}</strong>
+                                    <span class="task-month">M-c: {{ zadanie.miesiace|join(', ') }}</span>
+                                </div>
+                                <p class="task-desc">{{ zadanie.opis }}</p>
+                                <div class="task-meta">
+                                    <span><i class="ra ra-moon-phases"></i> {{ zadanie.faza_ksiezyca }}</span>
+                                    <span><i class="ra ra-cloud-ring"></i> {{ zadanie.pogoda }}</span>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </details>
+                    {% endif %}
+
+                    {% if plant.permakultura %}
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-trefoil"></i> Permakultura i Gildie</summary>
+                        <div class="subtab-content">
+                            <p><strong>Rola w systemie:</strong></p>
+                            <ul class="eco-list mb-4">
+                                {% for f in plant.permakultura.funkcje %}
+                                    <li><i class="ra ra-leaf"></i> {{ f }}</li>
+                                {% endfor %}
+                            </ul>
+
+                            <p><strong>Towarzysze (Gildia):</strong></p>
+                            <div class="guild-list">
+                                {% for g in plant.permakultura.gildie %}
+                                    {% set g_name = g.nazwa if g.nazwa else g %}
+                                    {% set g_role = g.rola if g.rola else "Towarzysz wspierający wzrost i rozwój." %}
+                                    <div class="guild-item">
+                                        <a href="/plant/{{ g_name | lower | replace(' ', '_') }}" class="guild-link">
+                                            <i class="ra ra-double-leaf"></i> {{ g_name }}
+                                        </a>
+                                        <p class="guild-role">{{ g_role }}</p>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </details>
+                    {% endif %}
+
+                </div>
+            </details>
+            {% endif %}
+
+            {% if plant.ciekawostki %}
+            <details class="grimmoire-tab">
+                <summary><i class="ra ra-scroll"></i> Wiedza Tajemna</summary>
+                <div class="tab-content">
+                    <ul class="trivia-list">
+                        {% for c in plant.ciekawostki %}
+                            <li><i class="ra ra-emerald"></i> {{ c }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </details>
+            {% endif %}
+
+        </div>
+    </article>
+</div>
+
+<div id="grimmoireLightbox" class="lightbox-overlay" onclick="closeLightbox()">
+    <div class="lightbox-content">
+        <img id="lightboxImg" src="" alt="Powiększenie">
+        <div id="lightboxCaption" class="lightbox-caption-text"></div>
+    </div>
+</div>
 
 <style>
-    .info-card {
-        background: #fff;
-        border: 1px solid #b8860b;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    /* FUNDAMENTY */
+    .grimmoire-wrapper {
+        min-height: 100vh; background-size: cover; background-position: center;
+        background-attachment: fixed; position: relative; padding: 60px 20px;
+        color: #fdfaf0; font-family: 'Georgia', serif;
     }
-    .card-header-custom {
-        background: #fff8e1;
-        color: #b8860b;
-        padding: 10px 15px;
-        margin: 0;
-        border-bottom: 1px solid rgba(0,0,0,0.05);
-        font-family: 'Playfair Display', serif;
+    .grimmoire-overlay {
+        position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(15, 12, 10, 0.85); backdrop-filter: blur(12px); z-index: 1;
     }
+    .grimmoire-container { position: relative; z-index: 2; max-width: 900px; margin: 0 auto; }
 
-    .parts-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 25px;
-    }
-    .part-card {
-        background: #fff;
-        border: 1px solid #d1c7a7;
-        padding: 25px;
-        position: relative;
-        transition: transform 0.2s;
-    }
-    .part-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
-    .part-badge {
-        position: absolute; top: -10px; right: 20px;
-        background: #3e4a3d; color: white;
-        padding: 4px 12px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px;
-    }
+    /* NAGŁÓWEK KARTY */
+    .grimmoire-hero { text-align: center; margin-bottom: 50px; }
+    .hero-title { font-size: 4rem; margin: 0; color: #d1b880; text-shadow: 0 4px 20px rgba(209, 184, 128, 0.3); font-family: 'Playfair Display', serif; }
+    .hero-subtitle { font-size: 1.4rem; color: #a89f91; font-style: italic; margin-top: 5px; }
+    .hero-family { font-size: 1rem; color: #7a6a58; }
+    .hero-divider { width: 100px; height: 3px; background: #8a9a5b; margin: 20px auto; border-radius: 2px; }
+    .hero-desc { font-size: 1.15rem; line-height: 1.8; color: #e4dfd5; max-width: 800px; margin: 0 auto; }
 
-    .chem-tag {
-        background: #f1f8e9; color: #33691e;
-        border: 1px solid #dcedc8;
-        padding: 2px 8px; font-size: 0.8rem; border-radius: 10px;
-    }
+    /* GALERIA ZDJĘĆ */
+    .plant-gallery { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 30px; }
+    .gallery-thumb { width: 120px; height: 120px; border-radius: 8px; border: 2px solid #3e362c; overflow: hidden; position: relative; cursor: pointer; transition: all 0.3s; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+    .gallery-thumb img { width: 100%; height: 100%; object-fit: cover; filter: sepia(0.4) brightness(0.8); transition: all 0.4s; }
+    .gallery-thumb:hover { transform: translateY(-5px) scale(1.05); border-color: #d1b880; z-index: 10; box-shadow: 0 8px 25px rgba(209, 184, 128, 0.3); }
+    .gallery-thumb:hover img { filter: sepia(0) brightness(1.1); }
+    .gallery-caption { position: absolute; bottom: 0; left: 0; width: 100%; background: rgba(18, 15, 12, 0.85); color: #d1b880; text-align: center; font-size: 0.75rem; padding: 5px 0; text-transform: uppercase; font-family: 'Playfair Display', serif; }
 
-    .use-card {
-        background: #fff;
-        padding: 20px;
-        border-left: 4px solid #ddd;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-    }
-    .section-title {
-        border-bottom: 2px solid #3e4a3d;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-        color: #3e4a3d;
-    }
+    /* LIGHTBOX */
+    .lightbox-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.92); z-index: 9999; display: flex; justify-content: center; align-items: center; flex-direction: column; backdrop-filter: blur(8px); opacity: 0; pointer-events: none; transition: opacity 0.3s ease; cursor: zoom-out; }
+    .lightbox-overlay.active { opacity: 1; pointer-events: auto; }
+    .lightbox-content { position: relative; max-width: 90vw; max-height: 90vh; text-align: center; transform: scale(0.95); transition: transform 0.3s ease; }
+    .lightbox-overlay.active .lightbox-content { transform: scale(1); }
+    .lightbox-content img { max-width: 100%; max-height: 80vh; border: 3px solid #d1b880; border-radius: 8px; box-shadow: 0 0 50px rgba(209, 184, 128, 0.2); }
+    .lightbox-caption-text { color: #d1b880; font-size: 1.5rem; font-family: 'Playfair Display', serif; margin-top: 15px; text-transform: capitalize; letter-spacing: 2px; }
+
+    /* SYSTEM GŁÓWNYCH ZAKŁADEK (ACCORDION) */
+    .grimmoire-book { display: flex; flex-direction: column; gap: 15px; margin-bottom: 60px; }
+    .grimmoire-tab { background: rgba(25, 22, 18, 0.6); border: 1px solid #3e362c; border-radius: 8px; overflow: hidden; transition: all 0.3s ease; }
+    .grimmoire-tab[open] { background: rgba(30, 27, 23, 0.95); border-color: #5a4f41; box-shadow: 0 10px 30px rgba(0,0,0,0.6); }
+    .grimmoire-tab > summary { list-style: none; padding: 20px 25px; font-size: 1.4rem; color: #d1b880; cursor: pointer; display: flex; align-items: center; gap: 15px; font-family: 'Playfair Display', serif; transition: background 0.2s; }
+    .grimmoire-tab > summary::-webkit-details-marker { display: none; }
+    .grimmoire-tab:not([open]) > summary:hover { background: rgba(209, 184, 128, 0.05); }
+    .grimmoire-tab[open] > summary { border-bottom: 1px solid #3e362c; color: #fdfaf0; }
+    .tab-content { padding: 25px; color: #dcd7cb; line-height: 1.7; font-size: 1.05rem; animation: slideDown 0.3s ease-out; display: flex; flex-direction: column; gap: 15px; }
+    @keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* NOWOŚĆ: PODZAKŁADKI (SUB-ACCORDION) */
+    .grimmoire-subtab { background: rgba(0, 0, 0, 0.3); border-left: 3px solid #8a9a5b; border-radius: 0 6px 6px 0; overflow: hidden; transition: all 0.3s ease; }
+    .grimmoire-subtab[open] { background: rgba(0, 0, 0, 0.5); border-color: #d1b880; }
+    .grimmoire-subtab > summary { list-style: none; padding: 15px 20px; font-size: 1.15rem; color: #8a9a5b; cursor: pointer; display: flex; align-items: center; gap: 12px; font-family: 'Playfair Display', serif; transition: all 0.2s; }
+    .grimmoire-subtab > summary::-webkit-details-marker { display: none; }
+    .grimmoire-subtab:not([open]) > summary:hover { background: rgba(138, 154, 91, 0.1); color: #d1b880; }
+    .grimmoire-subtab[open] > summary { border-bottom: 1px dashed #3e362c; color: #fdfaf0; }
+    .subtab-content { padding: 20px; animation: slideDown 0.3s ease-out; }
+
+    /* ZAGROŻENIA I OSTRZEŻENIA */
+    .danger-tab[open] { border-color: #9b4b4b; }
+    .danger-tab[open] > summary { color: #e57373; }
+    .danger-subtab { border-left-color: #9b4b4b; }
+    .danger-subtab[open] { border-left-color: #e57373; }
+    .danger-subtab > summary { color: #e57373; }
+    .danger-subtab:not([open]) > summary:hover { background: rgba(155, 75, 75, 0.1); color: #ff8a80; }
+    .danger-block p { margin: 0; color: #ffcdd2; }
+    .warning-box { background: rgba(155, 75, 75, 0.1); padding: 15px; border-radius: 4px; }
+
+    /* WNĘTRZA PODZAKŁADEK */
+    .sub-list { padding-left: 20px; margin-bottom: 0; }
+    .sub-list li { margin-bottom: 8px; }
+    .energy-quote { margin-top: 15px; padding-top: 15px; border-top: 1px dashed #3e362c; font-style: italic; color: #a89f91; }
+
+    /* SUROWCE */
+    .subtab-title-group { display: flex; align-items: center; gap: 10px; width: 100%; }
+    .part-badge { background: #8a9a5b; color: #120f0c; padding: 2px 10px; font-size: 0.75rem; font-weight: bold; border-radius: 4px; text-transform: uppercase; margin-left: auto; font-family: 'Georgia', serif;}
+    .part-desc { font-size: 0.95rem; color: #a89f91; margin-bottom: 15px; margin-top: 0; }
+    .chem-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chem-link { display: inline-flex; align-items: center; gap: 5px; background: rgba(138, 154, 91, 0.1); border: 1px solid #8a9a5b; color: #cddc39; padding: 4px 10px; font-size: 0.85rem; border-radius: 4px; text-decoration: none; transition: all 0.2s; }
+    .chem-link i { font-size: 0.75rem; color: #8a9a5b; }
+    .chem-link:hover { background: #8a9a5b; color: #120f0c; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.3); text-decoration: none; }
+    .chem-link:hover i { color: #120f0c; }
+    .part-warning { color: #e57373; font-size: 0.9rem; margin-top: 15px; padding-top: 10px; border-top: 1px dashed #3e362c; }
+    .part-time { margin-top: 15px; text-align: right; font-size: 0.9rem; color: #8a9a5b; }
+
+    /* KALENDARZ & GILDIE */
+    .task-item { border-bottom: 1px dashed #3e362c; padding-bottom: 15px; margin-bottom: 15px; }
+    .task-item:last-child { border: none; margin-bottom: 0; padding-bottom: 0; }
+    .task-head { display: flex; justify-content: space-between; color: #d1b880; margin-bottom: 5px; }
+    .task-month { font-size: 0.8rem; background: #3e362c; padding: 2px 8px; border-radius: 4px; }
+    .task-desc { font-size: 0.95rem; margin-bottom: 10px; }
+    .task-meta span { display: inline-block; font-size: 0.85rem; color: #a89f91; margin-right: 15px; }
+
+    .eco-list { list-style: none; padding: 0; margin-bottom: 0; }
+    .eco-list li { margin-bottom: 8px; display: flex; gap: 10px; align-items: flex-start; }
+    .eco-list li i { color: #8a9a5b; margin-top: 4px; }
+
+    .guild-list { display: flex; flex-direction: column; gap: 12px; }
+    .guild-item { background: rgba(0,0,0,0.2); border: 1px solid #3e362c; padding: 12px 15px; border-radius: 6px; }
+    .guild-link { color: #d1b880; font-weight: bold; text-decoration: none; font-family: 'Playfair Display', serif; font-size: 1.15rem; transition: color 0.2s; display: inline-flex; align-items: center; gap: 8px; }
+    .guild-link i { font-size: 1rem; color: #8a9a5b; }
+    .guild-link:hover { color: #fdfaf0; text-shadow: 0 0 8px rgba(209, 184, 128, 0.4); text-decoration: none; }
+    .guild-role { color: #a89f91; font-size: 0.95rem; margin: 5px 0 0 0; }
+
+    .trivia-list { list-style: none; padding: 0; margin: 0; }
+    .trivia-list li { margin-bottom: 15px; padding-left: 25px; position: relative; }
+    .trivia-list li i { position: absolute; left: 0; top: 4px; color: #8a9a5b; }
 </style>
+
+<script>
+    function openLightbox(imageUrl, imageCaption) {
+        const overlay = document.getElementById('grimmoireLightbox');
+        const img = document.getElementById('lightboxImg');
+        const caption = document.getElementById('lightboxCaption');
+
+        img.src = imageUrl;
+        caption.innerText = imageCaption;
+        overlay.classList.add('active');
+    }
+
+    function closeLightbox() {
+        document.getElementById('grimmoireLightbox').classList.remove('active');
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") closeLightbox();
+    });
+</script>
 {% endblock %}
