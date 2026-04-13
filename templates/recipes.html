@@ -169,7 +169,6 @@
                        class="form-control retro-input"
                        placeholder="Wpisz składnik (np. mięta) lub dolegliwość (np. trawienie)..."
                        autocomplete="off">
-<!--                <button type="submit" class="btn-green" style="border: 1px solid #3e4a3d; border-left: none;">SZUKAJ</button>-->
             </div>
             <div id="suggestionsList" class="list-group position-absolute w-100" style="z-index: 1000; display: none;"></div>
         </form>
@@ -192,7 +191,7 @@
 
                 <div class="recipe-card w-100">
                     <div style="display: flex; justify-content: space-between; align-items: start;">
-                        {% if recipe.typ == 'medyczne' %}
+                        {% if 'medyczn' in (recipe.typ|default('')) %}
                             <span class="recipe-stamp stamp-med">⚕ Apteka</span>
                         {% else %}
                             <span class="recipe-stamp stamp-food">♨ Kuchnia</span>
@@ -203,14 +202,23 @@
                     <h3 class="recipe-title">{{ recipe.tytul }}</h3>
 
                     <div class="ingredients-preview">
-                        <strong>Składniki:</strong> {{ recipe.skladniki[:3] | join(', ') }}
-                        {% if recipe.skladniki|length > 3 %}...{% endif %}
+                        <strong>Składniki:</strong>
+                        {% if recipe.skladniki is string %}
+                            {{ recipe.skladniki }}
+                        {% else %}
+                            {{ recipe.skladniki[:3] | join(', ') }}
+                            {% if recipe.skladniki|length > 3 %}...{% endif %}
+                        {% endif %}
                     </div>
 
                     <div style="margin-bottom: 15px; font-size: 0.9rem;">
-                        {% for cecha in recipe.wlasciwosci[:3] %}
-                            <span style="color: #2d5a27;">• {{ cecha }}</span>
-                        {% endfor %}
+                        {% if recipe.wlasciwosci is string %}
+                            <span style="color: #2d5a27;">• {{ recipe.wlasciwosci }}</span>
+                        {% elif recipe.wlasciwosci %}
+                            {% for cecha in recipe.wlasciwosci[:3] %}
+                                <span style="color: #2d5a27;">• {{ cecha }}</span>
+                            {% endfor %}
+                        {% endif %}
                     </div>
 
                     {% if recipe.sposob_przygotowania is string %}
@@ -220,109 +228,10 @@
                     {% endif %}
 
                     <button class="btn-details"
-                            data-bs-toggle="modal"
-                            data-bs-target="#modalRecipe{{ loop.index }}">
+                            data-recipe="{{ recipe | tojson | forceescape }}"
+                            onclick="openRecipeModal(JSON.parse(this.getAttribute('data-recipe')))">
                         Otwórz Przepis
                     </button>
-                </div>
-            </div>
-
-            <div class="modal fade" id="modalRecipe{{ loop.index }}" tabindex="-1" aria-hidden="true">
-                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content">
-
-                        <div class="modal-header">
-                            <div>
-                                <h2 style="margin: 0; font-size: 1.8rem; border: none;">{{ recipe.tytul }}</h2>
-                                <p style="margin: 0; color: #666; font-style: italic;">
-                                    Gatunek: <strong>{{ recipe.roslina }}</strong> ({{ recipe.nazwa_lacinska }})
-                                </p>
-                            </div>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-
-                        <div class="modal-body p-4">
-                            {% if recipe.cechy or recipe.wlasciwosci %}
-                            <div style="margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed #d1c7a7;">
-
-                                {% if recipe.cechy %}
-                                    <div style="margin-bottom: 10px;">
-                                        <strong style="color: #3e4a3d;">Cechy sensoryczne:</strong><br>
-                                        {% if recipe.cechy is string %}
-                                            <span class="info-tag">{{ recipe.cechy }}</span>
-                                        {% else %}
-                                            {% for c in recipe.cechy %}
-                                                <span class="info-tag">{{ c }}</span>
-                                            {% endfor %}
-                                        {% endif %}
-                                    </div>
-                                {% endif %}
-
-                                {% if recipe.wlasciwosci %}
-                                    <div>
-                                        <strong style="color: #2d5a27;">Właściwości:</strong><br>
-                                        {% if recipe.wlasciwosci is string %}
-                                            <span class="info-tag" style="background: #e8f5e9; border-color: #c8e6c9;">{{ recipe.wlasciwosci }}</span>
-                                        {% else %}
-                                            {% for w in recipe.wlasciwosci %}
-                                                <span class="info-tag" style="background: #e8f5e9; border-color: #c8e6c9;">{{ w }}</span>
-                                            {% endfor %}
-                                        {% endif %}
-                                    </div>
-                                {% endif %}
-                            </div>
-                            {% endif %}
-
-                            <div class="row">
-                                <div class="col-lg-5" style="border-right: 1px dashed #d1c7a7;">
-                                    <h4 style="color: #b8860b; margin-top: 0;">🛒 Składniki</h4>
-                                    <ul style="list-style-type: square; padding-left: 20px;">
-                                        {% for skladnik in recipe.skladniki %}
-                                            <li style="margin-bottom: 5px;">{{ skladnik }}</li>
-                                        {% endfor %}
-                                    </ul>
-                                </div>
-
-                                <div class="col-lg-7">
-                                    <h4 style="color: #3e4a3d; margin-top: 0;">🔥 Przygotowanie</h4>
-                                    <div style="font-size: 1.05rem; line-height: 1.7;">
-                                        {% if recipe.sposob_przygotowania is string %}
-                                            <p style="white-space: pre-line;">{{ recipe.sposob_przygotowania }}</p>
-                                        {% else %}
-                                            <ol style="padding-left: 20px;">
-                                                {% for krok in recipe.sposob_przygotowania %}
-                                                    <li style="margin-bottom: 10px;">{{ krok }}</li>
-                                                {% endfor %}
-                                            </ol>
-                                        {% endif %}
-                                    </div>
-
-                                    {% if recipe.dawkowanie %}
-                                        <div style="background: #e3f2fd; border: 1px solid #90caf9; padding: 15px; margin-top: 20px; border-radius: 4px;">
-                                            <strong>💊 Dawkowanie:</strong> {{ recipe.dawkowanie }}
-                                        </div>
-                                    {% endif %}
-
-                                    {% if recipe.uwagi %}
-                                        <div style="background: #ffebee; border: 1px solid #ef9a9a; padding: 15px; margin-top: 15px; color: #c62828; border-radius: 4px;">
-                                            <strong>⚠️ Uwagi:</strong> {{ recipe.uwagi }}
-                                        </div>
-                                    {% endif %}
-                                </div>
-                            </div>
-                        </div>
-
-                        {% if recipe.zrodla %}
-                        <div class="modal-footer" style="justify-content: flex-start;">
-                            <small style="color: #888;">
-                                <strong>Źródła:</strong>
-                                {% for zrodlo in recipe.zrodla %}
-                                    {{ zrodlo }}{{ ", " if not loop.last else "" }}
-                                {% endfor %}
-                            </small>
-                        </div>
-                        {% endif %}
-                    </div>
                 </div>
             </div>
             {% endfor %}
@@ -330,9 +239,85 @@
     </div>
 </div>
 
-<script>
-    // --- LOKALNA WYSZUKIWARKA I AUTOUZUPEŁNIANIE ---
+<div class="modal fade" id="dynamicRecipeModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h2 id="modalRecipeTitle" style="margin: 0; font-size: 1.8rem; border: none; color: #3e4a3d;">Tytuł Przepisu</h2>
+                    <p style="margin: 0; color: #666; font-style: italic;">Gatunek: <strong id="modalRecipePlantName">Roślina</strong></p>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <div id="modalRecipeTags" style="margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed #d1c7a7; display:none;"></div>
+                <div class="row">
+                    <div class="col-lg-5" style="border-right: 1px dashed #d1c7a7;">
+                        <h4 style="color: #b8860b; margin-top: 0;">🛒 Składniki</h4>
+                        <ul id="modalRecipeIngredients" style="list-style-type: square; padding-left: 20px;"></ul>
+                    </div>
+                    <div class="col-lg-7">
+                        <h4 style="color: #3e4a3d; margin-top: 0;">🔥 Przygotowanie</h4>
+                        <div id="modalRecipePreparation" style="font-size: 1.05rem; line-height: 1.7;"></div>
 
+                        <div id="modalRecipeDosage" style="display:none; background: #e3f2fd; border: 1px solid #90caf9; padding: 15px; margin-top: 20px; border-radius: 4px;"></div>
+
+                        <div id="modalRecipeNotes" style="display:none; background: #ffebee; border: 1px solid #ef9a9a; padding: 15px; margin-top: 15px; color: #c62828; border-radius: 4px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // --- FUNKCJA WYPEŁNIAJĄCA I OTWIERAJĄCA MODAL ---
+    function openRecipeModal(recipe) {
+        try {
+            document.getElementById('modalRecipeTitle').innerText = recipe.tytul || "Przepis";
+            document.getElementById('modalRecipePlantName').innerText = recipe.roslina || "Zioło uniwersalne";
+
+            const ing = document.getElementById('modalRecipeIngredients');
+            ing.innerHTML = Array.isArray(recipe.skladniki) ? recipe.skladniki.map(s => `<li>${s}</li>`).join('') : `<li>${recipe.skladniki || 'Brak danych'}</li>`;
+
+            const prep = document.getElementById('modalRecipePreparation');
+            prep.innerHTML = Array.isArray(recipe.sposob_przygotowania) ? `<ol style="padding-left: 20px;">${recipe.sposob_przygotowania.map(k => `<li style="margin-bottom:10px;">${k}</li>`).join('')}</ol>` : `<p style="white-space: pre-line;">${recipe.sposob_przygotowania || 'Brak instrukcji'}</p>`;
+
+            // Cechy i właściwości
+            const tags = document.getElementById('modalRecipeTags');
+            let tagContent = "";
+            if(recipe.zastosowanie) tagContent += `<strong style="color:#9b4b4b">Zastosowanie:</strong><br>${(Array.isArray(recipe.zastosowanie)?recipe.zastosowanie:[recipe.zastosowanie]).map(t => `<span class="info-tag" style="background:#ffebee; display:inline-block; padding:2px 8px; margin:2px; border:1px solid #ccc; border-radius:4px; font-size: 0.85rem;">${t}</span>`).join('')}<br>`;
+            if(recipe.cechy || recipe.wlasciwosci) {
+                let wlasciwosciList = [].concat(recipe.cechy || [], recipe.wlasciwosci || []);
+                tagContent += `<strong style="color:#2d5a27">Właściwości / Cechy:</strong><br>${wlasciwosciList.map(t => `<span class="info-tag" style="background:#e8f5e9; display:inline-block; padding:2px 8px; margin:2px; border:1px solid #ccc; border-radius:4px; font-size: 0.85rem;">${t}</span>`).join('')}`;
+            }
+            tags.innerHTML = tagContent;
+            tags.style.display = tagContent ? 'block' : 'none';
+
+            // Dawkowanie
+            const dosage = document.getElementById('modalRecipeDosage');
+            dosage.innerHTML = recipe.dawkowanie ? `<strong>💊 Dawkowanie:</strong> ${recipe.dawkowanie}` : '';
+            dosage.style.display = recipe.dawkowanie ? 'block' : 'none';
+
+            // Uwagi i Źródła
+            const notes = document.getElementById('modalRecipeNotes');
+            let notesContent = "";
+            if (recipe.uwagi) notesContent += `<strong>⚠️ Uwagi:</strong> ${recipe.uwagi}<br>`;
+
+            let zrodlaDanych = recipe.zrodla || recipe.zrodlo;
+            if (zrodlaDanych) notesContent += `<strong style="margin-top: 5px; display:inline-block;">📚 Źródła:</strong> ${Array.isArray(zrodlaDanych) ? zrodlaDanych.join(', ') : zrodlaDanych}`;
+
+            notes.innerHTML = notesContent;
+            notes.style.display = notesContent ? 'block' : 'none';
+
+            // Otwieramy uniwersalny Modal
+            bootstrap.Modal.getOrCreateInstance(document.getElementById('dynamicRecipeModal')).show();
+        } catch (e) {
+            console.error("Błąd otwierania modala:", e);
+        }
+    }
+
+    // --- LOKALNA WYSZUKIWARKA I AUTOUZUPEŁNIANIE ---
     const searchForm = document.getElementById('recipeSearchForm');
     const searchInput = document.getElementById('recipeSearch');
     const suggestionsList = document.getElementById('suggestionsList');

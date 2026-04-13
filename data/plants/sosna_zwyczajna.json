@@ -4,7 +4,17 @@
   "nazwa_lat": "Pinus sylvestris",
   "rodzina": "Sosnowate (Pinaceae)",
   "opis": "Długowieczne, zimozielone drzewo iglaste o luźnej koronie, osiągające do 35-40 m wysokości. Jest gatunkiem pionierskim o ogromnych zdolnościach adaptacyjnych, potrafiącym rosnąć na skrajnie ubogich, piaszczystych glebach. Charakterystyczną cechą sosny jest jej kora – u dołu pnia gruba i głęboko spękana (szarobrązowa), natomiast w górnej części cienka, łuszcząca się płatami i przybierająca intensywny pomarańczowo-rdzawy kolor. Jest to roślina wybitnie lecznicza, której olejki eteryczne sterylizują otoczenie.",
-
+  "tagi": [
+    "drzewo",
+    "oddechowe",
+    "przeziebienie",
+    "magia"
+  ],
+  "url": {
+    "Pęd z pąkami": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Pinus_sylvestris_sto%C5%BCki_wzrostu_611.jpg/500px-Pinus_sylvestris_sto%C5%BCki_wzrostu_611.jpg",
+    "Kora": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/PinusSylvestrisBole.jpg/500px-PinusSylvestrisBole.jpg",
+    "Pokrój": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pinus_sylvestris_%C5%81azy_2013-07_01.jpg/500px-Pinus_sylvestris_%C5%81azy_2013-07_01.jpg"
+  },
   "profil_energetyczny": {
     "smak": "Ostry, gorzki, żywiczny",
     "termika": "Gorąca",
@@ -12,7 +22,6 @@
     "zywiol": "Powietrze i Ogień",
     "opis": "Sosna jest potężnym 'poruszycielem'. Jej gorąca i sucha natura rozpuszcza zastoinowy śluz w płucach (wilgotne zimno) i pobudza krążenie energii Qi. Działa wzmacniająco na osoby osłabione, oziębione i 'zamulone' toksynami."
   },
-
   "wymagania": {
     "stanowisko": "Pełne słońce. Jest skrajnie światłożądna – w cieniu dolne gałęzie szybko obumierają (zjawisko oczyszczania się pnia).",
     "gleba": "Skrajnie tolerancyjna; najlepiej rośnie na glebach lekkich, piaszczystych i przepuszczalnych, ale poradzi sobie nawet na torfowiskach.",
@@ -20,7 +29,6 @@
     "mrozoodpornosc": "Strefa 2 (Całkowicie odporna na mrozy, wytrzymuje do -40°C).",
     "woda": "Bardzo odporna na suszę dzięki głębokiemu, palowemu systemowi korzeniowemu; nie toleruje jedynie trwale stojącej wody."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Igły zebrane w pęczkach po dwie, o długości 4-7 cm, sztywne, często lekko skręcone, o niebieskawo-zielonym odcieniu.",
@@ -39,7 +47,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "paki_i_pedy": {
       "nazwa_surowca": "Turiones Pini / Pinnulae Pini",
@@ -59,7 +66,12 @@
     "igły": {
       "nazwa_surowca": "Acus Pini",
       "opis_botaniczny": "Zimozielone igliwie, najlepiej zbierane zimą (wtedy mają najwięcej witaminy C).",
-      "skladniki_aktywne": ["Olejek eteryczny", "Witamina C", "Karoten", "Flawonoidy"],
+      "skladniki_aktywne": [
+        "Olejek eteryczny",
+        "Witamina C",
+        "Karoten",
+        "Flawonoidy"
+      ],
       "wlasciwości": "Witaminizujące, odświeżające, antyseptyczne. Wykorzystywane głównie do kąpieli leczniczych i inhalacji.",
       "czas_zbioru": "Cały rok (najlepiej zima)."
     },
@@ -77,23 +89,19 @@
       "ostrzezenia": "Silny alergen dla osób uczulonych na pyłki traw i drzew iglastych."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Nieżyty górnych dróg oddechowych, zapalenie oskrzeli, kaszel (suchy i mokry), osłabienie wiosenne, reumatyzm i nerwobóle (zewnętrznie w formie kąpieli i maści rozgrzewających).",
     "kulinarne": "Syrop z pędów sosny (klasyk), miód sosnowy, nalewka sosnowa (sosnówka). Pyłek jako dodatek do koktajli. Igły do aromatyzowania soli lub cukru.",
     "ogrodowe": "Tworzenie barier wiatrowych, rekultywacja nieużytków. Sosny wydzielają fitoncydy, które zabijają bakterie i grzyby w ogrodzie.",
     "rzemieslnicze": "Drewno sosnowe to główny materiał konstrukcyjny w budownictwie i stolarstwie. Żywica służy do produkcji kalafonii i terpentyny. Z korzeni sosny wyplatano dawniej niezwykle trwałe kosze."
   },
-
   "interakcje": "Olejek sosnowy stosowany zewnętrznie może u niektórych osób powodować podrażnienia skóry lub skurcz oskrzeli (przy astmie). Nie stosować u małych dzieci bezpośrednio pod nos.",
-
   "ciekawostki": [
     "Bursztyn bałtycki to skamieniała żywica wymarłych drzew iglastych, głównie blisko spokrewnionych z dzisiejszą sosną.",
     "W igłach sosny znajduje się od 5 do 7 razy więcej witaminy C niż w cytrynach (odkrycie to uratowało wielu żeglarzy przed szkorbutem).",
     "W Skandynawii zmieloną korę sosny (biel) dodawano do mąki podczas głodu, by zwiększyć objętość chleba i dostarczyć minerałów.",
     "Sosna 'płacze' żywicą, by zaleczyć rany na swojej korze – żywica działa jak antybiotyk i plaster."
   ],
-
   "permakultura": {
     "funkcje": [
       "Pionier na jałowych piaskach.",
@@ -102,17 +110,31 @@
       "Producent fitoncydów (oczyszczanie powietrza)."
     ],
     "gildie": [
-      { "nazwa": "Brzoza brodawkowata", "rola": "Tworzą razem stabilne lasy mieszane na piaskach." },
-      { "nazwa": "Borówka czernica", "rola": "Naturalne runo boru sosnowego." },
-      { "nazwa": "Wrzos zwyczajny", "rola": "Współtworzy ekosystemy wrzosowisk pod sosnami." }
+      {
+        "nazwa": "Brzoza brodawkowata",
+        "rola": "Tworzą razem stabilne lasy mieszane na piaskach."
+      },
+      {
+        "nazwa": "Borówka czernica",
+        "rola": "Naturalne runo boru sosnowego."
+      },
+      {
+        "nazwa": "Wrzos zwyczajny",
+        "rola": "Współtworzy ekosystemy wrzosowisk pod sosnami."
+      },
+      {
+        "nazwa": "Grzyby jadalne",
+        "rola": "Tworzy bogate mikoryzy z maślakami i rydzami."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór młodych pędów",
-        "miesiace": [5],
+        "miesiace": [
+          5
+        ],
         "opis": "Zbiór pędów bocznych (nie wierzchołkowych!) o długości do 5 cm.",
         "faza_ksiezyca": "Księżyc przybywający (faza liścia/pędu)",
         "pora_dnia": "Przedpołudnie",
@@ -121,22 +143,50 @@
       },
       {
         "czynnosc": "Zbiór pyłku sosnowego",
-        "miesiace": [5],
+        "miesiace": [
+          5
+        ],
         "opis": "Zbieranie całych męskich kwiatostanów, gdy zaczynają żółknąć, ale jeszcze nie pyliły.",
         "faza_ksiezyca": "Pełnia",
         "pora_dnia": "Południe",
         "pogoda": "Bardzo sucho i bezwietrznie",
         "wplyw_ksiezyca": "Księżyc w pełni maksymalizuje potencjał androgenny pyłku."
+      },
+      {
+        "czynnosc": "Zbiór młodych szyszek",
+        "miesiace": [
+          6
+        ],
+        "opis": "Do przetworów zielarskich wybieramy małe, zielone, miękkie szyszki (powinny dać się przekroić nożem).",
+        "faza_ksiezyca": "Pełnia",
+        "pora_dnia": "Środek dnia",
+        "wplyw_ksiezyca": "Zamyka maksymalną porcję energii słonecznej w zawiązkach nasion."
+      },
+      {
+        "czynnosc": "Zbiór żywicy i igieł",
+        "miesiace": [
+          12,
+          1,
+          2
+        ],
+        "opis": "Igliwie pozyskiwane zimą ma najwięcej witaminy C. Żywicę zdrapujemy z naturalnych zranień kory.",
+        "faza_ksiezyca": "Księżyc ubywający",
+        "pora_dnia": "Mroźne popołudnie",
+        "wplyw_ksiezyca": "Zimą drzewo 'odpoczywa' u korzeni, żywica twardnieje i jest łatwa do zebrania."
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Syrop z pędów sosny (Lek na kaszel)",
       "typ": "medyczne",
       "metoda": "zasypywanie cukrem",
-      "tagi": ["kaszel", "przeziębienie", "odporność", "drogi oddechowe"],
+      "tagi": [
+        "kaszel",
+        "przeziębienie",
+        "odporność",
+        "drogi oddechowe"
+      ],
       "skladniki": [
         "Młode pędy sosny: ok. 1 kg",
         "Cukier brązowy lub biały: ok. 1 kg",
@@ -154,14 +204,25 @@
       "uwagi": "Wspaniale smakuje, dzieci go uwielbiają. Pozostałe pędy można zalać alkoholem na nalewkę.",
       "roslina": "Sosna zwyczajna",
       "slug": "sosna_zwyczajna",
-      "cechy": ["jasnożółty kolor", "leśny zapach"],
-      "wlasciwosci": ["wykrztuśna", "antyseptyczna"]
+      "cechy": [
+        "jasnożółty kolor",
+        "leśny zapach"
+      ],
+      "wlasciwosci": [
+        "wykrztuśna",
+        "antyseptyczna"
+      ]
     },
     {
       "tytul": "Sosnowa Kąpiel na Reumatyzm",
       "typ": "medyczne",
       "metoda": "odwar do kąpieli",
-      "tagi": ["stawy", "reumatyzm", "stres", "skóra"],
+      "tagi": [
+        "stawy",
+        "reumatyzm",
+        "stres",
+        "skóra"
+      ],
       "skladniki": [
         "Igły sosnowe (świeże lub suszone): 3 garście",
         "Woda: 3 litry"
@@ -177,13 +238,16 @@
       "slug": "sosna_zwyczajna"
     }
   ],
-
   "przepisy_kulinarne": [
     {
       "tytul": "Sól Sosnowa do ryb i mięs",
       "typ": "kulinarne",
       "metoda": "ucieranie",
-      "tagi": ["przyprawa", "las", "dzika kuchnia"],
+      "tagi": [
+        "przyprawa",
+        "las",
+        "dzika kuchnia"
+      ],
       "skladniki": [
         "Świeże igły sosnowe (najmłodsze): 1 garść",
         "Gruba sól morska: 100g"

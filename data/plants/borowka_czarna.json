@@ -4,7 +4,21 @@
   "nazwa_lat": "Vaccinium myrtillus",
   "rodzina": "Wrzosowate (Ericaceae)",
   "opis": "Niska, wieloletnia krzewinka o kanciastych, zielonych pędach, tworząca gęste łany w lasach iglastych i mieszanych. Jest rośliną wybitnie kwasolubną, żyjącą w ścisłej symbiozie z grzybnią (mikoryza). Jej owoce to czarne, lśniące jagody z niebieskawym nalotem, których sok trwale barwi skórę i tkaniny. Borówka jest biologicznym skarbem północy, przystosowanym do trudnych warunków i ubogich gleb bielicowych.",
-
+  "tagi": [
+    "jadalna_surowa",
+    "trawienie",
+    "moczowe",
+    "odpornosc",
+    "barwnik",
+    "pospolita",
+    "magia"
+  ],
+  "url": {
+    "Owoc": "https://upload.wikimedia.org/wikipedia/commons/3/36/Vaccinium_myrtillus_uoga%2C_2006-07-25.JPG",
+    "Kwiat": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Vaccinium_myrtillus_kz12.jpg/960px-Vaccinium_myrtillus_kz12.jpg",
+    "Kwitnący pęd": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Vaccinum_myrtillus_260405.jpg/500px-Vaccinum_myrtillus_260405.jpg",
+    "Kłącze z korzeniami": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Vacc_myrt_kz4.jpg/500px-Vacc_myrt_kz4.jpg"
+  },
   "profil_energetyczny": {
     "smak": "Słodki, kwaśny, cierpki",
     "termika": "Chłodna",
@@ -12,7 +26,6 @@
     "zywiol": "Ziemia i Woda",
     "opis": "Borówka to 'stabilizator granic'. Jej energia wzmacnia naczynia włosowate (granice układu krążenia) i tonizuje błony śluzowe jelit. Chłodzi stany zapalne wywołane nadmiarem cukru we krwi i działa kojąco na zmęczone, 'rozpalone' oczy."
   },
-
   "wymagania": {
     "stanowisko": "Półcień do cienia. Choć owocuje obficie w miejscach prześwietlonych, potrzebuje wilgotnego, leśnego mikroklimatu.",
     "gleba": "Lekka, piaszczysta, próchniczna, wybitnie uboga w wapń.",
@@ -20,7 +33,6 @@
     "mrozoodpornosc": "Strefa 2 (Ekstremalnie odporna na mrozy, ale potrzebuje okrywy śnieżnej dla ochrony pędów).",
     "woda": "Wymaga stałej wilgotności podłoża; susza w czasie kwitnienia drastycznie ogranicza zbiory."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Pędy zielone, ostro kanciaste, nagie (nieowłosione).",
@@ -39,7 +51,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "owoce": {
       "nazwa_surowca": "Fructus Myrtilli",
@@ -69,16 +80,13 @@
       "ostrzezenia": "Długotrwałe stosowanie wysokich dawek liści może powodować anemię (ze względu na garbniki)."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Biegunki (suszone owoce), zaburzenia widzenia o zmierzchu, kruchość naczyń krwionośnych, hemoroidy, wczesne stadia cukrzycy (liście), stany zapalne jamy ustnej.",
     "kulinarne": "Jagodzianki (klasyk), pierogi, soki, dżemy, zupy jagodowe, nalewki. Jagody to idealny dodatek do deserów o niskim indeksie glikemicznym.",
     "ogrodowe": "Roślina okrywowa w ogrodach wrzosowiskowych i leśnych. Wymaga jednak bardzo specyficznej grzybni mikoryzowej, by przetrwać poza lasem.",
     "rzemieslnicze": "Sok z borówek był historycznie używany jako atrament oraz trwały barwnik do tkanin (odcienie od fioletu po ciemną zieleń)."
   },
-
   "interakcje": "Liście mogą nasilać działanie leków przeciwcukrzycowych (ryzyko hipoglikemii). Owoce mogą lekko hamować agregację płytek krwi (rozrzedzać krew).",
-
   "ciekawostki": [
     "Podczas II wojny światowej brytyjscy piloci RAF jedli dżem jagodowy przed nocnymi misjami, co rzekomo drastycznie poprawiało ich zdolność widzenia w ciemności.",
     "Jagoda czarna to jedna z niewielu roślin, która potrafi akumulować mangan w ilościach bezpiecznych dla ludzi, a leczniczych dla metabolizmu.",
@@ -86,7 +94,6 @@
     "W medycynie ludowej suszone jagody nazywano 'czarnym złotem' i podawano dzieciom jako jedyny pewny lek na 'choroby brzucha'.",
     "Jedna krzewinka borówki może żyć nawet 30 lat, choć jej nadziemne pędy wymieniają się częściej."
   ],
-
   "permakultura": {
     "funkcje": [
       "Kluczowy element runa w systemach leśnych (Food Forests).",
@@ -95,17 +102,27 @@
       "Producent próchnicy kwasolubnej."
     ],
     "gildie": [
-      { "nazwa": "Sosna zwyczajna", "rola": "Borówka rośnie najlepiej w cieniu sosen, korzystając z ich ściółki." },
-      { "nazwa": "Wrzos zwyczajny", "rola": "Naturalni sąsiedzi z tej samej rodziny roślinnej." },
-      { "nazwa": "Grzyby jadalne (np. Koźlarz)", "rola": "Symbioza mikoryzowa." }
+      {
+        "nazwa": "Sosna zwyczajna",
+        "rola": "Borówka rośnie najlepiej w cieniu sosen, korzystając z ich ściółki."
+      },
+      {
+        "nazwa": "Wrzos zwyczajny",
+        "rola": "Naturalni sąsiedzi z tej samej rodziny roślinnej."
+      },
+      {
+        "nazwa": "Grzyby jadalne",
+        "rola": "Symbioza mikoryzowa."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór owoców",
-        "miesiace": [7],
+        "miesiace": [
+          7
+        ],
         "opis": "Zbiór ręczny. Używanie 'grzebieni' niszczy krzewinki i jest w Polsce zakazane w lasach państwowych.",
         "faza_ksiezyca": "Księżyc przybywający",
         "pora_dnia": "Przedpołudnie (po rosie)",
@@ -113,13 +130,17 @@
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Odwar z suszonych jagód (Stop Biegunce)",
       "typ": "medyczne",
       "metoda": "odwar",
-      "tagi": ["biegunka", "trawienie", "jelita", "dzieci"],
+      "tagi": [
+        "biegunka",
+        "trawienie",
+        "jelita",
+        "dzieci"
+      ],
       "skladniki": [
         "Suszone owoce borówki czarnej: 2 łyżki",
         "Woda: 250 ml"
@@ -132,14 +153,24 @@
       "uwagi": "W przeciwieństwie do świeżych jagód, suszone działają silnie zapierająco.",
       "roslina": "Borówka czarna",
       "slug": "borowka_czarna",
-      "cechy": ["ciemnofioletowy kolor", "cierpki smak"],
-      "wlasciwosci": ["ściągająca", "antyseptyczna"]
+      "cechy": [
+        "ciemnofioletowy kolor",
+        "cierpki smak"
+      ],
+      "wlasciwosci": [
+        "ściągająca",
+        "antyseptyczna"
+      ]
     },
     {
       "tytul": "Napar z liści dla diabetyków",
       "typ": "medyczne",
       "metoda": "napar",
-      "tagi": ["cukrzyca", "cukier", "metabolizm"],
+      "tagi": [
+        "cukrzyca",
+        "cukier",
+        "metabolizm"
+      ],
       "skladniki": [
         "Suszone liście borówki: 1 łyżka",
         "Woda: 250 ml"
@@ -153,13 +184,16 @@
       "slug": "borowka_czarna"
     }
   ],
-
   "przepisy_kulinarne": [
     {
       "tytul": "Leśne Smoothie 'Bystre Oko'",
       "typ": "kulinarne",
       "metoda": "blendowanie",
-      "tagi": ["wzrok", "antyoksydanty", "energia"],
+      "tagi": [
+        "wzrok",
+        "antyoksydanty",
+        "energia"
+      ],
       "skladniki": [
         "Świeże jagody: 1 szklanka",
         "Banan: 1 sztuka",

@@ -4,7 +4,13 @@
   "nazwa_lat": "Urtica dioica",
   "rodzina": "Pokrzywowate (Urticaceae)",
   "opis": "Wieloletnia roślina zielna, powszechnie uważana za chwast, choć w rzeczywistości jest jedną z najcenniejszych roślin leczniczych i użytkowych półkuli północnej. Cała roślina pokryta jest parzącymi włoskami, które zawierają kwas mrówkowy i histaminę. Pokrzywa jest gatunkiem synantropijnym, towarzyszącym człowiekowi od tysiącleci – tam, gdzie rośnie pokrzywa, ziemia jest żyzna i bogata w azot. Jest symbolem siły, oczyszczenia i żywotności.",
-
+  "tagi": [
+    "zielna",
+    "odpornosc",
+    "skora_wlosy",
+    "jadalne_obrobka",
+    "pospolita"
+  ],
   "profil_energetyczny": {
     "smak": "Słony, lekko gorzki, trawiasty",
     "termika": "Chłodna",
@@ -12,7 +18,6 @@
     "zywiol": "Woda i Ziemia",
     "opis": "Pokrzywa buduje krew (odżywia Yin) i porusza płyny, usuwając zastoje wilgoci. W energetyce tradycyjnej uważana za zioło, które 'karmi kości' (przez wysoką zawartość minerałów) i tonizuje nerki. Pomaga przywrócić witalność po długiej chorobie lub zimie."
   },
-
   "wymagania": {
     "stanowisko": "Słońce do półcienia. W półcieniu liście są delikatniejsze i bogatsze w chlorofil.",
     "gleba": "Bardzo żyzna, próchniczna, wilgotna, o bardzo wysokiej zawartości azotu i fosforu.",
@@ -20,7 +25,6 @@
     "mrozoodpornosc": "Strefa 3 (Całkowicie mrozoodporna, zimuje w postaci kłączy).",
     "woda": "Lubi stałą wilgotność; na suchych stanowiskach drewnieje szybciej i produkuje mniej biomasy."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Łodyga czworokątna, wzniesiona, nierozgałęziona.",
@@ -39,7 +43,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "liscie": {
       "nazwa_surowca": "Folium Urticae",
@@ -82,23 +85,19 @@
       "ostrzezenia": "Zbyt duża ilość może powodować nadpobudliwość (działanie silnie stymulujące)."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Anemia (niedokrwistość), artretyzm, dna moczanowa, infekcje dróg moczowych, cukrzyca (obniża poziom cukru), alergie (naturalny lek przeciwhistaminowy). Zewnętrznie: płukanki do włosów, leczenie łojotoku.",
     "kulinarne": "Zupa z młodej pokrzywy, pesto pokrzywowe, sok wyciskany na zimno, dodatek do twarogu. Nasiona jako 'polskie superfood' do koktajli.",
     "ogrodowe": "Gnojówka z pokrzywy (najlepszy naturalny nawóz azotowy i środek ochrony roślin). Przyciąga pożyteczne biedronki.",
     "rzemieslnicze": "Z łodyg pokrzywy pozyskuje się włókno trwalsze od lnu i cieńsze od bawełny (tkanina nettle). Wyciąg z liści służy do barwienia tkanin na piękny, głęboki zielony kolor."
   },
-
   "interakcje": "Nasila działanie leków przeciwcukrzycowych (może za mocno obniżyć cukier). Może osłabiać działanie leków przeciwzakrzepowych (duża ilość witaminy K). Może potęgować działanie diuretyków.",
-
   "ciekawostki": [
     "Włókno z pokrzywy było używane do produkcji mundurów dla armii niemieckiej podczas I wojny światowej, gdy zabrakło bawełny.",
     "Biczowanie się świeżą pokrzywą (urtykacja) to starożytna metoda leczenia reumatyzmu – parzenie wywołuje silne przekrwienie i łagodzi ból stawów.",
     "Pokrzywa jest jedynym pokarmem dla gąsienic motyla Rusałka Admirał i Rusałka Pokrzywnik.",
     "W medycynie tybetańskiej uważa się, że Milarepa, wielki jogin, żywił się wyłącznie pokrzywami, co nadało jego skórze zielonkawy odcień."
   ],
-
   "permakultura": {
     "funkcje": [
       "Dynamiczny akumulator (żelazo, magnez, wapń, potas).",
@@ -107,40 +106,76 @@
       "Ściółka przyspieszająca kompostowanie."
     ],
     "gildie": [
-      { "nazwa": "Bez czarny", "rola": "Obie rośliny kochają azot; bez daje pokrzywie niezbędny cień." },
-      { "nazwa": "Żywokost lekarski", "rola": "Tworzą duet 'nawozowy' (pokrzywa daje azot, żywokost potas)." },
-      { "nazwa": "Mięta", "rola": "Pokrzywa zwiększa zawartość olejków eterycznych w sąsiadującej mięcie." }
-    ]
-  },
-
-  "kalendarz_ogrodnika": {
-    "zadania": [
       {
-        "czynnosc": "Zbiór młodych pędów (majowych)",
-        "miesiace": [4, 5],
-        "opis": "Ścinanie szczytowych 4-6 liści. Roślina po ścięciu szybko odrasta.",
-        "faza_ksiezyca": "Księżyc przybywający (faza liścia)",
-        "pora_dnia": "Przedpołudnie",
-        "pogoda": "Słoneczna",
-        "wplyw_ksiezyca": "Wzmacnia soczystość i bogactwo chlorofilu w liściach."
+        "nazwa": "Bez czarny",
+        "rola": "Obie rośliny kochają azot; bez daje pokrzywie niezbędny cień."
       },
       {
-        "czynnosc": "Przygotowanie gnojówki",
-        "miesiace": [5, 6, 7],
-        "opis": "1 kg świeżej pokrzywy zalać 10 l wody, odstawić na 2 tygodnie do fermentacji.",
-        "faza_ksiezyca": "Pełnia",
-        "pora_dnia": "Wieczór",
-        "wplyw_ksiezyca": "Przyspiesza procesy bakteryjnej fermentacji."
+        "nazwa": "Żywokost lekarski",
+        "rola": "Tworzą duet 'nawozowy' (pokrzywa daje azot, żywokost potas)."
+      },
+      {
+        "nazwa": "Mięta",
+        "rola": "Pokrzywa znacząco podnosi zawartość olejków eterycznych w roślinach rosnących obok."
+      },
+      {
+        "nazwa": "Malina",
+        "rola": "Towarzystwo pokrzywy poprawia smak malin i chroni je przed częścią szkodników."
+      },
+      {
+        "nazwa": "Pomidory",
+        "rola": "Gnojówka z pokrzywy to najstarszy i najlepszy nawóz azotowy pod pomidory."
       }
     ]
   },
-
+  "kalendarz_ogrodnika": {
+    "zadania": [
+      {
+        "czynnosc": "Wiosenny zbiór pędów",
+        "miesiace": [
+          4,
+          5
+        ],
+        "opis": "Zbiór górnych części (do 20 cm) młodych, niekwitnących roślin. Obowiązkowo w rękawicach!",
+        "faza_ksiezyca": "Księżyc przybywający",
+        "pora_dnia": "Po południu",
+        "wplyw_ksiezyca": "Maksymalne stężenie żelaza i witamin z grupy B."
+      },
+      {
+        "czynnosc": "Nastawianie gnojówki",
+        "miesiace": [
+          5,
+          6
+        ],
+        "opis": "Zalewamy kilogram pokrzyw 10 litrami deszczówki. Mieszamy codziennie przez ok. 2 tygodnie.",
+        "faza_ksiezyca": "Dowolna",
+        "pora_dnia": "Dowolna",
+        "wplyw_ksiezyca": "Brak istotnego wpływu na proces fermentacji."
+      },
+      {
+        "czynnosc": "Zbiór korzeni i nasion",
+        "miesiace": [
+          9,
+          10
+        ],
+        "opis": "Wykopywanie kłączy przy użyciu wideł, zbiór nasion na obniżenie cukru i dla ptaków.",
+        "faza_ksiezyca": "Księżyc ubywający",
+        "pora_dnia": "Wieczór",
+        "wplyw_ksiezyca": "Soki opadają w dół, wzbogacając system korzeniowy."
+      }
+    ]
+  },
   "przepisy_medyczne": [
     {
       "tytul": "Kuracja Krwiotwórcza (Na Anemię)",
       "typ": "medyczne",
       "metoda": "sok świeży",
-      "tagi": ["anemia", "krew", "osłabienie", "żelazo"],
+      "tagi": [
+        "anemia",
+        "krew",
+        "osłabienie",
+        "żelazo"
+      ],
       "skladniki": [
         "Świeże ziele pokrzywy majowej: 2 garście",
         "Woda lub sok z jabłek: 100 ml",
@@ -155,14 +190,24 @@
       "uwagi": "Najskuteczniejsza metoda podniesienia poziomu hemoglobiny.",
       "roslina": "Pokrzywa zwyczajna",
       "slug": "pokrzywa_zwyczajna",
-      "cechy": ["ciemnozielony kolor", "trawiasty smak"],
-      "wlasciwosci": ["krwiotwórcza", "wzmacniająca"]
+      "cechy": [
+        "ciemnozielony kolor",
+        "trawiasty smak"
+      ],
+      "wlasciwosci": [
+        "krwiotwórcza",
+        "wzmacniająca"
+      ]
     },
     {
       "tytul": "Odwar z korzenia na porost włosów",
       "typ": "medyczne",
       "metoda": "odwar / wcierka",
-      "tagi": ["włosy", "łysienie", "skóra głowy"],
+      "tagi": [
+        "włosy",
+        "łysienie",
+        "skóra głowy"
+      ],
       "skladniki": [
         "Suszony korzeń pokrzywy: 2 łyżki",
         "Ocet jabłkowy: 1 łyżka",
@@ -177,13 +222,16 @@
       "slug": "pokrzywa_zwyczajna"
     }
   ],
-
   "przepisy_kulinarne": [
     {
       "tytul": "Staropolskie Pesto z Pokrzywy",
       "typ": "kulinarne",
       "metoda": "mielenie",
-      "tagi": ["sos", "witaminy", "zdrowie"],
+      "tagi": [
+        "sos",
+        "witaminy",
+        "zdrowie"
+      ],
       "skladniki": [
         "Sparzone liście pokrzywy: 2 szklanki",
         "Orzechy laskowe: 50g",

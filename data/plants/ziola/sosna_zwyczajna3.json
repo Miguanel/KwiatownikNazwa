@@ -1,0 +1,45 @@
+{
+  "id": "sosna_zwyczajna",
+  "nazwa_pl": "Sosna zwyczajna",
+  "nazwa_lacinska": "Pinus sylvestris",
+  "rodzina": "Sosnowate (Pinaceae)",
+  "opis": "Wiecznie zielone, potężne drzewo iglaste, którego kora w górnej części pnia przybiera charakterystyczny, rdzawopomarańczowy kolor. W magii i medycynie ludowej drzewo to symbolizuje siłę i zdrowie dróg oddechowych.",
+  "zdjecie_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Pinus_sylvestris_branch.jpg/800px-Pinus_sylvestris_branch.jpg",
+  "czesci_rosliny": {
+    "mlode_pedy": {
+      "zbior": "Kwiecień - Maj (gdy mają 5-10 cm długości i lepką żywicę)",
+      "wlasciwosci": "wykrztuśne, przeciwbakteryjne, odkażające, rozkurczowe na oskrzela, silnie napotne",
+      "skladniki_aktywne": ["olejek eteryczny (pinen, limonen)", "witamina C", "garbniki", "kwasy żywiczne", "flawonoidy"]
+    },
+    "igly": {
+      "zbior": "Cały rok",
+      "wlasciwosci": "antyseptyczne, moczopędne, wzmacniające odporność",
+      "skladniki_aktywne": ["witamina C", "olejki eteryczne"]
+    }
+  },
+  "zastosowanie": {
+    "medyczne": "Syrop z młodych pędów sosny to najpopularniejsze lekarstwo na mokry i suchy kaszel, zapalenie oskrzeli, chrypkę i przeziębienie. Olejek sosnowy stosuje się do inhalacji przy katarze i zapaleniu zatok.",
+    "magiczne": "Zabezpiecza domostwo przed złą energią. Spalanie igieł sosnowych w formie kadzidła oczyszcza aurę."
+  },
+  "ostrzezenia": [
+    "Nie stosować przy ostrej niewydolności nerek.",
+    "Czysty olejek sosnowy w zbyt dużych dawkach może podrażnić błony śluzowe żołądka i nerek.",
+    "Ostrożnie u astmatyków (ryzyko skurczu oskrzeli przy silnych inhalacjach)."
+  ],
+  "permakultura": {
+    "gildie": [
+      {
+        "nazwa": "Wrzos zwyczajny",
+        "rola": "Roślina kwasolubna, idealnie rośnie na zakwaszonej przez igły sosny glebie."
+      },
+      {
+        "nazwa": "Maślak zwyczajny",
+        "rola": "Grzyb mikoryzowy, wchodzi w symbiozę z korzeniami sosny, wspierając jej odżywianie."
+      },
+      {
+        "nazwa": "Jałowiec pospolity",
+        "rola": "Towarzysz na suchych, piaszczystych stanowiskach (bory sosnowe)."
+      }
+    ]
+  }
+}

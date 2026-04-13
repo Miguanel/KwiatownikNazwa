@@ -4,7 +4,13 @@
   "nazwa_lat": "Sambucus nigra",
   "rodzina": "Piżmaczkowate (Adoxaceae) / dawniej bzowate",
   "opis": "Szybko rosnący krzew lub niskie drzewo (do 10 m) o charakterystycznej, spękanej, korkowatej korze. Pędy wypełnione są lekkim, białym rdzeniem. Bez czarny to jedna z najbardziej zasłużonych roślin w historii medycyny ludowej – wierzono, że w jego korzeniach mieszka opiekuńczy duch ogniska domowego, dlatego rzadko decydowano się na jego wycięcie. Jest rośliną wskaźnikową gleb bogatych w azot.",
-
+  "url": {
+    "kwiaty": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Sambucus_nigra0.jpg/500px-Sambucus_nigra0.jpg",
+    "pokrój": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Sambucus_nigra_004.jpg/500px-Sambucus_nigra_004.jpg",
+    "owoce": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Sambucus_nigra-fruit001.jpg/500px-Sambucus_nigra-fruit001.jpg",
+    "kwitnacy krzew bzu": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Hyczka_RB1.JPG/500px-Hyczka_RB1.JPG"
+  },
+  "tagi": ["drzewo", "trujace_surowe", "jadalne_obrobka", "przeziebienie", "goraczka", "odpornosc", "barwnik", "magia"],
   "profil_energetyczny": {
     "smak": "Słodki, lekko gorzki (kwiaty), kwaśno-słodki (owoce)",
     "termika": "Chłodząca (kwiaty), neutralna ku ogrzewającej (owoce)",
@@ -95,31 +101,39 @@
       "Wskaźnik wysokiej zawartości azotu w glebie."
     ],
     "gildie": [
-      { "name": "Jabłoń / Grusza", "rola": "Bez czarny chroni drzewa owocowe przed niektórymi patogenami i przyciąga zapylacze." },
+      { "name": "Owocowe drzewa", "rola": "Bez czarny chroni drzewa owocowe przed niektórymi patogenami i przyciąga zapylacze." },
       { "name": "Pokrzywa zwyczajna", "rola": "Obie rośliny kochają azot; pokrzywa pod bzem rośnie silniej, co zwiększa jej wartość leczniczą." },
-      { "name": "Poziomka pospolita", "rola": "Może rosnąć w świetlistym cieniu pod krzewem bzu." }
+      { "name": "Poziomka pospolita", "rola": "Może rosnąć w świetlistym cieniu pod krzewem bzu." },
+      { "nazwa": "Dąb szypułkowy", "rola": "Bez często rośnie na obrzeżach lasów dębowych, korzystając z próchnicy." },
+      { "nazwa": "Jeżyna", "rola": "Wspólnie tworzą gęste, ochronne zarośla dla ptaków i drobnych zwierząt." }
     ]
   },
 
   "kalendarz_ogrodnika": {
     "zadania": [
       {
-        "czynnosc": "Zbiór kwiatów",
-        "miesiace": [5, 6],
-        "opis": "Ścinanie całych baldachów, gdy środkowe kwiaty są otwarte. Układamy luźno w koszyku, by nie 'zapociły' surowca.",
-        "faza_ksiezyca": "Księżyc przybywający (faza kwiatu)",
-        "pora_dnia": "Przedpołudnie (po rosie)",
-        "pogoda": "Słoneczna, sucha",
-        "wplyw_ksiezyca": "Gwarantuje jasny kolor suszu i intensywny zapach."
+        "czynnosc": "Cięcie prześwietlające",
+        "miesiace": [2, 3],
+        "opis": "Usuwanie suchych i najstarszych pędów, aby pobudzić krzew do obfitego kwitnienia.",
+        "faza_ksiezyca": "Księżyc ubywający",
+        "pora_dnia": "Suche, bezmroźne popołudnie",
+        "wplyw_ksiezyca": "Roślina traci mniej soków, szybsze gojenie ran."
       },
       {
-        "czynnosc": "Zbiór owoców",
+        "czynnosc": "Zbiór baldachów kwiatowych",
+        "miesiace": [5, 6],
+        "opis": "Ścinamy całe baldachy, gdy większość kwiatków jest otwarta. Uważamy na mszyce.",
+        "faza_ksiezyca": "Pełnia",
+        "pora_dnia": "Przedpołudnie (słoneczne, po opadnięciu rosy)",
+        "wplyw_ksiezyca": "Maksymalne stężenie olejków eterycznych w kwiatach."
+      },
+      {
+        "czynnosc": "Zbiór dojrzałych owoców",
         "miesiace": [8, 9],
-        "opis": "Zbieramy tylko w pełni dojrzałe, czarne grona. Owoce zielone należy bezwzględnie odrzucić.",
-        "faza_ksiezyca": "Księżyc ubywający",
-        "pora_dnia": "Popołudnie",
-        "pogoda": "Sucho",
-        "wplyw_ksiezyca": "Większa trwałość owoców i mniejsza zawartość wody, co ułatwia zagęszczanie soków."
+        "opis": "Ścinamy całe grona, gdy wszystkie owoce są czarno-fioletowe. Konieczna obróbka termiczna przed spożyciem!",
+        "faza_ksiezyca": "Księżyc przybywający",
+        "pora_dnia": "Suche popołudnie",
+        "wplyw_ksiezyca": "Owoce są bardziej soczyste."
       }
     ]
   },

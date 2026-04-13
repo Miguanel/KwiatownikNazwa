@@ -4,7 +4,7 @@
   "nazwa_lat": "Achillea millefolium",
   "rodzina": "Astrowate (Asteraceae)",
   "opis": "Wieloletnia, pospolita bylina łąkowa o charakterystycznych, pierzastych liściach przypominających tysiące małych piórek (stąd nazwa 'millefolium'). Krwawnik to roślina o niezwykłej żywotności, odporna na deptanie i suszę. W tradycji ludowej nazywany 'zielem żołnierzy', gdyż od tysiącleci towarzyszył armiom jako najskuteczniejszy środek tamujący krew i zapobiegający zakażeniom ran.",
-
+  "tagi": ["zielna", "krwawienie", "trawienie", "rany", "pospolita"],
   "profil_energetyczny": {
     "smak": "Gorzki, ostry, aromatyczny, lekko słony",
     "termika": "Neutralna do chłodnej (w fazie świeżej) / lekko rozgrzewająca (korzeń)",
@@ -107,13 +107,28 @@
         "wplyw_ksiezyca": "Wzmacnia właściwości przeciwzapalne i antybakteryjne surowca."
       },
       {
-        "czynnosc": "Podział karp",
-        "miesiace": [3, 4, 10],
-        "opis": "Odmładzanie rośliny przez podział podziemnych kłączy.",
-        "faza_ksiezyca": "Księżyc ubywający",
-        "pora_dnia": "Wieczór",
-        "pogoda": "Pochmurno, wilgotno",
-        "wplyw_ksiezyca": "Sprzyja szybkiemu ukorzenianiu i zapobiega 'chorobie przesadzeniowej'."
+        "czynnosc": "Zbiór młodych liści",
+        "miesiace": [4, 5],
+        "opis": "Młode, wiosenne listki świetnie nadają się do wiosennych sałatek oczyszczających.",
+        "faza_ksiezyca": "Księżyc przybywający",
+        "pora_dnia": "Ranek",
+        "wplyw_ksiezyca": "Duża chrupkość i koncentracja witamin z grupy B oraz C."
+      },
+      {
+        "czynnosc": "Zbiór ziela i kwiatów",
+        "miesiace": [7, 8, 9],
+        "opis": "Ścinamy górne, kwitnące pędy (ok. 10 cm). Surowiec bardzo ceniony w medycynie polowej.",
+        "faza_ksiezyca": "Pełnia",
+        "pora_dnia": "Popołudnie w słoneczny dzień",
+        "wplyw_ksiezyca": "Najwyższa zawartość azulenów (olejków leczących stany zapalne)."
+      },
+      {
+        "czynnosc": "Podział kęp (rozmnażanie)",
+        "miesiace": [10],
+        "opis": "Wykopywanie starszych kęp i dzielenie ich na mniejsze sadzonki.",
+        "faza_ksiezyca": "Księżyc ubywający / Korzeń",
+        "pora_dnia": "Chłodny wieczór",
+        "wplyw_ksiezyca": "Sprzyja zakorzenieniu się i minimalizuje stres rośliny."
       }
     ]
   },

@@ -4,7 +4,7 @@
   "nazwa_lat": "Betula pendula",
   "rodzina": "Brzozowate (Betulaceae)",
   "opis": "Smukłe, eleganckie drzewo o charakterystycznej białej korze i zwisających gałęziach. Jest gatunkiem pionierskim, niezwykle odpornym na trudne warunki, który jako pierwszy zasiedla nieużytki, przygotowując grunt pod inne gatunki drzew. W tradycji północnej Brzoza jest symbolem odrodzenia, czystości i powrotu wiosny. Jej liście, pąki i sok (oskoła) stanowią fundament wiosennych kuracji detoksykujących.",
-
+  "tagi": ["drzewo", "moczowe", "skora_wlosy", "pospolita", "magia"],
   "profil_energetyczny": {
     "smak": "Słodki (sok), gorzki, lekko cierpki (liście, pąki)",
     "termika": "Chłodna",
@@ -112,7 +112,8 @@
       { "nazwa": "Sosna zwyczajna", "rola": "Tworzą razem naturalne lasy pionierskie." },
       { "nazwa": "Borówka brusznica", "rola": "Krzewinka runa preferująca kwaśne podłoże brzozowe." },
       { "nazwa": "Wrzos zwyczajny", "rola": "Naturalny partner na piaszczystych wrzosowiskach." },
-      { "nazwa": "Grzyb: Koźlarz brzozowy", "rola": "Ścisła symbioza mikoryzowa." }
+      { "nazwa": "Grzyb: Koźlarz brzozowy", "rola": "Ścisła symbioza mikoryzowa." },
+      { "nazwa": "Muchomor czerwony", "rola": "Silna symbioza mikoryzowa." }
     ]
   },
 
@@ -120,21 +121,27 @@
     "zadania": [
       {
         "czynnosc": "Pozyskiwanie oskoły (soku)",
-        "miesiace": [3, 4],
-        "opis": "Wiercenie otworu na głębokość 2-3 cm w pniu i zbieranie soku do naczynia przez rurkę.",
-        "faza_ksiezyca": "Księżyc przybywający (od nowiu do pełni)",
-        "pora_dnia": "Cała doba (najintensywniej w południe)",
-        "pogoda": "Słoneczne dni, mroźne noce",
-        "wplyw_ksiezyca": "Zwiększa ciśnienie osmotyczne i intensywność wypływu soków."
+        "miesiace": [3],
+        "opis": "Nawiercanie pnia przed pękaniem pąków, gdy ruszają soki. Otwór należy potem zabezpieczyć!",
+        "faza_ksiezyca": "Nów / Rosnący",
+        "pora_dnia": "Poranek",
+        "wplyw_ksiezyca": "Silniejsze krążenie soków w roślinie."
       },
       {
-        "czynnosc": "Zbiór liści majowych",
+        "czynnosc": "Zbiór młodych liści",
         "miesiace": [5],
-        "opis": "Obrywanie młodych, lepkich liści z dolnych gałęzi.",
-        "faza_ksiezyca": "Pełnia",
+        "opis": "Zbieramy młode, lepkie liście o jasnozielonej barwie, doskonałe na herbaty moczopędne.",
+        "faza_ksiezyca": "Księżyc przybywający",
         "pora_dnia": "Przedpołudnie",
-        "pogoda": "Sucho i ciepło",
-        "wplyw_ksiezyca": "Maksymalna zawartość flawonoidów i olejków eterycznych."
+        "wplyw_ksiezyca": "Największa witalność młodych pędów."
+      },
+      {
+        "czynnosc": "Zbiór kory brzozowej (czagi)",
+        "miesiace": [10, 11, 12, 1, 2],
+        "opis": "Zbieramy z powalonych drzew lub szukamy czagi (grzyba huby) na żywych pniach.",
+        "faza_ksiezyca": "Księżyc ubywający",
+        "pora_dnia": "Dowolna",
+        "wplyw_ksiezyca": "Tradycyjnie uznawany za czas zbioru surowców twardych."
       }
     ]
   },

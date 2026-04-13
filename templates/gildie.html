@@ -1,41 +1,173 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="perma-section" style="max-width: 1100px; margin: 0 auto; padding: 20px;">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rpg-awesome/0.2.0/css/rpg-awesome.min.css">
+
+<style>
+    /* STYLIZACJA WYSZUKIWARKI */
+    .perma-section { max-width: 1100px; margin: 0 auto; padding: 20px; }
+
+    .search-container {
+        background: #fdfbf7;
+        border: 2px solid #5a4f41;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        max-width: 600px;
+        margin: 0 auto 40px auto;
+        text-align: center;
+    }
+
+    /* MAGICZNA ARENA GILDII */
+    .guild-arena {
+        position: relative;
+        width: 100%;
+        height: 650px;
+        background: radial-gradient(circle, #2a2520 0%, #12100e 100%);
+        border: 3px solid #3e4a3d;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: inset 0 0 80px rgba(0,0,0,0.8), 0 15px 30px rgba(0,0,0,0.4);
+        margin-bottom: 50px;
+    }
+
+    /* LINIE ŁĄCZĄCE (SVG) */
+    #guildLines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        pointer-events: none;
+    }
+    .guild-line {
+        stroke: #8a9a5b;
+        stroke-width: 2px;
+        stroke-dasharray: 6, 6;
+        opacity: 0.6;
+        animation: energyFlow 20s linear infinite;
+    }
+    @keyframes energyFlow { to { stroke-dashoffset: 1000; } }
+
+    /* CENTRALNA ROŚLINA (SERCE) */
+    .core-plant {
+        position: absolute;
+        z-index: 10;
+        width: 220px;
+        height: 220px;
+        background: #23201d;
+        border: 4px solid #8a9a5b;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 0 50px rgba(138, 154, 91, 0.4);
+        animation: pulseCore 3s infinite alternate;
+        padding: 20px;
+    }
+    @keyframes pulseCore {
+        from { box-shadow: 0 0 30px rgba(138, 154, 91, 0.2); border-color: #5a6639; }
+        to { box-shadow: 0 0 70px rgba(138, 154, 91, 0.6); border-color: #8a9a5b; }
+    }
+    .core-title {
+        color: #d1b880;
+        font-family: 'Georgia', serif;
+        font-size: 22px;
+        margin: 10px 0 5px 0;
+        line-height: 1.1;
+    }
+    .core-subtitle { color: #8a9a5b; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
+
+    /* TOWARZYSZE (ORBITUJĄCE WĘZŁY) */
+    .companion-node {
+        position: absolute;
+        z-index: 5;
+        width: 150px;
+        height: 150px;
+        background: #fdfbf7;
+        border: 2px solid #5a4f41;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 15px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.3s;
+    }
+    .companion-node.unlinked { background: #e0ddd5; border-style: dashed; opacity: 0.9; }
+    .companion-node:hover {
+        transform: scale(1.15);
+        border-color: #b8860b;
+        z-index: 20;
+    }
+    .comp-title { font-weight: bold; color: #3e4a3d; font-size: 13px; margin-bottom: 5px; border-bottom: 1px dashed #d1c7a7; padding-bottom: 3px; }
+    .comp-role { font-size: 10px; color: #555; line-height: 1.3; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
+
+    .explore-btn {
+        margin-top: 8px;
+        font-size: 10px;
+        padding: 3px 8px;
+        background: #3e4a3d;
+        color: #d1b880;
+        border: none;
+        border-radius: 3px;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .explore-btn:hover { background: #2d5a27; color: #fff; }
+
+    /* CHARAKTERYSTYKA SYSTEMOWA */
+    .info-box {
+        background: white;
+        padding: 30px;
+        border-left: 6px solid #3e4a3d;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        border-radius: 0 15px 15px 0;
+        line-height: 1.6;
+    }
+</style>
+
+<div class="perma-section">
     <header style="text-align: center; margin-bottom: 40px;">
-        <h1 style="color: #3e4a3d; font-size: 2.5rem; margin-bottom: 10px;">🕸️ Projektant Gildii Permakulturowych</h1>
-        <p style="color: #555; font-size: 1.1rem;">Odkryj synergię między roślinami i buduj stabilne ekosystemy.</p>
+        <h1 style="color: #3e4a3d; font-family: 'Georgia', serif; font-size: 2.5rem; margin-bottom: 10px;">🕸️ Księga Gildii Permakulturowych</h1>
+        <p style="color: #555; font-size: 1.1rem; font-style: italic;">Odkryj synergię między roślinami i buduj stabilne ekosystemy.</p>
     </header>
 
-    <div class="search-container" style="background: #f4f1ea; border: 2px dashed #3e4a3d; border-radius: 20px; padding: 30px; margin-bottom: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-        <form id="guildSearchForm" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: flex-end; position: relative;">
+    <div class="search-container">
+        <form id="guildSearchForm" style="display: flex; flex-direction: column; gap: 10px; align-items: center; position: relative;">
+            <label for="search_query" style="font-weight: bold; color: #5a4f41;">Wybierz Serce Gildii (Wpisz roślinę):</label>
+            <input type="text" id="search_query" placeholder="np. Modrzew, Wrotycz, Jabłoń..." required autocomplete="off"
+                   style="width: 100%; padding: 12px 20px; border-radius: 4px; border: 2px solid #3e4a3d; outline: none; font-size: 1rem; font-family: 'Georgia', serif;">
 
-            <div style="flex: 2; min-width: 280px; position: relative;">
-                <label for="search_query" style="display: block; margin-bottom: 8px; font-weight: bold; color: #3e4a3d;">Wpisz nazwę rośliny:</label>
-                <input type="text" id="search_query" placeholder="np. Modrzew, Wrotycz, Jabłoń..." required autocomplete="off"
-                       style="width: 100%; padding: 12px 20px; border-radius: 25px; border: 2px solid #3e4a3d; outline: none; font-size: 1rem;">
-
-                <div id="suggestionsList" class="list-group position-absolute w-100" style="z-index: 1000; display: none; margin-top: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"></div>
-            </div>
-
-<!--            <button type="submit" style="background: #3e4a3d; color: white; padding: 12px 30px; border-radius: 25px; border: none; cursor: pointer; font-weight: bold; transition: 0.3s; height: 50px;">-->
-<!--                Analizuj-->
-<!--            </button>-->
+            <div id="suggestionsList" class="list-group position-absolute w-100" style="z-index: 1000; display: none; top: 100%; margin-top: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"></div>
         </form>
     </div>
 
     <div id="errorMessage" style="text-align: center; color: #c62828; font-weight: bold; display: none; margin-bottom: 20px;"></div>
 
-    <div id="guildResultsWrapper" class="guild-results-wrapper" style="display: none; animation: fadeIn 0.8s ease-in-out;">
+    <div id="guildResultsWrapper" style="display: none; animation: fadeIn 0.8s ease-in-out;">
 
-        <div class="guild-map-viewport" style="position: relative; width: 100%; height: 600px; display: flex; align-items: center; justify-content: center; margin: 40px 0;">
-            <div id="companionsContainer" class="companions-container" style="position: absolute; width: 100%; height: 100%;">
-                </div>
+        <div class="guild-arena" id="arena">
+            <svg id="guildLines"></svg>
+
+            <div class="core-plant" id="coreNode">
+                <i class="ra ra-tree" id="coreIcon" style="font-size: 50px; color: #8a9a5b;"></i>
+                <div class="core-title" id="coreTitle">Nazwa</div>
+                <div class="core-subtitle">Serce Gildii</div>
+            </div>
+
+            <div id="companionsContainer"></div>
         </div>
 
         <div class="details" style="margin-top: 60px;">
             <div style="text-align: center; margin-bottom: 30px;">
-                <h3 id="sysCharTitle" style="display: inline-block; border-bottom: 3px solid #b8860b; padding-bottom: 5px; color: #3e4a3d;">
+                <h3 id="sysCharTitle" style="display: inline-block; border-bottom: 3px solid #b8860b; padding-bottom: 5px; color: #3e4a3d; font-family: 'Georgia', serif;">
                     Charakterystyka Systemowa
                 </h3>
             </div>
@@ -52,127 +184,12 @@
                     <h4 style="color: #b8860b; display: flex; align-items: center; gap: 10px;">
                         <span style="font-size: 1.5rem;">⚙️</span> Funkcje ekosystemowe
                     </h4>
-                    <ul id="ecoFunctionsList" style="list-style: none; padding: 0;">
-                        </ul>
+                    <ul id="ecoFunctionsList" style="list-style: none; padding: 0;"></ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<style>
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-
-    .guild-map-viewport {
-        background: radial-gradient(circle, rgba(233, 240, 232, 0.5) 0%, rgba(255, 255, 255, 1) 70%);
-    }
-
-    .companions-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .companion-node {
-        position: absolute;
-        transform: rotate(var(--angle)) translate(260px) rotate(calc(-1 * var(--angle)));
-        transition: all 0.3s ease;
-        z-index: 10;
-    }
-
-    .center-node {
-        z-index: 50;
-        background: #3e4a3d;
-        color: white;
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        box-shadow: 0 0 40px rgba(62, 74, 61, 0.3);
-        border: 5px solid white;
-        position: absolute;
-    }
-
-    .center-node::after {
-        content: '';
-        position: absolute;
-        width: 220px;
-        height: 220px;
-        border: 1px solid rgba(62, 74, 61, 0.1);
-        border-radius: 50%;
-        z-index: -1;
-    }
-
-    .c-card {
-        padding: 15px 20px;
-        border-radius: 15px;
-        text-align: center;
-        min-width: 160px;
-        max-width: 200px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    }
-
-    .linked {
-        background: white;
-        border: 2px solid #3e4a3d;
-        cursor: pointer;
-    }
-
-    .linked strong { color: #3e4a3d; }
-
-    .linked:hover {
-        background: #3e4a3d !important;
-        transform: scale(1.1) translateY(-5px);
-        z-index: 100;
-    }
-
-    .linked:hover strong { color: white !important; }
-    .linked:hover .rola-tag { color: #d1c7a7 !important; }
-    .linked:hover .click-hint { opacity: 1; }
-
-    .unlinked {
-        background: #fcfcfc;
-        border: 2px dashed #ccc;
-        opacity: 0.8;
-    }
-
-    .unlinked strong { color: #777; }
-
-    .rola-tag {
-        display: block;
-        font-size: 0.7rem;
-        color: #b8860b;
-        text-transform: uppercase;
-        margin-top: 5px;
-        font-weight: bold;
-        letter-spacing: 0.5px;
-    }
-
-    .click-hint {
-        font-size: 0.6rem;
-        color: #a5d6a7;
-        margin-top: 8px;
-        opacity: 0;
-        transition: 0.3s;
-    }
-
-    .info-box {
-        background: white;
-        padding: 30px;
-        border-left: 6px solid #3e4a3d;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.03);
-        border-radius: 0 15px 15px 0;
-        line-height: 1.6;
-    }
-</style>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
@@ -183,6 +200,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const companionsContainer = document.getElementById("companionsContainer");
     const errorMessage = document.getElementById("errorMessage");
 
+    // Elementy Serca Gildii
+    const coreTitle = document.getElementById("coreTitle");
+    const coreIcon = document.getElementById("coreIcon");
+
     // Elementy opisu systemowego
     const sysCharTitle = document.getElementById("sysCharTitle");
     const roleDescription = document.getElementById("roleDescription");
@@ -190,7 +211,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let allPlants = [];
 
-    // Pobieramy całą bazę (offline-ready)
+    // Funkcja dobierająca ikonkę na podstawie nazwy rośliny
+    function getWitcherIcon(plantName) {
+        const name = plantName.toLowerCase();
+        if (name.includes('dąb') || name.includes('sosna') || name.includes('świerk') || name.includes('brzoza') || name.includes('drzewo')) return 'ra-pine-tree';
+        if (name.includes('grzyb') || name.includes('maślak') || name.includes('borowik')) return 'ra-mushroom';
+        return 'ra-leaf';
+    }
+
+    // Pobieramy całą bazę
     fetch("{{ url_for('api_all_plants') }}")
         .then(res => res.json())
         .then(data => {
@@ -249,7 +278,7 @@ document.addEventListener("DOMContentLoaded", () => {
         errorMessage.style.display = "none";
         companionsContainer.innerHTML = "";
 
-        const gildie = plant.permakultura && plant.permakultura.gildie ? plant.permakultura.gildie : [];
+        const gildie = plant.permakultura && plant.permakultura.gildie ? plant.permakultura.gildie : (plant.gildie || []);
 
         if (gildie.length === 0) {
             showError(`Roślina <strong>${plant.nazwa_pl}</strong> nie posiada zmapowanych połączeń gildii.`);
@@ -259,51 +288,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
         resultsWrapper.style.display = "block";
 
-        // Generowanie węzła centralnego
-        const centerNode = document.createElement("div");
-        centerNode.className = "center-node";
-        centerNode.innerHTML = `
-            <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.8;">Gatunek bazowy</span>
-            <strong style="font-size: 1.3rem; padding: 0 15px; display: block; margin-top: 5px;">${plant.nazwa_pl}</strong>
-        `;
-        companionsContainer.appendChild(centerNode);
+        // Ustawianie Serca Gildii
+        coreTitle.innerText = plant.nazwa_pl;
+        coreIcon.className = `ra ${getWitcherIcon(plant.nazwa_pl)} guild-icon`;
 
-        // Generowanie węzłów towarzyszących
-        const angleStep = 360 / gildie.length;
-
-        gildie.forEach((companion, index) => {
-            const angle = angleStep * index;
+        // Generowanie węzłów towarzyszących w DOM
+        gildie.forEach((companion) => {
             const compNode = document.createElement("div");
-            compNode.className = "companion-node";
-            compNode.style.setProperty("--angle", `${angle}deg`);
 
-            // Sprawdzamy czy roślina towarzysząca jest w naszej bazie (by zbudować link)
-            const baseName = companion.nazwa ? companion.nazwa.split('(')[0].trim().toLowerCase() : '';
+            // Kompatybilność: niektóre JSONy mają listę stringów zamiast obiektów
+            const compNazwa = typeof companion === 'string' ? companion : companion.nazwa;
+            const compRola = typeof companion === 'string' ? 'Powiązanie symbiotyczne' : companion.rola;
+
+            const baseName = compNazwa ? compNazwa.split('(')[0].trim().toLowerCase() : '';
             const foundCompanion = allPlants.find(p => p.nazwa_pl && p.nazwa_pl.toLowerCase() === baseName);
 
-            if (foundCompanion) {
-                const plantUrl = `../plant/${foundCompanion.slug}/`;
-                compNode.innerHTML = `
-                    <a href="${plantUrl}" style="text-decoration: none; color: inherit;">
-                        <div class="c-card linked">
-                            <strong>${companion.nazwa}</strong>
-                            <span class="rola-tag">${companion.rola}</span>
-                            <div class="click-hint">Zobacz kartę ⮕</div>
-                        </div>
-                    </a>
-                `;
-            } else {
-                compNode.innerHTML = `
-                    <div class="c-card unlinked">
-                        <strong>${companion.nazwa}</strong>
-                        <span class="rola-tag">${companion.rola}</span>
-                    </div>
-                `;
-            }
+            compNode.className = `companion-node ${foundCompanion ? 'linked' : 'unlinked'}`;
+
+            let btnHtml = foundCompanion
+                ? `<a href="../plant/${foundCompanion.slug}/" class="explore-btn">Zbadaj</a>`
+                : `<span style="font-size: 9px; color:#999; margin-top:8px;">Brak wpisu</span>`;
+
+            compNode.innerHTML = `
+                <i class="ra ${getWitcherIcon(compNazwa)}" style="color: #8a9a5b; margin-bottom: 5px; font-size: 24px;"></i>
+                <div class="comp-title">${compNazwa}</div>
+                <div class="comp-role">${compRola}</div>
+                ${btnHtml}
+            `;
             companionsContainer.appendChild(compNode);
         });
 
-        // Aktualizacja opisu systemowego
+        // Aktualizacja opisu systemowego na dole strony
         sysCharTitle.innerText = `Charakterystyka Systemowa: ${plant.nazwa_pl}`;
         roleDescription.innerText = (plant.permakultura && plant.permakultura.opis) ? plant.permakultura.opis : "Ta roślina pełni funkcję dominanty lub wsparcia w zależności od piętra roślinności.";
 
@@ -315,7 +330,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 li.innerHTML = `<span style="position: absolute; left: 0; color: #b8860b;">•</span> ${f}`;
                 ecoFunctionsList.appendChild(li);
             });
+        } else {
+             ecoFunctionsList.innerHTML = "<li style='color:#777; font-style:italic;'>Brak zapisanych funkcji ekosystemowych.</li>";
         }
+
+        // Krótkie opóźnienie, by DOM zdążył się wyrenderować przed narysowaniem kół i linii SVG
+        setTimeout(arrangeGuildNetwork, 50);
     }
 
     function showError(msg) {
@@ -323,6 +343,58 @@ document.addEventListener("DOMContentLoaded", () => {
         errorMessage.innerHTML = msg;
         errorMessage.style.display = "block";
     }
+
+    // --- MATEMATYKA I FIZYKA SIECI ---
+    function arrangeGuildNetwork() {
+        const arena = document.getElementById('arena');
+        const core = document.getElementById('coreNode');
+        const nodes = document.querySelectorAll('.companion-node');
+        const svg = document.getElementById('guildLines');
+
+        if(!arena || !core || document.getElementById('guildResultsWrapper').style.display === "none") return;
+
+        // Środek areny
+        const centerX = arena.offsetWidth / 2;
+        const centerY = arena.offsetHeight / 2;
+
+        // Dynamiczny promień
+        const isMobile = window.innerWidth < 768;
+        const radiusX = isMobile ? (arena.offsetWidth / 2) - 80 : 260;
+        const radiusY = isMobile ? (arena.offsetHeight / 2) - 100 : 200;
+
+        // Centralizujemy Serce
+        core.style.left = (centerX - core.offsetWidth / 2) + 'px';
+        core.style.top = (centerY - core.offsetHeight / 2) + 'px';
+
+        svg.innerHTML = ''; // Czyścimy stare linie
+
+        if(nodes.length === 0) return;
+
+        // Rozkładamy elementy po okręgu
+        const angleStep = (2 * Math.PI) / nodes.length;
+
+        nodes.forEach((node, index) => {
+            const angle = (index * angleStep) - (Math.PI / 2); // Zaczynamy na godzinie 12
+
+            const x = centerX + Math.cos(angle) * radiusX;
+            const y = centerY + Math.sin(angle) * radiusY;
+
+            node.style.left = (x - node.offsetWidth / 2) + 'px';
+            node.style.top = (y - node.offsetHeight / 2) + 'px';
+
+            // Rysujemy dynamiczną linię łączącą środek z towarzyszem
+            const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+            line.setAttribute('x1', centerX);
+            line.setAttribute('y1', centerY);
+            line.setAttribute('x2', x);
+            line.setAttribute('y2', y);
+            line.setAttribute('class', 'guild-line');
+            svg.appendChild(line);
+        });
+    }
+
+    // Przerysuj linie przy zmianie rozmiaru okna
+    window.addEventListener('resize', arrangeGuildNetwork);
 });
 </script>
 {% endblock %}

@@ -84,19 +84,36 @@
     "gildie": [
       { "nazwa": "Wrzos zwyczajny", "rola": "Tworzą razem ekosystemy suchych wrzosowisk." },
       { "nazwa": "Macierzanka piaskowa", "rola": "Idealny partner na piaszczyste, słoneczne stanowiska." },
-      { "nazwa": "Sosna zwyczajna", "rola": "Kocanki to naturalny element runa w suchych borach." }
+      { "nazwa": "Sosna zwyczajna", "rola": "Kocanki to naturalny element runa w suchych borach." },
+      { "nazwa": "Dziewanna", "rola": "Dzieli to samo trudne, pustynne wręcz stanowisko." }
     ]
   },
 
   "kalendarz_ogrodnika": {
     "zadania": [
       {
+        "czynnosc": "Oczyszczanie stanowiska",
+        "miesiace": [4, 5],
+        "opis": "Kocanka nienawidzi konkurencji wysokich traw – należy delikatnie pielić stanowisko.",
+        "faza_ksiezyca": "Księżyc ubywający",
+        "pora_dnia": "Wieczór",
+        "wplyw_ksiezyca": "Ogranicza odrastanie usuniętych chwastów."
+      },
+      {
         "czynnosc": "Zbiór kwiatostanów",
         "miesiace": [7, 8],
-        "opis": "Ścinanie całych baldachogron na początku kwitnienia. Suszenie w pęczkach 'głowami w dół' w ciemnym miejscu (by zachować kolor).",
-        "faza_ksiezyca": "Księżyc przybywający (faza kwiatu)",
-        "pora_dnia": "Południe (najwyższe stężenie olejków)",
-        "pogoda": "Pełne słońce"
+        "opis": "Zbierać, gdy koszyczki nie są jeszcze w pełni rozwinięte, z krótką (1-2 cm) szypułką.",
+        "faza_ksiezyca": "Pełnia",
+        "pora_dnia": "Słoneczne popołudnie",
+        "wplyw_ksiezyca": "Zapewnia intensywny kolor, który utrzyma się po wysuszeniu."
+      },
+      {
+        "czynnosc": "Suszenie ziela",
+        "miesiace": [7, 8, 9],
+        "opis": "Suszyć w pęczkach w przewiewnym, zacienionym miejscu.",
+        "faza_ksiezyca": "Księżyc ubywający",
+        "pora_dnia": "Brak znaczenia",
+        "wplyw_ksiezyca": "Przyspiesza oddawanie wilgoci i zapobiega pleśnieniu."
       }
     ]
   },

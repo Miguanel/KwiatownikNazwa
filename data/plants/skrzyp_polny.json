@@ -4,7 +4,7 @@
   "nazwa_lat": "Equisetum arvense",
   "rodzina": "Skrzypowate (Equisetaceae)",
   "opis": "Wieloletnia roślina zarodnikowa o unikalnym cyklu życiowym, wykształcająca dwa rodzaje pędów: wiosenne (brązowe, płonne) oraz letnie (zielone, ulistnione). Jest żywą skamieliną, której przodkowie dominowali na Ziemi w karbonie. Skrzyp słynie z niezwykle wysokiej zawartości krzemionki, która nadaje mu szorstkość i czyni go jednym z najlepszych naturalnych surowców wzmacniających tkankę łączną, kości oraz naczynia krwionośne.",
-
+"tagi": ["zielna", "skora_wlosy", "moczowe", "pospolita"],
   "profil_energetyczny": {
     "smak": "Słony, lekko słodki, cierpki",
     "termika": "Chłodna",
@@ -82,7 +82,10 @@
     ],
     "gildie": [
       { "nazwa": "Pomidory / Ogórki", "rola": "Odwar ze skrzypu chroni te warzywa przed zarazą ziemniaczaną i mączniakiem." },
-      { "nazwa": "Wierzba", "rola": "Często rosną obok siebie na terenach podmokłych, tworząc duet regenerujący glebę." }
+      { "nazwa": "Wierzba", "rola": "Często rosną obok siebie na terenach podmokłych, tworząc duet regenerujący glebę." },
+      { "nazwa": "Wilgociolubne trawy", "rola": "Skrzyp polny wskazuje na wilgotną, lekko kwaśną glebę, dzieląc ją z turzycami." },
+    { "nazwa": "Kukurydza", "rola": "Uznawany za uciążliwy chwast w uprawach rolnych, m.in. okopowych." },
+    { "nazwa": "Warzywa", "rola": "Z jego pędów robi się wywar bogaty w krzem, doskonały do oprysków przeciw grzybom." }
     ]
   },
 
@@ -105,6 +108,30 @@
         "pora_dnia": "Wieczór",
         "pogoda": "Bezwietrzna",
         "wplyw_ksiezyca": "W fazie pełni rośliny intensywniej chłoną minerały przez aparaty szparkowe."
+      },
+      {
+        "czynnosc": "Zbiór zielonych pędów (letnich)",
+        "miesiace": [7, 8],
+        "opis": "Ścinamy zielone 'jodełki' w suchy dzień, odrzucając okazy pożółkłe i z plamami.",
+        "faza_ksiezyca": "Księżyc przybywający",
+        "pora_dnia": "Wczesne popołudnie",
+        "wplyw_ksiezyca": "Pomaga zatrzymać w łodydze cenne sole mineralne i rozpuszczalną krzemionkę."
+      },
+      {
+        "czynnosc": "Opryski przeciwgrzybicze z gnojówki",
+        "miesiace": [6, 7],
+        "opis": "Opryskujemy rośliny narażone na mączniaka (np. pomidory, róże) wywarem ze skrzypu.",
+        "faza_ksiezyca": "Księżyc ubywający",
+        "pora_dnia": "Wcześnie rano lub po zachodzie",
+        "wplyw_ksiezyca": "Chroniące liście krzemiany najlepiej wnikają podczas 'oddychania' rośliny."
+      },
+      {
+        "czynnosc": "Suszenie ziela",
+        "miesiace": [7, 8],
+        "opis": "Skrzyp łatwo czernieje w wilgoci. Wymaga szybkiego suszenia w przewiewnym cieniu.",
+        "faza_ksiezyca": "Księżyc ubywający",
+        "pora_dnia": "Dowolna",
+        "wplyw_ksiezyca": "Wspomaga odciąganie soków z uciętych roślin."
       }
     ]
   },

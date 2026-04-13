@@ -4,7 +4,7 @@
   "nazwa_lat": "Matricaria chamomilla (syn. Matricaria recutita)",
   "rodzina": "Astrowate (Asteraceae)",
   "opis": "Jednoroczna roślina zielna, jedna z najważniejszych w europejskiej tradycji medycznej. Słynie z charakterystycznego, jabłkowego aromatu i złocisto-białych koszyczków kwiatowych. Nazwa łacińska 'Matricaria' pochodzi od słowa 'matrix' (macica), co wskazuje na historyczne zastosowanie rośliny w dolegliwościach kobiecych. Jest to roślina pionierska, często spotykana na polach uprawnych, miedzach i terenach ruderalnych.",
-
+"tagi": ["zielna", "uspokojenie", "trawienie", "pospolita", "rany"],
   "profil_energetyczny": {
     "smak": "Słodki, gorzki, aromatyczny",
     "termika": "Chłodna",
@@ -84,7 +84,9 @@
     ],
     "gildie": [
       { "nazwa": "Cebula / Czosnek", "rola": "Rumianek chroni cebulę przed chorobami grzybowymi i poprawia jej aromat." },
-      { "nazwa": "Kapusta", "rola": "Przyciąga pożyteczne owady, które zwalczają szkodniki kapusty." },
+      { "nazwa": "Kapusta", "rola": "Rumianek wyraźnie poprawia smak kapustnych i odstrasza bielinka." },
+      { "nazwa": "Cebula", "rola": "Rumianek rosnący z umiarem wśród cebuli stymuluje jej wzrost i chroni przed mszycami." },
+      { "nazwa": "Krwawnik pospolity", "rola": "Wzajemnie podnoszą swoje lecznicze właściwości." },
       { "nazwa": "Mięta", "rola": "Wzajemnie wzmacniają swoje działanie aromatyczne i lecznicze." }
     ]
   },
@@ -92,13 +94,28 @@
   "kalendarz_ogrodnika": {
     "zadania": [
       {
+        "czynnosc": "Wysiew nasion",
+        "miesiace": [4, 5, 8, 9],
+        "opis": "Siejemy płytko wprost do gruntu. Nasiona rumianku potrzebują światła, więc nie przysypujemy ich ziemią!",
+        "faza_ksiezyca": "Księżyc przybywający",
+        "pora_dnia": "Rano",
+        "wplyw_ksiezyca": "Silne światło księżycowe przed pełnią pomaga obudzić nasiona."
+      },
+      {
         "czynnosc": "Zbiór koszyczków",
-        "miesiace": [6, 7],
-        "opis": "Zrywanie samych główek kwiatowych (bez szypułek), gdy białe płatki są ustawione poziomo.",
-        "faza_ksiezyca": "Księżyc przybywający (od nowiu do pełni)",
-        "pora_dnia": "Samo południe (pełne słońce)",
-        "pogoda": "Gorąca, sucha",
-        "wplyw_ksiezyca": "Gwarantuje najwyższe stężenie azulenów w olejku."
+        "miesiace": [5, 6, 7],
+        "opis": "Zbieramy koszyczki BEZ szypułek co 3-5 dni w miarę zakwitania (gdy białe płatki ułożone są poziomo).",
+        "faza_ksiezyca": "Pełnia",
+        "pora_dnia": "Popołudnie, mocne słońce",
+        "wplyw_ksiezyca": "Gwarantuje intensywny aromat jabłkowy i najwyższe stężenie bisabololu."
+      },
+      {
+        "czynnosc": "Zbiór nasion",
+        "miesiace": [8],
+        "opis": "Gdy płatki całkowicie opadną, a stożkowaty środek zbrązowieje.",
+        "faza_ksiezyca": "Księżyc ubywający",
+        "pora_dnia": "Zaraz po południu (sucho)",
+        "wplyw_ksiezyca": "Naturalnie osusza materiał siewny."
       }
     ]
   },

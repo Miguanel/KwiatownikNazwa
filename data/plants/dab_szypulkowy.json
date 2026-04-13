@@ -11,6 +11,7 @@
     "zywiol": "Ziemia",
     "opis": "Silnie osuszający i tonizujący (obkurczający). W energetyce tradycyjnej stosowany do 'zatrzymywania przepływów' – tamuje krew, hamuje biegunkę, zmniejsza nadmierną potliwość i wysięki skórne."
   },
+  "tagi": ["drzewo", "trawienie", "magia", "barwnik"],
   "wymagania": {
     "stanowisko": "Pełne słońce (szczególnie w fazie wzrostu), w starszym wieku toleruje półcień.",
     "gleba": "Głęboka, żyzna, gliniasta lub piaszczysto-gliniasta, bogata w próchnicę.",
@@ -111,11 +112,13 @@
       "Tworzenie mikroklimatu i wiatrochronu"
     ],
     "gildie": [
+      { "nazwa": "Grab", "rola": "Naturalny towarzysz w lasach dębowo-grabowych (grądach)." },
+      { "nazwa": "Borowik szlachetny", "rola": "Symbioza mikoryzowa - dąb 'karmi' szlachetne grzyby jadalne." },
       {"nazwa": "Leszczyna pospolita","rola": "Warstwa krzewów, toleruje cień dębu"},
       {"nazwa": "Głóg jednoszyjkowy", "rola": "Ochrona pnia przed zwierzętami, wsparcie dla ptaków"},
       {"nazwa": "Porzeczka czarna","rola": "Warstwa owoconośna w rzucie korony"},
       {"nazwa": "Żywokost lekarski","rola": "Ściółkowanie, przyspieszanie rozkładu liści dębu"},
-      {"nazwa": "Grzyby mikoryzowe (Borowik, Trufla)", "rola": "Symbioza korzeniowa, wymiana składników"},
+      {"nazwa": "Grzyby mikoryzowe", "rola": "Symbioza korzeniowa, wymiana składników"},
       { "nazwa": "Dąb bezszypułkowy", "rola": "Najbliższy krewniak, dzieli podobne siedliska wyżynne." },
       { "nazwa": "Dąb czerwony", "rola": "Szybciej rosnący brat z Ameryki, często spotykany w parkach." },
       { "nazwa": "Dąb omszony", "rola": "Rzadki, południowy krewniak o owłosionych liściach." },
@@ -126,7 +129,7 @@
   "kalendarz_ogrodnika": {
     "zadania": [
       {
-        "czynnosc": "Pozyskiwanie kory",
+        "czynnosc": "Pozyskiwanie kory (gładkiej)",
         "miesiace": [
           3,
           4
@@ -150,16 +153,21 @@
         "wplyw_ksiezyca": "Skierowanie energii w dół sprzyja rozwojowi korzenia palowego."
       },
       {
+        "czynnosc": "Zbiór galasów",
+        "miesiace": [9],
+        "opis": "Zbiór kuleczek z liści (galasów), powstałych po ukąszeniu galasówki, bogatych w kwas galusowy.",
+        "faza_ksiezyca": "Księżyc ubywający",
+        "pora_dnia": "Dowolna",
+        "wplyw_ksiezyca": "Skupienie energii wewnątrz struktur."
+      },
+      {
         "czynnosc": "Zbiór żołędzi",
-        "miesiace": [
-          9,
-          10
-        ],
+        "miesiace": [9, 10, 11],
         "opis": "Zbieramy tylko orzechy brązowe, które same opadły. Zielone są niedojrzałe i bezwartościowe kulinarnie.",
         "faza_ksiezyca": "Pełnia lub III kwadra",
-        "pora_dnia": "Słoneczne popołudnie",
+        "pora_dnia": "Słoneczne suche popołudnie",
         "pogoda": "Sucho (mokre żołędzie szybko pleśnieją)",
-        "wplyw_ksiezyca": "Sprzyja gromadzeniu skrobi i tłuszczów w nasionach."
+        "wplyw_ksiezyca": "Sprzyja gromadzeniu skrobi i tłuszczów w nasionach. Wspomaga suchość i odporność żołędzi na pleśń podczas przechowywania."
       }
     ]
   },

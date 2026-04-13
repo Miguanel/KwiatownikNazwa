@@ -4,7 +4,7 @@
   "nazwa_lat": "Thymus serpyllum",
   "rodzina": "Jasnotowate (Lamiaceae)",
   "opis": "Niska, wieloletnia krzewinka o płożących pędach, tworząca gęste, intensywnie pachnące darnie. Jej drobne, lilioworóżowe kwiaty są magnesem dla pszczół i motyli. Nazwa 'serpyllum' pochodzi od łacińskiego 'serpere' (pełzać), co idealnie oddaje sposób wzrostu rośliny. Macierzanka jest symbolem siły życiowej ukrytej w małej formie – potrafi przetrwać ekstremalne upały na jałowym piasku, kumulując w sobie potężne olejki eteryczne.",
-
+  "tagi": ["zielna", "oddechowe", "przeziebienie", "jadalna_surowa"],
   "profil_energetyczny": {
     "smak": "Ostry, aromatyczny, lekko gorzki",
     "termika": "Gorąca",
@@ -83,20 +83,38 @@
     "gildie": [
       { "nazwa": "Lawenda", "rola": "Tworzą razem 'duet śródziemnomorski' na słonecznych stanowiskach." },
       { "nazwa": "Sosna zwyczajna", "rola": "Macierzanka to naturalny element runa w suchych borach sosnowych." },
-      { "nazwa": "Rozchodniki", "rola": "Partnerzy w ekstremalnie suchych skalniakach." }
+      { "nazwa": "Rozchodniki", "rola": "Partnerzy w ekstremalnie suchych skalniakach." },
+      { "nazwa": "Kocanka piaskowa", "rola": "Naturalne towarzystwo na suchych i nasłonecznionych skarpach." },
+      { "nazwa": "Rozchodnik", "rola": "Tworzą razem odporne na suszę dywany." },
+      { "nazwa": "Zapylacze", "rola": "Macierzanka to roślina wybitnie miododajna." }
     ]
   },
 
   "kalendarz_ogrodnika": {
     "zadania": [
       {
+        "czynnosc": "Rozsadzanie i sadzenie",
+        "miesiace": [4, 5],
+        "opis": "Odrywanie ukorzenionych rozłogów i sadzenie w nowych miejscach na słonecznych stanowiskach.",
+        "faza_ksiezyca": "Księżyc ubywający",
+        "pora_dnia": "Wieczór",
+        "wplyw_ksiezyca": "Kieruje energię w korzenie, ułatwiając przyjęcie sadzonki."
+      },
+      {
         "czynnosc": "Zbiór ziela",
         "miesiace": [6, 7],
-        "opis": "Ścinanie kwitnących wierzchołków pędów (nie za nisko, by roślina mogła odrosnąć).",
+        "opis": "Ścinamy niezdrewniałe, górne części pędów na początku kwitnienia.",
         "faza_ksiezyca": "Pełnia",
-        "pora_dnia": "Południe (najwięcej olejków)",
-        "pogoda": "Pełne słońce, upał",
-        "wplyw_ksiezyca": "Zapewnia najsilniejszy aromat i moc leczniczą surowca."
+        "pora_dnia": "Środek gorącego dnia",
+        "wplyw_ksiezyca": "Gorąco i pełnia wyciągają na wierzch olejki eteryczne (tymol)."
+      },
+      {
+        "czynnosc": "Odmładzające cięcie",
+        "miesiace": [8],
+        "opis": "Po głównym kwitnieniu lekko przycinamy kępki, by nie łysiały od środka.",
+        "faza_ksiezyca": "Księżyc ubywający",
+        "pora_dnia": "Popołudnie",
+        "wplyw_ksiezyca": "Powstrzymuje roślinę przed wybijaniem w nasiona, wzmacnia strukturę."
       }
     ]
   },
