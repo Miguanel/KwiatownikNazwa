@@ -510,14 +510,25 @@ def logout():
 @app.route('/przepisy/', methods=['GET'])
 def przepisy():
     query = request.args.get('q', '').lower().strip()
-    all_recipes = get_all_recipes() # ZMIENIONO: uzywamy nowej funkcji
+    all_recipes = get_all_recipes()
     results = []
 
     if query:
         for recipe in all_recipes:
-            ingredients = " ".join(recipe.get('skladniki', []))
-            properties = " ".join(recipe.get('wlasciwosci', []))
-            features = " ".join(recipe.get('cechy', []))
+            # Wyciągamy nazwy składników, niezależnie czy to stare (stringi) czy nowe (słowniki)
+            raw_skladniki = recipe.get('skladniki', [])
+            ingredients_list = []
+            for s in raw_skladniki:
+                if isinstance(s, dict):
+                    ingredients_list.append(s.get('nazwa', ''))
+                elif isinstance(s, str):
+                    ingredients_list.append(s)
+
+            ingredients = " ".join(ingredients_list)
+
+            # Zabezpieczenie starych i nowych pól (żeby nie wysypało się na listach obiektów)
+            properties = " ".join([str(p) for p in recipe.get('wlasciwosci', []) if isinstance(p, str)])
+            features = " ".join([str(f) for f in recipe.get('cechy', []) if isinstance(f, str)])
 
             searchable_text = (
                 f"{recipe.get('tytul', '')} "
@@ -539,7 +550,6 @@ def recipe_suggestions():
     all_recipes = get_all_recipes()
     keywords = set()
 
-    # Słowa do zignorowania (spójniki, przyimki, jednostki miary)
     STOP_WORDS = {
         'w', 'z', 'i', 'o', 'a', 'do', 'na', 'po', 'ze', 'za', 'się', 'lub', 'jak',
         'ml', 'g', 'kg', 'dag', 'lyz', 'łyż', 'łyżka', 'łyżeczka', 'szklanki', 'szklanka',
@@ -549,31 +559,30 @@ def recipe_suggestions():
     def clean_and_split(text):
         if not text:
             return []
-        # 1. Usuń cyfry i znaki specjalne (zostaw tylko litery i spacje)
-        text = re.sub(r'[^\w\s]', '', text)
-        # 2. Zamień na małe litery i podziel na słowa
+        text = re.sub(r'[^\w\s]', '', str(text)) # Upewniamy się, że to string
         words = text.lower().split()
-        # 3. Filtruj: słowo musi mieć min. 3 litery, nie być liczbą i nie być na liście STOP_WORDS
         return [w for w in words if len(w) > 2 and not w.isdigit() and w not in STOP_WORDS]
 
     for r in all_recipes:
-        # Analizujemy składniki (które są listą długich opisów)
+        # Analizujemy składniki (teraz odporne na słowniki)
         for skladnik in r.get('skladniki', []):
-            keywords.update(clean_and_split(skladnik))
+            if isinstance(skladnik, dict):
+                keywords.update(clean_and_split(skladnik.get('nazwa', '')))
+            else:
+                keywords.update(clean_and_split(skladnik))
 
-        # Analizujemy właściwości i cechy
+        # Analizujemy pozostałe rzeczy
         for prop in r.get('wlasciwosci', []):
-            keywords.update(clean_and_split(prop))
+            if isinstance(prop, str):
+                keywords.update(clean_and_split(prop))
 
         for cecha in r.get('cechy', []):
-            keywords.update(clean_and_split(cecha))
+            if isinstance(cecha, str):
+                keywords.update(clean_and_split(cecha))
 
-        # Analizujemy nazwę rośliny i tytuł
         keywords.update(clean_and_split(r.get('roslina', '')))
-        # Opcjonalnie tytuł (jeśli chcesz podpowiadać np. "nalewka")
         keywords.update(clean_and_split(r.get('tytul', '')))
 
-    # Sortujemy alfabetycznie
     return jsonify(sorted(list(keywords)))
 
 
