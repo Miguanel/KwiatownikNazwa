@@ -1,0 +1,98 @@
+{
+  "id": "balsam_rycerski_debowy",
+  "tytul": "Głęboki Balsam Rycerski na Rany Cięte",
+  "typ": "medyczne_zewnetrzne",
+  "pochodzenie": ["[Medycyna Zakonów Rycerskich]", "[Tradycja Śródziemnomorska]"],
+  "mechanizm_tworzenia": ["Ekstrakcja wielofazowa", "Synergia wchłaniania", "Wzorzec 5 filarów"],
+
+  "klasyfikacja_dzialania": {
+    "skalowanie_toksykologiczne": "Zioła Normalizujące (Środek skali) – bezpieczne do regularnego stosowania zewnętrznego, nie zawierają alkaloidów toksycznych.",
+    "matryca_wu_xing": {
+      "zywiol_leczony": "Ogień (Serce/Krążenie - tamowanie krwi)",
+      "narzad_matczyny_do_wsparcia": "Drzewo (Wątroba)",
+      "porada_matrycy": "Tamując nagły upływ krwi (Ogień), musisz wesprzeć Wątrobę (Drzewo), która magazynuje krew. Po nałożeniu balsamu zaleca się podanie pacjentowi ciepłego naparu z mniszka."
+    },
+    "triada_kampo": {
+      "cel_glowny": "Ketsu (Krew) oraz Sui (Płyny)",
+      "wyjasnienie": "Balsam silnie tamuje ucieczkę Ketsu (krwi) z rany, a ściągające garbniki zapobiegają gromadzeniu się Sui (wysięków i ropy) w miejscu urazu."
+    }
+  },
+
+  "wymogi_szamanskie_i_czasowe": {
+    "chronoterapia": "Aplikować najgrubszą warstwę na noc, podczas aktywnej fazy regeneracji tkankowej organizmu.",
+    "astrologia_zbioru": "Kora pozyskiwana w kwadrze korzenia (księżyc ubywający) w celu zminimalizowania w niej ilości soków wodnych.",
+    "dieta_i_zakazy": "Podczas leczenia rozległej rany obowiązuje bezwzględny zakaz spożywania alkoholu i surowego mięsa (zwiększają 'gorąco' krwi)."
+  },
+
+  "skladniki": [
+    {
+      "nazwa": "Kora dębu szypułkowego",
+      "czesc_rosliny": "kora",
+      "ilosc": "3 łyżki",
+      "filar": "1_bazowy",
+      "smak_ajurweda": "cierpki",
+      "tropizm_organowy": "Jelito Grube / Skóra",
+      "link_id": "dab_szypulkowy"
+    },
+    {
+      "nazwa": "Ziele krwawnika",
+      "czesc_rosliny": "ziele",
+      "ilosc": "2 łyżki",
+      "filar": "2_wzmocnienie",
+      "smak_ajurweda": "gorzki",
+      "tropizm_organowy": "Wątroba / Naczynia krwionośne",
+      "link_id": "krwawnik_pospolity"
+    },
+    {
+      "nazwa": "Kwiat nagietka",
+      "czesc_rosliny": "kwiat",
+      "ilosc": "1 łyżka",
+      "filar": "3_minister",
+      "smak_ajurweda": "słodki_lekko_gorzki",
+      "tropizm_organowy": "Wątroba / Skóra (zapobiega powikłaniom bazy)",
+      "link_id": "nagietek_lekarski"
+    },
+    {
+      "nazwa": "Oliwa z oliwek i Wosk pszczeli",
+      "czesc_rosliny": "nośnik",
+      "ilosc": "100ml / 20g",
+      "filar": "4_poslaniec",
+      "smak_ajurweda": "słodki",
+      "tropizm_organowy": "Skóra głęboka (transportuje lek pod naskórek)",
+      "link_id": null
+    },
+    {
+      "nazwa": "Żywica sosnowa",
+      "czesc_rosliny": "żywica",
+      "ilosc": "1 mała grudka",
+      "filar": "5_korektor",
+      "smak_ajurweda": "ostry_aromatyczny",
+      "tropizm_organowy": "Płuca / Skóra",
+      "link_id": "sosna_zwyczajna"
+    }
+  ],
+
+  "sposob_przygotowania": [
+    "Faza 1 (Ekstrakcja gorąca): Korę dębu i krwawnik zalać niewielką ilością mocnego alkoholu, by zwilżyć surowiec (zostawić na 2 godziny).",
+    "Faza 2 (Maceracja tłuszczowa): Przenieść zioła do oliwy. Ogrzewać w kąpieli wodnej (max 60°C) przez 3 godziny.",
+    "Faza 3 (Wygładzanie): Do gorącego oleju dodać nagietek oraz żywicę sosnową. Odstawić na 30 minut.",
+    "Faza 4 (Formowanie): Przecedzić przez gęste płótno. W gorącym oleju rozpuścić wosk pszczeli. Przelać do sterylnych słoiczków."
+  ],
+
+  "stosowanie_i_dawkowanie": {
+    "okolicznosci_stosowania": "Używać wyłącznie na czyste rany cięte (np. po nożu), głębokie otarcia i do zasklepiania ran po zatamowaniu ostrego krwotoku. NIE stosować na rany kąsane, kłute (ryzyko tężca) ani mocno zakażone, ponieważ maść odcina dostęp tlenu.",
+    "dawkowanie_standardowe": "Oczyścić ranę, nałożyć grubą warstwę balsamu (ok. 2-3 mm, nie wcierać w uszkodzoną tkankę), przykryć czystym opatrunkiem lnianym.",
+    "skalowanie_pacjenta": "Bezpieczny dla dzieci od 3. roku życia (stosować cieńszą warstwę). U seniorów o pergaminowej, cienkiej skórze stosować punktowo – nadmiar garbników dębu może zbytnio ściągnąć i wysuszyć zdrową tkankę wokół rany."
+  },
+
+  "wlasciwosci_fizyczne": {
+    "barwienie_skory": "Tak, dąb i nagietek nadają skórze przejściowy, żółto-brązowy odcień (zmywalny wodą z mydłem).",
+    "barwienie_ubran": "Silnie brudzący. Pozostawia trudne do sprania, tłuste, żółto-brązowe plamy na bawełnie i lnie. Wymaga stosowania bandaży ochronnych.",
+    "konsystencja_i_slady": "Gęsta, woskowa maść. Pozostawia na skórze trwały, tłusty film ochronny, który nie wchłania się do końca (działa jak biologiczny plaster)."
+  },
+
+  "bezpieczenstwo_i_interakcje": {
+    "interakcje_z_lekami": "Brak znanych interakcji z lekami doustnymi. Nie stosować równocześnie z aptecznymi maściami sterydowymi na to samo miejsce (wosk zablokuje wchłanianie leków chemicznych).",
+    "ostrzezenia": "Obecność żywicy sosnowej sprawia, że balsam przez pierwsze kilkanaście sekund po nałożeniu może piec – jest to naturalny proces odkażania. W przypadku wystąpienia obrzęku alergicznego (uczulenie na nagietek/wosk), natychmiast zmyć olejem jadalnym."
+  }
+}
