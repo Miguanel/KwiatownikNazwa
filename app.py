@@ -115,31 +115,27 @@ def get_all_plants_list():
     return [f.replace('.json', '') for f in os.listdir(app.config['JSON_DATA_FOLDER']) if f.endswith('.json')]
 
 
-# --- TRASY (ROUTES) ---
 def get_all_recipes():
     all_recipes = []
-    # Lista ścieżek do Twoich plików
-    files = [
-            'data/przepisy/przepisy_medyczne.json',
-            'data/przepisy/przepisy_kulinarne.json',
-            'data/przepisy/medycyna_polowa.json',
-            'data/przepisy/medycyna_dermatologia.json',
-    ]
+    recipes_dir = os.path.join(app.root_path, 'data', 'przepisy')
 
-    for file_path in files:
-        if os.path.exists(file_path):
-            try:
-                with open(file_path, 'r', encoding='utf-8') as f:
-                    data = json.load(f)
-                    # POPRAWKA: Jeśli to słownik, wyciągnij listę z klucza "przepisy"
-                    if isinstance(data, dict) and "przepisy" in data:
-                        all_recipes.extend(data["przepisy"])
-                    elif isinstance(data, list):
-                        all_recipes.extend(data)
-                    else:
-                        all_recipes.append(data)
-            except Exception as e:
-                print(f"Błąd ładowania pliku {file_path}: {e}")
+    if os.path.exists(recipes_dir):
+        for filename in os.listdir(recipes_dir):
+            # Ładujemy wszystkie JSONy oprócz wzorca
+            if filename.endswith('.json') and filename != 'wzorzec_przepisu.json':
+                file_path = os.path.join(recipes_dir, filename)
+                try:
+                    with open(file_path, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                        # Obsługa różnej struktury plików
+                        if isinstance(data, dict) and "przepisy" in data:
+                            all_recipes.extend(data["przepisy"])
+                        elif isinstance(data, list):
+                            all_recipes.extend(data)
+                        else:
+                            all_recipes.append(data)
+                except Exception as e:
+                    print(f"Błąd ładowania pliku {filename}: {e}")
 
     return all_recipes
 
@@ -511,50 +507,18 @@ def logout():
 
 # Przepisy
 
-def load_recipes():
-    recipes = []
-    # Zakładam, że pliki nazywają się tak jak poniżej - sprawdź to!
-    files = ['data/przepisy/przepisy_medyczne.json', 'data/przepisy/przepisy_kulinarne.json']
-
-    for file_path in files:
-        # Pamiętaj o użyciu resource_path jeśli nadal budujesz .exe!
-        # Jeśli uruchamiasz lokalnie/na Render, wystarczy os.path.join
-        try:
-            # full_path = resource_path(file_path) # Odkomentuj dla wersji .exe
-            full_path = os.path.join(app.root_path, file_path)  # Dla wersji standardowej
-
-            with open(full_path, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-
-                # POPRAWKA: Twoje dane są w kluczu "przepisy"
-                if isinstance(data, dict) and "przepisy" in data:
-                    recipes.extend(data["przepisy"])
-                elif isinstance(data, list):
-                    recipes.extend(data)
-
-        except FileNotFoundError:
-            print(f"Ostrzeżenie: Nie znaleziono pliku {file_path}")
-        except Exception as e:
-            print(f"Błąd ładowania pliku {file_path}: {e}")
-
-    return recipes
-
-
 @app.route('/przepisy/', methods=['GET'])
 def przepisy():
     query = request.args.get('q', '').lower().strip()
-    all_recipes = load_recipes()
+    all_recipes = get_all_recipes() # ZMIENIONO: uzywamy nowej funkcji
     results = []
 
     if query:
         for recipe in all_recipes:
-            # Łączymy wszystkie ważne pola w jeden ciąg tekstowy do przeszukania
-            # Obsługujemy sytuację, gdzie pole może być puste (None)
             ingredients = " ".join(recipe.get('skladniki', []))
             properties = " ".join(recipe.get('wlasciwosci', []))
             features = " ".join(recipe.get('cechy', []))
 
-            # Dodajemy też nazwę rośliny i tytuł
             searchable_text = (
                 f"{recipe.get('tytul', '')} "
                 f"{recipe.get('roslina', '')} "
@@ -564,7 +528,6 @@ def przepisy():
             if query in searchable_text:
                 results.append(recipe)
     else:
-        # Jeśli nic nie wpisano, pokazujemy np. losowe 20 lub wszystkie (zależy od wydajności)
         results = all_recipes
 
     return render_template('recipes.html', results=results, query=query)
@@ -573,7 +536,7 @@ def przepisy():
 @app.route('/api/recipe_suggestions')
 def recipe_suggestions():
     """Zwraca listę pojedynczych słów kluczowych (bez śmieci i spójników)"""
-    all_recipes = load_recipes()
+    all_recipes = get_all_recipes()
     keywords = set()
 
     # Słowa do zignorowania (spójniki, przyimki, jednostki miary)
@@ -639,7 +602,7 @@ def api_all_recipes():
             except json.JSONDecodeError:
                 pass
 
-    return jsonify(all_recipes)
+    return jsonify(get_all_recipes)
 
 
 @app.route('/api/all_plants.json')
