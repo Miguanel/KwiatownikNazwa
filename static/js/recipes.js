@@ -429,3 +429,4 @@ window.clearSearch = function() {
         filterRecipes('');
     }
 };
+
