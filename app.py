@@ -354,6 +354,31 @@ def get_all_therapeutic_keywords():
     return sorted([word for word in keywords if len(word) > 3])
 
 
+@app.route('/szukaj_terapeutyczna/', methods=['GET', 'POST'])
+def szukaj_terapeutyczna():
+    suggestions = get_all_therapeutic_keywords()  # Pobieramy słowa do autouzupełniania
+    results = []
+    query = ""
+
+    if request.method == 'POST':
+        query = request.form.get('query', '').lower()
+        all_plants_ids = get_all_plants_list()
+
+        for pid in all_plants_ids:
+            data = get_plant_data(pid)
+            if 'zastosowanie' not in data:
+                print(f"UWAGA: Plik {pid}.json nie posiada sekcji zastosowanie!")
+
+            full_text = str(data).lower()
+            if query in full_text:
+                results.append(data)
+
+    return render_template('szukaj_terapeutyczna.html',
+                           results=results,
+                           query=query,
+                           suggestions=suggestions)
+
+
 # --- LOGIKA GENERATORA ---
 @app.route('/generator/', methods=['GET', 'POST'])
 def generator():
@@ -487,11 +512,7 @@ def logout():
 def load_recipes():
     recipes = []
     # Zakładam, że pliki nazywają się tak jak poniżej - sprawdź to!
-    files = ['data/przepisy/przepisy_medyczne.json',
-             'data/przepisy/przepisy_kulinarne.json',
-             'data/przepisy/medycyna_polowa.json',
-             'data/przepisy/medycyna_dermatologia.json',
-             ]
+    files = ['data/przepisy/przepisy_medyczne.json', 'data/przepisy/przepisy_kulinarne.json']
 
     for file_path in files:
         # Pamiętaj o użyciu resource_path jeśli nadal budujesz .exe!

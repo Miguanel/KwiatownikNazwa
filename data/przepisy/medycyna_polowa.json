@@ -3372,7 +3372,6 @@
     }
   },
 
-
   {
     "id": "spageryczny_balsam_rycerski",
     "tytul": "Spageryczny Eliksir na Rany Głębokie (Alchemia Ognia)",
@@ -3386,15 +3385,15 @@
       "Wzorzec 5 filarów"
     ],
     "klasyfikacja_dzialania": {
-      "skalowanie_toksykologiczne": "Zioła Silne. Preparat o ekstremalnym stężeniu minerałów i olejków, stosować tylko na otwarte rany grożące amputacją.",
+      "skalowanie_toksykologiczne": "Zioła Silne. Żrący płyn, który leje się tylko tam, gdzie kowal ostrzy piłę do cięcia gnatów.",
       "matryca_wu_xing": {
         "zywiol_leczony": "Woda i Ogień (Głębokie ropienie i martwica w ranie kłutej)",
         "narzad_matczyny_do_wsparcia": "Drzewo (Wątroba)",
-        "porada_matrycy": "Eliksir wypala Ogień zakażenia. Pacjent doświadczy silnych potów uwalniających toksyny. Wspieraj Wątrobę ciepłymi naparami z ostropestu."
+        "porada_matrycy": "Eliksir żre zgniliznę żywym Ogniem. Chory spoci się jak szczur, wypluwając truciznę przez skórę. Pój go ciepłym ostropestem, by Wątroba nie pękła z wysiłku."
       },
       "triada_kampo": {
         "cel_glowny": "Tokuso (Zatrzymanie toksyn) i Ki (Energia)",
-        "wyjasnienie": "Sole spageryczne drastycznie alkalizują środowisko rany, niszcząc Tokuso, a esencje uderzają w Ki, wybudzając pacjenta z letargu."
+        "wyjasnienie": "Spalony kamień ziół brutalnie wypala gniazdo zarazy (Tokuso), a spirytus bije jak dzwon w opadające siły (Ki), budząc na wpół martwego z letargu."
       }
     },
     "wymogi_szamanskie_i_czasowe": {
@@ -3409,7 +3408,7 @@
         "ilosc": "4 garście",
         "filar": "1_bazowy",
         "smak_ajurweda": "gorzki_cierpki",
-        "tropizm_organowy": "Skóra / Nerwy (baza gojąca i regenerująca)",
+        "tropizm_organowy": "Skóra / Nerwy (Złota krew lecząca poszarpane, sine mięso.)",
         "link_id": "dziurawiec_zwyczajny"
       },
       {
@@ -3418,7 +3417,7 @@
         "ilosc": "1 łyżka",
         "filar": "2_wzmocnienie",
         "smak_ajurweda": "gorzki_ciepły",
-        "tropizm_organowy": "Krew (potężnie antyseptyczna, sterylizuje eliksir)",
+        "tropizm_organowy": "Krew (Gorzki płacz drzewa, który dusi w zarodku trupi zapach gnijącej rany.)",
         "link_id": null
       },
       {
@@ -3427,7 +3426,7 @@
         "ilosc": "500 ml",
         "filar": "3_minister",
         "smak_ajurweda": "ostry",
-        "tropizm_organowy": "Ogólnoustrojowy (ekstrahuje 'Duszę' rośliny - olejki)",
+        "tropizm_organowy": "Ogólnoustrojowy (Piekący ogień w płynie. Wyrywa z ziół to, co najmocniejsze, i ciągnie za sobą pod skórę.)",
         "link_id": null
       },
       {
@@ -3436,7 +3435,7 @@
         "ilosc": "uzyskany z procesu",
         "filar": "4_poslaniec",
         "smak_ajurweda": "słony_ziemisty",
-        "tropizm_organowy": "Komórki skóry (sole ułatwiają głęboką penetrację płynu przez zjawisko osmozy)",
+        "tropizm_organowy": "Komórki skóry (Spalony na wiór trup ziół, który siłą wgryza się w żywą tkankę, ciągnąc lekarstwo do samego dna dziury.)",
         "link_id": null
       },
       {
@@ -3445,7 +3444,7 @@
         "ilosc": "1 płatek",
         "filar": "5_korektor",
         "smak_ajurweda": "bez smaku",
-        "tropizm_organowy": "Serce (wg alchemików stabilizuje eliksir i chroni przed czarną magią)",
+        "tropizm_organowy": "Serce (Zimny błysk Króla Metali, by eliksir nie skwasił się od smrodu zakażonej krwi.)",
         "link_id": null
       }
     ],
@@ -3455,9 +3454,9 @@
       "Faza 3 (Małżeństwo Alchemiczne): Do zachowanej nalewki wsypać białe, roślinne sole spageryczne oraz płatek złota. Wstrząsać codziennie przez kolejne 14 dni, aż płyn w pełni dojrzeje."
     ],
     "stosowanie_i_dawkowanie": {
-      "okolicznosci_stosowania": "Krytyczne zakażenia ran, gdzie standardowe maści zawodzą. Rany kłute, które ropieją od wewnątrz (np. od brudnych strzał).",
-      "dawkowanie_standardowe": "Płyn zakraplać bezpośrednio w głąb rany kłutej. Z uwagi na stężenie soli i alkoholu wywołuje skrajny, piekący ból, który szybko mija, zostawiając tkankę sterylną.",
-      "skalowanie_pacjenta": "Może wywołać szok bólowy. Używać tylko na dorosłych pacjentach w stanie zagrożenia utraty kończyny."
+      "okolicznosci_stosowania": "Dziury po zardzewiałych bełtach, głębokie pchnięcia ropiejące czarną posoką. Tylko wtedy, gdy z rany czuć już otwarty cmentarz.",
+      "dawkowanie_standardowe": "Lej spirytus prosto w czarną dziurę. Ból wygnie pacjenta w pałąk, ale gdy przeminie, w ranie nie ostanie się ani krzta zgnilizny.",
+      "skalowanie_pacjenta": "Ból może zabić słabego. Tylko dla chłopów, którym wóz zmiażdżył nogę, lub rycerzy po bitwie."
     },
     "wlasciwosci_fizyczne": {
       "barwienie_skory": "Nie barwi.",
@@ -3466,7 +3465,7 @@
     },
     "bezpieczenstwo_i_interakcje": {
       "interakcje_z_lekami": "Brak.",
-      "ostrzezenia": "Eliksir działa żrąco na martwą tkankę. Stosować punktowo."
+      "ostrzezenia": "Ten płyn pali trupie mięso jak kwas! Lej tylko w środek zgnilizny, bo czyste ciało spali na węgiel."
     }
   },
   {
@@ -3482,15 +3481,15 @@
       "Wzorzec 4 filarów (Klasyczny)"
     ],
     "klasyfikacja_dzialania": {
-      "skalowanie_toksykologiczne": "Zioła Normalizujące. Bardzo bezpieczne, wymagające jednak precyzji w produkcji.",
+      "skalowanie_toksykologiczne": "Zioła Normalizujące. Bezpieczny, ciężki korek na rzeki krwi. Uwarzysz go źle – pacjent się wykrwawi.",
       "matryca_wu_xing": {
         "zywiol_leczony": "Woda (Utrata krwi, głębokie rozcięcia)",
         "narzad_matczyny_do_wsparcia": "Metal (Płuca)",
-        "porada_matrycy": "Balsam blokuje Wodę. Płuca zarządzają cyrkulacją; utrzymuj głęboki i spokojny oddech pacjenta, aby uniknąć paniki przy krwotoku."
+        "porada_matrycy": "Ten klej dusi krwawiącą Wodę. Kaź choremu oddychać głęboko i powoli (Metal), by serce nie pompowało krwi jak oszalałe od strachu."
       },
       "triada_kampo": {
         "cel_glowny": "Ketsu (Krew)",
-        "wyjasnienie": "Natychmiastowo zamyka naczynia krwionośne, nie uszkadzając przy tym samej tkanki skóry (co ma miejsce przy kauteryzacji ogniem)."
+        "wyjasnienie": "Twardo chwyta i zamyka pęknięte żyły, bez smrodu i zniszczeń, jakie zostawia wypalanie rany rozżarzonym żelazem."
       }
     },
     "wymogi_szamanskie_i_czasowe": {
@@ -3505,7 +3504,7 @@
         "ilosc": "2 łyżki",
         "filar": "1_bazowy",
         "smak_ajurweda": "cierpki",
-        "tropizm_organowy": "Skóra / Naczynia (ścina białka krwi i zamyka ranę)",
+        "tropizm_organowy": "Skóra / Naczynia (Twardy pancerz, który brutalnie zmusza rzekę krwi do ścięcia się w gęsty glut.)",
         "link_id": "dab_szypulkowy"
       },
       {
@@ -3514,7 +3513,7 @@
         "ilosc": "1 łyżka",
         "filar": "2_wzmocnienie",
         "smak_ajurweda": "cierpki_chłodny",
-        "tropizm_organowy": "Krew (potęguje działanie kory dębu, ale jest bardzo wrażliwy na wysoką temperaturę)",
+        "tropizm_organowy": "Krew (Zimna krew łąki. Złapie pękniętą żyłę, o ile go nie ugotujesz podczas warzenia.)",
         "link_id": "tasznik_pospolity"
       },
       {
@@ -3523,7 +3522,7 @@
         "ilosc": "100 ml",
         "filar": "3_minister",
         "smak_ajurweda": "słodki_ciężki",
-        "tropizm_organowy": "Skóra (bardzo gęsty olej, działa jak fizyczny korek zatykający ranę)",
+        "tropizm_organowy": "Skóra (Tłusty, ciężki lep, wbijający się w dziurę po mieczu jak fizyczny korek z dziegciu.)",
         "link_id": null
       },
       {
@@ -3532,7 +3531,7 @@
         "ilosc": "50 ml",
         "filar": "4_poslaniec",
         "smak_ajurweda": "kwaśny",
-        "tropizm_organowy": "Krew (kwasowość otwiera struktury twardej kory dębu przed połączeniem z olejem)",
+        "tropizm_organowy": "Krew (Kwaśny żar, który łamie twardą korę, by oddała swoje ściągające soki.)",
         "link_id": null
       },
       {
@@ -3541,7 +3540,7 @@
         "ilosc": "1 łyżka",
         "filar": "5_korektor",
         "smak_ajurweda": "słodki",
-        "tropizm_organowy": "Skóra (zestala miksturę do formy stabilnej pasty)",
+        "tropizm_organowy": "Skóra (Twardy kit, który spaja tę rzeźnicką pastę w jedno.)",
         "link_id": null
       }
     ],
@@ -3551,18 +3550,18 @@
       "Faza 3 (Synergia chłodna - 35°C): Gdy olej zacznie lekko mętnieć od stygnięcia (ale wciąż jest płynny), natychmiast wsypać sproszkowany tasznik, który uwolni swoje delikatne enzymy krzepnące tylko w ciepłym, ale nie parzącym oleju."
     ],
     "stosowanie_i_dawkowanie": {
-      "okolicznosci_stosowania": "Trudne do opanowania krwotoki żylne, głębokie skaleczenia powypadkowe, krwawiące wrzody.",
-      "dawkowanie_standardowe": "Nałożyć zimną, stężałą pastę na czysty wacik i mocno docisnąć do krwawiącego miejsca. Przytrzymać przez 15 minut.",
+      "okolicznosci_stosowania": "Przecięte żyły od noża, ziejące szramy lejące czerwoną posoką jak z cebra. Wszędzie, gdzie krew nie chce stanąć.",
+      "dawkowanie_standardowe": "Nabierz tej lepkiej gliny na szmatę i wciśnij mocno w sikającą krwią szramę. Trzymaj mocno, aż dąb chwyci krew za gardło na dobre.",
       "skalowanie_pacjenta": "Bezpieczne dla każdego."
     },
     "wlasciwosci_fizyczne": {
       "barwienie_skory": "Lekko barwi brzegi rany na ciemnobrązowo.",
       "barwienie_ubran": "Trwale brudzi materiały na ciemny, tłusty brąz.",
-      "konsystencja_i_slady": "Niezwykle gęsta, lepka i kleista pasta (dzięki olejowi rycynowemu) o zapachu wina i wosku."
+      "konsystencja_i_slady": "Gęsta jak błoto, lepka pasta rzeźnika, cuchnąca kwaśnym winem i woskiem."
     },
     "bezpieczenstwo_i_interakcje": {
       "interakcje_z_lekami": "Brak.",
-      "ostrzezenia": "Nie doprowadzać do wrzenia po dodaniu tasznika – zniszczy to całkowicie właściwości tamujące krew tej receptury."
+      "ostrzezenia": "Jeśli wrzucisz tasznik do wrzątku – zabijesz go na zawsze. Uwarzysz tylko śmierdzący tłuszcz, a pacjent wykrwawi się na Twoich oczach!"
     }
   },
   {
@@ -3578,15 +3577,15 @@
       "Wzorzec 5 filarów"
     ],
     "klasyfikacja_dzialania": {
-      "skalowanie_toksykologiczne": "Zioła Silne do Heroicznych. Zmusza organizm do wchłonięcia substancji przez nienaruszoną skórę.",
+      "skalowanie_toksykologiczne": "Zioła Heroiczne. Wściekły plaster. Siłą otwiera pory i brutalnie wpycha leki pod nienaruszoną skórę.",
       "matryca_wu_xing": {
         "zywiol_leczony": "Drzewo i Ogień (Głębokie wylewy krwi pod powięzią, zgniecenia mięśni bez rany zewnętrznej)",
         "narzad_matczyny_do_wsparcia": "Woda (Nerki)",
-        "porada_matrycy": "Gwałtowne otwarcie porów skóry przez kapsaicynę to wyzwolenie Ognia. Zabezpiecz pacjenta przed wiatrem i wyziębieniem, gdyż tak otwarta skóra jest bezbronna na patogeny."
+        "porada_matrycy": "Żywy Ogień rozrywa skórę, otwierając ją na wylot. Owijaj chorego kocami! Jeśli owieje go wiatr, zaraza wlezie przez otwarte pory prosto w trzewia."
       },
       "triada_kampo": {
         "cel_glowny": "Ketsu (Krew)",
-        "wyjasnienie": "Czarny pieprz agresywnie rozszerza naczynia Ketsu na powierzchni skóry, dosłownie wciągając ciężkie alkaloidy gojące z żywokostu prosto w głąb zmiażdżonego mięśnia."
+        "wyjasnienie": "Czarny ogień z pieprzu brutalnie rozszerza potoki Ketsu, dosłownie wciągając leśny śluz pod grubą skórę prosto do zgniecionego mięsa."
       }
     },
     "wymogi_szamanskie_i_czasowe": {
@@ -3601,7 +3600,7 @@
         "ilosc": "3 łyżki",
         "filar": "1_bazowy",
         "smak_ajurweda": "słodki_śluzowy",
-        "tropizm_organowy": "Kości / Mięśnie (baza gojąca zmiażdżenia wewnętrzne, która sama z siebie słabo przenika przez grubą skórę)",
+        "tropizm_organowy": "Kości / Mięśnie (Śliski mąż, który sam z siebie przez twardą skórę nie przejdzie, ale wciśnięty do środka, w błyskawicznym tempie nadlewa poszarpane ścięgna.)",
         "link_id": "zywokost_lekarski"
       },
       {
@@ -3610,7 +3609,7 @@
         "ilosc": "1 płaska łyżeczka",
         "filar": "2_wzmocnienie",
         "smak_ajurweda": "wybitnie_ostry",
-        "tropizm_organowy": "Krew (bio-wzmacniacz: drastycznie otwiera pory i naczynia włosowate, wciągając żywokost pod skórę)",
+        "tropizm_organowy": "Krew (Okrutny klucznik. Parzy i rozdziera na boki pory skóry, robiąc wrota dla żywokostu.)",
         "link_id": null
       },
       {
@@ -3619,7 +3618,7 @@
         "ilosc": "1 łyżeczka",
         "filar": "3_minister",
         "smak_ajurweda": "gorzki",
-        "tropizm_organowy": "Wątroba (zapobiega rozkładowi tkanek w zgniecionym mięśniu beztlenowym)",
+        "tropizm_organowy": "Wątroba (Zabójca czarnego trupa. Nie da stłuczonemu mięsu zgnić i odpaść od kości.)",
         "link_id": "bylica_piolun"
       },
       {
@@ -3628,7 +3627,7 @@
         "ilosc": "2 łyżki",
         "filar": "4_poslaniec",
         "smak_ajurweda": "słodki",
-        "tropizm_organowy": "Tkanka podskórna (nośnik lipofilny niezbędny do transportu)",
+        "tropizm_organowy": "Tkanka podskórna (Tłusty wóz, na którym ten cały kram wjeżdża pod naskórek.)",
         "link_id": null
       },
       {
@@ -3637,7 +3636,7 @@
         "ilosc": "1 łyżka",
         "filar": "5_korektor",
         "smak_ajurweda": "ziemisty_zimny",
-        "tropizm_organowy": "Skóra (ogranicza destrukcyjne, parzące działanie pieprzu na sam naskórek)",
+        "tropizm_organowy": "Skóra (Zimna ziemia. Trzyma pieprz w ryzach, by nie wypalił naskórka do żywej krwi.)",
         "link_id": null
       }
     ],
@@ -3647,9 +3646,9 @@
       "Faza 3 (Zabezpieczenie): Na koniec wmieszać suchą zieloną glinkę, która wchłonie nadmiar ostrości i stworzy smolistą pastę."
     ],
     "stosowanie_i_dawkowanie": {
-      "okolicznosci_stosowania": "Głębokie stłuczenia, zmiażdżenia bez przerwania skóry (np. przygniecenie kołem wozu, upadek dużego ciężaru na udo), gdzie krwiak i uszkodzenie są głęboko w mięśniu i zwykła maść nie sięga.",
-      "dawkowanie_standardowe": "Nałożyć grubą warstwę pasty. Pacjent poczuje niemal natychmiastowe, głębokie gorąco (czasem ból od pieprzu). Zmyć po 2-3 godzinach letnią wodą. Powtórzyć następnego dnia.",
-      "skalowanie_pacjenta": "Kategorycznie zakazane u dzieci ze względu na ostre oparzenia pieprzem. Nie stosować na twarz, szyję i okolice serca."
+      "okolicznosci_stosowania": "Zmiażdżone kolanami kołami wozu, uda stłuczone końskimi kopytami. Ogromne, głębokie krwiaki, gdzie skóra jest cała, ale w środku wszystko to krwawa miazga.",
+      "dawkowanie_standardowe": "Zaklej tym błotem cały siny guz. Chory zawyje z gorąca pieprzu. Po kilku godzinach zmyj ten pożar, bo wypali mu dziurę. Powtórzyć następnego dnia.",
+      "skalowanie_pacjenta": "Nigdy nie kładź tego na dzieci, bo spłoną żywcem z bólu! Trzymaj z dala od oczu i karku."
     },
     "wlasciwosci_fizyczne": {
       "barwienie_skory": "Skóra robi się jaskrawoczerwona i przekrwiona.",
@@ -3657,8 +3656,8 @@
       "konsystencja_i_slady": "Ciężka, gliniasta maź o duszącym zapachu pieprzu i ziół."
     },
     "bezpieczenstwo_i_interakcje": {
-      "interakcje_z_lekami": "Piperyna drastycznie zwiększa wchłanianie wszelkich leków! Jeśli na skórze jest jakikolwiek inny lek farmakologiczny, plaster z pieprzem wtłoczy go do krwi w toksycznej dawce.",
-      "ostrzezenia": "Stosować WYŁĄCZNIE na skórę bez żadnych zadrapań i pęknięć. Kontakt tej maści z otwartą raną wywoła agonię bólową."
+      "interakcje_z_lekami": "Ten diabeł wciągnie pod skórę WSZYSTKO. Umyj pacjenta z innych maści, bo wtłoczysz mu do krwi jad z brudnego ciała!",
+      "ostrzezenia": "Jeśli ta wściekła pieprzowa maź dostanie się do otwartej rany, chory oszaleje z bólu i sam sobie odetnie nogę!"
     }
   },
   {
@@ -3675,15 +3674,15 @@
       "Wzorzec 5 filarów"
     ],
     "klasyfikacja_dzialania": {
-      "skalowanie_toksykologiczne": "Zioła Heroiczne (Stopień 4). Preparat niszczący tkanki (żrący). Używać wyłącznie jako ostateczność przy krwotokach tętniczych.",
+      "skalowanie_toksykologiczne": "Zioła Heroiczne. Żrący kamień śmierci. Bezlitosny proch rzeźników, kładziony tylko gdy śmierć z wykrwawienia stoi u progu.",
       "matryca_wu_xing": {
         "zywiol_leczony": "Ogień i Woda (Zatrzymanie krwotoku przez gwałtowne spalenie tkanki)",
         "narzad_matczyny_do_wsparcia": "Drzewo (Wątroba)",
-        "porada_matrycy": "Wypalenie rany (Ogień) drastycznie uszkadza układ. Wątroba (Drzewo) będzie musiała odbudować krew i oczyścić martwicę. Wymagany głęboki sen pacjenta po zabiegu."
+        "porada_matrycy": "Wypalenie tętnicy (Ogień) kosztuje drogo. Ciało spłonie chemicznym żarem. Wątroba i Płuca będą rzęzić z wysiłku, by to naprawić. Chory musi wpaść w twardy, głęboki sen na wiele dni."
       },
       "triada_kampo": {
         "cel_glowny": "Ketsu (Krew)",
-        "wyjasnienie": "Błyskawicznie ścina białka we krwi (Ketsu), tworząc twardy, chemiczny korek w przerwanym naczyniu krwionośnym, zastępując zszywanie chirurgiczne."
+        "wyjasnienie": "Żre i smaży żywą Krew (Ketsu), błyskawicznie kując w otwartej tętnicy czarny, spalony czop. Zastępuje szycie żelazem i ogniem."
       }
     },
     "wymogi_szamanskie_i_czasowe": {
@@ -3698,7 +3697,7 @@
         "ilosc": "2 łyżki",
         "filar": "1_bazowy",
         "smak_ajurweda": "skrajnie_cierpki",
-        "tropizm_organowy": "Naczynia krwionośne (ekstremalny środek ściągający, powoduje natychmiastowy skurcz naczyń)",
+        "tropizm_organowy": "Naczynia krwionośne (Lodowaty, cierpki kamień, od którego pęknięte tętnice kurczą się ze strachu i bólu.)",
         "link_id": null
       },
       {
@@ -3707,7 +3706,7 @@
         "ilosc": "1 łyżka",
         "filar": "2_wzmocnienie",
         "smak_ajurweda": "słony_ziemisty",
-        "tropizm_organowy": "Skóra (silnie alkaliczne środowisko przyspiesza reakcję koagulacji krwi)",
+        "tropizm_organowy": "Skóra (Białe truchło z dębu. Kiedy spotka się z octem i krwią, wybucha syczącym żarem.)",
         "link_id": "dab_szypulkowy"
       },
       {
@@ -3716,7 +3715,7 @@
         "ilosc": "1 łyżka",
         "filar": "3_minister",
         "smak_ajurweda": "cierpki_chłodny",
-        "tropizm_organowy": "Krew (wspomaga krzepnięcie na poziomie enzymatycznym pod warstwą spalonej tkanki)",
+        "tropizm_organowy": "Krew (Ostatnia deska ratunku tkająca tamę głęboko pod spalonym mięsem.)",
         "link_id": "tasznik_pospolity"
       },
       {
@@ -3725,7 +3724,7 @@
         "ilosc": "3 krople na porcję",
         "filar": "4_poslaniec",
         "smak_ajurweda": "kwaśny",
-        "tropizm_organowy": "Krew (kwas uruchamia gwałtowną, parzącą reakcję z alkalicznym popiołem dębowym w samej ranie)",
+        "tropizm_organowy": "Krew (Iskra z rzemienia! Zaledwie kropla rzucona w proszek budzi bestię, która sycząc spali żyły na węgiel.)",
         "link_id": null
       },
       {
@@ -3734,7 +3733,7 @@
         "ilosc": "1 łyżeczka",
         "filar": "5_korektor",
         "smak_ajurweda": "gorzki_aromatyczny",
-        "tropizm_organowy": "Nerwy (odkaża poparzoną tkankę i tłumi smród palonej krwi)",
+        "tropizm_organowy": "Nerwy (Święty dym ukrywający przed nozdrzami obrzydliwy smród smażonej na chemicznym ruszcie posoki.)",
         "link_id": null
       }
     ],
@@ -3745,18 +3744,18 @@
       "Faza 4 (Aktywacja bojowa): Tuż przed wsypaniem do rany, skropić proszek zaledwie 2-3 kroplami octu. Rozpocznie się gwałtowne syczenie."
     ],
     "stosowanie_i_dawkowanie": {
-      "okolicznosci_stosowania": "Amputacje polowe, głębokie rany rąbane z uszkodzeniem tętnic, gdzie ucisk nie tamuje krwi. Środek zastępuje przykładanie rozżarzonego żelaza.",
-      "dawkowanie_standardowe": "Pieniący się od octu proszek wepchnąć głęboko w krwawiące naczynie i mocno docisnąć lnem. Wywołuje natychmiastowy, potworny ból i dosłownie ścina krew w czarny korek.",
-      "skalowanie_pacjenta": "Może zabić bólem. Pacjent przed zabiegiem powinien otrzymać środki odurzające lub znieczulające."
+      "okolicznosci_stosowania": "Odcięte kończyny, rozrąbane toporem uda, sikające fontanny jasnej krwi tętniczej. Gdzie ucisk nie daje rady, tam rzucasz ten żar.",
+      "dawkowanie_standardowe": "Skrop proch octem, aż zacznie wściekle syczeć, i wepchnij ten żar gołą ręką w sam środek sikającej żyły! Ból będzie potworny, ale krew zetnie się w ułamek sekundy.",
+      "skalowanie_pacjenta": "Ten ból rwie duszę! Daj mu maku lub gorzały, zaknebuj usta drewnem, inaczej odgryzie sobie język."
     },
     "wlasciwosci_fizyczne": {
       "barwienie_skory": "Wypala skórę na czarno.",
       "barwienie_ubran": "Niszczy tkanki organiczne.",
-      "konsystencja_i_slady": "Biało-szary proszek, który po dodaniu octu i krwi zaczyna agresywnie syczeć i czernieć."
+      "konsystencja_i_slady": "Szary proch strzelniczy cyrulików. Z krwią i octem staje się czarnym, syczącym demonem."
     },
     "bezpieczenstwo_i_interakcje": {
       "interakcje_z_lekami": "Niszczy chemicznie każdą inną nałożoną maść.",
-      "ostrzezenia": "Zabieg pozostawia chemicznie spaloną tkankę, która po uratowaniu pacjenta przed wykrwawieniem będzie bardzo długo ropieć i wymagać czyszczenia."
+      "ostrzezenia": "Uratujesz mu życie, ale zostawisz w ciele garść czarnego, martwego węgla z własnego mięsa. Będzie to gnić tygodniami, szykuj noże do skrobania!"
     }
   },
   {
@@ -3773,15 +3772,15 @@
       "Triada Japońska"
     ],
     "klasyfikacja_dzialania": {
-      "skalowanie_toksykologiczne": "Zioła Odżywcze/Silne. Zaskakująco bezpieczny dla zdrowej tkanki, agresywny tylko wobec martwicy.",
+      "skalowanie_toksykologiczne": "Zioła Silne. Żywy, żrący zjadacz czarnych strupów. Czyści martwe, oszczędza żywe.",
       "matryca_wu_xing": {
         "zywiol_leczony": "Ziemia (Gnijąca, martwa tkanka wewnątrz rany)",
         "narzad_matczyny_do_wsparcia": "Ogień (Serce)",
-        "porada_matrycy": "Oczyszczenie zgnilizny z Ziemi uwalnia olbrzymie ilości energii. Zadbaj o Serce pacjenta, by wytrzymało gorączkę towarzyszącą 'trawieniu' martwicy."
+        "porada_matrycy": "Wytrawianie wielkiego płata czarnej śmierci obudzi potworny Ogień i gorączkę. Strzeż Serca pacjenta jak oka w głowie, by chory nie spłonął od własnego żaru."
       },
       "triada_kampo": {
         "cel_glowny": "Tokuso (Zatrzymanie toksyn)",
-        "wyjasnienie": "Mikstura zachowuje się jak żywy organizm – produkuje nadtlenek wodoru i kwas glukonowy, które dosłownie 'zjadają' Tokuso (martwe komórki), nie ruszając zdrowego Ketsu."
+        "wyjasnienie": "Ten miód żyje! Sam trawi i żre gnijącą martwicę (Tokuso), plując kwasem, który topi zgniliznę, ale szanuje czystą, czerwoną Krew (Ketsu)."
       }
     },
     "wymogi_szamanskie_i_czasowe": {
@@ -3796,7 +3795,7 @@
         "ilosc": "1 szklanka",
         "filar": "1_bazowy",
         "smak_ajurweda": "słodki",
-        "tropizm_organowy": "Skóra / Krew (tworzy środowisko hiperosmolarne, wyciągając wodę z bakterii i zabijając je)",
+        "tropizm_organowy": "Skóra / Krew (Gęsty lep wysysający soki ze wszystkiego co ropieje. Suszy bakterie na wiór.)",
         "link_id": null
       },
       {
@@ -3805,7 +3804,7 @@
         "ilosc": "1 cała główka",
         "filar": "2_wzmocnienie",
         "smak_ajurweda": "ostry_gorący",
-        "tropizm_organowy": "Krew (allicyna niszczy gangrenę, a sam czosnek inicjuje proces wolnej fermentacji miodu)",
+        "tropizm_organowy": "Krew (Piekielny smród odpalający żar fermentacji. Zabija gangrenę tak, że robactwo piska z bólu.)",
         "link_id": "czosnek_pospolity"
       },
       {
@@ -3814,7 +3813,7 @@
         "ilosc": "1 łyżeczka",
         "filar": "3_minister",
         "smak_ajurweda": "wybitnie_gorzki",
-        "tropizm_organowy": "Wątroba (punktowo rozpuszcza najbardziej oporne złogi martwicze)",
+        "tropizm_organowy": "Wątroba (Gorzki kat, który kruszy skamieniałe, czarne brzegi odmrożeń na miazgę.)",
         "link_id": "glistnik_jaskolcze_ziele"
       },
       {
@@ -3823,7 +3822,7 @@
         "ilosc": "1 łyżka",
         "filar": "4_poslaniec",
         "smak_ajurweda": "bez smaku",
-        "tropizm_organowy": "Ogólnoustrojowy (dodanie mikroskopijnej ilości wody do surowego miodu uruchamia enzym oksydazę glukozową, który zaczyna stale produkować wodę utlenioną)",
+        "tropizm_organowy": "Ogólnoustrojowy (Klucz życia. Kropla wody budzi śpiący miód z letargu, zamieniając go w bąbelkującą kadź palącego kwasu.)",
         "link_id": "brzoza_brodawkowata"
       },
       {
@@ -3832,7 +3831,7 @@
         "ilosc": "1 łyżka",
         "filar": "5_korektor",
         "smak_ajurweda": "słodki",
-        "tropizm_organowy": "Skóra (chroni zdrowe, różowe brzegi rany przed strawieniem przez enzymy)",
+        "tropizm_organowy": "Skóra (Złoty obrońca. Stoi na straży żywego mięsa, by głodny miód nie odgryzł mu ani kawałka.)",
         "link_id": "nagietek_lekarski"
       }
     ],
@@ -3842,21 +3841,20 @@
       "Faza 3 (Dojrzewanie enzymatyczne): Odstawić w temperaturze pokojowej w ciemne miejsce na 3 tygodnie. Miód stanie się bardzo rzadki, ściemnieje, nabierze ostrego zapachu i zacznie lekko bąbelkować na powierzchni. Mikstura staje się 'żywa'."
     ],
     "stosowanie_i_dawkowanie": {
-      "okolicznosci_stosowania": "Czarne, gnijące rany, martwica po odmrożeniach, potężne odleżyny z żółtą ropą. Zastępuje chirurgiczne wycinanie martwych tkanek (tzw. debridement).",
-      "dawkowanie_standardowe": "Nałożyć płynny, sfermentowany miód głęboko do wnętrza rany. Uszczelnić opatrunek gazą. Zmieniać raz dziennie. Po zdjęciu opatrunku martwe tkanki będą płynne i łatwe do wypłukania, a pod spodem ukaże się czyste, różowe mięso.",
+      "okolicznosci_stosowania": "Czarne zgnilizny po mrozie, odleżyny pełne żółtej juchy, cuchnące trupem dziury w udach. Tam, gdzie cyrulik rzezałby mięso nożem do samej kości.",
+      "dawkowanie_standardowe": "Nalej tej cuchnącej i bąbelkującej mazi w sam środek zgniłej dziury. Uszczelnij. Rano wylejesz z rany płynny trupi gnój, a pod nim ujrzysz gołe, czerwone mięso.",
       "skalowanie_pacjenta": "Bezpieczne przy ranach otwartych u dorosłych. Nie połykać."
     },
     "wlasciwosci_fizyczne": {
       "barwienie_skory": "Nie barwi.",
       "barwienie_ubran": "Lepkie, miodowe plamy o mocnym zapachu czosnku.",
-      "konsystencja_i_slady": "Ciemnobrązowy, rzadki syrop pachnący czosnkiem, starym alkoholem i kwasem."
+      "konsystencja_i_slady": "Płynna, fermentująca breja rzucająca dławiący smród zgnitego czosnku i kwasu."
     },
     "bezpieczenstwo_i_interakcje": {
       "interakcje_z_lekami": "Żywe enzymy miodu zniszczą większość nałożonych jednocześnie maści aptecznych. Stosować wyłącznie solo.",
-      "ostrzezenia": "Nie dopuścić do zakażenia mikstury w słoiku poprzez wkładanie brudnych palców lub łyżek. Zawsze odlewać porcję."
+      "ostrzezenia": "Do słoja nie wpychaj brudnego palucha ni oblizanej łyżki, bo żywy miód zarazi się od Ciebie i skisnie na śmierć! Ulewaj ostrożnie na czystą wargę rany."
     }
   },
-
   {
     "id": "kaskadowy_olej_kamforowy_na_okostna",
     "tytul": "Kaskadowy Olej Kamforowo-Borsuczy na Stawy",
@@ -3870,15 +3868,15 @@
       "Wymuszona Synergia Wchłaniania (Bio-wzmacniacze)"
     ],
     "klasyfikacja_dzialania": {
-      "skalowanie_toksykologiczne": "Zioła Silne. Preparat o ekstremalnej penetracji tkankowej. Nie stosować na twarz.",
+      "skalowanie_toksykologiczne": "Zioła Silne. Leśny świder wnikający do samego szpiku gnatów.",
       "matryca_wu_xing": {
         "zywiol_leczony": "Drzewo i Woda (Zmiażdżenia chrząstek, ciężkie uszkodzenia aparatu ruchu z głębokim obrzękiem)",
         "narzad_matczyny_do_wsparcia": "Woda (Nerki)",
-        "porada_matrycy": "Głębokie ciepło wtłaczane w stawy uwalnia zastałe Zimno. Osłonić stawy wełną i dbać o energię Nerek."
+        "porada_matrycy": "Gdy ten ogień przewierci kość, na zewnątrz uderzy skamieniałe Zimno. Zakuj stawy w owcze runo, by wypuszczony mróz nie sparaliżował całego ciała."
       },
       "triada_kampo": {
         "cel_glowny": "Ketsu (Krew) i Sui (Płyny)",
-        "wyjasnienie": "Rozpuszcza stwardniałe skrzepy Ketsu w torebkach stawowych, stymulując wytwarzanie mazi stawowej (Sui)."
+        "wyjasnienie": "Topi stężałe, fioletowe zakrzepy (Ketsu) siedzące w worku stawu, ruszając wodę życia (Sui), by naoliwiła zesztywniałe zawiasy."
       }
     },
     "wymogi_szamanskie_i_czasowe": {
@@ -3893,7 +3891,7 @@
         "ilosc": "1 płaska łyżka",
         "filar": "1_bazowy",
         "smak_ajurweda": "ostry_aromatyczny_chłodny",
-        "tropizm_organowy": "Układ nerwowy / Naczynia (paradoksalne działanie: najpierw chłodzi nerwy znieczulając je, potem drastycznie rozszerza naczynia, grzejąc)",
+        "tropizm_organowy": "Układ nerwowy / Naczynia (Lodowaty wiatr, który znieczula rwanie kości, by po chwili buchnąć rozżarzonym ogniem ze środka żył.)",
         "link_id": null
       },
       {
@@ -3902,7 +3900,7 @@
         "ilosc": "200 g",
         "filar": "2_wzmocnienie",
         "smak_ajurweda": "słodki",
-        "tropizm_organowy": "Stawy głębokie (unikalna struktura kwasów tłuszczowych przenika bez oporu przez ludzką skórę do samych kości)",
+        "tropizm_organowy": "Stawy głębokie (Głęboki wędrowiec. Tłuszcz dzikiego bestii, dla którego ludzka skóra to jak cienki pergamin. Ślizgiem wchodzi pod samą okostną.)",
         "link_id": null
       },
       {
@@ -3911,7 +3909,7 @@
         "ilosc": "2 łyżki",
         "filar": "3_minister",
         "smak_ajurweda": "ostry_ciepły",
-        "tropizm_organowy": "Krew / Ścięgna (działa silnie rozkurczowo na przykurcze pourazowe)",
+        "tropizm_organowy": "Krew / Ścięgna (Gorący miecz rozcinający węzły i przykurcze pozrywanych rzemyków stawowych.)",
         "link_id": "arcydziegiel_litwor"
       },
       {
@@ -3920,7 +3918,7 @@
         "ilosc": "10 kropel",
         "filar": "4_poslaniec",
         "smak_ajurweda": "wybitnie_ostry",
-        "tropizm_organowy": "Skóra (bio-wzmacniacz otwierający drogę kamforze i tłuszczowi)",
+        "tropizm_organowy": "Skóra (Wściekły taran, który wyważa bramy w skórze, dając wjazd całej tej leśnej truciźnie.)",
         "link_id": null
       },
       {
@@ -3929,7 +3927,7 @@
         "ilosc": "1 łyżeczka",
         "filar": "5_korektor",
         "smak_ajurweda": "gorzki_ciepły",
-        "tropizm_organowy": "Nerwy (kwas bursztynowy regeneruje mikrouszkodzenia komórek przy stanach zapalnych chrząstki)",
+        "tropizm_organowy": "Nerwy (Złoty pył, co łata pęknięcia i rysy na gładkiej chrząstce.)",
         "link_id": null
       }
     ],
@@ -3939,8 +3937,8 @@
       "Faza 3 (Zamknięcie synergii - 30°C): Na sam koniec, tuż przed stężeniem masy, wkropić olejek z czarnego pieprzu, szybko wymieszać i zamknąć szczelnie słoik."
     ],
     "stosowanie_i_dawkowanie": {
-      "okolicznosci_stosowania": "Ciężkie urazy tępe, uszkodzenia powięzi i torebek stawowych po upadkach z wysokości. Silne przykurcze mięśniowe wokół urazu. Tzw. 'obite kości'.",
-      "dawkowanie_standardowe": "Wmasowywać mocno, punktowo w miejsce bólu. Przyłożyć ciepły, wełniany okład. Mikstura natychmiastowo znieczula staw chłodem, by po 10 minutach 'zapalić' go dogłębnym ciepłem.",
+      "okolicznosci_stosowania": "Kości grzmotnięte pałką, pęknięte worki na stawach po skoku z powały. Zamarznięte, sztywne zawiasy chrupiące jak szkło i wyjące głuchym, tępym bólem.",
+      "dawkowanie_standardowe": "Wcieraj głęboko w twardy obrzęk. Nałóż owczą wełnę. Chory zamarznie od lodu wewnątrz, a potem ryknie z głębokiego gorąca.",
       "skalowanie_pacjenta": "Nie stosować u osób z niewydolnością krążenia oraz małych dzieci (kamfora silnie stymuluje serce poprzez inhalację oparów)."
     },
     "wlasciwosci_fizyczne": {
@@ -3950,7 +3948,7 @@
     },
     "bezpieczenstwo_i_interakcje": {
       "interakcje_z_lekami": "Nie stosować z lekami przeciwbólowymi w plastrach na skórę (wymusi wchłonięcie całej dawki na raz).",
-      "ostrzezenia": "Po użyciu umyć dłonie alkoholem, by zmyć olejki pieprzowe."
+      "ostrzezenia": "Nie wrzucaj kryształów do wrzątku, bo ulecą w dym. A po smarowaniu wypal ręce gorzałą, byś palcem w oko sobie żaru nie przeniósł."
     }
   },
   {
@@ -3967,15 +3965,15 @@
       "Triada Japońska"
     ],
     "klasyfikacja_dzialania": {
-      "skalowanie_toksykologiczne": "Zioła Silne. Kombinacja silnych soli osmotycznych i enzymów roślinnych.",
+      "skalowanie_toksykologiczne": "Zioła Silne. Zimny, głodny lep wysysający surowicę jak pijawka.",
       "matryca_wu_xing": {
         "zywiol_leczony": "Ogień (Jad neurotoksyczny/hemotoksyczny uwięziony pod naskórkiem)",
         "narzad_matczyny_do_wsparcia": "Woda (Nerki)",
-        "porada_matrycy": "Neutralizuj Ogień od wewnątrz i od zewnątrz. Pij obficie soki poruszające Wodę (brzoza, pokrzywa)."
+        "porada_matrycy": "Jad parzy. Okład ciągnie wodę na zewnątrz, ale od środka musisz wlać wiadra brzozowych soków, by nerki nie zaschły na wiór przy wypłukiwaniu zarazy."
       },
       "triada_kampo": {
         "cel_glowny": "Tokuso (Zatrzymanie toksyn) i Sui (Płyny)",
-        "wyjasnienie": "Miks soli celtyckiej i śluzów wymusza zjawisko odwrotnej osmozy, drastycznie ściągając zainfekowane Sui (surowicę z jadem) ze środka rany prosto na zewnątrz do maści."
+        "wyjasnienie": "Szara sól i śluzy działają jak potężna strzykawka bez igły – na siłę, z potwornym ciągiem wysysają zakrzepłe gnoje (Sui) i jad przez te same dziurki, co ukąsił pająk."
       }
     },
     "wymogi_szamanskie_i_czasowe": {
@@ -3990,7 +3988,7 @@
         "ilosc": "3 łyżki",
         "filar": "1_bazowy",
         "smak_ajurweda": "słony",
-        "tropizm_organowy": "Skóra / Krew (tworzy potężny gradient osmotyczny, wysysając płyny ustrojowe z rany na zewnątrz)",
+        "tropizm_organowy": "Skóra / Krew (Żarłoczny szary piach, z taką siłą chłonący wodę, że wyssie na wylot jad i posokę z rany aż do ostatniej kropli.)",
         "link_id": null
       },
       {
@@ -3999,7 +3997,7 @@
         "ilosc": "2 łyżki",
         "filar": "2_wzmocnienie",
         "smak_ajurweda": "gorzki",
-        "tropizm_organowy": "Wątroba / Skóra (inulina i soki mlekowe mniszka neutralizują kwasowość jadu)",
+        "tropizm_organowy": "Wątroba / Skóra (Białe mleko łąki niszczące parzący pożar i kwas gadziego jadu.)",
         "link_id": "mniszek_lekarski"
       },
       {
@@ -4008,7 +4006,7 @@
         "ilosc": "10 kropel",
         "filar": "3_minister",
         "smak_ajurweda": "wybitnie_gorzki",
-        "tropizm_organowy": "Wątroba (bio-katalizator: alkaloidy niszczą strukturę wstrzykiwanych przez owady białek obcych)",
+        "tropizm_organowy": "Wątroba (Gorzka trucizna paląca złośliwe białka muchy końskiej, tak by nie zrobiły pod skórą większej szkody.)",
         "link_id": "glistnik_jaskolcze_ziele"
       },
       {
@@ -4017,7 +4015,7 @@
         "ilosc": "1 łyżeczka",
         "filar": "4_poslaniec",
         "smak_ajurweda": "ostry_ciepły",
-        "tropizm_organowy": "Krew (otwiera kanały ukłucia, pobudzając miejscowy odczyn zapalny, by wypchnąć płyny na zewnątrz)",
+        "tropizm_organowy": "Krew (Gorący klin wpychający się w kanał od żądła i pompujący tam żar, by wykurzyć z gniazda truciznę.)",
         "link_id": "imbir_lekarski"
       },
       {
@@ -4026,7 +4024,7 @@
         "ilosc": "2 łyżki",
         "filar": "5_korektor",
         "smak_ajurweda": "chłodzący",
-        "tropizm_organowy": "Skóra (rozrzedza stężenie soli, zapobiegając zżarciu naskórka pacjenta, nadaje lepką konsystencję plastra)",
+        "tropizm_organowy": "Skóra (Zimny klej wiążący to błoto w kupę. Odrobinę chroni zdrową skórę przed pożarciem na sucho przez szarą sól.)",
         "link_id": "aloes_zwyczajny"
       }
     ],
@@ -4036,8 +4034,8 @@
       "Faza 3 (Wiązanie i Osmotyzacja): Dodać sól celtycką (musi być szara, niemielona z antyzbrylaczami!) oraz żel aloesowy. Wymieszać ostrożnie, aż sól zacznie się lekko 'topić' w żelu, tworząc gęsty śluz."
     ],
     "stosowanie_i_dawkowanie": {
-      "okolicznosci_stosowania": "Masywne ugryzienia pająków, ukąszenia gadów, nagłe użądlenia jadowitych owadów z potężnym obrzękiem surowiczym.",
-      "dawkowanie_standardowe": "Papką obłożyć miejsce z widocznym ukłuciem/raną. Środek wywołuje pulsujący, wyciągający ból (to znak, że osmoza działa). Po godzinie usunąć zabrudzoną papkę (będzie pełna płynu z rany) i nałożyć nową.",
+      "okolicznosci_stosowania": "Pękate, fioletowe wylewy po włochatych pająkach. Ziejące jadem gady i pęcherze po szerszeniach przypominające napuchnięte ropą dzwony.",
+      "dawkowanie_standardowe": "Kładź grubo na środek bąbla! To błoto szarpnie ukłuciem – pacjent poczuje dosłownie wysysanie trzewi przez zęby jadu. O to chodzi. Za godzinę zdejmij płaczący zgnilizną gnój i kładź nowy.",
       "skalowanie_pacjenta": "Może wywołać miejscowe podrażnienie od soli. U dzieci trzymać krócej (do 20 minut)."
     },
     "wlasciwosci_fizyczne": {
@@ -4047,7 +4045,7 @@
     },
     "bezpieczenstwo_i_interakcje": {
       "interakcje_z_lekami": "Brak.",
-      "ostrzezenia": "Nie pozostawiać na cienkiej skórze (np. twarzy) dłużej niż 30 minut, aby sól nie doprowadziła do odwodnienia i uszkodzenia samej tkanki skórnej."
+      "ostrzezenia": "Trzymaj za długo na gębie, to sól wysuszy i skurczy żywe mięso w twardą, popękaną skórę jaszczura!"
     }
   },
   {
@@ -4063,15 +4061,15 @@
       "Wzorzec 5 filarów"
     ],
     "klasyfikacja_dzialania": {
-      "skalowanie_toksykologiczne": "Zioła Normalizujące. Potężna dawka biominerałów o ekstremalnie głębokim wchłanianiu w tkankę kostną.",
+      "skalowanie_toksykologiczne": "Zioła Normalizujące. Potężny klej murarski do gruzów ludzkich kości.",
       "matryca_wu_xing": {
         "zywiol_leczony": "Woda (Szpik i kości - odsłonięte, zgruchotane)",
         "narzad_matczyny_do_wsparcia": "Metal (Płuca)",
-        "porada_matrycy": "Leczenie złamanej kości (Woda) wymaga ogromnego utlenienia tkanki. Metal (Płuca) musi być silny. Utrzymuj pacjenta w dobrze wietrzonym miejscu i podawaj napary z sosny, by wzmocnić Metal."
+        "porada_matrycy": "Zrost gnatów żre mnóstwo powietrza (Metal). Trzymaj pacjenta na wietrze, pój wywarem z sosny i rzucaj na ruszt chrząstki byle miał z czego lepić przerwane wały."
       },
       "triada_kampo": {
         "cel_glowny": "Sui (Płyny / Maź / Szpik)",
-        "wyjasnienie": "Balsam stymuluje produkcję najgłębszych płynów esencjonalnych (Jing/Sui), wymuszając krystalizację nowej tkanki kostnej na zewnątrz."
+        "wyjasnienie": "Kopie najgłębiej jak się da – budzi uśpiony Szpik (Jing), każąc mu bezlitośnie nadbudowywać zmasakrowane końce bielejących kości na wierzchu rany."
       }
     },
     "wymogi_szamanskie_i_czasowe": {
@@ -4086,7 +4084,7 @@
         "ilosc": "5 łyżek",
         "filar": "1_bazowy",
         "smak_ajurweda": "słodki_śluzowy",
-        "tropizm_organowy": "Kości / Okostna (stymulator osteoblastów, 'spaja' tkanki)",
+        "tropizm_organowy": "Kości / Okostna (Żywy lep, który rozkazuje pękniętym rurkom kostnym narastać grubą tkanką.)",
         "link_id": "zywokost_lekarski"
       },
       {
@@ -4095,7 +4093,7 @@
         "ilosc": "1 łyżeczka",
         "filar": "2_wzmocnienie",
         "smak_ajurweda": "gorzki_ziemisty",
-        "tropizm_organowy": "Kości (ekstremalnie rzadki katalizator zrostu kostnego z tradycji Wschodu)",
+        "tropizm_organowy": "Kości (Skalna krew. Rzadki żywiczny kamień ze Wschodu, przed którym gnaty goją się same jak za dotknięciem magii.)",
         "link_id": null
       },
       {
@@ -4104,7 +4102,7 @@
         "ilosc": "1 łyżka",
         "filar": "3_minister",
         "smak_ajurweda": "słony",
-        "tropizm_organowy": "Kości (dostarcza czystej, biodostępnej krzemionki i wapnia wprost do uszkodzenia)",
+        "tropizm_organowy": "Kości (Biały proch wypalony z piaskowego ziela. Twardy gruz budowlany rzucony prosto w krwawiący wyłom okostnej.)",
         "link_id": "skrzyp_polny"
       },
       {
@@ -4113,7 +4111,7 @@
         "ilosc": "150 g",
         "filar": "4_poslaniec",
         "smak_ajurweda": "słodki",
-        "tropizm_organowy": "Szpik (nośnik głęboko penetrujący ludzkie kości)",
+        "tropizm_organowy": "Szpik (Potężny transport, co zapada się prosto w pęknięty szpik człowieka.)",
         "link_id": null
       },
       {
@@ -4122,7 +4120,7 @@
         "ilosc": "1 łyżeczka",
         "filar": "5_korektor",
         "smak_ajurweda": "gorzki_aromatyczny",
-        "tropizm_organowy": "Krew (chroni otwartą kość przed zakażeniem ropnym z powietrza)",
+        "tropizm_organowy": "Krew (Gorzka tarcza odcinająca woń gnijącego powietrza od świeżego, pękniętego gnata.)",
         "link_id": null
       }
     ],
@@ -4132,8 +4130,8 @@
       "Faza 3 (Małżeństwo ciał): Do czystego, płynnego tłuszczu wsypać sole spageryczne ze skrzypu, rozkruszone mumio oraz pył z mirry. Ucierać aż do całkowitego stężenia masy."
     ],
     "stosowanie_i_dawkowanie": {
-      "okolicznosci_stosowania": "Złamania z przemieszczeniem, gdzie kość przebiła skórę. Miazga kostna po uderzeniu obuchem. Zabieg stosuje się dopiero po nastawieniu odłamków i umyciu rany.",
-      "dawkowanie_standardowe": "Nałożyć grubą warstwę bezpośrednio na ziejącą ranę z widoczną kością. Owinąć luźno lnem, usztywnić łubkami drewnianymi. Sole spageryczne spowodują drastyczne napięcie i tętniący ból wokół zrostu.",
+      "okolicznosci_stosowania": "Gnaty wylewające się na wierzch, połamane na drzazgi golenie i łokcie strzaskane cepem wojennym.",
+      "dawkowanie_standardowe": "Najpierw rzeźnik musi nastawić to mięso do kupy. Gdy kość złoży, zapakuj ten gruz grubo pod łuby drewniane. Będzie rwało i ciągnęło tak strasznie, że kości zaczną trzeszczeć z napięcia.",
       "skalowanie_pacjenta": "Bezpieczne fizjologicznie, ale niezwykle bolesne w pierwszej dobie."
     },
     "wlasciwosci_fizyczne": {
@@ -4143,7 +4141,7 @@
     },
     "bezpieczenstwo_i_interakcje": {
       "interakcje_z_lekami": "Brak.",
-      "ostrzezenia": "Jeżeli kość została źle nastawiona, ten balsam sprawi, że zrośnie się w krzywej pozycji znacznie szybciej niż naturalnie. Bezwzględna precyzja chirurga wymagana przed nałożeniem."
+      "ostrzezenia": "Błędy rzeźnika naprawisz tu tylko łamaniem od nowa! Ten kamienny klej spawa pęknięcia tak wściekle, że krzywo złożona kość zostanie już na zawsze potwornym kikutem."
     }
   },
   {
@@ -4158,15 +4156,15 @@
       "Doktryna Sygnatur"
     ],
     "klasyfikacja_dzialania": {
-      "skalowanie_toksykologiczne": "Zioła Normalizujące. Mechaniczny, pęczniejący środek tamujący głębokie ubytki w ciele.",
+      "skalowanie_toksykologiczne": "Zioła Normalizujące. Bezlitosny, puchnący w ranie wciągacz posoki. Tamuje na fizyczny kamień.",
       "matryca_wu_xing": {
         "zywiol_leczony": "Metal (Ciało obce, pocisk lub bełt przebijający tkanki na wylot)",
         "narzad_matczyny_do_wsparcia": "Ziemia (Śledziona)",
-        "porada_matrycy": "Głębokie spenetrowanie organizmu przez Metal wymaga uziemienia. Pacjent po urazie musi zostać unieruchomiony blisko źródła ciepła (Ogień -> Ziemia)."
+        "porada_matrycy": "Żelazo (Metal) przebiło wnętrzności na wylot. Rzuć pacjenta do parteru, grzej Ziemię przy piecu, nie daj mu panikować!"
       },
       "triada_kampo": {
         "cel_glowny": "Ketsu (Krew) i Sui (Płyny)",
-        "wyjasnienie": "Fizycznie wypija Ketsu, zwiększając swoją objętość trzykrotnie, tworząc naturalny, sterylny korek wewnątrz kanału rany."
+        "wyjasnienie": "Żre rzekę Krwi (Ketsu), rosnąc w kanale jak ropiecha. Zatyka tryskające żyły pęczniejącą, leśną pięścią."
       }
     },
     "wymogi_szamanskie_i_czasowe": {
@@ -4181,7 +4179,7 @@
         "ilosc": "1 duży płat (ok. 5x5 cm)",
         "filar": "1_bazowy",
         "smak_ajurweda": "ziemisty",
-        "tropizm_organowy": "Krew / Limfa (ultrachłonna gąbka, pęczniejąc mechanicznie zatyka pęknięte tętnice)",
+        "tropizm_organowy": "Krew / Limfa (Wypieczony na wiór leśny pęcherz. W ranie działa jak wysuszona gąbka wsunięta do kałuży – żłopie krew i rośnie bez opamiętania.)",
         "link_id": "hubiak_pospolity"
       },
       {
@@ -4190,7 +4188,7 @@
         "ilosc": "1 łyżeczka",
         "filar": "2_wzmocnienie",
         "smak_ajurweda": "bez smaku",
-        "tropizm_organowy": "Naczynia krwionośne (niezwykle drobny pył stymulujący natychmiastową koagulację białek krwi)",
+        "tropizm_organowy": "Naczynia krwionośne (Wybuchający w nozdrzach pył diabła. Wgnieciony w tętnicę każe posoce natychmiast skrzepnąć.)",
         "link_id": "purchawka_chropowata"
       },
       {
@@ -4199,7 +4197,7 @@
         "ilosc": "1 łyżeczka",
         "filar": "3_minister",
         "smak_ajurweda": "gorzki_cierpki",
-        "tropizm_organowy": "Wątroba (przeciwdziała zakażeniu wnętrza kanału rany)",
+        "tropizm_organowy": "Wątroba (Cierpki stróż, który ustrzeże to, co zostało rozerwane na strzępy wewnątrz mięsa.)",
         "link_id": "krwawnik_pospolity"
       },
       {
@@ -4208,7 +4206,7 @@
         "ilosc": "kilka kropel",
         "filar": "4_poslaniec",
         "smak_ajurweda": "bez smaku",
-        "tropizm_organowy": "Ogólnoustrojowy (uruchamia kaskadowe pęcznienie hubiaka)",
+        "tropizm_organowy": "Ogólnoustrojowy (Żywa woda i gęsta ludzka Krew to dzwon budzący tego leśnego zjadacza z suchych snów.)",
         "link_id": null
       },
       {
@@ -4217,7 +4215,7 @@
         "ilosc": "szczypta",
         "filar": "5_korektor",
         "smak_ajurweda": "cierpki",
-        "tropizm_organowy": "Skóra (garbuje wejście do rany, zamykając ją przed powietrzem zewnętrznym)",
+        "tropizm_organowy": "Skóra (Twarde drzwi. Dusi brzegi i kurczy poszarpaną skórę od zewnątrz.)",
         "link_id": "dab_szypulkowy"
       }
     ],
@@ -4227,8 +4225,8 @@
       "Faza 3 (Przechowywanie): Zwinąć w twardy, mały rulon (wielkości palca) i zabezpieczyć przed wilgocią w skórzanym lub woskowym woreczku."
     ],
     "stosowanie_i_dawkowanie": {
-      "okolicznosci_stosowania": "Głębokie rany kłute od miecza, bełtów z kuszy lub postrzałów, gdzie otwór jest wąski, ale głęboko z wnętrza pulsuje krew tętnicza.",
-      "dawkowanie_standardowe": "Wsunąć twardy, suchy rulon z hubiaka głęboko w kanał rany. Krew pacjenta uruchomi kaskadę: hubiak wchłonie płyn, napęcznieje trzykrotnie (boleśnie rozpychając ranę) i dociśnie zarodniki purchawki do przerwanych tętnic, ścinając krew na kamień.",
+      "okolicznosci_stosowania": "Dziury po rdzawych bełtach. Gnijące przelotówki od kul. Długie, ślepe kanały od mieczy, z których tryska wściekła czerwień i nie można złapać żyły kleszczami.",
+      "dawkowanie_standardowe": "Wbij ten twardy paluch z zamszu najgłębiej w krwawiący kanał. Ciepła Krew sprawi, że napęcznieje potrójnie, okrutnie rozrywając brzegi mięsa od wewnątrz, a pył zatrzaśnie pęknięte żyły na kamienną blokadę.",
       "skalowanie_pacjenta": "Tylko dla poważnych krwotoków wewnętrznych u dorosłych."
     },
     "wlasciwosci_fizyczne": {
@@ -4238,7 +4236,7 @@
     },
     "bezpieczenstwo_i_interakcje": {
       "interakcje_z_lekami": "Brak.",
-      "ostrzezenia": "Nigdy nie zaszywać rany z czopem hubiakowym wewnątrz! Należy go usunąć szczypcami przez cyrulika w bezpiecznych warunkach po upływie maksymalnie 24 godzin (ryzyko gnicia grzyba w ciele)."
+      "ostrzezenia": "Nie śmiej zaszywać tego pęczniejącego molocha w środku chłopa! Musisz wydrzeć go obcęgami po dniu, a jak spóźnisz o dobę – grzyb zacznie rosnąć z trzewi do zewnątrz i sam pożre tkankę zgnilizną!"
     }
   },
   {
@@ -4254,15 +4252,15 @@
       "Skalowanie Dawkowania"
     ],
     "klasyfikacja_dzialania": {
-      "skalowanie_toksykologiczne": "Zioła Heroiczne (Stopień 4 - Skrajnie toksyczne). Zawiera atropinę i skopolaminę. Granica między znieczuleniem a śmiercią jest cienka.",
+      "skalowanie_toksykologiczne": "Zioła Heroiczne. Wściekły, mroczny zabójca nerwów. Niezwykle toksyczny. Krok w złą stronę i usypiasz chłopa do mogiły.",
       "matryca_wu_xing": {
         "zywiol_leczony": "Ogień i Wiatr (Szaleństwo z bólu, wstrząs pourazowy, spazmy operacyjne)",
         "narzad_matczyny_do_wsparcia": "Ziemia (Śledziona)",
-        "porada_matrycy": "Lulek gasi Ogień umysłu, spowalniając akcję serca. Wymagany ciągły monitoring pulsu pacjenta (Ogień)."
+        "porada_matrycy": "Ten diabelski korzeń usypia duszę (Ogień). Zanim rzeźnik wyciągnie piłkę do kości, cały czas sprawdzaj palcem tętno na szyi, inaczej Serce po cichu stanie i chory już nie wstanie."
       },
       "triada_kampo": {
         "cel_glowny": "Ki (Energia układu nerwowego)",
-        "wyjasnienie": "Całkowicie 'odcina' lokalne kanały Ki, powodując porażenie czuciowe w miejscu nałożenia, co pozwala na bezbolesne cięcie i szycie rany."
+        "wyjasnienie": "Tępo odcina czucie i przerywa nerwowe krzyki duszy (Ki). Tnie ścieżki bólu wokoło amputowanego gnata."
       }
     },
     "wymogi_szamanskie_i_czasowe": {
@@ -4277,7 +4275,7 @@
         "ilosc": "1 płaska łyżeczka",
         "filar": "1_bazowy",
         "smak_ajurweda": "gorzki_chłodny",
-        "tropizm_organowy": "Układ nerwowy / Serce (silne działanie porażające zakończenia nerwowe, znieczulenie miejscowe)",
+        "tropizm_organowy": "Układ nerwowy / Serce (Mroczny sen rzucony na porwane mięso. Paraliżuje krzyki wijących się nerwów.)",
         "link_id": "lulek_czarny"
       },
       {
@@ -4286,7 +4284,7 @@
         "ilosc": "10 kropel",
         "filar": "2_wzmocnienie",
         "smak_ajurweda": "wybitnie_ostry",
-        "tropizm_organowy": "Skóra (bio-wzmacniacz, agresywnie rozszerza naczynia włosowate, wręcz siłą wtłaczając toksyny lulka w głębokie warstwy tkanki obwodowej)",
+        "tropizm_organowy": "Skóra (Szatański gwóźdź. Otwiera wszystkie bramy w zbolałej nodze, dosłownie wtłaczając ołowiany sen pod same powięzi.)",
         "link_id": null
       },
       {
@@ -4295,7 +4293,7 @@
         "ilosc": "1 łyżka",
         "filar": "3_minister",
         "smak_ajurweda": "gorzki_uspokajający",
-        "tropizm_organowy": "Nerwy (uspokaja drżenia mięśniowe, które mogą wystąpić pod wpływem pieprzu i rany)",
+        "tropizm_organowy": "Nerwy (Cicha rzeka gasząca przedśmiertne drgawki mięsa oblanego pieprzem.)",
         "link_id": "chmiel_zwyczajny"
       },
       {
@@ -4304,7 +4302,7 @@
         "ilosc": "50 ml",
         "filar": "4_poslaniec",
         "smak_ajurweda": "słodki",
-        "tropizm_organowy": "Krew / Mózg (nośnik wchodzący w głęboką synergię nasenną z lulkiem)",
+        "tropizm_organowy": "Krew / Mózg (Tłusty pot z maku, nośnik ciężkiego oddechu snu. Sama kropla już wciąga umysł w cień.)",
         "link_id": "mak_lekarski"
       },
       {
@@ -4313,7 +4311,7 @@
         "ilosc": "1 łyżka",
         "filar": "5_korektor",
         "smak_ajurweda": "słodki",
-        "tropizm_organowy": "Skóra (zatrzymuje maść w jednym miejscu, nie pozwalając jej rozlać się po całym ciele)",
+        "tropizm_organowy": "Skóra (Gęsty lep ratujący życie. Jak się ta trucizna z lulka rozleje po całym tułowiu, Serce po cichu zadrży i zgaśnie.)",
         "link_id": null
       }
     ],
@@ -4323,18 +4321,18 @@
       "Faza 3 (Aktywacja wchłaniania): Dokładnie wymieszać i tuż przed zastygnięciem wkropić olej pieprzowy. Przechowywać w słoiku z trupią czaszką lub wyraźnym ostrzeżeniem (Maść Lotna/Czarownic)."
     ],
     "stosowanie_i_dawkowanie": {
-      "okolicznosci_stosowania": "Amputacje, wypalanie ran, nastawianie bardzo skomplikowanych złamań, zszywanie rozległych powłok brzusznych na żywca.",
-      "dawkowanie_standardowe": "Na 30 minut przed cięciem wetrzeć w skórę i brzegi rany wokoło obszaru operowanego. Skóra zaczerwieni się, po czym zbieleje i straci całkowicie czucie z powodu działania alkaloidów. Zmyć natychmiast octem po zakończeniu operacji.",
+      "okolicznosci_stosowania": "Cięcie żywego mięsa z gnijącą kością rzeźnicką piłą. Wypalanie kikutów po wozie w żelazie pieca hutniczego. Kiedy chłop chce zgrzytać zębami, aż ułamie szczękę.",
+      "dawkowanie_standardowe": "Wcieraj grubo obok kości! Skóra zapłonie pąsem, a potem weźmie ją trupia bladość i paraliż. Zmyj natychmiast gorzkim octem, nim rzeźnik rzuci piłę w kąt!",
       "skalowanie_pacjenta": "Kategoryczny zakaz używania u dzieci i osób osłabionych (ryzyko śpiączki oddechowej)."
     },
     "wlasciwosci_fizyczne": {
       "barwienie_skory": "Skóra najpierw czerwienieje, a potem staje się trupio blada wokół smarowania.",
       "barwienie_ubran": "Żółtawe, tłuste plamy z maku.",
-      "konsystencja_i_slady": "Miękka, woskowa pasta o duszącym, narkotycznym i ostrym zapachu pieprzu i stęchlizny (lulek)."
+      "konsystencja_i_slady": "Mokra od potu pasta cmentarna. Cuchnie gęstym starym pieprzem i ołowianym, mdłym oddechem."
     },
     "bezpieczenstwo_i_interakcje": {
       "interakcje_z_lekami": "Nie łączyć z alkoholem doustnym podawanym pacjentowi – potęguje to śmiertelne działanie na ośrodek oddechowy w mózgu.",
-      "ostrzezenia": "Medyk aplikujący tę maść MUSI mieć dłonie zabezpieczone świńskim pęcherzem lub natłuszczonymi rękawicami. Gołe dłonie chirurga wchłoną lulka i spowodują paraliż jego palców."
+      "ostrzezenia": "Smaruj TO TŁUSTĄ RĘKAWICĄ Z PĘCHERZA ŚWIŃSKIEGO! Jak wetrzesz to chłopu w kikuta nagim palcem – to ten palec zdrętwieje i nie odzyskasz czucia przez dwa niedziele!"
     }
   },
 
@@ -4351,15 +4349,15 @@
       "Triada Japońska"
     ],
     "klasyfikacja_dzialania": {
-      "skalowanie_toksykologiczne": "Zioła Normalizujące. Potężna i gwałtowna fizyczna reakcja musująca wyciągająca ropę, bezpieczna toksykologicznie.",
+      "skalowanie_toksykologiczne": "Zioła Normalizujące. Gwałtowne, buzujące błoto, co siłą wyciąga gnój, nie trując przy tym krwi.",
       "matryca_wu_xing": {
         "zywiol_leczony": "Ziemia i Woda (Potężne ropnie, zamknięta martwica wilgotna)",
         "narzad_matczyny_do_wsparcia": "Ogień (Serce)",
-        "porada_matrycy": "Reakcja burzenia rozprasza gnijącą Ziemię. Pacjent może odczuwać silne rwanie i pulsowanie; należy zabezpieczyć Serce (Ogień) podając głóg lub melisę na uspokojenie rwania."
+        "porada_matrycy": "Buzująca wściekłość rozrywa zgniłą Ziemię. Chory poczuje rwanie, jakby mu kto gwoździe spod skóry ciągnął. Pój go głogiem, by Serce z bólu i strachu nie ustało."
       },
       "triada_kampo": {
         "cel_glowny": "Sui (Płyny)",
-        "wyjasnienie": "Reakcja kwasu i zasady dosłownie mechanicznie 'wysadza' od środka czop ropny zablokowany pod skórą, uwalniając zastałe Sui."
+        "wyjasnienie": "Ten gryzący pożar rozsadza twardy, zapiekły czop gnoju, wypuszczając zablokowane soki (Sui) na wolność."
       }
     },
     "wymogi_szamanskie_i_czasowe": {
@@ -4374,7 +4372,7 @@
         "ilosc": "2 łyżki",
         "filar": "1_bazowy",
         "smak_ajurweda": "ziemisty_cierpki",
-        "tropizm_organowy": "Skóra (silnie zasadowy ług, baza reakcji chemicznej)",
+        "tropizm_organowy": "Skóra (Żrący proch z ogniska. Czeka uśpiony na kwaśną iskrę.)",
         "link_id": null
       },
       {
@@ -4383,7 +4381,7 @@
         "ilosc": "3 łyżki",
         "filar": "2_wzmocnienie",
         "smak_ajurweda": "kwaśny",
-        "tropizm_organowy": "Krew (katalizator wchodzący w gwałtowny konflikt z popiołem, tworząc dwutlenek węgla i pianę)",
+        "tropizm_organowy": "Krew (Kwaśny jad mleczny. Wlany w popiół budzi wściekłą, syczącą pianę.)",
         "link_id": null
       },
       {
@@ -4392,7 +4390,7 @@
         "ilosc": "1 łyżka",
         "filar": "3_minister",
         "smak_ajurweda": "słodki_ostry",
-        "tropizm_organowy": "Skóra głęboka (odkaża dno ropnia w momencie, gdy piana otwiera ujście)",
+        "tropizm_organowy": "Skóra głęboka (Kiedy piana rozerwie czop, ten śmierdzący lep wchodzi w dziurę i dusi zarazę.)",
         "link_id": "czosnek_pospolity"
       },
       {
@@ -4401,7 +4399,7 @@
         "ilosc": "3 łyżki",
         "filar": "4_poslaniec",
         "smak_ajurweda": "ziemisty",
-        "tropizm_organowy": "Tkanka powierzchowna (utrzymuje musującą reakcję w jednym miejscu, tworząc szczelny kompres)",
+        "tropizm_organowy": "Tkanka powierzchowna (Ziemny garnek, który dusi cały ten wrzący kram, by nie uciekł na boki.)",
         "link_id": null
       },
       {
@@ -4410,7 +4408,7 @@
         "ilosc": "1 łyżka",
         "filar": "5_korektor",
         "smak_ajurweda": "gorzki_cierpki",
-        "tropizm_organowy": "Skóra (ogranicza stan zapalny wywołany agresywnym musowaniem kwasu i zasady)",
+        "tropizm_organowy": "Skóra (Gorzka woda, co studzi wypalone mięso po bitwie.)",
         "link_id": "szalwia_lekarska"
       }
     ],
@@ -4420,9 +4418,9 @@
       "Faza 3 (Odpalenie Konfliktu): Bezpośrednio przed zabiegiem, w powstały krater wlać kwaśną serwatkę zmieszaną z naparem z szałwii. Zamknąć szybko grubym opatrunkiem."
     ],
     "stosowanie_i_dawkowanie": {
-      "okolicznosci_stosowania": "Głębokie karbunkuły (czyraki gromadne), zastrzały ropne palców zmartwiające tkankę, twarde, niedojrzałe guzy pełne zakażenia, których nie da się łatwo naciąć nożem bez rozlewu zakażonej krwi.",
-      "dawkowanie_standardowe": "Reakcja pod plastrem (szum, ciepło, bąbelkowanie) potrwa około 15 minut i fizycznie wypchnie ropę (rozpuści cienki naskórek). Zmyć po ustaniu reakcji i przemyć ranę odkażalnikiem.",
-      "skalowanie_pacjenta": "Może piec. Bezpieczne ogólnoustrojowo."
+      "okolicznosci_stosowania": "Wielkie jak jabłka czyraki, twarde, zamknięte guzy pełne ropy, których cyrulik boi się ciąć, by jucha nie zakaziła całego ciała.",
+      "dawkowanie_standardowe": "Będzie szumieć, grzać i bąbelkować pod gliną kwadrans. Gdy ucichnie, zmyj skorupę, a gnój sam wyleje się z wydrążonej dziury.",
+      "skalowanie_pacjenta": "Pali i rwie żywe mięso, ale nie truje ciała."
     },
     "wlasciwosci_fizyczne": {
       "barwienie_skory": "Nie barwi, miejsce staje się mocno różowe i przekrwione od reakcji.",
@@ -4431,7 +4429,7 @@
     },
     "bezpieczenstwo_i_interakcje": {
       "interakcje_z_lekami": "Brak.",
-      "ostrzezenia": "Musująca siła rozerwie czop ropny – należy przygotować sterylne materiały do starcia ropy, która wyleje się z prędkością, natychmiast po zdjęciu gliny."
+      "ostrzezenia": "To syczące błoto rozerwie guz z hukiem! Miej w pogotowiu czyste płótno, bo żółty gnój chluśnie na zewnątrz jak z pękniętego cebra!"
     }
   },
   {
@@ -4447,21 +4445,21 @@
       "Wzorzec 5 filarów"
     ],
     "klasyfikacja_dzialania": {
-      "skalowanie_toksykologiczne": "Zioła Silne. Preparat o potężnym stężeniu kwasu bursztynowego i soli zasadowych, stosowany na głębokie rozcięcia trzewi.",
+      "skalowanie_toksykologiczne": "Zioła Silne. Kamienny proch na rozprute brzuchy, lejący iskrę życia w wypadające jelita.",
       "matryca_wu_xing": {
         "zywiol_leczony": "Ziemia (Rozprucia jamy brzusznej, uszkodzenia powłok głębokich, wypadanie jelit)",
         "narzad_matczyny_do_wsparcia": "Ogień (Serce)",
-        "porada_matrycy": "Rana brzucha niszczy Ziemię (centrum). Serce (Ogień) słabnie od utraty krwi. Po nałożeniu soli, pacjent musi mieć podniesione nogi i otrzymywać napary z głogu podtrzymujące puls."
+        "porada_matrycy": "Rozpruty brzuch to rozdarta Ziemia. Krew uchodzi, a Serce (Ogień) stygnie. Podnieś chłopu nogi, lej ten pył w trzewia i podawaj głóg, by Serce nie stanęło z zimna."
       },
       "triada_kampo": {
         "cel_glowny": "Ki (Energia) i Tokuso (Toksyny)",
-        "wyjasnienie": "Zapobiega rozprzestrzenieniu się zapalenia otrzewnej (Tokuso) i stymuluje gwałtownie Ki organizmu, by nie zapadł w śpiączkę z bólu."
+        "wyjasnienie": "Dusi zarazę (Tokuso) prącą do otwartych kiszek i tak pali trzewia, że zmusza duszę (Ki) do trzymania się w ciele, zamiast uciekać w ciemność."
       }
     },
     "wymogi_szamanskie_i_czasowe": {
       "chronoterapia": "Środek krytyczny, aplikowany bezpośrednio na polu walki/wypadku.",
       "astrologia_zbioru": "Bursztyn zbierany po silnych sztormach jesiennych (naładowany energią wiatru i wody).",
-      "dieta_i_zakazy": "Całkowity zakaz podawania wody i jedzenia doustnie przy ranach brzucha!"
+      "dieta_i_zakazy": "Ani kropli wody, ani okruszyna chleba do gęby! Przebite trzewia wyleją to do brzucha i chłop zeżre się od środka."
     },
     "skladniki": [
       {
@@ -4470,7 +4468,7 @@
         "ilosc": "2 łyżki",
         "filar": "1_bazowy",
         "smak_ajurweda": "gorzki_ciepły",
-        "tropizm_organowy": "Krew / Powięzi (potężny stymulator odnowy komórkowej, kwas bursztynowy opóźnia śmierć tkanek niedotlenionych)",
+        "tropizm_organowy": "Krew / Powięzi (Kamienna łza morza. Nie pozwala sinym z braku krwi kiszkom zgnić, trzymając w nich iskrę życia.)",
         "link_id": null
       },
       {
@@ -4479,7 +4477,7 @@
         "ilosc": "1 łyżka",
         "filar": "2_wzmocnienie",
         "smak_ajurweda": "słony_ziemisty",
-        "tropizm_organowy": "Naczynia krwionośne (sole krwawnika błyskawicznie sterylizują i zamykają kapilary wokół jelit)",
+        "tropizm_organowy": "Naczynia krwionośne (Biały proch dławiący. Ścina krew rzygającą z cienkich żyłek wokół rozprutych trzewi.)",
         "link_id": "krwawnik_pospolity"
       },
       {
@@ -4488,7 +4486,7 @@
         "ilosc": "1 łyżeczka",
         "filar": "3_minister",
         "smak_ajurweda": "gorzki_aromatyczny",
-        "tropizm_organowy": "Skóra głęboka (tworzy fizyczną barierę antyseptyczną na odsłoniętych tkankach)",
+        "tropizm_organowy": "Skóra głęboka (Święty dym w żywicy. Tworzy lepki pancerz, by zaraza z powietrza nie siadła na gołym mięsie.)",
         "link_id": null
       },
       {
@@ -4497,7 +4495,7 @@
         "ilosc": "do zwilżenia",
         "filar": "4_poslaniec",
         "smak_ajurweda": "ostry",
-        "tropizm_organowy": "Krew (drastycznie uwalnia kwas bursztynowy z pyłu żywicznego wprost do rany)",
+        "tropizm_organowy": "Krew (Ogień w płynie, który rozbija kamień i wpycha jego moce głęboko w rany.)",
         "link_id": null
       },
       {
@@ -4506,7 +4504,7 @@
         "ilosc": "1 łyżka",
         "filar": "5_korektor",
         "smak_ajurweda": "słodki",
-        "tropizm_organowy": "Wątroba (łagodzi 'żrący' efekt soli mineralnych, chroniąc delikatne błony śluzowe trzewi)",
+        "tropizm_organowy": "Wątroba (Złoty płatek chroniący śliskie, delikatne kiszki przed spaleniem przez sole w tym krysztale.)",
         "link_id": "nagietek_lekarski"
       }
     ],
@@ -4516,9 +4514,9 @@
       "Faza 3 (Małżeństwo): Pyły żywiczne wymieszać z solami krwawnika i nagietkiem. Przed użyciem na polu walki, proszek skropić minimalną ilością spirytusu (musi być lekko wilgotny i pachnący kalafonią)."
     ],
     "stosowanie_i_dawkowanie": {
-      "okolicznosci_stosowania": "Rany kłute i rąbane brzucha i klatki piersiowej, odsłonięte powłoki wewnętrzne, wypadnięcie sterylnych trzewi na zewnątrz.",
-      "dawkowanie_standardowe": "Obficie zasypać odsłoniętą tkankę i narządy wewnętrzne. Proszek stworzy aseptyczną, lepką od żywic powłokę, chroniącą jamę brzuszną do czasu dowiezienia do chirurga.",
-      "skalowanie_pacjenta": "Ekstremalnie bolesne (alkohol i sole na narządach), ale ratujące przed zapaleniem otrzewnej (sepsą)."
+      "okolicznosci_stosowania": "Głębokie cięcia od mieczy, rozprute brzuchy z których wylewają się sine, dymiące na mrozie kiszki.",
+      "dawkowanie_standardowe": "Rzuć hojną garść prosto na wylewające się trzewia. Zrobi się z tego lepka, kadzidlana skorupa, co uratuje chłopa od gnicia, póki go cyrulik nie zaceruje.",
+      "skalowanie_pacjenta": "Gdy ten pył dotknie żywych kiszek, ból wyrwie chłopa z butów. Ale uratuje go przed trupim gniciem brzucha."
     },
     "wlasciwosci_fizyczne": {
       "barwienie_skory": "Barwi wnętrze rany na żółto-złoto.",
@@ -4527,7 +4525,7 @@
     },
     "bezpieczenstwo_i_interakcje": {
       "interakcje_z_lekami": "Brak w warunkach polowych.",
-      "ostrzezenia": "To zabieg ratujący życie, przedłużający czas operacyjny chirurga. Nie zastępuje zszycia powłok."
+      "ostrzezenia": "Ten proch kupuje czas! Kiszki i tak trzeba zaszyć igłą z jedwabiem, inaczej wyleją się przy pierwszym kroku."
     }
   },
   {
@@ -4543,15 +4541,15 @@
       "Wymuszona Synergia Wchłaniania (Bio-wzmacniacze)"
     ],
     "klasyfikacja_dzialania": {
-      "skalowanie_toksykologiczne": "Zioła Silne/Drażniące. Powoduje celowe, miejscowe oparzenie chemiczne skóry I stopnia.",
+      "skalowanie_toksykologiczne": "Zioła Silne. Wściekły, leśny ogień kładziony na skórę, by oparzeniem obudzić martwe nerwy.",
       "matryca_wu_xing": {
         "zywiol_leczony": "Drzewo (Zerwane połączenia nerwowe, porażenie kończyn po zgnieceniu, brak czucia)",
         "narzad_matczyny_do_wsparcia": "Woda (Nerki)",
-        "porada_matrycy": "Szok termiczno-kwasowy resetuje Drzewo (nerwy). Zabieg wyczerpuje energię Wody. Podawaj gęste buliony i unikaj stresowania pacjenta innymi bodźcami."
+        "porada_matrycy": "Żarzący kwas i papryka smagają martwe Drzewo niczym bat. Chory opadnie z sił. Karm go tłustym rosołem i daj mu ciszę, by ciało mogło odbudować czucie."
       },
       "triada_kampo": {
         "cel_glowny": "Ki (Energia nerwowa)",
-        "wyjasnienie": "Ekstremalny ból i pieczenie na powierzchni skóry zmuszają zablokowane po wypadku Ki (sygnały nerwowe) do ponownego 'przebicia się' przez uszkodzone szlaki nerwowe."
+        "wyjasnienie": "Tortura pieczenia wymusza, by uśpiona dusza (Ki) znów zaczęła biec poszarpanymi po zmiażdżeniu ścieżkami nerwów."
       }
     },
     "wymogi_szamanskie_i_czasowe": {
@@ -4566,7 +4564,7 @@
         "ilosc": "3 garście",
         "filar": "1_bazowy",
         "smak_ajurweda": "kwaśny_ostry",
-        "tropizm_organowy": "Nerwy / Skóra (kwas mrówkowy to jeden z najsilniejszych naturalnych stymulatorów zakończeń nerwowych)",
+        "tropizm_organowy": "Nerwy / Skóra (Kwaśny gniew tysięcy owadów, który smaga uśpione nerwy jak powróz.)",
         "link_id": null
       },
       {
@@ -4575,7 +4573,7 @@
         "ilosc": "1 łyżeczka",
         "filar": "2_wzmocnienie",
         "smak_ajurweda": "wybitnie_ostry_gorący",
-        "tropizm_organowy": "Naczynia krwionośne (bio-wzmacniacz drastycznie pompujący krew do porażonego miejsca)",
+        "tropizm_organowy": "Naczynia krwionośne (Piekielny żar pompujący świeżą krew do uschłej, bezwładnej nogi.)",
         "link_id": "papryka_ostra"
       },
       {
@@ -4584,7 +4582,7 @@
         "ilosc": "2 łyżki",
         "filar": "3_minister",
         "smak_ajurweda": "gorzki",
-        "tropizm_organowy": "Nerwy (odbudowuje osłonki mielinowe nerwów po zgnieceniu, podczas gdy kwas pobudza je do pracy)",
+        "tropizm_organowy": "Nerwy (Złoty sok łatujący poszarpane sznurki nerwów, podczas gdy kwas budzi je bólem.)",
         "link_id": "dziurawiec_zwyczajny"
       },
       {
@@ -4593,7 +4591,7 @@
         "ilosc": "2 łyżki",
         "filar": "4_poslaniec",
         "smak_ajurweda": "kwaśny",
-        "tropizm_organowy": "Krew (potęguje działanie kwasu mrówkowego, wymuszając jego penetrację)",
+        "tropizm_organowy": "Krew (Kwaśny bicz, który wgryza ten las jeszcze głębiej w martwe mięso.)",
         "link_id": null
       },
       {
@@ -4602,7 +4600,7 @@
         "ilosc": "1 łyżka",
         "filar": "5_korektor",
         "smak_ajurweda": "słodki",
-        "tropizm_organowy": "Tkanka podskórna (zapobiega całkowitemu zwęgleniu skóry od kwasu i pieprzu)",
+        "tropizm_organowy": "Tkanka podskórna (Tłusty smar, żeby ta diabelska mikstura nie spaliła chłopu skóry do kości.)",
         "link_id": null
       }
     ],
@@ -4612,9 +4610,9 @@
       "Faza 3 (Układanie Plastra): Na lnianej ścierce rozsmarować warstwę smalcu z dziurawcem (jako warstwę ochronną do ciała), a na to nałożyć gryzącą mieszankę mrówkowo-octową."
     ],
     "stosowanie_i_dawkowanie": {
-      "okolicznosci_stosowania": "Miejscowe paraliże po upadku z drzewa/konia, zmiażdżenia kręgosłupa i nerwów obwodowych (gdzie skóra jest cała, ale ręka/noga opada bez czucia).",
-      "dawkowanie_standardowe": "Przewiązać ciasno na zgniecionym kręgu lub nerwie. Trzymać 15 do 30 minut. Skóra zrobi się krwistoczerwona, pokryje się drobnymi bąbelkami (jak po poparzeniu pokrzywą) i będzie ekstremalnie piec. Zdjąć plaster i obmyć wodą.",
-      "skalowanie_pacjenta": "Zabronione używanie u dzieci. Szok bólowy może być nie do zniesienia."
+      "okolicznosci_stosowania": "Martwe od paraliżu kikuty po upadku z dachu. Kiedy ręka lub noga wisi luźno jak u trupa, choć skóra na niej nietknięta.",
+      "dawkowanie_standardowe": "Przewiąż ciasno nad zmiażdżonym karkiem lub lędźwiami. Gdy skóra obleje się krwawym pąsem i bąblami, a chłop zacznie wyć z pieczenia – zrywaj! Wtedy opłucz wodą.",
+      "skalowanie_pacjenta": "Nigdy nie kładź na dzieci! Ten ból zrywa dorosłych z ławy, dzieciak zmarłby ze strachu i pieczenia."
     },
     "wlasciwosci_fizyczne": {
       "barwienie_skory": "Wywołuje masywny rumień i sztuczną pokrzywkę.",
@@ -4623,7 +4621,7 @@
     },
     "bezpieczenstwo_i_interakcje": {
       "interakcje_z_lekami": "Brak.",
-      "ostrzezenia": "Ostrożnie z wdychaniem oparów podczas przygotowania – kwas mrówkowy i pył z papryki potrafią doprowadzić do duszności i skurczu krtani u medyka."
+      "ostrzezenia": "Medyku, nie wsadzaj nosa do tej miski! Opar papryki i mrówczego kwasu spali Ci gardło tak, że tchu nie złapiesz."
     }
   },
   {
@@ -4638,15 +4636,15 @@
       "Wzorzec Konfliktu Chemicznego"
     ],
     "klasyfikacja_dzialania": {
-      "skalowanie_toksykologiczne": "Zioła Heroiczne/Enzymatyczne. Agresywny roztwór rozpuszczający martwe białko (jak chemiczny skalpel).",
+      "skalowanie_toksykologiczne": "Zioła Heroiczne. Kwaśny, zimny rzeźnik w płynie. Zżera martwe mięso, oddzielając je od żywego jak gilotyna.",
       "matryca_wu_xing": {
         "zywiol_leczony": "Ziemia i Woda (Czarna gangrena, mokra martwica palców i kończyn)",
         "narzad_matczyny_do_wsparcia": "Metal (Płuca)",
-        "porada_matrycy": "Lek wyciąga i trawi zepsutą Ziemię. Zadbaj o świeże powietrze (Metal) i podawaj napary z tymianku, by płuca mogły dotlenić nową, zdrową krew napływającą do rany."
+        "porada_matrycy": "Ten kwas topi gnijącą Ziemię palca do kości. Otwórz okna (Metal) i daj choremu pić tymianek, by czyste powietrze wygnało zapach trupa z jego krwi."
       },
       "triada_kampo": {
         "cel_glowny": "Tokuso (Zatrzymanie toksyn)",
-        "wyjasnienie": "Rozbija wiązania białkowe zakażonej tkanki, oddzielając czarne, martwe Tokuso od żywego Ketsu (krwi), zapobiegając amputacji."
+        "wyjasnienie": "Rozszarpuje na strzępy czarną martwicę (Tokuso), zostawiając czerwoną, czystą Krew (Ketsu) w spokoju. Ratuje nogę przed piłą."
       }
     },
     "wymogi_szamanskie_i_czasowe": {
@@ -4661,7 +4659,7 @@
         "ilosc": "2 szklanki",
         "filar": "1_bazowy",
         "smak_ajurweda": "kwaśny_chłodny",
-        "tropizm_organowy": "Skóra (silnie zakwaszający, zawiera enzymy trawiące zniszczony i zgniły naskórek / europejski odpowiednik papai na rany)",
+        "tropizm_organowy": "Skóra (Mięsiste liście pełne kwaśnego soku. Trawią zgniłą skórę, jak żołądek drapieżnika trawi mięso.)",
         "link_id": "rojnik_murowy"
       },
       {
@@ -4670,7 +4668,7 @@
         "ilosc": "1 szklanka",
         "filar": "2_wzmocnienie",
         "smak_ajurweda": "kwaśny",
-        "tropizm_organowy": "Krew (drastycznie obniża pH rany, tworząc środowisko w którym bakterie gangreny umierają w minuty)",
+        "tropizm_organowy": "Krew (Żywy, ostry kwas. Tworzy w zgniliźnie pożar, w którym czarna gangrena zdycha w kilka chwil.)",
         "link_id": null
       },
       {
@@ -4679,7 +4677,7 @@
         "ilosc": "2 łyżki",
         "filar": "3_minister",
         "smak_ajurweda": "słony",
-        "tropizm_organowy": "Tkanka podskórna (gwałtownie wysusza mokrą martwicę osmotycznie, wciągając kwasy w głąb rany)",
+        "tropizm_organowy": "Tkanka podskórna (Słony kamień, który wyciąga trupią wodę z czarnej nogi, wciskając kwas z rojnika w sam środek gnicia.)",
         "link_id": null
       },
       {
@@ -4688,7 +4686,7 @@
         "ilosc": "2 łyżki",
         "filar": "4_poslaniec",
         "smak_ajurweda": "cierpki",
-        "tropizm_organowy": "Skóra głęboka (odbudowuje ziarninę na dnie jamy, gdy kwas wyżre zgniliznę)",
+        "tropizm_organowy": "Skóra głęboka (Złote ziele, które sieje nowe mięso tam, gdzie kwas zeżre to, co zgniło.)",
         "link_id": "przelot_pospolity"
       },
       {
@@ -4697,7 +4695,7 @@
         "ilosc": "1 łyżka",
         "filar": "5_korektor",
         "smak_ajurweda": "ziemisty",
-        "tropizm_organowy": "Skóra (absorbuje toksyczne gazy i płyny uwalniające się z gangreny podczas rozkładu, wiążąc smród)",
+        "tropizm_organowy": "Skóra (Biała ziemia, która dusi w sobie smród rozkładu i pije wylewający się z gnijących palców trupi jad.)",
         "link_id": null
       }
     ],
@@ -4707,9 +4705,9 @@
       "Faza 3 (Wygładzenie i Wiązanie): Dodać sproszkowany wrzodownik i białą glinkę. Powstanie wodnista, zielonkawa pasta, którą należy trzymać w chłodzie."
     ],
     "stosowanie_i_dawkowanie": {
-      "okolicznosci_stosowania": "Czarne palce u stóp, rany wydzielające gnijący odór, ostre stany martwicze przy cukrzycy pourazowej. Środek ma odcienić czarne tkanki, oddzielając je od zdrowego różowego mięsa.",
-      "dawkowanie_standardowe": "Obficie nałożyć zieloną, kwaśną papkę na gangrenę. Środek wywoła uczucie 'igieł' (kwas trawiący nerwy). Zmieniać, zdejmując miękką, odchodzącą martwicę (zmywając wodą).",
-      "skalowanie_pacjenta": "Może wywołać płacz z bólu u dorosłych. Wymaga zabezpieczenia zdrowej tkanki dookoła np. smalcem, by kwas jej nie wypalił."
+      "okolicznosci_stosowania": "Czarne jak smoła, cuchnące palce u stóp. Zimna gangrena. Wszędzie tam, gdzie czarne martwe mięso styka się z czerwonym.",
+      "dawkowanie_standardowe": "Zapakuj czarny palec w tę zieloną miazgę. Chory poczuje gryzące igły. Kiedy zmyjesz to wodą, czarna śmierć odpadnie płatami miękkiej galarety.",
+      "skalowanie_pacjenta": "Będzie gryzło jak stado żmij! Zabezpiecz zdrowe mięso grubym smalcem, inaczej kwas wypali mu na łydce wielkie dziury."
     },
     "wlasciwosci_fizyczne": {
       "barwienie_skory": "Wybiela i maceruje zdrową skórę na brzegach (dlatego trzeba ją chronić).",
@@ -4718,7 +4716,7 @@
     },
     "bezpieczenstwo_i_interakcje": {
       "interakcje_z_lekami": "Brak.",
-      "ostrzezenia": "Działa jak skalpel chemiczny. Jeśli zostawisz go na zdrowej tkance na zbyt długo, roztwór zacznie uszkadzać dobre komórki."
+      "ostrzezenia": "Ta maź nie wie co to umiar. Zostawisz ją za długo – zeżre zdrową skórę tak samo chętnie, jak zjadła trupa!"
     }
   },
   {
@@ -4734,15 +4732,15 @@
       "Triada Japońska"
     ],
     "klasyfikacja_dzialania": {
-      "skalowanie_toksykologiczne": "Zioła Silne. Wymusza masywny przepływ limfatyczny z zewnątrz do wewnątrz rany, co może wywołać zawroty głowy od zmian ciśnienia krwi u osłabionych.",
+      "skalowanie_toksykologiczne": "Zioła Silne. Kamienna pompa, co wyrywa zakrzepłą juchę głęboko spod kości na sam wierzch skóry. Aż w łbie wiruje!",
       "matryca_wu_xing": {
         "zywiol_leczony": "Drzewo i Woda (Potężne uwięzione krwiaki, ropień pod okostną, twarde, granatowe guzy na kości)",
         "narzad_matczyny_do_wsparcia": "Woda (Nerki)",
-        "porada_matrycy": "Usuwając zastałą Krew (Drzewo), odciążasz stawy (Woda). Połóż pacjenta płasko, aby nie przeciążać organizmu gwałtownym pompowaniem serca podczas zabiegu."
+        "porada_matrycy": "Wyrwany, wściekły krwiak (Drzewo) przestanie dusić stawy (Woda). Rzuć chłopa na wznak podczas kładzenia okładu, by Serce nie ustało od gwałtownego rwania krwi."
       },
       "triada_kampo": {
         "cel_glowny": "Ketsu (Krew) i Sui (Płyny)",
-        "wyjasnienie": "Ekstremalnie nagrzana sól mija skórę i drastycznie rozszerza zgniecione naczynia, co pozwala wyciągnąć starą, sczerniałą krew (Ketsu) głęboko spod chrząstki (Sui)."
+        "wyjasnienie": "Piekąca sól przerywa tamy i rwie sczerniałe krwawe zakrzepy (Ketsu), kryjące się bezpiecznie tuż pod śliską chrząstką (Sui)."
       }
     },
     "wymogi_szamanskie_i_czasowe": {
@@ -4757,7 +4755,7 @@
         "ilosc": "3 łyżki",
         "filar": "1_bazowy",
         "smak_ajurweda": "słodki_śluzowy",
-        "tropizm_organowy": "Okostna / Kości (bazowy klej tkankowy, silnie regeneruje uszkodzenia zgnieceniowe)",
+        "tropizm_organowy": "Okostna / Kości (Czarny śliski lep leczący połamane do samej bieli gnaty i porwane rzemyki ścięgien.)",
         "link_id": "zywokost_lekarski"
       },
       {
@@ -4766,7 +4764,7 @@
         "ilosc": "4 łyżki (duża ilość!)",
         "filar": "2_wzmocnienie",
         "smak_ajurweda": "skrajnie_słony",
-        "tropizm_organowy": "Limfa (stężenie hipertoniczne tworzy tzw. pompę osmotyczną - siłą wyciąga ciśnienie wylewu z wewnątrz ciała do skóry)",
+        "tropizm_organowy": "Limfa (Żarłoczny, słony kamień. Ciągnie zgniłe soki i ciśnienie z najdalszych głębin kości na zewnątrz.)",
         "link_id": null
       },
       {
@@ -4775,7 +4773,7 @@
         "ilosc": "1 łyżka",
         "filar": "3_minister",
         "smak_ajurweda": "ostry_ciepły",
-        "tropizm_organowy": "Krew (bio-wzmacniacz otwierający pory naskórka bez jego niszczenia)",
+        "tropizm_organowy": "Krew (Gorący paluch wdzierający się pod skórę, otwierając wrota dla tego piekielnego błota.)",
         "link_id": "imbir_lekarski"
       },
       {
@@ -4784,7 +4782,7 @@
         "ilosc": "do zarobienia śluzu",
         "filar": "4_poslaniec",
         "smak_ajurweda": "bez smaku",
-        "tropizm_organowy": "Ogólnoustrojowy (ekstrahuje śluzy z żywokostu i topi sól)",
+        "tropizm_organowy": "Ogólnoustrojowy (Wrząca ulewa topiąca ten kamień i ziele w żrącą, lepką smołę.)",
         "link_id": null
       },
       {
@@ -4793,7 +4791,7 @@
         "ilosc": "2 łyżki",
         "filar": "5_korektor",
         "smak_ajurweda": "ziemisty",
-        "tropizm_organowy": "Skóra (izolator fizyczny, utrzymuje ciepło i zapobiega parowaniu mikstury)",
+        "tropizm_organowy": "Skóra (Ciężka, szczelna pokrywa odcinająca błoto od chłodu z zewnątrz.)",
         "link_id": null
       }
     ],
@@ -4803,9 +4801,9 @@
       "Faza 3 (Wytrych porów): Do gorącej masy wmieszać tarty imbir z jego piekącym sokiem."
     ],
     "stosowanie_i_dawkowanie": {
-      "okolicznosci_stosowania": "Tępe uderzenia buzdyganem, młotem lub kopytem konia. Urazy, w których krew wylała się pod najgłębsze warstwy mięśni (olbrzymie, granatowo-czarne stwardnienia) lub uwięzła pod błoną okostnej piszczeli, dając ból nie do zniesienia.",
-      "dawkowanie_standardowe": "Gorącą, wręcz parzącą (ale bez uszkadzania skóry!) papkę nałożyć na stłuczenie na grubość 2 cm. Przewiązać bardzo szczelnie. Sól wyciągnie ciemną krew ku powierzchni, zdejmując ciśnienie z kości w około 2 godziny.",
-      "skalowanie_pacjenta": "Może wywołać gwałtowne zaczerwienienie i pulsowanie u dorosłych. U dzieci stosować o połowę mniej soli."
+      "okolicznosci_stosowania": "Grzmotnięcia obuchem miecza, uderzenia kopytem. Tam, gdzie czarna, twarda jucha wlała się pod samą błonę piszczeli, a guz jest twardy jak granit i wyje z bólu.",
+      "dawkowanie_standardowe": "Gorące, parzące błoto kładź grubo na ten twardy, czarny guz i zakręć mocno lnem. Sól brutalnie wyssie ciężką krew spod kości pod samą skórę, uwalniając chłopa od mąk.",
+      "skalowanie_pacjenta": "Wywoła czerwone rwanie pod skórą u starych. U bachorów tnij sól o połowę, inaczej pożre im delikatne mięso."
     },
     "wlasciwosci_fizyczne": {
       "barwienie_skory": "Miejsce pod kompresem zblednie i pomarszczy się (od silnej osmozy soli).",
@@ -4814,7 +4812,7 @@
     },
     "bezpieczenstwo_i_interakcje": {
       "interakcje_z_lekami": "Brak.",
-      "ostrzezenia": "Zabrania się kategorycznie nakładać tego kompresu na skórę otwartą (zdartą, ciętą) – stężenie soli hipertonicznej wywołałoby natychmiastowe, ekstremalne oparzenie i ból."
+      "ostrzezenia": "Pod groźbą bata nie kładź tego na przerwaną czy zdartą skórę! Słony żar wylany na żywe mięso wyrwie chłopu serce z piersi z bólu!"
     }
   }
 
