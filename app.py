@@ -611,7 +611,7 @@ def api_all_recipes():
             except json.JSONDecodeError:
                 pass
 
-    return jsonify(get_all_recipes)
+    return jsonify(get_all_recipes())
 
 
 @app.route('/api/all_plants.json')
