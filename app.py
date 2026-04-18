@@ -120,8 +120,10 @@ def get_all_recipes():
     all_recipes = []
     # Lista ścieżek do Twoich plików
     files = [
-        'data/przepisy/przepisy_kulinarne.json',
-        'data/przepisy/przepisy_medyczne.json'
+            'data/przepisy/przepisy_medyczne.json',
+            'data/przepisy/przepisy_kulinarne.json',
+            'data/przepisy/medycyna_polowa.json',
+            'data/przepisy/medycyna_dermatologia.json',
     ]
 
     for file_path in files:
