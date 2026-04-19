@@ -18,39 +18,67 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // 2. PRZECHWYCENIE ZDJĘCIA I ANALIZA
+    // --- NOWA FUNKCJA: TŁUMACZ WIKIPEDII ---
+    async function getPolishName(latinName) {
+        try {
+            // 1. Szukamy strony na łacińskiej (lub angielskiej) Wikipedii
+            const searchUrl = `https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=pl&titles=${encodeURIComponent(latinName)}&format=json&origin=*`;
+
+            const response = await fetch(searchUrl);
+            const data = await response.json();
+
+            const pages = data.query.pages;
+            const pageId = Object.keys(pages)[0];
+
+            if (pageId !== "-1" && pages[pageId].langlinks) {
+                // Pobieramy tytuł polskiej strony
+                const polishTitle = pages[pageId].langlinks[0]['*'];
+                console.log(`Znaleziono polską nazwę: ${polishTitle}`);
+                return polishTitle;
+            }
+
+            // Jeśli nie znaleźliśmy w langlinks, spróbujmy uprościć nazwę (np. tylko pierwszy człon)
+            return latinName;
+        } catch (error) {
+            console.error("Błąd tłumaczenia Wiki:", error);
+            return latinName;
+        }
+    }
+
+    // --- ZMODYFIKOWANA OBSŁUGA ZDJĘCIA ---
     if(cameraInput) {
         cameraInput.addEventListener("change", async (event) => {
             const file = event.target.files[0];
             if (!file) return;
 
-            // Zmiana UI na tryb ładowania
-            const originalContent = magicBtn.innerHTML;
             magicBtn.innerHTML = '<i class="bi bi-hourglass-split"></i> Analiza...';
             magicBtn.disabled = true;
 
             try {
                 const base64Image = await getBase64(file);
 
-                // Wywołanie JEDNEGO API (Plant.id)
-                currentRecognizedPlant = await identifyPlantAPI(base64Image);
+                // 1. Rozpoznajemy (dostajemy np. "Viola alba")
+                const latinResult = await identifyPlantAPI(base64Image);
 
-                if (currentRecognizedPlant) {
-                    // Wpisanie do wyszukiwarki
+                if (latinResult) {
+                    // 2. Tłumaczymy przez Wikipedię (dostajemy np. "Fiołek biały")
+                    const polishResult = await getPolishName(latinResult);
+                    currentRecognizedPlant = polishResult;
+
+                    // 3. Wpisujemy do wyszukiwarki i pokazujemy modal
                     if(searchInput) {
                         searchInput.value = currentRecognizedPlant;
                         searchInput.dispatchEvent(new Event('input', { bubbles: true }));
                     }
-                    // Pokazanie modalu sukcesu
                     showRecognizedModal(currentRecognizedPlant);
                 }
 
             } catch (error) {
-                console.error("Błąd rozpoznawania:", error);
-                alert("Nie udało się rozpoznać rośliny. Spróbuj ponownie.");
+                console.error("Błąd:", error);
+                alert("Problem z rozpoznawaniem.");
             } finally {
-                magicBtn.innerHTML = originalContent;
+                magicBtn.innerHTML = '<i class="bi bi-camera"></i> Rozpoznaj';
                 magicBtn.disabled = false;
-                // Ważne: czyścimy wartość, by aparat nie otworzył się ponownie przy błędzie
                 cameraInput.value = "";
             }
         });
@@ -130,3 +158,4 @@ function getBase64(file) {
         reader.onerror = error => reject(error);
     });
 }
+
