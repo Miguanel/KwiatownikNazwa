@@ -1,126 +1,117 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kwiatownik - Cyfrowy Zielnik</title>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/static/style.css">
-    <style>
-        body { font-family: 'Crimson Text', serif; background-color: #f4f1ea; color: #2c2c2c; margin: 0; }
-        nav { background-color: #3e4a3d; color: white; padding: 1rem; display: flex; justify-content: space-between; }
-        nav a { color: white; text-decoration: none; margin: 0 10px; }
-        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        .flash { padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 4px; }
-        .flash-success { background-color: #d4edda; color: #155724; }
-        .flash-danger { background-color: #f8d7da; color: #721c24; }
-        footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #666; }
-    </style>
-    <style>
-        /* Nadpisanie Bootstrapa, żeby nie psuł tła i fontów */
-        body {
-            font-family: 'Crimson Text', serif;
-            background-color: #f4f1ea;
-            color: #2c2c2c;
-            margin: 0;
-        }
-        /* Reszta Twoich stylów lokalnych z base.html... */
-        nav { background-color: #3e4a3d; color: white; padding: 1rem; display: flex; justify-content: space-between; }
-        nav a { color: white; text-decoration: none; margin: 0 10px; }
-        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        .flash { padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 4px; }
-        .flash-success { background-color: #d4edda; color: #155724; }
-        .flash-danger { background-color: #f8d7da; color: #721c24; }
-        footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #666; }
+{% extends "base.html" %}
 
-        /* FIX dla linków w nawigacji (Bootstrap lubi je zmieniać na niebieskie) */
-        nav a { color: white !important; text-decoration: none; }
-        a { text-decoration: none; color: inherit; }
-    </style>
-</head>
-<body>
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rpg-awesome/0.2.0/css/rpg-awesome.min.css">
 
-<nav>
-    <div>
-        <a href="/"><strong>🌿 Kwiatownik</strong></a>
-        <a href="/generator/"><strong>🌿 Generatory</strong></a>
-        <a href="/przepisy/"><strong>🌿 Przepisy</strong></a>
-        <a href="/gildie/"><strong>🌿 Gildie</strong></a>
-        <a href="#" class="frozen-feature">Wszystkie Komentarze</a>
+<section class="search-section" id="guildNetwork">
+    <svg id="arenaLines"></svg>
+
+    <div class="central-node" id="mainSearchNode">
+
+        <div class="search-input-wrapper">
+            <div id="architecturalSuggestions" class="architectural-suggestions">
+                <div id="symptomBox" class="suggestions-box"></div>
+                <div id="actionBox" class="suggestions-box"></div>
+                <div id="colorBox" class="suggestions-box"></div>
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+                <input type="text" id="universalSearch" class="search-input w-100"
+                       placeholder="Wpisz roślinę, czynność, objaw lub porę roku..." autocomplete="off">
+
+                <input type="file" accept="image/*" capture="environment" id="magicCameraInput" style="display: none;">
+                <button type="button" id="magicLensBtn" class="btn" style="background-color: #3e4a3d; color: #fdfaf0; border: 1px solid #d1c7a7; white-space: nowrap; font-family: 'Playfair Display', serif;" title="Rozpoznaj roślinę ze zdjęcia">
+                    <i class="bi bi-camera"></i> <span class="d-none d-md-inline">Rozpoznaj</span>
+                </button>
+            </div>
+        </div>
+
+        <div id="horizontalResults"></div>
+
+        <div id="taskResults" class="task-results-container"></div>
+
     </div>
-    <div class="frozen-feature" title="Logowanie wyłączone w wersji statycznej">
-        <a href="#">Logowanie</a>
-        <a href="#">Rejestracja</a>
     </div>
-</nav>
 
-<div class="container">
-    
-      
-    
+    <div id="recipeCarousel" class="carousel-container"></div>
+</section>
 
-    
-<div style="max-width: 400px; margin: 0 auto; text-align: center;">
-    <h2>Logowanie</h2>
-    <form method="POST">
-        <input type="text" name="username" placeholder="Login" required style="width: 100%; padding: 10px; margin: 5px 0;"><br>
-        <input type="password" name="password" placeholder="Hasło" required style="width: 100%; padding: 10px; margin: 5px 0;"><br>
-        <button type="submit" style="width: 100%; padding: 10px; background: #3e4a3d; color: white; border: none; margin-top: 10px;">Zaloguj się</button>
-    </form>
-    <p>Nie masz konta? <a href="/register/">Zarejestruj się</a></p>
+<section>
+    <h2 class="bestiary-header">Bestiariusz Roślin</h2>
+    <div id="bestiaryGrid" class="bestiary-grid"></div>
+</section>
+
+<div class="modal fade" id="dynamicRecipeModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content" style="border-radius: 0; border: 2px solid #3e4a3d; background-color: #fdfaf0; font-family: 'Crimson Text', serif;">
+            <div class="modal-header" style="border-bottom: 1px solid #d1c7a7; background: #f4f1ea;">
+                <div>
+                    <h2 id="modalRecipeTitle" style="margin: 0; font-size: 1.8rem; border: none; color: #3e4a3d;">Tytuł Przepisu</h2>
+                    <p style="margin: 0; color: #666; font-style: italic;">Gatunek: <strong id="modalRecipePlantName">Roślina</strong></p>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <div id="modalRecipeTags" style="margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed #d1c7a7; display:none;"></div>
+                <div class="row">
+                    <div class="col-lg-5" style="border-right: 1px dashed #d1c7a7;">
+                        <h4 style="color: #b8860b; margin-top: 0;">🛒 Składniki</h4>
+                        <ul id="modalRecipeIngredients" style="list-style-type: square; padding-left: 20px;"></ul>
+                    </div>
+                    <div class="col-lg-7">
+                        <h4 style="color: #3e4a3d; margin-top: 0;">🔥 Przygotowanie</h4>
+                        <div id="modalRecipePreparation" style="font-size: 1.05rem; line-height: 1.7;"></div>
+                        <div id="modalRecipeDosage" style="display:none; background: #e3f2fd; border: 1px solid #90caf9; padding: 15px; margin-top: 20px; border-radius: 4px;"></div>
+                        <div id="modalRecipeNotes" style="display:none; background: #ffebee; border: 1px solid #ef9a9a; padding: 15px; margin-top: 15px; color: #c62828; border-radius: 4px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
+<div class="modal fade" id="favoritePlantModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: #fdfaf0; border: 2px solid #3e4a3d; font-family: 'Crimson Text', serif;">
+            <div class="modal-header" style="border-bottom: 1px solid #d1c7a7;">
+                <h5 class="modal-title" style="font-family: 'Playfair Display', serif; color: #3e4a3d; font-size: 1.5rem;">
+                    <i class="bi bi-stars"></i> Rozpoznano roślinę!
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center p-4">
+                <p style="font-size: 1.1rem; color: #555;">Magiczny obiektyw podpowiada, że to:</p>
+                <h3 id="recognizedPlantName" style="color: #2d5a27; font-weight: bold; font-family: 'Playfair Display', serif; margin: 15px 0;">---</h3>
+                <p class="text-muted mt-3" style="font-size: 0.95rem; font-style: italic;">Czy chcesz zapisać tę roślinę w swoim osobistym zielniku? Przepisy i opisy z nią związane będą pojawiać się na samej górze.</p>
+            </div>
+            <div class="modal-footer" style="border-top: none; justify-content: center; padding-bottom: 20px;">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Pomiń</button>
+                <button type="button" class="btn" id="saveFavoriteBtn" style="background-color: #3e4a3d; color: white;">Dodaj do Zielnika</button>
+            </div>
+        </div>
+    </div>
 </div>
 
-<footer>
-    <p>&copy; 1396 Kwiatownik - Akademicki Projekt Zielnika</p>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-<div id="frozenModal" class="frozen-modal-overlay">
-    <div class="frozen-modal-content">
-        <span class="frozen-modal-close" onclick="closeFrozenModal()">&times;</span>
-        <h3 style="color: #2d5a27;"><i class="bi bi-info-circle"></i> Funkcja wstrzymana</h3>
-        <p class="mt-3">
-            Aby aplikacja mogła być dostępna za darmo i działać błyskawicznie, przeszliśmy na wersję statyczną.
-            Moduł logowania i komentarzy jest obecnie <strong>wyłączony</strong>.
-        </p>
-        <p>
-            Jeśli projekt Ci się podoba i chcesz wesprzeć jego rozwój, możesz postawić mi wirtualną kawę! 🌱
-        </p>
-        <a href="https://buycoffee.to/miguana" target="_blank" class="btn btn-warning mt-3 fw-bold" style="background-color: #d4a017; border: none; color: white; padding: 10px 20px;">
-            <i class="bi bi-cup-hot"></i> Postaw Kawę
-        </a>
+<div id="megaAlertOverlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:9999; backdrop-filter: blur(5px);">
+    <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background:#23201d; border:2px solid #9b4b4b; border-radius:8px; padding:40px; text-align:center; box-shadow:0 0 80px rgba(155,75,75,0.8); color:#fdfbf7; font-family:'Georgia', serif; min-width:350px;">
+        <i class="ra ra-bleeding-eye" style="font-size: 60px; color: #9b4b4b; margin-bottom: 20px; display:block;"></i>
+        <h2 style="color: #d1b880; margin: 0 0 15px 0; font-size: 28px; border:none; text-transform: uppercase;">Nieznane Zioło!</h2>
+        <p style="font-size: 18px; color: #a89f91; margin-bottom: 25px;">Wiedza o <strong id="megaAlertPlantName" style="color: #fff; text-decoration: underline;"></strong><br>nie została jeszcze spisana.</p>
+        <button onclick="document.getElementById('megaAlertOverlay').style.display='none'" style="background: #3a2b21; border: 1px solid #5a4b3a; color: #d1b880; padding: 12px 30px; cursor: pointer; font-size: 14px; text-transform: uppercase; border-radius: 4px; transition: 0.3s;">Powrót na szlak</button>
     </div>
 </div>
 
 <script>
-    const frozenElements = document.querySelectorAll('.frozen-feature');
-    const modal = document.getElementById('frozenModal'); // Jeśli nie ma HTMLa wyżej, to tutaj wyskakuje Twój błąd (null)
-
-    frozenElements.forEach(el => {
-        el.addEventListener('click', function(e) {
-            e.preventDefault();
-            if(modal) { // Zabezpieczenie, żeby skrypt nie "wybuchał"
-                modal.style.display = "block";
-            } else {
-                console.error("Nie znaleziono okienka frozenModal w kodzie HTML!");
-            }
-        });
-    });
-
-    function closeFrozenModal() {
-        if(modal) modal.style.display = "none";
-    }
-
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            closeFrozenModal();
-        }
-    }
+    const BASE_URL = window.location.origin;
+    const plantsData = {{ plants_full_data | default('[]') | safe }};
+    const kalendarz = {{ calendar_data | default('{}') | safe }};
+    let recipesData = {{ recipes_full_data | default('[]') | safe }};
+    if (!Array.isArray(recipesData)) recipesData = [];
 </script>
 
-</body>
-</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="{{ url_for('static', filename='js/tags.js') }}"></script>
+<script src="{{ url_for('static', filename='js/index.js') }}"></script>
+{% endblock %}

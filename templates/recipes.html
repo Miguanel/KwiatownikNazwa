@@ -14,7 +14,16 @@
             <label for="recipeSearch" style="font-weight: bold; color: #3e4a3d; margin-bottom: 5px; display: block; font-family: 'Crimson Text', serif; font-size: 1.1rem;">
                 Przeszukaj księgi:
             </label>
-            <input type="text" id="recipeSearch" class="retro-input" placeholder="Szukaj zioła, dolegliwości lub nazwy..." autocomplete="off">
+
+            <div class="d-flex align-items-center gap-2">
+                <input type="text" id="recipeSearch" class="retro-input w-100" placeholder="Szukaj zioła, dolegliwości lub nazwy..." autocomplete="off">
+
+                <input type="file" accept="image/*" capture="environment" id="magicCameraInput" style="display: none;">
+                <button type="button" id="magicLensBtn" class="btn" style="background-color: #3e4a3d; color: #fdfaf0; border: 1px solid #d1c7a7; white-space: nowrap; height: 100%; font-family: 'Playfair Display', serif;" title="Rozpoznaj roślinę ze zdjęcia">
+                    <i class="bi bi-camera"></i> <span class="d-none d-md-inline">Rozpoznaj</span>
+                </button>
+            </div>
+
             <div id="suggestionsList" class="list-group position-absolute w-100" style="z-index: 1000; display: none; border-radius: 0; border: 1px solid #3e4a3d; border-top: none;"></div>
         </form>
     </div>
@@ -65,20 +74,46 @@
     </div>
 </div>
 
+<div class="modal fade" id="favoritePlantModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: #fdfaf0; border: 2px solid #3e4a3d; font-family: 'Crimson Text', serif;">
+            <div class="modal-header" style="border-bottom: 1px solid #d1c7a7;">
+                <h5 class="modal-title" style="font-family: 'Playfair Display', serif; color: #3e4a3d; font-size: 1.5rem;">
+                    <i class="bi bi-stars"></i> Rozpoznano roślinę!
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center p-4">
+                <p style="font-size: 1.1rem; color: #555;">Magiczny obiektyw podpowiada, że to:</p>
+                <h3 id="recognizedPlantName" style="color: #2d5a27; font-weight: bold; font-family: 'Playfair Display', serif; margin: 15px 0;">---</h3>
+                <p class="text-muted mt-3" style="font-size: 0.95rem; font-style: italic;">Czy chcesz zapisać tę roślinę w swoim osobistym zielniku? Przepisy i opisy z nią związane będą pojawiać się na samej górze.</p>
+            </div>
+            <div class="modal-footer" style="border-top: none; justify-content: center; padding-bottom: 20px;">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Pomiń</button>
+                <button type="button" class="btn" id="saveFavoriteBtn" style="background-color: #3e4a3d; color: white;">Dodaj do Zielnika</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="modal fade" id="dynamicRecipeModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header recipe-modal-header" id="modalHeaderObj">
-                <div style="flex: 1; padding-right: 20px; display: flex; align-items: center; gap: 15px;">
-                    <h2 id="modalRecipeTitle" class="grimoire-title">Tytuł Przepisu</h2>
+                <div style="flex: 1; padding-right: 20px; display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
+                    <h2 id="modalRecipeTitle" class="grimoire-title" style="margin-bottom: 0;">Tytuł Przepisu</h2>
 
-                    <div id="modalOriginTags" class="header-tags-container"></div>
+                    <button type="button" id="btnToggleRecipeFav" class="btn btn-sm" style="border: 1px solid #d1c7a7; background-color: #fdfaf0; border-radius: 20px; color: #9b4b4b; font-weight: bold;">
+                        <i class="bi bi-heart" id="recipeFavIcon"></i> Dodaj
+                    </button>
+
+                    <div id="modalOriginTags" class="header-tags-container" style="margin-left: auto;"></div>
 
                     <div id="modalOriginTooltipIcon" class="header-tooltip-icon" style="display: none;">
                         <span class="info-tooltip">?<span class="tooltip-text" id="modalOriginTooltipText">Tutaj będą tagi</span></span>
                     </div>
                 </div>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="box-shadow: none;"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="box-shadow: none; align-self: flex-start;"></button>
             </div>
 
             <div class="modal-body p-0" style="background: #fdfaf0;" id="modalBodyObj">
@@ -110,4 +145,5 @@
     </div>
 </div>
 <script src="{{ url_for('static', filename='js/recipes.js') }}"></script>
+
 {% endblock %}

@@ -83,6 +83,56 @@
         .frozen-modal-close { position: absolute; right: 15px; top: 10px; font-size: 24px; cursor: pointer; color: #5a4f41; transition: color 0.2s; }
         .frozen-modal-close:hover { color: #9b4b4b; }
         a { text-decoration: none; color: inherit; }
+
+        /* Stylizacja rozwijanej listy Ulubionych */
+.dropdown-menu {
+    background-color: #fdfaf0 !important; /* Kremowy papier */
+    border: 2px solid #3e4a3d !important;
+    border-radius: 0 !important;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important;
+    min-width: 250px;
+}
+
+.dropdown-item {
+    color: #3e4a3d !important; /* Ciemnozielony tekst */
+    font-family: 'Crimson Text', serif;
+    font-size: 1.1rem;
+    padding: 8px 20px;
+    transition: background 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: #e0dcd3 !important;
+    color: #2d5a27 !important;
+}
+
+.dropdown-header {
+    background-color: #f4f1ea;
+    border-bottom: 1px dashed #d1c7a7;
+    margin-top: 5px;
+}
+
+.dropdown-divider {
+    border-top: 1px solid #d1c7a7 !important;
+    opacity: 1 !important;
+}
+
+/* Twarde nadpisanie kolorów Bootstrapa dla menu ulubionych */
+#favoritesDropdownMenu .dropdown-item {
+    color: #3e4a3d !important;
+    background-color: transparent !important;
+}
+
+#favoritesDropdownMenu .dropdown-item:hover {
+    background-color: #e0dcd3 !important;
+    color: #2d5a27 !important;
+}
+
+#favoritesDropdownMenu .dropdown-header {
+    color: #8a9a5b !important;
+    font-weight: bold;
+    border-bottom: 1px dashed #d1c7a7;
+}
     </style>
 
 </head>
@@ -96,6 +146,15 @@
             <a href="{{ url_for('przepisy') }}"><i class="ra ra-cauldron"></i> Przepisy</a>
             <a href="{{ url_for('gildie') }}"><i class="ra ra-pawn"></i> Gildie</a>
             <a href="#" class="frozen-feature"><i class="ra ra-speech-bubble"></i> Komentarze</a>
+
+            <div class="dropdown" style="display:inline-block; margin: 0 10px;">
+                <button class="btn dropdown-toggle" type="button" id="favDropdownBtn" data-bs-toggle="dropdown" aria-expanded="false" style="background: none; border: none; color: white; font-weight: bold; font-size: 0.9rem;">
+                    <i class="ra ra-heart"></i> Ulubione
+                </button>
+                <ul class="dropdown-menu" id="favoritesDropdownMenu">
+                    </ul>
+            </div>
+
         </div>
         <div class="frozen-feature" title="Zablokowane w wersji statycznej">
             <a href="#"><i class="ra ra-player"></i> Logowanie</a>
@@ -163,26 +222,22 @@
         if (!wrapper) return;
         const content = wrapper.querySelector('.scrollable-content');
 
-        // Duplikujemy zawartość paska, aby mógł się płynnie zapętlać
+        // Duplikujemy zawartość dla pętli
         content.innerHTML += content.innerHTML;
 
         let isDown = false;
         let startX;
         let scrollLeft;
-        let exactScroll = 0; // Płynny licznik sub-pikseli
+        let currentScroll = 0;
+        const halfWidth = wrapper.scrollWidth / 2; // Obliczamy raz (wydajność!)
 
-        // Autoscroll
         function autoScroll() {
             if (!isDown) {
-                exactScroll += speed;
-                // Jeśli dojechaliśmy do końca "pierwszej kopii", wracamy na początek dla iluzji nieskończoności
-                if (exactScroll >= wrapper.scrollWidth / 2) {
-                    exactScroll = 0;
+                currentScroll += speed;
+                if (currentScroll >= halfWidth) {
+                    currentScroll = 0;
                 }
-                wrapper.scrollLeft = exactScroll;
-            } else {
-                // Gdy człowiek dotyka, aktualizujemy licznik by nie szarpało
-                exactScroll = wrapper.scrollLeft;
+                wrapper.scrollLeft = currentScroll;
             }
             requestAnimationFrame(autoScroll);
         }
@@ -191,20 +246,30 @@
         // --- OBSŁUGA MYSZKI I DOTYKU ---
         function startDrag(pageX) {
             isDown = true;
+            wrapper.style.cursor = 'grabbing';
             startX = pageX - wrapper.offsetLeft;
             scrollLeft = wrapper.scrollLeft;
         }
 
+        function stopDrag() {
+            if (!isDown) return;
+            isDown = false;
+            wrapper.style.cursor = 'grab';
+            // KLUCZOWA POPRAWKA: Aktualizujemy licznik animacji do miejsca, w którym puściliśmy kursor
+            currentScroll = wrapper.scrollLeft;
+        }
+
         function doDrag(pageX) {
             if (!isDown) return;
-            const walk = (pageX - wrapper.offsetLeft - startX) * 1.5; // Siła poślizgu
+            const x = pageX - wrapper.offsetLeft;
+            const walk = (x - startX) * 1.5;
             wrapper.scrollLeft = scrollLeft - walk;
         }
 
         // Mysz
         wrapper.addEventListener('mousedown', (e) => startDrag(e.pageX));
-        wrapper.addEventListener('mouseleave', () => { isDown = false; });
-        wrapper.addEventListener('mouseup', () => { isDown = false; });
+        window.addEventListener('mouseup', stopDrag); // window, by łapało puszczenie poza paskiem
+        wrapper.addEventListener('mouseleave', stopDrag);
         wrapper.addEventListener('mousemove', (e) => {
             if(!isDown) return;
             e.preventDefault();
@@ -213,7 +278,7 @@
 
         // Telefony (Dotyk)
         wrapper.addEventListener('touchstart', (e) => startDrag(e.touches[0].pageX), {passive: true});
-        wrapper.addEventListener('touchend', () => { isDown = false; });
+        wrapper.addEventListener('touchend', stopDrag, {passive: true});
         wrapper.addEventListener('touchmove', (e) => doDrag(e.touches[0].pageX), {passive: true});
     }
 
@@ -255,6 +320,81 @@
     }
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+// Deklarujemy funkcję jako globalną, przypisując ją do window
+window.renderFavoritesDropdown = function() {
+    const menu = document.getElementById('favoritesDropdownMenu');
+    if (!menu) return;
+
+    const favPlants = JSON.parse(localStorage.getItem("herbariumFavorites")) || [];
+    const favRecipes = JSON.parse(localStorage.getItem("recipeFavorites")) || [];
+
+    if (menu.classList.contains('show')) return;
+
+    // Funkcja pomocnicza do tworzenia slugów (taka sama jak w Pythonie)
+    const slugify = (text) => {
+        const accents = {'ą':'a','ć':'c','ę':'e','ł':'l','ń':'n','ó':'o','ś':'s','ź':'z','ż':'z'};
+        return text.toLowerCase()
+            .replace(/[ąćęłńóśźż]/g, match => accents[match])
+            .replace(/\s+/g, '_')
+            .replace(/[^\w\-]+/g, '')
+            .replace(/\-\-+/g, '_');
+    };
+
+    let html = '';
+    if (favPlants.length === 0 && favRecipes.length === 0) {
+        html = '<li><span class="dropdown-item text-muted">Twój zielnik jest pusty.</span></li>';
+    } else {
+        if (favPlants.length > 0) {
+            html += '<li><h6 class="dropdown-header"><i class="ra ra-leaf"></i> Twoje Zioła</h6></li>';
+            favPlants.forEach(p => {
+                // ZMIANA: Link prowadzi teraz bezpośrednio do strony rośliny
+                const slug = slugify(p);
+                html += `<li><a class="dropdown-item" href="/plant/${slug}/">${p}</a></li>`;
+            });
+        }
+        if (favRecipes.length > 0) {
+            if (favPlants.length > 0) html += '<li><hr class="dropdown-divider"></li>';
+            html += '<li><h6 class="dropdown-header"><i class="ra ra-cauldron"></i> Twoje Receptury</h6></li>';
+            favRecipes.forEach(r => {
+                // Przepisy nadal szukamy przez parametr, bo nie mają własnych podstron
+                html += `<li><a class="dropdown-item" href="/przepisy/?q=${encodeURIComponent(r)}">${r}</a></li>`;
+            });
+        }
+    }
+    menu.innerHTML = html;
+};
+
+// Funkcja pomocnicza do odświeżania z innych plików
+window.refreshGlobalFavorites = function() {
+    window.renderFavoritesDropdown();
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Pierwsze renderowanie
+    window.renderFavoritesDropdown();
+
+    // Obsługa rozwijania menu przez Bootstrapa
+    const dropdownBtn = document.querySelector('.dropdown-toggle');
+    if (dropdownBtn) {
+        // Inicjalizacja instancji dropdown
+        const bsDropdown = new bootstrap.Dropdown(dropdownBtn);
+
+        // Odświeżaj listę tuż przed każdym pokazaniem
+        dropdownBtn.addEventListener('show.bs.dropdown', () => {
+            window.renderFavoritesDropdown();
+        });
+    }
+
+    // Sortowanie (jeśli funkcja istnieje w recipes.js)
+    if (typeof sortResultsByFavorites === 'function') {
+        setTimeout(sortResultsByFavorites, 150);
+    }
+});
+</script>
+
+<script src="{{ url_for('static', filename='js/magic_lens.js') }}"></script>
 </body>
 </html>

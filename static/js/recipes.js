@@ -71,7 +71,41 @@ function getDictContext(value, dictObj) {
 window.openRecipeModal = function(buttonElement) {
     try {
         const recipe = JSON.parse(buttonElement.getAttribute('data-recipe'));
+        // --- OBSŁUGA ULUBIONYCH (ZAPIS W LOCALSTORAGE) ---
+        const recipeTitle = recipe.tytul || "Nieznana Receptura";
+        const btnToggleFav = document.getElementById('btnToggleRecipeFav');
+        const favIcon = document.getElementById('recipeFavIcon');
 
+        if (btnToggleFav && favIcon) {
+            let currentFavs = JSON.parse(localStorage.getItem("recipeFavorites")) || [];
+
+            // Sprawdź stan początkowy
+            if (currentFavs.includes(recipeTitle)) {
+                favIcon.classList.replace('bi-heart', 'bi-heart-fill');
+                btnToggleFav.innerHTML = `<i class="bi bi-heart-fill" id="recipeFavIcon"></i> Zapisano`;
+            } else {
+                favIcon.classList.replace('bi-heart-fill', 'bi-heart');
+                btnToggleFav.innerHTML = `<i class="bi bi-heart" id="recipeFavIcon"></i> Dodaj`;
+            }
+
+            // Odświeżanie event listenera (usuwamy stary, dodajemy nowy)
+            const newBtn = btnToggleFav.cloneNode(true);
+            btnToggleFav.parentNode.replaceChild(newBtn, btnToggleFav);
+
+            newBtn.addEventListener('click', function() {
+                let favs = JSON.parse(localStorage.getItem("recipeFavorites")) || [];
+                if (favs.includes(recipeTitle)) {
+                    favs = favs.filter(r => r !== recipeTitle);
+                    this.innerHTML = `<i class="bi bi-heart" id="recipeFavIcon"></i> Dodaj`;
+                } else {
+                    favs.push(recipeTitle);
+                    this.innerHTML = `<i class="bi bi-heart-fill" id="recipeFavIcon"></i> Zapisano`;
+                }
+                localStorage.setItem("recipeFavorites", JSON.stringify(favs));
+                if(typeof renderFavoritesDropdown === 'function') renderFavoritesDropdown();
+                sortResultsByFavorites(); // Odśwież widok listy
+            });
+        }
         // --- TYTUŁ I POCHODZENIE ---
         document.getElementById('modalRecipeTitle').innerText = recipe.tytul || "Nieznana Receptura";
 
@@ -315,7 +349,11 @@ window.openRecipeModal = function(buttonElement) {
 document.addEventListener("DOMContentLoaded", function() {
     const modalElement = document.getElementById('dynamicRecipeModal');
     if (!modalElement) return;
-
+    else {
+        modalEl.addEventListener('hidden.bs.modal', () => {
+            document.body.focus(); // Przenieś fokus na stronę, by nie blokować czytników ekranu
+        });
+    }
     modalElement.addEventListener('shown.bs.modal', function () {
         const modalBody = document.getElementById('modalBodyObj');
         const modalHeader = document.getElementById('modalHeaderObj');
@@ -375,6 +413,9 @@ function filterRecipes(query) {
             wrapper.classList.add('d-none');
         }
     });
+
+    sortResultsByFavorites();
+
     if (noResultsMessage) {
         noResultsMessage.style.display = visibleCount === 0 ? 'block' : 'none';
     }
@@ -430,3 +471,68 @@ window.clearSearch = function() {
     }
 };
 
+// ==========================================
+// 6. OBSŁUGA ULUBIONYCH I PARAMETRÓW URL
+// ==========================================
+function sortResultsByFavorites() {
+    const grid = document.getElementById('recipesGrid');
+    if (!grid) return;
+
+    const favRecipes = JSON.parse(localStorage.getItem("recipeFavorites")) || [];
+    const items = Array.from(grid.querySelectorAll('.recipe-wrapper'));
+
+    // 1. KESZOWANIE: Pobieramy dane raz i przechowujemy w tablicy obiektów
+    // Dzięki temu unikamy wielokrotnego odczytu z DOM (Forced Reflow)
+    const itemsWithData = items.map(item => {
+        const titleEl = item.querySelector('.recipe-title');
+        // Czyścimy tytuł z serduszka do porównania
+        const title = titleEl.innerText.replace('❤️ ', '').trim();
+        return {
+            element: item,
+            title: title,
+            isFav: favRecipes.includes(title)
+        };
+    });
+
+    // 2. SORTOWANIE: Operujemy na czystej tablicy JavaScript (błyskawiczne)
+    itemsWithData.sort((a, b) => {
+        if (a.isFav && !b.isFav) return -1;
+        if (!a.isFav && b.isFav) return 1;
+        return 0;
+    });
+
+    // 3. BUDOWANIE: Tworzymy fragment i aktualizujemy ikony
+    const fragment = document.createDocumentFragment();
+
+    itemsWithData.forEach(obj => {
+        const titleEl = obj.element.querySelector('.recipe-title');
+        const existingIcon = titleEl.querySelector('.bi-heart-fill');
+
+        if (obj.isFav) {
+            if (!existingIcon) {
+                titleEl.insertAdjacentHTML('afterbegin', `<i class="bi bi-heart-fill" style="color: #9b4b4b; font-size: 0.9rem; margin-right: 8px;"></i> `);
+            }
+        } else if (existingIcon) {
+            existingIcon.remove();
+        }
+
+        fragment.appendChild(obj.element);
+    });
+
+    // 4. JEDNORAZOWA PODMIANA (Tylko 1 przerysowanie strony)
+    grid.innerHTML = "";
+    grid.appendChild(fragment);
+}
+
+// Obsługa parametrów przy starcie strony
+document.addEventListener("DOMContentLoaded", () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const query = urlParams.get('q');
+
+    if (query && searchInput) {
+        searchInput.value = query;
+        filterRecipes(query.toLowerCase());
+    } else {
+        sortResultsByFavorites();
+    }
+});
