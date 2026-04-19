@@ -1,98 +1,126 @@
 document.addEventListener("DOMContentLoaded", () => {
     const magicBtn = document.getElementById("magicLensBtn");
     const cameraInput = document.getElementById("magicCameraInput");
-
-    // Nie inicjalizuj modalu globalnie na starcie, zrób to w funkcji
-    let favModal = null;
-
-    if(magicBtn && cameraInput) {
-        magicBtn.addEventListener("click", () => {
-            cameraInput.click();
-        });
-    }
-
-    // Funkcja pomocnicza do bezpiecznego otwierania modalu
-    function showRecognizedModal(plantName) {
-        const modalEl = document.getElementById('favoritePlantModal');
-        if (modalEl) {
-            const modalInstance = bootstrap.Modal.getOrCreateInstance(modalEl);
-            document.getElementById("recognizedPlantName").textContent = plantName;
-            modalInstance.show(); // Użyj lokalnej instancji
-        }
-    }
     const searchInput = document.getElementById("universalSearch") || document.getElementById("recipeSearch");
-//    const favModal = new bootstrap.Modal(document.getElementById('favoritePlantModal'));
-    const recognizedNameDisplay = document.getElementById("recognizedPlantName");
     const saveFavBtn = document.getElementById("saveFavoriteBtn");
 
     let currentRecognizedPlant = "";
 
-    // 1. Aktywacja aparatu
+    // 1. BEZPIECZNA AKTYWACJA APARATU
     if(magicBtn && cameraInput) {
-        magicBtn.addEventListener("click", () => {
+        magicBtn.addEventListener("click", (e) => {
+            e.preventDefault(); // Blokujemy domyślne akcje
+            e.stopPropagation(); // Zapobiegamy "bąbelkowaniu" zdarzenia
+
+            cameraInput.value = ""; // Czyścimy input przed otwarciem
             cameraInput.click();
         });
     }
 
-    // 2. Przechwycenie zdjęcia
+    // 2. PRZECHWYCENIE ZDJĘCIA I ANALIZA
     if(cameraInput) {
         cameraInput.addEventListener("change", async (event) => {
             const file = event.target.files[0];
             if (!file) return;
 
-            // Zmień ikonę na ładowanie
+            // Zmiana UI na tryb ładowania
+            const originalContent = magicBtn.innerHTML;
             magicBtn.innerHTML = '<i class="bi bi-hourglass-split"></i> Analiza...';
             magicBtn.disabled = true;
 
             try {
-                // Konwersja do Base64 (wymagane przez większość API)
                 const base64Image = await getBase64(file);
 
-                // 3. Równoległe uderzenie do API (Ważenie wyników)
-                currentRecognizedPlant = await analyzePlantWithMultipleAPIs(base64Image);
+                // Wywołanie JEDNEGO API (Plant.id)
+                currentRecognizedPlant = await identifyPlantAPI(base64Image);
 
-                // 4. Sukces - wstawienie do wyszukiwarki i pokazanie Modala
-                if(searchInput) {
-                    searchInput.value = currentRecognizedPlant;
-                    // Wyzwolenie eventu input, by wyszukiwarka zaktualizowała wyniki
-                    searchInput.dispatchEvent(new Event('input', { bubbles: true }));
+                if (currentRecognizedPlant) {
+                    // Wpisanie do wyszukiwarki
+                    if(searchInput) {
+                        searchInput.value = currentRecognizedPlant;
+                        searchInput.dispatchEvent(new Event('input', { bubbles: true }));
+                    }
+                    // Pokazanie modalu sukcesu
+                    showRecognizedModal(currentRecognizedPlant);
                 }
-
-                recognizedNameDisplay.textContent = currentRecognizedPlant;
-                favModal.show();
 
             } catch (error) {
                 console.error("Błąd rozpoznawania:", error);
-                alert("Nie udało się rozpoznać rośliny. Spróbuj ponownie z wyraźniejszym zdjęciem.");
+                alert("Nie udało się rozpoznać rośliny. Spróbuj ponownie.");
             } finally {
-                magicBtn.innerHTML = '<i class="bi bi-camera"></i> Rozpoznaj';
+                magicBtn.innerHTML = originalContent;
                 magicBtn.disabled = false;
-                cameraInput.value = ""; // Reset inputu
+                // Ważne: czyścimy wartość, by aparat nie otworzył się ponownie przy błędzie
+                cameraInput.value = "";
             }
         });
     }
 
-    // 5. Zapis do LocalStorage
+    function showRecognizedModal(plantName) {
+        const modalEl = document.getElementById('favoritePlantModal');
+        if (modalEl) {
+            document.getElementById("recognizedPlantName").textContent = plantName;
+            const modalInstance = bootstrap.Modal.getOrCreateInstance(modalEl);
+            modalInstance.show();
+        }
+    }
+
+    // 3. ZAPIS DO ZIELNIKA
     if(saveFavBtn) {
         saveFavBtn.addEventListener("click", () => {
-            let favorites = JSON.parse(localStorage.getItem("herbariumFavorites")) || [];
+            if (!currentRecognizedPlant) return;
 
-            // Unikamy duplikatów
+            let favorites = JSON.parse(localStorage.getItem("herbariumFavorites")) || [];
             if (!favorites.includes(currentRecognizedPlant)) {
                 favorites.push(currentRecognizedPlant);
                 localStorage.setItem("herbariumFavorites", JSON.stringify(favorites));
             }
 
-            favModal.hide();
-            // Opcjonalnie: wywołaj funkcję odświeżającą wyniki z nowym sortowaniem
-            if(typeof sortResultsByFavorites === "function") {
-                sortResultsByFavorites();
-            }
+            const modalEl = document.getElementById('favoritePlantModal');
+            const modalInstance = bootstrap.Modal.getInstance(modalEl);
+            if (modalInstance) modalInstance.hide();
+
+            if(typeof window.refreshGlobalFavorites === "function") window.refreshGlobalFavorites();
+            if(typeof sortResultsByFavorites === "function") sortResultsByFavorites();
         });
     }
 });
 
-// --- FUNKCJE POMOCNICZE ---
+// --- INTEGRACJA Z PLANT.ID (JEDNO API) ---
+
+async function identifyPlantAPI(base64Image) {
+    // USUŃ "data:image/jpeg;base64," z początku ciągu, jeśli istnieje
+    const cleanBase64 = base64Image.split(',')[1] || base64Image;
+
+    const apiKey = "b9TobMZCwqPYHccRApN4feLLocZljMRsx5JfBMAEk6njbBUOR7"; // Wpisz tutaj swój klucz
+
+    const response = await fetch("https://plant.id/api/v3/identification", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Api-Key": apiKey
+        },
+        body: JSON.stringify({
+            "images": [cleanBase64],
+            "latitude": 50.1, // Możesz dodać współrzędne Czyżowic dla lepszej trafności
+            "longitude": 18.4,
+            "similar_images": true
+        })
+    });
+
+    const data = await response.json();
+
+    // Pobieramy pierwszą sugestię z najwyższym prawdopodobieństwem
+    if (data.result && data.result.classification && data.result.classification.suggestions.length > 0) {
+        const bestMatch = data.result.classification.suggestions[0];
+        console.log("Rozpoznano:", bestMatch.name, "Prawdopodobieństwo:", bestMatch.probability);
+
+        // Zwracamy nazwę (możesz użyć bestMatch.name dla łacińskiej lub spróbować mapować na polską)
+        return bestMatch.name;
+    }
+
+    return null;
+}
 
 function getBase64(file) {
     return new Promise((resolve, reject) => {
@@ -100,53 +128,5 @@ function getBase64(file) {
         reader.readAsDataURL(file);
         reader.onload = () => resolve(reader.result);
         reader.onerror = error => reject(error);
-    });
-}
-
-async function analyzePlantWithMultipleAPIs(base64Image) {
-    // UWAGA: W środowisku produkcyjnym klucze API nie powinny być na froncie!
-    // Poniżej znajduje się architektura zapytań równoległych (Promise.all).
-
-    // Zastąp to swoimi rzeczywistymi kluczami i endpointami
-    const api1_Promise = mockApiCall("API_1", base64Image, { "Mniszek lekarski": 0.8, "Mlecz": 0.2 }); // Symulacja Plant.id
-    const api2_Promise = mockApiCall("API_2", base64Image, { "Mniszek lekarski": 0.9, "Podbiał": 0.1 }); // Symulacja Pl@ntNet
-
-    // Odpalamy zapytania w tym samym czasie
-    const [resultsApi1, resultsApi2] = await Promise.all([api1_Promise, api2_Promise]);
-
-    // Algorytm wagowy: API_2 jest dokładniejsze, dajemy mu wagę 1.5, API_1 wagę 1.0
-    let combinedScores = {};
-
-    function addScores(apiResults, weight) {
-        for (let [plant, score] of Object.entries(apiResults)) {
-            if (!combinedScores[plant]) combinedScores[plant] = 0;
-            combinedScores[plant] += (score * weight);
-        }
-    }
-
-    addScores(resultsApi1, 1.0);
-    addScores(resultsApi2, 1.5);
-
-    // Szukamy najwyższego połączonego wyniku
-    let bestMatch = "";
-    let highestScore = 0;
-
-    for (let [plant, score] of Object.entries(combinedScores)) {
-        if (score > highestScore) {
-            highestScore = score;
-            bestMatch = plant;
-        }
-    }
-
-    return bestMatch;
-}
-
-// Symulacja działania API (Do usunięcia przy wdrażaniu prawdziwych Fetch)
-function mockApiCall(apiName, image, simulatedResponse) {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            console.log(`[${apiName}] Zwrócono wyniki.`);
-            resolve(simulatedResponse);
-        }, 1500); // Symulacja 1.5 sekundy opóźnienia sieciowego
     });
 }
