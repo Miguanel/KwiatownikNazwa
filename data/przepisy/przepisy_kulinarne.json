@@ -1,8 +1,5 @@
-{
-  "typ": "kulinarne",
-  "liczba_przepisow": 206,
-  "zrodlo_danych": "Zebrane z plików gatunków w Kwiatowniku",
-  "przepisy": [
+
+[
     {
       "tytul": "Nalewka z ziela skrzypu polnego",
       "typ": "kulinarne",
@@ -6184,6 +6181,235 @@
       "slug": "glog_jednoszyjkowy",
       "cechy": "zbalansowany profil smakowy",
       "wlasciwosci": "potencjalnie bezglutenowe (zależnie od składników), wegetariańskie (jeśli bez produktów odzwierzęcych)"
+    },
+
+
+  {
+    "tytul": "Orzeźwienie Boruty (Oskoła z Miętą i Miodem)",
+    "roslina": "Brzoza (Oskoła)",
+    "pochodzenie": ["Słowiańskie", "Tradycyjne"],
+    "mechanizm_tworzenia": "Ekstrakcja zimna",
+    "skladniki": [
+      {
+        "nazwa": "Świeża oskoła",
+        "ilosc": "1 litr",
+        "filar": "1_bazowy",
+        "tropizm_organowy": "Nerki (oczyszczanie)"
+      },
+      {
+        "nazwa": "Liście mięty pieprzowej",
+        "ilosc": "5-6 gałązek",
+        "filar": "2_wzmocnienie",
+        "tropizm_organowy": "Układ trawienny"
+      },
+      {
+        "nazwa": "Miód lipowy",
+        "ilosc": "2 łyżki",
+        "filar": "4_poslaniec",
+        "tropizm_organowy": "Płuca"
+      }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Oskołę przecedzić przez gęste płótno.",
+      "Krok 2: Miętę lekko ugnieść w moździerzu, aby puściła soki.",
+      "Krok 3: Wymieszać oskołę z miodem do całkowitego rozpuszczenia.",
+      "Krok 4: Dodać miętę i odstawić w chłodne miejsce na 2 godziny."
+    ],
+    "stosowanie_i_dawkowanie": {
+      "okolicznosci_stosowania": "Przesilenie wiosenne, potrzeba nawodnienia.",
+      "dawkowanie_standardowe": "1 szklanka 3 razy dziennie.",
+      "skalowanie_pacjenta": "Bezpieczne dla dzieci i starszych."
+    },
+    "klasyfikacja_dzialania": {
+      "skalowanie_toksykologiczne": "Zioła łagodne (normalizujące)",
+      "matryca_wu_xing": {
+        "zywiol_leczony": "Woda",
+        "narzad_matczyny_do_wsparcia": "Nerki",
+        "porada_matrycy": "Stosować rano, aby pobudzić przepływ energii Qi."
+      },
+      "triada_kampo": {
+        "cel_glowny": "Sui (Płyny)",
+        "wyjasnienie": "Reguluje gospodarkę wodną i usuwa zastoje limfatyczne."
+      }
+    },
+    "wymogi_szamanskie_i_czasowe": {
+      "astrologia_zbioru": "Księżyc przybywający, faza Wenus.",
+      "dieta_i_zakazy": "Unikać ciężkich tłuszczów zwierzęcych podczas kuracji."
     }
+  },
+  {
+    "tytul": "Zupa Zielonych Szeptuch (Chłodnik na Oskole)",
+    "roslina": "Brzoza (Oskoła)",
+    "pochodzenie": ["Słowiańskie", "Zapomniane przepisy wiejskie"],
+    "mechanizm_tworzenia": "Łączenie surowych soków",
+    "skladniki": [
+      {
+        "nazwa": "Oskoła",
+        "ilosc": "500 ml",
+        "filar": "1_bazowy"
+      },
+      {
+        "nazwa": "Ogórek świeży",
+        "ilosc": "2 sztuki",
+        "filar": "2_wzmocnienie"
+      },
+      {
+        "nazwa": "Młode liście pokrzywy",
+        "ilosc": "Garść (sparzone)",
+        "filar": "3_minister"
+      },
+      {
+        "nazwa": "Sól kamienna",
+        "ilosc": "Szczypta",
+        "filar": "5_korektor"
+      }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Ogórki zetrzeć na grubych oczkach.",
+      "Krok 2: Pokrzywę drobno posiekać.",
+      "Krok 3: Zalać składniki zimną oskołą.",
+      "Krok 4: Doprawić i podawać natychmiast."
+    ],
+    "klasyfikacja_dzialania": {
+      "matryca_wu_xing": { "zywiol_leczony": "Drzewo" }
+    }
+  },
+  {
+    "tytul": "Klasztorny Syrop Brzozowo-Imbirowy",
+    "roslina": "Brzoza (Oskoła)",
+    "pochodzenie": ["Klasztorne", "Aptekarskie"],
+    "mechanizm_tworzenia": "Redukcja termiczna",
+    "skladniki": [
+      { "nazwa": "Oskoła", "ilosc": "2 litry", "filar": "1_bazowy" },
+      { "nazwa": "Kłącze imbiru", "ilosc": "50g", "filar": "2_wzmocnienie" },
+      { "nazwa": "Sok z cytryny", "ilosc": "2 łyżki", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Gotować oskołę na małym ogniu, aż objętość zmniejszy się o połowę.",
+      "Krok 2: Dodać plastry imbiru i gotować kolejne 15 minut.",
+      "Krok 3: Przecedzić i dodać sok z cytryny.",
+      "Krok 4: Rozlać do ciemnych butelek."
+    ],
+    "klasyfikacja_dzialania": {
+      "triada_kampo": { "cel_glowny": "Ki (Energia)" }
+    }
+  },
+  {
+    "tytul": "Rycerski Kwas Brzozowy (Podpiwek)",
+    "roslina": "Brzoza (Oskoła)",
+    "pochodzenie": ["Rycerskie", "Słowiańskie"],
+    "mechanizm_tworzenia": "Fermentacja dzika",
+    "skladniki": [
+      { "nazwa": "Oskoła", "ilosc": "5 litrów", "filar": "1_bazowy" },
+      { "nazwa": "Rodzynki", "ilosc": "10 sztuk", "filar": "4_poslaniec" },
+      { "nazwa": "Skórka chleba razowego", "ilosc": "1 sztuka", "filar": "2_wzmocnienie" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Wlać oskołę do kamionkowego naczynia.",
+      "Krok 2: Dodać rodzynki i skórkę chleba.",
+      "Krok 3: Przykryć gazą i odstawić w ciepłe miejsce na 3-4 dni.",
+      "Krok 4: Gdy zacznie musować, przecedzić i schłodzić."
+    ],
+    "klasyfikacja_dzialania": {
+      "triada_kampo": { "cel_glowny": "Tokuso (Toksyny)" }
+    }
+  },
+  {
+    "tytul": "Galaretka Leśnego Ducha",
+    "roslina": "Brzoza (Oskoła)",
+    "pochodzenie": ["Słowiańskie"],
+    "mechanizm_tworzenia": "Zagęszczanie naturalne",
+    "skladniki": [
+      { "nazwa": "Oskoła", "ilosc": "500 ml", "filar": "1_bazowy" },
+      { "nazwa": "Owoce jagodowe", "ilosc": "200g", "filar": "2_wzmocnienie" },
+      { "nazwa": "Agar lub pektyna", "ilosc": "Zgodnie z wagą", "filar": "4_poslaniec" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Zagotować oskołę z wybranym zagęstnikiem.",
+      "Krok 2: W miseczkach ułożyć owoce.",
+      "Krok 3: Zalać owoce gorącym płynem.",
+      "Krok 4: Odstawić do stężenia."
+    ]
+  },
+  {
+    "tytul": "Napar 'Świt Lasu' (Oskoła z Sosną)",
+    "roslina": "Brzoza (Oskoła)",
+    "pochodzenie": ["Starodawne", "Puszczańskie"],
+    "mechanizm_tworzenia": "Infuzja",
+    "skladniki": [
+      { "nazwa": "Gorąca oskoła", "ilosc": "250 ml", "filar": "1_bazowy" },
+      { "nazwa": "Młode pędy sosny", "ilosc": "3 sztuki", "filar": "2_wzmocnienie" },
+      { "nazwa": "Pyłek kwiatowy", "ilosc": "1 łyżeczka", "filar": "3_minister" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Podgrzać oskołę do 80 stopni (nie gotować).",
+      "Krok 2: Zalać pędy sosny i parzyć pod przykryciem 10 minut.",
+      "Krok 3: Dodać pyłek po przestygnięciu."
+    ]
+  },
+  {
+    "tytul": "Marynata 'Siła Dębu' na bazie oskoły",
+    "roslina": "Brzoza (Oskoła)",
+    "pochodzenie": ["Rycerskie"],
+    "mechanizm_tworzenia": "Trawienie enzymatyczne",
+    "skladniki": [
+      { "nazwa": "Oskoła", "ilosc": "200 ml", "filar": "1_bazowy" },
+      { "nazwa": "Czosnek niedźwiedzi", "ilosc": "5 liści", "filar": "2_wzmocnienie" },
+      { "nazwa": "Jałowiec", "ilosc": "3 owoce", "filar": "3_minister" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Rozgnieść jałowiec i czosnek.",
+      "Krok 2: Wymieszać z oskołą.",
+      "Krok 3: Namoczyć w marynacie warzywa lub mięso na 6 godzin."
+    ]
+  },
+  {
+    "tytul": "Owsianka 'Złoty Poranek' na Oskole",
+    "roslina": "Brzoza (Oskoła)",
+    "pochodzenie": ["Współczesne Zielarskie"],
+    "mechanizm_tworzenia": "Pęcznienie",
+    "skladniki": [
+      { "nazwa": "Oskoła", "ilosc": "1 szklanka", "filar": "1_bazowy" },
+      { "nazwa": "Płatki owsiane", "ilosc": "5 łyżek", "filar": "4_poslaniec" },
+      { "nazwa": "Orzechy laskowe", "ilosc": "Garść", "filar": "2_wzmocnienie" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Płatki zalać oskołą na noc.",
+      "Krok 2: Rano lekko podgrzać.",
+      "Krok 3: Posypać orzechami przed podaniem."
+    ]
+  },
+  {
+    "tytul": "Eliksir Mnicha (Oskoła z Octem Jabłkowym)",
+    "roslina": "Brzoza (Oskoła)",
+    "pochodzenie": ["Klasztorne"],
+    "mechanizm_tworzenia": "Kwaszenie",
+    "skladniki": [
+      { "nazwa": "Oskoła", "ilosc": "1 szklanka", "filar": "1_bazowy" },
+      { "nazwa": "Domowy ocet jabłkowy", "ilosc": "1 łyżeczka", "filar": "2_wzmocnienie" },
+      { "nazwa": "Goździk", "ilosc": "1 sztuka", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Do szklanki oskoły dodać ocet.",
+      "Krok 2: Wrzucić goździk na 5 minut.",
+      "Krok 3: Wypić małymi łykami przed posiłkiem."
+    ]
+  },
+  {
+    "tytul": "Brzozowy Nektar z Rokitnikiem",
+    "roslina": "Brzoza (Oskoła)",
+    "pochodzenie": ["Słowiańskie", "Syberyjskie"],
+    "mechanizm_tworzenia": "Homogenizacja",
+    "skladniki": [
+      { "nazwa": "Oskoła", "ilosc": "300 ml", "filar": "1_bazowy" },
+      { "nazwa": "Sok z rokitnika", "ilosc": "50 ml", "filar": "2_wzmocnienie" },
+      { "nazwa": "Miód gryczany", "ilosc": "1 łyżeczka", "filar": "3_minister" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Wymieszać soki w glinianym naczyniu.",
+      "Krok 2: Dodać miód i intensywnie mieszać drewnianą łyżką.",
+      "Krok 3: Podawać w temperaturze pokojowej."
+    ]
+  }
+
   ]
-}
