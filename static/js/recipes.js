@@ -528,11 +528,24 @@ function sortResultsByFavorites() {
 document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
     const query = urlParams.get('q');
+    const autoOpen = urlParams.get('autoopen');
 
     if (query && searchInput) {
         searchInput.value = query;
         filterRecipes(query.toLowerCase());
     } else {
         sortResultsByFavorites();
+    }
+
+    // --- NOWOŚĆ: AUTOMATYCZNE OTWIERANIE PRZEPISU ---
+    if (autoOpen === 'true') {
+        setTimeout(() => {
+            // Szukamy pierwszego widocznego przepisu na liście po przefiltrowaniu
+            const visibleWrappers = document.querySelectorAll('.recipe-wrapper:not(.d-none)');
+            if (visibleWrappers.length > 0) {
+                const btn = visibleWrappers[0].querySelector('.btn-details');
+                if (btn) btn.click(); // Automatyczne kliknięcie!
+            }
+        }, 150); // Krótkie opóźnienie, by filtry i animacje zdążyły zadziałać
     }
 });

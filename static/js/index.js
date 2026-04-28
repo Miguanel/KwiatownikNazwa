@@ -1,11 +1,60 @@
-//const BASE_URL = window.location.origin;
+// ==========================================
+// SŁOWNIKI ALCHEMICZNE I POMOCNICZE
+// ==========================================
+const dict = {
+    "Tropizm Organowy": "Wskazuje, do jakiego narządu lub układu w ciele pacjenta dana roślina kieruje swoje główne działanie lecznicze.",
+    "Smak Ajurwedyjski": "Według medycyny wschodniej, smak zioła (np. gorzki, ostry, słodki) determinuje jego termikę – to, czy ochładza, rozgrzewa, wysusza czy nawilża tkanki.",
+    "Matryca Wu Xing": "Tradycyjna Medycyna Chińska. Dzieli choroby i zioła na 5 żywiołów (Drzewo, Ogień, Ziemia, Metal, Woda). Leczenie polega na równoważeniu tych żywiołów.",
+    "Triada Kampo": "Japońska koncepcja medyczna dzieląca zdrowie na 3 strumienie: KI (Energia życiowa/nerwy), KETSU (Krew/krążenie) oraz SUI (Płyny ustrojowe/limfa).",
+    "Filar": "W starożytnych recepturach składniki dzieliły się na role: Bazowy (główny lek), Wzmocnienie (pomocnik), Minister (kierunkowskaz), Posłaniec (nośnik) i Korektor (łagodzący skutki uboczne).",
+    "Alchemia Spageryczna": "Starożytna sztuka rozdzielania zioła na olejek (Duszę), alkohol (Ducha) i popiół (Ciało mineralne), by połączyć je w spotęgowany eliksir.",
+    "Doktryna Sygnatur": "Dawne wierzenie, według którego wygląd, kolor lub środowisko życia rośliny zdradza, jaki organ ludzki ona leczy.",
+    "Skalowanie Toksykologiczne": "Określa stopień niebezpieczeństwa i siłę działania receptury, od ziół łagodnych (normalizujących) po heroiczne (ekstremalnie silne, potencjalnie toksyczne)."
+};
+
+const pillarDict = {
+    "1_bazowy": "Baza: Główny lek uderzający bezpośrednio w przyczynę choroby.",
+    "2_wzmocnienie": "Wzmocnienie: Pomaga i potęguje działanie leku bazowego.",
+    "3_minister": "Minister: Usuwa poboczne objawy lub kieruje lek do konkretnego miejsca.",
+    "4_poslaniec": "Posłaniec: Nośnik ułatwiający wchłanianie (np. alkohol, tłuszcz).",
+    "5_korektor": "Korektor: Łagodzi drażniące skutki uboczne silnych ziół."
+};
+
+const kampoDict = {
+    "ki": "Ki (Energia): Siła życiowa, impulsy nerwowe i napęd organizmu. Jej zastój powoduje nagły ból, napięcie, drgawki i skurcze.",
+    "ketsu": "Ketsu (Krew): Fizyczne krążenie i odżywienie tkanek. Jej zablokowanie powoduje ciemne krwiaki, stwardnienia i kłujący ból.",
+    "sui": "Sui (Płyny): Limfa, pot, śluz i woda. Zapewnia nawilżenie. Jej nadmiar to obrzęki i wysięki, a brak to suchość i pękanie skóry.",
+    "tokuso": "Tokuso (Toksyny): Szkodliwe zastoje ropne, martwica, zakażenia lub obce jady w organizmie, które należy kategorycznie wydalić."
+};
+
+function getContextTooltip(title, text) {
+    if(!text) return '';
+    return `<span class="info-tooltip">?<span class="tooltip-text"><strong>${title}</strong><br>${text}</span></span>`;
+}
+
+function extractContext(fullText) {
+    let match = fullText.match(/^(.*?)\s*\((.*?)\)$/);
+    if (match) return { name: match[1], desc: match[2] };
+    return { name: fullText, desc: '' };
+}
+
+function getDictContext(value, dictObj) {
+    if(!value) return { name: '', desc: '' };
+    let cleanName = value.replace(/_/g, ' ');
+    let desc = '';
+    for (let key in dictObj) {
+        if (value.toLowerCase().includes(key)) desc += dictObj[key] + " ";
+    }
+    if (cleanName.includes('_')) cleanName = cleanName.split('_')[1];
+    return { name: cleanName, desc: desc.trim() };
+}
+
 
 // --- NOWOŚĆ: SYSTEM PRZECIĄGANIA (DRAG TO SCROLL) ---
-let isDraggingUI = false; // Flaga blokująca kliknięcia w trakcie przeciągania
+let isDraggingUI = false;
 
 function enableDragToScroll(slider) {
     let isDown = false; let startX; let scrollLeft;
-
     slider.addEventListener('mousedown', (e) => {
         isDown = true; isDraggingUI = false;
         slider.classList.add('active');
@@ -18,18 +67,14 @@ function enableDragToScroll(slider) {
         if (!isDown) return;
         e.preventDefault();
         const x = e.pageX - slider.offsetLeft;
-        const walk = (x - startX) * 1.5; // Prędkość przeciągania
-        if (Math.abs(walk) > 5) isDraggingUI = true; // Jeśli ruszyliśmy myszką o >5px, oznaczamy to jako PRZECIĄGANIE, a nie KLIKNIĘCIE!
+        const walk = (x - startX) * 1.5;
+        if (Math.abs(walk) > 5) isDraggingUI = true;
         slider.scrollLeft = scrollLeft - walk;
     });
 }
-// --- NOWOŚĆ: INTELIGENTNE POBIERANIE ZDJĘCIA Z OBIEKTU URL ---
+
 function getBestImageUrl(plant) {
-    // Jeśli url jest obiektem (tak jak u Ciebie w bez_czarny.json)
-    if (plant.url && typeof plant.url === 'object') {
-        return Object.values(plant.url)[0] || ''; // Pobiera pierwszy link z obiektu
-    }
-    // Kompatybilność wsteczna dla starych roślin
+    if (plant.url && typeof plant.url === 'object') return Object.values(plant.url)[0] || '';
     return plant.zdjecie_url || plant.zdjecie || plant.image || plant.url || '';
 }
 
@@ -68,10 +113,8 @@ function renderPlantStatus(plant, month) {
     let tasks = plant.kalendarz_ogrodnika?.zadania || [];
     let currentTask = tasks.find(t => t.miesiace && t.miesiace.includes(month));
     let bgColor = monthColors[month];
-
     let prevM = month - 1 < 1 ? 12 : month - 1;
     let nextM = month + 1 > 12 ? 1 : month + 1;
-
     let taskText = currentTask ? currentTask.czynnosc : "<span style='color:#777; font-weight:normal;'>Odpoczynek / Brak zadań</span>";
 
     return `
@@ -112,11 +155,9 @@ recipesData.forEach(recipe => {
     const plantId = plant.id, rName = plant.nazwa_pl;
     addSymptom(recipe.zastosowanie, rName, plantId);
     addSymptom(recipe.cechy, rName, plantId);
-    addSymptom(recipe.tytul, rName, plantId);
     addSymptom(recipe.wlasciwosci, rName, plantId);
     if (recipe.efekty) addSymptom(recipe.efekty, rName, plantId);
     if (recipe.tagi) addSymptom(recipe.tagi, rName, plantId);
-    if (recipe.skladniki) addSymptom(recipe.skladniki, rName, plantId);
 });
 
 plantsData.forEach(plant => {
@@ -129,26 +170,13 @@ plantsData.forEach(plant => {
     }
 });
 
-// ==========================================
-// NOWOŚĆ: ALGORYTM AGREGACJI SEZONÓW I MIESIĘCY
-// ==========================================
 const monthNames = ["", "styczeń", "luty", "marzec", "kwiecień", "maj", "czerwiec", "lipiec", "sierpień", "wrzesień", "październik", "listopad", "grudzień"];
-const seasonMonths = {
-    "zima": [12, 1, 2], "wiosna": [3, 4, 5], "lato": [6, 7, 8], "jesień": [9, 10, 11]
-};
+const seasonMonths = { "zima": [12, 1, 2], "wiosna": [3, 4, 5], "lato": [6, 7, 8], "jesień": [9, 10, 11] };
+const seasonalMap = { "wiosna": [], "lato": [], "jesień": [], "zima": [], "styczeń": [], "luty": [], "marzec": [], "kwiecień": [], "maj": [], "czerwiec": [], "lipiec": [], "sierpień": [], "wrzesień": [], "październik": [], "listopad": [], "grudzień": [] };
 
-// Koszyki na nasz automatyczny raport
-const seasonalMap = {
-    "wiosna": [], "lato": [], "jesień": [], "zima": [],
-    "styczeń": [], "luty": [], "marzec": [], "kwiecień": [], "maj": [], "czerwiec": [],
-    "lipiec": [], "sierpień": [], "wrzesień": [], "październik": [], "listopad": [], "grudzień": []
-};
-
-// Algorytm skanujący każdą roślinę z JSON-a
 plantsData.forEach(plant => {
     if (plant.kalendarz_ogrodnika && plant.kalendarz_ogrodnika.zadania) {
         plant.kalendarz_ogrodnika.zadania.forEach(zadanie => {
-            // Automatyczne dobieranie fajnej ikonki na podstawie nazwy czynności
             let taskIcon = "ra-sprout";
             let taskNameLower = zadanie.czynnosc.toLowerCase();
             if (taskNameLower.includes('sadz')) taskIcon = "ra-plant-seed";
@@ -156,24 +184,14 @@ plantsData.forEach(plant => {
             if (taskNameLower.includes('ciąc') || taskNameLower.includes('cięci')) taskIcon = "ra-sword";
             if (taskNameLower.includes('podlew')) taskIcon = "ra-water-drop";
 
-            // Formatujemy obiekt zadania idealnie pod naszą karuzelę (spawnSeasonNode)
-            let taskEntry = {
-                tytul: `${plant.nazwa_pl} - ${zadanie.czynnosc}`,
-                desc: zadanie.opis || `Czas na: ${zadanie.czynnosc}`,
-                icon: taskIcon,
-                rosliny: [plant.nazwa_pl]
-            };
+            let taskEntry = { tytul: `${plant.nazwa_pl} - ${zadanie.czynnosc}`, desc: zadanie.opis || `Czas na: ${zadanie.czynnosc}`, icon: taskIcon, rosliny: [plant.nazwa_pl] };
 
-            // Rozkładamy to zadanie do odpowiednich miesięcy i pór roku
             if (zadanie.miesiace) {
                 zadanie.miesiace.forEach(m => {
                     let mName = monthNames[m];
                     if (mName) seasonalMap[mName].push(taskEntry);
-
-                    // Sprawdzamy do jakiej pory roku należy ten miesiąc
                     for (const [season, mArray] of Object.entries(seasonMonths)) {
                         if (mArray.includes(m)) {
-                            // Unikamy duplikatów (np. jeśli kwitnie przez całe lato, wsadzamy do lata tylko raz)
                             if (!seasonalMap[season].some(t => t.tytul === taskEntry.tytul)) {
                                 seasonalMap[season].push(taskEntry);
                             }
@@ -185,37 +203,76 @@ plantsData.forEach(plant => {
     }
 });
 
-// Zbudowanie finalnej mapy dla wyszukiwarki
 const calendarSearchMap = {};
 
-// 1. Zaciągamy dane ze starego, globalnego kalendarza (jeśli jest)
-if (kalendarz.okresy) Object.keys(kalendarz.okresy).forEach(okres => calendarSearchMap[okres.toLowerCase()] = { type: 'Sezon / Czas', data: kalendarz.okresy[okres].zadania, label: okres });
-if (kalendarz.czynnosci) Object.keys(kalendarz.czynnosci).forEach(czynnosc => calendarSearchMap[czynnosc.toLowerCase()] = { type: 'Czynność', data: [kalendarz.czynnosci[czynnosc]], label: czynnosc });
+if (kalendarz.okresy) {
+    Object.keys(kalendarz.okresy).forEach(okres => {
+        calendarSearchMap[okres.toLowerCase()] = { type: 'Sezon / Czas', data: kalendarz.okresy[okres].zadania, label: okres };
+    });
+}
 
-// 2. Wtłaczamy nasz dynamicznie wygenerowany z roślin raport kalendarzowy!
+const actionBuckets = {
+    "zbiór": { type: "Grupa Czynności", label: "Zbiór (Wszystkie rodzaje)", keywords: ["zbiór", "zbier", "żniwa"], data: [], icon: "ra-sickle" },
+    "sadzenie": { type: "Grupa Czynności", label: "Sadzenie i Rozmnażanie", keywords: ["sadz", "siew", "rozmnaża", "pikow"], data: [], icon: "ra-plant-seed" },
+    "cięcie": { type: "Grupa Czynności", label: "Cięcie i Pielęgnacja", keywords: ["ciąc", "cięci", "przycina", "formow", "piel"], data: [], icon: "ra-sword" },
+    "podlewanie": { type: "Grupa Czynności", label: "Nawadnianie i Nawożenie", keywords: ["podlew", "nawoż", "zasila", "nawadnia"], data: [], icon: "ra-water-drop" }
+};
+
+if (kalendarz.czynnosci) {
+    Object.keys(kalendarz.czynnosci).forEach(czynnosc => {
+        const czynnoscLower = czynnosc.toLowerCase();
+        let taskDataList = Array.isArray(kalendarz.czynnosci[czynnosc]) ? kalendarz.czynnosci[czynnosc] : [kalendarz.czynnosci[czynnosc]];
+        let matchedToGroup = false;
+
+        for (let bucketKey in actionBuckets) {
+            let bucket = actionBuckets[bucketKey];
+            if (bucket.keywords.some(kw => czynnoscLower.includes(kw))) {
+                let formattedTasks = taskDataList.map(t => {
+                    let plantName = t.roslina || (t.rosliny && t.rosliny[0]) || "";
+                    return { tytul: t.tytul || (plantName ? `${plantName} - ${czynnosc}` : czynnosc), desc: t.desc || t.opis || `Czynność: ${czynnosc}`, icon: t.icon || bucket.icon, rosliny: t.rosliny || (t.roslina ? [t.roslina] : []) };
+                });
+                bucket.data = bucket.data.concat(formattedTasks);
+                matchedToGroup = true;
+                break;
+            }
+        }
+
+        if (!matchedToGroup) {
+            let formattedTasks = taskDataList.map(t => {
+                let plantName = t.roslina || (t.rosliny && t.rosliny[0]) || "";
+                return { tytul: t.tytul || (plantName ? `${plantName} - ${czynnosc}` : czynnosc), desc: t.desc || t.opis || `Czynność: ${czynnosc}`, icon: t.icon || "ra-sprout", rosliny: t.rosliny || (t.roslina ? [t.roslina] : []) };
+            });
+            calendarSearchMap[czynnoscLower] = { type: 'Czynność', data: formattedTasks, label: czynnosc };
+        }
+    });
+
+    Object.keys(actionBuckets).forEach(bucketKey => {
+        let bucket = actionBuckets[bucketKey];
+        if (bucket.data.length > 0) {
+            bucket.keywords.forEach(kw => { calendarSearchMap[kw] = bucket; });
+        }
+    });
+}
+
 Object.keys(seasonalMap).forEach(key => {
     if (seasonalMap[key].length > 0) {
         if (calendarSearchMap[key]) {
-            // Łączymy zadania globalne z zadaniami z roślin
             calendarSearchMap[key].data = calendarSearchMap[key].data.concat(seasonalMap[key]);
         } else {
-            // Tworzymy nową zakładkę
             let typeLabel = Object.keys(seasonMonths).includes(key) ? 'Pora Roku' : 'Miesiąc';
-            calendarSearchMap[key] = {
-                type: typeLabel,
-                data: seasonalMap[key],
-                label: key.charAt(0).toUpperCase() + key.slice(1)
-            };
+            calendarSearchMap[key] = { type: typeLabel, data: seasonalMap[key], label: key.charAt(0).toUpperCase() + key.slice(1) };
         }
     }
 });
+
+
+// ==========================================
+// ZMIENNE ARENY
+// ==========================================
 let globalRotation = 0, currentRotationSpeed = 0, dotsPhase = 0;
 let activeSatellites = [], mouseX = -1000, mouseY = -1000, animationFrameId, dockedSat = null;
 
 const universalSearch = document.getElementById('universalSearch');
-const symptomBox = document.getElementById('symptomBox');
-const colorBox = document.getElementById('colorBox');
-const actionBox = document.getElementById('actionBox');
 const horizontalResults = document.getElementById('horizontalResults');
 enableDragToScroll(horizontalResults);
 const networkContainer = document.getElementById('guildNetwork');
@@ -226,23 +283,17 @@ const taskResults = document.getElementById('taskResults');
 
 document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; });
 
-function hideAllBoxes() {
-    actionBox.style.display = 'none'; symptomBox.style.display = 'none'; colorBox.style.display = 'none';
-}
 
+// ==========================================
+// WYSZUKIWARKA GŁÓWNA
+// ==========================================
 universalSearch.addEventListener('input', function() {
     const query = this.value.toLowerCase().trim();
 
-    actionBox.innerHTML = ''; symptomBox.innerHTML = ''; colorBox.innerHTML = ''; horizontalResults.innerHTML = '';
-    if (taskResults) taskResults.style.display = 'none'; // <--- DODAJ TĘ LINIJKĘ ZABEZPIECZAJĄCĄ
-    const architecturalSuggestions = document.getElementById('architecturalSuggestions');
-
-    // ZABEZPIECZENIE: Upewniamy się, że element istnieje zanim zmienimy jego styl
-    if (architecturalSuggestions) {
-        architecturalSuggestions.style.display = 'none';
-    }
-
-    hideAllBoxes(); clearSatellites(); carousel.classList.remove('active');
+    horizontalResults.innerHTML = '';
+    if (taskResults) taskResults.style.display = 'none';
+    clearSatellites();
+    carousel.classList.remove('active');
 
     if (query.length < 2) {
         horizontalResults.style.display = 'none';
@@ -250,71 +301,17 @@ universalSearch.addEventListener('input', function() {
         return;
     }
 
-    let hasSuggestions = false;
+    let autoRenderCalendarNode = null;
 
-    const filteredSymptoms = Object.keys(symptomMap).filter(s => s.includes(query)).slice(0, 15);
-    if (filteredSymptoms.length > 0) {
-        hasSuggestions = true; symptomBox.style.display = 'block';
-        filteredSymptoms.forEach(sym => {
-            const div = document.createElement('div'); div.className = 'suggestion-item';
-            div.innerHTML = `<span class="suggestion-category symptom-category"><i class="ra ra-droplet"></i> Objawy / Użycie</span><strong>${sym}</strong>`;
-            div.onclick = () => {
-                universalSearch.value = sym;
-                if (architecturalSuggestions) architecturalSuggestions.style.display = 'none';
-                spawnEntities(symptomMap[sym]);
-                horizontalResults.style.display = 'none';
-            };
-            symptomBox.appendChild(div);
-        });
-    }
-
-    const matchedCalendar = Object.keys(calendarSearchMap).filter(k => k.includes(query));
-    if (matchedCalendar.length > 0) {
-        hasSuggestions = true; actionBox.style.display = 'block';
-        matchedCalendar.forEach(k => {
-            const item = calendarSearchMap[k];
-            const div = document.createElement('div'); div.className = 'suggestion-item';
-            div.innerHTML = `<span class="suggestion-category" style="color:#e6a817"><i class="ra ra-sun"></i> ${item.type}</span><strong>${item.label}</strong>`;
-            div.onclick = () => {
-                universalSearch.value = item.label;
-                if (architecturalSuggestions) architecturalSuggestions.style.display = 'none';
-                spawnSeasonNode(item.label, item.data);
-                horizontalResults.style.display = 'none';
-            };
-            actionBox.appendChild(div);
-        });
-    }
-
-    const filteredColors = Object.keys(colorMap).filter(c => c.includes(query));
-    if (filteredColors.length > 0) {
-        hasSuggestions = true; colorBox.style.display = 'block';
-        filteredColors.forEach(color => {
-            const div = document.createElement('div'); div.className = 'suggestion-item';
-            div.innerHTML = `<span class="suggestion-category color-category"><i class="ra ra-kaleidoscope"></i> Kolor</span><strong>${color}</strong>`;
-            div.onclick = () => {
-                universalSearch.value = color;
-                if (architecturalSuggestions) architecturalSuggestions.style.display = 'none';
-                spawnEntities(colorMap[color]);
-                horizontalResults.style.display = 'none';
-            };
-            colorBox.appendChild(div);
-        });
-    }
-
-    if (hasSuggestions && architecturalSuggestions) architecturalSuggestions.style.display = 'grid';
-
-    // --- NOWE ELEMENTY: ROŚLINY (KARTY POZIOME + LOKALNE MINI KARTY) ---
     const filteredPlants = plantsData.filter(p => p.nazwa_pl.toLowerCase().includes(query) || (p.rodzina && p.rodzina.toLowerCase().includes(query)));
 
     if (filteredPlants.length > 0) {
         horizontalResults.style.display = 'flex';
 
         filteredPlants.forEach(plant => {
-            // TWORZYMY GŁÓWNĄ KOLUMNĘ (Karta Główna + Jej własna Gildia)
             const resultColumn = document.createElement('div');
             resultColumn.className = 'result-column';
 
-            // 1. ZBIERAMY I BUDUJEMY LOKALNĄ GILDIĘ DLA TEJ KONKRETNEJ ROŚLINY
             const miniRow = document.createElement('div');
             miniRow.className = 'guild-mini-row';
             enableDragToScroll(miniRow);
@@ -326,58 +323,62 @@ universalSearch.addEventListener('input', function() {
             });
 
             if (comps.length > 0) {
-                comps.forEach(comp => {
+                comps.forEach((comp, index) => {
                     const guestPlant = plantsData.find(p => p.nazwa_pl.toLowerCase() === comp.nazwa.toLowerCase());
                     let imageUrl = guestPlant ? getBestImageUrl(guestPlant) : '';
-                    let shortName = comp.nazwa.split(' ')[0]; // Pobiera tylko pierwsze słowo
-                    let role = comp.rola || "Powiązanie gildyjne";
+                    let shortName = comp.nazwa.split(' ')[0];
 
                     const miniCard = document.createElement('div');
                     miniCard.className = 'guild-mini-card';
-                    // --- NOWOŚĆ: AUTOMATYCZNE CENTROWANIE PRZY NAJECHANIU ---
-                    miniCard.addEventListener('mouseenter', () => {
-                        const row = miniCard.parentElement;
-                        // Liczymy idealny środek dla tego kółka względem paska
-                        const scrollTarget = miniCard.offsetLeft - (row.clientWidth / 2) + (miniCard.clientWidth / 2);
-                        // Płynnie przewijamy pasek do tego punktu
-                        row.scrollTo({ left: scrollTarget, behavior: 'smooth' });
-                    });
-                    // PRZYWRÓCONE ROZSZERZONE MENU HTML BEZPOŚREDNIO W KARCIE
+                    miniCard.dataset.index = index;
+
                     miniCard.innerHTML = `
                         <div class="guild-mini-img" style="${imageUrl ? `background-image: url('${imageUrl}');` : 'background: #5a4f41;'}"></div>
                         <div class="guild-mini-title-short">${shortName}</div>
-
                         <div class="guild-mini-expanded">
+                            <button class="guild-nav-btn guild-nav-left"><i class="ra ra-bottom-left"></i></button>
                             <div class="expanded-title">${comp.nazwa}</div>
-                            <div class="expanded-role">${role}</div>
+                            <div class="expanded-role">${comp.rola || "Powiązanie gildyjne"}</div>
                             <button class="expanded-btn">POKAŻ <i class="ra ra-eye"></i></button>
+                            <button class="guild-nav-btn guild-nav-right"><i class="ra ra-bottom-right"></i></button>
                         </div>
                     `;
 
-                    // --- NOWOŚĆ: BEZPOŚREDNI TELEPORT PO KLIKNIĘCIU W TOWARZYSZA ---
+                    const navLeftBtn = miniCard.querySelector('.guild-nav-left');
+                    const navRightBtn = miniCard.querySelector('.guild-nav-right');
+                    if (index === 0) navLeftBtn.style.visibility = 'hidden';
+                    if (index === comps.length - 1) navRightBtn.style.visibility = 'hidden';
+
+                    navLeftBtn.onclick = (e) => {
+                        e.stopPropagation();
+                        const prevCard = miniRow.querySelector(`.guild-mini-card[data-index="${index - 1}"]`);
+                        if (prevCard) simulateHover(prevCard, miniRow);
+                    };
+
+                    navRightBtn.onclick = (e) => {
+                        e.stopPropagation();
+                        const nextCard = miniRow.querySelector(`.guild-mini-card[data-index="${index + 1}"]`);
+                        if (nextCard) simulateHover(nextCard, miniRow);
+                    };
+
+                    miniCard.addEventListener('mouseenter', () => { simulateHover(miniCard, miniRow); });
+
                     const navigateToCompanion = (e) => {
                         e.stopPropagation();
                         if (isDraggingUI) return;
-
-                        if(guestPlant) {
-                            // Przenosi od razu na podstronę rośliny (zamiast otwierać starą arenę)
-                            window.location.href = getPlantUrl(guestPlant.id || guestPlant.slug);
-                        } else {
+                        if(guestPlant) window.location.href = getPlantUrl(guestPlant.id || guestPlant.slug);
+                        else {
                             document.getElementById('megaAlertPlantName').innerText = comp.nazwa;
                             document.getElementById('megaAlertOverlay').style.display = 'block';
                         }
                     };
 
-                    // Podpinamy tę samą funkcję pod całe kółko ORAZ pod przycisk
                     miniCard.onclick = navigateToCompanion;
                     miniCard.querySelector('.expanded-btn').onclick = navigateToCompanion;
-
                     miniRow.appendChild(miniCard);
                 });
             }
 
-            // 2. BUDUJEMY GŁÓWNĄ KARTĘ ROŚLINY Z NOWYMI TAGAMI
-            // 2. BUDUJEMY GŁÓWNĄ KARTĘ ROŚLINY Z POZIOMYMI TAGAMI
             const card = document.createElement('div');
             card.className = 'result-card';
             card.style.cursor = 'pointer';
@@ -387,54 +388,22 @@ universalSearch.addEventListener('input', function() {
             let desc = plant.opis || "Brak szczegółowego opisu zielarskiego.";
             let trivia = plant.ciekawostki && plant.ciekawostki.length > 0 ? plant.ciekawostki[Math.floor(Math.random() * plant.ciekawostki.length)] : "Zioła kryją wiele tajemnic...";
 
-            // KULOODPORNE WYCIĄGANIE TAGÓW Z JSON
             let tagsHtml = '';
             if (plant.tagi && Array.isArray(plant.tagi) && plant.tagi.length > 0) {
                 plant.tagi.forEach(tagKeyRaw => {
-                    // Normalizujemy wpis (małe litery, usuwamy puste znaki na końcach)
                     let tagKey = tagKeyRaw.toLowerCase().trim();
-
-                    // Szukamy w słowniku, jeśli nie ma - robimy awaryjny szary tag
-                    const tagDef = (typeof TAG_DICTIONARY !== 'undefined' && TAG_DICTIONARY[tagKey])
-                        ? TAG_DICTIONARY[tagKey]
-                        : { icon: "ra-help", desc: `Nieznany tag: ${tagKeyRaw}`, color: "#7a6a58" };
-
-                    tagsHtml += `
-                        <div class="card-emoji" data-bs-toggle="tooltip" data-bs-placement="bottom" title="${tagDef.desc}" style="border-color: ${tagDef.color}; color: ${tagDef.color};">
-                            <i class="ra ${tagDef.icon}"></i>
-                        </div>`;
+                    const tagDef = (typeof TAG_DICTIONARY !== 'undefined' && TAG_DICTIONARY[tagKey]) ? TAG_DICTIONARY[tagKey] : { icon: "ra-help", desc: tagKeyRaw, color: "#7a6a58" };
+                    tagsHtml += `<div class="card-emoji" data-bs-toggle="tooltip" title="${tagDef.desc}" style="border-color: ${tagDef.color}; color: ${tagDef.color};"><i class="ra ${tagDef.icon}"></i></div>`;
                 });
-            } else {
-                // FALLBACK DLA ROŚLIN BEZ ZDEFINIOWANYCH TAGÓW W JSON
-                let wIcon = getPlantWitcherClass(plant);
-                let iconDescription = "Zioło Zielarskie";
-                switch(wIcon) {
-                    case 'ra-pine-tree': iconDescription = "Drzewo Iglaste / Wiecznie Zielone"; break;
-                    case 'ra-apple': iconDescription = "Drzewo Liściaste Owocowe"; break;
-                    case 'ra-wood-stick': iconDescription = "Drzewo lub duży krzew"; break;
-                    case 'ra-sprout': iconDescription = "Krzew / Krzewinka"; break;
-                    case 'ra-acorn': iconDescription = "Roślina Bulwiasta / Cebulowa / Kłączowa"; break;
-                    case 'ra-flower': iconDescription = "Roślina Kwiatowa / Ozdobna"; break;
-                    case 'ra-sun': iconDescription = "Roślina Egzotyczna / Ciepłolubna"; break;
-                    case 'ra-leaf': iconDescription = "Roślina Zielna / Zielona"; break;
-                }
-                tagsHtml = `<div class="card-emoji" data-bs-toggle="tooltip" data-bs-placement="bottom" title="${iconDescription}"><i class="ra ${wIcon}"></i></div>`;
             }
 
-            // BUDOWANIE STRUKTURY KARTY Z NOWYM RZĘDEM POZIOMYM (card-tags-row)
             card.innerHTML = `
                 <div class="card-img-container" style="${bgStyle}">
-                    <div class="card-tags-row">
-                        ${tagsHtml}
-                    </div>
+                    <div class="card-tags-row">${tagsHtml}</div>
                 </div>
                 <h3 class="card-title">${plant.nazwa_pl}</h3>
-                <div class="card-desc-container">
-                    <div class="card-desc-scroll">${desc}<br><br>${desc}</div>
-                </div>
-                <div class="card-trivia-container">
-                    <div class="card-trivia-scroll">✨ Ciekawostka: ${trivia}</div>
-                </div>
+                <div class="card-desc-container"><div class="card-desc-scroll">${desc}<br><br>${desc}</div></div>
+                <div class="card-trivia-container"><div class="card-trivia-scroll">✨ Ciekawostka: ${trivia}</div></div>
                 <div class="card-status-wrapper"></div>
                 <div class="card-btn">ROZWIŃ</div>
             `;
@@ -450,18 +419,12 @@ universalSearch.addEventListener('input', function() {
             updateMonthUI(currentM);
 
             card.onclick = (e) => {
-                // Ignorujemy kliknięcia w miesiące i tagi, by móc je swobodnie obsługiwać
-                if(e.target.closest('.month-nav')) return;
-                if(e.target.closest('.card-emoji')) return;
-                if (isDraggingUI) return;
-
-                // Bezpośredni teleport na podstronę rośliny!
+                if(e.target.closest('.month-nav') || e.target.closest('.card-emoji') || isDraggingUI) return;
                 window.location.href = getPlantUrl(plant.id || plant.slug);
             };
 
-            // --- NOWOŚĆ: KLIKNIĘCIE "ROZWIŃ" PRZENOSI OD RAZU DO STRONY ROŚLINY ---
             card.querySelector('.card-btn').onclick = (e) => {
-                e.stopPropagation(); // Blokuje otwarcie areny
+                e.stopPropagation();
                 if (isDraggingUI) return;
                 window.location.href = getPlantUrl(plant.id || plant.slug);
             };
@@ -471,85 +434,183 @@ universalSearch.addEventListener('input', function() {
             horizontalResults.appendChild(resultColumn);
         });
 
-        // AKTYWACJA DYMKÓW
-        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+        let combinedItems = [];
+        filteredPlants.forEach(plant => {
+            if (plant.kalendarz_ogrodnika && plant.kalendarz_ogrodnika.zadania) {
+                plant.kalendarz_ogrodnika.zadania.forEach(z => {
+                    combinedItems.push({
+                        tytul: `${plant.nazwa_pl} - ${z.czynnosc}`,
+                        desc: z.opis || `Czas na: ${z.czynnosc}`,
+                        icon: "ra-sickle",
+                        rosliny: [plant.nazwa_pl],
+                        isRecipe: false
+                    });
+                });
+            }
+            let relatedRecipes = recipesData.filter(r => r.roslina && r.roslina.toLowerCase() === plant.nazwa_pl.toLowerCase());
+            relatedRecipes.forEach(r => {
+                let prepText = Array.isArray(r.sposob_przygotowania) ? r.sposob_przygotowania.join(' ') : (r.sposob_przygotowania || 'Brak instrukcji');
+                combinedItems.push({
+                    tytul: r.tytul,
+                    desc: prepText,
+                    icon: "ra-potion",
+                    rosliny: [plant.nazwa_pl],
+                    isRecipe: true,
+                    rawData: r
+                });
+            });
+        });
 
-    } else {
-        horizontalResults.style.display = 'none';
+        if (combinedItems.length > 0) {
+            spawnSeasonNode(`Wiedza i Prace: ${filteredPlants[0].nazwa_pl}`, combinedItems, true);
+        }
+
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+        return;
+    }
+
+    horizontalResults.style.display = 'none';
+
+    const matchedCalendar = Object.keys(calendarSearchMap).filter(k => k.includes(query));
+    if (matchedCalendar.length > 0) {
+        const exactMatch = matchedCalendar.find(k => k === query);
+        autoRenderCalendarNode = exactMatch ? calendarSearchMap[exactMatch] : calendarSearchMap[matchedCalendar[0]];
+        if (autoRenderCalendarNode) {
+            spawnSeasonNode(autoRenderCalendarNode.label, autoRenderCalendarNode.data, true);
+            return;
+        }
+    }
+
+    const matchedRecipes = recipesData.filter(r => r.tytul && r.tytul.toLowerCase().includes(query));
+    if (matchedRecipes.length > 0) {
+        let recipeItems = matchedRecipes.map(r => {
+            let prepText = Array.isArray(r.sposob_przygotowania) ? r.sposob_przygotowania.join(' ') : (r.sposob_przygotowania || 'Brak instrukcji');
+            return {
+                tytul: r.tytul,
+                desc: prepText,
+                icon: "ra-potion",
+                rosliny: [r.roslina || "Zioło"],
+                isRecipe: true,
+                rawData: r
+            };
+        });
+        const queryTitle = query.charAt(0).toUpperCase() + query.slice(1);
+        spawnSeasonNode(`Przepisy: ${queryTitle}`, recipeItems, true);
+        return;
+    }
+
+    const filteredSymptoms = Object.keys(symptomMap).filter(s => s.includes(query));
+    if (filteredSymptoms.length > 0) {
+        const exactMatch = filteredSymptoms.find(k => k === query);
+        const sym = exactMatch ? exactMatch : filteredSymptoms[0];
+        spawnEntities(symptomMap[sym]);
+        return;
+    }
+
+    const filteredColors = Object.keys(colorMap).filter(c => c.includes(query));
+    if (filteredColors.length > 0) {
+        const exactMatch = filteredColors.find(k => k === query);
+        const color = exactMatch ? exactMatch : filteredColors[0];
+        spawnEntities(colorMap[color]);
+        return;
     }
 });
 
-function spawnSeasonNode(seasonName, tasks) {
+
+// ==========================================
+// FUNKCJE POMOCNICZE WYSZUKIWANIA
+// ==========================================
+function simulateHover(targetCard, row) {
+    row.querySelectorAll('.guild-mini-card').forEach(c => c.classList.remove('force-hover'));
+    targetCard.classList.add('force-hover');
+    const scrollTarget = targetCard.offsetLeft - (row.clientWidth / 2) + (targetCard.clientWidth / 2);
+    row.scrollTo({ left: scrollTarget, behavior: 'smooth' });
+}
+
+function spawnSeasonNode(seasonName, tasks, isAutoRender = false) {
     document.querySelector('.central-node').classList.add('active-arena');
-    clearSatellites(); // Zabijamy kółka
-    carousel.classList.remove('active'); // Zabijamy karuzele
-    if (horizontalResults) horizontalResults.style.display = 'none';
-    if (architecturalSuggestions) architecturalSuggestions.style.display = 'none';
+
+    if (!isAutoRender) {
+        clearSatellites();
+        carousel.classList.remove('active');
+        if (horizontalResults) horizontalResults.style.display = 'none';
+    }
 
     if (!taskResults) return;
 
-    // Dobieramy ikonę do tytułu kalendarza
     let iconStr = "ra-sun";
     let sName = seasonName.toLowerCase();
     if(sName === "zima" || sName === "styczeń" || sName === "luty") iconStr = "ra-snowflake";
     if(sName === "jesień" || sName === "październik" || sName === "listopad") iconStr = "ra-maple-leaf";
     if(sName === "wiosna" || sName === "marzec" || sName === "kwiecień") iconStr = "ra-sprout";
+    if(sName.includes("zbiór")) iconStr = "ra-sickle";
+    if(sName.includes("sadzenie")) iconStr = "ra-plant-seed";
+    if(sName.includes("cięcie")) iconStr = "ra-sword";
+    if(sName.includes("nawadnianie")) iconStr = "ra-water-drop";
+    if(sName.includes("wiedza i prace")) iconStr = "ra-parchment";
+    if(sName.includes("przepis")) iconStr = "ra-flask";
 
     let html = `<div class="task-season-title"><i class="ra ${iconStr}"></i> ${seasonName}</div>`;
-
-    // --- NOWOŚĆ: POLE FILTRUJĄCE ---
-    html += `<input type="text" id="taskFilterInput" class="task-filter-input" placeholder="🔍 Filtruj listę (np. dąb, zbiór...)" autocomplete="off">`;
+    html += `<input type="text" id="taskFilterInput" class="task-filter-input" placeholder="🔍 Filtruj tę listę (np. syrop, kora...)" autocomplete="off">`;
     html += `<div id="taskListWrapper">`;
 
     if (tasks && tasks.length > 0) {
         tasks.forEach(task => {
-            // Bezpieczne pobranie nazwy rośliny, do której należy to zadanie
             let plantName = task.rosliny && task.rosliny.length > 0 ? task.rosliny[0] : '';
-
-            // Atrybut data-search łączy tytuł i opis małymi literami, by ułatwić wyszukiwanie
             let searchContent = `${task.tytul} ${task.desc} ${plantName}`.toLowerCase();
 
+            let clickAction = "";
+            let actionLabel = "";
+
+            if (task.isRecipe) {
+                clickAction = `window.redirectToRecipe('${task.tytul.replace(/'/g, "\\'")}', event)`;
+                actionLabel = `PRZEPIS <i class="ra ra-scroll-unfurled"></i>`;
+            } else {
+                clickAction = `goToPlantPageByName('${plantName}')`;
+                actionLabel = `BADAM <i class="ra ra-eye"></i>`;
+            }
+
             html += `
-                <div class="task-card" data-search="${searchContent}" onclick="goToPlantPageByName('${plantName}')">
+                <div class="task-card" data-search="${searchContent}" onclick="${clickAction}">
                     <div class="task-card-icon"><i class="ra ${task.icon || 'ra-leaf'}"></i></div>
                     <div class="task-card-content">
                         <h4 class="task-card-title">${task.tytul}</h4>
-                        <p class="task-card-desc">${task.desc}</p>
+                        <p class="task-card-desc">${task.desc.substring(0, 85)}...</p>
                     </div>
-                    <div class="task-card-action">BADAM <i class="ra ra-eye"></i></div>
+                    <div class="task-card-action" style="${task.isRecipe ? 'background:#8a7a58;color:#fff;' : ''}">${actionLabel}</div>
                 </div>
             `;
         });
     } else {
-        html += `<p style="text-align:center; color:#7a6a58; font-style:italic; font-size:16px;">Brak prac w tym okresie. Natura odpoczywa.</p>`;
+        html += `<p style="text-align:center; color:#7a6a58; font-style:italic; font-size:16px;">Brak wpisów.</p>`;
     }
 
-    html += `</div>`; // Koniec wrappera
+    html += `</div>`;
     taskResults.innerHTML = html;
     taskResults.style.display = 'block';
 
-    // --- NOWOŚĆ: LOGIKA BŁYSKAWICZNEGO FILTROWANIA KART ---
     const filterInput = document.getElementById('taskFilterInput');
     if (filterInput) {
         filterInput.addEventListener('input', function() {
             const query = this.value.toLowerCase().trim();
             const cards = taskResults.querySelectorAll('.task-card');
-
             cards.forEach(card => {
                 const searchData = card.getAttribute('data-search');
-                // Jeżeli wpisany tekst znajduje się w ukrytym atrybucie karty -> pokazujemy. W przeciwnym razie ukrywamy.
-                if (searchData.includes(query)) {
-                    card.style.display = 'flex';
-                } else {
-                    card.style.display = 'none';
-                }
+                card.style.display = searchData.includes(query) ? 'flex' : 'none';
             });
         });
     }
 }
 
-// Funkcja pomocnicza: przesuwa prosto na stronę konkretnej rośliny po kliknięciu
+// Błyskawiczny teleport do Przepiśnika
+window.redirectToRecipe = function(title, event) {
+    if(event) event.stopPropagation();
+    if(isDraggingUI) return;
+    window.location.href = '/przepisy/?q=' + encodeURIComponent(title) + '&autoopen=true';
+};
+
 function goToPlantPageByName(plantName) {
     if(!plantName) return;
     const plant = plantsData.find(p => p.nazwa_pl.toLowerCase() === plantName.toLowerCase());
@@ -561,6 +622,10 @@ function goToPlantPageByName(plantName) {
     }
 }
 
+
+// ==========================================
+// FUNKCJE ARENY I SFER (Zwrócone na miejsce!)
+// ==========================================
 function spawnPlantNetwork(plant) {
     clearSatellites();
     searchNode.classList.add('active-arena');
@@ -582,7 +647,6 @@ function spawnPlantNetwork(plant) {
     let recipes = recipesData.filter(r => r.roslina && r.roslina.toLowerCase() === plant.nazwa_pl.toLowerCase());
     populateCarousel(recipes, "recipe", plant.id);
 
-    // --- NAPRAWA 1: Obsługa kluczy name/nazwa w samej Arenie ---
     let compsRaw = plant.permakultura?.gildie || plant.gildie || [];
     let companions = compsRaw.map(g => {
         if (typeof g === 'string') return { nazwa: g, rola: "Powiązanie" };
@@ -665,9 +729,8 @@ function animateSatellites() {
             orbitY = centerY + Math.sin(currentAngle) * mainRadiusY;
 
             const depth = -Math.sin(currentAngle);
-            // --- NAPRAWA 4: Lepsza widoczność kul na orbicie ---
-            scale = 0.9 + (depth * 0.2);     // Waha się między 0.7 a 1.1 (wyraźniejsze kule)
-            opacity = 0.85 + (depth * 0.15); // Waha się między 0.7 a 1.0 (nie bledną tak mocno)
+            scale = 0.9 + (depth * 0.2);
+            opacity = 0.85 + (depth * 0.15);
             zIndex = Math.floor(100 + depth * 50);
 
             sat.magneticX *= 0.85; sat.magneticY *= 0.85;
@@ -700,6 +763,10 @@ function clearSatellites() {
     if (animationFrameId) { cancelAnimationFrame(animationFrameId); animationFrameId = null; }
 }
 
+
+// ==========================================
+// KARUZELA
+// ==========================================
 let isDown = false, startX, scrollLeft;
 carousel.addEventListener('mousedown', (e) => { isDown = true; startX = e.pageX - carousel.offsetLeft; scrollLeft = carousel.scrollLeft; });
 carousel.addEventListener('mouseleave', () => isDown = false);
@@ -721,13 +788,20 @@ function populateCarousel(items, type, parentId = null) {
     items.forEach(item => {
         const el = document.createElement('div'); el.className = 'carousel-item';
         if (type === "recipe") {
-            let ingsHtml = Array.isArray(item.skladniki) ? item.skladniki.slice(0, 3).map(s => `<li>${s}</li>`).join('') + (item.skladniki.length > 3 ? '<li>...</li>' : '') : `<li>${item.skladniki || 'Brak danych'}</li>`;
+            let basicIngs = Array.isArray(item.skladniki) ? item.skladniki.map(s => typeof s === 'object' ? s.nazwa : s) : [item.skladniki];
+            let ingsHtml = basicIngs.slice(0, 3).map(s => `<li>${s}</li>`).join('') + (basicIngs.length > 3 ? '<li>...</li>' : '');
             let prepText = Array.isArray(item.sposob_przygotowania) ? item.sposob_przygotowania.join(' ') : (item.sposob_przygotowania || 'Brak instrukcji');
+
             el.innerHTML = `<i class="carousel-icon ra ra-scroll"></i><div class="carousel-title">${item.tytul}</div><div class="recipe-unroll"><div class="unroll-title">Składniki</div><ul class="unroll-list">${ingsHtml}</ul><div class="unroll-title">Czynności</div><p class="unroll-text">${prepText}</p></div>`;
-            el.addEventListener('click', (e) => { e.stopPropagation(); if(!isDown) openRecipeModal(item, parentId); });
+            el.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if(!isDown) {
+                    window.location.href = '/przepisy/?q=' + encodeURIComponent(item.tytul) + '&autoopen=true';
+                }
+            });
         } else {
             let meta = (item.faza || item.pora || item.pogoda) ? `<div class="task-meta">${item.faza ? `<div>🌙 Faza: <span>${item.faza}</span></div>`:''}${item.pora ? `<div>⏳ Pora: <span>${item.pora}</span></div>`:''}${item.pogoda ? `<div>⛅ Warunki: <span>${item.pogoda}</span></div>`:''}</div>` : '';
-            let plants = (item.rosliny || []).map(p => `<div class="task-plant-item" onclick="if(!isDown){ event.stopPropagation(); goToPlantPage('${p}'); }">${p}</div>`).join('');
+            let plants = (item.rosliny || []).map(p => `<div class="task-plant-item" onclick="if(!isDown){ event.stopPropagation(); goToPlantPageByName('${p}'); }">${p}</div>`).join('');
             el.innerHTML = `<i class="carousel-icon ra ${item.icon || 'ra-leaf'}"></i><div class="carousel-title">${item.tytul}</div><div class="carousel-desc">${item.desc}</div><div class="task-plants-list" style="z-index:100; pointer-events:auto;">${meta}${plants}</div>`;
         }
         carousel.appendChild(el);
@@ -735,26 +809,12 @@ function populateCarousel(items, type, parentId = null) {
     carousel.classList.add('active'); setTimeout(() => { carousel.scrollLeft = 0; carousel.dispatchEvent(new Event('scroll')); }, 50);
 }
 
-function openRecipeModal(recipe, plantId) {
-    try {
-        document.getElementById('modalRecipeTitle').innerText = recipe.tytul || "Przepis"; document.getElementById('modalRecipePlantName').innerText = recipe.roslina || "Zioło";
-        document.getElementById('modalRecipeIngredients').innerHTML = Array.isArray(recipe.skladniki) ? recipe.skladniki.map(s => `<li>${s}</li>`).join('') : `<li>${recipe.skladniki || 'Brak'}</li>`;
-        document.getElementById('modalRecipePreparation').innerHTML = Array.isArray(recipe.sposob_przygotowania) ? `<ol style="padding-left: 20px;">${recipe.sposob_przygotowania.map(k => `<li style="margin-bottom:10px;">${k}</li>`).join('')}</ol>` : `<p style="white-space: pre-line;">${recipe.sposob_przygotowania || 'Brak'}</p>`;
-
-        const dosage = document.getElementById('modalRecipeDosage'); dosage.innerHTML = recipe.dawkowanie ? `<strong>💊 Dawkowanie:</strong> ${recipe.dawkowanie}` : ''; dosage.style.display = recipe.dawkowanie ? 'block' : 'none';
-        const notes = document.getElementById('modalRecipeNotes'); let notesContent = "";
-        if (recipe.uwagi) notesContent += `<strong>⚠️ Uwagi:</strong> ${recipe.uwagi}<br>`;
-        let zrodlaDanych = recipe.zrodla || recipe.zrodlo; if (zrodlaDanych) notesContent += `<strong style="margin-top: 5px; display:inline-block;">📚 Źródła:</strong> ${Array.isArray(zrodlaDanych) ? zrodlaDanych.join(', ') : zrodlaDanych}`;
-        notes.innerHTML = notesContent; notes.style.display = notesContent ? 'block' : 'none';
-        bootstrap.Modal.getOrCreateInstance(document.getElementById('dynamicRecipeModal')).show();
-    } catch (e) { console.error("Błąd otwierania modala:", e); }
-}
-
+// ==========================================
+// BESTIARIUSZ
+// ==========================================
 function renderBestiary() {
     const grid = document.getElementById('bestiaryGrid');
     if (!grid) return;
-
-    // --- NAPRAWA 2: Użycie nowej funkcji również w Bestiariuszu ---
     grid.innerHTML = plantsData.map(plant => `
         <div class="witcher-card"><div class="witcher-card-img" style="background-image: url('${getBestImageUrl(plant)}')"></div><div class="witcher-card-content"><h3 class="witcher-card-title">${plant.nazwa_pl}</h3><p class="witcher-card-desc">${plant.rodzina || ''}</p><a href="${getPlantUrl(plant.id)}" class="witcher-btn">Zbadaj</a></div></div>
     `).join('');

@@ -3,27 +3,34 @@
    ========================================= */
 .search-section {
     text-align: center;
-    padding: 290px 0 100px 0; /* Więcej miejsca od góry, uciekamy zza nagłówka! */
+    /* POPRAWKA 1: Usunięto gigantyczne paddingi. Pusty obiekt zniknie. */
+    padding: 40px 0 100px 0;
     position: relative;
-    min-height: calc(100vh - 110px); /* Dopasowuje się idealnie do ekranu pomijając header */
+    min-height: calc(100vh - 110px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Naturalne układanie od góry do dołu */
+    justify-content: flex-start;
     overflow-x: hidden;
     background: radial-gradient(circle, rgba(244,241,234,0.8) 0%, rgba(255,255,255,0) 70%);
 }
 
 .central-node.active-arena {
-    transform: translateY(-20px); /* Skacze dużo mniej agresywnie */
+    transform: translateY(0);
 }
 
 .central-node {
     position: relative; z-index: 300; width: 100%; max-width: 650px;
     display: flex; flex-direction: column;
     transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    margin-top: 30px;
 }
 
+.search-input-wrapper {
+    position: relative;
+    width: 100%;
+    z-index: 320;
+}
 
 .search-input {
     width: 100%; padding: 15px 20px; font-family: 'Georgia', serif; font-size: 18px; color: #2b2b2b;
@@ -31,116 +38,16 @@
     box-shadow: inset 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.1); outline: none; position: relative; z-index: 320;
 }
 
-/* --- ARCHITEKTONICZNY BLOK SUGESTII (TERAZ WIDOCZNY NAD ARENĄ) --- */
+/* =========================================
+   ARCHITEKTONICZNY BLOK SUGESTII (DYMKI)
+   ========================================= */
 .architectural-suggestions {
     display: none;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     width: 100%;
     position: absolute;
-    bottom: calc(100% + 15px); /* Unosi się nad inputem */
-    left: 0;
-    /* Zwiększone z-index, aby były nad kółkami areny (z-index 50) */
-    z-index: 310;
-    align-items: start;
-}
-
-/* =========================================
-   UKŁAD KOLUMNOWY KART I CZYTELNOŚĆ MINI KART
-   ========================================= */
-.result-column {
-    display: flex; flex-direction: column; gap: 8px; align-items: center;
-    flex: 0 0 auto; width: 220px; position: relative; /* Ważne do pozycjonowania rozszerzonego menu */
-}
-
-#horizontalResults {
-    display: none; width: 100%; max-width: 90vw; margin: 30px auto 0 auto;
-    overflow-x: auto;
-    padding: 15px 10px 25px 10px;
-    scroll-behavior: auto; gap: 20px;
-    /* Zwiększone z-index, aby karty były nad kółkami areny (z-index 50) */
-    z-index: 310;
-    position: relative;
-    cursor: grab;
-}
-#horizontalResults:active { cursor: grabbing; }
-
-.guild-mini-row {
-    display: flex; width: 100%; overflow-x: auto; gap: 12px;
-    padding: 10px 5px 15px 5px; scroll-behavior: auto;
-    align-items: flex-end; min-height: 110px;
-    cursor: grab;
-}
-.guild-mini-row:active { cursor: grabbing; }
-
-/* ... (Style pasków przewijania - bez zmian) ... */
-
-.guild-mini-card {
-    flex: 0 0 auto;
-    position: relative;
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    background: #e0dcd3;
-    border: 2px solid #5a4f41;
-    cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    overflow: hidden;
-}
-
-/* NAPRAWA MIGOTANIA I DYMKI NA IKONACH KART */
-.guild-mini-title-short {
-    position: relative; z-index: 2;
-    background: rgba(35, 32, 29, 0.85); color: #d1b880;
-    font-size: 10px; font-weight: bold; padding: 2px 8px; border-radius: 12px;
-    text-align: center; max-width: 90%; text-transform: uppercase; letter-spacing: 1px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-    transition: opacity 0.2s;
-    pointer-events: none;
-}
-
-/* Stan HOVER */
-.guild-mini-card:hover {
-    width: 180px; height: 90px; border-radius: 12px;
-    border-color: #8a9a5b; box-shadow: 0 8px 20px rgba(138, 154, 91, 0.3);
-}
-
-.guild-mini-expanded {
-    display: flex; flex-direction: column; align-items: center; justify-content: center;
-    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-    /* Tło rozszerzonej karty */
-    background: rgba(35, 32, 29, 0.9);
-    z-index: 3;
-    color: #fdfbf7; text-align: center; padding: 10px;
-    opacity: 0; pointer-events: none;
-    transition: opacity 0.3s ease 0.1s;
-}
-
-.guild-mini-card:hover .guild-mini-expanded { opacity: 1; pointer-events: auto; }
-.guild-mini-card:hover .guild-mini-img { filter: blur(3px) brightness(0.7); border-radius: 12px; }
-
-/* POPRAWA CZYTELNOŚCI TEKSTU W ST2 - JAŚNIEJSZY TEKST OPISU */
-.expanded-title { font-family: 'Georgia', serif; font-size: 13px; font-weight: bold; color: #fff; margin-bottom: 2px; }
-.expanded-role { font-size: 9.5px; color: #e0dcd3; margin-bottom: 8px; font-style: italic; font-weight: 500;} /* Jaśniejszy szary */
-.expanded-btn { background: #8a9a5b; color: #fff; font-size: 10px; padding: 4px 14px; border-radius: 4px; cursor: pointer; text-transform: uppercase; border: none; font-weight: bold; letter-spacing: 1px; transition: 0.2s;}
-.expanded-btn:hover { background: #d1b880; color: #23201d; }
-
-/* Umożliwia kliknięcie dymka na głównej karcie rośliny */
-.card-emoji { pointer-events: auto; }
-/* =========================================
-   ARCHITEKTONICZNY BLOK SUGESTII
-   ========================================= */
-.architectural-suggestions {
-    display: none;
-    grid-template-columns: repeat(3, 1fr); /* 3 równe kolumny */
-    gap: 15px;
-    width: 100%;
-    position: absolute;
-    bottom: calc(100% + 15px); /* Unosi się idealnie nad inputem */
+    bottom: calc(100% + 15px);
     left: 0;
     z-index: 310;
     align-items: start;
@@ -168,119 +75,34 @@
 .color-category { color: #b8860b; }
 
 /* =========================================
-   UKŁAD KOLUMNOWY KART I MINI KARTY GILDYJNE
+   GŁÓWNA KARTA ROŚLINY NAD WYSZUKIWARKĄ
    ========================================= */
+#horizontalResults {
+    display: none;
+    width: 100%;
+    max-width: 900px;
+    /* POPRAWKA 2: Usunięto ujemne marginesy. Zostawiamy czysty, 20px odstęp od wyszukiwarki */
+    margin: 0 auto 20px auto !important;
+    overflow-x: auto;
+    padding: 10px 10px 25px 10px;
+    scroll-behavior: auto;
+    gap: 20px;
+    z-index: 400 !important;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    order: -1 !important;
+    cursor: grab;
+}
+#horizontalResults:active { cursor: grabbing; }
+#horizontalResults::-webkit-scrollbar { display: none; }
+#horizontalResults { -ms-overflow-style: none; scrollbar-width: none; }
+
 .result-column {
     display: flex; flex-direction: column; gap: 8px; align-items: center;
     flex: 0 0 auto; width: 220px; position: relative;
 }
-
-/* --- LOKALNE GILDIE (PASKI I SUWAKI) --- */
-.guild-mini-row {
-    display: flex; width: 100%; overflow-x: auto; gap: 12px;
-    padding: 10px 5px 15px 5px; scroll-behavior: auto;
-    align-items: flex-end; min-height: 90px;
-    cursor: grab;
-}
-.guild-mini-row:active { cursor: grabbing; }
-
-
-
-/* --- UKRYTE PASKI PRZEWIJANIA (Czysty wygląd, ale funkcja przewijania zostaje) --- */
-.guild-mini-row::-webkit-scrollbar, #horizontalResults::-webkit-scrollbar {
-    display: none; /* Całkowicie ukrywamy fizyczny pasek dla Chrome/Safari/Opera */
-}
-
-.guild-mini-row, #horizontalResults {
-    -ms-overflow-style: none;  /* IE oraz Edge */
-    scrollbar-width: none;  /* Firefox */
-}
-/* --- KARTA TOWARZYSZA --- */
-.guild-mini-card {
-    flex: 0 0 auto;
-    position: relative;
-    width: 60px; height: 60px;
-    border-radius: 30px;
-    background: #e0dcd3;
-    border: 2px solid #5a4f41;
-    cursor: pointer;
-    transition: transform 0.2s, border-color 0.2s;
-}
-
-.guild-mini-card:hover {
-    transform: translateY(-5px);
-    border-color: #8a9a5b;
-    z-index: 100;
-}
-
-.guild-mini-img {
-    width: 100%; height: 100%; border-radius: 50%;
-    background-size: cover; background-position: center;
-    position: absolute; top:0; left:0; z-index: 1;
-    transition: filter 0.3s;
-}
-
-.guild-mini-card:hover .guild-mini-img { filter: blur(2px) brightness(0.8); }
-
-/* --- WIDOCZNY KRÓTKI TYTUŁ NA KÓŁECZKU --- */
-.guild-mini-title-short {
-    position: relative; z-index: 2;
-    background: rgba(35, 32, 29, 0.85); color: #d1b880;
-    font-size: 10px; font-weight: bold; padding: 2px 8px; border-radius: 12px;
-    text-align: center; max-width: 90%; text-transform: uppercase; letter-spacing: 1px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-    transition: opacity 0.2s;
-    pointer-events: none;
-}
-
-/* --- DUŻE ROZSZERZONE MENU NAD KARTĄ --- */
-.guild-mini-expanded {
-    display: flex; flex-direction: column; align-items: center; justify-content: center;
-    position: absolute;
-    bottom: calc(100% + 5px); /* Unosi się nad kółkiem */
-    left: 50%; transform: translateX(-50%);
-    width: 180px; height: 90px;
-    background: rgba(35, 32, 29, 0.95); border-radius: 12px;
-    border: 2px solid #8a9a5b; box-shadow: 0 8px 20px rgba(138, 154, 91, 0.3);
-    z-index: 200;
-    color: #fdfbf7; text-align: center; padding: 10px;
-    opacity: 0; pointer-events: none;
-    transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-/* Menu pojawia się po najechaniu na kółko */
-.guild-mini-card:hover .guild-mini-expanded {
-    opacity: 1; pointer-events: auto; transform: translateX(-50%) translateY(-5px);
-}
-
-.expanded-title { font-family: 'Georgia', serif; font-size: 13px; font-weight: bold; color: #fff; margin-bottom: 2px; }
-.expanded-role { font-size: 9.5px; color: #e0dcd3; margin-bottom: 8px; font-style: italic;}
-.expanded-btn { background: #8a9a5b; color: #fff; font-size: 10px; padding: 4px 14px; border-radius: 4px; cursor: pointer; text-transform: uppercase; border: none; font-weight: bold; letter-spacing: 1px; transition: 0.2s;}
-.expanded-btn:hover { background: #d1b880; color: #23201d; }
-
-/* --- POZIOMY RZĄD TAGÓW NA GŁÓWNEJ KARCIE --- */
-.card-tags-row {
-    position: absolute; top: 8px; left: 8px; right: 8px;
-    display: flex; flex-direction: row-reverse; flex-wrap: wrap;
-    gap: 5px; z-index: 10; pointer-events: none;
-}
-.card-emoji {
-    font-size: 16px; color: #3e4a3d; background: rgba(253, 251, 247, 0.95);
-    border-radius: 50%; width: 30px; height: 30px; display: flex;
-    align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    border: 2px solid #8a9a5b; transition: 0.2s; pointer-events: auto;
-}
-.card-emoji:hover { transform: scale(1.1); background: #fff; }
-/* =========================================
-   POZIOME WYNIKI WYSZUKIWANIA (KARTY ZIELARZA)
-   ========================================= */
-#horizontalResults {
-    display: none; width: 100%; max-width: 900px; margin: 20px auto 0 auto;
-    overflow-x: auto; padding: 10px; scroll-behavior: smooth; gap: 20px; z-index: 310;
-    position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
-}
-#horizontalResults::-webkit-scrollbar { height: 8px; }
-#horizontalResults::-webkit-scrollbar-thumb { background: #8a9a5b; border-radius: 4px; }
 
 .result-card {
     flex: 0 0 auto; width: 220px; height: 340px; background: #fdfbf7; border: 2px solid #5a4f41;
@@ -290,14 +112,21 @@
 .result-card:hover { transform: translateY(-5px); border-color: #8a9a5b; }
 
 .card-img-container { height: 90px; background: #e0dcd3; background-size: cover; background-position: center; position: relative; border-bottom: 2px solid #8a9a5b; }
+
+.card-tags-row {
+    position: absolute; top: 8px; left: 8px; right: 8px;
+    display: flex; flex-direction: row-reverse; flex-wrap: wrap;
+    gap: 5px; z-index: 10; pointer-events: none;
+}
+
 .card-emoji {
-    /* Usunięto position absolute i z-index, teraz dba o to nowy kontener .card-tags-column */
-    font-size: 18px; color: #3e4a3d; background: rgba(253, 251, 247, 0.95);
-    border-radius: 50%; width: 32px; height: 32px; display: flex;
+    font-size: 16px; color: #3e4a3d; background: rgba(253, 251, 247, 0.95);
+    border-radius: 50%; width: 30px; height: 30px; display: flex;
     align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    border: 2px solid #8a9a5b; margin-bottom: 6px; transition: 0.2s; pointer-events: auto;
+    border: 2px solid #8a9a5b; transition: 0.2s; pointer-events: auto;
 }
 .card-emoji:hover { transform: scale(1.1); background: #fff; }
+
 .card-title { font-family: 'Georgia', serif; font-size: 15px; font-weight: bold; color: #3e4a3d; padding: 10px 10px 5px 10px; margin: 0; text-align: center; }
 
 .card-desc-container { flex: 1; padding: 0 10px; overflow: hidden; position: relative; margin-bottom: 5px; }
@@ -305,17 +134,9 @@
 @keyframes scrollVert { 0%, 10% { transform: translateY(0); } 90%, 100% { transform: translateY(-50%); } }
 
 .card-trivia-container { height: 25px; background: #3e4a3d; color: #d1b880; overflow: hidden; position: relative; display: flex; align-items: center; border-top: 1px solid #2d5a27; }
-.card-trivia-scroll {
-    white-space: nowrap;
-    font-size: 10px;
-    font-style: italic;
-    /* Zmiana z 12s na 25s - tekst płynie dostojnie i powoli */
-    animation: scrollHoriz 25s linear infinite;
-    padding-left: 100%;
-}
+.card-trivia-scroll { white-space: nowrap; font-size: 10px; font-style: italic; animation: scrollHoriz 25s linear infinite; padding-left: 100%; }
 @keyframes scrollHoriz { to { transform: translateX(-200%); } }
 
-/* NOWOŚĆ: Interaktywny status kalendarza */
 .card-status-wrapper { display: flex; flex-direction: column; border-top: 1px solid #5a4f41; }
 .card-status-header { background: rgba(0,0,0,0.05); display: flex; justify-content: space-between; align-items: center; padding: 4px 6px; font-size: 10px; color: #5a4f41; border-bottom: 1px solid rgba(0,0,0,0.1); }
 .month-nav { cursor: pointer; transition: 0.2s; padding: 2px 6px; border-radius: 3px; font-weight: bold; }
@@ -326,83 +147,99 @@
 .card-btn:hover { background: #8a9a5b; }
 
 /* =========================================
-   ARENA I ANIMOWANE LINIE
+   LOKALNE GILDIE (PASKI I SUWAKI NAD KARTĄ)
    ========================================= */
-#arenaLines { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 40; pointer-events: none; }
-.energy-dot { fill: #fff; filter: drop-shadow(0 0 5px #fff); }
-.energy-line { stroke: rgba(255,255,255,0.3); stroke-width: 1.5; stroke-dasharray: 4, 4; }
-
-.guild-satellite {
-    position: absolute; width: 150px; height: 150px; background: #f4f1ea; border: 2px solid #5a4f41;
-    border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center;
-    text-align: center; padding: 12px; color: #2b2b2b; cursor: pointer;
-    box-shadow: inset 0 0 15px rgba(0,0,0,0.08), 0 5px 15px rgba(0,0,0,0.3); z-index: 50;
-    will-change: transform, opacity; transition: border-radius 0.4s ease, width 0.4s ease, height 0.4s ease, background 0.4s ease;
+.guild-mini-row {
+    /* POPRAWKA 3: Pozwalamy kółeczkom zawijać się do nowego wiersza. Zapobiega to ucinaniu! */
+    display: flex; width: 100%; flex-wrap: wrap; justify-content: center;
+    gap: 12px; padding: 10px 5px 15px 5px;
+    margin-top: 0; overflow: visible;
+    align-items: flex-end; min-height: 90px;
 }
-.guild-satellite:hover { border-color: #8a9a5b; z-index: 100 !important; }
-.guild-icon { font-size: 28px; color: #3e4a3d; margin-bottom: 2px; }
-.guild-title { font-family: 'Georgia', serif; font-weight: bold; color: #5a4f41; font-size: 13px; line-height: 1.1; margin-bottom: 4px; }
-.guild-desc { font-size: 9.5px; line-height: 1.2; color: #4a3e31; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
 
-.guild-satellite.docked-mode {
-    border-radius: 90px 90px 15px 15px; width: 170px; height: 150px;
-    background: linear-gradient(135deg, #2a2520 0%, #171512 100%);
-    border: 2px solid #8a9a5b !important; box-shadow: 0 -10px 40px rgba(138, 154, 91, 0.25), inset 0 0 25px rgba(0,0,0,0.8) !important;
-    padding-top: 20px; justify-content: flex-start;
+.guild-mini-card {
+    flex: 0 0 auto; position: relative; width: 60px; height: 60px;
+    border-radius: 30px; background: #e0dcd3; border: 2px solid #5a4f41;
+    cursor: pointer; transition: transform 0.2s, border-color 0.2s;
 }
-.guild-satellite.docked-mode .guild-icon { color: #8a9a5b; transform: scale(1.3); margin-bottom: 12px; }
-.guild-satellite.docked-mode .guild-title { color: #fdfbf7; font-size: 16px; text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
-.guild-satellite.docked-mode .guild-desc { display: none; }
-
-.expand-hint { font-size: 10px; color: #d1b880; text-transform: uppercase; margin-top: auto; margin-bottom: 12px; font-weight: bold; letter-spacing: 2px; background: rgba(209, 184, 128, 0.1); border: 1px solid rgba(209, 184, 128, 0.3); padding: 5px 15px; border-radius: 12px; display: none; }
-.guild-satellite.docked-mode .expand-hint { display: block; animation: pulseExpand 1.5s infinite alternate ease-in-out; }
-@keyframes pulseExpand { from { opacity: 0.6; transform: translateY(0); } to { opacity: 1; transform: translateY(3px); box-shadow: 0 0 12px rgba(209,184,128,0.2); } }
-
-/* Pozostałe elementy układu */
-.carousel-container { position: absolute; bottom: 0%; left: 50%; transform: translateX(-50%); width: 100%; max-width: 800px; height: 280px; display: flex; align-items: flex-start; padding-top: 20px; overflow-x: auto; scroll-behavior: auto; scrollbar-width: none; z-index: 250; opacity: 0; pointer-events: none; transition: opacity 0.4s ease; padding-left: 40%; padding-right: 40%; }
-.carousel-container.active { opacity: 1; pointer-events: auto; }
-.carousel-item { position: relative; flex: 0 0 auto; width: 140px; height: 140px; margin: 0 10px; background: #3e4a3d; border: 1px solid #d1b880; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 12px; color: #d1b880; cursor: grab; box-shadow: 0 10px 20px rgba(0,0,0,0.3); transform-origin: center top; user-select: none; }
-.carousel-icon { font-size: 32px; margin-bottom: 8px; color: #d1b880; }
-.carousel-title { font-weight: bold; font-family: 'Georgia', serif; font-size: 11px; margin-bottom: 4px;}
-.carousel-desc { font-size: 9px; color: #a89f91; }
-.recipe-unroll { position: absolute; top: 90%; left: 50%; width: 190px; background: #fdfbf7; border: 1px solid #d1b880; padding: 10px; box-shadow: 0 15px 30px rgba(0,0,0,0.7); display: none; flex-direction: column; z-index: 300; text-align: left; color: #2b2b2b; font-family: 'Crimson Text', serif; pointer-events: none; }
-.carousel-item:hover .recipe-unroll { display: flex; animation: unrollParchment 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) forwards; transform-origin: top center; }
-@keyframes unrollParchment { 0% { opacity: 0; transform: translateX(-50%) scaleY(0); } 100% { opacity: 1; transform: translateX(-50%) scaleY(1); } }
-.unroll-title { font-size: 11px; color: #9b4b4b; font-weight: bold; margin-bottom: 2px; text-transform: uppercase; border-bottom: 1px dashed #d1b880; }
-.unroll-list { padding-left: 15px; margin: 0 0 6px 0; font-size: 10px; color: #4a3e31; }
-.unroll-text { margin: 0; font-size: 10px; color: #4a3e31; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
-
-.bestiary-header { font-family: 'Georgia', serif; border-bottom: 2px solid #8a9a5b; padding-bottom: 10px; margin: 40px 0; text-transform: uppercase; }
-.bestiary-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 30px; }
-.witcher-card { background: #23201d; border: 1px solid #4a3e31; border-radius: 4px; height: 420px; display: flex; flex-direction: column; overflow: hidden; transition: transform 0.3s ease; }
-.witcher-card-img { height: 60%; background-size: cover; background-position: center; border-bottom: 2px solid #8a7a58; }
-.witcher-card-content { height: 30%; padding: 15px; display: flex; flex-direction: column; justify-content: center; text-align: center; }
-.witcher-btn { height: 10%; display: flex; align-items: center; justify-content: center; background: #3a2b21; color: #d1b880; text-decoration: none; border-top: 1px solid #5a4b3a; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
-/* --- KONTENER SKLEJAJĄCY INPUT Z SUGESTIAMI --- */
-.search-input-wrapper {
-    position: relative; /* MAGIA: Od teraz 100% dla sugestii to wysokość tego kontenera (czyli samego inputa) */
-    width: 100%;
-    z-index: 320;
+.guild-mini-card:hover, .guild-mini-card.force-hover {
+    transform: translateY(-5px);
+    border-color: #8a9a5b;
+    z-index: 500 !important;
 }
+
+.guild-mini-img {
+    width: 100%; height: 100%; border-radius: 50%;
+    background-size: cover; background-position: center;
+    position: absolute; top:0; left:0; z-index: 1; transition: filter 0.3s;
+}
+.guild-mini-card:hover .guild-mini-img, .guild-mini-card.force-hover .guild-mini-img { filter: blur(2px) brightness(0.8); }
+
+.guild-mini-title-short {
+    position: absolute; top: -8px; left: 50%; transform: translateX(-50%);
+    z-index: 2; background: rgba(35, 32, 29, 0.85); color: #d1b880;
+    font-size: 10px; font-weight: bold; padding: 2px 8px; border-radius: 12px;
+    text-align: center;
+    /* NOWOŚĆ: Tło dopasuje się do słowa, a zbyt długie uetnie dodając "..." */
+    width: max-content;
+    max-width: 95px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase; letter-spacing: 1px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3); pointer-events: none;
+}
+
+.guild-mini-expanded {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    position: absolute;
+    top: calc(100% + 15px);
+    bottom: auto;
+    left: 50%; transform: translateX(-50%);
+    /* NOWOŚĆ: Zdejmujemy sztywne height, dymek dopasuje się do ilości tekstu jak z gumy! */
+    width: 210px;
+    height: auto;
+    min-height: 100px;
+    background: rgba(35, 32, 29, 0.95); border-radius: 12px;
+    border: 2px solid #8a9a5b; box-shadow: 0 8px 20px rgba(138, 154, 91, 0.3);
+    z-index: 999 !important;
+    color: #fdfbf7; text-align: center;
+    padding: 15px 25px; /* Dodano więcej oddechu z góry i dołu */
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.guild-mini-card:hover .guild-mini-expanded,
+.guild-mini-card.force-hover .guild-mini-expanded {
+    opacity: 1; pointer-events: auto; transform: translateX(-50%) translateY(5px);
+}
+
+/* Nowe Strzałki Nawigacyjne */
+.guild-nav-btn {
+    position: absolute; top: 50%; transform: translateY(-50%);
+    background: none; border: none; color: #8a9a5b; font-size: 20px;
+    cursor: pointer; padding: 5px; transition: color 0.2s; z-index: 10;
+}
+.guild-nav-btn:hover { color: #d1b880; }
+.guild-nav-left { left: 2px; }
+.guild-nav-right { right: 2px; }
+
+.expanded-title { font-family: 'Georgia', serif; font-size: 13px; font-weight: bold; color: #fff; margin-bottom: 2px; }
+.expanded-role {
+    font-size: 9.5px; color: #e0dcd3; margin-bottom: 12px;
+    font-style: italic; line-height: 1.4; /* Lepsza czytelność w wielu linijkach */
+}
+.expanded-btn { background: #8a9a5b; color: #fff; font-size: 10px; padding: 4px 14px; border-radius: 4px; cursor: pointer; text-transform: uppercase; border: none; font-weight: bold; letter-spacing: 1px; transition: 0.2s;}
+.expanded-btn:hover { background: #d1b880; color: #23201d; }
 
 /* =========================================
-   WYNIKI KALENDARZA / LISTA ZADAŃ (SEZONY)
+   LISTA ZADAŃ I PRZEPISÓW (POD WYSZUKIWARKĄ)
    ========================================= */
 .task-results-container {
-    display: none;
-    width: 100%;
-    max-width: 600px;
-    margin: 30px auto 0 auto;
-    z-index: 310;
-    position: relative;
-    text-align: left;
+    display: none; width: 100%; max-width: 600px; margin: 30px auto 0 auto;
+    z-index: 310; position: relative; text-align: left;
     animation: fadeInTask 0.4s ease-out forwards;
 }
-
-@keyframes fadeInTask {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
+@keyframes fadeInTask { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
 .task-season-title {
     font-family: 'Georgia', serif; font-size: 24px; color: #3e4a3d;
@@ -412,70 +249,40 @@
 }
 
 .task-card {
-    display: flex; align-items: center;
-    background: rgba(253, 251, 247, 0.95);
-    border: 1px solid #d1c7a7;
-    border-left: 6px solid #8a9a5b;
-    border-radius: 8px;
-    padding: 15px 20px; margin-bottom: 15px;
-    cursor: pointer; transition: all 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+    display: flex; align-items: center; background: rgba(253, 251, 247, 0.95);
+    border: 1px solid #d1c7a7; border-left: 6px solid #8a9a5b; border-radius: 8px;
+    padding: 15px 20px; margin-bottom: 15px; cursor: pointer; transition: all 0.2s cubic-bezier(0.25, 1, 0.5, 1);
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
+.task-card:hover { transform: translateX(8px); border-color: #8a9a5b; box-shadow: 0 8px 15px rgba(138, 154, 91, 0.2); }
 
-.task-card:hover {
-    transform: translateX(8px);
-    border-color: #8a9a5b;
-    box-shadow: 0 8px 15px rgba(138, 154, 91, 0.2);
-}
-
-.task-card-icon {
-    font-size: 28px; color: #8a9a5b; width: 50px; text-align: center; margin-right: 15px;
-}
-
+.task-card-icon { font-size: 28px; color: #8a9a5b; width: 50px; text-align: center; margin-right: 15px; }
 .task-card-content { flex: 1; }
-
-.task-card-title {
-    font-family: 'Georgia', serif; font-size: 16px; font-weight: bold;
-    color: #2b2b2b; margin: 0 0 4px 0; line-height: 1.2;
-}
-
+.task-card-title { font-family: 'Georgia', serif; font-size: 16px; font-weight: bold; color: #2b2b2b; margin: 0 0 4px 0; line-height: 1.2; }
 .task-card-desc { font-size: 12px; color: #5a4f41; margin: 0; line-height: 1.4; }
 
 .task-card-action {
-    font-size: 10px; font-weight: bold; color: #d1b880;
-    background: #3e4a3d; padding: 8px 14px;
-    border-radius: 6px; text-transform: uppercase;
-    margin-left: 15px; transition: background 0.2s, transform 0.2s;
+    font-size: 10px; font-weight: bold; color: #d1b880; background: #3e4a3d; padding: 8px 14px;
+    border-radius: 6px; text-transform: uppercase; margin-left: 15px; transition: background 0.2s, transform 0.2s;
     text-align: center; white-space: nowrap;
 }
+.task-card:hover .task-card-action { background: #8a9a5b; color: #fff; transform: scale(1.05); }
 
-.task-card:hover .task-card-action {
-    background: #8a9a5b; color: #fff; transform: scale(1.05);
-}
-
-/* --- POLE FILTRUJĄCE ZADANIA --- */
 .task-filter-input {
-    width: 100%;
-    padding: 12px 15px;
-    margin-bottom: 25px;
-    font-family: 'Georgia', serif;
-    font-size: 15px;
-    color: #2b2b2b;
-    background: #fdfbf7;
-    border: 2px dashed #8a9a5b;
-    border-radius: 8px;
-    outline: none;
-    transition: all 0.3s ease;
+    width: 100%; padding: 12px 15px; margin-bottom: 25px; font-family: 'Georgia', serif; font-size: 15px; color: #2b2b2b;
+    background: #fdfbf7; border: 2px dashed #8a9a5b; border-radius: 8px; outline: none; transition: all 0.3s ease;
     box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
 }
+.task-filter-input::placeholder { color: #a89f91; font-style: italic; }
+.task-filter-input:focus { border-color: #5a4f41; border-style: solid; box-shadow: inset 0 2px 4px rgba(0,0,0,0.05), 0 4px 12px rgba(0,0,0,0.1); }
 
-.task-filter-input::placeholder {
-    color: #a89f91;
-    font-style: italic;
-}
-
-.task-filter-input:focus {
-    border-color: #5a4f41;
-    border-style: solid;
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05), 0 4px 12px rgba(0,0,0,0.1);
-}
+/* =========================================
+   ELEMENTY BESTIARIUSZA I ARENY (UKRYTE NA INDEX.HTML)
+   ========================================= */
+#arenaLines, .guild-satellite, .carousel-container { display: none; }
+.bestiary-header { font-family: 'Georgia', serif; border-bottom: 2px solid #8a9a5b; padding-bottom: 10px; margin: 40px 0; text-transform: uppercase; }
+.bestiary-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 30px; }
+.witcher-card { background: #23201d; border: 1px solid #4a3e31; border-radius: 4px; height: 420px; display: flex; flex-direction: column; overflow: hidden; transition: transform 0.3s ease; }
+.witcher-card-img { height: 60%; background-size: cover; background-position: center; border-bottom: 2px solid #8a7a58; }
+.witcher-card-content { height: 30%; padding: 15px; display: flex; flex-direction: column; justify-content: center; text-align: center; }
+.witcher-btn { height: 10%; display: flex; align-items: center; justify-content: center; background: #3a2b21; color: #d1b880; text-decoration: none; border-top: 1px solid #5a4b3a; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
