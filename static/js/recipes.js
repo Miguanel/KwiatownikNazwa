@@ -349,11 +349,12 @@ window.openRecipeModal = function(buttonElement) {
 document.addEventListener("DOMContentLoaded", function() {
     const modalElement = document.getElementById('dynamicRecipeModal');
     if (!modalElement) return;
-    else {
-        modalEl.addEventListener('hidden.bs.modal', () => {
-            document.body.focus(); // Przenieś fokus na stronę, by nie blokować czytników ekranu
-        });
-    }
+
+    // POPRAWKA: Używamy prawidłowej nazwy zmiennej 'modalElement'
+    modalElement.addEventListener('hidden.bs.modal', () => {
+        document.body.focus();
+    });
+
     modalElement.addEventListener('shown.bs.modal', function () {
         const modalBody = document.getElementById('modalBodyObj');
         const modalHeader = document.getElementById('modalHeaderObj');
