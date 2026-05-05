@@ -163,7 +163,15 @@
 
     <div class="astro-ribbon scrollable-banner" id="banner-astro">
         <div class="scrollable-content">
-            <div class="astro-item"><i class="ra ra-compass"></i><div><span class="astro-label">Lokacja:</span><span class="astro-value">{{ astro.location if astro else 'Ziemia' }}</span></div></div>
+            <div class="astro-item">
+                <i class="ra ra-compass"></i>
+                <div>
+                    <span class="astro-label">Lokacja:</span>
+                    <span class="astro-value" id="locValue">{{ astro.location if astro else 'Czyżowice' }}</span>
+                    <!-- Złota ikonka GPS do kliknięcia -->
+                    <i class="ra ra-target" onclick="forceGPS()" style="cursor: pointer; color: #b8860b; margin-left: 5px; font-size: 0.9rem;" title="Pobierz dokładną lokalizację GPS"></i>
+                </div>
+            </div>
             <div class="astro-item"><i class="ra ra-sun"></i><div><span class="astro-label">Pogoda:</span><span class="astro-value">{{ astro.temp if astro else '15°C' }}</span><span class="astro-label" style="margin-left:4px;">Wilg:</span><span class="astro-value">{{ astro.humidity if astro else '60%' }}</span></div></div>
             <div class="astro-item"><i class="ra ra-moon-sun"></i><div><span class="astro-label">Księżyc:</span><span class="astro-value">{{ astro.phase_name if astro else 'Patrzący' }}</span></div></div>
             <div class="astro-item"><i class="ra ra-fire"></i><div><span class="astro-label">Żywioł:</span><span class="astro-value">{{ astro.element if astro else 'Haj' }}</span></div></div>
@@ -410,8 +418,51 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
-// --- SKRYPT AKTUALIZACJI LOKALIZACJI GPS ---
+// --- forceGPS ---
+<script>
+function forceGPS() {
+    const locSpan = document.getElementById('locValue');
+    locSpan.innerText = "Szukam...";
 
+    if ("geolocation" in navigator) {
+        navigator.geolocation.getCurrentPosition(
+            async (position) => {
+                const lat = position.coords.latitude;
+                const lon = position.coords.longitude;
+
+                // Używamy darmowego API Nominatim tylko po to, by przetłumaczyć współrzędne na nazwę miasta w JS
+                try {
+                    const resp = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}&zoom=10`);
+                    const data = await resp.json();
+                    let city = "Twoja Okolica";
+                    if(data.address) {
+                        city = data.address.city || data.address.town || data.address.village || data.address.county || "Twoja Okolica";
+                    }
+
+                    // Zapisujemy ciasteczka na 30 dni
+                    document.cookie = `user_lat=${lat}; path=/; max-age=${60*60*24*30}`;
+                    document.cookie = `user_lon=${lon}; path=/; max-age=${60*60*24*30}`;
+                    document.cookie = `user_city=${encodeURIComponent(city)}; path=/; max-age=${60*60*24*30}`;
+
+                    // Przeładowujemy stronę by Python złapał nowe ciastka
+                    window.location.reload();
+                } catch (e) {
+                    locSpan.innerText = "Błąd sieci";
+                }
+            },
+            (error) => {
+                alert("Nie udało się pobrać GPS. Upewnij się, że masz włączoną lokalizację w telefonie i wyraziłeś zgodę w przeglądarce.");
+                locSpan.innerText = "Błąd GPS";
+            },
+            { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+        );
+    } else {
+        alert("Twoja przeglądarka nie wspiera GPS.");
+    }
+}
+</script>
+
+// --- SKRYPT AKTUALIZACJI LOKALIZACJI GPS ---
 <script>
     // --- SKRYPT AKTUALIZACJI LOKALIZACJI GPS (WERSJA DIAGNOSTYCZNA) ---
     document.addEventListener("DOMContentLoaded", () => {
