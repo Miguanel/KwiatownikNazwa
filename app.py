@@ -243,8 +243,34 @@ def all_comments():
         db.session.commit()
         return redirect(url_for('all_comments'))
 
+    # --- NOWOŚĆ: Pobieranie danych dla paska Astro ---
+    # Używamy tej samej logiki co w index(), aby pasek nie był pusty
+    user_ip = request.headers.get('X-Forwarded-For', request.remote_addr)
+    if user_ip and ',' in user_ip:
+        user_ip = user_ip.split(',')[0].strip()
+
+    lat, lon = '49.95', '18.38'
+    city_name = "Czyżowice (Domyślnie)"
+
+    try:
+        import requests
+        url = f'http://ip-api.com/json/{user_ip}'
+        ip_resp = requests.get(url, timeout=2).json()
+        if ip_resp and ip_resp.get('status') == 'success':
+            lat = str(ip_resp.get('lat'))
+            lon = str(ip_resp.get('lon'))
+            city_name = ip_resp.get('city', 'Nieznana okolica')
+    except Exception:
+        pass
+
+    astro = get_astrological_data(lat=lat, lon=lon)
+    astro['location'] = city_name
+    # ------------------------------------------------
+
     comments = Comment.query.order_by(Comment.date_posted.desc()).all()
-    return render_template('all_comments.html', comments=comments)
+
+    # DODANO: astro=astro do render_template
+    return render_template('all_comments.html', comments=comments, astro=astro)
 
 
 # --- ZARZĄDZANIE KOMENTARZAMI (CRUD) ---
