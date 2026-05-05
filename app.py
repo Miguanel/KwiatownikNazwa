@@ -333,6 +333,29 @@ def delete_comment(comment_id):
 
 @app.route('/gildie/', methods=['GET', 'POST'])
 def gildie():
+    # --- LOGIKA LOKALIZACJI (Kopiujemy to, co mamy w index i comments) ---
+    user_ip = request.headers.get('X-Forwarded-For', request.remote_addr)
+    if user_ip and ',' in user_ip:
+        user_ip = user_ip.split(',')[0].strip()
+
+    lat, lon = '49.95', '18.38'
+    city_name = "Z (Domyślnie)"
+
+    try:
+        import requests
+        url = f'http://ip-api.com/json/{user_ip}'
+        ip_resp = requests.get(url, timeout=2).json()
+        if ip_resp and ip_resp.get('status') == 'success':
+            lat = str(ip_resp.get('lat'))
+            lon = str(ip_resp.get('lon'))
+            city_name = ip_resp.get('city', 'Nieznana okolica')
+    except Exception:
+        pass
+
+    astro = get_astrological_data(lat=lat, lon=lon)
+    astro['location'] = city_name
+    # ---------------------------------------------------------------------
+
     all_plants_ids = get_all_plants_list()
     all_plants_data = []
 
@@ -370,10 +393,12 @@ def gildie():
                         'id': comp_id
                     })
 
+    # DODANO: astro=astro do render_template
     return render_template('gildie.html',
                            all_plants=all_plants_data,
                            selected_plant=selected_plant,
-                           companions=companions)
+                           companions=companions,
+                           astro=astro)
 
 
 # --- SZUKAJ OBJAWU ---
