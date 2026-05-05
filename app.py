@@ -75,6 +75,41 @@ def load_user(user_id):
     return db.session.get(User, int(user_id))
 
 
+@app.context_processor
+def inject_astro():
+    # Pobranie IP (omijanie proxy Rendera)
+    user_ip = request.headers.get('X-Forwarded-For', request.remote_addr)
+    if user_ip and ',' in user_ip:
+        user_ip = user_ip.split(',')[0].strip()
+
+    lat, lon = '49.95', '18.38'
+    city_name = "Czyżowice (Domyślnie)"
+
+    try:
+        import requests
+        # Timeout jest kluczowy, by Freezer nie wisiał (zwiększamy do 3s dla stabilności)
+        ip_resp = requests.get(f'http://ip-api.com/json/{user_ip}', timeout=3).json()
+        if ip_resp and ip_resp.get('status') == 'success':
+            lat = str(ip_resp.get('lat'))
+            lon = str(ip_resp.get('lon'))
+            city_name = ip_resp.get('city', 'Nieznana okolica')
+    except Exception as e:
+        print(f"Błąd GeoIP w inject_astro: {e}")
+
+    try:
+        astro_data = get_astrological_data(lat=lat, lon=lon)
+        astro_data['location'] = city_name
+    except Exception:
+        # Pancerne dane awaryjne, żeby Freezer nigdy nie dostał błędu 500
+        astro_data = {
+            "location": city_name, "temp": "15°C", "humidity": "50%",
+            "phase_name": "Pełnia", "festival": "Zwyczajny Czas",
+            "festival_desc": "Brak danych", "festival_symbol": "-", "festival_action": "---",
+            "numerology": "5", "japanese": "Smok", "element": "Ziemia"
+        }
+    return dict(astro=astro_data)
+
+
 # --- FUNKCJE POMOCNICZE (JSON) ---
 def normalize_slug(text):
     """Zamienia polskie znaki na ich odpowiedniki i przygotowuje bezpieczny slug."""
