@@ -77,36 +77,44 @@ def load_user(user_id):
 
 @app.context_processor
 def inject_astro():
-    # Pobranie IP (omijanie proxy Rendera)
-    user_ip = request.headers.get('X-Forwarded-For', request.remote_addr)
-    if user_ip and ',' in user_ip:
-        user_ip = user_ip.split(',')[0].strip()
+    # 1. Sprawdź, czy współrzędne są już w ciasteczkach (wysłane przez JS)
+    lat = request.cookies.get('user_lat')
+    lon = request.cookies.get('user_lon')
+    city_name = request.cookies.get('user_city', 'Czyżowice (Domyślnie)')
 
-    lat, lon = '49.95', '18.38'
-    city_name = "Czyżowice (Domyślnie)"
+    # 2. Jeśli nie ma ciasteczek, spróbuj pobrać po IP (Serwerowo)
+    if not lat or not lon:
+        user_ip = request.headers.get('X-Forwarded-For', request.remote_addr)
+        if user_ip and ',' in user_ip:
+            user_ip = user_ip.split(',')[0].strip()
 
-    try:
-        import requests
-        # Timeout jest kluczowy, by Freezer nie wisiał (zwiększamy do 3s dla stabilności)
-        ip_resp = requests.get(f'http://ip-api.com/json/{user_ip}', timeout=3).json()
-        if ip_resp and ip_resp.get('status') == 'success':
-            lat = str(ip_resp.get('lat'))
-            lon = str(ip_resp.get('lon'))
-            city_name = ip_resp.get('city', 'Nieznana okolica')
-    except Exception as e:
-        print(f"Błąd GeoIP w inject_astro: {e}")
+        try:
+            import requests
+            # Zwiększony timeout i obsługa błędów
+            url = f'http://ip-api.com/json/{user_ip}'
+            ip_resp = requests.get(url, timeout=3).json()
+            if ip_resp and ip_resp.get('status') == 'success':
+                lat = str(ip_resp.get('lat'))
+                lon = str(ip_resp.get('lon'))
+                city_name = ip_resp.get('city', 'Twoja Okolica')
+        except Exception:
+            # Całkowity fallback na Czyżowice, jeśli API ip-api leży
+            lat, lon = '49.95', '18.38'
+            city_name = "Czyżowice"
 
+    # 3. Pobranie danych z silnika astro
     try:
         astro_data = get_astrological_data(lat=lat, lon=lon)
         astro_data['location'] = city_name
     except Exception:
-        # Pancerne dane awaryjne, żeby Freezer nigdy nie dostał błędu 500
+        # Pancerne dane awaryjne dla Freezera i błędów sieci
         astro_data = {
-            "location": city_name, "temp": "15°C", "humidity": "50%",
-            "phase_name": "Pełnia", "festival": "Zwyczajny Czas",
-            "festival_desc": "Brak danych", "festival_symbol": "-", "festival_action": "---",
+            "location": city_name, "temp": "15°C", "humidity": "60%",
+            "phase_name": "Przybywający", "festival": "Zwyczajny Czas",
+            "festival_desc": "Brak danych", "festival_symbol": "🌿", "festival_action": "...",
             "numerology": "5", "japanese": "Smok", "element": "Ziemia"
         }
+
     return dict(astro=astro_data)
 
 

@@ -411,40 +411,7 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 
 // --- SKRYPT AKTUALIZACJI LOKALIZACJI GPS ---
-<!--<script>-->
-<!--    document.addEventListener("DOMContentLoaded", () => {-->
-<!--        // Pomocnicza funkcja do sprawdzania ciasteczek-->
-<!--        function getCookie(name) {-->
-<!--            let matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));-->
-<!--            return matches ? decodeURIComponent(matches[1]) : undefined;-->
-<!--        }-->
 
-<!--        // Sprawdzamy, czy ciasteczko o tym, że już pytaliśmy, istnieje-->
-<!--        if (!getCookie('gps_asked')) {-->
-<!--            if ("geolocation" in navigator) {-->
-<!--                // Jeśli nie pytaliśmy, ustalamy ciastko "zapytano" i odpytujemy GPS-->
-<!--                document.cookie = "gps_asked=true; path=/; max-age=" + 60*60*24*30; // Ważne przez miesiąc-->
-
-<!--                navigator.geolocation.getCurrentPosition(-->
-<!--                    (position) => {-->
-<!--                        const lat = position.coords.latitude;-->
-<!--                        const lon = position.coords.longitude;-->
-
-<!--                        // Zapisujemy świeże współrzędne do ciastek dla Python'a-->
-<!--                        document.cookie = `user_lat=${lat}; path=/; max-age=` + 60*60*24;-->
-<!--                        document.cookie = `user_lon=${lon}; path=/; max-age=` + 60*60*24;-->
-
-<!--                        // Przeładowujemy stronę z nową pogodą i astrolokacją-->
-<!--                        window.location.reload();-->
-<!--                    },-->
-<!--                    (error) => {-->
-<!--                        console.log("Odmowa lub błąd lokalizacji. Ustawiam domyślne parametry. " + error.message);-->
-<!--                    }-->
-<!--                );-->
-<!--            }-->
-<!--        }-->
-<!--    });-->
-<!--</script>-->
 <script>
     // --- SKRYPT AKTUALIZACJI LOKALIZACJI GPS (WERSJA DIAGNOSTYCZNA) ---
     document.addEventListener("DOMContentLoaded", () => {
@@ -492,6 +459,33 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     });
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    function getCookie(name) {
+        let matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+    }
+
+    // Jeśli serwer nie wykrył poprawnej lokalizacji (np. pokazuje Frankfurt/Czyżowice),
+    // lub minęło 24h, spróbuj pobrać ją po stronie klienta
+    if (!getCookie('user_lat')) {
+        if ("geolocation" in navigator) {
+            navigator.geolocation.getCurrentPosition((position) => {
+                const lat = position.coords.latitude;
+                const lon = position.coords.longitude;
+
+                // Zapisujemy do ciastek (ważne 24h)
+                document.cookie = `user_lat=${lat}; path=/; max-age=${60*60*24}`;
+                document.cookie = `user_lon=${lon}; path=/; max-age=${60*60*24}`;
+
+                // Przeładowujemy raz, żeby Python odczytał nowe ciastka
+                window.location.reload();
+            }, null, { timeout: 5000 });
+        }
+    }
+});
 </script>
 // --- IMPORTY magic_lens.js ---
 <script src="{{ url_for('static', filename='js/magic_lens.js') }}"></script>
