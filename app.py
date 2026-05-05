@@ -139,20 +139,42 @@ def get_all_recipes():
 
     return all_recipes
 
+
 @app.route('/')
 def index():
-    plants = get_all_plants_list()  # Twoja stara funkcja zwracająca ['mniszek_lekarski', 'chmiel_zwyczajny']
+    plants = get_all_plants_list()
     dynamic_calendar = build_calendar_from_jsons()
     recipes = get_all_recipes()
-    astro = get_astrological_data()  # Czyżowice domyślnie
     knowledge = get_random_knowledge_pool()
+
+    # --- POBIERANIE WSPÓŁRZĘDNYCH Z CIASTECZKA (LOKALIZACJI) ---
+    lat = request.cookies.get('user_lat', '49.95')
+    lon = request.cookies.get('user_lon', '18.38')
+
+    city_name = "Ziemia (Domyślnie)"
+    if lat != '49.95' and lon != '18.38':
+        try:
+            import requests
+            headers = {'User-Agent': 'KwiatownikApp/1.0'}
+            url = f"https://nominatim.openstreetmap.org/reverse?format=json&lat={lat}&lon={lon}&zoom=10"
+            resp = requests.get(url, headers=headers, timeout=2).json()
+            if 'address' in resp:
+                city_name = resp['address'].get('city') or resp['address'].get('town') or resp['address'].get(
+                    'village') or resp['address'].get('county') or "Nieznana okolica"
+        except Exception:
+            city_name = "Twoja Lokacja"
+
+    # Przekazujemy zmienne do silnika astrologicznego
+    astro = get_astrological_data(lat=lat, lon=lon)
+    astro['location'] = city_name  # Podmieniamy miasto
 
     full_data_list = []
     for plant_id in plants:
-        plant_data = get_plant_data(plant_id)  # Funkcja, która wczytuje zawartość pliku JSON
+        plant_data = get_plant_data(plant_id)
         if plant_data:
             full_data_list.append(plant_data)
 
+    # Zwracamy prawidłowo wygenerowany szablon HTML
     return render_template(
         'index.html',
         plants=plants,
@@ -160,9 +182,8 @@ def index():
         calendar_data=json.dumps(dynamic_calendar),
         astro=astro,
         knowledge=knowledge,
-        recipes_full_data=json.dumps(recipes)  # <-- DODANA LINIA
+        recipes_full_data=json.dumps(recipes)
     )
-
 
 @app.route('/plant/<plant_id>/')
 def plant_detail(plant_id):

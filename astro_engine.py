@@ -84,7 +84,7 @@ def get_astrological_data(lat='49.95', lon='18.38'):
     pagan_fest = get_pagan_festival(now)
 
     return {
-        "location": "Czyżowice",
+        "location": "Lokalizacja", # Zostanie nadpisane w app.py
         "temp": weather["temp"],
         "humidity": weather["humidity"],
         "phase_name": phase_name,
