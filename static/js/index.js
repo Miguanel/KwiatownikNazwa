@@ -1,4 +1,21 @@
 // ==========================================
+// TARCZA BHP: BEZPIECZNE FUNKCJE STRINGÓW
+// ==========================================
+function safeStr(val) {
+    return val ? String(val) : "";
+}
+
+// ==========================================
+// KRYTYCZNA POPRAWKA: NORMALIZACJA DANYCH
+// ==========================================
+if (typeof plantsData !== 'undefined') {
+    plantsData.forEach(p => {
+        p.nazwa_pl = p.nazwa_pl || p.gatunek || "Nieznana roślina";
+        p.id = p.id || p.slug;
+    });
+}
+
+// ==========================================
 // SŁOWNIKI ALCHEMICZNE I POMOCNICZE
 // ==========================================
 const dict = {
@@ -43,14 +60,13 @@ function getDictContext(value, dictObj) {
     let cleanName = value.replace(/_/g, ' ');
     let desc = '';
     for (let key in dictObj) {
-        if (value.toLowerCase().includes(key)) desc += dictObj[key] + " ";
+        if (safeStr(value).toLowerCase().includes(key)) desc += dictObj[key] + " ";
     }
     if (cleanName.includes('_')) cleanName = cleanName.split('_')[1];
     return { name: cleanName, desc: desc.trim() };
 }
 
-
-// --- NOWOŚĆ: SYSTEM PRZECIĄGANIA (DRAG TO SCROLL) ---
+// --- SYSTEM PRZECIĄGANIA (DRAG TO SCROLL) ---
 let isDraggingUI = false;
 
 function enableDragToScroll(slider) {
@@ -82,16 +98,16 @@ function getPlantUrl(id) { return BASE_URL + "/plant/" + id + "/"; }
 
 function getWitcherIcon(plant, isRecipe = false) {
     if (isRecipe) return 'ra-scroll';
-    const rodzina = (plant.rodzina || "").toLowerCase();
-    const nazwa = (plant.nazwa_pl || "").toLowerCase();
+    const rodzina = safeStr(plant.rodzina).toLowerCase();
+    const nazwa = safeStr(plant.nazwa_pl).toLowerCase();
     if (rodzina.includes('bukowate') || rodzina.includes('sosnowate') || nazwa.includes('dąb')) return 'ra-pine-tree';
     return 'ra-herb';
 }
 
 function getPlantWitcherClass(plant) {
-    let fam = (plant.rodzina || "").toLowerCase();
-    let desc = (plant.opis || "").toLowerCase();
-    let name = (plant.nazwa_pl || "").toLowerCase();
+    let fam = safeStr(plant.rodzina).toLowerCase();
+    let desc = safeStr(plant.opis).toLowerCase();
+    let name = safeStr(plant.nazwa_pl).toLowerCase();
 
     if (fam.includes("sosnowate") || fam.includes("cyprysowate")) return "ra-pine-tree";
     if (fam.includes("różowate") && (desc.includes("drzewo") || name.includes("jabłoń") || name.includes("śliw"))) return "ra-apple";
@@ -140,7 +156,7 @@ function addSymptom(text, roslinaName, plantId) {
     if (!text || text.length < 3) return;
     const content = Array.isArray(text) ? text.join(', ') : String(text);
     content.split(/[,;.]/).forEach(part => {
-        const cleanTag = part.trim().toLowerCase();
+        const cleanTag = safeStr(part).trim().toLowerCase();
         if (cleanTag.length < 3) return;
         if (!symptomMap[cleanTag]) symptomMap[cleanTag] = [];
         if (!symptomMap[cleanTag].find(item => item.nazwa === roslinaName)) {
@@ -149,8 +165,9 @@ function addSymptom(text, roslinaName, plantId) {
     });
 }
 
+// Mapowanie zastosowań z przepisów i roślin
 recipesData.forEach(recipe => {
-    const plant = plantsData.find(p => p.nazwa_pl.toLowerCase() === (recipe.roslina || "").toLowerCase());
+    const plant = plantsData.find(p => safeStr(p.nazwa_pl).toLowerCase() === safeStr(recipe.roslina).toLowerCase());
     if (!plant) return;
     const plantId = plant.id, rName = plant.nazwa_pl;
     addSymptom(recipe.zastosowanie, rName, plantId);
@@ -170,6 +187,9 @@ plantsData.forEach(plant => {
     }
 });
 
+// ==========================================
+// ALGORYTM AGREGACJI SEZONÓW I MIESIĘCY
+// ==========================================
 const monthNames = ["", "styczeń", "luty", "marzec", "kwiecień", "maj", "czerwiec", "lipiec", "sierpień", "wrzesień", "październik", "listopad", "grudzień"];
 const seasonMonths = { "zima": [12, 1, 2], "wiosna": [3, 4, 5], "lato": [6, 7, 8], "jesień": [9, 10, 11] };
 const seasonalMap = { "wiosna": [], "lato": [], "jesień": [], "zima": [], "styczeń": [], "luty": [], "marzec": [], "kwiecień": [], "maj": [], "czerwiec": [], "lipiec": [], "sierpień": [], "wrzesień": [], "październik": [], "listopad": [], "grudzień": [] };
@@ -178,7 +198,7 @@ plantsData.forEach(plant => {
     if (plant.kalendarz_ogrodnika && plant.kalendarz_ogrodnika.zadania) {
         plant.kalendarz_ogrodnika.zadania.forEach(zadanie => {
             let taskIcon = "ra-sprout";
-            let taskNameLower = zadanie.czynnosc.toLowerCase();
+            let taskNameLower = safeStr(zadanie.czynnosc).toLowerCase();
             if (taskNameLower.includes('sadz')) taskIcon = "ra-plant-seed";
             if (taskNameLower.includes('zbiór') || taskNameLower.includes('zbier')) taskIcon = "ra-sickle";
             if (taskNameLower.includes('ciąc') || taskNameLower.includes('cięci')) taskIcon = "ra-sword";
@@ -207,7 +227,7 @@ const calendarSearchMap = {};
 
 if (kalendarz.okresy) {
     Object.keys(kalendarz.okresy).forEach(okres => {
-        calendarSearchMap[okres.toLowerCase()] = { type: 'Sezon / Czas', data: kalendarz.okresy[okres].zadania, label: okres };
+        calendarSearchMap[safeStr(okres).toLowerCase()] = { type: 'Sezon / Czas', data: kalendarz.okresy[okres].zadania, label: okres };
     });
 }
 
@@ -220,7 +240,7 @@ const actionBuckets = {
 
 if (kalendarz.czynnosci) {
     Object.keys(kalendarz.czynnosci).forEach(czynnosc => {
-        const czynnoscLower = czynnosc.toLowerCase();
+        const czynnoscLower = safeStr(czynnosc).toLowerCase();
         let taskDataList = Array.isArray(kalendarz.czynnosci[czynnosc]) ? kalendarz.czynnosci[czynnosc] : [kalendarz.czynnosci[czynnosc]];
         let matchedToGroup = false;
 
@@ -288,7 +308,7 @@ document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.cli
 // WYSZUKIWARKA GŁÓWNA
 // ==========================================
 universalSearch.addEventListener('input', function() {
-    const query = this.value.toLowerCase().trim();
+    const query = safeStr(this.value).toLowerCase().trim();
 
     horizontalResults.innerHTML = '';
     if (taskResults) taskResults.style.display = 'none';
@@ -301,9 +321,7 @@ universalSearch.addEventListener('input', function() {
         return;
     }
 
-    let autoRenderCalendarNode = null;
-
-    const filteredPlants = plantsData.filter(p => p.nazwa_pl.toLowerCase().includes(query) || (p.rodzina && p.rodzina.toLowerCase().includes(query)));
+    const filteredPlants = plantsData.filter(p => safeStr(p.nazwa_pl).toLowerCase().includes(query) || (p.rodzina && safeStr(p.rodzina).toLowerCase().includes(query)));
 
     if (filteredPlants.length > 0) {
         horizontalResults.style.display = 'flex';
@@ -324,7 +342,7 @@ universalSearch.addEventListener('input', function() {
 
             if (comps.length > 0) {
                 comps.forEach((comp, index) => {
-                    const guestPlant = plantsData.find(p => p.nazwa_pl.toLowerCase() === comp.nazwa.toLowerCase());
+                    const guestPlant = plantsData.find(p => safeStr(p.nazwa_pl).toLowerCase() === safeStr(comp.nazwa).toLowerCase());
                     let imageUrl = guestPlant ? getBestImageUrl(guestPlant) : '';
                     let shortName = comp.nazwa.split(' ')[0];
 
@@ -391,7 +409,7 @@ universalSearch.addEventListener('input', function() {
             let tagsHtml = '';
             if (plant.tagi && Array.isArray(plant.tagi) && plant.tagi.length > 0) {
                 plant.tagi.forEach(tagKeyRaw => {
-                    let tagKey = tagKeyRaw.toLowerCase().trim();
+                    let tagKey = safeStr(tagKeyRaw).toLowerCase().trim();
                     const tagDef = (typeof TAG_DICTIONARY !== 'undefined' && TAG_DICTIONARY[tagKey]) ? TAG_DICTIONARY[tagKey] : { icon: "ra-help", desc: tagKeyRaw, color: "#7a6a58" };
                     tagsHtml += `<div class="card-emoji" data-bs-toggle="tooltip" title="${tagDef.desc}" style="border-color: ${tagDef.color}; color: ${tagDef.color};"><i class="ra ${tagDef.icon}"></i></div>`;
                 });
@@ -447,7 +465,7 @@ universalSearch.addEventListener('input', function() {
                     });
                 });
             }
-            let relatedRecipes = recipesData.filter(r => r.roslina && r.roslina.toLowerCase() === plant.nazwa_pl.toLowerCase());
+            let relatedRecipes = recipesData.filter(r => safeStr(r.roslina).toLowerCase() === safeStr(plant.nazwa_pl).toLowerCase());
             relatedRecipes.forEach(r => {
                 let prepText = Array.isArray(r.sposob_przygotowania) ? r.sposob_przygotowania.join(' ') : (r.sposob_przygotowania || 'Brak instrukcji');
                 combinedItems.push({
@@ -483,7 +501,7 @@ universalSearch.addEventListener('input', function() {
         }
     }
 
-    const matchedRecipes = recipesData.filter(r => r.tytul && r.tytul.toLowerCase().includes(query));
+    const matchedRecipes = recipesData.filter(r => safeStr(r.tytul).toLowerCase().includes(query));
     if (matchedRecipes.length > 0) {
         let recipeItems = matchedRecipes.map(r => {
             let prepText = Array.isArray(r.sposob_przygotowania) ? r.sposob_przygotowania.join(' ') : (r.sposob_przygotowania || 'Brak instrukcji');
@@ -541,7 +559,7 @@ function spawnSeasonNode(seasonName, tasks, isAutoRender = false) {
     if (!taskResults) return;
 
     let iconStr = "ra-sun";
-    let sName = seasonName.toLowerCase();
+    let sName = safeStr(seasonName).toLowerCase();
     if(sName === "zima" || sName === "styczeń" || sName === "luty") iconStr = "ra-snowflake";
     if(sName === "jesień" || sName === "październik" || sName === "listopad") iconStr = "ra-maple-leaf";
     if(sName === "wiosna" || sName === "marzec" || sName === "kwiecień") iconStr = "ra-sprout";
@@ -565,7 +583,7 @@ function spawnSeasonNode(seasonName, tasks, isAutoRender = false) {
             let actionLabel = "";
 
             if (task.isRecipe) {
-                clickAction = `window.redirectToRecipe('${task.tytul.replace(/'/g, "\\'")}', event)`;
+                clickAction = `window.redirectToRecipe('${safeStr(task.tytul).replace(/'/g, "\\'")}', event)`;
                 actionLabel = `PRZEPIS <i class="ra ra-scroll-unfurled"></i>`;
             } else {
                 clickAction = `goToPlantPageByName('${plantName}')`;
@@ -577,7 +595,7 @@ function spawnSeasonNode(seasonName, tasks, isAutoRender = false) {
                     <div class="task-card-icon"><i class="ra ${task.icon || 'ra-leaf'}"></i></div>
                     <div class="task-card-content">
                         <h4 class="task-card-title">${task.tytul}</h4>
-                        <p class="task-card-desc">${task.desc.substring(0, 85)}...</p>
+                        <p class="task-card-desc">${safeStr(task.desc).substring(0, 85)}...</p>
                     </div>
                     <div class="task-card-action" style="${task.isRecipe ? 'background:#8a7a58;color:#fff;' : ''}">${actionLabel}</div>
                 </div>
@@ -594,7 +612,7 @@ function spawnSeasonNode(seasonName, tasks, isAutoRender = false) {
     const filterInput = document.getElementById('taskFilterInput');
     if (filterInput) {
         filterInput.addEventListener('input', function() {
-            const query = this.value.toLowerCase().trim();
+            const query = safeStr(this.value).toLowerCase().trim();
             const cards = taskResults.querySelectorAll('.task-card');
             cards.forEach(card => {
                 const searchData = card.getAttribute('data-search');
@@ -613,7 +631,7 @@ window.redirectToRecipe = function(title, event) {
 
 function goToPlantPageByName(plantName) {
     if(!plantName) return;
-    const plant = plantsData.find(p => p.nazwa_pl.toLowerCase() === plantName.toLowerCase());
+    const plant = plantsData.find(p => safeStr(p.nazwa_pl).toLowerCase() === safeStr(plantName).toLowerCase());
     if(plant) {
         window.location.href = getPlantUrl(plant.id || plant.slug);
     } else {
@@ -624,7 +642,7 @@ function goToPlantPageByName(plantName) {
 
 
 // ==========================================
-// FUNKCJE ARENY I SFER (Zwrócone na miejsce!)
+// FUNKCJE ARENY I SFER
 // ==========================================
 function spawnPlantNetwork(plant) {
     clearSatellites();
@@ -644,7 +662,7 @@ function spawnPlantNetwork(plant) {
     const coreSat = { element: coreEl, baseAngle: 0, x: centerX, y: centerY, vx: 0, vy: 0, magneticX: 0, magneticY: 0 };
     activeSatellites.push(coreSat); dockedSat = coreSat;
 
-    let recipes = recipesData.filter(r => r.roslina && r.roslina.toLowerCase() === plant.nazwa_pl.toLowerCase());
+    let recipes = recipesData.filter(r => safeStr(r.roslina).toLowerCase() === safeStr(plant.nazwa_pl).toLowerCase());
     populateCarousel(recipes, "recipe", plant.id);
 
     let compsRaw = plant.permakultura?.gildie || plant.gildie || [];
@@ -656,7 +674,7 @@ function spawnPlantNetwork(plant) {
     companions.forEach((comp, index) => {
         const angleStep = (2 * Math.PI) / (companions.length || 1);
         const el = document.createElement('div'); el.className = 'guild-satellite';
-        const guestPlant = plantsData.find(p => p.nazwa_pl.toLowerCase() === comp.nazwa.toLowerCase());
+        const guestPlant = plantsData.find(p => safeStr(p.nazwa_pl).toLowerCase() === safeStr(comp.nazwa).toLowerCase());
 
         el.innerHTML = `<i class="guild-icon ra ${getWitcherIcon(guestPlant || comp)}"></i><div class="guild-title">${comp.nazwa}</div><div class="guild-desc" style="color:#d1b880;">${comp.rola}</div><div class="expand-hint" style="display:block;">ROZWIŃ</div>`;
 
@@ -693,13 +711,13 @@ function spawnEntities(entities) {
         el.onclick = (e) => {
             e.stopPropagation();
             if (isDown) return;
-            const plant = plantsData.find(p => p.nazwa_pl === entity.nazwa || p.id === entity.id);
+            const plant = plantsData.find(p => safeStr(p.nazwa_pl) === entity.nazwa || p.id === entity.id);
             if (dockedSat && activeSatellites.find(s => s.element === el) === dockedSat) {
                 if (plant) window.location.href = getPlantUrl(plant.id);
                 return;
             }
             dockedSat = activeSatellites.find(s => s.element === el);
-            if (plant) { let recipes = recipesData.filter(r => r.roslina && r.roslina.toLowerCase() === plant.nazwa_pl.toLowerCase()); populateCarousel(recipes, "recipe", plant.id); }
+            if (plant) { let recipes = recipesData.filter(r => safeStr(r.roslina).toLowerCase() === safeStr(plant.nazwa_pl).toLowerCase()); populateCarousel(recipes, "recipe", plant.id); }
             else { carousel.classList.remove('active'); }
         };
         networkContainer.appendChild(el);
@@ -816,7 +834,7 @@ function renderBestiary() {
     const grid = document.getElementById('bestiaryGrid');
     if (!grid) return;
     grid.innerHTML = plantsData.map(plant => `
-        <div class="witcher-card"><div class="witcher-card-img" style="background-image: url('${getBestImageUrl(plant)}')"></div><div class="witcher-card-content"><h3 class="witcher-card-title">${plant.nazwa_pl}</h3><p class="witcher-card-desc">${plant.rodzina || ''}</p><a href="${getPlantUrl(plant.id)}" class="witcher-btn">Zbadaj</a></div></div>
+        <div class="witcher-card"><div class="witcher-card-img" style="background-image: url('${getBestImageUrl(plant)}')"></div><div class="witcher-card-content"><h3 class="witcher-card-title">${safeStr(plant.nazwa_pl)}</h3><p class="witcher-card-desc">${plant.rodzina || ''}</p><a href="${getPlantUrl(plant.id)}" class="witcher-btn">Zbadaj</a></div></div>
     `).join('');
 }
 renderBestiary();

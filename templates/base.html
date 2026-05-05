@@ -163,13 +163,13 @@
 
     <div class="astro-ribbon scrollable-banner" id="banner-astro">
         <div class="scrollable-content">
-            <div class="astro-item"><i class="ra ra-compass"></i><div><span class="astro-label">Lokacja:</span><span class="astro-value">{{ astro.location if astro else 'Czyżowice' }}</span></div></div>
+            <div class="astro-item"><i class="ra ra-compass"></i><div><span class="astro-label">Lokacja:</span><span class="astro-value">{{ astro.location if astro else 'Ziemia' }}</span></div></div>
             <div class="astro-item"><i class="ra ra-sun"></i><div><span class="astro-label">Pogoda:</span><span class="astro-value">{{ astro.temp if astro else '15°C' }}</span><span class="astro-label" style="margin-left:4px;">Wilg:</span><span class="astro-value">{{ astro.humidity if astro else '60%' }}</span></div></div>
-            <div class="astro-item"><i class="ra ra-moon-sun"></i><div><span class="astro-label">Księżyc:</span><span class="astro-value">{{ astro.phase_name if astro else 'Przybywający' }}</span></div></div>
-            <div class="astro-item"><i class="ra ra-fire"></i><div><span class="astro-label">Żywioł:</span><span class="astro-value">{{ astro.element if astro else 'Ogień' }}</span></div></div>
-            <div class="astro-item"><i class="ra ra-crystal-ball"></i><div><span class="astro-label">Wibracja:</span><span class="astro-value">{{ astro.numerology if astro else '5' }}</span></div></div>
-            <div class="astro-item"><i class="ra ra-dragon"></i><div><span class="astro-label">Patron Roku:</span><span class="astro-value">{{ astro.japanese if astro else 'Koń' }}</span></div></div>
-            <div class="astro-item" style="margin-right:0;"><i class="ra ra-trefoil"></i><div><span class="astro-label">Koło Roku:</span><span class="astro-value">{{ astro.festival if astro else 'Jare Gody (Ostara)' }}</span></div></div>
+            <div class="astro-item"><i class="ra ra-moon-sun"></i><div><span class="astro-label">Księżyc:</span><span class="astro-value">{{ astro.phase_name if astro else 'Patrzący' }}</span></div></div>
+            <div class="astro-item"><i class="ra ra-fire"></i><div><span class="astro-label">Żywioł:</span><span class="astro-value">{{ astro.element if astro else 'Haj' }}</span></div></div>
+            <div class="astro-item"><i class="ra ra-crystal-ball"></i><div><span class="astro-label">Wibracja:</span><span class="astro-value">{{ astro.numerology if astro else '0' }}</span></div></div>
+            <div class="astro-item"><i class="ra ra-dragon"></i><div><span class="astro-label">Patron Roku:</span><span class="astro-value">{{ astro.japanese if astro else 'Langusta' }}</span></div></div>
+            <div class="astro-item" style="margin-right:0;"><i class="ra ra-trefoil"></i><div><span class="astro-label">Koło Roku:</span><span class="astro-value">{{ astro.festival if astro else 'Fest' }}</span></div></div>
         </div>
     </div>
 
@@ -212,6 +212,20 @@
         <a href="https://buycoffee.to/miguana" target="_blank" class="btn mt-3 fw-bold" style="background-color: #3a2b21; border: 1px solid #5a4b3a; color: #d1b880; padding: 8px 16px; font-size: 0.9rem;">
             <i class="ra ra-beer"></i> Postaw Kufel Kawy
         </a>
+    </div>
+</div>
+
+// --- INTELIGENTNY astro-item ---
+<div class="astro-item" style="margin-right:0;">
+    <i class="ra ra-trefoil"></i>
+    <div>
+        <span class="astro-label">Koło Roku:</span>
+        <span class="astro-value"
+              data-bs-toggle="tooltip"
+              data-bs-html="true"
+              title="<b>Stary Czas:</b> {{ astro.festival_desc }}<br><b>Symbol:</b> {{ astro.festival_symbol }}<br><b>Tradycja:</b> {{ astro.festival_action }}">
+            {{ astro.festival }}
+        </span>
     </div>
 </div>
 
@@ -431,10 +445,6 @@ document.addEventListener("DOMContentLoaded", () => {
 <!--        }-->
 <!--    });-->
 <!--</script>-->
-
-// --- IMPORTY magic_lens.js ---
-<script src="{{ url_for('static', filename='js/magic_lens.js') }}"></script>
-
 <script>
     // --- SKRYPT AKTUALIZACJI LOKALIZACJI GPS (WERSJA DIAGNOSTYCZNA) ---
     document.addEventListener("DOMContentLoaded", () => {
@@ -444,17 +454,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         // UWAGA: Usuwamy stare ciasteczko, by wymusić ponowne zapytanie (Przydatne do testów!)
-        // Kiedy skończysz testować, możesz usunąć poniższą linijkę.
-        document.cookie = "gps_asked=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
 
         if (!getCookie('gps_asked')) {
             if ("geolocation" in navigator) {
 
-                // Sprawdzamy czy strona jest na HTTPS
-                if (window.location.protocol !== 'https:' && window.location.hostname !== 'localhost') {
-                    alert("⚠️ Błąd: Geolokalizacja na telefonie działa TYLKO przy połączeniu HTTPS (kłódka w adresie przeglądarki). Zmień URL na https://...");
-                    return;
-                }
+
 
                 // Zapisujemy ciasteczko pytania
                 document.cookie = "gps_asked=true; path=/; max-age=" + 60*60*24*30;
@@ -488,5 +493,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 </script>
+// --- IMPORTY magic_lens.js ---
+<script src="{{ url_for('static', filename='js/magic_lens.js') }}"></script>
+
+
 </body>
 </html>

@@ -9,7 +9,8 @@ from flask_login import LoginManager, UserMixin, login_user, logout_user, login_
 from werkzeug.security import generate_password_hash, check_password_hash
 
 from astro_engine import get_astrological_data
-from data_builder import build_calendar_from_jsons, get_random_knowledge_pool
+from data_builder import build_calendar_from_jsons, get_random_knowledge_pool, FESTIVAL_KNOWLEDGE
+# FESTIVAL_KNOWLEDGE = FESTIVAL_KNOWLEDGE
 
 
 def resource_path(relative_path):
@@ -140,23 +141,25 @@ def get_all_recipes():
     return all_recipes
 
 
+import random
+
+
 @app.route('/')
 def index():
+    # 1. Pobieranie podstawowych danych z plików JSON
     plants = get_all_plants_list()
     dynamic_calendar = build_calendar_from_jsons()
     recipes = get_all_recipes()
-    knowledge = get_random_knowledge_pool()
 
-    # Domyślne współrzędne Czyżowic
+    # 2. Domyslna lokalizacja (Czyżowice) na wypadek awarii API
     lat, lon = '49.95', '18.38'
     city_name = "Czyżowice (Domyślnie)"
 
+    # 3. Próba automatycznej lokalizacji przez GeoIP
     try:
         import requests
-        # Pobieramy dane o lokalizacji na podstawie adresu IP odwiedzającego
-        # Używamy headers, aby serwer wiedział, że to Kwiatownik
+        # Korzystamy z darmowego API ip-api
         ip_resp = requests.get('http://ip-api.com/json/', timeout=2).json()
-
         if ip_resp and ip_resp.get('status') == 'success':
             lat = str(ip_resp.get('lat'))
             lon = str(ip_resp.get('lon'))
@@ -164,16 +167,37 @@ def index():
     except Exception as e:
         print(f"Błąd GeoIP: {e}")
 
-    # Pobieramy dane astrologiczne dla wykrytej lokalizacji
+    # 4. Pobranie danych astrologicznych i pogodowych dla ustalonej lokalizacji
     astro = get_astrological_data(lat=lat, lon=lon)
-    astro['location'] = city_name
+    astro['location'] = city_name  # Nadpisujemy nazwę miasta tą z IP lub Nominatim
 
+    # 5. INTELIGENTNY WYBÓR CIEKAWOSTEK (Knowledge Pool)
+    # Pobieramy nazwę aktualnego święta (np. "Beltane / Zielone Świątki")
+    current_fest = astro.get('festival', 'Zwyczajny Czas')
+
+    # Wybieramy pulę wiedzy: dedykowaną dla święta + ogólną
+    # Zakładamy, że FESTIVAL_KNOWLEDGE jest zdefiniowane w globalnym zakresie lub zaimportowane
+    fest_pool = FESTIVAL_KNOWLEDGE.get(current_fest, [])
+    general_pool = FESTIVAL_KNOWLEDGE.get("GENERAL", [])
+
+    # Łączymy listy (jeśli święto ma swoje ciekawostki, będą na liście)
+    full_knowledge_pool = fest_pool + general_pool
+
+    # Mieszamy i wybieramy 10 losowych wpisów dla paska Marquee
+    if full_knowledge_pool:
+        knowledge = random.sample(full_knowledge_pool, min(len(full_knowledge_pool), 10))
+    else:
+        # Fallback, jeśli baza jest pusta
+        knowledge = [{"roslina": "Kwiatownik", "tresc": "Wiedza o roślinach jest kluczem do zdrowia."}]
+
+    # 6. Przygotowanie pełnych danych roślin do wyszukiwarki (Bestiariusz)
     full_data_list = []
     for plant_id in plants:
         plant_data = get_plant_data(plant_id)
         if plant_data:
             full_data_list.append(plant_data)
 
+    # 7. Renderowanie strony głównej z kompletem danych
     return render_template(
         'index.html',
         plants=plants,

@@ -41,27 +41,79 @@ def get_weather(lat='49.95', lon='18.38'):
         return {"temp": "?°C", "humidity": "?%"}
 
 
-def get_pagan_festival(date):
-    """Zwraca dawne święta słowiańskie / celtyckie (Koło Roku)"""
+def get_pagan_festival_info(date):
     m, d = date.month, date.day
-    if (m == 12 and d >= 21) or (m == 1 and d <= 31):
-        return "Szczodre Gody (Yule)"
-    elif m == 2 or (m == 3 and d < 20):
-        return "Gromnica (Imbolc)"
-    elif m == 3 and d >= 20 or m == 4:
-        return "Jare Gody (Ostara)"
-    elif m == 5 or (m == 6 and d < 20):
-        return "Beltane / Zielone Świątki"
-    elif m == 6 and d >= 20 or m == 7:
-        return "Noc Kupały (Litha)"
-    elif m == 8 or (m == 9 and d < 22):
-        return "Święto Plonów (Lughnasadh)"
-    elif m == 9 and d >= 22 or m == 10 and d < 31:
-        return "Dożynki (Mabon)"
-    elif m == 10 and d >= 31 or m == 11:
-        return "Dziady (Samhain)"
-    return "Zwyczajny Czas"
 
+    festivals = {
+        "Yule": {
+            "name": "Szczodre Gody (Yule)",
+            "desc": "Zimowe Przesilenie. Zwycięstwo światła nad ciemnością i odrodzenie Słońca.",
+            "symbol": "Snop zboża, jemioła",
+            "action": "Czas świętowania w domu, wróżb i dzielenia się chlebem."
+        },
+        "Imbolc": {
+            "name": "Gromnica (Imbolc)",
+            "desc": "Pierwsze tchnienie wiosny. Czas oczyszczenia i budzenia się sił życiowych w ziemi.",
+            "symbol": "Świeca (Gromnica), białe kwiaty",
+            "action": "Oczyszczanie narzędzi ogrodniczych, błogosławienie ognia."
+        },
+        "Ostara": {
+            "name": "Jare Gody (Ostara)",
+            "desc": "Równonoc Wiosenna. Pełna równowaga dnia i nocy. Czas siania i płodności.",
+            "symbol": "Pisanki, zające, bazie",
+            "action": "Wysiewanie pierwszych ziół, topienie Marzanny (pożegnanie zimy)."
+        },
+        "Beltane": {
+            "name": "Beltane / Zielone Świątki",
+            "desc": "Święto ognia i miłości. Ziemia jest w pełnym rozkwicie i łączy się ze słońcem.",
+            "symbol": "Majowe drzewko, ogniska",
+            "action": "Zbieranie porannej rosy dla urody, dekorowanie domów gałązkami."
+        },
+        "Litha": {
+            "name": "Noc Kupały (Litha)",
+            "desc": "Letnie Przesilenie. Najdłuższy dzień roku. Czas ognia, wody i magicznych ziół.",
+            "symbol": "Wianki, paproć, ogień",
+            "action": "Zbiór ziół o największej mocy (np. dziurawiec), puszczanie wianków."
+        },
+        "Lughnasadh": {
+            "name": "Święto Plonów (Lughnasadh)",
+            "desc": "Pierwsze żniwa. Czas wdzięczności za dary ziemi i początek jesiennych zbiorów.",
+            "symbol": "Chleb, kłosy zbóż",
+            "action": "Pieczenie chleba z nowego ziarna, zbiór wczesnych owoców i jagód."
+        },
+        "Mabon": {
+            "name": "Dożynki (Mabon)",
+            "desc": "Równonoc Jesienna. Czas bilansu, dziękczynienia i przygotowania do zimy.",
+            "symbol": "Jabłka, jarzębina, róg obfitości",
+            "action": "Zbiór korzeni, robienie zapasów i win, dziękowanie za plony."
+        },
+        "Samhain": {
+            "name": "Dziady (Samhain)",
+            "desc": "Nowy Rok czarownic i zielarzy. Granica między światami jest najcieńsza.",
+            "symbol": "Dynie, ogniska, korzenie",
+            "action": "Wspominanie przodków, palenie świec w oknach, zbiór ostatnich korzeni."
+        }
+    }
+
+    if (m == 12 and d >= 21) or (m == 1):
+        return festivals["Yule"]
+    elif m == 2 or (m == 3 and d < 20):
+        return festivals["Imbolc"]
+    elif m == 3 and d >= 20 or m == 4:
+        return festivals["Ostara"]
+    elif m == 5 or (m == 6 and d < 20):
+        return festivals["Beltane"]
+    elif m == 6 and d >= 20 or m == 7:
+        return festivals["Litha"]
+    elif m == 8 or (m == 9 and d < 22):
+        return festivals["Lughnasadh"]
+    elif m == 9 and d >= 22 or m == 10 and d < 31:
+        return festivals["Mabon"]
+    elif m == 10 and d >= 31 or m == 11:
+        return festivals["Samhain"]
+
+    return {"name": "Zwyczajny Czas", "desc": "Czas wzrostu i obserwacji natury.", "symbol": "Liść",
+            "action": "Pielęgnacja ogrodu."}
 
 def get_astrological_data(lat='49.95', lon='18.38'):
     now = datetime.datetime.utcnow()
@@ -81,15 +133,21 @@ def get_astrological_data(lat='49.95', lon='18.38'):
 
     weather = get_weather(lat, lon)
     phase_name = get_moon_phase_name(observer.date)
-    pagan_fest = get_pagan_festival(now)
+    # pagan_fest = get_pagan_festival(now)
+
+    pagan_info = get_pagan_festival_info(now)
 
     return {
-        "location": "Lokalizacja", # Zostanie nadpisane w app.py
+        "location": "Lokalizacja",
         "temp": weather["temp"],
         "humidity": weather["humidity"],
         "phase_name": phase_name,
         "numerology": vibration,
         "japanese": japanese_year,
         "element": current_element,
-        "festival": pagan_fest
+        # Zmieniamy to:
+        "festival": pagan_info["name"],
+        "festival_desc": pagan_info["desc"],
+        "festival_symbol": pagan_info["symbol"],
+        "festival_action": pagan_info["action"]
     }

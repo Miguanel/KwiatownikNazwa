@@ -1,0 +1,34 @@
+# Przykład bazy danych ciekawostek (Knowledge Pool)
+FESTIVAL_KNOWLEDGE = {
+    "Szczodre Gody (Yule)": [
+        {"roslina": "Jemioła", "tresc": "Wieszana pod sufitem miała chronić dom przed złymi mocami i piorunami."},
+        {"roslina": "Świerk", "tresc": "W tradycji ludowej igliwie świerkowe palone w piecu miało oczyszczać atmosferę domostwa."},
+        {"roslina": "Pszenica", "tresc": "Ziarno pszenicy pod obrusem symbolizowało nadzieję na obfite plony w nowym roku."}
+    ],
+    "Gromnica (Imbolc)": [
+        {"roslina": "Len", "tresc": "W Imbolc tradycyjnie błogosławiono ziarna lnu, by zapewnić sobie dobre zbiory ubrań."},
+        {"roslina": "Przebiśnieg", "tresc": "Pierwszy kwiat wiosny, symbol nadziei i czystości, poświęcony bogini Brygidzie."},
+        {"roslina": "Wierzba", "tresc": "Bazie wierzbowe (kotki) uznawano za znak, że soki w ziemi zaczęły krążyć na nowo."}
+    ],
+    "Jare Gody (Ostara)": [
+        {"roslina": "Brzoza", "tresc": "Wierzono, że uderzenie gałązką brzozy w Jare Gody przekazuje żywotność i zdrowie."},
+        {"roslina": "Mniszek Lekarski", "tresc": "Młode listki mniszka zbierane teraz mają najwięcej sił witalnych i oczyszczają krew po zimie."},
+        {"roslina": "Rzeżucha", "tresc": "Szybki wzrost rzeżuchy na oknie symbolizuje potęgę odradzającej się natury."}
+    ],
+    "Beltane / Zielone Świątki": [
+        {"roslina": "Głóg", "tresc": "Uważany za drzewo wróżek; w Beltane nie wolno go ścinać, by nie ściągnąć na siebie pecha."},
+        {"roslina": "Jarzębina", "tresc": "Gałązki jarzębiny zatknięte nad drzwiami w nocy majowej chroniły inwentarz przed urokami."},
+        {"roslina": "Pokrzywa", "tresc": "W maju pokrzywa ma największą moc odżywczą – to idealny czas na majową zupę witaminową."}
+    ],
+    "Noc Kupały (Litha)": [
+        {"roslina": "Dziurawiec", "tresc": "Ziele świętojańskie zebrane w południe Litha posiada najsilniejsze właściwości ochronne i lecznicze."},
+        {"roslina": "Paproć", "tresc": "Legenda o kwiatku paproci to metafora poszukiwania mądrości i ukrytych skarbów ziemi."},
+        {"roslina": "Bylica", "tresc": "Bylica przepasująca biodra podczas skoków przez ogniska miała zabierać wszelkie choroby."}
+    ],
+
+    "GENERAL": [
+        {"roslina": "Dąb", "tresc": "Dąb szypułkowy ściąga najwięcej piorunów ze wszystkich drzew w lesie."},
+        {"roslina": "Sosna", "tresc": "Syrop z młodych pędów sosny to najstarszy słowiański sposób na kaszel."},
+        {"roslina": "Bez Czarny", "tresc": "Wierzono, że w korzeniach bzu mieszkają opiekuńcze duchy ogrodu."}
+    ]
+}
