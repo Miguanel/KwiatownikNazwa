@@ -26,7 +26,7 @@ def resource_path(relative_path):
 app = Flask(__name__,
             template_folder=resource_path('templates'),
             static_folder=resource_path('static'))
-app.config['SECRET_KEY'] = 'twoj_super_tajny_klucz_123'
+app.config['SECRET_KEY'] = 'beka_has_lo'
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///kwiatownik.db'
 app.config['JSON_DATA_FOLDER'] = 'data/plants'
 
@@ -153,7 +153,7 @@ def index():
 
     # 2. Domyslna lokalizacja (Czyżowice) na wypadek awarii API
     lat, lon = '49.95', '18.38'
-    city_name = "Czyżowice (Domyślnie)"
+    city_name = "Z (Domyślnie)"
 
     # 3. Próba automatycznej lokalizacji przez GeoIP
     try:
