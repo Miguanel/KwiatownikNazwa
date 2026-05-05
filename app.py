@@ -147,26 +147,26 @@ def index():
     recipes = get_all_recipes()
     knowledge = get_random_knowledge_pool()
 
-    # --- POBIERANIE WSPÓŁRZĘDNYCH Z CIASTECZKA (LOKALIZACJI) ---
-    lat = request.cookies.get('user_lat', '49.95')
-    lon = request.cookies.get('user_lon', '18.38')
+    # Domyślne współrzędne Czyżowic
+    lat, lon = '49.95', '18.38'
+    city_name = "Czyżowice (Domyślnie)"
 
-    city_name = "Ziemia (Domyślnie)"
-    if lat != '49.95' and lon != '18.38':
-        try:
-            import requests
-            headers = {'User-Agent': 'KwiatownikApp/1.0'}
-            url = f"https://nominatim.openstreetmap.org/reverse?format=json&lat={lat}&lon={lon}&zoom=10"
-            resp = requests.get(url, headers=headers, timeout=2).json()
-            if 'address' in resp:
-                city_name = resp['address'].get('city') or resp['address'].get('town') or resp['address'].get(
-                    'village') or resp['address'].get('county') or "Nieznana okolica"
-        except Exception:
-            city_name = "Twoja Lokacja"
+    try:
+        import requests
+        # Pobieramy dane o lokalizacji na podstawie adresu IP odwiedzającego
+        # Używamy headers, aby serwer wiedział, że to Kwiatownik
+        ip_resp = requests.get('http://ip-api.com/json/', timeout=2).json()
 
-    # Przekazujemy zmienne do silnika astrologicznego
+        if ip_resp and ip_resp.get('status') == 'success':
+            lat = str(ip_resp.get('lat'))
+            lon = str(ip_resp.get('lon'))
+            city_name = ip_resp.get('city', 'Nieznana okolica')
+    except Exception as e:
+        print(f"Błąd GeoIP: {e}")
+
+    # Pobieramy dane astrologiczne dla wykrytej lokalizacji
     astro = get_astrological_data(lat=lat, lon=lon)
-    astro['location'] = city_name  # Podmieniamy miasto
+    astro['location'] = city_name
 
     full_data_list = []
     for plant_id in plants:
@@ -174,7 +174,6 @@ def index():
         if plant_data:
             full_data_list.append(plant_data)
 
-    # Zwracamy prawidłowo wygenerowany szablon HTML
     return render_template(
         'index.html',
         plants=plants,
