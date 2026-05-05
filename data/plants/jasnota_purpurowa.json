@@ -1,429 +1,224 @@
 {
-  "gatunek": "Jasnota purpurowa",
-  "nazwa_lacinska": "Lamium purpureum",
-  "podgatunek": null,
-  "nazwa_zbioru": [
-    "Zioła",
-    "Chwasty jadalne",
-    "Jasnotowate",
-    "Lamium",
-    "Jasnota purpurowa"
+  "id": "jasnota_purpurowa",
+  "nazwa_pl": "Jasnota purpurowa",
+  "nazwa_lat": "Lamium purpureum",
+  "rodzina": "Jasnotowate (Lamiaceae)",
+  "opis": "Roślina jednoroczna lub dwuletnia, nierzadko kwitnąca nawet w łagodne zimy. Nazywana bywa potocznie 'głuchą pokrzywą', ponieważ jej liście łudząco przypominają pokrzywę, ale nie posiadają parzących włosków. Jest jednym z pierwszych ziół kwitnących wiosną. Posiada potężny potencjał w projektowaniu permakulturowym jako roślina okrywowa i dynamiczny akumulator żelaza, a w medycynie tradycyjnej ceniona jest za pomoc przy dolegliwościach kobiecych i krwawieniach.",
+  "url": {
+    "Pokrój": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Lamium_purpureum_0.3_R.jpg/1200px-Lamium_purpureum_0.3_R.jpg",
+    "Rycina": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Lamium_purpureum_Sturm60.jpg/800px-Lamium_purpureum_Sturm60.jpg",
+    "Kwiatostan": "https://www.atlas-roslin.pl/foto/ew/ew_040409_8257_Lamium_purpureum.jpg"
+  },
+  "tagi": [
+    "zielna",
+    "kobieca",
+    "pospolita",
+    "barwnik",
+    "rany"
   ],
-  "zdjecia": [
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Lamium_purpureum_0.3_R.jpg/1200px-Lamium_purpureum_0.3_R.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Lamium_purpureum_Sturm60.jpg/800px-Lamium_purpureum_Sturm60.jpg",
-    "https://www.atlas-roslin.pl/foto/ew/ew_040409_8257_Lamium_purpureum.jpg"
-  ],
-  "ciekawostki_kulturowe": [
-    "Jasnota nazywana jest potocznie 'głuchą pokrzywą' lub 'martwą pokrzywą' (ang. Dead-nettle), ponieważ jej liście łudząco przypominają pokrzywę, ale nie posiadają parzących włosków.",
-    "W tradycji ludowej uważano, że jasnota posadzona blisko domu przynosi domownikom radość i oddala melancholię, dlatego często pozostawiano ją przy płotach.",
-    "W medycynie ludowej Europy Środkowej była kluczowym ziołem 'kobiecym', używanym przy bolesnym miesiączkowaniu i upławach.",
-    "Dawniej wierzono, że kwiaty jasnoty zerwane wczesną wiosną i noszone w woreczku na sercu przyciągają miłość i wierność.",
-    "Pszczelarze cenią jasnotę jako jedno z najważniejszych źródeł wczesnowiosennego nektaru dla wygłodniałych po zimie trzmieli i pierwszych pszczół."
-  ],
-  "permakultura": {
-    "opis": "Jasnota purpurowa to roślina ruderalna o potężnym potencjale w projektowaniu permakulturowym. Działa jako tzw. 'dynamiczny akumulator', wyciągając z głębszych warstw gleby żelazo i minerały. Ponadto stanowi doskonałą wczesnowiosenną roślinę okrywową (ground cover).",
-    "funkcje": [
-      "Wczesne źródło pożytku dla zapylaczy (marzec/kwiecień).",
-      "Dynamiczny akumulator minerałów – świetna do kompostowania i na gnojówki roślinne.",
-      "Ochrona wierzchniej warstwy gleby przed erozją wodną i wietrzną przed wzejściem głównych plonów.",
-      "Jadalny chwast, odżywiający mikrobiom glebowy po obumarciu (green manure)."
+  "profil_energetyczny": {
+    "smak": "Ziemisty, lekko grzybowy",
+    "termika": "Neutralna do lekko chłodzącej",
+    "wilgotnosc": "Osuszająca (ściągająca)",
+    "zywiol": "Woda i Ziemia",
+    "opis": "Zioło regulujące Ketsu (Krew) w miednicy, usuwające Wilgoć i Zimno z dolnego ogrzewacza. Zatrzymuje mikrokrwawienia, łagodzi zastoje i wspiera rewitalizację energii Ki po okresie zimowym."
+  },
+  "wymagania": {
+    "stanowisko": "Od pełnego słońca do półcienia. W słońcu szybciej i mocniej przebarwia wierzchołki na purpurowo.",
+    "gleba": "Rosnie właściwie wszędzie. Najbardziej lubi gleby próchniczne, pulchne, azotowe, ale przetrwa nawet na gruzowiskach i suchej ziemi.",
+    "ph_gleby": "6.0 - 7.5 (Odczyn obojętny do lekko zasadowego).",
+    "mrozoodpornosc": "Strefa 5 (Bardzo wysoka mrozoodporność, potrafi wegetować pod śniegiem).",
+    "woda": "Niskie zapotrzebowanie; odporna na wczesnowiosenne przymrozki i okresowe susze."
+  },
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Kanciasta (czworoboczna) łodyga, typowa dla jasnotowatych.",
+      "Sercowato-trójkątne liście z karbowanym brzegiem, które nie parzą przy dotyku.",
+      "Górne liście (na szczycie pędu) zebrane w rozetę i wyraźnie przebarwione na czerwono-purpurowo.",
+      "Różowe lub jasnopurpurowe grzbieciste kwiaty w kątach górnych liści.",
+      "Ziele po roztarciu wydziela charakterystyczny, ziemisto-grzybowy zapach."
     ],
-    "gildie": [
-      "Świetnie współżyje z wczesnymi warzywami korzeniowymi, cebulą, czosnkiem niedźwiedzim oraz szczypiorkiem.",
-      "Dobry towarzysz dla młodych krzewów owocowych (agrest, porzeczka) – chroni ich strefę korzeniową wczesną wiosną."
+    "mozliwe_pomylki": [
+      {
+        "nazwa": "Pokrzywa zwyczajna (Urtica dioica)",
+        "roznica": "Pokrzywa posiada parzące włoski, ma jednolicie zielone wierzchołki bez purpurowego przebarwienia i drobne, niepozorne kwiatostany."
+      },
+      {
+        "nazwa": "Bluszczyk kurdybanek (Glechoma hederacea)",
+        "roznica": "Kurdybanek ma płożący pokrój, okrągławe (nerkowate) liście i niebiesko-fioletowe kwiaty. Pachnie bardziej ziołowo-korzennie."
+      }
     ]
   },
-  "Przepisy": {
-    "przepisy_medyczne": {
-      "odwar_na_sprawy_kobiece": [
-        {
-          "tytul": "Odwar na sprawy kobiece",
-          "roslina": "Jasnota purpurowa",
-          "pochodzenie": ["Tradycyjna Medycyna Ludowa", "Fitoterapia Klasztorna"],
-          "mechanizm_tworzenia": ["Ekstrakcja wodna (odwar)"],
-          "skladniki": [
-            {
-              "ilosc": "2 łyżki",
-              "nazwa": "Ziele jasnoty purpurowej (suszone lub świeże)",
-              "filar": "1_bazowy",
-              "tropizm_organowy": "Macica / Krew (Działanie rozkurczowe i przeciwkrwotoczne)"
-            },
-            {
-              "ilosc": "1 łyżeczka",
-              "nazwa": "Ziele krwawnika (Achillea millefolium)",
-              "filar": "2_wzmocnienie",
-              "tropizm_organowy": "Krew (Potęguje tamowanie krwawień)"
-            },
-            {
-              "ilosc": "300 ml",
-              "nazwa": "Woda destylowana",
-              "filar": "4_poslaniec",
-              "tropizm_organowy": "Płyny ustrojowe (Nośnik)"
-            }
-          ],
-          "sposob_przygotowania": [
-            "Faza 1 (Maceracja): Zioła wsypać do garnuszka i zalać letnią wodą. Odstawić na 10 minut.",
-            "Faza 2 (Ekstrakcja): Doprowadzić do wrzenia na bardzo małym ogniu. Gotować przez 5 minut.",
-            "Faza 3 (Leżakowanie): Zdjąć z ognia, przykryć i parzyć przez 15 minut. Odcedzić przez gęste sito."
-          ],
-          "klasyfikacja_dzialania": {
-            "skalowanie_toksykologiczne": "Zioło łagodne (I stopień). Przeznaczone do dłuższego stosowania bez obaw o toksyczność.",
-            "matryca_wu_xing": {
-              "zywiol_leczony": "Woda / Ziemia",
-              "narzad_matczyny_do_wsparcia": "Nerki / Śledziona",
-              "porada_matrycy": "Usuwa Wilgoć i Zimno z dolnego ogrzewacza, zatrzymuje nadmierne upławy."
-            },
-            "triada_kampo": {
-              "cel_glowny": "Ketsu (Krew)",
-              "wyjasnienie": "Reguluje Ketsu w miednicy, niweluje zastoje powodujące ból miesiączkowy."
-            }
-          },
-          "stosowanie_i_dawkowanie": {
-            "okolicznosci_stosowania": "Bolesne miesiączkowanie, nadmierne krwawienia, stany zapalne dróg rodnych, upławy.",
-            "dawkowanie_standardowe": "Pić po 1/2 szklanki 2-3 razy dziennie między posiłkami.",
-            "skalowanie_pacjenta": "Można stosować u młodych dziewcząt od 12 roku życia w dawce o połowę mniejszej."
-          },
-          "wlasciwosci_fizyczne": {
-            "konsystencja_i_slady": "Płyn zielonkawo-brunatny o zapachu lekko grzybowym i ziemistym.",
-            "barwienie_skory": "Nie barwi.",
-            "barwienie_ubran": "Łatwo zmywalne żółto-zielone ślady."
-          },
-          "bezpieczenstwo_i_interakcje": {
-            "ostrzezenia": "Brak istotnych skutków ubocznych. W bardzo rzadkich przypadkach może wystąpić lekka niestrawność.",
-            "interakcje_z_lekami": "Brak znanych interakcji z lekami farmakologicznymi."
-          },
-          "wymogi_szamanskie_i_czasowe": {
-            "chronoterapia": "Najlepsze efekty daje picie na 3-4 dni przed spodziewaną miesiączką.",
-            "astrologia_zbioru": "Księżyc ubywający (zwiększa właściwości ściągające i tamujące).",
-            "dieta_i_zakazy": "Podczas kuracji zaleca się unikanie wychłodzenia organizmu (unikać zimnych napojów)."
-          },
-          "cechy": ["Ściągające", "Rozkurczowe", "Grzybowy aromat"],
-          "wlasciwosci": ["Łagodzi skurcze macicy", "Hamuje mikrokrwawienia", "Działa przeciwzapalnie"],
-          "zastosowanie": "Wewnętrznie na dolegliwości menstruacyjne i urologiczne.",
-          "zrodla": ["Fitoterapia i Leki Roślinne (Różański)", "Zielnik Polski (XIX w.)"]
-        }
+  "czesci_rosliny": {
+    "ziele": {
+      "nazwa_surowca": "Herba Lamii purpurei",
+      "opis_botaniczny": "Młode wierzchołki pędów zbierane wczesną wiosną wraz z listkami i kwiatami.",
+      "skladniki_aktywne": [
+        "Irydoidy (laminozyd, kariozyd)",
+        "Flawonoidy (rutyna, kwercetyna)",
+        "Kwasy fenolowe",
+        "Olejek eteryczny",
+        "Żelazo, wapń i witamina C"
       ],
-      "kompres_na_zranienia": [
-        {
-          "tytul": "Zielony okład styptyczny (na rany)",
-          "roslina": "Jasnota purpurowa",
-          "pochodzenie": ["Medycyna Polowa", "Lecznictwo Wędrowne"],
-          "mechanizm_tworzenia": ["Mechaniczne zmiażdżenie", "Maceracja enzymatyczna"],
-          "skladniki": [
-            {
-              "ilosc": "1 garść",
-              "nazwa": "Świeże wierzchołki jasnoty purpurowej",
-              "filar": "1_bazowy",
-              "tropizm_organowy": "Skóra / Tkanka mięśniowa (Błyskawicznie tamuje krwawienie)"
-            },
-            {
-              "ilosc": "1 liść",
-              "nazwa": "Babka lancetowata (opcjonalnie)",
-              "filar": "2_wzmocnienie",
-              "tropizm_organowy": "Skóra (Antybakteryjne, przeciwzapalne)"
-            }
-          ],
-          "sposob_przygotowania": [
-            "Faza 1 (Przygotowanie): Zioła oczyścić i ugnieść w moździerzu lub mocno rozetrzeć w dłoniach aż puszczą zielony, ciemny sok.",
-            "Faza 2 (Aplikacja): Nałożyć miazgę bezpośrednio na krwawiące skaleczenie, otarcie lub ukąszenie.",
-            "Faza 3 (Zabezpieczenie): Owinąć bandażem lub liściem łopianu. Trzymać przez 15-30 minut."
-          ],
-          "klasyfikacja_dzialania": {
-            "skalowanie_toksykologiczne": "Brak toksyczności przy stosowaniu zewnętrznym.",
-            "matryca_wu_xing": {
-              "zywiol_leczony": "Ogień",
-              "narzad_matczyny_do_wsparcia": "Skóra",
-              "porada_matrycy": "Wyciąga 'Ogień' (stan zapalny i gorąco) z rany."
-            },
-            "triada_kampo": {
-              "cel_glowny": "Tokuso (Toksyny)",
-              "wyjasnienie": "Wysysa jady po ukąszeniach owadów i przyspiesza zasklepianie naczyń."
-            }
-          },
-          "stosowanie_i_dawkowanie": {
-            "okolicznosci_stosowania": "Skaleczenia, otarcia, ukąszenia owadów, stany zapalne skóry.",
-            "dawkowanie_standardowe": "Jednorazowo do momentu ustąpienia krwawienia/bólu.",
-            "skalowanie_pacjenta": "Bezpieczne dla dorosłych i dzieci."
-          },
-          "wlasciwosci_fizyczne": {
-            "konsystencja_i_slady": "Mokra, papkowata miazga ziołowa.",
-            "barwienie_skory": "Zostawia lekko zielonkawy osad z chlorofilu.",
-            "barwienie_ubran": "Uwaga: Silnie plami na zielono!"
-          },
-          "bezpieczenstwo_i_interakcje": {
-            "ostrzezenia": "Nie stosować na bardzo głębokie rany cięte, gdzie wymagane jest szycie chirurgiczne.",
-            "interakcje_z_lekami": "Brak."
-          },
-          "cechy": ["Chłodzący", "Szybko tamujący"],
-          "wlasciwosci": ["Tamuje krew", "Zapobiega infekcjom", "Przeciwświądowe"],
-          "zastosowanie": "Pierwsza pomoc w terenie.",
-          "zrodla": ["Tradycyjne Medycyny Słowiańskie", "Bushcraft survival guides"]
-        }
-      ]
-    },
-    "przepisy_kulinarne": {
-      "pesto_z_jasnoty": [
-        {
-          "tytul": "Wczesnowiosenne Pesto z Jasnoty Purpurowej",
-          "roslina": "Jasnota purpurowa",
-          "pochodzenie": ["Kuchnia Dzikich Roślin", "Nowoczesna Alchemia Kulinarna"],
-          "mechanizm_tworzenia": ["Zimna emulsja (Blendowanie)"],
-          "skladniki": [
-            {
-              "ilosc": "2 garście",
-              "nazwa": "Świeże wierzchołki jasnoty (liście i kwiaty)",
-              "filar": "1_bazowy",
-              "tropizm_organowy": "Krew / Śledziona (Odżywienie żelazem i chlorofilem)"
-            },
-            {
-              "ilosc": "1 garść",
-              "nazwa": "Pestki słonecznika lub dyni (uprażone)",
-              "filar": "2_wzmocnienie",
-              "tropizm_organowy": "Nerki (Dostarczenie cynku i energii)"
-            },
-            {
-              "ilosc": "1 ząbek",
-              "nazwa": "Czosnek niedźwiedzi lub zwykły",
-              "filar": "3_minister",
-              "tropizm_organowy": "Żołądek (Rozgrzanie, poprawa trawienia)"
-            },
-            {
-              "ilosc": "60 ml",
-              "nazwa": "Oliwa z oliwek (lub olej rzepakowy tłoczony na zimno)",
-              "filar": "4_poslaniec",
-              "tropizm_organowy": "Płyny ustrojowe (Wchłanianie witamin rozpuszczalnych w tłuszczach)"
-            },
-            {
-              "ilosc": "Szczypta",
-              "nazwa": "Sól kłodawska i pieprz",
-              "filar": "5_korektor",
-              "tropizm_organowy": "Nerki (Zrównoważenie ziemistego smaku jasnoty)"
-            }
-          ],
-          "sposob_przygotowania": [
-            "Faza 1 (Przygotowanie): Zioła umyć i dokładnie osuszyć ręcznikiem. Pestki uprażyć na suchej patelni do zarumienienia.",
-            "Faza 2 (Emulsja): Umieścić zioła, czosnek, pestki w blenderze. Powoli dodawać oliwę blendując na gładką masę.",
-            "Faza 3 (Korekta smaku): Dodać sól, pieprz i opcjonalnie kilka kropel soku z cytryny dla przełamania smaku."
-          ],
-          "klasyfikacja_dzialania": {
-            "skalowanie_toksykologiczne": "Bezpieczne jedzenie funkcjonalne (Nutraceutyk).",
-            "triada_kampo": {
-              "cel_glowny": "Ki (Energia)",
-              "wyjasnienie": "Wzmacnia osłabione Ki po okresie zimowym, rewitalizuje organizm."
-            }
-          },
-          "stosowanie_i_dawkowanie": {
-            "okolicznosci_stosowania": "Wiosenne przesilenie, osłabienie, anemia.",
-            "dawkowanie_standardowe": "Jako dodatek do makaronów, kasz, czy kanapek. Bez limitów."
-          },
-          "wlasciwosci_fizyczne": {
-            "konsystencja_i_slady": "Gęsta, oliwkowa pasta o ciemnozielonym kolorze z purpurowymi kropkami (z kwiatów).",
-            "barwienie_skory": "Tłuste, łatwe do zmycia mydłem."
-          },
-          "cechy": ["Ziemisty smak", "Grzybowy aromat", "Wysoka odżywczość"],
-          "wlasciwosci": ["Przeciwdziała anemii", "Dostarcza żelaza i witaminy C"],
-          "zastosowanie": "Kanapki, makarony, sos do sałatek.",
-          "zrodla": ["Łukasz Łuczaj - Dzikie Rośliny Jadalne Polski"]
-        }
-      ],
-      "zielony_koktajl": [
-        {
-          "tytul": "Zielone Smoothie Żelazne z Jasnoty",
-          "roslina": "Jasnota purpurowa",
-          "pochodzenie": ["Dietetyka Funkcjonalna"],
-          "mechanizm_tworzenia": ["Blendowanie na zimno"],
-          "skladniki": [
-            {
-              "ilosc": "1 garść",
-              "nazwa": "Jasnota purpurowa (świeża)",
-              "filar": "1_bazowy",
-              "tropizm_organowy": "Krew (Żelazo)"
-            },
-            {
-              "ilosc": "1 sztuka",
-              "nazwa": "Dojrzały banan",
-              "filar": "2_wzmocnienie",
-              "tropizm_organowy": "Śledziona (Słodycz, energia)"
-            },
-            {
-              "ilosc": "1 sztuka",
-              "nazwa": "Jabłko (ze skórką)",
-              "filar": "3_minister",
-              "tropizm_organowy": "Żołądek (Pektyny)"
-            },
-            {
-              "ilosc": "1 szklanka",
-              "nazwa": "Woda lub sok jabłkowy",
-              "filar": "4_poslaniec",
-              "tropizm_organowy": "Płyny"
-            }
-          ],
-          "sposob_przygotowania": [
-            "Faza 1: Owoce pokroić na kawałki. Jasnotę dokładnie umyć.",
-            "Faza 2: Wrzucić wszystkie składniki do blendera kielichowego. Zmiksować na najwyższych obrotach do uzyskania gładkiego koktajlu."
-          ],
-          "stosowanie_i_dawkowanie": {
-            "okolicznosci_stosowania": "Na śniadanie lub po treningu."
-          },
-          "wlasciwosci_fizyczne": {
-            "konsystencja_i_slady": "Gęsty, szmaragdowo-zielony koktajl."
-          },
-          "cechy": ["Orzeźwiający", "Słodki z nutą ziół"],
-          "wlasciwosci": ["Energetyczny", "Reguluje wypróżnienia", "Dodaje sił witalnych"],
-          "zastosowanie": "Wiosenny detox.",
-          "zrodla": ["Warsztaty dzikiego gotowania"]
-        }
-      ]
+      "wlasciwosci": "Silnie przeciwzapalne, przeciwbakteryjne, uszczelniające naczynia krwionośne, rozkurczowe i przeciwkrwotoczne.",
+      "czas_zbioru": "Marzec - Maj.",
+      "ostrzezenia": "Spożycie bardzo dużej ilości surowego ziela może spowodować lekkie rozwolnienie."
     }
   },
-  "Cechy": {
-    "wystepowanie": {
-      "obszar": "Europa, Azja Zachodnia. Rozprzestrzeniona na innych kontynentach jako roślina synantropijna.",
-      "w_polsce": "Pospolicie na całym obszarze kraju – od nizin po niższe partie gór. Preferuje ogrody, pola, nieużytki, przydroża, skraje zarośli.",
-      "zrodlo": [
-        "https://www.atlas-roslin.pl/gatunki/Lamium_purpureum.htm",
-        "https://pl.wikipedia.org/wiki/Jasnota_purpurowa"
-      ]
-    },
-    "opis_botaniczny": {
-      "pokroj": "Roślina jednoroczna lub dwuletnia, rzadziej ozima. Dorasta zazwyczaj do 15–30 cm wysokości. Tworzy gęste, niskie kobierce.",
-      "lodyga": "Czterokanciasta, wzniesiona lub podnosząca się, często rozgałęziająca się u nasady, rzadko owłosiona, purpurowo nabiegła w górnej części.",
-      "liscie": "Ułożone naprzeciwlegle, sercowate do trójkątnych, brzegiem karbowane. Dolne na dłuższych ogonkach, górne często zebrane w gęstą rozetę, wyraźnie przebarwione na czerwono-purpurowo.",
-      "kwiaty": "Grzbieciste, zebrane w okółki w kątach górnych liści. Korona dwuwargowa (tzw. kapturek), różowa do jasnopurpurowej z rurką wewnątrz. Warga dolna z ciemniejszymi plamkami.",
-      "owoce": "Rozłupnia rozpadająca się na 4 trójgraniaste, szarobrązowe rozłupki. Wyposażone w elajosom (ciałko mrówcze), dzięki czemu są roznoszone przez mrówki (myrmekochoria).",
-      "zapach": "Ziele po roztarciu ma charakterystyczny, dość specyficzny, ziemisto-grzybowy zapach, przez niektórych określany jako nieco nieprzyjemny.",
-      "cecha_wyrozniajaca": "Kanciasta łodyga jak u mięty/pokrzywy, liście nie parzą, szczytowe liście wyraźnie ciemnopurpurowe, kwiaty różowe pod listkami.",
-      "zrodlo": [
-        "https://www.ekologia.pl/wiedza/rosliny/jasnota-purpurowa"
-      ]
-    },
-    "wlasciwosci_i_skladniki": [
-      {
-        "nazwa": "Irydoidy",
-        "dzialanie": "Działają silnie przeciwzapalnie, przeciwbakteryjnie oraz stymulują układ odpornościowy.",
-        "sklad": "Laminozyd, kariozyd",
-        "zrodlo": ["https://rozanski.li/762/jasnota-purpurowa-lamium-purpureum-l/"]
-      },
-      {
-        "nazwa": "Flawonoidy",
-        "dzialanie": "Uszczelniają i wzmacniają naczynia krwionośne, zmniejszają krwawienia, wykazują działanie antyoksydacyjne.",
-        "sklad": "Rutyna, kwercetyna",
-        "zrodlo": ["Badania fitochemiczne ziół z rodziny Lamiaceae"]
-      },
-      {
-        "nazwa": "Kwasy fenolowe",
-        "dzialanie": "Przeciwutleniające, ściągające, regulują stany zapalne w układzie pokarmowym.",
-        "sklad": "Kwas chlorogenowy, kwas rozmarynowy (w śladowych ilościach)",
-        "zrodlo": ["https://panacea.pl/articles.php?id=381"]
-      },
-      {
-        "nazwa": "Olejek eteryczny",
-        "dzialanie": "Odpowiada za specyficzny zapach, działa lekko rozkurczowo i przeciwbakteryjnie.",
-        "sklad": "Związki monoterpenowe",
-        "zrodlo": ["https://rozanski.li/762/jasnota-purpurowa-lamium-purpureum-l/"]
-      },
-      {
-        "nazwa": "Witaminy i sole mineralne",
-        "dzialanie": "Odżywia, zapobiega anemii, wzmacnia strukturę kości i zębów.",
-        "sklad": "Żelazo, wapń, prowitamina A, witamina C",
-        "zrodlo": ["https://www.survival-bushcraft.pl/jasnota-purpurowa/"]
-      }
-    ],
-    "cechy_i_historia": {
-      "opis": "Jasnota purpurowa to z pozoru zwykły, natrętny chwast pojawiający się na trawnikach i polach uprawnych. W rzeczywistości to potężne, wczesnowiosenne zioło jadalne i lecznicze, znane już w starożytności. Jej kwitnienie zaczyna się nierzadko jeszcze pod śniegiem, co czyniło ją dla dawnych ludów symbolem przetrwania i budzącego się po zimie życia.",
-      "cechy": [
-        "Jedna z pierwszych roślin kwitnących wiosną (czasem od lutego do października).",
-        "Kluczowa roślina ratunkowa dla owadów zapylających z powodu obfitego wczesnego nektaru.",
-        "Młode szczyty świetnie smakują jako dzikie warzywo (w smaku podobne do szpinaku/grzybów)."
-      ],
-      "zastosowanie_historyczne": [
-        "Od średniowiecza stosowana jako środek hamujący krwotoki zewnętrzne (okłady) i wewnętrzne (np. obfite miesiączki).",
-        "Leczenie tak zwanych 'białych upławów' i schorzeń ginekologicznych u kobiet.",
-        "W kuchni przednówka stanowiła 'chwast głodowy' dodawany do zup, potrawek i jajecznic, aby zapobiegać szkorbutowi."
-      ],
-      "ciekawostki": [
-        "Jej nasiona posiadają elajosom, dzięki czemu współpracuje z mrówkami, które chętnie je roznoszą (myrmekochoria).",
-        "Nie parzy jak pokrzywa, choć należy do rodziny, która z wyglądu liści jest z nią bardzo mylona.",
-        "Purpurowe zabarwienie szczytowych liści (zawartość antocyjanów) chroni roślinę przed wczesnowiosennymi przymrozkami."
-      ],
-      "zrodlo": [
-        "https://lukaszluczaj.pl/jasnota-purpurowa-i-inne-jasnoty/",
-        "Dzieje Roślin (Krzysztof Kluk, XIX w.)"
-      ]
-    },
-    "uwagi_i_ostrzezenia": [
-      {
-        "uwaga": "Podobnie jak w przypadku większości dzikich ziół bogatych w składniki aktywne, jedzenie olbrzymich ilości surowego ziela może spowodować lekkie rozwolnienie (duża ilość błonnika i saponin).",
-        "rozwiazanie": "Jako jarzynę gotować, blanszować lub traktować jako niewielki dodatek objętościowy (ok. garść dziennie) w przypadku surowych sałatek.",
-        "zrodlo": [
-          "BHP Kuchni Survivalowej"
-        ]
-      },
-      {
-        "uwaga": "Należy uważać przy zbiorze, by nie pomylić jej z trującymi roślinami we wczesnym etapie (choć jasnota ma bardzo charakterystyczny zapach i kwadratową łodygę, co bardzo ułatwia identyfikację).",
-        "rozwiazanie": "Rozpoznać 'kwadratowy' przekrój łodygi i grzybowy aromat przed zerwaniem.",
-        "zrodlo": [
-          "Podstawy Botaniki"
-        ]
-      }
-    ],
-    "inne_zastosowania": {
-      "kosmetyki": {
-        "opis": "Napar z jasnoty z dodatkiem octu jabłkowego świetnie sprawdza się jako płukanka regulująca produkcję sebum dla skóry głowy z tendencją do przetłuszczania.",
-        "zastosowanie": "Płukanki do włosów, toniki do przemywania skóry łojotokowej i trądzikowej.",
-        "zrodlo": [
-          "Kosmetyka Ziołowa (Ożarowski)"
-        ]
-      },
-      "barwniki": {
-        "opis": "Wywar z kwiatów i purpurowych wierzchołków może nadawać wełnie i bawełnie bardzo delikatne, ziemisto-zielonkawe lub zgaszono-różowe tony (przy użyciu ałunu jako zaprawy).",
-        "zrodlo": [
-          "Naturalne Barwienie (Praktyki tkackie)"
-        ]
-      }
-    }
+  "zastosowanie": {
+    "medyczne": "Leczenie bolesnego miesiączkowania, obfitych krwawień, upławów ginekologicznych. Zewnętrznie stosowana jako okład tamujący krew na drobne rany, otarcia i ukąszenia owadów. Pomocna w zapobieganiu anemii wiosennej.",
+    "kulinarne": "Młode szczyty świetnie smakują jako dzikie warzywo dodawane do pesto, zielonych smoothie, zup i omletów (szczególnie na tzw. 'przednówku').",
+    "ogrodowe": "Wczesna roślina okrywowa chroniąca glebę przed erozją, doskonały dynamiczny akumulator dla zielonych kompostów oraz pierwsza deska ratunku dla głodnych zapylaczy.",
+    "rzemieslnicze": "Wywar z kwiatów i purpurowych wierzchołków nadaje wełnie i bawełnie zgaszono-różowe lub ziemisto-zielonkawe tony. Napar z dodatkiem octu tonizuje przetłuszczające się włosy."
   },
-  "Ogrodnictwo": {
-    "uprawa": {
-      "gleba": "Rośnie właściwie wszędzie. Najbardziej lubi gleby próchniczne, pulchne, azotowe, ale przetrwa nawet na gruzowiskach i suchej ziemi.",
-      "stanowisko": "Od pełnego słońca do półcienia. W słońcu szybciej i mocniej przebarwia wierzchołki na purpurowo.",
-      "wysiew": "Rzadko uprawia się ją z nasion celowo – zazwyczaj sama 'przychodzi' do ogrodu. Samosiew wiosenny i jesienny.",
-      "zbior": "Ziele (wierzchołki 5-10 cm) zbiera się od marca do późnej jesieni (najlepsze wartości lecznicze ma wiosną). Kwiaty można obrywać na bieżąco.",
-      "tipy_ogrodowe": [
-        "Nie usuwaj jej z trawnika na siłę wczesną wiosną – pozwól jej zakwitnąć dla głodnych pszczół i trzmieli.",
-        "Stanowi naturalny, żywy ściółkarz – utrzymuje wilgoć w ziemi wczesną wiosną dla innych upraw.",
-        "Wyrwana z korzeniami stanowi absolutnie rewelacyjny materiał na zielony kompost bogaty w żelazo."
-      ]
-    },
-    "kalendarz": {
-      "kwitnienie": {
-        "miesiące": [3, 4, 5, 9, 10],
-        "zalecana_faza_ksiezyca": "pełnia",
-        "typ": "obserwacyjny",
-        "czas_dnia": "w ciągu dnia",
-        "intensywnosc": "wysoka",
-        "uwagi": "W łagodne zimy potrafi kwitnąć bez przerwy od lutego.",
-        "zrodlo": "Obserwacje fenologiczne"
+  "interakcje": [
+    "Brak znanych negatywnych interakcji z lekami farmakologicznymi."
+  ],
+  "ciekawostki": [
+    "W tradycji ludowej uważano, że jasnota posadzona blisko domu przynosi domownikom radość i oddala melancholię, dlatego często pozostawiano ją przy płotach.",
+    "Jej nasiona posiadają elajosom (ciałko mrówcze), dzięki czemu współpracuje z mrówkami, które roznoszą nasiona na duże odległości (zjawisko myrmekochorii).",
+    "Purpurowe zabarwienie szczytowych liści (zawartość antocyjanów) chroni roślinę przed wczesnowiosennymi przymrozkami działając jak naturalny 'krem przeciwsłoneczny'.",
+    "Dawniej wierzono, że kwiaty jasnoty zerwane wczesną wiosną i noszone w woreczku na sercu przyciągają miłość i wierność."
+  ],
+  "permakultura": {
+    "funkcje": [
+      "Wczesne źródło pożytku dla owadów zapylających (od marca do maja).",
+      "Dynamiczny akumulator minerałów (wyciąga żelazo i wapń z głębokich warstw gleby).",
+      "Wczesnowiosenny 'green manure' odżywiający mikrobiom po obumarciu.",
+      "Ochrona wierzchniej warstwy gleby przed erozją przed wzejściem głównych plonów."
+    ],
+    "gildie": [
+      {
+        "nazwa": "Wczesne warzywa korzeniowe",
+        "rola": "Zapewnia niską okrywę ochronną, współżyje z cebulą i czosnkiem niedźwiedzim."
       },
-      "zbior_lisci": {
-        "miesiące": [3, 4, 5],
-        "zalecana_faza_ksiezyca": "rosnący",
-        "typ": "zielarski",
-        "czas_dnia": "ranek",
-        "intensywnosc": "wysoka",
-        "uwagi": "Zbierać czubki z rozetą kwiatów, mają najwięcej soków i są najbardziej miękkie. Po ucięciu szybko odrasta.",
-        "zrodlo": "Zielnik praktyczny"
-      },
-      "pielenie": {
-        "miesiące": [5, 6],
-        "zalecana_faza_ksiezyca": "malejący",
-        "typ": "techniczny",
-        "czas_dnia": "po południu",
-        "intensywnosc": "średnia",
-        "uwagi": "Gdy zaczyna przekwitać i żółknąć wczesnym latem, można ją wyrwać i przerzucić na kompost – robiąc miejsce dla warzyw letnich.",
-        "zrodlo": "Praktyki permakulturowe"
+      {
+        "nazwa": "Agrest i Porzeczka",
+        "rola": "Chroni ich strefę korzeniową wczesną wiosną i zwabia wczesne trzmiele."
       }
+    ]
+  },
+  "kalendarz_ogrodnika": {
+    "siew": "Rozsiewa się samoistnie z nasion wczesną wiosną lub jesienią.",
+    "sadzenie": "Brak konieczności sadzenia, pojawia się spontanicznie.",
+    "kwitnienie": "Marzec - Październik (najintensywniej w kwietniu i maju).",
+    "zadania": [
+      {
+        "czynnosc": "Obserwacja kwitnienia",
+        "miesiace": [3, 4, 5],
+        "opis": "W łagodne zimy potrafi kwitnąć bez przerwy od lutego, dając znak do rozpoczęcia sezonu.",
+        "faza_ksiezyca": "Pełnia",
+        "pora_dnia": "W ciągu dnia"
+      },
+      {
+        "czynnosc": "Zbiór ziela",
+        "miesiace": [3, 4, 5],
+        "opis": "Zbieraj miękkie wierzchołki (5-10 cm) z rozetą kwiatów, gdy roślina ma najwięcej soków.",
+        "faza_ksiezyca": "Księżyc przybywający",
+        "pora_dnia": "Poranek",
+        "wplyw_ksiezyca": "Zwiększa właściwości nawilżające i odżywcze ziela."
+      },
+      {
+        "czynnosc": "Odchwaszczanie (przerzut na kompost)",
+        "miesiace": [5, 6],
+        "opis": "Gdy jasnota zaczyna żółknąć, można ją wyrwać i przerzucić na kompost by uwolnić zgromadzone minerały.",
+        "faza_ksiezyca": "Księżyc ubywający",
+        "pora_dnia": "Po południu"
+      }
+    ]
+  },
+  "przepisy_medyczne": [
+    {
+      "tytul": "Odwar na sprawy kobiece",
+      "typ": "medyczne",
+      "metoda": "Ekstrakcja wodna (odwar)",
+      "tagi": ["kobieca", "krew", "bolesne miesiączkowanie"],
+      "skladniki": [
+        "Ziele jasnoty purpurowej (suszone lub świeże): 2 łyżki",
+        "Ziele krwawnika: 1 łyżeczka",
+        "Woda destylowana: 300 ml"
+      ],
+      "sposob_przygotowania": [
+        "Zioła wsypać do garnuszka i zalać letnią wodą. Odstawić na 10 minut.",
+        "Doprowadzić do wrzenia na bardzo małym ogniu. Gotować przez 5 minut.",
+        "Zdjąć z ognia, przykryć i parzyć przez 15 minut. Odcedzić przez gęste sito."
+      ],
+      "dawkowanie": "Pić po 1/2 szklanki 2-3 razy dziennie między posiłkami.",
+      "uwagi": "Usuwa Wilgoć i Zimno z dolnego ogrzewacza, zatrzymuje upławy. Najlepsze efekty daje picie na 3-4 dni przed spodziewaną miesiączką. Można stosować w o połowę mniejszej dawce u dziewcząt od 12 roku życia.",
+      "roslina": "Jasnota purpurowa",
+      "slug": "jasnota_purpurowa",
+      "cechy": ["zielonkawo-brunatny płyn", "lekko grzybowy aromat"],
+      "wlasciwosci": ["rozkurczowe", "ściągające", "przeciwzapalne"]
+    },
+    {
+      "tytul": "Zielony okład styptyczny na rany",
+      "typ": "medyczne",
+      "metoda": "Mechaniczne zmiażdżenie",
+      "tagi": ["rany", "krwawienie", "pierwsza pomoc"],
+      "skladniki": [
+        "Świeże wierzchołki jasnoty purpurowej: 1 garść",
+        "Babka lancetowata: 1 liść (opcjonalnie dla działania antybakteryjnego)"
+      ],
+      "sposob_przygotowania": [
+        "Zioła dokładnie oczyścić.",
+        "Ugnieść w moździerzu lub mocno rozetrzeć w dłoniach, aż puszczą ciemnozielony sok.",
+        "Nałożyć miazgę bezpośrednio na krwawiące skaleczenie, otarcie lub ukąszenie.",
+        "Owinąć bandażem lub czystym liściem łopianu i trzymać przez 15-30 minut."
+      ],
+      "dawkowanie": "Jednorazowo do momentu ustąpienia krwawienia lub bólu.",
+      "uwagi": "Wysysa jady po ukąszeniach owadów i przyspiesza zasklepianie naczyń. UWAGA: Zostawia zielony osad z chlorofilu na skórze i trwale plami ubrania!",
+      "roslina": "Jasnota purpurowa",
+      "slug": "jasnota_purpurowa",
+      "cechy": ["chłodzący miazga", "szybkie działanie"],
+      "wlasciwosci": ["tamuje krew", "przeciwświądowe"]
     }
-  }
+  ],
+  "przepisy_kulinarne": [
+    {
+      "tytul": "Wczesnowiosenne Pesto z Jasnoty Purpurowej",
+      "typ": "kulinarne",
+      "metoda": "Zimna emulsja (blendowanie)",
+      "tagi": ["pesto", "wiosna", "superfood"],
+      "skladniki": [
+        "Świeże wierzchołki jasnoty (liście i kwiaty): 2 garście",
+        "Pestki słonecznika lub dyni (uprażone): 1 garść",
+        "Czosnek (niedźwiedzi lub zwykły): 1 ząbek",
+        "Oliwa z oliwek (tłoczona na zimno): 60 ml",
+        "Sól kłodawska, pieprz, sok z cytryny: do smaku"
+      ],
+      "sposob_przygotowania": [
+        "Zioła umyć i bardzo dokładnie osuszyć ręcznikiem.",
+        "Pestki uprażyć na suchej patelni do zarumienienia.",
+        "Umieścić zioła, czosnek i pestki w blenderze.",
+        "Powoli dodawać oliwę blendując na gładką masę.",
+        "Dodać sól, pieprz i kilka kropel soku z cytryny dla przełamania ziemistego smaku jasnoty."
+      ],
+      "dawkowanie": "Jako dodatek do makaronów, kasz czy kanapek. Bez limitów.",
+      "uwagi": "Odżywia Krew i Śledzionę (duża dawka żelaza i witaminy C). Rewitalizuje organizm po okresie zimowym.",
+      "roslina": "Jasnota purpurowa",
+      "slug": "jasnota_purpurowa"
+    },
+    {
+      "tytul": "Zielone Smoothie Żelazne z Jasnoty",
+      "typ": "kulinarne",
+      "metoda": "Blendowanie na zimno",
+      "tagi": ["smoothie", "żelazo", "wiosenny detox"],
+      "skladniki": [
+        "Jasnota purpurowa (świeża): 1 garść",
+        "Dojrzały banan: 1 szt.",
+        "Jabłko (ze skórką): 1 szt.",
+        "Woda lub naturalny sok jabłkowy: 1 szklanka"
+      ],
+      "sposob_przygotowania": [
+        "Jasnotę dokładnie umyć w zimnej wodzie.",
+        "Owoce pokroić na mniejsze kawałki.",
+        "Wrzucić wszystkie składniki do blendera kielichowego i zmiksować na najwyższych obrotach do uzyskania bardzo gładkiej konsystencji."
+      ],
+      "dawkowanie": "Pić świeże, np. na śniadanie lub po wysiłku fizycznym.",
+      "uwagi": "Banan i sok jabłkowy doskonale maskują trawiasty posmak jasnoty, a pektyny z jabłka wspomagają pracę żołądka.",
+      "roslina": "Jasnota purpurowa",
+      "slug": "jasnota_purpurowa"
+    }
+  ],
+  "ostrzezenia": "Pomimo braku toksyczności, spożycie surowego ziela w wyjątkowo dużych ilościach może spowodować lekkie rozwolnienie z uwagi na wysoką zawartość błonnika i delikatnych saponin. Należy uważać przy wczesnowiosennym zbiorze, by nie pomylić jej z innymi chwastami bez uprzedniego rozpoznania kwadratowej łodygi i zapachu."
 }

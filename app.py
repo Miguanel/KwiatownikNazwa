@@ -85,7 +85,7 @@ def inject_astro():
     # 2. Jeśli nie ma ciasteczek, twardo ładujemy Czyżowice (ignorujemy IP!)
     if not lat or not lon:
         lat, lon = '49.95', '18.38'
-        city_name = "Czyżowice"
+        city_name = "Z"
 
     # 3. Pobieramy astro dla pewnych współrzędnych
     try:
