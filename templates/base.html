@@ -14,10 +14,31 @@
 
         .main-header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
 
-        nav { background-color: #3e4a3d; color: white; padding: 0.5rem 1rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #5a4f41; }
-        nav i { margin-right: 5px; font-size: 1rem; color: #d1b880; }
-        nav a { color: white !important; text-decoration: none; margin: 0 10px; font-weight: bold; font-size: 0.9rem; transition: color 0.3s; }
-        nav a:hover { color: #d1b880 !important; }
+        /* --- POPRAWA NAWIGACJI (Oparta na Bootstrapie RWD) --- */
+        nav { background-color: #3e4a3d; border-bottom: 1px solid #5a4f41; padding: 0.5rem 1rem;}
+        /* Używamy standardowych klas navbar z Bootstrapa dla Hamburgera */
+        .navbar-brand, .nav-link { color: white !important; font-weight: bold; font-size: 0.95rem; transition: color 0.3s; }
+        .nav-link:hover, .navbar-brand:hover { color: #d1b880 !important; }
+        .nav-link i, .navbar-brand i { color: #d1b880; margin-right: 5px; font-size: 1.1rem; }
+
+        .navbar-toggler { border-color: rgba(255,255,255,0.5); padding: 4px 8px;}
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        /* Dostosowanie dropdownu Ulubionych do paska nav */
+        #favDropdownBtn { padding-left: 0; padding-right: 0; }
+
+        @media (max-width: 991px) {
+            /* Na mniejszych ekranach linki w menu rozsuwanym mają odstęp i są blokowe */
+            .navbar-nav .nav-item { padding: 8px 0; border-bottom: 1px dashed rgba(255,255,255,0.2); text-align: center;}
+            .navbar-nav .nav-item:last-child { border-bottom: none; }
+            .frozen-feature.d-lg-none { display: block; text-align: center; padding: 10px 0; color: white;}
+            .frozen-feature.d-none.d-lg-block { display: none; } /* Ukrywa 'Komentarze' obok menu na tel */
+
+            /* Zmniejszamy paddingi dla samej nawigacji na mobilkach */
+            nav { padding: 0.5rem; }
+        }
 
         /* --- WSPÓLNE CECHY PRZEWIJANYCH PASKÓW --- */
         .scrollable-banner {
@@ -33,17 +54,23 @@
         }
         .scrollable-banner::-webkit-scrollbar { display: none; }
         .scrollable-banner:active { cursor: grabbing; }
-        .scrollable-content { display: flex; flex-wrap: nowrap; }
+        .scrollable-content { display: flex; flex-wrap: nowrap; align-items: center; }
 
         /* --- 1. PASEK ALMANACHU (ASTRO-RIBBON) --- */
         .astro-ribbon {
             background-color: #23201d;
             border-bottom: 1px solid #8a7a58;
             color: #d1b880;
-            padding: 6px 15px;
+            padding: 6px 10px; /* Lekko zmniejszony padding */
             font-size: 0.75rem;
         }
-        .astro-item { display: flex; align-items: center; gap: 6px; margin-right: 30px; }
+        .astro-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-right: 25px; /* Trochę mniej odstępu, lepiej dla mniejszych ekranów */
+            flex-shrink: 0; /* ZAPOBIEGA GNIECENIU na małych ekranach */
+        }
         .astro-item i { font-size: 1.1rem; color: #8a9a5b; }
         .astro-item div { display: flex; align-items: baseline; gap: 4px; }
         .astro-label { font-size: 0.65rem; text-transform: uppercase; color: #a89f91; letter-spacing: 0.5px; }
@@ -53,21 +80,23 @@
         .marquee-wrapper {
             background-color: #1a1714;
             color: #8a9a5b;
-            padding: 8px 15px;
+            padding: 8px 10px;
             border-bottom: 2px solid #3a2b21;
         }
         .marquee-item {
             font-size: 0.75rem;
             font-style: italic;
             letter-spacing: 0.5px;
-            margin-right: 60px;
+            margin-right: 40px;
+            flex-shrink: 0; /* KLUCZOWE! Zapobiega obcinaniu tekstu */
         }
         .marquee-item i { color: #d1b880; margin-right: 5px; }
 
         @media (max-width: 768px) {
-            body { padding-top: 100px; }
-            nav { padding: 0.4rem; flex-wrap: wrap; justify-content: center; gap: 5px; }
-            .frozen-feature { display: none; }
+            body { padding-top: 90px; } /* Mniejszy offset na telefony */
+            .astro-value { font-size: 0.8rem; }
+            .astro-item { margin-right: 15px; }
+            .container { margin: 10px auto; padding: 10px; border-width: 0; box-shadow: none;} /* Usuwa border wokół contentu na mobile, daje więcej miejsca */
         }
 
         .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.05); border: 1px solid #e0dcd3; border-radius: 4px; }
@@ -85,83 +114,64 @@
         a { text-decoration: none; color: inherit; }
 
         /* Stylizacja rozwijanej listy Ulubionych */
-.dropdown-menu {
-    background-color: #fdfaf0 !important; /* Kremowy papier */
-    border: 2px solid #3e4a3d !important;
-    border-radius: 0 !important;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important;
-    min-width: 250px;
-}
-
-.dropdown-item {
-    color: #3e4a3d !important; /* Ciemnozielony tekst */
-    font-family: 'Crimson Text', serif;
-    font-size: 1.1rem;
-    padding: 8px 20px;
-    transition: background 0.2s;
-}
-
-.dropdown-item:hover {
-    background-color: #e0dcd3 !important;
-    color: #2d5a27 !important;
-}
-
-.dropdown-header {
-    background-color: #f4f1ea;
-    border-bottom: 1px dashed #d1c7a7;
-    margin-top: 5px;
-}
-
-.dropdown-divider {
-    border-top: 1px solid #d1c7a7 !important;
-    opacity: 1 !important;
-}
-
-/* Twarde nadpisanie kolorów Bootstrapa dla menu ulubionych */
-#favoritesDropdownMenu .dropdown-item {
-    color: #3e4a3d !important;
-    background-color: transparent !important;
-}
-
-#favoritesDropdownMenu .dropdown-item:hover {
-    background-color: #e0dcd3 !important;
-    color: #2d5a27 !important;
-}
-
-#favoritesDropdownMenu .dropdown-header {
-    color: #8a9a5b !important;
-    font-weight: bold;
-    border-bottom: 1px dashed #d1c7a7;
-}
+        .dropdown-menu { background-color: #fdfaf0 !important; border: 2px solid #3e4a3d !important; border-radius: 0 !important; box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important; min-width: 250px; }
+        .dropdown-item { color: #3e4a3d !important; font-family: 'Crimson Text', serif; font-size: 1.1rem; padding: 8px 20px; transition: background 0.2s; }
+        .dropdown-item:hover { background-color: #e0dcd3 !important; color: #2d5a27 !important; }
+        .dropdown-header { background-color: #f4f1ea; border-bottom: 1px dashed #d1c7a7; margin-top: 5px; }
+        .dropdown-divider { border-top: 1px solid #d1c7a7 !important; opacity: 1 !important; }
+        #favoritesDropdownMenu .dropdown-item { color: #3e4a3d !important; background-color: transparent !important; }
+        #favoritesDropdownMenu .dropdown-item:hover { background-color: #e0dcd3 !important; color: #2d5a27 !important; }
+        #favoritesDropdownMenu .dropdown-header { color: #8a9a5b !important; font-weight: bold; border-bottom: 1px dashed #d1c7a7; }
     </style>
 
 </head>
 <body>
 
 <header class="main-header">
-    <nav>
-        <div>
-            <a href="{{ url_for('index') }}"><i class="ra ra-leaf"></i> Kwiatownik</a>
-            <a href="{{ url_for('generator') }}"><i class="ra ra-flask"></i> Generatory</a>
-            <a href="{{ url_for('przepisy') }}"><i class="ra ra-cauldron"></i> Przepisy</a>
-            <a href="{{ url_for('gildie') }}"><i class="ra ra-pawn"></i> Gildie</a>
-            <a href="#" class="frozen-feature"><i class="ra ra-speech-bubble"></i> Komentarze</a>
+    <!-- Navbar zmieniony na strukturę Bootstrap (RWD) -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-0 px-md-2">
+            <!-- Logo widoczne po lewej zawsze -->
+            <a class="navbar-brand" href="{{ url_for('index') }}"><i class="ra ra-leaf"></i> Kwiatownik</a>
 
-            <div class="dropdown" style="display:inline-block; margin: 0 10px;">
-                <button class="btn dropdown-toggle" type="button" id="favDropdownBtn" data-bs-toggle="dropdown" aria-expanded="false" style="background: none; border: none; color: white; font-weight: bold; font-size: 0.9rem;">
-                    <i class="ra ra-heart"></i> Ulubione
-                </button>
-                <ul class="dropdown-menu" id="favoritesDropdownMenu">
-                    </ul>
+            <!-- Hamburger na małych ekranach -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kwiatownikNavbar" aria-controls="kwiatownikNavbar" aria-expanded="false" aria-label="Przełącz nawigację">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Część zwijana (linki i przyciski) -->
+            <div class="collapse navbar-collapse justify-content-end" id="kwiatownikNavbar">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('generator') }}"><i class="ra ra-flask"></i> Generatory</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('przepisy') }}"><i class="ra ra-cauldron"></i> Przepisy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('gildie') }}"><i class="ra ra-pawn"></i> Gildie</a></li>
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link frozen-feature" href="#"><i class="ra ra-speech-bubble"></i> Komentarze</a></li>
+
+                    <li class="nav-item dropdown px-2">
+                        <button class="nav-link dropdown-toggle" type="button" id="favDropdownBtn" data-bs-toggle="dropdown" aria-expanded="false" style="background: none; border: none; font-weight: bold; font-size: 0.95rem;">
+                            <i class="ra ra-heart"></i> Ulubione
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" id="favoritesDropdownMenu">
+                        </ul>
+                    </li>
+
+                    <!-- Przycisk logowania wewnątrz menu na urządzeniach mobilnych -->
+                    <li class="nav-item d-lg-none mt-2 w-100">
+                         <a href="#" class="nav-link frozen-feature" style="background: #2d5a27; border-radius: 4px; padding: 8px;"><i class="ra ra-player"></i> Logowanie (Wstrzymane)</a>
+                    </li>
+                </ul>
             </div>
 
-        </div>
-        <div class="frozen-feature" title="Zablokowane w wersji statycznej">
-            <a href="#"><i class="ra ra-player"></i> Logowanie</a>
+            <!-- Ikonka logowania na desktopie zostaje po prawej stronie (poza hamburgerem) -->
+            <div class="frozen-feature d-none d-lg-block" title="Zablokowane w wersji statycznej" style="margin-left: 15px;">
+                <a class="nav-link" href="#"><i class="ra ra-player"></i> Logowanie</a>
+            </div>
         </div>
     </nav>
 
+    <!-- Reszta bez zmian, poprawki załatwił CSS powyżej -->
     <div class="astro-ribbon scrollable-banner" id="banner-astro">
+
         <div class="scrollable-content">
             <div class="astro-item">
                 <i class="ra ra-compass"></i>

@@ -286,3 +286,81 @@
 .witcher-card-img { height: 60%; background-size: cover; background-position: center; border-bottom: 2px solid #8a7a58; }
 .witcher-card-content { height: 30%; padding: 15px; display: flex; flex-direction: column; justify-content: center; text-align: center; }
 .witcher-btn { height: 10%; display: flex; align-items: center; justify-content: center; background: #3a2b21; color: #d1b880; text-decoration: none; border-top: 1px solid #5a4b3a; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+
+/* =========================================
+   POPRAWKI RESPONSYWNOŚCI (RWD) - TELEFONY
+   ========================================= */
+@media (max-width: 768px) {
+    /* 1. Pole Wyszukiwania - Pełna Szerokość */
+    .search-input-wrapper {
+        width: 100%;
+        padding: 0 10px; /* Minimalny margines po bokach ekranu */
+    }
+
+    .central-node {
+        max-width: 100%; /* Zdejmujemy blokadę do 650px */
+        margin-top: 15px; /* Podciągamy wyżej */
+    }
+
+    .search-input {
+        width: 100%;
+        padding: 12px 15px; /* Mniejsze paddingi dla zyskania miejsca */
+        font-size: 16px; /* Odrobinę mniejszy font na mobilce, by uniknąć złamania długich słów */
+        border-radius: 8px; /* Ładniejsze, okrągłe rogi dla mobile */
+    }
+
+    /* 2. Dymki Sugestii (Architektoniczny Blok) pod wyszukiwarką */
+    .architectural-suggestions {
+        /* Zmieniamy układ grid na listę blokową z mniejszymi przerwami, jeśli się pojawią */
+        grid-template-columns: 1fr;
+        gap: 10px;
+        position: relative; /* Zdejmujemy absolutne pozycjonowanie dla bezpieczeństwa */
+        bottom: auto;
+        margin-top: 10px;
+        padding: 0 10px;
+    }
+
+    /* 3. Karty Wyników Wyszukiwania (Poziome Przewijanie) */
+    #horizontalResults {
+        padding: 5px 5px 20px 5px; /* Mniej pustej przestrzeni po bokach wyników */
+        gap: 15px;
+    }
+
+    /* 4. Lista Zadań / Przepisów (Task Results) */
+    .task-results-container {
+        padding: 0 10px;
+        margin-top: 20px;
+    }
+
+    .task-season-title {
+        font-size: 18px; /* Mniejszy tytuł kategorii ("Jesień" itp.) */
+    }
+
+    .task-card {
+        padding: 12px 15px; /* Ciaśniejsze pakowanie kart */
+        flex-direction: column; /* Ustawienie ikona -> tekst -> przycisk w pionie (ZDECYDOWANIE lepsze na tel) */
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .task-card-icon {
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .task-card-action {
+        margin-left: 0;
+        margin-top: 12px;
+        align-self: stretch; /* Rozciąga przycisk "PRZEPIS" na całą szerokość karty */
+    }
+
+    /* 5. Gilder / Mini-Kółeczka Powiązań (Nad kartą rośliny) */
+    .guild-mini-expanded {
+        /* Dymek ze szczegółami potrafił wyjeżdżać za ekran, naprawiamy to */
+        width: 250px;
+        padding: 12px;
+        /* Wyśrodkowanie na siłę na małych ekranach, by nie ucinało po prawej/lewej */
+        left: 50%;
+        transform: translateX(-50%) translateY(5px) !important;
+    }
+}
