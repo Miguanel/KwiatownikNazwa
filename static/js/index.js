@@ -305,9 +305,12 @@ document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.cli
 
 
 // ==========================================
-// WYSZUKIWARKA GŁÓWNA
+// WYSZUKIWARKA GŁÓWNA (Z POPRAWKĄ PRZEWIJANIA)
 // ==========================================
 universalSearch.addEventListener('input', function() {
+    // Zapamiętujemy aktualną pozycję scrolla, aby uciąć skakanie ekranu
+    const scrollYBefore = window.scrollY;
+
     const query = safeStr(this.value).toLowerCase().trim();
 
     horizontalResults.innerHTML = '';
@@ -486,6 +489,8 @@ universalSearch.addEventListener('input', function() {
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
         [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
+        // Przywracamy scroll na końcu wykonania bloku, żeby zniwelować skok układu
+        window.scrollTo({ top: scrollYBefore, behavior: 'instant' });
         return;
     }
 
@@ -497,6 +502,7 @@ universalSearch.addEventListener('input', function() {
         autoRenderCalendarNode = exactMatch ? calendarSearchMap[exactMatch] : calendarSearchMap[matchedCalendar[0]];
         if (autoRenderCalendarNode) {
             spawnSeasonNode(autoRenderCalendarNode.label, autoRenderCalendarNode.data, true);
+            window.scrollTo({ top: scrollYBefore, behavior: 'instant' });
             return;
         }
     }
@@ -516,6 +522,7 @@ universalSearch.addEventListener('input', function() {
         });
         const queryTitle = query.charAt(0).toUpperCase() + query.slice(1);
         spawnSeasonNode(`Przepisy: ${queryTitle}`, recipeItems, true);
+        window.scrollTo({ top: scrollYBefore, behavior: 'instant' });
         return;
     }
 
@@ -524,6 +531,7 @@ universalSearch.addEventListener('input', function() {
         const exactMatch = filteredSymptoms.find(k => k === query);
         const sym = exactMatch ? exactMatch : filteredSymptoms[0];
         spawnEntities(symptomMap[sym]);
+        window.scrollTo({ top: scrollYBefore, behavior: 'instant' });
         return;
     }
 
@@ -532,8 +540,12 @@ universalSearch.addEventListener('input', function() {
         const exactMatch = filteredColors.find(k => k === query);
         const color = exactMatch ? exactMatch : filteredColors[0];
         spawnEntities(colorMap[color]);
+        window.scrollTo({ top: scrollYBefore, behavior: 'instant' });
         return;
     }
+
+    // Zabezpieczenie dla pozostałych przypadków
+    window.scrollTo({ top: scrollYBefore, behavior: 'instant' });
 });
 
 
