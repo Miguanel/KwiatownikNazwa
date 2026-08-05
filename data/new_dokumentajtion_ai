@@ -1,0 +1,484 @@
+Dokumentacja Techniczna Projektu: Kwiatownik AI & Core (Django)
+
+1. Wprowadzenie i Filozofia Projektu
+
+1.1 Cel dokumentu
+
+Niniejszy dokument stanowi pełną specyfikację techniczną, biznesową i architektoniczną projektu "Kwiatownik". Obejmuje on strategię migracji obecnej, hybrydowej platformy statycznej (Flask/Frozen-Flask) do pełnoprawnego frameworka Django (Python) oraz integrację zaawansowanego modułu Sztucznej Inteligencji w architekturze wieloagentowej (OpenClaw).
+
+1.2 Opis i Klimat (Look & Feel)
+
+"Kwiatownik" to nie jest zwykła baza danych. To Cyfrowy Zielnik i Grymuar zbudowany w klimacie "Dark Academia / RPG", łączący twardą wiedzę naukową, biologię, Tradycyjną Medycynę Chińską (Wu Xing, Kampo) oraz dawne wierzenia pogańskie i słowiańskie.
+
+Główne moduły interaktywne:
+
+Laboratorium Zielarskie (E-bimbrownik): Dynamiczny kalkulator ekstraktów z systemem ostrzeżeń.
+
+Przepiśnik: Przeszukiwalna księga dawnych receptur (Medycyna Klasztorna, Ludowa).
+
+Gildie Permakulturowe: Wizualna arena symbiotycznych powiązań międzygatunkowych (rendering SVG/JS).
+
+Magiczny Obiektyw: Narzędzie zintegrowane z API Plant.id oraz Wikipedią do rozpoznawania ziół ze zdjęć.
+
+Astro-Almanach: Silnik faz księżyca i świąt Koła Roku (Yule, Beltane itp.).
+
+1.3 Główne założenia technologiczne
+
+Backend Core (Lewa Półkula): Migracja z Flask do Django (Python). Baza danych PostgreSQL (zastępująca lokalne pliki JSON/SQLite).
+
+AI Core (Prawa Półkula): Niezależny mikroserwis w języku Python wykorzystujący framework OpenClaw do zarządzania autonomicznymi agentami.
+
+Modele Językowe (LLM): Integracja przez API OpenRouter (GPT-4o, Claude 3.5 Sonnet, Llama-3 itp.).
+
+Weryfikowalność Źródeł (Traceability): Bezwzględny wymóg poparcia każdej informacji medycznej linkiem URL.
+
+Konfiguracja Globalna (.env): Centralne zarządzanie środowiskiem za pomocą zmiennych systemowych. Kluczową flagą sterującą jest SEL_WIN. Jeśli ustawimy SEL_WIN=true, system wyłącza tryb ukryty (headless) dla biblioteki Selenium i pokazuje prawdziwe, fizyczne okna przeglądarki Chrome na ekranie komputera. Pozwala to na żywo obserwować, jak boty (np. Scraper) "klikają" po witrynach i co dokładnie przeglądają w internecie.
+
+2. Architektura Systemu: Podejście Dwupółkulowe (Mikroserwisy)
+
+Projekt ewoluuje z monolitycznego skryptu Flask do rozproszonej architektury komunikującej się przez REST API.
+
+2.1 Lewa Półkula: Django Core & Frontend
+
+Główny serwer obsługujący interfejs użytkownika, logikę biznesową kont oraz bazę danych relacyjnych (PostgreSQL). Zastępuje on stary system generowania plików statycznych (freeze.py).
+
+Warstwa Wizualna: Bootstrap 5, RPG-Awesome Icons, specyficzna typografia (Crimson Text, Playfair Display), motyw pergaminu (#fdfaf0).
+
+Zarządzanie Stanem: LocalStorage (dla niezalogowanych - ulubione rośliny), Sesje Django, widoki oparte na klasach (CBV).
+
+Routing: Dynamiczne generowanie podstron /plant/<slug>/ zamiast budowania ich przez Freezera.
+
+2.2 Prawa Półkula: Mózg AI (OpenClaw)
+
+Niezależny proces w tle (Background Worker / Celery / Daemon).
+
+Zarządza 10 autonomicznymi agentami.
+
+Wykorzystuje OpenRouter (GPT-4o, Claude 3.5 Sonnet, Llama-3).
+
+Automatyzuje procesy scrapowania, tłumaczenia, weryfikacji, generowania zaleceń oraz samodzielnego rozwijania kodu platformy (komunikując się z Django za pomocą payloadów JSON i skryptów wdrożeniowych).
+
+3. Logika Biznesowa Frontend i Integracje API
+
+Kod źródłowy platformy posiada zaawansowane skrypty po stronie klienta, które muszą zostać przeniesione i utrzymane w nowej architekturze:
+
+3.1 Silnik Astrologiczny (astro_engine.py)
+
+Odpowiada za synchronizację użytkownika z cyklami natury.
+
+Geolokalizacja: Dynamiczne pobieranie GPS z przeglądarki (zapis do ciasteczek). W przypadku braku zgody - fallback na API ip-api.com lub twarde koordynaty bazowe (Czyżowice: 49.95, 18.38).
+
+Pogoda: Żywe dane pobierane z api.open-meteo.com (temperatura, wilgotność).
+
+Ephem & Księżyc: Obliczanie kąta separacji Słońca i Księżyca (biblioteka ephem) w celu wyznaczania faz (Nów, Pełnia, Ubywający, Przybywający).
+
+Koło Roku: Twardo zakodowana logika pogańskich festiwali (Yule, Imbolc, Ostara, Beltane, Litha, Lughnasadh, Mabon, Samhain) zmieniająca się płynnie w zależności od daty systemowej.
+
+3.2 Magiczny Obiektyw (magic_lens.js)
+
+Proces działania detekcji obrazu:
+
+Użytkownik przesyła zdjęcie (aparat/galeria).
+
+JS konwertuje obraz na Base64 i wysyła do sieci neuronowej Plant.id API (v3).
+
+System odbiera łacińską nazwę najwyższego prawdopodobieństwa.
+
+Wywoływane jest API Wikipedii (/api.php?action=query&prop=langlinks&lllang=pl) w celu przetłumaczenia nazwy na język polski.
+
+Użytkownik otrzymuje interaktywny modal z opcją zapisu rośliny w swoim Grymuarze (Ulubione).
+
+3.3 Wizualizacja Gildii (gildie.html)
+
+Zaawansowany skrypt matematyczny.
+
+Na podstawie danych wejściowych generowana jest centralna roślina ("Serce").
+
+Satelity (rośliny symbiotyczne) są rozkładane po okręgu za pomocą funkcji trygonometrycznych (Math.cos, Math.sin).
+
+Linie powiązań są na żywo rysowane za pomocą modyfikacji DOM w przestrzeni <svg>.
+
+3.4 Kalkulator Alchemiczny (generator.html)
+
+Dynamicznie bilansuje składniki ekstrakcji (Nalewka 1:5, Intrakt 1:3). Skrypt zlicza "Zamrożone" i "Odblokowane" surowce, idealnie dystrybuując mililitry alkoholu i gramy suszu według wybranej docelowej objętości.
+
+4. Ekosystem Agentów AI (Gildie Aktorów)
+
+Aktorzy prawej półkuli, odpowiedzialni za rozwój bazy. System składa się obecnie z 10 agentów w 5 Gildiach.
+
+4.1 Gildia Zarządzania i Kontroli (Centrala)
+
+Magister (Orkiestrator): Nadzoruje, planuje i deleguje zadania. Rozbija duże polecenia administratora na małe kolejki (Redis/RabbitMQ). Tłumaczy zapytania na języki obce dla Scrapera.
+
+Auditor (QA i BHP): Najważniejszy agent bezpieczeństwa. Wyłapuje zagrożenia toksykologiczne na etapie weryfikacji. Reaguje agresywnym odrzuceniem na przepisy kulinarne z udziałem ziół heroicznych (Tojad, Szalej, Bieluń, Barszcz Sosnowskiego, Pokrzyk). Do testów wizualnych interfejsu wspiera się zmienną SEL_WIN (jeśli włączona, otwiera przeglądarkę testową na ekranie).
+
+4.2 Gildia Eksploratorów (Akwizycja)
+
+Scraper (Wielojęzyczny Łowca Opowieści): Specjalistyczny bot eksploracyjny. Jego główną misją jest wyszukiwanie dawnych opowieści, legend, receptur i zastosowań roślin w różnych kulturach. Scraper nie szuka tylko po polsku lub łacinie – wykorzystuje tłumaczenia nazw roślin zlecane przez Magistra na wiele języków (np. japoński, chiński, staroangielski, języki celtyckie). Przeszukuje zagraniczne archiwa, lokalne fora i biblioteki cyfrowe. Jego zachowanie sterowane jest flagą SEL_WIN. Jeśli SEL_WIN=true, Scraper otwiera widoczne, prawdziwe okienko Chrome'a, a administrator może na żywo patrzeć w monitor, oglądając jak bot przewija strony, ładuje obrazki i "czyta" zagraniczne witryny. Bezwzględnie zapisuje linki jako zrodla.
+
+Botanicus: Szuka zapomnianych roślin jadalnych i użytkowych (Kurdybanek, Wiązówka, Żółtlica itp.). Zna zastosowania magiczne (Jemioła, Bylica). Integruje się z Magicznym Obiektywem do analizy zdjęć (analyze_image_vision). Jego bezwzględnym obowiązkiem jest tworzenie dla każdej rośliny "bogatego kalendarza czynności" – szczegółowych instrukcji pielęgnacji, siewu, nawożenia i zbiorów rozpisanych na poszczególne miesiące, aby roślina zawsze miała kompletny profil wegetacyjny.
+
+4.3 Gildia Skrybów (Przetwarzanie)
+
+Herbarius: Mapuje przepisy na Wu Xing, Kampo i Skalowanie Toksykologiczne. Dodaje metadane Chronoterapii (fazy księżyca).
+
+Linguist (Stylista): Dynamiczna Stylizacja Kontekstowa języka polskiego.
+
+Taxonomus: Utrzymanie spójności bazy SQL i tagów. Rozbudowuje siatkę powiązań Gildii Permakulturowych.
+
+4.4 Gildia Alchemików (Kosmetologia i Asysta na Żywo)
+
+Alchemik: Zintegrowany przez API z e-bimbrownikiem. Bilansuje przepisy w czasie rzeczywistym i wyłapuje przeciwwskazania krzyżowe.
+
+Tinctorius (Mistrz Koloryzacji): Agent kosmetologiczny i fryzjerski (wiedza o hennie, indygo, cassii, modrzejcu).
+
+4.5 Gildia Architektów (Infrastruktura i DevOps)
+
+Architectus (Mistrz Konstrukcji i Strażnik Czasu):
+
+Cel: To Twoje ręce do pisania kodu. Agent potrafi modyfikować strukturę samego projektu (pisze widoki w Pythonie/Django, dodaje podstrony, ulepsza CSS i JS Laboratorium).
+
+System ratunkowy (Fail-safe): Architectus nieustannie monitoruje stabilność strony (np. przez pingowanie adresów URL lub odbieranie logów 500 Internal Server Error). Jeśli wygenerowany lub wdrożony kod "wysypie" Kwiatownika, Architectus automatycznie aktywuje procedurę Rollback – przywraca ostatni stabilny backup z repozytorium (np. Git) i restartuje serwer, upewniając się, że platforma zawsze działa dla użytkowników.
+
+Umiejętności (OpenClaw): write_python_code, update_html_templates, deploy_to_server, health_check_ping, git_rollback_to_stable.
+
+Priorytetowe Modele: Claude 3.5 Sonnet (obecnie najlepszy LLM na rynku do zaawansowanego pisania i debugowania kodu).
+
+5. Modelowanie Danych (Django ORM)
+
+Obecna architektura oparta na systemie plików (JSON) zostanie zmigrowana do potężnych, relacyjnych tabel PostgreSQL.
+
+5.1 Główne Modele (Szkic models.py)
+
+Plant
+
+slug (SlugField, PrimaryKey)
+
+nazwa_pl (CharField)
+
+nazwa_lat (CharField)
+
+rodzina (CharField)
+
+opis (TextField)
+
+is_toxic (BooleanField) - Kluczowe dla Auditora BHP.
+
+zastosowanie (JSONField)
+
+czesci_rosliny (JSONField)
+
+ciekawostki (JSONField) - Integracja z pasem Marquee.
+
+kalendarz_ogrodnika (JSONField) - Wymaga bogatego kalendarza czynności (siew, zbiór, wsparcie wzrostu) w każdym możliwym miesiącu.
+
+EnergyProfile
+
+plant (OneToOneField -> Plant)
+
+smak (CharField)
+
+termika (CharField)
+
+wilgotnosc (CharField)
+
+zywiol (CharField)
+
+opis (TextField)
+
+Recipe
+
+id (CharField/UUID, PrimaryKey)
+
+plant (ForeignKey -> Plant)
+
+tytul (CharField)
+
+typ (CharField - medyczne/kulinarne/kosmetyczne)
+
+zrodla (JSONField) - Wymóg systemu Traceability.
+
+klasyfikacja_dzialania (JSONField) - Kampo, Wu Xing.
+
+skladniki (JSONField)
+
+sposob_przygotowania (JSONField)
+
+PaganFestival (Zastępuje twarde kodowanie z astro_engine.py)
+
+nazwa (CharField)
+
+start_date (DateField)
+
+opis (TextField)
+
+symbolika (CharField)
+
+User & UserGrimoire
+
+Implementacja bazowego modelu AbstractUser.
+
+Zapisywanie publicznych/prywatnych notatek Dziennika Laboratoryjnego.
+
+Zapisywanie ulubionych roślin i wygenerowanych przepisów przez Alchemika.
+
+6. Harmonogram Migracji na Django (Plan 4-Tygodniowy)
+
+Tydzień 1: Fundamenty i Modelowanie Bazy Danych
+
+Inicjalizacja środowiska django-admin startproject kwiatownik_core.
+
+Zbudowanie architektury models.py odwzorowującej dotychczasowe pliki JSON.
+
+Napisanie skryptu (management command) python manage.py import_plants, który parsinguje folder data/plants/ i ładuje rekordy do SQLite (środowisko Dev).
+
+Aktywacja Panelu Administratora Django.
+
+Tydzień 2: Widoki, Szablony i Routing
+
+Przeniesienie folderów static/ i templates/. Adaptacja tagów Jinja/Flask na tagi Django DTL ({% url %} itp.).
+
+Stworzenie widoków z paginacją.
+
+Wdrożenie mikro-API (JsonResponse) obsługującego skrypty dynamiczne: wyszukiwarka terapeutyczna, drzewa gildii permakulturowych, podpowiedzi słów (keywords).
+
+Tydzień 3: Logika Biznesowa, Autoryzacja i Integracja AI
+
+Włączenie logowania i rejestracji (django.contrib.auth). Użytkownicy zyskują dostęp do zapisywania postępów (Grimoire).
+
+Stworzenie modułu alchemy w Django i połączenie go po HTTP z usługą Python z OpenClaw (Prawa Półkula).
+
+Wdrożenie zabezpieczeń na froncie (Czerwone Alerty) wywoływane zmienną is_toxic z modeli bazy danych.
+
+Tydzień 4: Optymalizacja, Zabezpieczenia i Automatyzacja Architekta
+
+Izolacja środowiska wtyczką python-dotenv (ukrycie SECRET_KEY, Kluczy OpenRouter, API Plant.id oraz zmiennych takich jak SEL_WIN sterujących zachowaniem agentów).
+
+Podpięcie darmowej, chmurowej bazy PostgreSQL na Render.com.
+
+Integracja Architectusa: Konfiguracja agenta DevOps do monitorowania repozytorium Git (Webhooki). Jeśli wdrożenie się nie powiedzie, agent natychmiast uruchamia skrypt Rollback.
+
+Zautomatyzowany Build Skrypt: pip install -r requirements.txt && python manage.py migrate && python manage.py collectstatic --noinput.
+
+7. Referencyjne Struktury Danych (Przykłady JSON)
+
+Aby zapewnić prawidłowe przetwarzanie przez agenta Herbariusa (mapowanie systemów medycznych) oraz Linguista (dynamiczna stylizacja kontekstowa), struktura JSON dla zaawansowanych receptur medycznych przyjmuje poniższą, znormalizowaną formę. Zwróć uwagę na pole pochodzenie, które determinuje ton opisu generowany przez sztuczną inteligencję.
+
+7.1 Receptura: Medycyna Morska i Celtycka
+
+{
+  "id": "celtycki_kompres_morski",
+  "tytul": "Celtycki Kompres Solny z Krasnorostów",
+  "typ": "medyczne_zewnetrzne_oklad",
+  "pochodzenie": [
+    "[Medycyna Morska i Celtycka]"
+  ],
+  "mechanizm_tworzenia": [
+    "Wzorzec 5 filarów",
+    "Synergia wchłaniania",
+    "Tropizm Organowy"
+  ],
+  "klasyfikacja_dzialania": {
+    "skalowanie_toksykologiczne": "Zioła Odżywcze i Normalizujące. Bardzo łagodne działanie tkankowe (morskie minerały).",
+    "matryca_wu_xing": {
+      "zywiol_leczony": "Ziemia (Tkanka mięśniowa - głębokie rany szarpane)",
+      "narzad_matczyny_do_wsparcia": "Ogień (Serce)",
+      "porada_matrycy": "Odbudowa wyrwanego mięsa (Ziemia) pożera ogrom energii Serca (Ogień). Pacjent musi bezwzględnie leżeć w cieple, by krew mogła bez przeszkód dopływać do uszkodzenia."
+    },
+    "triada_kampo": {
+      "cel_glowny": "Sui (Woda/Płyny)",
+      "wyjasnienie": "Zmusza wyrwane, wyschnięte brzegi do puszczenia nowych soków (Sui). Zapobiega zrostom rany w twardą jak kamień bliznę."
+    }
+  },
+  "wymogi_szamanskie_i_czasowe": {
+    "chronoterapia": "Kompres dzienny – zmieniać co 4-6 godzin, by nie dopuścić do całkowitego wyschnięcia alg na ranie.",
+    "astrologia_zbioru": "Algi pozyskiwane podczas odpływu w fazie nowiu, kiedy siły przyciągania oceanu są skoncentrowane.",
+    "dieta_i_zakazy": "Brak."
+  },
+  "skladniki": [
+    {
+      "nazwa": "Morszczyn pęcherzykowaty lub Listownica (Kelp)",
+      "czesc_rosliny": "plecha",
+      "ilosc": "1 duża garść",
+      "filar": "1_bazowy",
+      "smak_ajurweda": "słony_śluzowy",
+      "tropizm_organowy": "Skóra / Tarczyca (Rozmiękcza zeschniętą tkankę i wpycha w nią morskie sole odkażające.)",
+      "link_id": "morszczyn_pecherzykowaty"
+    },
+    {
+      "nazwa": "Liść babki szerokolistnej",
+      "czesc_rosliny": "świeży liść",
+      "ilosc": "1 garść",
+      "filar": "2_wzmocnienie",
+      "smak_ajurweda": "słodki_chłodny",
+      "tropizm_organowy": "Skóra (Wymusza gwałtowny podział komórek mięsa, ratując ubytek przed martwicą.)",
+      "link_id": "babka_szerokolistna"
+    },
+    {
+      "nazwa": "Kwiat nagietka",
+      "czesc_rosliny": "kwiat (susz)",
+      "ilosc": "1 łyżka",
+      "filar": "3_minister",
+      "smak_ajurweda": "słodki_lekko_gorzki",
+      "tropizm_organowy": "Wątroba / Skóra (zapobiega infekcjom)",
+      "link_id": "nagietek_lekarski"
+    },
+    {
+      "nazwa": "Czysta woda morska (lub roztwór grubej soli morskiej)",
+      "czesc_rosliny": "nośnik (woda)",
+      "ilosc": "1 szklanka",
+      "filar": "4_poslaniec",
+      "smak_ajurweda": "słony",
+      "tropizm_organowy": "Nerki / Komórki skóry (Rozpuszcza stężałą krew i zmusza ranę do ciągłego łzawienia i samooczyszczania.)",
+      "link_id": null
+    },
+    {
+      "nazwa": "Ziele krwawnika",
+      "czesc_rosliny": "ziele (świeże)",
+      "ilosc": "1 mała gałązka",
+      "filar": "5_korektor",
+      "smak_ajurweda": "gorzki_cierpki",
+      "tropizm_organowy": "Naczynia krwionośne (koryguje zbytnie 'rozmiękczenie' tkanki przez algi)",
+      "link_id": "krwawnik_pospolity"
+    }
+  ],
+  "sposob_przygotowania": [
+    "Faza 1 (Moczenie): Suche algi i nagietek zalać zimną wodą morską na 30 minut, aż plechy staną się grube, miękkie i zaczną wydzielać żelowy śluz.",
+    "Faza 2 (Zioła lądowe): Babkę i krwawnik umyć i delikatnie ugnieść w dłoniach, aż puszczą zielony sok.",
+    "Faza 3 (Składanie kompresu): Na lnianej ściereczce ułożyć warstwę ugniecionej babki, na to śluzowate algi wymieszane z nagietkiem i krwawnikiem."
+  ],
+  "stosowanie_i_dawkowanie": {
+    "okolicznosci_stosowania": "Rozległe rany szarpane, zdarcia naskórka na dużej powierzchni (np. po upadku ze skały lub z konia). Kompres zapobiega martwicy, powstawaniu suchych, pękających strupów i bliznowców.",
+    "dawkowanie_standardowe": "Przykładać wilgotny kompres bezpośrednio na ranę. Owinąć luźno bandażem. Zmieniać, gdy kompres zacznie wysychać.",
+    "skalowanie_pacjenta": "Ultra-bezpieczny środek. Może być stosowany na bardzo delikatnej skórze dzieci."
+  },
+  "wlasciwosci_fizyczne": {
+    "barwienie_skory": "Nie barwi. Oczyszcza skórę, nadając jej białawy odcień na skutek maceracji w słonej wodzie.",
+    "barwienie_ubran": "Mokry kompres może przemiękać, zostawiając lekkie, słone zacieki na ubraniach (łatwo spieralne).",
+    "konsystencja_i_slady": "Chłodząca, mokra, przypominająca galaretę masa (dzięki śluzom z krasnorostów)."
+  },
+  "bezpieczenstwo_i_interakcje": {
+    "interakcje_z_lekami": "Brak interakcji. Naturalny jod zawarty w algach działa jak łagodna, powolna jodyna.",
+    "ostrzezenia": "Nie dopuszczać do zaschnięcia kompresu (alg) na 'skorupę' na otwartej ranie – będzie go bardzo boleśnie usunąć."
+  }
+}
+
+
+7.2 Receptura: Tradycja Słowiańska
+
+{
+  "id": "slowianski_plaster_polny",
+  "tytul": "Słowiański Plaster Polny z Babki i Pajęczyny",
+  "typ": "medyczne_zewnetrzne_oklad",
+  "pochodzenie": [
+    "[Tradycja Słowiańska / Polska]"
+  ],
+  "mechanizm_tworzenia": [
+    "Wzorzec 5 filarów",
+    "Doktryna Sygnatur",
+    "Tropizm Organowy"
+  ],
+  "klasyfikacja_dzialania": {
+    "skalowanie_toksykologiczne": "Zioła Normalizujące. Środek wysoce bezpieczny, łagodzący rany w warunkach polowych.",
+    "matryca_wu_xing": {
+      "zywiol_leczony": "Metal (Skóra - przerwanie ciągłości i krwawienie)",
+      "narzad_matczyny_do_wsparcia": "Ziemia (Śledziona)",
+      "porada_matrycy": "Ciało (Metal) zostało przerwane. By Ziemia mogła ulepić nowe mięso, nakarm zranionego gęstą polewką z korzeni, chroniąc go przed osłabieniem."
+    },
+    "triada_kampo": {
+      "cel_glowny": "Ketsu (Krew) i Ki (Energia)",
+      "wyjasnienie": "Mechanicznie i gwałtownie zamyka otwarte naczynia, powstrzymując krew (Ketsu) przed ucieczką, a tkankę przed rwącym bólem (Ki)."
+    }
+  },
+  "wymogi_szamanskie_i_czasowe": {
+    "chronoterapia": "Rozwiązanie nagłe, ratunkowe (w terenie). Działa najlepiej od razu po zranieniu.",
+    "astrologia_zbioru": "Liście babki należy zrywać lewą dłonią w stronę słońca, co według dawnych wierzeń zamykało w nich życiodajną energię.",
+    "dieta_i_zakazy": "Brak zaleceń."
+  },
+  "skladniki": [
+    {
+      "nazwa": "Świeży liść babki lancetowatej",
+      "czesc_rosliny": "liść",
+      "ilosc": "3-4 duże liście",
+      "filar": "1_bazowy",
+      "smak_ajurweda": "słodki_chłodny",
+      "tropizm_organowy": "Skóra / Płuca (Wyciąga żar z rany i zmusza rozdarte mięso do zrostu.)",
+      "link_id": "babka_lancetowata"
+    },
+    {
+      "nazwa": "Świeże ziele krwawnika",
+      "czesc_rosliny": "liść",
+      "ilosc": "1 mały listek",
+      "filar": "2_wzmocnienie",
+      "smak_ajurweda": "gorzki_cierpki",
+      "tropizm_organowy": "Naczynia krwionośne (Gwałtownie ścina i zamyka uciekającą krew.)",
+      "link_id": "krwawnik_pospolity"
+    },
+    {
+      "nazwa": "Czysta pajęczyna (z lasu lub stodoły)",
+      "czesc_rosliny": "materiał odzwierzęcy",
+      "ilosc": "1 mały kłębek",
+      "filar": "3_minister",
+      "smak_ajurweda": "bez smaku",
+      "tropizm_organowy": "Skóra (Pajęczy splot działa jak gęsty bandaż, tworząc rusztowanie dla nowego strupa.)",
+      "link_id": null
+    },
+    {
+      "nazwa": "Czysta woda (lub własna ślina w ostateczności)",
+      "czesc_rosliny": "nośnik",
+      "ilosc": "kilka kropel",
+      "filar": "4_poslaniec",
+      "smak_ajurweda": "bez smaku",
+      "tropizm_organowy": "Krew (Wydobywa soki z liści, zmuszając je do natychmiastowego uderzenia.)",
+      "link_id": null
+    },
+    {
+      "nazwa": "Liść dzikiej maliny",
+      "czesc_rosliny": "liść",
+      "ilosc": "1 listek",
+      "filar": "5_korektor",
+      "smak_ajurweda": "cierpki",
+      "tropizm_organowy": "Skóra (Chłodzi brzegi rany, chroniąc je przed rozognieniem.)",
+      "link_id": "malina_wlasciwa"
+    }
+  ],
+  "sposob_przygotowania": [
+    "Faza 1 (Przygotowanie w terenie): Liście babki, krwawnika i maliny opłukać (jeśli jest dostęp do wody) lub przetrzeć z kurzu.",
+    "Faza 2 (Miażdżenie): Zioła rozgnieść w dłoniach, roztłuc tępym kamieniem lub – zgodnie z dawną tradycją – przeżuć przez chwilę w ustach, aby enzymy ze śliny pomogły uwolnić soki.",
+    "Faza 3 (Aplikacja pajęczyny): Zwinąć pajęczynę w mały wacik i położyć bezpośrednio na krwawiące miejsce.",
+    "Faza 4 (Formowanie plastra): Nałożoną pajęczynę przykryć papką z ugniecionych ziół."
+  ],
+  "stosowanie_i_dawkowanie": {
+    "okolicznosci_stosowania": "Skaleczenia, cięcia nożem przy pracy w polu, zranienia na szlaku, krwawiące otarcia.",
+    "dawkowanie_standardowe": "Przyłożyć papkę z ziołami na pajęczynę, owinąć większym, całym liściem łopianu lub babki szerokolistnej i przewiązać prowizorycznie trawą, sznurkiem lub lnem. Zostawić na 2-4 godziny.",
+    "skalowanie_pacjenta": "Bezpieczne dla każdego wieku."
+  },
+  "wlasciwosci_fizyczne": {
+    "barwienie_skory": "Sok z rozgniecionych ziół lekko barwi skórę na zielono.",
+    "barwienie_ubran": "Pozostawia trudne do sprania, zielone plamy z chlorofilu.",
+    "konsystencja_i_slady": "Mokra, rześka papka liściasta, chłodząca piekącą ranę."
+  },
+  "bezpieczenstwo_i_interakcje": {
+    "interakcje_z_lekami": "Brak.",
+    "ostrzezenia": "Jeśli do zwilżenia ziół użyto śliny, kompres należy zdjąć po kilku godzinach i przemyć ranę, aby zapobiec nadkażeniu bakteryjnemu flory jamy ustnej. Pajęczynę pozyskiwać tylko z miejsc wolnych od pleśni."
+  }
+}
+
+
+8. Lista ToDo (Roadmap) - Dalszy Rozwój
+
+W planach na przyszłe miesiące (po fazie 4-tygodniowej migracji) znajduje się wdrożenie następujących funkcji uatrakcyjniających interfejs i proces nauki:
+
+[ ] Rozszerzony Kalendarz Pielęgnacji (Wsparcie Wzrostu):
+Obecny kalendarz biodynamiczny (zbieranie, sianie) zostanie rozbudowany o dokładne instrukcje pielęgnacyjne "miesiąc po miesiącu". Użytkownik dowie się z nich, jakie czynności (np. ściółkowanie, przycinanie formujące, specyficzne nawożenie) należy wykonać w poszczególnych miesiącach, aby maksymalnie wesprzeć wzrost, obfite kwitnienie i zdrowie danej rośliny. Za upewnienie się, że każda roślina posiada taki kompletny, bogaty kalendarz będzie odpowiadał Agent Botanicus.
+
+[ ] Dynamiczny Cykl Fenologiczny (Sezonowe Zdjęcia):
+Zamiast jednego, statycznego zdjęcia rośliny, system zyska funkcję wyświetlania "żywych", dynamicznych fotografii. Aplikacja będzie odczytywać obecny miesiąc kalendarzowy użytkownika, a agent Botanicus połączony z bazą zdjęciową (np. Wikimedia Commons API) pobierze i zaprezentuje fotografię ukazującą, jak dana roślina powinna wyglądać dokładnie w tym momencie na zewnątrz. Na przykład dla mniszka lekarskiego:
+
+Marzec: Młode, zielone rozety liści przy ziemi.
+
+Maj: Żółty dywan kwiatów.
+
+Czerwiec: Białe dmuchawce z nasionami.
+
+Listopad: Uschnięte resztki i obumarłe liście ukrywające się pod śniegiem.

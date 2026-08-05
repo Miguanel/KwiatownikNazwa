@@ -838,3 +838,179 @@ function renderBestiary() {
     `).join('');
 }
 renderBestiary();
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Zakładam, że plantsData i recipesData są już załadowane globalnie w index.html
+    const searchInput = document.getElementById('multiSearchInput');
+    const tagsContainer = document.getElementById('activeTagsContainer');
+    const plantsCarousel = document.getElementById('plantsCarousel');
+    const recipesCarousel = document.getElementById('recipesCarousel');
+
+    let activeTags = [];
+    let currentInputValue = "";
+
+    // --- 1. OBSŁUGA WYSZUKIWARKI I TAGÓW ---
+
+    searchInput.addEventListener('input', (e) => {
+        currentInputValue = e.target.value.toLowerCase().trim();
+        renderFilteredViews();
+    });
+
+    searchInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            const tagText = searchInput.value.trim().toLowerCase();
+            if (tagText && !activeTags.includes(tagText)) {
+                activeTags.push(tagText);
+                renderTags();
+                searchInput.value = '';
+                currentInputValue = '';
+                renderFilteredViews();
+            }
+        }
+    });
+
+    function renderTags() {
+        tagsContainer.innerHTML = '';
+        activeTags.forEach(tag => {
+            const tagEl = document.createElement('span');
+            tagEl.className = 'search-tag';
+            tagEl.innerHTML = `${tag} <i class="ra ra-cancel"></i>`;
+            tagEl.onclick = () => {
+                activeTags = activeTags.filter(t => t !== tag);
+                renderTags();
+                renderFilteredViews();
+            };
+            tagsContainer.appendChild(tagEl);
+        });
+    }
+
+    // --- 2. FILTROWANIE ---
+
+    function itemMatchesFilters(itemText) {
+        const text = itemText.toLowerCase();
+        // Element musi zawierać aktualnie wpisywany tekst w inpucie...
+        if (currentInputValue && !text.includes(currentInputValue)) return false;
+        // ...oraz WSZYSTKIE zatwierdzone tagi
+        for (let tag of activeTags) {
+            if (!text.includes(tag)) return false;
+        }
+        return true;
+    }
+
+    function renderFilteredViews() {
+        // Zabezpieczenie danych
+        const pData = typeof plantsData !== 'undefined' ? plantsData : [];
+        const rData = typeof recipesData !== 'undefined' ? recipesData : [];
+
+        // Filtrowanie Bestiariusza
+        const filteredPlants = pData.filter(p => {
+            const searchArea = `${p.nazwa_pl} ${p.rodzina} ${p.opis || ''}`;
+            return itemMatchesFilters(searchArea);
+        });
+
+        // Filtrowanie Przepisów
+        const filteredRecipes = rData.filter(r => {
+            let ings = Array.isArray(r.skladniki) ? r.skladniki.map(s => typeof s === 'object' ? s.nazwa : s).join(' ') : r.skladniki;
+            const searchArea = `${r.tytul} ${r.roslina} ${ings}`;
+            return itemMatchesFilters(searchArea);
+        });
+
+        drawCarousel(plantsCarousel, filteredPlants, 'plant');
+        drawCarousel(recipesCarousel, filteredRecipes, 'recipe');
+    }
+
+    function drawCarousel(container, items, type) {
+        container.innerHTML = '';
+        if (items.length === 0) {
+            container.innerHTML = '<span style="color:#777;">Brak wyników w tej kategorii.</span>';
+            return;
+        }
+
+        items.forEach(item => {
+            const card = document.createElement('div');
+            card.className = 'mini-card';
+            if (type === 'plant') {
+                const img = item.zdjecie_url || '';
+                card.innerHTML = `
+                    <div style="height:100px; width:100%; background-image:url('${img}'); background-size:cover; border-radius:4px;"></div>
+                    <h4 style="margin-top:10px;">${item.nazwa_pl}</h4>
+                `;
+            } else {
+                card.innerHTML = `
+                    <i class="ra ra-potion" style="font-size: 3rem; color:#8a9a5b; margin-top:20px;"></i>
+                    <h4 style="margin-top:15px;">${item.tytul}</h4>
+                `;
+            }
+            container.appendChild(card);
+        });
+    }
+
+    // --- 3. AUTOMATYCZNE PRZEWIJANIE (Prawa -> Lewa) ---
+
+    // --- AUTOMATYCZNE PRZEWIJANIE Z KLONOWANIEM I OPTYMALIZACJĄ WYDAJNOŚCI ---
+
+    function autoScroll(wrapperId) {
+        const wrapper = document.getElementById(wrapperId);
+        if (!wrapper) return;
+        const content = wrapper.querySelector('.auto-scroll-content');
+        if (!content) return;
+
+        // 1. Klonowanie zawartości dla uzyskania nieskończonej pętli bez przeskoków
+        content.innerHTML += content.innerHTML;
+
+        let animationId = null;
+        let isPaused = false;
+        let isVisible = false;
+
+        // 2. Optymalizacja wydajności: IntersectionObserver (animuje tylko wtedy, gdy element widać na ekranie)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                isVisible = entry.isIntersecting;
+                if (isVisible && !animationId && !isPaused) {
+                    startAnimation();
+                } else if (!isVisible && animationId) {
+                    cancelAnimationFrame(animationId);
+                    animationId = null;
+                }
+            });
+        }, { threshold: 0.1 });
+
+        observer.observe(wrapper);
+
+        // 3. Oszczędność zasobów: Pauzowanie animacji po najechaniu myszką lub dotknięciu ekranu
+        wrapper.addEventListener('mouseenter', () => { isPaused = true; });
+        wrapper.addEventListener('mouseleave', () => {
+            isPaused = false;
+            if (isVisible && !animationId) startAnimation();
+        });
+        wrapper.addEventListener('touchstart', () => { isPaused = true; }, { passive: true });
+        wrapper.addEventListener('touchend', () => {
+            isPaused = false;
+            if (isVisible && !animationId) startAnimation();
+        }, { passive: true });
+
+        function startAnimation() {
+            if (animationId) return;
+
+            function step() {
+                if (!isPaused && isVisible) {
+                    wrapper.scrollLeft += 1;
+
+                    // Gdy dojdziemy do połowy (koniec oryginalnej listy), wracamy na początek bez skoku wizualnego
+                    const halfWidth = wrapper.scrollWidth / 2;
+                    if (wrapper.scrollLeft >= halfWidth) {
+                        wrapper.scrollLeft = 0;
+                    }
+                }
+                animationId = requestAnimationFrame(step);
+            }
+            animationId = requestAnimationFrame(step);
+        }
+    }
+
+    // Inicjalizacja
+    renderFilteredViews();
+    autoScroll('plantsWrapper');
+    autoScroll('recipesWrapper');
+});

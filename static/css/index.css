@@ -364,3 +364,74 @@
         transform: translateX(-50%) translateY(5px) !important;
     }
 }
+
+.search-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    min-height: 30px; /* Zapobiega skakaniu UI, gdy nie ma tagów */
+}
+
+.search-tag {
+    background-color: #8a9a5b;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.search-tag:hover {
+    background-color: #9b4b4b; /* Kolor przy najechaniu (sugeruje usunięcie) */
+}
+
+.carousel-section {
+    margin: 30px 0;
+    overflow: hidden; /* Odcina elementy wychodzące poza ekran */
+}
+
+.auto-scroll-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none; /* Ukrywa scrollbar w Firefox */
+    -ms-overflow-style: none;
+}
+
+.auto-scroll-wrapper::-webkit-scrollbar {
+    display: none; /* Ukrywa scrollbar w Chrome/Safari */
+}
+
+.auto-scroll-content {
+    display: flex;
+    gap: 15px;
+    padding: 10px 20px;
+    width: max-content; /* Pozwala zawartości rozciągać się w poziomie */
+}
+
+/* Przykładowa karta w karuzeli */
+.mini-card {
+    width: 180px;
+    height: 220px;
+    background: #fdfbf7;
+    border: 2px solid #5a4f41;
+    border-radius: 8px;
+    padding: 10px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
