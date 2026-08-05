@@ -1,5 +1,428 @@
-
 [
+  {
+    "tytul": "Szałwiowe Cukierki na Miodzie",
+    "typ": "kulinarne",
+    "roslina": "Szałwia lekarska",
+    "slug": "szalwia_lekarska",
+    "pochodzenie": ["Apteczka Klasztorna", "Cukiernictwo Ziołowe"],
+    "mechanizm_tworzenia": "Karmelizacja",
+    "skladniki": [
+      { "nazwa": "Miód (np. lipowy lub wielokwiatowy)", "ilosc": "1 szklanka", "filar": "1_bazowy" },
+      { "nazwa": "Mocny napar z szałwii", "ilosc": "1/4 szklanki", "filar": "2_wzmocnienie" },
+      { "nazwa": "Sok z cytryny", "ilosc": "1 łyżka", "filar": "3_minister" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: W rondelku połączyć miód, napar z szałwii i sok z cytryny.",
+      "Krok 2: Gotować na małym ogniu, stale mieszając, aż masa osiągnie temperaturę 150°C (faza twardego karmelu).",
+      "Krok 3: Masę wylać do silikonowych foremek lub na naoliwiony papier do pieczenia (tworząc małe pastylki).",
+      "Krok 4: Po ostudzeniu oprószyć cukrem pudrem, by się nie sklejały."
+    ],
+    "stosowanie_i_dawkowanie": {
+      "okolicznosci_stosowania": "Ból gardła, chrypka, stany zapalne jamy ustnej.",
+      "dawkowanie_standardowe": "Ssać powoli 3-4 cukierki dziennie."
+    }
+  },
+  {
+    "tytul": "Żelki z Kwiatów Czarnego Bzu",
+    "typ": "kulinarne",
+    "roslina": "Bez czarny",
+    "slug": "bez_czarny",
+    "pochodzenie": ["Domowe Przetwory", "Dla Dzieci"],
+    "mechanizm_tworzenia": "Żelowanie",
+    "skladniki": [
+      { "nazwa": "Syrop z kwiatów czarnego bzu", "ilosc": "150 ml", "filar": "1_bazowy" },
+      { "nazwa": "Woda", "ilosc": "50 ml", "filar": "4_poslaniec" },
+      { "nazwa": "Agar-agar lub żelatyna", "ilosc": "2 łyżki", "filar": "2_wzmocnienie" },
+      { "nazwa": "Sok z cytryny", "ilosc": "1 łyżeczka", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Wymieszać wodę z agarem/żelatyną i pozostawić do napęcznienia.",
+      "Krok 2: Podgrzać powoli syrop z bzu (nie gotować, by nie stracić witamin).",
+      "Krok 3: Wlać napęczniały zagęstnik i podgrzewać, aż całkowicie się rozpuści.",
+      "Krok 4: Przelać do małych foremek i schłodzić w lodówce przez 2 godziny."
+    ],
+    "klasyfikacja_dzialania": {
+      "triada_kampo": { "cel_glowny": "Sui (Płyny)", "wyjasnienie": "Nawilża płuca i wspomaga odporność przeciw wirusom." }
+    }
+  },
+  {
+    "tytul": "Leśne Krówki z Lukrecją",
+    "typ": "kulinarne",
+    "roslina": "Lukrecja gładka",
+    "slug": "lukrecja_gladka",
+    "pochodzenie": ["Cukiernictwo Tradycyjne"],
+    "mechanizm_tworzenia": "Redukcja mleczna",
+    "skladniki": [
+      { "nazwa": "Mleko skondensowane słodzone", "ilosc": "1 puszka (400g)", "filar": "1_bazowy" },
+      { "nazwa": "Masło", "ilosc": "50 g", "filar": "4_poslaniec" },
+      { "nazwa": "Sproszkowany korzeń lukrecji", "ilosc": "1 łyżka", "filar": "2_wzmocnienie" },
+      { "nazwa": "Ekstrakt z wanilii", "ilosc": "kilka kropel", "filar": "3_minister" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Masło rozpuścić w rondelku o grubym dnie.",
+      "Krok 2: Wlać mleko, dodać sproszkowaną lukrecję i wanilię.",
+      "Krok 3: Gotować na wolnym ogniu przez ok. 30-40 minut, ciągle mieszając, aż masa zgęstnieje i nabierze karmelowego koloru.",
+      "Krok 4: Wylać do formy wyłożonej papierem, po ostygnięciu pokroić w kostkę."
+    ]
+  },
+  {
+    "tytul": "Fioletowy Miód Lawendowy",
+    "typ": "kulinarne",
+    "roslina": "Lawenda wąskolistna",
+    "slug": "lawenda_waskolistna",
+    "pochodzenie": ["Prowansalska Alchemia"],
+    "mechanizm_tworzenia": "Maceracja sucha",
+    "skladniki": [
+      { "nazwa": "Suszone kwiaty lawendy kulinarnej", "ilosc": "3 łyżki", "filar": "2_wzmocnienie" },
+      { "nazwa": "Jasny, płynny miód (np. akacjowy)", "ilosc": "500 g", "filar": "1_bazowy" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Kwiaty lawendy umieścić w czystym słoiku.",
+      "Krok 2: Zalać płynnym miodem.",
+      "Krok 3: Słoik zakręcić i odstawić w ciepłe miejsce na 2-3 tygodnie, codziennie go odwracając.",
+      "Krok 4: Przed spożyciem można (ale nie trzeba) miód lekko podgrzać i przecedzić przez sitko."
+    ],
+    "klasyfikacja_dzialania": {
+      "matryca_wu_xing": { "zywiol_leczony": "Ogień", "narzad_matczyny_do_wsparcia": "Serce", "porada_matrycy": "Wycisza emocje, uspokaja umysł przed snem." }
+    }
+  },
+  {
+    "tytul": "Czekoladowe Trufle Miętowo-Miodowe",
+    "typ": "kulinarne",
+    "roslina": "Mięta pieprzowa",
+    "slug": "mieta_pieprzowa",
+    "pochodzenie": ["Cukiernictwo Wegańskie"],
+    "mechanizm_tworzenia": "Mieszanie na zimno",
+    "skladniki": [
+      { "nazwa": "Ciemna czekolada (min. 70%)", "ilosc": "200 g", "filar": "1_bazowy" },
+      { "nazwa": "Miód gryczany", "ilosc": "3 łyżki", "filar": "4_poslaniec" },
+      { "nazwa": "Świeże liście mięty", "ilosc": "duża garść", "filar": "2_wzmocnienie" },
+      { "nazwa": "Kakao naturalne", "ilosc": "do obtoczenia", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Czekoladę rozpuścić w kąpieli wodnej i lekko przestudzić.",
+      "Krok 2: Miętę zblendować z miodem na gładki, zielony mus.",
+      "Krok 3: Wymieszać płynną czekoladę z miętowymi miodem. Odstawić do lodówki na godzinę, aż masa zesztywnieje.",
+      "Krok 4: Formować małe kuleczki i obtaczać w kakao."
+    ]
+  },
+  {
+    "tytul": "Słoneczne Ciasteczka Rumiankowe",
+    "typ": "kulinarne",
+    "roslina": "Rumianek pospolity",
+    "slug": "rumianek_pospolity",
+    "pochodzenie": ["Ziołowe Wypieki"],
+    "mechanizm_tworzenia": "Pieczenie",
+    "skladniki": [
+      { "nazwa": "Mąka pszenna", "ilosc": "250 g", "filar": "2_wzmocnienie" },
+      { "nazwa": "Masło", "ilosc": "150 g", "filar": "4_poslaniec" },
+      { "nazwa": "Miód lipowy", "ilosc": "100 g", "filar": "1_bazowy" },
+      { "nazwa": "Suszone koszyczki rumianku (rozgniecione)", "ilosc": "3 łyżki", "filar": "3_minister" },
+      { "nazwa": "Szczypta soli", "ilosc": "1 sztuka", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Masło utrzeć z miodem na puch.",
+      "Krok 2: Dodać mąkę, sól oraz sproszkowany rumianek, zagnieść ciasto.",
+      "Krok 3: Schłodzić w lodówce przez 30 minut.",
+      "Krok 4: Formować małe krążki i piec w 180°C przez ok. 12-15 minut, aż zbrązowieją."
+    ]
+  },
+  {
+    "tytul": "Złote Karmelki z Młodych Pędów Sosny",
+    "typ": "kulinarne",
+    "roslina": "Sosna zwyczajna",
+    "slug": "sosna_zwyczajna",
+    "pochodzenie": ["Cukiernictwo Leśne"],
+    "mechanizm_tworzenia": "Karmelizacja Syropu",
+    "skladniki": [
+      { "nazwa": "Syrop z pędów sosny (domowy)", "ilosc": "200 ml", "filar": "1_bazowy" },
+      { "nazwa": "Cukier", "ilosc": "50 g", "filar": "2_wzmocnienie" },
+      { "nazwa": "Masło", "ilosc": "1 łyżka", "filar": "4_poslaniec" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: W rondlu wymieszać syrop z pędów sosny, cukier i masło.",
+      "Krok 2: Gotować na wolnym ogniu, nie mieszając zbytnio, aż kropla masy upuszczona do zimnej wody stwardnieje.",
+      "Krok 3: Wylać masę na nasmarowany olejem marmurowy blat lub papier do pieczenia.",
+      "Krok 4: Kiedy lekko przestygnie, naciąć nożem w kratkę lub formować podłużne cukierki."
+    ],
+    "stosowanie_i_dawkowanie": {
+      "okolicznosci_stosowania": "Na suchy kaszel, jako naturalny sposób odtykania dróg oddechowych."
+    }
+  },
+  {
+    "tytul": "Pomarańczowe Pralinki z Pyłkiem i Nagietkiem",
+    "typ": "kulinarne",
+    "roslina": "Nagietek lekarski",
+    "slug": "nagietek_lekarski",
+    "pochodzenie": ["Superfoods", "Dania Surowe"],
+    "mechanizm_tworzenia": "Ucieranie",
+    "skladniki": [
+      { "nazwa": "Płatki nagietka (suszone)", "ilosc": "2 łyżki", "filar": "1_bazowy" },
+      { "nazwa": "Pyłek pszczeli", "ilosc": "3 łyżki", "filar": "2_wzmocnienie" },
+      { "nazwa": "Zblendowane orzechy nerkowca", "ilosc": "150 g", "filar": "3_minister" },
+      { "nazwa": "Miód naturalny", "ilosc": "3 łyżki", "filar": "4_poslaniec" },
+      { "nazwa": "Olej kokosowy", "ilosc": "1 łyżka", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: W blenderze zmielić pyłek pszczeli z płatkami nagietka i orzechami.",
+      "Krok 2: Dodać miód i stopiony olej kokosowy, zmiksować na plastyczną masę.",
+      "Krok 3: Formować małe kuleczki w dłoniach.",
+      "Krok 4: Opcjonalnie obtoczyć w dodatkowych płatkach nagietka i schłodzić."
+    ]
+  },
+  {
+    "tytul": "Gorzka Chałwa z Korzeniem Mniszka",
+    "typ": "kulinarne",
+    "roslina": "Mniszek lekarski",
+    "slug": "mniszek_lekarski",
+    "pochodzenie": ["Kuchnia Turecka", "Ziołowa Adaptacja"],
+    "mechanizm_tworzenia": "Mieszanie na ciepło",
+    "skladniki": [
+      { "nazwa": "Pasta Tahini (z sezamu)", "ilosc": "200 g", "filar": "1_bazowy" },
+      { "nazwa": "Miód płynny", "ilosc": "100 g", "filar": "2_wzmocnienie" },
+      { "nazwa": "Prażony i zmielony korzeń mniszka", "ilosc": "2 łyżki", "filar": "3_minister" },
+      { "nazwa": "Ekstrakt waniliowy", "ilosc": "kilka kropel", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Miód podgrzać lekko w rondelku (tylko do upłynnienia, nie gotować!).",
+      "Krok 2: Dodać pastę tahini, wanilię oraz zmielony korzeń mniszka (który doda chałwie głębokiego, kawowo-gorzkawego smaku).",
+      "Krok 3: Wymieszać dokładnie do połączenia, a następnie przełożyć do płaskiego pojemnika wyłożonego folią.",
+      "Krok 4: Schłodzić w lodówce przez 24 godziny, aby masa nabrała kruchości."
+    ]
+  },
+  {
+    "tytul": "Podbiałowe Lizaki na Chrypkę",
+    "typ": "kulinarne",
+    "roslina": "Podbiał pospolity",
+    "slug": "podbial_pospolity",
+    "pochodzenie": ["Cukiernictwo Apteczne"],
+    "mechanizm_tworzenia": "Karmelizacja",
+    "skladniki": [
+      { "nazwa": "Cukier trzcinowy", "ilosc": "1 szklanka", "filar": "1_bazowy" },
+      { "nazwa": "Mocny odwar z kwiatów i liści podbiału", "ilosc": "1/2 szklanki", "filar": "2_wzmocnienie" },
+      { "nazwa": "Syrop glukozowy lub miód", "ilosc": "2 łyżki", "filar": "4_poslaniec" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Wymieszać cukier z odwarem ziołowym i miodem w garnku.",
+      "Krok 2: Doprowadzić do wrzenia i gotować bez mieszania (aby cukier się nie skrystalizował) do osiągnięcia temp. 145-150°C.",
+      "Krok 3: Gorącą masę wylać ostrożnie na silikonową matę, formując kółka.",
+      "Krok 4: W środek każdego kółka natychmiast wcisnąć drewniany patyczek. Zostawić do stwardnienia."
+    ]
+  },
+  {
+    "tytul": "Tymiankowo-Miodowe Krople Zdrowia",
+    "typ": "kulinarne",
+    "roslina": "Tymianek właściwy",
+    "slug": "tymianek_wlasciwy",
+    "pochodzenie": ["Ziołolecznictwo Średniowieczne"],
+    "mechanizm_tworzenia": "Utwardzanie syropu",
+    "skladniki": [
+      { "nazwa": "Miód wielokwiatowy", "ilosc": "200 g", "filar": "1_bazowy" },
+      { "nazwa": "Suszony tymianek (zmielony na pył)", "ilosc": "1 czubata łyżka", "filar": "2_wzmocnienie" },
+      { "nazwa": "Sok z cytryny", "ilosc": "2 łyżki", "filar": "3_minister" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Miód umieścić w rondlu, dodać cytrynę i pył tymiankowy.",
+      "Krok 2: Gotować na małym ogniu, aż mieszanka zacznie mocno bąbelkować i gęstnieć.",
+      "Krok 3: Sprawdzić gotowość, upuszczając kroplę na zimny talerzyk – jeśli od razu zastygnie, masa jest gotowa.",
+      "Krok 4: Wyciskać małe kropelki na papier do pieczenia. Po stwardnieniu przechowywać w szczelnym pojemniku."
+    ],
+    "klasyfikacja_dzialania": {
+      "triada_kampo": { "cel_glowny": "Tokuso (Toksyny)", "wyjasnienie": "Silne działanie odkażające, idealne w początkowych fazach infekcji gardła." }
+    }
+  },
+  {
+    "tytul": "Batoniki Energetyczne z Pokrzywą",
+    "typ": "kulinarne",
+    "roslina": "Pokrzywa zwyczajna",
+    "slug": "pokrzywa_zwyczajna",
+    "pochodzenie": ["Superfoods", "Dietetyka Sportowa"],
+    "mechanizm_tworzenia": "Tłoczenie na zimno",
+    "skladniki": [
+      { "nazwa": "Daktyle (miękkie)", "ilosc": "200 g", "filar": "1_bazowy" },
+      { "nazwa": "Migdały i pestki słonecznika", "ilosc": "150 g", "filar": "3_minister" },
+      { "nazwa": "Proszek z suszonej pokrzywy", "ilosc": "2 łyżki", "filar": "2_wzmocnienie" },
+      { "nazwa": "Miód", "ilosc": "1 łyżka", "filar": "4_poslaniec" },
+      { "nazwa": "Nasiona chia", "ilosc": "1 łyżka", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Daktyle, migdały i pestki zblendować do uzyskania lepkiej masy.",
+      "Krok 2: Dodać miód, nasiona chia oraz sproszkowaną pokrzywę.",
+      "Krok 3: Dokładnie wyrobić masę dłońmi (będzie miała intensywnie zielonkawy odcień).",
+      "Krok 4: Uformować prostokąt, owinąć w folię, schłodzić przez 2 godziny i pokroić na batoniki."
+    ]
+  },
+  {
+    "tytul": "Królewski Marcepan z Płatkami Róży",
+    "typ": "kulinarne",
+    "roslina": "Róża dzika",
+    "slug": "roza_dzika",
+    "pochodzenie": ["Kuchnia Orientalna i Klasztorna"],
+    "mechanizm_tworzenia": "Ucieranie",
+    "skladniki": [
+      { "nazwa": "Mielone migdały (mączka migdałowa)", "ilosc": "200 g", "filar": "1_bazowy" },
+      { "nazwa": "Miód (najlepiej różany lub akacjowy)", "ilosc": "100 g", "filar": "4_poslaniec" },
+      { "nazwa": "Woda różana", "ilosc": "1 łyżka", "filar": "3_minister" },
+      { "nazwa": "Suszone, roztarte płatki dzikiej róży", "ilosc": "2 łyżki", "filar": "2_wzmocnienie" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Wymieszać w misce mączkę migdałową i płatki dzikiej róży.",
+      "Krok 2: Stopniowo dodawać miód i wodę różaną, wyrabiając rękoma jak ciasto.",
+      "Krok 3: Gdy masa będzie elastyczna i lśniąca, zwinąć w wałek i schłodzić w lodówce.",
+      "Krok 4: Kroić na cienkie plasterki lub lepić z niej ozdobne figurki."
+    ]
+  },
+  {
+    "tytul": "Rozmarynowy Karmel z Solą Morską",
+    "typ": "kulinarne",
+    "roslina": "Rozmaryn lekarski",
+    "slug": "rozmaryn_lekarski",
+    "pochodzenie": ["Nowoczesne Cukiernictwo"],
+    "mechanizm_tworzenia": "Karmelizacja z emulsją śmietanową",
+    "skladniki": [
+      { "nazwa": "Cukier", "ilosc": "200 g", "filar": "1_bazowy" },
+      { "nazwa": "Śmietanka 36%", "ilosc": "150 ml", "filar": "4_poslaniec" },
+      { "nazwa": "Świeży rozmaryn", "ilosc": "3 gałązki", "filar": "2_wzmocnienie" },
+      { "nazwa": "Masło", "ilosc": "50 g", "filar": "3_minister" },
+      { "nazwa": "Gruba sól morska", "ilosc": "1 łyżeczka", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Śmietankę podgrzać z gałązkami rozmarynu (nie gotować) i odstawić na 30 minut, by przeszła aromatem. Następnie wyjąć gałązki.",
+      "Krok 2: Cukier skarmelizować na sucho w rondlu do bursztynowego koloru.",
+      "Krok 3: Bardzo powoli i ostrożnie (będzie pryskać!) wlać ciepłą śmietankę do karmelu, ciągle mieszając.",
+      "Krok 4: Dodać masło, zdjąć z ognia. Wylać na formę, posypać z góry solą morską i zostawić do stężenia."
+    ]
+  },
+  {
+    "tytul": "Księżycowe Ciasteczka Fiołkowe",
+    "typ": "kulinarne",
+    "roslina": "Fiołek wonny",
+    "slug": "fiolek_wonny",
+    "pochodzenie": ["Cukiernictwo Artystyczne"],
+    "mechanizm_tworzenia": "Pieczenie z inkrustacją",
+    "skladniki": [
+      { "nazwa": "Mąka pszenna", "ilosc": "200 g", "filar": "2_wzmocnienie" },
+      { "nazwa": "Masło", "ilosc": "120 g", "filar": "4_poslaniec" },
+      { "nazwa": "Miód", "ilosc": "80 g", "filar": "1_bazowy" },
+      { "nazwa": "Świeże kwiaty fiołka wonnego", "ilosc": "garść", "filar": "3_minister" },
+      { "nazwa": "Ekstrakt z wanilii", "ilosc": "kilka kropel", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Zagnieść kruche ciasto z mąki, masła, miodu i wanilii. Schłodzić.",
+      "Krok 2: Rozwałkować cienko i wycinać okrągłe ciasteczka.",
+      "Krok 3: Na każdym ciastku delikatnie ułożyć 1-2 świeże kwiaty fiołka i bardzo lekko wałkiem wprasować je w ciasto.",
+      "Krok 4: Piec około 10 minut w 170°C. Fiołki zachowają kolor i dodadzą subtelnego, perfumowanego aromatu."
+    ]
+  },
+  {
+    "tytul": "Cytrusowe Żelki Melisowe",
+    "typ": "kulinarne",
+    "roslina": "Melisa lekarska",
+    "slug": "melisa_lekarska",
+    "pochodzenie": ["Słodycze Funkcjonalne"],
+    "mechanizm_tworzenia": "Żelowanie",
+    "skladniki": [
+      { "nazwa": "Bardzo mocny napar z melisy", "ilosc": "200 ml", "filar": "1_bazowy" },
+      { "nazwa": "Sok z 1 pomarańczy i 1 cytryny", "ilosc": "ok. 100 ml", "filar": "3_minister" },
+      { "nazwa": "Miód", "ilosc": "4 łyżki", "filar": "4_poslaniec" },
+      { "nazwa": "Agar-agar", "ilosc": "2 łyżeczki", "filar": "2_wzmocnienie" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Wystudzony napar z melisy wymieszać z sokami cytrusowymi.",
+      "Krok 2: Przelać płyn do garnka, wsypać agar i wymieszać, zostawiając na 5 minut.",
+      "Krok 3: Gotować całość przez 2 minuty. Zdjąć z ognia, odczekać chwilę i wmieszać miód.",
+      "Krok 4: Wylać do foremek na lód lub do płaskiego naczynia. Schłodzić do ścięcia."
+    ],
+    "klasyfikacja_dzialania": {
+      "matryca_wu_xing": { "zywiol_leczony": "Drewno", "narzad_matczyny_do_wsparcia": "Wątroba", "porada_matrycy": "Melisa uspokaja napięte Shen, łagodząc drażliwość." }
+    }
+  },
+  {
+    "tytul": "Pianki Prawoślazowe (Oryginalny Marshmallow)",
+    "typ": "kulinarne",
+    "roslina": "Prawoślaz lekarski",
+    "slug": "prawoslaz_lekarski",
+    "pochodzenie": ["Cukiernictwo Historyczne"],
+    "mechanizm_tworzenia": "Ubijanie białek i śluzów z karmelem",
+    "skladniki": [
+      { "nazwa": "Mocny wywar z korzenia prawoślazu", "ilosc": "100 ml", "filar": "2_wzmocnienie" },
+      { "nazwa": "Cukier i miód jasny", "ilosc": "po 100 g", "filar": "1_bazowy" },
+      { "nazwa": "Żelatyna", "ilosc": "1 łyżka", "filar": "4_poslaniec" },
+      { "nazwa": "Białko jaja", "ilosc": "1 sztuka", "filar": "3_minister" },
+      { "nazwa": "Puder cukrowy z mąką ziemniaczaną", "ilosc": "do posypania", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Żelatynę namoczyć w 50 ml odwaru z prawoślazu. Z reszty odwaru, cukru i miodu ugotować gęsty syrop (115°C).",
+      "Krok 2: Wlać gorący syrop do namoczonej żelatyny i mieszać do rozpuszczenia.",
+      "Krok 3: Ubić białko na sztywno, po czym miksując, wlewać bardzo powoli gorący syrop żelatynowy. Ubijać 10 minut na gęstą pianę.",
+      "Krok 4: Wylać masę do formy oprószonej cukrem pudrem z mączką. Zostawić na noc, pokroić w kostkę."
+    ]
+  },
+  {
+    "tytul": "Rubinowe Galaretki z Owoców Dzikiej Róży",
+    "typ": "kulinarne",
+    "roslina": "Róża dzika",
+    "slug": "roza_dzika",
+    "pochodzenie": ["Przetwory Historyczne"],
+    "mechanizm_tworzenia": "Gotowanie i Pasteryzacja",
+    "skladniki": [
+      { "nazwa": "Oczyszczone owoce dzikiej róży (bez pestek)", "ilosc": "500 g", "filar": "1_bazowy" },
+      { "nazwa": "Jabłka (kwaśne, ze skórką - dużo pektyn)", "ilosc": "2 sztuki", "filar": "2_wzmocnienie" },
+      { "nazwa": "Cukier trzcinowy", "ilosc": "300 g", "filar": "4_poslaniec" },
+      { "nazwa": "Sok z cytryny", "ilosc": "z 1 sztuki", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Owoce róży i pokrojone jabłka zalać odrobiną wody (tylko by przykryć dno) i rozgotować na pulpę.",
+      "Krok 2: Przetrzeć przez drobne sito, aby uzyskać gładkie puree.",
+      "Krok 3: Puree zasypać cukrem, dodać cytrynę i gotować na małym ogniu, aż masa stanie się gęsta i szklista.",
+      "Krok 4: Przełożyć do płaskiego naczynia. Po kilku dniach suszenia, pokroić w kostkę i obtoczyć w cukrze."
+    ]
+  },
+  {
+    "tytul": "Ciemne Trufle z Krwawnikiem",
+    "typ": "kulinarne",
+    "roslina": "Krwawnik pospolity",
+    "slug": "krwawnik_pospolity",
+    "pochodzenie": ["Kuchnia Oparta na Ziołach Gorzkich"],
+    "mechanizm_tworzenia": "Ucieranie",
+    "skladniki": [
+      { "nazwa": "Gorzkie kakao", "ilosc": "3 łyżki", "filar": "1_bazowy" },
+      { "nazwa": "Masło orzechowe lub migdałowe", "ilosc": "4 łyżki", "filar": "4_poslaniec" },
+      { "nazwa": "Suszone koszyczki krwawnika (zmielone w pył)", "ilosc": "1 płaska łyżeczka", "filar": "2_wzmocnienie" },
+      { "nazwa": "Miód gryczany", "ilosc": "2 łyżki", "filar": "3_minister" },
+      { "nazwa": "Suszona żurawina (drobno krojona)", "ilosc": "1 łyżka", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Wymieszać w misce masło orzechowe, miód i kakao.",
+      "Krok 2: Dodać bardzo ostrożnie zmielony krwawnik (uwaga, jest silnie aromatyczny i gorzki) oraz żurawinę.",
+      "Krok 3: Wyrobić plastyczną masę i formować małe kuleczki.",
+      "Krok 4: Schłodzić. Doskonała, lekko gorzkawa i wytrawna przekąska, wyśmienita do mocnej czarnej kawy."
+    ]
+  },
+  {
+    "tytul": "Miodowe Pastylki z Jeżówką",
+    "typ": "kulinarne",
+    "roslina": "Jeżówka purpurowa",
+    "slug": "jezowka_purpurowa",
+    "pochodzenie": ["Apteczka Zimowa"],
+    "mechanizm_tworzenia": "Wysuszanie miodu z proszkami ziołowymi",
+    "skladniki": [
+      { "nazwa": "Krystalizujący się miód (np. rzepakowy)", "ilosc": "4 łyżki", "filar": "1_bazowy" },
+      { "nazwa": "Sproszkowany korzeń jeżówki (Echinacea)", "ilosc": "1 łyżka", "filar": "2_wzmocnienie" },
+      { "nazwa": "Sproszkowany owoc dzikiej róży", "ilosc": "1 łyżka", "filar": "3_minister" },
+      { "nazwa": "Cukier puder", "ilosc": "do zagniatania", "filar": "4_poslaniec" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Wymieszać miód ze sproszkowaną jeżówką i dziką różą na gęstą pastę.",
+      "Krok 2: Stopniowo dosypywać cukier puder, zagniatając jak ciasto, aż masa przestanie się kleić do rąk.",
+      "Krok 3: Uformować długie cienkie wałeczki i odcinać małe kawałeczki, kształtując z nich tabletki.",
+      "Krok 4: Zostawić rozłożone na pergaminie do stwardnienia (ok. 24-48 godzin)."
+    ],
+    "stosowanie_i_dawkowanie": {
+      "okolicznosci_stosowania": "Pierwsze objawy spadku odporności, drapanie w gardle."
+    }
+  },
+
     {
       "tytul": "Nalewka z ziela skrzypu polnego",
       "typ": "kulinarne",
@@ -6183,6 +6606,828 @@
       "wlasciwosci": "potencjalnie bezglutenowe (zależnie od składników), wegetariańskie (jeśli bez produktów odzwierzęcych)"
     },
 
+  {
+    "tytul": "Leśne Pesto z Jasnoty",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Kuchnia Dzikich Roślin", "Nowoczesne Zielarstwo"],
+    "mechanizm_tworzenia": "Emulsja na zimno",
+    "skladniki": [
+      { "nazwa": "Świeże wierzchołki jasnoty purpurowej", "ilosc": "2 garście", "filar": "1_bazowy", "tropizm_organowy": "Krew" },
+      { "nazwa": "Pestki słonecznika (uprażone)", "ilosc": "50g", "filar": "2_wzmocnienie", "tropizm_organowy": "Śledziona" },
+      { "nazwa": "Czosnek", "ilosc": "1 ząbek", "filar": "3_minister", "tropizm_organowy": "Żołądek" },
+      { "nazwa": "Olej rzepakowy tłoczony na zimno", "ilosc": "100 ml", "filar": "4_poslaniec", "tropizm_organowy": "Płyny" },
+      { "nazwa": "Sól kłodawska", "ilosc": "szczypta", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Zioła umyć i dokładnie osuszyć z wody.",
+      "Krok 2: Pestki słonecznika uprażyć na suchej patelni na złoty kolor.",
+      "Krok 3: Umieścić wszystkie składniki w blenderze i zmiksować na gładką, zieloną pastę."
+    ],
+    "stosowanie_i_dawkowanie": {
+      "okolicznosci_stosowania": "Wiosenne wzmocnienie organizmu i profilaktyka anemii.",
+      "dawkowanie_standardowe": "Jako dodatek do chleba lub makaronu według uznania."
+    },
+    "klasyfikacja_dzialania": {
+      "triada_kampo": { "cel_glowny": "Ketsu (Krew)", "wyjasnienie": "Dostarcza przyswajalnego żelaza i chlorofilu." }
+    }
+  },
+  {
+    "tytul": "Wiosenna Zupa Krem z Jasnoty i Ziemniaków",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Tradycyjna Kuchnia Wiejska"],
+    "mechanizm_tworzenia": "Obróbka termiczna (gotowanie)",
+    "skladniki": [
+      { "nazwa": "Ziele jasnoty purpurowej", "ilosc": "3 garście", "filar": "1_bazowy" },
+      { "nazwa": "Ziemniaki", "ilosc": "4 sztuki", "filar": "2_wzmocnienie" },
+      { "nazwa": "Cebula", "ilosc": "1 sztuka", "filar": "3_minister" },
+      { "nazwa": "Bulion warzywny", "ilosc": "1 litr", "filar": "4_poslaniec" },
+      { "nazwa": "Śmietana 30% i sól", "ilosc": "do smaku", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Cebulę i ziemniaki pokroić w kostkę, podsmażyć na maśle.",
+      "Krok 2: Zalać bulionem i gotować, aż ziemniaki będą miękkie.",
+      "Krok 3: Dodać posiekaną jasnotę, gotować jeszcze tylko 2-3 minuty (by zachować kolor i witaminy).",
+      "Krok 4: Całość zblendować na gładki krem i zabielić śmietaną."
+    ],
+    "klasyfikacja_dzialania": {
+      "matryca_wu_xing": { "zywiol_leczony": "Ziemia", "narzad_matczyny_do_wsparcia": "Śledziona", "porada_matrycy": "Zupa odżywia i ogrzewa centrum." }
+    }
+  },
+  {
+    "tytul": "Zielone Masło Jasnotowe",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Kuchnia Klasztorna"],
+    "mechanizm_tworzenia": "Maceracja tłuszczowa na zimno",
+    "skladniki": [
+      { "nazwa": "Świeże wierzchołki jasnoty", "ilosc": "1 garść", "filar": "1_bazowy" },
+      { "nazwa": "Masło prawdziwe (82%)", "ilosc": "200 g (kostka)", "filar": "4_poslaniec" },
+      { "nazwa": "Czosnek niedźwiedzi lub zwykły", "ilosc": "1 ząbek", "filar": "2_wzmocnienie" },
+      { "nazwa": "Sól morska gruboziernista", "ilosc": "pół łyżeczki", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Masło wyciągnąć z lodówki, by zmiękło w temperaturze pokojowej.",
+      "Krok 2: Jasnotę i czosnek posiekać niezwykle drobno.",
+      "Krok 3: Rozetrzeć miękkie masło z ziołami i solą, zwinąć w pergamin tworząc wałeczek.",
+      "Krok 4: Schłodzić w lodówce przez 12 godzin dla przegryzienia smaków."
+    ]
+  },
+  {
+    "tytul": "Twarożek Przednówkowy z Jasnotą",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Słowiańskie", "Kulinaria Codzienne"],
+    "mechanizm_tworzenia": "Mieszanie na zimno",
+    "skladniki": [
+      { "nazwa": "Jasnota purpurowa (najmłodsze listki i kwiaty)", "ilosc": "1 garść", "filar": "1_bazowy" },
+      { "nazwa": "Biały ser (twaróg półtłusty)", "ilosc": "250 g", "filar": "2_wzmocnienie" },
+      { "nazwa": "Rzodkiewka", "ilosc": "3 sztuki", "filar": "3_minister" },
+      { "nazwa": "Śmietana lub jogurt naturalny", "ilosc": "2 łyżki", "filar": "4_poslaniec" },
+      { "nazwa": "Sól i pieprz", "ilosc": "do smaku", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Twaróg rozgnieść widelcem ze śmietaną.",
+      "Krok 2: Rzodkiewkę zetrzeć na tarce lub pokroić w drobną kosteczkę.",
+      "Krok 3: Jasnotę posiekać drobno (kwiaty można zostawić w całości do dekoracji).",
+      "Krok 4: Wymieszać wszystkie składniki i doprawić."
+    ]
+  },
+  {
+    "tytul": "Rubinowy Ocet Jasnotowy",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Alchemia Kulinarna", "Przetwórstwo"],
+    "mechanizm_tworzenia": "Maceracja octowa",
+    "skladniki": [
+      { "nazwa": "Purpurowe kwiaty i wierzchołki jasnoty", "ilosc": "1 szklanka", "filar": "1_bazowy" },
+      { "nazwa": "Ocet jabłkowy (żywy, niefiltrowany)", "ilosc": "500 ml", "filar": "4_poslaniec" },
+      { "nazwa": "Odrobina miodu", "ilosc": "1 łyżeczka", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Świeże, purpurowe szczyty jasnoty umieścić w czystym słoiku.",
+      "Krok 2: Zalać octem jabłkowym w temperaturze pokojowej.",
+      "Krok 3: Zamknąć szczelnie i odstawić na 2-3 tygodnie w ciemne miejsce, codziennie wstrząsając.",
+      "Krok 4: Przecedzić. Antocyjany zabarwią ocet na piękny, rubinowy kolor."
+    ],
+    "stosowanie_i_dawkowanie": {
+      "okolicznosci_stosowania": "Bazy do dressingów sałatkowych, marynat, lub jako poranny tonik trawienny (1 łyżka na szklankę wody)."
+    }
+  },
+  {
+    "tytul": "Omlet Ziołowy z Jasnotą",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Kuchnia Domowa"],
+    "mechanizm_tworzenia": "Smażenie",
+    "skladniki": [
+      { "nazwa": "Jajka", "ilosc": "3 sztuki", "filar": "2_wzmocnienie" },
+      { "nazwa": "Posiekana jasnota purpurowa", "ilosc": "pół szklanki", "filar": "1_bazowy" },
+      { "nazwa": "Szczypiorek", "ilosc": "1 łyżka", "filar": "3_minister" },
+      { "nazwa": "Masło klarowane", "ilosc": "1 łyżka", "filar": "4_poslaniec" },
+      { "nazwa": "Sól, pieprz, gałka muszkatołowa", "ilosc": "szczypta", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Jajka roztrzepać widelcem z przyprawami.",
+      "Krok 2: Jasnotę i szczypiorek wmieszać do masy jajecznej.",
+      "Krok 3: Wylać na rozgrzane masło klarowane i smażyć pod przykryciem, aż masa się zetnie."
+    ],
+    "klasyfikacja_dzialania": {
+      "matryca_wu_xing": { "zywiol_leczony": "Ziemia", "narzad_matczyny_do_wsparcia": "Żołądek", "porada_matrycy": "Sycący posiłek na początek dnia, nie obciążający trawienia." }
+    }
+  },
+  {
+    "tytul": "Jasnota Duszona po Chłopsku",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Kuchnia Przetrwania", "Słowiańskie"],
+    "mechanizm_tworzenia": "Duszenie (blanszowanie)",
+    "skladniki": [
+      { "nazwa": "Młode ziele jasnoty (liście)", "ilosc": "4 garście", "filar": "1_bazowy" },
+      { "nazwa": "Cebula dymka", "ilosc": "1 sztuka", "filar": "3_minister" },
+      { "nazwa": "Śmietana 18%", "ilosc": "2 łyżki", "filar": "2_wzmocnienie" },
+      { "nazwa": "Masło", "ilosc": "1 łyżka", "filar": "4_poslaniec" },
+      { "nazwa": "Gałka muszkatołowa i sól", "ilosc": "do smaku", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Jasnotę przelać wrzątkiem (zblanszować) by straciła objętość i surowy smak.",
+      "Krok 2: Posiekać i wrzucić na patelnię z podsmażoną na maśle cebulką.",
+      "Krok 3: Dusić przez 5 minut, na koniec dodać śmietanę i przyprawy. Podawać jak szpinak."
+    ]
+  },
+  {
+    "tytul": "Lemoniada Różowa z Jasnoty i Cytryny",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Napary Letnie"],
+    "mechanizm_tworzenia": "Napar chłodzony",
+    "skladniki": [
+      { "nazwa": "Kwiaty i purpurowe listki jasnoty", "ilosc": "1 garść", "filar": "1_bazowy" },
+      { "nazwa": "Woda (wrzątek)", "ilosc": "1 litr", "filar": "4_poslaniec" },
+      { "nazwa": "Sok z 1 cytryny", "ilosc": "1 sztuka", "filar": "3_minister" },
+      { "nazwa": "Miód naturalny", "ilosc": "2-3 łyżki", "filar": "2_wzmocnienie" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Zioła zalać wrzątkiem i parzyć 15 minut.",
+      "Krok 2: Przecedzić i ostudzić.",
+      "Krok 3: Dodać miód i sok z cytryny (kwas zmieni kolor naparu na intensywniej różowy).",
+      "Krok 4: Podawać z lodem i listkami mięty."
+    ]
+  },
+  {
+    "tytul": "Kiszona Jasnota z Rzodkiewką",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Fermentacje Dzikich Ziół"],
+    "mechanizm_tworzenia": "Fermentacja mlekowa",
+    "skladniki": [
+      { "nazwa": "Jasnota purpurowa (całe ziele)", "ilosc": "2 garście", "filar": "1_bazowy" },
+      { "nazwa": "Rzodkiewki (pokrojone w plastry)", "ilosc": "pęczek", "filar": "2_wzmocnienie" },
+      { "nazwa": "Czosnek i korzeń chrzanu", "ilosc": "po 1 kawałku", "filar": "3_minister" },
+      { "nazwa": "Solanka (1 czubata łyżka soli na 1 litr wody)", "ilosc": "1 litr", "filar": "4_poslaniec" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: W słoiku ułożyć ciasno jasnotę na przemian z plastrami rzodkiewki, czosnkiem i chrzanem.",
+      "Krok 2: Zalać przestudzoną solanką, dbając by nic nie wystawało ponad powierzchnię wody.",
+      "Krok 3: Fermentować w temperaturze pokojowej przez 5-7 dni, po czym przenieść do lodówki."
+    ],
+    "klasyfikacja_dzialania": {
+      "triada_kampo": { "cel_glowny": "Tokuso (Toksyny)", "wyjasnienie": "Bakterie probiotyczne oczyszczają jelita i wspierają naturalny detoks." }
+    }
+  },
+  {
+    "tytul": "Tempura Wiosenna (Wierzchołki Jasnoty w cieście)",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Kuchnia Fusion"],
+    "mechanizm_tworzenia": "Głębokie smażenie",
+    "skladniki": [
+      { "nazwa": "Najpiękniejsze, purpurowe wierzchołki jasnoty", "ilosc": "20 sztuk", "filar": "1_bazowy" },
+      { "nazwa": "Mąka pszenna i ziemniaczana (pół na pół)", "ilosc": "1 szklanka", "filar": "2_wzmocnienie" },
+      { "nazwa": "Lodowata woda (najlepiej gazowana)", "ilosc": "1 szklanka", "filar": "4_poslaniec" },
+      { "nazwa": "Olej do smażenia", "ilosc": "500 ml", "filar": "3_minister" },
+      { "nazwa": "Sól", "ilosc": "szczypta", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Jasnotę opłukać i dokładnie osuszyć.",
+      "Krok 2: Zmiksować mąkę, sól i lodowatą wodę na rzadkie, grudkowate ciasto (nie musi być idealnie gładkie).",
+      "Krok 3: Maczać wierzchołki jasnoty w cieście i wrzucać na głęboki, gorący olej.",
+      "Krok 4: Smażyć około 1 minuty do chrupkości. Odsączyć na ręczniku papierowym."
+    ]
+  },
+  {
+    "tytul": "Leśna Sól Ziołowa",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Przetwórstwo Domowe"],
+    "mechanizm_tworzenia": "Konserwacja solą",
+    "skladniki": [
+      { "nazwa": "Sól gruboziarnista (np. kłodawska)", "ilosc": "1 szklanka", "filar": "4_poslaniec" },
+      { "nazwa": "Suszona jasnota purpurowa", "ilosc": "2 łyżki", "filar": "1_bazowy" },
+      { "nazwa": "Suszona pokrzywa", "ilosc": "1 łyżka", "filar": "2_wzmocnienie" },
+      { "nazwa": "Suszony majeranek lub tymianek", "ilosc": "1 łyżeczka", "filar": "3_minister" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Wszystkie zioła powinny być całkowicie suche.",
+      "Krok 2: W moździerzu lub młynku do kawy rozdrobnić zioła na proszek.",
+      "Krok 3: Wymieszać zielony proszek z solą kłodawską.",
+      "Krok 4: Przechowywać w suchym, szczelnym słoiczku. Używać do kanapek, jajek, zup."
+    ]
+  },
+  {
+    "tytul": "Zielone Podpłomyki z Jasnotą",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Kuchnia Słowiańska", "Pieczywo Tradycyjne"],
+    "mechanizm_tworzenia": "Pieczenie / Smażenie na sucho",
+    "skladniki": [
+      { "nazwa": "Mąka pszenna lub orkiszowa", "ilosc": "2 szklanki", "filar": "2_wzmocnienie" },
+      { "nazwa": "Zblendowana jasnota (miazga)", "ilosc": "pół szklanki", "filar": "1_bazowy" },
+      { "nazwa": "Gorąca woda", "ilosc": "ok. pół szklanki", "filar": "4_poslaniec" },
+      { "nazwa": "Sól", "ilosc": "1 łyżeczka", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Mąkę przesiać, dodać sól i zieloną miazgę z jasnoty.",
+      "Krok 2: Dolewać powoli gorącą wodę i zagniatać elastyczne ciasto.",
+      "Krok 3: Uformować małe kuleczki i rozwałkować na bardzo cienkie placki.",
+      "Krok 4: Smażyć na suchej, mocno rozgrzanej patelni, aż pojawią się brązowe bąble (ok. 1-2 min z każdej strony)."
+    ]
+  },
+  {
+    "tytul": "Syrop Jasnotowy z Miodem",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Aptekarskie", "Kuchenne"],
+    "mechanizm_tworzenia": "Ekstrakcja ciepła (syropowanie)",
+    "skladniki": [
+      { "nazwa": "Ziele i kwiaty jasnoty", "ilosc": "2 szklanki", "filar": "1_bazowy" },
+      { "nazwa": "Woda", "ilosc": "500 ml", "filar": "4_poslaniec" },
+      { "nazwa": "Cukier trzcinowy lub miód", "ilosc": "400 g", "filar": "2_wzmocnienie" },
+      { "nazwa": "Sok z połowy cytryny", "ilosc": "do przełamania smaku", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Zioła zalać wodą, doprowadzić do wrzenia i gotować 10 minut na wolnym ogniu.",
+      "Krok 2: Odstawić pod przykryciem na noc (ok. 12 godzin).",
+      "Krok 3: Przecedzić mocno odciskając zioła. Do płynu dodać cukier/miód.",
+      "Krok 4: Podgrzewać powoli, aż cukier całkowicie się rozpuści i lekko zgęstnieje. Pod koniec dodać sok z cytryny."
+    ],
+    "stosowanie_i_dawkowanie": {
+      "okolicznosci_stosowania": "Do deserów, naleśników, czy herbaty zimowej jako wsparcie odporności i dróg rodnych."
+    }
+  },
+  {
+    "tytul": "Farsz Ziołowy do Pierogów (Zastępstwo Szpinaku)",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Kuchnia Polska", "Wariacje Regionalne"],
+    "mechanizm_tworzenia": "Wieloskładnikowy farsz",
+    "skladniki": [
+      { "nazwa": "Jasnota purpurowa i pokrzywa (pół na pół)", "ilosc": "łącznie 4 garście", "filar": "1_bazowy" },
+      { "nazwa": "Ser feta lub twaróg wędzony", "ilosc": "150 g", "filar": "2_wzmocnienie" },
+      { "nazwa": "Czosnek", "ilosc": "2 ząbki", "filar": "3_minister" },
+      { "nazwa": "Masło do podsmażenia", "ilosc": "1 łyżka", "filar": "4_poslaniec" },
+      { "nazwa": "Sól, czarny pieprz", "ilosc": "do smaku", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Zioła zblanszować we wrzątku przez minutę, odsączyć i drobno posiekać.",
+      "Krok 2: Podsmażyć czosnek na maśle, dorzucić zioła i odparować nadmiar wody.",
+      "Krok 3: Po przestygnięciu wymieszać z pokruszonym serem feta i doprawić pieprzem (sól może nie być potrzebna przez ser).",
+      "Krok 4: Używać jako nadzienia do pierogów lub naleśników."
+    ]
+  },
+  {
+    "tytul": "Olej Infuzowany Jasnotą i Rozmarynem",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Kulinaria Alchemiczne"],
+    "mechanizm_tworzenia": "Maceracja olejowa",
+    "skladniki": [
+      { "nazwa": "Lekko podsuszona jasnota purpurowa", "ilosc": "1 garść", "filar": "1_bazowy" },
+      { "nazwa": "Gałązka świeżego rozmarynu", "ilosc": "1 sztuka", "filar": "3_minister" },
+      { "nazwa": "Oliwa z oliwek (Extra Virgin)", "ilosc": "250 ml", "filar": "4_poslaniec" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Jasnotę pozostawić na blacie przez kilka godzin, aby pozbyć się nadmiaru wody (zapobiega pleśnieniu).",
+      "Krok 2: Zioła włożyć do butelki lub słoika.",
+      "Krok 3: Zalać oliwą do pełna, upewniając się, że wszystko jest przykryte.",
+      "Krok 4: Odstawić na 2-3 tygodnie w ciepłe, ale nie nasłonecznione miejsce. Odcedzić przed użyciem (np. do sałatek)."
+    ]
+  },
+  {
+    "tytul": "Wiosenny Gąszcz z Kaszą Jaglaną",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Kuchnia Słowiańska", "Potrawy Jednogarnkowe"],
+    "mechanizm_tworzenia": "Duszenie / Gotowanie",
+    "skladniki": [
+      { "nazwa": "Kasza jaglana", "ilosc": "1 szklanka", "filar": "2_wzmocnienie" },
+      { "nazwa": "Posiekana jasnota purpurowa", "ilosc": "2 duże garście", "filar": "1_bazowy" },
+      { "nazwa": "Marchew starta na tarce", "ilosc": "1 sztuka", "filar": "3_minister" },
+      { "nazwa": "Bulion grzybowy lub jarzynowy", "ilosc": "2 szklanki", "filar": "4_poslaniec" },
+      { "nazwa": "Olej, sól, kozieradka", "ilosc": "do smaku", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Kaszę przelać wrzątkiem, by pozbyć się goryczki.",
+      "Krok 2: Na oleju podsmażyć marchew, dorzucić kaszę i chwilę prażyć.",
+      "Krok 3: Zalać bulionem i gotować pod przykryciem, aż kasza wchłonie płyn.",
+      "Krok 4: Na 3 minuty przed końcem gotowania wmieszać posiekaną jasnotę i doprawić kozieradką."
+    ]
+  },
+  {
+    "tytul": "Sałatka Przednówkowa 'Pierwsze Życie'",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Surwiwal Kulinarny", "Weganskie"],
+    "mechanizm_tworzenia": "Danie surowe",
+    "skladniki": [
+      { "nazwa": "Najmłodsze listki i kwiaty jasnoty", "ilosc": "1 garść", "filar": "1_bazowy" },
+      { "nazwa": "Młode listki mniszka lekarskiego", "ilosc": "pół garści", "filar": "2_wzmocnienie" },
+      { "nazwa": "Ugotowane jajko na twardo", "ilosc": "1 sztuka", "filar": "3_minister" },
+      { "nazwa": "Oliwa lub olej lniany", "ilosc": "1 łyżka", "filar": "4_poslaniec" },
+      { "nazwa": "Sok z cytryny i odrobina miodu", "ilosc": "dressing", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Zioła umyć w zimnej wodzie, osuszyć delikatnie w wirówce do sałaty.",
+      "Krok 2: Mniszka (jest bardziej gorzki) pokroić w paski, jasnotę zostawić w całości.",
+      "Krok 3: Jajko pokroić w ósemki, ułożyć na ziołach.",
+      "Krok 4: Wymieszać oliwę, cytrynę, miód i polać sałatkę bezpośrednio przed podaniem."
+    ],
+    "klasyfikacja_dzialania": {
+      "matryca_wu_xing": { "zywiol_leczony": "Drzewo", "narzad_matczyny_do_wsparcia": "Wątroba", "porada_matrycy": "Lekko gorzki smak mniszka i ziemisty jasnoty doskonale pobudzają soki trawienne." }
+    }
+  },
+  {
+    "tytul": "Pasta Wegańska z Pestek i Jasnoty",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Nowoczesna Fitoterapia", "Weganskie"],
+    "mechanizm_tworzenia": "Blendowanie namoczonych ziaren",
+    "skladniki": [
+      { "nazwa": "Pestki słonecznika (namoczone na noc)", "ilosc": "1 szklanka", "filar": "2_wzmocnienie" },
+      { "nazwa": "Jasnota purpurowa (sparzona wrzątkiem)", "ilosc": "1 garść", "filar": "1_bazowy" },
+      { "nazwa": "Sok jabłkowy (najlepiej mętny)", "ilosc": "3-4 łyżki", "filar": "4_poslaniec" },
+      { "nazwa": "Chrzan tarty", "ilosc": "pół łyżeczki", "filar": "3_minister" },
+      { "nazwa": "Sól ziołowa", "ilosc": "do smaku", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Słonecznik odsączyć z wody z moczenia.",
+      "Krok 2: W blenderze umieścić słonecznik, zblanszowaną jasnotę, odrobinę soku jabłkowego i chrzan.",
+      "Krok 3: Zmiksować na pastę przypominającą pasztet roślinny.",
+      "Krok 4: Doprawić solą. Świetnie smakuje na krakersach żytnich."
+    ]
+  },
+  {
+    "tytul": "Codzienny Napar Jasnotowy z Jabłkiem",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Ziołowe Herbaty Dzienne"],
+    "mechanizm_tworzenia": "Napar klasyczny",
+    "skladniki": [
+      { "nazwa": "Suszone ziele jasnoty", "ilosc": "1 łyżka", "filar": "1_bazowy" },
+      { "nazwa": "Suszone skórki z jabłek lub pocięte kawałki jabłka", "ilosc": "1 łyżka", "filar": "2_wzmocnienie" },
+      { "nazwa": "Wrząca woda", "ilosc": "300 ml", "filar": "4_poslaniec" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Jasnotę i jabłko wsypać do dzbanka lub zaparzacza.",
+      "Krok 2: Zalać wrzątkiem, przykryć.",
+      "Krok 3: Zaparzać 10-15 minut. Jabłko świetnie przełamuje lekko ziemisty smak ziela.",
+      "Krok 4: Odcedzić i pić jako codzienną herbatę remineralizującą."
+    ],
+    "klasyfikacja_dzialania": {
+      "triada_kampo": { "cel_glowny": "Sui (Płyny)", "wyjasnienie": "Nawilża i dostarcza witamin bezpiecznie w umiarkowanych ilościach." }
+    }
+  },
+  {
+    "tytul": "Miód Jasnotowy (Macerat miodowy)",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Domowa Apteczka Kulinarna"],
+    "mechanizm_tworzenia": "Maceracja w miodzie",
+    "skladniki": [
+      { "nazwa": "Kwiaty jasnoty purpurowej (tylko fioletowe części)", "ilosc": "pół szklanki", "filar": "1_bazowy" },
+      { "nazwa": "Jasny, płynny miód (np. akacjowy lub wielokwiatowy)", "ilosc": "1 szklanka", "filar": "4_poslaniec" },
+      { "nazwa": "Odrobina pyłku pszczelego", "ilosc": "1 łyżeczka", "filar": "2_wzmocnienie" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Kwiaty jasnoty lekko podsuszyć (1-2 dni), by zmniejszyć zawartość wody.",
+      "Krok 2: Ułożyć kwiaty luźno w czystym słoiku, posypać pyłkiem.",
+      "Krok 3: Zalać powoli płynnym miodem, lekko mieszając wykałaczką, by usunąć bąbelki powietrza.",
+      "Krok 4: Odstawić na 4 tygodnie w ciemne miejsce. Używać miodu razem z kwiatami (będą jak kandyzowane) do owsianki lub kanapek."
+    ]
+  },
+
+  {
+    "tytul": "Leśna Sól Ziołowa z Jasnotą",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Przetwórstwo Domowe"],
+    "mechanizm_tworzenia": "Mielenie i ucieranie",
+    "skladniki": [
+      { "nazwa": "Sól kłodawska gruboziarnista", "ilosc": "1 szklanka", "filar": "4_poslaniec", "tropizm_organowy": "Nerki" },
+      { "nazwa": "Suszone ziele jasnoty purpurowej", "ilosc": "3 łyżki", "filar": "1_bazowy", "tropizm_organowy": "Krew" },
+      { "nazwa": "Suszony tymianek", "ilosc": "1 łyżka", "filar": "2_wzmocnienie", "tropizm_organowy": "Płuca" },
+      { "nazwa": "Suszony czosnek niedźwiedzi", "ilosc": "1 łyżka", "filar": "3_minister" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Zioła wsypać do moździerza lub młynka i zmielić na drobny pył.",
+      "Krok 2: Wymieszać zmielone zioła z solą gruboziarnistą.",
+      "Krok 3: Przesypać do szczelnego słoiczka. Używać do przyprawiania mięs, pieczonych warzyw i zup."
+    ],
+    "stosowanie_i_dawkowanie": {
+      "okolicznosci_stosowania": "Codzienne gotowanie, jako zamiennik zwykłej soli."
+    }
+  },
+  {
+    "tytul": "Dzika Przyprawa Zupna (Zamiast Maggi)",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Kuchnia Słowiańska"],
+    "mechanizm_tworzenia": "Tworzenie mieszanki suchych ziół",
+    "skladniki": [
+      { "nazwa": "Suszona jasnota purpurowa", "ilosc": "2 łyżki", "filar": "1_bazowy" },
+      { "nazwa": "Suszony korzeń lubczyk", "ilosc": "1 łyżeczka", "filar": "2_wzmocnienie" },
+      { "nazwa": "Suszona natka pietruszki", "ilosc": "2 łyżki", "filar": "3_minister" },
+      { "nazwa": "Suszone grzyby (np. borowiki)", "ilosc": "1 łyżka (zmielone)", "filar": "4_poslaniec" },
+      { "nazwa": "Kurkuma", "ilosc": "szczypta", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Wszystkie składniki dokładnie wymieszać.",
+      "Krok 2: Zamknąć w słoiku bez dostępu wilgoci.",
+      "Krok 3: Dodawać po 1 łyżce do gotującego się rosołu, bulionu lub sosu na 10 minut przed końcem gotowania."
+    ]
+  },
+  {
+    "tytul": "Księżycowy Napar Wyciszający",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Ziołowe Herbaty Dzienne"],
+    "mechanizm_tworzenia": "Napar",
+    "skladniki": [
+      { "nazwa": "Suszona jasnota purpurowa", "ilosc": "1 łyżka", "filar": "1_bazowy", "tropizm_organowy": "Krew/Serce" },
+      { "nazwa": "Suszona melisa lekarska", "ilosc": "1 łyżka", "filar": "2_wzmocnienie", "tropizm_organowy": "Wątroba (relaks)" },
+      { "nazwa": "Wrząca woda", "ilosc": "250 ml", "filar": "4_poslaniec" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Zioła wsypać do kubka i zalać wrzątkiem.",
+      "Krok 2: Parzyć pod przykryciem przez 15 minut.",
+      "Krok 3: Odcedzić i opcjonalnie dosłodzić miodem."
+    ],
+    "stosowanie_i_dawkowanie": {
+      "okolicznosci_stosowania": "Na wieczór, po stresującym dniu, w celu odprężenia miednicy i umysłu."
+    }
+  },
+  {
+    "tytul": "Sucha Marynata Ziołowa do Warzyw Korzeniowych",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Nowoczesne Zielarstwo"],
+    "mechanizm_tworzenia": "Mieszanka przyprawowa (Rub)",
+    "skladniki": [
+      { "nazwa": "Suszona jasnota", "ilosc": "2 łyżki", "filar": "1_bazowy" },
+      { "nazwa": "Słodka papryka w proszku", "ilosc": "1 łyżka", "filar": "2_wzmocnienie" },
+      { "nazwa": "Suszony czosnek", "ilosc": "1 łyżeczka", "filar": "3_minister" },
+      { "nazwa": "Sól i pieprz", "ilosc": "do smaku", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Składniki wymieszać.",
+      "Krok 2: Pokrojone w słupki warzywa (marchew, pietruszka, batat) skropić olejem i dokładnie natrzeć suchą marynatą.",
+      "Krok 3: Piec w 200°C do miękkości. Jasnota nada warzywom ziemisto-leśny aromat."
+    ]
+  },
+  {
+    "tytul": "Oliwa Aromatyzowana Suszem Jasnotowym",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Kulinaria Alchemiczne"],
+    "mechanizm_tworzenia": "Maceracja olejowa na ciepło",
+    "skladniki": [
+      { "nazwa": "Suszona jasnota purpurowa", "ilosc": "3 garście", "filar": "1_bazowy" },
+      { "nazwa": "Oliwa z oliwek (lub olej rzepakowy)", "ilosc": "500 ml", "filar": "4_poslaniec" },
+      { "nazwa": "Pieprz w ziarnach", "ilosc": "5 ziaren", "filar": "3_minister" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Susz wsypać do czystej butelki.",
+      "Krok 2: Oliwę delikatnie podgrzać (do ok. 40-50°C, nie gotować!) i zalać zioła.",
+      "Krok 3: Zakręcić butelkę i odstawić na 2 tygodnie w ciemne miejsce.",
+      "Krok 4: Stosować do sałatek lub skrapiania pieczywa."
+    ]
+  },
+  {
+    "tytul": "Kruche Ciasteczka Leśne",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Cukiernictwo Ziołowe"],
+    "mechanizm_tworzenia": "Pieczenie",
+    "skladniki": [
+      { "nazwa": "Mąka pszenna", "ilosc": "200 g", "filar": "2_wzmocnienie" },
+      { "nazwa": "Masło (zimne)", "ilosc": "100 g", "filar": "4_poslaniec" },
+      { "nazwa": "Cukier puder", "ilosc": "50 g", "filar": "5_korektor" },
+      { "nazwa": "Suszone kwiaty i listki jasnoty (roztarte)", "ilosc": "2 łyżki", "filar": "1_bazowy" },
+      { "nazwa": "Żółtko", "ilosc": "1 sztuka", "filar": "3_minister" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Mąkę, masło, cukier, jasnotę i żółtko szybko zagnieść na gładkie ciasto.",
+      "Krok 2: Uformować kulę, owinąć w folię i schłodzić w lodówce przez 30 minut.",
+      "Krok 3: Ciasto rozwałkować na grubość 5 mm, wycinać kształty.",
+      "Krok 4: Piec w 180°C przez ok. 12-15 minut na złoty kolor."
+    ]
+  },
+  {
+    "tytul": "Bulion Odpornościowy (Zimowy Mocarz)",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Medycyna Polowa", "Dietetyka Funkcjonalna"],
+    "mechanizm_tworzenia": "Długotrwałe wygotowywanie",
+    "skladniki": [
+      { "nazwa": "Kości wołowe lub zestaw włoszczyzny", "ilosc": "porcja rosołowa", "filar": "2_wzmocnienie" },
+      { "nazwa": "Suszone ziele jasnoty", "ilosc": "2 garście", "filar": "1_bazowy", "tropizm_organowy": "Krew (Żelazo)" },
+      { "nazwa": "Cebula (opalona)", "ilosc": "1 sztuka", "filar": "3_minister" },
+      { "nazwa": "Woda", "ilosc": "3 litry", "filar": "4_poslaniec" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Składniki zalać zimną wodą.",
+      "Krok 2: Gotować na bardzo wolnym ogniu (tzw. mruganie) przez 4-6 godzin.",
+      "Krok 3: Odcedzić. Suszona jasnota odda do wywaru głęboki, grzybowy aromat i cenne minerały wyciągnięte z gleby."
+    ]
+  },
+  {
+    "tytul": "Ziołowa Posypka do Twarogu i Tofu",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Kuchnia Słowiańska"],
+    "mechanizm_tworzenia": "Mieszanka na zimno",
+    "skladniki": [
+      { "nazwa": "Suszona jasnota purpurowa (zmielona)", "ilosc": "1 łyżka", "filar": "1_bazowy" },
+      { "nazwa": "Suszone pomidory w płatkach", "ilosc": "1 łyżka", "filar": "2_wzmocnienie" },
+      { "nazwa": "Czarnuszka (mielona)", "ilosc": "pół łyżeczki", "filar": "3_minister" },
+      { "nazwa": "Sól", "ilosc": "szczypta", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Składniki wymieszać w miseczce.",
+      "Krok 2: Posypywać bezpośrednio na kromki chleba z białym serem, hummusem lub pastami z roślin strączkowych."
+    ]
+  },
+  {
+    "tytul": "Chleb Zakwasowy z Leśną Nutą",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Piekarstwo Tradycyjne"],
+    "mechanizm_tworzenia": "Fermentacja i wypiek",
+    "skladniki": [
+      { "nazwa": "Mąka chlebowa (pszenna lub żytnia)", "ilosc": "500 g", "filar": "2_wzmocnienie" },
+      { "nazwa": "Aktywny zakwas", "ilosc": "100 g", "filar": "3_minister" },
+      { "nazwa": "Woda letnia", "ilosc": "350 ml", "filar": "4_poslaniec" },
+      { "nazwa": "Suszona jasnota purpurowa (pokruszona)", "ilosc": "2 łyżki", "filar": "1_bazowy" },
+      { "nazwa": "Sól", "ilosc": "10 g", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Mąkę, zakwas i wodę wymieszać. Dodać sól i suszoną jasnotę.",
+      "Krok 2: Wyrabiać ciasto przez kilka minut, następnie poddać je procesowi fermentacji (ok. 4-6h z kilkoma składaniami).",
+      "Krok 3: Uformować bochenek, odstawić do wyrośnięcia w koszyku.",
+      "Krok 4: Piec w 230°C z parą przez pierwsze 20 minut, następnie dopiekać w 200°C przez 25 minut."
+    ]
+  },
+  {
+    "tytul": "Wytrawne Muffiny Jasnotowo-Serowe",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Wypieki Wytrawne"],
+    "mechanizm_tworzenia": "Pieczenie",
+    "skladniki": [
+      { "nazwa": "Mąka pszenna", "ilosc": "250 g", "filar": "2_wzmocnienie" },
+      { "nazwa": "Suszona jasnota purpurowa", "ilosc": "2 łyżki", "filar": "1_bazowy" },
+      { "nazwa": "Ser żółty (ostry, starty)", "ilosc": "100 g", "filar": "3_minister" },
+      { "nazwa": "Mleko", "ilosc": "200 ml", "filar": "4_poslaniec" },
+      { "nazwa": "Jajko, proszek do pieczenia, olej", "ilosc": "baza mokra", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Suche składniki (mąka, jasnota, proszek, ser) wymieszać w jednej misce.",
+      "Krok 2: Mokre składniki (mleko, jajko, olej) wymieszać w drugiej.",
+      "Krok 3: Połączyć mokre z suchymi tylko do zawilgotnienia mąki.",
+      "Krok 4: Przełożyć do papilotek, piec 20 minut w 190°C."
+    ]
+  },
+  {
+    "tytul": "Miód Ziołowy Wspierający Miednicę",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Apteczka Domowa"],
+    "mechanizm_tworzenia": "Maceracja sucha w miodzie",
+    "skladniki": [
+      { "nazwa": "Suszone kwiaty jasnoty purpurowej", "ilosc": "4 łyżki", "filar": "1_bazowy" },
+      { "nazwa": "Płynny miód lipowy", "ilosc": "250 ml", "filar": "4_poslaniec" },
+      { "nazwa": "Szczypta cynamonu", "ilosc": "szczypta", "filar": "3_minister" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Całkowicie wysuszone kwiaty jasnoty rozetrzeć w palcach i dodać do miodu wraz z cynamonem.",
+      "Krok 2: Wymieszać dokładnie drewnianą łyżką.",
+      "Krok 3: Odstawić na 2 tygodnie. Stosować 1 łyżeczkę do herbaty podczas napięć menstruacyjnych."
+    ],
+    "klasyfikacja_dzialania": {
+      "triada_kampo": { "cel_glowny": "Ketsu (Krew)", "wyjasnienie": "Rozgrzewa i łagodzi stany skurczowe miednicy." }
+    }
+  },
+  {
+    "tytul": "Sos Beszamelowy z Nutą Leśną",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Kuchnia Francuska z polskim twistem"],
+    "mechanizm_tworzenia": "Gotowanie (redukcja emulsyjna)",
+    "skladniki": [
+      { "nazwa": "Masło", "ilosc": "2 łyżki", "filar": "4_poslaniec" },
+      { "nazwa": "Mąka", "ilosc": "2 łyżki", "filar": "2_wzmocnienie" },
+      { "nazwa": "Mleko", "ilosc": "500 ml", "filar": "3_minister" },
+      { "nazwa": "Suszona jasnota purpurowa (zmielona na pył)", "ilosc": "1 łyżeczka", "filar": "1_bazowy" },
+      { "nazwa": "Sól, biały pieprz, gałka muszkatołowa", "ilosc": "szczypta", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: W rondelku rozpuścić masło, dodać mąkę i jasnotę. Zrobić jasną zasmażkę.",
+      "Krok 2: Powoli wlewać mleko, energicznie mieszając trzepaczką.",
+      "Krok 3: Gotować na małym ogniu aż sos zgęstnieje. Doprawić. Jasnota wzbogaci go o lekko grzybowy akcent."
+    ]
+  },
+  {
+    "tytul": "Rozgrzewający Napar Korzenny",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Ziołowe Herbaty Jesienne"],
+    "mechanizm_tworzenia": "Napar złożony",
+    "skladniki": [
+      { "nazwa": "Suszone ziele jasnoty", "ilosc": "1 łyżka", "filar": "1_bazowy" },
+      { "nazwa": "Kłącze imbiru (suszone lub świeże)", "ilosc": "3 plastry", "filar": "2_wzmocnienie" },
+      { "nazwa": "Goździki", "ilosc": "2 sztuki", "filar": "3_minister" },
+      { "nazwa": "Wrzątek", "ilosc": "300 ml", "filar": "4_poslaniec" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Wszystkie składniki zalać wrzątkiem.",
+      "Krok 2: Przykryć i zaparzać ok. 15 minut.",
+      "Krok 3: Pić na gorąco w stanach wyziębienia organizmu i wczesnego przeziębienia."
+    ]
+  },
+  {
+    "tytul": "Zielarska Panierka do Kani lub Boczniaków",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Kulinaria Leśne"],
+    "mechanizm_tworzenia": "Smażenie",
+    "skladniki": [
+      { "nazwa": "Bułka tarta", "ilosc": "1 szklanka", "filar": "2_wzmocnienie" },
+      { "nazwa": "Suszona jasnota purpurowa", "ilosc": "2 łyżki", "filar": "1_bazowy" },
+      { "nazwa": "Jajko (do maczania)", "ilosc": "1 sztuka", "filar": "4_poslaniec" },
+      { "nazwa": "Sól, pieprz", "ilosc": "do smaku", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Bułkę tartą wymieszać z suszoną, pokruszoną w dłoniach jasnotą i przyprawami.",
+      "Krok 2: Kapelusze grzybów (lub plastry sera/tofu) maczać w roztrzepanym jajku, a następnie w ziołowej panierce.",
+      "Krok 3: Smażyć na oleju z obu stron na złoty kolor."
+    ]
+  },
+  {
+    "tytul": "Ocet Ziołowy z Suszu (Marynata Zimą)",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Przetwórstwo"],
+    "mechanizm_tworzenia": "Maceracja octowa z suszu",
+    "skladniki": [
+      { "nazwa": "Suszone ziele i kwiaty jasnoty", "ilosc": "pół szklanki", "filar": "1_bazowy" },
+      { "nazwa": "Ocet jabłkowy (żywy)", "ilosc": "500 ml", "filar": "4_poslaniec" },
+      { "nazwa": "Ząbek czosnku", "ilosc": "1 sztuka", "filar": "3_minister" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Susz i rozgnieciony czosnek umieścić w wyparzonym słoiku.",
+      "Krok 2: Zalać octem, zamknąć szczelnie i odstawić w ciepłe miejsce na 3-4 tygodnie.",
+      "Krok 3: Przefiltrować. Używać do zmiękczania mięs, dressingów i zup (np. czerwonego barszczu)."
+    ]
+  },
+  {
+    "tytul": "Duszona Soczewica z Jasnotą",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Kuchnia Roślinna", "Dania Jednogarnkowe"],
+    "mechanizm_tworzenia": "Duszenie",
+    "skladniki": [
+      { "nazwa": "Czerwona soczewica", "ilosc": "1 szklanka", "filar": "2_wzmocnienie" },
+      { "nazwa": "Suszona jasnota purpurowa", "ilosc": "2 łyżki", "filar": "1_bazowy" },
+      { "nazwa": "Bulion warzywny", "ilosc": "2,5 szklanki", "filar": "4_poslaniec" },
+      { "nazwa": "Przecier pomidorowy", "ilosc": "2 łyżki", "filar": "3_minister" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Soczewicę przepłukać na sitku.",
+      "Krok 2: W garnku zalać ją bulionem, dodać suszoną jasnotę i przecier.",
+      "Krok 3: Gotować na małym ogniu ok. 15-20 minut, aż soczewica się rozpadnie a zioła oddadzą aromat."
+    ]
+  },
+  {
+    "tytul": "Masło Ziołowe (Wersja Zimowa)",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Kuchnia Domowa"],
+    "mechanizm_tworzenia": "Ucieranie na zimno",
+    "skladniki": [
+      { "nazwa": "Masło 82% (w temp. pokojowej)", "ilosc": "100 g", "filar": "4_poslaniec" },
+      { "nazwa": "Suszona jasnota (zmielona na pył)", "ilosc": "1 czubata łyżka", "filar": "1_bazowy" },
+      { "nazwa": "Sól wędzona", "ilosc": "szczypta", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Zmielony susz z jasnoty zalać 1 łyżeczką ciepłej wody i odstawić na 5 minut by napęczniał i oddał aromat (inaczej masło będzie miało teksturę trocin).",
+      "Krok 2: Utrzeć miękkie masło z nawilżonymi ziołami i solą.",
+      "Krok 3: Chłodzić przez kilka godzin przed podaniem."
+    ]
+  },
+  {
+    "tytul": "Ziołowy Kwas Chlebowy na Suszu",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Słowiańskie", "Napój Fermentowany"],
+    "mechanizm_tworzenia": "Dzikia fermentacja",
+    "skladniki": [
+      { "nazwa": "Wysuszony na kamień chleb razowy", "ilosc": "300 g", "filar": "2_wzmocnienie" },
+      { "nazwa": "Suszona jasnota", "ilosc": "1 garść", "filar": "1_bazowy" },
+      { "nazwa": "Cukier i kilka rodzynek", "ilosc": "pożywka do fermentacji", "filar": "3_minister" },
+      { "nazwa": "Woda filtrowana", "ilosc": "3 litry", "filar": "4_poslaniec" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Chleb i susz zalać wrzątkiem w kamionkowym garnku. Przestudzić.",
+      "Krok 2: Dodać cukier (ok. 4 łyżek) i rodzynki. Przykryć gazą.",
+      "Krok 3: Zostawić na 3-4 dni w ciepłym miejscu. Gdy zacznie lekko musować – odcedzić, rozlać do butelek (z zapięciem patentowym) i przenieść do lodówki na 2 dni nagazowania."
+    ]
+  },
+  {
+    "tytul": "Wywar Rytualny do Gotowania Ryżu/Kasz",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Alchemia Kulinarna"],
+    "mechanizm_tworzenia": "Napar kulinarny",
+    "skladniki": [
+      { "nazwa": "Suszona jasnota", "ilosc": "1 duża łyżka", "filar": "1_bazowy" },
+      { "nazwa": "Woda", "ilosc": "proporcjonalnie do ilości gotowanej kaszy", "filar": "4_poslaniec" },
+      { "nazwa": "Szczypta soli i odrobina oliwy", "ilosc": "do smaku", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: W garnku przygotować wodę do ugotowania porcji ryżu lub kaszy jaglanej/gryczanej.",
+      "Krok 2: Zioła umieścić w zamykanym stalowym 'zaparzaczu' (sitku) do herbaty i wrzucić do gotującej się wody wraz z kaszą.",
+      "Krok 3: Gotować całość klasycznie, a po wchłonięciu płynu przez kaszę wyciągnąć sitko z ziołami. Kasza nabierze delikatnego, leśno-grzybowego aromatu i zostanie odżywiona żelazem."
+    ]
+  },
+  {
+    "tytul": "Puder Ziołowy do Deserów",
+    "typ": "kulinarne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Cukiernictwo Ziołowe"],
+    "mechanizm_tworzenia": "Mielenie",
+    "skladniki": [
+      { "nazwa": "Suszone (purpurowe) wierzchołki jasnoty", "ilosc": "2 łyżki", "filar": "1_bazowy" },
+      { "nazwa": "Puder cukrowy", "ilosc": "4 łyżki", "filar": "4_poslaniec" },
+      { "nazwa": "Odrobina cynamonu lub wanilii", "ilosc": "szczypta", "filar": "3_minister" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Suszone zioła zmielić w młynku do kawy na bardzo drobny, jednolity pył.",
+      "Krok 2: Wymieszać zielono-purpurowy pył z cukrem pudrem i aromatem.",
+      "Krok 3: Posypywać naleśniki, omlety na słodko, pączki i wypieki za pomocą drobnego sitka."
+    ]
+  },
+
 
   {
     "tytul": "Orzeźwienie Boruty (Oskoła z Miętą i Miodem)",
@@ -6410,6 +7655,64 @@
       "Krok 2: Dodać miód i intensywnie mieszać drewnianą łyżką.",
       "Krok 3: Podawać w temperaturze pokojowej."
     ]
+  },
+
+  {
+    "tytul": "Klasztorna Nalewka Panieńska (Eliksir Zdrowia)",
+    "typ": "medyczne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Medycyna Klasztorna", "Ziołolecznictwo Historyczne"],
+    "mechanizm_tworzenia": "Maceracja alkoholowa z miodem",
+    "skladniki": [
+      { "nazwa": "Świeże wierzchołki i kwiaty jasnoty purpurowej", "ilosc": "2 szklanki", "filar": "1_bazowy", "tropizm_organowy": "Miednica / Krew" },
+      { "nazwa": "Kwiatostany krwawnika pospolitego", "ilosc": "pół szklanki", "filar": "2_wzmocnienie", "tropizm_organowy": "Naczynia krwionośne" },
+      { "nazwa": "Owoc anyżu lub nasiona arcydzięgla", "ilosc": "1 łyżka", "filar": "3_minister", "tropizm_organowy": "Żołądek (rozgrzewa)" },
+      { "nazwa": "Alkohol (wódka 40-50%)", "ilosc": "500 ml", "filar": "4_poslaniec", "tropizm_organowy": "Krwiobieg" },
+      { "nazwa": "Miód wrzosowy lub lipowy", "ilosc": "3 łyżki", "filar": "5_korektor" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Świeże zioła lekko ugnieść w dłoniach, by puściły soki i umieścić w wyparzonym, dużym słoju.",
+      "Krok 2: Dodać anyż i zalać alkoholem tak, aby wszystkie składniki były całkowicie przykryte.",
+      "Krok 3: Zamknąć szczelnie i odstawić na 4 tygodnie w ciemne, chłodne miejsce (np. do spiżarni), wstrząsając co 2 dni.",
+      "Krok 4: Zlać płyn, mocno odciskając zioła przez płótno. Miód rozpuścić w odrobinie letniej wody, dolać do nalewki i odstawić na kolejne 2 tygodnie do sklarowania."
+    ],
+    "stosowanie_i_dawkowanie": {
+      "okolicznosci_stosowania": "Bolesne miesiączkowanie, stany zapalne przydatków, osłabienie wiosenne, napięcia w miednicy małej.",
+      "dawkowanie_standardowe": "Pół kieliszka (ok. 15-20 ml) dziennie. Przy bólach menstruacyjnych stosować na 3 dni przed spodziewanym cyklem."
+    },
+    "klasyfikacja_dzialania": {
+      "triada_kampo": { "cel_glowny": "Ketsu (Krew)", "wyjasnienie": "Rozprasza zimno i zastoje krwi w dolnym ogrzewaczu, co jest typowe dla receptur klasztornych skierowanych na 'choroby niewieście'." }
+    },
+    "uwagi": "Nalewka zyskuje z czasem głęboki, ciemnobursztynowy kolor i ziołowo-korzenny aromat."
+  },
+  {
+    "tytul": "Benedyktyńskie Wino Jasnotowe",
+    "typ": "medyczne",
+    "roslina": "Jasnota purpurowa",
+    "slug": "jasnota_purpurowa",
+    "pochodzenie": ["Fitoterapia Klasztorna", "Średniowieczna Alchemia"],
+    "mechanizm_tworzenia": "Maceracja w winie na ciepło",
+    "skladniki": [
+      { "nazwa": "Suszone lub lekko zwiędnięte ziele jasnoty", "ilosc": "2 garście", "filar": "1_bazowy", "tropizm_organowy": "Krew" },
+      { "nazwa": "Dobre, naturalne wino białe (wytrawne lub półwytrawne)", "ilosc": "1 butelka (750 ml)", "filar": "4_poslaniec", "tropizm_organowy": "Szybkie wchłanianie" },
+      { "nazwa": "Suszony korzeń mniszka lekarskiego", "ilosc": "1 łyżeczka", "filar": "2_wzmocnienie", "tropizm_organowy": "Wątroba" },
+      { "nazwa": "Laska cynamonu", "ilosc": "1 sztuka", "filar": "3_minister", "tropizm_organowy": "Śledziona (poprawa smaku i krążenia Qi)" }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Wino przelać do emaliowanego garnka. Dodać zioła oraz cynamon.",
+      "Krok 2: Powoli podgrzewać miksturę, aż zacznie parować, ale NIE doprowadzać do wrzenia (by nie odparować całego alkoholu i nie zniszczyć garbników).",
+      "Krok 3: Zdjąć z ognia, przykryć i odstawić na 24 godziny w chłodne miejsce do maceracji.",
+      "Krok 4: Przecedzić wino przez gęste sito bezpośrednio z powrotem do butelki. Przechowywać w lodówce."
+    ],
+    "stosowanie_i_dawkowanie": {
+      "okolicznosci_stosowania": "Poprawa trawienia po ciężkim posiłku, anemia, wyczerpanie nerwowe.",
+      "dawkowanie_standardowe": "Jeden mały kieliszek (ok. 50 ml) do wieczornego posiłku."
+    },
+    "klasyfikacja_dzialania": {
+      "matryca_wu_xing": { "zywiol_leczony": "Drzewo / Ziemia", "narzad_matczyny_do_wsparcia": "Wątroba / Żołądek", "porada_matrycy": "Lekka gorycz i alkohol ułatwiają przepływ zastojów pokarmowych." }
+    },
+    "uwagi": "Wina ziołowe to jedna z najstarszych i najłagodniejszych form przyjmowania leków roślinnych, idealna dla osób, które źle tolerują mocne nalewki spirytusowe."
   }
 
   ]
