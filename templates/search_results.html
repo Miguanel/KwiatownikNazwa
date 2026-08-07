@@ -4,7 +4,7 @@
 <div class="search-container">
     <h1>🔎 Wyszukiwarka Terapeutyczna</h1>
     
-    <form action="{{ url_for('search_symptoms') }}" method="GET" style="margin-bottom: 40px;">
+    <form action="{{ url_for('plants.szukaj_terapeutyczna') }}" method="GET" style="margin-bottom: 40px;">
         <input type="text" name="query" value="{{ query }}" placeholder="Wpisz objaw (np. gardło, zapalenie, trawienie)..." 
                class="input-field" style="width: 70%; padding: 15px;">
         <button type="submit" class="btn-green" style="padding: 15px 30px;">Szukaj Rozwiązania</button>
