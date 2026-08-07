@@ -1,7 +1,7 @@
 import os
 from flask_frozen import Freezer
-from app import app, get_all_plants_list
-
+from app import app
+from app.utils.helpers import get_all_plants_list
 # Konfiguracja: wygenerowane pliki trafią do folderu 'build'
 app.config['FREEZER_DESTINATION'] = 'build'
 freezer = Freezer(app)
