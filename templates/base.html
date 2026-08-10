@@ -142,9 +142,9 @@
             <!-- Część zwijana (linki i przyciski) -->
             <div class="collapse navbar-collapse justify-content-end" id="kwiatownikNavbar">
                 <ul class="navbar-nav align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('generator') }}"><i class="ra ra-flask"></i> Generatory</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('przepisy') }}"><i class="ra ra-cauldron"></i> Przepisy</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('gildie') }}"><i class="ra ra-pawn"></i> Gildie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('plants.generator') }}"><i class="ra ra-flask"></i> Generatory</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('api.api_all_recipes') }}"><i class="ra ra-cauldron"></i> Przepisy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('plants.gildie') }}"><i class="ra ra-pawn"></i> Gildie</a></li>
                     <li class="nav-item d-none d-lg-block"><a class="nav-link frozen-feature" href="#"><i class="ra ra-speech-bubble"></i> Komentarze</a></li>
 
                     <li class="nav-item dropdown px-2">
