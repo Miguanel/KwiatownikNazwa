@@ -381,7 +381,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // ==========================================
-// 5. WYSZUKIWARKA
+// 5. WYSZUKIWARKA (Z POPRAWKĄ NA ZNAKI I SŁOWA)
 // ==========================================
 const searchForm = document.getElementById('recipeSearchForm');
 const searchInput = document.getElementById('recipeSearch');
@@ -391,11 +391,33 @@ const noResultsMessage = document.getElementById('noResultsMessage');
 let keywords = new Set();
 const stopWords = ['w', 'z', 'i', 'o', 'a', 'do', 'na', 'po', 'ze', 'za', 'się', 'lub', 'jak', 'ml', 'g', 'kg', 'dag', 'lyz', 'łyż', 'łyżka', 'łyżeczka', 'szklanki', 'szklanka', 'proporcja', 'ok', 'szt', 'sztuk', 'litr', 'gram', 'często', 'bardzo', 'jest'];
 
+// 1. SILNIK NORMALIZACJI - usuwa polskie znaki diakrytyczne
+function normalizeText(text) {
+    if (!text) return "";
+    const accents = {'ą':'a','ć':'c','ę':'e','ł':'l','ń':'n','ó':'o','ś':'s','ź':'z','ż':'z'};
+    return text.toLowerCase().replace(/[ąćęłńóśźż]/g, match => accents[match]);
+}
+
+// 2. SILNIK ZAAWANSOWANEGO WYSZUKIWANIA - szuka każdego wpisanego słowa z osobna
+function advancedSearchMatch(targetText, query) {
+    if (!targetText || !query) return false;
+    const normTarget = normalizeText(targetText);
+    const normQuery = normalizeText(query);
+
+    // Dzieli wpisane hasło np. "bol glowy" na ["bol", "glowy"]
+    const queryWords = normQuery.split(/\s+/).filter(w => w.length > 0);
+
+    // Zwraca prawde, jeśli każde ze słów znajduje się w celu
+    return queryWords.every(word => normTarget.includes(word));
+}
+
+// Generowanie podpowiedzi dla dropdownu (autouzupełnianie)
 recipeWrappers.forEach(wrapper => {
     const rawText = wrapper.querySelector('.search-data').textContent;
+    // Oczyszczamy tekst, ale zachowujemy polskie znaki dla podpowiedzi
     const words = rawText.replace(/[^\w\sęóąśłżźćń]/gi, '').split(/\s+/);
     words.forEach(word => {
-        if (word.length > 2 && !!word.match(/^[a-z]+$/i) && !stopWords.includes(word)) {
+        if (word.length > 2 && !!word.match(/^[a-z]+$/i) && !stopWords.includes(word.toLowerCase())) {
             keywords.add(word);
         }
     });
@@ -403,33 +425,56 @@ recipeWrappers.forEach(wrapper => {
 
 const keywordsArray = Array.from(keywords).sort();
 
+// Logika filtrowania kart z przepisami
 function filterRecipes(query) {
     let visibleCount = 0;
+    // Zabezpieczenie przed samymi spacjami
+    const cleanQuery = query.trim();
+
     recipeWrappers.forEach(wrapper => {
         const dataText = wrapper.querySelector('.search-data').textContent;
-        if (dataText.includes(query)) {
+
+        // Pusta szukajka = pokaż wszystko
+        if (cleanQuery === "") {
             wrapper.classList.remove('d-none');
             visibleCount++;
         } else {
-            wrapper.classList.add('d-none');
+            // Używamy naszego mądrego algorytmu
+            if (advancedSearchMatch(dataText, cleanQuery)) {
+                wrapper.classList.remove('d-none');
+                visibleCount++;
+            } else {
+                wrapper.classList.add('d-none');
+            }
         }
     });
 
-    sortResultsByFavorites();
+    if (typeof sortResultsByFavorites === 'function') {
+        sortResultsByFavorites();
+    }
 
     if (noResultsMessage) {
         noResultsMessage.style.display = visibleCount === 0 ? 'block' : 'none';
     }
 }
 
+// EventListenery na formularzu
 if (searchInput) {
     searchInput.addEventListener('input', function() {
-        const val = this.value.toLowerCase().trim();
+        // Tu zdejmujemy toLowerCase() żeby ułatwić pracę Regexom z podpowiedzi
+        const val = this.value.trim();
         suggestionsList.innerHTML = '';
         suggestionsList.style.display = 'none';
-        filterRecipes(val);
+
+        filterRecipes(val); // Wyszukujemy recepty "w locie"
+
         if (val.length < 2) return;
-        const filtered = keywordsArray.filter(k => k.includes(val)).slice(0, 6);
+
+        // --- Poprawiona logika generowania podpowiedzi z dropdownu ---
+        const normVal = normalizeText(val); // Podpowiedzi też chcemy bez diakrytyki
+        // Szukamy słów bazując na znormalizowanym tekście
+        const filtered = keywordsArray.filter(k => normalizeText(k).includes(normVal)).slice(0, 6);
+
         if (filtered.length > 0) {
             suggestionsList.style.display = 'block';
             filtered.forEach(word => {
@@ -437,11 +482,12 @@ if (searchInput) {
                 btn.className = 'list-group-item list-group-item-action text-start';
                 btn.style.borderRadius = '0';
                 btn.style.fontFamily = "'Crimson Text', serif";
-                const regex = new RegExp(`(${val})`, 'gi');
-                btn.innerHTML = word.replace(regex, '<strong style="color: #2d5a27;">$1</strong>');
+                // Zastępowanie szukanego fragmentu mimo innych znaków jest trudne w JS,
+                // więc po prostu pogrubiamy całe słowo podpowiedzi, jeśli jest tam pasujący rdzeń.
+                btn.innerHTML = `<strong style="color: #2d5a27;">${word}</strong>`;
                 btn.type = 'button';
                 btn.onclick = () => {
-                    searchInput.value = word;
+                    searchInput.value = word; // Wrzuca wybrane słowo z poprawnej polszczyzny
                     suggestionsList.style.display = 'none';
                     filterRecipes(word);
                 };
@@ -454,8 +500,8 @@ if (searchInput) {
 if (searchForm) {
     searchForm.addEventListener('submit', function(e) {
         e.preventDefault();
-        filterRecipes(searchInput.value.toLowerCase().trim());
-        suggestionsList.style.display = 'none';
+        filterRecipes(searchInput.value.trim());
+        if(suggestionsList) suggestionsList.style.display = 'none';
     });
 }
 
@@ -471,7 +517,6 @@ window.clearSearch = function() {
         filterRecipes('');
     }
 };
-
 // ==========================================
 // 6. OBSŁUGA ULUBIONYCH I PARAMETRÓW URL
 // ==========================================
