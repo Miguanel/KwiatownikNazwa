@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let recipesData = [];
 
     // Pobieramy naszą bazę PRZEPISÓW
-    fetch("{{ url_for('api_all_recipes') }}")
+    fetch("{{ url_for('api.api_all_recipes') }}")
         .then(response => response.json())
         .then(data => {
             recipesData = data;
