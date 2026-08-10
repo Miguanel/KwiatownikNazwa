@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Pobieramy całą bazę
-    fetch("{{ url_for('api_all_plants') }}")
+    fetch("{{ url_for('api.api_all_plants') }}")
         .then(res => res.json())
         .then(data => {
             allPlants = data;
