@@ -381,7 +381,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // ==========================================
-// 5. WYSZUKIWARKA (Z POPRAWKĄ NA ZNAKI I SŁOWA)
+// 5. WYSZUKIWARKA (ZAAWANSOWANA)
 // ==========================================
 const searchForm = document.getElementById('recipeSearchForm');
 const searchInput = document.getElementById('recipeSearch');
@@ -391,55 +391,75 @@ const noResultsMessage = document.getElementById('noResultsMessage');
 let keywords = new Set();
 const stopWords = ['w', 'z', 'i', 'o', 'a', 'do', 'na', 'po', 'ze', 'za', 'się', 'lub', 'jak', 'ml', 'g', 'kg', 'dag', 'lyz', 'łyż', 'łyżka', 'łyżeczka', 'szklanki', 'szklanka', 'proporcja', 'ok', 'szt', 'sztuk', 'litr', 'gram', 'często', 'bardzo', 'jest'];
 
-// 1. SILNIK NORMALIZACJI - usuwa polskie znaki diakrytyczne
+// 1. SILNIK NORMALIZACJI - usuwa polskie znaki diakrytyczne do wyszukiwania
 function normalizeText(text) {
     if (!text) return "";
     const accents = {'ą':'a','ć':'c','ę':'e','ł':'l','ń':'n','ó':'o','ś':'s','ź':'z','ż':'z'};
     return text.toLowerCase().replace(/[ąćęłńóśźż]/g, match => accents[match]);
 }
 
-// 2. SILNIK ZAAWANSOWANEGO WYSZUKIWANIA - szuka każdego wpisanego słowa z osobna
+// 2. SILNIK DOPASOWANIA - rozdziela zapytanie ("ból głowy" na "bol", "glowy") i szuka każdego z osobna
 function advancedSearchMatch(targetText, query) {
     if (!targetText || !query) return false;
     const normTarget = normalizeText(targetText);
     const normQuery = normalizeText(query);
 
-    // Dzieli wpisane hasło np. "bol glowy" na ["bol", "glowy"]
     const queryWords = normQuery.split(/\s+/).filter(w => w.length > 0);
-
-    // Zwraca prawde, jeśli każde ze słów znajduje się w celu
     return queryWords.every(word => normTarget.includes(word));
 }
 
-// Generowanie podpowiedzi dla dropdownu (autouzupełnianie)
+// 3. GENEROWANIE CZYSTYCH DANYCH I PODPOWIEDZI W LOCIE
 recipeWrappers.forEach(wrapper => {
-    const rawText = wrapper.querySelector('.search-data').textContent;
-    // Oczyszczamy tekst, ale zachowujemy polskie znaki dla podpowiedzi
-    const words = rawText.replace(/[^\w\sęóąśłżźćń]/gi, '').split(/\s+/);
+    const btn = wrapper.querySelector('.btn-details');
+    if (!btn) return;
+
+    // Pobieramy bezpieczny, poprawnie zakodowany JSON (omijamy błędy Pythona z polskimi znakami)
+    let recipeData;
+    try {
+        recipeData = JSON.parse(btn.getAttribute('data-recipe'));
+    } catch (e) {
+        recipeData = {};
+    }
+
+    // Zmieniamy cały słownik w jeden tekst
+    let rawText = JSON.stringify(recipeData);
+
+    // USUWANIE LINKÓW: Wycina wszystkie adresy URL zaczynające się od http/https
+    rawText = rawText.replace(/https?:\/\/[^\s"']+/g, ' ');
+
+    // Zapisujemy ten idealnie oczyszczony tekst w pamięci diva dla szybkiego filtrowania
+    wrapper.dataset.searchContent = rawText;
+
+    // ZAMIANA INTERPUNKCJI NA SPACJE: Zamiast sklejać słowa, oddzielamy je
+    const cleanTextForKeywords = rawText.replace(/[^\w\sęóąśłżźćńĘÓĄŚŁŻŹĆŃ]/g, ' ');
+
+    // Tworzenie słów kluczowych do dropdownu
+    const words = cleanTextForKeywords.split(/\s+/);
     words.forEach(word => {
-        if (word.length > 2 && !!word.match(/^[a-z]+$/i) && !stopWords.includes(word.toLowerCase())) {
-            keywords.add(word);
+        const w = word.toLowerCase();
+        // Przepuszczamy tylko same litery (wywalamy 100g, 50ml), dłuższe niż 2 znaki
+        if (w.length > 2 && w.match(/^[a-zżźćńółęąś]+$/) && !stopWords.includes(w)) {
+            keywords.add(w);
         }
     });
 });
 
 const keywordsArray = Array.from(keywords).sort();
 
-// Logika filtrowania kart z przepisami
+// 4. LOGIKA FILTROWANIA KART
 function filterRecipes(query) {
     let visibleCount = 0;
-    // Zabezpieczenie przed samymi spacjami
     const cleanQuery = query.trim();
 
     recipeWrappers.forEach(wrapper => {
-        const dataText = wrapper.querySelector('.search-data').textContent;
+        // Czytamy nasz zoptymalizowany tekst
+        const dataText = wrapper.dataset.searchContent || "";
 
-        // Pusta szukajka = pokaż wszystko
         if (cleanQuery === "") {
             wrapper.classList.remove('d-none');
             visibleCount++;
         } else {
-            // Używamy naszego mądrego algorytmu
+            // Sprawdzamy algorytmem advancedSearchMatch
             if (advancedSearchMatch(dataText, cleanQuery)) {
                 wrapper.classList.remove('d-none');
                 visibleCount++;
@@ -458,21 +478,18 @@ function filterRecipes(query) {
     }
 }
 
-// EventListenery na formularzu
+// 5. NASŁUCHIWANIE ZDARZEŃ FORMULARZA
 if (searchInput) {
     searchInput.addEventListener('input', function() {
-        // Tu zdejmujemy toLowerCase() żeby ułatwić pracę Regexom z podpowiedzi
         const val = this.value.trim();
         suggestionsList.innerHTML = '';
         suggestionsList.style.display = 'none';
 
-        filterRecipes(val); // Wyszukujemy recepty "w locie"
+        filterRecipes(val);
 
         if (val.length < 2) return;
 
-        // --- Poprawiona logika generowania podpowiedzi z dropdownu ---
-        const normVal = normalizeText(val); // Podpowiedzi też chcemy bez diakrytyki
-        // Szukamy słów bazując na znormalizowanym tekście
+        const normVal = normalizeText(val);
         const filtered = keywordsArray.filter(k => normalizeText(k).includes(normVal)).slice(0, 6);
 
         if (filtered.length > 0) {
@@ -482,12 +499,11 @@ if (searchInput) {
                 btn.className = 'list-group-item list-group-item-action text-start';
                 btn.style.borderRadius = '0';
                 btn.style.fontFamily = "'Crimson Text', serif";
-                // Zastępowanie szukanego fragmentu mimo innych znaków jest trudne w JS,
-                // więc po prostu pogrubiamy całe słowo podpowiedzi, jeśli jest tam pasujący rdzeń.
+                // Podświetlamy słowo na zielono
                 btn.innerHTML = `<strong style="color: #2d5a27;">${word}</strong>`;
                 btn.type = 'button';
                 btn.onclick = () => {
-                    searchInput.value = word; // Wrzuca wybrane słowo z poprawnej polszczyzny
+                    searchInput.value = word;
                     suggestionsList.style.display = 'none';
                     filterRecipes(word);
                 };
