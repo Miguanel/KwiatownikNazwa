@@ -1,0 +1,267 @@
+[
+  {
+    "id": "napar_z_dzikich_kwiatow_flower_power",
+    "tytul": "Napar z dzikich kwiatów \"Flower Power\"",
+    "typ": "kulinarno_medyczne_plyn",
+    "roslina": "Bez czarny",
+    "slug": "bez_czarny",
+    "metoda": "napar",
+    "opis": "Czaszaki jadalnych kwiatów są idealne do przygotowania nakładki ziół z dzikich kwiatów. To przepis z książki Foraging & Feasting.",
+    "skladniki": [
+      {
+        "nazwa": "Kwiaty bezu",
+        "ilosc": "1 duża garść (suszone)",
+        "czesc_rosliny": "kwiat",
+        "link_id": "bez_czarny"
+      },
+      {
+        "nazwa": "Płatki dzikiej róży",
+        "ilosc": "1 duża garść (suszone)",
+        "czesc_rosliny": "kwiat",
+        "link_id": "dzika_roza"
+      },
+      {
+        "nazwa": "Kwiaty koniczyny czerwonej",
+        "ilosc": "1 duża garść (suszone)",
+        "czesc_rosliny": "kwiat",
+        "link_id": null
+      },
+      {
+        "nazwa": "Liście z wierzchołkami z kwiatami agastachy anyżowej",
+        "ilosc": "1 duża garść (suszone)",
+        "czesc_rosliny": "liść",
+        "link_id": null
+      }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Zmieszać w słoiku po 1 dużej garści każdego suszonego składnika. Mieszaninę można przechowywać do późniejszego użycia.",
+      "Krok 2: Wsypać 1 dużą garść suszonej mieszanki kwiatowej do słoika o pojemności 1 litra (quart).",
+      "Krok 3: Powoli zalać wrzątkiem do pełna.",
+      "Krok 4: Przykryć słoik i odstawić do parzenia na 10 minut do 1 godziny.",
+      "Krok 5: Przełować napar przez sitko o drobnym oczku, pomagając łyżką wycisnąć z ziół cały płyn.",
+      "Krok 6: Podawać na ciepło lub użyć jako składnika innych dań."
+    ],
+    "porcje": "2",
+    "czas_przygotowania": "10 min",
+    "tagi": [
+      "napar ziół",
+      "dzikie kwiaty",
+      "herbatka",
+      "przepis"
+    ],
+    "siedziba": {
+      "item_id": 35,
+      "jezyk_oryginalu": "en-US",
+      "przetlumaczono": "2026-09-28",
+      "model": "groq/qwen/qwen3.8-27b"
+    },
+    "zrodla": [
+      {
+        "nazwa": "grow for age cook",
+        "url": "https://www.growforagecookferment.com/wildflower-herbal-infusion-tea/",
+        "tytul_oryginalny": "Wildflower \"Flower Power\" Herbal Infusion Tea",
+        "jezyk": "en-US",
+        "data_pobrania": "2026-09-28"
+      }
+    ]
+  },
+  {
+    "id": "miod_pitny_z_dzikich_kwiatow",
+    "tytul": "Miód pitny z dzikich kwiatów",
+    "typ": "kulinarne",
+    "metoda": "fermentacja",
+    "opis": "Czy zrobiłeś już galon miodu pitnego? Oto przepis na miód pitny z dzikich kwiatów – idealny, gdy kwiaty są w sezonie.",
+    "skladniki": [
+      {
+        "nazwa": "dzikie kwiaty (dowolne)",
+        "ilosc": "garść",
+        "link_id": null
+      },
+      {
+        "nazwa": "woda gotująca",
+        "ilosc": "1,9 l (½ gal)",
+        "link_id": null
+      },
+      {
+        "nazwa": "miód surowy (najlepiej dziki)",
+        "ilosc": "0,9–1,4 kg (2–3 lb)",
+        "link_id": null
+      },
+      {
+        "nazwa": "rodzynki złote",
+        "ilosc": "mała garść",
+        "link_id": null
+      },
+      {
+        "nazwa": "cytryna",
+        "ilosc": "½",
+        "link_id": null
+      },
+      {
+        "nazwa": "zimna woda",
+        "ilosc": "1,9 l (½ gal)",
+        "link_id": null
+      },
+      {
+        "nazwa": "drożdże szampańskie",
+        "ilosc": "½ opakowania",
+        "link_id": null
+      }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Zdezynfekować cały sprzęt, który będzie miał kontakt z miodem pitnym",
+      "Krok 2: Posiekać kwiaty na większe kawałki, usuwając jak najwięcej zielonej części",
+      "Krok 3: Wlać około pół galona wody do dużego garnka z kwiatami i doprowadzić do wrzenia",
+      "Krok 4: Po zagotowaniu zdjąć z ognia i parzyć kwiaty co najmniej 20 minut",
+      "Krok 5: Dodać miód do ciepłej wody i mieszać, aż się rozpuści",
+      "Krok 6: Przelać powstały moszcz przy pomocy lejka do jednego galonowego dzbanka",
+      "Krok 7: Dodać rodzynki złote oraz cienko pokrojoną ½ cytryny",
+      "Krok 8: Uzupełnić czystą (niechlorowaną) zimną wodą, zostawiając kilka centymetrów wolnej przestrzeni",
+      "Krok 9: Dodać drożdże szampańskie, upewniając się, że temperatura moszczu nie przekracza 90°F (najlepiej 75–80°F); w razie potrzeby użyć termometru i po ostudzeniu dodać ½ opakowania drożdży (drugą połowę przechować w lodówce)",
+      "Krok 10: Zakorkować dzbanek i potrząsnąć go przez minutę lub dwie, aby rozprowadzić drożdże",
+      "Krok 11: Umieścić gumowy korek z zamknięciem (wypełniony w połowie wodą) na dzbanku i czekać, aż pojawią się bąbelki",
+      "Krok 12: Po nocy pojawią się intensywne bąbelki; płatki kwiatów mogą wypływać na powierzchnię – mieszać je kilka razy w ciągu pierwszych dwóch dni, aby usunąć bąbelki",
+      "Krok 13: Fermentować w chłodnym, ciemnym miejscu przez około 4–6 tygodni, aż przestanie bąbelkować",
+      "Krok 14: Po zakończeniu fermentacji przelać do butelek i pozostawić do dojrzewania"
+    ],
+    "porcje": "32",
+    "czas_przygotowania": "65 min",
+    "tagi": [
+      "jak zrobić miód pitny",
+      "miód pitny z dzikich kwiatów",
+      "przepis na miód pitny z dzikich kwiatów"
+    ],
+    "siedziba": {
+      "item_id": 37,
+      "jezyk_oryginalu": "en-US",
+      "przetlumaczono": "2026-09-28",
+      "model": "groq/openai/gpt-oss-120b"
+    },
+    "zrodla": [
+      {
+        "nazwa": "grow for age cook",
+        "url": "https://www.growforagecookferment.com/how-to-make-wildflower-mead/",
+        "tytul_oryginalny": "Wildflower Mead",
+        "jezyk": "en-US",
+        "data_pobrania": "2026-09-28"
+      }
+    ]
+  },
+  {
+    "id": "lody_na_patyku_z_lawenda_i_melisa_s39",
+    "tytul": "Lody na patyku z lawendą i melisą",
+    "typ": "kulinarne",
+    "roslina": "Melisa lekarska",
+    "metoda": "lody",
+    "opis": "Te ziołowe lody na patyku są łatwe w przygotowaniu i wyjątkowo pyszne w upalny dzień!",
+    "skladniki": [
+      {
+        "nazwa": "woda",
+        "ilosc": "960 ml (4 cups)",
+        "link_id": null
+      },
+      {
+        "nazwa": "świeże kwiaty lawendy",
+        "ilosc": "5-6 sztuk",
+        "czesc_rosliny": "kwiat",
+        "link_id": null
+      },
+      {
+        "nazwa": "świeża melisa",
+        "ilosc": "1 mała garść",
+        "czesc_rosliny": "liść",
+        "link_id": null
+      },
+      {
+        "nazwa": "miód",
+        "ilosc": "2-4 łyżki stołowe (tbsp)",
+        "link_id": null
+      }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Zagotować wodę, a następnie zalać nią lawendę i melisę w słoiku o pojemności jednego kwarty (ok. 0,95 litra).",
+      "Krok 2: Parzyć napar przez 10-15 minut, następnie odcedzić zioła przez gęste sitko i wmieszać miód do uzyskania pożądanej słodyczy.",
+      "Krok 3: Pozwolić naparowi nieco ostygnąć (można dodać kilka kostek lodu), a następnie przelać go do foremki do lody na patyku. Zamrażać przez kilka godzin lub przez całą noc."
+    ],
+    "porcje": "6",
+    "czas_przygotowania": "20 minut",
+    "tagi": [
+      "lody na patyku",
+      "lawenda",
+      "melisa",
+      "przepisy letnie"
+    ],
+    "siedziba": {
+      "item_id": 39,
+      "jezyk_oryginalu": "en-US",
+      "przetlumaczono": "2026-09-28",
+      "model": "gemini/gemini-3.5-flash-lite"
+    },
+    "zrodla": [
+      {
+        "nazwa": "grow for age cook",
+        "url": "https://www.growforagecookferment.com/herbal-popsicles-lavender-lemon-balm/",
+        "tytul_oryginalny": "Lavender + Lemon Balm Popsicles",
+        "jezyk": "en-US",
+        "data_pobrania": "2026-09-28"
+      }
+    ]
+  },
+  {
+    "id": "bloody_mary",
+    "tytul": "Bloody Mary",
+    "typ": "kulinarne",
+    "pochodzenie": [
+      "Tradycja ukraińska"
+    ],
+    "opis": "Klasyczny koktajl na bazie wódki, soku pomidorowego i cytrynowego, podawany z solą i pieprzem",
+    "skladniki": [
+      {
+        "nazwa": "Wódka",
+        "ilosc": "50 ml",
+        "link_id": null
+      },
+      {
+        "nazwa": "Sok pomidorowy",
+        "ilosc": "25 ml",
+        "link_id": null
+      },
+      {
+        "nazwa": "Sok cytrynowy",
+        "ilosc": "5 ml",
+        "link_id": null
+      },
+      {
+        "nazwa": "Sól i pieprz",
+        "ilosc": "do smaku",
+        "link_id": null
+      }
+    ],
+    "sposob_przygotowania": [
+      "Krok 1: Schłodzić wszystkie składniki",
+      "Krok 2: Wlać do szklanki najpierw sok pomidorowy, następnie wódkę i sok cytrynowy",
+      "Krok 3: Posypać solą i pieprzem"
+    ],
+    "porcje": "1",
+    "tagi": [
+      "cocktail",
+      "vodka",
+      "bloody mary"
+    ],
+    "siedziba": {
+      "item_id": 182,
+      "jezyk_oryginalu": "uk",
+      "przetlumaczono": "2026-09-28",
+      "model": "groq/openai/gpt-oss-120b"
+    },
+    "zrodla": [
+      {
+        "nazwa": "Технологія приготування домашньої яблучної настоянки",
+        "url": "https://drink.co.ua/news/desjat_prostikh_receptiv_koktejliv_z_gorilkoju/2014-11-01-216",
+        "tytul_oryginalny": "Simple Vodka Cocktail Recipes",
+        "jezyk": "uk",
+        "data_pobrania": "2026-09-28"
+      }
+    ]
+  }
+]

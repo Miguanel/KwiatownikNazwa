@@ -39,6 +39,31 @@ const kampoDict = {
 // ==========================================
 // 2. FUNKCJE POMOCNICZE
 // ==========================================
+// Tresci z internetu (Siedziba Kwiatownika) wstawiamy przez innerHTML - zawsze je escapujemy.
+function esc(value) {
+    if (value === null || value === undefined) return '';
+    return String(value).replace(/[&<>"']/g, ch => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[ch]));
+}
+
+function safeUrl(url) {
+    return (typeof url === 'string' && /^https?:\/\//i.test(url)) ? url : null;
+}
+
+// Zrodla przepisu: stare przepisy maja liste napisow, przepisy z Siedziby - liste obiektow {nazwa, url, ...}
+function normalizeSources(recipe) {
+    let list = [];
+    if (Array.isArray(recipe.zrodla)) list = recipe.zrodla;
+    else if (recipe.zrodla) list = [recipe.zrodla];
+    if (recipe.zrodlo) list = list.concat([recipe.zrodlo]);
+    return list.filter(Boolean).map(z => {
+        if (typeof z === 'object') {
+            return {name: z.nazwa || z.url || 'Źródło', url: safeUrl(z.url), title: z.tytul_oryginalny || '',
+                    lang: z.jezyk || '', date: z.data_pobrania || ''};
+        }
+        const url = safeUrl(z.trim());
+        return {name: url ? url.replace(/^https?:\/\/(www\.)?/i, '').split('/')[0] : z, url: url, title: '', lang: '', date: ''};
+    });
+}
 function getContextTooltip(title, text) {
     if(!text) return '';
     return `<span class="info-tooltip">?<span class="tooltip-text"><strong>${title}</strong><br>${text}</span></span>`;
@@ -118,39 +143,63 @@ window.openRecipeModal = function(buttonElement) {
         if(recipe.pochodzenie) {
             let origins = Array.isArray(recipe.pochodzenie) ? recipe.pochodzenie : [recipe.pochodzenie];
             origins.forEach(p => {
-                let clean = p.replace('[', '').replace(']', '');
+                let clean = esc(String(p).replace('[', '').replace(']', ''));
                 tagsHtml += `<span class="alchemical-tag">${clean}</span>`;
                 plainTextTags += `${clean}<br>`;
             });
         }
+        if(recipe._z_sieci) {
+            tagsHtml += `<span class="alchemical-tag web-tag" title="Przepis zebrany z internetu i przetłumaczony przez Siedzibę Kwiatownika">🌐 Z sieci</span>`;
+            plainTextTags += `Z sieci (przetłumaczony)<br>`;
+        }
         if(recipe.mechanizm_tworzenia) {
             let mechanisms = Array.isArray(recipe.mechanizm_tworzenia) ? recipe.mechanizm_tworzenia : [recipe.mechanizm_tworzenia];
             mechanisms.forEach(m => {
-                tagsHtml += `<span class="alchemical-tag" style="background:#f4f1ea; border-color:#d1c7a7; color:#b8860b;">${m}</span>`;
-                plainTextTags += `${m}<br>`;
+                tagsHtml += `<span class="alchemical-tag" style="background:#f4f1ea; border-color:#d1c7a7; color:#b8860b;">${esc(m)}</span>`;
+                plainTextTags += `${esc(m)}<br>`;
             });
         }
 
         originTags.innerHTML = tagsHtml;
         tooltipText.innerHTML = `<strong>Pochodzenie i System:</strong><br>${plainTextTags}`;
 
+        // --- O PRZEPISIE (opis, metoda, porcje, czas, roślina, tagi) ---
+        const infoContainer = document.getElementById('modalInfoContainer');
+        if (infoContainer) {
+            let facts = [];
+            if (recipe.roslina) {
+                const plantLink = recipe.slug ? `<a href="/plant/${encodeURIComponent(recipe.slug)}/">${esc(recipe.roslina)}</a>` : esc(recipe.roslina);
+                facts.push(`<span><strong>Roślina:</strong> ${plantLink}</span>`);
+            }
+            if (recipe.metoda) facts.push(`<span><strong>Metoda:</strong> ${esc(recipe.metoda)}</span>`);
+            if (recipe.porcje) facts.push(`<span><strong>Porcje:</strong> ${esc(recipe.porcje)}</span>`);
+            if (recipe.czas_przygotowania) facts.push(`<span><strong>Czas:</strong> ${esc(recipe.czas_przygotowania)}</span>`);
+            const tags = Array.isArray(recipe.tagi) ? recipe.tagi.filter(t => typeof t === 'string' && t) : [];
+            let infoHtml = '';
+            if (recipe.opis) infoHtml += `<p class="recipe-description">${esc(recipe.opis)}</p>`;
+            if (facts.length) infoHtml += `<div class="recipe-facts">${facts.join('')}</div>`;
+            if (tags.length) infoHtml += `<div class="recipe-tags">${tags.map(t => `<span class="alchemical-tag">#${esc(t)}</span>`).join('')}</div>`;
+            infoContainer.innerHTML = infoHtml;
+        }
+
         // --- ZASTOSOWANIE I DAWKOWANIE ---
         const dosageContainer = document.getElementById('modalDosageContainer');
         if(recipe.stosowanie_i_dawkowanie) {
-            dosageContainer.innerHTML = `
+            const sd = recipe.stosowanie_i_dawkowanie;
+            const rows = [["Kiedy stosować", sd.okolicznosci_stosowania], ["Jak dawkować", sd.dawkowanie_standardowe],
+                          ["Dla pacjenta", sd.skalowanie_pacjenta]].filter(r => r[1]);   // bez "undefined" dla brakujacych pol
+            dosageContainer.innerHTML = rows.length ? `
                 <details class="grimoire-details" open>
                     <summary>🩺 Zastosowanie i Dawkowanie</summary>
                     <div class="details-content details-highlight">
-                        <p style="margin-bottom:10px;"><strong>Kiedy stosować:</strong> ${recipe.stosowanie_i_dawkowanie.okolicznosci_stosowania}</p>
-                        <p style="margin-bottom:10px;"><strong>Jak dawkować:</strong> ${recipe.stosowanie_i_dawkowanie.dawkowanie_standardowe}</p>
-                        <p style="margin-bottom:0;"><strong>Dla pacjenta:</strong> ${recipe.stosowanie_i_dawkowanie.skalowanie_pacjenta}</p>
+                        ${rows.map((r, i) => `<p style="margin-bottom:${i === rows.length - 1 ? 0 : 10}px;"><strong>${r[0]}:</strong> ${esc(r[1])}</p>`).join('')}
                     </div>
-                </details>`;
+                </details>` : '';
         } else if (recipe.dawkowanie) {
             dosageContainer.innerHTML = `
                 <details class="grimoire-details" open>
                     <summary>🩺 Dawkowanie</summary>
-                    <div class="details-content details-highlight">${recipe.dawkowanie}</div>
+                    <div class="details-content details-highlight">${esc(recipe.dawkowanie)}</div>
                 </details>`;
         } else {
             dosageContainer.innerHTML = '';
@@ -214,7 +263,7 @@ window.openRecipeModal = function(buttonElement) {
                 warnHtml += `
                     <details class="grimoire-subdetails">
                         <summary>Uwagi ogólne</summary>
-                        <div class="subdetails-content">${recipe.uwagi}</div>
+                        <div class="subdetails-content">${esc(recipe.uwagi)}</div>
                     </details>`;
             }
             warnHtml += `</div></details>`;
@@ -297,19 +346,23 @@ window.openRecipeModal = function(buttonElement) {
                             <em>${tropizmCtx.name}</em> ${getContextTooltip("Mechanizm działania", tropizmCtx.desc)}
                         </span>` : '';
 
+                    const ingName = s.link_id
+                        ? `<a href="/plant/${encodeURIComponent(s.link_id)}/" class="ingredient-plant-link" title="Zobacz roślinę">${esc(s.nazwa)}</a>`
+                        : esc(s.nazwa);
                     ingHtml += `<li class="ingredient-li">
-                        <strong style="color:#2d5a27; font-size:1.15rem;">${s.ilosc || ''} - ${s.nazwa}</strong>
+                        <strong style="color:#2d5a27; font-size:1.15rem;">${s.ilosc ? esc(s.ilosc) + ' - ' : ''}${ingName}</strong>
+                        ${s.czesc_rosliny && !s.filar ? `<small class="text-muted"> (${esc(s.czesc_rosliny)})</small>` : ''}
                         <div class="ingredient-details-row">
                             ${rolaHtml}
                             ${dzialanieHtml}
                         </div>
                     </li>`;
                 } else {
-                    ingHtml += `<li class="ingredient-li"><strong style="color:#2d5a27; font-size:1.1rem;">${s}</strong></li>`;
+                    ingHtml += `<li class="ingredient-li"><strong style="color:#2d5a27; font-size:1.1rem;">${esc(s)}</strong></li>`;
                 }
             });
         } else {
-            ingHtml = `<li class="ingredient-li">${recipe.skladniki || 'Brak danych'}</li>`;
+            ingHtml = `<li class="ingredient-li">${esc(recipe.skladniki) || 'Brak danych'}</li>`;
         }
         ingList.innerHTML = ingHtml;
 
@@ -318,7 +371,7 @@ window.openRecipeModal = function(buttonElement) {
         if(Array.isArray(recipe.sposob_przygotowania)) {
             let prepsHtml = "";
             recipe.sposob_przygotowania.forEach((step, index) => {
-                let cleanStep = step.replace(/^Faza \d+ \((.*?)\):|^Krok \d+:/, '<strong>$1:</strong>');
+                let cleanStep = esc(step).replace(/^Faza \d+ \((.*?)\):/, '<strong>$1:</strong>').replace(/^Krok \d+:\s*/, '');
                 prepsHtml += `
                     <div class="ritual-step">
                         <div class="ritual-number">${index + 1}</div>
@@ -328,7 +381,30 @@ window.openRecipeModal = function(buttonElement) {
             });
             prep.innerHTML = prepsHtml;
         } else {
-            prep.innerHTML = `<div class="ritual-step"><div class="ritual-text">${recipe.sposob_przygotowania || 'Brak instrukcji'}</div></div>`;
+            prep.innerHTML = `<div class="ritual-step"><div class="ritual-text">${esc(recipe.sposob_przygotowania) || 'Brak instrukcji'}</div></div>`;
+        }
+
+        // --- ŹRÓDŁA ---
+        const srcContainer = document.getElementById('modalSourcesContainer');
+        if (srcContainer) {
+            const sources = normalizeSources(recipe);
+            if (sources.length) {
+                const items = sources.map(z => {
+                    const name = z.url ? `<a href="${esc(z.url)}" target="_blank" rel="noopener nofollow">${esc(z.name)}</a>` : esc(z.name);
+                    const meta = [z.title ? `„${esc(z.title)}”` : '', z.lang ? esc(z.lang.toUpperCase()) : '',
+                                  z.date ? `pobrano ${esc(z.date)}` : ''].filter(Boolean).join(' · ');
+                    return `<li>${name}${meta ? ` <small class="text-muted">— ${meta}</small>` : ''}</li>`;
+                }).join('');
+                const note = recipe._z_sieci
+                    ? `<p class="text-muted" style="font-size:.9rem;margin-bottom:6px;">Przepis przetłumaczony z oryginału${sources.length > 1 ? ` — występuje na ${sources.length} stronach` : ''}.</p>` : '';
+                srcContainer.innerHTML = `
+                    <details class="grimoire-details" ${recipe._z_sieci ? 'open' : ''}>
+                        <summary>📚 Źródła (${sources.length})</summary>
+                        <div class="details-content">${note}<ul class="recipe-sources">${items}</ul></div>
+                    </details>`;
+            } else {
+                srcContainer.innerHTML = '';
+            }
         }
 
         // Pokaż Modal
@@ -421,8 +497,9 @@ recipeWrappers.forEach(wrapper => {
         recipeData = {};
     }
 
-    // Zmieniamy cały słownik w jeden tekst
-    let rawText = JSON.stringify(recipeData);
+    // Zmieniamy cały słownik w jeden tekst (bez źródeł i metadanych Siedziby - to nie treść przepisu)
+    const {zrodla, zrodlo, siedziba, _z_sieci, ...searchable} = recipeData || {};
+    let rawText = JSON.stringify(searchable);
 
     // USUWANIE LINKÓW: Wycina wszystkie adresy URL zaczynające się od http/https
     rawText = rawText.replace(/https?:\/\/[^\s"']+/g, ' ');
@@ -447,6 +524,14 @@ recipeWrappers.forEach(wrapper => {
 const keywordsArray = Array.from(keywords).sort();
 
 // 4. LOGIKA FILTROWANIA KART
+let currentOrigin = 'all';   // 'all' | 'book' (z ksiąg) | 'web' (z sieci)
+
+window.setOriginFilter = function(origin, btn) {
+    currentOrigin = origin;
+    document.querySelectorAll('.origin-filter .btn').forEach(b => b.classList.toggle('active', b === btn));
+    filterRecipes(searchInput ? searchInput.value.trim() : '');
+};
+
 function filterRecipes(query) {
     let visibleCount = 0;
     const cleanQuery = query.trim();
@@ -455,7 +540,9 @@ function filterRecipes(query) {
         // Czytamy nasz zoptymalizowany tekst
         const dataText = wrapper.dataset.searchContent || "";
 
-        if (cleanQuery === "") {
+        if (currentOrigin !== 'all' && wrapper.dataset.origin !== currentOrigin) {
+            wrapper.classList.add('d-none');
+        } else if (cleanQuery === "") {
             wrapper.classList.remove('d-none');
             visibleCount++;
         } else {

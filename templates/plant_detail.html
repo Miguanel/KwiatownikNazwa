@@ -245,6 +245,23 @@
             </details>
             {% endif %}
 
+            {% if plant_recipes %}
+            <details class="grimmoire-tab">
+                <summary><i class="ra ra-cauldron"></i> Przepisy z tą rośliną ({{ plant_recipes | length }})</summary>
+                <div class="tab-content">
+                    <ul class="trivia-list">
+                        {% for r in plant_recipes %}
+                            <li><i class="ra ra-emerald"></i>
+                                <a href="{{ url_for('recipes.przepisy', q=r.get('tytul'), autoopen='true') }}">{{ r.get('tytul') }}</a>
+                                {% if r.get('_z_sieci') %}<small title="przepis z internetu, przetłumaczony">🌐</small>{% endif %}
+                                {% if r.get('metoda') %}<small style="color:#888;"> · {{ r.get('metoda') }}</small>{% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </details>
+            {% endif %}
+
             {% if plant.ciekawostki %}
             <details class="grimmoire-tab">
                 <summary><i class="ra ra-scroll"></i> Wiedza Tajemna</summary>

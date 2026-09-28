@@ -21,7 +21,7 @@
                             <h4 style="margin: 0; font-size: 1.3rem;">{{ r.part_name|capitalize }} {{ r.plant_name }}</h4>
                             <small><em>{{ r.latin_part }}</em></small>
                         </div>
-                        <a href="{{ url_for('plant_detail', plant_id=r.plant_id) }}" class="btn-green" style="font-size: 0.8rem; padding: 5px 15px;">Zobacz pełny opis</a>
+                        <a href="{{ url_for('plants.plant_detail', plant_id=r.plant_id) }}" class="btn-green" style="font-size: 0.8rem; padding: 5px 15px;">Zobacz pełny opis</a>
                     </div>
                     <p style="margin: 15px 0;"><strong>Sugerowane działanie:</strong> {{ r.effect }}</p>
                     <div style="font-size: 0.85rem; color: #666;">

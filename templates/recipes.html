@@ -28,6 +28,12 @@
         </form>
     </div>
 
+    <div class="origin-filter d-flex justify-content-center gap-2 mb-4 flex-wrap">
+        <button type="button" class="btn btn-sm btn-outline-secondary active" onclick="setOriginFilter('all', this)">Wszystkie ({{ (book_count or 0) + (web_count or 0) }})</button>
+        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="setOriginFilter('book', this)">📜 Z ksiąg ({{ book_count or 0 }})</button>
+        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="setOriginFilter('web', this)" title="Przepisy zebrane z internetu i przetłumaczone przez Siedzibę Kwiatownika">🌐 Z sieci ({{ web_count or 0 }})</button>
+    </div>
+
     <div id="noResultsMessage" class="text-center py-5" style="display: none;">
         <div style="background: #fff; padding: 30px; border: 1px dashed #d1c7a7;">
             <h3 style="color: #666; font-family: 'Playfair Display', serif;">Brak wyników w księdze.</h3>
@@ -38,7 +44,7 @@
     <div class="row g-4" id="recipesGrid">
         {% if results %}
             {% for recipe in results %}
-            <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch recipe-wrapper">
+            <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch recipe-wrapper" data-origin="{{ 'web' if recipe.get('_z_sieci') else 'book' }}">
                 <div class="d-none search-data">{{ recipe | string | lower }}</div>
                 <div class="recipe-card w-100">
                     <div style="display: flex; justify-content: space-between; align-items: start;">
@@ -47,6 +53,7 @@
                         {% else %}
                             <span class="recipe-stamp stamp-food">♨ Rzemiosło</span>
                         {% endif %}
+                        {% if recipe.get('_z_sieci') %}<span class="web-badge" title="Z internetu, przetłumaczony - źródła w grymuarze">🌐 z sieci</span>{% endif %}
                         <small style="color: #888; font-style: italic; text-align: right;">
                             {% if recipe.get('pochodzenie') %}{{ recipe.get('pochodzenie')[0] | replace('[', '') | replace(']', '') }}{% else %}{{ recipe.get('roslina') }}{% endif %}
                         </small>
@@ -55,7 +62,9 @@
                     <h3 class="recipe-title">{{ recipe.get('tytul', 'Nieznana receptura') }}</h3>
 
                     <p style="font-size: 0.95rem; color: #555; margin-bottom: 20px; font-family: 'Crimson Text', serif; flex-grow: 1;">
-                        {% if recipe.get('klasyfikacja_dzialania') and recipe.get('klasyfikacja_dzialania').get('skalowanie_toksykologiczne') %}
+                        {% if recipe.get('opis') %}
+                            {{ recipe.get('opis')[:110] }}{% if recipe.get('opis') | length > 110 %}...{% endif %}
+                        {% elif recipe.get('klasyfikacja_dzialania') and recipe.get('klasyfikacja_dzialania').get('skalowanie_toksykologiczne') %}
                             <strong>Moc:</strong> {{ recipe.get('klasyfikacja_dzialania').get('skalowanie_toksykologiczne')[:80] }}...
                         {% elif recipe.get('sposob_przygotowania') %}
                             {% set prep = recipe.get('sposob_przygotowania') %}
@@ -119,6 +128,8 @@
             <div class="modal-body p-0" style="background: #fdfaf0;" id="modalBodyObj">
                 <div style="padding: 20px;">
 
+                    <div id="modalInfoContainer"></div>
+
                     <div id="modalDosageContainer"></div>
 
                     <div id="modalPropertiesContainer"></div>
@@ -138,6 +149,8 @@
                             <div id="modalRecipePreparation" style="margin-top: 15px;"></div>
                         </div>
                     </div>
+
+                    <div id="modalSourcesContainer" class="mt-3"></div>
 
                 </div>
             </div>

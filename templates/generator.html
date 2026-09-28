@@ -304,7 +304,7 @@
     <div class="comments-section frozen-feature">
         <h3 style="color: #3e4a3d;">Dziennik Laboratoryjny</h3>
         {% if current_user.is_authenticated %}
-            <form method="POST" action="{{ url_for('generator') }}" style="background: #fdfaf0; padding: 20px; border: 1px solid #d1c7a7; margin-bottom: 30px;">
+            <form method="POST" action="{{ url_for('plants.generator') }}" style="background: #fdfaf0; padding: 20px; border: 1px solid #d1c7a7; margin-bottom: 30px;">
                 <textarea name="content" placeholder="Zapisz swoje obserwacje..." required style="width: 100%; height: 80px; padding: 10px; border: 1px solid #ccc; margin-bottom: 10px; font-family: inherit;"></textarea>
                 <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
                     <input type="checkbox" name="is_private" id="priv_note" style="cursor: pointer;">

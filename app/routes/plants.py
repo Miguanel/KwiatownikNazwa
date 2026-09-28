@@ -4,6 +4,7 @@ from flask_login import current_user
 from app.models import Comment
 from app.extensions import db
 from app.utils.helpers import get_plant_data, get_all_plants_list, get_all_therapeutic_keywords
+from app.routes.recipes import recipes_for_plant, is_from_web
 from astro_engine import get_astrological_data
 
 plants_bp = Blueprint('plants', __name__)
@@ -24,7 +25,12 @@ def plant_detail(plant_id):
         comments = Comment.query.filter_by(plant_id=plant_id, is_private=False).order_by(
             Comment.date_posted.desc()).all()
 
-    return render_template('plant_detail.html', plant=plant_data, plant_id=plant_id, comments=comments)
+    plant_recipes = recipes_for_plant(plant_id, plant_data.get('nazwa_pl'))
+    for r in plant_recipes:
+        r['_z_sieci'] = is_from_web(r)
+
+    return render_template('plant_detail.html', plant=plant_data, plant_id=plant_id, comments=comments,
+                           plant_recipes=plant_recipes)
 
 
 @plants_bp.route('/szukaj_terapeutyczna/', methods=['GET', 'POST'])

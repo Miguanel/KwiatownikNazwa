@@ -392,3 +392,17 @@ details.grimoire-subdetails > summary:hover {
     color: #444;
     line-height: 1.5;
 }
+
+/* ===== Przepisy z Siedziby Kwiatownika (z sieci) ===== */
+.web-badge {
+    font-size: 0.75rem; color: #2f5d8a; border: 1px solid #9db8d3; background: #eef4fa;
+    padding: 1px 8px; border-radius: 10px; margin: 0 6px; white-space: nowrap;
+}
+.alchemical-tag.web-tag { background: #eef4fa; border-color: #9db8d3; color: #2f5d8a; }
+.origin-filter .btn.active { background: #3e4a3d; color: #fdfaf0; border-color: #3e4a3d; }
+.recipe-description { font-family: 'Crimson Text', serif; font-size: 1.1rem; color: #444; margin-bottom: 10px; }
+.recipe-facts { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-bottom: 8px; color: #3e4a3d; }
+.recipe-facts a, .ingredient-plant-link { color: #2d5a27; text-decoration: underline dotted; }
+.recipe-tags { margin-bottom: 12px; }
+.recipe-sources { margin: 0; padding-left: 18px; }
+.recipe-sources li { margin-bottom: 4px; word-break: break-word; }
