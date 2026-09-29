@@ -268,6 +268,52 @@
             </details>
             {% endif %}
 
+            {% if plant.wiedza and plant.wiedza.fakty %}
+            {% set sekcje = {'opis': 'Opis i wygląd', 'wystepowanie': 'Występowanie', 'czesci_rosliny': 'Części rośliny i surowce',
+                             'sklad': 'Skład i substancje czynne', 'zastosowanie_lecznicze': 'Ziołolecznictwo i medycyna ludowa',
+                             'barwienie': 'Barwienie i rzemiosło', 'kosmetyka': 'Kosmetyka', 'historia': 'Historia i nazwa',
+                             'kultura': 'Wierzenia i tradycje', 'nazwy_ludowe': 'Nazwy ludowe', 'bezpieczenstwo': 'Bezpieczeństwo',
+                             'uprawa': 'Uprawa', 'ciekawostki': 'Ciekawostki'} %}
+            <details class="grimmoire-tab" open>
+                <summary><i class="ra ra-globe"></i> Wiedza z sieci ({{ plant.wiedza.fakty | length }})</summary>
+                <div class="tab-content">
+                    <p class="web-note">Informacje zebrane z Wikipedii i stron z różnych krajów, każda sprawdzona z cytatem
+                    źródła. Kliknij źródło, aby zweryfikować je samodzielnie.{% if plant.wiedza.zaktualizowano %} Aktualizacja: {{ plant.wiedza.zaktualizowano }}.{% endif %}</p>
+                    {% for key, title in sekcje.items() %}
+                        {% set items = plant.wiedza.fakty | selectattr('sekcja', 'equalto', key) | list %}
+                        {% if items %}
+                        <details class="grimmoire-subtab"{% if key in ('barwienie', 'kultura', 'zastosowanie_lecznicze') %} open{% endif %}>
+                            <summary>{{ '🎨 ' if key == 'barwienie' else '' }}{{ title }} ({{ items | length }})</summary>
+                            <div class="subtab-content">
+                                <ul class="web-facts">
+                                {% for f in items %}
+                                    <li>{{ f.tekst }}{% if f.czesc %} <em class="web-part">({{ f.czesc }})</em>{% endif %}
+                                        {% if f.zrodlo and f.zrodlo.url and (f.zrodlo.url.startswith('http://') or f.zrodlo.url.startswith('https://')) %}
+                                        <a class="web-src" href="{{ f.zrodlo.url }}" target="_blank" rel="noopener nofollow" title="{{ f.zrodlo.nazwa }}">↗ {{ f.zrodlo.url.split('/')[2] }}{% if f.jezyk %} [{{ f.jezyk }}]{% endif %}</a>
+                                        {% endif %}
+                                    </li>
+                                {% endfor %}
+                                </ul>
+                            </div>
+                        </details>
+                        {% endif %}
+                    {% endfor %}
+                    {% if plant.wiedza.zrodla %}
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-quill-ink"></i> Źródła wiedzy ({{ plant.wiedza.zrodla | length }})</summary>
+                        <div class="subtab-content">
+                            <ol class="arch-bib">
+                            {% for z in plant.wiedza.zrodla %}{% if z.url and (z.url.startswith('http://') or z.url.startswith('https://')) %}
+                                <li><a href="{{ z.url }}" target="_blank" rel="noopener nofollow">{{ z.nazwa or z.url }}</a></li>
+                            {% endif %}{% endfor %}
+                            </ol>
+                        </div>
+                    </details>
+                    {% endif %}
+                </div>
+            </details>
+            {% endif %}
+
             {% if legacy and legacy.sekcje %}
             <details class="grimmoire-tab">
                 <summary><i class="ra ra-book"></i> Z archiwum Kwiatownika{% if plant._archiwum %} (roślina z archiwum){% endif %}</summary>
@@ -342,6 +388,12 @@
     .arch-link, .arch-bib a { color: #a8c69f; font-size: 0.85em; word-break: break-all; }
     .arch-src { font-size: 0.85em; }
     .compare-link { display: inline-block; margin-top: 10px; color: #d1b880; font-size: 0.9rem; }
+    /* WIEDZA Z SIECI (Siedziba Kwiatownika) */
+    .web-note { font-size: 0.85em; color: #cfc4a8; font-style: italic; margin-bottom: 10px; }
+    .web-facts { margin: 0; padding-left: 18px; }
+    .web-facts li { margin-bottom: 8px; overflow-wrap: anywhere; }
+    .web-part { color: #cfc4a8; font-size: 0.9em; }
+    .web-src { color: #a8c69f; font-size: 0.8em; margin-left: 4px; white-space: nowrap; }
 </style>
 
 <style>
