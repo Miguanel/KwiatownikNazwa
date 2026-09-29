@@ -67,4 +67,10 @@ def create_app():
     app.register_blueprint(api_bp)
     app.register_blueprint(recipes_bp)
 
+    # Tabele bazy (komentarze, uzytkownicy) tworzone przy starcie, jesli ich nie ma.
+    # Plik bazy (instance/) nie jest w repozytorium, a freeze.py na Renderze potrzebuje pustych tabel.
+    with app.app_context():
+        from app import models  # noqa: F401 - rejestruje modele w SQLAlchemy
+        db.create_all()
+
     return app
