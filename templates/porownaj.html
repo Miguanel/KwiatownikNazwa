@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container py-4 compare-page">
+    <h1 class="compare-title"><i class="ra ra-scroll-unfurled"></i> Porównywarka roślin</h1>
+    <p class="text-muted">Wybierz dwie lub trzy rośliny, aby zestawić ich naturę, surowce, zastosowanie i bezpieczeństwo.</p>
+
+    <form method="get" class="compare-form">
+        {% for key in ['a', 'b', 'c'] %}
+        <select name="{{ key }}" class="form-select">
+            <option value="">{% if key == 'c' %}(opcjonalnie trzecia){% else %}— wybierz roślinę —{% endif %}</option>
+            {% for p in all_plants %}
+            <option value="{{ p.id }}" {% if (ids + ['', '', ''])[['a','b','c'].index(key)] == p.id %}selected{% endif %}>{{ p.name }}</option>
+            {% endfor %}
+        </select>
+        {% endfor %}
+        <button class="btn compare-btn">Porównaj</button>
+    </form>
+
+    {% if columns|length >= 1 %}
+    {% set rows = [
+        ('nazwa_lat', 'Nazwa łacińska'), ('rodzina', 'Rodzina'), ('opis', 'Opis'),
+        ('profil', 'Profil energetyczny'), ('wymagania', 'Wymagania siedliskowe'), ('czesci', 'Surowce (części rośliny)'),
+        ('medyczne', 'Zastosowanie lecznicze'), ('rzemieslnicze', 'Rzemiosło'), ('barwniki', 'Barwienie'),
+        ('interakcje', 'Interakcje z lekami'), ('ostrzezenia', 'Przeciwwskazania'), ('przepisy', 'Przepisy w Kwiatowniku')] %}
+    <div class="table-responsive">
+    <table class="table compare-table">
+        <thead>
+            <tr><th></th>
+            {% for c in columns %}
+                <th><a href="{{ url_for('plants.plant_detail', plant_id=c.id) }}">{{ c.nazwa_pl }}</a>
+                    {% if c.archiwum %}<small class="text-muted">(archiwum)</small>{% endif %}</th>
+            {% endfor %}</tr>
+        </thead>
+        <tbody>
+        {% for key, label in rows %}
+            <tr><th scope="row">{{ label }}</th>
+            {% for c in columns %}
+                {% set v = c[key] %}
+                <td class="{{ 'danger-cell' if key in ('interakcje', 'ostrzezenia') and v else '' }}">
+                    {% if v is mapping %}
+                        {% for k, x in v.items() if x %}<div><strong>{{ k | replace('_', ' ') | capitalize }}:</strong>
+                            {% if x is mapping %}{{ x.values() | select('string') | join(', ') }}{% elif x is string %}{{ x }}{% elif x is iterable %}{{ x | join(', ') }}{% else %}{{ x }}{% endif %}</div>{% endfor %}
+                    {% elif v is string %}{{ v }}
+                    {% elif v is iterable %}{{ v | join('; ') }}
+                    {% elif v is not none %}{{ v }}
+                    {% else %}<span class="text-muted">—</span>{% endif %}
+                </td>
+            {% endfor %}</tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    </div>
+    <p class="text-muted small">Informacje mają charakter edukacyjny i nie zastępują porady lekarza ani farmaceuty.</p>
+    {% endif %}
+</div>
+
+<style>
+    .compare-title { font-family: 'Playfair Display', serif; color: #3e4a3d; }
+    .compare-form { display: flex; gap: 10px; flex-wrap: wrap; margin: 16px 0 24px; }
+    .compare-form .form-select { max-width: 260px; }
+    .compare-btn { background-color: #3e4a3d; color: #fdfaf0; }
+    .compare-table { background: #fdfaf0; font-family: 'Crimson Text', serif; }
+    .compare-table th[scope=row] { width: 18%; color: #6d5c3d; }
+    .compare-table td { vertical-align: top; font-size: 0.95rem; }
+    .danger-cell { background: #fff3f3; }
+</style>
+{% endblock %}
