@@ -27,3 +27,6 @@ instance/
 
 # Pliki robocze Git/Siedziby
 *.tmp
+
+# Stary blad sciezki freeze.py (strona trafiala do app/build)
+app/build/

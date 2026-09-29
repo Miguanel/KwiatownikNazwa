@@ -7,7 +7,9 @@ from app.utils.helpers import get_all_plants_list
 
 # 1. Inicjalizacja aplikacji i konfiguracja
 app = create_app()
-app.config['FREEZER_DESTINATION'] = 'build'
+# Frozen-Flask liczy wzgledna sciezke od app.root_path (= folder pakietu app/), wiec bez pelnej sciezki
+# strona trafialaby do app/build, a Render publikuje build/ z katalogu glownego repozytorium.
+app.config['FREEZER_DESTINATION'] = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'build')
 freezer = Freezer(app)
 
 # 2. Generowanie stron dla każdej rośliny
