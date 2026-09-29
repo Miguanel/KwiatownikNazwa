@@ -9,6 +9,8 @@ const dict = {
     "Filar": "W starożytnych recepturach składniki dzieliły się na role: Bazowy (główny lek), Wzmocnienie (pomocnik), Minister (kierunkowskaz), Posłaniec (nośnik) i Korektor (łagodzący skutki uboczne).",
     "Alchemia Spageryczna": "Starożytna sztuka rozdzielania zioła na olejek (Duszę), alkohol (Ducha) i popiół (Ciało mineralne), by połączyć je w spotęgowany eliksir.",
     "Doktryna Sygnatur": "Dawne wierzenie, według którego wygląd, kolor lub środowisko życia rośliny zdradza, jaki organ ludzki ona leczy.",
+    "Humory Galena": "Grecko-rzymska medycyna czterech humorów (krew, flegma, żółć żółta, żółć czarna). Zioła mają jakości: ciepłe/zimne i suche/wilgotne w stopniach od I do IV.",
+    "Ajurweda": "Indyjska medycyna, w której zioła równoważą trzy dosze: Vata (ruch, powietrze), Pitta (ogień, przemiana) i Kapha (struktura, woda).",
     "Skalowanie Toksykologiczne": "Określa stopień niebezpieczeństwa i siłę działania receptury, od ziół łagodnych (normalizujących) po heroiczne (ekstremalnie silne, potencjalnie toksyczne)."
 };
 
@@ -40,6 +42,17 @@ const kampoDict = {
 // 2. FUNKCJE POMOCNICZE
 // ==========================================
 // Tresci z internetu (Siedziba Kwiatownika) wstawiamy przez innerHTML - zawsze je escapujemy.
+// Pary [etykieta, wartosc] -> "<strong>etykieta:</strong> wartosc" tylko dla niepustych wartosci.
+function labeledRows(pairs, sep = '<br><br>') {
+    return pairs.filter(p => p[1]).map(p => (p[0] ? `<strong>${p[0]}:</strong> ` : '') + esc(p[1])).join(sep);
+}
+function subDetails(summary, content) {
+    return content ? `
+                    <details class="grimoire-subdetails">
+                        <summary>${summary}</summary>
+                        <div class="subdetails-content">${content}</div>
+                    </details>` : '';
+}
 function esc(value) {
     if (value === null || value === undefined) return '';
     return String(value).replace(/[&<>"']/g, ch => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[ch]));
@@ -208,22 +221,14 @@ window.openRecipeModal = function(buttonElement) {
         // --- WŁAŚCIWOŚCI FIZYCZNE ---
         const propsContainer = document.getElementById('modalPropertiesContainer');
         if(recipe.wlasciwosci_fizyczne) {
+            const wf = recipe.wlasciwosci_fizyczne;
             propsContainer.innerHTML = `
                 <details class="grimoire-details">
                     <summary>👁️ Właściwości fizyczne i ślady</summary>
                     <div class="details-content" style="padding: 10px 20px;">
-                        <details class="grimoire-subdetails">
-                            <summary>Konsystencja i zapach</summary>
-                            <div class="subdetails-content">${recipe.wlasciwosci_fizyczne.konsystencja_i_slady}</div>
-                        </details>
-                        <details class="grimoire-subdetails">
-                            <summary>Ślady na skórze</summary>
-                            <div class="subdetails-content">${recipe.wlasciwosci_fizyczne.barwienie_skory}</div>
-                        </details>
-                        <details class="grimoire-subdetails">
-                            <summary>Ślady na odzieży</summary>
-                            <div class="subdetails-content">${recipe.wlasciwosci_fizyczne.barwienie_ubran}</div>
-                        </details>
+                        ${subDetails('Konsystencja i zapach', esc(wf.konsystencja_i_slady || ''))}
+                        ${subDetails('Ślady na skórze', esc(wf.barwienie_skory || ''))}
+                        ${subDetails('Ślady na odzieży', esc(wf.barwienie_ubran || ''))}
                     </div>
                 </details>`;
         } else {
@@ -243,8 +248,8 @@ window.openRecipeModal = function(buttonElement) {
                     <details class="grimoire-subdetails">
                         <summary>Ostrzeżenia i Interakcje</summary>
                         <div class="subdetails-content">
-                            <strong>Ostrzeżenia:</strong> ${recipe.bezpieczenstwo_i_interakcje.ostrzezenia}<br><br>
-                            <strong>Interakcje:</strong> ${recipe.bezpieczenstwo_i_interakcje.interakcje_z_lekami}
+                            ${labeledRows([["Ostrzeżenia", recipe.bezpieczenstwo_i_interakcje.ostrzezenia],
+                                           ["Interakcje", recipe.bezpieczenstwo_i_interakcje.interakcje_z_lekami]])}
                         </div>
                     </details>`;
             }
@@ -253,9 +258,9 @@ window.openRecipeModal = function(buttonElement) {
                     <details class="grimoire-subdetails">
                         <summary>Wymogi Czasowe i Zakazy</summary>
                         <div class="subdetails-content">
-                            <strong>Aplikacja:</strong> ${recipe.wymogi_szamanskie_i_czasowe.chronoterapia}<br><br>
-                            <strong>Czas zbioru:</strong> ${recipe.wymogi_szamanskie_i_czasowe.astrologia_zbioru}<br><br>
-                            <strong>Zakazy:</strong> ${recipe.wymogi_szamanskie_i_czasowe.dieta_i_zakazy}
+                            ${labeledRows([["Aplikacja", recipe.wymogi_szamanskie_i_czasowe.chronoterapia],
+                                           ["Czas zbioru", recipe.wymogi_szamanskie_i_czasowe.astrologia_zbioru],
+                                           ["Zakazy", recipe.wymogi_szamanskie_i_czasowe.dieta_i_zakazy]])}
                         </div>
                     </details>`;
             }
@@ -284,7 +289,7 @@ window.openRecipeModal = function(buttonElement) {
                 html += `
                     <details class="grimoire-subdetails">
                         <summary>Moc i Skalowanie ${getContextTooltip("Skalowanie Toksykologiczne", dict["Skalowanie Toksykologiczne"])}</summary>
-                        <div class="subdetails-content">${kd.skalowanie_toksykologiczne}</div>
+                        <div class="subdetails-content">${esc(kd.skalowanie_toksykologiczne)}</div>
                     </details>`;
             }
             if(kd.matryca_wu_xing) {
@@ -292,15 +297,15 @@ window.openRecipeModal = function(buttonElement) {
                     <details class="grimoire-subdetails">
                         <summary>Matryca Wu Xing ${getContextTooltip("Matryca Wu Xing", dict["Matryca Wu Xing"])}</summary>
                         <div class="subdetails-content">
-                            <strong>Leczy żywioł:</strong> <em>${kd.matryca_wu_xing.zywiol_leczony}</em><br>
-                            <strong>Wsparcie:</strong> <em>${kd.matryca_wu_xing.narzad_matczyny_do_wsparcia}</em><br><br>
-                            <small style="color:#666;">📝 ${kd.matryca_wu_xing.porada_matrycy}</small>
+                            ${labeledRows([["Leczy żywioł", kd.matryca_wu_xing.zywiol_leczony],
+                                           ["Wsparcie", kd.matryca_wu_xing.narzad_matczyny_do_wsparcia]], '<br>')}
+                            ${kd.matryca_wu_xing.porada_matrycy ? `<br><br><small style="color:#666;">📝 ${esc(kd.matryca_wu_xing.porada_matrycy)}</small>` : ''}
                         </div>
                     </details>`;
             }
             if(kd.triada_kampo) {
                 // Rozpoznawanie konkretnego terminu (Sui, Ketsu, Ki, Tokuso) i dodawanie dymka do wartości "Cel główny"
-                let kampoCtx = extractContext(kd.triada_kampo.cel_glowny);
+                let kampoCtx = extractContext(kd.triada_kampo.cel_glowny || '');
                 let kampoTooltipDef = "";
                 for (let key in kampoDict) {
                     if (kampoCtx.name.toLowerCase().includes(key)) {
@@ -314,10 +319,35 @@ window.openRecipeModal = function(buttonElement) {
                     <details class="grimoire-subdetails">
                         <summary>Triada Kampo ${getContextTooltip("Triada Kampo", dict["Triada Kampo"])}</summary>
                         <div class="subdetails-content">
-                            <strong>Cel główny:</strong> <em>${kd.triada_kampo.cel_glowny}</em> ${kampoValueTooltip}<br><br>
-                            <small style="color:#666;">📝 ${kd.triada_kampo.wyjasnienie}</small>
+                            <strong>Cel główny:</strong> <em>${esc(kd.triada_kampo.cel_glowny || '')}</em> ${kampoValueTooltip}
+                            ${kd.triada_kampo.wyjasnienie ? `<br><br><small style="color:#666;">📝 ${esc(kd.triada_kampo.wyjasnienie)}</small>` : ''}
                         </div>
                     </details>`;
+            }
+            // Pola opracowania z Siedziby Kwiatownika (inne tradycje)
+            if (kd.ajurweda) {
+                html += subDetails(`Ajurweda ${getContextTooltip("Ajurweda", dict["Ajurweda"])}`,
+                    labeledRows([["Dosze", kd.ajurweda.dosze], ["", kd.ajurweda.wyjasnienie]]));
+            }
+            if (kd.doktryna_sygnatur) {
+                html += subDetails(`Doktryna Sygnatur ${getContextTooltip("Doktryna Sygnatur", dict["Doktryna Sygnatur"])}`,
+                    labeledRows([["Sygnatura", kd.doktryna_sygnatur.sygnatura], ["Interpretacja", kd.doktryna_sygnatur.interpretacja]]));
+            }
+            if (kd.humory_galena) {
+                html += subDetails(`Humory Galena ${getContextTooltip("Humory Galena", dict["Humory Galena"])}`,
+                    labeledRows([["Jakość", kd.humory_galena.jakosc], ["Stopień", kd.humory_galena.stopien],
+                                 ["", kd.humory_galena.wyjasnienie]]));
+            }
+            if (kd.alchemia_spageryczna) {
+                html += subDetails(`Alchemia Spageryczna ${getContextTooltip("Alchemia Spageryczna", dict["Alchemia Spageryczna"])}`,
+                    labeledRows([["Zasada", kd.alchemia_spageryczna.zasada], ["", kd.alchemia_spageryczna.wyjasnienie]]));
+            }
+            if (Array.isArray(recipe.wskazowki_tradycyjne) && recipe.wskazowki_tradycyjne.length) {
+                html += subDetails('Wskazówki tradycyjne',
+                    `<ul style="margin:0; padding-left:18px;">${recipe.wskazowki_tradycyjne.map(t => `<li>${esc(t)}</li>`).join('')}</ul>`);
+            }
+            if (recipe.opracowanie && recipe.opracowanie.uwaga) {
+                html += `<p class="enrich-note">ℹ️ ${esc(recipe.opracowanie.uwaga)}</p>`;
             }
             html += `</div></details>`;
             alchemicalContainer.innerHTML = html;
@@ -331,8 +361,10 @@ window.openRecipeModal = function(buttonElement) {
         if (Array.isArray(recipe.skladniki)) {
             recipe.skladniki.forEach(s => {
                 if(typeof s === 'object') {
-                    let filarCtx = getDictContext(s.filar, pillarDict);
-                    let tropizmCtx = extractContext(s.tropizm_organowy || '');
+                    let filarCtx = getDictContext(s.filar ? esc(s.filar) : '', pillarDict);
+                    let tropizmCtx = extractContext(esc(s.tropizm_organowy || ''));
+                    let smakCtx = getDictContext(s.smak_ajurweda ? esc(s.smak_ajurweda) : '', flavorDict);
+                    if (smakCtx.name && s.smak_ajurweda) smakCtx.name = esc(s.smak_ajurweda).replace(/_/g, ' ');
 
                     let rolaHtml = filarCtx.name ? `
                         <span class="ingredient-role">
@@ -346,6 +378,12 @@ window.openRecipeModal = function(buttonElement) {
                             <em>${tropizmCtx.name}</em> ${getContextTooltip("Mechanizm działania", tropizmCtx.desc)}
                         </span>` : '';
 
+                    let smakHtml = smakCtx.name ? `
+                        <span class="ingredient-action">
+                            <strong>Smak:</strong>
+                            <em>${smakCtx.name}</em> ${getContextTooltip("Smak ajurwedyjski", smakCtx.desc || dict["Smak Ajurwedyjski"])}
+                        </span>` : '';
+
                     const ingName = s.link_id
                         ? `<a href="/plant/${encodeURIComponent(s.link_id)}/" class="ingredient-plant-link" title="Zobacz roślinę">${esc(s.nazwa)}</a>`
                         : esc(s.nazwa);
@@ -355,6 +393,7 @@ window.openRecipeModal = function(buttonElement) {
                         <div class="ingredient-details-row">
                             ${rolaHtml}
                             ${dzialanieHtml}
+                            ${smakHtml}
                         </div>
                     </li>`;
                 } else {

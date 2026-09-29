@@ -406,3 +406,9 @@ details.grimoire-subdetails > summary:hover {
 .recipe-tags { margin-bottom: 12px; }
 .recipe-sources { margin: 0; padding-left: 18px; }
 .recipe-sources li { margin-bottom: 4px; word-break: break-word; }
+
+/* Uwaga pod opracowaniem z Siedziby Kwiatownika (interpretacja tradycyjna, nie porada medyczna) */
+.enrich-note { margin: 12px 0 0; padding: 8px 12px; font-size: 0.85rem; color: #6d5c3d; background: #fbf7ec;
+    border-left: 3px solid #d1c7a7; font-style: italic; }
+.stamp-dye { color: #6a1b9a; border-color: #6a1b9a; background: #f3e5f5; }
+.stamp-cosm { color: #ad1457; border-color: #ad1457; background: #fce4ec; }

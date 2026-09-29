@@ -1,4 +1,26 @@
 {% extends "base.html" %}
+{% macro arch_value(v, depth=0) -%}
+    {%- if v is mapping -%}
+        <dl class="arch-dl">
+        {%- for k, x in v.items() if x not in (None, '', []) and k not in ('zrodlo', 'źródło', 'zrodla') -%}
+            <dt>{{ k | replace('_', ' ') | capitalize }}</dt><dd>{{ arch_value(x, depth + 1) }}</dd>
+        {%- endfor -%}
+        {%- set src = v.get('zrodlo') or v.get('źródło') or v.get('zrodla') -%}
+        {%- if src %}<dd class="arch-src">{{ arch_value(src if src is not string else [src], depth + 1) }}</dd>{% endif -%}
+        </dl>
+    {%- elif v is string -%}
+        {%- if v.startswith('http://') or v.startswith('https://') -%}
+            <a href="{{ v }}" target="_blank" rel="noopener nofollow" class="arch-link">źródło: {{ v.split('/')[2] }}</a>
+        {%- else -%}{{ v }}{%- endif -%}
+    {%- elif v is iterable -%}
+        {%- if v | select('number') | list | length == v | length and v | length > 0 -%}
+            {%- set mies = ['', 'styczeń', 'luty', 'marzec', 'kwiecień', 'maj', 'czerwiec', 'lipiec', 'sierpień', 'wrzesień', 'październik', 'listopad', 'grudzień'] -%}
+            {%- for m in v -%}{{ mies[m] if m is integer and 0 < m < 13 else m }}{{ ', ' if not loop.last }}{%- endfor -%}
+        {%- else -%}
+        <ul class="arch-list">{% for x in v %}<li>{{ arch_value(x, depth + 1) }}</li>{% endfor %}</ul>
+        {%- endif -%}
+    {%- else -%}{{ v }}{%- endif -%}
+{%- endmacro %}
 
 {% block content %}
 <div class="grimmoire-wrapper" style="background-image: url('{{ plant.url.pokrój if plant.url else '' }}');">
@@ -11,6 +33,7 @@
             <p class="hero-subtitle">{{ plant.nazwa_lat }} <span class="hero-family">| {{ plant.rodzina }}</span></p>
             <div class="hero-divider"></div>
             <p class="hero-desc">{{ plant.opis }}</p>
+            <a class="compare-link" href="{{ url_for('plants.porownaj', a=plant_id) }}"><i class="ra ra-scroll-unfurled"></i> Porównaj z inną rośliną</a>
 
             {% if plant.url %}
             <div class="plant-gallery">
@@ -245,6 +268,30 @@
             </details>
             {% endif %}
 
+            {% if legacy and legacy.sekcje %}
+            <details class="grimmoire-tab">
+                <summary><i class="ra ra-book"></i> Z archiwum Kwiatownika{% if plant._archiwum %} (roślina z archiwum){% endif %}</summary>
+                <div class="tab-content">
+                    {% for key, title, value in legacy.sekcje %}
+                    <details class="grimmoire-subtab"{% if key == 'barwniki' %} open{% endif %}>
+                        <summary>{% if key == 'barwniki' %}🎨 {% endif %}{{ title }}</summary>
+                        <div class="subtab-content">{{ arch_value(value) }}</div>
+                    </details>
+                    {% endfor %}
+                    {% if legacy.bibliografia %}
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-quill-ink"></i> Bibliografia ({{ legacy.bibliografia | length }})</summary>
+                        <div class="subtab-content">
+                            <ol class="arch-bib">
+                                {% for url in legacy.bibliografia %}<li><a href="{{ url }}" target="_blank" rel="noopener nofollow">{{ url }}</a></li>{% endfor %}
+                            </ol>
+                        </div>
+                    </details>
+                    {% endif %}
+                </div>
+            </details>
+            {% endif %}
+
             {% if plant_recipes %}
             <details class="grimmoire-tab">
                 <summary><i class="ra ra-cauldron"></i> Przepisy z tą rośliną ({{ plant_recipes | length }})</summary>
@@ -285,6 +332,17 @@
         <div id="lightboxCaption" class="lightbox-caption-text"></div>
     </div>
 </div>
+
+<style>
+    /* ARCHIWUM KWIATOWNIKA */
+    .arch-dl { margin: 0; }
+    .arch-dl dt { color: #d1b880; font-weight: bold; margin-top: 8px; }
+    .arch-dl dd { margin: 2px 0 0 12px; }
+    .arch-list { margin: 4px 0; padding-left: 18px; }
+    .arch-link, .arch-bib a { color: #a8c69f; font-size: 0.85em; word-break: break-all; }
+    .arch-src { font-size: 0.85em; }
+    .compare-link { display: inline-block; margin-top: 10px; color: #d1b880; font-size: 0.9rem; }
+</style>
 
 <style>
     /* FUNDAMENTY */

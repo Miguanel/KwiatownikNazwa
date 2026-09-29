@@ -3,7 +3,8 @@ from flask import Blueprint, render_template, abort, request, flash, redirect, u
 from flask_login import current_user
 from app.models import Comment
 from app.extensions import db
-from app.utils.helpers import get_plant_data, get_all_plants_list, get_all_therapeutic_keywords
+from app.utils.helpers import get_plant_data, get_all_plants_list, get_all_therapeutic_keywords, plants_dir
+from app.utils.legacy import get_legacy_plant
 from app.routes.recipes import recipes_for_plant, is_from_web
 from astro_engine import get_astrological_data
 
@@ -29,8 +30,46 @@ def plant_detail(plant_id):
     for r in plant_recipes:
         r['_z_sieci'] = is_from_web(r)
 
+    legacy = get_legacy_plant(plants_dir(), plant_id)
     return render_template('plant_detail.html', plant=plant_data, plant_id=plant_id, comments=comments,
-                           plant_recipes=plant_recipes)
+                           plant_recipes=plant_recipes, legacy=legacy)
+
+
+def _compare_row(data, legacy, recipes):
+    """Najwazniejsze cechy rosliny do porownywarki (brakujace pola = None)."""
+    if not data:
+        return None
+    zast = data.get('zastosowanie') if isinstance(data.get('zastosowanie'), dict) else {}
+    parts = data.get('czesci_rosliny') if isinstance(data.get('czesci_rosliny'), dict) else {}
+    barwniki = None
+    if legacy:
+        barwniki = next((v for k, t, v in legacy['sekcje'] if k == 'barwniki'), None)
+        if isinstance(barwniki, dict):
+            barwniki = barwniki.get('opis')
+    return {
+        'nazwa_pl': data.get('nazwa_pl'), 'nazwa_lat': data.get('nazwa_lat'), 'rodzina': data.get('rodzina'),
+        'opis': data.get('opis'), 'profil': data.get('profil_energetyczny'), 'wymagania': data.get('wymagania'),
+        'czesci': {k: (v.get('wlasciwości') or v.get('wlasciwosci') or '') if isinstance(v, dict) else '' for k, v in parts.items()},
+        'medyczne': zast.get('medyczne'), 'rzemieslnicze': zast.get('rzemieslnicze'), 'barwniki': barwniki,
+        'interakcje': data.get('interakcje'), 'ostrzezenia': data.get('ostrzezenia'),
+        'przepisy': len(recipes), 'archiwum': bool(data.get('_archiwum')),
+    }
+
+
+@plants_bp.route('/porownaj/')
+def porownaj():
+    """Porownywarka dwoch (lub trzech) roslin obok siebie - przeniesiona z pierwszego Kwiatownika."""
+    ids = [x for x in (request.args.get('a'), request.args.get('b'), request.args.get('c')) if x]
+    all_plants = sorted(({'id': pid, 'name': (get_plant_data(pid) or {}).get('nazwa_pl') or pid}
+                         for pid in get_all_plants_list()), key=lambda p: p['name'])
+    columns = []
+    for pid in ids:
+        data = get_plant_data(pid)
+        if data:
+            row = _compare_row(data, get_legacy_plant(plants_dir(), pid),
+                               recipes_for_plant(pid, data.get('nazwa_pl')))
+            columns.append({'id': pid, **row})
+    return render_template('porownaj.html', all_plants=all_plants, columns=columns, ids=ids)
 
 
 @plants_bp.route('/szukaj_terapeutyczna/', methods=['GET', 'POST'])

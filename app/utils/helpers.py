@@ -3,6 +3,11 @@ import os
 import json
 import re
 from flask import current_app
+from app.utils.legacy import legacy_as_plant, legacy_only_ids
+
+
+def plants_dir():
+    return os.path.join(current_app.root_path, '..', 'data', 'plants')
 
 def normalize_slug(text):
     accents = {'ą': 'a', 'ć': 'c', 'ę': 'e', 'ł': 'l', 'ń': 'n', 'ó': 'o', 'ś': 's', 'ź': 'z', 'ż': 'z'}
@@ -17,7 +22,8 @@ def get_plant_data(pid):
     path = os.path.join(current_app.root_path, '..', 'data', 'plants', f'{slug}.json')
 
     if not os.path.exists(path) or os.path.getsize(path) == 0:
-        return None
+        # roslina tylko w archiwum pierwszego Kwiatownika (data/plants/<kategoria>/)
+        return legacy_as_plant(plants_dir(), slug)
     try:
         with open(path, 'r', encoding='utf-8') as f:
             return json.load(f)
@@ -28,7 +34,8 @@ def get_all_plants_list():
     folder = os.path.join(current_app.root_path, '..', 'data', 'plants')
     if not os.path.exists(folder):
         return []
-    return [f.replace('.json', '') for f in os.listdir(folder) if f.endswith('.json')]
+    ids = [f.replace('.json', '') for f in os.listdir(folder) if f.endswith('.json')]
+    return ids + [pid for pid in legacy_only_ids(folder) if pid not in ids]
 
 def get_all_recipes():
     all_recipes = []

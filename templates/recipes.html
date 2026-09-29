@@ -48,8 +48,13 @@
                 <div class="d-none search-data">{{ recipe | string | lower }}</div>
                 <div class="recipe-card w-100">
                     <div style="display: flex; justify-content: space-between; align-items: start;">
-                        {% if recipe.get('typ') and 'medyczn' in recipe.get('typ') %}
+                        {% set typ = recipe.get('typ') or '' %}
+                        {% if 'medyczn' in typ %}
                             <span class="recipe-stamp stamp-med">⚕ Apteka</span>
+                        {% elif typ.startswith('barwiersk') %}
+                            <span class="recipe-stamp stamp-dye">🎨 Farbiarnia</span>
+                        {% elif typ.startswith('kosmetyczn') %}
+                            <span class="recipe-stamp stamp-cosm">🌸 Toaletka</span>
                         {% else %}
                             <span class="recipe-stamp stamp-food">♨ Rzemiosło</span>
                         {% endif %}
