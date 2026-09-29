@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwiatownik - Cyfrowy Zielnik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rpg-awesome/0.2.0/css/rpg-awesome.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body { font-family: 'Crimson Text', serif; background-color: #f4f1ea; color: #2c2c2c; margin: 0; padding-top: 110px; }
+
+        .main-header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+
+        /* --- POPRAWA NAWIGACJI (Oparta na Bootstrapie RWD) --- */
+        nav { background-color: #3e4a3d; border-bottom: 1px solid #5a4f41; padding: 0.5rem 1rem;}
+        /* Używamy standardowych klas navbar z Bootstrapa dla Hamburgera */
+        .navbar-brand, .nav-link { color: white !important; font-weight: bold; font-size: 0.95rem; transition: color 0.3s; }
+        .nav-link:hover, .navbar-brand:hover { color: #d1b880 !important; }
+        .nav-link i, .navbar-brand i { color: #d1b880; margin-right: 5px; font-size: 1.1rem; }
+
+        .navbar-toggler { border-color: rgba(255,255,255,0.5); padding: 4px 8px;}
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        /* Dostosowanie dropdownu Ulubionych do paska nav */
+        #favDropdownBtn { padding-left: 0; padding-right: 0; }
+
+        @media (max-width: 991px) {
+            /* Na mniejszych ekranach linki w menu rozsuwanym mają odstęp i są blokowe */
+            .navbar-nav .nav-item { padding: 8px 0; border-bottom: 1px dashed rgba(255,255,255,0.2); text-align: center;}
+            .navbar-nav .nav-item:last-child { border-bottom: none; }
+            .frozen-feature.d-lg-none { display: block; text-align: center; padding: 10px 0; color: white;}
+            .frozen-feature.d-none.d-lg-block { display: none; } /* Ukrywa 'Komentarze' obok menu na tel */
+
+            /* Zmniejszamy paddingi dla samej nawigacji na mobilkach */
+            nav { padding: 0.5rem; }
+        }
+
+        /* --- WSPÓLNE CECHY PRZEWIJANYCH PASKÓW --- */
+        .scrollable-banner {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            cursor: grab;
+            user-select: none;
+        }
+        .scrollable-banner::-webkit-scrollbar { display: none; }
+        .scrollable-banner:active { cursor: grabbing; }
+        .scrollable-content { display: flex; flex-wrap: nowrap; align-items: center; }
+
+        /* --- 1. PASEK ALMANACHU (ASTRO-RIBBON) --- */
+        .astro-ribbon {
+            background-color: #23201d;
+            border-bottom: 1px solid #8a7a58;
+            color: #d1b880;
+            padding: 6px 10px; /* Lekko zmniejszony padding */
+            font-size: 0.75rem;
+        }
+        .astro-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-right: 25px; /* Trochę mniej odstępu, lepiej dla mniejszych ekranów */
+            flex-shrink: 0; /* ZAPOBIEGA GNIECENIU na małych ekranach */
+        }
+        .astro-item i { font-size: 1.1rem; color: #8a9a5b; }
+        .astro-item div { display: flex; align-items: baseline; gap: 4px; }
+        .astro-label { font-size: 0.65rem; text-transform: uppercase; color: #a89f91; letter-spacing: 0.5px; }
+        .astro-value { font-weight: bold; font-family: 'Georgia', serif; font-size: 0.85rem; }
+
+        /* --- 2. ZŁOTY PASEK CIEKAWOSTEK (MARQUEE) --- */
+        .marquee-wrapper {
+            background-color: #1a1714;
+            color: #8a9a5b;
+            padding: 8px 10px;
+            border-bottom: 2px solid #3a2b21;
+        }
+        .marquee-item {
+            font-size: 0.75rem;
+            font-style: italic;
+            letter-spacing: 0.5px;
+            margin-right: 40px;
+            flex-shrink: 0; /* KLUCZOWE! Zapobiega obcinaniu tekstu */
+        }
+        .marquee-item i { color: #d1b880; margin-right: 5px; }
+
+        @media (max-width: 768px) {
+            body { padding-top: 90px; } /* Mniejszy offset na telefony */
+            .astro-value { font-size: 0.8rem; }
+            .astro-item { margin-right: 15px; }
+            .container { margin: 10px auto; padding: 10px; border-width: 0; box-shadow: none;} /* Usuwa border wokół contentu na mobile, daje więcej miejsca */
+        }
+
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.05); border: 1px solid #e0dcd3; border-radius: 4px; }
+        .flash { padding: 8px 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; font-size: 0.9rem; }
+        .flash-success { background-color: #d4edda; color: #155724; border-color: #c3e6cb; }
+        .flash-danger { background-color: #f8d7da; color: #721c24; border-color: #f5c6cb; }
+        footer { text-align: center; padding: 30px 20px; font-size: 0.8rem; color: #7a6a58; border-top: 1px dashed #dcdcdc; margin-top: 40px; }
+        footer i { color: #8a9a5b; margin-right: 5px; }
+
+        /* MODAL FIX */
+        .frozen-modal-overlay { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(35, 32, 29, 0.8); }
+        .frozen-modal-content { background-color: #f4f1ea; margin: 15% auto; padding: 25px; border: 1px solid #8a7a58; width: 90%; max-width: 400px; position: relative; font-family: 'Crimson Text', serif; text-align: center; border-radius: 4px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); }
+        .frozen-modal-close { position: absolute; right: 15px; top: 10px; font-size: 24px; cursor: pointer; color: #5a4f41; transition: color 0.2s; }
+        .frozen-modal-close:hover { color: #9b4b4b; }
+        a { text-decoration: none; color: inherit; }
+
+        /* Stylizacja rozwijanej listy Ulubionych */
+        .dropdown-menu { background-color: #fdfaf0 !important; border: 2px solid #3e4a3d !important; border-radius: 0 !important; box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important; min-width: 250px; }
+        .dropdown-item { color: #3e4a3d !important; font-family: 'Crimson Text', serif; font-size: 1.1rem; padding: 8px 20px; transition: background 0.2s; }
+        .dropdown-item:hover { background-color: #e0dcd3 !important; color: #2d5a27 !important; }
+        .dropdown-header { background-color: #f4f1ea; border-bottom: 1px dashed #d1c7a7; margin-top: 5px; }
+        .dropdown-divider { border-top: 1px solid #d1c7a7 !important; opacity: 1 !important; }
+        #favoritesDropdownMenu .dropdown-item { color: #3e4a3d !important; background-color: transparent !important; }
+        #favoritesDropdownMenu .dropdown-item:hover { background-color: #e0dcd3 !important; color: #2d5a27 !important; }
+        #favoritesDropdownMenu .dropdown-header { color: #8a9a5b !important; font-weight: bold; border-bottom: 1px dashed #d1c7a7; }
+    </style>
+
+</head>
+<body>
+
+<header class="main-header">
+    <!-- Navbar zmieniony na strukturę Bootstrap (RWD) -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-0 px-md-2">
+            <!-- Logo widoczne po lewej zawsze -->
+            <a class="navbar-brand" href="/"><i class="ra ra-leaf"></i> Kwiatownik</a>
+
+            <!-- Hamburger na małych ekranach -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kwiatownikNavbar" aria-controls="kwiatownikNavbar" aria-expanded="false" aria-label="Przełącz nawigację">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Część zwijana (linki i przyciski) -->
+            <div class="collapse navbar-collapse justify-content-end" id="kwiatownikNavbar">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="/generator/"><i class="ra ra-flask"></i> Generatory</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/przepisy/"><i class="ra ra-cauldron"></i> Przepisy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/gildie/"><i class="ra ra-pawn"></i> Gildie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/porownaj/"><i class="ra ra-scroll-unfurled"></i> Porównaj</a></li>
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link frozen-feature" href="#"><i class="ra ra-speech-bubble"></i> Komentarze</a></li>
+
+                    <li class="nav-item dropdown px-2">
+                        <button class="nav-link dropdown-toggle" type="button" id="favDropdownBtn" data-bs-toggle="dropdown" aria-expanded="false" style="background: none; border: none; font-weight: bold; font-size: 0.95rem;">
+                            <i class="ra ra-heart"></i> Ulubione
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" id="favoritesDropdownMenu">
+                        </ul>
+                    </li>
+
+                    <!-- Przycisk logowania wewnątrz menu na urządzeniach mobilnych -->
+                    <li class="nav-item d-lg-none mt-2 w-100">
+                         <a href="#" class="nav-link frozen-feature" style="background: #2d5a27; border-radius: 4px; padding: 8px;"><i class="ra ra-player"></i> Logowanie (Wstrzymane)</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Ikonka logowania na desktopie zostaje po prawej stronie (poza hamburgerem) -->
+            <div class="frozen-feature d-none d-lg-block" title="Zablokowane w wersji statycznej" style="margin-left: 15px;">
+                <a class="nav-link" href="#"><i class="ra ra-player"></i> Logowanie</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Reszta bez zmian, poprawki załatwił CSS powyżej -->
+    <div class="astro-ribbon scrollable-banner" id="banner-astro">
+
+        <div class="scrollable-content">
+            <div class="astro-item">
+                <i class="ra ra-compass"></i>
+                <div>
+                    <span class="astro-label">Lokacja:</span>
+                    <span class="astro-value" id="locValue" data-astro="location">Z</span>
+                    <!-- Złota ikonka GPS do kliknięcia -->
+                    <i class="ra ra-target" onclick="forceGPS()" style="cursor: pointer; color: #b8860b; margin-left: 5px; font-size: 0.9rem;" title="Użyj dokładnej lokalizacji GPS (przeglądarka zapyta o zgodę)"></i>
+                </div>
+            </div>
+            <div class="astro-item"><i class="ra ra-sun"></i><div><span class="astro-label">Pogoda:</span><span class="astro-value" data-astro="sky"></span> <span class="astro-value" data-astro="temp">21.5°C</span><span class="astro-label" style="margin-left:4px;">Wilg:</span><span class="astro-value" data-astro="humidity">93%</span></div></div>
+            <div class="astro-item"><i class="ra ra-moon-sun"></i><div><span class="astro-label">Księżyc:</span><span class="astro-value" data-astro="moon">Księżyc Ubywający</span></div></div>
+            <div class="astro-item"><i class="ra ra-fire"></i><div><span class="astro-label">Żywioł:</span><span class="astro-value">Ogień</span></div></div>
+            <div class="astro-item"><i class="ra ra-crystal-ball"></i><div><span class="astro-label">Wibracja:</span><span class="astro-value" data-astro="numerology">3</span></div></div>
+            <div class="astro-item"><i class="ra ra-dragon"></i><div><span class="astro-label">Patron Roku:</span><span class="astro-value" data-astro="japanese">Koń</span></div></div>
+            <div class="astro-item" style="margin-right:0;"><i class="ra ra-trefoil"></i><div><span class="astro-label">Koło Roku:</span><span class="astro-value">Dożynki (Mabon)</span></div></div>
+        </div>
+    </div>
+
+    <div class="marquee-wrapper scrollable-banner" id="banner-marquee">
+        <div class="scrollable-content">
+            
+                <span class="marquee-item"><i class="ra ra-scroll-unfurled"></i> <strong>Ciekawostka:</strong> Dąb szypułkowy ściąga najwięcej piorunów ze wszystkich drzew w lesie.</span>
+                <span class="marquee-item"><i class="ra ra-scroll-unfurled"></i> <strong>Protip:</strong> Zbiór korzeni mniszka wykonuj przy księżycu ubywającym.</span>
+                <span class="marquee-item"><i class="ra ra-scroll-unfurled"></i> <strong>Wiedza:</strong> Syrop z pędów sosny działa wykrztuśnie.</span>
+            
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    
+        
+    
+
+    
+<div class="grimmoire-wrapper" style="background-image: url('');">
+    <div class="grimmoire-overlay"></div>
+
+    <article class="grimmoire-container">
+
+        <header class="grimmoire-hero">
+            <h1 class="hero-title">Jastrzębiec kosmaczek</h1>
+            <p class="hero-subtitle">Pilosella officinarum <span class="hero-family">| Astrowate (Asteraceae)</span></p>
+            <div class="hero-divider"></div>
+            <p class="hero-desc">Niska bylina tworząca gęste kobierce dzięki nadziemnym, ulistnionym rozłogom. Wyróżnia się silnym, gęstym owłosieniem całej rośliny, co jest adaptacją do suchych, nasłonecznionych siedlisk. Wytwarza pojedyncze, bladożółte do cytrynowych kwiaty na bezlistnych szypułkach. Posiada udowodnione właściwości medyczne – działa moczopędnie i wykrztuśnie.</p>
+            <a class="compare-link" href="/porownaj/?a=jastrzebiec_kosmaczek"><i class="ra ra-scroll-unfurled"></i> Porównaj z inną rośliną</a>
+
+            
+        </header>
+
+        <div class="grimmoire-book">
+
+            
+            <details class="grimmoire-tab">
+                <summary><i class="ra ra-moon-sun"></i> Natura i Siedlisko</summary>
+                <div class="tab-content">
+
+                    
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-burning-embers"></i> Profil Energetyczny</summary>
+                        <div class="subtab-content">
+                            <ul class="sub-list">
+                                <li><strong>Smak:</strong> Cierpki, lekko gorzki</li>
+                                <li><strong>Termika:</strong> Chłodna</li>
+                                <li><strong>Wilgotność:</strong> Osuszająca</li>
+                                <li><strong>Żywioł:</strong> Powietrze</li>
+                            </ul>
+                            <p class="energy-quote">"Działa ściągająco, przeciwskurczowo. Pomaga &#39;osuszyć&#39; nadmiar patologicznego śluzu w drogach oddechowych i moczowych."</p>
+                        </div>
+                    </details>
+                    
+
+                    
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-compass"></i> Wymagania Siedliskowe</summary>
+                        <div class="subtab-content">
+                            <ul class="sub-list">
+                                <li><strong>Stanowisko:</strong> Wybitnie słoneczne.</li>
+                                <li><strong>Gleba:</strong> Piaszczyste, suche, jałowe, kamieniste, żwirowe.</li>
+                                <li><strong>Woda:</strong> Bardzo odporny na silną i długotrwałą suszę.</li>
+                                <li><strong>Mrozoodporność:</strong> Pełna (Strefa 4).</li>
+                            </ul>
+                        </div>
+                    </details>
+                    
+
+                </div>
+            </details>
+            
+
+            
+            <details class="grimmoire-tab">
+                <summary><i class="ra ra-eye-monster"></i> Rozpoznawanie w terenie</summary>
+                <div class="tab-content">
+                    <ul class="feature-list">
+                        
+                            <li><i class="ra ra-leaf"></i> Liście zebrane w przyziemne rozety, pokryte gęstymi, długimi, wręcz szczeciniastymi włoskami (często białymi pod spodem).</li>
+                        
+                            <li><i class="ra ra-leaf"></i> Wypuszcza długie, naziemne rozłogi (wąsy), które zakorzeniają się w węzłach tworząc kobierce.</li>
+                        
+                            <li><i class="ra ra-leaf"></i> Z rozety wyrasta jedna, bezlistna łodyga (ok. 10-20 cm) z jednym cytrynowożółtym koszyczkiem kwiatowym.</li>
+                        
+                            <li><i class="ra ra-leaf"></i> Wydziela sok mleczny, choć w małych ilościach.</li>
+                        
+                    </ul>
+
+                    
+                </div>
+            </details>
+            
+
+            
+            <details class="grimmoire-tab">
+                <summary><i class="ra ra-fizzing-flask"></i> Surowce i Zbiory</summary>
+                <div class="tab-content">
+                    
+                    <details class="grimmoire-subtab part-subtab">
+                        <summary>
+                            <span class="subtab-title-group">
+                                <i class="ra ra-potion"></i> Herba Hieracii pilosellae <span class="part-badge">ziele</span>
+                            </span>
+                        </summary>
+                        <div class="subtab-content">
+                            <p class="part-desc">Cała część nadziemna w czasie kwitnienia.</p>
+
+                            <div class="part-effects">
+                                <strong>Działanie:</strong> 
+                            </div>
+
+                            <div class="part-chem mt-3">
+                                <strong>Substancje czynne:</strong>
+                                <div class="chem-tags">
+                                    
+                                        
+                                            <a href="https://pl.wikipedia.org/wiki/Special:Search?search=Kumaryny%20%28umbeliferon%29" target="_blank" class="chem-link">Kumaryny (umbeliferon) <i class="ra ra-book"></i></a>
+                                        
+                                            <a href="https://pl.wikipedia.org/wiki/Special:Search?search=Flawonoidy%20%28luteolina%29" target="_blank" class="chem-link">Flawonoidy (luteolina) <i class="ra ra-book"></i></a>
+                                        
+                                            <a href="https://pl.wikipedia.org/wiki/Special:Search?search=Kwasy%20fenolowe%20%28kwas%20kawowy%29" target="_blank" class="chem-link">Kwasy fenolowe (kwas kawowy) <i class="ra ra-book"></i></a>
+                                        
+                                            <a href="https://pl.wikipedia.org/wiki/Special:Search?search=Garbniki" target="_blank" class="chem-link">Garbniki <i class="ra ra-book"></i></a>
+                                        
+                                    
+                                </div>
+                            </div>
+
+                            
+                            <div class="part-warning"><i class="ra ra-poison-cloud"></i> Nie stosować u kobiet w ciąży i karmiących.</div>
+                            
+
+                            <div class="part-time"><i class="ra ra-hourglass"></i> Zbiór: <strong>Maj - Lipiec.</strong></div>
+                        </div>
+                    </details>
+                    
+                </div>
+            </details>
+            
+
+            
+            <details class="grimmoire-tab">
+                <summary><i class="ra ra-anvil"></i> Praktyczne Zastosowanie</summary>
+                <div class="tab-content">
+                    
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-health"></i> Medycyna</summary>
+                        <div class="subtab-content"><p>Fitoterapia leczenia przewlekłych nieżytów dróg oddechowych (katar, kaszel), astmy, jako środek wspomagający diurezę przy obrzękach i infekcjach pęcherza.</p></div>
+                    </details>
+                    
+
+                    
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-meat"></i> Kuchnia</summary>
+                        <div class="subtab-content"><p>Brak znaczenia kulinarnego, zbyt cierpki.</p></div>
+                    </details>
+                    
+
+                    
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-hammer"></i> Rzemiosło</summary>
+                        <div class="subtab-content"><p>Brak.</p></div>
+                    </details>
+                    
+
+                    
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-pine-tree"></i> Ogród</summary>
+                        <div class="subtab-content"><p>Doskonała roślina zadarniająca na suche, ubogie skarpy, wrzosowiska i zielone dachy.</p></div>
+                    </details>
+                    
+                </div>
+            </details>
+            
+
+            
+            <details class="grimmoire-tab danger-tab">
+                <summary><i class="ra ra-bleeding-eye"></i> Bezpieczeństwo i Interakcje</summary>
+                <div class="tab-content">
+                    
+                    <details class="grimmoire-subtab danger-subtab" open>
+                        <summary><i class="ra ra-potion"></i> Interakcje z lekami</summary>
+                        <div class="subtab-content danger-block"><p>[&#39;Może potęgować działanie leków diuretycznych wydawanych na receptę.&#39;]</p></div>
+                    </details>
+                    
+
+                    
+                    <details class="grimmoire-subtab danger-subtab" open>
+                        <summary><i class="ra ra-lightning-bolt"></i> Przeciwwskazania</summary>
+                        <div class="subtab-content danger-block"><p>Unikać w przypadku ciąży i karmienia piersią. Skonsultować z lekarzem przy ciężkich schorzeniach nerek.</p></div>
+                    </details>
+                    
+                </div>
+            </details>
+            
+
+            
+            <details class="grimmoire-tab">
+                <summary><i class="ra ra-cycle"></i> Cykl Życia i Ekosystem</summary>
+                <div class="tab-content">
+
+                    
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-sickle"></i> Kalendarz Biodynamiczny</summary>
+                        <div class="subtab-content task-list">
+                            
+                            <div class="task-item">
+                                <div class="task-head">
+                                    <strong>Zbiór ziela</strong>
+                                    <span class="task-month">M-c: 6, 7</span>
+                                </div>
+                                <p class="task-desc">Ścinanie kwitnących pędów wraz z rozetą liściową (bez korzeni).</p>
+                                <div class="task-meta">
+                                    <span><i class="ra ra-moon-phases"></i> Pełnia</span>
+                                    <span><i class="ra ra-cloud-ring"></i> Słoneczna i sucha</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </details>
+                    
+
+                    
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-trefoil"></i> Permakultura i Gildie</summary>
+                        <div class="subtab-content">
+                            <p><strong>Rola w systemie:</strong></p>
+                            <ul class="eco-list mb-4">
+                                
+                                    <li><i class="ra ra-leaf"></i> Roślina pionierska hamująca erozję gleby na piaskach i skarpach.</li>
+                                
+                                    <li><i class="ra ra-leaf"></i> Gatunek zwalczający inne chwasty dzięki allelopatii.</li>
+                                
+                            </ul>
+
+                            <p><strong>Towarzysze (Gildia):</strong></p>
+                            <div class="guild-list">
+                                
+                                    
+                                    
+                                    <div class="guild-item">
+                                        <a href="/plant/zioła_śródziemnomorskie" class="guild-link">
+                                            <i class="ra ra-double-leaf"></i> Zioła śródziemnomorskie
+                                        </a>
+                                        <p class="guild-role">Dobrze komponuje się z tymiankiem i lawendą na słonecznych, przepuszczalnych wzniesieniach.</p>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </details>
+                    
+
+                </div>
+            </details>
+            
+
+            
+
+            
+
+            
+            <details class="grimmoire-tab">
+                <summary><i class="ra ra-scroll"></i> Wiedza Tajemna</summary>
+                <div class="tab-content">
+                    <ul class="trivia-list">
+                        
+                            <li><i class="ra ra-emerald"></i> Posiada silne właściwości allelopatyczne – korzenie wydzielają do gleby substancje (fenole), które hamują kiełkowanie i wzrost konkurencyjnych roślin wokół jego rozet.</li>
+                        
+                            <li><i class="ra ra-emerald"></i> Dawniej wierzono, że jastrzębie i sokoły pocierały swoje oczy o kwiaty tej rośliny, aby wyostrzyć wzrok (stąd nazwa).</li>
+                        
+                    </ul>
+                </div>
+            </details>
+            
+
+        </div>
+    </article>
+</div>
+
+<div id="grimmoireLightbox" class="lightbox-overlay" onclick="closeLightbox()">
+    <div class="lightbox-content">
+        <img id="lightboxImg" src="" alt="Powiększenie">
+        <div id="lightboxCaption" class="lightbox-caption-text"></div>
+    </div>
+</div>
+
+<style>
+    /* ARCHIWUM KWIATOWNIKA */
+    .arch-dl { margin: 0; }
+    .arch-dl dt { color: #d1b880; font-weight: bold; margin-top: 8px; }
+    .arch-dl dd { margin: 2px 0 0 12px; }
+    .arch-list { margin: 4px 0; padding-left: 18px; }
+    .arch-link, .arch-bib a { color: #a8c69f; font-size: 0.85em; word-break: break-all; }
+    .arch-src { font-size: 0.85em; }
+    .compare-link { display: inline-block; margin-top: 10px; color: #d1b880; font-size: 0.9rem; }
+</style>
+
+<style>
+    /* FUNDAMENTY */
+    .grimmoire-wrapper {
+        min-height: 100vh; background-size: cover; background-position: center;
+        background-attachment: fixed; position: relative; padding: 60px 20px;
+        color: #fdfaf0; font-family: 'Georgia', serif;
+    }
+    .grimmoire-overlay {
+        position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(15, 12, 10, 0.85); backdrop-filter: blur(12px); z-index: 1;
+    }
+    .grimmoire-container { position: relative; z-index: 2; max-width: 900px; margin: 0 auto; }
+
+    /* NAGŁÓWEK KARTY */
+    .grimmoire-hero { text-align: center; margin-bottom: 50px; }
+    .hero-title { font-size: 4rem; margin: 0; color: #d1b880; text-shadow: 0 4px 20px rgba(209, 184, 128, 0.3); font-family: 'Playfair Display', serif; }
+    .hero-subtitle { font-size: 1.4rem; color: #a89f91; font-style: italic; margin-top: 5px; }
+    .hero-family { font-size: 1rem; color: #7a6a58; }
+    .hero-divider { width: 100px; height: 3px; background: #8a9a5b; margin: 20px auto; border-radius: 2px; }
+    .hero-desc { font-size: 1.15rem; line-height: 1.8; color: #e4dfd5; max-width: 800px; margin: 0 auto; }
+
+    /* GALERIA ZDJĘĆ */
+    .plant-gallery { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 30px; }
+    .gallery-thumb { width: 120px; height: 120px; border-radius: 8px; border: 2px solid #3e362c; overflow: hidden; position: relative; cursor: pointer; transition: all 0.3s; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+    .gallery-thumb img { width: 100%; height: 100%; object-fit: cover; filter: sepia(0.4) brightness(0.8); transition: all 0.4s; }
+    .gallery-thumb:hover { transform: translateY(-5px) scale(1.05); border-color: #d1b880; z-index: 10; box-shadow: 0 8px 25px rgba(209, 184, 128, 0.3); }
+    .gallery-thumb:hover img { filter: sepia(0) brightness(1.1); }
+    .gallery-caption { position: absolute; bottom: 0; left: 0; width: 100%; background: rgba(18, 15, 12, 0.85); color: #d1b880; text-align: center; font-size: 0.75rem; padding: 5px 0; text-transform: uppercase; font-family: 'Playfair Display', serif; }
+
+    /* LIGHTBOX */
+    .lightbox-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.92); z-index: 9999; display: flex; justify-content: center; align-items: center; flex-direction: column; backdrop-filter: blur(8px); opacity: 0; pointer-events: none; transition: opacity 0.3s ease; cursor: zoom-out; }
+    .lightbox-overlay.active { opacity: 1; pointer-events: auto; }
+    .lightbox-content { position: relative; max-width: 90vw; max-height: 90vh; text-align: center; transform: scale(0.95); transition: transform 0.3s ease; }
+    .lightbox-overlay.active .lightbox-content { transform: scale(1); }
+    .lightbox-content img { max-width: 100%; max-height: 80vh; border: 3px solid #d1b880; border-radius: 8px; box-shadow: 0 0 50px rgba(209, 184, 128, 0.2); }
+    .lightbox-caption-text { color: #d1b880; font-size: 1.5rem; font-family: 'Playfair Display', serif; margin-top: 15px; text-transform: capitalize; letter-spacing: 2px; }
+
+    /* SYSTEM GŁÓWNYCH ZAKŁADEK (ACCORDION) */
+    .grimmoire-book { display: flex; flex-direction: column; gap: 15px; margin-bottom: 60px; }
+    .grimmoire-tab { background: rgba(25, 22, 18, 0.6); border: 1px solid #3e362c; border-radius: 8px; overflow: hidden; transition: all 0.3s ease; }
+    .grimmoire-tab[open] { background: rgba(30, 27, 23, 0.95); border-color: #5a4f41; box-shadow: 0 10px 30px rgba(0,0,0,0.6); }
+    .grimmoire-tab > summary { list-style: none; padding: 20px 25px; font-size: 1.4rem; color: #d1b880; cursor: pointer; display: flex; align-items: center; gap: 15px; font-family: 'Playfair Display', serif; transition: background 0.2s; }
+    .grimmoire-tab > summary::-webkit-details-marker { display: none; }
+    .grimmoire-tab:not([open]) > summary:hover { background: rgba(209, 184, 128, 0.05); }
+    .grimmoire-tab[open] > summary { border-bottom: 1px solid #3e362c; color: #fdfaf0; }
+    .tab-content { padding: 25px; color: #dcd7cb; line-height: 1.7; font-size: 1.05rem; animation: slideDown 0.3s ease-out; display: flex; flex-direction: column; gap: 15px; }
+    @keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* NOWOŚĆ: PODZAKŁADKI (SUB-ACCORDION) */
+    .grimmoire-subtab { background: rgba(0, 0, 0, 0.3); border-left: 3px solid #8a9a5b; border-radius: 0 6px 6px 0; overflow: hidden; transition: all 0.3s ease; }
+    .grimmoire-subtab[open] { background: rgba(0, 0, 0, 0.5); border-color: #d1b880; }
+    .grimmoire-subtab > summary { list-style: none; padding: 15px 20px; font-size: 1.15rem; color: #8a9a5b; cursor: pointer; display: flex; align-items: center; gap: 12px; font-family: 'Playfair Display', serif; transition: all 0.2s; }
+    .grimmoire-subtab > summary::-webkit-details-marker { display: none; }
+    .grimmoire-subtab:not([open]) > summary:hover { background: rgba(138, 154, 91, 0.1); color: #d1b880; }
+    .grimmoire-subtab[open] > summary { border-bottom: 1px dashed #3e362c; color: #fdfaf0; }
+    .subtab-content { padding: 20px; animation: slideDown 0.3s ease-out; }
+
+    /* ZAGROŻENIA I OSTRZEŻENIA */
+    .danger-tab[open] { border-color: #9b4b4b; }
+    .danger-tab[open] > summary { color: #e57373; }
+    .danger-subtab { border-left-color: #9b4b4b; }
+    .danger-subtab[open] { border-left-color: #e57373; }
+    .danger-subtab > summary { color: #e57373; }
+    .danger-subtab:not([open]) > summary:hover { background: rgba(155, 75, 75, 0.1); color: #ff8a80; }
+    .danger-block p { margin: 0; color: #ffcdd2; }
+    .warning-box { background: rgba(155, 75, 75, 0.1); padding: 15px; border-radius: 4px; }
+
+    /* WNĘTRZA PODZAKŁADEK */
+    .sub-list { padding-left: 20px; margin-bottom: 0; }
+    .sub-list li { margin-bottom: 8px; }
+    .energy-quote { margin-top: 15px; padding-top: 15px; border-top: 1px dashed #3e362c; font-style: italic; color: #a89f91; }
+
+    /* SUROWCE */
+    .subtab-title-group { display: flex; align-items: center; gap: 10px; width: 100%; }
+    .part-badge { background: #8a9a5b; color: #120f0c; padding: 2px 10px; font-size: 0.75rem; font-weight: bold; border-radius: 4px; text-transform: uppercase; margin-left: auto; font-family: 'Georgia', serif;}
+    .part-desc { font-size: 0.95rem; color: #a89f91; margin-bottom: 15px; margin-top: 0; }
+    .chem-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chem-link { display: inline-flex; align-items: center; gap: 5px; background: rgba(138, 154, 91, 0.1); border: 1px solid #8a9a5b; color: #cddc39; padding: 4px 10px; font-size: 0.85rem; border-radius: 4px; text-decoration: none; transition: all 0.2s; }
+    .chem-link i { font-size: 0.75rem; color: #8a9a5b; }
+    .chem-link:hover { background: #8a9a5b; color: #120f0c; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.3); text-decoration: none; }
+    .chem-link:hover i { color: #120f0c; }
+    .part-warning { color: #e57373; font-size: 0.9rem; margin-top: 15px; padding-top: 10px; border-top: 1px dashed #3e362c; }
+    .part-time { margin-top: 15px; text-align: right; font-size: 0.9rem; color: #8a9a5b; }
+
+    /* KALENDARZ & GILDIE */
+    .task-item { border-bottom: 1px dashed #3e362c; padding-bottom: 15px; margin-bottom: 15px; }
+    .task-item:last-child { border: none; margin-bottom: 0; padding-bottom: 0; }
+    .task-head { display: flex; justify-content: space-between; color: #d1b880; margin-bottom: 5px; }
+    .task-month { font-size: 0.8rem; background: #3e362c; padding: 2px 8px; border-radius: 4px; }
+    .task-desc { font-size: 0.95rem; margin-bottom: 10px; }
+    .task-meta span { display: inline-block; font-size: 0.85rem; color: #a89f91; margin-right: 15px; }
+
+    .eco-list { list-style: none; padding: 0; margin-bottom: 0; }
+    .eco-list li { margin-bottom: 8px; display: flex; gap: 10px; align-items: flex-start; }
+    .eco-list li i { color: #8a9a5b; margin-top: 4px; }
+
+    .guild-list { display: flex; flex-direction: column; gap: 12px; }
+    .guild-item { background: rgba(0,0,0,0.2); border: 1px solid #3e362c; padding: 12px 15px; border-radius: 6px; }
+    .guild-link { color: #d1b880; font-weight: bold; text-decoration: none; font-family: 'Playfair Display', serif; font-size: 1.15rem; transition: color 0.2s; display: inline-flex; align-items: center; gap: 8px; }
+    .guild-link i { font-size: 1rem; color: #8a9a5b; }
+    .guild-link:hover { color: #fdfaf0; text-shadow: 0 0 8px rgba(209, 184, 128, 0.4); text-decoration: none; }
+    .guild-role { color: #a89f91; font-size: 0.95rem; margin: 5px 0 0 0; }
+
+    .trivia-list { list-style: none; padding: 0; margin: 0; }
+    .trivia-list li { margin-bottom: 15px; padding-left: 25px; position: relative; }
+    .trivia-list li i { position: absolute; left: 0; top: 4px; color: #8a9a5b; }
+</style>
+
+<script>
+    function openLightbox(imageUrl, imageCaption) {
+        const overlay = document.getElementById('grimmoireLightbox');
+        const img = document.getElementById('lightboxImg');
+        const caption = document.getElementById('lightboxCaption');
+
+        img.src = imageUrl;
+        caption.innerText = imageCaption;
+        overlay.classList.add('active');
+    }
+
+    function closeLightbox() {
+        document.getElementById('grimmoireLightbox').classList.remove('active');
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") closeLightbox();
+    });
+</script>
+
+</div>
+
+<footer>
+    <p><i class="ra ra-hourglass"></i> ROK 2026 &copy; Kwiatownik - Akademicki Projekt Zielnika</p>
+</footer>
+
+<div id="frozenModal" class="frozen-modal-overlay">
+    <div class="frozen-modal-content">
+        <span class="frozen-modal-close" onclick="closeFrozenModal()">&times;</span>
+        <h4 style="color: #3e4a3d; margin-bottom: 15px;"><i class="ra ra-parchment"></i> Funkcja wstrzymana</h4>
+        <p style="font-size: 0.95rem; color: #5a4f41;">Aby aplikacja mogła być dostępna za darmo i działać błyskawicznie, przeszliśmy na wersję statyczną. Moduł logowania i komentarzy jest obecnie wyłączony.</p>
+        <a href="https://buycoffee.to/miguana" target="_blank" class="btn mt-3 fw-bold" style="background-color: #3a2b21; border: 1px solid #5a4b3a; color: #d1b880; padding: 8px 16px; font-size: 0.9rem;">
+            <i class="ra ra-beer"></i> Postaw Kufel Kawy
+        </a>
+    </div>
+</div>
+
+<div class="astro-item" style="margin-right:0;">
+    <i class="ra ra-trefoil"></i>
+    <div>
+        <span class="astro-label">Koło Roku:</span>
+        <span class="astro-value"
+              data-bs-toggle="tooltip"
+              data-bs-html="true"
+              title="<b>Stary Czas:</b> Równonoc Jesienna. Czas bilansu, dziękczynienia i przygotowania do zimy.<br><b>Symbol:</b> Jabłka, jarzębina, róg obfitości<br><b>Tradycja:</b> Zbiór korzeni, robienie zapasów i win, dziękowanie za plony.">
+            Dożynki (Mabon)
+        </span>
+    </div>
+</div>
+
+<script>
+    function setupInfiniteScroller(wrapperId, speed) {
+        const wrapper = document.getElementById(wrapperId);
+        if (!wrapper) return;
+        const content = wrapper.querySelector('.scrollable-content');
+
+        // Duplikujemy zawartość dla pętli
+        content.innerHTML += content.innerHTML;
+
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+        let currentScroll = 0;
+        const halfWidth = wrapper.scrollWidth / 2; // Obliczamy raz (wydajność!)
+
+        function autoScroll() {
+            if (!isDown) {
+                currentScroll += speed;
+                if (currentScroll >= halfWidth) {
+                    currentScroll = 0;
+                }
+                wrapper.scrollLeft = currentScroll;
+            }
+            requestAnimationFrame(autoScroll);
+        }
+        requestAnimationFrame(autoScroll);
+
+        // --- OBSŁUGA MYSZKI I DOTYKU ---
+        function startDrag(pageX) {
+            isDown = true;
+            wrapper.style.cursor = 'grabbing';
+            startX = pageX - wrapper.offsetLeft;
+            scrollLeft = wrapper.scrollLeft;
+        }
+
+        function stopDrag() {
+            if (!isDown) return;
+            isDown = false;
+            wrapper.style.cursor = 'grab';
+            // KLUCZOWA POPRAWKA: Aktualizujemy licznik animacji do miejsca, w którym puściliśmy kursor
+            currentScroll = wrapper.scrollLeft;
+        }
+
+        function doDrag(pageX) {
+            if (!isDown) return;
+            const x = pageX - wrapper.offsetLeft;
+            const walk = (x - startX) * 1.5;
+            wrapper.scrollLeft = scrollLeft - walk;
+        }
+
+        // Mysz
+        wrapper.addEventListener('mousedown', (e) => startDrag(e.pageX));
+        window.addEventListener('mouseup', stopDrag); // window, by łapało puszczenie poza paskiem
+        wrapper.addEventListener('mouseleave', stopDrag);
+        wrapper.addEventListener('mousemove', (e) => {
+            if(!isDown) return;
+            e.preventDefault();
+            doDrag(e.pageX);
+        });
+
+        // Telefony (Dotyk)
+        wrapper.addEventListener('touchstart', (e) => startDrag(e.touches[0].pageX), {passive: true});
+        wrapper.addEventListener('touchend', stopDrag, {passive: true});
+        wrapper.addEventListener('touchmove', (e) => doDrag(e.touches[0].pageX), {passive: true});
+    }
+
+    // Odpalamy skrypty dla obu banerów
+    document.addEventListener("DOMContentLoaded", function() {
+
+        // --- NOWOŚĆ: LOSOWANIE KOLEJNOŚCI CIEKAWOSTEK ---
+        const marqueeContent = document.querySelector('#banner-marquee .scrollable-content');
+        if (marqueeContent) {
+            const items = Array.from(marqueeContent.children);
+            // Algorytm mieszający
+            for (let i = items.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                marqueeContent.appendChild(items[j]);
+            }
+        }
+        // ----------------------------------------------
+
+        // Górny pasek z ikonami - porusza się niesamowicie powoli i majestatycznie
+        setupInfiniteScroller('banner-astro', 0.2);
+
+        // Pasek z Ciekawostkami - porusza się ciut szybciej
+        setupInfiniteScroller('banner-marquee', 0.6);
+    });
+
+    // --- OBSŁUGA MODALU ---
+    const modal = document.getElementById('frozenModal');
+    document.querySelectorAll('.frozen-feature').forEach(el => {
+        el.addEventListener('click', function(e) {
+            e.preventDefault();
+            if(modal) modal.style.display = "block";
+        });
+    });
+    function closeFrozenModal() {
+        if(modal) modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) closeFrozenModal();
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+window.renderFavoritesDropdown = function() {
+    const menu = document.getElementById('favoritesDropdownMenu');
+    if (!menu) return;
+
+    const favPlants = JSON.parse(localStorage.getItem("herbariumFavorites")) || [];
+    const favRecipes = JSON.parse(localStorage.getItem("recipeFavorites")) || [];
+
+    if (menu.classList.contains('show')) return;
+
+    // Funkcja pomocnicza do tworzenia slugów (taka sama jak w Pythonie)
+    const slugify = (text) => {
+        const accents = {'ą':'a','ć':'c','ę':'e','ł':'l','ń':'n','ó':'o','ś':'s','ź':'z','ż':'z'};
+        return text.toLowerCase()
+            .replace(/[ąćęłńóśźż]/g, match => accents[match])
+            .replace(/\s+/g, '_')
+            .replace(/[^\w\-]+/g, '')
+            .replace(/\-\-+/g, '_');
+    };
+
+    let html = '';
+    if (favPlants.length === 0 && favRecipes.length === 0) {
+        html = '<li><span class="dropdown-item text-muted">Twój zielnik jest pusty.</span></li>';
+    } else {
+        if (favPlants.length > 0) {
+            html += '<li><h6 class="dropdown-header"><i class="ra ra-leaf"></i> Twoje Zioła</h6></li>';
+            favPlants.forEach(p => {
+                // ZMIANA: Link prowadzi teraz bezpośrednio do strony rośliny
+                const slug = slugify(p);
+                html += `<li><a class="dropdown-item" href="/plant/${slug}/">${p}</a></li>`;
+            });
+        }
+        if (favRecipes.length > 0) {
+            if (favPlants.length > 0) html += '<li><hr class="dropdown-divider"></li>';
+            html += '<li><h6 class="dropdown-header"><i class="ra ra-cauldron"></i> Twoje Receptury</h6></li>';
+            favRecipes.forEach(r => {
+                // Przepisy nadal szukamy przez parametr, bo nie mają własnych podstron
+                html += `<li><a class="dropdown-item" href="/przepisy/?q=${encodeURIComponent(r)}">${r}</a></li>`;
+            });
+        }
+    }
+    menu.innerHTML = html;
+};
+
+// Funkcja pomocnicza do odświeżania z innych plików
+window.refreshGlobalFavorites = function() {
+    window.renderFavoritesDropdown();
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Pierwsze renderowanie
+    window.renderFavoritesDropdown();
+
+    // Obsługa rozwijania menu przez Bootstrapa
+    const dropdownBtn = document.querySelector('.dropdown-toggle');
+    if (dropdownBtn) {
+        // Inicjalizacja instancji dropdown
+        const bsDropdown = new bootstrap.Dropdown(dropdownBtn);
+
+        // Odświeżaj listę tuż przed każdym pokazaniem
+        dropdownBtn.addEventListener('show.bs.dropdown', () => {
+            window.renderFavoritesDropdown();
+        });
+    }
+
+    // Sortowanie (jeśli funkcja istnieje w recipes.js)
+    if (typeof sortResultsByFavorites === 'function') {
+        setTimeout(sortResultsByFavorites, 150);
+    }
+});
+</script>
+
+<!-- Lokalizacja (z adresu IP, bez pytania o zgodę) i pogoda na żywo; GPS tylko po kliknięciu celownika -->
+<script src="/static/js/geo_weather.js"></script>
+<script src="/static/js/magic_lens.js"></script>
+
+
+</body>
+</html>

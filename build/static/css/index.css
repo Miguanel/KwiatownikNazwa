@@ -1,0 +1,326 @@
+/* =========================================
+   JEDNA WYSZUKIWARKA (STRONA GŁÓWNA)
+   ========================================= */
+.kw-search [hidden], #favoritePlantModal [hidden] { display: none !important; }
+
+.kw-search {
+    text-align: center;
+    padding: 30px 0 20px 0;
+    position: relative;
+    background: radial-gradient(circle at 50% 0%, rgba(244,241,234,0.9) 0%, rgba(255,255,255,0) 70%);
+}
+
+.kw-search-title {
+    font-family: 'Georgia', serif; font-size: 2rem; color: #3e4a3d; margin: 0 0 6px 0;
+}
+.kw-search-title i { color: #8a9a5b; }
+.kw-search-hint { color: #7a6a58; font-style: italic; margin: 0 auto 20px auto; max-width: 620px; font-size: 1.05rem; }
+
+.kw-searchbar-wrap { position: relative; max-width: 720px; margin: 0 auto; z-index: 350; }
+
+.kw-searchbar {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
+    background: #fdfbf7; border: 2px solid #5a4f41; border-radius: 6px;
+    padding: 6px 6px 6px 14px; text-align: left; cursor: text;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.1);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+.kw-searchbar:focus-within { border-color: #8a9a5b; box-shadow: inset 0 2px 4px rgba(0,0,0,0.08), 0 0 0 3px rgba(138,154,91,0.25); }
+.kw-searchbar.kw-drag { border-style: dashed; border-color: #b8860b; background: #fbf5e3; }
+
+.kw-searchbar-icon { color: #8a7a58; font-size: 1.1rem; }
+
+.kw-tags { display: contents; }
+
+.kw-search input.kw-input {
+    flex: 1 1 160px; min-width: 0; width: auto; margin: 0; border: none; outline: none; background: transparent; box-shadow: none; border-radius: 0;
+    font-family: 'Georgia', serif; font-size: 18px; color: #2b2b2b; padding: 8px 4px;
+}
+.kw-search input.kw-input::placeholder { color: #a89f91; font-style: italic; }
+
+.kw-icon-btn {
+    border: none; background: transparent; color: #7a6a58; font-size: 1.05rem;
+    width: 36px; height: 36px; border-radius: 50%; cursor: pointer; transition: background 0.2s, color 0.2s;
+}
+.kw-icon-btn:hover { background: #ede9df; color: #9b4b4b; }
+
+.kw-lens-btn {
+    background-color: #3e4a3d; color: #fdfaf0; border: 1px solid #2d5a27; border-radius: 4px;
+    padding: 9px 14px; font-family: 'Georgia', serif; font-size: 15px; white-space: nowrap; cursor: pointer;
+    transition: background 0.2s;
+}
+.kw-lens-btn:hover { background-color: #2d5a27; }
+.kw-lens-btn:disabled { opacity: 0.75; cursor: wait; }
+.kw-lens-btn i { color: #d1b880; }
+
+.search-tag {
+    background-color: #8a9a5b; color: #fff; border: none;
+    padding: 4px 10px; border-radius: 15px; font-size: 0.95rem; font-family: 'Georgia', serif;
+    display: inline-flex; align-items: center; gap: 4px; cursor: pointer; transition: background 0.2s;
+}
+.search-tag:hover, .search-tag:focus-visible { background-color: #9b4b4b; }
+
+.kw-keys-hint { font-size: 0.85rem; color: #8a7a58; margin: 10px 0 0 0; }
+.kw-keys-hint kbd { background: #ede9df; color: #3e4a3d; border: 1px solid #d1c7a7; font-size: 0.75rem; padding: 1px 5px; box-shadow: none; }
+
+.kw-drop-hint { margin-top: 8px; color: #b8860b; font-weight: bold; }
+
+/* --- Podpowiedzi --- */
+.kw-suggestions {
+    position: absolute; top: calc(100% + 4px); left: 0; right: 0;
+    background: #fdfbf7; border: 2px solid #5a4f41; border-radius: 6px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2); max-height: 360px; overflow-y: auto; text-align: left; z-index: 400;
+}
+.kw-sugg-cat {
+    font-size: 11px; font-weight: bold; color: #8a9a5b; text-transform: uppercase; letter-spacing: 1px;
+    padding: 8px 14px 4px 14px; border-top: 1px dashed #e0dcd3;
+}
+.kw-sugg-cat:first-child { border-top: none; }
+.kw-sugg-item {
+    display: flex; align-items: center; gap: 10px; padding: 8px 14px; cursor: pointer;
+    font-family: 'Georgia', serif; color: #2b2b2b;
+}
+.kw-sugg-item i { color: #8a9a5b; width: 18px; text-align: center; }
+.kw-sugg-item:hover, .kw-sugg-item.active { background: #ede9df; }
+.kw-sugg-label { flex: 1; }
+.kw-sugg-sub { font-size: 12px; color: #8a7a58; font-style: italic; text-align: right; }
+
+/* --- Szybkie podpowiedzi --- */
+.kw-quick { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 16px auto 0 auto; max-width: 760px; }
+.kw-quick-label { color: #7a6a58; font-style: italic; align-self: center; }
+.kw-quick-chip {
+    background: #fdfbf7; border: 1px solid #d1c7a7; color: #3e4a3d; border-radius: 16px;
+    padding: 4px 12px; font-family: 'Georgia', serif; font-size: 0.95rem; cursor: pointer; transition: all 0.2s;
+}
+.kw-quick-chip i { color: #8a9a5b; }
+.kw-quick-chip:hover { background: #3e4a3d; color: #fdfaf0; border-color: #3e4a3d; }
+.kw-quick-chip:hover i { color: #d1b880; }
+
+/* =========================================
+   WYNIKI
+   ========================================= */
+.kw-results { margin: 24px auto 0 auto; text-align: left; animation: fadeInTask 0.3s ease-out; }
+@keyframes fadeInTask { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+.kw-summary { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 10px; }
+.kw-summary a {
+    background: #3e4a3d; color: #d1b880; border-radius: 14px; padding: 3px 12px; font-size: 0.9rem; font-weight: bold;
+}
+.kw-summary a:hover { background: #8a9a5b; color: #fff; }
+
+.kw-sec { margin-top: 26px; }
+.kw-sec-title {
+    font-family: 'Georgia', serif; font-size: 1.3rem; color: #3e4a3d; text-transform: uppercase; letter-spacing: 2px;
+    border-bottom: 2px solid #8a9a5b; padding-bottom: 8px; margin: 0 0 12px 0;
+}
+.kw-sec-title i { color: #8a9a5b; }
+.kw-sec-sub { color: #8a7a58; font-style: italic; font-size: 0.95rem; margin: -6px 0 12px 0; }
+.kw-count { font-size: 0.8em; color: #8a7a58; font-weight: normal; letter-spacing: 0; }
+
+.kw-empty { text-align: center; color: #5a4f41; padding: 30px 10px; }
+.kw-empty i { font-size: 40px; color: #9b4b4b; display: block; margin-bottom: 10px; }
+.kw-empty-hint { color: #8a7a58; font-style: italic; }
+
+.kw-more { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: center; margin-top: 8px; }
+.kw-more-btn {
+    background: #fdfbf7; border: 1px solid #8a9a5b; color: #3e4a3d; border-radius: 4px; padding: 6px 14px;
+    font-family: 'Georgia', serif; cursor: pointer;
+}
+.kw-more-btn:hover { background: #8a9a5b; color: #fff; }
+.kw-more-link { color: #2d5a27; font-weight: bold; text-decoration: underline; }
+
+.kw-web-badge { font-size: 0.7rem; background: #e3f2fd; color: #1565c0; border: 1px solid #90caf9; border-radius: 10px; padding: 1px 7px; vertical-align: middle; font-weight: normal; }
+
+/* --- Działanie / objawy --- */
+.kw-effects { display: flex; flex-direction: column; gap: 10px; }
+.kw-effect { background: #fdfbf7; border: 1px solid #d1c7a7; border-left: 5px solid #9b4b4b; border-radius: 6px; padding: 10px 14px; }
+.kw-effect-name { font-weight: bold; color: #9b4b4b; margin-bottom: 6px; text-transform: capitalize; }
+.kw-effect-plants { display: flex; flex-wrap: wrap; gap: 6px; }
+.kw-plant-chip {
+    background: #ede9df; color: #3e4a3d; border-radius: 14px; padding: 2px 10px; font-size: 0.95rem; transition: all 0.2s;
+}
+.kw-plant-chip i { color: #8a9a5b; }
+.kw-plant-chip:hover { background: #3e4a3d; color: #fdfaf0; }
+.kw-chip-more { color: #8a7a58; align-self: center; font-size: 0.9rem; }
+
+/* =========================================
+   KARTA ROŚLINY W WYNIKACH
+   ========================================= */
+.kw-plant-row {
+    display: flex; gap: 20px; overflow-x: auto; padding: 10px 6px 20px 6px; cursor: grab;
+    scrollbar-width: thin; scrollbar-color: #8a9a5b transparent;
+}
+.kw-plant-row:active { cursor: grabbing; }
+
+.result-column { display: flex; flex-direction: column; gap: 8px; align-items: center; justify-content: flex-end; flex: 0 0 auto; width: 220px; position: relative; }
+
+.result-card {
+    flex: 0 0 auto; width: 220px; height: 360px; background: #fdfbf7; border: 2px solid #5a4f41;
+    border-radius: 8px; display: flex; flex-direction: column; overflow: hidden; cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); transition: transform 0.3s, border-color 0.3s; position: relative;
+}
+.result-card:hover, .result-card:focus-visible { transform: translateY(-5px); border-color: #8a9a5b; outline: none; }
+
+.card-img-container { height: 90px; flex: 0 0 90px; background: #e0dcd3; background-size: cover; background-position: center; position: relative; border-bottom: 2px solid #8a9a5b; }
+.card-tags-row { position: absolute; top: 8px; left: 8px; right: 8px; display: flex; flex-direction: row-reverse; flex-wrap: wrap; gap: 5px; z-index: 10; }
+.card-emoji {
+    font-size: 16px; background: rgba(253, 251, 247, 0.95); border-radius: 50%; width: 30px; height: 30px; display: flex;
+    align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.2); border: 2px solid #8a9a5b; transition: 0.2s;
+}
+.card-emoji:hover { transform: scale(1.1); background: #fff; }
+
+.card-title { font-family: 'Georgia', serif; font-size: 15px; font-weight: bold; color: #3e4a3d; padding: 8px 10px 0 10px; margin: 0; text-align: center; border: none; }
+.card-latin { font-size: 11px; font-style: italic; color: #8a7a58; text-align: center; padding: 0 10px 4px 10px; }
+
+.card-desc-container { flex: 1; padding: 0 10px; overflow: hidden; position: relative; margin-bottom: 5px; }
+.card-desc-scroll { font-size: 11px; color: #555; line-height: 1.4; animation: scrollVert 15s linear infinite; }
+@keyframes scrollVert { 0%, 10% { transform: translateY(0); } 90%, 100% { transform: translateY(-50%); } }
+
+.card-trivia-container { height: 25px; flex: 0 0 25px; background: #3e4a3d; color: #d1b880; overflow: hidden; position: relative; display: flex; align-items: center; border-top: 1px solid #2d5a27; }
+.card-trivia-scroll { white-space: nowrap; font-size: 11px; font-style: italic; animation: scrollHoriz 25s linear infinite; padding-left: 100%; }
+@keyframes scrollHoriz { to { transform: translateX(-200%); } }
+
+.card-status-wrapper { display: flex; flex-direction: column; border-top: 1px solid #5a4f41; }
+.card-status-header { background: rgba(0,0,0,0.05); display: flex; justify-content: space-between; align-items: center; padding: 3px 6px; font-size: 10px; color: #5a4f41; border-bottom: 1px solid rgba(0,0,0,0.1); }
+.month-nav { cursor: pointer; transition: 0.2s; padding: 2px 6px; border-radius: 3px; font-weight: bold; border: none; background: transparent; color: inherit; font-size: 10px; }
+.month-nav:hover { background: #3e4a3d; color: #d1b880; }
+.card-status-body { padding: 6px; font-size: 10px; font-weight: bold; color: #1a1a1a; height: 32px; display: flex; align-items: center; justify-content: center; text-align: center; line-height: 1.2; }
+
+.card-btn { background: #5a4f41; color: #fdfbf7; text-align: center; padding: 8px 0; font-family: 'Georgia', serif; font-weight: bold; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; }
+.result-card:hover .card-btn { background: #8a9a5b; }
+
+/* --- Gildie nad kartą --- */
+.guild-mini-row { display: flex; width: 100%; flex-wrap: wrap; justify-content: center; gap: 12px; padding: 12px 5px 6px 5px; align-items: flex-end; }
+.guild-mini-card {
+    flex: 0 0 auto; position: relative; width: 52px; height: 52px; border-radius: 50%; background: #e0dcd3; border: 2px solid #5a4f41;
+    cursor: pointer; transition: transform 0.2s, border-color 0.2s;
+}
+.guild-mini-card:hover, .guild-mini-card.force-hover { transform: translateY(-4px); border-color: #8a9a5b; z-index: 500; }
+.guild-mini-img { width: 100%; height: 100%; border-radius: 50%; background-size: cover; background-position: center; position: absolute; top: 0; left: 0; transition: filter 0.3s; }
+.guild-mini-card:hover .guild-mini-img, .guild-mini-card.force-hover .guild-mini-img { filter: blur(2px) brightness(0.8); }
+.guild-mini-title-short {
+    position: absolute; top: -9px; left: 50%; transform: translateX(-50%); z-index: 2; background: rgba(35, 32, 29, 0.85); color: #d1b880;
+    font-size: 9px; font-weight: bold; padding: 1px 7px; border-radius: 12px; width: max-content; max-width: 85px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-transform: uppercase; letter-spacing: 1px; pointer-events: none;
+}
+.guild-mini-expanded {
+    display: flex; flex-direction: column; align-items: center; justify-content: center; position: absolute; top: calc(100% + 10px); left: 50%;
+    transform: translateX(-50%); width: 210px; min-height: 100px; background: rgba(35, 32, 29, 0.95); border-radius: 12px;
+    border: 2px solid #8a9a5b; box-shadow: 0 8px 20px rgba(138, 154, 91, 0.3); z-index: 999; color: #fdfbf7; text-align: center;
+    padding: 14px 24px; opacity: 0; pointer-events: none; transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.guild-mini-card:hover .guild-mini-expanded, .guild-mini-card.force-hover .guild-mini-expanded { opacity: 1; pointer-events: auto; transform: translateX(-50%) translateY(4px); }
+.guild-nav-btn { position: absolute; top: 50%; transform: translateY(-50%); background: none; border: none; color: #8a9a5b; font-size: 18px; cursor: pointer; padding: 5px; }
+.guild-nav-btn:hover { color: #d1b880; }
+.guild-nav-left { left: 2px; }
+.guild-nav-right { right: 2px; }
+.expanded-title { font-family: 'Georgia', serif; font-size: 13px; font-weight: bold; color: #fff; margin-bottom: 2px; }
+.expanded-role { font-size: 10px; color: #e0dcd3; margin-bottom: 10px; font-style: italic; line-height: 1.4; }
+.expanded-btn { background: #8a9a5b; color: #fff; font-size: 10px; padding: 4px 14px; border-radius: 4px; cursor: pointer; text-transform: uppercase; border: none; font-weight: bold; letter-spacing: 1px; }
+.expanded-btn:hover { background: #d1b880; color: #23201d; }
+
+/* =========================================
+   LISTY: ZADANIA I PRZEPISY
+   ========================================= */
+.kw-list { display: flex; flex-direction: column; gap: 10px; }
+.task-card {
+    display: flex; align-items: center; background: rgba(253, 251, 247, 0.95); color: inherit;
+    border: 1px solid #d1c7a7; border-left: 6px solid #8a9a5b; border-radius: 8px;
+    padding: 12px 18px; cursor: pointer; transition: all 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+.task-card:hover, .task-card:focus-visible { transform: translateX(6px); border-color: #8a9a5b; box-shadow: 0 8px 15px rgba(138, 154, 91, 0.2); color: inherit; }
+.task-card-recipe { border-left-color: #8a7a58; }
+.task-card-icon { font-size: 26px; color: #8a9a5b; width: 44px; text-align: center; margin-right: 14px; flex: 0 0 44px; }
+.task-card-recipe .task-card-icon { color: #8a7a58; }
+.task-card-content { flex: 1; min-width: 0; }
+.task-card-title { font-family: 'Georgia', serif; font-size: 16px; font-weight: bold; color: #2b2b2b; margin: 0 0 3px 0; line-height: 1.25; border: none; }
+.task-card-meta { font-size: 13px; color: #2d5a27; margin-bottom: 2px; }
+.task-card-desc { font-size: 13px; color: #5a4f41; margin: 0; line-height: 1.4; }
+.task-card-action {
+    font-size: 10px; font-weight: bold; color: #d1b880; background: #3e4a3d; padding: 8px 12px;
+    border-radius: 6px; text-transform: uppercase; margin-left: 14px; transition: background 0.2s; white-space: nowrap;
+}
+.task-card-recipe .task-card-action { background: #8a7a58; color: #fff; }
+.task-card:hover .task-card-action { background: #8a9a5b; color: #fff; }
+
+/* =========================================
+   KARUZELE
+   ========================================= */
+.carousel-section { margin: 30px 0; overflow: hidden; }
+.section-title { font-family: 'Georgia', serif; color: #3e4a3d; font-size: 1.3rem; }
+.section-title i { color: #8a9a5b; }
+.auto-scroll-wrapper { width: 100%; overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none; }
+.auto-scroll-wrapper::-webkit-scrollbar { display: none; }
+.auto-scroll-content { display: flex; gap: 15px; padding: 10px 20px; width: max-content; }
+.kw-carousel-empty { color: #777; font-style: italic; }
+
+.mini-card {
+    width: 170px; height: 210px; background: #fdfbf7; border: 2px solid #5a4f41; border-radius: 8px; padding: 10px;
+    flex-shrink: 0; display: flex; flex-direction: column; align-items: center; text-align: center; color: #2b2b2b;
+    transition: transform 0.2s, border-color 0.2s;
+}
+.mini-card:hover, .mini-card:focus-visible { transform: translateY(-4px); border-color: #8a9a5b; color: #2b2b2b; }
+.mini-card h4 { font-family: 'Georgia', serif; font-size: 15px; margin: 10px 0 4px 0; line-height: 1.25; border: none; }
+.mini-card-img { height: 100px; width: 100%; background-size: cover; background-position: center; border-radius: 4px; }
+.mini-card-icon { font-size: 3rem; color: #8a9a5b; margin-top: 16px; }
+.mini-card-sub { font-size: 12px; color: #8a7a58; font-style: italic; }
+
+/* =========================================
+   BESTIARIUSZ (cała karta klikalna)
+   ========================================= */
+.bestiary-header { font-family: 'Georgia', serif; border-bottom: 2px solid #8a9a5b; padding-bottom: 10px; margin: 40px 0; text-transform: uppercase; }
+.bestiary-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 24px; }
+.witcher-card {
+    background: #23201d; border: 1px solid #4a3e31; border-radius: 4px; height: 400px;
+    display: flex; flex-direction: column; overflow: hidden; color: #fdfbf7; cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.witcher-card:hover, .witcher-card:focus-visible {
+    transform: translateY(-6px); border-color: #d1b880; color: #fdfbf7;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.3), 0 0 0 1px #d1b880; outline: none;
+}
+.witcher-card-img { flex: 0 0 58%; background-size: cover; background-position: center; border-bottom: 2px solid #8a7a58; transition: filter 0.3s; }
+.witcher-card:hover .witcher-card-img { filter: brightness(1.08) saturate(1.1); }
+.witcher-card-content { flex: 1; padding: 12px 15px; display: flex; flex-direction: column; justify-content: center; text-align: center; }
+.witcher-card-title { font-family: 'Georgia', serif; font-size: 1.2rem; color: #d1b880; margin: 0 0 4px 0; border: none; }
+.witcher-card-latin { font-style: italic; color: #a89f91; font-size: 0.9rem; margin: 0; }
+.witcher-card-desc { color: #c9bfae; font-size: 0.9rem; margin: 4px 0 0 0; }
+.witcher-btn {
+    flex: 0 0 38px; display: flex; align-items: center; justify-content: center; gap: 6px; background: #3a2b21; color: #d1b880;
+    border-top: 1px solid #5a4b3a; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; transition: background 0.3s, color 0.3s;
+}
+.witcher-card:hover .witcher-btn { background: #8a9a5b; color: #fff; }
+
+/* =========================================
+   MODAL ROZPOZNAWANIA
+   ========================================= */
+.kw-modal { background-color: #fdfaf0; border: 2px solid #3e4a3d; font-family: 'Crimson Text', serif; }
+.kw-latin { font-style: italic; color: #8a7a58; margin: 0 0 8px 0; }
+.kw-recognized-info { color: #3e4a3d; }
+.kw-btn-dark { background-color: #3e4a3d; color: #fff; }
+.kw-btn-dark:hover { background-color: #2d5a27; color: #fff; }
+
+/* =========================================
+   TELEFONY
+   ========================================= */
+@media (max-width: 768px) {
+    .kw-search { padding-top: 15px; }
+    .kw-search-title { font-size: 1.5rem; }
+    .kw-search-hint { font-size: 0.95rem; }
+    .kw-search input.kw-input { font-size: 16px; flex-basis: 90px; }
+    .kw-searchbar { padding-left: 10px; }
+    .kw-lens-label { display: none; }
+    .kw-keys-hint { display: none; }
+    .kw-sugg-sub { display: none; }
+    .task-card { padding: 12px; flex-wrap: wrap; }
+    .task-card-icon { width: 34px; flex-basis: 34px; font-size: 22px; margin-right: 10px; }
+    .task-card-action { margin: 10px 0 0 0; flex-basis: 100%; text-align: center; }
+    .kw-sec-title { font-size: 1.1rem; letter-spacing: 1px; }
+    .guild-mini-expanded { width: 190px; padding: 12px 22px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card-desc-scroll, .card-trivia-scroll { animation: none; }
+    .card-trivia-scroll { padding-left: 10px; white-space: normal; }
+}
