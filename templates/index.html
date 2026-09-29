@@ -2,51 +2,54 @@
 
 {% block content %}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rpg-awesome/0.2.0/css/rpg-awesome.min.css">
 
-<section class="search-section" id="guildNetwork">
-    <svg id="arenaLines"></svg>
+<!-- ==========================================
+     JEDNA WYSZUKIWARKA: rośliny, objawy/działanie, czynności, pory roku,
+     przepisy, tagi (filtry) i rozpoznawanie rośliny ze zdjęcia
+     ========================================== -->
+<section class="kw-search" id="kwSearch">
+    <h1 class="kw-search-title"><i class="ra ra-leaf"></i> Czego szukasz w zielniku?</h1>
+    <p class="kw-search-hint">Roślina, objaw lub działanie, czynność w ogrodzie, pora roku, miesiąc, składnik przepisu… albo zdjęcie rośliny.</p>
 
-    <div class="central-node" id="mainSearchNode">
-
-        <div class="search-input-wrapper">
-            <div id="architecturalSuggestions" class="architectural-suggestions">
-                <div id="symptomBox" class="suggestions-box"></div>
-                <div id="actionBox" class="suggestions-box"></div>
-                <div id="colorBox" class="suggestions-box"></div>
-            </div>
-
-            <input type="text" id="universalSearch" class="search-input"
-                   placeholder="Wpisz roślinę, czynność, objaw lub porę roku..." autocomplete="off">
+    <div class="kw-searchbar-wrap">
+        <div class="kw-searchbar" id="kwSearchBar">
+            <i class="bi bi-search kw-searchbar-icon" aria-hidden="true"></i>
+            <div class="kw-tags" id="activeTagsContainer"></div>
+            <input type="text" id="universalSearch" class="kw-input"
+                   placeholder="Np. mniszek, kaszel, jesień, zbiór, syrop…"
+                   autocomplete="off" spellcheck="false"
+                   role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="kwSuggestions"
+                   aria-label="Wyszukaj w Kwiatowniku">
+            <button type="button" id="kwClearBtn" class="kw-icon-btn" title="Wyczyść wyszukiwanie" aria-label="Wyczyść wyszukiwanie" hidden>
+                <i class="bi bi-x-lg"></i>
+            </button>
+            <input type="file" accept="image/*" capture="environment" id="magicCameraInput" hidden>
+            <button type="button" id="magicLensBtn" class="kw-lens-btn" title="Rozpoznaj roślinę ze zdjęcia (możesz też wkleić lub upuścić zdjęcie)">
+                <i class="bi bi-camera"></i> <span class="kw-lens-label">Rozpoznaj</span>
+            </button>
         </div>
-
-        <div id="horizontalResults"></div>
-
-        <div id="taskResults" class="task-results-container"></div>
-
-    </div>
+        <div id="kwSuggestions" class="kw-suggestions" role="listbox" hidden></div>
+        <div class="kw-drop-hint" id="kwDropHint" hidden><i class="bi bi-image"></i> Upuść zdjęcie rośliny, aby ją rozpoznać</div>
     </div>
 
-    <div id="recipeCarousel" class="carousel-container"></div>
+    <p class="kw-keys-hint"><kbd>Enter</kbd> zamienia wpisane słowo w filtr, kolejne słowa zawężają wyniki · <kbd>Backspace</kbd> usuwa ostatni filtr</p>
+
+    <div class="kw-quick" id="kwQuick"></div>
+
+    <div id="kwResults" class="kw-results" aria-live="polite" hidden></div>
 </section>
 
-<!-- Sekcja Wyszukiwarki i Tagów -->
-<div class="search-section">
-    <div id="activeTagsContainer" class="tags-container"></div>
-    <input type="text" id="multiSearchInput" class="search-input" placeholder="Wpisz słowo (np. kaszel) i wciśnij Enter...">
-</div>
-
-<!-- Automatyczna Karuzela: Bestiariusz -->
+<!-- Automatyczna Karuzela: Bestiariusz (filtrowana tą samą wyszukiwarką) -->
 <div class="carousel-section">
-    <h3 class="section-title"><i class="ra ra-leaf"></i> Bestiariusz Roślin</h3>
+    <h3 class="section-title"><i class="ra ra-leaf"></i> Bestiariusz Roślin <span class="kw-count" id="plantsCarouselCount"></span></h3>
     <div class="auto-scroll-wrapper" id="plantsWrapper">
         <div class="auto-scroll-content" id="plantsCarousel"></div>
     </div>
 </div>
 
-<!-- Automatyczna Karuzela: Przepisy -->
+<!-- Automatyczna Karuzela: Przepisy (filtrowana tą samą wyszukiwarką) -->
 <div class="carousel-section">
-    <h3 class="section-title"><i class="ra ra-potion"></i> Księga Przepisów</h3>
+    <h3 class="section-title"><i class="ra ra-potion"></i> Księga Przepisów <span class="kw-count" id="recipesCarouselCount"></span></h3>
     <div class="auto-scroll-wrapper" id="recipesWrapper">
         <div class="auto-scroll-content" id="recipesCarousel"></div>
     </div>
@@ -57,37 +60,34 @@
     <div id="bestiaryGrid" class="bestiary-grid"></div>
 </section>
 
-<div class="modal fade" id="dynamicRecipeModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content" style="border-radius: 0; border: 2px solid #3e4a3d; background-color: #fdfaf0; font-family: 'Crimson Text', serif;">
-            <div class="modal-header" style="border-bottom: 1px solid #d1c7a7; background: #f4f1ea;">
-                <div>
-                    <h2 id="modalRecipeTitle" style="margin: 0; font-size: 1.8rem; border: none; color: #3e4a3d;">Tytuł Przepisu</h2>
-                    <p style="margin: 0; color: #666; font-style: italic;">Gatunek: <strong id="modalRecipePlantName">Roślina</strong></p>
-                </div>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<!-- Wynik rozpoznawania zdjęcia (obsługa: static/js/magic_lens.js + index.js) -->
+<div class="modal fade" id="favoritePlantModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content kw-modal">
+            <div class="modal-header" style="border-bottom: 1px solid #d1c7a7;">
+                <h5 class="modal-title" style="color: #3e4a3d; font-size: 1.5rem;">
+                    <i class="bi bi-stars"></i> Rozpoznano roślinę!
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
             </div>
-            <div class="modal-body p-4">
-                <div id="modalRecipeTags" style="margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed #d1c7a7; display:none;"></div>
-                <div class="row">
-                    <div class="col-lg-5" style="border-right: 1px dashed #d1c7a7;">
-                        <h4 style="color: #b8860b; margin-top: 0;">🛒 Składniki</h4>
-                        <ul id="modalRecipeIngredients" style="list-style-type: square; padding-left: 20px;"></ul>
-                    </div>
-                    <div class="col-lg-7">
-                        <h4 style="color: #3e4a3d; margin-top: 0;">🔥 Przygotowanie</h4>
-                        <div id="modalRecipePreparation" style="font-size: 1.05rem; line-height: 1.7;"></div>
-                        <div id="modalRecipeDosage" style="display:none; background: #e3f2fd; border: 1px solid #90caf9; padding: 15px; margin-top: 20px; border-radius: 4px;"></div>
-                        <div id="modalRecipeNotes" style="display:none; background: #ffebee; border: 1px solid #ef9a9a; padding: 15px; margin-top: 15px; color: #c62828; border-radius: 4px;"></div>
-                    </div>
-                </div>
+            <div class="modal-body text-center p-4">
+                <p style="font-size: 1.1rem; color: #555; margin-bottom: 0;">Magiczny obiektyw podpowiada, że to:</p>
+                <h3 id="recognizedPlantName" style="color: #2d5a27; font-weight: bold; margin: 12px 0 4px 0;">---</h3>
+                <p id="recognizedLatin" class="kw-latin"></p>
+                <p id="recognizedInfo" class="kw-recognized-info"></p>
+                <a id="recognizedOpenLink" href="#" class="btn kw-btn-dark" hidden><i class="ra ra-eye"></i> Otwórz stronę rośliny</a>
+                <p class="text-muted mt-3" style="font-size: 0.95rem; font-style: italic;">Możesz zapisać ją w swoim zielniku (menu „Ulubione”).</p>
+            </div>
+            <div class="modal-footer" style="border-top: none; justify-content: center; padding-bottom: 20px;">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Pomiń</button>
+                <button type="button" class="btn kw-btn-dark" id="saveFavoriteBtn">Dodaj do Zielnika</button>
             </div>
         </div>
     </div>
 </div>
 
 <div id="megaAlertOverlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:9999; backdrop-filter: blur(5px);">
-    <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background:#23201d; border:2px solid #9b4b4b; border-radius:8px; padding:40px; text-align:center; box-shadow:0 0 80px rgba(155,75,75,0.8); color:#fdfbf7; font-family:'Georgia', serif; min-width:350px;">
+    <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background:#23201d; border:2px solid #9b4b4b; border-radius:8px; padding:40px; text-align:center; box-shadow:0 0 80px rgba(155,75,75,0.8); color:#fdfbf7; font-family:'Georgia', serif; min-width:300px; max-width: 90vw;">
         <i class="ra ra-bleeding-eye" style="font-size: 60px; color: #9b4b4b; margin-bottom: 20px; display:block;"></i>
         <h2 style="color: #d1b880; margin: 0 0 15px 0; font-size: 28px; border:none; text-transform: uppercase;">Nieznane Zioło!</h2>
         <p style="font-size: 18px; color: #a89f91; margin-bottom: 25px;">Wiedza o <strong id="megaAlertPlantName" style="color: #fff; text-decoration: underline;"></strong><br>nie została jeszcze spisana.</p>
@@ -96,14 +96,11 @@
 </div>
 
 <script>
-    const BASE_URL = window.location.origin;
     const plantsData = {{ plants_full_data | default('[]') | safe }};
     const kalendarz = {{ calendar_data | default('{}') | safe }};
     let recipesData = {{ recipes_full_data | default('[]') | safe }};
     if (!Array.isArray(recipesData)) recipesData = [];
 </script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <script src="{{ url_for('static', filename='js/tags.js') }}"></script>
 <script src="{{ url_for('static', filename='js/index.js') }}"></script>

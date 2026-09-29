@@ -7,96 +7,375 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rpg-awesome/0.2.0/css/rpg-awesome.min.css">
     <link rel="stylesheet" href="/static/style.css">
     <style>
-        body { font-family: 'Crimson Text', serif; background-color: #f4f1ea; color: #2c2c2c; margin: 0; }
-        nav { background-color: #3e4a3d; color: white; padding: 1rem; display: flex; justify-content: space-between; }
-        nav a { color: white; text-decoration: none; margin: 0 10px; }
-        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        .flash { padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 4px; }
-        .flash-success { background-color: #d4edda; color: #155724; }
-        .flash-danger { background-color: #f8d7da; color: #721c24; }
-        footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #666; }
-    </style>
-    <style>
-        /* Nadpisanie Bootstrapa, żeby nie psuł tła i fontów */
-        body {
-            font-family: 'Crimson Text', serif;
-            background-color: #f4f1ea;
-            color: #2c2c2c;
-            margin: 0;
-        }
-        /* Reszta Twoich stylów lokalnych z base.html... */
-        nav { background-color: #3e4a3d; color: white; padding: 1rem; display: flex; justify-content: space-between; }
-        nav a { color: white; text-decoration: none; margin: 0 10px; }
-        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        .flash { padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 4px; }
-        .flash-success { background-color: #d4edda; color: #155724; }
-        .flash-danger { background-color: #f8d7da; color: #721c24; }
-        footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #666; }
+        body { font-family: 'Crimson Text', serif; background-color: #f4f1ea; color: #2c2c2c; margin: 0; padding-top: 110px; }
 
-        /* FIX dla linków w nawigacji (Bootstrap lubi je zmieniać na niebieskie) */
-        nav a { color: white !important; text-decoration: none; }
+        .main-header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+
+        /* --- POPRAWA NAWIGACJI (Oparta na Bootstrapie RWD) --- */
+        nav { background-color: #3e4a3d; border-bottom: 1px solid #5a4f41; padding: 0.5rem 1rem;}
+        /* Używamy standardowych klas navbar z Bootstrapa dla Hamburgera */
+        .navbar-brand, .nav-link { color: white !important; font-weight: bold; font-size: 0.95rem; transition: color 0.3s; }
+        .nav-link:hover, .navbar-brand:hover { color: #d1b880 !important; }
+        .nav-link i, .navbar-brand i { color: #d1b880; margin-right: 5px; font-size: 1.1rem; }
+
+        .navbar-toggler { border-color: rgba(255,255,255,0.5); padding: 4px 8px;}
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        /* Dostosowanie dropdownu Ulubionych do paska nav */
+        #favDropdownBtn { padding-left: 0; padding-right: 0; }
+
+        @media (max-width: 991px) {
+            /* Na mniejszych ekranach linki w menu rozsuwanym mają odstęp i są blokowe */
+            .navbar-nav .nav-item { padding: 8px 0; border-bottom: 1px dashed rgba(255,255,255,0.2); text-align: center;}
+            .navbar-nav .nav-item:last-child { border-bottom: none; }
+            .frozen-feature.d-lg-none { display: block; text-align: center; padding: 10px 0; color: white;}
+            .frozen-feature.d-none.d-lg-block { display: none; } /* Ukrywa 'Komentarze' obok menu na tel */
+
+            /* Zmniejszamy paddingi dla samej nawigacji na mobilkach */
+            nav { padding: 0.5rem; }
+        }
+
+        /* --- WSPÓLNE CECHY PRZEWIJANYCH PASKÓW --- */
+        .scrollable-banner {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            cursor: grab;
+            user-select: none;
+        }
+        .scrollable-banner::-webkit-scrollbar { display: none; }
+        .scrollable-banner:active { cursor: grabbing; }
+        .scrollable-content { display: flex; flex-wrap: nowrap; align-items: center; }
+
+        /* --- 1. PASEK ALMANACHU (ASTRO-RIBBON) --- */
+        .astro-ribbon {
+            background-color: #23201d;
+            border-bottom: 1px solid #8a7a58;
+            color: #d1b880;
+            padding: 6px 10px; /* Lekko zmniejszony padding */
+            font-size: 0.75rem;
+        }
+        .astro-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-right: 25px; /* Trochę mniej odstępu, lepiej dla mniejszych ekranów */
+            flex-shrink: 0; /* ZAPOBIEGA GNIECENIU na małych ekranach */
+        }
+        .astro-item i { font-size: 1.1rem; color: #8a9a5b; }
+        .astro-item div { display: flex; align-items: baseline; gap: 4px; }
+        .astro-label { font-size: 0.65rem; text-transform: uppercase; color: #a89f91; letter-spacing: 0.5px; }
+        .astro-value { font-weight: bold; font-family: 'Georgia', serif; font-size: 0.85rem; }
+
+        /* --- 2. ZŁOTY PASEK CIEKAWOSTEK (MARQUEE) --- */
+        .marquee-wrapper {
+            background-color: #1a1714;
+            color: #8a9a5b;
+            padding: 8px 10px;
+            border-bottom: 2px solid #3a2b21;
+        }
+        .marquee-item {
+            font-size: 0.75rem;
+            font-style: italic;
+            letter-spacing: 0.5px;
+            margin-right: 40px;
+            flex-shrink: 0; /* KLUCZOWE! Zapobiega obcinaniu tekstu */
+        }
+        .marquee-item i { color: #d1b880; margin-right: 5px; }
+
+        @media (max-width: 768px) {
+            body { padding-top: 90px; } /* Mniejszy offset na telefony */
+            .astro-value { font-size: 0.8rem; }
+            .astro-item { margin-right: 15px; }
+            .container { margin: 10px auto; padding: 10px; border-width: 0; box-shadow: none;} /* Usuwa border wokół contentu na mobile, daje więcej miejsca */
+        }
+
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.05); border: 1px solid #e0dcd3; border-radius: 4px; }
+        .flash { padding: 8px 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; font-size: 0.9rem; }
+        .flash-success { background-color: #d4edda; color: #155724; border-color: #c3e6cb; }
+        .flash-danger { background-color: #f8d7da; color: #721c24; border-color: #f5c6cb; }
+        footer { text-align: center; padding: 30px 20px; font-size: 0.8rem; color: #7a6a58; border-top: 1px dashed #dcdcdc; margin-top: 40px; }
+        footer i { color: #8a9a5b; margin-right: 5px; }
+
+        /* MODAL FIX */
+        .frozen-modal-overlay { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(35, 32, 29, 0.8); }
+        .frozen-modal-content { background-color: #f4f1ea; margin: 15% auto; padding: 25px; border: 1px solid #8a7a58; width: 90%; max-width: 400px; position: relative; font-family: 'Crimson Text', serif; text-align: center; border-radius: 4px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); }
+        .frozen-modal-close { position: absolute; right: 15px; top: 10px; font-size: 24px; cursor: pointer; color: #5a4f41; transition: color 0.2s; }
+        .frozen-modal-close:hover { color: #9b4b4b; }
         a { text-decoration: none; color: inherit; }
+
+        /* Stylizacja rozwijanej listy Ulubionych */
+        .dropdown-menu { background-color: #fdfaf0 !important; border: 2px solid #3e4a3d !important; border-radius: 0 !important; box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important; min-width: 250px; }
+        .dropdown-item { color: #3e4a3d !important; font-family: 'Crimson Text', serif; font-size: 1.1rem; padding: 8px 20px; transition: background 0.2s; }
+        .dropdown-item:hover { background-color: #e0dcd3 !important; color: #2d5a27 !important; }
+        .dropdown-header { background-color: #f4f1ea; border-bottom: 1px dashed #d1c7a7; margin-top: 5px; }
+        .dropdown-divider { border-top: 1px solid #d1c7a7 !important; opacity: 1 !important; }
+        #favoritesDropdownMenu .dropdown-item { color: #3e4a3d !important; background-color: transparent !important; }
+        #favoritesDropdownMenu .dropdown-item:hover { background-color: #e0dcd3 !important; color: #2d5a27 !important; }
+        #favoritesDropdownMenu .dropdown-header { color: #8a9a5b !important; font-weight: bold; border-bottom: 1px dashed #d1c7a7; }
     </style>
+
 </head>
 <body>
 
-<nav>
-    <div>
-        <a href="/"><strong>🌿 Kwiatownik</strong></a>
-        <a href="/generator/"><strong>🌿 Generatory</strong></a>
-        <a href="/przepisy/"><strong>🌿 Przepisy</strong></a>
-        <a href="/gildie/"><strong>🌿 Gildie</strong></a>
-        <a href="#" class="frozen-feature">Wszystkie Komentarze</a>
+<header class="main-header">
+    <!-- Navbar zmieniony na strukturę Bootstrap (RWD) -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-0 px-md-2">
+            <!-- Logo widoczne po lewej zawsze -->
+            <a class="navbar-brand" href="/"><i class="ra ra-leaf"></i> Kwiatownik</a>
+
+            <!-- Hamburger na małych ekranach -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kwiatownikNavbar" aria-controls="kwiatownikNavbar" aria-expanded="false" aria-label="Przełącz nawigację">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Część zwijana (linki i przyciski) -->
+            <div class="collapse navbar-collapse justify-content-end" id="kwiatownikNavbar">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="/generator/"><i class="ra ra-flask"></i> Generatory</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/przepisy/"><i class="ra ra-cauldron"></i> Przepisy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/gildie/"><i class="ra ra-pawn"></i> Gildie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/porownaj/"><i class="ra ra-scroll-unfurled"></i> Porównaj</a></li>
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link frozen-feature" href="#"><i class="ra ra-speech-bubble"></i> Komentarze</a></li>
+
+                    <li class="nav-item dropdown px-2">
+                        <button class="nav-link dropdown-toggle" type="button" id="favDropdownBtn" data-bs-toggle="dropdown" aria-expanded="false" style="background: none; border: none; font-weight: bold; font-size: 0.95rem;">
+                            <i class="ra ra-heart"></i> Ulubione
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" id="favoritesDropdownMenu">
+                        </ul>
+                    </li>
+
+                    <!-- Przycisk logowania wewnątrz menu na urządzeniach mobilnych -->
+                    <li class="nav-item d-lg-none mt-2 w-100">
+                         <a href="#" class="nav-link frozen-feature" style="background: #2d5a27; border-radius: 4px; padding: 8px;"><i class="ra ra-player"></i> Logowanie (Wstrzymane)</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Ikonka logowania na desktopie zostaje po prawej stronie (poza hamburgerem) -->
+            <div class="frozen-feature d-none d-lg-block" title="Zablokowane w wersji statycznej" style="margin-left: 15px;">
+                <a class="nav-link" href="#"><i class="ra ra-player"></i> Logowanie</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Reszta bez zmian, poprawki załatwił CSS powyżej -->
+    <div class="astro-ribbon scrollable-banner" id="banner-astro">
+
+        <div class="scrollable-content">
+            <div class="astro-item">
+                <i class="ra ra-compass"></i>
+                <div>
+                    <span class="astro-label">Lokacja:</span>
+                    <span class="astro-value" id="locValue" data-astro="location">Z (Domyślnie)</span>
+                    <!-- Złota ikonka GPS do kliknięcia -->
+                    <i class="ra ra-target" onclick="forceGPS()" style="cursor: pointer; color: #b8860b; margin-left: 5px; font-size: 0.9rem;" title="Użyj dokładnej lokalizacji GPS (przeglądarka zapyta o zgodę)"></i>
+                </div>
+            </div>
+            <div class="astro-item"><i class="ra ra-sun"></i><div><span class="astro-label">Pogoda:</span><span class="astro-value" data-astro="sky"></span> <span class="astro-value" data-astro="temp">21.5°C</span><span class="astro-label" style="margin-left:4px;">Wilg:</span><span class="astro-value" data-astro="humidity">93%</span></div></div>
+            <div class="astro-item"><i class="ra ra-moon-sun"></i><div><span class="astro-label">Księżyc:</span><span class="astro-value" data-astro="moon">Księżyc Ubywający</span></div></div>
+            <div class="astro-item"><i class="ra ra-fire"></i><div><span class="astro-label">Żywioł:</span><span class="astro-value">Ogień</span></div></div>
+            <div class="astro-item"><i class="ra ra-crystal-ball"></i><div><span class="astro-label">Wibracja:</span><span class="astro-value" data-astro="numerology">3</span></div></div>
+            <div class="astro-item"><i class="ra ra-dragon"></i><div><span class="astro-label">Patron Roku:</span><span class="astro-value" data-astro="japanese">Koń</span></div></div>
+            <div class="astro-item" style="margin-right:0;"><i class="ra ra-trefoil"></i><div><span class="astro-label">Koło Roku:</span><span class="astro-value">Dożynki (Mabon)</span></div></div>
+        </div>
     </div>
-    <div class="frozen-feature" title="Logowanie wyłączone w wersji statycznej">
-        <a href="#">Logowanie</a>
-        <a href="#">Rejestracja</a>
+
+    <div class="marquee-wrapper scrollable-banner" id="banner-marquee">
+        <div class="scrollable-content">
+            
+                <span class="marquee-item"><i class="ra ra-scroll-unfurled"></i> <strong>Ciekawostka:</strong> Dąb szypułkowy ściąga najwięcej piorunów ze wszystkich drzew w lesie.</span>
+                <span class="marquee-item"><i class="ra ra-scroll-unfurled"></i> <strong>Protip:</strong> Zbiór korzeni mniszka wykonuj przy księżycu ubywającym.</span>
+                <span class="marquee-item"><i class="ra ra-scroll-unfurled"></i> <strong>Wiedza:</strong> Syrop z pędów sosny działa wykrztuśnie.</span>
+            
+        </div>
     </div>
-</nav>
+</header>
 
 <div class="container">
     
-      
+        
     
 
     
-<div class="perma-section" style="max-width: 1100px; margin: 0 auto; padding: 20px;">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rpg-awesome/0.2.0/css/rpg-awesome.min.css">
+
+<style>
+    /* STYLIZACJA WYSZUKIWARKI */
+    .perma-section { max-width: 1100px; margin: 0 auto; padding: 20px; }
+
+    .search-container {
+        background: #fdfbf7;
+        border: 2px solid #5a4f41;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        max-width: 600px;
+        margin: 0 auto 40px auto;
+        text-align: center;
+    }
+
+    /* MAGICZNA ARENA GILDII */
+    .guild-arena {
+        position: relative;
+        width: 100%;
+        height: 650px;
+        background: radial-gradient(circle, #2a2520 0%, #12100e 100%);
+        border: 3px solid #3e4a3d;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: inset 0 0 80px rgba(0,0,0,0.8), 0 15px 30px rgba(0,0,0,0.4);
+        margin-bottom: 50px;
+    }
+
+    /* LINIE ŁĄCZĄCE (SVG) */
+    #guildLines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        pointer-events: none;
+    }
+    .guild-line {
+        stroke: #8a9a5b;
+        stroke-width: 2px;
+        stroke-dasharray: 6, 6;
+        opacity: 0.6;
+        animation: energyFlow 20s linear infinite;
+    }
+    @keyframes energyFlow { to { stroke-dashoffset: 1000; } }
+
+    /* CENTRALNA ROŚLINA (SERCE) */
+    .core-plant {
+        position: absolute;
+        z-index: 10;
+        width: 220px;
+        height: 220px;
+        background: #23201d;
+        border: 4px solid #8a9a5b;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 0 50px rgba(138, 154, 91, 0.4);
+        animation: pulseCore 3s infinite alternate;
+        padding: 20px;
+    }
+    @keyframes pulseCore {
+        from { box-shadow: 0 0 30px rgba(138, 154, 91, 0.2); border-color: #5a6639; }
+        to { box-shadow: 0 0 70px rgba(138, 154, 91, 0.6); border-color: #8a9a5b; }
+    }
+    .core-title {
+        color: #d1b880;
+        font-family: 'Georgia', serif;
+        font-size: 22px;
+        margin: 10px 0 5px 0;
+        line-height: 1.1;
+    }
+    .core-subtitle { color: #8a9a5b; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
+
+    /* TOWARZYSZE (ORBITUJĄCE WĘZŁY) */
+    .companion-node {
+        position: absolute;
+        z-index: 5;
+        width: 150px;
+        height: 150px;
+        background: #fdfbf7;
+        border: 2px solid #5a4f41;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 15px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.3s;
+    }
+    .companion-node.unlinked { background: #e0ddd5; border-style: dashed; opacity: 0.9; }
+    .companion-node:hover {
+        transform: scale(1.15);
+        border-color: #b8860b;
+        z-index: 20;
+    }
+    .comp-title { font-weight: bold; color: #3e4a3d; font-size: 13px; margin-bottom: 5px; border-bottom: 1px dashed #d1c7a7; padding-bottom: 3px; }
+    .comp-role { font-size: 10px; color: #555; line-height: 1.3; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
+
+    .explore-btn {
+        margin-top: 8px;
+        font-size: 10px;
+        padding: 3px 8px;
+        background: #3e4a3d;
+        color: #d1b880;
+        border: none;
+        border-radius: 3px;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .explore-btn:hover { background: #2d5a27; color: #fff; }
+
+    /* CHARAKTERYSTYKA SYSTEMOWA */
+    .info-box {
+        background: white;
+        padding: 30px;
+        border-left: 6px solid #3e4a3d;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        border-radius: 0 15px 15px 0;
+        line-height: 1.6;
+    }
+</style>
+
+<div class="perma-section">
     <header style="text-align: center; margin-bottom: 40px;">
-        <h1 style="color: #3e4a3d; font-size: 2.5rem; margin-bottom: 10px;">🕸️ Projektant Gildii Permakulturowych</h1>
-        <p style="color: #555; font-size: 1.1rem;">Odkryj synergię między roślinami i buduj stabilne ekosystemy.</p>
+        <h1 style="color: #3e4a3d; font-family: 'Georgia', serif; font-size: 2.5rem; margin-bottom: 10px;">🕸️ Księga Gildii Permakulturowych</h1>
+        <p style="color: #555; font-size: 1.1rem; font-style: italic;">Odkryj synergię między roślinami i buduj stabilne ekosystemy.</p>
     </header>
 
-    <div class="search-container" style="background: #f4f1ea; border: 2px dashed #3e4a3d; border-radius: 20px; padding: 30px; margin-bottom: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-        <form id="guildSearchForm" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: flex-end; position: relative;">
+    <div class="search-container">
+        <form id="guildSearchForm" style="display: flex; flex-direction: column; gap: 10px; align-items: center; position: relative;">
+            <label for="search_query" style="font-weight: bold; color: #5a4f41;">Wybierz Serce Gildii (Wpisz roślinę):</label>
+            <input type="text" id="search_query" placeholder="np. Modrzew, Wrotycz, Jabłoń..." required autocomplete="off"
+                   style="width: 100%; padding: 12px 20px; border-radius: 4px; border: 2px solid #3e4a3d; outline: none; font-size: 1rem; font-family: 'Georgia', serif;">
 
-            <div style="flex: 2; min-width: 280px; position: relative;">
-                <label for="search_query" style="display: block; margin-bottom: 8px; font-weight: bold; color: #3e4a3d;">Wpisz nazwę rośliny:</label>
-                <input type="text" id="search_query" placeholder="np. Modrzew, Wrotycz, Jabłoń..." required autocomplete="off"
-                       style="width: 100%; padding: 12px 20px; border-radius: 25px; border: 2px solid #3e4a3d; outline: none; font-size: 1rem;">
-
-                <div id="suggestionsList" class="list-group position-absolute w-100" style="z-index: 1000; display: none; margin-top: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"></div>
-            </div>
-
-<!--            <button type="submit" style="background: #3e4a3d; color: white; padding: 12px 30px; border-radius: 25px; border: none; cursor: pointer; font-weight: bold; transition: 0.3s; height: 50px;">-->
-<!--                Analizuj-->
-<!--            </button>-->
+            <div id="suggestionsList" class="list-group position-absolute w-100" style="z-index: 1000; display: none; top: 100%; margin-top: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"></div>
         </form>
     </div>
 
     <div id="errorMessage" style="text-align: center; color: #c62828; font-weight: bold; display: none; margin-bottom: 20px;"></div>
 
-    <div id="guildResultsWrapper" class="guild-results-wrapper" style="display: none; animation: fadeIn 0.8s ease-in-out;">
+    <div id="guildResultsWrapper" style="display: none; animation: fadeIn 0.8s ease-in-out;">
 
-        <div class="guild-map-viewport" style="position: relative; width: 100%; height: 600px; display: flex; align-items: center; justify-content: center; margin: 40px 0;">
-            <div id="companionsContainer" class="companions-container" style="position: absolute; width: 100%; height: 100%;">
-                </div>
+        <div class="guild-arena" id="arena">
+            <svg id="guildLines"></svg>
+
+            <div class="core-plant" id="coreNode">
+                <i class="ra ra-tree" id="coreIcon" style="font-size: 50px; color: #8a9a5b;"></i>
+                <div class="core-title" id="coreTitle">Nazwa</div>
+                <div class="core-subtitle">Serce Gildii</div>
+            </div>
+
+            <div id="companionsContainer"></div>
         </div>
 
         <div class="details" style="margin-top: 60px;">
             <div style="text-align: center; margin-bottom: 30px;">
-                <h3 id="sysCharTitle" style="display: inline-block; border-bottom: 3px solid #b8860b; padding-bottom: 5px; color: #3e4a3d;">
+                <h3 id="sysCharTitle" style="display: inline-block; border-bottom: 3px solid #b8860b; padding-bottom: 5px; color: #3e4a3d; font-family: 'Georgia', serif;">
                     Charakterystyka Systemowa
                 </h3>
             </div>
@@ -113,127 +392,12 @@
                     <h4 style="color: #b8860b; display: flex; align-items: center; gap: 10px;">
                         <span style="font-size: 1.5rem;">⚙️</span> Funkcje ekosystemowe
                     </h4>
-                    <ul id="ecoFunctionsList" style="list-style: none; padding: 0;">
-                        </ul>
+                    <ul id="ecoFunctionsList" style="list-style: none; padding: 0;"></ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<style>
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-
-    .guild-map-viewport {
-        background: radial-gradient(circle, rgba(233, 240, 232, 0.5) 0%, rgba(255, 255, 255, 1) 70%);
-    }
-
-    .companions-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .companion-node {
-        position: absolute;
-        transform: rotate(var(--angle)) translate(260px) rotate(calc(-1 * var(--angle)));
-        transition: all 0.3s ease;
-        z-index: 10;
-    }
-
-    .center-node {
-        z-index: 50;
-        background: #3e4a3d;
-        color: white;
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        box-shadow: 0 0 40px rgba(62, 74, 61, 0.3);
-        border: 5px solid white;
-        position: absolute;
-    }
-
-    .center-node::after {
-        content: '';
-        position: absolute;
-        width: 220px;
-        height: 220px;
-        border: 1px solid rgba(62, 74, 61, 0.1);
-        border-radius: 50%;
-        z-index: -1;
-    }
-
-    .c-card {
-        padding: 15px 20px;
-        border-radius: 15px;
-        text-align: center;
-        min-width: 160px;
-        max-width: 200px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    }
-
-    .linked {
-        background: white;
-        border: 2px solid #3e4a3d;
-        cursor: pointer;
-    }
-
-    .linked strong { color: #3e4a3d; }
-
-    .linked:hover {
-        background: #3e4a3d !important;
-        transform: scale(1.1) translateY(-5px);
-        z-index: 100;
-    }
-
-    .linked:hover strong { color: white !important; }
-    .linked:hover .rola-tag { color: #d1c7a7 !important; }
-    .linked:hover .click-hint { opacity: 1; }
-
-    .unlinked {
-        background: #fcfcfc;
-        border: 2px dashed #ccc;
-        opacity: 0.8;
-    }
-
-    .unlinked strong { color: #777; }
-
-    .rola-tag {
-        display: block;
-        font-size: 0.7rem;
-        color: #b8860b;
-        text-transform: uppercase;
-        margin-top: 5px;
-        font-weight: bold;
-        letter-spacing: 0.5px;
-    }
-
-    .click-hint {
-        font-size: 0.6rem;
-        color: #a5d6a7;
-        margin-top: 8px;
-        opacity: 0;
-        transition: 0.3s;
-    }
-
-    .info-box {
-        background: white;
-        padding: 30px;
-        border-left: 6px solid #3e4a3d;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.03);
-        border-radius: 0 15px 15px 0;
-        line-height: 1.6;
-    }
-</style>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
@@ -244,6 +408,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const companionsContainer = document.getElementById("companionsContainer");
     const errorMessage = document.getElementById("errorMessage");
 
+    // Elementy Serca Gildii
+    const coreTitle = document.getElementById("coreTitle");
+    const coreIcon = document.getElementById("coreIcon");
+
     // Elementy opisu systemowego
     const sysCharTitle = document.getElementById("sysCharTitle");
     const roleDescription = document.getElementById("roleDescription");
@@ -251,7 +419,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let allPlants = [];
 
-    // Pobieramy całą bazę (offline-ready)
+    // Funkcja dobierająca ikonkę na podstawie nazwy rośliny
+    function getWitcherIcon(plantName) {
+        const name = plantName.toLowerCase();
+        if (name.includes('dąb') || name.includes('sosna') || name.includes('świerk') || name.includes('brzoza') || name.includes('drzewo')) return 'ra-pine-tree';
+        if (name.includes('grzyb') || name.includes('maślak') || name.includes('borowik')) return 'ra-mushroom';
+        return 'ra-leaf';
+    }
+
+    // Pobieramy całą bazę
     fetch("/api/all_plants.json")
         .then(res => res.json())
         .then(data => {
@@ -310,7 +486,7 @@ document.addEventListener("DOMContentLoaded", () => {
         errorMessage.style.display = "none";
         companionsContainer.innerHTML = "";
 
-        const gildie = plant.permakultura && plant.permakultura.gildie ? plant.permakultura.gildie : [];
+        const gildie = plant.permakultura && plant.permakultura.gildie ? plant.permakultura.gildie : (plant.gildie || []);
 
         if (gildie.length === 0) {
             showError(`Roślina <strong>${plant.nazwa_pl}</strong> nie posiada zmapowanych połączeń gildii.`);
@@ -320,51 +496,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
         resultsWrapper.style.display = "block";
 
-        // Generowanie węzła centralnego
-        const centerNode = document.createElement("div");
-        centerNode.className = "center-node";
-        centerNode.innerHTML = `
-            <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.8;">Gatunek bazowy</span>
-            <strong style="font-size: 1.3rem; padding: 0 15px; display: block; margin-top: 5px;">${plant.nazwa_pl}</strong>
-        `;
-        companionsContainer.appendChild(centerNode);
+        // Ustawianie Serca Gildii
+        coreTitle.innerText = plant.nazwa_pl;
+        coreIcon.className = `ra ${getWitcherIcon(plant.nazwa_pl)} guild-icon`;
 
-        // Generowanie węzłów towarzyszących
-        const angleStep = 360 / gildie.length;
-
-        gildie.forEach((companion, index) => {
-            const angle = angleStep * index;
+        // Generowanie węzłów towarzyszących w DOM
+        gildie.forEach((companion) => {
             const compNode = document.createElement("div");
-            compNode.className = "companion-node";
-            compNode.style.setProperty("--angle", `${angle}deg`);
 
-            // Sprawdzamy czy roślina towarzysząca jest w naszej bazie (by zbudować link)
-            const baseName = companion.nazwa ? companion.nazwa.split('(')[0].trim().toLowerCase() : '';
+            // Kompatybilność: niektóre JSONy mają listę stringów zamiast obiektów
+            const compNazwa = typeof companion === 'string' ? companion : companion.nazwa;
+            const compRola = typeof companion === 'string' ? 'Powiązanie symbiotyczne' : companion.rola;
+
+            const baseName = compNazwa ? compNazwa.split('(')[0].trim().toLowerCase() : '';
             const foundCompanion = allPlants.find(p => p.nazwa_pl && p.nazwa_pl.toLowerCase() === baseName);
 
-            if (foundCompanion) {
-                const plantUrl = `../plant/${foundCompanion.slug}/`;
-                compNode.innerHTML = `
-                    <a href="${plantUrl}" style="text-decoration: none; color: inherit;">
-                        <div class="c-card linked">
-                            <strong>${companion.nazwa}</strong>
-                            <span class="rola-tag">${companion.rola}</span>
-                            <div class="click-hint">Zobacz kartę ⮕</div>
-                        </div>
-                    </a>
-                `;
-            } else {
-                compNode.innerHTML = `
-                    <div class="c-card unlinked">
-                        <strong>${companion.nazwa}</strong>
-                        <span class="rola-tag">${companion.rola}</span>
-                    </div>
-                `;
-            }
+            compNode.className = `companion-node ${foundCompanion ? 'linked' : 'unlinked'}`;
+
+            let btnHtml = foundCompanion
+                ? `<a href="../plant/${foundCompanion.slug}/" class="explore-btn">Zbadaj</a>`
+                : `<span style="font-size: 9px; color:#999; margin-top:8px;">Brak wpisu</span>`;
+
+            compNode.innerHTML = `
+                <i class="ra ${getWitcherIcon(compNazwa)}" style="color: #8a9a5b; margin-bottom: 5px; font-size: 24px;"></i>
+                <div class="comp-title">${compNazwa}</div>
+                <div class="comp-role">${compRola}</div>
+                ${btnHtml}
+            `;
             companionsContainer.appendChild(compNode);
         });
 
-        // Aktualizacja opisu systemowego
+        // Aktualizacja opisu systemowego na dole strony
         sysCharTitle.innerText = `Charakterystyka Systemowa: ${plant.nazwa_pl}`;
         roleDescription.innerText = (plant.permakultura && plant.permakultura.opis) ? plant.permakultura.opis : "Ta roślina pełni funkcję dominanty lub wsparcia w zależności od piętra roślinności.";
 
@@ -376,7 +538,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 li.innerHTML = `<span style="position: absolute; left: 0; color: #b8860b;">•</span> ${f}`;
                 ecoFunctionsList.appendChild(li);
             });
+        } else {
+             ecoFunctionsList.innerHTML = "<li style='color:#777; font-style:italic;'>Brak zapisanych funkcji ekosystemowych.</li>";
         }
+
+        // Krótkie opóźnienie, by DOM zdążył się wyrenderować przed narysowaniem kół i linii SVG
+        setTimeout(arrangeGuildNetwork, 50);
     }
 
     function showError(msg) {
@@ -384,58 +551,273 @@ document.addEventListener("DOMContentLoaded", () => {
         errorMessage.innerHTML = msg;
         errorMessage.style.display = "block";
     }
+
+    // --- MATEMATYKA I FIZYKA SIECI ---
+    function arrangeGuildNetwork() {
+        const arena = document.getElementById('arena');
+        const core = document.getElementById('coreNode');
+        const nodes = document.querySelectorAll('.companion-node');
+        const svg = document.getElementById('guildLines');
+
+        if(!arena || !core || document.getElementById('guildResultsWrapper').style.display === "none") return;
+
+        // Środek areny
+        const centerX = arena.offsetWidth / 2;
+        const centerY = arena.offsetHeight / 2;
+
+        // Dynamiczny promień
+        const isMobile = window.innerWidth < 768;
+        const radiusX = isMobile ? (arena.offsetWidth / 2) - 80 : 260;
+        const radiusY = isMobile ? (arena.offsetHeight / 2) - 100 : 200;
+
+        // Centralizujemy Serce
+        core.style.left = (centerX - core.offsetWidth / 2) + 'px';
+        core.style.top = (centerY - core.offsetHeight / 2) + 'px';
+
+        svg.innerHTML = ''; // Czyścimy stare linie
+
+        if(nodes.length === 0) return;
+
+        // Rozkładamy elementy po okręgu
+        const angleStep = (2 * Math.PI) / nodes.length;
+
+        nodes.forEach((node, index) => {
+            const angle = (index * angleStep) - (Math.PI / 2); // Zaczynamy na godzinie 12
+
+            const x = centerX + Math.cos(angle) * radiusX;
+            const y = centerY + Math.sin(angle) * radiusY;
+
+            node.style.left = (x - node.offsetWidth / 2) + 'px';
+            node.style.top = (y - node.offsetHeight / 2) + 'px';
+
+            // Rysujemy dynamiczną linię łączącą środek z towarzyszem
+            const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+            line.setAttribute('x1', centerX);
+            line.setAttribute('y1', centerY);
+            line.setAttribute('x2', x);
+            line.setAttribute('y2', y);
+            line.setAttribute('class', 'guild-line');
+            svg.appendChild(line);
+        });
+    }
+
+    // Przerysuj linie przy zmianie rozmiaru okna
+    window.addEventListener('resize', arrangeGuildNetwork);
 });
 </script>
 
 </div>
 
 <footer>
-    <p>&copy; 1396 Kwiatownik - Akademicki Projekt Zielnika</p>
+    <p><i class="ra ra-hourglass"></i> ROK 2026 &copy; Kwiatownik - Akademicki Projekt Zielnika</p>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <div id="frozenModal" class="frozen-modal-overlay">
     <div class="frozen-modal-content">
         <span class="frozen-modal-close" onclick="closeFrozenModal()">&times;</span>
-        <h3 style="color: #2d5a27;"><i class="bi bi-info-circle"></i> Funkcja wstrzymana</h3>
-        <p class="mt-3">
-            Aby aplikacja mogła być dostępna za darmo i działać błyskawicznie, przeszliśmy na wersję statyczną.
-            Moduł logowania i komentarzy jest obecnie <strong>wyłączony</strong>.
-        </p>
-        <p>
-            Jeśli projekt Ci się podoba i chcesz wesprzeć jego rozwój, możesz postawić mi wirtualną kawę! 🌱
-        </p>
-        <a href="https://buycoffee.to/miguana" target="_blank" class="btn btn-warning mt-3 fw-bold" style="background-color: #d4a017; border: none; color: white; padding: 10px 20px;">
-            <i class="bi bi-cup-hot"></i> Postaw Kawę
+        <h4 style="color: #3e4a3d; margin-bottom: 15px;"><i class="ra ra-parchment"></i> Funkcja wstrzymana</h4>
+        <p style="font-size: 0.95rem; color: #5a4f41;">Aby aplikacja mogła być dostępna za darmo i działać błyskawicznie, przeszliśmy na wersję statyczną. Moduł logowania i komentarzy jest obecnie wyłączony.</p>
+        <a href="https://buycoffee.to/miguana" target="_blank" class="btn mt-3 fw-bold" style="background-color: #3a2b21; border: 1px solid #5a4b3a; color: #d1b880; padding: 8px 16px; font-size: 0.9rem;">
+            <i class="ra ra-beer"></i> Postaw Kufel Kawy
         </a>
     </div>
 </div>
 
-<script>
-    const frozenElements = document.querySelectorAll('.frozen-feature');
-    const modal = document.getElementById('frozenModal'); // Jeśli nie ma HTMLa wyżej, to tutaj wyskakuje Twój błąd (null)
+<div class="astro-item" style="margin-right:0;">
+    <i class="ra ra-trefoil"></i>
+    <div>
+        <span class="astro-label">Koło Roku:</span>
+        <span class="astro-value"
+              data-bs-toggle="tooltip"
+              data-bs-html="true"
+              title="<b>Stary Czas:</b> Równonoc Jesienna. Czas bilansu, dziękczynienia i przygotowania do zimy.<br><b>Symbol:</b> Jabłka, jarzębina, róg obfitości<br><b>Tradycja:</b> Zbiór korzeni, robienie zapasów i win, dziękowanie za plony.">
+            Dożynki (Mabon)
+        </span>
+    </div>
+</div>
 
-    frozenElements.forEach(el => {
-        el.addEventListener('click', function(e) {
-            e.preventDefault();
-            if(modal) { // Zabezpieczenie, żeby skrypt nie "wybuchał"
-                modal.style.display = "block";
-            } else {
-                console.error("Nie znaleziono okienka frozenModal w kodzie HTML!");
+<script>
+    function setupInfiniteScroller(wrapperId, speed) {
+        const wrapper = document.getElementById(wrapperId);
+        if (!wrapper) return;
+        const content = wrapper.querySelector('.scrollable-content');
+
+        // Duplikujemy zawartość dla pętli
+        content.innerHTML += content.innerHTML;
+
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+        let currentScroll = 0;
+        const halfWidth = wrapper.scrollWidth / 2; // Obliczamy raz (wydajność!)
+
+        function autoScroll() {
+            if (!isDown) {
+                currentScroll += speed;
+                if (currentScroll >= halfWidth) {
+                    currentScroll = 0;
+                }
+                wrapper.scrollLeft = currentScroll;
             }
+            requestAnimationFrame(autoScroll);
+        }
+        requestAnimationFrame(autoScroll);
+
+        // --- OBSŁUGA MYSZKI I DOTYKU ---
+        function startDrag(pageX) {
+            isDown = true;
+            wrapper.style.cursor = 'grabbing';
+            startX = pageX - wrapper.offsetLeft;
+            scrollLeft = wrapper.scrollLeft;
+        }
+
+        function stopDrag() {
+            if (!isDown) return;
+            isDown = false;
+            wrapper.style.cursor = 'grab';
+            // KLUCZOWA POPRAWKA: Aktualizujemy licznik animacji do miejsca, w którym puściliśmy kursor
+            currentScroll = wrapper.scrollLeft;
+        }
+
+        function doDrag(pageX) {
+            if (!isDown) return;
+            const x = pageX - wrapper.offsetLeft;
+            const walk = (x - startX) * 1.5;
+            wrapper.scrollLeft = scrollLeft - walk;
+        }
+
+        // Mysz
+        wrapper.addEventListener('mousedown', (e) => startDrag(e.pageX));
+        window.addEventListener('mouseup', stopDrag); // window, by łapało puszczenie poza paskiem
+        wrapper.addEventListener('mouseleave', stopDrag);
+        wrapper.addEventListener('mousemove', (e) => {
+            if(!isDown) return;
+            e.preventDefault();
+            doDrag(e.pageX);
         });
+
+        // Telefony (Dotyk)
+        wrapper.addEventListener('touchstart', (e) => startDrag(e.touches[0].pageX), {passive: true});
+        wrapper.addEventListener('touchend', stopDrag, {passive: true});
+        wrapper.addEventListener('touchmove', (e) => doDrag(e.touches[0].pageX), {passive: true});
+    }
+
+    // Odpalamy skrypty dla obu banerów
+    document.addEventListener("DOMContentLoaded", function() {
+
+        // --- NOWOŚĆ: LOSOWANIE KOLEJNOŚCI CIEKAWOSTEK ---
+        const marqueeContent = document.querySelector('#banner-marquee .scrollable-content');
+        if (marqueeContent) {
+            const items = Array.from(marqueeContent.children);
+            // Algorytm mieszający
+            for (let i = items.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                marqueeContent.appendChild(items[j]);
+            }
+        }
+        // ----------------------------------------------
+
+        // Górny pasek z ikonami - porusza się niesamowicie powoli i majestatycznie
+        setupInfiniteScroller('banner-astro', 0.2);
+
+        // Pasek z Ciekawostkami - porusza się ciut szybciej
+        setupInfiniteScroller('banner-marquee', 0.6);
     });
 
+    // --- OBSŁUGA MODALU ---
+    const modal = document.getElementById('frozenModal');
+    document.querySelectorAll('.frozen-feature').forEach(el => {
+        el.addEventListener('click', function(e) {
+            e.preventDefault();
+            if(modal) modal.style.display = "block";
+        });
+    });
     function closeFrozenModal() {
         if(modal) modal.style.display = "none";
     }
-
     window.onclick = function(event) {
-        if (event.target == modal) {
-            closeFrozenModal();
-        }
+        if (event.target == modal) closeFrozenModal();
     }
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+window.renderFavoritesDropdown = function() {
+    const menu = document.getElementById('favoritesDropdownMenu');
+    if (!menu) return;
+
+    const favPlants = JSON.parse(localStorage.getItem("herbariumFavorites")) || [];
+    const favRecipes = JSON.parse(localStorage.getItem("recipeFavorites")) || [];
+
+    if (menu.classList.contains('show')) return;
+
+    // Funkcja pomocnicza do tworzenia slugów (taka sama jak w Pythonie)
+    const slugify = (text) => {
+        const accents = {'ą':'a','ć':'c','ę':'e','ł':'l','ń':'n','ó':'o','ś':'s','ź':'z','ż':'z'};
+        return text.toLowerCase()
+            .replace(/[ąćęłńóśźż]/g, match => accents[match])
+            .replace(/\s+/g, '_')
+            .replace(/[^\w\-]+/g, '')
+            .replace(/\-\-+/g, '_');
+    };
+
+    let html = '';
+    if (favPlants.length === 0 && favRecipes.length === 0) {
+        html = '<li><span class="dropdown-item text-muted">Twój zielnik jest pusty.</span></li>';
+    } else {
+        if (favPlants.length > 0) {
+            html += '<li><h6 class="dropdown-header"><i class="ra ra-leaf"></i> Twoje Zioła</h6></li>';
+            favPlants.forEach(p => {
+                // ZMIANA: Link prowadzi teraz bezpośrednio do strony rośliny
+                const slug = slugify(p);
+                html += `<li><a class="dropdown-item" href="/plant/${slug}/">${p}</a></li>`;
+            });
+        }
+        if (favRecipes.length > 0) {
+            if (favPlants.length > 0) html += '<li><hr class="dropdown-divider"></li>';
+            html += '<li><h6 class="dropdown-header"><i class="ra ra-cauldron"></i> Twoje Receptury</h6></li>';
+            favRecipes.forEach(r => {
+                // Przepisy nadal szukamy przez parametr, bo nie mają własnych podstron
+                html += `<li><a class="dropdown-item" href="/przepisy/?q=${encodeURIComponent(r)}">${r}</a></li>`;
+            });
+        }
+    }
+    menu.innerHTML = html;
+};
+
+// Funkcja pomocnicza do odświeżania z innych plików
+window.refreshGlobalFavorites = function() {
+    window.renderFavoritesDropdown();
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Pierwsze renderowanie
+    window.renderFavoritesDropdown();
+
+    // Obsługa rozwijania menu przez Bootstrapa
+    const dropdownBtn = document.querySelector('.dropdown-toggle');
+    if (dropdownBtn) {
+        // Inicjalizacja instancji dropdown
+        const bsDropdown = new bootstrap.Dropdown(dropdownBtn);
+
+        // Odświeżaj listę tuż przed każdym pokazaniem
+        dropdownBtn.addEventListener('show.bs.dropdown', () => {
+            window.renderFavoritesDropdown();
+        });
+    }
+
+    // Sortowanie (jeśli funkcja istnieje w recipes.js)
+    if (typeof sortResultsByFavorites === 'function') {
+        setTimeout(sortResultsByFavorites, 150);
+    }
+});
+</script>
+
+<!-- Lokalizacja (z adresu IP, bez pytania o zgodę) i pogoda na żywo; GPS tylko po kliknięciu celownika -->
+<script src="/static/js/geo_weather.js"></script>
+<script src="/static/js/magic_lens.js"></script>
+
 
 </body>
 </html>

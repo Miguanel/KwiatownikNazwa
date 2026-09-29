@@ -7,58 +7,205 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rpg-awesome/0.2.0/css/rpg-awesome.min.css">
     <link rel="stylesheet" href="/static/style.css">
     <style>
-        body { font-family: 'Crimson Text', serif; background-color: #f4f1ea; color: #2c2c2c; margin: 0; }
-        nav { background-color: #3e4a3d; color: white; padding: 1rem; display: flex; justify-content: space-between; }
-        nav a { color: white; text-decoration: none; margin: 0 10px; }
-        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        .flash { padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 4px; }
-        .flash-success { background-color: #d4edda; color: #155724; }
-        .flash-danger { background-color: #f8d7da; color: #721c24; }
-        footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #666; }
-    </style>
-    <style>
-        /* Nadpisanie Bootstrapa, żeby nie psuł tła i fontów */
-        body {
-            font-family: 'Crimson Text', serif;
-            background-color: #f4f1ea;
-            color: #2c2c2c;
-            margin: 0;
-        }
-        /* Reszta Twoich stylów lokalnych z base.html... */
-        nav { background-color: #3e4a3d; color: white; padding: 1rem; display: flex; justify-content: space-between; }
-        nav a { color: white; text-decoration: none; margin: 0 10px; }
-        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        .flash { padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 4px; }
-        .flash-success { background-color: #d4edda; color: #155724; }
-        .flash-danger { background-color: #f8d7da; color: #721c24; }
-        footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #666; }
+        body { font-family: 'Crimson Text', serif; background-color: #f4f1ea; color: #2c2c2c; margin: 0; padding-top: 110px; }
 
-        /* FIX dla linków w nawigacji (Bootstrap lubi je zmieniać na niebieskie) */
-        nav a { color: white !important; text-decoration: none; }
+        .main-header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+
+        /* --- POPRAWA NAWIGACJI (Oparta na Bootstrapie RWD) --- */
+        nav { background-color: #3e4a3d; border-bottom: 1px solid #5a4f41; padding: 0.5rem 1rem;}
+        /* Używamy standardowych klas navbar z Bootstrapa dla Hamburgera */
+        .navbar-brand, .nav-link { color: white !important; font-weight: bold; font-size: 0.95rem; transition: color 0.3s; }
+        .nav-link:hover, .navbar-brand:hover { color: #d1b880 !important; }
+        .nav-link i, .navbar-brand i { color: #d1b880; margin-right: 5px; font-size: 1.1rem; }
+
+        .navbar-toggler { border-color: rgba(255,255,255,0.5); padding: 4px 8px;}
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        /* Dostosowanie dropdownu Ulubionych do paska nav */
+        #favDropdownBtn { padding-left: 0; padding-right: 0; }
+
+        @media (max-width: 991px) {
+            /* Na mniejszych ekranach linki w menu rozsuwanym mają odstęp i są blokowe */
+            .navbar-nav .nav-item { padding: 8px 0; border-bottom: 1px dashed rgba(255,255,255,0.2); text-align: center;}
+            .navbar-nav .nav-item:last-child { border-bottom: none; }
+            .frozen-feature.d-lg-none { display: block; text-align: center; padding: 10px 0; color: white;}
+            .frozen-feature.d-none.d-lg-block { display: none; } /* Ukrywa 'Komentarze' obok menu na tel */
+
+            /* Zmniejszamy paddingi dla samej nawigacji na mobilkach */
+            nav { padding: 0.5rem; }
+        }
+
+        /* --- WSPÓLNE CECHY PRZEWIJANYCH PASKÓW --- */
+        .scrollable-banner {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            cursor: grab;
+            user-select: none;
+        }
+        .scrollable-banner::-webkit-scrollbar { display: none; }
+        .scrollable-banner:active { cursor: grabbing; }
+        .scrollable-content { display: flex; flex-wrap: nowrap; align-items: center; }
+
+        /* --- 1. PASEK ALMANACHU (ASTRO-RIBBON) --- */
+        .astro-ribbon {
+            background-color: #23201d;
+            border-bottom: 1px solid #8a7a58;
+            color: #d1b880;
+            padding: 6px 10px; /* Lekko zmniejszony padding */
+            font-size: 0.75rem;
+        }
+        .astro-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-right: 25px; /* Trochę mniej odstępu, lepiej dla mniejszych ekranów */
+            flex-shrink: 0; /* ZAPOBIEGA GNIECENIU na małych ekranach */
+        }
+        .astro-item i { font-size: 1.1rem; color: #8a9a5b; }
+        .astro-item div { display: flex; align-items: baseline; gap: 4px; }
+        .astro-label { font-size: 0.65rem; text-transform: uppercase; color: #a89f91; letter-spacing: 0.5px; }
+        .astro-value { font-weight: bold; font-family: 'Georgia', serif; font-size: 0.85rem; }
+
+        /* --- 2. ZŁOTY PASEK CIEKAWOSTEK (MARQUEE) --- */
+        .marquee-wrapper {
+            background-color: #1a1714;
+            color: #8a9a5b;
+            padding: 8px 10px;
+            border-bottom: 2px solid #3a2b21;
+        }
+        .marquee-item {
+            font-size: 0.75rem;
+            font-style: italic;
+            letter-spacing: 0.5px;
+            margin-right: 40px;
+            flex-shrink: 0; /* KLUCZOWE! Zapobiega obcinaniu tekstu */
+        }
+        .marquee-item i { color: #d1b880; margin-right: 5px; }
+
+        @media (max-width: 768px) {
+            body { padding-top: 90px; } /* Mniejszy offset na telefony */
+            .astro-value { font-size: 0.8rem; }
+            .astro-item { margin-right: 15px; }
+            .container { margin: 10px auto; padding: 10px; border-width: 0; box-shadow: none;} /* Usuwa border wokół contentu na mobile, daje więcej miejsca */
+        }
+
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.05); border: 1px solid #e0dcd3; border-radius: 4px; }
+        .flash { padding: 8px 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; font-size: 0.9rem; }
+        .flash-success { background-color: #d4edda; color: #155724; border-color: #c3e6cb; }
+        .flash-danger { background-color: #f8d7da; color: #721c24; border-color: #f5c6cb; }
+        footer { text-align: center; padding: 30px 20px; font-size: 0.8rem; color: #7a6a58; border-top: 1px dashed #dcdcdc; margin-top: 40px; }
+        footer i { color: #8a9a5b; margin-right: 5px; }
+
+        /* MODAL FIX */
+        .frozen-modal-overlay { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(35, 32, 29, 0.8); }
+        .frozen-modal-content { background-color: #f4f1ea; margin: 15% auto; padding: 25px; border: 1px solid #8a7a58; width: 90%; max-width: 400px; position: relative; font-family: 'Crimson Text', serif; text-align: center; border-radius: 4px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); }
+        .frozen-modal-close { position: absolute; right: 15px; top: 10px; font-size: 24px; cursor: pointer; color: #5a4f41; transition: color 0.2s; }
+        .frozen-modal-close:hover { color: #9b4b4b; }
         a { text-decoration: none; color: inherit; }
+
+        /* Stylizacja rozwijanej listy Ulubionych */
+        .dropdown-menu { background-color: #fdfaf0 !important; border: 2px solid #3e4a3d !important; border-radius: 0 !important; box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important; min-width: 250px; }
+        .dropdown-item { color: #3e4a3d !important; font-family: 'Crimson Text', serif; font-size: 1.1rem; padding: 8px 20px; transition: background 0.2s; }
+        .dropdown-item:hover { background-color: #e0dcd3 !important; color: #2d5a27 !important; }
+        .dropdown-header { background-color: #f4f1ea; border-bottom: 1px dashed #d1c7a7; margin-top: 5px; }
+        .dropdown-divider { border-top: 1px solid #d1c7a7 !important; opacity: 1 !important; }
+        #favoritesDropdownMenu .dropdown-item { color: #3e4a3d !important; background-color: transparent !important; }
+        #favoritesDropdownMenu .dropdown-item:hover { background-color: #e0dcd3 !important; color: #2d5a27 !important; }
+        #favoritesDropdownMenu .dropdown-header { color: #8a9a5b !important; font-weight: bold; border-bottom: 1px dashed #d1c7a7; }
     </style>
+
 </head>
 <body>
 
-<nav>
-    <div>
-        <a href="/"><strong>🌿 Kwiatownik</strong></a>
-        <a href="/generator/"><strong>🌿 Generatory</strong></a>
-        <a href="/przepisy/"><strong>🌿 Przepisy</strong></a>
-        <a href="/gildie/"><strong>🌿 Gildie</strong></a>
-        <a href="#" class="frozen-feature">Wszystkie Komentarze</a>
+<header class="main-header">
+    <!-- Navbar zmieniony na strukturę Bootstrap (RWD) -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-0 px-md-2">
+            <!-- Logo widoczne po lewej zawsze -->
+            <a class="navbar-brand" href="/"><i class="ra ra-leaf"></i> Kwiatownik</a>
+
+            <!-- Hamburger na małych ekranach -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kwiatownikNavbar" aria-controls="kwiatownikNavbar" aria-expanded="false" aria-label="Przełącz nawigację">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Część zwijana (linki i przyciski) -->
+            <div class="collapse navbar-collapse justify-content-end" id="kwiatownikNavbar">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="/generator/"><i class="ra ra-flask"></i> Generatory</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/przepisy/"><i class="ra ra-cauldron"></i> Przepisy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/gildie/"><i class="ra ra-pawn"></i> Gildie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/porownaj/"><i class="ra ra-scroll-unfurled"></i> Porównaj</a></li>
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link frozen-feature" href="#"><i class="ra ra-speech-bubble"></i> Komentarze</a></li>
+
+                    <li class="nav-item dropdown px-2">
+                        <button class="nav-link dropdown-toggle" type="button" id="favDropdownBtn" data-bs-toggle="dropdown" aria-expanded="false" style="background: none; border: none; font-weight: bold; font-size: 0.95rem;">
+                            <i class="ra ra-heart"></i> Ulubione
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" id="favoritesDropdownMenu">
+                        </ul>
+                    </li>
+
+                    <!-- Przycisk logowania wewnątrz menu na urządzeniach mobilnych -->
+                    <li class="nav-item d-lg-none mt-2 w-100">
+                         <a href="#" class="nav-link frozen-feature" style="background: #2d5a27; border-radius: 4px; padding: 8px;"><i class="ra ra-player"></i> Logowanie (Wstrzymane)</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Ikonka logowania na desktopie zostaje po prawej stronie (poza hamburgerem) -->
+            <div class="frozen-feature d-none d-lg-block" title="Zablokowane w wersji statycznej" style="margin-left: 15px;">
+                <a class="nav-link" href="#"><i class="ra ra-player"></i> Logowanie</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Reszta bez zmian, poprawki załatwił CSS powyżej -->
+    <div class="astro-ribbon scrollable-banner" id="banner-astro">
+
+        <div class="scrollable-content">
+            <div class="astro-item">
+                <i class="ra ra-compass"></i>
+                <div>
+                    <span class="astro-label">Lokacja:</span>
+                    <span class="astro-value" id="locValue" data-astro="location">Z</span>
+                    <!-- Złota ikonka GPS do kliknięcia -->
+                    <i class="ra ra-target" onclick="forceGPS()" style="cursor: pointer; color: #b8860b; margin-left: 5px; font-size: 0.9rem;" title="Użyj dokładnej lokalizacji GPS (przeglądarka zapyta o zgodę)"></i>
+                </div>
+            </div>
+            <div class="astro-item"><i class="ra ra-sun"></i><div><span class="astro-label">Pogoda:</span><span class="astro-value" data-astro="sky"></span> <span class="astro-value" data-astro="temp">21.5°C</span><span class="astro-label" style="margin-left:4px;">Wilg:</span><span class="astro-value" data-astro="humidity">93%</span></div></div>
+            <div class="astro-item"><i class="ra ra-moon-sun"></i><div><span class="astro-label">Księżyc:</span><span class="astro-value" data-astro="moon">Księżyc Ubywający</span></div></div>
+            <div class="astro-item"><i class="ra ra-fire"></i><div><span class="astro-label">Żywioł:</span><span class="astro-value">Ogień</span></div></div>
+            <div class="astro-item"><i class="ra ra-crystal-ball"></i><div><span class="astro-label">Wibracja:</span><span class="astro-value" data-astro="numerology">3</span></div></div>
+            <div class="astro-item"><i class="ra ra-dragon"></i><div><span class="astro-label">Patron Roku:</span><span class="astro-value" data-astro="japanese">Koń</span></div></div>
+            <div class="astro-item" style="margin-right:0;"><i class="ra ra-trefoil"></i><div><span class="astro-label">Koło Roku:</span><span class="astro-value">Dożynki (Mabon)</span></div></div>
+        </div>
     </div>
-    <div class="frozen-feature" title="Logowanie wyłączone w wersji statycznej">
-        <a href="#">Logowanie</a>
-        <a href="#">Rejestracja</a>
+
+    <div class="marquee-wrapper scrollable-banner" id="banner-marquee">
+        <div class="scrollable-content">
+            
+                <span class="marquee-item"><i class="ra ra-scroll-unfurled"></i> <strong>Ciekawostka:</strong> Dąb szypułkowy ściąga najwięcej piorunów ze wszystkich drzew w lesie.</span>
+                <span class="marquee-item"><i class="ra ra-scroll-unfurled"></i> <strong>Protip:</strong> Zbiór korzeni mniszka wykonuj przy księżycu ubywającym.</span>
+                <span class="marquee-item"><i class="ra ra-scroll-unfurled"></i> <strong>Wiedza:</strong> Syrop z pędów sosny działa wykrztuśnie.</span>
+            
+        </div>
     </div>
-</nav>
+</header>
 
 <div class="container">
     
-      
+        
     
 
     
@@ -296,6 +443,8 @@
                 
                     <option value="&#39;czerwonego">
                 
+                    <option value="&#39;czyszczące">
+                
                     <option value="(akwaretyczne">
                 
                     <option value="(antyneuralgiczne)">
@@ -341,6 +490,8 @@
                     <option value="(płukania)">
                 
                     <option value="(rekonwalescencja).">
+                
+                    <option value="(rozkurczowe).">
                 
                     <option value="(rozrzedza">
                 
@@ -434,6 +585,12 @@
                 
                     <option value="bardziej">
                 
+                    <option value="bardzo">
+                
+                    <option value="barwierskie">
+                
+                    <option value="barwiące">
+                
                     <option value="bezpiecznymi.">
                 
                     <option value="biegunek.">
@@ -469,6 +626,8 @@
                     <option value="chorobach">
                 
                     <option value="chorobie">
+                
+                    <option value="chłodzące">
                 
                     <option value="chłonne)">
                 
@@ -547,6 +706,8 @@
                     <option value="garbniki).">
                 
                     <option value="garbniki;">
+                
+                    <option value="garbnikowe">
                 
                     <option value="garbnikowy.">
                 
@@ -662,6 +823,8 @@
                 
                     <option value="krew">
                 
+                    <option value="krew&#39;">
+                
                     <option value="krew).">
                 
                     <option value="krew.">
@@ -724,9 +887,13 @@
                 
                     <option value="ludowej).">
                 
+                    <option value="macica)">
+                
                     <option value="macicy">
                 
                     <option value="macicy)">
+                
+                    <option value="marginalne.">
                 
                     <option value="materii">
                 
@@ -802,6 +969,8 @@
                 
                     <option value="napotne">
                 
+                    <option value="napotne.">
+                
                     <option value="napotne;">
                 
                     <option value="naprzemienne">
@@ -821,6 +990,8 @@
                     <option value="nerkowej).">
                 
                     <option value="neuroprotekcyjne.">
+                
+                    <option value="niebiesko">
                 
                     <option value="obniżają">
                 
@@ -884,6 +1055,8 @@
                 
                     <option value="organizm">
                 
+                    <option value="organizmu.">
+                
                     <option value="orzeszki">
                 
                     <option value="osłaniające">
@@ -903,6 +1076,8 @@
                     <option value="ośrodek">
                 
                     <option value="pasożyty">
+                
+                    <option value="paszowe.">
                 
                     <option value="paznokci.">
                 
@@ -1002,6 +1177,8 @@
                 
                     <option value="przeciwkrwotoczne">
                 
+                    <option value="przeciwkrwotoczne.">
+                
                     <option value="przeciwmiażdżycowe.">
                 
                     <option value="przeciwmiażdżycowo">
@@ -1086,15 +1263,21 @@
                 
                     <option value="remineralizujące">
                 
+                    <option value="remineralizujące.">
+                
                     <option value="reumatyzmie">
                 
                     <option value="rozgrzewające">
+                
+                    <option value="rozkurczające">
                 
                     <option value="rozkurczowe">
                 
                     <option value="rozkurczowe.">
                 
                     <option value="rozkładowi">
+                
+                    <option value="rozpuszczające">
                 
                     <option value="rozszerzają">
                 
@@ -1146,6 +1329,10 @@
                 
                     <option value="soków">
                 
+                    <option value="spazmolityczne">
+                
+                    <option value="spazmolityczne.">
+                
                     <option value="specyficzne">
                 
                     <option value="spojówek).">
@@ -1190,6 +1377,8 @@
                 
                     <option value="syropach">
                 
+                    <option value="słabe">
+                
                     <option value="służą">
                 
                     <option value="tamujące">
@@ -1197,6 +1386,8 @@
                     <option value="tasiemce)">
                 
                     <option value="temperaturę)">
+                
+                    <option value="terapeutyczne">
                 
                     <option value="tkankę">
                 
@@ -1221,6 +1412,8 @@
                     <option value="trądzikowej.">
                 
                     <option value="tłustej">
+                
+                    <option value="ugotowaniu.">
                 
                     <option value="ukąszenia">
                 
@@ -1386,7 +1579,11 @@
                 
                     <option value="zwyrodnieniowej">
                 
+                    <option value="złogi">
+                
                     <option value="łagodnie">
+                
+                    <option value="łagodzące">
                 
                     <option value="łodygi">
                 
@@ -1455,7 +1652,7 @@
 
         <div class="row g-3">
             <div class="col-md-12">
-                <label><strong>Wybierz Gatunek Rośliny:</strong> <span id="plantCountBadge" class="badge bg-secondary">57 dostępnych</span></label>
+                <label><strong>Wybierz Gatunek Rośliny:</strong> <span id="plantCountBadge" class="badge bg-secondary">68 dostępnych</span></label>
                 <select id="plantSelector" class="retro-select">
                     <option value="" disabled selected>-- Kliknij, aby wybrać roślinę z listy --</option>
                     
@@ -1475,6 +1672,12 @@
                                 data-parts='{"liscie": {"ingr": "Neomirtilina (tzw. ro\u015blinna insulina - obni\u017ca poziom cukru), Arbutyna (odka\u017ca drogi moczowe), Garbniki, Flawonoidy", "props": "Przeciwcukrzycowe, moczop\u0119dne, przeciwzapalne w obr\u0119bie p\u0119cherza.", "warn": "D\u0142ugotrwa\u0142e stosowanie wysokich dawek li\u015bci mo\u017ce powodowa\u0107 anemi\u0119 (ze wzgl\u0119du na garbniki)."}, "owoce": {"ingr": "Antocyjany (mirtilina - wzmacnia naczynia i wzrok), Garbniki (do 7% w \u015bwie\u017cych, wi\u0119cej w suszonych), Pektyny, Witaminy (C, B1, B2, PP, A), Kwasy organiczne", "props": "\u015awie\u017ce: lekko przeczyszczaj\u0105ce i witaminizuj\u0105ce. Suszone: silnie przeciwbiegunkowe, odka\u017caj\u0105ce jelita, poprawiaj\u0105ce mikrokr\u0105\u017cenie w siatk\u00f3wce oka.", "warn": "Nale\u017cy dok\u0142adnie my\u0107 jagody le\u015bne (ryzyko b\u0105blowicy!)."}}'
                                 data-warnings="Zawsze myj owoce leśne przed spożyciem ze względu na ryzyko zakażenia bąblowicą (Echinokokoza). Osoby z chorobą wrzodową żołądka powinny unikać świeżych jagód w dużych ilościach.">
                             Borówka czarna (Jagoda)
+                        </option>
+                    
+                        <option value="Brodawnik zwyczajny"
+                                data-parts='{"ziele": {"ingr": "Flawonoidy, B\u0142onnik", "props": "Bardzo s\u0142abe dzia\u0142anie terapeutyczne, g\u0142\u00f3wnie paszowe.", "warn": "Brak."}}'
+                                data-warnings="Brak.">
+                            Brodawnik zwyczajny
                         </option>
                     
                         <option value="Brzoza brodawkowata"
@@ -1517,6 +1720,12 @@
                                 data-parts='{"cebule": {"ingr": "", "props": "Dzia\u0142anie analogiczne do li\u015bci, ale bardziej skoncentrowane. W Polsce ich pozyskiwanie ze stanu dzikiego jest zabronione.", "warn": "RO\u015aLINA POD OCHRON\u0104 CZ\u0118\u015aCIOW\u0104 \u2013 pozyskuj tylko z legalnych \u017ar\u00f3de\u0142 lub uprawy. Bezwzgl\u0119dnie sprawd\u017a zapach ka\u017cdego li\u015bcia, by wykluczy\u0107 pomy\u0142k\u0119 z truj\u0105c\u0105 konwali\u0105! Nie stosowa\u0107 przy chorobie wrzodowej \u017co\u0142\u0105dka."}, "liscie": {"ingr": "Allicyna i ajoen (silne zwi\u0105zki siarki), Winyloditiiny, Witaminy (A, C, E), Minera\u0142y (selen, mangan, \u017celazo, magnez), Saponiny, Adenozyna (rozrzedza krew)", "props": "Silnie bakteriob\u00f3jcze, przeciwgrzybicze, obni\u017caj\u0105ce ci\u015bnienie krwi, przeciwzakrzepowe, pobudzaj\u0105ce trawienie, odtruwaj\u0105ce z metali ci\u0119\u017ckich.", "warn": "Li\u015bcie trac\u0105 90% w\u0142a\u015bciwo\u015bci po wysuszeniu. Nale\u017cy je stosowa\u0107 \u015bwie\u017ce, mrozi\u0107 lub konserwowa\u0107 w oleju/alkoholu."}}'
                                 data-warnings="ROŚLINA POD OCHRONĄ CZĘŚCIOWĄ – pozyskuj tylko z legalnych źródeł lub uprawy. Bezwzględnie sprawdź zapach każdego liścia, by wykluczyć pomyłkę z trującą konwalią! Nie stosować przy chorobie wrzodowej żołądka.">
                             Czosnek niedźwiedzi
+                        </option>
+                    
+                        <option value="Dziewanna drobnokwiatowa"
+                                data-parts='{"kwiaty": {"ingr": "\u015aluzy ro\u015blinne (do 3%), Saponiny triterpenowe, Flawonoidy, Karotenoidy, Irydoidy", "props": "Powlekaj\u0105ce, wykrztu\u015bne, przeciwzapalne, spazmolityczne (rozkurczowe).", "warn": "Suszy\u0107 bardzo szybko w zacienionym, przewiewnym miejscu. Zbr\u0105zowia\u0142e kwiaty trac\u0105 w\u0142a\u015bciwo\u015bci lecznicze."}, "liscie": {"ingr": "Garbnik, \u015aluzy, Zwi\u0105zki gorzkie", "props": "\u015aci\u0105gaj\u0105ce, \u0142agodz\u0105ce rany, napotne.", "warn": "Zewn\u0119trzne w\u0142oski mog\u0105 podra\u017cnia\u0107 sk\u00f3r\u0119 u os\u00f3b bardzo wra\u017cliwych."}}'
+                                data-warnings="Wszystkie nadziemne części dziewanny pokryte są charakterystycznym kutnerem (drobnymi, sztywnymi włoskami). Włoski te, w przypadku dostania się do przewodu pokarmowego, mogą silnie podrażniać błony śluzowe gardła, przełyku i żołądka. Z tego powodu **każdy płynny preparat domowy (napar, odwar, olej, nalewkę) z dziewanny należy wyjątkowo starannie filtrować** – najlepiej przez papierowy filtr do kawy lub kilkukrotnie złożoną, gęstą gazę.">
+                            Dziewanna drobnokwiatowa
                         </option>
                     
                         <option value="Dzika róża"
@@ -1573,6 +1782,12 @@
                             Głóg jednoszyjkowy
                         </option>
                     
+                        <option value="Indygowiec barwierski"
+                                data-parts='{"li\u015bcie": {"ingr": "", "props": "barwi\u0105ce na niebiesko, odka\u017caj\u0105ce, ch\u0142odz\u0105ce", "warn": ""}}'
+                                data-warnings="">
+                            Indygowiec barwierski
+                        </option>
+                    
                         <option value="Jarząb pospolity (Jarzębina)"
                                 data-parts='{"kwiaty": {"ingr": "", "props": "\u0141agodnie moczop\u0119dne i rozkurczowe, stosowane rzadziej ni\u017c owoce.", "warn": "NIGDY nie jedz du\u017cej ilo\u015bci surowych owoc\u00f3w jarz\u0119biny! Kwas parasorbowy mo\u017ce wywo\u0142a\u0107 silne zatrucie. Osoby z ci\u0119\u017ckimi chorobami nerek powinny skonsultowa\u0107 si\u0119 z lekarzem."}, "owoce": {"ingr": "Witamina C (por\u00f3wnywalnie do cytrus\u00f3w), Karotenoidy (prowitamina A), Sorbitol (naturalny s\u0142odzik bezpieczny dla diabetyk\u00f3w), Kwasy organiczne (jab\u0142kowy, winowy), Garbniki, Pektyny", "props": "Moczop\u0119dne, przeciwzapalne w obr\u0119bie jelit i dr\u00f3g moczowych, lekko przeczyszczaj\u0105ce, witaminizuj\u0105ce, przeciwmia\u017cd\u017cycowe.", "warn": "Zawsze poddawa\u0107 obr\u00f3bce termicznej lub przemro\u017ceniu \u2013 to neutralizuje toksyczny kwas parasorbowy."}}'
                                 data-warnings="NIGDY nie jedz dużej ilości surowych owoców jarzębiny! Kwas parasorbowy może wywołać silne zatrucie. Osoby z ciężkimi chorobami nerek powinny skonsultować się z lekarzem.">
@@ -1583,6 +1798,18 @@
                                 data-parts='{"kwiaty": {"ingr": "Irydoidy (m.in. lamalbina), Flawonoidy (kwercetyna, izokwercytryna), \u015aluzy (wysoka zawarto\u015b\u0107), Saponiny, Olejek eteryczny, Garbniki", "props": "Przeciwzapalne, hamuj\u0105ce drobne krwawienia, wykrztu\u015bne, os\u0142onowe na drogi oddechowe i uk\u0142ad pokarmowy, reguluj\u0105ce cykl miesi\u0105czkowy.", "warn": "Surowiec bardzo delikatny \u2013 suszy\u0107 w cieniu, by kwiaty nie \u015bciemnia\u0142y."}, "ziele": {"ingr": "Garbniki, Sole mineralne, \u015aluzy, Flawonoidy", "props": "Oczyszczaj\u0105ce krew, lekko moczop\u0119dne, \u015bci\u0105gaj\u0105ce przy biegunkach i problemach sk\u00f3rnych.", "warn": "Jasnota bia\u0142a jest bezpieczna, ale przy problemach z krzepliwo\u015bci\u0105 krwi (powa\u017cne stany) warto skonsultowa\u0107 si\u0119 z lekarzem ze wzgl\u0119du na obecno\u015b\u0107 irydoid\u00f3w. Nie zbiera\u0107 ro\u015blin z miejsc zanieczyszczonych (przy drogach)."}}'
                                 data-warnings="Jasnota biała jest bezpieczna, ale przy problemach z krzepliwością krwi (poważne stany) warto skonsultować się z lekarzem ze względu na obecność irydoidów. Nie zbierać roślin z miejsc zanieczyszczonych (przy drogach).">
                             Jasnota biała
+                        </option>
+                    
+                        <option value="Jasnota purpurowa"
+                                data-parts='{"ziele": {"ingr": "Irydoidy (laminozyd, kariozyd), Flawonoidy (rutyna, kwercetyna), Kwasy fenolowe, Olejek eteryczny, \u017belazo, wap\u0144 i witamina C", "props": "Silnie przeciwzapalne, przeciwbakteryjne, uszczelniaj\u0105ce naczynia krwiono\u015bne, rozkurczowe i przeciwkrwotoczne.", "warn": "Spo\u017cycie bardzo du\u017cej ilo\u015bci surowego ziela mo\u017ce spowodowa\u0107 lekkie rozwolnienie."}}'
+                                data-warnings="Pomimo braku toksyczności, spożycie surowego ziela w wyjątkowo dużych ilościach może spowodować lekkie rozwolnienie z uwagi na wysoką zawartość błonnika i delikatnych saponin. Należy uważać przy wczesnowiosennym zbiorze, by nie pomylić jej z innymi chwastami bez uprzedniego rozpoznania kwadratowej łodygi i zapachu.">
+                            Jasnota purpurowa
+                        </option>
+                    
+                        <option value="Jastrzębiec kosmaczek"
+                                data-parts='{"ziele": {"ingr": "Kumaryny (umbeliferon), Flawonoidy (luteolina), Kwasy fenolowe (kwas kawowy), Garbniki", "props": "Moczop\u0119dne, wykrztu\u015bne, przeciwzapalne, spazmolityczne.", "warn": "Nie stosowa\u0107 u kobiet w ci\u0105\u017cy i karmi\u0105cych."}}'
+                                data-warnings="Unikać w przypadku ciąży i karmienia piersią. Skonsultować z lekarzem przy ciężkich schorzeniach nerek.">
+                            Jastrzębiec kosmaczek
                         </option>
                     
                         <option value="Jałowiec pospolity"
@@ -1651,16 +1878,34 @@
                             Malina właściwa
                         </option>
                     
-                        <option value="Marzanka wonna (Przytulia wonna)"
-                                data-parts='{"ziele": {"ingr": "Glikozydy kumarynowe (asperulozyd), Flawonoidy, Garbniki, Gorycze, Kwasy organiczne", "props": "Uspokajaj\u0105ce, przeciwskurczowe, poprawiaj\u0105ce kr\u0105\u017cenie \u017cylne, moczop\u0119dne.", "warn": "Zawiera kumaryn\u0119. Przedawkowanie mo\u017ce prowadzi\u0107 do silnych b\u00f3l\u00f3w g\u0142owy i nudno\u015bci."}}'
-                                data-warnings="Bezwzględnie unikać w ciąży. Kumaryna w dużych dawkach działa toksycznie na wątrobę.">
-                            Marzanka wonna (Przytulia wonna)
+                        <option value="Marzanna barwierska"
+                                data-parts='{"korze\u0144": {"ingr": "", "props": "silnie barwi\u0105ce, moczop\u0119dne, rozpuszczaj\u0105ce z\u0142ogi", "warn": ""}}'
+                                data-warnings="">
+                            Marzanna barwierska
+                        </option>
+                    
+                        <option value="Mlecz polny"
+                                data-parts='{"liscie": {"ingr": "W\u0119glowodany, Witamina C, Gorycze", "props": "Lekko moczop\u0119dne, od\u017cywcze po ugotowaniu.", "warn": "Starsze li\u015bcie mog\u0105 by\u0107 zbyt gorzkie i twarde do spo\u017cycia."}}'
+                                data-warnings="Brak istotnych przeciwwskazań, roślina bezpieczna.">
+                            Mlecz polny
+                        </option>
+                    
+                        <option value="Mlecz zwyczajny"
+                                data-parts='{"liscie": {"ingr": "Wap\u0144, \u017belazo, Witamina A i C, Zwi\u0105zki \u015bluzowe", "props": "Lekko przeczyszczaj\u0105ce, silnie od\u017cywcze, remineralizuj\u0105ce.", "warn": "Brak."}}'
+                                data-warnings="Brak szczególnych ostrzeżeń.">
+                            Mlecz zwyczajny
                         </option>
                     
                         <option value="Mniszek lekarski"
                                 data-parts='{"korzen": {"ingr": "Inulina (nawet do 40% jesieni\u0105 - naturalny prebiotyk), Fitosterole (taraksasterol), Gorycze, Garbniki, Kwasy fenolowe", "props": "\u017b\u00f3\u0142ciop\u0119dne i \u017c\u00f3\u0142ciotw\u00f3rcze, ochronne dla mi\u0105\u017cszu w\u0105troby, obni\u017caj\u0105ce poziom cukru i cholesterolu we krwi, prebiotyczne.", "warn": "Nie stosowa\u0107 przy niedro\u017cno\u015bci dr\u00f3g \u017c\u00f3\u0142ciowych."}, "kwiaty": {"ingr": "Luteina, Flawonoidy, Olejek eteryczny, Py\u0142ek kwiatowy", "props": "Leczniczo stosowane g\u0142\u00f3wnie w syropach na kaszel (dzia\u0142anie powlekaj\u0105ce) oraz jako \u015brodek poprawiaj\u0105cy odporno\u015b\u0107.", "warn": "Przeciwwskazany w niedro\u017cno\u015bci dr\u00f3g \u017c\u00f3\u0142ciowych, ropniaku p\u0119cherzyka \u017c\u00f3\u0142ciowego oraz przy niedro\u017cno\u015bci jelit. Mo\u017ce nasila\u0107 dolegliwo\u015bci przy chorobie wrzodowej \u017co\u0142\u0105dka (zwi\u0119ksza wydzielanie kwasu)."}, "liscie": {"ingr": "Flawonoidy, Potas (bardzo wysokie st\u0119\u017cenie), Gorycze (taraksacyna), Witaminy A, C, K, Krzemionka", "props": "Silnie moczop\u0119dne (bez wyp\u0142ukiwania potasu, bo same go dostarczaj\u0105), oczyszczaj\u0105ce drogi moczowe, wspomagaj\u0105ce trawienie.", "warn": "Brak przy zachowaniu dawek terapeutycznych."}}'
                                 data-warnings="Przeciwwskazany w niedrożności dróg żółciowych, ropniaku pęcherzyka żółciowego oraz przy niedrożności jelit. Może nasilać dolegliwości przy chorobie wrzodowej żołądka (zwiększa wydzielanie kwasu).">
                             Mniszek lekarski
+                        </option>
+                    
+                        <option value="Modrzejec kampechiański (Logwood)"
+                                data-parts='{"drewno": {"ingr": "", "props": "garbnikowe, antyseptyczne, barwierskie", "warn": ""}}'
+                                data-warnings="">
+                            Modrzejec kampechiański (Logwood)
                         </option>
                     
                         <option value="Modrzew europejski"
@@ -1721,6 +1966,24 @@
                                 data-parts='{"nasiona": {"ingr": "", "props": "Po upra\u017ceniu s\u0142u\u017c\u0105 jako substytut kawy (zawieraj\u0105 \u015bladowe ilo\u015bci kofeiny).", "warn": "Przytulia jest bardzo bezpieczna, jednak jej silne dzia\u0142anie moczop\u0119dne mo\u017ce u niekt\u00f3rych os\u00f3b powodowa\u0107 przej\u015bciow\u0105 sucho\u015b\u0107 w ustach. Zawsze pij dodatkow\u0105 szklank\u0119 wody podczas kuracji."}, "ziele": {"ingr": "Irydoidy (m.in. asperulozyd - dzia\u0142anie przeciwzapalne), Flawonoidy (kwercetyna), Garbniki, Kwasy polifenolowe, Krzemionka, Kumaryny, Enzymy (podpuszczka ro\u015blinna)", "props": "Limfatyczne (udra\u017cnia w\u0119z\u0142y ch\u0142onne), moczop\u0119dne, przeciwzapalne, \u015bci\u0105gaj\u0105ce, oczyszczaj\u0105ce krew, przeciwnowotworowe (w medycynie ludowej).", "warn": "Najlepiej dzia\u0142a jako \u015bwie\u017cy sok lub macerat na zimno; suszenie os\u0142abia jej moc enzymatyczn\u0105."}}'
                                 data-warnings="Przytulia jest bardzo bezpieczna, jednak jej silne działanie moczopędne może u niektórych osób powodować przejściową suchość w ustach. Zawsze pij dodatkową szklankę wody podczas kuracji.">
                             Przytulia czepna
+                        </option>
+                    
+                        <option value="Przytulia pospolita"
+                                data-parts='{"ziele": {"ingr": "Irydoidy (m.in. asperulozyd), Flawonoidy (rutyna, kwercetyna), Saponiny, Krzemionka, Kwasy polifenolowe, Enzymy podpuszczkowe", "props": "Silnie moczop\u0119dne, \u0027czyszcz\u0105ce krew\u0027, przeciwzapalne na sk\u00f3r\u0119 i b\u0142ony \u015bluzowe, rozkurczowe. Wspomaga usuwanie kwasu moczowego z organizmu.", "warn": "Ziele szybko czernieje przy nieodpowiednim, zbyt wolnym suszeniu. Zbiera\u0107 wy\u0142\u0105cznie z teren\u00f3w czystych ekologicznie (ro\u015blina ta \u0142atwo wi\u0105\u017ce toksyny ze spalin drogowych)."}}'
+                                data-warnings="Roślina uchodzi za wyjątkowo bezpieczną. Należy zachować ostrożność i umiar w przypadku współistnienia chorób wymagających leczenia silnymi lekami diuretycznymi, aby nie obciążyć zbytnio nerek. Zawsze zbieraj surowiec z miejsc odległych od dróg asfaltowych.">
+                            Przytulia pospolita
+                        </option>
+                    
+                        <option value="Przytulia wonna (Marzanka wonna)"
+                                data-parts='{"ziele": {"ingr": "Glikozydy kumarynowe (m.in. melilotozyd i asperulozyd, kt\u00f3re podczas schni\u0119cia rozpadaj\u0105 si\u0119 na pachn\u0105c\u0105 kumaryn\u0119), Irydoidy, Garbniki, Flawonoidy, Kwasy organiczne, Witamina C", "props": "Rozkurczaj\u0105ce na mi\u0119\u015bnie g\u0142adkie (uk\u0142ad pokarmowy, drogi moczowe, macica), \u0142agodnie uspokajaj\u0105ce, u\u0142atwiaj\u0105ce zasypianie, poprawiaj\u0105ce kr\u0105\u017cenie \u017cylne, antyseptyczne i przeciwzapalne.", "warn": "Suszy\u0107 bardzo ostro\u017cnie! Je\u015bli ziele zbr\u0105zowieje lub sple\u015bnieje podczas powolnego suszenia, powstaje dikumarol \u2013 substancja toksyczna i silnie przeciwzakrzepowa. Zbyt du\u017ce dawki (bogate w czyst\u0105 kumaryn\u0119) powoduj\u0105 silne b\u00f3le g\u0142owy, nudno\u015bci, wymioty, a przy d\u0142ugim stosowaniu mog\u0105 uszkadza\u0107 w\u0105trob\u0119."}}'
+                                data-warnings="Bezwzględnie unikać podawania dzieciom oraz kobietom w ciąży. Ze względu na specyficzne działanie kumaryny, roślina w większych ilościach jest hepatotoksyczna (obciąża wątrobę). Suszyć bardzo ostrożnie, w suchych i przewiewnych miejscach – pleśniejąca marzanka tworzy niebezpieczny dla krzepnięcia krwi dikumarol.">
+                            Przytulia wonna (Marzanka wonna)
+                        </option>
+                    
+                        <option value="Pępawa dachowa"
+                                data-parts='{"ziele": {"ingr": "Gorycze, W\u0119glowodany z\u0142o\u017cone", "props": "Marginalne.", "warn": "Brak."}}'
+                                data-warnings="Chwast rolniczy, bezpieczny w kontakcie.">
+                            Pępawa dachowa
                         </option>
                     
                         <option value="Rokitnik zwyczajny"
@@ -2248,52 +2511,215 @@
 </div>
 
 <footer>
-    <p>&copy; 1396 Kwiatownik - Akademicki Projekt Zielnika</p>
+    <p><i class="ra ra-hourglass"></i> ROK 2026 &copy; Kwiatownik - Akademicki Projekt Zielnika</p>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <div id="frozenModal" class="frozen-modal-overlay">
     <div class="frozen-modal-content">
         <span class="frozen-modal-close" onclick="closeFrozenModal()">&times;</span>
-        <h3 style="color: #2d5a27;"><i class="bi bi-info-circle"></i> Funkcja wstrzymana</h3>
-        <p class="mt-3">
-            Aby aplikacja mogła być dostępna za darmo i działać błyskawicznie, przeszliśmy na wersję statyczną.
-            Moduł logowania i komentarzy jest obecnie <strong>wyłączony</strong>.
-        </p>
-        <p>
-            Jeśli projekt Ci się podoba i chcesz wesprzeć jego rozwój, możesz postawić mi wirtualną kawę! 🌱
-        </p>
-        <a href="https://buycoffee.to/miguana" target="_blank" class="btn btn-warning mt-3 fw-bold" style="background-color: #d4a017; border: none; color: white; padding: 10px 20px;">
-            <i class="bi bi-cup-hot"></i> Postaw Kawę
+        <h4 style="color: #3e4a3d; margin-bottom: 15px;"><i class="ra ra-parchment"></i> Funkcja wstrzymana</h4>
+        <p style="font-size: 0.95rem; color: #5a4f41;">Aby aplikacja mogła być dostępna za darmo i działać błyskawicznie, przeszliśmy na wersję statyczną. Moduł logowania i komentarzy jest obecnie wyłączony.</p>
+        <a href="https://buycoffee.to/miguana" target="_blank" class="btn mt-3 fw-bold" style="background-color: #3a2b21; border: 1px solid #5a4b3a; color: #d1b880; padding: 8px 16px; font-size: 0.9rem;">
+            <i class="ra ra-beer"></i> Postaw Kufel Kawy
         </a>
     </div>
 </div>
 
-<script>
-    const frozenElements = document.querySelectorAll('.frozen-feature');
-    const modal = document.getElementById('frozenModal'); // Jeśli nie ma HTMLa wyżej, to tutaj wyskakuje Twój błąd (null)
+<div class="astro-item" style="margin-right:0;">
+    <i class="ra ra-trefoil"></i>
+    <div>
+        <span class="astro-label">Koło Roku:</span>
+        <span class="astro-value"
+              data-bs-toggle="tooltip"
+              data-bs-html="true"
+              title="<b>Stary Czas:</b> Równonoc Jesienna. Czas bilansu, dziękczynienia i przygotowania do zimy.<br><b>Symbol:</b> Jabłka, jarzębina, róg obfitości<br><b>Tradycja:</b> Zbiór korzeni, robienie zapasów i win, dziękowanie za plony.">
+            Dożynki (Mabon)
+        </span>
+    </div>
+</div>
 
-    frozenElements.forEach(el => {
-        el.addEventListener('click', function(e) {
-            e.preventDefault();
-            if(modal) { // Zabezpieczenie, żeby skrypt nie "wybuchał"
-                modal.style.display = "block";
-            } else {
-                console.error("Nie znaleziono okienka frozenModal w kodzie HTML!");
+<script>
+    function setupInfiniteScroller(wrapperId, speed) {
+        const wrapper = document.getElementById(wrapperId);
+        if (!wrapper) return;
+        const content = wrapper.querySelector('.scrollable-content');
+
+        // Duplikujemy zawartość dla pętli
+        content.innerHTML += content.innerHTML;
+
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+        let currentScroll = 0;
+        const halfWidth = wrapper.scrollWidth / 2; // Obliczamy raz (wydajność!)
+
+        function autoScroll() {
+            if (!isDown) {
+                currentScroll += speed;
+                if (currentScroll >= halfWidth) {
+                    currentScroll = 0;
+                }
+                wrapper.scrollLeft = currentScroll;
             }
+            requestAnimationFrame(autoScroll);
+        }
+        requestAnimationFrame(autoScroll);
+
+        // --- OBSŁUGA MYSZKI I DOTYKU ---
+        function startDrag(pageX) {
+            isDown = true;
+            wrapper.style.cursor = 'grabbing';
+            startX = pageX - wrapper.offsetLeft;
+            scrollLeft = wrapper.scrollLeft;
+        }
+
+        function stopDrag() {
+            if (!isDown) return;
+            isDown = false;
+            wrapper.style.cursor = 'grab';
+            // KLUCZOWA POPRAWKA: Aktualizujemy licznik animacji do miejsca, w którym puściliśmy kursor
+            currentScroll = wrapper.scrollLeft;
+        }
+
+        function doDrag(pageX) {
+            if (!isDown) return;
+            const x = pageX - wrapper.offsetLeft;
+            const walk = (x - startX) * 1.5;
+            wrapper.scrollLeft = scrollLeft - walk;
+        }
+
+        // Mysz
+        wrapper.addEventListener('mousedown', (e) => startDrag(e.pageX));
+        window.addEventListener('mouseup', stopDrag); // window, by łapało puszczenie poza paskiem
+        wrapper.addEventListener('mouseleave', stopDrag);
+        wrapper.addEventListener('mousemove', (e) => {
+            if(!isDown) return;
+            e.preventDefault();
+            doDrag(e.pageX);
         });
+
+        // Telefony (Dotyk)
+        wrapper.addEventListener('touchstart', (e) => startDrag(e.touches[0].pageX), {passive: true});
+        wrapper.addEventListener('touchend', stopDrag, {passive: true});
+        wrapper.addEventListener('touchmove', (e) => doDrag(e.touches[0].pageX), {passive: true});
+    }
+
+    // Odpalamy skrypty dla obu banerów
+    document.addEventListener("DOMContentLoaded", function() {
+
+        // --- NOWOŚĆ: LOSOWANIE KOLEJNOŚCI CIEKAWOSTEK ---
+        const marqueeContent = document.querySelector('#banner-marquee .scrollable-content');
+        if (marqueeContent) {
+            const items = Array.from(marqueeContent.children);
+            // Algorytm mieszający
+            for (let i = items.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                marqueeContent.appendChild(items[j]);
+            }
+        }
+        // ----------------------------------------------
+
+        // Górny pasek z ikonami - porusza się niesamowicie powoli i majestatycznie
+        setupInfiniteScroller('banner-astro', 0.2);
+
+        // Pasek z Ciekawostkami - porusza się ciut szybciej
+        setupInfiniteScroller('banner-marquee', 0.6);
     });
 
+    // --- OBSŁUGA MODALU ---
+    const modal = document.getElementById('frozenModal');
+    document.querySelectorAll('.frozen-feature').forEach(el => {
+        el.addEventListener('click', function(e) {
+            e.preventDefault();
+            if(modal) modal.style.display = "block";
+        });
+    });
     function closeFrozenModal() {
         if(modal) modal.style.display = "none";
     }
-
     window.onclick = function(event) {
-        if (event.target == modal) {
-            closeFrozenModal();
-        }
+        if (event.target == modal) closeFrozenModal();
     }
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+window.renderFavoritesDropdown = function() {
+    const menu = document.getElementById('favoritesDropdownMenu');
+    if (!menu) return;
+
+    const favPlants = JSON.parse(localStorage.getItem("herbariumFavorites")) || [];
+    const favRecipes = JSON.parse(localStorage.getItem("recipeFavorites")) || [];
+
+    if (menu.classList.contains('show')) return;
+
+    // Funkcja pomocnicza do tworzenia slugów (taka sama jak w Pythonie)
+    const slugify = (text) => {
+        const accents = {'ą':'a','ć':'c','ę':'e','ł':'l','ń':'n','ó':'o','ś':'s','ź':'z','ż':'z'};
+        return text.toLowerCase()
+            .replace(/[ąćęłńóśźż]/g, match => accents[match])
+            .replace(/\s+/g, '_')
+            .replace(/[^\w\-]+/g, '')
+            .replace(/\-\-+/g, '_');
+    };
+
+    let html = '';
+    if (favPlants.length === 0 && favRecipes.length === 0) {
+        html = '<li><span class="dropdown-item text-muted">Twój zielnik jest pusty.</span></li>';
+    } else {
+        if (favPlants.length > 0) {
+            html += '<li><h6 class="dropdown-header"><i class="ra ra-leaf"></i> Twoje Zioła</h6></li>';
+            favPlants.forEach(p => {
+                // ZMIANA: Link prowadzi teraz bezpośrednio do strony rośliny
+                const slug = slugify(p);
+                html += `<li><a class="dropdown-item" href="/plant/${slug}/">${p}</a></li>`;
+            });
+        }
+        if (favRecipes.length > 0) {
+            if (favPlants.length > 0) html += '<li><hr class="dropdown-divider"></li>';
+            html += '<li><h6 class="dropdown-header"><i class="ra ra-cauldron"></i> Twoje Receptury</h6></li>';
+            favRecipes.forEach(r => {
+                // Przepisy nadal szukamy przez parametr, bo nie mają własnych podstron
+                html += `<li><a class="dropdown-item" href="/przepisy/?q=${encodeURIComponent(r)}">${r}</a></li>`;
+            });
+        }
+    }
+    menu.innerHTML = html;
+};
+
+// Funkcja pomocnicza do odświeżania z innych plików
+window.refreshGlobalFavorites = function() {
+    window.renderFavoritesDropdown();
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Pierwsze renderowanie
+    window.renderFavoritesDropdown();
+
+    // Obsługa rozwijania menu przez Bootstrapa
+    const dropdownBtn = document.querySelector('.dropdown-toggle');
+    if (dropdownBtn) {
+        // Inicjalizacja instancji dropdown
+        const bsDropdown = new bootstrap.Dropdown(dropdownBtn);
+
+        // Odświeżaj listę tuż przed każdym pokazaniem
+        dropdownBtn.addEventListener('show.bs.dropdown', () => {
+            window.renderFavoritesDropdown();
+        });
+    }
+
+    // Sortowanie (jeśli funkcja istnieje w recipes.js)
+    if (typeof sortResultsByFavorites === 'function') {
+        setTimeout(sortResultsByFavorites, 150);
+    }
+});
+</script>
+
+<!-- Lokalizacja (z adresu IP, bez pytania o zgodę) i pogoda na żywo; GPS tylko po kliknięciu celownika -->
+<script src="/static/js/geo_weather.js"></script>
+<script src="/static/js/magic_lens.js"></script>
+
 
 </body>
 </html>
