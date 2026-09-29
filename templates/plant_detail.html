@@ -23,7 +23,11 @@
 {%- endmacro %}
 
 {% block content %}
-<div class="grimmoire-wrapper" style="background-image: url('{{ plant.url.pokrój if plant.url else '' }}');">
+{% set galeria = plant.url if (plant.url is mapping) else {} %}
+{% set tlo = galeria.get('pokrój') or galeria.get('Pokrój') or '' %}
+{% set autorzy = {} %}
+{% for z in ((plant.zdjecia_wiki or {}).zdjecia or []) %}{% if z.url and z.plik and z.plik.startswith('https://commons.wikimedia.org/') %}{% set _ = autorzy.update({z.url: z}) %}{% endif %}{% endfor %}
+<div class="grimmoire-wrapper" style="background-image: url('{{ tlo }}');">
     <div class="grimmoire-overlay"></div>
 
     <article class="grimmoire-container">
@@ -35,15 +39,27 @@
             <p class="hero-desc">{{ plant.opis }}</p>
             <a class="compare-link" href="{{ url_for('plants.porownaj', a=plant_id) }}"><i class="ra ra-scroll-unfurled"></i> Porównaj z inną rośliną</a>
 
-            {% if plant.url %}
+            {% if galeria %}
             <div class="plant-gallery">
-                {% for klucz, link in plant.url.items() %}
-                <div class="gallery-thumb" onclick="openLightbox('{{ link }}', '{{ klucz }}')">
-                    <img src="{{ link }}" alt="{{ klucz }}">
+                {% for klucz, link in galeria.items() %}{% if link is string and (link.startswith('https://') or link.startswith('http://') or link.startswith('/')) %}
+                {% set a = autorzy.get(link) %}
+                <div class="gallery-thumb" data-src="{{ link }}" data-caption="{{ klucz }}{% if a %} — fot. {{ a.autor }}, {{ a.licencja }}, Wikimedia Commons{% endif %}" onclick="openLightbox(this.dataset.src, this.dataset.caption)">
+                    <img src="{{ link }}" alt="{{ klucz }}" loading="lazy">
                     <span class="gallery-caption">{{ klucz }}</span>
                 </div>
-                {% endfor %}
+                {% endif %}{% endfor %}
             </div>
+            {% if autorzy %}
+            <details class="photo-credits">
+                <summary>Zdjęcia: Wikimedia Commons (autorzy i licencje)</summary>
+                <ul>
+                {% for z in plant.zdjecia_wiki.zdjecia %}{% if z.url in autorzy %}
+                    <li>{{ z.podpis }}: <a href="{{ z.plik }}" target="_blank" rel="noopener nofollow">{{ z.autor }}</a>,
+                        {% if z.licencja_url and (z.licencja_url.startswith('https://') or z.licencja_url.startswith('http://')) %}<a href="{{ z.licencja_url }}" target="_blank" rel="noopener nofollow">{{ z.licencja }}</a>{% else %}{{ z.licencja }}{% endif %}</li>
+                {% endif %}{% endfor %}
+                </ul>
+            </details>
+            {% endif %}
             {% endif %}
         </header>
 
@@ -473,6 +489,11 @@
     .hero-desc { font-size: 1.15rem; line-height: 1.8; color: #e4dfd5; max-width: 800px; margin: 0 auto; }
 
     /* GALERIA ZDJĘĆ */
+    .photo-credits { margin: 10px auto 0; max-width: 700px; font-size: 0.75rem; color: #a89f91; text-align: left; }
+    .photo-credits summary { cursor: pointer; text-align: center; }
+    .photo-credits ul { margin: 6px 0 0; padding-left: 18px; }
+    .photo-credits li { overflow-wrap: anywhere; }
+    .photo-credits a { color: #a8c69f; }
     .plant-gallery { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 30px; }
     .gallery-thumb { width: 120px; height: 120px; border-radius: 8px; border: 2px solid #3e362c; overflow: hidden; position: relative; cursor: pointer; transition: all 0.3s; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
     .gallery-thumb img { width: 100%; height: 100%; object-fit: cover; filter: sepia(0.4) brightness(0.8); transition: all 0.4s; }
