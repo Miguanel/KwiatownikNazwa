@@ -58,18 +58,18 @@ def _compare_row(data, legacy, recipes):
 
 @plants_bp.route('/porownaj/')
 def porownaj():
-    """Porownywarka dwoch (lub trzech) roslin obok siebie - przeniesiona z pierwszego Kwiatownika."""
-    ids = [x for x in (request.args.get('a'), request.args.get('b'), request.args.get('c')) if x]
-    all_plants = sorted(({'id': pid, 'name': (get_plant_data(pid) or {}).get('nazwa_pl') or pid}
-                         for pid in get_all_plants_list()), key=lambda p: p['name'])
-    columns = []
-    for pid in ids:
+    """Porownywarka 2-3 roslin (przeniesiona z pierwszego Kwiatownika).
+    Strona jest zamrazana do statycznego HTML (freeze.py -> build/), wiec dane WSZYSTKICH roslin trafiaja
+    do strony jako JSON, a wybor roslin (?a=&b=&c=) obsluguje JavaScript w przegladarce."""
+    rows = {}
+    for pid in get_all_plants_list():
         data = get_plant_data(pid)
         if data:
-            row = _compare_row(data, get_legacy_plant(plants_dir(), pid),
-                               recipes_for_plant(pid, data.get('nazwa_pl')))
-            columns.append({'id': pid, **row})
-    return render_template('porownaj.html', all_plants=all_plants, columns=columns, ids=ids)
+            rows[pid] = _compare_row(data, get_legacy_plant(plants_dir(), pid),
+                                     recipes_for_plant(pid, data.get('nazwa_pl')))
+    all_plants = sorted(({'id': pid, 'name': r.get('nazwa_pl') or pid} for pid, r in rows.items()),
+                        key=lambda p: p['name'])
+    return render_template('porownaj.html', all_plants=all_plants, rows=rows)
 
 
 @plants_bp.route('/szukaj_terapeutyczna/', methods=['GET', 'POST'])

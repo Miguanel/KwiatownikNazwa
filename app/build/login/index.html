@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwiatownik - Cyfrowy Zielnik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rpg-awesome/0.2.0/css/rpg-awesome.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body { font-family: 'Crimson Text', serif; background-color: #f4f1ea; color: #2c2c2c; margin: 0; padding-top: 110px; }
+
+        .main-header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+
+        /* --- POPRAWA NAWIGACJI (Oparta na Bootstrapie RWD) --- */
+        nav { background-color: #3e4a3d; border-bottom: 1px solid #5a4f41; padding: 0.5rem 1rem;}
+        /* Używamy standardowych klas navbar z Bootstrapa dla Hamburgera */
+        .navbar-brand, .nav-link { color: white !important; font-weight: bold; font-size: 0.95rem; transition: color 0.3s; }
+        .nav-link:hover, .navbar-brand:hover { color: #d1b880 !important; }
+        .nav-link i, .navbar-brand i { color: #d1b880; margin-right: 5px; font-size: 1.1rem; }
+
+        .navbar-toggler { border-color: rgba(255,255,255,0.5); padding: 4px 8px;}
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        /* Dostosowanie dropdownu Ulubionych do paska nav */
+        #favDropdownBtn { padding-left: 0; padding-right: 0; }
+
+        @media (max-width: 991px) {
+            /* Na mniejszych ekranach linki w menu rozsuwanym mają odstęp i są blokowe */
+            .navbar-nav .nav-item { padding: 8px 0; border-bottom: 1px dashed rgba(255,255,255,0.2); text-align: center;}
+            .navbar-nav .nav-item:last-child { border-bottom: none; }
+            .frozen-feature.d-lg-none { display: block; text-align: center; padding: 10px 0; color: white;}
+            .frozen-feature.d-none.d-lg-block { display: none; } /* Ukrywa 'Komentarze' obok menu na tel */
+
+            /* Zmniejszamy paddingi dla samej nawigacji na mobilkach */
+            nav { padding: 0.5rem; }
+        }
+
+        /* --- WSPÓLNE CECHY PRZEWIJANYCH PASKÓW --- */
+        .scrollable-banner {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            cursor: grab;
+            user-select: none;
+        }
+        .scrollable-banner::-webkit-scrollbar { display: none; }
+        .scrollable-banner:active { cursor: grabbing; }
+        .scrollable-content { display: flex; flex-wrap: nowrap; align-items: center; }
+
+        /* --- 1. PASEK ALMANACHU (ASTRO-RIBBON) --- */
+        .astro-ribbon {
+            background-color: #23201d;
+            border-bottom: 1px solid #8a7a58;
+            color: #d1b880;
+            padding: 6px 10px; /* Lekko zmniejszony padding */
+            font-size: 0.75rem;
+        }
+        .astro-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-right: 25px; /* Trochę mniej odstępu, lepiej dla mniejszych ekranów */
+            flex-shrink: 0; /* ZAPOBIEGA GNIECENIU na małych ekranach */
+        }
+        .astro-item i { font-size: 1.1rem; color: #8a9a5b; }
+        .astro-item div { display: flex; align-items: baseline; gap: 4px; }
+        .astro-label { font-size: 0.65rem; text-transform: uppercase; color: #a89f91; letter-spacing: 0.5px; }
+        .astro-value { font-weight: bold; font-family: 'Georgia', serif; font-size: 0.85rem; }
+
+        /* --- 2. ZŁOTY PASEK CIEKAWOSTEK (MARQUEE) --- */
+        .marquee-wrapper {
+            background-color: #1a1714;
+            color: #8a9a5b;
+            padding: 8px 10px;
+            border-bottom: 2px solid #3a2b21;
+        }
+        .marquee-item {
+            font-size: 0.75rem;
+            font-style: italic;
+            letter-spacing: 0.5px;
+            margin-right: 40px;
+            flex-shrink: 0; /* KLUCZOWE! Zapobiega obcinaniu tekstu */
+        }
+        .marquee-item i { color: #d1b880; margin-right: 5px; }
+
+        @media (max-width: 768px) {
+            body { padding-top: 90px; } /* Mniejszy offset na telefony */
+            .astro-value { font-size: 0.8rem; }
+            .astro-item { margin-right: 15px; }
+            .container { margin: 10px auto; padding: 10px; border-width: 0; box-shadow: none;} /* Usuwa border wokół contentu na mobile, daje więcej miejsca */
+        }
+
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.05); border: 1px solid #e0dcd3; border-radius: 4px; }
+        .flash { padding: 8px 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; font-size: 0.9rem; }
+        .flash-success { background-color: #d4edda; color: #155724; border-color: #c3e6cb; }
+        .flash-danger { background-color: #f8d7da; color: #721c24; border-color: #f5c6cb; }
+        footer { text-align: center; padding: 30px 20px; font-size: 0.8rem; color: #7a6a58; border-top: 1px dashed #dcdcdc; margin-top: 40px; }
+        footer i { color: #8a9a5b; margin-right: 5px; }
+
+        /* MODAL FIX */
+        .frozen-modal-overlay { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(35, 32, 29, 0.8); }
+        .frozen-modal-content { background-color: #f4f1ea; margin: 15% auto; padding: 25px; border: 1px solid #8a7a58; width: 90%; max-width: 400px; position: relative; font-family: 'Crimson Text', serif; text-align: center; border-radius: 4px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); }
+        .frozen-modal-close { position: absolute; right: 15px; top: 10px; font-size: 24px; cursor: pointer; color: #5a4f41; transition: color 0.2s; }
+        .frozen-modal-close:hover { color: #9b4b4b; }
+        a { text-decoration: none; color: inherit; }
+
+        /* Stylizacja rozwijanej listy Ulubionych */
+        .dropdown-menu { background-color: #fdfaf0 !important; border: 2px solid #3e4a3d !important; border-radius: 0 !important; box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important; min-width: 250px; }
+        .dropdown-item { color: #3e4a3d !important; font-family: 'Crimson Text', serif; font-size: 1.1rem; padding: 8px 20px; transition: background 0.2s; }
+        .dropdown-item:hover { background-color: #e0dcd3 !important; color: #2d5a27 !important; }
+        .dropdown-header { background-color: #f4f1ea; border-bottom: 1px dashed #d1c7a7; margin-top: 5px; }
+        .dropdown-divider { border-top: 1px solid #d1c7a7 !important; opacity: 1 !important; }
+        #favoritesDropdownMenu .dropdown-item { color: #3e4a3d !important; background-color: transparent !important; }
+        #favoritesDropdownMenu .dropdown-item:hover { background-color: #e0dcd3 !important; color: #2d5a27 !important; }
+        #favoritesDropdownMenu .dropdown-header { color: #8a9a5b !important; font-weight: bold; border-bottom: 1px dashed #d1c7a7; }
+    </style>
+
+</head>
+<body>
+
+<header class="main-header">
+    <!-- Navbar zmieniony na strukturę Bootstrap (RWD) -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-0 px-md-2">
+            <!-- Logo widoczne po lewej zawsze -->
+            <a class="navbar-brand" href="/"><i class="ra ra-leaf"></i> Kwiatownik</a>
+
+            <!-- Hamburger na małych ekranach -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kwiatownikNavbar" aria-controls="kwiatownikNavbar" aria-expanded="false" aria-label="Przełącz nawigację">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Część zwijana (linki i przyciski) -->
+            <div class="collapse navbar-collapse justify-content-end" id="kwiatownikNavbar">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="/generator/"><i class="ra ra-flask"></i> Generatory</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/przepisy/"><i class="ra ra-cauldron"></i> Przepisy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/gildie/"><i class="ra ra-pawn"></i> Gildie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/porownaj/"><i class="ra ra-scroll-unfurled"></i> Porównaj</a></li>
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link frozen-feature" href="#"><i class="ra ra-speech-bubble"></i> Komentarze</a></li>
+
+                    <li class="nav-item dropdown px-2">
+                        <button class="nav-link dropdown-toggle" type="button" id="favDropdownBtn" data-bs-toggle="dropdown" aria-expanded="false" style="background: none; border: none; font-weight: bold; font-size: 0.95rem;">
+                            <i class="ra ra-heart"></i> Ulubione
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" id="favoritesDropdownMenu">
+                        </ul>
+                    </li>
+
+                    <!-- Przycisk logowania wewnątrz menu na urządzeniach mobilnych -->
+                    <li class="nav-item d-lg-none mt-2 w-100">
+                         <a href="#" class="nav-link frozen-feature" style="background: #2d5a27; border-radius: 4px; padding: 8px;"><i class="ra ra-player"></i> Logowanie (Wstrzymane)</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Ikonka logowania na desktopie zostaje po prawej stronie (poza hamburgerem) -->
+            <div class="frozen-feature d-none d-lg-block" title="Zablokowane w wersji statycznej" style="margin-left: 15px;">
+                <a class="nav-link" href="#"><i class="ra ra-player"></i> Logowanie</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Reszta bez zmian, poprawki załatwił CSS powyżej -->
+    <div class="astro-ribbon scrollable-banner" id="banner-astro">
+
+        <div class="scrollable-content">
+            <div class="astro-item">
+                <i class="ra ra-compass"></i>
+                <div>
+                    <span class="astro-label">Lokacja:</span>
+                    <span class="astro-value" id="locValue">Z</span>
+                    <!-- Złota ikonka GPS do kliknięcia -->
+                    <i class="ra ra-target" onclick="forceGPS()" style="cursor: pointer; color: #b8860b; margin-left: 5px; font-size: 0.9rem;" title="Pobierz dokładną lokalizację GPS"></i>
+                </div>
+            </div>
+            <div class="astro-item"><i class="ra ra-sun"></i><div><span class="astro-label">Pogoda:</span><span class="astro-value">19.6°C</span><span class="astro-label" style="margin-left:4px;">Wilg:</span><span class="astro-value">62%</span></div></div>
+            <div class="astro-item"><i class="ra ra-moon-sun"></i><div><span class="astro-label">Księżyc:</span><span class="astro-value">Księżyc Ubywający</span></div></div>
+            <div class="astro-item"><i class="ra ra-fire"></i><div><span class="astro-label">Żywioł:</span><span class="astro-value">Ogień</span></div></div>
+            <div class="astro-item"><i class="ra ra-crystal-ball"></i><div><span class="astro-label">Wibracja:</span><span class="astro-value">3</span></div></div>
+            <div class="astro-item"><i class="ra ra-dragon"></i><div><span class="astro-label">Patron Roku:</span><span class="astro-value">Koń</span></div></div>
+            <div class="astro-item" style="margin-right:0;"><i class="ra ra-trefoil"></i><div><span class="astro-label">Koło Roku:</span><span class="astro-value">Dożynki (Mabon)</span></div></div>
+        </div>
+    </div>
+
+    <div class="marquee-wrapper scrollable-banner" id="banner-marquee">
+        <div class="scrollable-content">
+            
+                <span class="marquee-item"><i class="ra ra-scroll-unfurled"></i> <strong>Ciekawostka:</strong> Dąb szypułkowy ściąga najwięcej piorunów ze wszystkich drzew w lesie.</span>
+                <span class="marquee-item"><i class="ra ra-scroll-unfurled"></i> <strong>Protip:</strong> Zbiór korzeni mniszka wykonuj przy księżycu ubywającym.</span>
+                <span class="marquee-item"><i class="ra ra-scroll-unfurled"></i> <strong>Wiedza:</strong> Syrop z pędów sosny działa wykrztuśnie.</span>
+            
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    
+        
+    
+
+    
+<div style="max-width: 400px; margin: 0 auto; text-align: center;">
+    <h2>Logowanie</h2>
+    <form method="POST">
+        <input type="text" name="username" placeholder="Login" required style="width: 100%; padding: 10px; margin: 5px 0;"><br>
+        <input type="password" name="password" placeholder="Hasło" required style="width: 100%; padding: 10px; margin: 5px 0;"><br>
+        <button type="submit" style="width: 100%; padding: 10px; background: #3e4a3d; color: white; border: none; margin-top: 10px;">Zaloguj się</button>
+    </form>
+    <p>Nie masz konta? <a href="/register/">Zarejestruj się</a></p>
+</div>
+
+</div>
+
+<footer>
+    <p><i class="ra ra-hourglass"></i> ROK 2026 &copy; Kwiatownik - Akademicki Projekt Zielnika</p>
+</footer>
+
+<div id="frozenModal" class="frozen-modal-overlay">
+    <div class="frozen-modal-content">
+        <span class="frozen-modal-close" onclick="closeFrozenModal()">&times;</span>
+        <h4 style="color: #3e4a3d; margin-bottom: 15px;"><i class="ra ra-parchment"></i> Funkcja wstrzymana</h4>
+        <p style="font-size: 0.95rem; color: #5a4f41;">Aby aplikacja mogła być dostępna za darmo i działać błyskawicznie, przeszliśmy na wersję statyczną. Moduł logowania i komentarzy jest obecnie wyłączony.</p>
+        <a href="https://buycoffee.to/miguana" target="_blank" class="btn mt-3 fw-bold" style="background-color: #3a2b21; border: 1px solid #5a4b3a; color: #d1b880; padding: 8px 16px; font-size: 0.9rem;">
+            <i class="ra ra-beer"></i> Postaw Kufel Kawy
+        </a>
+    </div>
+</div>
+
+<div class="astro-item" style="margin-right:0;">
+    <i class="ra ra-trefoil"></i>
+    <div>
+        <span class="astro-label">Koło Roku:</span>
+        <span class="astro-value"
+              data-bs-toggle="tooltip"
+              data-bs-html="true"
+              title="<b>Stary Czas:</b> Równonoc Jesienna. Czas bilansu, dziękczynienia i przygotowania do zimy.<br><b>Symbol:</b> Jabłka, jarzębina, róg obfitości<br><b>Tradycja:</b> Zbiór korzeni, robienie zapasów i win, dziękowanie za plony.">
+            Dożynki (Mabon)
+        </span>
+    </div>
+</div>
+
+<script>
+    function setupInfiniteScroller(wrapperId, speed) {
+        const wrapper = document.getElementById(wrapperId);
+        if (!wrapper) return;
+        const content = wrapper.querySelector('.scrollable-content');
+
+        // Duplikujemy zawartość dla pętli
+        content.innerHTML += content.innerHTML;
+
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+        let currentScroll = 0;
+        const halfWidth = wrapper.scrollWidth / 2; // Obliczamy raz (wydajność!)
+
+        function autoScroll() {
+            if (!isDown) {
+                currentScroll += speed;
+                if (currentScroll >= halfWidth) {
+                    currentScroll = 0;
+                }
+                wrapper.scrollLeft = currentScroll;
+            }
+            requestAnimationFrame(autoScroll);
+        }
+        requestAnimationFrame(autoScroll);
+
+        // --- OBSŁUGA MYSZKI I DOTYKU ---
+        function startDrag(pageX) {
+            isDown = true;
+            wrapper.style.cursor = 'grabbing';
+            startX = pageX - wrapper.offsetLeft;
+            scrollLeft = wrapper.scrollLeft;
+        }
+
+        function stopDrag() {
+            if (!isDown) return;
+            isDown = false;
+            wrapper.style.cursor = 'grab';
+            // KLUCZOWA POPRAWKA: Aktualizujemy licznik animacji do miejsca, w którym puściliśmy kursor
+            currentScroll = wrapper.scrollLeft;
+        }
+
+        function doDrag(pageX) {
+            if (!isDown) return;
+            const x = pageX - wrapper.offsetLeft;
+            const walk = (x - startX) * 1.5;
+            wrapper.scrollLeft = scrollLeft - walk;
+        }
+
+        // Mysz
+        wrapper.addEventListener('mousedown', (e) => startDrag(e.pageX));
+        window.addEventListener('mouseup', stopDrag); // window, by łapało puszczenie poza paskiem
+        wrapper.addEventListener('mouseleave', stopDrag);
+        wrapper.addEventListener('mousemove', (e) => {
+            if(!isDown) return;
+            e.preventDefault();
+            doDrag(e.pageX);
+        });
+
+        // Telefony (Dotyk)
+        wrapper.addEventListener('touchstart', (e) => startDrag(e.touches[0].pageX), {passive: true});
+        wrapper.addEventListener('touchend', stopDrag, {passive: true});
+        wrapper.addEventListener('touchmove', (e) => doDrag(e.touches[0].pageX), {passive: true});
+    }
+
+    // Odpalamy skrypty dla obu banerów
+    document.addEventListener("DOMContentLoaded", function() {
+
+        // --- NOWOŚĆ: LOSOWANIE KOLEJNOŚCI CIEKAWOSTEK ---
+        const marqueeContent = document.querySelector('#banner-marquee .scrollable-content');
+        if (marqueeContent) {
+            const items = Array.from(marqueeContent.children);
+            // Algorytm mieszający
+            for (let i = items.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                marqueeContent.appendChild(items[j]);
+            }
+        }
+        // ----------------------------------------------
+
+        // Górny pasek z ikonami - porusza się niesamowicie powoli i majestatycznie
+        setupInfiniteScroller('banner-astro', 0.2);
+
+        // Pasek z Ciekawostkami - porusza się ciut szybciej
+        setupInfiniteScroller('banner-marquee', 0.6);
+    });
+
+    // --- OBSŁUGA MODALU ---
+    const modal = document.getElementById('frozenModal');
+    document.querySelectorAll('.frozen-feature').forEach(el => {
+        el.addEventListener('click', function(e) {
+            e.preventDefault();
+            if(modal) modal.style.display = "block";
+        });
+    });
+    function closeFrozenModal() {
+        if(modal) modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) closeFrozenModal();
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+window.renderFavoritesDropdown = function() {
+    const menu = document.getElementById('favoritesDropdownMenu');
+    if (!menu) return;
+
+    const favPlants = JSON.parse(localStorage.getItem("herbariumFavorites")) || [];
+    const favRecipes = JSON.parse(localStorage.getItem("recipeFavorites")) || [];
+
+    if (menu.classList.contains('show')) return;
+
+    // Funkcja pomocnicza do tworzenia slugów (taka sama jak w Pythonie)
+    const slugify = (text) => {
+        const accents = {'ą':'a','ć':'c','ę':'e','ł':'l','ń':'n','ó':'o','ś':'s','ź':'z','ż':'z'};
+        return text.toLowerCase()
+            .replace(/[ąćęłńóśźż]/g, match => accents[match])
+            .replace(/\s+/g, '_')
+            .replace(/[^\w\-]+/g, '')
+            .replace(/\-\-+/g, '_');
+    };
+
+    let html = '';
+    if (favPlants.length === 0 && favRecipes.length === 0) {
+        html = '<li><span class="dropdown-item text-muted">Twój zielnik jest pusty.</span></li>';
+    } else {
+        if (favPlants.length > 0) {
+            html += '<li><h6 class="dropdown-header"><i class="ra ra-leaf"></i> Twoje Zioła</h6></li>';
+            favPlants.forEach(p => {
+                // ZMIANA: Link prowadzi teraz bezpośrednio do strony rośliny
+                const slug = slugify(p);
+                html += `<li><a class="dropdown-item" href="/plant/${slug}/">${p}</a></li>`;
+            });
+        }
+        if (favRecipes.length > 0) {
+            if (favPlants.length > 0) html += '<li><hr class="dropdown-divider"></li>';
+            html += '<li><h6 class="dropdown-header"><i class="ra ra-cauldron"></i> Twoje Receptury</h6></li>';
+            favRecipes.forEach(r => {
+                // Przepisy nadal szukamy przez parametr, bo nie mają własnych podstron
+                html += `<li><a class="dropdown-item" href="/przepisy/?q=${encodeURIComponent(r)}">${r}</a></li>`;
+            });
+        }
+    }
+    menu.innerHTML = html;
+};
+
+// Funkcja pomocnicza do odświeżania z innych plików
+window.refreshGlobalFavorites = function() {
+    window.renderFavoritesDropdown();
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Pierwsze renderowanie
+    window.renderFavoritesDropdown();
+
+    // Obsługa rozwijania menu przez Bootstrapa
+    const dropdownBtn = document.querySelector('.dropdown-toggle');
+    if (dropdownBtn) {
+        // Inicjalizacja instancji dropdown
+        const bsDropdown = new bootstrap.Dropdown(dropdownBtn);
+
+        // Odświeżaj listę tuż przed każdym pokazaniem
+        dropdownBtn.addEventListener('show.bs.dropdown', () => {
+            window.renderFavoritesDropdown();
+        });
+    }
+
+    // Sortowanie (jeśli funkcja istnieje w recipes.js)
+    if (typeof sortResultsByFavorites === 'function') {
+        setTimeout(sortResultsByFavorites, 150);
+    }
+});
+</script>
+
+<script>
+function forceGPS() {
+    const locSpan = document.getElementById('locValue');
+    locSpan.innerText = "Szukam...";
+
+    if ("geolocation" in navigator) {
+        navigator.geolocation.getCurrentPosition(
+            async (position) => {
+                const lat = position.coords.latitude;
+                const lon = position.coords.longitude;
+
+                // Używamy darmowego API Nominatim tylko po to, by przetłumaczyć współrzędne na nazwę miasta w JS
+                try {
+                    const resp = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}&zoom=10`);
+                    const data = await resp.json();
+                    let city = "Twoja Okolica";
+                    if(data.address) {
+                        city = data.address.city || data.address.town || data.address.village || data.address.county || "Twoja Okolica";
+                    }
+
+                    // Zapisujemy ciasteczka na 30 dni
+                    document.cookie = `user_lat=${lat}; path=/; max-age=${60*60*24*30}`;
+                    document.cookie = `user_lon=${lon}; path=/; max-age=${60*60*24*30}`;
+                    document.cookie = `user_city=${encodeURIComponent(city)}; path=/; max-age=${60*60*24*30}`;
+
+                    // Przeładowujemy stronę by Python złapał nowe ciastka
+                    window.location.reload();
+                } catch (e) {
+                    locSpan.innerText = "Błąd sieci";
+                }
+            },
+            (error) => {
+                alert("Nie udało się pobrać GPS. Upewnij się, że masz włączoną lokalizację w telefonie i wyraziłeś zgodę w przeglądarce.");
+                locSpan.innerText = "Błąd GPS";
+            },
+            { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+        );
+    } else {
+        alert("Twoja przeglądarka nie wspiera GPS.");
+    }
+}
+</script>
+
+<script>
+    // --- SKRYPT AKTUALIZACJI LOKALIZACJI GPS (WERSJA DIAGNOSTYCZNA) ---
+    document.addEventListener("DOMContentLoaded", () => {
+        function getCookie(name) {
+            let matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+            return matches ? decodeURIComponent(matches[1]) : undefined;
+        }
+
+        // UWAGA: Usuwamy stare ciasteczko, by wymusić ponowne zapytanie (Przydatne do testów!)
+
+
+        if (!getCookie('gps_asked')) {
+            if ("geolocation" in navigator) {
+
+
+
+                // Zapisujemy ciasteczko pytania
+                document.cookie = "gps_asked=true; path=/; max-age=" + 60*60*24*30;
+
+                // Dodajemy parametry geolokalizacji, które wymuszają lepsze działanie na mobile
+                const geoOptions = {
+                    enableHighAccuracy: false, // false działa szybciej i nie wymaga satelitów (wystarczy stacja BTS/WiFi)
+                    timeout: 10000,            // Czekamy maksymalnie 10 sekund
+                    maximumAge: 0              // Nie chcemy starych danych z pamięci telefonu
+                };
+
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        const lat = position.coords.latitude;
+                        const lon = position.coords.longitude;
+
+                        document.cookie = `user_lat=${lat}; path=/; max-age=` + 60*60*24;
+                        document.cookie = `user_lon=${lon}; path=/; max-age=` + 60*60*24;
+
+                        window.location.reload();
+                    },
+                    (error) => {
+                        // Ten alert powie Ci dokładnie, dlaczego telefon odmówił!
+                        alert("⚠️ Odmowa GPS. Kod błędu: " + error.code + " - " + error.message);
+                    },
+                    geoOptions
+                );
+            } else {
+                alert("⚠️ Twoja przeglądarka na tym telefonie nie wspiera geolokalizacji.");
+            }
+        }
+    });
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    function getCookie(name) {
+        let matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+    }
+
+    // Jeśli serwer nie wykrył poprawnej lokalizacji (np. pokazuje Frankfurt/Czyżowice),
+    // lub minęło 24h, spróbuj pobrać ją po stronie klienta
+    if (!getCookie('user_lat')) {
+        if ("geolocation" in navigator) {
+            navigator.geolocation.getCurrentPosition((position) => {
+                const lat = position.coords.latitude;
+                const lon = position.coords.longitude;
+
+                // Zapisujemy do ciastek (ważne 24h)
+                document.cookie = `user_lat=${lat}; path=/; max-age=${60*60*24}`;
+                document.cookie = `user_lon=${lon}; path=/; max-age=${60*60*24}`;
+
+                // Przeładowujemy raz, żeby Python odczytał nowe ciastka
+                window.location.reload();
+            }, null, { timeout: 5000 });
+        }
+    }
+});
+</script>
+<script src="/static/js/magic_lens.js"></script>
+
+
+</body>
+</html>

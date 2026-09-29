@@ -1,0 +1,29 @@
+# --- Kwiatownik2: pliki niepotrzebne na Render (Static Site publikuje folder build/) ---
+
+# Srodowisko i IDE
+venv/
+.venv/
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+.env
+
+# Wersja desktopowa (PyInstaller) - app.exe i jej kopie danych
+dist/
+app.spec
+*.exe
+
+# Lokalne bazy danych (komentarze/konta z trybu serwerowego)
+instance/
+*.db
+*.sqlite3
+
+# Archiwa, dokumenty i zrzuty ekranu projektu (tylko w katalogu glownym)
+/*.rar
+/*.zip
+/*.pdf
+/*.png
+
+# Pliki robocze Git/Siedziby
+*.tmp

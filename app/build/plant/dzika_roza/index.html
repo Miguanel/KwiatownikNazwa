@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwiatownik - Cyfrowy Zielnik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rpg-awesome/0.2.0/css/rpg-awesome.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body { font-family: 'Crimson Text', serif; background-color: #f4f1ea; color: #2c2c2c; margin: 0; padding-top: 110px; }
+
+        .main-header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+
+        /* --- POPRAWA NAWIGACJI (Oparta na Bootstrapie RWD) --- */
+        nav { background-color: #3e4a3d; border-bottom: 1px solid #5a4f41; padding: 0.5rem 1rem;}
+        /* Używamy standardowych klas navbar z Bootstrapa dla Hamburgera */
+        .navbar-brand, .nav-link { color: white !important; font-weight: bold; font-size: 0.95rem; transition: color 0.3s; }
+        .nav-link:hover, .navbar-brand:hover { color: #d1b880 !important; }
+        .nav-link i, .navbar-brand i { color: #d1b880; margin-right: 5px; font-size: 1.1rem; }
+
+        .navbar-toggler { border-color: rgba(255,255,255,0.5); padding: 4px 8px;}
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        /* Dostosowanie dropdownu Ulubionych do paska nav */
+        #favDropdownBtn { padding-left: 0; padding-right: 0; }
+
+        @media (max-width: 991px) {
+            /* Na mniejszych ekranach linki w menu rozsuwanym mają odstęp i są blokowe */
+            .navbar-nav .nav-item { padding: 8px 0; border-bottom: 1px dashed rgba(255,255,255,0.2); text-align: center;}
+            .navbar-nav .nav-item:last-child { border-bottom: none; }
+            .frozen-feature.d-lg-none { display: block; text-align: center; padding: 10px 0; color: white;}
+            .frozen-feature.d-none.d-lg-block { display: none; } /* Ukrywa 'Komentarze' obok menu na tel */
+
+            /* Zmniejszamy paddingi dla samej nawigacji na mobilkach */
+            nav { padding: 0.5rem; }
+        }
+
+        /* --- WSPÓLNE CECHY PRZEWIJANYCH PASKÓW --- */
+        .scrollable-banner {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            cursor: grab;
+            user-select: none;
+        }
+        .scrollable-banner::-webkit-scrollbar { display: none; }
+        .scrollable-banner:active { cursor: grabbing; }
+        .scrollable-content { display: flex; flex-wrap: nowrap; align-items: center; }
+
+        /* --- 1. PASEK ALMANACHU (ASTRO-RIBBON) --- */
+        .astro-ribbon {
+            background-color: #23201d;
+            border-bottom: 1px solid #8a7a58;
+            color: #d1b880;
+            padding: 6px 10px; /* Lekko zmniejszony padding */
+            font-size: 0.75rem;
+        }
+        .astro-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-right: 25px; /* Trochę mniej odstępu, lepiej dla mniejszych ekranów */
+            flex-shrink: 0; /* ZAPOBIEGA GNIECENIU na małych ekranach */
+        }
+        .astro-item i { font-size: 1.1rem; color: #8a9a5b; }
+        .astro-item div { display: flex; align-items: baseline; gap: 4px; }
+        .astro-label { font-size: 0.65rem; text-transform: uppercase; color: #a89f91; letter-spacing: 0.5px; }
+        .astro-value { font-weight: bold; font-family: 'Georgia', serif; font-size: 0.85rem; }
+
+        /* --- 2. ZŁOTY PASEK CIEKAWOSTEK (MARQUEE) --- */
+        .marquee-wrapper {
+            background-color: #1a1714;
+            color: #8a9a5b;
+            padding: 8px 10px;
+            border-bottom: 2px solid #3a2b21;
+        }
+        .marquee-item {
+            font-size: 0.75rem;
+            font-style: italic;
+            letter-spacing: 0.5px;
+            margin-right: 40px;
+            flex-shrink: 0; /* KLUCZOWE! Zapobiega obcinaniu tekstu */
+        }
+        .marquee-item i { color: #d1b880; margin-right: 5px; }
+
+        @media (max-width: 768px) {
+            body { padding-top: 90px; } /* Mniejszy offset na telefony */
+            .astro-value { font-size: 0.8rem; }
+            .astro-item { margin-right: 15px; }
+            .container { margin: 10px auto; padding: 10px; border-width: 0; box-shadow: none;} /* Usuwa border wokół contentu na mobile, daje więcej miejsca */
+        }
+
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.05); border: 1px solid #e0dcd3; border-radius: 4px; }
+        .flash { padding: 8px 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; font-size: 0.9rem; }
+        .flash-success { background-color: #d4edda; color: #155724; border-color: #c3e6cb; }
+        .flash-danger { background-color: #f8d7da; color: #721c24; border-color: #f5c6cb; }
+        footer { text-align: center; padding: 30px 20px; font-size: 0.8rem; color: #7a6a58; border-top: 1px dashed #dcdcdc; margin-top: 40px; }
+        footer i { color: #8a9a5b; margin-right: 5px; }
+
+        /* MODAL FIX */
+        .frozen-modal-overlay { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(35, 32, 29, 0.8); }
+        .frozen-modal-content { background-color: #f4f1ea; margin: 15% auto; padding: 25px; border: 1px solid #8a7a58; width: 90%; max-width: 400px; position: relative; font-family: 'Crimson Text', serif; text-align: center; border-radius: 4px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); }
+        .frozen-modal-close { position: absolute; right: 15px; top: 10px; font-size: 24px; cursor: pointer; color: #5a4f41; transition: color 0.2s; }
+        .frozen-modal-close:hover { color: #9b4b4b; }
+        a { text-decoration: none; color: inherit; }
+
+        /* Stylizacja rozwijanej listy Ulubionych */
+        .dropdown-menu { background-color: #fdfaf0 !important; border: 2px solid #3e4a3d !important; border-radius: 0 !important; box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important; min-width: 250px; }
+        .dropdown-item { color: #3e4a3d !important; font-family: 'Crimson Text', serif; font-size: 1.1rem; padding: 8px 20px; transition: background 0.2s; }
+        .dropdown-item:hover { background-color: #e0dcd3 !important; color: #2d5a27 !important; }
+        .dropdown-header { background-color: #f4f1ea; border-bottom: 1px dashed #d1c7a7; margin-top: 5px; }
+        .dropdown-divider { border-top: 1px solid #d1c7a7 !important; opacity: 1 !important; }
+        #favoritesDropdownMenu .dropdown-item { color: #3e4a3d !important; background-color: transparent !important; }
+        #favoritesDropdownMenu .dropdown-item:hover { background-color: #e0dcd3 !important; color: #2d5a27 !important; }
+        #favoritesDropdownMenu .dropdown-header { color: #8a9a5b !important; font-weight: bold; border-bottom: 1px dashed #d1c7a7; }
+    </style>
+
+</head>
+<body>
+
+<header class="main-header">
+    <!-- Navbar zmieniony na strukturę Bootstrap (RWD) -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-0 px-md-2">
+            <!-- Logo widoczne po lewej zawsze -->
+            <a class="navbar-brand" href="/"><i class="ra ra-leaf"></i> Kwiatownik</a>
+
+            <!-- Hamburger na małych ekranach -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kwiatownikNavbar" aria-controls="kwiatownikNavbar" aria-expanded="false" aria-label="Przełącz nawigację">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Część zwijana (linki i przyciski) -->
+            <div class="collapse navbar-collapse justify-content-end" id="kwiatownikNavbar">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="/generator/"><i class="ra ra-flask"></i> Generatory</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/przepisy/"><i class="ra ra-cauldron"></i> Przepisy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/gildie/"><i class="ra ra-pawn"></i> Gildie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/porownaj/"><i class="ra ra-scroll-unfurled"></i> Porównaj</a></li>
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link frozen-feature" href="#"><i class="ra ra-speech-bubble"></i> Komentarze</a></li>
+
+                    <li class="nav-item dropdown px-2">
+                        <button class="nav-link dropdown-toggle" type="button" id="favDropdownBtn" data-bs-toggle="dropdown" aria-expanded="false" style="background: none; border: none; font-weight: bold; font-size: 0.95rem;">
+                            <i class="ra ra-heart"></i> Ulubione
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" id="favoritesDropdownMenu">
+                        </ul>
+                    </li>
+
+                    <!-- Przycisk logowania wewnątrz menu na urządzeniach mobilnych -->
+                    <li class="nav-item d-lg-none mt-2 w-100">
+                         <a href="#" class="nav-link frozen-feature" style="background: #2d5a27; border-radius: 4px; padding: 8px;"><i class="ra ra-player"></i> Logowanie (Wstrzymane)</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Ikonka logowania na desktopie zostaje po prawej stronie (poza hamburgerem) -->
+            <div class="frozen-feature d-none d-lg-block" title="Zablokowane w wersji statycznej" style="margin-left: 15px;">
+                <a class="nav-link" href="#"><i class="ra ra-player"></i> Logowanie</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Reszta bez zmian, poprawki załatwił CSS powyżej -->
+    <div class="astro-ribbon scrollable-banner" id="banner-astro">
+
+        <div class="scrollable-content">
+            <div class="astro-item">
+                <i class="ra ra-compass"></i>
+                <div>
+                    <span class="astro-label">Lokacja:</span>
+                    <span class="astro-value" id="locValue">Z</span>
+                    <!-- Złota ikonka GPS do kliknięcia -->
+                    <i class="ra ra-target" onclick="forceGPS()" style="cursor: pointer; color: #b8860b; margin-left: 5px; font-size: 0.9rem;" title="Pobierz dokładną lokalizację GPS"></i>
+                </div>
+            </div>
+            <div class="astro-item"><i class="ra ra-sun"></i><div><span class="astro-label">Pogoda:</span><span class="astro-value">19.6°C</span><span class="astro-label" style="margin-left:4px;">Wilg:</span><span class="astro-value">62%</span></div></div>
+            <div class="astro-item"><i class="ra ra-moon-sun"></i><div><span class="astro-label">Księżyc:</span><span class="astro-value">Księżyc Ubywający</span></div></div>
+            <div class="astro-item"><i class="ra ra-fire"></i><div><span class="astro-label">Żywioł:</span><span class="astro-value">Ogień</span></div></div>
+            <div class="astro-item"><i class="ra ra-crystal-ball"></i><div><span class="astro-label">Wibracja:</span><span class="astro-value">3</span></div></div>
+            <div class="astro-item"><i class="ra ra-dragon"></i><div><span class="astro-label">Patron Roku:</span><span class="astro-value">Koń</span></div></div>
+            <div class="astro-item" style="margin-right:0;"><i class="ra ra-trefoil"></i><div><span class="astro-label">Koło Roku:</span><span class="astro-value">Dożynki (Mabon)</span></div></div>
+        </div>
+    </div>
+
+    <div class="marquee-wrapper scrollable-banner" id="banner-marquee">
+        <div class="scrollable-content">
+            
+                <span class="marquee-item"><i class="ra ra-scroll-unfurled"></i> <strong>Ciekawostka:</strong> Dąb szypułkowy ściąga najwięcej piorunów ze wszystkich drzew w lesie.</span>
+                <span class="marquee-item"><i class="ra ra-scroll-unfurled"></i> <strong>Protip:</strong> Zbiór korzeni mniszka wykonuj przy księżycu ubywającym.</span>
+                <span class="marquee-item"><i class="ra ra-scroll-unfurled"></i> <strong>Wiedza:</strong> Syrop z pędów sosny działa wykrztuśnie.</span>
+            
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    
+        
+    
+
+    
+<div class="grimmoire-wrapper" style="background-image: url('');">
+    <div class="grimmoire-overlay"></div>
+
+    <article class="grimmoire-container">
+
+        <header class="grimmoire-hero">
+            <h1 class="hero-title">Dzika róża</h1>
+            <p class="hero-subtitle">Rosa canina <span class="hero-family">| Różowate (Rosaceae)</span></p>
+            <div class="hero-divider"></div>
+            <p class="hero-desc">Ciernisty krzew o przewisających pędach, dorastający do 3 metrów wysokości. Jest gatunkiem niezwykle plastycznym, rosnącym na nieużytkach, miedzach i obrzeżach lasów. Jej kwiaty są delikatnie różowe lub białe, a owoce (botanicznie owoce pozorne – szupinki) mają intensywnie czerwony kolor i mączysty, kwaskowaty miąższ. Dzika róża to roślina o jednej z najdłuższych tradycji w medycynie europejskiej, ceniona już przez Hipokratesa jako środek wzmacniający.</p>
+            <a class="compare-link" href="/porownaj/?a=dzika_roza"><i class="ra ra-scroll-unfurled"></i> Porównaj z inną rośliną</a>
+
+            
+        </header>
+
+        <div class="grimmoire-book">
+
+            
+            <details class="grimmoire-tab">
+                <summary><i class="ra ra-moon-sun"></i> Natura i Siedlisko</summary>
+                <div class="tab-content">
+
+                    
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-burning-embers"></i> Profil Energetyczny</summary>
+                        <div class="subtab-content">
+                            <ul class="sub-list">
+                                <li><strong>Smak:</strong> Kwaśny, słodki, cierpki</li>
+                                <li><strong>Termika:</strong> Chłodna (owoce), neutralna (płatki)</li>
+                                <li><strong>Wilgotność:</strong> Nawilżająca (miąższ), osuszająca (nasiona/liście)</li>
+                                <li><strong>Żywioł:</strong> Woda i Ogień</li>
+                            </ul>
+                            <p class="energy-quote">"Dzika róża to &#39;płynne ukojenie&#39;. Jej kwaśny smak ściąga energię i chroni płyny ustrojowe (Yin), a wysoka zawartość witamin &#39;rozświetla&#39; krew. Chłodzi stany zapalne, łagodzi podrażnienia i działa jak tarcza ochronna dla bariery immunologicznej."</p>
+                        </div>
+                    </details>
+                    
+
+                    
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-compass"></i> Wymagania Siedliskowe</summary>
+                        <div class="subtab-content">
+                            <ul class="sub-list">
+                                <li><strong>Stanowisko:</strong> Pełne słońce – tylko w takich warunkach owoce gromadzą maksymalną ilość witaminy C i karotenoidów.</li>
+                                <li><strong>Gleba:</strong> Przepuszczalna, żyzna, zasobna w wapń, ale roślina jest bardzo tolerancyjna i poradzi sobie nawet na glebach piaszczystych i kamienistych.</li>
+                                <li><strong>Woda:</strong> Bardzo odporna na suszę dzięki głębokiemu systemowi korzeniowemu; nie lubi jedynie zastoin wodnych.</li>
+                                <li><strong>Mrozoodporność:</strong> Strefa 4 (Całkowicie mrozoodporna).</li>
+                            </ul>
+                        </div>
+                    </details>
+                    
+
+                </div>
+            </details>
+            
+
+            
+            <details class="grimmoire-tab">
+                <summary><i class="ra ra-eye-monster"></i> Rozpoznawanie w terenie</summary>
+                <div class="tab-content">
+                    <ul class="feature-list">
+                        
+                            <li><i class="ra ra-leaf"></i> Pędy uzbrojone w silne, hakowato zakrzywione ciernie (ułatwiają wspinanie się).</li>
+                        
+                            <li><i class="ra ra-leaf"></i> Liście nieparzystopierzaste, złożone z 5-7 jajowatych, piłkowanych listków.</li>
+                        
+                            <li><i class="ra ra-leaf"></i> Owoce pozorne (szupinki) są wydłużone, jajowate, lśniące i czerwone.</li>
+                        
+                            <li><i class="ra ra-leaf"></i> Wewnątrz owocu znajdują się liczne, twarde &#39;orzeszki&#39; (właściwe owoce) otoczone drażniącymi włoskami.</li>
+                        
+                    </ul>
+
+                    
+                    <details class="grimmoire-subtab danger-subtab">
+                        <summary><i class="ra ra-skull"></i> Możliwe pomyłki (Zagrożenia!)</summary>
+                        <div class="subtab-content warning-box">
+                            
+                                <p><strong>Róża pomarszczona (Rosa rugosa):</strong> Ma znacznie większe, spłaszczone owoce przypominające małe pomidory i bardzo gęste, proste kolce na pędach. Również jadalna i lecznicza.</p>
+                            
+                                <p><strong>Róża rdzawa (Rosa rubiginosa):</strong> Jej liście po potarciu pachną intensywnie jabłkami.</p>
+                            
+                        </div>
+                    </details>
+                    
+                </div>
+            </details>
+            
+
+            
+            <details class="grimmoire-tab">
+                <summary><i class="ra ra-fizzing-flask"></i> Surowce i Zbiory</summary>
+                <div class="tab-content">
+                    
+                    <details class="grimmoire-subtab part-subtab">
+                        <summary>
+                            <span class="subtab-title-group">
+                                <i class="ra ra-potion"></i> Fructus Rosae <span class="part-badge">owoce_pozorne</span>
+                            </span>
+                        </summary>
+                        <div class="subtab-content">
+                            <p class="part-desc">Mięsiste szupinki zbierane jesienią, gdy są dojrzałe, ale jeszcze twarde.</p>
+
+                            <div class="part-effects">
+                                <strong>Działanie:</strong> Silnie wzmacniające, immunostymulujące, przeciwzapalne (zwłaszcza w chorobie zwyrodnieniowej stawów), uszczelniające naczynia krwionośne, lekko moczopędne.
+                            </div>
+
+                            <div class="part-chem mt-3">
+                                <strong>Substancje czynne:</strong>
+                                <div class="chem-tags">
+                                    
+                                        
+                                            <a href="https://pl.wikipedia.org/wiki/Special:Search?search=Witamina%20C%20%28nawet%20do%203000%20mg/100g%20%E2%80%93%20najwi%C4%99cej%20w%C5%9Br%C3%B3d%20krajowych%20ro%C5%9Blin%29" target="_blank" class="chem-link">Witamina C (nawet do 3000 mg/100g – najwięcej wśród krajowych roślin) <i class="ra ra-book"></i></a>
+                                        
+                                            <a href="https://pl.wikipedia.org/wiki/Special:Search?search=Galaktolipidy%20%28GOPO%20%E2%80%93%20unikalny%20zwi%C4%85zek%20o%20dzia%C5%82aniu%20przeciwzapalnym%20na%20stawy%29" target="_blank" class="chem-link">Galaktolipidy (GOPO – unikalny związek o działaniu przeciwzapalnym na stawy) <i class="ra ra-book"></i></a>
+                                        
+                                            <a href="https://pl.wikipedia.org/wiki/Special:Search?search=Karotenoidy%20%28likopen%2C%20beta-karoten%29" target="_blank" class="chem-link">Karotenoidy (likopen, beta-karoten) <i class="ra ra-book"></i></a>
+                                        
+                                            <a href="https://pl.wikipedia.org/wiki/Special:Search?search=Flawonoidy" target="_blank" class="chem-link">Flawonoidy <i class="ra ra-book"></i></a>
+                                        
+                                            <a href="https://pl.wikipedia.org/wiki/Special:Search?search=Pektyny" target="_blank" class="chem-link">Pektyny <i class="ra ra-book"></i></a>
+                                        
+                                            <a href="https://pl.wikipedia.org/wiki/Special:Search?search=Kwasy%20organiczne" target="_blank" class="chem-link">Kwasy organiczne <i class="ra ra-book"></i></a>
+                                        
+                                    
+                                </div>
+                            </div>
+
+                            
+                            <div class="part-warning"><i class="ra ra-poison-cloud"></i> Witaminę C niszczy wysoka temperatura i światło – owoce należy suszyć w temp. do 40°C.</div>
+                            
+
+                            <div class="part-time"><i class="ra ra-hourglass"></i> Zbiór: <strong>Wrzesień - Październik.</strong></div>
+                        </div>
+                    </details>
+                    
+                    <details class="grimmoire-subtab part-subtab">
+                        <summary>
+                            <span class="subtab-title-group">
+                                <i class="ra ra-potion"></i> Flos Rosae <span class="part-badge">płatki</span>
+                            </span>
+                        </summary>
+                        <div class="subtab-content">
+                            <p class="part-desc"></p>
+
+                            <div class="part-effects">
+                                <strong>Działanie:</strong> Ściągające, przeciwzapalne, poprawiające nastrój. Stosowane w pielęgnacji cery naczynkowej.
+                            </div>
+
+                            <div class="part-chem mt-3">
+                                <strong>Substancje czynne:</strong>
+                                <div class="chem-tags">
+                                    
+                                        
+                                    
+                                </div>
+                            </div>
+
+                            
+
+                            <div class="part-time"><i class="ra ra-hourglass"></i> Zbiór: <strong>Czerwiec.</strong></div>
+                        </div>
+                    </details>
+                    
+                    <details class="grimmoire-subtab part-subtab">
+                        <summary>
+                            <span class="subtab-title-group">
+                                <i class="ra ra-potion"></i> Semen Rosae <span class="part-badge">nasiona</span>
+                            </span>
+                        </summary>
+                        <div class="subtab-content">
+                            <p class="part-desc"></p>
+
+                            <div class="part-effects">
+                                <strong>Działanie:</strong> Moczopędne i przeciwkamienne (tradycyjnie stosowane w kamicy nerkowej).
+                            </div>
+
+                            <div class="part-chem mt-3">
+                                <strong>Substancje czynne:</strong>
+                                <div class="chem-tags">
+                                    
+                                        
+                                    
+                                </div>
+                            </div>
+
+                            
+                            <div class="part-warning"><i class="ra ra-poison-cloud"></i> Włoski otaczające nasiona muszą być dokładnie usunięte przed spożyciem (powodują silne swędzenie).</div>
+                            
+
+                            <div class="part-time"><i class="ra ra-hourglass"></i> Zbiór: <strong></strong></div>
+                        </div>
+                    </details>
+                    
+                </div>
+            </details>
+            
+
+            
+            <details class="grimmoire-tab">
+                <summary><i class="ra ra-anvil"></i> Praktyczne Zastosowanie</summary>
+                <div class="tab-content">
+                    
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-health"></i> Medycyna</summary>
+                        <div class="subtab-content"><p>Profilaktyka i leczenie przeziębień, awitaminoza, rekonwalescencja po chorobach, bóle stawów (RZS i choroba zwyrodnieniowa), pękające naczynka krwionośne, nadciśnienie (pomocniczo).</p></div>
+                    </details>
+                    
+
+                    
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-meat"></i> Kuchnia</summary>
+                        <div class="subtab-content"><p>Konfitury, dżemy (słynne nadzienie do pączków), soki, syropy, wina, herbaty ziołowe. Sproszkowane owoce jako dodatek do smoothie.</p></div>
+                    </details>
+                    
+
+                    
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-hammer"></i> Rzemiosło</summary>
+                        <div class="subtab-content"><p>Olej z nasion róży (tłoczony na zimno) to jeden z najdroższych i najskuteczniejszych olejów kosmetycznych o działaniu przeciwstarzeniowym (Anti-aging).</p></div>
+                    </details>
+                    
+
+                    
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-pine-tree"></i> Ogród</summary>
+                        <div class="subtab-content"><p>Tworzenie &#39;nieprzebytych&#39; żywopłotów obronnych, umacnianie skarp, roślina miododajna i schronienie dla ptaków.</p></div>
+                    </details>
+                    
+                </div>
+            </details>
+            
+
+            
+            <details class="grimmoire-tab danger-tab">
+                <summary><i class="ra ra-bleeding-eye"></i> Bezpieczeństwo i Interakcje</summary>
+                <div class="tab-content">
+                    
+                    <details class="grimmoire-subtab danger-subtab" open>
+                        <summary><i class="ra ra-potion"></i> Interakcje z lekami</summary>
+                        <div class="subtab-content danger-block"><p>Dzięki wysokiej zawartości witaminy C, róża zwiększa wchłanianie żelaza. Należy zachować ostrożność przy jednoczesnym przyjmowaniu leków zawierających glin (witamina C zwiększa jego wchłanianie).</p></div>
+                    </details>
+                    
+
+                    
+                    <details class="grimmoire-subtab danger-subtab" open>
+                        <summary><i class="ra ra-lightning-bolt"></i> Przeciwwskazania</summary>
+                        <div class="subtab-content danger-block"><p>Podczas przygotowywania owoców należy używać rękawiczek (włoski drażnią skórę). Osoby ze skłonnością do powstawania kamieni nerkowych (szczawianowych) powinny skonsultować się z lekarzem przed przyjmowaniem dużych dawek witaminy C z róży.</p></div>
+                    </details>
+                    
+                </div>
+            </details>
+            
+
+            
+            <details class="grimmoire-tab">
+                <summary><i class="ra ra-cycle"></i> Cykl Życia i Ekosystem</summary>
+                <div class="tab-content">
+
+                    
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-sickle"></i> Kalendarz Biodynamiczny</summary>
+                        <div class="subtab-content task-list">
+                            
+                            <div class="task-item">
+                                <div class="task-head">
+                                    <strong>Zbiór owoców na witaminę C</strong>
+                                    <span class="task-month">M-c: 9, 10</span>
+                                </div>
+                                <p class="task-desc">Zbiór owoców w pełni wybarwionych, ale wciąż twardych. Po przymrozkach witamina C drastycznie spada, choć owoce stają się słodsze.</p>
+                                <div class="task-meta">
+                                    <span><i class="ra ra-moon-phases"></i> Księżyc przybywający</span>
+                                    <span><i class="ra ra-cloud-ring"></i> Słoneczna i sucha</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </details>
+                    
+
+                    
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-trefoil"></i> Permakultura i Gildie</summary>
+                        <div class="subtab-content">
+                            <p><strong>Rola w systemie:</strong></p>
+                            <ul class="eco-list mb-4">
+                                
+                                    <li><i class="ra ra-leaf"></i> Dynamiczny akumulator minerałów.</li>
+                                
+                                    <li><i class="ra ra-leaf"></i> Pionowa bariera chroniąca ogród przed wiatrem i intruzami.</li>
+                                
+                                    <li><i class="ra ra-leaf"></i> Siedlisko dla dzikich pszczół (pszczoły murarki lubią gniazdować w pobliżu róż).</li>
+                                
+                                    <li><i class="ra ra-leaf"></i> Źródło doskonałej biomasy pod mulcz.</li>
+                                
+                            </ul>
+
+                            <p><strong>Towarzysze (Gildia):</strong></p>
+                            <div class="guild-list">
+                                
+                                    
+                                    
+                                    <div class="guild-item">
+                                        <a href="/plant/czosnek" class="guild-link">
+                                            <i class="ra ra-double-leaf"></i> Czosnek
+                                        </a>
+                                        <p class="guild-role">Czosnek posadzony pod różami chroni je przed mszycami i czarną plamistością.</p>
+                                    </div>
+                                
+                                    
+                                    
+                                    <div class="guild-item">
+                                        <a href="/plant/lawenda" class="guild-link">
+                                            <i class="ra ra-double-leaf"></i> Lawenda
+                                        </a>
+                                        <p class="guild-role">Wspiera zapylanie i chroni dół krzewu przed przesychaniem.</p>
+                                    </div>
+                                
+                                    
+                                    
+                                    <div class="guild-item">
+                                        <a href="/plant/bez_czarny" class="guild-link">
+                                            <i class="ra ra-double-leaf"></i> Bez czarny
+                                        </a>
+                                        <p class="guild-role">Tworzą razem klasyczne zarośla biocenotyczne.</p>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </details>
+                    
+
+                </div>
+            </details>
+            
+
+            
+
+            
+            <details class="grimmoire-tab">
+                <summary><i class="ra ra-cauldron"></i> Przepisy z tą rośliną (24)</summary>
+                <div class="tab-content">
+                    <ul class="trivia-list">
+                        
+                            <li><i class="ra ra-emerald"></i>
+                                <a href="/przepisy/?q=Olej+aromatyczny+z+dzika+r%C3%B3%C5%BCa&amp;autoopen=true">Olej aromatyczny z dzika róża</a>
+                                
+                                <small style="color:#888;"> · olej</small>
+                            </li>
+                        
+                            <li><i class="ra ra-emerald"></i>
+                                <a href="/przepisy/?q=Dzika+r%C3%B3%C5%BCa+blanszowane+jak+szparagi&amp;autoopen=true">Dzika róża blanszowane jak szparagi</a>
+                                
+                                <small style="color:#888;"> · blanszowanie</small>
+                            </li>
+                        
+                            <li><i class="ra ra-emerald"></i>
+                                <a href="/przepisy/?q=Kiszone+dzika+r%C3%B3%C5%BCa+(kulinarne)&amp;autoopen=true">Kiszone dzika róża (kulinarne)</a>
+                                
+                                <small style="color:#888;"> · kiszenie</small>
+                            </li>
+                        
+                            <li><i class="ra ra-emerald"></i>
+                                <a href="/przepisy/?q=Sos+do+da%C5%84+z+dzika+r%C3%B3%C5%BCa&amp;autoopen=true">Sos do dań z dzika róża</a>
+                                
+                                <small style="color:#888;"> · sos</small>
+                            </li>
+                        
+                            <li><i class="ra ra-emerald"></i>
+                                <a href="/przepisy/?q=Serdeczny+Syrop+z+P%C5%82atk%C3%B3w+Dzikiej+R%C3%B3%C5%BCy&amp;autoopen=true">Serdeczny Syrop z Płatków Dzikiej Róży</a>
+                                
+                                
+                            </li>
+                        
+                            <li><i class="ra ra-emerald"></i>
+                                <a href="/przepisy/?q=Ognisty+Napar+Witaminowy+(%C5%9Awierz%C4%85bek,+R%C3%B3%C5%BCa,+Imbir)&amp;autoopen=true">Ognisty Napar Witaminowy (Świerząbek, Róża, Imbir)</a>
+                                
+                                
+                            </li>
+                        
+                            <li><i class="ra ra-emerald"></i>
+                                <a href="/przepisy/?q=Piekielny+Syrop+Wzmacniaj%C4%85cy+(%C5%9Awierz%C4%85bek,+Imbir,+Czosnek,+Chrzan)&amp;autoopen=true">Piekielny Syrop Wzmacniający (Świerząbek, Imbir, Czosnek, Chrzan)</a>
+                                
+                                
+                            </li>
+                        
+                            <li><i class="ra ra-emerald"></i>
+                                <a href="/przepisy/?q=Rosyjski+Wyci%C4%85g+Witaminowy+(Szczawik,+R%C3%B3%C5%BCa,+Porzeczka)&amp;autoopen=true">Rosyjski Wyciąg Witaminowy (Szczawik, Róża, Porzeczka)</a>
+                                
+                                
+                            </li>
+                        
+                            <li><i class="ra ra-emerald"></i>
+                                <a href="/przepisy/?q=Herbatka+dla+M%C5%82okos%C3%B3w+na+Zm%C4%99czenie+(Szczawik,+R%C3%B3%C5%BCa)&amp;autoopen=true">Herbatka dla Młokosów na Zmęczenie (Szczawik, Róża)</a>
+                                
+                                
+                            </li>
+                        
+                            <li><i class="ra ra-emerald"></i>
+                                <a href="/przepisy/?q=Rosyjski+Zrzut+Krzepy+(Szczawik,+Malina,+R%C3%B3%C5%BCa)&amp;autoopen=true">Rosyjski Zrzut Krzepy (Szczawik, Malina, Róża)</a>
+                                
+                                
+                            </li>
+                        
+                            <li><i class="ra ra-emerald"></i>
+                                <a href="/przepisy/?q=Czarna+Zupa+Odporno%C5%9Bci+(%C5%BBankiel,+Pokrzywa)&amp;autoopen=true">Czarna Zupa Odporności (Żankiel, Pokrzywa)</a>
+                                
+                                
+                            </li>
+                        
+                            <li><i class="ra ra-emerald"></i>
+                                <a href="/przepisy/?q=R%C3%B3%C5%BCana+Balia+z+Kwasem+Witaminowym+(Dzika+R%C3%B3%C5%BCa)&amp;autoopen=true">Różana Balia z Kwasem Witaminowym (Dzika Róża)</a>
+                                
+                                
+                            </li>
+                        
+                            <li><i class="ra ra-emerald"></i>
+                                <a href="/przepisy/?q=Krwawa+Zupa+Odporno%C5%9Bci+(Napar+z+R%C3%B3%C5%BCy)&amp;autoopen=true">Krwawa Zupa Odporności (Napar z Róży)</a>
+                                
+                                
+                            </li>
+                        
+                            <li><i class="ra ra-emerald"></i>
+                                <a href="/przepisy/?q=Krwawa+P%C5%82ukanka+Odka%C5%BCaj%C4%85ca+(Dzika+R%C3%B3%C5%BCa)&amp;autoopen=true">Krwawa Płukanka Odkażająca (Dzika Róża)</a>
+                                
+                                
+                            </li>
+                        
+                            <li><i class="ra ra-emerald"></i>
+                                <a href="/przepisy/?q=Krwawy+Ulep+Odporno%C5%9Bciowy+(Syrop+z+R%C3%B3%C5%BCy)&amp;autoopen=true">Krwawy Ulep Odpornościowy (Syrop z Róży)</a>
+                                
+                                
+                            </li>
+                        
+                            <li><i class="ra ra-emerald"></i>
+                                <a href="/przepisy/?q=Witaminowy+Tynk+z+Cierni+(Kataplazm+z+Dzikiej+R%C3%B3%C5%BCy)&amp;autoopen=true">Witaminowy Tynk z Cierni (Kataplazm z Dzikiej Róży)</a>
+                                
+                                
+                            </li>
+                        
+                            <li><i class="ra ra-emerald"></i>
+                                <a href="/przepisy/?q=Dymny+Kwas+Wzmacniaj%C4%85cy+(Okadzanie+z+Dzikiej+R%C3%B3%C5%BCy)&amp;autoopen=true">Dymny Kwas Wzmacniający (Okadzanie z Dzikiej Róży)</a>
+                                
+                                
+                            </li>
+                        
+                            <li><i class="ra ra-emerald"></i>
+                                <a href="/przepisy/?q=Krwawa+Ma%C5%BA+Witaminowa+(Smalec+z+Dzikiej+R%C3%B3%C5%BCy)&amp;autoopen=true">Krwawa Maź Witaminowa (Smalec z Dzikiej Róży)</a>
+                                
+                                
+                            </li>
+                        
+                            <li><i class="ra ra-emerald"></i>
+                                <a href="/przepisy/?q=Kwaskowy+Be%C5%82t+Szkorbutowy+(Esencja+z+R%C3%B3%C5%BCy)&amp;autoopen=true">Kwaskowy Bełt Szkorbutowy (Esencja z Róży)</a>
+                                
+                                
+                            </li>
+                        
+                            <li><i class="ra ra-emerald"></i>
+                                <a href="/przepisy/?q=Kwa%C5%9Bny+Tynk+Odporno%C5%9Bci+(R%C3%B3%C5%BCa+i+Malina)&amp;autoopen=true">Kwaśny Tynk Odporności (Róża i Malina)</a>
+                                
+                                
+                            </li>
+                        
+                            <li><i class="ra ra-emerald"></i>
+                                <a href="/przepisy/?q=Witaminowy+Tynk+Napotny+(Lipa+i+R%C3%B3%C5%BCa)&amp;autoopen=true">Witaminowy Tynk Napotny (Lipa i Róża)</a>
+                                
+                                
+                            </li>
+                        
+                            <li><i class="ra ra-emerald"></i>
+                                <a href="/przepisy/?q=Sok+%C5%BBycia+(Poziomka+i+R%C3%B3%C5%BCa)&amp;autoopen=true">Sok Życia (Poziomka i Róża)</a>
+                                
+                                
+                            </li>
+                        
+                            <li><i class="ra ra-emerald"></i>
+                                <a href="/przepisy/?q=Jedwabny+Opatrunek+(R%C3%B3%C5%BCa,+Nagietek,+Prawo%C5%9Blaz)&amp;autoopen=true">Jedwabny Opatrunek (Róża, Nagietek, Prawoślaz)</a>
+                                
+                                
+                            </li>
+                        
+                            <li><i class="ra ra-emerald"></i>
+                                <a href="/przepisy/?q=Napar+z+dzikich+kwiat%C3%B3w+%22Flower+Power%22&amp;autoopen=true">Napar z dzikich kwiatów &#34;Flower Power&#34;</a>
+                                <small title="przepis z internetu, przetłumaczony">🌐</small>
+                                <small style="color:#888;"> · napar</small>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </details>
+            
+
+            
+            <details class="grimmoire-tab">
+                <summary><i class="ra ra-scroll"></i> Wiedza Tajemna</summary>
+                <div class="tab-content">
+                    <ul class="trivia-list">
+                        
+                            <li><i class="ra ra-emerald"></i> Podczas II wojny światowej w Wielkiej Brytanii, ze względu na brak importowanych cytrusów, ogłoszono narodowy program zbierania dzikiej róży. Dzieci zbierały owoce, z których produkowano syrop dla niemowląt, by chronić je przed szkorbutem.</li>
+                        
+                            <li><i class="ra ra-emerald"></i> Włoski z wnętrza owoców to klasyczny składnik &#39;proszku na swędzenie&#39; (tzw. swędzipupa) używanego w żartach.</li>
+                        
+                            <li><i class="ra ra-emerald"></i> Naukowo udowodniono, że galaktolipidy zawarte w dzikiej róży (GOPO) działają tak skutecznie jak niektóre leki przeciwbólowe, ale bez skutków ubocznych dla żołądka.</li>
+                        
+                            <li><i class="ra ra-emerald"></i> Płatki dzikiej róży zbierane o świcie mają najsilniejszy aromat, ponieważ słońce nie zdążyło jeszcze odparować ich olejków.</li>
+                        
+                            <li><i class="ra ra-emerald"></i> Owoce róży mogą przetrwać na krzewach całą zimę, stanowiąc &#39;żelazną porcję&#39; energii dla ptaków w najtrudniejszych miesiącach.</li>
+                        
+                    </ul>
+                </div>
+            </details>
+            
+
+        </div>
+    </article>
+</div>
+
+<div id="grimmoireLightbox" class="lightbox-overlay" onclick="closeLightbox()">
+    <div class="lightbox-content">
+        <img id="lightboxImg" src="" alt="Powiększenie">
+        <div id="lightboxCaption" class="lightbox-caption-text"></div>
+    </div>
+</div>
+
+<style>
+    /* ARCHIWUM KWIATOWNIKA */
+    .arch-dl { margin: 0; }
+    .arch-dl dt { color: #d1b880; font-weight: bold; margin-top: 8px; }
+    .arch-dl dd { margin: 2px 0 0 12px; }
+    .arch-list { margin: 4px 0; padding-left: 18px; }
+    .arch-link, .arch-bib a { color: #a8c69f; font-size: 0.85em; word-break: break-all; }
+    .arch-src { font-size: 0.85em; }
+    .compare-link { display: inline-block; margin-top: 10px; color: #d1b880; font-size: 0.9rem; }
+</style>
+
+<style>
+    /* FUNDAMENTY */
+    .grimmoire-wrapper {
+        min-height: 100vh; background-size: cover; background-position: center;
+        background-attachment: fixed; position: relative; padding: 60px 20px;
+        color: #fdfaf0; font-family: 'Georgia', serif;
+    }
+    .grimmoire-overlay {
+        position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(15, 12, 10, 0.85); backdrop-filter: blur(12px); z-index: 1;
+    }
+    .grimmoire-container { position: relative; z-index: 2; max-width: 900px; margin: 0 auto; }
+
+    /* NAGŁÓWEK KARTY */
+    .grimmoire-hero { text-align: center; margin-bottom: 50px; }
+    .hero-title { font-size: 4rem; margin: 0; color: #d1b880; text-shadow: 0 4px 20px rgba(209, 184, 128, 0.3); font-family: 'Playfair Display', serif; }
+    .hero-subtitle { font-size: 1.4rem; color: #a89f91; font-style: italic; margin-top: 5px; }
+    .hero-family { font-size: 1rem; color: #7a6a58; }
+    .hero-divider { width: 100px; height: 3px; background: #8a9a5b; margin: 20px auto; border-radius: 2px; }
+    .hero-desc { font-size: 1.15rem; line-height: 1.8; color: #e4dfd5; max-width: 800px; margin: 0 auto; }
+
+    /* GALERIA ZDJĘĆ */
+    .plant-gallery { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 30px; }
+    .gallery-thumb { width: 120px; height: 120px; border-radius: 8px; border: 2px solid #3e362c; overflow: hidden; position: relative; cursor: pointer; transition: all 0.3s; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+    .gallery-thumb img { width: 100%; height: 100%; object-fit: cover; filter: sepia(0.4) brightness(0.8); transition: all 0.4s; }
+    .gallery-thumb:hover { transform: translateY(-5px) scale(1.05); border-color: #d1b880; z-index: 10; box-shadow: 0 8px 25px rgba(209, 184, 128, 0.3); }
+    .gallery-thumb:hover img { filter: sepia(0) brightness(1.1); }
+    .gallery-caption { position: absolute; bottom: 0; left: 0; width: 100%; background: rgba(18, 15, 12, 0.85); color: #d1b880; text-align: center; font-size: 0.75rem; padding: 5px 0; text-transform: uppercase; font-family: 'Playfair Display', serif; }
+
+    /* LIGHTBOX */
+    .lightbox-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.92); z-index: 9999; display: flex; justify-content: center; align-items: center; flex-direction: column; backdrop-filter: blur(8px); opacity: 0; pointer-events: none; transition: opacity 0.3s ease; cursor: zoom-out; }
+    .lightbox-overlay.active { opacity: 1; pointer-events: auto; }
+    .lightbox-content { position: relative; max-width: 90vw; max-height: 90vh; text-align: center; transform: scale(0.95); transition: transform 0.3s ease; }
+    .lightbox-overlay.active .lightbox-content { transform: scale(1); }
+    .lightbox-content img { max-width: 100%; max-height: 80vh; border: 3px solid #d1b880; border-radius: 8px; box-shadow: 0 0 50px rgba(209, 184, 128, 0.2); }
+    .lightbox-caption-text { color: #d1b880; font-size: 1.5rem; font-family: 'Playfair Display', serif; margin-top: 15px; text-transform: capitalize; letter-spacing: 2px; }
+
+    /* SYSTEM GŁÓWNYCH ZAKŁADEK (ACCORDION) */
+    .grimmoire-book { display: flex; flex-direction: column; gap: 15px; margin-bottom: 60px; }
+    .grimmoire-tab { background: rgba(25, 22, 18, 0.6); border: 1px solid #3e362c; border-radius: 8px; overflow: hidden; transition: all 0.3s ease; }
+    .grimmoire-tab[open] { background: rgba(30, 27, 23, 0.95); border-color: #5a4f41; box-shadow: 0 10px 30px rgba(0,0,0,0.6); }
+    .grimmoire-tab > summary { list-style: none; padding: 20px 25px; font-size: 1.4rem; color: #d1b880; cursor: pointer; display: flex; align-items: center; gap: 15px; font-family: 'Playfair Display', serif; transition: background 0.2s; }
+    .grimmoire-tab > summary::-webkit-details-marker { display: none; }
+    .grimmoire-tab:not([open]) > summary:hover { background: rgba(209, 184, 128, 0.05); }
+    .grimmoire-tab[open] > summary { border-bottom: 1px solid #3e362c; color: #fdfaf0; }
+    .tab-content { padding: 25px; color: #dcd7cb; line-height: 1.7; font-size: 1.05rem; animation: slideDown 0.3s ease-out; display: flex; flex-direction: column; gap: 15px; }
+    @keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* NOWOŚĆ: PODZAKŁADKI (SUB-ACCORDION) */
+    .grimmoire-subtab { background: rgba(0, 0, 0, 0.3); border-left: 3px solid #8a9a5b; border-radius: 0 6px 6px 0; overflow: hidden; transition: all 0.3s ease; }
+    .grimmoire-subtab[open] { background: rgba(0, 0, 0, 0.5); border-color: #d1b880; }
+    .grimmoire-subtab > summary { list-style: none; padding: 15px 20px; font-size: 1.15rem; color: #8a9a5b; cursor: pointer; display: flex; align-items: center; gap: 12px; font-family: 'Playfair Display', serif; transition: all 0.2s; }
+    .grimmoire-subtab > summary::-webkit-details-marker { display: none; }
+    .grimmoire-subtab:not([open]) > summary:hover { background: rgba(138, 154, 91, 0.1); color: #d1b880; }
+    .grimmoire-subtab[open] > summary { border-bottom: 1px dashed #3e362c; color: #fdfaf0; }
+    .subtab-content { padding: 20px; animation: slideDown 0.3s ease-out; }
+
+    /* ZAGROŻENIA I OSTRZEŻENIA */
+    .danger-tab[open] { border-color: #9b4b4b; }
+    .danger-tab[open] > summary { color: #e57373; }
+    .danger-subtab { border-left-color: #9b4b4b; }
+    .danger-subtab[open] { border-left-color: #e57373; }
+    .danger-subtab > summary { color: #e57373; }
+    .danger-subtab:not([open]) > summary:hover { background: rgba(155, 75, 75, 0.1); color: #ff8a80; }
+    .danger-block p { margin: 0; color: #ffcdd2; }
+    .warning-box { background: rgba(155, 75, 75, 0.1); padding: 15px; border-radius: 4px; }
+
+    /* WNĘTRZA PODZAKŁADEK */
+    .sub-list { padding-left: 20px; margin-bottom: 0; }
+    .sub-list li { margin-bottom: 8px; }
+    .energy-quote { margin-top: 15px; padding-top: 15px; border-top: 1px dashed #3e362c; font-style: italic; color: #a89f91; }
+
+    /* SUROWCE */
+    .subtab-title-group { display: flex; align-items: center; gap: 10px; width: 100%; }
+    .part-badge { background: #8a9a5b; color: #120f0c; padding: 2px 10px; font-size: 0.75rem; font-weight: bold; border-radius: 4px; text-transform: uppercase; margin-left: auto; font-family: 'Georgia', serif;}
+    .part-desc { font-size: 0.95rem; color: #a89f91; margin-bottom: 15px; margin-top: 0; }
+    .chem-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chem-link { display: inline-flex; align-items: center; gap: 5px; background: rgba(138, 154, 91, 0.1); border: 1px solid #8a9a5b; color: #cddc39; padding: 4px 10px; font-size: 0.85rem; border-radius: 4px; text-decoration: none; transition: all 0.2s; }
+    .chem-link i { font-size: 0.75rem; color: #8a9a5b; }
+    .chem-link:hover { background: #8a9a5b; color: #120f0c; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.3); text-decoration: none; }
+    .chem-link:hover i { color: #120f0c; }
+    .part-warning { color: #e57373; font-size: 0.9rem; margin-top: 15px; padding-top: 10px; border-top: 1px dashed #3e362c; }
+    .part-time { margin-top: 15px; text-align: right; font-size: 0.9rem; color: #8a9a5b; }
+
+    /* KALENDARZ & GILDIE */
+    .task-item { border-bottom: 1px dashed #3e362c; padding-bottom: 15px; margin-bottom: 15px; }
+    .task-item:last-child { border: none; margin-bottom: 0; padding-bottom: 0; }
+    .task-head { display: flex; justify-content: space-between; color: #d1b880; margin-bottom: 5px; }
+    .task-month { font-size: 0.8rem; background: #3e362c; padding: 2px 8px; border-radius: 4px; }
+    .task-desc { font-size: 0.95rem; margin-bottom: 10px; }
+    .task-meta span { display: inline-block; font-size: 0.85rem; color: #a89f91; margin-right: 15px; }
+
+    .eco-list { list-style: none; padding: 0; margin-bottom: 0; }
+    .eco-list li { margin-bottom: 8px; display: flex; gap: 10px; align-items: flex-start; }
+    .eco-list li i { color: #8a9a5b; margin-top: 4px; }
+
+    .guild-list { display: flex; flex-direction: column; gap: 12px; }
+    .guild-item { background: rgba(0,0,0,0.2); border: 1px solid #3e362c; padding: 12px 15px; border-radius: 6px; }
+    .guild-link { color: #d1b880; font-weight: bold; text-decoration: none; font-family: 'Playfair Display', serif; font-size: 1.15rem; transition: color 0.2s; display: inline-flex; align-items: center; gap: 8px; }
+    .guild-link i { font-size: 1rem; color: #8a9a5b; }
+    .guild-link:hover { color: #fdfaf0; text-shadow: 0 0 8px rgba(209, 184, 128, 0.4); text-decoration: none; }
+    .guild-role { color: #a89f91; font-size: 0.95rem; margin: 5px 0 0 0; }
+
+    .trivia-list { list-style: none; padding: 0; margin: 0; }
+    .trivia-list li { margin-bottom: 15px; padding-left: 25px; position: relative; }
+    .trivia-list li i { position: absolute; left: 0; top: 4px; color: #8a9a5b; }
+</style>
+
+<script>
+    function openLightbox(imageUrl, imageCaption) {
+        const overlay = document.getElementById('grimmoireLightbox');
+        const img = document.getElementById('lightboxImg');
+        const caption = document.getElementById('lightboxCaption');
+
+        img.src = imageUrl;
+        caption.innerText = imageCaption;
+        overlay.classList.add('active');
+    }
+
+    function closeLightbox() {
+        document.getElementById('grimmoireLightbox').classList.remove('active');
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") closeLightbox();
+    });
+</script>
+
+</div>
+
+<footer>
+    <p><i class="ra ra-hourglass"></i> ROK 2026 &copy; Kwiatownik - Akademicki Projekt Zielnika</p>
+</footer>
+
+<div id="frozenModal" class="frozen-modal-overlay">
+    <div class="frozen-modal-content">
+        <span class="frozen-modal-close" onclick="closeFrozenModal()">&times;</span>
+        <h4 style="color: #3e4a3d; margin-bottom: 15px;"><i class="ra ra-parchment"></i> Funkcja wstrzymana</h4>
+        <p style="font-size: 0.95rem; color: #5a4f41;">Aby aplikacja mogła być dostępna za darmo i działać błyskawicznie, przeszliśmy na wersję statyczną. Moduł logowania i komentarzy jest obecnie wyłączony.</p>
+        <a href="https://buycoffee.to/miguana" target="_blank" class="btn mt-3 fw-bold" style="background-color: #3a2b21; border: 1px solid #5a4b3a; color: #d1b880; padding: 8px 16px; font-size: 0.9rem;">
+            <i class="ra ra-beer"></i> Postaw Kufel Kawy
+        </a>
+    </div>
+</div>
+
+<div class="astro-item" style="margin-right:0;">
+    <i class="ra ra-trefoil"></i>
+    <div>
+        <span class="astro-label">Koło Roku:</span>
+        <span class="astro-value"
+              data-bs-toggle="tooltip"
+              data-bs-html="true"
+              title="<b>Stary Czas:</b> Równonoc Jesienna. Czas bilansu, dziękczynienia i przygotowania do zimy.<br><b>Symbol:</b> Jabłka, jarzębina, róg obfitości<br><b>Tradycja:</b> Zbiór korzeni, robienie zapasów i win, dziękowanie za plony.">
+            Dożynki (Mabon)
+        </span>
+    </div>
+</div>
+
+<script>
+    function setupInfiniteScroller(wrapperId, speed) {
+        const wrapper = document.getElementById(wrapperId);
+        if (!wrapper) return;
+        const content = wrapper.querySelector('.scrollable-content');
+
+        // Duplikujemy zawartość dla pętli
+        content.innerHTML += content.innerHTML;
+
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+        let currentScroll = 0;
+        const halfWidth = wrapper.scrollWidth / 2; // Obliczamy raz (wydajność!)
+
+        function autoScroll() {
+            if (!isDown) {
+                currentScroll += speed;
+                if (currentScroll >= halfWidth) {
+                    currentScroll = 0;
+                }
+                wrapper.scrollLeft = currentScroll;
+            }
+            requestAnimationFrame(autoScroll);
+        }
+        requestAnimationFrame(autoScroll);
+
+        // --- OBSŁUGA MYSZKI I DOTYKU ---
+        function startDrag(pageX) {
+            isDown = true;
+            wrapper.style.cursor = 'grabbing';
+            startX = pageX - wrapper.offsetLeft;
+            scrollLeft = wrapper.scrollLeft;
+        }
+
+        function stopDrag() {
+            if (!isDown) return;
+            isDown = false;
+            wrapper.style.cursor = 'grab';
+            // KLUCZOWA POPRAWKA: Aktualizujemy licznik animacji do miejsca, w którym puściliśmy kursor
+            currentScroll = wrapper.scrollLeft;
+        }
+
+        function doDrag(pageX) {
+            if (!isDown) return;
+            const x = pageX - wrapper.offsetLeft;
+            const walk = (x - startX) * 1.5;
+            wrapper.scrollLeft = scrollLeft - walk;
+        }
+
+        // Mysz
+        wrapper.addEventListener('mousedown', (e) => startDrag(e.pageX));
+        window.addEventListener('mouseup', stopDrag); // window, by łapało puszczenie poza paskiem
+        wrapper.addEventListener('mouseleave', stopDrag);
+        wrapper.addEventListener('mousemove', (e) => {
+            if(!isDown) return;
+            e.preventDefault();
+            doDrag(e.pageX);
+        });
+
+        // Telefony (Dotyk)
+        wrapper.addEventListener('touchstart', (e) => startDrag(e.touches[0].pageX), {passive: true});
+        wrapper.addEventListener('touchend', stopDrag, {passive: true});
+        wrapper.addEventListener('touchmove', (e) => doDrag(e.touches[0].pageX), {passive: true});
+    }
+
+    // Odpalamy skrypty dla obu banerów
+    document.addEventListener("DOMContentLoaded", function() {
+
+        // --- NOWOŚĆ: LOSOWANIE KOLEJNOŚCI CIEKAWOSTEK ---
+        const marqueeContent = document.querySelector('#banner-marquee .scrollable-content');
+        if (marqueeContent) {
+            const items = Array.from(marqueeContent.children);
+            // Algorytm mieszający
+            for (let i = items.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                marqueeContent.appendChild(items[j]);
+            }
+        }
+        // ----------------------------------------------
+
+        // Górny pasek z ikonami - porusza się niesamowicie powoli i majestatycznie
+        setupInfiniteScroller('banner-astro', 0.2);
+
+        // Pasek z Ciekawostkami - porusza się ciut szybciej
+        setupInfiniteScroller('banner-marquee', 0.6);
+    });
+
+    // --- OBSŁUGA MODALU ---
+    const modal = document.getElementById('frozenModal');
+    document.querySelectorAll('.frozen-feature').forEach(el => {
+        el.addEventListener('click', function(e) {
+            e.preventDefault();
+            if(modal) modal.style.display = "block";
+        });
+    });
+    function closeFrozenModal() {
+        if(modal) modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) closeFrozenModal();
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+window.renderFavoritesDropdown = function() {
+    const menu = document.getElementById('favoritesDropdownMenu');
+    if (!menu) return;
+
+    const favPlants = JSON.parse(localStorage.getItem("herbariumFavorites")) || [];
+    const favRecipes = JSON.parse(localStorage.getItem("recipeFavorites")) || [];
+
+    if (menu.classList.contains('show')) return;
+
+    // Funkcja pomocnicza do tworzenia slugów (taka sama jak w Pythonie)
+    const slugify = (text) => {
+        const accents = {'ą':'a','ć':'c','ę':'e','ł':'l','ń':'n','ó':'o','ś':'s','ź':'z','ż':'z'};
+        return text.toLowerCase()
+            .replace(/[ąćęłńóśźż]/g, match => accents[match])
+            .replace(/\s+/g, '_')
+            .replace(/[^\w\-]+/g, '')
+            .replace(/\-\-+/g, '_');
+    };
+
+    let html = '';
+    if (favPlants.length === 0 && favRecipes.length === 0) {
+        html = '<li><span class="dropdown-item text-muted">Twój zielnik jest pusty.</span></li>';
+    } else {
+        if (favPlants.length > 0) {
+            html += '<li><h6 class="dropdown-header"><i class="ra ra-leaf"></i> Twoje Zioła</h6></li>';
+            favPlants.forEach(p => {
+                // ZMIANA: Link prowadzi teraz bezpośrednio do strony rośliny
+                const slug = slugify(p);
+                html += `<li><a class="dropdown-item" href="/plant/${slug}/">${p}</a></li>`;
+            });
+        }
+        if (favRecipes.length > 0) {
+            if (favPlants.length > 0) html += '<li><hr class="dropdown-divider"></li>';
+            html += '<li><h6 class="dropdown-header"><i class="ra ra-cauldron"></i> Twoje Receptury</h6></li>';
+            favRecipes.forEach(r => {
+                // Przepisy nadal szukamy przez parametr, bo nie mają własnych podstron
+                html += `<li><a class="dropdown-item" href="/przepisy/?q=${encodeURIComponent(r)}">${r}</a></li>`;
+            });
+        }
+    }
+    menu.innerHTML = html;
+};
+
+// Funkcja pomocnicza do odświeżania z innych plików
+window.refreshGlobalFavorites = function() {
+    window.renderFavoritesDropdown();
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Pierwsze renderowanie
+    window.renderFavoritesDropdown();
+
+    // Obsługa rozwijania menu przez Bootstrapa
+    const dropdownBtn = document.querySelector('.dropdown-toggle');
+    if (dropdownBtn) {
+        // Inicjalizacja instancji dropdown
+        const bsDropdown = new bootstrap.Dropdown(dropdownBtn);
+
+        // Odświeżaj listę tuż przed każdym pokazaniem
+        dropdownBtn.addEventListener('show.bs.dropdown', () => {
+            window.renderFavoritesDropdown();
+        });
+    }
+
+    // Sortowanie (jeśli funkcja istnieje w recipes.js)
+    if (typeof sortResultsByFavorites === 'function') {
+        setTimeout(sortResultsByFavorites, 150);
+    }
+});
+</script>
+
+<script>
+function forceGPS() {
+    const locSpan = document.getElementById('locValue');
+    locSpan.innerText = "Szukam...";
+
+    if ("geolocation" in navigator) {
+        navigator.geolocation.getCurrentPosition(
+            async (position) => {
+                const lat = position.coords.latitude;
+                const lon = position.coords.longitude;
+
+                // Używamy darmowego API Nominatim tylko po to, by przetłumaczyć współrzędne na nazwę miasta w JS
+                try {
+                    const resp = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}&zoom=10`);
+                    const data = await resp.json();
+                    let city = "Twoja Okolica";
+                    if(data.address) {
+                        city = data.address.city || data.address.town || data.address.village || data.address.county || "Twoja Okolica";
+                    }
+
+                    // Zapisujemy ciasteczka na 30 dni
+                    document.cookie = `user_lat=${lat}; path=/; max-age=${60*60*24*30}`;
+                    document.cookie = `user_lon=${lon}; path=/; max-age=${60*60*24*30}`;
+                    document.cookie = `user_city=${encodeURIComponent(city)}; path=/; max-age=${60*60*24*30}`;
+
+                    // Przeładowujemy stronę by Python złapał nowe ciastka
+                    window.location.reload();
+                } catch (e) {
+                    locSpan.innerText = "Błąd sieci";
+                }
+            },
+            (error) => {
+                alert("Nie udało się pobrać GPS. Upewnij się, że masz włączoną lokalizację w telefonie i wyraziłeś zgodę w przeglądarce.");
+                locSpan.innerText = "Błąd GPS";
+            },
+            { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+        );
+    } else {
+        alert("Twoja przeglądarka nie wspiera GPS.");
+    }
+}
+</script>
+
+<script>
+    // --- SKRYPT AKTUALIZACJI LOKALIZACJI GPS (WERSJA DIAGNOSTYCZNA) ---
+    document.addEventListener("DOMContentLoaded", () => {
+        function getCookie(name) {
+            let matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+            return matches ? decodeURIComponent(matches[1]) : undefined;
+        }
+
+        // UWAGA: Usuwamy stare ciasteczko, by wymusić ponowne zapytanie (Przydatne do testów!)
+
+
+        if (!getCookie('gps_asked')) {
+            if ("geolocation" in navigator) {
+
+
+
+                // Zapisujemy ciasteczko pytania
+                document.cookie = "gps_asked=true; path=/; max-age=" + 60*60*24*30;
+
+                // Dodajemy parametry geolokalizacji, które wymuszają lepsze działanie na mobile
+                const geoOptions = {
+                    enableHighAccuracy: false, // false działa szybciej i nie wymaga satelitów (wystarczy stacja BTS/WiFi)
+                    timeout: 10000,            // Czekamy maksymalnie 10 sekund
+                    maximumAge: 0              // Nie chcemy starych danych z pamięci telefonu
+                };
+
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        const lat = position.coords.latitude;
+                        const lon = position.coords.longitude;
+
+                        document.cookie = `user_lat=${lat}; path=/; max-age=` + 60*60*24;
+                        document.cookie = `user_lon=${lon}; path=/; max-age=` + 60*60*24;
+
+                        window.location.reload();
+                    },
+                    (error) => {
+                        // Ten alert powie Ci dokładnie, dlaczego telefon odmówił!
+                        alert("⚠️ Odmowa GPS. Kod błędu: " + error.code + " - " + error.message);
+                    },
+                    geoOptions
+                );
+            } else {
+                alert("⚠️ Twoja przeglądarka na tym telefonie nie wspiera geolokalizacji.");
+            }
+        }
+    });
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    function getCookie(name) {
+        let matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+    }
+
+    // Jeśli serwer nie wykrył poprawnej lokalizacji (np. pokazuje Frankfurt/Czyżowice),
+    // lub minęło 24h, spróbuj pobrać ją po stronie klienta
+    if (!getCookie('user_lat')) {
+        if ("geolocation" in navigator) {
+            navigator.geolocation.getCurrentPosition((position) => {
+                const lat = position.coords.latitude;
+                const lon = position.coords.longitude;
+
+                // Zapisujemy do ciastek (ważne 24h)
+                document.cookie = `user_lat=${lat}; path=/; max-age=${60*60*24}`;
+                document.cookie = `user_lon=${lon}; path=/; max-age=${60*60*24}`;
+
+                // Przeładowujemy raz, żeby Python odczytał nowe ciastka
+                window.location.reload();
+            }, null, { timeout: 5000 });
+        }
+    }
+});
+</script>
+<script src="/static/js/magic_lens.js"></script>
+
+
+</body>
+</html>

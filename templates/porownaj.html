@@ -5,55 +5,96 @@
     <h1 class="compare-title"><i class="ra ra-scroll-unfurled"></i> Porównywarka roślin</h1>
     <p class="text-muted">Wybierz dwie lub trzy rośliny, aby zestawić ich naturę, surowce, zastosowanie i bezpieczeństwo.</p>
 
-    <form method="get" class="compare-form">
+    <form id="compareForm" class="compare-form">
         {% for key in ['a', 'b', 'c'] %}
         <select name="{{ key }}" class="form-select">
             <option value="">{% if key == 'c' %}(opcjonalnie trzecia){% else %}— wybierz roślinę —{% endif %}</option>
-            {% for p in all_plants %}
-            <option value="{{ p.id }}" {% if (ids + ['', '', ''])[['a','b','c'].index(key)] == p.id %}selected{% endif %}>{{ p.name }}</option>
-            {% endfor %}
+            {% for p in all_plants %}<option value="{{ p.id }}">{{ p.name }}</option>{% endfor %}
         </select>
         {% endfor %}
-        <button class="btn compare-btn">Porównaj</button>
+        <button class="btn compare-btn" type="submit">Porównaj</button>
     </form>
 
-    {% if columns|length >= 1 %}
-    {% set rows = [
-        ('nazwa_lat', 'Nazwa łacińska'), ('rodzina', 'Rodzina'), ('opis', 'Opis'),
-        ('profil', 'Profil energetyczny'), ('wymagania', 'Wymagania siedliskowe'), ('czesci', 'Surowce (części rośliny)'),
-        ('medyczne', 'Zastosowanie lecznicze'), ('rzemieslnicze', 'Rzemiosło'), ('barwniki', 'Barwienie'),
-        ('interakcje', 'Interakcje z lekami'), ('ostrzezenia', 'Przeciwwskazania'), ('przepisy', 'Przepisy w Kwiatowniku')] %}
-    <div class="table-responsive">
-    <table class="table compare-table">
-        <thead>
-            <tr><th></th>
-            {% for c in columns %}
-                <th><a href="{{ url_for('plants.plant_detail', plant_id=c.id) }}">{{ c.nazwa_pl }}</a>
-                    {% if c.archiwum %}<small class="text-muted">(archiwum)</small>{% endif %}</th>
-            {% endfor %}</tr>
-        </thead>
-        <tbody>
-        {% for key, label in rows %}
-            <tr><th scope="row">{{ label }}</th>
-            {% for c in columns %}
-                {% set v = c[key] %}
-                <td class="{{ 'danger-cell' if key in ('interakcje', 'ostrzezenia') and v else '' }}">
-                    {% if v is mapping %}
-                        {% for k, x in v.items() if x %}<div><strong>{{ k | replace('_', ' ') | capitalize }}:</strong>
-                            {% if x is mapping %}{{ x.values() | select('string') | join(', ') }}{% elif x is string %}{{ x }}{% elif x is iterable %}{{ x | join(', ') }}{% else %}{{ x }}{% endif %}</div>{% endfor %}
-                    {% elif v is string %}{{ v }}
-                    {% elif v is iterable %}{{ v | join('; ') }}
-                    {% elif v is not none %}{{ v }}
-                    {% else %}<span class="text-muted">—</span>{% endif %}
-                </td>
-            {% endfor %}</tr>
-        {% endfor %}
-        </tbody>
-    </table>
-    </div>
+    <div id="compareResult"></div>
     <p class="text-muted small">Informacje mają charakter edukacyjny i nie zastępują porady lekarza ani farmaceuty.</p>
-    {% endif %}
 </div>
+
+<script type="application/json" id="compareData">{{ rows | tojson }}</script>
+<script>
+(function () {
+    const DATA = JSON.parse(document.getElementById('compareData').textContent);
+    const ROWS = [
+        ['nazwa_lat', 'Nazwa łacińska'], ['rodzina', 'Rodzina'], ['opis', 'Opis'],
+        ['profil', 'Profil energetyczny'], ['wymagania', 'Wymagania siedliskowe'], ['czesci', 'Surowce (części rośliny)'],
+        ['medyczne', 'Zastosowanie lecznicze'], ['rzemieslnicze', 'Rzemiosło'], ['barwniki', 'Barwienie'],
+        ['interakcje', 'Interakcje z lekami'], ['ostrzezenia', 'Przeciwwskazania'], ['przepisy', 'Przepisy w Kwiatowniku']];
+    const DANGER = ['interakcje', 'ostrzezenia'];
+    const form = document.getElementById('compareForm');
+    const out = document.getElementById('compareResult');
+
+    function label(k) { k = String(k).replace(/_/g, ' '); return k.charAt(0).toUpperCase() + k.slice(1); }
+    function flat(v) {                       // wartosc -> tekst (listy, obiekty)
+        if (v === null || v === undefined || v === '') return '';
+        if (Array.isArray(v)) return v.map(flat).filter(Boolean).join('; ');
+        if (typeof v === 'object') return Object.values(v).map(flat).filter(Boolean).join(', ');
+        return String(v);
+    }
+    function fill(td, v) {                   // textContent = bez ryzyka wstrzykniecia HTML
+        if (v && typeof v === 'object' && !Array.isArray(v)) {
+            const entries = Object.entries(v).filter(([, x]) => flat(x));
+            if (!entries.length) { td.innerHTML = '<span class="text-muted">—</span>'; return; }
+            entries.forEach(([k, x]) => {
+                const div = document.createElement('div');
+                const b = document.createElement('strong'); b.textContent = label(k) + ': ';
+                div.appendChild(b); div.appendChild(document.createTextNode(flat(x)));
+                td.appendChild(div);
+            });
+            return;
+        }
+        const text = flat(v);
+        if (text) td.textContent = text; else td.innerHTML = '<span class="text-muted">—</span>';
+    }
+    function render(ids) {
+        out.innerHTML = '';
+        const cols = ids.filter(id => DATA[id]);
+        if (!cols.length) return;
+        const wrap = document.createElement('div'); wrap.className = 'table-responsive';
+        const table = document.createElement('table'); table.className = 'table compare-table';
+        const head = table.createTHead().insertRow(); head.appendChild(document.createElement('th'));
+        cols.forEach(id => {
+            const th = document.createElement('th');
+            const a = document.createElement('a'); a.href = '/plant/' + encodeURIComponent(id) + '/';
+            a.textContent = DATA[id].nazwa_pl || id; th.appendChild(a);
+            if (DATA[id].archiwum) { const s = document.createElement('small'); s.className = 'text-muted'; s.textContent = ' (archiwum)'; th.appendChild(s); }
+            head.appendChild(th);
+        });
+        const body = table.createTBody();
+        ROWS.forEach(([key, name]) => {
+            const tr = body.insertRow();
+            const th = document.createElement('th'); th.scope = 'row'; th.textContent = name; tr.appendChild(th);
+            cols.forEach(id => {
+                const td = tr.insertCell(); const v = DATA[id][key];
+                if (DANGER.includes(key) && flat(v)) td.className = 'danger-cell';
+                fill(td, v);
+            });
+        });
+        wrap.appendChild(table); out.appendChild(wrap);
+    }
+    function current() { return ['a', 'b', 'c'].map(k => form.elements[k].value).filter(Boolean); }
+
+    const params = new URLSearchParams(window.location.search);
+    ['a', 'b', 'c'].forEach(k => { if (params.get(k)) form.elements[k].value = params.get(k); });
+    render(current());
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        const ids = current();
+        const q = new URLSearchParams(); ['a', 'b', 'c'].forEach((k, i) => { if (form.elements[k].value) q.set(k, form.elements[k].value); });
+        history.replaceState(null, '', window.location.pathname + (q.toString() ? '?' + q : ''));
+        render(ids);
+    });
+    form.querySelectorAll('select').forEach(s => s.addEventListener('change', () => render(current())));
+})();
+</script>
 
 <style>
     .compare-title { font-family: 'Playfair Display', serif; color: #3e4a3d; }
