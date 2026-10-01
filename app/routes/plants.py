@@ -5,6 +5,7 @@ from app.models import Comment
 from app.extensions import db
 from app.utils.helpers import get_plant_data, get_all_plants_list, get_all_therapeutic_keywords, plants_dir
 from app.utils.legacy import get_legacy_plant
+from app.utils.merged import czesci_generatora, ostrzezenia_generatora
 from app.routes.recipes import recipes_for_plant, is_from_web
 from astro_engine import get_astrological_data
 
@@ -131,28 +132,20 @@ def generator():
 
     for pid in all_plants_ids:
         data = get_plant_data(pid)
-        if data and 'czesci_rosliny' in data:
-            parts_info = {}
-            raw_general_warn = data.get('ostrzezenia')
-            general_warn_str = " ".join(raw_general_warn) if isinstance(raw_general_warn, list) else str(
-                raw_general_warn or "")
-
-            for part_name, part_data in data['czesci_rosliny'].items():
-                props_text = part_data.get('wlasciwości', '') or part_data.get('wlasciwosci', '')
-                ingr_raw = part_data.get('skladniki_aktywne', [])
-                ingr_text = ", ".join(ingr_raw) if isinstance(ingr_raw, list) else str(ingr_raw or "")
-
-                part_warn_raw = part_data.get('ostrzezenia')
-                part_warn_str = " ".join(part_warn_raw) if isinstance(part_warn_raw, list) else str(
-                    part_warn_raw or general_warn_str)
-
-                parts_info[part_name] = {'props': props_text, 'ingr': ingr_text, 'warn': part_warn_str}
-                if props_text:
-                    words = [p.strip().lower() for p in props_text.replace(',', ' ').split() if len(p) > 3]
-                    all_properties.update(words)
-
-            plants_data.append({'slug': pid, 'nazwa_pl': data.get('nazwa_pl', 'Nieznana'), 'parts': parts_info,
-                                'warnings': general_warn_str})
+        if not data:
+            continue
+        # czesci reczne (z wiedza z sieci wmontowana przez Siedzibe) + nowe czesci znane tylko z sieci
+        parts_info = czesci_generatora(data)
+        if not parts_info:
+            continue
+        # przeciwwskazania + interakcje calej rosliny (z wiedza z sieci, gdy scalona)
+        general_warn_str = ostrzezenia_generatora(data)
+        for info in parts_info.values():
+            if info['props']:
+                words = [p.strip().lower() for p in info['props'].replace(',', ' ').split() if len(p) > 3]
+                all_properties.update(words)
+        plants_data.append({'slug': pid, 'nazwa_pl': data.get('nazwa_pl', 'Nieznana'), 'parts': parts_info,
+                            'warnings': general_warn_str})
 
     plants_data.sort(key=lambda x: x['nazwa_pl'])
     comments = Comment.query.filter_by(plant_id='generator').order_by(Comment.date_posted.desc()).all()

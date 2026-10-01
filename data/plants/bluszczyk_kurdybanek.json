@@ -1,0 +1,853 @@
+{
+  "id": "bluszczyk_kurdybanek",
+  "nazwa_pl": "Bluszczyk kurdybanek",
+  "nazwa_lat": "Glechoma hederacea",
+  "rodzina": "",
+  "opis": "Kwiaty mają kształt funelu, są symetryczne i mają kolor niebieski lub fioletowy.",
+  "tagi": [
+    "z sieci"
+  ],
+  "ciekawostki": [],
+  "ostrzezenia": "",
+  "_siedziba_nowa": true,
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-09-30",
+    "uporzadkowano": "2026-09-30",
+    "uklad": "llm:gemini/gemini-3.5-flash",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (pl): Bluszczyk kurdybanek",
+        "url": "https://pl.wikipedia.org/wiki/Bluszczyk_kurdybanek",
+        "jezyk": "pl",
+        "typ": "wikipedia",
+        "nr": 1
+      },
+      {
+        "nazwa": "Wikipedia (de): Gundermann",
+        "url": "https://de.wikipedia.org/wiki/Gundermann",
+        "jezyk": "de",
+        "typ": "wikipedia",
+        "nr": 2
+      },
+      {
+        "nazwa": "Wikipedia (en): Glechoma hederacea",
+        "url": "https://en.wikipedia.org/wiki/Glechoma_hederacea",
+        "jezyk": "en",
+        "typ": "wikipedia",
+        "nr": 3
+      },
+      {
+        "nazwa": "natuerlich.thieme.de",
+        "url": "https://natuerlich.thieme.de/heilpflanzen/detail/gundermann-heilpflanze-aus-germanischer-zeit-3528",
+        "jezyk": "de-DE",
+        "typ": "strona",
+        "nr": 4
+      },
+      {
+        "nazwa": "www.eatweeds.co.uk",
+        "url": "https://www.eatweeds.co.uk/ground-ivy-glechoma-hederacea",
+        "jezyk": "en-GB",
+        "typ": "strona",
+        "nr": 5
+      },
+      {
+        "nazwa": "www.zelena-planeta.ua",
+        "url": "https://www.zelena-planeta.ua/nadzvichajnij-rozhidnik",
+        "jezyk": "uk",
+        "typ": "strona",
+        "nr": 6
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "opis",
+        "tytul": "Opis i wygląd",
+        "podsumowanie": "Bluszczyk kurdybanek to zimozielona roślina trwała o płożących rozłogach, charakteryzująca się nerkowatymi, karbowanymi liśćmi o korzennym zapachu oraz symetrycznymi, fioletowymi lub niebieskimi kwiatami o lejkowatym kształcie.",
+        "podsumowanie_zrodla": [
+          2,
+          3,
+          4
+        ],
+        "punkty": [
+          {
+            "tekst": "Bluszczyk kurdybanek to roślina zimozielona i trwała, która tworzy długie, niskie rozłogi.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s184"
+            ]
+          },
+          {
+            "tekst": "Liście bluszczyku mają okrągły, nerkowaty kształt z grubo karbowanymi brzegami, a po roztarciu wydzielają charakterystyczny, korzenny zapach.",
+            "czesc": "liście",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s195"
+            ]
+          },
+          {
+            "tekst": "Kwiaty mają lejkowaty kształt, są symetryczne i mają kolor niebieski lub fioletowy.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s175"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "wystepowanie",
+        "tytul": "Występowanie",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Gatunek ten występuje w większości Europy (będąc bardzo powszechnym w Europie Środkowej) oraz w Zachodniej i Północnej Azji aż po Japonię, Hongkong i Tonkin. Rośnie zazwyczaj w wilgotnych, cienistych miejscach, ale dobrze toleruje także słońce.",
+            "czesc": null,
+            "zrodla": [
+              2,
+              3
+            ],
+            "fakty": [
+              "s176",
+              "s185"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "czesci_rosliny",
+        "tytul": "Części rośliny i surowce",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Surowcem zielarskim są kwitnące gałązki bluszczyku, które zbiera się i wykorzystuje w stanie świeżym lub suszy w zacienionym miejscu.",
+            "czesc": "ziele",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s206"
+            ]
+          },
+          {
+            "tekst": "Młode liście zbierane ze szczytów pędów na początku kwitnienia (przypadającym na marzec i kwiecień) lub przed nim, mogą być używane do przygotowania herbaty albo gotowane jako warzywo – dawniej dodawano je między innymi do potraw spożywanych w Wielki Czwartek.",
+            "czesc": "liście",
+            "zrodla": [
+              2,
+              3,
+              4
+            ],
+            "fakty": [
+              "s177",
+              "s188",
+              "s201"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Ziele bluszczyku zawiera między innymi śladowe ilości olejku eterycznego, do 7% garbników, cholinę, substancję goryczkową glechominę oraz saponiny.",
+            "czesc": "ziele",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s167"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W medycynie ludowej napar z ziela stosowano przy przewlekłych nieżytach dróg oddechowych, astmie, bólach żołądka, schorzeniach pęcherza, kamicy nerkowej, przeciw zatruciu ołowiem, a także przy schorzeniach wątroby (w tym jej powiększeniu, złym wydzielaniu żółci oraz zatruciu toksynami).",
+            "czesc": "ziele",
+            "zrodla": [
+              1,
+              6
+            ],
+            "fakty": [
+              "s168",
+              "s208"
+            ]
+          },
+          {
+            "tekst": "Zewnętrznie odwary z ziela tradycyjnie stosowano do przemywania ran i w chorobach skóry ze względu na działanie ściągające, przeciwzapalne i przeciwbakteryjne.",
+            "czesc": "ziele",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s169"
+            ]
+          },
+          {
+            "tekst": "Świeże, utłuczone liście bluszczyku tradycyjnie przykładano do skóry jako środek pomagający na naurywy.",
+            "czesc": "liście",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s209"
+            ]
+          },
+          {
+            "tekst": "Rozcieńczony sok z bluszczyku stosowano w formie kropli do nosa i oczu, co pomagało w usuwaniu kataru, zapalenia spojówek, zapalenia brzegów powiek oraz nadmiernego łzawienia.",
+            "czesc": "sok",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s210"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "historia",
+        "tytul": "Historia i nazwa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Przed upowszechnieniem chmielu bluszczyk, ze względu na zawartość substancji gorzkich, był wykorzystywany jako aromatyzator, środek klarujący i konserwant piwa – cenili go m.in. Saksowie oraz europejscy koloniści, którzy poważali roślinę także za jej właściwości lecznicze.",
+            "czesc": null,
+            "zrodla": [
+              2,
+              3
+            ],
+            "fakty": [
+              "s180",
+              "s181",
+              "s190"
+            ]
+          },
+          {
+            "tekst": "W tradycji ludowej bluszczyk określano mianem rośliny leczącej siedem otworów w głowie, czyli oczy, uszy, obie dziurki od nosa oraz usta.",
+            "czesc": null,
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s203"
+            ]
+          },
+          {
+            "tekst": "Nazwa rodzajowa Glechoma wywodzi się z greckiego słowa glechon oznaczającego miętę polej, a epitet gatunkowy hederacea oznacza bluszczopodobny.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s187"
+            ]
+          },
+          {
+            "tekst": "Starowysokoniemieckie nazwy rośliny wiążą się z jej dawnym zastosowaniem w leczeniu ran i owrzodzeń, gdyż słowo gund oznaczało walkę, a gunt ropę lub płyn wysiękowy.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s196"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kultura",
+        "tytul": "Wierzenia i tradycje",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W tradycji ludowej w noc Walpurgi z bluszczyku wito wieńce, przez które patrzono, aby dostrzec czarownice.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s193"
+            ]
+          },
+          {
+            "tekst": "W dawnych praktykach magicznych wierzono, że rany goją się wyjątkowo dobrze, jeśli przyłoży się do nich dokładnie 77 listków tej rośliny.",
+            "czesc": "liście",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s197"
+            ]
+          },
+          {
+            "tekst": "Drobne kwiaty cechują się znacznie łagodniejszym smakiem od liści i bywają wykorzystywane jako dekoracja dań, na przykład sałatek lub twarogów.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s202"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "nazwy_ludowe",
+        "tytul": "Nazwy ludowe",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Bluszczyk kurdybanek bywa zwyczajowo nazywany bluszczykiem ziemnym, kurdybankiem, obłożnikiem, pliszczykiem (ze względu na podobieństwo do bluszczu), kocimiętką, psią miętą (z uwagi na zapach) oraz budrą.",
+            "czesc": null,
+            "zrodla": [
+              1,
+              6
+            ],
+            "fakty": [
+              "s165",
+              "s204"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Bluszczyk kurdybanek jest uważany za toksyczny dla koni i bydła, które mogą być bardziej narażone na jego nadmierne spożycie.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s194"
+            ]
+          },
+          {
+            "tekst": "Przedawkowanie bluszczyku może wywołać nadmierną potliwość, ślinotok, zaburzenia rytmu serca, obrzęk płuc, podrażnienia nerek, układu pokarmowego i wątroby oraz poronienie.",
+            "czesc": null,
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s207"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "uprawa",
+        "tytul": "Uprawa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Roślina jest uprawiana jako okrywowa ze względu na szybkie rozrastanie się, łatwe ukorzenianie pędów i dobrą tolerancję zacienienia.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s173"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "ciekawostki",
+        "tytul": "Ciekawostki",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Dzięki swojemu korzennemu, żywicznemu i aromatycznemu zapachowi oraz smakowi, który przypomina miętę i lukrecję, bluszczyk kurdybanek jest wykorzystywany jako przyprawa do zup i pierogów z twarogiem.",
+            "czesc": null,
+            "zrodla": [
+              1,
+              2
+            ],
+            "fakty": [
+              "s170",
+              "s189"
+            ]
+          },
+          {
+            "tekst": "Jako dodatek do żywności bluszczyk wykazuje również działanie antyoksydacyjne.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s192"
+            ]
+          },
+          {
+            "tekst": "Podczas produkcji sera bluszczyk był stosowany jako substytut podpuszczki zwierzęcej.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s191"
+            ]
+          },
+          {
+            "tekst": "Bluszczyk kurdybanek jest uważany za wartościową paszę, która zwiększa mleczność krów.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s172"
+            ]
+          },
+          {
+            "tekst": "Miód pozyskiwany z bluszczyku ma jasnożółtą barwę.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s171"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "liście": [
+        "s195",
+        "s177",
+        "s188",
+        "s201",
+        "s209",
+        "s197"
+      ],
+      "kwiaty": [
+        "s175",
+        "s202"
+      ],
+      "ziele": [
+        "s206",
+        "s167",
+        "s168",
+        "s208",
+        "s169"
+      ],
+      "sok": [
+        "s210"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s165",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "Bluszczyk kurdybanek bywa nazywany zwyczajowo bluszczykiem ziemnym, kurdybankiem lub obłożnikiem.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Bluszczyk kurdybanek",
+          "url": "https://pl.wikipedia.org/wiki/Bluszczyk_kurdybanek"
+        }
+      },
+      {
+        "id": "s167",
+        "sekcja": "sklad",
+        "czesc": "ziele",
+        "tekst": "Ziele bluszczyku zawiera między innymi śladowe ilości olejku eterycznego, do 7% garbników, cholinę, substancję goryczkową glechominę oraz saponiny.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Bluszczyk kurdybanek",
+          "url": "https://pl.wikipedia.org/wiki/Bluszczyk_kurdybanek"
+        }
+      },
+      {
+        "id": "s168",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "ziele",
+        "tekst": "W medycynie ludowej napar z ziela stosowano przy przewlekłych nieżytach dróg oddechowych, astmie, bólach żołądka, schorzeniach pęcherza, kamicy nerkowej oraz przeciw zatruciu ołowiem.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Bluszczyk kurdybanek",
+          "url": "https://pl.wikipedia.org/wiki/Bluszczyk_kurdybanek"
+        }
+      },
+      {
+        "id": "s169",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "ziele",
+        "tekst": "Zewnętrznie odwary z ziela tradycyjnie stosowano do przemywania ran i w chorobach skóry ze względu na działanie ściągające, przeciwzapalne i przeciwbakteryjne.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Bluszczyk kurdybanek",
+          "url": "https://pl.wikipedia.org/wiki/Bluszczyk_kurdybanek"
+        }
+      },
+      {
+        "id": "s170",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Bluszczyk kurdybanek jest wykorzystywany jako roślina przyprawowa do zup i pierogów z twarogiem dzięki swojemu korzennemu zapachowi i smakowi.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Bluszczyk kurdybanek",
+          "url": "https://pl.wikipedia.org/wiki/Bluszczyk_kurdybanek"
+        }
+      },
+      {
+        "id": "s171",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Miód pozyskiwany z bluszczyku ma jasnożółtą barwę.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Bluszczyk kurdybanek",
+          "url": "https://pl.wikipedia.org/wiki/Bluszczyk_kurdybanek"
+        }
+      },
+      {
+        "id": "s172",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Bluszczyk kurdybanek jest uważany za wartościową paszę, która zwiększa mleczność krów.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Bluszczyk kurdybanek",
+          "url": "https://pl.wikipedia.org/wiki/Bluszczyk_kurdybanek"
+        }
+      },
+      {
+        "id": "s173",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "Roślina jest uprawiana jako okrywowa ze względu na szybkie rozrastanie się, łatwe ukorzenianie pędów i dobrą tolerancję zacienienia.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Bluszczyk kurdybanek",
+          "url": "https://pl.wikipedia.org/wiki/Bluszczyk_kurdybanek"
+        }
+      },
+      {
+        "id": "s175",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Kwiaty mają kształt funelu, są symetryczne i mają kolor niebieski lub fioletowy.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Glechoma hederacea",
+          "url": "https://en.wikipedia.org/wiki/Glechoma_hederacea"
+        }
+      },
+      {
+        "id": "s176",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Bluszczyk kurdybanek rośnie w wilgotnych, cieniastych miejscach, ale dobrze toleruje słońce.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Glechoma hederacea",
+          "url": "https://en.wikipedia.org/wiki/Glechoma_hederacea"
+        }
+      },
+      {
+        "id": "s177",
+        "sekcja": "czesci_rosliny",
+        "czesc": "liście",
+        "tekst": "Liście są zbierane przed kwitnieniem i mogą być gotowane jako warzywo lub używane do przygotowania herbaty.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Glechoma hederacea",
+          "url": "https://en.wikipedia.org/wiki/Glechoma_hederacea"
+        }
+      },
+      {
+        "id": "s180",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Bluszczyk kurdybanek był używany przez Saksów w produkcji piwa jako aromatyzator, klarifikator i konserwant.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Glechoma hederacea",
+          "url": "https://en.wikipedia.org/wiki/Glechoma_hederacea"
+        }
+      },
+      {
+        "id": "s181",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "Bluszczyk kurdybanek był ceniony przez europejskich kolonistów za swoje właściwości lecznicze i jako konserwant piwa.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Glechoma hederacea",
+          "url": "https://en.wikipedia.org/wiki/Glechoma_hederacea"
+        }
+      },
+      {
+        "id": "s184",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Bluszczyk kurdybanek to roślina zimozielona i trwale zzieleniała, która tworzy długie, niskie rozłogi.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gundermann",
+          "url": "https://de.wikipedia.org/wiki/Gundermann"
+        }
+      },
+      {
+        "id": "s185",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Gatunek ten występuje w większości Europy, będąc bardzo powszechnym w Europie Środkowej, a także rośnie w Zachodniej i Północnej Azji aż po Japonię, Hongkong i Tonkin.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gundermann",
+          "url": "https://de.wikipedia.org/wiki/Gundermann"
+        }
+      },
+      {
+        "id": "s187",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Nazwa rodzajowa Glechoma wywodzi się z greckiego słowa glechon oznaczającego polej-minzę, a epitet gatunkowy hederacea oznacza efeuopodobny.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gundermann",
+          "url": "https://de.wikipedia.org/wiki/Gundermann"
+        }
+      },
+      {
+        "id": "s188",
+        "sekcja": "czesci_rosliny",
+        "czesc": "liście",
+        "tekst": "Zbierane wiosną młode liście dawniej gotowano jako warzywo, dodając je między innymi do potraw spożywanych w Wielki Czwartek.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gundermann",
+          "url": "https://de.wikipedia.org/wiki/Gundermann"
+        }
+      },
+      {
+        "id": "s189",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Zapach i smak bluszczyku opisywany jest jako żywiczny, aromatyczny, przypominający miętę oraz lukrecję.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gundermann",
+          "url": "https://de.wikipedia.org/wiki/Gundermann"
+        }
+      },
+      {
+        "id": "s190",
+        "sekcja": "barwienie",
+        "czesc": null,
+        "tekst": "Przed upowszechnieniem chmielu bluszczyk wykorzystywano ze względu na zawartość substancji gorzkich do konserwowania piwa.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gundermann",
+          "url": "https://de.wikipedia.org/wiki/Gundermann"
+        }
+      },
+      {
+        "id": "s191",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Podczas produkcji sera bluszczyk był stosowany jako substytut podpuszczki zwierzęcej.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gundermann",
+          "url": "https://de.wikipedia.org/wiki/Gundermann"
+        }
+      },
+      {
+        "id": "s192",
+        "sekcja": "kosmetyka",
+        "czesc": null,
+        "tekst": "Jako dodatek do żywności bluszczyk wykazuje również działanie antyoksydacyjne.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gundermann",
+          "url": "https://de.wikipedia.org/wiki/Gundermann"
+        }
+      },
+      {
+        "id": "s193",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "W tradycji ludowej w noc Walpurgis z bluszczyku wiązano wieńce, przez które patrzono, aby dostrzec czarownice.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gundermann",
+          "url": "https://de.wikipedia.org/wiki/Gundermann"
+        }
+      },
+      {
+        "id": "s194",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Bluszczyk kurdybanek jest uważany za toksyczny dla koni i bydlęcia, które mogą być bardziej narażone na nadmierny przyjmowanie.",
+        "jezyk": "en-GB",
+        "zrodlo": {
+          "nazwa": "www.eatweeds.co.uk",
+          "url": "https://www.eatweeds.co.uk/ground-ivy-glechoma-hederacea"
+        }
+      },
+      {
+        "id": "s195",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Liście bluszczyku mają okrągły, nerkowaty kształt z grobunkowato wciętymi brzegami, a po roztarciu wydzielają charakterystyczny, korzenny zapach.",
+        "jezyk": "de-DE",
+        "zrodlo": {
+          "nazwa": "natuerlich.thieme.de",
+          "url": "https://natuerlich.thieme.de/heilpflanzen/detail/gundermann-heilpflanze-aus-germanischer-zeit-3528"
+        }
+      },
+      {
+        "id": "s196",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Altwysokiemieckie nazwy rośliny wiążą się z jej dawnym zastosowaniem w leczeniu ran i owrzodzeń, gdyż słowo gund oznaczało walkę, a gunt ropę lub wodu wysiękową.",
+        "jezyk": "de-DE",
+        "zrodlo": {
+          "nazwa": "natuerlich.thieme.de",
+          "url": "https://natuerlich.thieme.de/heilpflanzen/detail/gundermann-heilpflanze-aus-germanischer-zeit-3528"
+        }
+      },
+      {
+        "id": "s197",
+        "sekcja": "kultura",
+        "czesc": "liście",
+        "tekst": "W dawnych praktykach magicznych wierzono, że rany goją się wyjątkowo dobrze, jeśli przyłoży się do nich dokładnie 77 listków tej rośliny.",
+        "jezyk": "de-DE",
+        "zrodlo": {
+          "nazwa": "natuerlich.thieme.de",
+          "url": "https://natuerlich.thieme.de/heilpflanzen/detail/gundermann-heilpflanze-aus-germanischer-zeit-3528"
+        }
+      },
+      {
+        "id": "s201",
+        "sekcja": "czesci_rosliny",
+        "czesc": "liście",
+        "tekst": "Najlepszym okresem do zbioru młodych listków na szczytach pędów jest początek kwitnienia przypadalący na marzec i kwiecień.",
+        "jezyk": "de-DE",
+        "zrodlo": {
+          "nazwa": "natuerlich.thieme.de",
+          "url": "https://natuerlich.thieme.de/heilpflanzen/detail/gundermann-heilpflanze-aus-germanischer-zeit-3528"
+        }
+      },
+      {
+        "id": "s202",
+        "sekcja": "kultura",
+        "czesc": "kwiaty",
+        "tekst": "Drobne kwiaty cechują się znacznie łagodniejszym smakiem od liści i bywają wykorzystywane jako dekoracja dań, na przykład sałatek lub twarogów.",
+        "jezyk": "de-DE",
+        "zrodlo": {
+          "nazwa": "natuerlich.thieme.de",
+          "url": "https://natuerlich.thieme.de/heilpflanzen/detail/gundermann-heilpflanze-aus-germanischer-zeit-3528"
+        }
+      },
+      {
+        "id": "s203",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "W tradycji ludowej bluszczyk określano mianem rośliny leczącej siedem otworów w głowie, czyli oczy, uszy, obie dziurki od nosa oraz usta.",
+        "jezyk": "uk",
+        "zrodlo": {
+          "nazwa": "www.zelena-planeta.ua",
+          "url": "https://www.zelena-planeta.ua/nadzvichajnij-rozhidnik"
+        }
+      },
+      {
+        "id": "s204",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "Wśród ludowych nazw bluszczyku wymieniane są: pliszczyk ze względu na podobieństwo do bluszczu, kocimiętka, psia mięta z uwagi na zapach oraz budra.",
+        "jezyk": "uk",
+        "zrodlo": {
+          "nazwa": "www.zelena-planeta.ua",
+          "url": "https://www.zelena-planeta.ua/nadzvichajnij-rozhidnik"
+        }
+      },
+      {
+        "id": "s206",
+        "sekcja": "czesci_rosliny",
+        "czesc": "ziele",
+        "tekst": "Surowcem zielarskim są kwitnące gałązki bluszczyku, które zbiera się i wykorzystuje w stanie świeżym lub suszy w zacienionym miejscu.",
+        "jezyk": "uk",
+        "zrodlo": {
+          "nazwa": "www.zelena-planeta.ua",
+          "url": "https://www.zelena-planeta.ua/nadzvichajnij-rozhidnik"
+        }
+      },
+      {
+        "id": "s207",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Przedawkowanie bluszczyku może wywołać nadmierną potliwość, ślinotok, zaburzenia rytmu serca, obrzęk płuc, podrażnienia nerek, układu pokarmowego i wątroby oraz poronienie.",
+        "jezyk": "uk",
+        "zrodlo": {
+          "nazwa": "www.zelena-planeta.ua",
+          "url": "https://www.zelena-planeta.ua/nadzvichajnij-rozhidnik"
+        }
+      },
+      {
+        "id": "s208",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "ziele",
+        "tekst": "W medycynie ludowej napar z ziela stosowano przy schorzeniach wątroby, w tym przy jej powiększeniu, złym wydzielaniu żółci oraz zatruciu toksynami.",
+        "jezyk": "uk",
+        "zrodlo": {
+          "nazwa": "www.zelena-planeta.ua",
+          "url": "https://www.zelena-planeta.ua/nadzvichajnij-rozhidnik"
+        }
+      },
+      {
+        "id": "s209",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "liście",
+        "tekst": "Świeże, utłuczone liście bluszczyku tradycyjnie przyłożone do skóry stosowano jako środek pomagający na naurywy.",
+        "jezyk": "uk",
+        "zrodlo": {
+          "nazwa": "www.zelena-planeta.ua",
+          "url": "https://www.zelena-planeta.ua/nadzvichajnij-rozhidnik"
+        }
+      },
+      {
+        "id": "s210",
+        "sekcja": "kosmetyka",
+        "czesc": "sok",
+        "tekst": "Rozcieńczony sok z bluszczyku stosowano w formie kropli do nosa i oczu, co pomagało w usuwaniu kataru, zapalenia spojówek, zapalenia brzegów powiek oraz nadmiernego łzawienia.",
+        "jezyk": "uk",
+        "zrodlo": {
+          "nazwa": "www.zelena-planeta.ua",
+          "url": "https://www.zelena-planeta.ua/nadzvichajnij-rozhidnik"
+        }
+      }
+    ]
+  }
+}

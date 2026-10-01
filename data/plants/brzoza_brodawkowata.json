@@ -4,7 +4,13 @@
   "nazwa_lat": "Betula pendula",
   "rodzina": "Brzozowate (Betulaceae)",
   "opis": "Smukłe, eleganckie drzewo o charakterystycznej białej korze i zwisających gałęziach. Jest gatunkiem pionierskim, niezwykle odpornym na trudne warunki, który jako pierwszy zasiedla nieużytki, przygotowując grunt pod inne gatunki drzew. W tradycji północnej Brzoza jest symbolem odrodzenia, czystości i powrotu wiosny. Jej liście, pąki i sok (oskoła) stanowią fundament wiosennych kuracji detoksykujących.",
-  "tagi": ["drzewo", "moczowe", "skora_wlosy", "pospolita", "magia"],
+  "tagi": [
+    "drzewo",
+    "moczowe",
+    "skora_wlosy",
+    "pospolita",
+    "magia"
+  ],
   "profil_energetyczny": {
     "smak": "Słodki (sok), gorzki, lekko cierpki (liście, pąki)",
     "termika": "Chłodna",
@@ -12,7 +18,6 @@
     "zywiol": "Woda i Powietrze",
     "opis": "Brzoza jest mistrzynią 'przepływu'. Działa na organizm jak filtr, który otwiera zastoje płynów, płucze nerki i usuwa 'wilgotne gorąco' odpowiedzialne za stany zapalne stawów i obrzęki. Ma energię łagodną, ale niezwykle skuteczną w oczyszczaniu krwi."
   },
-
   "wymagania": {
     "stanowisko": "Pełne słońce. Jest skrajnie światłożądna – w cieniu szybko marnieje.",
     "gleba": "Skrajnie tolerancyjna; od suchych piasków po torfowiska. Najlepiej rośnie na glebach lekkich i przepuszczalnych.",
@@ -20,7 +25,6 @@
     "mrozoodpornosc": "Strefa 2 (Jedno z najodporniejszych drzew na świecie, sięga aż po koło podbiegunowe).",
     "woda": "Znosi zarówno suszę, jak i okresowe zalewanie, choć preferuje umiarkowaną wilgotność."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Biała, łuszcząca się okrężnie kora (u starych drzew u nasady czarna i spękana).",
@@ -39,7 +43,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "liscie": {
       "nazwa_surowca": "Folium Betulae",
@@ -71,7 +74,11 @@
     "paki": {
       "nazwa_surowca": "Gemmae Betulae",
       "opis_botaniczny": "Pączki liściowe zbierane w okresie nabrzmiewania, pełne żywic.",
-      "skladniki_aktywne": ["Olejek eteryczny", "Żywice", "Flawonoidy"],
+      "skladniki_aktywne": [
+        "Olejek eteryczny",
+        "Żywice",
+        "Flawonoidy"
+      ],
       "wlasciwości": "Silniej odkażające drogi moczowe niż liście, działają silnie żółciopędnie i przeciwzapalnie.",
       "czas_zbioru": "Luty - Marzec.",
       "ostrzezenia": "Mogą podrażniać żołądek przy stosowaniu na czczo."
@@ -79,28 +86,28 @@
     "kora": {
       "nazwa_surowca": "Cortex Betulae",
       "opis_botaniczny": "Biała warstwa kory, bogata w betulinę.",
-      "skladniki_aktywne": ["Betulina (nawet do 30%)", "Kwas betulinowy", "Lupeol"],
+      "skladniki_aktywne": [
+        "Betulina (nawet do 30%)",
+        "Kwas betulinowy",
+        "Lupeol"
+      ],
       "wlasciwości": "Przeciwnowotworowe (badania nad czerniakiem), silnie przeciwzapalne, przeciwwirusowe.",
       "czas_zbioru": "Cały rok (najlepiej z powalonych drzew)."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Kamica nerkowa, dna moczanowa (usuwanie kwasu moczowego), reumatyzm, infekcje dróg moczowych. Zewnętrznie w leczeniu łuszczycy, trądziku i wypadaniu włosów.",
     "kulinarne": "Picie świeżego soku (oskoły) jako napoju izotonicznego. Odparowany sok tworzy rzadki, ale bardzo aromatyczny syrop brzozowy. Młode liście jako dodatek do wiosennych zup.",
     "ogrodowe": "Osuszanie terenów podmokłych, tworzenie jasnych, świetlistych ogrodów. Brzozy poprawiają strukturę gleby dzięki dużej ilości opadających liści.",
     "rzemieslnicze": "Kora brzozowa (dziegieć) to historyczny klej i środek konserwujący. Kora zewnętrzna służy do wyrobu wodoodpornych pojemników, butów i jako najlepsza naturalna rozpałka do ognia (pali się nawet mokra). Drewno cenione w meblarstwie i jako opał o wysokiej kaloryczności."
   },
-
   "interakcje": "Przetwory z brzozy mogą nasilać działanie leków moczopędnych. Osoby uczulone na aspirynę powinny zachować ostrożność (zawartość salicylanów w niektórych gatunkach brzóz).",
-
   "ciekawostki": [
     "Dziegieć brzozowy był 'super-klejem' epoki kamienia – używano go do mocowania grotów strzał.",
     "Ötzi, 'Człowiek Lodu', miał przy sobie hubę brzozową (czyreń), która służyła mu jako apteczka podróżna.",
     "Brzoza produkuje fitoncydy – substancje, które sterylizują powietrze wokół drzewa w promieniu kilku metrów.",
     "W Rosji i Skandynawii gałązki brzozowe są nieodzownym elementem sauny, służąc do masażu pobudzającego krążenie."
   ],
-
   "permakultura": {
     "funkcje": [
       "Dynamiczny akumulator (wyciąga minerały z głębokich warstw gleby).",
@@ -109,19 +116,35 @@
       "Siedlisko dla wielu gatunków grzybów (Koźlarz babka, Muchomor czerwony)."
     ],
     "gildie": [
-      { "nazwa": "Sosna zwyczajna", "rola": "Tworzą razem naturalne lasy pionierskie." },
-      { "nazwa": "Borówka brusznica", "rola": "Krzewinka runa preferująca kwaśne podłoże brzozowe." },
-      { "nazwa": "Wrzos zwyczajny", "rola": "Naturalny partner na piaszczystych wrzosowiskach." },
-      { "nazwa": "Grzyb: Koźlarz brzozowy", "rola": "Ścisła symbioza mikoryzowa." },
-      { "nazwa": "Muchomor czerwony", "rola": "Silna symbioza mikoryzowa." }
+      {
+        "nazwa": "Sosna zwyczajna",
+        "rola": "Tworzą razem naturalne lasy pionierskie."
+      },
+      {
+        "nazwa": "Borówka brusznica",
+        "rola": "Krzewinka runa preferująca kwaśne podłoże brzozowe."
+      },
+      {
+        "nazwa": "Wrzos zwyczajny",
+        "rola": "Naturalny partner na piaszczystych wrzosowiskach."
+      },
+      {
+        "nazwa": "Grzyb: Koźlarz brzozowy",
+        "rola": "Ścisła symbioza mikoryzowa."
+      },
+      {
+        "nazwa": "Muchomor czerwony",
+        "rola": "Silna symbioza mikoryzowa."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Pozyskiwanie oskoły (soku)",
-        "miesiace": [3],
+        "miesiace": [
+          3
+        ],
         "opis": "Nawiercanie pnia przed pękaniem pąków, gdy ruszają soki. Otwór należy potem zabezpieczyć!",
         "faza_ksiezyca": "Nów / Rosnący",
         "pora_dnia": "Poranek",
@@ -129,7 +152,9 @@
       },
       {
         "czynnosc": "Zbiór młodych liści",
-        "miesiace": [5],
+        "miesiace": [
+          5
+        ],
         "opis": "Zbieramy młode, lepkie liście o jasnozielonej barwie, doskonałe na herbaty moczopędne.",
         "faza_ksiezyca": "Księżyc przybywający",
         "pora_dnia": "Przedpołudnie",
@@ -137,7 +162,13 @@
       },
       {
         "czynnosc": "Zbiór kory brzozowej (czagi)",
-        "miesiace": [10, 11, 12, 1, 2],
+        "miesiace": [
+          10,
+          11,
+          12,
+          1,
+          2
+        ],
         "opis": "Zbieramy z powalonych drzew lub szukamy czagi (grzyba huby) na żywych pniach.",
         "faza_ksiezyca": "Księżyc ubywający",
         "pora_dnia": "Dowolna",
@@ -145,13 +176,16 @@
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Wiosenny Odwar na Detoks Nerek",
       "typ": "medyczne",
       "metoda": "odwar",
-      "tagi": ["nerki", "detoks", "obrzęki"],
+      "tagi": [
+        "nerki",
+        "detoks",
+        "obrzęki"
+      ],
       "skladniki": [
         "Suszone liście brzozy: 2 łyżki",
         "Woda: 500 ml"
@@ -165,17 +199,26 @@
       "uwagi": "Wypłukuje piasek z nerek i redukuje obrzęki nóg.",
       "roslina": "Brzoza brodawkowata",
       "slug": "brzoza_brodawkowata",
-      "cechy": ["słomkowy kolor", "lekko gorzki smak"],
-      "wlasciwosci": ["moczopędna", "odtruwająca"]
+      "cechy": [
+        "słomkowy kolor",
+        "lekko gorzki smak"
+      ],
+      "wlasciwosci": [
+        "moczopędna",
+        "odtruwająca"
+      ]
     }
   ],
-
   "przepisy_kulinarne": [
     {
       "tytul": "Lemoniada z Oskoły",
       "typ": "kulinarne",
       "metoda": "mieszanie",
-      "tagi": ["napój", "witaminy", "orzeźwienie"],
+      "tagi": [
+        "napój",
+        "witaminy",
+        "orzeźwienie"
+      ],
       "skladniki": [
         "Świeży sok z brzozy: 1 litr",
         "Sok z połowy cytryny",
@@ -191,5 +234,618 @@
       "slug": "brzoza_brodawkowata"
     }
   ],
-  "ostrzezenia": "Pyłek brzozy jest silnym alergenem wziewnym w okresie kwietnia i maja. Osoby z niedrożnością dróg moczowych powinny skonsultować kurację z lekarzem."
+  "ostrzezenia": "Pyłek brzozy jest silnym alergenem wziewnym w okresie kwietnia i maja. Osoby z niedrożnością dróg moczowych powinny skonsultować kurację z lekarzem.",
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-09-30",
+    "uporzadkowano": "2026-09-30",
+    "uklad": "deterministyczny: pominiete informacje: [9, 10, 11, 17, 18, 19, 20, 21, 22, 23]",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (pl): Brzoza brodawkowata",
+        "url": "https://pl.wikipedia.org/wiki/Brzoza_brodawkowata",
+        "jezyk": "pl",
+        "typ": "wikipedia",
+        "nr": 1
+      },
+      {
+        "nazwa": "Wikipedia (de): Hänge-Birke",
+        "url": "https://de.wikipedia.org/wiki/H%C3%A4nge-Birke",
+        "jezyk": "de",
+        "typ": "wikipedia",
+        "nr": 2
+      },
+      {
+        "nazwa": "Wikipedia (en): Betula pendula",
+        "url": "https://en.wikipedia.org/wiki/Betula_pendula",
+        "jezyk": "en",
+        "typ": "wikipedia",
+        "nr": 3
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "opis",
+        "tytul": "Opis i wygląd",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Kora młodych drzew ma odcień pomarańczowoczerwony, z wiekiem bieleje, a u starszych egzemplarzy czernieje u nasady pnna.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s258"
+            ]
+          },
+          {
+            "tekst": "Szybko rosnąca roślina osiąga zazwyczaj od 15 do 25 metrów wysokości, rzadziej do 30 metrów, a jej pień może mieć średnicę do 0,9 metra.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s269"
+            ]
+          },
+          {
+            "tekst": "Biała barwa gładkiej kory wynika z obecności betuliny, która całkowicie reflektuje światło, co chroni drzewo przed uszkodzeniami słonecznymi zimą.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s270"
+            ]
+          },
+          {
+            "tekst": "Drzewo jest jednopienne – żeńskie i męskie kwiaty występują w postaci zwisających kotków na tej samej roślinie, a kwitnienie przypada na kwiecień i maj.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s272"
+            ]
+          },
+          {
+            "tekst": "Pień i gałęzie początkowo mają barwę złotobrązową, która z czasem staje się biała na skutek rozwoju papierowatej tkanki, łuszczącej się płatami.",
+            "czesc": "kora",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s265"
+            ]
+          },
+          {
+            "tekst": "Naprzemianległe, osadzone na ogonkach liście mają długość od 4 do 7 centymetrów, trójkątny lub romboidalny kształt z wyciągniętym czubkiem i podwójnie piłkowany brzeg.",
+            "czesc": "liście",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s271"
+            ]
+          },
+          {
+            "tekst": "Owoce stanowią drobne, około trzymilimetrowe nasionka zaopatrzone w cienkie skrzydełka, które są łatwo roznoszone przez wiatr.",
+            "czesc": "nasiona",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s273"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "czesci_rosliny",
+        "tytul": "Części rośliny i surowce",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Kora zbierana jest wiosną z młodych pni i gałązek, gdzie zdzierana jest jej elastyczna, biała warstwa zewnętrzna.",
+            "czesc": "kora",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s259"
+            ]
+          },
+          {
+            "tekst": "Pąki zbiera się wczesną wiosną, gdy są nabrzmiałe; po suszeniu w temperaturze 25–30 °C stają się lepkie i mają silny balsamiczny zapach.",
+            "czesc": "pąki",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s260"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Kora brzozowa jest bogatym źródłem betuliny, substancji aktywniej stosowanej m.in. w terapii trądziku.",
+            "czesc": "kora",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s262"
+            ]
+          },
+          {
+            "tekst": "Surowiec liściowy musi zawierać co najmniej 1,5% flawonoidów (w przeliczeniu na hiperozyd), a ponadto do 9% garbników katechinowych oraz do 3,2% saponin.",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s261"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W medycynie ludowej surowce z tego drzewa stosowano przy dnie moczanowej, artretyzmie, reumatyzmie, problemach z nadmierną potliwością, obrzękach oraz w celu stymulacji wydzielania żółci.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s278"
+            ]
+          },
+          {
+            "tekst": "W średniowieczu w celach leczniczych ze skórek drzewa pozyskiwano głównie głębsze warstwy łyka i korka.",
+            "czesc": "kora",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s275"
+            ]
+          },
+          {
+            "tekst": "Wewnętrzne warstwy kory zawierają cenne terpeny, takie jak betulina, kwas betulinowy i lupeol, które wykazują silne działanie przeciwzapalne, przeciwwirusowe oraz hamujące rozwój guzów.",
+            "czesc": "kora",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s276"
+            ]
+          },
+          {
+            "tekst": "W medycynie ludowej napar z liści stosowano m.in. do wybielania skóry i leczenia przezmrożeń (piegów).",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s263"
+            ]
+          },
+          {
+            "tekst": "Tradycyjnie napary z liści wykorzystywano przy dolegliwościach takich jak piasek w nerkach, kamica nerkowa i pęcherzowa oraz inne schorzenia układu moczowego.",
+            "czesc": "ziele",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s277"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "barwienie",
+        "tytul": "Barwienie i rzemiosło",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Tradycyjnie z kory pozyskiwano dziegieć brzozowy, wykorzystywany m.in. jako juchtenöl do impregnacji i pielęgnacji skór.",
+            "czesc": "kora",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s274"
+            ]
+          },
+          {
+            "tekst": "Historycznie korę tego gatunku stosowano do garbowania skór.",
+            "czesc": "kora",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s266"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "historia",
+        "tytul": "Historia i nazwa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Obok podstawowej nazwy gatunkowej znana jest również jako brzoza gruczołowata, brzezina lub brzoza biała.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s257"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kultura",
+        "tytul": "Wierzenia i tradycje",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W Finlandii wiązki ulistnionych i pachnących gałązek, zwane vihta lub vasta, służą do delikatnego bicia się podczas kąpieli w fińskiej saunie.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s267"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Nie należy stosować przetworów z tego gatunku w przypadku obrzęków spowodowanych ograniczeniem czynności serca lub nerek.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s279"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "ciekawostki",
+        "tytul": "Ciekawostki",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Na cześć tego gatunku nazwano planetoidę (8644) Betulapendula, zarejestrowaną na początku kwietnia 1999 roku.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s280"
+            ]
+          },
+          {
+            "tekst": "W Ameryce Północnej gatunek ten został wprowadzony i w niektórych stanach USA oraz w części Kanady jest uważany za roślinę inwazyjną.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s268"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "kora": [
+        "s265",
+        "s259",
+        "s262",
+        "s275",
+        "s276",
+        "s274",
+        "s266"
+      ],
+      "liście": [
+        "s271",
+        "s261",
+        "s263"
+      ],
+      "nasiona": [
+        "s273"
+      ],
+      "pąki": [
+        "s260"
+      ],
+      "ziele": [
+        "s277"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s257",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Obok podstawowej nazwy gatunkowej znana jest również jako brzoza gruczołowata, brzezina lub brzoza biała.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Brzoza brodawkowata",
+          "url": "https://pl.wikipedia.org/wiki/Brzoza_brodawkowata"
+        }
+      },
+      {
+        "id": "s258",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Kora młodych drzew ma odcień pomarańczowoczerwony, z wiekiem bieleje, a u starszych egzemplarzy czernieje u nasady pnna.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Brzoza brodawkowata",
+          "url": "https://pl.wikipedia.org/wiki/Brzoza_brodawkowata"
+        }
+      },
+      {
+        "id": "s259",
+        "sekcja": "czesci_rosliny",
+        "czesc": "kora",
+        "tekst": "Kora zbierana jest wiosną z młodych pni i gałązek, gdzie zdzierana jest jej elastyczna, biała warstwa zewnętrzna.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Brzoza brodawkowata",
+          "url": "https://pl.wikipedia.org/wiki/Brzoza_brodawkowata"
+        }
+      },
+      {
+        "id": "s260",
+        "sekcja": "czesci_rosliny",
+        "czesc": "pąki",
+        "tekst": "Pąki zbiera się wczesną wiosną, gdy są nabrzmiałe; po suszeniu w temperaturze 25–30 °C stają się lepkie i mają silny balsamiczny zapach.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Brzoza brodawkowata",
+          "url": "https://pl.wikipedia.org/wiki/Brzoza_brodawkowata"
+        }
+      },
+      {
+        "id": "s261",
+        "sekcja": "sklad",
+        "czesc": "liście",
+        "tekst": "Surowiec liściowy musi zawierać co najmniej 1,5% flawonoidów (w przeliczeniu na hiperozyd), a ponadto do 9% garbników katechinowych oraz do 3,2% saponin.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Brzoza brodawkowata",
+          "url": "https://pl.wikipedia.org/wiki/Brzoza_brodawkowata"
+        }
+      },
+      {
+        "id": "s262",
+        "sekcja": "sklad",
+        "czesc": "kora",
+        "tekst": "Kora brzozowa jest bogatym źródłem betuliny, substancji aktywniej stosowanej m.in. w terapii trądziku.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Brzoza brodawkowata",
+          "url": "https://pl.wikipedia.org/wiki/Brzoza_brodawkowata"
+        }
+      },
+      {
+        "id": "s263",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "liście",
+        "tekst": "W medycynie ludowej napar z liści stosowano m.in. do wybielania skóry i leczenia przezmrożeń (piegów).",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Brzoza brodawkowata",
+          "url": "https://pl.wikipedia.org/wiki/Brzoza_brodawkowata"
+        }
+      },
+      {
+        "id": "s265",
+        "sekcja": "opis",
+        "czesc": "kora",
+        "tekst": "Pień i gałęzie początkowo mają barwę złotobrązową, która z czasem staje się biała na skutek rozwoju papierowatej tkanki, łuszczącej się płatami.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Betula pendula",
+          "url": "https://en.wikipedia.org/wiki/Betula_pendula"
+        }
+      },
+      {
+        "id": "s266",
+        "sekcja": "barwienie",
+        "czesc": "kora",
+        "tekst": "Historycznie korę tego gatunku stosowano do garbowania skór.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Betula pendula",
+          "url": "https://en.wikipedia.org/wiki/Betula_pendula"
+        }
+      },
+      {
+        "id": "s267",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "W Finlandii wiązki ulistnionych i pachnących gałązek, zwane vihta lub vasta, służą do delikatnego bicia się podczas kąpieli w fińskiej saunie.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Betula pendula",
+          "url": "https://en.wikipedia.org/wiki/Betula_pendula"
+        }
+      },
+      {
+        "id": "s268",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "W Ameryce Północnej gatunek ten został wprowadzony i w niektórych stanach USA oraz w części Kanady jest uważany za roślinę inwazyjną.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Betula pendula",
+          "url": "https://en.wikipedia.org/wiki/Betula_pendula"
+        }
+      },
+      {
+        "id": "s269",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Szybko rosnąca roślina osiąga zazwyczaj od 15 do 25 metrów wysokości, rzadziej do 30 metrów, a jej pień może mieć średnicę do 0,9 metra.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Hänge-Birke",
+          "url": "https://de.wikipedia.org/wiki/H%C3%A4nge-Birke"
+        }
+      },
+      {
+        "id": "s270",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Biała barwa gładkiej kory wynika z obecności betuliny, która całkowicie reflektuje światło, co chroni drzewo przed uszkodzeniami słonecznymi zimą.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Hänge-Birke",
+          "url": "https://de.wikipedia.org/wiki/H%C3%A4nge-Birke"
+        }
+      },
+      {
+        "id": "s271",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Naprzemianległe, osadzone na ogonkach liście mają długość od 4 do 7 centymetrów, trójkątny lub romboidalny kształt z wyciągniętym czubkiem i podwójnie piłkowany brzeg.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Hänge-Birke",
+          "url": "https://de.wikipedia.org/wiki/H%C3%A4nge-Birke"
+        }
+      },
+      {
+        "id": "s272",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Drzewo jest jednopienne – żeńskie i męskie kwiaty występują w postaci zwisających kotków na tej samej roślinie, a kwitnienie przypada na kwiecień i maj.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Hänge-Birke",
+          "url": "https://de.wikipedia.org/wiki/H%C3%A4nge-Birke"
+        }
+      },
+      {
+        "id": "s273",
+        "sekcja": "opis",
+        "czesc": "nasiona",
+        "tekst": "Owoce stanowią drobne, około trzymilimetrowe nasionka zaopatrzone w cienkie skrzydełka, które są łatwo roznoszone przez wiatr.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Hänge-Birke",
+          "url": "https://de.wikipedia.org/wiki/H%C3%A4nge-Birke"
+        }
+      },
+      {
+        "id": "s274",
+        "sekcja": "barwienie",
+        "czesc": "kora",
+        "tekst": "Tradycyjnie z kory pozyskiwano dziegieć brzozowy, wykorzystywany m.in. jako juchtenöl do impregnacji i pielęgnacji skór.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Hänge-Birke",
+          "url": "https://de.wikipedia.org/wiki/H%C3%A4nge-Birke"
+        }
+      },
+      {
+        "id": "s275",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "kora",
+        "tekst": "W średniowieczu w celach leczniczych ze skórek drzewa pozyskiwano głównie głębsze warstwy łyka i korka.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Hänge-Birke",
+          "url": "https://de.wikipedia.org/wiki/H%C3%A4nge-Birke"
+        }
+      },
+      {
+        "id": "s276",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "kora",
+        "tekst": "Wewnętrzne warstwy kory zawierają cenne terpeny, takie jak betulina, kwas betulinowy i lupeol, które wykazują silne działanie przeciwzapalne, przeciwwirusowe oraz hamujące rozwój guzów.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Hänge-Birke",
+          "url": "https://de.wikipedia.org/wiki/H%C3%A4nge-Birke"
+        }
+      },
+      {
+        "id": "s277",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "ziele",
+        "tekst": "Tradycyjnie napary z liści wykorzystywano przy dolegliwościach takich jak piasek w nerkach, kamica nerkowa i pęcherzowa oraz inne schorzenia układu moczowego.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Hänge-Birke",
+          "url": "https://de.wikipedia.org/wiki/H%C3%A4nge-Birke"
+        }
+      },
+      {
+        "id": "s278",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": null,
+        "tekst": "W medycynie ludowej surowce z tego drzewa stosowano przy dnie moczanowej, artretyzmie, reumatyzmie, problemach z nadmierną potliwością, obrzękach oraz w celu stymulacji wydzielania żółci.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Hänge-Birke",
+          "url": "https://de.wikipedia.org/wiki/H%C3%A4nge-Birke"
+        }
+      },
+      {
+        "id": "s279",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Nie należy stosować przetworów z tego gatunku w przypadku obrzęków spowodowanych ograniczeniem czynności serca lub nerek.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Hänge-Birke",
+          "url": "https://de.wikipedia.org/wiki/H%C3%A4nge-Birke"
+        }
+      },
+      {
+        "id": "s280",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Na cześć tego gatunku nazwano planetoidę (8644) Betulapendula, zarejestrowaną na początku kwietnia 1999 roku.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Hänge-Birke",
+          "url": "https://de.wikipedia.org/wiki/H%C3%A4nge-Birke"
+        }
+      }
+    ]
+  }
 }

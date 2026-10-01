@@ -4,7 +4,6 @@
   "nazwa_lat": "Larix decidua",
   "rodzina": "Sosnowate (Pinaceae)",
   "opis": "Wyniosłe drzewo iglaste dorastające do 40-50 m wysokości. Jego cechą unikalną jest sezonowość – miękkie, jasnozielone igły zebrane w pęczki wyrastają wiosną, a jesienią przebarwiają się na złoto i opadają. Modrzew jest drzewem światłolubnym i szybkorosnącym, o charakterystycznej, ażurowej koronie. Jego żywica, znana jako terpentyna wenecka, była przez wieki jednym z najcenniejszych surowców farmaceutycznych i malarskich w Europie.",
-
   "profil_energetyczny": {
     "smak": "Żywiczny, ostry, gorzki",
     "termika": "Gorąca",
@@ -34,7 +33,6 @@
     "mrozoodpornosc": "Strefa 3 (Ekstremalnie odporny na mrozy, typowy dla klimatu górskiego).",
     "woda": "Umiarkowane zapotrzebowanie; dobrze znosi okresowe susze dzięki głębokiemu systemowi korzeniowemu."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Igły miękkie, niekłujące, zebrane w pęczki po 20-40 sztuk na krótkopędach.",
@@ -53,7 +51,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "zywica": {
       "nazwa_surowca": "Terebinthina Laricina (Terpentyna wenecka)",
@@ -69,7 +66,11 @@
     "igly_i_mlode_pedy": {
       "nazwa_surowca": "Turiones Laricis",
       "opis_botaniczny": "Świeże, miękkie igły i pędy zbierane w maju.",
-      "skladniki_aktywne": ["Witamina C (ogromne ilości)", "Olejek eteryczny", "Flawonoidy"],
+      "skladniki_aktywne": [
+        "Witamina C (ogromne ilości)",
+        "Olejek eteryczny",
+        "Flawonoidy"
+      ],
       "wlasciwości": "Witaminizujące, napotne, moczopędne, uszczelniające naczynia.",
       "czas_zbioru": "Maj."
     },
@@ -79,16 +80,13 @@
       "czas_zbioru": "Wczesna wiosna."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Chroniczne zapalenie oskrzeli (inhalacje), reumatyzm, bóle mięśniowe, nerwobóle (maści), szkorbut (historycznie - igły), zakażenia dróg moczowych.",
     "kulinarne": "Młode igły w maju mają delikatnie cytrynowy smak; mogą być dodawane do sałatek, masła ziołowego lub infuzowanych wód smakowych.",
     "ogrodowe": "Roślina pionierska do rekultywacji terenów poprzemysłowych. W ogrodach ceniona za jesienne złote przebarwienie. Idealna na wysokie żywopłoty (świetnie znosi cięcie).",
     "rzemieslnicze": "Najtrwalsze polskie drewno konstrukcyjne. Odporne na gnicie, używane do budowy mostów, statków, tężni solankowych i gontów dachowych."
   },
-
   "interakcje": "Olejek modrzewiowy może nasilać działanie leków wykrztuśnych. Zewnętrznie u osób wrażliwych może powodować podrażnienia skóry.",
-
   "ciekawostki": [
     "Dachy wielu zabytkowych kościołów w Polsce pokryte są gontem modrzewiowym, który bez konserwacji potrafi przetrwać ponad 100 lat.",
     "W medycynie ludowej dym z palonych gałązek modrzewia uważano za środek odpędzający 'złe uroki' i oczyszczający powietrze z zarazy.",
@@ -96,7 +94,6 @@
     "Z jednego drzewa modrzewia można pozyskać w ciągu roku do 0,5 kg czystej żywicy bez uszczerbku na jego zdrowiu.",
     "Modrzew syberyjski (krewny naszego) potrafi przetrwać temperatury dochodzące do -70°C."
   ],
-
   "permakultura": {
     "funkcje": [
       "Producent biomasy bogatej w wapń (igły modrzewia, w przeciwieństwie do sosnowych, nie zakwaszają gleby tak silnie).",
@@ -105,17 +102,27 @@
       "Siedlisko dla specyficznych grzybów jadalnych (Maślak modrzewiowy żyje wyłącznie w symbiozie z tym drzewem)."
     ],
     "gildie": [
-      { "nazwa": "Maślak modrzewiowy", "rola": "Ścisła symbioza mikoryzowa – bez modrzewia ten grzyb nie istnieje." },
-      { "nazwa": "Jałowiec", "rola": "Partnerzy na suchych, nasłonecznionych zboczach." },
-      { "nazwa": "Brzoza", "rola": "Tworzą razem dynamiczne, świetliste lasy pionierskie." }
+      {
+        "nazwa": "Maślak modrzewiowy",
+        "rola": "Ścisła symbioza mikoryzowa – bez modrzewia ten grzyb nie istnieje."
+      },
+      {
+        "nazwa": "Jałowiec",
+        "rola": "Partnerzy na suchych, nasłonecznionych zboczach."
+      },
+      {
+        "nazwa": "Brzoza",
+        "rola": "Tworzą razem dynamiczne, świetliste lasy pionierskie."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór młodych przyrostów",
-        "miesiace": [5],
+        "miesiace": [
+          5
+        ],
         "opis": "Zrywanie miękkich, jasnozielonych końcówek pędów na syrop lub herbatę.",
         "faza_ksiezyca": "Księżyc przybywający (faza liścia/soku)",
         "pora_dnia": "Przedpołudnie",
@@ -123,13 +130,17 @@
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Inhalacja Modrzewiowa (Na zatoki i kaszel)",
       "typ": "medyczne",
       "metoda": "inhalacja parowa",
-      "tagi": ["kaszel", "zatoki", "dezynfekcja", "płuca"],
+      "tagi": [
+        "kaszel",
+        "zatoki",
+        "dezynfekcja",
+        "płuca"
+      ],
       "skladniki": [
         "Garść młodych pędów modrzewia (świeżych lub suszonych)",
         "Opcjonalnie: kropla olejku modrzewiowego"
@@ -147,7 +158,11 @@
       "tytul": "Wiosenny Napar z Igieł (Bomba Witaminowa)",
       "typ": "medyczne",
       "metoda": "napar",
-      "tagi": ["witamina C", "odporność", "wzmocnienie"],
+      "tagi": [
+        "witamina C",
+        "odporność",
+        "wzmocnienie"
+      ],
       "skladniki": [
         "Posiekane młode igły modrzewia: 2 łyżki",
         "Woda: 250 ml (temp. 80°C)"
@@ -161,5 +176,41 @@
       "slug": "modrzew_europejski"
     }
   ],
-  "ostrzezenia": "Osoby z astmą oskrzelową powinny zachować ostrożność przy inhalacjach olejkami eterycznymi (ryzyko skurczu oskrzeli). Drewno modrzewiowe pali się bardzo 'strzelając' iskrami – nie nadaje się do otwartych kominków."
+  "ostrzezenia": "Osoby z astmą oskrzelową powinny zachować ostrożność przy inhalacjach olejkami eterycznymi (ryzyko skurczu oskrzeli). Drewno modrzewiowe pali się bardzo 'strzelając' iskrami – nie nadaje się do otwartych kominków.",
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-09-30",
+    "w_url": false,
+    "zdjecia": [
+      {
+        "podpis": "Szyszeczkowate kwiaty żeńskie",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Larix-decidua_0043_S.jpg/500px-Larix-decidua_0043_S.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Larix-decidua_0043_S.jpg",
+        "autor": "Rüdiger Kratz , St. Ingbert",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      },
+      {
+        "podpis": "Pęczki igieł",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Larix_decidua-Nadelansatz.jpg/500px-Larix_decidua-Nadelansatz.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Larix_decidua-Nadelansatz.jpg",
+        "autor": "Hans Gasperl ( Gaha )",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      },
+      {
+        "podpis": "Modrzew zimą",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Larix_decidua_Winter.jpg/500px-Larix_decidua_Winter.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Larix_decidua_Winter.jpg",
+        "autor": "Prazak",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      }
+    ]
+  }
 }

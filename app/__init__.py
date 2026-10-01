@@ -67,6 +67,10 @@ def create_app():
     app.register_blueprint(api_bp)
     app.register_blueprint(recipes_bp)
 
+    # Wiedza z sieci wmontowana przez Siedzibe w rozdzialy roslin (blok "scalone") - funkcje dla szablonow
+    from app.utils.merged import register as register_merged
+    register_merged(app)
+
     # Tabele bazy (komentarze, uzytkownicy) tworzone przy starcie, jesli ich nie ma.
     # Plik bazy (instance/) nie jest w repozytorium, a freeze.py na Renderze potrzebuje pustych tabel.
     with app.app_context():

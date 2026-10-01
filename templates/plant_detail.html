@@ -22,6 +22,31 @@
     {%- else -%}{{ v }}{%- endif -%}
 {%- endmacro %}
 
+{# Wiedza z sieci wmontowana przez Siedzibe w rozdzialy (blok "scalone", app/utils/merged.py):
+   tekst reczny + informacje z sieci, z przypisami [n] do zrodel; oryginal do rozwiniecia. #}
+{% macro sc_refs(t) -%}
+    {%- for z in t.refs %}<a class="web-ref" href="{{ z.url }}" target="_blank" rel="noopener nofollow" title="{{ z.nazwa or z.url }}">[{{ z.nr }}]</a>{% endfor -%}
+{%- endmacro %}
+{% macro sc_inline(m) -%}
+    <span class="merged-text">{% for t in m.tresc %}{{ t.tekst }}{{ sc_refs(t) }}{{ ' ' if not loop.last }}{% endfor %}</span>
+{%- endmacro %}
+{% macro sc_orig(m) -%}
+    {%- if m.oryginal_txt %}<details class="orig-text"><summary>Tekst oryginalny Kwiatownika</summary><p>{{ m.oryginal_txt }}</p></details>{% endif -%}
+{%- endmacro %}
+{% macro pole(p, path, value) -%}
+    {%- set m = scalone(p, path) -%}
+    {%- if m %}{{ sc_inline(m) }}{% else %}{{ value if value is not undefined and value is not none else '' }}{% endif -%}
+{%- endmacro %}
+{% macro blok(p, path, value) -%}
+    {%- set m = scalone(p, path) -%}
+    <p>{% if m %}{{ sc_inline(m) }}{% else %}{{ value if value is not undefined and value is not none else '' }}{% endif %}</p>{% if m %}{{ sc_orig(m) }}{% endif %}
+{%- endmacro %}
+{% macro lista(p, path, items, icon) -%}
+    {%- set m = scalone(p, path) -%}
+    {%- if m %}{% for t in m.tresc %}<li><i class="ra {{ icon }}"></i> {{ t.tekst }}{{ sc_refs(t) }}</li>{% endfor %}
+    {%- else %}{% for x in (items or []) %}<li><i class="ra {{ icon }}"></i> {{ x }}</li>{% endfor %}{% endif -%}
+{%- endmacro %}
+
 {% block content %}
 {% set galeria = plant.url if (plant.url is mapping) else {} %}
 {% set tlo = galeria.get('pokrój') or galeria.get('Pokrój') or '' %}
@@ -36,7 +61,7 @@
             <h1 class="hero-title">{{ plant.nazwa_pl }}</h1>
             <p class="hero-subtitle">{{ plant.nazwa_lat }} <span class="hero-family">| {{ plant.rodzina }}</span></p>
             <div class="hero-divider"></div>
-            <p class="hero-desc">{{ plant.opis }}</p>
+            <p class="hero-desc">{{ pole(plant, 'opis', plant.opis) }}</p>
             <a class="compare-link" href="{{ url_for('plants.porownaj', a=plant_id) }}"><i class="ra ra-scroll-unfurled"></i> Porównaj z inną rośliną</a>
 
             {% if galeria %}
@@ -65,35 +90,39 @@
 
         <div class="grimmoire-book">
 
-            {% if plant.profil_energetyczny or plant.wymagania %}
+            {% set pe = plant.profil_energetyczny if plant.profil_energetyczny is mapping else {} %}
+            {% set wy = plant.wymagania if plant.wymagania is mapping else {} %}
+            {% if pe or wy or scalone_jest(plant, 'profil_energetyczny') or scalone_jest(plant, 'wymagania') %}
             <details class="grimmoire-tab">
                 <summary><i class="ra ra-moon-sun"></i> Natura i Siedlisko</summary>
                 <div class="tab-content">
 
-                    {% if plant.profil_energetyczny %}
+                    {% if pe or scalone_jest(plant, 'profil_energetyczny') %}
                     <details class="grimmoire-subtab">
                         <summary><i class="ra ra-burning-embers"></i> Profil Energetyczny</summary>
                         <div class="subtab-content">
                             <ul class="sub-list">
-                                <li><strong>Smak:</strong> {{ plant.profil_energetyczny.smak }}</li>
-                                <li><strong>Termika:</strong> {{ plant.profil_energetyczny.termika }}</li>
-                                <li><strong>Wilgotność:</strong> {{ plant.profil_energetyczny.wilgotnosc }}</li>
-                                <li><strong>Żywioł:</strong> {{ plant.profil_energetyczny.zywiol }}</li>
+                                <li><strong>Smak:</strong> {{ pole(plant, 'profil_energetyczny.smak', pe.smak) }}</li>
+                                <li><strong>Termika:</strong> {{ pole(plant, 'profil_energetyczny.termika', pe.termika) }}</li>
+                                <li><strong>Wilgotność:</strong> {{ pole(plant, 'profil_energetyczny.wilgotnosc', pe.wilgotnosc) }}</li>
+                                <li><strong>Żywioł:</strong> {{ pole(plant, 'profil_energetyczny.zywiol', pe.zywiol) }}</li>
                             </ul>
-                            <p class="energy-quote">"{{ plant.profil_energetyczny.opis }}"</p>
+                            {% set m_pe = scalone(plant, 'profil_energetyczny.opis') %}
+                            {% if pe.opis or m_pe %}<p class="energy-quote">{% if m_pe %}{{ sc_inline(m_pe) }}{% else %}"{{ pe.opis }}"{% endif %}</p>{% if m_pe %}{{ sc_orig(m_pe) }}{% endif %}{% endif %}
                         </div>
                     </details>
                     {% endif %}
 
-                    {% if plant.wymagania %}
+                    {% if wy or scalone_jest(plant, 'wymagania') %}
                     <details class="grimmoire-subtab">
                         <summary><i class="ra ra-compass"></i> Wymagania Siedliskowe</summary>
                         <div class="subtab-content">
                             <ul class="sub-list">
-                                <li><strong>Stanowisko:</strong> {{ plant.wymagania.stanowisko }}</li>
-                                <li><strong>Gleba:</strong> {{ plant.wymagania.gleba }}</li>
-                                <li><strong>Woda:</strong> {{ plant.wymagania.woda }}</li>
-                                <li><strong>Mrozoodporność:</strong> {{ plant.wymagania.mrozoodpornosc }}</li>
+                                <li><strong>Stanowisko:</strong> {{ pole(plant, 'wymagania.stanowisko', wy.stanowisko) }}</li>
+                                <li><strong>Gleba:</strong> {{ pole(plant, 'wymagania.gleba', wy.gleba) }}</li>
+                                <li><strong>Woda:</strong> {{ pole(plant, 'wymagania.woda', wy.woda) }}</li>
+                                {% if wy.ph_gleby or scalone(plant, 'wymagania.ph_gleby') %}<li><strong>pH gleby:</strong> {{ pole(plant, 'wymagania.ph_gleby', wy.ph_gleby) }}</li>{% endif %}
+                                <li><strong>Mrozoodporność:</strong> {{ pole(plant, 'wymagania.mrozoodpornosc', wy.mrozoodpornosc) }}</li>
                             </ul>
                         </div>
                     </details>
@@ -103,21 +132,20 @@
             </details>
             {% endif %}
 
-            {% if plant.identyfikacja %}
+            {% set idf = plant.identyfikacja if plant.identyfikacja is mapping else {} %}
+            {% if idf or scalone_jest(plant, 'identyfikacja') %}
             <details class="grimmoire-tab">
                 <summary><i class="ra ra-eye-monster"></i> Rozpoznawanie w terenie</summary>
                 <div class="tab-content">
                     <ul class="feature-list">
-                        {% for cecha in plant.identyfikacja.cechy_kluczowe %}
-                            <li><i class="ra ra-leaf"></i> {{ cecha }}</li>
-                        {% endfor %}
+                        {{ lista(plant, 'identyfikacja.cechy_kluczowe', idf.cechy_kluczowe, 'ra-leaf') }}
                     </ul>
 
-                    {% if plant.identyfikacja.mozliwe_pomyłki %}
+                    {% if idf.mozliwe_pomyłki %}
                     <details class="grimmoire-subtab danger-subtab">
                         <summary><i class="ra ra-skull"></i> Możliwe pomyłki (Zagrożenia!)</summary>
                         <div class="subtab-content warning-box">
-                            {% for pomylka in plant.identyfikacja.mozliwe_pomyłki %}
+                            {% for pomylka in idf.mozliwe_pomyłki %}
                                 <p><strong>{{ pomylka.nazwa }}:</strong> {{ pomylka.roznica }}</p>
                             {% endfor %}
                         </div>
@@ -127,28 +155,34 @@
             </details>
             {% endif %}
 
-            {% if plant.czesci_rosliny %}
+            {% set czesci = wszystkie_czesci(plant) %}
+            {% if czesci %}
             <details class="grimmoire-tab">
                 <summary><i class="ra ra-fizzing-flask"></i> Surowce i Zbiory</summary>
                 <div class="tab-content">
-                    {% for klucz, dane in plant.czesci_rosliny.items() %}
+                    {% for klucz, dane in czesci.items() %}{% if dane is mapping %}
                     <details class="grimmoire-subtab part-subtab">
                         <summary>
                             <span class="subtab-title-group">
-                                <i class="ra ra-potion"></i> {{ dane.nazwa_surowca }} <span class="part-badge">{{ klucz }}</span>
+                                <i class="ra ra-potion"></i> {{ dane.nazwa_surowca }} <span class="part-badge">{{ klucz }}</span>{% if dane._z_sieci %} <span class="part-badge web-part-badge" title="Część rośliny opisana na podstawie źródeł z sieci (Siedziba Kwiatownika)">🌐 z sieci</span>{% endif %}
                             </span>
                         </summary>
                         <div class="subtab-content">
-                            <p class="part-desc">{{ dane.opis_botaniczny }}</p>
+                            {% set cp = 'czesci_rosliny.' ~ klucz ~ '.' %}
+                            {% set wk = 'wlasciwosci' if ('wlasciwosci' in dane and 'wlasciwości' not in dane) else 'wlasciwości' %}
+                            <p class="part-desc">{{ pole(plant, cp ~ 'opis_botaniczny', dane.opis_botaniczny) }}</p>
 
                             <div class="part-effects">
-                                <strong>Działanie:</strong> {{ dane.wlasciwości }}
+                                <strong>Działanie:</strong> {{ pole(plant, cp ~ wk, dane[wk]) }}
                             </div>
 
                             <div class="part-chem mt-3">
                                 <strong>Substancje czynne:</strong>
                                 <div class="chem-tags">
-                                    {% if dane.skladniki_aktywne is string %}
+                                    {% set m_sk = scalone(plant, cp ~ 'skladniki_aktywne') %}
+                                    {% if m_sk %}
+                                        {% for t in m_sk.tresc %}<span class="chem-link">{{ t.tekst }}{{ sc_refs(t) }}</span>{% endfor %}
+                                    {% elif dane.skladniki_aktywne is string %}
                                         <a href="https://pl.wikipedia.org/wiki/Special:Search?search={{ dane.skladniki_aktywne | urlencode }}" target="_blank" class="chem-link">{{ dane.skladniki_aktywne }} <i class="ra ra-book"></i></a>
                                     {% else %}
                                         {% for skladnik in dane.skladniki_aktywne %}
@@ -158,68 +192,78 @@
                                 </div>
                             </div>
 
-                            {% if dane.ostrzezenia %}
-                            <div class="part-warning"><i class="ra ra-poison-cloud"></i> {{ dane.ostrzezenia }}</div>
+                            {% if dane.ostrzezenia or scalone(plant, cp ~ 'ostrzezenia') %}
+                            <div class="part-warning"><i class="ra ra-poison-cloud"></i> {{ pole(plant, cp ~ 'ostrzezenia', dane.ostrzezenia) }}</div>
                             {% endif %}
 
-                            <div class="part-time"><i class="ra ra-hourglass"></i> Zbiór: <strong>{{ dane.czas_zbioru }}</strong></div>
+                            {% if dane.czas_zbioru or scalone(plant, cp ~ 'czas_zbioru') %}
+                            <div class="part-time"><i class="ra ra-hourglass"></i> Zbiór: <strong>{{ pole(plant, cp ~ 'czas_zbioru', dane.czas_zbioru) }}</strong></div>
+                            {% endif %}
                         </div>
                     </details>
-                    {% endfor %}
+                    {% endif %}{% endfor %}
                 </div>
             </details>
             {% endif %}
 
-            {% if plant.zastosowanie %}
+            {% set za = plant.zastosowanie if plant.zastosowanie is mapping else {} %}
+            {% if za or scalone_jest(plant, 'zastosowanie') %}
             <details class="grimmoire-tab">
                 <summary><i class="ra ra-anvil"></i> Praktyczne Zastosowanie</summary>
                 <div class="tab-content">
-                    {% if plant.zastosowanie.medyczne %}
+                    {% if za.medyczne or scalone(plant, 'zastosowanie.medyczne') %}
                     <details class="grimmoire-subtab">
                         <summary><i class="ra ra-health"></i> Medycyna</summary>
-                        <div class="subtab-content"><p>{{ plant.zastosowanie.medyczne }}</p></div>
+                        <div class="subtab-content">{{ blok(plant, 'zastosowanie.medyczne', za.medyczne) }}</div>
                     </details>
                     {% endif %}
 
-                    {% if plant.zastosowanie.kulinarne %}
+                    {% if za.kulinarne or scalone(plant, 'zastosowanie.kulinarne') %}
                     <details class="grimmoire-subtab">
                         <summary><i class="ra ra-meat"></i> Kuchnia</summary>
-                        <div class="subtab-content"><p>{{ plant.zastosowanie.kulinarne }}</p></div>
+                        <div class="subtab-content">{{ blok(plant, 'zastosowanie.kulinarne', za.kulinarne) }}</div>
                     </details>
                     {% endif %}
 
-                    {% if plant.zastosowanie.rzemieslnicze %}
+                    {% if za.rzemieslnicze or scalone(plant, 'zastosowanie.rzemieslnicze') %}
                     <details class="grimmoire-subtab">
                         <summary><i class="ra ra-hammer"></i> Rzemiosło</summary>
-                        <div class="subtab-content"><p>{{ plant.zastosowanie.rzemieslnicze }}</p></div>
+                        <div class="subtab-content">{{ blok(plant, 'zastosowanie.rzemieslnicze', za.rzemieslnicze) }}</div>
                     </details>
                     {% endif %}
 
-                    {% if plant.zastosowanie.ogrodowe %}
+                    {% if za.kosmetyczne or scalone(plant, 'zastosowanie.kosmetyczne') %}
+                    <details class="grimmoire-subtab">
+                        <summary><i class="ra ra-flower"></i> Kosmetyka</summary>
+                        <div class="subtab-content">{{ blok(plant, 'zastosowanie.kosmetyczne', za.kosmetyczne) }}</div>
+                    </details>
+                    {% endif %}
+
+                    {% if za.ogrodowe or scalone(plant, 'zastosowanie.ogrodowe') %}
                     <details class="grimmoire-subtab">
                         <summary><i class="ra ra-pine-tree"></i> Ogród</summary>
-                        <div class="subtab-content"><p>{{ plant.zastosowanie.ogrodowe }}</p></div>
+                        <div class="subtab-content">{{ blok(plant, 'zastosowanie.ogrodowe', za.ogrodowe) }}</div>
                     </details>
                     {% endif %}
                 </div>
             </details>
             {% endif %}
 
-            {% if plant.interakcje or plant.ostrzezenia %}
+            {% if plant.interakcje or plant.ostrzezenia or scalone(plant, 'interakcje') or scalone(plant, 'ostrzezenia') %}
             <details class="grimmoire-tab danger-tab">
                 <summary><i class="ra ra-bleeding-eye"></i> Bezpieczeństwo i Interakcje</summary>
                 <div class="tab-content">
-                    {% if plant.interakcje %}
+                    {% if plant.interakcje or scalone(plant, 'interakcje') %}
                     <details class="grimmoire-subtab danger-subtab" open>
                         <summary><i class="ra ra-potion"></i> Interakcje z lekami</summary>
-                        <div class="subtab-content danger-block"><p>{{ plant.interakcje }}</p></div>
+                        <div class="subtab-content danger-block">{{ blok(plant, 'interakcje', plant.interakcje) }}</div>
                     </details>
                     {% endif %}
 
-                    {% if plant.ostrzezenia %}
+                    {% if plant.ostrzezenia or scalone(plant, 'ostrzezenia') %}
                     <details class="grimmoire-subtab danger-subtab" open>
                         <summary><i class="ra ra-lightning-bolt"></i> Przeciwwskazania</summary>
-                        <div class="subtab-content danger-block"><p>{{ plant.ostrzezenia }}</p></div>
+                        <div class="subtab-content danger-block">{{ blok(plant, 'ostrzezenia', plant.ostrzezenia) }}</div>
                     </details>
                     {% endif %}
                 </div>
@@ -258,9 +302,7 @@
                         <div class="subtab-content">
                             <p><strong>Rola w systemie:</strong></p>
                             <ul class="eco-list mb-4">
-                                {% for f in plant.permakultura.funkcje %}
-                                    <li><i class="ra ra-leaf"></i> {{ f }}</li>
-                                {% endfor %}
+                                {{ lista(plant, 'permakultura.funkcje', (plant.permakultura or {}).funkcje, 'ra-leaf') }}
                             </ul>
 
                             <p><strong>Towarzysze (Gildia):</strong></p>
@@ -289,26 +331,28 @@
             {% set zr = {} %}
             {% for z in plant.wiedza.zrodla or [] %}{% if z.url and (z.url.startswith('http://') or z.url.startswith('https://')) %}{% set _ = zr.update({z.nr: z}) %}{% endif %}{% endfor %}
             {% set n_pkt = namespace(v=0) %}
-            {% for s in plant.wiedza.sekcje %}{% set n_pkt.v = n_pkt.v + (s.punkty | length) %}{% endfor %}
+            {% set n_all = namespace(v=0) %}
+            {% for s in plant.wiedza.sekcje %}{% for p in s.punkty or [] %}{% set n_all.v = n_all.v + 1 %}{% if poza_rozdzialami(plant, p) %}{% set n_pkt.v = n_pkt.v + 1 %}{% endif %}{% endfor %}{% endfor %}
             <details class="grimmoire-tab" open>
                 <summary><i class="ra ra-globe"></i> Wiedza z sieci ({{ n_pkt.v }})</summary>
                 <div class="tab-content">
                     <p class="web-note">Informacje zebrane z Wikipedii i stron z różnych krajów, każda sprawdzona z cytatem
-                    źródła i uporządkowana. Numery [1] prowadzą do źródeł.{% if plant.wiedza.zaktualizowano %} Aktualizacja: {{ plant.wiedza.zaktualizowano }}.{% endif %}</p>
+                    źródła i uporządkowana. Numery [1] prowadzą do źródeł.{% if n_all.v > n_pkt.v %} {{ n_all.v - n_pkt.v }} informacji
+                    wmontowano w rozdziały powyżej (Natura, Surowce, Zastosowanie...) - tam też mają przypisy do źródeł.{% endif %}{% if plant.wiedza.zaktualizowano %} Aktualizacja: {{ plant.wiedza.zaktualizowano }}.{% endif %}</p>
                     {% if plant.wiedza.czesci %}
                     <p class="web-parts">Części rośliny:
                         {% for part, ids in plant.wiedza.czesci.items() %}<span class="web-chip">{{ part }} ({{ ids | length }})</span>{% endfor %}
                     </p>
                     {% endif %}
-                    {% for sec in plant.wiedza.sekcje %}{% if sec.punkty %}
+                    {% for sec in plant.wiedza.sekcje %}{% set ns_r = namespace(items=[]) %}{% for p in sec.punkty or [] %}{% if poza_rozdzialami(plant, p) %}{% set ns_r.items = ns_r.items + [p] %}{% endif %}{% endfor %}{% if ns_r.items %}
                         <details class="grimmoire-subtab"{% if sec.klucz in ('barwienie', 'kultura', 'zastosowanie_lecznicze', 'bezpieczenstwo') %} open{% endif %}>
-                            <summary>{{ '🎨 ' if sec.klucz == 'barwienie' else ('⚠️ ' if sec.klucz == 'bezpieczenstwo' else '') }}{{ sec.tytul or sec.klucz }} ({{ sec.punkty | length }})</summary>
+                            <summary>{{ '🎨 ' if sec.klucz == 'barwienie' else ('⚠️ ' if sec.klucz == 'bezpieczenstwo' else '') }}{{ sec.tytul or sec.klucz }} ({{ ns_r.items | length }})</summary>
                             <div class="subtab-content">
-                                {% if sec.podsumowanie %}
+                                {% if sec.podsumowanie and ns_r.items | length == sec.punkty | length %}
                                 <p class="web-summary">{{ sec.podsumowanie }}{% for n in sec.podsumowanie_zrodla or [] %}{% if n in zr %}<a class="web-ref" href="{{ zr[n].url }}" target="_blank" rel="noopener nofollow" title="{{ zr[n].nazwa }}">[{{ n }}]</a>{% endif %}{% endfor %}</p>
                                 {% endif %}
                                 <ul class="web-facts">
-                                {% for p in sec.punkty %}
+                                {% for p in ns_r.items %}
                                     <li>{% if p.czesc %}<span class="web-chip">{{ p.czesc }}</span> {% endif %}{{ p.tekst }}{% for n in p.zrodla or [] %}{% if n in zr %}<a class="web-ref" href="{{ zr[n].url }}" target="_blank" rel="noopener nofollow" title="{{ zr[n].nazwa }}">[{{ n }}]</a>{% endif %}{% endfor %}</li>
                                 {% endfor %}
                                 </ul>
@@ -416,14 +460,12 @@
             </details>
             {% endif %}
 
-            {% if plant.ciekawostki %}
+            {% if plant.ciekawostki or scalone(plant, 'ciekawostki') %}
             <details class="grimmoire-tab">
                 <summary><i class="ra ra-scroll"></i> Wiedza Tajemna</summary>
                 <div class="tab-content">
                     <ul class="trivia-list">
-                        {% for c in plant.ciekawostki %}
-                            <li><i class="ra ra-emerald"></i> {{ c }}</li>
-                        {% endfor %}
+                        {{ lista(plant, 'ciekawostki', plant.ciekawostki if plant.ciekawostki is iterable and plant.ciekawostki is not string else [], 'ra-emerald') }}
                     </ul>
                 </div>
             </details>
@@ -449,6 +491,12 @@
     .arch-link, .arch-bib a { color: #a8c69f; font-size: 0.85em; word-break: break-all; }
     .arch-src { font-size: 0.85em; }
     .compare-link { display: inline-block; margin-top: 10px; color: #d1b880; font-size: 0.9rem; }
+    /* WIEDZA Z SIECI WMONTOWANA W ROZDZIALY (blok "scalone") */
+    .merged-text .web-ref { font-size: 0.7em; }
+    .web-part-badge { border-color: #4f86c6; color: #a8c6e8; }
+    .orig-text { margin: 6px 0 0; font-size: 0.85em; color: #cfc4a8; }
+    .orig-text summary { cursor: pointer; font-style: italic; opacity: 0.8; }
+    .orig-text p { margin: 4px 0 0; padding-left: 10px; border-left: 2px solid #7a6a4a; overflow-wrap: anywhere; }
     /* WIEDZA Z SIECI (Siedziba Kwiatownika) */
     .web-note { font-size: 0.85em; color: #cfc4a8; font-style: italic; margin-bottom: 10px; }
     .web-facts { margin: 0; padding-left: 18px; }

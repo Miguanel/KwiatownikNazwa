@@ -11,8 +11,13 @@
     "zywiol": "Ziemia",
     "opis": "Silnie osuszający i tonizujący (obkurczający). W energetyce tradycyjnej stosowany do 'zatrzymywania przepływów' – tamuje krew, hamuje biegunkę, zmniejsza nadmierną potliwość i wysięki skórne."
   },
-  "tagi": ["drzewo", "trawienie", "magia", "barwnik"],
-    "url": {
+  "tagi": [
+    "drzewo",
+    "trawienie",
+    "magia",
+    "barwnik"
+  ],
+  "url": {
     "Żołędzie osadzone są na długich szypułkach": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Quercus_robur_002.JPG/500px-Quercus_robur_002.JPG",
     "Kwiatostany męskie": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/20140410Quercus_robur.jpg/500px-20140410Quercus_robur.jpg",
     "Kora": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Quercus-robur-bark.jpg/500px-Quercus-robur-bark.jpg",
@@ -119,19 +124,51 @@
       "Tworzenie mikroklimatu i wiatrochronu"
     ],
     "gildie": [
-      { "nazwa": "Grab", "rola": "Naturalny towarzysz w lasach dębowo-grabowych (grądach)." },
-      { "nazwa": "Borowik szlachetny", "rola": "Symbioza mikoryzowa - dąb 'karmi' szlachetne grzyby jadalne." },
-      {"nazwa": "Leszczyna pospolita","rola": "Warstwa krzewów, toleruje cień dębu"},
-      {"nazwa": "Głóg jednoszyjkowy", "rola": "Ochrona pnia przed zwierzętami, wsparcie dla ptaków"},
-      {"nazwa": "Porzeczka czarna","rola": "Warstwa owoconośna w rzucie korony"},
-      {"nazwa": "Żywokost lekarski","rola": "Ściółkowanie, przyspieszanie rozkładu liści dębu"},
-      {"nazwa": "Grzyby mikoryzowe", "rola": "Symbioza korzeniowa, wymiana składników"},
-      { "nazwa": "Dąb bezszypułkowy", "rola": "Najbliższy krewniak, dzieli podobne siedliska wyżynne." },
-      { "nazwa": "Dąb czerwony", "rola": "Szybciej rosnący brat z Ameryki, często spotykany w parkach." },
-      { "nazwa": "Dąb omszony", "rola": "Rzadki, południowy krewniak o owłosionych liściach." },
-      { "nazwa": "Dąb błotny", "rola": "Brat preferujący tereny zalewowe i wilgotne." }
+      {
+        "nazwa": "Grab",
+        "rola": "Naturalny towarzysz w lasach dębowo-grabowych (grądach)."
+      },
+      {
+        "nazwa": "Borowik szlachetny",
+        "rola": "Symbioza mikoryzowa - dąb 'karmi' szlachetne grzyby jadalne."
+      },
+      {
+        "nazwa": "Leszczyna pospolita",
+        "rola": "Warstwa krzewów, toleruje cień dębu"
+      },
+      {
+        "nazwa": "Głóg jednoszyjkowy",
+        "rola": "Ochrona pnia przed zwierzętami, wsparcie dla ptaków"
+      },
+      {
+        "nazwa": "Porzeczka czarna",
+        "rola": "Warstwa owoconośna w rzucie korony"
+      },
+      {
+        "nazwa": "Żywokost lekarski",
+        "rola": "Ściółkowanie, przyspieszanie rozkładu liści dębu"
+      },
+      {
+        "nazwa": "Grzyby mikoryzowe",
+        "rola": "Symbioza korzeniowa, wymiana składników"
+      },
+      {
+        "nazwa": "Dąb bezszypułkowy",
+        "rola": "Najbliższy krewniak, dzieli podobne siedliska wyżynne."
+      },
+      {
+        "nazwa": "Dąb czerwony",
+        "rola": "Szybciej rosnący brat z Ameryki, często spotykany w parkach."
+      },
+      {
+        "nazwa": "Dąb omszony",
+        "rola": "Rzadki, południowy krewniak o owłosionych liściach."
+      },
+      {
+        "nazwa": "Dąb błotny",
+        "rola": "Brat preferujący tereny zalewowe i wilgotne."
+      }
     ]
-
   },
   "kalendarz_ogrodnika": {
     "zadania": [
@@ -161,7 +198,9 @@
       },
       {
         "czynnosc": "Zbiór galasów",
-        "miesiace": [9],
+        "miesiace": [
+          9
+        ],
         "opis": "Zbiór kuleczek z liści (galasów), powstałych po ukąszeniu galasówki, bogatych w kwas galusowy.",
         "faza_ksiezyca": "Księżyc ubywający",
         "pora_dnia": "Dowolna",
@@ -169,7 +208,11 @@
       },
       {
         "czynnosc": "Zbiór żołędzi",
-        "miesiace": [9, 10, 11],
+        "miesiace": [
+          9,
+          10,
+          11
+        ],
         "opis": "Zbieramy tylko orzechy brązowe, które same opadły. Zielone są niedojrzałe i bezwartościowe kulinarnie.",
         "faza_ksiezyca": "Pełnia lub III kwadra",
         "pora_dnia": "Słoneczne suche popołudnie",
@@ -261,5 +304,61 @@
       ]
     }
   ],
-  "ostrzezenia": "Nie stosować wewnętrznie odwarów z kory przy dużych uszkodzeniach skóry oraz w ostrych stanach niewydolności serca. Nadmiar garbników hamuje wchłanianie żelaza i witamin."
+  "ostrzezenia": "Nie stosować wewnętrznie odwarów z kory przy dużych uszkodzeniach skóry oraz w ostrych stanach niewydolności serca. Nadmiar garbników hamuje wchłanianie żelaza i witamin.",
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-09-29",
+    "w_url": false,
+    "zdjecia": [
+      {
+        "podpis": "Żołędzie osadzone są na długich szypułkach",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Quercus_robur_002.JPG/500px-Quercus_robur_002.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Quercus_robur_002.JPG",
+        "autor": "Llez",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      },
+      {
+        "podpis": "Kwiatostany męskie",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/20140410Quercus_robur.jpg/500px-20140410Quercus_robur.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:20140410Quercus_robur.jpg",
+        "autor": "AnRo0002",
+        "licencja": "CC0",
+        "licencja_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      },
+      {
+        "podpis": "Kora",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Quercus-robur-bark.jpg/500px-Quercus-robur-bark.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Quercus-robur-bark.jpg",
+        "autor": "Sten Porse",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      },
+      {
+        "podpis": "Pąki",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/20140209Quercus_robur4.jpg/500px-20140209Quercus_robur4.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:20140209Quercus_robur4.jpg",
+        "autor": "AnRo0002",
+        "licencja": "CC0",
+        "licencja_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      },
+      {
+        "podpis": "Pokrój zimą",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Wartenberg_Landenhausen_Lerchenberg_Alte-Eiche_Quercus_winter_natural-monument.png/500px-Wartenberg_Landenhausen_Lerchenberg_Alte-Eiche_Quercus_winter_natural-monument.png",
+        "plik": "https://commons.wikimedia.org/wiki/File:Wartenberg_Landenhausen_Lerchenberg_Alte-Eiche_Quercus_winter_natural-monument.png",
+        "autor": "UuMUfQ",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      }
+    ]
+  }
 }

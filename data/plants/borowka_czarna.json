@@ -208,5 +208,839 @@
       "slug": "borowka_czarna"
     }
   ],
-  "ostrzezenia": "Zawsze myj owoce leśne przed spożyciem ze względu na ryzyko zakażenia bąblowicą (Echinokokoza). Osoby z chorobą wrzodową żołądka powinny unikać świeżych jagód w dużych ilościach."
+  "ostrzezenia": "Zawsze myj owoce leśne przed spożyciem ze względu na ryzyko zakażenia bąblowicą (Echinokokoza). Osoby z chorobą wrzodową żołądka powinny unikać świeżych jagód w dużych ilościach.",
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-09-30",
+    "w_url": false,
+    "zdjecia": [
+      {
+        "podpis": "Owoc",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Vaccinium_myrtillus_uoga%2C_2006-07-25.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Vaccinium_myrtillus_uoga,_2006-07-25.JPG",
+        "autor": "Algirdas at Lithuanian Wikipedia",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      },
+      {
+        "podpis": "Kwiat",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Vaccinium_myrtillus_kz12.jpg/960px-Vaccinium_myrtillus_kz12.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Vaccinium_myrtillus_kz12.jpg",
+        "autor": "Krzysztof Ziarnek, Kenraiz",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      },
+      {
+        "podpis": "Kwitnący pęd",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Vaccinum_myrtillus_260405.jpg/500px-Vaccinum_myrtillus_260405.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Vaccinum_myrtillus_260405.jpg",
+        "autor": "nieznany autor",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      },
+      {
+        "podpis": "Kłącze z korzeniami",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Vacc_myrt_kz4.jpg/500px-Vacc_myrt_kz4.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Vacc_myrt_kz4.jpg",
+        "autor": "Krzysztof Ziarnek, Kenraiz",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      }
+    ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-09-30",
+    "uporzadkowano": "2026-09-30",
+    "uklad": "llm:gemini/gemini-3.5-flash-lite",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (pl): Borówka czarna",
+        "url": "https://pl.wikipedia.org/wiki/Bor%C3%B3wka_czarna",
+        "jezyk": "pl",
+        "typ": "wikipedia",
+        "nr": 1
+      },
+      {
+        "nazwa": "Wikipedia (de): Heidelbeere",
+        "url": "https://de.wikipedia.org/wiki/Heidelbeere",
+        "jezyk": "de",
+        "typ": "wikipedia",
+        "nr": 2
+      },
+      {
+        "nazwa": "Wikipedia (en): Vaccinium myrtillus",
+        "url": "https://en.wikipedia.org/wiki/Vaccinium_myrtillus",
+        "jezyk": "en",
+        "typ": "wikipedia",
+        "nr": 3
+      },
+      {
+        "nazwa": "diapason.com.ua",
+        "url": "https://diapason.com.ua/listja-chornici-likuvalni-vlastivosti-i/",
+        "jezyk": "ru-RU",
+        "typ": "strona",
+        "nr": 4
+      },
+      {
+        "nazwa": "www.netdoktor.de",
+        "url": "https://www.netdoktor.de/heilpflanzen/heidelbeeren/",
+        "jezyk": "de-de",
+        "typ": "strona",
+        "nr": 5
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "opis",
+        "tytul": "Opis i wygląd",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Kwiaty borówki są obupłciowe, zwisające, o zielonkawym lub czerwonawym kolorze korony o długości 4–6 mm, które kwitną zwykle od kwietnia do maja.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s222"
+            ]
+          },
+          {
+            "tekst": "Dojrzałe owoce osiągają maksymalnie około 1 cm średnicy i mają czarno-niebieską barwę, a także lekko spłaszczony, okrągły kształt.",
+            "czesc": "owoce",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s227"
+            ]
+          },
+          {
+            "tekst": "Jesienią jasnozielone, cienkie i nagie liście borówki czarnej czerwienieją i opadają na zimę.",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s216"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "czesci_rosliny",
+        "tytul": "Części rośliny i surowce",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Surowce zielarskie przeznaczone do preparatów leczniczych pozyskuje się z reguły ze stanowisk naturalnych, natomiast owoce dla przemysłu spożywczego są głównie uprawiane.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s237"
+            ]
+          },
+          {
+            "tekst": "Najlepszy moment na zbiór liści borówki przypada na okres kwitnienia krzewów, czyli od końca maja do początku czerwca, kiedy pędy zawierają najwięcej pożytecznych substancji.",
+            "czesc": "liście",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s243"
+            ]
+          },
+          {
+            "tekst": "Zbiór liści można przeprowadzić także jesienią wraz z dojrzałymi owocami, jednak takie surowce zawierają więcej garbnika, co może prowadzić do zaparoków po spożyciu.",
+            "czesc": "liście",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s244"
+            ]
+          },
+          {
+            "tekst": "Zebrane liście i pędy należy suszyć w cieniu na świeżym powietrzu, rozłożone na papierze lub w suszarce w temperaturze nieprzekraczającej 40°C.",
+            "czesc": "liście",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s245"
+            ]
+          },
+          {
+            "tekst": "Wysuszone pędy borówki należy przechowywać w woreczkach z tkaniny w suchym i zaciemnionym miejscu, a przydatność takiego surowca wynosi dwa lata.",
+            "czesc": "liście",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s246"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Główne składniki czynne owoców to garbniki działające ściągająco na błony śluzowe, przeciwzapalnie i przeciwbakteryjnie, oraz antocyjany będące silnymi antyoksydantami.",
+            "czesc": "owoce",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s236"
+            ]
+          },
+          {
+            "tekst": "Liście borówki zawierają katechiny, garbniki, kwas chinowy, arbutynę, kwas chlorogenowy oraz różne glikozydy, które decydują o ich właściwościach.",
+            "czesc": "liście",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s220"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": "Borówka czarna znajduje szerokie zastosowanie lecznicze. Suszone owoce oraz wywary tradycyjnie stosuje się przy biegunkach, chorobach skóry, stanach zapalnych oraz hemoroidach, natomiast przetwory i napary z liści wspomagają metabolizm, wzrok, krążenie oraz obniżają poziom cukru we krwi.",
+        "podsumowanie_zrodla": [
+          2,
+          4,
+          5
+        ],
+        "punkty": [
+          {
+            "tekst": "Suszone i suche owoce tradycyjnie stosowano wewnętrznie jako środek ludowy przy lekkiej biegunce (także w formie wina z czerwonym winem) oraz zewnętrznie do płukania przy stanach zapalnych błony śluzowej jamy ustnej i gardła.",
+            "czesc": "owoce",
+            "zrodla": [
+              2,
+              5
+            ],
+            "fakty": [
+              "s229",
+              "s232"
+            ]
+          },
+          {
+            "tekst": "W medycynie ludowej borówkę stosowano również przy wymiotach, krwawieniach, hemoroidach oraz przy źle gojących się wrzodach i chorobach skóry.",
+            "czesc": "owoce",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s234"
+            ]
+          },
+          {
+            "tekst": "Przetwory z liści borówki stymulują krążenie w siatkówce oka, co pomaga łagodzić zmęczenie wzroku pod koniec dnia oraz poprawia widzenie dzienne i nocne.",
+            "czesc": "liście",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s240"
+            ]
+          },
+          {
+            "tekst": "Liście jagody czarnej były w medycynie ludowej używane jako środek obniżający poziom cukru we krwi.",
+            "czesc": "liście",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s230"
+            ]
+          },
+          {
+            "tekst": "Spożywanie naparów z liści borówki przed posiłkiem wspomaga metabolizm, dzięki czemu organizm potrzebuje mniej węglowodanów do nasycenia i napoje te włącza się do diet odchudzających.",
+            "czesc": "liście",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s241"
+            ]
+          },
+          {
+            "tekst": "Regularne spożywanie wywaru z pędów borówki może pomagać w zapobieganiu nadciśnieniu i zakrzepom naczyniowym, a kobiety w okresie menopauzy mogą go pić w celu spowolnienia procesów starzenia wegetatywnego układu naczyniowego.",
+            "czesc": "liście",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s242"
+            ]
+          },
+          {
+            "tekst": "U nordyckich ludów tradycyjnie pito napary z liści borówki jako środek stosowany w przypadkach kaszlu, przeziębienia oraz bólów głowy.",
+            "czesc": "liście",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s239"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "barwienie",
+        "tytul": "Barwienie i rzemiosło",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Ludność wiejska na terenie Borów Tucholskich tradycyjnie przeznaczała zebrane jagody między innymi do sporządzania barwników służących do farbowania tkanin.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s215"
+            ]
+          },
+          {
+            "tekst": "Antocyjany zawarte w jagodach barwią przy jedzeniu jamę ustną i zęby na niebiesko-czerwoną barwę.",
+            "czesc": "owoce",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s225"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "historia",
+        "tytul": "Historia i nazwa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Rzymski Pliniusz Starszy opisywał użycie barwnika z jagód do farbowania ubrań niewolników w Galii.",
+            "czesc": "owoce",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s231"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kultura",
+        "tytul": "Wierzenia i tradycje",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Dawniej w dniu Matki Boskiej Jagodnej święcono jagody, a na Lubelszczyźnie wierzono, że do tego dnia należy wstrzymać się z ich zbieraniem i jedzeniem.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s213"
+            ]
+          },
+          {
+            "tekst": "W tradycji polskich wsi ziele borówki tradycyjnie wykorzystywano do przybierania palm wielkanocnych oraz święconek.",
+            "czesc": "ziele",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s214"
+            ]
+          },
+          {
+            "tekst": "Na dawnej Rusi niektórze postacie o statusie szamanów i znachorów wykorzystywały gałązki borówki w swoich rytuałach, przypisując jej cudowne właściwości.",
+            "czesc": "ziele",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s238"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "nazwy_ludowe",
+        "tytul": "Nazwy ludowe",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Roślina posiada wiele nazw zwyczajowych, wśród których najpopularniejsze to jagoda, czarna jagoda oraz czernica.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s211"
+            ]
+          },
+          {
+            "tekst": "W Wielkiej Brytanii roślinę tę tradycyjnie nazywano bilberry, co jest wypożyczeniem z języka staronordyckiego, bardzo zbliżonym do duńskiego słowa 'bøllebær', a spotykane są również nazwy whortleberry, blaeberry oraz myrtleberry.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s218"
+            ]
+          },
+          {
+            "tekst": "W Niemczech jagodę nazywa się regionalnie m.in. Besinge, Besing, Blaubeere, Schwarzbeere, Mollbeere, Wildbeere, Waldbeere, Bickbeere, Staulbeere, Zeckbeere, Moosbeere i Heubeere.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s226"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Spożywanie liści borówki czarnej może być niebezpieczne, ponieważ są one potencjalnie toksyczne dla człowieka, choć w medycynie ludowej stosowano je głównie w leczeniu chorób skóry.",
+            "czesc": "liście",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s219"
+            ]
+          },
+          {
+            "tekst": "Świeże owoce działają lekko przeczyszczająco i w przeciwieństwie do suszonych mogą nasilać biegunkę.",
+            "czesc": "owoce",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s235"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "ciekawostki",
+        "tytul": "Ciekawostki",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Chromosomowa liczba gatunku wynosi 2 n = 24.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s228"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "kwiaty": [
+        "s222"
+      ],
+      "owoce": [
+        "s227",
+        "s236",
+        "s229",
+        "s232",
+        "s234",
+        "s215",
+        "s225",
+        "s231",
+        "s213",
+        "s235"
+      ],
+      "liście": [
+        "s216",
+        "s243",
+        "s244",
+        "s245",
+        "s246",
+        "s220",
+        "s240",
+        "s230",
+        "s241",
+        "s242",
+        "s239",
+        "s219"
+      ],
+      "ziele": [
+        "s214",
+        "s238"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s211",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "Roślina posiada wiele nazw zwyczajowych, wśród których najpopularniejsze to jagoda, czarna jagoda oraz czernica.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Borówka czarna",
+          "url": "https://pl.wikipedia.org/wiki/Bor%C3%B3wka_czarna"
+        }
+      },
+      {
+        "id": "s213",
+        "sekcja": "kultura",
+        "czesc": "owoce",
+        "tekst": "Dawniej w dniu Matki Boskiej Jagodnej święcono jagody, a na Lubelszczyźnie wierzono, że do tego dnia należy wstrzymać się z ich zbieraniem i jedzeniem.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Borówka czarna",
+          "url": "https://pl.wikipedia.org/wiki/Bor%C3%B3wka_czarna"
+        }
+      },
+      {
+        "id": "s214",
+        "sekcja": "kultura",
+        "czesc": "ziele",
+        "tekst": "W tradycji polskich wsi ziele borówki tradycyjnie wykorzystywano do przybierania palm wielkanocnych oraz święconek.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Borówka czarna",
+          "url": "https://pl.wikipedia.org/wiki/Bor%C3%B3wka_czarna"
+        }
+      },
+      {
+        "id": "s215",
+        "sekcja": "barwienie",
+        "czesc": "owoce",
+        "tekst": "Ludność wiejska na terenie Borów Tucholskich tradycyjnie przeznaczała zebrane jagody między innymi do sporządzania barwników służących do farbowania tkanin.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Borówka czarna",
+          "url": "https://pl.wikipedia.org/wiki/Bor%C3%B3wka_czarna"
+        }
+      },
+      {
+        "id": "s216",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Jesienią jasnozielone, cienkie i nagie liście borówki czarnej czerwienieją i opadają na zimę.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Borówka czarna",
+          "url": "https://pl.wikipedia.org/wiki/Bor%C3%B3wka_czarna"
+        }
+      },
+      {
+        "id": "s218",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "W Wielkiej Brytanii roślinę tę tradycyjnie nazywano bilberry, co jest wypożyczeniem z języka staronordyckiego, bardzo zbliżonym do duńskiego słowa 'bøllebær'. Spotykane są również nazwy whortleberry, blaeberry oraz myrtleberry.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Vaccinium myrtillus",
+          "url": "https://en.wikipedia.org/wiki/Vaccinium_myrtillus"
+        }
+      },
+      {
+        "id": "s219",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "liście",
+        "tekst": "Spożywanie liści borówki czarnej może być niebezpieczne, ponieważ są one potencjalnie toksyczne dla człowieka, choć w medycynie ludowej stosowano je głównie w leczeniu chorób skóry.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Vaccinium myrtillus",
+          "url": "https://en.wikipedia.org/wiki/Vaccinium_myrtillus"
+        }
+      },
+      {
+        "id": "s220",
+        "sekcja": "sklad",
+        "czesc": "liście",
+        "tekst": "Liście borówki zawierają katechiny, garbniki, kwas chinowy, arbutynę, kwas chlorogenowy oraz różne glikozydy, które decydują o ich właściwościach.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Vaccinium myrtillus",
+          "url": "https://en.wikipedia.org/wiki/Vaccinium_myrtillus"
+        }
+      },
+      {
+        "id": "s222",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Kwiaty borówki są obupłciowe, zwisające, o zielonkawym lub czerwonawym kolorze korony o długości 4–6 mm. Kwitną one zwykle od kwietnia do maja.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Vaccinium myrtillus",
+          "url": "https://en.wikipedia.org/wiki/Vaccinium_myrtillus"
+        }
+      },
+      {
+        "id": "s225",
+        "sekcja": "barwienie",
+        "czesc": "owoce",
+        "tekst": "Antocyany zawarte w jagodach barwią przy jedzeniu jamę ustną i zęby na niebiesko‑czerwoną barwę.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Heidelbeere",
+          "url": "https://de.wikipedia.org/wiki/Heidelbeere"
+        }
+      },
+      {
+        "id": "s226",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "W Niemczech jagodę nazywa się regionalnie m.in. Besinge, Besing, Blaubeere, Schwarzbeere, Mollbeere, Wildbeere, Waldbeere, Bickbeere, Staulbeere, Zeckbeere, Moosbeere i Heubeere.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Heidelbeere",
+          "url": "https://de.wikipedia.org/wiki/Heidelbeere"
+        }
+      },
+      {
+        "id": "s227",
+        "sekcja": "opis",
+        "czesc": "owoce",
+        "tekst": "Dojrzałe owoce mają maksymalnie około 1 cm średnicy i są czarno‑niebieskie, lekko spłaszczone i okrągłe.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Heidelbeere",
+          "url": "https://de.wikipedia.org/wiki/Heidelbeere"
+        }
+      },
+      {
+        "id": "s228",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Chromosomowa liczba gatunku wynosi 2 n = 24.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Heidelbeere",
+          "url": "https://de.wikipedia.org/wiki/Heidelbeere"
+        }
+      },
+      {
+        "id": "s229",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "owoce",
+        "tekst": "Suszone jagody tradycyjnie stosowano jako środek ludowy na biegunkę, a także w formie wina z czerwonym winem.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Heidelbeere",
+          "url": "https://de.wikipedia.org/wiki/Heidelbeere"
+        }
+      },
+      {
+        "id": "s230",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "liście",
+        "tekst": "Liście jagody czarnej były w medycynie ludowej używane jako środek obniżający poziom cukru we krwi.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Heidelbeere",
+          "url": "https://de.wikipedia.org/wiki/Heidelbeere"
+        }
+      },
+      {
+        "id": "s231",
+        "sekcja": "historia",
+        "czesc": "owoce",
+        "tekst": "Rzymski Pliniusz Starszy opisywał użycie barwnika z jagód do farbowania ubrań niewolników w Galii.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Heidelbeere",
+          "url": "https://de.wikipedia.org/wiki/Heidelbeere"
+        }
+      },
+      {
+        "id": "s232",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "owoce",
+        "tekst": "Tradycyjnie stosowano suche owoce wewnętrznie przy lekkiej biegunce oraz zewnętrznie do płukania przy stanach zapalnych błony śluzowej jamy ustnej i gardła.",
+        "jezyk": "de-de",
+        "zrodlo": {
+          "nazwa": "www.netdoktor.de",
+          "url": "https://www.netdoktor.de/heilpflanzen/heidelbeeren/"
+        }
+      },
+      {
+        "id": "s234",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "owoce",
+        "tekst": "W medycynie ludowej borówkę stosowano również przy wymiotach, krwawieniach, hemoroidach oraz przy źle gojących się wrzodach i chorobach skóry.",
+        "jezyk": "de-de",
+        "zrodlo": {
+          "nazwa": "www.netdoktor.de",
+          "url": "https://www.netdoktor.de/heilpflanzen/heidelbeeren/"
+        }
+      },
+      {
+        "id": "s235",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "owoce",
+        "tekst": "Świeże owoce działają lekko przeczyszczająco i w przeciwieństwie do suszonych mogą nasilać biegunkę.",
+        "jezyk": "de-de",
+        "zrodlo": {
+          "nazwa": "www.netdoktor.de",
+          "url": "https://www.netdoktor.de/heilpflanzen/heidelbeeren/"
+        }
+      },
+      {
+        "id": "s236",
+        "sekcja": "sklad",
+        "czesc": "owoce",
+        "tekst": "Główne składniki czynne owoców to garbniki, które działają ściągająco na błony śluzowe, przeciwzapalnie i przeciwbakteryjnie, oraz antocyjany będące silnymi antyoksydantami.",
+        "jezyk": "de-de",
+        "zrodlo": {
+          "nazwa": "www.netdoktor.de",
+          "url": "https://www.netdoktor.de/heilpflanzen/heidelbeeren/"
+        }
+      },
+      {
+        "id": "s237",
+        "sekcja": "czesci_rosliny",
+        "czesc": null,
+        "tekst": "Surowce zielarskie przeznaczone do preparatów leczniczych pozyskuje się z reguły ze stanowisk naturalnych, natomiast owoce dla przemysłu spożywczego są głównie uprawiane.",
+        "jezyk": "de-de",
+        "zrodlo": {
+          "nazwa": "www.netdoktor.de",
+          "url": "https://www.netdoktor.de/heilpflanzen/heidelbeeren/"
+        }
+      },
+      {
+        "id": "s238",
+        "sekcja": "historia",
+        "czesc": "ziele",
+        "tekst": "Na dawnej Rusi niektórze postacie o statusie szamanów i znachorów wykorzystywały gałązki borówki w swoich rytuałach, przypisując jej cudowne właściwości.",
+        "jezyk": "ru-RU",
+        "zrodlo": {
+          "nazwa": "diapason.com.ua",
+          "url": "https://diapason.com.ua/listja-chornici-likuvalni-vlastivosti-i/"
+        }
+      },
+      {
+        "id": "s239",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "liście",
+        "tekst": "U nordyckich ludów tradycyjnie pito napary z liści borówki jako środek stosowany w przypadkach kaszlu, przeziębienia oraz bólów głowy.",
+        "jezyk": "ru-RU",
+        "zrodlo": {
+          "nazwa": "diapason.com.ua",
+          "url": "https://diapason.com.ua/listja-chornici-likuvalni-vlastivosti-i/"
+        }
+      },
+      {
+        "id": "s240",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "liście",
+        "tekst": "Przetwory z liści borówki stymulują krążenie w siatkówce oka, co pomaga łagodzić zmęczenie wzroku pod koniec dnia oraz poprawia zarówno widzenie dzienne, jak i nocne.",
+        "jezyk": "ru-RU",
+        "zrodlo": {
+          "nazwa": "diapason.com.ua",
+          "url": "https://diapason.com.ua/listja-chornici-likuvalni-vlastivosti-i/"
+        }
+      },
+      {
+        "id": "s241",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "liście",
+        "tekst": "Spożywanie naparów z liści borówki przed posiłkiem wspomaga metabolizm, dzięki czemu organizm potrzebuje mniej węglowodanów do nasycenia i napoje te włącza się do diet odchudzających.",
+        "jezyk": "ru-RU",
+        "zrodlo": {
+          "nazwa": "diapason.com.ua",
+          "url": "https://diapason.com.ua/listja-chornici-likuvalni-vlastivosti-i/"
+        }
+      },
+      {
+        "id": "s242",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "liście",
+        "tekst": "Regularne spożywanie wywaru z pędów borówki może pomagać w zapobieganiu nadciśnieniu i zakrzepom naczyniowym, a kobiety w okresie menopauzy mogą go pić w celu spowolnienia procesów starzenia wegetatywnego układu naczyniowego.",
+        "jezyk": "ru-RU",
+        "zrodlo": {
+          "nazwa": "diapason.com.ua",
+          "url": "https://diapason.com.ua/listja-chornici-likuvalni-vlastivosti-i/"
+        }
+      },
+      {
+        "id": "s243",
+        "sekcja": "czesci_rosliny",
+        "czesc": "liście",
+        "tekst": "Najlepszy moment na zbiór liści borówki przypada na okres kwitnienia krzewów, czyli od końca maja do początku czerwca, kiedy pędy zawierają najwięcej pożytecznych substancji.",
+        "jezyk": "ru-RU",
+        "zrodlo": {
+          "nazwa": "diapason.com.ua",
+          "url": "https://diapason.com.ua/listja-chornici-likuvalni-vlastivosti-i/"
+        }
+      },
+      {
+        "id": "s244",
+        "sekcja": "czesci_rosliny",
+        "czesc": "liście",
+        "tekst": "Zbiór liści można przeprowadzić także jesienią wraz z dojrzałymi owocami, jednak takie surowce zawierają więcej garbnika, co może prowadzić do zaparoków po spożyciu.",
+        "jezyk": "ru-RU",
+        "zrodlo": {
+          "nazwa": "diapason.com.ua",
+          "url": "https://diapason.com.ua/listja-chornici-likuvalni-vlastivosti-i/"
+        }
+      },
+      {
+        "id": "s245",
+        "sekcja": "czesci_rosliny",
+        "czesc": "liście",
+        "tekst": "Zebrane liście i pędy należy suszyć w cieniu na świeżym powietrzu, rozłożone na papierze lub w suszarce w temperaturze nie przekraczającej 40°C.",
+        "jezyk": "ru-RU",
+        "zrodlo": {
+          "nazwa": "diapason.com.ua",
+          "url": "https://diapason.com.ua/listja-chornici-likuvalni-vlastivosti-i/"
+        }
+      },
+      {
+        "id": "s246",
+        "sekcja": "czesci_rosliny",
+        "czesc": "liście",
+        "tekst": "Wysuszone pędy borówki należy przechowywać w woreczkach z tkaniny w suchym i zaciemnionym miejscu, a przydatność takiego surowca wynosi dwa lata.",
+        "jezyk": "ru-RU",
+        "zrodlo": {
+          "nazwa": "diapason.com.ua",
+          "url": "https://diapason.com.ua/listja-chornici-likuvalni-vlastivosti-i/"
+        }
+      }
+    ]
+  }
 }

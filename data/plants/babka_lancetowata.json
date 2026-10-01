@@ -1650,5 +1650,940 @@
         }
       }
     ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-01",
+    "pola": {
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": [
+          "Liście długie, wąskie (lancetowate), z 3-7 wyraźnymi, równoległymi nerwami biegnącymi wzdłuż blaszki.",
+          "Nerwy liściowe są bardzo mocne i elastyczne - po przerwaniu liścia ciągną się jak nitki.",
+          "Kwiatostan to krótki, brunatny kłos na szczycie długiej, bruzdowanej szypułki.",
+          "Wokół kłosa pojawiają się białe, delikatne pręciki tworzące 'aureolę'."
+        ],
+        "tresc": [
+          {
+            "tekst": "Liście babki lancetowatej są długie, wąskie (lancetowate) i mają 3-7 wyraźnye, równoległe nerwy biegnące wzdłuż blaszki.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Nerwy liściowe babki lancetowatej są bardzo mocne i elastyczne, po przerwaniu liści ciągną się jak nitki.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwiatostan babki lancetowatej to krótki, brunatny kłos na szczycie długiej, bruzdowanej szypułki.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s79"
+            ]
+          },
+          {
+            "tekst": "Wokół kłosa pojawiają się białe, delikatne pręciki tworzące 'aureolę'.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Długi, pięciożebrowy pęd kwiatostanowy babki lancetowatej nosi gęsty, walcowaty kłos o długości od pół do ośmiu centymetrów.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s79"
+            ]
+          },
+          {
+            "tekst": "Kwiaty babki lancetowatej osiągają 4 milimetry wielkości, posiadają zielony kielich, brunatną koronę z czterema odgiętymi płatkami z brązowymi nerwami środkowymi oraz długie, białe pręciki.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s72",
+              "s27"
+            ]
+          },
+          {
+            "tekst": "Roślina wytwarza od maja do września niepozorne kwiaty przypominające trawianską kasę, z której wystają drobne pręciki.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s92"
+            ]
+          },
+          {
+            "tekst": "Kwiaty babki lancetowatej są małe, zielone i brązowe, z długimi, białymi pręcikami.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s27"
+            ]
+          },
+          {
+            "tekst": "Na obszarach często koszonych roślina przyjmuje płaski pokrój zamiast rosnąć wysoko.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s77"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "1184df854a78fd0a"
+      },
+      "czesci_rosliny.liscie.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Folium Plantaginis lanceolatae: Opis surowca",
+        "typ": "tekst",
+        "oryginal": "Świeże lub suszone liście zbierane w czasie kwitnienia rośliny.",
+        "tresc": [
+          {
+            "tekst": "Świeże lub suszone liście babki lancetowatej, o długości od 20 do 40 cm, zbierane są w czasie kwitnienia rośliny. Są one długie, wąskie i mają wyłącznie nerwy biegnące wzdłuż blaszki, a ich dolna strona ma wyraźny unerwień.",
+            "zrodla": [
+              1,
+              6
+            ],
+            "fakty": [
+              "s91",
+              "s8"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "177eac674d6a1a27"
+      },
+      "czesci_rosliny.korzeń.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Opis surowca",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Bogactwo rozgałęzionego systemu korzeniowego babki lancetowatej może sięgać w głąb ziemi nawet do 60 centymetrów.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s78"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "f205a18c4741eff7"
+      },
+      "czesci_rosliny.nasiona.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Opis surowca",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Pojedynczy kwiatostan babki lancetowatej może wytworzyć do dwustu nasion.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s73"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "8aa53ff85e9e6cef"
+      },
+      "wymagania.stanowisko": {
+        "tytul": "Natura i siedlisko - Stanowisko",
+        "typ": "tekst",
+        "oryginal": "Pełne słońce do półcienia. Bardzo elastyczna pod względem oświetlenia.",
+        "tresc": [
+          {
+            "tekst": "Babka lancetowata (Plantago lanceolata) preferuje stanowiska od pełnego słońca do półcienia, jest bardzo elastyczna pod względem oświetlenia.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W Polsce roślina ta rośnie na łąkach, pastwiskach, przydrożach i trawnikach, preferując gleby lekkie, przewiewne, czarnoziemne lub gliniasto-piaszczyste, a w Tatrach dociera do wysokości 1367 m n.p.m.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s62"
+            ]
+          },
+          {
+            "tekst": "Babka lancetowata najlepiej rozwija się na obszarach otwartych i przekształconych, od bardzo suchych łąk po miejsca przypominające las deszczowy.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s76"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "84887de0390fb26a"
+      },
+      "wymagania.gleba": {
+        "tytul": "Natura i siedlisko - Gleba",
+        "typ": "tekst",
+        "oryginal": "Przepuszczalna, piaszczysto-gliniasta, umiarkowanie żyzna. Dobrze znosi gleby udeptane i zbite.",
+        "tresc": [
+          {
+            "tekst": "Babka lancetowata (Plantago lanceolata) preferuje przepuszczalną, piaszczysto-gliniastą glebę, która jest umiarkowanie żyzna i dobrze znosi gleby udeptane oraz zbite.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Roślina porasta wilgotne i żyzne gleby na łąkach łęgowych i suchych, a także polanach leśnych, zrębach oraz przecinkach.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s49"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "a5ff9065b75215ed"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "W medycynie anglosaskiej babka była uważana za jedną z dziewięciu świętych ziół podarowanych ludzkości przez boga Wodana.",
+          "Nasiona babki lancetowatej są blisko spokrewnione z babką płesznik (psyllium) i również mają właściwości regulujące trawienie.",
+          "Dawni wędrowcy wkładali liście babki do butów, aby zapobiegać pęcherzom i leczyć otarcia stóp (stąd nazwa 'panis viae' - chleb drożny).",
+          "Świeży sok z babki potrafi zneutralizować jad wielu owadów oraz ból po oparzeniu pokrzywą."
+        ],
+        "tresc": [
+          {
+            "tekst": "W medycynie anglosaskiej babka była uważana za jedną z dziewięciu świętych ziół podarowanych ludzkości przez boga Wodana.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Nasiona babki lancetowatej są blisko spokrewnione z babką płesznik (psyllium) i również mają właściwości regulujące trawienie.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Dawni wędrowcy wkładali liście babki do butów, aby zapobiegać pęcherzom i leczyć otarcia stóp (stąd nazwa 'panis viae' - chleb drożny).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Świeży sok z babki potrafi zneutralizować jad wielu owadów oraz ból po oparzeniu pokrzywą.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W zachodniej Norwegii obecność pyłku babki lancetowatej w osadach od wczesnego neolitu jest uznawana za wskaźnik wypasu zwierząt na tym obszarze.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s75"
+            ]
+          },
+          {
+            "tekst": "W dawnych wiekach wierzono, że babka musi być silnym lekiem na rany, skoro potrafi przetrwać deptanie przez końskie kopyta i koła wozów na uczęszczanych drogach.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s14"
+            ]
+          },
+          {
+            "tekst": "W starożytności Pliniusz Starszy opisywał lecznicze działanie tej rośliny przy silnym kaszlu oraz dreszczach.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s94"
+            ]
+          },
+          {
+            "tekst": "W starożytności sok z babki polecano na ukąszenia węży i skorpionów, natomiast w średniowieczu stosowano ją przy opuchliznie, złamaniach oraz jako środek przeciw miłosnym czarom.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s58"
+            ]
+          },
+          {
+            "tekst": "W średniowieczu ziele to wykorzystywano jako środek na oparzenia, wrzody, stany zapalne oczu i nosa oraz ukąszenia przez psy, natomiast ksiądz Sebastian Kneipp stosował je do tamowania krwawień i leczenia ran.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s95"
+            ]
+          },
+          {
+            "tekst": "Indoeuropejska końcówka '-rich' oznacza władcę lub księcia, co sprawia, że niemiecka nazwa rośliny oznacza 'władcę ścieżek', nawiązując do jej częstego występowania przy drogach.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s98"
+            ]
+          },
+          {
+            "tekst": "Dzieci zrywały łodygę babki, owijały jej końcówkę wokół odcinka tuż pod kwiatostanem i ciągnęły w tył, aby wystrzelić kwiat jak z broni.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s68"
+            ]
+          },
+          {
+            "tekst": "Dzieci grały w grę, w której strzelały z kwiatostanu babki lancetowatej, nazywając ją 'rifle' lub '1 o'clock gun'.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s30"
+            ]
+          },
+          {
+            "tekst": "W Wielkiej Brytanii i Irlandii dzieci grały w grę polegającą na ścinaniu kwiatostanów rywala za pomocą własnej łodygi wykonując szybki ruch w dół.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s64"
+            ]
+          },
+          {
+            "tekst": "W Kornwalii gra polegająca na strzelaniu kwiatostanem z pętelki zrobionej z łodygi nosi lokalną nazwę 'cannonballs'.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s65"
+            ]
+          },
+          {
+            "tekst": "W Szkolancji gra w strzelanie kwiatostanem babki oraz sama roślina są tradycyjnie nazywane 'Carl doddies'.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s66"
+            ]
+          },
+          {
+            "tekst": "W hrabstwie Kent zabawa polegająca na strzelaniu kwiatostanem babki jest regionalnie nazywana 'dongers'.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s67"
+            ]
+          },
+          {
+            "tekst": "W stanie wilgotnym nasiona stają się lepkie, dzięki czemu przyczepiają się do stóp przechodniów i są w ten sposób rozsiewane na duże odległości.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s99"
+            ]
+          },
+          {
+            "tekst": "Amerykańscy wrdzenni mieszkańcy nadali roślinie miano 'śladu stopy białego człowieka', ponieważ została ona prawdopodobnie nieświadomie przywleczona do Ameryki przez europejskich osadników na podeszwach butów.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s103"
+            ]
+          },
+          {
+            "tekst": "Według jednej z legend roślina powstała z przemiany młodego dziewczęcia, które nadaremno czekało przy drodze na swojego ukochanego, stąd też wzięła się jej ludowa nazwa 'straszna narzeczona' (Straßenbraut).",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s100"
+            ]
+          },
+          {
+            "tekst": "Starożytni Germanie wierzyli, że roślina ta symbolizuje powracające na świat z podziemi dusze zmarłych, które wędrują śladami żyjących ludzi.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s101"
+            ]
+          },
+          {
+            "tekst": "Starożytni Grecy i Rzymianie powiązali tę roślinę ze światem zmarłych, a konkretnie z bóstwem z podziemi Orkusem oraz jego córką Prozerpiną.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s102"
+            ]
+          },
+          {
+            "tekst": "Wśród regionalnych i dawnych określeń tej rośliny wymienia się nazwy takie jak babka wąskolistna, babka koniczynowa, języczki polne czy żywiec.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s13"
+            ]
+          },
+          {
+            "tekst": "Wśród dawnych niemieckich nazw ludowych i historycznych określeń tej rośliny wymieniano Heilwegerich, Wundwegerich, Spießkraut, Lungenblattl oraz Schlangenzunge.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s80"
+            ]
+          },
+          {
+            "tekst": "Wśród dawnych i regionalnych określeń tej rośliny wymieniano nazwy takie jak Aderkraut, Heufressa, Lungenblatt, Ripplichrut, Rossrippe, Spießkraut, Spitzfederich, Spitz-Wegeblatt oraz Wegetritt.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s90"
+            ]
+          }
+        ],
+        "model": "bez LLM: 20 punktow",
+        "wejscie": "2fa333c201ef9cb6"
+      },
+      "czesci_rosliny.liscie.czas_zbioru": {
+        "tytul": "Surowce i zbiory - Folium Plantaginis lanceolatae: Zbiór",
+        "typ": "tekst",
+        "oryginal": "Maj - Sierpień.",
+        "tresc": [
+          {
+            "tekst": "Liście babki lancetowatej do celów zielarskich zbiera się od maja do września, w okresie kwitnięcia, najlepiej bez ogonków, które trudniej schną.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s59"
+            ]
+          },
+          {
+            "tekst": "Maj - Sierpień.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "a1280bbbe182997e"
+      },
+      "czesci_rosliny.pąki.wlasciwości": {
+        "tytul": "Surowce i zbiory - Pąki (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Młode pąki kwiatowe babki lancetowatej mają grzybowaty smak i mogą być wykorzystywane do przygotowywania wywarów.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s69"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "e22acb21ba436590"
+      },
+      "czesci_rosliny.liscie.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Folium Plantaginis lanceolatae: Substancje czynne",
+        "typ": "lista",
+        "oryginal": [
+          "Glikozydy irydoidowe (aukubina, katalpol) - działanie przeciwzapalne i bakteriobójcze",
+          "Śluzy (do 6%) - działanie osłaniające",
+          "Garbniki (ok. 6%)",
+          "Flawonoidy",
+          "Krzemionka rozpuszczalna",
+          "Witamina C i K",
+          "Sole mineralne (bogactwo cynku i boru)"
+        ],
+        "tresc": [
+          {
+            "tekst": "Glikozydy irydoidowe (aukubina, katalpol) wykazujące działanie przeciwzapalne i bakteriobójcze, a w liściach występują także cenne składniki irydoidowe, takie jak aukubozyd.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s9"
+            ]
+          },
+          {
+            "tekst": "Śluzy występujące w ilości do 6% mają działanie osłaniające, a w liściach występują także węglowodany.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Flawonoidy, a także konkretne kwasy organiczne w liściach, w tym fumarowy, chlorogenowy, neochlorogenowy, wanilinowy, ferulowy, protokatechowy, para-hydroksybenzoesowy i para-kumarowy.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s45"
+            ]
+          },
+          {
+            "tekst": "Krzemionka rozpuszczalna.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Witamina C i K, a także obecność fenyloetanoidów w liściach, takich jak akteozyd, cistanozyd F, lawandulifoliozyd, plantamajozyd i izoakteozyd.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s74"
+            ]
+          },
+          {
+            "tekst": "Sole mineralne stanowiące bogactwo cynku i boru, a w liściach występują także sole potasu.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s9"
+            ]
+          },
+          {
+            "tekst": "Garbniki (ok. 6%)",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "c072f207ce127db0"
+      },
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Wieloletnia, niska bylina o charakterystycznych, wąskich liściach zebranych w przyziemną rozetę. Jest rośliną niezwykle odporną na deptanie i trudne warunki siedliskowe. Wiosną i latem wytwarza bezlistne szypułki zakończone kłosowatym kwiatostanem z drobnymi, białymi pręcikami. W tradycji ludowej nazywana 'języczkami polnymi' lub 'zielem św. Rocha', patrona od chorób zakaźnych.",
+        "tresc": [
+          {
+            "tekst": "Wieloletnia, niska bylina o charakterystycznych, wąskich liściach zebranych w przyziemną rozetę. Jest rośliną niezwykle odporną na deptanie i trudne warunki siedliskowe. Wiosną i latem wytwarza bezlistne szypułki zakończone kłosowatym kwiatostanem z drobnymi, białymi pręcikmi. W tradycji ludowej nazywana 'języczkami polnymi' lub 'zielem św. Rocha', patrona od chorób zakaźnych.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W składzie chemicznym rośliny zidentyfikowano między innymi śluzy, substancje gorzkie, flawonoidy, kwas krzemowy, glikozyd aukubinę oraz związki o działaniu antybiotycznym.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s93"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "77df3b94083c0320"
+      },
+      "czesci_rosliny.ziele.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Nadziemne części rośliny zawierają flawonoidy oraz fenolokarboksylowe kwasy i ich pochodne.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s48"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "58863bfc52502b79"
+      },
+      "czesci_rosliny.nasiona.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Nasiona babki lancetowatej zawierają śluz oraz trójglicerydy.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s46"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "09a217c2e9086b68"
+      },
+      "czesci_rosliny.korzeń.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "W korzeńiach babki lancetowatej wykryto kwas linolowy oraz sterydy, takie jak cholesterol, sitosterol, stygmasterol i kampesterol.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s47"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "73de97f7cdf7bf34"
+      },
+      "czesci_rosliny.liscie.wlasciwości": {
+        "tytul": "Surowce i zbiory - Folium Plantaginis lanceolatae: Działanie",
+        "typ": "tekst",
+        "oryginal": "Wykrztuśne (rozrzedza śluz), powlekające drogi oddechowe, przeciwzapalne, osłonowe na żołądek, przyspieszające gojenie ran.",
+        "tresc": [
+          {
+            "tekst": "Liście babki lancetowatej mają działanie wykrztuśne, rozkurczowe na górne drogi oddechowe oraz przeciwzapalne, co sprawia, że są stosowane w leczeniu kaszlu i stanów zapalnych dróg oddechowych.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s10"
+            ]
+          },
+          {
+            "tekst": "Ponadto, liście babki lancetowatej wykazują właściwości powlekające, które chronią błony śluzowe i przyspieszają gojenie ran.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W tradycyjnej medycynie austriackiej liście babki lancetowatej były stosowane zarówno wewnętrznie, jak i zewnętrznie.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s70"
+            ]
+          },
+          {
+            "tekst": "Wewnętrznie, liście babki lancetowatej stosowano w postaci syropu lub herbaty, które pomagały w łagodzeniu objawów przeziębienia i kaszlu.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s70"
+            ]
+          },
+          {
+            "tekst": "Zewnętrznie, liście babki lancetowatej wykorzystywano w leczeniu chorób skóry, infekcji oraz ukąszeń owadów.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s70"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "c38a75d071e442dd"
+      },
+      "zastosowanie.medyczne": {
+        "tytul": "Praktyczne zastosowanie - Medycyna",
+        "typ": "tekst",
+        "oryginal": "Wewnętrznie: suchy, uporczywy kaszel, nieżyt gardła, zapalenie oskrzeli, choroba wrzodowa żołądka. Zewnętrznie: ukąszenia owadów (pszczoły, komary), drobne rany, oparzenia, stany zapalne spojówek (okłady).",
+        "tresc": [
+          {
+            "tekst": "Wewnętrznie: suchy, uporczywy kaszel, nieżyt gardła, zapalenie oskrzeli, choroba wrzodowa żołądka. Zewnętrznie: ukąszenia owadów (pszczoły, komary), drobne rany, oparzenia, stany zapalne spojówek (okłady).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Działanie bakteriostatyczne wykazuje wyłącznie świeży surowiec oraz sok z babki, ponieważ zawarty w nim aukubozyd uwalnia aktywny antybakteryjnie aglikon pod wpływem enzymu beta-glukozydazy, który w naparach wodnych ulega inaktywacji.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s60"
+            ]
+          },
+          {
+            "tekst": "Świeżo wyciśnięty sok z rośliny jest uznawany za bezpieczniejszy od naparu, ponieważ proces parzenia może zniszczyć zawarte w niej naturalne substancje o działaniu antybiotycznym.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s81"
+            ]
+          },
+          {
+            "tekst": "Wyciągi wodne z liści stosowane doustnie pobudzają organizm do wytwarzania interferonu oraz przeciwciał antywirusowych.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s61"
+            ]
+          },
+          {
+            "tekst": "W Europie Zachodniej z soku tej rośliny wytwarza się cukierki na kaszel.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s50"
+            ]
+          },
+          {
+            "tekst": "Dawniej syrop z tego ziela cieszył się tak dużą sławą jako lek na kaszel, że określenie 'syrop z babki lancetowatej' stało się powszechną nazwą dla wszelkich preparatów przeciwkaszlowych.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s97"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "facb38b6b8da95fd"
+      },
+      "czesci_rosliny.sok.wlasciwości": {
+        "tytul": "Surowce i zbiory - Sok (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Babka lancetowata (Plantago lanceolata) zawiera sok, który w medycynie ludowej był stosowany podczas kuracj wiosennych w celu oczyszczenia krwi. Po rozcieńczeniu z naparem z rumianku, sok ten służył do przemywania trudno gojących się ran.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s96"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "b2ba1a47243fe0f0"
+      },
+      "zastosowanie.rzemieslnicze": {
+        "tytul": "Praktyczne zastosowanie - Rzemiosło",
+        "typ": "tekst",
+        "oryginal": "Sok z liści babki był dawniej używany jako składnik naturalnych atramentów oraz do garbowania delikatnych skór.",
+        "tresc": [
+          {
+            "tekst": "Sok z liści babki lancetowatej był dawniej używany jako składnik naturalnych atramentów oraz do garbowannia delikatnych skór.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s28"
+            ]
+          },
+          {
+            "tekst": "Zioła babki lancetowatej można używać do barwienia tkanin naturalnych.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s28"
+            ]
+          },
+          {
+            "tekst": "Roślinę można gotować na wolnym ogniu w wodzie, aby uzyskać naturalny barwnik do tkanin.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s71"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "92b8ead192fd025f"
+      },
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": "Nie zbierać babki z poboczy dróg (akumuluje metale ciężkie i zanieczyszczenia komunikacyjne). W rzadkich przypadkach może powodować reakcje alergiczne u osób wrażliwych.",
+        "tresc": [
+          {
+            "tekst": "Nie zbierać babki z poboczy dróg (akumluje metale ciężkie i zanieczyszczenia komunikacyjne). W rzadkich przypadkach może powodować reakcje alergiczne u osób wrażliwych.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Podczas zbiorów należy uważać, aby nie pomylić babki lancetowatej z rzadkich spotykanymi w górach i nad morzem mniej wartościowymi gatunkami: babką górską i babką nadmorską.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s11"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "177c250785d7d4b0"
+      },
+      "zastosowanie.ogrodowe": {
+        "tytul": "Praktyczne zastosowanie - Ogród",
+        "typ": "tekst",
+        "oryginal": "Roślina miododajna i pyłkodajna. Jej obecność na trawniku wskazuje na gleby o dobrej strukturze, ale mocno udeptane.",
+        "tresc": [
+          {
+            "tekst": "Babka lancetowata (Plantago lanceolata) jest rośliną miododajną i pyłkodajną, a jej obecność na trawniku wskazuje na gleby o dobrej strukturze, ale mocno udeptane. Ze względu na wzrost popytu na surowiec zielarski, zaczęto prowadzić sztuczną uprawę babki lancetowatej. Uprząż babki można założyć z nasion wysiewanych wprost do gruntu wiosną, a pojedyncza roślina potrafi wydać około tysiąca nasion. Wąskie liście podczas zbiorów i suszenia często tracą kolor, brązowieją lub czernieją, dlatego proces ten wymaga ostrożnego prowadzenia. W celach ozdobnych uprawiany bywa czasami kultywar 'Marginata', który wyróżnia się barwnymi liśćmi.",
+            "zrodla": [
+              1,
+              5
+            ],
+            "fakty": [
+              "s44",
+              "s15",
+              "s43",
+              "s63"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "fe508b65c3d46c33"
+      },
+      "permakultura.funkcje": {
+        "tytul": "Cykl życia i ekosystem - Permakultura - funkcje",
+        "typ": "lista",
+        "oryginal": [
+          "Dynamiczny akumulator mikroelementów (cynk, bor, magnez).",
+          "Roślina pionierska na terenach zdewastowanych i udeptanych.",
+          "Pokarm dla gąsienic rzadkich motyli (np. Przeplatka didyma).",
+          "Wsparcie dla struktury gleby (korzenie rozbijają zbite warstwy ziemi)."
+        ],
+        "tresc": [
+          {
+            "tekst": "Babka lancetowata (Plantago lanceolata) jest dynamicznym akumulatorem mikroelementów, takim jak cynk, bor i magnez.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Roślina ta jest rośliną pionierską na terenach zdewastowanych i udeptanych, wspierając ich regenerację.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Babka lancetowata stanowi pokarm dla gąsienic rzadkich motyli, takich jak Przeplatka didyma, oraz jest chętnie zjadana przez kanarki.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s12"
+            ]
+          },
+          {
+            "tekst": "Roślina wspiera strukturę gleby dzięki swoim korzeniom, które rozbijają zbite warstwy ziemi.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Drobne nasiona babki lancetowatej są chętnie zjadane przez kanarki, a sama roślina stanowi naturalne pożywienie dla larw kilku gatunków motyli.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s12"
+            ]
+          },
+          {
+            "tekst": "Babka lancetowata wchodzi w skład mieszanek traw i daje cenne siano, choć na pastwiskach chętnie zjadają ją wyłącznie owce, kozy oraz gęsi.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s51"
+            ]
+          },
+          {
+            "tekst": "Roślina produkuje biologiczne inhibitory nitryfikacji, które spowalniają przemianę azotu amonowego w azotany, co ogranicza ryzyko jego wypłukiwania z gleby.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s82"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "76a67c18d0609cda"
+      }
+    },
+    "uzyte_fakty": [
+      "s10",
+      "s100",
+      "s101",
+      "s102",
+      "s103",
+      "s11",
+      "s12",
+      "s13",
+      "s14",
+      "s15",
+      "s27",
+      "s28",
+      "s30",
+      "s43",
+      "s44",
+      "s45",
+      "s46",
+      "s47",
+      "s48",
+      "s49",
+      "s50",
+      "s51",
+      "s58",
+      "s59",
+      "s60",
+      "s61",
+      "s62",
+      "s63",
+      "s64",
+      "s65",
+      "s66",
+      "s67",
+      "s68",
+      "s69",
+      "s70",
+      "s71",
+      "s72",
+      "s73",
+      "s74",
+      "s75",
+      "s76",
+      "s77",
+      "s78",
+      "s79",
+      "s8",
+      "s80",
+      "s81",
+      "s82",
+      "s9",
+      "s90",
+      "s91",
+      "s92",
+      "s93",
+      "s94",
+      "s95",
+      "s96",
+      "s97",
+      "s98",
+      "s99"
+    ]
   }
 }

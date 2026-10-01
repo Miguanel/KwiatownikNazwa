@@ -7,7 +7,6 @@
   "url": {
     "Kwiat": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Leontodon_hispidus_W.jpg/500px-Leontodon_hispidus_W.jpg",
     "Liście": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Leontodon_hispidus_kz04.jpg/500px-Leontodon_hispidus_kz04.jpg"
-
   },
   "profil_energetyczny": {
     "smak": "Gorzkawy, trawiasty",
@@ -92,5 +91,325 @@
     "modyfikatory_ph": [],
     "ostrzezenia_bhp": "Bezpieczny."
   },
-  "ostrzezenia": "Brak."
+  "ostrzezenia": "Brak.",
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-09-30",
+    "w_url": false,
+    "zdjecia": [
+      {
+        "podpis": "Kwiat",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Leontodon_hispidus_W.jpg/500px-Leontodon_hispidus_W.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Leontodon_hispidus_W.jpg",
+        "autor": "Fornax",
+        "licencja": "CC BY 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by/3.0",
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Leontodon_hispidus_kz04.jpg/500px-Leontodon_hispidus_kz04.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Leontodon_hispidus_kz04.jpg",
+        "autor": "Krzysztof Ziarnek, Kenraiz",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      }
+    ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-09-30",
+    "uporzadkowano": "2026-09-30",
+    "uklad": "llm:gemini/gemini-3.5-flash-lite",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (pl): Brodawnik zwyczajny",
+        "url": "https://pl.wikipedia.org/wiki/Brodawnik_zwyczajny",
+        "jezyk": "pl",
+        "typ": "wikipedia",
+        "nr": 1
+      },
+      {
+        "nazwa": "Wikipedia (de): Steifhaariger Löwenzahn",
+        "url": "https://de.wikipedia.org/wiki/Steifhaariger_L%C3%B6wenzahn",
+        "jezyk": "de",
+        "typ": "wikipedia",
+        "nr": 2
+      },
+      {
+        "nazwa": "Wikipedia (en): Leontodon hispidus",
+        "url": "https://en.wikipedia.org/wiki/Leontodon_hispidus",
+        "jezyk": "en",
+        "typ": "wikipedia",
+        "nr": 3
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "opis",
+        "tytul": "Opis i wygląd",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Prosta łodyga osiąga wysokość od 10 do 40 cm i jest wyraźnie zgrubiała pod główką kwiatową, posiadając na niej jeden lub dwa łuskowate liście.",
+            "czesc": "ziele",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s247"
+            ]
+          },
+          {
+            "tekst": "Koszyczki kwiatowe mają średnicę od 2 do 4 centymetrów, otwierają się wczesnym rankiem i zamykają po południu, a przed rozkwitnięciem są zazwyczaj pochylone w dół.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s248"
+            ]
+          },
+          {
+            "tekst": "W odróżnieniu od wielu form europejskich, rośliny z północnego Iranu wyróżniają się posiadaniem rzadkich dwuramiennych włosków na liściach.",
+            "czesc": "liście",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s256"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "wystepowanie",
+        "tytul": "Występowanie",
+        "podsumowanie": "Gatunek pochodzi z Europy, gdzie jest pospolity na niżu i w górach, a także został zawleczony do Ameryki Północnej. Populacje różnią się zmiennością morfologiczną w zależności od regionu występowania.",
+        "podsumowanie_zrodla": [
+          1,
+          2,
+          3
+        ],
+        "punkty": [
+          {
+            "tekst": "Gatunek ten jest w Polsce pospolity zarówno na niżu, jak i w górach, gdzie rośnie na wysokościach do 2000 metrów n.p.m., porastając żyzne gleby i łąki.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s249"
+            ]
+          },
+          {
+            "tekst": "Roślina pochodzi z Europy, ale występuje również jako gatunek zawleczony w całej Ameryce Północnej.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s250"
+            ]
+          },
+          {
+            "tekst": "Podczas gdy podgatunki w Alpach i Przedalpiach wykazują silną zmienność, populacje na wschodzie Iranu są morfologicznie znacznie bardziej jednostajne.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s255"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "historia",
+        "tytul": "Historia i nazwa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Podziemne części roślin, zawierające inulinę, były w czasach wojennych palone i stosowane jako zamiennik kawy.",
+            "czesc": "korzeń",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s253"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Roślina jest chętnie zjadana przez bydło, które potrafi przeżuwać przylegające liście, ale zwykle zostawia w tyle twardy, włóknisty łodygowy głąbich.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s254"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "ciekawostki",
+        "tytul": "Ciekawostki",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W brytyjskich badaniach nad wydajnością nektarową flory łąkowej gatunek ten zajął pierwsze miejsce wśród wieloletnich roślin nienależących do chwastów, a produkcja nektaru była niemal dwukrotnie wyższa niż u najlepiej ocenionej rośliny jednorocznej niebędącej chwastem.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s251",
+              "s252"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "ziele": [
+        "s247"
+      ],
+      "kwiaty": [
+        "s248",
+        "s251",
+        "s252"
+      ],
+      "liście": [
+        "s256"
+      ],
+      "korzeń": [
+        "s253"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s247",
+        "sekcja": "opis",
+        "czesc": "ziele",
+        "tekst": "Prosta łodyga brodawnika zwyczajnego osiąga wysokość od 10 do 40 cm i jest wyraźnie zgrubiała pod główką kwiatową, posiadając na niej jeden lub dwa łuskowate liście.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Brodawnik zwyczajny",
+          "url": "https://pl.wikipedia.org/wiki/Brodawnik_zwyczajny"
+        }
+      },
+      {
+        "id": "s248",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Koszyczki kwiatowe mają średnicę od 2 do 4 centymetrów, otwierają się wczesnym rankiem i zamykają po południu, a przed rozkwitnięciem są zazwyczaj pochylone w dół.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Brodawnik zwyczajny",
+          "url": "https://pl.wikipedia.org/wiki/Brodawnik_zwyczajny"
+        }
+      },
+      {
+        "id": "s249",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Gatunek ten jest w Polsce pospolity zarówno na niżu, jak i w górach, gdzie rośnie na wysokościach do 2000 metrów n.p.m., porastając żyzne gleby i łąki.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Brodawnik zwyczajny",
+          "url": "https://pl.wikipedia.org/wiki/Brodawnik_zwyczajny"
+        }
+      },
+      {
+        "id": "s250",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Brodawnik zwyczajny pochodzi z Europy, ale występuje również jako gatunek zawleczony w całej Ameryce Północnej.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Leontodon hispidus",
+          "url": "https://en.wikipedia.org/wiki/Leontodon_hispidus"
+        }
+      },
+      {
+        "id": "s251",
+        "sekcja": "ciekawostki",
+        "czesc": "kwiaty",
+        "tekst": "W brytyjskich badaniach nad wydajnością nektarową flory łąkowej gatunek ten zajął pierwsze miejsce wśród wieloletnich roślin nienależących do chwastów.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Leontodon hispidus",
+          "url": "https://en.wikipedia.org/wiki/Leontodon_hispidus"
+        }
+      },
+      {
+        "id": "s252",
+        "sekcja": "ciekawostki",
+        "czesc": "kwiaty",
+        "tekst": "Produkcja nektaru przez brodawnika zwyczajnego była niemal dwukrotnie wyższa niż u najlepiej ocenionej rośliny jednorocznej niebędącej chwastem.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Leontodon hispidus",
+          "url": "https://en.wikipedia.org/wiki/Leontodon_hispidus"
+        }
+      },
+      {
+        "id": "s253",
+        "sekcja": "historia",
+        "czesc": "korzeń",
+        "tekst": "Podziemne części roślin, zawierające inulinę, były w czasach wojennych palone i stosowane jako zamiennik kawy.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Steifhaariger Löwenzahn",
+          "url": "https://de.wikipedia.org/wiki/Steifhaariger_L%C3%B6wenzahn"
+        }
+      },
+      {
+        "id": "s254",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Roślina jest chętnie zjadana przez bydło, które potrafi przeżuwać przylegające liście, ale zwykle zostawia w tyle twardy, włóknisty łodygowy głąbich.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Steifhaariger Löwenzahn",
+          "url": "https://de.wikipedia.org/wiki/Steifhaariger_L%C3%B6wenzahn"
+        }
+      },
+      {
+        "id": "s255",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Podczas gdy podgatunki w Alpach i Przedalpiach wykazują silną zmienność, populacje na wschodzie Iranu są morfologicznie znacznie bardziej jednostajne.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Steifhaariger Löwenzahn",
+          "url": "https://de.wikipedia.org/wiki/Steifhaariger_L%C3%B6wenzahn"
+        }
+      },
+      {
+        "id": "s256",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "W odróżnieniu od wielu form europejskich, rośliny z północnego Iranu wyróżniają się posiadaniem rzadkich dwuramiennych włosków (tzw. pióropuszek) na liściach.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Steifhaariger Löwenzahn",
+          "url": "https://de.wikipedia.org/wiki/Steifhaariger_L%C3%B6wenzahn"
+        }
+      }
+    ]
+  }
 }

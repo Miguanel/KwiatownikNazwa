@@ -114,13 +114,34 @@
       "Tworzenie siedlisk dla ginących gatunków chrząszczy (np. kozioróg dębosz)"
     ],
     "gildie": [
-      {"nazwa": "Buk zwyczajny", "rola": "Naturalny partner w lasach mieszanych"},
-      {"nazwa": "Borówka czernica", "rola": "Roślina runa preferująca kwaśne podłoże dębu"},
-      {"nazwa": "Jarząb pospolity", "rola": "Wsparcie dla ptaków, mniejsze wymagania glebowe"},
-      {"nazwa": "Pieprznik jadalny: Kurka", "rola": "Symbioza mikoryzowa"},
-      { "nazwa": "Dąb szypułkowy", "rola": "Główny brat bliźniak, o szerszej koronie i innych żołędziach." },
-      { "nazwa": "Dąb czerwony", "rola": "Krewniak o ostro zakończonych klapach liści." },
-      { "nazwa": "Dąb omszony", "rola": "Ciepłolubny kuzyn z południa Europy." }
+      {
+        "nazwa": "Buk zwyczajny",
+        "rola": "Naturalny partner w lasach mieszanych"
+      },
+      {
+        "nazwa": "Borówka czernica",
+        "rola": "Roślina runa preferująca kwaśne podłoże dębu"
+      },
+      {
+        "nazwa": "Jarząb pospolity",
+        "rola": "Wsparcie dla ptaków, mniejsze wymagania glebowe"
+      },
+      {
+        "nazwa": "Pieprznik jadalny: Kurka",
+        "rola": "Symbioza mikoryzowa"
+      },
+      {
+        "nazwa": "Dąb szypułkowy",
+        "rola": "Główny brat bliźniak, o szerszej koronie i innych żołędziach."
+      },
+      {
+        "nazwa": "Dąb czerwony",
+        "rola": "Krewniak o ostro zakończonych klapach liści."
+      },
+      {
+        "nazwa": "Dąb omszony",
+        "rola": "Ciepłolubny kuzyn z południa Europy."
+      }
     ]
   },
   "kalendarz_ogrodnika": {
@@ -219,5 +240,51 @@
       ]
     }
   ],
-  "ostrzezenia": "Nie stosować wewnętrznie odwarów z kory przy niedokrwistości (garbniki blokują żelazo). Kąpiele dębowe są przeciwwskazane przy nadciśnieniu III stopnia."
+  "ostrzezenia": "Nie stosować wewnętrznie odwarów z kory przy niedokrwistości (garbniki blokują żelazo). Kąpiele dębowe są przeciwwskazane przy nadciśnieniu III stopnia.",
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-09-29",
+    "w_url": false,
+    "zdjecia": [
+      {
+        "podpis": "Kwiatostany męskie",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/%D0%A1%D0%BA%D0%B0%D0%BB%D0%B5%D0%BD_%D0%B4%D1%8A%D0%B1_%E2%80%93_%D1%81%D1%8A%D1%86%D0%B2%D0%B5%D1%82%D0%B8%D1%8F_11.jpg/500px-%D0%A1%D0%BA%D0%B0%D0%BB%D0%B5%D0%BD_%D0%B4%D1%8A%D0%B1_%E2%80%93_%D1%81%D1%8A%D1%86%D0%B2%D0%B5%D1%82%D0%B8%D1%8F_11.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%BA%D0%B0%D0%BB%D0%B5%D0%BD_%D0%B4%D1%8A%D0%B1_%E2%80%93_%D1%81%D1%8A%D1%86%D0%B2%D0%B5%D1%82%D0%B8%D1%8F_11.jpg",
+        "autor": "Димитър Найденов / Dimìtar Nàydenov",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/20140525Quercus_petraea3.jpg/500px-20140525Quercus_petraea3.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:20140525Quercus_petraea3.jpg",
+        "autor": "AnRo0002",
+        "licencja": "CC0",
+        "licencja_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/%D0%A1%D0%BA%D0%B0%D0%BB%D0%B5%D0%BD_%D0%B4%D1%8A%D0%B1_%E2%80%93_%D0%B6%D1%8A%D0%BB%D1%8A%D0%B4%D0%B8_3.jpg/500px-%D0%A1%D0%BA%D0%B0%D0%BB%D0%B5%D0%BD_%D0%B4%D1%8A%D0%B1_%E2%80%93_%D0%B6%D1%8A%D0%BB%D1%8A%D0%B4%D0%B8_3.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%BA%D0%B0%D0%BB%D0%B5%D0%BD_%D0%B4%D1%8A%D0%B1_%E2%80%93_%D0%B6%D1%8A%D0%BB%D1%8A%D0%B4%D0%B8_3.jpg",
+        "autor": "Димитър Найденов / Dimìtar Nàydenov",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      },
+      {
+        "podpis": "Las z dębem bezszypułkowym w Szkocji",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Quercus_petraea_forest1.jpg/500px-Quercus_petraea_forest1.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Quercus_petraea_forest1.jpg",
+        "autor": "Gruban at Flickr",
+        "licencja": "CC BY-SA 2.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      }
+    ]
+  }
 }

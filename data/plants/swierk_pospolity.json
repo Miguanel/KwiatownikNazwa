@@ -4,7 +4,6 @@
   "nazwa_lat": "Picea abies",
   "rodzina": "Sosnowate (Pinaceae)",
   "opis": "Wysokie, majestatyczne drzewo iglaste o regularnym, stożkowatym pokroju, osiągające nawet 50 m wysokości. Świerk charakteryzuje się płytkim, talerzowym systemem korzeniowym, co czyni go podatnym na wiatrołomy, ale pozwala zasiedlać płytkie gleby górskie. Jego młode, fioletowo-czerwone szyszki i jasnozielone przyrosty wiosenne są skarbnicą witamin i terpenów. Świerk jest kluczowym gatunkiem lasotwórczym, tworzącym specyficzny, chłodny i wilgotny mikroklimat.",
-
   "profil_energetyczny": {
     "smak": "Żywiczny, kwaśny (młode pędy), gorzki",
     "termika": "Rozgrzewająca",
@@ -12,7 +11,7 @@
     "zywiol": "Ziemia i Powietrze",
     "opis": "Świerk buduje wewnętrzną strukturę i 'pion'. Jego energia pomaga oczyścić umysł z chaosu i skupić się na celu. Fizycznie działa silnie oczyszczająco na płuca, pomagając odkrztusić zastoinową flegmę i przywrócić swobodny oddech."
   },
-"tagi": [
+  "tagi": [
     "drzewo",
     "oddechowe",
     "przeziebienie",
@@ -34,7 +33,6 @@
     "mrozoodpornosc": "Strefa 3 (Całkowicie odporny na mrozy, ale wrażliwy na późne przymrozki majowe, które niszczą młode pędy).",
     "woda": "Wymaga dużej wilgotności powietrza i gleby. Bardzo wrażliwy na suszę i obniżenie poziomu wód gruntowych."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Igły krótkie (1-2 cm), zaostrzone, kłujące, czworokątne w przekroju, osadzone na gałązce pojedynczo na małych guzkach.",
@@ -53,7 +51,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "pedy_majowe": {
       "nazwa_surowca": "Turiones Piceae",
@@ -72,7 +69,11 @@
     "zywica": {
       "nazwa_surowca": "Resina Piceae",
       "opis_botaniczny": "Naturalna wydzielina pni powstająca przy zranieniu kory.",
-      "skladniki_aktywne": ["Kwasy żywiczne", "Terpentyna", "Olejek eteryczny"],
+      "skladniki_aktywne": [
+        "Kwasy żywiczne",
+        "Terpentyna",
+        "Olejek eteryczny"
+      ],
       "wlasciwości": "Silnie bakteriobójcze i grzybobójcze. Wykorzystywana do produkcji maści na rany i czyraki.",
       "czas_zbioru": "Cały rok (najlepiej jesień)."
     },
@@ -82,23 +83,19 @@
       "czas_zbioru": "Zima (największa koncentracja witamin)."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Przeziębienia, uporczywy kaszel, zapalenie oskrzeli i zatok (inhalacje), reumatyzm (kąpiele i smarowania), zmęczenie i wyczerpanie nerwowe.",
     "kulinarne": "Syrop z młodych pędów, ocet świerkowy, sól świerkowa, 'piwo świerkowe' (tradycyjny napój fermentowany). Młode pędy można jeść na surowo (mają cytrusowy, kwaśny smak).",
     "ogrodowe": "Wysokie żywopłoty przeciwwietrzne i chroniące przed hałasem. Drewno świerkowe po spaleniu daje doskonały popiół bogaty w potas.",
     "rzemieslnicze": "Drewno świerkowe jest podstawowym surowcem w lutnictwie (tzw. drewno rezonansowe – z niego powstają płyty wierzchnie skrzypiec Stradivariusa). Służy też do produkcji papieru i materiałów budowlanych."
   },
-
   "interakcje": "Kąpiele świerkowe mogą nasilać reakcje u osób z niewydolnością serca i nadciśnieniem (zbyt mocne rozgrzanie). Olejek może drażnić skórę przy stosowaniu bez rozcieńczenia.",
-
   "ciekawostki": [
     "Najstarsze znane drzewo na świecie (pod względem genetycznym) to świerk 'Old Tjikko' w Szwecji – jego system korzeniowy ma ponad 9550 lat.",
     "Świerk produkuje więcej tlenu niż sosna, ponieważ posiada gęstsze i trwalsze igliwie (igły żyją do 7-10 lat).",
     "W przeciwieństwie do sosny, świerk pali się gwałtownie i 'strzela' iskrami (przez pęcherzyki żywicy), co czyni go niebezpiecznym w otwartych kominkach.",
     "W medycynie ludowej żywicę świerkową żuto jak gumę, aby wyleczyć stany zapalne dziąseł i wybielić zęby."
   ],
-
   "permakultura": {
     "funkcje": [
       "Budowa wiatrochronów i ekranów akustycznych.",
@@ -107,17 +104,27 @@
       "Retencja wody w krajobrazie (zatrzymuje wilgoć w cieniu swojej korony)."
     ],
     "gildie": [
-      { "nazwa": "Borowik szlachetny", "rola": "Tworzy jedną z najsilniejszych symbioz mikoryzowych." },
-      { "nazwa": "Szczawik zajęczy", "rola": "Naturalny mieszkaniec runa cienistych lasów świerkowych." },
-      { "nazwa": "Jarzębina", "rola": "Częsty towarzysz w reglu górnym." }
+      {
+        "nazwa": "Borowik szlachetny",
+        "rola": "Tworzy jedną z najsilniejszych symbioz mikoryzowych."
+      },
+      {
+        "nazwa": "Szczawik zajęczy",
+        "rola": "Naturalny mieszkaniec runa cienistych lasów świerkowych."
+      },
+      {
+        "nazwa": "Jarzębina",
+        "rola": "Częsty towarzysz w reglu górnym."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór pędów na syrop",
-        "miesiace": [5],
+        "miesiace": [
+          5
+        ],
         "opis": "Zbiór jasnych przyrostów, gdy mają 3-5 cm długości. Są wtedy najbardziej soczyste.",
         "faza_ksiezyca": "Księżyc przybywający (od nowiu do pełni)",
         "pora_dnia": "Przedpołudnie",
@@ -126,7 +133,10 @@
       },
       {
         "czynnosc": "Zbiór żywicy",
-        "miesiace": [10, 11],
+        "miesiace": [
+          10,
+          11
+        ],
         "opis": "Pozyskiwanie twardych, zastygłych grudek żywicy z pni.",
         "faza_ksiezyca": "Księżyc ubywający",
         "pora_dnia": "Dowolna",
@@ -135,13 +145,17 @@
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Maść Żywiczna (Na trudne rany i stawy)",
       "typ": "medyczne",
       "metoda": "ekstrakcja tłuszczowa",
-      "tagi": ["skóra", "stawy", "antybiotyk", "rany"],
+      "tagi": [
+        "skóra",
+        "stawy",
+        "antybiotyk",
+        "rany"
+      ],
       "skladniki": [
         "Żywica świerkowa (czysta): 50g",
         "Wosk pszczeli: 20g",
@@ -158,17 +172,26 @@
       "uwagi": "Maść ma silny, balsamiczny zapach i działa jak naturalny antybiotyk.",
       "roslina": "Świerk pospolity",
       "slug": "swierk_pospolity",
-      "cechy": ["balsamiczny zapach", "jasnobrązowy kolor"],
-      "wlasciwosci": ["bakteriobójcza", "rozgrzewająca"]
+      "cechy": [
+        "balsamiczny zapach",
+        "jasnobrązowy kolor"
+      ],
+      "wlasciwosci": [
+        "bakteriobójcza",
+        "rozgrzewająca"
+      ]
     }
   ],
-
   "przepisy_kulinarne": [
     {
       "tytul": "Ocet Świerkowy (Leśny Tonik)",
       "typ": "kulinarne",
       "metoda": "maceracja",
-      "tagi": ["ocet", "trawienie", "odporność"],
+      "tagi": [
+        "ocet",
+        "trawienie",
+        "odporność"
+      ],
       "skladniki": [
         "Młode pędy świerka: 1 szklanka",
         "Ocet jabłkowy (najlepiej domowy): 500ml"
@@ -183,5 +206,51 @@
       "slug": "swierk_pospolity"
     }
   ],
-  "ostrzezenia": "Unikać stosowania u osób z astmą oskrzelową i krztuścem (inhalacje mogą wywołać skurcz krtani). Nie zbierać surowca w rezerwatach i parkach narodowych."
+  "ostrzezenia": "Unikać stosowania u osób z astmą oskrzelową i krztuścem (inhalacje mogą wywołać skurcz krtani). Nie zbierać surowca w rezerwatach i parkach narodowych.",
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-09-30",
+    "w_url": false,
+    "zdjecia": [
+      {
+        "podpis": "Szyszki dojrzewające",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Szyszka_dojrzewaj%C4%85ca.jpg/500px-Szyszka_dojrzewaj%C4%85ca.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Szyszka_dojrzewaj%C4%85ca.jpg",
+        "autor": "Sebastian Kubacki",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      },
+      {
+        "podpis": "Młoda szyszka",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Picea_abies_young_female_cone_-_Keila.jpg/250px-Picea_abies_young_female_cone_-_Keila.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Picea_abies_young_female_cone_-_Keila.jpg",
+        "autor": "Ivar Leidus",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      },
+      {
+        "podpis": "Kora",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Picea_abies_bark.jpg/250px-Picea_abies_bark.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Picea_abies_bark.jpg",
+        "autor": "Agnieszka Kwiecień ( Nova )",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      },
+      {
+        "podpis": "Pokrój",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Kuusk_Keila-Paldiski_rdt_%C3%A4%C3%A4res.jpg/250px-Kuusk_Keila-Paldiski_rdt_%C3%A4%C3%A4res.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Kuusk_Keila-Paldiski_rdt_%C3%A4%C3%A4res.jpg",
+        "autor": "Ivar Leidus",
+        "licencja": "CC BY-SA 3.0 ee",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0/ee/deed.en",
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      }
+    ]
+  }
 }

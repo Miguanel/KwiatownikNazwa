@@ -130,7 +130,10 @@
     "zadania": [
       {
         "czynnosc": "Wysiew nasion",
-        "miesiace": [4, 5],
+        "miesiace": [
+          4,
+          5
+        ],
         "opis": "Wysiew płytki, nasiona potrzebują światła do kiełkowania. Pierwszy rok to tylko rozeta liści.",
         "faza_ksiezyca": "Księżyc przybywający",
         "pora_dnia": "Poranek",
@@ -138,7 +141,11 @@
       },
       {
         "czynnosc": "Zbiór kwiatów",
-        "miesiace": [7, 8, 9],
+        "miesiace": [
+          7,
+          8,
+          9
+        ],
         "opis": "Zbieramy stopniowo, tylko żółte korony kwiatowe, koniecznie rano po obeschnięciu rosy. Szybko suszymy!",
         "faza_ksiezyca": "Pełnia",
         "pora_dnia": "Przedpołudnie (od 9:00 do 11:00)",
@@ -146,7 +153,10 @@
       },
       {
         "czynnosc": "Zbiór liści (pierwszorocznych)",
-        "miesiace": [8, 9],
+        "miesiace": [
+          8,
+          9
+        ],
         "opis": "Zbiór dużych, włochatych liści z rozety w pierwszym roku wegetacji.",
         "faza_ksiezyca": "Księżyc przybywający",
         "pora_dnia": "Po południu",
@@ -159,7 +169,12 @@
       "tytul": "Królewski Napar na Suchy Kaszel",
       "typ": "medyczne",
       "metoda": "napar",
-      "tagi": ["kaszel", "oddechowe", "nawilżające", "chrypka"],
+      "tagi": [
+        "kaszel",
+        "oddechowe",
+        "nawilżające",
+        "chrypka"
+      ],
       "skladniki": [
         "Suszone kwiaty dziewanny: 1 czubata łyżka",
         "Woda (wrzątek): 250 ml",
@@ -175,14 +190,24 @@
       "uwagi": "Doskonały i bezpieczny środek łagodzący tzw. kaszel 'szczekający'.",
       "roslina": "Dziewanna drobnokwiatowa",
       "slug": "dziewanna_drobnokwiatowa",
-      "cechy": ["słomkowy kolor", "delikatnie śluzowata konsystencja"],
-      "wlasciwosci": ["powlekająca", "wykrztuśna"]
+      "cechy": [
+        "słomkowy kolor",
+        "delikatnie śluzowata konsystencja"
+      ],
+      "wlasciwosci": [
+        "powlekająca",
+        "wykrztuśna"
+      ]
     },
     {
       "tytul": "Olej z kwiatów dziewanny (Na ból ucha)",
       "typ": "medyczne",
       "metoda": "maceracja olejowa",
-      "tagi": ["ból ucha", "zewnętrzne", "olej"],
+      "tagi": [
+        "ból ucha",
+        "zewnętrzne",
+        "olej"
+      ],
       "skladniki": [
         "Świeże kwiaty dziewanny (lekko podsuszone przez 2h): 1 garść",
         "Wysokiej jakości oliwa z oliwek lub olej migdałowy: ok. 100 ml"
@@ -203,7 +228,11 @@
       "tytul": "Słoneczna Nalewka Dziewannowa",
       "typ": "kulinarne",
       "metoda": "maceracja",
-      "tagi": ["nalewka", "trawienie", "rozgrzewające"],
+      "tagi": [
+        "nalewka",
+        "trawienie",
+        "rozgrzewające"
+      ],
       "skladniki": [
         "Świeże, wyselekcjonowane kwiaty dziewanny: 2 szklanki",
         "Wódka (40%): 500 ml",
@@ -222,5 +251,61 @@
       "slug": "dziewanna_drobnokwiatowa"
     }
   ],
-  "ostrzezenia": "Wszystkie nadziemne części dziewanny pokryte są charakterystycznym kutnerem (drobnymi, sztywnymi włoskami). Włoski te, w przypadku dostania się do przewodu pokarmowego, mogą silnie podrażniać błony śluzowe gardła, przełyku i żołądka. Z tego powodu **każdy płynny preparat domowy (napar, odwar, olej, nalewkę) z dziewanny należy wyjątkowo starannie filtrować** – najlepiej przez papierowy filtr do kawy lub kilkukrotnie złożoną, gęstą gazę."
+  "ostrzezenia": "Wszystkie nadziemne części dziewanny pokryte są charakterystycznym kutnerem (drobnymi, sztywnymi włoskami). Włoski te, w przypadku dostania się do przewodu pokarmowego, mogą silnie podrażniać błony śluzowe gardła, przełyku i żołądka. Z tego powodu **każdy płynny preparat domowy (napar, odwar, olej, nalewkę) z dziewanny należy wyjątkowo starannie filtrować** – najlepiej przez papierowy filtr do kawy lub kilkukrotnie złożoną, gęstą gazę.",
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-09-29",
+    "w_url": false,
+    "zdjecia": [
+      {
+        "podpis": "Fragment kwiatostanu",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Starr_040723-0267_Verbascum_thapsus.jpg/500px-Starr_040723-0267_Verbascum_thapsus.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Starr_040723-0267_Verbascum_thapsus.jpg",
+        "autor": "Forest & Kim Starr",
+        "licencja": "CC BY 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by/3.0",
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Verbascum_thapsus_fruit_kz.jpg/500px-Verbascum_thapsus_fruit_kz.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Verbascum_thapsus_fruit_kz.jpg",
+        "autor": "Kenraiz",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      },
+      {
+        "podpis": "Liście jednorocznej rozety",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Common_mullein.jpg/500px-Common_mullein.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Common_mullein.jpg",
+        "autor": "fir0002 flagstaffotos [at] gmail.com Canon 20D + Canon 17-40mm f/4 L",
+        "licencja": "GFDL 1.2",
+        "licencja_url": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      },
+      {
+        "podpis": "Oskrzydlona łodyga",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Starr_040723-0032_Verbascum_thapsus.jpg/500px-Starr_040723-0032_Verbascum_thapsus.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Starr_040723-0032_Verbascum_thapsus.jpg",
+        "autor": "Forest & Kim Starr",
+        "licencja": "CC BY 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by/3.0",
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      },
+      {
+        "podpis": "Kwitnąca roślina, w tle martwy okaz z poprzedniego roku",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Starr_040723-0030_Verbascum_thapsus.jpg/500px-Starr_040723-0030_Verbascum_thapsus.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Starr_040723-0030_Verbascum_thapsus.jpg",
+        "autor": "Forest & Kim Starr",
+        "licencja": "CC BY 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by/3.0",
+        "zrodlo": "Wikimedia Commons",
+        "reczne": true
+      }
+    ]
+  }
 }

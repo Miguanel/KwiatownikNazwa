@@ -65,13 +65,12 @@ def get_all_therapeutic_keywords():
         if not data or not isinstance(data, dict):
             continue
         try:
-            czesci = data.get('czesci_rosliny', {})
-            if isinstance(czesci, dict):
-                for czesc in czesci.values():
-                    if isinstance(czesc, dict):
-                        wlasciwosci = czesc.get('wlasciwości', '')
-                        words = [w.strip().lower() for w in wlasciwosci.replace(',', ' ').replace('.', ' ').split()]
-                        keywords.update(words)
+            # czesci reczne + czesci z sieci (Siedziba Kwiatownika), z wiedza wmontowana w ich dzialanie
+            from app.utils.merged import czesci_generatora
+            for czesc in czesci_generatora(data).values():
+                wlasciwosci = czesc.get('props') or ''
+                words = [w.strip().lower() for w in wlasciwosci.replace(',', ' ').replace('.', ' ').split()]
+                keywords.update(words)
             zastosowanie = data.get('zastosowanie', {})
             if isinstance(zastosowanie, dict):
                 medyczne = zastosowanie.get('medyczne', '')

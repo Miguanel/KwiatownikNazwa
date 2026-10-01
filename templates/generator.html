@@ -50,6 +50,8 @@
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
+    .part-web { font-size: 0.7em; font-weight: normal; color: #2b5d8a; border: 1px solid #9cc0e0; border-radius: 8px; padding: 0 6px; margin-left: 4px; white-space: nowrap; }
+    .part-warn { color: #c62828; }
     .part-name {
         font-family: 'Playfair Display', serif;
         font-weight: bold;
@@ -416,7 +418,7 @@
 
         // Wyświetlenie ostrzeżenia pod kartami (informacyjnie)
         if (currentPlantWarnings.trim() !== '') {
-            warningsContainer.innerHTML = '<strong>⚠️ Ostrzeżenie dla gatunku:</strong> ' + currentPlantWarnings;
+            warningsContainer.innerHTML = '<strong>⚠️ Ostrzeżenie dla gatunku:</strong> ' + escHtml(currentPlantWarnings);
             warningsContainer.style.display = 'block';
         } else {
             warningsContainer.style.display = 'none';
@@ -428,17 +430,19 @@
         if (partsKeys.length > 0) {
             partsKeys.forEach(partName => {
                 const data = currentPlantPartsData[partName];
-                const props = data.props || "Brak danych";
-                const ingr = data.ingr ? String(data.ingr) : "Brak danych";
+                const props = escHtml(data.props || "Brak danych");
+                const ingr = escHtml(data.ingr ? String(data.ingr) : "Brak danych");
+                const webBadge = data.web ? ' <span class="part-web" title="Część rośliny opisana na podstawie źródeł z sieci">🌐 z sieci</span>' : '';
 
                 let card = document.createElement('div');
                 card.className = 'part-card-btn';
                 card.onclick = () => addIngredientFromCurrent(partName);
 
                 card.innerHTML = `
-                    <div class="part-name">${partName}</div>
+                    <div class="part-name">${escHtml(partName)}${webBadge}</div>
                     <div class="part-info-block"><span class="part-info-label">Właściwości:</span> ${props}</div>
                     <div class="part-info-block"><span class="part-info-label">Składniki:</span> <span style="color: #2d5a27;">${ingr}</span></div>
+                    ${data.warn ? `<div class="part-info-block part-warn"><span class="part-info-label">⚠️ Ostrzeżenie (${escHtml(partName)}):</span> ${escHtml(data.warn)}${data.warn_web ? ' <span class="part-web">🌐 z sieci</span>' : ''}</div>` : ''}
                 `;
                 partButtons.appendChild(card);
             });
@@ -447,19 +451,25 @@
     });
 
     // --- 3. DODAWANIE DO TABELI (POPRAWIONE) ---
+    // tekst z plikow roslin (takze z sieci) wstawiany do HTML - zawsze escapowany
+    function escHtml(s) {
+        return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
+    }
+
     function addIngredientFromCurrent(partName) {
         const data = currentPlantPartsData[partName];
 
         // --- LOGIKA OSTRZEŻEŃ ---
         // 1. Sprawdź czy cześć ma swoje ostrzeżenie
-        let finalWarn = "";
+        // ostrzezenie czesci ORAZ ostrzezenia calej rosliny (przeciwwskazania, interakcje) - oba widoczne
+        const warnParts = [];
         if (data.warn && String(data.warn).trim() !== "") {
-            finalWarn = String(data.warn);
+            warnParts.push("Ta część (" + partName + "): " + String(data.warn));
         }
-        // 2. Jeśli nie ma, użyj ostrzeżenia ogólnego rośliny (fallback)
-        else if (currentPlantWarnings && currentPlantWarnings.trim() !== "") {
-            finalWarn = currentPlantWarnings;
+        if (currentPlantWarnings && currentPlantWarnings.trim() !== "") {
+            warnParts.push("Cały gatunek: " + currentPlantWarnings);
         }
+        let finalWarn = warnParts.join("\n\n");
 
         ingredients.push({
             id: Date.now(),
@@ -588,7 +598,7 @@
                         </strong>
                         ${warningHtml}
                     </div>
-                    <small style="color: #666;">Surowiec: ${i.part}</small>
+                    <small style="color: #666;">Surowiec: ${escHtml(i.part)}</small>
                 </td>
                 <td style="color: #2d5a27; font-weight: bold; text-align: center; vertical-align: top;">
                     ${i.weight.toFixed(1)} g
