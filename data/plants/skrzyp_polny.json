@@ -4,7 +4,12 @@
   "nazwa_lat": "Equisetum arvense",
   "rodzina": "Skrzypowate (Equisetaceae)",
   "opis": "Wieloletnia roślina zarodnikowa o unikalnym cyklu życiowym, wykształcająca dwa rodzaje pędów: wiosenne (brązowe, płonne) oraz letnie (zielone, ulistnione). Jest żywą skamieliną, której przodkowie dominowali na Ziemi w karbonie. Skrzyp słynie z niezwykle wysokiej zawartości krzemionki, która nadaje mu szorstkość i czyni go jednym z najlepszych naturalnych surowców wzmacniających tkankę łączną, kości oraz naczynia krwionośne.",
-"tagi": ["zielna", "skora_wlosy", "moczowe", "pospolita"],
+  "tagi": [
+    "zielna",
+    "skora_wlosy",
+    "moczowe",
+    "pospolita"
+  ],
   "profil_energetyczny": {
     "smak": "Słony, lekko słodki, cierpki",
     "termika": "Chłodna",
@@ -12,7 +17,6 @@
     "zywiol": "Ziemia i Woda",
     "opis": "Skrzyp działa jak 'architekt' organizmu. Dostarcza struktury tam, gdzie tkanki stają się wiotkie lub kruche. Wyciąga nadmiar wilgoci z dolnego ogrzewacza (pęcherz, nerki), jednocześnie 'utwardzając' bariery ochronne ciała."
   },
-
   "wymagania": {
     "stanowisko": "Pełne słońce do półcienia.",
     "gleba": "Wilgotna, gliniasto-piaszczysta, zasobna w krzemionkę. Jest rośliną wskaźnikową gleb wilgotnych i kwaśnych, ale adaptuje się do niemal każdych warunków.",
@@ -20,7 +24,6 @@
     "mrozoodpornosc": "Strefa 3 (Całkowicie odporny, zimuje w postaci głębokich kłączy).",
     "woda": "Lubi dużą wilgotność podłoża; często spotykany na brzegach rowów, nasypach i polach o wysokim poziomie wód gruntowych."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Występowanie dwóch pędów: brązowy wiosenny (z kłosem zarodnikowym) oraz zielony letni (przypominający małą choinkę).",
@@ -39,7 +42,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "ziele": {
       "nazwa_surowca": "Herba Equiseti",
@@ -57,23 +59,19 @@
       "ostrzezenia": "Długotrwałe stosowanie może powodować niedobór witaminy B1 (tiaminy) ze względu na zawartość enzymu antywitaminowego – antytiaminazy."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Kamica nerkowa (płukanie piasku), krwawienia z dróg moczowych, łamliwość paznokci, wypadanie włosów, osteoporoza (wspomaganie zrostu kości), miażdżyca (uszczelnianie naczyń).",
     "kulinarne": "Młode pędy wiosenne w niektórych kulturach (np. Japonia - 'tsukushi') są spożywane po ugotowaniu jako warzywo, jednak w Polsce stosuje się głównie ziele letnie do celów leczniczych.",
     "ogrodowe": "Niezastąpiony surowiec do sporządzania odwarów chroniących inne rośliny przed chorobami grzybowymi (mączniak, rdza). Krzemionka ze skrzypu 'utwardza' ściany komórkowe liści, czyniąc je nieprzebijalnymi dla grzybni.",
     "rzemieslnicze": "Sztywne pędy skrzypu, ze względu na zawartość krzemu, były dawniej używane jako naturalny papier ścierny do polerowania drewna, cyny i mosiądzu (stąd nazwa 'cyna-zioło')."
   },
-
   "interakcje": "Może nasilać działanie leków moczopędnych. Przyspiesza wydalanie litu z organizmu. Nie łączyć z dużą ilością alkoholu (nasilenie niedoboru witaminy B1).",
-
   "ciekawostki": [
     "Skrzyp jest jedną z nielicznych roślin, która potrafi akumulować w swoich tkankach złoto (choć w ilościach śladowych).",
     "Gdyby nie paprotniki (w tym przodkowie skrzypów), nie mielibyśmy dzisiaj złóż węgla kamiennego.",
     "Szum, jaki słychać podczas chodzenia po skrzypach, to odgłos pękających kryształków krzemionki.",
     "W kosmetyce 'płukanka skrzypowa' to najstarszy znany sposób na nadanie włosom 'szklanego' blasku i twardości."
   ],
-
   "permakultura": {
     "funkcje": [
       "Dynamiczny akumulator krzemu, wapnia i magnezu.",
@@ -81,19 +79,36 @@
       "Wskaźnik wysokiego poziomu wód gruntowych i braku przewietrzania gleby (gleby zbite)."
     ],
     "gildie": [
-      { "nazwa": "Pomidory / Ogórki", "rola": "Odwar ze skrzypu chroni te warzywa przed zarazą ziemniaczaną i mączniakiem." },
-      { "nazwa": "Wierzba", "rola": "Często rosną obok siebie na terenach podmokłych, tworząc duet regenerujący glebę." },
-      { "nazwa": "Wilgociolubne trawy", "rola": "Skrzyp polny wskazuje na wilgotną, lekko kwaśną glebę, dzieląc ją z turzycami." },
-    { "nazwa": "Kukurydza", "rola": "Uznawany za uciążliwy chwast w uprawach rolnych, m.in. okopowych." },
-    { "nazwa": "Warzywa", "rola": "Z jego pędów robi się wywar bogaty w krzem, doskonały do oprysków przeciw grzybom." }
+      {
+        "nazwa": "Pomidory / Ogórki",
+        "rola": "Odwar ze skrzypu chroni te warzywa przed zarazą ziemniaczaną i mączniakiem."
+      },
+      {
+        "nazwa": "Wierzba",
+        "rola": "Często rosną obok siebie na terenach podmokłych, tworząc duet regenerujący glebę."
+      },
+      {
+        "nazwa": "Wilgociolubne trawy",
+        "rola": "Skrzyp polny wskazuje na wilgotną, lekko kwaśną glebę, dzieląc ją z turzycami."
+      },
+      {
+        "nazwa": "Kukurydza",
+        "rola": "Uznawany za uciążliwy chwast w uprawach rolnych, m.in. okopowych."
+      },
+      {
+        "nazwa": "Warzywa",
+        "rola": "Z jego pędów robi się wywar bogaty w krzem, doskonały do oprysków przeciw grzybom."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór ziela letniego",
-        "miesiace": [6, 7],
+        "miesiace": [
+          6,
+          7
+        ],
         "opis": "Zbiór w połowie lata, gdy pędy są soczyście zielone, ale już twarde (bogate w krzem).",
         "faza_ksiezyca": "Księżyc przybywający (faza liścia/łodygi)",
         "pora_dnia": "Południe (najniższa wilgotność zewnętrzna)",
@@ -102,7 +117,11 @@
       },
       {
         "czynnosc": "Opryski zapobiegawcze",
-        "miesiace": [5, 6, 7],
+        "miesiace": [
+          5,
+          6,
+          7
+        ],
         "opis": "Stosowanie odwaru ze skrzypu na rośliny zagrożone chorobami grzybowymi.",
         "faza_ksiezyca": "Pełnia",
         "pora_dnia": "Wieczór",
@@ -111,7 +130,10 @@
       },
       {
         "czynnosc": "Zbiór zielonych pędów (letnich)",
-        "miesiace": [7, 8],
+        "miesiace": [
+          7,
+          8
+        ],
         "opis": "Ścinamy zielone 'jodełki' w suchy dzień, odrzucając okazy pożółkłe i z plamami.",
         "faza_ksiezyca": "Księżyc przybywający",
         "pora_dnia": "Wczesne popołudnie",
@@ -119,7 +141,10 @@
       },
       {
         "czynnosc": "Opryski przeciwgrzybicze z gnojówki",
-        "miesiace": [6, 7],
+        "miesiace": [
+          6,
+          7
+        ],
         "opis": "Opryskujemy rośliny narażone na mączniaka (np. pomidory, róże) wywarem ze skrzypu.",
         "faza_ksiezyca": "Księżyc ubywający",
         "pora_dnia": "Wcześnie rano lub po zachodzie",
@@ -127,7 +152,10 @@
       },
       {
         "czynnosc": "Suszenie ziela",
-        "miesiace": [7, 8],
+        "miesiace": [
+          7,
+          8
+        ],
         "opis": "Skrzyp łatwo czernieje w wilgoci. Wymaga szybkiego suszenia w przewiewnym cieniu.",
         "faza_ksiezyca": "Księżyc ubywający",
         "pora_dnia": "Dowolna",
@@ -135,13 +163,17 @@
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Odwar Remineralizujący (Na włosy i kości)",
       "typ": "medyczne",
       "metoda": "odwar długi",
-      "tagi": ["włosy", "paznokcie", "osteoporoza", "krzem"],
+      "tagi": [
+        "włosy",
+        "paznokcie",
+        "osteoporoza",
+        "krzem"
+      ],
       "skladniki": [
         "Suszone ziele skrzypu: 2 łyżki",
         "Woda: 500 ml"
@@ -155,17 +187,26 @@
       "uwagi": "Podczas kuracji warto przyjmować kompleks witamin B lub drożdże piwne.",
       "roslina": "Skrzyp polny",
       "slug": "skrzyp_polny",
-      "cechy": ["jasnożółty kolor", "neutralny, 'trawiasty' smak"],
-      "wlasciwosci": ["budująca", "moczopędna"]
+      "cechy": [
+        "jasnożółty kolor",
+        "neutralny, 'trawiasty' smak"
+      ],
+      "wlasciwosci": [
+        "budująca",
+        "moczopędna"
+      ]
     }
   ],
-
   "przepisy_kulinarne": [
     {
       "tytul": "Ekologiczny Oprysk Grzybobójczy",
       "typ": "ogrodowe",
       "metoda": "odwar",
-      "tagi": ["ogród", "ochrona roślin", "ekologia"],
+      "tagi": [
+        "ogród",
+        "ochrona roślin",
+        "ekologia"
+      ],
       "skladniki": [
         "Świeże ziele skrzypu: 1 kg (lub 150g suszu)",
         "Woda: 10 litrów"
@@ -181,5 +222,53 @@
       "slug": "skrzyp_polny"
     }
   ],
-  "ostrzezenia": "Nie stosować przy kłębuszkowym zapaleniu nerek oraz przy obrzękach wywołanych niewydolnością serca. Przy długotrwałych kuracjach (powyżej miesiąca) należy uzupełniać witaminę B1."
+  "ostrzezenia": "Nie stosować przy kłębuszkowym zapaleniu nerek oraz przy obrzękach wywołanych niewydolnością serca. Przy długotrwałych kuracjach (powyżej miesiąca) należy uzupełniać witaminę B1.",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Equisetum_arvense_126536963.jpg/960px-Equisetum_arvense_126536963.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Equisetum_arvense_foliage.jpg/960px-Equisetum_arvense_foliage.jpg",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/01-Stack_201_Equisetum_10x_obj_leaf_print.jpg/960px-01-Stack_201_Equisetum_10x_obj_leaf_print.jpg",
+    "Rycina": "https://upload.wikimedia.org/wikipedia/commons/4/45/Skrzyp_polny.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Equisetum_arvense_126536963.jpg/960px-Equisetum_arvense_126536963.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Equisetum_arvense_126536963.jpg",
+        "autor": "botany08",
+        "licencja": "CC BY 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Equisetum_arvense_foliage.jpg/960px-Equisetum_arvense_foliage.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Equisetum_arvense_foliage.jpg",
+        "autor": "MPF",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/01-Stack_201_Equisetum_10x_obj_leaf_print.jpg/960px-01-Stack_201_Equisetum_10x_obj_leaf_print.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:01-Stack_201_Equisetum_10x_obj_leaf_print.jpg",
+        "autor": "ChrisInMilton",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Rycina",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Skrzyp_polny.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Skrzyp_polny.jpg",
+        "autor": "Carl Axel Magnus Lindman",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

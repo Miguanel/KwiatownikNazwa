@@ -4,7 +4,13 @@
   "nazwa_lat": "Matricaria chamomilla (syn. Matricaria recutita)",
   "rodzina": "Astrowate (Asteraceae)",
   "opis": "Jednoroczna roślina zielna, jedna z najważniejszych w europejskiej tradycji medycznej. Słynie z charakterystycznego, jabłkowego aromatu i złocisto-białych koszyczków kwiatowych. Nazwa łacińska 'Matricaria' pochodzi od słowa 'matrix' (macica), co wskazuje na historyczne zastosowanie rośliny w dolegliwościach kobiecych. Jest to roślina pionierska, często spotykana na polach uprawnych, miedzach i terenach ruderalnych.",
-"tagi": ["zielna", "uspokojenie", "trawienie", "pospolita", "rany"],
+  "tagi": [
+    "zielna",
+    "uspokojenie",
+    "trawienie",
+    "pospolita",
+    "rany"
+  ],
   "profil_energetyczny": {
     "smak": "Słodki, gorzki, aromatyczny",
     "termika": "Chłodna",
@@ -12,7 +18,6 @@
     "zywiol": "Powietrze i Woda",
     "opis": "Rumianek to 'wielki mediator'. Jego energia uspokaja 'ogień' stanów zapalnych, rozprasza napięcia wywołane stresem (zastoje Qi) i przywraca płynność procesom trawiennym. Jest rośliną matczyną – daje poczucie bezpieczeństwa i ukojenia."
   },
-
   "wymagania": {
     "stanowisko": "Pełne słońce – tylko wtedy roślina produkuje wysoką ilość olejków eterycznych.",
     "gleba": "Przepuszczalna, piaszczysto-gliniasta, umiarkowanie żyzna. Dobrze radzi sobie na glebach lekkich, o ile mają dostęp do wilgoci wiosną.",
@@ -20,7 +25,6 @@
     "mrozoodpornosc": "Roślina jednoroczna (mrozoodporna w formie siewek jesiennych).",
     "woda": "Wymaga umiarkowanej wilgotności; źle znosi skrajne przesuszenie w fazie wzrostu."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Dno kwiatowe po przecięciu jest PUSTE w środku (kluczowa cecha diagnostyczna).",
@@ -39,7 +43,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "kwiaty": {
       "nazwa_surowca": "Anthodium Chamomillae / Flos Chamomillae",
@@ -57,16 +60,13 @@
       "ostrzezenia": "Suszyć w temp. do 35°C, aby nie odparować olejków."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Stany zapalne przewodu pokarmowego (nieżyt żołądka, jelit), kolki u niemowląt, wzdęcia, bolesne miesiączki, bezsenność, stany lękowe. Zewnętrznie: zapalenie spojówek, stany zapalne jamy ustnej, oparzenia, pieluszkowe zapalenie skóry.",
     "kulinarne": "Herbata rumiankowa, aromatyzowanie likierów, win i deserów owocowych.",
     "ogrodowe": "Roślina miododajna, przyciągająca bzygi (pożeracze mszyc). Oprysk z rumianku zapobiega zgorzeli siewek.",
     "rzemieslnicze": "Płukanki z rumianku rozjaśniają jasne włosy i nadają im złocisty połysk. Olejek rumiankowy (niebieski) jest cenionym składnikiem luksusowych perfum."
   },
-
   "interakcje": "Może nasilać działanie leków uspokajających. Ze względu na zawartość kumaryn, w bardzo dużych ilościach może nasilać działanie leków przeciwzakrzepowych.",
-
   "ciekawostki": [
     "Chamazulen (składnik nadający olejkowi intensywnie niebieski kolor) nie występuje naturalnie w roślinie – powstaje dopiero w procesie destylacji parą wodną z bezbarwnej maciercyny.",
     "W starożytnym Egipcie rumianek był poświęcony bogu słońca Ra ze względu na swój wygląd i moc 'wypalania' chorób.",
@@ -74,7 +74,6 @@
     "W medycynie anglosaskiej rumianek należał do dziewięciu świętych ziół podarowanych ludzkości przez boga Wodana.",
     "Badania naukowe potwierdziły, że apigenina zawarta w rumianku wiąże się z tymi samymi receptorami w mózgu co leki z grupy benzodiazepin, co tłumaczy jego działanie przeciwlękowe."
   ],
-
   "permakultura": {
     "funkcje": [
       "Dynamiczny akumulator potasu, wapnia i siarki.",
@@ -83,19 +82,38 @@
       "Pożytek dla bzygów i małych dzikich pszczół."
     ],
     "gildie": [
-      { "nazwa": "Cebula / Czosnek", "rola": "Rumianek chroni cebulę przed chorobami grzybowymi i poprawia jej aromat." },
-      { "nazwa": "Kapusta", "rola": "Rumianek wyraźnie poprawia smak kapustnych i odstrasza bielinka." },
-      { "nazwa": "Cebula", "rola": "Rumianek rosnący z umiarem wśród cebuli stymuluje jej wzrost i chroni przed mszycami." },
-      { "nazwa": "Krwawnik pospolity", "rola": "Wzajemnie podnoszą swoje lecznicze właściwości." },
-      { "nazwa": "Mięta", "rola": "Wzajemnie wzmacniają swoje działanie aromatyczne i lecznicze." }
+      {
+        "nazwa": "Cebula / Czosnek",
+        "rola": "Rumianek chroni cebulę przed chorobami grzybowymi i poprawia jej aromat."
+      },
+      {
+        "nazwa": "Kapusta",
+        "rola": "Rumianek wyraźnie poprawia smak kapustnych i odstrasza bielinka."
+      },
+      {
+        "nazwa": "Cebula",
+        "rola": "Rumianek rosnący z umiarem wśród cebuli stymuluje jej wzrost i chroni przed mszycami."
+      },
+      {
+        "nazwa": "Krwawnik pospolity",
+        "rola": "Wzajemnie podnoszą swoje lecznicze właściwości."
+      },
+      {
+        "nazwa": "Mięta",
+        "rola": "Wzajemnie wzmacniają swoje działanie aromatyczne i lecznicze."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Wysiew nasion",
-        "miesiace": [4, 5, 8, 9],
+        "miesiace": [
+          4,
+          5,
+          8,
+          9
+        ],
         "opis": "Siejemy płytko wprost do gruntu. Nasiona rumianku potrzebują światła, więc nie przysypujemy ich ziemią!",
         "faza_ksiezyca": "Księżyc przybywający",
         "pora_dnia": "Rano",
@@ -103,7 +121,11 @@
       },
       {
         "czynnosc": "Zbiór koszyczków",
-        "miesiace": [5, 6, 7],
+        "miesiace": [
+          5,
+          6,
+          7
+        ],
         "opis": "Zbieramy koszyczki BEZ szypułek co 3-5 dni w miarę zakwitania (gdy białe płatki ułożone są poziomo).",
         "faza_ksiezyca": "Pełnia",
         "pora_dnia": "Popołudnie, mocne słońce",
@@ -111,7 +133,9 @@
       },
       {
         "czynnosc": "Zbiór nasion",
-        "miesiace": [8],
+        "miesiace": [
+          8
+        ],
         "opis": "Gdy płatki całkowicie opadną, a stożkowaty środek zbrązowieje.",
         "faza_ksiezyca": "Księżyc ubywający",
         "pora_dnia": "Zaraz po południu (sucho)",
@@ -119,13 +143,17 @@
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Napar Spazmolityczny (Na bóle brzucha i stres)",
       "typ": "medyczne",
       "metoda": "napar",
-      "tagi": ["trawienie", "stres", "skurcze", "sen"],
+      "tagi": [
+        "trawienie",
+        "stres",
+        "skurcze",
+        "sen"
+      ],
       "skladniki": [
         "Suszone kwiaty rumianku: 1 czubata łyżka",
         "Woda: 250 ml"
@@ -139,14 +167,24 @@
       "uwagi": "Idealny dla osób z 'nerwicą żołądka'.",
       "roslina": "Rumianek pospolity",
       "slug": "rumianek_pospolity",
-      "cechy": ["jasnożółty kolor", "jabłkowy aromat"],
-      "wlasciwosci": ["rozkurczowa", "uspokajająca"]
+      "cechy": [
+        "jasnożółty kolor",
+        "jabłkowy aromat"
+      ],
+      "wlasciwosci": [
+        "rozkurczowa",
+        "uspokajająca"
+      ]
     },
     {
       "tytul": "Okłady na zapalenie spojówek",
       "typ": "medyczne",
       "metoda": "napar do przemywania",
-      "tagi": ["oczy", "stany zapalne", "higiena"],
+      "tagi": [
+        "oczy",
+        "stany zapalne",
+        "higiena"
+      ],
       "skladniki": [
         "Napar z rumianku (ostudzony i bardzo dokładnie przefiltrowany)"
       ],
@@ -159,13 +197,16 @@
       "slug": "rumianek_pospolity"
     }
   ],
-
   "przepisy_kulinarne": [
     {
       "tytul": "Rumiankowy Syrop Relaksujący",
       "typ": "kulinarne",
       "metoda": "gotowanie/maceracja",
-      "tagi": ["syrop", "desery", "lemoniada"],
+      "tagi": [
+        "syrop",
+        "desery",
+        "lemoniada"
+      ],
       "skladniki": [
         "Kwiaty rumianku: 2 garście",
         "Cukier: 500g",
@@ -182,5 +223,43 @@
       "slug": "rumianek_pospolity"
     }
   ],
-  "ostrzezenia": "Osoby uczulone na rośliny z rodziny Astrowatych (np. arnka, piołun, nawłoć) powinny zachować szczególną ostrożność – rumianek może wywołać u nich wstrząs anafilaktyczny lub wysypkę."
+  "ostrzezenia": "Osoby uczulone na rośliny z rodziny Astrowatych (np. arnka, piołun, nawłoć) powinny zachować szczególną ostrożność – rumianek może wywołać u nich wstrząs anafilaktyczny lub wysypkę.",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Matricaria_recutita_0.1_R.jpg/960px-Matricaria_recutita_0.1_R.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Matricaria_chamomilla_sl11.jpg/960px-Matricaria_chamomilla_sl11.jpg",
+    "Rycina": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Matricaria_recutita_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-091.jpg/960px-Matricaria_recutita_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-091.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Matricaria_recutita_0.1_R.jpg/960px-Matricaria_recutita_0.1_R.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Matricaria_recutita_0.1_R.jpg",
+        "autor": "Rob Hille",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Matricaria_chamomilla_sl11.jpg/960px-Matricaria_chamomilla_sl11.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Matricaria_chamomilla_sl11.jpg",
+        "autor": "Stefan.lefnaer",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Rycina",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Matricaria_recutita_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-091.jpg/960px-Matricaria_recutita_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-091.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Matricaria_recutita_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-091.jpg",
+        "autor": "Franz Eugen Köhler, in Köhler's Medizinal-Pflanzen",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

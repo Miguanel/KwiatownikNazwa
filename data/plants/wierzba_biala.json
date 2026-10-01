@@ -4,7 +4,6 @@
   "nazwa_lat": "Salix alba",
   "rodzina": "Wierzbowate (Salicaceae)",
   "opis": "Duże, szybko rosnące drzewo o szerokiej, rozłożystej koronie, osiągające do 25-30 m wysokości. Charakterystyczną cechą są jej lancetowate liście, które dzięki gęstemu, srebrzystemu owłosieniu lśnią z oddali białym blaskiem (stąd nazwa). Wierzba jest gatunkiem pionierskim terenów zalewowych i nadrzecznych. Od wieków jej kora jest ceniona jako 'naturalna aspiryna', a giętkie pędy stanowią fundament światowego plecionkarstwa.",
-
   "profil_energetyczny": {
     "smak": "Gorzki, ściągający",
     "termika": "Zimna",
@@ -12,7 +11,6 @@
     "zywiol": "Woda",
     "opis": "Wierzba jest lekarstwem na stany 'gorącego wilgotnego zastoju'. Wyciąga nadmiar wilgoci ze stawów (reumatyzm) i chłodzi krew podczas gorączki. Na poziomie emocjonalnym pomaga stać się elastycznym wobec trudności losu, 'uginając się, ale nie pękając'."
   },
-
   "wymagania": {
     "stanowisko": "Pełne słońce. Jako gatunek światłożądny nie znosi ocienienia.",
     "gleba": "Głęboka, żyzna, wilgotna, aluwialna (mady nadrzeczne). Dobrze znosi gleby ciężkie i okresowo zalewane.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 2 (Ekstremalnie odporna na mrozy).",
     "woda": "Bardzo wysokie zapotrzebowanie; idealna do sadzenia przy zbiornikach wodnych, stawach i rowach melioracyjnych."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Liście lancetowate, drobno piłkowane, spodem pokryte gęstymi, srebrzystymi włoskami.",
@@ -39,7 +36,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "kora": {
       "nazwa_surowca": "Cortex Salicis",
@@ -60,23 +56,19 @@
       "czas_zbioru": "Maj - Czerwiec."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Reumatyzm, artretyzm, bóle głowy (migreny), nerwobóle, stany gorączkowe przy przeziębieniu i grypie, biegunki (działanie ściągające garbników), bezsenność na tle nerwowym.",
     "kulinarne": "BRAK. Kora jest zbyt gorzka do celów spożywczych, stosowana wyłącznie jako lekarstwo.",
     "ogrodowe": "Osuszanie terenów podmokłych, umacnianie brzegów rzek i stawów (potężny system korzeniowy), tworzenie naturalnych altan (budowle z żywej wikliny).",
     "rzemieslnicze": "Podstawowy surowiec w wikliniarstwie. Drewno jest lekkie i miękkie, dawniej używane do wyrobu protez kończyn, klocków hamulcowych i celulozy."
   },
-
   "interakcje": "Nasila działanie niesteroidowych leków przeciwzapalnych (NLPZ) oraz leków przeciwzakrzepowych. Nie stosować u osób z nadwrażliwością na salicylany.",
-
   "ciekawostki": [
     "Syntetyczna aspiryna (kwas acetylosalicylowy) została stworzona jako stabilniejsza wersja salicyny odkrytej w wierzbie.",
     "Wierzba posiada niesamowitą zdolność do ukorzeniania się – świeżo ścięty kołek wierzbowy wbity w wilgotną ziemię prawie zawsze wypuści liście.",
     "W tradycji ludowej 'bazie' wierzbowe poświęcone w Palmową Niedzielę połykano, aby zapobiec bólom gardła i głowy przez cały rok.",
     "Wierzba jest nazywana 'energetycznym wampirem' – wierzono, że przytulenie się do starej wierzby pomaga 'oddać' drzewu gorączkę i ból."
   ],
-
   "permakultura": {
     "funkcje": [
       "Fitoremediacja – wierzba potrafi wyciągać z gleby i wody metale ciężkie oraz nadmiar fosforu i azotu.",
@@ -85,16 +77,24 @@
       "Naturalna oczyszczalnia ścieków w systemach korzeniowo-trzciniowych."
     ],
     "gildie": [
-      { "nazwa": "Olcha czarna", "rola": "Naturalny towarzysz na terenach bagiennych; olcha wiąże azot, z którego wierzba korzysta." },
-      { "nazwa": "Żywokost lekarski", "rola": "Rośnie świetnie w wilgotnym cieniu u podnóża wierzby, akumulując potas." }
+      {
+        "nazwa": "Olcha czarna",
+        "rola": "Naturalny towarzysz na terenach bagiennych; olcha wiąże azot, z którego wierzba korzysta."
+      },
+      {
+        "nazwa": "Żywokost lekarski",
+        "rola": "Rośnie świetnie w wilgotnym cieniu u podnóża wierzby, akumulując potas."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór kory leczniczej",
-        "miesiace": [3, 4],
+        "miesiace": [
+          3,
+          4
+        ],
         "opis": "Nacinanie kory wzdłuż gałęzi i zdejmowanie jej w formie rurek. Suszenie w temp. do 40°C.",
         "faza_ksiezyca": "Nów (początek krążenia soków)",
         "pora_dnia": "Przedpołudnie",
@@ -103,20 +103,27 @@
       },
       {
         "czynnosc": "Cięcie wierzby (ogławianie)",
-        "miesiace": [1, 2],
+        "miesiace": [
+          1,
+          2
+        ],
         "opis": "Formowanie charakterystycznych 'głów' wierzbowych poprzez coroczne wycinanie witek.",
         "faza_ksiezyca": "Księżyc ubywający",
         "wplyw_ksiezyca": "Gwarantuje, że witki będą trwałe i elastyczne."
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Odwar z kory (Naturalna Aspiryna)",
       "typ": "medyczne",
       "metoda": "odwar",
-      "tagi": ["gorączka", "ból", "grypa", "stawy"],
+      "tagi": [
+        "gorączka",
+        "ból",
+        "grypa",
+        "stawy"
+      ],
       "skladniki": [
         "Suszona kora wierzby: 1 łyżka stołowa",
         "Woda: 250 ml"
@@ -130,14 +137,24 @@
       "uwagi": "Działa wolniej niż tabletka, ale efekt przeciwbólowy utrzymuje się dłużej.",
       "roslina": "Wierzba biała",
       "slug": "wierzba_biala",
-      "cechy": ["bardzo gorzki smak", "ciemnożółty/brunatny kolor"],
-      "wlasciwosci": ["przeciwgorączkowa", "przeciwzapalna"]
+      "cechy": [
+        "bardzo gorzki smak",
+        "ciemnożółty/brunatny kolor"
+      ],
+      "wlasciwosci": [
+        "przeciwgorączkowa",
+        "przeciwzapalna"
+      ]
     },
     {
       "tytul": "Woda Wierzbowa (Naturalny Ukorzeniacz)",
       "typ": "ogrodowe",
       "metoda": "maceracja",
-      "tagi": ["ogród", "sadzonki", "hormony"],
+      "tagi": [
+        "ogród",
+        "sadzonki",
+        "hormony"
+      ],
       "skladniki": [
         "Młode gałązki wierzby: 1 garść",
         "Woda: 1 litr"
@@ -152,5 +169,63 @@
       "slug": "wierzba_biala"
     }
   ],
-  "ostrzezenia": "Nie podawać dzieciom poniżej 12 roku życia podczas infekcji wirusowych (ryzyko Zespołu Reye’a – rzadkie, ale groźne powikłanie po salicylanach). Nie stosować przy astmie aspirynowej."
+  "ostrzezenia": "Nie podawać dzieciom poniżej 12 roku życia podczas infekcji wirusowych (ryzyko Zespołu Reye’a – rzadkie, ale groźne powikłanie po salicylanach). Nie stosować przy astmie aspirynowej.",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Salix_alba_an_der_Isar.jpg/960px-Salix_alba_an_der_Isar.jpg",
+    "Kwiaty": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Salix_alba_-_female_inflorescences.jpg",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Salix_alba_leaves.jpg/960px-Salix_alba_leaves.jpg",
+    "Korzeń": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Racines_a%C3%A9riennes_de_saule.jpg/960px-Racines_a%C3%A9riennes_de_saule.jpg",
+    "Rycina": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Salix_alba_%28as_S._vitellina%29_Thom%C3%A9_1904%2C_2nd_ed.%2C_vol_2%2C_plate_159%2C_cropped%2C_clean%2C_no_caption.jpg/960px-Salix_alba_%28as_S._vitellina%29_Thom%C3%A9_1904%2C_2nd_ed.%2C_vol_2%2C_plate_159%2C_cropped%2C_clean%2C_no_caption.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Salix_alba_an_der_Isar.jpg/960px-Salix_alba_an_der_Isar.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Salix_alba_an_der_Isar.jpg",
+        "autor": "Burkhard Mücke",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Salix_alba_-_female_inflorescences.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Salix_alba_-_female_inflorescences.jpg",
+        "autor": "Kruczy89",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Salix_alba_leaves.jpg/960px-Salix_alba_leaves.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Salix_alba_leaves.jpg",
+        "autor": "MPF",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Korzeń",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Racines_a%C3%A9riennes_de_saule.jpg/960px-Racines_a%C3%A9riennes_de_saule.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Racines_a%C3%A9riennes_de_saule.jpg",
+        "autor": "Tangopaso",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Rycina",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Salix_alba_%28as_S._vitellina%29_Thom%C3%A9_1904%2C_2nd_ed.%2C_vol_2%2C_plate_159%2C_cropped%2C_clean%2C_no_caption.jpg/960px-Salix_alba_%28as_S._vitellina%29_Thom%C3%A9_1904%2C_2nd_ed.%2C_vol_2%2C_plate_159%2C_cropped%2C_clean%2C_no_caption.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Salix_alba_(as_S._vitellina)_Thom%C3%A9_1904,_2nd_ed.,_vol_2,_plate_159,_cropped,_clean,_no_caption.jpg",
+        "autor": "Otto Wilhelm Thomé",
+        "licencja": "CC0",
+        "licencja_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

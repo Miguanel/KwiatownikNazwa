@@ -4,7 +4,6 @@
   "nazwa_lat": "Tanacetum vulgare",
   "rodzina": "Astrowate (Asteraceae)",
   "opis": "Wieloletnia, silnie pachnąca bylina, dorastająca do 1,5 metra wysokości. Charakteryzuje się sztywnymi łodygami zakończonymi jaskrawożółtymi kwiatami w kształcie guzików. Wrotycz to roślina o niezwykłej odporności, rosnąca na miedzach, ugorach i przydrożach. Od wieków stosowany jako 'strażnik czystości' – zarówno w organizmie (odrobaczanie), jak i w domostwie (odstraszanie insektów). Jego intensywny, kamforowy zapach jest znakiem rozpoznawczym jego potężnej siły fitochemicznej.",
-
   "profil_energetyczny": {
     "smak": "Bardzo gorzki, ostry, palący",
     "termika": "Gorąca",
@@ -12,7 +11,6 @@
     "zywiol": "Ogień i Metal",
     "opis": "Wrotycz to energia 'pogromcy'. Rozprasza zastoje zimnej wilgoci, zabija pasożyty i drobnoustroje, pobudza krew do krążenia. Działa jak gwałtowny impuls oczyszczający, który wypala infekcje i 'wygania' intruzów z organizmu."
   },
-
   "wymagania": {
     "stanowisko": "Pełne słońce. Jest rośliną światłolubną; w cieniu traci swój charakterystyczny pokrój i moc olejkową.",
     "gleba": "Przepuszczalna, sucha do umiarkowanie wilgotnej, zasobna w azot i potas. Rośnie na niemal każdym podłożu, z wyjątkiem bagiennego.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 3 (Całkowicie mrozoodporny, znosi ekstremalne warunki).",
     "woda": "Bardzo wysoka odporność na suszę dzięki głębokiemu kłączu."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Kwiaty żółte, zebrane w gęste, płaskie baldachogrona, pozbawione płatków języczkowych (wyglądają jak żółte guziki).",
@@ -39,7 +36,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "kwiaty": {
       "nazwa_surowca": "Flos Tanaceti",
@@ -61,23 +57,19 @@
       "czas_zbioru": "Lipiec."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Zwalczanie pasożytów przewodu pokarmowego, bolesne miesiączki (brak krwawienia), stany zapalne dróg żółciowych, depresja (pomocniczo), problemy skórne (trądzik, łuszczyca - ze względu na działanie antybiotyczne).",
     "kulinarne": "Historycznie używany w bardzo małych ilościach jako przyprawa do ciężkich mięs i puddingów, dziś odradzany ze względu na toksyczność tujonu.",
     "ogrodowe": "Jeden z najlepszych naturalnych pestycydów. Wyciąg z wrotycza zabija mszyce, gąsienice, mrówki oraz odstrasza kleszcze i komary.",
     "rzemieslnicze": "Naturalny żółty barwnik do wełny. Suszone ziele wkładane do szaf skutecznie odstrasza mole."
   },
-
   "interakcje": "Należy unikać łączenia z lekami działającymi na ośrodkowy układ nerwowy. Może nasilać działanie leków żółciopędnych.",
-
   "ciekawostki": [
     "W starożytnym Egipcie i w średniowieczu używany do konserwacji zwłok ze względu na silne właściwości antyseptyczne.",
     "Nazwa łacińska 'Tanacetum' pochodzi prawdopodobnie od greckiego 'athanasia' (nieśmiertelność), co odnosi się do faktu, że ususzone kwiaty bardzo długo zachowują kolor i kształt.",
     "Wrotycz był sadzony przy drzwiach domostw, aby 'zło nie miało wstępu' – zapach skutecznie odstraszał nie tylko owady, ale i myszy.",
     "Krowy unikają jedzenia świeżego wrotycza na pastwiskach, ale w sianie tracą one swoją gorycz i mogą być zjadane (choć mleko staje się wtedy gorzkie)."
   ],
-
   "permakultura": {
     "funkcje": [
       "Dynamiczny akumulator potasu.",
@@ -86,17 +78,28 @@
       "Roślina fitoremediacyjna – potrafi pobierać z gleby metale ciężkie."
     ],
     "gildie": [
-      { "nazwa": "Drzewa owocowe (Śliwa, Jabłoń)", "rola": "Wrotycz pod drzewami ogranicza populację owocówki i mszyc." },
-      { "nazwa": "Ziemniaki", "rola": "Posadzony w pobliżu, odstrasza stonkę ziemniaczaną." },
-      { "nazwa": "Róże", "rola": "Chroni róże przed skoczkami i mszycami." }
+      {
+        "nazwa": "Drzewa owocowe (Śliwa, Jabłoń)",
+        "rola": "Wrotycz pod drzewami ogranicza populację owocówki i mszyc."
+      },
+      {
+        "nazwa": "Ziemniaki",
+        "rola": "Posadzony w pobliżu, odstrasza stonkę ziemniaczaną."
+      },
+      {
+        "nazwa": "Róże",
+        "rola": "Chroni róże przed skoczkami i mszycami."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór kwiatów do celów leczniczych",
-        "miesiace": [7, 8],
+        "miesiace": [
+          7,
+          8
+        ],
         "opis": "Zbiór w pełni rozwiniętych 'guzików' w słoneczne południe.",
         "faza_ksiezyca": "Pełnia",
         "pogoda": "Gorąca i sucha",
@@ -104,19 +107,27 @@
       },
       {
         "czynnosc": "Sporządzanie gnojówki ogrodniczej",
-        "miesiace": [5, 6, 7],
+        "miesiace": [
+          5,
+          6,
+          7
+        ],
         "opis": "Młode liście zalać wodą i poddać fermentacji (1 kg na 10 l wody).",
         "faza_ksiezyca": "Nów"
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Napar Wrotyczowy (Na pasożyty i trawienie)",
       "typ": "medyczne",
       "metoda": "napar",
-      "tagi": ["odrobaczanie", "pasożyty", "wątroba", "trawienie"],
+      "tagi": [
+        "odrobaczanie",
+        "pasożyty",
+        "wątroba",
+        "trawienie"
+      ],
       "skladniki": [
         "Suszone kwiaty wrotycza: 1 łyżeczka",
         "Woda: 250 ml"
@@ -130,14 +141,24 @@
       "uwagi": "Stosować wyłącznie u dorosłych. W przypadku nudności natychmiast przerwać.",
       "roslina": "Wrotycz pospolity",
       "slug": "wrotycz_pospolity",
-      "cechy": ["bardzo gorzki smak", "żółty kolor"],
-      "wlasciwosci": ["przeciwpasożytnicza", "żółciopędna"]
+      "cechy": [
+        "bardzo gorzki smak",
+        "żółty kolor"
+      ],
+      "wlasciwosci": [
+        "przeciwpasożytnicza",
+        "żółciopędna"
+      ]
     },
     {
       "tytul": "Ocet Wrotyczowy (Na wszawicę i świerzb)",
       "typ": "medyczne",
       "metoda": "maceracja",
-      "tagi": ["skóra", "pasożyty zewnętrzne", "włosy"],
+      "tagi": [
+        "skóra",
+        "pasożyty zewnętrzne",
+        "włosy"
+      ],
       "skladniki": [
         "Świeże lub suszone ziele wrotycza: 1 szklanka",
         "Ocet jabłkowy lub spirytusowy: 500 ml"
@@ -151,13 +172,17 @@
       "slug": "wrotycz_pospolity"
     }
   ],
-
   "przepisy_kulinarne": [
     {
       "tytul": "Oprysk 'Tarcza Wrotyczowa' przeciw mszycom",
       "typ": "ogrodowe",
       "metoda": "wywar",
-      "tagi": ["ochrona roślin", "mszyce", "mrówki", "ekologia"],
+      "tagi": [
+        "ochrona roślin",
+        "mszyce",
+        "mrówki",
+        "ekologia"
+      ],
       "skladniki": [
         "Świeże ziele i kwiaty wrotycza: 300g (lub 30g suszu)",
         "Woda: 10 litrów"
@@ -172,5 +197,63 @@
       "slug": "wrotycz_pospolity"
     }
   ],
-  "ostrzezenia": "BEZWZGLĘDNIE NIE STOSOWAĆ W CIĄŻY (powoduje skurcze macicy i może doprowadzić do poronienia). Przedawkowanie powoduje zawroty głowy, krwiomocz i omamy. Przechowywać z dala od dzieci!"
+  "ostrzezenia": "BEZWZGLĘDNIE NIE STOSOWAĆ W CIĄŻY (powoduje skurcze macicy i może doprowadzić do poronienia). Przedawkowanie powoduje zawroty głowy, krwiomocz i omamy. Przechowywać z dala od dzieci!",
+  "url": {
+    "Pokrój": "https://upload.wikimedia.org/wikipedia/commons/9/91/Tansy_and_Queen_of_Spain_Fritilllary.JPG",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Bloemen_van_Boerenwormkruid_%28Tanacetum_vulgare%29._17-08-2025._%28actm.%29_01.jpg/960px-Bloemen_van_Boerenwormkruid_%28Tanacetum_vulgare%29._17-08-2025._%28actm.%29_01.jpg",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Tanacetum_vulgare_2020-05-22_9146.jpg/960px-Tanacetum_vulgare_2020-05-22_9146.jpg",
+    "Nasiona": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Tanacetum_vulgare_2018-05-16_2122.jpg/960px-Tanacetum_vulgare_2018-05-16_2122.jpg",
+    "Rycina": "https://upload.wikimedia.org/wikipedia/commons/8/87/Tanacetum_vulgare_L_-_plate_179_-_MAS_Atl_Pl_France_2_183_no-description.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Tansy_and_Queen_of_Spain_Fritilllary.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Tansy_and_Queen_of_Spain_Fritilllary.JPG",
+        "autor": "Lienhard Schulz",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Bloemen_van_Boerenwormkruid_%28Tanacetum_vulgare%29._17-08-2025._%28actm.%29_01.jpg/960px-Bloemen_van_Boerenwormkruid_%28Tanacetum_vulgare%29._17-08-2025._%28actm.%29_01.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Bloemen_van_Boerenwormkruid_(Tanacetum_vulgare)._17-08-2025._(actm.)_01.jpg",
+        "autor": "Agnes Monkelbaan",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Tanacetum_vulgare_2020-05-22_9146.jpg/960px-Tanacetum_vulgare_2020-05-22_9146.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Tanacetum_vulgare_2020-05-22_9146.jpg",
+        "autor": "Salicyna",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Nasiona",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Tanacetum_vulgare_2018-05-16_2122.jpg/960px-Tanacetum_vulgare_2018-05-16_2122.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Tanacetum_vulgare_2018-05-16_2122.jpg",
+        "autor": "Salicyna",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Rycina",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Tanacetum_vulgare_L_-_plate_179_-_MAS_Atl_Pl_France_2_183_no-description.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Tanacetum_vulgare_L_-_plate_179_-_MAS_Atl_Pl_France_2_183_no-description.jpg",
+        "autor": "Amédée Masclef",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

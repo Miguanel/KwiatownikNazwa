@@ -4,7 +4,6 @@
   "nazwa_lat": "Hippophae rhamnoides",
   "rodzina": "Oliwnikowate (Elaeagnaceae)",
   "opis": "Silnie rozgałęziony, ciernisty krzew lub małe drzewo, osiągające do 6 m wysokości. Jest rośliną dwupienną (wymaga osobnika męskiego i żeńskiego do owocowania). Rokitnik to mistrz przetrwania: rośnie na piaskach, wydmach i terenach zasolonych, a dzięki symbiozie z promieniowcami potrafi wiązać azot z powietrza. Jego owoce są jednymi z najbardziej wartościowych biologicznie produktów spożywczych na świecie, charakteryzując się intensywnie pomarańczowym kolorem i unikalnym, kwaśno-żywicznym smakiem.",
-
   "profil_energetyczny": {
     "smak": "Kwaśny, cierpki, lekko słodki",
     "termika": "Ciepła",
@@ -12,7 +11,6 @@
     "zywiol": "Ogień i Ziemia",
     "opis": "Rokitnik to potężny tonik 'Yin' i 'Krwi'. Dzięki wysokiej zawartości olejów nawilża wysuszone błony śluzowe i skórę od wewnątrz. Jego ciepła natura wspiera odporność i 'rozgrzewa' procesy regeneracji tkanek. Idealny dla osób osłabionych, po przebytych chorobach i z niedoborami witaminowymi."
   },
-
   "wymagania": {
     "stanowisko": "Pełne słońce. Jest skrajnie światłożądny – w cieniu szybko marnieje i nie owocuje.",
     "gleba": "Lekka, piaszczysta, przepuszczalna, wapienna. Doskonale radzi sobie na glebach ubogich, kamienistych i zasolonych (np. przy drogach).",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 3 (Całkowicie mrozoodporny, znosi temperatury do -40°C).",
     "woda": "Bardzo odporny na suszę; nie toleruje jedynie gleb podmokłych i ciężkich glin."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Liście wąskie, lancetowate, z wierzchu szarozielone, spodem srebrzystobiałe, pokryte tarczowatymi włoskami.",
@@ -39,7 +36,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "owoce": {
       "nazwa_surowca": "Fructus Hippophae",
@@ -58,7 +54,9 @@
     "nasiona": {
       "nazwa_surowca": "Semen Hippophae",
       "opis_botaniczny": "Drobne, ciemne nasiona znajdujące się wewnątrz owocu, będące źródłem najcenniejszego oleju.",
-      "skladniki_aktywne": ["Olej rokitnikowy (bogaty w nienasycone kwasy tłuszczowe)"],
+      "skladniki_aktywne": [
+        "Olej rokitnikowy (bogaty w nienasycone kwasy tłuszczowe)"
+      ],
       "wlasciwości": "Regeneracja śluzówki żołądka, leczenie wrzodów, ochrona układu krążenia."
     },
     "liscie": {
@@ -67,23 +65,19 @@
       "czas_zbioru": "Czerwiec - Sierpień."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Choroba wrzodowa żołądka i dwunastnicy, stany zapalne jamy ustnej, regeneracja skóry po oparzeniach i naświetlaniach (radioterapia), profilaktyka miażdżycy, przeziębienia, obniżona odporność.",
     "kulinarne": "Soki, syropy, dżemy (często łączone z jabłkiem), konfitury, nalewki. Olej rokitnikowy jako dodatek do sałatek (nie podgrzewać!). Owoce można dodawać do herbaty zamiast cytryny.",
     "ogrodowe": "Tworzenie gęstych, obronnych żywopłotów, rekultywacja nieużytków, stabilizacja wydm i skarp korzeniami.",
     "rzemieslnicze": "Wyciągi z owoców służą do produkcji luksusowych kosmetyków przeciwstarzeniowych. Drewno rokitnika jest twarde i ma piękne, ciemne jądro, cenione w drobnym tokarstwie."
   },
-
   "interakcje": "Może nasilać działanie leków przeciwzakrzepowych. Ze względu na wysoką kwasowość owoców, należy zachować ostrożność przy ostrym zapaleniu trzustki i pęcherzyka żółciowego.",
-
   "ciekawostki": [
     "Łacińska nazwa 'Hippophae' pochodzi od greckich słów 'hippos' (koń) i 'phaos' (błyszczeć). W starożytności konie karmione liśćmi rokitnika miały niezwykle lśniącą sierść i świetną kondycję.",
     "Witamina C w rokitniku jest wyjątkowo trwała, ponieważ roślina nie posiada enzymu askorbinazy – soki rokitnikowe zachowują moc nawet po pasteryzacji.",
     "Rokitnik był jednym z pierwszych pokarmów podawanych kosmonautom (w formie soków i koncentratów), aby chronić ich przed promieniowaniem kosmicznym.",
     "Olej z rokitnika był używany przez rosyjskich lekarzy do leczenia oparzeń ofiar katastrofy w Czarnobylu."
   ],
-
   "permakultura": {
     "funkcje": [
       "Wiązanie azotu w glebie (symbioza z promieniowcami Frankia).",
@@ -92,17 +86,29 @@
       "Rekultywacja terenów zniszczonych i piaszczystych."
     ],
     "gildie": [
-      { "nazwa": "Sosna zwyczajna", "rola": "Tworzą razem stabilne ekosystemy na piaskach." },
-      { "nazwa": "Wrzos zwyczajny", "rola": "Roślina okrywowa preferująca to samo słoneczne stanowisko." },
-      { "nazwa": "Oliwnik", "rola": "Inny gatunek azotolubny, wzmacniający glebę." }
+      {
+        "nazwa": "Sosna zwyczajna",
+        "rola": "Tworzą razem stabilne ekosystemy na piaskach."
+      },
+      {
+        "nazwa": "Wrzos zwyczajny",
+        "rola": "Roślina okrywowa preferująca to samo słoneczne stanowisko."
+      },
+      {
+        "nazwa": "Oliwnik",
+        "rola": "Inny gatunek azotolubny, wzmacniający glebę."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór owoców metodą mrożenia",
-        "miesiace": [9, 10, 11],
+        "miesiace": [
+          9,
+          10,
+          11
+        ],
         "opis": "Odcinanie całych gałązek z owocami, zamrażanie ich, a następnie 'otrzepywanie' zamrożonych owoców (zapobiega to ich miażdżeniu).",
         "faza_ksiezyca": "Księżyc ubywający",
         "pora_dnia": "Poranek",
@@ -111,20 +117,28 @@
       },
       {
         "czynnosc": "Sadzenie (pamiętaj o proporcjach)",
-        "miesiace": [3, 10, 11],
+        "miesiace": [
+          3,
+          10,
+          11
+        ],
         "opis": "Sadzenie rokitnika: na 5-6 roślin żeńskich należy posadzić 1 roślinę męską (dla zapylenia).",
         "faza_ksiezyca": "Nów (faza korzenia)",
         "wplyw_ksiezyca": "Przyspiesza budowę silnego systemu korzeniowego."
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Olej Rokitnikowy (Domowy macerat)",
       "typ": "medyczne",
       "metoda": "maceracja olejowa",
-      "tagi": ["skóra", "wrzody", "regeneracja", "omega-7"],
+      "tagi": [
+        "skóra",
+        "wrzody",
+        "regeneracja",
+        "omega-7"
+      ],
       "skladniki": [
         "Suszone i zmielone wytłoki z owoców rokitnika (skórki i nasiona): 1 szklanka",
         "Olej słonecznikowy lub oliwa: 2 szklanki"
@@ -139,17 +153,26 @@
       "uwagi": "Olej barwi skórę i ubrania – zachować ostrożność!",
       "roslina": "Rokitnik zwyczajny",
       "slug": "rokitnik_zwyczajny",
-      "cechy": ["ciemnopomarańczowy kolor", "zapach owocowy"],
-      "wlasciwosci": ["regenerująca", "gojąca"]
+      "cechy": [
+        "ciemnopomarańczowy kolor",
+        "zapach owocowy"
+      ],
+      "wlasciwosci": [
+        "regenerująca",
+        "gojąca"
+      ]
     }
   ],
-
   "przepisy_kulinarne": [
     {
       "tytul": "Surowy Sok Rokitnikowy (Bomba Witaminowa)",
       "typ": "kulinarne",
       "metoda": "wyciskanie na zimno",
-      "tagi": ["witaminy", "odporność", "izotonik"],
+      "tagi": [
+        "witaminy",
+        "odporność",
+        "izotonik"
+      ],
       "skladniki": [
         "Świeże owoce rokitnika: 1 kg",
         "Miód: 500g (opcjonalnie)"
@@ -164,5 +187,63 @@
       "slug": "rokitnik_zwyczajny"
     }
   ],
-  "ostrzezenia": "Ze względu na wysoką zawartość kwasów owocowych, rokitnik nie jest zalecany osobom z ostrym zapaleniem wątroby, trzustki oraz przy kamicy żółciowej."
+  "ostrzezenia": "Ze względu na wysoką zawartość kwasów owocowych, rokitnik nie jest zalecany osobom z ostrym zapaleniem wątroby, trzustki oraz przy kamicy żółciowej.",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Hippophae_%28Novogrudinina%29.jpg/960px-Hippophae_%28Novogrudinina%29.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Coralloid_root_nodules._Sea_buckthorn._Merthyr_Mawr_%2C_October_1968._NB._Was_white_when_dug_up_%2831021734145%29.jpg/960px-Coralloid_root_nodules._Sea_buckthorn._Merthyr_Mawr_%2C_October_1968._NB._Was_white_when_dug_up_%2831021734145%29.jpg",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Hippophae_rhamnoides%2C_Sanddorn%2CTrichom%2C_pol._Licht.jpg/960px-Hippophae_rhamnoides%2C_Sanddorn%2CTrichom%2C_pol._Licht.jpg",
+    "Owoce": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Sanddorn_%2815529705682%29.jpg/960px-Sanddorn_%2815529705682%29.jpg",
+    "Nasiona": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Hippophae_rhamnoides_kz07.jpg/960px-Hippophae_rhamnoides_kz07.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Hippophae_%28Novogrudinina%29.jpg/960px-Hippophae_%28Novogrudinina%29.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Hippophae_(Novogrudinina).jpg",
+        "autor": "Виталий Уайлд",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Coralloid_root_nodules._Sea_buckthorn._Merthyr_Mawr_%2C_October_1968._NB._Was_white_when_dug_up_%2831021734145%29.jpg/960px-Coralloid_root_nodules._Sea_buckthorn._Merthyr_Mawr_%2C_October_1968._NB._Was_white_when_dug_up_%2831021734145%29.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Coralloid_root_nodules._Sea_buckthorn._Merthyr_Mawr_,_October_1968._NB._Was_white_when_dug_up_(31021734145).jpg",
+        "autor": "Dr Mary Gillham Archive Project",
+        "licencja": "CC BY 2.0",
+        "licencja_url": "https://creativecommons.org/licenses/by/2.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Hippophae_rhamnoides%2C_Sanddorn%2CTrichom%2C_pol._Licht.jpg/960px-Hippophae_rhamnoides%2C_Sanddorn%2CTrichom%2C_pol._Licht.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Hippophae_rhamnoides,_Sanddorn,Trichom,_pol._Licht.jpg",
+        "autor": "Heiko4",
+        "licencja": "CC BY 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Sanddorn_%2815529705682%29.jpg/960px-Sanddorn_%2815529705682%29.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Sanddorn_(15529705682).jpg",
+        "autor": "Rolf Dietrich Brecher from Germany",
+        "licencja": "CC BY-SA 2.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Nasiona",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Hippophae_rhamnoides_kz07.jpg/960px-Hippophae_rhamnoides_kz07.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Hippophae_rhamnoides_kz07.jpg",
+        "autor": "Krzysztof Ziarnek, Kenraiz",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

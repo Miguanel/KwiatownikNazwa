@@ -4,7 +4,6 @@
   "nazwa_lat": "Populus tremula",
   "rodzina": "Wierzbowate (Salicaceae)",
   "opis": "Szybkorosnące drzewo o smukłej sylwetce, dorastające do 20–30 metrów. Charakterystyczną cechą osiki jest jej kora – u młodych drzew gładka, jasnozielonkawa lub kremowa, z wiekiem ciemniejąca i pękająca u nasady. Liście osiki są niemal okrągłe, ząbkowane, osadzone na bardzo długich i bocznie spłaszczonych ogonkach, co powoduje ich charakterystyczne drżenie nawet przy bezwietrznej pogodzie.",
-
   "profil_energetyczny": {
     "smak": "Gorzki, ściągający",
     "termika": "Zimna",
@@ -12,7 +11,6 @@
     "zywiol": "Powietrze",
     "opis": "Osika to 'chłodnica' organizmu. Jej energia wygasza ogień gorączki i uśmierza ból wynikający ze stanów zapalnych. Jako drzewo 'powietrzne', pomaga rozproszyć zastoje mentalne i lęki, przynosząc ulgę w stanach nadmiernego napięcia emocjonalnego."
   },
-
   "wymagania": {
     "stanowisko": "Pełne słońce. Jest gatunkiem wybitnie światłożądnym; w cieniu innych drzew szybko zamiera.",
     "gleba": "Mało wymagająca. Rośnie zarówno na glebach piaszczystych, jak i gliniastych, choć najlepiej czuje się na podłożu świeżym i żyznym.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 2 (Ekstremalnie odporna na mrozy, występuje aż po tundrę).",
     "woda": "Umiarkowane zapotrzebowanie; dobrze znosi okresowe susze, ale najlepiej rośnie przy stałej wilgotności."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Liście drżące na długich, spłaszczonych ogonkach.",
@@ -39,7 +36,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "kora": {
       "nazwa_surowca": "Cortex Populi tremulae",
@@ -59,16 +55,13 @@
       "czas_zbioru": "Luty - Marzec (przed pęknięciem)."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Gorączka, przeziębienie, reumatyzm, artretyzm, zapalenie pęcherza, przerost prostaty (pomocniczo), nerwobóle.",
     "kulinarne": "BRAK. Kora jest bardzo gorzka, choć jadalna w sytuacjach survivalowych (po wysuszeniu i zmieleniu jako dodatek do mąki).",
     "ogrodowe": "Szybkie tworzenie osłon przeciwwietrznych i rekultywacja nieużytków. Jesienią liście przebarwiają się na piękny, złoty kolor.",
     "rzemieslnicze": "Drewno osikowe jest lekkie i miękkie. To najlepszy surowiec do produkcji zapałek, patyczków do lodów oraz gontów (nie pęka pod wpływem słońca)."
   },
-
   "interakcje": "Nasila działanie niesteroidowych leków przeciwzapalnych (NLPZ). Może zwiększać ryzyko krwawień przy stosowaniu leków przeciwzakrzepowych.",
-
   "ciekawostki": [
     "Osika tworzy systemy klonalne – całe gaje mogą być jednym organizmem połączonym wspólnym systemem korzeniowym. Najstarszy taki system (Pando w USA) ma ok. 80 000 lat.",
     "W medycynie ludowej wierzono, że osika 'odciąga ból', dlatego przykładano kawałki drewna do bolących miejsc.",
@@ -76,7 +69,6 @@
     "Z pączków osiki pszczoły zbierają substancje żywiczne, które służą im do produkcji propolisu.",
     "W chrześcijańskiej legendzie osika drży ze wstydu, bo z jej drewna rzekomo wykonano krzyż Chrystusa (choć botanicznie jest to mało prawdopodobne w tamtym regionie)."
   ],
-
   "permakultura": {
     "funkcje": [
       "Producent ogromnej ilości biomasy (szybki wzrost).",
@@ -85,28 +77,40 @@
       "Służy jako 'drzewo-niania' dla wolniej rosnących gatunków dąbrowy."
     ],
     "gildie": [
-      { "nazwa": "Świerk pospolity", "rola": "Osika osłania młode świerki przed słońcem i mrozem." },
-      { "nazwa": "Kozlarz czerwony", "rola": "Grzyb ten żyje w ścisłej symbiozie mikoryzowej z osiką." }
+      {
+        "nazwa": "Świerk pospolity",
+        "rola": "Osika osłania młode świerki przed słońcem i mrozem."
+      },
+      {
+        "nazwa": "Kozlarz czerwony",
+        "rola": "Grzyb ten żyje w ścisłej symbiozie mikoryzowej z osiką."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór pączków",
-        "miesiace": [2, 3],
+        "miesiace": [
+          2,
+          3
+        ],
         "opis": "Zbieranie lepkich, pachnących pączków z gałęzi powalonych przez wiatr.",
         "faza_ksiezyca": "Księżyc przybywający"
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Odwar z kory 'Leśna Aspiryna'",
       "typ": "medyczne",
       "metoda": "odwar",
-      "tagi": ["gorączka", "ból", "stawy", "przeziębienie"],
+      "tagi": [
+        "gorączka",
+        "ból",
+        "stawy",
+        "przeziębienie"
+      ],
       "skladniki": [
         "Suszona kora osiki: 1 łyżka stołowa",
         "Woda: 250 ml"
@@ -121,5 +125,63 @@
       "slug": "topola_osika"
     }
   ],
-  "ostrzezenia": "Nie stosować u osób uczulonych na salicylany (aspirynę). Nie podawać dzieciom poniżej 12 roku życia (ryzyko zespołu Reye'a, podobnie jak przy aspirynie)."
+  "ostrzezenia": "Nie stosować u osób uczulonych na salicylany (aspirynę). Nie podawać dzieciom poniżej 12 roku życia (ryzyko zespołu Reye'a, podobnie jak przy aspirynie).",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Ospeholt_i_Hurdal.JPG/960px-Ospeholt_i_Hurdal.JPG",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Arctic-Norway-aspen-Ofotfjord.jpg/960px-Arctic-Norway-aspen-Ofotfjord.jpg",
+    "Liście": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Aspen-leaves.jpg",
+    "Nasiona": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Aspfr%C3%B6n_-_Aspen_seeds_-_2025.jpg/960px-Aspfr%C3%B6n_-_Aspen_seeds_-_2025.jpg",
+    "Kora": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Populus_tremula_005.jpg/960px-Populus_tremula_005.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Ospeholt_i_Hurdal.JPG/960px-Ospeholt_i_Hurdal.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Ospeholt_i_Hurdal.JPG",
+        "autor": "Øyvind Holmstad",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Arctic-Norway-aspen-Ofotfjord.jpg/960px-Arctic-Norway-aspen-Ofotfjord.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Arctic-Norway-aspen-Ofotfjord.jpg",
+        "autor": "Orcaborealis",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Aspen-leaves.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Aspen-leaves.jpg",
+        "autor": "MPF at English Wikipedia",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Nasiona",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Aspfr%C3%B6n_-_Aspen_seeds_-_2025.jpg/960px-Aspfr%C3%B6n_-_Aspen_seeds_-_2025.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Aspfr%C3%B6n_-_Aspen_seeds_-_2025.jpg",
+        "autor": "Foto: Jonn Leffmann",
+        "licencja": "CC BY 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kora",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Populus_tremula_005.jpg/960px-Populus_tremula_005.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Populus_tremula_005.jpg",
+        "autor": "Willow",
+        "licencja": "CC BY 2.5",
+        "licencja_url": "https://creativecommons.org/licenses/by/2.5",
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

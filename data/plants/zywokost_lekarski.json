@@ -4,7 +4,6 @@
   "nazwa_lat": "Symphytum officinale",
   "rodzina": "Ogórecznikowate (Boraginaceae)",
   "opis": "Wieloletnia, potężna bylina o grubym, mięsistym, czarnym korzeniu (wewnątrz białym). Cała roślina jest szorstko owłosiona. Żywokost to roślina terenów podmokłych, brzegów rzek i rowów. Słynie z błyskawicznego tempa wzrostu i produkcji ogromnej ilości biomasy. Od starożytności stosowany jako 'klej na złamania' – dzięki ogromnej zawartości alantoiny drastycznie przyspiesza podziały komórkowe i regenerację tkanek.",
-
   "profil_energetyczny": {
     "smak": "Słodki, śluzowaty, lekko cierpki",
     "termika": "Zimna",
@@ -12,7 +11,6 @@
     "zywiol": "Ziemia i Woda",
     "opis": "Żywokost to uosobienie energii 'spajającej'. Jego śluzowa natura 'smaruje' stawy, chłodzi stany zapalne kości i ścięgien oraz dosłownie 'zalewa' rany substancjami budulcowymi. Działa jak biologiczny cement dla osłabionej struktury organizmu."
   },
-
   "wymagania": {
     "stanowisko": "Półcień do słońca. Na stanowiskach słonecznych wymaga stale wilgotnego podłoża.",
     "gleba": "Ciężka, gliniasta, bardzo żyzna, zasobna w azot i wilgoć. Kocha tereny zalewowe.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 4 (Całkowicie mrozoodporny, zimuje w formie korzenia).",
     "woda": "Bardzo wysokie zapotrzebowanie; nie znosi długotrwałej suszy."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Liście wielkie, lancetowate, bardzo szorstkie (pokryte kłującymi włoskami).",
@@ -39,7 +36,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "korzen": {
       "nazwa_surowca": "Radix Symphyti",
@@ -62,23 +58,19 @@
       "czas_zbioru": "Maj - Sierpień."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Zewnętrznie: złamania kości, pęknięcia kostne, zwichnięcia, skręcenia stawów, bóle kręgosłupa, zapalenie ścięgien, odmrożenia, oparzenia, trudno gojące się rany (bez zakażenia).",
     "kulinarne": "Dawniej młode liście smażono w cieście, jednak obecnie odradza się spożycie ze względu na ryzyko kumulacji toksycznych alkaloidów w wątrobie.",
     "ogrodowe": "Król nawozów naturalnych. Gnojówka z żywokostu to 'bomba potasowa' idealna dla pomidorów i papryk.",
     "rzemieslnicze": "Śluzy z korzenia były dawniej używane jako naturalny klej introligatorski i szewski."
   },
-
   "interakcje": "Nie stosować wewnętrznie przy jednoczesnym przyjmowaniu leków hepatotoksycznych (obciążających wątrobę). Zewnętrznie - brak istotnych interakcji.",
-
   "ciekawostki": [
     "W medycynie ludowej żywokost nazywano 'kawalerskim korzeniem' – wierzono, że kąpiel w żywokoscie potrafi 'zrosnąć' utracone dziewictwo.",
     "Alantoina z żywokostu jest tak skuteczna, że nie wolno jej stosować na rany brudne lub zakażone, ponieważ skóra zrośnie się tak szybko, że uwięzi ropę i bakterie wewnątrz.",
     "Korzeń żywokostu jest tak twardy i czarny z zewnątrz, że przypomina węgiel, ale po obraniu ukazuje białe wnętrze, co w 'doktrynie podpisów' oznaczało leczenie kości pod skórą.",
     "W Anglii żywokost nazywany jest 'Knitbone' (dziergający kości), co idealnie oddaje jego funkcję."
   ],
-
   "permakultura": {
     "funkcje": [
       "Dynamiczny akumulator potasu (pobiera go z głębokości nawet 2 metrów).",
@@ -87,16 +79,24 @@
       "Płynny nawóz o wysokiej zawartości potasu i azotu."
     ],
     "gildie": [
-      { "nazwa": "Drzewa owocowe (Jabłoń, Grusza)", "rola": "Posadzony pod drzewem, żywokost działa jak pompa minerałów, dostarczając potas do wierzchnich warstw gleby." },
-      { "nazwa": "Pomidory", "rola": "Gnojówka z żywokostu to najlepsza odżywka na zawiązywanie owoców." }
+      {
+        "nazwa": "Drzewa owocowe (Jabłoń, Grusza)",
+        "rola": "Posadzony pod drzewem, żywokost działa jak pompa minerałów, dostarczając potas do wierzchnich warstw gleby."
+      },
+      {
+        "nazwa": "Pomidory",
+        "rola": "Gnojówka z żywokostu to najlepsza odżywka na zawiązywanie owoców."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Wykopywanie korzeni",
-        "miesiace": [10, 11],
+        "miesiace": [
+          10,
+          11
+        ],
         "opis": "Pozyskiwanie grubych korzeni palowych. Uwaga: nawet mały kawałek zostawiony w ziemi odrośnie jako nowa roślina.",
         "faza_ksiezyca": "Nów (faza korzenia)",
         "pora_dnia": "Wieczór",
@@ -104,19 +104,27 @@
       },
       {
         "czynnosc": "Cięcie na gnojówkę",
-        "miesiace": [5, 6, 7],
+        "miesiace": [
+          5,
+          6,
+          7
+        ],
         "opis": "Cięcie liści tuż przed kwitnieniem, kiedy mają najwięcej azotu i potasu.",
         "faza_ksiezyca": "Księżyc przybywający"
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Maść 'Szyj-kość' na stawy i złamania",
       "typ": "medyczne",
       "metoda": "ekstrakcja tłuszczowa",
-      "tagi": ["koście", "stawy", "kontuzje", "regeneracja"],
+      "tagi": [
+        "koście",
+        "stawy",
+        "kontuzje",
+        "regeneracja"
+      ],
       "skladniki": [
         "Świeży korzeń żywokostu (starty): 100g",
         "Smalec gęsi lub olej kokosowy: 200g",
@@ -134,14 +142,24 @@
       "uwagi": "Maść ma niesamowitą moc przenikania do głębszych warstw tkanki łącznej.",
       "roslina": "Żywokost lekarski",
       "slug": "zywokost_lekarski",
-      "cechy": ["beżowy kolor", "śluzowata konsystencja"],
-      "wlasciwosci": ["regenerująca", "przeciwzapalna"]
+      "cechy": [
+        "beżowy kolor",
+        "śluzowata konsystencja"
+      ],
+      "wlasciwosci": [
+        "regenerująca",
+        "przeciwzapalna"
+      ]
     },
     {
       "tytul": "Okład z liści na stłuczenia",
       "typ": "medyczne",
       "metoda": "świeża miazga",
-      "tagi": ["stłuczenia", "opuchlizna", "pierwsza pomoc"],
+      "tagi": [
+        "stłuczenia",
+        "opuchlizna",
+        "pierwsza pomoc"
+      ],
       "skladniki": [
         "Świeże liście żywokostu"
       ],
@@ -153,13 +171,17 @@
       "slug": "zywokost_lekarski"
     }
   ],
-
   "przepisy_ogrodnicze": [
     {
       "tytul": "Gnojówka żywokostowa (Potasowy Eliksir)",
       "typ": "ogrodowe",
       "metoda": "fermentacja",
-      "tagi": ["nawóz", "permakultura", "potas", "pomidory"],
+      "tagi": [
+        "nawóz",
+        "permakultura",
+        "potas",
+        "pomidory"
+      ],
       "skladniki": [
         "Świeże liście i pędy żywokostu: 1 kg",
         "Woda (najlepiej deszczówka): 10 l"
@@ -175,5 +197,63 @@
       "slug": "zywokost_lekarski"
     }
   ],
-  "ostrzezenia": "STOSOWAĆ WYŁĄCZNIE ZEWNĘTRZNIE. Alkaloidy pirolizydynowe mogą uszkodzić wątrobę przy spożyciu. Nie stosować na rany głębokie i zakażone (ryzyko uwięzienia infekcji pod szybko zrastającą się tkanką). Nie stosować u kobiet w ciąży i dzieci."
+  "ostrzezenia": "STOSOWAĆ WYŁĄCZNIE ZEWNĘTRZNIE. Alkaloidy pirolizydynowe mogą uszkodzić wątrobę przy spożyciu. Nie stosować na rany głębokie i zakażone (ryzyko uwięzienia infekcji pod szybko zrastającą się tkanką). Nie stosować u kobiet w ciąży i dzieci.",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Symphytum_officinale_01.jpg/960px-Symphytum_officinale_01.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Symphytum_officinale_%28s._str.%29_sl2.jpg/960px-Symphytum_officinale_%28s._str.%29_sl2.jpg",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Beinwell%2C_Symphytum_officinale_%2803%29.jpg/960px-Beinwell%2C_Symphytum_officinale_%2803%29.jpg",
+    "Owoce": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Compilation_of_seeds_with_elaiosomes_8.jpg/960px-Compilation_of_seeds_with_elaiosomes_8.jpg",
+    "Rycina": "https://upload.wikimedia.org/wikipedia/commons/f/f2/86_Symphytum_officinale.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Symphytum_officinale_01.jpg/960px-Symphytum_officinale_01.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Symphytum_officinale_01.jpg",
+        "autor": "Agnieszka Kwiecień ( Nova )",
+        "licencja": "CC BY 2.5",
+        "licencja_url": "https://creativecommons.org/licenses/by/2.5",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Symphytum_officinale_%28s._str.%29_sl2.jpg/960px-Symphytum_officinale_%28s._str.%29_sl2.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Symphytum_officinale_(s._str.)_sl2.jpg",
+        "autor": "Stefan.lefnaer",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Beinwell%2C_Symphytum_officinale_%2803%29.jpg/960px-Beinwell%2C_Symphytum_officinale_%2803%29.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Beinwell,_Symphytum_officinale_(03).jpg",
+        "autor": "Plenuska",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Compilation_of_seeds_with_elaiosomes_8.jpg/960px-Compilation_of_seeds_with_elaiosomes_8.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Compilation_of_seeds_with_elaiosomes_8.jpg",
+        "autor": "Hans Stuessi",
+        "licencja": "CC BY 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Rycina",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/86_Symphytum_officinale.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:86_Symphytum_officinale.jpg",
+        "autor": "Carl Axel Magnus Lindman",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

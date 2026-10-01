@@ -4,7 +4,6 @@
   "nazwa_lat": "Galium aparine",
   "rodzina": "Marzanowate (Rubiaceae)",
   "opis": "Jednoroczna roślina o płożącej lub wspinającej się łodydze, dorastająca do 1,5 m długości. Jej najbardziej charakterystyczną cechą są haczykowate szczecinki, dzięki którym 'czepia się' ubrań, sierści zwierząt i sąsiednich roślin. Przytulia jest bliską krewną kawowca, co zdradza zapach jej palonych nasion. Jest rośliną pospolitą, często traktowaną jako uciążliwy chwast, mimo swojej potężnej mocy uzdrawiającej układ chłonny.",
-
   "profil_energetyczny": {
     "smak": "Gorzki, lekko słony, chłodny",
     "termika": "Zimna",
@@ -12,7 +11,6 @@
     "zywiol": "Woda i Powietrze",
     "opis": "Przytulia to 'odkurzacz' dla płynów ustrojowych. Jej energia rozbija zastoje limfy (zgrubienia, obrzęki) i chłodzi 'gorącą krew', co objawia się poprawą stanu cery. Działa jak wewnętrzny filtr, który przywraca klarowność i lekkość w ciele."
   },
-
   "wymagania": {
     "stanowisko": "Półcień do słońca. Lubi miejsca wilgotne, ale jest niezwykle adaptacyjna.",
     "gleba": "Żyzna, próchniczna, bardzo bogata w azot. Często spotykana w ogrodach, zaroślach i na skrajach lasów.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 4 (Całkowicie mrozoodporna jako nasiona).",
     "woda": "Wysokie zapotrzebowanie; w czasie suszy szybko drewnieje i traci soczystość."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Łodyga czworokątna, z haczykowatymi włoskami na krawędziach, które 'czepiają się' dotyku.",
@@ -39,7 +36,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "ziele": {
       "nazwa_surowca": "Herba Galii aparinis",
@@ -63,16 +59,13 @@
       "czas_zbioru": "Lipiec - Sierpień."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Powiększone węzły chłonne, obrzęki (limfatyczne i nerkowe), zapalenie migdałków, cysty piersi, trądzik, łuszczyca, egzemy, kamica nerkowa, stany lękowe (pomocniczo).",
     "kulinarne": "Młode pędy (marzec-kwiecień) po ugotowaniu smakują jak szpinak. Prażone nasiona to 'kawa z przytulii'. Świeży sok dodawany do zielonych smoothie.",
     "ogrodowe": "Wskaźnik wysokiej zawartości azotu w glebie. Wyciągi z przytulii hamują wzrost niektórych konkurencyjnych chwastów.",
     "rzemieslnicze": "Dawniej używana do wyrobu sit (ze względu na czepne właściwości) oraz jako podpuszczka do ścinania mleka przy wyrobie serów (stąd nazwa 'aparine' od gr. 'apairo' - chwytać/ścinać)."
   },
-
   "interakcje": "Może potęgować działanie leków moczopędnych. Brak innych znaczących interakcji.",
-
   "ciekawostki": [
     "Wraz z łopianem była inspiracją dla twórcy zapięcia Velcro (rzepy).",
     "W medycynie ludowej nazywana 'gęsipępkiem', ponieważ gęsi uwielbiają ją jeść i instynktownie szukają jej dla poprawy trawienia.",
@@ -80,7 +73,6 @@
     "Historycznie używano jej do wypychania materacy – haczykowate włoski sprawiały, że ziele nie przesuwało się wewnątrz, tworząc jednolitą, sprężystą warstwę (stąd nazwa 'Bedstraw').",
     "Przytulia zawiera enzymy zdolne do ścinania mleka, co czyni ją jednym z niewielu roślinnych źródeł podpuszczki."
   ],
-
   "permakultura": {
     "funkcje": [
       "Dynamiczny akumulator azotu i potasu.",
@@ -89,16 +81,24 @@
       "Wskaźnik żyzności i wilgotności siedliska."
     ],
     "gildie": [
-      { "nazwa": "Pokrzywa zwyczajna", "rola": "Tworzą razem potężny zespół nitrofilny na obrzeżach ogrodu." },
-      { "nazwa": "Bez czarny", "rola": "Przytulia chętnie wspina się po dolnych gałęziach bzu." }
+      {
+        "nazwa": "Pokrzywa zwyczajna",
+        "rola": "Tworzą razem potężny zespół nitrofilny na obrzeżach ogrodu."
+      },
+      {
+        "nazwa": "Bez czarny",
+        "rola": "Przytulia chętnie wspina się po dolnych gałęziach bzu."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór na sok i macerat",
-        "miesiace": [4, 5],
+        "miesiace": [
+          4,
+          5
+        ],
         "opis": "Zbiór całych, soczystych pędów. Najlepiej rano, gdy roślina jest pełna turgoru.",
         "faza_ksiezyca": "Księżyc przybywający (najwięcej soków)",
         "pora_dnia": "Poranek",
@@ -106,13 +106,17 @@
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Macerat 'Limfatyczny Świt' (Najskuteczniejsza forma)",
       "typ": "medyczne",
       "metoda": "maceracja na zimno",
-      "tagi": ["limfa", "detoks", "obrzęki", "cera"],
+      "tagi": [
+        "limfa",
+        "detoks",
+        "obrzęki",
+        "cera"
+      ],
       "skladniki": [
         "Świeże ziele przytulii: 1 duża garść",
         "Woda filtrowana: 1 litr"
@@ -126,14 +130,24 @@
       "uwagi": "To najłagodniejszy i najskuteczniejszy sposób na poruszenie zastojów limfatycznych.",
       "roslina": "Przytulia czepna",
       "slug": "przytulia_czepna",
-      "cechy": ["zielonkawy kolor", "świeży, trawiasty zapach"],
-      "wlasciwosci": ["drenująca", "chłodząca"]
+      "cechy": [
+        "zielonkawy kolor",
+        "świeży, trawiasty zapach"
+      ],
+      "wlasciwosci": [
+        "drenująca",
+        "chłodząca"
+      ]
     },
     {
       "tytul": "Okład na 'Gorącą Skórę' (Trądzik i egzema)",
       "typ": "medyczne",
       "metoda": "świeża miazga",
-      "tagi": ["trądzik", "skóra", "zapalenie"],
+      "tagi": [
+        "trądzik",
+        "skóra",
+        "zapalenie"
+      ],
       "skladniki": [
         "Świeże ziele przytulii"
       ],
@@ -146,13 +160,16 @@
       "slug": "przytulia_czepna"
     }
   ],
-
   "przepisy_kulinarne": [
     {
       "tytul": "Kawa z Przytulii (Bez kofeiny)",
       "typ": "kulinarne",
       "metoda": "prażenie",
-      "tagi": ["kawa", "nasiona", "dzika kuchnia"],
+      "tagi": [
+        "kawa",
+        "nasiona",
+        "dzika kuchnia"
+      ],
       "skladniki": [
         "Dojrzałe nasiona przytulii (rzepy)"
       ],
@@ -166,5 +183,63 @@
       "slug": "przytulia_czepna"
     }
   ],
-  "ostrzezenia": "Przytulia jest bardzo bezpieczna, jednak jej silne działanie moczopędne może u niektórych osób powodować przejściową suchość w ustach. Zawsze pij dodatkową szklankę wody podczas kuracji."
+  "ostrzezenia": "Przytulia jest bardzo bezpieczna, jednak jej silne działanie moczopędne może u niektórych osób powodować przejściową suchość w ustach. Zawsze pij dodatkową szklankę wody podczas kuracji.",
+  "url": {
+    "Pokrój": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Galium_aparine_b.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Flowers_February_2008-4.jpg/960px-Flowers_February_2008-4.jpg",
+    "Liście": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Galium_aparine1_ies.jpg",
+    "Owoce": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Galium_aparine2_W.jpg/960px-Galium_aparine2_W.jpg",
+    "Rycina": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Illustration_Galium_aparine0.jpg/960px-Illustration_Galium_aparine0.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Galium_aparine_b.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Galium_aparine_b.jpg",
+        "autor": "nieznany autor",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Flowers_February_2008-4.jpg/960px-Flowers_February_2008-4.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Flowers_February_2008-4.jpg",
+        "autor": "Alvesgaspar",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Galium_aparine1_ies.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Galium_aparine1_ies.jpg",
+        "autor": "Frank Vincentz",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Galium_aparine2_W.jpg/960px-Galium_aparine2_W.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Galium_aparine2_W.jpg",
+        "autor": "Fornax",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Rycina",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Illustration_Galium_aparine0.jpg/960px-Illustration_Galium_aparine0.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Illustration_Galium_aparine0.jpg",
+        "autor": "Prof. Dr. Thomé",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

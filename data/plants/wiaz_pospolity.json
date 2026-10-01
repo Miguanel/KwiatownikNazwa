@@ -4,7 +4,6 @@
   "nazwa_lat": "Ulmus minor",
   "rodzina": "Wiązowate (Ulmaceae)",
   "opis": "Długowieczne drzewo liściaste dorastające do 30 m wysokości, o gęstej, kopulastej koronie. Charakterystyczne dla wiązu są jego liście – szorstkie i wyraźnie asymetryczne u nasady. Kora jest ciemnobrunatna, głęboko spękana, czasem z naroślami korkowymi na młodszych gałęziach. Wiąz to drzewo dolin rzecznych, które dzięki swojej potężnej strukturze i giętkości przez wieki dostarczało drewna do zadań specjalnych.",
-
   "profil_energetyczny": {
     "smak": "Gorzki, cierpki, śluzowaty",
     "termika": "Chłodna",
@@ -12,7 +11,6 @@
     "zywiol": "Ziemia i Woda",
     "opis": "Wiąz to 'uszczelniacz tkanek'. Jego energia działa stabilizująco na błony śluzowe i skórę. Chłodzi stany zapalne układu pokarmowego i 'ściąga' rozproszone soki ustrojowe, przywracając ciału integralność strukturalną."
   },
-
   "wymagania": {
     "stanowisko": "Słoneczne do półcienistego. Kocha doliny rzeczne, ale dobrze znosi też warunki miejskie (odporny na zanieczyszczenia).",
     "gleba": "Żyzna, głęboka, wilgotna, próchniczna, najlepiej madowa lub gliniasta. Nienawidzi skrajnych piasków.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 5 (Całkowicie mrozoodporny, choć wrażliwy na gwałtowne skoki temperatur wiosną).",
     "woda": "Wysokie zapotrzebowanie; wiąz jest naturalnym elementem lasów łęgowych, więc potrzebuje stałego dostępu do wilgoci gruntowej."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Liście u nasady są wyraźnie ASYMETRYCZNE (jedna połowa blaszki zaczyna się niżej niż druga).",
@@ -39,7 +36,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "kora_wewnetrzna": {
       "nazwa_surowca": "Cortex Ulmi",
@@ -60,16 +56,13 @@
       "czas_zbioru": "Czerwiec."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Chroniczne biegunki, nieżyty żołądka i jelit, hemoroidy, stany zapalne jamy ustnej. Zewnętrznie: egzemy, oparzenia, trudno gojące się rany, trądzik.",
     "kulinarne": "Młode, zielone owoce (samary) są jadalne na surowo – mają delikatnie orzechowy smak i są świetnym dodatkiem do sałatek wiosennych.",
     "ogrodowe": "Wspaniałe drzewo cieniujące, dawniej masowo sadzone w parkach i alejach. Dzisiaj wymaga monitorowania pod kątem chorób grzybowych.",
     "rzemieslnicze": "Drewno wiązowe jest ekstremalnie trwałe, nie pęka i jest odporne na gnicie w wodzie. Używane do budowy łodzi, kół wozów, łuków oraz w meblarstwie artystycznym."
   },
-
   "interakcje": "Ze względu na dużą ilość śluzów, wyciągi z wiązu mogą opóźniać wchłanianie leków syntetycznych – zachować odstęp 2h.",
-
   "ciekawostki": [
     "Wiele fundamentów starych budynków w Amsterdamie i Wenecji opiera się na palach z drewna wiązowego, które pod wodą kamienieje zamiast gnić.",
     "Termin 'asymetryczna nasada liścia' to najprostszy sposób, by zaimponować każdemu na spacerze w lesie – to unikalny podpis rodziny wiązowatych.",
@@ -77,7 +70,6 @@
     "Choroba holenderska wiązów, która zniszczyła miliony drzew, jest przenoszona przez małego chrząszcza – ogłodka.",
     "Wiązowe drewno było preferowanym surowcem do budowy długich łuków (longbows) przed upowszechnieniem się cisu."
   ],
-
   "permakultura": {
     "funkcje": [
       "Producent biomasy bogatej w wapń.",
@@ -86,35 +78,53 @@
       "Źródło liści na wysokobiałkową paszę dla zwierząt."
     ],
     "gildie": [
-      { "nazwa": "Olcha czarna", "rola": "Tworzą razem naturalne łęgi wiązowo-jesionowe." },
-      { "nazwa": "Jesion wyniosły", "rola": "Najczęstszy towarzysz w siedliskach wilgotnych." },
-      { "nazwa": "Chmiel zwyczajny", "rola": "Chmiel chętnie wspina się po szorstkich pniach wiązu." }
+      {
+        "nazwa": "Olcha czarna",
+        "rola": "Tworzą razem naturalne łęgi wiązowo-jesionowe."
+      },
+      {
+        "nazwa": "Jesion wyniosły",
+        "rola": "Najczęstszy towarzysz w siedliskach wilgotnych."
+      },
+      {
+        "nazwa": "Chmiel zwyczajny",
+        "rola": "Chmiel chętnie wspina się po szorstkich pniach wiązu."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór owoców (samar) do jedzenia",
-        "miesiace": [4, 5],
+        "miesiace": [
+          4,
+          5
+        ],
         "opis": "Zrywanie soczystych, zielonych owoców, zanim zaczną drewnieć.",
         "faza_ksiezyca": "Księżyc przybywający"
       },
       {
         "czynnosc": "Pozyskiwanie kory",
-        "miesiace": [3, 4],
+        "miesiace": [
+          3,
+          4
+        ],
         "opis": "Zdejmij korę z gałęzi pozyskanych podczas cięć pielęgnacyjnych.",
         "faza_ksiezyca": "Nów (faza kory/korzenia)"
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Odwar z kory 'Bariera Żołądkowa'",
       "typ": "medyczne",
       "metoda": "odwar",
-      "tagi": ["żołądek", "biegunka", "osłona", "jelita"],
+      "tagi": [
+        "żołądek",
+        "biegunka",
+        "osłona",
+        "jelita"
+      ],
       "skladniki": [
         "Rozdrobniona kora wiązu: 1 łyżka stołowa",
         "Woda: 300 ml"
@@ -128,9 +138,73 @@
       "uwagi": "Doskonały przy nadkwasocie i wrzodach żołądka.",
       "roslina": "Wiąz pospolity",
       "slug": "wiaz_pospolity",
-      "cechy": ["lekko czerwonawy kolor", "śluzowata tekstura"],
-      "wlasciwosci": ["osłonowa", "ściągająca"]
+      "cechy": [
+        "lekko czerwonawy kolor",
+        "śluzowata tekstura"
+      ],
+      "wlasciwosci": [
+        "osłonowa",
+        "ściągająca"
+      ]
     }
   ],
-  "ostrzezenia": "Zbiór kory z żywych drzew w lasach jest nielegalny. Pozyskuj surowiec tylko z drzew powalonych lub przeznaczonych do wycinki. Nie stosować długotrwale bez konsultacji z zielarzem."
+  "ostrzezenia": "Zbiór kory z żywych drzew w lasach jest nielegalny. Pozyskuj surowiec tylko z drzew powalonych lub przeznaczonych do wycinki. Nie stosować długotrwale bez konsultacji z zielarzem.",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Barjols_16_Villesequelande_elm_1.jpg/960px-Barjols_16_Villesequelande_elm_1.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Ulmus_minor_%28Feld-Ulme%29_IMG_35054.JPG/960px-Ulmus_minor_%28Feld-Ulme%29_IMG_35054.JPG",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Ulmus-minor-foliage-mosaic.JPG/960px-Ulmus-minor-foliage-mosaic.JPG",
+    "Owoce": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/20140409Ulmus_minor3.jpg/960px-20140409Ulmus_minor3.jpg",
+    "Kora": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/%D0%9F%D0%BE%D0%BB%D1%81%D0%BA%D0%B8_%D0%B1%D1%80%D1%8F%D1%81%D1%82_%E2%80%93_%D0%BA%D0%BE%D1%80%D0%B0_5.jpg/960px-%D0%9F%D0%BE%D0%BB%D1%81%D0%BA%D0%B8_%D0%B1%D1%80%D1%8F%D1%81%D1%82_%E2%80%93_%D0%BA%D0%BE%D1%80%D0%B0_5.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Barjols_16_Villesequelande_elm_1.jpg/960px-Barjols_16_Villesequelande_elm_1.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Barjols_16_Villesequelande_elm_1.jpg",
+        "autor": "Ptelea",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Ulmus_minor_%28Feld-Ulme%29_IMG_35054.JPG/960px-Ulmus_minor_%28Feld-Ulme%29_IMG_35054.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Ulmus_minor_(Feld-Ulme)_IMG_35054.JPG",
+        "autor": "HermannSchachner",
+        "licencja": "CC0",
+        "licencja_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Ulmus-minor-foliage-mosaic.JPG/960px-Ulmus-minor-foliage-mosaic.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Ulmus-minor-foliage-mosaic.JPG",
+        "autor": "Sten Porse",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/20140409Ulmus_minor3.jpg/960px-20140409Ulmus_minor3.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:20140409Ulmus_minor3.jpg",
+        "autor": "AnRo0002",
+        "licencja": "CC0",
+        "licencja_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kora",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/%D0%9F%D0%BE%D0%BB%D1%81%D0%BA%D0%B8_%D0%B1%D1%80%D1%8F%D1%81%D1%82_%E2%80%93_%D0%BA%D0%BE%D1%80%D0%B0_5.jpg/960px-%D0%9F%D0%BE%D0%BB%D1%81%D0%BA%D0%B8_%D0%B1%D1%80%D1%8F%D1%81%D1%82_%E2%80%93_%D0%BA%D0%BE%D1%80%D0%B0_5.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%BE%D0%BB%D1%81%D0%BA%D0%B8_%D0%B1%D1%80%D1%8F%D1%81%D1%82_%E2%80%93_%D0%BA%D0%BE%D1%80%D0%B0_5.jpg",
+        "autor": "Димитър Найденов / Dimìtar Nàydenov",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }
