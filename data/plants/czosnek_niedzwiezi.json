@@ -4,7 +4,6 @@
   "nazwa_lat": "Allium ursinum",
   "rodzina": "Amarylkowate (Amaryllidaceae) / dawniej czosnkowate",
   "opis": "Wieloletnia roślina cebulowa, będąca jednym z najcenniejszych wiosennych efemeroidów naszych lasów. Tworzy rozległe, intensywnie pachnące czosnkiem łany w żyznych lasach liściastych. Nazwa pochodzi od obserwacji, że jest to pierwsza roślina, którą zjadają niedźwiedzie po przebudzeniu z hibernacji, aby oczyścić przewód pokarmowy i krew. Jest potężnym naturalnym antybiotykiem, przewyższającym pod względem zawartości aktywnych związków siarki tradycyjny czosnek uprawny.",
-
   "profil_energetyczny": {
     "smak": "Ostry, piekący, lekko słodki",
     "termika": "Gorąca",
@@ -12,7 +11,6 @@
     "zywiol": "Ogień i Powietrze",
     "opis": "Potężnie porusza zastoje energii Qi i krwi. Rozgrzewa 'zimny' żołądek, usuwa pasożyty i toksyczne nagromadzenia. Jako roślina wiosenna, inicjuje procesy oczyszczania po okresie zimowej stagnacji."
   },
-
   "wymagania": {
     "stanowisko": "Półcień do cienia. Wymaga warunków leśnych – światła wczesną wiosną i głębokiego cienia latem, gdy drzewa wypuszczą liście.",
     "gleba": "Bardzo żyzna, próchniczna (typu mull), wilgotna, bogata w materię organiczną.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 4 (Całkowicie mrozoodporny).",
     "woda": "Wymaga dużej wilgotności w okresie wzrostu (marzec-maj). Latem cebule przechodzą w stan spoczynku i preferują umiarkowaną wilgotność."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Liście lancetowate, na długich ogonkach, wyrastające bezpośrednio z ziemi.",
@@ -43,7 +40,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "liscie": {
       "nazwa_surowca": "Folium Allii ursini",
@@ -67,23 +63,19 @@
       "czas_zbioru": "Wrzesień - Październik (tylko z upraw)."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Nadciśnienie tętnicze, miażdżyca (obniża cholesterol LDL), infekcje górnych dróg oddechowych, grzybice układu pokarmowego (Candida), pasożyty jelitowe, kuracje odtruwające po zimie.",
     "kulinarne": "Pesto z czosnku niedźwiedziego, masło ziołowe, dodatek do twarogu, zup i sałatek. Nie należy go długo gotować, by nie stracić związków siarki.",
     "ogrodowe": "Doskonała roślina do ogrodów leśnych (forest gardens) i pod korony drzew owocowych. Naturalny środek odstraszający niektóre szkodniki glebowe.",
     "rzemieslnicze": "Sok z czosnku niedźwiedziego był historycznie używany jako środek odkażający i konserwujący kleje naturalne."
   },
-
   "interakcje": "Może nasilać działanie leków przeciwzakrzepowych (aspiryna, warfaryna) oraz leków obniżających ciśnienie. Należy przerwać stosowanie na tydzień przed planowanymi operacjami.",
-
   "ciekawostki": [
     "Czosnek niedźwiedzi zawiera więcej aktywnej siarki niż czosnek pospolity, dlatego jest skuteczniejszy w detoksie.",
     "W Polsce roślina objęta jest ochroną częściową – nie wolno jej zrywać w lasach (grożą wysokie mandaty). Można korzystać tylko z upraw własnych.",
     "Historycznie nazywany 'Herba Salutaris' (ziele zbawienne) ze względu na przypisywane mu właściwości przywracania życia starcom.",
     "W przeciwieństwie do czosnku pospolitego, po zjedzeniu czosnku niedźwiedziego oddech nie jest tak intensywnie obciążony zapachem."
   ],
-
   "permakultura": {
     "funkcje": [
       "春季 ephemeroid - wykorzystuje okno świetlne przed ulistnieniem drzew.",
@@ -92,16 +84,24 @@
       "Pokarm dla wczesnych owadów zapylających."
     ],
     "gildie": [
-      { "nazwa": "Dąb szypułkowy / Buk", "rola": "Naturalne drzewa osłonowe dostarczające odpowiedniej ściółki." },
-      { "nazwa": "Leszczyna", "rola": "Czosnek niedźwiedzi świetnie rośnie w strefie okapu leszczyny." }
+      {
+        "nazwa": "Dąb szypułkowy / Buk",
+        "rola": "Naturalne drzewa osłonowe dostarczające odpowiedniej ściółki."
+      },
+      {
+        "nazwa": "Leszczyna",
+        "rola": "Czosnek niedźwiedzi świetnie rośnie w strefie okapu leszczyny."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór liści (uprawy własne)",
-        "miesiace": [3, 4],
+        "miesiace": [
+          3,
+          4
+        ],
         "opis": "Zbiór młodych liści przed pojawieniem się pąków kwiatowych.",
         "faza_ksiezyca": "Księżyc przybywający (najwięcej soków w liściach)",
         "pora_dnia": "Poranek",
@@ -110,7 +110,10 @@
       },
       {
         "czynnosc": "Sadzenie cebul",
-        "miesiace": [9, 10],
+        "miesiace": [
+          9,
+          10
+        ],
         "opis": "Sadzenie cebul na głębokość ok. 10 cm w grupach pod drzewami.",
         "faza_ksiezyca": "Księżyc ubywający (faza korzenia)",
         "pora_dnia": "Wieczór",
@@ -119,13 +122,17 @@
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Nalewka 'Krew Niedźwiedzia' (Na ciśnienie i krążenie)",
       "typ": "medyczne",
       "metoda": "maceracja alkoholowa",
-      "tagi": ["ciśnienie", "miażdżyca", "odporność", "detoks"],
+      "tagi": [
+        "ciśnienie",
+        "miażdżyca",
+        "odporność",
+        "detoks"
+      ],
       "skladniki": [
         "Świeże liście czosnku niedźwiedziego: 200g",
         "Wódka 40%: 500ml"
@@ -141,17 +148,26 @@
       "uwagi": "Stosować przez miesiąc jako kurację wiosenną oczyszczającą naczynia krwionośne.",
       "roslina": "Czosnek niedźwiedzi",
       "slug": "czosnek_niedzwiezi",
-      "cechy": ["intensywny zapach", "jasnozielony kolor"],
-      "wlasciwosci": ["hipotensyjna", "antybiotyczna"]
+      "cechy": [
+        "intensywny zapach",
+        "jasnozielony kolor"
+      ],
+      "wlasciwosci": [
+        "hipotensyjna",
+        "antybiotyczna"
+      ]
     }
   ],
-
   "przepisy_kulinarne": [
     {
       "tytul": "Pesto Niedźwiedzie (Najlepszy sposób konserwacji)",
       "typ": "kulinarne",
       "metoda": "ucieranie",
-      "tagi": ["pesto", "sos", "witaminy"],
+      "tagi": [
+        "pesto",
+        "sos",
+        "witaminy"
+      ],
       "skladniki": [
         "Świeże liście czosnku niedźwiedziego: 250g",
         "Oliwa z oliwek lub olej rzepakowy: 150ml",
@@ -169,5 +185,63 @@
       "slug": "czosnek_niedzwiezi"
     }
   ],
-  "ostrzezenia": "ROŚLINA POD OCHRONĄ CZĘŚCIOWĄ – pozyskuj tylko z legalnych źródeł lub uprawy. Bezwzględnie sprawdź zapach każdego liścia, by wykluczyć pomyłkę z trującą konwalią! Nie stosować przy chorobie wrzodowej żołądka."
+  "ostrzezenia": "ROŚLINA POD OCHRONĄ CZĘŚCIOWĄ – pozyskuj tylko z legalnych źródeł lub uprawy. Bezwzględnie sprawdź zapach każdego liścia, by wykluczyć pomyłkę z trującą konwalią! Nie stosować przy chorobie wrzodowej żołądka.",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Daslook_%28Allium_ursinum%29_07-04-2020._%28actm.%29_04.jpg/960px-Daslook_%28Allium_ursinum%29_07-04-2020._%28actm.%29_04.jpg",
+    "Kwiaty": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Allium_ursinum_ENBLA03.jpg",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Allium_ursinum_seedlings2.jpg/960px-Allium_ursinum_seedlings2.jpg",
+    "Nasiona": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Allium_ursinum_seedlings1.jpg/960px-Allium_ursinum_seedlings1.jpg",
+    "Korzeń": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Allium_ursinum_-_3248.jpg/960px-Allium_ursinum_-_3248.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Daslook_%28Allium_ursinum%29_07-04-2020._%28actm.%29_04.jpg/960px-Daslook_%28Allium_ursinum%29_07-04-2020._%28actm.%29_04.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Daslook_(Allium_ursinum)_07-04-2020._(actm.)_04.jpg",
+        "autor": "Agnes Monkelbaan",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Allium_ursinum_ENBLA03.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Allium_ursinum_ENBLA03.jpg",
+        "autor": "Enrico Blasutto at Italian Wikipedia",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Allium_ursinum_seedlings2.jpg/960px-Allium_ursinum_seedlings2.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Allium_ursinum_seedlings2.jpg",
+        "autor": "User:Pipi69e",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Nasiona",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Allium_ursinum_seedlings1.jpg/960px-Allium_ursinum_seedlings1.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Allium_ursinum_seedlings1.jpg",
+        "autor": "User:Pipi69e",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Korzeń",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Allium_ursinum_-_3248.jpg/960px-Allium_ursinum_-_3248.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Allium_ursinum_-_3248.jpg",
+        "autor": "Amada44",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

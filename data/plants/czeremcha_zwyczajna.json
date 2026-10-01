@@ -4,7 +4,6 @@
   "nazwa_lat": "Prunus padus",
   "rodzina": "Różowate (Rosaceae)",
   "opis": "Drzewo lub duży krzew o gęstej koronie, dorastający do 15 m wysokości. Najbardziej rozpoznawalna dzięki zwisającym, białym gronom kwiatów o intensywnym, wręcz odurzającym zapachu. Kora czeremchy po potarciu wydziela charakterystyczny zapach migdałów (wynik obecności amigdaliny). Jest to roślina wskaźnikowa dla żyznych i wilgotnych siedlisk leśnych, nazywana dawniej 'kocierpką' ze względu na cierpki smak owoców.",
-
   "profil_energetyczny": {
     "smak": "Cierpki, gorzki, lekko słodki (owoce)",
     "termika": "Chłodna",
@@ -12,7 +11,6 @@
     "zywiol": "Woda i Powietrze",
     "opis": "Czeremcha działa wybitnie 'ściągająco' na tkanki. Jej energia pomaga zatrzymać nadmiar płynów (biegunki, wysięki) i uspokoić 'rozbiegane' procesy zapalne. Na poziomie psychicznym jej zapach działa euforycznie, ale długotrwałe przebywanie w jego zasięgu może powodować senność i uspokojenie."
   },
-
   "wymagania": {
     "stanowisko": "Słoneczne do półcienistego. Najlepiej kwitnie i owocuje w pełnym świetle.",
     "gleba": "Żyzna, próchniczna, wilgotna, zasobna w składniki mineralne. Często spotykana w lasach łęgowych i olsach.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 3 (Całkowicie mrozoodporna).",
     "woda": "Wysokie zapotrzebowanie; źle znosi przesuszenie podłoża, kocha sąsiedztwo cieków wodnych."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Kwiaty białe, zebrane w długie, zwisające grona (w przeciwieństwie do czeremchy amerykańskiej, u której grona są wzniesione).",
@@ -39,7 +36,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "owoce": {
       "nazwa_surowca": "Fructus Pruni padi",
@@ -58,7 +54,11 @@
     "kora": {
       "nazwa_surowca": "Cortex Pruni padi",
       "opis_botaniczny": "Kora z młodych gałęzi pozyskiwana wiosną lub jesienią.",
-      "skladniki_aktywne": ["Glikozydy cyjanogenne (pruzyna, amigdalina)", "Garbniki", "Fitoncydy"],
+      "skladniki_aktywne": [
+        "Glikozydy cyjanogenne (pruzyna, amigdalina)",
+        "Garbniki",
+        "Fitoncydy"
+      ],
       "wlasciwości": "Naprzemienne działanie napotne i moczopędne, uspokajające kaszel (wycisza ośrodek kaszlu), przeciwreumatyczne.",
       "czas_zbioru": "Kwiecień lub Październik.",
       "ostrzezenia": "Wymaga precyzyjnego dawkowania – zawiera prekursory kwasu pruskiego (cyjanowodoru)."
@@ -69,23 +69,19 @@
       "czas_zbioru": "Maj."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Biegunki, nieżyty jelit, uporczywy kaszel (zapalenie oskrzeli), reumatyzm, stany zapalne układu moczowego. Zewnętrznie: do przemywania ran i oczu.",
     "kulinarne": "Soki, konfitury (często przecierane przez sito, by pozbyć się pestek), nalewki (tzw. czeremchówka). W Rosji wysuszone i zmielone owoce z pestkami używane są jako aromatyczna mąka do ciast.",
     "ogrodowe": "Roślina miododajna i biocenotyczna (pokarm dla ptaków). Drewno czeremchy jest cenione w stolarstwie artystycznym.",
     "rzemieslnicze": "Z kory i owoców uzyskuje się naturalne barwniki (odcienie fioletu i szarości). Wyciąg z liści działa owadobójczo (fitoncydy)."
   },
-
   "interakcje": "Przetwory z kory mogą potęgować działanie leków uspokajających i przeciwkaszlowych. Ze względu na zawartość garbników, mogą ograniczać wchłanianie żelaza i niektórych leków.",
-
   "ciekawostki": [
     "Czeremcha produkuje tak silne fitoncydy, że postawienie bukietu kwiatów w małym pokoju może wywołać ból głowy u domowników.",
     "W medycynie ludowej wierzono, że zapach czeremchy odpędza 'złe powietrze' i zarazę.",
     "Owoce czeremchy są ulubionym pokarmem ptaków, które nie trawią pestek, przez co przyczyniają się do rozsiewania drzewa.",
     "Amerykańska kuzynka (Czeremcha amerykańska) jest jednym z najgroźniejszych gatunków inwazyjnych w polskich lasach, wypierając rodzime dęby i sosny."
   ],
-
   "permakultura": {
     "funkcje": [
       "Budowa pasów wiatrochronnych na wilgotnych terenach.",
@@ -94,17 +90,28 @@
       "Szybkie zacienianie brzegów zbiorników wodnych."
     ],
     "gildie": [
-      { "nazwa": "Olcha czarna", "rola": "Tworzą razem naturalne łęgi." },
-      { "nazwa": "Bez czarny", "rola": "Często współwystępują na obrzeżach wilgotnych lasów." },
-      { "nazwa": "Kalina koralowa", "rola": "Partner w gęstych zaroślach nadrzecznych." }
+      {
+        "nazwa": "Olcha czarna",
+        "rola": "Tworzą razem naturalne łęgi."
+      },
+      {
+        "nazwa": "Bez czarny",
+        "rola": "Często współwystępują na obrzeżach wilgotnych lasów."
+      },
+      {
+        "nazwa": "Kalina koralowa",
+        "rola": "Partner w gęstych zaroślach nadrzecznych."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór owoców na przetwory",
-        "miesiace": [8, 9],
+        "miesiace": [
+          8,
+          9
+        ],
         "opis": "Zbiór całych gron, gdy owoce są lśniąco czarne i lekko miękkie.",
         "faza_ksiezyca": "Księżyc ubywający",
         "pora_dnia": "Południe",
@@ -113,13 +120,16 @@
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Odwar z kory na suchy kaszel",
       "typ": "medyczne",
       "metoda": "odwar",
-      "tagi": ["kaszel", "oskrzela", "uspokojenie"],
+      "tagi": [
+        "kaszel",
+        "oskrzela",
+        "uspokojenie"
+      ],
       "skladniki": [
         "Suszona kora czeremchy: 1 łyżeczka",
         "Woda: 250 ml"
@@ -132,17 +142,26 @@
       "uwagi": "Kwas pruski powstający z amigdaliny w małych dawkach wycisza ośrodek kaszlu.",
       "roslina": "Czeremcha zwyczajna",
       "slug": "czeremcha_zwyczajna",
-      "cechy": ["zapach migdałowy", "gorzki smak"],
-      "wlasciwosci": ["przeciwkaszlowa", "uspokajająca"]
+      "cechy": [
+        "zapach migdałowy",
+        "gorzki smak"
+      ],
+      "wlasciwosci": [
+        "przeciwkaszlowa",
+        "uspokajająca"
+      ]
     }
   ],
-
   "przepisy_kulinarne": [
     {
       "tytul": "Syrop Czeremchowy (Aromatyczna Baza)",
       "typ": "kulinarne",
       "metoda": "gotowanie",
-      "tagi": ["syrop", "desery", "witaminy"],
+      "tagi": [
+        "syrop",
+        "desery",
+        "witaminy"
+      ],
       "skladniki": [
         "Owoce czeremchy: 1 kg",
         "Cukier: 0.5 kg",
@@ -159,5 +178,63 @@
       "slug": "czeremcha_zwyczajna"
     }
   ],
-  "ostrzezenia": "Pestki i kora zawierają amigdalinę, która w organizmie uwalnia toksyczny cyjanowodór. Nie stosować w ciąży, podczas karmienia piersią i u małych dzieci. Przetworów z całych owoców z pestkami nie należy przechowywać dłużej niż rok."
+  "ostrzezenia": "Pestki i kora zawierają amigdalinę, która w organizmie uwalnia toksyczny cyjanowodór. Nie stosować w ciąży, podczas karmienia piersią i u małych dzieci. Przetworów z całych owoców z pestkami nie należy przechowywać dłużej niż rok.",
+  "url": {
+    "Pokrój": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Vogelkers_bloesem.jpg",
+    "Kwiaty": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Prunus_padus0.jpg",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Prunus_padus_stipules.JPG/960px-Prunus_padus_stipules.JPG",
+    "Owoce": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Prunus_padus_Tuomi_marjoja_VII_04_2989_C.JPG/960px-Prunus_padus_Tuomi_marjoja_VII_04_2989_C.JPG",
+    "Kora": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Prunus_padus_bark.jpg/960px-Prunus_padus_bark.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Vogelkers_bloesem.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Vogelkers_bloesem.jpg",
+        "autor": "Rasbak",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Prunus_padus0.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Prunus_padus0.jpg",
+        "autor": "Christer Johansson",
+        "licencja": "CC BY-SA 2.5",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/2.5",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Prunus_padus_stipules.JPG/960px-Prunus_padus_stipules.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Prunus_padus_stipules.JPG",
+        "autor": "MurielBendel",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Prunus_padus_Tuomi_marjoja_VII_04_2989_C.JPG/960px-Prunus_padus_Tuomi_marjoja_VII_04_2989_C.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Prunus_padus_Tuomi_marjoja_VII_04_2989_C.JPG",
+        "autor": "Anneli Salo",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kora",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Prunus_padus_bark.jpg/960px-Prunus_padus_bark.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Prunus_padus_bark.jpg",
+        "autor": "No machine-readable author provided. Lumbar~commonswiki assumed (based on copyright claims).",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

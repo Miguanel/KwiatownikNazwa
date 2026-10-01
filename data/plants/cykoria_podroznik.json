@@ -4,7 +4,6 @@
   "nazwa_lat": "Cichorium intybus",
   "rodzina": "Astrowate (Asteraceae)",
   "opis": "Wieloletnia roślina zielna o głębokim korzeniu palowym i sztywnych, rozgałęzionych łodygach. Słynie z jaskrawoniebieskich (rzadziej białych lub różowych) kwiatostanów, które otwierają się tylko w pełnym słońcu. Jako roślina ruderalna, towarzyszy człowiekowi od tysiącleci, rosnąc na miedzach, ugorach i przydrożach. Jest przodkiem wielu odmian uprawnych, takich jak cykoria sałatkowa czy radicchio.",
-
   "profil_energetyczny": {
     "smak": "Wyraźnie gorzki, lekko słodkawy (korzeń)",
     "termika": "Chłodna",
@@ -12,7 +11,6 @@
     "zywiol": "Ziemia i Powietrze",
     "opis": "Cykoria to 'aktywator ognia trawiennego' bez przegrzewania organizmu. Jej gorycz pobudza soki żołądkowe i żółć, chłodząc jednocześnie stany zapalne wątroby. Działa oczyszczająco na krew i pomaga usuwać 'mentalną ociężałość'."
   },
-
   "wymagania": {
     "stanowisko": "Pełne słońce. Kwiaty cykorii są światłoczułe – w cieniu roślina marnieje i nie kwitnie.",
     "gleba": "Przepuszczalna, piaszczysto-gliniasta, bogata w wapń. Dzięki korzeniowi sięgającemu 2 metrów w głąb ziemi, radzi sobie na glebach suchych i zbitych.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 4 (Całkowicie mrozoodporna).",
     "woda": "Niskie zapotrzebowanie; jest wybitnie odporna na suszę."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Kwiaty intensywnie błękitne, o języczkowych płatkach ząbkowanych na końcach.",
@@ -35,7 +32,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "korzen": {
       "nazwa_surowca": "Radix Cichorii",
@@ -56,16 +52,13 @@
       "czas_zbioru": "Lipiec - Sierpień (czas kwitnienia)."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Zaburzenia trawienia, brak apetytu, niedoczynność wątroby, zaparcia, wspomaganie odchudzania, profilaktyka cukrzycy typu II, osłabienie organizmu po antybiotykoterapii.",
     "kulinarne": "Korzeń po wysuszeniu, uprażeniu i zmieleniu to baza słynnej kawy cykorii. Młode liście wiosenne są jadalne (do sałatek), choć gorzkie. Pąki kwiatowe można marynować jak kapary.",
     "ogrodowe": "Roślina miododajna o bardzo długim okresie kwitnienia. Jej głębokie korzenie spulchniają glebę i wyciągają minerały z głębi ziemi.",
     "rzemieslnicze": "Z kwiatów cykorii można uzyskać delikatny niebieski barwnik, choć jest on mało trwały."
   },
-
   "interakcje": "Może nasilać działanie leków żółciopędnych. Inulina może wpływać na tempo wchłaniania niektórych leków (należy zachować odstęp czasowy).",
-
   "ciekawostki": [
     "Karol Linneusz umieścił cykorię w swoim 'zegarze kwiatowym' – jej kwiaty otwierają się regularnie między 5 a 6 rano, a zamykają między 14 a 15 po południu.",
     "W medycynie ludowej cykorię nazywano 'podróżnikiem', bo według legendy roślina ta powstała z dziewczyny czekającej na powrót ukochanego przy drodze.",
@@ -73,7 +66,6 @@
     "W starożytnym Egipcie cykoria była ceniona jako środek oczyszczający krew i lecznictwo wątroby.",
     "Cykoria jest jedną z nielicznych roślin, których kwiaty są czysto niebieskie (bez domieszki fioletu)."
   ],
-
   "permakultura": {
     "funkcje": [
       "Dynamiczny akumulator minerałów (wapń, potas, miedź).",
@@ -82,29 +74,41 @@
       "Pasza lecznicza dla zwierząt gospodarskich (naturalne odrobaczanie)."
     ],
     "gildie": [
-      { "nazwa": "Lucerna", "rola": "Często występują razem na pastwiskach, poprawiając strukturę gleby." },
-      { "nazwa": "Dzika marchew", "rola": "Partnerzy z suchych przydroży." }
+      {
+        "nazwa": "Lucerna",
+        "rola": "Często występują razem na pastwiskach, poprawiając strukturę gleby."
+      },
+      {
+        "nazwa": "Dzika marchew",
+        "rola": "Partnerzy z suchych przydroży."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór korzeni na kawę",
-        "miesiace": [10, 11],
+        "miesiace": [
+          10,
+          11
+        ],
         "opis": "Wykopywanie długich korzeni. Wymaga użycia wąskiego szpadla.",
         "faza_ksiezyca": "Księżyc ubywający",
         "pora_dnia": "Wieczór"
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Odwar Trawienny 'Złota Wątroba'",
       "typ": "medyczne",
       "metoda": "odwar",
-      "tagi": ["trawienie", "wątroba", "detoks", "cukier"],
+      "tagi": [
+        "trawienie",
+        "wątroba",
+        "detoks",
+        "cukier"
+      ],
       "skladniki": [
         "Suszony korzeń cykorii: 1 łyżeczka",
         "Woda: 250 ml"
@@ -120,13 +124,16 @@
       "slug": "cykoria_podroznik"
     }
   ],
-
   "przepisy_kulinarne": [
     {
       "tytul": "Domowa Kawa z Cykorii",
       "typ": "kulinarne",
       "metoda": "prażenie",
-      "tagi": ["kawa", "bez kofeiny", "korzeń"],
+      "tagi": [
+        "kawa",
+        "bez kofeiny",
+        "korzeń"
+      ],
       "skladniki": [
         "Świeże korzenie cykorii"
       ],
@@ -141,5 +148,63 @@
       "slug": "cykoria_podroznik"
     }
   ],
-  "ostrzezenia": "Nie stosować przy niedrożności dróg żółciowych oraz przy ostrych stanach zapalnych pęcherzyka żółciowego. Ze względu na wysoką zawartość inuliny, nagłe wprowadzenie dużych ilości cykorii do diety może powodować wzdęcia."
+  "ostrzezenia": "Nie stosować przy niedrożności dróg żółciowych oraz przy ostrych stanach zapalnych pęcherzyka żółciowego. Ze względu na wysoką zawartość inuliny, nagłe wprowadzenie dużych ilości cykorii do diety może powodować wzdęcia.",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Illustration_Cichorium_intybus0_clean.jpg/960px-Illustration_Cichorium_intybus0_clean.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Fatra_2023_P193_Lubochnianske_sedlo_Cichorium_intybus_01_%28cropped%29.jpg/960px-Fatra_2023_P193_Lubochnianske_sedlo_Cichorium_intybus_01_%28cropped%29.jpg",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Chicory_Stomata.jpg/960px-Chicory_Stomata.jpg",
+    "Owoce": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Witlof_Cichorium_intybus_var._foliosum_seeds.jpg/960px-Witlof_Cichorium_intybus_var._foliosum_seeds.jpg",
+    "Korzeń": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Wurzeln_der_Wegwarte.JPG/960px-Wurzeln_der_Wegwarte.JPG"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Illustration_Cichorium_intybus0_clean.jpg/960px-Illustration_Cichorium_intybus0_clean.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Illustration_Cichorium_intybus0_clean.jpg",
+        "autor": "Original book source: Prof. Dr. Otto Wilhelm Thomé Flora von Deutschland, Österreich und der Schweiz 1885, Gera, Germany",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Fatra_2023_P193_Lubochnianske_sedlo_Cichorium_intybus_01_%28cropped%29.jpg/960px-Fatra_2023_P193_Lubochnianske_sedlo_Cichorium_intybus_01_%28cropped%29.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Fatra_2023_P193_Lubochnianske_sedlo_Cichorium_intybus_01_(cropped).jpg",
+        "autor": "Fallaner",
+        "licencja": "CC BY 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Chicory_Stomata.jpg/960px-Chicory_Stomata.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Chicory_Stomata.jpg",
+        "autor": "JHern OW",
+        "licencja": "CC0",
+        "licencja_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Witlof_Cichorium_intybus_var._foliosum_seeds.jpg/960px-Witlof_Cichorium_intybus_var._foliosum_seeds.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Witlof_Cichorium_intybus_var._foliosum_seeds.jpg",
+        "autor": "Rasbak",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Korzeń",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Wurzeln_der_Wegwarte.JPG/960px-Wurzeln_der_Wegwarte.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Wurzeln_der_Wegwarte.JPG",
+        "autor": "Neueinfo4321",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

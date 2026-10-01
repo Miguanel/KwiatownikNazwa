@@ -4,7 +4,13 @@
   "nazwa_lat": "Achillea millefolium",
   "rodzina": "Astrowate (Asteraceae)",
   "opis": "Wieloletnia, pospolita bylina łąkowa o charakterystycznych, pierzastych liściach przypominających tysiące małych piórek (stąd nazwa 'millefolium'). Krwawnik to roślina o niezwykłej żywotności, odporna na deptanie i suszę. W tradycji ludowej nazywany 'zielem żołnierzy', gdyż od tysiącleci towarzyszył armiom jako najskuteczniejszy środek tamujący krew i zapobiegający zakażeniom ran.",
-  "tagi": ["zielna", "krwawienie", "trawienie", "rany", "pospolita"],
+  "tagi": [
+    "zielna",
+    "krwawienie",
+    "trawienie",
+    "rany",
+    "pospolita"
+  ],
   "profil_energetyczny": {
     "smak": "Gorzki, ostry, aromatyczny, lekko słony",
     "termika": "Neutralna do chłodnej (w fazie świeżej) / lekko rozgrzewająca (korzeń)",
@@ -12,7 +18,6 @@
     "zywiol": "Powietrze i Ziemia",
     "opis": "Krwawnik jest rośliną 'równoważącą'. Potrafi poruszyć krew tam, gdzie powstały zastoje (np. zakrzepy, bolesne miesiączki), ale jednocześnie potrafi zatrzymać krew tam, gdzie ucieka ona z naczyń (rany, krwotoki). Na poziomie emocjonalnym pomaga stawiać granice i chroni przed 'wampiryzmem energetycznym'."
   },
-
   "wymagania": {
     "stanowisko": "Pełne słońce. W cieniu rośnie słabo i zawiera znacznie mniej olejków eterycznych.",
     "gleba": "Bardzo małe wymagania; rośnie na suchych piaskach, miedzach i ugorach. Nie lubi jedynie gleb kwaśnych i stale podmokłych.",
@@ -20,7 +25,6 @@
     "mrozoodpornosc": "Strefa 3 (Całkowicie mrozoodporny, znosi ekstremalne warunki).",
     "woda": "Wybitnie odporny na suszę; nadmiar wody powoduje gnicie korzeni."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Liście są wielokrotnie pierzastosieczne, miękkie w dotyku, o zapachu przypominającym rumianek, ale bardziej ostrym.",
@@ -39,7 +43,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "ziele": {
       "nazwa_surowca": "Herba Achilleae",
@@ -59,28 +62,26 @@
     "kwiaty": {
       "nazwa_surowca": "Flos Achilleae",
       "opis_botaniczny": "Same koszyczki kwiatowe odcięte od łodygi.",
-      "skladniki_aktywne": ["Najwyższe stężenie chamazulenu i flawonoidów"],
+      "skladniki_aktywne": [
+        "Najwyższe stężenie chamazulenu i flawonoidów"
+      ],
       "wlasciwości": "Silnie przeciwzapalne i rozkurczowe. Idealne do inhalacji przy katarze i stanach zapalnych zatok.",
       "czas_zbioru": "Pełnia lata."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Wewnętrznie: brak apetytu, wzdęcia, skurcze żołądka, bolesne i nieregularne miesiączki, krwawienia z przewodu pokarmowego. Zewnętrznie: przemywanie ran, owrzodzeń, uszkodzeń naskórka, stany zapalne jamy ustnej.",
     "kulinarne": "Młode liście (zbierane wiosną) dodaje się do sałatek, masła ziołowego, twarogu i past. Nadają potrawom pikantny, gorzkawy posmak. Kwiaty mogą służyć do aromatyzowania domowego piwa i likierów.",
     "ogrodowe": "Roślina 'lekarz ogrodu' – posadzona w pobliżu innych roślin zwiększa ich odporność na choroby i poprawia aromat ziół olejkowych (np. mięty).",
     "rzemieslnicze": "Naturalny barwnik do tkanin (daje odcienie od żółtego do oliwkowej zieleni). Historycznie liście krwawnika dodawano do tytoniu."
   },
-
   "interakcje": "Może nasilać działanie leków przeciwzakrzepowych oraz leków uspokajających. Należy zachować ostrożność przy jednoczesnym stosowaniu leków hamujących wydzielanie kwasu żołądkowego.",
-
   "ciekawostki": [
     "W medycynie chińskiej łodygi krwawnika służyły do wróżenia z księgi I-Ching ze względu na ich sztywność i trwałość.",
     "Destylat z krwawnika (olejek) ma intensywnie niebieski kolor dzięki chamazulenowi – tej samej substancji, która nadaje moc rumiankowi.",
     "Nazwa 'krwawnik' w wielu językach (np. niem. Schafgarbe) odnosi się do tego, że owce chętnie go zjadają, gdy czują się chore.",
     "Stare przysłowie mówiło, że krwawnik 'wszystko co pęknięte, zrasta' – odnosząc się zarówno do ran, jak i do pękniętego serca."
   ],
-
   "permakultura": {
     "funkcje": [
       "Dynamiczny akumulator potasu, fosforu, wapnia i siarki.",
@@ -89,17 +90,29 @@
       "Idealny komponent 'herbal leys' (mieszanek ziołowych na pastwiska)."
     ],
     "gildie": [
-      { "nazwa": "Drzewa owocowe (Jabłoń, Śliwa)", "rola": "Krwawnik pod drzewami owocowymi przyciąga zapylacze i drapieżne owady chroniące owoce." },
-      { "nazwa": "Mięta pieprzowa", "rola": "Sąsiedztwo krwawnika zwiększa produkcję olejku mentolowego w mięcie." },
-      { "nazwa": "Pokrzywa zwyczajna", "rola": "Wspólnie tworzą potężny duet odżywczy dla gleby i drenaż minerałów." }
+      {
+        "nazwa": "Drzewa owocowe (Jabłoń, Śliwa)",
+        "rola": "Krwawnik pod drzewami owocowymi przyciąga zapylacze i drapieżne owady chroniące owoce."
+      },
+      {
+        "nazwa": "Mięta pieprzowa",
+        "rola": "Sąsiedztwo krwawnika zwiększa produkcję olejku mentolowego w mięcie."
+      },
+      {
+        "nazwa": "Pokrzywa zwyczajna",
+        "rola": "Wspólnie tworzą potężny duet odżywczy dla gleby i drenaż minerałów."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór ziela na susz",
-        "miesiace": [6, 7, 8],
+        "miesiace": [
+          6,
+          7,
+          8
+        ],
         "opis": "Ścinanie pędów rano, gdy zejdzie rosa, ale zanim słońce zacznie najmocniej operować.",
         "faza_ksiezyca": "Księżyc przybywający (od nowiu do pełni)",
         "pora_dnia": "Przedpołudnie",
@@ -108,7 +121,10 @@
       },
       {
         "czynnosc": "Zbiór młodych liści",
-        "miesiace": [4, 5],
+        "miesiace": [
+          4,
+          5
+        ],
         "opis": "Młode, wiosenne listki świetnie nadają się do wiosennych sałatek oczyszczających.",
         "faza_ksiezyca": "Księżyc przybywający",
         "pora_dnia": "Ranek",
@@ -116,7 +132,11 @@
       },
       {
         "czynnosc": "Zbiór ziela i kwiatów",
-        "miesiace": [7, 8, 9],
+        "miesiace": [
+          7,
+          8,
+          9
+        ],
         "opis": "Ścinamy górne, kwitnące pędy (ok. 10 cm). Surowiec bardzo ceniony w medycynie polowej.",
         "faza_ksiezyca": "Pełnia",
         "pora_dnia": "Popołudnie w słoneczny dzień",
@@ -124,7 +144,9 @@
       },
       {
         "czynnosc": "Podział kęp (rozmnażanie)",
-        "miesiace": [10],
+        "miesiace": [
+          10
+        ],
         "opis": "Wykopywanie starszych kęp i dzielenie ich na mniejsze sadzonki.",
         "faza_ksiezyca": "Księżyc ubywający / Korzeń",
         "pora_dnia": "Chłodny wieczór",
@@ -132,13 +154,17 @@
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Maść Krwawnikowa na rany i otarcia",
       "typ": "medyczne",
       "metoda": "ekstrakcja tłuszczowa",
-      "tagi": ["skóra", "rany", "skaleczenia", "stany zapalne"],
+      "tagi": [
+        "skóra",
+        "rany",
+        "skaleczenia",
+        "stany zapalne"
+      ],
       "skladniki": [
         "Świeże ziele krwawnika (posiekane): 2 garście",
         "Smalec gęsi lub masło Shea: 200g",
@@ -155,14 +181,24 @@
       "uwagi": "Niezastąpiona przy drobnych skaleczeniach i trudno gojących się ranach.",
       "roslina": "Krwawnik pospolity",
       "slug": "krwawnik_pospolity",
-      "cechy": ["zielonkawy kolor", "ziołowy aromat"],
-      "wlasciwosci": ["przyspieszająca gojenie", "antyseptyczna"]
+      "cechy": [
+        "zielonkawy kolor",
+        "ziołowy aromat"
+      ],
+      "wlasciwosci": [
+        "przyspieszająca gojenie",
+        "antyseptyczna"
+      ]
     },
     {
       "tytul": "Napar 'Dobra Przemiana Materii'",
       "typ": "medyczne",
       "metoda": "napar",
-      "tagi": ["trawienie", "detoks", "wątroba"],
+      "tagi": [
+        "trawienie",
+        "detoks",
+        "wątroba"
+      ],
       "skladniki": [
         "Ziele krwawnika: 1 część",
         "Liść mniszka: 1 część",
@@ -178,13 +214,16 @@
       "slug": "krwawnik_pospolity"
     }
   ],
-
   "przepisy_kulinarne": [
     {
       "tytul": "Pikantna Sól Krwawnikowa",
       "typ": "kulinarne",
       "metoda": "ucieranie",
-      "tagi": ["przyprawa", "trawienie", "witaminy"],
+      "tagi": [
+        "przyprawa",
+        "trawienie",
+        "witaminy"
+      ],
       "skladniki": [
         "Suszone liście krwawnika: 2 łyżki",
         "Sól morska gruboziarnista: 10 łyżek",
@@ -200,5 +239,63 @@
       "slug": "krwawnik_pospolity"
     }
   ],
-  "ostrzezenia": "Krwawnika nie należy stosować w okresie ciąży (może działać stymulująco na macicę) oraz podczas karmienia piersią. Może wywoływać fotouczulenie u osób o bardzo jasnej karnacji. W przypadku wystąpienia wysypki (alergia na azuleny), przerwać stosowanie."
+  "ostrzezenia": "Krwawnika nie należy stosować w okresie ciąży (może działać stymulująco na macicę) oraz podczas karmienia piersią. Może wywoływać fotouczulenie u osób o bardzo jasnej karnacji. W przypadku wystąpienia wysypki (alergia na azuleny), przerwać stosowanie.",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Achillea_millefolium_vallee-de-grace-amiens_80_22062007_1.jpg/960px-Achillea_millefolium_vallee-de-grace-amiens_80_22062007_1.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Achillea_millefolium_5Dsr_9042.jpg/960px-Achillea_millefolium_5Dsr_9042.jpg",
+    "Liście": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Achillea_millefolium_scan.jpg",
+    "Owoce": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Achillea_millefolium_seeds.jpg/960px-Achillea_millefolium_seeds.jpg",
+    "Nasiona": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/2010_Restoration_of_Bunny_Meadows_%2820389131940%29.jpg/960px-2010_Restoration_of_Bunny_Meadows_%2820389131940%29.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Achillea_millefolium_vallee-de-grace-amiens_80_22062007_1.jpg/960px-Achillea_millefolium_vallee-de-grace-amiens_80_22062007_1.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Achillea_millefolium_vallee-de-grace-amiens_80_22062007_1.jpg",
+        "autor": "O. Pichard",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Achillea_millefolium_5Dsr_9042.jpg/960px-Achillea_millefolium_5Dsr_9042.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Achillea_millefolium_5Dsr_9042.jpg",
+        "autor": "SAplants",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Achillea_millefolium_scan.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Achillea_millefolium_scan.jpg",
+        "autor": "Sigman",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Achillea_millefolium_seeds.jpg/960px-Achillea_millefolium_seeds.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Achillea_millefolium_seeds.jpg",
+        "autor": "Steve Hurst @ USDA-NRCS PLANTS Database",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Nasiona",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/2010_Restoration_of_Bunny_Meadows_%2820389131940%29.jpg/960px-2010_Restoration_of_Bunny_Meadows_%2820389131940%29.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:2010_Restoration_of_Bunny_Meadows_(20389131940).jpg",
+        "autor": "mypubliclands",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

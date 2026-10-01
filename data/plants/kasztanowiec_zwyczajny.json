@@ -4,7 +4,6 @@
   "nazwa_lat": "Aesculus hippocastanum",
   "rodzina": "Mydleńcowate (Sapindaceae)",
   "opis": "Potężne, majestatyczne drzewo o gęstej, kopulastej koronie, dorastające do 25-30 metrów. Słynie z dłoniastych liści oraz wzniesionych, wiechowatych kwiatostanów przypominających świeczniki. Kasztanowiec jest 'żywą apteką' układu krążenia – jego kora, kwiaty i nasiona zawierają escynę, substancję o unikalnych właściwościach uszczelniających naczynia krwionośne. Drzewo to, choć obce geograficznie, stało się integralnym elementem polskiej tradycji i krajobrazu parkowego.",
-
   "profil_energetyczny": {
     "smak": "Gorzki, cierpki, mdły",
     "termika": "Chłodna",
@@ -12,7 +11,6 @@
     "zywiol": "Metal i Ziemia",
     "opis": "Kasztanowiec posiada energię 'zamykającą'. Ściąga tkanki, hamuje wysięki i wzmacnia bariery naczyniowe. Działa na organizm stabilizująco, pomagając 'utrzymać' płyny wewnątrz naczyń, zapobiegając ich ucieczce do przestrzeni międzykomórkowej (obrzęki)."
   },
-
   "wymagania": {
     "stanowisko": "Słoneczne do półcienistego. Wymaga dużej przestrzeni dla prawidłowego rozwoju korony.",
     "gleba": "Żyzna, głęboka, próchniczna, umiarkowanie wilgotna. Najlepiej rośnie na glebach piaszczysto-gliniastych.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 4 (Całkowicie mrozoodporny, ale wrażliwy na zanieczyszczenia solą drogową).",
     "woda": "Wymaga stałej wilgotności; źle znosi długotrwałe susze, które osłabiają go w walce ze szkodnikami."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Liście dłoniaste, złożone z 5-7 odwrotnie jajowatych listków, osiągające do 25 cm długości.",
@@ -39,7 +36,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "kwiaty": {
       "nazwa_surowca": "Flos Hippocastani",
@@ -71,28 +67,28 @@
     "kora": {
       "nazwa_surowca": "Cortex Hippocastani",
       "opis_botaniczny": "Gładka kora z młodych gałęzi, pozyskiwana wiosną.",
-      "skladniki_aktywne": ["Kumaryny (eskulina, fraksyna)", "Garbniki", "Flawonoidy"],
+      "skladniki_aktywne": [
+        "Kumaryny (eskulina, fraksyna)",
+        "Garbniki",
+        "Flawonoidy"
+      ],
       "wlasciwości": "Silnie ściągające, przeciwkrwotoczne, hamujące wysięki. Stosowana głównie zewnętrznie.",
       "czas_zbioru": "Marzec - Kwiecień."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Przewlekła niewydolność żylna, żylaki nóg, hemoroidy, obrzęki pooperacyjne i pourazowe, krwiaki, zapalenie pochewek ścięgnistych, odmrożenia, zaburzenia ukrwienia mózgu.",
     "kulinarne": "BRAK. Kasztany są trujące dla ludzi. Wykorzystywane jedynie po specjalistycznej ekstrakcji przemysłowej.",
     "ogrodowe": "Drzewo parkowe i alejowe, dostarczające głębokiego cienia. Ważny pożytek dla pszczół i trzmieli (nektar i pyłek).",
     "rzemieslnicze": "Drewno jest miękkie i lekkie, używane w rzeźbiarstwie, tokarstwie oraz do produkcji celulozy. Nasiona bogate w saponiny służyły dawniej jako surowiec do produkcji kleju i domowego mydła."
   },
-
   "interakcje": "Przetwory z kasztanowca mogą nasilać działanie leków przeciwzakrzepowych. Nie stosować łącznie z antybiotykami aminoglikozydowymi (może zwiększać ich nefrotoksyczność).",
-
   "ciekawostki": [
     "Kwitnienie kasztanowców w Polsce jest tradycyjnym sygnałem rozpoczęcia egzaminów maturalnych.",
     "Owoce kasztanowca są przysmakiem dla dzików i saren, ale dla ludzi, koni i psów mogą być szkodliwe.",
     "Kasztany noszone w kieszeni miały według wierzeń ludowych chronić przed reumatyzmem i 'wyciągać' złą energię (promieniowanie z żył wodnych).",
     "Wyciąg z kasztanowca jest kluczowym składnikiem prawie każdego żelu na 'ciężkie nogi' dostępnego w aptekach."
   ],
-
   "permakultura": {
     "funkcje": [
       "Producent dużej ilości biomasy (liście bogate w minerały).",
@@ -101,17 +97,24 @@
       "Siedlisko dla ptaków i owadów."
     ],
     "gildie": [
-      { "nazwa": "Lipa drobnolistna", "rola": "Partner w nasadzeniach parkowych, wzmacniający bioróżnorodność pożytków." },
-      { "nazwa": "Barwinek pospolity", "rola": "Roślina okrywowa pod koroną kasztanowca, znosząca głęboki cień." }
+      {
+        "nazwa": "Lipa drobnolistna",
+        "rola": "Partner w nasadzeniach parkowych, wzmacniający bioróżnorodność pożytków."
+      },
+      {
+        "nazwa": "Barwinek pospolity",
+        "rola": "Roślina okrywowa pod koroną kasztanowca, znosząca głęboki cień."
+      }
     ],
     "zagrozenia": "Szrotówek kasztanowcowiaczek – inwazyjny motyl, którego larwy niszczą liście. W permakulturze kluczowe jest grabienie i utylizacja liści jesienią, by przerwać cykl życiowy szkodnika."
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór kwiatów",
-        "miesiace": [5],
+        "miesiace": [
+          5
+        ],
         "opis": "Zbiór całych świec kwiatowych w pełnym rozkwicie.",
         "faza_ksiezyca": "Księżyc przybywający (faza kwiatu)",
         "pora_dnia": "Południe (kwiaty suche i ciepłe)",
@@ -120,7 +123,10 @@
       },
       {
         "czynnosc": "Zbiór kasztanów na nalewkę",
-        "miesiace": [9, 10],
+        "miesiace": [
+          9,
+          10
+        ],
         "opis": "Zbieranie świeżo spadłych, lśniących nasion.",
         "faza_ksiezyca": "Księżyc ubywający",
         "pogoda": "Sucha",
@@ -128,19 +134,26 @@
       },
       {
         "czynnosc": "Grabienie i utylizacja liści",
-        "miesiace": [10, 11],
+        "miesiace": [
+          10,
+          11
+        ],
         "opis": "Krytyczne zadanie: grabienie liści i ich kompostowanie w pryzmach o wysokiej temperaturze lub głębokie zakopywanie, aby zniszczyć poczwarki szrotówka.",
         "faza_ksiezyca": "Dowolna"
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Intrakt z Kwiatów Kasztanowca (Na naczynia)",
       "typ": "medyczne",
       "metoda": "intrakt (ekstrakcja na gorąco)",
-      "tagi": ["żylaki", "naczynka", "obrzęki", "hemoroidy"],
+      "tagi": [
+        "żylaki",
+        "naczynka",
+        "obrzęki",
+        "hemoroidy"
+      ],
       "skladniki": [
         "Świeże kwiaty kasztanowca (same kwiatuszki bez grubych łodyg): 100g",
         "Alkohol 40-60% (gorący): 500ml"
@@ -155,14 +168,24 @@
       "uwagi": "Intrakt jest skuteczniejszy niż zwykła nalewka, bo gorący alkohol stabilizuje escynę.",
       "roslina": "Kasztanowiec zwyczajny",
       "slug": "kasztanowiec_zwyczajny",
-      "cechy": ["słomkowy kolor", "gorzki smak"],
-      "wlasciwosci": ["uszczelniająca naczynia", "przeciwzapalna"]
+      "cechy": [
+        "słomkowy kolor",
+        "gorzki smak"
+      ],
+      "wlasciwosci": [
+        "uszczelniająca naczynia",
+        "przeciwzapalna"
+      ]
     },
     {
       "tytul": "Maść Kasztanowa 'Lekkie Nogi'",
       "typ": "medyczne",
       "metoda": "ekstrakcja tłuszczowa",
-      "tagi": ["obrzęki", "zmęczone nogi", "stłuczenia"],
+      "tagi": [
+        "obrzęki",
+        "zmęczone nogi",
+        "stłuczenia"
+      ],
       "skladniki": [
         "Świeże kasztany (rozdrobnione/zmielone): 5-6 sztuk",
         "Smalec gęsi lub masło Shea: 100g",
@@ -180,13 +203,16 @@
       "slug": "kasztanowiec_zwyczajny"
     }
   ],
-
   "przepisy_kulinarne": [
     {
       "tytul": "Kasztanowy Płyn do Prania (Permakultura)",
       "typ": "gospodarcze",
       "metoda": "gotowanie",
-      "tagi": ["eko-dom", "zero waste", "mydło"],
+      "tagi": [
+        "eko-dom",
+        "zero waste",
+        "mydło"
+      ],
       "skladniki": [
         "Kasztany: 10-15 sztuk",
         "Woda: 1 litr"
@@ -201,5 +227,63 @@
       "slug": "kasztanowiec_zwyczajny"
     }
   ],
-  "ostrzezenia": "Nie stosować wewnętrznie przy ciężkich schorzeniach nerek oraz w pierwszym trymestrze ciąży. Kasztany są trujące dla dzieci i zwierząt domowych – przechowywać z dala od nich przetwory."
+  "ostrzezenia": "Nie stosować wewnętrznie przy ciężkich schorzeniach nerek oraz w pierwszym trymestrze ciąży. Kasztany są trujące dla dzieci i zwierząt domowych – przechowywać z dala od nich przetwory.",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/ND_678.N.59_Hofers_Kastanien_in_Wettringen.jpg/960px-ND_678.N.59_Hofers_Kastanien_in_Wettringen.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/20130423Aesculus_hippocastanum10.jpg/960px-20130423Aesculus_hippocastanum10.jpg",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Chestnut_powdery_mildew.jpg/960px-Chestnut_powdery_mildew.jpg",
+    "Owoce": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Aesculus_hippocastanum_003.JPG/960px-Aesculus_hippocastanum_003.JPG",
+    "Nasiona": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/0_Aesculus_hippocastanum_-_Mariemont_1.JPG/960px-0_Aesculus_hippocastanum_-_Mariemont_1.JPG"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/ND_678.N.59_Hofers_Kastanien_in_Wettringen.jpg/960px-ND_678.N.59_Hofers_Kastanien_in_Wettringen.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:ND_678.N.59_Hofers_Kastanien_in_Wettringen.jpg",
+        "autor": "Stephan van Helden",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/20130423Aesculus_hippocastanum10.jpg/960px-20130423Aesculus_hippocastanum10.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:20130423Aesculus_hippocastanum10.jpg",
+        "autor": "AnRo0002",
+        "licencja": "CC0",
+        "licencja_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Chestnut_powdery_mildew.jpg/960px-Chestnut_powdery_mildew.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Chestnut_powdery_mildew.jpg",
+        "autor": "Drazhnikova",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Aesculus_hippocastanum_003.JPG/960px-Aesculus_hippocastanum_003.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Aesculus_hippocastanum_003.JPG",
+        "autor": "H. Zell",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Nasiona",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/0_Aesculus_hippocastanum_-_Mariemont_1.JPG/960px-0_Aesculus_hippocastanum_-_Mariemont_1.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:0_Aesculus_hippocastanum_-_Mariemont_1.JPG",
+        "autor": "Jean-Pol GRANDMONT",
+        "licencja": "CC BY 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by/3.0",
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

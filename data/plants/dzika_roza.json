@@ -4,7 +4,6 @@
   "nazwa_lat": "Rosa canina",
   "rodzina": "Różowate (Rosaceae)",
   "opis": "Ciernisty krzew o przewisających pędach, dorastający do 3 metrów wysokości. Jest gatunkiem niezwykle plastycznym, rosnącym na nieużytkach, miedzach i obrzeżach lasów. Jej kwiaty są delikatnie różowe lub białe, a owoce (botanicznie owoce pozorne – szupinki) mają intensywnie czerwony kolor i mączysty, kwaskowaty miąższ. Dzika róża to roślina o jednej z najdłuższych tradycji w medycynie europejskiej, ceniona już przez Hipokratesa jako środek wzmacniający.",
-
   "profil_energetyczny": {
     "smak": "Kwaśny, słodki, cierpki",
     "termika": "Chłodna (owoce), neutralna (płatki)",
@@ -12,7 +11,6 @@
     "zywiol": "Woda i Ogień",
     "opis": "Dzika róża to 'płynne ukojenie'. Jej kwaśny smak ściąga energię i chroni płyny ustrojowe (Yin), a wysoka zawartość witamin 'rozświetla' krew. Chłodzi stany zapalne, łagodzi podrażnienia i działa jak tarcza ochronna dla bariery immunologicznej."
   },
-
   "wymagania": {
     "stanowisko": "Pełne słońce – tylko w takich warunkach owoce gromadzą maksymalną ilość witaminy C i karotenoidów.",
     "gleba": "Przepuszczalna, żyzna, zasobna w wapń, ale roślina jest bardzo tolerancyjna i poradzi sobie nawet na glebach piaszczystych i kamienistych.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 4 (Całkowicie mrozoodporna).",
     "woda": "Bardzo odporna na suszę dzięki głębokiemu systemowi korzeniowemu; nie lubi jedynie zastoin wodnych."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Pędy uzbrojone w silne, hakowato zakrzywione ciernie (ułatwiają wspinanie się).",
@@ -39,7 +36,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "owoce_pozorne": {
       "nazwa_surowca": "Fructus Rosae",
@@ -67,16 +63,13 @@
       "ostrzezenia": "Włoski otaczające nasiona muszą być dokładnie usunięte przed spożyciem (powodują silne swędzenie)."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Profilaktyka i leczenie przeziębień, awitaminoza, rekonwalescencja po chorobach, bóle stawów (RZS i choroba zwyrodnieniowa), pękające naczynka krwionośne, nadciśnienie (pomocniczo).",
     "kulinarne": "Konfitury, dżemy (słynne nadzienie do pączków), soki, syropy, wina, herbaty ziołowe. Sproszkowane owoce jako dodatek do smoothie.",
     "ogrodowe": "Tworzenie 'nieprzebytych' żywopłotów obronnych, umacnianie skarp, roślina miododajna i schronienie dla ptaków.",
     "rzemieslnicze": "Olej z nasion róży (tłoczony na zimno) to jeden z najdroższych i najskuteczniejszych olejów kosmetycznych o działaniu przeciwstarzeniowym (Anti-aging)."
   },
-
   "interakcje": "Dzięki wysokiej zawartości witaminy C, róża zwiększa wchłanianie żelaza. Należy zachować ostrożność przy jednoczesnym przyjmowaniu leków zawierających glin (witamina C zwiększa jego wchłanianie).",
-
   "ciekawostki": [
     "Podczas II wojny światowej w Wielkiej Brytanii, ze względu na brak importowanych cytrusów, ogłoszono narodowy program zbierania dzikiej róży. Dzieci zbierały owoce, z których produkowano syrop dla niemowląt, by chronić je przed szkorbutem.",
     "Włoski z wnętrza owoców to klasyczny składnik 'proszku na swędzenie' (tzw. swędzipupa) używanego w żartach.",
@@ -84,7 +77,6 @@
     "Płatki dzikiej róży zbierane o świcie mają najsilniejszy aromat, ponieważ słońce nie zdążyło jeszcze odparować ich olejków.",
     "Owoce róży mogą przetrwać na krzewach całą zimę, stanowiąc 'żelazną porcję' energii dla ptaków w najtrudniejszych miesiącach."
   ],
-
   "permakultura": {
     "funkcje": [
       "Dynamiczny akumulator minerałów.",
@@ -93,17 +85,28 @@
       "Źródło doskonałej biomasy pod mulcz."
     ],
     "gildie": [
-      { "nazwa": "Czosnek", "rola": "Czosnek posadzony pod różami chroni je przed mszycami i czarną plamistością." },
-      { "nazwa": "Lawenda", "rola": "Wspiera zapylanie i chroni dół krzewu przed przesychaniem." },
-      { "nazwa": "Bez czarny", "rola": "Tworzą razem klasyczne zarośla biocenotyczne." }
+      {
+        "nazwa": "Czosnek",
+        "rola": "Czosnek posadzony pod różami chroni je przed mszycami i czarną plamistością."
+      },
+      {
+        "nazwa": "Lawenda",
+        "rola": "Wspiera zapylanie i chroni dół krzewu przed przesychaniem."
+      },
+      {
+        "nazwa": "Bez czarny",
+        "rola": "Tworzą razem klasyczne zarośla biocenotyczne."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór owoców na witaminę C",
-        "miesiace": [9, 10],
+        "miesiace": [
+          9,
+          10
+        ],
         "opis": "Zbiór owoców w pełni wybarwionych, ale wciąż twardych. Po przymrozkach witamina C drastycznie spada, choć owoce stają się słodsze.",
         "faza_ksiezyca": "Księżyc przybywający",
         "pora_dnia": "Południe",
@@ -112,13 +115,17 @@
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Surowy Syrop Różany (Maksimum Witaminy C)",
       "typ": "medyczne",
       "metoda": "maceracja na zimno",
-      "tagi": ["odporność", "grypa", "stawy", "witaminy"],
+      "tagi": [
+        "odporność",
+        "grypa",
+        "stawy",
+        "witaminy"
+      ],
       "skladniki": [
         "Świeże owoce róży (bez nasion i włosków): 500g",
         "Miód naturalny: 500g",
@@ -135,14 +142,24 @@
       "uwagi": "To najsilniejszy domowy specyfik na stawy i odporność.",
       "roslina": "Dzika róża",
       "slug": "dzika_roza",
-      "cechy": ["ciemnopomarańczowy kolor", "gęsta konsystencja"],
-      "wlasciwosci": ["przeciwzapalna", "witaminizująca"]
+      "cechy": [
+        "ciemnopomarańczowy kolor",
+        "gęsta konsystencja"
+      ],
+      "wlasciwosci": [
+        "przeciwzapalna",
+        "witaminizująca"
+      ]
     },
     {
       "tytul": "Napar z płatków (Dla cery naczynkowej)",
       "typ": "kosmetyczne",
       "metoda": "napar",
-      "tagi": ["twarz", "naczynka", "relaks"],
+      "tagi": [
+        "twarz",
+        "naczynka",
+        "relaks"
+      ],
       "skladniki": [
         "Garść suszonych płatków dzikiej róży",
         "Woda: 250 ml"
@@ -156,5 +173,63 @@
       "slug": "dzika_roza"
     }
   ],
-  "ostrzezenia": "Podczas przygotowywania owoców należy używać rękawiczek (włoski drażnią skórę). Osoby ze skłonnością do powstawania kamieni nerkowych (szczawianowych) powinny skonsultować się z lekarzem przed przyjmowaniem dużych dawek witaminy C z róży."
+  "ostrzezenia": "Podczas przygotowywania owoców należy używać rękawiczek (włoski drażnią skórę). Osoby ze skłonnością do powstawania kamieni nerkowych (szczawianowych) powinny skonsultować się z lekarzem przed przyjmowaniem dużych dawek witaminy C z róży.",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Divlja_ruza_cvijet_270508.jpg/960px-Divlja_ruza_cvijet_270508.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Bloem_van_een_Rosa_canina_01-06-2026._%28actm.%29.jpg/960px-Bloem_van_een_Rosa_canina_01-06-2026._%28actm.%29.jpg",
+    "Liście": "https://upload.wikimedia.org/wikipedia/commons/3/33/Rosa_canina_blatt_2005.05.26_11.50.13.jpg",
+    "Owoce": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Rosa_canina.jpg/960px-Rosa_canina.jpg",
+    "Kora": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/20140211Rosa_canina3.jpg/960px-20140211Rosa_canina3.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Divlja_ruza_cvijet_270508.jpg/960px-Divlja_ruza_cvijet_270508.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Divlja_ruza_cvijet_270508.jpg",
+        "autor": "Roberta F.",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Bloem_van_een_Rosa_canina_01-06-2026._%28actm.%29.jpg/960px-Bloem_van_een_Rosa_canina_01-06-2026._%28actm.%29.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Bloem_van_een_Rosa_canina_01-06-2026._(actm.).jpg",
+        "autor": "Agnes Monkelbaan",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Rosa_canina_blatt_2005.05.26_11.50.13.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Rosa_canina_blatt_2005.05.26_11.50.13.jpg",
+        "autor": "Michael Becker",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Rosa_canina.jpg/960px-Rosa_canina.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Rosa_canina.jpg",
+        "autor": "nieznany autor",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kora",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/20140211Rosa_canina3.jpg/960px-20140211Rosa_canina3.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:20140211Rosa_canina3.jpg",
+        "autor": "AnRo0002",
+        "licencja": "CC0",
+        "licencja_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

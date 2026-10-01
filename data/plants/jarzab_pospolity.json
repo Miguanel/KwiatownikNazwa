@@ -4,7 +4,6 @@
   "nazwa_lat": "Sorbus aucuparia",
   "rodzina": "Różowate (Rosaceae)",
   "opis": "Niewielkie drzewo lub krzew o gładkiej, szarej korze i charakterystycznych, pierzastych liściach. Jarząb jest gatunkiem pionierskim, niezwykle odpornym na trudne warunki klimatyczne, rosnącym od nizin aż po piętro kosodrzewiny w górach. Jego jaskrawoczerwone owoce są nie tylko ozdobą, ale i cennym surowcem zielarskim, który ze względu na zawartość kwasu parasorbowego wymaga specjalnej obróbki przed spożyciem.",
-
   "profil_energetyczny": {
     "smak": "Kwaśny, cierpki, gorzki",
     "termika": "Chłodna",
@@ -12,7 +11,6 @@
     "zywiol": "Ogień i Powietrze",
     "opis": "Jarzębina działa silnie ściągająco i oczyszczająco. Chłodzi stany zapalne układu moczowego i jelit. W energetyce tradycyjnej uważana za roślinę, która 'rozjaśnia krew' i pomaga usunąć zastoje limfatyczne oraz mentalną ciężkość."
   },
-
   "wymagania": {
     "stanowisko": "Słoneczne do półcienistego. Najobficiej owocuje w pełnym słońcu.",
     "gleba": "Bardzo małe wymagania; rośnie na piaskach, torfowiskach i glebach kamienistych. Nie lubi jedynie gleb silnie wapiennych i zasolonych.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 2 (Ekstremalnie odporny na mrozy i wiatry).",
     "woda": "Dobrze znosi okresowe susze, ale najlepiej czuje się przy umiarkowanej wilgotności podłoża."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Liście nieparzystopierzaste, złożone z 9-15 lancetowatych, piłkowanych listków.",
@@ -39,7 +36,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "owoce": {
       "nazwa_surowca": "Fructus Sorbi",
@@ -62,23 +58,19 @@
       "czas_zbioru": "Maj - Czerwiec."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Przewlekłe nieżyty żołądka, biegunki (owoce suszone), zaparcia (świeży sok gotowany), kamica nerkowa, awitaminoza, profilaktyka chorób serca.",
     "kulinarne": "Konfitura z jarzębiny (idealna do dziczyzny i serów), nalewka 'Jarzębiak', soki, galaretki. Owoce jarzębiny jadalnej (odmiana 'Edulis') są pozbawione goryczy.",
     "ogrodowe": "Roślina pionierska, biocenotyczna (przyciąga mnóstwo ptaków, m.in. jemiołuszki i gile). Świetna do zadrzewień śródpolnych i pasów wiatrochronnych.",
     "rzemieslnicze": "Drewno jarzębu jest twarde, ciężkie i elastyczne. Cenione w tokarstwie i do wyrobu lasek oraz trzonków narzędzi."
   },
-
   "interakcje": "Brak istotnych interakcji z lekami, jednak ze względu na działanie moczopędne może nasilać efekt leków diuretycznych.",
-
   "ciekawostki": [
     "W tradycji celtyckiej jarzębina była drzewem życia i ochrony – sadzono ją przy domach, aby odstraszała złe duchy i czarownice.",
     "Owoce jarzębiny zawierają kwas sorbowy, który jest jednym z najpopularniejszych na świecie naturalnych konserwantów żywności (E200).",
     "Gorycz owoców znika po przemrożeniu, ponieważ skrobia przekształca się w cukry, a kwas parasorbowy ulega rozpadowi.",
     "Jarzębina potrafi przetrwać w górach na wysokościach, gdzie inne drzewa liściaste już nie dają sobie rady."
   ],
-
   "permakultura": {
     "funkcje": [
       "Kluczowy dostawca pokarmu dla ptaków zimujących (tzw. stołówka dla gili).",
@@ -87,17 +79,28 @@
       "Wypełniacz w gildiach drzew owocowych (przyciąga zapylacze i ptaki owadożerne)."
     ],
     "gildie": [
-      { "nazwa": "Świerk pospolity", "rola": "Często współwystępuje z jarzębiną w reglu górnym." },
-      { "nazwa": "Dzika róża", "rola": "Tworzą razem gęste zarośla biocenotyczne na miedzach." },
-      { "nazwa": "Borówka brusznica", "rola": "Roślina runa preferująca to samo kwaśne podłoże." }
+      {
+        "nazwa": "Świerk pospolity",
+        "rola": "Często współwystępuje z jarzębiną w reglu górnym."
+      },
+      {
+        "nazwa": "Dzika róża",
+        "rola": "Tworzą razem gęste zarośla biocenotyczne na miedzach."
+      },
+      {
+        "nazwa": "Borówka brusznica",
+        "rola": "Roślina runa preferująca to samo kwaśne podłoże."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór owoców na przetwory",
-        "miesiace": [10, 11],
+        "miesiace": [
+          10,
+          11
+        ],
         "opis": "Zbiór po pierwszych przymrozkach. Jeśli zbierasz wcześniej, włóż owoce do zamrażarki na 48h.",
         "faza_ksiezyca": "Księżyc ubywający",
         "pora_dnia": "Popołudnie",
@@ -106,13 +109,16 @@
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Odwilż Jelitowa (Na zaparcia i detoks)",
       "typ": "medyczne",
       "metoda": "odwar",
-      "tagi": ["trawienie", "nerki", "witaminy"],
+      "tagi": [
+        "trawienie",
+        "nerki",
+        "witaminy"
+      ],
       "skladniki": [
         "Suszone owoce jarzębiny: 1 łyżka",
         "Woda: 250 ml"
@@ -126,17 +132,26 @@
       "uwagi": "Działa łagodnie przeczyszczająco i odkaża drogi moczowe.",
       "roslina": "Jarząb pospolity",
       "slug": "jarzab_pospolity",
-      "cechy": ["cierpki, owocowy smak", "czerwonawy kolor"],
-      "wlasciwosci": ["witaminizująca", "moczopędna"]
+      "cechy": [
+        "cierpki, owocowy smak",
+        "czerwonawy kolor"
+      ],
+      "wlasciwosci": [
+        "witaminizująca",
+        "moczopędna"
+      ]
     }
   ],
-
   "przepisy_kulinarne": [
     {
       "tytul": "Konfitura 'Jarzębinowa Rozkosz' do mięs",
       "typ": "kulinarne",
       "metoda": "smażenie",
-      "tagi": ["konfitura", "dodatek do mięs", "dziczyzna"],
+      "tagi": [
+        "konfitura",
+        "dodatek do mięs",
+        "dziczyzna"
+      ],
       "skladniki": [
         "Owoce jarzębiny (przemrożone): 1 kg",
         "Gruszki lub jabłka: 0.5 kg",
@@ -154,5 +169,63 @@
       "slug": "jarzab_pospolity"
     }
   ],
-  "ostrzezenia": "NIGDY nie jedz dużej ilości surowych owoców jarzębiny! Kwas parasorbowy może wywołać silne zatrucie. Osoby z ciężkimi chorobami nerek powinny skonsultować się z lekarzem."
+  "ostrzezenia": "NIGDY nie jedz dużej ilości surowych owoców jarzębiny! Kwas parasorbowy może wywołać silne zatrucie. Osoby z ciężkimi chorobami nerek powinny skonsultować się z lekarzem.",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Rowan_tree_20081002b.jpg/960px-Rowan_tree_20081002b.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Eberesche_Knospen_und_Bl%C3%BCten.JPG/960px-Eberesche_Knospen_und_Bl%C3%BCten.JPG",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/2020_year._Herbarium._Sorbus_aucuparia._img-036.jpg/960px-2020_year._Herbarium._Sorbus_aucuparia._img-036.jpg",
+    "Owoce": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Sorbus_aucuparia_fruit_comparison.jpg/960px-Sorbus_aucuparia_fruit_comparison.jpg",
+    "Nasiona": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Young_trees_of_Sorbus_aucuparia.jpg/960px-Young_trees_of_Sorbus_aucuparia.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Rowan_tree_20081002b.jpg/960px-Rowan_tree_20081002b.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Rowan_tree_20081002b.jpg",
+        "autor": "Eeno11",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Eberesche_Knospen_und_Bl%C3%BCten.JPG/960px-Eberesche_Knospen_und_Bl%C3%BCten.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Eberesche_Knospen_und_Bl%C3%BCten.JPG",
+        "autor": "3268zauber",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/2020_year._Herbarium._Sorbus_aucuparia._img-036.jpg/960px-2020_year._Herbarium._Sorbus_aucuparia._img-036.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:2020_year._Herbarium._Sorbus_aucuparia._img-036.jpg",
+        "autor": "Dmitry Makeev",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Sorbus_aucuparia_fruit_comparison.jpg/960px-Sorbus_aucuparia_fruit_comparison.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Sorbus_aucuparia_fruit_comparison.jpg",
+        "autor": "Hekerui",
+        "licencja": "CC0",
+        "licencja_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Nasiona",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Young_trees_of_Sorbus_aucuparia.jpg/960px-Young_trees_of_Sorbus_aucuparia.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Young_trees_of_Sorbus_aucuparia.jpg",
+        "autor": "Triops1972",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

@@ -4,7 +4,6 @@
   "nazwa_lat": "Helichrysum arenarium",
   "rodzina": "Astrowate (Asteraceae)",
   "opis": "Wieloletnia roślina zielna o charakterystycznym srebrzystym owłosieniu, dorastająca do 30 cm. Występuje na piaszczystych nieużytkach, wydmach i w świetlistych borach sosnowych. Jej kwiatostany to intensywnie żółte, kuliste koszyczki, które w dotyku są suche i szeleszczące (stąd nazwa 'suchołuski'). Jest to roślina wybitnie przystosowana do skrajnej suszy i silnego nasłonecznienia.",
-
   "profil_energetyczny": {
     "smak": "Gorzki, lekko korzenny",
     "termika": "Neutralna ku chłodnej",
@@ -12,7 +11,6 @@
     "zywiol": "Ogień i Ziemia",
     "opis": "Kocanki to 'odblokowywacz' dróg żółciowych. Ich energia rozprasza zastoje 'gorącej wilgoci' w wątrobie, przywracając płynność procesom trawiennym. Działają jak wewnętrzne światło, które rozjaśnia metabolizm i pomaga organizmowi radzić sobie z ciężkostrawnymi tłuszczami."
   },
-
   "wymagania": {
     "stanowisko": "Pełne słońce. W cieniu roślina traci swoje srebrzyste owłosienie i nie kwitnie.",
     "gleba": "Uboga, piaszczysta, przepuszczalna, sucha. Wybitnie nie lubi nawożenia i stojącej wody.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 4 (Całkowicie mrozoodporna).",
     "woda": "Bardzo małe zapotrzebowanie; jedna z najbardziej odpornych na suszę roślin krajowych."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Cała roślina pokryta gęstym, białym, filcowatym kutnerem (srebrzysty wygląd).",
@@ -39,7 +36,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "kwiatostany": {
       "nazwa_surowca": "Inflorescentia Helichrysi (Flos Stoechados)",
@@ -56,16 +52,13 @@
       "ostrzezenia": "W Polsce roślina objęta częściową ochroną gatunkową! Zbiór ze stanu dzikiego do celów handlowych wymaga zezwolenia."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Niewydolność wątroby, przewlekłe zapalenie dróg żółciowych, kamica żółciowa (pomocniczo), zaburzenia trawienia tłuszczów, brak apetytu, detoksykacja organizmu.",
     "kulinarne": "BRAK (zbyt gorzkie). Choć ich krewniaczka (kocanka włoska) jest cenioną przyprawą.",
     "ogrodowe": "Roślina do ogrodów skalnych, żwirowych i na suche murki. Doskonała na suche bukiety i wieńce.",
     "rzemieslnicze": "Naturalny żółty barwnik do tkanin (dzięki izosalipurpozydowi)."
   },
-
   "interakcje": "Może nasilać działanie leków żółciopędnych i rozkurczowych. Nie łączyć z lekami przy ostrej niedrożności dróg żółciowych.",
-
   "ciekawostki": [
     "Nazwa 'Helichrysum' pochodzi od greckich słów 'helios' (słońce) i 'chrysos' (złoto).",
     "Ludowa nazwa 'kocanki' wzięła się od miękkich, owłosionych pędów, które w dotyku przypominają łapki kota.",
@@ -73,7 +66,6 @@
     "Są jedynym krajowym surowcem zawierającym izosalipurpozyd – związek o niezwykle silnym działaniu ochronnym na komórki wątroby (hepatoprotekcyjnym).",
     "Kocanki są rośliną wskaźnikową najuboższych piasków – tam, gdzie rosną, ziemia jest niemal pozbawiona próchnicy."
   ],
-
   "permakultura": {
     "funkcje": [
       "Stabilizacja lotnych piasków i wydm.",
@@ -82,18 +74,32 @@
       "Producent biomasy bogatej w specyficzne minerały pustynne."
     ],
     "gildie": [
-      { "nazwa": "Wrzos zwyczajny", "rola": "Tworzą razem ekosystemy suchych wrzosowisk." },
-      { "nazwa": "Macierzanka piaskowa", "rola": "Idealny partner na piaszczyste, słoneczne stanowiska." },
-      { "nazwa": "Sosna zwyczajna", "rola": "Kocanki to naturalny element runa w suchych borach." },
-      { "nazwa": "Dziewanna", "rola": "Dzieli to samo trudne, pustynne wręcz stanowisko." }
+      {
+        "nazwa": "Wrzos zwyczajny",
+        "rola": "Tworzą razem ekosystemy suchych wrzosowisk."
+      },
+      {
+        "nazwa": "Macierzanka piaskowa",
+        "rola": "Idealny partner na piaszczyste, słoneczne stanowiska."
+      },
+      {
+        "nazwa": "Sosna zwyczajna",
+        "rola": "Kocanki to naturalny element runa w suchych borach."
+      },
+      {
+        "nazwa": "Dziewanna",
+        "rola": "Dzieli to samo trudne, pustynne wręcz stanowisko."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Oczyszczanie stanowiska",
-        "miesiace": [4, 5],
+        "miesiace": [
+          4,
+          5
+        ],
         "opis": "Kocanka nienawidzi konkurencji wysokich traw – należy delikatnie pielić stanowisko.",
         "faza_ksiezyca": "Księżyc ubywający",
         "pora_dnia": "Wieczór",
@@ -101,7 +107,10 @@
       },
       {
         "czynnosc": "Zbiór kwiatostanów",
-        "miesiace": [7, 8],
+        "miesiace": [
+          7,
+          8
+        ],
         "opis": "Zbierać, gdy koszyczki nie są jeszcze w pełni rozwinięte, z krótką (1-2 cm) szypułką.",
         "faza_ksiezyca": "Pełnia",
         "pora_dnia": "Słoneczne popołudnie",
@@ -109,7 +118,11 @@
       },
       {
         "czynnosc": "Suszenie ziela",
-        "miesiace": [7, 8, 9],
+        "miesiace": [
+          7,
+          8,
+          9
+        ],
         "opis": "Suszyć w pęczkach w przewiewnym, zacienionym miejscu.",
         "faza_ksiezyca": "Księżyc ubywający",
         "pora_dnia": "Brak znaczenia",
@@ -117,13 +130,17 @@
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Napar 'Lekka Wątroba'",
       "typ": "medyczne",
       "metoda": "napar",
-      "tagi": ["wątroba", "żółć", "trawienie", "detoks"],
+      "tagi": [
+        "wątroba",
+        "żółć",
+        "trawienie",
+        "detoks"
+      ],
       "skladniki": [
         "Suszone kwiaty kocanek: 1 łyżka stołowa",
         "Woda: 250 ml"
@@ -137,9 +154,63 @@
       "uwagi": "Napar ma specyficzny, ziołowy aromat i lekko gorzki smak.",
       "roslina": "Kocanki piaskowe",
       "slug": "kocanki_piaskowe",
-      "cechy": ["żółty kolor", "korzenny zapach"],
-      "wlasciwosci": ["żółciopędna", "rozkurczowa"]
+      "cechy": [
+        "żółty kolor",
+        "korzenny zapach"
+      ],
+      "wlasciwosci": [
+        "żółciopędna",
+        "rozkurczowa"
+      ]
     }
   ],
-  "ostrzezenia": "NIE STOSOWAĆ przy niedrożności dróg żółciowych (kamienie blokujące przewód). Osoby z chorobą wrzodową żołądka powinny skonsultować się z lekarzem (gorycze zwiększają wydzielanie kwasu solnego)."
+  "ostrzezenia": "NIE STOSOWAĆ przy niedrożności dróg żółciowych (kamienie blokujące przewód). Osoby z chorobą wrzodową żołądka powinny skonsultować się z lekarzem (gorycze zwiększają wydzielanie kwasu solnego).",
+  "url": {
+    "Pokrój": "https://upload.wikimedia.org/wikipedia/commons/0/03/Helichrysum_arenarium.jpg",
+    "Kwiaty": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Helichrysum_arenarium.jpeg",
+    "Owoce": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Helichrysum_arenarium_kz2.jpg/960px-Helichrysum_arenarium_kz2.jpg",
+    "Rycina": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Helichrysum_arenarium001_cleaned.JPG/960px-Helichrysum_arenarium001_cleaned.JPG"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Helichrysum_arenarium.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Helichrysum_arenarium.jpg",
+        "autor": "nieznany autor",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Helichrysum_arenarium.jpeg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Helichrysum_arenarium.jpeg",
+        "autor": "Kristian Peters -- Fabelfroh 09:05, 1 November 2006 (UTC)",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Helichrysum_arenarium_kz2.jpg/960px-Helichrysum_arenarium_kz2.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Helichrysum_arenarium_kz2.jpg",
+        "autor": "Kenraiz",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Rycina",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Helichrysum_arenarium001_cleaned.JPG/960px-Helichrysum_arenarium001_cleaned.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Helichrysum_arenarium001_cleaned.JPG",
+        "autor": "File:Helichrysum arenarium001.jpg : Oceancetaceen - Alice Chodura derivative work: Kenraiz",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

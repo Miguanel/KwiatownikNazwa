@@ -4,7 +4,6 @@
   "nazwa_lat": "Valeriana officinalis",
   "rodzina": "Kozłkowate (Valerianaceae)",
   "opis": "Wieloletnia, wysoka bylina (do 1,5 m) występująca na wilgotnych łąkach i w zaroślach. Charakteryzuje się baldachowatymi kwiatostanami o słodkim, mdłym zapachu, które w miarę suszenia korzenia zmieniają się w bardzo intensywny, charakterystyczny aromat. Kozłek jest jednym z najstarszych znanych ludzkości środków uspokajających, stosowanym już w starożytnej Grecji i Rzymie jako 'panaceum' na dolegliwości nerwowe.",
-
   "profil_energetyczny": {
     "smak": "Ostry, gorzki, lekko słodkawy",
     "termika": "Ciepła",
@@ -12,7 +11,6 @@
     "zywiol": "Ziemia i Woda",
     "opis": "Kozłek to 'kotwica emocjonalna'. Jego energia sprowadza nadmiar rozproszonego Qi z głowy w dół, uziemiając i uspokajając gonitwę myśli. Działa rozkurczowo na fizyczne napięcia powstałe pod wpływem stresu (tzw. 'ścisk w żołądku')."
   },
-
   "wymagania": {
     "stanowisko": "Słoneczne do półcienistego. Najlepiej czuje się w miejscach jasnych, ale o wilgotnym powietrzu.",
     "gleba": "Żyzna, próchniczna, wilgotna, zasobna w wapń. Kocha doliny rzeczne i torfowiska.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 4 (Całkowicie mrozoodporny).",
     "woda": "Wysokie zapotrzebowanie; w czasie suszy korzeń drewnieje i traci wartość leczniczą."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Liście nieparzystopierzaste, naprzeciwległe, z licznymi listkami (często ząbkowanymi).",
@@ -35,7 +32,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "korzen_i_klacze": {
       "nazwa_surowca": "Radix Valerianae cum Rhizomate",
@@ -52,16 +48,13 @@
       "ostrzezenia": "Suszyć w temp. do 35°C. Zapach korzenia jest bardzo atrakcyjny dla kotów – należy chronić suszarnię!"
     }
   },
-
   "zastosowanie": {
     "medyczne": "Bezsenność, stany lękowe, nerwice serca i przewodu pokarmowego, bolesne miesiączki, migreny na tle nerwowym, trudności w koncentracji wywołane stresem.",
     "kulinarne": "BRAK. Roślina o bardzo specyficznym smaku, używana wyłącznie jako lek.",
     "ogrodowe": "Roślina miododajna, przyciąga wiele gatunków owadów zapylających. W ogrodach ozdobnych ceniona za ażurowy pokrój.",
     "rzemieslnicze": "Wyciągi z kozłka są stosowane w rolnictwie biodynamicznym do wzmacniania odporności roślin na przymrozki (opryski)."
   },
-
   "interakcje": "Nasila działanie leków nasennych, uspokajających i przeciwdepresyjnych. Nie łączyć z alkoholem. Może osłabiać koncentrację (ostrożnie przy prowadzeniu pojazdów).",
-
   "ciekawostki": [
     "Zapach schnącego korzenia kozłka działa na koty jak silny afrodyzjak i narkotyk (podobny do kocimiętki) – koty potrafią wygrzebać świeżo posadzony korzeń z ziemi.",
     "W średniowieczu wierzono, że kozłek chroni przed czarami i elfami, dlatego wieszano go nad drzwiami domów.",
@@ -69,7 +62,6 @@
     "Nazwa 'waleriana' pochodzi prawdopodobnie od łacińskiego 'valere' – być zdrowym, silnym.",
     "Szczurołap z Hameln według niektórych legend używał korzenia kozłka, aby zwabić szczury, które (podobnie jak koty) są wrażliwe na ten zapach."
   ],
-
   "permakultura": {
     "funkcje": [
       "Dynamiczny akumulator fosforu.",
@@ -78,16 +70,23 @@
       "Siedlisko dla bzygów."
     ],
     "gildie": [
-      { "nazwa": "Pomidory", "rola": "Kozłek poprawia smak i zdrowotność pomidorów rosnących w pobliżu." },
-      { "nazwa": "Żywokost", "rola": "Partnerzy w wilgotnych, żyznych strefach ogrodu." }
+      {
+        "nazwa": "Pomidory",
+        "rola": "Kozłek poprawia smak i zdrowotność pomidorów rosnących w pobliżu."
+      },
+      {
+        "nazwa": "Żywokost",
+        "rola": "Partnerzy w wilgotnych, żyznych strefach ogrodu."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Wykopywanie korzeni",
-        "miesiace": [10],
+        "miesiace": [
+          10
+        ],
         "opis": "Pozyskiwanie surowca z roślin dwuletnich. Korzenie należy szybko umyć i rozdrobnić przed suszeniem.",
         "faza_ksiezyca": "Nów (faza korzenia)",
         "pora_dnia": "Wieczór",
@@ -95,13 +94,17 @@
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Nalewka Walerianowa 'Dobry Sen'",
       "typ": "medyczne",
       "metoda": "maceracja alkoholowa",
-      "tagi": ["sen", "stres", "nerwy", "uspokojenie"],
+      "tagi": [
+        "sen",
+        "stres",
+        "nerwy",
+        "uspokojenie"
+      ],
       "skladniki": [
         "Suszony korzeń kozłka: 50g",
         "Alkohol 70%: 250ml"
@@ -115,9 +118,73 @@
       "uwagi": "Nie stosować codziennie przez dłuższy czas (powyżej 2 tygodni) – może wywołać efekt paradoksalny (pobudzenie).",
       "roslina": "Kozłek lekarski",
       "slug": "kozlek_lekarski",
-      "cechy": ["intensywny zapach", "brunatny kolor"],
-      "wlasciwosci": ["uspokajająca", "nasenna"]
+      "cechy": [
+        "intensywny zapach",
+        "brunatny kolor"
+      ],
+      "wlasciwosci": [
+        "uspokajająca",
+        "nasenna"
+      ]
     }
   ],
-  "ostrzezenia": "Nie stosować u dzieci poniżej 12 roku życia bez konsultacji. U niektórych osób kozłek może powodować tzw. 'hangover' (ociężałość poranną). Przerwać stosowanie co najmniej 2 tygodnie przed planowaną operacją (wpływ na narkozę)."
+  "ostrzezenia": "Nie stosować u dzieci poniżej 12 roku życia bez konsultacji. U niektórych osób kozłek może powodować tzw. 'hangover' (ociężałość poranną). Przerwać stosowanie co najmniej 2 tygodnie przed planowaną operacją (wpływ na narkozę).",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Valeriana_officinalis_-_Niitv%C3%A4lja.jpg/960px-Valeriana_officinalis_-_Niitv%C3%A4lja.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Spotted_longhorn_%28Rutpela_maculata%29_female_on_common_valerian_%28Valeriana_officinalis%29_Ruggeller_Riet.jpg/960px-Spotted_longhorn_%28Rutpela_maculata%29_female_on_common_valerian_%28Valeriana_officinalis%29_Ruggeller_Riet.jpg",
+    "Liście": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Valeriana_officinalis.jpg",
+    "Korzeń": "https://upload.wikimedia.org/wikipedia/commons/3/32/ValerianEssentialOil.png",
+    "Rycina": "https://upload.wikimedia.org/wikipedia/commons/7/73/156_Valeriana_officinalis_L.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Valeriana_officinalis_-_Niitv%C3%A4lja.jpg/960px-Valeriana_officinalis_-_Niitv%C3%A4lja.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Valeriana_officinalis_-_Niitv%C3%A4lja.jpg",
+        "autor": "Ivar Leidus",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Spotted_longhorn_%28Rutpela_maculata%29_female_on_common_valerian_%28Valeriana_officinalis%29_Ruggeller_Riet.jpg/960px-Spotted_longhorn_%28Rutpela_maculata%29_female_on_common_valerian_%28Valeriana_officinalis%29_Ruggeller_Riet.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Spotted_longhorn_(Rutpela_maculata)_female_on_common_valerian_(Valeriana_officinalis)_Ruggeller_Riet.jpg",
+        "autor": "Charles J. Sharp",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Valeriana_officinalis.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Valeriana_officinalis.jpg",
+        "autor": "nieznany autor",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Korzeń",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/ValerianEssentialOil.png",
+        "plik": "https://commons.wikimedia.org/wiki/File:ValerianEssentialOil.png",
+        "autor": "Itineranttrader",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Rycina",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/156_Valeriana_officinalis_L.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:156_Valeriana_officinalis_L.jpg",
+        "autor": "Amédée Masclef",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

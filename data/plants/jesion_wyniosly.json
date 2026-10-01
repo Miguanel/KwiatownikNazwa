@@ -4,7 +4,6 @@
   "nazwa_lat": "Fraxinus excelsior",
   "rodzina": "Oliwkowate (Oleaceae)",
   "opis": "Wysokie, majestatyczne drzewo liściaste, osiągające do 40 m wysokości. Charakteryzuje się prostym pniem i luźną, wysoko osadzoną koroną. Jesion jest bliskim krewnym oliwki, co przejawia się w składzie chemicznym jego kory. Jest to drzewo długowieczne (do 300 lat), które kocha wilgoć i żyzne gleby. Jego drewno jest legendarne ze względu na połączenie twardości z ekstremalną elastycznością.",
-
   "profil_energetyczny": {
     "smak": "Gorzki, ściągający",
     "termika": "Chłodna",
@@ -12,7 +11,6 @@
     "zywiol": "Powietrze i Woda",
     "opis": "Jesion to 'udrażniacz kanałów'. Jego energia pomaga usunąć zastoje płynów w stawach i nerkach. Chłodzi 'gorące' stany zapalne układu ruchu i pomaga rozproszyć mentalną ociężałość, przywracając jasność myślenia i lekkość bytu."
   },
-
   "wymagania": {
     "stanowisko": "Słoneczne do półcienistego. Młode okazy znoszą cień, starsze potrzebują pełnego światła.",
     "gleba": "Bardzo żyzna, głęboka, próchniczna, wilgotna (ale nie bagienna). Uwielbia doliny rzeczne i podnóża gór.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 4 (Odporny na mrozy, ale wrażliwy na późne przymrozki majowe, które niszczą młode liście).",
     "woda": "Wysokie zapotrzebowanie; jesion jest 'pompą wodną' krajobrazu."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Pąki zimowe są MATOWOCZARNE, aksamitne w dotyku i ustawione naprzeciwlegle (najważniejsza cecha rozpoznawcza zimą).",
@@ -39,7 +36,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "liscie": {
       "nazwa_surowca": "Folium Fraxini",
@@ -66,16 +62,13 @@
       "czas_zbioru": "Kwiecień - Maj."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Reumatyzm, artretyzm (dna moczanowa), obrzęki, kamica nerkowa, przewlekłe choroby skóry wynikające ze złej przemiany materii, gorączka.",
     "kulinarne": "Młode owoce jesionu (jeszcze zielone i miękkie) mogą być marynowane jak kapary. Liście służyły dawniej jako pasza dla zwierząt, poprawiająca jakość mleka.",
     "ogrodowe": "Wspaniałe drzewo parkowe i alejowe. W ogrodach permakulturowych służy jako dostawca biomasy i stabilizator wilgotnych stref.",
     "rzemieslnicze": "Drewno jesionowe jest cenione wyżej niż dębowe w produkcji trzonków narzędzi, kijów hokejowych, nart, wioseł i łuków ze względu na swoją sprężystość."
   },
-
   "interakcje": "Działa moczopędnie – może nasilać efekt diuretyków syntetycznych. Brak znanych istotnych działań toksycznych.",
-
   "ciekawostki": [
     "W mitologii nordyckiej jesion Yggdrasil łączył świat bogów, ludzi i zmarłych. Wierzono, że pierwszy mężczyzna, Ask, został stworzony właśnie z pnia jesionu.",
     "Jesionowe drewno jest tak elastyczne, że można je giąć po sparowaniu do niemal dowolnego kształtu, co wykorzystywano przy budowie dawnych kół wozów.",
@@ -83,7 +76,6 @@
     "Jesion jest drzewem 'egoistycznym' – jego liście rozwijają się jako ostatnie na wiosnę, a opadają jako jedne z pierwszych jesienią (często jeszcze zielone po pierwszym przymrozku).",
     "Herbata z liści jesionu była niegdyś nazywana 'herbatą myśliwych', ponieważ pomagała łagodzić bóle stawów po długich wędrówkach."
   ],
-
   "permakultura": {
     "funkcje": [
       "Dynamiczny akumulator wapnia i magnezu.",
@@ -92,17 +84,27 @@
       "Prowiant zimowy dla niektórych zwierząt leśnych (owoce)."
     ],
     "gildie": [
-      { "nazwa": "Wiąz", "rola": "Częsty partner w lasach łęgowych." },
-      { "nazwa": "Czosnek niedźwiedzi", "rola": "Uwielbia żyzną i wilgotną ziemię pod koroną jesionów." },
-      { "nazwa": "Kalina koralowa", "rola": "Partner w dolnym piętrze wilgotnych zadrzewień." }
+      {
+        "nazwa": "Wiąz",
+        "rola": "Częsty partner w lasach łęgowych."
+      },
+      {
+        "nazwa": "Czosnek niedźwiedzi",
+        "rola": "Uwielbia żyzną i wilgotną ziemię pod koroną jesionów."
+      },
+      {
+        "nazwa": "Kalina koralowa",
+        "rola": "Partner w dolnym piętrze wilgotnych zadrzewień."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór liści do suszenia",
-        "miesiace": [6],
+        "miesiace": [
+          6
+        ],
         "opis": "Zbiór liści bez ogonków, gdy są w pełni wykształcone, ale jeszcze młode.",
         "faza_ksiezyca": "Księżyc przybywający",
         "pora_dnia": "Przedpołudnie",
@@ -110,13 +112,17 @@
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Napar 'Lekkie Stawy'",
       "typ": "medyczne",
       "metoda": "napar",
-      "tagi": ["reumatyzm", "dna moczanowa", "detoks", "stawy"],
+      "tagi": [
+        "reumatyzm",
+        "dna moczanowa",
+        "detoks",
+        "stawy"
+      ],
       "skladniki": [
         "Suszone liście jesionu: 1 łyżka stołowa",
         "Woda: 250 ml"
@@ -132,5 +138,63 @@
       "slug": "jesion_wyniosly"
     }
   ],
-  "ostrzezenia": "Obecnie jesiony w Europie są zagrożone przez grzyba *Hymenoscyphus fraxineus* (zamieranie jesionów) – przy zbiorze należy unikać drzew wykazujących objawy choroby (uschnięte wierzchołki pędów)."
+  "ostrzezenia": "Obecnie jesiony w Europie są zagrożone przez grzyba *Hymenoscyphus fraxineus* (zamieranie jesionów) – przy zbiorze należy unikać drzew wykazujących objawy choroby (uschnięte wierzchołki pędów).",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Fraxinus_excelsior_001.jpg/960px-Fraxinus_excelsior_001.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Ash_flower.JPG/960px-Ash_flower.JPG",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Ash_%28Fraxinus_excelsior%29_Wales_160730_%28Tony_Holkham%29.jpg/960px-Ash_%28Fraxinus_excelsior%29_Wales_160730_%28Tony_Holkham%29.jpg",
+    "Owoce": "https://upload.wikimedia.org/wikipedia/commons/7/7c/EurAshSeeds.jpg",
+    "Nasiona": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Ash_mast_at_Eglinton.JPG/960px-Ash_mast_at_Eglinton.JPG"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Fraxinus_excelsior_001.jpg/960px-Fraxinus_excelsior_001.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Fraxinus_excelsior_001.jpg",
+        "autor": "Willow",
+        "licencja": "CC BY 2.5",
+        "licencja_url": "https://creativecommons.org/licenses/by/2.5",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Ash_flower.JPG/960px-Ash_flower.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Ash_flower.JPG",
+        "autor": "Donar Reiskoffer",
+        "licencja": "CC BY 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Ash_%28Fraxinus_excelsior%29_Wales_160730_%28Tony_Holkham%29.jpg/960px-Ash_%28Fraxinus_excelsior%29_Wales_160730_%28Tony_Holkham%29.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Ash_(Fraxinus_excelsior)_Wales_160730_(Tony_Holkham).jpg",
+        "autor": "Tony Holkham",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/EurAshSeeds.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:EurAshSeeds.jpg",
+        "autor": "nieznany autor",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Nasiona",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Ash_mast_at_Eglinton.JPG/960px-Ash_mast_at_Eglinton.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Ash_mast_at_Eglinton.JPG",
+        "autor": "Rosser1954 Roger Griffith",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

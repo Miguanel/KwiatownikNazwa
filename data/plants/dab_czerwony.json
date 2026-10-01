@@ -4,7 +4,6 @@
   "nazwa_lat": "Quercus rubra",
   "rodzina": "Bukowate (Fagaceae)",
   "opis": "Potężne, szybko rosnące drzewo pochodzące z Ameryki Północnej. W Europie uznawany za gatunek inwazyjny, ponieważ dzięki swojej odporności i tempu wzrostu potrafi wypierać rodzime dęby. Jego nazwa pochodzi od spektakularnego, krwistoczerwonego przebarwienia liści jesienią. Posiada charakterystyczną, gładką przez wiele lat korę i liście o ostro zakończonych klapach.",
-
   "profil_energetyczny": {
     "smak": "Cierpki, gorzki",
     "termika": "Zimna",
@@ -12,7 +11,6 @@
     "zywiol": "Ziemia i Metal",
     "opis": "Dąb czerwony ma energię 'agresywną' i surową. Działa wybitnie ściągająco, szybko zamykając pory skóry i naczynia krwionośne. W energetyce tradycyjnej uważany za drzewo o silnym wpływie ochronnym, ale wymagające ostrożności ze względu na bardzo wysoką zawartość tanin."
   },
-
   "wymagania": {
     "stanowisko": "Pełne słońce. Jest znacznie bardziej światłożądny od dębu szypułkowego.",
     "gleba": "Mało wymagający; rośnie nawet na suchych, piaszczystych glebach, choć preferuje podłoża świeże i głębokie.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 4 (Bardzo wysoka; odporniejszy na mrozy od gatunków rodzimych).",
     "woda": "Wysoka odporność na suszę; nie toleruje natomiast długotrwałego zalewania i wysokiego poziomu wód gruntowych."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Liście o ostro zakończonych klapach (każda kończy się małą ością).",
@@ -39,7 +36,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "kora": {
       "nazwa_surowca": "Cortex Quercus rubrae",
@@ -57,36 +53,41 @@
     "liscie": {
       "nazwa_surowca": "Folium Quercus rubrae",
       "opis_botaniczny": "Duże (do 25 cm), sztywne, z 7-11 ostrymi klapami. Zbierane, gdy są intensywnie zielone.",
-      "skladniki_aktywne": ["Garbniki", "Kwercetyna", "Kwasy organiczne"],
+      "skladniki_aktywne": [
+        "Garbniki",
+        "Kwercetyna",
+        "Kwasy organiczne"
+      ],
       "wlasciwości": "Ściągające, pomocne w pielęgnacji cery tłustej i w kąpielach przy nadmiernej potliwości.",
       "czas_zbioru": "Czerwiec - Sierpień."
     },
     "owoce": {
       "nazwa_surowca": "Glandes Quercus rubrae (Żołędzie czerwone)",
       "opis_botaniczny": "Szerokie, jajowate orzechy. Dojrzewają w drugim roku (u dębów rodzimych w pierwszym).",
-      "skladniki_aktywne": ["Skrobia", "Tłuszcze", "Białka", "Bardzo wysoka zawartość tanin (bardzo gorzkie)"],
+      "skladniki_aktywne": [
+        "Skrobia",
+        "Tłuszcze",
+        "Białka",
+        "Bardzo wysoka zawartość tanin (bardzo gorzkie)"
+      ],
       "wlasciwości": "Odżywcze, ale wymagają wielokrotnego ługowania (płukania), by usunąć gorycz.",
       "czas_zbioru": "Wrzesień - Październik.",
       "ostrzezenia": "Surowe żołędzie są niejadalne i mogą powodować zatrucia u zwierząt monogastrycznych (konie, psy)."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Głównie zewnętrzne: kąpiele stóp (grzybice, potliwość), okłady na oparzenia, płukanki do włosów przetłuszczających się i ciemnych (lekko przyciemnia).",
     "kulinarne": "Możliwe wykorzystanie żołędzi na mąkę i kawę, jednak proces usuwania goryczy trwa dwa razy dłużej niż u dębów rodzimych.",
     "ogrodowe": "Jedno z najpopularniejszych drzew ozdobnych w miastach ze względu na odporność na spaliny i piękne kolory jesienią.",
     "rzemieslnicze": "Drewno dębu czerwonego jest cenione w meblarstwie i na parkiety, ale UWAGA: ma otwarte naczynia (jest porowate), przez co NIE nadaje się na beczki do wina i alkoholi (przecieka)."
   },
-
   "interakcje": "Identyczne jak u innych dębów: blokuje wchłanianie żelaza, magnezu oraz wielu leków (np. kodeiny, antybiotyków). Zachować 3h odstępu.",
-
   "ciekawostki": [
     "Drewno dębu czerwonego jest tak porowate, że można przez krótki kawałek deseczki wydmuchać bąbelki powietrza w wodzie.",
     "W Ameryce Północnej rdzenni mieszkańcy używali kory dębu czerwonego do leczenia biegunki i czerwonki.",
     "Dąb czerwony rośnie o około 30-50% szybciej niż dąb szypułkowy w tych samych warunkach.",
     "Jesienny kolor zależy od pH gleby – na kwaśnych jest krwistoczerwony, na bardziej zasadowych brązowieje."
   ],
-
   "permakultura": {
     "funkcje": [
       "Błyskawiczna produkcja biomasy i drewna opałowego.",
@@ -95,18 +96,28 @@
       "Dynamiczny akumulator minerałów z głębszych warstw gleby."
     ],
     "gildie": [
-      { "nazwa": "Sosna zwyczajna", "rola": "Tworzą stabilne lasy mieszane na piaszczystych terenach." },
-      { "nazwa": "Borówka wysoka (Amerykańska)", "rola": "Sąsiad preferujący to samo kwaśne podłoże." },
-      { "nazwa": "Wrzos zwyczajny", "rola": "Naturalna okrywa gleby pod dębami czerwonymi." }
+      {
+        "nazwa": "Sosna zwyczajna",
+        "rola": "Tworzą stabilne lasy mieszane na piaszczystych terenach."
+      },
+      {
+        "nazwa": "Borówka wysoka (Amerykańska)",
+        "rola": "Sąsiad preferujący to samo kwaśne podłoże."
+      },
+      {
+        "nazwa": "Wrzos zwyczajny",
+        "rola": "Naturalna okrywa gleby pod dębami czerwonymi."
+      }
     ],
     "ostrzezenie_ekologiczne": "W lasach naturalnych należy ograniczać jego siew, gdyż jego liście rozkładają się bardzo wolno, zmieniając chemię gleby i hamując wzrost rodzimych roślin."
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór kory do celów leczniczych",
-        "miesiace": [4],
+        "miesiace": [
+          4
+        ],
         "opis": "Pozyskiwanie z gałęzi wycinanych podczas formowania korony. Kora dębu czerwonego jest cieńsza i szybciej schnie.",
         "faza_ksiezyca": "Nów (soki zaczynają krążyć)",
         "pora_dnia": "Poranek",
@@ -115,7 +126,9 @@
       },
       {
         "czynnosc": "Grabienie liści na kompost",
-        "miesiace": [11],
+        "miesiace": [
+          11
+        ],
         "opis": "Liście dębu czerwonego są bogate w garbniki, co hamuje rozwój pleśni. Wymagają dłuższego kompostowania.",
         "faza_ksiezyca": "Księżyc ubywający",
         "pora_dnia": "Dowolna",
@@ -124,13 +137,17 @@
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Kąpiel 'Garbnikowa Tarcza' (Grzybice i Potliwość)",
       "typ": "medyczne",
       "metoda": "odwar",
-      "tagi": ["stopy", "grzybica", "potliwość", "skóra"],
+      "tagi": [
+        "stopy",
+        "grzybica",
+        "potliwość",
+        "skóra"
+      ],
       "skladniki": [
         "Kora dębu czerwonego (rozmielona): 5 łyżek",
         "Liść szałwii: 2 łyżki",
@@ -145,16 +162,23 @@
       "uwagi": "Odwar silnie barwi ręczniki i skórę na brązowo.",
       "roslina": "Dąb czerwony",
       "slug": "dab_czerwony",
-      "wlasciwosci": ["antyseptyczna", "przeciwgrzybicza", "ściągająca"]
+      "wlasciwosci": [
+        "antyseptyczna",
+        "przeciwgrzybicza",
+        "ściągająca"
+      ]
     }
   ],
-
   "przepisy_kulinarne": [
     {
       "tytul": "Mąka żołędziowa (Metoda Wielokrotnego Ługowania)",
       "typ": "kulinarne",
       "metoda": "ługowanie",
-      "tagi": ["mąka", "survival", "pieczenie"],
+      "tagi": [
+        "mąka",
+        "survival",
+        "pieczenie"
+      ],
       "skladniki": [
         "Żołędzie dębu czerwonego (obrane i posiekane)",
         "Woda źródlana lub przefiltrowana",
@@ -170,5 +194,63 @@
       "slug": "dab_czerwony"
     }
   ],
-  "ostrzezenia": "Kora dębu czerwonego działa silniej ściągająco niż inne gatunki – nie stosować na otwarte, krwawiące rany (tworzy twardy strup, pod którym mogą rozwijać się bakterie). Unikać kontaktu z żelazem (czernieje)."
+  "ostrzezenia": "Kora dębu czerwonego działa silniej ściągająco niż inne gatunki – nie stosować na otwarte, krwawiące rany (tworzy twardy strup, pod którym mogą rozwijać się bakterie). Unikać kontaktu z żelazem (czernieje).",
+  "url": {
+    "Pokrój": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Quercusrubra.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/20130424Quercus_rubra3.jpg/960px-20130424Quercus_rubra3.jpg",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/2019-11-26_13_24_38_A_Red_Oak_during_late_autumn_along_a_walking_path_in_the_Franklin_Glen_section_of_Chantilly%2C_Fairfax_County%2C_Virginia.jpg/960px-2019-11-26_13_24_38_A_Red_Oak_during_late_autumn_along_a_walking_path_in_the_Franklin_Glen_section_of_Chantilly%2C_Fairfax_County%2C_Virginia.jpg",
+    "Owoce": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/%D0%A7%D0%B5%D1%80%D0%B2%D0%B5%D0%BD_%D0%B4%D1%8A%D0%B1_%E2%80%93_%D0%B6%D1%8A%D0%BB%D1%8A%D0%B4%D0%B8_7_%28cropped%29.jpg/960px-%D0%A7%D0%B5%D1%80%D0%B2%D0%B5%D0%BD_%D0%B4%D1%8A%D0%B1_%E2%80%93_%D0%B6%D1%8A%D0%BB%D1%8A%D0%B4%D0%B8_7_%28cropped%29.jpg",
+    "Kora": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Red_Oak_Quercus_Rubra_Bark_Vertical_High_DoF.JPG/960px-Red_Oak_Quercus_Rubra_Bark_Vertical_High_DoF.JPG"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Quercusrubra.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Quercusrubra.jpg",
+        "autor": "Romeyn Beck Hough (Life time: 1923)",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/20130424Quercus_rubra3.jpg/960px-20130424Quercus_rubra3.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:20130424Quercus_rubra3.jpg",
+        "autor": "AnRo0002",
+        "licencja": "CC0",
+        "licencja_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/2019-11-26_13_24_38_A_Red_Oak_during_late_autumn_along_a_walking_path_in_the_Franklin_Glen_section_of_Chantilly%2C_Fairfax_County%2C_Virginia.jpg/960px-2019-11-26_13_24_38_A_Red_Oak_during_late_autumn_along_a_walking_path_in_the_Franklin_Glen_section_of_Chantilly%2C_Fairfax_County%2C_Virginia.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:2019-11-26_13_24_38_A_Red_Oak_during_late_autumn_along_a_walking_path_in_the_Franklin_Glen_section_of_Chantilly,_Fairfax_County,_Virginia.jpg",
+        "autor": "Famartin",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/%D0%A7%D0%B5%D1%80%D0%B2%D0%B5%D0%BD_%D0%B4%D1%8A%D0%B1_%E2%80%93_%D0%B6%D1%8A%D0%BB%D1%8A%D0%B4%D0%B8_7_%28cropped%29.jpg/960px-%D0%A7%D0%B5%D1%80%D0%B2%D0%B5%D0%BD_%D0%B4%D1%8A%D0%B1_%E2%80%93_%D0%B6%D1%8A%D0%BB%D1%8A%D0%B4%D0%B8_7_%28cropped%29.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:%D0%A7%D0%B5%D1%80%D0%B2%D0%B5%D0%BD_%D0%B4%D1%8A%D0%B1_%E2%80%93_%D0%B6%D1%8A%D0%BB%D1%8A%D0%B4%D0%B8_7_(cropped).jpg",
+        "autor": "Димитър Найденов / Dimìtar Nàydenov",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kora",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Red_Oak_Quercus_Rubra_Bark_Vertical_High_DoF.JPG/960px-Red_Oak_Quercus_Rubra_Bark_Vertical_High_DoF.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Red_Oak_Quercus_Rubra_Bark_Vertical_High_DoF.JPG",
+        "autor": "Photo by and (c)2016 Derek Ramsey ( Ram-Man )",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

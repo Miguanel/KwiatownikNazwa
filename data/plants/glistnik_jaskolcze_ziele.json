@@ -4,7 +4,6 @@
   "nazwa_lat": "Chelidonium majus",
   "rodzina": "Makowate (Papaveraceae)",
   "opis": "Wieloletnia roślina zielna, pospolita w lasach, ogrodach i przy murach. Charakterystyczną cechą glistnika jest jaskrawopomarańczowy sok mleczny, który pojawia się natychmiast po złamaniu łodygi. Nazwa 'jaskółcze ziele' wywodzi się z wierzeń starożytnych, według których roślina ta zakwita wraz z przylotem jaskółek i zamiera przy ich odlocie. Jest to jedna z najsilniej działających roślin w polskiej florze, nazywana czasem 'polskim opium' ze względu na silne właściwości rozkurczowe i uspokajające.",
-
   "profil_energetyczny": {
     "smak": "Bardzo gorzki, palący, ostry",
     "termika": "Gorąca",
@@ -12,7 +11,6 @@
     "zywiol": "Ogień",
     "opis": "Glistnik 'rozbija' zastoje energii w wątrobie i drogach żółciowych. Jego gorąca i gorzka natura skutecznie osusza 'wilgotne gorąco' (stany zapalne z wysiękiem) i zabija intruzów (wirusy, bakterie, pasożyty). Działa gwałtownie i zdecydowanie, poruszając krew i soki trawienne."
   },
-
   "wymagania": {
     "stanowisko": "Półcień do cienia. Bardzo dobrze czuje się w miejscach osłoniętych, przy murach, płotach i w zaroślach.",
     "gleba": "Żyzna, wilgotna, zasobna w azot i wapń. Często spotykany na terenach ruderalnych i w starych ogrodach.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 4 (Całkowicie mrozoodporny).",
     "woda": "Lubi stałą wilgotność, ale potrafi przetrwać krótkie okresy suszy dzięki silnemu systemowi korzeniowemu."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Jaskrawopomarańczowy, gęsty sok mleczny po złamaniu łodygi lub liścia.",
@@ -35,7 +32,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "ziele": {
       "nazwa_surowca": "Herba Chelidonii",
@@ -54,7 +50,9 @@
     "korzen": {
       "nazwa_surowca": "Radix Chelidonii",
       "opis_botaniczny": "Wykopywany jesienią lub wczesną wiosną.",
-      "skladniki_aktywne": ["Znacznie wyższe stężenie alkaloidów niż w zielu (nawet do 3%)"],
+      "skladniki_aktywne": [
+        "Znacznie wyższe stężenie alkaloidów niż w zielu (nawet do 3%)"
+      ],
       "wlasciwości": "Stosowany głównie do sporządzania silnych ekstraktów farmaceutycznych.",
       "czas_zbioru": "Październik."
     },
@@ -64,23 +62,19 @@
       "ostrzezenia": "Silnie drażniący – chronić oczy! Może powodować oparzenia zdrowej skóry."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Kamica żółciowa (napady kolki), dyskineza dróg żółciowych, skurcze przewodu pokarmowego, bolesne miesiączki. Zewnętrznie: leczenie kurzajek, grzybic skóry, trudno gojących się ran.",
     "kulinarne": "BRAK. Roślina jest trująca i nie nadaje się do spożycia jako pokarm.",
     "ogrodowe": "Roślina wskaźnikowa gleb bogatych w azot. Wyciągi z glistnika mogą być stosowane do zwalczania mszyc i przędziorków.",
     "rzemieslnicze": "Pomarańczowy sok był dawniej używany jako barwnik oraz składnik preparatów do trawienia metali."
   },
-
   "interakcje": "Nie łączyć z lekami silnie obciążającymi wątrobę, neuroleptykami oraz innymi roślinami zawierającymi silne alkaloidy. Może nasilać działanie leków uspokajających.",
-
   "ciekawostki": [
     "Starożytni Grecy wierzyli, że jaskółki przemywają oczy piskląt sokiem z glistnika, aby przywrócić im wzrok.",
     "Alkaloidy glistnika mają strukturę zbliżoną do morfiny, co tłumaczy ich silne działanie przeciwbólowe i uspokajające.",
     "Nasiona glistnika posiadają elajosomy (wyrostki tłuszczowe), które przyciągają mrówki – to one roznoszą roślinę po całym ogrodzie.",
     "W medycynie ludowej nazywany 'niebieskim olejem' (mimo pomarańczowego koloru soku), co odnosiło się do jego 'niebiańskiej' skuteczności."
   ],
-
   "permakultura": {
     "funkcje": [
       "Dynamiczny akumulator azotu.",
@@ -89,16 +83,24 @@
       "Pokarm dla larw niektórych chrząszczy."
     ],
     "gildie": [
-      { "nazwa": "Bez czarny", "rola": "Glistnik świetnie czuje się w azotowej ziemi u podnóża bzu." },
-      { "nazwa": "Pokrzywa zwyczajna", "rola": "Tworzą razem zespół roślin nitrofilnych (azotolubnych)." }
+      {
+        "nazwa": "Bez czarny",
+        "rola": "Glistnik świetnie czuje się w azotowej ziemi u podnóża bzu."
+      },
+      {
+        "nazwa": "Pokrzywa zwyczajna",
+        "rola": "Tworzą razem zespół roślin nitrofilnych (azotolubnych)."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór ziela",
-        "miesiace": [5, 6],
+        "miesiace": [
+          5,
+          6
+        ],
         "opis": "Ścinanie kwitnących wierzchołków pędów. Suszenie w zacienionym, przewiewnym miejscu (ziele musi zachować naturalny kolor).",
         "faza_ksiezyca": "Księżyc przybywający (najwięcej soków)",
         "pora_dnia": "Przedpołudnie",
@@ -107,13 +109,17 @@
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Metoda na Kurzajki (Świeży Sok)",
       "typ": "medyczne",
       "metoda": "aplikacja bezpośrednia",
-      "tagi": ["kurzajki", "brodawki", "wirusy", "skóra"],
+      "tagi": [
+        "kurzajki",
+        "brodawki",
+        "wirusy",
+        "skóra"
+      ],
       "skladniki": [
         "Świeża łodyga glistnika jaskółcze ziele"
       ],
@@ -125,14 +131,25 @@
       "uwagi": "Sok pozostawia trwałe, brązowe plamy na skórze i ubraniu. Chronić oczy!",
       "roslina": "Glistnik jaskółcze ziele",
       "slug": "glistnik_jaskolcze_ziele",
-      "cechy": ["pomarańczowy kolor", "pieczenie"],
-      "wlasciwosci": ["przeciwwirusowa", "żrąca"]
+      "cechy": [
+        "pomarańczowy kolor",
+        "pieczenie"
+      ],
+      "wlasciwosci": [
+        "przeciwwirusowa",
+        "żrąca"
+      ]
     },
     {
       "tytul": "Intrakt Glistnikowy (Na skurcze i wątrobę)",
       "typ": "medyczne",
       "metoda": "intrakt (ekstrakcja na gorąco)",
-      "tagi": ["wątroba", "skurcze", "trawienie", "ból"],
+      "tagi": [
+        "wątroba",
+        "skurcze",
+        "trawienie",
+        "ból"
+      ],
       "skladniki": [
         "Świeże ziele glistnika: 100g",
         "Gorący alkohol 40-60%: 500ml"
@@ -148,5 +165,63 @@
       "slug": "glistnik_jaskolcze_ziele"
     }
   ],
-  "ostrzezenia": "ROŚLINA SILNIE DZIAŁAJĄCA I POTENCJALNIE TOKSYCZNA. Nie stosować w ciąży (powoduje skurcze macicy), przy jaskrze (podnosi ciśnienie wewnątrzgałkowe) oraz przy chorobie wrzodowej żołądka. Przedawkowanie objawia się pieczeniem w ustach, wymiotami i krwawą biegunką."
+  "ostrzezenia": "ROŚLINA SILNIE DZIAŁAJĄCA I POTENCJALNIE TOKSYCZNA. Nie stosować w ciąży (powoduje skurcze macicy), przy jaskrze (podnosi ciśnienie wewnątrzgałkowe) oraz przy chorobie wrzodowej żołądka. Przedawkowanie objawia się pieczeniem w ustach, wymiotami i krwawą biegunką.",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Chelidonium_majus_bgiu.jpg/960px-Chelidonium_majus_bgiu.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Bia%C5%82owie%C5%BCa_glistnik_jask%C3%B3%C5%82cze_ziele.jpg/960px-Bia%C5%82owie%C5%BCa_glistnik_jask%C3%B3%C5%82cze_ziele.jpg",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Chelidonium_majus_scan.jpg/960px-Chelidonium_majus_scan.jpg",
+    "Owoce": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Compilation_of_seeds_with_elaiosomes_2.jpg/960px-Compilation_of_seeds_with_elaiosomes_2.jpg",
+    "Nasiona": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Chelidonium_majus_kz05.jpg/960px-Chelidonium_majus_kz05.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Chelidonium_majus_bgiu.jpg/960px-Chelidonium_majus_bgiu.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Chelidonium_majus_bgiu.jpg",
+        "autor": "nieznany autor",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Bia%C5%82owie%C5%BCa_glistnik_jask%C3%B3%C5%82cze_ziele.jpg/960px-Bia%C5%82owie%C5%BCa_glistnik_jask%C3%B3%C5%82cze_ziele.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Bia%C5%82owie%C5%BCa_glistnik_jask%C3%B3%C5%82cze_ziele.jpg",
+        "autor": "Agnieszka Kwiecień ( Nova )",
+        "licencja": "CC BY 2.5",
+        "licencja_url": "https://creativecommons.org/licenses/by/2.5",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Chelidonium_majus_scan.jpg/960px-Chelidonium_majus_scan.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Chelidonium_majus_scan.jpg",
+        "autor": "Sigman",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Compilation_of_seeds_with_elaiosomes_2.jpg/960px-Compilation_of_seeds_with_elaiosomes_2.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Compilation_of_seeds_with_elaiosomes_2.jpg",
+        "autor": "Hans Stuessi",
+        "licencja": "CC BY 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Nasiona",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Chelidonium_majus_kz05.jpg/960px-Chelidonium_majus_kz05.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Chelidonium_majus_kz05.jpg",
+        "autor": "Krzysztof Ziarnek, Kenraiz",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

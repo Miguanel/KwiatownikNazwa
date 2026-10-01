@@ -4,7 +4,6 @@
   "nazwa_lat": "Humulus lupulus",
   "rodzina": "Konopiowate (Cannabaceae)",
   "opis": "Wieloletnia, dwupienna roślina pnąca (bylina), której pędy co roku zamierają, by wiosną wyrosnąć z podziemnego kłącza (karpy). Chmiel wspina się owijając wokół podpór zawsze w prawą stronę (zgodnie z ruchem wskazówek zegara). Jest rośliną o ogromnej sile witalnej, potrafiącą dorosnąć do 8-10 metrów w ciągu jednego sezonu. W fitoterapii ceniony za unikalną żywicę – lupulinę, która jest jednym z najskuteczniejszych naturalnych środków uspokajających.",
-
   "profil_energetyczny": {
     "smak": "Wybitnie gorzki, aromatyczny",
     "termika": "Zimna",
@@ -12,7 +11,6 @@
     "zywiol": "Powietrze i Woda",
     "opis": "Chmiel działa jako 'środek chłodzący' dla rozpalonego umysłu. Gorzki smak 'ściąga' energię w dół, pomagając uziemić osoby nadpobudliwe, nerwowe i cierpiące na bezsenność. Rozluźnia napięcia w splotach nerwowych i chłodzi nadmiar pożądania (działanie anafrodyzyjne u mężczyzn)."
   },
-
   "wymagania": {
     "stanowisko": "Słoneczne do półcienistego. Wymaga miejsc osłoniętych od silnych wiatrów, które mogą zrywać pędy z podpór.",
     "gleba": "Głęboka, żyzna, próchniczna, wilgotna, bogata w azot. Najlepiej rośnie na madach nadrzecznych i czarnoziemach.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 4 (Część podziemna jest całkowicie mrozoodporna).",
     "woda": "Wysokie zapotrzebowanie na wodę, szczególnie w okresie intensywnego wzrostu i zawiązywania szyszek."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Łodyga wspinająca się, kanciasta, pokryta haczykowatymi włoskami, które ułatwiają czepianie się podpór i mogą ranić skórę.",
@@ -39,7 +36,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "szyszki": {
       "nazwa_surowca": "Strobilus Lupuli",
@@ -67,23 +63,19 @@
       "czas_zbioru": "Marzec - Kwiecień."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Trudności w zasypianiu, stany lękowe, nadpobudliwość, napięcie nerwowe, zaburzenia okresu przekwitania (uderzenia gorąca), problemy trawienne (brak łaknienia), nadmierne libido u mężczyzn.",
     "kulinarne": "Piwowarstwo (nadaje goryczkę i aromat, konserwuje piwo). Młode pędy chmielu smażone na maśle są uważane za jedno z najdroższych i najsmaczniejszych dzikich warzyw (tzw. szparagi chmielowe).",
     "ogrodowe": "Szybko rosnąca roślina osłonowa do tworzenia zielonych ścian i altan. Wymaga silnych podpór.",
     "rzemieslnicze": "Wyciągi z chmielu stosuje się w kosmetykach przeciwstarzeniowych (ksantohumol) oraz w szamponach dla blondynek. Włókna z łodyg chmielu mogą być używane do wyrobu grubego papieru i sznurów."
   },
-
   "interakcje": "Potęguje działanie leków uspokajających, nasennych i alkoholu. Ze względu na działanie estrogenne może wchodzić w interakcje z hormonalną terapią zastępczą i środkami antykoncepcyjnymi.",
-
   "ciekawostki": [
     "Chmiel to najszybciej rosnąca bylina w polskiej florze – w sprzyjających warunkach pędy rosną 10-15 cm na dobę.",
     "W starożytności chmiel uważano za 'wilka wierzbowego' (Lupus salictarius), ponieważ obserwowano, jak dusi wierzby, owijając się wokół nich.",
     "Szyszki chmielu są naturalnym konserwantem – to dzięki nim piwo mogło przetrwać długie transporty morskie w czasach kolonialnych (styl IPA).",
     "Pracownicy przy zbiorze chmielu często skarżyli się na nadmierną senność – to wynik wdychania lotnych olejków i kontaktu lupuliny ze skórą."
   ],
-
   "permakultura": {
     "funkcje": [
       "Akumulator dynamiczny azotu i krzemionki.",
@@ -92,24 +84,38 @@
       "Schronienie dla owadów w gęstych splotach pędów."
     ],
     "gildie": [
-      { "nazwa": "Wierzba", "rola": "Naturalna podpora, choć chmiel może ją zdominować." },
-      { "nazwa": "Pokrzywa", "rola": "Obie rośliny kochają te same żyzne, azotowe siedliska." },
-      { "nazwa": "Drzewa owocowe", "rola": "Chmiel może być prowadzony po starych drzewach, ale trzeba kontrolować jego ekspansję." }
+      {
+        "nazwa": "Wierzba",
+        "rola": "Naturalna podpora, choć chmiel może ją zdominować."
+      },
+      {
+        "nazwa": "Pokrzywa",
+        "rola": "Obie rośliny kochają te same żyzne, azotowe siedliska."
+      },
+      {
+        "nazwa": "Drzewa owocowe",
+        "rola": "Chmiel może być prowadzony po starych drzewach, ale trzeba kontrolować jego ekspansję."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór szparagów chmielowych",
-        "miesiace": [3, 4],
+        "miesiace": [
+          3,
+          4
+        ],
         "opis": "Odgrzebywanie ziemi wokół karpy i wycinanie białych, podziemnych pędów.",
         "faza_ksiezyca": "Księżyc przybywający",
         "wplyw_ksiezyca": "Większa kruchość i soczystość pędów."
       },
       {
         "czynnosc": "Zbiór szyszek",
-        "miesiace": [8, 9],
+        "miesiace": [
+          8,
+          9
+        ],
         "opis": "Zbiór całych szyszek z okazów żeńskich, gdy po naciśnięciu szeleszczą i szybko wracają do pierwotnego kształtu.",
         "faza_ksiezyca": "Pełnia",
         "pora_dnia": "Przedpołudnie",
@@ -118,13 +124,17 @@
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Poduszka Chmielowa na bezsenność",
       "typ": "medyczne",
       "metoda": "aromaterapia kontaktowa",
-      "tagi": ["sen", "bezsenność", "stres", "dzieci"],
+      "tagi": [
+        "sen",
+        "bezsenność",
+        "stres",
+        "dzieci"
+      ],
       "skladniki": [
         "Wysuszone szyszki chmielu: ok. 200-300g",
         "Opcjonalnie: suszona lawenda lub macierzanka: 50g",
@@ -138,14 +148,24 @@
       "uwagi": "Wsad należy wymieniać co 2-3 miesiące, gdyż lupulina się utlenia i traci właściwości.",
       "roslina": "Chmiel zwyczajny",
       "slug": "chmiel_zwyczajny",
-      "cechy": ["intensywny zapach", "szelest"],
-      "wlasciwosci": ["uspokajająca", "nasenna"]
+      "cechy": [
+        "intensywny zapach",
+        "szelest"
+      ],
+      "wlasciwosci": [
+        "uspokajająca",
+        "nasenna"
+      ]
     },
     {
       "tytul": "Napar na wyciszenie",
       "typ": "medyczne",
       "metoda": "napar",
-      "tagi": ["nerwy", "trawienie", "sen"],
+      "tagi": [
+        "nerwy",
+        "trawienie",
+        "sen"
+      ],
       "skladniki": [
         "Rozdrobnione szyszki chmielu: 1 łyżka",
         "Woda: 250 ml"
@@ -160,13 +180,16 @@
       "slug": "chmiel_zwyczajny"
     }
   ],
-
   "przepisy_kulinarne": [
     {
       "tytul": "Szparagi chmielowe na maśle",
       "typ": "kulinarne",
       "metoda": "smażenie/duszenie",
-      "tagi": ["warzywo", "dzika kuchnia", "delikatesy"],
+      "tagi": [
+        "warzywo",
+        "dzika kuchnia",
+        "delikatesy"
+      ],
       "skladniki": [
         "Młode pędy chmielu (białe lub fioletowe): 1 garść",
         "Masło klarowane: 1 łyżka",
@@ -182,5 +205,43 @@
       "slug": "chmiel_zwyczajny"
     }
   ],
-  "ostrzezenia": "Ze względu na działanie na układ hormonalny, chmiel nie jest zalecany chłopcom w okresie dojrzewania oraz mężczyznom z zaburzeniami erekcji. Może powodować nadmierną senność – nie stosować przed prowadzeniem pojazdów."
+  "ostrzezenia": "Ze względu na działanie na układ hormonalny, chmiel nie jest zalecany chłopcom w okresie dojrzewania oraz mężczyznom z zaburzeniami erekcji. Może powodować nadmierną senność – nie stosować przed prowadzeniem pojazdów.",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Hopfen1.jpg/960px-Hopfen1.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Hop_mannelijke_bloeiwijze_Humulus_lupulus_male_plant.jpg/960px-Hop_mannelijke_bloeiwijze_Humulus_lupulus_male_plant.jpg",
+    "Rycina": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Bock_Hopffen.jpg/960px-Bock_Hopffen.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Hopfen1.jpg/960px-Hopfen1.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Hopfen1.jpg",
+        "autor": "No machine-readable author provided. Hagen Graebner assumed (based on copyright claims).",
+        "licencja": "CC BY-SA 2.5",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/2.5",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Hop_mannelijke_bloeiwijze_Humulus_lupulus_male_plant.jpg/960px-Hop_mannelijke_bloeiwijze_Humulus_lupulus_male_plant.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Hop_mannelijke_bloeiwijze_Humulus_lupulus_male_plant.jpg",
+        "autor": "Rasbak",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Rycina",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Bock_Hopffen.jpg/960px-Bock_Hopffen.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Bock_Hopffen.jpg",
+        "autor": "Unknown author Unknown author",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

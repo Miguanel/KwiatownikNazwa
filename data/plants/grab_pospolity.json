@@ -4,7 +4,6 @@
   "nazwa_lat": "Carpinus betulus",
   "rodzina": "Brzozowate (Betulaceae)",
   "opis": "Średniej wielkości drzewo liściaste, dorastające do 25 m wysokości. Najbardziej charakterystyczny jest jego pień – rzadko idealnie okrągły, zazwyczaj falisty, z wyraźnymi podłużnymi zgrubieniami przypominającymi napięte mięśnie. Kora jest gładka, popielatoszara, z ciemniejszymi smugami. Grab jest królem europejskich ogrodów barokowych, ponieważ fenomenalnie znosi cięcie i formowanie, tworząc niemal nieprzebyte zielone ściany.",
-
   "profil_energetyczny": {
     "smak": "Cierpki, gorzkawy",
     "termika": "Chłodna",
@@ -12,7 +11,6 @@
     "zywiol": "Ziemia",
     "opis": "Grab to energia czystej wytrzymałości i stabilności. Jego działanie jest skupione na wzmacnianiu struktur – zarówno tkanek w organizmie, jak i fizycznych barier w ogrodzie. Pomaga 'ściągać' rozproszoną energię i przywracać tonus osłabionym narządom."
   },
-
   "wymagania": {
     "stanowisko": "Cieniste do słonecznego. Jest jednym z najbardziej cienioznośnych drzew liściastych w Polsce.",
     "gleba": "Żyzna, świeża, próchniczna, gliniasto-piaszczysta. Nie lubi gleb bardzo suchych oraz silnie zakwaszonych.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 5 (Całkowicie mrozoodporny, choć młode liście mogą ucierpieć od późnych przymrozków).",
     "woda": "Umiarkowane zapotrzebowanie; dobrze znosi okresowe zalewanie, ale źle czuje się na terenach trwale bagiennych."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Pień o charakterystycznym 'umięśnionym' przekroju, kora gładka ze smugami.",
@@ -39,7 +36,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "liscie": {
       "nazwa_surowca": "Folium Carpini",
@@ -56,21 +52,21 @@
     "pąki": {
       "nazwa_surowca": "Gemmae Carpini",
       "opis_botaniczny": "Świeże pąki zbierane tuż przed pęknięciem wczesną wiosną.",
-      "skladniki_aktywne": ["Związki specyficzne dla tkanek merystematycznych", "Fitohormony"],
+      "skladniki_aktywne": [
+        "Związki specyficzne dla tkanek merystematycznych",
+        "Fitohormony"
+      ],
       "wlasciwości": "Kluczowy surowiec w gemmoterapii – regeneruje śluzówkę dróg oddechowych, wspomaga pracę zatok i zwiększa liczbę płytek krwi (trombocytów).",
       "czas_zbioru": "Marzec - Kwiecień."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Stany zapalne gardła, afty, drobne rany skóry, chroniczne zapalenie zatok (pąki), rekonwalescencja po chorobach dróg oddechowych.",
     "kulinarne": "BRAK. Liście są jadalne dla zwierząt (cenna pasza), dla ludzi zbyt twarde i cierpkie.",
     "ogrodowe": "Najlepsza roślina na formowane żywopłoty (tzw. ściany grabowe). Może być stosowany do budowy altan z 'żywego drewna' (pleaching).",
     "rzemieslnicze": "Drewno grabowe ('żelazne drewno') używane do wyrobu elementów maszyn, kół zębatych, trzonków do młotków, strugów stolarskich, a nawet części mechanicznych fortepianów."
   },
-
   "interakcje": "Napar z liści ze względu na garbniki może ograniczać wchłanianie żelaza. Brak innych znanych interakcji.",
-
   "ciekawostki": [
     "Drewno grabu jest tak gęste i twarde, że dawniej wykonywano z niego jarzma dla wołów oraz osie wozów, które musiały wytrzymać ogromne przeciążenia.",
     "Grab posiada niesamowitą zdolność do zrastania się gałęzi – jeśli dwa pędy będą się o siebie ocierać, z czasem stworzą jedną całość, co wykorzystuje się w rzeźbiarstwie ogrodowym.",
@@ -78,7 +74,6 @@
     "Zasuszone liście grabu często pozostają na gałązkach przez całą zimę, co chroni pąki przed mroźnym wiatrem i zapewnia prywatność w ogrodowych żywopłotach nawet w styczniu.",
     "Węgiel drzewny z grabu jest uważany za jeden z najbardziej kalorycznych i był ceniony przez dawnych kowali."
   ],
-
   "permakultura": {
     "funkcje": [
       "Najlepsza bariera wiatrochronna i dźwiękochłonna w formie żywopłotu.",
@@ -87,36 +82,52 @@
       "Kopalnia wysokokalorycznego drewna opałowego."
     ],
     "gildie": [
-      { "nazwa": "Dąb szypułkowy", "rola": "Tworzą razem naturalne grądy (lasy dębowo-grabowe)." },
-      { "nazwa": "Przylaszczka pospolita", "rola": "Roślina runa idealnie czująca się w cieniu grabów." },
-      { "nazwa": "Leszczyna", "rola": "Częsty partner w podszycie leśnym." }
+      {
+        "nazwa": "Dąb szypułkowy",
+        "rola": "Tworzą razem naturalne grądy (lasy dębowo-grabowe)."
+      },
+      {
+        "nazwa": "Przylaszczka pospolita",
+        "rola": "Roślina runa idealnie czująca się w cieniu grabów."
+      },
+      {
+        "nazwa": "Leszczyna",
+        "rola": "Częsty partner w podszycie leśnym."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Cięcie żywopłotu",
-        "miesiace": [6, 8],
+        "miesiace": [
+          6,
+          8
+        ],
         "opis": "Pierwsze cięcie w czerwcu (po zakończeniu głównego przyrostu), drugie w sierpniu dla zagęszczenia.",
         "faza_ksiezyca": "Księżyc ubywający",
         "wplyw_ksiezyca": "Ogranicza 'płakanie' rośliny i spowalnia odrost, co pozwala dłużej cieszyć się formą."
       },
       {
         "czynnosc": "Zbiór pąków do gemmoterapii",
-        "miesiace": [3],
+        "miesiace": [
+          3
+        ],
         "opis": "Zbiór pączków nabrzmiałych, ale jeszcze nie otwartych.",
         "faza_ksiezyca": "Księżyc przybywający"
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Gliceryt z pąków grabu (Na zatoki)",
       "typ": "medyczne",
       "metoda": "maceracja glicerynowo-alkoholowa",
-      "tagi": ["zatoki", "odporność", "gemmoterapia"],
+      "tagi": [
+        "zatoki",
+        "odporność",
+        "gemmoterapia"
+      ],
       "skladniki": [
         "Świeże pąki grabu: 1 część",
         "Gliceryna roślinna: 1 część",
@@ -133,5 +144,63 @@
       "slug": "grab_pospolity"
     }
   ],
-  "ostrzezenia": "Ze względu na wysoką zawartość garbników w liściach, osoby z przewlekłymi zaparciami powinny ograniczyć stosowanie wewnętrzne naparów."
+  "ostrzezenia": "Ze względu na wysoką zawartość garbników w liściach, osoby z przewlekłymi zaparciami powinny ograniczyć stosowanie wewnętrzne naparów.",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Carpinus_betulus_-_Hunsr%C3%BCck_001.jpg/960px-Carpinus_betulus_-_Hunsr%C3%BCck_001.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Carpinus_betulus_kz1.jpg/960px-Carpinus_betulus_kz1.jpg",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Hainbuche_Carpinus_betulus_Fulda_Juni_2012.JPG/960px-Hainbuche_Carpinus_betulus_Fulda_Juni_2012.JPG",
+    "Owoce": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/20130801Hainbuche_Schwetzinger_Hardt2.jpg/960px-20130801Hainbuche_Schwetzinger_Hardt2.jpg",
+    "Nasiona": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Common_hornbeam_growing_in_plastic_tree_shelter_tube_inside_view.jpg/960px-Common_hornbeam_growing_in_plastic_tree_shelter_tube_inside_view.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Carpinus_betulus_-_Hunsr%C3%BCck_001.jpg/960px-Carpinus_betulus_-_Hunsr%C3%BCck_001.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Carpinus_betulus_-_Hunsr%C3%BCck_001.jpg",
+        "autor": "Willow",
+        "licencja": "CC BY 2.5",
+        "licencja_url": "https://creativecommons.org/licenses/by/2.5",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Carpinus_betulus_kz1.jpg/960px-Carpinus_betulus_kz1.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Carpinus_betulus_kz1.jpg",
+        "autor": "Kenraiz , Krzysztof Ziarnek",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Hainbuche_Carpinus_betulus_Fulda_Juni_2012.JPG/960px-Hainbuche_Carpinus_betulus_Fulda_Juni_2012.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Hainbuche_Carpinus_betulus_Fulda_Juni_2012.JPG",
+        "autor": "4028mdk09",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/20130801Hainbuche_Schwetzinger_Hardt2.jpg/960px-20130801Hainbuche_Schwetzinger_Hardt2.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:20130801Hainbuche_Schwetzinger_Hardt2.jpg",
+        "autor": "AnRo0002",
+        "licencja": "CC0",
+        "licencja_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Nasiona",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Common_hornbeam_growing_in_plastic_tree_shelter_tube_inside_view.jpg/960px-Common_hornbeam_growing_in_plastic_tree_shelter_tube_inside_view.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Common_hornbeam_growing_in_plastic_tree_shelter_tube_inside_view.jpg",
+        "autor": "RobbieIanMorrison",
+        "licencja": "CC BY 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by/4.0",
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

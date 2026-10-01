@@ -4,7 +4,6 @@
   "nazwa_lat": "Viburnum opulus",
   "rodzina": "Piżmaczkowate (Adoxaceae) / dawniej Przewiertniowate",
   "opis": "Rozłożysty krzew dorastający do 4-5 metrów wysokości, występujący pospolicie w wilgotnych lasach i zaroślach. Słynie z jaskrawoczerwonych, lśniących owoców, które zwisają w ciężkich baldachach i pozostają na krzewie długo po opadnięciu liści. Liście kaliny są szerokie, 3-5 klapowe, przypominające liście klonu. Jest to roślina o ogromnej sile symbolicznej w tradycji ludowej, obecna w pieśniach i legendach jako metafora dziewczęcej urody i nieszczęśliwej miłości.",
-
   "profil_energetyczny": {
     "smak": "Gorzki, cierpki, kwaśny",
     "termika": "Chłodna",
@@ -12,7 +11,6 @@
     "zywiol": "Woda i Ziemia",
     "opis": "Kalina działa wybitnie rozkurczowo i 'uspokajająco' na tkanki. Jej energia chłodzi stany zapalne w obrębie miednicy mniejszej i 'wycisza' nadmierne skurcze. Pomaga zatrzymać krwawienia (energia ściągająca) i stabilizuje gospodarkę płynami w organizmie."
   },
-
   "wymagania": {
     "stanowisko": "Półcieniste do słonecznego. Najlepiej owocuje w miejscach jasnych, ale o wilgotnym powietrzu.",
     "gleba": "Żyzna, próchniczna, wybitnie wilgotna, a nawet podmokła. Dobrze znosi okresowe zalewanie podłoża.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 3 (Całkowicie mrozoodporna, jedna z najbardziej wytrzymałych roślin krajowych).",
     "woda": "Bardzo wysokie zapotrzebowanie; źle znosi suszę, która powoduje szybkie opadanie liści i atak mszyc."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Liście 3-5 klapowe, grubo piłkowane, spodem owłosione, przebarwiające się jesienią na szkarłatnopurpurowo.",
@@ -39,7 +36,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "kora": {
       "nazwa_surowca": "Cortex Viburni",
@@ -75,16 +71,13 @@
       "czas_zbioru": "Maj - Czerwiec."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Bolesne miesiączkowanie, PMS, skurcze macicy, ryzyko poronienia (pod ścisłą kontrolą lekarza!), menopauza, nadciśnienie tętnicze, nerwice, przeziębienia (owoce).",
     "kulinarne": "Konfitury, soki, galaretki, sosy do mięs (syberyjski przysmak). Owoce idealnie komponują się z jabłkiem lub gruszką, co łagodzi ich charakterystyczną gorycz.",
     "ogrodowe": "Obsadzanie brzegów stawów, rowów melioracyjnych i wilgotnych zakątków ogrodu. Roślina miododajna i biocenotyczna.",
     "rzemieslnicze": "Drewno kaliny jest twarde i elastyczne; dawniej wyrabiano z niego szewskie kołki, strzały oraz drobne narzędzia. Kora służy do barwienia tkanin na odcienie różu i czerwieni."
   },
-
   "interakcje": "Brak istotnych interakcji z lekami, jednak ze względu na wpływ na mięśniówkę macicy, stosowanie w ciąży musi być bezwzględnie konsultowane z ginekologiem.",
-
   "ciekawostki": [
     "Owoce kaliny po roztarciu wydzielają specyficzny zapach, który przypomina niektórym 'stare skarpety' lub ser – jest to wynik obecności kwasu masłowego i walerianowego. Zapach ten znika po zagotowaniu.",
     "W tradycji ludowej wierzono, że dziewczyna, która umarła przed ślubem, zamienia się w krzew kaliny.",
@@ -92,7 +85,6 @@
     "Kalina jest jedną z nielicznych roślin, której owoce są chętniej zjadane przez ptaki (jemiołuszki, gile) zimą, gdy kilkukrotnie przemarzną i stracą gorycz.",
     "Na Podlasiu kalina zdobiła groby panien i kawalerów jako symbol czystości."
   ],
-
   "permakultura": {
     "funkcje": [
       "Stabilizacja podmokłych brzegów i skarp (silny system korzeniowy).",
@@ -101,17 +93,28 @@
       "Bioindykator stałej, wysokiej wilgotności gleby."
     ],
     "gildie": [
-      { "nazwa": "Olcha czarna", "rola": "Tworzą razem stabilne zbiorowiska łęgowe." },
-      { "nazwa": "Bez czarny", "rola": "Partner w gęstych zaroślach nadrzecznych." },
-      { "nazwa": "Hortensja", "rola": "W ogrodach ozdobnych tworzą harmonijną grupę wilgociolubną." }
+      {
+        "nazwa": "Olcha czarna",
+        "rola": "Tworzą razem stabilne zbiorowiska łęgowe."
+      },
+      {
+        "nazwa": "Bez czarny",
+        "rola": "Partner w gęstych zaroślach nadrzecznych."
+      },
+      {
+        "nazwa": "Hortensja",
+        "rola": "W ogrodach ozdobnych tworzą harmonijną grupę wilgociolubną."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór owoców po przymrozkach",
-        "miesiace": [11, 12],
+        "miesiace": [
+          11,
+          12
+        ],
         "opis": "Zbiór całych kiści. Przemrożenie na krzewie naturalnie redukuje gorycz i rozkłada śladowe ilości saponin.",
         "faza_ksiezyca": "Księżyc ubywający",
         "pora_dnia": "Poranek",
@@ -119,19 +122,26 @@
       },
       {
         "czynnosc": "Zbiór kory",
-        "miesiace": [3, 4],
+        "miesiace": [
+          3,
+          4
+        ],
         "opis": "Pozyskiwanie kory przed rozwinięciem liści. Suszenie w temp. do 40°C.",
         "faza_ksiezyca": "Nów (faza korzenia i kory)"
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Odwar z kory 'Ratunek Kobiecy'",
       "typ": "medyczne",
       "metoda": "odwar",
-      "tagi": ["bolesne miesiączki", "skurcze", "PMS", "macica"],
+      "tagi": [
+        "bolesne miesiączki",
+        "skurcze",
+        "PMS",
+        "macica"
+      ],
       "skladniki": [
         "Rozdrobniona kora kaliny: 1 łyżka stołowa",
         "Woda: 250 ml"
@@ -145,17 +155,26 @@
       "uwagi": "Działa niezwykle skutecznie, rozluźniając napięcie w dole brzucha.",
       "roslina": "Kalina koralowa",
       "slug": "kalina_koralowa",
-      "cechy": ["cierpki smak", "jasnobrunatny kolor"],
-      "wlasciwosci": ["rozkurczowa", "przeciwbólowa"]
+      "cechy": [
+        "cierpki smak",
+        "jasnobrunatny kolor"
+      ],
+      "wlasciwosci": [
+        "rozkurczowa",
+        "przeciwbólowa"
+      ]
     }
   ],
-
   "przepisy_kulinarne": [
     {
       "tytul": "Kalinowe Powidła z Jabłkiem",
       "typ": "kulinarne",
       "metoda": "gotowanie i przecieranie",
-      "tagi": ["konfitura", "odporność", "serce"],
+      "tagi": [
+        "konfitura",
+        "odporność",
+        "serce"
+      ],
       "skladniki": [
         "Owoce kaliny (przemrożone 5 dni w zamrażarce): 1 kg",
         "Słodkie jabłka: 1 kg",
@@ -173,5 +192,63 @@
       "slug": "kalina_koralowa"
     }
   ],
-  "ostrzezenia": "Zbiór owoców z dzikich stanowisk w lasach może być ograniczony prawnie. Nigdy nie jedz dużej ilości surowych, twardych owoców – może to spowodować silne podrażnienie żołądka i wymioty."
+  "ostrzezenia": "Zbiór owoców z dzikich stanowisk w lasach może być ograniczony prawnie. Nigdy nie jedz dużej ilości surowych, twardych owoców – może to spowodować silne podrażnienie żołądka i wymioty.",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Viburnum_opulus_bunched.jpg/960px-Viburnum_opulus_bunched.jpg",
+    "Kwiaty": "https://upload.wikimedia.org/wikipedia/commons/7/78/Viburnum_nectaries_kz.jpg",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Galerucella_viburni_kz.jpg/960px-Galerucella_viburni_kz.jpg",
+    "Owoce": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Viburnum_01.JPG/960px-Viburnum_01.JPG",
+    "Nasiona": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Viburnum_opulus_kz18.jpg/960px-Viburnum_opulus_kz18.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Viburnum_opulus_bunched.jpg/960px-Viburnum_opulus_bunched.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Viburnum_opulus_bunched.jpg",
+        "autor": "Waitblock",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Viburnum_nectaries_kz.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Viburnum_nectaries_kz.jpg",
+        "autor": "Krzysztof Ziarnek ( Kenraiz )",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Galerucella_viburni_kz.jpg/960px-Galerucella_viburni_kz.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Galerucella_viburni_kz.jpg",
+        "autor": "Kenraiz",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Viburnum_01.JPG/960px-Viburnum_01.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Viburnum_01.JPG",
+        "autor": "Lestat (Jan Mehlich)",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Nasiona",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Viburnum_opulus_kz18.jpg/960px-Viburnum_opulus_kz18.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Viburnum_opulus_kz18.jpg",
+        "autor": "Krzysztof Ziarnek, Kenraiz",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }
