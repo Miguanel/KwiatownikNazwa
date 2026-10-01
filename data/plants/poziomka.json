@@ -4,7 +4,6 @@
   "nazwa_lat": "Fragaria vesca",
   "rodzina": "Różowate (Rosaceae)",
   "opis": "Mała, wieloletnia bylina leśna tworząca liczne rozłogi. Słynie z niepowtarzalnego aromatu owoców, ale w zielarstwie jej liście są cenione wyżej niż owoce jako jeden z najbezpieczniejszych i najskuteczniejszych środków oczyszczających drogi moczowe i krew.",
-
   "profil_energetyczny": {
     "smak": "Kwaśno-słodki (owoce), cierpki (liście)",
     "termika": "Chłodna",
@@ -12,7 +11,6 @@
     "zywiol": "Woda",
     "opis": "Owoce budują płyny ciała i gaszą pragnienie (Jin). Liście 'przepłukują' nerki, usuwając wilgotne gorąco i toksyny metaboliczne (np. kwas moczowy)."
   },
-
   "wymagania": {
     "stanowisko": "Półcień do słonecznego (na słońcu owoce są słodsze, w cieniu liście są okazalsze).",
     "gleba": "Lekka, piaszczysto-gliniasta, bogata w próchnicę, umiarkowanie wilgotna.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 3 (Bardzo wysoka mrozoodporność).",
     "woda": "Lubi stałą wilgotność; znosi susze przechodząc w stan uśpienia, ale wtedy nie owocuje."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Liście trójdzielne, grubo piłkowane, spodem jedwabisto owłosione.",
@@ -34,12 +31,16 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "liscie": {
       "nazwa_surowca": "Folium Fragariae",
       "opis_botaniczny": "Młode liście zbierane bez ogonków przed owocowaniem rośliny.",
-      "skladniki_aktywne": ["Garbniki katechinowe (do 10%)", "Flawonoidy (kwercetyna, rutyna)", "Witamina C", "Kwasy organiczne"],
+      "skladniki_aktywne": [
+        "Garbniki katechinowe (do 10%)",
+        "Flawonoidy (kwercetyna, rutyna)",
+        "Witamina C",
+        "Kwasy organiczne"
+      ],
       "wlasciwości": "Moczopędne, ściągające, przeciwzapalne w obrębie jelit, detoksykujące krew.",
       "czas_zbioru": "Kwiecień - Maj.",
       "ostrzezenia": "Bezpieczny surowiec, może być stosowany u dzieci i seniorów."
@@ -47,28 +48,29 @@
     "owoce": {
       "nazwa_surowca": "Fructus Fragariae",
       "opis_botaniczny": "Owoce rzekome (rozrośnięte dno kwiatowe).",
-      "skladniki_aktywne": ["Sole mineralne (żelazo, wapń)", "Witaminy z grupy B i C", "Kwas salicylowy", "Pektyny"],
+      "skladniki_aktywne": [
+        "Sole mineralne (żelazo, wapń)",
+        "Witaminy z grupy B i C",
+        "Kwas salicylowy",
+        "Pektyny"
+      ],
       "wlasciwości": "Odkwaszające organizm, ogólnie wzmacniające, przeciwreumatyczne.",
       "czas_zbioru": "Czerwiec - Lipiec.",
       "ostrzezenia": "U osób wrażliwych mogą wywoływać reakcje alergiczne (pokrzywkę)."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Standard w leczeniu kamicy nerkowej, dny moczanowej (oczyszczanie stawów z kwasu moczowego) oraz przewlekłych biegunek u dzieci. Owoce poprawiają morfologię krwi.",
     "kulinarne": "Owoce deserowe o najwyższym aromacie. Liście po poddaniu procesowi fermentacji dają herbatę o smaku zbliżonym do Earl Grey.",
     "ogrodowe": "Idealna roślina zadarniająca ('żywy mulcz'), chroniąca glebę przed erozją i utratą wilgoci.",
     "rzemieslnicze": "Sok z owoców poziomki był historycznie używany jako naturalny, czerwony barwnik spożywczy oraz kosmetyczny (naturalny róż do policzków)."
   },
-
   "interakcje": "Brak znanych szkodliwych interakcji z lekami syntetycznymi. Bezpieczna dla osób przyjmujących leki na nadciśnienie.",
-
   "ciekawostki": [
     "Poziomka botanicznie nie jest jagodą, lecz owocem zbiorowym złożonym z setek małych orzeszków.",
     "Karol Linneusz, słynny przyrodnik, wyleczył się z ciężkiej dny moczanowej stosując kurację świeżymi poziomkami.",
     "Jedna poziomka leśna posiada więcej związków aromatycznych niż kilkanaście hodowlanych truskawek."
   ],
-
   "permakultura": {
     "funkcje": [
       "Żywy mulcz (okrywa runa leśnego)",
@@ -76,16 +78,24 @@
       "Wsparcie dla owadów zapylających wczesnym latem"
     ],
     "gildie": [
-      { "nazwa": "Dąb szypułkowy", "rola": "Kocha lekkie zakwaszenie gleby pod dębami" },
-      { "nazwa": "Leszczyna", "rola": "Poziomka rośnie na obrzeżach kęp leszczyny" }
+      {
+        "nazwa": "Dąb szypułkowy",
+        "rola": "Kocha lekkie zakwaszenie gleby pod dębami"
+      },
+      {
+        "nazwa": "Leszczyna",
+        "rola": "Poziomka rośnie na obrzeżach kęp leszczyny"
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Rozmnażanie przez rozłogi",
-        "miesiace": [4, 8],
+        "miesiace": [
+          4,
+          8
+        ],
         "opis": "Odcinanie ukorzenionych sadzonek przybyszowych i sadzenie w nowym miejscu.",
         "faza_ksiezyca": "Księżyc przybywający",
         "pora_dnia": "Wieczór",
@@ -94,13 +104,16 @@
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Herbatka Oczyszczająca Krew",
       "typ": "medyczne",
       "metoda": "napar",
-      "tagi": ["detoks", "nerki", "dna moczanowa"],
+      "tagi": [
+        "detoks",
+        "nerki",
+        "dna moczanowa"
+      ],
       "skladniki": [
         "Liście poziomki (suszone): 1 część",
         "Ziele brzozy: 1 część",
@@ -115,8 +128,72 @@
       "uwagi": "Wspomaga przemianę materii i usuwanie kwasu moczowego.",
       "roslina": "Poziomka pospolita",
       "slug": "poziomka",
-      "cechy": ["lekko cierpki smak", "jasny napar"],
-      "wlasciwosci": ["moczopędna", "oczyszczająca"]
+      "cechy": [
+        "lekko cierpki smak",
+        "jasny napar"
+      ],
+      "wlasciwosci": [
+        "moczopędna",
+        "oczyszczająca"
+      ]
     }
-  ]
+  ],
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Fragaria_vesca_fruit_-_Keila.jpg/960px-Fragaria_vesca_fruit_-_Keila.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/LSG_Waldg%C3%BCrtel_zwischen_Salzgitter-Osterlinde_und_Salzgitter-Bad_%28Salzgitterscher_H%C3%B6henzug%29_-_Walderdbeere.jpg/960px-LSG_Waldg%C3%BCrtel_zwischen_Salzgitter-Osterlinde_und_Salzgitter-Bad_%28Salzgitterscher_H%C3%B6henzug%29_-_Walderdbeere.jpg",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Fragaria_vesca_5044.JPG/960px-Fragaria_vesca_5044.JPG",
+    "Owoce": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Fragaria_vesca_LC0389.jpg/960px-Fragaria_vesca_LC0389.jpg",
+    "Rycina": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Fragaria_vesca_Sturm21.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Fragaria_vesca_fruit_-_Keila.jpg/960px-Fragaria_vesca_fruit_-_Keila.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Fragaria_vesca_fruit_-_Keila.jpg",
+        "autor": "Ivar Leidus",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/LSG_Waldg%C3%BCrtel_zwischen_Salzgitter-Osterlinde_und_Salzgitter-Bad_%28Salzgitterscher_H%C3%B6henzug%29_-_Walderdbeere.jpg/960px-LSG_Waldg%C3%BCrtel_zwischen_Salzgitter-Osterlinde_und_Salzgitter-Bad_%28Salzgitterscher_H%C3%B6henzug%29_-_Walderdbeere.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:LSG_Waldg%C3%BCrtel_zwischen_Salzgitter-Osterlinde_und_Salzgitter-Bad_(Salzgitterscher_H%C3%B6henzug)_-_Walderdbeere.jpg",
+        "autor": "Ragnar1904",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Fragaria_vesca_5044.JPG/960px-Fragaria_vesca_5044.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Fragaria_vesca_5044.JPG",
+        "autor": "Walter Siegmund (talk)",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Fragaria_vesca_LC0389.jpg/960px-Fragaria_vesca_LC0389.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Fragaria_vesca_LC0389.jpg",
+        "autor": "Jörg Hempel",
+        "licencja": "CC BY-SA 3.0 de",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Rycina",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Fragaria_vesca_Sturm21.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Fragaria_vesca_Sturm21.jpg",
+        "autor": "Johann Georg Sturm (Painter: Jacob Sturm )",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

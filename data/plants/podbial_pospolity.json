@@ -4,7 +4,6 @@
   "nazwa_lat": "Tussilago farfara",
   "rodzina": "Astrowate (Asteraceae)",
   "opis": "Wieloletnia bylina, jeden z najwcześniejszych zwiastunów wiosny. Charakterystyczny ze względu na cykl życiowy: najpierw (marzec/kwiecień) wyrastają łodygi z żółtymi kwiatostanami, a dopiero po ich przekwitnięciu pojawiają się duże, sercowate liście. Podbiał jest rośliną pionierską, uwielbiającą gliniaste nasypy i osuwiska. Przez wieki był uważany za najważniejszy lek na kaszel, palony nawet w formie tytoniu ziołowego dla astmatyków.",
-
   "profil_energetyczny": {
     "smak": "Słodki, śluzowaty, lekko gorzki",
     "termika": "Neutralna ku chłodnej",
@@ -12,7 +11,6 @@
     "zywiol": "Ziemia i Powietrze",
     "opis": "Podbiał to 'plaster' na wysuszone drogi oddechowe. Jego energia łagodzi 'ogień' w płucach i krtani, nawilżając suchy, drażniący kaszel. Pomaga przywrócić swobodny przepływ Qi w klatce piersiowej, przynosząc ulgę w stanach duszności."
   },
-
   "wymagania": {
     "stanowisko": "Słoneczne. Jako roślina pionierska potrzebuje dużo światła do rozwoju kwiatów.",
     "gleba": "Ciężka, gliniasta, wilgotna, zasobna w wapń. Często spotykany na terenach przekształconych przez człowieka, w rowach i na skarpach.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 3 (Całkowicie mrozoodporny).",
     "woda": "Lubi stałą wilgoć, ale radzi sobie na glinie, która dobrze trzyma wodę nawet w czasie suszy."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Kwiaty żółte, przypominające mniszek, ale osadzone na łodygach pokrytych czerwonawymi łuskami (nie gładkich).",
@@ -39,7 +36,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "kwiaty": {
       "nazwa_surowca": "Flos Farfarae",
@@ -70,16 +66,13 @@
       "ostrzezenia": "Zawierają alkaloidy pirolizydynowe – nie stosować kuracji dłuższych niż 4-6 tygodni w roku."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Uporczywy, suchy kaszel, chrypka, zapalenie krtani i oskrzeli, astma (pomocniczo). Zewnętrznie: okłady na stany zapalne skóry, czyraki i oparzenia.",
     "kulinarne": "Młode liście mogą być spożywane po ugotowaniu (podobne do szpinaku), ale ze względu na alkaloidy nie jest to zalecane w dużych ilościach. Kwiaty bywają używane do dekoracji sałatek.",
     "ogrodowe": "Roślina pionierska do stabilizacji skarp i nasypów. Bardzo ważny pierwszy pożytek dla dzikich pszczół.",
     "rzemieslnicze": "Biały 'filc' ze spodu liści był dawniej używany jako hubka do krzesiwa po odpowiednim przygotowaniu."
   },
-
   "interakcje": "Nie łączyć z lekami obciążającymi wątrobę. Może nasilać działanie leków przeciwkaszlowych.",
-
   "ciekawostki": [
     "W medycynie ludowej podbiał nazywano 'ośle kopytko' lub 'boże lico'.",
     "Jest to jedna z nielicznych roślin, u której spód liścia jest zawsze zimny w dotyku – dawniej przykładano liście 'zimną stroną' do czoła podczas gorączki.",
@@ -87,7 +80,6 @@
     "Kwiaty podbiału reagują na słońce: otwierają się rano i zamykają wieczorem oraz przed deszczem.",
     "W starożytnym Rzymie aptekarze mieli wizerunek podbiału nad drzwiami jako symbol skutecznego lekarstwa."
   ],
-
   "permakultura": {
     "functions": [
       "Dynamiczny akumulator cynku i siarki.",
@@ -96,16 +88,24 @@
       "Bioindykator gleb ciężkich i mokrych."
     ],
     "gildie": [
-      { "nazwa": "Wierzba", "rola": "Często rosną razem na brzegach wód i rowów." },
-      { "nazwa": "Mniszek lekarski", "rola": "Konkurują o te same wczesnowiosenne nisze ekologiczne." }
+      {
+        "nazwa": "Wierzba",
+        "rola": "Często rosną razem na brzegach wód i rowów."
+      },
+      {
+        "nazwa": "Mniszek lekarski",
+        "rola": "Konkurują o te same wczesnowiosenne nisze ekologiczne."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór kwiatów",
-        "miesiace": [3, 4],
+        "miesiace": [
+          3,
+          4
+        ],
         "opis": "Zbiór koszyczków bez szypułek rano, po osuszeniu rosy.",
         "faza_ksiezyca": "Księżyc przybywający (faza kwiatu)",
         "pora_dnia": "Przedpołudnie",
@@ -113,20 +113,27 @@
       },
       {
         "czynnosc": "Zbiór liści",
-        "miesiace": [5, 6],
+        "miesiace": [
+          5,
+          6
+        ],
         "opis": "Zrywanie młodych liści bez plam rdzy.",
         "faza_ksiezyca": "Księżyc ubywający (faza liścia/osuszania)",
         "wplyw_ksiezyca": "Ułatwia proces suszenia i zachowanie śluzów."
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Napar na suchy kaszel 'Aksamitne Gardło'",
       "typ": "medyczne",
       "metoda": "napar",
-      "tagi": ["kaszel", "chrypka", "gardło", "śluz"],
+      "tagi": [
+        "kaszel",
+        "chrypka",
+        "gardło",
+        "śluz"
+      ],
       "skladniki": [
         "Suszone liście podbiału: 1 łyżka",
         "Suszone kwiaty podbiału: 1 łyżeczka",
@@ -141,14 +148,24 @@
       "uwagi": "Można dodać miód lipowy dla wzmocnienia efektu.",
       "roslina": "Podbiał pospolity",
       "slug": "podbial_pospolity",
-      "cechy": ["lekko śluzowata konsystencja", "łagodny smak"],
-      "wlasciwosci": ["osłonowa", "wykrztuśna"]
+      "cechy": [
+        "lekko śluzowata konsystencja",
+        "łagodny smak"
+      ],
+      "wlasciwosci": [
+        "osłonowa",
+        "wykrztuśna"
+      ]
     },
     {
       "tytul": "Syrop z liści (Metoda na zimno)",
       "typ": "medyczne",
       "metoda": "zasypywanie cukrem",
-      "tagi": ["kaszel", "zima", "odporność"],
+      "tagi": [
+        "kaszel",
+        "zima",
+        "odporność"
+      ],
       "skladniki": [
         "Świeże liście podbiału",
         "Cukier lub miód"
@@ -162,5 +179,63 @@
       "slug": "podbial_pospolity"
     }
   ],
-  "ostrzezenia": "Ze względu na zawartość alkaloidów pirolizydynowych (działanie hepatotoksyczne), podbiału nie wolno stosować u kobiet w ciąży, matek karmiących oraz u małych dzieci. Kuracja nie powinna trwać dłużej niż 4-6 tygodni w roku. Osoby z uszkodzeniem wątroby powinny unikać tej rośliny."
+  "ostrzezenia": "Ze względu na zawartość alkaloidów pirolizydynowych (działanie hepatotoksyczne), podbiału nie wolno stosować u kobiet w ciąży, matek karmiących oraz u małych dzieci. Kuracja nie powinna trwać dłużej niż 4-6 tygodni w roku. Osoby z uszkodzeniem wątroby powinny unikać tej rośliny.",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Coltsfoot.jpg/960px-Coltsfoot.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Podbia%C5%82.jpg/960px-Podbia%C5%82.jpg",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Huflattich_Blaetter.jpg/960px-Huflattich_Blaetter.jpg",
+    "Owoce": "https://upload.wikimedia.org/wikipedia/commons/7/73/Atlas_roslin_pl_Podbia%C5%82_pospolity_8834_8126.jpg",
+    "Rycina": "https://upload.wikimedia.org/wikipedia/commons/6/67/Tussilago_farfara_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-142.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Coltsfoot.jpg/960px-Coltsfoot.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Coltsfoot.jpg",
+        "autor": "Andreas Trepte",
+        "licencja": "CC BY-SA 2.5",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/2.5",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Podbia%C5%82.jpg/960px-Podbia%C5%82.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Podbia%C5%82.jpg",
+        "autor": "Tosycyzkiewicy",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Huflattich_Blaetter.jpg/960px-Huflattich_Blaetter.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Huflattich_Blaetter.jpg",
+        "autor": "bdk",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Atlas_roslin_pl_Podbia%C5%82_pospolity_8834_8126.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Atlas_roslin_pl_Podbia%C5%82_pospolity_8834_8126.jpg",
+        "autor": "Ludwik Polak",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Rycina",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Tussilago_farfara_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-142.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Tussilago_farfara_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-142.jpg",
+        "autor": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

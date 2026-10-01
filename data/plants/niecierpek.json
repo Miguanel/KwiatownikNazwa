@@ -4,7 +4,6 @@
   "nazwa_lat": "Impatiens noli-tangere",
   "rodzina": "Niecierpkowate (Balsaminaceae)",
   "opis": "Jednoroczna roślina zielna, rosnąca w wilgotnych, cienistych lasach i nad brzegami strumieni. Jej nazwa łacińska 'noli-tangere' (nie dotykaj mnie) oraz polska 'niecierpek' odnoszą się do niezwykłej cechy owoców: dojrzałe torebki przy najmniejszym dotyku pękają, gwałtownie wyrzucając nasiona na odległość kilku metrów. Jest to roślina o półprzezroczystych, soczystych łodygach, będąca skarbnicą związków flawonoidowych i rzadkich kwasów tłuszczowych.",
-
   "profil_energetyczny": {
     "smak": "Gorzki, lekko cierpki, śluzowaty",
     "termika": "Chłodna",
@@ -12,7 +11,6 @@
     "zywiol": "Woda",
     "opis": "Niecierpek to 'strażnik spokoju'. Chłodzi stany zapalne skóry i błon śluzowych, łagodzi 'gorąco' reakcji alergicznych. Na poziomie psychicznym (zgodnie z terapią Bacha) pomaga osobom niecierpliwym, porywczym i żyjącym w ciągłym napięciu czasowym, przywracając wewnętrzny rytm i łagodność."
   },
-
   "wymagania": {
     "stanowisko": "Cień do półcienia. Wybitnie nie lubi bezpośredniego, palącego słońca.",
     "gleba": "Bardzo wilgotna, żyzna, próchniczna, zasobna w azot. Często rośnie w miejscach, gdzie woda podsiąka pod powierzchnię.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Brak (roślina jednoroczna, ginie przy pierwszym przymrozku, ale obficie rozsiewa nasiona).",
     "woda": "Bardzo wysokie zapotrzebowanie; roślina natychmiast więdnie przy braku wilgoci w glebie."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Łodyga soczysta, niemal przezroczysta, zgrubiała w węzłach.",
@@ -39,7 +36,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "ziele": {
       "nazwa_surowca": "Herba Impatientis",
@@ -59,28 +55,27 @@
     "nasiona": {
       "nazwa_surowca": "Semen Impatientis",
       "opis_botaniczny": "Dojrzałe nasiona zbierane jesienią.",
-      "skladniki_aktywne": ["Kwasy tłuszczowe (parynarowy, punicynowy)", "Białka"],
+      "skladniki_aktywne": [
+        "Kwasy tłuszczowe (parynarowy, punicynowy)",
+        "Białka"
+      ],
       "wlasciwości": "Odżywcze, regenerujące, wspierające gospodarkę hormonalną.",
       "czas_zbioru": "Sierpień - Wrzesień."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Trądzik pospolity i różowaty, łuszczyca, atopowe zapalenie skóry (AZS), łysienie androgenowe, stany zapalne prostaty, grzybice skóry i paznokci, alergie kontaktowe.",
     "kulinarne": "Młode pędy i liście (po ugotowaniu!) są jadalne w niektórych kulturach, ale mają niską wartość smakową. Nasiona mają przyjemny, orzechowy smak i mogą być dodatkiem do sałatek.",
     "ogrodowe": "Roślina miododajna (szczególnie gatunki inwazyjne są uwielbiane przez trzmiele). Idealna do zadarniania bardzo cienistych i wilgotnych zakątków ogrodu.",
     "rzemieslnicze": "Sok z niecierpka (szczególnie gruczołowatego) zawiera barwniki naftochinonowe, które mogą trwale barwić wełnę i jedwab na odcienie brązu i pomarańczu."
   },
-
   "interakcje": "Dzięki działaniu antyandrogennemu może wspomagać leczenie farmakologiczne łagodnego przerostu prostaty i trądziku hormonalnego. Brak znanych negatywnych interakcji z lekami chemicznymi.",
-
   "ciekawostki": [
     "Niecierpek jest jednym z głównych składników słynnych 'Kropel Ratunkowych' (Rescue Remedy) dr. Bacha.",
     "W Ameryce Północnej lokalne gatunki niecierpka (Jewelweed) są używane jako antidotum na oparzenia trującym bluszczem (Poison Ivy).",
     "Nasiona są wyrzucane z owocu z prędkością dochodzącą do kilku metrów na sekundę.",
     "Sok ze świeżego niecierpka po przyłożeniu do skóry uwalnia enzymy rozkładające chitynę, co tłumaczy jego skuteczność w walce z grzybicami."
   ],
-
   "permakultura": {
     "funkcje": [
       "Okrywa runa w strefach mokrych (Wetland management).",
@@ -89,17 +84,28 @@
       "Roślina pionierska w cienistych wyrwach leśnych."
     ],
     "gildie": [
-      { "nazwa": "Wierzba biała", "rola": "Niecierpek kocha wilgotny cień pod wierzbami." },
-      { "nazwa": "Pokrzywa zwyczajna", "rola": "Często rosną razem na żyznych, azotowych brzegach wód." },
-      { "nazwa": "Wiąz", "rola": "Partner w lasach łęgowych." }
+      {
+        "nazwa": "Wierzba biała",
+        "rola": "Niecierpek kocha wilgotny cień pod wierzbami."
+      },
+      {
+        "nazwa": "Pokrzywa zwyczajna",
+        "rola": "Często rosną razem na żyznych, azotowych brzegach wód."
+      },
+      {
+        "nazwa": "Wiąz",
+        "rola": "Partner w lasach łęgowych."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór ziela na świeży sok/ocet",
-        "miesiace": [7, 8],
+        "miesiace": [
+          7,
+          8
+        ],
         "opis": "Zbiór całych roślin w fazie kwitnienia. Najlepiej przetwarzać od razu po zbiorze.",
         "faza_ksiezyca": "Księżyc przybywający (faza liścia/kwiatu)",
         "pora_dnia": "Poranek (kiedy roślina jest najbardziej turgorowa)",
@@ -108,13 +114,17 @@
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Ocet Niecierpkowy (Na trądzik i łojotok)",
       "typ": "medyczne",
       "metoda": "maceracja octowa",
-      "tagi": ["trądzik", "cera tłusta", "hormony", "skóra"],
+      "tagi": [
+        "trądzik",
+        "cera tłusta",
+        "hormony",
+        "skóra"
+      ],
       "skladniki": [
         "Świeże ziele niecierpka (rozdrobnione): 1 szklanka",
         "Ocet jabłkowy lub winny: 2 szklanki"
@@ -128,14 +138,25 @@
       "uwagi": "Hamuje działanie androgenów na skórę, zmniejszając przetłuszczanie i wypryski.",
       "roslina": "Niecierpek pospolity",
       "slug": "niecierpek",
-      "cechy": ["lekko żywiczny zapach", "jasnożółty kolor"],
-      "wlasciwosci": ["antyandrogenna", "antyseptyczna"]
+      "cechy": [
+        "lekko żywiczny zapach",
+        "jasnożółty kolor"
+      ],
+      "wlasciwosci": [
+        "antyandrogenna",
+        "antyseptyczna"
+      ]
     },
     {
       "tytul": "Okład na 'Piekącą Skórę' (Ugryzienia, Alergie)",
       "typ": "medyczne",
       "metoda": "świeża miazga",
-      "tagi": ["ukąszenia", "świąd", "pokrzywka", "ratunek"],
+      "tagi": [
+        "ukąszenia",
+        "świąd",
+        "pokrzywka",
+        "ratunek"
+      ],
       "skladniki": [
         "Garść świeżego, soczystego ziela niecierpka"
       ],
@@ -148,13 +169,16 @@
       "slug": "niecierpek"
     }
   ],
-
   "przepisy_kulinarne": [
     {
       "tytul": "Dzika Przekąska - Orzeszki Niecierpka",
       "typ": "kulinarne",
       "metoda": "zbiór bezpośredni",
-      "tagi": ["przekąska", "survival", "nasiona"],
+      "tagi": [
+        "przekąska",
+        "survival",
+        "nasiona"
+      ],
       "skladniki": [
         "Dojrzałe nasiona niecierpka (zbierane do woreczka, by nie uciekły)"
       ],
@@ -166,5 +190,33 @@
       "slug": "niecierpek"
     }
   ],
-  "ostrzezenia": "W rzadkich przypadkach świeży sok może barwić skórę na pomarańczowo. Nie stosować wewnętrznie w dużych dawkach bez konsultacji, gdyż może zadziałać silnie przeczyszczająco."
+  "ostrzezenia": "W rzadkich przypadkach świeży sok może barwić skórę na pomarańczowo. Nie stosować wewnętrznie w dużych dawkach bez konsultacji, gdyż może zadziałać silnie przeczyszczająco.",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/NoliTangere_Pflanze.jpg/960px-NoliTangere_Pflanze.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/20200820_xl_0169-Wanderung-zum-Naturschutzgebiet-Heilige-Hallen-Feldberger-Seenlandschaft.jpg/960px-20200820_xl_0169-Wanderung-zum-Naturschutzgebiet-Heilige-Hallen-Feldberger-Seenlandschaft.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/NoliTangere_Pflanze.jpg/960px-NoliTangere_Pflanze.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:NoliTangere_Pflanze.jpg",
+        "autor": "Túrelio",
+        "licencja": "CC BY-SA 2.5",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/2.5",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/20200820_xl_0169-Wanderung-zum-Naturschutzgebiet-Heilige-Hallen-Feldberger-Seenlandschaft.jpg/960px-20200820_xl_0169-Wanderung-zum-Naturschutzgebiet-Heilige-Hallen-Feldberger-Seenlandschaft.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:20200820_xl_0169-Wanderung-zum-Naturschutzgebiet-Heilige-Hallen-Feldberger-Seenlandschaft.jpg",
+        "autor": "Molgreen",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

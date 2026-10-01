@@ -4,7 +4,6 @@
   "nazwa_lat": "Rubus idaeus",
   "rodzina": "Różowate (Rosaceae)",
   "opis": "Wieloletni krzew o łukowato wygiętych, kolczastych pędach, dorastający do 2 metrów. Malina jest gatunkiem pionierskim, który błyskawicznie zasiedla poręby leśne i obrzeża lasów. Charakterystyczną cechą są jej złożone liście o śnieżnobiałym spodzie oraz pyszne, czerwone owoce zbiorowe, które łatwo oddzielają się od stożkowatego dna kwiatowego (co odróżnia ją od jeżyny). Jest to roślina o ogromnej sile witalnej, rozmnażająca się przez podziemne rozłogi.",
-
   "profil_energetyczny": {
     "smak": "Słodki, kwaśny (owoce), cierpki/gorzki (liście)",
     "termika": "Chłodna (liście), rozgrzewająca (owoce po przetworzeniu)",
@@ -12,7 +11,6 @@
     "zywiol": "Woda i Ogień",
     "opis": "Malina to 'regulator przepływów'. Liście ściągają nadmiar wilgoci i tonizują tkanki, natomiast owoce pobudzają krążenie powierzchniowe (napotność), pomagając 'wypchnąć' chorobę z organizmu przez skórę."
   },
-
   "wymagania": {
     "stanowisko": "Słoneczne do półcienistego. W pełnym słońcu owoce są słodsze i bogatsze w aromaty.",
     "gleba": "Żyzna, próchniczna, lekko wilgotna, przepuszczalna. Nienawidzi ciężkich, zalewowych glin oraz skrajnych piasków.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 4 (Całkowicie mrozoodporna, choć niektóre odmiany ogrodowe mogą przemarzać przy braku śniegu).",
     "woda": "Wymaga regularnego dostępu do wody, szczególnie w okresie kwitnienia i dojrzewania owoców."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Liście nieparzystopierzaste (3-5 listkowe), z wierzchu zielone, SPODEM biało-kutnerowate (śnieżnobiałe).",
@@ -39,7 +36,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "owoce": {
       "nazwa_surowca": "Fructus Rubi idaei",
@@ -71,16 +67,13 @@
       "ostrzezenia": "Napar z liści malin tradycyjnie odradzany wczesnej ciąży, zalecany dopiero przed samym porodem (tonizacja)."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Przeziębienie i grypa (owoce), biegunki u dzieci i dorosłych (liście), bolesne miesiączki, stany zapalne jamy ustnej (płukanki z liści), wspomaganie trawienia.",
     "kulinarne": "Soki, dżemy, galaretki, konfitury, herbaty fermentowane z liści, ocet malinowy, nalewki.",
     "ogrodowe": "Tworzenie jadalnych żywopłotów, rekultywacja brzegów lasów. Maliny dostarczają doskonałego pożytku dla pszczół (miód malinowy jest jednym z najsmaczniejszych).",
     "rzemieslnicze": "Sok malinowy to naturalny barwnik spożywczy i kosmetyczny. Z liści można uzyskać delikatny zielono-żółty barwnik do tkanin."
   },
-
   "interakcje": "Ze względu na zawartość naturalnych salicylanów w owocach, osoby z nadwrażliwością na aspirynę powinny zachować umiar. Liście mogą ograniczać wchłanianie żelaza (przez garbniki).",
-
   "ciekawostki": [
     "Malina jest jedną z najstarszych roślin uprawnych w Europie – nasiona znajdowano już w wykopaliskach z epoki kamienia.",
     "Biały spód liścia maliny działa jak lustro – odbija promienie słoneczne, chroniąc roślinę przed nadmierną transpiracją (utratą wody) w upalne dni.",
@@ -88,7 +81,6 @@
     "W tradycyjnym zielarstwie herbatę z liści malin podawano kobietom na kilka tygodni przed porodem, aby 'ułatwić wyjście dziecku' poprzez uelastycznienie mięśni miednicy.",
     "Ketony malinowe odpowiadają za unikalny zapach owoców i są wykorzystywane w przemyśle perfumeryjnym oraz (kontrowersyjnie) jako suplementy wspomagające odchudzanie."
   ],
-
   "permakultura": {
     "funkcje": [
       "Producent biomasy (pędy po owocowaniu są świetnym materiałem do mulczowania).",
@@ -97,37 +89,56 @@
       "Naturalna bariera dla trawy i chwastów na obrzeżach grządek."
     ],
     "gildie": [
-      { "nazwa": "Wrotycz pospolity", "rola": "Wrotycz posadzony w pobliżu chroni maliny przed niektórymi szkodnikami (np. kistnikiem malinowcem)." },
-      { "nazwa": "Czosnek / Szczypiorek", "rola": "Pomaga ograniczać choroby grzybowe malin (szarą pleśń)." },
-      { "nazwa": "Niezapominajka", "rola": "Chronią dół krzewu przed przesychaniem i przyciągają zapylacze." }
+      {
+        "nazwa": "Wrotycz pospolity",
+        "rola": "Wrotycz posadzony w pobliżu chroni maliny przed niektórymi szkodnikami (np. kistnikiem malinowcem)."
+      },
+      {
+        "nazwa": "Czosnek / Szczypiorek",
+        "rola": "Pomaga ograniczać choroby grzybowe malin (szarą pleśń)."
+      },
+      {
+        "nazwa": "Niezapominajka",
+        "rola": "Chronią dół krzewu przed przesychaniem i przyciągają zapylacze."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Cięcie pędów",
-        "miesiace": [2, 3, 11],
+        "miesiace": [
+          2,
+          3,
+          11
+        ],
         "opis": "Usuwanie pędów, które już owocowały (u odmian letnich) lub wycinanie wszystkiego przy ziemi (u odmian jesiennych).",
         "faza_ksiezyca": "Księżyc ubywający",
         "wplyw_ksiezyca": "Zapobiega 'płakaniu' roślin i ogranicza ryzyko infekcji grzybowych."
       },
       {
         "czynnosc": "Zbiór liści na herbatę",
-        "miesiace": [5, 6],
+        "miesiace": [
+          5,
+          6
+        ],
         "opis": "Zbiór młodych liści przed kwitnieniem – wtedy mają najwięcej fragarzyny.",
         "faza_ksiezyca": "Księżyc przybywający (faza liścia)",
         "pora_dnia": "Przedpołudnie"
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Klasyczny Syrop Malinowy 'Na Poty'",
       "typ": "medyczne",
       "metoda": "zasypywanie cukrem i pasteryzacja",
-      "tagi": ["gorączka", "przeziębienie", "grypa", "odporność"],
+      "tagi": [
+        "gorączka",
+        "przeziębienie",
+        "grypa",
+        "odporność"
+      ],
       "skladniki": [
         "Świeże owoce maliny: 1 kg",
         "Cukier (lub ksylitol): 0.8 kg",
@@ -143,14 +154,25 @@
       "uwagi": "Działa silnie napotnie dzięki zawartości salicylanów.",
       "roslina": "Malina właściwa",
       "slug": "malina_wlasciwa",
-      "cechy": ["ciemnoczerwony kolor", "intensywny aromat"],
-      "wlasciwosci": ["napotna", "przeciwgorączkowa"]
+      "cechy": [
+        "ciemnoczerwony kolor",
+        "intensywny aromat"
+      ],
+      "wlasciwosci": [
+        "napotna",
+        "przeciwgorączkowa"
+      ]
     },
     {
       "tytul": "Napar z liści 'Tonik Macicy'",
       "typ": "medyczne",
       "metoda": "napar",
-      "tagi": ["kobiety", "miesiączka", "trawienie", "biegunka"],
+      "tagi": [
+        "kobiety",
+        "miesiączka",
+        "trawienie",
+        "biegunka"
+      ],
       "skladniki": [
         "Suszone liście maliny: 1 łyżka",
         "Woda: 250 ml"
@@ -164,13 +186,16 @@
       "slug": "malina_wlasciwa"
     }
   ],
-
   "przepisy_kulinarne": [
     {
       "tytul": "Ocet Malinowy do sałatek",
       "typ": "kulinarne",
       "metoda": "maceracja",
-      "tagi": ["ocet", "kuchnia", "aromatyzowanie"],
+      "tagi": [
+        "ocet",
+        "kuchnia",
+        "aromatyzowanie"
+      ],
       "skladniki": [
         "Garść świeżych malin",
         "Ocet jabłkowy: 500 ml"
@@ -185,5 +210,63 @@
       "slug": "malina_wlasciwa"
     }
   ],
-  "ostrzezenia": "Liście maliny mogą u niektórych osób działać lekko zapierająco (przez garbniki). Stosowanie herbaty z liści malin w ciąży powinno być skonsultowane z lekarzem lub położną (zazwyczaj zalecane od 36. tygodnia)."
+  "ostrzezenia": "Liście maliny mogą u niektórych osób działać lekko zapierająco (przez garbniki). Stosowanie herbaty z liści malin w ciąży powinno być skonsultowane z lekarzem lub położną (zazwyczaj zalecane od 36. tygodnia).",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Fert%C5%91di_k%C3%A1rmin_m%C3%A1lna.JPG/960px-Fert%C5%91di_k%C3%A1rmin_m%C3%A1lna.JPG",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Raspberry_%28Rubus_idaeus%29_-_Oslo%2C_Norway_%2801%29.jpg/960px-Raspberry_%28Rubus_idaeus%29_-_Oslo%2C_Norway_%2801%29.jpg",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Rubus_idaeus_leaf_underside.jpg/960px-Rubus_idaeus_leaf_underside.jpg",
+    "Owoce": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Raspberries_%28Rubus_idaeus%29.jpg/960px-Raspberries_%28Rubus_idaeus%29.jpg",
+    "Rycina": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/K%C3%B6hler%27s_Medizinal-Pflanzen_in_naturgetreuen_Abbildungen_mit_kurz_erl%C3%A4uterndem_Texte_%28Plate_43%29_BHL303648.jpg/960px-K%C3%B6hler%27s_Medizinal-Pflanzen_in_naturgetreuen_Abbildungen_mit_kurz_erl%C3%A4uterndem_Texte_%28Plate_43%29_BHL303648.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Fert%C5%91di_k%C3%A1rmin_m%C3%A1lna.JPG/960px-Fert%C5%91di_k%C3%A1rmin_m%C3%A1lna.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Fert%C5%91di_k%C3%A1rmin_m%C3%A1lna.JPG",
+        "autor": "Kollányi Gábor",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Raspberry_%28Rubus_idaeus%29_-_Oslo%2C_Norway_%2801%29.jpg/960px-Raspberry_%28Rubus_idaeus%29_-_Oslo%2C_Norway_%2801%29.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Raspberry_(Rubus_idaeus)_-_Oslo,_Norway_(01).jpg",
+        "autor": "Ryan Hodnett",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Rubus_idaeus_leaf_underside.jpg/960px-Rubus_idaeus_leaf_underside.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Rubus_idaeus_leaf_underside.jpg",
+        "autor": "Nefronus",
+        "licencja": "CC0",
+        "licencja_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Raspberries_%28Rubus_idaeus%29.jpg/960px-Raspberries_%28Rubus_idaeus%29.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Raspberries_(Rubus_idaeus).jpg",
+        "autor": "Ivar Leidus",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Rycina",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/K%C3%B6hler%27s_Medizinal-Pflanzen_in_naturgetreuen_Abbildungen_mit_kurz_erl%C3%A4uterndem_Texte_%28Plate_43%29_BHL303648.jpg/960px-K%C3%B6hler%27s_Medizinal-Pflanzen_in_naturgetreuen_Abbildungen_mit_kurz_erl%C3%A4uterndem_Texte_%28Plate_43%29_BHL303648.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:K%C3%B6hler%27s_Medizinal-Pflanzen_in_naturgetreuen_Abbildungen_mit_kurz_erl%C3%A4uterndem_Texte_(Plate_43)_BHL303648.jpg",
+        "autor": "Brandt, Wilhelm; Gürke, M.; Köhler, F. E.; Pabst, G.; Schellenberg, G.; Vogtherr, Max.",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

@@ -1,90 +1,138 @@
 {
-"id": "pepawa_dachowa",
-"nazwa_pl": "Pępawa dachowa",
-"nazwa_lat": "Crepis tectorum",
-"rodzina": "Astrowate (Asteraceae)",
-"opis": "Roślina jednoroczna lub dwuletnia, rzadziej wieloletnia chwastowata roślina polna i ruderalna. Wyrasta na wysokość od 20 do 90 cm. Tworzy wzniesioną, sztywną i często bardzo mocno rozgałęzioną łodygę. Podobnie jak wiele innych astrowatych o żółtych kwiatach, wydziela biały sok mleczny, przez co przez laików wrzucana jest do ogólnego worka z napisem 'mlecz' lub 'mniszek'.",
-"profil_energetyczny": {
-"smak": "Gorzkawy",
-"termika": "Chłodna",
-"wilgotnosc": "Neutralna",
-"zywiol": "Powietrze",
-"opis": "Nie posiada głęboko opisanego profilu w tradycyjnym ziołolecznictwie, działa lekko oczyszczająco na powierzchniowym poziomie."
-},
-"wymagania": {
-"stanowisko": "Silnie nasłonecznione.",
-"gleba": "Uboga, piaszczysta, sucha. Typowy gatunek ruderalny, rosnący przy drogach, na nasypach i murach.",
-"ph_gleby": "5.0 - 7.0",
-"mrozoodpornosc": "Odporna jako roślina zimująca w fazie rozety.",
-"woda": "Świetnie toleruje suszę i brak wody."
-},
-"identyfikacja": {
-"cechy_kluczowe": [
-"Łodyga wzniesiona, zazwyczaj silnie rozgałęziona, wewnątrz pełna, podłużnie bruzdkowana.",
-"Obecny biały sok mleczny.",
-"Liście odziomkowe głęboko zatokowo ząbkowane, natomiast wyższe liście łodygowe są bardzo wąskie (równowąskie) o strzałkowatej nasadzie.",
-"Drobne, bladożółte koszyczki kwiatowe zebrane w podbaldachy na szczytach licznych pędów."
-],
-"mozliwe_pomylki": [
-{
-"nazwa": "Mlecz polny (Sonchus arvensis)",
-"roznica": "Mlecz polny ma grubsze, puste w środku łodygi, a jego liście są znacznie szersze i bardziej mięsiste."
-},
-{
-"nazwa": "Pępawa dwuletnia (Crepis biennis)",
-"roznica": "Jest większa, jej koszyczki kwiatowe są okazalsze, a liście łodygowe szersze i mocniej powcinane."
-}
-]
-},
-"czesci_rosliny": {
-"ziele": {
-"nazwa_surowca": "Herba Crepidis",
-"opis_botaniczny": "Część nadziemna mało istotna terapeutycznie.",
-"skladniki_aktywne": [
-"Gorycze",
-"Węglowodany złożone"
-],
-"wlasciwosci": "Marginalne.",
-"czas_zbioru": "Nie zbiera się komercyjnie.",
-"ostrzezenia": "Brak."
-}
-},
-"zastosowanie": {
-"medyczne": "W zielarstwie ludowym całkowicie zapomniana; bywała używana zewnętrznie w formie papki na otarcia skóry.",
-"kulinarne": "W czasie głodu gotowano młode rozety, jednak roślina jest sucha i mało smaczna.",
-"ogrodowe": "Chwast upraw i terenów zaniedbanych.",
-"rzemieslnicze": "Brak."
-},
-"interakcje": [
-"Brak danych."
-],
-"ciekawostki": [
-"Nazwa gatunkowa 'tectorum' (dachowa) wzięła się stąd, że w dawnych wiekach nasiona tej rośliny z łatwością rozsiewały się i kiełkowały na słomianych oraz ziemnych strzechach wiejskich chałup."
-],
-"permakultura": {
-"funkcje": [
-"Roślina pionierska inicjująca sukcesję na bardzo ubogich, wręcz jałowych i zniszczonych glebach (hałdy, zręby, nasypy kolejowe)."
-],
-"gildie": [
-{
-"nazwa": "Tereny zdegradowane",
-"rola": "Zatrzymuje erozję wiatrową pierwszej warstwy podłoża."
-}
-]
-},
-"kalendarz_ogrodnika": {
-"siew": "Rozsiewa się bardzo plennie przez puch kielichowy jesienią.",
-"sadzenie": "Nie dotyczy.",
-"kwitnienie": "Czerwiec - Wrzesień.",
-"zadania": []
-},
-"przepisy_medyczne": [],
-"przepisy_kulinarne": [],
-"alchemia_barw": {
-"glowny_barwnik": "Brak",
-"efekt_na_wlosach": "Brak.",
-"modyfikatory_ph": [],
-"ostrzezenia_bhp": "Bezpieczna, ale bezużyteczna barwiersko."
-},
-"ostrzezenia": "Chwast rolniczy, bezpieczny w kontakcie."
+  "id": "pepawa_dachowa",
+  "nazwa_pl": "Pępawa dachowa",
+  "nazwa_lat": "Crepis tectorum",
+  "rodzina": "Astrowate (Asteraceae)",
+  "opis": "Roślina jednoroczna lub dwuletnia, rzadziej wieloletnia chwastowata roślina polna i ruderalna. Wyrasta na wysokość od 20 do 90 cm. Tworzy wzniesioną, sztywną i często bardzo mocno rozgałęzioną łodygę. Podobnie jak wiele innych astrowatych o żółtych kwiatach, wydziela biały sok mleczny, przez co przez laików wrzucana jest do ogólnego worka z napisem 'mlecz' lub 'mniszek'.",
+  "profil_energetyczny": {
+    "smak": "Gorzkawy",
+    "termika": "Chłodna",
+    "wilgotnosc": "Neutralna",
+    "zywiol": "Powietrze",
+    "opis": "Nie posiada głęboko opisanego profilu w tradycyjnym ziołolecznictwie, działa lekko oczyszczająco na powierzchniowym poziomie."
+  },
+  "wymagania": {
+    "stanowisko": "Silnie nasłonecznione.",
+    "gleba": "Uboga, piaszczysta, sucha. Typowy gatunek ruderalny, rosnący przy drogach, na nasypach i murach.",
+    "ph_gleby": "5.0 - 7.0",
+    "mrozoodpornosc": "Odporna jako roślina zimująca w fazie rozety.",
+    "woda": "Świetnie toleruje suszę i brak wody."
+  },
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Łodyga wzniesiona, zazwyczaj silnie rozgałęziona, wewnątrz pełna, podłużnie bruzdkowana.",
+      "Obecny biały sok mleczny.",
+      "Liście odziomkowe głęboko zatokowo ząbkowane, natomiast wyższe liście łodygowe są bardzo wąskie (równowąskie) o strzałkowatej nasadzie.",
+      "Drobne, bladożółte koszyczki kwiatowe zebrane w podbaldachy na szczytach licznych pędów."
+    ],
+    "mozliwe_pomylki": [
+      {
+        "nazwa": "Mlecz polny (Sonchus arvensis)",
+        "roznica": "Mlecz polny ma grubsze, puste w środku łodygi, a jego liście są znacznie szersze i bardziej mięsiste."
+      },
+      {
+        "nazwa": "Pępawa dwuletnia (Crepis biennis)",
+        "roznica": "Jest większa, jej koszyczki kwiatowe są okazalsze, a liście łodygowe szersze i mocniej powcinane."
+      }
+    ]
+  },
+  "czesci_rosliny": {
+    "ziele": {
+      "nazwa_surowca": "Herba Crepidis",
+      "opis_botaniczny": "Część nadziemna mało istotna terapeutycznie.",
+      "skladniki_aktywne": [
+        "Gorycze",
+        "Węglowodany złożone"
+      ],
+      "wlasciwosci": "Marginalne.",
+      "czas_zbioru": "Nie zbiera się komercyjnie.",
+      "ostrzezenia": "Brak."
+    }
+  },
+  "zastosowanie": {
+    "medyczne": "W zielarstwie ludowym całkowicie zapomniana; bywała używana zewnętrznie w formie papki na otarcia skóry.",
+    "kulinarne": "W czasie głodu gotowano młode rozety, jednak roślina jest sucha i mało smaczna.",
+    "ogrodowe": "Chwast upraw i terenów zaniedbanych.",
+    "rzemieslnicze": "Brak."
+  },
+  "interakcje": [
+    "Brak danych."
+  ],
+  "ciekawostki": [
+    "Nazwa gatunkowa 'tectorum' (dachowa) wzięła się stąd, że w dawnych wiekach nasiona tej rośliny z łatwością rozsiewały się i kiełkowały na słomianych oraz ziemnych strzechach wiejskich chałup."
+  ],
+  "permakultura": {
+    "funkcje": [
+      "Roślina pionierska inicjująca sukcesję na bardzo ubogich, wręcz jałowych i zniszczonych glebach (hałdy, zręby, nasypy kolejowe)."
+    ],
+    "gildie": [
+      {
+        "nazwa": "Tereny zdegradowane",
+        "rola": "Zatrzymuje erozję wiatrową pierwszej warstwy podłoża."
+      }
+    ]
+  },
+  "kalendarz_ogrodnika": {
+    "siew": "Rozsiewa się bardzo plennie przez puch kielichowy jesienią.",
+    "sadzenie": "Nie dotyczy.",
+    "kwitnienie": "Czerwiec - Wrzesień.",
+    "zadania": []
+  },
+  "przepisy_medyczne": [],
+  "przepisy_kulinarne": [],
+  "alchemia_barw": {
+    "glowny_barwnik": "Brak",
+    "efekt_na_wlosach": "Brak.",
+    "modyfikatory_ph": [],
+    "ostrzezenia_bhp": "Bezpieczna, ale bezużyteczna barwiersko."
+  },
+  "ostrzezenia": "Chwast rolniczy, bezpieczny w kontakcie.",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Liiv-koeratubakas_%28Crepis_tectorum%29.jpg/960px-Liiv-koeratubakas_%28Crepis_tectorum%29.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Crepis_tectorum_inflorescence_%2805%29.jpg/960px-Crepis_tectorum_inflorescence_%2805%29.jpg",
+    "Owoce": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Crepis_tectorum_fruit_%2801%29.jpg/960px-Crepis_tectorum_fruit_%2801%29.jpg",
+    "Rycina": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Illustration_Crepis_tectorum0.jpg/960px-Illustration_Crepis_tectorum0.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Liiv-koeratubakas_%28Crepis_tectorum%29.jpg/960px-Liiv-koeratubakas_%28Crepis_tectorum%29.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Liiv-koeratubakas_(Crepis_tectorum).jpg",
+        "autor": "Julcatai",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Crepis_tectorum_inflorescence_%2805%29.jpg/960px-Crepis_tectorum_inflorescence_%2805%29.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Crepis_tectorum_inflorescence_(05).jpg",
+        "autor": "Fornax",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Crepis_tectorum_fruit_%2801%29.jpg/960px-Crepis_tectorum_fruit_%2801%29.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Crepis_tectorum_fruit_(01).jpg",
+        "autor": "Steven Hurst. USDA, NRCS. 2018. The PLANTS Database ( http://plants.usda.gov , 8 February 2018). National Plant Data Tea",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Rycina",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Illustration_Crepis_tectorum0.jpg/960px-Illustration_Crepis_tectorum0.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Illustration_Crepis_tectorum0.jpg",
+        "autor": "nieznany autor",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

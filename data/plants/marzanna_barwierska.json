@@ -150,8 +150,72 @@
       "Roślina okrywowa w uprawach ekologicznych"
     ],
     "gildie": [
-      { "nazwa": "Krwawnik", "rola": "Wsparcie gospodarki wapniowej." },
-      { "nazwa": "Cykoria", "rola": "Sąsiedztwo strukturalne." }
+      {
+        "nazwa": "Krwawnik",
+        "rola": "Wsparcie gospodarki wapniowej."
+      },
+      {
+        "nazwa": "Cykoria",
+        "rola": "Sąsiedztwo strukturalne."
+      }
+    ]
+  },
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Rubia_tinctorum_flowers.jpg/960px-Rubia_tinctorum_flowers.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Rubia_tinctorum_002.JPG/960px-Rubia_tinctorum_002.JPG",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Westf%C3%A4lisches_Freilicht-Museum%2C_F%C3%A4rberpflanzen%2C_Juli_2021_%2802%29.jpg/960px-Westf%C3%A4lisches_Freilicht-Museum%2C_F%C3%A4rberpflanzen%2C_Juli_2021_%2802%29.jpg",
+    "Owoce": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Rubia_tinctorum_0zz.jpg/960px-Rubia_tinctorum_0zz.jpg",
+    "Nasiona": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Krapp_90_Tage_alt.jpg/960px-Krapp_90_Tage_alt.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Rubia_tinctorum_flowers.jpg/960px-Rubia_tinctorum_flowers.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Rubia_tinctorum_flowers.jpg",
+        "autor": "Carstor",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Rubia_tinctorum_002.JPG/960px-Rubia_tinctorum_002.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Rubia_tinctorum_002.JPG",
+        "autor": "H. Zell",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Westf%C3%A4lisches_Freilicht-Museum%2C_F%C3%A4rberpflanzen%2C_Juli_2021_%2802%29.jpg/960px-Westf%C3%A4lisches_Freilicht-Museum%2C_F%C3%A4rberpflanzen%2C_Juli_2021_%2802%29.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Westf%C3%A4lisches_Freilicht-Museum,_F%C3%A4rberpflanzen,_Juli_2021_(02).jpg",
+        "autor": "Kürschner ( talk ) 16:54, 1 July 2021 (UTC)",
+        "licencja": "CC0",
+        "licencja_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Rubia_tinctorum_0zz.jpg/960px-Rubia_tinctorum_0zz.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Rubia_tinctorum_0zz.jpg",
+        "autor": "Photo by David J. Stang",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Nasiona",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Krapp_90_Tage_alt.jpg/960px-Krapp_90_Tage_alt.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Krapp_90_Tage_alt.jpg",
+        "autor": "Bellelay",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      }
     ]
   }
 }

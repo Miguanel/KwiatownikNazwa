@@ -4,7 +4,12 @@
   "nazwa_lat": "Thymus serpyllum",
   "rodzina": "Jasnotowate (Lamiaceae)",
   "opis": "Niska, wieloletnia krzewinka o płożących pędach, tworząca gęste, intensywnie pachnące darnie. Jej drobne, lilioworóżowe kwiaty są magnesem dla pszczół i motyli. Nazwa 'serpyllum' pochodzi od łacińskiego 'serpere' (pełzać), co idealnie oddaje sposób wzrostu rośliny. Macierzanka jest symbolem siły życiowej ukrytej w małej formie – potrafi przetrwać ekstremalne upały na jałowym piasku, kumulując w sobie potężne olejki eteryczne.",
-  "tagi": ["zielna", "oddechowe", "przeziebienie", "jadalna_surowa"],
+  "tagi": [
+    "zielna",
+    "oddechowe",
+    "przeziebienie",
+    "jadalna_surowa"
+  ],
   "profil_energetyczny": {
     "smak": "Ostry, aromatyczny, lekko gorzki",
     "termika": "Gorąca",
@@ -12,7 +17,6 @@
     "zywiol": "Ogień i Powietrze",
     "opis": "Macierzanka to 'słoneczny impuls' dla płuc. Jej gorąca natura rozgrzewa wychłodzone drogi oddechowe, rozpuszcza zastoinowy śluz i pobudza siły obronne organizmu. Działa kojąco na układ nerwowy, rozpraszając 'mgłę' mentalną i melancholię."
   },
-
   "wymagania": {
     "stanowisko": "Pełne słońce. W cieniu traci swój aromat i zwarty pokrój.",
     "gleba": "Uboga, piaszczysta, przepuszczalna, sucha. Wybitnie nie lubi gleb ciężkich, gliniastych i podmokłych.",
@@ -20,7 +24,6 @@
     "mrozoodpornosc": "Strefa 3 (Całkowicie mrozoodporna).",
     "woda": "Bardzo małe zapotrzebowanie; podlewanie konieczne tylko przy ekstremalnych suszach w fazie wzrostu."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Pędy płożące się, zdrewniałe u nasady, tworzące niskie dywany (do 10 cm wysokości).",
@@ -39,7 +42,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "ziele": {
       "nazwa_surowca": "Herba Serpylli",
@@ -56,23 +58,19 @@
       "ostrzezenia": "Suszyć w cieniu i przewiewie w temp. do 35°C, aby zachować olejki."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Uporczywy kaszel, zapalenie oskrzeli, katar, problemy trawienne (wzdęcia, brak apetytu), stany zapalne jamy ustnej (płukanki). Zewnętrznie: kąpiele wzmacniające, przemywanie ran i skóry trądzikowej.",
     "kulinarne": "Znakomita przyprawa do mięs, ryb, warzyw strączkowych i serów. Dodaje się ją również do domowych octów i oliw smakowych.",
     "ogrodowe": "Roślina miododajna (miód macierzankowy). Idealna na ogrody skalne, zielone dachy i jako zamiennik trawnika w miejscach suchych.",
     "rzemieslnicze": "Wyciągi z macierzanki są składnikiem ekologicznych środków do dezynfekcji oraz kosmetyków dla cery tłustej."
   },
-
   "interakcje": "Brak istotnych interakcji przy stosowaniu naparów. Olejek macierzankowy w czystej formie może podrażniać błony śluzowe i nie powinien być stosowany wewnętrznie bez kontroli.",
-
   "ciekawostki": [
     "W starożytności macierzankę palono w świątyniach, by oczyścić przestrzeń ze 'złych energii' i mikrobów.",
     "Rzymscy żołnierze kąpali się w wywarze z macierzanki przed bitwą, wierząc, że dodaje ona męstwa (gr. 'thymos' oznacza odwagę/ducha).",
     "Macierzanka jest jedną z niewielu roślin, która zawiera organiczne związki litu, co tłumaczy jej tradycyjne zastosowanie w łagodzeniu stanów melancholii i lęku.",
     "W Polsce tradycyjnie wchodzi w skład bukietów święconych w dniu Matki Boskiej Zielnej (15 sierpnia)."
   ],
-
   "permakultura": {
     "funkcje": [
       "Dynamiczny akumulator manganu i litu.",
@@ -81,20 +79,40 @@
       "Magnes na pożyteczne drapieżne owady."
     ],
     "gildie": [
-      { "nazwa": "Lawenda", "rola": "Tworzą razem 'duet śródziemnomorski' na słonecznych stanowiskach." },
-      { "nazwa": "Sosna zwyczajna", "rola": "Macierzanka to naturalny element runa w suchych borach sosnowych." },
-      { "nazwa": "Rozchodniki", "rola": "Partnerzy w ekstremalnie suchych skalniakach." },
-      { "nazwa": "Kocanka piaskowa", "rola": "Naturalne towarzystwo na suchych i nasłonecznionych skarpach." },
-      { "nazwa": "Rozchodnik", "rola": "Tworzą razem odporne na suszę dywany." },
-      { "nazwa": "Zapylacze", "rola": "Macierzanka to roślina wybitnie miododajna." }
+      {
+        "nazwa": "Lawenda",
+        "rola": "Tworzą razem 'duet śródziemnomorski' na słonecznych stanowiskach."
+      },
+      {
+        "nazwa": "Sosna zwyczajna",
+        "rola": "Macierzanka to naturalny element runa w suchych borach sosnowych."
+      },
+      {
+        "nazwa": "Rozchodniki",
+        "rola": "Partnerzy w ekstremalnie suchych skalniakach."
+      },
+      {
+        "nazwa": "Kocanka piaskowa",
+        "rola": "Naturalne towarzystwo na suchych i nasłonecznionych skarpach."
+      },
+      {
+        "nazwa": "Rozchodnik",
+        "rola": "Tworzą razem odporne na suszę dywany."
+      },
+      {
+        "nazwa": "Zapylacze",
+        "rola": "Macierzanka to roślina wybitnie miododajna."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Rozsadzanie i sadzenie",
-        "miesiace": [4, 5],
+        "miesiace": [
+          4,
+          5
+        ],
         "opis": "Odrywanie ukorzenionych rozłogów i sadzenie w nowych miejscach na słonecznych stanowiskach.",
         "faza_ksiezyca": "Księżyc ubywający",
         "pora_dnia": "Wieczór",
@@ -102,7 +120,10 @@
       },
       {
         "czynnosc": "Zbiór ziela",
-        "miesiace": [6, 7],
+        "miesiace": [
+          6,
+          7
+        ],
         "opis": "Ścinamy niezdrewniałe, górne części pędów na początku kwitnienia.",
         "faza_ksiezyca": "Pełnia",
         "pora_dnia": "Środek gorącego dnia",
@@ -110,7 +131,9 @@
       },
       {
         "czynnosc": "Odmładzające cięcie",
-        "miesiace": [8],
+        "miesiace": [
+          8
+        ],
         "opis": "Po głównym kwitnieniu lekko przycinamy kępki, by nie łysiały od środka.",
         "faza_ksiezyca": "Księżyc ubywający",
         "pora_dnia": "Popołudnie",
@@ -118,13 +141,17 @@
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Syrop Macierzankowy na 'Mokry Kaszel'",
       "typ": "medyczne",
       "metoda": "odwar z miodem",
-      "tagi": ["kaszel", "oskrzela", "odporność", "flegma"],
+      "tagi": [
+        "kaszel",
+        "oskrzela",
+        "odporność",
+        "flegma"
+      ],
       "skladniki": [
         "Suszone ziele macierzanki: 3 łyżki",
         "Woda: 0.5 l",
@@ -141,14 +168,24 @@
       "uwagi": "Skutecznie ułatwia odkrztuszanie i działa odkażająco na gardło.",
       "roslina": "Macierzanka piaskowa",
       "slug": "macierzanka_piaskowa",
-      "cechy": ["ciemny kolor", "intensywny zapach"],
-      "wlasciwosci": ["wykrztuśna", "antyseptyczna"]
+      "cechy": [
+        "ciemny kolor",
+        "intensywny zapach"
+      ],
+      "wlasciwosci": [
+        "wykrztuśna",
+        "antyseptyczna"
+      ]
     },
     {
       "tytul": "Kąpiel Wzmacniająca dla Dzieci (i dorosłych)",
       "typ": "medyczne",
       "metoda": "napar do kąpieli",
-      "tagi": ["odporność", "przeziębienie", "relaks"],
+      "tagi": [
+        "odporność",
+        "przeziębienie",
+        "relaks"
+      ],
       "skladniki": [
         "Ziele macierzanki: 50 g",
         "Woda: 2 l"
@@ -162,13 +199,16 @@
       "slug": "macierzanka_piaskowa"
     }
   ],
-
   "przepisy_kulinarne": [
     {
       "tytul": "Oliwa Macierzankowa",
       "typ": "kulinarne",
       "metoda": "maceracja",
-      "tagi": ["oliwa", "kuchnia", "przyprawa"],
+      "tagi": [
+        "oliwa",
+        "kuchnia",
+        "przyprawa"
+      ],
       "skladniki": [
         "Świeże gałązki macierzanki: kilka sztuk",
         "Oliwa z oliwek: 250 ml",
@@ -183,5 +223,43 @@
       "slug": "macierzanka_piaskowa"
     }
   ],
-  "ostrzezenia": "Ze względu na wysoką zawartość tymolu, nie należy nadużywać naparów z macierzanki przy ciężkich schorzeniach tarczycy (nadczynność). W dawkach kulinarnych całkowicie bezpieczna."
+  "ostrzezenia": "Ze względu na wysoką zawartość tymolu, nie należy nadużywać naparów z macierzanki przy ciężkich schorzeniach tarczycy (nadczynność). W dawkach kulinarnych całkowicie bezpieczna.",
+  "url": {
+    "Pokrój": "https://upload.wikimedia.org/wikipedia/commons/1/18/Thymus_serpyllum1.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Thymus_serpyllum_002.JPG/960px-Thymus_serpyllum_002.JPG",
+    "Rycina": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Illustration_Thymus_serpyllum0_clean.jpg/960px-Illustration_Thymus_serpyllum0_clean.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Thymus_serpyllum1.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Thymus_serpyllum1.jpg",
+        "autor": "nieznany autor",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Thymus_serpyllum_002.JPG/960px-Thymus_serpyllum_002.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Thymus_serpyllum_002.JPG",
+        "autor": "H. Zell",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Rycina",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Illustration_Thymus_serpyllum0_clean.jpg/960px-Illustration_Thymus_serpyllum0_clean.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Illustration_Thymus_serpyllum0_clean.jpg",
+        "autor": "User:Kilom691",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

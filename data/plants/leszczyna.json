@@ -4,7 +4,6 @@
   "nazwa_lat": "Corylus avellana",
   "rodzina": "Brzozowate (Betulaceae)",
   "opis": "Szybkorosnący, wielopniowy krzew dorastający do 5-8 metrów. Jest jedną z najwcześniej kwitnących roślin w Polsce, stanowiąc kluczowe źródło białkowego pyłku dla pszczół po zimie. Jej pędy cechują się niezwykłą giętkością, co od wieków wykorzystuje się w budownictwie i plecionkarstwie.",
-
   "profil_energetyczny": {
     "smak": "Słodki (orzechy), cierpki i gorzki (liście, kora)",
     "termika": "Neutralna",
@@ -12,7 +11,6 @@
     "zywiol": "Powietrze",
     "opis": "Orzechy odżywiają krew i wzmacniają system nerwowy (budują 'Jing'). Liście działają tonizująco na naczynia krwionośne, 'podnosząc' energię i zapobiegając zastojom żylnym."
   },
-
   "wymagania": {
     "stanowisko": "Słoneczne do półcienistego. W cieniu rośnie dobrze, ale owocuje skąpo.",
     "gleba": "Żyzna, próchniczna, lekko wilgotna, bogata w wapń. Nie lubi gleb kwaśnych i bagiennych.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 4 (Wybitnie odporna na mrozy).",
     "woda": "Wymaga umiarkowanej wilgotności; wrażliwa na suszę w okresie zawiązywania orzechów."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Kwiaty męskie (kotki) zwisają z gałęzi całą zimę, żółkną i pylą w lutym/marcu.",
@@ -34,12 +31,16 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "liscie": {
       "nazwa_surowca": "Folium Coryli",
       "opis_botaniczny": "Duże, podwójnie piłkowane liście, zbierane młode, w pełni wyrośnięte, ale bez przebarwień.",
-      "skladniki_aktywne": ["Garbniki katechinowe", "Flawonoidy (kwercetyna, mirycetyna)", "Kwasy fenolowe", "Olejek eteryczny"],
+      "skladniki_aktywne": [
+        "Garbniki katechinowe",
+        "Flawonoidy (kwercetyna, mirycetyna)",
+        "Kwasy fenolowe",
+        "Olejek eteryczny"
+      ],
       "wlasciwości": "Uszczelniające naczynia krwionośne, przeciwzapalne, ściągające, przeciwobrzękowe.",
       "czas_zbioru": "Maj - Czerwiec.",
       "ostrzezenia": "Zewnętrznie bezpieczne; wewnętrznie mogą powodować lekkie zaparcia przy nadużywaniu."
@@ -47,7 +48,13 @@
     "owoce": {
       "nazwa_surowca": "Nux Coryli (Orzechy laskowe)",
       "opis_botaniczny": "Twarde orzechy zamknięte w listkowatych, powycinanych okrywach owocowych.",
-      "skladniki_aktywne": ["Nienasycone kwasy tłuszczowe", "Witamina E (tokoferol)", "Magnez", "Potas", "Białka roślinne"],
+      "skladniki_aktywne": [
+        "Nienasycone kwasy tłuszczowe",
+        "Witamina E (tokoferol)",
+        "Magnez",
+        "Potas",
+        "Białka roślinne"
+      ],
       "wlasciwości": "Wysokoenergetyczne, wspierające pracę mózgu i serca, neuroprotekcyjne.",
       "czas_zbioru": "Sierpień - Wrzesień.",
       "ostrzezenia": "Silny alergen. Osoby uczulone na pyłek brzozy często wykazują reakcję krzyżową na orzechy laskowe."
@@ -55,27 +62,27 @@
     "kora": {
       "nazwa_surowca": "Cortex Coryli",
       "opis_botaniczny": "Gładka, popielatoszara kora pozyskiwana z młodych gałęzi jesienią lub wczesną wiosną.",
-      "skladniki_aktywne": ["Garbniki (do 10%)", "Związki trójterpenowe (betulina)", "Kwasy organiczne"],
+      "skladniki_aktywne": [
+        "Garbniki (do 10%)",
+        "Związki trójterpenowe (betulina)",
+        "Kwasy organiczne"
+      ],
       "wlasciwości": "Przeciwgorączkowe, ściągające, stosowane w leczeniu żylaków i hemoroidów.",
       "czas_zbioru": "Marzec - Kwiecień (przed liśćmi) lub Październik."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Napar z liści stosowany w przewlekłej niewydolności żylnej, obrzękach nóg oraz stanach zapalnych dróg moczowych. Kora służy do przemywania trudno gojących się ran.",
     "kulinarne": "Orzechy spożywane na surowo, w wyrobach cukierniczych i jako baza do masła orzechowego. Olej leszczynowy tłoczony na zimno jest ceniony w kuchni gourmet.",
     "ogrodowe": "Doskonała roślina osłonowa i żywopłotowa. Produkuje ogromne ilości biomasy i wysokiej jakości ziemi liściowej.",
     "rzemieslnicze": "Witki leszczynowe to najlepszy surowiec do wyplatania koszy, płotów oraz tradycyjnych konstrukcji ogrodowych (np. wsporników do fasoli). Tradycyjny surowiec na różdżki radiestezyjne."
   },
-
   "interakcje": "Ze względu na garbniki w liściach, preparaty leszczynowe mogą osłabiać wchłanianie żelaza i leków przyjmowanych doustnie.",
-
   "ciekawostki": [
     "W tradycji ludowej leszczyna była uznawana za drzewo magiczne, chroniące przed urokami i piorunami.",
     "Wiewiórka potrafi ocenić, czy orzech jest pełny, sprawdzając jego ciężar – rzadko myli się i gryzie pusty owoc.",
     "Pyłek leszczyny jest pierwszym, wysokobiałkowym pokarmem, który pozwala pszczołom na regenerację po zimie."
   ],
-
   "permakultura": {
     "funkcje": [
       "Producent biomasy (technika coppicing - ogławianie)",
@@ -83,17 +90,28 @@
       "Pokarm dla fauny (wiewiórki, popielice, ptaki)"
     ],
     "gildie": [
-      { "nazwa": "Dąb szypułkowy", "rola": "Dominanta; leszczyna rośnie w jego cieniu (drugie piętro)" },
-      { "nazwa": "Czosnek niedźwiedzi", "rola": "Roślina runa; kwitnie przed pełnym ulistnieniem leszczyny" },
-      { "nazwa": "Żywokost lekarski", "rola": "Akumulator potasu u nasady krzewu" }
+      {
+        "nazwa": "Dąb szypułkowy",
+        "rola": "Dominanta; leszczyna rośnie w jego cieniu (drugie piętro)"
+      },
+      {
+        "nazwa": "Czosnek niedźwiedzi",
+        "rola": "Roślina runa; kwitnie przed pełnym ulistnieniem leszczyny"
+      },
+      {
+        "nazwa": "Żywokost lekarski",
+        "rola": "Akumulator potasu u nasady krzewu"
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Cięcie rzemieślnicze (ogławianie)",
-        "miesiace": [1, 2],
+        "miesiace": [
+          1,
+          2
+        ],
         "opis": "Wycinanie najstarszych pędów u nasady w celu pobudzenia wzrostu prostych, elastycznych witek.",
         "faza_ksiezyca": "Księżyc ubywający",
         "pora_dnia": "Południe",
@@ -102,7 +120,10 @@
       },
       {
         "czynnosc": "Zbiór liści",
-        "miesiace": [5, 6],
+        "miesiace": [
+          5,
+          6
+        ],
         "opis": "Zbiór liści bez ogonków, gdy osiągną pełną wielkość, ale są jeszcze młode i soczyście zielone.",
         "faza_ksiezyca": "Księżyc przybywający (faza liścia)",
         "pora_dnia": "Przedpołudnie (po rosie)",
@@ -111,13 +132,16 @@
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Napar 'Lekkie Nogi' na żylaki",
       "typ": "medyczne",
       "metoda": "napar",
-      "tagi": ["żylaki", "krążenie", "obrzęki"],
+      "tagi": [
+        "żylaki",
+        "krążenie",
+        "obrzęki"
+      ],
       "skladniki": [
         "Liście leszczyny (suszone): 1 łyżka stołowa",
         "Woda: 250 ml"
@@ -131,9 +155,73 @@
       "uwagi": "Regularność stosowania jest kluczowa dla efektów naczyniowych.",
       "roslina": "Leszczyna pospolita",
       "slug": "leszczyna",
-      "cechy": ["ziołowy zapach", "jasnożółty kolor"],
-      "wlasciwosci": ["tonizująca naczynia", "przeciwobrzękowa"]
+      "cechy": [
+        "ziołowy zapach",
+        "jasnożółty kolor"
+      ],
+      "wlasciwosci": [
+        "tonizująca naczynia",
+        "przeciwobrzękowa"
+      ]
     }
   ],
-  "ostrzezenia": "Alergia na orzechy laskowe może być bardzo silna. Osoby z niedokrwistością powinny ograniczyć picie herbat z liści (garbniki)."
+  "ostrzezenia": "Alergia na orzechy laskowe może być bardzo silna. Osoby z niedokrwistością powinny ograniczyć picie herbat z liści (garbniki).",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Corylus_avellana_shrub.jpg/960px-Corylus_avellana_shrub.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Corylus_avellana_0005.JPG/960px-Corylus_avellana_0005.JPG",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Corylus_avellana_001.jpg/960px-Corylus_avellana_001.jpg",
+    "Owoce": "https://upload.wikimedia.org/wikipedia/commons/6/60/Corylus_avellana.jpg",
+    "Kora": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Hazel%2C_Corylus_avellana._Epicormic_growth._River_Ayr._Holehouse_Holm%2C_East_Ayrshire.jpg/960px-Hazel%2C_Corylus_avellana._Epicormic_growth._River_Ayr._Holehouse_Holm%2C_East_Ayrshire.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Corylus_avellana_shrub.jpg/960px-Corylus_avellana_shrub.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Corylus_avellana_shrub.jpg",
+        "autor": "MPF",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Corylus_avellana_0005.JPG/960px-Corylus_avellana_0005.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Corylus_avellana_0005.JPG",
+        "autor": "H. Zell",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Corylus_avellana_001.jpg/960px-Corylus_avellana_001.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Corylus_avellana_001.jpg",
+        "autor": "Willow",
+        "licencja": "CC BY 2.5",
+        "licencja_url": "https://creativecommons.org/licenses/by/2.5",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Corylus_avellana.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Corylus_avellana.jpg",
+        "autor": "nieznany autor",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kora",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Hazel%2C_Corylus_avellana._Epicormic_growth._River_Ayr._Holehouse_Holm%2C_East_Ayrshire.jpg/960px-Hazel%2C_Corylus_avellana._Epicormic_growth._River_Ayr._Holehouse_Holm%2C_East_Ayrshire.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Hazel,_Corylus_avellana._Epicormic_growth._River_Ayr._Holehouse_Holm,_East_Ayrshire.jpg",
+        "autor": "Rosser1954",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

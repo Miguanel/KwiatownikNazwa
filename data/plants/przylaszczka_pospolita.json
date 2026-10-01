@@ -4,7 +4,6 @@
   "nazwa_lat": "Hepatica nobilis",
   "rodzina": "Jaskrowate (Ranunculaceae)",
   "opis": "Niewielka, wieloletnia bylina leśna, osiągająca 10-20 cm wysokości. Jest jednym z najwcześniej kwitnących gatunków w Europie Środkowej, często przebijając się przez zeszłoroczne liście jeszcze przed pojawieniem się nowej zieleni. Jej trójklapowe liście są skórzaste i zimozielone, a błękitnofioletowe kwiaty zamykają się na noc i podczas deszczu. W Polsce jest pod ścisłą ochroną gatunkową.",
-
   "profil_energetyczny": {
     "smak": "Gorzki, cierpki, lekko piekący (świeża)",
     "termika": "Chłodna",
@@ -12,7 +11,6 @@
     "zywiol": "Ziemia i Woda",
     "opis": "Przylaszczka działa 'otwierająco' na zastoje w wątrobie i pęcherzyku żółciowym. Chłodzi stany zapalne dróg żółciowych i pomaga w usuwaniu 'gorącej wilgoci' z organizmu. Ma energię regenerującą, powiązaną z wczesnowiosennym budzeniem się sił witalnych."
   },
-
   "wymagania": {
     "stanowisko": "Cień lub półcień. Typowa roślina runa lasów liściastych (bukowych i dębowych).",
     "gleba": "Żyzna, próchniczna, bogata w wapń, umiarkowanie wilgotna.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 4 (Całkowicie mrozoodporna).",
     "woda": "Lubi wilgoć wiosną, latem znosi okresowe przesuszenie pod osłoną koron drzew."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Liście trójklapowe, o sercowatej nasadzie, spodem często przebarwione na fioletowo.",
@@ -35,7 +32,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "ziele": {
       "nazwa_surowca": "Herba Hepaticae",
@@ -52,23 +48,19 @@
       "ostrzezenia": "ŚWIEŻA roślina jest toksyczna! Zawiera protoanemoninę, która silnie drażni skórę, błony śluzowe i układ pokarmowy. Podczas suszenia toksyna ta znika."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Tradycyjnie w leczeniu kamicy żółciowej, zastojów żółci i przewlekłych stanów zapalnych wątroby. Zewnętrznie: płukanki w stanach zapalnych dziąseł i gardła.",
     "kulinarne": "BRAK. Roślina nie nadaje się do spożycia.",
     "ogrodowe": "Wybitna roślina ozdobna do ogrodów cienistych, naturalistycznych i skalnych. Tworzy piękne, błękitne kępy.",
     "rzemieslnicze": "Brak znaczących zastosowań rzemieślniczych poza dekoracyjnymi."
   },
-
   "interakcje": "Może nasilać działanie leków żółciopędnych. Nie stosować przy niedrożności dróg żółciowych.",
-
   "ciekawostki": [
     "Nazwa 'Hepatica' pochodzi od greckiego 'hepar' (wątroba), co odnosi się do kształtu liści.",
     "Nasiona przylaszczki są roznoszone przez mrówki (myrmekochoria) – posiadają specjalne wyrostki (elajosomy), które są przysmakiem mrówek.",
     "Przylaszczka kwitnie dopiero po około 7 latach od wykiełkowania z nasiona.",
     "W Polsce zbiór ze stanu dzikiego jest zabroniony – surowiec można pozyskiwać wyłącznie z upraw ogrodowych."
   ],
-
   "permakultura": {
     "funkcje": [
       "Wczesnowiosenny pożytek pyłkowy dla pierwszych dzikich pszczół i trzmieli.",
@@ -76,17 +68,28 @@
       "Bioindykator gleb wapiennych i lasów o charakterze naturalnym."
     ],
     "gildie": [
-      { "nazwa": "Buk zwyczajny", "rola": "Tworzy pod bukami naturalne, stabilne zbiorowiska runa." },
-      { "nazwa": "Marzanka wonna", "rola": "Sąsiad z runa leśnego, mają podobne wymagania siedliskowe." },
-      { "nazwa": "Wawrzynek wilczełyko", "rola": "Krzew towarzyszący w lasach wapiennych." }
+      {
+        "nazwa": "Buk zwyczajny",
+        "rola": "Tworzy pod bukami naturalne, stabilne zbiorowiska runa."
+      },
+      {
+        "nazwa": "Marzanka wonna",
+        "rola": "Sąsiad z runa leśnego, mają podobne wymagania siedliskowe."
+      },
+      {
+        "nazwa": "Wawrzynek wilczełyko",
+        "rola": "Krzew towarzyszący w lasach wapiennych."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Obserwacja kwitnienia / Zbiór z upraw",
-        "miesiace": [3, 4],
+        "miesiace": [
+          3,
+          4
+        ],
         "opis": "Zbiór liści z upraw własnych (nie z lasu!). Suszenie w przewiewnym miejscu.",
         "faza_ksiezyca": "Księżyc przybywający",
         "pora_dnia": "Przedpołudnie",
@@ -95,13 +98,16 @@
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Napar Przylaszczkowy na drogi żółciowe",
       "typ": "medyczne",
       "metoda": "napar",
-      "tagi": ["wątroba", "żółć", "detoks"],
+      "tagi": [
+        "wątroba",
+        "żółć",
+        "detoks"
+      ],
       "skladniki": [
         "Suszone ziele przylaszczki: 1 łyżeczka",
         "Woda: 250 ml"
@@ -115,9 +121,73 @@
       "uwagi": "Stosować wyłącznie surowiec dobrze wysuszony!",
       "roslina": "Przylaszczka pospolita",
       "slug": "przylaszczka_pospolita",
-      "cechy": ["lekko gorzki smak", "jasny napar"],
-      "wlasciwosci": ["żółciopędna", "moczopędna"]
+      "cechy": [
+        "lekko gorzki smak",
+        "jasny napar"
+      ],
+      "wlasciwosci": [
+        "żółciopędna",
+        "moczopędna"
+      ]
     }
   ],
-  "ostrzezenia": "ROŚLINA POD OCHRONĄ – NIE ZBIERAĆ W LESIE! Świeże ziele jest silnie drażniące i toksyczne. Unikać stosowania w ciąży i podczas karmienia piersią."
+  "ostrzezenia": "ROŚLINA POD OCHRONĄ – NIE ZBIERAĆ W LESIE! Świeże ziele jest silnie drażniące i toksyczne. Unikać stosowania w ciąży i podczas karmienia piersią.",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Hepatica_nobilis_plant.JPG/960px-Hepatica_nobilis_plant.JPG",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Flower_hepatica.jpg/960px-Flower_hepatica.jpg",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Hepatica_nobilis_kz1.jpg/960px-Hepatica_nobilis_kz1.jpg",
+    "Owoce": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Hepatica_nobilis_kz2.jpg/960px-Hepatica_nobilis_kz2.jpg",
+    "Rycina": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Illustration_Hepatica_nobilis0_clean.jpg/960px-Illustration_Hepatica_nobilis0_clean.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Hepatica_nobilis_plant.JPG/960px-Hepatica_nobilis_plant.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Hepatica_nobilis_plant.JPG",
+        "autor": "nieznany autor",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Flower_hepatica.jpg/960px-Flower_hepatica.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Flower_hepatica.jpg",
+        "autor": "Christian Gidlöf",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Hepatica_nobilis_kz1.jpg/960px-Hepatica_nobilis_kz1.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Hepatica_nobilis_kz1.jpg",
+        "autor": "Kenraiz Krzysztof Ziarnek",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Hepatica_nobilis_kz2.jpg/960px-Hepatica_nobilis_kz2.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Hepatica_nobilis_kz2.jpg",
+        "autor": "Kenraiz Krzysztof Ziarnek",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Rycina",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Illustration_Hepatica_nobilis0_clean.jpg/960px-Illustration_Hepatica_nobilis0_clean.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Illustration_Hepatica_nobilis0_clean.jpg",
+        "autor": "User:Kilom691",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

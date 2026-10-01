@@ -4,7 +4,6 @@
   "nazwa_lat": "Tilia cordata",
   "rodzina": "Ślazowate (Malvaceae) / dawniej Lipowate",
   "opis": "Majestatyczne, długowieczne drzewo liściaste, osiągające do 30 m wysokości. Słynie z sercowatych liści i niezwykle wonnych, miododajnych kwiatów. W kulturze słowiańskiej uznawana za drzewo święte, chroniące przed piorunami i urokami. Lipa jest filarem fitoterapii w leczeniu infekcji górnych dróg oddechowych oraz naturalnym środkiem kojącym system nerwowy. Potrafi dożyć nawet 500-1000 lat.",
-
   "profil_energetyczny": {
     "smak": "Słodki, śluzowaty, delikatnie aromatyczny",
     "termika": "Neutralna ku chłodnej",
@@ -12,7 +11,6 @@
     "zywiol": "Powietrze i Woda",
     "opis": "Lipa jest uosobieniem miękkości i łagodności. Jej śluzowa natura nawilża wysuszone tkanki, a słodycz odżywia system nerwowy. Rozprasza napięcie wywołane stresem, 'otwiera' pory skóry, by uwolnić nadmiar gorąca z wnętrza organizmu (poprzez pot)."
   },
-
   "wymagania": {
     "stanowisko": "Słoneczne do półcienistego. Na stanowiskach słonecznych produkuje rekordowe ilości nektaru.",
     "gleba": "Żyzna, głęboka, świeża, zasobna w składniki odżywcze. Najlepiej czuje się na glebach piaszczysto-gliniastych.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 4 (Całkowicie mrozoodporna w Polsce).",
     "woda": "Wymaga umiarkowanej wilgotności; źle znosi długotrwałe susze (liście wcześnie żółkną i opadają)."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Liście wyraźnie sercowate, u nasady asymetryczne, na brzegach piłkowane.",
@@ -35,7 +32,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "kwiaty": {
       "nazwa_surowca": "Inflorescentia Tiliae (Kwiatostan lipy)",
@@ -54,7 +50,12 @@
     "liscie": {
       "nazwa_surowca": "Folium Tiliae",
       "opis_botaniczny": "Młode liście zbierane w maju, przed kwitnieniem.",
-      "skladniki_aktywne": ["Witamina C", "Chlorofil", "Śluzy", "Garbniki"],
+      "skladniki_aktywne": [
+        "Witamina C",
+        "Chlorofil",
+        "Śluzy",
+        "Garbniki"
+      ],
       "wlasciwości": "Pomocniczo w chorobach układu moczowego oraz jako środek oczyszczający skórę (okłady).",
       "czas_zbioru": "Maj."
     },
@@ -65,23 +66,19 @@
       "ostrzezenia": "Zbyt częste stosowanie może prowadzić do zaparć."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Główny lek napotny przy grypie, przeziębieniu, anginie i gorączce. Pomocniczo w suchym kaszlu (łagodzi drapanie), stanach napięcia nerwowego, lękach i trudnościach z zasypianiem.",
     "kulinarne": "Herbata lipowa (klasyk), miód lipowy (najwyżej ceniony na przeziębienia). Młode, majowe liście są jadalne i doskonałe jako baza sałatek.",
     "ogrodowe": "Jedna z najważniejszych roślin miododajnych w naszej strefie klimatycznej. Drzewo dające głęboki, przyjemny cień, idealne do nasadzeń alejowych.",
     "rzemieslnicze": "Drewno lipowe jest niezwykle miękkie i jednorodne – to ulubiony materiał rzeźbiarzy (np. Wit Stwosz rzeźbił w lipie). Z kory pozyskuje się łyko, z którego dawniej wyplatano kosze, maty i obuwie (łapcie)."
   },
-
   "interakcje": "Brak istotnych negatywnych interakcji z lekami syntetycznymi. Dzięki zawartości śluzów może być stosowana jako środek osłonowy przy przyjmowaniu leków drażniących żołądek.",
-
   "ciekawostki": [
     "Jan Kochanowski napisał słynną fraszkę 'Na lipę', wychwalając jej kojące właściwości i zapach.",
     "Miód lipowy w stanie płynnym ma barwę od jasnożółtej do bursztynowej, a po krystalizacji staje się prawie biały.",
     "Podsadka lipy (skrzydełko) pełni rolę spadochronu, dzięki któremu nasiona są roznoszone przez wiatr na duże odległości.",
     "W tradycji ludowej lipa była drzewem 'kobiecym', związanym z energią opiekuńczą i macierzyństwem."
   ],
-
   "permakultura": {
     "funkcje": [
       "Kluczowy pożytek nektarowy dla pszczół (tzw. główny pożytek letni).",
@@ -90,17 +87,28 @@
       "Naturalny wiatrochron w projektach siedliskowych."
     ],
     "gildie": [
-      { "nazwa": "Pszczoły miodne", "rola": "Symbioza absolutna – nektar w zamian za zapylanie." },
-      { "nazwa": "Melisa lekarska", "rola": "Wspólne działanie uspokajające i napotne." },
-      { "nazwa": "Przylaszczka pospolita", "rola": "Często występuje w runie pod lipami w lasach liściastych." }
+      {
+        "nazwa": "Pszczoły miodne",
+        "rola": "Symbioza absolutna – nektar w zamian za zapylanie."
+      },
+      {
+        "nazwa": "Melisa lekarska",
+        "rola": "Wspólne działanie uspokajające i napotne."
+      },
+      {
+        "nazwa": "Przylaszczka pospolita",
+        "rola": "Często występuje w runie pod lipami w lasach liściastych."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór kwiatostanów",
-        "miesiace": [6, 7],
+        "miesiace": [
+          6,
+          7
+        ],
         "opis": "Zbiór kwiatów, gdy większość pąków jest rozwinięta, a kwiaty nie zaczęły jeszcze przekwitać.",
         "faza_ksiezyca": "Księżyc przybywający (faza kwiatu)",
         "pora_dnia": "Południe (po obeschnięciu rosy, przy pełnym słońcu)",
@@ -109,13 +117,17 @@
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Odwar Napotny 'Zimowa Tarcza'",
       "typ": "medyczne",
       "metoda": "napar",
-      "tagi": ["gorączka", "przeziębienie", "grypa", "sen"],
+      "tagi": [
+        "gorączka",
+        "przeziębienie",
+        "grypa",
+        "sen"
+      ],
       "skladniki": [
         "Suszone kwiaty lipy: 1 łyżka",
         "Suszone owoce maliny: 1 łyżka",
@@ -130,17 +142,26 @@
       "uwagi": "Idealny przepis na 'wypocenie' infekcji na samym początku jej trwania.",
       "roslina": "Lipa drobnolistna",
       "slug": "lipa_drobnolistna",
-      "cechy": ["miodowy zapach", "lekko gęsty napar"],
-      "wlasciwosci": ["napotna", "uspokajająca"]
+      "cechy": [
+        "miodowy zapach",
+        "lekko gęsty napar"
+      ],
+      "wlasciwosci": [
+        "napotna",
+        "uspokajająca"
+      ]
     }
   ],
-
   "przepisy_kulinarne": [
     {
       "tytul": "Lemoniada Lipowa (Letni Relaks)",
       "typ": "kulinarne",
       "metoda": "maceracja",
-      "tagi": ["napój", "lato", "relaks"],
+      "tagi": [
+        "napój",
+        "lato",
+        "relaks"
+      ],
       "skladniki": [
         "Świeże kwiaty lipy: 2 garście",
         "Woda: 1 litr",
@@ -157,5 +178,63 @@
       "slug": "lipa_drobnolistna"
     }
   ],
-  "ostrzezenia": "Osoby z zaawansowaną niewydolnością serca powinny unikać picia dużych ilości herbaty lipowej (zbytnie obciążenie serca przy intensywnym poceniu się)."
+  "ostrzezenia": "Osoby z zaawansowaną niewydolnością serca powinny unikać picia dużych ilości herbaty lipowej (zbytnie obciążenie serca przy intensywnym poceniu się).",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Tilia_cordata%2C_Lipa2009.jpg/960px-Tilia_cordata%2C_Lipa2009.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Lime_tree.jpg/960px-Lime_tree.jpg",
+    "Liście": "https://upload.wikimedia.org/wikipedia/commons/8/85/Lipa-kwiecien_DSC2979.JPG",
+    "Owoce": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Linden_nuts_%28explored%29_-_Flickr_-_hedera.baltica.jpg/960px-Linden_nuts_%28explored%29_-_Flickr_-_hedera.baltica.jpg",
+    "Nasiona": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Tilia_cordata%2C_Small-leaved_Lime%2C_Cowlairs%2C_Glasgow.jpg/960px-Tilia_cordata%2C_Small-leaved_Lime%2C_Cowlairs%2C_Glasgow.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Tilia_cordata%2C_Lipa2009.jpg/960px-Tilia_cordata%2C_Lipa2009.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Tilia_cordata,_Lipa2009.jpg",
+        "autor": "ImreKiss",
+        "licencja": "CC BY 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Lime_tree.jpg/960px-Lime_tree.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Lime_tree.jpg",
+        "autor": "N p holmes",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Lipa-kwiecien_DSC2979.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Lipa-kwiecien_DSC2979.JPG",
+        "autor": "Piotr Tadeusz",
+        "licencja": "CC BY 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Linden_nuts_%28explored%29_-_Flickr_-_hedera.baltica.jpg/960px-Linden_nuts_%28explored%29_-_Flickr_-_hedera.baltica.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Linden_nuts_(explored)_-_Flickr_-_hedera.baltica.jpg",
+        "autor": "hedera.baltica from Wrocław, Poland",
+        "licencja": "CC BY-SA 2.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Nasiona",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Tilia_cordata%2C_Small-leaved_Lime%2C_Cowlairs%2C_Glasgow.jpg/960px-Tilia_cordata%2C_Small-leaved_Lime%2C_Cowlairs%2C_Glasgow.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Tilia_cordata,_Small-leaved_Lime,_Cowlairs,_Glasgow.jpg",
+        "autor": "Rosser1954",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

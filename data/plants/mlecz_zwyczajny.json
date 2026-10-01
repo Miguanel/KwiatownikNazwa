@@ -1,127 +1,195 @@
 {
-"id": "mlecz_zwyczajny",
-"nazwa_pl": "Mlecz zwyczajny",
-"nazwa_lat": "Sonchus oleraceus",
-"rodzina": "Astrowate (Asteraceae)",
-"opis": "Roślina jednoroczna o miękkich, kruchych, pusto dętych i gładkich łodygach. Liście są pierzastodzielne, ale zdecydowanie cieńsze i delikatniejsze niż u mlecza polnego. Wydziela biały sok mleczny. Nazwa gatunkowa 'oleraceus' wskazuje na jej dawne zastosowanie jako cennego warzywa ogrodowego. Wytwarza małe, bladożółte koszyczki kwiatowe zebrane w podbaldachy.",
-"profil_energetyczny": {
-"smak": "Lekko gorzki, orzeźwiający",
-"termika": "Zimna",
-"wilgotnosc": "Nawilżająca",
-"zywiol": "Woda",
-"opis": "Chłodzi i łagodzi stany zapalne układu pokarmowego. Znacznie delikatniejszy w działaniu niż mniszek. Nawilża błony śluzowe żołądka."
-},
-"wymagania": {
-"stanowisko": "Słoneczne do półcienia.",
-"gleba": "Zasobna, próchnicza, pulchna (typowa ziemia ogrodowa).",
-"ph_gleby": "6.0 - 8.0 (Tolerancyjny, preferuje obojętne).",
-"mrozoodpornosc": "Brak (roślina jednoroczna).",
-"woda": "Przeciętna wilgotność, źle znosi długotrwałe susze."
-},
-"identyfikacja": {
-"cechy_kluczowe": [
-"Łodyga ulistniona, rozgałęziona, pusta w środku, naga (bez włosków na szypułkach).",
-"Obecny biały sok mleczny.",
-"Górne liście obejmują łodygę ostro zakończonymi uszkami (kształt grotu strzały).",
-"Liście są miękkie i matowe, w dotyku delikatniejsze od mlecza polnego."
-],
-"mozliwe_pomylki": [
-{
-"nazwa": "Mlecz polny (Sonchus arvensis)",
-"roznica": "Ma zaokrąglone uszka liści i gruczołkowate włoski pod kwiatami. Posiada twarde rozłogi."
-},
-{
-"nazwa": "Mlecz kolczasty (Sonchus asper)",
-"roznica": "Ma sztywne, błyszczące i silnie kłujące na brzegach liście."
-}
-]
-},
-"czesci_rosliny": {
-"liscie": {
-"nazwa_surowca": "Folium Sonchi oleracei",
-"opis_botaniczny": "Miękkie, cienkie liście, ząbkowane na brzegach.",
-"skladniki_aktywne": [
-"Wapń",
-"Żelazo",
-"Witamina A i C",
-"Związki śluzowe"
-],
-"wlasciwosci": "Lekko przeczyszczające, silnie odżywcze, remineralizujące.",
-"czas_zbioru": "Kwiecień - Czerwiec.",
-"ostrzezenia": "Brak."
-}
-},
-"zastosowanie": {
-"medyczne": "Tradycyjnie stosowany w dolegliwościach trawiennych jako łagodne zioło regulujące perystaltykę jelit.",
-"kulinarne": "Doskonałe, tradycyjne dzikie warzywo liściowe. Włosi nazywają je 'cicoria selvatica'. Idealne do sałatek, pesto lub jako nadzienie do tart.",
-"ogrodowe": "Częsty gość w przydomowych ogródkach; zjadany chętnie przez drób (stąd potoczna nazwa 'kaczy mlecz').",
-"rzemieslnicze": "Brak."
-},
-"interakcje": [
-"Brak."
-],
-"ciekawostki": [
-"Uznawana za jedno z najsmaczniejszych dzikich warzyw liściowych w strefie umiarkowanej.",
-"Pliniusz Starszy pisał w starożytności, że grecki heros Tezeusz zjadł pokaźne danie z mlecza zwyczajnego przed walką z Minotaurem, aby nabrać sił i oczyścić umysł."
-],
-"permakultura": {
-"funkcje": [
-"Zielony nawóz bogaty w wapń i biomasę.",
-"Pokarm dla kur i królików."
-],
-"gildie": [
-{
-"nazwa": "Grządki warzywne",
-"rola": "Wypełnia puste luki między warzywami, chroniąc glebę przed wysychaniem."
-}
-]
-},
-"kalendarz_ogrodnika": {
-"siew": "Rozsiewa się masowo latem i jesienią z wiatrem.",
-"sadzenie": "Nie dotyczy.",
-"kwitnienie": "Czerwiec - Październik.",
-"zadania": [
-{
-"czynnosc": "Zbiór kulinarny",
-"miesiace": [5, 6],
-"opis": "Zbiór górnych, miękkich pędów przed rozwinięciem kwiatów.",
-"faza_ksiezyca": "Pierwsza kwadra",
-"pora_dnia": "Rano",
-"pogoda": "Słonecznie",
-"wplyw_ksiezyca": "Sprzyja chrupkości pędów."
-}
-]
-},
-"przepisy_medyczne": [],
-"przepisy_kulinarne": [
-{
-"tytul": "Włoska saute z mlecza zwyczajnego",
-"typ": "kulinarne",
-"metoda": "smażenie",
-"tagi": ["kuchnia włoska", "dzika kuchnia"],
-"skladniki": [
-"Miska młodych liści i wierzchołków mlecza zwyczajnego",
-"Oliwa extra virgin",
-"Ząbek czosnku, odrobina peperoncino (chilli)"
-],
-"sposob_przygotowania": [
-"Liście zblanszować przez 2 minuty we wrzątku i odsączyć.",
-"Na patelni rozgrzać oliwę z czosnkiem i chilli.",
-"Dodać odsączony mlecz i podsmażać przez 5 minut."
-],
-"dawkowanie": "Porcja jako doskonały dodatek do mięs i ryb.",
-"uwagi": "Warto skropić sokiem z cytryny przed podaniem.",
-"roslina": "Mlecz zwyczajny",
-"slug": "mlecz_zwyczajny",
-"cechy": ["lekko gorzkawy, chrupiący"],
-"wlasciwosci": ["pobudza apetyt"]
-}
-],
-"alchemia_barw": {
-"glowny_barwnik": "Brak",
-"efekt_na_wlosach": "Brak zastosowania.",
-"modyfikatory_ph": [],
-"ostrzezenia_bhp": "Bezpieczny."
-},
-"ostrzezenia": "Brak szczególnych ostrzeżeń."
+  "id": "mlecz_zwyczajny",
+  "nazwa_pl": "Mlecz zwyczajny",
+  "nazwa_lat": "Sonchus oleraceus",
+  "rodzina": "Astrowate (Asteraceae)",
+  "opis": "Roślina jednoroczna o miękkich, kruchych, pusto dętych i gładkich łodygach. Liście są pierzastodzielne, ale zdecydowanie cieńsze i delikatniejsze niż u mlecza polnego. Wydziela biały sok mleczny. Nazwa gatunkowa 'oleraceus' wskazuje na jej dawne zastosowanie jako cennego warzywa ogrodowego. Wytwarza małe, bladożółte koszyczki kwiatowe zebrane w podbaldachy.",
+  "profil_energetyczny": {
+    "smak": "Lekko gorzki, orzeźwiający",
+    "termika": "Zimna",
+    "wilgotnosc": "Nawilżająca",
+    "zywiol": "Woda",
+    "opis": "Chłodzi i łagodzi stany zapalne układu pokarmowego. Znacznie delikatniejszy w działaniu niż mniszek. Nawilża błony śluzowe żołądka."
+  },
+  "wymagania": {
+    "stanowisko": "Słoneczne do półcienia.",
+    "gleba": "Zasobna, próchnicza, pulchna (typowa ziemia ogrodowa).",
+    "ph_gleby": "6.0 - 8.0 (Tolerancyjny, preferuje obojętne).",
+    "mrozoodpornosc": "Brak (roślina jednoroczna).",
+    "woda": "Przeciętna wilgotność, źle znosi długotrwałe susze."
+  },
+  "identyfikacja": {
+    "cechy_kluczowe": [
+      "Łodyga ulistniona, rozgałęziona, pusta w środku, naga (bez włosków na szypułkach).",
+      "Obecny biały sok mleczny.",
+      "Górne liście obejmują łodygę ostro zakończonymi uszkami (kształt grotu strzały).",
+      "Liście są miękkie i matowe, w dotyku delikatniejsze od mlecza polnego."
+    ],
+    "mozliwe_pomylki": [
+      {
+        "nazwa": "Mlecz polny (Sonchus arvensis)",
+        "roznica": "Ma zaokrąglone uszka liści i gruczołkowate włoski pod kwiatami. Posiada twarde rozłogi."
+      },
+      {
+        "nazwa": "Mlecz kolczasty (Sonchus asper)",
+        "roznica": "Ma sztywne, błyszczące i silnie kłujące na brzegach liście."
+      }
+    ]
+  },
+  "czesci_rosliny": {
+    "liscie": {
+      "nazwa_surowca": "Folium Sonchi oleracei",
+      "opis_botaniczny": "Miękkie, cienkie liście, ząbkowane na brzegach.",
+      "skladniki_aktywne": [
+        "Wapń",
+        "Żelazo",
+        "Witamina A i C",
+        "Związki śluzowe"
+      ],
+      "wlasciwosci": "Lekko przeczyszczające, silnie odżywcze, remineralizujące.",
+      "czas_zbioru": "Kwiecień - Czerwiec.",
+      "ostrzezenia": "Brak."
+    }
+  },
+  "zastosowanie": {
+    "medyczne": "Tradycyjnie stosowany w dolegliwościach trawiennych jako łagodne zioło regulujące perystaltykę jelit.",
+    "kulinarne": "Doskonałe, tradycyjne dzikie warzywo liściowe. Włosi nazywają je 'cicoria selvatica'. Idealne do sałatek, pesto lub jako nadzienie do tart.",
+    "ogrodowe": "Częsty gość w przydomowych ogródkach; zjadany chętnie przez drób (stąd potoczna nazwa 'kaczy mlecz').",
+    "rzemieslnicze": "Brak."
+  },
+  "interakcje": [
+    "Brak."
+  ],
+  "ciekawostki": [
+    "Uznawana za jedno z najsmaczniejszych dzikich warzyw liściowych w strefie umiarkowanej.",
+    "Pliniusz Starszy pisał w starożytności, że grecki heros Tezeusz zjadł pokaźne danie z mlecza zwyczajnego przed walką z Minotaurem, aby nabrać sił i oczyścić umysł."
+  ],
+  "permakultura": {
+    "funkcje": [
+      "Zielony nawóz bogaty w wapń i biomasę.",
+      "Pokarm dla kur i królików."
+    ],
+    "gildie": [
+      {
+        "nazwa": "Grządki warzywne",
+        "rola": "Wypełnia puste luki między warzywami, chroniąc glebę przed wysychaniem."
+      }
+    ]
+  },
+  "kalendarz_ogrodnika": {
+    "siew": "Rozsiewa się masowo latem i jesienią z wiatrem.",
+    "sadzenie": "Nie dotyczy.",
+    "kwitnienie": "Czerwiec - Październik.",
+    "zadania": [
+      {
+        "czynnosc": "Zbiór kulinarny",
+        "miesiace": [
+          5,
+          6
+        ],
+        "opis": "Zbiór górnych, miękkich pędów przed rozwinięciem kwiatów.",
+        "faza_ksiezyca": "Pierwsza kwadra",
+        "pora_dnia": "Rano",
+        "pogoda": "Słonecznie",
+        "wplyw_ksiezyca": "Sprzyja chrupkości pędów."
+      }
+    ]
+  },
+  "przepisy_medyczne": [],
+  "przepisy_kulinarne": [
+    {
+      "tytul": "Włoska saute z mlecza zwyczajnego",
+      "typ": "kulinarne",
+      "metoda": "smażenie",
+      "tagi": [
+        "kuchnia włoska",
+        "dzika kuchnia"
+      ],
+      "skladniki": [
+        "Miska młodych liści i wierzchołków mlecza zwyczajnego",
+        "Oliwa extra virgin",
+        "Ząbek czosnku, odrobina peperoncino (chilli)"
+      ],
+      "sposob_przygotowania": [
+        "Liście zblanszować przez 2 minuty we wrzątku i odsączyć.",
+        "Na patelni rozgrzać oliwę z czosnkiem i chilli.",
+        "Dodać odsączony mlecz i podsmażać przez 5 minut."
+      ],
+      "dawkowanie": "Porcja jako doskonały dodatek do mięs i ryb.",
+      "uwagi": "Warto skropić sokiem z cytryny przed podaniem.",
+      "roslina": "Mlecz zwyczajny",
+      "slug": "mlecz_zwyczajny",
+      "cechy": [
+        "lekko gorzkawy, chrupiący"
+      ],
+      "wlasciwosci": [
+        "pobudza apetyt"
+      ]
+    }
+  ],
+  "alchemia_barw": {
+    "glowny_barwnik": "Brak",
+    "efekt_na_wlosach": "Brak zastosowania.",
+    "modyfikatory_ph": [],
+    "ostrzezenia_bhp": "Bezpieczny."
+  },
+  "ostrzezenia": "Brak szczególnych ostrzeżeń.",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Sonchus_February_2008-1.jpg/960px-Sonchus_February_2008-1.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Flower_of_Sonchus_oleraceus.jpg/960px-Flower_of_Sonchus_oleraceus.jpg",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Gewone_melkdistel_bladrozet_%28Sonchus_oleraceus%29.jpg/960px-Gewone_melkdistel_bladrozet_%28Sonchus_oleraceus%29.jpg",
+    "Owoce": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/S.oleraceus-cips-1.jpg/960px-S.oleraceus-cips-1.jpg",
+    "Rycina": "https://upload.wikimedia.org/wikipedia/commons/7/79/Sonchus_oleraceus_k%C3%A5lmolke.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Sonchus_February_2008-1.jpg/960px-Sonchus_February_2008-1.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Sonchus_February_2008-1.jpg",
+        "autor": "Alvesgaspar",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Flower_of_Sonchus_oleraceus.jpg/960px-Flower_of_Sonchus_oleraceus.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Flower_of_Sonchus_oleraceus.jpg",
+        "autor": "Santhaladevi",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Gewone_melkdistel_bladrozet_%28Sonchus_oleraceus%29.jpg/960px-Gewone_melkdistel_bladrozet_%28Sonchus_oleraceus%29.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Gewone_melkdistel_bladrozet_(Sonchus_oleraceus).jpg",
+        "autor": "Rasbak 08:50, 29 April 2007 (UTC)",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/S.oleraceus-cips-1.jpg/960px-S.oleraceus-cips-1.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:S.oleraceus-cips-1.jpg",
+        "autor": "Philmarin",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Rycina",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Sonchus_oleraceus_k%C3%A5lmolke.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Sonchus_oleraceus_k%C3%A5lmolke.jpg",
+        "autor": "Carl Axel Magnus Lindman",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

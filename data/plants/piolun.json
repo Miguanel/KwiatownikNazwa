@@ -4,7 +4,6 @@
   "nazwa_lat": "Artemisia absinthium",
   "rodzina": "Astrowate (Asteraceae)",
   "opis": "Wieloletnia krzewinka o srebrzysto-szarym zabarwieniu i silnym, charakterystycznym aromacie. Cała roślina jest gęsto owłosiona jedwabistymi włoskami, co nadaje jej niemal 'księżycowy' blask. Piołun kocha miejsca suche, słoneczne i kamieniste. Jest absolutnym rekordzistą goryczy – absyntyna w nim zawarta jest wyczuwalna nawet w rozcieńczeniu 1:70 000. To roślina o potężnej historii, od biblijnych przekleństw po artystyczną bohemę Paryża.",
-
   "profil_energetyczny": {
     "smak": "Ekstremalnie gorzki, ostry, aromatyczny",
     "termika": "Zimna",
@@ -12,7 +11,6 @@
     "zywiol": "Powietrze i Ogień",
     "opis": "Piołun to 'zimny miecz'. Jego energia błyskawicznie przecina zastoje wilgotnego gorąca w wątrobie i pęcherzyku żółciowym. Jako roślina wybitnie gorzka, 'ściąga' Qi w dół, wymuszając ruch w leniwym układzie trawiennym. Na poziomie mentalnym rozprasza mrok i pomaga odciąć się od pasożytniczych myśli lub relacji."
   },
-
   "wymagania": {
     "stanowisko": "Pełne słońce. W cieniu traci swój srebrzysty kolor i stężenie olejków.",
     "gleba": "Sucha, przepuszczalna, piaszczysto-kamienista, zasobna w wapń. Nienawidzi mokrych 'nóg'.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 4 (Całkowicie mrozoodporny).",
     "woda": "Ekstremalnie niska; po ukorzenieniu praktycznie nie wymaga podlewania."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Liście obustronnie srebrzysto-białe, jedwabiście owłosione, 2-3 krotnie pierzastosieczne.",
@@ -39,7 +36,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "ziele": {
       "nazwa_surowca": "Herba Absinthii",
@@ -56,16 +52,13 @@
       "ostrzezenia": "Tujon w nadmiarze jest neurotoksyczny (powoduje drgawki i halucynacje). Stosować krótkotrwale!"
     }
   },
-
   "zastosowanie": {
     "medyczne": "Brak apetytu, niedokwasność żołądka, atonia jelit, kolka żółciowa, robaczyce (owsiki, glisty), bolesne i skąpe miesiączki. Zewnętrznie: na świerzb i wszawicę.",
     "kulinarne": "Składnik słynnego Absyntu oraz wermutów (Vermouth pochodzi od niem. Wermut - piołun). Jako przyprawa do bardzo tłustych mięs (gęś, kaczka) - dosłownie szczypta.",
     "ogrodowe": "Jeden z najsilniejszych repelentów. Wyciągi z piołunu odstraszają mszyce, gąsienice bielinka kapustnika i mrówki. Posadzony przy porzeczkach chroni je przed rdzą wejmutkowo-porzeczkową.",
     "rzemieslnicze": "Historycznie używany do zabezpieczania papieru i tkanin przed molami i gryzoniami (dodatek do atramentu)."
   },
-
   "interakcje": "Nie łączyć z lekami przeciwpadaczkowymi (może obniżać próg drgawkowy). Może nasilać działanie leków na trawienie.",
-
   "ciekawostki": [
     "Absynt, ulubiony trunek van Gogha i Hemingwaya, został zakazany w wielu krajach na początku XX wieku, ponieważ wierzono, że piołun powoduje 'absyntyzm' (szaleństwo). Dziś wiemy, że winny był głównie zanieczyszczony alkohol o wysokim stężeniu.",
     "W Apokalipsie św. Jana gwiazda 'Piołun' spada na ziemię, czyniąc wody gorzkimi i niezdatnymi do picia.",
@@ -73,7 +66,6 @@
     "Gorycz piołunu jest tak silna, że kropla wyciągu jest wyczuwalna w basenie olimpijskim wody.",
     "Nazywany 'matką ziół' (Artemisia od bogini Artemidy), opiekunką kobiet i położnych."
   ],
-
   "permakultura": {
     "funkcje": [
       "Naturalny pestycyd i fungicyd.",
@@ -82,17 +74,28 @@
       "Wskaźnik suchych, wapiennych i słonecznych mikrosiedlisk."
     ],
     "gildie": [
-      { "nazwa": "Porzeczka", "rola": "Piołun chroni porzeczki przed rdzą." },
-      { "nazwa": "Kapusta", "rola": "Odstrasza bielinka kapustnika (stosować jako oprysk lub sąsiedztwo)." },
-      { "nazwa": "Jabłoń", "rola": "Posadzony w pobliżu pnia odstrasza owocówkę jabłkóweczkę." }
+      {
+        "nazwa": "Porzeczka",
+        "rola": "Piołun chroni porzeczki przed rdzą."
+      },
+      {
+        "nazwa": "Kapusta",
+        "rola": "Odstrasza bielinka kapustnika (stosować jako oprysk lub sąsiedztwo)."
+      },
+      {
+        "nazwa": "Jabłoń",
+        "rola": "Posadzony w pobliżu pnia odstrasza owocówkę jabłkóweczkę."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór ziela do suszenia",
-        "miesiace": [7, 8],
+        "miesiace": [
+          7,
+          8
+        ],
         "opis": "Ścinanie ulistnionych szczytów pędów na początku kwitnienia.",
         "faza_ksiezyca": "Księżyc ubywający (faza osuszania/korzenia)",
         "pora_dnia": "Południe (upał)",
@@ -101,13 +104,17 @@
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Nalewka Piołunówka (Ratunek trawienny)",
       "typ": "medyczne",
       "metoda": "maceracja",
-      "tagi": ["trawienie", "żołądek", "pasożyty", "gorycz"],
+      "tagi": [
+        "trawienie",
+        "żołądek",
+        "pasożyty",
+        "gorycz"
+      ],
       "skladniki": [
         "Suszone ziele piołunu: 50g",
         "Alkohol 70%: 250ml"
@@ -121,14 +128,24 @@
       "uwagi": "Stosować doraźnie. Nie używać dłużej niż 2 tygodnie.",
       "roslina": "Bylica piołun",
       "slug": "piolun",
-      "cechy": ["ciemnozielony kolor", "wyjątkowa gorycz"],
-      "wlasciwosci": ["żółciopędna", "pobudzająca trawienie"]
+      "cechy": [
+        "ciemnozielony kolor",
+        "wyjątkowa gorycz"
+      ],
+      "wlasciwosci": [
+        "żółciopędna",
+        "pobudzająca trawienie"
+      ]
     },
     {
       "tytul": "Napar na Pasożyty (Kuracja krótka)",
       "typ": "medyczne",
       "metoda": "napar",
-      "tagi": ["pasożyty", "odrobaczanie", "jelita"],
+      "tagi": [
+        "pasożyty",
+        "odrobaczanie",
+        "jelita"
+      ],
       "skladniki": [
         "Suszone ziele piołunu: 1 łyżeczka",
         "Woda: 250ml"
@@ -142,13 +159,17 @@
       "slug": "piolun"
     }
   ],
-
   "przepisy_ogrodnicze": [
     {
       "tytul": "Oprysk 'Gorycz Piołunowa' na mszyce",
       "typ": "ogrodowe",
       "metoda": "wyciąg zimny",
-      "tagi": ["eko-ogród", "mszyce", "mrówki", "ochrona"],
+      "tagi": [
+        "eko-ogród",
+        "mszyce",
+        "mrówki",
+        "ochrona"
+      ],
       "skladniki": [
         "Świeże ziele piołunu: 300g (lub 30g suszu)",
         "Woda: 10 litrów"
@@ -162,5 +183,43 @@
       "slug": "piolun"
     }
   ],
-  "ostrzezenia": "BEZWZGLĘDNIE NIE STOSOWAĆ W CIĄŻY I PODCZAS KARMIENIA (działa poronnie i przechodzi do mleka, czyniąc je gorzkim). Zakaz stosowania przy wrzodach żołądka i dwunastnicy oraz przy skłonnościach do krwawień. Długotrwałe stosowanie może prowadzić do uzależnienia i uszkodzeń układu nerwowego."
+  "ostrzezenia": "BEZWZGLĘDNIE NIE STOSOWAĆ W CIĄŻY I PODCZAS KARMIENIA (działa poronnie i przechodzi do mleka, czyniąc je gorzkim). Zakaz stosowania przy wrzodach żołądka i dwunastnicy oraz przy skłonnościach do krwawień. Długotrwałe stosowanie może prowadzić do uzależnienia i uszkodzeń układu nerwowego.",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Artemisia_absinthium_P1210748.jpg/960px-Artemisia_absinthium_P1210748.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Artemisia_absinthium_%284999002792%29.jpg/960px-Artemisia_absinthium_%284999002792%29.jpg",
+    "Rycina": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Absinthe6.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Artemisia_absinthium_P1210748.jpg/960px-Artemisia_absinthium_P1210748.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Artemisia_absinthium_P1210748.jpg",
+        "autor": "David Monniaux",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Artemisia_absinthium_%284999002792%29.jpg/960px-Artemisia_absinthium_%284999002792%29.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Artemisia_absinthium_(4999002792).jpg",
+        "autor": "Matt Lavin from Bozeman, Montana, USA",
+        "licencja": "CC BY-SA 2.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Rycina",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Absinthe6.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Absinthe6.jpg",
+        "autor": "Unknown author Unknown author",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

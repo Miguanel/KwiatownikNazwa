@@ -4,7 +4,6 @@
   "nazwa_lat": "Arctium lappa",
   "rodzina": "Astrowate (Asteraceae)",
   "opis": "Dwuletnia, potężna roślina o monumentalnym pokroju, dorastająca do 2 metrów wysokości. W pierwszym roku tworzy rozetę ogromnych liści, a w drugim silnie rozgałęzioną łodygę z kwiatostanami. Charakterystyczne koszyczki kwiatowe są otoczone haczykowatymi listkami okrywy, które po dojrzeniu zamieniają się w rzepy. Posiada niezwykle długi, mięsisty korzeń palowy, który sięga głęboko w glebę, wydobywając z niej minerały niedostępne dla innych roślin.",
-
   "profil_energetyczny": {
     "smak": "Gorzki, słodkawy, mdły",
     "termika": "Chłodna",
@@ -12,7 +11,6 @@
     "zywiol": "Ziemia",
     "opis": "Łopian to 'gruntowny sprzątacz'. Jego energia kieruje się w dół, poruszając zastoje w układzie limfatycznym i moczowym. Chłodzi stany zapalne skóry wynikające z 'gorąca krwi' (toksyny). Działa uziemiająco, pomagając organizmowi pozbyć się tego, co zbędne i szkodliwe."
   },
-
   "wymagania": {
     "stanowisko": "Słoneczne do półcienistego. Wymaga dużej przestrzeni.",
     "gleba": "Głęboka, żyzna, próchniczna, wilgotna, najlepiej gliniasto-piaszczysta. Na twardej, zbitej ziemi korzeń staje się pokręcony i trudny do wydobycia.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 3 (Całkowicie mrozoodporny).",
     "woda": "Wysokie zapotrzebowanie, szczególnie w fazie wzrostu liści; znosi okresowe susze dzięki głębokiemu systemowi korzeniowemu."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Liście ogromne (do 50 cm), sercowate, spodem szaro-kutnerowate (filcowate).",
@@ -39,7 +36,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "korzen": {
       "nazwa_surowca": "Radix Bardanae",
@@ -67,16 +63,13 @@
       "czas_zbioru": "Sierpień - Wrzesień."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Trądzik, czyraczność, łuszczyca, egzemy, łojotokowe zapalenie skóry, cukrzyca (pomocniczo), reumatyzm, kamica nerkowa, wypadanie włosów i łupież (zewnętrznie).",
     "kulinarne": "Korzeń jest popularnym warzywem w Japonii (Gobo). Można go smażyć, dusić lub dodawać do zup – ma orzechowy, lekko ziemisty smak. Młode ogonki liściowe po obraniu można jeść jak szparagi.",
     "ogrodowe": "Producent ogromnej ilości biomasy. Wyciągi z liści stosuje się przeciwko mączniakowi i mszycom.",
     "rzemieslnicze": "Sok z korzenia był bazą do produkcji tradycyjnych preparatów wzmacniających czarne barwniki tkanin."
   },
-
   "interakcje": "Może nasilać działanie leków obniżających poziom cukru we krwi (hipoglikemizujących). Ze względu na działanie moczopędne, należy zachować ostrożność przy jednoczesnym stosowaniu diuretyków.",
-
   "ciekawostki": [
     "Inżynier Georges de Mestral w 1941 roku po powrocie ze spaceru z psem zauważył rzepy łopianu na swojej kurtce. Pod mikroskopem zobaczył tysiące haczyków – tak narodził się pomysł na zapięcia Velcro.",
     "W Japonii łopian (Gobo) jest uznawany za klucz do długowieczności i zdrowego przewodu pokarmowego.",
@@ -84,7 +77,6 @@
     "Korzeń łopianu w połączeniu z korzeniem mniszka tworzy klasyczny brytyjski napój bezalkoholowy 'Dandelion and Burdock', pity od średniowiecza.",
     "W medycynie ludowej wierzono, że liść łopianu przyłożony do głowy potrafi wyciągnąć ból migrenowy."
   ],
-
   "permakultura": {
     "funkcje": [
       "Dynamiczny akumulator minerałów z głębokich warstw gleby.",
@@ -93,16 +85,24 @@
       "Napowietrzanie ciężkich gleb systemem korzeniowym."
     ],
     "gildie": [
-      { "nazwa": "Żywokost", "rola": "Wspólnie tworzą potężną strefę akumulacji minerałów na obrzeżach ogrodu." },
-      { "nazwa": "Dynia", "rola": "Ogromne liście łopianu mogą służyć jako naturalna osłona przed wiatrem dla płożących się dyń." }
+      {
+        "nazwa": "Żywokost",
+        "rola": "Wspólnie tworzą potężną strefę akumulacji minerałów na obrzeżach ogrodu."
+      },
+      {
+        "nazwa": "Dynia",
+        "rola": "Ogromne liście łopianu mogą służyć jako naturalna osłona przed wiatrem dla płożących się dyń."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Wykopywanie korzeni",
-        "miesiace": [10, 11],
+        "miesiace": [
+          10,
+          11
+        ],
         "opis": "Zbiór z roślin jednorocznych (tych bez pędu kwiatowego). Wymaga głębokiego szpadla.",
         "faza_ksiezyca": "Nów",
         "pora_dnia": "Wieczór",
@@ -110,13 +110,17 @@
       }
     ]
   },
-
   "przepisy_medyczne": [
     {
       "tytul": "Olej Łopianowy na porost włosów",
       "typ": "kosmetyczne",
       "metoda": "maceracja olejowa",
-      "tagi": ["włosy", "łupież", "łysienie", "skóra głowy"],
+      "tagi": [
+        "włosy",
+        "łupież",
+        "łysienie",
+        "skóra głowy"
+      ],
       "skladniki": [
         "Suszony korzeń łopianu (rozdrobniony): 50g",
         "Olej migdałowy lub słonecznikowy: 200ml"
@@ -131,14 +135,25 @@
       "uwagi": "Najlepszy naturalny środek na wzmocnienie cebulek włosowych.",
       "roslina": "Łopian większy",
       "slug": "lopian_wiekszy",
-      "cechy": ["słomkowy kolor", "delikatny zapach"],
-      "wlasciwosci": ["odżywcza", "przeciwłupieżowa"]
+      "cechy": [
+        "słomkowy kolor",
+        "delikatny zapach"
+      ],
+      "wlasciwosci": [
+        "odżywcza",
+        "przeciwłupieżowa"
+      ]
     },
     {
       "tytul": "Odwar Oczyszczający Cera-Detox",
       "typ": "medyczne",
       "metoda": "odwar",
-      "tagi": ["trądzik", "detoks", "krew", "metabolizm"],
+      "tagi": [
+        "trądzik",
+        "detoks",
+        "krew",
+        "metabolizm"
+      ],
       "skladniki": [
         "Rozdrobniony korzeń łopianu: 1 łyżka",
         "Woda: 300ml"
@@ -153,13 +168,16 @@
       "slug": "lopian_wiekszy"
     }
   ],
-
   "przepisy_kulinarne": [
     {
       "tytul": "Kinpira Gobo (Japoński Łopian Smażony)",
       "typ": "kulinarne",
       "metoda": "smażenie",
-      "tagi": ["warzywo", "kuchnia azjatycka", "zdrowie"],
+      "tagi": [
+        "warzywo",
+        "kuchnia azjatycka",
+        "zdrowie"
+      ],
       "skladniki": [
         "Korzeń łopianu: 200g",
         "Marchew: 100g",
@@ -176,5 +194,63 @@
       "slug": "lopian_wiekszy"
     }
   ],
-  "ostrzezenia": "Nie stosować w czasie ciąży. U osób z bardzo wrażliwym układem pokarmowym duże dawki inuliny mogą powodować wzdęcia."
+  "ostrzezenia": "Nie stosować w czasie ciąży. U osób z bardzo wrażliwym układem pokarmowym duże dawki inuliny mogą powodować wzdęcia.",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Arctium_lappa02.jpg/960px-Arctium_lappa02.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Arctium_lappa_15-p.bot-arcti.lappa-06.jpg/960px-Arctium_lappa_15-p.bot-arcti.lappa-06.jpg",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Arctium_lappa_leaves_Bremgartenwald.JPG/960px-Arctium_lappa_leaves_Bremgartenwald.JPG",
+    "Owoce": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Burdock2.jpg/960px-Burdock2.jpg",
+    "Korzeń": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/367_Melrand.jpg/960px-367_Melrand.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Arctium_lappa02.jpg/960px-Arctium_lappa02.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Arctium_lappa02.jpg",
+        "autor": "nieznany autor",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Arctium_lappa_15-p.bot-arcti.lappa-06.jpg/960px-Arctium_lappa_15-p.bot-arcti.lappa-06.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Arctium_lappa_15-p.bot-arcti.lappa-06.jpg",
+        "autor": "Ayotte, Gilles, 1948-",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Arctium_lappa_leaves_Bremgartenwald.JPG/960px-Arctium_lappa_leaves_Bremgartenwald.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Arctium_lappa_leaves_Bremgartenwald.JPG",
+        "autor": "MurielBendel",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Burdock2.jpg/960px-Burdock2.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Burdock2.jpg",
+        "autor": "Paul Henjum",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Korzeń",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/367_Melrand.jpg/960px-367_Melrand.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:367_Melrand.jpg",
+        "autor": "Moreau.henri",
+        "licencja": "CC BY 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by/4.0",
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }
