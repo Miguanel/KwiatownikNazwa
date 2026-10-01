@@ -411,5 +411,181 @@
         }
       }
     ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-01",
+    "pola": {
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": [
+          "Łodyga (głąbik) jest PEŁNA w środku, a nie rurkowata i pusta jak u mniszka.",
+          "Łodyga i liście są często pokryte sztywnymi, rozwidlonymi włoskami.",
+          "Brak soku mlecznego (lub jest go bardzo niewiele i jest wodnisty).",
+          "Pączki kwiatowe przed rozwinięciem zwisają ku dołowi (u mniszka są wzniesione)."
+        ],
+        "tresc": [
+          {
+            "tekst": "Łodyga (głąbik) jest pełna w środku, a nie rurkowata i pusta jak u mniszka, osiąga wysokość od 10 do 40 cm, jest wyraźnie zgrubiała pod główką kwiatową i posiada na niej jeden lub dwa łuskowate liście.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s247"
+            ]
+          },
+          {
+            "tekst": "Łodyga i liście są często pokryte sztywnymi, rozwidlonymi włoskami, przy czym rośliny z północnego Iranu wyróżniają się posiadaniem rzadkich dwuramiennych włosków na liściach.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s256"
+            ]
+          },
+          {
+            "tekst": "Brak soku mlecznego lub jest go bardzo niewiele i jest wodnisty.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Pączki kwiatowe przed rozwinięciem zwisają ku dołowi, będąc przed rozkwitnięciem zazwyczaj pochylone w dół, podczas gdy u mniszka są wzniesione.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s248"
+            ]
+          },
+          {
+            "tekst": "Podczas gdy podgatunki w Alpach i Przedalpiach wykazują silną zmienność, populacje na wschodzie Iranu są morfologicznie znacznie bardziej jednostajne.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s255"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "b4c17630e4bcd674"
+      },
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Bylina łąkowa bardzo często mylona z mniszkiem lekarskim ze względu na żółte koszyczki kwiatowe i rozetę liści odziomkowych. Jednak w przeciwieństwie do mniszka, liście brodawnika są zazwyczaj szorstko owłosione, a jego bezlistna łodyga nie jest dętą rurką. Tworzy typowy krajobraz tradycyjnych łąk kośnych.",
+        "tresc": [
+          {
+            "tekst": "Brodawnik zwyczajny to bylina łąkowa, która pochodzi z Europy, a jako gatunek zawleczony występuje również w całej Ameryce Północnej.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s250"
+            ]
+          },
+          {
+            "tekst": "W Polsce jest gatunkiem pospolitym zarówno na niżu, jak i w górach, porastając żyzne gleby i łąki na wysokościach do 2000 metrów n.p.m.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s249"
+            ]
+          },
+          {
+            "tekst": "Roślina ta słynie z tego, że jest bardzo często mylona z mniszkiem lekarskim ze względu na żółte koszyczki kwiatowe i rozetę liści odziomkowych.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jednak w przeciwieństwie do mniszka, liście brodawnika są zazwyczaj szorstko owłosione, a jego bezlistna łodyga nie jest dętą rurką.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Brodawnik tworzy typowy krajobraz tradycyjnych łąk kośnych.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "77f3fc1d98dbb3e6"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "Łacińska nazwa 'Leontodon' oznacza ząb lwa – tak samo jak u mniszka, co potęguje pomyłki również u początkujących botaników."
+        ],
+        "tresc": [
+          {
+            "tekst": "Łacińska nazwa 'Leontodon' oznacza ząb lwa – tak samo jak u mniszka, co potęguje pomyłki również u początkujących botaników.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Podziemne części roślin, zawierające inulinę, były w czasach wojennych palone i stosowane jako zamiennik kawy.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s253"
+            ]
+          },
+          {
+            "tekst": "W brytyjskich badaniach nad wydajnością nektarową flory łąkowej gatunek ten zajął pierwsze miejsce wśród wieloletnich roślin nienależących do chwastów, a produkcja nektaru była niemal dwukrotnie wyższa niż u najlepiej ocenionej rośliny jednorocznej niebędącej chwastem.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s251",
+              "s252"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "8457500efa004513"
+      },
+      "permakultura.funkcje": {
+        "tytul": "Cykl życia i ekosystem - Permakultura - funkcje",
+        "typ": "lista",
+        "oryginal": [
+          "Stabilizacja luźnych gleb łąkowych.",
+          "Pokarm dla bydła."
+        ],
+        "tresc": [
+          {
+            "tekst": "Stabilizacja luźnych gleb łąkowych.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Pokarm dla bydła, gdyż roślina jest chętnie zjadana przez bydło, które potrafi przeżuwać przylegające liście, ale zwykle zostawia w tyle twardy, włóknisty łodygowy głąb ich.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s254"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "8d4c238bf07be1b7"
+      }
+    },
+    "uzyte_fakty": [
+      "s247",
+      "s248",
+      "s249",
+      "s250",
+      "s251",
+      "s252",
+      "s253",
+      "s254",
+      "s255",
+      "s256"
+    ]
   }
 }

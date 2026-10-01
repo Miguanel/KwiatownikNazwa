@@ -1042,5 +1042,515 @@
         }
       }
     ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-01",
+    "pola": {
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": [
+          "Pędy zielone, ostro kanciaste, nagie (nieowłosione).",
+          "Liście drobne, jajowate, drobno piłkowane, opadające na zimę (w przeciwieństwie do borówki brusznicy).",
+          "Owoce pojedyncze, kuliste, czarno-niebieskie, o soku intensywnie barwiącym na fioletowo.",
+          "Kwiaty dzbanuszkowate, różowawo-zielone, wyrastające pojedynczo w kątach liści."
+        ],
+        "tresc": [
+          {
+            "tekst": "Pędy borówki czarnej są zielone, ostro kanciaste i nagie, czyli nieowłosione.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Liście tej rośliny są drobne, jajowate, drobno piłkowane oraz opadają na zimę, co stanowi cechę różniącą ją od borówki brusznicy.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Owoce są pojedyncze, kuliste i czarno-niebieskie, a ich sok intensywnie barwi na fioletowo.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwiaty mają kształt dzbanuszkowaty, są różowawo-zielone lub zwisające o zielonkawym albo czerwonawym kolorze korony o długości 4–6 mm i wyrastają pojedynczo w kątach liści.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s222"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "c4008a0cdd75335c"
+      },
+      "czesci_rosliny.owoce.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Fructus Myrtilli: Opis surowca",
+        "typ": "tekst",
+        "oryginal": "Dojrzałe jagody zbierane latem. Najcenniejsze są te rosnące dziko w lasach.",
+        "tresc": [
+          {
+            "tekst": "Dojrzałe jagody zbierane latem, osiągają maksymalnie około 1 cm średnicy, mają czarno-niebieską barwę i lekko spłaszczony, okrągły kształt.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s227"
+            ]
+          },
+          {
+            "tekst": "Najcenniejsze są te rosnące dziko w lasach.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "3a19610618f2fe28"
+      },
+      "czesci_rosliny.liscie.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Folium Myrtilli: Opis surowca",
+        "typ": "tekst",
+        "oryginal": "Młode, zielone liście zbierane przed owocowaniem.",
+        "tresc": [
+          {
+            "tekst": "Surowcem są młode, zielone liście, które zbiera się przed owocowaniem rośliny [ ].",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jesienią jasnozielone, cienkie i nagie liście borówki czarnej czerwienieją i opadają na zimę.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s216"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "9f4e2a0af6d3f575"
+      },
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Niska, wieloletnia krzewinka o kanciastych, zielonych pędach, tworząca gęste łany w lasach iglastych i mieszanych. Jest rośliną wybitnie kwasolubną, żyjącą w ścisłej symbiozie z grzybnią (mikoryza). Jej owoce to czarne, lśniące jagody z niebieskawym nalotem, których sok trwale barwi skórę i tkaniny. Borówka jest biologicznym skarbem północy, przystosowanym do trudnych warunków i ubogich gleb bielicowych.",
+        "tresc": [
+          {
+            "tekst": "Niska, wieloletnia krzewinka o kanciastych, zielonych pędach, tworząca gęste łany w lasach iglastych i mieszanych.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jest rośliną wybitnie kwasolubną, żyjącą w ścisłej symbiozie z grzybnią (mikoryza).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jej owoce to czarne, lśniące jagody z niebieskawym nalotem, których sok trwale barwi skórę i tkaniny.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Borówka jest biologicznym skarbem północy, przystosowanym do trudnych warunków i ubogich gleb bielicowych.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Surowce zielarskie przeznaczone do preparatów leczniczych pozyskuje się z reguły ze stanowisk naturalnych, natomiast owoce dla przemysłu spożywczego są głównie uprawiane.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s237"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "08c604a3b0b25a6f"
+      },
+      "czesci_rosliny.liscie.czas_zbioru": {
+        "tytul": "Surowce i zbiory - Folium Myrtilli: Zbiór",
+        "typ": "tekst",
+        "oryginal": "Maj - Czerwiec.",
+        "tresc": [
+          {
+            "tekst": "Zbiór liści borówki odbywa się w maju i czerwcu, przy czym najlepszy moment na pozyskanie surowca przypada na okres kwitnienia krzewów od końca maja do początku czerwca, kiedy pędy zawierają najwięcej pożytecznych substancji.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s243"
+            ]
+          },
+          {
+            "tekst": "Zbiór liści można przeprowadzić także jesienią wraz z dojrzałymi owocami, jednak takie surowce zawierają więcej garbnika, co może prowadzić do zaparoków po spożyciu.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s244"
+            ]
+          },
+          {
+            "tekst": "Zebrane liście i pędy należy suszyć w cieniu na świeżym powietrzu, rozłożone na papierze lub w suszarce w temperaturze nieprzekraczającej 40°C.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s245"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "c106c0f191ef9e5b"
+      },
+      "czesci_rosliny.owoce.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Fructus Myrtilli: Substancje czynne",
+        "typ": "lista",
+        "oryginal": [
+          "Antocyjany (mirtilina - wzmacnia naczynia i wzrok)",
+          "Garbniki (do 7% w świeżych, więcej w suszonych)",
+          "Pektyny",
+          "Witaminy (C, B1, B2, PP, A)",
+          "Kwasy organiczne"
+        ],
+        "tresc": [
+          {
+            "tekst": "Antocyjany (mirtilina - wzmacnia naczynia i wzrok) są silnymi antyoksydantami.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s236"
+            ]
+          },
+          {
+            "tekst": "Garbniki (do 7 % w świeżych, więcej w suszonych) działają ściągająco na błony śluzowe, przeciwzapalnie i przeciwbakteryjnie.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s236"
+            ]
+          },
+          {
+            "tekst": "Pektyny.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Witaminy (C, B1, B2, PP, A).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwasy organiczne.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "4ccc9a7ae11f4476"
+      },
+      "czesci_rosliny.liscie.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Folium Myrtilli: Substancje czynne",
+        "typ": "lista",
+        "oryginal": [
+          "Neomirtilina (tzw. roślinna insulina - obniża poziom cukru)",
+          "Arbutyna (odkaża drogi moczowe)",
+          "Garbniki",
+          "Flawonoidy"
+        ],
+        "tresc": [
+          {
+            "tekst": "Neomirtilina, nazywana roślinną insuliną, obniża poziom cukru we krwi.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Flawonoidy występują w liściach, a wśród nich znajdują się m.in. katechiny.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W liściach obecny jest również kwas chinowy, kwas chlorogenowy oraz inne glikozydy.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s220"
+            ]
+          },
+          {
+            "tekst": "Arbutyna (odkaża drogi moczowe)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Garbniki",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "f435e0bd37a59f3d"
+      },
+      "czesci_rosliny.owoce.wlasciwości": {
+        "tytul": "Surowce i zbiory - Fructus Myrtilli: Działanie",
+        "typ": "tekst",
+        "oryginal": "Świeże: lekko przeczyszczające i witaminizujące. Suszone: silnie przeciwbiegunkowe, odkażające jelita, poprawiające mikrokrążenie w siatkówce oka.",
+        "tresc": [
+          {
+            "tekst": "Świeże owoce wykazują lekko przeczyszczające i witaminizujące działanie.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Suszone owoce wykazują silne przeciwbiegunkowe działanie, odkażające jelita oraz poprawiające mikrokrążenie w siatkówce oka; tradycyjnie stosowano je wewnętrznie jako środek ludowy przy lekkiej biegunce, także w formie wina z czerwonym winem.",
+            "zrodla": [
+              2,
+              5
+            ],
+            "fakty": [
+              "s229",
+              "s232"
+            ]
+          },
+          {
+            "tekst": "Suszone owoce używano zewnętrznie do płukania przy stanach zapalnych błony śluzowej jamy ustnej i gardła.",
+            "zrodla": [
+              2,
+              5
+            ],
+            "fakty": [
+              "s229",
+              "s232"
+            ]
+          },
+          {
+            "tekst": "W medycynie ludowej borówkę stosowano również przy wymiotach, krwawieniach, hemoroidach oraz przy źle gojących się wrzodach i chorobach skóry.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s234"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "6e61c1a8b9751fa4"
+      },
+      "czesci_rosliny.liscie.wlasciwości": {
+        "tytul": "Surowce i zbiory - Folium Myrtilli: Działanie",
+        "typ": "tekst",
+        "oryginal": "Przeciwcukrzycowe, moczopędne, przeciwzapalne w obrębie pęcherza.",
+        "tresc": [
+          {
+            "tekst": "Działanie liści borówki czarnej obejmuje właściwości przeciwcukrzycowe, w ramach których były one używane w medycynie ludowej jako środek obniżający poziom cukru we krwi.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s230"
+            ]
+          },
+          {
+            "tekst": "Wykazują one również działanie moczopędne oraz przeciwzapalne w obrębie pęcherza.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "99142803f9d20216"
+      },
+      "zastosowanie.rzemieslnicze": {
+        "tytul": "Praktyczne zastosowanie - Rzemiosło",
+        "typ": "tekst",
+        "oryginal": "Sok z borówek był historycznie używany jako atrament oraz trwały barwnik do tkanin (odcienie od fioletu po ciemną zieleń).",
+        "tresc": [
+          {
+            "tekst": "Sok z borówek był historycznie używany jako atrament oraz trwały barwnik do tkanin (odcienie od fioletu po ciemną zieleń); ludność wiejska na terenie Borów Tucholskich tradycyjnie przeznaczała zebrane jagody do sporządzania barwników służących do farbowania tkanin.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s215"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "f6b85ccc3e0808c0"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "Podczas II wojny światowej brytyjscy piloci RAF jedli dżem jagodowy przed nocnymi misjami, co rzekomo drastycznie poprawiało ich zdolność widzenia w ciemności.",
+          "Jagoda czarna to jedna z niewielu roślin, która potrafi akumulować mangan w ilościach bezpiecznych dla ludzi, a leczniczych dla metabolizmu.",
+          "Antocyjany z borówki są tak silne, że przetrwały w naczyniach znalezionych w Pompejach, zachowując swoje właściwości barwiące.",
+          "W medycynie ludowej suszone jagody nazywano 'czarnym złotem' i podawano dzieciom jako jedyny pewny lek na 'choroby brzucha'.",
+          "Jedna krzewinka borówki może żyć nawet 30 lat, choć jej nadziemne pędy wymieniają się częściej."
+        ],
+        "tresc": [
+          {
+            "tekst": "Podczas II wojny światowej brytyjscy piloci RAF jedli dżem jagodowy przed nocnymi misjami, co rzekomo drastycznie poprawiało ich zdolność widzenia w ciemności.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jagoda czarna to jedna z niewielu roślin, która potrafi akumulować mangan w ilościach bezpiecznych dla ludzi, a leczniczych dla metabolizmu.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Antocyjany z borówki są tak silne, że przetrwały w naczyniach znalezionych w Pompejach, zachowując swoje właściwości barwiące.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W medycynie ludowej suszone jagody nazywano 'czarnym złotem' i podawano dzieciom jako jedyny pewny lek na 'choroby brzucha'.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jedna krzewinka borówki może żyć nawet 30 lat, choć jej nadziemne pędy wymieniają się częściej.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Rzymski Pliniusz Starszy opisywał użycie barwnika z jagód do farbowania ubrań niewolników w Galii.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s231"
+            ]
+          },
+          {
+            "tekst": "Dawniej w dniu Matki Boskiej Jagodnej święcono jagody, a na Lubelszczyźnie wierzono, że do tego dnia należy wstrzymać się z ich zbieraniem i jedzeniem.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s213"
+            ]
+          },
+          {
+            "tekst": "W tradycji polskich wsi ziele borówki tradycyjnie wykorzystywano do przybierania palm wielkanocnych oraz święconek.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s214"
+            ]
+          },
+          {
+            "tekst": "Na dawnej Rusi niektóre postacie o statusie szamanów i znachorów wykorzystywały gałązki borówki w swoich rytuałach, przypisując jej cudowne właściwości.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s238"
+            ]
+          },
+          {
+            "tekst": "Roślina posiada wiele nazw zwyczajowych, wśród których najpopularniejsze to jagoda, czarna jagoda oraz czernica.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s211"
+            ]
+          },
+          {
+            "tekst": "W Wielkiej Brytanii roślinę tę tradycyjnie nazywano bilberry, co jest wypożyczeniem z języka staronordyckiego, bardzo zbliżonym do duńskiego słowa 'bøllebær', a spotykane są również nazwy whortleberry, blaeberry oraz myrtleberry.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s218"
+            ]
+          },
+          {
+            "tekst": "W Niemczech jagodę nazywa się regionalnie m.in. Besinge, Besing, Blaubeere, Schwarzbeere, Mollbeere, Wildbeere, Waldbeere, Bickbeere, Staulbeere, Zeckbeere, Moosbeere i Heubeere.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s226"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "f19c1c60b87078da"
+      },
+      "czesci_rosliny.liscie.ostrzezenia": {
+        "tytul": "Surowce i zbiory - Folium Myrtilli: Ostrzeżenia",
+        "typ": "tekst",
+        "oryginal": "Długotrwałe stosowanie wysokich dawek liści może powodować anemię (ze względu na garbniki).",
+        "tresc": [
+          {
+            "tekst": "Długotrwałe stosowanie wysokich dawek liści może powodować anemię (ze względu na garbniki) oraz być niebezpieczne, ponieważ liście są potencjalnie toksyczne dla człowieka.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s219"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "65363b6ee98ccfab"
+      },
+      "czesci_rosliny.owoce.ostrzezenia": {
+        "tytul": "Surowce i zbiory - Fructus Myrtilli: Ostrzeżenia",
+        "typ": "tekst",
+        "oryginal": "Należy dokładnie myć jagody leśne (ryzyko bąblowicy!).",
+        "tresc": [
+          {
+            "tekst": "Należy dokładnie myć jagody leśne z uwagi na ryzyko bąblowicy.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Świeże owoce działają lekko przeczyszczająco i w przeciwieństwie do suszonych mogą nasilać biegunkę.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s235"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "ffa94fb542797cb4"
+      }
+    },
+    "uzyte_fakty": [
+      "s211",
+      "s213",
+      "s214",
+      "s215",
+      "s216",
+      "s218",
+      "s219",
+      "s220",
+      "s222",
+      "s226",
+      "s227",
+      "s229",
+      "s230",
+      "s231",
+      "s232",
+      "s234",
+      "s235",
+      "s236",
+      "s237",
+      "s238",
+      "s243",
+      "s244",
+      "s245"
+    ]
   }
 }

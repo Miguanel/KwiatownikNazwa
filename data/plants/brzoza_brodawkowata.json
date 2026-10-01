@@ -905,5 +905,463 @@
         "zrodlo": "Wikimedia Commons"
       }
     ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-01",
+    "pola": {
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": [
+          "Biała, łuszcząca się okrężnie kora (u starych drzew u nasady czarna i spękana).",
+          "Liście trójkątne lub rombowate, o zaostrzonym wierzchołku, podwójnie piłkowane.",
+          "Gałązki pokryte licznymi, drobnymi, żywicznymi brodawkami (stąd nazwa).",
+          "Młode pędy cienkie, wiotkie i charakterystycznie zwisające."
+        ],
+        "tresc": [
+          {
+            "tekst": "Biała, łuszcząca się okrężnie kora (u młodych drzew początkowo złotobrązowa lub pomarańczowoczerwona, z wiekiem bieleje, a u starszych drzew przy nasadzie czarna i spękana)",
+            "zrodla": [
+              1,
+              3
+            ],
+            "fakty": [
+              "s258",
+              "s265"
+            ]
+          },
+          {
+            "tekst": "Liście trójkątne lub rombowate, o zaostrzonym wierzchołku, podwójnie piłkowane (naprzemianległe, osadzone na ogonkach, długości 4‑7 cm, z wyciągniętym czubkiem)",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s271"
+            ]
+          },
+          {
+            "tekst": "Gałązki pokryte licznymi, drobnymi, żywicznymi brodawkami (stąd nazwa)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Młode pędy cienkie, wiotkie i charakterystycznie zwisające",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "a309398d10acac91"
+      },
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Smukłe, eleganckie drzewo o charakterystycznej białej korze i zwisających gałęziach. Jest gatunkiem pionierskim, niezwykle odpornym na trudne warunki, który jako pierwszy zasiedla nieużytki, przygotowując grunt pod inne gatunki drzew. W tradycji północnej Brzoza jest symbolem odrodzenia, czystości i powrotu wiosny. Jej liście, pąki i sok (oskoła) stanowią fundament wiosennych kuracji detoksykujących.",
+        "tresc": [
+          {
+            "tekst": "Smukłe, eleganckie drzewo o charakterystycznej białej korze i zwisających gałęziach.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Szybko rosnąca roślina osiąga zazwyczaj od 15 do 25 metrów wysokości, rzadziej do 30 metrów, a jej pień może mieć średnicę do 0,9 metra.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s269"
+            ]
+          },
+          {
+            "tekst": "Jest gatunkiem pionierskim, niezwykle odpornym na trudne warunki, który jako pierwszy zasiedla nieużytki, przygotowując grunt pod inne gatunki drzew.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W tradycji północnej Brzoza jest symbolem odrodzenia, czystości i powrotu wiosny.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jej liście, pąki i sok (oskoła) stanowią fundament wiosennych kuracji detoksykujących.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "57d3129e72b22baf"
+      },
+      "czesci_rosliny.kora.czas_zbioru": {
+        "tytul": "Surowce i zbiory - Cortex Betulae: Zbiór",
+        "typ": "tekst",
+        "oryginal": "Cały rok (najlepiej z powalonych drzew).",
+        "tresc": [
+          {
+            "tekst": "Kora zbierana jest przez cały rok, najlepiej z powalonych drzew, przy czym zbiór przeprowadza się również wiosną z młodych pni i gałązek, gdzie zdzierana jest jej elastyczna, biała warstwa zewnętrzna.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s259"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "1521c4a600e9b8a5"
+      },
+      "czesci_rosliny.paki.czas_zbioru": {
+        "tytul": "Surowce i zbiory - Gemmae Betulae: Zbiór",
+        "typ": "tekst",
+        "oryginal": "Luty - Marzec.",
+        "tresc": [
+          {
+            "tekst": "Zbiór pąków odbywa się w lutym i marcu, czyli wczesną wiosną, gdy są nabrzmiałe; po suszeniu w temperaturze 25–30 °C stają się lepkie i mają silny balsamiczny zapach.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s260"
+            ]
+          },
+          {
+            "tekst": "Luty - Marzec.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "0b92d5cb99f2ac49"
+      },
+      "czesci_rosliny.kora.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Cortex Betulae: Substancje czynne",
+        "typ": "lista",
+        "oryginal": [
+          "Betulina (nawet do 30%)",
+          "Kwas betulinowy",
+          "Lupeol"
+        ],
+        "tresc": [
+          {
+            "tekst": "Wymienione składniki zawierają również kwas betulinowy",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "oraz lupeol.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Betulina (nawet do 30%)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kora brzozowa jest bogatym źródłem betuliny, substancji aktywniej stosowanej m.in. w terapii trądziku.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s262"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "fb57e38e0c0c57e4"
+      },
+      "czesci_rosliny.liscie.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Folium Betulae: Substancje czynne",
+        "typ": "lista",
+        "oryginal": [
+          "Flawonoidy (hiperozyd, kwercetyna)",
+          "Saponiny",
+          "Olejek eteryczny",
+          "Garbniki",
+          "Witamina C"
+        ],
+        "tresc": [
+          {
+            "tekst": "Flawonoidy (hiperozyd, kwercetyna) – surowiec liściowy musi zawierać co najmniej 1,5% flawonoidów (w przeliczeniu na hiperozyd).",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s261"
+            ]
+          },
+          {
+            "tekst": "Saponiny – zawartość saponin może wynosić do 3,2%.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Olejek eteryczny.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Garbniki – zawartość garbników katechinowych może dochodzić do 9%.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Witamina C.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "e6f1d1809abd0b81"
+      },
+      "zastosowanie.medyczne": {
+        "tytul": "Praktyczne zastosowanie - Medycyna",
+        "typ": "tekst",
+        "oryginal": "Kamica nerkowa, dna moczanowa (usuwanie kwasu moczowego), reumatyzm, infekcje dróg moczowych. Zewnętrznie w leczeniu łuszczycy, trądziku i wypadaniu włosów.",
+        "tresc": [
+          {
+            "tekst": "Surowce z tego drzewa wykorzystywano w medycynie ludowej przy dnie moczanowej oraz reumatyzmie.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s278"
+            ]
+          },
+          {
+            "tekst": "Tradycyjne zastosowanie obejmuje również łagodzenie kamicy nerkowej i infekcji dróg moczowych oraz skuteczne usuwanie kwasu moczowego.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Zewnętrznie preparaty te znajdują zastosowanie w leczeniu trądziku, łuszczycy oraz przy wypadaniu włosów.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "c33a47204422bdf1"
+      },
+      "czesci_rosliny.kora.wlasciwości": {
+        "tytul": "Surowce i zbiory - Cortex Betulae: Działanie",
+        "typ": "tekst",
+        "oryginal": "Przeciwnowotworowe (badania nad czerniakiem), silnie przeciwzapalne, przeciwwirusowe.",
+        "tresc": [
+          {
+            "tekst": "Przeciwnowotworowe (badania nad czerniakiem), silnie przeciwzapalne, przeciwwirusowe.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W średniowieczu w celach leczniczych ze skórek drzewa pozyskiwano głównie głębsze warstwy łyka i korka.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s275"
+            ]
+          },
+          {
+            "tekst": "Wewnętrzne warstwy kory zawierają cenne terpeny, takie jak betulina, kwas betulinowy i lupeol, które wykazują silne działanie przeciwzapalne, przeciwwirusowe oraz hamujące rozwój guzów.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s276"
+            ]
+          }
+        ],
+        "model": "bez LLM: za duzo zdan spoza zrodel",
+        "wejscie": "aeb526601f2ceb4f"
+      },
+      "czesci_rosliny.liscie.wlasciwości": {
+        "tytul": "Surowce i zbiory - Folium Betulae: Działanie",
+        "typ": "tekst",
+        "oryginal": "Silnie moczopędne (bez podrażniania nerek), napotne, odtruwające, przeciwreumatyczne.",
+        "tresc": [
+          {
+            "tekst": "Surowiec ten wykazuje także właściwości napotne, odtruwające oraz przeciwreumatyczne.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Silnie moczopędne (bez podrażniania nerek), napotne, odtruwające, przeciwreumatyczne.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W medycynie ludowej napar z liści stosowano m.in. do wybielania skóry i leczenia przezmrożeń (piegów).",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s263"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "eaa5d1c223286e78"
+      },
+      "czesci_rosliny.ziele.wlasciwości": {
+        "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Napary z liści brzozy brodawkowatej stosowano tradycyjnie przy dolegliwościach takich jak piasek w nerkach, kamica nerkowa i pęcherzowa oraz inne schorzenia układu moczowego.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s277"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "af4a1fa82c2ece67"
+      },
+      "zastosowanie.rzemieslnicze": {
+        "tytul": "Praktyczne zastosowanie - Rzemiosło",
+        "typ": "tekst",
+        "oryginal": "Kora brzozowa (dziegieć) to historyczny klej i środek konserwujący. Kora zewnętrzna służy do wyrobu wodoodpornych pojemników, butów i jako najlepsza naturalna rozpałka do ognia (pali się nawet mokra). Drewno cenione w meblarstwie i jako opał o wysokiej kaloryczności.",
+        "tresc": [
+          {
+            "tekst": "Kora brzozowa (dziegieć) to historyczny klej i środek konserwujący, tradycyjnie pozyskiwana z kory i wykorzystywana m.in. jako juchtenöl do impregnacji i pielęgnacji skór.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s274"
+            ]
+          },
+          {
+            "tekst": "Kora tego gatunku była także stosowana do garbowania skór.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s266"
+            ]
+          },
+          {
+            "tekst": "Kora zewnętrzna służy do wyrobu wodoodpornych pojemników, butów i jako najlepsza naturalna rozpałka do ognia (pali się nawet mokra).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Drewno cenione w meblarstwie i jako opał o wysokiej kaloryczności.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "3f0721f00527aa3f"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "Dziegieć brzozowy był 'super-klejem' epoki kamienia – używano go do mocowania grotów strzał.",
+          "Ötzi, 'Człowiek Lodu', miał przy sobie hubę brzozową (czyreń), która służyła mu jako apteczka podróżna.",
+          "Brzoza produkuje fitoncydy – substancje, które sterylizują powietrze wokół drzewa w promieniu kilku metrów.",
+          "W Rosji i Skandynawii gałązki brzozowe są nieodzownym elementem sauny, służąc do masażu pobudzającego krążenie."
+        ],
+        "tresc": [
+          {
+            "tekst": "Obok podstawowej nazwy gatunkowej roślina ta jest znana również jako brzoza gruczołowata, brzezina lub brzoza biała.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s257"
+            ]
+          },
+          {
+            "tekst": "Dziegieć brzozowy był 'super-klejem' epoki kamienia – używano go do mocowania grotów strzał.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Ötzi, 'Człowiek Lodu', miał przy sobie hubę brzozową (czyreń), która służyła mu jako apteczka podróżna.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Brzoza produkuje fitoncydy – substancje, które sterylizują powietrze wokół drzewa w promieniu kilku metrów.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W Rosji i Skandynawii gałązki brzozowe są nieodzownym elementem sauny, służąc do masażu pobudzającego krążenie, a w Finlandii wiązki ulistnionych i pachnących gałązek, zwane vihta lub vasta, wykorzystuje się do delikatnego bicia się podczas kąpieli.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s267"
+            ]
+          },
+          {
+            "tekst": "Na cześć tego gatunku nazwano planetoidę (8644) Betulapendula, zarejestrowaną na początku kwietnia 1999 roku.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s280"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "946d8b0e54558a99"
+      },
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": "Pyłek brzozy jest silnym alergenem wziewnym w okresie kwietnia i maja. Osoby z niedrożnością dróg moczowych powinny skonsultować kurację z lekarzem.",
+        "tresc": [
+          {
+            "tekst": "Pyłek brzozy jest silnym alergenem wziewnym w okresie kwietnia i maja.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Osoby z niedrożnością dróg moczowych powinny skonsultować kurację z lekarzem.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Przetworów z tego gatunku nie należy stosować w przypadku obrzęków spowodowanych ograniczeniem czynności serca lub nerek.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s279"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "15e912b4b6d5f114"
+      }
+    },
+    "uzyte_fakty": [
+      "s257",
+      "s258",
+      "s259",
+      "s260",
+      "s261",
+      "s262",
+      "s263",
+      "s265",
+      "s266",
+      "s267",
+      "s269",
+      "s271",
+      "s274",
+      "s275",
+      "s276",
+      "s277",
+      "s278",
+      "s279",
+      "s280"
+    ]
   }
 }
