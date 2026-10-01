@@ -1146,5 +1146,677 @@
         }
       }
     ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-01",
+    "pola": {
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Barszcz zwyczajny (Heracleum sphondylium L.) jest okazałą rośliną osiągającą wysokość 50–150 cm, która po roztarciu wydziela silny, specyficzny i nieprzyjemny zapach.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "239cff8eb3603906"
+      },
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Barszcz zwyczajny to okazana roślina osiągająca wysokość 50–150 cm, która po roztarciu wydziela silny, specyficzny i nieprzyjemny zapach.",
+        "tresc": [
+          {
+            "tekst": "Barszcz zwyczajny to okazała roślina osiągająca wysokość 50–150 cm, która po roztarciu wydziela silny, specyficzny i nieprzyjemny zapach.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jest to jedna z największych roślin zielnych, osiągająca wysokość od 1,5 do 2,5 metra, dzięki czemu cały rodzaj zyskał nazwę nawiązującą do herosa Herkulesa.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s53"
+            ]
+          },
+          {
+            "tekst": "Roślina występuje w niemal całej Europie, w dużej części Azji, w Maroku oraz jest gatunkiem pospolitym w Polsce.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3"
+            ]
+          },
+          {
+            "tekst": "Gatunek ten rośnie naturalnie w Europie oraz w północno-zachodniej Afryce, natomiast w Islandii, Finlandii i Nowej Zelandii występuje jako neofit.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s108"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "d81f747ec164ad75"
+      },
+      "czesci_rosliny.korzeń.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Opis surowca",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Gruby i wrzecionowaty korzeń rośliny na wiosnę wydziela zielonkawy sok o ostrym smaku.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s89"
+            ]
+          },
+          {
+            "tekst": "Korzeń rośliny jest dużym, wyraźnym, zębatym korzeniem, z którego wyrasta pędy.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s19"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "7eb95797b6fdf842"
+      },
+      "czesci_rosliny.kwiaty.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Kwiaty (nowa część z sieci): Opis surowca",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Kwiatostanem rośliny jest baldach złożony z 15–30 baldaszków, a jej kwiaty mają najczęściej białe płatki.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2"
+            ]
+          },
+          {
+            "tekst": "Kwiaty barszczu zwyczajnego są białe, często z lekkim zielonkawym lub jasnoróżowym odcieniem.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s107"
+            ]
+          },
+          {
+            "tekst": "Kwiaty rośliny zebrane są w duże kwiatostany, przy czym kwiaty na obrzeżach posiadają powiększone płatki od zewnętrznej strony.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s52"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "585440e8000960fe"
+      },
+      "czesci_rosliny.liście.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Liście (nowa część z sieci): Opis surowca",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Dolne liście oddziomkowe mogą być bardzo duże i osiągać długość do 60 centymetrów, posiadając długie ogonki.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s106"
+            ]
+          },
+          {
+            "tekst": "Liście rośliny są dużymi, nieco nierówno złożonemi, a ich kształt przypomina stopy zwierząt, co wpłynęło na nazwę rośliny.",
+            "zrodla": [
+              7
+            ],
+            "fakty": [
+              "s111"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "4f8d636e55ef1ad0"
+      },
+      "czesci_rosliny.kłącze.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Kłącze (nowa część z sieci): Opis surowca",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Pod ziemią roślina posiada grube i wielogłowe kłącze.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s88"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "f4f3bb8218bb4373"
+      },
+      "wymagania.stanowisko": {
+        "tytul": "Natura i siedlisko - Stanowisko",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Barszcz zwyczajny (Heracleum sphondylium L.) preferuje suche, nawodzone i bogate w azot gleby, występujące na łąkach, brzozowiskach, ścieżkach, torowiskach kolejowych oraz terenach zabudowanych.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s18"
+            ]
+          },
+          {
+            "tekst": "Ponadto, roślina ta można znaleźć na łąkach, polanach, obrzeżach lasów, w lasach oraz na polach.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s54"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "7ef7634434048947"
+      },
+      "czesci_rosliny.korzeń.czas_zbioru": {
+        "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Zbiór",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Korzeń barszczu zwyczajnego wykopuje się wczesną wiosną lub późną jesienią, dokładnie myje, kroi na 10-centymetrowe kawałki i suszy w cieniu lub w przewiewnym pomieszczeniu przez około miesiąc.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s114"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "9965f0872ff6133c"
+      },
+      "czesci_rosliny.ziele.czas_zbioru": {
+        "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Zbiór",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Ziele barszczu zwyczajnego zbiera się wiosną lub wczesnym latem, a owoce i korzenie jesienią.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s4"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "75fd09775d732b44"
+      },
+      "czesci_rosliny.korzeń.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "W korzeńie rośliny znajdują się takie związki jak pimpinellina, izopimpinellina, sfondyna i bergapten.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s24"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "2fa1930cc8d8b994"
+      },
+      "czesci_rosliny.kłącze.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Kłącze (nowa część z sieci): Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Kłącze barszczu zwyczajnego zawierają cukry, argininę oraz glutaminę.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s83"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "56178b6b5839138c"
+      },
+      "czesci_rosliny.liście.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Liście (nowa część z sieci): Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "W liściach barszczu zwyczajnego znajdują się związki flawonowe, żywice oraz sole mineralne.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s84"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "8e49613f47966ee7"
+      },
+      "czesci_rosliny.ziele.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Barszcz zwyczajny (Heracleum sphondylium L.) zawiera w swoim zielu białko bogate w 17 aminokwasów oraz witaminy takie jak karoten, kwas ascorbinowy, kwas foliowy, biotynę i rutynę.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s117"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "da7db765cfc3d43d"
+      },
+      "zastosowanie.medyczne": {
+        "tytul": "Praktyczne zastosowanie - Medycyna",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Tradycyjnie barszcz zwyczajny wykorzystywano do redukowania obrzęków oraz w walce z biegunką.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s5"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "938acd87262126e1"
+      },
+      "czesci_rosliny.korzeń.wlasciwości": {
+        "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Tradycyjnie korzeń barszczu zwyczajnego był używany do płukania jamy ustnej przy stanach zapalnych dziąseł i błony śluzowej, a także przy bólach zębów stosowano nalewkę alkoholową.",
+            "zrodla": [
+              5,
+              6
+            ],
+            "fakty": [
+              "s115",
+              "s118"
+            ]
+          },
+          {
+            "tekst": "Korzeń barszczu zwyczajnego stosowano również jako środek przeciwko impotencji.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s118"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "5d1d920bc8972f1c"
+      },
+      "czesci_rosliny.kwiaty.wlasciwości": {
+        "tytul": "Surowce i zbiory - Kwiaty (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Barszcz zwyczajny (Heracleum sphondylium L.) zawiera kwiaty, które w krajach wschodnioeuropejskich, w tym Rumunii, były stosowane jako afrodyzjak oraz do leczenia problemów ginekologicznych, niewydolności seksualnej i epilepsji.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s16"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "6af4ff2514fd03f6"
+      },
+      "zastosowanie.kulinarne": {
+        "tytul": "Praktyczne zastosowanie - Kuchnia",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Młode liście i pędy barszczu zwyczajnego były w średniowieczu składnikiem tradycyjnej zupy borschtsch.",
+            "zrodla": [
+              2,
+              6
+            ],
+            "fakty": [
+              "s109",
+              "s119"
+            ]
+          },
+          {
+            "tekst": "Młode liście barszczu zwyczajnego były używane jako składnik sałatek i zup.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s119"
+            ]
+          },
+          {
+            "tekst": "Niedorózne nasiona barszczu zwyczajnego można macerować w alkoholu jako dodatek do likierów, co nadaje płynowi intensywnie zieloną barwę przypominającą absynt.",
+            "zrodla": [
+              2,
+              6
+            ],
+            "fakty": [
+              "s25",
+              "s121"
+            ]
+          },
+          {
+            "tekst": "Suszonne liście barszczu zwyczajnego można używać do przyprawy do herbaty.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s119",
+              "s121"
+            ]
+          },
+          {
+            "tekst": "Młode liście i pędy barszczu zwyczajnego były powszechnie zbierane przez wieśniaków jako pokarm, a także suszone w cieniu na kształt selerów.",
+            "zrodla": [
+              1,
+              2,
+              6
+            ],
+            "fakty": [
+              "s109",
+              "s119",
+              "s121",
+              "s86"
+            ]
+          },
+          {
+            "tekst": "Tradycyjnie łodygi i liście barszczu zwyczajnego spożywano, a młode liście dodawano do pikantnych sałatek, zielonych barszczów, zup i kapuśniaku.",
+            "zrodla": [
+              4,
+              6
+            ],
+            "fakty": [
+              "s119",
+              "s55"
+            ]
+          },
+          {
+            "tekst": "Wysuszone nasiona barszczu zwyczajnego można stosować jako przyprawę, która smakiem przypomina kardamon.",
+            "zrodla": [
+              4,
+              6
+            ],
+            "fakty": [
+              "s121",
+              "s57"
+            ]
+          },
+          {
+            "tekst": "Na Powołżu młode, miękkie i soczyste pędy z nierozwiniętymi pąkami parsonowano w wrzątku, obtaczano w mące i smażono, natomiast ogonki liściowe po obraniu ze skórki i pokrojeniu marynowano w occie.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s56"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "05b75d6cb13619df"
+      },
+      "czesci_rosliny.liście.wlasciwości": {
+        "tytul": "Surowce i zbiory - Liście (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "W medycynie ludowej przy bólach stawów i reumatyzmie stosowano okłady z rozparzonych liści rośliny.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s116"
+            ]
+          },
+          {
+            "tekst": "Liście barszczu zwyczajnego były używane w leczeniu problemów ginekologicznych.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s125"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "b0683bc1c7a90084"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Barszcz zwyczajny (Heracleum sphondylium L.) – roślina o charakterystycznym zapachu przypominającym ogrody, która była spożywana przez świnie, co przyczyniło się do jej nazwy. W Anglii nazywana jest \"cow parsnip\", a w Niemczech \"Wiesenbärenklau\". Ludowo znana jest również jako \"Bärentap(p)e\", ze względu na podobieństwo liści do zwierzęcych stóp. Wywar z ziela ma smak przypominający tradycyjny bulion.",
+            "zrodla": [
+              1,
+              2,
+              3,
+              7
+            ],
+            "fakty": [
+              "s17",
+              "s21",
+              "s113",
+              "s22",
+              "s87"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "134cb19e6ac6f773"
+      },
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Barszcz zwyczajny (Heracleum sphondylium L.) zawiera fototoksyczne furkumaryny, które mogą powodować nadwrażliwość skóry na promieniowanie UV-A oraz prowadzić do nieprzyjemnych zaczerwienień i obrzęków.",
+            "zrodla": [
+              2,
+              6
+            ],
+            "fakty": [
+              "s23",
+              "s123"
+            ]
+          },
+          {
+            "tekst": "Sap barszczu zwyczajnego może wywoływać phytophotodermatitis (pęcherze i zapalenia skóry) u osób wrażliwych, gdy skóra jest narażona na światło słoneczne.",
+            "zrodla": [
+              3,
+              6
+            ],
+            "fakty": [
+              "s20",
+              "s123"
+            ]
+          },
+          {
+            "tekst": "Sap barszczu zwyczajnego może powodować fototoksyczne reakcje skóry.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s123"
+            ]
+          },
+          {
+            "tekst": "Dojrzałe owoce barszczu zwyczajnego zawierają olejki eteryczne, a niedojrzałe także alkohol metylowy, etylowy i heraklinę, co może prowadzić do zatruć zwierząt gospodarskich.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s6"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "608db7e3004ab279"
+      }
+    },
+    "uzyte_fakty": [
+      "s1",
+      "s106",
+      "s107",
+      "s108",
+      "s109",
+      "s111",
+      "s113",
+      "s114",
+      "s115",
+      "s116",
+      "s117",
+      "s118",
+      "s119",
+      "s121",
+      "s123",
+      "s125",
+      "s16",
+      "s17",
+      "s18",
+      "s19",
+      "s2",
+      "s20",
+      "s21",
+      "s22",
+      "s23",
+      "s24",
+      "s25",
+      "s3",
+      "s4",
+      "s5",
+      "s52",
+      "s53",
+      "s54",
+      "s55",
+      "s56",
+      "s57",
+      "s6",
+      "s83",
+      "s84",
+      "s86",
+      "s87",
+      "s88",
+      "s89"
+    ]
+  },
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Heracleum_sphondylium_Berenklauw.jpg/960px-Heracleum_sphondylium_Berenklauw.jpg",
+    "Kwiaty": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Heracleum_sphondylium_08_ies.jpg",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Heracleum_sphondylium_blad.jpg/960px-Heracleum_sphondylium_blad.jpg",
+    "Owoce": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Heracleum_sphondylium_15_ies.jpg",
+    "Pąki": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Berce_sphondyle-28_avril_2014-Sainpuits.jpg/960px-Berce_sphondyle-28_avril_2014-Sainpuits.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-01",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Heracleum_sphondylium_Berenklauw.jpg/960px-Heracleum_sphondylium_Berenklauw.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Heracleum_sphondylium_Berenklauw.jpg",
+        "autor": "nieznany autor",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Heracleum_sphondylium_08_ies.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Heracleum_sphondylium_08_ies.jpg",
+        "autor": "Frank Vincentz",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Heracleum_sphondylium_blad.jpg/960px-Heracleum_sphondylium_blad.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Heracleum_sphondylium_blad.jpg",
+        "autor": "nieznany autor",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Heracleum_sphondylium_15_ies.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Heracleum_sphondylium_15_ies.jpg",
+        "autor": "Frank Vincentz",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Pąki",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Berce_sphondyle-28_avril_2014-Sainpuits.jpg/960px-Berce_sphondyle-28_avril_2014-Sainpuits.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Berce_sphondyle-28_avril_2014-Sainpuits.jpg",
+        "autor": "François GOGLINS",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
   }
 }
