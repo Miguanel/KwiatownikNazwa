@@ -1,9 +1,8 @@
 
 # app/routes/main.py
 import json
-import os
 import random
-from flask import Blueprint, render_template, send_from_directory
+from flask import Blueprint, render_template
 from astro_engine import get_astrological_data
 from data_builder import build_calendar_from_jsons, FESTIVAL_KNOWLEDGE
 from app.utils.helpers import get_all_plants_list, get_plant_data, get_all_recipes
