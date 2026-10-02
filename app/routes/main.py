@@ -26,7 +26,32 @@ def google_site_verification():
 # a Render opublikuje je pod https://kwiatownik.onrender.com/sitemap.xml i /robots.txt.
 # Adres strony mozna zmienic zmienna srodowiskowa SITE_URL (np. po podpieciu wlasnej domeny).
 # ---------------------------------------------------------------------------
-SITE_URL = os.getenv('SITE_URL', 'https://kwiatownik.onrender.com').rstrip('/')
+from app.utils.seo import SITE_URL  # noqa: E402 - adres strony wspolny dla mapy, robots.txt i znacznikow SEO
+
+
+@main_bp.app_context_processor
+def inject_seo():
+    """site_url i canonical_url dostepne w kazdym szablonie (link kanoniczny, Open Graph)."""
+    from flask import request
+    return {'site_url': SITE_URL, 'canonical_url': SITE_URL + request.path}
+
+
+@main_bp.route('/favicon.ico')
+def favicon():
+    # Google i przegladarki pytaja o /favicon.ico w katalogu glownym
+    return send_from_directory(current_app.static_folder, 'favicon.ico', mimetype='image/vnd.microsoft.icon')
+
+
+@main_bp.route('/site.webmanifest')
+def webmanifest():
+    import json as _json
+    data = {
+        'name': 'Kwiatownik – Cyfrowy Zielnik', 'short_name': 'Kwiatownik', 'lang': 'pl', 'start_url': '/',
+        'display': 'standalone', 'background_color': '#f4f1ea', 'theme_color': '#3e4a3d',
+        'icons': [{'src': url_for('static', filename='img/icon-192.png'), 'sizes': '192x192', 'type': 'image/png'},
+                  {'src': url_for('static', filename='img/icon-512.png'), 'sizes': '512x512', 'type': 'image/png'}],
+    }
+    return Response(_json.dumps(data, ensure_ascii=False, indent=2), mimetype='application/manifest+json')
 
 # Strony stale (bez logowania/rejestracji i plikow API - tych nie indeksujemy)
 SITEMAP_STATIC_PAGES = [

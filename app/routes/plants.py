@@ -7,6 +7,7 @@ from app.utils.helpers import get_plant_data, get_all_plants_list, get_all_thera
 from app.utils.legacy import get_legacy_plant
 from app.utils.merged import czesci_generatora, ostrzezenia_generatora
 from app.routes.recipes import recipes_for_plant, is_from_web
+from app.utils.seo import plant_seo
 from astro_engine import get_astrological_data
 
 plants_bp = Blueprint('plants', __name__)
@@ -33,7 +34,7 @@ def plant_detail(plant_id):
 
     legacy = get_legacy_plant(plants_dir(), plant_id)
     return render_template('plant_detail.html', plant=plant_data, plant_id=plant_id, comments=comments,
-                           plant_recipes=plant_recipes, legacy=legacy)
+                           plant_recipes=plant_recipes, legacy=legacy, seo=plant_seo(plant_data, plant_id))
 
 
 def _compare_row(data, legacy, recipes):

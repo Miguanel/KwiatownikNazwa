@@ -1,4 +1,18 @@
 {% extends "base.html" %}
+{% block meta_description %}Kwiatownik to cyfrowy zielnik: {{ plants|length }} dzikich i leczniczych roślin z opisami, surowcami, działaniem, kalendarzem zbiorów i przepisami na napary, nalewki, maści i barwniki.{% endblock %}
+{% block structured_data %}
+<script type="application/ld+json">
+{{ {
+  "@context": "https://schema.org",
+  "@graph": [
+    {"@type": "WebSite", "@id": site_url ~ "/#website", "name": "Kwiatownik", "alternateName": ["Kwiatownik – Cyfrowy Zielnik", "Cyfrowy Zielnik"],
+     "url": site_url ~ "/", "inLanguage": "pl-PL", "publisher": {"@id": site_url ~ "/#organization"}},
+    {"@type": "Organization", "@id": site_url ~ "/#organization", "name": "Kwiatownik", "url": site_url ~ "/",
+     "logo": site_url ~ url_for('static', filename='img/icon-512.png')}
+  ]
+} | tojson }}
+</script>
+{% endblock %}
 
 {% block content %}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
