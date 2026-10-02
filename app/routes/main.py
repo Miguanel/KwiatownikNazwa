@@ -10,11 +10,6 @@ from app.utils.helpers import get_all_plants_list, get_plant_data, get_all_recip
 from run import app
 
 main_bp = Blueprint('main', __name__)
-# Zastąp "google1234567890.html" dokładną nazwą pobranego pliku
-
-@app.route('/google3d44376f166bf895.html')
-def google_verification():
-    return send_from_directory(os.path.join(app.root_path, 'static'), 'google3d44376f166bf895.html')
 
 @main_bp.route('/')
 def index():
