@@ -7,10 +7,9 @@ from flask import Blueprint, render_template, send_from_directory
 from astro_engine import get_astrological_data
 from data_builder import build_calendar_from_jsons, FESTIVAL_KNOWLEDGE
 from app.utils.helpers import get_all_plants_list, get_plant_data, get_all_recipes
-from run import app
+
 
 main_bp = Blueprint('main', __name__)
-
 @main_bp.route('/')
 def index():
     plants = get_all_plants_list()
