@@ -1,14 +1,22 @@
-
 # app/routes/main.py
 import json
 import random
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, current_app, send_from_directory
 from astro_engine import get_astrological_data
 from data_builder import build_calendar_from_jsons, FESTIVAL_KNOWLEDGE
 from app.utils.helpers import get_all_plants_list, get_plant_data, get_all_recipes
 
-
 main_bp = Blueprint('main', __name__)
+
+
+# Plik weryfikacyjny Google Search Console - Google szuka go w KATALOGU GLOWNYM domeny
+# (kwiatownik.onrender.com/google3d44376f166bf895.html), a pliki z static/ trafiaja pod /static/.
+# Trasa bez parametrow -> Frozen-Flask (freeze.py) sam zapisze go do build/google3d44376f166bf895.html.
+@main_bp.route('/google3d44376f166bf895.html')
+def google_site_verification():
+    return send_from_directory(current_app.static_folder, 'google3d44376f166bf895.html', mimetype='text/html')
+
+
 @main_bp.route('/')
 def index():
     plants = get_all_plants_list()
