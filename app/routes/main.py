@@ -1,13 +1,20 @@
 
 # app/routes/main.py
 import json
+import os
 import random
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, send_from_directory
 from astro_engine import get_astrological_data
 from data_builder import build_calendar_from_jsons, FESTIVAL_KNOWLEDGE
 from app.utils.helpers import get_all_plants_list, get_plant_data, get_all_recipes
+from run import app
 
 main_bp = Blueprint('main', __name__)
+# Zastąp "google1234567890.html" dokładną nazwą pobranego pliku
+
+@app.route('/google3d44376f166bf895.html')
+def google_verification():
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'google3d44376f166bf895.html')
 
 @main_bp.route('/')
 def index():

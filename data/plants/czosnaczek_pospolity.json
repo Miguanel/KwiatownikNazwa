@@ -14,7 +14,7 @@
     "wersja": 2,
     "zaktualizowano": "2026-10-01",
     "uporzadkowano": "2026-10-01",
-    "uklad": "llm:gemini/gemini-3.5-flash-lite",
+    "uklad": "llm:ollama/qwen3:8b",
     "zrodla": [
       {
         "nazwa": "Wikipedia (pl): Czosnaczek pospolity",
@@ -36,21 +36,28 @@
         "jezyk": "en",
         "typ": "wikipedia",
         "nr": 3
+      },
+      {
+        "nazwa": "www.kostbarenatur.net",
+        "url": "https://www.kostbarenatur.net/anwendungen-und-inhaltsstoffe/knoblauchsrauke/",
+        "jezyk": "de",
+        "typ": "strona",
+        "nr": 4
       }
     ],
     "sekcje": [
       {
         "klucz": "opis",
         "tytul": "Opis i wygląd",
-        "podsumowanie": "Czosnaczek pospolity osiąga wysokość od 20 do 100 centymetrów i posiada długi korzeń palowy oraz słabo czterokanciastą łodygę. Posiada zróżnicowane liście, drobne białe kwiaty zebrane w grona oraz podłużne torebki zawierające nasiona.",
+        "podsumowanie": "Czosnaczek pospolity ma charakterystyczny wygląd, obejmujący korzeń, liście, kwiaty i owoce. Roślina osiąga wysokość do 100 cm, ma długą korzeń palowy, liście nerkowate i sercowate, kwiaty białe, a owoce to czterostronne torebki z nasionami.",
         "podsumowanie_zrodla": [
           2,
           3
         ],
         "punkty": [
           {
-            "tekst": "Czosnaczek pospolity osiąga wysokość od 20 do 100 centymetrów i posiada długi korzeń palowy oraz słabo czterokanciastą łodygę.",
-            "czesc": "korzeń",
+            "tekst": "Czosnaczek pospolity osiąga wysokość od 20 do 100 centymetrów i posiada długą korzeń palowy oraz słabo czterokanciasty łodygę.",
+            "czesc": null,
             "zrodla": [
               2
             ],
@@ -79,7 +86,7 @@
             ]
           },
           {
-            "tekst": "Owoc to wydłużona, czterostronna torebka o długości 4–5,5 cm, w której znajdują się dwa rzędy czarnych nasion uwalnianych po rozpadzie torebki.",
+            "tekst": "Owoc to wydłużona, czterostronna torebka (silika) o długości 4–5,5 cm, w której znajdują się dwa rzędy czarnych nasion uwalnianych po rozpadzie torebki.",
             "czesc": "owoce",
             "zrodla": [
               3
@@ -93,11 +100,25 @@
       {
         "klucz": "wystepowanie",
         "tytul": "Występowanie",
-        "podsumowanie": null,
-        "podsumowanie_zrodla": [],
+        "podsumowanie": "Czosnaczek pospolity występuje w wielu regionach Europy, Azji i Afryki, a także w Ameryce Północnej. Rośnie w lasach liściastych, zaroślach, żywopłotach i na wysypiskach.",
+        "podsumowanie_zrodla": [
+          1,
+          2,
+          3
+        ],
         "punkty": [
           {
-            "tekst": "Czosnaczek pospolity pochodzi z Europy, zachodniej i środkowej Azji, północno-zachodniej Afryki oraz Brytyjskich Wysp, sięgając aż do północnej Skandynawii i Pakistanu.",
+            "tekst": "W Polsce gatunek ten jest pospolity na prawie całym obszarze, zasiedlając głównie żyzne i próchniczne lasy liściaste.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s341"
+            ]
+          },
+          {
+            "tekst": "Czosnaczek pospolity pochodzi z Europy, zachodniej i środkowej Azji, północno‑zachodniej Afryki oraz Brytyjskich Wysp, sięgając aż do północnej Skandynawii i Pakistanu.",
             "czesc": null,
             "zrodla": [
               3
@@ -107,15 +128,31 @@
             ]
           },
           {
-            "tekst": "Gatunek jest pospolity na prawie całym obszarze Polski i preferuje świeże, bogate w azot gleby gliniaste oraz żyzne i próchniczne lasy liściaste, zarośla, żywopłoty, ogrody i wysypiska.",
+            "tekst": "Gatunek preferuje świeże, bogate w azot gleby gliniaste i rośnie dziko w lasach liściastych, zaroślach, żywopłotach, a także w ogrodach i na wysypiskach.",
             "czesc": null,
             "zrodla": [
-              1,
               2
             ],
             "fakty": [
-              "s341",
               "s356"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "czesci_rosliny",
+        "tytul": "Części rośliny i surowce",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Korzeń zbiera się wyłącznie w pierwszym roku wzrostu; w kolejnym sezonie staje się drewniejszy i staje się niejadalny.",
+            "czesc": "korzeń",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s551"
             ]
           }
         ]
@@ -145,7 +182,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Tradycyjnie wykorzystywano czosnaczek jako środek moczopędny.",
+            "tekst": "Tradycyjnie wykorzystywano czosnaczek jako diuretyk.",
             "czesc": null,
             "zrodla": [
               3
@@ -159,11 +196,23 @@
       {
         "klucz": "historia",
         "tytul": "Historia i nazwa",
-        "podsumowanie": null,
-        "podsumowanie_zrodla": [],
+        "podsumowanie": "Czosnaczek pospolity był znany już w starożytności, wykorzystywany jako przyprawa i leczniczo. W XIX wieku został wprowadzony do Ameryki Północnej i rozprzestrzenił się tam jako inwazyjny gatunek.",
+        "podsumowanie_zrodla": [
+          3
+        ],
         "punkty": [
           {
-            "tekst": "Najstarsze dowody na użycie czosnaczka jako przyprawy pochodzą z ceramiki kultur Ertebølle i Funnelneck-Beaker w północno-wschodnich Niemczech i Danii, datowane na 4100–3750 p.n.e.",
+            "tekst": "W XIX wieku roślina została wprowadzona do Ameryki Północnej przez osadników europejskich i od 1868 roku rozprzestrzeniła się po wschodnich i środkowych stanach USA jako gatunek inwazyjny.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s346"
+            ]
+          },
+          {
+            "tekst": "Najstarsze dowody na użycie czosnaczka jako przyprawy pochodzą z ceramiki kultur Ertebølle i Funnelneck‑Beaker w północno‑wschodnich Niemczech i Danii, datowane na 4100‑3750 p.n.e.",
             "czesc": null,
             "zrodla": [
               3
@@ -173,23 +222,13 @@
             ]
           },
           {
-            "tekst": "W XVII-wiecznym w Anglii zalecano ją jako przyprawę do solonych ryb.",
+            "tekst": "W XVII‑wiem wieku w Anglii zalecano ją jako przyprawę do solonych ryb.",
             "czesc": null,
             "zrodla": [
               3
             ],
             "fakty": [
               "s348"
-            ]
-          },
-          {
-            "tekst": "W XIX wieku roślina została wprowadzona do Ameryki Północnej przez osadników europejskich i od 1868 roku rozprzestrzeniła się po wschodnich i środkowych stanach USA jako gatunek inwazyjny.",
-            "czesc": null,
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s346"
             ]
           }
         ]
@@ -201,7 +240,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "W dawnych publikacjach roślina była nazywana \"czosnkowym zielem\", a Józef Rostafiński odnotował jej ludową nazwę \"bździucha\".",
+            "tekst": "W dawnych publikacjach roślina była nazywana „czosnkowym zielem”, a Józef Rostafiński odnotował jej ludową nazwę „bździucha”.",
             "czesc": null,
             "zrodla": [
               1
@@ -227,14 +266,27 @@
             "fakty": [
               "s344"
             ]
+          },
+          {
+            "tekst": "Spożycie dużych ilości rośliny może wywołać podrażnienie żołądka u osób wrażliwych z powodu zawartych w niej olejów gorczycznych.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s548"
+            ]
           }
         ]
       },
       {
         "klucz": "ciekawostki",
         "tytul": "Ciekawostki",
-        "podsumowanie": null,
-        "podsumowanie_zrodla": [],
+        "podsumowanie": "Czosnaczek pospolity ma właściwości allelopatyczne, hamując wzrost innych roślin i rozprzestrzeniając się dzięki przyczepianiu nasion do zwierząt.",
+        "podsumowanie_zrodla": [
+          2,
+          4
+        ],
         "punkty": [
           {
             "tekst": "Substancje zawarte w roślinie działają allelopatycznie i hamują wzrost grzybów mikoryzowych, co pośrednio ogranicza pojawianie się drzew w jej bezpośrednim sąsiedztwie.",
@@ -255,14 +307,21 @@
             "fakty": [
               "s355"
             ]
+          },
+          {
+            "tekst": "Z korzenia rośliny wydzielany jest sekret, który działa allelopatycznie, hamując wzrost innych roślin i wyłączając dany obszar z konkurencji.",
+            "czesc": "korzeń",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s550"
+            ]
           }
         ]
       }
     ],
     "czesci": {
-      "korzeń": [
-        "s351"
-      ],
       "liście": [
         "s352"
       ],
@@ -271,6 +330,10 @@
       ],
       "owoce": [
         "s350"
+      ],
+      "korzeń": [
+        "s551",
+        "s550"
       ],
       "ziele": [
         "s342",
@@ -457,6 +520,39 @@
           "nazwa": "Wikipedia (de): Knoblauchsrauke",
           "url": "https://de.wikipedia.org/wiki/Knoblauchsrauke"
         }
+      },
+      {
+        "id": "s548",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Spożycie dużych ilości rośliny może wywołać podrażnienie żołądka u osób wrażliwych z powodu zawartych w niej olejów gorczycznych.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "www.kostbarenatur.net",
+          "url": "https://www.kostbarenatur.net/anwendungen-und-inhaltsstoffe/knoblauchsrauke/"
+        }
+      },
+      {
+        "id": "s550",
+        "sekcja": "ciekawostki",
+        "czesc": "korzeń",
+        "tekst": "Z korzenia rośliny wydzielany jest sekret, który działa allelopatycznie, hamując wzrost innych roślin i wyłączając dany obszar z konkurencji.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "www.kostbarenatur.net",
+          "url": "https://www.kostbarenatur.net/anwendungen-und-inhaltsstoffe/knoblauchsrauke/"
+        }
+      },
+      {
+        "id": "s551",
+        "sekcja": "czesci_rosliny",
+        "czesc": "korzeń",
+        "tekst": "Korzeń zbiera się wyłącznie w pierwszym roku wzrostu; w kolejnym sezonie staje się drewniejszy i staje się niejadalny.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "www.kostbarenatur.net",
+          "url": "https://www.kostbarenatur.net/anwendungen-und-inhaltsstoffe/knoblauchsrauke/"
+        }
       }
     ]
   },
@@ -464,20 +560,11 @@
     "wersja": 1,
     "zaktualizowano": "2026-10-01",
     "pola": {
-      "opis": {
-        "tytul": "Opis - Opis ogólny",
-        "typ": "tekst",
-        "oryginal": "Owoc to wydłużona, czterostronna torebka (silika) o długości 4–5,5 cm, w której znajdują się dwa rzędy czarnych nasion uwalnianych po rozpadzie torebki.",
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": null,
         "tresc": [
-          {
-            "tekst": "Owoc to wydłużona, czterostronna torebka (silika) o długości 4–5,5 cm, w której znajdują się dwa rzędy czarnych nasion uwalnianych po rozpadzie torebki.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s350"
-            ]
-          },
           {
             "tekst": "Czosnaczek pospolity osiąga wysokość od 20 do 100 centymetrów i posiada długi korzeń palowy oraz słabo czterokanciastą łodygę.",
             "zrodla": [
@@ -504,15 +591,42 @@
             "fakty": [
               "s353"
             ]
+          },
+          {
+            "tekst": "Owoc to wydłużona, czterostronna torebka (silika) o długości 4–5,5 cm, w której znajdują się dwa rzędy czarnych nasion uwalnianych po rozpadzie torebki.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s350"
+            ]
           }
         ],
-        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
-        "wejscie": "ec308ec76371cfb3"
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "881bcdf4e1bb54e8"
       },
       "wymagania.stanowisko": {
         "tytul": "Natura i siedlisko - Stanowisko",
         "typ": "tekst",
         "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "W Polsce gatunek ten jest pospolity na prawie całym obszarze, zasiedlając głównie żyzne i próchniczne lasy liściaste.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s341"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "5077ff6c36fed3c1"
+      },
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Owoc to wydłużona, czterostronna torebka (silika) o długości 4–5,5 cm, w której znajdują się dwa rzędy czarnych nasion uwalnianych po rozpadzie torebki.",
         "tresc": [
           {
             "tekst": "Czosnaczek pospolity pochodzi z Europy, zachodniej i środkowej Azji, północno-zachodniej Afryki oraz Brytyjskich Wysp, sięgając aż do północnej Skandynawii i Pakistanu.",
@@ -524,19 +638,31 @@
             ]
           },
           {
-            "tekst": "Gatunek ten jest pospolity na prawie całym obszarze Polski i preferuje świeże, bogate w azot gleby gliniaste oraz żyzne i próchniczne lasy liściaste, zarośla, żywopłoty, ogrody i wysypiska.",
+            "tekst": "Owoc tej rośliny to wydłużona, czterostronna torebka o długości 4-5,5 cm, w której znajdują się dwa rzędy czarnych nasion uwalnianych po rozpadzie torebki.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "5dad8c8ec20cc993"
+      },
+      "wymagania.gleba": {
+        "tytul": "Natura i siedlisko - Gleba",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Gatunek preferuje świeże, bogate w azot gleby gliniaste.",
             "zrodla": [
-              1,
               2
             ],
             "fakty": [
-              "s341",
               "s356"
             ]
           }
         ],
         "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "443e4b8640549c85"
+        "wejscie": "eb6d38dbc10db870"
       },
       "czesci_rosliny.ziele.skladniki_aktywne": {
         "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Substancje czynne",
@@ -562,7 +688,7 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Tradycyjnie wykorzystywano czosnaczek jako środek moczopędny.",
+            "tekst": "W tradycyjnej medycynie czosnaczek był wykorzystywany jako diuretyk.",
             "zrodla": [
               3
             ],
@@ -580,7 +706,7 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Najstarsze dowody na użycie czosznaczka pospolitego w celach kulinarnych pochodzą z ceramiki kultur Ertebølle i Funnelneck-Beaker w północno-wschodnich Niemczech i Danii, datowanej na lata 4100–3750 p.n.e.",
+            "tekst": "Najstarsze dowody na użycie czosnaczka jako przyprawy pochodzą z ceramiki kultur Ertebølle i Funnelneck-Beaker w północno-wschodnich Niemczech i Danii, które są datowane na 4100-3750 p.n.e.",
             "zrodla": [
               3
             ],
@@ -589,7 +715,7 @@
             ]
           },
           {
-            "tekst": "W okresie XVII-wiecznym Anglii zapiski zalecały stosowanie tej rośliny jako przyprawy do solonych ryb.",
+            "tekst": "W XVII-wiecznym w Anglii roślina była zalecana jako przyprawa do solonych ryb.",
             "zrodla": [
               3
             ],
@@ -598,7 +724,7 @@
             ]
           },
           {
-            "tekst": "W XIX wieku gatunek został przeniesiony na terenie Ameryki Północnej przez europejskich osadników, a od 1868 roku rozprzestrzeniał się w stanach wschodnich i środkowych Stanów Zjednoczonych jako roślina inwazyjna.",
+            "tekst": "W XIX wieku czosnaczek został wprowadzony do Ameryki Północnej przez osadników z Europy i od 1868 roku rozprzestrzenił się we wschodnich oraz środkowych stanach USA jako gatunek inwazyjny.",
             "zrodla": [
               3
             ],
@@ -607,14 +733,59 @@
             ]
           },
           {
-            "tekst": "W dawnych publikacjach roślina była nazywana \"czosnkowym zielem\", a Józef Rostafiński odnotował jej ludową nazwę \"bździucha\".",
+            "tekst": "W dawnych publikacjach roślina nosiła nazwę „czosnkowego ziela”, natomiast Józef Rostafiński zanotował jej ludowe określenie jako „bździucha”.",
             "zrodla": [
               1
             ],
             "fakty": [
               "s343"
             ]
-          },
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "8328284e5302ad89"
+      },
+      "czesci_rosliny.ziele.ostrzezenia": {
+        "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Ostrzeżenia",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Młode rośliny, zwłaszcza siewki, mogą zawierać związki cyjanogenne stanowiące ochronę przed roślinożercami, jednak roślina uznawana jest za praktycznie nieszkodliwą przy spożywaniu niewielkich ilości.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s344"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "00a1190529e41a8c"
+      },
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Spożycie dużych ilości rośliny może wywołać podrażnienie żołądka u osób wrażliwych z powodu zawartych w niej olejów gorczycznych.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s548"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "f367d68cc7cfd713"
+      },
+      "permakultura.funkcje": {
+        "tytul": "Cykl życia i ekosystem - Permakultura - funkcje",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
           {
             "tekst": "Substancje zawarte w roślinie działają allelopatycznie i hamują wzrost grzybów mikoryzowych, co pośrednio ogranicza pojawianie się drzew w jej bezpośrednim sąsiedztwie.",
             "zrodla": [
@@ -632,28 +803,19 @@
             "fakty": [
               "s355"
             ]
-          }
-        ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "f3b3be7d518d9318"
-      },
-      "ostrzezenia": {
-        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
+          },
           {
-            "tekst": "Młode rośliny, zwłaszcza siewki, mogą zawierać związki cyjanogenne stanowiące ochronę przed roślinożercami, jednak roślina uznawana jest za praktycznie nieszkodliwą przy spożywaniu niewielkich ilości.",
+            "tekst": "Z korzenia rośliny wydzielany jest sekret, który działa allelopatycznie, hamując wzrost innych roślin i wyłączając dany obszar z konkurencji.",
             "zrodla": [
-              1
+              4
             ],
             "fakty": [
-              "s344"
+              "s550"
             ]
           }
         ],
-        "model": "groq/openai/gpt-oss-120b",
-        "wejscie": "00a1190529e41a8c"
+        "model": "bez LLM: za duzo zdan spoza zrodel",
+        "wejscie": "c2b5e18c7fbb768f"
       }
     },
     "uzyte_fakty": [
@@ -672,7 +834,9 @@
       "s353",
       "s354",
       "s355",
-      "s356"
+      "s356",
+      "s548",
+      "s550"
     ]
   },
   "url": {
