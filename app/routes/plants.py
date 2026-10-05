@@ -37,6 +37,31 @@ def plant_detail(plant_id):
                            plant_recipes=plant_recipes, legacy=legacy, seo=plant_seo(plant_data, plant_id))
 
 
+def _compare_sources(data, legacy):
+    """Skad pochodza informacje o roslinie: plik Kwiatownika, zrodla wiedzy z Siedziby, bibliografia archiwum."""
+    out, seen = [], set()
+
+    def add(nazwa, url=None):
+        url = url if isinstance(url, str) and url.startswith(('https://', 'http://')) else None
+        key = url or nazwa
+        if nazwa and key not in seen:
+            seen.add(key)
+            out.append({'nazwa': nazwa, 'url': url})
+
+    if data.get('_archiwum'):
+        add('Archiwum pierwszego Kwiatownika')
+    elif not data.get('_siedziba_nowa'):
+        add('Kwiatownik – opis zielarski (plik rośliny)')
+    wiedza = data.get('wiedza') if isinstance(data.get('wiedza'), dict) else {}
+    for z in wiedza.get('zrodla') or []:
+        if isinstance(z, dict):
+            add(z.get('nazwa') or z.get('url'), z.get('url'))
+    if legacy:
+        for u in legacy.get('bibliografia') or []:
+            add(u.split('/')[2] if u.count('/') >= 2 else u, u)
+    return out[:15]
+
+
 def _compare_row(data, legacy, recipes):
     """Najwazniejsze cechy rosliny do porownywarki (brakujace pola = None)."""
     if not data:
@@ -55,6 +80,7 @@ def _compare_row(data, legacy, recipes):
         'medyczne': zast.get('medyczne'), 'rzemieslnicze': zast.get('rzemieslnicze'), 'barwniki': barwniki,
         'interakcje': data.get('interakcje'), 'ostrzezenia': data.get('ostrzezenia'),
         'przepisy': len(recipes), 'archiwum': bool(data.get('_archiwum')),
+        'zrodla': _compare_sources(data, legacy),
     }
 
 

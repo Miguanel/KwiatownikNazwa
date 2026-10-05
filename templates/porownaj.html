@@ -18,6 +18,7 @@
     </form>
 
     <div id="compareResult" data-wiki-scan></div>
+    <p class="text-muted small"><span class="compare-hint-term">Podkreślone</span> słowa: najedź kursorem lub kliknij, aby zobaczyć krótki opis z Wikipedii (link do artykułu jest w dymku). Ostatni wiersz tabeli pokazuje, skąd pochodzą informacje o każdej roślinie.</p>
     <p class="text-muted small">Informacje mają charakter edukacyjny i nie zastępują porady lekarza ani farmaceuty.</p>
 </div>
 
@@ -29,7 +30,8 @@
         ['nazwa_lat', 'Nazwa łacińska'], ['rodzina', 'Rodzina'], ['opis', 'Opis'],
         ['profil', 'Profil energetyczny'], ['wymagania', 'Wymagania siedliskowe'], ['czesci', 'Surowce (części rośliny)'],
         ['medyczne', 'Zastosowanie lecznicze'], ['rzemieslnicze', 'Rzemiosło'], ['barwniki', 'Barwienie'],
-        ['interakcje', 'Interakcje z lekami'], ['ostrzezenia', 'Przeciwwskazania'], ['przepisy', 'Przepisy w Kwiatowniku']];
+        ['interakcje', 'Interakcje z lekami'], ['ostrzezenia', 'Przeciwwskazania'], ['przepisy', 'Przepisy w Kwiatowniku'],
+        ['zrodla', 'Skąd pochodzą informacje']];
     const DANGER = ['interakcje', 'ostrzezenia'];
     const form = document.getElementById('compareForm');
     const out = document.getElementById('compareResult');
@@ -56,6 +58,37 @@
         const text = flat(v);
         if (text) td.textContent = text; else td.innerHTML = '<span class="text-muted">—</span>';
     }
+    // Nazwa łacińska i rodzina = jedno hasło z dymkiem Wikipedii (static/js/wiki_tooltip.js)
+    function wikiTerm(text, query) {
+        const s = document.createElement('span');
+        s.setAttribute('data-wiki-term', query || text);
+        s.textContent = text;
+        return s;
+    }
+    function familyQuery(v) {                // "Babkowate (Plantaginaceae)" -> "Babkowate|Plantaginaceae"
+        const m = String(v).match(/^([^(]+)\(([^)]+)\)/);
+        return m ? `${m[1].trim()}|${m[2].trim()}` : String(v).trim();
+    }
+    function fillSpecial(td, key, v) {
+        if (key === 'nazwa_lat' && flat(v)) { td.appendChild(wikiTerm(flat(v), flat(v).split(/\s+/).slice(0, 2).join(' '))); return true; }
+        if (key === 'rodzina' && flat(v)) { td.appendChild(wikiTerm(flat(v), familyQuery(flat(v)))); return true; }
+        if (key === 'zrodla') {
+            const list = Array.isArray(v) ? v : [];
+            if (!list.length) { td.innerHTML = '<span class="text-muted">—</span>'; return true; }
+            const ul = document.createElement('ul'); ul.className = 'compare-sources';
+            list.forEach(z => {
+                const li = document.createElement('li');
+                if (z.url && /^https?:\/\//.test(z.url)) {
+                    const a = document.createElement('a'); a.href = z.url; a.target = '_blank'; a.rel = 'noopener nofollow';
+                    a.textContent = z.nazwa || z.url; li.appendChild(a);
+                } else li.textContent = z.nazwa;
+                ul.appendChild(li);
+            });
+            td.appendChild(ul);
+            return true;
+        }
+        return false;
+    }
     function render(ids) {
         out.innerHTML = '';
         const cols = ids.filter(id => DATA[id]);
@@ -67,6 +100,8 @@
             const th = document.createElement('th');
             const a = document.createElement('a'); a.href = '/plant/' + encodeURIComponent(id) + '/';
             a.textContent = DATA[id].nazwa_pl || id; th.appendChild(a);
+            const w = wikiTerm('W', DATA[id].nazwa_pl || id);   // dymek z Wikipedii obok nazwy (link prowadzi do strony rośliny)
+            w.className = 'kw-wiki-badge'; w.title = 'Opis z Wikipedii'; th.appendChild(document.createTextNode(' ')); th.appendChild(w);
             if (DATA[id].archiwum) { const s = document.createElement('small'); s.className = 'text-muted'; s.textContent = ' (archiwum)'; th.appendChild(s); }
             head.appendChild(th);
         });
@@ -77,7 +112,7 @@
             cols.forEach(id => {
                 const td = tr.insertCell(); const v = DATA[id][key];
                 if (DANGER.includes(key) && flat(v)) td.className = 'danger-cell';
-                fill(td, v);
+                if (!fillSpecial(td, key, v)) fill(td, v);
             });
         });
         wrap.appendChild(table); out.appendChild(wrap);
@@ -107,5 +142,8 @@
     .compare-table th[scope=row] { width: 18%; color: #6d5c3d; }
     .compare-table td { vertical-align: top; font-size: 0.95rem; }
     .danger-cell { background: #fff3f3; }
+    .compare-sources { margin: 0; padding-left: 18px; font-size: 0.9rem; }
+    .compare-sources a { color: #2d5a27; text-decoration: underline; word-break: break-word; }
+    .compare-hint-term { text-decoration: underline dotted; text-underline-offset: 3px; }
 </style>
 {% endblock %}

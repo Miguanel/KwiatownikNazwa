@@ -433,7 +433,7 @@
             partsKeys.forEach(partName => {
                 const data = currentPlantPartsData[partName];
                 const props = escHtml(data.props || "Brak danych");
-                const ingr = escHtml(data.ingr ? String(data.ingr) : "Brak danych");
+                const ingr = wikiIngredients(data.ingr);
                 const webBadge = data.web ? ' <span class="part-web" title="Część rośliny opisana na podstawie źródeł z sieci">🌐 z sieci</span>' : '';
 
                 let card = document.createElement('div');
@@ -442,7 +442,7 @@
 
                 card.innerHTML = `
                     <div class="part-name">${escHtml(partName)}${webBadge}</div>
-                    <div class="part-info-block"><span class="part-info-label">Właściwości:</span> ${props}</div>
+                    <div class="part-info-block" data-wiki-scan><span class="part-info-label">Właściwości:</span> ${props}</div>
                     <div class="part-info-block"><span class="part-info-label">Składniki:</span> <span style="color: #2d5a27;">${ingr}</span></div>
                     ${data.warn ? `<div class="part-info-block part-warn"><span class="part-info-label">⚠️ Ostrzeżenie (${escHtml(partName)}):</span> ${escHtml(data.warn)}${data.warn_web ? ' <span class="part-web">🌐 z sieci</span>' : ''}</div>` : ''}
                 `;
@@ -541,33 +541,25 @@
 
     // --- 5. RENDEROWANIE TABELI ---
 
-    function smartFormatIngredient(item) {
-        const trimmed = item.trim();
-        if (trimmed === "Brak danych" || trimmed === "") return item;
-
-        // Sprawdzamy czy mamy do czynienia z witaminami
-        const isVitamin = trimmed.toLowerCase().includes("witamina");
-
-        if (isVitamin) {
-            // Logika dla witamin: "Witaminy (A, B1, C)" -> "Witaminy (" + klikalne A, B1, C + ")"
-            // Szukamy symboli witamin (pojedyncze litery lub litera+cyfra)
-            return trimmed.replace(/([A-Z][0-9]?)/g, (match) => {
-                // Zamieniamy symbole na klikalne linki, ale wyszukujemy "witamina X"
-                return `<span class="wiki-clickable" onclick="fetchWikiInfo('witamina ${match}')" title="Szukaj witaminy ${match}">${match}</span>`;
-            });
-        } else {
-            // Logika dla reszty: "Antocyjany (opis)" -> klikalne "Antocyjany" + reszta tekstu normalnie
-            if (trimmed.includes('(')) {
-                const parts = trimmed.split('(');
-                const mainTerm = parts[0].trim();
-                const rest = parts.slice(1).join('('); // Na wypadek wielu nawiasów
-
-                return `<span class="wiki-clickable" onclick="fetchWikiInfo('${mainTerm}')" title="Szukaj '${mainTerm}'">${mainTerm}</span> (${rest}`;
-            } else {
-                // Jeśli nie ma nawiasów, po prostu robimy całość klikalną
-                return `<span class="wiki-clickable" onclick="fetchWikiInfo('${trimmed}')">${trimmed}</span>`;
-            }
+    // Lista składników z danych rośliny -> elementy z dymkami Wikipedii (static/js/wiki_tooltip.js).
+    // Dzielimy po przecinkach, ale nie wewnątrz nawiasów: "Glikozydy (aukubina, katalpol), Śluzy" -> 2 pozycje.
+    function splitIngredients(value) {
+        if (Array.isArray(value)) return value.map(v => String(v).trim()).filter(Boolean);
+        const out = [];
+        let depth = 0, cur = '';
+        for (const ch of String(value || '')) {
+            if (ch === '(') depth++;
+            if (ch === ')') depth = Math.max(0, depth - 1);
+            if ((ch === ',' || ch === ';') && depth === 0) { if (cur.trim()) out.push(cur.trim()); cur = ''; }
+            else cur += ch;
         }
+        if (cur.trim()) out.push(cur.trim());
+        return out;
+    }
+    function wikiIngredients(value) {
+        const items = splitIngredients(value).filter(t => t !== 'Brak danych');
+        if (!items.length) return 'Brak danych';
+        return items.map(t => `<span data-wiki-ingredient>${escHtml(t)}</span>`).join(', ');
     }
     function render() {
         const tbody = document.getElementById('ingredientsTableBody');
@@ -595,9 +587,7 @@
             tr.innerHTML = `
                 <td style="text-align: left; vertical-align: top;">
                     <div style="flex; align-items: center;">
-                        <strong class="wiki-clickable" onclick="fetchWikiInfo('${i.name}')" title="Kliknij, aby przeczytać o roślinie" style="font-size: 1.1rem; margin-right: 5px;">
-                            ${i.name}
-                        </strong>
+                        <strong data-wiki-term="${escHtml(i.name)}" title="Najedź lub kliknij: opis z Wikipedii" style="font-size: 1.1rem; margin-right: 5px;">${escHtml(i.name)}</strong>
                         ${warningHtml}
                     </div>
                     <small style="color: #666;">Surowiec: ${escHtml(i.part)}</small>
@@ -614,7 +604,7 @@
                     </button>
                 </td>
                 <td class="col-ingredients" style="vertical-align: top;">
-                    ${i.ingr.split(',').map(item => smartFormatIngredient(item)).join(', ')}
+                    ${wikiIngredients(i.ingr)}
                 </td>
                 <td style="text-align: center; vertical-align: top;">
                     <button onclick="removeIngredient(${i.id})" class="delete-btn">&times;</button>
