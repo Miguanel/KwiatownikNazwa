@@ -42,11 +42,11 @@ body {
 }
 .marquee-wrapper .marquee-item strong { color: var(--kw-moss); }
 .marquee-wrapper .marquee-item i { color: var(--kw-gold); }
-/* żywa gałąź pod całym nagłówkiem (static/js/celtic_vine.js) – zwisa poza nagłówek, nie zasłania kliknięć */
+/* pas plecionki pod całym nagłówkiem – zwisa poza nagłówek (nie jest ucinany przez przewijany pasek ciekawostek) */
 .main-header .kw-vine {
-    position: absolute; left: 0; right: 0; top: 100%; height: 30px; pointer-events: none; overflow: hidden;
+    position: absolute; left: 0; right: 0; top: 100%; height: 12px; pointer-events: none;
+    background: var(--kw-knot) repeat-x center / 26px 11px; opacity: 0.8;
 }
-.main-header .kw-vine canvas { display: block; }
 
 /* ---------- GŁÓWNA KARTA TREŚCI ---------- */
 body > .container {
