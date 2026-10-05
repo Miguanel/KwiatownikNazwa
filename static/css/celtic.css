@@ -37,18 +37,16 @@ body {
 .marquee-wrapper {
     background-color: #f3ecd8;
     color: var(--kw-muted);
-    border-bottom: none;
+    border-bottom: 1px solid var(--kw-line);
     position: relative;
-    padding-bottom: 14px;
 }
 .marquee-wrapper .marquee-item strong { color: var(--kw-moss); }
 .marquee-wrapper .marquee-item i { color: var(--kw-gold); }
-/* pas plecionki pod całym nagłówkiem */
-.marquee-wrapper::after {
-    content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 10px;
-    background: var(--kw-knot) repeat-x center / 24px 10px; opacity: 0.7;
-    border-top: 1px solid var(--kw-line); pointer-events: none;
+/* żywa gałąź pod całym nagłówkiem (static/js/celtic_vine.js) – zwisa poza nagłówek, nie zasłania kliknięć */
+.main-header .kw-vine {
+    position: absolute; left: 0; right: 0; top: 100%; height: 30px; pointer-events: none; overflow: hidden;
 }
+.main-header .kw-vine canvas { display: block; }
 
 /* ---------- GŁÓWNA KARTA TREŚCI ---------- */
 body > .container {
@@ -64,9 +62,7 @@ body > .container::before { border-color: var(--kw-line-soft); border-radius: 4p
 /* ---------- NAGŁÓWKI: jak w encyklopedii + triquetra ---------- */
 .container h1, .container h2, .container h3 { font-family: 'Playfair Display', Georgia, serif; color: var(--kw-moss); }
 .container h1 { font-weight: normal; letter-spacing: 0.3px; }
-.container > h1:first-child::after,
-.container > div > h1:first-child::after,
-.container > section > h1:first-child::after,
+.container h1:not(.hero-title)::after,
 .kw-ornament {
     content: ''; display: block; width: 220px; max-width: 70%; height: 30px; margin: 10px auto 4px auto;
     background:
@@ -137,6 +133,7 @@ footer::before {
     width: 260px; max-width: 80%; height: 30px;
     background:
         var(--kw-triquetra) no-repeat center / 28px 25px,
+        radial-gradient(circle, var(--kw-bg) 0 18px, transparent 19px) no-repeat center / 40px 40px,
         var(--kw-knot) repeat-x left center / 24px 10px;
     -webkit-mask: linear-gradient(90deg, transparent, #000 25%, #000 75%, transparent);
             mask: linear-gradient(90deg, transparent, #000 25%, #000 75%, transparent);
@@ -147,6 +144,20 @@ footer i { color: var(--kw-gold); }
 /* ---------- TELEFONY ---------- */
 @media (max-width: 768px) {
     body > .container { border-radius: 0; box-shadow: none; border-left: 0; border-right: 0; }
-    .container > h1:first-child::after, .container > div > h1:first-child::after, .container > section > h1:first-child::after { width: 160px; }
+    .container h1:not(.hero-title)::after { width: 160px; }
 }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+
+/* ---------- KARUZELE NA STRONIE GŁÓWNEJ ---------- */
+.mini-card {
+    background: var(--kw-paper) !important; border: 1px solid var(--kw-line) !important; border-radius: 6px !important;
+    box-shadow: 0 2px 8px rgba(62, 74, 61, 0.08); padding: 6px !important;
+}
+.mini-card, .mini-card h4 { color: var(--kw-moss) !important; }
+.mini-card h4 { font-family: 'Playfair Display', Georgia, serif; font-weight: normal; }
+.mini-card:hover, .mini-card:focus-visible { border-color: var(--kw-gold) !important; box-shadow: 0 8px 18px rgba(62, 74, 61, 0.15); }
+.mini-card-img { border-radius: 4px !important; background-color: #ede6d1; }
+.mini-card-icon { color: var(--kw-gold) !important; }
+
+/* ---------- PRZEPIŚNIK I LABORATORIUM: pola wyszukiwania ---------- */
+.search-container { background: #f2f5ea !important; border: 1px solid #c4cfaa !important; border-left: 4px solid var(--kw-moss) !important; box-shadow: none !important; border-radius: 6px; }

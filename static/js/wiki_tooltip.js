@@ -16,6 +16,12 @@
     'use strict';
 
     const WIKI = 'https://pl.wikipedia.org';
+    const WIKIDATA = 'https://www.wikidata.org/w/api.php';
+    // Gdy polska Wikipedia nie ma artykułu – kolejne języki (czeski i ukraiński są blisko polskiego)
+    const OTHER_LANGS = ['en', 'de', 'fr', 'cs', 'uk', 'ru', 'es', 'it', 'la'];
+    const LANG_NAMES = { pl: 'polskiej', en: 'angielskiej', de: 'niemieckiej', fr: 'francuskiej', cs: 'czeskiej',
+        uk: 'ukraińskiej', ru: 'rosyjskiej', es: 'hiszpańskiej', it: 'włoskiej', la: 'łacińskiej' };
+    const wikiHost = lang => `https://${lang}.wikipedia.org`;
 
     // ------------------------------------------
     // SŁOWNIK POJĘĆ: [wzorzec (małe litery, bez końcówki), hasło w Wikipedii]
@@ -283,7 +289,7 @@
     // POBIERANIE OPISU Z WIKIPEDII (z pamięcią podręczną)
     // ------------------------------------------
     const memCache = new Map();
-    const CACHE_PREFIX = 'kw_wiki_v2:';   // v2: odrzucanie niepasujących wyników wyszukiwania
+    const CACHE_PREFIX = 'kw_wiki_v3:';   // v2: odrzucanie niepasujących wyników wyszukiwania
 
     function cacheGet(q) {
         if (memCache.has(q)) return memCache.get(q);
@@ -306,16 +312,49 @@
         } finally { clearTimeout(t); }
     }
 
-    async function summary(title) {
-        const d = await getJson(`${WIKI}/api/rest_v1/page/summary/${encodeURIComponent(title.replace(/ /g, '_'))}`);
+    async function summary(title, lang) {
+        lang = lang || 'pl';
+        const host = wikiHost(lang);
+        const d = await getJson(`${host}/api/rest_v1/page/summary/${encodeURIComponent(title.replace(/ /g, '_'))}`);
         if (!d || !d.extract) return null;
         return {
             title: d.title,
             extract: d.extract,
             type: d.type,
+            lang,
             thumb: d.thumbnail && /^https:\/\//.test(d.thumbnail.source) ? d.thumbnail.source : '',
-            url: (d.content_urls && d.content_urls.desktop && d.content_urls.desktop.page) || `${WIKI}/wiki/${encodeURIComponent(d.title.replace(/ /g, '_'))}`
+            url: (d.content_urls && d.content_urls.desktop && d.content_urls.desktop.page) || `${host}/wiki/${encodeURIComponent(d.title.replace(/ /g, '_'))}`
         };
+    }
+
+    // --- Wikidata: hasło po polsku -> ten sam obiekt w Wikipediach w innych językach ---
+    // (np. „aukubina” nie ma artykułu po polsku, ale Wikidata zna polską nazwę i ma artykuł angielski „Aucubin”)
+    async function viaWikidata(q) {
+        const found = await getJson(`${WIKIDATA}?action=wbsearchentities&search=${encodeURIComponent(q)}&language=pl&uselang=pl&type=item&limit=5&format=json&origin=*`);
+        const hits = (found && found.search ? found.search : [])
+            .filter(h => !/ujednoznaczn|disambiguation|nazwisko|imię|film|album|singel|gra /i.test(h.description || ''))
+            // dopasowana etykieta/alias musi zawierać rdzeń szukanego słowa (bez przypadkowych trafień)
+            .filter(h => relevant({ title: (h.match && h.match.text) || h.label || '', extract: '' }, q));
+        if (!hits.length) return null;
+        const ids = hits.map(h => h.id).join('|');
+        const ent = await getJson(`${WIKIDATA}?action=wbgetentities&ids=${ids}&props=sitelinks|descriptions&languages=pl|en&format=json&origin=*`);
+        const entities = ent && ent.entities ? ent.entities : {};
+        for (const h of hits) {
+            const e = entities[h.id];
+            if (!e || !e.sitelinks) continue;
+            const desc = (e.descriptions && e.descriptions.pl && e.descriptions.pl.value) || h.description || '';
+            for (const lang of ['pl'].concat(OTHER_LANGS)) {
+                const link = e.sitelinks[`${lang}wiki`];
+                if (!link) continue;
+                const s = await summary(link.title, lang);
+                if (s && s.type !== 'disambiguation') {
+                    s.wdDesc = desc;
+                    s.wdUrl = `https://www.wikidata.org/wiki/${h.id}`;
+                    return s;
+                }
+            }
+        }
+        return null;
     }
 
     // „2 łyżki miodu” -> „miodu”: usuwamy ilości i miary przed szukaniem
@@ -326,9 +365,9 @@
             .trim() || String(q);
     }
 
-    async function search(q) {
+    async function search(q, lang) {
         q = cleanQuery(q);
-        const d = await getJson(`${WIKI}/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(q)}&srlimit=5&srnamespace=0&format=json&origin=*`);
+        const d = await getJson(`${wikiHost(lang || 'pl')}/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(q)}&srlimit=5&srnamespace=0&format=json&origin=*`);
         return d && d.query && d.query.search ? d.query.search.map(s => s.title) : [];
     }
 
@@ -347,6 +386,19 @@
         if (stems.some(st => title.includes(st))) return true;
         const text = normPl(`${res.title} ${String(res.extract || '').slice(0, 400)}`);
         return stems.every(st => text.includes(st));
+    }
+
+    // Porównanie nazwy polskiej z tytułem obcojęzycznym: „katalpol” ~ „Catalpol”, „aukubina” ~ „Aucubin”
+    // (k→c, w→v, j/y→i, bez końcowych samogłosek; dopuszczalna różnica do 2 znaków na końcu)
+    function skeleton(t) {
+        return normPl(t).replace(/\([^)]*\)/g, '').replace(/[^a-z]/g, '')
+            .replace(/ph/g, 'f').replace(/th/g, 't').replace(/ch/g, 'h').replace(/k/g, 'c').replace(/w/g, 'v')
+            .replace(/[jy]/g, 'i').replace(/[aeiou]+$/, '');
+    }
+    function foreignMatch(title, q) {
+        const a = skeleton(title), b = skeleton(q);
+        if (a.length < 4 || b.length < 4) return a === b;
+        return (a.startsWith(b) || b.startsWith(a)) && Math.abs(a.length - b.length) <= 2;
     }
 
     const inflight = new Map();
@@ -374,6 +426,25 @@
                     for (const t of titles) {
                         const s = await summary(t);
                         if (s && s.type !== 'disambiguation' && relevant(s, base)) { result = s; break; }
+                    }
+                }
+                // 3. Wikidata -> artykuł w innym języku (polska nazwa, etykieta albo alias)
+                if (!result) {
+                    for (const a of alts) {
+                        result = await viaWikidata(cleanQuery(a));
+                        if (result) break;
+                    }
+                }
+                // 4. wyszukiwarka angielskiej i niemieckiej Wikipedii (nazwy łacińskie, międzynarodowe)
+                if (!result) {
+                    const base = cleanQuery(alts[alts.length - 1] || q);
+                    for (const lang of ['en', 'de']) {
+                        const titles = await search(base, lang);
+                        for (const t of titles.slice(0, 3)) {
+                            const s = await summary(t, lang);
+                            if (s && s.type !== 'disambiguation' && foreignMatch(s.title, base)) { result = s; break; }
+                        }
+                        if (result) break;
                     }
                 }
                 if (!result && disamb && relevant(disamb, alts[0] || q)) result = disamb;
@@ -433,15 +504,23 @@
             html += `<div class="kw-wiki-head">${esc(label)}</div><p class="kw-wiki-text">Nie udało się połączyć z Wikipedią. Spróbuj ponownie za chwilę.</p>
                 <a class="kw-wiki-more" href="${WIKI}/w/index.php?search=${encodeURIComponent(q)}" target="_blank" rel="noopener">Szukaj w Wikipedii ↗</a>`;
         } else if (data.missing) {
-            html += `<div class="kw-wiki-head">${esc(label)}</div><p class="kw-wiki-text">Wikipedia nie ma jeszcze krótkiego opisu tego hasła.</p>
+            html += `<div class="kw-wiki-head">${esc(label)}</div><p class="kw-wiki-text">Wikipedia nie ma jeszcze krótkiego opisu tego hasła – ani po polsku, ani w innych językach.</p>
                 <a class="kw-wiki-more" href="${WIKI}/w/index.php?search=${encodeURIComponent(q)}" target="_blank" rel="noopener">Szukaj w Wikipedii ↗</a>`;
         } else {
             const differs = label.length > 2 && !label.toLowerCase().startsWith(data.title.toLowerCase());   // znaczek „W” bez dopisku
             html += `<div class="kw-wiki-head">${esc(data.title)}</div>`;
             if (differs) html += `<div class="kw-wiki-sub">dla: „${esc(label)}”</div>`;
-            html += `<div class="kw-wiki-body">${data.thumb ? `<img class="kw-wiki-img" src="${esc(data.thumb)}" alt="" loading="lazy">` : ''}<p class="kw-wiki-text">${esc(shortExtract(data.extract))}</p></div>`;
+            const lang = data.lang || 'pl';
+            const foreign = lang !== 'pl';
+            if (foreign) {
+                html += `<div class="kw-wiki-lang">🌐 Brak artykułu po polsku – opis z ${esc(LANG_NAMES[lang] || lang)} Wikipedii</div>`;
+                if (data.wdDesc) html += `<div class="kw-wiki-sub">Wikidata: ${esc(data.wdDesc)}</div>`;
+            }
+            html += `<div class="kw-wiki-body">${data.thumb ? `<img class="kw-wiki-img" src="${esc(data.thumb)}" alt="" loading="lazy">` : ''}<p class="kw-wiki-text" lang="${esc(lang)}">${esc(shortExtract(data.extract))}</p></div>`;
             if (data.type === 'disambiguation') html += `<p class="kw-wiki-sub">To hasło ma kilka znaczeń – szczegóły w Wikipedii.</p>`;
-            html += `<div class="kw-wiki-foot"><a class="kw-wiki-more" href="${esc(data.url)}" target="_blank" rel="noopener">Czytaj w Wikipedii ↗</a><span class="kw-wiki-lic">Wikipedia · CC BY-SA</span></div>`;
+            const translate = foreign
+                ? ` <a class="kw-wiki-more" href="https://translate.google.com/translate?sl=${encodeURIComponent(lang)}&tl=pl&u=${encodeURIComponent(data.url)}" target="_blank" rel="noopener">Przetłumacz ↗</a>` : '';
+            html += `<div class="kw-wiki-foot"><span><a class="kw-wiki-more" href="${esc(data.url)}" target="_blank" rel="noopener">Czytaj w Wikipedii${foreign ? ` (${esc(lang.toUpperCase())})` : ''} ↗</a>${translate}</span><span class="kw-wiki-lic">Wikipedia${foreign ? ` (${esc(lang)})` : ''} · CC BY-SA</span></div>`;
         }
         tip.innerHTML = html;
     }

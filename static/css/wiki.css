@@ -66,3 +66,7 @@
     text-decoration: none !important; vertical-align: middle; line-height: 1;
 }
 .kw-wiki-badge:hover, .kw-wiki-badge.kw-wiki-active { background: #3e4a3d; color: #fdfaf0; border-color: #3e4a3d; }
+
+/* Opis z Wikipedii w innym języku */
+.kw-wiki-lang { font-size: 12.5px; color: #1565c0; background: #e3f2fd; border: 1px solid #90caf9; border-radius: 4px; padding: 2px 8px; margin: 4px 0; display: inline-block; }
+.kw-wiki-foot > span:first-child { display: flex; flex-wrap: wrap; gap: 4px 12px; }
