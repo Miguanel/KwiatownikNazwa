@@ -27,16 +27,16 @@
         ['flawonoid', 'Flawonoidy'], ['garbnik', 'Garbniki'], ['tanin', 'Taniny'],
         ['olej(?:ek|ki|ków|kiem|kami|kach|ku|kom)\\s+eteryczn', 'Olejki eteryczne'],
         ['olej(?:ek|ki|ków|kami)\\s+lotn', 'Olejki eteryczne'],
-        ['kwas(?:y|ów|ami|om)?\\s+organiczn', 'Kwasy karboksylowe'],
+        ['kwas(?:y|ów|ami|om)?\\s+organiczn', 'Kwasy organiczne|Kwasy karboksylowe'],
         ['kwas(?:y|ów|ami|om)?\\s+fenolow', 'Kwasy fenolowe'],
         ['kwas(?:y|ów|ami|om)?\\s+polifenolow', 'Polifenole'],
         ['kwas(?:y|ów|ami|om)?\\s+tłuszczow', 'Kwasy tłuszczowe'],
         ['kwas(?:y|ów|ami|om)?\\s+żywiczn', 'Żywica'],
         ['polifenol', 'Polifenole'], ['fenolokwas', 'Kwasy fenolowe'],
-        ['sol(?:e|i|ami)\\s+mineraln', 'Składniki mineralne'], ['składnik(?:i|ów|ami)\\s+mineraln', 'Składniki mineralne'],
-        ['śluz(?:y|ów|ami|em|u)?(?![a-ząćęłńóśźż])', 'Śluzy roślinne'], ['związk(?:i|ów)\\s+śluzow', 'Śluzy roślinne'],
-        ['pektyn', 'Pektyny'], ['saponin', 'Saponiny'], ['gorycz(?:e|y|ami|ach)(?![a-ząćęłńóśźż])', 'Substancje gorzkie'],
-        ['związk(?:i|ów)\\s+gorzk', 'Substancje gorzkie'], ['fitosterol', 'Fitosterole'], ['steryn', 'Sterole'],
+        ['sol(?:e|i|ami)\\s+mineraln', 'Składniki mineralne|Sole mineralne|Makroelementy|Pierwiastki biogenne'], ['składnik(?:i|ów|ami)\\s+mineraln', 'Składniki mineralne|Sole mineralne|Makroelementy|Pierwiastki biogenne'], ['minerał(?:y|ów|ami)(?![a-ząćęłńóśźż])', 'Składniki mineralne|Sole mineralne|Makroelementy'],
+        ['śluz(?:y|ów|ami|em|u)?(?![a-ząćęłńóśźż])', 'Śluzy roślinne|Śluz roślinny|Śluzy'], ['związk(?:i|ów)\\s+śluzow', 'Śluzy roślinne|Śluz roślinny|Śluzy'],
+        ['pektyn', 'Pektyny'], ['saponin', 'Saponiny'], ['gorycz(?:e|y|ami|ach)(?![a-ząćęłńóśźż])', 'Substancje gorzkie|Goryczki|Gorycze'],
+        ['związk(?:i|ów)\\s+gorzk', 'Substancje gorzkie|Goryczki|Gorycze'], ['fitosterol', 'Fitosterole'], ['steryn', 'Sterole'],
         ['antocyjan', 'Antocyjany'], ['antocyjanozyd', 'Antocyjany'], ['irydoid', 'Irydoidy'],
         ['kumaryna(?![a-ząćęłńóśźż])', 'Kumaryna'], ['furanokumaryn', 'Furanokumaryny'], ['kumaryn', 'Kumaryny'], ['żywic', 'Żywica'],
         ['skrobi', 'Skrobia'], ['inulin', 'Inulina'], ['karotenoid', 'Karotenoidy'], ['beta-karoten', 'Beta-karoten'], ['karoten', 'Beta-karoten'],
@@ -99,7 +99,7 @@
         ['(?:miedź|miedzi)(?![a-ząćęłńóśźż])', 'Miedź'], ['(?:litu|litem)(?![a-ząćęłńóśźż])', 'Lit (pierwiastek)'],
         ['(?:siark[aię]|siarką)(?![a-ząćęłńóśźż])', 'Siarka'], ['związk(?:i|ów)\\s+siark', 'Związki siarkoorganiczne'],
         // działanie i fizjologia
-        ['wykrztuśn', 'Leki wykrztuśne'], ['moczopędn', 'Leki moczopędne'], ['diuretyk', 'Leki moczopędne'],
+        ['wykrztuśn', 'Leki wykrztuśne|Środki wykrztuśne|Wykrztuśne'], ['moczopędn', 'Leki moczopędne|Diuretyki'], ['diuretyk', 'Leki moczopędne|Diuretyki'],
         ['żółciopędn', 'Leki żółciopędne'], ['napotn', 'Środki napotne'], ['rozkurczow', 'Leki spazmolityczne'],
         ['spazmolityczn', 'Leki spazmolityczne'], ['ściągając', 'Środki ściągające'], ['wiatropędn', 'Środki wiatropędne'],
         ['przeczyszczając', 'Środki przeczyszczające'], ['przeciwskurcz', 'Leki spazmolityczne'], ['powlekając', 'Środki powlekające'],
@@ -283,7 +283,7 @@
     // POBIERANIE OPISU Z WIKIPEDII (z pamięcią podręczną)
     // ------------------------------------------
     const memCache = new Map();
-    const CACHE_PREFIX = 'kw_wiki_v1:';
+    const CACHE_PREFIX = 'kw_wiki_v2:';   // v2: odrzucanie niepasujących wyników wyszukiwania
 
     function cacheGet(q) {
         if (memCache.has(q)) return memCache.get(q);
@@ -328,8 +328,25 @@
 
     async function search(q) {
         q = cleanQuery(q);
-        const d = await getJson(`${WIKI}/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(q)}&srlimit=3&srnamespace=0&format=json&origin=*`);
+        const d = await getJson(`${WIKI}/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(q)}&srlimit=5&srnamespace=0&format=json&origin=*`);
         return d && d.query && d.query.search ? d.query.search.map(s => s.title) : [];
+    }
+
+    // --- czy znaleziony artykuł naprawdę dotyczy szukanego hasła ---
+    // (wyszukiwarka Wikipedii potrafi zwrócić coś zupełnie innego, np. „Melasa” dla „Sole mineralne”)
+    const PL = { 'ą': 'a', 'ć': 'c', 'ę': 'e', 'ł': 'l', 'ń': 'n', 'ó': 'o', 'ś': 's', 'ź': 'z', 'ż': 'z' };
+    function normPl(t) { return String(t || '').toLowerCase().replace(/[ąćęłńóśźż]/g, m => PL[m]); }
+    function stemsOf(q) {
+        return normPl(q).split(/[^\p{L}\p{N}]+/u).filter(w => w.length >= 4)
+            .map(w => w.slice(0, Math.max(4, Math.ceil(w.length * 0.6))));
+    }
+    function relevant(res, query) {
+        const stems = stemsOf(query);
+        if (!stems.length) return true;
+        const title = normPl(res.title);
+        if (stems.some(st => title.includes(st))) return true;
+        const text = normPl(`${res.title} ${String(res.extract || '').slice(0, 400)}`);
+        return stems.every(st => text.includes(st));
     }
 
     const inflight = new Map();
@@ -340,17 +357,26 @@
         const p = (async () => {
             let result = null;
             let disamb = null;
+            // hasło może mieć warianty: "Składniki mineralne|Sole mineralne|Makroelementy"
+            const alts = String(q).split('|').map(x => x.trim()).filter(Boolean);
             try {
-                result = await summary(q);
-                if (result && result.type === 'disambiguation') { disamb = result; result = null; }
+                for (const a of alts) {
+                    const s = await summary(a);
+                    if (s && s.type !== 'disambiguation') { result = s; break; }
+                    if (s && !disamb) disamb = s;
+                }
                 if (!result) {
-                    const titles = await search(q);
+                    const base = cleanQuery(alts[0] || q);
+                    const titles = await search(base);
+                    // najpierw tytuły, które zawierają rdzeń szukanego słowa
+                    const st = stemsOf(base);
+                    titles.sort((x, y) => (st.some(s => normPl(y).includes(s)) ? 1 : 0) - (st.some(s => normPl(x).includes(s)) ? 1 : 0));
                     for (const t of titles) {
                         const s = await summary(t);
-                        if (s && s.type !== 'disambiguation') { result = s; break; }
+                        if (s && s.type !== 'disambiguation' && relevant(s, base)) { result = s; break; }
                     }
                 }
-                if (!result && disamb) result = disamb;
+                if (!result && disamb && relevant(disamb, alts[0] || q)) result = disamb;
                 cacheSet(q, result || { missing: true });
             } catch (e) {
                 result = { error: true };   // błąd sieci – nie zapisujemy, spróbujemy ponownie
@@ -399,7 +425,7 @@
 
     function render(term, data) {
         const label = term.textContent.trim();
-        const q = term.dataset.wiki;
+        const q = String(term.dataset.wiki || '').split('|')[0];
         let html = `<button type="button" class="kw-wiki-close" aria-label="Zamknij">&times;</button>`;
         if (!data) {
             html += `<div class="kw-wiki-head">${esc(label)}</div><div class="kw-wiki-loading"><span class="kw-wiki-spinner"></span> Szukam w Wikipedii…</div>`;
@@ -410,7 +436,7 @@
             html += `<div class="kw-wiki-head">${esc(label)}</div><p class="kw-wiki-text">Wikipedia nie ma jeszcze krótkiego opisu tego hasła.</p>
                 <a class="kw-wiki-more" href="${WIKI}/w/index.php?search=${encodeURIComponent(q)}" target="_blank" rel="noopener">Szukaj w Wikipedii ↗</a>`;
         } else {
-            const differs = data.title.toLowerCase() !== label.toLowerCase();
+            const differs = label.length > 2 && !label.toLowerCase().startsWith(data.title.toLowerCase());   // znaczek „W” bez dopisku
             html += `<div class="kw-wiki-head">${esc(data.title)}</div>`;
             if (differs) html += `<div class="kw-wiki-sub">dla: „${esc(label)}”</div>`;
             html += `<div class="kw-wiki-body">${data.thumb ? `<img class="kw-wiki-img" src="${esc(data.thumb)}" alt="" loading="lazy">` : ''}<p class="kw-wiki-text">${esc(shortExtract(data.extract))}</p></div>`;

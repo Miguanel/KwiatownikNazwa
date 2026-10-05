@@ -75,9 +75,9 @@
 
         <header class="grimmoire-hero">
             <h1 class="hero-title">{{ plant.nazwa_pl }}</h1>
-            <p class="hero-subtitle">{{ plant.nazwa_lat }} <span class="hero-family">| {{ plant.rodzina }}</span></p>
+            <p class="hero-subtitle">{{ plant.nazwa_lat }}{% if plant.rodzina %} <span class="hero-family">| {% set rd = plant.rodzina|string %}<span data-wiki-term="{{ rd.split('(')[0].strip() }}{% if '(' in rd %}|{{ rd.split('(')[1].split(')')[0].strip() }}{% endif %}">{{ rd }}</span></span>{% endif %}</p>
             <div class="hero-divider"></div>
-            <p class="hero-desc">{{ pole(plant, 'opis', plant.opis) }}</p>
+            <p class="hero-desc" data-wiki-scan>{{ pole(plant, 'opis', plant.opis) }}</p>
             <a class="compare-link" href="{{ url_for('plants.porownaj', a=plant_id) }}"><i class="ra ra-scroll-unfurled"></i> Porównaj z inną rośliną</a>
 
             {% if galeria %}
@@ -499,149 +499,231 @@
 </div>
 
 <style>
-    /* ARCHIWUM KWIATOWNIKA */
-    .arch-dl { margin: 0; }
-    .arch-dl dt { color: #d1b880; font-weight: bold; margin-top: 8px; }
-    .arch-dl dd { margin: 2px 0 0 12px; }
-    .arch-list { margin: 4px 0; padding-left: 18px; }
-    .arch-link, .arch-bib a { color: #a8c69f; font-size: 0.85em; word-break: break-all; }
-    .arch-src { font-size: 0.85em; }
-    .compare-link { display: inline-block; margin-top: 10px; color: #d1b880; font-size: 0.9rem; }
-    /* WIEDZA Z SIECI WMONTOWANA W ROZDZIALY (blok "scalone") */
-    .merged-text .web-ref { font-size: 0.7em; }
-    .web-part-badge { border-color: #4f86c6; color: #a8c6e8; }
-    .orig-text { margin: 6px 0 0; font-size: 0.85em; color: #cfc4a8; }
-    .orig-text summary { cursor: pointer; font-style: italic; opacity: 0.8; }
-    .orig-text p { margin: 4px 0 0; padding-left: 10px; border-left: 2px solid #7a6a4a; overflow-wrap: anywhere; }
-    /* WIEDZA Z SIECI (Siedziba Kwiatownika) */
-    .web-note { font-size: 0.85em; color: #cfc4a8; font-style: italic; margin-bottom: 10px; }
-    .web-facts { margin: 0; padding-left: 18px; }
-    .web-facts li { margin-bottom: 8px; overflow-wrap: anywhere; }
-    .web-part { color: #cfc4a8; font-size: 0.9em; }
-    .web-src { color: #a8c69f; font-size: 0.8em; margin-left: 4px; white-space: nowrap; }
-    .web-summary { margin: 0 0 10px; padding: 8px 10px; border-left: 3px solid #d1b880; background: rgba(209, 184, 128, 0.08); overflow-wrap: anywhere; }
-    .web-parts { font-size: 0.9em; color: #cfc4a8; margin-bottom: 10px; line-height: 1.9; }
-    .web-chip { display: inline-block; padding: 0 8px; margin: 0 4px 2px 0; border: 1px solid #7a6a4a; border-radius: 10px; font-size: 0.8em; color: #d1b880; white-space: nowrap; }
-    .web-ref { color: #a8c69f; font-size: 0.75em; vertical-align: super; margin-left: 2px; text-decoration: none; }
-    .web-ref:hover { text-decoration: underline; }
-    .web-sources { padding-left: 24px; }
-    .web-sources li { margin-bottom: 4px; overflow-wrap: anywhere; }
-    .web-sources a { color: #a8c69f; font-size: 0.85em; }
-    .web-lang { color: #cfc4a8; font-size: 0.8em; }
-    @media (max-width: 600px) { .web-summary { padding: 6px 8px; } .web-facts { padding-left: 14px; } }
-</style>
-
-<style>
-    /* FUNDAMENTY */
+    /* =====================================================================
+       STRONA ROŚLINY – jasno, „encyklopedycznie” (jak Wikipedia), z celtyckim zdobieniem:
+       pergamin, szeryfowe nagłówki z cienką linią, zielone linki, plecionka i triquetra jako ozdobniki.
+       ===================================================================== */
     .grimmoire-wrapper {
-        min-height: 100vh; background-size: cover; background-position: center;
-        background-attachment: fixed; position: relative; padding: 60px 20px;
-        color: #fdfaf0; font-family: 'Georgia', serif;
+        --kw-parch: #fdfaf0; --kw-paper: #fffdf7; --kw-ink: #2b2b2b; --kw-muted: #6b6255;
+        --kw-moss: #3e4a3d; --kw-green: #2d5a27; --kw-sage: #8a9a5b; --kw-gold: #9a7b2f;
+        --kw-line: #d8cfb4; --kw-line-soft: #ebe4cf; --kw-red: #9b2c2c; --kw-red-bg: #fbf0ee;
+        /* plecionka celtycka (dwie przeplatające się nici) i triquetra – rysowane w SVG */
+        --kw-knot: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='12' viewBox='0 0 28 12'%3E%3Cg fill='none' stroke-width='1.6' stroke-linecap='round'%3E%3Cpath d='M0 6C4.7 0 9.3 0 14 6S23.3 12 28 6' stroke='%239a7b2f'/%3E%3Cpath d='M0 6C4.7 12 9.3 12 14 6S23.3 0 28 6' stroke='%233e4a3d'/%3E%3C/g%3E%3C/svg%3E");
+        --kw-triquetra: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 90'%3E%3Cg fill='none' stroke='%239a7b2f' stroke-width='3.2'%3E%3Cpath d='M50 6A72 72 0 0 1 86 68A72 72 0 0 1 50 6Z'/%3E%3Cpath d='M86 68A72 72 0 0 1 14 68A72 72 0 0 1 86 68Z'/%3E%3Cpath d='M14 68A72 72 0 0 1 50 6A72 72 0 0 1 14 68Z'/%3E%3Ccircle cx='50' cy='48' r='22' stroke='%233e4a3d' stroke-width='2.4'/%3E%3C/g%3E%3C/svg%3E");
+
+        position: relative; padding: 0 0 30px 0; margin: -20px -20px 0 -20px;
+        background-color: var(--kw-parch); background-size: cover; background-position: center 30%;
+        background-repeat: no-repeat; color: var(--kw-ink); font-family: Georgia, 'Crimson Text', serif;
+        border-radius: 4px; overflow: hidden;
     }
+    /* zdjęcie rośliny jako jasny baner u góry, łagodnie przechodzące w pergamin */
     .grimmoire-overlay {
-        position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-        background: rgba(15, 12, 10, 0.85); backdrop-filter: blur(12px); z-index: 1;
+        position: absolute; inset: 0; z-index: 1; pointer-events: none;
+        background: linear-gradient(to bottom, rgba(253,250,240,0.35) 0, rgba(253,250,240,0.82) 160px, var(--kw-parch) 340px, var(--kw-parch) 100%);
     }
-    .grimmoire-container { position: relative; z-index: 2; max-width: 900px; margin: 0 auto; }
+    .grimmoire-container { position: relative; z-index: 2; max-width: 900px; margin: 0 auto; padding: 40px 24px 0 24px; }
 
     /* NAGŁÓWEK KARTY */
-    .grimmoire-hero { text-align: center; margin-bottom: 50px; }
-    .hero-title { font-size: 4rem; margin: 0; color: #d1b880; text-shadow: 0 4px 20px rgba(209, 184, 128, 0.3); font-family: 'Playfair Display', serif; }
-    .hero-subtitle { font-size: 1.4rem; color: #a89f91; font-style: italic; margin-top: 5px; }
-    .hero-family { font-size: 1rem; color: #7a6a58; }
-    .hero-divider { width: 100px; height: 3px; background: #8a9a5b; margin: 20px auto; border-radius: 2px; }
-    .hero-desc { font-size: 1.15rem; line-height: 1.8; color: #e4dfd5; max-width: 800px; margin: 0 auto; }
+    .grimmoire-hero {
+        text-align: center; margin-bottom: 30px; padding: 28px 22px 22px 22px; position: relative;
+        background: rgba(255, 253, 247, 0.92); border: 1px solid var(--kw-line); border-radius: 6px;
+        box-shadow: 0 6px 24px rgba(62, 74, 61, 0.12);
+    }
+    .grimmoire-hero::before, .grimmoire-hero::after {
+        content: ''; position: absolute; left: 14px; right: 14px; height: 12px;
+        background: var(--kw-knot) repeat-x center / 28px 12px; opacity: 0.85;
+    }
+    .grimmoire-hero::before { top: 6px; }
+    .grimmoire-hero::after { bottom: 6px; }
+    .hero-title {
+        font-size: 3rem; margin: 6px 0 0 0; color: var(--kw-moss); font-family: 'Playfair Display', Georgia, serif;
+        font-weight: normal; letter-spacing: 0.5px; line-height: 1.15; overflow-wrap: anywhere;
+    }
+    .hero-subtitle { font-size: 1.3rem; color: var(--kw-muted); font-style: italic; margin: 6px 0 0 0; }
+    .hero-family { font-size: 1rem; font-style: normal; color: var(--kw-gold); }
+    .hero-divider {
+        width: 220px; height: 34px; margin: 14px auto;
+        background: var(--kw-triquetra) no-repeat center / 34px 30px;
+        position: relative;
+    }
+    .hero-divider::before, .hero-divider::after {
+        content: ''; position: absolute; top: 50%; width: 80px; height: 1px; background: var(--kw-line);
+    }
+    .hero-divider::before { left: 0; } .hero-divider::after { right: 0; }
+    .hero-desc { font-size: 1.12rem; line-height: 1.75; color: var(--kw-ink); max-width: 760px; margin: 0 auto; text-align: left; }
+    .compare-link { display: inline-block; margin-top: 14px; color: var(--kw-green); font-size: 0.95rem; text-decoration: underline; text-underline-offset: 3px; }
+    .compare-link:hover { color: var(--kw-gold); }
 
     /* GALERIA ZDJĘĆ */
-    .photo-credits { margin: 10px auto 0; max-width: 700px; font-size: 0.75rem; color: #a89f91; text-align: left; }
+    .photo-credits { margin: 12px auto 0; max-width: 700px; font-size: 0.8rem; color: var(--kw-muted); text-align: left; }
     .photo-credits summary { cursor: pointer; text-align: center; }
     .photo-credits ul { margin: 6px 0 0; padding-left: 18px; }
     .photo-credits li { overflow-wrap: anywhere; }
-    .photo-credits a { color: #a8c69f; }
-    .plant-gallery { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 30px; }
-    .gallery-thumb { width: 120px; height: 120px; border-radius: 8px; border: 2px solid #3e362c; overflow: hidden; position: relative; cursor: pointer; transition: all 0.3s; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
-    .gallery-thumb img { width: 100%; height: 100%; object-fit: cover; filter: sepia(0.4) brightness(0.8); transition: all 0.4s; }
-    .gallery-thumb:hover { transform: translateY(-5px) scale(1.05); border-color: #d1b880; z-index: 10; box-shadow: 0 8px 25px rgba(209, 184, 128, 0.3); }
-    .gallery-thumb:hover img { filter: sepia(0) brightness(1.1); }
-    .gallery-caption { position: absolute; bottom: 0; left: 0; width: 100%; background: rgba(18, 15, 12, 0.85); color: #d1b880; text-align: center; font-size: 0.75rem; padding: 5px 0; text-transform: uppercase; font-family: 'Playfair Display', serif; }
+    .photo-credits a { color: var(--kw-green); }
+    .plant-gallery { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 24px; }
+    .gallery-thumb {
+        width: 120px; height: 120px; border-radius: 6px; border: 1px solid var(--kw-line); overflow: hidden; position: relative;
+        cursor: pointer; transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s; background: var(--kw-paper);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 4px;
+    }
+    .gallery-thumb img { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; transition: transform 0.4s; }
+    .gallery-thumb:hover { transform: translateY(-4px); border-color: var(--kw-gold); box-shadow: 0 8px 20px rgba(62, 74, 61, 0.2); }
+    .gallery-thumb:hover img { transform: scale(1.05); }
+    .gallery-caption {
+        position: absolute; bottom: 4px; left: 4px; right: 4px; background: rgba(255, 253, 247, 0.92); color: var(--kw-moss);
+        text-align: center; font-size: 0.72rem; padding: 3px 0; text-transform: uppercase; letter-spacing: 1px; border-radius: 0 0 4px 4px;
+    }
 
     /* LIGHTBOX */
-    .lightbox-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.92); z-index: 9999; display: flex; justify-content: center; align-items: center; flex-direction: column; backdrop-filter: blur(8px); opacity: 0; pointer-events: none; transition: opacity 0.3s ease; cursor: zoom-out; }
+    .lightbox-overlay { position: fixed; inset: 0; background: rgba(30, 34, 28, 0.88); z-index: 9999; display: flex; justify-content: center; align-items: center; flex-direction: column; backdrop-filter: blur(6px); opacity: 0; pointer-events: none; transition: opacity 0.3s ease; cursor: zoom-out; }
     .lightbox-overlay.active { opacity: 1; pointer-events: auto; }
     .lightbox-content { position: relative; max-width: 90vw; max-height: 90vh; text-align: center; transform: scale(0.95); transition: transform 0.3s ease; }
     .lightbox-overlay.active .lightbox-content { transform: scale(1); }
-    .lightbox-content img { max-width: 100%; max-height: 80vh; border: 3px solid #d1b880; border-radius: 8px; box-shadow: 0 0 50px rgba(209, 184, 128, 0.2); }
-    .lightbox-caption-text { color: #d1b880; font-size: 1.5rem; font-family: 'Playfair Display', serif; margin-top: 15px; text-transform: capitalize; letter-spacing: 2px; }
+    .lightbox-content img { max-width: 100%; max-height: 80vh; border: 6px solid #fffdf7; border-radius: 4px; box-shadow: 0 10px 40px rgba(0,0,0,0.4); }
+    .lightbox-caption-text { color: #fdfaf0; font-size: 1.1rem; font-family: Georgia, serif; margin-top: 12px; letter-spacing: 0.5px; }
 
-    /* SYSTEM GŁÓWNYCH ZAKŁADEK (ACCORDION) */
-    .grimmoire-book { display: flex; flex-direction: column; gap: 15px; margin-bottom: 60px; }
-    .grimmoire-tab { background: rgba(25, 22, 18, 0.6); border: 1px solid #3e362c; border-radius: 8px; overflow: hidden; transition: all 0.3s ease; }
-    .grimmoire-tab[open] { background: rgba(30, 27, 23, 0.95); border-color: #5a4f41; box-shadow: 0 10px 30px rgba(0,0,0,0.6); }
-    .grimmoire-tab > summary { list-style: none; padding: 20px 25px; font-size: 1.4rem; color: #d1b880; cursor: pointer; display: flex; align-items: center; gap: 15px; font-family: 'Playfair Display', serif; transition: background 0.2s; }
+    /* ROZDZIAŁY (ZAKŁADKI) – jak sekcje artykułu encyklopedii */
+    .grimmoire-book { display: flex; flex-direction: column; gap: 12px; margin-bottom: 40px; }
+    .grimmoire-tab { background: var(--kw-paper); border: 1px solid var(--kw-line); border-radius: 6px; overflow: hidden; transition: box-shadow 0.25s, border-color 0.25s; }
+    .grimmoire-tab[open] { border-color: #c9bd97; box-shadow: 0 6px 20px rgba(62, 74, 61, 0.1); }
+    .grimmoire-tab > summary {
+        list-style: none; padding: 16px 22px; font-size: 1.45rem; color: var(--kw-moss); cursor: pointer;
+        display: flex; align-items: center; gap: 12px; font-family: 'Playfair Display', Georgia, serif; transition: background 0.2s;
+    }
     .grimmoire-tab > summary::-webkit-details-marker { display: none; }
-    .grimmoire-tab:not([open]) > summary:hover { background: rgba(209, 184, 128, 0.05); }
-    .grimmoire-tab[open] > summary { border-bottom: 1px solid #3e362c; color: #fdfaf0; }
-    .tab-content { padding: 25px; color: #dcd7cb; line-height: 1.7; font-size: 1.05rem; animation: slideDown 0.3s ease-out; display: flex; flex-direction: column; gap: 15px; }
-    @keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+    .grimmoire-tab > summary::after { content: '▾'; margin-left: auto; font-size: 1rem; color: var(--kw-gold); transition: transform 0.25s; }
+    .grimmoire-tab:not([open]) > summary::after { transform: rotate(-90deg); }
+    .grimmoire-tab > summary i { color: var(--kw-gold); font-size: 1.25rem; }
+    .grimmoire-tab:not([open]) > summary:hover { background: #f6f1e2; }
+    .grimmoire-tab[open] > summary { position: relative; padding-bottom: 20px; }
+    /* pod tytułem rozdziału: cienka linia jak w Wikipedii + pas plecionki */
+    .grimmoire-tab[open] > summary::before {
+        content: ''; position: absolute; left: 22px; right: 22px; bottom: 4px; height: 10px;
+        background: var(--kw-knot) repeat-x center / 24px 10px; opacity: 0.55;
+        border-top: 1px solid var(--kw-line);
+    }
+    .tab-content { padding: 18px 24px 24px 24px; color: var(--kw-ink); line-height: 1.7; font-size: 1.05rem; animation: slideDown 0.25s ease-out; display: flex; flex-direction: column; gap: 12px; }
+    @keyframes slideDown { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
 
-    /* NOWOŚĆ: PODZAKŁADKI (SUB-ACCORDION) */
-    .grimmoire-subtab { background: rgba(0, 0, 0, 0.3); border-left: 3px solid #8a9a5b; border-radius: 0 6px 6px 0; overflow: hidden; transition: all 0.3s ease; }
-    .grimmoire-subtab[open] { background: rgba(0, 0, 0, 0.5); border-color: #d1b880; }
-    .grimmoire-subtab > summary { list-style: none; padding: 15px 20px; font-size: 1.15rem; color: #8a9a5b; cursor: pointer; display: flex; align-items: center; gap: 12px; font-family: 'Playfair Display', serif; transition: all 0.2s; }
+    /* PODROZDZIAŁY */
+    .grimmoire-subtab { background: #fbf8ef; border: 1px solid var(--kw-line-soft); border-left: 3px solid var(--kw-sage); border-radius: 0 6px 6px 0; overflow: hidden; }
+    .grimmoire-subtab[open] { background: #fffdf8; border-left-color: var(--kw-gold); }
+    .grimmoire-subtab > summary {
+        list-style: none; padding: 12px 18px; font-size: 1.15rem; color: var(--kw-green); cursor: pointer;
+        display: flex; align-items: center; gap: 10px; font-family: Georgia, serif; transition: background 0.2s, color 0.2s;
+    }
     .grimmoire-subtab > summary::-webkit-details-marker { display: none; }
-    .grimmoire-subtab:not([open]) > summary:hover { background: rgba(138, 154, 91, 0.1); color: #d1b880; }
-    .grimmoire-subtab[open] > summary { border-bottom: 1px dashed #3e362c; color: #fdfaf0; }
-    .subtab-content { padding: 20px; animation: slideDown 0.3s ease-out; }
+    .grimmoire-subtab:not([open]) > summary:hover { background: #f3eedd; color: var(--kw-moss); }
+    .grimmoire-subtab[open] > summary { border-bottom: 1px solid var(--kw-line-soft); color: var(--kw-moss); }
+    .grimmoire-subtab > summary i { color: var(--kw-sage); }
+    .subtab-content { padding: 16px 18px; animation: slideDown 0.25s ease-out; }
 
     /* ZAGROŻENIA I OSTRZEŻENIA */
-    .danger-tab[open] { border-color: #9b4b4b; }
-    .danger-tab[open] > summary { color: #e57373; }
-    .danger-subtab { border-left-color: #9b4b4b; }
-    .danger-subtab[open] { border-left-color: #e57373; }
-    .danger-subtab > summary { color: #e57373; }
-    .danger-subtab:not([open]) > summary:hover { background: rgba(155, 75, 75, 0.1); color: #ff8a80; }
-    .danger-block p { margin: 0; color: #ffcdd2; }
-    .warning-box { background: rgba(155, 75, 75, 0.1); padding: 15px; border-radius: 4px; }
+    .danger-tab[open] { border-color: #d9a9a3; }
+    .danger-tab > summary, .danger-tab > summary i { color: var(--kw-red); }
+    .danger-subtab { border-left-color: var(--kw-red); }
+    .danger-subtab[open] { border-left-color: var(--kw-red); }
+    .danger-subtab > summary, .danger-subtab > summary i { color: var(--kw-red); }
+    .danger-subtab:not([open]) > summary:hover { background: var(--kw-red-bg); color: #7a1f1f; }
+    .danger-block { background: var(--kw-red-bg); border-left: 3px solid var(--kw-red); border-radius: 0 4px 4px 0; }
+    .danger-block p { margin: 0; color: #5c1d1d; }
+    .warning-box { background: var(--kw-red-bg); padding: 14px; border-radius: 4px; color: #5c1d1d; }
 
     /* WNĘTRZA PODZAKŁADEK */
     .sub-list { padding-left: 20px; margin-bottom: 0; }
-    .sub-list li { margin-bottom: 8px; }
-    .energy-quote { margin-top: 15px; padding-top: 15px; border-top: 1px dashed #3e362c; font-style: italic; color: #a89f91; }
+    .sub-list li { margin-bottom: 6px; }
+    .sub-list li::marker, .feature-list li::marker { color: var(--kw-gold); }
+    .sub-list strong { color: var(--kw-moss); }
+    .energy-quote { margin-top: 14px; padding: 10px 14px; border-left: 3px solid var(--kw-gold); background: #f8f3e3; font-style: italic; color: var(--kw-muted); border-radius: 0 4px 4px 0; }
 
     /* SUROWCE */
-    .subtab-title-group { display: flex; align-items: center; gap: 10px; width: 100%; }
-    .part-badge { background: #8a9a5b; color: #120f0c; padding: 2px 10px; font-size: 0.75rem; font-weight: bold; border-radius: 4px; text-transform: uppercase; margin-left: auto; font-family: 'Georgia', serif;}
-    .part-desc { font-size: 0.95rem; color: #a89f91; margin-bottom: 15px; margin-top: 0; }
-    .chem-tags { display: flex; flex-wrap: wrap; gap: 8px; }
-    .chem-link { display: inline-block; line-height: 1.5; background: rgba(138, 154, 91, 0.1); border: 1px solid #8a9a5b; color: #cddc39; padding: 4px 10px; font-size: 0.85rem; border-radius: 4px; text-decoration: none; transition: all 0.2s; }
-    .chem-link i { font-size: 0.75rem; color: #8a9a5b; }
-    .chem-link:hover { background: #8a9a5b; color: #120f0c; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.3); text-decoration: none; }
-    .chem-link:hover i { color: #120f0c; }
-    .part-warning { color: #e57373; font-size: 0.9rem; margin-top: 15px; padding-top: 10px; border-top: 1px dashed #3e362c; }
-    .part-time { margin-top: 15px; text-align: right; font-size: 0.9rem; color: #8a9a5b; }
+    .subtab-title-group { display: flex; align-items: center; gap: 10px; width: 100%; flex-wrap: wrap; }
+    .part-badge { background: #e7eddb; color: var(--kw-green); border: 1px solid #c4cfaa; padding: 1px 10px; font-size: 0.75rem; font-weight: bold; border-radius: 10px; text-transform: uppercase; margin-left: auto; font-family: Georgia, serif; letter-spacing: 0.5px; }
+    .part-desc { font-size: 0.97rem; color: var(--kw-muted); margin-bottom: 12px; margin-top: 0; font-style: italic; }
+    .chem-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+    .chem-link { display: inline-block; line-height: 1.5; background: #f2f5ea; border: 1px solid #c4cfaa; color: var(--kw-green); padding: 4px 10px; font-size: 0.9rem; border-radius: 4px; text-decoration: none; transition: border-color 0.2s, box-shadow 0.2s; }
+    .chem-link i { font-size: 0.75rem; color: var(--kw-sage); }
+    .chem-link:hover { border-color: var(--kw-gold); box-shadow: 0 2px 8px rgba(154, 123, 47, 0.18); text-decoration: none; }
+    .part-warning { color: var(--kw-red); font-size: 0.93rem; margin-top: 14px; padding: 8px 12px; background: var(--kw-red-bg); border-radius: 4px; }
+    .part-time { margin-top: 12px; text-align: right; font-size: 0.93rem; color: var(--kw-green); }
 
     /* KALENDARZ & GILDIE */
-    .task-item { border-bottom: 1px dashed #3e362c; padding-bottom: 15px; margin-bottom: 15px; }
+    .task-item { border-bottom: 1px solid var(--kw-line-soft); padding-bottom: 12px; margin-bottom: 12px; }
     .task-item:last-child { border: none; margin-bottom: 0; padding-bottom: 0; }
-    .task-head { display: flex; justify-content: space-between; color: #d1b880; margin-bottom: 5px; }
-    .task-month { font-size: 0.8rem; background: #3e362c; padding: 2px 8px; border-radius: 4px; }
-    .task-desc { font-size: 0.95rem; margin-bottom: 10px; }
-    .task-meta span { display: inline-block; font-size: 0.85rem; color: #a89f91; margin-right: 15px; }
+    .task-head { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; color: var(--kw-moss); margin-bottom: 4px; }
+    .task-month { font-size: 0.8rem; background: #efe8d3; color: var(--kw-moss); padding: 2px 8px; border-radius: 4px; }
+    .task-desc { font-size: 0.97rem; margin-bottom: 8px; }
+    .task-meta span { display: inline-block; font-size: 0.87rem; color: var(--kw-muted); margin-right: 15px; }
 
     .eco-list { list-style: none; padding: 0; margin-bottom: 0; }
     .eco-list li { margin-bottom: 8px; display: flex; gap: 10px; align-items: flex-start; }
-    .eco-list li i { color: #8a9a5b; margin-top: 4px; }
+    .eco-list li i { color: var(--kw-sage); margin-top: 4px; }
 
-    .guild-list { display: flex; flex-direction: column; gap: 12px; }
-    .guild-item { background: rgba(0,0,0,0.2); border: 1px solid #3e362c; padding: 12px 15px; border-radius: 6px; }
-    .guild-link { color: #d1b880; font-weight: bold; text-decoration: none; font-family: 'Playfair Display', serif; font-size: 1.15rem; transition: color 0.2s; display: inline-flex; align-items: center; gap: 8px; }
-    .guild-link i { font-size: 1rem; color: #8a9a5b; }
-    .guild-link:hover { color: #fdfaf0; text-shadow: 0 0 8px rgba(209, 184, 128, 0.4); text-decoration: none; }
-    .guild-role { color: #a89f91; font-size: 0.95rem; margin: 5px 0 0 0; }
+    .guild-list { display: flex; flex-direction: column; gap: 10px; }
+    .guild-item { background: #fbf8ef; border: 1px solid var(--kw-line-soft); padding: 10px 14px; border-radius: 6px; }
+    .guild-link { color: var(--kw-green); font-weight: bold; text-decoration: none; font-family: Georgia, serif; font-size: 1.12rem; display: inline-flex; align-items: center; gap: 8px; }
+    .guild-link i { font-size: 1rem; color: var(--kw-sage); }
+    .guild-link:hover { color: var(--kw-gold); text-decoration: underline; }
+    .guild-role { color: var(--kw-muted); font-size: 0.95rem; margin: 4px 0 0 0; }
 
     .trivia-list { list-style: none; padding: 0; margin: 0; }
-    .trivia-list li { margin-bottom: 15px; padding-left: 25px; position: relative; }
-    .trivia-list li i { position: absolute; left: 0; top: 4px; color: #8a9a5b; }
+    .trivia-list li { margin-bottom: 12px; padding-left: 26px; position: relative; }
+    .trivia-list li i { position: absolute; left: 0; top: 4px; color: var(--kw-gold); }
+
+    /* ARCHIWUM KWIATOWNIKA */
+    .arch-dl { margin: 0; }
+    .arch-dl dt { color: var(--kw-moss); font-weight: bold; margin-top: 8px; }
+    .arch-dl dd { margin: 2px 0 0 12px; }
+    .arch-list { margin: 4px 0; padding-left: 18px; }
+    .arch-link, .arch-bib a { color: var(--kw-green); font-size: 0.88em; word-break: break-all; }
+    .arch-src { font-size: 0.88em; color: var(--kw-muted); }
+
+    /* WIEDZA Z SIECI WMONTOWANA W ROZDZIAŁY (blok "scalone") */
+    .merged-text .web-ref { font-size: 0.7em; }
+    .web-part-badge { background: #e8f0fa; border-color: #a9c3e4; color: #24548c; }
+    .orig-text { margin: 6px 0 0; font-size: 0.88em; color: var(--kw-muted); }
+    .orig-text summary { cursor: pointer; font-style: italic; }
+    .orig-text p { margin: 4px 0 0; padding-left: 10px; border-left: 2px solid var(--kw-line); overflow-wrap: anywhere; }
+
+    /* WIEDZA Z SIECI (Siedziba Kwiatownika) */
+    .web-note { font-size: 0.88em; color: var(--kw-muted); font-style: italic; margin-bottom: 10px; }
+    .web-facts { margin: 0; padding-left: 18px; }
+    .web-facts li { margin-bottom: 8px; overflow-wrap: anywhere; }
+    .web-part { color: var(--kw-muted); font-size: 0.9em; }
+    .web-src { color: var(--kw-green); font-size: 0.8em; margin-left: 4px; white-space: nowrap; }
+    .web-summary { margin: 0 0 10px; padding: 8px 12px; border-left: 3px solid var(--kw-gold); background: #f8f3e3; overflow-wrap: anywhere; border-radius: 0 4px 4px 0; }
+    .web-parts { font-size: 0.9em; color: var(--kw-muted); margin-bottom: 10px; line-height: 1.9; }
+    .web-chip { display: inline-block; padding: 0 8px; margin: 0 4px 2px 0; border: 1px solid #c4cfaa; background: #f2f5ea; border-radius: 10px; font-size: 0.8em; color: var(--kw-green); white-space: nowrap; }
+    /* przypisy [n] – jak w Wikipedii */
+    .web-ref { color: #2c5fa0; font-size: 0.75em; vertical-align: super; margin-left: 1px; text-decoration: none; }
+    .web-ref:hover { text-decoration: underline; }
+    .web-sources { padding-left: 24px; }
+    .web-sources li { margin-bottom: 4px; overflow-wrap: anywhere; }
+    .web-sources a { color: #2c5fa0; font-size: 0.9em; }
+    .web-lang { color: var(--kw-muted); font-size: 0.8em; }
+
+    /* linki w treści */
+    .grimmoire-book a:not(.guild-link):not(.chem-link):not(.web-ref) { color: var(--kw-green); }
+
+    /* TELEFONY I TABLETY */
+    @media (max-width: 768px) {
+        .grimmoire-wrapper { margin: -20px -12px 0 -12px; }
+        .grimmoire-container { padding: 24px 12px 0 12px; }
+        .grimmoire-hero { padding: 24px 14px 20px 14px; }
+        .hero-title { font-size: 2.1rem; }
+        .hero-subtitle { font-size: 1.1rem; }
+        .hero-desc { font-size: 1.02rem; }
+        .grimmoire-tab > summary { font-size: 1.2rem; padding: 14px 16px; }
+        .grimmoire-tab[open] > summary::before { left: 16px; right: 16px; }
+        .tab-content { padding: 14px 14px 18px 14px; font-size: 1rem; }
+        .subtab-content { padding: 12px; }
+        .plant-gallery { gap: 8px; }
+        .gallery-thumb { width: 88px; height: 88px; padding: 3px; }
+        .gallery-caption { font-size: 0.62rem; letter-spacing: 0.5px; }
+        .part-badge { margin-left: 0; }
+    }
+    @media (max-width: 600px) { .web-summary { padding: 6px 8px; } .web-facts { padding-left: 14px; } }
+    @media (prefers-reduced-motion: reduce) { .tab-content, .subtab-content { animation: none; } }
 </style>
 
 <script>

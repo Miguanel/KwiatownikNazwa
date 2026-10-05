@@ -56,3 +56,13 @@
 @media (prefers-reduced-motion: reduce) {
     .kw-wiki-tip, .kw-wiki-spinner { animation: none; }
 }
+
+/* Mały znaczek „W” obok nazwy (np. nagłówki porównywarki) */
+.kw-wiki-badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 20px; height: 20px; border-radius: 50%;
+    border: 1px solid #8a7a58; color: #6d5c3d; background: #fdfaf0;
+    font-family: Georgia, serif; font-size: 12px; font-weight: bold;
+    text-decoration: none !important; vertical-align: middle; line-height: 1;
+}
+.kw-wiki-badge:hover, .kw-wiki-badge.kw-wiki-active { background: #3e4a3d; color: #fdfaf0; border-color: #3e4a3d; }
