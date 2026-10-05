@@ -148,6 +148,8 @@
         #favoritesDropdownMenu .dropdown-item:hover { background-color: #e0dcd3 !important; color: #2d5a27 !important; }
         #favoritesDropdownMenu .dropdown-header { color: #8a9a5b !important; font-weight: bold; border-bottom: 1px dashed #d1c7a7; }
     </style>
+    <!-- Wspólny styl: pergamin + zdobienia celtyckie (po stylach strony, żeby je ujednolicić) -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/celtic.css') }}">
 
 </head>
 <body>
@@ -213,7 +215,7 @@
             <div class="astro-item"><i class="ra ra-fire"></i><div><span class="astro-label">Żywioł:</span><span class="astro-value">{{ astro.element if astro else 'Haj' }}</span></div></div>
             <div class="astro-item"><i class="ra ra-crystal-ball"></i><div><span class="astro-label">Wibracja:</span><span class="astro-value" data-astro="numerology">{{ astro.numerology if astro else '0' }}</span></div></div>
             <div class="astro-item"><i class="ra ra-dragon"></i><div><span class="astro-label">Patron Roku:</span><span class="astro-value" data-astro="japanese">{{ astro.japanese if astro else 'Langusta' }}</span></div></div>
-            <div class="astro-item" style="margin-right:0;"><i class="ra ra-trefoil"></i><div><span class="astro-label">Koło Roku:</span><span class="astro-value">{{ astro.festival if astro else 'Fest' }}</span></div></div>
+            <div class="astro-item" style="margin-right:0;"><i class="ra ra-trefoil"></i><div><span class="astro-label">Koło Roku:</span><span class="astro-value"{% if astro and astro.festival_desc %} title="Stary Czas: {{ astro.festival_desc }} · Symbol: {{ astro.festival_symbol }} · Tradycja: {{ astro.festival_action }}"{% endif %}>{{ astro.festival if astro else 'Fest' }}</span></div></div>
         </div>
     </div>
 
@@ -253,24 +255,12 @@
         <span class="frozen-modal-close" onclick="closeFrozenModal()">&times;</span>
         <h4 style="color: #3e4a3d; margin-bottom: 15px;"><i class="ra ra-parchment"></i> Funkcja wstrzymana</h4>
         <p style="font-size: 0.95rem; color: #5a4f41;">Aby aplikacja mogła być dostępna za darmo i działać błyskawicznie, przeszliśmy na wersję statyczną. Moduł logowania i komentarzy jest obecnie wyłączony.</p>
-        <a href="https://buycoffee.to/miguana" target="_blank" class="btn mt-3 fw-bold" style="background-color: #3a2b21; border: 1px solid #5a4b3a; color: #d1b880; padding: 8px 16px; font-size: 0.9rem;">
+        <a href="https://buycoffee.to/miguana" target="_blank" class="btn mt-3 fw-bold" style="background-color: #3e4a3d; border: 1px solid #3e4a3d; color: #fdfaf0; padding: 8px 16px; font-size: 0.9rem;">
             <i class="ra ra-beer"></i> Postaw Kufel Kawy
         </a>
     </div>
 </div>
 
-<div class="astro-item" style="margin-right:0;">
-    <i class="ra ra-trefoil"></i>
-    <div>
-        <span class="astro-label">Koło Roku:</span>
-        <span class="astro-value"
-              data-bs-toggle="tooltip"
-              data-bs-html="true"
-              title="<b>Stary Czas:</b> {{ astro.festival_desc }}<br><b>Symbol:</b> {{ astro.festival_symbol }}<br><b>Tradycja:</b> {{ astro.festival_action }}">
-            {{ astro.festival }}
-        </span>
-    </div>
-</div>
 
 <script>
     function setupInfiniteScroller(wrapperId, speed) {

@@ -1,0 +1,152 @@
+/* =====================================================================
+   KWIATOWNIK – WSPÓLNY STYL „ENCYKLOPEDYCZNY Z CELTYCKIM ZDOBIENIEM”
+   (ten sam klimat co strona rośliny: pergamin, szeryfowe nagłówki z cienką linią jak w Wikipedii,
+   zieleń mchu i złoto, plecionka i triquetra jako ozdobniki). Ładowany w base.html po stylach strony.
+   ===================================================================== */
+:root {
+    --kw-parch: #fdfaf0; --kw-paper: #fffdf7; --kw-bg: #f4f1ea; --kw-ink: #2b2b2b; --kw-muted: #6b6255;
+    --kw-moss: #3e4a3d; --kw-green: #2d5a27; --kw-sage: #8a9a5b; --kw-gold: #9a7b2f; --kw-gold-light: #d1b880;
+    --kw-line: #d8cfb4; --kw-line-soft: #ebe4cf; --kw-red: #9b2c2c; --kw-red-bg: #fbf0ee;
+    --kw-knot: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='12' viewBox='0 0 28 12'%3E%3Cg fill='none' stroke-width='1.6' stroke-linecap='round'%3E%3Cpath d='M0 6C4.7 0 9.3 0 14 6S23.3 12 28 6' stroke='%239a7b2f'/%3E%3Cpath d='M0 6C4.7 12 9.3 12 14 6S23.3 0 28 6' stroke='%233e4a3d'/%3E%3C/g%3E%3C/svg%3E");
+    --kw-knot-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='12' viewBox='0 0 28 12'%3E%3Cg fill='none' stroke-width='1.6' stroke-linecap='round'%3E%3Cpath d='M0 6C4.7 0 9.3 0 14 6S23.3 12 28 6' stroke='%23d1b880'/%3E%3Cpath d='M0 6C4.7 12 9.3 12 14 6S23.3 0 28 6' stroke='%238a9a5b'/%3E%3C/g%3E%3C/svg%3E");
+    --kw-triquetra: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 90'%3E%3Cg fill='none' stroke='%239a7b2f' stroke-width='3.2'%3E%3Cpath d='M50 6A72 72 0 0 1 86 68A72 72 0 0 1 50 6Z'/%3E%3Cpath d='M86 68A72 72 0 0 1 14 68A72 72 0 0 1 86 68Z'/%3E%3Cpath d='M14 68A72 72 0 0 1 50 6A72 72 0 0 1 14 68Z'/%3E%3Ccircle cx='50' cy='48' r='22' stroke='%233e4a3d' stroke-width='2.4'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+body {
+    background-color: var(--kw-bg);
+    background-image: radial-gradient(ellipse at top, rgba(255, 253, 247, 0.9), rgba(244, 241, 234, 0) 60%);
+    background-attachment: fixed;
+    color: var(--kw-ink);
+}
+
+/* ---------- NAGŁÓWEK: menu, pasek almanachu, ciekawostki ---------- */
+.main-header { box-shadow: 0 4px 14px rgba(62, 74, 61, 0.18); }
+.main-header nav { background-color: var(--kw-moss); border-bottom: none; }
+.main-header .navbar-brand { font-family: 'Playfair Display', Georgia, serif; font-size: 1.25rem; letter-spacing: 0.5px; }
+
+.astro-ribbon {
+    background-color: var(--kw-parch);
+    color: var(--kw-moss);
+    border-top: 1px solid #56634f;
+    border-bottom: 1px solid var(--kw-line);
+}
+.astro-ribbon .astro-label { color: var(--kw-muted); }
+.astro-ribbon .astro-value { color: var(--kw-moss); }
+.astro-ribbon .astro-item i { color: var(--kw-gold); }
+
+.marquee-wrapper {
+    background-color: #f3ecd8;
+    color: var(--kw-muted);
+    border-bottom: none;
+    position: relative;
+    padding-bottom: 14px;
+}
+.marquee-wrapper .marquee-item strong { color: var(--kw-moss); }
+.marquee-wrapper .marquee-item i { color: var(--kw-gold); }
+/* pas plecionki pod całym nagłówkiem */
+.marquee-wrapper::after {
+    content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 10px;
+    background: var(--kw-knot) repeat-x center / 24px 10px; opacity: 0.7;
+    border-top: 1px solid var(--kw-line); pointer-events: none;
+}
+
+/* ---------- GŁÓWNA KARTA TREŚCI ---------- */
+body > .container {
+    background: var(--kw-paper);
+    border: 1px solid var(--kw-line);
+    border-radius: 6px;
+    box-shadow: 0 6px 24px rgba(62, 74, 61, 0.1);
+    position: relative;
+}
+/* podwójna ramka „karty z księgi” (styl.css) w kolorze linii */
+body > .container::before { border-color: var(--kw-line-soft); border-radius: 4px; }
+
+/* ---------- NAGŁÓWKI: jak w encyklopedii + triquetra ---------- */
+.container h1, .container h2, .container h3 { font-family: 'Playfair Display', Georgia, serif; color: var(--kw-moss); }
+.container h1 { font-weight: normal; letter-spacing: 0.3px; }
+.container > h1:first-child::after,
+.container > div > h1:first-child::after,
+.container > section > h1:first-child::after,
+.kw-ornament {
+    content: ''; display: block; width: 220px; max-width: 70%; height: 30px; margin: 10px auto 4px auto;
+    background:
+        var(--kw-triquetra) no-repeat center / 30px 27px,
+        linear-gradient(var(--kw-line), var(--kw-line)) no-repeat left center / 38% 1px,
+        linear-gradient(var(--kw-line), var(--kw-line)) no-repeat right center / 38% 1px;
+}
+.container h2 { border-bottom: 1px solid var(--kw-line); padding-bottom: 6px; }
+.container h3 { font-weight: normal; }
+.section-title, .bestiary-header {
+    font-family: 'Playfair Display', Georgia, serif !important; color: var(--kw-moss); font-weight: normal;
+    position: relative; padding-bottom: 14px !important; border-bottom: none !important;
+}
+.section-title::after, .bestiary-header::after {
+    content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 10px;
+    background: var(--kw-knot) repeat-x center / 24px 10px; opacity: 0.55; border-top: 1px solid var(--kw-line);
+}
+
+/* linki w treści */
+.container a:not(.btn):not(.nav-link):not(.dropdown-item):not(.witcher-card):not(.mini-card):not(.task-card):not(.kw-plant-chip):not(.guild-link):not(.chem-link) { color: var(--kw-green); }
+.container a:not(.btn):not(.nav-link):not(.dropdown-item):not(.witcher-card):not(.mini-card):not(.task-card):not(.kw-plant-chip):not(.guild-link):not(.chem-link):hover { color: var(--kw-gold); }
+
+/* ---------- FORMULARZE ---------- */
+.container .form-control, .container .form-select, .container .retro-input,
+.container input[type="text"], .container input[type="number"], .container input[type="search"], .container textarea, .container select {
+    background-color: var(--kw-paper);
+    border-color: var(--kw-line);
+    color: var(--kw-ink);
+}
+.container .form-control:focus, .container .form-select:focus, .container .retro-input:focus,
+.container input:focus, .container textarea:focus, .container select:focus {
+    border-color: var(--kw-gold);
+    box-shadow: 0 0 0 3px rgba(154, 123, 47, 0.18);
+    outline: none;
+}
+.btn-green, .compare-btn {
+    background-color: var(--kw-moss) !important; color: var(--kw-parch) !important; border: 1px solid var(--kw-moss) !important;
+    border-radius: 4px !important; transition: background 0.2s;
+}
+.btn-green:hover, .compare-btn:hover { background-color: var(--kw-green) !important; }
+
+/* ---------- TABELE (jak tabele w Wikipedii) ---------- */
+.container table.table { background: var(--kw-paper); border: 1px solid var(--kw-line); --bs-table-bg: transparent; }
+.container table.table > :not(caption) > * > * { border-color: var(--kw-line-soft); }
+.container table.table thead th { background: #efe8d3; color: var(--kw-moss); border-bottom: 1px solid var(--kw-line); }
+
+/* ---------- MODALE ---------- */
+.modal-content {
+    background-color: var(--kw-parch);
+    border: 1px solid var(--kw-line);
+    border-radius: 6px;
+    box-shadow: 0 16px 40px rgba(30, 34, 28, 0.25);
+}
+.modal-header { position: relative; border-bottom: 1px solid var(--kw-line); padding-bottom: 18px; }
+.modal-header::after {
+    content: ''; position: absolute; left: 16px; right: 16px; bottom: 3px; height: 10px;
+    background: var(--kw-knot) repeat-x center / 24px 10px; opacity: 0.5; pointer-events: none;
+}
+.modal-title { font-family: 'Playfair Display', Georgia, serif; color: var(--kw-moss); }
+.frozen-modal-content { background-color: var(--kw-parch); border: 1px solid var(--kw-moss); border-radius: 6px; }
+
+/* ---------- STOPKA ---------- */
+footer {
+    position: relative; color: var(--kw-muted); border-top: none; padding-top: 44px; margin-top: 30px;
+}
+footer::before {
+    content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+    width: 260px; max-width: 80%; height: 30px;
+    background:
+        var(--kw-triquetra) no-repeat center / 28px 25px,
+        var(--kw-knot) repeat-x left center / 24px 10px;
+    -webkit-mask: linear-gradient(90deg, transparent, #000 25%, #000 75%, transparent);
+            mask: linear-gradient(90deg, transparent, #000 25%, #000 75%, transparent);
+    opacity: 0.8;
+}
+footer i { color: var(--kw-gold); }
+
+/* ---------- TELEFONY ---------- */
+@media (max-width: 768px) {
+    body > .container { border-radius: 0; box-shadow: none; border-left: 0; border-right: 0; }
+    .container > h1:first-child::after, .container > div > h1:first-child::after, .container > section > h1:first-child::after { width: 160px; }
+}
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }

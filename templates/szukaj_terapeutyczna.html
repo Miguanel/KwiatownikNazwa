@@ -1,81 +1,96 @@
+{% extends "base.html" %}
+{% block title %}Wyszukiwarka terapeutyczna – przepisy według dolegliwości | Kwiatownik{% endblock %}
+{% block meta_description %}Wpisz objaw lub dolegliwość (np. kaszel, gardło, trawienie), a Kwiatownik pokaże receptury zielarskie, które mogą pomóc.{% endblock %}
+
+{% block content %}
+<div class="thera-page">
+    <h1 class="thera-title">Wyszukiwarka terapeutyczna</h1>
+    <p class="thera-lead">Wpisz objaw albo dolegliwość, a pokażemy receptury z Księgi Przepisów, które się do nich odnoszą.</p>
+
+    <form id="searchForm" class="thera-form" role="search">
+        <input type="search" id="searchInput" class="form-control" value="{{ query or '' }}"
+               placeholder="Np. kaszel, gardło, trawienie, rany…" aria-label="Objaw lub dolegliwość" autocomplete="off">
+        <button type="submit" class="btn-green">Szukaj</button>
+    </form>
+
+    {% if suggestions %}
+    <div class="thera-suggest" aria-label="Przykładowe hasła">
+        {% for s in suggestions[:14] %}<button type="button" class="thera-chip" data-q="{{ s }}">{{ s }}</button>{% endfor %}
+    </div>
+    {% endif %}
+
+    <div id="resultsContainer" class="thera-results" data-wiki-scan aria-live="polite"></div>
+    <p class="text-muted small mt-4">Informacje mają charakter edukacyjny i nie zastępują porady lekarza ani farmaceuty.</p>
+</div>
+
+<style>
+    .thera-page { text-align: center; }
+    .thera-lead { color: #6b6255; font-style: italic; font-size: 1.1rem; }
+    .thera-form { display: flex; gap: 10px; max-width: 640px; margin: 24px auto 12px auto; }
+    .thera-form .form-control { font-size: 1.1rem; padding: 12px 14px; margin: 0; }
+    .thera-form .btn-green { padding: 0 26px; }
+    .thera-suggest { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin-bottom: 20px; }
+    .thera-chip { background: #fffdf7; border: 1px solid #d8cfb4; color: #3e4a3d; border-radius: 14px; padding: 2px 12px; font-family: inherit; cursor: pointer; }
+    .thera-chip:hover { background: #3e4a3d; color: #fdfaf0; border-color: #3e4a3d; }
+    .thera-results { text-align: left; display: grid; gap: 14px; margin-top: 10px; }
+    .thera-results h3 { margin: 10px 0 4px 0; }
+    .thera-card { display: block; background: #fffdf7; border: 1px solid #d8cfb4; border-left: 5px solid #3e4a3d; border-radius: 6px; padding: 16px 18px; color: inherit !important; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; }
+    .thera-card:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(62, 74, 61, 0.12); }
+    .thera-card.med { border-left-color: #9b2c2c; }
+    .thera-card h4 { margin: 0 0 4px 0; color: #3e4a3d; font-family: 'Playfair Display', Georgia, serif; font-size: 1.2rem; }
+    .thera-meta { font-size: 0.92rem; color: #6b6255; margin: 0 0 8px 0; }
+    .thera-tag { display: inline-block; background: #f2f5ea; color: #2d5a27; border: 1px solid #c4cfaa; padding: 1px 8px; border-radius: 10px; font-size: 0.8rem; margin: 0 4px 4px 0; }
+    .thera-empty { text-align: center; color: #6b6255; margin-top: 20px; }
+    @media (max-width: 576px) { .thera-form { flex-direction: column; } .thera-form .btn-green { padding: 10px; } }
+</style>
+
 <script>
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("searchForm");
     const input = document.getElementById("searchInput");
-    const resultsContainer = document.getElementById("resultsContainer");
-    
-    let recipesData = [];
+    const out = document.getElementById("resultsContainer");
+    const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
+    const flat = v => v == null ? '' : Array.isArray(v) ? v.map(flat).join(' ') : (typeof v === 'object' ? Object.values(v).map(flat).join(' ') : String(v));
+    const norm = s => String(s).toLowerCase().replace(/[ąćęłńóśźż]/g, m => ({'ą':'a','ć':'c','ę':'e','ł':'l','ń':'n','ó':'o','ś':'s','ź':'z','ż':'z'}[m]));
+    let recipes = null;
 
-    // Pobieramy naszą bazę PRZEPISÓW
-    fetch("{{ url_for('api.api_all_recipes') }}")
-        .then(response => response.json())
-        .then(data => {
-            recipesData = data;
-            console.log("Baza przepisów załadowana! Liczba receptur: ", recipesData.length);
-        })
-        .catch(error => {
-            console.error("Błąd ładowania bazy przepisów:", error);
-            resultsContainer.innerHTML = '<p style="color: red; text-align: center;">Błąd ładowania bazy danych. Odśwież stronę.</p>';
+    // baza przepisów (w wersji statycznej to plik JSON zapisany przy budowaniu strony)
+    const ready = fetch("{{ url_for('api.api_all_recipes') }}")
+        .then(r => r.json())
+        .then(data => { recipes = Array.isArray(data) ? data : (data.przepisy || []); })
+        .catch(() => { out.innerHTML = '<p class="thera-empty">Nie udało się wczytać bazy przepisów. Odśwież stronę.</p>'; });
+
+    async function run(query) {
+        query = query.trim();
+        if (!query) return;
+        await ready;
+        if (!recipes) return;
+        const words = norm(query).split(/\s+/).filter(Boolean);
+        const results = recipes.filter(r => {
+            const area = norm([r.tytul, r.roslina, r.tagi, r.zastosowanie, r.opis, r.skladniki, r.stosowanie_i_dawkowanie,
+                               r.klasyfikacja_dzialania, r.sposob_przygotowania].map(flat).join(' '));
+            return words.every(w => area.includes(w));
         });
-
-    form.addEventListener("submit", (e) => {
-        e.preventDefault(); 
-        
-        const query = input.value.toLowerCase().trim();
-        if(!query) return;
-
-        resultsContainer.innerHTML = '<p style="text-align: center; color: #666;">Szukam przepisów...</p>';
-        
-        // Szukamy w tytule, tagach, składnikach i nazwie rośliny
-        const results = recipesData.filter(recipe => {
-            const searchArea = `
-                ${recipe.tytul || ''} 
-                ${recipe.tagi ? recipe.tagi.join(' ') : ''} 
-                ${recipe.skladniki ? recipe.skladniki.join(' ') : ''}
-                ${recipe.roslina || ''}
-            `.toLowerCase();
-            return searchArea.includes(query);
+        let html = `<h3>Receptury dla: „${esc(query)}” <small class="text-muted">(${results.length})</small></h3>`;
+        if (!results.length) html += '<p class="thera-empty">Nie znaleziono receptur dla tego hasła – spróbuj innego słowa.</p>';
+        results.slice(0, 60).forEach(r => {
+            const med = /medy/i.test(r.typ || '');
+            const tags = (Array.isArray(r.tagi) ? r.tagi : []).slice(0, 6).map(t => `<span class="thera-tag">#${esc(t)}</span>`).join('');
+            const plant = r.roslina || (Array.isArray(r.skladniki) ? r.skladniki.map(s => typeof s === 'object' ? s.nazwa : s).slice(0, 2).join(', ') : '');
+            html += `<a class="thera-card ${med ? 'med' : ''}" href="/przepisy/?q=${encodeURIComponent(r.tytul || '')}&autoopen=true">
+                <h4>${esc(r.tytul)}</h4>
+                <p class="thera-meta">${plant ? `<strong>Składnik:</strong> ${esc(plant)}` : ''}${r.typ ? ` · ${esc(String(r.typ).replace(/_/g, ' '))}` : ''}</p>
+                <div>${tags}</div>
+            </a>`;
         });
+        out.innerHTML = html;
+        try { history.replaceState(null, '', location.pathname + '?query=' + encodeURIComponent(query)); } catch (e) { /* bez znaczenia */ }
+    }
 
-        resultsContainer.innerHTML = `<h3 style="margin-bottom: 20px;">Znalezione receptury dla: "${query}"</h3><div style="display: grid; gap: 15px;"></div>`;
-        const listContainer = resultsContainer.querySelector('div');
-
-        if(results.length === 0) {
-            resultsContainer.innerHTML += '<p style="text-align: center; color: #999; margin-top: 30px;">Nie znaleziono przepisów odpowiadających temu hasłu.</p>';
-            return;
-        }
-
-        // Rysowanie kart PRZEPISÓW
-        results.forEach(recipe => {
-            // Bezpieczne sprawdzanie właściwości
-            const typeColor = recipe.typ === 'medyczne' ? '#8b0000' : '#d4a017';
-            const typeIcon = recipe.typ === 'medyczne' ? 'bi-bandaid' : 'bi-cup-hot';
-            const tagsHtml = recipe.tagi 
-                ? recipe.tagi.map(t => `<span style="background: #e9f0e8; color: #2d5a27; padding: 3px 8px; border-radius: 12px; font-size: 0.75rem; margin-right: 5px;">#${t}</span>`).join('') 
-                : '';
-            
-            // Link kieruje do opisu rośliny, z której pochodzi przepis
-            const plantUrl = `../plant/${recipe.slug}/`;
-
-            const cardHtml = `
-            <a href="${plantUrl}" style="text-decoration: none; color: inherit;">
-                <div class="result-card" style="background: white; border: 1px solid #d1c7a7; border-left: 5px solid ${typeColor}; padding: 20px; border-radius: 8px; transition: transform 0.2s;">
-                    <div style="display: flex; justify-content: space-between; align-items: start;">
-                        <h4 style="margin: 0; color: #3e4a3d; font-size: 1.2rem;">${recipe.tytul}</h4>
-                        <span style="color: ${typeColor}; font-size: 0.9rem; font-weight: bold;"><i class="bi ${typeIcon}"></i> ${recipe.typ}</span>
-                    </div>
-                    <p style="font-size: 0.9rem; color: #666; margin: 5px 0 15px 0;">
-                        <strong>Główny składnik:</strong> <span style="color: #2d5a27;">${recipe.roslina}</span>
-                    </p>
-                    <div style="margin-bottom: 15px;">
-                        ${tagsHtml}
-                    </div>
-                    <span style="font-size: 0.8rem; background: #3e4a3d; color: white; padding: 5px 15px; border-radius: 20px;">Otwórz stronę rośliny, aby poznać przepis ⮕</span>
-                </div>
-            </a>
-            `;
-            listContainer.insertAdjacentHTML('beforeend', cardHtml);
-        });
-    });
+    form.addEventListener("submit", e => { e.preventDefault(); run(input.value); });
+    document.querySelectorAll('.thera-chip').forEach(b => b.addEventListener('click', () => { input.value = b.dataset.q; run(b.dataset.q); }));
+    const initial = new URLSearchParams(location.search).get('query') || input.value;
+    if (initial) { input.value = initial; run(initial); }
 });
 </script>
+{% endblock %}
