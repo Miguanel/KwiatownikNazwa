@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rpg-awesome/0.2.0/css/rpg-awesome.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/wiki.css') }}">
     <style>
         body { font-family: 'Crimson Text', serif; background-color: #f4f1ea; color: #2c2c2c; margin: 0; padding-top: 110px; }
 
@@ -452,6 +453,8 @@ document.addEventListener("DOMContentLoaded", () => {
 <!-- Lokalizacja (z adresu IP, bez pytania o zgodę) i pogoda na żywo; GPS tylko po kliknięciu celownika -->
 <script src="{{ url_for('static', filename='js/geo_weather.js') }}"></script>
 <script src="{{ url_for('static', filename='js/magic_lens.js') }}"></script>
+<!-- Dymki z Wikipedii: najechanie / kliknięcie w składnik lub pojęcie (data-wiki-scan, data-wiki-ingredient, data-wiki-term) -->
+<script src="{{ url_for('static', filename='js/wiki_tooltip.js') }}"></script>
 
 
 </body>

@@ -1,0 +1,58 @@
+/* =========================================
+   DYMKI Z WIKIPEDII (static/js/wiki_tooltip.js)
+   ========================================= */
+.kw-wiki {
+    cursor: help;
+    text-decoration: underline dotted;
+    text-decoration-color: currentColor;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    border-radius: 2px;
+    transition: background-color 0.15s, color 0.15s;
+}
+.kw-wiki:hover, .kw-wiki:focus-visible, .kw-wiki.kw-wiki-active {
+    background-color: rgba(209, 184, 128, 0.28);
+    text-decoration-style: solid;
+    outline: none;
+}
+.kw-wiki:focus-visible { box-shadow: 0 0 0 2px #d1b880; }
+
+.kw-wiki-tip {
+    position: fixed; z-index: 2100; left: 0; top: 0;
+    width: 340px; max-width: calc(100vw - 16px);
+    background: #fdfaf0; color: #2b2b2b;
+    border: 2px solid #3e4a3d; border-radius: 8px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    padding: 12px 14px 10px 14px;
+    font-family: 'Crimson Text', Georgia, serif; font-size: 15px; line-height: 1.45; text-align: left;
+    animation: kwWikiIn 0.15s ease-out;
+}
+.kw-wiki-tip[hidden] { display: none !important; }
+@keyframes kwWikiIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+
+.kw-wiki-close {
+    position: absolute; top: 4px; right: 6px; border: none; background: transparent;
+    font-size: 22px; line-height: 1; color: #7a6a58; cursor: pointer; padding: 2px 6px; border-radius: 4px;
+}
+.kw-wiki-close:hover { color: #9b4b4b; background: #ede9df; }
+.kw-wiki-head { font-family: Georgia, serif; font-weight: bold; font-size: 17px; color: #3e4a3d; padding-right: 26px; }
+.kw-wiki-sub { font-size: 13px; color: #8a7a58; font-style: italic; margin: 0 0 4px 0; }
+.kw-wiki-body { margin-top: 6px; overflow: hidden; }
+.kw-wiki-img { float: right; width: 84px; height: 84px; object-fit: cover; border-radius: 6px; margin: 2px 0 6px 10px; border: 1px solid #d1c7a7; background: #ede9df; }
+.kw-wiki-text { margin: 0; color: #2b2b2b; }
+.kw-wiki-foot { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-top: 8px; padding-top: 6px; border-top: 1px dashed #d1c7a7; }
+.kw-wiki-more { color: #2d5a27 !important; font-weight: bold; text-decoration: underline !important; }
+.kw-wiki-lic { font-size: 11px; color: #a89f91; white-space: nowrap; }
+.kw-wiki-loading { color: #7a6a58; font-style: italic; margin-top: 6px; display: flex; align-items: center; gap: 8px; }
+.kw-wiki-spinner { width: 14px; height: 14px; border: 2px solid #d1c7a7; border-top-color: #3e4a3d; border-radius: 50%; animation: kwWikiSpin 0.8s linear infinite; }
+@keyframes kwWikiSpin { to { transform: rotate(360deg); } }
+
+/* Telefon: dymek jako panel u dołu ekranu */
+.kw-wiki-tip.kw-wiki-sheet {
+    left: 8px !important; right: 8px; top: auto !important; bottom: 8px;
+    width: auto; max-height: 60vh; overflow-y: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .kw-wiki-tip, .kw-wiki-spinner { animation: none; }
+}

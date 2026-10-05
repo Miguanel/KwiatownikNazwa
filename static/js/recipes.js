@@ -386,7 +386,7 @@ window.openRecipeModal = function(buttonElement) {
 
                     const ingName = s.link_id
                         ? `<a href="/plant/${encodeURIComponent(s.link_id)}/" class="ingredient-plant-link" title="Zobacz roślinę">${esc(s.nazwa)}</a>`
-                        : esc(s.nazwa);
+                        : `<span data-wiki-term="${esc(s.nazwa)}">${esc(s.nazwa)}</span>`;
                     ingHtml += `<li class="ingredient-li">
                         <strong style="color:#2d5a27; font-size:1.15rem;">${s.ilosc ? esc(s.ilosc) + ' - ' : ''}${ingName}</strong>
                         ${s.czesc_rosliny && !s.filar ? `<small class="text-muted"> (${esc(s.czesc_rosliny)})</small>` : ''}
@@ -397,7 +397,7 @@ window.openRecipeModal = function(buttonElement) {
                         </div>
                     </li>`;
                 } else {
-                    ingHtml += `<li class="ingredient-li"><strong style="color:#2d5a27; font-size:1.1rem;">${esc(s)}</strong></li>`;
+                    ingHtml += `<li class="ingredient-li"><strong style="color:#2d5a27; font-size:1.1rem;"><span data-wiki-term="${esc(s)}">${esc(s)}</span></strong></li>`;
                 }
             });
         } else {

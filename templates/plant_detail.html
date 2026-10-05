@@ -104,7 +104,7 @@
             {% endif %}
         </header>
 
-        <div class="grimmoire-book">
+        <div class="grimmoire-book" data-wiki-scan>
 
             {% set pe = plant.profil_energetyczny if plant.profil_energetyczny is mapping else {} %}
             {% set wy = plant.wymagania if plant.wymagania is mapping else {} %}
@@ -199,10 +199,10 @@
                                     {% if m_sk %}
                                         {% for t in m_sk.tresc %}<span class="chem-link">{{ t.tekst }}{{ sc_refs(t) }}</span>{% endfor %}
                                     {% elif dane.skladniki_aktywne is string %}
-                                        <a href="https://pl.wikipedia.org/wiki/Special:Search?search={{ dane.skladniki_aktywne | urlencode }}" target="_blank" class="chem-link">{{ dane.skladniki_aktywne }} <i class="ra ra-book"></i></a>
+                                        <span class="chem-link" data-wiki-ingredient>{{ dane.skladniki_aktywne }}</span>
                                     {% else %}
                                         {% for skladnik in dane.skladniki_aktywne %}
-                                            <a href="https://pl.wikipedia.org/wiki/Special:Search?search={{ skladnik | urlencode }}" target="_blank" class="chem-link">{{ skladnik }} <i class="ra ra-book"></i></a>
+                                            <span class="chem-link" data-wiki-ingredient>{{ skladnik }}</span>
                                         {% endfor %}
                                     {% endif %}
                                 </div>
@@ -613,7 +613,7 @@
     .part-badge { background: #8a9a5b; color: #120f0c; padding: 2px 10px; font-size: 0.75rem; font-weight: bold; border-radius: 4px; text-transform: uppercase; margin-left: auto; font-family: 'Georgia', serif;}
     .part-desc { font-size: 0.95rem; color: #a89f91; margin-bottom: 15px; margin-top: 0; }
     .chem-tags { display: flex; flex-wrap: wrap; gap: 8px; }
-    .chem-link { display: inline-flex; align-items: center; gap: 5px; background: rgba(138, 154, 91, 0.1); border: 1px solid #8a9a5b; color: #cddc39; padding: 4px 10px; font-size: 0.85rem; border-radius: 4px; text-decoration: none; transition: all 0.2s; }
+    .chem-link { display: inline-block; line-height: 1.5; background: rgba(138, 154, 91, 0.1); border: 1px solid #8a9a5b; color: #cddc39; padding: 4px 10px; font-size: 0.85rem; border-radius: 4px; text-decoration: none; transition: all 0.2s; }
     .chem-link i { font-size: 0.75rem; color: #8a9a5b; }
     .chem-link:hover { background: #8a9a5b; color: #120f0c; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.3); text-decoration: none; }
     .chem-link:hover i { color: #120f0c; }
