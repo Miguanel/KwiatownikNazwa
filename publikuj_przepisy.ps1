@@ -1,4 +1,5 @@
-# Publikuje dane z Siedziby Kwiatownika na kwiatownik.onrender.com: przepisy (data/przepisy/siedziba_przepisy.json)
+# Publikuje dane z Siedziby Kwiatownika na kwiatownik.onrender.com: magazyn przepisow (data/przepisy/*.json,
+# w tym eksporty Siedziby siedziba_przepisy_RRRR-MM-DD.json - strona czyta najnowszy plik z kazdej serii)
 # oraz wiedze o roslinach (data/plants/*.json - blok "wiedza" i nowe rosliny). Commit + push tylko tych plikow.
 # Uzycie (w terminalu PyCharma, w folderze Kwiatownik2):  .\publikuj_przepisy.ps1
 #                                             z opisem:  .\publikuj_przepisy.ps1 -Message "Nowe syropy"
@@ -6,10 +7,11 @@ param([string]$Message = "")
 $ErrorActionPreference = "Stop"
 Set-Location $PSScriptRoot
 
-$recipes = "data/przepisy/siedziba_przepisy.json"
+$recipeFiles = @(Get-ChildItem "data/przepisy" -Filter *.json -File | Where-Object { $_.Name -ne "wzorzec_przepisu.json" } |
+    ForEach-Object { "data/przepisy/" + $_.Name })
 $plants = Get-ChildItem "data/plants" -Filter *.json -File | ForEach-Object { "data/plants/" + $_.Name }
 $files = @()
-if (Test-Path $recipes) { $files += $recipes }
+$files += $recipeFiles
 $files += $plants
 
 # sprawdzenie, czy kazdy plik to poprawny JSON (zeby nie opublikowac uszkodzonych danych)
@@ -17,8 +19,10 @@ foreach ($f in $files) {
     try { Get-Content $f -Raw -Encoding UTF8 | ConvertFrom-Json | Out-Null }
     catch { Write-Host "Plik $f nie jest poprawnym JSON-em - przerywam." -ForegroundColor Red; exit 1 }
 }
+# liczba przepisow w najnowszym eksporcie Siedziby (seria siedziba_przepisy)
 $count = 0
-if (Test-Path $recipes) { $count = @(Get-Content $recipes -Raw -Encoding UTF8 | ConvertFrom-Json).Count }
+$latest = Get-ChildItem "data/przepisy" -Filter "siedziba_przepisy*.json" -File | Sort-Object Name | Select-Object -Last 1
+if ($latest) { $count = @(Get-Content $latest.FullName -Raw -Encoding UTF8 | ConvertFrom-Json).Count }
 
 git add -- $files
 $changed = @(git diff --cached --name-only -- $files)

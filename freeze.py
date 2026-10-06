@@ -35,6 +35,11 @@ def generate_api_all_recipes():
     # Endpoint z blueprintu "api"
     yield 'api.api_all_recipes', {}
 
+# 5. Ciekawostki do paska na górze strony (static/js/ciekawostki.js)
+@freezer.register_generator
+def generate_api_ciekawostki():
+    yield 'api.api_ciekawostki', {}
+
 if __name__ == '__main__':
     print("Trwa zamrażanie Kwiatownika z nowej struktury...")
     freezer.freeze()

@@ -1,0 +1,576 @@
+{
+  "id": "kasztanowiec",
+  "nazwa_pl": "Kasztanowiec zwyczajny/pospolity",
+  "nazwa_lat": "Aesculus hippocastanum",
+  "rodzina": "",
+  "opis": "Charakterystyczną cechę pąków stanowią gruczoły (coletery), które wydzielają lepką mieszaninę terpenów i śluzów do przestrzeni pod kutykulą. Mieszanka ta wydostaje się na zewnątrz przez spękania barki pąka.",
+  "tagi": [
+    "z sieci"
+  ],
+  "ciekawostki": [],
+  "ostrzezenia": "",
+  "_siedziba_nowa": true,
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-10-05",
+    "uporzadkowano": "2026-10-05",
+    "uklad": "llm:gemini/gemini-3.6-flash",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (pl): Kasztanowiec pospolity",
+        "url": "https://pl.wikipedia.org/wiki/Kasztanowiec_pospolity",
+        "jezyk": "pl",
+        "typ": "wikipedia",
+        "nr": 1
+      },
+      {
+        "nazwa": "Wikipedia (en): Aesculus hippocastanum",
+        "url": "https://en.wikipedia.org/wiki/Aesculus_hippocastanum",
+        "jezyk": "en",
+        "typ": "wikipedia",
+        "nr": 2
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "opis",
+        "tytul": "Opis i wygląd",
+        "podsumowanie": "Kasztanowiec tworzy kolczaste owoce z lśniącymi nasionami oraz białe kwiaty ozdobione plamkami, bezpieczne dla pszczół miodnych. Lepka substancja chroniąca pąki wydzielana jest przez specjalne gruczoły.",
+        "podsumowanie_zrodla": [
+          1,
+          2
+        ],
+        "punkty": [
+          {
+            "tekst": "Owocem jest zielona, kolczasta torebka zawierająca jedno lub rzadziej dwa do trzech lśniących, orzechowatych nasion z białawą blizną u podstawy.",
+            "czesc": "owoce",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s448"
+            ]
+          },
+          {
+            "tekst": "Płatki kwiatów są zazwyczaj białe z żółtą lub różową plamą u podstawy, a ich pyłek nie jest trujący dla pszczół miodnych.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s447"
+            ]
+          },
+          {
+            "tekst": "Pąki posiadają charakterystyczne gruczoły (coletery), wydzielające lepką mieszaninę terpenów i śluzów pod kutykulę, która wydostaje się na zewnątrz przez spękania łusek pąka.",
+            "czesc": "pąki",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s441"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "wystepowanie",
+        "tytul": "Występowanie",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Gatunek pochodzi z Półwyspu Bałkańskiego, gdzie rośnie nielicznie w lasach i jest uznawany za narażony na wyginięcie. W Europie rozprzestrzenił się w XVI i XVII wieku w czasie ekspansji tureckiej.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s440"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Ekstrakt z nasion standaryzowany na około 20% escyny jest tradycyjnie stosowany ze względu na korzystny wpływ na napięcie naczyń żylnych.",
+            "czesc": "nasiona",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s451"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "historia",
+        "tytul": "Historia i nazwa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Angielska nazwa zwyczajowa „horse chestnut” narodziła się z podobieństwa liści i owoców do kasztana jadalnego oraz dawnych obserwacji, według których owoce lub nasiona miały pomagać koniom cierpiącym na zadyszkę lub kaszel.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s449"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kultura",
+        "tytul": "Wierzenia i tradycje",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Kasztanowce stanowią symbol Kijowa, natomiast w Bawarii tradycyjnie sadzono je nad piwnicami piwiarni, aby chronić ziemię przed nadmiernym nagrzewaniem.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s446"
+            ]
+          },
+          {
+            "tekst": "Okaz rosnący przed ukryciem Anny Frank w Amsterdamie stał się symbolem Holokaustu, a z jego nasion pozyskano potomstwo sadzone przed muzeami pamięci Zagłady.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s445"
+            ]
+          },
+          {
+            "tekst": "Na wsiach, zwłaszcza na Podlasiu, noszono kasztany w kieszeniach dla złagodzenia bólów reumatycznych i artretycznych, a także układano nasiona w woreczkach pod łóżkami, wierząc w ich ochronę przed promieniowaniem geopatycznym.",
+            "czesc": "nasiona",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s443"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Surowe nasiona, liście, kora i kwiaty są toksyczne ze względu na obecność aesculiny, glikozydów oraz saponin, co skłoniło amerykańską Agencję ds. Żywności i Leków do sklasyfikowania nasion jako ziele niebezpieczne.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s450"
+            ]
+          },
+          {
+            "tekst": "Niedojrzałe owoce wykazuja największą toksyczność dla ludzi z powodu maksymalnego stężenia saponin; ich spożycie prowadzi do dolegliwości żołądkowo-jelitowych, a w ciężkich przypadkach do porażenia mięśni oddechowych i zgonu.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s442"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "owoce": [
+        "s448",
+        "s442"
+      ],
+      "kwiaty": [
+        "s447"
+      ],
+      "pąki": [
+        "s441"
+      ],
+      "nasiona": [
+        "s451",
+        "s443"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s440",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Pochodzi z Półwyspu Bałkańskiego, gdzie rośnie nielicznie w lasach i jest uznawany za gatunek narażony na wyginięcie. W Europie rozprzestrzenił się w XVI i XVII wieku podczas ekspansji tureckiej.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Kasztanowiec pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Kasztanowiec_pospolity"
+        }
+      },
+      {
+        "id": "s441",
+        "sekcja": "opis",
+        "czesc": "pąki",
+        "tekst": "Charakterystyczną cechę pąków stanowią gruczoły (coletery), które wydzielają lepką mieszaninę terpenów i śluzów do przestrzeni pod kutykulą. Mieszanka ta wydostaje się na zewnątrz przez spękania barki pąka.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Kasztanowiec pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Kasztanowiec_pospolity"
+        }
+      },
+      {
+        "id": "s442",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "owoce",
+        "tekst": "Niedojrzałe owoce są najbardziej toksyczne dla ludzi ze względu na wysokie stężenie saponin, które w tym okresie osiąga maksimum. Spożycie prowadzi do dolegliwości żółdkowo-jelitowych, a w ciężkich przypadkach do porażenia mięśni oddechowych i zgonu.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Kasztanowiec pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Kasztanowiec_pospolity"
+        }
+      },
+      {
+        "id": "s443",
+        "sekcja": "kultura",
+        "czesc": "nasiona",
+        "tekst": "Na wsiach, zwłaszcza na Podlasiu, noszono kasztany w kieszeniach, aby złagodzić bóle reumatyczne i artretyczne. Wierzono również, że nasiona chronią przed szkodliwym promieniowaniem geotycznym, dlatego układano je w lnianych woreczkach pod łóżkami.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Kasztanowiec pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Kasztanowiec_pospolity"
+        }
+      },
+      {
+        "id": "s445",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "Kasztanowiec rosnący przed ukrytym mieszkaniem Anny Frank w Amsterdamie stał się symbolem Holokaustu. Po jego złamaniu w 2010 roku z jego nasion uzyskano potomstwo, które sadzone jest przed muzeami pamięci Zagłady.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Kasztanowiec pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Kasztanowiec_pospolity"
+        }
+      },
+      {
+        "id": "s446",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "Kasztanowce pospolicie rosnące w Kijowie stały się symbolem tego miasta. W Bawarii drzewa te stały się tradycyjnie sadzone nad piwnicami piwiarni jako ochrona przed nadmiernym nagrzewaniem ziemi.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Kasztanowiec pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Kasztanowiec_pospolity"
+        }
+      },
+      {
+        "id": "s447",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Płatki kwiatów kasztanowca są zazwyczaj białe, z żółtą lub różową plamą u podstawy. Pyłek tej rośliny nie jest trujący dla pszczół miodnych.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Aesculus hippocastanum",
+          "url": "https://en.wikipedia.org/wiki/Aesculus_hippocastanum"
+        }
+      },
+      {
+        "id": "s448",
+        "sekcja": "opis",
+        "czesc": "owoce",
+        "tekst": "Owocem jest zielona, kolczasta torebka zawierająca jedno lub rzadziej dwa do trzech lścigłych, orzechowatych nasion z białawą blizną u podstawy.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Aesculus hippocastanum",
+          "url": "https://en.wikipedia.org/wiki/Aesculus_hippocastanum"
+        }
+      },
+      {
+        "id": "s449",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Angielska nazwa zwyczajowa \"horse chestnut\" wzięła się z podobieństwa liści i owoców do kasztana jadalnego oraz z dawnych obserwacji, że owoce lub nasiona miały pomagać koniom cierpiącym na zadyszkę lub kaszel.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Aesculus hippocastanum",
+          "url": "https://en.wikipedia.org/wiki/Aesculus_hippocastanum"
+        }
+      },
+      {
+        "id": "s450",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Surowe nasiona, liście, kora i kwiaty kasztanowca są toksyczne ze względu na obecność aesculiny, glikozydów i saponin, przez co amerykańska Agencja ds. Żywności i Leków klasyfikuje nasiona jako ziele niebezpieczne.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Aesculus hippocastanum",
+          "url": "https://en.wikipedia.org/wiki/Aesculus_hippocastanum"
+        }
+      },
+      {
+        "id": "s451",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "nasiona",
+        "tekst": "Ekstrakt z nasion kasztanowca standaryzowany na około 20 procent escyny jest tradycyjnie stosowany ze względu na jego wpływ na napięcie naczyń żylnych.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Aesculus hippocastanum",
+          "url": "https://en.wikipedia.org/wiki/Aesculus_hippocastanum"
+        }
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-05",
+    "pola": {
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Owocem jest zielona, kolczasta torebka zawierająca jedno lub rzadziej dwa do trzech lśniących, orzechowatych nasion z białawą blizną u podstawy.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s448"
+            ]
+          },
+          {
+            "tekst": "Płatki kwiatów są zazwyczaj białe z żółtą lub różową plamą u podstawy, a ich pyłek nie jest trujący dla pszczół miodnych.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s447"
+            ]
+          },
+          {
+            "tekst": "Pąki posiadają charakterystyczne gruczoły (coletery), wydzielające lepką mieszaninę terpenów i śluzów pod kutykulę, która wydostaje się na zewnątrz przez spękania łusek pąka.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s441"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "bb7297575771bfd8"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Gatunek pochodzi z Półwyspu Bałkańskiego, gdzie rośnie nielicznie w lasach i jest uznawany za narażony na wyginięcie.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s440"
+            ]
+          },
+          {
+            "tekst": "W Europie roślina rozprzestrzeniła się w XVI i XVII wieku w czasie ekspansji tureckiej.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s440"
+            ]
+          },
+          {
+            "tekst": "Angielska nazwa zwyczajowa „horse chestnut” wywodzi się z podobieństwa liści i owoców do kasztana jadalnego oraz dawnych obserwacji, że owoce lub nasiona pomagać miały koniom cierpiącym na zadyszkę lub kaszel.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s449"
+            ]
+          },
+          {
+            "tekst": "Kasztanowce stanowią symbol Kijowa, a w Bawarii tradycyjnie sadzono je nad piwnicami piwiarni, aby chronić ziemię przed nadmiernym nagrzewaniem.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s446"
+            ]
+          },
+          {
+            "tekst": "Okaz rosnący przed ukryciem Anny Frank w Amsterdamie stał się symbolem Holokaustu, a z jego nasion pozyskano potomstwo sadzone przed muzeami pamięci Zagłady.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s445"
+            ]
+          },
+          {
+            "tekst": "Na wsiach, zwłaszcza na Podlasiu, noszono kasztany w kieszeniach dla złagodzenia bólów reumatycznych i artretycznych.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s443"
+            ]
+          },
+          {
+            "tekst": "Nasiona układano również w woreczkach pod łóżkami, wierząc w ich ochronę przed promieniowaniem geopatycznym.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s443"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "801e34f3c3da30bd"
+      },
+      "czesci_rosliny.nasiona.wlasciwości": {
+        "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Tradycyjnie stosowany ekstrakt z nasion standaryzowany na około 20% escyny wykazuje korzystny wpływ na napięcie naczyń żylnych.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s451"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "cac0dd11f35a6547"
+      },
+      "czesci_rosliny.nasiona.ostrzezenia": {
+        "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Ostrzeżenia",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Surowe nasiona, liście, kora i kwiaty są toksyczne ze względu na obecność aesculiny, glikozydów oraz saponin, co skłoniło amerykańską Agencję ds. Żywności i Leków do sklasyfikowania nasion jako ziele niebezpieczne.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s450"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "9f96c28fc347abae"
+      },
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Największą toksyczność dla ludzi wykazują niedojrzałe owoce wynikającą z maksymalnego stężenia saponin, których spożycie doprowadza do dolegliwości żołądkowo-jelitowych, a w poważnych przypadkach może wywołać porażenie mięśni oddechowych i zgon.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s442"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "8f7ebfc8ef447024"
+      }
+    },
+    "uzyte_fakty": [
+      "s440",
+      "s441",
+      "s442",
+      "s443",
+      "s445",
+      "s446",
+      "s447",
+      "s448",
+      "s449",
+      "s450",
+      "s451"
+    ]
+  },
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/ND_678.N.59_Hofers_Kastanien_in_Wettringen.jpg/960px-ND_678.N.59_Hofers_Kastanien_in_Wettringen.jpg",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/20130423Aesculus_hippocastanum10.jpg/960px-20130423Aesculus_hippocastanum10.jpg",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Chestnut_powdery_mildew.jpg/960px-Chestnut_powdery_mildew.jpg",
+    "Owoce": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Aesculus_hippocastanum_003.JPG/960px-Aesculus_hippocastanum_003.JPG",
+    "Nasiona": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/0_Aesculus_hippocastanum_-_Mariemont_1.JPG/960px-0_Aesculus_hippocastanum_-_Mariemont_1.JPG"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-05",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/ND_678.N.59_Hofers_Kastanien_in_Wettringen.jpg/960px-ND_678.N.59_Hofers_Kastanien_in_Wettringen.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:ND_678.N.59_Hofers_Kastanien_in_Wettringen.jpg",
+        "autor": "Stephan van Helden",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/20130423Aesculus_hippocastanum10.jpg/960px-20130423Aesculus_hippocastanum10.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:20130423Aesculus_hippocastanum10.jpg",
+        "autor": "AnRo0002",
+        "licencja": "CC0",
+        "licencja_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Chestnut_powdery_mildew.jpg/960px-Chestnut_powdery_mildew.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Chestnut_powdery_mildew.jpg",
+        "autor": "Drazhnikova",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Aesculus_hippocastanum_003.JPG/960px-Aesculus_hippocastanum_003.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Aesculus_hippocastanum_003.JPG",
+        "autor": "H. Zell",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Nasiona",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/0_Aesculus_hippocastanum_-_Mariemont_1.JPG/960px-0_Aesculus_hippocastanum_-_Mariemont_1.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:0_Aesculus_hippocastanum_-_Mariemont_1.JPG",
+        "autor": "Jean-Pol GRANDMONT",
+        "licencja": "CC BY 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by/3.0",
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
+}

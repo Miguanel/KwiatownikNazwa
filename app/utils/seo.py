@@ -41,8 +41,9 @@ def _main_photo(plant):
     return absolute_url(next(iter(photos.values())))
 
 
-def plant_seo(plant, plant_id):
-    """Tytul, opis i zdjecie strony rosliny do wynikow wyszukiwania i podgladu linku."""
+def plant_seo(plant, plant_id, has_recipes=None):
+    """Tytul, opis i zdjecie strony rosliny do wynikow wyszukiwania i podgladu linku.
+    has_recipes: czy roslina ma przepisy w magazynie data/przepisy (przepisy nie sa juz w pliku rosliny)."""
     name = plant.get('nazwa_pl') or plant_id.replace('_', ' ').capitalize()
     latin = plant.get('nazwa_lat')
     full_name = f'{name} ({latin})' if latin else name
@@ -54,7 +55,7 @@ def plant_seo(plant, plant_id):
         extras.append('surowce')
     if zast.get('medyczne'):
         extras.append('działanie lecznicze')
-    if plant.get('przepisy_medyczne') or plant.get('przepisy_kulinarne'):
+    if has_recipes or (has_recipes is None and (plant.get('przepisy_medyczne') or plant.get('przepisy_kulinarne'))):
         extras.append('przepisy')
     if plant.get('ostrzezenia'):
         extras.append('przeciwwskazania')

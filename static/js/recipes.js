@@ -2,34 +2,15 @@
 // 1. SŁOWNIKI POJĘĆ DLA TOOLTIPÓW
 // ==========================================
 const dict = {
-    "Tropizm Organowy": "Wskazuje, do jakiego narządu lub układu w ciele pacjenta dana roślina kieruje swoje główne działanie lecznicze.",
-    "Smak Ajurwedyjski": "Według medycyny wschodniej, smak zioła (np. gorzki, ostry, słodki) determinuje jego termikę – to, czy ochładza, rozgrzewa, wysusza czy nawilża tkanki.",
     "Matryca Wu Xing": "Tradycyjna Medycyna Chińska. Dzieli choroby i zioła na 5 żywiołów (Drzewo, Ogień, Ziemia, Metal, Woda). Leczenie polega na równoważeniu tych żywiołów.",
     "Triada Kampo": "Japońska koncepcja medyczna dzieląca zdrowie na 3 strumienie: KI (Energia życiowa/nerwy), KETSU (Krew/krążenie) oraz SUI (Płyny ustrojowe/limfa).",
-    "Filar": "W starożytnych recepturach składniki dzieliły się na role: Bazowy (główny lek), Wzmocnienie (pomocnik), Minister (kierunkowskaz), Posłaniec (nośnik) i Korektor (łagodzący skutki uboczne).",
     "Alchemia Spageryczna": "Starożytna sztuka rozdzielania zioła na olejek (Duszę), alkohol (Ducha) i popiół (Ciało mineralne), by połączyć je w spotęgowany eliksir.",
     "Doktryna Sygnatur": "Dawne wierzenie, według którego wygląd, kolor lub środowisko życia rośliny zdradza, jaki organ ludzki ona leczy.",
     "Humory Galena": "Grecko-rzymska medycyna czterech humorów (krew, flegma, żółć żółta, żółć czarna). Zioła mają jakości: ciepłe/zimne i suche/wilgotne w stopniach od I do IV.",
-    "Ajurweda": "Indyjska medycyna, w której zioła równoważą trzy dosze: Vata (ruch, powietrze), Pitta (ogień, przemiana) i Kapha (struktura, woda).",
     "Skalowanie Toksykologiczne": "Określa stopień niebezpieczeństwa i siłę działania receptury, od ziół łagodnych (normalizujących) po heroiczne (ekstremalnie silne, potencjalnie toksyczne)."
 };
 
-const flavorDict = {
-    "kwaśny": "Smak kwaśny ściąga tkanki i zatrzymuje płyny.",
-    "gorzki": "Smak gorzki chłodzi zapalenia i obniża gorączkę.",
-    "słodki": "Smak słodki nawilża, odżywia i łagodzi ból.",
-    "ostry": "Smak ostry rozgrzewa i otwiera pory skóry.",
-    "słony": "Smak słony rozmiękcza guzy.",
-    "cierpki": "Smak cierpki tamuje krwotoki."
-};
-
-const pillarDict = {
-    "1_bazowy": "Baza: Główny lek uderzający bezpośrednio w przyczynę choroby.",
-    "2_wzmocnienie": "Wzmocnienie: Pomaga i potęguje działanie leku bazowego.",
-    "3_minister": "Minister: Usuwa poboczne objawy lub kieruje lek do konkretnego miejsca.",
-    "4_poslaniec": "Posłaniec: Nośnik ułatwiający wchłanianie (np. alkohol, tłuszcz).",
-    "5_korektor": "Korektor: Łagodzi drażniące skutki uboczne silnych ziół."
-};
+// Bez filarow, smakow ajurwedy i tropizmu - nie wyswietlamy tych pol (nie maja zrodel dla ziol europejskich).
 
 const kampoDict = {
     "ki": "Ki (Energia): Siła życiowa, impulsy nerwowe i napęd organizmu. Jej zastój powoduje nagły ból, napięcie, drgawki i skurcze.",
@@ -166,7 +147,8 @@ window.openRecipeModal = function(buttonElement) {
             plainTextTags += `Z sieci (przetłumaczony)<br>`;
         }
         if(recipe.mechanizm_tworzenia) {
-            let mechanisms = Array.isArray(recipe.mechanizm_tworzenia) ? recipe.mechanizm_tworzenia : [recipe.mechanizm_tworzenia];
+            let mechanisms = (Array.isArray(recipe.mechanizm_tworzenia) ? recipe.mechanizm_tworzenia : [recipe.mechanizm_tworzenia])
+                .filter(m => !/filar/i.test(String(m)));   // "Wzorzec 5 filarów" nie jest wyswietlany
             mechanisms.forEach(m => {
                 tagsHtml += `<span class="alchemical-tag" style="background:#f4f1ea; border-color:#d1c7a7; color:#b8860b;">${esc(m)}</span>`;
                 plainTextTags += `${esc(m)}<br>`;
@@ -325,10 +307,6 @@ window.openRecipeModal = function(buttonElement) {
                     </details>`;
             }
             // Pola opracowania z Siedziby Kwiatownika (inne tradycje)
-            if (kd.ajurweda) {
-                html += subDetails(`Ajurweda ${getContextTooltip("Ajurweda", dict["Ajurweda"])}`,
-                    labeledRows([["Dosze", kd.ajurweda.dosze], ["", kd.ajurweda.wyjasnienie]]));
-            }
             if (kd.doktryna_sygnatur) {
                 html += subDetails(`Doktryna Sygnatur ${getContextTooltip("Doktryna Sygnatur", dict["Doktryna Sygnatur"])}`,
                     labeledRows([["Sygnatura", kd.doktryna_sygnatur.sygnatura], ["Interpretacja", kd.doktryna_sygnatur.interpretacja]]));
@@ -361,40 +339,12 @@ window.openRecipeModal = function(buttonElement) {
         if (Array.isArray(recipe.skladniki)) {
             recipe.skladniki.forEach(s => {
                 if(typeof s === 'object') {
-                    let filarCtx = getDictContext(s.filar ? esc(s.filar) : '', pillarDict);
-                    let tropizmCtx = extractContext(esc(s.tropizm_organowy || ''));
-                    let smakCtx = getDictContext(s.smak_ajurweda ? esc(s.smak_ajurweda) : '', flavorDict);
-                    if (smakCtx.name && s.smak_ajurweda) smakCtx.name = esc(s.smak_ajurweda).replace(/_/g, ' ');
-
-                    let rolaHtml = filarCtx.name ? `
-                        <span class="ingredient-role">
-                            <strong>Rola:</strong>
-                            <em>${filarCtx.name}</em> ${getContextTooltip("Rola: " + filarCtx.name.toUpperCase(), filarCtx.desc)}
-                        </span>` : '';
-
-                    let dzialanieHtml = tropizmCtx.name ? `
-                        <span class="ingredient-action">
-                            <strong>Działanie:</strong>
-                            <em>${tropizmCtx.name}</em> ${getContextTooltip("Mechanizm działania", tropizmCtx.desc)}
-                        </span>` : '';
-
-                    let smakHtml = smakCtx.name ? `
-                        <span class="ingredient-action">
-                            <strong>Smak:</strong>
-                            <em>${smakCtx.name}</em> ${getContextTooltip("Smak ajurwedyjski", smakCtx.desc || dict["Smak Ajurwedyjski"])}
-                        </span>` : '';
-
                     const ingName = s.link_id
                         ? `<a href="/plant/${encodeURIComponent(s.link_id)}/" class="ingredient-plant-link" title="Zobacz roślinę">${esc(s.nazwa)}</a>`
                         : `<span data-wiki-term="${esc(s.nazwa)}">${esc(s.nazwa)}</span>`;
                     ingHtml += `<li class="ingredient-li">
                         <strong style="color:#2d5a27; font-size:1.15rem;">${s.ilosc ? esc(s.ilosc) + ' - ' : ''}${ingName}</strong>
-                        ${s.czesc_rosliny && !s.filar ? `<small class="text-muted"> (${esc(s.czesc_rosliny)})</small>` : ''}
-                        <div class="ingredient-details-row">
-                            ${rolaHtml}
-                            ${dzialanieHtml}
-                            ${smakHtml}
-                        </div>
+                        ${s.czesc_rosliny ? `<small class="text-muted"> (${esc(s.czesc_rosliny)})</small>` : ''}
                     </li>`;
                 } else {
                     ingHtml += `<li class="ingredient-li"><strong style="color:#2d5a27; font-size:1.1rem;"><span data-wiki-term="${esc(s)}">${esc(s)}</span></strong></li>`;

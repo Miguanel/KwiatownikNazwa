@@ -252,9 +252,9 @@
   "ostrzezenia": "Surowe owoce i sok z surowych owoców są toksyczne! Zawsze poddawaj owoce obróbce termicznej (gotowanie, pieczenie). Nie stosować kwiatów bzu przy ostrym zapaleniu nerek.",
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-09-29",
-    "uporzadkowano": "2026-09-29",
-    "uklad": "deterministyczny: zle ID punktu",
+    "zaktualizowano": "2026-10-05",
+    "uporzadkowano": "2026-10-05",
+    "uklad": "deterministyczny: pominiete informacje: [6]",
     "zrodla": [
       {
         "nazwa": "Wikipedia (pl): Bez czarny",
@@ -278,18 +278,32 @@
         "nr": 3
       },
       {
+        "nazwa": "Wikipedia (ja): セイヨウニワトコ",
+        "url": "https://ja.wikipedia.org/wiki/%E3%82%BB%E3%82%A4%E3%83%A8%E3%82%A6%E3%83%8B%E3%83%AF%E3%83%88%E3%82%B3",
+        "jezyk": "ja",
+        "typ": "wikipedia",
+        "nr": 4
+      },
+      {
+        "nazwa": "Wikipedia (zh): 西洋接骨木",
+        "url": "https://zh.wikipedia.org/wiki/%E8%A5%BF%E6%B4%8B%E6%8E%A5%E9%AA%A8%E6%9C%A8",
+        "jezyk": "zh",
+        "typ": "wikipedia",
+        "nr": 5
+      },
+      {
         "nazwa": "www.ebsco.com",
         "url": "https://www.ebsco.com/research-starters/complementary-and-alternative-medicine/elderberrys-therapeutic-uses/",
         "jezyk": "en",
         "typ": "strona",
-        "nr": 4
+        "nr": 6
       },
       {
         "nazwa": "www.walaarzneimittel.de",
         "url": "https://www.walaarzneimittel.de/heilpflanzenlexikon-a-z/holunder",
         "jezyk": "de",
         "typ": "strona",
-        "nr": 5
+        "nr": 7
       }
     ],
     "sekcje": [
@@ -300,6 +314,76 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
+            "tekst": "Bzu czarny to krzew lub małe drzewo, które może dorastać do 6 metrów, a starsze okazy nawet do 15 metrów wysokości.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s295"
+            ]
+          },
+          {
+            "tekst": "Grubsze gałęzie oraz pień bzu czarnego pokrywa podłużnie spękana, szarobrązowa kora, która z czasem ma tendencję do łuszczenia się w postaci pasm.",
+            "czesc": "kora",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s688"
+            ]
+          },
+          {
+            "tekst": "Młoda kora jest jasnoszara, z wiekiem zmienia się w szarą, podłużnie pofałdowaną skorupę z wyraźnymi przetchlinkami.",
+            "czesc": "kora",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s296"
+            ]
+          },
+          {
+            "tekst": "Kwiaty rośliny charakteryzują się silnym, specjalnym aromatem.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s693"
+            ]
+          },
+          {
+            "tekst": "Liście bzu rozwijają się wyjątkowo wcześnie w roku, bo już w marcu lub kwietniu, na długo przed pojawieniem się kwiatów.",
+            "czesc": "liście",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s689"
+            ]
+          },
+          {
+            "tekst": "Liście są naprotległe, pierzasto zlożone, z pięcioma do siedmiu listek (rzadko dziewięcioma) o ząbkowanych brzegach, o długości 10–30 cm.",
+            "czesc": "liście",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s297"
+            ]
+          },
+          {
+            "tekst": "Liście mają intensywny, nieprzyjemny zapach, gdy zostaną połechtane lub zgniecione.",
+            "czesc": "liście",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s692"
+            ]
+          },
+          {
             "tekst": "Owoce mają charakterystyczny ciemny kolor, wynikający z bogatego zawartości fenolów, szczególnie antocyjanów.",
             "czesc": "owoce",
             "zrodla": [
@@ -307,6 +391,16 @@
             ],
             "fakty": [
               "s143"
+            ]
+          },
+          {
+            "tekst": "Owoce to połyskujące, ciemnofioletowe lub czarne pestkowce o średnicy 6–8 mm, zawierające 3-5 nasion.",
+            "czesc": "owoce",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s298"
             ]
           }
         ]
@@ -414,6 +508,46 @@
             ]
           },
           {
+            "tekst": "W Europie kwiaty bzu czarnego tradycyjnie spożywane są w formie syropu lub nalewki, rozcieńczanej wodą, znanej pod różnymi nazwami regionalnymi, np. socată w Rumunii.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s304"
+            ]
+          },
+          {
+            "tekst": "Komitet ds. Ziołowych Produktów Leczniczych Unii Europejskiej (HMPC) uznał tradycyjne zastosowanie kwiatów bzu czarnego do łagodzenia wczesnych objawów przeziębienia.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s683"
+            ]
+          },
+          {
+            "tekst": "Kwiaty tradycyjnie wykorzystywano w leczeniu przeziębienia, alergii (kataru siennego), zapalenia gardła oraz zapalenia stawów, a także jako łagodny środek przeczyszczający.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s698"
+            ]
+          },
+          {
+            "tekst": "Liście stosowano zewnętrznie jako okłady na stłuczenia i skręcenia.",
+            "czesc": "liście",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s697"
+            ]
+          },
+          {
             "tekst": "Z dojrzałych owoców wykonuje się odwary tradycyjnie stosowane w leczeniu migreny, nerwobólów, biegunki oraz chorób reumatycznych i neurologicznych.",
             "czesc": "owoce",
             "zrodla": [
@@ -437,7 +571,7 @@
             "tekst": "Owoce bzu czarnego są często wykorzystywane do wyrobu napojów, ciast oraz przetworów.",
             "czesc": "owoce",
             "zrodla": [
-              4
+              6
             ],
             "fakty": [
               "s155"
@@ -454,13 +588,41 @@
             ]
           },
           {
+            "tekst": "W medycynie tradycyjnej łodygi i pędy bzu czarnego, podobnie jak innych gatunków z tego samego rodzaju, są stosowane jako środek napotny przeciwzapalny, moczopędny, a także do leczenia reumatyzmu, poprawy mikrokrążenia i łagodzenia objawów zapalnych.",
+            "czesc": "ziele",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s691"
+            ]
+          },
+          {
             "tekst": "W nowoczesnych preparatach ziołowych wyciągi z bzu są często łączne z jeżówką oraz propolisem pszczelim w celu wsparcia układu odpornościowego.",
             "czesc": "ziele",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s158"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "medycyna_wschodu",
+        "tytul": "Medycyna chińska, kampo, ajurweda",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W tradycji medycynowej kwiaty bzu czarnego znane są jako surowiec „sessakutsubokukwa” (dosł. kwiaty bodziszka), zbierane w fazie półpełnego rozkwitu i suszone w cieniu oraz przewiewnym miejscu.",
+            "czesc": "kwiaty",
             "zrodla": [
               4
             ],
             "fakty": [
-              "s158"
+              "s696"
             ]
           }
         ]
@@ -518,10 +680,20 @@
             ]
           },
           {
-            "tekst": "Nazwa „holunder” pochodzi od starożytnego określenia „hold”, co oznaczało gnędrzawość lub wierność, a także duch.",
+            "tekst": "Dodatni gatunkowy 'nigra' w nazwie łacińskiej oznacza 'czarny' lub 'ciemny'.",
             "czesc": null,
             "zrodla": [
               5
+            ],
+            "fakty": [
+              "s690"
+            ]
+          },
+          {
+            "tekst": "Nazwa „holunder” pochodzi od starożytnego określenia „hold”, co oznaczało gnędrzawość lub wierność, a także duch.",
+            "czesc": null,
+            "zrodla": [
+              7
             ],
             "fakty": [
               "s162"
@@ -531,7 +703,7 @@
             "tekst": "Odpowiednio przygotowana, starsza kora była dawniej stosowana przez rdzennych Amerykanów jako środek przeczyszczający.",
             "czesc": "kora",
             "zrodla": [
-              4
+              6
             ],
             "fakty": [
               "s157"
@@ -541,10 +713,20 @@
             "tekst": "Rodzimi Amerykanie tradycyjnie stosowali liście oraz kwiaty w postaci okładów nakładanych na rany.",
             "czesc": "liście",
             "zrodla": [
-              4
+              6
             ],
             "fakty": [
               "s156"
+            ]
+          },
+          {
+            "tekst": "Na Węgrzech produkuje się brandy z bzu, do którego wytworzenia 1 litra trunku zużywa się 50 kilogramów owoców.",
+            "czesc": "owoce",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s306"
             ]
           }
         ]
@@ -576,10 +758,60 @@
             ]
           },
           {
+            "tekst": "W tradycji ludowej krzew bzu sadzony w ogródku domowym uznawano za drzewo życia i wierzono, że stanowił on skuteczną ochronę przed czarną magią, czarownicami, pożarem oraz uderzeniem pioruna.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s685"
+            ]
+          },
+          {
+            "tekst": "W dawnych wierzeniach sądzono, że przebywanie w pobliżu bzu zapewniało bezpieczeństwo przed ukąszeniami węży oraz użukami komarów, a także oddawało cześć mieszkającym w nim dobrym duchom domowym.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s686"
+            ]
+          },
+          {
+            "tekst": "W mitologii nordyckiej wierzy się, że Hilda, matka królowa, zamieszkiwała w korzeniach bzu (Elder).",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s699"
+            ]
+          },
+          {
+            "tekst": "W tradycji chrześcijańskiej przetrwało przekonanie, że drzewo, na którym Judasz powiesił się po zdradzie Jezusa, oraz krzyż, na którym Chrystus został ukrzyżowany, zostały uszmudowane z bzu czarnego.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s700"
+            ]
+          },
+          {
+            "tekst": "W serii „Harry Potter” bieszczadzki (niwotoko) jest materiałem z którego wykonano Wandę Bieszczadzką, określaną jako najsilniejsza różdżka w świecie magii.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s701"
+            ]
+          },
+          {
             "tekst": "W legendzie skandinawskiej Holunder był miejscem zamieszkania bogini Hel, a w mitologii germńskiej – bogini Freyji.",
             "czesc": null,
             "zrodla": [
-              5
+              7
             ],
             "fakty": [
               "s160"
@@ -589,7 +821,7 @@
             "tekst": "W tradycji ludowej wierzono, że bzu czarnego było miejsce zamieszkania dobrych duchów domowych, a jego wycięcie przynosiło nieszczęście.",
             "czesc": null,
             "zrodla": [
-              5
+              7
             ],
             "fakty": [
               "s161"
@@ -632,6 +864,16 @@
             "fakty": [
               "s152"
             ]
+          },
+          {
+            "tekst": "W dialektach niemieckich roślina nosi liczne lokalne określenia, takie jak Hunnel, Hündele, Húlungr, Húlandr, Hulla, Hollert, Holder, Haulert, Dolder oraz Fledderbeernbusch.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s687"
+            ]
           }
         ]
       },
@@ -642,13 +884,73 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
+            "tekst": "Wszystkie części rośliny z wyjątkiem kwiatów i dojrzałych owoców są trujące dla ssaków, ponieważ zawierają cyjaniczny glikozyd sambunigryn.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s300"
+            ]
+          },
+          {
+            "tekst": "Spożycie nieprzetworzonych termicznie owoców, liści, kory lub pędów może spowodować nudności, wymioty oraz silną biegunkę.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s302"
+            ]
+          },
+          {
+            "tekst": "Produkty z bzu czarnego nie powinny być spożywane przez kobiety w ciąży ani przez osoby z alergią lub chorobami przewodu pokarmowego.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s303"
+            ]
+          },
+          {
+            "tekst": "Kora bzu czarnego zawiera kryształy szczawianu wapnia.",
+            "czesc": "kora",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s301"
+            ]
+          },
+          {
             "tekst": "Kwiaty bzu czarnego są ogólnie uznawane za bezpieczne, a działania niepożądane po ich spożyciu występują rzadko.",
             "czesc": "kwiaty",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s159"
+            ]
+          },
+          {
+            "tekst": "Liście wydzielają intensywny zapach, który w przeszłości wykorzystywano do odpędzania duchów złośliwych.",
+            "czesc": "liście",
             "zrodla": [
               4
             ],
             "fakty": [
-              "s159"
+              "s702"
+            ]
+          },
+          {
+            "tekst": "Nasiona oraz wszystkie zielone części rośliny zawierają glikozydy cyjanogenne, które mogą być toksyczne.",
+            "czesc": "nasiona",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s682"
             ]
           },
           {
@@ -669,6 +971,16 @@
             ],
             "fakty": [
               "s144"
+            ]
+          },
+          {
+            "tekst": "Owoce mają silny kolor i łagodny ostry smak, a ich spożycie w stanie surowym może prowadzić do wymiotów lub biegunki, stąd konieczna jest obróbka termiczna.",
+            "czesc": "owoce",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s694"
             ]
           },
           {
@@ -697,6 +1009,16 @@
             ],
             "fakty": [
               "s146"
+            ]
+          },
+          {
+            "tekst": "W uprawach komercyjnych plantacje zazwyczaj rozmnaża się z jednorocznych pędów zdrewniałych posiadających własne korzenie.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s684"
             ]
           }
         ]
@@ -731,38 +1053,58 @@
       }
     ],
     "czesci": {
+      "kora": [
+        "s688",
+        "s296",
+        "s130",
+        "s157",
+        "s301"
+      ],
+      "kwiaty": [
+        "s693",
+        "s131",
+        "s129",
+        "s138",
+        "s136",
+        "s304",
+        "s683",
+        "s698",
+        "s696",
+        "s159"
+      ],
+      "liście": [
+        "s689",
+        "s297",
+        "s692",
+        "s697",
+        "s156",
+        "s702"
+      ],
       "owoce": [
         "s143",
+        "s298",
         "s145",
         "s137",
         "s139",
         "s155",
         "s133",
+        "s306",
         "s142",
         "s135",
-        "s144"
-      ],
-      "kwiaty": [
-        "s131",
-        "s129",
-        "s138",
-        "s136",
-        "s159"
+        "s144",
+        "s694"
       ],
       "ziele": [
         "s128",
         "s150",
         "s140",
+        "s691",
         "s158",
         "s151",
         "s141"
       ],
-      "kora": [
-        "s130",
-        "s157"
-      ],
-      "liście": [
-        "s156"
+      "nasiona": [
+        "s682"
       ]
     },
     "fakty": [
@@ -1139,11 +1481,341 @@
           "nazwa": "www.walaarzneimittel.de",
           "url": "https://www.walaarzneimittel.de/heilpflanzenlexikon-a-z/holunder"
         }
+      },
+      {
+        "id": "s295",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Bzu czarny to krzew lub małe drzewo, które może dorastać do 6 metrów, a starsze okazy nawet do 15 metrów wysokości.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sambucus nigra",
+          "url": "https://en.wikipedia.org/wiki/Sambucus_nigra"
+        }
+      },
+      {
+        "id": "s296",
+        "sekcja": "opis",
+        "czesc": "kora",
+        "tekst": "Młoda kora jest jasnoszara, z wiekiem zmienia się w szarą, podłużnie pofałdowaną skorupę z wyraźnymi przetchlinkami.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sambucus nigra",
+          "url": "https://en.wikipedia.org/wiki/Sambucus_nigra"
+        }
+      },
+      {
+        "id": "s297",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Liście są naprotległe, pierzasto zlożone, z pięcioma do siedmiu listek (rzadko dziewięcioma) o ząbkowanych brzegach, o długości 10–30 cm.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sambucus nigra",
+          "url": "https://en.wikipedia.org/wiki/Sambucus_nigra"
+        }
+      },
+      {
+        "id": "s298",
+        "sekcja": "opis",
+        "czesc": "owoce",
+        "tekst": "Owoce to połyskujące, ciemnofioletowe lub czarne pestkowce o średnicy 6–8 mm, zawierające 3-5 nasion.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sambucus nigra",
+          "url": "https://en.wikipedia.org/wiki/Sambucus_nigra"
+        }
+      },
+      {
+        "id": "s300",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Wszystkie części rośliny z wyjątkiem kwiatów i dojrzałych owoców są trujące dla ssaków, ponieważ zawierają cyjaniczny glikozyd sambunigryn.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sambucus nigra",
+          "url": "https://en.wikipedia.org/wiki/Sambucus_nigra"
+        }
+      },
+      {
+        "id": "s301",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "kora",
+        "tekst": "Kora bzu czarnego zawiera kryształy szczawianu wapnia.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sambucus nigra",
+          "url": "https://en.wikipedia.org/wiki/Sambucus_nigra"
+        }
+      },
+      {
+        "id": "s302",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Spożycie nieprzetworzonych termicznie owoców, liści, kory lub pędów może spowodować nudności, wymioty oraz silną biegunkę.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sambucus nigra",
+          "url": "https://en.wikipedia.org/wiki/Sambucus_nigra"
+        }
+      },
+      {
+        "id": "s303",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Produkty z bzu czarnego nie powinny być spożywane przez kobiety w ciąży ani przez osoby z alergią lub chorobami przewodu pokarmowego.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sambucus nigra",
+          "url": "https://en.wikipedia.org/wiki/Sambucus_nigra"
+        }
+      },
+      {
+        "id": "s304",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "kwiaty",
+        "tekst": "W Europie kwiaty bzu czarnego tradycyjnie spożywane są w formie syropu lub nalewki, rozcieńczanej wodą, znanej pod różnymi nazwami regionalnymi, np. socată w Rumunii.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sambucus nigra",
+          "url": "https://en.wikipedia.org/wiki/Sambucus_nigra"
+        }
+      },
+      {
+        "id": "s306",
+        "sekcja": "historia",
+        "czesc": "owoce",
+        "tekst": "Na Węgrzech produkuje się brandy z bzu, do którego wytworzenia 1 litra trunku zużywa się 50 kilogramów owoców.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sambucus nigra",
+          "url": "https://en.wikipedia.org/wiki/Sambucus_nigra"
+        }
+      },
+      {
+        "id": "s682",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "nasiona",
+        "tekst": "Nasiona oraz wszystkie zielone części rośliny zawierają glikozydy cyjanogenne, które mogą być toksyczne.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sambucus nigra",
+          "url": "https://en.wikipedia.org/wiki/Sambucus_nigra"
+        }
+      },
+      {
+        "id": "s683",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "kwiaty",
+        "tekst": "Komitet ds. Ziołowych Produktów Leczniczych Unii Europejskiej (HMPC) uznał tradycyjne zastosowanie kwiatów bzu czarnego do łagodzenia wczesnych objawów przeziębienia.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sambucus nigra",
+          "url": "https://en.wikipedia.org/wiki/Sambucus_nigra"
+        }
+      },
+      {
+        "id": "s684",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "W uprawach komercyjnych plantacje zazwyczaj rozmnaża się z jednorocznych pędów zdrewniałych posiadających własne korzenie.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sambucus nigra",
+          "url": "https://en.wikipedia.org/wiki/Sambucus_nigra"
+        }
+      },
+      {
+        "id": "s685",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "W tradycji ludowej krzew bzu sadzony w ogródku domowym uznawano za drzewo życia i wierzono, że stanowił on skuteczną ochronę przed czarną magią, czarownicami, pożarem oraz uderzeniem pioruna.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Schwarzer Holunder",
+          "url": "https://de.wikipedia.org/wiki/Schwarzer_Holunder"
+        }
+      },
+      {
+        "id": "s686",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "W dawnych wierzeniach sądzono, że przebywanie w pobliżu bzu zapewniało bezpieczeństwo przed ukąszeniami węży oraz użukami komarów, a także oddawało cześć mieszkającym w nim dobrym duchom domowym.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Schwarzer Holunder",
+          "url": "https://de.wikipedia.org/wiki/Schwarzer_Holunder"
+        }
+      },
+      {
+        "id": "s687",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "W dialektach niemieckich roślina nosi liczne lokalne określenia, takie jak Hunnel, Hündele, Húlungr, Húlandr, Hulla, Hollert, Holder, Haulert, Dolder oraz Fledderbeernbusch.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Schwarzer Holunder",
+          "url": "https://de.wikipedia.org/wiki/Schwarzer_Holunder"
+        }
+      },
+      {
+        "id": "s688",
+        "sekcja": "opis",
+        "czesc": "kora",
+        "tekst": "Grubsze gałęzie oraz pień bzu czarnego pokrywa podłużnie spękana, szarobrązowa kora, która z czasem ma tendencję do łuszczenia się w postaci pasm.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Schwarzer Holunder",
+          "url": "https://de.wikipedia.org/wiki/Schwarzer_Holunder"
+        }
+      },
+      {
+        "id": "s689",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Liście bzu rozwijają się wyjątkowo wcześnie w roku, bo już w marcu lub kwietniu, na długo przed pojawieniem się kwiatów.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Schwarzer Holunder",
+          "url": "https://de.wikipedia.org/wiki/Schwarzer_Holunder"
+        }
+      },
+      {
+        "id": "s690",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Dodatni gatunkowy 'nigra' w nazwie łacińskiej oznacza 'czarny' lub 'ciemny'.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 西洋接骨木",
+          "url": "https://zh.wikipedia.org/wiki/%E8%A5%BF%E6%B4%8B%E6%8E%A5%E9%AA%A8%E6%9C%A8"
+        }
+      },
+      {
+        "id": "s691",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "ziele",
+        "tekst": "W medycynie tradycyjnej łodygi i pędy bzu czarnego, podobnie jak innych gatunków z tego samego rodzaju, są stosowane jako środek napotny przeciwzapalny, moczopędny, a także do leczenia reumatyzmu, poprawy mikrokrążenia i łagodzenia objawów zapalnych.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 西洋接骨木",
+          "url": "https://zh.wikipedia.org/wiki/%E8%A5%BF%E6%B4%8B%E6%8E%A5%E9%AA%A8%E6%9C%A8"
+        }
+      },
+      {
+        "id": "s692",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Liście mają intensywny, nieprzyjemny zapach, gdy zostaną połechtane lub zgniecione.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 西洋接骨木",
+          "url": "https://zh.wikipedia.org/wiki/%E8%A5%BF%E6%B4%8B%E6%8E%A5%E9%AA%A8%E6%9C%A8"
+        }
+      },
+      {
+        "id": "s693",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Kwiaty rośliny charakteryzują się silnym, specjalnym aromatem.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 西洋接骨木",
+          "url": "https://zh.wikipedia.org/wiki/%E8%A5%BF%E6%B4%8B%E6%8E%A5%E9%AA%A8%E6%9C%A8"
+        }
+      },
+      {
+        "id": "s694",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "owoce",
+        "tekst": "Owoce mają silny kolor i łagodny ostry smak, a ich spożycie w stanie surowym może prowadzić do wymiotów lub biegunki, stąd konieczna jest obróbka termiczna.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 西洋接骨木",
+          "url": "https://zh.wikipedia.org/wiki/%E8%A5%BF%E6%B4%8B%E6%8E%A5%E9%AA%A8%E6%9C%A8"
+        }
+      },
+      {
+        "id": "s696",
+        "sekcja": "medycyna_wschodu",
+        "czesc": "kwiaty",
+        "tekst": "W tradycji medycynowej kwiaty bzu czarnego znane są jako surowiec „sessakutsubokukwa” (dosł. kwiaty bodziszka), zbierane w fazie półpełnego rozkwitu i suszone w cieniu oraz przewiewnym miejscu.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): セイヨウニワトコ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%BB%E3%82%A4%E3%83%A8%E3%82%A6%E3%83%8B%E3%83%AF%E3%83%88%E3%82%B3"
+        }
+      },
+      {
+        "id": "s697",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "liście",
+        "tekst": "Liście stosowano zewnętrznie jako okłady na stłuczenia i skręcenia.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): セイヨウニワトコ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%BB%E3%82%A4%E3%83%A8%E3%82%A6%E3%83%8B%E3%83%AF%E3%83%88%E3%82%B3"
+        }
+      },
+      {
+        "id": "s698",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "kwiaty",
+        "tekst": "Kwiaty tradycyjnie wykorzystywano w leczeniu przeziębienia, alergii (kataru siennego), zapalenia gardła oraz zapalenia stawów, a także jako łagodny środek przeczyszczający.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): セイヨウニワトコ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%BB%E3%82%A4%E3%83%A8%E3%82%A6%E3%83%8B%E3%83%AF%E3%83%88%E3%82%B3"
+        }
+      },
+      {
+        "id": "s699",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "W mitologii nordyckiej wierzy się, że Hilda, matka królowa, zamieszkiwała w korzeniach bzu (Elder).",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): セイヨウニワトコ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%BB%E3%82%A4%E3%83%A8%E3%82%A6%E3%83%8B%E3%83%AF%E3%83%88%E3%82%B3"
+        }
+      },
+      {
+        "id": "s700",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "W tradycji chrześcijańskiej przetrwało przekonanie, że drzewo, na którym Judasz powiesił się po zdradzie Jezusa, oraz krzyż, na którym Chrystus został ukrzyżowany, zostały uszmudowane z bzu czarnego.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): セイヨウニワトコ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%BB%E3%82%A4%E3%83%A8%E3%82%A6%E3%83%8B%E3%83%AF%E3%83%88%E3%82%B3"
+        }
+      },
+      {
+        "id": "s701",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "W serii „Harry Potter” bieszczadzki (niwotoko) jest materiałem z którego wykonano Wandę Bieszczadzką, określaną jako najsilniejsza różdżka w świecie magii.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): セイヨウニワトコ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%BB%E3%82%A4%E3%83%A8%E3%82%A6%E3%83%8B%E3%83%AF%E3%83%88%E3%82%B3"
+        }
+      },
+      {
+        "id": "s702",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "liście",
+        "tekst": "Liście wydzielają intensywny zapach, który w przeszłości wykorzystywano do odpędzania duchów złośliwych.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): セイヨウニワトコ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%BB%E3%82%A4%E3%83%A8%E3%82%A6%E3%83%8B%E3%83%AF%E3%83%88%E3%82%B3"
+        }
       }
     ]
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-10-05",
     "w_url": false,
     "zdjecia": [
       {
@@ -1190,51 +1862,150 @@
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-10-05",
     "pola": {
-      "czesci_rosliny.owoce.skladniki_aktywne": {
-        "tytul": "Surowce i zbiory - Fructus Sambuci: Substancje czynne",
-        "typ": "lista",
-        "oryginal": [
-          "Antocyjany (sambucyna)",
-          "Witaminy (A, C, z grupy B)",
-          "Kwasy organiczne",
-          "Pektyny",
-          "Glikozydy cyjanogenne (sambunigryna - rozkłada się w wysokiej temperaturze)"
-        ],
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Szybko rosnący krzew lub niskie drzewo (do 10 m) o charakterystycznej, spękanej, korkowatej korze. Pędy wypełnione są lekkim, białym rdzeniem. Bez czarny to jedna z najbardziej zasłużonych roślin w historii medycyny ludowej – wierzono, że w jego korzeniach mieszka opiekuńczy duch ogniska domowego, dlatego rzadko decydowano się na jego wycięcie. Jest rośliną wskaźnikową gleb bogatych w azot.",
         "tresc": [
           {
-            "tekst": "Owoce bzu czarnego zawierają antocyjany (w tym sambucynę), których obecność oraz bogata zawartość fenolów nadaje im charakterystyczny ciemny kolor.",
+            "tekst": "Bez czarny to szybko rosnący krzew lub małe drzewo, które osiąga do 10 m, a starsze okazy nawet do 15 metrów wysokości, o charakterystycznej, spękanej, korkowatej korze.",
             "zrodla": [
               3
             ],
             "fakty": [
-              "s143"
+              "s295"
             ]
           },
           {
-            "tekst": "W surowcu obecne są również witaminy A, C oraz witaminy z grupy B.",
+            "tekst": "Pędy rośliny wypełnione są lekkim, białym rdzeniem.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Obecne są w nich glikozydy cyjanogenne, do których należy sambunigryna rozkładająca się pod wpływem wysokiej temperatury.",
+            "tekst": "Jest to jedna z najbardziej zasłużonych roślin w historii medycyny ludowej – wierzono, że w jego korzeniach mieszka opiekuńczy duch ogniska domowego, dlatego rzadko decydowano się na jego wycięcie.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Kwasy organiczne",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Pektyny",
+            "tekst": "Bez czarny jest rośliną wskaźnikową gleb bogatych w azot.",
             "zrodla": [],
             "fakty": []
           }
         ],
         "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "3cd3e45f1f6b3c31"
+        "wejscie": "145357ca397bc421"
+      },
+      "czesci_rosliny.kora.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Kora (nowa część z sieci): Opis surowca",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Grubsze gałęzie oraz pień bzu czarnego pokrywa podłużnie spękana, szarobrązowa kora, która z czasem ma tendencję do łuszczenia się w postaci pasm.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s688"
+            ]
+          },
+          {
+            "tekst": "Młoda kora jest jasnoszara, z wiekiem zmienia się w szarą, podłużnie pofałdowaną skorupę z wyraźnymi przetchlinkami.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s296"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "770a7f5e8c5d6253"
+      },
+      "czesci_rosliny.kwiaty.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Flos Sambuci: Opis surowca",
+        "typ": "tekst",
+        "oryginal": "Całe kwiatostany zbierane w słoneczne dni, gdy większość kwiatów jest rozwinięta, ale nie opada.",
+        "tresc": [
+          {
+            "tekst": "Całe kwiatostany zbierane w słoneczne dni, gdy większość kwiatów jest rozwinięta, ale nie opada.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwiaty rośliny charakteryzują się silnym, specjalnym aromatem.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s693"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "9ba466b059ea491f"
+      },
+      "czesci_rosliny.liście.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Liście (nowa część z sieci): Opis surowca",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Liście bzu rozwijają się wyjątkowo wcześnie w roku, bo już w marcu lub kwietniu, na długo przed pojawieniem się kwiatów.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s689"
+            ]
+          },
+          {
+            "tekst": "Liście są naprotległe, pierzasto złożone, z pięcioma do siedmiu listek (rzadko dziewięcioma) o ząbkowanych brzegach, o długości 10–30 cm.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s297"
+            ]
+          },
+          {
+            "tekst": "Liście mają intensywny, nieprzyjemny zapach, gdy zostaną połechtane lub zgniecione.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s692"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "341f145fc00cf30f"
+      },
+      "czesci_rosliny.owoce.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Fructus Sambuci: Opis surowca",
+        "typ": "tekst",
+        "oryginal": "Dojrzałe, czarnofioletowe owoce zbierane w całych gronach.",
+        "tresc": [
+          {
+            "tekst": "Owocami są połyskujące, ciemnofioletowe lub czarne pestkowce o średnicy 6–8 mm, zawierające 3-5 nasion, które posiadają charakterystyczny ciemny kolor wynikający z bogatej zawartości fenolów, szczególnie antocyjanów.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s143",
+              "s298"
+            ]
+          },
+          {
+            "tekst": "Dojrzałe owoce o tej barwie zbiera się w całych gronach.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "c57b3a90d45d0351"
       },
       "czesci_rosliny.kwiaty.czas_zbioru": {
         "tytul": "Surowce i zbiory - Flos Sambuci: Zbiór",
@@ -1242,7 +2013,12 @@
         "oryginal": "Maj - Czerwiec.",
         "tresc": [
           {
-            "tekst": "Kwiaty bzu czarnego należy ścinać w pełni rozkwitłe, najlepiej w słoneczny dzień, a następnie suszyć w przewiewnym i suchym miejscu w temperaturze nieprzekraczającej 35 stopni Celsjusza.",
+            "tekst": "Zbiór przypada na maj i czerwiec.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwiaty należy ścinać całymi baldachami w słoneczny dzień, gdy są w pełni rozkwitnięte.",
             "zrodla": [
               1
             ],
@@ -1251,13 +2027,17 @@
             ]
           },
           {
-            "tekst": "Maj - Czerwiec.",
-            "zrodla": [],
-            "fakty": []
+            "tekst": "Następnie suszy się je w przewiewnym i suchym miejscu w temperaturze nieprzekraczającej 35 stopni Celsjusza.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s131"
+            ]
           }
         ],
-        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "f64094668d2d53e8"
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "e4180bfa150e241a"
       },
       "zastosowanie.medyczne": {
         "tytul": "Praktyczne zastosowanie - Medycyna",
@@ -1265,12 +2045,7 @@
         "oryginal": "Przeziębienie, grypa, stany gorączkowe, katar, zapalenie zatok. Pomocniczo w leczeniu nerwobólów (rwa kulszowa) oraz jako środek oczyszczający organizm z toksyn (detoks wiosenny i jesienny).",
         "tresc": [
           {
-            "tekst": "Bez czarny (Sambucus nigra) jest stosowany w medycynie ludowej i ziołolecznictwie ze względu na swoje właściwości lecznicze, które obejmują przeziębienie, grypę, stany gorączkowe, katar oraz zapalenie zatok. Dodatkowo, może być pomocny w łagodzeniu bólów nerwowych (rwa kulszowa) oraz jako środek oczyszczający organizm z toksyn (detoks wiosenny i jesienny).",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Oficjalnym surowcem zielarskim według Farmakopei Polskiej są kwiaty oraz dojrzałe, czarne owoce, lecz właściwości lecznicze wykazują także kora, korzenie i liście.",
+            "tekst": "Kwiaty oraz dojrzałe, czarne owoce są oficjalnym surowcem zielarskim według Farmakopei Polskiej, jednak właściwości lecznicze wykazują również liście, kora oraz korzenie.",
             "zrodla": [
               1
             ],
@@ -1279,26 +2054,18 @@
             ]
           },
           {
-            "tekst": "W tradycyjnej medycynie ekstrakty z kwiatów i owoców bzu stosuje się w celu złagodzenia objawów przeziębienia i grypy.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s136"
-            ]
+            "tekst": "Wykorzystuje się ją pomocniczo w leczeniu nerwobólów, takich jak rwa kulszowa, a także jako środek oczyszczający organizm z toksyn podczas wiosennego i jesiennego detoksu.",
+            "zrodla": [],
+            "fakty": []
           },
           {
-            "tekst": "W nowoczesnych preparatach ziołowych wyciągi z bzu są często łączne z jeżówką oraz propolisem pszczelim w celu wsparcia układu odpornościowego.",
-            "zrodla": [
-              4
-            ],
-            "fakty": [
-              "s158"
-            ]
+            "tekst": "Przeziębienie, grypa, stany gorączkowe, katar, zapalenie zatok.",
+            "zrodla": [],
+            "fakty": []
           }
         ],
-        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "61365515c293f575"
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "bb136e0a9f6fd2a1"
       },
       "czesci_rosliny.owoce.ostrzezenia": {
         "tytul": "Surowce i zbiory - Fructus Sambuci: Ostrzeżenia",
@@ -1306,16 +2073,7 @@
         "oryginal": "NIGDY nie spożywać surowych owoców ani soku na zimno! Zawarta w nich sambunigryna powoduje silne nudności, wymioty i zawroty głowy. Obróbka termiczna (gotowanie) całkowicie neutralizuje toksynę.",
         "tresc": [
           {
-            "tekst": "Nigdy nie spożywać surowych owoców ani soku na zimno! Zawarta w nich sambunigrina powoduje silne nudności, wymioty i zawroty głowy. Obróbka termiczna (gotowanie) całkowicie neutralizuje toksynę.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s144"
-            ]
-          },
-          {
-            "tekst": "Owoce bzu czarnego zawierają różne fitochemikalne substancje, takie jak alkaloidy, lectiny i glikozydy cyjanowe, które mogą być trujące w stanie surowym.",
+            "tekst": "Owoce bzu czarnego zawierają fitochemikalne substancje, takie jak alkaloidy, lektyny i glikozydy cyjanogenne, w tym sambunigrynę, przez co w stanie surowym oraz w formie soku na zimno są trujące i nie wolno ich w takiej postaci spożywać.",
             "zrodla": [
               3
             ],
@@ -1325,40 +2083,38 @@
             ]
           },
           {
-            "tekst": "Surowe owoce bzu czarnego są trujące i muszą być poddane obróbce termicznej, aby były bezpieczne do spożycia.",
+            "tekst": "Ich spożycie może prowadzić do silnych nudności, wymiotów, bólów żołądka, zawrotów głowy oraz ciężkiej biegunki.",
             "zrodla": [
-              3
+              3,
+              5
             ],
             "fakty": [
-              "s135"
+              "s144",
+              "s694"
             ]
           },
           {
-            "tekst": "Surowe owoce i sok z surowych owoców są toksyczne i mogą powodować ból brzucha, wymioty i ciężką biegunkę.",
+            "tekst": "Konieczna jest obróbka termiczna, taka jak gotowanie, która całkowicie neutralizuje toksyny i sprawia, że owoce stają się bezpieczne.",
             "zrodla": [
-              3
+              3,
+              5
             ],
             "fakty": [
-              "s144"
+              "s135",
+              "s694"
             ]
           }
         ],
-        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "3a0a3f7e167ba95b"
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "edba0b9149f680c3"
       },
-      "czesci_rosliny.kwiaty.skladniki_aktywne": {
-        "tytul": "Surowce i zbiory - Flos Sambuci: Substancje czynne",
+      "czesci_rosliny.ziele.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Substancje czynne",
         "typ": "lista",
-        "oryginal": [
-          "Flawonoidy (rutyna, kwercetyna)",
-          "Kwasy fenolowe (chlorogenowy)",
-          "Śluzy",
-          "Olejek eteryczny",
-          "Sole mineralne (potas)"
-        ],
+        "oryginal": null,
         "tresc": [
           {
-            "tekst": "Flawonoidy (rutyna, kwercetyna) oraz kwasy fenolowe (chlorogenowy) występują w kwiatach bzu czarnego, które zawierają także śluzy, olejek eteryczny i sole mineralne (potas).",
+            "tekst": "Kwiaty bzu czarnego zawierają flawonoidy z rutyną jako głównym składnikiem, pochodne hydroksycynamonowe oraz olejki eteryczne.",
             "zrodla": [
               2
             ],
@@ -1367,8 +2123,8 @@
             ]
           }
         ],
-        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "9265b8f1d64edaed"
+        "model": "bez LLM: za duzo zdan spoza zrodel",
+        "wejscie": "cf5055696089a308"
       },
       "czesci_rosliny.kora.wlasciwości": {
         "tytul": "Surowce i zbiory - Kora (nowa część z sieci): Działanie",
@@ -1396,7 +2152,12 @@
         "oryginal": "Silnie napotne, obniżające gorączkę, uszczelniające naczynia włosowate, wykrztuśne, moczopędne.",
         "tresc": [
           {
-            "tekst": "Napary z kwiatów bzu czarnego wykazują silne działanie napotne, obniżające gorączkę, uszczelniające naczynia włosowate, wykrztuśne oraz moczopędne. Są one szczególnie skuteczne w leczeniu przeziębień, stanów zapalnych dróg oddechowych oraz chorób reumatycznych, a ich działanie w czasie przeziębienia jest wielokrotnie silniejsze niż napary z lipy.",
+            "tekst": "Działanie kwiatów bzu czarnego jest silnie napotne, obniżające gorączkę, uszczelniające naczynia włosowate, wykrztuśne oraz moczopędne.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Napary z kwiatów stosuje się przy przeziębieniach, stanach zapalnych dróg oddechowych oraz chorobach reumatycznych, a ich działanie w czasie przeziębienia opisywano jako wielokrotnie silniejsze niż napary z lipy.",
             "zrodla": [
               1
             ],
@@ -1405,17 +2166,71 @@
             ]
           },
           {
-            "tekst": "Kwiaty bzu czarnego, w połączeniu z rumiankiem, były tradycyjnie stosowane do łagodzenia bólów menstruacyjnych.",
+            "tekst": "Kwiaty bzu czarnego w połączeniu z rumiankiem tradycyjnie stosowano do łagodzenia bólów menstruacyjnych.",
             "zrodla": [
               1
             ],
             "fakty": [
               "s138"
             ]
+          },
+          {
+            "tekst": "W tradycyjnej medycynie ekstrakty z kwiatów i owoców bzu stosuje się w celu złagodzenia objawów przeziębienia i grypy.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s136"
+            ]
+          },
+          {
+            "tekst": "Komitet ds. Ziołowych Produktów Leczniczych Unii Europejskiej uznał tradycyjne zastosowanie kwiatów bzu czarnego do łagodzenia wczesnych objawów przeziębienia.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s683"
+            ]
+          },
+          {
+            "tekst": "Kwiaty tradycyjnie wykorzystywano w leczeniu przeziębienia, alergii, zapalenia gardła oraz zapalenia stawów, a także jako łagodny środek przeczyszczający.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s698"
+            ]
           }
         ],
-        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "9a93e342afc2ca17"
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "443d026bec70aaea"
+      },
+      "czesci_rosliny.liście.wlasciwości": {
+        "tytul": "Surowce i zbiory - Liście (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Liście były używane zewnętrznie w formie okładów przykładanych na stłuczenia i skręcenia.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s697"
+            ]
+          },
+          {
+            "tekst": "Rodzimi Amerykanie tradycyjnie wykorzystywali liście oraz kwiaty jako okłady nakładane na rany.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s156"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "58cfc695ae2fc63e"
       },
       "czesci_rosliny.owoce.wlasciwości": {
         "tytul": "Surowce i zbiory - Fructus Sambuci: Działanie",
@@ -1423,7 +2238,12 @@
         "oryginal": "Antywirusowe (blokują wnikanie wirusów grypy do komórek), immunostymulujące, przeciwbólowe, lekko przeczyszczające i odtruwające.",
         "tresc": [
           {
-            "tekst": "Antywirusowe (blokują wniknięcie wirusów grypy do komórek), immunostymulujące, przeciwbólowe, lekko przeczyszczające i odtruwające. Z dojrzałych owoców wykonuje się odwary tradycyjnie stosowane w leczeniu migren, nerwobólów, biegunki oraz chorób reumatycznych i neurologicznych.",
+            "tekst": "Działanie owoców bzu czarnego obejmuje właściwości antywirusowe polegające na blokowaniu wnikania wirusów grypy do komórek, a także działanie immunostymulujące, przeciwbólowe, lekko przeczyszczające i odtruwające.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Z dojrzałych owoców wykonuje się odwary tradycyjnie stosowane w leczeniu migreny, nerwobólów, biegunki oraz chorób reumatycznych i neurologicznych.",
             "zrodla": [
               1
             ],
@@ -1441,90 +2261,35 @@
             ]
           }
         ],
-        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "13a683b5fd8c4bc6"
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "0b00f4f061808132"
       },
-      "zastosowanie.kulinarne": {
-        "tytul": "Praktyczne zastosowanie - Kuchnia",
+      "czesci_rosliny.ziele.wlasciwości": {
+        "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Działanie",
         "typ": "tekst",
-        "oryginal": "Syrop z kwiatów bzu (tzw. Hyćka), smażone baldachy bzu w cieście naleśnikowym. Z owoców: soki, dżemy, konfitury (często łączone z jabłkami) oraz lecznicze nalewki.",
+        "oryginal": null,
         "tresc": [
           {
-            "tekst": "Syrop z kwiatów bzu (tzw. Hyćka), smażone baldachy bzu w cieście naleśnikowym. Z owoców: soki, dżemy, konfitury (często łączone z jabłkami) oraz lecznicze nalewki.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Owoce bzu czarnego są często wykorzystywane do wyrobu napojów, ciast oraz przetworów.",
+            "tekst": "W medycynie tradycyjnej łodygi i pędy bzu czarnego, podobnie jak innych gatunków z tego samego rodzaju, są stosowane jako środek napotny przeciwzapalny, moczopędny, a także do leczenia reumatyzmu, poprawy mikrokrążenia i łagodzenia objawów zapalnych.",
             "zrodla": [
-              4
+              5
             ],
             "fakty": [
-              "s155"
+              "s691"
             ]
-          }
-        ],
-        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "5a19cd92b32d79bb"
-      },
-      "zastosowanie.ogrodowe": {
-        "tytul": "Praktyczne zastosowanie - Ogród",
-        "typ": "tekst",
-        "oryginal": "Roślina osłonowa, przyciągająca ptaki (zjadają owoce) i pożyteczne owady. Gnojówka z liści bzu odstrasza krety i nornice.",
-        "tresc": [
-          {
-            "tekst": "Bez czarny (Sabucus nigra) jest rośliną osłonowa, przyciągającą ptaki (zjadają owoce) i pożyteczne owady. Gnojówka z liści bzu odstrasza krety i nornice.",
-            "zrodla": [],
-            "fakty": []
           },
           {
-            "tekst": "Wywary z pędów bzu czarnego, zawierające gałązki z liśćmi, były dawniej wykorzystywane do ekologicznego zwalczania szkodników, takich jak krety, nornice, rolnice, bielinek kapustnik i mszyce.",
+            "tekst": "Wywary z pędów zawierających gałązki z liśćmi wykorzystywano dawniej do ekologicznego zwalczania szkodników, takich jak krety, nornice, rolnice, bielinek kapustnik i mszyce.",
             "zrodla": [
               1
             ],
             "fakty": [
               "s140"
             ]
-          },
-          {
-            "tekst": "Bzu czarnego uprawia się głównie jako ozdobną roślinę, ale także komercyjnie dla kwiatów i owoców.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s146"
-            ]
           }
         ],
-        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "87b4963156911aa5"
-      },
-      "zastosowanie.rzemieslnicze": {
-        "tytul": "Praktyczne zastosowanie - Rzemiosło",
-        "typ": "tekst",
-        "oryginal": "Z młodych pędów po usunięciu miękkiego rdzenia od wieków wyrabiano fujarki, gwizdki i rurki. Barwnik z owoców służy do barwienia wina i tkanin na kolor fioletowy/purpurowy.",
-        "tresc": [
-          {
-            "tekst": "Z młodych pędów po usunięciu miękkiego rdzenia od wieków wyrabiano fujarki, gwizdki i rurki. Barwnik z owoców służy do barwienia wina i tkanin na kolor fioletowy/purpurowy.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s133"
-            ]
-          },
-          {
-            "tekst": "Dawniej sok z owoców wykorzystywano do farbowania brwi i rzęs, przyciemniania win oraz barwienia jedwabiu na kolor oliwkowy.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s133"
-            ]
-          }
-        ],
-        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "c0a625af50197263"
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "57d9f3bc6f30a4e4"
       },
       "zastosowanie.kosmetyczne": {
         "tytul": "Praktyczne zastosowanie - Kosmetyka",
@@ -1532,7 +2297,16 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Wyciągi z bzu czarnego znajdują zastosowanie w produkcji maseczek i kremów, szczególnie do pielęgnacji cery starzejącej się ze względu na działanie zmiękczające, przeciwzmarszczkowe i wybielające.",
+            "tekst": "Sok z owoców bezczarny był tradycyjnie używany do farbowania brwi i rzęs, przyciemniania win oraz barwienia jedwabiu na kolor oliwkowy.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s133"
+            ]
+          },
+          {
+            "tekst": "Wyciągi z bzu czarnego znajdują zastosowanie w produkcji maseczek i kremów, szczególnie do pielęgnacji cery starzejącej się, ze względu na działanie zmiękczające, przeciwzmarszczkowe i wybielające.",
             "zrodla": [
               1
             ],
@@ -1541,8 +2315,8 @@
             ]
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "b34ec437c67a9a15"
+        "model": "groq/openai/gpt-oss-20b",
+        "wejscie": "530495cbbcbbaba2"
       },
       "ciekawostki": {
         "tytul": "Wiedza tajemna - Ciekawostki",
@@ -1555,97 +2329,47 @@
         ],
         "tresc": [
           {
-            "tekst": "W tradycji geramańskiej bez był poświęcony bogini Holle (Pan Pani Zamieci), która opiekowała się domostwem i roślinami. W starożytnym Egipcie tę roślinę wykorzystywano do leczeń, natomiast w Europie dawniej podawano kwiaty w celu pobudzenia laktacji u kobiet karmiących.",
+            "tekst": "W tradycji germańskiej bez był poświęcony bogini Holle (Pani Zamieci), która opiekowała się domostwem i roślinami, a w legendzie skandynawskiej Holunder był miejscem zamieszkania bogini Hel, natomiast w mitologii germańskiej – bogini Freyji, podczas gdy w mitologii nordyckiej wierzy się, że Hilda, matka królowa, zamieszkiwała w korzeniach bzu (Elder), a nazwa „holunder” pochodzi od starożytnego określenia „hold”, co oznaczało gnędrzawość lub wierność, a także duch.",
             "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s127"
-            ]
-          },
-          {
-            "tekst": "Kwiaty bzu zbierane rano mają najsilniejszy aromat, ponieważ słońce nie zdążyło jeszcze odparować olejków eterycznych. W tradycji ludowej wierzyno, że bez 'wyciąga' chorobę z domu, dlatego sadzono go blisko okien sypialni.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Nazwa 'holunder' pochodzi od starożytnego określenia 'hold', co oznaczało gnędrzowość lub wierność, a także duch. W tradycji ludowej wierzyno, że uszkodzenie lub wycięcie krzewu przynosi niesczęście lub śmierć, a jego uschnięcie zwiastowało zgon członka rodziny.",
-            "zrodla": [
-              2,
-              5
+              4,
+              7
             ],
             "fakty": [
               "s162",
-              "s153"
-            ]
-          },
-          {
-            "tekst": "Według legendy nieprzyjemny zapach liści bzu wynika z faktu, że Judas powiesił się na tym drzewie. Wśród ludowych nazw bzu czarnego wyróżnia się m.in. bzowinę, bzinę, buzinę, hyczkę, flider oraz hebd.",
-            "zrodla": [
-              1,
-              2
-            ],
-            "fakty": [
-              "s154",
-              "s126"
-            ]
-          },
-          {
-            "tekst": "W tradycji ludowej wierzyno, że bzu czarnego było miejsce zamieszkania dobrych duchów domowych, a jego wycięcie przynosiło niesczęście. W dialektach niemieckich roślina nosi nazwy takie jak Holderbusch, Holler, a w języku dolnoniemieckim określa się ją mianem Fliedr.",
-            "zrodla": [
-              2,
-              5
-            ],
-            "fakty": [
-              "s161",
-              "s152"
-            ]
-          },
-          {
-            "tekst": "Miękki rdzeń pędów bzu czarnego wykorzystywano dawniej w technice mikroskopowej do przygotowywania preparatów oraz w zegarmistrzostwie do czyszczenia delikatnych mechanizmów. Charkterystyczny zapach pędów bzu czarnego wykorzystywano dawniej do odstraszania much, sporządzając z nich uprzęże dla koni i krów.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s134",
-              "s141"
-            ]
-          },
-          {
-            "tekst": "Harry Potter posiadał 'Czarną Różdżkę' (Elder Wand), która według legendy była wykonana właśnie z drewna bzu czarnego.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "W legendzie skandinawskiej Holunder był miejscem zamieszkania bogini Hel, a w mitologii germńskiej – bogini Freyji.",
-            "zrodla": [
-              5
-            ],
-            "fakty": [
+              "s699",
               "s160"
             ]
-          }
-        ],
-        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "17f39da6ab07efc7"
-      },
-      "czesci_rosliny.liście.wlasciwości": {
-        "tytul": "Surowce i zbiory - Liście (nowa część z sieci): Działanie",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
+          },
           {
-            "tekst": "Rodzimi Amerykanie tradycyjnie stosowali liście oraz kwiaty w postaci okładów nakładanych na rany.",
+            "tekst": "Harry Potter posiadał 'Czarną Różdżkę' (Elder Wand), która według legendy była wykonana właśnie z drewna bzu czarnego, a w serii „Harry Potter” materiał ten posłużył do wykonania potężnego przedmiotu określanego jako najsilniejsza różdżka w świecie magii.",
             "zrodla": [
               4
             ],
             "fakty": [
-              "s156"
+              "s701"
+            ]
+          },
+          {
+            "tekst": "Kwiaty bzu zbierane rano mają najsilniejszy aromat, ponieważ słońce nie zdążyło jeszcze odparować olejków eterycznych.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W medycynie ludowej wierzono, że bez 'wyciąga' chorobę z domu, dlatego sadzono go blisko okien sypialni, uznając go za drzewo życia i wierząc, że stanowił skuteczną ochronę przed czarną magią, czarownicami, pożarem oraz uderzeniem pioruna, a także zapewniał bezpieczeństwo przed ukąszeniami węży i oddawał cześć mieszkającym w nim dobrym duchom domowym, przy czym uszkodzenie, wycięcie lub uschnięcie krzewu przynosiło nieszczęście lub śmierć bądź zwiastowało zgon członka rodziny.",
+            "zrodla": [
+              2,
+              7
+            ],
+            "fakty": [
+              "s153",
+              "s685",
+              "s686",
+              "s161"
             ]
           }
         ],
         "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "19a635b048126856"
+        "wejscie": "05052338e53511a8"
       },
       "permakultura.funkcje": {
         "tytul": "Cykl życia i ekosystem - Permakultura - funkcje",
@@ -1670,6 +2394,80 @@
         "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
         "wejscie": "0355036edf9575b9"
       },
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": "Surowe owoce i sok z surowych owoców są toksyczne! Zawsze poddawaj owoce obróbce termicznej (gotowanie, pieczenie). Nie stosować kwiatów bzu przy ostrym zapaleniu nerek.",
+        "tresc": [
+          {
+            "tekst": "Surowe owoce i sok z surowych owoców są toksyczne, a spożycie nieprzetworzonych termicznie owoców, liści, kory lub pędów może spowodować nudności, wymioty oraz silną biegunkę.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s302"
+            ]
+          },
+          {
+            "tekst": "Zawsze poddawaj owoce obróbce termicznej (gotowanie, pieczenie).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Nasiona oraz wszystkie zielone części rośliny zawierają glikozydy cyjanogenne, które mogą być toksyczne.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s682"
+            ]
+          },
+          {
+            "tekst": "Wszystkie części rośliny z wyjątkiem kwiatów i dojrzałych owoców są trujące dla ssaków, ponieważ zawierają cyjaniczny glikozyd sambunigryn.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s300",
+              "s682"
+            ]
+          },
+          {
+            "tekst": "Produkty z bzu czarnego nie powinny być spożywane przez kobiety w ciąży ani przez osoby z alergią lub chorobami przewodu pokarmowego.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s303"
+            ]
+          },
+          {
+            "tekst": "Nie stosować kwiatów bzu przy ostrym zapaleniu nerek.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "2d0b5fe8fadc26ff"
+      },
+      "czesci_rosliny.kora.ostrzezenia": {
+        "tytul": "Surowce i zbiory - Kora (nowa część z sieci): Ostrzeżenia",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Kora bzu czarnego zawiera kryształy szczawianu wapnia.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s301"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "d4d519dda36e7c9b"
+      },
       "czesci_rosliny.kwiaty.ostrzezenia": {
         "tytul": "Surowce i zbiory - Flos Sambuci: Ostrzeżenia",
         "typ": "tekst",
@@ -1693,16 +2491,29 @@
         "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
         "wejscie": "9262d39eb36ba55a"
       },
-      "ostrzezenia": {
-        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+      "czesci_rosliny.liście.ostrzezenia": {
+        "tytul": "Surowce i zbiory - Liście (nowa część z sieci): Ostrzeżenia",
         "typ": "tekst",
-        "oryginal": "Surowe owoce i sok z surowych owoców są toksyczne! Zawsze poddawaj owoce obróbce termicznej (gotowanie, pieczenie). Nie stosować kwiatów bzu przy ostrym zapaleniu nerek.",
+        "oryginal": null,
         "tresc": [
           {
-            "tekst": "Surowe owoce i sok z surowych owoców są toksyczne! Zawsze poddawaj owoce obróbce termicznej (gotowanie, pieczenie). Nie stosować kwiatów bzu przy ostrym zapaleniu nerek.",
-            "zrodla": [],
-            "fakty": []
-          },
+            "tekst": "Liście wydzielają intensywny zapach, który w przeszłości wykorzystywano do odpędzania duchów złośliwych.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s702"
+            ]
+          }
+        ],
+        "model": "bez LLM: za duzo zdan spoza zrodel",
+        "wejscie": "852d7a433867446c"
+      },
+      "czesci_rosliny.ziele.ostrzezenia": {
+        "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Ostrzeżenia",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
           {
             "tekst": "Pyłek kwiatowy bzu czarnego należy do alergenów wywołujących katar sienny u osób przebywających w pobliżu kwitnących krzewów.",
             "zrodla": [
@@ -1713,27 +2524,60 @@
             ]
           }
         ],
-        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "e80e564ed60f71c1"
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "9ddf1930ae9fbe13"
+      },
+      "zastosowanie.ogrodowe": {
+        "tytul": "Praktyczne zastosowanie - Ogród",
+        "typ": "tekst",
+        "oryginal": "Roślina osłonowa, przyciągająca ptaki (zjadają owoce) i pożyteczne owady. Gnojówka z liści bzu odstrasza krety i nornice.",
+        "tresc": [
+          {
+            "tekst": "Bzu czarnego uprawia się głównie jako roślinę ozdobną, a także komercyjnie dla kwiatów i owoców.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s146"
+            ]
+          },
+          {
+            "tekst": "W uprawach komercyjnych plantacje zazwyczaj rozmnaża się z jednorocznych pędów zdrewniałych posiadających własne korzenie.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s684"
+            ]
+          },
+          {
+            "tekst": "Jest to roślina osłonowa, przyciągająca ptaki, które zjadają owoce, oraz pożyteczne owady.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Gnojówka z liści bzu odstrasza krety i nornice.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "f3d11f6a06851d22"
       }
     },
     "uzyte_fakty": [
-      "s126",
-      "s127",
       "s128",
       "s129",
       "s130",
       "s131",
       "s132",
       "s133",
-      "s134",
       "s135",
       "s136",
       "s137",
       "s138",
       "s139",
       "s140",
-      "s141",
       "s142",
       "s143",
       "s144",
@@ -1741,17 +2585,37 @@
       "s146",
       "s150",
       "s151",
-      "s152",
       "s153",
-      "s154",
-      "s155",
       "s156",
       "s157",
-      "s158",
       "s159",
       "s160",
       "s161",
-      "s162"
+      "s162",
+      "s295",
+      "s296",
+      "s297",
+      "s298",
+      "s300",
+      "s301",
+      "s302",
+      "s303",
+      "s682",
+      "s683",
+      "s684",
+      "s685",
+      "s686",
+      "s688",
+      "s689",
+      "s691",
+      "s692",
+      "s693",
+      "s694",
+      "s697",
+      "s698",
+      "s699",
+      "s701",
+      "s702"
     ]
   }
 }

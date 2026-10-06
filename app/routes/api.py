@@ -1,7 +1,7 @@
 # app/routes/api.py
 import re
 from flask import Blueprint, jsonify
-from app.utils.helpers import get_all_recipes, get_all_plants_list, get_plant_data
+from app.utils.helpers import get_all_recipes, get_all_plants_list, get_plant_data, get_recipe_store_files
 
 api_bp = Blueprint('api', __name__, url_prefix='/api')
 
@@ -50,6 +50,51 @@ def recipe_suggestions():
 def api_all_recipes():
     return jsonify(get_all_recipes())
 
+@api_bp.route('/przepisy_pliki.json')
+def api_recipe_store_files():
+    """Pliki magazynu przepisow: ktore sa wczytywane (najnowsze w serii), a ktore sa tylko historia."""
+    files = get_recipe_store_files()
+    return jsonify({'pliki': files, 'wczytywane': [f['name'] for f in files if f['used']]})
+
 @api_bp.route('/all_plants.json')
 def api_all_plants():
     return jsonify([get_plant_data(pid) | {'slug': pid} for pid in get_all_plants_list() if get_plant_data(pid)])
+
+
+def _ciekawostki_tekst(v):
+    return " ".join(str(v).split()) if isinstance(v, str) else ""
+
+
+@api_bp.route('/ciekawostki.json')
+def api_ciekawostki():
+    """Wszystkie ciekawostki do paska na gorze strony (static/js/ciekawostki.js losuje je po kolei).
+    Zrodla: pole "ciekawostki" plikow roslin, sekcja "ciekawostki" wiedzy z Siedziby, wiedza o swietach Kola Roku.
+    Format: [{"t": tekst, "r": roslina/naglowek, "id": id rosliny lub null}]"""
+    from data_builder import FESTIVAL_KNOWLEDGE
+    out, seen = [], set()
+
+    def add(text, label, pid=None):
+        text = _ciekawostki_tekst(text)
+        if len(text) < 20 or text in seen:
+            return
+        seen.add(text)
+        out.append({'t': text, 'r': label, 'id': pid})
+
+    for pid in get_all_plants_list():
+        data = get_plant_data(pid)
+        if not isinstance(data, dict):
+            continue
+        name = data.get('nazwa_pl') or pid
+        for c in data.get('ciekawostki') or []:
+            add(c, name, pid)
+        wiedza = data.get('wiedza') if isinstance(data.get('wiedza'), dict) else {}
+        for sekcja in wiedza.get('sekcje') or []:
+            if isinstance(sekcja, dict) and 'ciekaw' in str(sekcja.get('klucz', '')):
+                for punkt in sekcja.get('punkty') or []:
+                    if isinstance(punkt, dict):
+                        add(punkt.get('tekst'), name, pid)
+    for swieto, items in FESTIVAL_KNOWLEDGE.items():
+        for it in items or []:
+            if isinstance(it, dict):
+                add(it.get('tresc'), it.get('roslina') or swieto)
+    return jsonify(out)

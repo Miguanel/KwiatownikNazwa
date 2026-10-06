@@ -161,3 +161,22 @@ footer i { color: var(--kw-gold); }
 
 /* ---------- PRZEPIŚNIK I LABORATORIUM: pola wyszukiwania ---------- */
 .search-container { background: #f2f5ea !important; border: 1px solid #c4cfaa !important; border-left: 4px solid var(--kw-moss) !important; box-shadow: none !important; border-radius: 6px; }
+
+/* ---------- ALMANACH: klikalne pola paska (static/js/almanach.js) ---------- */
+.astro-ribbon [data-alm] {
+    cursor: pointer; text-decoration: underline dotted; text-underline-offset: 3px;
+    text-decoration-color: var(--kw-gold); border-radius: 2px;
+}
+.astro-ribbon [data-alm]:hover, .astro-ribbon [data-alm]:focus-visible { background: rgba(154, 123, 47, 0.15); outline: none; }
+.kw-alm-tip { width: 380px; }
+.kw-alm-src { margin-top: 8px; padding-top: 6px; border-top: 1px dashed var(--kw-line); font-size: 13px; }
+.kw-alm-src-label { color: var(--kw-muted); font-style: italic; }
+.kw-alm-src ul { margin: 4px 0 0 0; padding-left: 18px; }
+.kw-alm-src li { margin-bottom: 2px; overflow-wrap: anywhere; }
+.kw-alm-src a { color: var(--kw-green); }
+.kw-alm-src small { color: var(--kw-muted); }
+.kw-alm-tr { font-size: 12px; white-space: nowrap; }
+
+/* ---------- PASEK CIEKAWOSTEK (static/js/ciekawostki.js) ---------- */
+.marquee-wrapper .marquee-link { color: inherit; text-decoration: none; }
+.marquee-wrapper .marquee-link:hover { color: var(--kw-green); text-decoration: underline; }

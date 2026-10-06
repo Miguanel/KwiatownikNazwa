@@ -212,10 +212,10 @@
             </div>
             <div class="astro-item"><i class="ra ra-sun"></i><div><span class="astro-label">Pogoda:</span><span class="astro-value" data-astro="sky"></span> <span class="astro-value" data-astro="temp">{{ astro.temp if astro else '15°C' }}</span><span class="astro-label" style="margin-left:4px;">Wilg:</span><span class="astro-value" data-astro="humidity">{{ astro.humidity if astro else '60%' }}</span></div></div>
             <div class="astro-item"><i class="ra ra-moon-sun"></i><div><span class="astro-label">Księżyc:</span><span class="astro-value" data-astro="moon">{{ astro.phase_name if astro else 'Patrzący' }}</span></div></div>
-            <div class="astro-item"><i class="ra ra-fire"></i><div><span class="astro-label">Żywioł:</span><span class="astro-value">{{ astro.element if astro else 'Haj' }}</span></div></div>
-            <div class="astro-item"><i class="ra ra-crystal-ball"></i><div><span class="astro-label">Wibracja:</span><span class="astro-value" data-astro="numerology">{{ astro.numerology if astro else '0' }}</span></div></div>
-            <div class="astro-item"><i class="ra ra-dragon"></i><div><span class="astro-label">Patron Roku:</span><span class="astro-value" data-astro="japanese">{{ astro.japanese if astro else 'Langusta' }}</span></div></div>
-            <div class="astro-item" style="margin-right:0;"><i class="ra ra-trefoil"></i><div><span class="astro-label">Koło Roku:</span><span class="astro-value"{% if astro and astro.festival_desc %} title="Stary Czas: {{ astro.festival_desc }} · Symbol: {{ astro.festival_symbol }} · Tradycja: {{ astro.festival_action }}"{% endif %}>{{ astro.festival if astro else 'Fest' }}</span></div></div>
+            <div class="astro-item"><i class="ra ra-fire"></i><div><span class="astro-label">Żywioł:</span><span class="astro-value" data-alm="zywiol">{{ astro.element if astro else 'Haj' }}</span></div></div>
+            <div class="astro-item"><i class="ra ra-crystal-ball"></i><div><span class="astro-label">Wibracja:</span><span class="astro-value" data-astro="numerology" data-alm="wibracja">{{ astro.numerology if astro else '0' }}</span></div></div>
+            <div class="astro-item"><i class="ra ra-dragon"></i><div><span class="astro-label">Patron Roku:</span><span class="astro-value" data-astro="japanese" data-alm="patron_roku">{{ astro.japanese if astro else 'Langusta' }}</span></div></div>
+            <div class="astro-item" style="margin-right:0;"><i class="ra ra-trefoil"></i><div><span class="astro-label">Koło Roku:</span><span class="astro-value" data-alm="kolo_roku">{{ astro.festival if astro else 'Fest' }}</span></div></div>
         </div>
     </div>
 
@@ -348,8 +348,7 @@
         // Górny pasek z ikonami - porusza się niesamowicie powoli i majestatycznie
         setupInfiniteScroller('banner-astro', 0.2);
 
-        // Pasek z Ciekawostkami - porusza się ciut szybciej
-        setupInfiniteScroller('banner-marquee', 0.6);
+        // Pasek z Ciekawostkami obsługuje static/js/ciekawostki.js (losowe, wciąż nowe ciekawostki z /api/ciekawostki.json)
     });
 
     // --- OBSŁUGA MODALU ---
@@ -447,6 +446,10 @@ document.addEventListener("DOMContentLoaded", () => {
 <script src="{{ url_for('static', filename='js/magic_lens.js') }}"></script>
 <!-- Dymki z Wikipedii: najechanie / kliknięcie w składnik lub pojęcie (data-wiki-scan, data-wiki-ingredient, data-wiki-term) -->
 <script src="{{ url_for('static', filename='js/wiki_tooltip.js') }}"></script>
+<!-- Almanach: klikalne Koło Roku / Patron Roku / Żywioł / Wibracja (static/json/almanach.json) -->
+<script src="{{ url_for('static', filename='js/almanach.js') }}"></script>
+<!-- Pasek ciekawostek: losowe ciekawostki dokładane jedna po drugiej -->
+<script src="{{ url_for('static', filename='js/ciekawostki.js') }}"></script>
 
 
 </body>

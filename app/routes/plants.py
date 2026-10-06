@@ -34,7 +34,7 @@ def plant_detail(plant_id):
 
     legacy = get_legacy_plant(plants_dir(), plant_id)
     return render_template('plant_detail.html', plant=plant_data, plant_id=plant_id, comments=comments,
-                           plant_recipes=plant_recipes, legacy=legacy, seo=plant_seo(plant_data, plant_id))
+                           plant_recipes=plant_recipes, legacy=legacy, seo=plant_seo(plant_data, plant_id, bool(plant_recipes)))
 
 
 def _compare_sources(data, legacy):

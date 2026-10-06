@@ -10854,45 +10854,54 @@
       "Różański H. — Fitoterapia i leki roślinne"
     ],
     "mechanizm_tworzenia": [
-      "Maceracja gorąca (sparzenie) w celu wydostania składników aktywnych do formy kat"
+      "Ekstrakcja cieplna",
+      "Wzorzec 5 filarów"
     ],
     "klasyfikacja_dzialania": {
-      "skalowanie_toksykologiczne": "Niska toksyczność przy aplikacji zewnętrznej; silne działanie stymulujące krążenie miejscowe",
+      "skalowanie_toksykologiczne": "Bezpieczny w dawkowaniu zewnętrzny, nie stosować w ciąży/karmieniu, u dzieci oraz przy chorobach przewlekłych.",
+      "matryca_wu_xing": {
+        "zywiol_leczony": "Woda",
+        "narzad_matczyny_do_wsparcia": "Płuczka",
+        "porada_matrycy": "Zapobieganie zapaleniom"
+      },
       "triada_kampo": {
-        "cel_glowny": "Ketsu",
-        "wyjasnienie": "Tradycyjne zastosowanie na owrzodzenia wskazuje na celu regulację krwi i przyspieszenie gojenia tkanek (Ketsu), oraz usunięcie stagnacji."
+        "cel_glowny": "Zapobieganie zapaleniom skóry",
+        "wyjasnienie": "Żankiel wspiera układ odchodywy i przeciwdziała zapalnym procesom na skórze."
       },
       "ajurweda": {
-        "dosze": "Pitta",
-        "wyjasnienie": "Gorzkawy smak i chłodzące właściwości przeciwbakteryjne pomagają ujarzymiać zapalną energię Pitta, jednocześnie wspierając Vata poprzez nawilżenie tkanki."
+        "dosze": "Kapha",
+        "wyjasnienie": "Zioło ma właściwości smoczne i zmiękczające, wspierające regenerację skóry."
       },
       "doktryna_sygnatur": {
-        "sygnatura": "Barwa i konsystencja soku (zielona, wilgotna)",
-        "interpretacja": "Zielona barwa ewokuje powiązanie z wątrobą (regeneracja) i krwią; wilgotna papka sugeruje działanie nawilżające i kojące na wysuszone, zapalone powierzchnie."
+        "sygnatura": "Zielona barwa, wilgotność, lekko gorzkawy zapach",
+        "interpretacja": "Zielona barwa i wilgotność wskazują na działanie na skórę i zapobieganie zapalnym procesom."
       },
       "humory_galena": {
-        "jakosc": "Chłodna i sucha",
+        "jakosc": "Zimne",
         "stopien": "II",
-        "wyjasnienie": "W tradycji humoralnej rozlicza się jako środek skrapiający (astringent) i chłodzący, co pomaga w stanach zapalnych (nadmiar ciepła)."
+        "wyjasnienie": "Zioło ma właściwości chłodzące i przeciwwzdużne, odpowiednie do leczenia zapalnych stanów skóry."
+      },
+      "alchemia_spageryczna": {
+        "zasada": "Separacja",
+        "wyjasnienie": "Sparzanie liści odpowiada procesowi separacji, w którym zioło oddziela swoje właściwości od substratu."
       }
     },
     "wymogi_szamanskie_i_czasowe": {
-      "chronoterapia": "Stosować w porze dnia, gdy energia układu odpornościowego jest najbardziej aktywna (poranny ciepły czas).",
-      "astrologia_zbioru": "Zbierać liście w porze wiosennej, gdy energia Wody jest najbardziej aktywna.",
-      "dieta_i_zakazy": "Unikać tłustych i ciepłych produktów podczas stosowania kataplazmu."
+      "chronoterapia": "Stosować w porze dnia, gdy ciało jest bardziej otwarte na leczenie zewnętrzne.",
+      "astrologia_zbioru": "Zbierać liście w porze wiosennej, kiedy energia jest zimna i wodna.",
+      "dieta_i_zakazy": "Unikać zbyt ciepłych produktów i alkoholu w okolicy leczenia."
     },
     "wlasciwosci_fizyczne": {
-      "konsystencja_i_slady": "Wilgotna, zielona papka (kataplazm), tworząca śladowe zabrudzenia na płótnie.",
-      "barwienie_skory": "Zostawia zielonkawy odcień na skórze.",
-      "barwienie_ubran": "Może plamić ubrania na zielono."
+      "konsystencja_i_slady": "Wilgotna, zielona barwa, lekko gorzkawy zapach",
+      "barwienie_skory": "Zielone, ziołowe",
+      "barwienie_ubran": "Nie stosować"
     },
     "bezpieczenstwo_i_interakcje": {
-      "interakcje_z_lekami": "Interakcje systemowe mało prawdopodobne przy aplikacji zewnętrznej, uwaga przy stosowaniu leków leczących skórę.",
-      "ostrzezenia": "Przeciwwskazany w ciąży, w okresie laktacji oraz u dzieci. Przerwać stosowanie w razie wystąpienia objawów uczuleniowych (swędzenie, obrzęk). Nie używać na tkankach martwiczych bez konsultacji medycznej."
+      "interakcje_z_lekami": "Nie znane, stosować z ostrożnością przy leczeniu z lekami przeciwzapalnymi.",
+      "ostrzezenia": "Nie stosować w ciąży/karmieniu, u dzieci oraz przy chorobach przewlekłych bez konsultacji."
     },
     "wskazowki_tradycyjne": [
-      "Zbierać młode liście o poranku dla maksymalnej intensywności związków aktywnych.",
-      "Sparzenie gorącą wodą (nie wrzątkiem) pozwala zachować składniki aktywne bez zniszczenia enzymatycznego pożądanego w koncie celowo."
+      "Sparz liście w gorącej wodzie, rozgnieć na papkę i nałożyć na lniane płótno."
     ],
     "opracowanie": {
       "systemy": [
@@ -10905,8 +10914,8 @@
         "spagiryka",
         "chronoterapia"
       ],
-      "model": "groq/qwen/qwen3.8-27b",
-      "data": "2026-10-01",
+      "model": "ollama/qwen3:8b",
+      "data": "2026-10-05",
       "uwaga": "Opracowanie jest interpretacją w ujęciu tradycyjnych systemów ziołolecznictwa (m.in. Pięć Przemian, Kampo, ajurweda) przygotowaną automatycznie na podstawie przepisu źródłowego. Ma charakter edukacyjny i historyczny - nie jest poradą medyczną. Przed stosowaniem, zwłaszcza w ciąży, u dzieci, przy chorobach przewlekłych i przyjmowanych lekach, skonsultuj się z lekarzem lub farmaceutą."
     }
   },
@@ -10958,47 +10967,43 @@
       "Köhler’s Medizinal-Pflanzen — Chaerophyllum"
     ],
     "mechanizm_tworzenia": [
-      "Ekstrakcja termiczna przez spalanie",
+      "Ekstrakcja przez pirolizę dymną",
       "Wzorzec 5 filarów"
     ],
     "klasyfikacja_dzialania": {
-      "skalowanie_toksykologiczne": "Roślina dzika, wymaga ostrożności; dym drażni drogi oddechowe, bezwzględnie unikać wdychania bezpośredniego przy astmie.",
+      "skalowanie_toksykologiczne": "Surowiec o potencjalnym działaniu drażniącym układ oddechowy; stosować z zachowaniem ostrożności ze względu na dym.",
       "matryca_wu_xing": {
         "zywiol_leczony": "Metal",
         "narzad_matczyny_do_wsparcia": "Ziemia",
-        "porada_matrycy": "Według Wu Xing dymienie wpływa na obieg Metalu (płuca), a Ziemia (środkowy ogrzewacz) wspiera proces transformacji aromatu."
+        "porada_matrycy": "W tradycji Wu Xing dym odnosi się do żywiołu Metalu, wspierając oczyszczanie przestrzeni oddechowej."
       },
       "ajurweda": {
         "dosze": "Vata",
-        "wyjasnienie": "Aromatyczne dymy w ajurwedzie poruszają element powietrza (Vata) i oczyszczają przestrzeń z zastałej energii."
-      },
-      "doktryna_sygnatur": {
-        "sygnatura": "Bulwiasta struktura podziemna i aromatyczny charakter",
-        "interpretacja": "W tradycji dawnej sygnatury bulwy symbolizowały ukrytą siłę transformacji, uwolnioną pod wpływem ognia."
+        "wyjasnienie": "Dym ziołowy w tradycji ajurwedyjskiej wpływa na mobilizację powietrza (Vata), jednak przy nadmiarze może ją rozpraszać."
       },
       "humory_galena": {
-        "jakosc": "Ciepłe i suche",
-        "stopien": "Stopień II",
-        "wyjasnienie": "Działanie dymu polega na rozpraszaniu chłodnych i wilgotnych miazmatów z otoczenia."
+        "jakosc": "ciepła i sucha",
+        "stopien": "II stopień",
+        "wyjasnienie": "Działanie dymu i procesu palenia przypisuje jakościom ciepłym i suchym, rozpraszającym wilgoć."
       }
     },
     "wymogi_szamanskie_i_czasowe": {
-      "chronoterapia": "Okadzanie przeprowadzano tradycyjnie o zmierzchu lub świcie w celu oczyszczenia przestrzeni.",
-      "astrologia_zbioru": "Zbiór części roślinnych dokonywany w słoneczny dzień, gdy roślina jest w pełni wysycona olejkami eterycznymi.",
-      "dieta_i_zakazy": "Brak specyficznych zakazów dietetycznych, jednak podczas okadzania należy zapewnić dobrą wentylację pomieszczenia."
+      "chronoterapia": "Najlepiej stosować w godzinach porannych lub wieczornych w celu oczyszczenia przestrzeni.",
+      "astrologia_zbioru": "Brak danych źródłowych na temat specyficznego czasu zbioru.",
+      "dieta_i_zakazy": "Unikać wdychania dymu bezpośrednio z bliskiej odległości, wietrzyć pomieszczenia."
     },
     "wlasciwosci_fizyczne": {
-      "konsystencja_i_slady": "Dym ziołowy o korzennym, lekko słodkawym aromacie.",
+      "konsystencja_i_slady": "Dym o korzennym, lekko słodkawym aromacie, pozostawiający pył popiołowy.",
       "barwienie_skory": "Nie dotyczy.",
-      "barwienie_ubran": "Może pozostawiać zapach dymu na odzieży; uwaga na osadzanie się sadzy przy zbyt bliskim kontakcie."
+      "barwienie_ubran": "Może pozostawiać zapach dymu na odzieży."
     },
     "bezpieczenstwo_i_interakcje": {
-      "interakcje_z_lekami": "Brak danych, produkt stosowany zewnętrznie w formie dymu.",
-      "ostrzezenia": "Wdychanie dymu może wywołać skurcz oskrzeli u osób wrażliwych. Przerwać zabieg przy wystąpieniu kaszlu lub duszności."
+      "interakcje_z_lekami": "Brak precyzyjnych danych, jednak ze względu na dym i substancje lotne zachowaj ostrożność przy lekach wziewnych.",
+      "ostrzezenia": "Przerwać stosowanie przy objawach nadwrażliwości. Nie stosować przy astmie i chorobach układu oddechowego."
     },
     "wskazowki_tradycyjne": [
-      "Susz należy rozdrabniać tuż przed okadzaniem, aby uwolnić lotne frakcje aromatyczne.",
-      "Węgielek musi być całkowicie rozżarzony, aby zioła nie ulegały jedynie zwęgleniu, lecz uwalniały wonny dym."
+      "Susz należy powoli spalać na rozżarzonym węgielku, unikając gwałtownego zapłonu.",
+      "Pomieszczenie po okadzeniu należy dokładnie przewietrzyć."
     ],
     "opracowanie": {
       "systemy": [
@@ -11012,7 +11017,7 @@
         "chronoterapia"
       ],
       "model": "gemini/gemini-3.5-flash-lite",
-      "data": "2026-10-01",
+      "data": "2026-10-05",
       "uwaga": "Opracowanie jest interpretacją w ujęciu tradycyjnych systemów ziołolecznictwa (m.in. Pięć Przemian, Kampo, ajurweda) przygotowaną automatycznie na podstawie przepisu źródłowego. Ma charakter edukacyjny i historyczny - nie jest poradą medyczną. Przed stosowaniem, zwłaszcza w ciąży, u dzieci, przy chorobach przewlekłych i przyjmowanych lekach, skonsultuj się z lekarzem lub farmaceutą."
     }
   },
@@ -11066,47 +11071,52 @@
       "Commission E Monographs — Nettle Leaf"
     ],
     "mechanizm_tworzenia": [
-      "Ekstrakcja lipofilowa w tradycyjnym tłuszczu zwierzęcym",
+      "Ekstrakcja tłuszczowa",
       "Wzorzec 5 filarów"
     ],
     "klasyfikacja_dzialania": {
-      "skalowanie_toksykologiczne": "Surowiec bezpieczny w zastosowaniu zewnętrznym; smalec gęsi działa jako baza o wysokiej biokompatybilności ze skórą ludzką.",
+      "skalowanie_toksykologiczne": "Maść jest mało toksyczna, ale wymaga ostrożności u osób z nadwrażliwością skórną i przy długotrwałym stosowaniu.",
       "matryca_wu_xing": {
-        "zywiol_leczony": "Metal",
-        "narzad_matczyny_do_wsparcia": "Ziemia",
-        "porada_matrycy": "W tradycji Pięciu Przemian skóra i bariera naskórkowa podlegają przemianie Metalu; wsparcie Ziemi (śledziona/żołądek) poprzez odżywcze tłuszcze wzmacnia odporność tkankową."
+        "zywiol_leczony": "skóra i tkanki łącznej",
+        "narzad_matczyny_do_wsparcia": "wątroba (element Drewno)",
+        "porada_matrycy": "stosować wiosną, aby wzmocnić energię Drewna i wspierać regenerację skóry"
+      },
+      "triada_kampo": {
+        "cel_glowny": "Ketsu (krew) – przyspieszenie krążenia i regeneracji tkanek",
+        "wyjasnienie": "Maść odżywia i odżywia uszkodzoną skórę, ułatwiając wymianę krwi i proces gojenia"
       },
       "ajurweda": {
-        "dosze": "Vata i Kapha",
-        "wyjasnienie": "Pokrzywa wnosząca ostry smak balansuje wilgotną Kaphę, zaś gęsty tłuszcz zwierzęcy koi suchą i szorstką doszę Vata."
+        "dosze": "Vata",
+        "wyjasnienie": "Nettles tonizują Vata, łagodzą suchość i szorstkość skóry, a tłuszcz koi podrażnienia"
       },
       "doktryna_sygnatur": {
-        "sygnatura": "Parzące włoski pokrzywy i jej zdolność do oczyszczania krwi",
-        "interpretacja": "W dawnej doktrynie sygnatur ostrość rośliny symbolizowała zdolność do 'przeganiania' chorób skóry i pobudzania krążenia miejscowego."
+        "sygnatura": "zielony, kolczasty, rośnie w wilgotnych miejscach, wskazuje na leczenie skóry i krwi",
+        "interpretacja": "Zieleń i kolce symbolizują odżywianie oraz stymulację krwi, co uzasadnia zastosowanie w maściach na rany"
       },
       "humory_galena": {
-        "jakosc": "Ciepła i sucha",
-        "stopien": "Stopień II",
-        "wyjasnienie": "Maść rozgrzewa tkanki, osusza wilgotne wypryski i stymuluje miejscowy metabolizm dzięki naturze pokrzywy."
+        "jakosc": "ciepłe, suche",
+        "stopien": "II",
+        "wyjasnienie": "Działa rozgrzewająco, przyspiesza gojenie i usuwa wilgoć z powierzchni rany"
       }
     },
     "wymogi_szamanskie_i_czasowe": {
-      "chronoterapia": "Zbiór pokrzywy wczesnym rankiem, przed pełnym słońcem, w czasie rosnącego Księżyca.",
-      "astrologia_zbioru": "Mars (ze względu na parzące właściwości i działanie rozgrzewające) oraz Wenus (pielęgnacja skóry).",
-      "dieta_i_zakazy": "Brak specyficznych zakazów dietetycznych przy stosowaniu zewnętrznym."
+      "chronoterapia": "Stosować po kąpieli w cieple, kiedy skóra jest otwarta na wchłanianie",
+      "astrologia_zbioru": "Zbierane przed kwitnieniem, w pełni księżyca wiosennego",
+      "dieta_i_zakazy": "Unikać ciężkich, tłustych potraw w czasie aplikacji, aby nie obciążać układu pokarmowego"
     },
     "wlasciwosci_fizyczne": {
-      "konsystencja_i_slady": "Maść o zielonkawym zabarwieniu, tłustej konsystencji, ziołowym, lekko ostrym aromacie.",
-      "barwienie_skory": "Może pozostawiać lekko żółtawo-zielonkawy ślad, który łatwo się wchłania.",
-      "barwienie_ubran": "Tłuszcz może zostawiać plamy na odzieży; zaleca się stosowanie opatrunku ochronnego."
+      "konsystencja_i_slady": "gęsta, tłusta, zielonkawa maść o lekko ostrym aromacie",
+      "barwienie_skory": "może nadać delikatny zielonkawy odcień skórze przy długotrwałym użyciu",
+      "barwienie_ubran": "może pozostawiać zielonkawy ślad na tkaninach"
     },
     "bezpieczenstwo_i_interakcje": {
-      "interakcje_z_lekami": "Brak istotnych interakcji przy stosowaniu miejscowym na nienaruszoną lub lekko podrażnioną skórę.",
-      "ostrzezenia": "Nie stosować na otwarte, krwawiące rany. Unikać w przypadku alergii na białka gęsie lub pokrzywę."
+      "interakcje_z_lekami": "Brak znanych istotnych interakcji, ale ostrożność przy lekach przeciwzakrzepowych ze względu na potencjalne działanie przeciwzakrzepowe pokrzywy",
+      "ostrzezenia": "Nie stosować przy dużych otwartych ranach, alergii na Urticaceae, w ciąży, podczas karmienia, u dzieci i przy przewlekłych chorobach bez konsultacji lekarskiej"
     },
     "wskazowki_tradycyjne": [
-      "Podgrzewaj tłuszcz powoli w kąpieli wodnej, nie doprowadzając do wrzenia, aby nie zniszczyć cennych frakcji roślinnych.",
-      "Przecedzaj maść przez gęste płótno, gdy jest jeszcze ciepła i płynna."
+      "Zbierać młode liście przed kwitnieniem, wczesną wiosną",
+      "Macerować zioło w rozgrzanym tłuszczu, nie dopuszczając do wrzenia",
+      "Przechowywać maść w ciemnym, chłodnym miejscu, w szczelnie zamkniętym słoiku"
     ],
     "opracowanie": {
       "systemy": [
@@ -11119,8 +11129,8 @@
         "spagiryka",
         "chronoterapia"
       ],
-      "model": "gemini/gemini-3.5-flash-lite",
-      "data": "2026-10-01",
+      "model": "groq/openai/gpt-oss-120b",
+      "data": "2026-10-05",
       "uwaga": "Opracowanie jest interpretacją w ujęciu tradycyjnych systemów ziołolecznictwa (m.in. Pięć Przemian, Kampo, ajurweda) przygotowaną automatycznie na podstawie przepisu źródłowego. Ma charakter edukacyjny i historyczny - nie jest poradą medyczną. Przed stosowaniem, zwłaszcza w ciąży, u dzieci, przy chorobach przewlekłych i przyjmowanych lekach, skonsultuj się z lekarzem lub farmaceutą."
     }
   },
@@ -11180,24 +11190,11 @@
       "WHO Monographs on Selected Medicinal Plants, Vol. 2 — Flos Chamomillae"
     ],
     "mechanizm_tworzenia": [
-      "Ekstrakcja alkoholowa (nalewka)",
-      "Okrystalizacja gorzkości (ekstrakt)"
+      "Ekstrakcja alkoholowa",
+      "Wzorzec 5 filarów"
     ],
     "klasyfikacja_dzialania": {
-      "skalowanie_toksykologiczne": "Niska-średnia (ze względu na zawartość alkoholu 60-70% i potencjalne alergeny kwiatowe)",
-      "matryca_wu_xing": {
-        "zywiol_leczony": "Ziemia",
-        "narzad_matczyny_do_wsparcia": "Narząd Matki: Ziemia (Slezniowi/Trawienie)",
-        "porada_matrycy": "Wsparcie Ziemi przez wzmocnienie jej Matki (Ziemii) jest tu auto-referencyjne, jednak w TCM rumianek klasyfikuje się jako lek na Stomak i Śledzionę (element Ziemi), które wzajemnie się wspierają."
-      },
-      "ajurweda": {
-        "dosze": "Vata, Pitta",
-        "wyjasnienie": "Smak gorzki (tikta) i cytrusowy balansuje nadmiar Pitty (zapalenie/żołądek) i lekkie, wietrzne objawy Vata (napięcie, niestrawność)."
-      },
-      "humory_galena": {
-        "jakosc": "Ciepły suchy",
-        "wyjasnienie": "Rumianek w tradycji humoralistycznej uznawany jest za lek ciepły i suchy, co pomaga w chłodnych, wilgotnych dolegliwościach żołądkowych (np. brzasku)."
-      }
+      "skalowanie_toksykologiczne": "Zawartość alkoholu zwiększa ryzyko toksyczności, szczególnie u osób wrażliwych, dzieci i kobiet w ciąży."
     },
     "wymogi_szamanskie_i_czasowe": {
       "chronoterapia": "Zalecane stosowanie przed posiłkiem (stymulacja enzymów), co w chronoterapii TCM przypada na ramy czasowe Stomaka/Śledziony.",
@@ -11205,16 +11202,15 @@
       "dieta_i_zakazy": "Unikać ciężkich, tłustych posiłków w trakcie kuracji; abstynencja od innych substancji rozprzyszczeń."
     },
     "wlasciwosci_fizyczne": {
-      "konsystencja_i_slady": "Ciecz o złocistym zabarwieniu, przezroczysta po przefiltrowaniu."
+      "konsystencja_i_slady": "płynny, przezroczysty, złocisty, zapach kwiatowo‑cytrusowy"
     },
     "bezpieczenstwo_i_interakcje": {
-      "interakcje_z_lekami": "Alkohol może wzmacniać działanie leków uspokajających, nasennych, przeciwbólowych (opiaty) oraz leków przeciwzakrzepowych (wraz z cumarinami). Konsultacja z lekarzem przy stałym leku doustnym.",
-      "ostrzezenia": "Zawartość 60-70% alkoholu. Nie stosować przy uzależnieniu od alkoholu, chorobach wątroby, padaczce. Przebywać z dala od ognia. Przechowywać w chłodnym, ciemnym miejscu, z dala od dzieci."
+      "interakcje_z_lekami": "Alkohol może nasilać działanie leków uspokajających oraz zwiększać ryzyko krwawienia przy lekach przeciwzakrzepowych; rumianek może nasilać działanie warfaryny i leków przeciwpłytkowych.",
+      "ostrzezenia": "Nie stosować w ciąży, podczas karmienia piersią i u dzieci; unikać przy chorobach wątroby i nadwrażliwości na alkohol."
     },
     "wskazowki_tradycyjne": [
-      "Maceracja powinna trwać co najmniej 10 dni w ciemności, aby olejek eteryczny w pełni przemieścił się do rozpuszczalnika.",
-      "Codzienne wstrząsanie butelki pomaga w ekstrakcji składników lipofilowych.",
-      "Przecedzenie przez gazę lub filtr papierowy jest kluczowe dla czystości esencji."
+      "Zbierać kwiaty rumianku w pełni rozkwitu w słoneczny dzień.",
+      "Macerować w ciemnym, chłodnym miejscu, regularnie wstrząsając pojemnikiem."
     ],
     "opracowanie": {
       "systemy": [
@@ -11227,8 +11223,8 @@
         "spagiryka",
         "chronoterapia"
       ],
-      "model": "groq/qwen/qwen3.8-27b",
-      "data": "2026-10-01",
+      "model": "groq/openai/gpt-oss-120b",
+      "data": "2026-10-05",
       "uwaga": "Opracowanie jest interpretacją w ujęciu tradycyjnych systemów ziołolecznictwa (m.in. Pięć Przemian, Kampo, ajurweda) przygotowaną automatycznie na podstawie przepisu źródłowego. Ma charakter edukacyjny i historyczny - nie jest poradą medyczną. Przed stosowaniem, zwłaszcza w ciąży, u dzieci, przy chorobach przewlekłych i przyjmowanych lekach, skonsultuj się z lekarzem lub farmaceutą."
     }
   },
@@ -11293,51 +11289,47 @@
       "Commission E Monographs — Calendula"
     ],
     "mechanizm_tworzenia": [
-      "Ekstrakcja octowa",
+      "Ekstrakcja kwasowa",
       "Wzorzec 5 filarów"
     ],
     "klasyfikacja_dzialania": {
-      "skalowanie_toksykologiczne": "Preparat do użytku zewnętrznego na bazie kwasu organicznego i olejków eterycznych. Wysokie stężenie kwasu octowego oraz czosnku może powodować podrażnienia skóry przy braku rozcieńczenia.",
+      "skalowanie_toksykologiczne": "Preparat przeznaczony wyłącznie do użytku zewnętrznego; silny kwas octowy wymaga rozcieńczenia, aby uniknąć podrażnień skóry i błon śluzowych.",
       "matryca_wu_xing": {
-        "zywiol_leczony": "Metal",
-        "narzad_matczyny_do_wsparcia": "Ziemia",
-        "porada_matrycy": "W tradycji Wu Xing ostry smak i ocet wspierają przemianę Metalu (płuca, skóra) oraz oczyszczają granice energetyczne."
+        "zywiol_leczony": "Ogień",
+        "narzad_matczyny_do_wsparcia": "Drewno",
+        "porada_matrycy": "W tradycji Wu Xing ostry smak i kwaśne środowisko octu wspierają krążenie i oczyszczanie, stymulując przemianę materii."
       },
       "triada_kampo": {
-        "cel_glowny": "Regulacja Ketsu i usuwanie toksyn ze skóry",
-        "wyjasnienie": "Według Kampo ocet ożywiający krew i zioła antyseptyczne usuwają zastoje i chronią przed czynnikami zewnętrznymi."
-      },
-      "ajurweda": {
-        "dosze": "Pitta i Kapha",
-        "wyjasnienie": "Kwaśny smak octu oraz rozgrzewający charakter czosnku i ziół redukują nadmiar Kapha oraz mogą zaostrzać Pitta przy nadmiernym stosowaniu."
+        "cel_glowny": "Poruszenie Ketsu i oczyszczenie Sui",
+        "wyjasnienie": "Według zasad Kampo kwaśny ocet i ostre zioła rozpraszają zastoje płynów oraz pobudzają obronny Ki powierzchni ciała."
       },
       "doktryna_sygnatur": {
-        "sygnatura": "Pomarańczowe koszyczki nagietka przypominające słońce i stan zapalny skóry",
-        "interpretacja": "Zgodnie z doktryną sygnatur nagietek leczy zmiany skórne i rany o ognistym, czerwonym charakterze."
+        "sygnatura": "Intensywny żółto-pomarańczowy kolor kwiatów nagietka",
+        "interpretacja": "W dawnej doktrynie barwy kojarzono z żółcią i oczyszczaniem wątroby, co w zastosowaniu zewnętrznym przekłada się na wsparcie gojenia skóry."
       },
       "humory_galena": {
         "jakosc": "Ciepła i sucha",
-        "stopien": "Stopień II",
-        "wyjasnienie": "Ocet rozgrzewa i ściąga, a czosnek i rozmaryn wzmacniają humoralne działanie osuszające."
+        "stopien": "II stopień",
+        "wyjasnienie": "Zioła takie jak szałwia i rozmaryn wraz z czosnkiem rozgrzewają i osuszają, znosząc wilgotne stany zapalne skóry."
       }
     },
     "wymogi_szamanskie_i_czasowe": {
-      "chronoterapia": "Zbiór ziół w godzinach południowych, gdy działanie słoneczne jest najsilniejsze.",
-      "astrologia_zbioru": "Nagietek zbierany w pełni słońca, w znaku Lwa dla wzmocnienia właściwości ochronnych.",
-      "dieta_i_zakazy": "Tradycyjnie unikano potraw ciężkich i śluzotwórczych podczas kuracji oczyszczających."
+      "chronoterapia": "Macerację najlepiej rozpocząć w czasie ubywającego księżyca, co w tradycji sprzyja oczyszczaniu i odkażaniu.",
+      "astrologia_zbioru": "Zbiór nagietka w słoneczny poranek, po opadnięciu ros, wzmacnia jego słoneczną naturę.",
+      "dieta_i_zakazy": "Tradycyjnie unikano stosowania na otwarte, krwawiące rany ze względu na drażniące działanie kwasu."
     },
     "wlasciwosci_fizyczne": {
-      "konsystencja_i_slady": "Płyn o bursztynowej barwie, kwaśnym smaku ziołowo-czosnkowym i intensywnym aromacie.",
-      "barwienie_skory": "Brak trwałego barwienia skóry, możliwe lekkie zakwaszenie naskórka.",
-      "barwienie_ubran": "Może pozostawiać plamy o żółtawym zabarwieniu od nagietka i kwasu octowego na jasnych tkaninach."
+      "konsystencja_i_slady": "Płyn o bursztynowej barwie, kwaśnym smaku ziołowo-czosnkowym, intensywnym aromacie.",
+      "barwienie_skory": "Brak trwałego barwienia skóry, możliwe lekkie zażółcenie przy częstym stosowaniu nierozcieńczonego płynu.",
+      "barwienie_ubran": "Może pozostawiać plamy na jasnych tkaninach ze względu na zawartość barwników nagietka i octu."
     },
     "bezpieczenstwo_i_interakcje": {
-      "interakcje_z_lekami": "Brak bezpośrednich interakcji przy stosowaniu zewnętrznym, jednak należy unikać aplikacji na uszkodzoną skórę przyjmując leki przeciwzakrzepowe.",
-      "ostrzezenia": "Produkt wyłącznie do użytku zewnętrznego. Unikać kontaktu z oczami. W przypadku wystąpienia podrażnienia natychmiast przerwać stosowanie i przemyć wodą."
+      "interakcje_z_lekami": "Brak istotnych interakcji przy stosowaniu zewnętrznym, jednak należy unikać nakładania na uszkodzony naskórek równolegle z lekami dermatologicznymi o działaniu drażniącym.",
+      "ostrzezenia": "Produkt wyłącznie do użytku zewnętrznego. Unikać kontaktu z oczami. W razie podrażnienia natychmiast przerwać stosowanie i przemyć skórę wodą."
     },
     "wskazowki_tradycyjne": [
-      "Macerację przeprowadzać w szklanym naczyniu szczelnie zamkniętym, codziennie wstrząsając.",
-      "Zioła zbierać w pogodne dni, gdy opad deszczu całkowicie wyschnie z roślin."
+      "Maceruj w szczelnie zamkniętym naczyniu szklanym, codziennie energicznie wstrząsając.",
+      "Przed pierwszym użyciem na większej powierzchni skóry wykonaj próbę uczuleniową w zgięciu łokcia."
     ],
     "opracowanie": {
       "systemy": [
@@ -11351,7 +11343,7 @@
         "chronoterapia"
       ],
       "model": "gemini/gemini-3.5-flash-lite",
-      "data": "2026-10-01",
+      "data": "2026-10-05",
       "uwaga": "Opracowanie jest interpretacją w ujęciu tradycyjnych systemów ziołolecznictwa (m.in. Pięć Przemian, Kampo, ajurweda) przygotowaną automatycznie na podstawie przepisu źródłowego. Ma charakter edukacyjny i historyczny - nie jest poradą medyczną. Przed stosowaniem, zwłaszcza w ciąży, u dzieci, przy chorobach przewlekłych i przyjmowanych lekach, skonsultuj się z lekarzem lub farmaceutą."
     }
   },
@@ -11418,35 +11410,35 @@
     ],
     "mechanizm_tworzenia": [
       "Ekstrakcja alkoholowa",
-      "Wzorzec 5 filarów"
+      "Maceracja"
     ],
     "klasyfikacja_dzialania": {
-      "skalowanie_toksykologiczne": "Lipa drobnolistna jest ogólnie bezpieczna w standardowych dawkach, ale w dużych ilościach może powodować nadwrażliwość. Miód i alkohol mogą wywoływać reakcje alergiczne.",
+      "skalowanie_toksykologiczne": "Wysokie stężenie alkoholu wymaga umiarkowanego dawkowania; niezalecane u dzieci, kobiet w ciąży i przy chorobach przewlekłych. Długotrwałe stosowanie może prowadzić do odwodnienia i uszkodzenia wątroby.",
       "matryca_wu_xing": {
-        "zywiol_leczony": "Woda",
-        "narzad_matczyny_do_wsparcia": "Płuczyna",
-        "porada_matrycy": "Wzorzec Wody"
+        "zywiol_leczony": "Osoby z nadmierną aktywnością nerwów, stanami lękowymi oraz przeziębieniem",
+        "narzad_matczyny_do_wsparcia": "Wzmacnia płyny w organizmie i poprawia układ odpornościowy",
+        "porada_matrycy": "Wprowadzać w początkowych stadiach przeziębienia, monitorować nawodnienie i stosować z wyważonym owocem"
       },
       "triada_kampo": {
-        "cel_glowny": "Wzmocnienie Ki",
-        "wyjasnienie": "Lipa drobnolistna wspiera energię i odporność, co odpowiada wzmacnianiu Ki w systemie Kampo."
+        "cel_glowny": "Uspokojenie i wsparcie układu odpornościowego",
+        "wyjasnienie": "Lipa obniża napięcie Ki, wzmacnia krew Ketsu oraz promuje płyny Sui, co prowadzi do łagodnego potu i redukcji gorączki"
       },
       "ajurweda": {
-        "dosze": "Kapha",
-        "wyjasnienie": "Lipa drobnolistna ma smak słodki i kwaśny, co w Ajurwiedzie wpływa na doszę Kapha, wspierając układ oddechowy i uspokajając."
+        "dosze": "Pitta",
+        "wyjasnienie": "Lipa ma chłodzący, łagodzący smak, redukuje ciepło Pitta i uspokaja system nerwowy"
       },
       "doktryna_sygnatur": {
-        "sygnatura": "Kwiatowy kolor i zapach",
-        "interpretacja": "Kwiaty lipy, z ich złotym kolorem i aromatem, sygnalizują działanie na układ oddechowy i uspokajające."
+        "sygnatura": "Czarna korzeń, białe kwiaty",
+        "interpretacja": "Lipa koresponduje z sercem i płucami, działa kojąco na układ sercowo‑oddechowy"
       },
       "humory_galena": {
-        "jakosc": "Zimne",
+        "jakosc": "Ciepłe",
         "stopien": "II",
-        "wyjasnienie": "Lipa drobnolistna ma właściwości chłodzące i uspokajające, co odpowiada jakości zimnej w systemie Galena."
+        "wyjasnienie": "Lipa ma średnio ciepłe właściwości, które pomagają w regulacji płynów i redukcji gorąca"
       },
       "alchemia_spageryczna": {
-        "zasada": "Kohobacja",
-        "wyjasnienie": "Eliksir jest przygotowywany poprzez kohobację ziołowa, co odpowiada zasadzie spagiryki, w której substancje są wydzielane stopniowo."
+        "zasada": "Separacja",
+        "wyjasnienie": "Alkoholowy ekstrakt oddziela aktywne składniki z rośliny, co jest typowe dla procesu separacji w alchemii spagirycznej"
       }
     },
     "wymogi_szamanskie_i_czasowe": {
@@ -11460,8 +11452,7 @@
       "barwienie_ubran": "Nie stosowana w tym przepisie."
     },
     "bezpieczenstwo_i_interakcje": {
-      "interakcje_z_lekami": "Eliksir może interagować z lekami przeciwzakrzepowymi, ponieważ zawiera substancje wpływające na krzepnięcie krwi.",
-      "ostrzezenia": "Nie stosować w ciąży, karmieniu, u dzieci oraz przy chorobach przewlekłych bez konsultacji. Przerwać przy objawach nadwrażliwości."
+      "ostrzezenia": "Brak opracowanych ostrzeżeń - przed użyciem sprawdź przeciwwskazania każdej rośliny."
     },
     "wskazowki_tradycyjne": [
       "Zbieraj zioła w fazie malejącej księżyca, przetwarzaj w cieniu, mieszaj w nocy."
@@ -11477,8 +11468,8 @@
         "spagiryka",
         "chronoterapia"
       ],
-      "model": "ollama/qwen3:8b",
-      "data": "2026-10-01",
+      "model": "groq/openai/gpt-oss-20b",
+      "data": "2026-10-05",
       "uwaga": "Opracowanie jest interpretacją w ujęciu tradycyjnych systemów ziołolecznictwa (m.in. Pięć Przemian, Kampo, ajurweda) przygotowaną automatycznie na podstawie przepisu źródłowego. Ma charakter edukacyjny i historyczny - nie jest poradą medyczną. Przed stosowaniem, zwłaszcza w ciąży, u dzieci, przy chorobach przewlekłych i przyjmowanych lekach, skonsultuj się z lekarzem lub farmaceutą."
     }
   },
@@ -17023,11 +17014,17 @@
     "skladniki": [
       {
         "nazwa": "Anyż 30 g (suszone, młode części)",
-        "link_id": null
+        "link_id": null,
+        "filar": "1_bazowy",
+        "tropizm_organowy": "Płuca, Żołądek",
+        "smak_ajurweda": "Słodki (Madhura)"
       },
       {
         "nazwa": "0,75 l wytrawnego wina (białe/czerwone)",
-        "link_id": null
+        "link_id": null,
+        "filar": "4_poslaniec",
+        "tropizm_organowy": "Naczynia krwionośne, cały organizm (dostarczacz)",
+        "smak_ajurweda": "Kwaśny/Ostry (Amla/Katu)"
       }
     ],
     "sposob_przygotowania": [
@@ -17035,6 +17032,8 @@
       "Krok 2: Przecedzić; stosować jako aperitif ziołowy."
     ],
     "stosowanie_i_dawkowanie": {
+      "okolicznosci_stosowania": "Jako aperitif ziołowy przy dolegliwościach wiatropędnych, lekkim kaszlu trudnym do odkrztuszenia oraz napięciu mięśni gładkich przewodu pokarmowego.",
+      "skalowanie_pacjenta": "Ostrożności: bezwzględnie zakazane dla dzieci, kobiet w ciąży i karmiących (alkohol). Starcy i osoby z problemami z wątrobą powinny stosować minimum dawki lub unikać z powodu przerostu toksycznego.",
       "dawkowanie_standardowe": "25–50 ml 1× dziennie przed posiłkiem."
     },
     "uwagi": "Tradycyjny przepis historyczny. Nie stosować w ciąży/karmieniu, u dzieci oraz przy chorobach przewlekłych bez konsultacji. Przerwać przy objawach nadwrażliwości.; nasiona bogate w anetol; delikatny, słodkawy smak",
@@ -17047,7 +17046,61 @@
       "Dodoens R. — Cruydeboeck (1554)",
       "ESCOP Monographs — Anisi fructus",
       "Commission E Monographs — Anise"
-    ]
+    ],
+    "mechanizm_tworzenia": [
+      "Ekstrakcja alkoholowa",
+      "Maceracja"
+    ],
+    "klasyfikacja_dzialania": {
+      "skalowanie_toksykologiczne": "W infuzji alkoholowej ekstrahowane są lotne olejki eteryczne (głównie anetol), które wykazują działanie wiatropędne i spazmolityczne; ryzyko toksyczne wynika głównie z obecności alkoholu, a nie samej rośliny w tej dawce.",
+      "matryca_wu_xing": {
+        "zywiol_leczony": "Drewno (Płuca)",
+        "narzad_matczyny_do_wsparcia": "Metal (Płuca) wspiera się przez rozluźnienie Qi, a słodki smak anyżu harmonizuje Ziemię (Trzustka), zapobiegając nadmiernemu rozpraszaniu Qi Płuc.",
+        "porada_matrycy": "Słodki smak anyżu reguluje wolny przepływ Qi, łagodzi drżenie (kaszel) i wspiera Płuca (Metal) poprzez regulację centralnego organu Ziemi."
+      },
+      "ajurweda": {
+        "dosze": "Kapha, Vata",
+        "wyjasnienie": "Anyż jest ciepły i suchy (kapha-redukujący), co ułatwia wykrztuszanie flegmy; jego lekkie, wiatropędne właściwości pomagają zbalansować nadmiar Vata w przewódzie pokarmowym poprzez rozluźnienie skurczów."
+      },
+      "doktryna_sygnatur": {
+        "sygnatura": "Słodki, szypułkowy owoc o promienistym kwiatostanie przypominającym siatkę układu oddechowego.",
+        "interpretacja": "W tradycji znakiowej, słodki smak i 'oddechy' anyżu (ropyjki) symbolizują oczyszczanie dróg oddechowych i ochronę przegrody (płuca)."
+      },
+      "humory_galena": {
+        "jakosc": "Ciepły i suchy",
+        "stopien": "I",
+        "wyjasnienie": "Anyż klasyfikowany jest jako ciepły i suchy w I stopniu, dlatego działa rozgrzewająco na żołądek i wspomaga rozpraszanie wiatrów z zimna, jednocześnie nie przesuszając silnie płynów w krótkoterminowym użyciu."
+      }
+    },
+    "wlasciwosci_fizyczne": {
+      "konsystencja_i_slady": "Czysta ciecz koloru wina białego lub czerwonego, prześwitująca, o intensywnym, słodkawo-korzenistym aromacie anyżu.",
+      "barwienie_skory": "Brak właściwości barwiących skórę.",
+      "barwienie_ubran": "Brak właściwości barwiących ubrania."
+    },
+    "bezpieczenstwo_i_interakcje": {
+      "interakcje_z_lekami": "Alkohol może nasilać działanie sedatywne leków, opioidów oraz benzodiazepin. Interakcja z lekami przeciwbólowymi opartymi na paracetamolu (ryzyko hepatotoksykacji).",
+      "ostrzezenia": "Zawartość alkoholu wyklucza stosowanie u osób z uzależnieniem, bezennicością, schizofrenią oraz chorobami wątroby. Nasiona anyżu w dużych dawkach (powyżej 15-20 g/dzień same w sobie) mogą być toksyczne dla układu nerwowego, w winie jednak stężenie jest niskie."
+    },
+    "wskazowki_tradycyjne": [
+      "Surowiec zbiór: kłosy zbierane w pełni dojrzałości (wrześień-październik), suszone w półcieniu.",
+      "Maceracja: proces trwania 5-7 dni w chłodzie jest standardem dla win lekarskich, umożliwiając ekstrakcję olejków bez utraty lotnych związków zapachowych.",
+      "Wstrząsanie: regularne mieszanie przyspiesza macerację i zapewnia homogenność ekstraktu."
+    ],
+    "opracowanie": {
+      "systemy": [
+        "wu_xing",
+        "kampo",
+        "ajurweda",
+        "piec_filarow",
+        "doktryna_sygnatur",
+        "humory",
+        "spagiryka",
+        "chronoterapia"
+      ],
+      "model": "groq/qwen/qwen3.8-27b",
+      "data": "2026-10-05",
+      "uwaga": "Opracowanie jest interpretacją w ujęciu tradycyjnych systemów ziołolecznictwa (m.in. Pięć Przemian, Kampo, ajurweda) przygotowaną automatycznie na podstawie przepisu źródłowego. Ma charakter edukacyjny i historyczny - nie jest poradą medyczną. Przed stosowaniem, zwłaszcza w ciąży, u dzieci, przy chorobach przewlekłych i przyjmowanych lekach, skonsultuj się z lekarzem lub farmaceutą."
+    }
   },
   {
     "id": "miod_pitny_ziolowy_z_arcydziegiel_litwor",
@@ -17062,19 +17115,31 @@
     "skladniki": [
       {
         "nazwa": "miód 500 ml",
-        "link_id": null
+        "link_id": null,
+        "filar": "1_bazowy",
+        "tropizm_organowy": "Serce, Płuca",
+        "smak_ajurweda": "Słodkie"
       },
       {
         "nazwa": "woda 1 l",
-        "link_id": null
+        "link_id": null,
+        "filar": "4_poslaniec",
+        "tropizm_organowy": "Cały organizm",
+        "smak_ajurweda": "Neutrale"
       },
       {
         "nazwa": "Arcydzięgiel litwor 2–3 łyżki (suszone)",
-        "link_id": null
+        "link_id": null,
+        "filar": "2_wzmocnienie",
+        "tropizm_organowy": "Trzustka, Jelita, Pęcherz",
+        "smak_ajurweda": "Gorzki, Ostry"
       },
       {
         "nazwa": "drożdże miodowe (szczypta)",
-        "link_id": null
+        "link_id": null,
+        "filar": "3_minister",
+        "tropizm_organowy": "Brak tropizmu, środek technologiczny",
+        "smak_ajurweda": "Neutrale"
       }
     ],
     "sposob_przygotowania": [
@@ -17083,6 +17148,8 @@
       "Krok 3: Zlać znad osadu i odstawić do dojrzewania."
     ],
     "stosowanie_i_dawkowanie": {
+      "okolicznosci_stosowania": "Stosować jako środek trawienny po posiłkach, szczególnie w przypadku wzdęć, wzdęcia i stagnacji w jelitach.",
+      "skalowanie_pacjenta": "Zakazane dla dzieci, kobiet w ciąży i karmiących piersią. Ostrożność u osób z chorobami wątroby, padaczką lub przyjmujących leki przeciwzakrzepowe.",
       "dawkowanie_standardowe": "Kieliszek 30 ml po posiłku; napój alkoholowy."
     },
     "uwagi": "Tradycyjny przepis historyczny. Nie stosować w ciąży/karmieniu, u dzieci oraz przy chorobach przewlekłych bez konsultacji. Przerwać przy objawach nadwrażliwości.; możliwa fototoksyczność (furanokumaryny) — unikać UV po zastosowaniu zewnętrznym",
@@ -17095,7 +17162,67 @@
       "Leechbook of Bald (X w.) — anglosaski rękopis",
       "ESCOP Monographs — Angelicae radix",
       "Commission E Monographs — Angelica"
-    ]
+    ],
+    "mechanizm_tworzenia": [
+      "Fermentacja alkoholowa miodu",
+      "Ekstrakcja wodno-alkoholowa składników aktywnych"
+    ],
+    "klasyfikacja_dzialania": {
+      "skalowanie_toksykologiczne": "Umiarkowane ryzyko ze względu na obecność alkoholu i fototoksycznych furanokumaryn w arcydzięgIELu",
+      "matryca_wu_xing": {
+        "zywiol_leczony": "Ziemia",
+        "narzad_matczyny_do_wsparcia": "Ogień",
+        "porada_matrycy": "Zgodnie z regułą matka-syn, wsparcie Ognia (Trzewia) odżywia Ziemię (Splecione Trzewia), co wspomaga trawienie i transformację pokarmu."
+      },
+      "triada_kampo": {
+        "cel_glowny": "Wiata",
+        "wyjasnienie": "Składnik działa wiatropędnie i spazmolitycznie, redukując stagnację energii w przewody pokarmowym."
+      },
+      "ajurweda": {
+        "dosze": "Vata, Kapha",
+        "wyjasnienie": "Goryczkowy smak wzmacnia ogień trawienny (Agni) i redukuje nadmiar Vaty (wiatr) oraz Kapha (mucysy/bezwolność)."
+      },
+      "doktryna_sygnatur": {
+        "sygnatura": "Korzeń o charakterze węzłowym i silnym, korzennym zapachu",
+        "interpretacja": "W tradycji sygnatywnej kształt korzenia nawiązuje do porów skóry i jelit, a intensywny zapach wskazuje na działanie rozpraszające wiatr i zatory."
+      },
+      "humory_galena": {
+        "jakosc": "Ciepła i sucha",
+        "stopien": "II",
+        "wyjasnienie": "Środek rozwiaza wilgoć z trzewi, rozprasza wiatr i rozgrzewa chłodny żołądek."
+      }
+    },
+    "wymogi_szamanskie_i_czasowe": {
+      "chronoterapia": "Najlepszy czas na spożycie to okres wczesnego popołudnia lub wieczorem, aby wspierać trawienie ostatnich pokarmów przed snem.",
+      "astrologia_zbioru": "Tradycja zaleca zbieranie korzeni arcydzięgla jesienią lub wczesną wiosną, gdy energia rośliny koncentruje się w korzeniu.",
+      "dieta_i_zakazy": "Zawiesić spożycie przy nadwrzeżności żołądka; unikać jednoczesnego spożycia silnie zimnych produktów, które mogą gасić ogień trawienny."
+    },
+    "wlasciwosci_fizyczne": {
+      "konsystencja_i_slady": "Jasno żółty lub bursztynowy płyn, lekko mętny po odcedzeniu, o słodko-gorzkim posmaku.",
+      "barwienie_skory": "Nie dotyczy - specyfik do wewnętrznego stosowania."
+    },
+    "bezpieczenstwo_i_interakcje": {
+      "interakcje_z_lekami": "Może wchodzić w interakcje z lekami przeciwzakrzepowymi (np. warfaryna) ze względu na zawartość witaminy K w arcydzięgIELu oraz z lekami moczopędnymi i obniżającymi ciśnienie.",
+      "ostrzezenia": "Ostrzeżenie przed fototoksycznością: unikaj ekspozycji na UV po naskórkowym kontakcie z ekstraktem. Zawiera alkohol. Przeciwwskazany w ciąży, laktacji i dzieciństwie."
+    },
+    "wskazowki_tradycyjne": [
+      "Naleczy używać miodu o wysokiej jakości, aby nie maskować gorzkiego smaku zioła."
+    ],
+    "opracowanie": {
+      "systemy": [
+        "wu_xing",
+        "kampo",
+        "ajurweda",
+        "piec_filarow",
+        "doktryna_sygnatur",
+        "humory",
+        "spagiryka",
+        "chronoterapia"
+      ],
+      "model": "groq/qwen/qwen3.8-27b",
+      "data": "2026-10-05",
+      "uwaga": "Opracowanie jest interpretacją w ujęciu tradycyjnych systemów ziołolecznictwa (m.in. Pięć Przemian, Kampo, ajurweda) przygotowaną automatycznie na podstawie przepisu źródłowego. Ma charakter edukacyjny i historyczny - nie jest poradą medyczną. Przed stosowaniem, zwłaszcza w ciąży, u dzieci, przy chorobach przewlekłych i przyjmowanych lekach, skonsultuj się z lekarzem lub farmaceutą."
+    }
   },
   {
     "id": "kataplazm_plastry_z_papki_ziolowej_z_prawoslaz_lekarski",
@@ -21540,124 +21667,119 @@
     ]
   },
   {
-    "id": "aloesowka",
-    "tytul": "Aloesówka",
+    "id": "nalewka_z_dzikiej_rozy_z_miodem_lub_cukrem",
+    "tytul": "Nalewka z dzikiej róży z miodem lub cukrem",
     "typ": "kulinarno_medyczne_nalewka",
-    "roslina": "aloes",
+    "roslina": "Dzika róża",
+    "slug": "dzika_roza",
     "pochodzenie": [
       "Tradycja polska"
     ],
     "metoda": "nalewka",
-    "opis": "Domowa nalewka z aloesu, miodu i cytryny, która pomaga wzmocnić odporność oraz zwalczyć wirusy i bakterie.",
+    "opis": "Aromatyczna nalewka z owoców dzikiej róży z dodatkiem miodu lub cukru.",
     "skladniki": [
       {
-        "nazwa": "sok aloesowy",
-        "ilosc": "1 l",
-        "czesc_rosliny": "liść",
-        "link_id": null,
-        "filar": "1_bazowy",
-        "tropizm_organowy": "Układ odpornościowy",
-        "smak_ajurweda": "Mleczny"
-      },
-      {
-        "nazwa": "miód pszczeli",
-        "ilosc": "1 l",
-        "link_id": null,
-        "filar": "2_wzmocnienie",
-        "tropizm_organowy": "Układ odpornościowy",
-        "smak_ajurweda": "Mleczny"
-      },
-      {
-        "nazwa": "spirytus",
-        "ilosc": "1 l",
-        "link_id": null,
-        "filar": "5_korektor",
-        "tropizm_organowy": "Układ oddechowy",
-        "smak_ajurweda": "Kwaśny"
-      },
-      {
-        "nazwa": "sok z cytryn",
-        "ilosc": "1 l",
+        "nazwa": "owoce dzikiej róży",
+        "ilosc": "400 g",
         "czesc_rosliny": "owoc",
+        "link_id": "dzika_roza",
+        "filar": "1_bazowy",
+        "tropizm_organowy": "Płuca, Śledziona, Wątroba",
+        "smak_ajurweda": "kwaśny, cierpki, słodki"
+      },
+      {
+        "nazwa": "miód wielokwiatowy lub cukier",
+        "ilosc": "200 g (miód) / 250 g (cukier)",
+        "link_id": null,
+        "filar": "3_minister",
+        "tropizm_organowy": "Śledziona, Płuca",
+        "smak_ajurweda": "słodki"
+      },
+      {
+        "nazwa": "wódka czysta",
+        "ilosc": "0,5 l",
         "link_id": null,
         "filar": "4_poslaniec",
-        "tropizm_organowy": "Układ odpornościowy",
-        "smak_ajurweda": "Kwaśny"
+        "tropizm_organowy": "Wątroba, Serce",
+        "smak_ajurweda": "ostry"
       }
     ],
     "sposob_przygotowania": [
-      "Krok 1: Połączyć wszystkie składniki w słoju w kolejności: sok z aloesu, miód, spirytus i sok z cytryn, a następnie wymieszać.",
-      "Krok 2: Zamknąć słój i okryć lub odstawić w ciemne miejsce na jedną dobę.",
-      "Krok 3: Po 24 godzinach przefiltrować nalewkę i przelać do ciemnych butelek.",
-      "Krok 4: Odczekać dwa tygodnie przed spożyciem."
+      "Krok 1: Umyć owoce dzikiej róży, odciąć ogonki oraz pozostałości kwiatów.",
+      "Krok 2: Wsypać owoce do słoja i zalać miodem lub zasypać cukrem.",
+      "Krok 3: Dolać połowę ilości wódki, szczelnie zamknąć słój i odstawić na dwa tygodnie, codziennie potrząsając.",
+      "Krok 4: Dodać resztę alkoholu po 2 tygodniach i odstawić całość na kolejne 14 dni.",
+      "Krok 5: Zlać nalewkę, najpierw filtrując przez sito, a następnie przez bibułkę filtracyjną lub sito z gazą.",
+      "Krok 6: Przelać do butelek, szczelnie zamknąć, odstawić w ciemne miejsce na 2-3 miesiące."
     ],
-    "stosowanie_i_dawkowanie": {
-      "okolicznosci_stosowania": "W celu wzmocnienia odporności, zwalczania wirusów i bakterii oraz przy dolegliwościach ze strony układu odpornościowego.",
-      "skalowanie_pacjenta": "Ostrożność: dzieci, ciąża, seniorzy.",
-      "dawkowanie_standardowe": "Jedna łyżka dziennie."
-    },
-    "uwagi": "Nalewka jest gotowa do spożycia po dwóch tygodniach od przefiltrowania.",
+    "uwagi": "Owoce najlepiej zebrać po pierwszych przymrozkach lub wcześniej zamrozić na 2-3 dni, aby pozbyć się goryczki.",
     "tagi": [
-      "aloes",
       "nalewka",
-      "odporność",
-      "zdrowie"
+      "dzika róża",
+      "alkohol"
     ],
     "siedziba": {
-      "item_id": 3088,
+      "item_id": 3090,
       "jezyk_oryginalu": "pl-PL",
-      "przetlumaczono": "2026-10-01",
+      "przetlumaczono": "2026-10-05",
       "model": "gemini/gemini-3.5-flash-lite"
     },
     "mechanizm_tworzenia": [
-      "Ekstrakcja alkoholowa",
+      "Maceracja alkoholowa",
       "Wzorzec 5 filarów"
     ],
     "klasyfikacja_dzialania": {
-      "skalowanie_toksykologiczne": "Zawiera alkohol, który może być szkodliwy w dużych ilościach.",
+      "skalowanie_toksykologiczne": "Niska toksyczność surowca roślinnego; głównym czynnikiem ryzyka jest obecność alkoholu etylowego w gotowym produkcie.",
       "matryca_wu_xing": {
-        "zywiol_leczony": "Woda",
-        "narzad_matczyny_do_wsparcia": "Woda",
-        "porada_matrycy": "Woda"
+        "zywiol_leczony": "Metal (odpowiedzialny za płuca i skórę) oraz Drewno (odpowiedzialne za wątrobę i krew).",
+        "narzad_matczyny_do_wsparcia": "Ziemia (śledziona - poprzez słodki smak miodu), która odżywia i wspiera Metal.",
+        "porada_matrycy": "W tradycji Wu Xing wzmacnianie Ziemi za pomocą miodu pomaga odżywić płuca, co bezpośrednio przekłada się na poprawę kondycji i elastyczności skóry."
       },
       "triada_kampo": {
-        "cel_glowny": "Wzmocnienie Ki",
-        "wyjasnienie": "Aloes i miód wspierają energię, a cytryna i spirytus pomagają w oczyszczeniu i wzmacnianiu działania."
+        "cel_glowny": "Odżywienie Ketsu (krwi) oraz zharmonizowanie Sui (płynów).",
+        "wyjasnienie": "Kwaśno-słodki profil surowca w połączeniu z alkoholem porusza zastój krwi i płynów, co w tradycji Kampo łagodzi suchość skóry i wspiera krążenie."
       },
       "ajurweda": {
-        "dosze": "Kapha",
-        "wyjasnienie": "Aloes i miód mają właściwości smaczne i mleczne, wpływające na doszę Kapha."
+        "dosze": "Równoważy Pitta i Vata, przy nadmiarze może nieznacznie podnosić Kapha.",
+        "wyjasnienie": "Kwaśny smak dzikiej róży (Amala) i słodki smak miodu (Madhura) redukują suchość i chłód Vata oraz łagodzą gorącą naturę Pitta."
       },
       "doktryna_sygnatur": {
-        "sygnatura": "Zielona",
-        "interpretacja": "Zielony kolor sygnalizuje wzmacnianie energii i wspieranie układu odpornościowego."
+        "sygnatura": "Intensywnie czerwony kolor dojrzałych owoców oraz ostre kolce chroniące krzew.",
+        "interpretacja": "Czerwona barwa wskazuje na tradycyjne powinowactwo do krwi i układu krążenia, podczas gdy kolce symbolizują barierę ochronną, wzmacniającą odporność organizmu."
       },
       "humory_galena": {
-        "jakosc": "Zimne",
-        "stopien": "II",
-        "wyjasnienie": "Aloes i cytryna są zimne, a miód i spirytus wpływają na stopień zimności."
+        "jakosc": "Zimna i sucha w stopniu pierwszym (owoce), rozgrzana przez alkohol i miód.",
+        "stopien": "Stopień I",
+        "wyjasnienie": "Preparat tonizuje i lekko ściąga tkanki, pomagając usunąć nadmiar patologicznej wilgoci (flegmy) i chłodząc przegrzaną krew."
       },
       "alchemia_spageryczna": {
-        "zasada": "Separacja",
-        "wyjasnienie": "Spirytus oddziela substancje czynne z aloesu, umożliwiając ich wchłonięcie."
+        "zasada": "Połączenie zasad Sulphur (siarka) i Mercurius (rtęć).",
+        "wyjasnienie": "Dzika róża wnosi aktywną zasadę Sulphur (olejki, esencja i barwniki), wódka działa jako oczyszczony Mercurius (nośnik i rozpuszczalnik), a miód spaja je jako Sal."
       }
     },
     "wymogi_szamanskie_i_czasowe": {
-      "chronoterapia": "Lepiej przygotowywać w porze nocnej, kiedy energia Wody jest silniejsza.",
-      "astrologia_zbioru": "Zbieranie najlepiej w fazie półksiężyca, kiedy energia jest bardziej dostępna.",
-      "dieta_i_zakazy": "Zakaz spożywania produktów ziemniaczanych i mlecznych w okolicy przygotowania."
+      "chronoterapia": "Zaleca się przyjmowanie wieczorem w godzinach aktywności Potrójnego Ogrzewacza (21:00-23:00) w celu harmonizacji płynów ustrojowych.",
+      "astrologia_zbioru": "Zbiór owoców po pierwszych przymrozkach (listopad), najlepiej podczas ubywającego Księżyca w znaku powiązanym z żywiołem Ziemi lub Wody.",
+      "dieta_i_zakazy": "Podczas stosowania unikać potraw ciężkostrawnych i tłustych, które osłabiają zdolności metaboliczne wątroby i śledziony."
+    },
+    "stosowanie_i_dawkowanie": {
+      "okolicznosci_stosowania": "W okresie osłabienia odporności, skłonności do pękania naczyń krwionośnych oraz w celu poprawy kolorytu i elastyczności skóry.",
+      "skalowanie_pacjenta": "Ze względu na zawartość alkoholu produkt jest całkowicie przeciwwskazany dla dzieci, kobiet w ciąży i karmiących. Seniorzy powinni dostosować ilość do wydolności wątroby.",
+      "dawkowanie_standardowe": "Źródło nie podaje dawkowania."
     },
     "wlasciwosci_fizyczne": {
-      "konsystencja_i_slady": "Ciemnozielone, z lekkim zapachem cytryny.",
-      "barwienie_skory": "Nie stosowana.",
-      "barwienie_ubran": "Nie stosowana."
+      "konsystencja_i_slady": "Klarowna, rubinowo-bursztynowa ciecz o lekko syropowatej konsystencji.",
+      "barwienie_skory": "Nie barwi trwale skóry, ewentualne plamy łatwo zmyć ciepłą wodą.",
+      "barwienie_ubran": "Może trwale plamić jasne tkaniny na kolor różowy lub jasnoczerwony."
     },
     "bezpieczenstwo_i_interakcje": {
-      "interakcje_z_lekami": "Zakaz stosowania przy lekach przeciwzakrzepowych i antybiotykach.",
-      "ostrzezenia": "Nie stosować w ciąży, przy alergiach na cytrynę, alkohol i w przypadku dzieci."
+      "interakcje_z_lekami": "Może nasilać działanie leków przeciwzakrzepowych (wysoka zawartość witaminy K i C w owocach) oraz wchodzić w interakcje z lekami uspokajającymi i metabolizowanymi przez wątrobę.",
+      "ostrzezenia": "Przeciwwskazane dla osób z chorobą alkoholową, ostrymi stanami zapalnymi przewodu pokarmowego oraz w przypadku alergii na produkty pszczele (przy użyciu miodu)."
     },
     "wskazowki_tradycyjne": [
-      "Przygotowywanie w porze nocnej w zimnym miejscu, z dodatkiem wody i ciepła."
+      "Przemrożenie owoców (naturalne lub w zamrażarce) jest kluczowe, gdyż rozbija strukturę skrobi, uwalniając naturalną słodycz i eliminując gorycz.",
+      "Maceracja dwuetapowa z podziałem dawki alkoholu chroni delikatne związki czynne przed zbyt gwałtownym wysyceniem i ułatwia ich stabilizację.",
+      "Dojrzewanie nalewki w ciemnym naczyniu chroni cenne barwniki i witaminę C przed degradacją pod wpływem światła."
     ],
     "opracowanie": {
       "systemy": [
@@ -21670,15 +21792,15 @@
         "spagiryka",
         "chronoterapia"
       ],
-      "model": "ollama/qwen3:8b",
-      "data": "2026-10-01",
+      "model": "gemini/gemini-3.5-flash",
+      "data": "2026-10-05",
       "uwaga": "Opracowanie jest interpretacją w ujęciu tradycyjnych systemów ziołolecznictwa (m.in. Pięć Przemian, Kampo, ajurweda) przygotowaną automatycznie na podstawie przepisu źródłowego. Ma charakter edukacyjny i historyczny - nie jest poradą medyczną. Przed stosowaniem, zwłaszcza w ciąży, u dzieci, przy chorobach przewlekłych i przyjmowanych lekach, skonsultuj się z lekarzem lub farmaceutą."
     },
     "zrodla": [
       {
         "nazwa": "piwniczkachomika.pl",
-        "url": "https://piwniczkachomika.pl/aloesowka-nalewka-z-aloesu/",
-        "tytul_oryginalny": "Aloe Liqueur Recipe",
+        "url": "https://piwniczkachomika.pl/nalewka-z-dzikiej-rozy-z-miodem-lub-cukrem/",
+        "tytul_oryginalny": "Rosa Wild Tincture with Honey or Sugar",
         "jezyk": "pl-PL",
         "data_pobrania": "2026-09-29"
       }
@@ -23057,128 +23179,6 @@
         "tytul_oryginalny": "Dandelion Petal Tincture",
         "jezyk": "pl-PL",
         "data_pobrania": "2026-09-29"
-      }
-    ]
-  },
-  {
-    "id": "nalewka_z_rabarbaru_s3356",
-    "tytul": "Nalewka z rabarbaru",
-    "typ": "kulinarno_medyczne_nalewka",
-    "roslina": "Rabarbar",
-    "pochodzenie": [
-      "Tradycja polska"
-    ],
-    "metoda": "nalewka",
-    "opis": "Domowa nalewka rabarbarowa o kwaśnym i cierpkim smaku.",
-    "skladniki": [
-      {
-        "nazwa": "rabarbar",
-        "ilosc": "9 kg",
-        "czesc_rosliny": "łodyga",
-        "link_id": null,
-        "filar": "1_bazowy",
-        "tropizm_organowy": "wątroba, przewód pokarmowy",
-        "smak_ajurweda": "kwaśny"
-      },
-      {
-        "nazwa": "wódka",
-        "ilosc": "9 l",
-        "link_id": null,
-        "filar": "2_wzmocnienie",
-        "tropizm_organowy": "serce, układ nerwowy",
-        "smak_ajurweda": "pikantny"
-      },
-      {
-        "nazwa": "cukier",
-        "ilosc": "2 kg",
-        "link_id": null,
-        "filar": "5_korektor",
-        "tropizm_organowy": "serce, energia",
-        "smak_ajurweda": "słodki"
-      }
-    ],
-    "sposob_przygotowania": [
-      "Krok 1: Umyć rabarbar i pokroić na kilkucentymetrowe kawałki.",
-      "Krok 2: Wrzucić rabarbar do słoja partiami na przemian z cukrem.",
-      "Krok 3: Zamknąć słój i odstawić w ciepłe, słoneczne miejsce na 5 dni, aż cukier się rozpuści.",
-      "Krok 4: Dolać do słoja wódkę i dokładnie wymieszać.",
-      "Krok 5: Odstawić nalewkę na miesiąc.",
-      "Krok 6: Po 30 dniach odcedzić owoce i przefiltrować nalewkę do uzyskania klarownego płynu, a następnie zakorkować."
-    ],
-    "uwagi": "Głębię smaku i aromatu nalewki poczujemy po miesiącu od zakorkowania.",
-    "tagi": [
-      "rabarbar",
-      "nalewka",
-      "alkohol"
-    ],
-    "siedziba": {
-      "item_id": 3356,
-      "jezyk_oryginalu": "pl-PL",
-      "przetlumaczono": "2026-10-05",
-      "model": "gemini/gemini-3.5-flash-lite"
-    },
-    "mechanizm_tworzenia": [
-      "Ekstrakcja alkoholowa",
-      "Wzorzec 5 filarów"
-    ],
-    "klasyfikacja_dzialania": {
-      "skalowanie_toksykologiczne": "Średnia toksyczność – liście rabarbaru są trujące, łodygi używane w nalewce są bezpieczne przy prawidłowym przygotowaniu.",
-      "ajurweda": {
-        "dosze": "Pitta",
-        "wyjasnienie": "Rabarbar o smaku kwaśnym podnosi ogień Pitta, wódka jako rozgrzewający płyn dodatkowo wzmacnia Pitta, cukier łagodzi i stabilizuje."
-      },
-      "humory_galena": {
-        "jakosc": "zimny, suchy",
-        "stopien": "II",
-        "wyjasnienie": "Rabarbar jest zimny i suszący, co czyni go odpowiednim do równoważenia nadmiernego ciepła i wilgoci w organizmie."
-      }
-    },
-    "wymogi_szamanskie_i_czasowe": {
-      "chronoterapia": "Zbierany wczesną wiosną, po ostatnich przymrozkach, gdy roślina nabiera najintensywniejszego smaku.",
-      "astrologia_zbioru": "Preferowane zbieranie w fazie pierwszego kwadrantu Księżyca, co wspomaga zachowanie kwasowości.",
-      "dieta_i_zakazy": "Unikać nadmiernego spożycia alkoholu i cukru; osoby z chorobami wątroby, cukrzycą, kobiet w ciąży i dzieci powinny ograniczyć lub wykluczyć stosowanie."
-    },
-    "stosowanie_i_dawkowanie": {
-      "okolicznosci_stosowania": "Nalewka spożywana jako aperitif lub po posiłku, po kilku minutach od przyjęcia.",
-      "skalowanie_pacjenta": "Ostrożności: dzieci, ciąża, seniorzy oraz osoby z chorobą wątroby lub cukrzycą.",
-      "dawkowanie_standardowe": "Źródło nie podaje dawkowania."
-    },
-    "wlasciwosci_fizyczne": {
-      "konsystencja_i_slady": "Klarowny, lekko bursztynowy płyn, o intensywnym aromacie rabarbaru.",
-      "barwienie_skory": "Brak właściwości barwiących skórę.",
-      "barwienie_ubran": "Brak właściwości barwiących tkaniny."
-    },
-    "bezpieczenstwo_i_interakcje": {
-      "interakcje_z_lekami": "Alkohol może nasilać działanie leków przeciwzakrzepowych, sedatywnych oraz leków hepatotoksycznych.",
-      "ostrzezenia": "Liście rabarbaru są trujące – należy używać wyłącznie łodyg. Unikać przy ciąży, laktacji, chorobach wątroby, cukrzycy oraz u dzieci."
-    },
-    "wskazowki_tradycyjne": [
-      "Zbierać łodygi po przymrozkach, aby były bardziej chrupiące.",
-      "Macerować w ciepłym, słonecznym miejscu przez 5 dni, aby cukier dobrze się rozpuścił.",
-      "Po napełnieniu wódką pozostawić nalewkę w ciemnym miejscu na co najmniej miesiąc przed filtracją."
-    ],
-    "opracowanie": {
-      "systemy": [
-        "wu_xing",
-        "kampo",
-        "ajurweda",
-        "piec_filarow",
-        "doktryna_sygnatur",
-        "humory",
-        "spagiryka",
-        "chronoterapia"
-      ],
-      "model": "groq/openai/gpt-oss-120b",
-      "data": "2026-10-05",
-      "uwaga": "Opracowanie jest interpretacją w ujęciu tradycyjnych systemów ziołolecznictwa (m.in. Pięć Przemian, Kampo, ajurweda) przygotowaną automatycznie na podstawie przepisu źródłowego. Ma charakter edukacyjny i historyczny - nie jest poradą medyczną. Przed stosowaniem, zwłaszcza w ciąży, u dzieci, przy chorobach przewlekłych i przyjmowanych lekach, skonsultuj się z lekarzem lub farmaceutą."
-    },
-    "zrodla": [
-      {
-        "nazwa": "piwniczkachomika.pl",
-        "url": "https://piwniczkachomika.pl/rabarbarowka/",
-        "tytul_oryginalny": "Rhubarb Infused Liqueur",
-        "jezyk": "pl-PL",
-        "data_pobrania": "2026-10-01"
       }
     ]
   },

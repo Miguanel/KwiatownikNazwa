@@ -4,6 +4,7 @@ import json
 import re
 from flask import current_app
 from app.utils.legacy import legacy_as_plant, legacy_only_ids
+from app.utils.recipe_store import load_recipes, store_files
 
 
 def plants_dir():
@@ -37,25 +38,15 @@ def get_all_plants_list():
     ids = [f.replace('.json', '') for f in os.listdir(folder) if f.endswith('.json')]
     return ids + [pid for pid in legacy_only_ids(folder) if pid not in ids]
 
+def recipes_dir():
+    return os.path.join(current_app.root_path, '..', 'data', 'przepisy')
+
 def get_all_recipes():
-    all_recipes = []
-    recipes_dir = os.path.join(current_app.root_path, '..', 'data', 'przepisy')
-    if os.path.exists(recipes_dir):
-        for filename in os.listdir(recipes_dir):
-            if filename.endswith('.json') and filename != 'wzorzec_przepisu.json':
-                file_path = os.path.join(recipes_dir, filename)
-                try:
-                    with open(file_path, 'r', encoding='utf-8') as f:
-                        data = json.load(f)
-                        if isinstance(data, dict) and "przepisy" in data:
-                            all_recipes.extend(data["przepisy"])
-                        elif isinstance(data, list):
-                            all_recipes.extend(data)
-                        else:
-                            all_recipes.append(data)
-                except Exception:
-                    pass
-    return all_recipes
+    """Przepisy z magazynu data/przepisy: najnowszy plik z kazdej serii <seria>_<data>.json (app/utils/recipe_store.py)."""
+    return load_recipes(recipes_dir())
+
+def get_recipe_store_files():
+    return store_files(recipes_dir())
 
 def get_all_therapeutic_keywords():
     all_plants_ids = get_all_plants_list()
