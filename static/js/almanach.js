@@ -68,8 +68,18 @@
         }
         html += `<div class="kw-wiki-head">${esc(entry.tytul)}</div>`;
         if (entry.podtytul) html += `<div class="kw-wiki-sub">${esc(entry.podtytul)}</div>`;
-        html += `<div class="kw-wiki-body"><p class="kw-wiki-text">${esc(entry.tekst)}</p>`;
-        if (kind === 'patron_roku' && typeof entry.index === 'number') html += `<p class="kw-wiki-sub" style="margin-top:6px;">Lata tego znaku: ${esc(etoYears(entry.index))}</p>`;
+        html += '<div class="kw-wiki-body">';
+        if (Array.isArray(entry.klucze) && entry.klucze.length)
+            html += `<div class="kw-alm-keys">${entry.klucze.map(k => `<span>${esc(k)}</span>`).join('')}</div>`;
+        html += `<p class="kw-wiki-text">${esc(entry.tekst)}</p>`;
+        const list = (label, items, cls) => (Array.isArray(items) && items.length)
+            ? `<div class="kw-alm-list ${cls}"><strong>${label}</strong><ul>${items.map(i => `<li>${esc(i)}</li>`).join('')}</ul></div>` : '';
+        html += list('Sprzyja:', entry.sprzyja, 'kw-alm-plus') + list('Lepiej unikać:', entry.unikaj, 'kw-alm-minus');
+        const facts = (entry.fakty || []).slice();
+        if (kind === 'patron_roku' && typeof entry.index === 'number') facts.push(['Lata tego znaku', etoYears(entry.index)]);
+        if (facts.length) html += `<dl class="kw-alm-facts">${facts.map(f => `<dt>${esc(f[0])}</dt><dd>${esc(f[1])}</dd>`).join('')}</dl>`;
+        const cat = data && data._kategorie && data._kategorie[kind];
+        if (cat) html += `<details class="kw-alm-cat"><summary>O tej kategorii</summary><p>${esc(cat)}</p></details>`;
         html += '</div>';
         const src = (entry.zrodla || []).filter(z => safeUrl(z.url));
         if (src.length) {
