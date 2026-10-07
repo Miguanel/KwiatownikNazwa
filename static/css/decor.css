@@ -1,95 +1,113 @@
 /* =========================================
-   OZDOBY KART ROŚLIN (static/js/decor.js)
-   Gałązka z liśćmi w górnym rogu + ziemia / mech w dolnym rogu.
+   OZDOBY PRZY NAZWACH KATEGORII (static/js/decor.js)
+   Kopczyk ziemi z wyrastającą gałązką, tuż za nazwą kategorii, na linii plecionki.
    Wygląd i animacja pojawiania się zależą od html[data-kw-pora]: rano | dzien | wieczor | noc
    ========================================= */
-.kd {
-    position: absolute; inset: 0; z-index: 3; pointer-events: none; overflow: hidden; border-radius: inherit;
+.kd-head {
+    position: absolute; bottom: 1px; left: 0; height: 50px; width: 86px; z-index: 2; pointer-events: none;
     --kd-a: #6f8f4e; --kd-b: #4f6f3a; --kd-c: #a08a56; --kd-vein: rgba(245, 240, 205, 0.6); --kd-stem: #5c4b2c;
-    --kd-dirt: #6e4f30; --kd-dirt2: #94704a; --kd-dew: rgba(225, 242, 255, 0.92); --kd-spore: #c6f7cf;
+    --kd-soil-top: #7a5a36; --kd-soil-bot: #4a3520; --kd-clod0: #5e4329; --kd-clod1: #8a6a44; --kd-clod2: #3f2d1b;
+    --kd-pebble: #9c968a; --kd-moss: #6f8a45; --kd-root: #6b5236; --kd-speck: #6e5233;
+    --kd-dew: rgba(225, 242, 255, 0.92); --kd-spore: #c6f7cf;
 }
-.kd svg { position: absolute; overflow: visible; display: block; }
-.kd-sprig { top: -3px; left: -3px; width: var(--kd-size, 70px); height: auto; }
-.kd-dirt { bottom: 0; right: 0; width: calc(var(--kd-size, 70px) * 1.2); height: auto; opacity: 0.6; }
-.kd-flip .kd-sprig { left: auto; right: -3px; transform: scaleX(-1); }
-.kd-flip .kd-dirt { right: auto; left: 0; transform: scaleX(-1); }
-/* karta rośliny (strona rośliny): druga gałązka w prawym dolnym rogu, ziemia w lewym */
-.kd-hero .kd-dirt { right: auto; left: 0; transform: scaleX(-1); opacity: 0.45; }
-.kd-hero .kd-2 .kd-sprig { top: auto; left: auto; bottom: -3px; right: -3px; transform: rotate(180deg); width: calc(var(--kd-size) * 0.8); }
-@media (max-width: 576px) { .kd-hero { --kd-size: 80px !important; } }
+.kd-head.kd-big { height: 68px; width: 117px; }
+@media (max-width: 576px) { .kd-head { height: 44px; width: 75px; } .kd-head.kd-big { height: 56px; width: 96px; } }
+.kd-head .kd-art { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; display: block; }
 
-.kd .kd-a { fill: var(--kd-a); }
-.kd .kd-b { fill: var(--kd-b); }
-.kd .kd-c { fill: var(--kd-c); }
-.kd .kd-vein { fill: none; stroke: var(--kd-vein); stroke-width: 0.9; stroke-linecap: round; }
-.kd .kd-stem { fill: none; stroke: var(--kd-stem); stroke-width: 2.1; stroke-linecap: round; }
-.kd .kd-tendril { fill: none; stroke: var(--kd-stem); stroke-width: 1.1; stroke-linecap: round; opacity: 0.8; }
-.kd .kd-blob { fill: var(--kd-dirt); opacity: 0.55; }
-.kd .kd-blob:nth-of-type(2n) { fill: var(--kd-dirt2); opacity: 0.45; }
-.kd .kd-speck { fill: var(--kd-dirt); }
-.kd .kd-dew { fill: var(--kd-dew); stroke: rgba(255, 255, 255, 0.9); stroke-width: 0.4; opacity: 0; }
-.kd .kd-spore { fill: var(--kd-spore); opacity: 0; }
+.kd-head .kd-soil-top { stop-color: var(--kd-soil-top); }
+.kd-head .kd-soil-bot { stop-color: var(--kd-soil-bot); }
+.kd-head .kd-mound { stroke: rgba(40, 28, 15, 0.35); stroke-width: 0.6; }
+.kd-head .kd-clod0 { fill: var(--kd-clod0); }
+.kd-head .kd-clod1 { fill: var(--kd-clod1); }
+.kd-head .kd-clod2 { fill: var(--kd-clod2); }
+.kd-head .kd-pebble ellipse { fill: var(--kd-pebble); }
+.kd-head .kd-pebble .kd-shine { fill: rgba(255, 255, 255, 0.55); }
+.kd-head .kd-moss { fill: var(--kd-moss); }
+.kd-head .kd-root { fill: none; stroke: var(--kd-root); stroke-width: 0.8; stroke-linecap: round; }
+.kd-head .kd-speck { fill: var(--kd-speck); }
+.kd-head .kd-a { fill: var(--kd-a); }
+.kd-head .kd-b { fill: var(--kd-b); }
+.kd-head .kd-c { fill: var(--kd-c); }
+.kd-head .kd-vein { fill: none; stroke: var(--kd-vein); stroke-width: 0.9; stroke-linecap: round; }
+.kd-head .kd-stem { fill: none; stroke: var(--kd-stem); stroke-width: 2; stroke-linecap: round; }
+.kd-head .kd-tendril { fill: none; stroke: var(--kd-stem); stroke-width: 1; stroke-linecap: round; opacity: 0.8; }
+.kd-head .kd-dew { fill: var(--kd-dew); stroke: rgba(255, 255, 255, 0.9); stroke-width: 0.4; opacity: 0; }
+.kd-head .kd-spore { fill: var(--kd-spore); opacity: 0; }
 
-.kd .kd-leaf { transform-box: fill-box; transform-origin: 0% 50%; }
-.kd .kd-blob { transform-box: fill-box; transform-origin: 50% 100%; }
+.kd-head .kd-leaf { transform-box: fill-box; transform-origin: 0% 50%; }
+.kd-head .kd-clod, .kd-head .kd-pebble, .kd-head .kd-moss { transform-box: fill-box; transform-origin: 50% 100%; }
+.kd-head .kd-mound { transform-box: fill-box; transform-origin: 50% 100%; }
 
 /* --- barwy pór dnia --- */
-html[data-kw-pora="rano"] .kd { --kd-a: #7aa05a; --kd-b: #557a40; }
-html[data-kw-pora="wieczor"] .kd { --kd-a: #9b8a3f; --kd-b: #7a7838; --kd-c: #b0772f; --kd-vein: rgba(255, 226, 160, 0.65); --kd-stem: #6b4a26; }
-html[data-kw-pora="noc"] .kd {
-    --kd-a: #22553a; --kd-b: #18422b; --kd-c: #3a3524; --kd-vein: #86efac; --kd-stem: #3d5a3a;
-    --kd-dirt: #1a221a; --kd-dirt2: #2c4a2c;
+html[data-kw-pora="rano"] .kd-head { --kd-a: #7aa05a; --kd-b: #557a40; --kd-soil-top: #6c4f30; }
+html[data-kw-pora="wieczor"] .kd-head {
+    --kd-a: #9b8a3f; --kd-b: #7a7838; --kd-c: #b0772f; --kd-vein: rgba(255, 226, 160, 0.65); --kd-stem: #6b4a26;
+    --kd-soil-top: #87603a; --kd-moss: #8a8240;
 }
-html[data-kw-pora="noc"] .kd-sprig { filter: drop-shadow(0 0 3px rgba(134, 239, 172, 0.4)); }
-html[data-kw-pora="noc"] .kd .kd-vein { stroke-width: 0.7; }
-html[data-kw-pora="noc"] .kd .kd-blob:nth-of-type(2n) { opacity: 0.7; }
-html[data-kw-pora="noc"] .kd-dirt { opacity: 0.85; }
-html[data-kw-pora="noc"] .kd .kd-spore { opacity: 0.55; }
+html[data-kw-pora="noc"] .kd-head {
+    --kd-a: #22553a; --kd-b: #18422b; --kd-c: #3a3524; --kd-vein: #86efac; --kd-stem: #3d5a3a;
+    --kd-soil-top: #2a2219; --kd-soil-bot: #120e0a; --kd-clod0: #241b12; --kd-clod1: #3a2c1d; --kd-clod2: #16110b;
+    --kd-pebble: #4a4a44; --kd-moss: #3f9a5c; --kd-root: #3a2f22; --kd-speck: #3a2c1d;
+}
+html[data-kw-pora="noc"] .kd-head .kd-art { filter: drop-shadow(0 0 3px rgba(134, 239, 172, 0.3)); }
+html[data-kw-pora="noc"] .kd-head .kd-pebble .kd-shine { fill: rgba(200, 230, 255, 0.35); }
+html[data-kw-pora="noc"] .kd-head .kd-moss { filter: drop-shadow(0 0 2px rgba(134, 239, 172, 0.8)); }
+html[data-kw-pora="noc"] .kd-head .kd-spore { opacity: 0.55; }
 
 /* =========================================
    ANIMACJE POJAWIANIA SIĘ
    (tylko gdy system nie prosi o ograniczenie ruchu)
    ========================================= */
 @media (prefers-reduced-motion: no-preference) {
-    .kd:not(.kd-in) > svg, .kd:not(.kd-in) .kd-2 { visibility: hidden; }
-    /* „both”: element czeka niewidoczny do startu i zostaje w stanie końcowym (skrót animation: zeruje to) */
-    html[data-kw-pora] .kd.kd-in * { animation-fill-mode: both !important; }
-    .kd.kd-in .kd-stem { stroke-dasharray: 1; }
+    .kd-head:not(.kd-in) .kd-art { visibility: hidden; }
+    /* „both”: element czeka niewidoczny do startu i zostaje w stanie końcowym (skrót animation: to zeruje) */
+    html[data-kw-pora] .kd-head.kd-in * { animation-fill-mode: both !important; }
+    .kd-head.kd-in .kd-stem { stroke-dasharray: 1; }
 
-    /* ---- DZIEŃ: gałązka wyrasta z rogu, ziemia się osypuje ---- */
-    html[data-kw-pora="dzien"] .kd.kd-in .kd-stem { animation: kd-draw 0.7s ease-out var(--kd-delay); }
-    html[data-kw-pora="dzien"] .kd.kd-in .kd-leaf { animation: kd-grow 0.6s cubic-bezier(.3, 1.5, .5, 1) calc(var(--kd-delay) + 0.25s + var(--i) * 0.12s); }
-    html[data-kw-pora="dzien"] .kd.kd-in .kd-tendril { animation: kd-fade 0.5s ease calc(var(--kd-delay) + 0.8s); }
-    html[data-kw-pora="dzien"] .kd.kd-in .kd-blob { animation: kd-settle 0.6s ease-out calc(var(--kd-delay) + 0.3s + var(--i) * 0.08s); }
-    html[data-kw-pora="dzien"] .kd.kd-in .kd-speck { animation: kd-fall 0.55s cubic-bezier(.5, 0, .7, 1.4) calc(var(--kd-delay) + 0.1s + var(--i) * 0.05s); }
+    /* ---- DZIEŃ: ziemia się osypuje, gałązka wyrasta z kopczyka ---- */
+    html[data-kw-pora="dzien"] .kd-head.kd-in .kd-mound { animation: kd-settle 0.5s ease-out var(--kd-delay); }
+    html[data-kw-pora="dzien"] .kd-head.kd-in .kd-clod,
+    html[data-kw-pora="dzien"] .kd-head.kd-in .kd-pebble { animation: kd-fall 0.5s cubic-bezier(.5, 0, .7, 1.4) calc(var(--kd-delay) + 0.15s + var(--i) * 0.06s); }
+    html[data-kw-pora="dzien"] .kd-head.kd-in .kd-speck { animation: kd-fall 0.5s cubic-bezier(.5, 0, .7, 1.4) calc(var(--kd-delay) + 0.3s + var(--i) * 0.04s); }
+    html[data-kw-pora="dzien"] .kd-head.kd-in .kd-moss, html[data-kw-pora="dzien"] .kd-head.kd-in .kd-root { animation: kd-fade 0.6s ease calc(var(--kd-delay) + 0.5s); }
+    html[data-kw-pora="dzien"] .kd-head.kd-in .kd-stem { animation: kd-draw 0.8s ease-out calc(var(--kd-delay) + 0.5s); }
+    html[data-kw-pora="dzien"] .kd-head.kd-in .kd-leaf { animation: kd-grow 0.6s cubic-bezier(.3, 1.5, .5, 1) calc(var(--kd-delay) + 0.75s + var(--i) * 0.12s); }
+    html[data-kw-pora="dzien"] .kd-head.kd-in .kd-tendril { animation: kd-fade 0.5s ease calc(var(--kd-delay) + 1.3s); }
 
-    /* ---- RANO: liście powoli się rozwijają, potem osiada rosa ---- */
-    html[data-kw-pora="rano"] .kd.kd-in .kd-stem { animation: kd-draw 1s ease-out var(--kd-delay); }
-    html[data-kw-pora="rano"] .kd.kd-in .kd-leaf { animation: kd-unfurl 1s cubic-bezier(.2, .8, .3, 1) calc(var(--kd-delay) + 0.3s + var(--i) * 0.16s); }
-    html[data-kw-pora="rano"] .kd.kd-in .kd-tendril { animation: kd-fade 0.8s ease calc(var(--kd-delay) + 1s); }
-    html[data-kw-pora="rano"] .kd.kd-in .kd-dew { animation: kd-dew 0.7s cubic-bezier(.3, 1.6, .5, 1) calc(var(--kd-delay) + 1.3s + var(--i) * 0.15s); }
-    html[data-kw-pora="rano"] .kd .kd-dew { transform-box: fill-box; transform-origin: 50% 0%; }
-    html[data-kw-pora="rano"] .kd:not(.kd-in) .kd-dew { opacity: 0; }
-    html[data-kw-pora="rano"] .kd.kd-in .kd-blob, html[data-kw-pora="rano"] .kd.kd-in .kd-speck { animation: kd-fade 1.2s ease calc(var(--kd-delay) + 0.2s); }
+    /* ---- RANO: powolne rozwijanie liści, potem rosa ---- */
+    html[data-kw-pora="rano"] .kd-head.kd-in .kd-mound,
+    html[data-kw-pora="rano"] .kd-head.kd-in .kd-clod,
+    html[data-kw-pora="rano"] .kd-head.kd-in .kd-pebble,
+    html[data-kw-pora="rano"] .kd-head.kd-in .kd-moss,
+    html[data-kw-pora="rano"] .kd-head.kd-in .kd-root,
+    html[data-kw-pora="rano"] .kd-head.kd-in .kd-speck { animation: kd-fade 1s ease var(--kd-delay); }
+    html[data-kw-pora="rano"] .kd-head.kd-in .kd-stem { animation: kd-draw 1.1s ease-out calc(var(--kd-delay) + 0.3s); }
+    html[data-kw-pora="rano"] .kd-head.kd-in .kd-leaf { animation: kd-unfurl 1s cubic-bezier(.2, .8, .3, 1) calc(var(--kd-delay) + 0.6s + var(--i) * 0.16s); }
+    html[data-kw-pora="rano"] .kd-head.kd-in .kd-tendril { animation: kd-fade 0.8s ease calc(var(--kd-delay) + 1.4s); }
+    html[data-kw-pora="rano"] .kd-head .kd-dew { transform-box: fill-box; transform-origin: 50% 0%; }
+    html[data-kw-pora="rano"] .kd-head.kd-in .kd-dew { animation: kd-dew 0.7s cubic-bezier(.3, 1.6, .5, 1) calc(var(--kd-delay) + 1.7s + var(--i) * 0.15s); }
 
-    /* ---- WIECZÓR: liście opadają kołysząc się i układają na karcie ---- */
-    html[data-kw-pora="wieczor"] .kd.kd-in .kd-stem, html[data-kw-pora="wieczor"] .kd.kd-in .kd-tendril { animation: kd-fade 0.9s ease var(--kd-delay); }
-    html[data-kw-pora="wieczor"] .kd.kd-in .kd-leaf { animation: kd-drop 1.5s ease-out calc(var(--kd-delay) + var(--i) * 0.2s); }
-    html[data-kw-pora="wieczor"] .kd.kd-in .kd-blob { animation: kd-settle 0.9s ease-out calc(var(--kd-delay) + 0.6s); }
-    html[data-kw-pora="wieczor"] .kd.kd-in .kd-speck { animation: kd-fade 0.8s ease calc(var(--kd-delay) + 0.7s + var(--i) * 0.04s); }
+    /* ---- WIECZÓR: liście opadają, kołysząc się, na gałązkę ---- */
+    html[data-kw-pora="wieczor"] .kd-head.kd-in .kd-mound,
+    html[data-kw-pora="wieczor"] .kd-head.kd-in .kd-clod,
+    html[data-kw-pora="wieczor"] .kd-head.kd-in .kd-pebble,
+    html[data-kw-pora="wieczor"] .kd-head.kd-in .kd-moss,
+    html[data-kw-pora="wieczor"] .kd-head.kd-in .kd-root { animation: kd-fade 0.8s ease var(--kd-delay); }
+    html[data-kw-pora="wieczor"] .kd-head.kd-in .kd-stem,
+    html[data-kw-pora="wieczor"] .kd-head.kd-in .kd-tendril { animation: kd-fade 0.9s ease calc(var(--kd-delay) + 0.2s); }
+    html[data-kw-pora="wieczor"] .kd-head.kd-in .kd-leaf { animation: kd-drop 1.5s ease-out calc(var(--kd-delay) + 0.3s + var(--i) * 0.2s); }
+    html[data-kw-pora="wieczor"] .kd-head.kd-in .kd-speck { animation: kd-fade 0.8s ease calc(var(--kd-delay) + 1s + var(--i) * 0.04s); }
 
-    /* ---- NOC: wyłanianie z mroku, świecące żyłki, mech, zarodniki ---- */
-    html[data-kw-pora="noc"] .kd.kd-in .kd-sprig { animation: kd-emerge 1.8s ease-out var(--kd-delay); }
-    html[data-kw-pora="noc"] .kd.kd-in .kd-vein { animation: kd-veinglow 2.4s ease-in-out calc(var(--kd-delay) + 0.6s + var(--i) * 0.18s); }
-    html[data-kw-pora="noc"] .kd.kd-in .kd-blob { animation: kd-moss 1.6s ease-out calc(var(--kd-delay) + 0.4s + var(--i) * 0.2s); transform-origin: 50% 50%; }
-    html[data-kw-pora="noc"] .kd.kd-in .kd-speck { animation: kd-fade 1.4s ease calc(var(--kd-delay) + 0.5s); }
-    html[data-kw-pora="noc"] .kd.kd-in .kd-spore {
+    /* ---- NOC: wyłanianie z mroku, świecące żyłki i mech, zarodniki ---- */
+    html[data-kw-pora="noc"] .kd-head.kd-in .kd-art { animation: kd-emerge 1.8s ease-out var(--kd-delay); }
+    html[data-kw-pora="noc"] .kd-head.kd-in .kd-vein { animation: kd-veinglow 2.4s ease-in-out calc(var(--kd-delay) + 0.6s + var(--i) * 0.18s); }
+    html[data-kw-pora="noc"] .kd-head.kd-in .kd-moss { animation: kd-moss 1.4s ease-out calc(var(--kd-delay) + 0.8s + var(--i) * 0.2s); }
+    html[data-kw-pora="noc"] .kd-head.kd-in .kd-spore {
         transform-box: fill-box; transform-origin: center;
-        animation: kd-spore var(--d, 3s) ease-in-out calc(var(--kd-delay) + 1.2s + var(--i) * 0.35s) infinite alternate;
+        animation: kd-spore var(--d, 3s) ease-in-out calc(var(--kd-delay) + 1.4s + var(--i) * 0.35s) infinite alternate;
         animation-play-state: paused;
     }
-    html[data-kw-pora="noc"] .kd.kd-in.kd-vis .kd-spore { animation-play-state: running; }
-    html[data-kw-pora="noc"] .kd-hero.kd-in .kd-2 .kd-sprig { animation-delay: calc(var(--kd-delay) + 0.6s); }
+    html[data-kw-pora="noc"] .kd-head.kd-in.kd-vis .kd-spore { animation-play-state: running; }
 }
 
 @keyframes kd-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
@@ -112,18 +130,18 @@ html[data-kw-pora="noc"] .kd .kd-spore { opacity: 0.55; }
     75% { transform: translate(3px, -2px) rotate(8deg); }
     100% { transform: none; }
 }
-@keyframes kd-settle { from { opacity: 0; transform: scale(0.3, 0); } }
-@keyframes kd-fall { from { opacity: 0; transform: translateY(-22px); } 70% { opacity: 1; } }
+@keyframes kd-settle { from { opacity: 0; transform: scale(0.4, 0); } }
+@keyframes kd-fall { from { opacity: 0; transform: translateY(-20px); } 70% { opacity: 1; } }
 @keyframes kd-emerge {
     from { opacity: 0; filter: blur(6px) drop-shadow(0 0 0 rgba(134, 239, 172, 0)); }
-    to { opacity: 1; filter: blur(0) drop-shadow(0 0 3px rgba(134, 239, 172, 0.4)); }
+    to { opacity: 1; filter: blur(0) drop-shadow(0 0 3px rgba(134, 239, 172, 0.3)); }
 }
 @keyframes kd-veinglow {
     0% { stroke: rgba(134, 239, 172, 0); }
     45% { stroke: #d6ffe2; stroke-width: 1.3; }
     100% { stroke: #86efac; }
 }
-@keyframes kd-moss { from { opacity: 0; transform: scale(0.15); } }
+@keyframes kd-moss { from { opacity: 0; transform: scale(0.1); } }
 @keyframes kd-spore {
     0% { opacity: 0; transform: translate(0, 2px) scale(0.6); }
     60% { opacity: 0.95; }

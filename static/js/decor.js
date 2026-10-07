@@ -1,31 +1,23 @@
 // ==========================================
-// OZDOBY KART ROŚLIN – gałązki z liśćmi i ślady ziemi na kartach
-// Każda karta rośliny dostaje w rogu gałązkę (5 liści, wąs, krople rosy, zarodniki) i w przeciwnym
-// rogu grudki ziemi / mech. Kształt jest stały dla danej rośliny (zależy od jej nazwy), więc karta
-// wygląda tak samo po każdym wejściu, a różne karty różnią się między sobą.
-// Sposób pojawiania się ozdób zależy od pory dnia (html[data-kw-pora]):
-//   rano    – liście rozwijają się, potem na końcach liści osiadają krople rosy,
-//   dzień   – gałązka wyrasta z rogu, ziemia osypuje się z góry,
-//   wieczór – liście opadają kołysząc się i kładą na karcie, złotawe barwy,
-//   noc     – (tryb nocny, niezależnie od godziny) ozdoby wyłaniają się z mroku, żyłki liści
-//             i mech zaczynają świecić, wokół gałązki migoczą zarodniki.
-// Animacja startuje, gdy karta wjeżdża na ekran, i powtarza się po przełączeniu dnia/nocy.
+// OZDOBY PRZY NAZWACH KATEGORII – kopczyk ziemi z wyrastającą gałązką
+// Tylko przy stałych nagłówkach kategorii (.section-title, .bestiary-header – np. „Bestiariusz Roślin”,
+// „Księga Przepisów”), nie na kartach roślin ani w przewijanych karuzelach.
+// Ozdoba stoi tuż za nazwą kategorii, na linii plecionki pod nagłówkiem: kopczyk ziemi (grudki,
+// kamyki, korzonki, mech), z którego wyrasta gałązka z liśćmi; obok rozsypane drobiny ziemi.
+// Kształt jest stały dla danego nagłówka (zależy od jego tekstu).
+// Sposób pojawiania się zależy od pory dnia (html[data-kw-pora]):
+//   rano    – gałązka powoli rozwija liście, potem na liściach osiada rosa,
+//   dzień   – ziemia się osypuje, gałązka wyrasta z kopczyka,
+//   wieczór – złotawe liście opadają, kołysząc się, na gałązkę,
+//   noc     – (tryb nocny) wszystko wyłania się z mroku, żyłki liści i mech świecą, migoczą zarodniki.
+// Animacja startuje, gdy nagłówek wjeżdża na ekran, i powtarza się po przełączeniu dnia/nocy.
 // Przy „ograniczeniu ruchu” w systemie ozdoby są od razu na miejscu.
 // ==========================================
 (function () {
     'use strict';
 
     const root = document.documentElement;
-    // karta -> rozmiar gałązki (px); obrazkowe karty mają gałązkę w lewym lub prawym rogu,
-    // tekstowe zawsze w prawym (tytuły są wyrównane do lewej)
-    const TARGETS = [
-        { sel: '.witcher-card', size: 92, img: true },
-        { sel: '.mini-card', size: 58, img: true },
-        { sel: '.result-card', size: 52, img: false },
-        { sel: '.thera-card', size: 52, img: false },
-        { sel: '.grimmoire-hero', size: 120, img: true, hero: true }
-    ];
-    const SEL = TARGETS.map(t => t.sel).join(',');
+    const SEL = '.section-title, .bestiary-header';
 
     // ---------- pora dnia ----------
     function pora() {
@@ -45,93 +37,133 @@
     // ---------- kształty ----------
     function hash(s) { let h = 2166136261; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; }
     function rng(seed) { let s = seed || 1; return () => ((s = Math.imul(s ^ (s >>> 15), 2246822507) ^ Math.imul(s ^ (s >>> 13), 3266489909)) >>> 0) / 4294967296; }
+    const f1 = n => n.toFixed(1);
 
     const LEAF = 'M0 0C6-7.5 18-8.5 27 0C18 8.5 6 7.5 0 0Z';
-    const NS = 'http://www.w3.org/2000/svg';
+    let uid = 0;
 
-    function sprig(r) {
-        // łodyga z rogu (0,0) na ukos; liście naprzemiennie po obu stronach
-        const bend = 8 + r() * 10;
-        const ex = 66 + r() * 8, ey = 40 + r() * 10;
-        const stem = `M1 1C${18 + bend} ${6 + r() * 4} ${38} ${20 + bend * 0.6} ${ex} ${ey}`;
-        const pts = [[13, 5], [24, 10], [37, 18], [50, 27], [ex, ey]];
-        let leaves = '', dew = '';
-        pts.forEach((p, i) => {
-            const side = i === pts.length - 1 ? 0 : (i % 2 ? -1 : 1);
-            const ang = (i === pts.length - 1 ? 32 : side * (38 + r() * 26) + 30) + (r() - 0.5) * 12;
-            const sc = (0.62 + i * 0.1) * (0.9 + r() * 0.2);
-            const cls = (i + (r() > 0.5 ? 1 : 0)) % 2 ? 'kd-a' : 'kd-b';
-            leaves += `<g transform="translate(${p[0].toFixed(1)} ${p[1].toFixed(1)}) rotate(${ang.toFixed(0)}) scale(${sc.toFixed(2)})">` +
+    // kopczyk: nieregularny wierzch z kilku łuków
+    function moundPath(r) {
+        const x0 = 3, x1 = 60, base = 58;
+        const peak = 40 + r() * 4;
+        const pts = [];
+        const n = 9;
+        for (let i = 0; i <= n; i++) {
+            const t = i / n;
+            const x = x0 + (x1 - x0) * t;
+            const y = base - (base - peak) * Math.pow(Math.sin(Math.PI * t), 0.8) + (i && i < n ? (r() - 0.5) * 3 : 0);
+            pts.push([x, y]);
+        }
+        let d = `M${f1(pts[0][0])} ${base}`;
+        for (let i = 1; i < pts.length; i++) {
+            const [px, py] = pts[i - 1], [x, y] = pts[i];
+            d += ` Q${f1((px + x) / 2 + (r() - 0.5) * 2)} ${f1(Math.min(py, y) - r() * 2.5)} ${f1(x)} ${f1(y)}`;
+        }
+        return d + ' Z';
+    }
+
+    function build(r) {
+        const id = 'kdg' + (++uid);
+        let s = `<svg class="kd-art" viewBox="0 -8 120 70" aria-hidden="true" focusable="false"><defs>` +
+            `<linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="kd-soil-top"/><stop offset="1" class="kd-soil-bot"/></linearGradient></defs>`;
+
+        // --- gałązka (pod spodem – wyrasta z ziemi) ---
+        const sx = 30 + r() * 4;
+        const stem = `M${f1(sx)} 47C${f1(sx - 1)} 31 ${f1(sx + 9)} 19 ${f1(sx + 30)} 12C${f1(sx + 44)} 8 ${f1(sx + 56)} 11 ${f1(sx + 66)} 19`;
+        s += `<path class="kd-stem" pathLength="1" d="${stem}"/>`;
+        s += `<path class="kd-tendril" d="M${f1(sx + 40)} 10c4-7 13-6 12 1c-.5 4-6 4-5.5 0"/>`;
+        const leaves = [[2, 35, -150, 0.66], [6, 27, -35, 0.72], [15, 19, -100, 0.78], [27, 13, 28, 0.84], [41, 10, -58, 0.84], [66, 19, 34, 1]];
+        let dew = '';
+        leaves.forEach((L, i) => {
+            const x = sx + L[0], y = L[1], ang = L[2] + (r() - 0.5) * 14, sc = L[3] * (0.92 + r() * 0.16);
+            const cls = i % 2 ? 'kd-a' : 'kd-b';
+            s += `<g transform="translate(${f1(x)} ${f1(y)}) rotate(${ang.toFixed(0)}) scale(${sc.toFixed(2)})">` +
                 `<g class="kd-leaf" style="--i:${i}"><path class="${cls}" d="${LEAF}"/><path class="kd-vein" d="M1 0L24 0M8 0l5-4M8 0l5 4M15 0l5-3.4M15 0l5 3.4"/></g></g>`;
-            if (i % 2 === 0 || i === pts.length - 1) {
-                const rad = ang * Math.PI / 180, L = 25 * sc;
-                dew += `<circle class="kd-dew" style="--i:${i}" cx="${(p[0] + Math.cos(rad) * L).toFixed(1)}" cy="${(p[1] + Math.sin(rad) * L + 1.5).toFixed(1)}" r="${(1.4 + r() * 0.9).toFixed(1)}"/>`;
+            if (i % 2 === 1 || i === leaves.length - 1) {
+                const rad = ang * Math.PI / 180, l = 24 * sc;
+                dew += `<circle class="kd-dew" style="--i:${i}" cx="${f1(x + Math.cos(rad) * l)}" cy="${f1(y + Math.sin(rad) * l + 1.6)}" r="${f1(1.5 + r() * 0.8)}"/>`;
             }
         });
-        const tendril = `<path class="kd-tendril" d="M43 23c3 10 13 11 12 3c-.6-3.8-5.4-3.4-5 0"/>`;
-        let spores = '';
-        for (let i = 0; i < 6; i++) spores += `<circle class="kd-spore" style="--i:${i};--d:${(2.2 + r() * 2.6).toFixed(1)}s" cx="${(14 + r() * 74).toFixed(0)}" cy="${(14 + r() * 60).toFixed(0)}" r="${(0.9 + r() * 1.1).toFixed(1)}"/>`;
-        return `<svg class="kd-sprig" viewBox="0 0 100 80" aria-hidden="true" focusable="false">` +
-            `<path class="kd-stem" pathLength="1" d="${stem}"/>${tendril}${leaves}${dew}${spores}</svg>`;
-    }
+        s += dew;
 
-    function dirt(r) {
-        // grudki i plamy ziemi przy dolnej krawędzi (róg w punkcie 100,60), drobiny rozsypane wyżej
-        let blobs = '', specks = '';
+        // --- kopczyk ziemi ---
+        s += `<path class="kd-mound" d="${moundPath(r)}" fill="url(#${id})"/>`;
+        // korzonki wystające z ziemi
+        s += `<path class="kd-root" d="M10 56c-3 1-5 3-8 3M52 55c3 0 5 2 9 2M44 57c1 1 1 3 3 4"/>`;
+        // grudki – zaokrąglone wielokąty w kilku odcieniach
+        for (let i = 0; i < 7; i++) {
+            const cx = 9 + r() * 46, cy = 47 + r() * 9, rr = 1.6 + r() * 2.4;
+            let d = '';
+            const k = 5 + Math.floor(r() * 3);
+            for (let j = 0; j < k; j++) {
+                const a = j / k * Math.PI * 2, q = rr * (0.7 + r() * 0.5);
+                d += (j ? 'L' : 'M') + f1(cx + Math.cos(a) * q) + ' ' + f1(cy + Math.sin(a) * q * 0.8);
+            }
+            s += `<path class="kd-clod kd-clod${i % 3}" style="--i:${i}" d="${d}Z"/>`;
+        }
+        // kamyki z odblaskiem
+        for (let i = 0; i < 3; i++) {
+            const cx = 12 + r() * 40, cy = 51 + r() * 6, rx = 1.8 + r() * 1.8;
+            s += `<g class="kd-pebble" style="--i:${i}"><ellipse cx="${f1(cx)}" cy="${f1(cy)}" rx="${f1(rx)}" ry="${f1(rx * 0.65)}"/>` +
+                `<ellipse class="kd-shine" cx="${f1(cx - rx * 0.3)}" cy="${f1(cy - rx * 0.25)}" rx="${f1(rx * 0.35)}" ry="${f1(rx * 0.2)}"/></g>`;
+        }
+        // kępki mchu na wierzchu
         for (let i = 0; i < 4; i++) {
-            const cx = 62 + r() * 34, cy = 46 + r() * 12, rx = 9 + r() * 14, ry = 4 + r() * 6;
-            blobs += `<ellipse class="kd-blob" style="--i:${i}" cx="${cx.toFixed(0)}" cy="${cy.toFixed(0)}" rx="${rx.toFixed(0)}" ry="${ry.toFixed(0)}" transform="rotate(${((r() - 0.5) * 30).toFixed(0)} ${cx.toFixed(0)} ${cy.toFixed(0)})"/>`;
+            const cx = 12 + i * 11 + r() * 6, cy = 44 + Math.abs(cx - 31) * 0.38 + r() * 2;
+            s += `<path class="kd-moss" style="--i:${i}" d="M${f1(cx - 3.5)} ${f1(cy + 1.5)}q1-3.5 3.5-3q2.5-1.5 3.5 2q.5 1.5-1 1.5z"/>`;
         }
-        for (let i = 0; i < 11; i++) {
-            const x = 40 + r() * 58, y = 22 + r() * 36;
-            specks += `<circle class="kd-speck" style="--i:${i}" cx="${x.toFixed(0)}" cy="${y.toFixed(0)}" r="${(0.8 + r() * 1.8).toFixed(1)}"/>`;
+        // drobiny ziemi rozsypane obok kopczyka
+        for (let i = 0; i < 12; i++) {
+            const x = 58 + r() * 34, y = 52 + r() * 7;
+            s += `<circle class="kd-speck" style="--i:${i}" cx="${f1(x)}" cy="${f1(y)}" r="${f1(0.5 + r() * 1.1)}"/>`;
         }
-        // mały zeschły listek w ziemi
-        const lx = 58 + r() * 20, ly = 50 + r() * 6;
-        const fallen = `<g transform="translate(${lx.toFixed(0)} ${ly.toFixed(0)}) rotate(${(-150 + r() * 60).toFixed(0)}) scale(.45)"><g class="kd-leaf kd-fallen" style="--i:5"><path class="kd-c" d="${LEAF}"/><path class="kd-vein" d="M1 0L24 0"/></g></g>`;
-        return `<svg class="kd-dirt" viewBox="0 0 100 60" preserveAspectRatio="xMaxYMax meet" aria-hidden="true" focusable="false">${blobs}${fallen}${specks}</svg>`;
+        // zeschły listek obok
+        s += `<g transform="translate(${f1(74 + r() * 10)} 58) rotate(${(-170 + r() * 30).toFixed(0)}) scale(.42)"><g class="kd-leaf kd-fallen" style="--i:6"><path class="kd-c" d="${LEAF}"/><path class="kd-vein" d="M1 0L24 0"/></g></g>`;
+        // zarodniki (widoczne nocą)
+        for (let i = 0; i < 6; i++) s += `<circle class="kd-spore" style="--i:${i};--d:${f1(2.2 + r() * 2.6)}s" cx="${f1(14 + r() * 92)}" cy="${f1(4 + r() * 40)}" r="${f1(0.8 + r() * 1)}"/>`;
+        return s + '</svg>';
     }
 
-    // ---------- doklejanie do kart ----------
+    // ---------- ustawienie tuż za nazwą kategorii ----------
+    function place(h) {
+        const d = h.querySelector(':scope > .kd-head');
+        if (!d) return;
+        // koniec tekstu nagłówka (bez samej ozdoby)
+        const range = document.createRange();
+        range.setStart(h, 0);
+        range.setEndBefore(d);
+        const rects = [...range.getClientRects()].filter(r => r.width > 0);
+        const hb = h.getBoundingClientRect();
+        const end = rects.length ? Math.max(...rects.map(r => r.right)) - hb.left : 0;
+        const w = d.offsetWidth;
+        d.style.left = Math.max(0, Math.min(end + 6, h.clientWidth - w)) + 'px';
+    }
+
     const io = 'IntersectionObserver' in window ? new IntersectionObserver(entries => {
         entries.forEach(e => {
-            const d = e.target.querySelector(':scope > .kd');
+            const d = e.target.querySelector(':scope > .kd-head');
             if (!d) return;
-            if (e.isIntersecting) { d.classList.add('kd-in', 'kd-vis'); }
-            else d.classList.remove('kd-vis');
+            if (e.isIntersecting) d.classList.add('kd-in', 'kd-vis'); else d.classList.remove('kd-vis');
         });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.15 }) : null;
+    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.3 }) : null;
 
-    function decorate(card, t) {
-        if (card.querySelector(':scope > .kd')) return;
-        const key = (card.querySelector('h1,h2,h3,h4,h5,.witcher-card-title,.mini-card-title,.card-title') || card).textContent.trim().slice(0, 80) || String(Math.random());
-        const r = rng(hash(key));
-        const flip = t.hero ? false : (t.img ? r() > 0.5 : true);   // true = gałązka w prawym górnym rogu
-        if (getComputedStyle(card).position === 'static') card.style.position = 'relative';
+    function decorate(h) {
+        if (h.querySelector(':scope > .kd-head')) return;
+        const r = rng(hash(h.textContent.trim().slice(0, 60)));
         const d = document.createElement('span');
-        d.className = 'kd' + (flip ? ' kd-flip' : '') + (t.hero ? ' kd-hero' : '');
+        d.className = 'kd kd-head' + (h.classList.contains('bestiary-header') ? ' kd-big' : '');
         d.setAttribute('aria-hidden', 'true');
-        d.style.setProperty('--kd-size', t.size + 'px');
-        d.style.setProperty('--kd-delay', (r() * 0.25).toFixed(2) + 's');
-        d.innerHTML = sprig(r) + dirt(r) + (t.hero ? `<span class="kd-2">${sprig(r)}</span>` : '');
-        card.appendChild(d);
-        if (io) io.observe(card); else d.classList.add('kd-in', 'kd-vis');
+        d.style.setProperty('--kd-delay', (r() * 0.2).toFixed(2) + 's');
+        d.innerHTML = build(r);
+        h.appendChild(d);
+        place(h);
+        // licznik przy nazwie (np. „(42)”) dopisuje się później – przesuń ozdobę za nim
+        new MutationObserver(() => place(h)).observe(h, { childList: true, subtree: true, characterData: true });
+        if ('ResizeObserver' in window) new ResizeObserver(() => place(h)).observe(h);
+        if (io) io.observe(h); else d.classList.add('kd-in', 'kd-vis');
     }
 
-    function scan(scope) {
-        TARGETS.forEach(t => (scope || document).querySelectorAll(t.sel).forEach(c => decorate(c, t)));
-    }
-
-    // karty indeksu i wyszukiwarki są dorysowywane skryptami – pilnuj nowych
-    let pending = false;
-    const mo = new MutationObserver(muts => {
-        if (pending) return;
-        if (!muts.some(m => [...m.addedNodes].some(n => n.nodeType === 1 && (n.matches(SEL) || n.querySelector(SEL))))) return;
-        pending = true;
-        requestAnimationFrame(() => { pending = false; scan(); });
-    });
-
-    // po zmianie dnia/nocy: odtwórz animację na widocznych kartach
+    // po zmianie dnia/nocy: odtwórz animację na widocznych nagłówkach
     function replay() {
         document.querySelectorAll('.kd.kd-in').forEach(d => {
             d.classList.remove('kd-in');
@@ -143,8 +175,9 @@
 
     function init() {
         setPora();
-        scan();
-        mo.observe(document.body, { childList: true, subtree: true });
+        document.querySelectorAll(SEL).forEach(decorate);
+        // czcionki z Google wczytują się później i zmieniają szerokość tekstu
+        if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => document.querySelectorAll(SEL).forEach(place));
     }
     setPora();
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
