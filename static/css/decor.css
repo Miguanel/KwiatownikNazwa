@@ -147,3 +147,8 @@ html[data-kw-pora="noc"] .kd-head .kd-spore { opacity: 0.55; }
     60% { opacity: 0.95; }
     100% { opacity: 0.25; transform: translate(2px, -6px) scale(1.15); }
 }
+
+/* Sekcje karuzel mają overflow:hidden (index.css), co ucinało czubek roślinki wystający nad sekcję.
+   „clip” tylko w poziomie: karuzela dalej nie rozpycha strony, a w pionie ozdoba może wystawać.
+   Starsze przeglądarki bez „clip” zignorują tę regułę i zostanie dotychczasowe overflow:hidden. */
+html .carousel-section { overflow-x: clip; overflow-y: visible; }
