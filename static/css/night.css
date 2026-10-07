@@ -1,0 +1,177 @@
+/* =====================================================================
+   TRYB NOCNY – mroczny, „wiedźmiński” klimat (html[data-theme="night"])
+   Przełącznik w górnym pasku: static/js/night.js (zapamiętuje wybór, rysuje świetliki).
+   Kolory: prawie czarna zieleń lasu nocą, przygaszony pergamin, złoto pochodni, zieleń mchu.
+   ===================================================================== */
+html[data-theme="night"] {
+    --kw-parch: #1b1e19; --kw-paper: #20241e; --kw-bg: #0d0f0c; --kw-ink: #ddd5c0; --kw-muted: #a59c86;
+    --kw-moss: #c9b27a; --kw-green: #9fbf78; --kw-sage: #7d9a5a; --kw-gold: #d1aa55; --kw-gold-light: #e0c27a;
+    --kw-line: #3e3a2b; --kw-line-soft: #2e2c22; --kw-red: #d06a5e; --kw-red-bg: #2c1714;
+    --kw-knot: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='12' viewBox='0 0 28 12'%3E%3Cg fill='none' stroke-width='1.6' stroke-linecap='round'%3E%3Cpath d='M0 6C4.7 0 9.3 0 14 6S23.3 12 28 6' stroke='%23c9a85a'/%3E%3Cpath d='M0 6C4.7 12 9.3 12 14 6S23.3 0 28 6' stroke='%235f7a45'/%3E%3C/g%3E%3C/svg%3E");
+    --kw-triquetra: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 90'%3E%3Cg fill='none' stroke='%23d1aa55' stroke-width='3.2'%3E%3Cpath d='M50 6A72 72 0 0 1 86 68A72 72 0 0 1 50 6Z'/%3E%3Cpath d='M86 68A72 72 0 0 1 14 68A72 72 0 0 1 86 68Z'/%3E%3Cpath d='M14 68A72 72 0 0 1 50 6A72 72 0 0 1 14 68Z'/%3E%3Ccircle cx='50' cy='48' r='22' stroke='%237d9a5a' stroke-width='2.4'/%3E%3C/g%3E%3C/svg%3E");
+    color-scheme: dark;
+}
+
+/* ---------- tło: noc w lesie (mgła przy dole, poświata księżyca u góry) ---------- */
+html[data-theme="night"] body {
+    background-color: var(--kw-bg) !important;
+    background-image:
+        radial-gradient(ellipse 70% 40% at 80% -5%, rgba(170, 190, 160, 0.10), transparent 70%),
+        radial-gradient(ellipse 120% 60% at 50% 110%, rgba(60, 80, 55, 0.35), transparent 70%),
+        radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.55) 100%) !important;
+    background-attachment: fixed !important;
+    color: var(--kw-ink) !important;
+}
+html[data-theme="night"] ::selection { background: rgba(209, 170, 85, 0.35); }
+
+/* ---------- nagłówek ---------- */
+html[data-theme="night"] .main-header { box-shadow: 0 6px 22px rgba(0, 0, 0, 0.7); }
+html[data-theme="night"] .main-header nav { background: linear-gradient(#141712, #0e100d) !important; border-bottom: 1px solid #2c2a1f; }
+html[data-theme="night"] .navbar-brand, html[data-theme="night"] .nav-link { color: #e6dcc3 !important; }
+html[data-theme="night"] .nav-link:hover, html[data-theme="night"] .navbar-brand:hover { color: var(--kw-gold) !important; text-shadow: 0 0 10px rgba(209, 170, 85, 0.5); }
+html[data-theme="night"] .astro-ribbon { background-color: #12140f !important; border-color: #2c2a1f !important; color: var(--kw-ink) !important; }
+html[data-theme="night"] .astro-ribbon .astro-label { color: #8c846f !important; }
+html[data-theme="night"] .astro-ribbon .astro-value { color: #e6dcc3 !important; }
+html[data-theme="night"] .marquee-wrapper { background-color: #171a14 !important; color: #a59c86 !important; border-color: #2c2a1f !important; }
+html[data-theme="night"] .marquee-wrapper .marquee-item strong { color: var(--kw-gold) !important; }
+html[data-theme="night"] .dropdown-menu { background-color: #1b1e19 !important; border-color: #4a4532 !important; }
+html[data-theme="night"] .dropdown-item { color: #ddd5c0 !important; }
+html[data-theme="night"] .dropdown-item:hover { background-color: #2a2d24 !important; color: var(--kw-gold) !important; }
+html[data-theme="night"] .dropdown-header { background-color: #161914 !important; color: var(--kw-sage) !important; }
+
+/* ---------- karta treści i ogólne elementy ---------- */
+html[data-theme="night"] body > .container {
+    background: linear-gradient(180deg, rgba(32, 36, 30, 0.97), rgba(24, 27, 22, 0.97)) !important;
+    border-color: #3b3829 !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7), inset 0 0 60px rgba(0, 0, 0, 0.35) !important;
+}
+html[data-theme="night"] body > .container::before { border-color: #2f2c21 !important; }
+html[data-theme="night"] .container h1, html[data-theme="night"] .container h2, html[data-theme="night"] .container h3,
+html[data-theme="night"] .container h4, html[data-theme="night"] .container h5 { color: #e2cf9a !important; text-shadow: 0 0 18px rgba(209, 170, 85, 0.15); }
+html[data-theme="night"] .container p, html[data-theme="night"] .container li, html[data-theme="night"] .container td,
+html[data-theme="night"] .container label, html[data-theme="night"] .container dd { color: inherit; }
+html[data-theme="night"] .container, html[data-theme="night"] .container .text-muted { color: var(--kw-ink); }
+html[data-theme="night"] .text-muted { color: #9b937f !important; }
+html[data-theme="night"] .container a:not(.btn):not(.nav-link):not(.dropdown-item):not(.witcher-card):not(.mini-card):not(.task-card):not(.kw-plant-chip):not(.guild-link):not(.chem-link) { color: #a9c784; }
+html[data-theme="night"] .container a:not(.btn):not(.nav-link):not(.dropdown-item):not(.witcher-card):not(.mini-card):not(.task-card):not(.kw-plant-chip):not(.guild-link):not(.chem-link):hover { color: var(--kw-gold); }
+
+/* wszystkie jasne tła z wbudowanych stylów stron → ciemne */
+html[data-theme="night"] [style*="background: white"], html[data-theme="night"] [style*="background:white"],
+html[data-theme="night"] [style*="background: #fff"], html[data-theme="night"] [style*="background:#fff"],
+html[data-theme="night"] [style*="background-color: #fff"], html[data-theme="night"] [style*="background-color: white"],
+html[data-theme="night"] [style*="background: #fdfaf0"], html[data-theme="night"] [style*="background-color: #fdfaf0"],
+html[data-theme="night"] [style*="background: #f4f1ea"], html[data-theme="night"] [style*="background: #e9f0e8"] {
+    background: #20241e !important; color: var(--kw-ink) !important;
+}
+html[data-theme="night"] [style*="color: #3e4a3d"], html[data-theme="night"] [style*="color:#3e4a3d"],
+html[data-theme="night"] [style*="color: #2d5a27"], html[data-theme="night"] [style*="color:#2d5a27"] { color: #c9b27a !important; }
+html[data-theme="night"] [style*="color: #555"], html[data-theme="night"] [style*="color: #666"], html[data-theme="night"] [style*="color:#666"],
+html[data-theme="night"] [style*="color: #5a4f41"], html[data-theme="night"] [style*="color:#888"] { color: #a59c86 !important; }
+
+/* formularze */
+html[data-theme="night"] input, html[data-theme="night"] textarea, html[data-theme="night"] select,
+html[data-theme="night"] .form-control, html[data-theme="night"] .form-select, html[data-theme="night"] .retro-input {
+    background-color: #15180f !important; color: #e6dcc3 !important; border-color: #4a4532 !important;
+}
+html[data-theme="night"] input::placeholder, html[data-theme="night"] textarea::placeholder { color: #7d7563 !important; }
+html[data-theme="night"] input:focus, html[data-theme="night"] textarea:focus, html[data-theme="night"] select:focus { border-color: var(--kw-gold) !important; box-shadow: 0 0 0 3px rgba(209, 170, 85, 0.2) !important; }
+html[data-theme="night"] .btn-green, html[data-theme="night"] .compare-btn, html[data-theme="night"] .kw-btn-dark, html[data-theme="night"] .kw-lens-btn {
+    background: #2e3a24 !important; border-color: #6f8a55 !important; color: #f0e6cc !important;
+}
+html[data-theme="night"] .btn-outline-secondary { color: #c9bfa6; border-color: #5a5440; }
+html[data-theme="night"] .btn-close { filter: invert(1) sepia(0.4); }
+
+/* tabele, modale, stopka */
+html[data-theme="night"] table, html[data-theme="night"] .table { --bs-table-bg: transparent; --bs-table-color: var(--kw-ink); color: var(--kw-ink) !important; }
+html[data-theme="night"] .container table.table thead th, html[data-theme="night"] thead th { background: #2a2a1e !important; color: #e2cf9a !important; }
+html[data-theme="night"] .modal-content { background-color: #1b1e19 !important; color: var(--kw-ink) !important; border-color: #4a4532 !important; }
+html[data-theme="night"] .modal-header, html[data-theme="night"] .modal-footer { background: transparent !important; border-color: #3b3829 !important; }
+html[data-theme="night"] .modal-body { background: #1b1e19 !important; }
+html[data-theme="night"] .frozen-modal-content { background-color: #1b1e19 !important; color: var(--kw-ink); }
+html[data-theme="night"] footer { color: #8c846f !important; }
+
+/* ---------- strona główna ---------- */
+html[data-theme="night"] .kw-search { background: transparent !important; }
+html[data-theme="night"] .kw-searchbar { background: #15180f !important; border-color: #5a5440 !important; box-shadow: 0 0 24px rgba(0, 0, 0, 0.6), inset 0 0 12px rgba(0, 0, 0, 0.5) !important; }
+html[data-theme="night"] .kw-suggestions, html[data-theme="night"] .kw-quick-chip, html[data-theme="night"] .thera-chip { background: #1b1e19 !important; border-color: #4a4532 !important; color: #ddd5c0 !important; }
+html[data-theme="night"] .kw-sugg-item:hover, html[data-theme="night"] .kw-sugg-item.active { background: #2a2d24 !important; }
+html[data-theme="night"] .kw-sugg-label, html[data-theme="night"] .task-card-title { color: #e6dcc3 !important; }
+html[data-theme="night"] .witcher-card, html[data-theme="night"] .mini-card, html[data-theme="night"] .result-card,
+html[data-theme="night"] .task-card, html[data-theme="night"] .kw-effect, html[data-theme="night"] .thera-card {
+    background: #1d201a !important; border-color: #3b3829 !important; color: var(--kw-ink) !important;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.55) !important;
+}
+html[data-theme="night"] .witcher-card:hover, html[data-theme="night"] .mini-card:hover, html[data-theme="night"] .task-card:hover {
+    border-color: var(--kw-gold) !important; box-shadow: 0 0 22px rgba(209, 170, 85, 0.25), 0 8px 22px rgba(0, 0, 0, 0.6) !important;
+}
+html[data-theme="night"] .witcher-card-img, html[data-theme="night"] .mini-card-img, html[data-theme="night"] .card-img-container { filter: brightness(0.82) saturate(0.85); background-color: #2a2d24 !important; }
+html[data-theme="night"] .witcher-card:hover .witcher-card-img { filter: brightness(1) saturate(1); }
+html[data-theme="night"] .witcher-card-title, html[data-theme="night"] .mini-card h4, html[data-theme="night"] .card-title { color: #e2cf9a !important; }
+html[data-theme="night"] .witcher-card-latin, html[data-theme="night"] .card-latin, html[data-theme="night"] .card-desc-scroll, html[data-theme="night"] .task-card-desc { color: #a59c86 !important; }
+html[data-theme="night"] .witcher-btn { background: #161912 !important; color: var(--kw-gold) !important; border-color: #2e2c22 !important; }
+html[data-theme="night"] .witcher-card:hover .witcher-btn { background: #3a2f17 !important; color: #f0e2b6 !important; }
+html[data-theme="night"] .card-status-body { filter: brightness(0.65) saturate(0.8); color: #f0e6cc !important; }
+html[data-theme="night"] .kw-plant-chip { background: #2a2d24 !important; color: #ddd5c0 !important; }
+html[data-theme="night"] .search-tag { background: #4a5a33 !important; }
+
+/* ---------- Przepiśnik, Laboratorium, Gildie, porównywarka ---------- */
+html[data-theme="night"] .search-container { background: #1a1e16 !important; border-color: #3e4a2e !important; }
+html[data-theme="night"] .recipe-card, html[data-theme="night"] .lab-panel, html[data-theme="night"] .part-card-btn,
+html[data-theme="night"] .perma-section .search-box, html[data-theme="night"] .companion-node,
+html[data-theme="night"] .grimoire-details, html[data-theme="night"] .ritual-step, html[data-theme="night"] .ingredient-li {
+    background: #1d201a !important; border-color: #3b3829 !important; color: var(--kw-ink) !important;
+}
+html[data-theme="night"] .recipe-card:hover { box-shadow: 0 0 22px rgba(209, 170, 85, 0.2) !important; }
+html[data-theme="night"] .core-plant { background: radial-gradient(circle at 50% 35%, #2a2d24 0%, #141611 100%) !important; box-shadow: 0 0 60px rgba(209, 170, 85, 0.25) !important; }
+html[data-theme="night"] .comp-title, html[data-theme="night"] .core-title { color: #e2cf9a !important; }
+html[data-theme="night"] .comp-role { color: #a59c86 !important; }
+html[data-theme="night"] .compare-table { background: #1d201a !important; }
+html[data-theme="night"] .danger-cell { background: #2c1714 !important; }
+
+/* ---------- strona rośliny ---------- */
+html[data-theme="night"] .grimmoire-wrapper {
+    --kw-parch: #161913; --kw-paper: #1d201a; --kw-ink: #ddd5c0; --kw-muted: #a59c86;
+    --kw-moss: #e2cf9a; --kw-green: #a9c784; --kw-sage: #7d9a5a; --kw-gold: #d1aa55;
+    --kw-line: #3e3a2b; --kw-line-soft: #2e2c22; --kw-red: #e07b6e; --kw-red-bg: #2c1714;
+    --kw-knot: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='12' viewBox='0 0 28 12'%3E%3Cg fill='none' stroke-width='1.6' stroke-linecap='round'%3E%3Cpath d='M0 6C4.7 0 9.3 0 14 6S23.3 12 28 6' stroke='%23c9a85a'/%3E%3Cpath d='M0 6C4.7 12 9.3 12 14 6S23.3 0 28 6' stroke='%235f7a45'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: #12140f;
+}
+html[data-theme="night"] .grimmoire-overlay {
+    background: linear-gradient(to bottom, rgba(13, 15, 12, 0.55) 0, rgba(13, 15, 12, 0.88) 160px, #12140f 340px, #12140f 100%) !important;
+}
+html[data-theme="night"] .grimmoire-hero { background: rgba(26, 29, 23, 0.92) !important; box-shadow: 0 10px 34px rgba(0, 0, 0, 0.6) !important; }
+html[data-theme="night"] .hero-title { color: #e8d39b !important; text-shadow: 0 0 24px rgba(209, 170, 85, 0.25); }
+html[data-theme="night"] .grimmoire-subtab, html[data-theme="night"] .guild-item { background: #191c16 !important; }
+html[data-theme="night"] .grimmoire-subtab[open] { background: #1d201a !important; }
+html[data-theme="night"] .grimmoire-tab:not([open]) > summary:hover, html[data-theme="night"] .grimmoire-subtab:not([open]) > summary:hover { background: #24281f !important; }
+html[data-theme="night"] .energy-quote, html[data-theme="night"] .web-summary { background: #22241a !important; }
+html[data-theme="night"] .chem-link, html[data-theme="night"] .web-chip, html[data-theme="night"] .part-badge { background: #22281b !important; border-color: #4a5a33 !important; color: #b9d491 !important; }
+html[data-theme="night"] .task-month { background: #2a2a1e !important; color: #e2cf9a !important; }
+html[data-theme="night"] .gallery-thumb, html[data-theme="night"] .gallery-caption { background: #1d201a !important; color: #e2cf9a !important; }
+html[data-theme="night"] .web-ref, html[data-theme="night"] .web-sources a { color: #8fb3e0 !important; }
+
+/* ---------- dymki (Wikipedia, almanach) ---------- */
+html[data-theme="night"] .kw-wiki-tip { background: #1b1e19 !important; color: var(--kw-ink) !important; border-color: #5a5440 !important; box-shadow: 0 14px 40px rgba(0, 0, 0, 0.8), 0 0 30px rgba(209, 170, 85, 0.12) !important; }
+html[data-theme="night"] .kw-wiki-head { color: #e2cf9a !important; }
+html[data-theme="night"] .kw-wiki-text { color: var(--kw-ink) !important; }
+html[data-theme="night"] .kw-wiki-more, html[data-theme="night"] .kw-alm-src a { color: #a9c784 !important; }
+html[data-theme="night"] .kw-wiki-lang { background: #1a2633 !important; color: #9cc3ef !important; border-color: #33506e !important; }
+
+/* ---------- przełącznik dzień / noc ---------- */
+.kw-theme-btn {
+    display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; margin: 0 6px;
+    border-radius: 50%; border: 1px solid rgba(209, 184, 128, 0.55); background: rgba(0, 0, 0, 0.15);
+    color: #f3e3b4; font-size: 1.05rem; cursor: pointer; transition: background 0.25s, box-shadow 0.25s, transform 0.4s;
+}
+.kw-theme-btn:hover, .kw-theme-btn:focus-visible { background: rgba(209, 184, 128, 0.2); box-shadow: 0 0 14px rgba(209, 184, 128, 0.45); outline: none; }
+.kw-theme-btn .kw-ico-sun { display: none; }
+html[data-theme="night"] .kw-theme-btn { color: #f3d98a; box-shadow: 0 0 12px rgba(243, 217, 138, 0.25); }
+html[data-theme="night"] .kw-theme-btn .kw-ico-moon { display: none; }
+html[data-theme="night"] .kw-theme-btn .kw-ico-sun { display: inline; }
+@media (max-width: 991px) { .kw-theme-btn { margin-left: auto; margin-right: 8px; } }
+
+/* ---------- świetliki (canvas rysowany w night.js) ---------- */
+#kwFireflies { position: fixed; inset: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 1200; opacity: 0; transition: opacity 1.2s ease; }
+html[data-theme="night"] #kwFireflies { opacity: 1; }
+/* płynna zmiana kolorów przy przełączaniu */
+html.kw-theme-anim body, html.kw-theme-anim body * { transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease !important; }
