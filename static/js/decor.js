@@ -4,7 +4,8 @@
 // „Księga Przepisów”), nie na kartach roślin ani w przewijanych karuzelach.
 // Ozdoba stoi tuż za nazwą kategorii, na linii plecionki pod nagłówkiem: kopczyk ziemi (grudki,
 // kamyki, korzonki, mech), z którego wyrasta gałązka z liśćmi; obok rozsypane drobiny ziemi.
-// Kształt jest stały dla danego nagłówka (zależy od jego tekstu).
+// Kształt jest losowany przy każdym wczytaniu strony: wygięcie i wysokość łodygi, kierunek wzrostu,
+// liczba (4–7 + szczytowy) i układ liści, kopczyk, grudki i kamyki.
 // Sposób pojawiania się zależy od pory dnia (html[data-kw-pora]):
 //   rano    – gałązka powoli rozwija liście, potem na liściach osiada rosa,
 //   dzień   – ziemia się osypuje, gałązka wyrasta z kopczyka,
@@ -35,7 +36,6 @@
     }
 
     // ---------- kształty ----------
-    function hash(s) { let h = 2166136261; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; }
     function rng(seed) { let s = seed || 1; return () => ((s = Math.imul(s ^ (s >>> 15), 2246822507) ^ Math.imul(s ^ (s >>> 13), 3266489909)) >>> 0) / 4294967296; }
     const f1 = n => n.toFixed(1);
 
@@ -67,21 +67,54 @@
         let s = `<svg class="kd-art" viewBox="0 -8 120 70" aria-hidden="true" focusable="false"><defs>` +
             `<linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="kd-soil-top"/><stop offset="1" class="kd-soil-bot"/></linearGradient></defs>`;
 
-        // --- gałązka (pod spodem – wyrasta z ziemi) ---
-        const sx = 30 + r() * 4;
-        const stem = `M${f1(sx)} 47C${f1(sx - 1)} 31 ${f1(sx + 9)} 19 ${f1(sx + 30)} 12C${f1(sx + 44)} 8 ${f1(sx + 56)} 11 ${f1(sx + 66)} 19`;
+        // --- gałązka (pod spodem – wyrasta z ziemi), za każdym razem inna ---
+        // Łodyga = jedna krzywa Béziera z losowymi punktami kontrolnymi: inne wygięcie, wysokość
+        // i kierunek wzrostu (w lewo lub w prawo). Liście są doczepiane w punktach wyliczonych
+        // ze wzoru na krzywą, więc zawsze wyrastają z łodygi.
+        const sx = 20 + r() * 20;                                   // miejsce wyjścia z ziemi
+        // szczyt odchylony w lewo lub w prawo, ale w obrębie ozdoby (nie wchodzi na tekst nagłówka)
+        const endX = Math.max(22, Math.min(100, sx + (r() - 0.5) * 50));
+        const endY = 8 + r() * 15;                                  // wysokość roślinki
+        const cp1x = sx + (r() - 0.5) * 35, cp1y = 47 - r() * 15;     // wygięcie dolne
+        const cp2x = endX + (r() - 0.5) * 35, cp2y = endY + r() * 15; // wygięcie górne
+        const stem = `M${f1(sx)} 47C${f1(cp1x)} ${f1(cp1y)} ${f1(cp2x)} ${f1(cp2y)} ${f1(endX)} ${f1(endY)}`;
         s += `<path class="kd-stem" pathLength="1" d="${stem}"/>`;
-        s += `<path class="kd-tendril" d="M${f1(sx + 40)} 10c4-7 13-6 12 1c-.5 4-6 4-5.5 0"/>`;
-        const leaves = [[2, 35, -150, 0.66], [6, 27, -35, 0.72], [15, 19, -100, 0.78], [27, 13, 28, 0.84], [41, 10, -58, 0.84], [66, 19, 34, 1]];
+        // wąs przy szczycie
+        s += `<path class="kd-tendril" d="M${f1(endX)} ${f1(endY)}c4-7 13-6 12 1c-.5 4-6 4-5.5 0"/>`;
+
+        // punkt na krzywej Béziera dla t z [0, 1]
+        const bez = (t, p0, p1, p2, p3) => {
+            const mt = 1 - t;
+            return mt * mt * mt * p0 + 3 * mt * mt * t * p1 + 3 * mt * t * t * p2 + t * t * t * p3;
+        };
+
+        // 4–7 liści bocznych na przemian po obu stronach, coraz większych ku górze
+        const numLeaves = 4 + Math.floor(r() * 4);
+        const leaves = [];
+        let side = r() > 0.5 ? 1 : -1;                              // strona pierwszego liścia
+        for (let j = 0; j < numLeaves; j++) {
+            const t = 0.15 + 0.75 * (j / (numLeaves - 1));          // pozycja na łodydze: od dołu do góry
+            leaves.push({
+                x: bez(t, sx, cp1x, cp2x, endX),
+                y: bez(t, 47, cp1y, cp2y, endY),
+                ang: side > 0 ? -25 + r() * 50 : -155 + r() * 50,  // w prawo / w lewo, ±25°
+                sc: 0.5 + t * 0.4 + r() * 0.2
+            });
+            side = -side;
+        }
+        // liść szczytowy – przedłuża kierunek łodygi na jej końcu (styczna: od 2. punktu kontrolnego do końca)
+        const tip = Math.atan2(endY - cp2y, endX - cp2x) * 180 / Math.PI;
+        leaves.push({ x: endX, y: endY, ang: tip + (r() - 0.5) * 30, sc: 0.85 + r() * 0.3 });
+
         let dew = '';
         leaves.forEach((L, i) => {
-            const x = sx + L[0], y = L[1], ang = L[2] + (r() - 0.5) * 14, sc = L[3] * (0.92 + r() * 0.16);
             const cls = i % 2 ? 'kd-a' : 'kd-b';
-            s += `<g transform="translate(${f1(x)} ${f1(y)}) rotate(${ang.toFixed(0)}) scale(${sc.toFixed(2)})">` +
+            s += `<g transform="translate(${f1(L.x)} ${f1(L.y)}) rotate(${L.ang.toFixed(0)}) scale(${L.sc.toFixed(2)})">` +
                 `<g class="kd-leaf" style="--i:${i}"><path class="${cls}" d="${LEAF}"/><path class="kd-vein" d="M1 0L24 0M8 0l5-4M8 0l5 4M15 0l5-3.4M15 0l5 3.4"/></g></g>`;
+            // kropla rosy na co drugim liściu i na szczytowym
             if (i % 2 === 1 || i === leaves.length - 1) {
-                const rad = ang * Math.PI / 180, l = 24 * sc;
-                dew += `<circle class="kd-dew" style="--i:${i}" cx="${f1(x + Math.cos(rad) * l)}" cy="${f1(y + Math.sin(rad) * l + 1.6)}" r="${f1(1.5 + r() * 0.8)}"/>`;
+                const rad = L.ang * Math.PI / 180, l = 24 * L.sc;
+                dew += `<circle class="kd-dew" style="--i:${i}" cx="${f1(L.x + Math.cos(rad) * l)}" cy="${f1(L.y + Math.sin(rad) * l + 1.6)}" r="${f1(1.5 + r() * 0.8)}"/>`;
             }
         });
         s += dew;
@@ -136,7 +169,7 @@
         const hb = h.getBoundingClientRect();
         const end = rects.length ? Math.max(...rects.map(r => r.right)) - hb.left : 0;
         const w = d.offsetWidth;
-        d.style.left = Math.max(0, Math.min(end + 6, h.clientWidth - w)) + 'px';
+        d.style.left = Math.max(0, Math.min(end + 12, h.clientWidth - w)) + 'px';   // 12 px odstępu – liście wychylone w lewo nie zachodzą na tekst
     }
 
     const io = 'IntersectionObserver' in window ? new IntersectionObserver(entries => {
@@ -149,7 +182,8 @@
 
     function decorate(h) {
         if (h.querySelector(':scope > .kd-head')) return;
-        const r = rng(hash(h.textContent.trim().slice(0, 60)));
+        // nowe ziarno przy każdym wczytaniu strony – roślinka (i kopczyk) za każdym razem inna
+        const r = rng(Math.floor(Math.random() * 4294967296));
         const d = document.createElement('span');
         d.className = 'kd kd-head' + (h.classList.contains('bestiary-header') ? ' kd-big' : '');
         d.setAttribute('aria-hidden', 'true');
