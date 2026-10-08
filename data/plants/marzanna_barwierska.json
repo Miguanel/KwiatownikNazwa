@@ -98,7 +98,7 @@
     "Nasiona": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Krapp_90_Tage_alt.jpg/960px-Krapp_90_Tage_alt.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-10-08",
     "w_url": true,
     "zdjecia": [
       {
@@ -146,6 +146,812 @@
         "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
         "zrodlo": "Wikimedia Commons"
       }
+    ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-10-08",
+    "uporzadkowano": "2026-10-08",
+    "uklad": "llm:gemini/gemini-3.5-flash-lite",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (pl): Marzana barwierska",
+        "url": "https://pl.wikipedia.org/wiki/Marzana_barwierska",
+        "jezyk": "pl",
+        "typ": "wikipedia",
+        "nr": 1
+      },
+      {
+        "nazwa": "Wikipedia (de): Färberkrapp",
+        "url": "https://de.wikipedia.org/wiki/F%C3%A4rberkrapp",
+        "jezyk": "de",
+        "typ": "wikipedia",
+        "nr": 2
+      },
+      {
+        "nazwa": "Wikipedia (en): Rubia tinctorum",
+        "url": "https://en.wikipedia.org/wiki/Rubia_tinctorum",
+        "jezyk": "en",
+        "typ": "wikipedia",
+        "nr": 3
+      },
+      {
+        "nazwa": "www.webmd.com",
+        "url": "https://www.webmd.com/vitamins/ai/ingredientmono-557/madder",
+        "jezyk": "en",
+        "typ": "strona",
+        "nr": 4
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "opis",
+        "tytul": "Opis i wygląd",
+        "podsumowanie": "Marzanna barwierska wyróżnia się charakterystycznymi czerwonymi kłączami z węzłami oraz żółtozielonymi, drobnymi kwiatami kwitnącymi od czerwca do sierpnia. Blaszki liściowe i nerwy główne rośliny pokryte są ostrymi, haczykowatymi włoskami skierowanymi ku tyłowi.",
+        "podsumowanie_zrodla": [
+          1,
+          2
+        ],
+        "punkty": [
+          {
+            "tekst": "Kłącza marzanny barwierskiej mają charakterystyczną czerwoną barwę i są pokryte węzłami oraz międzywęzłami.",
+            "czesc": "kłącze",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s920"
+            ]
+          },
+          {
+            "tekst": "Drobne, gwiaździste i obupłciowe kwiaty o średnicy 2-3 milimetrów mają żółtozieloną, lejkowatą koronę i rozwijają się od czerwca do sierpnia.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s935"
+            ]
+          },
+          {
+            "tekst": "Brzegi blaszki liściowej oraz nerw główny marzany są pokryte ostrymi, haczykowatymi włoskami skierowanymi do tyłu.",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s775"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "wystepowanie",
+        "tytul": "Występowanie",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Gatunek preferuje gleby gliniaste o stałym poziomie wilgotności oraz koryta potoków.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s927"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "czesci_rosliny",
+        "tytul": "Części rośliny i surowce",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Surowiec zielarski stanowią kłącza pozyskiwane z roślin dwu- lub trzyletnich. Zbiór przeprowadza się jesienią, a suszenie powinno odbywać się w możliwie niskiej temperaturze.",
+            "czesc": "kłącze",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s771"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Oprócz związków barwnych kłącze zawiera m.in. kwas rubichlorowy, kwas cytrynowy, garbniki, pektyny, białka oraz niewielkie ilości tłustego oleju.",
+            "czesc": "korzeń",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s938"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W przeszłości korzeń stosowano w tradycyjnym ziołolecznictwie przy schorzeniach dróg moczowych, kamicy nerkowej, dnie moczanowej, krzywicy oraz w stanach anemicznych.",
+            "czesc": "korzeń",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s943"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "barwienie",
+        "tytul": "Barwienie i rzemiosło",
+        "podsumowanie": "Z kłączy marzanny pozyskuje się barwnik alizarynę, który wykorzystywano do barwienia tkanin na różne kolory oraz współcześnie do produkcji farb. Świeże kłącze ma żółty środek, a czerwony barwnik rozwija się w procesie suszenia, przy czym tradycyjnie utrwalano go za pomocą zaprawy, takiej jak ałun.",
+        "podsumowanie_zrodla": [
+          1,
+          2,
+          3
+        ],
+        "punkty": [
+          {
+            "tekst": "Z kłącza marzanny otrzymuje się barwnik alizarynę, który był używany do barwienia tkanin na czerwono, brązowo i fioletowo.",
+            "czesc": "kłącze",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s922"
+            ]
+          },
+          {
+            "tekst": "Współcześnie barwnik pozyskiwany z kłączy znajduje zastosowanie przy produkcji farb akwarelowych, olejnych oraz graficznych.",
+            "czesc": "kłącze",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s772"
+            ]
+          },
+          {
+            "tekst": "Świeże kłącze w środku jest żółte, a charakterystyczny czerwony barwnik rozwija się dopiero w procesie suszenia.",
+            "czesc": "korzeń",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s939"
+            ]
+          },
+          {
+            "tekst": "Tradycyjnie barwnik utrwalano na tkaninach za pomocą zaprawy, najczęściej ałunu.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s929"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "historia",
+        "tytul": "Historia i nazwa",
+        "podsumowanie": "Marzanna była znana jako źródło barwnika już w starożytności m.in. Egipcjanom, Fenicjanom i Żydom, a Pliniusz Starszy i Dioskurydes opisywali jej lecznicze wykorzystanie przeciwko żółtaczkari. Nazwa naukowa rodzaju Rubia pochodzi od rzymskiego określenia czerwień, nawiązującego do barwnika w korzeniach.",
+        "podsumowanie_zrodla": [
+          1,
+          2
+        ],
+        "punkty": [
+          {
+            "tekst": "Marzanna była znana już starożytnym Egipcjanom, Fenicjanom i Żydom jako źródło barwnika.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s923"
+            ]
+          },
+          {
+            "tekst": "O roślinie pisali już Pliniusz Starszy i Dioskurydes, w których czasach wykorzystywano ją w lecznictwie jako środek przeciwko żółtaczce.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s773"
+            ]
+          },
+          {
+            "tekst": "Nazwa naukowa rodzaju Rubia pochodzi od rzymskiego określenia oznaczającego czerwień, nadanego ze względu na czerwony barwnik zawarty w korzeniach.",
+            "czesc": "korzeń",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s942"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kultura",
+        "tytul": "Wierzenia i tradycje",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Według badacza roślin biblijnych M. Zohary'ego, hebrajska nazwa marzany barwierskiej jest zawarta w niektórych męskich imionach występujących na kartach Biblii.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s774"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": "Kuracja preparatami z marzany barwierskiej może powodować różowe zabarwienie potu i moczu, a u osób mających z nią kontakt odnotowano kontaktowe zapalenie skóry. Ponadto z powodu rakotwórczych składników niemiecki Federalny Urząd Zdrowia cofnął w 1993 roku zezwolenia na obrót produktami leczniczymi z jej korzeniem.",
+        "podsumowanie_zrodla": [
+          1,
+          2,
+          4
+        ],
+        "punkty": [
+          {
+            "tekst": "Podczas kuracji preparatami z marzany barwierskiej jako skutek uboczny może pojawić się różowe zabarwienie potu i moczu.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s770"
+            ]
+          },
+          {
+            "tekst": "Z powodu uznania niektórych składników za rakotwórcze, niemiecki Federalny Urząd Zdrowia cofnął w marcu 1993 roku zezwolenia na obrót produktami leczniczymi zawierającymi korzeń marzanny.",
+            "czesc": "korzeń",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s944"
+            ]
+          },
+          {
+            "tekst": "U osób mających kontakt z marzanną odnotowano przypadki wystąpienia kontaktowego zapalenia skóry.",
+            "czesc": "korzeń",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s945"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "kłącze": [
+        "s920",
+        "s771",
+        "s922",
+        "s772"
+      ],
+      "kwiaty": [
+        "s935"
+      ],
+      "liście": [
+        "s775"
+      ],
+      "korzeń": [
+        "s938",
+        "s943",
+        "s939",
+        "s942",
+        "s944",
+        "s945"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s770",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Podczas kuracji preparatami z marzany barwierskiej jako skutek uboczny może pojawić się różowe zabarwienie potu i moczu.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Marzana barwierska",
+          "url": "https://pl.wikipedia.org/wiki/Marzana_barwierska"
+        }
+      },
+      {
+        "id": "s771",
+        "sekcja": "czesci_rosliny",
+        "czesc": "kłącze",
+        "tekst": "Surowiec zielarski stanowią kłącza pozyskiwane z roślin dwu- lub trzyletnich. Zbiór przeprowadza się jesienią, a suszenie powinno odbywać się w możliwie niskiej temperaturze.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Marzana barwierska",
+          "url": "https://pl.wikipedia.org/wiki/Marzana_barwierska"
+        }
+      },
+      {
+        "id": "s772",
+        "sekcja": "barwienie",
+        "czesc": "kłącze",
+        "tekst": "Współcześnie barwnik pozyskiwany z kłączy znajduje zastosowanie przy produkcji farb akwarelowych, olejnych oraz graficznych.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Marzana barwierska",
+          "url": "https://pl.wikipedia.org/wiki/Marzana_barwierska"
+        }
+      },
+      {
+        "id": "s773",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "O roślinie pisali już Pliniusz Starszy i Dioskurydes, w których czasach wykorzystywano ją w lecznictwie jako środek przeciwko żółtaczce.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Marzana barwierska",
+          "url": "https://pl.wikipedia.org/wiki/Marzana_barwierska"
+        }
+      },
+      {
+        "id": "s774",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "Według badacza roślin biblijnych M. Zohary'ego, hebrajska nazwa marzany barwierskiej jest zawarta w niektórych męskich imionach występujących na kartach Biblii.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Marzana barwierska",
+          "url": "https://pl.wikipedia.org/wiki/Marzana_barwierska"
+        }
+      },
+      {
+        "id": "s775",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Brzegi blaszki liściowej oraz nerw główny marzany są pokryte ostrymi, haczykowatymi włoskami skierowanymi do tyłu.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Marzana barwierska",
+          "url": "https://pl.wikipedia.org/wiki/Marzana_barwierska"
+        }
+      },
+      {
+        "id": "s920",
+        "sekcja": "opis",
+        "czesc": "kłącze",
+        "tekst": "Kłącza marzanny barwierskiej mają charakterystyczną czerwoną barwę i są pokryte węzłami oraz międzywęzłami.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Marzana barwierska",
+          "url": "https://pl.wikipedia.org/wiki/Marzana_barwierska"
+        }
+      },
+      {
+        "id": "s922",
+        "sekcja": "barwienie",
+        "czesc": "kłącze",
+        "tekst": "Z kłącza marzanny otrzymuje się barwnik alizarynę, który był używany do barwienia tkanin na czerwono, brązowo i fioletowo.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Marzana barwierska",
+          "url": "https://pl.wikipedia.org/wiki/Marzana_barwierska"
+        }
+      },
+      {
+        "id": "s923",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Marzanna była znana już starożytnym Egipcjanom, Fenicjanom i Żydom jako źródło barwnika.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Marzana barwierska",
+          "url": "https://pl.wikipedia.org/wiki/Marzana_barwierska"
+        }
+      },
+      {
+        "id": "s927",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Gatunek preferuje gleby gliniaste o stałym poziomie wilgotności oraz koryta potoków.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Rubia tinctorum",
+          "url": "https://en.wikipedia.org/wiki/Rubia_tinctorum"
+        }
+      },
+      {
+        "id": "s929",
+        "sekcja": "barwienie",
+        "czesc": null,
+        "tekst": "Tradycyjnie barwnik utrwalano na tkaninach za pomocą zaprawy, najczęściej ałunu.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Rubia tinctorum",
+          "url": "https://en.wikipedia.org/wiki/Rubia_tinctorum"
+        }
+      },
+      {
+        "id": "s935",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Drobne, gwiaździste i obupłciowe kwiaty o średnicy 2-3 milimetrów mają żółtozieloną, lejkowatą koronę i rozwijają się od czerwca do sierpnia.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Färberkrapp",
+          "url": "https://de.wikipedia.org/wiki/F%C3%A4rberkrapp"
+        }
+      },
+      {
+        "id": "s938",
+        "sekcja": "sklad",
+        "czesc": "korzeń",
+        "tekst": "Oprócz związków barwnych kłącze zawiera m.in. kwas rubichlorowy, kwas cytrynowy, garbniki, pektyny, białka oraz niewielkie ilości tłustego oleju.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Färberkrapp",
+          "url": "https://de.wikipedia.org/wiki/F%C3%A4rberkrapp"
+        }
+      },
+      {
+        "id": "s939",
+        "sekcja": "barwienie",
+        "czesc": "korzeń",
+        "tekst": "Świeże kłącze w środku jest żółte, a charakterystyczny czerwony barwnik rozwija się dopiero w procesie suszenia.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Färberkrapp",
+          "url": "https://de.wikipedia.org/wiki/F%C3%A4rberkrapp"
+        }
+      },
+      {
+        "id": "s942",
+        "sekcja": "historia",
+        "czesc": "korzeń",
+        "tekst": "Nazwa naukowa rodzaju Rubia pochodzi od rzymskiego określenia oznaczającego czerwień, nadanego ze względu na czerwony barwnik zawarty w korzeniach.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Färberkrapp",
+          "url": "https://de.wikipedia.org/wiki/F%C3%A4rberkrapp"
+        }
+      },
+      {
+        "id": "s943",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "korzeń",
+        "tekst": "W przeszłości korzeń stosowano w tradycyjnym ziołolecznictwie przy schorzeniach dróg moczowych, kamicy nerkowej, dnie moczanowej, krzywicy oraz w stanach anemicznych.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Färberkrapp",
+          "url": "https://de.wikipedia.org/wiki/F%C3%A4rberkrapp"
+        }
+      },
+      {
+        "id": "s944",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "korzeń",
+        "tekst": "Z powodu uznania niektórych składników za rakotwórcze, niemiecki Federalny Urząd Zdrowia cofnął w marcu 1993 roku zezwolenia na obrót produktami leczniczymi zawierającymi korzeń marzanny.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Färberkrapp",
+          "url": "https://de.wikipedia.org/wiki/F%C3%A4rberkrapp"
+        }
+      },
+      {
+        "id": "s945",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "korzeń",
+        "tekst": "U osób mających kontakt z marzanną odnotowano przypadki wystąpienia kontaktowego zapalenia skóry.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "www.webmd.com",
+          "url": "https://www.webmd.com/vitamins/ai/ingredientmono-557/madder"
+        }
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-08",
+    "pola": {
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": [
+          "Łodyga z drobnymi, haczykowatymi kolcami, czepiająca się podpór.",
+          "Liście ułożone w okółkach (po 4-6) wokół łodygi.",
+          "Kłącza barwiące dłonie na pomarańczowo-czerwono przy przełamaniu.",
+          "Drobne, żółtozielone kwiaty i ciemne, jagodokształtne owoce."
+        ],
+        "tresc": [
+          {
+            "tekst": "Marszanna barwiersska (Rubia tinctorum) ma łodygę z drobnymi, haczykowatymi kolcami, czepiającą się podpór, liście ułożone w okółkach (po 4-6) wokół łodygi, kłączę barwiącą dłonie na pomarańczowo-czerwono przy przełamaniu oraz drobne, żółtozielone kwiaty i ciemne, jagodokształtne owoce.",
+            "zrodla": [
+              1,
+              2
+            ],
+            "fakty": [
+              "s920",
+              "s935"
+            ]
+          },
+          {
+            "tekst": "Brzegi blaszki liściowej oraz nerw główny marzany są pokryte ostrymi, haczykowatymi włoskami skierowanymi do tyłu.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s775"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "5142f4246ae41bc4"
+      },
+      "wymagania.gleba": {
+        "tytul": "Natura i siedlisko - Gleba",
+        "typ": "tekst",
+        "oryginal": "Głęboko uprawiona, próchniczna, przepuszczalna.",
+        "tresc": [
+          {
+            "tekst": "Marszanna barwiersska (Rubia tinctorum) preferuje gleby gliniaste o stałym poziomie wilgotności oraz koryta potoków.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s927"
+            ]
+          },
+          {
+            "tekst": "Głęboko uprawiona, próchniczna, przepuszczalna.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "87e2ca8f476372a2"
+      },
+      "czesci_rosliny.korzeń.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - korzeń: Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Marszanna barwiersska (Rubia tinctorum) zawiera korzeń bogate w kwas rubichlorowy, kwas cytrynowy, garbniki, pektyny, białka oraz niewielkie ilości tłustego oleju.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s938"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "3e228ec6313b5870"
+      },
+      "czesci_rosliny.korzeń.wlasciwości": {
+        "tytul": "Surowce i zbiory - korzeń: Działanie",
+        "typ": "tekst",
+        "oryginal": "silnie barwiące, moczopędne, rozpuszczające złogi",
+        "tresc": [
+          {
+            "tekst": "Marszanna barwiersska (Rubia tinctorum) zawiera korzeń, który wykazuje działanie silnie barwiące, moczopędne oraz rozpuszczające złogi. W przeszłości korzeń był stosowany w tradycyjnym ziołolecznctwie przy schorzeniach dróg moczowych, kamicy nerkowej, dnie moczanowej, krzywicy oraz w stanach anemicznych.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s943"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "1138ab777339a391"
+      },
+      "zastosowanie.rzemieslnicze": {
+        "tytul": "Praktyczne zastosowanie - Rzemiosło",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Z kłączy marzanny otrzymuje się barwnik alizaryn, który był używany do barwienia tkanin na czerwono, brązowo i fioletowo.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s922"
+            ]
+          },
+          {
+            "tekst": "Współcześnie barwnik pozyskiwany z kłączy znajduje zastosowanie przy produkcji farb akwarelowych, olejnych oraz graficznych.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s772"
+            ]
+          },
+          {
+            "tekst": "Świeże kłącze w środku jest żółte, a charakterystyczny czerwony barwnik rozwija się dopiero w procesie suszenia.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s939"
+            ]
+          },
+          {
+            "tekst": "Tradycyjnie barwnik utrwalano na tkaninach za pomocą zaprawy, najczęściej ałunu.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s929"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "c5de532346e11943"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "Zjadana przez zwierzęta hodowlane (np. owce), marzanna powoduje zabarwienie ich kości i mleka na różowy kolor.",
+          "Słynne czerwone mundury brytyjskich żołnierzy (tzw. 'Redcoats') były historycznie barwione właśnie korzeniem marzanny."
+        ],
+        "tresc": [
+          {
+            "tekst": "Marzanna była znana jako źródło barwnika już starożytnym Egipcjanom, Fenicjanom i Żydom.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s923"
+            ]
+          },
+          {
+            "tekst": "Nazwa naukowa rodzaju Rubia pochodzi od rzymskiego określenia oznaczającego czerwień, co nadano ze względu na czerwony barwnik zawarty w korzeniach.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s942"
+            ]
+          },
+          {
+            "tekst": "Według badacza roślin biblijnych M. Zohary'ego, hebrajska nazwa marzany barwierskiej jest zawarta w niektórych męskich imionach występujących na kartach Biblii.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s774"
+            ]
+          },
+          {
+            "tekst": "Zjadana przez zwierzęta hodowlane, na przykład owce, marzanna powoduje zabarwienie ich kości i mleka na różowy kolor.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Słynne czerwone mundury brytyjskich żołnierzy, tak zwane 'Redcoats', były historycznie barwione właśnie korzeniem marzanny.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "8fcab23c88e08f3b"
+      },
+      "zastosowanie.medyczne": {
+        "tytul": "Praktyczne zastosowanie - Medycyna",
+        "typ": "tekst",
+        "oryginal": "Leczenie kamicy nerkowej i dróg moczowych.",
+        "tresc": [
+          {
+            "tekst": "Leczenie kamicy nerkowej i dróg moczowych.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "O roślinie pisali już Pliniusz Starszy i Dioskurydes, w których czasach wykorzystywano ją w lecznictwie jako środek przeciwko żółtaczce.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s773"
+            ]
+          }
+        ],
+        "model": "bez LLM: za duzo zdan spoza zrodel",
+        "wejscie": "539c43c079535889"
+      },
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Podczas kuracji preparatami z marzanny barwierskiej jako skutek uboczny może pojawić się różowe zabarwienie potu i moczu.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s770"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "92a4c1ce7b728d05"
+      },
+      "czesci_rosliny.korzeń.ostrzezenia": {
+        "tytul": "Surowce i zbiory - korzeń: Ostrzeżenia",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Marszanna barwiersska (Rubia tinctorum) zawiera składniki, które mogą być toksyczne i powodować kontaktowe zapalenie skóry. Z tego powodu niemiecki Federalny Urząd Zdrowia cofnął w marcu 1993 roku zezwolenia na obrót produktami leczniczymi zawierającymi korzeń tej rośliny.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s944"
+            ]
+          },
+          {
+            "tekst": "U osób mających kontakt z marzanną odnotowano przypadki wystąpienia kontaktowego zapalenia skóry.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s945"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "bea60d58cf9f7255"
+      }
+    },
+    "uzyte_fakty": [
+      "s770",
+      "s772",
+      "s773",
+      "s774",
+      "s775",
+      "s920",
+      "s922",
+      "s923",
+      "s927",
+      "s929",
+      "s935",
+      "s938",
+      "s939",
+      "s942",
+      "s943",
+      "s944",
+      "s945"
     ]
   }
 }

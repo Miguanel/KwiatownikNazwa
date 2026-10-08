@@ -1,0 +1,38 @@
+{
+ "wersja": 1,
+ "opis": "Kronika Siedziby Kwiatownika - pisze ja agent wdrozen (Siedziba).",
+ "wpisy": [
+  {
+   "data": "2026-10-08T21:20:01+02:00",
+   "tytul": "Nowa wiedza o 2 roślinach",
+   "opis": "Siedziba zebrała 37 sprawdzonych informacji (źródła: niemieckie, angielskie, francuskie).",
+   "liczby": {
+    "informacje": 37,
+    "przepisy": 0,
+    "rosliny": 2,
+    "nowe_rosliny": 0,
+    "zdjecia": 0
+   },
+   "rosliny": [
+    {
+     "id": "indygowiec_barwierski",
+     "nazwa": "Indygowiec barwierski",
+     "nowe": 19,
+     "jezyki": [
+      "fr"
+     ]
+    },
+    {
+     "id": "marzanna_barwierska",
+     "nazwa": "Marzanna barwierska",
+     "nowe": 18,
+     "jezyki": [
+      "de",
+      "en"
+     ]
+    }
+   ],
+   "przepisy": []
+  }
+ ]
+}
