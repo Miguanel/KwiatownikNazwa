@@ -8,6 +8,7 @@ from flask import Blueprint, render_template, current_app, send_from_directory, 
 from astro_engine import get_astrological_data
 from data_builder import build_calendar_from_jsons, FESTIVAL_KNOWLEDGE
 from app.utils.helpers import get_all_plants_list, get_plant_data, get_all_recipes
+from app.utils.kronika import kronika
 
 main_bp = Blueprint('main', __name__)
 
@@ -158,5 +159,6 @@ def index():
         calendar_data=json.dumps(dynamic_calendar),
         astro=astro,
         knowledge=knowledge,
-        recipes_full_data=json.dumps(recipes)
+        recipes_full_data=json.dumps(recipes),
+        kronika=kronika(12)
     )

@@ -127,6 +127,27 @@ window.openRecipeModal = function(buttonElement) {
         }
         // --- TYTUŁ I POCHODZENIE ---
         document.getElementById('modalRecipeTitle').innerText = recipe.tytul || "Nieznana Receptura";
+        if (window.KwStats) KwStats.track('recipe_open', recipe.id || recipe.tytul || '');
+
+        // Źródło (pierwsze z adresem) widoczne od razu pod tytułem; pełna lista w "📚 Źródła" niżej
+        const sourceLine = document.getElementById('modalSourceLine');
+        if (sourceLine) {
+            const all = normalizeSources(recipe).filter(z => z.url || (z.name && String(z.name).length > 3 && !/^\d+$/.test(z.name)));
+            const withUrl = all.filter(z => z.url);
+            if (withUrl.length) {
+                const first = withUrl[0];
+                const domain = first.url.replace(/^https?:\/\/(www\.)?/i, '').split('/')[0];
+                sourceLine.innerHTML = `<i class="bi bi-link-45deg" aria-hidden="true"></i> Źródło: `
+                    + `<a href="${esc(first.url)}" target="_blank" rel="noopener nofollow" data-kw-src="${esc(domain)}">${esc(first.name || domain)} ↗</a>`
+                    + (all.length > 1 ? ` <span class="recipe-source-more">+${all.length - 1}</span>` : '');
+            } else if (all.length) {
+                sourceLine.innerHTML = `<i class="bi bi-book" aria-hidden="true"></i> Źródło: ${esc(String(all[0].name).slice(0, 90))}`
+                    + (all.length > 1 ? ` <span class="recipe-source-more">+${all.length - 1}</span>` : '');
+            } else {
+                sourceLine.innerHTML = `<i class="bi bi-book" aria-hidden="true"></i> Źródło: księga Kwiatownika`;
+            }
+            sourceLine.hidden = false;
+        }
 
         const originTags = document.getElementById('modalOriginTags');
         const tooltipText = document.getElementById('modalOriginTooltipText');
@@ -379,7 +400,8 @@ window.openRecipeModal = function(buttonElement) {
             const sources = normalizeSources(recipe);
             if (sources.length) {
                 const items = sources.map(z => {
-                    const name = z.url ? `<a href="${esc(z.url)}" target="_blank" rel="noopener nofollow">${esc(z.name)}</a>` : esc(z.name);
+                    const dom = z.url ? z.url.replace(/^https?:\/\/(www\.)?/i, '').split('/')[0] : '';
+                    const name = z.url ? `<a href="${esc(z.url)}" target="_blank" rel="noopener nofollow" data-kw-src="${esc(dom)}">${esc(z.name)}</a>` : esc(z.name);
                     const meta = [z.title ? `„${esc(z.title)}”` : '', z.lang ? esc(z.lang.toUpperCase()) : '',
                                   z.date ? `pobrano ${esc(z.date)}` : ''].filter(Boolean).join(' · ');
                     return `<li>${name}${meta ? ` <small class="text-muted">— ${meta}</small>` : ''}</li>`;

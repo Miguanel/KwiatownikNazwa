@@ -67,6 +67,13 @@
                     </div>
 
                     <h3 class="recipe-title">{{ recipe.get('tytul', 'Nieznana receptura') }}</h3>
+                    {% set zr = recipe.get('_zrodlo') %}
+                    <p class="recipe-source">
+                        {% if zr and zr.url %}<i class="bi bi-link-45deg" aria-hidden="true"></i> Źródło:
+                            <a href="{{ zr.url }}" target="_blank" rel="noopener nofollow" data-kw-src="{{ zr.domena }}" title="{{ zr.nazwa }} – otwiera stronę, z której pochodzi przepis">{{ zr.domena }} ↗</a>{% if zr.wiecej %} <span class="recipe-source-more" title="Ten sam przepis jest też na innych stronach – lista w grymuarze">+{{ zr.wiecej }}</span>{% endif %}
+                        {% elif zr %}<i class="bi bi-book" aria-hidden="true"></i> Źródło: {{ zr.nazwa }}{% if zr.wiecej %} <span class="recipe-source-more">+{{ zr.wiecej }}</span>{% endif %}
+                        {% else %}<i class="bi bi-book" aria-hidden="true"></i> Źródło: księga Kwiatownika{% endif %}
+                    </p>
 
                     <p style="font-size: 0.95rem; color: #555; margin-bottom: 20px; font-family: 'Crimson Text', serif; flex-grow: 1;">
                         {% if recipe.get('opis') %}
@@ -118,6 +125,7 @@
             <div class="modal-header recipe-modal-header" id="modalHeaderObj">
                 <div style="flex: 1; padding-right: 20px; display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
                     <h2 id="modalRecipeTitle" class="grimoire-title" style="margin-bottom: 0;">Tytuł Przepisu</h2>
+                    <p id="modalSourceLine" class="recipe-source recipe-source-modal" hidden></p>
 
                     <button type="button" id="btnToggleRecipeFav" class="btn btn-sm" style="border: 1px solid #d1c7a7; background-color: #fdfaf0; border-radius: 20px; color: #9b4b4b; font-weight: bold;">
                         <i class="bi bi-heart" id="recipeFavIcon"></i> Dodaj

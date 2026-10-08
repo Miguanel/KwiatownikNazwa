@@ -20,6 +20,8 @@ def create_app():
                 static_folder=resource_path('static'))
 
     app.config['SECRET_KEY'] = 'beka_has_lo'
+    # Backend Kwiatownika (Render): liczniki, keep-alive, stan Siedziby dla papirusu. Pusty = wylaczone.
+    app.config['KW_BACKEND_URL'] = os.getenv('KW_BACKEND_URL', 'https://kwiatownik-backend.onrender.com').strip().rstrip('/')
 
     DATABASE_URL = os.getenv('DATABASE_URL')
     if DATABASE_URL and DATABASE_URL.startswith("postgres://"):
@@ -52,6 +54,10 @@ def create_app():
                           "festival": "Zwyczajny Czas"}
 
         return dict(astro=astro_data)
+
+    @app.context_processor
+    def inject_backend():
+        return {'kw_backend': app.config.get('KW_BACKEND_URL', '')}
 
     # Rejestracja Blueprintów
     from app.routes.main import main_bp

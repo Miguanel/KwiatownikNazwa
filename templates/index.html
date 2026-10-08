@@ -53,21 +53,43 @@
     <div id="kwResults" class="kw-results" aria-live="polite" hidden></div>
 </section>
 
-<!-- Automatyczna Karuzela: Bestiariusz (filtrowana tą samą wyszukiwarką) -->
-<div class="carousel-section">
-    <h3 class="section-title"><i class="ra ra-leaf"></i> Bestiariusz Roślin <span class="kw-count" id="plantsCarouselCount"></span></h3>
-    <div class="auto-scroll-wrapper" id="plantsWrapper">
-        <div class="auto-scroll-content" id="plantsCarousel"></div>
+<!-- PAPIRUS – Kronika Siedziby: historia aktualizacji Kwiatownika (z data/changelog.json i plikow roslin)
+     + na zywo: czy Siedziba teraz pracuje i nad czym (static/js/papirus.js, backend Kwiatownika) -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/papirus.css') }}">
+<section class="kw-papyrus-wrap" id="kwPapyrus" aria-labelledby="kwPapyrusTitle">
+    <h3 class="section-title" id="kwPapyrusTitle"><i class="ra ra-scroll-unfurled"></i> Kronika Siedziby
+        {% if kronika %}<span class="kw-count">ostatnia aktualizacja: {{ kronika[0].kiedy }}</span>{% endif %}</h3>
+    <div class="kw-papyrus">
+        <div class="kw-papyrus-rod" aria-hidden="true"></div>
+        <div class="kw-papyrus-sheet" tabindex="0" aria-label="Kronika Siedziby – przewijana lista zmian">
+            <div class="kw-live" id="kwPapyrusLive" aria-live="polite">
+                <span class="kw-live-dot" aria-hidden="true"></span>
+                <span class="kw-live-text">Siedziba Kwiatownika zbiera wiedzę o roślinach z zagranicznych źródeł – poniżej kronika jej pracy.</span>
+            </div>
+            <div class="kw-papyrus-stats" id="kwPapyrusStats" hidden></div>
+            <ol class="kw-chronicle kw-chronicle-live" id="kwPapyrusLiveLog" hidden></ol>
+            <ol class="kw-chronicle" id="kwPapyrusLog">
+                {% for w in kronika %}
+                <li class="kw-chronicle-entry">
+                    <time datetime="{{ w.data }}">{{ w.kiedy }}</time>
+                    <h4>{{ w.tytul }}</h4>
+                    {% if w.opis %}<p>{{ w.opis }}</p>{% endif %}
+                    {% if w.liczby_txt %}<p class="kw-chronicle-nums">{% for t in w.liczby_txt %}<span>{{ t }}</span>{% endfor %}</p>{% endif %}
+                    {% if w.rosliny %}<p class="kw-chronicle-plants">
+                        {% for r in w.rosliny %}<a href="{{ url_for('plants.plant_detail', plant_id=r.id) }}" title="{% if r.nowe %}{{ r.nowe }} informacji{% endif %}{% if r.jezyki_txt %} – źródła {{ r.jezyki_txt }}{% endif %}">{{ r.nazwa }}{% if r.nowe %} <small>+{{ r.nowe }}</small>{% endif %}</a>{% endfor %}
+                    </p>{% endif %}
+                    {% if w.przepisy %}<p class="kw-chronicle-recipes">
+                        {% for p in w.przepisy %}<a href="/przepisy/?q={{ p.tytul | urlencode }}&autoopen=true">{{ p.tytul }}</a>{% if p.zrodlo %} <small>({{ p.zrodlo }})</small>{% endif %}{% if not loop.last %} · {% endif %}{% endfor %}
+                    </p>{% endif %}
+                </li>
+                {% else %}
+                <li class="kw-chronicle-entry"><h4>Kronika dopiero się zaczyna</h4><p>Pierwsze wpisy pojawią się po najbliższej publikacji Siedziby.</p></li>
+                {% endfor %}
+            </ol>
+        </div>
+        <div class="kw-papyrus-rod" aria-hidden="true"></div>
     </div>
-</div>
-
-<!-- Automatyczna Karuzela: Przepisy (filtrowana tą samą wyszukiwarką) -->
-<div class="carousel-section">
-    <h3 class="section-title"><i class="ra ra-potion"></i> Księga Przepisów <span class="kw-count" id="recipesCarouselCount"></span></h3>
-    <div class="auto-scroll-wrapper" id="recipesWrapper">
-        <div class="auto-scroll-content" id="recipesCarousel"></div>
-    </div>
-</div>
+</section>
 
 <section>
     <h2 class="bestiary-header">Bestiariusz Roślin</h2>
@@ -118,4 +140,5 @@
 
 <script src="{{ url_for('static', filename='js/tags.js') }}"></script>
 <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+<script src="{{ url_for('static', filename='js/papirus.js') }}"></script>
 {% endblock %}

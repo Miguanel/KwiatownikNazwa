@@ -394,6 +394,16 @@ details.grimoire-subdetails > summary:hover {
 }
 
 /* ===== Przepisy z Siedziby Kwiatownika (z sieci) ===== */
+/* Źródło przepisu: na karcie (pod tytułem) i w nagłówku grymuaru */
+.recipe-source { font-size: .88rem; color: var(--kw-muted, #6b6255); margin: -4px 0 12px; font-family: 'Crimson Text', serif;
+    overflow-wrap: anywhere; }
+.recipe-source i { color: var(--kw-sage, #8a9a5b); }
+.recipe-source a { color: var(--kw-green, #2d5a27); font-weight: 600; text-decoration: underline; text-decoration-color: var(--kw-gold-light, #d1b880);
+    text-underline-offset: 2px; }
+.recipe-source a:hover { color: var(--kw-gold, #9a7b2f); }
+.recipe-source-more { font-size: .8rem; background: var(--kw-line-soft, #ebe4cf); border-radius: 10px; padding: 0 6px; margin-left: 2px; }
+.recipe-source-modal { flex-basis: 100%; order: 5; margin: 2px 0 0; font-size: .95rem; }
+
 .web-badge {
     font-size: 0.75rem; color: #2f5d8a; border: 1px solid #9db8d3; background: #eef4fa;
     padding: 1px 8px; border-radius: 10px; margin: 0 6px; white-space: nowrap;

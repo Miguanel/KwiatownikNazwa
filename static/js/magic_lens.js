@@ -57,8 +57,10 @@ document.addEventListener("DOMContentLoaded", () => {
             magicBtn.disabled = true;
         }
         try {
+            if (window.KwStats) KwStats.track('plantid_click');          // licznik uzyc plant.id (backend)
             const base64Image = await getBase64(file);
             const latinResult = await identifyPlantAPI(base64Image);
+            if (window.KwStats) KwStats.track('plantid_result', latinResult || '');
             if (!latinResult) {
                 alert("Nie udało się rozpoznać rośliny. Spróbuj ostrzejszego zdjęcia liścia lub kwiatu, z bliska i w dobrym świetle.");
                 return;

@@ -920,6 +920,8 @@
         }
 
         const name = plant && how === 'exact' ? plant.nazwa_pl : (polish || latin);
+        // rozpoznana roslina, ktorej nie ma w Kwiatowniku -> podpowiedz dla Siedziby, co dopisac
+        if (how !== 'exact' && window.KwStats) KwStats.track('plantid_unknown', latin || polish);
         // przy dopasowaniu tylko do rodzaju szukamy spokrewnionej rośliny z Bestiariusza
         setTags([plant ? plant.nazwa_pl : name]);
 

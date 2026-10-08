@@ -1,0 +1,102 @@
+/* =====================================================================
+   PAPIRUS – Kronika Siedziby na stronie glownej (templates/index.html, static/js/papirus.js)
+   Zwoj: dwa drewniane walki + arkusz pergaminu przewijany w pionie. Kolory ze zmiennych celtic.css,
+   wiec tryb nocny (night.css) dziala sam; walki w nocy sa przyciemnione.
+   ===================================================================== */
+.kw-papyrus-wrap { margin: 30px 0 34px; }
+.kw-papyrus-wrap .section-title .kw-count { font-size: .78rem; font-style: italic; color: var(--kw-muted); font-weight: normal; }
+.kw-papyrus { position: relative; max-width: 980px; margin: 14px auto 0; filter: drop-shadow(0 10px 18px rgba(62, 74, 61, .18)); }
+
+/* walki zwoju z galkami na koncach */
+.kw-papyrus-rod {
+    position: relative; height: 20px; margin: 0 6px; border-radius: 10px; z-index: 2;
+    background: linear-gradient(to bottom, #6e5230 0%, #b88d55 22%, #e2c48c 42%, #a57d45 66%, #5d4426 100%);
+    box-shadow: inset 0 -2px 3px rgba(0, 0, 0, .25), 0 2px 4px rgba(0, 0, 0, .25);
+}
+.kw-papyrus-rod::before, .kw-papyrus-rod::after {
+    content: ""; position: absolute; top: -5px; width: 18px; height: 30px; border-radius: 9px;
+    background: radial-gradient(circle at 35% 30%, #f0d9a8, #b08447 45%, #5a3f22 100%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .35);
+}
+.kw-papyrus-rod::before { left: -12px; }
+.kw-papyrus-rod::after { right: -12px; }
+
+/* arkusz */
+.kw-papyrus-sheet {
+    position: relative; margin: -4px 18px; padding: 22px 28px 26px; max-height: 470px; overflow-y: auto;
+    background-color: var(--kw-parch);
+    background-image:
+        radial-gradient(ellipse at 10% 0%, rgba(154, 123, 47, .10), transparent 55%),
+        radial-gradient(ellipse at 90% 100%, rgba(154, 123, 47, .12), transparent 55%),
+        repeating-linear-gradient(0deg, transparent 0 27px, rgba(154, 123, 47, .06) 27px 28px);
+    border-left: 1px solid var(--kw-line); border-right: 1px solid var(--kw-line);
+    box-shadow: inset 12px 0 18px -14px rgba(90, 63, 34, .35), inset -12px 0 18px -14px rgba(90, 63, 34, .35);
+    scrollbar-width: thin; scrollbar-color: var(--kw-gold-light) transparent;
+    overscroll-behavior: contain;
+}
+.kw-papyrus-sheet:focus-visible { outline: 2px solid var(--kw-gold); outline-offset: -4px; }
+.kw-papyrus-sheet::-webkit-scrollbar { width: 8px; }
+.kw-papyrus-sheet::-webkit-scrollbar-thumb { background: var(--kw-gold-light); border-radius: 4px; }
+
+/* na zywo: stan Siedziby */
+.kw-live { display: flex; gap: 10px; align-items: baseline; font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem;
+    color: var(--kw-ink); padding-bottom: 10px; border-bottom: 1px solid var(--kw-line); }
+.kw-live small { color: var(--kw-muted); }
+.kw-live-dot { flex: 0 0 10px; width: 10px; height: 10px; border-radius: 50%; background: var(--kw-gold-light);
+    box-shadow: 0 0 0 3px rgba(209, 184, 128, .25); transform: translateY(-1px); }
+.kw-live.is-alive .kw-live-dot { background: #4f9a4a; box-shadow: 0 0 0 3px rgba(79, 154, 74, .22); animation: kw-live-pulse 2.4s ease-in-out infinite; }
+@keyframes kw-live-pulse { 0%, 100% { box-shadow: 0 0 0 3px rgba(79, 154, 74, .22); } 50% { box-shadow: 0 0 0 7px rgba(79, 154, 74, 0); } }
+
+.kw-papyrus-stats { display: flex; flex-wrap: wrap; gap: 6px 18px; padding: 10px 0; border-bottom: 1px dashed var(--kw-line);
+    font-size: .92rem; color: var(--kw-muted); }
+.kw-papyrus-stats b { color: var(--kw-green); font-variant-numeric: tabular-nums; }
+.kw-papyrus-stats a { color: var(--kw-green); }
+.kw-papyrus-top { flex-basis: 100%; }
+
+/* kronika */
+.kw-chronicle { list-style: none; margin: 0; padding: 0; }
+.kw-chronicle-entry { position: relative; padding: 14px 0 12px 22px; border-bottom: 1px dashed var(--kw-line); }
+.kw-chronicle-entry:last-child { border-bottom: 0; }
+.kw-chronicle-entry::before { content: "❦"; position: absolute; left: 0; top: 14px; color: var(--kw-gold); font-size: .95rem; }
+.kw-chronicle-entry time { display: block; font-variant: small-caps; letter-spacing: .06em; color: var(--kw-gold); font-size: .88rem; }
+.kw-chronicle-entry h4 { margin: 2px 0 4px; font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 1.12rem;
+    color: var(--kw-moss); border: 0; }
+.kw-chronicle-entry h4::before, .kw-chronicle-entry h4::after { display: none !important; }
+.kw-chronicle-entry p { margin: 0 0 6px; font-family: 'Crimson Text', Georgia, serif; font-size: 1.02rem; color: var(--kw-ink); line-height: 1.45; }
+.kw-chronicle-nums { display: flex; flex-wrap: wrap; gap: 4px 12px; }
+.kw-chronicle-nums span { font-size: .9rem; color: var(--kw-green); font-weight: 600; }
+.kw-chronicle-plants { display: flex; flex-wrap: wrap; gap: 6px; }
+.kw-chronicle-plants a { display: inline-block; padding: 1px 10px; border: 1px solid var(--kw-line); border-radius: 12px;
+    background: var(--kw-paper); color: var(--kw-green); text-decoration: none; font-size: .92rem; }
+.kw-chronicle-plants a:hover { border-color: var(--kw-gold); color: var(--kw-gold); }
+.kw-chronicle-plants small, .kw-chronicle-recipes small { color: var(--kw-muted); }
+.kw-chronicle-recipes a { color: var(--kw-green); }
+
+/* wpisy na zywo (jeszcze nie opublikowane) */
+.kw-chronicle-live { margin-bottom: 4px; border-bottom: 2px solid var(--kw-line-soft); }
+.kw-chronicle-entry.is-live { padding: 8px 0 6px 22px; }
+.kw-chronicle-entry.is-live::before { content: "✎"; top: 8px; }
+.kw-chronicle-entry.is-live time { font-variant: normal; letter-spacing: 0; font-size: .82rem; }
+.kw-chronicle-entry.is-live p { font-size: .98rem; }
+.kw-chronicle-entry.is-live a { color: var(--kw-ink); text-decoration-color: var(--kw-gold-light); }
+
+html[data-theme="night"] .kw-papyrus-rod, html[data-theme="night"] .kw-papyrus-rod::before,
+html[data-theme="night"] .kw-papyrus-rod::after { filter: brightness(.55) saturate(.8); }
+html[data-theme="night"] .kw-papyrus { filter: drop-shadow(0 10px 22px rgba(0, 0, 0, .6)); }
+html[data-theme="night"] .kw-papyrus-sheet {
+    background-image:
+        radial-gradient(ellipse at 10% 0%, rgba(209, 170, 85, .07), transparent 55%),
+        radial-gradient(ellipse at 90% 100%, rgba(125, 154, 90, .08), transparent 55%),
+        repeating-linear-gradient(0deg, transparent 0 27px, rgba(209, 170, 85, .05) 27px 28px);
+}
+html[data-theme="night"] .kw-chronicle-plants a { background: rgba(255, 255, 255, .03); }
+
+@media (max-width: 760px) {
+    .kw-papyrus-sheet { margin: -4px 10px; padding: 16px 14px 18px; max-height: 400px; }
+    .kw-papyrus-rod { margin: 0 2px; height: 16px; }
+    .kw-papyrus-rod::before, .kw-papyrus-rod::after { width: 14px; height: 24px; top: -4px; }
+    .kw-papyrus-rod::before { left: -6px; }
+    .kw-papyrus-rod::after { right: -6px; }
+    .kw-live { font-size: 1rem; }
+}
+@media (prefers-reduced-motion: reduce) { .kw-live.is-alive .kw-live-dot { animation: none; } }

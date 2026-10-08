@@ -32,6 +32,34 @@ def is_from_web(recipe):
     return any(isinstance(z, dict) and z.get('url') for z in (recipe.get('zrodla') or []))
 
 
+def primary_source(recipe):
+    """Pierwsze zrodlo przepisu z adresem: {'nazwa': domena/nazwa, 'url': adres, 'wiecej': ile jeszcze} albo None."""
+    raw = recipe.get('zrodla')
+    items = raw if isinstance(raw, list) else ([raw] if raw else [])
+    if recipe.get('zrodlo'):
+        items = items + [recipe['zrodlo']]
+    found, books = [], []
+    for z in items:
+        if isinstance(z, dict):
+            url, name = str(z.get('url') or '').strip(), z.get('nazwa')
+        elif isinstance(z, str):
+            url, name = z.strip(), None
+        else:
+            continue                                   # np. numery przypisow
+        if url.lower().startswith(('http://', 'https://')):
+            domain = url.split('//', 1)[1].split('/', 1)[0]
+            domain = domain[4:] if domain.lower().startswith('www.') else domain
+            found.append({'nazwa': name or domain, 'domena': domain, 'url': url})
+        elif (name or url) and len(name or url) > 3:
+            books.append({'nazwa': (name or url)[:90], 'domena': '', 'url': None})   # ksiazka / monografia
+    allsrc = found + books
+    if not allsrc:
+        return None
+    first = dict(allsrc[0])
+    first['wiecej'] = len(allsrc) - 1
+    return first
+
+
 def recipes_for_plant(plant_id, plant_name=None):
     """Przepisy, w ktorych wystepuje roslina: glowna roslina (slug/roslina) albo skladnik z link_id."""
     name = (plant_name or '').lower().strip()
@@ -50,6 +78,7 @@ def przepisy():
     all_recipes = get_all_recipes()
     for r in all_recipes:
         r['_z_sieci'] = is_from_web(r)
+        r['_zrodlo'] = primary_source(r)
     results = [r for r in all_recipes if query in recipe_search_text(r)] if query else all_recipes
     web_count = sum(1 for r in all_recipes if r['_z_sieci'])
     return render_template('recipes.html', results=results, query=query, web_count=web_count,

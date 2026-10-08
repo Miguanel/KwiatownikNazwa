@@ -10,6 +10,7 @@
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="theme-color" content="#3e4a3d">
     <meta name="application-name" content="Kwiatownik">
+    <meta name="kw-backend" content="{{ kw_backend }}">
 
     <!-- Ikona strony (wyniki Google, karty przegladarki, ekran telefonu) -->
     <link rel="icon" href="/favicon.ico" sizes="48x48">
@@ -453,6 +454,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <!-- Lokalizacja (z adresu IP, bez pytania o zgodę) i pogoda na żywo; GPS tylko po kliknięciu celownika -->
 <script src="{{ url_for('static', filename='js/geo_weather.js') }}"></script>
+<!-- Statystyki bez ciasteczek + keep-alive backendu (licznik plant.id, odslony roslin, papirus) -->
+<script src="{{ url_for('static', filename='js/kw_stats.js') }}"></script>
 <script src="{{ url_for('static', filename='js/magic_lens.js') }}"></script>
 <!-- Dymki z Wikipedii: najechanie / kliknięcie w składnik lub pojęcie (data-wiki-scan, data-wiki-ingredient, data-wiki-term) -->
 <script src="{{ url_for('static', filename='js/wiki_tooltip.js') }}"></script>

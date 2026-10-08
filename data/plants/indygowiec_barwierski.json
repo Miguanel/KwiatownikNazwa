@@ -92,7 +92,7 @@
     "Rycina": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Indigofera_tinctoria_Blanco1.163-cropped.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-10-08",
     "w_url": true,
     "zdjecia": [
       {
@@ -140,6 +140,1771 @@
         "licencja_url": null,
         "zrodlo": "Wikimedia Commons"
       }
+    ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-10-08",
+    "uporzadkowano": "2026-10-08",
+    "uklad": "llm:gemini/gemini-3.5-flash-lite",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (pl): Indygowiec barwierski",
+        "url": "https://pl.wikipedia.org/wiki/Indygowiec_barwierski",
+        "jezyk": "pl",
+        "typ": "wikipedia",
+        "nr": 1
+      },
+      {
+        "nazwa": "Wikipedia (de): Indigopflanze",
+        "url": "https://de.wikipedia.org/wiki/Indigopflanze",
+        "jezyk": "de",
+        "typ": "wikipedia",
+        "nr": 2
+      },
+      {
+        "nazwa": "Wikipedia (en): Indigofera tinctoria",
+        "url": "https://en.wikipedia.org/wiki/Indigofera_tinctoria",
+        "jezyk": "en",
+        "typ": "wikipedia",
+        "nr": 3
+      },
+      {
+        "nazwa": "Wikipedia (ja): タイワンコマツナギ",
+        "url": "https://ja.wikipedia.org/wiki/%E3%82%BF%E3%82%A4%E3%83%AF%E3%83%B3%E3%82%B3%E3%83%9E%E3%83%84%E3%83%8A%E3%82%AE",
+        "jezyk": "ja",
+        "typ": "wikipedia",
+        "nr": 4
+      },
+      {
+        "nazwa": "Wikipedia (zh): 木藍",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9C%A8%E8%97%8D",
+        "jezyk": "zh",
+        "typ": "wikipedia",
+        "nr": 5
+      },
+      {
+        "nazwa": "ask-ayurveda.com",
+        "url": "https://ask-ayurveda.com/wiki/article/4686-indigofera-tinctoria--asita-nili",
+        "jezyk": "en-US",
+        "typ": "strona",
+        "nr": 6
+      },
+      {
+        "nazwa": "hairmaniac.ru",
+        "url": "https://hairmaniac.ru/indigofera-basma-vazhnye-osobennosti-ispolzovaniya-klyuchevye-momenty-mehanizm-vozdeystviya-na-volosy.html",
+        "jezyk": "ru",
+        "typ": "strona",
+        "nr": 7
+      },
+      {
+        "nazwa": "pmc.ncbi.nlm.nih.gov",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3586835/",
+        "jezyk": "en",
+        "typ": "strona",
+        "nr": 8
+      },
+      {
+        "nazwa": "www.a-hospital.com",
+        "url": "https://www.a-hospital.com/w/%E6%9C%A8%E8%93%9D",
+        "jezyk": "zh-hans",
+        "typ": "strona",
+        "nr": 9
+      },
+      {
+        "nazwa": "www.baike.com",
+        "url": "https://www.baike.com/wikiid/7194716787140280332",
+        "jezyk": "zh",
+        "typ": "strona",
+        "nr": 10
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "opis",
+        "tytul": "Opis i wygląd",
+        "podsumowanie": "Indygowiec barwierski to niski półkrzew lub roślina wieloletnia o zmiennym cyklu życiowym w zależności od klimatu, osiągająca ponad 1,5 metra wysokości. Wytwarza krótkie liście nieparzysto-pierzaste z ulistkami, drobne obupłciowe kwiaty o barwie różowej, fioletowej lub z żółtawobiałym żagielkiem, a także podłużne strąki zawierające nasiona.",
+        "podsumowanie_zrodla": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "punkty": [
+          {
+            "tekst": "Indygowiec barwierski jest niskim półkrzewem lub rośliną wieloletnią, osiągającą do 1,5 m lub ponad 1,5 metra wysokości, z drobnymi brązowymi gałęziami.",
+            "czesc": null,
+            "zrodla": [
+              1,
+              2
+            ],
+            "fakty": [
+              "s756",
+              "s834"
+            ]
+          },
+          {
+            "tekst": "Morfologicznie roślina wytwarza krótkie, nieparzysto-pierzaste liście z ogonkiem długości do 2-2,5 cm, osiągającą do 7-8 cm osią i składające się z do 17 odwrotnie jajowatych listków.",
+            "czesc": "liście",
+            "zrodla": [
+              1,
+              2
+            ],
+            "fakty": [
+              "s782",
+              "s829",
+              "s843"
+            ]
+          },
+          {
+            "tekst": "Kwiaty tej rośliny są obupłciowe, motylkowe, zebrane w niewielkie grona lub pęczki w kątach liści, o barwie różowej, fioletowej, rzadszej czerwonej lub z żółtawobiałym żagielkiem i łódeczką oraz szkarłatnymi skrzydełkami.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1,
+              2,
+              3
+            ],
+            "fakty": [
+              "s830",
+              "s842",
+              "s845"
+            ]
+          },
+          {
+            "tekst": "Owocami są podłużne, liniowe, cylindryczne i lekko owłosione lub nagie strąki o długości do 3,5 centymetra, zawierające do 12 małych, brązowych i kubicznych nasion.",
+            "czesc": "owoce",
+            "zrodla": [
+              2,
+              5
+            ],
+            "fakty": [
+              "s846",
+              "s848"
+            ]
+          },
+          {
+            "tekst": "W zależności od warunków klimatycznych indygowiec może rosnąć jako roślina jednoroczna, dwuletnia lub wieloletnia.",
+            "czesc": null,
+            "zrodla": [
+              3,
+              4
+            ],
+            "fakty": [
+              "s833",
+              "s837"
+            ]
+          },
+          {
+            "tekst": "Dojrzałe liście indygowca po wysuszeniu przybierają charakterystyczną, szaroniebieską barwę.",
+            "czesc": "liście",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s847"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "wystepowanie",
+        "tytul": "Występowanie",
+        "podsumowanie": "Naturalny obszar występowania indygowca obejmuje tropikalną Afrykę Zachodnią, region od Tanzanii do Południowej Afryki, subkontynent indyjski oraz lądową część Azji Południowo-Wschodniej, przy czym gatunek rośnie głównie na terenach płaskich i w pobliżu rzek.",
+        "podsumowanie_zrodla": [
+          3,
+          4,
+          5
+        ],
+        "punkty": [
+          {
+            "tekst": "Naturalny obszar występowania tego gatunku obejmuje tropikalną Afrykę Zachodnią, teren od Tanzanii do Południowej Afryki oraz subkontynent indyjski i lądową część Azji Południowo-Wschodniej.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s765"
+            ]
+          },
+          {
+            "tekst": "Pierwotne pochodzenie geograficzne indygowca barwierskiego nie jest dokładnie znane, ponieważ przez wieki był on powszechnie uprawiany w umiarkowanych i tropikalnych regionach Azji oraz Afryki.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s836"
+            ]
+          },
+          {
+            "tekst": "W Chinach roślina ta występuje w prowincjach Guangdong, Guangxi, Yunnan oraz na Tajwanie, a w regionie Siyi w środkowym Guangdong uważana jest za najlepszą odmianę o najwyższej zawartości barwnika.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s785"
+            ]
+          },
+          {
+            "tekst": "Roślina ta rośnie głównie na terenach płaskich oraz w pobliżu rzek, preferując miejsca słoneczne oraz wykazując odporność na suszę i wilgoć.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s786"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "czesci_rosliny",
+        "tytul": "Części rośliny i surowce",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Liście indygowca są źródłem barwnika indygo, z którego uzyskuje się barwnik używany do barwienia tkanin.",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s758"
+            ]
+          },
+          {
+            "tekst": "Zbierane są liście, które zawierają indikan, będący prekursorem barwnika indygo.",
+            "czesc": "liście",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s835"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Liście indygowca zawierają duże ilości indygotyny, z której pozyskuje się barwnik indygo wykorzystywany w przemyśle spożywczym oraz do barwienia odzieży.",
+            "czesc": "liście",
+            "zrodla": [
+              10
+            ],
+            "fakty": [
+              "s799"
+            ]
+          },
+          {
+            "tekst": "W roślinie tej zidentyfikowano obecność rotenoidów, takich jak deguelina, dehydrodeguelina, rotenol, rotenon, tefrozyna oraz sumatrol.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s840"
+            ]
+          },
+          {
+            "tekst": "Badania nad ekstraktem z indygowca wykazały, że podnosi on poziom kwasu gamma-aminomasłowego w mózgu oraz obniża aktywność transaminazy GABA, co sugeruje ułatwianie przewodnictwa GABA-ergicznego.",
+            "czesc": "ziele",
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s859"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Ziele indygowca stosowano tradycyjnie w lecznictwie w przypadku japońskiego zapalenia mózgu typu B, świnki, zaczerwienienia oczu, obrzęków i owrzodzeń, a także przy wymiotach krwią.",
+            "czesc": "ziele",
+            "zrodla": [
+              9
+            ],
+            "fakty": [
+              "s788"
+            ]
+          },
+          {
+            "tekst": "Zgodnie z zapiskami w dawnym kompendium „Sheng Cao Yao Xing Bei Yao”, liście indygowca były wykorzystywane do leczenia chorób oczu objawiających się mgłą przed oczami oraz przy krwawych wymiotach.",
+            "czesc": "liście",
+            "zrodla": [
+              9
+            ],
+            "fakty": [
+              "s789"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "medycyna_wschodu",
+        "tytul": "Medycyna chińska, kampo, ajurweda",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W tradycyjnej medycynie roślina ta była stosowana w celach leczniczych, wykazując działanie polegające na uśmierzaniu wątroby i rozpraszaniu gniewu, a także chłodzeniu krwi i usuwaniu toksyn.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s784"
+            ]
+          },
+          {
+            "tekst": "W tradycyjnej medycynie chińskiej ziele indygowca (liście i łodygi) charakteryzuje się zimną naturą oraz gorzkim smakiem i jest klasyfikowane jako surowiec usuwający gorąco i toksyny oraz tamujący krwawienia.",
+            "czesc": "ziele",
+            "zrodla": [
+              9
+            ],
+            "fakty": [
+              "s787"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "barwienie",
+        "tytul": "Barwienie i rzemiosło",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Liście indygowca moczy się w wodzie i poddaje fermentacji, co przekształca naturalny glikozyd indican w niebieski barwnik indigotin.",
+            "czesc": "liście",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s831"
+            ]
+          },
+          {
+            "tekst": "Po fermentacji osad z roztworu liści miesza się z silną zasadą, np. ługiem, aby wytrącić indigotin.",
+            "czesc": "liście",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s832"
+            ]
+          },
+          {
+            "tekst": "W procesie produkcji barwnika stosowano tak zwaną metodę strąceniową, opartą na utlenianiu tlenem, bądź też mieszano sfermentowane liście z roztworami silnie zasadowymi, np. wodorotlenkiem sodu.",
+            "czesc": "liście",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s838"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kosmetyka",
+        "tytul": "Kosmetyka",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Wykorzystywano też wysuszone i zmielone liście do farbowania włosów, co pozwala uzyskać odcienie od ciemnobrązowego po czarny, często w mieszance z henną jako produkt nazywany 'czarna henna'.",
+            "czesc": "liście",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s777"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "historia",
+        "tytul": "Historia i nazwa",
+        "podsumowanie": "Historia wykorzystania indygo sięga starożytnego Egiptu sprzed 2500 lat, choć bywało opisywane błędnie m.in. przez Pliniusza. Barwnik ten był rzadki w średniowiecznej Europie, opisywany przez Marco Polo, masowo importowany od około 1600 roku, aż do skomercjalizowania produkcji syntetycznej pod koniec XIX wieku.",
+        "podsumowanie_zrodla": [
+          2,
+          3
+        ],
+        "punkty": [
+          {
+            "tekst": "Kulturowanie indygowca w celach barwierskich ma długą historię - jest zapisane w egipskich źródłach już sprzed 2500 lat, choć Stary Pliniusz mylnie opisywał barwnik jako substancję pozyskiwaną z piany rzek i osadzającą się na trzcinach.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s778"
+            ]
+          },
+          {
+            "tekst": "Marco Polo w XIII wieku jako pierwszy Europejczyk sporządził relację na temat sposobu przygotowywania indygo w Indiach.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s762"
+            ]
+          },
+          {
+            "tekst": "Naturalne indygo było dość często wykorzystywane w europejskim malarstwie sztalugowym, poczynając od czasów średniowiecznych.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s763"
+            ]
+          },
+          {
+            "tekst": "W Europie indygo było rzadkie do XII wieku i sprowadzane z Azji jedynie w małych ilościach, a dopiero od około 1600 roku zaczęto masowo importować barwnik z Niderlandów, zastępując miejscowy barwnik odzieniowy.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s780"
+            ]
+          },
+          {
+            "tekst": "W 1878 Adolf von Baeyer przeprowadził pierwszą syntetyczną produkcję indygo, a od 1897 roku jego sprzedaż komercyjna niemal całkowicie wyparła produkcję naturalną opartą na roślinach.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s781"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "nazwy_ludowe",
+        "tytul": "Nazwy ludowe",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W Chinach roślina ta jest znana pod wieloma regionalnymi i tradycyjnymi nazwami, takimi jak „Lan Dian”, „Huai Lan”, „Xiao Qing” czy „Da Lan”.",
+            "czesc": null,
+            "zrodla": [
+              9
+            ],
+            "fakty": [
+              "s790"
+            ]
+          },
+          {
+            "tekst": "Naturalny barwnik pozyskiwany z indygowca barwierskiego funkcjonuje pod różnymi nazwami w zależności od regionu: w Indonezji znany jest jako „tarum”, w Malezji jako „nila”, natomiast w Iranie i na obszarach dawnego Związku Radzieckiego nazywa się go „basma”.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s839"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": "Stosowanie indygowca wymaga ostrożności: należy unikać wysokich dawek w ciąży, dzieci poniżej 12 roku życia powinny ograniczyć się do preparatów zewnętrznych, a osoby starsze i o wrażliwej skórze powinny wykonać test płatkowy ze względu na ryzyko podrażnień. Roślina może także wchodzić w interakcje z lekami immunosupresyjnymi.",
+        "podsumowanie_zrodla": [
+          6
+        ],
+        "punkty": [
+          {
+            "tekst": "Nie należy przyjmować wysokich dawek indygowca w ciąży, a informacje o bezpieczeństwie podczas karmienia są ograniczone.",
+            "czesc": null,
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s792"
+            ]
+          },
+          {
+            "tekst": "Dzieci poniżej 12 lat powinny stosować jedynie zewnętrzne preparaty z liści, a nie doustne suplementy.",
+            "czesc": "liście",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s793"
+            ]
+          },
+          {
+            "tekst": "Stosowanie liści na skórę może wywołać podrażnienie, zaczerwienienie lub swędzenie, dlatego osoby starsze z wrażliwą skórą powinny najpierw przeprowadzić test płatkowy na małym obszarze.",
+            "czesc": "liście",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s794",
+              "s796"
+            ]
+          },
+          {
+            "tekst": "Przyjmowanie indygowca w połączeniu z lekami immunosupresyjnymi wymaga konsultacji, ponieważ roślina może modulować układ odpornościowy.",
+            "czesc": "liście",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s795"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "uprawa",
+        "tytul": "Uprawa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Dzięki przynależności do roślin bobowatych, indygowiec jest stosowany w płodozmianie w celu użyźnienia gleby, podobnie jak lucerna i fasola, oraz służy powszechnie jako roślina okrywowa poprawiająca właściwości podłoża.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s841"
+            ]
+          },
+          {
+            "tekst": "W sprzyjających warunkach zbiory tej rośliny mogą być przeprowadzane od dwóch do trzech razy w roku.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s849"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "ciekawostki",
+        "tytul": "Ciekawostki",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Podczas przygotowywania masek koloryzujących z indygowca odradza się dodawanie soków cytrusowych, gdyż zwiększają one ryzyko wystąpienia reakcji alergicznych skóry.",
+            "czesc": "liście",
+            "zrodla": [
+              7
+            ],
+            "fakty": [
+              "s855"
+            ]
+          },
+          {
+            "tekst": "Syntetycznie produkowane indygo nie może być stosowane do farbowania włosów, ponieważ charakteryzuje się wysoką zasadowością, która niszczy strukturę włosa oraz podrażnia skórę.",
+            "czesc": null,
+            "zrodla": [
+              7
+            ],
+            "fakty": [
+              "s856"
+            ]
+          },
+          {
+            "tekst": "Świeżo zmielony proszek z liści indygowca posiada charakterystyczny, mocny i trwały zapach, który przypomina aromat zielonego groszku.",
+            "czesc": "liście",
+            "zrodla": [
+              7
+            ],
+            "fakty": [
+              "s857"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "liście": [
+        "s782",
+        "s829",
+        "s843",
+        "s847",
+        "s758",
+        "s835",
+        "s799",
+        "s789",
+        "s831",
+        "s832",
+        "s838",
+        "s777",
+        "s793",
+        "s794",
+        "s796",
+        "s795",
+        "s855",
+        "s857"
+      ],
+      "kwiaty": [
+        "s830",
+        "s842",
+        "s845"
+      ],
+      "owoce": [
+        "s846",
+        "s848"
+      ],
+      "ziele": [
+        "s859",
+        "s788",
+        "s787"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s756",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Indygowiec barwierski jest niskim półkrzewem z rodziny bobowatych, osiągającym do 1,5 m wysokości.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Indygowiec barwierski",
+          "url": "https://pl.wikipedia.org/wiki/Indygowiec_barwierski"
+        }
+      },
+      {
+        "id": "s758",
+        "sekcja": "czesci_rosliny",
+        "czesc": "liście",
+        "tekst": "Liście indygowca są źródłem barwnika indygo, z którego uzyskuje się barwnik używany do barwienia tkanin.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Indygowiec barwierski",
+          "url": "https://pl.wikipedia.org/wiki/Indygowiec_barwierski"
+        }
+      },
+      {
+        "id": "s762",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Marco Polo w XIII wieku jako pierwszy Europejczyk sporządził relację na temat sposobu przygotowywania indygo w Indiach.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Indigofera tinctoria",
+          "url": "https://en.wikipedia.org/wiki/Indigofera_tinctoria"
+        }
+      },
+      {
+        "id": "s763",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Naturalne indygo było dość często wykorzystywane w europejskim malarstwie sztalugowym, poczynając od czasów średniowiecznych.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Indigofera tinctoria",
+          "url": "https://en.wikipedia.org/wiki/Indigofera_tinctoria"
+        }
+      },
+      {
+        "id": "s765",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Naturalny obszar występowania tego gatunku obejmuje tropikalną Afrykę Zachodnią, teren od Tanzanii do Południowej Afryki oraz subkontynent indyjski i lądową część Azji Południowo-Wschodniej.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Indigofera tinctoria",
+          "url": "https://en.wikipedia.org/wiki/Indigofera_tinctoria"
+        }
+      },
+      {
+        "id": "s777",
+        "sekcja": "kosmetyka",
+        "czesc": "liście",
+        "tekst": "Wykorzystywano też wysuszone i zmielone liście do farbowania włosów, co pozwala uzyskać odcienie od ciemnobrązowego po czarny. W tym celu surowiec bywał mieszany z innymi roślinami, takimi jak henna, tworząc produkt nazywany 'czarna henna'.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Indigopflanze",
+          "url": "https://de.wikipedia.org/wiki/Indigopflanze"
+        }
+      },
+      {
+        "id": "s778",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Kulturowanie indygowca w celach barwierskich ma długą historię - jest zapisane w egipskich źródłach już sprzed 2500 lat. Stary Pliniusz Opoki mylnie opisuje barwnik jako substancję pozyskiwaną z piany rzek i osadzającą się na trzcinach.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Indigopflanze",
+          "url": "https://de.wikipedia.org/wiki/Indigopflanze"
+        }
+      },
+      {
+        "id": "s780",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "W Europie indygo było rzadkie do XII wieku i sprowadzane z Azji jedynie w małych ilościach. Dopiero od około 1600 roku zaczęto masowo importować barwnik z Niderlandów, co zastąpiło miejscowy barwik odzieniowy.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Indigopflanze",
+          "url": "https://de.wikipedia.org/wiki/Indigopflanze"
+        }
+      },
+      {
+        "id": "s781",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "W 1878 Adolf von Baeyer przeprowadził pierwszą syntetyczną produkcję indygo, a od 1897 roku jego sprzedaż komercyjna niemal całkowicie wyprzedała produkcję naturalną opartą na roślinach.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Indigopflanze",
+          "url": "https://de.wikipedia.org/wiki/Indigopflanze"
+        }
+      },
+      {
+        "id": "s782",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Morfologicznie roślina wytwarza krótkie, pojedyncze liście z do 17 ulistkami, a kwiatostany, wyrastające przy nasadzie liści, składają się z drobnych, nieziarnistych kwiatów dwułuszczycowych.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Indigopflanze",
+          "url": "https://de.wikipedia.org/wiki/Indigopflanze"
+        }
+      },
+      {
+        "id": "s784",
+        "sekcja": "medycyna_wschodu",
+        "czesc": null,
+        "tekst": "W tradycyjnej medycynie roślina ta była stosowana w celach leczniczych, wykazując działanie polegające na uśmierzaniu wątroby i rozpraszaniu gniewu, a także chłodzeniu krwi i usuwaniu toksyn.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 木藍",
+          "url": "https://zh.wikipedia.org/wiki/%E6%9C%A8%E8%97%8D"
+        }
+      },
+      {
+        "id": "s785",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "W Chinach roślina ta występuje w prowincjach Guangdong, Guangxi, Yunnan oraz na Tajwanie, a w regionie Siyi w środkowym Guangdong uważana jest za najlepszą odmianę o najwyższej zawartości barwnika.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 木藍",
+          "url": "https://zh.wikipedia.org/wiki/%E6%9C%A8%E8%97%8D"
+        }
+      },
+      {
+        "id": "s786",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Roślina ta rośnie głównie na terenach płaskich oraz w pobliżu rzek, preferując miejsca słoneczne oraz wykazując odporność na suszę i wilgoć.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 木藍",
+          "url": "https://zh.wikipedia.org/wiki/%E6%9C%A8%E8%97%8D"
+        }
+      },
+      {
+        "id": "s787",
+        "sekcja": "medycyna_wschodu",
+        "czesc": "ziele",
+        "tekst": "W tradycyjnej medycynie chińskiej ziele indygowca (liście i łodygi) charakteryzuje się zimną naturą oraz gorzkim smakiem. Jest ono klasyfikowane jako surowiec usuwający gorąco i toksyny oraz tamujący krwawienia.",
+        "jezyk": "zh-hans",
+        "zrodlo": {
+          "nazwa": "www.a-hospital.com",
+          "url": "https://www.a-hospital.com/w/%E6%9C%A8%E8%93%9D"
+        }
+      },
+      {
+        "id": "s788",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "ziele",
+        "tekst": "Ziele indygowca stosowano tradycyjnie w lecznictwie w przypadku japońskiego zapalenia mózgu typu B, świnki, zaczerwienienia oczu, obrzęków i owrzodzeń, a także przy wymiotach krwią.",
+        "jezyk": "zh-hans",
+        "zrodlo": {
+          "nazwa": "www.a-hospital.com",
+          "url": "https://www.a-hospital.com/w/%E6%9C%A8%E8%93%9D"
+        }
+      },
+      {
+        "id": "s789",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "liście",
+        "tekst": "Zgodnie z zapiskami w dawnym kompendium „Sheng Cao Yao Xing Bei Yao”, liście indygowca były wykorzystywane do leczenia chorób oczu objawiających się mgłą przed oczami oraz przy krwawych wymiotach.",
+        "jezyk": "zh-hans",
+        "zrodlo": {
+          "nazwa": "www.a-hospital.com",
+          "url": "https://www.a-hospital.com/w/%E6%9C%A8%E8%93%9D"
+        }
+      },
+      {
+        "id": "s790",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "W Chinach roślina ta jest znana pod wieloma regionalnymi i tradycyjnymi nazwami, takimi jak „Lan Dian”, „Huai Lan”, „Xiao Qing” czy „Da Lan”.",
+        "jezyk": "zh-hans",
+        "zrodlo": {
+          "nazwa": "www.a-hospital.com",
+          "url": "https://www.a-hospital.com/w/%E6%9C%A8%E8%93%9D"
+        }
+      },
+      {
+        "id": "s792",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Nie należy przyjmować wysokich dawek indygowca w ciąży, a informacje o bezpieczeństwie podczas karmienia są ograniczone.",
+        "jezyk": "en-US",
+        "zrodlo": {
+          "nazwa": "ask-ayurveda.com",
+          "url": "https://ask-ayurveda.com/wiki/article/4686-indigofera-tinctoria--asita-nili"
+        }
+      },
+      {
+        "id": "s793",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "liście",
+        "tekst": "Dzieci poniżej 12 lat powinny stosować jedynie zewnętrzne preparaty z liści, a nie doustne suplementy.",
+        "jezyk": "en-US",
+        "zrodlo": {
+          "nazwa": "ask-ayurveda.com",
+          "url": "https://ask-ayurveda.com/wiki/article/4686-indigofera-tinctoria--asita-nili"
+        }
+      },
+      {
+        "id": "s794",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "liście",
+        "tekst": "Osoby starsze z wrażliwą skórą powinny przed użyciem przeprowadzić test płatkowy, aby uniknąć podrażnień.",
+        "jezyk": "en-US",
+        "zrodlo": {
+          "nazwa": "ask-ayurveda.com",
+          "url": "https://ask-ayurveda.com/wiki/article/4686-indigofera-tinctoria--asita-nili"
+        }
+      },
+      {
+        "id": "s795",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "liście",
+        "tekst": "Przyjmowanie indygowca w połączeniu z lekami immunosupresyjnymi wymaga konsultacji, ponieważ roślina może modulować układ odpornościowy.",
+        "jezyk": "en-US",
+        "zrodlo": {
+          "nazwa": "ask-ayurveda.com",
+          "url": "https://ask-ayurveda.com/wiki/article/4686-indigofera-tinctoria--asita-nili"
+        }
+      },
+      {
+        "id": "s796",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "liście",
+        "tekst": "Stosowanie liści na skórę może wywołać podrażnienie, zaczerwienienie lub swędzenie, dlatego zaleca się najpierw test na małym obszarze.",
+        "jezyk": "en-US",
+        "zrodlo": {
+          "nazwa": "ask-ayurveda.com",
+          "url": "https://ask-ayurveda.com/wiki/article/4686-indigofera-tinctoria--asita-nili"
+        }
+      },
+      {
+        "id": "s799",
+        "sekcja": "sklad",
+        "czesc": "liście",
+        "tekst": "Liście indygowca zawierają duże ilości indygotyny, z której pozyskuje się barwnik indygo wykorzystywany w przemyśle spożywczym oraz do barwienia odzieży.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "www.baike.com",
+          "url": "https://www.baike.com/wikiid/7194716787140280332"
+        }
+      },
+      {
+        "id": "s829",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Liście indygowca są nieparzysto-pierzaste i składają się z 9 do 15 odwrotnie jajowatych listków.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Indygowiec barwierski",
+          "url": "https://pl.wikipedia.org/wiki/Indygowiec_barwierski"
+        }
+      },
+      {
+        "id": "s830",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Kwiaty tej roŻliny są motylkowe i mają żółtawobiały żagielek oraz łódeczkę, a także szkarłatne skrzydełka.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Indygowiec barwierski",
+          "url": "https://pl.wikipedia.org/wiki/Indygowiec_barwierski"
+        }
+      },
+      {
+        "id": "s831",
+        "sekcja": "barwienie",
+        "czesc": "liście",
+        "tekst": "Liście indygowca moczy się w wodzie i poddaje fermentacji, co przekształca naturalny glikozyd indican w niebieski barwnik indigotin.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Indigofera tinctoria",
+          "url": "https://en.wikipedia.org/wiki/Indigofera_tinctoria"
+        }
+      },
+      {
+        "id": "s832",
+        "sekcja": "barwienie",
+        "czesc": "liście",
+        "tekst": "Po fermentacji osad z roztworu liści miesza się z silną zasadą, np. ługiem, aby wytrącić indigotin.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Indigofera tinctoria",
+          "url": "https://en.wikipedia.org/wiki/Indigofera_tinctoria"
+        }
+      },
+      {
+        "id": "s833",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "W zależności od warunków klimatycznych indygowiec może rosnąć jako roślina jednoroczna, dwuletnia lub wieloletnia.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Indigofera tinctoria",
+          "url": "https://en.wikipedia.org/wiki/Indigofera_tinctoria"
+        }
+      },
+      {
+        "id": "s834",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Indygowiec barwierski to półkrzew lub roślina wieloletnia, osiągająca ponad 1,5 metra, z drobnie brązowymi gałęziami i krótkimi, nieparzysto‑pierzastymi liśćmi do 17 płatków.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Indigopflanze",
+          "url": "https://de.wikipedia.org/wiki/Indigopflanze"
+        }
+      },
+      {
+        "id": "s835",
+        "sekcja": "czesci_rosliny",
+        "czesc": "liście",
+        "tekst": "Zbierane są liście, które zawierają indikan, będący prekursorem barwnika indygo.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Indigopflanze",
+          "url": "https://de.wikipedia.org/wiki/Indigopflanze"
+        }
+      },
+      {
+        "id": "s836",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Pierwotne pochodzenie geograficzne indygowca barwierskiego nie jest dokładnie znane, ponieważ przez wieki był on powszechnie uprawiany w umiarkowanych i tropikalnych regionach Azji oraz Afryki.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): タイワンコマツナギ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%BF%E3%82%A4%E3%83%AF%E3%83%B3%E3%82%B3%E3%83%9E%E3%83%84%E3%83%8A%E3%82%AE"
+        }
+      },
+      {
+        "id": "s837",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "W zależności od panującego klimatu, w którym rośnie, indygowiec może przybierać formę rośliny jednorocznej, dwuletniej lub wieloletniej.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): タイワンコマツナギ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%BF%E3%82%A4%E3%83%AF%E3%83%B3%E3%82%B3%E3%83%9E%E3%83%84%E3%83%8A%E3%82%AE"
+        }
+      },
+      {
+        "id": "s838",
+        "sekcja": "barwienie",
+        "czesc": "liście",
+        "tekst": "W procesie produkcji barwnika stosowano tak zwaną metodę strąceniową, opartą na utlenianiu tlenem, bądź też mieszano sfermentowane liście z roztworami silnie zasadowymi, np. wodorotlenkiem sodu.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): タイワンコマツナギ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%BF%E3%82%A4%E3%83%AF%E3%83%B3%E3%82%B3%E3%83%9E%E3%83%84%E3%83%8A%E3%82%AE"
+        }
+      },
+      {
+        "id": "s839",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "Naturalny barwnik pozyskiwany z indygowca barwierskiego funkcjonuje pod różnymi nazwami w zależności od regionu: w Indonezji znany jest jako „tarum”, w Malezji jako „nila”, natomiast w Iranie i na obszarach dawnego Związku Radzieckiego nazywa się go „basma”.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Indigofera tinctoria",
+          "url": "https://en.wikipedia.org/wiki/Indigofera_tinctoria"
+        }
+      },
+      {
+        "id": "s840",
+        "sekcja": "sklad",
+        "czesc": null,
+        "tekst": "W roślinie tej zidentyfikowano obecność rotenoidów, takich jak deguelina, dehydrodeguelina, rotenol, rotenon, tefrozyna oraz sumatrol.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Indigofera tinctoria",
+          "url": "https://en.wikipedia.org/wiki/Indigofera_tinctoria"
+        }
+      },
+      {
+        "id": "s841",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "Dzięki przynależności do roślin bobowatych, indygowiec jest stosowany w płodozmianie w celu użyźnienia gleby, podobnie jak lucerna i fasola. Służy również powszechnie jako roślina okrywowa poprawiająca właściwości podłoża.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Indigofera tinctoria",
+          "url": "https://en.wikipedia.org/wiki/Indigofera_tinctoria"
+        }
+      },
+      {
+        "id": "s842",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Indygowiec barwierski wykształca różowe lub fioletowe kwiaty zebrane w pęczki.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Indigofera tinctoria",
+          "url": "https://en.wikipedia.org/wiki/Indigofera_tinctoria"
+        }
+      },
+      {
+        "id": "s843",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Liście indygowca barwierskiego mają ogonek długości do 2-2,5 centymetra, a ich oś osiąga do 7-8 centymetrów długości i jest rinnasta oraz delikatnie owłosiona.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Indigopflanze",
+          "url": "https://de.wikipedia.org/wiki/Indigopflanze"
+        }
+      },
+      {
+        "id": "s845",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Roślina wytwarza drobne, obupłciowe i bezwonne kwiaty o barwie różowej do rzadszej czerwonej, zebrane w niewielkie grona wyrastające w kątach liści.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Indigopflanze",
+          "url": "https://de.wikipedia.org/wiki/Indigopflanze"
+        }
+      },
+      {
+        "id": "s846",
+        "sekcja": "opis",
+        "czesc": "owoce",
+        "tekst": "Owocami są podłużne, cylindryczne i lekko owłosione lub nagie strąki o długości do 3,5 centymetra, zawierające do 12 małych, brązowych i kubicznych nasion.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Indigopflanze",
+          "url": "https://de.wikipedia.org/wiki/Indigopflanze"
+        }
+      },
+      {
+        "id": "s847",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Dojrzałe liście indygowca po wysuszeniu przybierają charakterystyczną, szaroniebieską barwę.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 木藍",
+          "url": "https://zh.wikipedia.org/wiki/%E6%9C%A8%E8%97%8D"
+        }
+      },
+      {
+        "id": "s848",
+        "sekcja": "opis",
+        "czesc": "owoce",
+        "tekst": "Owocem tej rośliny jest strąk charakteryzujący się liniowym, cylindrycznym kształtem.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 木藍",
+          "url": "https://zh.wikipedia.org/wiki/%E6%9C%A8%E8%97%8D"
+        }
+      },
+      {
+        "id": "s849",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "W sprzyjających warunkach zbiory tej rośliny mogą być przeprowadzane od dwóch do trzech razy w roku.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 木藍",
+          "url": "https://zh.wikipedia.org/wiki/%E6%9C%A8%E8%97%8D"
+        }
+      },
+      {
+        "id": "s855",
+        "sekcja": "ciekawostki",
+        "czesc": "liście",
+        "tekst": "Podczas przygotowywania masek koloryzujących z indygowca odradza się dodawanie soków cytrusowych, gdyż zwiększają one ryzyko wystąpienia reakcji alergicznych skóry.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "hairmaniac.ru",
+          "url": "https://hairmaniac.ru/indigofera-basma-vazhnye-osobennosti-ispolzovaniya-klyuchevye-momenty-mehanizm-vozdeystviya-na-volosy.html"
+        }
+      },
+      {
+        "id": "s856",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Syntetycznie produkowane indygo nie może być stosowane do farbowania włosów, ponieważ charakteryzuje się wysoką zasadowością, która niszczy strukturę włosa oraz podrażnia skórę.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "hairmaniac.ru",
+          "url": "https://hairmaniac.ru/indigofera-basma-vazhnye-osobennosti-ispolzovaniya-klyuchevye-momenty-mehanizm-vozdeystviya-na-volosy.html"
+        }
+      },
+      {
+        "id": "s857",
+        "sekcja": "ciekawostki",
+        "czesc": "liście",
+        "tekst": "Świeżo zmielony proszek z liści indygowca posiada charakterystyczny, mocny i trwały zapach, który przypomina aromat zielonego groszku.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "hairmaniac.ru",
+          "url": "https://hairmaniac.ru/indigofera-basma-vazhnye-osobennosti-ispolzovaniya-klyuchevye-momenty-mehanizm-vozdeystviya-na-volosy.html"
+        }
+      },
+      {
+        "id": "s859",
+        "sekcja": "sklad",
+        "czesc": "ziele",
+        "tekst": "Badania nad ekstraktem z indygowca wykazały, że podnosi on poziom kwasu gamma-aminomasłowego w mózgu oraz obniża aktywność transaminazy GABA, co sugeruje ułatwianie przewodnictwa GABA-ergicznego.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "pmc.ncbi.nlm.nih.gov",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3586835/"
+        }
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-08",
+    "pola": {
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Półkrzew z rodziny bobowatych, absolutny 'król chłodu' w świecie roślin barwierskich. Przez wieki roślina owiana legendą – uzyskiwany z jej liści niebieski proszek początkowo wcale nie jest niebieski! Wymaga specyficznego procesu ekstrakcji, fermentacji i utleniania (kontaktu z tlenem z powietrza), aby niebieski barwnik stał się widoczny. W etnobotanice indygo symbolizuje noc, głębię i chłód. Jest rośliną wymagającą dyscypliny laboratoryjnej.",
+        "tresc": [
+          {
+            "tekst": "Indygowiec barwiersski (Indigofera tinctoria) to niski półkrzew z rodziny bobowatych, znany jako 'król chłodu' w świecie roślin barwierskich. Przez wieki roślina owijana legendą – uzyskiwany z jej liści niebieski proszek początkowo wcale nie jest niebieski! Wymaga specyficznego procesu ekstrakcji, fermentacji i utleniania (kontaktu z tlenem z powietrza), aby niebieski barwnik stał się widoczny. W etnobotanice indygo symbolizuje noc, głębię i chłód. Jest rośliną wymagającą dyscypliny laboratoryjnej.",
+            "zrodla": [
+              1,
+              2
+            ],
+            "fakty": [
+              "s756",
+              "s834"
+            ]
+          },
+          {
+            "tekst": "W zależności od warunków klimatycznych indygowiec może rosnąć jako roślina jednoroczna, dwuletnia lub wieloletnia.",
+            "zrodla": [
+              3,
+              4
+            ],
+            "fakty": [
+              "s833",
+              "s837"
+            ]
+          },
+          {
+            "tekst": "Naturalny obszar występowania tego gatunku obejmuje tropikalną Afrykę Zachodnią, teren od Tanzanii do Południowej Afryki oraz subkontynent indyjski i lądową część Azji Południowo-Wschodniej.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s765"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "f69d2bb62f8b008f"
+      },
+      "czesci_rosliny.liście.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - liście: Opis surowca",
+        "typ": "tekst",
+        "oryginal": "Pierzaste liście zawierające indykan.",
+        "tresc": [
+          {
+            "tekst": "Indygowiec barwiersski (Indigofera tinctoria) posiada pierzaste liście, które zawierają indykan. Liście te mają krótkie, nieparzysto-pierzaste kształty z ogonkiem długości do 2-2,5 cm, osiągające do 7-8 cm osi i składające się z do 17 odwrotnie jajowatych listków.",
+            "zrodla": [
+              1,
+              2
+            ],
+            "fakty": [
+              "s782",
+              "s829",
+              "s843"
+            ]
+          },
+          {
+            "tekst": "Świeżo zmielony proszek z liści indygowca barwiersskiego ma charakterystyczny, mocny i trwały zapach, przypominający aromat zielonego groszku.",
+            "zrodla": [
+              7
+            ],
+            "fakty": [
+              "s857"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "7561e0c114d81be3"
+      },
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": [
+          "Liście nieparzystopierzaste, złożone z 9-13 eliptycznych listków.",
+          "Kwiaty drobne, motylkowate, zebrane w krótkie kłosy, o barwie od różowej do bladoczerwonej.",
+          "Owocem jest wygięty strąk.",
+          "Wysokość rośliny w uprawie wynosi zwykle od 1 do 2 metrów."
+        ],
+        "tresc": [
+          {
+            "tekst": "Liście indygowca barwiersego są nieparystopierzaste, złożone z 9-13 eliptycznych listków.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwiaty tej rośliny są drobne, motylkoowate, zebrane w krótkie kłosy, o barwie od różowej do bladoczerwonej.",
+            "zrodla": [
+              1,
+              2,
+              3
+            ],
+            "fakty": [
+              "s830",
+              "s842",
+              "s845"
+            ]
+          },
+          {
+            "tekst": "Owocem indygowca barwiersego jest wygięty strąk, który może osiągać długość do 3,5 centymetra.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Wysokość rośliny w uprawie wynosi zwykle od 1 do 2 metrów.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Owocami są podłużne, liniowe, cylindryczne i lekko owłosione lub nagie strąki o długości do 3,5 centymetra, zawierające do 12 małych, brązowych i kubicznych nasion.",
+            "zrodla": [
+              2,
+              5
+            ],
+            "fakty": [
+              "s846",
+              "s848"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "d2718789f05da64b"
+      },
+      "czesci_rosliny.liście.czas_zbioru": {
+        "tytul": "Surowce i zbiory - liście: Zbiór",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Dojrzałe liście indygowca po wysuszeniu przybierają charakterystyczną, szaroniebieską barwę.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s847"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "d6ef4f7abf710c08"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "Barwnik był dawniej cenniejszy od złota, nazywano go 'błękitnym złotem'.",
+          "Tylko indygo ma zdolność oklejania włókien bawełny z zewnątrz (bez wnikania do środka), dlatego klasyczne jeansy wycierają się na biało z upływem czasu."
+        ],
+        "tresc": [
+          {
+            "tekst": "Pierwotne pochodzenie geograficzne indygowca barwierskiego nie jest dokładnie znane, ponieważ przez wieki był on powszechnie uprawiany w umiarkowanych i tropikalnych regionach Azji oraz Afryki.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s836"
+            ]
+          },
+          {
+            "tekst": "Kulturowanie indygowca w celach barwierskich ma długą historię - jest zapisane w egipskich źródłach już sprzed 2500 lat, choć Stary Pliniusz mylnie opisywał barwnik jako substancję pozyskiwaną z piany rzek i osadzającą się na trzcinac",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s778"
+            ]
+          },
+          {
+            "tekst": "Marco Polo w XIII wieku jako pierwszy Europejczyk sporządził relację na temat sposobu przygotowywania indygo w Indiach.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s762"
+            ]
+          },
+          {
+            "tekst": "Naturalne indygo było dość często wykorzystywane w europejskim malarstwie sztalugowym, poczynając od czasów średniowiecznych.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s763"
+            ]
+          },
+          {
+            "tekst": "W Europie indygo było rzadkie do XII wieku i sprowadzane z Azji jedynie w małych ilościach, a dopiero od około 1600 roku zaczęto masowo importować barwnik z Niderlandów, zastępując miejscowy barwnik odzieniowy.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s780"
+            ]
+          },
+          {
+            "tekst": "W 1878 Adolf von Baeyer przeprowadził pierwszą syntetyczną produkcję indygo, a od 1897 roku jego sprzedaż komercyjna niemal całkowicie wyparła produkcję naturalną opartą na roślinach.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s781"
+            ]
+          },
+          {
+            "tekst": "W Chinach roślina ta jest znana pod wieloma regionalnymi i tradycyjnymi nazwami, takimi jak „Lan Dian”, „Huang Lan”, „Xiao Qing” czy „Da Lan”.",
+            "zrodla": [
+              9
+            ],
+            "fakty": [
+              "s790"
+            ]
+          },
+          {
+            "tekst": "Naturalny barwnik pozyskiwany z indygowca barwierskiego funkcjonuje pod różnymi nazwamia w zależności od regionu: w Indonezji znany jest jako „tarum”, w Malezji jako „nila”, natomiast w Iranie i na obszarach dawnego Związku Radzieckiego nazywa się go „basma”.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s839"
+            ]
+          },
+          {
+            "tekst": "Syntetcznie produkowane indygo nie może być stosowane do farbowania włosów, ponieważ charakteryzuje się wysoką zasadowością, która niszczy strukturę włosów oraz podrażnia skórę.",
+            "zrodla": [
+              7
+            ],
+            "fakty": [
+              "s856"
+            ]
+          },
+          {
+            "tekst": "Barwnik był dawniej cenniejszy od złota, nazywano go 'błękitnym złotem'.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Tylko indygo ma zdolność oklejania włókien bawełny z zewnątrz (bez wnikania do środka), dlatego klasyczne jeansy wycierają się na biało z upływem czasu.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "3e572e4a5ca9d49c"
+      },
+      "wymagania.stanowisko": {
+        "tytul": "Natura i siedlisko - Stanowisko",
+        "typ": "tekst",
+        "oryginal": "Gorące, w pełni nasłonecznione. Wymaga temperatur powyżej 20°C dla prawidłowej wegetacji.",
+        "tresc": [
+          {
+            "tekst": "Indygowiec barwiersski (Indigofera tinctoria) preferuje gorące, w pełni nasłoneczne stanowiska, z temperaturami powyżej 20°C dla prawidłowej wegetacji.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W Chinach roślina ta występuje w prowincjach Guangdong, Guangxi, Yunnan oraz na Tajwanie, a w regionie Siyi w środkowym Guangdong uważana jest za najlepszą odmianę o najwyższej zawartości barwnika.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s785"
+            ]
+          },
+          {
+            "tekst": "Roślina ta rośnie głównie na terenach płaskich oraz w pobliżu rzek, preferując miejsca słoneczne oraz wykazując odporność na suszę i wilgoć.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s786"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "f0b0a587b97f632c"
+      },
+      "zastosowanie.rzemieslnicze": {
+        "tytul": "Praktyczne zastosowanie - Rzemiosło",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Liście indygowca barwiersego (Indigofera tinctoria) są źródłem barwnika indygo, który znajduje zastosowanie w rzemiośle, zwłaszcza w barwieniu tkanin i włosów. Proces produkcji barwnika obejmuje moczenie liści w wodzie, fermentację, a następnie wytrącanie osadu z roztworu za pomocą silnej zasady, np. ługu. W przeszłości stosowano metodę strąceniową opartą na utlenianiu tlenkiem lub mieszano sfermentowane liście z roztworami silnie zasadowymi, takimi jak wodorotlenek sodu.",
+            "zrodla": [
+              1,
+              3,
+              4
+            ],
+            "fakty": [
+              "s758",
+              "s831",
+              "s832",
+              "s838"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "8c7e4eab0f044594"
+      },
+      "czesci_rosliny.liście.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - liście: Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Indygowiec barwiersski (Indigofera tinctoria) zawiera w liściach indikan, będący prekursorem barwnika indygo, oraz duże ilości indygotyn, z których pozyskuje się barwnik indygo wykorzystywany w przemyśle spożywczym oraz do barwienia odzieży.",
+            "zrodla": [
+              2,
+              10
+            ],
+            "fakty": [
+              "s835",
+              "s799"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "503adad94ae850f4"
+      },
+      "czesci_rosliny.ziele.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "W zielu indygowca barwierskiego zidentyfikowano obecność rotenoidów, takich jak deguelina, dehydrodeguelina, rotenol, rotenon, tefrozyna oraz sumatrol.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s840"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "9b5878ae0174d91d"
+      },
+      "czesci_rosliny.ziele.wlasciwości": {
+        "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Indygowiec barwiersski (Indigofera tinctoria) zawiera ziele, które wykazuje działanie ułatwiające przewodnictwo GABA-ergiczne dzięki podnoszeniu poziomu kwasu gamma-aminomasłowego w mózgu oraz obniżaniu aktywności transaminazy GABG. Tradycyjnie stosowano je w lecznictwie w przypadku japońskiego zapalenia mózgu typu B, świnki, zaczerwienienia oczu, obrzęków i owrzodzeń, a także przy wymiotach krwią.",
+            "zrodla": [
+              8,
+              9
+            ],
+            "fakty": [
+              "s859",
+              "s788"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "6a462b5432e1f6e7"
+      },
+      "czesci_rosliny.liście.wlasciwości": {
+        "tytul": "Surowce i zbiory - liście: Działanie",
+        "typ": "tekst",
+        "oryginal": "barwiące na niebiesko, odkażające, chłodzące",
+        "tresc": [
+          {
+            "tekst": "Liście indygowca barwiersego (Indigofera tinctoria) mają działanie barwiące na niebiesko, odkażające i chłodzące.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Zgodnie z zapiskami w dawnym kompendium „Sheng Cao Yao Xing Bei Yao”, liście indygowca były wykorzystywane do leczenia chorób oczu objawiających się mgłą przed oczami oraz przy krwawych wymiotach.",
+            "zrodla": [
+              9
+            ],
+            "fakty": [
+              "s789"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "d57c62dfd8c10014"
+      },
+      "profil_energetyczny.opis": {
+        "tytul": "Natura i siedlisko - Opis energetyczny",
+        "typ": "tekst",
+        "oryginal": "Indygo działa wybitnie chłodząco. Według medycyny wschodu 'usuwa gorąco z krwi' i działa odtruwająco. W sferze fizycznej redukuje potężne stany zapalne, a w sferze mentalnej działa jak kotwica – uziemia i uspokaja ekstremalnie wzburzone emocje.",
+        "tresc": [
+          {
+            "tekst": "Indygo działa wybitnie chłodząco. Według medycyny wschodu 'usuwa gorąco z krwi' i działa odtruwająco. W sferze fizycznej redukuje potężne stany zapalne, a w sferze mentalnej działa jak kotwica – uziemia i uspokaja ekstremalnie wzburzone emocje.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s784"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "17998073565a8748"
+      },
+      "profil_energetyczny.termika": {
+        "tytul": "Natura i siedlisko - Termika",
+        "typ": "tekst",
+        "oryginal": "Bardzo zimna",
+        "tresc": [
+          {
+            "tekst": "Ziele indygowca charakteryzuje się bardzo zimną naturą.",
+            "zrodla": [
+              9
+            ],
+            "fakty": [
+              "s787"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "5cd2461a7cafbd74"
+      },
+      "zastosowanie.kosmetyczne": {
+        "tytul": "Praktyczne zastosowanie - Kosmetyka",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Indygowiec barwiersski (Indigofera tinctoria) jest rośliną, której wysuszone i zmielone liście były wykorzystywane do farbowania włosów, co pozwalało uzyskać odcienie od ciemnobrązowego po czarny, często w mieszance z henaną jako produkt nazywany 'czarna henana'.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s777"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "8b0091a56e46ae54"
+      },
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Nie należy przyjmować wysokich dawek indygowca w ciąży, a informacje o bezpieczeństwie podczas karmienia są ograniczone.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s792"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "4b8997b574eed23e"
+      },
+      "czesci_rosliny.liście.ostrzezenia": {
+        "tytul": "Surowce i zbiory - liście: Ostrzeżenia",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Dzieci poniżej 12 lat powinny stosować jedynie zewnętrzne preparaty z liści, a nie doustne suplementy.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s793"
+            ]
+          },
+          {
+            "tekst": "Stosowanie liści na skórę może wywołać podrażnienie, zaczerwienienie lub swędzenie, dlatego osoby starsze z wrażliwą skórą powinny najpierw przeprowadzić test płatkowy na małym obszarze.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s794",
+              "s796"
+            ]
+          },
+          {
+            "tekst": "Przyjmowanie indygowca w połączeniu z lekami immunosupresyjnymi wymaga konsultacji, ponieważ roślina może modulować układ odpornościowy.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s795"
+            ]
+          },
+          {
+            "tekst": "Podczas przygotowywania maseczek koloryzujących z indygowca odradza się dodawanie soków cytrusowych, gdyż zwiększają one ryzyko wystąpienia reakcji alergicznych skóry.",
+            "zrodla": [
+              7
+            ],
+            "fakty": [
+              "s855"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "2e9bdb511dcd948e"
+      },
+      "permakultura.funkcje": {
+        "tytul": "Cykl życia i ekosystem - Permakultura - funkcje",
+        "typ": "lista",
+        "oryginal": [
+          "Wiązanie azotu w glebie (rodzina bobowatych)",
+          "Poprawa struktury gleby",
+          "Produkcja najcenniejszego niebieskiego barwnika"
+        ],
+        "tresc": [
+          {
+            "tekst": "Indygowiec wiąże azot w glebie dzięki przynależności do rodziny bobowatych, co sprawia, że jest stosowany w płodozmianie w celu użyźnienia gleby podobnie jak lucerna i fasola.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s841"
+            ]
+          },
+          {
+            "tekst": "Roślina służy powszechnie jako roślina okrywowa poprawiająca właściwości podłoża oraz przyczyniająca się do poprawy struktury gleby.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s841"
+            ]
+          },
+          {
+            "tekst": "Produkcja najcenniejszego niebieskiego barwnika",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "e8f2b03bcbf82bad"
+      },
+      "zastosowanie.ogrodowe": {
+        "tytul": "Praktyczne zastosowanie - Ogród",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "W sprzyjających warunkach zbiory indygowca barwierskiego mogą być przeprowadzane od dwóch do trzech razy w roku.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s849"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "a93d9185b9e4ac08"
+      }
+    },
+    "uzyte_fakty": [
+      "s756",
+      "s758",
+      "s762",
+      "s763",
+      "s765",
+      "s777",
+      "s778",
+      "s780",
+      "s781",
+      "s782",
+      "s784",
+      "s785",
+      "s786",
+      "s787",
+      "s788",
+      "s789",
+      "s790",
+      "s792",
+      "s793",
+      "s794",
+      "s795",
+      "s796",
+      "s799",
+      "s829",
+      "s830",
+      "s831",
+      "s832",
+      "s833",
+      "s834",
+      "s835",
+      "s836",
+      "s837",
+      "s838",
+      "s839",
+      "s840",
+      "s841",
+      "s842",
+      "s843",
+      "s845",
+      "s846",
+      "s847",
+      "s848",
+      "s849",
+      "s855",
+      "s856",
+      "s857",
+      "s859"
     ]
   }
 }
