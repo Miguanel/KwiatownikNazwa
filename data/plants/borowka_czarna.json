@@ -132,7 +132,7 @@
   },
   "ostrzezenia": "Zawsze myj owoce leśne przed spożyciem ze względu na ryzyko zakażenia bąblowicą (Echinokokoza). Osoby z chorobą wrzodową żołądka powinny unikać świeżych jagód w dużych ilościach.",
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-10-08",
     "w_url": false,
     "zdjecia": [
       {
@@ -179,8 +179,8 @@
   },
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-09-30",
-    "uporzadkowano": "2026-09-30",
+    "zaktualizowano": "2026-10-08",
+    "uporzadkowano": "2026-10-08",
     "uklad": "llm:gemini/gemini-3.5-flash-lite",
     "zrodla": [
       {
@@ -223,27 +223,41 @@
       {
         "klucz": "opis",
         "tytul": "Opis i wygląd",
-        "podsumowanie": null,
-        "podsumowanie_zrodla": [],
+        "podsumowanie": "Borówka czarna to niska krzewinka o wysokości 10-60 cm z kanciastymi pędami, która rozrasta się za pomocą kłączy. Posiada trawiastozielone liście, zielonkawo-czerwonawe kwiaty oraz czarno-niebieskie, okrągłe owoce.",
+        "podsumowanie_zrodla": [
+          1,
+          2,
+          3
+        ],
         "punkty": [
           {
-            "tekst": "Kwiaty borówki są obupłciowe, zwisające, o zielonkawym lub czerwonawym kolorze korony o długości 4–6 mm, które kwitną zwykle od kwietnia do maja.",
-            "czesc": "kwiaty",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s222"
-            ]
-          },
-          {
-            "tekst": "Dojrzałe owoce osiągają maksymalnie około 1 cm średnicy i mają czarno-niebieską barwę, a także lekko spłaszczony, okrągły kształt.",
-            "czesc": "owoce",
+            "tekst": "Krzewinka rośnie jako silnie rozgałęziony, zrzucający liście na zimę chamefit o wysokości od 10 do 60 centymetrów, posiadający wzniesione, zielone i kanciaste lub wąsko oskrzydlone pędy.",
+            "czesc": null,
             "zrodla": [
               2
             ],
             "fakty": [
-              "s227"
+              "s723"
+            ]
+          },
+          {
+            "tekst": "Pojedyncza krzewinka borówki czarnej rozrasta się za pomocą kłączy i może zajmować powierzchnię kilku metrów kwadratowych.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s714"
+            ]
+          },
+          {
+            "tekst": "Liście borówki czarnej mają długość od 2 do 3 centymetrów, jajowaty lub elipsowaty kształt, gruczołowato piłkowane lub drobno ząbkowane brzegi oraz są trawiastozielone po obu stronach.",
+            "czesc": "liście",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s724"
             ]
           },
           {
@@ -255,14 +269,57 @@
             "fakty": [
               "s216"
             ]
+          },
+          {
+            "tekst": "Drobne i obupłciowe kwiaty wyrastają pojedynczo z kątów liści, mają zwisający charakter oraz zielonkawo-czerwonawe korony o długości od 4 do 6 milimetrów. Kwitną one zwykle od kwietnia do maja.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              2,
+              3
+            ],
+            "fakty": [
+              "s222",
+              "s725"
+            ]
+          },
+          {
+            "tekst": "Dojrzałe owoce mają maksymalnie około 1 cm średnicy i są czarno-niebieskie, lekko spłaszczone i okrągłe.",
+            "czesc": "owoce",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s227"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "wystepowanie",
+        "tytul": "Występowanie",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Borówka czarna występuje w Azji, Europie i Ameryce Północnej na obszarach o klimacie umiarkowanym i arktycznym, a w Polsce jest pospolita zarówno na nizinach, jak i w górach.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s715"
+            ]
           }
         ]
       },
       {
         "klucz": "czesci_rosliny",
         "tytul": "Części rośliny i surowce",
-        "podsumowanie": null,
-        "podsumowanie_zrodla": [],
+        "podsumowanie": "Surowce zielarskie pozyskuje się głównie ze stanowisk naturalnych, a owoce dla przemysłu uprawia. Najlepszy zbiór liści przypada na czas kwitnienia lub jesień, po czym należy je odpowiednio wysuszyć i przechowywać.",
+        "podsumowanie_zrodla": [
+          4,
+          5
+        ],
         "punkty": [
           {
             "tekst": "Surowce zielarskie przeznaczone do preparatów leczniczych pozyskuje się z reguły ze stanowisk naturalnych, natomiast owoce dla przemysłu spożywczego są głównie uprawiane.",
@@ -323,7 +380,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Główne składniki czynne owoców to garbniki działające ściągająco na błony śluzowe, przeciwzapalnie i przeciwbakteryjnie, oraz antocyjany będące silnymi antyoksydantami.",
+            "tekst": "Główne składniki czynne owoców to garbniki, które działają ściągająco na błony śluzowe, przeciwzapalnie i przeciwbakteryjnie, oraz antocyjany będące silnymi antyoksydantami.",
             "czesc": "owoce",
             "zrodla": [
               5
@@ -347,7 +404,7 @@
       {
         "klucz": "zastosowanie_lecznicze",
         "tytul": "Ziołolecznictwo i medycyna ludowa",
-        "podsumowanie": "Borówka czarna znajduje szerokie zastosowanie lecznicze. Suszone owoce oraz wywary tradycyjnie stosuje się przy biegunkach, chorobach skóry, stanach zapalnych oraz hemoroidach, natomiast przetwory i napary z liści wspomagają metabolizm, wzrok, krążenie oraz obniżają poziom cukru we krwi.",
+        "podsumowanie": "Borówka czarna znajduje szerokie zastosowanie lecznicze: suszone owoce pomagają przy biegunkach i stanach zapalnych, a liście wspierają metabolizm, krążenie w oku oraz działają wspomagająco w cukrzycy i nadciśnieniu.",
         "podsumowanie_zrodla": [
           2,
           4,
@@ -355,7 +412,7 @@
         ],
         "punkty": [
           {
-            "tekst": "Suszone i suche owoce tradycyjnie stosowano wewnętrznie jako środek ludowy przy lekkiej biegunce (także w formie wina z czerwonym winem) oraz zewnętrznie do płukania przy stanach zapalnych błony śluzowej jamy ustnej i gardła.",
+            "tekst": "Suszone jagody i suche owoce tradycyjnie stosowano wewnętrznie przy lekkiej biegunce (także jako środek ludowy z czerwonym winem) oraz zewnętrznie do płukania przy stanach zapalnych błony śluzowej jamy ustnej i gardła.",
             "czesc": "owoce",
             "zrodla": [
               2,
@@ -367,33 +424,13 @@
             ]
           },
           {
-            "tekst": "W medycynie ludowej borówkę stosowano również przy wymiotach, krwawieniach, hemoroidach oraz przy źle gojących się wrzodach i chorobach skóry.",
-            "czesc": "owoce",
-            "zrodla": [
-              5
-            ],
-            "fakty": [
-              "s234"
-            ]
-          },
-          {
-            "tekst": "Przetwory z liści borówki stymulują krążenie w siatkówce oka, co pomaga łagodzić zmęczenie wzroku pod koniec dnia oraz poprawia widzenie dzienne i nocne.",
+            "tekst": "Przetwory z liści borówki stymulują krążenie w siatkówce oka, co pomaga łagodzić zmęczenie wzroku pod koniec dnia oraz poprawia zarówno widzenie dzienne, jak i nocne.",
             "czesc": "liście",
             "zrodla": [
               4
             ],
             "fakty": [
               "s240"
-            ]
-          },
-          {
-            "tekst": "Liście jagody czarnej były w medycynie ludowej używane jako środek obniżający poziom cukru we krwi.",
-            "czesc": "liście",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s230"
             ]
           },
           {
@@ -417,6 +454,26 @@
             ]
           },
           {
+            "tekst": "Liście jagody czarnej były w medycynie ludowej używane jako środek obniżający poziom cukru we krwi.",
+            "czesc": "liście",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s230"
+            ]
+          },
+          {
+            "tekst": "W medycynie ludowej borówkę stosowano również przy wymiotach, krwawieniach, hemoroidach oraz przy źle gojących się wrzodach i chorobach skóry.",
+            "czesc": "owoce",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s234"
+            ]
+          },
+          {
             "tekst": "U nordyckich ludów tradycyjnie pito napary z liści borówki jako środek stosowany w przypadkach kaszlu, przeziębienia oraz bólów głowy.",
             "czesc": "liście",
             "zrodla": [
@@ -429,19 +486,39 @@
         ]
       },
       {
+        "klucz": "medycyna_wschodu",
+        "tytul": "Medycyna chińska, kampo, ajurweda",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Liście borówki czarnej były stosowane w medycynie ludowej jako środek na choroby skóry.",
+            "czesc": "liście",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s719"
+            ]
+          }
+        ]
+      },
+      {
         "klucz": "barwienie",
         "tytul": "Barwienie i rzemiosło",
         "podsumowanie": null,
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Ludność wiejska na terenie Borów Tucholskich tradycyjnie przeznaczała zebrane jagody między innymi do sporządzania barwników służących do farbowania tkanin.",
+            "tekst": "Ludność wiejska na terenie Borów Tucholskich oraz w innych regionach tradycyjnie przeznaczała zebrane jagody do sporządzania barwników służących do farbowania tkanin i ubrań.",
             "czesc": "owoce",
             "zrodla": [
-              1
+              1,
+              3
             ],
             "fakty": [
-              "s215"
+              "s215",
+              "s718"
             ]
           },
           {
@@ -470,6 +547,16 @@
             ],
             "fakty": [
               "s231"
+            ]
+          },
+          {
+            "tekst": "Na dawnej Rusi niektórze postacie o statusie szamanów i znachorów wykorzystywały gałązki borówki w swoich rytuałach, przypisując jej cudowne właściwości.",
+            "czesc": "ziele",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s238"
             ]
           }
         ]
@@ -501,13 +588,23 @@
             ]
           },
           {
-            "tekst": "Na dawnej Rusi niektórze postacie o statusie szamanów i znachorów wykorzystywały gałązki borówki w swoich rytuałach, przypisując jej cudowne właściwości.",
-            "czesc": "ziele",
+            "tekst": "Według wierzeń ludowych Borowiaków lasami opiekowała się Borowa Ciotka, przedstawiana jako staruszka w szacie koloru kory sosnowej z diademem z szyszek.",
+            "czesc": null,
             "zrodla": [
-              4
+              1
             ],
             "fakty": [
-              "s238"
+              "s716"
+            ]
+          },
+          {
+            "tekst": "W kaszubskim Domatówku organizowany jest dorocznie festyn „Jagodobranie”, a podobne święta i festyny odbywają się także w innych krajach europejskich.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s717"
             ]
           }
         ]
@@ -529,7 +626,7 @@
             ]
           },
           {
-            "tekst": "W Wielkiej Brytanii roślinę tę tradycyjnie nazywano bilberry, co jest wypożyczeniem z języka staronordyckiego, bardzo zbliżonym do duńskiego słowa 'bøllebær', a spotykane są również nazwy whortleberry, blaeberry oraz myrtleberry.",
+            "tekst": "W Wielkiej Brytanii roślinę tę tradycyjnie nazywano bilberry, co jest wypożyczeniem z języka staronordyckiego, bardzo zbliżonym do duńskiego słowa 'bøllebær'. Spotykane są również nazwy whortleberry, blaeberry oraz myrtleberry.",
             "czesc": null,
             "zrodla": [
               3
@@ -598,8 +695,25 @@
       }
     ],
     "czesci": {
+      "liście": [
+        "s724",
+        "s216",
+        "s243",
+        "s244",
+        "s245",
+        "s246",
+        "s220",
+        "s240",
+        "s241",
+        "s242",
+        "s230",
+        "s239",
+        "s719",
+        "s219"
+      ],
       "kwiaty": [
-        "s222"
+        "s222",
+        "s725"
       ],
       "owoce": [
         "s227",
@@ -608,28 +722,15 @@
         "s232",
         "s234",
         "s215",
+        "s718",
         "s225",
         "s231",
         "s213",
         "s235"
       ],
-      "liście": [
-        "s216",
-        "s243",
-        "s244",
-        "s245",
-        "s246",
-        "s220",
-        "s240",
-        "s230",
-        "s241",
-        "s242",
-        "s239",
-        "s219"
-      ],
       "ziele": [
-        "s214",
-        "s238"
+        "s238",
+        "s214"
       ]
     },
     "fakty": [
@@ -962,13 +1063,153 @@
           "nazwa": "diapason.com.ua",
           "url": "https://diapason.com.ua/listja-chornici-likuvalni-vlastivosti-i/"
         }
+      },
+      {
+        "id": "s714",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Pojedyncza krzewinka borówki czarnej rozrasta się za pomocą kłączy i może zajmować powierzchnię kilku metrów kwadratowych.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Borówka czarna",
+          "url": "https://pl.wikipedia.org/wiki/Bor%C3%B3wka_czarna"
+        }
+      },
+      {
+        "id": "s715",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Borówka czarna występuje w Azji, Europie i Ameryce Północnej na obszarach o klimacie umiarkowanym i arktycznym, a w Polsce jest pospolita zarówno na nizinach, jak i w górach.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Borówka czarna",
+          "url": "https://pl.wikipedia.org/wiki/Bor%C3%B3wka_czarna"
+        }
+      },
+      {
+        "id": "s716",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "Według wierzeń ludowych Borowiaków lasami opiekowała się Borowa Ciotka, przedstawiana jako staruszka w szacie koloru kory sosnowej z diademem z szyszek.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Borówka czarna",
+          "url": "https://pl.wikipedia.org/wiki/Bor%C3%B3wka_czarna"
+        }
+      },
+      {
+        "id": "s717",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "W kaszubskim Domatówku organizowany jest dorocznie festyn „Jagodobranie”, a podobne święta i festyny odbywają się także w innych krajach europejskich.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Borówka czarna",
+          "url": "https://pl.wikipedia.org/wiki/Bor%C3%B3wka_czarna"
+        }
+      },
+      {
+        "id": "s718",
+        "sekcja": "barwienie",
+        "czesc": "owoce",
+        "tekst": "Jagody czarne były tradycyjnie używane jako barwnik do farbowania tkanin i ubrań.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Vaccinium myrtillus",
+          "url": "https://en.wikipedia.org/wiki/Vaccinium_myrtillus"
+        }
+      },
+      {
+        "id": "s719",
+        "sekcja": "medycyna_wschodu",
+        "czesc": "liście",
+        "tekst": "Liście borówki czarnej były stosowane w medycynie ludowej jako środek na choroby skóry.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Vaccinium myrtillus",
+          "url": "https://en.wikipedia.org/wiki/Vaccinium_myrtillus"
+        }
+      },
+      {
+        "id": "s723",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Krzewinka rośnie jako silnie rozgałęziony, zrzucający liście na zimę chamefit o wysokości od 10 do 60 centymetrów, posiadający wzniesione, zielone i kanciaste lub wąsko oskrzydlone pędy.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Heidelbeere",
+          "url": "https://de.wikipedia.org/wiki/Heidelbeere"
+        }
+      },
+      {
+        "id": "s724",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Liście borówki czarnej mają długość od 2 do 3 centymetrów, jajowaty lub elipsowaty kształt, gruczołowato piłkowane lub drobno ząbkowane brzegi oraz są trawiastozielone po obu stronach.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Heidelbeere",
+          "url": "https://de.wikipedia.org/wiki/Heidelbeere"
+        }
+      },
+      {
+        "id": "s725",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Drobne, obupłciowe i osadzone na grubych szypułkach kwiaty wyrastają pojedynczo z kątów liści, mają zwisający charakter oraz zielonkawo-czerwonawe korony o długości od 4 do 6 milimetrów.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Heidelbeere",
+          "url": "https://de.wikipedia.org/wiki/Heidelbeere"
+        }
       }
     ]
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-10-08",
     "pola": {
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Niska, wieloletnia krzewinka o kanciastych, zielonych pędach, tworząca gęste łany w lasach iglastych i mieszanych. Jest rośliną wybitnie kwasolubną, żyjącą w ścisłej symbiozie z grzybnią (mikoryza). Jej owoce to czarne, lśniące jagody z niebieskawym nalotem, których sok trwale barwi skórę i tkaniny. Borówka jest biologicznym skarbem północy, przystosowanym do trudnych warunków i ubogich gleb bielicowych.",
+        "tresc": [
+          {
+            "tekst": "Niska, wieloletnia krzewinka o kanciastych, zielonych pędach, tworząca gęste łany w lasach iglastych i mieszanych, jest rośliną wybitnie kwasolubną, żyjącą w ścisłej symbiozie z grzybnią (mikoryza). Jej owoce to czarne, lśniące jagody z niebieskawym nalotkiem, których sok trwale barwni skórę i tkaniny. Borówka jest biologicznym skarbem północy, przystosowanym do trudnych warunków i ubogich gleb bielicowych.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Krzewinkę można opisać jako silnie rozgałęziony, zrzucający liście na zimę chamefit o wysokości od 10 do 60 centymetrów, posiadający wzniesione, zielone i kanciaste lub wąsko oskrzydlowane pędy.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s723"
+            ]
+          },
+          {
+            "tekst": "Jedna krzewinka borówki czarnej rozrasta się za pomocą kłącza i może zajmować powierzchnię kilku metrów kwadratowych.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s714"
+            ]
+          },
+          {
+            "tekst": "Borówka czarna występuje w Azji, Europie i Ameryce Północnej na obszarach o klimacie umiarkowanym i arktycznym, a w Polsce jest pospolita zarówno na nizinach, jak i w górach.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s715"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "2dbae03096d04ee8"
+      },
       "identyfikacja.cechy_kluczowe": {
         "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
         "typ": "lista",
@@ -980,40 +1221,36 @@
         ],
         "tresc": [
           {
-            "tekst": "Pędy borówki czarnej są zielone, ostro kanciaste i nagie, czyli nieowłosione.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Liście tej rośliny są drobne, jajowate, drobno piłkowane oraz opadają na zimę, co stanowi cechę różniącą ją od borówki brusznicy.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Owoce są pojedyncze, kuliste i czarno-niebieskie, a ich sok intensywnie barwi na fioletowo.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Kwiaty mają kształt dzbanuszkowaty, są różowawo-zielone lub zwisające o zielonkawym albo czerwonawym kolorze korony o długości 4–6 mm i wyrastają pojedynczo w kątach liści.",
+            "tekst": "Liście borówki czarnej są drobne, jajowate, drobno piłkowane, o długości od 2 do 3 centymetrów, trawiastozielone po obu stronach, z gruczołowato piłkowanymi lub drobno ząbkowanymi brzegami.",
             "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s724"
+            ]
+          },
+          {
+            "tekst": "Jesienią liście borówki czarnej zmieniają kolor na jasnozielony, stają się cienkie i nagie, po czym opadają na zimę.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s216"
+            ]
+          },
+          {
+            "tekst": "Kwiaty borówki czarnej są dzbanuszkowate, różowawowo-zielone, wyrastają pojedynczo w kątach liści, mają zwisający charakter i zielonkawo-czerwonawe korony o długości od 4 do 6 milimetrów.",
+            "zrodla": [
+              2,
               3
             ],
             "fakty": [
-              "s222"
+              "s222",
+              "s725"
             ]
-          }
-        ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "c4008a0cdd75335c"
-      },
-      "czesci_rosliny.owoce.opis_botaniczny": {
-        "tytul": "Surowce i zbiory - Fructus Myrtilli: Opis surowca",
-        "typ": "tekst",
-        "oryginal": "Dojrzałe jagody zbierane latem. Najcenniejsze są te rosnące dziko w lasach.",
-        "tresc": [
+          },
           {
-            "tekst": "Dojrzałe jagody zbierane latem, osiągają maksymalnie około 1 cm średnicy, mają czarno-niebieską barwę i lekko spłaszczony, okrągły kształt.",
+            "tekst": "Dojrzałe owoce borówki czarnej są pojedyncze, kuliste, czarno-niebieskie, o średnicy maksymalnie około 1 cm, lekko spłaszczone i okrągłe.",
             "zrodla": [
               2
             ],
@@ -1022,59 +1259,31 @@
             ]
           },
           {
-            "tekst": "Najcenniejsze są te rosnące dziko w lasach.",
+            "tekst": "Pędy zielone, ostro kanciaste, nagie (nieowłosione).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Owoce pojedyncze, kuliste, czarno-niebieskie, o soku intensywnie barwiącym na fioletowo.",
             "zrodla": [],
             "fakty": []
           }
         ],
-        "model": "groq/openai/gpt-oss-120b",
-        "wejscie": "3a19610618f2fe28"
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "5fe28b78ac0e7d0c"
       },
-      "czesci_rosliny.liscie.opis_botaniczny": {
-        "tytul": "Surowce i zbiory - Folium Myrtilli: Opis surowca",
+      "zastosowanie.ogrodowe": {
+        "tytul": "Praktyczne zastosowanie - Ogród",
         "typ": "tekst",
-        "oryginal": "Młode, zielone liście zbierane przed owocowaniem.",
+        "oryginal": "Roślina okrywowa w ogrodach wrzosowiskowych i leśnych. Wymaga jednak bardzo specyficznej grzybni mikoryzowej, by przetrwać poza lasem.",
         "tresc": [
           {
-            "tekst": "Surowcem są młode, zielone liście, które zbiera się przed owocowaniem rośliny [ ].",
+            "tekst": "Borówka czarna (Vaccinum myrtilllus) jest rośliną okrytozalążkową, która naturalnie występuje w lasach i wrzosowiskach, ale wymaga specyficznej grzybni mikoryzowej, aby przetrwać poza lasem.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Jesienią jasnozielone, cienkie i nagie liście borówki czarnej czerwienieją i opadają na zimę.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s216"
-            ]
-          }
-        ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "9f4e2a0af6d3f575"
-      },
-      "opis": {
-        "tytul": "Opis - Opis ogólny",
-        "typ": "tekst",
-        "oryginal": "Niska, wieloletnia krzewinka o kanciastych, zielonych pędach, tworząca gęste łany w lasach iglastych i mieszanych. Jest rośliną wybitnie kwasolubną, żyjącą w ścisłej symbiozie z grzybnią (mikoryza). Jej owoce to czarne, lśniące jagody z niebieskawym nalotem, których sok trwale barwi skórę i tkaniny. Borówka jest biologicznym skarbem północy, przystosowanym do trudnych warunków i ubogich gleb bielicowych.",
-        "tresc": [
-          {
-            "tekst": "Niska, wieloletnia krzewinka o kanciastych, zielonych pędach, tworząca gęste łany w lasach iglastych i mieszanych.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Jest rośliną wybitnie kwasolubną, żyjącą w ścisłej symbiozie z grzybnią (mikoryza).",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Jej owoce to czarne, lśniące jagody z niebieskawym nalotem, których sok trwale barwi skórę i tkaniny.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Borówka jest biologicznym skarbem północy, przystosowanym do trudnych warunków i ubogich gleb bielicowych.",
+            "tekst": "Roślina okrywowa w ogrodach wrzosowiskowych i leśnych.",
             "zrodla": [],
             "fakty": []
           },
@@ -1088,8 +1297,8 @@
             ]
           }
         ],
-        "model": "groq/openai/gpt-oss-120b",
-        "wejscie": "08c604a3b0b25a6f"
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "277a0e6f370b8fbe"
       },
       "czesci_rosliny.liscie.czas_zbioru": {
         "tytul": "Surowce i zbiory - Folium Myrtilli: Zbiór",
@@ -1097,7 +1306,7 @@
         "oryginal": "Maj - Czerwiec.",
         "tresc": [
           {
-            "tekst": "Zbiór liści borówki odbywa się w maju i czerwcu, przy czym najlepszy moment na pozyskanie surowca przypada na okres kwitnienia krzewów od końca maja do początku czerwca, kiedy pędy zawierają najwięcej pożytecznych substancji.",
+            "tekst": "Najlepszy moment na zbiór liści borówki przypada na okres kwitnienia krzewów, czyli od końca maja do początku czerwca, kiedy pędy zawierają najwięcej pożytecznych substancji.",
             "zrodla": [
               4
             ],
@@ -1106,7 +1315,7 @@
             ]
           },
           {
-            "tekst": "Zbiór liści można przeprowadzić także jesienią wraz z dojrzałymi owocami, jednak takie surowce zawierają więcej garbnika, co może prowadzić do zaparoków po spożyciu.",
+            "tekst": "Zbiór liści można przeprowadzić także jesienią wraz z dojrzałymi owocnikami, jednak takie surowce zawierają więcej garbnika, co może prowadzić do zaparków po spożyciu.",
             "zrodla": [
               4
             ],
@@ -1122,9 +1331,18 @@
             "fakty": [
               "s245"
             ]
+          },
+          {
+            "tekst": "Wysuszone pędy borówki należy przechowywać w workach z tkaniny w suchym i zacienionym miejscu, a przydatność takiego surowca wynosi dwa lata.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s246"
+            ]
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
         "wejscie": "c106c0f191ef9e5b"
       },
       "czesci_rosliny.owoce.skladniki_aktywne": {
@@ -1139,7 +1357,7 @@
         ],
         "tresc": [
           {
-            "tekst": "Antocyjany (mirtilina - wzmacnia naczynia i wzrok) są silnymi antyoksydantami.",
+            "tekst": "Antocyjany (mirtilina) wzmacniają naczynia i wzrok, a garbniki działają ściągająco na błony śluzowe, przeciwzapalnie i przeciwbakteryjnie oraz są silnymi antyoksydantami.",
             "zrodla": [
               5
             ],
@@ -1148,31 +1366,22 @@
             ]
           },
           {
-            "tekst": "Garbniki (do 7 % w świeżych, więcej w suszonych) działają ściągająco na błony śluzowe, przeciwzapalnie i przeciwbakteryjnie.",
-            "zrodla": [
-              5
-            ],
-            "fakty": [
-              "s236"
-            ]
-          },
-          {
-            "tekst": "Pektyny.",
+            "tekst": "Owoce zawierają również witaminy (C, B1, B2, PP, A) oraz kwasy organiczne.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Witaminy (C, B1, B2, PP, A).",
+            "tekst": "Garbniki (do 7% w świeżych, więcej w suszonych)",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Kwasy organiczne.",
+            "tekst": "Pektyny",
             "zrodla": [],
             "fakty": []
           }
         ],
-        "model": "groq/openai/gpt-oss-120b",
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
         "wejscie": "4ccc9a7ae11f4476"
       },
       "czesci_rosliny.liscie.skladniki_aktywne": {
@@ -1186,36 +1395,16 @@
         ],
         "tresc": [
           {
-            "tekst": "Neomirtilina, nazywana roślinną insuliną, obniża poziom cukru we krwi.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Flawonoidy występują w liściach, a wśród nich znajdują się m.in. katechiny.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "W liściach obecny jest również kwas chinowy, kwas chlorogenowy oraz inne glikozydy.",
+            "tekst": "Liście borówki czarnej (Vaccinium myrtilllus) zawierają neomirtilinę, która obniża poziom cukru we krwi, arbutynę o działaniu odkażającym drogi moczowe, garbniki o właściwościach ściągających oraz flawonoidy, które wykazują działanie przeciwutleniające.",
             "zrodla": [
               3
             ],
             "fakty": [
               "s220"
             ]
-          },
-          {
-            "tekst": "Arbutyna (odkaża drogi moczowe)",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Garbniki",
-            "zrodla": [],
-            "fakty": []
           }
         ],
-        "model": "groq/qwen/qwen3.8-27b",
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
         "wejscie": "f435e0bd37a59f3d"
       },
       "czesci_rosliny.owoce.wlasciwości": {
@@ -1224,12 +1413,12 @@
         "oryginal": "Świeże: lekko przeczyszczające i witaminizujące. Suszone: silnie przeciwbiegunkowe, odkażające jelita, poprawiające mikrokrążenie w siatkówce oka.",
         "tresc": [
           {
-            "tekst": "Świeże owoce wykazują lekko przeczyszczające i witaminizujące działanie.",
+            "tekst": "Świeże jagody mają działanie lekko przeczyszczające i witaminizujące, natomiast suszone wykazują silne działanie przeciwbiegunkowe, odkażające jelita oraz poprawiające mikrokrążenie w siatkówce oka.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Suszone owoce wykazują silne przeciwbiegunkowe działanie, odkażające jelita oraz poprawiające mikrokrążenie w siatkówce oka; tradycyjnie stosowano je wewnętrznie jako środek ludowy przy lekkiej biegunce, także w formie wina z czerwonym winem.",
+            "tekst": "Suszona borówka czarna, znana również jako jagoda, była tradycyjnie stosowana wewnętrznie w przypadku lekkiej biegunki, a także jako środek ludowy z czerwonym winem. Zewnętrznie wykorzystywano ją do płukania jamy ustnej i gardła w stanach zapalnych błony śluzowej.",
             "zrodla": [
               2,
               5
@@ -1240,18 +1429,7 @@
             ]
           },
           {
-            "tekst": "Suszone owoce używano zewnętrznie do płukania przy stanach zapalnych błony śluzowej jamy ustnej i gardła.",
-            "zrodla": [
-              2,
-              5
-            ],
-            "fakty": [
-              "s229",
-              "s232"
-            ]
-          },
-          {
-            "tekst": "W medycynie ludowej borówkę stosowano również przy wymiotach, krwawieniach, hemoroidach oraz przy źle gojących się wrzodach i chorobach skóry.",
+            "tekst": "W medycynie ludowej borówka czarna była stosowana również przy wymiotach, krwawieniach, hemoroidach oraz przy trudno gojących się wrzodach i chorobach skóry.",
             "zrodla": [
               5
             ],
@@ -1260,7 +1438,7 @@
             ]
           }
         ],
-        "model": "groq/openai/gpt-oss-120b",
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
         "wejscie": "6e61c1a8b9751fa4"
       },
       "czesci_rosliny.liscie.wlasciwości": {
@@ -1269,22 +1447,68 @@
         "oryginal": "Przeciwcukrzycowe, moczopędne, przeciwzapalne w obrębie pęcherza.",
         "tresc": [
           {
-            "tekst": "Działanie liści borówki czarnej obejmuje właściwości przeciwcukrzycowe, w ramach których były one używane w medycynie ludowej jako środek obniżający poziom cukru we krwi.",
+            "tekst": "Przeciwcukrzycowe, moczopędne, przeciwzapalne w obrębie pęcherza. **Przetwory z liści borówki stymulują krążenie w siatkówce oka, co pomaga łagodzić zmęczenie wzroku pod koniec dnia oraz poprawia zarówno widzenie dzienne, jak i nocne.**",
             "zrodla": [
-              2
+              4
             ],
             "fakty": [
-              "s230"
+              "s240"
             ]
           },
           {
-            "tekst": "Wykazują one również działanie moczopędne oraz przeciwzapalne w obrębie pęcherza.",
-            "zrodla": [],
-            "fakty": []
+            "tekst": "Przeciwcukrzycowe, moczopędne, przeciwzapalne w obrębie pęcherza. **Spożywanie naparów z liści borówki przed posiłkiem wspomaga metabolizm, dzięki czemu organizm potrzebuje mniej węglowodanów do nasycenia i napoje te włącza się do diet odchudzających.**",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s241"
+            ]
+          },
+          {
+            "tekst": "Przeciwcukrzycowe, moczopędne, przeciwzapalne w obrębie pęcherza. **Regularne spożywanie wywaru z pędów borówki może pomagać w zapobieganiu nadciśnieniu i zakrzepom naczyniowym, a kobiety w okresie menopauzy mogą go pić w celu spowolnienia procesów starzenia się wegetacyjnego układu naczyniowego.**",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s242"
+            ]
+          },
+          {
+            "tekst": "Przeciwcukrzycowe, moczopędne, przeciwzapalne w obrębie pęcherza. **Liście jagody czarnej były w medycynie ludowej używane jako środek obniżający poziom cukru we krwi.**",
+            "zrodla": [
+              2,
+              3
+            ],
+            "fakty": [
+              "s230",
+              "s719"
+            ]
+          },
+          {
+            "tekst": "Przeciwcukrzycowe, moczopędne, przeciwzapalne w obrębie pęcherza. **U nordyckich ludów tradycyjnie pito napary z liści borówki jako środek stosowany w przypadkach kaszlu, przeziębienia oraz bólów głowy.**",
+            "zrodla": [
+              3,
+              4
+            ],
+            "fakty": [
+              "s239",
+              "s719"
+            ]
+          },
+          {
+            "tekst": "Przeciwcukrzycowe, moczopędne, przeciwzapalne w obrębie pęcherza. **Liście borówki czarnej były stosowane w medycynie ludowej jako środek na choroby skóry.**",
+            "zrodla": [
+              2,
+              3
+            ],
+            "fakty": [
+              "s230",
+              "s719"
+            ]
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "99142803f9d20216"
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "971faff7d96986f1"
       },
       "zastosowanie.rzemieslnicze": {
         "tytul": "Praktyczne zastosowanie - Rzemiosło",
@@ -1292,17 +1516,24 @@
         "oryginal": "Sok z borówek był historycznie używany jako atrament oraz trwały barwnik do tkanin (odcienie od fioletu po ciemną zieleń).",
         "tresc": [
           {
-            "tekst": "Sok z borówek był historycznie używany jako atrament oraz trwały barwnik do tkanin (odcienie od fioletu po ciemną zieleń); ludność wiejska na terenie Borów Tucholskich tradycyjnie przeznaczała zebrane jagody do sporządzania barwników służących do farbowania tkanin.",
+            "tekst": "Sok z borówek, dzięki swoim właściwościom barwiącym, był historycznie wykorzystywany jako atrament oraz trwały barwnik do tkanin, osiągając odcienie od fioletowego po ciemną zieleń.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Ludność wiejska na terenie Borów Tucholskich oraz w innych regionach tradycyjnie przeznaczała zebrane jagody do sporządzania barwników służących do farbowania tkanin i ubrań.",
             "zrodla": [
-              1
+              1,
+              3
             ],
             "fakty": [
-              "s215"
+              "s215",
+              "s718"
             ]
           }
         ],
-        "model": "groq/openai/gpt-oss-120b",
-        "wejscie": "f6b85ccc3e0808c0"
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "7c7790ea3dcaf3e4"
       },
       "ciekawostki": {
         "tytul": "Wiedza tajemna - Ciekawostki",
@@ -1315,6 +1546,105 @@
           "Jedna krzewinka borówki może żyć nawet 30 lat, choć jej nadziemne pędy wymieniają się częściej."
         ],
         "tresc": [
+          {
+            "tekst": "Antocyjany zawarte w jagodach barwią przy jedzeniu jamę ustną i zęby na niebiesko-czerwoną barwę.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s225"
+            ]
+          },
+          {
+            "tekst": "Rzymski Plinjusz Starszy opisywał użycie barwnika z jagód do farbowania ubrań niewolników w Galii.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s231"
+            ]
+          },
+          {
+            "tekst": "Na dawnej Rusi niektóre postacie o statusie szamanów i znachorów wykorzystywały gałązki borówki w swoich rytuałach, przypisując jej cudowne właściwości.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s238"
+            ]
+          },
+          {
+            "tekst": "Dawniej w dniu Matki Boskiej Jagodowej święcono jagody, a na Lubelszczyźnie wierzono, że do tego dnia należy wstrzymać się z ich zbieraniem i jedzeniem.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s213"
+            ]
+          },
+          {
+            "tekst": "W tradycji polskich wsi ziele borówki tradycyjnie wykorzystywano do przystrajania palm wielkanocnych oraz święconków.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s214"
+            ]
+          },
+          {
+            "tekst": "Według wierzeń ludowych Borowiaków lasami opiekowała się Borowa Ciotka, przedstawiana jako staruszka w szacie koloru kory sosnowej z diademem z szyszek.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s716"
+            ]
+          },
+          {
+            "tekst": "W kaszubskim Domatówku organizowany jest dorocznie festyn \"Jagodobranie\", a podobne święta i festyny odbywają się także w innych krajach europejskich.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s717"
+            ]
+          },
+          {
+            "tekst": "Roślina posiada wiele nazw zwyczajowych, wśród których najpopularniejsze to jagoda, czarna jagoda oraz czernica.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s211"
+            ]
+          },
+          {
+            "tekst": "W Wielkiej Brytanii roślinę tę tradycyjnie nazywano bilberry, co jest zapożyczeniem z języka staronordyckiego, bardzo zbliżonym do duńskiego słowa \"bøllebær\". Spotykane są również nazwy whortleberry, blaeberry oraz myrtleberry.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s218"
+            ]
+          },
+          {
+            "tekst": "W Niemczech jagodę nazywa się regionalnie m.in. Besinge, Besing, Blaubeer, Schwarzbeer, Mollbeer, Wildbeer, Waldbeer, Bickbeer, Staulbeer, Zeckbeer, Moosbeer i Heubeer.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s226"
+            ]
+          },
+          {
+            "tekst": "Chromosomowa liczba gatunku wynosi 2n = 24.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s228"
+            ]
+          },
           {
             "tekst": "Podczas II wojny światowej brytyjscy piloci RAF jedli dżem jagodowy przed nocnymi misjami, co rzekomo drastycznie poprawiało ich zdolność widzenia w ciemności.",
             "zrodla": [],
@@ -1339,73 +1669,10 @@
             "tekst": "Jedna krzewinka borówki może żyć nawet 30 lat, choć jej nadziemne pędy wymieniają się częściej.",
             "zrodla": [],
             "fakty": []
-          },
-          {
-            "tekst": "Rzymski Pliniusz Starszy opisywał użycie barwnika z jagód do farbowania ubrań niewolników w Galii.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s231"
-            ]
-          },
-          {
-            "tekst": "Dawniej w dniu Matki Boskiej Jagodnej święcono jagody, a na Lubelszczyźnie wierzono, że do tego dnia należy wstrzymać się z ich zbieraniem i jedzeniem.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s213"
-            ]
-          },
-          {
-            "tekst": "W tradycji polskich wsi ziele borówki tradycyjnie wykorzystywano do przybierania palm wielkanocnych oraz święconek.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s214"
-            ]
-          },
-          {
-            "tekst": "Na dawnej Rusi niektóre postacie o statusie szamanów i znachorów wykorzystywały gałązki borówki w swoich rytuałach, przypisując jej cudowne właściwości.",
-            "zrodla": [
-              4
-            ],
-            "fakty": [
-              "s238"
-            ]
-          },
-          {
-            "tekst": "Roślina posiada wiele nazw zwyczajowych, wśród których najpopularniejsze to jagoda, czarna jagoda oraz czernica.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s211"
-            ]
-          },
-          {
-            "tekst": "W Wielkiej Brytanii roślinę tę tradycyjnie nazywano bilberry, co jest wypożyczeniem z języka staronordyckiego, bardzo zbliżonym do duńskiego słowa 'bøllebær', a spotykane są również nazwy whortleberry, blaeberry oraz myrtleberry.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s218"
-            ]
-          },
-          {
-            "tekst": "W Niemczech jagodę nazywa się regionalnie m.in. Besinge, Besing, Blaubeere, Schwarzbeere, Mollbeere, Wildbeere, Waldbeere, Bickbeere, Staulbeere, Zeckbeere, Moosbeere i Heubeere.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s226"
-            ]
           }
         ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "f19c1c60b87078da"
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "7582345cfc4b34c7"
       },
       "czesci_rosliny.liscie.ostrzezenia": {
         "tytul": "Surowce i zbiory - Folium Myrtilli: Ostrzeżenia",
@@ -1413,7 +1680,12 @@
         "oryginal": "Długotrwałe stosowanie wysokich dawek liści może powodować anemię (ze względu na garbniki).",
         "tresc": [
           {
-            "tekst": "Długotrwałe stosowanie wysokich dawek liści może powodować anemię (ze względu na garbniki) oraz być niebezpieczne, ponieważ liście są potencjalnie toksyczne dla człowieka.",
+            "tekst": "Długotrwałe stosowanie wysokich dawek liści może powodować anemię (ze względu na garbniki).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Spożywanie liści borówki czarnej może być niebezpieczne, ponieważ są one potencjalnie toksyczne dla człowieka, choć w medycynie ludowej stosowano je głównie w leczeniu chorób skóry.",
             "zrodla": [
               3
             ],
@@ -1422,7 +1694,7 @@
             ]
           }
         ],
-        "model": "groq/openai/gpt-oss-120b",
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
         "wejscie": "65363b6ee98ccfab"
       },
       "czesci_rosliny.owoce.ostrzezenia": {
@@ -1431,7 +1703,7 @@
         "oryginal": "Należy dokładnie myć jagody leśne (ryzyko bąblowicy!).",
         "tresc": [
           {
-            "tekst": "Należy dokładnie myć jagody leśne z uwagi na ryzyko bąblowicy.",
+            "tekst": "Należy dokładnie myć jagody leśne (ryzyko bąblowicy!).",
             "zrodla": [],
             "fakty": []
           },
@@ -1445,7 +1717,7 @@
             ]
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
         "wejscie": "ffa94fb542797cb4"
       }
     },
@@ -1459,8 +1731,10 @@
       "s219",
       "s220",
       "s222",
+      "s225",
       "s226",
       "s227",
+      "s228",
       "s229",
       "s230",
       "s231",
@@ -1470,9 +1744,23 @@
       "s236",
       "s237",
       "s238",
+      "s239",
+      "s240",
+      "s241",
+      "s242",
       "s243",
       "s244",
-      "s245"
+      "s245",
+      "s246",
+      "s714",
+      "s715",
+      "s716",
+      "s717",
+      "s718",
+      "s719",
+      "s723",
+      "s724",
+      "s725"
     ]
   }
 }

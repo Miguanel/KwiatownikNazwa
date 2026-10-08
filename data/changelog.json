@@ -3,6 +3,31 @@
  "opis": "Kronika Siedziby Kwiatownika - pisze ja agent wdrozen (Siedziba).",
  "wpisy": [
   {
+   "data": "2026-10-08T21:23:30+02:00",
+   "tytul": "Nowa wiedza o 1 roślinie",
+   "opis": "Siedziba zebrała 7 sprawdzonych informacji (źródła: niemieckie, angielskie, rosyjskie).",
+   "liczby": {
+    "informacje": 7,
+    "przepisy": 0,
+    "rosliny": 1,
+    "nowe_rosliny": 0,
+    "zdjecia": 0
+   },
+   "rosliny": [
+    {
+     "id": "borowka_czarna",
+     "nazwa": "Borówka czarna (Jagoda)",
+     "nowe": 7,
+     "jezyki": [
+      "de",
+      "en",
+      "ru"
+     ]
+    }
+   ],
+   "przepisy": []
+  },
+  {
    "data": "2026-10-08T21:20:01+02:00",
    "tytul": "Nowa wiedza o 2 roślinach",
    "opis": "Siedziba zebrała 37 sprawdzonych informacji (źródła: niemieckie, angielskie, francuskie).",
