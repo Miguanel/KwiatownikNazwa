@@ -96,27 +96,29 @@
     }
 
     // ------------------------------------------
-    // DANE
+    // DANE – pobierane w tle z /api/szukaj.json (app/utils/home_data.py), a nie wklejone w HTML
+    // (dawniej ok. 5 MB JSON-a w stronie – na telefonie strona ładowała się kilka sekund).
+    // Rośliny i przepisy mają gotowe pole "s": znormalizowany tekst do wyszukiwania (każde słowo raz).
+    // Pełny tekst przepisów przychodzi drugim plikiem (/api/szukaj_przepisy.json) – do tego czasu
+    // przepisy są szukane po tytule, roślinie, składnikach i opisie.
     // ------------------------------------------
-    const PLANTS = (typeof plantsData !== 'undefined' && Array.isArray(plantsData) ? plantsData : [])
-        .filter(p => p && typeof p === 'object');
-    PLANTS.forEach(p => {
-        p.nazwa_pl = p.nazwa_pl || p.gatunek || 'Nieznana roślina';
-        p.id = p.id || p.slug || slugify(p.nazwa_pl);
-    });
-
-    const RECIPES = (typeof recipesData !== 'undefined' && Array.isArray(recipesData) ? recipesData : [])
-        .filter(r => r && typeof r === 'object' && r.tytul);
-
-    const CAL = (typeof kalendarz !== 'undefined' && kalendarz && typeof kalendarz === 'object') ? kalendarz : {};
     const TAGS = (typeof TAG_DICTIONARY !== 'undefined') ? TAG_DICTIONARY : {};
+    let READY = false;
+    let PLANTS = [];
+    let RECIPES = [];
+    let CAL = {};
+    let plantByName = new Map();
+    let plantIndex = [];
+    let recipeIndex = [];
+    let symptomMap = {};
+    let symptomKeys = [];
 
-    const plantByName = new Map(PLANTS.map(p => [norm(p.nazwa_pl), p]));
     function findPlantByName(name) { return plantByName.get(norm(name).trim()) || null; }
     function latinOf(p) { return safeStr(p.nazwa_lat || p.nazwa_lacinska || p.lacina); }
 
     function getBestImageUrl(plant) {
         if (!plant) return '';
+        if (plant.img) return plant.img;
         if (plant.url && typeof plant.url === 'object') return Object.values(plant.url)[0] || '';
         return plant.zdjecie_url || plant.zdjecie || plant.image || (typeof plant.url === 'string' ? plant.url : '') || '';
     }
@@ -138,70 +140,11 @@
         if (overlay) overlay.style.display = 'block';
     }
 
-    // --- Indeks roślin (pełnotekstowy) ---
-    const plantIndex = PLANTS.map(p => {
-        const tagDescs = (Array.isArray(p.tagi) ? p.tagi : []).map(t => {
-            const def = TAGS[safeStr(t).toLowerCase().trim()];
-            return def ? def.desc : '';
-        });
-        return {
-            plant: p,
-            name: norm(`${p.nazwa_pl} ${latinOf(p)}`),
-            core: norm([p.nazwa_pl, latinOf(p), p.rodzina, (p.tagi || []).join(' '), tagDescs.join(' ')].join(' ')),
-            full: norm(flatten([
-                p.nazwa_pl, latinOf(p), p.rodzina, p.opis, p.tagi, tagDescs, p.zastosowanie,
-                p.czesci_rosliny, p.ciekawostki, p.identyfikacja, p.profil_energetyczny, p.ostrzezenia, p.wymagania
-            ]).join(' '))
-        };
-    });
-
-    // --- Indeks przepisów ---
-    const RECIPE_SKIP = new Set(['id', 'slug', 'zrodla', 'url', 'zdjecie', 'zdjecie_url']);
-    const recipeIndex = RECIPES.map(r => ({
-        recipe: r,
-        title: norm(`${r.tytul} ${r.roslina || ''}`),
-        full: norm(flatten(r, RECIPE_SKIP).join(' '))
-    }));
-
-    // ------------------------------------------
-    // MAPA DZIAŁANIA / OBJAWÓW (dawna "arena")
-    // ------------------------------------------
-    const symptomMap = {};
-    function addSymptom(text, plant) {
-        if (!text || !plant) return;
-        const content = Array.isArray(text) ? text.join(', ') : (typeof text === 'object' ? flatten(text).join(', ') : String(text));
-        content.split(/[,;.:()]/).forEach(part => {
-            const tag = safeStr(part).trim().toLowerCase();
-            if (tag.length < 3 || tag.length > 60) return;
-            if (!symptomMap[tag]) symptomMap[tag] = [];
-            if (!symptomMap[tag].includes(plant)) symptomMap[tag].push(plant);
-        });
-    }
-    RECIPES.forEach(r => {
-        const plant = r.roslina ? findPlantByName(r.roslina) : null;
-        if (!plant) return;
-        ['zastosowanie', 'cechy', 'wlasciwosci', 'efekty', 'tagi'].forEach(k => addSymptom(r[k], plant));
-    });
-    PLANTS.forEach(p => {
-        if (p.zastosowanie && p.zastosowanie.medyczne) addSymptom(p.zastosowanie.medyczne, p);
-        if (p.czesci_rosliny && typeof p.czesci_rosliny === 'object') {
-            Object.values(p.czesci_rosliny).forEach(c => { if (c) addSymptom(c.wlasciwosci || c['wlasciwości'], p); });
-        }
-    });
-    // Kolory kwiatów (dawne colorMap) – dopasowane do roślin z bazy
-    [['żółty', 'Mniszek lekarski'], ['czerwony', 'Mak polny'], ['fioletowy', 'Lawenda wąskolistna']].forEach(([color, name]) => {
-        const p = findPlantByName(name);
-        if (p) { (symptomMap['kwiat ' + color] = symptomMap['kwiat ' + color] || []).push(p); }
-    });
-    const symptomKeys = Object.keys(symptomMap).map(k => ({ key: k, n: norm(k) }));
-
     // ------------------------------------------
     // KALENDARZ: PORY ROKU, MIESIĄCE, CZYNNOŚCI
     // ------------------------------------------
     const monthNames = ['', 'styczeń', 'luty', 'marzec', 'kwiecień', 'maj', 'czerwiec', 'lipiec', 'sierpień', 'wrzesień', 'październik', 'listopad', 'grudzień'];
     const seasonMonths = { 'zima': [12, 1, 2], 'wiosna': [3, 4, 5], 'lato': [6, 7, 8], 'jesień': [9, 10, 11] };
-    const seasonalMap = {};
-    Object.keys(seasonMonths).concat(monthNames.slice(1)).forEach(k => { seasonalMap[k] = []; });
 
     function taskIconFor(name) {
         const t = norm(name);
@@ -212,25 +155,11 @@
         return 'ra-sprout';
     }
 
-    PLANTS.forEach(plant => {
-        const zadania = plant.kalendarz_ogrodnika && Array.isArray(plant.kalendarz_ogrodnika.zadania) ? plant.kalendarz_ogrodnika.zadania : [];
-        zadania.forEach(z => {
-            const entry = { tytul: `${plant.nazwa_pl} - ${z.czynnosc}`, desc: z.opis || `Czas na: ${z.czynnosc}`, icon: taskIconFor(z.czynnosc), rosliny: [plant.nazwa_pl] };
-            (z.miesiace || []).forEach(m => {
-                const mName = monthNames[m];
-                if (mName && !seasonalMap[mName].some(t => t.tytul === entry.tytul)) seasonalMap[mName].push(entry);
-                Object.entries(seasonMonths).forEach(([season, arr]) => {
-                    if (arr.includes(m) && !seasonalMap[season].some(t => t.tytul === entry.tytul)) seasonalMap[season].push(entry);
-                });
-            });
-        });
-    });
-
     // Klucze kalendarza: { 'jesień': {type, label, data:[zadania]} }
-    const calendarSearchMap = {};
+    let calendarSearchMap = {};
     // "exact" = słowo będące samym pojęciem czasu/czynności (np. "jesień", "zbiór"),
     // nie zawęża już listy roślin/przepisów – tylko wybiera kalendarz.
-    const exactCalendarKeys = new Set();
+    let exactCalendarKeys = new Set();
 
     function normalizeTasks(list, fallbackName, fallbackIcon) {
         return (Array.isArray(list) ? list : [list]).filter(Boolean).map(t => {
@@ -244,54 +173,132 @@
         });
     }
 
-    if (CAL.okresy) {
-        Object.keys(CAL.okresy).forEach(okres => {
-            const key = okres.toLowerCase();
-            calendarSearchMap[key] = { type: 'Sezon / Czas', label: okres, data: normalizeTasks(CAL.okresy[okres].zadania, okres) };
+    function buildData(data) {
+        PLANTS = (data && Array.isArray(data.rosliny) ? data.rosliny : []).filter(p => p && typeof p === 'object');
+        PLANTS.forEach(p => {
+            p.nazwa_pl = p.nazwa_pl || 'Nieznana roślina';
+            p.id = p.id || slugify(p.nazwa_pl);
+            // pola, których używają karty wyników (dawniej z pełnych plików roślin)
+            p.kalendarz_ogrodnika = { zadania: Array.isArray(p.zadania) ? p.zadania : [] };
+        });
+        RECIPES = (data && Array.isArray(data.przepisy) ? data.przepisy : []).filter(r => r && typeof r === 'object' && r.tytul);
+        CAL = (data && data.kalendarz && typeof data.kalendarz === 'object') ? data.kalendarz : {};
+
+        plantByName = new Map(PLANTS.map(p => [norm(p.nazwa_pl), p]));
+
+        // --- Indeks roślin (pełnotekstowy, tekst "s" przygotowany przy budowie strony) ---
+        plantIndex = PLANTS.map(p => {
+            const tagDescs = (Array.isArray(p.tagi) ? p.tagi : []).map(t => {
+                const def = TAGS[safeStr(t).toLowerCase().trim()];
+                return def ? def.desc : '';
+            });
+            return {
+                plant: p,
+                name: norm(`${p.nazwa_pl} ${latinOf(p)}`),
+                core: norm([p.nazwa_pl, latinOf(p), p.rodzina, (p.tagi || []).join(' '), tagDescs.join(' ')].join(' ')),
+                full: safeStr(p.s) + ' ' + norm(tagDescs.join(' '))
+            };
+        });
+
+        // --- Indeks przepisów (do czasu pełnego tekstu: tytuł, roślina, składniki, opis) ---
+        recipeIndex = RECIPES.map(r => ({
+            recipe: r,
+            title: norm(`${r.tytul} ${r.roslina || ''}`),
+            full: norm([r.tytul, r.roslina, (r.sk || []).join(' '), r.opis].join(' '))
+        }));
+
+        // --- Mapa działania / objawów (fragmenty "dz" przygotowane przy budowie strony) ---
+        symptomMap = {};
+        PLANTS.forEach(p => (Array.isArray(p.dz) ? p.dz : []).forEach(tag => {
+            if (!symptomMap[tag]) symptomMap[tag] = [];
+            if (!symptomMap[tag].includes(p)) symptomMap[tag].push(p);
+        }));
+        // Kolory kwiatów (dawne colorMap) – dopasowane do roślin z bazy
+        [['żółty', 'Mniszek lekarski'], ['czerwony', 'Mak polny'], ['fioletowy', 'Lawenda wąskolistna']].forEach(([color, name]) => {
+            const p = findPlantByName(name);
+            if (p) { (symptomMap['kwiat ' + color] = symptomMap['kwiat ' + color] || []).push(p); }
+        });
+        symptomKeys = Object.keys(symptomMap).map(k => ({ key: k, n: norm(k) }));
+
+        // --- Kalendarz ---
+        const seasonalMap = {};
+        Object.keys(seasonMonths).concat(monthNames.slice(1)).forEach(k => { seasonalMap[k] = []; });
+        PLANTS.forEach(plant => {
+            plant.kalendarz_ogrodnika.zadania.forEach(z => {
+                const entry = { tytul: `${plant.nazwa_pl} - ${z.czynnosc}`, desc: z.opis || `Czas na: ${z.czynnosc}`, icon: taskIconFor(z.czynnosc), rosliny: [plant.nazwa_pl] };
+                (z.miesiace || []).forEach(m => {
+                    const mName = monthNames[m];
+                    if (mName && !seasonalMap[mName].some(t => t.tytul === entry.tytul)) seasonalMap[mName].push(entry);
+                    Object.entries(seasonMonths).forEach(([season, arr]) => {
+                        if (arr.includes(m) && !seasonalMap[season].some(t => t.tytul === entry.tytul)) seasonalMap[season].push(entry);
+                    });
+                });
+            });
+        });
+
+        calendarSearchMap = {};
+        exactCalendarKeys = new Set();
+        if (CAL.okresy) {
+            Object.keys(CAL.okresy).forEach(okres => {
+                const key = okres.toLowerCase();
+                calendarSearchMap[key] = { type: 'Sezon / Czas', label: okres, data: normalizeTasks(CAL.okresy[okres].zadania, okres) };
+                exactCalendarKeys.add(norm(key));
+            });
+        }
+
+        const actionBuckets = {
+            'zbiór': { type: 'Grupa czynności', label: 'Zbiór (wszystkie rodzaje)', keywords: ['zbiór', 'zbieranie', 'żniwa'], match: ['zbior', 'zbier', 'zniwa'], data: [], icon: 'ra-sickle' },
+            'sadzenie': { type: 'Grupa czynności', label: 'Sadzenie i rozmnażanie', keywords: ['sadzenie', 'siew', 'rozmnażanie', 'pikowanie'], match: ['sadz', 'siew', 'rozmnaza', 'pikow'], data: [], icon: 'ra-plant-seed' },
+            'cięcie': { type: 'Grupa czynności', label: 'Cięcie i pielęgnacja', keywords: ['cięcie', 'przycinanie', 'pielęgnacja'], match: ['ciac', 'cieci', 'przycina', 'formow', 'piel'], data: [], icon: 'ra-sword' },
+            'podlewanie': { type: 'Grupa czynności', label: 'Nawadnianie i nawożenie', keywords: ['podlewanie', 'nawożenie', 'nawadnianie'], match: ['podlew', 'nawoz', 'zasila', 'nawadnia'], data: [], icon: 'ra-water-drop' }
+        };
+
+        if (CAL.czynnosci) {
+            Object.keys(CAL.czynnosci).forEach(czynnosc => {
+                const n = norm(czynnosc);
+                const bucket = Object.values(actionBuckets).find(b => b.match.some(kw => n.includes(kw)));
+                if (bucket) {
+                    bucket.data = bucket.data.concat(normalizeTasks(CAL.czynnosci[czynnosc], czynnosc, bucket.icon));
+                } else {
+                    calendarSearchMap[czynnosc.toLowerCase()] = { type: 'Czynność', label: czynnosc, data: normalizeTasks(CAL.czynnosci[czynnosc], czynnosc) };
+                }
+            });
+        }
+        // Zadania z kart roślin też trafiają do grup czynności
+        Object.values(seasonalMap).forEach(list => list.forEach(t => {
+            const n = norm(t.tytul);
+            const bucket = Object.values(actionBuckets).find(b => b.match.some(kw => n.includes(kw)));
+            if (bucket && !bucket.data.some(x => x.tytul === t.tytul)) bucket.data.push(t);
+        }));
+        Object.values(actionBuckets).forEach(bucket => {
+            if (!bucket.data.length) return;
+            bucket.keywords.forEach(kw => { calendarSearchMap[kw] = bucket; exactCalendarKeys.add(norm(kw)); });
+        });
+
+        Object.keys(seasonalMap).forEach(key => {
+            if (!seasonalMap[key].length) return;
+            if (calendarSearchMap[key]) {
+                const existing = calendarSearchMap[key];
+                seasonalMap[key].forEach(t => { if (!existing.data.some(x => x.tytul === t.tytul)) existing.data.push(t); });
+            } else {
+                const typeLabel = seasonMonths[key] ? 'Pora roku' : 'Miesiąc';
+                calendarSearchMap[key] = { type: typeLabel, label: key.charAt(0).toUpperCase() + key.slice(1), data: seasonalMap[key].slice() };
+            }
             exactCalendarKeys.add(norm(key));
         });
+
+        buildSuggestionPool();
+        RECIPE_SAMPLE = defaultRecipeSample();
+        READY = true;
     }
 
-    const actionBuckets = {
-        'zbiór': { type: 'Grupa czynności', label: 'Zbiór (wszystkie rodzaje)', keywords: ['zbiór', 'zbieranie', 'żniwa'], match: ['zbior', 'zbier', 'zniwa'], data: [], icon: 'ra-sickle' },
-        'sadzenie': { type: 'Grupa czynności', label: 'Sadzenie i rozmnażanie', keywords: ['sadzenie', 'siew', 'rozmnażanie', 'pikowanie'], match: ['sadz', 'siew', 'rozmnaza', 'pikow'], data: [], icon: 'ra-plant-seed' },
-        'cięcie': { type: 'Grupa czynności', label: 'Cięcie i pielęgnacja', keywords: ['cięcie', 'przycinanie', 'pielęgnacja'], match: ['ciac', 'cieci', 'przycina', 'formow', 'piel'], data: [], icon: 'ra-sword' },
-        'podlewanie': { type: 'Grupa czynności', label: 'Nawadnianie i nawożenie', keywords: ['podlewanie', 'nawożenie', 'nawadnianie'], match: ['podlew', 'nawoz', 'zasila', 'nawadnia'], data: [], icon: 'ra-water-drop' }
-    };
-
-    if (CAL.czynnosci) {
-        Object.keys(CAL.czynnosci).forEach(czynnosc => {
-            const n = norm(czynnosc);
-            const bucket = Object.values(actionBuckets).find(b => b.match.some(kw => n.includes(kw)));
-            if (bucket) {
-                bucket.data = bucket.data.concat(normalizeTasks(CAL.czynnosci[czynnosc], czynnosc, bucket.icon));
-            } else {
-                calendarSearchMap[czynnosc.toLowerCase()] = { type: 'Czynność', label: czynnosc, data: normalizeTasks(CAL.czynnosci[czynnosc], czynnosc) };
-            }
-        });
+    // Pełny tekst przepisów (drugi plik) – dokładany do indeksu, gdy przyjdzie
+    function addRecipeTexts(data) {
+        const texts = data && Array.isArray(data.teksty) ? data.teksty : [];
+        if (texts.length !== RECIPES.length) return false;
+        recipeIndex.forEach((ri, i) => { if (texts[i]) ri.full = ri.full + ' ' + texts[i]; });
+        return true;
     }
-    // Zadania z kart roślin też trafiają do grup czynności
-    Object.values(seasonalMap).forEach(list => list.forEach(t => {
-        const n = norm(t.tytul);
-        const bucket = Object.values(actionBuckets).find(b => b.match.some(kw => n.includes(kw)));
-        if (bucket && !bucket.data.some(x => x.tytul === t.tytul)) bucket.data.push(t);
-    }));
-    Object.values(actionBuckets).forEach(bucket => {
-        if (!bucket.data.length) return;
-        bucket.keywords.forEach(kw => { calendarSearchMap[kw] = bucket; exactCalendarKeys.add(norm(kw)); });
-    });
-
-    Object.keys(seasonalMap).forEach(key => {
-        if (!seasonalMap[key].length) return;
-        if (calendarSearchMap[key]) {
-            const existing = calendarSearchMap[key];
-            seasonalMap[key].forEach(t => { if (!existing.data.some(x => x.tytul === t.tytul)) existing.data.push(t); });
-        } else {
-            const typeLabel = seasonMonths[key] ? 'Pora roku' : 'Miesiąc';
-            calendarSearchMap[key] = { type: typeLabel, label: key.charAt(0).toUpperCase() + key.slice(1), data: seasonalMap[key].slice() };
-        }
-        exactCalendarKeys.add(norm(key));
-    });
 
     function findCalendarAnchor(terms) {
         const keys = Object.keys(calendarSearchMap);
@@ -453,8 +460,8 @@
     }
 
     function recipeItemHtml(r) {
-        const fromWeb = r._z_sieci || r.siedziba;
-        const plantLabel = r.roslina || ingredientNames(r).slice(0, 2).join(', ');
+        const fromWeb = r.w || r._z_sieci || r.siedziba;
+        const plantLabel = r.roslina || (Array.isArray(r.sk) ? r.sk : ingredientNames(r)).slice(0, 2).join(', ');
         const desc = r.opis || prepText(r) || 'Brak instrukcji';
         return `
             <a class="task-card task-card-recipe" href="${getRecipeUrl(r.tytul)}">
@@ -576,6 +583,12 @@
         }
         quickBox.hidden = true;
 
+        if (!READY) {                       // dane wyszukiwarki jeszcze się pobierają
+            resultsBox.innerHTML = '<div class="kw-loading"><i class="ra ra-hourglass"></i> Wczytuję zielnik…</div>';
+            resultsBox.hidden = false;
+            loadData();
+            return;
+        }
         const res = computeResults(terms);
         lastResult = res;
         const { plants, recipes, calendar, effects } = res;
@@ -739,20 +752,23 @@
     // PODPOWIEDZI (AUTOUZUPEŁNIANIE)
     // ------------------------------------------
     const suggestionPool = [];
-    PLANTS.forEach(p => suggestionPool.push({ label: p.nazwa_pl, sub: latinOf(p), value: p.nazwa_pl, cat: 'Roślina', icon: getWitcherIcon(p), n: norm(`${p.nazwa_pl} ${latinOf(p)}`) }));
-    const seenCal = new Set();
-    Object.keys(calendarSearchMap).forEach(k => {
-        const entry = calendarSearchMap[k];
-        if (seenCal.has(entry)) return;
-        seenCal.add(entry);
-        const n = norm(k + ' ' + (entry.keywords ? entry.keywords.join(' ') : '') + ' ' + (entry.label || ''));
-        suggestionPool.push({ label: entry.label || k, sub: `${entry.type} · ${entry.data.length} zadań`, value: k, cat: 'Czas', icon: entry.icon || 'ra-sun', n });
-    });
-    symptomKeys
-        .filter(s => s.key.length <= 40)
-        .sort((a, b) => symptomMap[b.key].length - symptomMap[a.key].length)
-        .forEach(s => suggestionPool.push({ label: s.key, sub: `${symptomMap[s.key].length} roślin`, value: s.key, cat: 'Działanie', icon: 'ra-health', n: s.n }));
-    RECIPES.forEach(r => suggestionPool.push({ label: r.tytul, sub: r.roslina || '', href: getRecipeUrl(r.tytul), cat: 'Przepis', icon: 'ra-potion', n: norm(r.tytul) }));
+    function buildSuggestionPool() {
+        suggestionPool.length = 0;
+        PLANTS.forEach(p => suggestionPool.push({ label: p.nazwa_pl, sub: latinOf(p), value: p.nazwa_pl, cat: 'Roślina', icon: getWitcherIcon(p), n: norm(`${p.nazwa_pl} ${latinOf(p)}`) }));
+        const seenCal = new Set();
+        Object.keys(calendarSearchMap).forEach(k => {
+            const entry = calendarSearchMap[k];
+            if (seenCal.has(entry)) return;
+            seenCal.add(entry);
+            const n = norm(k + ' ' + (entry.keywords ? entry.keywords.join(' ') : '') + ' ' + (entry.label || ''));
+            suggestionPool.push({ label: entry.label || k, sub: `${entry.type} · ${entry.data.length} zadań`, value: k, cat: 'Czas', icon: entry.icon || 'ra-sun', n });
+        });
+        symptomKeys
+            .filter(s => s.key.length <= 40)
+            .sort((a, b) => symptomMap[b.key].length - symptomMap[a.key].length)
+            .forEach(s => suggestionPool.push({ label: s.key, sub: `${symptomMap[s.key].length} roślin`, value: s.key, cat: 'Działanie', icon: 'ra-health', n: s.n }));
+        RECIPES.forEach(r => suggestionPool.push({ label: r.tytul, sub: r.roslina || '', href: getRecipeUrl(r.tytul), cat: 'Przepis', icon: 'ra-potion', n: norm(r.tytul) }));
+    }
 
     const CAT_LIMITS = { 'Roślina': 4, 'Czas': 3, 'Działanie': 3, 'Przepis': 3 };
     const CAT_LABELS = { 'Roślina': 'Roślina', 'Czas': 'Czas / czynność', 'Działanie': 'Działanie / objaw', 'Przepis': 'Przepis – otwórz' };
@@ -783,6 +799,15 @@
     }
 
     function renderSuggestions() {
+        if (!READY) {
+            hideSuggestions();
+            if (state.text.trim().length >= 2) {
+                suggBox.innerHTML = '<div class="kw-loading">Wczytuję zielnik…</div>';
+                suggBox.hidden = false;
+            }
+            loadData();
+            return;
+        }
         suggestions = getSuggestions(state.text);
         activeSugg = -1;
         if (!suggestions.length) { hideSuggestions(); return; }
@@ -880,9 +905,11 @@
         const season = Object.keys(seasonMonths).find(s => seasonMonths[s].includes(m));
         const chips = [];
         const mName = monthNames[m];
-        if (calendarSearchMap[mName]) chips.push({ label: `Ten miesiąc: ${mName}`, value: mName, icon: 'ra-hourglass' });
-        if (calendarSearchMap[season]) chips.push({ label: `Pora roku: ${season}`, value: season, icon: 'ra-sun' });
-        ['zbiór', 'sadzenie'].forEach(k => { if (calendarSearchMap[k]) chips.push({ label: k, value: k, icon: calendarSearchMap[k].icon }); });
+        // przed pobraniem danych pokazujemy wszystkie szybkie filtry (kalendarz prawie zawsze je ma)
+        const has = k => !READY || !!calendarSearchMap[k];
+        if (has(mName)) chips.push({ label: `Ten miesiąc: ${mName}`, value: mName, icon: 'ra-hourglass' });
+        if (has(season)) chips.push({ label: `Pora roku: ${season}`, value: season, icon: 'ra-sun' });
+        [['zbiór', 'ra-sickle'], ['sadzenie', 'ra-plant-seed']].forEach(([k, icon]) => { if (has(k)) chips.push({ label: k, value: k, icon: (calendarSearchMap[k] && calendarSearchMap[k].icon) || icon }); });
         ['przeziębienie', 'kaszel', 'odporność', 'rany', 'syrop'].forEach(k => chips.push({ label: k, value: k, icon: 'ra-health' }));
         quickBox.innerHTML = '<span class="kw-quick-label">Spróbuj:</span>' + chips.map(c =>
             `<button type="button" class="kw-quick-chip" data-value="${esc(c.value)}"><i class="ra ${esc(c.icon)}"></i> ${esc(c.label)}</button>`).join('') +
@@ -904,6 +931,10 @@
     // ------------------------------------------
     // magic_lens.js woła tę funkcję po rozpoznaniu; zwracamy nazwę, którą ma pokazać modal
     window.onPlantRecognized = function (result) {
+        if (!READY) {                       // zdjęcie rozpoznane, zanim przyszły dane – dokończ po ich pobraniu
+            loadData().then(() => { if (READY) window.onPlantRecognized(result); });
+            return safeStr(result && (result.polish || result.latin));
+        }
         const latin = safeStr(result && result.latin);
         const polish = safeStr(result && result.polish);
         const latinKey = norm(latin).split(/\s+/).slice(0, 2).join(' ');
@@ -977,7 +1008,7 @@
         for (let i = copy.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [copy[i], copy[j]] = [copy[j], copy[i]]; }
         return copy.slice(0, 40);
     }
-    const RECIPE_SAMPLE = defaultRecipeSample();
+    let RECIPE_SAMPLE = [];
 
     function miniCardHtml(item, type, hidden) {
         const extra = hidden ? ' aria-hidden="true" tabindex="-1"' : '';
@@ -1059,33 +1090,66 @@
         }
     }
 
+    // BESTIARIUSZ renderuje serwer (templates/index.html) – karty są gotowe w HTML, z leniwymi miniaturami.
+
     // ------------------------------------------
-    // BESTIARIUSZ – cała karta jest linkiem, napis "Zbadaj" zostaje
+    // POBIERANIE DANYCH WYSZUKIWARKI
     // ------------------------------------------
-    function renderBestiary() {
-        const grid = document.getElementById('bestiaryGrid');
-        if (!grid) return;
-        grid.innerHTML = PLANTS
-            .slice()
-            .sort((a, b) => a.nazwa_pl.localeCompare(b.nazwa_pl, 'pl'))
-            .map(plant => {
-                const img = getBestImageUrl(plant);
-                return `<a class="witcher-card" href="${getPlantUrl(plant)}" aria-label="Zbadaj: ${esc(plant.nazwa_pl)}">
-                    <div class="witcher-card-img" style="${img ? `background-image:url('${esc(img)}');` : 'background:#3a2b21;'}"></div>
-                    <div class="witcher-card-content">
-                        <h3 class="witcher-card-title">${esc(plant.nazwa_pl)}</h3>
-                        ${latinOf(plant) ? `<p class="witcher-card-latin">${esc(latinOf(plant))}</p>` : ''}
-                        <p class="witcher-card-desc">${esc(plant.rodzina || '')}</p>
-                    </div>
-                    <span class="witcher-btn">Zbadaj <i class="ra ra-eye"></i></span>
-                </a>`;
-            }).join('');
+    const searchSection = document.getElementById('kwSearch');
+    const DATA_URL = (searchSection && searchSection.dataset.src) || '/api/szukaj.json';
+    const TEXT_URL = (searchSection && searchSection.dataset.srcText) || '/api/szukaj_przepisy.json';
+    let loading = null;
+
+    function rerender() {
+        const y = window.scrollY;
+        renderResults();
+        window.scrollTo({ top: y, behavior: 'instant' });
+        if (document.activeElement === input && state.text.trim().length >= 2) renderSuggestions();
     }
+
+    function loadData() {
+        if (loading) return loading;
+        loading = fetch(DATA_URL)
+            .then(r => (r.ok ? r.json() : Promise.reject(new Error('HTTP ' + r.status))))
+            .then(data => {
+                buildData(data);
+                renderQuick();
+                if (currentTerms().length) rerender();
+                else if (document.activeElement === input && state.text.trim().length >= 2) renderSuggestions();
+                // pełny tekst przepisów – osobny, większy plik
+                fetch(TEXT_URL)
+                    .then(r => (r.ok ? r.json() : null))
+                    .then(t => { if (t && addRecipeTexts(t) && currentTerms().length) rerender(); })
+                    .catch(() => { /* bez pełnego tekstu przepisy szukane są po tytule i składnikach */ });
+            })
+            .catch(() => {
+                loading = null;                 // następna próba przy kolejnym wpisaniu
+                if (currentTerms().length) {
+                    resultsBox.innerHTML = '<div class="kw-loading">Nie udało się wczytać zielnika – sprawdź połączenie i spróbuj ponownie.</div>';
+                    resultsBox.hidden = false;
+                }
+            });
+        return loading;
+    }
+
+    // dane są potrzebne dopiero do szukania: pobieramy je, gdy ktoś dotknie wyszukiwarki,
+    // a poza tym w tle chwilę po wczytaniu strony (bez trybu oszczędzania danych)
+    ['focus', 'pointerdown', 'touchstart'].forEach(ev => input.addEventListener(ev, () => loadData(), { passive: true, once: true }));
+    if (searchBar) searchBar.addEventListener('pointerdown', () => loadData(), { passive: true, once: true });
+    const lensBtn = document.getElementById('magicLensBtn');
+    if (lensBtn) lensBtn.addEventListener('pointerdown', () => loadData(), { passive: true, once: true });
+    const saveData = navigator.connection && navigator.connection.saveData;
+    function preload() {
+        if (saveData) return;
+        if (window.requestIdleCallback) requestIdleCallback(() => loadData(), { timeout: 4000 });
+        else setTimeout(loadData, 2000);
+    }
+    if (document.readyState === 'complete') preload();
+    else window.addEventListener('load', preload, { once: true });
 
     // ------------------------------------------
     // START
     // ------------------------------------------
-    renderBestiary();
     renderQuick();
     renderTags();
 
@@ -1093,7 +1157,7 @@
     try { initialTags = new URLSearchParams(window.location.search).getAll('q').map(s => s.trim()).filter(Boolean); } catch (e) { /* ignore */ }
 
     function init() {
-        if (initialTags.length) setTags(initialTags);
+        if (initialTags.length) { setTags(initialTags); loadData(); }
         else renderResults();
         autoScroll('plantsWrapper');
         autoScroll('recipesWrapper');

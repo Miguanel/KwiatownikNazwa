@@ -87,9 +87,40 @@ function getDictContext(value, dictObj) {
 // ==========================================
 // 3. GŁÓWNA FUNKCJA MODALA GRYMUARU
 // ==========================================
+// Pełny przepis nie siedzi już w karcie (strona ważyła 10 MB) – pobieramy go przy otwarciu grymuaru
+// z /api/przepis/<nr>.json (data-src przycisku). Stary format (data-recipe w przycisku) nadal działa.
+const recipeCache = new Map();
 window.openRecipeModal = function(buttonElement) {
+    const raw = buttonElement.getAttribute('data-recipe');
+    if (raw) {
+        try { showRecipeModal(JSON.parse(raw)); } catch (e) { console.error("Błąd przetwarzania przepisu:", e); }
+        return Promise.resolve();
+    }
+    const url = buttonElement.getAttribute('data-src');
+    if (!url) return Promise.resolve();
+    if (recipeCache.has(url)) { showRecipeModal(recipeCache.get(url)); return Promise.resolve(); }
+    if (buttonElement.classList.contains('is-loading')) return Promise.resolve();
+    const label = buttonElement.innerHTML;
+    buttonElement.classList.add('is-loading');
+    buttonElement.innerHTML = 'Otwieram grymuar…';
+    return fetch(url)
+        .then(r => (r.ok ? r.json() : Promise.reject(new Error('HTTP ' + r.status))))
+        .then(recipe => { recipeCache.set(url, recipe); showRecipeModal(recipe); })
+        .catch(e => {
+            console.error("Nie udało się pobrać przepisu:", e);
+            buttonElement.innerHTML = 'Nie udało się otworzyć – spróbuj ponownie';
+            setTimeout(() => { buttonElement.innerHTML = label; }, 2500);
+            buttonElement.classList.remove('is-loading');
+            return;
+        })
+        .finally(() => {
+            if (buttonElement.innerHTML === 'Otwieram grymuar…') buttonElement.innerHTML = label;
+            buttonElement.classList.remove('is-loading');
+        });
+};
+
+function showRecipeModal(recipe) {
     try {
-        const recipe = JSON.parse(buttonElement.getAttribute('data-recipe'));
         // --- OBSŁUGA ULUBIONYCH (ZAPIS W LOCALSTORAGE) ---
         const recipeTitle = recipe.tytul || "Nieznana Receptura";
         const btnToggleFav = document.getElementById('btnToggleRecipeFav');
@@ -428,7 +459,7 @@ window.openRecipeModal = function(buttonElement) {
     } catch (e) {
         console.error("Błąd przetwarzania przepisu:", e);
     }
-};
+}
 
 // ==========================================
 // 4. ANIMACJA SCROLLA W MODALU
@@ -488,51 +519,60 @@ function normalizeText(text) {
 // 2. SILNIK DOPASOWANIA - rozdziela zapytanie ("ból głowy" na "bol", "glowy") i szuka każdego z osobna
 function advancedSearchMatch(targetText, query) {
     if (!targetText || !query) return false;
-    const normTarget = normalizeText(targetText);
+    const normTarget = targetText;           // tekst kart jest znormalizowany raz, przy wczytaniu
     const normQuery = normalizeText(query);
 
     const queryWords = normQuery.split(/\s+/).filter(w => w.length > 0);
     return queryWords.every(word => normTarget.includes(word));
 }
 
-// 3. GENEROWANIE CZYSTYCH DANYCH I PODPOWIEDZI W LOCIE
+// 3. DANE DO WYSZUKIWANIA
+// Na start szukamy w tym, co widać na karcie (tytuł, roślina, opis). Pełny tekst przepisów
+// (składniki, działanie, dawkowanie…) przychodzi z /api/przepisnik.json, gdy ktoś zacznie szukać
+// (albo w tle chwilę po wczytaniu strony) – wtedy wyniki i podpowiedzi uzupełniają się same.
 recipeWrappers.forEach(wrapper => {
-    const btn = wrapper.querySelector('.btn-details');
-    if (!btn) return;
-
-    // Pobieramy bezpieczny, poprawnie zakodowany JSON (omijamy błędy Pythona z polskimi znakami)
-    let recipeData;
-    try {
-        recipeData = JSON.parse(btn.getAttribute('data-recipe'));
-    } catch (e) {
-        recipeData = {};
-    }
-
-    // Zmieniamy cały słownik w jeden tekst (bez źródeł i metadanych Siedziby - to nie treść przepisu)
-    const {zrodla, zrodlo, siedziba, _z_sieci, ...searchable} = recipeData || {};
-    let rawText = JSON.stringify(searchable);
-
-    // USUWANIE LINKÓW: Wycina wszystkie adresy URL zaczynające się od http/https
-    rawText = rawText.replace(/https?:\/\/[^\s"']+/g, ' ');
-
-    // Zapisujemy ten idealnie oczyszczony tekst w pamięci diva dla szybkiego filtrowania
-    wrapper.dataset.searchContent = rawText;
-
-    // ZAMIANA INTERPUNKCJI NA SPACJE: Zamiast sklejać słowa, oddzielamy je
-    const cleanTextForKeywords = rawText.replace(/[^\w\sęóąśłżźćńĘÓĄŚŁŻŹĆŃ]/g, ' ');
-
-    // Tworzenie słów kluczowych do dropdownu
-    const words = cleanTextForKeywords.split(/\s+/);
-    words.forEach(word => {
-        const w = word.toLowerCase();
-        // Przepuszczamy tylko same litery (wywalamy 100g, 50ml), dłuższe niż 2 znaki
-        if (w.length > 2 && w.match(/^[a-zżźćńółęąś]+$/) && !stopWords.includes(w)) {
-            keywords.add(w);
-        }
-    });
+    const card = wrapper.querySelector('.recipe-card');
+    wrapper._kwText = normalizeText(card ? card.textContent.replace(/\s+/g, ' ') : '');
 });
+let keywordsArray = [];
+let searchTextsLoaded = null;
 
-const keywordsArray = Array.from(keywords).sort();
+function loadSearchTexts() {
+    if (searchTextsLoaded) return searchTextsLoaded;
+    const grid = document.getElementById('recipesGrid');
+    const src = grid && grid.dataset.searchSrc;
+    if (!src) return Promise.resolve(false);
+    searchTextsLoaded = fetch(src)
+        .then(r => (r.ok ? r.json() : Promise.reject(new Error('HTTP ' + r.status))))
+        .then(data => {
+            const texts = data && Array.isArray(data.teksty) ? data.teksty : [];
+            const kw = new Set();
+            recipeWrappers.forEach(wrapper => {
+                const t = texts[Number(wrapper.dataset.nr)];
+                if (typeof t !== 'string') return;
+                wrapper._kwText += ' ' + normalizeText(t);
+                t.split(' ').forEach(w => {
+                    // tylko same litery (bez 100g, 50ml), dłuższe niż 2 znaki
+                    if (w.length > 2 && /^[a-zżźćńółęąś]+$/.test(w) && !stopWords.includes(w)) kw.add(w);
+                });
+            });
+            keywordsArray = Array.from(kw).sort();
+            if (searchInput && searchInput.value.trim()) filterRecipes(searchInput.value.trim());
+            return true;
+        })
+        .catch(() => { searchTextsLoaded = null; return false; });
+    return searchTextsLoaded;
+}
+if (searchInput) {
+    ['focus', 'pointerdown'].forEach(ev => searchInput.addEventListener(ev, () => loadSearchTexts(), { once: true, passive: true }));
+}
+window.addEventListener('load', () => {
+    if (navigator.connection && navigator.connection.saveData) return;
+    if (window.requestIdleCallback) requestIdleCallback(() => loadSearchTexts(), { timeout: 5000 });
+    else setTimeout(loadSearchTexts, 2500);
+}, { once: true });
+
+
 
 // 4. LOGIKA FILTROWANIA KART
 let currentOrigin = 'all';   // 'all' | 'book' (z ksiąg) | 'web' (z sieci)
@@ -548,8 +588,8 @@ function filterRecipes(query) {
     const cleanQuery = query.trim();
 
     recipeWrappers.forEach(wrapper => {
-        // Czytamy nasz zoptymalizowany tekst
-        const dataText = wrapper.dataset.searchContent || "";
+        // tekst karty + (gdy już przyszedł) pełny tekst przepisu – oba znormalizowane
+        const dataText = wrapper._kwText || "";
 
         if (currentOrigin !== 'all' && wrapper.dataset.origin !== currentOrigin) {
             wrapper.classList.add('d-none');
@@ -584,6 +624,7 @@ if (searchInput) {
         suggestionsList.style.display = 'none';
 
         filterRecipes(val);
+        loadSearchTexts();
 
         if (val.length < 2) return;
 
@@ -638,7 +679,10 @@ function sortResultsByFavorites() {
     const grid = document.getElementById('recipesGrid');
     if (!grid) return;
 
-    const favRecipes = JSON.parse(localStorage.getItem("recipeFavorites")) || [];
+    let favRecipes = [];
+    try { favRecipes = JSON.parse(localStorage.getItem("recipeFavorites")) || []; } catch (e) { favRecipes = []; }
+    // bez ulubionych nie przestawiamy ~1300 kart (to kosztowne na telefonie)
+    if (!favRecipes.length && !grid.querySelector('.recipe-title .bi-heart-fill')) return;
     const items = Array.from(grid.querySelectorAll('.recipe-wrapper'));
 
     // 1. KESZOWANIE: Pobieramy dane raz i przechowujemy w tablicy obiektów
@@ -693,6 +737,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (query && searchInput) {
         searchInput.value = query;
         filterRecipes(query.toLowerCase());
+        loadSearchTexts();          // pełny tekst dołoży wyniki, gdy przyjdzie
     } else {
         sortResultsByFavorites();
     }

@@ -21,7 +21,7 @@
      JEDNA WYSZUKIWARKA KWIATOWNIK V2: rośliny, objawy/działanie, czynności, pory roku,
      przepisy, tagi (filtry) i rozpoznawanie rośliny ze zdjęcia
      ========================================== -->
-<section class="kw-search" id="kwSearch">
+<section class="kw-search" id="kwSearch" data-src="{{ url_for('api.api_szukaj') }}" data-src-text="{{ url_for('api.api_szukaj_przepisy') }}">
     <h1 class="kw-search-title"><i class="ra ra-leaf"></i> Czego szukasz w zielniku?</h1>
     <p class="kw-search-hint">Roślina, objaw lub działanie, czynność w ogrodzie, pora roku, miesiąc, składnik przepisu… albo zdjęcie rośliny.</p>
 
@@ -62,12 +62,40 @@
     <div class="kw-papyrus">
         <div class="kw-papyrus-rod" aria-hidden="true"></div>
         <div class="kw-papyrus-sheet" tabindex="0" aria-label="Kronika Siedziby – przewijana lista zmian">
-            <div class="kw-live" id="kwPapyrusLive" aria-live="polite">
+            {# Stan Siedziby z data/siedziba_stan.json (commituje go agent wdrozen) - bez zapytan do backendu #}
+            <div class="kw-live{% if stan and stan.pracuje %} is-reported{% endif %}" id="kwPapyrusLive" aria-live="polite"
+                 {% if stan %}data-ts="{{ stan.zaktualizowano }}"{% endif %}>
                 <span class="kw-live-dot" aria-hidden="true"></span>
-                <span class="kw-live-text">Siedziba Kwiatownika zbiera wiedzę o roślinach z zagranicznych źródeł – poniżej kronika jej pracy.</span>
+                <span class="kw-live-text">
+                {% if stan and stan.pracuje %}
+                    <strong class="kw-live-head">Siedziba pracowała</strong>
+                    <small>(meldunek z <time data-ago datetime="{{ stan.zaktualizowano }}">{{ stan.kiedy }}</time>)</small>:
+                    {% for z in stan.zadania %}{{ z.opis }}{% if not loop.last %} · {% endif %}{% endfor %}
+                {% elif stan %}
+                    <strong class="kw-live-head">Siedziba czeka na kolejne zadanie</strong>
+                    <small>(meldunek z <time data-ago datetime="{{ stan.zaktualizowano }}">{{ stan.kiedy }}</time>)</small>
+                {% else %}
+                    Siedziba Kwiatownika zbiera wiedzę o roślinach z zagranicznych źródeł – poniżej kronika jej pracy.
+                {% endif %}
+                </span>
             </div>
-            <div class="kw-papyrus-stats" id="kwPapyrusStats" hidden></div>
-            <ol class="kw-chronicle kw-chronicle-live" id="kwPapyrusLiveLog" hidden></ol>
+            {% if stan and (stan.liczby or stan.najczesciej_czytane) %}
+            <div class="kw-papyrus-stats" id="kwPapyrusStats">
+                {% for l in stan.liczby %}<span><b>{{ l.n }}</b> {{ l.tekst }}</span>{% endfor %}
+                {% if stan.najczesciej_czytane %}<span class="kw-papyrus-top">Najczęściej czytane:
+                    {% for t in stan.najczesciej_czytane %}<a href="{{ url_for('plants.plant_detail', plant_id=t.id) }}">{{ t.nazwa }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</span>{% endif %}
+            </div>
+            {% endif %}
+            {% if stan and stan.wpisy %}
+            <ol class="kw-chronicle kw-chronicle-live" id="kwPapyrusLiveLog">
+                {% for w in stan.wpisy %}
+                <li class="kw-chronicle-entry is-live" data-kind="{{ w.kind }}">
+                    <time data-ago datetime="{{ w.ts }}">{{ w.kiedy }}</time>
+                    <p>{% if w.url %}<a href="{{ w.url }}">{{ w.text }}</a>{% else %}{{ w.text }}{% endif %}</p>
+                </li>
+                {% endfor %}
+            </ol>
+            {% endif %}
             <ol class="kw-chronicle" id="kwPapyrusLog">
                 {% for w in kronika %}
                 <li class="kw-chronicle-entry">
@@ -93,7 +121,19 @@
 
 <section>
     <h2 class="bestiary-header">Bestiariusz Roślin</h2>
-    <div id="bestiaryGrid" class="bestiary-grid"></div>
+    <div id="bestiaryGrid" class="bestiary-grid">
+        {% for p in bestiary %}
+        <a class="witcher-card" href="{{ url_for('plants.plant_detail', plant_id=p.id) }}" aria-label="Zbadaj: {{ p.nazwa }}">
+            <div class="witcher-card-img">{% if p.img %}<img src="{{ p.img }}"{% if p.img2x %} srcset="{{ p.img }} 330w, {{ p.img2x }} 500w" sizes="(max-width: 560px) 92vw, 280px"{% endif %} alt="" loading="lazy" decoding="async" width="330" height="220"{% if p.full %} data-full="{{ p.full }}" onerror="this.onerror=null;this.removeAttribute('srcset');this.src=this.dataset.full"{% endif %}>{% endif %}</div>
+            <div class="witcher-card-content">
+                <h3 class="witcher-card-title">{{ p.nazwa }}</h3>
+                {% if p.lat %}<p class="witcher-card-latin">{{ p.lat }}</p>{% endif %}
+                <p class="witcher-card-desc">{{ p.rodzina }}</p>
+            </div>
+            <span class="witcher-btn">Zbadaj <i class="ra ra-eye"></i></span>
+        </a>
+        {% endfor %}
+    </div>
 </section>
 
 <!-- Wynik rozpoznawania zdjęcia (obsługa: static/js/magic_lens.js + index.js) -->
@@ -130,13 +170,6 @@
         <button onclick="document.getElementById('megaAlertOverlay').style.display='none'" style="background: #3e4a3d; border: 1px solid #3e4a3d; color: #fdfaf0; padding: 12px 30px; cursor: pointer; font-size: 14px; text-transform: uppercase; border-radius: 4px; transition: 0.3s;">Powrót na szlak</button>
     </div>
 </div>
-
-<script>
-    const plantsData = {{ plants_full_data | default('[]') | safe }};
-    const kalendarz = {{ calendar_data | default('{}') | safe }};
-    let recipesData = {{ recipes_full_data | default('[]') | safe }};
-    if (!Array.isArray(recipesData)) recipesData = [];
-</script>
 
 <script src="{{ url_for('static', filename='js/tags.js') }}"></script>
 <script src="{{ url_for('static', filename='js/index.js') }}"></script>

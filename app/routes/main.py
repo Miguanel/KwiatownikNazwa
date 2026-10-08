@@ -6,7 +6,7 @@ from datetime import date
 from xml.sax.saxutils import escape
 from flask import Blueprint, render_template, current_app, send_from_directory, url_for, Response
 from astro_engine import get_astrological_data
-from data_builder import build_calendar_from_jsons, FESTIVAL_KNOWLEDGE
+from data_builder import FESTIVAL_KNOWLEDGE
 from app.utils.helpers import get_all_plants_list, get_plant_data, get_all_recipes
 from app.utils.kronika import kronika
 
@@ -121,9 +121,10 @@ def robots_txt():
 
 @main_bp.route('/')
 def index():
-    plants = get_all_plants_list()
-    dynamic_calendar = build_calendar_from_jsons()
-    recipes = get_all_recipes()
+    # Strona glowna jest lekka: Bestiariusz renderowany tutaj (z miniaturami), a dane wyszukiwarki przegladarka
+    # pobiera w tle z /api/szukaj.json (app/utils/home_data.py). Wczesniej w HTML bylo ok. 5 MB JSON-a.
+    from app.utils.home_data import bestiary
+    from app.utils.kronika import stan_siedziby
     lat, lon = '49.95', '18.38'
     city_name = "Z (Domyślnie)"
 
@@ -150,15 +151,13 @@ def index():
     else:
         knowledge = [{"roslina": "Kwiatownik", "tresc": "Wiedza o roślinach jest kluczem do zdrowia."}]
 
-    full_data_list = [get_plant_data(pid) for pid in plants if get_plant_data(pid)]
-
+    rows = bestiary()
     return render_template(
         'index.html',
-        plants=plants,
-        plants_full_data=json.dumps(full_data_list),
-        calendar_data=json.dumps(dynamic_calendar),
+        plants=rows,
+        bestiary=rows,
         astro=astro,
         knowledge=knowledge,
-        recipes_full_data=json.dumps(recipes),
-        kronika=kronika(12)
+        kronika=kronika(12),
+        stan=stan_siedziby(),
     )

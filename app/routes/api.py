@@ -56,6 +56,75 @@ def api_recipe_store_files():
     files = get_recipe_store_files()
     return jsonify({'pliki': files, 'wczytywane': [f['name'] for f in files if f['used']]})
 
+def _json_utf8(data):
+    import json
+    from flask import Response
+    return Response(json.dumps(data, ensure_ascii=False, separators=(',', ':')), mimetype='application/json')
+
+
+@api_bp.route('/szukaj.json')
+def api_szukaj():
+    """Odchudzone dane wyszukiwarki strony glownej (app/utils/home_data.py) - pobierane w tle przez index.js:
+    rosliny (z gotowym tekstem do szukania), kalendarz, przepisy bez pelnego tekstu."""
+    from app.utils.home_data import search_payload_cached
+    data = dict(search_payload_cached())
+    data.pop('przepisy_tekst', None)
+    return _json_utf8(data)
+
+
+@api_bp.route('/szukaj_przepisy.json')
+def api_szukaj_przepisy():
+    """Pelny tekst przepisow do wyszukiwarki (lista w tej samej kolejnosci co "przepisy" w /api/szukaj.json)."""
+    from app.utils.home_data import search_payload_cached
+    return _json_utf8({'wersja': 1, 'teksty': search_payload_cached()['przepisy_tekst']})
+
+
+_przepisnik = {'key': None, 'rows': []}
+
+
+def _przepisnik_rows():
+    """Przepisy Przepisnika (z numerami) - liczone raz na budowe strony, a nie dla kazdego z ~1300 plikow."""
+    from app.routes.recipes import przepisnik_recipes
+    from app.utils.recipe_store import store_files
+    from app.utils.helpers import recipes_dir
+    key = tuple((f['name'], f['size']) for f in store_files(recipes_dir()) if f['used'])
+    if key != _przepisnik['key']:
+        _przepisnik.update(key=key, rows=przepisnik_recipes())
+    return _przepisnik['rows']
+
+
+@api_bp.route('/przepis/<int:nr>.json')
+def api_przepis(nr):
+    """Pelny przepis do grymuaru w Przepisniku (static/js/recipes.js pobiera go przy otwarciu)."""
+    from flask import abort
+    rows = _przepisnik_rows()
+    if not 0 <= nr < len(rows):
+        abort(404)
+    return _json_utf8(rows[nr])
+
+
+@api_bp.route('/przepisnik.json')
+def api_przepisnik():
+    """Tekst do wyszukiwania w Przepisniku: lista w kolejnosci numerow przepisow (_nr). Male litery, kazde slowo
+    raz, bez zrodel i adresow - pobierany, gdy ktos zacznie szukac."""
+    from app.utils.home_data import search_text
+    skip = {'zrodla', 'zrodlo', 'siedziba', '_z_sieci', '_zrodlo', '_nr', '_plik', 'url'}
+    return _json_utf8({'wersja': 1, 'teksty': [search_text(r, skip=skip, normalize=False) for r in _przepisnik_rows()]})
+
+
+@api_bp.route('/zrodla_podglad.json')
+def api_zrodla_podglad():
+    """Czy strony-zrodla przepisow dzialaja + ich podglad (tytul, opis, obrazek). Plik robi sprawdz_zrodla.py,
+    czyta go static/js/zrodla_dymki.js (dymek po kliknieciu w zrodlo przepisu)."""
+    import json, os
+    from flask import current_app
+    path = os.path.join(current_app.root_path, '..', 'data', 'zrodla_podglad.json')
+    try:
+        with open(path, encoding='utf-8') as f:
+            return jsonify(json.load(f))
+    except (OSError, ValueError):
+        return jsonify({'zrodla': {}})
+
 @api_bp.route('/all_plants.json')
 def api_all_plants():
     return jsonify([get_plant_data(pid) | {'slug': pid} for pid in get_all_plants_list() if get_plant_data(pid)])

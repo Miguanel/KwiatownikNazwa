@@ -422,3 +422,7 @@ details.grimoire-subdetails > summary:hover {
     border-left: 3px solid #d1c7a7; font-style: italic; }
 .stamp-dye { color: #6a1b9a; border-color: #6a1b9a; background: #f3e5f5; }
 .stamp-cosm { color: #ad1457; border-color: #ad1457; background: #fce4ec; }
+
+/* ~1300 kart: przegladarka rysuje tylko te, ktore sa blisko ekranu (szybsze przewijanie na telefonie) */
+.recipe-wrapper { content-visibility: auto; contain-intrinsic-size: auto 300px; }
+.btn-details.is-loading { opacity: 0.7; cursor: progress; }

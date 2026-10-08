@@ -330,3 +330,11 @@
     .card-desc-scroll, .card-trivia-scroll { animation: none; }
     .card-trivia-scroll { padding-left: 10px; white-space: normal; }
 }
+
+/* Bestiariusz renderowany na serwerze: miniatury <img loading="lazy"> zamiast tla CSS (telefon pobiera tylko
+   zdjecia, ktore sa na ekranie), a karty poza ekranem nie sa rysowane (content-visibility) */
+.witcher-card { content-visibility: auto; contain-intrinsic-size: auto 380px; }
+.witcher-card-img { position: relative; overflow: hidden; }
+.witcher-card-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 4px; }
+/* wyszukiwarka czeka na dane (pobierane w tle) */
+.kw-loading { padding: 10px 14px; color: #6b6255; font-style: italic; }

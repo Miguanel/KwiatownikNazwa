@@ -4,7 +4,9 @@
 Wpisy pochodza z data/changelog.json - pisze go agent wdrozen Siedziby przy kazdej publikacji
 (co nowego: informacje o roslinach, przepisy, zdjecia). Starsza historia (sprzed agenta) jest odtwarzana
 z samych plikow roslin: daty w blokach "wiedza", "zdjecia_wiki" i "scalone".
-Stan Siedziby na zywo (czy teraz pracuje) dokleja w przegladarce static/js/papirus.js z backendu.
+Stan Siedziby (nad czym pracuje, ostatnie wpisy dziennika, statystyki strony) pochodzi z data/siedziba_stan.json -
+zapisuje i commituje go agent wdrozen Siedziby, wiec strona nie pyta backendu (szybsze ladowanie na telefonie).
+static/js/papirus.js tylko przelicza "X temu" w przegladarce.
 """
 import json
 import os
@@ -133,3 +135,58 @@ def kronika(limit=12):
         for r in w['rosliny']:
             r['jezyki_txt'] = ', '.join(JEZYKI.get(j, j) for j in (r.get('jezyki') or [])[:4])
     return wpisy
+
+
+def godzina_pl(iso):
+    """'2026-10-08T20:30:00+02:00' -> '8 października 2026, 20:30'."""
+    try:
+        d = datetime.fromisoformat(str(iso).replace('Z', '+00:00'))
+    except ValueError:
+        return str(iso)[:16]
+    return f"{d.day} {MIESIACE[d.month - 1]} {d.year}, {d.hour}:{d.minute:02d}"
+
+
+def _safe_url(url):
+    return url if isinstance(url, str) and (url.startswith('/') and not url.startswith('//')
+                                            or url.startswith('https://')) else ''
+
+
+def stan_siedziby():
+    """Stan Siedziby z data/siedziba_stan.json (agent wdrozen) albo None, gdy pliku jeszcze nie ma.
+
+    Format pliku: {zaktualizowano, siedziba: {status, zadania[{opis, od}], info}, wpisy[{ts, kind, text, url}],
+    statystyki: {goscie_tydzien, odslony_tydzien, plantid_razem, plantid_tydzien, najczesciej_czytane[{id, nazwa, n}]}}
+    """
+    data = _read(os.path.join(_root(), 'data', 'siedziba_stan.json'))
+    if not isinstance(data, dict) or not data.get('zaktualizowano'):
+        return None
+    s = data.get('siedziba') if isinstance(data.get('siedziba'), dict) else {}
+    zadania = [{'opis': str(z.get('opis') or 'zadanie')[:120], 'od': str(z.get('od') or '')}
+               for z in (s.get('zadania') or []) if isinstance(z, dict)][:3]
+    wpisy = []
+    for w in data.get('wpisy') or []:
+        if isinstance(w, dict) and w.get('text') and w.get('ts'):
+            wpisy.append({'ts': str(w['ts']), 'kiedy': godzina_pl(w['ts']), 'kind': str(w.get('kind') or 'info')[:20],
+                          'text': str(w['text'])[:300], 'url': _safe_url(w.get('url'))})
+    st = data.get('statystyki') if isinstance(data.get('statystyki'), dict) else {}
+
+    def num(key):
+        try:
+            return max(0, int(st.get(key) or 0))
+        except (TypeError, ValueError):
+            return 0
+
+    liczby = []
+    for key, forms, suffix in (('goscie_tydzien', ('wizyta', 'wizyty', 'wizyt'), 'w tygodniu'),
+                               ('odslony_tydzien', ('odsłona', 'odsłony', 'odsłon'), 'roślin w tygodniu'),
+                               ('plantid_razem', ('rozpoznanie', 'rozpoznania', 'rozpoznań'), 'rośliny ze zdjęcia')):
+        n = num(key)
+        if n:
+            liczby.append({'n': f"{n:,}".replace(',', '\u00a0'), 'tekst': f"{odmiana(n, *forms)} {suffix}"})
+    top = [{'id': str(t['id']), 'nazwa': str(t.get('nazwa') or t['id'])}
+           for t in (st.get('najczesciej_czytane') or []) if isinstance(t, dict) and t.get('id')][:4]
+    return {
+        'zaktualizowano': str(data['zaktualizowano']), 'kiedy': godzina_pl(data['zaktualizowano']),
+        'pracuje': s.get('status') == 'pracuje' and bool(zadania), 'zadania': zadania,
+        'wpisy': wpisy[:6], 'liczby': liczby, 'najczesciej_czytane': top,
+    }

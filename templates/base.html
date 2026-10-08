@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rpg-awesome/0.2.0/css/rpg-awesome.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/wiki.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/zrodla.css') }}">
     <style>
         body { font-family: 'Crimson Text', serif; background-color: #f4f1ea; color: #2c2c2c; margin: 0; padding-top: 110px; }
 
@@ -459,6 +460,8 @@ document.addEventListener("DOMContentLoaded", () => {
 <script src="{{ url_for('static', filename='js/magic_lens.js') }}"></script>
 <!-- Dymki z Wikipedii: najechanie / kliknięcie w składnik lub pojęcie (data-wiki-scan, data-wiki-ingredient, data-wiki-term) -->
 <script src="{{ url_for('static', filename='js/wiki_tooltip.js') }}"></script>
+<!-- Zdjęcia „możliwych pomyłek” (Wikipedia / iNaturalist) i dymki źródeł przepisów (podgląd strony, czy działa) -->
+<script src="{{ url_for('static', filename='js/zrodla_dymki.js') }}"></script>
 <!-- Almanach: klikalne Koło Roku / Patron Roku / Żywioł / Wibracja (static/json/almanach.json) -->
 <script src="{{ url_for('static', filename='js/almanach.js') }}"></script>
 <!-- Pasek ciekawostek: losowe ciekawostki dokładane jedna po drugiej -->

@@ -43,11 +43,11 @@
         </div>
     </div>
 
-    <div class="row g-4" id="recipesGrid">
-        {% if results %}
+    {# Karty bez pelnego przepisu: grymuar pobiera /api/przepis/<nr>.json, wyszukiwarka /api/przepisnik.json #}
+    <div class="row g-4" id="recipesGrid" data-search-src="{{ url_for('api.api_przepisnik') }}">
+        {% if results %}{% filter kw_squash %}
             {% for recipe in results %}
-            <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch recipe-wrapper" data-origin="{{ 'web' if recipe.get('_z_sieci') else 'book' }}">
-                <div class="d-none search-data">{{ recipe | string | lower }}</div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch recipe-wrapper" data-origin="{{ 'web' if recipe.get('_z_sieci') else 'book' }}" data-nr="{{ recipe._nr }}">
                 <div class="recipe-card w-100">
                     <div style="display: flex; justify-content: space-between; align-items: start;">
                         {% set typ = recipe.get('typ') or '' %}
@@ -87,13 +87,13 @@
                         {% endif %}
                     </p>
 
-                    <button class="btn-details" data-recipe="{{ recipe | tojson | forceescape }}" onclick="openRecipeModal(this)">
+                    <button class="btn-details" data-src="{{ url_for('api.api_przepis', nr=recipe._nr) }}" onclick="openRecipeModal(this)">
                         Otwórz grymuar
                     </button>
                 </div>
             </div>
             {% endfor %}
-        {% endif %}
+        {% endfilter %}{% endif %}
     </div>
 </div>
 

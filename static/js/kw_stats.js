@@ -2,9 +2,10 @@
 // STATYSTYKI I KEEP-ALIVE (backend Kwiatownika na Render)
 // - liczy: odslony stron i roslin, otwierane rozdzialy rosliny, klikniecia "Rozpoznaj" (plant.id) i wyniki,
 //   otwierane przepisy, klikniete zrodla, wyszukiwania. Bez ciasteczek i bez identyfikatorow - tylko liczby.
-// - "Do Not Track" / Global Privacy Control w przegladarce = nic nie wysylamy (oprocz pingu budzacego serwer).
-// - keep-alive: darmowy serwer na Render usypia po 15 min ciszy, wiec gdy ktos uzywa Kwiatownika
-//   (strona widoczna, ruch w ostatnich 10 min), co 10 min pytamy /api/ping.
+// - "Do Not Track" / Global Privacy Control w przegladarce = nic nie wysylamy.
+// - zdarzenia ida przez sendBeacon (w tle, strona na nic nie czeka). Bez pingu przy wczytaniu strony: serwer
+//   budza zdarzenia i papirus (w tle, po wczytaniu), a na nogach trzyma go heartbeat Siedziby co 5 min.
+//   KwStats.ping() zostaje dla zgodnosci (reczne obudzenie serwera).
 // Adres serwera: <meta name="kw-backend" content="..."> (KW_BACKEND_URL przy budowaniu strony).
 // API: window.KwStats.track(rodzaj, klucz), KwStats.backend (adres), KwStats.ping().
 // ==========================================
@@ -12,12 +13,9 @@
     const meta = document.querySelector('meta[name="kw-backend"]');
     const BACKEND = meta && /^https?:\/\//.test(meta.content) ? meta.content.replace(/\/+$/, '') : '';
     const PRIVATE = navigator.doNotTrack === '1' || window.doNotTrack === '1' || navigator.globalPrivacyControl === true;
-    const PING_EVERY = 10 * 60 * 1000;
-    const ACTIVE_WINDOW = 10 * 60 * 1000;
     const queue = [];
     const sentOnce = new Set();
     let flushTimer = null;
-    let lastActivity = Date.now();
     let lastPing = 0;
 
     function flush() {
@@ -105,16 +103,6 @@
         const q = String(e.target.value || '').trim();
         if (q.length >= 2) track('search', q);
     }, true);
-
-    // --- keep-alive: tylko gdy ktos naprawde korzysta z Kwiatownika ---
-    ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(ev =>
-        window.addEventListener(ev, () => { lastActivity = Date.now(); }, { passive: true, capture: true }));
-    ping();                                              // budzi serwer od razu (papirus, liczniki)
-    setInterval(() => {
-        if (document.visibilityState !== 'visible') return;
-        if (Date.now() - lastActivity > ACTIVE_WINDOW) return;
-        if (Date.now() - lastPing >= PING_EVERY) ping();
-    }, 60 * 1000);
 
     document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') flush(); });
     window.addEventListener('pagehide', flush);
