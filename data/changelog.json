@@ -3,6 +3,53 @@
  "opis": "Kronika Siedziby Kwiatownika - pisze ja agent wdrozen (Siedziba).",
  "wpisy": [
   {
+   "data": "2026-10-09T12:16:32+02:00",
+   "tytul": "Nowa wiedza o 3 roślinach",
+   "opis": "Siedziba zebrała 94 sprawdzone informacje (źródła: niemieckie, angielskie, japońskie, chińskie). 41 informacji z sieci trafiło do właściwych rozdziałów i podrozdziałów stron roślin.",
+   "liczby": {
+    "informacje": 94,
+    "przepisy": 0,
+    "rosliny": 3,
+    "nowe_rosliny": 0,
+    "zdjecia": 0,
+    "rozmieszczone": 41
+   },
+   "rosliny": [
+    {
+     "id": "rumianek_pospolity",
+     "nazwa": "Rumianek pospolity",
+     "nowe": 41,
+     "jezyki": [
+      "de",
+      "en",
+      "ja",
+      "zh"
+     ]
+    },
+    {
+     "id": "mlecz_zwyczajny",
+     "nazwa": "Mlecz zwyczajny",
+     "nowe": 40,
+     "jezyki": [
+      "de",
+      "en",
+      "ja",
+      "zh"
+     ]
+    },
+    {
+     "id": "jastrzebiec_kosmaczek",
+     "nazwa": "Jastrzębiec kosmaczek",
+     "nowe": 13,
+     "jezyki": [
+      "de",
+      "en"
+     ]
+    }
+   ],
+   "przepisy": []
+  },
+  {
    "data": "2026-10-09T09:03:32+02:00",
    "tytul": "Nowa wiedza o 2 roślinach",
    "opis": "Siedziba zebrała 67 sprawdzonych informacji (źródła: niemieckie, angielskie, rosyjskie, chińskie).",

@@ -1,22 +1,72 @@
 {
  "wersja": 1,
  "opis": "Stan Siedziby Kwiatownika i statystyki strony - zapisuje agent wdrozen (Siedziba). Strona pokazuje go w papirusie bez pytania backendu.",
- "zaktualizowano": "2026-10-09T09:03:32+02:00",
+ "zaktualizowano": "2026-10-09T12:16:32+02:00",
  "siedziba": {
   "status": "pracuje",
   "zadania": [
    {
-    "opis": "zbiera wiedzę o roślinach: Głóg jednoszyjkowy",
-    "od": "2026-10-09T06:31:30.073913+00:00"
+    "opis": "zbiera wiedzę o roślinach: informacje 1-11 z 11",
+    "od": "2026-10-09T08:17:41.782054+00:00"
+   },
+   {
+    "opis": "zbiera wiedzę o roślinach: informacje 13-19 z 19",
+    "od": "2026-10-09T08:17:41.833498+00:00"
+   },
+   {
+    "opis": "tłumaczy przepisy na polski",
+    "od": "2026-10-09T09:31:26.142830+00:00"
+   },
+   {
+    "opis": "przegląda zagraniczne strony z przepisami",
+    "od": "2026-10-09T09:56:11.239253+00:00"
    }
   ],
   "info": {
    "rosliny": 87,
-   "informacje_zapisane": 697,
+   "informacje_zapisane": 879,
    "czeka_w_kolejce": 0
   }
  },
  "wpisy": [
+  {
+   "eid": "job:310",
+   "ts": "2026-10-09T09:47:24.128748+00:00",
+   "kind": "przepisy",
+   "text": "Znaleziono 12 nowych przepisów na zagranicznych stronach",
+   "url": null,
+   "plant_id": null
+  },
+  {
+   "eid": "job:305",
+   "ts": "2026-10-09T09:30:42.974565+00:00",
+   "kind": "przepisy",
+   "text": "Przetłumaczono 4 przepisów z zagranicznych stron",
+   "url": null,
+   "plant_id": null
+  },
+  {
+   "eid": "job:306",
+   "ts": "2026-10-09T09:20:04.926193+00:00",
+   "kind": "przepisy",
+   "text": "Znaleziono 3 nowych przepisów na zagranicznych stronach",
+   "url": null,
+   "plant_id": null
+  },
+  {
+   "eid": "job:290",
+   "ts": "2026-10-09T07:08:10.595362+00:00",
+   "kind": "wiedza",
+   "text": "Zebrano 108 sprawdzonych informacji o: Rokitnik zwyczajny, Chmiel zwyczajny, Głóg jednoszyjkowy, Macierzanka piaskowa – trafią na stronę przy najbliższej publikacji",
+   "url": null,
+   "plant_id": null
+  },
+  {
+   "eid": "run:38",
+   "ts": "2026-10-09T07:03:37.203688+00:00",
+   "kind": "wdrozenie",
+   "text": "Opublikowano nową wersję Kwiatownika: Nowa wiedza o 2 roślinach"
+  },
   {
    "eid": "run:33",
    "ts": "2026-10-08T19:33:00.508307+00:00",
@@ -36,32 +86,12 @@
    "text": "Zebrano 59 sprawdzonych informacji o: Indygowiec barwierski, Modrzejec kampechiański (Logwood), Marzanna barwierska, Poziomka pospolita – trafią na stronę przy najbliższej publikacji",
    "url": null,
    "plant_id": null
-  },
-  {
-   "eid": "job:271",
-   "ts": "2026-10-07T19:36:22.937828+00:00",
-   "kind": "przepisy",
-   "text": "Przetłumaczono 1 przepisów z zagranicznych stron",
-   "url": null,
-   "plant_id": null
-  },
-  {
-   "eid": "run:4",
-   "ts": "2026-10-07T18:49:28.767981+00:00",
-   "kind": "audyt",
-   "text": "Audyt bazy wiedzy: ocena 44/100 – Siedziba wie, czego szukać dalej"
-  },
-  {
-   "eid": "run:2",
-   "ts": "2026-10-07T18:47:29.317151+00:00",
-   "kind": "audyt",
-   "text": "Audyt bazy wiedzy: ocena 43/100 – Siedziba wie, czego szukać dalej"
   }
  ],
  "statystyki": {
   "okres_dni": 7,
-  "goscie_tydzien": 4,
-  "odslony_tydzien": 16,
+  "goscie_tydzien": 5,
+  "odslony_tydzien": 17,
   "plantid_tydzien": 0,
   "plantid_razem": 0,
   "najczesciej_czytane": [
@@ -81,8 +111,8 @@
     "n": 3
    },
    {
-    "id": "rumianek_pospolity",
-    "nazwa": "Rumianek pospolity",
+    "id": "tasznik_pospolity",
+    "nazwa": "Tasznik pospolity",
     "n": 1
    }
   ]
