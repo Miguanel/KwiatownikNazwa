@@ -99,7 +99,7 @@
             <ol class="kw-chronicle" id="kwPapyrusLog">
                 {% for w in kronika %}
                 <li class="kw-chronicle-entry">
-                    <time datetime="{{ w.data }}">{{ w.kiedy }}</time>
+                    <time datetime="{{ w.data }}">{{ w.kiedy }}{% if w.aktualizacje and w.aktualizacje > 1 %}<span class="kw-chronicle-times" title="publikacje tego dnia{% if w.godziny %}: {{ w.godziny | join(', ') }}{% endif %}"> · {{ w.aktualizacje }} {{ 'aktualizacje' if w.aktualizacje % 10 in (2, 3, 4) and w.aktualizacje % 100 not in (12, 13, 14) else 'aktualizacji' }}{% if w.godziny %} ({{ w.godziny | join(', ') }}){% endif %}</span>{% endif %}</time>
                     <h4>{{ w.tytul }}</h4>
                     {% if w.opis %}<p>{{ w.opis }}</p>{% endif %}
                     {% if w.liczby_txt %}<p class="kw-chronicle-nums">{% for t in w.liczby_txt %}<span>{{ t }}</span>{% endfor %}</p>{% endif %}

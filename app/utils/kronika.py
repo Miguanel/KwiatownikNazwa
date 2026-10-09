@@ -53,6 +53,75 @@ def _root():
     return os.path.abspath(os.path.join(current_app.root_path, '..'))
 
 
+LICZBY = ('informacje', 'przepisy', 'nowe_rosliny', 'zdjecia', 'rozmieszczone')
+
+
+def _opis_dnia(liczby, rosliny):
+    """Tytul i opis wpisu po polaczeniu kilku publikacji z jednego dnia (te same zwroty co agent wdrozen)."""
+    n_pl, n_pt, n_rc, n_mv = len(rosliny), liczby.get('informacje', 0), liczby.get('przepisy', 0), \
+        liczby.get('rozmieszczone', 0)
+    bits = []
+    if n_pl and n_pt:
+        bits.append(f"nowa wiedza o {n_pl} {odmiana(n_pl, 'roślinie', 'roślinach', 'roślinach')}")
+    if n_rc:
+        bits.append(f"{n_rc} {odmiana(n_rc, 'nowy przepis', 'nowe przepisy', 'nowych przepisów')}")
+    if n_mv and not bits:
+        bits.append('wiedza z sieci rozłożona po rozdziałach')
+    if liczby.get('zdjecia') and not bits:
+        bits.append('nowe zdjęcia roślin')
+    tytul = ' i '.join(bits) or 'Porządki w danych Kwiatownika'
+    jez = sorted({j for r in rosliny for j in r.get('jezyki') or []})
+    opis = []
+    if n_pt:
+        opis.append(f"Siedziba zebrała {n_pt} {odmiana(n_pt, 'sprawdzoną informację', 'sprawdzone informacje', 'sprawdzonych informacji')}"
+                    + (f" (źródła: {', '.join(JEZYKI.get(j, j) for j in jez[:5])})" if jez else '') + '.')
+    if liczby.get('nowe_rosliny'):
+        opis.append(f"Nowe rośliny w zielniku: {liczby['nowe_rosliny']}.")
+    if n_mv:
+        opis.append(f"{n_mv} {odmiana(n_mv, 'informacja z sieci trafiła', 'informacje z sieci trafiły', 'informacji z sieci trafiło')}"
+                    ' do właściwych rozdziałów i podrozdziałów stron roślin.')
+    if liczby.get('zdjecia'):
+        opis.append(f"Dodano {liczby['zdjecia']} {odmiana(liczby['zdjecia'], 'zdjęcie', 'zdjęcia', 'zdjęć')} z Wikimedia Commons.")
+    return tytul[:1].upper() + tytul[1:], ' '.join(opis)
+
+
+def polacz_dni(wpisy):
+    """Kilka publikacji Siedziby tego samego dnia -> jeden wpis kroniki: liczby sie sumuja, ta sama roslina
+    raz (informacje zsumowane, jezyki zrodel polaczone), przepisy bez powtorzen, godziny publikacji zapamietane.
+    Agent wdrozen laczy juz przy zapisie; to zabezpiecza starsze wpisy w data/changelog.json."""
+    dni = {}
+    for w in wpisy:
+        dni.setdefault(w['data'][:10], []).append(w)
+    out = []
+    for grupa in dni.values():
+        if len(grupa) == 1:
+            out.append(grupa[0])
+            continue
+        grupa = sorted(grupa, key=lambda w: w['data'], reverse=True)
+        liczby = {k: 0 for k in LICZBY}
+        rosliny, przepisy = {}, []
+        for w in grupa:
+            for k in LICZBY:
+                try:
+                    liczby[k] += int(w['liczby'].get(k) or 0)
+                except (TypeError, ValueError):
+                    pass
+            for r in w['rosliny']:
+                x = rosliny.setdefault(r['id'], {'id': r['id'], 'nazwa': r.get('nazwa') or r['id'], 'nowe': 0, 'jezyki': []})
+                x['nowe'] += int(r.get('nowe') or 0)
+                x['jezyki'] = sorted(set(x['jezyki']) | set(r.get('jezyki') or []))
+            for p in w['przepisy']:
+                if all(q.get('tytul') != p.get('tytul') for q in przepisy):
+                    przepisy.append(p)
+        rosliny = sorted(rosliny.values(), key=lambda r: -r['nowe'])
+        liczby['rosliny'] = len(rosliny)
+        tytul, opis = _opis_dnia(liczby, rosliny)
+        godziny = sorted({g for w in grupa for g in (w.get('godziny') or [w['data'][11:16]]) if g})
+        out.append(dict(grupa[0], tytul=tytul, opis=opis, liczby=liczby, rosliny=rosliny[:8], przepisy=przepisy[:4],
+                        aktualizacje=sum(w.get('aktualizacje') or 1 for w in grupa), godziny=godziny))
+    return out
+
+
 def wpisy_z_changelogu(root):
     data = _read(os.path.join(root, 'data', 'changelog.json'))
     rows = data.get('wpisy') if isinstance(data, dict) else data if isinstance(data, list) else []
@@ -67,8 +136,10 @@ def wpisy_z_changelogu(root):
             'rosliny': [r for r in (w.get('rosliny') or []) if isinstance(r, dict) and r.get('id')][:8],
             'przepisy': [p for p in (w.get('przepisy') or []) if isinstance(p, dict) and p.get('tytul')][:4],
             'zrodlo': 'siedziba',
+            'aktualizacje': int(w.get('aktualizacje') or 1) if str(w.get('aktualizacje') or 1).isdigit() else 1,
+            'godziny': [str(g)[:5] for g in (w.get('godziny') or []) if isinstance(g, str)][:12],
         })
-    return out
+    return polacz_dni(out)
 
 
 def wpisy_z_plikow(root):
