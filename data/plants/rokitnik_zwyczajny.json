@@ -137,7 +137,7 @@
     "Nasiona": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Hippophae_rhamnoides_kz07.jpg/960px-Hippophae_rhamnoides_kz07.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-08",
+    "zaktualizowano": "2026-10-09",
     "w_url": true,
     "zdjecia": [
       {
@@ -189,9 +189,9 @@
   },
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-10-08",
-    "uporzadkowano": "2026-10-08",
-    "uklad": "deterministyczny: pominiete informacje: [1, 2, 8, 10, 15, 16, 19, 24, 25]",
+    "zaktualizowano": "2026-10-09",
+    "uporzadkowano": "2026-10-09",
+    "uklad": "deterministyczny: pominiete informacje: [1, 2, 4, 5, 7, 8, 9, 10, 13, 14]",
     "zrodla": [
       {
         "nazwa": "Wikipedia (pl): Rokitnik zwyczajny",
@@ -222,18 +222,39 @@
         "nr": 4
       },
       {
+        "nazwa": "cyberleninka.ru",
+        "url": "https://cyberleninka.ru/article/n/zagotovka-listiev-oblepihi-krushinovidnoy-kultiviruemoy-v-usloviyah-botanicheskogo-sada-voronezhskogo-gosuniversiteta",
+        "jezyk": "ru",
+        "typ": "strona",
+        "nr": 5
+      },
+      {
+        "nazwa": "finess.jp",
+        "url": "https://finess.jp/products/hojunsaji/?srsltid=AU7gw4XfkEfONLudkHffselpfK6Kvy7sw7BvzYhPXJv_gmV9h_l_IMd2",
+        "jezyk": "ja",
+        "typ": "strona",
+        "nr": 6
+      },
+      {
         "nazwa": "finess.jp",
         "url": "https://finess.jp/products/sajina-set/?srsltid=AU7gw4WKJt_MUGeLGjLC1GqlFm_SGuuGVCPl5qRYR6qOZmUfPCYRx7nr",
         "jezyk": "ja",
         "typ": "strona",
-        "nr": 5
+        "nr": 7
+      },
+      {
+        "nazwa": "www.herboristerieduvalmont.com",
+        "url": "https://www.herboristerieduvalmont.com/mes-remedes-naturels/de/10990-sanddorn-vorteile-verwendung-und-kontraindikationen",
+        "jezyk": "de-DE",
+        "typ": "strona",
+        "nr": 8
       },
       {
         "nazwa": "www.webmd.com",
         "url": "https://www.webmd.com/vitamins-and-supplements/sea-buckthorn-uses-and-risks",
         "jezyk": "en",
         "typ": "strona",
-        "nr": 6
+        "nr": 9
       }
     ],
     "sekcje": [
@@ -243,6 +264,36 @@
         "podsumowanie": null,
         "podsumowanie_zrodla": [],
         "punkty": [
+          {
+            "tekst": "Krzew dorasta do wysokości od dwóch do czterech metrów.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1047"
+            ]
+          },
+          {
+            "tekst": "Pień rokitnika jest zazwyczaj cienki i krzywy, osiągając maksymalnie do 30 cm średnicy. Jego ciemnobrunatna, jasna lub niemal czarna korowina jest podłużnie pękająca i łuszczy się płatami.",
+            "czesc": "kora",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1026"
+            ]
+          },
+          {
+            "tekst": "Kora rokitnika jest szorstka i ciemna, niemal czarna.",
+            "czesc": "kora",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1048"
+            ]
+          },
           {
             "tekst": "System korzeniowy rokitnika pozwala mu przetrwać susze dzięki pojedynczym korzeniom sięgającym bardzo głęboko. Niemniej jednak większość masy jego korzeni leży stosunkowo płytko, bo na głębokości do pół metra.",
             "czesc": "korzeń",
@@ -274,6 +325,26 @@
             ]
           },
           {
+            "tekst": "Kwiaty męskie rokitnika rozwijają się w szyszkowatych pąkach tworzonych przez gęste kłosy zawierające po 4-8 kwiatów, natomiast kwiaty słupkowe występują skupione po 2-5 na krótkich gronach.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1029"
+            ]
+          },
+          {
+            "tekst": "Blaszka liściowa rokitnika jest wąskolancetowata do jajowatej, osiąga do 5-9 cm długości oraz do 1,3 cm szerokości, jest całobrzega, a jej brzegi są często podwinięte.",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1028"
+            ]
+          },
+          {
             "tekst": "Młode pędy oraz liście rokitnika pokryte są drobnymi, srebrzystymi łuskami. W trakcie lata górna strona liści ciemnieje i staje się szarozielona, ponieważ łuski te stopniowo się ścierają.",
             "czesc": "liście",
             "zrodla": [
@@ -291,6 +362,56 @@
             ],
             "fakty": [
               "s996"
+            ]
+          },
+          {
+            "tekst": "Liście rokitnika są wąskie, lancetowate lub lekko zaokrąglone w kształcie.",
+            "czesc": "liście",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1049"
+            ]
+          },
+          {
+            "tekst": "Górna powierzchnia blaszki liściowej rokitnika jest skórzasta i lśniąca, natomiast dolna strona charakteryzuje się gęstym, białofilcowatym owłosieniem.",
+            "czesc": "liście",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s1069"
+            ]
+          },
+          {
+            "tekst": "Nasiona rokitnika są jajowate do eliptycznych, osiągają od 4 do 7 mm długości i mają ciemnobrązową do czarnej, błyszczącą powierzchnię.",
+            "czesc": "nasiona",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1031"
+            ]
+          },
+          {
+            "tekst": "Owoce rokitnika osiągają od 6 do 10 mm długości, są gładkie, mają barwę od pomarańczowej do czerwonej, a ich masa wynosi od 0,5 do 0,9 g.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1030"
+            ]
+          },
+          {
+            "tekst": "Na szczycie pędów tegorocznych oraz z pąków bocznych wyrastają ciernie o długości od 2 do 7 cm, na których często rozwijają się pąki dające początek cierniam drugiego rzędu.",
+            "czesc": "ziele",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1027"
             ]
           }
         ]
@@ -310,6 +431,36 @@
             "fakty": [
               "s979"
             ]
+          },
+          {
+            "tekst": "Rokitnik jest rodzimym gatunkiem dla chłodno-umiarkowanych regionów Eurazji, występującym na szerokościach geograficznych od 27° do 69°N.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1041"
+            ]
+          },
+          {
+            "tekst": "Rokitnik pochodzi z obszarów umiarkowanych i chłodno‑umiarkowanych Azji oraz Europy.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1046"
+            ]
+          },
+          {
+            "tekst": "Roslina pochodzi z terenow podmoklych Europy i pólnocno-wschodnich stanowisk USA. Od wiekow rosnie obficie w poblizu brzegow rzek, w zywoplotach oraz podmoklych lasach.",
+            "czesc": null,
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s1053"
+            ]
           }
         ]
       },
@@ -323,10 +474,30 @@
             "tekst": "Liście, kwiaty, nasiona i jagody rokitnika są wykorzystywane do przygotowywania herbatek, olejów i koncentratów o różnorodnych zastosowaniach zdrowotnych.",
             "czesc": null,
             "zrodla": [
-              6
+              9
             ],
             "fakty": [
               "s997"
+            ]
+          },
+          {
+            "tekst": "W ziołolecznictwie i medycynie tradycyjnej wykorzystuje sie przede wszystkim kore rosliny. Pozyskiwana kora musi byc suszona przez co najmniej rok, co pozwala na usuniecie jej pierwotnych toksycznych skladnikow.",
+            "czesc": "kora",
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s1054"
+            ]
+          },
+          {
+            "tekst": "Korzenie rokitnika w wieku od jednego do dwóch lat wchodzą w symbiozę z bakterią Frankia, co umożliwia wiązanie azotu i wzbogacenie gleby w azot.",
+            "czesc": "korzeń",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1051"
             ]
           },
           {
@@ -338,6 +509,16 @@
             "fakty": [
               "s985"
             ]
+          },
+          {
+            "tekst": "Skórka owoców rokitnika obfituje w polifenole. Przetwarzanie całych owoców wraz z ich skórką pozwala uzyskać sok o znacznie intensywniejszej i głębszej barwie w porównaniu do standardowego soku tłoczonego.",
+            "czesc": "owoce",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1062"
+            ]
           }
         ]
       },
@@ -348,6 +529,26 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
+            "tekst": "Kora rosliny zawiera antrachinony odpowiedzialne za dzialanie przeczyszczajace, flawonoidy o wlasciwosciach antyoksydacyjnych oraz taniny wykazujace dzialanie przeciwzapalne.",
+            "czesc": "kora",
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s1055"
+            ]
+          },
+          {
+            "tekst": "Miąższ owoców rokitnika charakteryzuje się wyjątkowo wysoką zawartością witaminy C, wynoszącą od 200 do 900 mg na 100 g w zależności od odmiany. Roślina ta zawiera również witaminę B12, która w świecie roślinnym występuje niezwykle rzadko i powstaje dzięki symbiotycznym bakteriom.",
+            "czesc": "owoce",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1042"
+            ]
+          },
+          {
             "tekst": "Za charakterystyczny, kwaśny smak owoców rokitnika odpowiada wysokie stężenie kwasu jabłkowego. Z kolei ich cierpkość jest wynikiem obecności kwasu quinowego.",
             "czesc": "owoce",
             "zrodla": [
@@ -355,6 +556,154 @@
             ],
             "fakty": [
               "s983"
+            ]
+          },
+          {
+            "tekst": "Owoce rokitnika charakteryzują się bardzo wysoką zawartością witaminy C, wynoszącą około 400 mg na 100 gramów.",
+            "czesc": "owoce",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1032"
+            ]
+          },
+          {
+            "tekst": "W owocach rokitnika występują również wysokie stężenia witaminy E i witaminy K oraz obecna jest witamina B12.",
+            "czesc": "owoce",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1033"
+            ]
+          },
+          {
+            "tekst": "Głównym karotenoidem w owocach jest prowitamina A w postaci beta-karotenu, a obok niej występują także zeaksantyna i likopen.",
+            "czesc": "owoce",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1034"
+            ]
+          },
+          {
+            "tekst": "Najbardziej powszechnymi minerałami w owocach rokitnika są potas, mangan i miedź.",
+            "czesc": "owoce",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1035"
+            ]
+          },
+          {
+            "tekst": "Głównymi cukrami w owocach rokitnika są fruktoza i glukoza, a głównym alkoholem cukrowym jest L-quebrachitol.",
+            "czesc": "owoce",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1036"
+            ]
+          },
+          {
+            "tekst": "Rośliny z rodzaju Hippophae gromadzą olej zarówno w miąższu, jak i w nasionach owoców, przy czym zawartość oleju w nasionach wynosi 11% świeżej masy.",
+            "czesc": "owoce",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1037"
+            ]
+          },
+          {
+            "tekst": "Owoce rokitnika są bogate w fitosterole, wśród których beta-sitosterol stanowi główny związek sterolowy.",
+            "czesc": "owoce",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1038"
+            ]
+          },
+          {
+            "tekst": "Wśród związków fenolowych w owocach dominują flawonole, podczas gdy kwasy fenolowe i flawane-3-ole stanowią mniejsze komponenty.",
+            "czesc": "owoce",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1039"
+            ]
+          },
+          {
+            "tekst": "Jedno owoce waży od 270 do 480 mg i zawiera witaminy C, E, B12, karotenoidy, flawonoidy oraz kwasy tłuszczowe.",
+            "czesc": "owoce",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1050"
+            ]
+          },
+          {
+            "tekst": "Owoce rokitnika kryją w sobie około 200 różnych substancji odżywczych, wśród których znajdują się kluczowe dla zdrowia witaminy A, C i E, żelazo oraz zestaw 18 aminokwasów, w tym 9 aminokwasów egzogennych.",
+            "czesc": "owoce",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1061"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Tradycyjnie odwar z kory stosowano jako naturalny srodek na zaparcia, poniewaz stymuluje on pasaz jelitowy i wspomaga trawienie. Wykazuje rowniez dzialanie choleretyczne, pobudzajac produkcje zolci.",
+            "czesc": "kora",
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s1056"
+            ]
+          },
+          {
+            "tekst": "Suche liście rokitnika są wykorzystywane jako surowiec do produkcji zarejestrowanego leku o działaniu przeciwwirusowym o nazwie „Гипорамин” (Hiporamin), powstającego na bazie suchego ekstraktu.",
+            "czesc": "liście",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s1067"
+            ]
+          },
+          {
+            "tekst": "Tradycyjnie świeże, dojrzałe owoce rokitnika oraz uzyskiwane z nich soki i ekstrakty stosowano ze względu na dużą zawartość witaminy C w stanach zwiększonej podatności na przeziębienia, infekcjach gorączkowych oraz w okresie rekonwalescencji.",
+            "czesc": "owoce",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1044"
+            ]
+          },
+          {
+            "tekst": "Obficie występujący w owocach rokitnika kwas jabłkowy nie tylko nadaje im silnie kwaśny smak, lecz także aktywnie wspomaga organizm w przyswajaniu żelaza.",
+            "czesc": "owoce",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1063"
             ]
           }
         ]
@@ -392,6 +741,16 @@
             "fakty": [
               "s991"
             ]
+          },
+          {
+            "tekst": "Pozostałości po wyciskaniu soków z owoców rokitnika mogą być wykorzystywane do pozyskiwania naturalnego barwnika spożywczego o żółtej lub pomarańczowej barwie.",
+            "czesc": "owoce",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1040"
+            ]
           }
         ]
       },
@@ -405,7 +764,7 @@
             "tekst": "Ekstrakt z fermentowanych nasion rokitnika, bogaty w aminokwasy, naśladuje naturalne czynniki nawilżające skóry, zapewniając dobrą przyczepność i nawilżenie.",
             "czesc": "nasiona",
             "zrodla": [
-              5
+              7
             ],
             "fakty": [
               "s1002"
@@ -415,7 +774,7 @@
             "tekst": "Olej z owoców rokitnika tworzy na skórze warstwę ochronną, zapobiegając utracie wody i wysuszeniu, a jednocześnie dostarcza dużo β‑karotenu i karotenoidów.",
             "czesc": "owoce",
             "zrodla": [
-              5
+              7
             ],
             "fakty": [
               "s1003"
@@ -425,7 +784,7 @@
             "tekst": "Olej rokitnikowy zawiera witaminę E, kwasy omega‑3 i sterole roślinne, które wzmacniają barierę skóry, łagodzą podrażnienia i wyrównują strukturę naskórka.",
             "czesc": "owoce",
             "zrodla": [
-              5
+              7
             ],
             "fakty": [
               "s1004"
@@ -480,6 +839,16 @@
             ]
           },
           {
+            "tekst": "W przeszlosci kora rosliny byla stosowana zewnetrznie w chorobach skory, w tym przy swierzbie. Stosowano ja w formie odwarow lub okladow na zmienione chorobowo miejsca.",
+            "czesc": "kora",
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s1058"
+            ]
+          },
+          {
             "tekst": "Z owoców i pestek rokitnika wytłacza się olej, który tradycyjnie w Europie Wschodniej wykorzystywano gojenia oparzeń słonecznych oraz uszkodzeń skóry wywołanych promieniowaniem rentgenowskim.",
             "czesc": "owoce",
             "zrodla": [
@@ -519,17 +888,27 @@
             "tekst": "Rokitnik może działać jako rozrzedzacz krwi, zwiększając ryzyko krwawień.",
             "czesc": null,
             "zrodla": [
-              6
+              9
             ],
             "fakty": [
               "s998"
             ]
           },
           {
+            "tekst": "Swieza kora lub kora suszona krocej niz rok jest bardzo toksyczna i moze wywolywac wymioty oraz silna biegunke. Preparatow z tej rosliny nie powinny stosowac kobiety w ciazy, kobiety karmiace piersia, dzieci ponizej 12 roku zycia oraz osoby cierpiace na przewlekle zapalne choroby jelit.",
+            "czesc": "kora",
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s1057"
+            ]
+          },
+          {
             "tekst": "Stosowanie preparatów z owoców rokitnika na skórze może wywołać wysypkę.",
             "czesc": "owoce",
             "zrodla": [
-              6
+              9
             ],
             "fakty": [
               "s999"
@@ -553,6 +932,16 @@
         "podsumowanie": null,
         "podsumowanie_zrodla": [],
         "punkty": [
+          {
+            "tekst": "Uprawa rokitnika wiąże się ze stosunkowo wysokimi kosztami pozyskiwania surowca, co wynika z trudnych warunków podczas zbioru oraz długiego okresu oczekiwania na pierwsze owoce, trwającego od sześciu do ośmiu lat.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1043"
+            ]
+          },
           {
             "tekst": "Liście rokitnika oraz pozostałości owoców po wytłoczeniu oleju bywają wykorzystywane jako wartościowa pasza dla zwierząt hodowlanych, w tym drobiu. Podawanie takiej paszy przyczynia się do znacznego przyrostu masy u zwierząt.",
             "czesc": null,
@@ -610,33 +999,92 @@
             "fakty": [
               "s982"
             ]
+          },
+          {
+            "tekst": "W sredniowieczu wedlarze i wytworcy węgla drzewnego odkryli, ze drewno tej rosliny przetworzone na węgiel drzewny pali sie wyjatkowo wydajnie, dzieki czemu wykorzystywano je do produkcji prochu strzelniczego.",
+            "czesc": "kora",
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s1059"
+            ]
+          },
+          {
+            "tekst": "Rokitnik bywa lokalnie nazywany bażancią jagodą lub „Fasanenbeer” ze względu na to, że jego owoce stanowią istotne źródło pokarmu dla bażantów i innych ptaków w zimowej porze.",
+            "czesc": "owoce",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1045"
+            ]
           }
         ]
       }
     ],
     "czesci": {
+      "kora": [
+        "s1026",
+        "s1048",
+        "s1054",
+        "s1055",
+        "s1056",
+        "s1058",
+        "s1057",
+        "s1059"
+      ],
       "korzeń": [
         "s976",
         "s992",
         "s987",
+        "s1051",
         "s975"
       ],
+      "kwiaty": [
+        "s1029"
+      ],
       "liście": [
+        "s1028",
         "s986",
         "s996",
-        "s985"
+        "s1049",
+        "s1069",
+        "s985",
+        "s1067"
+      ],
+      "nasiona": [
+        "s1031",
+        "s1002",
+        "s974"
       ],
       "owoce": [
+        "s1030",
+        "s1062",
+        "s1042",
         "s983",
+        "s1032",
+        "s1033",
+        "s1034",
+        "s1035",
+        "s1036",
+        "s1037",
+        "s1038",
+        "s1039",
+        "s1050",
+        "s1061",
+        "s1044",
+        "s1063",
         "s995",
+        "s1040",
         "s1003",
         "s1004",
         "s989",
-        "s999"
+        "s999",
+        "s1045"
       ],
-      "nasiona": [
-        "s1002",
-        "s974"
+      "ziele": [
+        "s1027"
       ],
       "sok": [
         "s990"
@@ -950,13 +1398,503 @@
           "nazwa": "finess.jp",
           "url": "https://finess.jp/products/sajina-set/?srsltid=AU7gw4WKJt_MUGeLGjLC1GqlFm_SGuuGVCPl5qRYR6qOZmUfPCYRx7nr"
         }
+      },
+      {
+        "id": "s1026",
+        "sekcja": "opis",
+        "czesc": "kora",
+        "tekst": "Pień rokitnika jest zazwyczaj cienki i krzywy, osiągając maksymalnie do 30 cm średnicy. Jego ciemnobrunatna, jasna lub niemal czarna korowina jest podłużnie pękająca i łuszczy się płatami.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Rokitnik zwyczajny",
+          "url": "https://pl.wikipedia.org/wiki/Rokitnik_zwyczajny"
+        }
+      },
+      {
+        "id": "s1027",
+        "sekcja": "opis",
+        "czesc": "ziele",
+        "tekst": "Na szczycie pędów tegorocznych oraz z pąków bocznych wyrastają ciernie o długości od 2 do 7 cm, na których często rozwijają się pąki dające początek cierniam drugiego rzędu.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Rokitnik zwyczajny",
+          "url": "https://pl.wikipedia.org/wiki/Rokitnik_zwyczajny"
+        }
+      },
+      {
+        "id": "s1028",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Blaszka liściowa rokitnika jest wąskolancetowata do jajowatej, osiąga do 5-9 cm długości oraz do 1,3 cm szerokości, jest całobrzega, a jej brzegi są często podwinięte.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Rokitnik zwyczajny",
+          "url": "https://pl.wikipedia.org/wiki/Rokitnik_zwyczajny"
+        }
+      },
+      {
+        "id": "s1029",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Kwiaty męskie rokitnika rozwijają się w szyszkowatych pąkach tworzonych przez gęste kłosy zawierające po 4-8 kwiatów, natomiast kwiaty słupkowe występują skupione po 2-5 na krótkich gronach.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Rokitnik zwyczajny",
+          "url": "https://pl.wikipedia.org/wiki/Rokitnik_zwyczajny"
+        }
+      },
+      {
+        "id": "s1030",
+        "sekcja": "opis",
+        "czesc": "owoce",
+        "tekst": "Owoce rokitnika osiągają od 6 do 10 mm długości, są gładkie, mają barwę od pomarańczowej do czerwonej, a ich masa wynosi od 0,5 do 0,9 g.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Rokitnik zwyczajny",
+          "url": "https://pl.wikipedia.org/wiki/Rokitnik_zwyczajny"
+        }
+      },
+      {
+        "id": "s1031",
+        "sekcja": "opis",
+        "czesc": "nasiona",
+        "tekst": "Nasiona rokitnika są jajowate do eliptycznych, osiągają od 4 do 7 mm długości i mają ciemnobrązową do czarnej, błyszczącą powierzchnię.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Rokitnik zwyczajny",
+          "url": "https://pl.wikipedia.org/wiki/Rokitnik_zwyczajny"
+        }
+      },
+      {
+        "id": "s1032",
+        "sekcja": "sklad",
+        "czesc": "owoce",
+        "tekst": "Owoce rokitnika charakteryzują się bardzo wysoką zawartością witaminy C, wynoszącą około 400 mg na 100 gramów.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sea buckthorn",
+          "url": "https://en.wikipedia.org/wiki/Sea_buckthorn"
+        }
+      },
+      {
+        "id": "s1033",
+        "sekcja": "sklad",
+        "czesc": "owoce",
+        "tekst": "W owocach rokitnika występują również wysokie stężenia witaminy E i witaminy K oraz obecna jest witamina B12.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sea buckthorn",
+          "url": "https://en.wikipedia.org/wiki/Sea_buckthorn"
+        }
+      },
+      {
+        "id": "s1034",
+        "sekcja": "sklad",
+        "czesc": "owoce",
+        "tekst": "Głównym karotenoidem w owocach jest prowitamina A w postaci beta-karotenu, a obok niej występują także zeaksantyna i likopen.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sea buckthorn",
+          "url": "https://en.wikipedia.org/wiki/Sea_buckthorn"
+        }
+      },
+      {
+        "id": "s1035",
+        "sekcja": "sklad",
+        "czesc": "owoce",
+        "tekst": "Najbardziej powszechnymi minerałami w owocach rokitnika są potas, mangan i miedź.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sea buckthorn",
+          "url": "https://en.wikipedia.org/wiki/Sea_buckthorn"
+        }
+      },
+      {
+        "id": "s1036",
+        "sekcja": "sklad",
+        "czesc": "owoce",
+        "tekst": "Głównymi cukrami w owocach rokitnika są fruktoza i glukoza, a głównym alkoholem cukrowym jest L-quebrachitol.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sea buckthorn",
+          "url": "https://en.wikipedia.org/wiki/Sea_buckthorn"
+        }
+      },
+      {
+        "id": "s1037",
+        "sekcja": "sklad",
+        "czesc": "owoce",
+        "tekst": "Rośliny z rodzaju Hippophae gromadzą olej zarówno w miąższu, jak i w nasionach owoców, przy czym zawartość oleju w nasionach wynosi 11% świeżej masy.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sea buckthorn",
+          "url": "https://en.wikipedia.org/wiki/Sea_buckthorn"
+        }
+      },
+      {
+        "id": "s1038",
+        "sekcja": "sklad",
+        "czesc": "owoce",
+        "tekst": "Owoce rokitnika są bogate w fitosterole, wśród których beta-sitosterol stanowi główny związek sterolowy.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sea buckthorn",
+          "url": "https://en.wikipedia.org/wiki/Sea_buckthorn"
+        }
+      },
+      {
+        "id": "s1039",
+        "sekcja": "sklad",
+        "czesc": "owoce",
+        "tekst": "Wśród związków fenolowych w owocach dominują flawonole, podczas gdy kwasy fenolowe i flawane-3-ole stanowią mniejsze komponenty.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sea buckthorn",
+          "url": "https://en.wikipedia.org/wiki/Sea_buckthorn"
+        }
+      },
+      {
+        "id": "s1040",
+        "sekcja": "barwienie",
+        "czesc": "owoce",
+        "tekst": "Pozostałości po wyciskaniu soków z owoców rokitnika mogą być wykorzystywane do pozyskiwania naturalnego barwnika spożywczego o żółtej lub pomarańczowej barwie.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sea buckthorn",
+          "url": "https://en.wikipedia.org/wiki/Sea_buckthorn"
+        }
+      },
+      {
+        "id": "s1041",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Rokitnik jest rodzimym gatunkiem dla chłodno-umiarkowanych regionów Eurazji, występującym na szerokościach geograficznych od 27° do 69°N.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sea buckthorn",
+          "url": "https://en.wikipedia.org/wiki/Sea_buckthorn"
+        }
+      },
+      {
+        "id": "s1042",
+        "sekcja": "sklad",
+        "czesc": "owoce",
+        "tekst": "Miąższ owoców rokitnika charakteryzuje się wyjątkowo wysoką zawartością witaminy C, wynoszącą od 200 do 900 mg na 100 g w zależności od odmiany. Roślina ta zawiera również witaminę B12, która w świecie roślinnym występuje niezwykle rzadko i powstaje dzięki symbiotycznym bakteriom.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Sanddorn",
+          "url": "https://de.wikipedia.org/wiki/Sanddorn"
+        }
+      },
+      {
+        "id": "s1043",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "Uprawa rokitnika wiąże się ze stosunkowo wysokimi kosztami pozyskiwania surowca, co wynika z trudnych warunków podczas zbioru oraz długiego okresu oczekiwania na pierwsze owoce, trwającego od sześciu do ośmiu lat.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Sanddorn",
+          "url": "https://de.wikipedia.org/wiki/Sanddorn"
+        }
+      },
+      {
+        "id": "s1044",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "owoce",
+        "tekst": "Tradycyjnie świeże, dojrzałe owoce rokitnika oraz uzyskiwane z nich soki i ekstrakty stosowano ze względu na dużą zawartość witaminy C w stanach zwiększonej podatności na przeziębienia, infekcjach gorączkowych oraz w okresie rekonwalescencji.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Sanddorn",
+          "url": "https://de.wikipedia.org/wiki/Sanddorn"
+        }
+      },
+      {
+        "id": "s1045",
+        "sekcja": "ciekawostki",
+        "czesc": "owoce",
+        "tekst": "Rokitnik bywa lokalnie nazywany bażancią jagodą lub „Fasanenbeer” ze względu na to, że jego owoce stanowią istotne źródło pokarmu dla bażantów i innych ptaków w zimowej porze.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Sanddorn",
+          "url": "https://de.wikipedia.org/wiki/Sanddorn"
+        }
+      },
+      {
+        "id": "s1046",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Rokitnik pochodzi z obszarów umiarkowanych i chłodno‑umiarkowanych Azji oraz Europy.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 沙棘",
+          "url": "https://zh.wikipedia.org/wiki/%E6%B2%99%E6%A3%98"
+        }
+      },
+      {
+        "id": "s1047",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Krzew dorasta do wysokości od dwóch do czterech metrów.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 沙棘",
+          "url": "https://zh.wikipedia.org/wiki/%E6%B2%99%E6%A3%98"
+        }
+      },
+      {
+        "id": "s1048",
+        "sekcja": "opis",
+        "czesc": "kora",
+        "tekst": "Kora rokitnika jest szorstka i ciemna, niemal czarna.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 沙棘",
+          "url": "https://zh.wikipedia.org/wiki/%E6%B2%99%E6%A3%98"
+        }
+      },
+      {
+        "id": "s1049",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Liście rokitnika są wąskie, lancetowate lub lekko zaokrąglone w kształcie.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 沙棘",
+          "url": "https://zh.wikipedia.org/wiki/%E6%B2%99%E6%A3%98"
+        }
+      },
+      {
+        "id": "s1050",
+        "sekcja": "sklad",
+        "czesc": "owoce",
+        "tekst": "Jedno owoce waży od 270 do 480 mg i zawiera witaminy C, E, B12, karotenoidy, flawonoidy oraz kwasy tłuszczowe.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 沙棘",
+          "url": "https://zh.wikipedia.org/wiki/%E6%B2%99%E6%A3%98"
+        }
+      },
+      {
+        "id": "s1051",
+        "sekcja": "czesci_rosliny",
+        "czesc": "korzeń",
+        "tekst": "Korzenie rokitnika w wieku od jednego do dwóch lat wchodzą w symbiozę z bakterią Frankia, co umożliwia wiązanie azotu i wzbogacenie gleby w azot.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 沙棘",
+          "url": "https://zh.wikipedia.org/wiki/%E6%B2%99%E6%A3%98"
+        }
+      },
+      {
+        "id": "s1053",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Roslina pochodzi z terenow podmoklych Europy i pólnocno-wschodnich stanowisk USA. Od wiekow rosnie obficie w poblizu brzegow rzek, w zywoplotach oraz podmoklych lasach.",
+        "jezyk": "de-DE",
+        "zrodlo": {
+          "nazwa": "www.herboristerieduvalmont.com",
+          "url": "https://www.herboristerieduvalmont.com/mes-remedes-naturels/de/10990-sanddorn-vorteile-verwendung-und-kontraindikationen"
+        }
+      },
+      {
+        "id": "s1054",
+        "sekcja": "czesci_rosliny",
+        "czesc": "kora",
+        "tekst": "W ziołolecznictwie i medycynie tradycyjnej wykorzystuje sie przede wszystkim kore rosliny. Pozyskiwana kora musi byc suszona przez co najmniej rok, co pozwala na usuniecie jej pierwotnych toksycznych skladnikow.",
+        "jezyk": "de-DE",
+        "zrodlo": {
+          "nazwa": "www.herboristerieduvalmont.com",
+          "url": "https://www.herboristerieduvalmont.com/mes-remedes-naturels/de/10990-sanddorn-vorteile-verwendung-und-kontraindikationen"
+        }
+      },
+      {
+        "id": "s1055",
+        "sekcja": "sklad",
+        "czesc": "kora",
+        "tekst": "Kora rosliny zawiera antrachinony odpowiedzialne za dzialanie przeczyszczajace, flawonoidy o wlasciwosciach antyoksydacyjnych oraz taniny wykazujace dzialanie przeciwzapalne.",
+        "jezyk": "de-DE",
+        "zrodlo": {
+          "nazwa": "www.herboristerieduvalmont.com",
+          "url": "https://www.herboristerieduvalmont.com/mes-remedes-naturels/de/10990-sanddorn-vorteile-verwendung-und-kontraindikationen"
+        }
+      },
+      {
+        "id": "s1056",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "kora",
+        "tekst": "Tradycyjnie odwar z kory stosowano jako naturalny srodek na zaparcia, poniewaz stymuluje on pasaz jelitowy i wspomaga trawienie. Wykazuje rowniez dzialanie choleretyczne, pobudzajac produkcje zolci.",
+        "jezyk": "de-DE",
+        "zrodlo": {
+          "nazwa": "www.herboristerieduvalmont.com",
+          "url": "https://www.herboristerieduvalmont.com/mes-remedes-naturels/de/10990-sanddorn-vorteile-verwendung-und-kontraindikationen"
+        }
+      },
+      {
+        "id": "s1057",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "kora",
+        "tekst": "Swieza kora lub kora suszona krocej niz rok jest bardzo toksyczna i moze wywolywac wymioty oraz silna biegunke. Preparatow z tej rosliny nie powinny stosowac kobiety w ciazy, kobiety karmiace piersia, dzieci ponizej 12 roku zycia oraz osoby cierpiace na przewlekle zapalne choroby jelit.",
+        "jezyk": "de-DE",
+        "zrodlo": {
+          "nazwa": "www.herboristerieduvalmont.com",
+          "url": "https://www.herboristerieduvalmont.com/mes-remedes-naturels/de/10990-sanddorn-vorteile-verwendung-und-kontraindikationen"
+        }
+      },
+      {
+        "id": "s1058",
+        "sekcja": "historia",
+        "czesc": "kora",
+        "tekst": "W przeszlosci kora rosliny byla stosowana zewnetrznie w chorobach skory, w tym przy swierzbie. Stosowano ja w formie odwarow lub okladow na zmienione chorobowo miejsca.",
+        "jezyk": "de-DE",
+        "zrodlo": {
+          "nazwa": "www.herboristerieduvalmont.com",
+          "url": "https://www.herboristerieduvalmont.com/mes-remedes-naturels/de/10990-sanddorn-vorteile-verwendung-und-kontraindikationen"
+        }
+      },
+      {
+        "id": "s1059",
+        "sekcja": "ciekawostki",
+        "czesc": "kora",
+        "tekst": "W sredniowieczu wedlarze i wytworcy węgla drzewnego odkryli, ze drewno tej rosliny przetworzone na węgiel drzewny pali sie wyjatkowo wydajnie, dzieki czemu wykorzystywano je do produkcji prochu strzelniczego.",
+        "jezyk": "de-DE",
+        "zrodlo": {
+          "nazwa": "www.herboristerieduvalmont.com",
+          "url": "https://www.herboristerieduvalmont.com/mes-remedes-naturels/de/10990-sanddorn-vorteile-verwendung-und-kontraindikationen"
+        }
+      },
+      {
+        "id": "s1061",
+        "sekcja": "sklad",
+        "czesc": "owoce",
+        "tekst": "Owoce rokitnika kryją w sobie około 200 różnych substancji odżywczych, wśród których znajdują się kluczowe dla zdrowia witaminy A, C i E, żelazo oraz zestaw 18 aminokwasów, w tym 9 aminokwasów egzogennych.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "finess.jp",
+          "url": "https://finess.jp/products/hojunsaji/?srsltid=AU7gw4XfkEfONLudkHffselpfK6Kvy7sw7BvzYhPXJv_gmV9h_l_IMd2"
+        }
+      },
+      {
+        "id": "s1062",
+        "sekcja": "czesci_rosliny",
+        "czesc": "owoce",
+        "tekst": "Skórka owoców rokitnika obfituje w polifenole. Przetwarzanie całych owoców wraz z ich skórką pozwala uzyskać sok o znacznie intensywniejszej i głębszej barwie w porównaniu do standardowego soku tłoczonego.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "finess.jp",
+          "url": "https://finess.jp/products/hojunsaji/?srsltid=AU7gw4XfkEfONLudkHffselpfK6Kvy7sw7BvzYhPXJv_gmV9h_l_IMd2"
+        }
+      },
+      {
+        "id": "s1063",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "owoce",
+        "tekst": "Obficie występujący w owocach rokitnika kwas jabłkowy nie tylko nadaje im silnie kwaśny smak, lecz także aktywnie wspomaga organizm w przyswajaniu żelaza.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "finess.jp",
+          "url": "https://finess.jp/products/hojunsaji/?srsltid=AU7gw4XfkEfONLudkHffselpfK6Kvy7sw7BvzYhPXJv_gmV9h_l_IMd2"
+        }
+      },
+      {
+        "id": "s1067",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "liście",
+        "tekst": "Suche liście rokitnika są wykorzystywane jako surowiec do produkcji zarejestrowanego leku o działaniu przeciwwirusowym o nazwie „Гипорамин” (Hiporamin), powstającego na bazie suchego ekstraktu.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "cyberleninka.ru",
+          "url": "https://cyberleninka.ru/article/n/zagotovka-listiev-oblepihi-krushinovidnoy-kultiviruemoy-v-usloviyah-botanicheskogo-sada-voronezhskogo-gosuniversiteta"
+        }
+      },
+      {
+        "id": "s1069",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Górna powierzchnia blaszki liściowej rokitnika jest skórzasta i lśniąca, natomiast dolna strona charakteryzuje się gęstym, białofilcowatym owłosieniem.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "cyberleninka.ru",
+          "url": "https://cyberleninka.ru/article/n/zagotovka-listiev-oblepihi-krushinovidnoy-kultiviruemoy-v-usloviyah-botanicheskogo-sada-voronezhskogo-gosuniversiteta"
+        }
       }
     ]
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-08",
+    "zaktualizowano": "2026-10-09",
     "pola": {
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Silnie rozgałęziony, ciernisty krzew lub małe drzewo, osiągające do 6 m wysokości. Jest rośliną dwupienną (wymaga osobnika męskiego i żeńskiego do owocowania). Rokitnik to mistrz przetrwania: rośnie na piaskach, wydmach i terenach zasolonych, a dzięki symbiozie z promieniowcami potrafi wiązać azot z powietrza. Jego owoce są jednymi z najbardziej wartościowych biologicznie produktów spożywczych na świecie, charakteryzując się intensywnie pomarańczowym kolorem i unikalnym, kwaśno-żywicznym smakiem.",
+        "tresc": [
+          {
+            "tekst": "Rokitnik zwyczajny (Hippophae rhamnoides) to silnie rozgałęziony, ciernisty krzew lub małe drzewo, osiągające do 6 metrów wysokości. Jest rośliną dwupienną (wymaga osobnika męskiego i żeńskiego do owocowania).",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1047"
+            ]
+          },
+          {
+            "tekst": "Rokitnik to mistrz przetrwania: rośnie na piaskach, wydmach i terenach zalesionych, a dzięki symbiozie z promieniowcami potrafi wiązać azot z powietrza. Jego owoce są jednymi z najbardziej wartościowych biologicznie produktów spożywczych na świecie, charakteryzując się intensywnie pomarańczowym kolorem i unikalnym, kwaśno-żywicznym smakiem.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "f1dddfbc3c9fe4d5"
+      },
+      "czesci_rosliny.kora.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Kora (nowa część z sieci): Opis surowca",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Pień rokitnika zwyczajnego jest zazwyczaj cienki i krzywy, osiągając maksymalnie do 30 cm średnicy. Jego ciemnobrunatna, jasna lub niemal czarna kora jest podłużnie pęknięta i łuszczy się płatkami.",
+            "zrodla": [
+              1,
+              4
+            ],
+            "fakty": [
+              "s1026",
+              "s1048"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "3b9f613ef94df501"
+      },
+      "czesci_rosliny.korzeń.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Opis surowca",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Rokitnik zwyczajny (Hippophae rhamnoides) posiada system korzeniowy, który umożliwia mu przetrwanie w trudnych warunkach, takich jak susze. Korzeń rośliny może osiągać nawet 120-centymetrową długość, co pozwala mu utrzymać się na wietrznych zboczach i bardziej suchych stanowiskach.",
+            "zrodla": [
+              1,
+              2
+            ],
+            "fakty": [
+              "s976",
+              "s992"
+            ]
+          },
+          {
+            "tekst": "Korzenie rokitnika pełnią ważną funkcję w glebie, potrafią bowiem przekształcać nierozpuszczalne substancje mineralne i organiczne w formy łatwiej rozpuszczalne i przyswajalne.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s987"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "b804b68e2dcde9ce"
+      },
       "identyfikacja.cechy_kluczowe": {
         "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
         "typ": "lista",
@@ -983,104 +1921,251 @@
             "fakty": []
           },
           {
-            "tekst": "Rokitnik jest rośliną dwupienną: okazy męskie mają większe, pękate pąki; okazy żeńskie mają pąki mniejsze i smuklejsze.",
+            "tekst": "Rokitnik jest rośliną dwupienną: okazy męskie mają większe, pękate pąki, natomiast okazy żeńskie mają pąki mniejsze i smuklejsze.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "System korzeniowy rokitnika pozwala mu przetrwać susze dzięki pojedynczym korzeniom sięgającym bardzo głęboko, ale większość masy jego korzeni leży stosunkowo płytko, na głębokości do pół metra.",
+            "tekst": "Kwiaty męskie rokitnika rozwijają się w szyszkowatatych pąkach tworzonych przez gęste kłosy zawierające po 4-8 kwiatów, natomiast kwiaty słupkowe występują skupione po 2-5 na krótkich gronach.",
             "zrodla": [
               1
             ],
             "fakty": [
-              "s976"
+              "s1029"
             ]
           },
           {
-            "tekst": "Rokitnik tworzy głęboki system korzeniowy, w którym główny korzeń może osiągać nawet 120-centymetrową długość, co pozwala roślinie utrzymać się na wietrznych zboczach i bardziej suchych stanowiskach.",
+            "tekst": "Nasiona rokitnika są jajowate do eliptycznych, osiągają od 4 do 7 mm długości i mają ciemnobrązową do czarnej, błyszczącą powierzchnię.",
             "zrodla": [
-              2
+              1
             ],
             "fakty": [
-              "s992"
+              "s1031"
             ]
           },
           {
-            "tekst": "Korzenie rokitnika pełnią ważną funkcję w glebie, potrafią bowiem przekształcać nierozpusczalne substancje mineralne i organiczne w formy łatwiej rozpuszczalne i przyswajalne.",
+            "tekst": "Na szczycie pędów tegorocznych oraz z pąków bocznych wyrastają ciernie o długości od 2 do 7 cm, na których często rozwijają się pąki dające początek cierniom drugiego rzędu.",
             "zrodla": [
-              3
+              1
             ],
             "fakty": [
-              "s987"
+              "s1027"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "2d6761ec71c964c0"
+      },
+      "czesci_rosliny.liscie.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Folium Hippophae: Opis surowca",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Blaszka liściowa rokitnika zwyczajnego jest wąskolancetowata do jajowatej, osiąga do 5-9 cm długości oraz do 1,3 cm szerokości, jest całobrzega, a jej brzegi są często podwinięte. Liście mają kształt współrzędny lub wdellasaty, co jest cechą morfologiczną gatunku. Górna powierzchnia blaszki liściowej jest skórzasta i lśniąca, natomiast dolna strona charakteryzuje się gęstym, białofilcowatym owłosieniem.",
+            "zrodla": [
+              1,
+              4,
+              5
+            ],
+            "fakty": [
+              "s1028",
+              "s996",
+              "s1049",
+              "s1069"
             ]
           },
           {
-            "tekst": "Młodsze pędy oraz liście rokitnika pokryte są drobnymi, srebrnymi łuskami. W trakcie lata górna strona liści ciemnieje i staje się szarozielona, ponieważ łuski te stopniowo się ścierają.",
+            "tekst": "Młode pędy oraz liście rokitnika pokryte są drobnymi, srebrzystymi łuskami. W trakcie lata górna strona liści ciemnieje i staje się szarozielona, ponieważ łuski te stopniowo się ścierają.",
             "zrodla": [
               3
             ],
             "fakty": [
               "s986"
             ]
-          },
-          {
-            "tekst": "Liście rokitnika mają kształt współrzędny lub widlasty, co jest cechą morfologiczną gatunku.",
-            "zrodla": [
-              4
-            ],
-            "fakty": [
-              "s996"
-            ]
           }
         ],
         "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "a7f88841ae29cd93"
+        "wejscie": "56e2ef7f9dc3e7e7"
       },
-      "opis": {
-        "tytul": "Opis - Opis ogólny",
+      "czesci_rosliny.owoce.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Fructus Hippophae: Opis surowca",
         "typ": "tekst",
-        "oryginal": "Silnie rozgałęziony, ciernisty krzew lub małe drzewo, osiągające do 6 m wysokości. Jest rośliną dwupienną (wymaga osobnika męskiego i żeńskiego do owocowania). Rokitnik to mistrz przetrwania: rośnie na piaskach, wydmach i terenach zasolonych, a dzięki symbiozie z promieniowcami potrafi wiązać azot z powietrza. Jego owoce są jednymi z najbardziej wartościowych biologicznie produktów spożywczych na świecie, charakteryzując się intensywnie pomarańczowym kolorem i unikalnym, kwaśno-żywicznym smakiem.",
+        "oryginal": "Soczyste pestkowce o charakterystycznym aromacie. Unikalną cechą jest brak askorbinazy (enzymu rozkładającego witaminę C), dzięki czemu witamina C nie ulega rozkładowi podczas gotowania.",
         "tresc": [
           {
-            "tekst": "Rokitnik zwyczajny (Hippophae rhamnoides) to silnie rozgałęziony, ciernisty krzew lub małe drzewo, osiągające do 6 m wysokości. Jest rośliną dwupienną (wymaga osobnika męskiego i żeńskiego do owocowania).",
+            "tekst": "Soczyste pestkowce o charakterystycznym aromacie. Unikalną cechą jest brak ascorbinazy (enzymu rozkładającego witaminę C), dzięki czemu witamina C nie ulega rozkładowi podczas gotowania.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Rokitnik to mistrz przetrwania: rośnie na piaskach, wydmach i terenach zalesionych, a dzięki symbiozie z promieniowcami potrafi wiązać azot z powietrza. Jego owoce są jednymi z najbardziej wartościowych biologicznie produktów spożywczych na świecie, charakteryzując się intensywnie pomarańczowym kolorem i unikalnym, kwaśno-żywicznym smakiem.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "W Polsce rokitnik rośnie dziko w sposób naturalny wyłącznie na wybrzeżu Bałtyku. W pozostałych częściach kraju spotyka się go jako roślinę sadzoną przez ludzi bądź zdziczałą.",
+            "tekst": "Owoce rokitnika osiągają od 6 do 10 mm długości, są gładkie, mają barwę od pomaranczowej do czerwonej, a ich masa wynosi od 0,5 do 0,9 g.",
             "zrodla": [
               1
             ],
             "fakty": [
-              "s979"
+              "s1030"
             ]
           }
         ],
         "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "3fec684a139acdea"
+        "wejscie": "1f76f94c9be1e0d4"
       },
-      "czesci_rosliny.liscie.czas_zbioru": {
-        "tytul": "Surowce i zbiory - Folium Hippophae: Zbiór",
+      "zastosowanie.medyczne": {
+        "tytul": "Praktyczne zastosowanie - Medycyna",
         "typ": "tekst",
-        "oryginal": "Czerwiec - Sierpień.",
+        "oryginal": "Choroba wrzodowa żołądka i dwunastnicy, stany zapalne jamy ustnej, regeneracja skóry po oparzeniach i naświetlaniach (radioterapia), profilaktyka miażdżycy, przeziębienia, obniżona odporność.",
         "tresc": [
           {
-            "tekst": "Liście rokitnika zwyczajnego zbiera się od czerwca do sierpnia, a następnie mogą być suszone na powietrzu, mielone i wykorzystywane do parzenia herbaty.",
+            "tekst": "Liście, kwiaty, nasiona i jagody rokitnika zwyczajnego są wykorzystywane do przygotowywania herbatek, olejów i koncentratów o różnorodnych zastosowaniach zdrowotnych.",
             "zrodla": [
-              3
+              9
             ],
             "fakty": [
-              "s985"
+              "s997"
+            ]
+          },
+          {
+            "tekst": "W medycynie ludowej rokitnik zwyczajny jest używany do leczenia chorób wrzodowych żołądka i dwunastnicy, stanów zapalnych jamy ustnej, regeneracji skóry po oparzeniach i naświetlaniach (radioterapia), profilaktycznie w celu zapobiegania miażdżycy, przeziębieniom i obniżonej odporności.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "d3260ad08946dafa"
+      },
+      "czesci_rosliny.kora.wlasciwości": {
+        "tytul": "Surowce i zbiory - Kora (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "W ziołolecznictwie i medycynie tradycyjnej wykorzystuje się przede wszystkim korę rośliny. Pozyskiwana kora musi być suszona przez co najmniej rok, co pozwala na usunięcie jej pierwotnych toksycznych składników.",
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s1054"
+            ]
+          },
+          {
+            "tekst": "Tradycyjnie odwar z kory stosowano jako naturalny środek na zaparcia, ponieważ stymuluje on pasaż jelitowy i wspomaga trawienie. Wykazuje również działanie choleretyczne, pobudzając produkcję żółci.",
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s1056"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "ee132479029ab39b"
+      },
+      "czesci_rosliny.korzeń.wlasciwości": {
+        "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Korzeń rokitnika zwyczajnego, w wieku od jednego do dwóch lat, wchodzi w symbiozę z bakterią Frankia, co umożliwia wiązanie azotu i wzbogacenie gleby w azot.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1051"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "4ca45f8dbb9bb147"
+      },
+      "czesci_rosliny.liscie.wlasciwości": {
+        "tytul": "Surowce i zbiory - Folium Hippophae: Działanie",
+        "typ": "tekst",
+        "oryginal": "Przeciwzapalne, pomocne w reumatyzmie i chorobach skóry. Napar z liści wspiera trawienie.",
+        "tresc": [
+          {
+            "tekst": "Liście rokitnika zwyczajnego, znane ze swoich przeciwzapalnych właściwości, wspierają trawienie i są pomocne w leczeniu reumatyzmu oraz chorób skóry. Mogą być suszone na powietrzu, a następnie mielone, aby przygotować herbatę. Ponadto, suche liście są wykorzystywane do produkcji zarejestrowanego leku o działaniu przeciwwirusowym o nazwie „Гипорамин” (Hiporamin), który powstaje na bazie suchego ekstraktu.",
+            "zrodla": [
+              3,
+              5
+            ],
+            "fakty": [
+              "s985",
+              "s1067"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "f400315ad929d806"
+      },
+      "czesci_rosliny.owoce.wlasciwości": {
+        "tytul": "Surowce i zbiory - Fructus Hippophae: Działanie",
+        "typ": "tekst",
+        "oryginal": "Silnie antyoksydacyjne, immunostymulujące, regenerujące nabłonki, przeciwzapalne, przeciwnowotworowe.",
+        "tresc": [
+          {
+            "tekst": "Rokitnik zwyczajny (Hippophae rhamnoides) zawiera silnie antyoksydacyjne, immunostymulujące, regenerujące nabłonki, przeciwzapalne i przeciwnowotworowe właściwości.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Skórka owoców rokitnika obfituje w polifenole, co sprawia, że sok z całych owoców ma intensywniejszy i głębszy kolor w porównaniu do standardowego soku.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1062"
+            ]
+          },
+          {
+            "tekst": "Tradycyjnie owoce rokitnika, soki i ekstrakty były stosowane ze względu na wysoką zawartość witaminy C w celu wzmocnienia odporności, przy infekcjach i w okresie rekonwalescencji.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1044"
+            ]
+          },
+          {
+            "tekst": "Kwas jabłkowy obecny w owocach rokitnika nie tylko nadaje im kwaśny smak, ale także wspomaga organizm w przyswajaniu żelaza.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1063"
+            ]
+          },
+          {
+            "tekst": "W medycynie wschodniej owoce rokitnika cenione są za swoje właściwości kosmetyczne i terapeutyczne, umożliwiając ich zastosowanie zarówno w celach upiększających, jak i zdrowotnych.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s995"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "7e30f02cbd329268"
+      },
+      "czesci_rosliny.kora.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Kora (nowa część z sieci): Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Kora rośliny zawiera antrachinony odpowiedzialne za działanie przeczyszczające, flawonoidy o właściwościach antyoksydacyjnych oraz taniny wykazujące działanie przeciwzapalne.",
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s1055"
             ]
           }
         ],
         "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "0ff549bdafc9b759"
+        "wejscie": "47918dcf0cd95f40"
       },
       "czesci_rosliny.owoce.skladniki_aktywne": {
         "tytul": "Surowce i zbiory - Fructus Hippophae: Substancje czynne",
@@ -1094,60 +2179,145 @@
         ],
         "tresc": [
           {
-            "tekst": "Rokitnik zwyczajny (Hippophae rhamnoides) zawiera witaminę C (nawet do 1000 mg/100g - 15 razy więcej niż w cytrynie), karotenoidy (beta-karoten, likopen, zeaksantyna), kwasy tłuszczowe Omega-3, 6, 9 oraz rzadki Omega-7 (kwas palmitoleinowy), witaminy E, K i z grupy B, a także flawonoidy (kwercetyna, rutyna).",
-            "zrodla": [],
-            "fakty": []
+            "tekst": "Miąższ owoców rokitnika charakteryzuje się wyjątkowo wysoką zawartością witaminy C, wynoszącą od 200 do 900 mg na 100 g w zależności od odmiany. Roślina ta zawiera również witaminę B12, która w świecie roślinnym występuje niezwykle rzadko i powstaje dzięki symbiotycznym bakteriom.",
+            "zrodla": [
+              2,
+              3
+            ],
+            "fakty": [
+              "s1042",
+              "s1032",
+              "s1033"
+            ]
           },
           {
-            "tekst": "Charakterystyczny, kwaśny smak owoców rokitnika jest spowodowany wysokim stężeniem kwasu jabłkowego, natomiast ich cierpkość wynika z obecności kwasu chinowego.",
+            "tekst": "Za charakterystyczny, kwaśny smak owoców rokitnika odpowiada wysokie stężenie kwasu jabłkowego. Z kolei ich cierpkość jest wynikiem obecności kwasu winowego.",
             "zrodla": [
               3
             ],
             "fakty": [
-              "s983"
+              "s983",
+              "s1033"
             ]
-          }
-        ],
-        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "073fc6c91caba7ca"
-      },
-      "profil_energetyczny.opis": {
-        "tytul": "Natura i siedlisko - Opis energetyczny",
-        "typ": "tekst",
-        "oryginal": "Rokitnik to potężny tonik 'Yin' i 'Krwi'. Dzięki wysokiej zawartości olejów nawilża wysuszone błony śluzowe i skórę od wewnątrz. Jego ciepła natura wspiera odporność i 'rozgrzewa' procesy regeneracji tkanek. Idealny dla osób osłabionych, po przebytych chorobach i z niedoborami witaminowymi.",
-        "tresc": [
-          {
-            "tekst": "Rokitnik to potężny tonik „Yin” i „Krwi”.",
-            "zrodla": [],
-            "fakty": []
           },
           {
-            "tekst": "W medycynie wschodniej owoce tej rośliny są cenione za właściwości terapeutyczne i kosmetyczne, znajdując zastosowanie zarówno w celach zdrowotnych, jak i upiększających.",
+            "tekst": "Owoce rokitnika charakteryzują się bardzo wysoką zawartością witaminy C, wynoszącą około 400 mg na 100 gramów.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1032",
+              "s1033"
+            ]
+          },
+          {
+            "tekst": "W owocach rokitnika występują również wysokie stężenia witaminy E i witaminy K oraz obecna jest witamina B12.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1033"
+            ]
+          },
+          {
+            "tekst": "Głównym karotenoidem w owocach jest prowitamina A w postaci beta-karotenu, a obok niej występują także zeaksantyna i likopen.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1034"
+            ]
+          },
+          {
+            "tekst": "Najbardziej powszechnymi minerałami w owocach rokitnika są potas, mangan i miedź.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1033",
+              "s1035"
+            ]
+          },
+          {
+            "tekst": "Głównymi cukrami w owocach rokitnika są fruktoza i glukoza, a głównym alkoholem cukrowym jest L-quinoquitol.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1033",
+              "s1036"
+            ]
+          },
+          {
+            "tekst": "Rośliny z rodzaju Hippophae gromadzą olej zarówno w miąższu, jak i w nasionach owoców, przy czym zawartość oleju w nasionach wynosi 11% świeżej masy.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1037"
+            ]
+          },
+          {
+            "tekst": "Owoce rokitnika są bogate w fitosterole, wśród których beta-sitosterol stanowi główny związek sterylowy.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1038"
+            ]
+          },
+          {
+            "tekst": "Wśród związków fenolowych w owocach dominują flawonole, podczas gdy kwasy fenolowe i flawanole stanowią mniejsze komponenty.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1039"
+            ]
+          },
+          {
+            "tekst": "Jedno owoco waży od 270 do 480 mg i zawiera witaminy C, E, B12, karotenoidy, flawonoidy oraz kwasy tłuszczowe.",
             "zrodla": [
               4
             ],
             "fakty": [
-              "s995"
+              "s1050"
             ]
           },
           {
-            "tekst": "Dzięki wysokiej zawartości olejów rokitnik nawilża od wewnątrz wysuszone błony śluzowe oraz skórę.",
+            "tekst": "Owoce rokitnika kryją w sobie około 200 różnych substancji odżywczych, wśród których znajdują się kluczowe dla zdrowia witaminy A, C i E, żelazo oraz zestaw 18 aminokwasów, w tym 9 aminokwasów egzogennych.",
+            "zrodla": [
+              3,
+              6
+            ],
+            "fakty": [
+              "s1033",
+              "s1061"
+            ]
+          },
+          {
+            "tekst": "Witamina C (nawet do 1000 mg/100g - 15 razy więcej niż w cytrynie)",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Jego ciepła natura wspiera odporność i „rozgrzewa” procesy regeneracji tkanek.",
+            "tekst": "Kwasy tłuszczowe Omega-3, 6, 9 oraz rzadki Omega-7 (kwas palmitoleinowy)",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Jest idealny dla osób osłabionych, po przebytych chorobach oraz z niedoborami witaminowymi.",
+            "tekst": "Witaminy E, K i z grupy B",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Flawonoidy (kwercetyna, rutyna)",
             "zrodla": [],
             "fakty": []
           }
         ],
-        "model": "gemini/gemini-3.7-flash",
-        "wejscie": "55ef50b15212322b"
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "5c2fb4794c3eb04e"
       },
       "zastosowanie.rzemieslnicze": {
         "tytul": "Praktyczne zastosowanie - Rzemiosło",
@@ -1155,12 +2325,14 @@
         "oryginal": "Wyciągi z owoców służą do produkcji luksusowych kosmetyków przeciwstarzeniowych. Drewno rokitnika jest twarde i ma piękne, ciemne jądro, cenione w drobnym tokarstwie.",
         "tresc": [
           {
-            "tekst": "Wyciągi z owoców rokitnika zwyczajnego są wykorzystywane do produkcji luksusowych kosmetyków przeciwstarzeniowych, a jego drewno, bogate w kwercetynę, służy do barwienia innych materiałów na żółty i brązowy kolor.",
+            "tekst": "Wyciągi z owoców rokitnika zwyczajnego są wykorzystywane do produkcji luksusowych kosmetyków przeciwstarzeniowych, a drewno, bogate w kwercetynę, służy do barwienia innych materiałów na żółty i brązowy kolor. Ponadto, pozostałości po wyciskaniu soków z owoców mogą być stosowane jako naturalny barwnik spożywczy o żółtej lub pomaranczowej barwie.",
             "zrodla": [
-              2
+              2,
+              3
             ],
             "fakty": [
-              "s991"
+              "s991",
+              "s1040"
             ]
           },
           {
@@ -1170,7 +2342,7 @@
           }
         ],
         "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "112938c361c7e878"
+        "wejscie": "979032109368ad12"
       },
       "zastosowanie.kosmetyczne": {
         "tytul": "Praktyczne zastosowanie - Kosmetyka",
@@ -1203,16 +2375,27 @@
         ],
         "tresc": [
           {
-            "tekst": "Łacińska nazwa 'Hippophae' pochodzi od greckich słów 'hippos' (koń) i 'phaos' (błyszczeć), jako że w starożytności konie karmione liśćmi rokitnika miały niezwykle lśniącą sierść i świetną kondycję. Z kolei nazwa gatunkowa 'rhamnoides' wywodzi się od słowa Rhamnus (szakłak) oraz przyrostka oznaczającego podobieństwo, co odnosi się do zewnętrznego podobieństwa rokitnika do krzewów z rodzaju szakłak.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s981"
-            ]
+            "tekst": "Łacińska nazwa 'Hippophae' pochodzi od greckich słów 'hippos' (koń) i 'phaos' (błyszczeć). W starożytności konie karmione liśćmi rokitnika miały niezwykle lśniącą sierść i świetną kondycję.",
+            "zrodla": [],
+            "fakty": []
           },
           {
-            "tekst": "Istnieją naukowe wątpliwości co do tego, czy Dioskurydes w swoich pismach rzeczywiście opisywał rokitnika, ponieważ badacze podejrzewają, że starożytny uczony mógł mieć na myśli inną roślinę, taką jak wilczomlecz ciernisty.",
+            "tekst": "Witaminia C w rokitniku jest wyjątkowo trwała, ponieważ roślina nie posiada enzymu askorbinazy – soki rokitnikowe zachowują moc nawet po pasteryzacji.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Rokitnik był jednym z pierwszych pokarmów podawanych kosmonautom (w formie soków i koncentratów), aby chronić ich przed promieniowaniem kosmicznym.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Olej z rokitnika był używany przez rosyjskich lekarzy do leczenia oparzeń ofiar katastrofy w Czarnobylu.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Istnieją naukowe wątpliwości co do tego, czy Dioskurydes w swoich pismach rzeczywiście opisywał rokitnika. Badacze podejrzewają, że starożytny uczony mógł mieć na myśli inną roślinę, taką jak wilczomlecz ciernisty.",
             "zrodla": [
               1
             ],
@@ -1221,21 +2404,12 @@
             ]
           },
           {
-            "tekst": "Witamina C w rokitniku jest wyjątkowo trwała, ponieważ roślina nie posiada enzymu askorbinazy, dzięki czemu soki zachowują swoją moc nawet po pasteryzacji. Z powodu wysokiej zawartości tej witaminy oraz kwaśnego smaku, w niemieckojęzycznym obszarze Europy Północnej rokitnik jest powszechnie nazywany „cytryną Północy”.",
+            "tekst": "W niemieckojęzycznym obszarze Europy Północnej rokitnik jest powszechnie nazywany „cytryną Północy”, co nawiązuje do jego kwaśnego smaku i wysokiej zawartości witaminy C.",
             "zrodla": [
               2
             ],
             "fakty": [
               "s988"
-            ]
-          },
-          {
-            "tekst": "W XIX wieku w Polsce rokitnik nosił szereg unikalnych nazw ludowych i zwyczajowych, będąc wówczas określanym mianem „bodlaka”, „bodzieńca” czy „rozmarynowca”.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s977"
             ]
           },
           {
@@ -1248,18 +2422,80 @@
             ]
           },
           {
-            "tekst": "Rokitnik był jednym z pierwszych pokarmów podawanych kosmonautom (w formie soków i koncentratów), aby chronić ich przed promieniowaniem kosmicznym.",
-            "zrodla": [],
-            "fakty": []
+            "tekst": "Nazwa gatunkowa \"rhamnoides\" wywodzi się od słowa Rhamnus (szakłak) oraz przyrostka oznaczającego podobieństwo. Odnosi się ona do zewnętrznego podobieństwa rokitnika do krzewów z rodzaju szakłak.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s981"
+            ]
           },
           {
-            "tekst": "Olej z rokitnika był używany przez rosyjskich lekarzy do leczenia oparzeń ofiar katastrofy w Czarnobylu.",
-            "zrodla": [],
-            "fakty": []
+            "tekst": "W przeszlosci korę rosliny byla stosowana zewnetrznie w chorobah skory, w tym przy swierzbie. Stosowano ja w formie odwarow lub okladow na zmienione chorobowo miejsca.",
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s1058"
+            ]
+          },
+          {
+            "tekst": "Z owoców i pestek rokitnika wytłacza się olej, który tradycyjnie w Europie Wschodniej wykorzystywano gojenia oparzeń słonecznych oraz uszkodzeń skóry wywołanych promieniowaniem rentgenowskim.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s989"
+            ]
+          },
+          {
+            "tekst": "W XIX wieku w Polsce rokitnik nosił szereg unikalnych nazw ludwych i zwyczajowych. Określano go wtedy mianem „bodlaka”, „bodzieńca” czy „rozmarynowca”.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s977"
+            ]
+          },
+          {
+            "tekst": "Na wyspah Åland na Morzu Bałtyckim rosnące tam rokitniki żyją średnio od 30 do 40 lat, choć maksymalna zarejestrowana długość ich życia wynosi ok. 80 lat.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s993"
+            ]
+          },
+          {
+            "tekst": "Płeć siewek rokitnika jest niemożliwa do określenia aż do momentu ich pierwszego kwitnienia. Zjawisko to wysstępuje zazwyczaj dopiero po trzech latach od wykiełkowania.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s982"
+            ]
+          },
+          {
+            "tekst": "W sredniowieczu wedlarze i wytworcy węgla drzewnego odkryli, ze drewno tej rosliny przetworzone na węgiel drzewny pali sie wyjatkowo wydajnie, dzieki czemu wykorzystywano je do produkcji procchu strzelniczego.",
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s1059"
+            ]
+          },
+          {
+            "tekst": "Rokitnik bywa lokalnie nazywany bażancią jagodą lub „Fasanenbeer” ze względu na to, że jego owoce stanowią istotne źródło pokarmu dla bażantów i innych ptaków w zimowej porze.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1045"
+            ]
           }
         ],
-        "model": "gemini/gemini-3.5-flash",
-        "wejscie": "7d2421e83f3181c2"
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "e9588a45224e1a59"
       },
       "ostrzezenia": {
         "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
@@ -1267,21 +2503,21 @@
         "oryginal": "Ze względu na wysoką zawartość kwasów owocowych, rokitnik nie jest zalecany osobom z ostrym zapaleniem wątroby, trzustki oraz przy kamicy żółciowej.",
         "tresc": [
           {
-            "tekst": "Ze względu na wysoką zawartość kwasów owocowych rokitnik nie jest zalecany osobom z ostrym zapaleniem wątroby, trzustki oraz przy kamicy żółciowej.",
+            "tekst": "Ze względu na wysoką zawartość kwasow owocowych, rokitnik nie jest zalecany osobom z ostrym zapaleniem watroby, trzustki oraz przy kamicy blony miednicznej.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Rokitnik może działać jako rozrzedzacz krwi, co zwiększa ryzyko wystąpienia krwawień.",
+            "tekst": "Rokitnik może działać jako rozrzedzacz krwi, zwiększając ryzyko krwawień.",
             "zrodla": [
-              6
+              9
             ],
             "fakty": [
               "s998"
             ]
           },
           {
-            "tekst": "Przeprowadzone przez uniwersytety w Dreźnie i Sofii badania naukowe nie wykazały żadnych znanych działań niepożądanych podczas długotrwałego spożywania soku lub oleju z rokitnika.",
+            "tekst": "Badania naukowe przeprowadzone przez uniwersytety w Dreźnie i Sofii nie wykazały żadnych znanych działań niepożądanych przy długotrwałym spożywaniu soku lub oleju z rokitnika.",
             "zrodla": [
               2
             ],
@@ -1290,8 +2526,26 @@
             ]
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
         "wejscie": "1f6d90c41d92bb04"
+      },
+      "czesci_rosliny.kora.ostrzezenia": {
+        "tytul": "Surowce i zbiory - Kora (nowa część z sieci): Ostrzeżenia",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Ostrzeżenia (toksycznosc i przeciwwskazania TEJ czesci (korę)): Swieza korowa lub korowa suszona krocej niz rok jest bardzo toksyczna i moze wywolywac wymioty oraz silna biegunke. Preparatow z tej rosliny nie powinny stosowac kobiety w ciazy, kobiety karmiace piersia, dzieci ponizej 12 roku zycia oraz osoby cierpiace na przewlekle zapalne choroby jelit.",
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s1057"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "47a51dec372acc41"
       },
       "czesci_rosliny.owoce.ostrzezenia": {
         "tytul": "Surowce i zbiory - Fructus Hippophae: Ostrzeżenia",
@@ -1317,12 +2571,21 @@
         "oryginal": "Tworzenie gęstych, obronnych żywopłotów, rekultywacja nieużytków, stabilizacja wydm i skarp korzeniami.",
         "tresc": [
           {
-            "tekst": "Rokitnik zwyczajny (Hippophae rhamnoides) jest rośliną, która dzięki niskim wymaganiom i zdolności do wytwarzania odrostów korzeniowych, jest sadzony na skarpach, hałdach oraz wydmach, co pomaga w stabilizacji gruntu i chroni te obszary przed erozją.",
+            "tekst": "Rokitnik zwyczajny (Hippophae rhamnoides) jest rośliną, która może być wykorzystywana w ogrodzie do tworzenia gęstych, obronnych żywopłotów, rekultywacji nieużytków oraz stabilizacji wydm i skarp korzeniami. Jego uprawa wiąże się z relatywnie wysokimi kosztami pozyskiwania surowca, wynikającymi z trudnych warunków zbioru i długiego okresu oczekiwania na pierwsze owoce, który trwa od sześciu do ośmiu lat.",
             "zrodla": [
-              1
+              2
             ],
             "fakty": [
-              "s975"
+              "s1043"
+            ]
+          },
+          {
+            "tekst": "Liście rokitnika oraz pozostałości owoców po wytłoczeniu oleju mogą być wykorzystywane jako wartościowa pasza dla zwierząt hodowlanych, w tym drobiu. Podawanie takiej paszy przyczynia się do znacznego przyrostu masy u zwierząt.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s984"
             ]
           },
           {
@@ -1333,39 +2596,101 @@
             "fakty": [
               "s974"
             ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "7aa61c3741d691e7"
+      },
+      "permakultura.funkcje": {
+        "tytul": "Cykl życia i ekosystem - Permakultura - funkcje",
+        "typ": "lista",
+        "oryginal": [
+          "Wiązanie azotu w glebie (symbioza z promieniowcami Frankia).",
+          "Naturalna bariera wiatrowa i 'nieprzebyty' żywopłot ochronny.",
+          "Prowiant dla ptaków zimujących (owoce długo utrzymują się na krzewach).",
+          "Rekultywacja terenów zniszczonych i piaszczystych."
+        ],
+        "tresc": [
+          {
+            "tekst": "Rokitnik zwyczajny (Hippophae rhamnoides) jest miododajną rośliną, która dzięki symbiozie z promieniowcami Frankia wiąże azot w glebie, tworząc naturalne bariery wiatrowe i ochronne żywopłoty. Jego owoce stanowią provirant dla ptaków zimujących, a zdolność do rekultywacji terenów zniszczonych i piaszczystych przyczynia się do stabilizacji gruntu i ochrony przed erozją.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s975"
+            ]
           },
           {
-            "tekst": "Tworzenie gęstych, obronnych żywopłotów, rekultywacja nieużytków, stabilizacja wydm i skarp korzeniami.",
+            "tekst": "Prowiant dla ptaków zimujących (owoce długo utrzymują się na krzewach).",
             "zrodla": [],
             "fakty": []
           }
         ],
         "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "a2420562c17b3488"
+        "wejscie": "2203936473cb801e"
       }
     },
     "uzyte_fakty": [
       "s1002",
       "s1003",
       "s1004",
+      "s1026",
+      "s1027",
+      "s1028",
+      "s1029",
+      "s1030",
+      "s1031",
+      "s1032",
+      "s1033",
+      "s1034",
+      "s1035",
+      "s1036",
+      "s1037",
+      "s1038",
+      "s1039",
+      "s1040",
+      "s1042",
+      "s1043",
+      "s1044",
+      "s1045",
+      "s1047",
+      "s1048",
+      "s1049",
+      "s1050",
+      "s1051",
+      "s1054",
+      "s1055",
+      "s1056",
+      "s1057",
+      "s1058",
+      "s1059",
+      "s1061",
+      "s1062",
+      "s1063",
+      "s1067",
+      "s1069",
       "s974",
       "s975",
       "s976",
       "s977",
       "s978",
-      "s979",
       "s981",
+      "s982",
       "s983",
+      "s984",
       "s985",
       "s986",
       "s987",
       "s988",
+      "s989",
       "s990",
       "s991",
       "s992",
+      "s993",
       "s994",
       "s995",
       "s996",
+      "s997",
       "s998",
       "s999"
     ]

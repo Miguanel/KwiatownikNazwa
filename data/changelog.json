@@ -3,6 +3,39 @@
  "opis": "Kronika Siedziby Kwiatownika - pisze ja agent wdrozen (Siedziba).",
  "wpisy": [
   {
+   "data": "2026-10-09T09:03:32+02:00",
+   "tytul": "Nowa wiedza o 2 roślinach",
+   "opis": "Siedziba zebrała 67 sprawdzonych informacji (źródła: niemieckie, angielskie, rosyjskie, chińskie).",
+   "liczby": {
+    "informacje": 67,
+    "przepisy": 0,
+    "rosliny": 2,
+    "nowe_rosliny": 0,
+    "zdjecia": 0
+   },
+   "rosliny": [
+    {
+     "id": "rokitnik_zwyczajny",
+     "nazwa": "Rokitnik zwyczajny",
+     "nowe": 38,
+     "jezyki": [
+      "ru"
+     ]
+    },
+    {
+     "id": "chmiel_zwyczajny",
+     "nazwa": "Chmiel zwyczajny",
+     "nowe": 29,
+     "jezyki": [
+      "de",
+      "en",
+      "zh"
+     ]
+    }
+   ],
+   "przepisy": []
+  },
+  {
    "data": "2026-10-08T21:23:30+02:00",
    "tytul": "Nowa wiedza o 1 roślinie",
    "opis": "Siedziba zebrała 7 sprawdzonych informacji (źródła: niemieckie, angielskie, rosyjskie).",

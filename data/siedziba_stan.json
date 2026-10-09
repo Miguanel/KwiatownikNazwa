@@ -1,18 +1,18 @@
 {
  "wersja": 1,
  "opis": "Stan Siedziby Kwiatownika i statystyki strony - zapisuje agent wdrozen (Siedziba). Strona pokazuje go w papirusie bez pytania backendu.",
- "zaktualizowano": "2026-10-09T08:33:04+02:00",
+ "zaktualizowano": "2026-10-09T09:03:32+02:00",
  "siedziba": {
   "status": "pracuje",
   "zadania": [
    {
-    "opis": "zbiera wiedzę o roślinach: landscapeplants.oregonstate.edu",
+    "opis": "zbiera wiedzę o roślinach: Głóg jednoszyjkowy",
     "od": "2026-10-09T06:31:30.073913+00:00"
    }
   ],
   "info": {
    "rosliny": 87,
-   "informacje_zapisane": 630,
+   "informacje_zapisane": 697,
    "czeka_w_kolejce": 0
   }
  },
@@ -61,7 +61,7 @@
  "statystyki": {
   "okres_dni": 7,
   "goscie_tydzien": 4,
-  "odslony_tydzien": 14,
+  "odslony_tydzien": 16,
   "plantid_tydzien": 0,
   "plantid_razem": 0,
   "najczesciej_czytane": [
@@ -71,6 +71,11 @@
     "n": 6
    },
    {
+    "id": "rokitnik_zwyczajny",
+    "nazwa": "Rokitnik zwyczajny",
+    "n": 3
+   },
+   {
     "id": "chmiel_zwyczajny",
     "nazwa": "Chmiel zwyczajny",
     "n": 3
@@ -78,11 +83,6 @@
    {
     "id": "rumianek_pospolity",
     "nazwa": "Rumianek pospolity",
-    "n": 1
-   },
-   {
-    "id": "rokitnik_zwyczajny",
-    "nazwa": "Rokitnik zwyczajny",
     "n": 1
    }
   ]
