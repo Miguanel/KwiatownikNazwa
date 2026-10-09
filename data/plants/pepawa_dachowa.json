@@ -137,7 +137,7 @@
     "wersja": 2,
     "zaktualizowano": "2026-10-09",
     "uporzadkowano": "2026-10-09",
-    "uklad": "llm:groq/qwen/qwen3.8-27b",
+    "uklad": "llm:gemini/gemini-3.5-flash-lite",
     "zrodla": [
       {
         "nazwa": "Wikipedia (pl): Pępawa dachowa",
@@ -172,11 +172,24 @@
       {
         "klucz": "opis",
         "tytul": "Opis i wygląd",
-        "podsumowanie": null,
-        "podsumowanie_zrodla": [],
+        "podsumowanie": "Pępawa dachowa to szaro-zielona roślina jednoroczna lub bylina o wysokości do 60 cm z krótkim, wrzecionowatym korzeniem. Posiada zróżnicowane liście, koszyczki z jasnożółtymi kwiatami języczkowatymi oraz ciemne niełupki wyposażone w śnieżnobiały puch kielichowy.",
+        "podsumowanie_zrodla": [
+          1,
+          2
+        ],
         "punkty": [
           {
-            "tekst": "Roślina posiada krótki, wrzecionowaty i palowy korzeń.",
+            "tekst": "Pępawa dachowa to szaro-zielona, letniozielona roślina jednoroczna lub o charakterze byliny, osiągająca wysokość od 10 do 60 centymetrów. Jej łodyga jest słabiej lub mocniej rozgałęziona, od lekko owłosionej po nagą.",
+            "czesc": "ziele",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1496"
+            ]
+          },
+          {
+            "tekst": "Pępawa dachowa ma krótki, wrzecionowaty i palowy korzeń.",
             "czesc": "korzeń",
             "zrodla": [
               1
@@ -186,33 +199,39 @@
             ]
           },
           {
-            "tekst": "Dolne liście tworzą rozetę przyziemną i zasychają podczas kwitnienia. Najwyższe liście są równowąskie, siedzące i obejmują łodygę strzałkowatą nasadą.",
+            "tekst": "Dolne liście tworzą rozetę przyziemną, mają ogonki, podłużny kształt oraz zatokowo ząbkowane lub pierzastodzielne brzegi, a podczas kwitnienia zasychają. Górne i środkowe liście są równowąskie, siedzące, obejmują łodygę sercowatą lub strzałkowatą nasadą, a ich brzegi są lekko podwinięte w dół z nielicznymi ząbkami.",
             "czesc": "liście",
             "zrodla": [
-              1
+              1,
+              2
             ],
             "fakty": [
-              "s1198"
+              "s1198",
+              "s1497"
             ]
           },
           {
-            "tekst": "Jasnożółte kwiaty języczkowate (od 30 do 70 sztuk) są zebrane w koszyczki, które tworzą baldachopodobne wiechy.",
+            "tekst": "Jasnożółte kwiaty języczkowate w liczbie od 30 do 70 są zebrane w koszyczki o średnicy od 15 do 20 milimetrów, tworzące baldachopodobne wiechy lub baldachokształtne kwiatostany złożone. Dwułakowe szyjki słupka mają brązowo-zieloną barwę, a po wysuszeniu stają się czarniawe.",
             "czesc": "kwiaty",
             "zrodla": [
-              1
+              1,
+              2
             ],
             "fakty": [
-              "s1199"
+              "s1199",
+              "s1498"
             ]
           },
           {
-            "tekst": "Owoce są ciemnoczerwone lub brązowobrunatne niełupki zaopatrzone w miękki, śnieżnobiały puch kielichowy.",
+            "tekst": "Owoce rośliny to ciemnoczerwone lub brązowobrunatne niełupki posiadające dziesięć żeberek, zwężone na kształt dziobka i zaopatrzone w miękki, czysto biały puch kielichowy.",
             "czesc": "owoce",
             "zrodla": [
-              1
+              1,
+              2
             ],
             "fakty": [
-              "s1200"
+              "s1200",
+              "s1499"
             ]
           }
         ]
@@ -220,21 +239,39 @@
       {
         "klucz": "wystepowanie",
         "tytul": "Występowanie",
-        "podsumowanie": null,
-        "podsumowanie_zrodla": [],
+        "podsumowanie": "Gatunek rośnie na różnorodnych stanowiskach, takich jak pola, nieużytki, przydroża czy mury, preferując gleby piaszczyste, gliniaste, zasobne w azot. Poza Eurazją występuje jako neofit w Ameryce Północnej, na Grenlandii oraz w Wielkiej Brytanii.",
+        "podsumowanie_zrodla": [
+          1,
+          2,
+          3
+        ],
         "punkty": [
           {
-            "tekst": "Roślina występuje w miejscach suchych, najczęściej na piaszczystych glebach pól, odłogów, przydroży, nieużytków oraz w widnych lasach sosnowych.",
+            "tekst": "Gatunek rośnie w miejscach suchych, na terenach nieużytków, odłogów, polach uprawnych, przydrożach, przy drogach oraz na murach, a także w widnych lasach sosnowych. Preferuje stanowiska ciepłe, gleby zasobne w azot, piaszczyste, żwirowe, kamieniste lub żywe gliny.",
             "czesc": null,
             "zrodla": [
-              1
+              1,
+              2,
+              3
             ],
             "fakty": [
-              "s1201"
+              "s1201",
+              "s1492",
+              "s1501"
             ]
           },
           {
-            "tekst": "Poza Eurazją gatunek ten rośnie jako roślina obca (neofit) w Ameryce Północnej, na Grenlandii oraz w Wielkiej Brytanii.",
+            "tekst": "Roślina może rosnąć zarówno na glebach wapiennych, jak i na tych bez wapnia, najlepiej jednak w żyznych glinach i piaszczysto-gliniastych, a także w suchych, grubych glebach.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1493"
+            ]
+          },
+          {
+            "tekst": "Poza obszarem Eurazji gatunek ten występuje jako roślina obca (neofit) w Ameryce Północnej, na Grenlandii oraz w Wielkiej Brytanii.",
             "czesc": null,
             "zrodla": [
               2
@@ -246,8 +283,84 @@
         ]
       },
       {
+        "klucz": "czesci_rosliny",
+        "tytul": "Części rośliny i surowce",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Kwitnie od czerwca do września, wytwarzając liczne żółte kwiaty.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1495"
+            ]
+          },
+          {
+            "tekst": "Liście są żółte, wąskie – mniej niż 0,5 cali (13 mm) szerokości – i ułożone naprzemianlegle.",
+            "czesc": "liście",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1490"
+            ]
+          },
+          {
+            "tekst": "Jeśli surowiec zebrany zbyt późno, kwiaty pępawy dachowej (nazywanej tu skerdą dachową) podczas suszenia mogą przekształcić się w biały puch przypominający puch mniszka.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1208"
+            ]
+          },
+          {
+            "tekst": "Nasiona są ciemnobrązowymi achene, które rozprzestrzenia wiatr dzięki włoskom zwanym pappusem.",
+            "czesc": "nasiona",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1491"
+            ]
+          }
+        ]
+      },
+      {
         "klucz": "historia",
         "tytul": "Historia i nazwa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Nazwa naukowa pępawy dachowej wywodzi się z greckiego słowa krepis, oznaczającego sandał lub pantofel, co nawiązuje do kształtu nasion.",
+            "czesc": "nasiona",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1202"
+            ]
+          },
+          {
+            "tekst": "W średniowiecznej łacinie roślina ta nosiła nazwę Palatium leporis, co oznacza „hasenpalast” (hasenpalast / pałac zająca), co mogło odnosić się także do innego gatunku pępawy.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1204"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kultura",
+        "tytul": "Wierzenia i tradycje",
         "podsumowanie": null,
         "podsumowanie_zrodla": [],
         "punkty": [
@@ -260,26 +373,6 @@
             "fakty": [
               "s1207"
             ]
-          },
-          {
-            "tekst": "W średniowiecznej łacinie roślina nosiła nazwę „Palatium leporis” (pałac zająca), co mogło odnosić się także do innego gatunku pępawy.",
-            "czesc": null,
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s1204"
-            ]
-          },
-          {
-            "tekst": "Nazwa naukowa wywodzi się z greckiego słowa „krepis” (sandał lub pantofel), co nawiązuje do kształtu nasion.",
-            "czesc": "nasiona",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s1202"
-            ]
           }
         ]
       },
@@ -290,7 +383,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Dawniej w niemieckojęzycznych regionach roślina nosiła nazwy ludowe takie jak Grundfeste (Turyngia), Habichkraut, Hasenlattich, Hasenstrauch, Pippau (Śląsk).",
+            "tekst": "Dawniej w niemieckojęzycznych regionach pępawa dachowa nosiła liczne nazwy ludowe, takie jak Grundfeste w Turyngii, a także Habichkraut, Hasenlattich, Hasenstrauch i Pippau na Śląsku.",
             "czesc": null,
             "zrodla": [
               2
@@ -302,14 +395,32 @@
         ]
       },
       {
+        "klucz": "uprawa",
+        "tytul": "Uprawa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Ziarna kiełkują w temperaturze 2–4 °C, przy optymalnej głębokości siewu 3–4 cm.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1494"
+            ]
+          }
+        ]
+      },
+      {
         "klucz": "ciekawostki",
         "tytul": "Ciekawostki",
         "podsumowanie": null,
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Kwiaty są zapylane przez muchówki, błonkówki i motyle; zdarza się również samopylność.",
-            "czesc": "kwiaty",
+            "tekst": "Kwiaty pępawy dachowej są zapylane przez owady takie jak muchówki, błonkówki czy motyle, a także mogą dochodzić do samopylności.",
+            "czesc": null,
             "zrodla": [
               2
             ],
@@ -318,35 +429,44 @@
             ]
           },
           {
-            "tekst": "Jeśli kwiaty zostaną zebrane zbyt późno, podczas suszenia mogą przekształcić się w biały puch przypominający puch mniszka.",
-            "czesc": "kwiaty",
+            "tekst": "Rozsiewanie nasion pępawy dachowej odbywa się za pośrednictwem wiatru, czepiania się przez zwierzęta lub przy udziale mrówek.",
+            "czesc": "nasiona",
             "zrodla": [
-              4
+              2
             ],
             "fakty": [
-              "s1208"
+              "s1500"
             ]
           }
         ]
       }
     ],
     "czesci": {
+      "ziele": [
+        "s1496"
+      ],
       "korzeń": [
         "s1197"
       ],
       "liście": [
-        "s1198"
+        "s1198",
+        "s1497",
+        "s1490"
       ],
       "kwiaty": [
         "s1199",
-        "s1205",
+        "s1498",
+        "s1495",
         "s1208"
       ],
       "owoce": [
-        "s1200"
+        "s1200",
+        "s1499"
       ],
       "nasiona": [
-        "s1202"
+        "s1491",
+        "s1202",
+        "s1500"
       ]
     },
     "fakty": [
@@ -359,7 +479,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Pępawa dachowa",
           "url": "https://pl.wikipedia.org/wiki/P%C4%99pawa_dachowa"
-        }
+        },
+        "cytat": "o korzeniu palowym, wrzecionowatym, krótkim i pędzie prosto wzniesionym"
       },
       {
         "id": "s1198",
@@ -370,7 +491,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Pępawa dachowa",
           "url": "https://pl.wikipedia.org/wiki/P%C4%99pawa_dachowa"
-        }
+        },
+        "cytat": "Dolne skupione w rozetę przyziemną, zasychają w czasie kwitnienia. (...) Najwyższe równowąskie, długie i z reguły z brzegami podwiniętymi, siedzące i strzałkowatą nasadą obejmujące łodygę."
       },
       {
         "id": "s1199",
@@ -381,7 +503,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Pępawa dachowa",
           "url": "https://pl.wikipedia.org/wiki/P%C4%99pawa_dachowa"
-        }
+        },
+        "cytat": "W koszyczkach znajduje się od 30 do 70 kwiatów języczkowatych. (...) Korona jest jasnożółta, do 10–13 mm długości."
       },
       {
         "id": "s1200",
@@ -392,7 +515,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Pępawa dachowa",
           "url": "https://pl.wikipedia.org/wiki/P%C4%99pawa_dachowa"
-        }
+        },
+        "cytat": "Niełupki do 3 mm długości z 10 żebrami, ciemnoczerwone do brązowobrunatnych. Puch kielichowy miękki, do 5 mm długości, śnieżnobiały."
       },
       {
         "id": "s1201",
@@ -403,7 +527,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Pępawa dachowa",
           "url": "https://pl.wikipedia.org/wiki/P%C4%99pawa_dachowa"
-        }
+        },
+        "cytat": "Rośnie w miejscach suchych, zwykle na glebach piaszczystych na polach, odłogach, suchych murawach, przydrożach, w miejscach przekształconych, ruderalnych, na nieużytkach i murach, także na skrajach lasów i w widnych, głównie sosnowych lasac"
       },
       {
         "id": "s1202",
@@ -414,7 +539,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (en): Crepis tectorum",
           "url": "https://en.wikipedia.org/wiki/Crepis_tectorum"
-        }
+        },
+        "cytat": "The narrowleaf hawksbeard's scientific name 'Crepis tectorum' originates from the Greek word krepis meaning sandal or slipper, which refers to the shape of the seed."
       },
       {
         "id": "s1203",
@@ -425,7 +551,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (de): Dach-Pippau",
           "url": "https://de.wikipedia.org/wiki/Dach-Pippau"
-        }
+        },
+        "cytat": "Für den Dach-Pippau bestehen bzw. bestanden auch die weiteren deutschsprachigen Trivialnamen Grundfeste (Thüringen), Habichkraut, Hasenlattich, Hasenstrauch und Pippau (Schlesien)."
       },
       {
         "id": "s1204",
@@ -436,7 +563,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (de): Dach-Pippau",
           "url": "https://de.wikipedia.org/wiki/Dach-Pippau"
-        }
+        },
+        "cytat": "Im mittelalterlichen Latein wurde die Pflanze (möglicherweise ebenso der Kleinköpfige Pippau) auch Palatium leporis („Hasenpalast“) genannt."
       },
       {
         "id": "s1205",
@@ -447,7 +575,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (de): Dach-Pippau",
           "url": "https://de.wikipedia.org/wiki/Dach-Pippau"
-        }
+        },
+        "cytat": "Es erfolgt Insektenbestäubung durch Fliegen, Hautflügler oder Schmetterlinge oder Selbstbestäubung."
       },
       {
         "id": "s1206",
@@ -458,7 +587,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (de): Dach-Pippau",
           "url": "https://de.wikipedia.org/wiki/Dach-Pippau"
-        }
+        },
+        "cytat": "In Nordamerika, in Grönland und in Großbritannien ist Crepis tectorum ein Neophyt."
       },
       {
         "id": "s1207",
@@ -469,7 +599,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (de): Dach-Pippau",
           "url": "https://de.wikipedia.org/wiki/Dach-Pippau"
-        }
+        },
+        "cytat": "Carl von Linné kannte diese Art aus Lappland. In Norwegen und Lappland kommt diese Art auf mit Rasenziegeln gedeckten Dächern vor."
       },
       {
         "id": "s1208",
@@ -480,7 +611,152 @@
         "zrodlo": {
           "nazwa": "luckclose.ru",
           "url": "https://luckclose.ru/posle-vysyhaniya-tsvetochki-trav-prevrashhayutsya-v-puh-kak-oduvanchik/.html"
-        }
+        },
+        "cytat": "Скерда кровельная после высыхания превращается в белый пух как одуванчики, если её не вовремя собрать"
+      },
+      {
+        "id": "s1490",
+        "sekcja": "czesci_rosliny",
+        "czesc": "liście",
+        "tekst": "Liście są żółte, wąskie – mniej niż 0,5 cali (13 mm) szerokości – i ułożone naprzemianlegle.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Crepis tectorum",
+          "url": "https://en.wikipedia.org/wiki/Crepis_tectorum"
+        },
+        "cytat": "yellow leaves which are less than 0.5 inches (13 mm) wide and arranged in an alternate manner."
+      },
+      {
+        "id": "s1491",
+        "sekcja": "czesci_rosliny",
+        "czesc": "nasiona",
+        "tekst": "Nasiona są ciemnobrązowymi achene, które rozprzestrzenia wiatr dzięki włoskom zwanym pappusem.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Crepis tectorum",
+          "url": "https://en.wikipedia.org/wiki/Crepis_tectorum"
+        },
+        "cytat": "The seeds are dark purple/brown achenes dispersed by the wind using hairs called the pappus."
+      },
+      {
+        "id": "s1492",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Roślina występuje w terenach nieużytków, polach uprawnych, przydrożnych i przy drogach.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Crepis tectorum",
+          "url": "https://en.wikipedia.org/wiki/Crepis_tectorum"
+        },
+        "cytat": "Crepis tectorum is found in waste areas, conventional tillage, reduced tillage, forage and hay fields, and roadsides."
+      },
+      {
+        "id": "s1493",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Może rosnąć zarówno na glebach wapiennych, jak i na tych bez wapnia, najlepiej jednak w żyznych glinach i piaszczysto‑gliniastych, a także w suchych, grubych glebach.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Crepis tectorum",
+          "url": "https://en.wikipedia.org/wiki/Crepis_tectorum"
+        },
+        "cytat": "It is able to grow in calcareous soil as well as soil that does not contain lime. However, it grows best in nutrient rich soils containing clays and loams. It also thrives in dry, coarse soil."
+      },
+      {
+        "id": "s1494",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Ziarna kiełkują w temperaturze 2–4 °C, przy optymalnej głębokości siewu 3–4 cm.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Crepis tectorum",
+          "url": "https://en.wikipedia.org/wiki/Crepis_tectorum"
+        },
+        "cytat": "The temperature range for germination is 2–4 °C (36–39 °F), with an optimum depth of 3–4 cm (1.2–1.6 in)."
+      },
+      {
+        "id": "s1495",
+        "sekcja": "czesci_rosliny",
+        "czesc": "kwiaty",
+        "tekst": "Kwitnie od czerwca do września, wytwarzając liczne żółte kwiaty.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Crepis tectorum",
+          "url": "https://en.wikipedia.org/wiki/Crepis_tectorum"
+        },
+        "cytat": "It produces small flowers from June until September."
+      },
+      {
+        "id": "s1496",
+        "sekcja": "opis",
+        "czesc": "ziele",
+        "tekst": "Pępawa dachowa to szaro-zielona, letniozielona roślina jednoroczna lub o charakterze byliny, osiągająca wysokość od 10 do 60 centymetrów. Jej łodyga jest słabiej lub mocniej rozgałęziona, od lekko owłosionej po nagą.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Dach-Pippau",
+          "url": "https://de.wikipedia.org/wiki/Dach-Pippau"
+        },
+        "cytat": "Der Dach-Pippau ist eine grau-grüne, sommergrüne, einjährige bis ausdauernde krautige Pflanze, die Wuchshöhen von 10 bis 60 Zentimetern erreicht. Der mehr oder weniger reich verzweigte Stängel ist flaumig behaart bis kahl."
+      },
+      {
+        "id": "s1497",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Dolne liście pępawy dachowej mają ogonki i podłużny kształt, a ich brzegi są zatokowo ząbkowane lub pierzastodzielne. Górne i środkowe liście łodygowe są równowąskie, siedzą na łodydze z nasadą w kształcie sercowatym lub strzałkowatym, a ich brzegi są lekko podwinięte w dół z nielicznymi ząbkami.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Dach-Pippau",
+          "url": "https://de.wikipedia.org/wiki/Dach-Pippau"
+        },
+        "cytat": "Die unteren Laubblätter sind länglich, buchtig gezähnt bis schrotsägeförmig fiederspaltig und gestielt. Die oberen und mittleren Stängelblätter sind linealisch, mit pfeil- bis herzförmigem Grund sitzend, am Rand nach unten eingerollt und ha"
+      },
+      {
+        "id": "s1498",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Koszyczki kwiatowe o średnicy od 15 do 20 milimetrów zawierają wyłącznie jasnożółte kwiaty języczkowate i są luźno zebrane w baldachokształtne kwiatostany złożone. Dwułakowe szyjki słupka mają brązowo-zieloną barwę, a po wysuszeniu stają się czarniawe.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Dach-Pippau",
+          "url": "https://de.wikipedia.org/wiki/Dach-Pippau"
+        },
+        "cytat": "Die Blütenkörbchen weisen einen Durchmesser von 15 bis 20 Millimeter auf. Die Blütenkörbchen enthalten nur Zungenblüten. Die Zungenblüten sind hellgelb. Die zweiästigen Griffel sind bräunlich-grün und färben sich getrocknet schwärzlich."
+      },
+      {
+        "id": "s1499",
+        "sekcja": "opis",
+        "czesc": "owoce",
+        "tekst": "Nieupka tej rośliny posiada dziesięć żeberek i jest zwężona na kształt dziobka, a wyrastający z niej puch kielichowy ma czysto białą barwę.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Dach-Pippau",
+          "url": "https://de.wikipedia.org/wiki/Dach-Pippau"
+        },
+        "cytat": "Die Achäne ist zehnrippig und schnabelartig verschmälert. Der Pappus ist reinweiß."
+      },
+      {
+        "id": "s1500",
+        "sekcja": "ciekawostki",
+        "czesc": "nasiona",
+        "tekst": "Rozsiewanie nasion pępawy dachowej odbywa się za pośrednictwem wiatru, czepiania się przez zwierzęta lub przy udziale mrówek.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Dach-Pippau",
+          "url": "https://de.wikipedia.org/wiki/Dach-Pippau"
+        },
+        "cytat": "Die Ausbreitung der Diasporen, es sind die Achänen, findet durch Wind, Klettausbreitung oder Ameisen statt."
+      },
+      {
+        "id": "s1501",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Gatunek preferuje gleby zasobne w azot, piaszczysto-żwirowe lub kamieniste oraz stanowiska ciepłe. Rośnie najczęściej na murach, przy drogach, na nieużytkach, a rzadziej na odłogach i polach uprawnych.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Dach-Pippau",
+          "url": "https://de.wikipedia.org/wiki/Dach-Pippau"
+        },
+        "cytat": "Der Dach-Pippau braucht stickstoffreichen, sandig-kiesigen oder steinigen Boden. Er ist wärmeliebend und besiedelt Mauern, Wege, Ödland, seltener auch Brachen und Äcker."
       }
     ]
   },
@@ -488,6 +764,52 @@
     "wersja": 1,
     "zaktualizowano": "2026-10-09",
     "pola": {
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Roślina jednoroczna lub dwuletnia, rzadziej wieloletnia chwastowata roślina polna i ruderalna. Wyrasta na wysokość od 20 do 90 cm. Tworzy wzniesioną, sztywną i często bardzo mocno rozgałęzioną łodygę. Podobnie jak wiele innych astrowatych o żółtych kwiatach, wydziela biały sok mleczny, przez co przez laików wrzucana jest do ogólnego worka z napisem 'mlecz' lub 'mniszek'.",
+        "tresc": [
+          {
+            "tekst": "Pępawa dachowa to szaro-zielona, letniozielona roślina jednoroczna lub dwuletnia, rzadziej wieloletnia, o charakterze byliny, będąca chwastowatą rośliną polną i ruderalną.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1496"
+            ]
+          },
+          {
+            "tekst": "Poza obszarem Eurazji gatunek ten występuje jako roślina obca w Ameryce Północnej, na Grenlandii oraz w Wielkiej Brytanii.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1206"
+            ]
+          },
+          {
+            "tekst": "Wyrasta na wysokość od 10 do 90 centymetrów.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Tworzy wzniesioną, sztywną i od lekko owłosionej po nagą, słabiej lub mocniej rozgałęzioną łodygę.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1496"
+            ]
+          },
+          {
+            "tekst": "Podobnie jak wiele innych astrowatych o żółtych kwiatach, wydziela biały sok mleczny, przez co przez laików wrzucana jest do ogólnego worka z napisem 'mlecz' lub 'mniszek'.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "9c9abc5cc3d8d049"
+      },
       "identyfikacja.cechy_kluczowe": {
         "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
         "typ": "lista",
@@ -499,86 +821,106 @@
         ],
         "tresc": [
           {
-            "tekst": "Łodyga jest wzniesiona, zazwyczaj silnie rozgałęziona, wewnątrz pełna oraz podłużnie bruzdkowana, a wewnątrz całego pędu obecny jest biały sok mleczny.",
+            "tekst": "Łodyga pępawy dachowej jest wzniesiona, zazwyczaj silnie rozgałęziona, podłużnie bruzdkowana oraz pełna wewnątrz.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Liście odziomkowe, które tworzą rozetę przyziemną i zasychają w trakcie kwitnienia, są głęboko zatokowo ząbkowane.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s1198"
-            ]
-          },
-          {
-            "tekst": "Wyższe, łodygowe liście są bardzo wąskie, równowązkie, siedzące i obejmują łodygę strzałkowatą nasadą.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s1198"
-            ]
-          },
-          {
-            "tekst": "Drobne, blado- lub jasnożółte kwiaty języczkowate (w liczbie od 30 do 70 sztuk) są zebrane w koszyczki tworzące baldachopodobne wiechy lub podbaldachy na szczytach licznych pędów.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s1199"
-            ]
-          },
-          {
-            "tekst": "Roślina posiada krótki, wrzecionowaty i palowy korzeń.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s1197"
-            ]
-          },
-          {
-            "tekst": "Owoce są ciemnoczerwone lub brązowobrunatne niełupki zaopatrzone w miękki, śnieżnobiały puch kielichowy.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s1200"
-            ]
-          }
-        ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "4d52ea378c8131a1"
-      },
-      "opis": {
-        "tytul": "Opis - Opis ogólny",
-        "typ": "tekst",
-        "oryginal": "Roślina jednoroczna lub dwuletnia, rzadziej wieloletnia chwastowata roślina polna i ruderalna. Wyrasta na wysokość od 20 do 90 cm. Tworzy wzniesioną, sztywną i często bardzo mocno rozgałęzioną łodygę. Podobnie jak wiele innych astrowatych o żółtych kwiatach, wydziela biały sok mleczny, przez co przez laików wrzucana jest do ogólnego worka z napisem 'mlecz' lub 'mniszek'.",
-        "tresc": [
-          {
-            "tekst": "Pępawa dachowa (Crepis tectorum) jest rośliną jednoroczną lub dwuletnią, rzadziej wieloletnią, występującą głównie w Eurazji jako chwastowata roślina polna i ruderalna. Wyrasta na wysokość od 20 do 90 cm, posiada wzniesioną, sztywną i często mocno rozgałęzioną łodygę. Wydziela biały sok mleczny, co sprawia, że jest mylona z innymi roślinami z rodziny astrowatych o żółtych kwiatach.",
+            "tekst": "W roślinie obecny jest biały sok mleczny.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Podobnie jak wiele innych astrowatych o żółtych kwiatach, wydziela biały sok mleczny, przez co przez laików wrzucana jest do ogólnego worka z napisem 'mlecz' lub 'mniszek'.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Poza Eurazją gatunek ten rośnie jako roślina obca (neofit) w Ameryce Północnej, na Grenlandii oraz w Wielkiej Brytanii.",
+            "tekst": "Liście odziomkowe są głęboko zatokowo ząbkowane, a dolne liście tworzące rozetę przyziemną posiadają ponadto ogonki, podłużny kształt oraz brzegi zatokowo ząbkowane lub pierzastodzielne i zasychają podczas kwitnienia.",
             "zrodla": [
+              1,
               2
             ],
             "fakty": [
-              "s1206"
+              "s1198",
+              "s1497"
+            ]
+          },
+          {
+            "tekst": "Wyższe i środkowe liście łodygowe są bardzo wąskie, równowąskie i siedzące, mają sercowatą lub strzałkowatą nasadę z lekko podwiniętymi w dół brzegami i nielicznymi ząbkami.",
+            "zrodla": [
+              1,
+              2
+            ],
+            "fakty": [
+              "s1198",
+              "s1497"
+            ]
+          },
+          {
+            "tekst": "Na szczytach licznych pędów występują drobne, bladożółte i jasnożółte koszyczki kwiatowe zebrane w podbaldachy, baldachopodobne wiechy lub baldachokształtne kwiatostany złożone, zbudowane z kwiatów języczkowatych.",
+            "zrodla": [
+              1,
+              2
+            ],
+            "fakty": [
+              "s1199",
+              "s1498"
             ]
           }
         ],
-        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "4707e139581bccbf"
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "7133f8954d8e77f8"
+      },
+      "wymagania.stanowisko": {
+        "tytul": "Natura i siedlisko - Stanowisko",
+        "typ": "tekst",
+        "oryginal": "Silnie nasłonecznione.",
+        "tresc": [
+          {
+            "tekst": "Gatunek preferuje stanowiska ciepłe i silnie nasłonecznione.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Roślina ta rośnie w miejscach suchych, na terenach nieużytków, odłogów, polach uprawnych, przydrożach, przy drogach oraz na murach, a także w widnych lasach sosnowych.",
+            "zrodla": [
+              1,
+              2,
+              3
+            ],
+            "fakty": [
+              "s1201",
+              "s1492",
+              "s1501"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "ca41e07f1e26bbae"
+      },
+      "wymagania.gleba": {
+        "tytul": "Natura i siedlisko - Gleba",
+        "typ": "tekst",
+        "oryginal": "Uboga, piaszczysta, sucha. Typowy gatunek ruderalny, rosnący przy drogach, na nasypach i murach.",
+        "tresc": [
+          {
+            "tekst": "Gleba bywa uboga, piaszczysta i sucha.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Gatunek ten może rosnąć zarówno na glebach wapiennych, jak i na tych bez wapnia, najlepiej jednak rozwija się w żyznych glinach i piaszczysto-gliniastych, a także w suchych, grubych glebach.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1493"
+            ]
+          },
+          {
+            "tekst": "Jest to typowy gatunek ruderalny, rosnący przy drogach, na nasypach i murach.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "b3fe90ea66328a02"
       },
       "ciekawostki": {
         "tytul": "Wiedza tajemna - Ciekawostki",
@@ -588,12 +930,7 @@
         ],
         "tresc": [
           {
-            "tekst": "Nazwa gatunkova 'tectorum' (dachowa) wzięła się stąd, że w dawnych wiekach nasiona tej rośliny z łatwością rozsiewały się i kiełkowały na słomianyh oraz ziemnych strzechach wiejskich chalup.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Carl von Linné znał pępawę dachową z Laponii, gdzie gatunek ten porastał dachy pokryte darnią trawiasstą, co potwierdzają również obserwacje z Norwegii.",
+            "tekst": "Nazwa gatunkowa 'tectorum' (dachowa) wzięła się stąd, że w dawnych wiekach nasiona tej rośliny z łatwością rozsiewały się i kiełkowały na słomianych oraz ziemnych strzechach wiejskich chałup, co Carl von Linné potwierdzał, znając ten gatunek z Laponii porastający dachy pokryte darnią trawiastą, co ma swoje odzwierciedlenie także w obserwacjach z Norwegii.",
             "zrodla": [
               2
             ],
@@ -602,16 +939,7 @@
             ]
           },
           {
-            "tekst": "W średniowiecznej łacinie roślina nosiła nazwę „Palatium leporis” (pałac zająca), co mogło odnosić się także do innego gatunku pępawy.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s1204"
-            ]
-          },
-          {
-            "tekst": "Nazwa naukowa wywodzi się z greckiego słowa „krepis” (sandał lub pantofel), co nawiązuje do kształtu nasion.",
+            "tekst": "Nazwa naukowa pępawy dachowej wywodzi się z greckiego słowa krepis, oznaczającego sandał lub pantofel, co nawiązuje do kształtu nasion.",
             "zrodla": [
               3
             ],
@@ -620,39 +948,207 @@
             ]
           },
           {
-            "tekst": "Dawniej w niemieckojęzycznych regionach roślina nosiła nazwy ludwe takie jak Grundfeste (Turyngia), Habichkraut, Hasenlattich, Hasenstrauch, Pippau (Śląsk).",
+            "tekst": "W średniowiecznej łacinie roślina ta nosiła nazwę Palatium leporis, co oznacza „hasenpalast” (pałac zająca), co mogło odnosić się także do innego gatunku pępawy.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1204"
+            ]
+          },
+          {
+            "tekst": "Dawniej w niemieckojęzycznych regionach pępawa dachowa nosiła liczne nazwy ludowe, takie jak Grundfeste w Turyngii, a także Habichkraut, Hasenlattich, Hasenstrauch i Pippau na Śląsku.",
             "zrodla": [
               2
             ],
             "fakty": [
               "s1203"
             ]
-          },
-          {
-            "tekst": "Jeśli kwiaty zostaną zebrane zbyt późno, podczas suszenia mogą przekształcić się w biały puch przypominający puch mniszka.",
-            "zrodla": [
-              4
-            ],
-            "fakty": [
-              "s1208"
-            ]
           }
         ],
-        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "82eab896352a9826"
+        "model": "gemini/gemini-3.5-flash-lite",
+        "wejscie": "95f7f2a52685aaa4"
       }
     },
     "uzyte_fakty": [
-      "s1197",
       "s1198",
       "s1199",
-      "s1200",
+      "s1201",
       "s1202",
       "s1203",
       "s1204",
       "s1206",
       "s1207",
-      "s1208"
+      "s1492",
+      "s1493",
+      "s1496",
+      "s1497",
+      "s1498",
+      "s1501"
     ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-09",
+    "jak": "llm:gemini/gemini-3.5-flash-lite",
+    "wejscie": "be2507cfe5f787ab",
+    "wstawki": [
+      {
+        "miejsce": "natura/wymagania",
+        "rozdzial": "Natura i siedlisko",
+        "tytul": "Wymagania siedliskowe",
+        "ikona": "ra-compass",
+        "nowy": false,
+        "punkty": [
+          {
+            "tekst": "Ziarna kiełkują w temperaturze 2–4 °C, przy optymalnej głębokości siewu 3–4 cm.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1494"
+            ],
+            "sekcja": "uprawa",
+            "czesc": null
+          }
+        ]
+      },
+      {
+        "miejsce": "rozpoznawanie/budowa",
+        "rozdzial": "Rozpoznawanie w terenie",
+        "tytul": "Budowa: kwiaty, owoce i nasiona",
+        "ikona": "ra-flower",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Pępawa dachowa ma krótki, wrzecionowaty i palowy korzeń.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1197"
+            ],
+            "sekcja": "opis",
+            "czesc": "korzeń"
+          },
+          {
+            "tekst": "Owoce rośliny to ciemnoczerwone lub brązowobrunatne niełupki posiadające dziesięć żeberek, zwężone na kształt dziobka i zaopatrzone w miękki, czysto biały puch kielichowy.",
+            "zrodla": [
+              1,
+              2
+            ],
+            "fakty": [
+              "s1200",
+              "s1499"
+            ],
+            "sekcja": "opis",
+            "czesc": "owoce"
+          }
+        ]
+      },
+      {
+        "miejsce": "surowce/czesc:kwiaty",
+        "rozdzial": "Surowce i zbiory",
+        "tytul": "Kwiaty",
+        "ikona": "ra-potion",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Kwitnie od czerwca do września, wytwarzając liczne żółte kwiaty.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1495"
+            ],
+            "sekcja": "czesci_rosliny",
+            "czesc": "kwiaty"
+          },
+          {
+            "tekst": "Jeśli surowiec zebrany zbyt późno, kwiaty pępawy dachowej (nazywanej tu skerdą dachową) podczas suszenia mogą przekształcić się w biały puch przypominający puch mniszka.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1208"
+            ],
+            "sekcja": "czesci_rosliny",
+            "czesc": "kwiaty"
+          }
+        ]
+      },
+      {
+        "miejsce": "surowce/czesc:liście",
+        "rozdzial": "Surowce i zbiory",
+        "tytul": "Liście",
+        "ikona": "ra-potion",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Liście są żółte, wąskie – mniej niż 0,5 cali (13 mm) szerokości – i ułożone naprzemianlegle.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1490"
+            ],
+            "sekcja": "czesci_rosliny",
+            "czesc": "liście"
+          }
+        ]
+      },
+      {
+        "miejsce": "surowce/czesc:nasiona",
+        "rozdzial": "Surowce i zbiory",
+        "tytul": "Nasiona",
+        "ikona": "ra-potion",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Nasiona są ciemnobrązowymi achene, które rozprzestrzenia wiatr dzięki włoskom zwanym pappusem.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1491"
+            ],
+            "sekcja": "czesci_rosliny",
+            "czesc": "nasiona"
+          }
+        ]
+      },
+      {
+        "miejsce": "cykl/biologia",
+        "rozdzial": "Cykl życia i ekosystem",
+        "tytul": "Kwitnienie, zapylanie i rozsiewanie",
+        "ikona": "ra-cycle",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Kwiaty pępawy dachowej są zapylane przez owady takie jak muchówki, błonkówki czy motyle, a także mogą dochodzić do samopylności.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1205"
+            ],
+            "sekcja": "ciekawostki",
+            "czesc": null
+          },
+          {
+            "tekst": "Rozsiewanie nasion pępawy dachowej odbywa się za pośrednictwem wiatru, czepiania się przez zwierzęta lub przy udziale mrówek.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1500"
+            ],
+            "sekcja": "ciekawostki",
+            "czesc": "nasiona"
+          }
+        ]
+      }
+    ],
+    "duplikaty": []
   }
 }

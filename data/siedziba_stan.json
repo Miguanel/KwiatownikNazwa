@@ -1,34 +1,63 @@
 {
  "wersja": 1,
  "opis": "Stan Siedziby Kwiatownika i statystyki strony - zapisuje agent wdrozen (Siedziba). Strona pokazuje go w papirusie bez pytania backendu.",
- "zaktualizowano": "2026-10-09T12:16:32+02:00",
+ "zaktualizowano": "2026-10-09T18:30:05+02:00",
  "siedziba": {
-  "status": "pracuje",
-  "zadania": [
-   {
-    "opis": "zbiera wiedzę o roślinach: informacje 1-11 z 11",
-    "od": "2026-10-09T08:17:41.782054+00:00"
-   },
-   {
-    "opis": "zbiera wiedzę o roślinach: informacje 13-19 z 19",
-    "od": "2026-10-09T08:17:41.833498+00:00"
-   },
-   {
-    "opis": "tłumaczy przepisy na polski",
-    "od": "2026-10-09T09:31:26.142830+00:00"
-   },
-   {
-    "opis": "przegląda zagraniczne strony z przepisami",
-    "od": "2026-10-09T09:56:11.239253+00:00"
-   }
-  ],
+  "status": "czeka",
+  "zadania": [],
   "info": {
    "rosliny": 87,
-   "informacje_zapisane": 879,
-   "czeka_w_kolejce": 0
+   "informacje_zapisane": 903,
+   "czeka_w_kolejce": 1
   }
  },
  "wpisy": [
+  {
+   "eid": "job:320",
+   "ts": "2026-10-09T15:55:16.169455+00:00",
+   "kind": "wiedza",
+   "text": "Zebrano 10 sprawdzonych informacji o: Jastrzębiec kosmaczek, Mlecz zwyczajny, Mlecz polny, Leszczyna pospolita – trafią na stronę przy najbliższej publikacji",
+   "url": null,
+   "plant_id": null
+  },
+  {
+   "eid": "job:319",
+   "ts": "2026-10-09T15:55:07.224995+00:00",
+   "kind": "wiedza",
+   "text": "Zebrano 69 sprawdzonych informacji o: Rumianek pospolity, Modrzejec kampechiański (Logwood), Pępawa dachowa, Mlecz zwyczajny – trafią na stronę przy najbliższej publikacji",
+   "url": null,
+   "plant_id": null
+  },
+  {
+   "eid": "job:324",
+   "ts": "2026-10-09T14:21:12.906982+00:00",
+   "kind": "przepisy",
+   "text": "Przetłumaczono 7 przepisów z zagranicznych stron",
+   "url": null,
+   "plant_id": null
+  },
+  {
+   "eid": "job:323",
+   "ts": "2026-10-09T14:01:03.700604+00:00",
+   "kind": "przepisy",
+   "text": "Znaleziono 5 nowych przepisów na zagranicznych stronach",
+   "url": null,
+   "plant_id": null
+  },
+  {
+   "eid": "job:311",
+   "ts": "2026-10-09T10:29:24.077049+00:00",
+   "kind": "przepisy",
+   "text": "Przetłumaczono 7 przepisów z zagranicznych stron",
+   "url": null,
+   "plant_id": null
+  },
+  {
+   "eid": "run:66",
+   "ts": "2026-10-09T10:16:41.622816+00:00",
+   "kind": "wdrozenie",
+   "text": "Opublikowano nową wersję Kwiatownika: Nowa wiedza o 3 roślinach"
+  },
   {
    "eid": "job:310",
    "ts": "2026-10-09T09:47:24.128748+00:00",
@@ -44,53 +73,11 @@
    "text": "Przetłumaczono 4 przepisów z zagranicznych stron",
    "url": null,
    "plant_id": null
-  },
-  {
-   "eid": "job:306",
-   "ts": "2026-10-09T09:20:04.926193+00:00",
-   "kind": "przepisy",
-   "text": "Znaleziono 3 nowych przepisów na zagranicznych stronach",
-   "url": null,
-   "plant_id": null
-  },
-  {
-   "eid": "job:290",
-   "ts": "2026-10-09T07:08:10.595362+00:00",
-   "kind": "wiedza",
-   "text": "Zebrano 108 sprawdzonych informacji o: Rokitnik zwyczajny, Chmiel zwyczajny, Głóg jednoszyjkowy, Macierzanka piaskowa – trafią na stronę przy najbliższej publikacji",
-   "url": null,
-   "plant_id": null
-  },
-  {
-   "eid": "run:38",
-   "ts": "2026-10-09T07:03:37.203688+00:00",
-   "kind": "wdrozenie",
-   "text": "Opublikowano nową wersję Kwiatownika: Nowa wiedza o 2 roślinach"
-  },
-  {
-   "eid": "run:33",
-   "ts": "2026-10-08T19:33:00.508307+00:00",
-   "kind": "audyt",
-   "text": "Audyt bazy wiedzy: ocena 46/100 – Siedziba wie, czego szukać dalej"
-  },
-  {
-   "eid": "run:31",
-   "ts": "2026-10-08T19:23:36.719441+00:00",
-   "kind": "wdrozenie",
-   "text": "Opublikowano nową wersję Kwiatownika: Nowa wiedza o 1 roślinie"
-  },
-  {
-   "eid": "job:283",
-   "ts": "2026-10-08T19:15:40.283856+00:00",
-   "kind": "wiedza",
-   "text": "Zebrano 59 sprawdzonych informacji o: Indygowiec barwierski, Modrzejec kampechiański (Logwood), Marzanna barwierska, Poziomka pospolita – trafią na stronę przy najbliższej publikacji",
-   "url": null,
-   "plant_id": null
   }
  ],
  "statystyki": {
   "okres_dni": 7,
-  "goscie_tydzien": 5,
+  "goscie_tydzien": 7,
   "odslony_tydzien": 17,
   "plantid_tydzien": 0,
   "plantid_razem": 0,

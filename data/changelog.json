@@ -3,16 +3,16 @@
  "opis": "Kronika Siedziby Kwiatownika - pisze ja agent wdrozen (Siedziba).",
  "wpisy": [
   {
-   "data": "2026-10-09T12:16:32+02:00",
-   "tytul": "Nowa wiedza o 3 roślinach",
-   "opis": "Siedziba zebrała 94 sprawdzone informacje (źródła: niemieckie, angielskie, japońskie, chińskie). 41 informacji z sieci trafiło do właściwych rozdziałów i podrozdziałów stron roślin.",
+   "data": "2026-10-09T18:30:05+02:00",
+   "tytul": "Nowa wiedza o 6 roślinach",
+   "opis": "Siedziba zebrała 168 sprawdzonych informacji (źródła: niemieckie, angielskie, japońskie, rosyjskie, chińskie). 51 informacji z sieci trafiło do właściwych rozdziałów i podrozdziałów stron roślin.",
    "liczby": {
-    "informacje": 94,
+    "informacje": 168,
     "przepisy": 0,
-    "rosliny": 3,
+    "rosliny": 6,
     "nowe_rosliny": 0,
     "zdjecia": 0,
-    "rozmieszczone": 41
+    "rozmieszczone": 51
    },
    "rosliny": [
     {
@@ -38,30 +38,6 @@
      ]
     },
     {
-     "id": "jastrzebiec_kosmaczek",
-     "nazwa": "Jastrzębiec kosmaczek",
-     "nowe": 13,
-     "jezyki": [
-      "de",
-      "en"
-     ]
-    }
-   ],
-   "przepisy": []
-  },
-  {
-   "data": "2026-10-09T09:03:32+02:00",
-   "tytul": "Nowa wiedza o 2 roślinach",
-   "opis": "Siedziba zebrała 67 sprawdzonych informacji (źródła: niemieckie, angielskie, rosyjskie, chińskie).",
-   "liczby": {
-    "informacje": 67,
-    "przepisy": 0,
-    "rosliny": 2,
-    "nowe_rosliny": 0,
-    "zdjecia": 0
-   },
-   "rosliny": [
-    {
      "id": "rokitnik_zwyczajny",
      "nazwa": "Rokitnik zwyczajny",
      "nowe": 38,
@@ -78,9 +54,34 @@
       "en",
       "zh"
      ]
+    },
+    {
+     "id": "jastrzebiec_kosmaczek",
+     "nazwa": "Jastrzębiec kosmaczek",
+     "nowe": 13,
+     "jezyki": [
+      "de",
+      "en"
+     ]
+    },
+    {
+     "id": "pepawa_dachowa",
+     "nazwa": "Pępawa dachowa",
+     "nowe": 7,
+     "jezyki": [
+      "de",
+      "en",
+      "ru"
+     ]
     }
    ],
-   "przepisy": []
+   "przepisy": [],
+   "aktualizacje": 3,
+   "godziny": [
+    "09:03",
+    "12:16",
+    "18:30"
+   ]
   },
   {
    "data": "2026-10-08T21:23:30+02:00",
