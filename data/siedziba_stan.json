@@ -1,0 +1,90 @@
+{
+ "wersja": 1,
+ "opis": "Stan Siedziby Kwiatownika i statystyki strony - zapisuje agent wdrozen (Siedziba). Strona pokazuje go w papirusie bez pytania backendu.",
+ "zaktualizowano": "2026-10-09T08:33:04+02:00",
+ "siedziba": {
+  "status": "pracuje",
+  "zadania": [
+   {
+    "opis": "zbiera wiedzę o roślinach: landscapeplants.oregonstate.edu",
+    "od": "2026-10-09T06:31:30.073913+00:00"
+   }
+  ],
+  "info": {
+   "rosliny": 87,
+   "informacje_zapisane": 630,
+   "czeka_w_kolejce": 0
+  }
+ },
+ "wpisy": [
+  {
+   "eid": "run:33",
+   "ts": "2026-10-08T19:33:00.508307+00:00",
+   "kind": "audyt",
+   "text": "Audyt bazy wiedzy: ocena 46/100 – Siedziba wie, czego szukać dalej"
+  },
+  {
+   "eid": "run:31",
+   "ts": "2026-10-08T19:23:36.719441+00:00",
+   "kind": "wdrozenie",
+   "text": "Opublikowano nową wersję Kwiatownika: Nowa wiedza o 1 roślinie"
+  },
+  {
+   "eid": "job:283",
+   "ts": "2026-10-08T19:15:40.283856+00:00",
+   "kind": "wiedza",
+   "text": "Zebrano 59 sprawdzonych informacji o: Indygowiec barwierski, Modrzejec kampechiański (Logwood), Marzanna barwierska, Poziomka pospolita – trafią na stronę przy najbliższej publikacji",
+   "url": null,
+   "plant_id": null
+  },
+  {
+   "eid": "job:271",
+   "ts": "2026-10-07T19:36:22.937828+00:00",
+   "kind": "przepisy",
+   "text": "Przetłumaczono 1 przepisów z zagranicznych stron",
+   "url": null,
+   "plant_id": null
+  },
+  {
+   "eid": "run:4",
+   "ts": "2026-10-07T18:49:28.767981+00:00",
+   "kind": "audyt",
+   "text": "Audyt bazy wiedzy: ocena 44/100 – Siedziba wie, czego szukać dalej"
+  },
+  {
+   "eid": "run:2",
+   "ts": "2026-10-07T18:47:29.317151+00:00",
+   "kind": "audyt",
+   "text": "Audyt bazy wiedzy: ocena 43/100 – Siedziba wie, czego szukać dalej"
+  }
+ ],
+ "statystyki": {
+  "okres_dni": 7,
+  "goscie_tydzien": 4,
+  "odslony_tydzien": 14,
+  "plantid_tydzien": 0,
+  "plantid_razem": 0,
+  "najczesciej_czytane": [
+   {
+    "id": "bez_czarny",
+    "nazwa": "Bez czarny",
+    "n": 6
+   },
+   {
+    "id": "chmiel_zwyczajny",
+    "nazwa": "Chmiel zwyczajny",
+    "n": 3
+   },
+   {
+    "id": "rumianek_pospolity",
+    "nazwa": "Rumianek pospolity",
+    "n": 1
+   },
+   {
+    "id": "rokitnik_zwyczajny",
+    "nazwa": "Rokitnik zwyczajny",
+    "n": 1
+   }
+  ]
+ }
+}
