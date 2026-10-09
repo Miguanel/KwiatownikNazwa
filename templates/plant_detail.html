@@ -40,8 +40,10 @@
 
 {# Wiedza z sieci wmontowana przez Siedzibe w rozdzialy (blok "scalone", app/utils/merged.py):
    tekst reczny + informacje z sieci, z przypisami [n] do zrodel; oryginal do rozwiniecia. #}
+{# przypis [n]: klikniecie = dymek zrodla (static/js/zrodla_dymki.js): co to za strona, czy dziala, miniatura strony,
+   fragment zrodla i link przewijajacy do miejsca informacji; Ctrl/srodkowy przycisk = zwykle otwarcie strony #}
 {% macro sc_refs(t) -%}
-    {%- for z in t.refs %}<a class="web-ref" href="{{ z.url }}" target="_blank" rel="noopener nofollow" title="{{ z.nazwa or z.url }}">[{{ z.nr }}]</a>{% endfor -%}
+    {%- for z in t.refs %}<a class="web-ref" href="{{ z.url }}" target="_blank" rel="noopener nofollow" title="{{ z.nazwa or z.url }}" data-kw-src="{{ z.url.split('/')[2] if z.url.count('/') >= 2 else '' }}" data-kw-name="{{ z.nazwa }}"{% if z.jezyk %} data-kw-lang="{{ z.jezyk }}"{% endif %}{% if z.cytat %} data-kw-cytat="{{ z.cytat }}"{% endif %}>[{{ z.nr }}]</a>{% endfor -%}
 {%- endmacro %}
 {% macro sc_inline(m) -%}
     <span class="merged-text" data-n="{{ m.tresc | length }}">{% for t in m.tresc %}{{ t.tekst }}{{ sc_refs(t) }}{{ ' ' if not loop.last }}{% endfor %}</span>
@@ -56,6 +58,33 @@
 {% macro blok(p, path, value) -%}
     {%- set m = scalone(p, path) -%}
     <p>{% if m %}{{ sc_inline(m) }}{% else %}{{ value if value is not undefined and value is not none else '' }}{% endif %}</p>{% if m %}{{ sc_orig(m) }}{% endif %}
+{%- endmacro %}
+{# Wiedza z sieci ROZMIESZCZONA przez Siedzibe (blok "rozmieszczenie", app/utils/merged.py): punkty, ktorych
+   scalanie nie wplotlo w tekst, w konkretnych miejscach strony - pod trescia podrozdzialu z szablonu, jako nowe
+   podrozdzialy na koncu rozdzialu albo w rozdzialach dodanych w "Ukladzie strony" Siedziby. #}
+{% macro z_sieci_lista(punkty) -%}
+    <ul class="web-facts web-insert-list">{% for p in punkty %}<li>{% if p.czesc %}<span class="web-chip">{{ p.czesc }}</span> {% endif %}{{ p.tekst }}{{ sc_refs(p) }}</li>{% endfor %}</ul>
+{%- endmacro %}
+{% macro wst(p, miejsce) -%}
+    {%- set w = wstawka(p, miejsce) -%}
+    {%- if w %}<div class="web-insert"><p class="web-insert-head"><span aria-hidden="true">🌐</span> Uzupełnienie z sieci</p>{{ z_sieci_lista(w.punkty) }}</div>{% endif -%}
+{%- endmacro %}
+{% macro web_subtab(w) -%}
+    <details class="grimmoire-subtab web-subtab{% if w.miejsce.startswith('surowce/czesc:') %} part-subtab{% endif %}">
+        <summary><span class="subtab-title-group"><i class="ra {{ w.ikona }}"></i> {{ w.tytul }} <span class="part-badge web-part-badge" title="Podrozdział z wiedzy zebranej w sieci przez Siedzibę Kwiatownika – źródła w przypisach [n]">🌐 z sieci</span></span></summary>
+        <div class="subtab-content">{{ z_sieci_lista(w.punkty) }}</div>
+    </details>
+{%- endmacro %}
+{% macro wst_nowe(p, rozdzial) -%}
+    {%- for w in nowe_podrozdzialy(p, rozdzial) %}{{ web_subtab(w) }}{% endfor -%}
+{%- endmacro %}
+{% macro rozdzialy_wlasne(p, po) -%}
+    {%- for ch in wlasne_rozdzialy(p, po) %}
+            <details class="grimmoire-tab web-tab">
+                <summary><i class="ra {{ ch.ikona }}"></i> {{ ch.tytul }}</summary>
+                <div class="tab-content">{% for w in ch.wstawki %}{{ web_subtab(w) }}{% endfor %}</div>
+            </details>
+    {%- endfor -%}
 {%- endmacro %}
 {% macro lista(p, path, items, icon) -%}
     {%- set m = scalone(p, path) -%}
@@ -108,7 +137,7 @@
 
             {% set pe = plant.profil_energetyczny if plant.profil_energetyczny is mapping else {} %}
             {% set wy = plant.wymagania if plant.wymagania is mapping else {} %}
-            {% if pe or wy or scalone_jest(plant, 'profil_energetyczny') or scalone_jest(plant, 'wymagania') %}
+            {% if pe or wy or scalone_jest(plant, 'profil_energetyczny') or scalone_jest(plant, 'wymagania') or rozdzial_z_sieci(plant, 'natura') %}
             <details class="grimmoire-tab">
                 <summary><i class="ra ra-moon-sun"></i> Natura i Siedlisko</summary>
                 <div class="tab-content">
@@ -125,6 +154,7 @@
                             </ul>
                             {% set m_pe = scalone(plant, 'profil_energetyczny.opis') %}
                             {% if pe.opis or m_pe %}<p class="energy-quote">{% if m_pe %}{{ sc_inline(m_pe) }}{% else %}"{{ pe.opis }}"{% endif %}</p>{% if m_pe %}{{ sc_orig(m_pe) }}{% endif %}{% endif %}
+                            {{ wst(plant, 'natura/profil') }}
                         </div>
                     </details>
                     {% endif %}
@@ -140,22 +170,26 @@
                                 {% if wy.ph_gleby or scalone(plant, 'wymagania.ph_gleby') %}<li><strong>pH gleby:</strong> {{ pole(plant, 'wymagania.ph_gleby', wy.ph_gleby) }}</li>{% endif %}
                                 <li><strong>Mrozoodporność:</strong> {{ pole(plant, 'wymagania.mrozoodpornosc', wy.mrozoodpornosc) }}</li>
                             </ul>
+                            {{ wst(plant, 'natura/wymagania') }}
                         </div>
                     </details>
                     {% endif %}
+                    {{ wst_nowe(plant, 'natura') }}
 
                 </div>
             </details>
             {% endif %}
+            {{ rozdzialy_wlasne(plant, 'natura') }}
 
             {% set idf = plant.identyfikacja if plant.identyfikacja is mapping else {} %}
-            {% if idf or scalone_jest(plant, 'identyfikacja') %}
+            {% if idf or scalone_jest(plant, 'identyfikacja') or rozdzial_z_sieci(plant, 'rozpoznawanie') %}
             <details class="grimmoire-tab">
                 <summary><i class="ra ra-eye-monster"></i> Rozpoznawanie w terenie</summary>
                 <div class="tab-content">
                     <ul class="feature-list">
                         {{ lista(plant, 'identyfikacja.cechy_kluczowe', idf.cechy_kluczowe, 'ra-leaf') }}
                     </ul>
+                    {{ wst(plant, 'rozpoznawanie/cechy') }}
 
                     {% if idf.mozliwe_pomyłki %}
                     <details class="grimmoire-subtab danger-subtab">
@@ -174,15 +208,18 @@
                             {% else %}
                                 <p>{{ pomylka }}</p>
                             {% endif %}{% endfor %}
+                            {{ wst(plant, 'rozpoznawanie/pomylki') }}
                         </div>
                     </details>
                     {% endif %}
+                    {{ wst_nowe(plant, 'rozpoznawanie') }}
                 </div>
             </details>
             {% endif %}
+            {{ rozdzialy_wlasne(plant, 'rozpoznawanie') }}
 
             {% set czesci = wszystkie_czesci(plant) %}
-            {% if czesci %}
+            {% if czesci or rozdzial_z_sieci(plant, 'surowce') %}
             <details class="grimmoire-tab">
                 <summary><i class="ra ra-fizzing-flask"></i> Surowce i Zbiory</summary>
                 <div class="tab-content">
@@ -225,78 +262,85 @@
                             {% if dane.czas_zbioru or scalone(plant, cp ~ 'czas_zbioru') %}
                             <div class="part-time"><i class="ra ra-hourglass"></i> Zbiór: <strong>{{ pole(plant, cp ~ 'czas_zbioru', dane.czas_zbioru) }}</strong></div>
                             {% endif %}
+                            {{ wst(plant, 'surowce/czesc:' ~ klucz) }}
                         </div>
                     </details>
                     {% endif %}{% endfor %}
+                    {{ wst_nowe(plant, 'surowce') }}
                 </div>
             </details>
             {% endif %}
+            {{ rozdzialy_wlasne(plant, 'surowce') }}
 
             {% set za = plant.zastosowanie if plant.zastosowanie is mapping else {} %}
-            {% if za or scalone_jest(plant, 'zastosowanie') %}
+            {% if za or scalone_jest(plant, 'zastosowanie') or rozdzial_z_sieci(plant, 'zastosowanie') %}
             <details class="grimmoire-tab">
                 <summary><i class="ra ra-anvil"></i> Praktyczne Zastosowanie</summary>
                 <div class="tab-content">
                     {% if za.medyczne or scalone(plant, 'zastosowanie.medyczne') %}
                     <details class="grimmoire-subtab">
                         <summary><i class="ra ra-health"></i> Medycyna</summary>
-                        <div class="subtab-content">{{ blok(plant, 'zastosowanie.medyczne', za.medyczne) }}</div>
+                        <div class="subtab-content">{{ blok(plant, 'zastosowanie.medyczne', za.medyczne) }}{{ wst(plant, 'zastosowanie/medycyna') }}</div>
                     </details>
                     {% endif %}
 
                     {% if za.kulinarne or scalone(plant, 'zastosowanie.kulinarne') %}
                     <details class="grimmoire-subtab">
                         <summary><i class="ra ra-meat"></i> Kuchnia</summary>
-                        <div class="subtab-content">{{ blok(plant, 'zastosowanie.kulinarne', za.kulinarne) }}</div>
+                        <div class="subtab-content">{{ blok(plant, 'zastosowanie.kulinarne', za.kulinarne) }}{{ wst(plant, 'zastosowanie/kuchnia') }}</div>
                     </details>
                     {% endif %}
 
                     {% if za.rzemieslnicze or scalone(plant, 'zastosowanie.rzemieslnicze') %}
                     <details class="grimmoire-subtab">
                         <summary><i class="ra ra-hammer"></i> Rzemiosło</summary>
-                        <div class="subtab-content">{{ blok(plant, 'zastosowanie.rzemieslnicze', za.rzemieslnicze) }}</div>
+                        <div class="subtab-content">{{ blok(plant, 'zastosowanie.rzemieslnicze', za.rzemieslnicze) }}{{ wst(plant, 'zastosowanie/rzemioslo') }}</div>
                     </details>
                     {% endif %}
 
                     {% if za.kosmetyczne or scalone(plant, 'zastosowanie.kosmetyczne') %}
                     <details class="grimmoire-subtab">
                         <summary><i class="ra ra-flower"></i> Kosmetyka</summary>
-                        <div class="subtab-content">{{ blok(plant, 'zastosowanie.kosmetyczne', za.kosmetyczne) }}</div>
+                        <div class="subtab-content">{{ blok(plant, 'zastosowanie.kosmetyczne', za.kosmetyczne) }}{{ wst(plant, 'zastosowanie/kosmetyka') }}</div>
                     </details>
                     {% endif %}
 
                     {% if za.ogrodowe or scalone(plant, 'zastosowanie.ogrodowe') %}
                     <details class="grimmoire-subtab">
                         <summary><i class="ra ra-pine-tree"></i> Ogród</summary>
-                        <div class="subtab-content">{{ blok(plant, 'zastosowanie.ogrodowe', za.ogrodowe) }}</div>
+                        <div class="subtab-content">{{ blok(plant, 'zastosowanie.ogrodowe', za.ogrodowe) }}{{ wst(plant, 'zastosowanie/ogrod') }}</div>
                     </details>
                     {% endif %}
+                    {{ wst_nowe(plant, 'zastosowanie') }}
                 </div>
             </details>
             {% endif %}
+            {{ rozdzialy_wlasne(plant, 'zastosowanie') }}
 
-            {% if plant.interakcje or plant.ostrzezenia or scalone(plant, 'interakcje') or scalone(plant, 'ostrzezenia') %}
+            {% if plant.interakcje or plant.ostrzezenia or scalone(plant, 'interakcje') or scalone(plant, 'ostrzezenia') or rozdzial_z_sieci(plant, 'bezpieczenstwo') %}
             <details class="grimmoire-tab danger-tab">
                 <summary><i class="ra ra-bleeding-eye"></i> Bezpieczeństwo i Interakcje</summary>
                 <div class="tab-content">
                     {% if plant.interakcje or scalone(plant, 'interakcje') %}
                     <details class="grimmoire-subtab danger-subtab" open>
                         <summary><i class="ra ra-potion"></i> Interakcje z lekami</summary>
-                        <div class="subtab-content danger-block">{{ blok(plant, 'interakcje', plant.interakcje) }}</div>
+                        <div class="subtab-content danger-block">{{ blok(plant, 'interakcje', plant.interakcje) }}{{ wst(plant, 'bezpieczenstwo/interakcje') }}</div>
                     </details>
                     {% endif %}
 
                     {% if plant.ostrzezenia or scalone(plant, 'ostrzezenia') %}
                     <details class="grimmoire-subtab danger-subtab" open>
                         <summary><i class="ra ra-lightning-bolt"></i> Przeciwwskazania</summary>
-                        <div class="subtab-content danger-block">{{ blok(plant, 'ostrzezenia', plant.ostrzezenia) }}</div>
+                        <div class="subtab-content danger-block">{{ blok(plant, 'ostrzezenia', plant.ostrzezenia) }}{{ wst(plant, 'bezpieczenstwo/przeciwwskazania') }}</div>
                     </details>
                     {% endif %}
+                    {{ wst_nowe(plant, 'bezpieczenstwo') }}
                 </div>
             </details>
             {% endif %}
+            {{ rozdzialy_wlasne(plant, 'bezpieczenstwo') }}
 
-            {% if plant.kalendarz_ogrodnika or plant.permakultura %}
+            {% if plant.kalendarz_ogrodnika or plant.permakultura or rozdzial_z_sieci(plant, 'cykl') %}
             <details class="grimmoire-tab">
                 <summary><i class="ra ra-cycle"></i> Cykl Życia i Ekosystem</summary>
                 <div class="tab-content">
@@ -318,6 +362,7 @@
                                 </div>
                             </div>
                             {% endfor %}
+                            {{ wst(plant, 'cykl/kalendarz') }}
                         </div>
                     </details>
                     {% endif %}
@@ -344,106 +389,19 @@
                                     </div>
                                 {% endfor %}
                             </div>
+                            {{ wst(plant, 'cykl/permakultura') }}
                         </div>
                     </details>
                     {% endif %}
+                    {{ wst_nowe(plant, 'cykl') }}
 
                 </div>
             </details>
             {% endif %}
+            {{ rozdzialy_wlasne(plant, 'cykl') }}
 
-            {% if plant.wiedza and plant.wiedza.sekcje %}
-            {# Wiedza uporzadkowana przez agregator Siedziby: sekcje -> punkty z numerami zrodel [n] #}
-            {% set zr = {} %}
-            {% for z in plant.wiedza.zrodla or [] %}{% if z.url and (z.url.startswith('http://') or z.url.startswith('https://')) %}{% set _ = zr.update({z.nr: z}) %}{% endif %}{% endfor %}
-            {% set n_pkt = namespace(v=0) %}
-            {% set n_all = namespace(v=0) %}
-            {% for s in plant.wiedza.sekcje %}{% for p in s.punkty or [] %}{% set n_all.v = n_all.v + 1 %}{% if poza_rozdzialami(plant, p) %}{% set n_pkt.v = n_pkt.v + 1 %}{% endif %}{% endfor %}{% endfor %}
-            <details class="grimmoire-tab" open>
-                <summary><i class="ra ra-globe"></i> Wiedza z sieci</summary>
-                <div class="tab-content">
-                    <p class="web-note">Informacje zebrane z Wikipedii i stron z różnych krajów, każda sprawdzona z cytatem
-                    źródła i uporządkowana. Numery [1] prowadzą do źródeł.{% if n_all.v > n_pkt.v %} {{ n_all.v - n_pkt.v }} informacji
-                    wmontowano w rozdziały powyżej (Natura, Surowce, Zastosowanie...) - tam też mają przypisy do źródeł.{% endif %}{% if plant.wiedza.zaktualizowano %} Aktualizacja: {{ plant.wiedza.zaktualizowano }}.{% endif %}</p>
-                    {% if plant.wiedza.czesci %}
-                    <p class="web-parts">Części rośliny:
-                        {% for part, ids in plant.wiedza.czesci.items() %}<span class="web-chip">{{ part }} ({{ ids | length }})</span>{% endfor %}
-                    </p>
-                    {% endif %}
-                    {% for sec in plant.wiedza.sekcje %}{% set ns_r = namespace(items=[]) %}{% for p in sec.punkty or [] %}{% if poza_rozdzialami(plant, p) %}{% set ns_r.items = ns_r.items + [p] %}{% endif %}{% endfor %}{% if ns_r.items %}
-                        <details class="grimmoire-subtab"{% if sec.klucz in ('barwienie', 'kultura', 'zastosowanie_lecznicze', 'bezpieczenstwo') %} open{% endif %}>
-                            <summary>{{ '🎨 ' if sec.klucz == 'barwienie' else ('⚠️ ' if sec.klucz == 'bezpieczenstwo' else '') }}{{ sec.tytul or sec.klucz }}</summary>
-                            <div class="subtab-content">
-                                {% if sec.podsumowanie and ns_r.items | length == sec.punkty | length %}
-                                <p class="web-summary">{{ sec.podsumowanie }}{% for n in sec.podsumowanie_zrodla or [] %}{% if n in zr %}<a class="web-ref" href="{{ zr[n].url }}" target="_blank" rel="noopener nofollow" title="{{ zr[n].nazwa }}">[{{ n }}]</a>{% endif %}{% endfor %}</p>
-                                {% endif %}
-                                <ul class="web-facts">
-                                {% for p in ns_r.items %}
-                                    <li>{% if p.czesc %}<span class="web-chip">{{ p.czesc }}</span> {% endif %}{{ p.tekst }}{% for n in p.zrodla or [] %}{% if n in zr %}<a class="web-ref" href="{{ zr[n].url }}" target="_blank" rel="noopener nofollow" title="{{ zr[n].nazwa }}">[{{ n }}]</a>{% endif %}{% endfor %}</li>
-                                {% endfor %}
-                                </ul>
-                            </div>
-                        </details>
-                    {% endif %}{% endfor %}
-                    {% if zr %}
-                    <details class="grimmoire-subtab" data-kw-zrodla>
-                        <summary><i class="ra ra-quill-ink"></i> Źródła wiedzy</summary>
-                        <div class="subtab-content">
-                            <ol class="web-sources">
-                            {% for z in plant.wiedza.zrodla %}{% if z.nr in zr %}
-                                <li value="{{ z.nr }}"><a href="{{ z.url }}" target="_blank" rel="noopener nofollow">{{ z.nazwa or z.url }}</a>{% if z.jezyk %} <span class="web-lang">[{{ z.jezyk }}]</span>{% endif %}</li>
-                            {% endif %}{% endfor %}
-                            </ol>
-                        </div>
-                    </details>
-                    {% endif %}
-                </div>
-            </details>
-            {% elif plant.wiedza and plant.wiedza.fakty %}
-            {% set sekcje = {'opis': 'Opis i wygląd', 'wystepowanie': 'Występowanie', 'czesci_rosliny': 'Części rośliny i surowce',
-                             'sklad': 'Skład i substancje czynne', 'zastosowanie_lecznicze': 'Ziołolecznictwo i medycyna ludowa',
-                             'barwienie': 'Barwienie i rzemiosło', 'kosmetyka': 'Kosmetyka', 'historia': 'Historia i nazwa',
-                             'kultura': 'Wierzenia i tradycje', 'nazwy_ludowe': 'Nazwy ludowe', 'bezpieczenstwo': 'Bezpieczeństwo',
-                             'uprawa': 'Uprawa', 'ciekawostki': 'Ciekawostki'} %}
-            <details class="grimmoire-tab" open>
-                <summary><i class="ra ra-globe"></i> Wiedza z sieci</summary>
-                <div class="tab-content">
-                    <p class="web-note">Informacje zebrane z Wikipedii i stron z różnych krajów, każda sprawdzona z cytatem
-                    źródła. Kliknij źródło, aby zweryfikować je samodzielnie.{% if plant.wiedza.zaktualizowano %} Aktualizacja: {{ plant.wiedza.zaktualizowano }}.{% endif %}</p>
-                    {% for key, title in sekcje.items() %}
-                        {% set items = plant.wiedza.fakty | selectattr('sekcja', 'equalto', key) | list %}
-                        {% if items %}
-                        <details class="grimmoire-subtab"{% if key in ('barwienie', 'kultura', 'zastosowanie_lecznicze') %} open{% endif %}>
-                            <summary>{{ '🎨 ' if key == 'barwienie' else '' }}{{ title }}</summary>
-                            <div class="subtab-content">
-                                <ul class="web-facts">
-                                {% for f in items %}
-                                    <li>{{ f.tekst }}{% if f.czesc %} <em class="web-part">({{ f.czesc }})</em>{% endif %}
-                                        {% if f.zrodlo and f.zrodlo.url and (f.zrodlo.url.startswith('http://') or f.zrodlo.url.startswith('https://')) %}
-                                        <a class="web-src" href="{{ f.zrodlo.url }}" target="_blank" rel="noopener nofollow" title="{{ f.zrodlo.nazwa }}">↗ {{ f.zrodlo.url.split('/')[2] }}{% if f.jezyk %} [{{ f.jezyk }}]{% endif %}</a>
-                                        {% endif %}
-                                    </li>
-                                {% endfor %}
-                                </ul>
-                            </div>
-                        </details>
-                        {% endif %}
-                    {% endfor %}
-                    {% if plant.wiedza.zrodla %}
-                    <details class="grimmoire-subtab" data-kw-zrodla>
-                        <summary><i class="ra ra-quill-ink"></i> Źródła wiedzy</summary>
-                        <div class="subtab-content">
-                            <ol class="arch-bib">
-                            {% for z in plant.wiedza.zrodla %}{% if z.url and (z.url.startswith('http://') or z.url.startswith('https://')) %}
-                                <li><a href="{{ z.url }}" target="_blank" rel="noopener nofollow">{{ z.nazwa or z.url }}</a></li>
-                            {% endif %}{% endfor %}
-                            </ol>
-                        </div>
-                    </details>
-                    {% endif %}
-                </div>
-            </details>
-            {% endif %}
+            {# Zakladki "Wiedza z sieci" juz nie ma: wiedza z sieci jest wpleciona w tekst rozdzialow (blok "scalone")
+               albo rozmieszczona w ich podrozdzialach (blok "rozmieszczenie"); zrodla - na dole "Wiedzy tajemnej". #}
 
             {% if legacy and legacy.sekcje %}
             <details class="grimmoire-tab">
@@ -486,16 +444,43 @@
             </details>
             {% endif %}
 
-            {% if plant.ciekawostki or scalone(plant, 'ciekawostki') %}
+            {% set wc = wstawka(plant, 'tajemna/ciekawostki') %}
+            {% set pozostale = pozostale_z_sieci(plant) %}
+            {% set zw = zrodla_wiedzy(plant) %}
+            {% if plant.ciekawostki or scalone(plant, 'ciekawostki') or rozdzial_z_sieci(plant, 'tajemna') or pozostale or zw %}
             <details class="grimmoire-tab">
                 <summary><i class="ra ra-scroll"></i> Wiedza Tajemna</summary>
                 <div class="tab-content">
+                    {% if plant.ciekawostki or scalone(plant, 'ciekawostki') or wc %}
                     <ul class="trivia-list">
                         {{ lista(plant, 'ciekawostki', plant.ciekawostki if plant.ciekawostki is iterable and plant.ciekawostki is not string else [], 'ra-emerald') }}
+                        {% if wc %}{% for p in wc.punkty %}<li class="web-li"><i class="ra ra-emerald"></i> <span class="web-mark" title="z sieci (Siedziba Kwiatownika)">🌐</span> {{ p.tekst }}{{ sc_refs(p) }}</li>{% endfor %}{% endif %}
                     </ul>
+                    {% endif %}
+                    {{ wst_nowe(plant, 'tajemna') }}
+                    {% if pozostale %}
+                    <details class="grimmoire-subtab web-subtab">
+                        <summary><i class="ra ra-globe"></i> Inne informacje z sieci <span class="part-badge web-part-badge">🌐 z sieci</span></summary>
+                        <div class="subtab-content">{{ z_sieci_lista(pozostale) }}</div>
+                    </details>
+                    {% endif %}
+                    {% if zw %}
+                    <details class="grimmoire-subtab" data-kw-zrodla>
+                        <summary><i class="ra ra-quill-ink"></i> Źródła wiedzy z sieci</summary>
+                        <div class="subtab-content">
+                            <p class="web-note">Informacje oznaczone przypisem [n] zebrała z Wikipedii i stron z różnych krajów Siedziba Kwiatownika – każda sprawdzona z cytatem źródła. Kliknij przypis albo źródło, żeby zobaczyć podgląd strony.</p>
+                            <ol class="web-sources">
+                            {% for z in zw %}
+                                <li value="{{ z.nr }}"><a href="{{ z.url }}" target="_blank" rel="noopener nofollow" data-kw-src="{{ z.url.split('/')[2] if z.url.count('/') >= 2 else '' }}" data-kw-name="{{ z.nazwa }}"{% if z.jezyk %} data-kw-lang="{{ z.jezyk }}"{% endif %}>{{ z.nazwa }}</a>{% if z.jezyk %} <span class="web-lang">[{{ z.jezyk }}]</span>{% endif %}</li>
+                            {% endfor %}
+                            </ol>
+                        </div>
+                    </details>
+                    {% endif %}
                 </div>
             </details>
             {% endif %}
+            {{ rozdzialy_wlasne(plant, 'tajemna') }}
 
         </div>
     </article>
@@ -711,6 +696,14 @@
     .web-sources li { margin-bottom: 4px; overflow-wrap: anywhere; }
     .web-sources a { color: #2c5fa0; font-size: 0.9em; }
     .web-lang { color: var(--kw-muted); font-size: 0.8em; }
+    /* wiedza z sieci rozmieszczona w rozdzialach (blok "rozmieszczenie") */
+    .web-insert { margin-top: 12px; padding: 8px 12px 4px; border-left: 3px solid #a9c3e4; background: #f5f8fc; border-radius: 0 4px 4px 0; }
+    .web-insert-head { margin: 0 0 6px; font-size: 0.85em; color: #24548c; font-weight: bold; letter-spacing: 0.2px; }
+    .danger-block .web-insert { background: #fbf4f2; border-left-color: #d9a8a0; }
+    .web-subtab > summary .web-part-badge { font-size: 0.7em; margin-left: 4px; }
+    .web-li .web-mark { font-size: 0.85em; }
+    .web-tab > summary i { color: #4f79ad; }
+    .web-ref[data-kw-src] { cursor: pointer; }
 
     /* LICZNIKI INFORMACJI przy rozdziałach i podrozdziałach (liczone w JS z tego, co jest wyświetlone) */
     .kw-count {

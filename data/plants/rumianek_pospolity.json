@@ -150,7 +150,7 @@
     "Rycina": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Matricaria_recutita_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-091.jpg/960px-Matricaria_recutita_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-091.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-10-09",
     "w_url": true,
     "zdjecia": [
       {
@@ -180,6 +180,1468 @@
         "licencja_url": null,
         "zrodlo": "Wikimedia Commons"
       }
+    ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-10-09",
+    "uporzadkowano": "2026-10-09",
+    "uklad": "deterministyczny: pominiete informacje: [5, 14, 15, 16, 17, 18, 19, 20, 23, 25]",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (pl): Rumianek pospolity",
+        "url": "https://pl.wikipedia.org/wiki/Rumianek_pospolity",
+        "jezyk": "pl",
+        "typ": "wikipedia",
+        "nr": 1
+      },
+      {
+        "nazwa": "Wikipedia (de): Echte Kamille",
+        "url": "https://de.wikipedia.org/wiki/Echte_Kamille",
+        "jezyk": "de",
+        "typ": "wikipedia",
+        "nr": 2
+      },
+      {
+        "nazwa": "Wikipedia (en): Matricaria chamomilla",
+        "url": "https://en.wikipedia.org/wiki/Matricaria_chamomilla",
+        "jezyk": "en",
+        "typ": "wikipedia",
+        "nr": 3
+      },
+      {
+        "nazwa": "Wikipedia (ja): カモミール",
+        "url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%A2%E3%83%9F%E3%83%BC%E3%83%AB",
+        "jezyk": "ja",
+        "typ": "wikipedia",
+        "nr": 4
+      },
+      {
+        "nazwa": "Wikipedia (zh): 德國洋甘菊",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BE%B7%E5%9C%8B%E6%B4%8B%E7%94%98%E8%8F%8A",
+        "jezyk": "zh",
+        "typ": "wikipedia",
+        "nr": 5
+      },
+      {
+        "nazwa": "www.amol.pl",
+        "url": "https://www.amol.pl/jakie-ziola-na-przeziebienie-stosowac",
+        "jezyk": "PL",
+        "typ": "strona",
+        "nr": 6
+      },
+      {
+        "nazwa": "www.cosme.net",
+        "url": "https://www.cosme.net/feature/20170421_chamomile_beauty/",
+        "jezyk": "ja",
+        "typ": "strona",
+        "nr": 7
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "opis",
+        "tytul": "Opis i wygląd",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Nazwa \"chamomile\" pochodzi od greckiego słowa χαμαίμηλον oznaczającego „ziemskie jabłko”.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1154"
+            ]
+          },
+          {
+            "tekst": "Roślina dorasta wysokości od 15 do 60 cm, ma rozgałęziony, prosty i gładki łodygę.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1155"
+            ]
+          },
+          {
+            "tekst": "Kwiaty mają białe płatki (ray florets) z ligulą oraz żółte dyskowe kwiaty w środku.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1157"
+            ]
+          },
+          {
+            "tekst": "Kwitnący worek (receptakl) jest pusty i pozbawiony łusek, co odróżnia rumianek od Anthemis arvensis.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1158"
+            ]
+          },
+          {
+            "tekst": "Liście są długie, wąskie i podzielone dwukrotnie lub trzykrotnie (bipinnate lub tripinnate).",
+            "czesc": "liście",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1156"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "wystepowanie",
+        "tytul": "Występowanie",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Do Japonii roślina została sprowadzona na początku XIX wieku za sprawą kupców z Holandii oraz Portugalii.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1181"
+            ]
+          },
+          {
+            "tekst": "Rumianek występuje naturalnie w Azji, Europie i regionie Xinjiang, a współczesne uprawy koncentrują się w Egipcie, Francji, Niemczech i Maroku.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s1169"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "czesci_rosliny",
+        "tytul": "Części rośliny i surowce",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Surowcem zielarskim są wysuszone koszyczki kwiatowe rumianku, które muszą zawierać minimum 4 ml/kg olejku eterycznego oraz nie mniej niż 0,25% 7-glukozydu apigeniny.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1149"
+            ]
+          },
+          {
+            "tekst": "Z suszonych koszyczków kwiatowych pozyskuje się olejek eteryczny metodą destylacji parą wodną.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s1170"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W skład olejku eterycznego rumianku wchodzą chamazulen, alfa-bisabolol oraz spiroeter, a surowiec zawiera dodatkowo flawonoidy, związki kumarynowe, śluz, cholinę i sole mineralne.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1150"
+            ]
+          },
+          {
+            "tekst": "Kwiaty zawierają od 0,3 % do 1,5 % olejku eterycznego.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1159"
+            ]
+          },
+          {
+            "tekst": "Bisabolol stanowi do 33 % składu olejku eterycznego.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1160"
+            ]
+          },
+          {
+            "tekst": "W kwiatach zidentyfikowano ponad 120 różnych substancji chemicznych, głównie w olejku eterycznym.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1161"
+            ]
+          },
+          {
+            "tekst": "Rumianek zawiera olejek eteryczny obejmujący alfa i beta bisabolol, monoterpeny oraz azuleny, a także flawonoidy, kumarynę, kwasy fenolowe i polisacharydy śluzowe.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1183"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Doustnie preparaty z rumianku stosuje się jako środek przeciwzapalny, przeciwskurczowy układu pokarmowego, przeciwalergiczny oraz w nieżycie żołądka i jelit.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1151"
+            ]
+          },
+          {
+            "tekst": "Zewnętrznie olejek z rumianku przeciwdziała stanom zapalnym skóry i jest stosowany na owrzodzenia, hemoroidy, rumień oraz oparzenia słoneczne i termiczne pierwszego oraz drugiego stopnia.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1152"
+            ]
+          },
+          {
+            "tekst": "Dzięki zawartym substancjom czynnym rumianek wykazuje działanie przeciwzapalne, przeciwbólowe, antyseptyczne, antyalergiczne, antyoksydacyjne i immunostymulujące.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1184"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "barwienie",
+        "tytul": "Barwienie i rzemiosło",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Otrzymany olejek ma rzadki, głęboki niebieski odcień, co jest spowodowane obecnością aromatycznego składnika zwanego „母菊奧”.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s1171"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kosmetyka",
+        "tytul": "Kosmetyka",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Od wieków kwiaty rumianku były dodawane do szamponów ze względu na ich właściwość nadawania włosom połysku i gładkości.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s1172"
+            ]
+          },
+          {
+            "tekst": "Ekstrakt zカミツレ (kamicure) jest powszechnie stosowany w produktach mających na celu zapobieganie szorstkości i podrażnieniom skóry, pomagając w utrzymaniu jej nawilżenia i zdrowego wyglądu.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              7
+            ],
+            "fakty": [
+              "s1185"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "historia",
+        "tytul": "Historia i nazwa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W 1987 roku Związek Niemieckich Drogerystów uznał rumianek za pierwszą roślinę leczniczą roku, a w 2002 roku wybrany go rośliną leczniczą roku.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1168"
+            ]
+          },
+          {
+            "tekst": "W dawnych angielskich zielnikach polecano przyjmowanie rumianku wraz z winem w celu łagodzenia uciążliwych bólów głowy i dolegliwości wątroby.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1180"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kultura",
+        "tytul": "Wierzenia i tradycje",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W Rosji rumianek posiada status oficjalnego kwiatu narodowego.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1175"
+            ]
+          },
+          {
+            "tekst": "W symbolice kwiatowej rumianek bywa wiązany z przesłaniem o przetrwaniu trudnych chwil i zachowaniu odporności w niesprzyjających okolicznościach.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1182"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "nazwy_ludowe",
+        "tytul": "Nazwy ludowe",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W Japonii roślina znana jest pod tradycyjną nazwą kamitsure, na którą wpływ miało holenderskie określenie kamille.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1174"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Podobna do rumianku maruna bezwonna różni się od niego brakiem zapachu, półkulistym i pełnym wewnątrz dnem kwiatostanu oraz wyprostowanymi owocami.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1153"
+            ]
+          },
+          {
+            "tekst": "Aphidy są głównym szkodnikiem uprawy rumianku.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1164"
+            ]
+          },
+          {
+            "tekst": "Najważniejsze choroby rumianku w Europie to mączniak rzekomy, mączniak prawdziwy i rdza.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1165"
+            ]
+          },
+          {
+            "tekst": "Roślina kwitnie 2‑3 razy w roku, a okres kwitnienia trwa 50‑65 dni przy rozwoju kwiatu 20‑25 dni.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1166"
+            ]
+          },
+          {
+            "tekst": "Rumianek może wywoływać alergie i krzyżowo reagować z pyłkiem bylicy.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1167"
+            ]
+          },
+          {
+            "tekst": "W pierwszym trymestrze ciąży należy unikać stosowania rumianku, a osoby uczulone na rośliny z rodziny astrowatych mogą doświadczać ciężkich reakcji alergicznych, takich jak obrzęk języka i gardła.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s1173"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "uprawa",
+        "tytul": "Uprawa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Rumianek nie wymaga specjalnej gleby, ale najlepiej rośnie na dobrze zrównoważonych, żyznych glebach.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1162"
+            ]
+          },
+          {
+            "tekst": "Może być uprawiany jako jednoroczna roślina wiosną lub jesienią, a także traktowany jako wieloletni dzięki samosiewowi.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1163"
+            ]
+          },
+          {
+            "tekst": "Nasiona rumianku są bardzo drobne, dlatego w uprawie miesza się je z suchym piaskiem i wysiewa pasami wczesną wiosną lub jesienią.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1176"
+            ]
+          },
+          {
+            "tekst": "Podczas podlewania świeżo wysianych nasion rumianku należy stosować podsiąkanie, aby strumień wody nie wypłukał drobnego materiału z gleby.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1177"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "kwiaty": [
+        "s1157",
+        "s1158",
+        "s1149",
+        "s1170",
+        "s1150",
+        "s1159",
+        "s1160",
+        "s1161",
+        "s1183",
+        "s1151",
+        "s1152",
+        "s1184",
+        "s1172",
+        "s1185"
+      ],
+      "liście": [
+        "s1156"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s1149",
+        "sekcja": "czesci_rosliny",
+        "czesc": "kwiaty",
+        "tekst": "Surowcem zielarskim są wysuszone koszyczki kwiatowe rumianku, które muszą zawierać minimum 4 ml/kg olejku eterycznego oraz nie mniej niż 0,25% 7-glukozydu apigeniny.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Rumianek pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Rumianek_pospolity"
+        }
+      },
+      {
+        "id": "s1150",
+        "sekcja": "sklad",
+        "czesc": "kwiaty",
+        "tekst": "W skład olejku eterycznego rumianku wchodzą chamazulen, alfa-bisabolol oraz spiroeter, a surowiec zawiera dodatkowo flawonoidy, związki kumarynowe, śluz, cholinę i sole mineralne.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Rumianek pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Rumianek_pospolity"
+        }
+      },
+      {
+        "id": "s1151",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "kwiaty",
+        "tekst": "Doustnie preparaty z rumianku stosuje się jako środek przeciwzapalny, przeciwskurczowy układu pokarmowego, przeciwalergiczny oraz w nieżycie żołądka i jelit.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Rumianek pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Rumianek_pospolity"
+        }
+      },
+      {
+        "id": "s1152",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "kwiaty",
+        "tekst": "Zewnętrznie olejek z rumianku przeciwdziała stanom zapalnym skóry i jest stosowany na owrzodzenia, hemoroidy, rumień oraz oparzenia słoneczne i termiczne pierwszego oraz drugiego stopnia.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Rumianek pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Rumianek_pospolity"
+        }
+      },
+      {
+        "id": "s1153",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Podobna do rumianku maruna bezwonna różni się od niego brakiem zapachu, półkulistym i pełnym wewnątrz dnem kwiatostanu oraz wyprostowanymi owocami.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Rumianek pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Rumianek_pospolity"
+        }
+      },
+      {
+        "id": "s1154",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Nazwa \"chamomile\" pochodzi od greckiego słowa χαμαίμηλον oznaczającego „ziemskie jabłko”.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Matricaria chamomilla",
+          "url": "https://en.wikipedia.org/wiki/Matricaria_chamomilla"
+        }
+      },
+      {
+        "id": "s1155",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Roślina dorasta wysokości od 15 do 60 cm, ma rozgałęziony, prosty i gładki łodygę.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Matricaria chamomilla",
+          "url": "https://en.wikipedia.org/wiki/Matricaria_chamomilla"
+        }
+      },
+      {
+        "id": "s1156",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Liście są długie, wąskie i podzielone dwukrotnie lub trzykrotnie (bipinnate lub tripinnate).",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Matricaria chamomilla",
+          "url": "https://en.wikipedia.org/wiki/Matricaria_chamomilla"
+        }
+      },
+      {
+        "id": "s1157",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Kwiaty mają białe płatki (ray florets) z ligulą oraz żółte dyskowe kwiaty w środku.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Matricaria chamomilla",
+          "url": "https://en.wikipedia.org/wiki/Matricaria_chamomilla"
+        }
+      },
+      {
+        "id": "s1158",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Kwitnący worek (receptakl) jest pusty i pozbawiony łusek, co odróżnia rumianek od Anthemis arvensis.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Matricaria chamomilla",
+          "url": "https://en.wikipedia.org/wiki/Matricaria_chamomilla"
+        }
+      },
+      {
+        "id": "s1159",
+        "sekcja": "sklad",
+        "czesc": "kwiaty",
+        "tekst": "Kwiaty zawierają od 0,3 % do 1,5 % olejku eterycznego.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Matricaria chamomilla",
+          "url": "https://en.wikipedia.org/wiki/Matricaria_chamomilla"
+        }
+      },
+      {
+        "id": "s1160",
+        "sekcja": "sklad",
+        "czesc": "kwiaty",
+        "tekst": "Bisabolol stanowi do 33 % składu olejku eterycznego.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Matricaria chamomilla",
+          "url": "https://en.wikipedia.org/wiki/Matricaria_chamomilla"
+        }
+      },
+      {
+        "id": "s1161",
+        "sekcja": "sklad",
+        "czesc": "kwiaty",
+        "tekst": "W kwiatach zidentyfikowano ponad 120 różnych substancji chemicznych, głównie w olejku eterycznym.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Matricaria chamomilla",
+          "url": "https://en.wikipedia.org/wiki/Matricaria_chamomilla"
+        }
+      },
+      {
+        "id": "s1162",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "Rumianek nie wymaga specjalnej gleby, ale najlepiej rośnie na dobrze zrównoważonych, żyznych glebach.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Matricaria chamomilla",
+          "url": "https://en.wikipedia.org/wiki/Matricaria_chamomilla"
+        }
+      },
+      {
+        "id": "s1163",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "Może być uprawiany jako jednoroczna roślina wiosną lub jesienią, a także traktowany jako wieloletni dzięki samosiewowi.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Matricaria chamomilla",
+          "url": "https://en.wikipedia.org/wiki/Matricaria_chamomilla"
+        }
+      },
+      {
+        "id": "s1164",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Aphidy są głównym szkodnikiem uprawy rumianku.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Matricaria chamomilla",
+          "url": "https://en.wikipedia.org/wiki/Matricaria_chamomilla"
+        }
+      },
+      {
+        "id": "s1165",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Najważniejsze choroby rumianku w Europie to mączniak rzekomy, mączniak prawdziwy i rdza.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Matricaria chamomilla",
+          "url": "https://en.wikipedia.org/wiki/Matricaria_chamomilla"
+        }
+      },
+      {
+        "id": "s1166",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Roślina kwitnie 2‑3 razy w roku, a okres kwitnienia trwa 50‑65 dni przy rozwoju kwiatu 20‑25 dni.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Matricaria chamomilla",
+          "url": "https://en.wikipedia.org/wiki/Matricaria_chamomilla"
+        }
+      },
+      {
+        "id": "s1167",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Rumianek może wywoływać alergie i krzyżowo reagować z pyłkiem bylicy.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Matricaria chamomilla",
+          "url": "https://en.wikipedia.org/wiki/Matricaria_chamomilla"
+        }
+      },
+      {
+        "id": "s1168",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "W 1987 roku Związek Niemieckich Drogerystów uznał rumianek za pierwszą roślinę leczniczą roku, a w 2002 roku wybrany go rośliną leczniczą roku.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Echte Kamille",
+          "url": "https://de.wikipedia.org/wiki/Echte_Kamille"
+        }
+      },
+      {
+        "id": "s1169",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Rumianek występuje naturalnie w Azji, Europie i regionie Xinjiang, a współczesne uprawy koncentrują się w Egipcie, Francji, Niemczech i Maroku.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 德國洋甘菊",
+          "url": "https://zh.wikipedia.org/wiki/%E5%BE%B7%E5%9C%8B%E6%B4%8B%E7%94%98%E8%8F%8A"
+        }
+      },
+      {
+        "id": "s1170",
+        "sekcja": "czesci_rosliny",
+        "czesc": "kwiaty",
+        "tekst": "Z suszonych koszyczków kwiatowych pozyskuje się olejek eteryczny metodą destylacji parą wodną.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 德國洋甘菊",
+          "url": "https://zh.wikipedia.org/wiki/%E5%BE%B7%E5%9C%8B%E6%B4%8B%E7%94%98%E8%8F%8A"
+        }
+      },
+      {
+        "id": "s1171",
+        "sekcja": "barwienie",
+        "czesc": null,
+        "tekst": "Otrzymany olejek ma rzadki, głęboki niebieski odcień, co jest spowodowane obecnością aromatycznego składnika zwanego „母菊奧”.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 德國洋甘菊",
+          "url": "https://zh.wikipedia.org/wiki/%E5%BE%B7%E5%9C%8B%E6%B4%8B%E7%94%98%E8%8F%8A"
+        }
+      },
+      {
+        "id": "s1172",
+        "sekcja": "kosmetyka",
+        "czesc": "kwiaty",
+        "tekst": "Od wieków kwiaty rumianku były dodawane do szamponów ze względu na ich właściwość nadawania włosom połysku i gładkości.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 德國洋甘菊",
+          "url": "https://zh.wikipedia.org/wiki/%E5%BE%B7%E5%9C%8B%E6%B4%8B%E7%94%98%E8%8F%8A"
+        }
+      },
+      {
+        "id": "s1173",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "W pierwszym trymestrze ciąży należy unikać stosowania rumianku, a osoby uczulone na rośliny z rodziny astrowatych mogą doświadczać ciężkich reakcji alergicznych, takich jak obrzęk języka i gardła.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 德國洋甘菊",
+          "url": "https://zh.wikipedia.org/wiki/%E5%BE%B7%E5%9C%8B%E6%B4%8B%E7%94%98%E8%8F%8A"
+        }
+      },
+      {
+        "id": "s1174",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "W Japonii roślina znana jest pod tradycyjną nazwą kamitsure, na którą wpływ miało holenderskie określenie kamille.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): カモミール",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%A2%E3%83%9F%E3%83%BC%E3%83%AB"
+        }
+      },
+      {
+        "id": "s1175",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "W Rosji rumianek posiada status oficjalnego kwiatu narodowego.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): カモミール",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%A2%E3%83%9F%E3%83%BC%E3%83%AB"
+        }
+      },
+      {
+        "id": "s1176",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "Nasiona rumianku są bardzo drobne, dlatego w uprawie miesza się je z suchym piaskiem i wysiewa pasami wczesną wiosną lub jesienią.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): カモミール",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%A2%E3%83%9F%E3%83%BC%E3%83%AB"
+        }
+      },
+      {
+        "id": "s1177",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "Podczas podlewania świeżo wysianych nasion rumianku należy stosować podsiąkanie, aby strumień wody nie wypłukał drobnego materiału z gleby.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): カモミール",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%A2%E3%83%9F%E3%83%BC%E3%83%AB"
+        }
+      },
+      {
+        "id": "s1180",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "W dawnych angielskich zielnikach polecano przyjmowanie rumianku wraz z winem w celu łagodzenia uciążliwych bólów głowy i dolegliwości wątroby.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): カモミール",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%A2%E3%83%9F%E3%83%BC%E3%83%AB"
+        }
+      },
+      {
+        "id": "s1181",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Do Japonii roślina została sprowadzona na początku XIX wieku za sprawą kupców z Holandii oraz Portugalii.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): カモミール",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%A2%E3%83%9F%E3%83%BC%E3%83%AB"
+        }
+      },
+      {
+        "id": "s1182",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "W symbolice kwiatowej rumianek bywa wiązany z przesłaniem o przetrwaniu trudnych chwil i zachowaniu odporności w niesprzyjających okolicznościach.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): カモミール",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%A2%E3%83%9F%E3%83%BC%E3%83%AB"
+        }
+      },
+      {
+        "id": "s1183",
+        "sekcja": "sklad",
+        "czesc": "kwiaty",
+        "tekst": "Rumianek zawiera olejek eteryczny obejmujący alfa i beta bisabolol, monoterpeny oraz azuleny, a także flawonoidy, kumarynę, kwasy fenolowe i polisacharydy śluzowe.",
+        "jezyk": "PL",
+        "zrodlo": {
+          "nazwa": "www.amol.pl",
+          "url": "https://www.amol.pl/jakie-ziola-na-przeziebienie-stosowac"
+        }
+      },
+      {
+        "id": "s1184",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "kwiaty",
+        "tekst": "Dzięki zawartym substancjom czynnym rumianek wykazuje działanie przeciwzapalne, przeciwbólowe, antyseptyczne, antyalergiczne, antyoksydacyjne i immunostymulujące.",
+        "jezyk": "PL",
+        "zrodlo": {
+          "nazwa": "www.amol.pl",
+          "url": "https://www.amol.pl/jakie-ziola-na-przeziebienie-stosowac"
+        }
+      },
+      {
+        "id": "s1185",
+        "sekcja": "kosmetyka",
+        "czesc": "kwiaty",
+        "tekst": "Ekstrakt zカミツレ (kamicure) jest powszechnie stosowany w produktach mających na celu zapobieganie szorstkości i podrażnieniom skóry, pomagając w utrzymaniu jej nawilżenia i zdrowego wyglądu.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "www.cosme.net",
+          "url": "https://www.cosme.net/feature/20170421_chamomile_beauty/"
+        }
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-09",
+    "pola": {
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Jednoroczna roślina zielna, jedna z najważniejszych w europejskiej tradycji medycznej. Słynie z charakterystycznego, jabłkowego aromatu i złocisto-białych koszyczków kwiatowych. Nazwa łacińska 'Matricaria' pochodzi od słowa 'matrix' (macica), co wskazuje na historyczne zastosowanie rośliny w dolegliwościach kobiecych. Jest to roślina pionierska, często spotykana na polach uprawnych, miedzach i terenach ruderalnych.",
+        "tresc": [
+          {
+            "tekst": "Jednoroczna roślina zielna, jedna z najważniejszych w europejskiej tradycji medycznej. Słynie z charakterystycznego, jabłkowego aromatu i złocisto-białych koszyczków kwiatowych. Nazwa łacińska 'Matricaria' pochodzi od słowa 'matrix' (macica), co wskazuje na historyczne zastosowanie rośliny w dolegliwościach kobiecych. Jest to roślina pionierska, często spotykana na polach uprawnych, miedzach i terenach ruderalnych.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "P1 | Nazwa 'chamomile' pochodzi od greckiego słowa χαμαίμηλον oznaczającego „ziemskie jabłko”.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1154"
+            ]
+          },
+          {
+            "tekst": "Roślina dorasta wysokości od 15 do 60 cm, ma rozgałęziony, prosty i gładki łodygę.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1155"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "ae8f032e98e97642"
+      },
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": [
+          "Dno kwiatowe po przecięciu jest PUSTE w środku (kluczowa cecha diagnostyczna).",
+          "Liście są pierzastosieczne, o bardzo wąskich, nitkowatych odcinkach (przypominają koperek).",
+          "Intensywny, słodko-ziołowy zapach (przypominający dojrzałe jabłka) po roztarciu koszyczka.",
+          "Białe kwiaty języczkowe pod koniec kwitnienia odginają się wyraźnie w dół."
+        ],
+        "tresc": [
+          {
+            "tekst": "Dno kwiatowe po przecięciu jest puste w środku (kluczowa cecha diagnostyczna).",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1157"
+            ]
+          },
+          {
+            "tekst": "Liście są pierszastosowane, o bardzo wąskich, nitkowatych odcinkach (przypominają koperek).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Intensywny, słodko-ziołowy zapach (przypominający dojrzałe jabłka) po roztarciu koszyczka.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Białe kwiaty języczkowe pod koniec kwitnienia odginają się wyraźnie w dół.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwiaty mają białe płatki (ray florets) z ligulą oraz żółte dyskowe kwiaty w środku.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1157"
+            ]
+          },
+          {
+            "tekst": "Kwitnący worek (receptakl) jest pusty i pozbawiony łusek, co odróżnia rumianek od Anthemis arvensis.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1158"
+            ]
+          },
+          {
+            "tekst": "Liście są długie, wąskie i podzielone dwukrotnie lub trzykrotnie (bipinnat e lub tripinnat e).",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1156"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "c985379b3bd2b106"
+      },
+      "wymagania.stanowisko": {
+        "tytul": "Natura i siedlisko - Stanowisko",
+        "typ": "tekst",
+        "oryginal": "Pełne słońce – tylko wtedy roślina produkuje wysoką ilość olejków eterycznych.",
+        "tresc": [
+          {
+            "tekst": "Pełne słońce – tylko wtedy roślina produkuje wysoką ilość olejków etnerycznych.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Do Japonii roślina została sprowadzona na początku XIX wieku za sprawą kupców z Holandii oraz Portugalii.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1181"
+            ]
+          },
+          {
+            "tekst": "Rumianek występuje naturalnie w Azji, Europie i regionie Xinjiang, a współczesne uprawy koncentrują się w Egipcie, Francji, Niemczech i Maroku.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s1169"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "eba92dd078a0f977"
+      },
+      "czesci_rosliny.kwiaty.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Anthodium Chamomillae / Flos Chamomillae: Opis surowca",
+        "typ": "tekst",
+        "oryginal": "Całe koszyczki kwiatowe zbierane na początku kwitnienia.",
+        "tresc": [
+          {
+            "tekst": "Całe koszyczki kwiatowe zbierane na początku kwitnienia.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Surowcem zielarskim są wysuszone koszyczki kwiatowe rumianku, które muszą zawierać minimum 4 ml/kg olejku eterycznego oraz nie mniej niż 0,25% 7-glukozydu apigeniny.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1149"
+            ]
+          },
+          {
+            "tekst": "Z suszonych koszyczków kwiatowych pozyskuje się olejek eteryczny metodą destylacji parą wodną.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s1170"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "fc8d8124668110d0"
+      },
+      "czesci_rosliny.kwiaty.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Anthodium Chamomillae / Flos Chamomillae: Substancje czynne",
+        "typ": "lista",
+        "oryginal": [
+          "Olejek eteryczny (do 1.5%, bogaty w chamazulen i alfa-bisabolol)",
+          "Flawonoidy (głównie apigenina - silne działanie uspokajające)",
+          "Kumaryny (umbeliferon, herniaryna)",
+          "Śluzy",
+          "Związki acetylenowe",
+          "Cholina"
+        ],
+        "tresc": [
+          {
+            "tekst": "Olejek eteryczny rumianku zawiera chamazulen, alfa-bisabolol oraz spiroeter. Surowiec zawiera dodatkowo flawonoidy, związki kumarynowe, śluz, cholinę i sole mineralne.",
+            "zrodla": [
+              1,
+              3,
+              6
+            ],
+            "fakty": [
+              "s1150",
+              "s1160",
+              "s1183"
+            ]
+          },
+          {
+            "tekst": "Kwiaty rumianku zawierają od 0,3% do 1,5% olejku eterycznego. Bisabolol stanowi do 33% składu olejku eterycznego. W kwiatkach zidentyfikowano ponad 120 różnych substancji chemicznych, w tym alfa i beta bisabolol, monoterpeny oraz azulen. Rumianek zawiera także flawonoidy, kumarynę, kwasy fenolowe i polisacharydy śluzowe.",
+            "zrodla": [
+              3,
+              6
+            ],
+            "fakty": [
+              "s1159",
+              "s1160",
+              "s1161",
+              "s1183"
+            ]
+          },
+          {
+            "tekst": "Flawonoidy (głównie apigenina - silne działanie uspokajające)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kumaryny (umbeliferon, herniaryna)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Związki acetylenowe",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "114e0f4f5a03bb9f"
+      },
+      "czesci_rosliny.kwiaty.wlasciwości": {
+        "tytul": "Surowce i zbiory - Anthodium Chamomillae / Flos Chamomillae: Działanie",
+        "typ": "tekst",
+        "oryginal": "Przeciwzapalne, rozkurczowe (spazmolityczne), wiatropędne, odkażające, przeciwuczuleniowe, przyspieszające gojenie ran.",
+        "tresc": [
+          {
+            "tekst": "Rumianek wykazuje działanie przeciwzapalne, przeciwalergiczne (przeciwuczuleniowe), antyoksydacyjne oraz immunostymulujące.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1184"
+            ]
+          },
+          {
+            "tekst": "Posiada on również właściwości rozkurczowe (spazmolityczne) układu pokarmowego, wiatropędne, przeciwbólowe oraz odkażające (antyseptyczne), przyspieszają gojenie ran.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1151"
+            ]
+          },
+          {
+            "tekst": "Stosowany doustnie, preparat z rumianku jest wskazany w nieżycie żołądka i jelit.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1151"
+            ]
+          },
+          {
+            "tekst": "Stosowany zewnętrznie, olejek z rumianku przeciwdziała stanom zapalnym skóry oraz bywa stosowany na owrzodzenia, hemoroidy, rumień, a także oparzenia słoneczne i termiczne pierwszego oraz drugiego stopnia.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1152"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "cbd188fd550e8539"
+      },
+      "zastosowanie.rzemieslnicze": {
+        "tytul": "Praktyczne zastosowanie - Rzemiosło",
+        "typ": "tekst",
+        "oryginal": "Płukanki z rumianku rozjaśniają jasne włosy i nadają im złocisty połysk. Olejek rumiankowy (niebieski) jest cenionym składnikiem luksusowych perfum.",
+        "tresc": [
+          {
+            "tekst": "Płukankę z rumianku rozjaśniają jasne włosy i nadają im złocisty połysk.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Olejek rumiankowy (niebieski) jest cenniony składnikem luksusowych perfum.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Otrzymany olejek ma rzadki, głęboki niebieski odcień, co jest spowodowane obecnością aromatycznego składnika zwanego „母菊奧”.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s1171"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "766fc72dde450284"
+      },
+      "zastosowanie.kosmetyczne": {
+        "tytul": "Praktyczne zastosowanie - Kosmetyka",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Od wieków kwiaty rumianku były dodawane do szamponów ze względu na ich właściwości nadawania włosom połysku i gładkości.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s1172"
+            ]
+          },
+          {
+            "tekst": "Ekstrakt z Kamicure (kamicure) jest powszechnie stosowany w produktach mających na celu zapobieganie szorstkości i podrażnieniom skóry, pomagając w utrzymaniu jej nawilżenia i zdrowego wyglądu.",
+            "zrodla": [
+              7
+            ],
+            "fakty": [
+              "s1185"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "5da93509686461fb"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "Chamazulen (składnik nadający olejkowi intensywnie niebieski kolor) nie występuje naturalnie w roślinie – powstaje dopiero w procesie destylacji parą wodną z bezbarwnej maciercyny.",
+          "W starożytnym Egipcie rumianek był poświęcony bogu słońca Ra ze względu na swój wygląd i moc 'wypalania' chorób.",
+          "Nazywany jest 'lekarzem roślin' – posadzony w pobliżu osłabionych roślin pomaga im odzyskać wigor i zapobiega chorobom grzybowym w glebie.",
+          "W medycynie anglosaskiej rumianek należał do dziewięciu świętych ziół podarowanych ludzkości przez boga Wodana.",
+          "Badania naukowe potwierdziły, że apigenina zawarta w rumianku wiąże się z tymi samymi receptorami w mózgu co leki z grupy benzodiazepin, co tłumaczy jego działanie przeciwlękowe."
+        ],
+        "tresc": [
+          {
+            "tekst": "Chamazulen (składnik nadający olejkowi intensywnie niebieski kolor) nie występuje naturalnie w roślinie – powstaje dopiero w procesie destylacji parą wodną z bezbarwnej maciercyny.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W starożytnym Egipcie rumianek był poświęcony bogu słońca Ra ze względu na swój wygląd i moc 'wypalania' chorób.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Nazywany jest 'lekarzem roślin' – posadzony w pobliżu osłabionych roślin pomaga im odzyskać wigor i zapobiega chorobom grzybowym w glebie.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W medycynie anglosaskiej rumianek należał do dziewięciu świętych ziół podarowanych ludzkości przez boga Wodana.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Badania naukowe potwierdziły, że apigenina zawarta w rumianku wiąże się z tymi samymi receptorami w mózgu co leki z grupy benzodiazepin, co tłumaczy jego działanie przeciwlękowe.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W 1987 roku Związek Niemieckich Drogerystów uznał rumianek za pierwszą roślinę leczniczą roku, a w 2002 roku wybrany go rośliną leczniczą roku.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1168"
+            ]
+          },
+          {
+            "tekst": "W dawnych angielskich zielnikach polecano przyjmowanie rumianku wraz z winem w celu łagodzenia uciążliwych bólów głowy i dolegliwości wątroby.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1180"
+            ]
+          },
+          {
+            "tekst": "W Rosji rumianek posiada status oficjalnego kwiatu narodowego.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1175"
+            ]
+          },
+          {
+            "tekst": "W symbolice kwiatowej rumianek bywa wiązany z przesłaniem o przetrwaniu trudnych chwil i zachowaniu odporności w niesprzyjających okolicznościach.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1182"
+            ]
+          },
+          {
+            "tekst": "W Japonii roślina znana jest pod tradycyjną nazwą kamitsure, na którą wpływ miało holenderskie określenie kamille.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1174"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "643384e5bc72f914"
+      },
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": "Osoby uczulone na rośliny z rodziny Astrowatych (np. arnka, piołun, nawłoć) powinny zachować szczególną ostrożność – rumianek może wywołać u nich wstrząs anafilaktyczny lub wysypkę.",
+        "tresc": [
+          {
+            "tekst": "Osoby uczulone na rośliny z rodziny astrowatych (np. arnka, piołun, nawłoć) powinny zachować szczególną ostrożność – rumianek może wywołać u nich wstrząs anafilaktyczny lub wysypkę, a także ciężkie reakcje alergiczne, takie jak obrzęk języka i gardła, i może krzyżowo reagować z pyłkiem bylicy.",
+            "zrodla": [
+              3,
+              5
+            ],
+            "fakty": [
+              "s1167",
+              "s1173"
+            ]
+          },
+          {
+            "tekst": "W pierwszym trymestrze ciąży zaleca się unikać stosowania rumianku.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s1173"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "2566862d9a9c1f1a"
+      },
+      "wymagania.gleba": {
+        "tytul": "Natura i siedlisko - Gleba",
+        "typ": "tekst",
+        "oryginal": "Przepuszczalna, piaszczysto-gliniasta, umiarkowanie żyzna. Dobrze radzi sobie na glebach lekkich, o ile mają dostęp do wilgoci wiosną.",
+        "tresc": [
+          {
+            "tekst": "Przepuszczalna, piaszczysto-gliniasta, umiarkowanie żyzna. Dobrze radzi sobie na glebach lekkih, o ile mają dostęp do wilgoci wiosną.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Rumianek nie wymaga specjalnej gleby, ale najlepiej rośnie na dobrze zrównoważonych, żyznych glebach.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1162"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "e2e5381079f8bce2"
+      },
+      "zastosowanie.ogrodowe": {
+        "tytul": "Praktyczne zastosowanie - Ogród",
+        "typ": "tekst",
+        "oryginal": "Roślina miododajna, przyciągająca bzygi (pożeracze mszyc). Oprysk z rumianku zapobiega zgorzeli siewek.",
+        "tresc": [
+          {
+            "tekst": "Roślina miododajna, przyciągająca bzygi (pożeracze mszyc). Oprysk z rumianku zapobiega zgorzeli siewek.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Może być uprawiany jako jednoroczna roślina wiosną lub jesienią, a także traktowany jako wieloletni dzięki samosiewowi.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1163"
+            ]
+          },
+          {
+            "tekst": "Nasiona rumianku są bardzo drobne, dlatego w uprawie miesza się je z suchym piaskiem i wysiewa pasami wczesną wiosną lub jesienią.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1176"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "3c08a0e202aa1e43"
+      },
+      "wymagania.woda": {
+        "tytul": "Natura i siedlisko - Woda",
+        "typ": "tekst",
+        "oryginal": "Wymaga umiarkowanej wilgotności; źle znosi skrajne przesuszenie w fazie wzrostu.",
+        "tresc": [
+          {
+            "tekst": "Wymaga umiarkowanej wilgotności; źle znosi skrajne przesuszenie w fazie wzrostu.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Podczas podlewania świeżo wysianych nasion rumianku należy stosować podsiąkanie, aby strumień wody nie wypłukał drobnego materiału z gleby.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1177"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "8cd5f343dd451727"
+      }
+    },
+    "uzyte_fakty": [
+      "s1149",
+      "s1150",
+      "s1151",
+      "s1152",
+      "s1154",
+      "s1155",
+      "s1156",
+      "s1157",
+      "s1158",
+      "s1159",
+      "s1160",
+      "s1161",
+      "s1162",
+      "s1163",
+      "s1167",
+      "s1168",
+      "s1169",
+      "s1170",
+      "s1171",
+      "s1172",
+      "s1173",
+      "s1174",
+      "s1175",
+      "s1176",
+      "s1177",
+      "s1180",
+      "s1181",
+      "s1182",
+      "s1183",
+      "s1184",
+      "s1185"
     ]
   }
 }

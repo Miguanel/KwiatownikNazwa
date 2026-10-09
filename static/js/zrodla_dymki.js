@@ -8,10 +8,12 @@
 //    "mozliwe_pomyłki": [{"nazwa": "...", "roznica": "...",
 //        "zdjecie": {"url": "https://...jpg", "strona": "https://...", "serwis": "Nazwa strony", "autor": "...", "licencja": "CC BY 4.0"}}]
 //
-// 2) Źródła przepisów (a[data-kw-src]): kliknięcie pokazuje dymek z podglądem strony – tytuł, opis, obrazek,
-//    czy strona wciąż działa (data/zrodla_podglad.json z sprawdz_zrodla.py + szybkie sprawdzenie w przeglądarce),
-//    mały podgląd strony w ramce (gdy strona na to pozwala) i link do kopii w Web Archive.
-//    Ctrl/⌘ + klik albo środkowy przycisk – od razu otwiera stronę, jak zwykły link.
+// 2) Źródła przepisów i przypisy [n] wiedzy z sieci na stronie rośliny (a[data-kw-src]): kliknięcie pokazuje dymek
+//    jak dymki Wikipedii – nazwa i serwis strony, czy wciąż działa (data/zrodla_podglad.json z sprawdz_zrodla.py +
+//    szybkie sprawdzenie w przeglądarce), MINIATURA strony (zrzut z usługi WordPress mShots, bez klucza; dla strony,
+//    której już nie ma – zrzut kopii z Web Archive), opis strony, fragment źródła, na którym opiera się informacja
+//    (data-kw-cytat), link „Pokaż to miejsce na stronie” (#:~:text= – przeglądarka przewija do fragmentu i go
+//    podświetla), tłumacz i Web Archive. Ctrl/⌘ + klik albo środkowy przycisk – od razu otwiera stronę.
 //
 // Działa w wersji statycznej: API Wikipedii, Wikidanych, Commons i iNaturalist mają CORS i nie wymagają klucza.
 // ==========================================
@@ -462,6 +464,36 @@
         return `<div class="kw-src-status">Tej strony jeszcze nie sprawdzaliśmy.</div>`;
     }
 
+    // miniatura strony: zrzut ekranu z WordPress mShots. Nowy zrzut powstaje 10-15 s - do tego czasu mShots daje
+    // obrazek zastepczy 400x300 (prawdziwy ma 640x400), wiec dymek pyta ponownie co 4 s (krotki parametr &r=N -
+    // przegladarka trzyma w pamieci obrazek zastepczy pod tym samym adresem); bez zrzutu po 4 probach - bez miniatury.
+    function shotUrl(u) { return `https://s.wordpress.com/mshots/v1/${encodeURIComponent(u)}?w=640&h=400`; }
+    const SHOT_TRIES = 4;
+    function wireShot() {
+        const img = tip && tip.querySelector('.kw-src-shot img');
+        if (!img || img.dataset.wired) return;
+        img.dataset.wired = '1';
+        const base = img.getAttribute('src');
+        let tries = 0;
+        const drop = () => { const box = img.closest('.kw-src-shot'); if (box) { box.remove(); position(); } };
+        img.addEventListener('load', () => {
+            const real = img.naturalWidth && Math.abs(img.naturalWidth / img.naturalHeight - 1.6) < 0.1;
+            if (real) { const box = img.closest('.kw-src-shot'); if (box) box.classList.add('kw-src-shot-ready'); return; }
+            if (++tries >= SHOT_TRIES) { drop(); return; }
+            setTimeout(() => { if (document.body.contains(img)) img.src = `${base}&r=${tries}`; }, 4000);
+        });
+        img.addEventListener('error', drop);
+    }
+    // link do miejsca informacji na stronie źródła: początek cytatu jako fragment tekstu (Chrome, Edge, Safari, Firefox 131+)
+    function fragmentUrl(url, quote) {
+        const q = String(quote || '').replace(/\s+/g, ' ').trim();
+        if (q.length < 12) return '';
+        let start = q.slice(0, 90);
+        if (q.length > 90 && start.lastIndexOf(' ') > 30) start = start.slice(0, start.lastIndexOf(' '));
+        const enc = s => encodeURIComponent(s).replace(/-/g, '%2D').replace(/,/g, '%2C').replace(/&/g, '%26');
+        return url.split('#')[0] + '#:~:text=' + enc(start);
+    }
+
     function sourceTipHtml(a, info, live) {
         const url = a.href;
         const dom = domainOf(url);
@@ -478,7 +510,21 @@
         html += `<div class="kw-src-domain">${bits.join(' · ')}</div>`;
         html += statusHtml(info, live);
 
-        const canFrame = info && info.osadzalna && info.stan === 'dziala' && live !== 'fail' && /^https:\/\//i.test(target);
+        // miniatura strony (albo jej kopii w archiwum, gdy strony już nie ma)
+        const shotOf = dead ? archive : target;
+        if (/^https?:\/\//i.test(shotOf) && live !== 'pending') {
+            html += `<a class="kw-src-shot" href="${esc(shotOf)}" target="_blank" rel="noopener nofollow" aria-label="Otwórz stronę: ${esc(title)}">
+                <span class="kw-src-shot-load"><span class="kw-wiki-spinner"></span> Ładuję widok strony…</span>
+                <img src="${esc(shotUrl(shotOf))}" alt="Miniatura strony ${esc(dom)}" loading="lazy" referrerpolicy="no-referrer" width="640" height="400">
+                ${dead ? '<span class="kw-src-shot-cap">kopia z Web Archive</span>' : ''}</a>`;
+        }
+        const cytat = a.dataset.kwCytat || '';
+        const frag = !dead && cytat ? fragmentUrl(target, cytat) : '';
+        if (cytat) {
+            html += `<blockquote class="kw-src-quote" ${lang && lang !== 'pl' ? `lang="${esc(lang)}"` : ''}>„${esc(cytat)}”</blockquote>`;
+        }
+
+        const canFrame = false;   // dawny podgląd w ramce zastąpiła lżejsza miniatura (szybciej na telefonie)
         if (canFrame) {
             html += `<div class="kw-src-frame" aria-label="Podgląd strony">
                 <div class="kw-src-frame-load"><span class="kw-wiki-spinner"></span> Ładuję podgląd strony…</div>
@@ -486,16 +532,16 @@
                     sandbox="allow-scripts allow-same-origin"></iframe>
                 <a class="kw-src-frame-cover" href="${esc(target)}" target="_blank" rel="noopener nofollow" aria-label="Otwórz stronę"></a>
             </div>`;
-        } else if (info && (info.obraz || info.opis)) {
-            html += `<div class="kw-wiki-body kw-src-card${dead ? ' kw-src-dead' : ''}">${info.obraz ? `<img class="kw-wiki-img" src="${esc(info.obraz)}" alt="" loading="lazy" onerror="this.remove()">` : ''}`
-                + `${info.opis ? `<p class="kw-wiki-text">${esc(info.opis)}</p>` : ''}</div>`;
+        } else if (info && info.opis && !cytat) {
+            html += `<div class="kw-wiki-body kw-src-card${dead ? ' kw-src-dead' : ''}"><p class="kw-wiki-text">${esc(info.opis)}</p></div>`;
             if (dead) html += `<div class="kw-wiki-sub">Tak opisywała się ta strona, gdy jeszcze działała.</div>`;
         }
         const translate = lang && lang !== 'pl' && !dead
             ? `<a class="kw-wiki-more" href="https://translate.google.com/translate?sl=auto&tl=pl&u=${encodeURIComponent(target)}" target="_blank" rel="noopener">Przetłumacz ↗</a>` : '';
         const open = dead
             ? `<a class="kw-wiki-more" href="${esc(archive)}" target="_blank" rel="noopener">Kopia w Web Archive ↗</a><a class="kw-src-dim" href="${esc(url)}" target="_blank" rel="noopener nofollow">spróbuj otworzyć ↗</a>`
-            : `<a class="kw-wiki-more" href="${esc(target)}" target="_blank" rel="noopener nofollow">Otwórz stronę ↗</a>${translate}<a class="kw-src-dim" href="${esc(archive)}" target="_blank" rel="noopener">archiwum ↗</a>`;
+            : (frag ? `<a class="kw-wiki-more" href="${esc(frag)}" target="_blank" rel="noopener nofollow" title="Otwiera stronę źródła przewiniętą do fragmentu z tą informacją">Pokaż to miejsce na stronie ↗</a>` : '')
+              + `<a class="kw-wiki-more" href="${esc(target)}" target="_blank" rel="noopener nofollow">Otwórz stronę ↗</a>${translate}<a class="kw-src-dim" href="${esc(archive)}" target="_blank" rel="noopener">archiwum ↗</a>`;
         html += `<div class="kw-wiki-foot"><span>${open}</span></div>`;
         return html;
     }
@@ -521,16 +567,17 @@
         const info = map.get(srcKey(url));
         const liveP = probe(url);
         // znamy wynik ostatniego sprawdzenia – pokazujemy od razu, a sprawdzenie na żywo dopisze się po chwili
-        if (info) { setTip(sourceTipHtml(a, info, 'pending-known')); wireFrame(); }
+        if (info) { setTip(sourceTipHtml(a, info, 'pending-known')); wireFrame(); wireShot(); }
         const live = await liveP;
         if (anchor !== a) return;
         const changed = !info || live === 'fail' || (live === 'ok' && (info.stan === 'blad' || info.stan === 'blokada'));
         if (!changed) return;
         const st = tip.querySelector('.kw-src-status');
-        if (tip.querySelector('.kw-src-frame') && live !== 'fail' && st) {
-            st.outerHTML = statusHtml(info, live);      // podgląd w ramce zostaje (bez ponownego ładowania)
+        if ((tip.querySelector('.kw-src-frame') || tip.querySelector('.kw-src-shot')) && live !== 'fail' && st &&
+            !(info && (info.stan === 'brak' || info.stan === 'blad'))) {
+            st.outerHTML = statusHtml(info, live);      // miniatura zostaje (bez ponownego ładowania)
             position();
-        } else { setTip(sourceTipHtml(a, info, live)); wireFrame(); }
+        } else { setTip(sourceTipHtml(a, info, live)); wireFrame(); wireShot(); }
     }
 
     const SRC_SELECTOR = 'a[data-kw-src], a[data-kw-podglad]';

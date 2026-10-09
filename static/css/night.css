@@ -176,3 +176,5 @@ html[data-theme="night"] .kw-theme-btn .kw-ico-sun { display: inline; }
 html[data-theme="night"] #kwFireflies { opacity: 1; }
 /* płynna zmiana kolorów przy przełączaniu */
 html.kw-theme-anim body, html.kw-theme-anim body * { transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease !important; }
+html[data-theme="night"] .web-insert { background: rgba(120, 160, 210, 0.08) !important; border-left-color: #4f6f96 !important; }
+html[data-theme="night"] .web-insert-head { color: #8fb3e0 !important; }

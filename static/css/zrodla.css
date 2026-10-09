@@ -66,14 +66,33 @@
 .kw-src-frame-cover { position: absolute; inset: 0; z-index: 1; cursor: pointer; }
 .kw-src-frame-cover:hover { box-shadow: inset 0 0 0 2px #3e4a3d; }
 .kw-src-dim { color: #8a7a58 !important; font-size: 13px; text-decoration: underline !important; }
+/* miniatura strony (zrzut WordPress mShots) i fragment źródła w dymku */
+.kw-src-shot {
+    position: relative; display: block; margin-top: 8px; aspect-ratio: 16 / 10; border-radius: 6px; overflow: hidden;
+    border: 1px solid #d1c7a7; background: #f4efe2;
+}
+.kw-src-shot img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top center;
+    opacity: 0; transition: opacity 0.25s; }
+.kw-src-shot.kw-src-shot-ready img { opacity: 1; }
+.kw-src-shot-load { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 8px;
+    color: #7a6a58; font-style: italic; font-size: 14px; }
+.kw-src-shot-ready .kw-src-shot-load { display: none; }
+.kw-src-shot:hover, .kw-src-shot:focus-visible { box-shadow: 0 0 0 2px #3e4a3d; }
+.kw-src-shot-cap { position: absolute; left: 6px; bottom: 6px; background: rgba(43, 43, 43, 0.75); color: #fff;
+    font-size: 12px; padding: 1px 7px; border-radius: 9px; }
+.kw-src-quote { margin: 8px 0 0; padding: 6px 10px; border-left: 3px solid #c8b27a; background: #faf6ea; color: #4a4234;
+    font-size: 13.5px; font-style: italic; line-height: 1.4; max-height: 7.2em; overflow: auto; overflow-wrap: anywhere; }
 a[data-kw-src].kw-src-active { background-color: rgba(209, 184, 128, 0.28); border-radius: 2px; }
 @media (max-width: 575.98px) {
     .kw-src-tip.kw-src-page-tip { width: auto; }
     .kw-src-frame { height: 190px; }
+    .kw-src-shot { aspect-ratio: 16 / 9; }
 }
 @media (prefers-reduced-motion: reduce) {
-    .kw-mylka-foto, .kw-src-frame iframe { transition: none; }
+    .kw-mylka-foto, .kw-src-frame iframe, .kw-src-shot img { transition: none; }
     .kw-mylka-wait .kw-mylka-ph i { animation: none; }
 }
 html[data-theme="night"] .kw-mylka + .kw-mylka { border-top-color: rgba(209, 120, 110, 0.3); }
 html[data-theme="night"] .kw-mylka-foto { border-color: #6b3a33; background: #2a1d1a; }
+html[data-theme="night"] .kw-src-shot { border-color: #4a4434; background: #26231c; }
+html[data-theme="night"] .kw-src-quote { background: #2a2620; color: #e3dccb; border-left-color: #8a7848; }

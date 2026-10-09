@@ -33,6 +33,7 @@ from urllib.parse import urljoin, urlsplit, urlunsplit
 
 ROOT = Path(__file__).resolve().parent
 PRZEPISY = ROOT / "data" / "przepisy"
+ROSLINY = ROOT / "data" / "plants"
 WYNIK = ROOT / "data" / "zrodla_podglad.json"
 NASZE_DOMENY = ("kwiatownik.onrender.com",)
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -78,6 +79,15 @@ def zbierz_adresy() -> list[str]:
             _adresy(json.loads(f.read_text(encoding="utf-8")), out)
         except Exception as exc:  # uszkodzony plik nie zatrzymuje sprawdzania
             print(f"  ! pomijam {f.name}: {exc}", file=sys.stderr)
+    # zrodla wiedzy z sieci w plikach roslin (przypisy [n] na stronie rosliny maja ten sam dymek)
+    for f in sorted(ROSLINY.glob("*.json")):
+        try:
+            data = json.loads(f.read_text(encoding="utf-8-sig"))
+        except Exception as exc:  # noqa: BLE001
+            print(f"  ! pomijam {f.name}: {exc}", file=sys.stderr)
+            continue
+        wiedza = data.get("wiedza") if isinstance(data, dict) and isinstance(data.get("wiedza"), dict) else {}
+        _adresy({"zrodla": wiedza.get("zrodla") or []}, out)
     return sorted({klucz(u) for u in out})
 
 

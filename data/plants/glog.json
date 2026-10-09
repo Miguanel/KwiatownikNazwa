@@ -157,7 +157,7 @@
   },
   "ostrzezenia": "Głóg potęguje działanie leków nasercowych (glikozydów) i obniżających ciśnienie. Nie stosować samowolnie przy zaawansowanej niewydolności serca wymagającej hospitalizacji.",
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-10-09",
     "w_url": false,
     "zdjecia": [
       {
@@ -190,6 +190,1064 @@
         "zrodlo": "Wikimedia Commons",
         "reczne": true
       }
+    ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-10-09",
+    "uporzadkowano": "2026-10-09",
+    "uklad": "llm:gemini/gemini-3.5-flash-lite",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (pl): Głóg jednoszyjkowy",
+        "url": "https://pl.wikipedia.org/wiki/G%C5%82%C3%B3g_jednoszyjkowy",
+        "jezyk": "pl",
+        "typ": "wikipedia",
+        "nr": 1
+      },
+      {
+        "nazwa": "Wikipedia (de): Eingriffeliger Weißdorn",
+        "url": "https://de.wikipedia.org/wiki/Eingriffeliger_Wei%C3%9Fdorn",
+        "jezyk": "de",
+        "typ": "wikipedia",
+        "nr": 2
+      },
+      {
+        "nazwa": "Wikipedia (en): Crataegus monogyna",
+        "url": "https://en.wikipedia.org/wiki/Crataegus_monogyna",
+        "jezyk": "en",
+        "typ": "wikipedia",
+        "nr": 3
+      },
+      {
+        "nazwa": "cosmetic-ingredients.org",
+        "url": "https://cosmetic-ingredients.org/skin-conditioning-miscellaneous/8681/",
+        "jezyk": "ja",
+        "typ": "strona",
+        "nr": 4
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "opis",
+        "tytul": "Opis i wygląd",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Głóg jednoszyjkowy to krzew lub małe drzewo osiągające od 2 do 6, rzadko do ponad 15 metrów wysokości. Posiada ciemnobrązową korę z pomarańczowymi pęknięciami oraz gęste korony o gałęziach zaopatrzonych w liczne silne ciernie.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1120"
+            ]
+          },
+          {
+            "tekst": "Owoce głogu to małe, owalne i ciemnoczerwone nibyjagody o długości około 10 mm, które zawierają pojedyncze nasiono zamknięte w pestkowatym endokarpie.",
+            "czesc": "owoce",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1113"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "wystepowanie",
+        "tytul": "Występowanie",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Gatunek ten jest najpopularniejszym gatunkiem głogu w Europie Środkowej, a występuje również w Azji Przedniej aż po Afganistan. Preferuje sąsiedctwo żywopłotów, zarośli, obrzeży lasów oraz gleby bogate w wapń.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1121"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": "Surowce głogu charakteryzują się zawartością flawonoidów oraz procyjanidyn. W owocach zidentyfikowano również kwas askorbinowy, katechiny i kwasy chlorogenowe.",
+        "podsumowanie_zrodla": [
+          1,
+          4
+        ],
+        "punkty": [
+          {
+            "tekst": "Surowiec z kwiatostanu głogu powinien zawierać co najmniej 1,5% sumy flawonoidów w przeliczeniu na hiperozyd.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1105"
+            ]
+          },
+          {
+            "tekst": "W wysuszonych owocach pozornych głogu zawartość procyjanidyn przekracza 0,06%.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1106"
+            ]
+          },
+          {
+            "tekst": "W owocach głogu jednoszyjkowego zidentyfikowano obecność takich składników jak kwas askorbinowy, epikatechina, katechina, hiperozyd oraz kwasy chlorogenowe.",
+            "czesc": "owoce",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1126"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": "Surowce z głogu, obejmujące kwiaty, owoce i ziele, znajdują tradycyjne zastosowanie w chorobach serca i niewydolności krążenia. Ekstrakty te wchodzą w skład licznych preparatów znormalizowanych, a owoce nadają się również na domowe przetwory.",
+        "podsumowanie_zrodla": [
+          1,
+          2
+        ],
+        "punkty": [
+          {
+            "tekst": "Jako surowce zielarskie stosuje się kwiaty, owoce oraz ziele obejmujące kwiaty i liście razem. Ekstrakty z tych części wchodzą w skład licznych preparatów znormalizowanych na zawartość flawonoidów lub oligomerycznych proantocyjanidyn.",
+            "czesc": "ziele",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1122"
+            ]
+          },
+          {
+            "tekst": "Tradycyjnie surowce z głogu stosuje się w chorobach serca oraz przy niewydolności krążenia.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1107"
+            ]
+          },
+          {
+            "tekst": "Owoce głogu mają suchy, mączysty miąższ i choć są jadalne na surowo, to znacznie lepiej nadają się na przetwory takie jak konfitury, galaretki, nalewki oraz wina do kupażowania.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1108"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kosmetyka",
+        "tytul": "Kosmetyka",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Ekstrakt z owoców głogu jednoszyjkowego jest wykorzystywany w kosmetykach ze względu na działanie antyoksydacyjne, które przypisuje się jego właściwościom zbliżonym do enzymu SOD.",
+            "czesc": "owoce",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1124"
+            ]
+          },
+          {
+            "tekst": "Ekstrakt z owoców tej rośliny wykazuje działanie przeciwalergiczne, co wiąże się z hamowaniem uwalniania histaminy.",
+            "czesc": "owoce",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1125"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kultura",
+        "tytul": "Wierzenia i tradycje",
+        "podsumowanie": "W dawnej Europie głóg był silnie zakorzeniony w tradycji jako symbol nadziei oraz amulet ochronny przed złymi mocami, wampirami i czarami. Roślina ta pojawiała się również w średniowiecznych przepisach kulinarnych.",
+        "podsumowanie_zrodla": [
+          1,
+          3
+        ],
+        "punkty": [
+          {
+            "tekst": "W dawnej Europie głóg uznawano za symbol nadziei oraz amulet chroniący przed czarami i wampirami, a także umieszczano w kołyskach niemowląt lub wokół domostw jako zabezpieczenie przed złymi mocami.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1115"
+            ]
+          },
+          {
+            "tekst": "W czasach średniowiecznych głóg jednoszyjkowy pełnił rolę symbolu ostrożności oraz nadziei.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1109"
+            ]
+          },
+          {
+            "tekst": "Grekostwo umieszczało gałązki głogu w oknach, aby powstrzymać czarownice przed wchodzeniem do domów, podczas gdy w Czechach kładziono je na progach obór w tym samym celu.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1116"
+            ]
+          },
+          {
+            "tekst": "W Bośni kobiety wsuwały kawałek głogu za chustę niedawno zmarłej osoby, a następnie wyrzucały gałązkę w drodze powrotnej, wierząc, że jeśli zmarły okazałby się wampirem, skupi swoją uwagę na roślinie zamiast śledzić człowieka.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1117"
+            ]
+          },
+          {
+            "tekst": "Płatki głogu wykorzystywano w średniowiecznym angielskim przepisie na potrawkę z mleka migdałowego o nazwie spinee, który spisano około 1390 roku w dziele The Forme of Cury.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1114"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "nazwy_ludowe",
+        "tytul": "Nazwy ludowe",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Wśród dawnych i regionalnych nazw głogu jednoszyjkowego wymienia się głożynę, ciernie białe, jaworek, bodlak oraz bulimączkę.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1101"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Głóg jednoszyjkowy bywa bardzo często mylony z podobnym gatunkiem – głogiem odgiętodziałkowym.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1110"
+            ]
+          },
+          {
+            "tekst": "Badania na zwierzętach z użyciem ekstraktów z owoców głogu nie wykazały objawów podrażnienia skóry.",
+            "czesc": "owoce",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1127"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "ciekawostki",
+        "tytul": "Ciekawostki",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Miodne kwiaty głogu wydzielają zapach pochodzenia aminowego, który z daleka jest przyjemny, ale z bliska przypomina wielu osobom won chrabąszczów lub ryb. W przeszłości liście wykorzystywano jako zamiennik herbaty lub tytoniu, natomiast zmielone nasiona służyły jako ekwiwalent kawy.",
+            "czesc": "nasiona",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1123"
+            ]
+          },
+          {
+            "tekst": "Jednym z najstarszych znanych okazów we Francji jest głóg rosnący przy kościele w Saint Mars sur la Futaie, którego tradycja sięga czasów świętego Juliana z III wieku.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1118"
+            ]
+          },
+          {
+            "tekst": "Słynny angielski głóg z Glastonbury, zwany Świętym Cierniem, według legend wyrósł z laski Józefa z Arymatei i wyróżniał się tym, że zakwitł dwa razy w roku: normalnie późną wiosną oraz ponownie po ustąpieniu surowej zimy.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1119"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "owoce": [
+        "s1113",
+        "s1106",
+        "s1126",
+        "s1108",
+        "s1124",
+        "s1125",
+        "s1127"
+      ],
+      "kwiaty": [
+        "s1105",
+        "s1114"
+      ],
+      "ziele": [
+        "s1122"
+      ],
+      "nasiona": [
+        "s1123"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s1101",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "Wśród dawnych i regionalnych nazw głogu jednoszyjkowego wymienia się głożynę, ciernie białe, jaworek, bodlak oraz bulimączkę.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Głóg jednoszyjkowy",
+          "url": "https://pl.wikipedia.org/wiki/G%C5%82%C3%B3g_jednoszyjkowy"
+        }
+      },
+      {
+        "id": "s1105",
+        "sekcja": "sklad",
+        "czesc": "kwiaty",
+        "tekst": "Surowiec z kwiatostanu głogu powinien zawierać co najmniej 1,5% sumy flawonoidów w przeliczeniu na hiperozyd.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Głóg jednoszyjkowy",
+          "url": "https://pl.wikipedia.org/wiki/G%C5%82%C3%B3g_jednoszyjkowy"
+        }
+      },
+      {
+        "id": "s1106",
+        "sekcja": "sklad",
+        "czesc": "owoce",
+        "tekst": "W wysuszonych owocach pozornych głogu zawartość procyjanidyn przekracza 0,06%.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Głóg jednoszyjkowy",
+          "url": "https://pl.wikipedia.org/wiki/G%C5%82%C3%B3g_jednoszyjkowy"
+        }
+      },
+      {
+        "id": "s1107",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": null,
+        "tekst": "Tradycyjnie surowce z głogu stosuje się w chorobach serca oraz przy niewydolności krążenia.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Głóg jednoszyjkowy",
+          "url": "https://pl.wikipedia.org/wiki/G%C5%82%C3%B3g_jednoszyjkowy"
+        }
+      },
+      {
+        "id": "s1108",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "owoce",
+        "tekst": "Owoce głogu mają suchy, mączysty miąższ i choć są jadalne na surowo, to znacznie lepiej nadają się na przetwory takie jak konfitury, galaretki, nalewki oraz wina do kupażowania.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Głóg jednoszyjkowy",
+          "url": "https://pl.wikipedia.org/wiki/G%C5%82%C3%B3g_jednoszyjkowy"
+        }
+      },
+      {
+        "id": "s1109",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "W czasach średniowiecznych głóg jednoszyjkowy pełnił rolę symbolu ostrożności oraz nadziei.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Głóg jednoszyjkowy",
+          "url": "https://pl.wikipedia.org/wiki/G%C5%82%C3%B3g_jednoszyjkowy"
+        }
+      },
+      {
+        "id": "s1110",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Głóg jednoszyjkowy bywa bardzo często mylony z podobnym gatunkiem – głogiem odgiętodziałkowym.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Głóg jednoszyjkowy",
+          "url": "https://pl.wikipedia.org/wiki/G%C5%82%C3%B3g_jednoszyjkowy"
+        }
+      },
+      {
+        "id": "s1113",
+        "sekcja": "opis",
+        "czesc": "owoce",
+        "tekst": "Owoce głogu to małe, owalne i ciemnoczerwone nibyjagody o długości około 10 mm, które zawierają pojedyncze nasiono zamknięte w pestkowatym endokarpie.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Crataegus monogyna",
+          "url": "https://en.wikipedia.org/wiki/Crataegus_monogyna"
+        }
+      },
+      {
+        "id": "s1114",
+        "sekcja": "kultura",
+        "czesc": "kwiaty",
+        "tekst": "Płatki głogu wykorzystywano w średniowiecznym angielskim przepisie na potrawkę z mleka migdałowego o nazwie spinee, który spisano około 1390 roku w dziele The Forme of Cury.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Crataegus monogyna",
+          "url": "https://en.wikipedia.org/wiki/Crataegus_monogyna"
+        }
+      },
+      {
+        "id": "s1115",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "W dawnej Europie głóg uznawano za symbol nadziei oraz amulet chroniący przed czarami i wampirami, a także umieszczano w kołyskach niemowląt lub wokół domostw jako zabezpieczenie przed złymi mocami.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Crataegus monogyna",
+          "url": "https://en.wikipedia.org/wiki/Crataegus_monogyna"
+        }
+      },
+      {
+        "id": "s1116",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "Grekostwo umieszczało gałązki głogu w oknach, aby powstrzymać czarownice przed wchodzeniem do domów, podczas gdy w Czechach kładziono je na progach obór w tym samym celu.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Crataegus monogyna",
+          "url": "https://en.wikipedia.org/wiki/Crataegus_monogyna"
+        }
+      },
+      {
+        "id": "s1117",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "W Bośni kobiety wsuwały kawałek głogu za chustę niedawno zmarłej osoby, a następnie wyrzucały gałązkę w drodze powrotnej, wierząc, że jeśli zmarły okazałby się wampirem, skupi swoją uwagę na roślinie zamiast śledzić człowieka.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Crataegus monogyna",
+          "url": "https://en.wikipedia.org/wiki/Crataegus_monogyna"
+        }
+      },
+      {
+        "id": "s1118",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Jednym z najstarszych znanych okazów we Francji jest głóg rosnący przy kościele w Saint Mars sur la Futaie, którego tradycja sięga czasów świętego Juliana z III wieku.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Crataegus monogyna",
+          "url": "https://en.wikipedia.org/wiki/Crataegus_monogyna"
+        }
+      },
+      {
+        "id": "s1119",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Słynny angielski głóg z Glastonbury, zwany Świętym Cierniem, według legend wyrósł z laski Józefa z Arymatei i wyróżniał się tym, że zakwitł dwa razy w roku: normalnie późną wiosną oraz ponownie po ustąpieniu surowej zimy.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Crataegus monogyna",
+          "url": "https://en.wikipedia.org/wiki/Crataegus_monogyna"
+        }
+      },
+      {
+        "id": "s1120",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Głóg jednoszyjkowy to krzew lub małe drzewo osiągające od 2 do 6, rzadko do ponad 15 metrów własnej wysokości. Posiada ciemnobrazową korę z pomarańczowymi pęknięciami oraz gęste korony o gałęziach zaopatrzonych w liczne silne ciernie.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Eingriffeliger Weißdorn",
+          "url": "https://de.wikipedia.org/wiki/Eingriffeliger_Wei%C3%9Fdorn"
+        }
+      },
+      {
+        "id": "s1121",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Gatunek ten jest najpopularniejszym gatunkiem głogu w Europie Środkowej, a występuje również w Azji Przedniej aż po Afganistan. Preferuje sąsiedctwo żywopłotów, zarośli, obrzeży lasów oraz gleby bogate w wapń.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Eingriffeliger Weißdorn",
+          "url": "https://de.wikipedia.org/wiki/Eingriffeliger_Wei%C3%9Fdorn"
+        }
+      },
+      {
+        "id": "s1122",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "ziele",
+        "tekst": "Jako surowce zielarskie stosuje się kwiaty, owoce oraz ziele obejmujące kwiaty i liście razem. Ekstrakty z tych części wchodzą w skład licznych preparatów znormalizowanych na zawartość flawonoidów lub oligomerycznych proantocyjanidyn.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Eingriffeliger Weißdorn",
+          "url": "https://de.wikipedia.org/wiki/Eingriffeliger_Wei%C3%9Fdorn"
+        }
+      },
+      {
+        "id": "s1123",
+        "sekcja": "ciekawostki",
+        "czesc": "nasiona",
+        "tekst": "Miodne kwiaty głogu wydzielają zapach pochodzenia aminowego, który z daleka jest przyjemny, ale z bliska przypomina wielu osobom won chrabąszƣw lub ryb. W przeszłości liście wykorzystywano jako zamiennik herbaty lub tytoniu, natomiast zmielone nasiona sżtużyły jako ekwiwalent kawy.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Eingriffeliger Weißdorn",
+          "url": "https://de.wikipedia.org/wiki/Eingriffeliger_Wei%C3%9Fdorn"
+        }
+      },
+      {
+        "id": "s1124",
+        "sekcja": "kosmetyka",
+        "czesc": "owoce",
+        "tekst": "Ekstrakt z owoców głogu jednoszyjkowego jest wykorzystywany w kosmetykach ze względu na działanie antyoksydacyjne, które przypisuje się jego właściwościom zbliżonym do enzymu SOD.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "cosmetic-ingredients.org",
+          "url": "https://cosmetic-ingredients.org/skin-conditioning-miscellaneous/8681/"
+        }
+      },
+      {
+        "id": "s1125",
+        "sekcja": "kosmetyka",
+        "czesc": "owoce",
+        "tekst": "Ekstrakt z owoców tej rośliny wykazuje działanie przeciwAlergiczne, co wiąże się z hamowaniem uwalniania histaminy.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "cosmetic-ingredients.org",
+          "url": "https://cosmetic-ingredients.org/skin-conditioning-miscellaneous/8681/"
+        }
+      },
+      {
+        "id": "s1126",
+        "sekcja": "sklad",
+        "czesc": "owoce",
+        "tekst": "W owocach głogu jednoszyjkowego zidentyfikowano obecność takich składników jak kwas askorbinowy, epikatechina, katechina, hiperozyd oraz kwasy chlorogenowe.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "cosmetic-ingredients.org",
+          "url": "https://cosmetic-ingredients.org/skin-conditioning-miscellaneous/8681/"
+        }
+      },
+      {
+        "id": "s1127",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "owoce",
+        "tekst": "Badania na zwierzętach z użyciem ekstraktów z owoców głogu nie wykazały objawów podrażnienia skóry.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "cosmetic-ingredients.org",
+          "url": "https://cosmetic-ingredients.org/skin-conditioning-miscellaneous/8681/"
+        }
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-09",
+    "pola": {
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Długowieczny, ciernisty krzew lub małe drzewo dorastające do 6-10 metrów. Nazywany 'Chlebem Serca', jest jedną z najważniejszych roślin kardiologicznych w fitoterapii zachodniej. Tworzy gęste, trudne do przebycia zarośla, dając schronienie ptakom. Wiosną obsypuje się białym kwieciem o specyficznym zapachu, jesienią rodzi czerwone owoce.",
+        "tresc": [
+          {
+            "tekst": "Długowieczny, ciernisty krzew lub małe drzewo dorastające do 6-10 metrów. Nazywany 'Chlebem Serca', jest jedną z najważniejszych roślin kardiologicznych w fitoterapii zachodniej. Tworzy gęste, trudne do przebycia zarośla, dając schronienie ptakom. Wiosną obsypuje się białym kwieciem o specyficznym zapachu, jesienią rodzi czerwone owoce.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "P1 | Głóg jednoszyjkowy to krzew lub małe drzewo osiągające od 2 do 6, rzadko do ponad 15 metrów wysokości. Posiada ciemnobrązową korę z pomarańczowymi pęknięciami oraz gęste korony o gałęziach zaopatrzonych w liczne silne ciernie.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1120"
+            ]
+          },
+          {
+            "tekst": "P2 | Gatunek ten jest najpopularniejszym gatunkiem głogu w Europie Środkowej, a występuje również w Azji Przedniej aż po Afganistan. Preferuje sąsiedctwo żywopłotów, zarośli, obrzeży lasów oraz gleby bogate w wapń.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1121"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "3df67e4e43b218fe"
+      },
+      "czesci_rosliny.owoce.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Fructus Crataegi: Opis surowca",
+        "typ": "tekst",
+        "oryginal": "Czerwone, mączyste owoce rzekome (pozorne) wielkości grochu, z jedną pestką w środku.",
+        "tresc": [
+          {
+            "tekst": "Czerwone, mączyste owoce rzekome (pozorne) wielkości grochu, z jedną pestką w środku.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Owoce głogu to małe, owalne i ciemnoczerwone nibyjagody o długości około 10 mm, które zawierają pojedyncze nasiono zamknięte w pestkowatym endokarpie.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1113"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "5e9f2df5381d3665"
+      },
+      "czesci_rosliny.kwiaty.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Inflorescentia Crataegi (Kwiatostan z liściem): Substancje czynne",
+        "typ": "lista",
+        "oryginal": [
+          "Flawonoidy (witeksyna, hiperozyd) - kluczowe dla serca",
+          "Procyjanidyny oligomeryczne (OPC)",
+          "Aminy",
+          "Fitosterole"
+        ],
+        "tresc": [
+          {
+            "tekst": "Flawonoidy (witeksyna, hiperozyd) - kluczowe dla serca",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Procyjanidyny oligomeryczne (OPC) - ważne dla zdrowia serca",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Aminy",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Fitosterole",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Surowiec z kwiatostanu głogu powinien zawierać co najmniej 1,5% sumy flawonoidów w przeliczeniu na hiperozyd.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1105"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "21e005797930b9f9"
+      },
+      "czesci_rosliny.owoce.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Fructus Crataegi: Substancje czynne",
+        "typ": "lista",
+        "oryginal": [
+          "Procyjanidyny",
+          "Witaminy (C, z grupy B)",
+          "Pektyny",
+          "Kwasy organiczne",
+          "Sole mineralne (potas, magnez, wapń)"
+        ],
+        "tresc": [
+          {
+            "tekst": "W wysuszonych owockach pozornych głogu zawartość procyjanidyn przekracza 0,06%.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1106"
+            ]
+          },
+          {
+            "tekst": "Witaminy (C, z grupy B)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Pektyny",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwasy organiczne",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Sole mineralne (potas, magnez, wapń)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W owocach głogu jednoszyjkowego zidentyfikowano obecność takich składników jak kwas askorbinowy, epikatechina, katechina, hiperozyd oraz kwasy chlorogenowe.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1126"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "69d7f788151809e7"
+      },
+      "zastosowanie.medyczne": {
+        "tytul": "Praktyczne zastosowanie - Medycyna",
+        "typ": "tekst",
+        "oryginal": "Niezastąpiony w 'sercu starczym' (osłabienie wydolności), przy kołataniach serca na tle nerwowym, w początkowym stadium nadciśnienia oraz w rekonwalescencji po zawale. Działa powoli, ale trwale.",
+        "tresc": [
+          {
+            "tekst": "Niezastąpiony w 'sercu starczym' (osłabienie wydolności), przy kołataniach serca na tle nerwowym, w początkowym stadium nadciśnienia oraz w rekonwalescencji po zawale. Działa powoli, ale trwale.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jako surowce zielarskie stosuje się kwiaty, owoce oraz ziele obejmujące kwiaty i liście razem. Ekstrakty z tych części wchodzą w skład licznych preparatów znormalizowanych na zawartość flawonoidów lub oligomerycznych proantocyjanidyn.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1122"
+            ]
+          },
+          {
+            "tekst": "Tradycyjnie surowce z głogu stosuje się w chorobach serca oraz przy niewydolności krążenia.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1107"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "c60ab2ef7d37778d"
+      },
+      "czesci_rosliny.owoce.wlasciwości": {
+        "tytul": "Surowce i zbiory - Fructus Crataegi: Działanie",
+        "typ": "tekst",
+        "oryginal": "Tonik mięśnia sercowego (wzmacnia siłę skurczu), uszczelnia naczynia krwionośne, działa przeciwmiażdżycowo i łagodnie nasennie.",
+        "tresc": [
+          {
+            "tekst": "Tonik mięśnia sercowego (wzmacnia siłę skurczu), uszczelnia naczynia krwionośne, działa przeciwmiażdżycowo i łagodnie nasennie.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Owoce głogu mają suchy, mączysty miąższ i choć są jadalne na surowo, to znacznie lepiej nadają się na przetwory takie jak konfitury, galaretki, nalewki oraz wina do kupażowania.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1108"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "0a7030c4b7fd391b"
+      },
+      "zastosowanie.kosmetyczne": {
+        "tytul": "Praktyczne zastosowanie - Kosmetyka",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Ekstrakt z owoców głogu jednoszyjkowego jest wykorzystywany w kosmetykach ze względu na działanie antyoksydacyjne, które przypisuje się jego właściwościom zbliżonym do enzymu SOD.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1124"
+            ]
+          },
+          {
+            "tekst": "Ekstrakt z owoców tej rośliny wykazuje działanie przeciwalergiczne, co wiąże się z hamowaniem uwalniania histaminy.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1125"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "19d95fadc6cff3a2"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "W mitologii celtyckiej głóg był strażnikiem wrót do świata wróżek. Ścięcie samotnego głogu przynosiło pecha.",
+          "Drewno głogu pali się w bardzo wysokiej temperaturze, dawniej używane w piecach piekarniczych.",
+          "Jezusowa korona cierniowa miała być spleciona z gałęzi głogu (lub głożyny).",
+          "Angielska nazwa 'Hawthorn' pochodzi od słowa 'Hage' (żywopłot) - od wieków był to krzew grodzący pola."
+        ],
+        "tresc": [
+          {
+            "tekst": "W mitologii celtyckiej głóg był strażnikiem wrót do świata wróżek. Ścięcie samotnego głogu przynosiło pecha.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Drewno głogu pali się w bardzo wysokiej temperaturze, dawniej używane w piecach piekarniczych.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jezusowa korona cierniowa miała być spleciona z gałęzi głogu (lub głożyny).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Angielska nazwa 'Hawthorn' pochodzi od słowa 'Hage' (żywopłot) - od wieków był to krzew grodzący pola.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W dawnej Europie głóg uznawano za symbol nadziei oraz amulet chroniący przed czarcami i wampirami, a także umieszczano w kołyskach niemowląt lub wokół domostw jako zabezpieczenie przed złymi mocami.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1115"
+            ]
+          },
+          {
+            "tekst": "W czasach średniowiecznych głóg jednoszyjkowy pełnił rolę symbolu ostrożności oraz nadziei. Grekostwo umieszczało gałązki głogu w oknach, aby powstrzymać czarownice przed wchodzeniem do domów, podczas gdy w Czechach kładziono je na progach obór w tym samym celu.",
+            "zrodla": [
+              1,
+              3
+            ],
+            "fakty": [
+              "s1109",
+              "s1116"
+            ]
+          },
+          {
+            "tekst": "W Bośni kobiety wsuwały kawałek głogu za chustę niedwawnowo zmarłej osoby, a następnie wyrzucały gałązkę w drodze powrotnej, wierząc, że jeśli zmarły okazałby się wampirem, skupi swoją uwagę na roślinie zamiast śledzić człowieka.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1117"
+            ]
+          },
+          {
+            "tekst": "Wśród dawnych i regionalnych nazw głogu jednoszyjkowego wymienia się głożynę, ciernie białe, jaworek, bodlak oraz bulimączkę.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1101"
+            ]
+          },
+          {
+            "tekst": "Jednym z najstarszych znanych okazów we Francji jest głóg rosnący przy kościele w Saint Mars sur la Futaie, którego tradycja sięga czasów świętego Juliana z III wieku.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1118"
+            ]
+          },
+          {
+            "tekst": "Słynny angielski głóg z Glastonbury, zwany Świętym Cierniem, według legend wyrósł z laski Józefa z Arymatei i wyróżniał się tym, że zakwitł dwa razy w roku: normalnie późną wiosną oraz ponownie po ustąpieniu surowej zimy.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1119"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "ac8f3795720a7d36"
+      },
+      "zastosowanie.kulinarne": {
+        "tytul": "Praktyczne zastosowanie - Kuchnia",
+        "typ": "tekst",
+        "oryginal": "Owoce (po usunięciu pestek) nadają się na dżemy, wina, nalewki i jako dodatek do mąki (w czasach głodu suszone owoce mielono na mąkę). Młode pączki liściowe są jadalną, orzechową przekąską ('chleb kukułczy').",
+        "tresc": [
+          {
+            "tekst": "Owoce (po usunięciu pestek) nadają się na dżemy, wina, nalewki i jako dodatek do mąki (w czasach głodu suszone owoce mielono na mąkę). Młodsze pączki liściowe są jadalną, orzechową przekąską ('chleb kukułczy').",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "P1 | Płatki głogu wykorzystywano w średniowiecznym angielskim przepisie na potrawkę z mleka migdałowego o nazwie spinee, który spisano około 1390 roku w dziele The Forme of Cury.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1114"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "9bf9777590bf94cf"
+      },
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": [
+          "Wewnątrz owocu znajduje się TYLKO JEDNA pestka (stąd nazwa 'jednoszyjkowy').",
+          "Liście są głęboko wcięte (3-7 klap), wcięcia sięgają często do połowy nerwu głównego.",
+          "Ostre ciernie o długości 1-2 cm na pędach."
+        ],
+        "tresc": [
+          {
+            "tekst": "Liście głogu jednoszyjkowego są głęboko wcięte, z 3-7 klapami, a ich ostre ciernie o długości 1-2 cm na pędach dodają mu charakterystycznego wyglądu.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Wewnątrz owocu znajduje się TYLKO JEDNA pestka (stąd nazwa 'jednoszyjkowy').",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Liście są głęboko wcięte (3-7 klap), wcięcia sięgają często do połowy nerwu głównego.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Głóg jednoszyjkowy bywa bardzo często mylony z podobnym gatunkiem – głogiem odgiętodziałkowym.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1110"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "67deaba1514a9009"
+      },
+      "czesci_rosliny.owoce.ostrzezenia": {
+        "tytul": "Surowce i zbiory - Fructus Crataegi: Ostrzeżenia",
+        "typ": "tekst",
+        "oryginal": "Przemrożenie owoców sprawia, że stają się miękkie i słodsze (dobre na przetwory), ale trudniejsze do suszenia.",
+        "tresc": [
+          {
+            "tekst": "Przemrożenie owoców sprawia, że stają się miękkie i słodsze (dobre na przetwory), ale trudniejsze do suszenia.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Badania na zwierzętach z użyciem ekstraktów z owoców głogu nie wykazały objawów podrażnienia skóry.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1127"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "c4353d16233df413"
+      },
+      "czesci_rosliny.nasiona.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Miodne kwiaty głogu wydzielają zapach pochodzenia amminowego, który z daleka jest przyjemny, ale z bliska przypomina wielu osobom won chrabąszczów lub ryb. W przeszłości liście wykorzystywano jako zamiennik herbaty lub tytoniu, natomiast zmielone nasiona służyły jako ekwiwalent kawy.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1123"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "4713594ccac0bb3f"
+      }
+    },
+    "uzyte_fakty": [
+      "s1101",
+      "s1105",
+      "s1106",
+      "s1107",
+      "s1108",
+      "s1109",
+      "s1110",
+      "s1113",
+      "s1114",
+      "s1115",
+      "s1116",
+      "s1117",
+      "s1118",
+      "s1119",
+      "s1120",
+      "s1121",
+      "s1122",
+      "s1123",
+      "s1124",
+      "s1125",
+      "s1126",
+      "s1127"
     ]
   }
 }
