@@ -102,7 +102,9 @@ def _plants():
             continue
         p = dict(p)
         p['nazwa_pl'] = p.get('nazwa_pl') or p.get('gatunek') or 'Nieznana roślina'
-        p['id'] = p.get('id') or p.get('slug') or pid
+        # adres strony rosliny to nazwa pliku (/plant/<plik>/) - pole "id" w JSON-ie bywa inne (np. literowka),
+        # a link do nieistniejacej strony wywraca budowanie (freeze.py: 404)
+        p['id'] = pid
         out.append(p)
     return out
 

@@ -41,9 +41,47 @@ def get_all_plants_list():
 def recipes_dir():
     return os.path.join(current_app.root_path, '..', 'data', 'przepisy')
 
+_aliasy = {'key': None, 'map': {}}
+
+
+def _plant_id_aliases(valid):
+    """id z wnetrza JSON-a rosliny -> nazwa pliku, gdy sie roznia (np. "modrzejec_kampechianski" ->
+    modrzejec_kampechanski). Liczone raz na zmiane listy roslin."""
+    folder = plants_dir()
+    key = tuple(sorted(valid))
+    if key != _aliasy['key']:
+        out = {}
+        for pid in valid:
+            path = os.path.join(folder, f'{pid}.json')
+            if not os.path.exists(path):
+                continue
+            try:
+                with open(path, 'r', encoding='utf-8') as f:
+                    d = json.load(f)
+            except (OSError, ValueError):
+                continue
+            inner = d.get('id') if isinstance(d, dict) else None
+            if isinstance(inner, str) and inner and inner != pid and inner not in valid:
+                out[inner] = pid
+        _aliasy.update(key=key, map=out)
+    return _aliasy['map']
+
+
 def get_all_recipes():
-    """Przepisy z magazynu data/przepisy: najnowszy plik z kazdej serii <seria>_<data>.json (app/utils/recipe_store.py)."""
-    return load_recipes(recipes_dir())
+    """Przepisy z magazynu data/przepisy: najnowszy plik z kazdej serii <seria>_<data>.json (app/utils/recipe_store.py).
+    "slug" przepisu wskazuje strone rosliny (/plant/<slug>/) - poprawiany na nazwe pliku rosliny, a gdy takiej
+    rosliny nie ma w Kwiatowniku, usuwany (przepis pokazuje wtedy sama nazwe rosliny, bez martwego linku)."""
+    recipes = load_recipes(recipes_dir())
+    valid = set(get_all_plants_list())
+    aliases = _plant_id_aliases(valid)
+    for r in recipes:
+        s = r.get('slug')
+        if s and s not in valid:
+            if s in aliases:
+                r['slug'] = aliases[s]
+            else:
+                r.pop('slug', None)
+    return recipes
 
 def get_recipe_store_files():
     return store_files(recipes_dir())
