@@ -409,6 +409,22 @@ details.grimoire-subdetails > summary:hover {
     padding: 1px 8px; border-radius: 10px; margin: 0 6px; white-space: nowrap;
 }
 .alchemical-tag.web-tag { background: #eef4fa; border-color: #9db8d3; color: #2f5d8a; }
+
+/* Wzmianki o przepisach (seria siedziba_wzmianki): przepis opisany na stronie, ale bez pelnego wykonania */
+.lead-badge {
+    font-size: 0.75rem; color: #8a6116; border: 1px dashed #d4b46a; background: #fbf3df;
+    padding: 1px 8px; border-radius: 10px; margin: 0 6px; white-space: nowrap;
+}
+.recipe-card.recipe-card-lead { border-style: dashed; }
+.alchemical-tag.lead-tag { background: #fbf3df; border-color: #d4b46a; color: #8a6116; }
+.lead-notice { margin: 0 0 14px; padding: 10px 14px; background: #fbf7ec; border: 1px dashed #d4b46a;
+    border-left: 4px solid #d4b46a; color: #5b4a2c; font-family: 'Crimson Text', serif; font-size: 1.02rem; }
+.lead-notice p { margin: 0 0 6px; }
+.lead-notice-title { font-family: 'Playfair Display', serif; font-weight: bold; color: #8a6116; }
+.lead-notice .recipe-facts { margin: 6px 0 0; color: #5b4a2c; }
+.lead-quote { margin: 8px 0 0; padding: 4px 0 4px 10px; border-left: 2px solid #d4b46a; font-style: italic;
+    color: #6d5c3d; word-break: break-word; }
+.lead-steps .ritual-text { font-style: italic; color: #8a6116; }
 .origin-filter .btn.active { background: #3e4a3d; color: #fdfaf0; border-color: #3e4a3d; }
 .recipe-description { font-family: 'Crimson Text', serif; font-size: 1.1rem; color: #444; margin-bottom: 10px; }
 .recipe-facts { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-bottom: 8px; color: #3e4a3d; }

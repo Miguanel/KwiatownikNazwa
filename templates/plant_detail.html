@@ -436,6 +436,7 @@
                             <li><i class="ra ra-emerald"></i>
                                 <a href="{{ url_for('recipes.przepisy', q=r.get('tytul'), autoopen='true') }}">{{ r.get('tytul') }}</a>
                                 {% if r.get('_z_sieci') %}<small title="przepis z internetu, przetłumaczony">🌐</small>{% endif %}
+                                {% if r.get('_wzmianka') %}<small title="wzmianka – przepis bez potwierdzonych składników i kroków; Siedziba Kwiatownika szuka pełnego przepisu" style="color:#8a6116;">🔎 wzmianka</small>{% endif %}
                                 {% if r.get('metoda') %}<small style="color:#888;"> · {{ r.get('metoda') }}</small>{% endif %}
                             </li>
                         {% endfor %}

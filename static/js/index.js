@@ -462,12 +462,12 @@
     function recipeItemHtml(r) {
         const fromWeb = r.w || r._z_sieci || r.siedziba;
         const plantLabel = r.roslina || (Array.isArray(r.sk) ? r.sk : ingredientNames(r)).slice(0, 2).join(', ');
-        const desc = r.opis || prepText(r) || 'Brak instrukcji';
+        const desc = r.opis || prepText(r) || ((r.wz || r.wzmianka) ? 'Kroki nieznane – szukamy pełnego przepisu' : 'Brak instrukcji');
         return `
             <a class="task-card task-card-recipe" href="${getRecipeUrl(r.tytul)}">
                 <div class="task-card-icon"><i class="ra ra-potion"></i></div>
                 <div class="task-card-content">
-                    <h4 class="task-card-title">${esc(r.tytul)}${fromWeb ? ' <span class="kw-web-badge" title="Przepis zebrany z sieci przez Siedzibę Kwiatownika">🌐 z sieci</span>' : ''}</h4>
+                    <h4 class="task-card-title">${esc(r.tytul)}${r.wz || r.wzmianka ? ' <span class="kw-web-badge kw-lead-badge" title="Wzmianka o przepisie – bez potwierdzonych składników i kroków; Siedziba Kwiatownika szuka pełnego przepisu">🔎 wzmianka</span>' : fromWeb ? ' <span class="kw-web-badge" title="Przepis zebrany z sieci przez Siedzibę Kwiatownika">🌐 z sieci</span>' : ''}</h4>
                     ${plantLabel ? `<div class="task-card-meta"><i class="ra ra-leaf"></i> ${esc(shorten(plantLabel, 70))}</div>` : ''}
                     <p class="task-card-desc">${esc(shorten(desc, 120))}</p>
                 </div>

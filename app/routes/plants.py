@@ -6,7 +6,7 @@ from app.extensions import db
 from app.utils.helpers import get_plant_data, get_all_plants_list, get_all_therapeutic_keywords, plants_dir
 from app.utils.legacy import get_legacy_plant
 from app.utils.merged import czesci_generatora, ostrzezenia_generatora
-from app.routes.recipes import recipes_for_plant, is_from_web
+from app.routes.recipes import recipes_for_plant, is_from_web, is_lead
 from app.utils.seo import plant_seo
 from astro_engine import get_astrological_data
 
@@ -31,10 +31,13 @@ def plant_detail(plant_id):
     plant_recipes = recipes_for_plant(plant_id, plant_data.get('nazwa_pl'))
     for r in plant_recipes:
         r['_z_sieci'] = is_from_web(r)
+        r['_wzmianka'] = is_lead(r)
+    plant_recipes.sort(key=lambda r: r['_wzmianka'])          # pelne przepisy najpierw, wzmianki na koncu
+    full_recipes = [r for r in plant_recipes if not r['_wzmianka']]
 
     legacy = get_legacy_plant(plants_dir(), plant_id)
     return render_template('plant_detail.html', plant=plant_data, plant_id=plant_id, comments=comments,
-                           plant_recipes=plant_recipes, legacy=legacy, seo=plant_seo(plant_data, plant_id, bool(plant_recipes)))
+                           plant_recipes=plant_recipes, legacy=legacy, seo=plant_seo(plant_data, plant_id, bool(full_recipes)))
 
 
 def _compare_sources(data, legacy):
@@ -79,7 +82,7 @@ def _compare_row(data, legacy, recipes):
         'czesci': {k: (v.get('wlasciwości') or v.get('wlasciwosci') or '') if isinstance(v, dict) else '' for k, v in parts.items()},
         'medyczne': zast.get('medyczne'), 'rzemieslnicze': zast.get('rzemieslnicze'), 'barwniki': barwniki,
         'interakcje': data.get('interakcje'), 'ostrzezenia': data.get('ostrzezenia'),
-        'przepisy': len(recipes), 'archiwum': bool(data.get('_archiwum')),
+        'przepisy': sum(1 for r in recipes if not is_lead(r)), 'archiwum': bool(data.get('_archiwum')),
         'zrodla': _compare_sources(data, legacy),
     }
 

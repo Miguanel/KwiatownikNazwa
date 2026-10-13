@@ -204,7 +204,7 @@ def _prep_text(r):
 def search_payload():
     """Dane wyszukiwarki strony glownej (/api/szukaj.json)."""
     from data_builder import build_calendar_from_jsons
-    from app.routes.recipes import is_from_web
+    from app.routes.recipes import is_from_web, is_lead
 
     plants = _plants()
     by_name = {norm(p['nazwa_pl']).strip(): p for p in plants}
@@ -215,7 +215,7 @@ def search_payload():
         if not isinstance(r, dict) or not r.get('tytul'):
             continue
         plant = by_name.get(norm(r.get('roslina')).strip()) if r.get('roslina') else None
-        if plant:
+        if plant and not is_lead(r):                       # wzmianka nie dopisuje roslinie "dolegliwosci"
             for k in ('zastosowanie', 'cechy', 'wlasciwosci', 'efekty', 'tagi'):
                 symptoms[plant['id']] += _symptom_parts(r.get(k))
         recipes.append({
@@ -224,6 +224,8 @@ def search_payload():
             'sk': _ingredients(r), 'w': 1 if is_from_web(r) else 0,
             's': search_text(r, skip=RECIPE_SKIP),
         })
+        if is_lead(r):
+            recipes[-1]['wz'] = 1                           # wzmianka: bez krokow, Siedziba szuka pelnego przepisu
 
     rows = []
     for p in plants:

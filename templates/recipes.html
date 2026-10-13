@@ -31,9 +31,10 @@
     </div>
 
     <div class="origin-filter d-flex justify-content-center gap-2 mb-4 flex-wrap">
-        <button type="button" class="btn btn-sm btn-outline-secondary active" onclick="setOriginFilter('all', this)">Wszystkie ({{ (book_count or 0) + (web_count or 0) }})</button>
+        <button type="button" class="btn btn-sm btn-outline-secondary active" onclick="setOriginFilter('all', this)">Wszystkie ({{ (book_count or 0) + (web_count or 0) + (lead_count or 0) }})</button>
         <button type="button" class="btn btn-sm btn-outline-secondary" onclick="setOriginFilter('book', this)">📜 Z ksiąg ({{ book_count or 0 }})</button>
         <button type="button" class="btn btn-sm btn-outline-secondary" onclick="setOriginFilter('web', this)" title="Przepisy zebrane z internetu i przetłumaczone przez Siedzibę Kwiatownika">🌐 Z sieci ({{ web_count or 0 }})</button>
+        {% if lead_count %}<button type="button" class="btn btn-sm btn-outline-secondary" onclick="setOriginFilter('lead', this)" title="Przepisy, o których piszą strony, ale bez pełnego wykonania – Siedziba Kwiatownika szuka ich składników i kroków">🔎 Wzmianki ({{ lead_count }})</button>{% endif %}
     </div>
 
     <div id="noResultsMessage" class="text-center py-5" style="display: none;">
@@ -47,8 +48,8 @@
     <div class="row g-4" id="recipesGrid" data-search-src="{{ url_for('api.api_przepisnik') }}">
         {% if results %}{% filter kw_squash %}
             {% for recipe in results %}
-            <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch recipe-wrapper" data-origin="{{ 'web' if recipe.get('_z_sieci') else 'book' }}" data-nr="{{ recipe._nr }}">
-                <div class="recipe-card w-100">
+            <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch recipe-wrapper" data-origin="{{ 'lead' if recipe.get('_wzmianka') else ('web' if recipe.get('_z_sieci') else 'book') }}" data-nr="{{ recipe._nr }}">
+                <div class="recipe-card w-100{% if recipe.get('_wzmianka') %} recipe-card-lead{% endif %}">
                     <div style="display: flex; justify-content: space-between; align-items: start;">
                         {% set typ = recipe.get('typ') or '' %}
                         {% if 'medyczn' in typ %}
@@ -61,6 +62,7 @@
                             <span class="recipe-stamp stamp-food">♨ Rzemiosło</span>
                         {% endif %}
                         {% if recipe.get('_z_sieci') %}<span class="web-badge" title="Z internetu, przetłumaczony - źródła w grymuarze">🌐 z sieci</span>{% endif %}
+                        {% if recipe.get('_wzmianka') %}<span class="lead-badge" title="Przepis znany tylko ze wzmianki – bez potwierdzonych składników i kroków. Siedziba Kwiatownika szuka pełnego przepisu.">🔎 wzmianka</span>{% endif %}
                         <small style="color: #888; font-style: italic; text-align: right;">
                             {% if recipe.get('pochodzenie') %}{{ recipe.get('pochodzenie')[0] | replace('[', '') | replace(']', '') }}{% else %}{{ recipe.get('roslina') }}{% endif %}
                         </small>
@@ -69,7 +71,7 @@
                     <h3 class="recipe-title">{{ recipe.get('tytul', 'Nieznana receptura') }}</h3>
                     {% set zr = recipe.get('_zrodlo') %}
                     <p class="recipe-source">
-                        {% if zr and zr.url %}<i class="bi bi-link-45deg" aria-hidden="true"></i> Źródło:
+                        {% if zr and zr.url %}<i class="bi bi-link-45deg" aria-hidden="true"></i> {{ 'Wzmianka:' if recipe.get('_wzmianka') else 'Źródło:' }}
                             <a href="{{ zr.url }}" target="_blank" rel="noopener nofollow" data-kw-src="{{ zr.domena }}" title="{{ zr.nazwa }} – otwiera stronę, z której pochodzi przepis">{{ zr.domena }} ↗</a>{% if zr.wiecej %} <span class="recipe-source-more" title="Ten sam przepis jest też na innych stronach – lista w grymuarze">+{{ zr.wiecej }}</span>{% endif %}
                         {% elif zr %}<i class="bi bi-book" aria-hidden="true"></i> Źródło: {{ zr.nazwa }}{% if zr.wiecej %} <span class="recipe-source-more">+{{ zr.wiecej }}</span>{% endif %}
                         {% else %}<i class="bi bi-book" aria-hidden="true"></i> Źródło: księga Kwiatownika{% endif %}
@@ -88,7 +90,7 @@
                     </p>
 
                     <button class="btn-details" data-src="{{ url_for('api.api_przepis', nr=recipe._nr) }}" onclick="openRecipeModal(this)">
-                        Otwórz grymuar
+                        {{ 'Zobacz wzmiankę' if recipe.get('_wzmianka') else 'Otwórz grymuar' }}
                     </button>
                 </div>
             </div>

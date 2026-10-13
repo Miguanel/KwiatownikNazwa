@@ -25,8 +25,18 @@ def recipe_search_text(recipe):
     return " ".join(parts).lower()
 
 
+def is_lead(recipe):
+    """Wzmianka o przepisie (seria siedziba_wzmianki z Siedziby Kwiatownika): strona opisuje przepis, ale nie podaje
+    pelnego wykonania. Ma klucz "wzmianka" ({'status': 'szukamy'|'nie_znaleziono', 'cytat', 'tytul_oryginalny', ...}),
+    a "sposob_przygotowania" jest pusty - Siedziba szuka pelnego przepisu w innych miejscach internetu."""
+    return isinstance(recipe, dict) and bool(recipe.get('wzmianka'))
+
+
 def is_from_web(recipe):
-    """Przepis zebrany z internetu przez Siedzibe Kwiatownika (ma metadane Siedziby albo zrodla z adresami)."""
+    """Pelny przepis zebrany z internetu przez Siedzibe Kwiatownika (ma metadane Siedziby albo zrodla z adresami).
+    Wzmianki (is_lead) nie sa przepisami z sieci - maja wlasna grupe."""
+    if is_lead(recipe):
+        return False
     if recipe.get('siedziba'):
         return True
     return any(isinstance(z, dict) and z.get('url') for z in (recipe.get('zrodla') or []))
@@ -82,11 +92,12 @@ def kw_squash(html):
 
 def przepisnik_recipes():
     """Wszystkie przepisy Przepisnika z polami do wyswietlenia: _nr (numer pliku /api/przepis/<nr>.json),
-    _z_sieci i _zrodlo. Kolejnosc = kolejnosc magazynu (get_all_recipes), wiec numery sa stale w jednej budowie."""
+    _z_sieci, _wzmianka i _zrodlo. Kolejnosc = kolejnosc magazynu (get_all_recipes), wiec numery sa stale w jednej budowie."""
     out = []
     for nr, r in enumerate(get_all_recipes()):
         r['_nr'] = nr
         r['_z_sieci'] = is_from_web(r)
+        r['_wzmianka'] = is_lead(r)
         r['_zrodlo'] = primary_source(r)
         out.append(r)
     return out
@@ -100,5 +111,6 @@ def przepisy():
     all_recipes = przepisnik_recipes()
     results = [r for r in all_recipes if query in recipe_search_text(r)] if query else all_recipes
     web_count = sum(1 for r in all_recipes if r['_z_sieci'])
-    return render_template('recipes.html', results=results, query=query, web_count=web_count,
-                           book_count=len(all_recipes) - web_count)
+    lead_count = sum(1 for r in all_recipes if r['_wzmianka'])
+    return render_template('recipes.html', results=results, query=query, web_count=web_count, lead_count=lead_count,
+                           book_count=len(all_recipes) - web_count - lead_count)

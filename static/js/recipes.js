@@ -194,6 +194,11 @@ function showRecipeModal(recipe) {
                 plainTextTags += `${clean}<br>`;
             });
         }
+        const lead = recipe.wzmianka && typeof recipe.wzmianka === 'object' ? recipe.wzmianka : null;
+        if(lead) {
+            tagsHtml += `<span class="alchemical-tag lead-tag" title="Przepis znany tylko ze wzmianki – bez potwierdzonych składników i kroków">🔎 Wzmianka</span>`;
+            plainTextTags += `Wzmianka (bez pełnego przepisu)<br>`;
+        }
         if(recipe._z_sieci) {
             tagsHtml += `<span class="alchemical-tag web-tag" title="Przepis zebrany z internetu i przetłumaczony przez Siedzibę Kwiatownika">🌐 Z sieci</span>`;
             plainTextTags += `Z sieci (przetłumaczony)<br>`;
@@ -221,8 +226,23 @@ function showRecipeModal(recipe) {
             if (recipe.metoda) facts.push(`<span><strong>Metoda:</strong> ${esc(recipe.metoda)}</span>`);
             if (recipe.porcje) facts.push(`<span><strong>Porcje:</strong> ${esc(recipe.porcje)}</span>`);
             if (recipe.czas_przygotowania) facts.push(`<span><strong>Czas:</strong> ${esc(recipe.czas_przygotowania)}</span>`);
-            const tags = Array.isArray(recipe.tagi) ? recipe.tagi.filter(t => typeof t === 'string' && t) : [];
+            const tags = Array.isArray(recipe.tagi) ? recipe.tagi.filter(t => typeof t === 'string' && t && !(lead && t === 'wzmianka')) : [];
             let infoHtml = '';
+            if (lead) {
+                const searching = lead.status !== 'nie_znaleziono';
+                const orig = [lead.tytul_oryginalny ? `<span><strong>Nazwa w źródle:</strong> ${esc(lead.tytul_oryginalny)}</span>` : '',
+                              lead.roslina_lacinska ? `<span><strong>Roślina (łac.):</strong> <i>${esc(lead.roslina_lacinska)}</i></span>` : '',
+                              lead.jezyk ? `<span><strong>Język źródła:</strong> ${esc(String(lead.jezyk).toUpperCase())}</span>` : '']
+                              .filter(Boolean).join('');
+                infoHtml += `<div class="lead-notice">
+                    <p class="lead-notice-title">🔎 To wzmianka o przepisie</p>
+                    <p>Źródło opisuje ten przepis, ale nie podaje jego pełnego wykonania. Poniżej jest to, co o nim wiadomo.
+                    ${searching ? 'Siedziba Kwiatownika szuka pełnego przepisu – składników i kroków – w innych miejscach internetu.'
+                                : 'Pełnego przepisu nie udało się jeszcze odnaleźć w innych źródłach.'}</p>
+                    ${orig ? `<div class="recipe-facts">${orig}</div>` : ''}
+                    ${lead.cytat ? `<blockquote class="lead-quote">„${esc(lead.cytat)}”</blockquote>` : ''}
+                </div>`;
+            }
             if (recipe.opis) infoHtml += `<p class="recipe-description">${esc(recipe.opis)}</p>`;
             if (facts.length) infoHtml += `<div class="recipe-facts">${facts.join('')}</div>`;
             if (tags.length) infoHtml += `<div class="recipe-tags">${tags.map(t => `<span class="alchemical-tag">#${esc(t)}</span>`).join('')}</div>`;
@@ -387,6 +407,8 @@ function showRecipeModal(recipe) {
 
         // --- SKŁADNIKI W JEDNEJ LINII ---
         const ingList = document.getElementById('modalRecipeIngredients');
+        const ingHead = ingList.previousElementSibling;
+        if (ingHead && ingHead.tagName === 'H4') ingHead.textContent = lead ? 'Znane składniki:' : 'Składniki:';
         let ingHtml = "";
         if (Array.isArray(recipe.skladniki)) {
             recipe.skladniki.forEach(s => {
@@ -405,11 +427,16 @@ function showRecipeModal(recipe) {
         } else {
             ingHtml = `<li class="ingredient-li">${esc(recipe.skladniki) || 'Brak danych'}</li>`;
         }
+        if (lead && !ingHtml) ingHtml = `<li class="ingredient-li text-muted">Źródło nie podaje składników.</li>`;
         ingList.innerHTML = ingHtml;
 
         // --- RYTUAŁ PRZYGOTOWANIA ---
         const prep = document.getElementById('modalRecipePreparation');
-        if(Array.isArray(recipe.sposob_przygotowania)) {
+        const steps = recipe.sposob_przygotowania;
+        if (lead && (!steps || (Array.isArray(steps) && !steps.length))) {
+            prep.innerHTML = `<div class="ritual-step lead-steps"><div class="ritual-text">Kroki nieznane – ${lead.status === 'nie_znaleziono'
+                ? 'pełnego przepisu nie odnaleziono jeszcze w innych źródłach.' : 'szukamy pełnego przepisu w innych źródłach.'}</div></div>`;
+        } else if(Array.isArray(recipe.sposob_przygotowania)) {
             let prepsHtml = "";
             recipe.sposob_przygotowania.forEach((step, index) => {
                 let cleanStep = esc(step).replace(/^Faza \d+ \((.*?)\):/, '<strong>$1:</strong>').replace(/^Krok \d+:\s*/, '');
@@ -437,10 +464,12 @@ function showRecipeModal(recipe) {
                                   z.date ? `pobrano ${esc(z.date)}` : ''].filter(Boolean).join(' · ');
                     return `<li>${name}${meta ? ` <small class="text-muted">— ${meta}</small>` : ''}</li>`;
                 }).join('');
-                const note = recipe._z_sieci
+                const note = lead
+                    ? `<p class="text-muted" style="font-size:.9rem;margin-bottom:6px;">Strona, na której pojawiła się wzmianka o przepisie.</p>`
+                    : recipe._z_sieci
                     ? `<p class="text-muted" style="font-size:.9rem;margin-bottom:6px;">Przepis przetłumaczony z oryginału${sources.length > 1 ? ` — występuje na ${sources.length} stronach` : ''}.</p>` : '';
                 srcContainer.innerHTML = `
-                    <details class="grimoire-details" ${recipe._z_sieci ? 'open' : ''}>
+                    <details class="grimoire-details" ${recipe._z_sieci || lead ? 'open' : ''}>
                         <summary>📚 Źródła (${sources.length})</summary>
                         <div class="details-content">${note}<ul class="recipe-sources">${items}</ul></div>
                     </details>`;
