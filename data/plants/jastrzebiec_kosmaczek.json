@@ -109,7 +109,7 @@
     "Rycina": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Hieracium_pilosella_Sturm56.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-09",
+    "zaktualizowano": "2026-10-14",
     "w_url": true,
     "zdjecia": [
       {
@@ -152,9 +152,9 @@
   },
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-10-09",
-    "uporzadkowano": "2026-10-09",
-    "uklad": "deterministyczny: pominiete informacje: [6, 14, 15, 16, 21]",
+    "zaktualizowano": "2026-10-14",
+    "uporzadkowano": "2026-10-14",
+    "uklad": "deterministyczny: pominiete informacje: [6, 13, 15, 16, 27, 30, 31, 32, 33, 34]",
     "zrodla": [
       {
         "nazwa": "Wikipedia (pl): Kosmaczek pospolity",
@@ -176,6 +176,13 @@
         "jezyk": "en",
         "typ": "wikipedia",
         "nr": 3
+      },
+      {
+        "nazwa": "naturealsacebossue.over-blog.com",
+        "url": "https://naturealsacebossue.over-blog.com/2021/11/piloselle-eperviere-piloselle.html",
+        "jezyk": "fr",
+        "typ": "strona",
+        "nr": 4
       }
     ],
     "sekcje": [
@@ -213,6 +220,16 @@
             ],
             "fakty": [
               "s745"
+            ]
+          },
+          {
+            "tekst": "Najwyższą częścią łodygi jest płaska główka kwiatowa o średnicy 2-3 cm. Zewnętrzne kwiaty języczkowate mają czerwony lub pomarańczowy nalot od spodu, co jest cechą diagnostyczną gatunku.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1419"
             ]
           },
           {
@@ -350,6 +367,16 @@
             "fakty": [
               "s747"
             ]
+          },
+          {
+            "tekst": "Młode liście mają bardzo gorzki smak i można je spożywać surowo w sałatkach, natomiast starsze liście wymagają gotowania lub smażenia, aby stały się strawne. Korzeń również charakteryzuje się gorzkim smakiem.",
+            "czesc": "liście",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1418"
+            ]
           }
         ]
       },
@@ -398,6 +425,16 @@
             ]
           },
           {
+            "tekst": "Gorzkie liście kosmaczka tradycyjnie stosowano jako środek moczopędny i przeciwgorączkowy, a w połączeniu z innymi ziołami pomagały łagodzić bóle głowy.",
+            "czesc": "liście",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1416"
+            ]
+          },
+          {
             "tekst": "Surowcem zielarskim jest ziele kosmaczka, które zawiera m.in. kumaryny, garbniki, flawonoidy oraz kwas kawowy. Przetwory z tego surowca wykazują działanie ściągające, gojące oraz rozkurczowe.",
             "czesc": "ziele",
             "zrodla": [
@@ -440,6 +477,34 @@
         ]
       },
       {
+        "klucz": "historia",
+        "tytul": "Historia i nazwa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Nazwa naukowa pochodzi od średniowiecznej nazwy „pilosella” (włosata, obsypana włoskami) oraz słowa „officinarum” (medyczna, oficynowa). Wcześniej roślinę klasyfikowano jako Hieracium pilosella.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1414"
+            ]
+          },
+          {
+            "tekst": "Roślina była znana i wymieniana jako lek w XII wieku w dziełach Hildegardy z Bingen, jednej z najsłynniejszych postaci średniowiecznej medycyny.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1415"
+            ]
+          }
+        ]
+      },
+      {
         "klucz": "kultura",
         "tytul": "Wierzenia i tradycje",
         "podsumowanie": null,
@@ -453,6 +518,16 @@
             ],
             "fakty": [
               "s754"
+            ]
+          },
+          {
+            "tekst": "Joseph Pitton de Tournefort odnotował wierzenie, że ostrza pokryte sokiem tej rośliny miały przecinać kamień równie łatwo jak drewno.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1395"
             ]
           }
         ]
@@ -481,6 +556,44 @@
             ],
             "fakty": [
               "s755"
+            ]
+          },
+          {
+            "tekst": "W języku francuskim roślina jest znana pod nazwami „Oreille de souris” (mysi uszko) i „Oreille de rat” (szczurze uszko), nawiązującymi do kształtu liści, a także „Herbe à l’épervier” (ziele jastrzębia).",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1417"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Roslinna jest stosunkowo łatwa do rozpoznania wśród żółtych główek, głównie dzięki obecności długich rozłogów (stolonów) oraz charakterystycznemu owłosieniu liści, co odróżnia ją od pokrewnych jastrzębców.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1412"
+            ]
+          },
+          {
+            "tekst": "Kosmaczek można odróżnić od jastrzębców (rodzaj Hieracium) po mniejszych rozmiarach nasion, które pozbawione są wyrostka na szczycie, oraz po obecności podziemnych rozłogów, których jastrzębce nie posiadają.",
+            "czesc": "nasiona",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1413"
             ]
           }
         ]
@@ -520,6 +633,16 @@
             ]
           },
           {
+            "tekst": "Kosmaczek wykazuje właściwości teletoksyczne (allelopatyczne), wydalając do gleby kumaryny (umbelliferonę) oraz polifenole, takie jak kwas chlorogenowy, co hamuje rozwój konkurencyjnych gatunków w pobliżu jego rozłogów.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1411"
+            ]
+          },
+          {
             "tekst": "Łodyga jest nierozgałęziona, bezlistna, wyprostowana, o wysokości od 5 cm do 30 cm.",
             "czesc": "ziele",
             "zrodla": [
@@ -550,7 +673,9 @@
       ],
       "liście": [
         "s741",
-        "s747"
+        "s747",
+        "s1418",
+        "s1416"
       ],
       "ziele": [
         "s1286",
@@ -560,6 +685,9 @@
         "s1304",
         "s1301",
         "s753"
+      ],
+      "nasiona": [
+        "s1413"
       ]
     },
     "fakty": [
@@ -910,20 +1038,160 @@
           "url": "https://de.wikipedia.org/wiki/Kleines_Habichtskraut"
         },
         "cytat": "Das Kleine Habichtskraut ist in ganz Europa verbreitet, außerdem in Westasien im Kaukasusraum und in Westsibirien. In Neuseeland, den Vereinigten Staaten und Kanada ist es ein Neophyt."
+      },
+      {
+        "id": "s1395",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "Joseph Pitton de Tournefort odnotował wierzenie, że ostrza pokryte sokiem tej rośliny miały przecinać kamień równie łatwo jak drewno.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Pilosella officinarum",
+          "url": "https://en.wikipedia.org/wiki/Pilosella_officinarum"
+        },
+        "cytat": "Joseph Pitton de Tournefort mentions that blades covered in this plant's juices were believed to cut through stone as easily as through wood."
+      },
+      {
+        "id": "s1411",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Kosmaczek wykazuje właściwości teletoksyczne (allelopatyczne), wydalając do gleby kumaryny (umbelliferonę) oraz polifenole, takie jak kwas chlorogenowy, co hamuje rozwój konkurencyjnych gatunków w pobliżu jego rozłogów.",
+        "jezyk": "fr",
+        "zrodlo": {
+          "nazwa": "naturealsacebossue.over-blog.com",
+          "url": "https://naturealsacebossue.over-blog.com/2021/11/piloselle-eperviere-piloselle.html"
+        },
+        "cytat": "elle a des propriétés télétoxiques. Elle se developpe rapidement en émettant des stolons qui empoisonnent le sol en libérant aux alentours des substances qui empêchent les autres espèces de la concurrencer. Ces substances actives sont une c"
+      },
+      {
+        "id": "s1412",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Roslinna jest stosunkowo łatwa do rozpoznania wśród żółtych główek, głównie dzięki obecności długich rozłogów (stolonów) oraz charakterystycznemu owłosieniu liści, co odróżnia ją od pokrewnych jastrzębców.",
+        "jezyk": "fr",
+        "zrodlo": {
+          "nazwa": "naturealsacebossue.over-blog.com",
+          "url": "https://naturealsacebossue.over-blog.com/2021/11/piloselle-eperviere-piloselle.html"
+        },
+        "cytat": "Confusion : plante assez facile à reconnaitre parmi les nombreuses espèces à capitules jaunes. (...) Piloselle... facile à identifier avec ses longs stolons et ses feuilles en oreilles de souris."
+      },
+      {
+        "id": "s1413",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "nasiona",
+        "tekst": "Kosmaczek można odróżnić od jastrzębców (rodzaj Hieracium) po mniejszych rozmiarach nasion, które pozbawione są wyrostka na szczycie, oraz po obecności podziemnych rozłogów, których jastrzębce nie posiadają.",
+        "jezyk": "fr",
+        "zrodlo": {
+          "nazwa": "naturealsacebossue.over-blog.com",
+          "url": "https://naturealsacebossue.over-blog.com/2021/11/piloselle-eperviere-piloselle.html"
+        },
+        "cytat": "Les piloselles se distinguent des épervières par la plus petite taille de leurs akènes qui sont sans bourrelet au sommet. Les épervières n’ont jamais de stolons."
+      },
+      {
+        "id": "s1414",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Nazwa naukowa pochodzi od średniowiecznej nazwy „pilosella” (włosata, obsypana włoskami) oraz słowa „officinarum” (medyczna, oficynowa). Wcześniej roślinę klasyfikowano jako Hieracium pilosella.",
+        "jezyk": "fr",
+        "zrodlo": {
+          "nazwa": "naturealsacebossue.over-blog.com",
+          "url": "https://naturealsacebossue.over-blog.com/2021/11/piloselle-eperviere-piloselle.html"
+        },
+        "cytat": "Origine du nom : vient de son nom ancien du Moyen-âge « pilosella» velu, à poils, et de «officinarum» qui signifie, médical, officinal. Anciennement elle s’appelait Hieracium pilosella."
+      },
+      {
+        "id": "s1415",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Roślina była znana i wymieniana jako lek w XII wieku w dziełach Hildegardy z Bingen, jednej z najsłynniejszych postaci średniowiecznej medycyny.",
+        "jezyk": "fr",
+        "zrodlo": {
+          "nazwa": "naturealsacebossue.over-blog.com",
+          "url": "https://naturealsacebossue.over-blog.com/2021/11/piloselle-eperviere-piloselle.html"
+        },
+        "cytat": "Cette plante était connue depuis le XII siècle et figure dans les plantes médicinales la fameuse Hildegarde de Bingen."
+      },
+      {
+        "id": "s1416",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "liście",
+        "tekst": "Gorzkie liście kosmaczka tradycyjnie stosowano jako środek moczopędny i przeciwgorączkowy, a w połączeniu z innymi ziołami pomagały łagodzić bóle głowy.",
+        "jezyk": "fr",
+        "zrodlo": {
+          "nazwa": "naturealsacebossue.over-blog.com",
+          "url": "https://naturealsacebossue.over-blog.com/2021/11/piloselle-eperviere-piloselle.html"
+        },
+        "cytat": "Les feuilles amères étaient utilisées comme diurétique, fébrifuge et en association avec d’autres plantes contre les maux de tête."
+      },
+      {
+        "id": "s1417",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "W języku francuskim roślina jest znana pod nazwami „Oreille de souris” (mysi uszko) i „Oreille de rat” (szczurze uszko), nawiązującymi do kształtu liści, a także „Herbe à l’épervier” (ziele jastrzębia).",
+        "jezyk": "fr",
+        "zrodlo": {
+          "nazwa": "naturealsacebossue.over-blog.com",
+          "url": "https://naturealsacebossue.over-blog.com/2021/11/piloselle-eperviere-piloselle.html"
+        },
+        "cytat": "Autres noms communs : Oreille de souris, Oreille de rat, Piloselle de rat, Veluette, Herbe à l’épervier"
+      },
+      {
+        "id": "s1418",
+        "sekcja": "czesci_rosliny",
+        "czesc": "liście",
+        "tekst": "Młode liście mają bardzo gorzki smak i można je spożywać surowo w sałatkach, natomiast starsze liście wymagają gotowania lub smażenia, aby stały się strawne. Korzeń również charakteryzuje się gorzkim smakiem.",
+        "jezyk": "fr",
+        "zrodlo": {
+          "nazwa": "naturealsacebossue.over-blog.com",
+          "url": "https://naturealsacebossue.over-blog.com/2021/11/piloselle-eperviere-piloselle.html"
+        },
+        "cytat": "La Piloselle a des feuilles au goût très amer. Elles peuvent être consommées jeunes en salade avec d’autres plantes. Les feuilles plus anciennes doivent être cuites ou sautées à la poêle. Le rhizome est amer."
+      },
+      {
+        "id": "s1419",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Najwyższą częścią łodygi jest płaska główka kwiatowa o średnicy 2-3 cm. Zewnętrzne kwiaty języczkowate mają czerwony lub pomarańczowy nalot od spodu, co jest cechą diagnostyczną gatunku.",
+        "jezyk": "fr",
+        "zrodlo": {
+          "nazwa": "naturealsacebossue.over-blog.com",
+          "url": "https://naturealsacebossue.over-blog.com/2021/11/piloselle-eperviere-piloselle.html"
+        },
+        "cytat": "plante avec des capitules plats, de couleur jaune citron de 2 à 3 cm de diamètre solitaires au haut des tiges... les ligules externes se caractérisent par une couleur rouge ou orange sur le dessous."
       }
     ]
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-09",
+    "zaktualizowano": "2026-10-14",
     "pola": {
-      "czesci_rosliny.ziele.opis_botaniczny": {
-        "tytul": "Surowce i zbiory - Herba Hieracii pilosellae: Opis surowca",
-        "typ": "tekst",
-        "oryginal": "Cała część nadziemna w czasie kwitnienia.",
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": [
+          "Liście zebrane w przyziemne rozety, pokryte gęstymi, długimi, wręcz szczeciniastymi włoskami (często białymi pod spodem).",
+          "Wypuszcza długie, naziemne rozłogi (wąsy), które zakorzeniają się w węzłach tworząc kobierce.",
+          "Z rozety wyrasta jedna, bezlistna łodyga (ok. 10-20 cm) z jednym cytrynowożółtym koszyczkiem kwiatowym.",
+          "Wydziela sok mleczny, choć w małych ilościach."
+        ],
         "tresc": [
           {
-            "tekst": "Cała część nadziemna w czasie kwitnienia.",
+            "tekst": "Liście zebrane w przyziemne rozety, pokryte gęstymi, długimi, wręcz szczeciniastymi włoskami (często białymi pod spodem).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Wypuszcza długie, naziemne rozłogi (wąsy), które zakorzeniają się w węzłach tworząc kobierce.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Z rozety wyrasta jedna, bezlistna łodyga (ok. 10-20 cm) z jednym cytrynowożółtym koszyczkiem kwiatowym.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Wydziela sok mleczny, choć w małych ilościach.",
             "zrodla": [],
             "fakty": []
           },
@@ -946,53 +1214,6 @@
             ]
           },
           {
-            "tekst": "Roślina tworzy ponad 30 cm długie, nadziemne rozłogi, z których powstają nowe rozetki liściowe.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s1330"
-            ]
-          },
-          {
-            "tekst": "Łodyga jest nierozgałęziona, bezlistna, wyprostowana, o wysokości od 5 cm do 30 cm.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s1301"
-            ]
-          }
-        ],
-        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
-        "wejscie": "6e4090b7fe6b5bf2"
-      },
-      "opis": {
-        "tytul": "Opis - Opis ogólny",
-        "typ": "tekst",
-        "oryginal": "Niska bylina tworząca gęste kobierce dzięki nadziemnym, ulistnionym rozłogom. Wyróżnia się silnym, gęstym owłosieniem całej rośliny, co jest adaptacją do suchych, nasłonecznionych siedlisk. Wytwarza pojedyncze, bladożółte do cytrynowych kwiaty na bezlistnych szypułkach. Posiada udowodnione właściwości medyczne – działa moczopędnie i wykrztuśnie.",
-        "tresc": [
-          {
-            "tekst": "Niska bylina tworząca gęste kobierce dzięki nadziemnym, ulistnionym rozłogom.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Wyróżnia się silnym, gęstym owłosieniem całej rośliny, co jest adaptacją do suchych, nasłonecznionych siedlisk.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Wytwarza pojedyncze, bladożółte do cytrynowych kwiaty na bezlistnych szypułkach.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Posiada udowodnione właściwości medyczne – działa moczopędnie i wykrztuśnie.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
             "tekst": "Pilosella officinarum jest wieloletnią, owłosioną rośliną z rozetą liści i pojedynczymi żółtymi kwiatami na bezlistnych łodygach.",
             "zrodla": [
               3
@@ -1002,105 +1223,25 @@
             ]
           },
           {
-            "tekst": "Rozprzestrzenił się także jako gatunek zawleczony w Australii, Nowej Zelandii i w Ameryce Północnej.",
+            "tekst": "Najwyższą częścią łodygi jest płaska główka kwiatowa o średnicy 2-3 cm. Zewnętrzne kwiaty języczkowate mają czerwony lub pomarańczowy nalot od spodu, co jest cechą diagnostyczną gatunku.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1419"
+            ]
+          },
+          {
+            "tekst": "Kwiaty kosmaczka są żółte, języczkowate, a brzeżne z nich posiadają czerwone smugi od spodu. Pojedyncze koszyczki kwiatowe osadzone są na wyprostowanych, bezlistnych łodygach zwanych głąbikami.",
             "zrodla": [
               1
             ],
             "fakty": [
-              "s1303"
+              "s742"
             ]
           },
           {
-            "tekst": "Występuje w całej Europie, w zachodniej Azji, w Kaukazie i zachodniej Syberii; w Nowej Zelandii, USA i Kanadzie jest gatunkiem neofitem.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s1331"
-            ]
-          },
-          {
-            "tekst": "Rodzime są Europą i północną Azją; w USA, Kanadzie i Nowej Zelandii jest gatunkiem inwazyjnym, rosnącym w suchych, słabo nawożonych obszarach.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s746"
-            ]
-          }
-        ],
-        "model": "bez LLM: za duzo zdan spoza zrodel",
-        "wejscie": "09bf222519aa264c"
-      },
-      "identyfikacja.cechy_kluczowe": {
-        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
-        "typ": "lista",
-        "oryginal": [
-          "Liście zebrane w przyziemne rozety, pokryte gęstymi, długimi, wręcz szczeciniastymi włoskami (często białymi pod spodem).",
-          "Wypuszcza długie, naziemne rozłogi (wąsy), które zakorzeniają się w węzłach tworząc kobierce.",
-          "Z rozety wyrasta jedna, bezlistna łodyga (ok. 10-20 cm) z jednym cytrynowożółtym koszyczkiem kwiatowym.",
-          "Wydziela sok mleczny, choć w małych ilościach."
-        ],
-        "tresc": [
-          {
-            "tekst": "Liście są zebrane w przyziemne, odziomkowe różyczki i są podłużne oraz odwrotnie jajowate o niebieskawozielonej barwie, a pokryte są gęstymi, długimi, wręcz szczeciniastymi włoskami, które od spodu są gwiazdkowate i białe, podczas gdy z wierzchu bywają nagie lub owłosione.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s741"
-            ]
-          },
-          {
-            "tekst": "Wypuszcza długie, naziemne rozłogi, które zakorzeniają się w węzłach tworząc kobierce.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Z rozety wyrasta jedna, bezlistna łodyga o wysokości około 10-20 cm, zwana też głąbikiem lub szczytem, z jednym cytrynowożółtym koszyczkiem kwiatowym o kwiatach języczkowatych, których brzeżne posiadają czerwone smugi lub brzegi od spodu.",
-            "zrodla": [
-              1,
-              3
-            ],
-            "fakty": [
-              "s742",
-              "s748"
-            ]
-          },
-          {
-            "tekst": "Wydziela sok mleczny, choć w małych ilościach.",
-            "zrodla": [],
-            "fakty": []
-          }
-        ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "3ee746d1003965ac"
-      },
-      "zastosowanie.ogrodowe": {
-        "tytul": "Praktyczne zastosowanie - Ogród",
-        "typ": "tekst",
-        "oryginal": "Doskonała roślina zadarniająca na suche, ubogie skarpy, wrzosowiska i zielone dachy.",
-        "tresc": [
-          {
-            "tekst": "Gatunek ten bywa także wykorzystywany jako roślina do ogródków dzikich, przeznaczony na słoneczne murki i inne suche stanowiska [2].",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s752"
-            ]
-          },
-          {
-            "tekst": "Posiada on jednak tendencję do silnego rozprzestrzeniania się.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s752"
-            ]
-          },
-          {
-            "tekst": "Roślina ta kwitnie od maja do października, tworząc pojedyncze koszyczki kwiatowe o średnicy od 2 do 3 centymetrów, zawierające do 64 jasnożółtych kwiatów języczkowatych.",
+            "tekst": "Pojedyncze koszyczki kwiatowe mają średnicę od 2 do 3 centymetrów i zawierają do 64 jasnożółtych kwiatów języczkowatych. Okres kwitnienia tej rośliny trwa od maja do października.",
             "zrodla": [
               2
             ],
@@ -1109,36 +1250,17 @@
             ]
           },
           {
-            "tekst": "Doskonała roślina zadarniająca na suche, ubogie skarpy, wrzosowiska i zielone dachy.",
-            "zrodla": [],
-            "fakty": []
-          }
-        ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "c4e1997b182863fd"
-      },
-      "wymagania.stanowisko": {
-        "tytul": "Natura i siedlisko - Stanowisko",
-        "typ": "tekst",
-        "oryginal": "Wybitnie słoneczne.",
-        "tresc": [
-          {
-            "tekst": "Jastrzębiec kosmaczek gatunek ten jest wybitnie słoneczny.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Rośnie na piaszczystych murawach, pastwiskach, wrzosowiskach, przydrożach oraz w widnych lasach, wymagając gleb suchych, piaszczystych i słabo nawożonych.",
+            "tekst": "Liście kosmaczka są niebieskawozielone, zebrane w odziomkową różyczkę, podłużne i odwrotnie jajowate. Od spodu pokryte są gęstymi, długimi, gwiazdkowatymi, białymi włoskami, podczas gdy z wierzchu są nagie lub szczeciniasto owłosione.",
             "zrodla": [
               1
             ],
             "fakty": [
-              "s743"
+              "s741"
             ]
           }
         ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "25c844137526ba9b"
+        "model": "bez LLM: brak modelu",
+        "wejscie": "5aed7ed0f268e11b"
       },
       "wymagania.gleba": {
         "tytul": "Natura i siedlisko - Gleba",
@@ -1151,6 +1273,15 @@
             "fakty": []
           },
           {
+            "tekst": "Kosmaczek pospolity rośnie na piaszczystych murawach, pastwiskach, wrzosowiskach, przydrożach oraz w widnych lasach, wymagając gleb suchych, piaszczystych i słabo nawożonych. W Tatrach gatunek ten dociera aż po piętro alpejskie.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s743"
+            ]
+          },
+          {
             "tekst": "Roslina rosnie na suchych, słabo nawożonych glebach, w tym na piaszczystych murawach, pastwiskach i przydrożach.",
             "zrodla": [
               3
@@ -1161,7 +1292,43 @@
           }
         ],
         "model": "bez LLM: brak modelu",
-        "wejscie": "1cfed14207e790b8"
+        "wejscie": "2076bd7c05706fb6"
+      },
+      "czesci_rosliny.liście.czas_zbioru": {
+        "tytul": "Surowce i zbiory - Liście (nowa część z sieci): Zbiór",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Zbierane są liście w rozetach; mają wierzchnią część nagie, a spód pokryty gęstym włosiem.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s747"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "ec5552905cc2b4c8"
+      },
+      "czesci_rosliny.liście.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Liście (nowa część z sieci): Opis surowca",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Młode liście mają bardzo gorzki smak i można je spożywać surowo w sałatkach, natomiast starsze liście wymagają gotowania lub smażenia, aby stały się strawne. Korzeń również charakteryzuje się gorzkim smakiem.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1418"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "f5627763420b9bd8"
       },
       "czesci_rosliny.ziele.skladniki_aktywne": {
         "tytul": "Surowce i zbiory - Herba Hieracii pilosellae: Substancje czynne",
@@ -1215,13 +1382,13 @@
         "model": "bez LLM: brak modelu",
         "wejscie": "5b1db7054606da18"
       },
-      "czesci_rosliny.ziele.wlasciwosci": {
-        "tytul": "Surowce i zbiory - Herba Hieracii pilosellae: Działanie",
+      "zastosowanie.medyczne": {
+        "tytul": "Praktyczne zastosowanie - Medycyna",
         "typ": "tekst",
-        "oryginal": "Moczopędne, wykrztuśne, przeciwzapalne, spazmolityczne.",
+        "oryginal": "Fitoterapia leczenia przewlekłych nieżytów dróg oddechowych (katar, kaszel), astmy, jako środek wspomagający diurezę przy obrzękach i infekcjach pęcherza.",
         "tresc": [
           {
-            "tekst": "Moczopędne, wykrztuśne, przeciwzapalne, spazmolityczne.",
+            "tekst": "Fitoterapia leczenia przewlekłych nieżytów dróg oddechowych (katar, kaszel), astmy, jako środek wspomagający diurezę przy obrzękach i infekcjach pęcherza.",
             "zrodla": [],
             "fakty": []
           },
@@ -1233,6 +1400,38 @@
             "fakty": [
               "s1305"
             ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "93d516540c9b6884"
+      },
+      "czesci_rosliny.liście.wlasciwości": {
+        "tytul": "Surowce i zbiory - Liście (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Gorzkie liście kosmaczka tradycyjnie stosowano jako środek moczopędny i przeciwgorączkowy, a w połączeniu z innymi ziołami pomagały łagodzić bóle głowy.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1416"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "d82bf71eafb36cde"
+      },
+      "czesci_rosliny.ziele.wlasciwosci": {
+        "tytul": "Surowce i zbiory - Herba Hieracii pilosellae: Działanie",
+        "typ": "tekst",
+        "oryginal": "Moczopędne, wykrztuśne, przeciwzapalne, spazmolityczne.",
+        "tresc": [
+          {
+            "tekst": "Moczopędne, wykrztuśne, przeciwzapalne, spazmolityczne.",
+            "zrodla": [],
+            "fakty": []
           },
           {
             "tekst": "Surowcem zielarskim jest ziele kosmaczka, które zawiera m.in. kumaryny, garbniki, flawonoidy oraz kwas kawowy. Przetwory z tego surowca wykazują działanie ściągające, gojące oraz rozkurczowe.",
@@ -1264,7 +1463,7 @@
           }
         ],
         "model": "bez LLM: brak modelu",
-        "wejscie": "890134d5c77c3e1c"
+        "wejscie": "a672831f776eccf3"
       },
       "ciekawostki": {
         "tytul": "Wiedza tajemna - Ciekawostki",
@@ -1285,12 +1484,39 @@
             "fakty": []
           },
           {
+            "tekst": "Nazwa naukowa pochodzi od średniowiecznej nazwy „pilosella” (włosata, obsypana włoskami) oraz słowa „officinarum” (medyczna, oficynowa). Wcześniej roślinę klasyfikowano jako Hieracium pilosella.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1414"
+            ]
+          },
+          {
+            "tekst": "Roślina była znana i wymieniana jako lek w XII wieku w dziełach Hildegardy z Bingen, jednej z najsłynniejszych postaci średniowiecznej medycyny.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1415"
+            ]
+          },
+          {
             "tekst": "Dawniej wierzono, że wykopana w dniu świętego Jana roślina zawieszona na szyi pomaga w leczeniu zaniku mięśni u ludzi oraz zwierząt gospodarskich.",
             "zrodla": [
               2
             ],
             "fakty": [
               "s754"
+            ]
+          },
+          {
+            "tekst": "Joseph Pitton de Tournefort odnotował wierzenie, że ostrza pokryte sokiem tej rośliny miały przecinać kamień równie łatwo jak drewno.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1395"
             ]
           },
           {
@@ -1312,12 +1538,39 @@
             ]
           },
           {
+            "tekst": "W języku francuskim roślina jest znana pod nazwami „Oreille de souris” (mysi uszko) i „Oreille de rat” (szczurze uszko), nawiązującymi do kształtu liści, a także „Herbe à l’épervier” (ziele jastrzębia).",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1417"
+            ]
+          },
+          {
             "tekst": "Gatunek jest bardzo zmienny w morfologii, co zaowocowało opisaniem kilkudziesięciu podgatunków, a w naturze często tworzy mieszańce z innymi jastrzębcami.",
             "zrodla": [
               1
             ],
             "fakty": [
               "s1289"
+            ]
+          },
+          {
+            "tekst": "Kosmaczek wykazuje właściwości teletoksyczne (allelopatyczne), wydalając do gleby kumaryny (umbelliferonę) oraz polifenole, takie jak kwas chlorogenowy, co hamuje rozwój konkurencyjnych gatunków w pobliżu jego rozłogów.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1411"
+            ]
+          },
+          {
+            "tekst": "Łodyga jest nierozgałęziona, bezlistna, wyprostowana, o wysokości od 5 cm do 30 cm.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1301"
             ]
           },
           {
@@ -1331,7 +1584,67 @@
           }
         ],
         "model": "bez LLM: brak modelu",
-        "wejscie": "8649d65b0460755a"
+        "wejscie": "9695fe84e8d1087f"
+      },
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": "Unikać w przypadku ciąży i karmienia piersią. Skonsultować z lekarzem przy ciężkich schorzeniach nerek.",
+        "tresc": [
+          {
+            "tekst": "Unikać w przypadku ciąży i karmienia piersią.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Skonsultować z lekarzem przy ciężkich schorzeniach nerek.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Roslinna jest stosunkowo łatwa do rozpoznania wśród żółtych główek, głównie dzięki obecności długich rozłogów (stolonów) oraz charakterystycznemu owłosieniu liści, co odróżnia ją od pokrewnych jastrzębców.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1412"
+            ]
+          },
+          {
+            "tekst": "Kosmaczek można odróżnić od jastrzębców (rodzaj Hieracium) po mniejszych rozmiarach nasion, które pozbawione są wyrostka na szczycie, oraz po obecności podziemnych rozłogów, których jastrzębce nie posiadają.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1413"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "6b67781d57f670ef"
+      },
+      "wymagania.stanowisko": {
+        "tytul": "Natura i siedlisko - Stanowisko",
+        "typ": "tekst",
+        "oryginal": "Wybitnie słoneczne.",
+        "tresc": [
+          {
+            "tekst": "Wybitnie słoneczne.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Gatunek ten bywa wykorzystywany jako roślina do ogródków dzikich, przeznaczona na słoneczne murki i inne suche stanowiska, jednak wykazuje tendencję do silnego rozprzestrzeniania się.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s752"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "5c633086db5eada5"
       }
     },
     "uzyte_fakty": [
@@ -1340,13 +1653,20 @@
       "s1287",
       "s1289",
       "s1301",
-      "s1303",
       "s1304",
       "s1305",
       "s1328",
       "s1329",
-      "s1330",
-      "s1331",
+      "s1395",
+      "s1411",
+      "s1412",
+      "s1413",
+      "s1414",
+      "s1415",
+      "s1416",
+      "s1417",
+      "s1418",
+      "s1419",
       "s739",
       "s740",
       "s741",
@@ -1354,8 +1674,7 @@
       "s743",
       "s744",
       "s745",
-      "s746",
-      "s748",
+      "s747",
       "s749",
       "s750",
       "s752",
@@ -1366,27 +1685,89 @@
   },
   "rozmieszczenie": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-09",
+    "zaktualizowano": "2026-10-14",
     "jak": "reguly",
-    "wejscie": "b2bdc4c5d583b025",
+    "wejscie": "3ad0eee5e4cd1f32",
     "wstawki": [
       {
-        "miejsce": "surowce/czesc:liście",
-        "rozdzial": "Surowce i zbiory",
-        "tytul": "Liście",
-        "ikona": "ra-potion",
+        "miejsce": "natura/wystepowanie",
+        "rozdzial": "Natura i siedlisko",
+        "tytul": "Występowanie i zasięg",
+        "ikona": "ra-compass",
         "nowy": true,
         "punkty": [
           {
-            "tekst": "Zbierane są liście w rozetach; mają wierzchnią część nagie, a spód pokryty gęstym włosiem.",
+            "tekst": "Rozprzestrzenił się także jako gatunek zawleczony w Australii, Nowej Zelandii i w Ameryce Północnej.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1303"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          },
+          {
+            "tekst": "Występuje w całej Europie, w zachodniej Azji, w Kaukazie i zachodniej Syberii; w Nowej Zelandii, USA i Kanadzie jest gatunkiem neofitem.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1331"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          },
+          {
+            "tekst": "Rodzime są Europą i północną Azją; w USA, Kanadzie i Nowej Zelandii jest gatunkiem inwazyjnym, rosnącym w suchych, słabo nawożonych obszarach.",
             "zrodla": [
               3
             ],
             "fakty": [
-              "s747"
+              "s746"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          }
+        ]
+      },
+      {
+        "miejsce": "rozpoznawanie/cechy",
+        "rozdzial": "Rozpoznawanie w terenie",
+        "tytul": "Cechy kluczowe",
+        "ikona": "ra-leaf",
+        "nowy": false,
+        "punkty": [
+          {
+            "tekst": "Roślina tworzy ponad 30 cm długie, nadziemne rozłogi, z których powstają nowe rozetki liściowe.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1330"
             ],
             "sekcja": "czesci_rosliny",
-            "czesc": "liście"
+            "czesc": null
+          }
+        ]
+      },
+      {
+        "miejsce": "surowce/czesc:kwiaty",
+        "rozdzial": "Surowce i zbiory",
+        "tytul": "Kwiaty",
+        "ikona": "ra-potion",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Kwiaty są pojedyncze, żółte, z czerwonymi brzegami; rosną na bezlistnych szypułkach zwanych szczytami.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s748"
+            ],
+            "sekcja": "czesci_rosliny",
+            "czesc": "kwiaty"
           }
         ]
       },

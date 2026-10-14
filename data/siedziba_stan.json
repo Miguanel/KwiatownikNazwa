@@ -1,84 +1,59 @@
 {
  "wersja": 1,
  "opis": "Stan Siedziby Kwiatownika i statystyki strony - zapisuje agent wdrozen (Siedziba). Strona pokazuje go w papirusie bez pytania backendu.",
- "zaktualizowano": "2026-10-09T18:30:05+02:00",
+ "zaktualizowano": "2026-10-14T16:20:37+02:00",
  "siedziba": {
-  "status": "czeka",
-  "zadania": [],
+  "status": "pracuje",
+  "zadania": [
+   {
+    "opis": "przegląda zagraniczne strony z przepisami",
+    "od": "2026-10-14T14:11:16.049213+00:00"
+   },
+   {
+    "opis": "przegląda zagraniczne strony z przepisami",
+    "od": "2026-10-14T14:11:16.267644+00:00"
+   },
+   {
+    "opis": "zapisuje zebraną wiedzę do Kwiatownika: kasztanowiec",
+    "od": "2026-10-14T14:12:53.541066+00:00"
+   },
+   {
+    "opis": "zbiera wiedzę o roślinach: Wikipedia (pl): Kasztanowiec pospolity",
+    "od": "2026-10-14T14:14:34.248404+00:00"
+   }
+  ],
   "info": {
    "rosliny": 87,
-   "informacje_zapisane": 903,
-   "czeka_w_kolejce": 1
+   "informacje_zapisane": 913,
+   "czeka_w_kolejce": 0
   }
  },
  "wpisy": [
   {
-   "eid": "job:320",
-   "ts": "2026-10-09T15:55:16.169455+00:00",
-   "kind": "wiedza",
-   "text": "Zebrano 10 sprawdzonych informacji o: Jastrzębiec kosmaczek, Mlecz zwyczajny, Mlecz polny, Leszczyna pospolita – trafią na stronę przy najbliższej publikacji",
-   "url": null,
-   "plant_id": null
-  },
-  {
-   "eid": "job:319",
-   "ts": "2026-10-09T15:55:07.224995+00:00",
-   "kind": "wiedza",
-   "text": "Zebrano 69 sprawdzonych informacji o: Rumianek pospolity, Modrzejec kampechiański (Logwood), Pępawa dachowa, Mlecz zwyczajny – trafią na stronę przy najbliższej publikacji",
-   "url": null,
-   "plant_id": null
-  },
-  {
-   "eid": "job:324",
-   "ts": "2026-10-09T14:21:12.906982+00:00",
+   "eid": "job:397",
+   "ts": "2026-10-14T12:52:31.753715+00:00",
    "kind": "przepisy",
-   "text": "Przetłumaczono 7 przepisów z zagranicznych stron",
+   "text": "Znaleziono 4 nowych przepisów na zagranicznych stronach",
    "url": null,
    "plant_id": null
   },
   {
-   "eid": "job:323",
-   "ts": "2026-10-09T14:01:03.700604+00:00",
-   "kind": "przepisy",
-   "text": "Znaleziono 5 nowych przepisów na zagranicznych stronach",
-   "url": null,
-   "plant_id": null
+   "eid": "run:107",
+   "ts": "2026-10-13T19:37:04.486698+00:00",
+   "kind": "audyt",
+   "text": "Audyt bazy wiedzy: ocena 49/100 – Siedziba wie, czego szukać dalej"
   },
   {
-   "eid": "job:311",
-   "ts": "2026-10-09T10:29:24.077049+00:00",
-   "kind": "przepisy",
-   "text": "Przetłumaczono 7 przepisów z zagranicznych stron",
-   "url": null,
-   "plant_id": null
-  },
-  {
-   "eid": "run:66",
-   "ts": "2026-10-09T10:16:41.622816+00:00",
-   "kind": "wdrozenie",
-   "text": "Opublikowano nową wersję Kwiatownika: Nowa wiedza o 3 roślinach"
-  },
-  {
-   "eid": "job:310",
-   "ts": "2026-10-09T09:47:24.128748+00:00",
-   "kind": "przepisy",
-   "text": "Znaleziono 12 nowych przepisów na zagranicznych stronach",
-   "url": null,
-   "plant_id": null
-  },
-  {
-   "eid": "job:305",
-   "ts": "2026-10-09T09:30:42.974565+00:00",
-   "kind": "przepisy",
-   "text": "Przetłumaczono 4 przepisów z zagranicznych stron",
-   "url": null,
-   "plant_id": null
+   "eid": "run:103",
+   "ts": "2026-10-13T19:31:54.989852+00:00",
+   "kind": "audyt",
+   "text": "Audyt bazy wiedzy: ocena 49/100 – Siedziba wie, czego szukać dalej"
   }
  ],
  "statystyki": {
   "okres_dni": 7,
-  "goscie_tydzien": 7,
-  "odslony_tydzien": 17,
+  "goscie_tydzien": 9,
+  "odslony_tydzien": 18,
   "plantid_tydzien": 0,
   "plantid_razem": 0,
   "najczesciej_czytane": [
