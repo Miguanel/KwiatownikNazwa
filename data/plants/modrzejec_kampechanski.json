@@ -81,7 +81,2408 @@
       "Naturalne źródło garbników i tanin"
     ],
     "gildie": [
-      { "nazwa": "Brezylka", "rola": "Podobne wymagania siedliskowe." }
+      {
+        "nazwa": "Brezylka",
+        "rola": "Podobne wymagania siedliskowe."
+      }
+    ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-10-14",
+    "uporzadkowano": "2026-10-14",
+    "uklad": "deterministyczny: pominiete informacje: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (pl): Modrzejec kampechiański",
+        "url": "https://pl.wikipedia.org/wiki/Modrzejec_kampechia%C5%84ski",
+        "jezyk": "pl",
+        "typ": "wikipedia",
+        "nr": 1
+      },
+      {
+        "nazwa": "Wikipedia (de): Blutholzbaum",
+        "url": "https://de.wikipedia.org/wiki/Blutholzbaum",
+        "jezyk": "de",
+        "typ": "wikipedia",
+        "nr": 2
+      },
+      {
+        "nazwa": "Wikipedia (en): Haematoxylum campechianum",
+        "url": "https://en.wikipedia.org/wiki/Haematoxylum_campechianum",
+        "jezyk": "en",
+        "typ": "wikipedia",
+        "nr": 3
+      },
+      {
+        "nazwa": "Wikipedia (ja): アカミノキ",
+        "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AB%E3%83%9F%E3%83%8E%E3%82%AD",
+        "jezyk": "ja",
+        "typ": "wikipedia",
+        "nr": 4
+      },
+      {
+        "nazwa": "Wikipedia (zh): 墨水樹",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A2%A8%E6%B0%B4%E6%A8%B9",
+        "jezyk": "zh",
+        "typ": "wikipedia",
+        "nr": 5
+      },
+      {
+        "nazwa": "marinojapan.tokyo",
+        "url": "https://marinojapan.tokyo/black/",
+        "jezyk": "ja",
+        "typ": "strona",
+        "nr": 6
+      },
+      {
+        "nazwa": "www.rxlist.com",
+        "url": "https://www.rxlist.com/supplements/logwood.htm",
+        "jezyk": "en",
+        "typ": "strona",
+        "nr": 7
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "opis",
+        "tytul": "Opis i wygląd",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Te cierniste drzewa dorastają do 12 metrów wysokości. Ich liście są parzystopierzasto złożone z trzech lub czterech par listków o odwrotnie jajowatym kształcie.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s861"
+            ]
+          },
+          {
+            "tekst": "Modrzejec kampechiański jest liściastym krzewem należącym do rodziny bobowatych (Fabaceae).",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1193"
+            ]
+          },
+          {
+            "tekst": "Dojrzewa na wysokość od trzech do dziesięciu metrów.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1194"
+            ]
+          },
+          {
+            "tekst": "Roślina ta wytwarza jasnoszarą do brązowej, łuskowatą i stosunkowo gładką borkę, podczas gdy kora na gałązkach jest w większości naga i pokryta licznymi białymi przetchlinkami.",
+            "czesc": "kora",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s872"
+            ]
+          },
+          {
+            "tekst": "Modrzejec kampechiański rośnie jako wiecznie zielone drzewo lub krzew, posiadający często cierniste przylistki o długości do 1,5 centymetra.",
+            "czesc": "kora",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1360"
+            ]
+          },
+          {
+            "tekst": "Drobne kwiaty zebrane są w grona. Posiadają czerwony, pięciodziałkowy kielich oraz żółtą, pięciopłatkową koronę, w której jeden płatek jest wyraźnie większy od pozostałych.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s862"
+            ]
+          },
+          {
+            "tekst": "Pachnące, obupłciowe kwiaty zebrane są w groniaste kwiatostany i posiadają rzutowo symetryczną budowę z dwiema okrywami kwiatowymi.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s873"
+            ]
+          },
+          {
+            "tekst": "Kwiaty posiadają dziesięć wolnych pręcików o długości zbliżonej do płatków korony. Ich nitki są w dolnej części gęsto, wełnisto owłosione.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1188"
+            ]
+          },
+          {
+            "tekst": "Drobne kwiaty tej rośliny posiadają pięć wolnych, rötlich bis gelben (czerwonawo-żółtych) działek kielicha oraz pięć wąsko odwrotnie jajowatych do podłużnych, żółtych płatków korony.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1361"
+            ]
+          },
+          {
+            "tekst": "Nitki dziesięciu pręcików w kwiatach modrzejca kampechiańskiego są owłosione u nasady.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1362"
+            ]
+          },
+          {
+            "tekst": "Na roślinie rozwijają się żółte kwiaty, które są zebrane w kwiatostany groniaste.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s891"
+            ]
+          },
+          {
+            "tekst": "Żółte kwiaty tego drzewa tworzą charakterystyczne wiechy (総状花序).",
+            "czesc": "kwiaty",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1195"
+            ]
+          },
+          {
+            "tekst": "Naprzemianległe lub zebrane w pęczki liście modrzejca są pierzasto złożone z 1 do 6 par gładkich, odwrotnie jajowatych lub sercowatych listków.",
+            "czesc": "liście",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s906"
+            ]
+          },
+          {
+            "tekst": "W dolnej części pędów liście bywają czasem podwójnie nieparzystopierzaście złożone. Składają się z maksymalnie trzech par osi drugiego rzędu, na których znajduje się do pięciu par małych listków o długości do jednego centymetra.",
+            "czesc": "liście",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1189"
+            ]
+          },
+          {
+            "tekst": "Jasnobrązowe, płaskie nasiona o nerkowatym i podłużnym kształcie mają do 10–12 milimetrów długości.",
+            "czesc": "nasiona",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s908"
+            ]
+          },
+          {
+            "tekst": "Owoce tej rosliny mają postać pojedynczych, jednonasiennych strąków.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s863"
+            ]
+          },
+          {
+            "tekst": "Cienkie, papierowate i eliptyczne do podłużnych strąki zawierają od jednego do trzech nasion.",
+            "czesc": "owoce",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s874"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "wystepowanie",
+        "tytul": "Występowanie",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Modrzejec kampechiański pochodzi z południa stanu Campeche w Meksyku, a obecnie w wielu krajach tropikalnych uznawany jest za roślinę inwazyjną.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s871"
+            ]
+          },
+          {
+            "tekst": "Modrzejec kampechiański występuje naturalnie w Ameryce Środkowej, w północnej części Ameryki Południowej oraz na wyspach karaibskich.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s905"
+            ]
+          },
+          {
+            "tekst": "Drzewo pochodzi z południowego Meksyku i naturalnie występuje także w regionach karaibskich oraz w północnej części Ameryki Środkowej.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1356"
+            ]
+          },
+          {
+            "tekst": "Obszar pierwotnego występowania tej rośliny obejmuje Meksyk oraz północną część Ameryki Środkowej.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s894"
+            ]
+          },
+          {
+            "tekst": "Poza obszarem Ameryki Środkowej, roślina ta została sztucznie wprowadzona i jest uprawiana na Tajwanie oraz w chińskich prowincjach Guangdong i Junnan.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s915"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "czesci_rosliny",
+        "tytul": "Części rośliny i surowce",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Twardziel drewna pozbawiona białawego bielu ma z zewnątrz barwę ciemnokrwistoczerwoną do brązowoczerwoną, wewnątrz jest jaśniejsza, a pod wpływem powietrza staje się ciemnoczerwonobrązowa.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s875"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Główną substancją barwiącą modrzejca jest hematoksylina, wykorzystywana również w barwieniu histologicznym. W czystej postaci tworzy ona niemal bezbarwne kryształy, które na powietrzu czerwienieją i utleniają się do właściwego barwnika – hemateiny.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1187"
+            ]
+          },
+          {
+            "tekst": "Związkiem odpowiedzialnym za właściwości barwzące drewna modrzejca jest hämatoxylin (hämatoksylina), która pod wpływem powietrza przechodzi w barwnik hämatein (hämateinę).",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1363"
+            ]
+          },
+          {
+            "tekst": "Modrzejec kampechiański zawiera substancje czynne, które są wykorzystywane jako barwniki w różnych zastosowaniach.",
+            "czesc": "korzeń",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1196"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Drewno modrzejca charakteryzuje się twardością, gęstością, trudnością w łupaniu, słabym, nieco fiołkowym zapachem oraz działaniem ściągającym.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s877"
+            ]
+          },
+          {
+            "tekst": "Ekstrakt z modrzejca kampechiańskiego znajdował niegdyś zastosowanie w przemyśle produkującym atramenty oraz sporadycznie w medycynie.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1364"
+            ]
+          },
+          {
+            "tekst": "Zrębki drewna modrzejca są nadal wykorzystywane jako istotne źródło hematoksyliny, która znajduje zastosowanie w histologii do barwienia preparatów.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1186"
+            ]
+          },
+          {
+            "tekst": "W medycynie ludowej roślina ta była stosowana jako środek ściągający, przeciwbakteryjny i przeciwzapalny. Pomagała również w łagodzeniu biegunek oraz białych upławów.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s883"
+            ]
+          },
+          {
+            "tekst": "Zarówno kora, jak i liście tego gatunku drzewa znajdowały zastosowanie w różnorodnych celach medycznych.",
+            "czesc": "kora",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s866"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "barwienie",
+        "tytul": "Barwienie i rzemiosło",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Świeżo zrębkowane wióry modrzejca poddaje się fermentacji na powietrzu, aby rozwinać pożądany barwnik, przy czym najlepsze jakościowo wióry wykazują charakterystyczny metaliczny, żółto-zielony połysk.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s876"
+            ]
+          },
+          {
+            "tekst": "Drewno modrzejca wykorzystywano w farbiarstwie do barwienia wełny, bawełny, lnu i jedwabiu, a w zależności od zastosowanej zaprawy uzyskiwano między innymi odcień niebiesko-fioletowy.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s909"
+            ]
+          },
+          {
+            "tekst": "Pozyskiwany z drewna ekstrakt służył dawniej nie tylko do farbowania tkanin, ale także do wyrobu atramentu. Do Europy transportowano go w postaci stałej przez Nowy Jork, spakowanego w skrzynie o wadze od 50 do 100 kg.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1190"
+            ]
+          },
+          {
+            "tekst": "Surowiec ten był niezwykle wszechstronnym barwnikiem, powszechnie używanym nie tylko do farbowania tekstyliów, ale także do barwienia papieru.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s868"
+            ]
+          },
+          {
+            "tekst": "Sok tego drzewa był tradycyjnie wykorzystywany przez Majów jako barwnik, a ze względu na swoje bezpieczeństwo jest wciąż powszechnie używany do farbowania tkanin i papieru.",
+            "czesc": "sok",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s916"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "historia",
+        "tytul": "Historia i nazwa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Pod koniec XIX wieku podjęto próby uprawy modrzejca w holenderskich koloniach w Indiach Wschodnich.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s910"
+            ]
+          },
+          {
+            "tekst": "W handlu międzynarodowym ekstrakt z drewna modrzejca był sprowadzany do Europy w postaci stałej przez Nowy Jork, w skrzyniach ważących od 50 do 100 kilogramów.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1365"
+            ]
+          },
+          {
+            "tekst": "Naukowa nazwa tej rośliny, Haematoxylum, wywodzi się z języka greckiego i oznacza „krwawe drzewo”, łącząc słowa oznaczające krew oraz drewno.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s864"
+            ]
+          },
+          {
+            "tekst": "Powstanie współczesnego państwa Belize jest ściśle powiązane z siedemnastowiecznymi i osiemnastowiecznymi obozami drwali, które zostały założone przez Anglików w celu pozyskiwania tego surowca.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s865"
+            ]
+          },
+          {
+            "tekst": "Kiedy w 1715 roku Hiszpanie wypędzili licznych drwali pozyskujących modrzejec, uciekli oni masowo do Nassau, zasilając szeregi tamtejszych piratów.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s869"
+            ]
+          },
+          {
+            "tekst": "Od XVII do XIX wieku modrzejec miał duże znaczenie gospodarcze, ponieważ drzewa były wycinane i eksportowane do Europy w celu barwienia tkanin.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1357"
+            ]
+          },
+          {
+            "tekst": "Ten gatunek rośliny został opisany przez Karola Linneusza w jego dziele „Species Plantarum” z 1753 roku.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s893"
+            ]
+          },
+          {
+            "tekst": "Przed XV wiekiem rdzenni mieszkańcy Ameryki, w tym Majowie i Aztekowie, używali tego drzewa jako źródła barwnika do uzyskiwania kolorów fioletowego oraz czarnego.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s878"
+            ]
+          },
+          {
+            "tekst": "W 1739 roku doszło do wybuchu kolejnej wojny między Wielką Brytanią a Hiszpanią, której tłem były korzyści finansowe płynące z handlu modrzejcem.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s880"
+            ]
+          },
+          {
+            "tekst": "Na początku XIX wieku na rynku pojawił się nadmiar surowca z modrzejca, a jego rynkowa cena gwałtownie spadła po wynalezieniu syntetycznych barwników anilinowych.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s881"
+            ]
+          },
+          {
+            "tekst": "Zanim odkryto barwierskie właściwości tej rośliny, hiszpańscy żeglarze używali jej ciężkiego drewna głównie jako balastu na swoich statkach.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s911"
+            ]
+          },
+          {
+            "tekst": "Nazwa meksykańskiego stanu Campeche pochodzi bezpośrednio od hiszpańskiej nazwy tego drzewa.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s912"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "nazwy_ludowe",
+        "tytul": "Nazwy ludowe",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Modrzejec kampechiański znany jest również pod regionalnymi i dawnymi nazwami takimi jak kampeszyn, hematoksylon kampechiański oraz błękitne drzewo.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s860"
+            ]
+          },
+          {
+            "tekst": "W języku angielskim roślina ta funkcjonuje pod wieloma nazwami zwyczajowymi, do których należą m.in. „blackwood”, „bloodwood tree” oraz „Jamaica wood”.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s870"
+            ]
+          },
+          {
+            "tekst": "W języku chińskim drzewo to funkcjonuje również pod nazwami zwyczajowymi takimi jak \"caimu\" oraz \"yangsumu\".",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s885"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Zgodnie z badaniami medycznymi surowy ekstrakt z tej rośliny wykazuje selektywne działanie cytotoksyczne. Z tego powodu nie nadaje się jako lek przeciwnowotworowy i wymaga ostrożności w stosowaniu.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s884"
+            ]
+          },
+          {
+            "tekst": "Ponieważ gorący wyciąg wodny z twardzieli modrzejca ma intensywną, purpurowoczerwoną barwę, nieuczciwi sprzedawcy oferują go czasem jako sfałszowany cis, będący źródłem cennego paklitakselu.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s886"
+            ]
+          },
+          {
+            "tekst": "Zdarzają się przypadki, w których nieuczciwi sprzedawcy chińskiej medycyny tradycyjnej fałszują towar i sprzedają drewno modrzejca jako sappanwood (su mu).",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s887"
+            ]
+          },
+          {
+            "tekst": "Brak jest wystarczajacych informacji naukowych pozwalajacych na ocenę bezpieczenstwa stosowania modrzejca kampechiańskiego oraz potencjalnych skutkow ubocznych. Z ostrożnosci zaleca sie unikanie jego stosowania w okresie ciazy oraz karmienia piersia.",
+            "czesc": null,
+            "zrodla": [
+              7
+            ],
+            "fakty": [
+              "s919"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "ciekawostki",
+        "tytul": "Ciekawostki",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Liczba chromosomów u modrzejca kampechiańskiego wynosi 2n = 24.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1191"
+            ]
+          },
+          {
+            "tekst": "Ekstrakt z modrzejca był dawniej wykorzystywany jako wskaźnik pH. W środowisku obojętnym przybiera barwę brązowawą, w kwaśnym staje się żółto-czerwony, natomiast w zasadowym zmienia kolor na fioletowy.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s867"
+            ]
+          },
+          {
+            "tekst": "Wióry z tego drzewa są ważnym źródłem haematoksyzyny, barwnika używanego w histologii do barwienia preparatów tkanek.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1358"
+            ]
+          },
+          {
+            "tekst": "W latach 1713‑1716 wyeksportowano prawie 5 000 ton modrzejca do Anglii, co przynosiło roczne przychody nie mniejsze niż 60 000 funtów.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1359"
+            ]
+          },
+          {
+            "tekst": "W meksykańskim stanie Campeche naturalny barwnik pochodzący z tych roślin przedostaje się do niektórych rzek, barwiąc ich wodę na jaskrawoczerwony kolor.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s917"
+            ]
+          },
+          {
+            "tekst": "Zabarwione na czerwono rzeki uchodzą bezpośrednio do Zatoki Meksykańskiej i nie tworzą unikalnego, odizolowanego ekosystemu, lecz jedynie barwią przybrzeżne wody morskie, dając efekt trójkolorowy.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s918"
+            ]
+          },
+          {
+            "tekst": "Dzięki wysokiej gęstości pozyskiwanego drewna, surowiec ten jest ceniony w stolarstwie i nadaje się doskonale do wyrobu trwałych podłóg oraz trumien.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s889"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "kora": [
+        "s872",
+        "s1360",
+        "s866"
+      ],
+      "kwiaty": [
+        "s862",
+        "s873",
+        "s1188",
+        "s1361",
+        "s1362",
+        "s891",
+        "s1195"
+      ],
+      "liście": [
+        "s906",
+        "s1189"
+      ],
+      "nasiona": [
+        "s908"
+      ],
+      "owoce": [
+        "s863",
+        "s874"
+      ],
+      "korzeń": [
+        "s1196"
+      ],
+      "sok": [
+        "s916"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s860",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "Modrzejec kampechiański znany jest również pod regionalnymi i dawnymi nazwami takimi jak kampeszyn, hematoksylon kampechiański oraz błękitne drzewo.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Modrzejec kampechiański",
+          "url": "https://pl.wikipedia.org/wiki/Modrzejec_kampechia%C5%84ski"
+        },
+        "cytat": "kampeszyn, hematoksylon kampechiański, błękitne drzewo"
+      },
+      {
+        "id": "s861",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Te cierniste drzewa dorastają do 12 metrów wysokości. Ich liście są parzystopierzasto złożone z trzech lub czterech par listków o odwrotnie jajowatym kształcie.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Modrzejec kampechiański",
+          "url": "https://pl.wikipedia.org/wiki/Modrzejec_kampechia%C5%84ski"
+        },
+        "cytat": "Cierniste drzewa, osiągające do 12 metrów wysokości. / Liście / Parzystopierzasto złożone z 3–4 par listków o odwrotnie jajowatym kształcie."
+      },
+      {
+        "id": "s862",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Drobne kwiaty zebrane są w grona. Posiadają czerwony, pięciodziałkowy kielich oraz żółtą, pięciopłatkową koronę, w której jeden płatek jest wyraźnie większy od pozostałych.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Modrzejec kampechiański",
+          "url": "https://pl.wikipedia.org/wiki/Modrzejec_kampechia%C5%84ski"
+        },
+        "cytat": "Kwiaty / Zebrane w gronach. Pięciodziałkowy kielich jest czerwony. Korona jest żółta, 5-płatkowa, przy czym jeden płatek jest większy od pozostałych. Pręcików jest 10, a słupek pojedynczy."
+      },
+      {
+        "id": "s863",
+        "sekcja": "opis",
+        "czesc": "owoce",
+        "tekst": "Owoce tej rosliny mają postać pojedynczych, jednonasiennych strąków.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Modrzejec kampechiański",
+          "url": "https://pl.wikipedia.org/wiki/Modrzejec_kampechia%C5%84ski"
+        },
+        "cytat": "Owoce / Jednonasienny strąk."
+      },
+      {
+        "id": "s864",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Naukowa nazwa tej rośliny, Haematoxylum, wywodzi się z języka greckiego i oznacza „krwawe drzewo”, łącząc słowa oznaczające krew oraz drewno.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Haematoxylum campechianum",
+          "url": "https://en.wikipedia.org/wiki/Haematoxylum_campechianum"
+        },
+        "cytat": "The tree's scientific name means \"bloodwood\" (haima being Greek for blood and xylon for wood)."
+      },
+      {
+        "id": "s865",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Powstanie współczesnego państwa Belize jest ściśle powiązane z siedemnastowiecznymi i osiemnastowiecznymi obozami drwali, które zostały założone przez Anglików w celu pozyskiwania tego surowca.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Haematoxylum campechianum",
+          "url": "https://en.wikipedia.org/wiki/Haematoxylum_campechianum"
+        },
+        "cytat": "The modern nation of Belize developed from 17th- and 18th-century logging camps established by the English."
+      },
+      {
+        "id": "s866",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "kora",
+        "tekst": "Zarówno kora, jak i liście tego gatunku drzewa znajdowały zastosowanie w różnorodnych celach medycznych.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Haematoxylum campechianum",
+          "url": "https://en.wikipedia.org/wiki/Haematoxylum_campechianum"
+        },
+        "cytat": "The bark and leaves are also used in various medical applications."
+      },
+      {
+        "id": "s867",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Ekstrakt z modrzejca był dawniej wykorzystywany jako wskaźnik pH. W środowisku obojętnym przybiera barwę brązowawą, w kwaśnym staje się żółto-czerwony, natomiast w zasadowym zmienia kolor na fioletowy.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Haematoxylum campechianum",
+          "url": "https://en.wikipedia.org/wiki/Haematoxylum_campechianum"
+        },
+        "cytat": "The extract was once used as a pH indicator. Brownish when neutral, it becomes yellow reddish under acidic conditions and purple when alkaline."
+      },
+      {
+        "id": "s868",
+        "sekcja": "barwienie",
+        "czesc": null,
+        "tekst": "Surowiec ten był niezwykle wszechstronnym barwnikiem, powszechnie używanym nie tylko do farbowania tekstyliów, ale także do barwienia papieru.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Haematoxylum campechianum",
+          "url": "https://en.wikipedia.org/wiki/Haematoxylum_campechianum"
+        },
+        "cytat": "In its time, it was considered a versatile dye, and was widely used on textiles and also for paper."
+      },
+      {
+        "id": "s869",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Kiedy w 1715 roku Hiszpanie wypędzili licznych drwali pozyskujących modrzejec, uciekli oni masowo do Nassau, zasilając szeregi tamtejszych piratów.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Haematoxylum campechianum",
+          "url": "https://en.wikipedia.org/wiki/Haematoxylum_campechianum"
+        },
+        "cytat": "When Spanish forces ejected a great many hunters and logwood cutters in 1715, they flocked to Nassau and swelled the already-considerable numbers of pirates gathering there."
+      },
+      {
+        "id": "s870",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "W języku angielskim roślina ta funkcjonuje pod wieloma nazwami zwyczajowymi, do których należą m.in. „blackwood”, „bloodwood tree” oraz „Jamaica wood”.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Haematoxylum campechianum",
+          "url": "https://en.wikipedia.org/wiki/Haematoxylum_campechianum"
+        },
+        "cytat": "Haematoxylum campechianum (blackwood, bloodwood tree, bluewood, campeachy tree, campeachy wood, campeche logwood, campeche wood, Jamaica wood, logwood or logwood tree)"
+      },
+      {
+        "id": "s871",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Modrzejec kampechiański pochodzi z południa stanu Campeche w Meksyku, a obecnie w wielu krajach tropikalnych uznawany jest za roślinę inwazyjną.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Blutholzbaum",
+          "url": "https://de.wikipedia.org/wiki/Blutholzbaum"
+        },
+        "cytat": "Der Blutholzbaum [...] (weil er im Süden des Staates Campeche in Mexiko seinen Ursprung hat) genannt, ist eine Pflanzenart [...] In vielen tropischen Ländern ist diese Art eine invasive Pflanze."
+      },
+      {
+        "id": "s872",
+        "sekcja": "opis",
+        "czesc": "kora",
+        "tekst": "Roślina ta wytwarza jasnoszarą do brązowej, łuskowatą i stosunkowo gładką borkę, podczas gdy kora na gałązkach jest w większości naga i pokryta licznymi białymi przetchlinkami.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Blutholzbaum",
+          "url": "https://de.wikipedia.org/wiki/Blutholzbaum"
+        },
+        "cytat": "Die schuppige, relativ glatte Borke ist hellgrau bis braun. Die weitgehend kahle Rinde der Zweige besitzt viele auffällige, kleine, weißliche Lentizellen."
+      },
+      {
+        "id": "s873",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Pachnące, obupłciowe kwiaty zebrane są w groniaste kwiatostany i posiadają rzutowo symetryczną budowę z dwiema okrywami kwiatowymi.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Blutholzbaum",
+          "url": "https://de.wikipedia.org/wiki/Blutholzbaum"
+        },
+        "cytat": "Die duftenden, zwittrigen und gestielten Blüten sind radiärsymmetrisch und fünfzählig mit doppelter Blütenhülle."
+      },
+      {
+        "id": "s874",
+        "sekcja": "opis",
+        "czesc": "owoce",
+        "tekst": "Cienkie, papierowate i eliptyczne do podłużnych strąki zawierają od jednego do trzech nasion.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Blutholzbaum",
+          "url": "https://de.wikipedia.org/wiki/Blutholzbaum"
+        },
+        "cytat": "Die papierigen, dünnen Hülsenfrüchte sind bei einer Länge 3 bis 5,5 Zentimeter und einer Breite von 1 bis 1,5 Zentimeter, elliptisch bis länglich und enthalten ein bis drei Samen."
+      },
+      {
+        "id": "s875",
+        "sekcja": "czesci_rosliny",
+        "czesc": null,
+        "tekst": "Twardziel drewna pozbawiona białawego bielu ma z zewnątrz barwę ciemnokrwistoczerwoną do brązowoczerwoną, wewnątrz jest jaśniejsza, a pod wpływem powietrza staje się ciemnoczerwonobrązowa.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Blutholzbaum",
+          "url": "https://de.wikipedia.org/wiki/Blutholzbaum"
+        },
+        "cytat": "Die vom weißlichen Splint befreiten großen Blöcke hatten außen eine dunkelblutrote bis braunrote Farbe, innen waren sie heller, rötlichbraun bis gelblichbraun, wurden an der Luft nach und nach dunkelrotbraun."
+      },
+      {
+        "id": "s876",
+        "sekcja": "barwienie",
+        "czesc": null,
+        "tekst": "Świeżo zrębkowane wióry modrzejca poddaje się fermentacji na powietrzu, aby rozwinać pożądany barwnik, przy czym najlepsze jakościowo wióry wykazują charakterystyczny metaliczny, żółto-zielony połysk.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Blutholzbaum",
+          "url": "https://de.wikipedia.org/wiki/Blutholzbaum"
+        },
+        "cytat": "Weil dieser Farbstoff in dem frisch zerraspelten Blauholz nur in geringer Menge vorhanden ist, lässt man die Späne an der Luft fermentieren, wodurch diese die gewünschte Farbe entwickeln; die Späne besserer Qualitäten zeigen dann einen eige"
+      },
+      {
+        "id": "s877",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": null,
+        "tekst": "Drewno modrzejca charakteryzuje się twardością, gęstością, trudnością w łupaniu, słabym, nieco fiołkowym zapachem oraz działaniem ściągającym.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Blutholzbaum",
+          "url": "https://de.wikipedia.org/wiki/Blutholzbaum"
+        },
+        "cytat": "Das Holz ist hart und dicht, lässt sich schwer spalten und hat einen schwachen, entfernt veilchenähnlichen Geruch und wirkt adstringierend."
+      },
+      {
+        "id": "s878",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Przed XV wiekiem rdzenni mieszkańcy Ameryki, w tym Majowie i Aztekowie, używali tego drzewa jako źródła barwnika do uzyskiwania kolorów fioletowego oraz czarnego.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 墨水樹",
+          "url": "https://zh.wikipedia.org/wiki/%E5%A2%A8%E6%B0%B4%E6%A8%B9"
+        },
+        "cytat": "15世紀以前，馬雅人和阿茲特克人就使用墨水樹為紫色及黑色染料。"
+      },
+      {
+        "id": "s880",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "W 1739 roku doszło do wybuchu kolejnej wojny między Wielką Brytanią a Hiszpanią, której tłem były korzyści finansowe płynące z handlu modrzejcem.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 墨水樹",
+          "url": "https://zh.wikipedia.org/wiki/%E5%A2%A8%E6%B0%B4%E6%A8%B9"
+        },
+        "cytat": "1739年，英國與西班牙再次因墨水樹的利益而爆發戰爭。"
+      },
+      {
+        "id": "s881",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Na początku XIX wieku na rynku pojawił się nadmiar surowca z modrzejca, a jego rynkowa cena gwałtownie spadła po wynalezieniu syntetycznych barwników anilinowych.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 墨水樹",
+          "url": "https://zh.wikipedia.org/wiki/%E5%A2%A8%E6%B0%B4%E6%A8%B9"
+        },
+        "cytat": "19世紀初期，墨水樹已經供過於求，後來其價格更因為苯胺染劑的發明而一落千丈"
+      },
+      {
+        "id": "s883",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": null,
+        "tekst": "W medycynie ludowej roślina ta była stosowana jako środek ściągający, przeciwbakteryjny i przeciwzapalny. Pomagała również w łagodzeniu biegunek oraz białych upławów.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 墨水樹",
+          "url": "https://zh.wikipedia.org/wiki/%E5%A2%A8%E6%B0%B4%E6%A8%B9"
+        },
+        "cytat": "民俗上主要用作收斂劑，且具有殺菌、抗發炎、治療腹瀉、緩和白帶等藥效。"
+      },
+      {
+        "id": "s884",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Zgodnie z badaniami medycznymi surowy ekstrakt z tej rośliny wykazuje selektywne działanie cytotoksyczne. Z tego powodu nie nadaje się jako lek przeciwnowotworowy i wymaga ostrożności w stosowaniu.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 墨水樹",
+          "url": "https://zh.wikipedia.org/wiki/%E5%A2%A8%E6%B0%B4%E6%A8%B9"
+        },
+        "cytat": "但醫學研究指出，其粗抽取物具選擇性毒他作用，不適合作為抗癌藥物，應小心使用。"
+      },
+      {
+        "id": "s885",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "W języku chińskim drzewo to funkcjonuje również pod nazwami zwyczajowymi takimi jak \"caimu\" oraz \"yangsumu\".",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 墨水樹",
+          "url": "https://zh.wikipedia.org/wiki/%E5%A2%A8%E6%B0%B4%E6%A8%B9"
+        }
+      },
+      {
+        "id": "s886",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Ponieważ gorący wyciąg wodny z twardzieli modrzejca ma intensywną, purpurowoczerwoną barwę, nieuczciwi sprzedawcy oferują go czasem jako sfałszowany cis, będący źródłem cennego paklitakselu.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 墨水樹",
+          "url": "https://zh.wikipedia.org/wiki/%E5%A2%A8%E6%B0%B4%E6%A8%B9"
+        },
+        "cytat": "墨水樹心材的熱水抽出物呈紫紅色或深紅色，因此常被不肖廠商充作紫杉（紫杉醇）販賣"
+      },
+      {
+        "id": "s887",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Zdarzają się przypadki, w których nieuczciwi sprzedawcy chińskiej medycyny tradycyjnej fałszują towar i sprzedają drewno modrzejca jako sappanwood (su mu).",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 墨水樹",
+          "url": "https://zh.wikipedia.org/wiki/%E5%A2%A8%E6%B0%B4%E6%A8%B9"
+        },
+        "cytat": "亦有中藥商將其木材充當蘇木販賣。"
+      },
+      {
+        "id": "s889",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Dzięki wysokiej gęstości pozyskiwanego drewna, surowiec ten jest ceniony w stolarstwie i nadaje się doskonale do wyrobu trwałych podłóg oraz trumien.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 墨水樹",
+          "url": "https://zh.wikipedia.org/wiki/%E5%A2%A8%E6%B0%B4%E6%A8%B9"
+        },
+        "cytat": "木材：密度高，適合作為地板或棺木。"
+      },
+      {
+        "id": "s891",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Na roślinie rozwijają się żółte kwiaty, które są zebrane w kwiatostany groniaste.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): アカミノキ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AB%E3%83%9F%E3%83%8E%E3%82%AD"
+        },
+        "cytat": "黄色の花が総状花序につく。"
+      },
+      {
+        "id": "s893",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Ten gatunek rośliny został opisany przez Karola Linneusza w jego dziele „Species Plantarum” z 1753 roku.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): アカミノキ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AB%E3%83%9F%E3%83%8E%E3%82%AD"
+        },
+        "cytat": "リンネの『植物の種』(1753年) で記載された植物の一つである。"
+      },
+      {
+        "id": "s894",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Obszar pierwotnego występowania tej rośliny obejmuje Meksyk oraz północną część Ameryki Środkowej.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): アカミノキ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AB%E3%83%9F%E3%83%8E%E3%82%AD"
+        },
+        "cytat": "原産はメキシコ及び中米の北部で"
+      },
+      {
+        "id": "s905",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Modrzejec kampechiański występuje naturalnie w Ameryce Środkowej, w północnej części Ameryki Południowej oraz na wyspach karaibskich.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Blutholzbaum",
+          "url": "https://de.wikipedia.org/wiki/Blutholzbaum"
+        },
+        "cytat": "Er ist in Zentralamerika und dem nördlichen Teil von Südamerika sowie auf Karibischen Inseln heimisch."
+      },
+      {
+        "id": "s906",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Naprzemianległe lub zebrane w pęczki liście modrzejca są pierzasto złożone z 1 do 6 par gładkich, odwrotnie jajowatych lub sercowatych listków.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Blutholzbaum",
+          "url": "https://de.wikipedia.org/wiki/Blutholzbaum"
+        },
+        "cytat": "Die wechselständigen oder in kleinen Büscheln zusammenstehenden Laubblätter sind etwa 1 Zentimeter lang gestielt und bis 10 Zentimeter lang. Die Blattspreite ist paarig gefiedert. Es sind 1 bis 6 Paare Fiederblättchen vorhanden."
+      },
+      {
+        "id": "s908",
+        "sekcja": "opis",
+        "czesc": "nasiona",
+        "tekst": "Jasnobrązowe, płaskie nasiona o nerkowatym i podłużnym kształcie mają do 10–12 milimetrów długości.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Blutholzbaum",
+          "url": "https://de.wikipedia.org/wiki/Blutholzbaum"
+        },
+        "cytat": "Die hellbraunen, flachen Samen sind bei einer Länge bis 10–12 Millimeter und einem Durchmesser bis 3–5 Millimeter leicht geknickt, nierenförmig und länglich."
+      },
+      {
+        "id": "s909",
+        "sekcja": "barwienie",
+        "czesc": null,
+        "tekst": "Drewno modrzejca wykorzystywano w farbiarstwie do barwienia wełny, bawełny, lnu i jedwabiu, a w zależności od zastosowanej zaprawy uzyskiwano między innymi odcień niebiesko-fioletowy.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Blutholzbaum",
+          "url": "https://de.wikipedia.org/wiki/Blutholzbaum"
+        },
+        "cytat": "Blauholz kann zum Färben von Wolle, Baumwolle, Leinen und Seide verwendet werden. Je nach Beize erzielt man verschiedene Farbtöne, auf Alaun z. B. Blauviolett."
+      },
+      {
+        "id": "s910",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Pod koniec XIX wieku podjęto próby uprawy modrzejca w holenderskich koloniach w Indiach Wschodnich.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Blutholzbaum",
+          "url": "https://de.wikipedia.org/wiki/Blutholzbaum"
+        },
+        "cytat": "Ende des 19. Jahrhunderts begann man, Blauholz auch in den niederländischen Kolonien Ostindiens zu kultivieren."
+      },
+      {
+        "id": "s911",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Zanim odkryto barwierskie właściwości tej rośliny, hiszpańscy żeglarze używali jej ciężkiego drewna głównie jako balastu na swoich statkach.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 墨水樹",
+          "url": "https://zh.wikipedia.org/wiki/%E5%A2%A8%E6%B0%B4%E6%A8%B9"
+        },
+        "cytat": "起初僅作為航行時的壓艙物使用，當其作為染料的價值被發現後，迅速成為西班牙殖民地的搖錢樹"
+      },
+      {
+        "id": "s912",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Nazwa meksykańskiego stanu Campeche pochodzi bezpośrednio od hiszpańskiej nazwy tego drzewa.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 墨水樹",
+          "url": "https://zh.wikipedia.org/wiki/%E5%A2%A8%E6%B0%B4%E6%A8%B9"
+        },
+        "cytat": "坎佩切州的州名命名自西班牙語的墨水樹。"
+      },
+      {
+        "id": "s915",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Poza obszarem Ameryki Środkowej, roślina ta została sztucznie wprowadzona i jest uprawiana na Tajwanie oraz w chińskich prowincjach Guangdong i Junnan.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 墨水樹",
+          "url": "https://zh.wikipedia.org/wiki/%E5%A2%A8%E6%B0%B4%E6%A8%B9"
+        },
+        "cytat": "分布于台湾、中美以及中国大陆的广东、云南等地，目前已由人工引种栽培。"
+      },
+      {
+        "id": "s916",
+        "sekcja": "barwienie",
+        "czesc": "sok",
+        "tekst": "Sok tego drzewa był tradycyjnie wykorzystywany przez Majów jako barwnik, a ze względu na swoje bezpieczeństwo jest wciąż powszechnie używany do farbowania tkanin i papieru.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): アカミノキ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AB%E3%83%9F%E3%83%8E%E3%82%AD"
+        },
+        "cytat": "樹液は染料としてマヤ族が伝統的に利用し、その安全性によって現在も布や紙の染色に広く使用されています。"
+      },
+      {
+        "id": "s917",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "W meksykańskim stanie Campeche naturalny barwnik pochodzący z tych roślin przedostaje się do niektórych rzek, barwiąc ich wodę na jaskrawoczerwony kolor.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): アカミノキ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AB%E3%83%9F%E3%83%8E%E3%82%AD"
+        },
+        "cytat": "メキシコのカンペチェ州の一部の川に天然のアカミノキの色素が溶け込み、真っ赤に染め上げている。"
+      },
+      {
+        "id": "s918",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Zabarwione na czerwono rzeki uchodzą bezpośrednio do Zatoki Meksykańskiej i nie tworzą unikalnego, odizolowanego ekosystemu, lecz jedynie barwią przybrzeżne wody morskie, dając efekt trójkolorowy.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): アカミノキ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AB%E3%83%9F%E3%83%8E%E3%82%AD"
+        },
+        "cytat": "この川はメキシコ湾に直接流れ出している為、狭く穏やかなバサースト湾のような特殊な生態を生み出すまでにはなっていない。せいぜい海岸近くの海をトリコロールに色分けする程度である。"
+      },
+      {
+        "id": "s919",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Brak jest wystarczajacych informacji naukowych pozwalajacych na ocenę bezpieczenstwa stosowania modrzejca kampechiańskiego oraz potencjalnych skutkow ubocznych. Z ostrożnosci zaleca sie unikanie jego stosowania w okresie ciazy oraz karmienia piersia.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "www.rxlist.com",
+          "url": "https://www.rxlist.com/supplements/logwood.htm"
+        },
+        "cytat": "It isn't known if logwood is safe or what the possible side effects might be. Pregnancy and breast-feeding: Not enough is known about the use of logwood during pregnancy and breast-feeding. Stay on the safe side and avoid use."
+      },
+      {
+        "id": "s1186",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": null,
+        "tekst": "Zrębki drewna modrzejca są nadal wykorzystywane jako istotne źródło hematoksyliny, która znajduje zastosowanie w histologii do barwienia preparatów.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Haematoxylum campechianum",
+          "url": "https://en.wikipedia.org/wiki/Haematoxylum_campechianum"
+        },
+        "cytat": "The woodchips are still used as an important source of haematoxylin, which is used in histology for staining."
+      },
+      {
+        "id": "s1187",
+        "sekcja": "sklad",
+        "czesc": null,
+        "tekst": "Główną substancją barwiącą modrzejca jest hematoksylina, wykorzystywana również w barwieniu histologicznym. W czystej postaci tworzy ona niemal bezbarwne kryształy, które na powietrzu czerwienieją i utleniają się do właściwego barwnika – hemateiny.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Blutholzbaum",
+          "url": "https://de.wikipedia.org/wiki/Blutholzbaum"
+        },
+        "cytat": "Der das Färbevermögen bedingende und in der histologischen Technik viel verwendete Stoff des Blauholzes ist das Hämatoxylin; es bildet in reinstem Zustand fast farblose Kristalle, die aber an der Luft bald rötlich werden und schließlich in "
+      },
+      {
+        "id": "s1188",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Kwiaty posiadają dziesięć wolnych pręcików o długości zbliżonej do płatków korony. Ich nitki są w dolnej części gęsto, wełnisto owłosione.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Blutholzbaum",
+          "url": "https://de.wikipedia.org/wiki/Blutholzbaum"
+        },
+        "cytat": "Die zehn, freien, gleichen Staubblätter sind etwa gleich lang wie die Kronblätter. Die Staubfäden sind an ihrer Basis wollig behaart."
+      },
+      {
+        "id": "s1189",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "W dolnej części pędów liście bywają czasem podwójnie nieparzystopierzaście złożone. Składają się z maksymalnie trzech par osi drugiego rzędu, na których znajduje się do pięciu par małych listków o długości do jednego centymetra.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Blutholzbaum",
+          "url": "https://de.wikipedia.org/wiki/Blutholzbaum"
+        },
+        "cytat": "Oder manchmal sind im unteren Bereich die Blätter doppelt unpaarig gefiedert. Sie besitzen bis 3 paar Fiedern mit bis 5 Blättchenpaaren, die kleinen Fiederblättchen sind bis 1 Zentimeter lang."
+      },
+      {
+        "id": "s1190",
+        "sekcja": "barwienie",
+        "czesc": null,
+        "tekst": "Pozyskiwany z drewna ekstrakt służył dawniej nie tylko do farbowania tkanin, ale także do wyrobu atramentu. Do Europy transportowano go w postaci stałej przez Nowy Jork, spakowanego w skrzynie o wadze od 50 do 100 kg.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Blutholzbaum",
+          "url": "https://de.wikipedia.org/wiki/Blutholzbaum"
+        },
+        "cytat": "Einen wichtigen Handelsartikel bildete auch das aus dem Blauholz bereitete Blauholzextrakt, es wurde in fester Form über New York in Kisten von 50 bis 100 kg nach Europa eingeführt. Verwendung fand das Blauholz in der Färberei und Tintenfab"
+      },
+      {
+        "id": "s1191",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Liczba chromosomów u modrzejca kampechiańskiego wynosi 2n = 24.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Blutholzbaum",
+          "url": "https://de.wikipedia.org/wiki/Blutholzbaum"
+        },
+        "cytat": "Die Chromosomenzahl beträgt 2n = 24."
+      },
+      {
+        "id": "s1193",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Modrzejec kampechiański jest liściastym krzewem należącym do rodziny bobowatych (Fabaceae).",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): アカミノキ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AB%E3%83%9F%E3%83%8E%E3%82%AD"
+        },
+        "cytat": "アカミノキ（Haematoxylum campechianum）は、マメ科ジャケツイバラ亜科の落葉低木である。"
+      },
+      {
+        "id": "s1194",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Dojrzewa na wysokość od trzech do dziesięciu metrów.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): アカミノキ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AB%E3%83%9F%E3%83%8E%E3%82%AD"
+        }
+      },
+      {
+        "id": "s1195",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Żółte kwiaty tego drzewa tworzą charakterystyczne wiechy (総状花序).",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): アカミノキ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AB%E3%83%9F%E3%83%8E%E3%82%AD"
+        },
+        "cytat": "黄色の花が総状花序につく。"
+      },
+      {
+        "id": "s1196",
+        "sekcja": "sklad",
+        "czesc": "korzeń",
+        "tekst": "Modrzejec kampechiański zawiera substancje czynne, które są wykorzystywane jako barwniki w różnych zastosowaniach.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "marinojapan.tokyo",
+          "url": "https://marinojapan.tokyo/black/"
+        },
+        "cytat": "アカミノキ木エキス...樹液は染料としてマヤ族が伝統的に利用し、現在も布や紙の染色に広く使用されている。色素の成分はヘマトキシリンで、組み合わせる媒染剤のpHによって発色が異なります。酸性が強いと赤、アルカリ性だと青くなる。"
+      },
+      {
+        "id": "s1356",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Drzewo pochodzi z południowego Meksyku i naturalnie występuje także w regionach karaibskich oraz w północnej części Ameryki Środkowej.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Haematoxylum campechianum",
+          "url": "https://en.wikipedia.org/wiki/Haematoxylum_campechianum"
+        },
+        "cytat": "native to southern Mexico, and introduced to the Caribbean, northern Central America, and other localities around the world"
+      },
+      {
+        "id": "s1357",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Od XVII do XIX wieku modrzejec miał duże znaczenie gospodarcze, ponieważ drzewa były wycinane i eksportowane do Europy w celu barwienia tkanin.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Haematoxylum campechianum",
+          "url": "https://en.wikipedia.org/wiki/Haematoxylum_campechianum"
+        },
+        "cytat": "The tree was of great economic importance from the 17th century to the 19th century, when it was commonly logged and exported to Europe for use in dyeing fabrics"
+      },
+      {
+        "id": "s1358",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Wióry z tego drzewa są ważnym źródłem haematoksyzyny, barwnika używanego w histologii do barwienia preparatów tkanek.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Haematoxylum campechianum",
+          "url": "https://en.wikipedia.org/wiki/Haematoxylum_campechianum"
+        },
+        "cytat": "The woodchips are still used as an important source of haematoxylin, which is used in histology for staining"
+      },
+      {
+        "id": "s1359",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "W latach 1713‑1716 wyeksportowano prawie 5 000 ton modrzejca do Anglii, co przynosiło roczne przychody nie mniejsze niż 60 000 funtów.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Haematoxylum campechianum",
+          "url": "https://en.wikipedia.org/wiki/Haematoxylum_campechianum"
+        },
+        "cytat": "According to a government report, in the four years 1713 to 1716, some 4,965 tons of logwood were exported to England at not less than £60,000 per annum"
+      },
+      {
+        "id": "s1360",
+        "sekcja": "opis",
+        "czesc": "kora",
+        "tekst": "Modrzejec kampechiański rośnie jako wiecznie zielone drzewo lub krzew, posiadający często cierniste przylistki o długości do 1,5 centymetra.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Blutholzbaum",
+          "url": "https://de.wikipedia.org/wiki/Blutholzbaum"
+        },
+        "cytat": "Der Blutholzbaum wächst als immergrüner Baum oder Strauch und erreicht Wuchshöhen bis etwa 10 Meter oder höher. Er besitzt häufig bis zu 1,5 Zentimeter lange Dornen"
+      },
+      {
+        "id": "s1361",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Drobne kwiaty tej rośliny posiadają pięć wolnych, rötlich bis gelben (czerwonawo-żółtych) działek kielicha oraz pięć wąsko odwrotnie jajowatych do podłużnych, żółtych płatków korony.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Blutholzbaum",
+          "url": "https://de.wikipedia.org/wiki/Blutholzbaum"
+        },
+        "cytat": "Die fünf rötlich bis gelben, freien Kelchblätter sind bei einer Länge von 5 bis 7 Millimeter länglich-lanzettlich mit spitzem oberen Ende. Die Blütenkrone besitzt einen Durchmesser von 12 bis 16 Millimeter. Die fünf gelben, freien Kronblätt"
+      },
+      {
+        "id": "s1362",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Nitki dziesięciu pręcików w kwiatach modrzejca kampechiańskiego są owłosione u nasady.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Blutholzbaum",
+          "url": "https://de.wikipedia.org/wiki/Blutholzbaum"
+        },
+        "cytat": "Die zehn, freien, gleichen Staubblätter sind etwa gleich lang wie die Kronblätter. Die Staubfäden sind an ihrer Basis wollig behaart."
+      },
+      {
+        "id": "s1363",
+        "sekcja": "sklad",
+        "czesc": null,
+        "tekst": "Związkiem odpowiedzialnym za właściwości barwzące drewna modrzejca jest hämatoxylin (hämatoksylina), która pod wpływem powietrza przechodzi w barwnik hämatein (hämateinę).",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Blutholzbaum",
+          "url": "https://de.wikipedia.org/wiki/Blutholzbaum"
+        },
+        "cytat": "Der das Färbevermögen bedingende und in der histologischen Technik viel verwendete Stoff des Blauholzes ist das Hämatoxylin; es bildet in reinstem Zustand fast farblose Kristalle, die aber an der Luft bald rötlich werden und schließlich in "
+      },
+      {
+        "id": "s1364",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": null,
+        "tekst": "Ekstrakt z modrzejca kampechiańskiego znajdował niegdyś zastosowanie w przemyśle produkującym atramenty oraz sporadycznie w medycynie.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Blutholzbaum",
+          "url": "https://de.wikipedia.org/wiki/Blutholzbaum"
+        },
+        "cytat": "Verwendung fand das Blauholz in der Färberei und Tintenfabrikation, zuweilen auch in der Medizin, und als Nutzholz."
+      },
+      {
+        "id": "s1365",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "W handlu międzynarodowym ekstrakt z drewna modrzejca był sprowadzany do Europy w postaci stałej przez Nowy Jork, w skrzyniach ważących od 50 do 100 kilogramów.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Blutholzbaum",
+          "url": "https://de.wikipedia.org/wiki/Blutholzbaum"
+        },
+        "cytat": "Einen wichtigen Handelsartikel bildete auch das aus dem Blauholz bereitete Blauholzextrakt, es wurde in fester Form über New York in Kisten von 50 bis 100 kg nach Europa eingeführt."
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-14",
+    "pola": {
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": [
+          "Pień krępy i mocno powykrzywiany, pokryty szarą korą.",
+          "Twardziel drewna bezpośrednio po ścięciu krwisto-czerwona, na powietrzu ciemnieje do fioletowo-brunatnej.",
+          "Pierzaste liście i drobne, jasnożółte kwiaty zebrane w grona.",
+          "Gałęzie opatrzone mocnymi cierniami."
+        ],
+        "tresc": [
+          {
+            "tekst": "Pień krępy i mocno powykrzywiany, pokryty szarą korą.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Twardziel drewna bezpośrednio po ścięciu krwisto-czerwona, na powietrzu ciemnieje do fioletowo-brunatnej.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Pierzaste liście, będące parzystopierzasto złożone z trzech lub czterech par listków o odwrotnie jajowatym kształcie, oraz drobne, jasnożółte kwiaty zebrane w grona, które posiadają czerwony, pięciodziałkowy kielich i żółtą, pięciopłatkową koronę, w której jeden płatek jest wyraźnie większy od pozostałych.",
+            "zrodla": [
+              1,
+              2
+            ],
+            "fakty": [
+              "s861",
+              "s862",
+              "s906"
+            ]
+          },
+          {
+            "tekst": "Gałęzie opatrzone mocnymi cierniami, typowymi dla ciernistych drzew.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "256d91ecf9426001"
+      },
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Cierniste drzewo tropikalne pochodzące z Ameryki Środkowej. Choć nie jest to roślina rodzima dla Europy, jej twardziel (serce drewna) przez wieki stanowiła jeden z najważniejszych surowców importowanych w rzemiośle farbiarskim. Modrzejec pozwala uzyskać z jednego kawałka drewna niezwykle szerokie spektrum kolorów – od fioletów, przez błękity, aż po absolutną czerń. Z botanicznego punktu widzenia to roślina bogata w taniny, o potężnych właściwościach antyseptycznych.",
+        "tresc": [
+          {
+            "tekst": "Cierniste drzewo tropikalne pochodzące z Ameryki Środkowej, naturalnie występujące w Ameryce Środkowej, w północnej części Ameryki Południowej oraz na wyspach karaibskich.",
+            "zrodla": [
+              2,
+              3,
+              4
+            ],
+            "fakty": [
+              "s905",
+              "s1356",
+              "s894"
+            ]
+          },
+          {
+            "tekst": "Jest to roślina liściasta, należąca do rodziny bobowatych (Fabaceae).",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1193"
+            ]
+          },
+          {
+            "tekst": "Dojrzewa na wysokość od trzech do dziesięciu metrów.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1194"
+            ]
+          },
+          {
+            "tekst": "Pochodzi z południa stanu Campeche w Meksyku i obecnie w wielu krajach tropikalnych uznawany jest za roślinę inwazyjną.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s871"
+            ]
+          },
+          {
+            "tekst": "Choć nie jest to roślina rodzima dla Europy, jej twardziel (serce drewna) przez wieki stanowiła jeden z najważniejszych surowców importowanych w rzemiośle farbiarskim.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Modrzejec pozwala uzyskać z jednego kawałka drewna niezwykle szerokie spektrum kolorów – od fioletów, przez błękty, aż po absolutną czerń.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Z botanicznego punktu widzenia to roślina bogata w taniny, o potężnych właściwościach antyseptycznych.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Poza obszarem Ameryki Środkowej, roślina została sztucznie wprowadzona i jest uprawiana na Tajwanie oraz w chińskich prowincjach Guangdong i Junnan.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s915"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "d88f0b2f93b6cd12"
+      },
+      "czesci_rosliny.kora.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Kora (nowa część z sieci): Opis surowca",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Roślina ta wytwarza jasnoszarą do brązowej, łuskowatą i stosunkowo gładką borkę, podczas gdy kora na gałązkach jest w większości naga i pokryta licznymi białymi przetchlinkami.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s872"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "9de24f14ef9ea077"
+      },
+      "czesci_rosliny.drewno.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - drewno: Opis surowca",
+        "typ": "tekst",
+        "oryginal": "Ciemne, ciężkie serce drewna tropikalnego.",
+        "tresc": [
+          {
+            "tekst": "Ciemne, ciężkie serce drewna tropikalnego, twardziel drewna pozbawiony białawego bielu, ma z zewnątrz barwę ciemnokrwistoczerwoną do brązowoczerwoną, wewnątrz jest jaśniejsza, a pod wpływem powietrza staje się ciemnoczerwonobrązowa.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s875"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "81e22e29977dbba8"
+      },
+      "czesci_rosliny.drewno.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - drewno: Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Główną substancją barwiącą drewna modrzejca jest hematoksylina, która pod wpływem powietrza utlenia się do barwnika hemateiny.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1187",
+              "s1363"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "fae2722b611baa6a"
+      },
+      "czesci_rosliny.korzeń.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Modrzejec kampechiański zawiera substancje czynne, które są wykorzystywane jako barwniki w różnych zastosowaniach.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1196"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "02acdd21f9cd635d"
+      },
+      "czesci_rosliny.drewno.wlasciwości": {
+        "tytul": "Surowce i zbiory - drewno: Działanie",
+        "typ": "tekst",
+        "oryginal": "garbnikowe, antyseptyczne, barwierskie",
+        "tresc": [
+          {
+            "tekst": "Garbnikowe, antyseptyczne, barwierskie.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Drewno modrzejca charakteryzuje się twardością, gęstością, trudnością w łupaniu, słabym, nieco fiołkowym zapachem oraz działaniem ściągającym.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s877"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "f80de1313d4459ef"
+      },
+      "zastosowanie.rzemieslnicze": {
+        "tytul": "Praktyczne zastosowanie - Rzemiosło",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Ekstrakt z drewna modrzejca, używany dawniej w przemyśle farbiarskim do barwienia tkanin i w produkcji atramentu, był transportowany do Europy w postaci stałej, pakowany w skrzynie o wadze 50–100 kg, a także stosowany sporadycznie w medycynie.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1364",
+              "s1190"
+            ]
+          },
+          {
+            "tekst": "Surowiec ten, będący wszechstronnym barwnikiem, służył do farbowania wełny, bawełny, lnu i jedwabiu, uzyskując odcienie niebiesko‑fioletowe w zależności od zaprawy, a także do barwienia papieru.",
+            "zrodla": [
+              2,
+              3
+            ],
+            "fakty": [
+              "s909",
+              "s868"
+            ]
+          },
+          {
+            "tekst": "Zrębki drewna modrzejca stanowiły ważne źródło hematoksyliny, wykorzystywanej w histologii do barwienia preparatów.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1186"
+            ]
+          },
+          {
+            "tekst": "Dzięki wysokiej gęstości drewna, surowiec był ceniony w stolarstwie, przeznaczany do wytwarzania trwałych podłóg oraz trumien.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s889"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "f7562079a4a6374b"
+      },
+      "zastosowanie.medyczne": {
+        "tytul": "Praktyczne zastosowanie - Medycyna",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "W medycynie ludowej Modrzejec kampechiański (Haematoxylum campechianum) był stosowany jako środek ściągający, przeciwbakteryjny i przeciwzapalny, a także pomagał łagodzić biegunki oraz białe upławy.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s883"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "9ae8584a5510f98e"
+      },
+      "czesci_rosliny.kora.wlasciwości": {
+        "tytul": "Surowce i zbiory - Kora (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Kora tego gatunku drzewa, podobnie jak liście, znajdowała zastosowanie w różnorodnych celach medycznych.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s866"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "b767d8dfafe3d15f"
+      },
+      "czesci_rosliny.drewno.czas_zbioru": {
+        "tytul": "Surowce i zbiory - drewno: Zbiór",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Zrębkowane widły modrzejca poddawane są procesowi fermentacji na powietrzu w celu rozwoju poszukiwanego barwnika, a najlepszą jakość sygnału cechuje charakterystyczny metaliczny, żółto-zielony połysk.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s876"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "6e379094f4c4d9c7"
+      },
+      "czesci_rosliny.sok.wlasciwości": {
+        "tytul": "Surowce i zbiory - Sok (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Sok z modrzewca kampechiańskiego był tradycyjnie wykorzystywany przez Majów jako barwnik.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s916"
+            ]
+          },
+          {
+            "tekst": "Ze względu na swoje bezpieczeństwo surowiec ten jest wciąż powszechnie używany do farbowania tkanin i papieru.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s916"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "64be500fb1714f13"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "Kontrola nad lasami modrzejcowymi w zatoce Campeche była w XVII w. na tyle dochodowa, że stała się zarzewiem wojen i napadów pirackich wspieranych przez koronę brytyjską.",
+          "Barwnik hematoksylina do dziś jest niezbędny w diagnostyce medycznej, np. do barwienia próbek nowotworowych."
+        ],
+        "tresc": [
+          {
+            "tekst": "Kontrola nad lasami modrzejcowymi w zatoce Campeche była w XVII w. na tyle dochodowa, że stała się zarzewiem wojen i napadów pirackich wspieranych przez koronę brytyjską.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Barwnik hematoksylina do dziś jest niezbędny w diagnostyce medycznej, np. do barwienia próbek nowotworowych.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Pod koniec XIX wieku podjęto próby uprawy modrzejca w holenderskich koloniach w Indiach Wschodnich.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s910"
+            ]
+          },
+          {
+            "tekst": "W handlu międzynarodowym ekstrakt z drewna modrzejca był sprowadzany do Europy w postaci stałej przez Nowy Jork, w skrzyniach ważących od 50 do 100 kilogramów.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1365"
+            ]
+          },
+          {
+            "tekst": "Naukowa nazwa tej rośliny, Haematoxylum, wywodzi się z języka greckiego i oznacza „krwawe drzewo”, łącząc słowa oznaczające krew oraz drewno.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s864"
+            ]
+          },
+          {
+            "tekst": "Powstanie współczesnego państwa Belize jest ściśle powiązane z siedemnastowiecznymi i osiemnastowiecznymi obozami drwali, które zostały założone przez Anglików w celu pozyskiwania tego surowca.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s865"
+            ]
+          },
+          {
+            "tekst": "Kiedy w 1715 roku Hiszpanie wypędzili licznych drwali pozyskujących modrzejec, uciekli oni masowo do Nassau, zasilając szeregi tamtejszych piratów.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s869"
+            ]
+          },
+          {
+            "tekst": "Od XVII do XIX wieku modrzejec miał duże znaczenie gospodarcze, ponieważ drzewa były wycinane i eksportowane do Europy w celu barwienia tkanin.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1357"
+            ]
+          },
+          {
+            "tekst": "Ten gatunek rośliny został opisany przez Karola Linneusza w jego dziele „Species Plantarum” z 1753 roku.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s893"
+            ]
+          },
+          {
+            "tekst": "Przed XV wiekiem rdzenni mieszkańcy Ameryki, w tym Majowie i Aztekowie, używali tego drzewa jako źródła barwnika do uzyskiwania kolorów fioletowego oraz czarnego.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s878"
+            ]
+          },
+          {
+            "tekst": "W 1739 roku doszło do wybuchu kolejnej wojny między Wielką Brytanią a Hiszpanią, której tłem były korzyści finansowe płynące z handlu modrzejcem.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s880"
+            ]
+          },
+          {
+            "tekst": "Na początku XIX wieku na rynku pojawił się nadmiar surowca z modrzejca, a jego rynkowa cena gwałtownie spadła po wynalezieniu syntetycznych barwników anilinowych.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s881"
+            ]
+          },
+          {
+            "tekst": "Zanim odkryto barwierskie właściwości tej rośliny, hiszpańscy żeglarze używali jej ciężkiego drewna głównie jako balastu na swoich statkach.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s911"
+            ]
+          },
+          {
+            "tekst": "Nazwa meksykańskiego stanu Campeche pochodzi bezpośrednio od hiszpańskiej nazwy tego drzewa.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s912"
+            ]
+          },
+          {
+            "tekst": "Modrzejec kampechiański znany jest również pod regionalnymi i dawnymi nazwami takimi jak kampeszyn, hematoksylon kampechiański oraz błękitne drzewo.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s860"
+            ]
+          },
+          {
+            "tekst": "W języku angielskim roślina ta funkcjonuje pod wieloma nazwami zwyczajowymi, do których należą m.in. „blackwood”, „bloodwood tree” oraz „Jamaica wood”.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s870"
+            ]
+          },
+          {
+            "tekst": "W języku chińskim drzewo to funkcjonuje również pod nazwami zwyczajowymi takimi jak \"caimu\" oraz \"yangsumu\".",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s885"
+            ]
+          },
+          {
+            "tekst": "Liczba chromosomów u modrzejca kampechiańskiego wynosi 2n = 24.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1191"
+            ]
+          },
+          {
+            "tekst": "Ekstrakt z modrzejca był dawniej wykorzystywany jako wskaźnik pH. W środowisku obojętnym przybiera barwę brązowawą, w kwaśnym staje się żółto-czerwony, natomiast w zasadowym zmienia kolor na fioletowy.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s867"
+            ]
+          },
+          {
+            "tekst": "Wióry z tego drzewa są ważnym źródłem haematoksyzyny, barwnika używanego w histologii do barwienia preparatów tkanek.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1358"
+            ]
+          },
+          {
+            "tekst": "W latach 1713‑1716 wyeksportowano prawie 5 000 ton modrzejca do Anglii, co przynosiło roczne przychody nie mniejsze niż 60 000 funtów.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1359"
+            ]
+          },
+          {
+            "tekst": "W meksykańskim stanie Campeche naturalny barwnik pochodzący z tych roślin przedostaje się do niektórych rzek, barwiąc ich wodę na jaskrawoczerwony kolor.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s917"
+            ]
+          },
+          {
+            "tekst": "Zabarwione na czerwono rzeki uchodzą bezpośrednio do Zatoki Meksykańskiej i nie tworzą unikalnego, odizolowanego ekosystemu, lecz jedynie barwią przybrzeżne wody morskie, dając efekt trójkolorowy.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s918"
+            ]
+          }
+        ],
+        "model": "bez LLM: 21 punktow",
+        "wejscie": "ba6534492ed823f2"
+      },
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Surowy ekstrakt z modrzejca kampechiańskiego wykazuje selektywne działanie cytotoksyczne, co powoduje, że nie nadaje się jako lek przeciwnowotworowy i wymaga ostrożności w stosowaniu; jednocześnie ze względu na brak wystarczających danych o bezpieczeństwie, zaleca się unikanie jego stosowania w ciąży i podczas karmienia piersią.",
+            "zrodla": [
+              5,
+              7
+            ],
+            "fakty": [
+              "s884",
+              "s919"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "43ed07ceff063f75"
+      },
+      "czesci_rosliny.drewno.ostrzezenia": {
+        "tytul": "Surowce i zbiory - drewno: Ostrzeżenia",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Ponieważ gorący wyciąg wodny z twardzieli modrzejca ma intensywną, purpurowoczerwoną barwę, nieuczciwi sprzedawcy oferują go czasem jako sfałszowany cis, będący źródłem cennego paklitakselu.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s886"
+            ]
+          },
+          {
+            "tekst": "Zdarzają się przypadki, w których nieuczciwi sprzedawcy chińskiej medycyny tradycyjnej fałszują towar i sprzedają drewno modrzejca jako sappanwood (su mu).",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s887"
+            ]
+          }
+        ],
+        "model": "bez LLM: za duzo zdan spoza zrodel",
+        "wejscie": "ab50942ac64b1f55"
+      }
+    },
+    "uzyte_fakty": [
+      "s1186",
+      "s1187",
+      "s1190",
+      "s1191",
+      "s1193",
+      "s1194",
+      "s1196",
+      "s1356",
+      "s1357",
+      "s1358",
+      "s1359",
+      "s1363",
+      "s1364",
+      "s1365",
+      "s860",
+      "s861",
+      "s862",
+      "s864",
+      "s865",
+      "s866",
+      "s867",
+      "s868",
+      "s869",
+      "s870",
+      "s871",
+      "s872",
+      "s875",
+      "s876",
+      "s877",
+      "s878",
+      "s880",
+      "s881",
+      "s883",
+      "s884",
+      "s885",
+      "s886",
+      "s887",
+      "s889",
+      "s893",
+      "s894",
+      "s905",
+      "s906",
+      "s909",
+      "s910",
+      "s911",
+      "s912",
+      "s915",
+      "s916",
+      "s917",
+      "s918",
+      "s919"
+    ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-14",
+    "jak": "llm:groq/openai/gpt-oss-120b",
+    "wejscie": "74a34d57d6cfff73",
+    "wstawki": [
+      {
+        "miejsce": "rozpoznawanie/cechy",
+        "rozdzial": "Rozpoznawanie w terenie",
+        "tytul": "Cechy kluczowe",
+        "ikona": "ra-leaf",
+        "nowy": false,
+        "punkty": [
+          {
+            "tekst": "Modrzejec kampechiański rośnie jako wiecznie zielone drzewo lub krzew, posiadający często cierniste przylistki o długości do 1,5 centymetra.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1360"
+            ],
+            "sekcja": "opis",
+            "czesc": "kora"
+          },
+          {
+            "tekst": "W dolnej części pędów liście bywają czasem podwójnie nieparzystopierzaście złożone. Składają się z maksymalnie trzech par osi drugiego rzędu, na których znajduje się do pięciu par małych listków o długości do jednego centymetra.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1189"
+            ],
+            "sekcja": "opis",
+            "czesc": "liście"
+          }
+        ]
+      },
+      {
+        "miejsce": "rozpoznawanie/budowa",
+        "rozdzial": "Rozpoznawanie w terenie",
+        "tytul": "Budowa: kwiaty, owoce i nasiona",
+        "ikona": "ra-flower",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Pachnące, obupłciowe kwiaty zebrane są w groniaste kwiatostany i posiadają rzutowo symetryczną budowę z dwiema okrywami kwiatowymi.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s873"
+            ],
+            "sekcja": "opis",
+            "czesc": "kwiaty"
+          },
+          {
+            "tekst": "Kwiaty posiadają dziesięć wolnych pręcików o długości zbliżonej do płatków korony. Ich nitki są w dolnej części gęsto, wełnisto owłosione.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1188"
+            ],
+            "sekcja": "opis",
+            "czesc": "kwiaty"
+          },
+          {
+            "tekst": "Drobne kwiaty tej rośliny posiadają pięć wolnych, rötlich bis gelben (czerwonawo-żółtych) działek kielicha oraz pięć wąsko odwrotnie jajowatych do podłużnych, żółtych płatków korony.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1361"
+            ],
+            "sekcja": "opis",
+            "czesc": "kwiaty"
+          },
+          {
+            "tekst": "Nitki dziesięciu pręcików w kwiatach modrzejca kampechiańskiego są owłosione u nasady.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1362"
+            ],
+            "sekcja": "opis",
+            "czesc": "kwiaty"
+          },
+          {
+            "tekst": "Na roślinie rozwijają się żółte kwiaty, które są zebrane w kwiatostany groniaste.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s891"
+            ],
+            "sekcja": "opis",
+            "czesc": "kwiaty"
+          },
+          {
+            "tekst": "Żółte kwiaty tego drzewa tworzą charakterystyczne wiechy (総状花序).",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1195"
+            ],
+            "sekcja": "opis",
+            "czesc": "kwiaty"
+          },
+          {
+            "tekst": "Jasnobrązowe, płaskie nasiona o nerkowatym i podłużnym kształcie mają do 10–12 milimetrów długości.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s908"
+            ],
+            "sekcja": "opis",
+            "czesc": "nasiona"
+          },
+          {
+            "tekst": "Owoce tej rosliny mają postać pojedynczych, jednonasiennych strąków.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s863"
+            ],
+            "sekcja": "opis",
+            "czesc": "owoce"
+          },
+          {
+            "tekst": "Cienkie, papierowate i eliptyczne do podłużnych strąki zawierają od jednego do trzech nasion.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s874"
+            ],
+            "sekcja": "opis",
+            "czesc": "owoce"
+          }
+        ]
+      }
+    ],
+    "duplikaty": []
+  },
+  "url": {
+    "Pokrój": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Haematoxylon_campechianum0.jpg",
+    "Kwiaty": "https://upload.wikimedia.org/wikipedia/commons/7/70/Haematoxylon_campechianum_flofru.jpg",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Haematoxylon_campechianum_feuille.jpg/960px-Haematoxylon_campechianum_feuille.jpg",
+    "Korzeń": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Haematoxylum_campechianum_kz07.jpg/960px-Haematoxylum_campechianum_kz07.jpg",
+    "Kora": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Blodwood_tree%27s_bark_2.jpg/960px-Blodwood_tree%27s_bark_2.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-14",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Haematoxylon_campechianum0.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Haematoxylon_campechianum0.jpg",
+        "autor": "Kurt Stüber [1]",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Haematoxylon_campechianum_flofru.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Haematoxylon_campechianum_flofru.jpg",
+        "autor": "Reefmonky",
+        "licencja": "CC BY 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Haematoxylon_campechianum_feuille.jpg/960px-Haematoxylon_campechianum_feuille.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Haematoxylon_campechianum_feuille.jpg",
+        "autor": "Pancrat",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Korzeń",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Haematoxylum_campechianum_kz07.jpg/960px-Haematoxylum_campechianum_kz07.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Haematoxylum_campechianum_kz07.jpg",
+        "autor": "Krzysztof Ziarnek, Kenraiz",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kora",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Blodwood_tree%27s_bark_2.jpg/960px-Blodwood_tree%27s_bark_2.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Blodwood_tree%27s_bark_2.jpg",
+        "autor": "Yakshitha",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      }
     ]
   }
 }

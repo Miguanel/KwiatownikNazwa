@@ -3,18 +3,71 @@
  "opis": "Kronika Siedziby Kwiatownika - pisze ja agent wdrozen (Siedziba).",
  "wpisy": [
   {
-   "data": "2026-10-14T16:20:37+02:00",
-   "tytul": "Nowa wiedza o 1 roślinie",
-   "opis": "Siedziba zebrała 10 sprawdzonych informacji (źródła: francuskie). 5 informacji z sieci trafiło do właściwych rozdziałów i podrozdziałów stron roślin.",
+   "data": "2026-10-14T17:45:32+02:00",
+   "tytul": "Nowa wiedza o 6 roślinach",
+   "opis": "Siedziba zebrała 171 sprawdzonych informacji (źródła: niemieckie, angielskie, francuskie, japońskie, chińskie). 35 informacji z sieci trafiło do właściwych rozdziałów i podrozdziałów stron roślin. Dodano 5 zdjęć z Wikimedia Commons.",
    "liczby": {
-    "informacje": 10,
+    "informacje": 171,
     "przepisy": 0,
-    "rosliny": 1,
+    "rosliny": 6,
     "nowe_rosliny": 0,
-    "zdjecia": 0,
-    "rozmieszczone": 5
+    "zdjecia": 5,
+    "rozmieszczone": 35
    },
    "rosliny": [
+    {
+     "id": "modrzejec_kampechanski",
+     "nazwa": "Modrzejec kampechiański (Logwood)",
+     "nowe": 62,
+     "jezyki": [
+      "de",
+      "en",
+      "ja",
+      "zh"
+     ]
+    },
+    {
+     "id": "rumianek_pospolity",
+     "nazwa": "Rumianek pospolity",
+     "nowe": 35,
+     "jezyki": [
+      "de",
+      "en",
+      "ja",
+      "zh"
+     ]
+    },
+    {
+     "id": "mlecz_zwyczajny",
+     "nazwa": "Mlecz zwyczajny",
+     "nowe": 22,
+     "jezyki": [
+      "de",
+      "en",
+      "ja",
+      "zh"
+     ]
+    },
+    {
+     "id": "kasztanowiec",
+     "nazwa": "Kasztanowiec zwyczajny/pospolity",
+     "nowe": 21,
+     "jezyki": [
+      "de",
+      "ja",
+      "zh"
+     ]
+    },
+    {
+     "id": "poziomka",
+     "nazwa": "Poziomka pospolita",
+     "nowe": 21,
+     "jezyki": [
+      "de",
+      "en",
+      "zh"
+     ]
+    },
     {
      "id": "jastrzebiec_kosmaczek",
      "nazwa": "Jastrzębiec kosmaczek",
@@ -24,7 +77,12 @@
      ]
     }
    ],
-   "przepisy": []
+   "przepisy": [],
+   "aktualizacje": 2,
+   "godziny": [
+    "16:20",
+    "17:45"
+   ]
   },
   {
    "data": "2026-10-09T18:30:05+02:00",

@@ -12,9 +12,9 @@
   "_siedziba_nowa": true,
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-10-05",
-    "uporzadkowano": "2026-10-05",
-    "uklad": "llm:gemini/gemini-3.6-flash",
+    "zaktualizowano": "2026-10-14",
+    "uporzadkowano": "2026-10-14",
+    "uklad": "deterministyczny: pominiete informacje: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",
     "zrodla": [
       {
         "nazwa": "Wikipedia (pl): Kasztanowiec pospolity",
@@ -24,45 +24,100 @@
         "nr": 1
       },
       {
+        "nazwa": "Wikipedia (de): Gewöhnliche Rosskastanie",
+        "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche_Rosskastanie",
+        "jezyk": "de",
+        "typ": "wikipedia",
+        "nr": 2
+      },
+      {
         "nazwa": "Wikipedia (en): Aesculus hippocastanum",
         "url": "https://en.wikipedia.org/wiki/Aesculus_hippocastanum",
         "jezyk": "en",
         "typ": "wikipedia",
-        "nr": 2
+        "nr": 3
+      },
+      {
+        "nazwa": "Wikipedia (ja): セイヨウトチノキ",
+        "url": "https://ja.wikipedia.org/wiki/%E3%82%BB%E3%82%A4%E3%83%A8%E3%82%A6%E3%83%88%E3%83%81%E3%83%8E%E3%82%AD",
+        "jezyk": "ja",
+        "typ": "wikipedia",
+        "nr": 4
+      },
+      {
+        "nazwa": "Wikipedia (zh): 欧洲七叶树",
+        "url": "https://zh.wikipedia.org/wiki/%E6%AC%A7%E6%B4%B2%E4%B8%83%E5%8F%B6%E6%A0%91",
+        "jezyk": "zh",
+        "typ": "wikipedia",
+        "nr": 5
+      },
+      {
+        "nazwa": "www.webmd.com",
+        "url": "https://www.webmd.com/vitamins-supplements/horse-chestnut",
+        "jezyk": "en",
+        "typ": "strona",
+        "nr": 6
       }
     ],
     "sekcje": [
       {
         "klucz": "opis",
         "tytul": "Opis i wygląd",
-        "podsumowanie": "Kasztanowiec tworzy kolczaste owoce z lśniącymi nasionami oraz białe kwiaty ozdobione plamkami, bezpieczne dla pszczół miodnych. Lepka substancja chroniąca pąki wydzielana jest przez specjalne gruczoły.",
-        "podsumowanie_zrodla": [
-          1,
-          2
-        ],
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Owocem jest zielona, kolczasta torebka zawierająca jedno lub rzadziej dwa do trzech lśniących, orzechowatych nasion z białawą blizną u podstawy.",
-            "czesc": "owoce",
+            "tekst": "Drewno kasztanowca jest umiarkowanie lekkie, jednorodne i miękkie, trudno łupliwe oraz ma przyjemny, aromatyczny zapach przypominający tarte bulwy ziemniaków.",
+            "czesc": null,
             "zrodla": [
-              2
+              1
             ],
             "fakty": [
-              "s448"
+              "s596"
             ]
           },
           {
-            "tekst": "Płatki kwiatów są zazwyczaj białe z żółtą lub różową plamą u podstawy, a ich pyłek nie jest trujący dla pszczół miodnych.",
+            "tekst": "Płatki kwiatów kasztanowca są zazwyczaj białe, z żółtą lub różową plamą u podstawy. Pyłek tej rośliny nie jest trujący dla pszczół miodnych.",
             "czesc": "kwiaty",
             "zrodla": [
-              2
+              3
             ],
             "fakty": [
               "s447"
             ]
           },
           {
-            "tekst": "Pąki posiadają charakterystyczne gruczoły (coletery), wydzielające lepką mieszaninę terpenów i śluzów pod kutykulę, która wydostaje się na zewnątrz przez spękania łusek pąka.",
+            "tekst": "Po zapyleniu przez pszczoły kwiaty zmieniają swoją barwę z początkowo żółtej na pomarańczową, a następnie na głęboką czerwień.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s466"
+            ]
+          },
+          {
+            "tekst": "Po opadnięciu liści na gałązkach pozostają charakterystyczne ślady o kształcie podkowy, które posiadają siedem punktów przypominających gwoździe.",
+            "czesc": "liście",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s465"
+            ]
+          },
+          {
+            "tekst": "Owocem jest zielona, kolczasta torebka zawierająca jedno lub rzadziej dwa do trzech lścigłych, orzechowatych nasion z białawą blizną u podstawy.",
+            "czesc": "owoce",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s448"
+            ]
+          },
+          {
+            "tekst": "Charakterystyczną cechę pąków stanowią gruczoły (coletery), które wydzielają lepką mieszaninę terpenów i śluzów do przestrzeni pod kutykulą. Mieszanka ta wydostaje się na zewnątrz przez spękania barki pąka.",
             "czesc": "pąki",
             "zrodla": [
               1
@@ -80,13 +135,41 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Gatunek pochodzi z Półwyspu Bałkańskiego, gdzie rośnie nielicznie w lasach i jest uznawany za narażony na wyginięcie. W Europie rozprzestrzenił się w XVI i XVII wieku w czasie ekspansji tureckiej.",
+            "tekst": "Pochodzi z Półwyspu Bałkańskiego, gdzie rośnie nielicznie w lasach i jest uznawany za gatunek narażony na wyginięcie. W Europie rozprzestrzenił się w XVI i XVII wieku podczas ekspansji tureckiej.",
             "czesc": null,
             "zrodla": [
               1
             ],
             "fakty": [
               "s440"
+            ]
+          },
+          {
+            "tekst": "Kompaktowa, dziko rosnąca populacja kasztanowca w Bułgarii ogranicza się do zaledwie 9 hektarów w Górach Presławskich i jest krytycznie zagrożona w skali kraju oraz chroniona jako rezerwat.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s453"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Kora kasztanowca charakteryzuje się dużą zawartością kumaryn, takich jak eskulina, eskuletyna, fraksyna i skopoletyna, a także tanin, saponin i flawonoidów.",
+            "czesc": "kora",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s597"
             ]
           }
         ]
@@ -98,13 +181,107 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Ekstrakt z nasion standaryzowany na około 20% escyny jest tradycyjnie stosowany ze względu na korzystny wpływ na napięcie naczyń żylnych.",
+            "tekst": "W tradycyjnych lekach liście kasztanowca stosowano zwalczać kaszel i gorączkę oraz łagodzić ból związany z artretyzmem i reumatyzmem.",
+            "czesc": "liście",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s461"
+            ]
+          },
+          {
+            "tekst": "Ekstrakt z nasion kasztanowca standaryzowany na około 20 procent escyny jest tradycyjnie stosowany ze względu na jego wpływ na napięcie naczyń żylnych.",
             "czesc": "nasiona",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s451"
+            ]
+          },
+          {
+            "tekst": "Współczesne badania kliniczne wykazały, że eskyna jest skuteczniejsza niż pończochy uciskowe w zmniejszaniu opuchlizny u pacjentów z zaburzeniami krążenia.",
+            "czesc": "nasiona",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s464"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "medycyna_wschodu",
+        "tytul": "Medycyna chińska, kampo, ajurweda",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Kora kasztanowca była stosowana jako zamiennik dla chinarodziny w leczeniu chorób takich jak wechselfever.",
+            "czesc": "kora",
             "zrodla": [
               2
             ],
             "fakty": [
-              "s451"
+              "s456"
+            ]
+          },
+          {
+            "tekst": "Nasiona kasztanowca zawierają duże ilości saponin znanych jako eskyna (po chińsku: Qīyè sù). W medycynie chińskiej stosuje się je zewnętrznie do wzmacniania żył i poprawiania krążenia w kończynach dolnych.",
+            "czesc": "nasiona",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s458"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "barwienie",
+        "tytul": "Barwienie i rzemiosło",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Nasiona kasztanowca mogą być wykorzystywane do sporządzania domowego detergentu do prania.",
+            "czesc": "nasiona",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s452"
+            ]
+          },
+          {
+            "tekst": "Dawniej w Francji i Szwajcarii obrane, starte lub wysuszone owoce służyły jako środek do odplamiania i prania tkanin lnianych oraz wełnianych ze względu na zawartość substancji mydlanych.",
+            "czesc": "nasiona",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s467"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kosmetyka",
+        "tytul": "Kosmetyka",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Eskyna wykazuje działanie przeciwzapalne i uspokajające, które pomaga zwiększyć odporność skóry i zmniejszyć ryzyko wystąpienia problemów skórnych u osób o powrażliwej cerze.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s460"
             ]
           }
         ]
@@ -116,10 +293,20 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Angielska nazwa zwyczajowa „horse chestnut” narodziła się z podobieństwa liści i owoców do kasztana jadalnego oraz dawnych obserwacji, według których owoce lub nasiona miały pomagać koniom cierpiącym na zadyszkę lub kaszel.",
+            "tekst": "Kasztanowiec zwyczajny został wprowadzony do Europy przez Osmanków, którzy używali jego nasion jako pokarm dla koni i leczniczo wobec kaszlu u koni.",
             "czesc": null,
             "zrodla": [
               2
+            ],
+            "fakty": [
+              "s455"
+            ]
+          },
+          {
+            "tekst": "Angielska nazwa zwyczajowa \"horse chestnut\" wzięła się z podobieństwa liści i owoców do kasztana jadalnego oraz z dawnych obserwacji, że owoce lub nasiona miały pomagać koniom cierpiącym na zadyszkę lub kaszel.",
+            "czesc": null,
+            "zrodla": [
+              3
             ],
             "fakty": [
               "s449"
@@ -134,17 +321,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Kasztanowce stanowią symbol Kijowa, natomiast w Bawarii tradycyjnie sadzono je nad piwnicami piwiarni, aby chronić ziemię przed nadmiernym nagrzewaniem.",
-            "czesc": null,
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s446"
-            ]
-          },
-          {
-            "tekst": "Okaz rosnący przed ukryciem Anny Frank w Amsterdamie stał się symbolem Holokaustu, a z jego nasion pozyskano potomstwo sadzone przed muzeami pamięci Zagłady.",
+            "tekst": "Kasztanowiec rosnący przed ukrytym mieszkaniem Anny Frank w Amsterdamie stał się symbolem Holokaustu. Po jego złamaniu w 2010 roku z jego nasion uzyskano potomstwo, które sadzone jest przed muzeami pamięci Zagłady.",
             "czesc": null,
             "zrodla": [
               1
@@ -154,13 +331,43 @@
             ]
           },
           {
-            "tekst": "Na wsiach, zwłaszcza na Podlasiu, noszono kasztany w kieszeniach dla złagodzenia bólów reumatycznych i artretycznych, a także układano nasiona w woreczkach pod łóżkami, wierząc w ich ochronę przed promieniowaniem geopatycznym.",
+            "tekst": "Kasztanowce pospolicie rosnące w Kijowie stały się symbolem tego miasta. W Bawarii drzewa te stały się tradycyjnie sadzone nad piwnicami piwiarni jako ochrona przed nadmiernym nagrzewaniem ziemi.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s446"
+            ]
+          },
+          {
+            "tekst": "Na wsiach, zwłaszcza na Podlasiu, noszono kasztany w kieszeniach, aby złagodzić bóle reumatyczne i artretyczne. Wierzono również, że nasiona chronią przed szkodliwym promieniowaniem geotycznym, dlatego układano je w lnianych woreczkach pod łóżkami.",
             "czesc": "nasiona",
             "zrodla": [
               1
             ],
             "fakty": [
               "s443"
+            ]
+          },
+          {
+            "tekst": "W Anglii i Irlandii dzieci wykorzystują nasiona do tradycyjnej gry polegającej na rozbijaniu nawzajem zawieszonych na sznurku orzechów.",
+            "czesc": "nasiona",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s468"
+            ]
+          },
+          {
+            "tekst": "Wśród ludności panuje przesąd, że umieszczenie nasion kasztanowca w pokoju gościnnym pomaga w odstraszaniu pająków.",
+            "czesc": "nasiona",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s469"
             ]
           }
         ]
@@ -172,17 +379,67 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Surowe nasiona, liście, kora i kwiaty są toksyczne ze względu na obecność aesculiny, glikozydów oraz saponin, co skłoniło amerykańską Agencję ds. Żywności i Leków do sklasyfikowania nasion jako ziele niebezpieczne.",
+            "tekst": "Surowe nasiona, liście, kora i kwiaty kasztanowca są toksyczne ze względu na obecność aesculiny, glikozydów i saponin, przez co amerykańska Agencja ds. Żywności i Leków klasyfikuje nasiona jako ziele niebezpieczne.",
             "czesc": null,
             "zrodla": [
-              2
+              3
             ],
             "fakty": [
               "s450"
             ]
           },
           {
-            "tekst": "Niedojrzałe owoce wykazuja największą toksyczność dla ludzi z powodu maksymalnego stężenia saponin; ich spożycie prowadzi do dolegliwości żołądkowo-jelitowych, a w ciężkich przypadkach do porażenia mięśni oddechowych i zgonu.",
+            "tekst": "Stosowanie maści i żeli na bazie kasztanowca jest uznawane za bezpieczne, ale osoby z chorobami nerek lub wątroby oraz kobiety w ciąży lub karmiące piersią powinny unikać tego produktu.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s463"
+            ]
+          },
+          {
+            "tekst": "Eskyna jest toksyczna przy przyjęciu doustnym, jednak składnik ten jest nietrwały termicznie. Po ugotowaniu lub parowaniu nasiona stają się jadalne dzięki obecności skrobi.",
+            "czesc": "nasiona",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s459"
+            ]
+          },
+          {
+            "tekst": "Osoby uczulone na escynę, kasztanowiec zwyczajny, kasztan hiszpański lub na jakikolwiek składnik danego produktu nie powinny go zażywać.",
+            "czesc": "nasiona",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s495"
+            ]
+          },
+          {
+            "tekst": "Przed zastosowaniem suplementów z kasztanowca należy poinformować lekarza o przebytych lub obecnych problemach z nerkami lub wątrobą oraz o zakrzepach krwi.",
+            "czesc": "nasiona",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s496"
+            ]
+          },
+          {
+            "tekst": "Nie wiadomo, jak kasztanowiec wpływa na ciążę lub nienarodzone dziecko oraz czy przenika do mleka matki, dlatego kobiety w ciąży i karmiące powinny skonsultować jego stosowanie z lekarzem.",
+            "czesc": "nasiona",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s497"
+            ]
+          },
+          {
+            "tekst": "Niedojrzałe owoce są najbardziej toksyczne dla ludzi ze względu na wysokie stężenie saponin, które w tym okresie osiąga maksimum. Spożycie prowadzi do dolegliwości żółdkowo-jelitowych, a w ciężkich przypadkach do porażenia mięśni oddechowych i zgonu.",
             "czesc": "owoce",
             "zrodla": [
               1
@@ -192,22 +449,59 @@
             ]
           }
         ]
+      },
+      {
+        "klucz": "ciekawostki",
+        "tytul": "Ciekawostki",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Kasztanowiec zwyczajny jest popularnym i cenionym obiektem wykorzystywanym w sztuce bonsai.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s454"
+            ]
+          }
+        ]
       }
     ],
     "czesci": {
+      "kwiaty": [
+        "s447",
+        "s466"
+      ],
+      "liście": [
+        "s465",
+        "s461"
+      ],
       "owoce": [
         "s448",
         "s442"
       ],
-      "kwiaty": [
-        "s447"
-      ],
       "pąki": [
         "s441"
       ],
+      "kora": [
+        "s597",
+        "s456"
+      ],
       "nasiona": [
         "s451",
-        "s443"
+        "s464",
+        "s458",
+        "s452",
+        "s467",
+        "s443",
+        "s468",
+        "s469",
+        "s459",
+        "s495",
+        "s496",
+        "s497"
       ]
     },
     "fakty": [
@@ -220,7 +514,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Kasztanowiec pospolity",
           "url": "https://pl.wikipedia.org/wiki/Kasztanowiec_pospolity"
-        }
+        },
+        "cytat": "Pochodzi z Półwyspu Bałkańskiego, gdzie rośnie bardzo nielicznie w lasach i uznawany jest za gatunek narażony na wyginięcie. Został rozprzestrzeniony w czasie ekspansji tureckiej w Europie w XVI i XVII wieku"
       },
       {
         "id": "s441",
@@ -231,7 +526,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Kasztanowiec pospolity",
           "url": "https://pl.wikipedia.org/wiki/Kasztanowiec_pospolity"
-        }
+        },
+        "cytat": "Charakterystyczne dla kasztanowca pospolitego są koletery – gruczoły obecne na łuskach pąków. Wydzielają one lepką mieszaninę terpenów i śluzów do przestrzeni znajdujących się pod kutykulą, skąd wydostaje się ona przez jej spękania na zewną"
       },
       {
         "id": "s442",
@@ -242,7 +538,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Kasztanowiec pospolity",
           "url": "https://pl.wikipedia.org/wiki/Kasztanowiec_pospolity"
-        }
+        },
+        "cytat": "Ze względu na duże stężenie saponin najbardziej toksyczne dla ludzi są niedojrzałe owoce (najwyższe stężenia występują w nich od połowy lipca do połowy września)..."
       },
       {
         "id": "s443",
@@ -253,7 +550,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Kasztanowiec pospolity",
           "url": "https://pl.wikipedia.org/wiki/Kasztanowiec_pospolity"
-        }
+        },
+        "cytat": "Jedną z kultywowanych tradycji pochodzących z terenów wiejskich, zwłaszcza Podlasia, jest noszenie w kieszeniach kasztanów dla łagodzenia bóli artretycznych i reumatycznych. Nasiona kasztanowca są też używane jako naturalne „odpromienniki” "
       },
       {
         "id": "s445",
@@ -264,7 +562,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Kasztanowiec pospolity",
           "url": "https://pl.wikipedia.org/wiki/Kasztanowiec_pospolity"
-        }
+        },
+        "cytat": "Do znanych drzew tego gatunku należał kasztanowiec rosnący przed miejscem ukrywania się Anne Frank w Amsterdamie... Drzewo-symbol zostało powalone przez wiatr i ulewę w 2010, jednak wcześniej udało się pozyskać z niego nasiona i uzyskać pot"
       },
       {
         "id": "s446",
@@ -275,7 +574,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Kasztanowiec pospolity",
           "url": "https://pl.wikipedia.org/wiki/Kasztanowiec_pospolity"
-        }
+        },
+        "cytat": "Kasztanowce masowo rosnące w Kijowie na Ukrainie stały się symbolem tego miasta. Gatunek ten jest też typowy dla ogrodów piwnych w Bawarii..."
       },
       {
         "id": "s447",
@@ -286,7 +586,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (en): Aesculus hippocastanum",
           "url": "https://en.wikipedia.org/wiki/Aesculus_hippocastanum"
-        }
+        },
+        "cytat": "The petals are usually white with a yellow to pink blotch at the base. The pollen is not poisonous for honey bees."
       },
       {
         "id": "s448",
@@ -297,7 +598,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (en): Aesculus hippocastanum",
           "url": "https://en.wikipedia.org/wiki/Aesculus_hippocastanum"
-        }
+        },
+        "cytat": "The shell is a green, spiky capsule containing one (rarely two or three) nut-like seeds called conkers or horse-chestnuts. Each conker is 2–4 cm (0.8–1.6 in) in diameter, glossy nut-brown with a whitish scar at the base."
       },
       {
         "id": "s449",
@@ -308,7 +610,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (en): Aesculus hippocastanum",
           "url": "https://en.wikipedia.org/wiki/Aesculus_hippocastanum"
-        }
+        },
+        "cytat": "The common name horse chestnut originates from the similarity of the leaves and fruits to sweet chestnuts, Castanea sativa (a tree in a different family, the Fagaceae), together with the alleged observation that the fruit or seeds could hel"
       },
       {
         "id": "s450",
@@ -319,7 +622,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (en): Aesculus hippocastanum",
           "url": "https://en.wikipedia.org/wiki/Aesculus_hippocastanum"
-        }
+        },
+        "cytat": "Raw horse chestnut seed, leaf, bark and flower are toxic due to the presence of aesculin and should not be ingested. Horse chestnut seed is classified by the US Food and Drug Administration as an unsafe herb. The glycoside and saponin const"
       },
       {
         "id": "s451",
@@ -330,13 +634,266 @@
         "zrodlo": {
           "nazwa": "Wikipedia (en): Aesculus hippocastanum",
           "url": "https://en.wikipedia.org/wiki/Aesculus_hippocastanum"
-        }
+        },
+        "cytat": "The seed extract standardized to around 20 percent aescin is possibly useful in traditional medicine for its effect on venous tone."
+      },
+      {
+        "id": "s452",
+        "sekcja": "barwienie",
+        "czesc": "nasiona",
+        "tekst": "Nasiona kasztanowca mogą być wykorzystywane do sporządzania domowego detergentu do prania.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Aesculus hippocastanum",
+          "url": "https://en.wikipedia.org/wiki/Aesculus_hippocastanum"
+        },
+        "cytat": "Conkers can be used to produce homemade laundry detergent."
+      },
+      {
+        "id": "s453",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Kompaktowa, dziko rosnąca populacja kasztanowca w Bułgarii ogranicza się do zaledwie 9 hektarów w Górach Presławskich i jest krytycznie zagrożona w skali kraju oraz chroniona jako rezerwat.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Aesculus hippocastanum",
+          "url": "https://en.wikipedia.org/wiki/Aesculus_hippocastanum"
+        },
+        "cytat": "The compact native population of horse chestnut in Bulgaria is distinct from the horse chestnut forests of northern Greece, western North Macedonia and Albania. It is limited to an area of 9 ha (22 acres) in the Preslav Mountain... Bulgaria"
+      },
+      {
+        "id": "s454",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Kasztanowiec zwyczajny jest popularnym i cenionym obiektem wykorzystywanym w sztuce bonsai.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Aesculus hippocastanum",
+          "url": "https://en.wikipedia.org/wiki/Aesculus_hippocastanum"
+        },
+        "cytat": "The horse-chestnut is a favorite subject for bonsai."
+      },
+      {
+        "id": "s455",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Kasztanowiec zwyczajny został wprowadzony do Europy przez Osmanków, którzy używali jego nasion jako pokarm dla koni i leczniczo wobec kaszlu u koni.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gewöhnliche Rosskastanie",
+          "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche_Rosskastanie"
+        },
+        "cytat": "Der deutschsprachige Trivialname Rosskastanie bezieht sich auf die Edelkastanien-ähnlichen Samen, die von den Osmanen als Pferdefutter und als Heilmittel gegen Pferdehusten mitgeführt wurden und so nach Mitteleuropa gelangten."
+      },
+      {
+        "id": "s456",
+        "sekcja": "medycyna_wschodu",
+        "czesc": "kora",
+        "tekst": "Kora kasztanowca była stosowana jako zamiennik dla chinarodziny w leczeniu chorób takich jak wechselfever.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gewöhnliche Rosskastanie",
+          "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche_Rosskastanie"
+        },
+        "cytat": "Rosskastanien-Rinde als Ersatz der Chinarinde: Ab der Mitte des 17. Jahrhunderts wurde die bitter schmeckende Chinarinde in Europa zur Behandlung von Wechselfiebern verwendet."
+      },
+      {
+        "id": "s458",
+        "sekcja": "medycyna_wschodu",
+        "czesc": "nasiona",
+        "tekst": "Nasiona kasztanowca zawierają duże ilości saponin znanych jako eskyna (po chińsku: Qīyè sù). W medycynie chińskiej stosuje się je zewnętrznie do wzmacniania żył i poprawiania krążenia w kończynach dolnych.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 欧洲七叶树",
+          "url": "https://zh.wikipedia.org/wiki/%E6%AC%A7%E6%B4%B2%E4%B8%83%E5%8F%B6%E6%A0%91"
+        },
+        "cytat": "欧洲七叶树的種子含有大量的皂素，叫做七葉素（Aescin），外用可以強化靜脈及促進下肢靜脈循環的功能"
+      },
+      {
+        "id": "s459",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "nasiona",
+        "tekst": "Eskyna jest toksyczna przy przyjęciu doustnym, jednak składnik ten jest nietrwały termicznie. Po ugotowaniu lub parowaniu nasiona stają się jadalne dzięki obecności skrobi.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 欧洲七叶树",
+          "url": "https://zh.wikipedia.org/wiki/%E6%AC%A7%E6%B4%B2%E4%B8%83%E5%8F%B6%E6%A0%91"
+        },
+        "cytat": "口服則有毒性，但此成分不耐高溫，蒸煮後種子中的澱粉可食用"
+      },
+      {
+        "id": "s460",
+        "sekcja": "kosmetyka",
+        "czesc": null,
+        "tekst": "Eskyna wykazuje działanie przeciwzapalne i uspokajające, które pomaga zwiększyć odporność skóry i zmniejszyć ryzyko wystąpienia problemów skórnych u osób o powrażliwej cerze.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 欧洲七叶树",
+          "url": "https://zh.wikipedia.org/wiki/%E6%AC%A7%E6%B4%B2%E4%B8%83%E5%8F%B6%E6%A0%91"
+        },
+        "cytat": "七葉素具有舒緩、消炎、鎮靜的效果，可提高肌膚的防護能力，減少敏感肌的發生，也常被使用在外用藥品及化妝品中"
+      },
+      {
+        "id": "s461",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "liście",
+        "tekst": "W tradycyjnych lekach liście kasztanowca stosowano zwalczać kaszel i gorączkę oraz łagodzić ból związany z artretyzmem i reumatyzmem.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 欧洲七叶树",
+          "url": "https://zh.wikipedia.org/wiki/%E6%AC%A7%E6%B4%B2%E4%B8%83%E5%8F%B6%E6%A0%91"
+        },
+        "cytat": "傳統上以其葉子治療咳嗽、發燒與減少關節炎及風濕引起的疼痛"
+      },
+      {
+        "id": "s463",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Stosowanie maści i żeli na bazie kasztanowca jest uznawane za bezpieczne, ale osoby z chorobami nerek lub wątroby oraz kobiety w ciąży lub karmiące piersią powinny unikać tego produktu.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 欧洲七叶树",
+          "url": "https://zh.wikipedia.org/wiki/%E6%AC%A7%E6%B4%B2%E4%B8%83%E5%8F%B6%E6%A0%91"
+        },
+        "cytat": "欧洲七叶树外用軟膏和凝膠使用並無毒性影響...肝臟病或腎臟病患者，以及懷孕或正在哺乳的婦女應盡量避免使用"
+      },
+      {
+        "id": "s464",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "nasiona",
+        "tekst": "Współczesne badania kliniczne wykazały, że eskyna jest skuteczniejsza niż pończochy uciskowe w zmniejszaniu opuchlizny u pacjentów z zaburzeniami krążenia.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 欧洲七叶树",
+          "url": "https://zh.wikipedia.org/wiki/%E6%AC%A7%E6%B4%B2%E4%B8%83%E5%8F%B6%E6%A0%91"
+        },
+        "cytat": "德國海德堡大學醫學院研究人員對 240 個位有循環困擾的受試者進行12週測驗，驚人的發現使用七葉素相較穿著壓力襪的受試者，使用七葉素患者對於降低浮腫狀況較有成效"
+      },
+      {
+        "id": "s465",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Po opadnięciu liści na gałązkach pozostają charakterystyczne ślady o kształcie podkowy, które posiadają siedem punktów przypominających gwoździe.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): セイヨウトチノキ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%BB%E3%82%A4%E3%83%A8%E3%82%A6%E3%83%88%E3%83%81%E3%83%8E%E3%82%AD"
+        },
+        "cytat": "葉が落ちた後に枝に残る葉痕は、7つの「爪」を備えた特徴的な馬蹄形になる。"
+      },
+      {
+        "id": "s466",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Po zapyleniu przez pszczoły kwiaty zmieniają swoją barwę z początkowo żółtej na pomarańczową, a następnie na głęboką czerwień.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): セイヨウトチノキ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%BB%E3%82%A4%E3%83%A8%E3%82%A6%E3%83%88%E3%83%81%E3%83%8E%E3%82%AD"
+        },
+        "cytat": "蜜を吸われた花は、花色を黄色からオレンジ色、深紅色へと変え、ミツバチに他の花へいくように教えている。"
+      },
+      {
+        "id": "s467",
+        "sekcja": "barwienie",
+        "czesc": "nasiona",
+        "tekst": "Dawniej w Francji i Szwajcarii obrane, starte lub wysuszone owoce służyły jako środek do odplamiania i prania tkanin lnianych oraz wełnianych ze względu na zawartość substancji mydlanych.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): セイヨウトチノキ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%BB%E3%82%A4%E3%83%A8%E3%82%A6%E3%83%88%E3%83%81%E3%83%8E%E3%82%AD"
+        },
+        "cytat": "かつて、トチの実はフランスやスイスで麻や亜麻、絹、羊毛等の脱色に用いられていた。石鹸分を含むため、6リットルの水当たり20個の実の皮をむいてやすりをかけるか乾燥させ、石臼で挽いてリンネルや毛織物等の洗濯に利用されていた。"
+      },
+      {
+        "id": "s468",
+        "sekcja": "kultura",
+        "czesc": "nasiona",
+        "tekst": "W Anglii i Irlandii dzieci wykorzystują nasiona do tradycyjnej gry polegającej na rozbijaniu nawzajem zawieszonych na sznurku orzechów.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): セイヨウトチノキ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%BB%E3%82%A4%E3%83%A8%E3%82%A6%E3%83%88%E3%83%81%E3%83%8E%E3%82%AD"
+        },
+        "cytat": "イギリスやアイルランドでは、種子が子供の遊びに使われている。種子は英語で conker（コンカー）といい、子供たちはこれを使って「コンカーズ」という遊びをする。"
+      },
+      {
+        "id": "s469",
+        "sekcja": "kultura",
+        "czesc": "nasiona",
+        "tekst": "Wśród ludności panuje przesąd, że umieszczenie nasion kasztanowca w pokoju gościnnym pomaga w odstraszaniu pająków.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): セイヨウトチノキ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%BB%E3%82%A4%E3%83%A8%E3%82%A6%E3%83%88%E3%83%81%E3%83%8E%E3%82%AD"
+        },
+        "cytat": "なお、トチの実は、客間に飾るとクモを避けるという迷信がある。"
+      },
+      {
+        "id": "s495",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "nasiona",
+        "tekst": "Osoby uczulone na escynę, kasztanowiec zwyczajny, kasztan hiszpański lub na jakikolwiek składnik danego produktu nie powinny go zażywać.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "www.webmd.com",
+          "url": "https://www.webmd.com/vitamins-supplements/horse-chestnut"
+        },
+        "cytat": "People who are allergic to any of the following should not take horse chestnut. - Aescin - Aesculus hippocastanum - Escin - Horse chestnut - Spanish chestnut - Any of the ingredients in the specific product"
+      },
+      {
+        "id": "s496",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "nasiona",
+        "tekst": "Przed zastosowaniem suplementów z kasztanowca należy poinformować lekarza o przebytych lub obecnych problemach z nerkami lub wątrobą oraz o zakrzepach krwi.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "www.webmd.com",
+          "url": "https://www.webmd.com/vitamins-supplements/horse-chestnut"
+        },
+        "cytat": "Tell your health care provider if you have any of the following. - Blood clots (venous thrombembolism) - Kidney or liver problems"
+      },
+      {
+        "id": "s497",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "nasiona",
+        "tekst": "Nie wiadomo, jak kasztanowiec wpływa na ciążę lub nienarodzone dziecko oraz czy przenika do mleka matki, dlatego kobiety w ciąży i karmiące powinny skonsultować jego stosowanie z lekarzem.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "www.webmd.com",
+          "url": "https://www.webmd.com/vitamins-supplements/horse-chestnut"
+        },
+        "cytat": "It is not known if or how horse chestnut could affect pregnancy or harm an unborn baby. Tell your health care provider if you are pregnant or plan to become pregnant. It is not known if horse chestnut passes into breast milk."
+      },
+      {
+        "id": "s596",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Drewno kasztanowca jest umiarkowanie lekkie, jednorodne i miękkie, trudno łupliwe oraz ma przyjemny, aromatyczny zapach przypominający tarte bulwy ziemniaków.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Kasztanowiec pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Kasztanowiec_pospolity"
+        },
+        "cytat": "Drewno jest umiarkowanie lekkie, jednorodne i miękkie, jego gęstość w stanie suchym wynosi według różnych źródeł od 460 do 550 kg/m³, jest trudno łupliwe. Ma przyjemny, aromatyczny zapach, opisywany też jako przypominający zapach tartych bu"
+      },
+      {
+        "id": "s597",
+        "sekcja": "sklad",
+        "czesc": "kora",
+        "tekst": "Kora kasztanowca charakteryzuje się dużą zawartością kumaryn, takich jak eskulina, eskuletyna, fraksyna i skopoletyna, a także tanin, saponin i flawonoidów.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Kasztanowiec pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Kasztanowiec_pospolity"
+        },
+        "cytat": "Kora cechuje się dużą zawartością kumaryn takich jak: eskulina, eskuletyna, fraksyna, skopoletyna, a poza tym: tanin, saponin i flawonoidów."
       }
     ]
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-05",
+    "zaktualizowano": "2026-10-14",
     "pola": {
       "identyfikacja.cechy_kluczowe": {
         "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
@@ -344,25 +901,52 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Owocem jest zielona, kolczasta torebka zawierająca jedno lub rzadziej dwa do trzech lśniących, orzechowatych nasion z białawą blizną u podstawy.",
+            "tekst": "Drewno kasztanowca jest umiarkowanie lekkie, jednorodne i miękkie, trudno łupliwe oraz ma przyjemny, aromatyczny zapach przypominający tarte bulwy ziemniaków.",
             "zrodla": [
-              2
+              1
             ],
             "fakty": [
-              "s448"
+              "s596"
             ]
           },
           {
-            "tekst": "Płatki kwiatów są zazwyczaj białe z żółtą lub różową plamą u podstawy, a ich pyłek nie jest trujący dla pszczół miodnych.",
+            "tekst": "Płatki kwiatów kasztanowca są zazwyczaj białe, z żółtą lub różową plamą u podstawy. Pyłek tej rośliny nie jest trujący dla pszczół miodnych.",
             "zrodla": [
-              2
+              3
             ],
             "fakty": [
               "s447"
             ]
           },
           {
-            "tekst": "Pąki posiadają charakterystyczne gruczoły (coletery), wydzielające lepką mieszaninę terpenów i śluzów pod kutykulę, która wydostaje się na zewnątrz przez spękania łusek pąka.",
+            "tekst": "Po zapyleniu przez pszczoły kwiaty zmieniają swoją barwę z początkowo żółtej na pomarańczową, a następnie na głęboką czerwień.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s466"
+            ]
+          },
+          {
+            "tekst": "Po opadnięciu liści na gałązkach pozostają charakterystyczne ślady o kształcie podkowy, które posiadają siedem punktów przypominających gwoździe.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s465"
+            ]
+          },
+          {
+            "tekst": "Owocem jest zielona, kolczasta torebka zawierająca jedno lub rzadziej dwa do trzech lścigłych, orzechowatych nasion z białawą blizną u podstawy.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s448"
+            ]
+          },
+          {
+            "tekst": "Charakterystyczną cechę pąków stanowią gruczoły (coletery), które wydzielają lepką mieszaninę terpenów i śluzów do przestrzeni pod kutykulą. Mieszanka ta wydostaje się na zewnątrz przez spękania barki pąka.",
             "zrodla": [
               1
             ],
@@ -371,8 +955,143 @@
             ]
           }
         ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "bb7297575771bfd8"
+        "model": "bez LLM: brak modelu",
+        "wejscie": "05562828496f49b3"
+      },
+      "czesci_rosliny.kora.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Kora (nowa część z sieci): Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Kora kasztanowca charakteryzuje się dużą zawartością kumaryn, takich jak eskulina, eskuletyna, fraksyna i skopoletyna, a także tanin, saponin i flawonoidów.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s597"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "a0950c11058fffd1"
+      },
+      "czesci_rosliny.liście.wlasciwości": {
+        "tytul": "Surowce i zbiory - Liście (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "W tradycyjnych lekach liście kasztanowca stosowano zwalczać kaszel i gorączkę oraz łagodzić ból związany z artretyzmem i reumatyzmem.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s461"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "df681b1abc5197e5"
+      },
+      "czesci_rosliny.nasiona.wlasciwości": {
+        "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Ekstrakt z nasion kasztanowca standaryzowany na około 20 procent escyny jest tradycyjnie stosowany ze względu na jego wpływ na napięcie naczyń żylnych.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s451"
+            ]
+          },
+          {
+            "tekst": "Współczesne badania kliniczne wykazały, że eskyna jest skuteczniejsza niż pończochy uciskowe w zmniejszaniu opuchlizny u pacjentów z zaburzeniami krążenia.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s464"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "83cc6ca93e874059"
+      },
+      "profil_energetyczny.opis": {
+        "tytul": "Natura i siedlisko - Opis energetyczny",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Kora kasztanowca była stosowana jako zamiennik dla chinarodziny w leczeniu chorób takich jak wechselfever.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s456"
+            ]
+          },
+          {
+            "tekst": "Nasiona kasztanowca zawierają duże ilości saponin znanych jako eskyna (po chińsku: Qīyè sù). W medycynie chińskiej stosuje się je zewnętrznie do wzmacniania żył i poprawiania krążenia w kończynach dolnych.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s458"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "813f8e47368daa08"
+      },
+      "zastosowanie.rzemieslnicze": {
+        "tytul": "Praktyczne zastosowanie - Rzemiosło",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Nasiona kasztanowca mogą być wykorzystywane do sporządzania domowego detergentu do prania.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s452"
+            ]
+          },
+          {
+            "tekst": "Dawniej w Francji i Szwajcarii obrane, starte lub wysuszone owoce służyły jako środek do odplamiania i prania tkanin lnianych oraz wełnianych ze względu na zawartość substancji mydlanych.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s467"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "f9335e8423999969"
+      },
+      "zastosowanie.kosmetyczne": {
+        "tytul": "Praktyczne zastosowanie - Kosmetyka",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Eskyna wykazuje działanie przeciwzapalne i uspokajające, które pomaga zwiększyć odporność skóry i zmniejszyć ryzyko wystąpienia problemów skórnych u osób o powrażliwej cerze.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s460"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "667dc01fd3267ae7"
       },
       "ciekawostki": {
         "tytul": "Wiedza tajemna - Ciekawostki",
@@ -380,43 +1099,25 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Gatunek pochodzi z Półwyspu Bałkańskiego, gdzie rośnie nielicznie w lasach i jest uznawany za narażony na wyginięcie.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s440"
-            ]
-          },
-          {
-            "tekst": "W Europie roślina rozprzestrzeniła się w XVI i XVII wieku w czasie ekspansji tureckiej.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s440"
-            ]
-          },
-          {
-            "tekst": "Angielska nazwa zwyczajowa „horse chestnut” wywodzi się z podobieństwa liści i owoców do kasztana jadalnego oraz dawnych obserwacji, że owoce lub nasiona pomagać miały koniom cierpiącym na zadyszkę lub kaszel.",
+            "tekst": "Kasztanowiec zwyczajny został wprowadzony do Europy przez Osmanków, którzy używali jego nasion jako pokarm dla koni i leczniczo wobec kaszlu u koni.",
             "zrodla": [
               2
+            ],
+            "fakty": [
+              "s455"
+            ]
+          },
+          {
+            "tekst": "Angielska nazwa zwyczajowa \"horse chestnut\" wzięła się z podobieństwa liści i owoców do kasztana jadalnego oraz z dawnych obserwacji, że owoce lub nasiona miały pomagać koniom cierpiącym na zadyszkę lub kaszel.",
+            "zrodla": [
+              3
             ],
             "fakty": [
               "s449"
             ]
           },
           {
-            "tekst": "Kasztanowce stanowią symbol Kijowa, a w Bawarii tradycyjnie sadzono je nad piwnicami piwiarni, aby chronić ziemię przed nadmiernym nagrzewaniem.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s446"
-            ]
-          },
-          {
-            "tekst": "Okaz rosnący przed ukryciem Anny Frank w Amsterdamie stał się symbolem Holokaustu, a z jego nasion pozyskano potomstwo sadzone przed muzeami pamięci Zagłady.",
+            "tekst": "Kasztanowiec rosnący przed ukrytym mieszkaniem Anny Frank w Amsterdamie stał się symbolem Holokaustu. Po jego złamaniu w 2010 roku z jego nasion uzyskano potomstwo, które sadzone jest przed muzeami pamięci Zagłady.",
             "zrodla": [
               1
             ],
@@ -425,7 +1126,16 @@
             ]
           },
           {
-            "tekst": "Na wsiach, zwłaszcza na Podlasiu, noszono kasztany w kieszeniach dla złagodzenia bólów reumatycznych i artretycznych.",
+            "tekst": "Kasztanowce pospolicie rosnące w Kijowie stały się symbolem tego miasta. W Bawarii drzewa te stały się tradycyjnie sadzone nad piwnicami piwiarni jako ochrona przed nadmiernym nagrzewaniem ziemi.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s446"
+            ]
+          },
+          {
+            "tekst": "Na wsiach, zwłaszcza na Podlasiu, noszono kasztany w kieszeniach, aby złagodzić bóle reumatyczne i artretyczne. Wierzono również, że nasiona chronią przed szkodliwym promieniowaniem geotycznym, dlatego układano je w lnianych woreczkach pod łóżkami.",
             "zrodla": [
               1
             ],
@@ -434,52 +1144,52 @@
             ]
           },
           {
-            "tekst": "Nasiona układano również w woreczkach pod łóżkami, wierząc w ich ochronę przed promieniowaniem geopatycznym.",
+            "tekst": "W Anglii i Irlandii dzieci wykorzystują nasiona do tradycyjnej gry polegającej na rozbijaniu nawzajem zawieszonych na sznurku orzechów.",
             "zrodla": [
-              1
+              4
             ],
             "fakty": [
-              "s443"
+              "s468"
+            ]
+          },
+          {
+            "tekst": "Wśród ludności panuje przesąd, że umieszczenie nasion kasztanowca w pokoju gościnnym pomaga w odstraszaniu pająków.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s469"
+            ]
+          },
+          {
+            "tekst": "Kasztanowiec zwyczajny jest popularnym i cenionym obiektem wykorzystywanym w sztuce bonsai.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s454"
             ]
           }
         ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "801e34f3c3da30bd"
+        "model": "bez LLM: brak modelu",
+        "wejscie": "873666341bd52133"
       },
-      "czesci_rosliny.nasiona.wlasciwości": {
-        "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Działanie",
+      "interakcje": {
+        "tytul": "Bezpieczeństwo i interakcje - Interakcje z lekami",
         "typ": "tekst",
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Tradycyjnie stosowany ekstrakt z nasion standaryzowany na około 20% escyny wykazuje korzystny wpływ na napięcie naczyń żylnych.",
+            "tekst": "Surowe nasiona, liście, kora i kwiaty kasztanowca są toksyczne ze względu na obecność aesculiny, glikozydów i saponin, przez co amerykańska Agencja ds. Żywności i Leków klasyfikuje nasiona jako ziele niebezpieczne.",
             "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s451"
-            ]
-          }
-        ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "cac0dd11f35a6547"
-      },
-      "czesci_rosliny.nasiona.ostrzezenia": {
-        "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Ostrzeżenia",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "Surowe nasiona, liście, kora i kwiaty są toksyczne ze względu na obecność aesculiny, glikozydów oraz saponin, co skłoniło amerykańską Agencję ds. Żywności i Leków do sklasyfikowania nasion jako ziele niebezpieczne.",
-            "zrodla": [
-              2
+              3
             ],
             "fakty": [
               "s450"
             ]
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
+        "model": "bez LLM: brak modelu",
         "wejscie": "9f96c28fc347abae"
       },
       "ostrzezenia": {
@@ -488,7 +1198,16 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Największą toksyczność dla ludzi wykazują niedojrzałe owoce wynikającą z maksymalnego stężenia saponin, których spożycie doprowadza do dolegliwości żołądkowo-jelitowych, a w poważnych przypadkach może wywołać porażenie mięśni oddechowych i zgon.",
+            "tekst": "Stosowanie maści i żeli na bazie kasztanowca jest uznawane za bezpieczne, ale osoby z chorobami nerek lub wątroby oraz kobiety w ciąży lub karmiące piersią powinny unikać tego produktu.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s463"
+            ]
+          },
+          {
+            "tekst": "Niedojrzałe owoce są najbardziej toksyczne dla ludzi ze względu na wysokie stężenie saponin, które w tym okresie osiąga maksimum. Spożycie prowadzi do dolegliwości żółdkowo-jelitowych, a w ciężkich przypadkach do porażenia mięśni oddechowych i zgonu.",
             "zrodla": [
               1
             ],
@@ -497,12 +1216,56 @@
             ]
           }
         ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "8f7ebfc8ef447024"
+        "model": "bez LLM: brak modelu",
+        "wejscie": "e4a659119e941c1f"
+      },
+      "czesci_rosliny.nasiona.ostrzezenia": {
+        "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Ostrzeżenia",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Eskyna jest toksyczna przy przyjęciu doustnym, jednak składnik ten jest nietrwały termicznie. Po ugotowaniu lub parowaniu nasiona stają się jadalne dzięki obecności skrobi.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s459"
+            ]
+          },
+          {
+            "tekst": "Osoby uczulone na escynę, kasztanowiec zwyczajny, kasztan hiszpański lub na jakikolwiek składnik danego produktu nie powinny go zażywać.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s495"
+            ]
+          },
+          {
+            "tekst": "Przed zastosowaniem suplementów z kasztanowca należy poinformować lekarza o przebytych lub obecnych problemach z nerkami lub wątrobą oraz o zakrzepach krwi.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s496"
+            ]
+          },
+          {
+            "tekst": "Nie wiadomo, jak kasztanowiec wpływa na ciążę lub nienarodzone dziecko oraz czy przenika do mleka matki, dlatego kobiety w ciąży i karmiące powinny skonsultować jego stosowanie z lekarzem.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s497"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "40048b3428d6fcfb"
       }
     },
     "uzyte_fakty": [
-      "s440",
       "s441",
       "s442",
       "s443",
@@ -512,7 +1275,27 @@
       "s448",
       "s449",
       "s450",
-      "s451"
+      "s451",
+      "s452",
+      "s454",
+      "s455",
+      "s456",
+      "s458",
+      "s459",
+      "s460",
+      "s461",
+      "s463",
+      "s464",
+      "s465",
+      "s466",
+      "s467",
+      "s468",
+      "s469",
+      "s495",
+      "s496",
+      "s497",
+      "s596",
+      "s597"
     ]
   },
   "url": {
@@ -523,7 +1306,7 @@
     "Nasiona": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/0_Aesculus_hippocastanum_-_Mariemont_1.JPG/960px-0_Aesculus_hippocastanum_-_Mariemont_1.JPG"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-05",
+    "zaktualizowano": "2026-10-14",
     "w_url": true,
     "zdjecia": [
       {
@@ -572,5 +1355,45 @@
         "zrodlo": "Wikimedia Commons"
       }
     ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-14",
+    "jak": "reguly",
+    "wejscie": "4f7aadbf5521cb59",
+    "wstawki": [
+      {
+        "miejsce": "natura/wystepowanie",
+        "rozdzial": "Natura i siedlisko",
+        "tytul": "Występowanie i zasięg",
+        "ikona": "ra-compass",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Pochodzi z Półwyspu Bałkańskiego, gdzie rośnie nielicznie w lasach i jest uznawany za gatunek narażony na wyginięcie. W Europie rozprzestrzenił się w XVI i XVII wieku podczas ekspansji tureckiej.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s440"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          },
+          {
+            "tekst": "Kompaktowa, dziko rosnąca populacja kasztanowca w Bułgarii ogranicza się do zaledwie 9 hektarów w Górach Presławskich i jest krytycznie zagrożona w skali kraju oraz chroniona jako rezerwat.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s453"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          }
+        ]
+      }
+    ],
+    "duplikaty": []
   }
 }

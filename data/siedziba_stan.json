@@ -1,7 +1,7 @@
 {
  "wersja": 1,
  "opis": "Stan Siedziby Kwiatownika i statystyki strony - zapisuje agent wdrozen (Siedziba). Strona pokazuje go w papirusie bez pytania backendu.",
- "zaktualizowano": "2026-10-14T16:20:37+02:00",
+ "zaktualizowano": "2026-10-14T17:45:32+02:00",
  "siedziba": {
   "status": "pracuje",
   "zadania": [
@@ -10,25 +10,31 @@
     "od": "2026-10-14T14:11:16.049213+00:00"
    },
    {
-    "opis": "przegląda zagraniczne strony z przepisami",
-    "od": "2026-10-14T14:11:16.267644+00:00"
-   },
-   {
-    "opis": "zapisuje zebraną wiedzę do Kwiatownika: kasztanowiec",
-    "od": "2026-10-14T14:12:53.541066+00:00"
-   },
-   {
-    "opis": "zbiera wiedzę o roślinach: Wikipedia (pl): Kasztanowiec pospolity",
+    "opis": "zbiera wiedzę o roślinach: informacje 97-97 z 97",
     "od": "2026-10-14T14:14:34.248404+00:00"
+   },
+   {
+    "opis": "tłumaczy przepisy na polski",
+    "od": "2026-10-14T14:15:42.291329+00:00"
+   },
+   {
+    "opis": "przegląda zagraniczne strony z przepisami",
+    "od": "2026-10-14T14:38:35.783948+00:00"
    }
   ],
   "info": {
    "rosliny": 87,
-   "informacje_zapisane": 913,
+   "informacje_zapisane": 1074,
    "czeka_w_kolejce": 0
   }
  },
  "wpisy": [
+  {
+   "eid": "run:150",
+   "ts": "2026-10-14T14:20:47.409454+00:00",
+   "kind": "wdrozenie",
+   "text": "Opublikowano nową wersję Kwiatownika: Nowa wiedza o 1 roślinie"
+  },
   {
    "eid": "job:397",
    "ts": "2026-10-14T12:52:31.753715+00:00",
@@ -52,8 +58,8 @@
  ],
  "statystyki": {
   "okres_dni": 7,
-  "goscie_tydzien": 9,
-  "odslony_tydzien": 18,
+  "goscie_tydzien": 10,
+  "odslony_tydzien": 19,
   "plantid_tydzien": 0,
   "plantid_razem": 0,
   "najczesciej_czytane": [
