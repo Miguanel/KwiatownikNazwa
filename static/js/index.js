@@ -143,8 +143,8 @@
     // ------------------------------------------
     // KALENDARZ: PORY ROKU, MIESIĄCE, CZYNNOŚCI
     // ------------------------------------------
-    const monthNames = ['', 'styczeń', 'luty', 'marzec', 'kwiecień', 'maj', 'czerwiec', 'lipiec', 'sierpień', 'wrzesień', 'październik', 'listopad', 'grudzień'];
-    const seasonMonths = { 'zima': [12, 1, 2], 'wiosna': [3, 4, 5], 'lato': [6, 7, 8], 'jesień': [9, 10, 11] };
+    const monthNames = ['', 'Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec', 'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień'];
+    const seasonMonths = { 'Zima': [12, 1, 2], 'Wiosna': [3, 4, 5], 'Lato': [6, 7, 8], 'Jesień': [9, 10, 11] };
 
     function taskIconFor(name) {
         const t = norm(name);
@@ -907,8 +907,8 @@
         const mName = monthNames[m];
         // przed pobraniem danych pokazujemy wszystkie szybkie filtry (kalendarz prawie zawsze je ma)
         const has = k => !READY || !!calendarSearchMap[k];
-        if (has(mName)) chips.push({ label: `${capitalize(mName)`, value: mName, icon: 'ra-hourglass' });
-        if (has(season)) chips.push({ label: `${capitalize(season)`, value: season, icon: 'ra-sun' });
+        if (has(mName)) chips.push({ label: `${mName`, value: mName, icon: 'ra-hourglass' });
+        if (has(season)) chips.push({ label: `${season`, value: season, icon: 'ra-sun' });
         [['zbiór', 'ra-sickle'], ['sadzenie', 'ra-plant-seed']].forEach(([k, icon]) => { if (has(k)) chips.push({ label: k, value: k, icon: (calendarSearchMap[k] && calendarSearchMap[k].icon) || icon }); });
         ['przeziębienie', 'kaszel', 'odporność', 'rany', 'syrop'].forEach(k => chips.push({ label: k, value: k, icon: 'ra-health' }));
         quickBox.innerHTML = '<span class="kw-quick-label">Spróbuj:</span>' + chips.map(c =>
