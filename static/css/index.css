@@ -103,10 +103,15 @@
 @keyframes fadeInTask { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 
 .kw-summary { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 10px; }
+/* skróty do sekcji wyników („🌿 Rośliny: 12”): kolor tekstu z !important, bo ogólna reguła linków
+   z celtic.css (.container a:not(...)) ma wyższą specyficzność i dawała ciemnozielony tekst na ciemnym tle */
 .kw-summary a {
-    background: #3e4a3d; color: #d1b880; border-radius: 14px; padding: 3px 12px; font-size: 0.9rem; font-weight: bold;
+    background: #3e4a3d; color: #f3e3b4 !important; border: 1px solid #3e4a3d; border-radius: 14px; padding: 3px 12px;
+    font-size: 0.9rem; font-weight: bold; text-decoration: none !important; transition: background 0.2s, border-color 0.2s;
 }
-.kw-summary a:hover { background: #8a9a5b; color: #fff; }
+.kw-summary a:hover, .kw-summary a:focus-visible { background: #2d5a27; border-color: #2d5a27; color: #fff !important; }
+html[data-theme="night"] .kw-summary a { background: #2e3a24; border-color: #6f8a55; color: #e6dcc3 !important; }
+html[data-theme="night"] .kw-summary a:hover, html[data-theme="night"] .kw-summary a:focus-visible { background: #3a4a2c; border-color: var(--kw-gold, #d1aa55); color: #f0e2b6 !important; }
 
 .kw-sec { margin-top: 26px; }
 .kw-sec-title {
