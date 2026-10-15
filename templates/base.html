@@ -58,15 +58,44 @@
         /* Dostosowanie dropdownu Ulubionych do paska nav */
         #favDropdownBtn { padding-left: 0; padding-right: 0; }
 
-        @media (max-width: 991px) {
-            /* Na mniejszych ekranach linki w menu rozsuwanym mają odstęp i są blokowe */
-            .navbar-nav .nav-item { padding: 8px 0; border-bottom: 1px dashed rgba(255,255,255,0.2); text-align: center;}
-            .navbar-nav .nav-item:last-child { border-bottom: none; }
-            .frozen-feature.d-lg-none { display: block; text-align: center; padding: 10px 0; color: white;}
-            .frozen-feature.d-none.d-lg-block { display: none; } /* Ukrywa 'Komentarze' obok menu na tel */
+        /* bieżąca zakładka */
+        .nav-link.kw-active { color: #f3e3b4 !important; box-shadow: inset 0 -2px 0 #d1b880; }
 
-            /* Zmniejszamy paddingi dla samej nawigacji na mobilkach */
-            nav { padding: 0.5rem; }
+        /* TELEFON I TABLET: bez hamburgera – menu jako stały pasek ikon z podpisami pod logo */
+        @media (max-width: 991.98px) {
+            nav { padding: 6px 8px 4px; }
+            .navbar > .container-fluid { flex-wrap: wrap; row-gap: 4px; }
+            #kwiatownikNavbar.collapse { display: block !important; flex-basis: 100%; width: 100%; min-width: 0; height: auto !important; }
+            #kwiatownikNavbar .navbar-nav {
+                flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: stretch !important;
+                width: 100%; min-width: 0; max-width: 620px; margin: 0 auto; gap: 4px; padding-top: 6px; border-top: 1px solid rgba(209, 184, 128, 0.25);
+                overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+            }
+            #kwiatownikNavbar .navbar-nav::-webkit-scrollbar { display: none; }
+            #kwiatownikNavbar .navbar-nav { border-top: 0; }
+            #kwiatownikNavbar { border-top: 1px solid rgba(209, 184, 128, 0.25); }
+            #kwiatownikNavbar .nav-item { flex: 1 1 0; min-width: 64px; padding: 0 !important; border: 0; text-align: center; }
+            #kwiatownikNavbar .nav-link {
+                display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
+                width: 100%; padding: 6px 4px !important; border-radius: 10px; font-size: 0.78rem !important; line-height: 1.1;
+                white-space: nowrap; letter-spacing: 0.2px;
+            }
+            #kwiatownikNavbar .nav-link i { margin: 0; font-size: 1.35rem; line-height: 1; }
+            #kwiatownikNavbar .nav-link:hover, #kwiatownikNavbar .nav-link:focus-visible { background: rgba(255, 255, 255, 0.07); }
+            #kwiatownikNavbar .nav-link.kw-active { background: rgba(209, 184, 128, 0.16); box-shadow: inset 0 -2px 0 #d1b880; }
+            #kwiatownikNavbar .dropdown { position: static; }
+            #kwiatownikNavbar .dropdown-toggle::after { display: none; }
+            #kwiatownikNavbar .dropdown-menu {
+                position: absolute !important; top: 100%; right: 8px; left: auto; margin-top: 4px;
+                max-width: calc(100vw - 16px); max-height: 60vh; overflow-y: auto; z-index: 1100;
+            }
+            .frozen-feature.d-none.d-lg-block { display: none; } /* Komentarze i logowanie (wstrzymane) tylko na komputerze */
+        }
+        @media (max-width: 380px) {
+            #kwiatownikNavbar .navbar-nav { gap: 2px; }
+            #kwiatownikNavbar .nav-item { min-width: 54px; }
+            #kwiatownikNavbar .nav-link { font-size: 0.7rem !important; padding: 6px 2px !important; letter-spacing: 0; }
+            #kwiatownikNavbar .nav-link i { font-size: 1.25rem; }
         }
 
         /* --- WSPÓLNE CECHY PRZEWIJANYCH PASKÓW --- */
@@ -173,30 +202,31 @@
                 <i class="bi bi-moon-stars-fill kw-ico-moon" aria-hidden="true"></i><i class="bi bi-sun-fill kw-ico-sun" aria-hidden="true"></i>
             </button>
 
-            <!-- Hamburger na małych ekranach -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kwiatownikNavbar" aria-controls="kwiatownikNavbar" aria-expanded="false" aria-label="Przełącz nawigację">
+            <!-- Hamburger nieużywany: na telefonie menu jest stale widocznym paskiem ikon (CSS niżej) -->
+            <button class="navbar-toggler d-none" type="button" tabindex="-1" aria-hidden="true" data-bs-toggle="collapse" data-bs-target="#kwiatownikNavbar" aria-controls="kwiatownikNavbar" aria-expanded="false" aria-label="Przełącz nawigację">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <!-- Część zwijana (linki i przyciski) -->
             <div class="collapse navbar-collapse justify-content-end" id="kwiatownikNavbar">
                 <ul class="navbar-nav align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('plants.generator') }}"><i class="ra ra-flask"></i> Generatory</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('recipes.przepisy') }}"><i class="ra ra-cauldron"></i> Przepisy</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('plants.gildie') }}"><i class="ra ra-pawn"></i> Gildie</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('plants.porownaj') }}"><i class="ra ra-scroll-unfurled"></i> Porównaj</a></li>
+                    {% set kw_p = request.path if request else '' %}
+                    <li class="nav-item"><a class="nav-link{% if kw_p.startswith('/generator') %} kw-active" aria-current="page{% endif %}" href="{{ url_for('plants.generator') }}"><i class="ra ra-flask"></i> Generatory</a></li>
+                    <li class="nav-item"><a class="nav-link{% if kw_p.startswith('/przepisy') %} kw-active" aria-current="page{% endif %}" href="{{ url_for('recipes.przepisy') }}"><i class="ra ra-bubbling-potion"></i> Przepisy</a></li>
+                    <li class="nav-item"><a class="nav-link{% if kw_p.startswith('/gildie') %} kw-active" aria-current="page{% endif %}" href="{{ url_for('plants.gildie') }}"><i class="ra ra-pawn"></i> Gildie</a></li>
+                    <li class="nav-item"><a class="nav-link{% if kw_p.startswith('/porownaj') %} kw-active" aria-current="page{% endif %}" href="{{ url_for('plants.porownaj') }}"><i class="ra ra-scroll-unfurled"></i> Porównaj</a></li>
                     <li class="nav-item d-none d-lg-block"><a class="nav-link frozen-feature" href="#"><i class="ra ra-speech-bubble"></i> Komentarze</a></li>
 
                     <li class="nav-item dropdown px-2">
                         <button class="nav-link dropdown-toggle" type="button" id="favDropdownBtn" data-bs-toggle="dropdown" aria-expanded="false" style="background: none; border: none; font-weight: bold; font-size: 0.95rem;">
-                            <i class="ra ra-heart"></i> Ulubione
+                            <i class="ra ra-hearts"></i> Ulubione
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" id="favoritesDropdownMenu">
                         </ul>
                     </li>
 
                     <!-- Przycisk logowania wewnątrz menu na urządzeniach mobilnych -->
-                    <li class="nav-item d-lg-none mt-2 w-100">
+                    <li class="nav-item d-none kw-nav-login-mobile">
                          <a href="#" class="nav-link frozen-feature" style="background: #2d5a27; border-radius: 4px; padding: 8px;"><i class="ra ra-player"></i> Logowanie (Wstrzymane)</a>
                     </li>
                 </ul>
@@ -247,6 +277,16 @@
     <!-- pas celtyckiej plecionki pod nagłówkiem (statyczny, style w celtic.css) -->
 <!--    <div class="kw-vine" aria-hidden="true"></div>-->
 </header>
+<script>
+/* Treść zaczyna się dokładnie pod stałym nagłówkiem (menu, almanach, ciekawostki) – jego wysokość zależy od ekranu */
+(function () {
+    var h = document.querySelector('.main-header');
+    if (!h) return;
+    var set = function () { document.body.style.paddingTop = h.offsetHeight + 'px'; };
+    set();
+    if (window.ResizeObserver) new ResizeObserver(set).observe(h); else window.addEventListener('resize', set);
+})();
+</script>
 
 <div class="container">
     {% with messages = get_flashed_messages(with_categories=true) %}
@@ -415,7 +455,7 @@ window.renderFavoritesDropdown = function() {
         }
         if (favRecipes.length > 0) {
             if (favPlants.length > 0) html += '<li><hr class="dropdown-divider"></li>';
-            html += '<li><h6 class="dropdown-header"><i class="ra ra-cauldron"></i> Twoje Receptury</h6></li>';
+            html += '<li><h6 class="dropdown-header"><i class="ra ra-bubbling-potion"></i> Twoje Receptury</h6></li>';
             favRecipes.forEach(r => {
                 // Przepisy nadal szukamy przez parametr, bo nie mają własnych podstron
                 html += `<li><a class="dropdown-item" href="/przepisy/?q=${encodeURIComponent(r)}">${r}</a></li>`;

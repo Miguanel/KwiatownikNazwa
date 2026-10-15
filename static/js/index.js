@@ -642,7 +642,7 @@
                 <div class="kw-list">${recipes.slice(0, state.recipeLimit).map(recipeItemHtml).join('')}</div>
                 <div class="kw-more">
                     ${recipes.length > state.recipeLimit ? `<button type="button" class="kw-more-btn" data-more="recipes">Pokaż więcej przepisów (${recipes.length - state.recipeLimit})</button>` : ''}
-                    <a class="kw-more-link" href="/przepisy/?q=${encodeURIComponent(przepisyQuery)}">Otwórz w Przepiśniku <i class="ra ra-cauldron"></i></a>
+                    <a class="kw-more-link" href="/przepisy/?q=${encodeURIComponent(przepisyQuery)}">Otwórz w Przepiśniku <i class="ra ra-bubbling-potion"></i></a>
                 </div>
             </section>`;
         }
