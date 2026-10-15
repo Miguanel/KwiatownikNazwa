@@ -1,34 +1,62 @@
 {
  "wersja": 1,
  "opis": "Stan Siedziby Kwiatownika i statystyki strony - zapisuje agent wdrozen (Siedziba). Strona pokazuje go w papirusie bez pytania backendu.",
- "zaktualizowano": "2026-10-14T17:45:32+02:00",
+ "zaktualizowano": "2026-10-15T09:53:22+02:00",
  "siedziba": {
   "status": "pracuje",
   "zadania": [
    {
-    "opis": "przegląda zagraniczne strony z przepisami",
-    "od": "2026-10-14T14:11:16.049213+00:00"
-   },
-   {
-    "opis": "zbiera wiedzę o roślinach: informacje 97-97 z 97",
-    "od": "2026-10-14T14:14:34.248404+00:00"
-   },
-   {
     "opis": "tłumaczy przepisy na polski",
-    "od": "2026-10-14T14:15:42.291329+00:00"
+    "od": "2026-10-15T07:41:52.194617+00:00"
    },
    {
-    "opis": "przegląda zagraniczne strony z przepisami",
-    "od": "2026-10-14T14:38:35.783948+00:00"
+    "opis": "zbiera wiedzę o roślinach: Wikipedia (en): Prunus spinosa",
+    "od": "2026-10-15T07:47:08.949186+00:00"
    }
   ],
   "info": {
    "rosliny": 87,
-   "informacje_zapisane": 1074,
+   "informacje_zapisane": 1109,
    "czeka_w_kolejce": 0
   }
  },
  "wpisy": [
+  {
+   "eid": "run:177",
+   "ts": "2026-10-14T20:05:32.186737+00:00",
+   "kind": "audyt",
+   "text": "Audyt bazy wiedzy: ocena 53/100 – Siedziba wie, czego szukać dalej"
+  },
+  {
+   "eid": "job:417",
+   "ts": "2026-10-14T17:02:22.580666+00:00",
+   "kind": "przepisy",
+   "text": "Przetłumaczono 2 przepisów z zagranicznych stron",
+   "url": null,
+   "plant_id": null
+  },
+  {
+   "eid": "job:418",
+   "ts": "2026-10-14T16:51:12.571867+00:00",
+   "kind": "wiedza",
+   "text": "Zebrano 6 sprawdzonych informacji o: Kasztanowiec zwyczajny/pospolity, Świerząbek bulwiasty – trafią na stronę przy najbliższej publikacji",
+   "url": null,
+   "plant_id": null
+  },
+  {
+   "eid": "job:416",
+   "ts": "2026-10-14T16:16:06.379655+00:00",
+   "kind": "przepisy",
+   "text": "Znaleziono 3 nowych przepisów na zagranicznych stronach",
+   "url": null,
+   "plant_id": null
+  },
+  {
+   "eid": "run:158",
+   "ts": "2026-10-14T15:45:40.154344+00:00",
+   "kind": "wdrozenie",
+   "text": "Opublikowano nową wersję Kwiatownika: Nowa wiedza o 5 roślinach"
+  },
   {
    "eid": "run:150",
    "ts": "2026-10-14T14:20:47.409454+00:00",
@@ -48,18 +76,12 @@
    "ts": "2026-10-13T19:37:04.486698+00:00",
    "kind": "audyt",
    "text": "Audyt bazy wiedzy: ocena 49/100 – Siedziba wie, czego szukać dalej"
-  },
-  {
-   "eid": "run:103",
-   "ts": "2026-10-13T19:31:54.989852+00:00",
-   "kind": "audyt",
-   "text": "Audyt bazy wiedzy: ocena 49/100 – Siedziba wie, czego szukać dalej"
   }
  ],
  "statystyki": {
   "okres_dni": 7,
-  "goscie_tydzien": 10,
-  "odslony_tydzien": 19,
+  "goscie_tydzien": 8,
+  "odslony_tydzien": 13,
   "plantid_tydzien": 0,
   "plantid_razem": 0,
   "najczesciej_czytane": [
@@ -71,16 +93,16 @@
    {
     "id": "rokitnik_zwyczajny",
     "nazwa": "Rokitnik zwyczajny",
-    "n": 3
-   },
-   {
-    "id": "chmiel_zwyczajny",
-    "nazwa": "Chmiel zwyczajny",
-    "n": 3
+    "n": 2
    },
    {
     "id": "tasznik_pospolity",
     "nazwa": "Tasznik pospolity",
+    "n": 1
+   },
+   {
+    "id": "piolun",
+    "nazwa": "Bylica piołun",
     "n": 1
    }
   ]

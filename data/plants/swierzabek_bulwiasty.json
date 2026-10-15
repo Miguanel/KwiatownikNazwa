@@ -267,7 +267,7 @@
     "Korzeń": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Chaerophyllum_bulbosum_001.JPG/960px-Chaerophyllum_bulbosum_001.JPG"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-05",
+    "zaktualizowano": "2026-10-14",
     "w_url": true,
     "zdjecia": [
       {
@@ -310,9 +310,9 @@
   },
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-10-05",
-    "uporzadkowano": "2026-10-05",
-    "uklad": "llm:gemini/gemini-3.5-flash-lite",
+    "zaktualizowano": "2026-10-14",
+    "uporzadkowano": "2026-10-14",
+    "uklad": "deterministyczny: pominiete informacje: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",
     "zrodla": [
       {
         "nazwa": "Wikipedia (pl): Świerząbek bulwiasty",
@@ -344,7 +344,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Roślina wytwarza jadalną bulwę hipokotylową o kształcie od stożkowatego do kulistego, osiągającą 3 do 6 centymetrów grubości, 1,5 do 10 centymetrów długości oraz wagę od 140 do 200 gramów.",
+            "tekst": "Roślina wytwarza jadalną bulwę hipokotylową o stożkowatej do kulistej kształcie, osiągającą 3 do 6 centymetrów grubości, 1,5 do 10 centymetrów długości oraz wagę od 140 do 200 gramów.",
             "czesc": "korzeń",
             "zrodla": [
               2
@@ -354,33 +354,13 @@
             ]
           },
           {
-            "tekst": "Korzenie mają słodki i mięsisty smak przypominający orzechy i kasztany jadalne, a kopie się je jesienią. Można je spożywać na surowo w sałatkach, koktajlach i sokach lub po ugotowaniu i usmażeniu jako dodatek do zup i dań mięsnych.",
-            "czesc": "korzeń",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s670"
-            ]
-          },
-          {
-            "tekst": "Korzeń zawiera duże ilości błonnika, witaminy B i C oraz sole mineralne.",
-            "czesc": "korzeń",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s674"
-            ]
-          },
-          {
-            "tekst": "Przechowywanie świeżo zebranych bulw w temperaturze 4 stopni Celsjusza przez okres czterech miesięcy powoduje przekształcenie znacznej części zawartej w nich skrobi w cukier.",
-            "czesc": "korzeń",
+            "tekst": "Zgrubienie podziemne ma stożkowaty lub kulisty kształt, osiąga 3-6 cm grubości i 1,5-10 cm długości, ważąc od 140 do 200 gramów przy szarej powierzchni.",
+            "czesc": "kłącze",
             "zrodla": [
               2
             ],
             "fakty": [
-              "s680"
+              "s824"
             ]
           }
         ]
@@ -400,6 +380,110 @@
             "fakty": [
               "s668"
             ]
+          },
+          {
+            "tekst": "W warunkach naturalnych gatunek rozprasza nasiona za pośrednictwem wód powierzchniowych (hydrochory).",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1716"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "czesci_rosliny",
+        "tytul": "Części rośliny i surowce",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Korzenie o słodkim i mięsistym smaku, przypominającym orzechy i kasztany jadalne, kopie się jesienią. Można je spożywać na surowo jako dodatek do sałatek, koktajli i soków, a także gotować lub smażyć, dodając do zup i potraw mięsnych.",
+            "czesc": "korzeń",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s670"
+            ]
+          },
+          {
+            "tekst": "Korzenie nabierają pełnego aromatu dopiero po kilku miesiącach od pojawienia się liści pod koniec jesieni, a ich smak jest najlepszy od grudnia do marca.",
+            "czesc": "korzeń",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1703"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Przechowywanie świeżo zebranych bulw w temperaturze 4 stopni Celsjusza przez okres czterech miesięcy powoduje przekształcenie znacznej części zawartej w nich skrobi w cukier.",
+            "czesc": "korzeń",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s680"
+            ]
+          },
+          {
+            "tekst": "Korzeń zawiera duże ilości błonnika oraz witaminy B i C, a także sole mineralne.",
+            "czesc": "korzeń",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s674"
+            ]
+          },
+          {
+            "tekst": "Bulwa jest bogata w skrobię i białko, a zarazem uboga w tłuszcz; suszona postać podgatunku typowego zawiera do 57% skrobi i 5% cukru.",
+            "czesc": "kłącze",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s825"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Nasiona tracą szybko żywotność, zwłaszcza w suchym środowisku, co wymusza coroczny siew świeżego materiału rozmnożeniowego.",
+            "czesc": "nasiona",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1713"
+            ]
+          },
+          {
+            "tekst": "W dawnych czasach młode liście oraz obrane fragmenty rośliny wykorzystywano w kuchni jako dodatek do zup ziołowych, substytut szpinaku lub przyprawę do sałatek.",
+            "czesc": "ziele",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s826"
+            ]
           }
         ]
       },
@@ -418,6 +502,16 @@
             "fakty": [
               "s669"
             ]
+          },
+          {
+            "tekst": "Pierwsza nazwana odmiana ta rośliny, nazwana „Altan”, zostanie wyhodowana we Francji w 1986 roku, a następnie pojawiły się nowe odmiany takie jak „Véga” i „M4.10”, które mają niższą dormancję embrionów nasion.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1717"
+            ]
           }
         ]
       },
@@ -428,15 +522,147 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "W zwyczajowym języku polskim gatunek ten bywa nazywany świerzopem bulwiastym oraz różnymi odmianami nazwy trybula, takimi jak trybula bulwiasta, grubokorzeniowa czy korzeniowa. W krajach niemieckojęzycznych nosi natomiast liczne nazwy potoczne, takie jak Kerbelrübe, Knollenkerbel, Erdkastanie czy inne regionalne określenia ludowe.",
+            "tekst": "W zwyczajowym języku polskim gatunek ten bywa nazywany świerzopem bulwiastym oraz różnymi odmianami nazwy trybula, takimi jak trybula bulwiasta, grubokorzeniowa czy korzeniowa.",
             "czesc": null,
             "zrodla": [
-              1,
+              1
+            ],
+            "fakty": [
+              "s672"
+            ]
+          },
+          {
+            "tekst": "W krajach niemieckojęzycznych roślina ta nosi liczne nazwy potoczne, takie jak Kerbelrübe, Knollenkerbel, Erdkastanie czy regionalne określenia ludowe.",
+            "czesc": null,
+            "zrodla": [
               2
             ],
             "fakty": [
-              "s672",
               "s681"
+            ]
+          },
+          {
+            "tekst": "W krajach niemieckojęzycznych roślina nosi liczne nazwy ludowe i regionalne, takie jak Barebächer, Beperle, Buschmöhren czy Pimperlimpimp.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s827"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Roślina ta wykazuje duże podobieństwo morfologiczne do rodzimego i silnie trującego szczwołu plamistego, co stwarza ryzyko pomyłki.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s828"
+            ]
+          },
+          {
+            "tekst": "Roślina jest podatna na te same choroby co marchew i seler, takie jak muchówka marchwionka czy rdzewiaki korzeniowe.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1714"
+            ]
+          },
+          {
+            "tekst": "Korzenie są podatne na szkodniki podobne do marchwi i pasternaku, głównie muchę korzeniową (fly) oraz mszyce korzeni, a także mogą być gospodarzem wirusa mozaiki selera.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1718"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "uprawa",
+        "tytul": "Uprawa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Pierwszy odnotowany w historii odmiany hodowli ogrodowych nosi nazwę 'Altan' i pochodzi z Francji z roku 1986.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1715"
+            ]
+          },
+          {
+            "tekst": "Siewniki tej rośliny rozpylają się naturalnie drogą wodną (hydrochory), co sprzyja gęstym zbiorowiskom na brzegach rzek.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1719"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "ciekawostki",
+        "tytul": "Ciekawostki",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Roślina jest dwuletnim byliną, a w pierwszym roku wytwarza rozetę liści, w której gromadzi duże ilości skrobi niezbędne do kwitnienia w drugim roku.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1712"
+            ]
+          },
+          {
+            "tekst": "Tradycyjnie stosowano bulwy w kuchni jako składnik smakotwórczy lub gotowano je tak jak inne warzywa korzeniowe, a ich aromat kumuluje się w trakcie przechowywania.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1720"
+            ]
+          },
+          {
+            "tekst": "Po ugotowaniu bulwy mają subtelny smak ziemniaków i kasztanów z lekką nutą selera i pasternaku, a na surowo smakują ostro podobnie do rzepy.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1721"
+            ]
+          },
+          {
+            "tekst": "Roślina jest zapylana głównie przez muchy i chrząszcze, co jest nietypowe wśród roślin z rodziny selerowatych.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1722"
             ]
           }
         ]
@@ -446,8 +672,19 @@
       "korzeń": [
         "s677",
         "s670",
-        "s674",
-        "s680"
+        "s1703",
+        "s680",
+        "s674"
+      ],
+      "kłącze": [
+        "s824",
+        "s825"
+      ],
+      "nasiona": [
+        "s1713"
+      ],
+      "ziele": [
+        "s826"
       ]
     },
     "fakty": [
@@ -460,7 +697,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Świerząbek bulwiasty",
           "url": "https://pl.wikipedia.org/wiki/%C5%9Awierz%C4%85bek_bulwiasty"
-        }
+        },
+        "cytat": "Rośnie w zaroślach, lasach, na brzegach rzek. Jest gatunkiem charakterystycznym dla okrajkowego zespołu Chaerophylletum bulbosi wykształcającym się w miejscach nasłonecznionych w kompleksach lasów łęgowych i wilgotnych grądów. ... W Polsce "
       },
       {
         "id": "s669",
@@ -471,7 +709,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Świerząbek bulwiasty",
           "url": "https://pl.wikipedia.org/wiki/%C5%9Awierz%C4%85bek_bulwiasty"
-        }
+        },
+        "cytat": "Gatunek uprawiany był w XIX wieku jako warzywo korzeniowe, ale popadł w zapomnienie. ... Bywa uprawiany dla jadalnych, bulwiastych korzeni."
       },
       {
         "id": "s670",
@@ -482,7 +721,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Świerząbek bulwiasty",
           "url": "https://pl.wikipedia.org/wiki/%C5%9Awierz%C4%85bek_bulwiasty"
-        }
+        },
+        "cytat": "Korzenie kopie się jesienią. Są słodkie i mięsiste. W smaku przypominać mają orzechy i kasztany jadalne. Można je spożywać surowe, w tym jako dodatek do sałatek, koktajli czy soków, albo gotować i smażyć, dodając do zup, potraw warzywnych i"
       },
       {
         "id": "s672",
@@ -493,7 +733,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Świerząbek bulwiasty",
           "url": "https://pl.wikipedia.org/wiki/%C5%9Awierz%C4%85bek_bulwiasty"
-        }
+        },
+        "cytat": "Gatunek znany jest pod różnymi nazwami zwyczajowymi: świerzop bulwiasty, trybula bulwiasta, trybula grubokorzeniowa, trybula korzeniowa."
       },
       {
         "id": "s674",
@@ -504,7 +745,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (en): Chaerophyllum bulbosum",
           "url": "https://en.wikipedia.org/wiki/Chaerophyllum_bulbosum"
-        }
+        },
+        "cytat": "C. bulbosum roots are high in fiber and have the same starchy quality as potatoes. They contain vitamins B and C and mineral salts."
       },
       {
         "id": "s677",
@@ -515,7 +757,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (de): Knolliger Kälberkropf",
           "url": "https://de.wikipedia.org/wiki/Knolliger_K%C3%A4lberkropf"
-        }
+        },
+        "cytat": "Die Hypokotyl-Knolle ist kegelig bis kugelig, wird etwa 3 bis 6 Zentimeter dick, 1,5 bis 10 Zentimeter lang, 140 bis 200 g schwer und besitzt eine graue Oberfläche"
       },
       {
         "id": "s680",
@@ -526,7 +769,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (de): Knolliger Kälberkropf",
           "url": "https://de.wikipedia.org/wiki/Knolliger_K%C3%A4lberkropf"
-        }
+        },
+        "cytat": "Wird die Knolle direkt nach der Ernte noch 4 Monate bei 4 °C gelagert wird ein großer Teil der Stärke in Zucker umgewandelt."
       },
       {
         "id": "s681",
@@ -537,13 +781,218 @@
         "zrodlo": {
           "nazwa": "Wikipedia (de): Knolliger Kälberkropf",
           "url": "https://de.wikipedia.org/wiki/Knolliger_K%C3%A4lberkropf"
-        }
+        },
+        "cytat": "Deutschsprachige Trivialnamen sind beispielsweise Kerbelrübe, Knollenkerbel, Rübenkerbel, Knolliger Kerbel, Rüben-Kälberkropf oder Erdkastanie."
+      },
+      {
+        "id": "s824",
+        "sekcja": "opis",
+        "czesc": "kłącze",
+        "tekst": "Zgrubienie podziemne ma stożkowaty lub kulisty kształt, osiąga 3-6 cm grubości i 1,5-10 cm długości, ważąc od 140 do 200 gramów przy szarej powierzchni.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Knolliger Kälberkropf",
+          "url": "https://de.wikipedia.org/wiki/Knolliger_K%C3%A4lberkropf"
+        },
+        "cytat": "Die Hypokotyl-Knolle ist kegelig bis kugelig, wird etwa 3 bis 6 Zentimeter dick, 1,5 bis 10 Zentimeter lang, 140 bis 200 g schwer und besitzt eine graue Oberfläche"
+      },
+      {
+        "id": "s825",
+        "sekcja": "sklad",
+        "czesc": "kłącze",
+        "tekst": "Bulwa jest bogata w skrobię i białko, a zarazem uboga w tłuszcz; suszona postać podgatunku typowego zawiera do 57% skrobi i 5% cukru.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Knolliger Kälberkropf",
+          "url": "https://de.wikipedia.org/wiki/Knolliger_K%C3%A4lberkropf"
+        },
+        "cytat": "Die Knolle vom Knolligen Kälberkropf ist ein stärke- und eiweißhaltiges, aber relativ fettarmes Nahrungsmittel. Die Heimische Kerbelrübe (Chaerophyllum bulbosum subsp. bulbosum) enthält getrocknet bis zu 57 % Stärke und 5 % Zucker."
+      },
+      {
+        "id": "s826",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "ziele",
+        "tekst": "W dawnych czasach młode liście oraz obrane fragmenty rośliny wykorzystywano w kuchni jako dodatek do zup ziołowych, substytut szpinaku lub przyprawę do sałatek.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Knolliger Kälberkropf",
+          "url": "https://de.wikipedia.org/wiki/Knolliger_K%C3%A4lberkropf"
+        },
+        "cytat": "Auch die Blätter der jungen Pflanze und geschälte Pflanzenteile wurden früher in der Küche verwendet. Diese wurden als Kräutersuppe zubereitet, als Spinatersatz gegessen oder zu Salat als Würze gegeben."
+      },
+      {
+        "id": "s827",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "W krajach niemieckojęzycznych roślina nosi liczne nazwy ludowe i regionalne, takie jak Barebächer, Beperle, Buschmöhren czy Pimperlimpimp.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Knolliger Kälberkropf",
+          "url": "https://de.wikipedia.org/wiki/Knolliger_K%C3%A4lberkropf"
+        },
+        "cytat": "Deutschsprachige Trivialnamen sind beispielsweise Kerbelrübe, Knollenkerbel, Rübenkerbel, Knolliger Kerbel, Rüben-Kälberkropf oder Erdkastanie. Für den Knolligen Kälberkropf bestehen bzw. bestanden auch die weiteren deutschsprachigen Trivia"
+      },
+      {
+        "id": "s828",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Roślina ta wykazuje duże podobieństwo morfologiczne do rodzimego i silnie trującego szczwołu plamistego, co stwarza ryzyko pomyłki.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Knolliger Kälberkropf",
+          "url": "https://de.wikipedia.org/wiki/Knolliger_K%C3%A4lberkropf"
+        },
+        "cytat": "Es besteht Verwechslungsgefahr mit dem ebenfalls heimischen und hochgiftigen gefleckten Schierling."
+      },
+      {
+        "id": "s1703",
+        "sekcja": "czesci_rosliny",
+        "czesc": "korzeń",
+        "tekst": "Korzenie nabierają pełnego aromatu dopiero po kilku miesiącach od pojawienia się liści pod koniec jesieni, a ich smak jest najlepszy od grudnia do marca.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Knolliger Kälberkropf",
+          "url": "https://de.wikipedia.org/wiki/Knolliger_K%C3%A4lberkropf"
+        },
+        "cytat": "Erst einige Monate nach Einzug der Blätter Ende Herbst entwickelt die Wurzel des Knolligen Kälberkropfs richtig Aroma. So ist der Geschmack der Wurzel von Dezember bis März am besten."
+      },
+      {
+        "id": "s1712",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Roślina jest dwuletnim byliną, a w pierwszym roku wytwarza rozetę liści, w której gromadzi duże ilości skrobi niezbędne do kwitnienia w drugim roku.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Chaerophyllum bulbosum",
+          "url": "https://en.wikipedia.org/wiki/Chaerophyllum_bulbosum"
+        },
+        "cytat": "In the first year, its rosette of leaves produces large amounts of starch, which are stored in the taproot to provide energy for the plant to flower in the second year."
+      },
+      {
+        "id": "s1713",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "nasiona",
+        "tekst": "Nasiona tracą szybko żywotność, zwłaszcza w suchym środowisku, co wymusza coroczny siew świeżego materiału rozmnożeniowego.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Chaerophyllum bulbosum",
+          "url": "https://en.wikipedia.org/wiki/Chaerophyllum_bulbosum"
+        },
+        "cytat": "The seeds are short-lived, which means that the seeds lose their vitality easily (especially in dry seed packets); therefore, fresh seeds should be used every year."
+      },
+      {
+        "id": "s1714",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Roślina jest podatna na te same choroby co marchew i seler, takie jak muchówka marchwionka czy rdzewiaki korzeniowe.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Chaerophyllum bulbosum",
+          "url": "https://en.wikipedia.org/wiki/Chaerophyllum_bulbosum"
+        },
+        "cytat": "These are mainly the carrot fly, storage decay and root aphids. Furthermore, it can be host for other aphids, erysiphe heraclei or celery mosaic virus."
+      },
+      {
+        "id": "s1715",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "Pierwszy odnotowany w historii odmiany hodowli ogrodowych nosi nazwę 'Altan' i pochodzi z Francji z roku 1986.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Chaerophyllum bulbosum",
+          "url": "https://en.wikipedia.org/wiki/Chaerophyllum_bulbosum"
+        },
+        "cytat": "the first named cultivar in modern times seems to have been developed in France, named \"Altan\" (1986)"
+      },
+      {
+        "id": "s1716",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "W warunkach naturalnych gatunek rozprasza nasiona za pośrednictwem wód powierzchniowych (hydrochory).",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Chaerophyllum bulbosum",
+          "url": "https://en.wikipedia.org/wiki/Chaerophyllum_bulbosum"
+        },
+        "cytat": "Seeds are dispersed by hydrochory."
+      },
+      {
+        "id": "s1717",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Pierwsza nazwana odmiana ta rośliny, nazwana „Altan”, zostanie wyhodowana we Francji w 1986 roku, a następnie pojawiły się nowe odmiany takie jak „Véga” i „M4.10”, które mają niższą dormancję embrionów nasion.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Chaerophyllum bulbosum",
+          "url": "https://en.wikipedia.org/wiki/Chaerophyllum_bulbosum"
+        },
+        "cytat": "However, the first named cultivar in modern times seems to have been developed in France, named \"Altan\" (1986), followed by new cultivars \"Véga\" and \"M4.10."
+      },
+      {
+        "id": "s1718",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Korzenie są podatne na szkodniki podobne do marchwi i pasternaku, głównie muchę korzeniową (fly) oraz mszyce korzeni, a także mogą być gospodarzem wirusa mozaiki selera.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Chaerophyllum bulbosum",
+          "url": "https://en.wikipedia.org/wiki/Chaerophyllum_bulbosum"
+        },
+        "cytat": "These are mainly the carrot fly, storage decay and root aphids. Furthermore, it can be host for other aphids, erysiphe heraclei or celery mosaic virus."
+      },
+      {
+        "id": "s1719",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "Siewniki tej rośliny rozpylają się naturalnie drogą wodną (hydrochory), co sprzyja gęstym zbiorowiskom na brzegach rzek.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Chaerophyllum bulbosum",
+          "url": "https://en.wikipedia.org/wiki/Chaerophyllum_bulbosum"
+        },
+        "cytat": "In the wild, tuberous-rooted chervil grows in dense populations, mainly along river banks. Seeds are dispersed by hydrochory."
+      },
+      {
+        "id": "s1720",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Tradycyjnie stosowano bulwy w kuchni jako składnik smakotwórczy lub gotowano je tak jak inne warzywa korzeniowe, a ich aromat kumuluje się w trakcie przechowywania.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Chaerophyllum bulbosum",
+          "url": "https://en.wikipedia.org/wiki/Chaerophyllum_bulbosum"
+        },
+        "cytat": "It is otherwise used in cuisine for flavoring or cooked like other root vegetables. Much of the flavor comes from the skin of the tuber. The aroma intensifies the longer the plant is stored."
+      },
+      {
+        "id": "s1721",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Po ugotowaniu bulwy mają subtelny smak ziemniaków i kasztanów z lekką nutą selera i pasternaku, a na surowo smakują ostro podobnie do rzepy.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Chaerophyllum bulbosum",
+          "url": "https://en.wikipedia.org/wiki/Chaerophyllum_bulbosum"
+        },
+        "cytat": "Eaten raw, the taste is somewhat sharp like radish, but the cooked tuber gives a subtle taste of potatoes and chestnuts with a slightly pungent taste of celery and parsnip."
+      },
+      {
+        "id": "s1722",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Roślina jest zapylana głównie przez muchy i chrząszcze, co jest nietypowe wśród roślin z rodziny selerowatych.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Chaerophyllum bulbosum",
+          "url": "https://en.wikipedia.org/wiki/Chaerophyllum_bulbosum"
+        },
+        "cytat": "Pollinators for Chaerophyllum bulbosum includes flies and beetles."
       }
     ]
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-05",
+    "zaktualizowano": "2026-10-14",
     "pola": {
       "czesci_rosliny.korzeń.opis_botaniczny": {
         "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Opis surowca",
@@ -551,7 +1000,7 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Świerząbek bulwiasty (Chaerophyllum bulbosum) wytwarza jadalne bulwy hipokotlyowe, które mają kształt od stożkowatego do kulistym, osiągając grubość od 3 do 6 centymetrów, długość od 1,5 do 10 centymetrów oraz wagę od 140 do 200 gramów.",
+            "tekst": "Surowcem jest jadalna bulwa hipokotylowa o kształcie stożkowatym do kulistego, osiągająca 3–6 cm grubości, 1,5–10 cm długości oraz masę 140–200 g.",
             "zrodla": [
               2
             ],
@@ -560,62 +1009,26 @@
             ]
           }
         ],
-        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "model": "groq/qwen/qwen3.8-27b",
         "wejscie": "77c16e0711670733"
       },
-      "zastosowanie.kulinarne": {
-        "tytul": "Praktyczne zastosowanie - Kuchnia",
+      "czesci_rosliny.kłącze.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Kłącze (nowa część z sieci): Opis surowca",
         "typ": "tekst",
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Świerząbek bulwiasty (Chaerophyllum bulbosum) ma jadalne korzenie, które mają słodki i mięsisty smak przypominający orzechy i kasztany. Można je spożywać na surowo w sałatkach, koktajlach i sokach lub po ugotowaniu i usmażeniu jako dodatek do zup i dań mięsnych.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s670"
-            ]
-          }
-        ],
-        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "ba5b68574fbee73b"
-      },
-      "czesci_rosliny.korzeń.skladniki_aktywne": {
-        "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Substancje czynne",
-        "typ": "lista",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "Korzeń świerząbka bulwiastego zawiera duże ilości błonnika, witaminy B i C oraz sole mineralne.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s674"
-            ]
-          }
-        ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "14aa46870c10d698"
-      },
-      "czesci_rosliny.korzeń.czas_zbioru": {
-        "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Zbiór",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "Świerząbek bulwiasty (Chaerophyllum bulbosum) zawiera bulwy, które po przechowywaniu w temperaturze 4 stopni Celsjusza przez okres czterech miesięcy przekształcają znaczną część zawartej w nich skrobi w cukier.",
+            "tekst": "Zgrubienie podziemne ma stożkowaty lub kulisty kształt, osiąga 3-6 cm grubości i 1,5-10 cm długości, ważąc od 140 do 200 gramów przy szarej powierzchni.",
             "zrodla": [
               2
             ],
             "fakty": [
-              "s680"
+              "s824"
             ]
           }
         ],
-        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "fbeaf18cdeb80bbc"
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "7bed3eaf6a1def1d"
       },
       "wymagania.stanowisko": {
         "tytul": "Natura i siedlisko - Stanowisko",
@@ -641,7 +1054,16 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Świerząbek bulwiasty (Chaerophyllum bulbosum) jest rośliną, która w XIX wieku była uprawiana jako warzywo korzeniowe, jednak z czasem straciła na popularności. Obecnie jest hodowana ze względu na jadalne właściwości korzeni.",
+            "tekst": "W warunkach naturalnych gatunek rozprasza nasiona za pośrednictwem wód powierzchniowych (hydrochory).",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1716"
+            ]
+          },
+          {
+            "tekst": "W XIX wieku roślinę tę uprawiano jako warzywo korzeniowe, jednak z biegiem lat popadła w zapomnienie. Obecnie bywa jeszcze hodowana ze względu na jadalne właściwości korzeni.",
             "zrodla": [
               1
             ],
@@ -650,22 +1072,276 @@
             ]
           },
           {
-            "tekst": "W języku polskim świerząbek bulwiasty jest znany jako świerżop bulwiasty oraz różne odmiany nazwy trybula, takie jak trybula bulwiasta, grubokorzeniowa czy korzeniowa. W krajach niemieckojęzycznych ma natomiast liczne potoczne nazwy, np. Kerbelrübe, Knollenkerbel, Erdkastanie.",
+            "tekst": "Pierwsza nazwana odmiana ta rośliny, nazwana „Altan”, zostanie wyhodowana we Francji w 1986 roku, a następnie pojawiły się nowe odmiany takie jak „Véga” i „M4.10”, które mają niższą dormancję embrionów nasion.",
             "zrodla": [
-              1,
+              3
+            ],
+            "fakty": [
+              "s1717"
+            ]
+          },
+          {
+            "tekst": "W zwyczajowym języku polskim gatunek ten bywa nazywany świerzopem bulwiastym oraz różnymi odmianami nazwy trybula, takimi jak trybula bulwiasta, grubokorzeniowa czy korzeniowa.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s672"
+            ]
+          },
+          {
+            "tekst": "W krajach niemieckojęzycznych roślina ta nosi liczne nazwy potoczne, takie jak Kerbelrübe, Knollenkerbel, Erdkastanie czy regionalne określenia ludowe.",
+            "zrodla": [
               2
             ],
             "fakty": [
-              "s672",
-              "s681"
+              "s681",
+              "s827"
+            ]
+          },
+          {
+            "tekst": "Pierwszy odnotowany w historii odmiany hodowli ogrodowych nosi nazwę 'Altan' i pochodzi z Francji z roku 1986.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1715"
+            ]
+          },
+          {
+            "tekst": "Siewniki tej rośliny rozpylają się naturalnie drogą wodną (hydrochory), co sprzyja gęstym zbiorowiskom na brzegach rzek.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1719"
+            ]
+          },
+          {
+            "tekst": "Roślina jest zapylana głównie przez muchy i chrząszcze, co jest nietypowe wśród roślin z rodziny selerowatych.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1722"
             ]
           }
         ],
-        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "c57ca0eea95d4eb8"
+        "model": "bez LLM: brak modelu",
+        "wejscie": "c6d9978639ff64b4"
+      },
+      "czesci_rosliny.korzeń.czas_zbioru": {
+        "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Zbiór",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Korzenie o słodkim i mięsistym smaku, przypominającym orzechy i kasztany jadalne, kopie się jesienią. Można je spożywać na surowo jako dodatek do sałatek, koktajli i soków, a także gotować lub smażyć, dodając do zup i potraw mięsnych.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s670"
+            ]
+          },
+          {
+            "tekst": "Korzenie nabierają pełnego aromatu dopiero po kilku miesiącach od pojawienia się liści pod koniec jesieni, a ich smak jest najlepszy od grudnia do marca.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1703"
+            ]
+          },
+          {
+            "tekst": "Przechowywanie świeżo zebranych bulw w temperaturze 4 stopni Celsjusza przez okres czterech miesięcy powoduje przekształcenie znacznej części zawartej w nich skrobi w cukier.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s680"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "137209464bae02c6"
+      },
+      "czesci_rosliny.korzeń.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Korzeń zawiera duże ilości błonnika oraz witaminy B i C, a także sole mineralne.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s674"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "14aa46870c10d698"
+      },
+      "czesci_rosliny.kłącze.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Kłącze (nowa część z sieci): Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Bulwa jest bogata w skrobię i białko, a zarazem uboga w tłuszcz; suszona postać podgatunku typowego zawiera do 57% skrobi i 5% cukru.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s825"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "f7d7be010959567f"
+      },
+      "czesci_rosliny.nasiona.wlasciwości": {
+        "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Nasiona tracą szybko żywotność, zwłaszcza w suchym środowisku, co wymusza coroczny siew świeżego materiału rozmnożeniowego.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1713"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "ec86431d46484bdd"
+      },
+      "czesci_rosliny.ziele.wlasciwości": {
+        "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "W dawnych czasach młode liście oraz obrane fragmenty rośliny wykorzystywano w kuchni jako dodatek do zup ziołowych, substytut szpinaku lub przyprawę do sałatek.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s826"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "1d327c37a14484dd"
+      },
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Roślina ta wykazuje duże podobieństwo morfologiczne do rodzimego i silnie trującego szczwołu plamistego, co stwarza ryzyko pomyłki.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s828"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "398101f589c95e8f"
+      },
+      "zastosowanie.ogrodowe": {
+        "tytul": "Praktyczne zastosowanie - Ogród",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Roślina jest podatna na te same choroby co marchew i seler, takie jak muchówka marchwionka czy rdzewiaki korzeniowe.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1714"
+            ]
+          },
+          {
+            "tekst": "Korzenie są podatne na szkodniki podobne do marchwi i pasternaku, głównie muchę korzeniową (fly) oraz mszyce korzeni, a także mogą być gospodarzem wirusa mozaiki selera.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1718"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "d874fde09e557506"
+      },
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Roślina jest dwuletnim byliną, a w pierwszym roku wytwarza rozetę liści, w której gromadzi duże ilości skrobi niezbędne do kwitnienia w drugim roku.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1712"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "b4db844c4938663a"
+      },
+      "zastosowanie.kulinarne": {
+        "tytul": "Praktyczne zastosowanie - Kuchnia",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Tradycyjnie stosowano bulwy w kuchni jako składnik smakotwórczy lub gotowano je tak jak inne warzywa korzeniowe, a ich aromat kumuluje się w trakcie przechowywania.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1720"
+            ]
+          },
+          {
+            "tekst": "Po ugotowaniu bulwy mają subtelny smak ziemniaków i kasztanów z lekką nutą selera i pasternaku, a na surowo smakują ostro podobnie do rzepy.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1721"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "4e5dc39565dc5d1c"
       }
     },
     "uzyte_fakty": [
+      "s1703",
+      "s1712",
+      "s1713",
+      "s1714",
+      "s1715",
+      "s1716",
+      "s1717",
+      "s1718",
+      "s1719",
+      "s1720",
+      "s1721",
+      "s1722",
       "s668",
       "s669",
       "s670",
@@ -673,7 +1349,12 @@
       "s674",
       "s677",
       "s680",
-      "s681"
+      "s681",
+      "s824",
+      "s825",
+      "s826",
+      "s827",
+      "s828"
     ]
   }
 }

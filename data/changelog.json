@@ -3,6 +3,42 @@
  "opis": "Kronika Siedziby Kwiatownika - pisze ja agent wdrozen (Siedziba).",
  "wpisy": [
   {
+   "data": "2026-10-15T09:53:22+02:00",
+   "tytul": "Nowa wiedza o 2 roślinach",
+   "opis": "Siedziba zebrała 36 sprawdzonych informacji (źródła: niemieckie, angielskie, japońskie, chińskie).",
+   "liczby": {
+    "informacje": 36,
+    "przepisy": 0,
+    "rosliny": 2,
+    "nowe_rosliny": 0,
+    "zdjecia": 0,
+    "rozmieszczone": 0
+   },
+   "rosliny": [
+    {
+     "id": "kasztanowiec",
+     "nazwa": "Kasztanowiec zwyczajny/pospolity",
+     "nowe": 18,
+     "jezyki": [
+      "de",
+      "en",
+      "ja",
+      "zh"
+     ]
+    },
+    {
+     "id": "swierzabek_bulwiasty",
+     "nazwa": "swierzabek_bulwiasty",
+     "nowe": 18,
+     "jezyki": [
+      "de",
+      "en"
+     ]
+    }
+   ],
+   "przepisy": []
+  },
+  {
    "data": "2026-10-14T17:45:32+02:00",
    "tytul": "Nowa wiedza o 6 roślinach",
    "opis": "Siedziba zebrała 171 sprawdzonych informacji (źródła: niemieckie, angielskie, francuskie, japońskie, chińskie). 35 informacji z sieci trafiło do właściwych rozdziałów i podrozdziałów stron roślin. Dodano 5 zdjęć z Wikimedia Commons.",
