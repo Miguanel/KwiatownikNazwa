@@ -124,7 +124,6 @@ def index():
     # Strona glowna jest lekka: Bestiariusz renderowany tutaj (z miniaturami), a dane wyszukiwarki przegladarka
     # pobiera w tle z /api/szukaj.json (app/utils/home_data.py). Wczesniej w HTML bylo ok. 5 MB JSON-a.
     from app.utils.home_data import bestiary
-    from app.utils.kronika import stan_siedziby
     lat, lon = '49.95', '18.38'
     city_name = "Z (Domyślnie)"
 
@@ -159,5 +158,4 @@ def index():
         astro=astro,
         knowledge=knowledge,
         kronika=kronika(12),
-        stan=stan_siedziby(),
     )

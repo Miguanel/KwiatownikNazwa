@@ -53,8 +53,8 @@
     <div id="kwResults" class="kw-results" aria-live="polite" hidden></div>
 </section>
 
-<!-- PAPIRUS – Kronika Siedziby: historia aktualizacji Kwiatownika (z data/changelog.json i plikow roslin)
-     + na zywo: czy Siedziba teraz pracuje i nad czym (static/js/papirus.js, backend Kwiatownika) -->
+<!-- PAPIRUS – Kronika Siedziby: historia aktualizacji Kwiatownika (z data/changelog.json i plikow roslin).
+     Tylko wpisy z konkretnymi datami i tym, co zebrano – bez stanu "Siedziba pracuje" i czasow "X temu". -->
 <link rel="stylesheet" href="{{ url_for('static', filename='css/papirus.css') }}">
 <section class="kw-papyrus-wrap" id="kwPapyrus" aria-labelledby="kwPapyrusTitle">
     <h3 class="section-title" id="kwPapyrusTitle"><i class="ra ra-scroll-unfurled"></i> Kronika Siedziby
@@ -62,40 +62,6 @@
     <div class="kw-papyrus">
         <div class="kw-papyrus-rod" aria-hidden="true"></div>
         <div class="kw-papyrus-sheet" tabindex="0" aria-label="Kronika Siedziby – przewijana lista zmian">
-            {# Stan Siedziby z data/siedziba_stan.json (commituje go agent wdrozen) - bez zapytan do backendu #}
-            <div class="kw-live{% if stan and stan.pracuje %} is-reported{% endif %}" id="kwPapyrusLive" aria-live="polite"
-                 {% if stan %}data-ts="{{ stan.zaktualizowano }}"{% endif %}>
-                <span class="kw-live-dot" aria-hidden="true"></span>
-                <span class="kw-live-text">
-                {% if stan and stan.pracuje %}
-                    <strong class="kw-live-head">Siedziba pracowała</strong>
-                    <small>(meldunek z <time data-ago datetime="{{ stan.zaktualizowano }}">{{ stan.kiedy }}</time>)</small>:
-                    {% for z in stan.zadania %}{{ z.opis }}{% if not loop.last %} · {% endif %}{% endfor %}
-                {% elif stan %}
-                    <strong class="kw-live-head">Siedziba czeka na kolejne zadanie</strong>
-                    <small>(meldunek z <time data-ago datetime="{{ stan.zaktualizowano }}">{{ stan.kiedy }}</time>)</small>
-                {% else %}
-                    Siedziba Kwiatownika zbiera wiedzę o roślinach z zagranicznych źródeł – poniżej kronika jej pracy.
-                {% endif %}
-                </span>
-            </div>
-            {% if stan and (stan.liczby or stan.najczesciej_czytane) %}
-            <div class="kw-papyrus-stats" id="kwPapyrusStats">
-                {% for l in stan.liczby %}<span><b>{{ l.n }}</b> {{ l.tekst }}</span>{% endfor %}
-                {% if stan.najczesciej_czytane %}<span class="kw-papyrus-top">Najczęściej czytane:
-                    {% for t in stan.najczesciej_czytane %}<a href="{{ url_for('plants.plant_detail', plant_id=t.id) }}">{{ t.nazwa }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</span>{% endif %}
-            </div>
-            {% endif %}
-            {% if stan and stan.wpisy %}
-            <ol class="kw-chronicle kw-chronicle-live" id="kwPapyrusLiveLog">
-                {% for w in stan.wpisy %}
-                <li class="kw-chronicle-entry is-live" data-kind="{{ w.kind }}">
-                    <time data-ago datetime="{{ w.ts }}">{{ w.kiedy }}</time>
-                    <p>{% if w.url %}<a href="{{ w.url }}">{{ w.text }}</a>{% else %}{{ w.text }}{% endif %}</p>
-                </li>
-                {% endfor %}
-            </ol>
-            {% endif %}
             <ol class="kw-chronicle" id="kwPapyrusLog">
                 {% for w in kronika %}
                 <li class="kw-chronicle-entry">
