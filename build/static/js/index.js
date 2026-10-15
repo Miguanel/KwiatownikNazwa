@@ -880,8 +880,8 @@
         const season = Object.keys(seasonMonths).find(s => seasonMonths[s].includes(m));
         const chips = [];
         const mName = monthNames[m];
-        if (calendarSearchMap[mName]) chips.push({ label: `Ten miesiąc: ${mName}`, value: mName, icon: 'ra-hourglass' });
-        if (calendarSearchMap[season]) chips.push({ label: `Pora roku: ${season}`, value: season, icon: 'ra-sun' });
+        if (calendarSearchMap[mName]) chips.push({ label: `Ten miesiąc: ${mName.toUpperCase()}`, value: mName, icon: 'ra-hourglass' });
+        if (calendarSearchMap[season]) chips.push({ label: `Pora roku: ${season.toUpperCase()}`, value: season, icon: 'ra-sun' });
         ['zbiór', 'sadzenie'].forEach(k => { if (calendarSearchMap[k]) chips.push({ label: k, value: k, icon: calendarSearchMap[k].icon }); });
         ['przeziębienie', 'kaszel', 'odporność', 'rany', 'syrop'].forEach(k => chips.push({ label: k, value: k, icon: 'ra-health' }));
         quickBox.innerHTML = '<span class="kw-quick-label">Spróbuj:</span>' + chips.map(c =>
