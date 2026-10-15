@@ -114,7 +114,10 @@
     "zadania": [
       {
         "czynnosc": "Wiosenny podział kłączy",
-        "miesiace": [3, 4],
+        "miesiace": [
+          3,
+          4
+        ],
         "opis": "Rozmnażanie wegetatywne poprzez wykopywanie części plątaniny korzeniowej z młodymi pędami i przenoszenie na nowe cieniste stanowiska.",
         "faza_ksiezyca": "Księżyc ubywający",
         "pora_dnia": "Pochmurne popołudnie",
@@ -123,7 +126,9 @@
       },
       {
         "czynnosc": "Zbiór ziela",
-        "miesiace": [5],
+        "miesiace": [
+          5
+        ],
         "opis": "Ścinanie pędów 2-3 cm nad ziemią, zaraz przed rozwinięciem się białych kwiatków. Po przekwitnięciu ilość kumaryny drastycznie spada.",
         "faza_ksiezyca": "Pełnia / Pierwsza kwadra (Księżyc przybywający)",
         "pora_dnia": "Poranek po zejściu rosy",
@@ -132,7 +137,10 @@
       },
       {
         "czynnosc": "Szybkie suszenie ziela",
-        "miesiace": [5, 6],
+        "miesiace": [
+          5,
+          6
+        ],
         "opis": "Należy ułożyć bardzo cienką warstwę w zacienionym, przewiewnym miejscu (temperatura max 35°C). Marzanka nie może leżeć w stosach, bo pleśnieje (tworząc toksyczny dikumarol).",
         "faza_ksiezyca": "Księżyc ubywający",
         "pora_dnia": "Dowolna",
@@ -141,5 +149,444 @@
       }
     ]
   },
-  "ostrzezenia": "Bezwzględnie unikać podawania dzieciom oraz kobietom w ciąży. Ze względu na specyficzne działanie kumaryny, roślina w większych ilościach jest hepatotoksyczna (obciąża wątrobę). Suszyć bardzo ostrożnie, w suchych i przewiewnych miejscach – pleśniejąca marzanka tworzy niebezpieczny dla krzepnięcia krwi dikumarol."
+  "ostrzezenia": "Bezwzględnie unikać podawania dzieciom oraz kobietom w ciąży. Ze względu na specyficzne działanie kumaryny, roślina w większych ilościach jest hepatotoksyczna (obciąża wątrobę). Suszyć bardzo ostrożnie, w suchych i przewiewnych miejscach – pleśniejąca marzanka tworzy niebezpieczny dla krzepnięcia krwi dikumarol.",
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-10-15",
+    "uporzadkowano": "2026-10-15",
+    "uklad": "deterministyczny: zly tekst punktu [3]",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (pl): Przytulia wonna",
+        "url": "https://pl.wikipedia.org/wiki/Przytulia_wonna",
+        "jezyk": "pl",
+        "typ": "wikipedia",
+        "nr": 1
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "czesci_rosliny",
+        "tytul": "Części rośliny i surowce",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Surowcem zielarskim jest ziele, które zbiera się przed kwitnieniem rośliny, przy ładnej pogodzie. Po zebraniu suszy się je w miejscach przewiewnych i zacienionych, podczas tego procesu wydziela intensywną woń siana, a susz barwi się na ciemny kolor.",
+            "czesc": "ziele",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1785"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Tradycyjnie stosowano napar z ziela w zaburzeniach krążenia, żylakach, skurczach jelit i dróg moczowych, a także przy kamicy i dolegliwościach wątroby, ze względu na działanie rozkurczające i uspokajające.",
+            "czesc": "ziele",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1786"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kosmetyka",
+        "tytul": "Kosmetyka",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Napar z rosnicy stosowano jako kąpiel lub do picia w celu lekkiego przyciemnienia jasnej, bladej skóry. Natomiast kumarynę wydzielaną przez roślinę wykorzystuje się jako substancję zapachową w przemyśle perfumeryjnym.",
+            "czesc": "ziele",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1787"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kultura",
+        "tytul": "Wierzenia i tradycje",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Dawniej suszone liście rozsypywano na podłogach, aby neutralizować nieprzyjemne zapachy w domach, oraz wykorzystywano je jako środek odstraszający owady. Tym samym wypełniano poduszki i materace, co wiązano z symbolami czystości i płodności.",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1791"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "nazwy_ludowe",
+        "tytul": "Nazwy ludowe",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W dawnych czasach przytulii wonnej nadawano nazwy zwyczajowe: majownik oraz barwica wonna.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1784"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W Niemczech od 1974 roku stosowanie przytulii wonnej w produktach przeznaczonych dla dzieci jest nielegalne. Słodkie wyroby z tej rośliny, takie jak galaretki czy lody, często są sztucznie barwione na zielono i zawierają zaledwie śladowe ilości suszu, lub nie zawierają go wcale.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1790"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "ciekawostki",
+        "tytul": "Ciekawostki",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Kwiaty mają słodki, orzechowy i waniliowy aromat, są jadalne i stosowane do dekorowania potraw. Zbierane przed kwitnieniem stanowią istotny składnik tradycyjnego napoju majowego Maitrank wywarzanego w Arlon.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1788"
+            ]
+          },
+          {
+            "tekst": "Suszone liście o zapachu świeżego siału wykorzystuje się do produkcji syropów, galaretek, herbatek z ziół oraz aromatyzowania kremów, napitków alkoholowych (takich jak niemiecki Maibowle), octów i herbat. Dzięki właściwościom ścinającymi mleko mogą być używane w produkcji sera.",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1789"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "ziele": [
+        "s1785",
+        "s1786",
+        "s1787"
+      ],
+      "liście": [
+        "s1791",
+        "s1789"
+      ],
+      "kwiaty": [
+        "s1788"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s1784",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "W dawnych czasach przytulii wonnej nadawano nazwy zwyczajowe: majownik oraz barwica wonna.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Przytulia wonna",
+          "url": "https://pl.wikipedia.org/wiki/Przytulia_wonna"
+        },
+        "cytat": "Dawne nazwy zwyczajowe: majownik, barwica wonna."
+      },
+      {
+        "id": "s1785",
+        "sekcja": "czesci_rosliny",
+        "czesc": "ziele",
+        "tekst": "Surowcem zielarskim jest ziele, które zbiera się przed kwitnieniem rośliny, przy ładnej pogodzie. Po zebraniu suszy się je w miejscach przewiewnych i zacienionych, podczas tego procesu wydziela intensywną woń siana, a susz barwi się na ciemny kolor.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Przytulia wonna",
+          "url": "https://pl.wikipedia.org/wiki/Przytulia_wonna"
+        },
+        "cytat": "Surowiec zielarski: ziele Herba Asperulae... Zbiór i suszenie: zbiera się przed kwitnieniem rośliny, przy ładnej pogodzie, suszy w miejscach przewiewnych i zacienionych. Podczas suszenia wydziela intensywną woń siana, po wysuszeniu czerniej"
+      },
+      {
+        "id": "s1786",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "ziele",
+        "tekst": "Tradycyjnie stosowano napar z ziela w zaburzeniach krążenia, żylakach, skurczach jelit i dróg moczowych, a także przy kamicy i dolegliwościach wątroby, ze względu na działanie rozkurczające i uspokajające.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Przytulia wonna",
+          "url": "https://pl.wikipedia.org/wiki/Przytulia_wonna"
+        },
+        "cytat": "Napar z ziela zmniejsza napięcie ścian naczyń krwionośnych oraz mięśni gładkich układu pokarmowego i moczowego. Używany jest w zaburzeniach krążenia, żylakach (w tym hemoroidach), skurczach jelit i dróg moczowych. Pomaga także przy kamicy i"
+      },
+      {
+        "id": "s1787",
+        "sekcja": "kosmetyka",
+        "czesc": "ziele",
+        "tekst": "Napar z rosnicy stosowano jako kąpiel lub do picia w celu lekkiego przyciemnienia jasnej, bladej skóry. Natomiast kumarynę wydzielaną przez roślinę wykorzystuje się jako substancję zapachową w przemyśle perfumeryjnym.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Przytulia wonna",
+          "url": "https://pl.wikipedia.org/wiki/Przytulia_wonna"
+        },
+        "cytat": "Napar można pić w celu lekkiego przyciemnienia jasnej, bladej skóry. w tym samym celu ów napar można stosować jako kąpiel. Kumaryna stosowana jest jako substancja zapachowa w perfumach."
+      },
+      {
+        "id": "s1788",
+        "sekcja": "ciekawostki",
+        "czesc": "kwiaty",
+        "tekst": "Kwiaty mają słodki, orzechowy i waniliowy aromat, są jadalne i stosowane do dekorowania potraw. Zbierane przed kwitnieniem stanowią istotny składnik tradycyjnego napoju majowego Maitrank wywarzanego w Arlon.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Przytulia wonna",
+          "url": "https://pl.wikipedia.org/wiki/Przytulia_wonna"
+        },
+        "cytat": "Kwiaty są jadalne, charakteryzują się słodkim, orzechowym, waniliowym aromatem. Wykorzystuje się je m.in. do garnirowania potraw. Zbierane przed zakwitnięciem są ważnym składnikiem napoju majowego Maitrank wywarzanego w Arlon."
+      },
+      {
+        "id": "s1789",
+        "sekcja": "ciekawostki",
+        "czesc": "liście",
+        "tekst": "Suszone liście o zapachu świeżego siału wykorzystuje się do produkcji syropów, galaretek, herbatek z ziół oraz aromatyzowania kremów, napitków alkoholowych (takich jak niemiecki Maibowle), octów i herbat. Dzięki właściwościom ścinającymi mleko mogą być używane w produkcji sera.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Przytulia wonna",
+          "url": "https://pl.wikipedia.org/wiki/Przytulia_wonna"
+        },
+        "cytat": "Suszone liście przypominają zapachem świeżo skoszone siano. Sporządza się z nich syropy, galaretki, ziołowe herbatki, aromatyzuje też się nimi kremy, napoje alkoholowe (np. niemiecki napój majowy Maibowle/Waldmeisterbowle), octy i herbatę. "
+      },
+      {
+        "id": "s1790",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "W Niemczech od 1974 roku stosowanie przytulii wonnej w produktach przeznaczonych dla dzieci jest nielegalne. Słodkie wyroby z tej rośliny, takie jak galaretki czy lody, często są sztucznie barwione na zielono i zawierają zaledwie śladowe ilości suszu, lub nie zawierają go wcale.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Przytulia wonna",
+          "url": "https://pl.wikipedia.org/wiki/Przytulia_wonna"
+        },
+        "cytat": "Od 1974 w Niemczech stosowanie przytulii wonnej (niem. Waldmeister) w produktach kierowanych do dzieci jest nielegalne. Obecne na tamtejszym rynku słodkie wyroby „przytuliowe” takie jak galaretki, lody, napoje gazowane itp. są sztucznie bar"
+      },
+      {
+        "id": "s1791",
+        "sekcja": "kultura",
+        "czesc": "liście",
+        "tekst": "Dawniej suszone liście rozsypywano na podłogach, aby neutralizować nieprzyjemne zapachy w domach, oraz wykorzystywano je jako środek odstraszający owady. Tym samym wypełniano poduszki i materace, co wiązano z symbolami czystości i płodności.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Przytulia wonna",
+          "url": "https://pl.wikipedia.org/wiki/Przytulia_wonna"
+        },
+        "cytat": "Suszone liście znajdują zastosowanie jako składnik kompozycji zapachowych... Suszona przytulia wonna wykorzystywana była też dawniej do neutralizacji brzydkich zapachów w domu (rozsypywano ją na podłodze) oraz jako środek odstraszający inse"
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-15",
+    "pola": {
+      "czesci_rosliny.ziele.wlasciwości": {
+        "tytul": "Surowce i zbiory - Herba Galii odorati (Herba Asperulae): Działanie",
+        "typ": "tekst",
+        "oryginal": "Rozkurczające na mięśnie gładkie (układ pokarmowy, drogi moczowe, macica), łagodnie uspokajające, ułatwiające zasypianie, poprawiające krążenie żylne, antyseptyczne i przeciwzapalne.",
+        "tresc": [
+          {
+            "tekst": "Rozkurczające na mięśnie gładkie (układ pokarmowy, drogi moczowe, macica), łagodnie uspokajające, ułatwiające zasypianie, poprawiające krążenie żylne, antyseptyczne i przeciwzapalne; tradycyjnie stosowano napar z ziela w zaburzeniach krążenia, żylakach, skurczach jelit i dróg moczowych oraz przy kamicy i dolegliwościach wątroby ze względu na działanie rozkurczające i uspokajające.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1786"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "56eeaea45fe388dc"
+      },
+      "zastosowanie.kosmetyczne": {
+        "tytul": "Praktyczne zastosowanie - Kosmetyka",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Napar z przytuli wonnej stosowano jako kąpiel lub do picia w celu lekkiego przyciemnienia jasnej, bladej skóry, a kumaryna wydzielana przez roślinę jest wykorzystywana jako substancja zapachowa w przemyśle perfumeryjnym.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1787"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "626c0e19c72d85a1"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "Zapach marzanki uwalnia się dopiero po naruszeniu struktury komórkowej rośliny – zjawisko to jest mechanizmem obronnym (uruchamia enzymy odcinające cukier od glikozydu), co często poetycko określa się jako 'zapach jej umierania'.",
+          "W średniowieczu marzankę rozrzucano na podłogach kościołów podczas świąt, by uwalniający się pod stopami wiernych aromat neutralizował zaduch w tłumie.",
+          "Król Polski, Stanisław Leszczyński, uważał napar z marzanki wonnej za swój ulubiony napój poranny i pił go codziennie dla zachowania trzeźwości umysłu.",
+          "Dawniej wierzono, że wianek z marzanki wonnej powieszony nad drzwiami chaty gwarantuje domownikom miłość i harmonię, a krowom mleczność.",
+          "Wyciąg z marzanki był używany historycznie jako naturalny aromat utrwalający w produkcji tytoniu fajkowego."
+        ],
+        "tresc": [
+          {
+            "tekst": "Zapach marzanki uwalnia się dopiero po naruszeniu struktury komórkowej rośliny – jest to mechanizm obronny, uruchamiający enzymy odcinające cukier od glikozydu, co poetycko określa się jako „zapach jej umierania”.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W średniowieczu marzankę rozrzucano na podłogach kościołów podczas świąt, a także w domach, aby neutralizować nieprzyjemne zapachy i odstraszać owady; aromat pod stopami wiernych neutralizował zaduch w tłumie.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1791"
+            ]
+          },
+          {
+            "tekst": "Król Polski, Stanisław Leszczyński, uważał napar z marzanki wonnej za swój ulubiony napój poranny i pił go codziennie dla zachowania trzeźwości umysłu.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Dawniej wierzono, że wianek z marzanki wonnej powieszony nad drzwiami chaty gwarantuje domownikom miłość i harmonię oraz krowom mleczność; przytulii wonnej nadawano także nazwy ludowe majownik i barwica wonna.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1784"
+            ]
+          },
+          {
+            "tekst": "Wyciąg z marzanki był używany historycznie jako naturalny aromat utrwalający w produkcji tytoniu fajkowego.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwiaty marzanki mają słodki, orzechowy i waniliowy aromat, są jadalne i stosowane do dekorowania potraw; zbierane przed kwitnieniem stanowią istotny składnik tradycyjnego napoju majowego Maitrank wywarzanego w Arlon.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1788"
+            ]
+          },
+          {
+            "tekst": "Suszone liście o zapachu świeżego siału wykorzystuje się do produkcji syropów, galaretek, herbatek, aromatyzowania kremów, napitków alkoholowych (np. niemieckiego Maibowle), octów i herbat; dzięki właściwościom ścinającym mogą być używane w produkcji sera.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1789"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "b1fce9191c4cbcbe"
+      },
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": "Bezwzględnie unikać podawania dzieciom oraz kobietom w ciąży. Ze względu na specyficzne działanie kumaryny, roślina w większych ilościach jest hepatotoksyczna (obciąża wątrobę). Suszyć bardzo ostrożnie, w suchych i przewiewnych miejscach – pleśniejąca marzanka tworzy niebezpieczny dla krzepnięcia krwi dikumarol.",
+        "tresc": [
+          {
+            "tekst": "Bezwzględnie unikać podawania dzieciom oraz kobietom w ciąży; w Niemczech od 1974 roku stosowanie przytulii wonnej w produktach przeznaczonych dla dzieci jest nielegalne.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1790"
+            ]
+          },
+          {
+            "tekst": "Ze względu na specyficzne działanie kumaryny, roślina w większych ilościach jest hepatotoksyczna (obciąża wątrobę).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Suszyć bardzo ostrożnie, w suchych i przewiewnych miejscach – pleśniejąca marzanka tworzy niebezpieczny dla krzepnięcia krwi dikumarol.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "6c54e5430d73fccd"
+      }
+    },
+    "uzyte_fakty": [
+      "s1784",
+      "s1786",
+      "s1787",
+      "s1788",
+      "s1789",
+      "s1790",
+      "s1791"
+    ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-15",
+    "jak": "llm:groq/openai/gpt-oss-120b",
+    "wejscie": "2a6e6ac8d9daec0f",
+    "wstawki": [
+      {
+        "miejsce": "surowce/czesc:ziele",
+        "rozdzial": "Surowce i zbiory",
+        "tytul": "Herba galii odorati (herba asperulae)",
+        "ikona": "ra-potion",
+        "nowy": false,
+        "punkty": [
+          {
+            "tekst": "Surowcem zielarskim jest ziele, które zbiera się przed kwitnieniem rośliny, przy ładnej pogodzie. Po zebraniu suszy się je w miejscach przewiewnych i zacienionych, podczas tego procesu wydziela intensywną woń siana, a susz barwi się na ciemny kolor.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1785"
+            ],
+            "sekcja": "czesci_rosliny",
+            "czesc": "ziele"
+          }
+        ]
+      }
+    ],
+    "duplikaty": []
+  }
 }

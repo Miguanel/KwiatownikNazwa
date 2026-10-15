@@ -10,7 +10,11 @@
 //                               główna nazwa i związki w nawiasie dostają osobne dymki
 //   data-wiki-term="Hasło"    – pojedynczy element = jedno hasło (gdy brak wartości – tekst elementu)
 //   data-wiki-skip            – fragment pomijany przy skanowaniu
-// Działa w wersji statycznej (wszystko w przeglądarce, API Wikipedii z CORS, bez klucza).
+// Gdy polska Wikipedia nie zna hasła: Wikidane -> Wikipedie w innych językach -> TŁUMACZENIE hasła na angielski
+// (np. „walepotriaty” -> „valepotriates”) -> angielska Wikipedia, angielski Wikisłownik, a na końcu zdanie
+// z artykułu, który o tym haśle wspomina (wyszukiwanie z tolerancją literówek). Każdy opis obcojęzyczny jest
+// tłumaczony na polski (Google Tłumacz bez klucza, zapasowo MyMemory) – oryginał można rozwinąć w dymku.
+// Działa w wersji statycznej (wszystko w przeglądarce, API Wikipedii/Wikisłownika/tłumacza z CORS, bez klucza).
 // ==========================================
 (function () {
     'use strict';
@@ -289,7 +293,7 @@
     // POBIERANIE OPISU Z WIKIPEDII (z pamięcią podręczną)
     // ------------------------------------------
     const memCache = new Map();
-    const CACHE_PREFIX = 'kw_wiki_v3:';   // v2: odrzucanie niepasujących wyników wyszukiwania
+    const CACHE_PREFIX = 'kw_wiki_v4:';   // v2: odrzucanie niepasujących wyników; v4: tłumaczenie i Wikisłownik
 
     function cacheGet(q) {
         if (memCache.has(q)) return memCache.get(q);
@@ -401,6 +405,161 @@
         return (a.startsWith(b) || b.startsWith(a)) && Math.abs(a.length - b.length) <= 2;
     }
 
+    // ------------------------------------------
+    // TŁUMACZENIE: Google Tłumacz (translate.googleapis.com, client=gtx – bez klucza, z CORS),
+    // a gdy nie odpowie – MyMemory (api.mymemory.translated.net, do 500 znaków). Wysyłane są tylko hasło
+    // i publiczny opis z Wikipedii/Wikisłownika – nic o użytkowniku.
+    // ------------------------------------------
+    const trCache = new Map();
+    async function translate(text, from, to) {
+        text = String(text || '').trim();
+        if (!text) return null;
+        const key = `${from}>${to}:${text}`;
+        if (trCache.has(key)) return trCache.get(key);
+        let out = null;
+        try {
+            const d = await getJson(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=${encodeURIComponent(from)}&tl=${encodeURIComponent(to)}&dt=t&q=${encodeURIComponent(text)}`);
+            const t = d && Array.isArray(d[0]) ? d[0].map(x => (x && x[0]) || '').join('').trim() : '';
+            if (t) out = { text: t, via: 'Google Tłumacz' };
+        } catch (e) { /* zapasowy tłumacz niżej */ }
+        if (!out && text.length <= 500) {
+            try {
+                const d = await getJson(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${encodeURIComponent(from === 'auto' ? 'en' : from)}|${encodeURIComponent(to)}`);
+                const t = d && d.responseStatus === 200 && d.responseData ? String(d.responseData.translatedText || '').trim() : '';
+                if (t && !/MYMEMORY WARNING|QUERY LENGTH LIMIT/i.test(t)) out = { text: t, via: 'MyMemory' };
+            } catch (e) { /* bez tłumaczenia */ }
+        }
+        trCache.set(key, out);
+        return out;
+    }
+
+    // warianty angielskiego hasła: „Valepotriates” -> valepotriates, valepotriate (liczba pojedyncza)
+    function enVariants(t) {
+        const w = String(t || '').trim().replace(/^(the|a|an)\s+/i, '');
+        const out = [w];
+        if (/ies$/i.test(w)) out.push(w.replace(/ies$/i, 'y'));
+        if (/s$/i.test(w) && !/ss$/i.test(w)) out.push(w.replace(/s$/i, ''));
+        if (/es$/i.test(w)) out.push(w.replace(/es$/i, ''));
+        return [...new Set(out.filter(x => x.length >= 3))];
+    }
+
+    function levenshtein(a, b) {
+        if (a === b) return 0;
+        if (Math.abs(a.length - b.length) > 4) return 99;
+        let prev = Array.from({ length: b.length + 1 }, (_, i) => i);
+        for (let i = 1; i <= a.length; i++) {
+            const cur = [i];
+            for (let j = 1; j <= b.length; j++) {
+                cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+            }
+            prev = cur;
+        }
+        return prev[b.length];
+    }
+
+    function htmlText(h) {
+        const d = document.createElement('div');
+        d.innerHTML = String(h || '');
+        return d.textContent.replace(/\s+/g, ' ').trim();
+    }
+
+    // angielski Wikisłownik: definicja słowa (REST API z CORS); „plural of X” -> definicja X
+    async function wiktionary(word, depth) {
+        const w = String(word || '').trim();
+        if (w.length < 3) return null;
+        for (const v of [...new Set([w.toLowerCase(), w])]) {
+            const d = await getJson(`https://en.wiktionary.org/api/rest_v1/page/definition/${encodeURIComponent(v.replace(/ /g, '_'))}`);
+            const entries = d && Array.isArray(d.en) ? d.en : [];
+            for (const e of entries) {
+                for (const def of e.definitions || []) {
+                    const text = htmlText(def.definition);
+                    if (!text) continue;
+                    const plural = /^plural of\s+(.+)$/i.exec(text);
+                    if (plural && !depth) {
+                        const base = await wiktionary(plural[1].replace(/[.\s]+$/, ''), 1);
+                        if (base) return base;
+                        continue;
+                    }
+                    if (text.length < 12) continue;
+                    return { title: capitalize(v), extract: text, lang: 'en', type: 'standard', thumb: '', kind: 'wiktionary',
+                        url: `https://en.wiktionary.org/wiki/${encodeURIComponent(v.replace(/ /g, '_'))}` };
+                }
+            }
+        }
+        return null;
+    }
+
+    async function plainExtract(title, lang) {
+        const d = await getJson(`${wikiHost(lang)}/w/api.php?action=query&prop=extracts&explaintext=1&exlimit=1&exchars=12000&redirects=1&titles=${encodeURIComponent(title)}&format=json&origin=*`);
+        const pages = d && d.query && d.query.pages ? Object.values(d.query.pages) : [];
+        return pages.length ? String(pages[0].extract || '') : '';
+    }
+
+    // słowo w tekście najbliższe szukanemu (literówki: „valeropotriates” ~ „valepotriates”)
+    function nearestWord(text, target) {
+        const t = target.toLowerCase();
+        const limit = Math.max(2, Math.round(t.length * 0.2));
+        let best = null;
+        for (const w of new Set(String(text).toLowerCase().match(/[a-zà-ÿ-]{5,}/g) || [])) {
+            const dist = levenshtein(w, t);
+            if (dist <= limit && (!best || dist < best.dist)) best = { word: w, dist };
+        }
+        return best;
+    }
+
+    function sentenceWith(text, word) {
+        const lines = String(text).split(/\n+/).map(x => x.trim()).filter(x => x && !/^=+/.test(x));
+        for (const line of lines) {
+            const i = line.toLowerCase().indexOf(word);
+            if (i < 0) continue;
+            const parts = line.split(/(?<=[.!?])\s+/);
+            const sent = parts.find(x => x.toLowerCase().includes(word)) || line;
+            return sent.length > 420 ? sent.slice(0, 420) + ' …' : sent;
+        }
+        return '';
+    }
+
+    // 5. hasło przetłumaczone na angielski -> artykuł, Wikisłownik, wzmianka w artykule (z tolerancją literówek)
+    async function viaTranslation(base) {
+        const tr = await translate(base, 'pl', 'en');
+        if (!tr || !tr.text) return null;
+        const term = tr.text.replace(/[.„”"]/g, '').trim();
+        if (normPl(term) === normPl(base) && !/[a-z]/i.test(term)) return null;
+        const variants = enVariants(term);
+        for (const v of variants) {
+            const s = await summary(v, 'en');
+            if (s && s.type !== 'disambiguation' && (foreignMatch(s.title, v) || relevant(s, v))) return Object.assign(s, { query: term });
+        }
+        for (const v of variants.slice(0, 2)) {
+            for (const t of (await search(v, 'en')).slice(0, 3)) {
+                if (!foreignMatch(t, v)) continue;
+                const s = await summary(t, 'en');
+                if (s && s.type !== 'disambiguation') return Object.assign(s, { query: term });
+            }
+        }
+        for (const v of variants) {
+            const w = await wiktionary(v);
+            if (w) return Object.assign(w, { query: term });
+        }
+        // wyszukiwanie przybliżone („słowo~”) -> poprawna pisownia z tekstu artykułu -> Wikisłownik albo zdanie
+        const fuzzy = (await search(`${variants[0]}~`, 'en')).slice(0, 3);
+        for (const title of fuzzy) {
+            const text = await plainExtract(title, 'en');
+            const near = nearestWord(text, variants[variants.length - 1]) || nearestWord(text, variants[0]);
+            if (!near) continue;
+            for (const v of enVariants(near.word)) {
+                const w = await wiktionary(v);
+                if (w) return Object.assign(w, { query: term, corrected: near.word });
+            }
+            const sent = sentenceWith(text, near.word);
+            if (sent) {
+                return { title, extract: sent, lang: 'en', type: 'standard', thumb: '', kind: 'mention', mention: near.word,
+                    query: term, url: `${wikiHost('en')}/wiki/${encodeURIComponent(title.replace(/ /g, '_'))}` };
+            }
+        }
+        return { missing: true, query: term };
+    }
+
     const inflight = new Map();
     function lookup(q) {
         const cached = cacheGet(q);
@@ -409,6 +568,7 @@
         const p = (async () => {
             let result = null;
             let disamb = null;
+            let tried = null;
             // hasło może mieć warianty: "Składniki mineralne|Sole mineralne|Makroelementy"
             const alts = String(q).split('|').map(x => x.trim()).filter(Boolean);
             try {
@@ -448,13 +608,23 @@
                     }
                 }
                 if (!result && disamb && relevant(disamb, alts[0] || q)) result = disamb;
-                cacheSet(q, result || { missing: true });
+                // 5. tłumaczenie hasła na angielski -> Wikipedia, Wikisłownik, wzmianka w artykule
+                if (!result) {
+                    const r = await viaTranslation(cleanQuery(alts[0] || q));
+                    if (r && !r.missing) result = r; else if (r) tried = r.query;
+                }
+                // opis obcojęzyczny -> po polsku (oryginał zostaje do rozwinięcia)
+                if (result && result.lang && result.lang !== 'pl' && result.extract) {
+                    const tr = await translate(shortExtract(result.extract), result.lang, 'pl');
+                    if (tr) { result.extractPl = tr.text; result.translator = tr.via; }
+                }
+                cacheSet(q, result || { missing: true, tried });
             } catch (e) {
                 result = { error: true };   // błąd sieci – nie zapisujemy, spróbujemy ponownie
             } finally {
                 inflight.delete(q);
             }
-            return result || { missing: true };
+            return result || { missing: true, tried };
         })();
         inflight.set(q, p);
         return p;
@@ -499,28 +669,43 @@
         const q = String(term.dataset.wiki || '').split('|')[0];
         let html = `<button type="button" class="kw-wiki-close" aria-label="Zamknij">&times;</button>`;
         if (!data) {
-            html += `<div class="kw-wiki-head">${esc(label)}</div><div class="kw-wiki-loading"><span class="kw-wiki-spinner"></span> Szukam w Wikipedii…</div>`;
+            html += `<div class="kw-wiki-head">${esc(label)}</div><div class="kw-wiki-loading"><span class="kw-wiki-spinner"></span> Szukam w Wikipedii (także po angielsku)…</div>`;
         } else if (data.error) {
             html += `<div class="kw-wiki-head">${esc(label)}</div><p class="kw-wiki-text">Nie udało się połączyć z Wikipedią. Spróbuj ponownie za chwilę.</p>
                 <a class="kw-wiki-more" href="${WIKI}/w/index.php?search=${encodeURIComponent(q)}" target="_blank" rel="noopener">Szukaj w Wikipedii ↗</a>`;
         } else if (data.missing) {
-            html += `<div class="kw-wiki-head">${esc(label)}</div><p class="kw-wiki-text">Wikipedia nie ma jeszcze krótkiego opisu tego hasła – ani po polsku, ani w innych językach.</p>
-                <a class="kw-wiki-more" href="${WIKI}/w/index.php?search=${encodeURIComponent(q)}" target="_blank" rel="noopener">Szukaj w Wikipedii ↗</a>`;
+            if (data.tried && data.tried.toLowerCase() === String(q).toLowerCase()) data = Object.assign({}, data, { tried: null });
+            html += `<div class="kw-wiki-head">${esc(label)}</div><p class="kw-wiki-text">Nie znalazłem opisu tego hasła ani w Wikipedii (po polsku i w innych językach), ani w angielskim Wikisłowniku${data.tried ? ` – także jako „${esc(data.tried)}”` : ''}.</p>
+                <div class="kw-wiki-foot"><span><a class="kw-wiki-more" href="${WIKI}/w/index.php?search=${encodeURIComponent(q)}" target="_blank" rel="noopener">Szukaj w Wikipedii ↗</a>${data.tried ? ` <a class="kw-wiki-more" href="https://en.wikipedia.org/w/index.php?search=${encodeURIComponent(data.tried)}" target="_blank" rel="noopener">Szukaj po angielsku ↗</a>` : ''}</span></div>`;
         } else {
-            const differs = label.length > 2 && !label.toLowerCase().startsWith(data.title.toLowerCase());   // znaczek „W” bez dopisku
-            html += `<div class="kw-wiki-head">${esc(data.title)}</div>`;
-            if (differs) html += `<div class="kw-wiki-sub">dla: „${esc(label)}”</div>`;
             const lang = data.lang || 'pl';
             const foreign = lang !== 'pl';
+            const kind = data.kind || 'wikipedia';                       // wikipedia | wiktionary | mention
+            const where = kind === 'wiktionary' ? `${esc(LANG_NAMES[lang] || lang).replace(/ej$/, 'ego')} Wikisłownika`
+                : kind === 'mention' ? `artykułu „${esc(data.title)}” w ${esc(LANG_NAMES[lang] || lang)} Wikipedii`
+                : `${esc(LANG_NAMES[lang] || lang)} Wikipedii`;
+            // obcojęzyczne hasło: nagłówek po polsku (słowo z tekstu), oryginalny tytuł niżej
+            const head = foreign && kind !== 'wikipedia' ? capitalize(label) : (foreign && data.extractPl ? capitalize(label) : data.title);
+            const differs = label.length > 2 && !label.toLowerCase().startsWith(String(head).toLowerCase());
+            html += `<div class="kw-wiki-head">${esc(head)}</div>`;
+            if (differs) html += `<div class="kw-wiki-sub">dla: „${esc(label)}”</div>`;
             if (foreign) {
-                html += `<div class="kw-wiki-lang">🌐 Brak artykułu po polsku – opis z ${esc(LANG_NAMES[lang] || lang)} Wikipedii</div>`;
+                const orig = kind === 'mention' ? (data.mention || data.query) : data.title;
+                html += `<div class="kw-wiki-lang">🌐 Brak opisu po polsku – ${data.extractPl ? 'przetłumaczono automatycznie' : 'opis'} z ${where}${orig && orig.toLowerCase() !== String(head).toLowerCase() ? ` (hasło: <i lang="${esc(lang)}">${esc(orig)}</i>)` : ''}</div>`;
+                if (data.corrected) html += `<div class="kw-wiki-sub">poprawiona pisownia: ${esc(data.corrected)}</div>`;
                 if (data.wdDesc) html += `<div class="kw-wiki-sub">Wikidata: ${esc(data.wdDesc)}</div>`;
             }
-            html += `<div class="kw-wiki-body">${data.thumb ? `<img class="kw-wiki-img" src="${esc(data.thumb)}" alt="" loading="lazy">` : ''}<p class="kw-wiki-text" lang="${esc(lang)}">${esc(shortExtract(data.extract))}</p></div>`;
+            const text = foreign && data.extractPl ? data.extractPl : shortExtract(data.extract);
+            const intro = kind === 'mention' ? '<span class="kw-wiki-sub">Wzmianka: </span>' : '';
+            html += `<div class="kw-wiki-body">${data.thumb ? `<img class="kw-wiki-img" src="${esc(data.thumb)}" alt="" loading="lazy">` : ''}<p class="kw-wiki-text" lang="${foreign && data.extractPl ? 'pl' : esc(lang)}">${intro}${esc(text)}</p></div>`;
+            if (foreign && data.extractPl) {
+                html += `<details class="kw-wiki-orig"><summary>Oryginał (${esc(lang.toUpperCase())})${data.translator ? ` · tłumaczenie: ${esc(data.translator)}` : ''}</summary><p lang="${esc(lang)}">${esc(shortExtract(data.extract))}</p></details>`;
+            }
             if (data.type === 'disambiguation') html += `<p class="kw-wiki-sub">To hasło ma kilka znaczeń – szczegóły w Wikipedii.</p>`;
-            const translate = foreign
-                ? ` <a class="kw-wiki-more" href="https://translate.google.com/translate?sl=${encodeURIComponent(lang)}&tl=pl&u=${encodeURIComponent(data.url)}" target="_blank" rel="noopener">Przetłumacz ↗</a>` : '';
-            html += `<div class="kw-wiki-foot"><span><a class="kw-wiki-more" href="${esc(data.url)}" target="_blank" rel="noopener">Czytaj w Wikipedii${foreign ? ` (${esc(lang.toUpperCase())})` : ''} ↗</a>${translate}</span><span class="kw-wiki-lic">Wikipedia${foreign ? ` (${esc(lang)})` : ''} · CC BY-SA</span></div>`;
+            const site = kind === 'wiktionary' ? 'Wikisłownik' : 'Wikipedia';
+            const translatePage = foreign
+                ? ` <a class="kw-wiki-more" href="https://translate.google.com/translate?sl=${encodeURIComponent(lang)}&tl=pl&u=${encodeURIComponent(data.url)}" target="_blank" rel="noopener">Strona po polsku ↗</a>` : '';
+            html += `<div class="kw-wiki-foot"><span><a class="kw-wiki-more" href="${esc(data.url)}" target="_blank" rel="noopener">${kind === 'wiktionary' ? 'Czytaj w Wikisłowniku' : 'Czytaj w Wikipedii'}${foreign ? ` (${esc(lang.toUpperCase())})` : ''} ↗</a>${translatePage}</span><span class="kw-wiki-lic">${site}${foreign ? ` (${esc(lang)})` : ''} · CC BY-SA</span></div>`;
         }
         tip.innerHTML = html;
     }

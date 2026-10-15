@@ -211,6 +211,18 @@ html[data-theme="night"] .alchemical-tag.lead-tag { background: #2b2412 !importa
 html[data-theme="night"] .origin-filter .btn { color: #c9bfa6 !important; border-color: #5a5440 !important; background: transparent !important; }
 html[data-theme="night"] .origin-filter .btn.active, html[data-theme="night"] .origin-filter .btn:hover { background: #2e3a24 !important; color: #f0e6cc !important; border-color: #6f8a55 !important; }
 
+/* ---------- Gildie: „Charakterystyka Systemowa”, podpowiedzi wyszukiwarki ---------- */
+html[data-theme="night"] .info-box { background: #1d201a !important; color: var(--kw-ink) !important; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5) !important; }
+html[data-theme="night"] .info-box p, html[data-theme="night"] .info-box li { color: var(--kw-ink) !important; }
+html[data-theme="night"] .info-box:not([style*="border-left-color"]) { border-left-color: #6f8a55 !important; }
+html[data-theme="night"] .info-box li[style*="#777"] { color: #8c846f !important; }
+html[data-theme="night"] #sysCharTitle { color: #e2cf9a !important; border-bottom-color: var(--kw-gold) !important; }
+html[data-theme="night"] .list-group-item { background-color: #1b1e19 !important; color: var(--kw-ink) !important; border-color: #3b3829 !important; }
+html[data-theme="night"] .list-group-item strong { color: #e6dcc3 !important; }
+html[data-theme="night"] .list-group-item small, html[data-theme="night"] .list-group-item .text-muted { color: #9b937f !important; }
+html[data-theme="night"] .list-group-item-action:hover, html[data-theme="night"] .list-group-item-action:focus,
+html[data-theme="night"] .list-group-item.active { background-color: #2a2d24 !important; color: var(--kw-gold) !important; }
+
 /* ---------- strona rośliny ---------- */
 html[data-theme="night"] .grimmoire-wrapper {
     --kw-parch: #161913; --kw-paper: #1d201a; --kw-ink: #ddd5c0; --kw-muted: #a59c86;
@@ -261,3 +273,5 @@ html[data-theme="night"] #kwFireflies { opacity: 1; }
 html.kw-theme-anim body, html.kw-theme-anim body * { transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease !important; }
 html[data-theme="night"] .web-insert { background: rgba(120, 160, 210, 0.08) !important; border-left-color: #4f6f96 !important; }
 html[data-theme="night"] .web-insert-head { color: #8fb3e0 !important; }
+html[data-theme="night"] .kw-wiki-orig, html[data-theme="night"] .kw-wiki-orig summary { color: #a59c86 !important; }
+html[data-theme="night"] .kw-wiki-orig p { border-left-color: #4a4532 !important; color: #c9bfa6 !important; }
