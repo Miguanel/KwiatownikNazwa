@@ -128,6 +128,89 @@ html[data-theme="night"] .comp-role { color: #a59c86 !important; }
 html[data-theme="night"] .compare-table { background: #1d201a !important; }
 html[data-theme="night"] .danger-cell { background: #2c1714 !important; }
 
+/* ---------- kontener w kontenerze (generator, Przepiśnik, porównywarka) ----------
+   base.html daje KAŻDEMU .container białe tło i ramkę, a nocą przyciemniona była tylko karta zewnętrzna
+   (body > .container) – strony, które w treści mają własny <div class="container">, zostawały białe. */
+html[data-theme="night"] .container .container { background: transparent !important; border-color: transparent !important; box-shadow: none !important; }
+
+/* ---------- Laboratorium (generator) ---------- */
+html[data-theme="night"] .filter-box { background: #1a2016 !important; border-left-color: #6f8a55 !important; color: var(--kw-ink) !important; }
+html[data-theme="night"] .part-card-btn:hover { background: #24281f !important; border-color: var(--kw-gold) !important; }
+html[data-theme="night"] .part-name { color: #e2cf9a !important; border-bottom-color: #3b3829 !important; }
+html[data-theme="night"] .part-info-block, html[data-theme="night"] .part-info-block .kw-wiki,
+html[data-theme="night"] .col-ingredients { color: #b9b09a !important; }
+html[data-theme="night"] .part-info-label { color: #a9c784 !important; }
+html[data-theme="night"] .part-info-block [style*="color: #2d5a27"] { color: #a9c784 !important; }
+html[data-theme="night"] .part-web { color: #8fb3e0 !important; border-color: #33506e !important; }
+html[data-theme="night"] .part-warn, html[data-theme="night"] .delete-btn, html[data-theme="night"] .warning-btn { color: #e07b6e !important; }
+html[data-theme="night"] .lab-table { background: #1d201a !important; }
+html[data-theme="night"] .lab-table td { border-bottom-color: #2e2c22 !important; color: var(--kw-ink) !important; }
+html[data-theme="night"] .lab-table tr:last-child { border-bottom-color: #6f8a55 !important; }
+html[data-theme="night"] .table-responsive-wrapper { border-color: #3b3829 !important; }
+html[data-theme="night"] .vol-input:focus { background: #1f2a18 !important; }
+html[data-theme="night"] .wiki-clickable { color: #e2cf9a !important; }
+html[data-theme="night"] .wiki-clickable:hover { color: var(--kw-gold) !important; }
+html[data-theme="night"] .lock-btn { color: #6b6555 !important; }
+html[data-theme="night"] .lock-btn.locked { color: var(--kw-gold) !important; }
+/* kolory wpisane w style="" szablonu i skryptu generatora (ramki ostrzeżeń, podsumowanie, dziennik) */
+html[data-theme="night"] [style*="background: #f9f9f9"], html[data-theme="night"] [style*="background: #fff9c4"],
+html[data-theme="night"] [style*="background: #fff8e1"] { background: #1d201a !important; border-color: #3b3829 !important; color: var(--kw-ink) !important; }
+html[data-theme="night"] [style*="background: #ffebee"], html[data-theme="night"] [style*="background: #fff5f5"] {
+    background: #2c1714 !important; border-color: #6b3a33 !important; color: #f0b8ae !important;
+}
+html[data-theme="night"] [style*="color: #c62828"], html[data-theme="night"] [style*="color: #d32f2f"] { color: #e07b6e !important; }
+html[data-theme="night"] [style*="color: #333"], html[data-theme="night"] [style*="color: #000"], html[data-theme="night"] [style*="color: black"] { color: var(--kw-ink) !important; }
+html[data-theme="night"] [style*="color: #999"] { color: #8c846f !important; }
+/* elementy pokazywane skryptem (style.display) - przegladarka zapisuje wtedy kolory w style="" jako rgb(...) */
+html[data-theme="night"] #partsContainer, html[data-theme="night"] [style*="rgb(249, 249, 249)"] {
+    background: #191c16 !important; border-color: #3b3829 !important; color: var(--kw-ink) !important;
+}
+html[data-theme="night"] #warningsContainer, html[data-theme="night"] #alertBox, html[data-theme="night"] [style*="rgb(255, 235, 238)"] {
+    background: #2c1714 !important; border-color: #6b3a33 !important; color: #f0b8ae !important;
+}
+html[data-theme="night"] #warningsContainer *, html[data-theme="night"] #alertBox * { color: inherit; }
+html[data-theme="night"] #warningsContainer strong, html[data-theme="night"] [style*="rgb(198, 40, 40)"] { color: #e07b6e !important; }
+html[data-theme="night"] [style*="color: #856404"] { color: #e0c27a !important; }
+html[data-theme="night"] .alert-warning { background: #2b2412 !important; border-color: #7a6326 !important; color: #e0c27a !important; }
+
+/* ---------- Przepiśnik: pieczątki, odznaki, opis w grymuarze ---------- */
+html[data-theme="night"] .stamp-med { background: #1c2a19 !important; color: #a9c784 !important; border-color: #4f6b3d !important; }
+html[data-theme="night"] .stamp-food { background: #2b2412 !important; color: #e0c27a !important; border-color: #7a6326 !important; }
+html[data-theme="night"] .stamp-dye { background: #261a2e !important; color: #c9a3e0 !important; border-color: #5e3f73 !important; }
+html[data-theme="night"] .stamp-cosm { background: #2e1822 !important; color: #e59ab8 !important; border-color: #74364f !important; }
+html[data-theme="night"] .web-badge, html[data-theme="night"] .alchemical-tag.web-tag { background: #1a2633 !important; color: #9cc3ef !important; border-color: #33506e !important; }
+html[data-theme="night"] .btn-details { color: #e2cf9a !important; border-color: #6f8a55 !important; }
+html[data-theme="night"] .btn-details:hover { background: #2e3a24 !important; color: #f0e6cc !important; }
+html[data-theme="night"] .recipe-title { color: #e2cf9a !important; border-bottom-color: #3b3829 !important; }
+html[data-theme="night"] .recipe-description, html[data-theme="night"] .recipe-facts { color: var(--kw-ink) !important; }
+html[data-theme="night"] .recipe-facts a, html[data-theme="night"] .ingredient-plant-link { color: #a9c784 !important; }
+html[data-theme="night"] .enrich-note { background: #22241a !important; color: #c9bfa6 !important; border-left-color: #5a5440 !important; }
+html[data-theme="night"] .recipe-source-more { background: #2a2d24 !important; }
+/* grymuar przepisu (okno ze szczegółami): akordeony, ramki zastosowania i ostrzeżeń, kroki, etykiety */
+html[data-theme="night"] .recipe-modal-header { background: #1b1e19 !important; border-color: #3b3829 !important; }
+html[data-theme="night"] details.grimoire-details > summary { background: #24281f !important; color: #e2cf9a !important; }
+html[data-theme="night"] details.grimoire-details > summary:hover { background: #2c3126 !important; }
+html[data-theme="night"] details.grimoire-details[open] > summary { border-bottom-color: #3b3829 !important; }
+html[data-theme="night"] .details-content, html[data-theme="night"] .subdetails-content { color: var(--kw-ink) !important; }
+html[data-theme="night"] .details-content strong, html[data-theme="night"] .subdetails-content strong,
+html[data-theme="night"] .details-content .kw-wiki, html[data-theme="night"] .subdetails-content .kw-wiki { color: inherit !important; }
+html[data-theme="night"] .details-content strong, html[data-theme="night"] .subdetails-content strong { color: #e6dcc3 !important; }
+html[data-theme="night"] .details-highlight { background: #172231 !important; border-left-color: #4f79ad !important; }
+html[data-theme="night"] .details-warning { background: #2c1714 !important; border-left-color: #b4544a !important; }
+html[data-theme="night"] details.grimoire-details > summary[style*="c62828"], html[data-theme="night"] .details-warning strong { color: #ef8f82 !important; }
+html[data-theme="night"] details.grimoire-subdetails { border-bottom-color: #3b3829 !important; }
+html[data-theme="night"] details.grimoire-subdetails > summary { color: #e2cf9a !important; }
+html[data-theme="night"] details.grimoire-subdetails > summary:hover { color: var(--kw-gold) !important; }
+html[data-theme="night"] .ritual-number { color: var(--kw-gold) !important; border-right-color: #4a4532 !important; }
+html[data-theme="night"] .ritual-text { color: var(--kw-ink) !important; }
+html[data-theme="night"] .lead-steps .ritual-text { color: #e0c27a !important; }
+html[data-theme="night"] .ingredient-li { border-bottom-color: #3b3829 !important; }
+html[data-theme="night"] .ingredient-role, html[data-theme="night"] .ingredient-action { color: #b9b09a !important; }
+html[data-theme="night"] .alchemical-tag { background: #1c2a19 !important; border-color: #4f6b3d !important; color: #a9c784 !important; }
+html[data-theme="night"] .alchemical-tag.lead-tag { background: #2b2412 !important; border-color: #7a6326 !important; color: #e0c27a !important; }
+html[data-theme="night"] .origin-filter .btn { color: #c9bfa6 !important; border-color: #5a5440 !important; background: transparent !important; }
+html[data-theme="night"] .origin-filter .btn.active, html[data-theme="night"] .origin-filter .btn:hover { background: #2e3a24 !important; color: #f0e6cc !important; border-color: #6f8a55 !important; }
+
 /* ---------- strona rośliny ---------- */
 html[data-theme="night"] .grimmoire-wrapper {
     --kw-parch: #161913; --kw-paper: #1d201a; --kw-ink: #ddd5c0; --kw-muted: #a59c86;

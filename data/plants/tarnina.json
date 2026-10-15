@@ -8,28 +8,46 @@
     "kwiaty": {
       "nazwa_surowca": "Flos Pruni spinosae",
       "opis_botaniczny": "Białe, drobne, pięciopłatkowe kwiaty pojawiające się przed liśćmi. Wydzielają delikatny zapach migdałów.",
-      "skladniki_aktywne": ["Flawonoidy (kwercetyna, kemferol)", "Glikozydy cyjanogenne (amigdalina w śladowych ilościach)", "Garbniki", "Cukry", "Sole mineralne"],
+      "skladniki_aktywne": [
+        "Flawonoidy (kwercetyna, kemferol)",
+        "Glikozydy cyjanogenne (amigdalina w śladowych ilościach)",
+        "Garbniki",
+        "Cukry",
+        "Sole mineralne"
+      ],
       "wlasciwości": "Łagodnie przeczyszczające, moczopędne, przeciwzapalne, uszczelniające naczynia włosowate.",
       "czas_zbioru": "Kwiecień - Maj (na początku kwitnienia, w dni słoneczne)."
     },
     "owoce": {
       "nazwa_surowca": "Fructus Pruni spinosae",
       "opis_botaniczny": "Kuliste pestkowce o barwie ciemnoniebieskiej z sinym nalotem. Miąższ cierpki i kwaśny.",
-      "skladniki_aktywne": ["Garbniki (do 3%)", "Kwasy organiczne", "Witaminy (C, B, prowitamina A)", "Antocyjany", "Pektyny"],
+      "skladniki_aktywne": [
+        "Garbniki (do 3%)",
+        "Kwasy organiczne",
+        "Witaminy (C, B, prowitamina A)",
+        "Antocyjany",
+        "Pektyny"
+      ],
       "wlasciwości": "Silnie ściągające, przeciwbiegunkowe, antybakteryjne, antyoksydacyjne.",
       "czas_zbioru": "Październik - Listopad (najlepiej po pierwszych przymrozkach, co redukuje cierpkość)."
     },
     "kora": {
       "nazwa_surowca": "Cortex Pruni spinosae",
       "opis_botaniczny": "Ciemna, niemal czarna, z licznymi krótkopędami przekształconymi w silne ciernie.",
-      "skladniki_aktywne": ["Garbniki", "Glikozydy"],
+      "skladniki_aktywne": [
+        "Garbniki",
+        "Glikozydy"
+      ],
       "wlasciwości": "Przeciwgorączkowe, ściągające (stosowana rzadziej niż owoce).",
       "czas_zbioru": "Wczesna wiosna lub jesień."
     },
     "liscie": {
       "nazwa_surowca": "Folium Pruni spinosae",
       "opis_botaniczny": "Małe, eliptyczne, brzegiem drobno piłkowane.",
-      "skladniki_aktywne": ["Glikozydy", "Garbniki"],
+      "skladniki_aktywne": [
+        "Glikozydy",
+        "Garbniki"
+      ],
       "wlasciwości": "Moczopędne, pomocniczo w stanach zapalnych dróg moczowych.",
       "czas_zbioru": "Czerwiec - Lipiec."
     }
@@ -41,15 +59,24 @@
   },
   "permakultura": {
     "funkcje": [
-        "Naturalna bariera dla zwierząt hodowlanych (kolce)",
-        "Siedlisko lęgowe dla rzadkich ptaków (np. gąsiorek)",
-        "Wczesny pożytki dla pszczół",
-        "Wiązanie azotu (pośrednio przez wspieranie mikrobiomu)"
+      "Naturalna bariera dla zwierząt hodowlanych (kolce)",
+      "Siedlisko lęgowe dla rzadkich ptaków (np. gąsiorek)",
+      "Wczesny pożytki dla pszczół",
+      "Wiązanie azotu (pośrednio przez wspieranie mikrobiomu)"
     ],
     "gildie": [
-      {"nazwa": "Dąb szypułkowy", "rola": "Dominanta, osłona"},
-      {"nazwa": "Dzika róża", "rola": "Współtwórca zarośli ochronnych"},
-      {"nazwa": "Głóg", "rola": "Sąsiad w pasie wiatrochronnym"}
+      {
+        "nazwa": "Dąb szypułkowy",
+        "rola": "Dominanta, osłona"
+      },
+      {
+        "nazwa": "Dzika róża",
+        "rola": "Współtwórca zarośli ochronnych"
+      },
+      {
+        "nazwa": "Głóg",
+        "rola": "Sąsiad w pasie wiatrochronnym"
+      }
     ],
     "opis_ekologiczny": "Tarnina jest rośliną pionierską. W sukcesji leśnej przygotowuje miejsce dla dębów, chroniąc młode siewki drzew przed zgryzaniem przez sarny."
   },
@@ -57,7 +84,10 @@
     "zadania": [
       {
         "czynnosc": "Zbiór kwiatów na napary",
-        "miesiace": [4, 5],
+        "miesiace": [
+          4,
+          5
+        ],
         "opis": "Zbieramy tylko świeżo rozwinięte koszyczki bez szypułek.",
         "faza_ksiezyca": "Księżyc przybywający (faza kwiatu)",
         "pora_dnia": "Południe (gdy opadnie rosa)",
@@ -66,7 +96,10 @@
       },
       {
         "czynnosc": "Rozmnażanie z odrostów korzeniowych",
-        "miesiace": [3, 11],
+        "miesiace": [
+          3,
+          11
+        ],
         "opis": "Oddzielanie młodych roślin wyrastających z korzeni matczynych.",
         "faza_ksiezyca": "Księżyc ubywający",
         "pora_dnia": "Wieczór",
@@ -75,7 +108,10 @@
       },
       {
         "czynnosc": "Zbiór owoców na przetwory",
-        "miesiace": [10, 11],
+        "miesiace": [
+          10,
+          11
+        ],
         "opis": "Czekamy do pierwszych mrozów lub zbieramy i mrozimy w zamrażarce przez 48h.",
         "faza_ksiezyca": "Pełnia",
         "pora_dnia": "Popołudnie",
@@ -89,5 +125,1536 @@
     "Z drewna tarniny wyrabiano najtwardsze laski i rękojeści narzędzi.",
     "Wierzono, że korona cierniowa Chrystusa była wykonana z tarniny."
   ],
-  "ostrzezenia": "Pestki tarniny zawierają amigdalinę (kwas pruski) i nie powinny być spożywane. Przetwory z owoców należy zawsze drylować."
+  "ostrzezenia": "Pestki tarniny zawierają amigdalinę (kwas pruski) i nie powinny być spożywane. Przetwory z owoców należy zawsze drylować.",
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-10-15",
+    "uporzadkowano": "2026-10-15",
+    "uklad": "deterministyczny: pominiete informacje: [1, 2, 3, 5, 7, 8, 14, 15, 16, 17]",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (pl): Śliwa tarnina",
+        "url": "https://pl.wikipedia.org/wiki/%C5%9Aliwa_tarnina",
+        "jezyk": "pl",
+        "typ": "wikipedia",
+        "nr": 1
+      },
+      {
+        "nazwa": "Wikipedia (de): Schlehdorn",
+        "url": "https://de.wikipedia.org/wiki/Schlehdorn",
+        "jezyk": "de",
+        "typ": "wikipedia",
+        "nr": 2
+      },
+      {
+        "nazwa": "Wikipedia (en): Prunus spinosa",
+        "url": "https://en.wikipedia.org/wiki/Prunus_spinosa",
+        "jezyk": "en",
+        "typ": "wikipedia",
+        "nr": 3
+      },
+      {
+        "nazwa": "Wikipedia (ja): スピノサスモモ",
+        "url": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%94%E3%83%8E%E3%82%B5%E3%82%B9%E3%83%A2%E3%83%A2",
+        "jezyk": "ja",
+        "typ": "wikipedia",
+        "nr": 4
+      },
+      {
+        "nazwa": "Wikipedia (zh): 黑刺李",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BB%91%E5%88%BA%E6%9D%8E",
+        "jezyk": "zh",
+        "typ": "wikipedia",
+        "nr": 5
+      },
+      {
+        "nazwa": "karpaty-ua.org.ua",
+        "url": "https://karpaty-ua.org.ua/recepty-karpatskih-fitosborov.html",
+        "jezyk": "?",
+        "typ": "strona",
+        "nr": 6
+      },
+      {
+        "nazwa": "www.promessedefleurs.ie",
+        "url": "https://www.promessedefleurs.ie/gardening-tips/advicesheet/12-dye-plants-for-plant-based-dyes/",
+        "jezyk": "en-IE",
+        "typ": "strona",
+        "nr": 7
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "opis",
+        "tytul": "Opis i wygląd",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Krzew ten charakteryzuje się tworzeniem gęstych, ciernistych zarośli, które są trudne do przejścia, a jest to cecha wspólna dla wielu roślin z rodziny różowatych.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s1759"
+            ]
+          },
+          {
+            "tekst": "Białe kwiaty pojawiają się w marcu i kwietniu, jeszcze przed rozwojem liści, i charakteryzują się delikatnym aromatem migdałowym.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1758"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "wystepowanie",
+        "tytul": "Występowanie",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Rośnie naturalnie na otwartych stanowiskach; w całej Europie występuje przy krawędziach lasów i na terenach sukcesyjnych.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1756"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "czesci_rosliny",
+        "tytul": "Części rośliny i surowce",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Kwiaty tarniny zbiera się natychmiast po zakwitnięciu w stanie suchym, ponieważ są bardzo delikatne i łatwo się czernieją. Suszy się je w temperaturze około 35 °C lub na słońcu z dużym przewiewem, aż staną się kremowo- lub szarawobiałe z zapachem gorzkich migdałów.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1740"
+            ]
+          },
+          {
+            "tekst": "Suszone liście tarniny bywają wykorzystywane jako substytut herbaty do napojów rozgrzewających.",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1749"
+            ]
+          },
+          {
+            "tekst": "Owoce do celów leczniczych zbiera się jesienią (październik-listopad), gdy są dojrzałe, ale jeszcze twarde, często strząsając je na płachty rozłożone pod krzewami. Suszy się je w stopniowo podnoszonej temperaturze nie wyższej niż 60 °C, po czym stają się pomarszczone i prawie czarne.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1741"
+            ]
+          },
+          {
+            "tekst": "Przez długi czas liście tarniny nielegalnie dodawano do herbaty jako domieszkę zaniżającą jakość tego produktu.",
+            "czesc": "ziele",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1766"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Główne substancje czynne tarniny to garbniki, flawonoidy oraz glikozydy cyjanogenne. Garbniki odpowiadają za działanie antyseptyczne, przeciwzapalne i przeciwbiegunkowe, a flawonoidy działają przeciwutleniająco i zmniejszają przepuszczalność naczyń krwionośnych.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1742"
+            ]
+          },
+          {
+            "tekst": "Skład chemiczny tarniny obejmuje flawonoidy, kumaryny, kwas taninowy, substancje gorzkie, kwasy organiczne, witaminę C oraz śladowe ilości amigdaliny.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s1764"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Kwiatom tradycyjnie przypisywano działanie słabo przeczyszczające, wykrztuśne, napotne oraz moczopędne, a także zdolność do zmniejszania przepuszczalności naczyń włosowatych. Stosowano je w postaci naparów, choć skuteczność tych działań nie została w pełni potwierdzona.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1743"
+            ]
+          },
+          {
+            "tekst": "Odwar przygotowany z suszonych kwiatów tarniny stosowano tradycyjnie jako płyn do płukania jamy ustnej i gardła w celu łagodzenia stanów zapalnych błony śluzowej.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s1761"
+            ]
+          },
+          {
+            "tekst": "W tradycyjnych karpackich recepturach ziołowych kwiaty tarniny były wykorzystywane jako składnik mieszanek zalecanych przy kamicy nerkowej.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1767"
+            ]
+          },
+          {
+            "tekst": "Dżem wytwarzany z owoców tarniny używano tradycyjnie jako remedium wspomagające apetyt w przypadku jego braku.",
+            "czesc": "owoce",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s1762"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "barwienie",
+        "tytul": "Barwienie i rzemiosło",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Sok tarniny barwi bawełnę na czerwono, a po wyciśnięciu odziera ją na trwały błękit.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1751"
+            ]
+          },
+          {
+            "tekst": "Kora tarniny gotowana w środowisku zasadowym barwi tkaniny na żółto, z kolei jej liście pozwalają uzyskać barwnik zielony.",
+            "czesc": "kora",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1736"
+            ]
+          },
+          {
+            "tekst": "Korzenie tarniny pozwalają uzyskać łupkowoniebieski barwnik, natomiast połączenie korzeni z owocami daje intensywny niebieski kolor.",
+            "czesc": "korzeń",
+            "zrodla": [
+              7
+            ],
+            "fakty": [
+              "s1768"
+            ]
+          },
+          {
+            "tekst": "Z dojrzałych owoców zbieranych w październiku można pozyskać ładny różowy barwnik, który jest jednak nietrwały podczas prania.",
+            "czesc": "owoce",
+            "zrodla": [
+              7
+            ],
+            "fakty": [
+              "s1769"
+            ]
+          },
+          {
+            "tekst": "Sok pozyskiwany z niedojrzałych owoców jest wyjątkowo trudny do usunięcia, przez co wykorzystywano go do trwałego znakowania tkanin.",
+            "czesc": "sok",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1734"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kosmetyka",
+        "tytul": "Kosmetyka",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Miąższ pozyskiwany z owoców tarniny znajduje zastosowanie w kosmetyce jako składnik ściągających maseczek na twarz.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1739"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "historia",
+        "tytul": "Historia i nazwa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W średniowieczu z pędów i kory tarniny moczonych oraz gotowanych w winie wytwarzano atrament do pisania w skryptoriach.",
+            "czesc": "kora",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1732"
+            ]
+          },
+          {
+            "tekst": "Dawniej wierzono, że wrzucenie owocu tarniny do psującego się wina zapobiega jego popsuciu, natomiast owinięcie sera korą wydłuża jego świeżość.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1737"
+            ]
+          },
+          {
+            "tekst": "Owoce tarniny służą nie tylko do celów leczniczych, ale są również stosowane w przemyśle alkoholowym do aromatyzowania ginu.",
+            "czesc": "owoce",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s1763"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kultura",
+        "tytul": "Wierzenia i tradycje",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W słowiańskiej wierze ludowej cierniste krzewy tarniny sadzono na grobach samobójców, aby uniemożliwić im straszenie żywych, a kołki z jej drewna służyły do zabijania stworzeń uważanych za wcielenia złego, takich jak zmory czy nietoperze.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1747"
+            ]
+          },
+          {
+            "tekst": "W języku angielskim 'blackthorn winter' oznacza zimny okres wioski, gdy tarnina kwitnie.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1752"
+            ]
+          },
+          {
+            "tekst": "Według poznańskiej legendy Bóg okrył tarninę białymi kwiatami, aby zdjąć z niej oskarżenie o posłużenie do stworzenia korony cierniowej.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1733"
+            ]
+          },
+          {
+            "tekst": "Dawny przesąd bułgarski głosił, że trzymanie gałązki lub owocu tarniny w ustach podczas pogrzebu chroniło przed utratą zębów.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1735"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "nazwy_ludowe",
+        "tytul": "Nazwy ludowe",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Nazwy wielu polskich miejscowości, takich jak Tarnów czy Tarnowskie Góry, wywodzą się od tradycji obsadzania granic posiadłości krzewami tarniny.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1738"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "uprawa",
+        "tytul": "Uprawa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Tarnina wykorzystywana jest w rolnictwie do tworzenia nasadzeń biotechnicznych, które umacniają skarpy, urwiska i chronią glebę przed erozją. Służy również odcinani pastwisk przed zgryzaniem przez zwierzęta i tworzeniu żywych płotów sprzyjających ptakom.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1746"
+            ]
+          },
+          {
+            "tekst": "Tarnina najlepiej rozwija się na dość żyznych glebach gliniasto-wapiennych, lecz jest wysoce niewymagająca i rośnie bez pielęgnacji nawet na suchym podłożu.",
+            "czesc": null,
+            "zrodla": [
+              7
+            ],
+            "fakty": [
+              "s1770"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "ciekawostki",
+        "tytul": "Ciekawostki",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Gałązki tarniny stanowią kluczowy materiał wypełniający tężnie solankowe, gdzie ułatwiają powstawanie leczniczego aerozolu.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1731"
+            ]
+          },
+          {
+            "tekst": "W tradycji kulinarnej wielu europejskich krajów, takiej jak francuska, niemiecka czy rosyjska, owoce tarniny były podstawą do produkcji likierów, win, marynat i soków. W Polsce są szczególnie cenione jako dodatek barwiący i aromatyzujący do win oraz składnik nalewki zwanej tarninówką.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1745"
+            ]
+          },
+          {
+            "tekst": "Tarnina jest cenioną rośliną miododajną, która podczas intensywnego kwitnienia dostarcza pszczolom dużych ilości pyłku i nektaru, osiągając wydajność miodową na poziomie około 25 kg z jednego hektara.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1748"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "kwiaty": [
+        "s1758",
+        "s1740",
+        "s1743",
+        "s1761",
+        "s1767",
+        "s1733",
+        "s1748"
+      ],
+      "liście": [
+        "s1749"
+      ],
+      "owoce": [
+        "s1741",
+        "s1762",
+        "s1769",
+        "s1739",
+        "s1737",
+        "s1763",
+        "s1735"
+      ],
+      "ziele": [
+        "s1766"
+      ],
+      "kora": [
+        "s1736",
+        "s1732"
+      ],
+      "korzeń": [
+        "s1768"
+      ],
+      "sok": [
+        "s1734"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s1731",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Gałązki tarniny stanowią kluczowy materiał wypełniający tężnie solankowe, gdzie ułatwiają powstawanie leczniczego aerozolu.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Śliwa tarnina",
+          "url": "https://pl.wikipedia.org/wiki/%C5%9Aliwa_tarnina"
+        },
+        "cytat": "Wiązki tarniny są podstawowym materiałem do budowy tężni solankowych, wypełniając konstrukcję drewnianą i służąc do tworzenia aerozolu z solanki."
+      },
+      {
+        "id": "s1732",
+        "sekcja": "historia",
+        "czesc": "kora",
+        "tekst": "W średniowieczu z pędów i kory tarniny moczonych oraz gotowanych w winie wytwarzano atrament do pisania w skryptoriach.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Śliwa tarnina",
+          "url": "https://pl.wikipedia.org/wiki/%C5%9Aliwa_tarnina"
+        },
+        "cytat": "W średniowiecznych skryptoriach używano atramentu wytwarzanego m.in. z kory tarniny. Pędy tarniny były moczone i przegotowywane, następnie mieszane z winem i ponownie gotowane."
+      },
+      {
+        "id": "s1733",
+        "sekcja": "kultura",
+        "czesc": "kwiaty",
+        "tekst": "Według poznańskiej legendy Bóg okrył tarninę białymi kwiatami, aby zdjąć z niej oskarżenie o posłużenie do stworzenia korony cierniowej.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Śliwa tarnina",
+          "url": "https://pl.wikipedia.org/wiki/%C5%9Aliwa_tarnina"
+        },
+        "cytat": "Z drugiej strony podawana jest legenda z Poznania, według której Bóg obsypał tarninę niezliczoną ilością śnieżnobiałych kwiatów, by w ten sposób dowieść jej niewinności i zdjąć oskarżenia, że to z niej wykonano koronę cierniową."
+      },
+      {
+        "id": "s1734",
+        "sekcja": "barwienie",
+        "czesc": "sok",
+        "tekst": "Sok pozyskiwany z niedojrzałych owoców jest wyjątkowo trudny do usunięcia, przez co wykorzystywano go do trwałego znakowania tkanin.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Śliwa tarnina",
+          "url": "https://pl.wikipedia.org/wiki/%C5%9Aliwa_tarnina"
+        },
+        "cytat": "Sok z niedojrzałych owoców bywa używany do znaczenia tkanin, bowiem jest praktycznie nieusuwalny."
+      },
+      {
+        "id": "s1735",
+        "sekcja": "kultura",
+        "czesc": "owoce",
+        "tekst": "Dawny przesąd bułgarski głosił, że trzymanie gałązki lub owocu tarniny w ustach podczas pogrzebu chroniło przed utratą zębów.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Śliwa tarnina",
+          "url": "https://pl.wikipedia.org/wiki/%C5%9Aliwa_tarnina"
+        },
+        "cytat": "U Bułgarów do XIX wieku żywy był przesąd, że owoc tarniny, ewentualnie gałązka tarniny wzięta do ust podczas pogrzebu chroniła przed wypadaniem zębów."
+      },
+      {
+        "id": "s1736",
+        "sekcja": "barwienie",
+        "czesc": "kora",
+        "tekst": "Kora tarniny gotowana w środowisku zasadowym barwi tkaniny na żółto, z kolei jej liście pozwalają uzyskać barwnik zielony.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Śliwa tarnina",
+          "url": "https://pl.wikipedia.org/wiki/%C5%9Aliwa_tarnina"
+        },
+        "cytat": "Z liści uzyskuje się barwnik zielony, z owoców ciemnoszary do zielonego, a kora gotowana w środowisku zasadowym barwi na żółto."
+      },
+      {
+        "id": "s1737",
+        "sekcja": "historia",
+        "czesc": "owoce",
+        "tekst": "Dawniej wierzono, że wrzucenie owocu tarniny do psującego się wina zapobiega jego popsuciu, natomiast owinięcie sera korą wydłuża jego świeżość.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Śliwa tarnina",
+          "url": "https://pl.wikipedia.org/wiki/%C5%9Aliwa_tarnina"
+        },
+        "cytat": "Według Krzysztofa Kluka owoc wrzucony do beczki psującego się wina skutecznie je naprawia, a ser otulony korą tarniny ma dłuższą trwałość."
+      },
+      {
+        "id": "s1738",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "Nazwy wielu polskich miejscowości, takich jak Tarnów czy Tarnowskie Góry, wywodzą się od tradycji obsadzania granic posiadłości krzewami tarniny.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Śliwa tarnina",
+          "url": "https://pl.wikipedia.org/wiki/%C5%9Aliwa_tarnina"
+        },
+        "cytat": "Dawniej tarniną obsadzano granice posiadłości dla oznaczenia własności gruntu. Fakt ten wpłynął na nazewnictwo miejscowości w Polsce, które swoje nazwy wywodzą od tej rośliny; są to np.: Tarnów Opolski, Tarnowskie Góry oraz liczne miejscowo"
+      },
+      {
+        "id": "s1739",
+        "sekcja": "kosmetyka",
+        "czesc": "owoce",
+        "tekst": "Miąższ pozyskiwany z owoców tarniny znajduje zastosowanie w kosmetyce jako składnik ściągających maseczek na twarz.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Śliwa tarnina",
+          "url": "https://pl.wikipedia.org/wiki/%C5%9Aliwa_tarnina"
+        },
+        "cytat": "W kosmetyce miąższ z owoców używany jest do sporządzania ściągających maseczek na twarz."
+      },
+      {
+        "id": "s1740",
+        "sekcja": "czesci_rosliny",
+        "czesc": "kwiaty",
+        "tekst": "Kwiaty tarniny zbiera się natychmiast po zakwitnięciu w stanie suchym, ponieważ są bardzo delikatne i łatwo się czernieją. Suszy się je w temperaturze około 35 °C lub na słońcu z dużym przewiewem, aż staną się kremowo- lub szarawobiałe z zapachem gorzkich migdałów.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Śliwa tarnina",
+          "url": "https://pl.wikipedia.org/wiki/%C5%9Aliwa_tarnina"
+        },
+        "cytat": "Kwiaty zbiera się ostrożnie – natychmiast po zakwitnięciu i suche – są one bardzo delikatne, łatwo się gniotą i czernieją. Suszy się je w temperaturze ok. 35 °C lub na słońcu przy dużym przewiewie. Dobrze wysuszone powinny mieć barwę kremow"
+      },
+      {
+        "id": "s1741",
+        "sekcja": "czesci_rosliny",
+        "czesc": "owoce",
+        "tekst": "Owoce do celów leczniczych zbiera się jesienią (październik-listopad), gdy są dojrzałe, ale jeszcze twarde, często strząsając je na płachty rozłożone pod krzewami. Suszy się je w stopniowo podnoszonej temperaturze nie wyższej niż 60 °C, po czym stają się pomarszczone i prawie czarne.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Śliwa tarnina",
+          "url": "https://pl.wikipedia.org/wiki/%C5%9Aliwa_tarnina"
+        },
+        "cytat": "Owoce do celów leczniczych zbiera się w postaci dojrzałej, ale jeszcze twarde (w październiku i listopadzie). Podczas zbioru najwygodniej jest strząsać owoce na płachty rozłożone pod krzewami. Zebrane i oczyszczone owoce suszy się w stopnio"
+      },
+      {
+        "id": "s1742",
+        "sekcja": "sklad",
+        "czesc": null,
+        "tekst": "Główne substancje czynne tarniny to garbniki, flawonoidy oraz glikozydy cyjanogenne. Garbniki odpowiadają za działanie antyseptyczne, przeciwzapalne i przeciwbiegunkowe, a flawonoidy działają przeciwutleniająco i zmniejszają przepuszczalność naczyń krwionośnych.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Śliwa tarnina",
+          "url": "https://pl.wikipedia.org/wiki/%C5%9Aliwa_tarnina"
+        },
+        "cytat": "Substancjami aktywnymi są garbniki, flawonoidy i glikozydy cyjanogenne. Za działanie antyseptyczne, przeciwzapalne i przeciwbiegunkowe odpowiadają garbniki. Flawonoidy działają m.in. przeciwutleniająco, przeciwzapalnie i zmniejszają przepus"
+      },
+      {
+        "id": "s1743",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "kwiaty",
+        "tekst": "Kwiatom tradycyjnie przypisywano działanie słabo przeczyszczające, wykrztuśne, napotne oraz moczopędne, a także zdolność do zmniejszania przepuszczalności naczyń włosowatych. Stosowano je w postaci naparów, choć skuteczność tych działań nie została w pełni potwierdzona.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Śliwa tarnina",
+          "url": "https://pl.wikipedia.org/wiki/%C5%9Aliwa_tarnina"
+        },
+        "cytat": "Kwiatom przypisuje się następujące działanie lecznicze: słabo przeczyszczające, wykrztuśne, napotne i moczopędne, mają też zmniejszać przepuszczalność naczyń włosowatych. Działania te jednak nie zostały wystarczająco potwierdzone. [...] Kwi"
+      },
+      {
+        "id": "s1745",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "W tradycji kulinarnej wielu europejskich krajów, takiej jak francuska, niemiecka czy rosyjska, owoce tarniny były podstawą do produkcji likierów, win, marynat i soków. W Polsce są szczególnie cenione jako dodatek barwiący i aromatyzujący do win oraz składnik nalewki zwanej tarninówką.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Śliwa tarnina",
+          "url": "https://pl.wikipedia.org/wiki/%C5%9Aliwa_tarnina"
+        },
+        "cytat": "We Francji z niedojrzałych owoców robiono marynaty w occie, a z dojrzałych owoców – likier prunelle. W Niemczech owoce po tłoczeniu z wodą używane były do destylacji wysokoprocentowych alkoholi. W Rosji używane były zarówno do wyrobu wódek "
+      },
+      {
+        "id": "s1746",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "Tarnina wykorzystywana jest w rolnictwie do tworzenia nasadzeń biotechnicznych, które umacniają skarpy, urwiska i chronią glebę przed erozją. Służy również odcinani pastwisk przed zgryzaniem przez zwierzęta i tworzeniu żywych płotów sprzyjających ptakom.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Śliwa tarnina",
+          "url": "https://pl.wikipedia.org/wiki/%C5%9Aliwa_tarnina"
+        },
+        "cytat": "Gatunek może być stosowany w nasadzeniach o funkcji biotechnicznej, w szczególności w celu umocnienia skarp nasypów i wykopów oraz urwisk i wąwozów. [...] Na pastwiskach umożliwia wprowadzanie nasadzeń drzew chroniąc je przed zgryzaniem. Je"
+      },
+      {
+        "id": "s1747",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "W słowiańskiej wierze ludowej cierniste krzewy tarniny sadzono na grobach samobójców, aby uniemożliwić im straszenie żywych, a kołki z jej drewna służyły do zabijania stworzeń uważanych za wcielenia złego, takich jak zmory czy nietoperze.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Śliwa tarnina",
+          "url": "https://pl.wikipedia.org/wiki/%C5%9Aliwa_tarnina"
+        },
+        "cytat": "W kulturze słowiańskiej cierniste krzewy sadzono na grobach samobójców, by powstrzymać ich od straszenia żywych oraz palono w nich wiedźmy. Kołkami z tarniny zabijano stworzenia uważane za wcielenia złego (zmor), w tym też nietoperze."
+      },
+      {
+        "id": "s1748",
+        "sekcja": "ciekawostki",
+        "czesc": "kwiaty",
+        "tekst": "Tarnina jest cenioną rośliną miododajną, która podczas intensywnego kwitnienia dostarcza pszczolom dużych ilości pyłku i nektaru, osiągając wydajność miodową na poziomie około 25 kg z jednego hektara.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Śliwa tarnina",
+          "url": "https://pl.wikipedia.org/wiki/%C5%9Aliwa_tarnina"
+        },
+        "cytat": "Tarnina jest rośliną miododajną – podczas obfitego kwitnienia dostarcza wielkich ilości pyłku i nektaru – wydajność miodowa wynosi ok. 25 kg z hektara."
+      },
+      {
+        "id": "s1749",
+        "sekcja": "czesci_rosliny",
+        "czesc": "liście",
+        "tekst": "Suszone liście tarniny bywają wykorzystywane jako substytut herbaty do napojów rozgrzewających.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Śliwa tarnina",
+          "url": "https://pl.wikipedia.org/wiki/%C5%9Aliwa_tarnina"
+        },
+        "cytat": "Suszone liście bywają używane jako substytut herbaty."
+      },
+      {
+        "id": "s1751",
+        "sekcja": "barwienie",
+        "czesc": null,
+        "tekst": "Sok tarniny barwi bawełnę na czerwono, a po wyciśnięciu odziera ją na trwały błękit.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Prunus spinosa",
+          "url": "https://en.wikipedia.org/wiki/Prunus_spinosa"
+        },
+        "cytat": "The juice of the fruit dyes linen a reddish colour that washes out to a durable pale blue."
+      },
+      {
+        "id": "s1752",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "W języku angielskim 'blackthorn winter' oznacza zimny okres wioski, gdy tarnina kwitnie.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Prunus spinosa",
+          "url": "https://en.wikipedia.org/wiki/Prunus_spinosa"
+        },
+        "cytat": "The term 'blackthorn winter' is an old phrase originating in rural England to describe a cold period in early Spring when blackthorn is in flower."
+      },
+      {
+        "id": "s1756",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Rośnie naturalnie na otwartych stanowiskach; w całej Europie występuje przy krawędziach lasów i na terenach sukcesyjnych.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Schlehdorn",
+          "url": "https://de.wikipedia.org/wiki/Schlehdorn"
+        },
+        "cytat": "Natürlicherweise steht er an lichten Standorten, weswegen er in ganz Europa an Waldrändern und auf Sukzessionsflächen zu finden ist."
+      },
+      {
+        "id": "s1758",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Białe kwiaty pojawiają się w marcu i kwietniu, jeszcze przed rozwojem liści, i charakteryzują się delikatnym aromatem migdałowym.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Schlehdorn",
+          "url": "https://de.wikipedia.org/wiki/Schlehdorn"
+        },
+        "cytat": "Die weißen Blüten des Schlehdorns erscheinen im März und April – lange vor dem Laubaustrieb. Charakteristisch ist ihr leichter Mandelduft."
+      },
+      {
+        "id": "s1759",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Krzew ten charakteryzuje się tworzeniem gęstych, ciernistych zarośli, które są trudne do przejścia, a jest to cecha wspólna dla wielu roślin z rodziny różowatych.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 黑刺李",
+          "url": "https://zh.wikipedia.org/wiki/%E9%BB%91%E5%88%BA%E6%9D%8E"
+        },
+        "cytat": "同其他蔷薇科植物一样，黑刺李也容易成长为不可穿越的带刺灌木丛。"
+      },
+      {
+        "id": "s1761",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "kwiaty",
+        "tekst": "Odwar przygotowany z suszonych kwiatów tarniny stosowano tradycyjnie jako płyn do płukania jamy ustnej i gardła w celu łagodzenia stanów zapalnych błony śluzowej.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 黑刺李",
+          "url": "https://zh.wikipedia.org/wiki/%E9%BB%91%E5%88%BA%E6%9D%8E"
+        },
+        "cytat": "由黑刺李干花制成的药汤可作为漱口水为口腔、咽喉粘膜消炎"
+      },
+      {
+        "id": "s1762",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "owoce",
+        "tekst": "Dżem wytwarzany z owoców tarniny używano tradycyjnie jako remedium wspomagające apetyt w przypadku jego braku.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 黑刺李",
+          "url": "https://zh.wikipedia.org/wiki/%E9%BB%91%E5%88%BA%E6%9D%8E"
+        },
+        "cytat": "由黑刺李梅制成的果酱则对治疗食欲不振非常有效。"
+      },
+      {
+        "id": "s1763",
+        "sekcja": "historia",
+        "czesc": "owoce",
+        "tekst": "Owoce tarniny służą nie tylko do celów leczniczych, ale są również stosowane w przemyśle alkoholowym do aromatyzowania ginu.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 黑刺李",
+          "url": "https://zh.wikipedia.org/wiki/%E9%BB%91%E5%88%BA%E6%9D%8E"
+        },
+        "cytat": "黑刺李有时也被用于琴酒的调味。"
+      },
+      {
+        "id": "s1764",
+        "sekcja": "sklad",
+        "czesc": null,
+        "tekst": "Skład chemiczny tarniny obejmuje flawonoidy, kumaryny, kwas taninowy, substancje gorzkie, kwasy organiczne, witaminę C oraz śladowe ilości amigdaliny.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 黑刺李",
+          "url": "https://zh.wikipedia.org/wiki/%E9%BB%91%E5%88%BA%E6%9D%8E"
+        },
+        "cytat": "类黄酮、香豆素、丹宁酸、苦味物质、酸、维生素C、微量苦杏仁苷等。"
+      },
+      {
+        "id": "s1766",
+        "sekcja": "czesci_rosliny",
+        "czesc": "ziele",
+        "tekst": "Przez długi czas liście tarniny nielegalnie dodawano do herbaty jako domieszkę zaniżającą jakość tego produktu.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): スピノサスモモ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%94%E3%83%8E%E3%82%B5%E3%82%B9%E3%83%A2%E3%83%A2"
+        },
+        "cytat": "19世紀末頃までその葉を不正に紅茶に混入することもおこなわれていた。"
+      },
+      {
+        "id": "s1767",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "kwiaty",
+        "tekst": "W tradycyjnych karpackich recepturach ziołowych kwiaty tarniny były wykorzystywane jako składnik mieszanek zalecanych przy kamicy nerkowej.",
+        "jezyk": "?",
+        "zrodlo": {
+          "nazwa": "karpaty-ua.org.ua",
+          "url": "https://karpaty-ua.org.ua/recepty-karpatskih-fitosborov.html"
+        },
+        "cytat": "Карпатский рецепт, для лечения почечнокаменной болезни фитосбор - №1 Стручки фасоли обыкновенной Листья черники обыкновенной-15,0 Трава тысячелистника-15,0 Цветки тёрна колючего"
+      },
+      {
+        "id": "s1768",
+        "sekcja": "barwienie",
+        "czesc": "korzeń",
+        "tekst": "Korzenie tarniny pozwalają uzyskać łupkowoniebieski barwnik, natomiast połączenie korzeni z owocami daje intensywny niebieski kolor.",
+        "jezyk": "en-IE",
+        "zrodlo": {
+          "nazwa": "www.promessedefleurs.ie",
+          "url": "https://www.promessedefleurs.ie/gardening-tips/advicesheet/12-dye-plants-for-plant-based-dyes/"
+        },
+        "cytat": "Roots of the blackthorn produce a lovely slate blue. Mixing roots and berries yields a colourful blue."
+      },
+      {
+        "id": "s1769",
+        "sekcja": "barwienie",
+        "czesc": "owoce",
+        "tekst": "Z dojrzałych owoców zbieranych w październiku można pozyskać ładny różowy barwnik, który jest jednak nietrwały podczas prania.",
+        "jezyk": "en-IE",
+        "zrodlo": {
+          "nazwa": "www.promessedefleurs.ie",
+          "url": "https://www.promessedefleurs.ie/gardening-tips/advicesheet/12-dye-plants-for-plant-based-dyes/"
+        },
+        "cytat": "From ripe sloes, harvested in October, a pretty pink can also be extracted, but it is fragile when washed."
+      },
+      {
+        "id": "s1770",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "Tarnina najlepiej rozwija się na dość żyznych glebach gliniasto-wapiennych, lecz jest wysoce niewymagająca i rośnie bez pielęgnacji nawet na suchym podłożu.",
+        "jezyk": "en-IE",
+        "zrodlo": {
+          "nazwa": "www.promessedefleurs.ie",
+          "url": "https://www.promessedefleurs.ie/gardening-tips/advicesheet/12-dye-plants-for-plant-based-dyes/"
+        },
+        "cytat": "it favours fairly fertile clay-limestone soils and grows everywhere without care or maintenance, even in dry soil."
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-15",
+    "pola": {
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Gęsty, ciernisty krzew o ciemnej korze, tworzący niemal nieprzebyte zarośla (czyżnie). Jest jedną z najważniejszych roślin dla dzikiej fauny w Europie.",
+        "tresc": [
+          {
+            "tekst": "Śliwa tarnina (Prunus spinosata) to gęsty, ciernisty krzew o ciemnej korze, tworzący niemal nieprzebyte zarośla, będący jedną z najważniejszych roślin dla dzikiej fauny w Europie. Jego gęste, cierniste zarośla są trudne do przejścia i charakteryzują się tym wiele roślin z rodziny różowatych.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s1759"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "3e92c8058c35eea4"
+      },
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Białe kwiaty pojawiają się w marcu i kwietniu, jeszcze przed rozwojem liści, i charakteryzują się delikatnym aromatem migdałowym.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1758"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "893b2eb7be853a7f"
+      },
+      "wymagania.stanowisko": {
+        "tytul": "Natura i siedlisko - Stanowisko",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Śliwa tarnina rośnie naturalnie na otwartych stanowiskach, a w całej Europie występuje przy krawędziach lasów oraz na terenach sukcesyjnych.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1756"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "81401b9db4c48440"
+      },
+      "czesci_rosliny.kwiaty.czas_zbioru": {
+        "tytul": "Surowce i zbiory - Flos Pruni spinosae: Zbiór",
+        "typ": "tekst",
+        "oryginal": "Kwiecień - Maj (na początku kwitnienia, w dni słoneczne).",
+        "tresc": [
+          {
+            "tekst": "Kwiecień - Maj (na początku kwitnienia, w dni słoneczne), a kwiaty tarniny zbiera się natychmiast po zakwitnięciu w stanie suchym, ponieważ są bardzo delikatne i łatwo się czernieją.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1740"
+            ]
+          },
+          {
+            "tekst": "Suszy się je w temperaturze około 35 °C lub na słońcu z dużym przewiewem, aż staną się kremowo- lub szarawobiałe z zapachem gorzkich migdałów.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1740"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "36c4ba655be237bc"
+      },
+      "zastosowanie.kulinarne": {
+        "tytul": "Praktyczne zastosowanie - Kuchnia",
+        "typ": "tekst",
+        "oryginal": "Wyrób słynnej tarninówki, dżemów (po przemrożeniu owoców), konfitur oraz jako dodatek do herbat owocowych.",
+        "tresc": [
+          {
+            "tekst": "Owoce tarniny wykorzystuje się do produkcji słynnej tarninówki, dżemów (po przemrożeniu owoców) oraz konfitur.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Suszone liście tarniny bywają wykorzystywane jako substytut herbaty do przygotowywania napojów rozgrzewających.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1749"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "69431c67856c4f06"
+      },
+      "czesci_rosliny.owoce.czas_zbioru": {
+        "tytul": "Surowce i zbiory - Fructus Pruni spinosae: Zbiór",
+        "typ": "tekst",
+        "oryginal": "Październik - Listopad (najlepiej po pierwszych przymrozkach, co redukuje cierpkość).",
+        "tresc": [
+          {
+            "tekst": "Owoce do celów leczniczych zbiera się w październiku i listopadzie, najlepiej po pierwszych przymrozkach, co redukuje cierpkość, gdy są dojrzałe, ale jeszcze twarde, często strząsając je na płachty rozłożone pod krzewami; suszy się je w stopniowo podnoszonej temperaturze nie wyższej niż 60 °C, po czym stają się pomarszczone i prawie czarne.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1741"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "9c509a70375f3bb1"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "W tradycji ludowej tarnina zwiastowała 'zimną zośkę' (ochłodzenie w czasie kwitnienia).",
+          "Z drewna tarniny wyrabiano najtwardsze laski i rękojeści narzędzi.",
+          "Wierzono, że korona cierniowa Chrystusa była wykonana z tarniny."
+        ],
+        "tresc": [
+          {
+            "tekst": "W tradycji ludowej tarnina zwiastowała „zimną zośkę” (ochłodzenie w czasie kwitnienia), co znajduje odzwierciedlenie także w języku angielskim, gdzie określenie „blackthorn winter” oznacza zimny okres wiosny przypadający na czas jej kwitnienia.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1752"
+            ]
+          },
+          {
+            "tekst": "Z drewna tarniny wyrabiano najtwardsze laski i rękojeści narzędzi.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Wierzono, że korona cierniowa Chrystusa była wykonana z tarniny; według poznańskiej legendy Bóg okrył ten krzew białymi kwiatami, by zdjąć z niego oskarżenie o posłużenie do jej stworzenia.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1733"
+            ]
+          },
+          {
+            "tekst": "Przez długi czas liście tej rośliny były nielegalnie dodawane do herbaty jako zaniżająca jakość domieszka.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1766"
+            ]
+          },
+          {
+            "tekst": "Dawniej wierzono, że wrzucenie owocu tarniny do psującego się wina powstrzymuje ten proces, z kolei owinięcie sera jej korą miało wydłużać jego świeżość.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1737"
+            ]
+          },
+          {
+            "tekst": "W słowiańskich wierzeniach cierniste krzewy tarniny sadzono na grobach samobójców, aby uniemożliwić im straszenie żywych, a wykonane z niej kołki służyły do zabijania stworzeń branych za wcielenia złego, takich jak nietoperze czy zmory.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1747"
+            ]
+          },
+          {
+            "tekst": "Dawny przesąd bułgarski nakazywał trzymanie gałązki lub owocu tarniny w ustach podczas pogrzebu, co miało chronić przed wypadaniem zębów.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1735"
+            ]
+          },
+          {
+            "tekst": "Nazwy licznych polskich miejscowości, takich jak Tarnów czy Tarnowskie Góry, biorą swój początek z dawnego zwyczaju obsadzania granic posiadłości krzewami tarniny.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1738"
+            ]
+          },
+          {
+            "tekst": "Gałązki tarniny służą jako kluczowy materiał wypełniający tężnie solankowe, gdzie wspomagają tworzenie leczniczego aerozolu.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1731"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.7-flash",
+        "wejscie": "ec081f7e6885126c"
+      },
+      "zastosowanie.medyczne": {
+        "tytul": "Praktyczne zastosowanie - Medycyna",
+        "typ": "tekst",
+        "oryginal": "Napar z kwiatów stosuje się jako łagodny środek przeczyszczający dla dzieci i osób starszych. Odwar z owoców jest niezastąpiony przy biegunkach i nieżytach żołądka.",
+        "tresc": [
+          {
+            "tekst": "Napar z kwiatów stosuje się jako łagodny środek przeczyszczający dla dzieci i osób starszych, a garbniki obecne w kwiatach wykazują działanie antyseptyczne, przeciwzapalne i przeciwbiegunkowe.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Odwar z owoców jest niezastąpiony przy biegunkach i nieżytach żołądka, a garbniki zawarte w owocach wykazują działanie przeciwbiegunkowe oraz przeciwzapalne.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Zawartość chemiczna tarniny obejmuje flawonoidy, kumaryny, kwas taninowy, substancje gorzkie, kwasy organiczne, witaminę C oraz śladowe ilości amigdaliny.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s1764"
+            ]
+          },
+          {
+            "tekst": "Główne substancje czynne tarniny to garbniki, flawonoidy oraz glikozydy cyjanogenne. Garbniki odpowiadają za działanie antyseptyczne, przeciwzapalne i przeciwbiegunkowe, a flawonoidy działają przeciwutleniająco i zmniejszają przepuszczalność naczyń krwionośnych.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1742"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "36cef7852104bbae"
+      },
+      "czesci_rosliny.kwiaty.wlasciwości": {
+        "tytul": "Surowce i zbiory - Flos Pruni spinosae: Działanie",
+        "typ": "tekst",
+        "oryginal": "Łagodnie przeczyszczające, moczopędne, przeciwzapalne, uszczelniające naczynia włosowate.",
+        "tresc": [
+          {
+            "tekst": "Łagodnie przeczyszczające, moczopędne, przeciwzapalne, uszczelniające naczynia włosowate.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Działanie przeciwzapalne wykorzystywano tradycyjnie w odwarze z suszonych kwiatów tarniny stosowanym do płukania jamy ustnej i gardła w celu łagodzenia stanów zapalnych błony śluzowej.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s1761"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "ad13b59a9b6ca7e4"
+      },
+      "czesci_rosliny.owoce.wlasciwości": {
+        "tytul": "Surowce i zbiory - Fructus Pruni spinosae: Działanie",
+        "typ": "tekst",
+        "oryginal": "Silnie ściągające, przeciwbiegunkowe, antybakteryjne, antyoksydacyjne.",
+        "tresc": [
+          {
+            "tekst": "Owoce tarniny wykazują działanie silnie ściągające, przeciwbiegunkowe, antybakteryjne oraz antyoksydacyjne.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Tradycyjnie dżem wytwarzany z tych owoców stosowano jako remedium wspomagające apetyt w przypadku jego braku.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s1762"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "39b388bef1b6d911"
+      },
+      "zastosowanie.rzemieslnicze": {
+        "tytul": "Praktyczne zastosowanie - Rzemiosło",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Sok tarniny barwi bawełnę na czerwono, a po wyciśnięciu uzyskuje się trwały błękit.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1751"
+            ]
+          },
+          {
+            "tekst": "Kora tarniny gotowana w środowisku zasadowym barwi tkaniny na żółto, natomiast liście pozwalają uzyskać barwnik zielony.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1736"
+            ]
+          },
+          {
+            "tekst": "Korzenie tarniny dostarczają łupkowoniebieski barwnik, a połączenie korzeni z owocami daje intensywny niebieski odcień.",
+            "zrodla": [
+              7
+            ],
+            "fakty": [
+              "s1768"
+            ]
+          },
+          {
+            "tekst": "Z dojrzałych owoców zbieranych w październiku można uzyskać ładny różowy barwnik, który jest jednak nietrwały przy praniu.",
+            "zrodla": [
+              7
+            ],
+            "fakty": [
+              "s1769"
+            ]
+          },
+          {
+            "tekst": "Sok z niedojrzałych owoców jest wyjątkowo trudny do usunięcia, dlatego był wykorzystywany do trwałego znakowania tkanin.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1734"
+            ]
+          },
+          {
+            "tekst": "W średniowieczu z pędów i kory tarniny moczonych oraz gotowanych w winie wytwarzano atrament używany w skryptoriach.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1732"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "28faf2f8c8c8ece0"
+      },
+      "zastosowanie.kosmetyczne": {
+        "tytul": "Praktyczne zastosowanie - Kosmetyka",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Miąższ pozyskiwany z owoców tarniny znajduje zastosowanie w kosmetyce jako składnik ściągających maseczek na twarz.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1739"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "457f4802744e94c7"
+      },
+      "permakultura.funkcje": {
+        "tytul": "Cykl życia i ekosystem - Permakultura - funkcje",
+        "typ": "lista",
+        "oryginal": [
+          "Naturalna bariera dla zwierząt hodowlanych (kolce)",
+          "Siedlisko lęgowe dla rzadkich ptaków (np. gąsiorek)",
+          "Wczesny pożytki dla pszczół",
+          "Wiązanie azotu (pośrednio przez wspieranie mikrobiomu)"
+        ],
+        "tresc": [
+          {
+            "tekst": "Naturalna bariera dla zwierząt hodowlanych (kolce), odcinająca pastwiska przed zgryzaniem i tworząca żywe płoty sprzyjające ptakom",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1746"
+            ]
+          },
+          {
+            "tekst": "Siedlisko lęgowe dla rzadkich ptaków (np. gąsiorek), wspierane przez żywe płoty sprzyjające ptakom",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Wczesny pożytek dla pszczół",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Wiązanie azotu (pośrednio przez wspieranie mikrobiomu)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Chroni glebę przed erozją, wzmacniając skarpy i urwiska",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1746"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "d162f1fe49edaa7a"
+      },
+      "wymagania.gleba": {
+        "tytul": "Natura i siedlisko - Gleba",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Tarnina najlepiej rozwija się na dość żyznych glebach gliniasto‑wapiennych, lecz jest wysoce niewymagająca i rośnie bez pielęgnacji nawet na suchym podłożu.",
+            "zrodla": [
+              7
+            ],
+            "fakty": [
+              "s1770"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "54d48d17cb0360da"
+      }
+    },
+    "uzyte_fakty": [
+      "s1731",
+      "s1732",
+      "s1733",
+      "s1734",
+      "s1735",
+      "s1736",
+      "s1737",
+      "s1738",
+      "s1739",
+      "s1740",
+      "s1741",
+      "s1742",
+      "s1746",
+      "s1747",
+      "s1749",
+      "s1751",
+      "s1752",
+      "s1756",
+      "s1758",
+      "s1759",
+      "s1761",
+      "s1762",
+      "s1764",
+      "s1766",
+      "s1768",
+      "s1769",
+      "s1770"
+    ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-15",
+    "jak": "llm:groq/openai/gpt-oss-120b",
+    "wejscie": "4af32a702b5469fa",
+    "wstawki": [
+      {
+        "miejsce": "zastosowanie/medycyna",
+        "rozdzial": "Praktyczne zastosowanie",
+        "tytul": "Medycyna",
+        "ikona": "ra-health",
+        "nowy": false,
+        "punkty": [
+          {
+            "tekst": "Kwiatom tradycyjnie przypisywano działanie słabo przeczyszczające, wykrztuśne, napotne oraz moczopędne, a także zdolność do zmniejszania przepuszczalności naczyń włosowatych. Stosowano je w postaci naparów, choć skuteczność tych działań nie została w pełni potwierdzona.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1743"
+            ],
+            "sekcja": "zastosowanie_lecznicze",
+            "czesc": "kwiaty"
+          },
+          {
+            "tekst": "W tradycyjnych karpackich recepturach ziołowych kwiaty tarniny były wykorzystywane jako składnik mieszanek zalecanych przy kamicy nerkowej.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1767"
+            ],
+            "sekcja": "zastosowanie_lecznicze",
+            "czesc": "kwiaty"
+          }
+        ]
+      },
+      {
+        "miejsce": "zastosowanie/kuchnia",
+        "rozdzial": "Praktyczne zastosowanie",
+        "tytul": "Kuchnia",
+        "ikona": "ra-meat",
+        "nowy": false,
+        "punkty": [
+          {
+            "tekst": "W tradycji kulinarnej wielu europejskich krajów, takiej jak francuska, niemiecka czy rosyjska, owoce tarniny były podstawą do produkcji likierów, win, marynat i soków. W Polsce są szczególnie cenione jako dodatek barwiący i aromatyzujący do win oraz składnik nalewki zwanej tarninówką.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1745"
+            ],
+            "sekcja": "ciekawostki",
+            "czesc": null
+          }
+        ]
+      },
+      {
+        "miejsce": "cykl/biologia",
+        "rozdzial": "Cykl życia i ekosystem",
+        "tytul": "Kwitnienie, zapylanie i rozsiewanie",
+        "ikona": "ra-cycle",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Tarnina jest cenioną rośliną miododajną, która podczas intensywnego kwitnienia dostarcza pszczolom dużych ilości pyłku i nektaru, osiągając wydajność miodową na poziomie około 25 kg z jednego hektara.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1748"
+            ],
+            "sekcja": "ciekawostki",
+            "czesc": "kwiaty"
+          }
+        ]
+      },
+      {
+        "miejsce": "tajemna/historia",
+        "rozdzial": "Wiedza tajemna",
+        "tytul": "Historia i nazwa",
+        "ikona": "ra-hourglass",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Owoce tarniny służą nie tylko do celów leczniczych, ale są również stosowane w przemyśle alkoholowym do aromatyzowania ginu.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s1763"
+            ],
+            "sekcja": "historia",
+            "czesc": "owoce"
+          }
+        ]
+      }
+    ],
+    "duplikaty": []
+  },
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Closeup_of_blackthorn_aka_sloe_aka_prunus_spinosa_sweden_20050924.jpg/960px-Closeup_of_blackthorn_aka_sloe_aka_prunus_spinosa_sweden_20050924.jpg",
+    "Kwiaty": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Berries_in_the_hedge_-_geograph.org.uk_-_967926.jpg",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Prunus_spinosa.001_-_Serra_de_Enci%C3%B1a_de_Lastra.JPG/960px-Prunus_spinosa.001_-_Serra_de_Enci%C3%B1a_de_Lastra.JPG",
+    "Owoce": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/BlackthornFruit.jpg/960px-BlackthornFruit.jpg",
+    "Nasiona": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Prunus_spinosa_kz02.jpg/960px-Prunus_spinosa_kz02.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-15",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Closeup_of_blackthorn_aka_sloe_aka_prunus_spinosa_sweden_20050924.jpg/960px-Closeup_of_blackthorn_aka_sloe_aka_prunus_spinosa_sweden_20050924.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Closeup_of_blackthorn_aka_sloe_aka_prunus_spinosa_sweden_20050924.jpg",
+        "autor": "Martin Olsson (mnemo on en/sv wikipedia and commons, martin@minimum.se)",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Berries_in_the_hedge_-_geograph.org.uk_-_967926.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Berries_in_the_hedge_-_geograph.org.uk_-_967926.jpg",
+        "autor": "Bill Nicholls",
+        "licencja": "CC BY-SA 2.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Prunus_spinosa.001_-_Serra_de_Enci%C3%B1a_de_Lastra.JPG/960px-Prunus_spinosa.001_-_Serra_de_Enci%C3%B1a_de_Lastra.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Prunus_spinosa.001_-_Serra_de_Enci%C3%B1a_de_Lastra.JPG",
+        "autor": "Fernando Losada Rodríguez",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/BlackthornFruit.jpg/960px-BlackthornFruit.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:BlackthornFruit.jpg",
+        "autor": "Kotoviski photograph by Henryk Kotowski",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Nasiona",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Prunus_spinosa_kz02.jpg/960px-Prunus_spinosa_kz02.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Prunus_spinosa_kz02.jpg",
+        "autor": "Krzysztof Ziarnek, Kenraiz",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  }
 }

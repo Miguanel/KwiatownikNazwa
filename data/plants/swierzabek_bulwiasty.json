@@ -267,7 +267,7 @@
     "Korzeń": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Chaerophyllum_bulbosum_001.JPG/960px-Chaerophyllum_bulbosum_001.JPG"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-14",
+    "zaktualizowano": "2026-10-15",
     "w_url": true,
     "zdjecia": [
       {
@@ -310,8 +310,8 @@
   },
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-10-14",
-    "uporzadkowano": "2026-10-14",
+    "zaktualizowano": "2026-10-15",
+    "uporzadkowano": "2026-10-15",
     "uklad": "deterministyczny: pominiete informacje: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",
     "zrodla": [
       {
@@ -351,6 +351,16 @@
             ],
             "fakty": [
               "s677"
+            ]
+          },
+          {
+            "tekst": "Pojedynczy okaz świerząbka bulwiastego wytwarza od 10 do 200 baldachów, co łącznie daje od 1 000 do nawet 36 000 drobnych kwiatów na roślinie.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1771"
             ]
           },
           {
@@ -550,6 +560,16 @@
             "fakty": [
               "s827"
             ]
+          },
+          {
+            "tekst": "W języku angielskim gatunek ten określany jest m.in. jako „turnip-rooted chervil”, „tuberous-rooted chervil”, „bulbous chervil” oraz „parsnip chervil”.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1778"
+            ]
           }
         ]
       },
@@ -616,6 +636,36 @@
             "fakty": [
               "s1719"
             ]
+          },
+          {
+            "tekst": "Świerząbek bulwiasty wymaga lekkich, żyznych oraz umiarkowanie wilgotnych gleb, a pełny okres jego uprawy trwa od 9 do 10 miesięcy.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1776"
+            ]
+          },
+          {
+            "tekst": "Wśród chorób i szkodników zagrażających uprawom świerząbka wymienia się m.in. połyśnicę marchwiankę, mszyce korzeniowe, mączniaka prawdziwego baldaszkowatych oraz wirusa mozaiki selera.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1777"
+            ]
+          },
+          {
+            "tekst": "Nasiona najlepiej kiełkują po stratyfikacji w temperaturze od 5 do 10 °C, natomiast temperatury przekraczające 25–30 °C wywołują wyraźne zahamowanie ich kiełkowania.",
+            "czesc": "nasiona",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1775"
+            ]
           }
         ]
       },
@@ -664,6 +714,36 @@
             "fakty": [
               "s1722"
             ]
+          },
+          {
+            "tekst": "Na surowo korzenie mają ostry smak zbliżony do rzodkiewki, natomiast po ugotowaniu zyskują delikatny posmak ziemniaków i kasztanów jadalnych z nutą selera i pasternaku. Duża część aromatu koncentruje się w skórce bulwy.",
+            "czesc": "korzeń",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1772"
+            ]
+          },
+          {
+            "tekst": "Do głównych owadów zapylających kwiaty świerząbka bulwiastego należą muchówki oraz chrząszcze.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1774"
+            ]
+          },
+          {
+            "tekst": "W warunkach dzikich nasiona tej rośliny rozprzestrzeniane są za pośrednictwem wody (hydrochoria), co wiąże się z jej częstym występowaniem na brzegach rzek.",
+            "czesc": "nasiona",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1773"
+            ]
           }
         ]
       }
@@ -674,14 +754,21 @@
         "s670",
         "s1703",
         "s680",
-        "s674"
+        "s674",
+        "s1772"
+      ],
+      "kwiaty": [
+        "s1771",
+        "s1774"
       ],
       "kłącze": [
         "s824",
         "s825"
       ],
       "nasiona": [
-        "s1713"
+        "s1713",
+        "s1775",
+        "s1773"
       ],
       "ziele": [
         "s826"
@@ -987,12 +1074,108 @@
           "url": "https://en.wikipedia.org/wiki/Chaerophyllum_bulbosum"
         },
         "cytat": "Pollinators for Chaerophyllum bulbosum includes flies and beetles."
+      },
+      {
+        "id": "s1771",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Pojedynczy okaz świerząbka bulwiastego wytwarza od 10 do 200 baldachów, co łącznie daje od 1 000 do nawet 36 000 drobnych kwiatów na roślinie.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Chaerophyllum bulbosum",
+          "url": "https://en.wikipedia.org/wiki/Chaerophyllum_bulbosum"
+        },
+        "cytat": "Chaerophyllum bulbosum individuals produce 10 - 200 umbels. A total of 1,000 - 36,000 flowers are produced per plant."
+      },
+      {
+        "id": "s1772",
+        "sekcja": "ciekawostki",
+        "czesc": "korzeń",
+        "tekst": "Na surowo korzenie mają ostry smak zbliżony do rzodkiewki, natomiast po ugotowaniu zyskują delikatny posmak ziemniaków i kasztanów jadalnych z nutą selera i pasternaku. Duża część aromatu koncentruje się w skórce bulwy.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Chaerophyllum bulbosum",
+          "url": "https://en.wikipedia.org/wiki/Chaerophyllum_bulbosum"
+        },
+        "cytat": "Much of the flavor comes from the skin of the tuber. The aroma intensifies the longer the plant is stored. Eaten raw, the taste is somewhat sharp like radish, but the cooked tuber gives a subtle taste of potatoes and chestnuts with a slight"
+      },
+      {
+        "id": "s1773",
+        "sekcja": "ciekawostki",
+        "czesc": "nasiona",
+        "tekst": "W warunkach dzikich nasiona tej rośliny rozprzestrzeniane są za pośrednictwem wody (hydrochoria), co wiąże się z jej częstym występowaniem na brzegach rzek.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Chaerophyllum bulbosum",
+          "url": "https://en.wikipedia.org/wiki/Chaerophyllum_bulbosum"
+        },
+        "cytat": "In the wild, tuberous-rooted chervil grows in dense populations, mainly along river banks. Seeds are dispersed by hydrochory."
+      },
+      {
+        "id": "s1774",
+        "sekcja": "ciekawostki",
+        "czesc": "kwiaty",
+        "tekst": "Do głównych owadów zapylających kwiaty świerząbka bulwiastego należą muchówki oraz chrząszcze.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Chaerophyllum bulbosum",
+          "url": "https://en.wikipedia.org/wiki/Chaerophyllum_bulbosum"
+        },
+        "cytat": "Pollinators for Chaerophyllum bulbosum includes flies and beetles."
+      },
+      {
+        "id": "s1775",
+        "sekcja": "uprawa",
+        "czesc": "nasiona",
+        "tekst": "Nasiona najlepiej kiełkują po stratyfikacji w temperaturze od 5 do 10 °C, natomiast temperatury przekraczające 25–30 °C wywołują wyraźne zahamowanie ich kiełkowania.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Chaerophyllum bulbosum",
+          "url": "https://en.wikipedia.org/wiki/Chaerophyllum_bulbosum"
+        },
+        "cytat": "After stratification, germination is at optimum with a temperature range between 5 and 10 °C. At temperatures above 25 to 30 °C significant germination inhibition occurs."
+      },
+      {
+        "id": "s1776",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "Świerząbek bulwiasty wymaga lekkich, żyznych oraz umiarkowanie wilgotnych gleb, a pełny okres jego uprawy trwa od 9 do 10 miesięcy.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Chaerophyllum bulbosum",
+          "url": "https://en.wikipedia.org/wiki/Chaerophyllum_bulbosum"
+        },
+        "cytat": "An adequate site for cultivation is characterized by light and fertile soils. The soil should be moderately moist. Cultivation period is from 9 up to 10 months."
+      },
+      {
+        "id": "s1777",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "Wśród chorób i szkodników zagrażających uprawom świerząbka wymienia się m.in. połyśnicę marchwiankę, mszyce korzeniowe, mączniaka prawdziwego baldaszkowatych oraz wirusa mozaiki selera.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Chaerophyllum bulbosum",
+          "url": "https://en.wikipedia.org/wiki/Chaerophyllum_bulbosum"
+        },
+        "cytat": "These are mainly the carrot fly, storage decay and root aphids. Furthermore, it can be host for other aphids, erysiphe heraclei or celery mosaic virus."
+      },
+      {
+        "id": "s1778",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "W języku angielskim gatunek ten określany jest m.in. jako „turnip-rooted chervil”, „tuberous-rooted chervil”, „bulbous chervil” oraz „parsnip chervil”.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Chaerophyllum bulbosum",
+          "url": "https://en.wikipedia.org/wiki/Chaerophyllum_bulbosum"
+        },
+        "cytat": "known by several common names, including turnip-rooted chervil, tuberous-rooted chervil, bulbous chervil, and parsnip chervil."
       }
     ]
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-14",
+    "zaktualizowano": "2026-10-15",
     "pola": {
       "czesci_rosliny.korzeń.opis_botaniczny": {
         "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Opis surowca",
@@ -1000,35 +1183,53 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Surowcem jest jadalna bulwa hipokotylowa o kształcie stożkowatym do kulistego, osiągająca 3–6 cm grubości, 1,5–10 cm długości oraz masę 140–200 g.",
+            "tekst": "Surowcem farmaceutycznym jest jadalna bulwa hipokotylowa o stożkowatym lub kulistym kształcie, która osiąga grubość 3 do 6 centymetrów, długość 1,5 do 10 centymetrów oraz masę 140 do 200 gramów.",
             "zrodla": [
               2
             ],
             "fakty": [
               "s677"
             ]
-          }
-        ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "77c16e0711670733"
-      },
-      "czesci_rosliny.kłącze.opis_botaniczny": {
-        "tytul": "Surowce i zbiory - Kłącze (nowa część z sieci): Opis surowca",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
+          },
           {
-            "tekst": "Zgrubienie podziemne ma stożkowaty lub kulisty kształt, osiąga 3-6 cm grubości i 1,5-10 cm długości, ważąc od 140 do 200 gramów przy szarej powierzchni.",
+            "tekst": "W trakcie przechowywania świeżo zebranych bulw w temperaturze 4 stopni Celsjusza przez okres czterech miesięcy dochodzi do przekształcenia znacznej części zawartej w nich skrobi w cukier.",
             "zrodla": [
               2
             ],
             "fakty": [
-              "s824"
+              "s680"
             ]
           }
         ],
         "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "7bed3eaf6a1def1d"
+        "wejscie": "2a48db65b5ab05a5"
+      },
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Pojedynczy okaz świerząbka bulwiastego tworzy od 10 do 200 baldachów, co w sumie daje od 1 000 do nawet 36 000 drobnych kwiatów roślinie [1].",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1771"
+            ]
+          },
+          {
+            "tekst": "Roślina ta wykazuje duże podobieństwo morfologiczne do rodzimego i silnie trującego szczwołu plamistego [2].",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s828"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "29933dbfddbeb09a"
       },
       "wymagania.stanowisko": {
         "tytul": "Natura i siedlisko - Stanowisko",
@@ -1048,87 +1249,93 @@
         "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
         "wejscie": "f96ac8649ea85a85"
       },
-      "ciekawostki": {
-        "tytul": "Wiedza tajemna - Ciekawostki",
+      "permakultura.funkcje": {
+        "tytul": "Cykl życia i ekosystem - Permakultura - funkcje",
         "typ": "lista",
-        "oryginal": null,
+        "oryginal": [
+          "Roślina na rabaty warzywne, przyspiesza rozkład materii organicznej i poprawia strukturę gleby.",
+          "Tworzy głębokie bulwy, które spulchniają i napowietrzają glebę.",
+          "Nadaje się na współrzędne uprawy z cebulą, czosnkiem, selerem i marchwią – odstrasza niektóre szkodniki.",
+          "Może być uprawiany jako roślina przełamująca monokultury na grządkach warzywnych.",
+          "Odporność na mróz pozwala na późnojesienne i zimowe zbiory (przedłużenie dostępności warzyw)."
+        ],
         "tresc": [
           {
-            "tekst": "W warunkach naturalnych gatunek rozprasza nasiona za pośrednictwem wód powierzchniowych (hydrochory).",
+            "tekst": "Roślina na rabaty warzywne, przyspiesza rozkład materii organicznej i poprawia strukturę gleby.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Tworzy głębokie bulwy, które spulchniają i napowietrzają glebę.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Nadaje się na współrzędne uprawy z cebulą, czosnkiem, selerem i marchwią – odstrasza niektóre szkodniki.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Może być uprawiany jako roślina przełamująca monokultury na grządkach warzywnych.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Odporność na mróz pozwala na późnojesienne i zimowe zbiory (przedłużenie dostępności warzyw).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W warunkach naturalnych roślina jest zapylana głównie przez muchy i chrząszcze, co jest nietypowe wśród roślin z rodziny selerowatych.",
             "zrodla": [
               3
             ],
             "fakty": [
-              "s1716"
-            ]
-          },
-          {
-            "tekst": "W XIX wieku roślinę tę uprawiano jako warzywo korzeniowe, jednak z biegiem lat popadła w zapomnienie. Obecnie bywa jeszcze hodowana ze względu na jadalne właściwości korzeni.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s669"
-            ]
-          },
-          {
-            "tekst": "Pierwsza nazwana odmiana ta rośliny, nazwana „Altan”, zostanie wyhodowana we Francji w 1986 roku, a następnie pojawiły się nowe odmiany takie jak „Véga” i „M4.10”, które mają niższą dormancję embrionów nasion.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s1717"
-            ]
-          },
-          {
-            "tekst": "W zwyczajowym języku polskim gatunek ten bywa nazywany świerzopem bulwiastym oraz różnymi odmianami nazwy trybula, takimi jak trybula bulwiasta, grubokorzeniowa czy korzeniowa.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s672"
-            ]
-          },
-          {
-            "tekst": "W krajach niemieckojęzycznych roślina ta nosi liczne nazwy potoczne, takie jak Kerbelrübe, Knollenkerbel, Erdkastanie czy regionalne określenia ludowe.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s681",
-              "s827"
-            ]
-          },
-          {
-            "tekst": "Pierwszy odnotowany w historii odmiany hodowli ogrodowych nosi nazwę 'Altan' i pochodzi z Francji z roku 1986.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s1715"
-            ]
-          },
-          {
-            "tekst": "Siewniki tej rośliny rozpylają się naturalnie drogą wodną (hydrochory), co sprzyja gęstym zbiorowiskom na brzegach rzek.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s1719"
-            ]
-          },
-          {
-            "tekst": "Roślina jest zapylana głównie przez muchy i chrząszcze, co jest nietypowe wśród roślin z rodziny selerowatych.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s1722"
+              "s1722",
+              "s1774"
             ]
           }
         ],
-        "model": "bez LLM: brak modelu",
-        "wejscie": "c6d9978639ff64b4"
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "775f4d47a48fcc37"
+      },
+      "zastosowanie.kulinarne": {
+        "tytul": "Praktyczne zastosowanie - Kuchnia",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Kopane jesienią korzenie charakteryzują się słodkim i mięsistym smakiem przypominającym orzechy oraz kasztany jadalne, a ich aromat kumuluje się w trakcie przechowywania.",
+            "zrodla": [
+              1,
+              3
+            ],
+            "fakty": [
+              "s670",
+              "s1720"
+            ]
+          },
+          {
+            "tekst": "Tradycyjnie bulwy stosowano w kuchni jako składnik smakotwórczy lub gotowano je tak jak inne warzywa korzeniowe.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1720"
+            ]
+          },
+          {
+            "tekst": "Można je spożywać na surowo jako dodatek do sałatek, koktajli i soków, a także gotować lub smażyć, dodając do zup i potraw mięsnych.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s670"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.8-flash",
+        "wejscie": "250a763e62f4d06d"
       },
       "czesci_rosliny.korzeń.czas_zbioru": {
         "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Zbiór",
@@ -1136,35 +1343,17 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Korzenie o słodkim i mięsistym smaku, przypominającym orzechy i kasztany jadalne, kopie się jesienią. Można je spożywać na surowo jako dodatek do sałatek, koktajli i soków, a także gotować lub smażyć, dodając do zup i potraw mięsnych.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s670"
-            ]
-          },
-          {
-            "tekst": "Korzenie nabierają pełnego aromatu dopiero po kilku miesiącach od pojawienia się liści pod koniec jesieni, a ich smak jest najlepszy od grudnia do marca.",
+            "tekst": "Korzenie nabierają pełnego aromatu dopiero po kilku miesiącach od pojawienia się liści pod koniec jesieni, a ich smak jest najlepszy w okresie od grudnia do marca.",
             "zrodla": [
               2
             ],
             "fakty": [
               "s1703"
             ]
-          },
-          {
-            "tekst": "Przechowywanie świeżo zebranych bulw w temperaturze 4 stopni Celsjusza przez okres czterech miesięcy powoduje przekształcenie znacznej części zawartej w nich skrobi w cukier.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s680"
-            ]
           }
         ],
-        "model": "bez LLM: brak modelu",
-        "wejscie": "137209464bae02c6"
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "125253a2aa69f9b3"
       },
       "czesci_rosliny.korzeń.skladniki_aktywne": {
         "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Substancje czynne",
@@ -1181,7 +1370,7 @@
             ]
           }
         ],
-        "model": "bez LLM: brak modelu",
+        "model": "groq/qwen/qwen3.8-27b",
         "wejscie": "14aa46870c10d698"
       },
       "czesci_rosliny.kłącze.skladniki_aktywne": {
@@ -1238,23 +1427,78 @@
         "model": "bez LLM: brak modelu",
         "wejscie": "1d327c37a14484dd"
       },
-      "ostrzezenia": {
-        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
-        "typ": "tekst",
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Roślina ta wykazuje duże podobieństwo morfologiczne do rodzimego i silnie trującego szczwołu plamistego, co stwarza ryzyko pomyłki.",
+            "tekst": "W XIX wieku roślinę tę uprawiano jako warzywo korzeniowe, jednak z biegiem lat popadła w zapomnienie. Obecnie bywa jeszcze hodowana ze względu na jadalne właściwości korzeni.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s669"
+            ]
+          },
+          {
+            "tekst": "Pierwsza nazwana odmiana ta rośliny, nazwana „Altan”, zostanie wyhodowana we Francji w 1986 roku, a następnie pojawiły się nowe odmiany takie jak „Véga” i „M4.10”, które mają niższą dormancję embrionów nasion.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1717"
+            ]
+          },
+          {
+            "tekst": "W zwyczajowym języku polskim gatunek ten bywa nazywany świerzopem bulwiastym oraz różnymi odmianami nazwy trybula, takimi jak trybula bulwiasta, grubokorzeniowa czy korzeniowa.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s672"
+            ]
+          },
+          {
+            "tekst": "W krajach niemieckojęzycznych roślina ta nosi liczne nazwy potoczne, takie jak Kerbelrübe, Knollenkerbel, Erdkastanie czy regionalne określenia ludowe.",
             "zrodla": [
               2
             ],
             "fakty": [
-              "s828"
+              "s681",
+              "s827"
+            ]
+          },
+          {
+            "tekst": "W języku angielskim gatunek ten określany jest m.in. jako „turnip-rooted chervil”, „tuberous-rooted chervil”, „bulbous chervil” oraz „parsnip chervil”.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1778"
+            ]
+          },
+          {
+            "tekst": "Pierwszy odnotowany w historii odmiany hodowli ogrodowych nosi nazwę 'Altan' i pochodzi z Francji z roku 1986.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1715"
+            ]
+          },
+          {
+            "tekst": "Roślina jest dwuletnim byliną, a w pierwszym roku wytwarza rozetę liści, w której gromadzi duże ilości skrobi niezbędne do kwitnienia w drugim roku.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1712"
             ]
           }
         ],
         "model": "bez LLM: brak modelu",
-        "wejscie": "398101f589c95e8f"
+        "wejscie": "09e378e38a7086e7"
       },
       "zastosowanie.ogrodowe": {
         "tytul": "Praktyczne zastosowanie - Ogród",
@@ -1278,43 +1522,52 @@
             "fakty": [
               "s1718"
             ]
-          }
-        ],
-        "model": "bez LLM: brak modelu",
-        "wejscie": "d874fde09e557506"
-      },
-      "opis": {
-        "tytul": "Opis - Opis ogólny",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
+          },
           {
-            "tekst": "Roślina jest dwuletnim byliną, a w pierwszym roku wytwarza rozetę liści, w której gromadzi duże ilości skrobi niezbędne do kwitnienia w drugim roku.",
+            "tekst": "Wśród chorób i szkodników zagrażających uprawom świerząbka wymienia się m.in. połyśnicę marchwiankę, mszyce korzeniowe, mączniaka prawdziwego baldaszkowatych oraz wirusa mozaiki selera.",
             "zrodla": [
               3
             ],
             "fakty": [
-              "s1712"
-            ]
-          }
-        ],
-        "model": "bez LLM: brak modelu",
-        "wejscie": "b4db844c4938663a"
-      },
-      "zastosowanie.kulinarne": {
-        "tytul": "Praktyczne zastosowanie - Kuchnia",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "Tradycyjnie stosowano bulwy w kuchni jako składnik smakotwórczy lub gotowano je tak jak inne warzywa korzeniowe, a ich aromat kumuluje się w trakcie przechowywania.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s1720"
+              "s1777"
             ]
           },
+          {
+            "tekst": "Nasiona najlepiej kiełkują po stratyfikacji w temperaturze od 5 do 10 °C, natomiast temperatury przekraczające 25–30 °C wywołują wyraźne zahamowanie ich kiełkowania.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1775"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "041030fd794213fa"
+      },
+      "wymagania.gleba": {
+        "tytul": "Natura i siedlisko - Gleba",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Świerząbek bulwiasty wymaga lekkich, żyznych oraz umiarkowanie wilgotnych gleb, a pełny okres jego uprawy trwa od 9 do 10 miesięcy.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1776"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "3d0894723fbd5780"
+      },
+      "profil_energetyczny.smak": {
+        "tytul": "Natura i siedlisko - Smak",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
           {
             "tekst": "Po ugotowaniu bulwy mają subtelny smak ziemniaków i kasztanów z lekką nutą selera i pasternaku, a na surowo smakują ostro podobnie do rzepy.",
             "zrodla": [
@@ -1323,10 +1576,19 @@
             "fakty": [
               "s1721"
             ]
+          },
+          {
+            "tekst": "Na surowo korzenie mają ostry smak zbliżony do rzodkiewki, natomiast po ugotowaniu zyskują delikatny posmak ziemniaków i kasztanów jadalnych z nutą selera i pasternaku. Duża część aromatu koncentruje się w skórce bulwy.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1772"
+            ]
           }
         ],
         "model": "bez LLM: brak modelu",
-        "wejscie": "4e5dc39565dc5d1c"
+        "wejscie": "8d024526d938148e"
       }
     },
     "uzyte_fakty": [
@@ -1335,13 +1597,18 @@
       "s1713",
       "s1714",
       "s1715",
-      "s1716",
       "s1717",
       "s1718",
-      "s1719",
       "s1720",
       "s1721",
       "s1722",
+      "s1771",
+      "s1772",
+      "s1774",
+      "s1775",
+      "s1776",
+      "s1777",
+      "s1778",
       "s668",
       "s669",
       "s670",
@@ -1350,11 +1617,90 @@
       "s677",
       "s680",
       "s681",
-      "s824",
       "s825",
       "s826",
       "s827",
       "s828"
     ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-15",
+    "jak": "reguly",
+    "wejscie": "c6bf1585b743fed3",
+    "wstawki": [
+      {
+        "miejsce": "natura/wystepowanie",
+        "rozdzial": "Natura i siedlisko",
+        "tytul": "Występowanie i zasięg",
+        "ikona": "ra-compass",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "W warunkach naturalnych gatunek rozprasza nasiona za pośrednictwem wód powierzchniowych (hydrochory).",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1716"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          },
+          {
+            "tekst": "W warunkach dzikich nasiona tej rośliny rozprzestrzeniane są za pośrednictwem wody (hydrochoria), co wiąże się z jej częstym występowaniem na brzegach rzek.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1773"
+            ],
+            "sekcja": "ciekawostki",
+            "czesc": "nasiona"
+          }
+        ]
+      },
+      {
+        "miejsce": "rozpoznawanie/cechy",
+        "rozdzial": "Rozpoznawanie w terenie",
+        "tytul": "Cechy kluczowe",
+        "ikona": "ra-leaf",
+        "nowy": false,
+        "punkty": [
+          {
+            "tekst": "Zgrubienie podziemne ma stożkowaty lub kulisty kształt, osiąga 3-6 cm grubości i 1,5-10 cm długości, ważąc od 140 do 200 gramów przy szarej powierzchni.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s824"
+            ],
+            "sekcja": "opis",
+            "czesc": "kłącze"
+          }
+        ]
+      },
+      {
+        "miejsce": "zastosowanie/ogrod",
+        "rozdzial": "Praktyczne zastosowanie",
+        "tytul": "Ogród",
+        "ikona": "ra-pine-tree",
+        "nowy": false,
+        "punkty": [
+          {
+            "tekst": "Siewniki tej rośliny rozpylają się naturalnie drogą wodną (hydrochory), co sprzyja gęstym zbiorowiskom na brzegach rzek.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1719"
+            ],
+            "sekcja": "uprawa",
+            "czesc": null
+          }
+        ]
+      }
+    ],
+    "duplikaty": []
   }
 }

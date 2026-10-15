@@ -12,9 +12,9 @@
   "_siedziba_nowa": true,
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-10-01",
-    "uporzadkowano": "2026-10-01",
-    "uklad": "llm:ollama/qwen3:8b",
+    "zaktualizowano": "2026-10-15",
+    "uporzadkowano": "2026-10-15",
+    "uklad": "deterministyczny: pominiete informacje: [3, 4, 6, 7, 8, 14, 15, 16, 17, 18]",
     "zrodla": [
       {
         "nazwa": "Wikipedia (pl): Czosnaczek pospolity",
@@ -38,22 +38,33 @@
         "nr": 3
       },
       {
+        "nazwa": "www.danielharper.org",
+        "url": "https://www.danielharper.org/yauu/2023/08/natural-dyes-from-invasives/",
+        "jezyk": "en-US",
+        "typ": "strona",
+        "nr": 4
+      },
+      {
         "nazwa": "www.kostbarenatur.net",
         "url": "https://www.kostbarenatur.net/anwendungen-und-inhaltsstoffe/knoblauchsrauke/",
         "jezyk": "de",
         "typ": "strona",
-        "nr": 4
+        "nr": 5
+      },
+      {
+        "nazwa": "www.plantura.garden",
+        "url": "https://www.plantura.garden/kraeuter/knoblauchsrauke/knoblauchsrauke-pflanzenportrait",
+        "jezyk": "de",
+        "typ": "strona",
+        "nr": 6
       }
     ],
     "sekcje": [
       {
         "klucz": "opis",
         "tytul": "Opis i wygląd",
-        "podsumowanie": "Czosnaczek pospolity ma charakterystyczny wygląd, obejmujący korzeń, liście, kwiaty i owoce. Roślina osiąga wysokość do 100 cm, ma długą korzeń palowy, liście nerkowate i sercowate, kwiaty białe, a owoce to czterostronne torebki z nasionami.",
-        "podsumowanie_zrodla": [
-          2,
-          3
-        ],
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
         "punkty": [
           {
             "tekst": "Czosnaczek pospolity osiąga wysokość od 20 do 100 centymetrów i posiada długą korzeń palowy oraz słabo czterokanciasty łodygę.",
@@ -66,13 +77,33 @@
             ]
           },
           {
-            "tekst": "Dolne liście są nerkowate, długoogonkowe i mają zatokowo karbowany brzeg, natomiast liście łodygowe są ułożone skrętolegle i mają sercowatą blaszkę.",
-            "czesc": "liście",
+            "tekst": "W pierwszym roku wzrostu rośliny tworzą kępki okrągłych, lekko pomarszczonych liści, które po zgnieceniu pachną czosnkiem.",
+            "czesc": null,
             "zrodla": [
-              2
+              3
             ],
             "fakty": [
-              "s352"
+              "s514"
+            ]
+          },
+          {
+            "tekst": "Podziemna część rośliny ma postać smukłego korzenia palowego, który czasami posiada rozgałęzioną oś główną.",
+            "czesc": "korzeń",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s505"
+            ]
+          },
+          {
+            "tekst": "Podziemna część rośliny to głęboko rosnący, cienki, białawy korzeń palowy o zapachu chrzanu.",
+            "czesc": "korzeń",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s515"
             ]
           },
           {
@@ -83,6 +114,16 @@
             ],
             "fakty": [
               "s353"
+            ]
+          },
+          {
+            "tekst": "Dolne liście są nerkowate, długoogonkowe i mają zatokowo karbowany brzeg, natomiast liście łodygowe są ułożone skrętolegle i mają sercowatą blaszkę.",
+            "czesc": "liście",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s352"
             ]
           },
           {
@@ -100,12 +141,8 @@
       {
         "klucz": "wystepowanie",
         "tytul": "Występowanie",
-        "podsumowanie": "Czosnaczek pospolity występuje w wielu regionach Europy, Azji i Afryki, a także w Ameryce Północnej. Rośnie w lasach liściastych, zaroślach, żywopłotach i na wysypiskach.",
-        "podsumowanie_zrodla": [
-          1,
-          2,
-          3
-        ],
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
         "punkty": [
           {
             "tekst": "W Polsce gatunek ten jest pospolity na prawie całym obszarze, zasiedlając głównie żyzne i próchniczne lasy liściaste.",
@@ -118,13 +155,13 @@
             ]
           },
           {
-            "tekst": "Czosnaczek pospolity pochodzi z Europy, zachodniej i środkowej Azji, północno‑zachodniej Afryki oraz Brytyjskich Wysp, sięgając aż do północnej Skandynawii i Pakistanu.",
+            "tekst": "W Polsce roślina ta występuje pospolicie niemal na całym obszarze, natomiast rzadziej spotyka się ją w części północno-wschodniej oraz w rejonie łódzkim.",
             "czesc": null,
             "zrodla": [
-              3
+              1
             ],
             "fakty": [
-              "s345"
+              "s503"
             ]
           },
           {
@@ -135,6 +172,26 @@
             ],
             "fakty": [
               "s356"
+            ]
+          },
+          {
+            "tekst": "Czosnaczek pospolity rośnie w lasach liściastych, zaroślach, żywopłotach, ogrodach i na wysypiskach.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s543"
+            ]
+          },
+          {
+            "tekst": "Czosnaczek pospolity pochodzi z Europy, zachodniej i środkowej Azji, północno‑zachodniej Afryki oraz Brytyjskich Wysp, sięgając aż do północnej Skandynawii i Pakistanu.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s345"
             ]
           }
         ]
@@ -149,7 +206,7 @@
             "tekst": "Korzeń zbiera się wyłącznie w pierwszym roku wzrostu; w kolejnym sezonie staje się drewniejszy i staje się niejadalny.",
             "czesc": "korzeń",
             "zrodla": [
-              4
+              5
             ],
             "fakty": [
               "s551"
@@ -163,6 +220,26 @@
         "podsumowanie": null,
         "podsumowanie_zrodla": [],
         "punkty": [
+          {
+            "tekst": "W korzeniach rośliny zidentyfikowano glukozynolan o nazwie glukonasturcyna.",
+            "czesc": "korzeń",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s510"
+            ]
+          },
+          {
+            "tekst": "W nasionach rośliny obecne są glikozydy w postaci kardenolidów.",
+            "czesc": "nasiona",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s511"
+            ]
+          },
           {
             "tekst": "W częściach nadziemnych rośliny znajduje się olejek gorczyczny o bardzo ostrym smaku, flawonoid alliarozyd, glukozynolany, sinapina oraz witaminy C i A.",
             "czesc": "ziele",
@@ -190,17 +267,103 @@
             "fakty": [
               "s349"
             ]
+          },
+          {
+            "tekst": "Dawniej zioło to było stosowane w medycynie jako środek odkażający oraz do przemywania ran.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s517"
+            ]
+          },
+          {
+            "tekst": "W tradycji leczniczej używano rośliny jako diuretyka, czyli środek zwiększający wydalanie moczu.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1726"
+            ]
+          },
+          {
+            "tekst": "W dawnej medycynie stosowano czosnaczka jako środek odkażający oraz do leczenia ran.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1730"
+            ]
+          },
+          {
+            "tekst": "Tradycyjnie stosowano roślinę w leczeniu kaszlu, zapalenia oskrzeli, zaburzeń trawiennych oraz wspomaganiu gojenia ran. Ekstrakt z nasion wykazuje słabe działanie bakteriobójcze, a saponiny pomagają rozrzedzać wydzielinę w drogach oddechowych.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s547"
+            ]
+          },
+          {
+            "tekst": "Do przygotowywania sosów takich jak pesto oraz sałatek wykorzystuje się posiekane liście, a czasem dodaje się do nich także kwiaty i owoce.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s520"
+            ]
+          },
+          {
+            "tekst": "We Francji nasiona rośliny są czasem wykorzystywane do doprawiania potraw.",
+            "czesc": "nasiona",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s519"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "barwienie",
+        "tytul": "Barwienie i rzemiosło",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Całe rośliny czosnku pospolitego mogą służyć do barwienia na kolor żółty, a przy użyciu zaprawy żelazowej dają barwę jasnozieloną.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s544"
+            ]
           }
         ]
       },
       {
         "klucz": "historia",
         "tytul": "Historia i nazwa",
-        "podsumowanie": "Czosnaczek pospolity był znany już w starożytności, wykorzystywany jako przyprawa i leczniczo. W XIX wieku został wprowadzony do Ameryki Północnej i rozprzestrzenił się tam jako inwazyjny gatunek.",
-        "podsumowanie_zrodla": [
-          3
-        ],
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
         "punkty": [
+          {
+            "tekst": "Naukowa nazwa rodzajowa została utworzona przez Leonharta Fuchsa w nawiązaniu do zapachu czosnku.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s512"
+            ]
+          },
           {
             "tekst": "W XIX wieku roślina została wprowadzona do Ameryki Północnej przez osadników europejskich i od 1868 roku rozprzestrzeniła się po wschodnich i środkowych stanach USA jako gatunek inwazyjny.",
             "czesc": null,
@@ -230,6 +393,44 @@
             "fakty": [
               "s348"
             ]
+          },
+          {
+            "tekst": "Zabytki archeologiczne wykazują, że roślina jest jednym z najstarszych znanych przypraw, od około 5000 lat stosowaną prawdopodobnie także jako zioło lecznicze. W nowożytności traktowano ją z dużym szacunkiem, szczególnie wśród uboższych warstw społeczeństwa, które nie mogły pozwolić sobie na importowane przyprawy.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s545"
+            ]
+          },
+          {
+            "tekst": "Nazwa gatunkowa petiolatus odnosi się do ogonkowego osadzenia liści rośliny.",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s513"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kultura",
+        "tytul": "Wierzenia i tradycje",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W tradycji ludowej uznawana była za oczyszczające zioło wiosenne, które miało „oczyszczać krew” przez diurezę i wzmacniać organizm po zimie. Rolnicy karmili nią również bydło, aby uczynić je bardziej odpornym na choroby.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s546"
+            ]
           }
         ]
       },
@@ -240,13 +441,23 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "W dawnych publikacjach roślina była nazywana „czosnkowym zielem”, a Józef Rostafiński odnotował jej ludową nazwę „bździucha”.",
+            "tekst": "W dawnych publikacjach roślina była nazywana \"czosnkowym zielem\", a Józef Rostafiński odnotował jej ludową nazwę \"bździucha\".",
             "czesc": null,
             "zrodla": [
               1
             ],
             "fakty": [
               "s343"
+            ]
+          },
+          {
+            "tekst": "W dawnej brytyjskiej tradycji ludowej roślina nosiła nazwę jack-by-the-hedge, a inne potoczne określenia to garlic root, hedge garlic, sauce-alone, jack-in-the-bush, penny hedge oraz poor man's mustard.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s516"
             ]
           }
         ]
@@ -258,6 +469,16 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
+            "tekst": "Spożycie dużych ilości rośliny może wywołać podrażnienie żołądka u osób wrażliwych z powodu zawartych w niej olejów gorczycznych.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s548"
+            ]
+          },
+          {
             "tekst": "Młode rośliny, zwłaszcza siewki, mogą zawierać związki cyjanogenne stanowiące ochronę przed roślinożercami, jednak roślina uznawana jest za praktycznie nieszkodliwą przy spożywaniu niewielkich ilości.",
             "czesc": "ziele",
             "zrodla": [
@@ -268,13 +489,51 @@
             ]
           },
           {
-            "tekst": "Spożycie dużych ilości rośliny może wywołać podrażnienie żołądka u osób wrażliwych z powodu zawartych w niej olejów gorczycznych.",
-            "czesc": null,
+            "tekst": "Młode rośliny pierwszego roku wzrostu mogą zawierać do 100 ppm cyjanków, co jest toksyczne dla wielu kręgowców, jednak poziom ten znika, gdy roślinę się posieka.",
+            "czesc": "ziele",
             "zrodla": [
-              4
+              3
             ],
             "fakty": [
-              "s548"
+              "s644"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "uprawa",
+        "tytul": "Uprawa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W Ameryce Północnej roślina była sadzona również jako forma ochrony przed erozją gleby.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s518"
+            ]
+          },
+          {
+            "tekst": "Roślina wymaga regularnego podlewania – od marca podłoże powinno być stale wilgotne, a w okresach suszy konieczne jest dodatkowe podlewanie.",
+            "czesc": null,
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s659"
+            ]
+          },
+          {
+            "tekst": "W Ameryce Północnej roślina jest klasyfikowana jako gatunek inwazyjny, który zdominował leśne podszybie, co zmniejszyło bioróżnorodność na wielu obszarach.",
+            "czesc": "korzeń",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s646"
             ]
           }
         ]
@@ -282,20 +541,27 @@
       {
         "klucz": "ciekawostki",
         "tytul": "Ciekawostki",
-        "podsumowanie": "Czosnaczek pospolity ma właściwości allelopatyczne, hamując wzrost innych roślin i rozprzestrzeniając się dzięki przyczepianiu nasion do zwierząt.",
-        "podsumowanie_zrodla": [
-          2,
-          4
-        ],
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Substancje zawarte w roślinie działają allelopatycznie i hamują wzrost grzybów mikoryzowych, co pośrednio ogranicza pojawianie się drzew w jej bezpośrednim sąsiedztwie.",
-            "czesc": "ziele",
+            "tekst": "Roślina wyrasta szybciej wiosną niż wiele rodzimych gatunków, co pozwala jej dominować w podłożu leśnym w północnej części Stanów Zjednoczonych.",
+            "czesc": null,
             "zrodla": [
-              2
+              3
             ],
             "fakty": [
-              "s354"
+              "s1724"
+            ]
+          },
+          {
+            "tekst": "Z korzenia rośliny wydzielany jest sekret, który działa allelopatycznie, hamując wzrost innych roślin i wyłączając dany obszar z konkurencji.",
+            "czesc": "korzeń",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s550"
             ]
           },
           {
@@ -309,39 +575,48 @@
             ]
           },
           {
-            "tekst": "Z korzenia rośliny wydzielany jest sekret, który działa allelopatycznie, hamując wzrost innych roślin i wyłączając dany obszar z konkurencji.",
-            "czesc": "korzeń",
+            "tekst": "Substancje zawarte w roślinie działają allelopatycznie i hamują wzrost grzybów mikoryzowych, co pośrednio ogranicza pojawianie się drzew w jej bezpośrednim sąsiedztwie.",
+            "czesc": "ziele",
             "zrodla": [
-              4
+              2
             ],
             "fakty": [
-              "s550"
+              "s354"
             ]
           }
         ]
       }
     ],
     "czesci": {
-      "liście": [
-        "s352"
+      "korzeń": [
+        "s505",
+        "s515",
+        "s551",
+        "s510",
+        "s646",
+        "s550"
       ],
       "kwiaty": [
-        "s353"
+        "s353",
+        "s520"
+      ],
+      "liście": [
+        "s352",
+        "s513"
       ],
       "owoce": [
         "s350"
       ],
-      "korzeń": [
-        "s551",
-        "s550"
+      "nasiona": [
+        "s511",
+        "s519",
+        "s355"
       ],
       "ziele": [
         "s342",
         "s344",
+        "s644",
         "s354"
-      ],
-      "nasiona": [
-        "s355"
       ]
     },
     "fakty": [
@@ -354,7 +629,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Czosnaczek pospolity",
           "url": "https://pl.wikipedia.org/wiki/Czosnaczek_pospolity"
-        }
+        },
+        "cytat": "W Polsce jest to gatunek pospolity. (...) zasiedla głównie lasy liściaste, w których występuje zwykle na glebach żyznych i próchnicznych."
       },
       {
         "id": "s342",
@@ -365,7 +641,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Czosnaczek pospolity",
           "url": "https://pl.wikipedia.org/wiki/Czosnaczek_pospolity"
-        }
+        },
+        "cytat": "W części nadziemnej rośliny zawarty jest olejek gorczyczny o bardzo ostrym smaku, flawonoid alliarozyd, glukozynolany (m.in. synigryna), sinapina, witamina C i A."
       },
       {
         "id": "s343",
@@ -376,7 +653,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Czosnaczek pospolity",
           "url": "https://pl.wikipedia.org/wiki/Czosnaczek_pospolity"
-        }
+        },
+        "cytat": "często gatunek nazywany był „czosnkowym zielem”, m.in. przez Marcina z Urzędowa i Syreniusza. Józef Rostafiński odnotował nazwę ludową – „bździucha”."
       },
       {
         "id": "s344",
@@ -387,7 +665,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Czosnaczek pospolity",
           "url": "https://pl.wikipedia.org/wiki/Czosnaczek_pospolity"
-        }
+        },
+        "cytat": "Zawartość związków cyjanogennych, stanowiących ochronę przed roślinożercami, sięgać może do 100 ppm świeżej masy w młodych roślinach, zwłaszcza w siewkach. Mimo to roślina określana jest jako praktycznie nieszkodliwa, zwłaszcza w przypadku "
       },
       {
         "id": "s345",
@@ -398,7 +677,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (en): Alliaria petiolata",
           "url": "https://en.wikipedia.org/wiki/Alliaria_petiolata"
-        }
+        },
+        "cytat": "It is native to Europe, western and central Asia, north-western Africa, Morocco, Iberia and the British Isles, north to northern Scandinavia, and east to northern Pakistan and Xinjiang in western China."
       },
       {
         "id": "s346",
@@ -409,7 +689,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (en): Alliaria petiolata",
           "url": "https://en.wikipedia.org/wiki/Alliaria_petiolata"
-        }
+        },
+        "cytat": "Garlic mustard was introduced to North America by European settlers in the 1800s ... The species was recorded as being in Long Island in 1868."
       },
       {
         "id": "s347",
@@ -420,7 +701,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (en): Alliaria petiolata",
           "url": "https://en.wikipedia.org/wiki/Alliaria_petiolata"
-        }
+        },
+        "cytat": "Phytoliths in pottery of the Ertebølle and Funnelneck-Beaker culture in north-eastern Germany and Denmark, dating to 4100–3750 BCE, indicate its use in that era."
       },
       {
         "id": "s348",
@@ -431,7 +713,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (en): Alliaria petiolata",
           "url": "https://en.wikipedia.org/wiki/Alliaria_petiolata"
-        }
+        },
+        "cytat": "In 17th-century Britain, it was recommended as a flavouring for salt fish."
       },
       {
         "id": "s349",
@@ -442,7 +725,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (en): Alliaria petiolata",
           "url": "https://en.wikipedia.org/wiki/Alliaria_petiolata"
-        }
+        },
+        "cytat": "Its traditional medicinal purposes include use as a diuretic."
       },
       {
         "id": "s350",
@@ -453,7 +737,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (en): Alliaria petiolata",
           "url": "https://en.wikipedia.org/wiki/Alliaria_petiolata"
-        }
+        },
+        "cytat": "The fruit is an erect, slender, four-sided capsule 4–5.5 cm long, called a silique, ... containing two rows of small shiny black seeds which are released when a silique splits open."
       },
       {
         "id": "s351",
@@ -464,7 +749,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (de): Knoblauchsrauke",
           "url": "https://de.wikipedia.org/wiki/Knoblauchsrauke"
-        }
+        },
+        "cytat": "Die Knoblauchsrauke ist eine zwei- bis mehrjährige krautige Pflanze, die Wuchshöhen von 20 bis 100 Zentimetern erreicht. Sie besitzt eine lange Pfahlwurzel. Der Stängel ist schwach vierkantig"
       },
       {
         "id": "s352",
@@ -475,7 +761,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (de): Knoblauchsrauke",
           "url": "https://de.wikipedia.org/wiki/Knoblauchsrauke"
-        }
+        },
+        "cytat": "Die lang gestielten, nierenförmigen Grundblätter sind am Rand buchtig gekerbt. Die Stängelblätter sind wechselständig angeordnet. Sie weisen eine herzförmige Blattspreite mit gebuchtetem Rand auf."
       },
       {
         "id": "s353",
@@ -486,7 +773,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (de): Knoblauchsrauke",
           "url": "https://de.wikipedia.org/wiki/Knoblauchsrauke"
-        }
+        },
+        "cytat": "Die Knoblauchsrauke blüht von April bis Juli. In einem endständigen, traubigen Blütenstand sitzen viele Blüten. Die zwittrigen Blüten sind, wie für Kreuzblütler typisch, vierzählig sowie 5 bis 8 Millimeter groß. Die vier weißen Kronblätter"
       },
       {
         "id": "s354",
@@ -497,7 +785,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (de): Knoblauchsrauke",
           "url": "https://de.wikipedia.org/wiki/Knoblauchsrauke"
-        }
+        },
+        "cytat": "Pflanzeninhaltsstoffe wirken allelopathisch auf das Wachstum von Mykorrhizapilzen ein und hemmt bzw. unterbindet dieses. Da wiederum viele Keimlinge von Bäumen von diesen Pilzen abhängen, unterbindet die Knoblauchsrauke so indirekt das Aufk"
       },
       {
         "id": "s355",
@@ -508,7 +797,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (de): Knoblauchsrauke",
           "url": "https://de.wikipedia.org/wiki/Knoblauchsrauke"
-        }
+        },
+        "cytat": "Bei Regen verschleimen die Samen und bleiben im Fell vorbeistreifender Tiere haften. Sie werden durch diese Strategie, die sogenannte Epichorie, über eine größere Distanz verschleppt als durch die Semachorie."
       },
       {
         "id": "s356",
@@ -519,7 +809,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (de): Knoblauchsrauke",
           "url": "https://de.wikipedia.org/wiki/Knoblauchsrauke"
-        }
+        },
+        "cytat": "Sie ist eigentlich eine Pflanzenart der Laubwälder, gedeiht aber besonders gut in Gebüschen und Hecken sowie an Mauern und Wegrainen, in Gärten und auf Schuttplätzen (Ruderalstellen)... Wie diese schätzt sie frische, stickstoffreiche Lehmbö"
       },
       {
         "id": "s548",
@@ -530,7 +821,8 @@
         "zrodlo": {
           "nazwa": "www.kostbarenatur.net",
           "url": "https://www.kostbarenatur.net/anwendungen-und-inhaltsstoffe/knoblauchsrauke/"
-        }
+        },
+        "cytat": "In größeren Mengen kann die Knoblauchsrauke durch ihre Senföle bei empfindlichen Menschen Magenreizungen verursachen"
       },
       {
         "id": "s550",
@@ -541,7 +833,8 @@
         "zrodlo": {
           "nazwa": "www.kostbarenatur.net",
           "url": "https://www.kostbarenatur.net/anwendungen-und-inhaltsstoffe/knoblauchsrauke/"
-        }
+        },
+        "cytat": "Von ihren Wurzeln sondert sich ein Sekret ab, mit welchem sie andere Pflanzen fernhält."
       },
       {
         "id": "s551",
@@ -552,21 +845,319 @@
         "zrodlo": {
           "nazwa": "www.kostbarenatur.net",
           "url": "https://www.kostbarenatur.net/anwendungen-und-inhaltsstoffe/knoblauchsrauke/"
-        }
+        },
+        "cytat": "Geerntet wird die Wurzel allerdings nur im ersten Jahr ihres Wachstums. Danach (im zweiten Jahr) wird die Wurzel holzig und ungenießbar."
+      },
+      {
+        "id": "s503",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "W Polsce roślina ta występuje pospolicie niemal na całym obszarze, natomiast rzadziej spotyka się ją w części północno-wschodniej oraz w rejonie łódzkim.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Czosnaczek pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Czosnaczek_pospolity"
+        },
+        "cytat": "W Polsce gatunek jest pospolity niemal na całym obszarze, rzadziej spotykany jest tylko w północno-wschodniej części kraju i w łódzkim."
+      },
+      {
+        "id": "s505",
+        "sekcja": "opis",
+        "czesc": "korzeń",
+        "tekst": "Podziemna część rośliny ma postać smukłego korzenia palowego, który czasami posiada rozgałęzioną oś główną.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Czosnaczek pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Czosnaczek_pospolity"
+        },
+        "cytat": "Korzeń: Smukły, palowy, czasem z rozgałęzioną główną osią."
+      },
+      {
+        "id": "s510",
+        "sekcja": "sklad",
+        "czesc": "korzeń",
+        "tekst": "W korzeniach rośliny zidentyfikowano glukozynolan o nazwie glukonasturcyna.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Czosnaczek pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Czosnaczek_pospolity"
+        },
+        "cytat": "W korzeniach stwierdzono glukonasturcynę (glukozynolan)"
+      },
+      {
+        "id": "s511",
+        "sekcja": "sklad",
+        "czesc": "nasiona",
+        "tekst": "W nasionach rośliny obecne są glikozydy w postaci kardenolidów.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Czosnaczek pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Czosnaczek_pospolity"
+        },
+        "cytat": "a w nasionach kardenolidy (glikozydy)."
+      },
+      {
+        "id": "s512",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Naukowa nazwa rodzajowa została utworzona przez Leonharta Fuchsa w nawiązaniu do zapachu czosnku.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Czosnaczek pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Czosnaczek_pospolity"
+        },
+        "cytat": "Naukowa nazwa rodzajowa rodzajowa Alliaria utworzona została przez Leonharta Fuchsa ze względu na podobieństwo zapachu rośliny do czosnku (Alium)."
+      },
+      {
+        "id": "s513",
+        "sekcja": "historia",
+        "czesc": "liście",
+        "tekst": "Nazwa gatunkowa petiolatus odnosi się do ogonkowego osadzenia liści rośliny.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Czosnaczek pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Czosnaczek_pospolity"
+        },
+        "cytat": "Nazwa gatunkowa petiolatus oznacza roślinę o liściach ogonkowych, a słowo powstało jako zdrobnienie od pes = noga tj. nóżka, tu w znaczeniu ogonka liściowego."
+      },
+      {
+        "id": "s514",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "W pierwszym roku wzrostu rośliny tworzą kępki okrągłych, lekko pomarszczonych liści, które po zgnieceniu pachną czosnkiem.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Alliaria petiolata",
+          "url": "https://en.wikipedia.org/wiki/Alliaria_petiolata"
+        },
+        "cytat": "In the first year of growth, plants form clumps of round, slightly wrinkled leaves, that when crushed smell like garlic."
+      },
+      {
+        "id": "s515",
+        "sekcja": "opis",
+        "czesc": "korzeń",
+        "tekst": "Podziemna część rośliny to głęboko rosnący, cienki, białawy korzeń palowy o zapachu chrzanu.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Alliaria petiolata",
+          "url": "https://en.wikipedia.org/wiki/Alliaria_petiolata"
+        },
+        "cytat": "It is an herbaceous biennial plant growing from a deeply growing, thin, whitish taproot scented like horseradish."
+      },
+      {
+        "id": "s516",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "W dawnej brytyjskiej tradycji ludowej roślina nosiła nazwę jack-by-the-hedge, a inne potoczne określenia to garlic root, hedge garlic, sauce-alone, jack-in-the-bush, penny hedge oraz poor man's mustard.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Alliaria petiolata",
+          "url": "https://en.wikipedia.org/wiki/Alliaria_petiolata"
+        },
+        "cytat": "Plants are often found growing along the margins of hedges, giving rise to the old British folk name of jack-by-the-hedge. Other common names include garlic root, hedge garlic, sauce-alone, jack-in-the-bush, penny hedge and poor man's musta"
+      },
+      {
+        "id": "s517",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": null,
+        "tekst": "Dawniej zioło to było stosowane w medycynie jako środek odkażający oraz do przemywania ran.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Alliaria petiolata",
+          "url": "https://en.wikipedia.org/wiki/Alliaria_petiolata"
+        },
+        "cytat": "Garlic mustard was once used medicinally as a disinfectant, and was sometimes used to treat wounds."
+      },
+      {
+        "id": "s518",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "W Ameryce Północnej roślina była sadzona również jako forma ochrony przed erozją gleby.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Alliaria petiolata",
+          "url": "https://en.wikipedia.org/wiki/Alliaria_petiolata"
+        },
+        "cytat": "The herb was also planted as a form of erosion control."
+      },
+      {
+        "id": "s519",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "nasiona",
+        "tekst": "We Francji nasiona rośliny są czasem wykorzystywane do doprawiania potraw.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Alliaria petiolata",
+          "url": "https://en.wikipedia.org/wiki/Alliaria_petiolata"
+        },
+        "cytat": "The seeds are sometimes used in France to season food."
+      },
+      {
+        "id": "s520",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "kwiaty",
+        "tekst": "Do przygotowywania sosów takich jak pesto oraz sałatek wykorzystuje się posiekane liście, a czasem dodaje się do nich także kwiaty i owoce.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Alliaria petiolata",
+          "url": "https://en.wikipedia.org/wiki/Alliaria_petiolata"
+        },
+        "cytat": "Today, the chopped leaves are used for flavouring in salads and sauces such as pesto, and sometimes the flowers and fruit are included as well."
+      },
+      {
+        "id": "s543",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Czosnaczek pospolity rośnie w lasach liściastych, zaroślach, żywopłotach, ogrodach i na wysypiskach.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Knoblauchsrauke",
+          "url": "https://de.wikipedia.org/wiki/Knoblauchsrauke"
+        },
+        "cytat": "Sie ist eigentlich eine Pflanzenart der Laubwälder, gedeiht aber besonders gut in Gebüschen und Hecken sowie an Mauern und Wegrainen, in Gärten und auf Schuttplätzen (Ruderalstellen)."
+      },
+      {
+        "id": "s544",
+        "sekcja": "barwienie",
+        "czesc": null,
+        "tekst": "Całe rośliny czosnku pospolitego mogą służyć do barwienia na kolor żółty, a przy użyciu zaprawy żelazowej dają barwę jasnozieloną.",
+        "jezyk": "en-US",
+        "zrodlo": {
+          "nazwa": "www.danielharper.org",
+          "url": "https://www.danielharper.org/yauu/2023/08/natural-dyes-from-invasives/"
+        },
+        "cytat": "Garlic Mustard (Alliaria petiolata) — whole plants are said to make a yellow dye, or pale green with iron mordant"
+      },
+      {
+        "id": "s545",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Zabytki archeologiczne wykazują, że roślina jest jednym z najstarszych znanych przypraw, od około 5000 lat stosowaną prawdopodobnie także jako zioło lecznicze. W nowożytności traktowano ją z dużym szacunkiem, szczególnie wśród uboższych warstw społeczeństwa, które nie mogły pozwolić sobie na importowane przyprawy.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "www.kostbarenatur.net",
+          "url": "https://www.kostbarenatur.net/anwendungen-und-inhaltsstoffe/knoblauchsrauke/"
+        },
+        "cytat": "5000 Jahre alte Funde von Kochstätten haben gezeigt, dass Knoblauchsrauke schon damals als Gewürz- und wahrscheinlich auch Heilkraut verwendet wurde. Noch bis in die Neuzeit hinein war sie eine angesehene Gewürzpflanze, vor allem bei der ar"
+      },
+      {
+        "id": "s546",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "W tradycji ludowej uznawana była za oczyszczające zioło wiosenne, które miało „oczyszczać krew” przez diurezę i wzmacniać organizm po zimie. Rolnicy karmili nią również bydło, aby uczynić je bardziej odpornym na choroby.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "www.kostbarenatur.net",
+          "url": "https://www.kostbarenatur.net/anwendungen-und-inhaltsstoffe/knoblauchsrauke/"
+        },
+        "cytat": "In der Volksheilkunde galt sie als reinigendes Frühlingskraut: Sie sollte „das Blut klären“ – also harntreibend sein – und den Körper nach dem Winter stärken. Bauern gaben sie auch dem Vieh, um es widerstandsfähiger gegen Krankheiten zu mac"
+      },
+      {
+        "id": "s547",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": null,
+        "tekst": "Tradycyjnie stosowano roślinę w leczeniu kaszlu, zapalenia oskrzeli, zaburzeń trawiennych oraz wspomaganiu gojenia ran. Ekstrakt z nasion wykazuje słabe działanie bakteriobójcze, a saponiny pomagają rozrzedzać wydzielinę w drogach oddechowych.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "www.kostbarenatur.net",
+          "url": "https://www.kostbarenatur.net/anwendungen-und-inhaltsstoffe/knoblauchsrauke/"
+        },
+        "cytat": "Traditionell wird Knoblauchsrauke bei Husten, Bronchitis, Verdauungsbeschwerden und zur Wundheilung eingesetzt. Die enthaltenen Senfölglykoside – allen voran Sinigrin – wirken leicht antibakteriell. Saponine unterstützen die Schleimlösung i"
+      },
+      {
+        "id": "s644",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "ziele",
+        "tekst": "Młode rośliny pierwszego roku wzrostu mogą zawierać do 100 ppm cyjanków, co jest toksyczne dla wielu kręgowców, jednak poziom ten znika, gdy roślinę się posieka.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Alliaria petiolata",
+          "url": "https://en.wikipedia.org/wiki/Alliaria_petiolata"
+        },
+        "cytat": "Young first-year garlic mustard plants contain up to 100 ppm cyanide, a level which is toxic to many vertebrates. Once the plant is chopped up, the cyanide gas is eliminated."
+      },
+      {
+        "id": "s646",
+        "sekcja": "uprawa",
+        "czesc": "korzeń",
+        "tekst": "W Ameryce Północnej roślina jest klasyfikowana jako gatunek inwazyjny, który zdominował leśne podszybie, co zmniejszyło bioróżnorodność na wielu obszarach.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Alliaria petiolata",
+          "url": "https://en.wikipedia.org/wiki/Alliaria_petiolata"
+        },
+        "cytat": "It is one of the few invasive herbaceous species able to dominate the understory of North American forests and has thus reduced the biodiversity of many areas."
+      },
+      {
+        "id": "s659",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "Roślina wymaga regularnego podlewania – od marca podłoże powinno być stale wilgotne, a w okresach suszy konieczne jest dodatkowe podlewanie.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "www.plantura.garden",
+          "url": "https://www.plantura.garden/kraeuter/knoblauchsrauke/knoblauchsrauke-pflanzenportrait"
+        },
+        "cytat": "Halten Sie den Boden ab März dauerhaft feucht. Während langen Trockenperioden müssen die Pflanzen gegossen werden."
+      },
+      {
+        "id": "s1724",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Roślina wyrasta szybciej wiosną niż wiele rodzimych gatunków, co pozwala jej dominować w podłożu leśnym w północnej części Stanów Zjednoczonych.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Alliaria petiolata",
+          "url": "https://en.wikipedia.org/wiki/Alliaria_petiolata"
+        },
+        "cytat": "It has now become a tenacious invasive plant across the northern U.S., in particular because of its earlier springtime emergence than many native species, often in the forest understory."
+      },
+      {
+        "id": "s1726",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": null,
+        "tekst": "W tradycji leczniczej używano rośliny jako diuretyka, czyli środek zwiększający wydalanie moczu.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Alliaria petiolata",
+          "url": "https://en.wikipedia.org/wiki/Alliaria_petiolata"
+        },
+        "cytat": "Its traditional medicinal purposes include use as a diuretic."
+      },
+      {
+        "id": "s1730",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": null,
+        "tekst": "W dawnej medycynie stosowano czosnaczka jako środek odkażający oraz do leczenia ran.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Alliaria petiolata",
+          "url": "https://en.wikipedia.org/wiki/Alliaria_petiolata"
+        },
+        "cytat": "Garlic mustard was once used medicinally as a disinfectant, and was sometimes used to treat wounds."
       }
     ]
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-10-15",
     "pola": {
-      "identyfikacja.cechy_kluczowe": {
-        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
-        "typ": "lista",
-        "oryginal": null,
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Owoc to wydłużona, czterostronna torebka (silika) o długości 4–5,5 cm, w której znajdują się dwa rzędy czarnych nasion uwalnianych po rozpadzie torebki.",
         "tresc": [
           {
-            "tekst": "Czosnaczek pospolity osiąga wysokość od 20 do 100 centymetrów i posiada długi korzeń palowy oraz słabo czterokanciastą łodygę.",
+            "tekst": "W Polsce roślina ta występuje pospolicie niemal na całym obszarze, rzadziej natomiast spotyka się ją w części północno-wschodniej oraz w rejonie łódzkim.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s503"
+            ]
+          },
+          {
+            "tekst": "Czosnaczek pospolity osiąga wysokość od 20 do 100 centymetrów, wytwarzając długi korzeń palowy oraz słabo czterokanciastą łodygę.",
             "zrodla": [
               2
             ],
@@ -575,7 +1166,30 @@
             ]
           },
           {
-            "tekst": "Dolne liście są nerkowate, długoogonkowe i mają zatokowo karbowany brzeg, natomiast liście łodygowe są ułożone skrętolegle i mają sercowatą blaszkę.",
+            "tekst": "Jego owocem jest wydłużona, czterostronna torebka (silika) o długości 4–5,5 cm, w której kryją się dwa rzędy czarnych nasion uwalnianych po rozpadzie torebki.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "gemini/gemini-3.7-flash",
+        "wejscie": "d4d9006dc26f38ce"
+      },
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "W pierwszym roku wzrostu roślina tworzy kępki okrągłych, lekko pomarszczonych liści, które po zgnieceniu pachną czosnkiem.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s514"
+            ]
+          },
+          {
+            "tekst": "Dolne liście są nerkowate, długoogonkowe i mają zatokowo karbowany brzeg, natomiast liście łodygowe charakteryzują się sercowatą blaszką i ułożone są skrętolegle.",
             "zrodla": [
               2
             ],
@@ -584,16 +1198,7 @@
             ]
           },
           {
-            "tekst": "Roślina kwitnie od kwietnia do lipca, tworząc groniaste kwiatostany złożone z czterokrotnych, obupłciowych kwiatów o białych płatkach korony.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s353"
-            ]
-          },
-          {
-            "tekst": "Owoc to wydłużona, czterostronna torebka (silika) o długości 4–5,5 cm, w której znajdują się dwa rzędy czarnych nasion uwalnianych po rozpadzie torebki.",
+            "tekst": "Owoc stanowi wydłużona, czterostronna torebka (silika) o długości 4–5,5 cm, mieszcząca dwa rzędy czarnych nasion uwalnianych po jej rozpadzie.",
             "zrodla": [
               3
             ],
@@ -602,14 +1207,61 @@
             ]
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "881bcdf4e1bb54e8"
+        "model": "gemini/gemini-3.7-flash",
+        "wejscie": "0cf676a92ac14054"
       },
-      "wymagania.stanowisko": {
-        "tytul": "Natura i siedlisko - Stanowisko",
+      "czesci_rosliny.korzeń.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Opis surowca",
         "typ": "tekst",
         "oryginal": null,
         "tresc": [
+          {
+            "tekst": "Podziemną część rośliny stanowi głęboko rosnący, smukły i cienki białawy korzeń palowy o zapachu chrzanu, który czasami posiada rozgałęzioną oś główną.",
+            "zrodla": [
+              1,
+              3
+            ],
+            "fakty": [
+              "s505",
+              "s515"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.7-flash",
+        "wejscie": "49e168ee1313b150"
+      },
+      "czesci_rosliny.kwiaty.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Kwiaty (nowa część z sieci): Opis surowca",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Roślina kwitnie od kwietnia do lipca, wykształcając groniaste kwiatostany złożone z czterokrotnych, obupłciowych kwiatów o białych płatkach korony.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s353"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.7-flash",
+        "wejscie": "5f6ac809f65d9ff4"
+      },
+      "wymagania.gleba": {
+        "tytul": "Natura i siedlisko - Gleba",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Gatunek ten preferuje świeże, gliniaste gleby, które są żyzne, próchniczne oraz bogate w azot.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s356"
+            ]
+          },
           {
             "tekst": "W Polsce gatunek ten jest pospolity na prawie całym obszarze, zasiedlając głównie żyzne i próchniczne lasy liściaste.",
             "zrodla": [
@@ -620,49 +1272,144 @@
             ]
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "5077ff6c36fed3c1"
+        "model": "gemini/gemini-3.8-flash",
+        "wejscie": "5d59fc976362177c"
       },
-      "opis": {
-        "tytul": "Opis - Opis ogólny",
-        "typ": "tekst",
-        "oryginal": "Owoc to wydłużona, czterostronna torebka (silika) o długości 4–5,5 cm, w której znajdują się dwa rzędy czarnych nasion uwalnianych po rozpadzie torebki.",
-        "tresc": [
-          {
-            "tekst": "Czosnaczek pospolity pochodzi z Europy, zachodniej i środkowej Azji, północno-zachodniej Afryki oraz Brytyjskich Wysp, sięgając aż do północnej Skandynawii i Pakistanu.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s345"
-            ]
-          },
-          {
-            "tekst": "Owoc tej rośliny to wydłużona, czterostronna torebka o długości 4-5,5 cm, w której znajdują się dwa rzędy czarnych nasion uwalnianych po rozpadzie torebki.",
-            "zrodla": [],
-            "fakty": []
-          }
-        ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "5dad8c8ec20cc993"
-      },
-      "wymagania.gleba": {
-        "tytul": "Natura i siedlisko - Gleba",
+      "wymagania.stanowisko": {
+        "tytul": "Natura i siedlisko - Stanowisko",
         "typ": "tekst",
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Gatunek preferuje świeże, bogate w azot gleby gliniaste.",
+            "tekst": "Czosnaczek pospolity rośnie w lasach liściastych, zaroślach, żywopłotach, ogrodach i na wysypiskach.",
             "zrodla": [
               2
             ],
             "fakty": [
-              "s356"
+              "s543"
             ]
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "eb6d38dbc10db870"
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "d9e4b72d877ac9ff"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Badania archeologiczne wskazują, że czosnaczek pospolity jest jedną z najstarszych znanych przypraw, a najdawniejsze dowody jego użycia – datowane na lata 4100–3750 p.n.e. – odnaleziono na ceramice kultur Ertebølle i Funnelneck-Beaker w północno-wschodnich Niemczech oraz Danii.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s347"
+            ]
+          },
+          {
+            "tekst": "Od około 5000 lat roślina była stosowana prawdopodobnie także jako zioło lecznicze, a w czasach nowożytnych otaczano ją dużym szacunkiem zwłaszcza wśród ubogiej ludności, dla której stanowiła dostępny zamiennik drogich przypraw z importu.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s545"
+            ]
+          },
+          {
+            "tekst": "W XIX wieku czosnaczek został sprowadzony do Ameryki Północnej przez europejskich osadników, po czym od 1868 roku zaczął rozprzestrzeniać się we wschodnich i środkowych stanach USA jako roślina inwazyjna.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s346"
+            ]
+          },
+          {
+            "tekst": "Naukowa nazwa rodzajowa została nadana roślinie przez Leonharta Fuchsa ze względu na jej zapach przypominający czosnek, natomiast łaciński epitet petiolatus nawiązuje do liści osadzonych na ogonkach.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s512",
+              "s513"
+            ]
+          },
+          {
+            "tekst": "W dawnych polskich publikacjach gatunek ten opisywano jako „czosnkowe ziele”, a botanik Józef Rostafiński odnotował jego tradycyjne miano ludowe „bździucha”.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s343"
+            ]
+          },
+          {
+            "tekst": "W brytyjskim folklorze roślina znana była jako jack-by-the-hedge, a wśród innych jej potocznych określeń wymienia się m.in. garlic root, hedge garlic, sauce-alone, jack-in-the-bush, penny hedge oraz poor man's mustard.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s516"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.8-flash",
+        "wejscie": "43da49a60bf47bce"
+      },
+      "czesci_rosliny.korzeń.czas_zbioru": {
+        "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Zbiór",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Korzeń pozyskuje się wyłącznie w pierwszym roku wzrostu rośliny, gdyż w kolejnym sezonie drewnieje i staje się niejadalny.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s551"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.8-flash",
+        "wejscie": "213c2bd8865ca99e"
+      },
+      "czesci_rosliny.korzeń.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "W korzeniach rośliny zidentyfikowano glukozynolan o nazwie glukonasturcyna.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s510"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "347d084575787160"
+      },
+      "czesci_rosliny.nasiona.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "W nasionach rośliny obecne są glikozydy w postaci kardenolidów.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s511"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "60c3a9b259288c12"
       },
       "czesci_rosliny.ziele.skladniki_aktywne": {
         "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Substancje czynne",
@@ -679,7 +1426,7 @@
             ]
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
+        "model": "bez LLM: brak modelu",
         "wejscie": "6d197a3d8efd4bec"
       },
       "zastosowanie.medyczne": {
@@ -688,62 +1435,144 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "W tradycyjnej medycynie czosnaczek był wykorzystywany jako diuretyk.",
+            "tekst": "Tradycyjnie wykorzystywano czosnaczek jako diuretyk.",
             "zrodla": [
               3
             ],
             "fakty": [
               "s349"
             ]
-          }
-        ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "60c4c4457f61ed09"
-      },
-      "ciekawostki": {
-        "tytul": "Wiedza tajemna - Ciekawostki",
-        "typ": "lista",
-        "oryginal": null,
-        "tresc": [
+          },
           {
-            "tekst": "Najstarsze dowody na użycie czosnaczka jako przyprawy pochodzą z ceramiki kultur Ertebølle i Funnelneck-Beaker w północno-wschodnich Niemczech i Danii, które są datowane na 4100-3750 p.n.e.",
+            "tekst": "Dawniej zioło to było stosowane w medycynie jako środek odkażający oraz do przemywania ran.",
             "zrodla": [
               3
             ],
             "fakty": [
-              "s347"
+              "s517",
+              "s1730"
             ]
           },
           {
-            "tekst": "W XVII-wiecznym w Anglii roślina była zalecana jako przyprawa do solonych ryb.",
+            "tekst": "W tradycji leczniczej używano rośliny jako diuretyka, czyli środek zwiększający wydalanie moczu.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1726"
+            ]
+          },
+          {
+            "tekst": "Tradycyjnie stosowano roślinę w leczeniu kaszlu, zapalenia oskrzeli, zaburzeń trawiennych oraz wspomaganiu gojenia ran. Ekstrakt z nasion wykazuje słabe działanie bakteriobójcze, a saponiny pomagają rozrzedzać wydzielinę w drogach oddechowych.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s547"
+            ]
+          },
+          {
+            "tekst": "W tradycji ludowej uznawana była za oczyszczające zioło wiosenne, które miało „oczyszczać krew” przez diurezę i wzmacniać organizm po zimie. Rolnicy karmili nią również bydło, aby uczynić je bardziej odpornym na choroby.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s546"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "e305bcbca03ec79c"
+      },
+      "czesci_rosliny.kwiaty.wlasciwości": {
+        "tytul": "Surowce i zbiory - Kwiaty (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Do przygotowywania sosów takich jak pesto oraz sałatek wykorzystuje się posiekane liście, a czasem dodaje się do nich także kwiaty i owoce.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s520"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "d5c71bb27b386376"
+      },
+      "czesci_rosliny.nasiona.wlasciwości": {
+        "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "We Francji nasiona rośliny są czasem wykorzystywane do doprawiania potraw.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s519"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "126f5e71c986e7ea"
+      },
+      "zastosowanie.rzemieslnicze": {
+        "tytul": "Praktyczne zastosowanie - Rzemiosło",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Całe rośliny czosnku pospolitego mogą służyć do barwienia na kolor żółty, a przy użyciu zaprawy żelazowej dają barwę jasnozieloną.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s544"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "6cb769102de040bb"
+      },
+      "zastosowanie.kulinarne": {
+        "tytul": "Praktyczne zastosowanie - Kuchnia",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "W XVII‑wiem wieku w Anglii zalecano ją jako przyprawę do solonych ryb.",
             "zrodla": [
               3
             ],
             "fakty": [
               "s348"
             ]
-          },
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "c6ab2b6bd795e814"
+      },
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
           {
-            "tekst": "W XIX wieku czosnaczek został wprowadzony do Ameryki Północnej przez osadników z Europy i od 1868 roku rozprzestrzenił się we wschodnich oraz środkowych stanach USA jako gatunek inwazyjny.",
+            "tekst": "Spożycie dużych ilości rośliny może wywołać podrażnienie żołądka u osób wrażliwych z powodu zawartych w niej olejów gorczycznych.",
             "zrodla": [
-              3
+              5
             ],
             "fakty": [
-              "s346"
-            ]
-          },
-          {
-            "tekst": "W dawnych publikacjach roślina nosiła nazwę „czosnkowego ziela”, natomiast Józef Rostafiński zanotował jej ludowe określenie jako „bździucha”.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s343"
+              "s548"
             ]
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "8328284e5302ad89"
+        "model": "bez LLM: brak modelu",
+        "wejscie": "f367d68cc7cfd713"
       },
       "czesci_rosliny.ziele.ostrzezenia": {
         "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Ostrzeżenia",
@@ -758,28 +1587,19 @@
             "fakty": [
               "s344"
             ]
-          }
-        ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "00a1190529e41a8c"
-      },
-      "ostrzezenia": {
-        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
+          },
           {
-            "tekst": "Spożycie dużych ilości rośliny może wywołać podrażnienie żołądka u osób wrażliwych z powodu zawartych w niej olejów gorczycznych.",
+            "tekst": "Młode rośliny pierwszego roku wzrostu mogą zawierać do 100 ppm cyjanków, co jest toksyczne dla wielu kręgowców, jednak poziom ten znika, gdy roślinę się posieka.",
             "zrodla": [
-              4
+              3
             ],
             "fakty": [
-              "s548"
+              "s644"
             ]
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "f367d68cc7cfd713"
+        "model": "bez LLM: brak modelu",
+        "wejscie": "a68ad9f96366e01c"
       },
       "permakultura.funkcje": {
         "tytul": "Cykl życia i ekosystem - Permakultura - funkcje",
@@ -787,43 +1607,44 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Substancje zawarte w roślinie działają allelopatycznie i hamują wzrost grzybów mikoryzowych, co pośrednio ogranicza pojawianie się drzew w jej bezpośrednim sąsiedztwie.",
+            "tekst": "W Ameryce Północnej roślina była sadzona również jako forma ochrony przed erozją gleby.",
             "zrodla": [
-              2
+              3
             ],
             "fakty": [
-              "s354"
-            ]
-          },
-          {
-            "tekst": "Podczas deszczu nasiona rośliny śluzowieją i przyczepiają się do sierści przechodzących zwierząt, co pozwala na ich rozprzestrzenianie na większe odległości.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s355"
-            ]
-          },
-          {
-            "tekst": "Z korzenia rośliny wydzielany jest sekret, który działa allelopatycznie, hamując wzrost innych roślin i wyłączając dany obszar z konkurencji.",
-            "zrodla": [
-              4
-            ],
-            "fakty": [
-              "s550"
+              "s518"
             ]
           }
         ],
-        "model": "bez LLM: za duzo zdan spoza zrodel",
-        "wejscie": "c2b5e18c7fbb768f"
+        "model": "bez LLM: brak modelu",
+        "wejscie": "846b1ad189f0365a"
+      },
+      "wymagania.woda": {
+        "tytul": "Natura i siedlisko - Woda",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Roślina wymaga regularnego podlewania – od marca podłoże powinno być stale wilgotne, a w okresach suszy konieczne jest dodatkowe podlewanie.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s659"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "5f941194fec02fb9"
       }
     },
     "uzyte_fakty": [
+      "s1726",
+      "s1730",
       "s341",
       "s342",
       "s343",
       "s344",
-      "s345",
       "s346",
       "s347",
       "s348",
@@ -832,11 +1653,29 @@
       "s351",
       "s352",
       "s353",
-      "s354",
-      "s355",
       "s356",
+      "s503",
+      "s505",
+      "s510",
+      "s511",
+      "s512",
+      "s513",
+      "s514",
+      "s515",
+      "s516",
+      "s517",
+      "s518",
+      "s519",
+      "s520",
+      "s543",
+      "s544",
+      "s545",
+      "s546",
+      "s547",
       "s548",
-      "s550"
+      "s551",
+      "s644",
+      "s659"
     ]
   },
   "url": {
@@ -847,7 +1686,7 @@
     "Nasiona": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Alliaria_petiolata_kz03.jpg/960px-Alliaria_petiolata_kz03.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-10-15",
     "w_url": true,
     "zdjecia": [
       {
@@ -896,5 +1735,116 @@
         "zrodlo": "Wikimedia Commons"
       }
     ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-15",
+    "jak": "reguly",
+    "wejscie": "c6531e2987a77e75",
+    "wstawki": [
+      {
+        "miejsce": "natura/wystepowanie",
+        "rozdzial": "Natura i siedlisko",
+        "tytul": "Występowanie i zasięg",
+        "ikona": "ra-compass",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Czosnaczek pospolity pochodzi z Europy, zachodniej i środkowej Azji, północno‑zachodniej Afryki oraz Brytyjskich Wysp, sięgając aż do północnej Skandynawii i Pakistanu.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s345"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          }
+        ]
+      },
+      {
+        "miejsce": "bezpieczenstwo/chwast",
+        "rozdzial": "Bezpieczeństwo i interakcje",
+        "tytul": "Chwast i inwazyjność",
+        "ikona": "ra-bleeding-eye",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "W Ameryce Północnej roślina jest klasyfikowana jako gatunek inwazyjny, który zdominował leśne podszybie, co zmniejszyło bioróżnorodność na wielu obszarach.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s646"
+            ],
+            "sekcja": "uprawa",
+            "czesc": "korzeń"
+          }
+        ]
+      },
+      {
+        "miejsce": "cykl/biologia",
+        "rozdzial": "Cykl życia i ekosystem",
+        "tytul": "Kwitnienie, zapylanie i rozsiewanie",
+        "ikona": "ra-cycle",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Podczas deszczu nasiona rośliny śluzowieją i przyczepiają się do sierści przechodzących zwierząt, co pozwala na ich rozprzestrzenianie na większe odległości.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s355"
+            ],
+            "sekcja": "ciekawostki",
+            "czesc": "nasiona"
+          }
+        ]
+      },
+      {
+        "miejsce": "tajemna/ciekawostki",
+        "rozdzial": "Wiedza tajemna",
+        "tytul": "Ciekawostki",
+        "ikona": "ra-emerald",
+        "nowy": false,
+        "punkty": [
+          {
+            "tekst": "Roślina wyrasta szybciej wiosną niż wiele rodzimych gatunków, co pozwala jej dominować w podłożu leśnym w północnej części Stanów Zjednoczonych.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1724"
+            ],
+            "sekcja": "ciekawostki",
+            "czesc": null
+          },
+          {
+            "tekst": "Z korzenia rośliny wydzielany jest sekret, który działa allelopatycznie, hamując wzrost innych roślin i wyłączając dany obszar z konkurencji.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s550"
+            ],
+            "sekcja": "ciekawostki",
+            "czesc": "korzeń"
+          },
+          {
+            "tekst": "Substancje zawarte w roślinie działają allelopatycznie i hamują wzrost grzybów mikoryzowych, co pośrednio ogranicza pojawianie się drzew w jej bezpośrednim sąsiedztwie.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s354"
+            ],
+            "sekcja": "ciekawostki",
+            "czesc": "ziele"
+          }
+        ]
+      }
+    ],
+    "duplikaty": []
   }
 }

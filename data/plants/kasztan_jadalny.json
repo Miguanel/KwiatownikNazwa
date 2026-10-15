@@ -12,9 +12,9 @@
   "_siedziba_nowa": true,
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-10-01",
-    "uporzadkowano": "2026-10-01",
-    "uklad": "llm:gemini/gemini-3.5-flash-lite",
+    "zaktualizowano": "2026-10-15",
+    "uporzadkowano": "2026-10-15",
+    "uklad": "deterministyczny: punkt [27, 28] odbiega od oryginalow",
     "zrodla": [
       {
         "nazwa": "Wikipedia (pl): Kasztan jadalny",
@@ -64,17 +64,32 @@
         "jezyk": "ja",
         "typ": "strona",
         "nr": 7
+      },
+      {
+        "nazwa": "www.majofesa.com",
+        "url": "https://www.majofesa.com/tablones-de-madera/bois-de-chataignier/",
+        "jezyk": "es",
+        "typ": "strona",
+        "nr": 8
       }
     ],
     "sekcje": [
       {
         "klucz": "opis",
         "tytul": "Opis i wygląd",
-        "podsumowanie": "Drzewo charakteryzuje się głęboko spękaną korą na pniu, omszonymi młodymi pędami oraz brakujących pąków szczytowych pąkami pokrytymi łuskami. Posiada długie, skórzaste liście z ostro piłkowanymi ząbkami oraz żółte kwiaty męskie i żeńskie. Owoce w postaci ciemnobrązowych orzechów ukryte są w drewniejącej, kolczastej okrywie.",
-        "podsumowanie_zrodla": [
-          1
-        ],
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
         "punkty": [
+          {
+            "tekst": "Drzewa owocowe tego gatunku cechują się dużą odpornością na mróz oraz długowiecznością.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s565"
+            ]
+          },
           {
             "tekst": "Pień drzewa pokrywa głęboko spękana kora, a młode pędy są początkowo delikatnie omszone, by z czasem stać się nagimi.",
             "czesc": "kora",
@@ -83,26 +98,6 @@
             ],
             "fakty": [
               "s409"
-            ]
-          },
-          {
-            "tekst": "Młode pąki są omszone i pokryte od dwóch do czterech skrętoległych łusek, a roślina nie wytwarza pąków szczytowych.",
-            "czesc": "pąki",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s553"
-            ]
-          },
-          {
-            "tekst": "Liście osiągają długość do 25 cm, są skórzaste z ciemnozieloną górną stroną i jaśniejszą spodem, a ich blaszka ma około 30 ostro piłkowanych ząbków.",
-            "czesc": "liście",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s410"
             ]
           },
           {
@@ -126,13 +121,33 @@
             ]
           },
           {
-            "tekst": "Owoce znajdują się w drewniejącej, kolczastej okrywie, która otwiera się 3–4 klapami, zawierając 1–3 ciemnobrązowe, spłaszczone orzechy o średnicy do 3 cm.",
+            "tekst": "Liście osiągają długość do 25 cm, są skórzaste z ciemnozieloną górną stroną i jasniejszą spodem, a ich blaszka ma około 30 ostro piłkowanych ząbków.",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s410"
+            ]
+          },
+          {
+            "tekst": "Owoce znajdują się w drewniejącej, kolczastej okrywie (kupuli), która otwiera się 3–4 klapami, zawierając 1–3 ciemnobrązowe, spłaszczone orzechy o średnicy do 3 cm.",
             "czesc": "owoce",
             "zrodla": [
               1
             ],
             "fakty": [
               "s411"
+            ]
+          },
+          {
+            "tekst": "Młode pąki są omszone i pokryte od dwóch do czterech skrętoległych łusek, a roślina nie wytwarza pąków szczytowych.",
+            "czesc": "pąki",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s553"
             ]
           }
         ]
@@ -144,25 +159,33 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Rodzinnym obszarem gatunku są południowe Bałkany, Azja Mniejsza, Kaukaz oraz północny Iran, a roślina występuje naturalnie w południowej Europie i Anatolii, będąc szeroko rozpowszechnioną w basenie Morza Śródziemnego oraz w zachodniej i środkowej Europie.",
+            "tekst": "Rodzinnym obszarem gatunku są południowe Bałkany, Azja Mniejsza, Kaukaz oraz północny Iran, a szeroko rozpowszechniony jest w basenie Morza Śródziemnego.",
             "czesc": null,
             "zrodla": [
-              1,
-              3
+              1
             ],
             "fakty": [
-              "s407",
-              "s556"
+              "s407"
             ]
           },
           {
-            "tekst": "W Polsce roślinność z tego gatunku występuje głównie na Pomorzu Zachodnim i Dolnym Śląsku, gdzie stanowi przybysz zadomowiony poza oficjalnymi uprawami.",
+            "tekst": "W Polsce roślinność z tego gatunku występuje głównie na Pomorzu Zachodnim i Dolnym Śląsku, gdzie stanowi okrznek (zadomowiony antropofit) poza oficjalnymi uprawami.",
             "czesc": null,
             "zrodla": [
               1
             ],
             "fakty": [
               "s408"
+            ]
+          },
+          {
+            "tekst": "Kasztan jadalny występuje naturalnie w południowej Europie i Anatolii, a także jest szeroko uprawiany w zachodniej i środkowej Europie.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s556"
             ]
           }
         ]
@@ -174,7 +197,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Kora, drewno i łuski nasion zawierają duże ilości tanin (kora 6,8 %, drewno 13,4 %, łuski 10–13 %), a liście także są bogate w te substancje.",
+            "tekst": "Kora, drewno i łuski nasion zawierają duże ilości tanin (kora 6,8 %, drewno 13,4 %, łuski 10‑13 %); liście także są bogate w taniny.",
             "czesc": null,
             "zrodla": [
               3
@@ -192,6 +215,16 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
+            "tekst": "Kasztan jadalny jest rośliną miododajną, a uzyskiwany z jego kwiatów miód charakteryzuje się specyficznym, gorkawym smakiem.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s435"
+            ]
+          },
+          {
             "tekst": "Tradycyjnie napar z liści kasztana stosowano w chorobach układu oddechowego, ze szczególnym uwzględnieniem leczenia krztusca.",
             "czesc": "liście",
             "zrodla": [
@@ -202,13 +235,31 @@
             ]
           },
           {
-            "tekst": "Kasztan jadalny jest rośliną miododajną, a uzyskiwany z jego kwiatów miód charakteryzuje się specyficznym, gorzkawym smakiem.",
-            "czesc": "kwiaty",
+            "tekst": "Z liści kasztanu sporządzano napary stosowane w leczeniu chorób układu oddechowego, w tym krztusza.",
+            "czesc": "liście",
             "zrodla": [
               4
             ],
             "fakty": [
-              "s435"
+              "s574"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "medycyna_wschodu",
+        "tytul": "Medycyna chińska, kampo, ajurweda",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Kora, drewno i łuski nasion zawierają duże ilości taninów, co wskazuje na ich znaczenie w tradycyjnej medycynie.",
+            "czesc": "korzeń",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s575"
             ]
           }
         ]
@@ -248,13 +299,53 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "W starożytnym Rzymie żołnierze jedli kasztanową papkę przed wyprawą na pole bitwy.",
+            "tekst": "W średniowieczu kasztany były uważane za pokarm dla robotników i do hodowli świn, mniej za pokarm dla wyższych warstw społeczeństwa.",
             "czesc": null,
             "zrodla": [
-              3
+              2
             ],
             "fakty": [
-              "s421"
+              "s424"
+            ]
+          },
+          {
+            "tekst": "W średniowieczu kasztany były często konservowane przez suszenie, a ich mąka mogła przechowywać się do dwóch lat.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s426"
+            ]
+          },
+          {
+            "tekst": "W średniowieczu w Lombardii pojawiło się słowo „marroni”, odnoszące się do kasztanów najwyższej jakości, dużych, słodkich i łatwych do skórki.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s427"
+            ]
+          },
+          {
+            "tekst": "W XIX wieku uprawa kasztanów zaczęła się zmniejszać z powodu przemysłowości i migracji ludności, a w drugiej połowie wieku choroba na korku kasztanu zniszczyła duże zasoby.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s429"
+            ]
+          },
+          {
+            "tekst": "W XX wieku kasztany w Italii straciły znaczącą część uprawy, a w latach 90. zaczęły się odzyskiwać dzięki występowaniu hypovirulencji.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s430"
             ]
           },
           {
@@ -298,34 +389,13 @@
             ]
           },
           {
-            "tekst": "W średniowieczu kasztany były uważane za pokarm dla robotników i do hodowli świń, mniej za pokarm dla wyższych warstw społeczeństwa.",
+            "tekst": "Główną tradycyjną metodą konserwacji kasztanów było ich suszenie, czasem połączone z wędzeniem.",
             "czesc": null,
             "zrodla": [
               2
             ],
             "fakty": [
-              "s424"
-            ]
-          },
-          {
-            "tekst": "Główną tradycyjną metodą konserwacji kasztanów w średniowieczu było ich suszenie, czasem połączone z wędzeniem, a uzyskiwana z nich mąka mogła przechowywać się do dwóch lat.",
-            "czesc": null,
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s426",
               "s562"
-            ]
-          },
-          {
-            "tekst": "W średniowieczu w Lombardii pojawiło się słowo „marroni”, odnoszące się do kasztanów najwyższej jakości, dużych, słodkich i łatwych do obrania.",
-            "czesc": null,
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s427"
             ]
           },
           {
@@ -339,27 +409,17 @@
             ]
           },
           {
-            "tekst": "W XIX wieku uprawa kasztanów zaczęła się zmniejszać z powodu przemysłowości i migracji ludności, a w drugiej połowie wieku choroba zniszczyła duże zasoby.",
+            "tekst": "W starożytnym Rzymie żołnierze jedli kasztanową papkę przed wyprawą na pole bitwy.",
             "czesc": null,
             "zrodla": [
-              2
+              3
             ],
             "fakty": [
-              "s429"
+              "s421"
             ]
           },
           {
-            "tekst": "W XX wieku kasztany w Italii straciły znaczącą część uprawy, a w latach 90. zaczęły się odzyskiwać dzięki występowaniu hypovirulencji.",
-            "czesc": null,
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s430"
-            ]
-          },
-          {
-            "tekst": "Kasztan jadalny jest jednym ze składników zestawu remediów kwiatowych Bacha.",
+            "tekst": "Kasztan jadalny jest jednym ze składników 38‑elementowego zestawu remediów kwiatowych Bacha.",
             "czesc": null,
             "zrodla": [
               3
@@ -423,7 +483,7 @@
             ]
           },
           {
-            "tekst": "Drzewo dobrze znosi odnowę przez przycinkę i co 12–30 lat daje drewno bogate w taniny.",
+            "tekst": "Drzewo dobrze znosi odnowę przez przycinkę (coppicing) i co 12‑30 lat daje drewno bogate w taniny.",
             "czesc": null,
             "zrodla": [
               3
@@ -441,16 +501,6 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Tradycyjnie kasztany spożywa się na surowo, po upieczeniu lub po przetworzeniu na kompoty; popularne są również przesmażone masy kasztanowe jako dodatek do deserów i mięs oraz zupy.",
-            "czesc": "owoce",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s412"
-            ]
-          },
-          {
             "tekst": "Gatunek jest naturalnie samoniewłaściwy – nie jest w stanie zapylić się sam, co wymusza krzyżowe zapylenie.",
             "czesc": null,
             "zrodla": [
@@ -461,7 +511,7 @@
             ]
           },
           {
-            "tekst": "Najgrubszy znany okaz europejskiego kasztana nosi nazwę Kasztana Stu Jeźdźców i znajduje się we Włoszech na Sycylii w pobliżu wulkanu Etna.",
+            "tekst": "Najgrubszy znany okaz europejskiego kasztana nosi nazwę \"Kasztana Stu Jeźdźców\" i znajduje się we Włoszech na Sycylii w pobliżu wulkanu Etna.",
             "czesc": null,
             "zrodla": [
               5
@@ -471,7 +521,27 @@
             ]
           },
           {
-            "tekst": "W serialu kryminalnym z 2021 roku pojawia się motyw seryjnego mordercy, który zostawia na miejscach zbrodni ludziki zrobione z kasztanów.",
+            "tekst": "Drewno kasztana jadalnego tradycyjnie wykorzystywano w rzemiośle do budowy okien, drzwi, podłóg oraz do produkcji beczek, trumien, słupów, lasek, rączek parasoli i przyborów kuchennych.",
+            "czesc": null,
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s1780"
+            ]
+          },
+          {
+            "tekst": "Tradycyjnie kasztany spożywa się na surowo, po upieczeniu lub po przetworzeniu na kompoty; popularne są również przesmażone masy kasztanowe jako dodatek do deserów i mięs oraz zupy.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s412"
+            ]
+          },
+          {
+            "tekst": "W serialu kryminalnym \"Chestnut Man\" z 2021 roku pojawia się motyw seryjnego mordercy, który zostawia na miejscach zbrodni ludziki zrobione z kasztanów.",
             "czesc": "owoce",
             "zrodla": [
               4
@@ -488,23 +558,27 @@
         "s409",
         "s439"
       ],
-      "pąki": [
-        "s553"
-      ],
-      "liście": [
-        "s410",
-        "s433",
-        "s434"
-      ],
       "kwiaty": [
         "s554",
         "s555",
         "s435"
       ],
+      "liście": [
+        "s410",
+        "s433",
+        "s574",
+        "s434"
+      ],
       "owoce": [
         "s411",
         "s412",
         "s437"
+      ],
+      "pąki": [
+        "s553"
+      ],
+      "korzeń": [
+        "s575"
       ],
       "nasiona": [
         "s438"
@@ -520,7 +594,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Kasztan jadalny",
           "url": "https://pl.wikipedia.org/wiki/Kasztan_jadalny"
-        }
+        },
+        "cytat": "Gatunek rodzimy dla południowej części Półwyspu Bałkańskiego, Azji Mniejszej i rejonu Kaukazu po północny Iran. Rozpowszechniony szeroko w basenie Morza Śródziemnego"
       },
       {
         "id": "s408",
@@ -531,7 +606,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Kasztan jadalny",
           "url": "https://pl.wikipedia.org/wiki/Kasztan_jadalny"
-        }
+        },
+        "cytat": "W Polsce kasztan jadalny rośnie głównie na Pomorzu Zachodnim i Dolnym Śląsku. Lokalnie występować mogą populacje zadomowione, znajdujące się poza uprawą. Gatunek ma status zadomowionego antropofita (kenofita)."
       },
       {
         "id": "s409",
@@ -542,7 +618,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Kasztan jadalny",
           "url": "https://pl.wikipedia.org/wiki/Kasztan_jadalny"
-        }
+        },
+        "cytat": "o pniu pokrytym głęboko spękaną korowiną. Korona szeroka i rozłożysta. Młode pędy delikatnie omszone, później nagie."
       },
       {
         "id": "s410",
@@ -553,7 +630,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Kasztan jadalny",
           "url": "https://pl.wikipedia.org/wiki/Kasztan_jadalny"
-        }
+        },
+        "cytat": "Młode liście pod spodem delikatnie omszone, potem nagie, skórzaste; osiągają do 25 cm długości. Blaszka liściowa ostro piłkowana o liczbie nerwów równej liczbie ząbków (ok. 30), od góry ciemnozielona, od spodu jaśniejsza."
       },
       {
         "id": "s411",
@@ -564,7 +642,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Kasztan jadalny",
           "url": "https://pl.wikipedia.org/wiki/Kasztan_jadalny"
-        }
+        },
+        "cytat": "Orzechy (kasztany) rozwijające się w drewniejącej, kulistej okrywie (kupuli), pokrytej gęstymi, ostrymi kolcami. Otwiera się ona 3–4 klapami i zawiera 1–3 nasiona do 3 cm średnicy. Są one ciemnobrązowe, spłaszczone z jednej strony"
       },
       {
         "id": "s412",
@@ -575,7 +654,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Kasztan jadalny",
           "url": "https://pl.wikipedia.org/wiki/Kasztan_jadalny"
-        }
+        },
+        "cytat": "Świeże kasztany jadane są na surowo, wyschnięte spożywane są po upieczeniu oraz konserwowane jako kompoty. Na Węgrzech i Słowacji przetarta masa kasztanowa... przeznaczona jest do bezpośredniego spożycia lub używana jako dodatek do wyrobów "
       },
       {
         "id": "s413",
@@ -586,7 +666,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Kasztan jadalny",
           "url": "https://pl.wikipedia.org/wiki/Kasztan_jadalny"
-        }
+        },
+        "cytat": "Kasztan jadalny symbolizuje mądrą przezorność."
       },
       {
         "id": "s414",
@@ -597,7 +678,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Kasztan jadalny",
           "url": "https://pl.wikipedia.org/wiki/Kasztan_jadalny"
-        }
+        },
+        "cytat": "Drzewo kwitnące od maja do lipca. W warunkach Europy Środkowej owocuje rzadko. Owoce dojrzewają w październiku–listopadzie."
       },
       {
         "id": "s416",
@@ -608,7 +690,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (en): Sweet chestnut",
           "url": "https://en.wikipedia.org/wiki/Sweet_chestnut"
-        }
+        },
+        "cytat": "The sweet chestnut is naturally self incompatible, meaning that the plant cannot pollinate itself, making cross-pollination necessary."
       },
       {
         "id": "s417",
@@ -619,7 +702,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (en): Sweet chestnut",
           "url": "https://en.wikipedia.org/wiki/Sweet_chestnut"
-        }
+        },
+        "cytat": "This tree responds very well to coppicing, which is still practised in Britain, and produces a good crop of tannin-rich wood every 12 to 30 years."
       },
       {
         "id": "s419",
@@ -630,7 +714,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (en): Sweet chestnut",
           "url": "https://en.wikipedia.org/wiki/Sweet_chestnut"
-        }
+        },
+        "cytat": "Tannin is found in the following proportions on a 10% moisture basis: bark (6.8%), wood (13.4%), seed husks (10–13%). The leaves too contain tannin."
       },
       {
         "id": "s421",
@@ -641,7 +726,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (en): Sweet chestnut",
           "url": "https://en.wikipedia.org/wiki/Sweet_chestnut"
-        }
+        },
+        "cytat": "Roman soldiers were given chestnut porridge before going into battle."
       },
       {
         "id": "s422",
@@ -652,7 +738,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (en): Sweet chestnut",
           "url": "https://en.wikipedia.org/wiki/Sweet_chestnut"
-        }
+        },
+        "cytat": "Sweet chestnut is one of the 38 substances used to prepare Bach flower remedies, a kind of alternative medicine promoted for its supposed effect on health."
       },
       {
         "id": "s424",
@@ -663,7 +750,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (de): Edelkastanie",
           "url": "https://de.wikipedia.org/wiki/Edelkastanie"
-        }
+        },
+        "cytat": "Gegen Ende des Mittelalters wurden Kastanien mit schlechter Verdauung, Kopfschmerzen, Blähungen und verstärktem Sexualtrieb assoziiert. Daher wurden sie als Nahrung für die arbeitende Bevölkerung und zur Schweinemast angesehen, weniger als "
       },
       {
         "id": "s426",
@@ -674,7 +762,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (de): Edelkastanie",
           "url": "https://de.wikipedia.org/wiki/Edelkastanie"
-        }
+        },
+        "cytat": "Die wichtigste Konservierungsmethode war damals das Trocknen, teilweise durch Räuchern. Das Mehl war ein bis zwei Jahre haltbar."
       },
       {
         "id": "s427",
@@ -685,7 +774,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (de): Edelkastanie",
           "url": "https://de.wikipedia.org/wiki/Edelkastanie"
-        }
+        },
+        "cytat": "Im 12. Jahrhundert kam in der Lombardei das Wort Marroni auf, mit dem Kastanien der besten Qualität, groß, süß, schmackhaft und leicht zu schälen, bezeichnet wurden."
       },
       {
         "id": "s429",
@@ -696,7 +786,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (de): Edelkastanie",
           "url": "https://de.wikipedia.org/wiki/Edelkastanie"
-        }
+        },
+        "cytat": "Ein Rückgang der Kastanienkultur setzte im 19. Jahrhundert mit der Industrialisierung und der beginnenden Landflucht ein, in der zweiten Hälfte des Jahrhunderts setzte die Tintenkrankheit den Beständen zu."
       },
       {
         "id": "s430",
@@ -707,7 +798,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (de): Edelkastanie",
           "url": "https://de.wikipedia.org/wiki/Edelkastanie"
-        }
+        },
+        "cytat": "In Italien ging die Anbaufläche von 650.000 Hektar 1911 auf rund 250.000 in den 1980er Jahren zurück. Ein weiterer Faktor für den Rückgang war der Kastanienrindenkrebs, dem große Teile der Edelkastanienbestände zum Opfer fielen. Seit der Mi"
       },
       {
         "id": "s432",
@@ -718,7 +810,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (zh): 歐洲栗",
           "url": "https://zh.wikipedia.org/wiki/%E6%AD%90%E6%B4%B2%E6%A0%97"
-        }
+        },
+        "cytat": "欧洲栗中最粗的一棵即“百骑大栗树”，位于意大利西西里岛埃特纳火山，也是最粗的树木及植物之一。"
       },
       {
         "id": "s433",
@@ -729,7 +822,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (ja): ヨーロッパグリ",
           "url": "https://ja.wikipedia.org/wiki/%E3%83%A8%E3%83%BC%E3%83%AD%E3%83%83%E3%83%91%E3%82%B0%E3%83%AA"
-        }
+        },
+        "cytat": "クリの葉の茶は呼吸器疾患の際に、特に百日咳の治療薬として用いられた。"
       },
       {
         "id": "s434",
@@ -740,7 +834,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (ja): ヨーロッパグリ",
           "url": "https://ja.wikipedia.org/wiki/%E3%83%A8%E3%83%BC%E3%83%AD%E3%83%83%E3%83%91%E3%82%B0%E3%83%AA"
-        }
+        },
+        "cytat": "葉と殻の滲出液からシャンプーも作ることができる。"
       },
       {
         "id": "s435",
@@ -751,7 +846,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (ja): ヨーロッパグリ",
           "url": "https://ja.wikipedia.org/wiki/%E3%83%A8%E3%83%BC%E3%83%AD%E3%83%83%E3%83%91%E3%82%B0%E3%83%AA"
-        }
+        },
+        "cytat": "蜜源植物でもあり、ミツバチがヨーロッパグリの花から集めた蜂蜜は特徴的な苦味があり、万人受けする味ではない。"
       },
       {
         "id": "s437",
@@ -762,7 +858,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (ja): ヨーロッパグリ",
           "url": "https://ja.wikipedia.org/wiki/%E3%83%A8%E3%83%BC%E3%83%AD%E3%83%83%E3%83%91%E3%82%B0%E3%83%AA"
-        }
+        },
+        "cytat": "ドラマ: 『チェスナットマン 』（2021年） - 栗で作った栗人形を現場に置く殺人犯が登場。"
       },
       {
         "id": "s438",
@@ -773,7 +870,8 @@
         "zrodlo": {
           "nazwa": "marinojapan.tokyo",
           "url": "https://marinojapan.tokyo/natural-herb/"
-        }
+        },
+        "cytat": "ヨーロッパグリ種子エキス ヨーロッパグリはセイヨウグリとも呼ばれ、その実はマロンと呼ばれている常緑の大木である。収れん作用と保湿効果があるとされており、化粧品には広く利用されている。"
       },
       {
         "id": "s439",
@@ -784,7 +882,8 @@
         "zrodlo": {
           "nazwa": "ask-ayurveda.com",
           "url": "https://ask-ayurveda.com/wiki/article/3961-castanea-sativa--sweet-chestnut"
-        }
+        },
+        "cytat": "Pregnant or lactating women: avoid large doses of bark due to high tannin con"
       },
       {
         "id": "s553",
@@ -795,7 +894,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Kasztan jadalny",
           "url": "https://pl.wikipedia.org/wiki/Kasztan_jadalny"
-        }
+        },
+        "cytat": "Pąki Młode omszone, okryte 2–4 skrętoległymi łuskami. Brak pąków szczytowych (sympodium)."
       },
       {
         "id": "s554",
@@ -806,7 +906,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Kasztan jadalny",
           "url": "https://pl.wikipedia.org/wiki/Kasztan_jadalny"
-        }
+        },
+        "cytat": "Kwiaty męskie z 10–20 pręcikami, żółte, zebrane w stojące kwiatostany kłosopodobne, długości do 20 cm."
       },
       {
         "id": "s555",
@@ -817,7 +918,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Kasztan jadalny",
           "url": "https://pl.wikipedia.org/wiki/Kasztan_jadalny"
-        }
+        },
+        "cytat": "Kwiaty żeńskie zebrane po kilka w główkowate kwiatostany wyrastające zwykle u podstawy kwiatostanów męskich."
       },
       {
         "id": "s556",
@@ -828,7 +930,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (en): Sweet chestnut",
           "url": "https://en.wikipedia.org/wiki/Sweet_chestnut"
-        }
+        },
+        "cytat": "The species is native to Southern Europe and Anatolia, and widely cultivated in Western and Central Europe."
       },
       {
         "id": "s557",
@@ -839,7 +942,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (de): Edelkastanie",
           "url": "https://de.wikipedia.org/wiki/Edelkastanie"
-        }
+        },
+        "cytat": "in Sparta etwa wurden daraus schwarzes Brot, Mehl und Suppen hergestellt."
       },
       {
         "id": "s559",
@@ -850,7 +954,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (de): Edelkastanie",
           "url": "https://de.wikipedia.org/wiki/Edelkastanie"
-        }
+        },
+        "cytat": "Der Langobarden-König Rothari führte sie 641 in seiner Liste der geschützten Bäume auf"
       },
       {
         "id": "s560",
@@ -861,7 +966,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (de): Edelkastanie",
           "url": "https://de.wikipedia.org/wiki/Edelkastanie"
-        }
+        },
+        "cytat": "Ende des 8. Jahrhunderts befahl Karl der Große im Capitulare de villis ihren Anbau auf den Königsgütern."
       },
       {
         "id": "s561",
@@ -872,7 +978,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (de): Edelkastanie",
           "url": "https://de.wikipedia.org/wiki/Edelkastanie"
-        }
+        },
+        "cytat": "Im 10. Jahrhundert waren die castagnatores eine eigene Form der Bauern."
       },
       {
         "id": "s562",
@@ -883,7 +990,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (de): Edelkastanie",
           "url": "https://de.wikipedia.org/wiki/Edelkastanie"
-        }
+        },
+        "cytat": "Die wichtigste Konservierungsmethode war damals das Trocknen, teilweise durch Räuchern."
       },
       {
         "id": "s563",
@@ -894,62 +1002,101 @@
         "zrodlo": {
           "nazwa": "Wikipedia (de): Edelkastanie",
           "url": "https://de.wikipedia.org/wiki/Edelkastanie"
+        },
+        "cytat": "Vom 16. bis zum 18. Jahrhundert stieg der Anbau von Edelkastanien weiter an. Zentren waren die Gebirge der Iberischen Halbinsel, Zentral- und Süd-Frankreich, Korsika, Zentral- und Nord-Italien, Tessin und der Balkan."
+      },
+      {
+        "id": "s565",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Drzewa owocowe tego gatunku cechują się dużą odpornością na mróz oraz długowiecznością.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 歐洲栗",
+          "url": "https://zh.wikipedia.org/wiki/%E6%AD%90%E6%B4%B2%E6%A0%97"
         }
+      },
+      {
+        "id": "s574",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "liście",
+        "tekst": "Z liści kasztanu sporządzano napary stosowane w leczeniu chorób układu oddechowego, w tym krztusza.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): ヨーロッパグリ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%83%A8%E3%83%BC%E3%83%AD%E3%83%83%E3%83%91%E3%82%B0%E3%83%AA"
+        },
+        "cytat": "クリの葉の茶は呼吸器疾患の際に、特に百日咳の治療薬として用いられた。"
+      },
+      {
+        "id": "s575",
+        "sekcja": "medycyna_wschodu",
+        "czesc": "korzeń",
+        "tekst": "Kora, drewno i łuski nasion zawierają duże ilości taninów, co wskazuje na ich znaczenie w tradycyjnej medycynie.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): ヨーロッパグリ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%83%A8%E3%83%BC%E3%83%AD%E3%83%83%E3%83%91%E3%82%B0%E3%83%AA"
+        },
+        "cytat": "タンニンは、含水率10%の木材では、樹皮に6.8%、木材に13.4%、殻に10 - 13%程度含まれる。"
+      },
+      {
+        "id": "s1780",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Drewno kasztana jadalnego tradycyjnie wykorzystywano w rzemiośle do budowy okien, drzwi, podłóg oraz do produkcji beczek, trumien, słupów, lasek, rączek parasoli i przyborów kuchennych.",
+        "jezyk": "es",
+        "zrodlo": {
+          "nazwa": "www.majofesa.com",
+          "url": "https://www.majofesa.com/tablones-de-madera/bois-de-chataignier/"
+        },
+        "cytat": "Traditionnellement, le bois de châtaignier a été utilisé pour la construction, la menuiserie et la fabrication de meubles, de tonneaux, de cercueils, de poteaux, de béquilles, de poignées pour parapluies ou des ustensiles de cuisine et des "
       }
     ]
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-10-15",
     "pola": {
-      "identyfikacja.cechy_kluczowe": {
-        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
-        "typ": "lista",
+      "wymagania.mrozoodpornosc": {
+        "tytul": "Natura i siedlisko - Mrozoodporność",
+        "typ": "tekst",
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Pień drzewa pokrywa głęboko spękana kora, a młode pędy są początkowo delikatnie omszone, z czasem stając się nagimi.",
+            "tekst": "Drzewa owocowe tego gatunku cechują się dużą odpornością na mróz oraz długowiecznością.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s565"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "0d4d5041558eff8c"
+      },
+      "czesci_rosliny.kora.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Kora (nowa część z sieci): Opis surowca",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Pień drzewa pokrywa głęboko spękana kora, a młode pędy są początkowo delikatnie omszone, by z czasem stać się nagimi.",
             "zrodla": [
               1
             ],
             "fakty": [
               "s409"
             ]
-          },
-          {
-            "tekst": "Młode pąki są omszone i pokryte od dwóch do czterech skrętoległych łusek, przy czym roślina nie wytwarza pąków szczytowych.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s553"
-            ]
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "25ca2265fe7f9903"
+        "model": "bez LLM: brak modelu",
+        "wejscie": "8fa128e4897c641a"
       },
-      "czesci_rosliny.liście.opis_botaniczny": {
-        "tytul": "Surowce i zbiory - Liście (nowa część z sieci): Opis surowca",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "Liście kasztana jadalnego (Castanea sativa) osiągają długość do 25 cm, są skórzaste, mają ciemnozieloną górną stronę i jaśniejszy spód, a ich blaszka zawiera około 30 ostro piłkowanych ząbków.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s410"
-            ]
-          }
-        ],
-        "model": "groq/openai/gpt-oss-120b",
-        "wejscie": "c1c416ab8a776562"
-      },
-      "czesci_rosliny.kwiaty.opis_botaniczny": {
-        "tytul": "Surowce i zbiory - Kwiaty (nowa część z sieci): Opis surowca",
-        "typ": "tekst",
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
         "oryginal": null,
         "tresc": [
           {
@@ -969,10 +1116,37 @@
             "fakty": [
               "s555"
             ]
+          },
+          {
+            "tekst": "Liście osiągają długość do 25 cm, są skórzaste z ciemnozieloną górną stroną i jasniejszą spodem, a ich blaszka ma około 30 ostro piłkowanych ząbków.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s410"
+            ]
+          },
+          {
+            "tekst": "Owoce znajdują się w drewniejącej, kolczastej okrywie (kupuli), która otwiera się 3–4 klapami, zawierając 1–3 ciemnobrązowe, spłaszczone orzechy o średnicy do 3 cm.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s411"
+            ]
+          },
+          {
+            "tekst": "Młode pąki są omszone i pokryte od dwóch do czterech skrętoległych łusek, a roślina nie wytwarza pąków szczytowych.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s553"
+            ]
           }
         ],
-        "model": "groq/openai/gpt-oss-120b",
-        "wejscie": "b241812183480870"
+        "model": "bez LLM: brak modelu",
+        "wejscie": "fbc164af8a7ad12f"
       },
       "opis": {
         "tytul": "Opis - Opis ogólny",
@@ -980,33 +1154,48 @@
         "oryginal": "Pień drzewa pokrywa głęboko spękana kora, a młode pędy są początkowo delikatnie omszone, by z czasem stać się nagimi.",
         "tresc": [
           {
-            "tekst": "Pień drzewa pokrywa głęboko spękana kora, a młode pędy są początkowo delikatnie omsowane, by z czasem stać się nagimi.",
+            "tekst": "Pień drzewa pokrywa głęboko spękana kora, a młode pędy są początkowo delikatnie omszone, by z czasem stać się nagimi.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Występuje naturalnie w południowej Europie i Anatolii, szeroko rozpowszechniony w basenie Morza Śródziemnego oraz w zachodniej i środkowej Europie, a w Polsce najczęściej spotykany jest na Pomorzu Zachodnim i Dolnym Śląsku, gdzie jest przybyszem zadomowionym poza uprawami oficjalnymi.",
+            "tekst": "Rodzinnym obszarem gatunku są południowe Bałkany, Azja Mniejsza, Kaukaz oraz północny Iran, a szeroko rozpowszechniony jest w basenie Morza Śródziemnego.",
             "zrodla": [
-              1,
+              1
+            ],
+            "fakty": [
+              "s407"
+            ]
+          },
+          {
+            "tekst": "W Polsce roślinność z tego gatunku występuje głównie na Pomorzu Zachodnim i Dolnym Śląsku, gdzie stanowi okrznek (zadomowiony antropofit) poza oficjalnymi uprawami.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s408"
+            ]
+          },
+          {
+            "tekst": "Kasztan jadalny występuje naturalnie w południowej Europie i Anatolii, a także jest szeroko uprawiany w zachodniej i środkowej Europie.",
+            "zrodla": [
               3
             ],
             "fakty": [
-              "s407",
-              "s556",
-              "s408"
+              "s556"
             ]
           }
         ],
-        "model": "groq/openai/gpt-oss-120b",
+        "model": "bez LLM: brak modelu",
         "wejscie": "21ecafe0f60236b7"
       },
-      "profil_energetyczny.zywiol": {
-        "tytul": "Natura i siedlisko - Żywioł",
-        "typ": "tekst",
+      "czesci_rosliny.kora.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Kora (nowa część z sieci): Substancje czynne",
+        "typ": "lista",
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Kora, drewno i łuski nasion zawierają duże ilości tanin (kora 6,8 %, drewno 13,4 %, łuski 10–13 %), a liście także są bogate w te substancje.",
+            "tekst": "Kora, drewno i łuski nasion zawierają duże ilości tanin (kora 6,8 %, drewno 13,4 %, łuski 10‑13 %); liście także są bogate w taniny.",
             "zrodla": [
               3
             ],
@@ -1015,8 +1204,26 @@
             ]
           }
         ],
-        "model": "bez LLM: za duzo zdan spoza zrodel",
+        "model": "bez LLM: brak modelu",
         "wejscie": "702b228a441aa5d7"
+      },
+      "czesci_rosliny.kwiaty.wlasciwości": {
+        "tytul": "Surowce i zbiory - Kwiaty (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Kasztan jadalny jest rośliną miododajną, a uzyskiwany z jego kwiatów miód charakteryzuje się specyficznym, gorkawym smakiem.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s435"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "94020d6f27a8bc6a"
       },
       "czesci_rosliny.liście.wlasciwości": {
         "tytul": "Surowce i zbiory - Liście (nowa część z sieci): Działanie",
@@ -1029,30 +1236,31 @@
               4
             ],
             "fakty": [
-              "s433"
+              "s433",
+              "s574"
             ]
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "f43c176020d14691"
+        "model": "bez LLM: brak modelu",
+        "wejscie": "93b599074d49f262"
       },
-      "czesci_rosliny.kwiaty.wlasciwości": {
-        "tytul": "Surowce i zbiory - Kwiaty (nowa część z sieci): Działanie",
+      "czesci_rosliny.korzeń.wlasciwości": {
+        "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Działanie",
         "typ": "tekst",
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Kasztan jadalny jest rośliną miododajną, a uzyskiwany z jego kwiatów miód charakteryzuje się specyficznym, gorzkawym smakiem.",
+            "tekst": "Kora, drewno i łuski nasion zawierają duże ilości taninów, co wskazuje na ich znaczenie w tradycyjnej medycynie.",
             "zrodla": [
               4
             ],
             "fakty": [
-              "s435"
+              "s575"
             ]
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "94020d6f27a8bc6a"
+        "model": "bez LLM: brak modelu",
+        "wejscie": "92793d6198abd820"
       },
       "zastosowanie.kosmetyczne": {
         "tytul": "Praktyczne zastosowanie - Kosmetyka",
@@ -1060,7 +1268,7 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Z wywaru przygotowanego z liści i łusek kasztana wytwarza się szampon przeznaczony do włosów.",
+            "tekst": "Z wywaru sporządzonego z liści oraz łusek kasztana można wytwarzać szampon do włosów.",
             "zrodla": [
               4
             ],
@@ -1078,7 +1286,7 @@
             ]
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
+        "model": "bez LLM: brak modelu",
         "wejscie": "6d29ed7de40a48df"
       },
       "ciekawostki": {
@@ -1087,12 +1295,48 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "W starożytnym Rzymie żołnierze jedli kasztanową papkę przed wyprawą na pole bitwy.",
+            "tekst": "W średniowieczu kasztany były uważane za pokarm dla robotników i do hodowli świn, mniej za pokarm dla wyższych warstw społeczeństwa.",
             "zrodla": [
-              3
+              2
             ],
             "fakty": [
-              "s421"
+              "s424"
+            ]
+          },
+          {
+            "tekst": "W średniowieczu kasztany były często konservowane przez suszenie, a ich mąka mogła przechowywać się do dwóch lat.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s426"
+            ]
+          },
+          {
+            "tekst": "W średniowieczu w Lombardii pojawiło się słowo „marroni”, odnoszące się do kasztanów najwyższej jakości, dużych, słodkich i łatwych do skórki.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s427"
+            ]
+          },
+          {
+            "tekst": "W XIX wieku uprawa kasztanów zaczęła się zmniejszać z powodu przemysłowości i migracji ludności, a w drugiej połowie wieku choroba na korku kasztanu zniszczyła duże zasoby.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s429"
+            ]
+          },
+          {
+            "tekst": "W XX wieku kasztany w Italii straciły znaczącą część uprawy, a w latach 90. zaczęły się odzyskiwać dzięki występowaniu hypovirulencji.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s430"
             ]
           },
           {
@@ -1132,31 +1376,12 @@
             ]
           },
           {
-            "tekst": "W średniowieczu kasztany były uważane za pokarm dla robotników i do hodowli świń, mniej za pokarm dla wyższych warstw społeczeństwa.",
+            "tekst": "Główną tradycyjną metodą konserwacji kasztanów było ich suszenie, czasem połączone z wędzeniem.",
             "zrodla": [
               2
             ],
             "fakty": [
-              "s424"
-            ]
-          },
-          {
-            "tekst": "Główną tradycyjną metodą konserwacji kasztanów w średniowieczu było ich suszenie, czasem połączone z wędzeniem, a uzyskiwana z nich mąka mogła przechowywać się do dwóch lat.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s426",
               "s562"
-            ]
-          },
-          {
-            "tekst": "W średniowieczu w Lombardii pojawiło się słowo „marroni”, odnoszące się do kasztanów najwyższej jakości, dużych, słodkich i łatwych do obrania.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s427"
             ]
           },
           {
@@ -1169,21 +1394,12 @@
             ]
           },
           {
-            "tekst": "W XIX wieku uprawa kasztanów zaczęła się zmniejszać z powodu przemysłowości i migracji ludności, a w drugiej połowie wieku choroba zniszczyła duże zasoby.",
+            "tekst": "W starożytnym Rzymie żołnierze jedli kasztanową papkę przed wyprawą na pole bitwy.",
             "zrodla": [
-              2
+              3
             ],
             "fakty": [
-              "s429"
-            ]
-          },
-          {
-            "tekst": "W XX wieku kasztany w Italii straciły znaczącą część uprawy, a w latach 90. zaczęły się odzyskiwać dzięki występowaniu hypovirulencji.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s430"
+              "s421"
             ]
           },
           {
@@ -1196,20 +1412,74 @@
             ]
           },
           {
-            "tekst": "Najgrubszy znany okaz europejskiego kasztana nosi nazwę Kasztana Stu Jeźdźców i znajduje się we Włoszech na Sycylii w pobliżu wulkanu Etna.",
+            "tekst": "Gatunek jest naturalnie samoniewłaściwy – nie jest w stanie zapylić się sam, co wymusza krzyżowe zapylenie.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s416"
+            ]
+          },
+          {
+            "tekst": "Najgrubszy znany okaz europejskiego kasztana nosi nazwę \"Kasztana Stu Jeźdźców\" i znajduje się we Włoszech na Sycylii w pobliżu wulkanu Etna.",
             "zrodla": [
               5
             ],
             "fakty": [
               "s432"
             ]
+          },
+          {
+            "tekst": "Drewno kasztana jadalnego tradycyjnie wykorzystywano w rzemiośle do budowy okien, drzwi, podłóg oraz do produkcji beczek, trumien, słupów, lasek, rączek parasoli i przyborów kuchennych.",
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s1780"
+            ]
+          },
+          {
+            "tekst": "Tradycyjnie kasztany spożywa się na surowo, po upieczeniu lub po przetworzeniu na kompoty; popularne są również przesmażone masy kasztanowe jako dodatek do deserów i mięs oraz zupy.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s412"
+            ]
+          },
+          {
+            "tekst": "W serialu kryminalnym \"Chestnut Man\" z 2021 roku pojawia się motyw seryjnego mordercy, który zostawia na miejscach zbrodni ludziki zrobione z kasztanów.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s437"
+            ]
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "18158fed581ac7ef"
+        "model": "bez LLM: brak modelu",
+        "wejscie": "d580861936a899b2"
       },
-      "ostrzezenia": {
-        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+      "zastosowanie.kulinarne": {
+        "tytul": "Praktyczne zastosowanie - Kuchnia",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Kasztan jadalny jest jednym ze składników 38‑elementowego zestawu remediów kwiatowych Bacha.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s422"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "ba2f24b1f4e6663f"
+      },
+      "czesci_rosliny.kora.ostrzezenia": {
+        "tytul": "Surowce i zbiory - Kora (nowa część z sieci): Ostrzeżenia",
         "typ": "tekst",
         "oryginal": null,
         "tresc": [
@@ -1223,7 +1493,7 @@
             ]
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
+        "model": "bez LLM: brak modelu",
         "wejscie": "2374ecf75bac44df"
       },
       "zastosowanie.ogrodowe": {
@@ -1241,7 +1511,7 @@
             ]
           },
           {
-            "tekst": "Drzewo dobrze znosi odnowę przez przycinkę i co 12–30 lat daje drewno bogate w taniny.",
+            "tekst": "Drzewo dobrze znosi odnowę przez przycinkę (coppicing) i co 12‑30 lat daje drewno bogate w taniny.",
             "zrodla": [
               3
             ],
@@ -1250,39 +1520,25 @@
             ]
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
+        "model": "bez LLM: brak modelu",
         "wejscie": "6017e99b739809eb"
-      },
-      "zastosowanie.kulinarne": {
-        "tytul": "Praktyczne zastosowanie - Kuchnia",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "Tradycyjnie kasztany spożywa się na surowo, po upieczeniu lub po przetworzeniu na kompoty, a także jako przesmażone masy kasztanowe dodawane do deserów i mięs oraz w postaci zup.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s412"
-            ]
-          }
-        ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "02dd07bc5cf8e88b"
       }
     },
     "uzyte_fakty": [
+      "s1780",
       "s407",
       "s408",
       "s409",
       "s410",
+      "s411",
       "s412",
       "s413",
       "s414",
+      "s416",
       "s417",
       "s419",
       "s421",
+      "s422",
       "s424",
       "s426",
       "s427",
@@ -1292,6 +1548,7 @@
       "s433",
       "s434",
       "s435",
+      "s437",
       "s438",
       "s439",
       "s553",
@@ -1303,7 +1560,10 @@
       "s560",
       "s561",
       "s562",
-      "s563"
+      "s563",
+      "s565",
+      "s574",
+      "s575"
     ]
   },
   "url": {
@@ -1314,7 +1574,7 @@
     "Kora": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Edelkastanie.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-10-15",
     "w_url": true,
     "zdjecia": [
       {
