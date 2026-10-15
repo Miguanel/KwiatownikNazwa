@@ -304,6 +304,23 @@ html[data-theme="night"] .kw-summary a:hover, html[data-theme="night"] .kw-summa
 }
 .witcher-card:hover .witcher-btn { background: #3e4a3d; color: #fdfaf0; }
 
+/* statystyki rośliny na karcie: informacje z sieci, przepisy, archiwum pierwszego Kwiatownika */
+.witcher-card { height: 410px; }
+.witcher-card-img { flex-basis: 50%; }
+.kw-card-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; margin-top: 8px; }
+.kw-stat {
+    display: flex; flex-direction: column; align-items: center; gap: 1px; padding: 4px 2px 3px; min-width: 0;
+    background: #faf6ea; border: 1px solid #e3d8b8; border-radius: 6px; line-height: 1.1;
+}
+.kw-stat b { font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; color: #3e4a3d; font-weight: bold; }
+.kw-stat small { font-size: 0.68rem; color: #5f574a; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+.kw-stat b i { font-style: normal; font-size: 0.72rem; margin-right: 3px; vertical-align: 2px; font-weight: normal; }
+.kw-stat-0 { opacity: 0.5; }
+.witcher-card:hover .kw-stat:not(.kw-stat-0) { border-color: #c9b27a; }
+html[data-theme="night"] .kw-stat { background: #22261d; border-color: #3b3829; }
+html[data-theme="night"] .kw-stat b { color: #e2cf9a; }
+html[data-theme="night"] .kw-stat small { color: #b3aa93; }
+
 /* =========================================
    MODAL ROZPOZNAWANIA
    ========================================= */
@@ -339,7 +356,7 @@ html[data-theme="night"] .kw-summary a:hover, html[data-theme="night"] .kw-summa
 
 /* Bestiariusz renderowany na serwerze: miniatury <img loading="lazy"> zamiast tla CSS (telefon pobiera tylko
    zdjecia, ktore sa na ekranie), a karty poza ekranem nie sa rysowane (content-visibility) */
-.witcher-card { content-visibility: auto; contain-intrinsic-size: auto 380px; }
+.witcher-card { content-visibility: auto; contain-intrinsic-size: auto 410px; }
 .witcher-card-img { position: relative; overflow: hidden; }
 .witcher-card-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 4px; }
 /* wyszukiwarka czeka na dane (pobierane w tle) */

@@ -148,7 +148,7 @@
     "Rycina": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Illustration_Thymus_serpyllum0_clean.jpg/960px-Illustration_Thymus_serpyllum0_clean.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-09",
+    "zaktualizowano": "2026-10-15",
     "w_url": true,
     "zdjecia": [
       {
@@ -182,9 +182,9 @@
   },
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-10-09",
-    "uporzadkowano": "2026-10-09",
-    "uklad": "llm:gemini/gemini-3.5-flash-lite",
+    "zaktualizowano": "2026-10-15",
+    "uporzadkowano": "2026-10-15",
+    "uklad": "deterministyczny: pominiete informacje: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",
     "zrodla": [
       {
         "nazwa": "Wikipedia (pl): Macierzanka piaskowa",
@@ -220,18 +220,32 @@
         "jezyk": "ja",
         "typ": "strona",
         "nr": 5
+      },
+      {
+        "nazwa": "stronazdrowia.pl",
+        "url": "https://stronazdrowia.pl/co-powinno-byc-w-bukiecie-na-matki-boskiej-zielnej-15-sierpnia-zrob-bukiet-z-tych-leczniczych-ziol-i-roslin/ar/c14p2-26665859",
+        "jezyk": "pl-PL",
+        "typ": "strona",
+        "nr": 6
       }
     ],
     "sekcje": [
       {
         "klucz": "opis",
         "tytul": "Opis i wygląd",
-        "podsumowanie": "Macierzanka piaskowa charakteryzuje się owłosionymi dookoła pędami oraz leżącymi łodygami z wieloletnimi, skórzastymi liśćmi o orzęsionych brzegach. Jej dwupostaciowe, najczęściej różowoliliowe kwiaty tworzą główkowate kwiatostany na końcach pędów.",
-        "podsumowanie_zrodla": [
-          1,
-          2
-        ],
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
         "punkty": [
+          {
+            "tekst": "Pędy macierzanki są zawsze owłosione dookoła, a jej leżące łodygi rosną przez wiele lat, często zakończone pęczkiem liści.",
+            "czesc": "kora",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1144"
+            ]
+          },
           {
             "tekst": "Kwiaty macierzanki są dwupostaciowe i zebrane w główkowate kwiatostany na końcach pędów, najczęściej mają barwę różowoliliową, choć rzadko mogą trafiać się także kwiaty białe.",
             "czesc": "kwiaty",
@@ -243,13 +257,13 @@
             ]
           },
           {
-            "tekst": "Pędy macierzanki są zawsze owłosione dookoła, a jej leżące łodygi rosną przez wiele lat, często zakończone pęczkiem liści.",
-            "czesc": "kora",
+            "tekst": "Kwiaty macierzanki piaskowej mają barwę od jasnofioletowej do jasno-białej, a ich długość wynosi 4–6 mm.",
+            "czesc": "kwiaty",
             "zrodla": [
-              2
+              3
             ],
             "fakty": [
-              "s1144"
+              "s1814"
             ]
           },
           {
@@ -321,11 +335,8 @@
       {
         "klucz": "zastosowanie_lecznicze",
         "tytul": "Ziołolecznictwo i medycyna ludowa",
-        "podsumowanie": "Ziele macierzanki znajduje zastosowanie wewnętrzne jako środek wiatropędny, rozluźniający układ pokarmowy, pobudzający i przeciwkaszlowy. Ponadto wykorzystuje się je zewnętrznie do płukania gardła, przy paradontozie, świądzie i ukąszeniach owadów, a także w formie kąpieli wzmacniających układ nerwowy.",
-        "podsumowanie_zrodla": [
-          1,
-          4
-        ],
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
         "punkty": [
           {
             "tekst": "Tradycyjnie napar z ziela macierzanki pity po jedzeniu wykazuje działanie wiatropędne oraz rozluźniające na mięśnie układu pokarmowego.",
@@ -348,6 +359,16 @@
             ]
           },
           {
+            "tekst": "Kąpiele z dodatkiem macierzanki są tradycyjnie stosowane do wzmocnienia systemu nerwowego u rekonwalescentów, chorych dzieci oraz osób starszych.",
+            "czesc": "ziele",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1132"
+            ]
+          },
+          {
             "tekst": "Tradycyjnie poprzez destylację pozyskiwano olejek, który w medycynie ludowej wykorzystywano jako środek pobudzający oraz w leczeniu kaszlu.",
             "czesc": "ziele",
             "zrodla": [
@@ -358,13 +379,51 @@
             ]
           },
           {
-            "tekst": "Kąpiele z dodatkiem macierzanki są tradycyjnie stosowane do wzmocnienia systemu nerwowego u rekonwalescentów, chorych dzieci oraz osób starszych.",
+            "tekst": "Ziele macierzanki piaskowej tradycyjnie stosowano wewnętrznie w leczeniu kaszlu – działa wykrztuśnie i pomaga usuwać zaległą wydzielinę w drogach oddechowych.",
             "czesc": "ziele",
             "zrodla": [
-              1
+              6
             ],
             "fakty": [
-              "s1132"
+              "s1818"
+            ]
+          },
+          {
+            "tekst": "Zioło przyspiesza leczenie przeziębienia, grypy i zakażeń pasożytniczych.",
+            "czesc": "ziele",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1819"
+            ]
+          },
+          {
+            "tekst": "Działa przeciwzapalnie, przeciwświądowo i ma działanie uspokajające.",
+            "czesc": "ziele",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1820"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "barwienie",
+        "tytul": "Barwienie i rzemiosło",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Macierzanka piaskowa wykorzystywana jest w przemyśle perfumeryjnym ze względu na swój intensywny zapach.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1817"
             ]
           }
         ]
@@ -476,6 +535,36 @@
             ]
           },
           {
+            "tekst": "Wymaga słonecznego stanowiska i lubi lekko kwaśne podłoże (pH 5,5–6).",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1811"
+            ]
+          },
+          {
+            "tekst": "Rośnie powoli, zakwita dopiero w drugim roku.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1812"
+            ]
+          },
+          {
+            "tekst": "Jest w pełni mrozoodporna (strefy mrozoodporności 3-9).",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1813"
+            ]
+          },
+          {
             "tekst": "Odmiany macierzanki piaskowej są stosowane jako rośliny obwódkowe oraz okrywowe wokół ogrodów i kamiennych ścieżek, a także jako zamiennik trawników w miejscach o niskim i umiarkowanym natężeniu ruchu.",
             "czesc": null,
             "zrodla": [
@@ -494,16 +583,6 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Nasiona macierzanki piaskowej są rozsiewane przez mrówki w procesie zwanym myrmekochorią.",
-            "czesc": "nasiona",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s1136"
-            ]
-          },
-          {
             "tekst": "Gąsienice motyli modraszka ikar i modraszka arion żywią się macierzanką piaskową.",
             "czesc": null,
             "zrodla": [
@@ -512,16 +591,27 @@
             "fakty": [
               "s1141"
             ]
+          },
+          {
+            "tekst": "Nasiona macierzanki piaskowej są rozsiewane przez mrówki w procesie zwanym myrmekochorią.",
+            "czesc": "nasiona",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1136"
+            ]
           }
         ]
       }
     ],
     "czesci": {
-      "kwiaty": [
-        "s1135"
-      ],
       "kora": [
         "s1144"
+      ],
+      "kwiaty": [
+        "s1135",
+        "s1814"
       ],
       "liście": [
         "s1134"
@@ -530,8 +620,11 @@
         "s1129",
         "s1130",
         "s1131",
-        "s1145",
         "s1132",
+        "s1145",
+        "s1818",
+        "s1819",
+        "s1820",
         "s1147",
         "s1133",
         "s1146"
@@ -550,7 +643,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Macierzanka piaskowa",
           "url": "https://pl.wikipedia.org/wiki/Macierzanka_piaskowa"
-        }
+        },
+        "cytat": "Inne nazwy: cząberek, tymianek wąskolistny, dzięcielnica."
       },
       {
         "id": "s1129",
@@ -561,7 +655,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Macierzanka piaskowa",
           "url": "https://pl.wikipedia.org/wiki/Macierzanka_piaskowa"
-        }
+        },
+        "cytat": "Surowiec zielarski: ziele Herba Serpylli. Zawiera olejki eteryczne. Zbiór i suszenie: ziele zbiera się podczas kwitnienia rośliny, suszy w cieniu. Po ususzeniu oddziela się zdrewniałe łodyżki."
       },
       {
         "id": "s1130",
@@ -572,7 +667,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Macierzanka piaskowa",
           "url": "https://pl.wikipedia.org/wiki/Macierzanka_piaskowa"
-        }
+        },
+        "cytat": "napar z ziela używany po jedzeniu działa wiatropędnie, rozluźnia mięśnie układu pokarmowego."
       },
       {
         "id": "s1131",
@@ -583,7 +679,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Macierzanka piaskowa",
           "url": "https://pl.wikipedia.org/wiki/Macierzanka_piaskowa"
-        }
+        },
+        "cytat": "Używana jest do płukania gardła, przy paradontozie, świądzie, pomaga po ukłuciu owadów."
       },
       {
         "id": "s1132",
@@ -594,7 +691,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Macierzanka piaskowa",
           "url": "https://pl.wikipedia.org/wiki/Macierzanka_piaskowa"
-        }
+        },
+        "cytat": "Wzmacnia system nerwowy – używana jest do kąpieli dla rekonwalescentów, chorych dzieci i osób starszych"
       },
       {
         "id": "s1133",
@@ -605,7 +703,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Macierzanka piaskowa",
           "url": "https://pl.wikipedia.org/wiki/Macierzanka_piaskowa"
-        }
+        },
+        "cytat": "Dawniej, wraz z żywicą i innymi ziołami, wchodziła w skład kadzidła."
       },
       {
         "id": "s1134",
@@ -616,7 +715,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Macierzanka piaskowa",
           "url": "https://pl.wikipedia.org/wiki/Macierzanka_piaskowa"
-        }
+        },
+        "cytat": "Jajowatopodługowate, nieco skórzaste liście mają długość 3–4 razy większą od szerokości i orzęsione brzegi."
       },
       {
         "id": "s1135",
@@ -627,7 +727,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Macierzanka piaskowa",
           "url": "https://pl.wikipedia.org/wiki/Macierzanka_piaskowa"
-        }
+        },
+        "cytat": "Kwiatostan główkowaty, na końcach pędów. W jednej główce 3–6 różowoliliowych kwiatów (czasami, rzadko trafiają się kwiaty białe)."
       },
       {
         "id": "s1136",
@@ -638,7 +739,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Macierzanka piaskowa",
           "url": "https://pl.wikipedia.org/wiki/Macierzanka_piaskowa"
-        }
+        },
+        "cytat": "Nasiona roznoszone przez mrówki (myrmekochoria)."
       },
       {
         "id": "s1137",
@@ -649,7 +751,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Macierzanka piaskowa",
           "url": "https://pl.wikipedia.org/wiki/Macierzanka_piaskowa"
-        }
+        },
+        "cytat": "Wymaga słonecznego stanowiska i lubi lekko kwaśne podłoże (pH 5,5–6). Uprawiana jest przez siew nasion wczesną wiosną. Rośnie powoli, zakwita dopiero w drugim roku."
       },
       {
         "id": "s1138",
@@ -660,7 +763,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (en): Thymus serpyllum",
           "url": "https://en.wikipedia.org/wiki/Thymus_serpyllum"
-        }
+        },
+        "cytat": "The oils of T. serpyllum contain thymol, carvacrol, limonene, paracymene, gamma-terpinene and beta-caryophyllene."
       },
       {
         "id": "s1140",
@@ -671,7 +775,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (en): Thymus serpyllum",
           "url": "https://en.wikipedia.org/wiki/Thymus_serpyllum"
-        }
+        },
+        "cytat": "It is a plant of thin soils and can be found growing on sandy-soiled heaths, rocky outcrops, hills, banks, roadsides and riverside sand banks."
       },
       {
         "id": "s1141",
@@ -682,7 +787,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (en): Thymus serpyllum",
           "url": "https://en.wikipedia.org/wiki/Thymus_serpyllum"
-        }
+        },
+        "cytat": "Wild thyme is one of the plants on which both the common blue butterfly and large blue butterfly larvae feed"
       },
       {
         "id": "s1142",
@@ -693,7 +799,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (en): Thymus serpyllum",
           "url": "https://en.wikipedia.org/wiki/Thymus_serpyllum"
-        }
+        },
+        "cytat": "Creeping thyme has also been used to \"upholster\" herb seats, similar to camomile seats, and provide a fragrant surface to sit on."
       },
       {
         "id": "s1143",
@@ -704,7 +811,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (en): Thymus serpyllum",
           "url": "https://en.wikipedia.org/wiki/Thymus_serpyllum"
-        }
+        },
+        "cytat": "Creeping and mounding variants of T. serpyllum are used as border plants and ground cover around gardens and stone paths. It may also be used to replace a bluegrass lawn to xeriscape low to moderate foot traffic areas due to its tolerance f"
       },
       {
         "id": "s1144",
@@ -715,7 +823,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (de): Sand-Thymian",
           "url": "https://de.wikipedia.org/wiki/Sand-Thymian"
-        }
+        },
+        "cytat": "Die Zweige sind immer ringsum behaart. Die liegenden Stängel sind langkriechend, jahrelang weiterwachsend und schließen meist mit einem Blattbüschel, seltener mit einem Blütenstand ab."
       },
       {
         "id": "s1145",
@@ -726,7 +835,8 @@
         "zrodlo": {
           "nazwa": "Wikipedia (zh): 鋪地百里香",
           "url": "https://zh.wikipedia.org/wiki/%E9%8B%AA%E5%9C%B0%E7%99%BE%E9%87%8C%E9%A6%99"
-        }
+        },
+        "cytat": "通过蒸馏可以获得很多百里香油，其可以用作草药中的春药，也可以用作治疗咳嗽。"
       },
       {
         "id": "s1146",
@@ -748,13 +858,110 @@
         "zrodlo": {
           "nazwa": "cosmetic-ingredients.org",
           "url": "https://cosmetic-ingredients.org/skin-conditioning-miscellaneous/9104/"
-        }
+        },
+        "cytat": "ワイルドタイムエキス（50%エタノール抽出）配合乳液塗布グループは、未配合乳液塗布グループと比較して色素沈着を改善することが確認された。このような試験結果が明らかにされており[30]、ワイルドタイムエキスにキネシン抑制による美白作用が認められています。"
+      },
+      {
+        "id": "s1811",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "Wymaga słonecznego stanowiska i lubi lekko kwaśne podłoże (pH 5,5–6).",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Macierzanka piaskowa",
+          "url": "https://pl.wikipedia.org/wiki/Macierzanka_piaskowa"
+        },
+        "cytat": "Wymaga słonecznego stanowiska i lubi lekko kwaśne podłoże (pH 5,5–6)."
+      },
+      {
+        "id": "s1812",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "Rośnie powoli, zakwita dopiero w drugim roku.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Macierzanka piaskowa",
+          "url": "https://pl.wikipedia.org/wiki/Macierzanka_piaskowa"
+        },
+        "cytat": "Rośnie powoli, zakwita dopiero w drugim roku."
+      },
+      {
+        "id": "s1813",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "Jest w pełni mrozoodporna (strefy mrozoodporności 3-9).",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Macierzanka piaskowa",
+          "url": "https://pl.wikipedia.org/wiki/Macierzanka_piaskowa"
+        },
+        "cytat": "Jest w pełni mrozoodporna (strefy mrozoodporności 3-9)."
+      },
+      {
+        "id": "s1814",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Kwiaty macierzanki piaskowej mają barwę od jasnofioletowej do jasno-białej, a ich długość wynosi 4–6 mm.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Thymus serpyllum",
+          "url": "https://en.wikipedia.org/wiki/Thymus_serpyllum"
+        },
+        "cytat": "The flowers are 4–6 mm long and usually pink or mauve, rarely white, with a tube-like calyx and an irregular straight-tubed, hairy corolla."
+      },
+      {
+        "id": "s1817",
+        "sekcja": "barwienie",
+        "czesc": null,
+        "tekst": "Macierzanka piaskowa wykorzystywana jest w przemyśle perfumeryjnym ze względu na swój intensywny zapach.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Thymus serpyllum",
+          "url": "https://en.wikipedia.org/wiki/Thymus_serpyllum"
+        },
+        "cytat": "The strongly scented flowers... produce odors ranging from heavily herbal to lightly lemon, depending on the variety."
+      },
+      {
+        "id": "s1818",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "ziele",
+        "tekst": "Ziele macierzanki piaskowej tradycyjnie stosowano wewnętrznie w leczeniu kaszlu – działa wykrztuśnie i pomaga usuwać zaległą wydzielinę w drogach oddechowych.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/co-powinno-byc-w-bukiecie-na-matki-boskiej-zielnej-15-sierpnia-zrob-bukiet-z-tych-leczniczych-ziol-i-roslin/ar/c14p2-26665859"
+        },
+        "cytat": "macierzanka piaskowa ... świetnie sprawdzi się w leczeniu kaszlu, działa wykrztuśnie i ułatwia odprowadzanie zalegającej w drogach oddechowych wydzieliny"
+      },
+      {
+        "id": "s1819",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "ziele",
+        "tekst": "Zioło przyspiesza leczenie przeziębienia, grypy i zakażeń pasożytniczych.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/co-powinno-byc-w-bukiecie-na-matki-boskiej-zielnej-15-sierpnia-zrob-bukiet-z-tych-leczniczych-ziol-i-roslin/ar/c14p2-26665859"
+        },
+        "cytat": "Przyspiesza leczenie przeziębienia i grypy oraz zakażeń pasożytniczych"
+      },
+      {
+        "id": "s1820",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "ziele",
+        "tekst": "Działa przeciwzapalnie, przeciwświądowo i ma działanie uspokajające.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/co-powinno-byc-w-bukiecie-na-matki-boskiej-zielnej-15-sierpnia-zrob-bukiet-z-tych-leczniczych-ziol-i-roslin/ar/c14p2-26665859"
+        },
+        "cytat": "Działa też przeciwzapalnie, przeciwświądowo i uspokajająco"
       }
     ]
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-09",
+    "zaktualizowano": "2026-10-15",
     "pola": {
       "identyfikacja.cechy_kluczowe": {
         "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
@@ -767,23 +974,48 @@
         ],
         "tresc": [
           {
-            "tekst": "Pędy macierzanki piaskowej są płożące się, zdrowniałe u nasady, tworząc niskie dywan y (do 10 cm wysokości).",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Liście macierzanki piaskowej są bardzo drobne, eliptyczne, całobrzegie, o wyraźny m, korzennym zapachu. Łodyga kwiatostanowa jest owłoszona dookólnie (w przeciwieństwie do macierzanki pospolitej, która ma włoski tylko na krawędziach).",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Kwiaty macierzanki piaskowej są dwupostaciowe i zebrane w główkowate kwiatostany na końcu pędów, najczęściej mają barwę różowoliliową, choć rzadko mogą trafiać się także kwiaty białe.",
+            "tekst": "Pędy macierzanki są zawsze owłosione dookoła, a jej leżące łodygi rosną przez wiele lat, często zakończone pęczkiem liści.",
             "zrodla": [
-              1
+              2
             ],
             "fakty": [
-              "s1135"
+              "s1144"
             ]
+          },
+          {
+            "tekst": "Kwiaty macierzanki są dwupostaciowe i zebrane w główkowate kwiatostany na końcu pędów, najczęściej mają barwę różowoliliową, choć rzadko mogą trafiać się także kwiaty białe.",
+            "zrodla": [
+              1,
+              3
+            ],
+            "fakty": [
+              "s1135",
+              "s1814"
+            ]
+          },
+          {
+            "tekst": "Kwiaty macierzanki piaskowej mają barwę od jasnofioletowej do jasno-białej, a ich długość wynosi 4–6 mm.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1814"
+            ]
+          },
+          {
+            "tekst": "Pędy płożące się, zdrewniałe u nasady, tworzące niskie dywany (do 10 cm wysokości).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Liście bardzo drobne, eliptyczne, całobrzegie, o wyraźnym, korzennym zapachu.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Łodyga kwiatostanowa jest owłosiona dookoła (w przeciwieństwie do macierzanki pospolitej, która ma włoski tylko na krawędziach).",
+            "zrodla": [],
+            "fakty": []
           },
           {
             "tekst": "Liście macierzanki są jajowatopodługowate, nieco skórzaste, posiadają orzęsione brzegi, a ich długość jest 3–4 razy większa od szerokości.",
@@ -796,15 +1028,15 @@
           }
         ],
         "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
-        "wejscie": "0c2fd512ed24ff26"
+        "wejscie": "4822efd75bab1ef1"
       },
-      "wymagania.stanowisko": {
-        "tytul": "Natura i siedlisko - Stanowisko",
+      "wymagania.gleba": {
+        "tytul": "Natura i siedlisko - Gleba",
         "typ": "tekst",
-        "oryginal": "Pełne słońce. W cieniu traci swój aromat i zwarty pokrój.",
+        "oryginal": "Uboga, piaszczysta, przepuszczalna, sucha. Wybitnie nie lubi gleb ciężkich, gliniastych i podmokłych.",
         "tresc": [
           {
-            "tekst": "Pełne słońce. W cieniu traci swój aromat i zwarty pokrój.",
+            "tekst": "Uboga, piaszczysta, przepuszczalna, suchata. Wybitnie nie lubi gleb ciezkich, gliniastych i podmokłych.",
             "zrodla": [],
             "fakty": []
           },
@@ -819,7 +1051,7 @@
           }
         ],
         "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
-        "wejscie": "c9a5f39aabe854a4"
+        "wejscie": "87ed3bfb018f5bd5"
       },
       "czesci_rosliny.ziele.czas_zbioru": {
         "tytul": "Surowce i zbiory - Herba Serpylli: Zbiór",
@@ -900,8 +1132,12 @@
         "tresc": [
           {
             "tekst": "Silnie wykrztuśne (pobudza ruch rzęsek), przeciwbakteryjne, rozkurczowe, wiatropędne, odkażające drogi oddechowe i moczowe.",
-            "zrodla": [],
-            "fakty": []
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1820"
+            ]
           },
           {
             "tekst": "Tradycyjnie napar z ziela macierzanki pity po jedzeniu wykazuje działanie wiatropędne oraz rozluźniające na mięśnie układu pokarmowego.",
@@ -922,7 +1158,16 @@
             ]
           },
           {
-            "tekst": "Tradycyjnie poprzez destylację pozyskiwano olejki, który w medycynie ludowej wykorzystywano jako środek pobudzający oraz w leczeniu kaszlu.",
+            "tekst": "Kąpiele z dodatkiem macierzanki są tradycyjnie stosowane do wzmocnienia systemu nerwowego u rekonwalescentów, chorych dzieci oraz osób starszych.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1132"
+            ]
+          },
+          {
+            "tekst": "Tradycyjnie poprzez destylację pozyskiwano olejek, który w medycynie ludowej wykorzystywano jako środek pobudzający oraz w leczeniu kaszlu.",
             "zrodla": [
               4
             ],
@@ -931,17 +1176,58 @@
             ]
           },
           {
-            "tekst": "Kąpiele z dodatkiem macierzanki są tradycyjnie stosowane do wzmocnienia systemu nerwowego u rekonwalescentów, chorych dzieci oraz osób starszych.",
+            "tekst": "Ziele macierzanki piaskowej tradycyjnie stosowano wewnętrznie w leczeniu kaszlu – działa wykrztuśnie i pomaga usuwać zaległą wydzielinę w drogach oddechowych.",
             "zrodla": [
-              1
+              6
             ],
             "fakty": [
-              "s1132"
+              "s1818"
+            ]
+          },
+          {
+            "tekst": "Zioło przyspiesza leczenie przeziębienia, grypy i zakażeń pasożytniczych.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1819"
+            ]
+          },
+          {
+            "tekst": "Działa przeciwzapalnie, przeciwświądowo i ma działanie uspokajające.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1820"
             ]
           }
         ],
         "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
-        "wejscie": "0e14febc520a65c9"
+        "wejscie": "fd8d8b02cf5be186"
+      },
+      "zastosowanie.rzemieslnicze": {
+        "tytul": "Praktyczne zastosowanie - Rzemiosło",
+        "typ": "tekst",
+        "oryginal": "Wyciągi z macierzanki są składnikiem ekologicznych środków do dezynfekcji oraz kosmetyków dla cery tłustej.",
+        "tresc": [
+          {
+            "tekst": "Wyciągi z macierzanki są składnikiem ekologicznych środków do dezynfekcji oraz kosmetyków dla cery tłustej.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Macierzanka piaskowa wykorzystywana jest w przemyśle perfumeryjnym ze względu na swój intensywny zapach.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1817"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "0639247156fe95eb"
       },
       "zastosowanie.kosmetyczne": {
         "tytul": "Praktyczne zastosowanie - Kosmetyka",
@@ -958,7 +1244,7 @@
             ]
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
+        "model": "bez LLM: brak modelu",
         "wejscie": "e3dd926339432318"
       },
       "ciekawostki": {
@@ -987,7 +1273,7 @@
             "fakty": []
           },
           {
-            "tekst": "W Polsce tradycyjnie wchodzi w skład bukietow święconych w dniu Matki Boskiej Zielnej (15 sierpnia).",
+            "tekst": "W Polsce tradycyjnie wchodzi w skład bukietów święconych w dniu Matki Boskiej Zielnej (15 sierpnia).",
             "zrodla": [],
             "fakty": []
           },
@@ -1017,10 +1303,28 @@
             "fakty": [
               "s1128"
             ]
+          },
+          {
+            "tekst": "Gąsienice motyli modraszka ikar i modraszka arion żywią się macierzanką piaskową.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1141"
+            ]
+          },
+          {
+            "tekst": "Nasiona macierzanki piaskowej są rozsiewane przez mrówki w procesie zwanym myrmekochorią.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1136"
+            ]
           }
         ],
         "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
-        "wejscie": "8f6b76083474a9c4"
+        "wejscie": "d950762aca8c9d05"
       },
       "czesci_rosliny.ziele.ostrzezenia": {
         "tytul": "Surowce i zbiory - Herba Serpylli: Ostrzeżenia",
@@ -1056,6 +1360,15 @@
             "fakty": []
           },
           {
+            "tekst": "Wymaga słonecznego stanowiska i lubi lekko kwaśne podłoże (pH 5,5–6).",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1811"
+            ]
+          },
+          {
             "tekst": "Uprawa macierzanki wymaga stanowiska słonecznego oraz lekko kwaśnego podłoża o pH w granicach 5,5–6, a roślina wysiewana wczesną wiosną rośnie powoli i zakwita dopiero w drugim roku.",
             "zrodla": [
               1
@@ -1066,7 +1379,7 @@
           }
         ],
         "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
-        "wejscie": "88acfa79212f25b8"
+        "wejscie": "ec16ad0d0ae166bf"
       },
       "zastosowanie.ogrodowe": {
         "tytul": "Praktyczne zastosowanie - Ogród",
@@ -1079,6 +1392,15 @@
             "fakty": []
           },
           {
+            "tekst": "Rośnie powoli, zakwita dopiero w drugim roku.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1812"
+            ]
+          },
+          {
             "tekst": "Odmiany macierzanki piaskowej są stosowane jako rośliny obwódkowe oraz okrywowe wokół ogrodów i kamiennych ścieżek, a także jako zamiennik trawników w miejscach o niskim i umiarkowanym natężeniu ruchu.",
             "zrodla": [
               3
@@ -1089,37 +1411,30 @@
           }
         ],
         "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
-        "wejscie": "36052440b1a32f07"
+        "wejscie": "656360f8c48b040b"
       },
-      "permakultura.funkcje": {
-        "tytul": "Cykl życia i ekosystem - Permakultura - funkcje",
-        "typ": "lista",
-        "oryginal": [
-          "Dynamiczny akumulator manganu i litu.",
-          "Ground cover (roślina okrywowa) - zapobiega erozji gleb piaszczystych.",
-          "Odstraszacz szkodników - zapach macierzanki dezorientuje owady szukające roślin żywicielskich (np. pod drzewami owocowymi).",
-          "Magnes na pożyteczne drapieżne owady."
-        ],
+      "wymagania.mrozoodpornosc": {
+        "tytul": "Natura i siedlisko - Mrozoodporność",
+        "typ": "tekst",
+        "oryginal": "Strefa 3 (Całkowicie mrozoodporna).",
         "tresc": [
           {
-            "tekst": "Dynamiczny akumulator manganu i litu. Ground cover (roślina okrywowa) - zapobiega erozji gleb piaszczystych. Odstraszacz szkodników - zapach macierzanki dezorientuje owady szukające roślin żywicielskich (np. pod drzewami owocowymi). Magnes na pożyteczne drapieżne owady.",
+            "tekst": "Stretfa 3 (Całkowicie mrozoodporna).",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Nasiona macierzanki piaskowej są rozsiewane przez mrówki w procesie zwanym myrmekochorią. Gąsienice motyli modraszka ikar i modraszka arion żywią się macierzanką piaskową.",
+            "tekst": "Jest w pełni mrozoodporna (strefy mrozoodporności 3-9).",
             "zrodla": [
-              1,
-              3
+              1
             ],
             "fakty": [
-              "s1136",
-              "s1141"
+              "s1813"
             ]
           }
         ],
         "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
-        "wejscie": "a6f91f46abca4b23"
+        "wejscie": "cbdd9522d4683d54"
       }
     },
     "uzyte_fakty": [
@@ -1138,9 +1453,18 @@
       "s1141",
       "s1142",
       "s1143",
+      "s1144",
       "s1145",
       "s1146",
-      "s1147"
+      "s1147",
+      "s1811",
+      "s1812",
+      "s1813",
+      "s1814",
+      "s1817",
+      "s1818",
+      "s1819",
+      "s1820"
     ]
   }
 }

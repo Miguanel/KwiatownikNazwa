@@ -109,14 +109,79 @@ def _plants():
     return out
 
 
+# ---------------------------------------------------------------- statystyki kart Bestiariusza
+def _web_count(p):
+    """Informacje z sieci (Siedziba): punkty uporzadkowanej wiedzy, a dla starszych plikow - surowe fakty."""
+    w = p.get('wiedza') if isinstance(p.get('wiedza'), dict) else {}
+    pts = sum(len(s.get('punkty') or []) for s in w.get('sekcje') or [] if isinstance(s, dict))
+    return pts or len([f for f in w.get('fakty') or [] if isinstance(f, dict)])
+
+
+def _leaf_count(v, depth=0):
+    """Ile pojedynczych informacji jest w wartosci z archiwum: tekst = 1, lista/slownik = suma elementow
+    (bez adresow URL i pol ze zrodlami) - tak samo liczy licznik "informacji" na stronie rosliny."""
+    if depth > 6 or v is None:
+        return 0
+    if isinstance(v, str):
+        t = v.strip()
+        return 1 if t and not re.match(r'^https?://', t, re.I) else 0
+    if isinstance(v, (int, float)) and not isinstance(v, bool):
+        return 1
+    if isinstance(v, list):
+        if v and all(isinstance(x, (int, float)) for x in v):       # np. miesiace [5, 6, 7] = jedna informacja
+            return 1
+        return sum(_leaf_count(x, depth + 1) for x in v)
+    if isinstance(v, dict):
+        return sum(_leaf_count(x, depth + 1) for k, x in v.items() if k not in ('zrodlo', 'źródło', 'zrodla'))
+    return 0
+
+
+def _archive_count(pid):
+    from app.utils.helpers import plants_dir
+    from app.utils.legacy import get_legacy_plant
+    try:
+        legacy = get_legacy_plant(plants_dir(), pid)
+    except Exception:                                   # archiwum to dodatek - blad nie moze wywrocic strony
+        return 0
+    return sum(_leaf_count(v) for _k, _t, v in (legacy or {}).get('sekcje') or [])
+
+
+def _recipe_counts(plants):
+    """{id rosliny: liczba przepisow} - jak recipes_for_plant() (glowna roslina albo skladnik z link_id),
+    w jednym przejsciu przez magazyn; wzmianki (bez pelnego wykonania) sie nie licza."""
+    from app.routes.recipes import is_lead
+    ids = {p['id'] for p in plants}
+    by_name = {}
+    for p in plants:
+        by_name.setdefault(str(p.get('nazwa_pl') or '').lower().strip(), p['id'])
+    out = {}
+    for r in get_all_recipes():
+        if is_lead(r):
+            continue
+        hit = {s.get('link_id') for s in (r.get('skladniki') or []) if isinstance(s, dict) and s.get('link_id') in ids}
+        if r.get('slug') in ids:
+            hit.add(r['slug'])
+        name = str(r.get('roslina') or '').lower().strip()
+        if name in by_name:
+            hit.add(by_name[name])
+        for pid in hit:
+            out[pid] = out.get(pid, 0) + 1
+    return out
+
+
 def bestiary(plants=None):
-    """Karty Bestiariusza (alfabetycznie po polsku): id, nazwa, lacina, rodzina, miniatura (330 i 500 px)."""
+    """Karty Bestiariusza (alfabetycznie po polsku): id, nazwa, lacina, rodzina, miniatura (330 i 500 px)
+    i statystyki rosliny: informacje z sieci, przepisy, informacje z archiwum pierwszego Kwiatownika."""
     rows = []
-    for p in plants if plants is not None else _plants():
+    plants = plants if plants is not None else _plants()
+    recipes = _recipe_counts(plants)
+    for p in plants:
         img = plant_image(p)
         small, big = thumb(img, 330), thumb(img, 500)
         rows.append({'id': p['id'], 'nazwa': p['nazwa_pl'], 'lat': _latin(p), 'rodzina': p.get('rodzina') or '',
-                     'img': small, 'img2x': big if big != small else '', 'full': img if img != small else ''})
+                     'img': small, 'img2x': big if big != small else '', 'full': img if img != small else '',
+                     'staty': {'siec': _web_count(p), 'przepisy': recipes.get(p['id'], 0),
+                               'archiwum': _archive_count(p['id'])}})
     rows.sort(key=lambda r: polish_key(r['nazwa']))
     return rows
 

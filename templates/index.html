@@ -95,6 +95,12 @@
                 <h3 class="witcher-card-title">{{ p.nazwa }}</h3>
                 {% if p.lat %}<p class="witcher-card-latin">{{ p.lat }}</p>{% endif %}
                 <p class="witcher-card-desc">{{ p.rodzina }}</p>
+                {% set st = p.staty or {} %}
+                <div class="kw-card-stats" aria-label="{{ st.siec or 0 }} informacji z sieci, {{ st.przepisy or 0 }} przepisów, {{ st.archiwum or 0 }} informacji z archiwum">
+                    <span class="kw-stat{% if not st.siec %} kw-stat-0{% endif %}" title="Informacje zebrane w sieci przez Siedzibę Kwiatownika (ze źródłami)"><b><i aria-hidden="true">🌐</i>{{ st.siec or 0 }}</b><small>z sieci</small></span>
+                    <span class="kw-stat{% if not st.przepisy %} kw-stat-0{% endif %}" title="Przepisy z tą rośliną w Przepiśniku"><b><i aria-hidden="true">📜</i>{{ st.przepisy or 0 }}</b><small>przepisy</small></span>
+                    <span class="kw-stat{% if not st.archiwum %} kw-stat-0{% endif %}" title="Informacje z archiwum pierwszego Kwiatownika"><b><i aria-hidden="true">📚</i>{{ st.archiwum or 0 }}</b><small>archiwum</small></span>
+                </div>
             </div>
             <span class="witcher-btn">Zbadaj <i class="ra ra-eye"></i></span>
         </a>
