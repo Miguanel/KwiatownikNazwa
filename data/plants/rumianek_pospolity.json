@@ -4229,8 +4229,8 @@
   },
   "rozmieszczenie": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-14",
-    "jak": "reguly",
+    "zaktualizowano": "2026-10-16",
+    "jak": "llm:groq/qwen/qwen3.8-27b",
     "wejscie": "53b30efefcd2152d",
     "wstawki": [
       {
@@ -4320,10 +4320,10 @@
         ]
       },
       {
-        "miejsce": "surowce/inne",
-        "rozdzial": "Surowce i zbiory",
-        "tytul": "Surowce całej rośliny",
-        "ikona": "ra-potion",
+        "miejsce": "cykl/biologia",
+        "rozdzial": "Cykl życia i ekosystem",
+        "tytul": "Kwitnienie, zapylanie i rozsiewanie",
+        "ikona": "ra-cycle",
         "nowy": true,
         "punkty": [
           {

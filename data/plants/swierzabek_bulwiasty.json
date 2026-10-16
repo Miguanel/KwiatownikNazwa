@@ -1625,8 +1625,8 @@
   },
   "rozmieszczenie": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-15",
-    "jak": "reguly",
+    "zaktualizowano": "2026-10-16",
+    "jak": "llm:groq/qwen/qwen3.8-27b",
     "wejscie": "c6bf1585b743fed3",
     "wstawki": [
       {
@@ -1646,26 +1646,15 @@
             ],
             "sekcja": "wystepowanie",
             "czesc": null
-          },
-          {
-            "tekst": "W warunkach dzikich nasiona tej rośliny rozprzestrzeniane są za pośrednictwem wody (hydrochoria), co wiąże się z jej częstym występowaniem na brzegach rzek.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s1773"
-            ],
-            "sekcja": "ciekawostki",
-            "czesc": "nasiona"
           }
         ]
       },
       {
-        "miejsce": "rozpoznawanie/cechy",
-        "rozdzial": "Rozpoznawanie w terenie",
-        "tytul": "Cechy kluczowe",
-        "ikona": "ra-leaf",
-        "nowy": false,
+        "miejsce": "surowce/czesc:kłącze",
+        "rozdzial": "Surowce i zbiory",
+        "tytul": "Kłącze",
+        "ikona": "ra-potion",
+        "nowy": true,
         "punkty": [
           {
             "tekst": "Zgrubienie podziemne ma stożkowaty lub kulisty kształt, osiąga 3-6 cm grubości i 1,5-10 cm długości, ważąc od 140 do 200 gramów przy szarej powierzchni.",
@@ -1681,11 +1670,11 @@
         ]
       },
       {
-        "miejsce": "zastosowanie/ogrod",
-        "rozdzial": "Praktyczne zastosowanie",
-        "tytul": "Ogród",
-        "ikona": "ra-pine-tree",
-        "nowy": false,
+        "miejsce": "cykl/biologia",
+        "rozdzial": "Cykl życia i ekosystem",
+        "tytul": "Kwitnienie, zapylanie i rozsiewanie",
+        "ikona": "ra-cycle",
+        "nowy": true,
         "punkty": [
           {
             "tekst": "Siewniki tej rośliny rozpylają się naturalnie drogą wodną (hydrochory), co sprzyja gęstym zbiorowiskom na brzegach rzek.",
@@ -1697,6 +1686,17 @@
             ],
             "sekcja": "uprawa",
             "czesc": null
+          },
+          {
+            "tekst": "W warunkach dzikich nasiona tej rośliny rozprzestrzeniane są za pośrednictwem wody (hydrochoria), co wiąże się z jej częstym występowaniem na brzegach rzek.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1773"
+            ],
+            "sekcja": "ciekawostki",
+            "czesc": "nasiona"
           }
         ]
       }

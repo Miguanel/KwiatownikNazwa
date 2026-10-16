@@ -3,6 +3,144 @@
  "opis": "Kronika Siedziby Kwiatownika - pisze ja agent wdrozen (Siedziba).",
  "wpisy": [
   {
+   "data": "2026-10-16T10:36:20+02:00",
+   "tytul": "Nowa wiedza o 16 roślinach",
+   "opis": "Siedziba zebrała 14 sprawdzonych informacji (źródła: ?, niemieckie, angielskie, francuskie, japońskie). 69 informacji z sieci trafiło do właściwych rozdziałów i podrozdziałów stron roślin.",
+   "liczby": {
+    "informacje": 14,
+    "przepisy": 0,
+    "rosliny": 16,
+    "nowe_rosliny": 0,
+    "zdjecia": 0,
+    "rozmieszczone": 69
+   },
+   "rosliny": [
+    {
+     "id": "tarnina",
+     "nazwa": "Śliwa tarnina",
+     "nowe": 14,
+     "jezyki": [
+      "?",
+      "de",
+      "en",
+      "ja"
+     ]
+    },
+    {
+     "id": "barszcz_zwyczajny",
+     "nazwa": "Barszcz zwyczajny",
+     "nowe": 0,
+     "jezyki": [
+      "de",
+      "en",
+      "ru",
+      "uk"
+     ]
+    },
+    {
+     "id": "bez_czarny",
+     "nazwa": "Bez czarny",
+     "nowe": 0,
+     "jezyki": [
+      "de",
+      "en",
+      "ja",
+      "zh"
+     ]
+    },
+    {
+     "id": "bluszczyk_kurdybanek",
+     "nazwa": "Bluszczyk kurdybanek",
+     "nowe": 0,
+     "jezyki": [
+      "de",
+      "en",
+      "ja",
+      "uk"
+     ]
+    },
+    {
+     "id": "brzoza_brodawkowata",
+     "nazwa": "Brzoza brodawkowata",
+     "nowe": 0,
+     "jezyki": [
+      "de",
+      "en"
+     ]
+    },
+    {
+     "id": "chmiel_zwyczajny",
+     "nazwa": "Chmiel zwyczajny",
+     "nowe": 0,
+     "jezyki": [
+      "de",
+      "en",
+      "zh"
+     ]
+    },
+    {
+     "id": "czosnaczek_pospolity",
+     "nazwa": "Czosnaczek pospolity",
+     "nowe": 0,
+     "jezyki": [
+      "de",
+      "en"
+     ]
+    },
+    {
+     "id": "gwiazdnica_pospolita",
+     "nazwa": "Gwiazdnica pospolita",
+     "nowe": 0,
+     "jezyki": [
+      "de",
+      "en",
+      "ja",
+      "ru"
+     ]
+    },
+    {
+     "id": "indygowiec_barwierski",
+     "nazwa": "Indygowiec barwierski",
+     "nowe": 0,
+     "jezyki": [
+      "de",
+      "en",
+      "fr",
+      "ja"
+     ]
+    },
+    {
+     "id": "jastrzebiec_kosmaczek",
+     "nazwa": "Jastrzębiec kosmaczek",
+     "nowe": 0,
+     "jezyki": [
+      "de",
+      "en",
+      "fr"
+     ]
+    },
+    {
+     "id": "marzanna_barwierska",
+     "nazwa": "Marzanna barwierska",
+     "nowe": 0,
+     "jezyki": [
+      "de",
+      "en"
+     ]
+    },
+    {
+     "id": "mlecz_polny",
+     "nazwa": "Mlecz polny",
+     "nowe": 0,
+     "jezyki": [
+      "de",
+      "en"
+     ]
+    }
+   ],
+   "przepisy": []
+  },
+  {
    "data": "2026-10-15T09:53:22+02:00",
    "tytul": "Nowa wiedza o 2 roślinach",
    "opis": "Siedziba zebrała 36 sprawdzonych informacji (źródła: niemieckie, angielskie, japońskie, chińskie).",

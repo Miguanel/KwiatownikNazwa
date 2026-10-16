@@ -704,7 +704,7 @@
   },
   "rozmieszczenie": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-09",
+    "zaktualizowano": "2026-10-16",
     "jak": "llm:groq/qwen/qwen3.8-27b",
     "wejscie": "e3008e7571c109be",
     "wstawki": [
@@ -715,6 +715,17 @@
         "ikona": "ra-flower",
         "nowy": true,
         "punkty": [
+          {
+            "tekst": "Kwitnie od lipca do października, a kwiatostany mają 4-5 cm średnicy i mogą zawierać do 100 kwiatów.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1377"
+            ],
+            "sekcja": "opis",
+            "czesc": "kwiaty"
+          },
           {
             "tekst": "Owoce rośliny to ciemnobrunatne niełupki z puchiem kielichowym, które posiadają obustronnie pięć żeberek i są rozsiewane przez wiatr.",
             "zrodla": [
@@ -749,31 +760,11 @@
         ]
       },
       {
-        "miejsce": "cykl/biologia",
-        "rozdzial": "Cykl życia i ekosystem",
-        "tytul": "Kwitnienie, zapylanie i rozsiewanie",
-        "ikona": "ra-cycle",
+        "miejsce": "bezpieczenstwo/chwast",
+        "rozdzial": "Bezpieczeństwo i interakcje",
+        "tytul": "Chwast i inwazyjność",
+        "ikona": "ra-bleeding-eye",
         "nowy": true,
-        "punkty": [
-          {
-            "tekst": "Kwitnie od lipca do października, a kwiatostany mają 4-5 cm średnicy i mogą zawierać do 100 kwiatów.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s1377"
-            ],
-            "sekcja": "opis",
-            "czesc": "kwiaty"
-          }
-        ]
-      },
-      {
-        "miejsce": "tajemna/ciekawostki",
-        "rozdzial": "Wiedza tajemna",
-        "tytul": "Ciekawostki",
-        "ikona": "ra-emerald",
-        "nowy": false,
         "punkty": [
           {
             "tekst": "Badania wykazały, że w warunkach wzrostu stężenia dwutlenku węgla w atmosferze roślina ta wzrasta szybciej, co mogłoby sprzyjać poszerzaniu jej zasięgu i wypieraniu rodzimych gatunków.",

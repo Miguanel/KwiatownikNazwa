@@ -1685,8 +1685,8 @@
   },
   "rozmieszczenie": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-14",
-    "jak": "reguly",
+    "zaktualizowano": "2026-10-16",
+    "jak": "llm:groq/qwen/qwen3.8-27b",
     "wejscie": "3ad0eee5e4cd1f32",
     "wstawki": [
       {
@@ -1752,10 +1752,10 @@
         ]
       },
       {
-        "miejsce": "surowce/czesc:kwiaty",
-        "rozdzial": "Surowce i zbiory",
-        "tytul": "Kwiaty",
-        "ikona": "ra-potion",
+        "miejsce": "rozpoznawanie/budowa",
+        "rozdzial": "Rozpoznawanie w terenie",
+        "tytul": "Budowa: kwiaty, owoce i nasiona",
+        "ikona": "ra-flower",
         "nowy": true,
         "punkty": [
           {

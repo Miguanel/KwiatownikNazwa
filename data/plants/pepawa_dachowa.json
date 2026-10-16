@@ -989,30 +989,10 @@
   },
   "rozmieszczenie": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-09",
-    "jak": "llm:gemini/gemini-3.5-flash-lite",
+    "zaktualizowano": "2026-10-16",
+    "jak": "llm:groq/qwen/qwen3.8-27b",
     "wejscie": "be2507cfe5f787ab",
     "wstawki": [
-      {
-        "miejsce": "natura/wymagania",
-        "rozdzial": "Natura i siedlisko",
-        "tytul": "Wymagania siedliskowe",
-        "ikona": "ra-compass",
-        "nowy": false,
-        "punkty": [
-          {
-            "tekst": "Ziarna kiełkują w temperaturze 2–4 °C, przy optymalnej głębokości siewu 3–4 cm.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s1494"
-            ],
-            "sekcja": "uprawa",
-            "czesc": null
-          }
-        ]
-      },
       {
         "miejsce": "rozpoznawanie/budowa",
         "rozdzial": "Rozpoznawanie w terenie",
@@ -1053,17 +1033,6 @@
         "ikona": "ra-potion",
         "nowy": true,
         "punkty": [
-          {
-            "tekst": "Kwitnie od czerwca do września, wytwarzając liczne żółte kwiaty.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s1495"
-            ],
-            "sekcja": "czesci_rosliny",
-            "czesc": "kwiaty"
-          },
           {
             "tekst": "Jeśli surowiec zebrany zbyt późno, kwiaty pępawy dachowej (nazywanej tu skerdą dachową) podczas suszenia mogą przekształcić się w biały puch przypominający puch mniszka.",
             "zrodla": [
@@ -1118,12 +1087,43 @@
         ]
       },
       {
+        "miejsce": "zastosowanie/ogrod",
+        "rozdzial": "Praktyczne zastosowanie",
+        "tytul": "Ogród",
+        "ikona": "ra-pine-tree",
+        "nowy": false,
+        "punkty": [
+          {
+            "tekst": "Ziarna kiełkują w temperaturze 2–4 °C, przy optymalnej głębokości siewu 3–4 cm.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1494"
+            ],
+            "sekcja": "uprawa",
+            "czesc": null
+          }
+        ]
+      },
+      {
         "miejsce": "cykl/biologia",
         "rozdzial": "Cykl życia i ekosystem",
         "tytul": "Kwitnienie, zapylanie i rozsiewanie",
         "ikona": "ra-cycle",
         "nowy": true,
         "punkty": [
+          {
+            "tekst": "Kwitnie od czerwca do września, wytwarzając liczne żółte kwiaty.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1495"
+            ],
+            "sekcja": "czesci_rosliny",
+            "czesc": "kwiaty"
+          },
           {
             "tekst": "Kwiaty pępawy dachowej są zapylane przez owady takie jak muchówki, błonkówki czy motyle, a także mogą dochodzić do samopylności.",
             "zrodla": [
