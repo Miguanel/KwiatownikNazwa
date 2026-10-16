@@ -3,16 +3,16 @@
  "opis": "Kronika Siedziby Kwiatownika - pisze ja agent wdrozen (Siedziba).",
  "wpisy": [
   {
-   "data": "2026-10-16T10:36:20+02:00",
-   "tytul": "Nowa wiedza o 16 roślinach",
-   "opis": "Siedziba zebrała 14 sprawdzonych informacji (źródła: ?, niemieckie, angielskie, francuskie, japońskie). 69 informacji z sieci trafiło do właściwych rozdziałów i podrozdziałów stron roślin.",
+   "data": "2026-10-16T11:36:16+02:00",
+   "tytul": "Nowa wiedza o 12 roślinach",
+   "opis": "Siedziba zebrała 18 sprawdzonych informacji (źródła: ?, niemieckie, angielskie, francuskie, japońskie). 78 informacji z sieci trafiło do właściwych rozdziałów i podrozdziałów stron roślin.",
    "liczby": {
-    "informacje": 14,
+    "informacje": 18,
     "przepisy": 0,
-    "rosliny": 16,
+    "rosliny": 12,
     "nowe_rosliny": 0,
     "zdjecia": 0,
-    "rozmieszczone": 69
+    "rozmieszczone": 78
    },
    "rosliny": [
     {
@@ -24,6 +24,17 @@
       "de",
       "en",
       "ja"
+     ]
+    },
+    {
+     "id": "gwiazdnica_pospolita",
+     "nazwa": "Gwiazdnica pospolita",
+     "nowe": 4,
+     "jezyki": [
+      "de",
+      "en",
+      "ja",
+      "ru"
      ]
     },
     {
@@ -88,17 +99,6 @@
      ]
     },
     {
-     "id": "gwiazdnica_pospolita",
-     "nazwa": "Gwiazdnica pospolita",
-     "nowe": 0,
-     "jezyki": [
-      "de",
-      "en",
-      "ja",
-      "ru"
-     ]
-    },
-    {
      "id": "indygowiec_barwierski",
      "nazwa": "Indygowiec barwierski",
      "nowe": 0,
@@ -138,7 +138,12 @@
      ]
     }
    ],
-   "przepisy": []
+   "przepisy": [],
+   "aktualizacje": 2,
+   "godziny": [
+    "10:36",
+    "11:36"
+   ]
   },
   {
    "data": "2026-10-15T09:53:22+02:00",
