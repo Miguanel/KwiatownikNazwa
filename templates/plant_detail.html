@@ -494,6 +494,16 @@
     </div>
 </div>
 
+<!-- PRZYKLEJONA BELKA Z NAZWĄ: wysuwa się spod menu, gdy nagłówek z nazwą rośliny zniknie z ekranu -->
+<div class="kw-plant-bar" id="kwPlantBar" aria-hidden="true">
+    <div class="kw-plant-bar-inner">
+        <button type="button" class="kw-plant-bar-name" data-kw-top tabindex="-1" title="Wróć na górę strony">
+            <span class="kw-plant-bar-pl">{{ plant.nazwa_pl }}</span>{% if plant.nazwa_lat %}<span class="kw-plant-bar-lat">{{ plant.nazwa_lat }}</span>{% endif %}
+        </button>
+        <button type="button" class="kw-plant-bar-top" data-kw-top tabindex="-1" aria-label="Na górę strony" title="Na górę strony">&#8593;</button>
+    </div>
+</div>
+
 <style>
     /* =====================================================================
        STRONA ROŚLINY – jasno, „encyklopedycznie” (jak Wikipedia), z celtyckim zdobieniem:
@@ -747,6 +757,66 @@
     }
     @media (max-width: 600px) { .web-summary { padding: 6px 8px; } .web-facts { padding-left: 14px; } }
     @media (prefers-reduced-motion: reduce) { .tab-content, .subtab-content { animation: none; } }
+
+   /* PRZYKLEJONA BELKA Z NAZWĄ ROŚLINY (pod stałym menu; top = wysokość menu ustawiana skryptem) */
+    .kw-plant-bar {
+        position: fixed; left: 0; right: 0; top: var(--kw-header-h, 110px); z-index: 999;
+        background: #fdfaf0; border-bottom: 1px solid #d8cfb4;
+        box-shadow: 0 4px 10px rgba(62, 74, 61, 0.12);
+        transform: translateY(-100%); visibility: hidden;
+        transition: transform .28s ease, visibility 0s linear .28s;
+    }
+    .kw-plant-bar.on { transform: translateY(0); visibility: visible; transition: transform .28s ease, visibility 0s; }
+
+    .kw-plant-bar-inner {
+        max-width: 1000px; margin: 0 auto; padding: 6px 16px;
+        display: flex; align-items: center;
+        position: relative; /* Kluczowe: punkt odniesienia dla wyśrodkowanej nazwy */
+    }
+
+    .kw-plant-bar-name {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%); /* Precyzyjne wyśrodkowanie na środku */
+        max-width: calc(100% - 90px); /* Zabezpieczenie przed nachodzeniem na przycisk po prawej */
+        display: flex; align-items: baseline; gap: 10px; padding: 0; border: 0; background: none;
+        text-align: left; cursor: pointer; color: inherit; overflow: hidden;
+    }
+
+    .kw-plant-bar-pl {
+        font-family: 'Playfair Display', Georgia, serif; font-size: 1.25rem; color: #3e4a3d;
+        overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex-shrink: 0; max-width: 100%;
+    }
+
+    .kw-plant-bar-lat {
+        font-family: Georgia, 'Crimson Text', serif; font-style: italic; font-size: 0.95rem; color: #6b6255;
+        overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0;
+    }
+
+    .kw-plant-bar-top {
+        margin-left: auto; /* Wypycha przycisk strzałki całkowicie na prawą stronę */
+        flex: none; width: 32px; height: 32px; border-radius: 50%; border: 1px solid #d8cfb4; background: #fffdf7;
+        color: #3e4a3d; font-size: 1rem; line-height: 1; cursor: pointer; z-index: 1;
+    }
+    .kw-plant-bar-top:hover, .kw-plant-bar-top:focus-visible { border-color: #9a7b2f; color: #9a7b2f; }
+
+    /* Motyw nocny */
+    html[data-theme="night"] .kw-plant-bar { background: #141712; border-bottom-color: #2c2a1f; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6); }
+    html[data-theme="night"] .kw-plant-bar-pl { color: #e2cf9a; }
+    html[data-theme="night"] .kw-plant-bar-lat { color: #b3aa93; }
+    html[data-theme="night"] .kw-plant-bar-top { background: #22261d; border-color: #3b3829; color: #e2cf9a; }
+
+    /* Responsywność */
+    @media (max-width: 600px) {
+        .kw-plant-bar-inner { padding: 5px 12px; }
+        .kw-plant-bar-name { max-width: calc(100% - 70px); }
+        .kw-plant-bar-pl { font-size: 1.05rem; }
+        .kw-plant-bar-lat { font-size: 0.82rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .kw-plant-bar, .kw-plant-bar.on { transition: none; }
+    }
 </style>
 
 <script>
@@ -828,6 +898,34 @@
             sum.appendChild(b);
             sum.classList.add('kw-has-count');
         });
+    })();
+    /* PRZYKLEJONA BELKA Z NAZWĄ: pokazuje się, gdy dół tytułu schowa się pod stałym menu */
+    (function () {
+        const bar = document.getElementById('kwPlantBar');
+        const title = document.querySelector('.grimmoire-hero .hero-title');
+        const header = document.querySelector('.main-header');
+        if (!bar || !title) return;
+        let shown = false, ticking = false;
+        function update() {
+            ticking = false;
+            const h = header ? header.offsetHeight : 0;
+            bar.style.setProperty('--kw-header-h', h + 'px');
+            const on = title.getBoundingClientRect().bottom < h;
+            if (on === shown) return;
+            shown = on;
+            bar.classList.toggle('on', on);
+            bar.setAttribute('aria-hidden', on ? 'false' : 'true');
+            bar.querySelectorAll('button').forEach(b => b.tabIndex = on ? 0 : -1);
+        }
+        function req() { if (!ticking) { ticking = true; requestAnimationFrame(update); } }
+        window.addEventListener('scroll', req, { passive: true });
+        window.addEventListener('resize', req);
+        if (header && window.ResizeObserver) new ResizeObserver(req).observe(header);
+        bar.querySelectorAll('[data-kw-top]').forEach(b => b.addEventListener('click', () => {
+            const smooth = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            window.scrollTo({ top: 0, behavior: smooth ? 'smooth' : 'auto' });
+        }));
+        update();
     })();
 </script>
 {% endblock %}
