@@ -3,6 +3,53 @@
  "opis": "Kronika Siedziby Kwiatownika - pisze ja agent wdrozen (Siedziba).",
  "wpisy": [
   {
+   "data": "2026-10-21T11:53:28+02:00",
+   "tytul": "Nowa wiedza o 2 roślinach i 3 nowe przepisy",
+   "opis": "Siedziba zebrała 53 sprawdzone informacje (źródła: ?, niemieckie, japońskie).",
+   "liczby": {
+    "informacje": 53,
+    "przepisy": 3,
+    "rosliny": 2,
+    "nowe_rosliny": 0,
+    "zdjecia": 0,
+    "rozmieszczone": 0
+   },
+   "rosliny": [
+    {
+     "id": "poziomka",
+     "nazwa": "Poziomka pospolita",
+     "nowe": 29,
+     "jezyki": [
+      "ja"
+     ]
+    },
+    {
+     "id": "piolun",
+     "nazwa": "Bylica piołun",
+     "nowe": 24,
+     "jezyki": [
+      "?",
+      "de",
+      "ja"
+     ]
+    }
+   ],
+   "przepisy": [
+    {
+     "tytul": "Mieszanka złotarskiego miodu karpackiego z czarną porzeczką – na choroby wątroby",
+     "zrodlo": "karpaty-ua.org.ua"
+    },
+    {
+     "tytul": "Celery Wine Tincture",
+     "zrodlo": "piwniczkachomika.pl"
+    },
+    {
+     "tytul": "Nalewka z czarnego bzu",
+     "zrodlo": "piwniczkachomika.pl"
+    }
+   ]
+  },
+  {
    "data": "2026-10-16T11:36:16+02:00",
    "tytul": "Nowa wiedza o 12 roślinach",
    "opis": "Siedziba zebrała 18 sprawdzonych informacji (źródła: ?, niemieckie, angielskie, francuskie, japońskie). 78 informacji z sieci trafiło do właściwych rozdziałów i podrozdziałów stron roślin.",

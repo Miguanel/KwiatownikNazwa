@@ -112,7 +112,7 @@
     "Rycina": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Fragaria_vesca_Sturm21.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-14",
+    "zaktualizowano": "2026-10-16",
     "w_url": true,
     "zdjecia": [
       {
@@ -164,9 +164,9 @@
   },
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-10-14",
-    "uporzadkowano": "2026-10-14",
-    "uklad": "deterministyczny: nieznana sekcja czas",
+    "zaktualizowano": "2026-10-16",
+    "uporzadkowano": "2026-10-16",
+    "uklad": "deterministyczny: pominiete informacje: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",
     "zrodla": [
       {
         "nazwa": "Wikipedia (pl): Poziomka pospolita",
@@ -195,6 +195,13 @@
         "jezyk": "zh",
         "typ": "wikipedia",
         "nr": 4
+      },
+      {
+        "nazwa": "namikiherb.com",
+        "url": "https://namikiherb.com/autonomic-nervous-system-and-herbal-tea/",
+        "jezyk": "ja",
+        "typ": "strona",
+        "nr": 5
       }
     ],
     "sekcje": [
@@ -204,6 +211,36 @@
         "podsumowanie": null,
         "podsumowanie_zrodla": [],
         "punkty": [
+          {
+            "tekst": "Poziomka kwitnie w maju i czerwcu, a czasem ponownie w okresie jesiennym.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1919"
+            ]
+          },
+          {
+            "tekst": "Kwiaty poziomki pospolitej są miękkie, białe i pokryte włoskami, rosną na cienkiej, zielonej szponie.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1603"
+            ]
+          },
+          {
+            "tekst": "Liście są trzylistne, lekko zielone, z zębato-ścierkowatymi brzegami.",
+            "czesc": "liście",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1604"
+            ]
+          },
           {
             "tekst": "Owoc poziomki utrzymuje się średnio przez 1,2 dnia, co prawdopodobnie stanowi najkrótszy czas trwania wśród mięsistych owoców w Europie.",
             "czesc": "owoce",
@@ -230,6 +267,46 @@
             ],
             "fakty": [
               "s947"
+            ]
+          },
+          {
+            "tekst": "Gatunek występuje dziko w całej Europie, Azji (z wyjątkiem wschodniej i południowej części) oraz Ameryce Północnej, a w Polsce jest pospolity na całym obszarze kraju.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1575"
+            ]
+          },
+          {
+            "tekst": "W górach gatunek ten występuje nawet do piętra kosówki, a w Tatrach można go spotkać na wysokości do 1710 metrów n.p.m.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1583"
+            ]
+          },
+          {
+            "tekst": "Roslina występuje w miejscach takich jak ścieżki, drogi, zbocza, łąki, młode lasy, rzadkie lasy, krawędzie lasów i otwarte miejsca.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1605"
+            ]
+          },
+          {
+            "tekst": "W południowych rejonach swojego występowania poziomka pospolita rośnie wyłącznie w miejscach ocienionych, natomiast w północnej części zasięgu dobrze znosi większe nasłonecznienie.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1828"
             ]
           },
           {
@@ -279,6 +356,26 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
+            "tekst": "Młode liście stanowią surowiec zielarski i zawierają flawonoidy, kwasy organiczne, olejki eteryczne oraz witaminy.",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1578"
+            ]
+          },
+          {
+            "tekst": "Liście poziomki zawierają skoncentrowane taniny (gminy elagiowane), takie jak peduncuagina i agrymonina, a także flawonoidy i leukoantocyjany, przy czym kwas askorbinowy i olejki eteryczne występują w śladowych ilościach.",
+            "czesc": "liście",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1610"
+            ]
+          },
+          {
             "tekst": "Dojrzałe owoce zawierają kwasy organiczne, węglowodany, mnóstwo witaminy C oraz witaminy A, B1, B2, B6, E, H i PP, a także sole mineralne wapnia, fosforu, kobaltu i żelaza.",
             "czesc": "owoce",
             "zrodla": [
@@ -286,6 +383,16 @@
             ],
             "fakty": [
               "s949"
+            ]
+          },
+          {
+            "tekst": "W 100 gramach owoców znajduje się 60 mg witaminy C oraz znane ilości kwasów organicznych, takich jak kwas asparaginowy (212 mg) i glutaminowy (132 mg).",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1580"
             ]
           }
         ]
@@ -307,6 +414,26 @@
             ]
           },
           {
+            "tekst": "Liście mają działanie ściągające, słabo moczopędne i wzmacniające, dlatego stosuje się je przy schorzeniach układu moczowego, nerek i żołądkowych (zwłaszcza z biegunką).",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1579"
+            ]
+          },
+          {
+            "tekst": "Ze względu na zawartość garbników, liście stosowano tradycyjnie jako środek leczniczy na biegunki, a młodsze liście wykorzystywano jako zamiennik herbaty czarnej.",
+            "czesc": "liście",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1612"
+            ]
+          },
+          {
             "tekst": "Dziko rosnące i uprawiane owoce są zbierane na małą skalę komercyjnie dla smakoszy oraz jako składnik dżemów, sosów, likierów, kosmetyków i medycyny alternatywnej.",
             "czesc": "owoce",
             "zrodla": [
@@ -314,6 +441,34 @@
             ],
             "fakty": [
               "s954"
+            ]
+          },
+          {
+            "tekst": "W średniowieczu i później ziele poziomki bywało stosowane w medycynie, między innymi jako lek do leczenia ran.",
+            "czesc": "ziele",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1613"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "barwienie",
+        "tytul": "Barwienie i rzemiosło",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Zielone drobne nasiona znajdujące się na owocach zawierają substancję gorzką, która uwidacznia się dopiero po kilku minutach gotowania, przez co dżemy przygotowane wyłącznie z poziomek leśnych mogą mieć gorzki smak.",
+            "czesc": "owoce",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1614"
             ]
           }
         ]
@@ -335,6 +490,26 @@
             ]
           },
           {
+            "tekst": "Roślina uprawiana jest w Europie od co najmniej XV wieku. Duży wpływ na powstanie odmian uprawnych miały odkrycia w Alpach odmiany bezrozłogowej i powtarzającej kwitnienie.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1576"
+            ]
+          },
+          {
+            "tekst": "Botaniczna nazwa gatunkowa 'vesca' pochodzi od łacińskiego 'vescere', co oznacza 'spożywać', co odzwierciedla długą historię uprawy tej rośliny jako pożywnej.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1609"
+            ]
+          },
+          {
             "tekst": "Archeologiczne dowody wskazują, że poziomka pospolita była spożywana przez ludzi już od epoki kamienia.",
             "czesc": null,
             "zrodla": [
@@ -342,6 +517,16 @@
             ],
             "fakty": [
               "s953"
+            ]
+          },
+          {
+            "tekst": "Niemiecka odmiana 'Rügen', wyhodowana w zamku Putbus i wprowadzona do obrotu w 1920 roku, uznawana jest za pierwszą nowoczesną odmianę bezrozłogową, powtarzającą owocowanie i o dużych owocach.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1834"
             ]
           },
           {
@@ -363,6 +548,26 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
+            "tekst": "Poziomka pojawia się w sztuce renesansowej, m.in. na obrazie „Madonna z poziomką” z XIV/XV wieku (obecnie w Muzeum Narodowym w Krakowie), na którym Matka Boska trzyma gałązkę z kwiatem i owocem.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1581"
+            ]
+          },
+          {
+            "tekst": "W legendach ludowych mówi się, że Matka Boska raz w roku zstępuje z raju na ziemię, aby zbierać poziomki dla dzieci, które zmarły i obecnie przebywają w raju.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1615"
+            ]
+          },
+          {
             "tekst": "W sztuce chrześcijańskiej poziomka była uważana za symbol praworządności oraz towarzyszyła wizerunkom Maryi na średniowiecznych obrazach tablicowych jako alegoria pobożnych myśli.",
             "czesc": "kwiaty",
             "zrodla": [
@@ -370,6 +575,16 @@
             ],
             "fakty": [
               "s962"
+            ]
+          },
+          {
+            "tekst": "W średniowiecznym malarze chrześcijańskim poziomka, czyniła owoców i kwiatów jednocześnie oraz nie posiadająca cierni, stawała się symbolem pobożności i towarzyszyła Maryi, a także symbolem żyzności i rozkoszy świata.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1616"
             ]
           },
           {
@@ -399,6 +614,16 @@
             "fakty": [
               "s946"
             ]
+          },
+          {
+            "tekst": "Poziomce pospolitej nadawano w Polsce zwyczajowe nazwy: czerwona jagoda oraz koziomka.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1574"
+            ]
           }
         ]
       },
@@ -409,6 +634,16 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
+            "tekst": "Osoby przyjmujące leki lub będące pod opieką lekarza powinny przed użyciem poziomki skonsultować się z lekarzem.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s1836"
+            ]
+          },
+          {
             "tekst": "Zielone ziarna na owocach zawierają substancję gorzką, która uwalnia się dopiero po kilku minutach gotowania, przez co dżem z samych poziomek może smakować gorzkawo.",
             "czesc": "owoce",
             "zrodla": [
@@ -416,6 +651,16 @@
             ],
             "fakty": [
               "s961"
+            ]
+          },
+          {
+            "tekst": "Ekstrakt aromatyczny owoców może zawierać około 80 różnych substancji chemicznych, w tym estery kwasów tłuszczowych oraz alkohole wyższe.",
+            "czesc": "owoce",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1611"
             ]
           }
         ]
@@ -426,6 +671,16 @@
         "podsumowanie": null,
         "podsumowanie_zrodla": [],
         "punkty": [
+          {
+            "tekst": "W uprawie ogrodowej rośliny po kilku latach stopniowo tracą witalność na skutek wyczerpującego, intensywnego kwitnienia i owocowania, a ostatecznie zamierają z powodu infekcji wirusowych.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1832"
+            ]
+          },
           {
             "tekst": "Roślina ta potrafi wytrzymać średniej intensywności pożary i szybko odrasta po ich ustąpieniu.",
             "czesc": null,
@@ -465,6 +720,16 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
+            "tekst": "Roślina kwitnie w maju i czerwniu, czasem powtórnie jesienią; zapylanie odbywa się za sprawą owadów.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1582"
+            ]
+          },
+          {
             "tekst": "Poziomka pospolita służy jako roślina wskaźnikowa chorób porażających truskawki ogrodowe oraz jako modelowy organizm genetyczny dla rodziny różowatych.",
             "czesc": null,
             "zrodla": [
@@ -475,6 +740,36 @@
             ]
           },
           {
+            "tekst": "Skrzyżowanie poziomki pospolitej z truskawką dało mieszańca zwanego Fragaria × vescana, natomiast historyczne hybrydy z poziomką twardawą (Fragaria viridis) uprawiano do około 1850 roku, po czym zostały utracone.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1829"
+            ]
+          },
+          {
+            "tekst": "Liście poziomki pospolitej są pożywieniem dla gąsienic motyla zwanego powszelatkiem malwowym (Pyrgus malvae).",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1830"
+            ]
+          },
+          {
+            "tekst": "Wśród rzadkich odmian kolekcjonerskich spotyka się mutację 'Monophylla' o liściach pojedynczych zamiast trójlistkowych oraz 'Muricata', której kwiaty i owoce mają najeżony wygląd z powodu licznych, zielonych podkwiatków.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1831"
+            ]
+          },
+          {
             "tekst": "W Turcji co roku zbiera się i wykorzystuje setki ton dzikich poziomek.",
             "czesc": null,
             "zrodla": [
@@ -482,6 +777,16 @@
             ],
             "fakty": [
               "s968"
+            ]
+          },
+          {
+            "tekst": "Właściwości lecznicze mają jedynie liście poziomek rosnących dziko; odmiany ogrodowe ich nie posiadają.",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1577"
             ]
           },
           {
@@ -498,26 +803,39 @@
       }
     ],
     "czesci": {
+      "kwiaty": [
+        "s1919",
+        "s1603",
+        "s962",
+        "s1616"
+      ],
+      "liście": [
+        "s1604",
+        "s950",
+        "s1578",
+        "s1610",
+        "s951",
+        "s1579",
+        "s1612",
+        "s1577",
+        "s966"
+      ],
       "owoce": [
         "s956",
         "s949",
+        "s1580",
         "s954",
+        "s1614",
         "s959",
         "s961",
+        "s1611",
         "s970"
       ],
       "korzeń": [
         "s972"
       ],
-      "liście": [
-        "s950",
-        "s951",
-        "s966"
-      ],
-      "kwiaty": [
-        "s962"
-      ],
       "ziele": [
+        "s1613",
         "s971"
       ]
     },
@@ -773,13 +1091,420 @@
           "url": "https://zh.wikipedia.org/wiki/%E9%87%8E%E8%8D%89%E8%8E%93"
         },
         "cytat": "其根、莖及花均能作為沖泡花茶的材料。"
+      },
+      {
+        "id": "s1574",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "Poziomce pospolitej nadawano w Polsce zwyczajowe nazwy: czerwona jagoda oraz koziomka.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Poziomka pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Poziomka_pospolita"
+        },
+        "cytat": "Inne zwyczajowe nazwy: czerwona jagoda, koziomka."
+      },
+      {
+        "id": "s1575",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Gatunek występuje dziko w całej Europie, Azji (z wyjątkiem wschodniej i południowej części) oraz Ameryce Północnej, a w Polsce jest pospolity na całym obszarze kraju.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Poziomka pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Poziomka_pospolita"
+        },
+        "cytat": "Rośnie dziko w całej Europie, niemal w całej Ameryce Północnej oraz w Azji (z wyjątkiem wschodniej i południowej jej części). W Polsce gatunek jest pospolity na całym obszarze."
+      },
+      {
+        "id": "s1576",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Roślina uprawiana jest w Europie od co najmniej XV wieku. Duży wpływ na powstanie odmian uprawnych miały odkrycia w Alpach odmiany bezrozłogowej i powtarzającej kwitnienie.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Poziomka pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Poziomka_pospolita"
+        },
+        "cytat": "Jest uprawiana w Europie od co najmniej XV wieku. Istotny wpływ dla uzyskania wartościowych odmian uprawnych miały niezależne od siebie odkrycia w Alpach odmian bezrozłogowej (var. eflagellis) i powtarzającej kwitnienie (var. semperflorens)"
+      },
+      {
+        "id": "s1577",
+        "sekcja": "ciekawostki",
+        "czesc": "liście",
+        "tekst": "Właściwości lecznicze mają jedynie liście poziomek rosnących dziko; odmiany ogrodowe ich nie posiadają.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Poziomka pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Poziomka_pospolita"
+        },
+        "cytat": "Własności lecznicze mają jednak tylko liście z poziomek dziko rosnących – nie mają ich uprawiane odmiany ogrodowe."
+      },
+      {
+        "id": "s1578",
+        "sekcja": "sklad",
+        "czesc": "liście",
+        "tekst": "Młode liście stanowią surowiec zielarski i zawierają flawonoidy, kwasy organiczne, olejki eteryczne oraz witaminy.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Poziomka pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Poziomka_pospolita"
+        },
+        "cytat": "Surowiec zielarski – młode liście (Folium Fragariae). Zawierają flawonoidy, kwasy organiczne, olejki eteryczne, witaminy i inne substancje."
+      },
+      {
+        "id": "s1579",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "liście",
+        "tekst": "Liście mają działanie ściągające, słabo moczopędne i wzmacniające, dlatego stosuje się je przy schorzeniach układu moczowego, nerek i żołądkowych (zwłaszcza z biegunką).",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Poziomka pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Poziomka_pospolita"
+        },
+        "cytat": "Działanie – ściągające, słabo moczopędne i ogólnie wzmacniające organizm. Stosuje się przy niektórych schorzeniach układu moczowego, nerek i schorzeniach żołądkowych związanych z biegunką."
+      },
+      {
+        "id": "s1580",
+        "sekcja": "sklad",
+        "czesc": "owoce",
+        "tekst": "W 100 gramach owoców znajduje się 60 mg witaminy C oraz znane ilości kwasów organicznych, takich jak kwas asparaginowy (212 mg) i glutaminowy (132 mg).",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Poziomka pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Poziomka_pospolita"
+        },
+        "cytat": "W 100 g poziomek znajduje się 60 mg witaminy C, 212 mg kwasu asparaginowego i 132 mg kwasu glutaminowego."
+      },
+      {
+        "id": "s1581",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "Poziomka pojawia się w sztuce renesansowej, m.in. na obrazie „Madonna z poziomką” z XIV/XV wieku (obecnie w Muzeum Narodowym w Krakowie), na którym Matka Boska trzyma gałązkę z kwiatem i owocem.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Poziomka pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Poziomka_pospolita"
+        },
+        "cytat": "Gałązkę poziomki, z kwiatem i owocem, trzyma w dłoni „Madonna z poziomką” – przedstawienie Matki Boskiej z Dzieciątkiem na kolanach na obrazie (2 poł. XV w.)"
+      },
+      {
+        "id": "s1582",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Roślina kwitnie w maju i czerwniu, czasem powtórnie jesienią; zapylanie odbywa się za sprawą owadów.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Poziomka pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Poziomka_pospolita"
+        },
+        "cytat": "Kwitnie w maju i czerwcu, czasem też powtórnie jesienią. Kwiaty zapylane są przez owady."
+      },
+      {
+        "id": "s1583",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "W górach gatunek ten występuje nawet do piętra kosówki, a w Tatrach można go spotkać na wysokości do 1710 metrów n.p.m.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Poziomka pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Poziomka_pospolita"
+        },
+        "cytat": "W górach występuje do piętra kosówki (w Tatrach do 1710 m n.p.m.)."
+      },
+      {
+        "id": "s1603",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Kwiaty poziomki pospolitej są miękkie, białe i pokryte włoskami, rosną na cienkiej, zielonej szponie.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Fragaria vesca",
+          "url": "https://en.wikipedia.org/wiki/Fragaria_vesca"
+        },
+        "cytat": "Five to eleven soft, hairy white flowers are borne on a green, soft fresh-hairy 3–15 centimetres (1–6 in) stalk that usually lifts them above the leaves."
+      },
+      {
+        "id": "s1604",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Liście są trzylistne, lekko zielone, z zębato-ścierkowatymi brzegami.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Fragaria vesca",
+          "url": "https://en.wikipedia.org/wiki/Fragaria_vesca"
+        },
+        "cytat": "The light-green leaves are trifoliate (in threes) with toothed margins."
+      },
+      {
+        "id": "s1605",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Roslina występuje w miejscach takich jak ścieżki, drogi, zbocza, łąki, młode lasy, rzadkie lasy, krawędzie lasów i otwarte miejsca.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Fragaria vesca",
+          "url": "https://en.wikipedia.org/wiki/Fragaria_vesca"
+        },
+        "cytat": "Typical habitat is along trails and roadsides, embankments, hillsides, stone- and gravel-laid paths and roads, meadows, young woodlands, sparse forest, woodland edges, and clearings."
+      },
+      {
+        "id": "s1609",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Botaniczna nazwa gatunkowa 'vesca' pochodzi od łacińskiego 'vescere', co oznacza 'spożywać', co odzwierciedla długą historię uprawy tej rośliny jako pożywnej.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Wald-Erdbeere",
+          "url": "https://de.wikipedia.org/wiki/Wald-Erdbeere"
+        },
+        "cytat": "Die Wald-Erdbeere dient dem Menschen schon lange als Nahrung, wie auch die botanische Artbezeichnung ausdrückt (vesca ‚essbar‘ von vescere ‚verzehren‘)."
+      },
+      {
+        "id": "s1610",
+        "sekcja": "sklad",
+        "czesc": "liście",
+        "tekst": "Liście poziomki zawierają skoncentrowane taniny (gminy elagiowane), takie jak peduncuagina i agrymonina, a także flawonoidy i leukoantocyjany, przy czym kwas askorbinowy i olejki eteryczne występują w śladowych ilościach.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Wald-Erdbeere",
+          "url": "https://de.wikipedia.org/wiki/Wald-Erdbeere"
+        },
+        "cytat": "Erdbeerblätter enthalten kondensierte Gerbstoffe, Ellagitannine wie Peduncluagin und Agrimoniin, sowie Flavonoide und Leukoanthocyane. Ascorbinsäure ist nur in geringen Mengen und ätherisches Öl nur in sehr geringen Mengen vorhanden."
+      },
+      {
+        "id": "s1611",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "owoce",
+        "tekst": "Ekstrakt aromatyczny owoców może zawierać około 80 różnych substancji chemicznych, w tym estery kwasów tłuszczowych oraz alkohole wyższe.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Wald-Erdbeere",
+          "url": "https://de.wikipedia.org/wiki/Wald-Erdbeere"
+        },
+        "cytat": "Im Aromaextrakt können rund 80 chemische Substanzen, wie Buttersäureethylester, Essigsäurebutylester, Essigsäurehexylester, Essigsäureoctylester, Essigsäuredecylester, Essigsäurebenzylester, Caprylsäureethylester, Caprinsäuremethylester, Ca"
+      },
+      {
+        "id": "s1612",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "liście",
+        "tekst": "Ze względu na zawartość garbników, liście stosowano tradycyjnie jako środek leczniczy na biegunki, a młodsze liście wykorzystywano jako zamiennik herbaty czarnej.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Wald-Erdbeere",
+          "url": "https://de.wikipedia.org/wiki/Wald-Erdbeere"
+        },
+        "cytat": "Aufgrund des Gerbstoffgehaltes werden Erdbeerblätter als Heilmittel bei Durchfall verwendet. Die jüngeren Erdbeerblätter werden auch als Ersatz für Schwarzen Tee verwendet."
+      },
+      {
+        "id": "s1613",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "ziele",
+        "tekst": "W średniowieczu i później ziele poziomki bywało stosowane w medycynie, między innymi jako lek do leczenia ran.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Wald-Erdbeere",
+          "url": "https://de.wikipedia.org/wiki/Wald-Erdbeere"
+        },
+        "cytat": "Im Mittelalter und darüber hinaus fand insbesondere das Kraut der Wald-Erdbeere, das Erdbeerkraut (mittelhochdeutsch erperkchrawt und ähnlich), gelegentlich medizinische Anwendung, unter anderem als Arzneimittel zur Wundbehandlung."
+      },
+      {
+        "id": "s1614",
+        "sekcja": "barwienie",
+        "czesc": "owoce",
+        "tekst": "Zielone drobne nasiona znajdujące się na owocach zawierają substancję gorzką, która uwidacznia się dopiero po kilku minutach gotowania, przez co dżemy przygotowane wyłącznie z poziomek leśnych mogą mieć gorzki smak.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Wald-Erdbeere",
+          "url": "https://de.wikipedia.org/wiki/Wald-Erdbeere"
+        },
+        "cytat": "Die grünen Kernchen der Früchte enthalten einen Bitterstoff, der erst nach ein paar Minuten beim Kochen zum Vorschein kommt. Konfitüre ausschließlich aus Walderdbeeren kann dadurch bitter schmecken."
+      },
+      {
+        "id": "s1615",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "W legendach ludowych mówi się, że Matka Boska raz w roku zstępuje z raju na ziemię, aby zbierać poziomki dla dzieci, które zmarły i obecnie przebywają w raju.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Wald-Erdbeere",
+          "url": "https://de.wikipedia.org/wiki/Wald-Erdbeere"
+        },
+        "cytat": "Einer Legende zufolge soll die Gottesmutter Maria einmal im Jahr vom Paradies auf die Erde herabsteigen, um dort Erdbeeren für die verstorbenen und nun im Paradies lebenden Kinder zu sammeln."
+      },
+      {
+        "id": "s1616",
+        "sekcja": "kultura",
+        "czesc": "kwiaty",
+        "tekst": "W średniowiecznym malarze chrześcijańskim poziomka, czyniła owoców i kwiatów jednocześnie oraz nie posiadająca cierni, stawała się symbolem pobożności i towarzyszyła Maryi, a także symbolem żyzności i rozkoszy świata.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Wald-Erdbeere",
+          "url": "https://de.wikipedia.org/wiki/Wald-Erdbeere"
+        },
+        "cytat": "Das Christentum hat der Wald-Erdbeere eine zweite Bedeutung beigemessen. Sie ist die Pflanze mit den rosenförmigen Blüten, die keine Dornen ausbildet, deren Beeren ohne Kern und Schale sind, die gleichzeitig fruchtet und blüht. Sie wurde da"
+      },
+      {
+        "id": "s1828",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "W południowych rejonach swojego występowania poziomka pospolita rośnie wyłącznie w miejscach ocienionych, natomiast w północnej części zasięgu dobrze znosi większe nasłonecznienie.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Fragaria vesca",
+          "url": "https://en.wikipedia.org/wiki/Fragaria_vesca"
+        },
+        "cytat": "In the southern part of its range, it can grow only in shady areas; further north it tolerates more sun."
+      },
+      {
+        "id": "s1829",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Skrzyżowanie poziomki pospolitej z truskawką dało mieszańca zwanego Fragaria × vescana, natomiast historyczne hybrydy z poziomką twardawą (Fragaria viridis) uprawiano do około 1850 roku, po czym zostały utracone.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Fragaria vesca",
+          "url": "https://en.wikipedia.org/wiki/Fragaria_vesca"
+        },
+        "cytat": "Hybrids, Fragaria × vescana, have been created from crosses between woodland strawberry and garden strawberry. Hybrids between the woodland strawberry and the European species Fragaria viridis were in cultivation until around 1850, but are "
+      },
+      {
+        "id": "s1830",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Liście poziomki pospolitej są pożywieniem dla gąsienic motyla zwanego powszelatkiem malwowym (Pyrgus malvae).",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Fragaria vesca",
+          "url": "https://en.wikipedia.org/wiki/Fragaria_vesca"
+        },
+        "cytat": "It is a larval host to the two-banded checkered skipper."
+      },
+      {
+        "id": "s1831",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Wśród rzadkich odmian kolekcjonerskich spotyka się mutację 'Monophylla' o liściach pojedynczych zamiast trójlistkowych oraz 'Muricata', której kwiaty i owoce mają najeżony wygląd z powodu licznych, zielonych podkwiatków.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Fragaria vesca",
+          "url": "https://en.wikipedia.org/wiki/Fragaria_vesca"
+        },
+        "cytat": "Monophylla (“Strawberry of Versailles”; has one large leaflet instead of the normal three leaflets) [...] Muricata (“Plymouth strawberry”; the flowers are composed of numerous small, leafy bracts; the fruit are similarly spiky)."
+      },
+      {
+        "id": "s1832",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "W uprawie ogrodowej rośliny po kilku latach stopniowo tracą witalność na skutek wyczerpującego, intensywnego kwitnienia i owocowania, a ostatecznie zamierają z powodu infekcji wirusowych.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Fragaria vesca",
+          "url": "https://en.wikipedia.org/wiki/Fragaria_vesca"
+        },
+        "cytat": "Plants tend to lose vigour after a few years due to their abundant fruiting and flowering with final decline caused by viral diseases."
+      },
+      {
+        "id": "s1834",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Niemiecka odmiana 'Rügen', wyhodowana w zamku Putbus i wprowadzona do obrotu w 1920 roku, uznawana jest za pierwszą nowoczesną odmianę bezrozłogową, powtarzającą owocowanie i o dużych owocach.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Fragaria vesca",
+          "url": "https://en.wikipedia.org/wiki/Fragaria_vesca"
+        },
+        "cytat": "Rügen, the first modern cultivar, i.e., runnerless, everbearing and large fruited — originating from Castle Putbus in Germany, first offered 1920 by the strawberry grower Emil Spangenberg from Morsleben."
+      },
+      {
+        "id": "s1836",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Osoby przyjmujące leki lub będące pod opieką lekarza powinny przed użyciem poziomki skonsultować się z lekarzem.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "namikiherb.com",
+          "url": "https://namikiherb.com/autonomic-nervous-system-and-herbal-tea/"
+        },
+        "cytat": "現在、お薬を服用中の方（サプリメントを含む）や、医者に通院されている方は、医師にご相談の上でご使用ください。"
+      },
+      {
+        "id": "s1919",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Poziomka kwitnie w maju i czerwcu, a czasem ponownie w okresie jesiennym.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Poziomka pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Poziomka_pospolita"
+        },
+        "cytat": "Kwitnie w maju i czerwcu, czasem też powtórnie jesienią."
       }
     ]
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-14",
+    "zaktualizowano": "2026-10-16",
     "pola": {
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Mała, wieloletnia bylina leśna tworząca liczne rozłogi. Słynie z niepowtarzalnego aromatu owoców, ale w zielarstwie jej liście są cenione wyżej niż owoce jako jeden z najbezpieczniejszych i najskuteczniejszych środków oczyszczających drogi moczowe i krew.",
+        "tresc": [
+          {
+            "tekst": "Poziomka pospolita (Fragaria vescea) to mała, wieloletnia bylina leśna, tworząca liczne rozłogi, słynąca z niepowtarzalnego aromatu owoców, ale w zielarstwie jej liście są cenione wyżej niż owoce jako jeden z najbezpieczniejszych i najskuteczniejszych środków oczyszczających drogi moczowe i krew.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Poziomka kwitnie w maju i czerwcu, a czasem ponownie w okresie jesiennym.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1919"
+            ]
+          },
+          {
+            "tekst": "Roślina ta rośnie dziko w całej Europie, w niemal całej Ameryce Północnej oraz w Azji, z wyjątkiem jej wschodniej i południowej części.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s947"
+            ]
+          },
+          {
+            "tekst": "Gatunek występuje dziko w całej Europie, Azji (z wyjątkiem wschodniej i południowej części) oraz Ameryce Północnej, a w Polsce jest pospolity na całym obszarze kraju.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1575"
+            ]
+          },
+          {
+            "tekst": "W górach gatunek ten występuje nawet do piętra kosówki, a w Tatrach można go spotkać na wysokości do 1710 metrów n.p.m.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1583"
+            ]
+          },
+          {
+            "tekst": "Poziomka pospolita uznawana jest za gatunek inwazyjny na Hawajach, Reunionie oraz w Nowej Zelandii, gdzie tworzy bardzo gęste, płożące się płaty.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s964"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+        "wejscie": "348ab80754910554"
+      },
       "identyfikacja.cechy_kluczowe": {
         "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
         "typ": "lista",
@@ -805,6 +1530,38 @@
             "fakty": []
           },
           {
+            "tekst": "Kwiaty poziomki pospolitej są miękkie, białe i pokryte włoskami, rosną na cienkiej, zielonej szponie.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1603"
+            ]
+          },
+          {
+            "tekst": "Liście są trzylistne, lekko zielone, z zębato-ścierkowatymi brzegami.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1604"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "b3bcf6fc4a28e43e"
+      },
+      "czesci_rosliny.owoce.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Fructus Fragariae: Opis surowca",
+        "typ": "tekst",
+        "oryginal": "Owoce rzekome (rozrośnięte dno kwiatowe).",
+        "tresc": [
+          {
+            "tekst": "Owoce rzekome (rozrośnięte dno kwiatowe).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
             "tekst": "Owoc poziomki utrzymuje się średnio przez 1,2 dnia, co prawdopodobnie stanowi najkrótszy czas trwania wśród mięsistych owoców w Europie.",
             "zrodla": [
               3
@@ -815,7 +1572,57 @@
           }
         ],
         "model": "bez LLM: brak modelu",
-        "wejscie": "57442a5bf6dae299"
+        "wejscie": "5e77c2c87cf3aff4"
+      },
+      "wymagania.stanowisko": {
+        "tytul": "Natura i siedlisko - Stanowisko",
+        "typ": "tekst",
+        "oryginal": "Półcień do słonecznego (na słońcu owoce są słodsze, w cieniu liście są okazalsze).",
+        "tresc": [
+          {
+            "tekst": "Półcień do słonecznego (na słońcu owoce są słodsze, w cieniu liście są okazalsze).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Roslina występuje w miejscach takich jak ścieżki, drogi, zbocza, łąki, młode lasy, rzadkie lasy, krawędzie lasów i otwarte miejsca.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1605"
+            ]
+          },
+          {
+            "tekst": "W południowych rejonach swojego występowania poziomka pospolita rośnie wyłącznie w miejscach ocienionych, natomiast w północnej części zasięgu dobrze znosi większe nasłonecznienie.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1828"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "950e47b1720163d3"
+      },
+      "czesci_rosliny.korzeń.wlasciwości": {
+        "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Jako zioło lecznicze wykorzystuje się czasami także korzenie, pędy oraz kwiaty poziomki do parzenia naparów.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s972"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "66b16331c2f4317d"
       },
       "czesci_rosliny.liscie.opis_botaniczny": {
         "tytul": "Surowce i zbiory - Folium Fragariae: Opis surowca",
@@ -839,6 +1646,58 @@
         ],
         "model": "bez LLM: brak modelu",
         "wejscie": "eda85f67b84c682d"
+      },
+      "czesci_rosliny.liscie.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Folium Fragariae: Substancje czynne",
+        "typ": "lista",
+        "oryginal": [
+          "Garbniki katechinowe (do 10%)",
+          "Flawonoidy (kwercetyna, rutyna)",
+          "Witamina C",
+          "Kwasy organiczne"
+        ],
+        "tresc": [
+          {
+            "tekst": "Garbniki katechinowe (do 10%)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Flawonoidy (kwercetyna, rutyna)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Witamina C",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwasy organiczne",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Młode liście stanowią surowiec zielarski i zawierają flawonoidy, kwasy organiczne, olejki eteryczne oraz witaminy.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1578"
+            ]
+          },
+          {
+            "tekst": "Liście poziomki zawierają skoncentrowane taniny (gminy elagiowane), takie jak peduncuagina i agrymonina, a także flawonoidy i leukoantocyjany, przy czym kwas askorbinowy i olejki eteryczne występują w śladowych ilościach.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1610"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "fa216e55b1c10a5d"
       },
       "czesci_rosliny.owoce.skladniki_aktywne": {
         "tytul": "Surowce i zbiory - Fructus Fragariae: Substancje czynne",
@@ -878,10 +1737,19 @@
             "fakty": [
               "s949"
             ]
+          },
+          {
+            "tekst": "W 100 gramach owoców znajduje się 60 mg witaminy C oraz znane ilości kwasów organicznych, takich jak kwas asparaginowy (212 mg) i glutaminowy (132 mg).",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1580"
+            ]
           }
         ],
         "model": "bez LLM: brak modelu",
-        "wejscie": "dc32ae212d34a37a"
+        "wejscie": "dbb2747d450ac7ad"
       },
       "czesci_rosliny.liscie.wlasciwości": {
         "tytul": "Surowce i zbiory - Folium Fragariae: Działanie",
@@ -899,20 +1767,30 @@
               1
             ],
             "fakty": [
-              "s951"
+              "s951",
+              "s1579"
+            ]
+          },
+          {
+            "tekst": "Ze względu na zawartość garbników, liście stosowano tradycyjnie jako środek leczniczy na biegunki, a młodsze liście wykorzystywano jako zamiennik herbaty czarnej.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1612"
             ]
           }
         ],
         "model": "bez LLM: brak modelu",
-        "wejscie": "40fe2f4166074a93"
+        "wejscie": "52876d6ef9f7b7a3"
       },
-      "czesci_rosliny.owoce.wlasciwości": {
-        "tytul": "Surowce i zbiory - Fructus Fragariae: Działanie",
+      "czesci_rosliny.owoce.ostrzezenia": {
+        "tytul": "Surowce i zbiory - Fructus Fragariae: Ostrzeżenia",
         "typ": "tekst",
-        "oryginal": "Odkwaszające organizm, ogólnie wzmacniające, przeciwreumatyczne.",
+        "oryginal": "U osób wrażliwych mogą wywoływać reakcje alergiczne (pokrzywkę).",
         "tresc": [
           {
-            "tekst": "Odkwaszające organizm, ogólnie wzmacniające, przeciwreumatyczne.",
+            "tekst": "U osób wrażliwych mogą wywoływać reakcje alergiczne (pokrzywkę).",
             "zrodla": [],
             "fakty": []
           },
@@ -924,10 +1802,74 @@
             "fakty": [
               "s954"
             ]
+          },
+          {
+            "tekst": "Zielone ziarna na owocach zawierają substancję gorzką, która uwalnia się dopiero po kilku minutach gotowania, przez co dżem z samych poziomek może smakować gorzkawo.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s961"
+            ]
+          },
+          {
+            "tekst": "Ekstrakt aromatyczny owoców może zawierać około 80 różnych substancji chemicznych, w tym estery kwasów tłuszczowych oraz alkohole wyższe.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1611"
+            ]
           }
         ],
         "model": "bez LLM: brak modelu",
-        "wejscie": "0b1e4faed0372b24"
+        "wejscie": "ed927f95236945c9"
+      },
+      "czesci_rosliny.ziele.wlasciwości": {
+        "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "W średniowieczu i później ziele poziomki bywało stosowane w medycynie, między innymi jako lek do leczenia ran.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1613"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "1425b8bb5f6a32fd"
+      },
+      "zastosowanie.kulinarne": {
+        "tytul": "Praktyczne zastosowanie - Kuchnia",
+        "typ": "tekst",
+        "oryginal": "Owoce deserowe o najwyższym aromacie. Liście po poddaniu procesowi fermentacji dają herbatę o smaku zbliżonym do Earl Grey.",
+        "tresc": [
+          {
+            "tekst": "Owoce deserowe o najwyższym aromacie.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Liście po poddaniu procesowi fermentacji dają herbatę o smaku zbliżonym do Earl Grey.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Zielone drobne nasiona znajdujące się na owocach zawierają substancję gorzką, która uwidacznia się dopiero po kilku minutach gotowania, przez co dżemy przygotowane wyłącznie z poziomek leśnych mogą mieć gorzki smak.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1614"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "9bf97870698f21d8"
       },
       "ciekawostki": {
         "tytul": "Wiedza tajemna - Ciekawostki",
@@ -963,12 +1905,39 @@
             ]
           },
           {
+            "tekst": "Roślina uprawiana jest w Europie od co najmniej XV wieku. Duży wpływ na powstanie odmian uprawnych miały odkrycia w Alpach odmiany bezrozłogowej i powtarzającej kwitnienie.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1576"
+            ]
+          },
+          {
+            "tekst": "Botaniczna nazwa gatunkowa 'vesca' pochodzi od łacińskiego 'vescere', co oznacza 'spożywać', co odzwierciedla długą historię uprawy tej rośliny jako pożywnej.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1609"
+            ]
+          },
+          {
             "tekst": "Archeologiczne dowody wskazują, że poziomka pospolita była spożywana przez ludzi już od epoki kamienia.",
             "zrodla": [
               3
             ],
             "fakty": [
               "s953"
+            ]
+          },
+          {
+            "tekst": "Niemiecka odmiana 'Rügen', wyhodowana w zamku Putbus i wprowadzona do obrotu w 1920 roku, uznawana jest za pierwszą nowoczesną odmianę bezrozłogową, powtarzającą owocowanie i o dużych owocach.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1834"
             ]
           },
           {
@@ -981,6 +1950,25 @@
             ]
           },
           {
+            "tekst": "Poziomka pojawia się w sztuce renesansowej, m.in. na obrazie „Madonna z poziomką” z XIV/XV wieku (obecnie w Muzeum Narodowym w Krakowie), na którym Matka Boska trzyma gałązkę z kwiatem i owocem.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1581"
+            ]
+          },
+          {
+            "tekst": "W legendach ludowych mówi się, że Matka Boska raz w roku zstępuje z raju na ziemię, aby zbierać poziomki dla dzieci, które zmarły i obecnie przebywają w raju.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1615",
+              "s959"
+            ]
+          },
+          {
             "tekst": "W sztuce chrześcijańskiej poziomka była uważana za symbol praworządności oraz towarzyszyła wizerunkom Maryi na średniowiecznych obrazach tablicowych jako alegoria pobożnych myśli.",
             "zrodla": [
               2
@@ -990,12 +1978,12 @@
             ]
           },
           {
-            "tekst": "W jednej z legend opowiada się, że matka boska Maria co roku schodzi z raju na ziemię, aby zbierać poziomki dla zmarłych dzieci przebywających w raju.",
+            "tekst": "W średniowiecznym malarze chrześcijańskim poziomka, czyniła owoców i kwiatów jednocześnie oraz nie posiadająca cierni, stawała się symbolem pobożności i towarzyszyła Maryi, a także symbolem żyzności i rozkoszy świata.",
             "zrodla": [
               2
             ],
             "fakty": [
-              "s959"
+              "s1616"
             ]
           },
           {
@@ -1008,12 +1996,57 @@
             ]
           },
           {
+            "tekst": "Poziomce pospolitej nadawano w Polsce zwyczajowe nazwy: czerwona jagoda oraz koziomka.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1574"
+            ]
+          },
+          {
+            "tekst": "Roślina kwitnie w maju i czerwniu, czasem powtórnie jesienią; zapylanie odbywa się za sprawą owadów.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1582"
+            ]
+          },
+          {
             "tekst": "Poziomka pospolita służy jako roślina wskaźnikowa chorób porażających truskawki ogrodowe oraz jako modelowy organizm genetyczny dla rodziny różowatych.",
             "zrodla": [
               3
             ],
             "fakty": [
               "s958"
+            ]
+          },
+          {
+            "tekst": "Skrzyżowanie poziomki pospolitej z truskawką dało mieszańca zwanego Fragaria × vescana, natomiast historyczne hybrydy z poziomką twardawą (Fragaria viridis) uprawiano do około 1850 roku, po czym zostały utracone.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1829"
+            ]
+          },
+          {
+            "tekst": "Liście poziomki pospolitej są pożywieniem dla gąsienic motyla zwanego powszelatkiem malwowym (Pyrgus malvae).",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1830"
+            ]
+          },
+          {
+            "tekst": "Wśród rzadkich odmian kolekcjonerskich spotyka się mutację 'Monophylla' o liściach pojedynczych zamiast trójlistkowych oraz 'Muricata', której kwiaty i owoce mają najeżony wygląd z powodu licznych, zielonych podkwiatków.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1831"
             ]
           },
           {
@@ -1026,6 +2059,15 @@
             ]
           },
           {
+            "tekst": "Właściwości lecznicze mają jedynie liście poziomek rosnących dziko; odmiany ogrodowe ich nie posiadają.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1577"
+            ]
+          },
+          {
             "tekst": "Liście poziomki stanowią pokarm dla wielu lądowych zwierząt kopytnych, takich jak mulak czarnoogonowy czy wapiti.",
             "zrodla": [
               4
@@ -1035,31 +2077,59 @@
             ]
           }
         ],
-        "model": "bez LLM: brak modelu",
-        "wejscie": "2730cdfb4bebfdad"
+        "model": "bez LLM: 21 punktow",
+        "wejscie": "aacac325f4b6c802"
       },
-      "czesci_rosliny.owoce.ostrzezenia": {
-        "tytul": "Surowce i zbiory - Fructus Fragariae: Ostrzeżenia",
+      "interakcje": {
+        "tytul": "Bezpieczeństwo i interakcje - Interakcje z lekami",
         "typ": "tekst",
-        "oryginal": "U osób wrażliwych mogą wywoływać reakcje alergiczne (pokrzywkę).",
+        "oryginal": "Brak znanych szkodliwych interakcji z lekami syntetycznymi. Bezpieczna dla osób przyjmujących leki na nadciśnienie.",
         "tresc": [
           {
-            "tekst": "U osób wrażliwych mogą wywoływać reakcje alergiczne (pokrzywkę).",
+            "tekst": "Brak znanych szkodliwych interakcji z lekami syntetycznymi.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Zielone ziarna na owocach zawierają substancję gorzką, która uwalnia się dopiero po kilku minutach gotowania, przez co dżem z samych poziomek może smakować gorzkawo.",
+            "tekst": "Bezpieczna dla osób przyjmujących leki na nadciśnienie.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Osoby przyjmujące leki lub będące pod opieką lekarza powinny przed użyciem poziomki skonsultować się z lekarzem.",
             "zrodla": [
-              2
+              5
             ],
             "fakty": [
-              "s961"
+              "s1836"
             ]
           }
         ],
         "model": "bez LLM: brak modelu",
-        "wejscie": "43feedb0ce7c22ef"
+        "wejscie": "9b687a4b7209533c"
+      },
+      "wymagania.woda": {
+        "tytul": "Natura i siedlisko - Woda",
+        "typ": "tekst",
+        "oryginal": "Lubi stałą wilgotność; znosi susze przechodząc w stan uśpienia, ale wtedy nie owocuje.",
+        "tresc": [
+          {
+            "tekst": "Lubi stałą wilgotność; znosi susze przechodząc w stan uśpienia, ale wtedy nie owocuje.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W uprawie ogrodowej rośliny po kilku latach stopniowo tracą witalność na skutek wyczerpującego, intensywnego kwitnienia i owocowania, a ostatecznie zamierają z powodu infekcji wirusowych.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1832"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "c4528506682935db"
       },
       "zastosowanie.ogrodowe": {
         "tytul": "Praktyczne zastosowanie - Ogród",
@@ -1118,7 +2188,37 @@
       }
     },
     "uzyte_fakty": [
+      "s1574",
+      "s1575",
+      "s1576",
+      "s1577",
+      "s1578",
+      "s1579",
+      "s1580",
+      "s1581",
+      "s1582",
+      "s1583",
+      "s1603",
+      "s1604",
+      "s1605",
+      "s1609",
+      "s1610",
+      "s1611",
+      "s1612",
+      "s1613",
+      "s1614",
+      "s1615",
+      "s1616",
+      "s1828",
+      "s1829",
+      "s1830",
+      "s1831",
+      "s1832",
+      "s1834",
+      "s1836",
+      "s1919",
       "s946",
+      "s947",
       "s948",
       "s949",
       "s950",
@@ -1130,81 +2230,14 @@
       "s959",
       "s961",
       "s962",
+      "s964",
       "s965",
       "s966",
       "s967",
       "s968",
       "s970",
-      "s971"
+      "s971",
+      "s972"
     ]
-  },
-  "rozmieszczenie": {
-    "wersja": 1,
-    "zaktualizowano": "2026-10-16",
-    "jak": "llm:groq/qwen/qwen3.8-27b",
-    "wejscie": "a7878b42f682912f",
-    "wstawki": [
-      {
-        "miejsce": "natura/wystepowanie",
-        "rozdzial": "Natura i siedlisko",
-        "tytul": "Występowanie i zasięg",
-        "ikona": "ra-compass",
-        "nowy": true,
-        "punkty": [
-          {
-            "tekst": "Roślina ta rośnie dziko w całej Europie, w niemal całej Ameryce Północnej oraz w Azji, z wyjątkiem jej wschodniej i południowej części.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s947"
-            ],
-            "sekcja": "wystepowanie",
-            "czesc": null
-          }
-        ]
-      },
-      {
-        "miejsce": "surowce/czesc:korzeń",
-        "rozdzial": "Surowce i zbiory",
-        "tytul": "Korzeń",
-        "ikona": "ra-potion",
-        "nowy": true,
-        "punkty": [
-          {
-            "tekst": "Jako zioło lecznicze wykorzystuje się czasami także korzenie, pędy oraz kwiaty poziomki do parzenia naparów.",
-            "zrodla": [
-              4
-            ],
-            "fakty": [
-              "s972"
-            ],
-            "sekcja": "czesci_rosliny",
-            "czesc": "korzeń"
-          }
-        ]
-      },
-      {
-        "miejsce": "bezpieczenstwo/chwast",
-        "rozdzial": "Bezpieczeństwo i interakcje",
-        "tytul": "Chwast i inwazyjność",
-        "ikona": "ra-bleeding-eye",
-        "nowy": true,
-        "punkty": [
-          {
-            "tekst": "Poziomka pospolita uznawana jest za gatunek inwazyjny na Hawajach, Reunionie oraz w Nowej Zelandii, gdzie tworzy bardzo gęste, płożące się płaty.",
-            "zrodla": [
-              4
-            ],
-            "fakty": [
-              "s964"
-            ],
-            "sekcja": "wystepowanie",
-            "czesc": null
-          }
-        ]
-      }
-    ],
-    "duplikaty": []
   }
 }
