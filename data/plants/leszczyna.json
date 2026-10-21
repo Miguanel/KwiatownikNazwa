@@ -141,7 +141,7 @@
     "Kora": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Hazel%2C_Corylus_avellana._Epicormic_growth._River_Ayr._Holehouse_Holm%2C_East_Ayrshire.jpg/960px-Hazel%2C_Corylus_avellana._Epicormic_growth._River_Ayr._Holehouse_Holm%2C_East_Ayrshire.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-09",
+    "zaktualizowano": "2026-10-21",
     "w_url": true,
     "zdjecia": [
       {
@@ -190,5 +190,238 @@
         "zrodlo": "Wikimedia Commons"
       }
     ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-10-21",
+    "uporzadkowano": "2026-10-21",
+    "uklad": "deterministyczny: sekcja nie jest obiektem",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (de): Gemeine Hasel",
+        "url": "https://de.wikipedia.org/wiki/Gemeine_Hasel",
+        "jezyk": "de",
+        "typ": "wikipedia",
+        "nr": 1
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "kultura",
+        "tytul": "Wierzenia i tradycje",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Zdobione gałązki leszczyny stosowano jako wiersze, by odnaleźć wodę, złoża metali lub skarby; ta praktyka, opisana już w roku 1556 w dziele De re metallica, przetrwała do współczesności.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2003"
+            ]
+          },
+          {
+            "tekst": "Szczególnie w Normandii, gdzie zwyczaj sięga roku 1393, ukochanka umieszczano przed oknem bujny krzew leszczyny – co często oznaczało szydzenie z powodu pozamałżeńskiego romansu, nawiązując do silnych konotacji seksualnych tej rośliny.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2004"
+            ]
+          },
+          {
+            "tekst": "Leszczynę obdarzano właściwościami afrodyzjakalnymi; popiół z jej kory wbijano do jedzenia lub stosowano olej orzechowy w celach stymulowania popędu seksualnego.",
+            "czesc": "kora",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2002"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Leszczynie przypisywano ochronę przed uderzeniami pioruna oraz zdolność do odbierania szkodliwych energii ziemi i wód gruntowych.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2005"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "kora": [
+        "s2002"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s2002",
+        "sekcja": "kultura",
+        "czesc": "kora",
+        "tekst": "Leszczynę obdarzano właściwościami afrodyzjakalnymi; popiół z jej kory wbijano do jedzenia lub stosowano olej orzechowy w celach stymulowania popędu seksualnego.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gemeine Hasel",
+          "url": "https://de.wikipedia.org/wiki/Gemeine_Hasel"
+        },
+        "cytat": "Aufgrund dieser Sexualsymbolik wurde die Hasel als Aphrodisiakum verwendet: Zu Pulver gebrannte Haselrinde wurde ins Essen gemischt oder es wurde Haselnussöl verwendet."
+      },
+      {
+        "id": "s2003",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "Zdobione gałązki leszczyny stosowano jako wiersze, by odnaleźć wodę, złoża metali lub skarby; ta praktyka, opisana już w roku 1556 w dziele De re metallica, przetrwała do współczesności.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gemeine Hasel",
+          "url": "https://de.wikipedia.org/wiki/Gemeine_Hasel"
+        },
+        "cytat": "Haseln wurde und wird die Eigenschaft zugeschrieben, Kraftströme fließen zu lassen. Daher werden Haselruten als Wünschelruten verwendet. ... Man wollte Schätze, Metalladern und Quellen damit aufspüren. Diese Verwendung ist etwa in Georgius "
+      },
+      {
+        "id": "s2004",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "Szczególnie w Normandii, gdzie zwyczaj sięga roku 1393, ukochanka umieszczano przed oknem bujny krzew leszczyny – co często oznaczało szydzenie z powodu pozamałżeńskiego romansu, nawiązując do silnych konotacji seksualnych tej rośliny.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gemeine Hasel",
+          "url": "https://de.wikipedia.org/wiki/Gemeine_Hasel"
+        },
+        "cytat": "Die in vielen Gegenden übliche Sitte, seiner Liebsten am 1. Mai ein Birkenbäumchen vor das Fenster zu stellen, wurde durch das Setzen eines Haselstrauches abgewandelt und das betreffende Mädchen dem Spott übergeben. Aus der Normandie ist di"
+      },
+      {
+        "id": "s2005",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Leszczynie przypisywano ochronę przed uderzeniami pioruna oraz zdolność do odbierania szkodliwych energii ziemi i wód gruntowych.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gemeine Hasel",
+          "url": "https://de.wikipedia.org/wiki/Gemeine_Hasel"
+        },
+        "cytat": "Der Strauch soll auch vor Blitzschlag schützen und störende Erd- und Wasserstrahlen ableiten."
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-21",
+    "pola": {
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "W tradycji ludowej leszczyna była uznawana za drzewo magiczne, chroniące przed urokami i piorunami.",
+          "Wiewiórka potrafi ocenić, czy orzech jest pełny, sprawdzając jego ciężar – rzadko myli się i gryzie pusty owoc.",
+          "Pyłek leszczyny jest pierwszym, wysokobiałkowym pokarmem, który pozwala pszczołom na regenerację po zimie."
+        ],
+        "tresc": [
+          {
+            "tekst": "W tradycji ludowej leszczyna była uznawana za drzewo magiczne, chroniące przed urokami i piorunami; leszczynie przypisywano także ochronę przed uderzeniami pioruna i zdolność do odbierania szkodliwych energii ziemi i wód gruntowych.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2005"
+            ]
+          },
+          {
+            "tekst": "Wiewiórka potrafi ocenić, czy orzech jest pełny, sprawdzając jego ciężar – rzadko myli się i gryzie pusty owoc.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Pyłek leszczyny jest pierwszym, wysokobiałkowym pokarmem, który pozwala pszczołom na regenerację po zimie.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "fae611d6f47520ba"
+      },
+      "czesci_rosliny.kora.wlasciwości": {
+        "tytul": "Surowce i zbiory - Cortex Coryli: Działanie",
+        "typ": "tekst",
+        "oryginal": "Przeciwgorączkowe, ściągające, stosowane w leczeniu żylaków i hemoroidów.",
+        "tresc": [
+          {
+            "tekst": "Przeciwgorączkowe, ściągające, stosowane w leczeniu żylaków i hemoroidów.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kora leszczyny posiada właściwości afrodyzjakalne; popiół z niej wprowadzano do jedzenia, a olej orzechowy stosowano w celu stymulowania popędu seksualnego.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2002"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "9b5347a735209309"
+      }
+    },
+    "uzyte_fakty": [
+      "s2002",
+      "s2005"
+    ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-21",
+    "jak": "llm:groq/openai/gpt-oss-120b",
+    "wejscie": "58d53809c17c0416",
+    "wstawki": [
+      {
+        "miejsce": "tajemna/kultura",
+        "rozdzial": "Wiedza tajemna",
+        "tytul": "Wierzenia i legendy",
+        "ikona": "ra-crystal-ball",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Zdobione gałązki leszczyny stosowano jako wiersze, by odnaleźć wodę, złoża metali lub skarby; ta praktyka, opisana już w roku 1556 w dziele De re metallica, przetrwała do współczesności.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2003"
+            ],
+            "sekcja": "kultura",
+            "czesc": null
+          },
+          {
+            "tekst": "Szczególnie w Normandii, gdzie zwyczaj sięga roku 1393, ukochanka umieszczano przed oknem bujny krzew leszczyny – co często oznaczało szydzenie z powodu pozamałżeńskiego romansu, nawiązując do silnych konotacji seksualnych tej rośliny.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2004"
+            ],
+            "sekcja": "kultura",
+            "czesc": null
+          }
+        ]
+      }
+    ],
+    "duplikaty": []
   }
 }

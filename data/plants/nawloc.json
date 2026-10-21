@@ -4,7 +4,6 @@
   "nazwa_lat": "Solidago virgaurea",
   "rodzina": "Astrowate (Asteraceae)",
   "opis": "Wieloletnia bylina rodzima dla polskiego krajobrazu, dorastająca do 100 cm wysokości. W przeciwieństwie do swoich ekspansywnych kuzynem z Ameryki, rośnie zazwyczaj w świetlistych lasach i na polanach. Kwitnie od lipca do września, tworząc sztywne, wyprostowane łodygi zakończone wiechowatymi kwiatostanami o złocistożółtej barwie. Jest uważana za jeden z najskuteczniejszych naturalnych środków odkażających i regenerujących nerki.",
-
   "profil_energetyczny": {
     "smak": "Gorzki, cierpki, lekko aromatyczny",
     "termika": "Chłodna do neutralnej",
@@ -12,7 +11,6 @@
     "zywiol": "Woda i Metal",
     "opis": "Nawłoć to 'wielki filtr'. Jej energia porusza zastoje płynów w dolnym ogrzewaczu, wypłukując piasek i toksyny. Działa ściągająco na błony śluzowe, pomagając 'uszczelnić' organizm tam, gdzie doszło do przewlekłych wycieków lub stanów zapalnych. Na poziomie emocjonalnym pomaga radzić sobie z poczuciem żalu i lęku (powiązanym w TCM z nerkami)."
   },
-
   "wymagania": {
     "stanowisko": "Słoneczne do półcienistego. Preferuje miejsca świetliste, ale osłonięte.",
     "gleba": "Przepuszczalna, piaszczysto-gliniasta, umiarkowanie żyzna. Znacznie mniej wymagająca niż rośliny ogrodowe, ale nie lubi skrajnych mokradeł.",
@@ -20,7 +18,6 @@
     "mrozoodpornosc": "Strefa 4 (Całkowicie mrozoodporna).",
     "woda": "Umiarkowane zapotrzebowanie; bardzo odporna na okresowe susze."
   },
-
   "identyfikacja": {
     "cechy_kluczowe": [
       "Kwiatostan to wydłużona, prosta wiecha (nie rozłożysta jak u nawłoci kanadyjskiej).",
@@ -39,7 +36,6 @@
       }
     ]
   },
-
   "czesci_rosliny": {
     "ziele": {
       "nazwa_surowca": "Herba Solidaginis",
@@ -57,16 +53,13 @@
       "ostrzezenia": "Nie stosować przy obrzękach spowodowanych niewydolnością serca lub nerek bez konsultacji medycznej."
     }
   },
-
   "zastosowanie": {
     "medyczne": "Zapalenie pęcherza i nerek, kamica nerkowa (piasek), dna moczanowa, reumatyzm, przerost prostaty (pomocniczo), biegunki, stany zapalne jamy ustnej (płukanki).",
     "kulinarne": "Kwiaty są jadalne i mogą być używane do dekoracji sałatek. Młode liście bywają parzone jako herbata (tzw. herbata 'Teutonów').",
     "ogrodowe": "Roślina miododajna o ogromnym znaczeniu (produkcja miodu nawłociowego). Przyciąga pszczoły, motyle i bzygi w czasie, gdy niewiele innych roślin kwitnie.",
     "rzemieslnicze": "Naturalny żółty barwnik do wełny i jedwabiu (daje bardzo trwałe, nasycone kolory)."
   },
-
   "interakcje": "Może nasilać działanie leków moczopędnych (diuretyków pętlowych). Zaleca się picie dużej ilości wody (min. 2l dziennie) podczas kuracji nawłocią.",
-
   "ciekawostki": [
     "Miód nawłociowy jest jednym z najrzadszych i najzdrowszych miodów w Polsce – nazywany 'nektarem życia', krystalizuje się w puszystą masę i ma lekko kwaskowaty smak.",
     "Nazwa łacińska 'Solidago' pochodzi od słowa 'solidare', co oznacza 'czynić trwałym' lub 'goić', odnosząc się do właściwości leczenia ran.",
@@ -74,7 +67,6 @@
     "Thomas Edison eksperymentował z nawłocią (odmiana Leavenworthii) jako źródłem naturalnego kauczuku – niektóre gatunki zawierają go w liściach.",
     "Nawłoć pospolita jest składnikiem słynnych szwajcarskich mieszanek ziołowych na drogi moczowe."
   ],
-
   "permakultura": {
     "funkcje": [
       "Dynamiczny akumulator fosforu i potasu.",
@@ -83,17 +75,28 @@
       "Roślina osłonowa dla dzikiej fauny."
     ],
     "gildie": [
-      { "nazwa": "Wrzos zwyczajny", "rola": "Często współwystępują na piaszczystych obrzeżach lasów." },
-      { "nazwa": "Astry jesienne", "rola": "Tworzą wspólną bazę dla zapylaczy u schyłku lata." },
-      { "nazwa": "Brzoza", "rola": "Nawłoć pospolita kocha świetlisty cień pod brzozami." }
+      {
+        "nazwa": "Wrzos zwyczajny",
+        "rola": "Często współwystępują na piaszczystych obrzeżach lasów."
+      },
+      {
+        "nazwa": "Astry jesienne",
+        "rola": "Tworzą wspólną bazę dla zapylaczy u schyłku lata."
+      },
+      {
+        "nazwa": "Brzoza",
+        "rola": "Nawłoć pospolita kocha świetlisty cień pod brzozami."
+      }
     ]
   },
-
   "kalendarz_ogrodnika": {
     "zadania": [
       {
         "czynnosc": "Zbiór ziela",
-        "miesiace": [7, 8],
+        "miesiace": [
+          7,
+          8
+        ],
         "opis": "Ścinanie pędów na początku kwitnienia. Jeśli zbierzesz ją za późno, podczas suszenia owoce dojrzeją i ziele 'puchnie', rozsiewając puch w suszarni.",
         "faza_ksiezyca": "Księżyc przybywający (faza kwiatu)",
         "pora_dnia": "Przedpołudnie (zaraz po osuszeniu rosy)",
@@ -102,6 +105,715 @@
       }
     ]
   },
-
-  "ostrzezenia": "Nie stosować przy przewlekłych chorobach nerek przebiegających z obrzękami (wymagana konsultacja lekarska). Ze względu na zawartość garbników, długotrwałe przyjmowanie może ograniczać wchłanianie żelaza."
+  "ostrzezenia": "Nie stosować przy przewlekłych chorobach nerek przebiegających z obrzękami (wymagana konsultacja lekarska). Ze względu na zawartość garbników, długotrwałe przyjmowanie może ograniczać wchłanianie żelaza.",
+  "url": {
+    "Pokrój": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Solidago_virgaurea_001.JPG/960px-Solidago_virgaurea_001.JPG",
+    "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Solidago_virgaurea_-_Jyv%C3%A4skyl%C3%A4_Huhtasuo.jpg/960px-Solidago_virgaurea_-_Jyv%C3%A4skyl%C3%A4_Huhtasuo.jpg",
+    "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Solidago_virgaurea_Naw%C5%82o%C4%87_pospolita_2021-08-21_%C5%9Al%C4%99%C5%BCa_01.jpg/960px-Solidago_virgaurea_Naw%C5%82o%C4%87_pospolita_2021-08-21_%C5%9Al%C4%99%C5%BCa_01.jpg",
+    "Owoce": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Solidago_virgaurea_frucht.jpeg",
+    "Rycina": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Illustration_Solidago_virgaurea0_clean.jpg/960px-Illustration_Solidago_virgaurea0_clean.jpg"
+  },
+  "zdjecia_wiki": {
+    "zaktualizowano": "2026-10-21",
+    "w_url": true,
+    "zdjecia": [
+      {
+        "podpis": "Pokrój",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Solidago_virgaurea_001.JPG/960px-Solidago_virgaurea_001.JPG",
+        "plik": "https://commons.wikimedia.org/wiki/File:Solidago_virgaurea_001.JPG",
+        "autor": "H. Zell",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Kwiaty",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Solidago_virgaurea_-_Jyv%C3%A4skyl%C3%A4_Huhtasuo.jpg/960px-Solidago_virgaurea_-_Jyv%C3%A4skyl%C3%A4_Huhtasuo.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Solidago_virgaurea_-_Jyv%C3%A4skyl%C3%A4_Huhtasuo.jpg",
+        "autor": "Tiia Monto",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Liście",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Solidago_virgaurea_Naw%C5%82o%C4%87_pospolita_2021-08-21_%C5%9Al%C4%99%C5%BCa_01.jpg/960px-Solidago_virgaurea_Naw%C5%82o%C4%87_pospolita_2021-08-21_%C5%9Al%C4%99%C5%BCa_01.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Solidago_virgaurea_Naw%C5%82o%C4%87_pospolita_2021-08-21_%C5%9Al%C4%99%C5%BCa_01.jpg",
+        "autor": "Agnieszka Kwiecień, Nova",
+        "licencja": "CC BY-SA 4.0",
+        "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Owoce",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Solidago_virgaurea_frucht.jpeg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Solidago_virgaurea_frucht.jpeg",
+        "autor": "Kristian Peters -- Fabelfroh 07:55, 13 February 2007 (UTC)",
+        "licencja": "CC BY-SA 3.0",
+        "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "zrodlo": "Wikimedia Commons"
+      },
+      {
+        "podpis": "Rycina",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Illustration_Solidago_virgaurea0_clean.jpg/960px-Illustration_Solidago_virgaurea0_clean.jpg",
+        "plik": "https://commons.wikimedia.org/wiki/File:Illustration_Solidago_virgaurea0_clean.jpg",
+        "autor": "Otto Wilhelm Thomé",
+        "licencja": "Public domain",
+        "licencja_url": null,
+        "zrodlo": "Wikimedia Commons"
+      }
+    ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-10-21",
+    "uporzadkowano": "2026-10-21",
+    "uklad": "deterministyczny: nieznana sekcja None",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (de): Gewöhnliche Goldrute",
+        "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche_Goldrute",
+        "jezyk": "de",
+        "typ": "wikipedia",
+        "nr": 1
+      },
+      {
+        "nazwa": "Wikipedia (en): Solidago virgaurea",
+        "url": "https://en.wikipedia.org/wiki/Solidago_virgaurea",
+        "jezyk": "en",
+        "typ": "wikipedia",
+        "nr": 2
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "opis",
+        "tytul": "Opis i wygląd",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Na szczycie łodygi tworzy się wiele małych żółtych koszyczków kwiatowych, tworząc charakterystyczny, wiechowaty kwiatostan.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2022"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "wystepowanie",
+        "tytul": "Występowanie",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Jest rośliną półkryptofitą, rosnącą na suchych, ubogich w składniki odżywcze stanowiskach, takich jak leśne skraje, zarośla i ubogie łąki, preferując lekko kwaśne podłoże.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2029"
+            ]
+          },
+          {
+            "tekst": "Nawłoć pospolita występuje w całej Europie, a także w Afryce Północnej i w Azji – m.in. w Chinach, Rosji, Indiach i Turcji.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2020"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "czesci_rosliny",
+        "tytul": "Części rośliny i surowce",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W tradycyjnych preparatach zielarskich wykorzystuje się całe kwiatostany, ponieważ to właśnie one zawierają wszystkie aktywne składniki.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2023"
+            ]
+          },
+          {
+            "tekst": "Roślina posiada rozgałęziony podziemny pęd (caudex) oraz zdrewniałe kłącze, które stanowią podstawę jej długowieczności.",
+            "czesc": "kłącze",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2021"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Głównymi składnikami są fenolowe glikozydy (Leiocarposid i Virgaureosid A), flawonoidy oraz olejek eteryczny z γ‑kadinenem jako głównym seskwiterpenem.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2027"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "barwienie",
+        "tytul": "Barwienie i rzemiosło",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Dzięki zawartości flawonoidów można używać jej do barwienia wełny lub bawełny, uzyskując złocisto‑żółty odcień.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2028"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "historia",
+        "tytul": "Historia i nazwa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W XV i XVI wieku w Europie używano jej do leczenia ran, co dało roślinie nazwę „woundwort”.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2024"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "nazwy_ludowe",
+        "tytul": "Nazwy ludowe",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Petrusstab, Ungsengkraut i Heidnisch Wundkraut to tradycyjne niemieckie nazwy Nawłoć pospolitej.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2025"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Roślina jest praktycznie nietoksyczna, lecz przy częstym kontakcie może wywołać alergię skórną, prawdopodobnie spowodowaną seskwiterpenowymi laktonami.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2026"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "kwiaty": [
+        "s2022",
+        "s2023"
+      ],
+      "kłącze": [
+        "s2021"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s2020",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Nawłoć pospolita występuje w całej Europie, a także w Afryce Północnej i w Azji – m.in. w Chinach, Rosji, Indiach i Turcji.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Solidago virgaurea",
+          "url": "https://en.wikipedia.org/wiki/Solidago_virgaurea"
+        },
+        "cytat": "It is widespread across most of Europe as well as North Africa and northern, central, and southwestern Asia (China, Russia, India, Turkey, Kazakhstan, etc.)."
+      },
+      {
+        "id": "s2021",
+        "sekcja": "czesci_rosliny",
+        "czesc": "kłącze",
+        "tekst": "Roślina posiada rozgałęziony podziemny pęd (caudex) oraz zdrewniałe kłącze, które stanowią podstawę jej długowieczności.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Solidago virgaurea",
+          "url": "https://en.wikipedia.org/wiki/Solidago_virgaurea"
+        },
+        "cytat": "with a branching underground caudex and a woody rhizome."
+      },
+      {
+        "id": "s2022",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Na szczycie łodygi tworzy się wiele małych żółtych koszyczków kwiatowych, tworząc charakterystyczny, wiechowaty kwiatostan.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Solidago virgaurea",
+          "url": "https://en.wikipedia.org/wiki/Solidago_virgaurea"
+        },
+        "cytat": "It produces arrays of numerous small yellow flower heads at the top of the stem."
+      },
+      {
+        "id": "s2023",
+        "sekcja": "czesci_rosliny",
+        "czesc": "kwiaty",
+        "tekst": "W tradycyjnych preparatach zielarskich wykorzystuje się całe kwiatostany, ponieważ to właśnie one zawierają wszystkie aktywne składniki.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Solidago virgaurea",
+          "url": "https://en.wikipedia.org/wiki/Solidago_virgaurea"
+        },
+        "cytat": "the whole herbal preparation of Solidago inflorescences must be considered as the active ingredient."
+      },
+      {
+        "id": "s2024",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "W XV i XVI wieku w Europie używano jej do leczenia ran, co dało roślinie nazwę „woundwort”.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Solidago virgaurea",
+          "url": "https://en.wikipedia.org/wiki/Solidago_virgaurea"
+        },
+        "cytat": "In the fifteenth and sixteenth centuries Solidago virgaurea was used in Europe to heal wounds."
+      },
+      {
+        "id": "s2025",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "Petrusstab, Ungsengkraut i Heidnisch Wundkraut to tradycyjne niemieckie nazwy Nawłoć pospolitej.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gewöhnliche Goldrute",
+          "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche_Goldrute"
+        },
+        "cytat": "Trivialnamen sind beispielsweise Petrusstab, Ungsengkraut und Heidnisch Wundkraut."
+      },
+      {
+        "id": "s2026",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Roślina jest praktycznie nietoksyczna, lecz przy częstym kontakcie może wywołać alergię skórną, prawdopodobnie spowodowaną seskwiterpenowymi laktonami.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gewöhnliche Goldrute",
+          "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche_Goldrute"
+        },
+        "cytat": "Die Gewöhnliche Goldrute gilt als praktisch ungiftig für den Menschen. Beim häufigen Umgang kann die Art beim Menschen eine Kontaktallergie auslösen. ... vermutlich ... Sesquiterpenlactone."
+      },
+      {
+        "id": "s2027",
+        "sekcja": "sklad",
+        "czesc": null,
+        "tekst": "Głównymi składnikami są fenolowe glikozydy (Leiocarposid i Virgaureosid A), flawonoidy oraz olejek eteryczny z γ‑kadinenem jako głównym seskwiterpenem.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gewöhnliche Goldrute",
+          "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche_Goldrute"
+        },
+        "cytat": "Die wichtigsten Inhaltsstoffe sind Phenolglycoside, besonders Leiocarposid und Virgaureosid A, ferner Flavonoide. Das ätherische Öl enthält u. a. das Sesquiterpen γ-Cadinen ..."
+      },
+      {
+        "id": "s2028",
+        "sekcja": "barwienie",
+        "czesc": null,
+        "tekst": "Dzięki zawartości flawonoidów można używać jej do barwienia wełny lub bawełny, uzyskując złocisto‑żółty odcień.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gewöhnliche Goldrute",
+          "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche_Goldrute"
+        },
+        "cytat": "Wegen des Gehaltes an Flavonoiden lässt sich die Gewöhnliche Goldrute auch zum Färben von Wolle oder Baumwolle verwenden. Die Stoffe erhalten einen goldgelben Ton."
+      },
+      {
+        "id": "s2029",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Jest rośliną półkryptofitą, rosnącą na suchych, ubogich w składniki odżywcze stanowiskach, takich jak leśne skraje, zarośla i ubogie łąki, preferując lekko kwaśne podłoże.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gewöhnliche Goldrute",
+          "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche_Goldrute"
+        },
+        "cytat": "Bei der Gewöhnlichen Goldrute handelt es sich um einen Hemikryptophyten. ... wächst an eher trockenen, nährstoffärmeren Standorten wie in lichten Laubwäldern, an trockenen Wald-, Gebüsch- oder Wegrändern und in Magerrasen."
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-21",
+    "pola": {
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": [
+          "Kwiatostan to wydłużona, prosta wiecha (nie rozłożysta jak u nawłoci kanadyjskiej).",
+          "Koszyczki kwiatowe są znacznie większe (ok. 10-15 mm) niż u gatunków inwazyjnych.",
+          "Liście dolne są jajowate, ogonkowe, natomiast górne lancetowate i siedzące.",
+          "Łodyga jest zazwyczaj pojedyncza, sztywna i często przebarwiona na fioletowo u nasady."
+        ],
+        "tresc": [
+          {
+            "tekst": "Kwiatostan to wydłużona, prosta wiecha (nie rozłożysta jak u nawłoci kanadyjskiej).",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2022"
+            ]
+          },
+          {
+            "tekst": "Koszyczki kwiatowe są znacznie większe (ok. 10-15 mm) niż u gatunków inwazyjnych.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Liście dolne są jajowate, ogonkowe, natomiast górne lancetowate i siedzące.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Łodyga jest zazwyczaj pojedyncza, sztywna i często przebarwiona na fioletowo u nasady.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "0ad87c20d15834cc"
+      },
+      "wymagania.gleba": {
+        "tytul": "Natura i siedlisko - Gleba",
+        "typ": "tekst",
+        "oryginal": "Przepuszczalna, piaszczysto-gliniasta, umiarkowanie żyzna. Znacznie mniej wymagająca niż rośliny ogrodowe, ale nie lubi skrajnych mokradeł.",
+        "tresc": [
+          {
+            "tekst": "Przepuszczalna, piaszczysto-gliniasta, umiarkowanie żyzna.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Znacznie mniej wymagająca niż rośliny ogrodowe, ale nie lubi skrajnych mokradeł.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jest rośliną półkryptofitą, rosnącą na suchych, ubogich w składniki odżywcze stanowiskach, takich jak leśne skraje, zarośla i ubogie łąki, preferując lekko kwaśne podłoże.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2029"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "05dc7b6d164b3422"
+      },
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Wieloletnia bylina rodzima dla polskiego krajobrazu, dorastająca do 100 cm wysokości. W przeciwieństwie do swoich ekspansywnych kuzynem z Ameryki, rośnie zazwyczaj w świetlistych lasach i na polanach. Kwitnie od lipca do września, tworząc sztywne, wyprostowane łodygi zakończone wiechowatymi kwiatostanami o złocistożółtej barwie. Jest uważana za jeden z najskuteczniejszych naturalnych środków odkażających i regenerujących nerki.",
+        "tresc": [
+          {
+            "tekst": "Wieloletnia bylina rodzima dla polskiego krajobrazu, dorastająca do 100 cm wysokości.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W przeciwieństwie do swoich ekspansywnych kuzynem z Ameryki, rośnie zazwyczaj w świetlistych lasach i na polanach.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwitnie od lipca do września, tworząc sztywne, wyprostowane łodygi zakończone wiechowatymi kwiatostanami o złocistożółtej barwie.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jest uważana za jeden z najskuteczniejszych naturalnych środków odkażających i regenerujących nerki.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Nawłoć pospolita występuje w całej Europie, a także w Afryce Północnej i w Azji – m.in. w Chinach, Rosji, Indiach i Turcji.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2020"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "2b82ec6fd32923ef"
+      },
+      "czesci_rosliny.ziele.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Herba Solidaginis: Substancje czynne",
+        "typ": "lista",
+        "oryginal": [
+          "Flawonoidy (rutyna, kwercetyna - uszczelniają naczynia)",
+          "Saponiny trójterpenowe (działanie przeciwgrzybicze i moczopędne)",
+          "Garbniki (do 10%)",
+          "Glikozydy fenolowe (lejokarpozyd - unikalny dla S. virgaurea, działa silnie przeciwzapalnie i przeciwbólowo)",
+          "Olejek eteryczny",
+          "Kwas kawowy i chlorogenowy"
+        ],
+        "tresc": [
+          {
+            "tekst": "Flawonoidy (rutyna, kwercetyna - uszczelniają naczynia)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Saponiny trójterpenowe (działanie przeciwgrzybicze i moczopędne)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Garbniki (do 10%)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Glikozydy fenolowe (lejokarpozyd - unikalny dla S. virgaurea, działa silnie przeciwzapalnie i przeciwbólowo)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Olejek eteryczny",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwas kawowy i chlorogenowy",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Głównymi składnikami są fenolowe glikozydy (Leiocarposid i Virgaureosid A), flawonoidy oraz olejek eteryczny z γ‑kadinenem jako głównym seskwiterpenem.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2027"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "6e91bb1b4c2c669a"
+      },
+      "zastosowanie.rzemieslnicze": {
+        "tytul": "Praktyczne zastosowanie - Rzemiosło",
+        "typ": "tekst",
+        "oryginal": "Naturalny żółty barwnik do wełny i jedwabiu (daje bardzo trwałe, nasycone kolory).",
+        "tresc": [
+          {
+            "tekst": "Naturalny żółty barwnik do wełny i jedwabiu (daje bardzo trwałe, nasycone kolory).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Dzięki zawartości flawonoidów można używać jej do barwienia wełny lub bawełny, uzyskując złocisto‑żółty odcień.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2028"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "564bc5982c7a798c"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "Miód nawłociowy jest jednym z najrzadszych i najzdrowszych miodów w Polsce – nazywany 'nektarem życia', krystalizuje się w puszystą masę i ma lekko kwaskowaty smak.",
+          "Nazwa łacińska 'Solidago' pochodzi od słowa 'solidare', co oznacza 'czynić trwałym' lub 'goić', odnosząc się do właściwości leczenia ran.",
+          "W Ameryce Północnej nawłoć była niesłusznie oskarżana o wywoływanie gorączki siennej (alergii), podczas gdy winowajcą jest kwitnąca w tym samym czasie ambrozja. Pyłek nawłoci jest zbyt ciężki, by być roznoszonym przez wiatr – wymaga owadów.",
+          "Thomas Edison eksperymentował z nawłocią (odmiana Leavenworthii) jako źródłem naturalnego kauczuku – niektóre gatunki zawierają go w liściach.",
+          "Nawłoć pospolita jest składnikiem słynnych szwajcarskich mieszanek ziołowych na drogi moczowe."
+        ],
+        "tresc": [
+          {
+            "tekst": "Miód nawłociowy jest jednym z najrzadszych i najzdrowszych miodów w Polsce – nazywany 'nektarem życia', krystalizuje się w puszystą masę i ma lekko kwaskowaty smak.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Nazwa łacińska 'Solidago' pochodzi od słowa 'solidare', co oznacza 'czynić trwałym' lub 'goić', odnosząc się do właściwości leczenia ran.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W Ameryce Północnej nawłoć była niesłusznie oskarżana o wywoływanie gorączki siennej (alergii), podczas gdy winowajcą jest kwitnąca w tym samym czasie ambrozja. Pyłek nawłoci jest zbyt ciężki, by być roznoszonym przez wiatr – wymaga owadów.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Thomas Edison eksperymentował z nawłocią (odmiana Leavenworthii) jako źródłem naturalnego kauczuku – niektóre gatunki zawierają go w liściach.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Nawłoć pospolita jest składnikiem słynnych szwajcarskich mieszanek ziołowych na drogi moczowe.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W XV i XVI wieku w Europie używano jej do leczenia ran, co dało roślinie nazwę „woundwort”.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2024"
+            ]
+          },
+          {
+            "tekst": "Petrusstab, Ungsengkraut i Heidnisch Wundkraut to tradycyjne niemieckie nazwy Nawłoć pospolitej.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2025"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "c296b67ae618992a"
+      },
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": "Nie stosować przy przewlekłych chorobach nerek przebiegających z obrzękami (wymagana konsultacja lekarska). Ze względu na zawartość garbników, długotrwałe przyjmowanie może ograniczać wchłanianie żelaza.",
+        "tresc": [
+          {
+            "tekst": "Nie stosować przy przewlekłych chorobach nerek przebiegających z obrzękami (wymagana konsultacja lekarska).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Ze względu na zawartość garbników, długotrwałe przyjmowanie może ograniczać wchłanianie żelaza.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Roślina jest praktycznie nietoksyczna, lecz przy częstym kontakcie może wywołać alergię skórną, prawdopodobnie spowodowaną seskwiterpenowymi laktonami.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2026"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "628cd15bdd390c84"
+      }
+    },
+    "uzyte_fakty": [
+      "s2020",
+      "s2022",
+      "s2024",
+      "s2025",
+      "s2026",
+      "s2027",
+      "s2028",
+      "s2029"
+    ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-21",
+    "jak": "reguly",
+    "wejscie": "b73a7d526e065485",
+    "wstawki": [
+      {
+        "miejsce": "surowce/czesc:kwiaty",
+        "rozdzial": "Surowce i zbiory",
+        "tytul": "Kwiaty",
+        "ikona": "ra-potion",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "W tradycyjnych preparatach zielarskich wykorzystuje się całe kwiatostany, ponieważ to właśnie one zawierają wszystkie aktywne składniki.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2023"
+            ],
+            "sekcja": "czesci_rosliny",
+            "czesc": "kwiaty"
+          }
+        ]
+      },
+      {
+        "miejsce": "surowce/czesc:kłącze",
+        "rozdzial": "Surowce i zbiory",
+        "tytul": "Kłącze",
+        "ikona": "ra-potion",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Roślina posiada rozgałęziony podziemny pęd (caudex) oraz zdrewniałe kłącze, które stanowią podstawę jej długowieczności.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2021"
+            ],
+            "sekcja": "czesci_rosliny",
+            "czesc": "kłącze"
+          }
+        ]
+      }
+    ],
+    "duplikaty": []
+  }
 }

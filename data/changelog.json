@@ -3,16 +3,16 @@
  "opis": "Kronika Siedziby Kwiatownika - pisze ja agent wdrozen (Siedziba).",
  "wpisy": [
   {
-   "data": "2026-10-21T11:53:28+02:00",
-   "tytul": "Nowa wiedza o 2 roślinach i 3 nowe przepisy",
-   "opis": "Siedziba zebrała 53 sprawdzone informacje (źródła: ?, niemieckie, japońskie).",
+   "data": "2026-10-21T15:53:55+02:00",
+   "tytul": "Nowa wiedza o 5 roślinach i 3 nowe przepisy",
+   "opis": "Siedziba zebrała 68 sprawdzonych informacji (źródła: ?, niemieckie, angielskie, japońskie). 5 informacji z sieci trafiło do właściwych rozdziałów i podrozdziałów stron roślin. Dodano 5 zdjęć z Wikimedia Commons.",
    "liczby": {
-    "informacje": 53,
+    "informacje": 68,
     "przepisy": 3,
-    "rosliny": 2,
+    "rosliny": 5,
     "nowe_rosliny": 0,
-    "zdjecia": 0,
-    "rozmieszczone": 0
+    "zdjecia": 5,
+    "rozmieszczone": 5
    },
    "rosliny": [
     {
@@ -32,6 +32,31 @@
       "de",
       "ja"
      ]
+    },
+    {
+     "id": "nawloc",
+     "nazwa": "Nawłoć pospolita",
+     "nowe": 10,
+     "jezyki": [
+      "de",
+      "en"
+     ]
+    },
+    {
+     "id": "leszczyna",
+     "nazwa": "Leszczyna pospolita",
+     "nowe": 4,
+     "jezyki": [
+      "de"
+     ]
+    },
+    {
+     "id": "przylaszczka_pospolita",
+     "nazwa": "Przylaszczka pospolita",
+     "nowe": 1,
+     "jezyki": [
+      "en"
+     ]
     }
    ],
    "przepisy": [
@@ -47,6 +72,11 @@
      "tytul": "Nalewka z czarnego bzu",
      "zrodlo": "piwniczkachomika.pl"
     }
+   ],
+   "aktualizacje": 2,
+   "godziny": [
+    "11:53",
+    "15:53"
    ]
   },
   {

@@ -107,7 +107,7 @@
     "Rycina": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Illustration_Hepatica_nobilis0_clean.jpg/960px-Illustration_Hepatica_nobilis0_clean.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-10-21",
     "w_url": true,
     "zdjecia": [
       {
@@ -156,5 +156,84 @@
         "zrodlo": "Wikimedia Commons"
       }
     ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-10-21",
+    "uporzadkowano": "2026-10-21",
+    "uklad": "deterministyczny",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (en): Anemone hepatica",
+        "url": "https://en.wikipedia.org/wiki/Anemone_hepatica",
+        "jezyk": "en",
+        "typ": "wikipedia",
+        "nr": 1
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "wystepowanie",
+        "tytul": "Występowanie",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Przylaszczka pospolita występuje w lasach, zaroślach i na łąkach, szczególnie w górach Europy kontynentalnej, Ameryki Północnej i Japonii.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2006"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {},
+    "fakty": [
+      {
+        "id": "s2006",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Przylaszczka pospolita występuje w lasach, zaroślach i na łąkach, szczególnie w górach Europy kontynentalnej, Ameryki Północnej i Japonii.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Anemone hepatica",
+          "url": "https://en.wikipedia.org/wiki/Anemone_hepatica"
+        },
+        "cytat": "It is found in woods, thickets and meadows, especially in the mountains of continental Europe, North America and Japan."
+      }
+    ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-21",
+    "jak": "reguly",
+    "wejscie": "6b9a86a68735f66b",
+    "wstawki": [
+      {
+        "miejsce": "natura/wystepowanie",
+        "rozdzial": "Natura i siedlisko",
+        "tytul": "Występowanie i zasięg",
+        "ikona": "ra-compass",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Przylaszczka pospolita występuje w lasach, zaroślach i na łąkach, szczególnie w górach Europy kontynentalnej, Ameryki Północnej i Japonii.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2006"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          }
+        ]
+      }
+    ],
+    "duplikaty": []
   }
 }
