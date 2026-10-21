@@ -124,7 +124,7 @@
     "Kora": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/20140211Rosa_canina3.jpg/960px-20140211Rosa_canina3.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-10-21",
     "w_url": true,
     "zdjecia": [
       {
@@ -173,5 +173,348 @@
         "zrodlo": "Wikimedia Commons"
       }
     ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-10-21",
+    "uporzadkowano": "2026-10-21",
+    "uklad": "deterministyczny: pominiete informacje: [3, 4, 5]",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (de): Hundsrose",
+        "url": "https://de.wikipedia.org/wiki/Hundsrose",
+        "jezyk": "de",
+        "typ": "wikipedia",
+        "nr": 1
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "opis",
+        "tytul": "Opis i wygląd",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Dojrzewanie owoców dzikiej róży następuje stosunkowo późno, zazwyczaj w październiku i listopadzie, co jest wyjątkowe w porównaniu z innymi gatunkami róż, i owoce często pozostają na krzewie do wczesnej wiosny.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2039"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Intensywny czerwony kolor owoców dzikiej róży jest spowodowany obecnością karotenoidów, w szczególności likopenu, które nadają im charakterystyczne zabarwienie w fazie dojrzewania.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2040"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "barwienie",
+        "tytul": "Barwienie i rzemiosło",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Kolor różowych płatków korony dzikiej róży jest generowany przez antocyjany, głównie cyjanidyn, co nadaje im charakterystyczne odcienie.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2044"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "ciekawostki",
+        "tytul": "Ciekawostki",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Ze kwiatów dzikiej róży nie wydzielają nektaru, a ich atrakcyjność wizualna dla zapylaczy wynika głównie z kontrastu między żółtymi pylnikami a różowymi płatkami korony. Nektar nie jest dostępny, a pyłek jest dostępny dla owadów głównie rano.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2041"
+            ]
+          },
+          {
+            "tekst": "W Niemczech istnieje słynny, bardzo stary egzemplarz dzikiej róży zwany 'Tysięcznym Pąkiem' w Hildesheim, który jest znany jako jedna z najbardziej historycznych roślin na terenie kraju.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2042"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "owoce": [
+        "s2039",
+        "s2040"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s2039",
+        "sekcja": "opis",
+        "czesc": "owoce",
+        "tekst": "Dojrzewanie owoców dzikiej róży następuje stosunkowo późno, zazwyczaj w październiku i listopadzie, co jest wyjątkowe w porównaniu z innymi gatunkami róż, i owoce często pozostają na krzewie do wczesnej wiosny.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Hundsrose",
+          "url": "https://de.wikipedia.org/wiki/Hundsrose"
+        },
+        "cytat": "Die Reife erfolgt im Vergleich zu anderen Rosen sehr spät im Oktober und November, selten schon im September. [...] Zur Reife sind die Hagebutten rot und hart, häufig sind sie auch im Frühling noch am Strauch."
+      },
+      {
+        "id": "s2040",
+        "sekcja": "sklad",
+        "czesc": "owoce",
+        "tekst": "Intensywny czerwony kolor owoców dzikiej róży jest spowodowany obecnością karotenoidów, w szczególności likopenu, które nadają im charakterystyczne zabarwienie w fazie dojrzewania.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Hundsrose",
+          "url": "https://de.wikipedia.org/wiki/Hundsrose"
+        },
+        "cytat": "Die Rotfärbung des Fruchtbechers wird durch Karotinoide, insbesondere durch Lycopin, hervorgerufen."
+      },
+      {
+        "id": "s2041",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Ze kwiatów dzikiej róży nie wydzielają nektaru, a ich atrakcyjność wizualna dla zapylaczy wynika głównie z kontrastu między żółtymi pylnikami a różowymi płatkami korony. Nektar nie jest dostępny, a pyłek jest dostępny dla owadów głównie rano.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Hundsrose",
+          "url": "https://de.wikipedia.org/wiki/Hundsrose"
+        },
+        "cytat": "Die Blüten sind homogame „Pollen-Scheibenblumen“, d. h., sie haben keinen Nektar. Der Farbkontrast zwischen den gelben Staubbeuteln und den rosa Kronblättern ist für die Schauwirkung der Blüte verantwortlich. [...] Der Pollen steht den Blüt"
+      },
+      {
+        "id": "s2042",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "W Niemczech istnieje słynny, bardzo stary egzemplarz dzikiej róży zwany 'Tysięcznym Pąkiem' w Hildesheim, który jest znany jako jedna z najbardziej historycznych roślin na terenie kraju.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Hundsrose",
+          "url": "https://de.wikipedia.org/wiki/Hundsrose"
+        },
+        "cytat": "Ein berühmtes und sehr altes Exemplar der Hundsrose ist der sogenannte Tausendjährige Rosenstock in Hildesheim."
+      },
+      {
+        "id": "s2044",
+        "sekcja": "barwienie",
+        "czesc": null,
+        "tekst": "Kolor różowych płatków korony dzikiej róży jest generowany przez antocyjany, głównie cyjanidyn, co nadaje im charakterystyczne odcienie.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Hundsrose",
+          "url": "https://de.wikipedia.org/wiki/Hundsrose"
+        },
+        "cytat": "Die Blütenfarbe wird durch Anthocyane, vor allem durch Cyanidin hervorgerufen."
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-21",
+    "pola": {
+      "czesci_rosliny.owoce_pozorne.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Fructus Rosae: Opis surowca",
+        "typ": "tekst",
+        "oryginal": "Mięsiste szupinki zbierane jesienią, gdy są dojrzałe, ale jeszcze twarde.",
+        "tresc": [
+          {
+            "tekst": "Mięsiste szupinki dzikiej róży zbierane jesienią, zazwyczaj w październiku i listopadzie, kiedy są dojrzałe, ale jeszcze twarde; owoce często pozostają na krzewie do wczesnej wiosny.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2039"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-20b",
+        "wejscie": "bfbf364ac73b504a"
+      },
+      "czesci_rosliny.owoce_pozorne.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Fructus Rosae: Substancje czynne",
+        "typ": "lista",
+        "oryginal": [
+          "Witamina C (nawet do 3000 mg/100g – najwięcej wśród krajowych roślin)",
+          "Galaktolipidy (GOPO – unikalny związek o działaniu przeciwzapalnym na stawy)",
+          "Karotenoidy (likopen, beta-karoten)",
+          "Flawonoidy",
+          "Pektyny",
+          "Kwasy organiczne"
+        ],
+        "tresc": [
+          {
+            "tekst": "Witamina C (nawet do 3000 mg/100g – najwięcej wśród krajowych roślin).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Galaktolipidy (GOPO – unikalny związek o działaniu przeciwzapalnym na stawy).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Karotenoidy (likopen, beta-karoten) – intensywny czerwony kolor owoców dzikiej róży jest spowodowany ich obecnością, zwłaszcza likopenu, który nadaje charakterystyczne zabarwienie w fazie dojrzewania.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2040"
+            ]
+          },
+          {
+            "tekst": "Flawonoidy.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Pektyny.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwasy organiczne.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/openai/gpt-oss-20b",
+        "wejscie": "8ff6bc040db05f57"
+      },
+      "czesci_rosliny.płatki.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Flos Rosae: Opis surowca",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Kolor różowych płatków korony dzikiej róży jest generowany przez antocyjany, głównie cyjanidyn, co nadaje im charakterystyczne odcienie.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2044"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-20b",
+        "wejscie": "a92533045bf02ca7"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "Podczas II wojny światowej w Wielkiej Brytanii, ze względu na brak importowanych cytrusów, ogłoszono narodowy program zbierania dzikiej róży. Dzieci zbierały owoce, z których produkowano syrop dla niemowląt, by chronić je przed szkorbutem.",
+          "Włoski z wnętrza owoców to klasyczny składnik 'proszku na swędzenie' (tzw. swędzipupa) używanego w żartach.",
+          "Naukowo udowodniono, że galaktolipidy zawarte w dzikiej róży (GOPO) działają tak skutecznie jak niektóre leki przeciwbólowe, ale bez skutków ubocznych dla żołądka.",
+          "Płatki dzikiej róży zbierane o świcie mają najsilniejszy aromat, ponieważ słońce nie zdążyło jeszcze odparować ich olejków.",
+          "Owoce róży mogą przetrwać na krzewach całą zimę, stanowiąc 'żelazną porcję' energii dla ptaków w najtrudniejszych miesiącach."
+        ],
+        "tresc": [
+          {
+            "tekst": "W czasie II wojny światowej w Wielkiej Brytanii, w wyniku braku importowanych cytrusów, uruchomiono program zbierania dzikiej róży; dzieci zbierały jej owoce, z których wytwarzano syrop dla niemowląt, chroniąc je przed szkorbutem.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Włosy z wnętrza owoców dzikiej róży stanowią klasyczny składnik 'proszku na swędzenie', zwany swędzipupą, wykorzystywanego w żartach.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Badania wykazały, że galaktolipidy (GOPO) z dzikiej róży działają równie skutecznie jak niektóre leki przeciwbólowe, lecz bez skutków ubocznych dla żołądka.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Płatki dzikiej róży zbierane o świcie posiadają najintensywniejszy aromat, gdyż słońce jeszcze nie zdążyło odparować ich olejków.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Owoce róży mogą przetrwać na krzewach przez całą zimę, dostarczając ptakom 'żelazną porcję' energii w najtrudniejszych miesiącach.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W Niemczech, w Hildesheim, znajduje się słynny, bardzo stary egzemplarz dzikiej róży zwany 'Tysięcznym Pąkiem', uważany za jedną z najstarszych roślin w kraju.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2042"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-20b",
+        "wejscie": "c02f8ba3718ac904"
+      }
+    },
+    "uzyte_fakty": [
+      "s2039",
+      "s2040",
+      "s2042",
+      "s2044"
+    ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-21",
+    "jak": "llm:groq/openai/gpt-oss-20b",
+    "wejscie": "9996af2713082993",
+    "wstawki": [
+      {
+        "miejsce": "cykl/biologia",
+        "rozdzial": "Cykl życia i ekosystem",
+        "tytul": "Kwitnienie, zapylanie i rozsiewanie",
+        "ikona": "ra-cycle",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Ze kwiatów dzikiej róży nie wydzielają nektaru, a ich atrakcyjność wizualna dla zapylaczy wynika głównie z kontrastu między żółtymi pylnikami a różowymi płatkami korony. Nektar nie jest dostępny, a pyłek jest dostępny dla owadów głównie rano.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2041"
+            ],
+            "sekcja": "ciekawostki",
+            "czesc": null
+          }
+        ]
+      }
+    ],
+    "duplikaty": []
   }
 }

@@ -3,16 +3,16 @@
  "opis": "Kronika Siedziby Kwiatownika - pisze ja agent wdrozen (Siedziba).",
  "wpisy": [
   {
-   "data": "2026-10-21T17:17:21+02:00",
-   "tytul": "Nowa wiedza o 6 roślinach i 3 nowe przepisy",
-   "opis": "Siedziba zebrała 80 sprawdzonych informacji (źródła: ?, niemieckie, angielskie, japońskie, rosyjskie). 10 informacji z sieci trafiło do właściwych rozdziałów i podrozdziałów stron roślin. Dodano 5 zdjęć z Wikimedia Commons.",
+   "data": "2026-10-21T20:47:56+02:00",
+   "tytul": "Nowa wiedza o 8 roślinach i 3 nowe przepisy",
+   "opis": "Siedziba zebrała 92 sprawdzone informacje (źródła: ?, niemieckie, angielskie, japońskie, rosyjskie). 11 informacji z sieci trafiło do właściwych rozdziałów i podrozdziałów stron roślin. Dodano 5 zdjęć z Wikimedia Commons.",
    "liczby": {
-    "informacje": 80,
+    "informacje": 92,
     "przepisy": 3,
-    "rosliny": 6,
+    "rosliny": 8,
     "nowe_rosliny": 0,
     "zdjecia": 5,
-    "rozmieszczone": 10
+    "rozmieszczone": 11
    },
    "rosliny": [
     {
@@ -54,6 +54,23 @@
      ]
     },
     {
+     "id": "dziurawiec_zwyczajny",
+     "nazwa": "Dziurawiec zwyczajny",
+     "nowe": 7,
+     "jezyki": [
+      "de",
+      "en"
+     ]
+    },
+    {
+     "id": "dzika_roza",
+     "nazwa": "Dzika róża",
+     "nowe": 5,
+     "jezyki": [
+      "de"
+     ]
+    },
+    {
      "id": "leszczyna",
      "nazwa": "Leszczyna pospolita",
      "nowe": 4,
@@ -84,11 +101,12 @@
      "zrodlo": "piwniczkachomika.pl"
     }
    ],
-   "aktualizacje": 3,
+   "aktualizacje": 4,
    "godziny": [
     "11:53",
     "15:53",
-    "17:17"
+    "17:17",
+    "20:47"
    ]
   },
   {

@@ -120,7 +120,7 @@
     "Nasiona": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Hypericum_perforatum_plantlets.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-10-21",
     "w_url": true,
     "zdjecia": [
       {
@@ -168,6 +168,441 @@
         "licencja_url": null,
         "zrodlo": "Wikimedia Commons"
       }
+    ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-10-21",
+    "uporzadkowano": "2026-10-21",
+    "uklad": "deterministyczny: informacje uzyte wiele razy: [3]",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (de): Echtes Johanniskraut",
+        "url": "https://de.wikipedia.org/wiki/Echtes_Johanniskraut",
+        "jezyk": "de",
+        "typ": "wikipedia",
+        "nr": 1
+      },
+      {
+        "nazwa": "Plants For A Future (PFAF)",
+        "url": "https://pfaf.org/user/Plant.aspx?LatinName=Hypericum+perforatum",
+        "jezyk": "en",
+        "typ": "strona",
+        "nr": 2
+      },
+      {
+        "nazwa": "www.blogrod.pl",
+        "url": "https://www.blogrod.pl/artykuly/ziele-dziurawca-wsparcie-w-okresie-obnizonego-nastroju-",
+        "jezyk": "pl-PL",
+        "typ": "strona",
+        "nr": 3
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "wystepowanie",
+        "tytul": "Występowanie",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Roślina jest letnią rośliną zielną, której korzenie sięgają do 50 cm, a małe nasiona są rozprzestrzeniane przez zwierzęta oraz wiatr.",
+            "czesc": "nasiona",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2053"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Surowcem są kwiaty i pąki, które zawierają od 0,1 % do 0,3 % hypericyny, głównego pigmentu rośliny.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2051"
+            ]
+          },
+          {
+            "tekst": "Głównymi barwnikami soku dziurawca są hyperycyna i pseudohyperycyna, które nadają mu żywoczerwoną barwę.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2066"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "historia",
+        "tytul": "Historia i nazwa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Już w I wieku n.e. Dioskurides zalecał dziurawiec na rwa kulszową oraz na oparzenia.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2052"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kultura",
+        "tytul": "Wierzenia i tradycje",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Złote kwiaty dziurawca wplątano w wianki, które w czasie święta Matki Boskiej Zielnej lub Bożego Ciała zawieszano w oknach jako ochronny amulet.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2065"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Kwiaty St. John’s Wort oraz ich soki mogą wywołać fotosensytywność, prowadząc do oparzeń i przebarwień skóry. Dodatkowo, spożycie rośliny może powodować zaburzenia żołądkowo‑jelitowe, reakcje alergiczne i zmęczenie.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2064"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "ciekawostki",
+        "tytul": "Ciekawostki",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Dziurawiec jest ważną rośliną żywicielską dla wielu gatunków motyli, m.in. Actinotia polyodon i Aplocera efformata.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2054"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "nasiona": [
+        "s2053"
+      ],
+      "kwiaty": [
+        "s2051",
+        "s2066",
+        "s2065",
+        "s2064"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s2051",
+        "sekcja": "sklad",
+        "czesc": "kwiaty",
+        "tekst": "Surowcem są kwiaty i pąki, które zawierają od 0,1 % do 0,3 % hypericyny, głównego pigmentu rośliny.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Echtes Johanniskraut",
+          "url": "https://de.wikipedia.org/wiki/Echtes_Johanniskraut"
+        },
+        "cytat": "Inhaltsstoffe des Echten Johanniskrauts sind u. a. Naphthodianthrone (sog. Hypericine) (0,1–0,3 %): Hypericin, Pseudohypericin"
+      },
+      {
+        "id": "s2052",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Już w I wieku n.e. Dioskurides zalecał dziurawiec na rwa kulszową oraz na oparzenia.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Echtes Johanniskraut",
+          "url": "https://de.wikipedia.org/wiki/Echtes_Johanniskraut"
+        },
+        "cytat": "Als Indikationen gibt Dioskurides in seiner Materia medica (1. Jh.) Ischias an, wie auch Linderung von Brandwunden."
+      },
+      {
+        "id": "s2053",
+        "sekcja": "wystepowanie",
+        "czesc": "nasiona",
+        "tekst": "Roślina jest letnią rośliną zielną, której korzenie sięgają do 50 cm, a małe nasiona są rozprzestrzeniane przez zwierzęta oraz wiatr.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Echtes Johanniskraut",
+          "url": "https://de.wikipedia.org/wiki/Echtes_Johanniskraut"
+        },
+        "cytat": "Es wurzelt bis 50 Zentimeter tief... Die kleinen Samen der bei Trockenheit geöffneten Kapselfrüchte werden von Tieren verschleppt (Zoochorie) oder durch den Wind verbreitet."
+      },
+      {
+        "id": "s2054",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Dziurawiec jest ważną rośliną żywicielską dla wielu gatunków motyli, m.in. Actinotia polyodon i Aplocera efformata.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Echtes Johanniskraut",
+          "url": "https://de.wikipedia.org/wiki/Echtes_Johanniskraut"
+        },
+        "cytat": "Das Echte Johanniskraut dient mehreren Schmetterlingsarten als Raupenfutterpflanze."
+      },
+      {
+        "id": "s2064",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "kwiaty",
+        "tekst": "Kwiaty St. John’s Wort oraz ich soki mogą wywołać fotosensytywność, prowadząc do oparzeń i przebarwień skóry. Dodatkowo, spożycie rośliny może powodować zaburzenia żołądkowo‑jelitowe, reakcje alergiczne i zmęczenie.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Plants For A Future (PFAF)",
+          "url": "https://pfaf.org/user/Plant.aspx?LatinName=Hypericum+perforatum"
+        },
+        "cytat": "Skin contact with the sap, or ingestion of the plant, can cause photosensitivity in some people[13, 76, 222]. Common side-effects are gastointestinal disturbances, allergic reactions & fatigue."
+      },
+      {
+        "id": "s2065",
+        "sekcja": "kultura",
+        "czesc": "kwiaty",
+        "tekst": "Złote kwiaty dziurawca wplątano w wianki, które w czasie święta Matki Boskiej Zielnej lub Bożego Ciała zawieszano w oknach jako ochronny amulet.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "www.blogrod.pl",
+          "url": "https://www.blogrod.pl/artykuly/ziele-dziurawca-wsparcie-w-okresie-obnizonego-nastroju-"
+        },
+        "cytat": "Wianki, w które wplatano jej złote kwiaty, święcono w święto Matki Boskiej Zielnej lub Boże Ciało i wieszano w oknach."
+      },
+      {
+        "id": "s2066",
+        "sekcja": "sklad",
+        "czesc": "kwiaty",
+        "tekst": "Głównymi barwnikami soku dziurawca są hyperycyna i pseudohyperycyna, które nadają mu żywoczerwoną barwę.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "www.blogrod.pl",
+          "url": "https://www.blogrod.pl/artykuly/ziele-dziurawca-wsparcie-w-okresie-obnizonego-nastroju-"
+        },
+        "cytat": "Naftodiantrony Charakterystycznymi dla ziela dziurawca substancjami są hyperycyna i pseudohyperycyna – odpowiedzialne za żywoczerwoną barwę soku z tej rośliny."
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-21",
+    "pola": {
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Wieloletnia bylina o złocistożółtych kwiatach, pospolita na łąkach i polanach. Nazwa pochodzi od charakterystycznych przeświecających punktów na liściach, które wyglądają jak dziurki (w rzeczywistości są to zbiorniczki olejków eterycznych). Jest to jedna z najlepiej przebadanych roślin leczniczych na świecie, łącząca działanie przeciwdepresyjne, przeciwzapalne i regenerujące układ pokarmowy.",
+        "tresc": [
+          {
+            "tekst": "Wieloletnia bylina o złocistożółtych kwiatach, pospolita na łąkach i polanach.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Nazwa pochodzi od charakterystycznych przeświecających punktów na liściach, które wyglądają jak dziurki (w rzeczywistości są to zbiorniczki olejków eterycznych).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jest to jedna z najlepiej przebadanych roślin leczniczych na świecie, łącząca działanie przeciwdepresyjne, przeciwzapalne i regenerujące układ pokarmowy.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Roślina jest letnią rośliną zielną, której korzenie sięgają do 50 cm, a małe nasiona są rozprzestrzeniane przez zwierzęta oraz wiatr.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2053"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "0477c4269d2e31f4"
+      },
+      "czesci_rosliny.kwiaty.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Flos Hyperici: Substancje czynne",
+        "typ": "lista",
+        "oryginal": [
+          "Bardzo wysoka zawartość hiperycyny i olejków"
+        ],
+        "tresc": [
+          {
+            "tekst": "Bardzo wysoka zawartość hiperycyny i olejków",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Surowcem są kwiaty i pąki, które zawierają od 0,1 % do 0,3 % hypericyny, głównego pigmentu rośliny.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2051"
+            ]
+          },
+          {
+            "tekst": "Głównymi barwnikami soku dziurawca są hyperycyna i pseudohyperycyna, które nadają mu żywoczerwoną barwę.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2066"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "0c19d43aec257610"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "Wierzono, że dziurawiec zawieszony w oknie chroni dom przed uderzeniem pioruna i złymi duchami.",
+          "Łacińska nazwa 'perforatum' odnosi się do liści, które wyglądają na podziurawione.",
+          "Czerwony olej z dziurawca był nazywany 'krwią św. Jana' i uważany za najskuteczniejszy lek na rany wojenne.",
+          "Dziurawiec jest jedną z niewielu roślin, której skuteczność w leczeniu depresji została potwierdzona klinicznie jako równa syntetycznym lekom z grupy SSRI (przy mniejszej liczbie skutków ubocznych)."
+        ],
+        "tresc": [
+          {
+            "tekst": "Wierzono, że dziurawiec zawieszony w oknie chroni dom przed uderzeniem pioruna i złymi duchami.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Łacińska nazwa 'perforatum' odnosi się do liści, które wyglądają na podziurawione.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Czerwony olej z dziurawca był nazywany 'krwią św. Jana' i uważany za najskuteczniejszy lek na rany wojenne.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Dziurawiec jest jedną z niewielu roślin, której skuteczność w leczeniu depresji została potwierdzona klinicznie jako równa syntetycznym lekom z grupy SSRI (przy mniejszej liczbie skutków ubocznych).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Już w I wieku n.e. Dioskurides zalecał dziurawiec na rwa kulszową oraz na oparzenia.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2052"
+            ]
+          },
+          {
+            "tekst": "Złote kwiaty dziurawca wplątano w wianki, które w czasie święta Matki Boskiej Zielnej lub Bożego Ciała zawieszano w oknach jako ochronny amulet.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2065"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "0577aa440c528e38"
+      },
+      "czesci_rosliny.kwiaty.ostrzezenia": {
+        "tytul": "Surowce i zbiory - Flos Hyperici: Ostrzeżenia",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Kwiaty St. John’s Wort oraz ich soki mogą wywołać fotosensytywność, prowadząc do oparzeń i przebarwień skóry. Dodatkowo, spożycie rośliny może powodować zaburzenia żołądkowo‑jelitowe, reakcje alergiczne i zmęczenie.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2064"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "4c49e47d4b6b56b1"
+      },
+      "permakultura.funkcje": {
+        "tytul": "Cykl życia i ekosystem - Permakultura - funkcje",
+        "typ": "lista",
+        "oryginal": [
+          "Dynamiczny akumulator (akumuluje żelazo).",
+          "Wskaźnik gleb suchych i ubogich w azot.",
+          "Pożytek dla zapylaczy w szczycie lata."
+        ],
+        "tresc": [
+          {
+            "tekst": "Dynamiczny akumulator (akumuluje żelazo).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Wskaźnik gleb suchych i ubogich w azot.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Pożytek dla zapylaczy w szczycie lata.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Dziurawiec jest ważną rośliną żywicielską dla wielu gatunków motyli, m.in. Actinotia polyodon i Aplocera efformata.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2054"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "8f2be03ce7aab661"
+      }
+    },
+    "uzyte_fakty": [
+      "s2051",
+      "s2052",
+      "s2053",
+      "s2054",
+      "s2064",
+      "s2065",
+      "s2066"
     ]
   }
 }
