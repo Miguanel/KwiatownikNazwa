@@ -3,16 +3,16 @@
  "opis": "Kronika Siedziby Kwiatownika - pisze ja agent wdrozen (Siedziba).",
  "wpisy": [
   {
-   "data": "2026-10-21T15:53:55+02:00",
-   "tytul": "Nowa wiedza o 5 roślinach i 3 nowe przepisy",
-   "opis": "Siedziba zebrała 68 sprawdzonych informacji (źródła: ?, niemieckie, angielskie, japońskie). 5 informacji z sieci trafiło do właściwych rozdziałów i podrozdziałów stron roślin. Dodano 5 zdjęć z Wikimedia Commons.",
+   "data": "2026-10-21T17:17:21+02:00",
+   "tytul": "Nowa wiedza o 6 roślinach i 3 nowe przepisy",
+   "opis": "Siedziba zebrała 80 sprawdzonych informacji (źródła: ?, niemieckie, angielskie, japońskie, rosyjskie). 10 informacji z sieci trafiło do właściwych rozdziałów i podrozdziałów stron roślin. Dodano 5 zdjęć z Wikimedia Commons.",
    "liczby": {
-    "informacje": 68,
+    "informacje": 80,
     "przepisy": 3,
-    "rosliny": 5,
+    "rosliny": 6,
     "nowe_rosliny": 0,
     "zdjecia": 5,
-    "rozmieszczone": 5
+    "rozmieszczone": 10
    },
    "rosliny": [
     {
@@ -31,6 +31,17 @@
       "?",
       "de",
       "ja"
+     ]
+    },
+    {
+     "id": "babka_lancetowata",
+     "nazwa": "Babka lancetowata",
+     "nowe": 12,
+     "jezyki": [
+      "de",
+      "en",
+      "ru",
+      "uk"
      ]
     },
     {
@@ -73,10 +84,11 @@
      "zrodlo": "piwniczkachomika.pl"
     }
    ],
-   "aktualizacje": 2,
+   "aktualizacje": 3,
    "godziny": [
     "11:53",
-    "15:53"
+    "15:53",
+    "17:17"
    ]
   },
   {
