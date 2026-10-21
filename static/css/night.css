@@ -275,3 +275,5 @@ html[data-theme="night"] .web-insert { background: rgba(120, 160, 210, 0.08) !im
 html[data-theme="night"] .web-insert-head { color: #8fb3e0 !important; }
 html[data-theme="night"] .kw-wiki-orig, html[data-theme="night"] .kw-wiki-orig summary { color: #a59c86 !important; }
 html[data-theme="night"] .kw-wiki-orig p { border-left-color: #4a4532 !important; color: #c9bfa6 !important; }
+html[data-theme="night"] .web-chip.web-tox { background: #3a1f1f !important; border-color: #7a3b3b !important; color: #f0b3b3 !important; }
+html[data-theme="night"] .magia-note { background: rgba(138, 109, 177, 0.12) !important; border-left-color: #8a6db1 !important; color: #d8cfe6 !important; }

@@ -63,7 +63,7 @@
    scalanie nie wplotlo w tekst, w konkretnych miejscach strony - pod trescia podrozdzialu z szablonu, jako nowe
    podrozdzialy na koncu rozdzialu albo w rozdzialach dodanych w "Ukladzie strony" Siedziby. #}
 {% macro z_sieci_lista(punkty) -%}
-    <ul class="web-facts web-insert-list">{% for p in punkty %}<li>{% if p.czesc %}<span class="web-chip">{{ p.czesc }}</span> {% endif %}{{ p.tekst }}{{ sc_refs(p) }}</li>{% endfor %}</ul>
+    <ul class="web-facts web-insert-list">{% for p in punkty %}<li>{% if p.czesc %}<span class="web-chip">{{ p.czesc }}</span> {% endif %}{% if p.kontekst %}<span class="web-chip web-ctx"{% if p.tradycja %} title="{{ p.tradycja }}"{% endif %}>{{ p.kontekst }}</span> {% endif %}{% if p.toksyczne %}<span class="web-chip web-tox" title="Roślina trująca – opis dawnej praktyki, nie do powtarzania">☠ trująca</span> {% endif %}{{ p.tekst }}{{ sc_refs(p) }}</li>{% endfor %}</ul>
 {%- endmacro %}
 {% macro wst(p, miejsce) -%}
     {%- set w = wstawka(p, miejsce) -%}
@@ -82,7 +82,7 @@
     {%- for ch in wlasne_rozdzialy(p, po) %}
             <details class="grimmoire-tab web-tab">
                 <summary><i class="ra {{ ch.ikona }}"></i> {{ ch.tytul }}</summary>
-                <div class="tab-content">{% for w in ch.wstawki %}{{ web_subtab(w) }}{% endfor %}</div>
+                <div class="tab-content">{% if ch.id == 'magia' %}<p class="magia-note"><i class="ra ra-cauldron" aria-hidden="true"></i> Dawne wierzenia, obrzędy i zabobony z zagranicznych i historycznych źródeł – opis kultury, nie porada ani przepis. Wiele „roślin czarownic” jest silnie trujących: nie stosuj ich.</p>{% endif %}{% for w in ch.wstawki %}{{ web_subtab(w) }}{% endfor %}</div>
             </details>
     {%- endfor -%}
 {%- endmacro %}
@@ -699,6 +699,9 @@
     .web-src { color: var(--kw-green); font-size: 0.8em; margin-left: 4px; white-space: nowrap; }
     .web-summary { margin: 0 0 10px; padding: 8px 12px; border-left: 3px solid var(--kw-gold); background: #f8f3e3; overflow-wrap: anywhere; border-radius: 0 4px 4px 0; }
     .web-parts { font-size: 0.9em; color: var(--kw-muted); margin-bottom: 10px; line-height: 1.9; }
+    .web-chip.web-ctx { border-style: dashed; font-style: italic; }
+    .web-chip.web-tox { border-color: #d9a3a3; background: #fbeeee; color: #8c2f2f; }
+    .magia-note { margin: 4px 0 10px; padding: 8px 12px; border-left: 3px solid #8a6db1; background: #f5f1fa; border-radius: 6px; font-size: .92em; line-height: 1.45; }
     .web-chip { display: inline-block; padding: 0 8px; margin: 0 4px 2px 0; border: 1px solid #c4cfaa; background: #f2f5ea; border-radius: 10px; font-size: 0.8em; color: var(--kw-green); white-space: nowrap; }
     /* przypisy [n] – jak w Wikipedii */
     .web-ref { color: #2c5fa0; font-size: 0.75em; vertical-align: super; margin-left: 1px; text-decoration: none; }

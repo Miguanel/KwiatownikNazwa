@@ -190,8 +190,9 @@ def _wstawki(plant):
             ids = set(p.get("fakty") or [])
             if ids and ids <= used:                         # w miedzyczasie wplecione w tekst rozdzialu
                 continue
-            pts.append({"tekst": str(p["tekst"]), "czesc": p.get("czesc"),
-                        "refs": _refs(plant, p.get("zrodla"), p.get("fakty"), zr, fk)})
+            ctx, tox, trad = _kontekst(p.get("fakty"), fk)
+            pts.append({"tekst": str(p["tekst"]), "czesc": p.get("czesc"), "kontekst": ctx, "toksyczne": tox,
+                        "tradycja": trad, "refs": _refs(plant, p.get("zrodla"), p.get("fakty"), zr, fk)})
         if pts:
             ch = w["miejsce"].split("/", 1)[0]
             out.append({"miejsce": w["miejsce"], "rozdzial_id": ch, "rozdzial": str(w.get("rozdzial") or ch),
@@ -200,6 +201,17 @@ def _wstawki(plant):
                         "rozdzial_po": str(w.get("rozdzial_po") or "tajemna"), "punkty": pts,
                         "kotwica": ch in ROZDZIALY and kotwica_widoczna(plant, w["miejsce"])})
     return out
+
+
+def _kontekst(fakty, fk):
+    """Magia roslin (Siedziba): skad i z kiedy jest informacja - "Niemcy · XIX w." - z metadanych faktow
+    (wiedza.fakty[].magia: kraj, epoka, tradycja, toksyczne). Zwraca (kontekst, czy_roslina_trujaca, tradycja)."""
+    for fid in fakty or []:
+        m = (fk.get(fid) or {}).get("magia")
+        if isinstance(m, dict):
+            ctx = " · ".join(str(m[k])[:40] for k in ("kraj", "epoka") if m.get(k))
+            return ctx, m.get("toksyczne") is True, str(m.get("tradycja") or "")[:80]
+    return "", False, ""
 
 
 def wstawka(plant, miejsce):
