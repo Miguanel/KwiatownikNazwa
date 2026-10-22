@@ -107,7 +107,7 @@
     "Rycina": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Illustration_Hepatica_nobilis0_clean.jpg/960px-Illustration_Hepatica_nobilis0_clean.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-21",
+    "zaktualizowano": "2026-10-22",
     "w_url": true,
     "zdjecia": [
       {
@@ -159,9 +159,9 @@
   },
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-10-21",
-    "uporzadkowano": "2026-10-21",
-    "uklad": "deterministyczny",
+    "zaktualizowano": "2026-10-22",
+    "uporzadkowano": "2026-10-22",
+    "uklad": "llm:groq/openai/gpt-oss-120b",
     "zrodla": [
       {
         "nazwa": "Wikipedia (en): Anemone hepatica",
@@ -169,9 +169,41 @@
         "jezyk": "en",
         "typ": "wikipedia",
         "nr": 1
+      },
+      {
+        "nazwa": "Wikipedia (ja): ミスミソウ",
+        "url": "https://ja.wikipedia.org/wiki/%E3%83%9F%E3%82%B9%E3%83%9F%E3%82%BD%E3%82%A6",
+        "jezyk": "ja",
+        "typ": "wikipedia",
+        "nr": 2
+      },
+      {
+        "nazwa": "poznan.pl",
+        "url": "https://www.poznan.pl/mim/main/-,p,69022,69025,69028.html",
+        "jezyk": "pl",
+        "typ": "strona",
+        "nr": 3
       }
     ],
     "sekcje": [
+      {
+        "klucz": "opis",
+        "tytul": "Opis i wygląd",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Liście mają trzy klapki, są mięsiste, pozbawione włosków, ciemnozielone z białawymi paskami po stronie górnej i fioletowo‑brązowe od spodu.",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2008"
+            ]
+          }
+        ]
+      },
       {
         "klucz": "wystepowanie",
         "tytul": "Występowanie",
@@ -189,9 +221,105 @@
             ]
           }
         ]
+      },
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W średniowiecznej Europie liście tej rośliny używano do leczenia chorób wątroby ze względu na ich podobieństwo do tego organu.",
+            "czesc": "liście",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2015"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "historia",
+        "tytul": "Historia i nazwa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W 2006 roku przylaszczka została wybrana oficjalnym kwiatem partii Sweden Democrats w Szwecji.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2010"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kultura",
+        "tytul": "Wierzenia i tradycje",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W Japonii roślina znana jest jako Yukiwariso (雪割草) lub Misumisō (ミスミソウ) i jest tematem zimowych festiwali kwiatowych w Tokio i Niigacie.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2011"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "magia",
+        "tytul": "Magia i zabobony",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W polskich wierzeniach przylaszczka pospolita posiada moc odpędzania złych duchów i uroków oraz była wykorzystywana w rytuałach przepowiadania przyszłości.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2207",
+              "s2208"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "ciekawostki",
+        "tytul": "Ciekawostki",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Kwiaty przylaszczki produkują pyłek, ale nie nektar; przyciągają najpierw pszczoły Lasioglossum i małe pszczoły drążarki, a później powracają po pyłek.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2013"
+            ]
+          }
+        ]
       }
     ],
-    "czesci": {},
+    "czesci": {
+      "liście": [
+        "s2008",
+        "s2015"
+      ]
+    },
     "fakty": [
       {
         "id": "s2006",
@@ -204,34 +332,323 @@
           "url": "https://en.wikipedia.org/wiki/Anemone_hepatica"
         },
         "cytat": "It is found in woods, thickets and meadows, especially in the mountains of continental Europe, North America and Japan."
+      },
+      {
+        "id": "s2008",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Liście mają trzy klapki, są mięsiste, pozbawione włosków, ciemnozielone z białawymi paskami po stronie górnej i fioletowo‑brązowe od spodu.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Anemone hepatica",
+          "url": "https://en.wikipedia.org/wiki/Anemone_hepatica"
+        },
+        "cytat": "The leaves have three lobes and are fleshy and hairless, 7–9 cm wide... The upper side is dark green with whitish stripes and the lower side is violet or reddish brown."
+      },
+      {
+        "id": "s2010",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "W 2006 roku przylaszczka została wybrana oficjalnym kwiatem partii Sweden Democrats w Szwecji.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Anemone hepatica",
+          "url": "https://en.wikipedia.org/wiki/Anemone_hepatica"
+        },
+        "cytat": "It is since 2006 the official flower of the Sweden Democrats political party in Swedish politics."
+      },
+      {
+        "id": "s2011",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "W Japonii roślina znana jest jako Yukiwariso (雪割草) lub Misumisō (ミスミソウ) i jest tematem zimowych festiwali kwiatowych w Tokio i Niigacie.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Anemone hepatica",
+          "url": "https://en.wikipedia.org/wiki/Anemone_hepatica"
+        },
+        "cytat": "In Japan, where the plant is known as Yukiwariso (雪割草, yukiwarisō, lit. 'snow-breaking plant') or Misumisō (ミスミソウ), it has become popular as the subject of winter flower festivals in Tokyo and Niigata."
+      },
+      {
+        "id": "s2013",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Kwiaty przylaszczki produkują pyłek, ale nie nektar; przyciągają najpierw pszczoły Lasioglossum i małe pszczoły drążarki, a później powracają po pyłek.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Anemone hepatica",
+          "url": "https://en.wikipedia.org/wiki/Anemone_hepatica"
+        },
+        "cytat": "Hepatica flowers produce pollen but no nectar. In North America, the flowers first attract Lasioglossum sweat bees and small carpenter bees... then when the stamens begin to release pollen, the bees return to collect and feed on pollen."
+      },
+      {
+        "id": "s2015",
+        "sekcja": "historia",
+        "czesc": "liście",
+        "tekst": "W średniowiecznej Europie liście tej rośliny używano do leczenia chorób wątroby, ze względu na ich podobieństwo do tego organu.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): ミスミソウ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%83%9F%E3%82%B9%E3%83%9F%E3%82%BD%E3%82%A6"
+        },
+        "cytat": "中世ヨーロッパでは、葉の形が肝臓を連想させることから肝臓の病気の治療に用いられた。"
+      },
+      {
+        "id": "s2207",
+        "sekcja": "magia",
+        "czesc": null,
+        "tekst": "W polskich wierzeniach przylaszczka pospolita posiada moc odpędzania złych duchów i uroków.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "poznan.pl",
+          "url": "https://www.poznan.pl/mim/main/-,p,69022,69025,69028.html"
+        },
+        "cytat": "Według wierzeń ludowych ma moc odpędzania złych duchów i uroków.",
+        "magia": {
+          "rodzaj": "ochrona",
+          "kraj": "Polska",
+          "tradycja": "wierzenia ludowe"
+        }
+      },
+      {
+        "id": "s2208",
+        "sekcja": "magia",
+        "czesc": null,
+        "tekst": "Roślina była wykorzystywana w rytuałach przepowiadania przyszłości.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "poznan.pl",
+          "url": "https://www.poznan.pl/mim/main/-,p,69022,69025,69028.html"
+        },
+        "cytat": "Wykorzystywana w rytuałach z przepowiadaniem przyszłości.",
+        "magia": {
+          "rodzaj": "wrozby",
+          "kraj": "Polska",
+          "tradycja": "wierzenia ludowe"
+        }
       }
     ]
   },
-  "rozmieszczenie": {
+  "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-21",
-    "jak": "reguly",
-    "wejscie": "06855297b5af67c9",
-    "wstawki": [
-      {
-        "miejsce": "natura/wystepowanie",
-        "rozdzial": "Natura i siedlisko",
-        "tytul": "Występowanie i zasięg",
-        "ikona": "ra-compass",
-        "nowy": true,
-        "punkty": [
+    "zaktualizowano": "2026-10-22",
+    "pola": {
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": [
+          "Liście trójklapowe, o sercowatej nasadzie, spodem często przebarwione na fioletowo.",
+          "Kwiaty zazwyczaj błękitne lub fioletowe (rzadziej różowe lub białe) z licznymi pręcikami.",
+          "Szypułki kwiatowe gęsto, miękko owłosione.",
+          "Brak płatków korony – ich rolę pełnią barwne działki kielicha."
+        ],
+        "tresc": [
           {
-            "tekst": "Przylaszczka pospolita występuje w lasach, zaroślach i na łąkach, szczególnie w górach Europy kontynentalnej, Ameryki Północnej i Japonii.",
+            "tekst": "Liście trójklapowe, o sercowatej nasadzie, mięsiste, pozbawione włosków, ciemnozielone z białawymi paskami po stronie górnej oraz spodem często przebarwione na fioletowo‑brązowe.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2008"
+            ]
+          },
+          {
+            "tekst": "Kwiaty zazwyczaj błękitne lub fioletowe (rzadziej różowe lub białe) z licznymi pręcikami.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Szypułki kwiatowe gęsto, miękko owłosione.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Brak płatków korony – ich rolę pełnią barwne działki kielicha.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "b654f7ef30033d7d"
+      },
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Niewielka, wieloletnia bylina leśna, osiągająca 10-20 cm wysokości. Jest jednym z najwcześniej kwitnących gatunków w Europie Środkowej, często przebijając się przez zeszłoroczne liście jeszcze przed pojawieniem się nowej zieleni. Jej trójklapowe liście są skórzaste i zimozielone, a błękitnofioletowe kwiaty zamykają się na noc i podczas deszczu. W Polsce jest pod ścisłą ochroną gatunkową.",
+        "tresc": [
+          {
+            "tekst": "Niewielka, wieloletnia bylina leśna, osiągająca 10‑20 cm wysokości.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Występuje w lasach, zaroślach i na łąkach, szczególnie w górach Europy kontynentalnej, Ameryki Północnej i Japonii.",
             "zrodla": [
               1
             ],
             "fakty": [
               "s2006"
+            ]
+          },
+          {
+            "tekst": "Jest jednym z najwcześniej kwitnących gatunków w Europie Środkowej, często przebijając się przez zeszłoroczne liście jeszcze przed pojawieniem się nowej zieleni.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jej trójklapowe liście są skórzaste i zimozielone, a błękitnofioletowe kwiaty zamykają się na noc i podczas deszczu.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W Polsce jest pod ścisłą ochroną gatunkową.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "eec8336d9a1aeb68"
+      },
+      "czesci_rosliny.liście.wlasciwości": {
+        "tytul": "Surowce i zbiory - Liście (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "W średniowiecznej Europie liście przylaszczki pospolitej (Hepatica nobilis) używano do leczenia chorób wątroby ze względu na ich podobieństwo do tego organu.",
+            "zrodla": [
+              2
             ],
-            "sekcja": "wystepowanie",
+            "fakty": [
+              "s2015"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "d113f9899e09c4b5"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "Nazwa 'Hepatica' pochodzi od greckiego 'hepar' (wątroba), co odnosi się do kształtu liści.",
+          "Nasiona przylaszczki są roznoszone przez mrówki (myrmekochoria) – posiadają specjalne wyrostki (elajosomy), które są przysmakiem mrówek.",
+          "Przylaszczka kwitnie dopiero po około 7 latach od wykiełkowania z nasiona.",
+          "W Polsce zbiór ze stanu dzikiego jest zabroniony – surowiec można pozyskiwać wyłącznie z upraw ogrodowych."
+        ],
+        "tresc": [
+          {
+            "tekst": "Nasiona przylaszczki są roznoszone przez mrówki (myrmekochoria), ponieważ posiadają specjalne wyrostki zwane elajosomami, stanowiące przysmak dla tych owadów.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Przylaszczka zaczyna kwitnąć dopiero po około 7 latach od wykiełkowania z nasiona.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W Polsce zbioru przylaszczki ze stanu dzikiego jest prawem zabronione, a surowiec można pozyskiwać wyłącznie z uprawnionych plantacji ogrodowych.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W Japonii roślina nosi nazwy Yukiwariso (雪割草) lub Misumisō (ミスミソウ) i współorganizuje zimowe festiwale kwiatowe w Tokio oraz Niigacie.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2011"
+            ]
+          },
+          {
+            "tekst": "W 2006 roku przylaszczka została wybrana na oficjalny kwiat partii Sweden Democrats w Szwecji.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2010"
+            ]
+          },
+          {
+            "tekst": "Nazwa 'Hepatica' pochodzi od greckiego 'hepar' (wątroba), co odnosi się do kształtu liści.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "36a85c48f838e666"
+      },
+      "permakultura.funkcje": {
+        "tytul": "Cykl życia i ekosystem - Permakultura - funkcje",
+        "typ": "lista",
+        "oryginal": [
+          "Wczesnowiosenny pożytek pyłkowy dla pierwszych dzikich pszczół i trzmieli.",
+          "Roślina okrywowa do głębokiego cienia pod drzewami liściastymi.",
+          "Bioindykator gleb wapiennych i lasów o charakterze naturalnym."
+        ],
+        "tresc": [
+          {
+            "tekst": "Wczesnowiosenny pożytek pyłkowy dla pierwszych dzikich pszczół i trzmieli, ponieważ kwiaty przylaszczki produkują pyłek, ale nie nektar i przyciągają najpierw pszczoły Lasioglossum oraz małe pszczoły drążarki",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2013"
+            ]
+          },
+          {
+            "tekst": "Roślina okrywowa do głębokiego cienia pod drzewami liściastymi",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Bioindykator gleb wapiennych i lasów o charakterze naturalnym",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "b9f5285a138754b0"
+      }
+    },
+    "uzyte_fakty": [
+      "s2006",
+      "s2008",
+      "s2010",
+      "s2011",
+      "s2013",
+      "s2015"
+    ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-22",
+    "jak": "llm:groq/openai/gpt-oss-120b",
+    "wejscie": "3e412b78111c173d",
+    "wstawki": [
+      {
+        "miejsce": "magia/wrozby",
+        "rozdzial": "Magia i zabobony",
+        "tytul": "Wróżby, sny i przepowiednie",
+        "ikona": "ra-crystal-ball",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "W polskich wierzeniach przylaszczka pospolita posiada moc odpędzania złych duchów i uroków oraz była wykorzystywana w rytuałach przepowiadania przyszłości.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2207",
+              "s2208"
+            ],
+            "sekcja": "magia",
             "czesc": null
           }
-        ]
+        ],
+        "rozdzial_ikona": "ra-cauldron",
+        "rozdzial_po": "tajemna"
       }
     ],
     "duplikaty": []

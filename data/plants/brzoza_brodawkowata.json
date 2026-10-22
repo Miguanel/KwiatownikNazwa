@@ -179,9 +179,9 @@
   "ostrzezenia": "Pyłek brzozy jest silnym alergenem wziewnym w okresie kwietnia i maja. Osoby z niedrożnością dróg moczowych powinny skonsultować kurację z lekarzem.",
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-09-30",
-    "uporzadkowano": "2026-09-30",
-    "uklad": "deterministyczny: pominiete informacje: [9, 10, 11, 17, 18, 19, 20, 21, 22, 23]",
+    "zaktualizowano": "2026-10-22",
+    "uporzadkowano": "2026-10-22",
+    "uklad": "deterministyczny: punkt [5, 6, 19, 34] odbiega od oryginalow",
     "zrodla": [
       {
         "nazwa": "Wikipedia (pl): Brzoza brodawkowata",
@@ -203,6 +203,13 @@
         "jezyk": "en",
         "typ": "wikipedia",
         "nr": 3
+      },
+      {
+        "nazwa": "stronazdrowia.pl",
+        "url": "https://stronazdrowia.pl/oskola-to-wiosenny-eliksir-prosto-z-drzew-siegnij-po-niego-wlasnie-teraz/ar/c14-14965434",
+        "jezyk": "pl-PL",
+        "typ": "strona",
+        "nr": 4
       }
     ],
     "sekcje": [
@@ -263,6 +270,16 @@
             ]
           },
           {
+            "tekst": "Kora drzew brzozy jest najpierw złocisto-brązowa, a z czasem staje się biała w wyniku tworzenia się papierowatej tkanki, która się łuszczy.",
+            "czesc": "kora",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2111"
+            ]
+          },
+          {
             "tekst": "Naprzemianległe, osadzone na ogonkach liście mają długość od 4 do 7 centymetrów, trójkątny lub romboidalny kształt z wyciągniętym czubkiem i podwójnie piłkowany brzeg.",
             "czesc": "liście",
             "zrodla": [
@@ -280,6 +297,54 @@
             ],
             "fakty": [
               "s273"
+            ]
+          },
+          {
+            "tekst": "Owoce mają postać podłużnie eliptycznych orzeszków z dwu- lub trzykrotnie szerszymi od nich skrzydełkami. Wspierające je łuski są trójklapowe, z bocznymi klapkami dłuższymi i odgiętymi ku dołowi.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2094"
+            ]
+          },
+          {
+            "tekst": "Po wysuszeniu pączki brzozy charakteryzują się gorzkawym smakiem, silną lepkością oraz jasnozielonym wnętrzem widocznym na przekroju.",
+            "czesc": "pąki",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2095"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "wystepowanie",
+        "tytul": "Występowanie",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Brzoza brodawkowata naturalnie rośnie w Europie, Maroku, Azji umiarkowanej, Kanadzie i Alasce, a jej zasięg sięga Syberii, Chin i południowo‑zachodniej Azji.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2077"
+            ]
+          },
+          {
+            "tekst": "Odporność na zanieczyszczenia sprawia, że brzoza dobrze rośnie w obszarach przemysłowych i na otwartych stanowiskach.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2083"
             ]
           }
         ]
@@ -301,6 +366,16 @@
             ]
           },
           {
+            "tekst": "Młode liście zbiera się, gdy są jeszcze lepkie, i suszy w cieniu w naturalnych warunkach. Wysuszony surowiec ma delikatny zapach oraz gorzkawy, ściągający smak.",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2089"
+            ]
+          },
+          {
             "tekst": "Pąki zbiera się wczesną wiosną, gdy są nabrzmiałe; po suszeniu w temperaturze 25–30 °C stają się lepkie i mają silny balsamiczny zapach.",
             "czesc": "pąki",
             "zrodla": [
@@ -308,6 +383,16 @@
             ],
             "fakty": [
               "s260"
+            ]
+          },
+          {
+            "tekst": "Pąki brzozy są małe, lepkie i rozwojowo sympodialne – końcowy pąk gałęzi umiera, a wzrost kontynuowany jest z bocznego pąku.",
+            "czesc": "pąki",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2113"
             ]
           }
         ]
@@ -336,6 +421,26 @@
             ],
             "fakty": [
               "s261"
+            ]
+          },
+          {
+            "tekst": "W liściach brzozy obecne są m.in. specyficzne związki trójterpenowe, takie jak folientriol i folientetraol.",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2090"
+            ]
+          },
+          {
+            "tekst": "Głównymi składnikami olejku eterycznego z pąków są α‑copaen (~10 %), germacrén D (~15 %) i δ‑kadién (~13 %).",
+            "czesc": "pąki",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2081"
             ]
           }
         ]
@@ -387,6 +492,16 @@
             ]
           },
           {
+            "tekst": "Napar z liści brzozowych znajduje zastosowanie pomocnicze przy terapii łuszczycy.",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2092"
+            ]
+          },
+          {
             "tekst": "Tradycyjnie napary z liści wykorzystywano przy dolegliwościach takich jak piasek w nerkach, kamica nerkowa i pęcherzowa oraz inne schorzenia układu moczowego.",
             "czesc": "ziele",
             "zrodla": [
@@ -427,6 +542,24 @@
         ]
       },
       {
+        "klucz": "kosmetyka",
+        "tytul": "Kosmetyka",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Napar z liści stosuje się do przemywania przesuszonej, łuszczącej się skóry, a także tradycyjnie jako środek wspomagający porost włosów.",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2091"
+            ]
+          }
+        ]
+      },
+      {
         "klucz": "historia",
         "tytul": "Historia i nazwa",
         "podsumowanie": null,
@@ -459,6 +592,34 @@
             "fakty": [
               "s267"
             ]
+          },
+          {
+            "tekst": "Brzoza była niegdyś drzewem świętym, mającym istotne znaczenie symboliczne i pełniącym funkcje rytualne w religiach przedchrześcijańskich.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2087"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "nazwy_ludowe",
+        "tytul": "Nazwy ludowe",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Gatunek ten bywa określany w języku polskim także jako brzoza zwisła.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2088"
+            ]
           }
         ]
       },
@@ -477,6 +638,16 @@
             "fakty": [
               "s279"
             ]
+          },
+          {
+            "tekst": "Nie należy pić oskoły w przypadku uczulenia na pyłek brzozy lub nadwrażliwości na salicylany. Przeciwwskazaniami są też niewydolność wątroby, niewydolność układu moczowego oraz cukrzyca, ze względu na zawartość cukrów.",
+            "czesc": "sok",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2086"
+            ]
           }
         ]
       },
@@ -486,6 +657,26 @@
         "podsumowanie": null,
         "podsumowanie_zrodla": [],
         "punkty": [
+          {
+            "tekst": "Drewno brzozy poddane suchej destylacji służy do pozyskiwania węgla, kwasu octowego, alkoholu metylowego i smoły.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2093"
+            ]
+          },
+          {
+            "tekst": "Brzoza brodawkowata żyje zazwyczaj około 100 lat, jednak najstarszy opisany w Polsce okaz w Gdańsku Oliwie osiągnął wiek 171 lat, 26 metrów wysokości i pień o obwodzie 321 cm.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2096"
+            ]
+          },
           {
             "tekst": "Na cześć tego gatunku nazwano planetoidę (8644) Betulapendula, zarejestrowaną na początku kwietnia 1999 roku.",
             "czesc": null,
@@ -505,6 +696,36 @@
             "fakty": [
               "s268"
             ]
+          },
+          {
+            "tekst": "Drewno brzozy, jasne z ciemniejszą sercową partią, wykorzystuje się do produkcji mebli, sklejki, forniru, paneli podłogowych, nart oraz przyborów kuchennych.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2082"
+            ]
+          },
+          {
+            "tekst": "Podgrzana kora dostarcza żywicy, która jest doskonałym wodoodpornym klejem i przydatna do rozpalania ognia.",
+            "czesc": "kora",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2080"
+            ]
+          },
+          {
+            "tekst": "Wiosną z pnia drzewa wypływa duża ilość soku, zawierająca około 1 % cukru, którą można pić na surowo, zagęszczać jak syrop klonowy lub fermentować na wino.",
+            "czesc": "sok",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2078"
+            ]
           }
         ]
       }
@@ -512,26 +733,42 @@
     "czesci": {
       "kora": [
         "s265",
+        "s2111",
         "s259",
         "s262",
         "s275",
         "s276",
         "s274",
-        "s266"
+        "s266",
+        "s2080"
       ],
       "liście": [
         "s271",
+        "s2089",
         "s261",
-        "s263"
+        "s2090",
+        "s263",
+        "s2092",
+        "s2091"
       ],
       "nasiona": [
         "s273"
       ],
+      "owoce": [
+        "s2094"
+      ],
       "pąki": [
-        "s260"
+        "s2095",
+        "s260",
+        "s2113",
+        "s2081"
       ],
       "ziele": [
         "s277"
+      ],
+      "sok": [
+        "s2086",
+        "s2078"
       ]
     },
     "fakty": [
@@ -810,6 +1047,234 @@
           "url": "https://de.wikipedia.org/wiki/H%C3%A4nge-Birke"
         },
         "cytat": "Der Asteroid (8644) Betulapendula wurde am 2. April 1999 nach der Hänge-Birke benannt."
+      },
+      {
+        "id": "s2077",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Brzoza brodawkowata naturalnie rośnie w Europie, Maroku, Azji umiarkowanej, Kanadzie i Alasce, a jej zasięg sięga Syberii, Chin i południowo‑zachodniej Azji.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Betula pendula",
+          "url": "https://en.wikipedia.org/wiki/Betula_pendula"
+        },
+        "cytat": "It is native to Europe, Morocco, temperate Asia, Canada, and Alaska, although in southern Europe and Morocco it is only found at higher elevations. Its range extends into Siberia, China, and southwest Asia in the mountains of northern Turke"
+      },
+      {
+        "id": "s2078",
+        "sekcja": "ciekawostki",
+        "czesc": "sok",
+        "tekst": "Wiosną z pnia drzewa wypływa duża ilość soku, zawierająca około 1 % cukru, którą można pić na surowo, zagęszczać jak syrop klonowy lub fermentować na wino.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Betula pendula",
+          "url": "https://en.wikipedia.org/wiki/Betula_pendula"
+        },
+        "cytat": "In the spring, large quantities of sap rise up the trunk and this can be tapped. It contains around 1% sugar and can be used in a similar way to maple syrup, being drunk fresh, concentrated by evaporation, or fermented into a \"wine\"."
+      },
+      {
+        "id": "s2080",
+        "sekcja": "ciekawostki",
+        "czesc": "kora",
+        "tekst": "Podgrzana kora dostarcza żywicy, która jest doskonałym wodoodpornym klejem i przydatna do rozpalania ognia.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Betula pendula",
+          "url": "https://en.wikipedia.org/wiki/Betula_pendula"
+        },
+        "cytat": "Bark can be heated and the resin collected; the resin is an excellent waterproof glue and useful for starting fires."
+      },
+      {
+        "id": "s2081",
+        "sekcja": "sklad",
+        "czesc": "pąki",
+        "tekst": "Głównymi składnikami olejku eterycznego z pąków są α‑copaen (~10 %), germacrén D (~15 %) i δ‑kadién (~13 %).",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Betula pendula",
+          "url": "https://en.wikipedia.org/wiki/Betula_pendula"
+        },
+        "cytat": "The main components in the essential oil of the buds are α-copaene (~10%), germacrene D (~15%), and δ-cadinene (~13%)."
+      },
+      {
+        "id": "s2082",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Drewno brzozy, jasne z ciemniejszą sercową partią, wykorzystuje się do produkcji mebli, sklejki, forniru, paneli podłogowych, nart oraz przyborów kuchennych.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Betula pendula",
+          "url": "https://en.wikipedia.org/wiki/Betula_pendula"
+        },
+        "cytat": "Silver birch wood is pale in colour with a light reddish‑brown heartwood and is used in making furniture, plywood, veneers, parquet blocks, skis, and kitchen utensils, and in turnery."
+      },
+      {
+        "id": "s2083",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Odporność na zanieczyszczenia sprawia, że brzoza dobrze rośnie w obszarach przemysłowych i na otwartych stanowiskach.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Betula pendula",
+          "url": "https://en.wikipedia.org/wiki/Betula_pendula"
+        },
+        "cytat": "Its tolerance to pollution make it suitable for planting in industrial areas and exposed sites."
+      },
+      {
+        "id": "s2086",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "sok",
+        "tekst": "Nie należy pić oskoły w przypadku uczulenia na pyłek brzozy lub nadwrażliwości na salicylany. Przeciwwskazaniami są też niewydolność wątroby, niewydolność układu moczowego oraz cukrzyca, ze względu na zawartość cukrów.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/oskola-to-wiosenny-eliksir-prosto-z-drzew-siegnij-po-niego-wlasnie-teraz/ar/c14-14965434"
+        },
+        "cytat": "Z kuracji oskołą należy zrezygnować [...] w sytuacjach takich jak: uczulenie na pyłek brzozy, nadwrażliwość na salicylany [...] niewydolność wątroby, niewydolność układu moczowego [...] Natomiast ze względu na obecność cukrów oskołę powinni"
+      },
+      {
+        "id": "s2087",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "Brzoza była niegdyś drzewem świętym, mającym istotne znaczenie symboliczne i pełniącym funkcje rytualne w religiach przedchrześcijańskich.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/oskola-to-wiosenny-eliksir-prosto-z-drzew-siegnij-po-niego-wlasnie-teraz/ar/c14-14965434"
+        },
+        "cytat": "Brzoza stanowiła niegdyś święte drzewo. W niektórych religiach przedchrześcijańskich miała istotne znaczenie symboliczne i pełniła funkcje rytualne."
+      },
+      {
+        "id": "s2088",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "Gatunek ten bywa określany w języku polskim także jako brzoza zwisła.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Brzoza brodawkowata",
+          "url": "https://pl.wikipedia.org/wiki/Brzoza_brodawkowata"
+        },
+        "cytat": "Brzoza brodawkowata, brzoza zwisła (Betula pendula Roth) – gatunek drzewa z rodziny brzozowatych (Betulaceae Gray)."
+      },
+      {
+        "id": "s2089",
+        "sekcja": "czesci_rosliny",
+        "czesc": "liście",
+        "tekst": "Młode liście zbiera się, gdy są jeszcze lepkie, i suszy w cieniu w naturalnych warunkach. Wysuszony surowiec ma delikatny zapach oraz gorzkawy, ściągający smak.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Brzoza brodawkowata",
+          "url": "https://pl.wikipedia.org/wiki/Brzoza_brodawkowata"
+        },
+        "cytat": "Liście zrywa się młode, gdy są jeszcze lepkie i suszy w warunkach naturalnych w cieniu. Po wysuszeniu liście mają słaby, przyjemny zapach i gorzkawy, ściągający smak."
+      },
+      {
+        "id": "s2090",
+        "sekcja": "sklad",
+        "czesc": "liście",
+        "tekst": "W liściach brzozy obecne są m.in. specyficzne związki trójterpenowe, takie jak folientriol i folientetraol.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Brzoza brodawkowata",
+          "url": "https://pl.wikipedia.org/wiki/Brzoza_brodawkowata"
+        },
+        "cytat": "sole mineralne, olejek eteryczny i związki trójterpenowe (folientriol, folientetraol)."
+      },
+      {
+        "id": "s2091",
+        "sekcja": "kosmetyka",
+        "czesc": "liście",
+        "tekst": "Napar z liści stosuje się do przemywania przesuszonej, łuszczącej się skóry, a także tradycyjnie jako środek wspomagający porost włosów.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Brzoza brodawkowata",
+          "url": "https://pl.wikipedia.org/wiki/Brzoza_brodawkowata"
+        },
+        "cytat": "jako środek na porost włosów, a w medycynie ludowej – do wybielania skóry i przeciw piegom (...) Można nim przemywać też suchą i łuszczącą się skórę."
+      },
+      {
+        "id": "s2092",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "liście",
+        "tekst": "Napar z liści brzozowych znajduje zastosowanie pomocnicze przy terapii łuszczycy.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Brzoza brodawkowata",
+          "url": "https://pl.wikipedia.org/wiki/Brzoza_brodawkowata"
+        },
+        "cytat": "W przewlekłych chorobach dróg moczowych, niewydolności nerek, przy gośćcu i przy łuszczycy stosuje się napar z liści"
+      },
+      {
+        "id": "s2093",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Drewno brzozy poddane suchej destylacji służy do pozyskiwania węgla, kwasu octowego, alkoholu metylowego i smoły.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Brzoza brodawkowata",
+          "url": "https://pl.wikipedia.org/wiki/Brzoza_brodawkowata"
+        },
+        "cytat": "Jest przetwarzane podczas suchej destylacji na węgiel, kwas octowy, alkohol metylowy i smołę."
+      },
+      {
+        "id": "s2094",
+        "sekcja": "opis",
+        "czesc": "owoce",
+        "tekst": "Owoce mają postać podłużnie eliptycznych orzeszków z dwu- lub trzykrotnie szerszymi od nich skrzydełkami. Wspierające je łuski są trójklapowe, z bocznymi klapkami dłuższymi i odgiętymi ku dołowi.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Brzoza brodawkowata",
+          "url": "https://pl.wikipedia.org/wiki/Brzoza_brodawkowata"
+        },
+        "cytat": "Orzeszki podłużnie eliptyczne ze skrzydełkami 2-3 razy szerszymi od orzeszków. Łuski owocowe są trójklapowe. Klapki boczne, dłuższe od środkowej, są odgięte w dół."
+      },
+      {
+        "id": "s2095",
+        "sekcja": "opis",
+        "czesc": "pąki",
+        "tekst": "Po wysuszeniu pączki brzozy charakteryzują się gorzkawym smakiem, silną lepkością oraz jasnozielonym wnętrzem widocznym na przekroju.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Brzoza brodawkowata",
+          "url": "https://pl.wikipedia.org/wiki/Brzoza_brodawkowata"
+        },
+        "cytat": "Wysuszone pączki są lepkie, na przekroju jasnozielone, o silnym balsamicznym zapachu i gorzkawym smaku."
+      },
+      {
+        "id": "s2096",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Brzoza brodawkowata żyje zazwyczaj około 100 lat, jednak najstarszy opisany w Polsce okaz w Gdańsku Oliwie osiągnął wiek 171 lat, 26 metrów wysokości i pień o obwodzie 321 cm.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Brzoza brodawkowata",
+          "url": "https://pl.wikipedia.org/wiki/Brzoza_brodawkowata"
+        },
+        "cytat": "żyje ok. 100 lat (...) Brzozą opisaną jako najstarsza w Polsce był w 1992 roku okaz rosnący w Gdańsku Oliwie – miał wówczas 171 lat, przy obwodzie pnia 321 cm i wysokości 26 m."
+      },
+      {
+        "id": "s2111",
+        "sekcja": "opis",
+        "czesc": "kora",
+        "tekst": "Kora drzew brzozy jest najpierw złocisto-brązowa, a z czasem staje się biała w wyniku tworzenia się papierowatej tkanki, która się łuszczy.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Betula pendula",
+          "url": "https://en.wikipedia.org/wiki/Betula_pendula"
+        },
+        "cytat": "The bark on the trunk and branches is golden-brown at first, but later this turns to white as a result of papery tissue developing on the surface and peeling off in flakes."
+      },
+      {
+        "id": "s2113",
+        "sekcja": "czesci_rosliny",
+        "czesc": "pąki",
+        "tekst": "Pąki brzozy są małe, lepkie i rozwojowo sympodialne – końcowy pąk gałęzi umiera, a wzrost kontynuowany jest z bocznego pąku.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Betula pendula",
+          "url": "https://en.wikipedia.org/wiki/Betula_pendula"
+        },
+        "cytat": "The buds are small and sticky, and development is sympodial – the terminal bud dies away and growth continues from a lateral bud."
       }
     ]
   },
@@ -821,7 +1286,7 @@
     "Rycina": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Illustration_Betula_pendula_very_clean.jpg/960px-Illustration_Betula_pendula_very_clean.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-10-22",
     "w_url": true,
     "zdjecia": [
       {
@@ -873,51 +1338,37 @@
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-10-22",
     "pola": {
-      "identyfikacja.cechy_kluczowe": {
-        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
-        "typ": "lista",
-        "oryginal": [
-          "Biała, łuszcząca się okrężnie kora (u starych drzew u nasady czarna i spękana).",
-          "Liście trójkątne lub rombowate, o zaostrzonym wierzchołku, podwójnie piłkowane.",
-          "Gałązki pokryte licznymi, drobnymi, żywicznymi brodawkami (stąd nazwa).",
-          "Młode pędy cienkie, wiotkie i charakterystycznie zwisające."
-        ],
+      "czesci_rosliny.kora.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Cortex Betulae: Opis surowca",
+        "typ": "tekst",
+        "oryginal": "Biała warstwa kory, bogata w betulinę.",
         "tresc": [
           {
-            "tekst": "Biała, łuszcząca się okrężnie kora (u młodych drzew początkowo złotobrązowa lub pomarańczowoczerwona, z wiekiem bieleje, a u starszych drzew przy nasadzie czarna i spękana)",
+            "tekst": "Pień i gałęzie brzozy mają początkowo barwę złotobrązową lub pomarańczowoczerwoną, która z czasem zmienia się na białą w wyniku rozwoju papierowatej tkanki, podczas gdy u bardzo starych egzemplarzy nasada pnia czernieje.",
             "zrodla": [
               1,
               3
             ],
             "fakty": [
               "s258",
-              "s265"
+              "s265",
+              "s2111"
             ]
           },
           {
-            "tekst": "Liście trójkątne lub rombowate, o zaostrzonym wierzchołku, podwójnie piłkowane (naprzemianległe, osadzone na ogonkach, długości 4‑7 cm, z wyciągniętym czubkiem)",
+            "tekst": "Biała barwa tej gładkiej kory powstaje dzięki obecności betuliny, która całkowicie odbija światło, co chroni drzewo przed uszkodzeniami słonecznymi w okresie zimowym.",
             "zrodla": [
               2
             ],
             "fakty": [
-              "s271"
+              "s270"
             ]
-          },
-          {
-            "tekst": "Gałązki pokryte licznymi, drobnymi, żywicznymi brodawkami (stąd nazwa)",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Młode pędy cienkie, wiotkie i charakterystycznie zwisające",
-            "zrodla": [],
-            "fakty": []
           }
         ],
-        "model": "groq/openai/gpt-oss-120b",
-        "wejscie": "a309398d10acac91"
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "6ed038f34a9c8a50"
       },
       "opis": {
         "tytul": "Opis - Opis ogólny",
@@ -925,9 +1376,13 @@
         "oryginal": "Smukłe, eleganckie drzewo o charakterystycznej białej korze i zwisających gałęziach. Jest gatunkiem pionierskim, niezwykle odpornym na trudne warunki, który jako pierwszy zasiedla nieużytki, przygotowując grunt pod inne gatunki drzew. W tradycji północnej Brzoza jest symbolem odrodzenia, czystości i powrotu wiosny. Jej liście, pąki i sok (oskoła) stanowią fundament wiosennych kuracji detoksykujących.",
         "tresc": [
           {
-            "tekst": "Smukłe, eleganckie drzewo o charakterystycznej białej korze i zwisających gałęziach.",
-            "zrodla": [],
-            "fakty": []
+            "tekst": "Brzoza brodawkowata to smukłe, eleganckie drzewo o charakterystycznej białej korze i zwisających gałęziach, które naturalnie rośnie w Europie, Maroku, Azji umiarkowanej, Kanadzie oraz Alasce, a jej zasięg sięga Syberii, Chin i południowo‑zachodniej Azji.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2077"
+            ]
           },
           {
             "tekst": "Szybko rosnąca roślina osiąga zazwyczaj od 15 do 25 metrów wysokości, rzadziej do 30 metrów, a jej pień może mieć średnicę do 0,9 metra.",
@@ -954,8 +1409,103 @@
             "fakty": []
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "57d3129e72b22baf"
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "66435f10668e2235"
+      },
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": [
+          "Biała, łuszcząca się okrężnie kora (u starych drzew u nasady czarna i spękana).",
+          "Liście trójkątne lub rombowate, o zaostrzonym wierzchołku, podwójnie piłkowane.",
+          "Gałązki pokryte licznymi, drobnymi, żywicznymi brodawkami (stąd nazwa).",
+          "Młode pędy cienkie, wiotkie i charakterystycznie zwisające."
+        ],
+        "tresc": [
+          {
+            "tekst": "Biała, łuszcząca się okrężnie kora (u starych drzew u nasady czarna i spękana).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Naprzemianległe liście osadzone na ogonkach mają długość od 4 do 7 centymetrów, kształt trójkątny lub romboidalny z wyciągniętym czubkiem oraz podwójnie piłkowany brzeg.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s271"
+            ]
+          },
+          {
+            "tekst": "Gałązki pokryte licznymi, drobnymi, żywicznymi brodawkami (stąd nazwa).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Młode pędy cienkie, wiotkie i charakterystycznie zwisające.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwiaty żeńskie i męskie występują na tej samej roślinie w postaci zwisających kotków, a kwitnienie przypada na kwiecień i maj.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s272"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "88bf4e92015986e7"
+      },
+      "czesci_rosliny.paki.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Gemmae Betulae: Opis surowca",
+        "typ": "tekst",
+        "oryginal": "Pączki liściowe zbierane w okresie nabrzmiewania, pełne żywic.",
+        "tresc": [
+          {
+            "tekst": "Surowcem są pączki liściowe brzozy, zbierane w okresie ich nabrzmiewania, kiedy to są one pełne żywic. Zawierają one również rozwój sympodialny, co oznacza, że końcowy pąk gałęzi obumiera, a wzrost kontynuowany jest z bocznego pąka. Po wysuszeniu materiał charakteryzuje się małym rozmiarem, silną lepkością oraz gorzkawym smakiem, a na przekroju widoczne jest jasnozielone wnętrze.",
+            "zrodla": [
+              1,
+              3
+            ],
+            "fakty": [
+              "s2095",
+              "s2113"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "2694a0384cb4f25a"
+      },
+      "wymagania.stanowisko": {
+        "tytul": "Natura i siedlisko - Stanowisko",
+        "typ": "tekst",
+        "oryginal": "Pełne słońce. Jest skrajnie światłożądna – w cieniu szybko marnieje.",
+        "tresc": [
+          {
+            "tekst": "Brzoza brodawkowata preferuje stanowiska z pełnym słońcem, będąc rośliną skrajnie światłolubną, która w cieniu szybko marnieje.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Dobrze czuje się na otwartych stanowiskach, a jej odporność na zanieczyszczenia sprawia, że dobrze rośnie również w obszarach przemysłowych.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2083"
+            ]
+          },
+          {
+            "tekst": "Pełne słońce.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "b775baf1f41dce3f"
       },
       "czesci_rosliny.kora.czas_zbioru": {
         "tytul": "Surowce i zbiory - Cortex Betulae: Zbiór",
@@ -963,17 +1513,58 @@
         "oryginal": "Cały rok (najlepiej z powalonych drzew).",
         "tresc": [
           {
-            "tekst": "Kora zbierana jest przez cały rok, najlepiej z powalonych drzew, przy czym zbiór przeprowadza się również wiosną z młodych pni i gałązek, gdzie zdzierana jest jej elastyczna, biała warstwa zewnętrzna.",
+            "tekst": "Zbiór odbywa się wiosną, kiedy zdzierana jest elastyczna, biała warstwa zewnętrzna z młodych pni i gałązek.",
             "zrodla": [
               1
             ],
             "fakty": [
               "s259"
             ]
+          },
+          {
+            "tekst": "Cały rok (najlepiej z powalonych drzew).",
+            "zrodla": [],
+            "fakty": []
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
+        "model": "groq/qwen/qwen3.8-27b",
         "wejscie": "1521c4a600e9b8a5"
+      },
+      "czesci_rosliny.liscie.czas_zbioru": {
+        "tytul": "Surowce i zbiory - Folium Betulae: Zbiór",
+        "typ": "tekst",
+        "oryginal": "Maj (młode liście).",
+        "tresc": [
+          {
+            "tekst": "Surowiec zbiera się w maju, wybierając młode liście, gdy są jeszcze lepkie.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2089"
+            ]
+          },
+          {
+            "tekst": "Zgromadzone liście suszy się w cieniu w naturalnych warunkach.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2089"
+            ]
+          },
+          {
+            "tekst": "Wysuszony surowiec posiada delikatny zapach oraz gorzkawy, ściągający smak.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2089"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "119b391ad27cf77d"
       },
       "czesci_rosliny.paki.czas_zbioru": {
         "tytul": "Surowce i zbiory - Gemmae Betulae: Zbiór",
@@ -981,7 +1572,7 @@
         "oryginal": "Luty - Marzec.",
         "tresc": [
           {
-            "tekst": "Zbiór pąków odbywa się w lutym i marcu, czyli wczesną wiosną, gdy są nabrzmiałe; po suszeniu w temperaturze 25–30 °C stają się lepkie i mają silny balsamiczny zapach.",
+            "tekst": "Wysuszone w temperaturze 25–30 °C stają się lepkie i emitują silny balsamiczny zapach.",
             "zrodla": [
               1
             ],
@@ -995,7 +1586,7 @@
             "fakty": []
           }
         ],
-        "model": "groq/openai/gpt-oss-120b",
+        "model": "groq/qwen/qwen3.8-27b",
         "wejscie": "0b92d5cb99f2ac49"
       },
       "czesci_rosliny.kora.skladniki_aktywne": {
@@ -1008,32 +1599,35 @@
         ],
         "tresc": [
           {
-            "tekst": "Wymienione składniki zawierają również kwas betulinowy",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "oraz lupeol.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Betulina (nawet do 30%)",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Kora brzozowa jest bogatym źródłem betuliny, substancji aktywniej stosowanej m.in. w terapii trądziku.",
+            "tekst": "Betulina, występująca nawet do 30%, jest substancją aktywną stosowaną m.in. w terapii trądziku.",
             "zrodla": [
               1
             ],
             "fakty": [
               "s262"
             ]
+          },
+          {
+            "tekst": "Kora zawiera kwas betulinowy, który wraz z innymi terpenami wykazuje silne działanie przeciwzapalne, przeciwwirusowe oraz hamujące rozwój guzów.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s276"
+            ]
+          },
+          {
+            "tekst": "Lupeol, obecny w wewnętrznych warstwach kory, jest cennym terpenem o silnym działaniu przeciwzapalnym, przeciwwirusowym oraz hamującym rozwój guzów.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s276"
+            ]
           }
         ],
         "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "fb57e38e0c0c57e4"
+        "wejscie": "49c5037a05469300"
       },
       "czesci_rosliny.liscie.skladniki_aktywne": {
         "tytul": "Surowce i zbiory - Folium Betulae: Substancje czynne",
@@ -1047,7 +1641,7 @@
         ],
         "tresc": [
           {
-            "tekst": "Flawonoidy (hiperozyd, kwercetyna) – surowiec liściowy musi zawierać co najmniej 1,5% flawonoidów (w przeliczeniu na hiperozyd).",
+            "tekst": "Flawonoidy, takie jak hiperozyd i kwercetyna, występują w liściach brzozy brodawkowatej i zawierają co najmniej 1,5 % (w przeliczeniu na hiperozyd) [1].",
             "zrodla": [
               1
             ],
@@ -1056,28 +1650,73 @@
             ]
           },
           {
-            "tekst": "Saponiny – zawartość saponin może wynosić do 3,2%.",
+            "tekst": "Saponiny są obecne w liściach brzozy brodawkowatej i nie przekraczają 3,2 % [1].",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Olejek eteryczny.",
+            "tekst": "Olejek eteryczny występuje w liściach brzozy brodawkowatej.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Garbniki – zawartość garbników katechinowych może dochodzić do 9%.",
+            "tekst": "Garbniki, w tym katechinowe, występują w liściach brzozy brodawkowatej i nie przekraczają 9 % [1].",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s261"
+            ]
+          },
+          {
+            "tekst": "Witamina C jest zawarta w liściach brzozy brodawkowatej.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Witamina C.",
+            "tekst": "W liściach brzozy brodawkowatej występują również specyficzne związki trójterpenowe, takie jak folientriol i folientetraol [2].",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2090"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-20b",
+        "wejscie": "b1c6555600c0f0aa"
+      },
+      "czesci_rosliny.paki.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Gemmae Betulae: Substancje czynne",
+        "typ": "lista",
+        "oryginal": [
+          "Olejek eteryczny",
+          "Żywice",
+          "Flawonoidy"
+        ],
+        "tresc": [
+          {
+            "tekst": "Olejek eteryczny, w którego skład wchodzą m.in. α-copaen (~10 %), germacreń D (~15 %) i δ-kadynen (~13 %).",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2081"
+            ]
+          },
+          {
+            "tekst": "Żywice",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Flawonoidy",
             "zrodla": [],
             "fakty": []
           }
         ],
-        "model": "groq/openai/gpt-oss-120b",
-        "wejscie": "e6f1d1809abd0b81"
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "b94ce673327c0a76"
       },
       "zastosowanie.medyczne": {
         "tytul": "Praktyczne zastosowanie - Medycyna",
@@ -1085,7 +1724,7 @@
         "oryginal": "Kamica nerkowa, dna moczanowa (usuwanie kwasu moczowego), reumatyzm, infekcje dróg moczowych. Zewnętrznie w leczeniu łuszczycy, trądziku i wypadaniu włosów.",
         "tresc": [
           {
-            "tekst": "Surowce z tego drzewa wykorzystywano w medycynie ludowej przy dnie moczanowej oraz reumatyzmie.",
+            "tekst": "Surowce z brzozy brodawkowatej stosowano w medycynie ludowej w leczeniu kamicy nerkowej, dny moczanowej, reumatyzmu oraz infekcji dróg moczowych, a także jako wsparcie przy artretyzmie, nadmiernej potliwości, obrzękach i stymulacji wydzielania żółci.",
             "zrodla": [
               2
             ],
@@ -1094,17 +1733,12 @@
             ]
           },
           {
-            "tekst": "Tradycyjne zastosowanie obejmuje również łagodzenie kamicy nerkowej i infekcji dróg moczowych oraz skuteczne usuwanie kwasu moczowego.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Zewnętrznie preparaty te znajdują zastosowanie w leczeniu trądziku, łuszczycy oraz przy wypadaniu włosów.",
+            "tekst": "Zewnętrznie stosuje się ekstrakty z brzozy brodawkowatej w leczeniu łuszczycy, trądziku oraz wypadania włosów.",
             "zrodla": [],
             "fakty": []
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
+        "model": "groq/openai/gpt-oss-20b",
         "wejscie": "c33a47204422bdf1"
       },
       "czesci_rosliny.kora.wlasciwości": {
@@ -1112,11 +1746,6 @@
         "typ": "tekst",
         "oryginal": "Przeciwnowotworowe (badania nad czerniakiem), silnie przeciwzapalne, przeciwwirusowe.",
         "tresc": [
-          {
-            "tekst": "Przeciwnowotworowe (badania nad czerniakiem), silnie przeciwzapalne, przeciwwirusowe.",
-            "zrodla": [],
-            "fakty": []
-          },
           {
             "tekst": "W średniowieczu w celach leczniczych ze skórek drzewa pozyskiwano głównie głębsze warstwy łyka i korka.",
             "zrodla": [
@@ -1127,17 +1756,13 @@
             ]
           },
           {
-            "tekst": "Wewnętrzne warstwy kory zawierają cenne terpeny, takie jak betulina, kwas betulinowy i lupeol, które wykazują silne działanie przeciwzapalne, przeciwwirusowe oraz hamujące rozwój guzów.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s276"
-            ]
+            "tekst": "Przeciwnowotworowe (badania nad czerniakiem), silnie przeciwzapalne, przeciwwirusowe.",
+            "zrodla": [],
+            "fakty": []
           }
         ],
-        "model": "bez LLM: za duzo zdan spoza zrodel",
-        "wejscie": "aeb526601f2ceb4f"
+        "model": "groq/openai/gpt-oss-20b",
+        "wejscie": "181204d58f89639d"
       },
       "czesci_rosliny.liscie.wlasciwości": {
         "tytul": "Surowce i zbiory - Folium Betulae: Działanie",
@@ -1145,27 +1770,31 @@
         "oryginal": "Silnie moczopędne (bez podrażniania nerek), napotne, odtruwające, przeciwreumatyczne.",
         "tresc": [
           {
-            "tekst": "Surowiec ten wykazuje także właściwości napotne, odtruwające oraz przeciwreumatyczne.",
+            "tekst": "Folia Betulae wykazują silne działanie moczopędne, które nie podrażnia nerek, a także oddziałują napotnie, odtruwająco oraz przeciwreumatycznie.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Silnie moczopędne (bez podrażniania nerek), napotne, odtruwające, przeciwreumatyczne.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "W medycynie ludowej napar z liści stosowano m.in. do wybielania skóry i leczenia przezmrożeń (piegów).",
+            "tekst": "W medycynie ludowej napar z liści stosowano m.in. do wybielania skóry oraz leczenia przezmrożeń i piegów.",
             "zrodla": [
               1
             ],
             "fakty": [
               "s263"
             ]
+          },
+          {
+            "tekst": "Napar z liści brzozowych znajduje zastosowanie w charakterze pomocniczym podczas terapii łuszczycy.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2092"
+            ]
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "eaa5d1c223286e78"
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "d8fbc58f92326fb9"
       },
       "czesci_rosliny.ziele.wlasciwości": {
         "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Działanie",
@@ -1173,7 +1802,7 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Napary z liści brzozy brodawkowatej stosowano tradycyjnie przy dolegliwościach takich jak piasek w nerkach, kamica nerkowa i pęcherzowa oraz inne schorzenia układu moczowego.",
+            "tekst": "Napary z liści brzozy brodawkowatej wykorzystuje się tradycyjnie w leczeniu dolegliwości nerek, w tym piasku nerkowego, kamicy nerkowej oraz pęcherzowej, a także innych schorzeń układu moczowego.",
             "zrodla": [
               2
             ],
@@ -1182,7 +1811,7 @@
             ]
           }
         ],
-        "model": "groq/openai/gpt-oss-120b",
+        "model": "groq/openai/gpt-oss-20b",
         "wejscie": "af4a1fa82c2ece67"
       },
       "zastosowanie.rzemieslnicze": {
@@ -1191,7 +1820,12 @@
         "oryginal": "Kora brzozowa (dziegieć) to historyczny klej i środek konserwujący. Kora zewnętrzna służy do wyrobu wodoodpornych pojemników, butów i jako najlepsza naturalna rozpałka do ognia (pali się nawet mokra). Drewno cenione w meblarstwie i jako opał o wysokiej kaloryczności.",
         "tresc": [
           {
-            "tekst": "Kora brzozowa (dziegieć) to historyczny klej i środek konserwujący, tradycyjnie pozyskiwana z kory i wykorzystywana m.in. jako juchtenöl do impregnacji i pielęgnacji skór.",
+            "tekst": "Kora brzozowa (dziegieć) to historyczny klej i środek konserwujący.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Z kory pozyskiwano dziegieć, który m.in. służył do produkcji juchtenöl – oleju do impregnacji i pielęgnacji skór.",
             "zrodla": [
               2
             ],
@@ -1200,7 +1834,12 @@
             ]
           },
           {
-            "tekst": "Kora tego gatunku była także stosowana do garbowania skór.",
+            "tekst": "Kora zewnętrzna brzozy była wykorzystywana do wytwarzania wodoodpornych pojemników i butów oraz jako najlepsza naturalna rozpałka do ognia, która pali się nawet mokra.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kora brzozy była także używana w tradycyjnym garbowaniu skór.",
             "zrodla": [
               3
             ],
@@ -1209,18 +1848,58 @@
             ]
           },
           {
-            "tekst": "Kora zewnętrzna służy do wyrobu wodoodpornych pojemników, butów i jako najlepsza naturalna rozpałka do ognia (pali się nawet mokra).",
+            "tekst": "Drewno brzozy cenione jest w meblarstwie oraz jako opał o wysokiej kaloryczności.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Drewno cenione w meblarstwie i jako opał o wysokiej kaloryczności.",
-            "zrodla": [],
-            "fakty": []
+            "tekst": "Drewno brzozy, z jasno‑ i ciemniejszą sercową partią, wykorzystuje się do produkcji mebli, sklejki, forniru, paneli podłogowych, nart oraz przyborów kuchennych.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2082"
+            ]
+          },
+          {
+            "tekst": "Drewno brzozy poddane suchej destylacji służy do pozyskiwania węgla, kwasu octowego, alkoholu metylowego i smoły.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2093"
+            ]
           }
         ],
-        "model": "groq/openai/gpt-oss-120b",
-        "wejscie": "3f0721f00527aa3f"
+        "model": "groq/openai/gpt-oss-20b",
+        "wejscie": "c63ec992fd28f180"
+      },
+      "zastosowanie.kosmetyczne": {
+        "tytul": "Praktyczne zastosowanie - Kosmetyka",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Napar z liści brzozy brodawkowatej stosuje się do przemywania przesuszonej, łuszczącej się skóry oraz wspomaga porost włosów.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2091"
+            ]
+          },
+          {
+            "tekst": "W Finlandii, wiązki ulistnionych i pachnących gałązek, zwane vihta lub vasta, używa się do delikatnego bicia się podczas kąpieli w saunie, co działa kojąco na skórę.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s267"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-20b",
+        "wejscie": "2cc481525fd73adb"
       },
       "ciekawostki": {
         "tytul": "Wiedza tajemna - Ciekawostki",
@@ -1233,7 +1912,27 @@
         ],
         "tresc": [
           {
-            "tekst": "Obok podstawowej nazwy gatunkowej roślina ta jest znana również jako brzoza gruczołowata, brzezina lub brzoza biała.",
+            "tekst": "Dziegieć brzozowy był „super-klejem” epoki kamienia, wykorzystywany do mocowania grotów strzał.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Ötzi, „Człowiek Lodu”, nosił ze sobą hubę brzozową, która pełniła rolę apteczki podróżnej.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Brzoza produkuje fitoncydy, substancje sterylizujące powietrze w promieniu kilku metrów od drzewa.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W Rosji i Skandynawii gałązki brzozowe są nieodzownym elementem sauny, służąc do masażu pobudzającego krążenie.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Oprócz podstawowej nazwy gatunkowej, Betula pendula jest znana także jako brzoza gruczołowata, brzezina oraz brzoza biała.",
             "zrodla": [
               1
             ],
@@ -1242,41 +1941,53 @@
             ]
           },
           {
-            "tekst": "Dziegieć brzozowy był 'super-klejem' epoki kamienia – używano go do mocowania grotów strzał.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Ötzi, 'Człowiek Lodu', miał przy sobie hubę brzozową (czyreń), która służyła mu jako apteczka podróżna.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Brzoza produkuje fitoncydy – substancje, które sterylizują powietrze wokół drzewa w promieniu kilku metrów.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "W Rosji i Skandynawii gałązki brzozowe są nieodzownym elementem sauny, służąc do masażu pobudzającego krążenie, a w Finlandii wiązki ulistnionych i pachnących gałązek, zwane vihta lub vasta, wykorzystuje się do delikatnego bicia się podczas kąpieli.",
+            "tekst": "W języku polskim gatunek ten bywa określany także jako brzoza zwisła.",
             "zrodla": [
-              3
+              1
             ],
             "fakty": [
-              "s267"
+              "s2088"
             ]
           },
           {
-            "tekst": "Na cześć tego gatunku nazwano planetoidę (8644) Betulapendula, zarejestrowaną na początku kwietnia 1999 roku.",
+            "tekst": "Brzoza była drzewem świętym, odgrywającym istotne znaczenie symboliczne i pełniące funkcje rytualne w religiach przedchrześcijańskich.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2087"
+            ]
+          },
+          {
+            "tekst": "Brzoza brodawkowata zwykle żyje około 100 lat; najstarszy opisany w Polsce, w Gdańsku Oliwie, ma 171 lat, mierzy 26 metrów wysokości, a pień ma obwód 321 cm.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2096"
+            ]
+          },
+          {
+            "tekst": "Na cześć tego gatunku nazwano planetoidę (8644) Betula pendula, zarejestrowaną na początku kwietnia 1999 roku.",
             "zrodla": [
               2
             ],
             "fakty": [
               "s280"
             ]
+          },
+          {
+            "tekst": "W Ameryce Północnej Betula pendula została wprowadzona, a w niektórych stanach USA oraz częściach Kanady jest uważana za roślinę inwazyjną.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s268"
+            ]
           }
         ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "946d8b0e54558a99"
+        "model": "groq/openai/gpt-oss-20b",
+        "wejscie": "a39edff1937f9e9e"
       },
       "ostrzezenia": {
         "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
@@ -1294,7 +2005,7 @@
             "fakty": []
           },
           {
-            "tekst": "Przetworów z tego gatunku nie należy stosować w przypadku obrzęków spowodowanych ograniczeniem czynności serca lub nerek.",
+            "tekst": "Nie należy stosować przetworów z tego gatunku w przypadku obrzęków spowodowanych ograniczeniem czynności serca lub nerek.",
             "zrodla": [
               2
             ],
@@ -1303,11 +2014,83 @@
             ]
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
+        "model": "groq/qwen/qwen3.8-27b",
         "wejscie": "15e912b4b6d5f114"
+      },
+      "czesci_rosliny.sok.ostrzezenia": {
+        "tytul": "Surowce i zbiory - Succus Betulae (Oskoła): Ostrzeżenia",
+        "typ": "tekst",
+        "oryginal": "Świeży sok psuje się w ciągu 2-3 dni; należy go przechowywać w lodówce lub konserwować alkoholem.",
+        "tresc": [
+          {
+            "tekst": "Świeży sok psuje się w ciągu 2-3 dni; należy go przechowywać w lodówce lub konserwować alkoholem.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Przeciwwskazaniem do stosowania oskoły są uczulenie na pyłek brzozy lub nadwrażliwość na salicylany.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2086"
+            ]
+          },
+          {
+            "tekst": "Ze względu na zawartość cukrów, oskoła nie jest zalecana w przypadku cukrzycy, niewydolności wątroby ani niewydolności układu moczowego.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2086"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "8a35b55fe5efd9ba"
+      },
+      "czesci_rosliny.sok.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Succus Betulae (Oskoła): Opis surowca",
+        "typ": "tekst",
+        "oryginal": "Przezroczysty, lekko słodkawy płyn pozyskiwany z pni wczesną wiosną.",
+        "tresc": [
+          {
+            "tekst": "Przezroczysty, lekko słodkawy płyn pozyskiwany z pni wczesną wiosną, zawierający około 1 % cukru.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Można go pić na surowo, zagęszczać jak syrop klonowy lub fermentować na wino.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2078"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-20b",
+        "wejscie": "27e5dd1b4efd75ad"
       }
     },
     "uzyte_fakty": [
+      "s2077",
+      "s2078",
+      "s2081",
+      "s2082",
+      "s2083",
+      "s2086",
+      "s2087",
+      "s2088",
+      "s2089",
+      "s2090",
+      "s2091",
+      "s2092",
+      "s2093",
+      "s2095",
+      "s2096",
+      "s2111",
+      "s2113",
       "s257",
       "s258",
       "s259",
@@ -1318,8 +2101,11 @@
       "s265",
       "s266",
       "s267",
+      "s268",
       "s269",
+      "s270",
       "s271",
+      "s272",
       "s274",
       "s275",
       "s276",
@@ -1331,30 +2117,10 @@
   },
   "rozmieszczenie": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-16",
+    "zaktualizowano": "2026-10-22",
     "jak": "llm:groq/qwen/qwen3.8-27b",
-    "wejscie": "241d421cfe9593f2",
+    "wejscie": "b5db1268fd06c9cf",
     "wstawki": [
-      {
-        "miejsce": "rozpoznawanie/cechy",
-        "rozdzial": "Rozpoznawanie w terenie",
-        "tytul": "Cechy kluczowe",
-        "ikona": "ra-leaf",
-        "nowy": false,
-        "punkty": [
-          {
-            "tekst": "Biała barwa gładkiej kory wynika z obecności betuliny, która całkowicie reflektuje światło, co chroni drzewo przed uszkodzeniami słonecznymi zimą.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s270"
-            ],
-            "sekcja": "opis",
-            "czesc": null
-          }
-        ]
-      },
       {
         "miejsce": "rozpoznawanie/budowa",
         "rozdzial": "Rozpoznawanie w terenie",
@@ -1372,46 +2138,37 @@
             ],
             "sekcja": "opis",
             "czesc": "nasiona"
+          },
+          {
+            "tekst": "Owoce mają postać podłużnie eliptycznych orzeszków z dwu- lub trzykrotnie szerszymi od nich skrzydełkami. Wspierające je łuski są trójklapowe, z bocznymi klapkami dłuższymi i odgiętymi ku dołowi.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2094"
+            ],
+            "sekcja": "opis",
+            "czesc": "owoce"
           }
         ]
       },
       {
-        "miejsce": "bezpieczenstwo/chwast",
-        "rozdzial": "Bezpieczeństwo i interakcje",
-        "tytul": "Chwast i inwazyjność",
-        "ikona": "ra-bleeding-eye",
-        "nowy": true,
+        "miejsce": "tajemna/ciekawostki",
+        "rozdzial": "Wiedza tajemna",
+        "tytul": "Ciekawostki",
+        "ikona": "ra-emerald",
+        "nowy": false,
         "punkty": [
           {
-            "tekst": "W Ameryce Północnej gatunek ten został wprowadzony i w niektórych stanach USA oraz w części Kanady jest uważany za roślinę inwazyjną.",
+            "tekst": "Podgrzana kora dostarcza żywicy, która jest doskonałym wodoodpornym klejem i przydatna do rozpalania ognia.",
             "zrodla": [
               3
             ],
             "fakty": [
-              "s268"
+              "s2080"
             ],
             "sekcja": "ciekawostki",
-            "czesc": null
-          }
-        ]
-      },
-      {
-        "miejsce": "cykl/biologia",
-        "rozdzial": "Cykl życia i ekosystem",
-        "tytul": "Kwitnienie, zapylanie i rozsiewanie",
-        "ikona": "ra-cycle",
-        "nowy": true,
-        "punkty": [
-          {
-            "tekst": "Drzewo jest jednopienne – żeńskie i męskie kwiaty występują w postaci zwisających kotków na tej samej roślinie, a kwitnienie przypada na kwiecień i maj.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s272"
-            ],
-            "sekcja": "opis",
-            "czesc": null
+            "czesc": "kora"
           }
         ]
       }

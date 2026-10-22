@@ -129,7 +129,7 @@
     "Kora": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Prunus_padus_bark.jpg/960px-Prunus_padus_bark.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-21",
+    "zaktualizowano": "2026-10-22",
     "w_url": true,
     "zdjecia": [
       {
@@ -177,6 +177,669 @@
         "licencja_url": null,
         "zrodlo": "Wikimedia Commons"
       }
+    ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-10-22",
+    "uporzadkowano": "2026-10-22",
+    "uklad": "llm:groq/qwen/qwen3.8-27b",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (pl): Czeremcha zwyczajna",
+        "url": "https://pl.wikipedia.org/wiki/Czeremcha_zwyczajna",
+        "jezyk": "pl",
+        "typ": "wikipedia",
+        "nr": 1
+      },
+      {
+        "nazwa": "Wikipedia (ja): エゾノウワミズザクラ",
+        "url": "https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%BE%E3%83%8E%E3%82%A6%E3%83%AF%E3%83%9F%E3%82%BA%E3%82%B6%E3%82%AF%E3%83%A9",
+        "jezyk": "ja",
+        "typ": "wikipedia",
+        "nr": 2
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "opis",
+        "tytul": "Opis i wygląd",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Czeremcha kwitnie w kwietniu i maju, wytwarzając białe, intensywnie pachnące kwiaty zebrane w grona o długości do 15 cm. Kwiaty te mają na brzegach delikatne ząbkowania.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2155"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "wystepowanie",
+        "tytul": "Występowanie",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Czeremcha występuje naturalnie w całej Europie, Azji Mniejszej oraz zachodniej Syberii, a w Polsce jest rośliną pospolitą.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2148"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "czesci_rosliny",
+        "tytul": "Części rośliny i surowce",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Surowcem zielarskim jest kora (Cortex padi), którą zbiera się razem z pąkami liściowymi z młodych gałązek.",
+            "czesc": "kora",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2149"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": "Czeremchę wykorzystywano w medycynie ludowej jako środek ściągający, moczopędny i przeciwreumatyczny (kora), a także ze względu na właściwości odkażające i bakteriobójcze (liście i kwiaty).",
+        "podsumowanie_zrodla": [
+          1
+        ],
+        "punkty": [
+          {
+            "tekst": "W medycynie ludowej korę stosowano jako środek ściągający, moczopędny oraz przeciwreumatyczny.",
+            "czesc": "kora",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2150"
+            ]
+          },
+          {
+            "tekst": "Młode liście zawierają glikozydowe związki lotne, które wykazują właściwości odkażające i bakteriobójcze, ale mogą być toksyczne dla wielu owadów.",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2151"
+            ]
+          },
+          {
+            "tekst": "Związki lotne wydzielane przez kwiaty zawierają dużą ilość fitoncydów o działaniu bakteriobójczym.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2152"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "barwienie",
+        "tytul": "Barwienie i rzemiosło",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Korę można wykorzystać jako surowiec do barwienia tkanin.",
+            "czesc": "kora",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2057"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "nazwy_ludowe",
+        "tytul": "Nazwy ludowe",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Pierwotnie roślina nosiła polską nazwę „trzemcha”, a obecna nazwa „czeremcha” jest rutenizmem wprowadzonym w XVII wieku. W regionach występują też lokalne określenia, takie jak kocierba, korcipa czy śliwa kocierpka.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2147"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Nasiona zawierają amigdalinę (około 1,5%), która łatwo ulega rozkładowi, uwalniając silnie trujący cyjanowodór (kwas pruski).",
+            "czesc": "nasiona",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2153"
+            ]
+          },
+          {
+            "tekst": "Kora oraz pąki liściowe zawierają glikozydy cyjanogenne, takie jak prulaurazyna i prunazyna.",
+            "czesc": "kora",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2154"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "ciekawostki",
+        "tytul": "Ciekawostki",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Gałązki czeremchy dodawano do gotowanego ryżu, aby uzyskać pożywienie wspomagające rekonwalescencję.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2060"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "kwiaty": [
+        "s2155",
+        "s2152"
+      ],
+      "kora": [
+        "s2149",
+        "s2150",
+        "s2057",
+        "s2154"
+      ],
+      "liście": [
+        "s2151"
+      ],
+      "nasiona": [
+        "s2153"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s2057",
+        "sekcja": "barwienie",
+        "czesc": "kora",
+        "tekst": "Korę można wykorzystać jako surowiec do barwienia tkanin.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): エゾノウワミズザクラ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%BE%E3%83%8E%E3%82%A6%E3%83%AF%E3%83%9F%E3%82%BA%E3%82%B6%E3%82%AF%E3%83%A9"
+        }
+      },
+      {
+        "id": "s2060",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": null,
+        "tekst": "Gałązki czeremchy dodawano do gotowanego ryżu, aby uzyskać pożywienie wspomagające rekonwalescencję.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): エゾノウワミズザクラ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%BE%E3%83%8E%E3%82%A6%E3%83%AF%E3%83%9F%E3%82%BA%E3%82%B6%E3%82%AF%E3%83%A9"
+        },
+        "cytat": "枝をお粥に入れて炊き療養食として用いたり"
+      },
+      {
+        "id": "s2147",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "Pierwotnie roślina nosiła polską nazwę „trzemcha”, a obecna nazwa „czeremcha” jest rutenizmem wprowadzonym w XVII wieku. W regionach występują też lokalne określenia, takie jak kocierba, korcipa czy śliwa kocierpka.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Czeremcha zwyczajna",
+          "url": "https://pl.wikipedia.org/wiki/Czeremcha_zwyczajna"
+        },
+        "cytat": "Oryginalnie nazywana po polsku trzemcha (porównaj czeską střemcha oraz słowacką čremcha). Czeremcha jest zaimportowanym w XVII wieku rutenizmem. W różnych regionach kraju występuje również pod lokalnymi nazwami ludowymi: czeremucha, śliwa k"
+      },
+      {
+        "id": "s2148",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Czeremcha występuje naturalnie w całej Europie, Azji Mniejszej oraz zachodniej Syberii, a w Polsce jest rośliną pospolitą.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Czeremcha zwyczajna",
+          "url": "https://pl.wikipedia.org/wiki/Czeremcha_zwyczajna"
+        },
+        "cytat": "Występuje w całej Europie, Azji Mniejszej i zachodniej Syberii. W Polsce jest rośliną pospolitą."
+      },
+      {
+        "id": "s2149",
+        "sekcja": "czesci_rosliny",
+        "czesc": "kora",
+        "tekst": "Surowcem zielarskim jest kora (Cortex padi), którą zbiera się razem z pąkami liściowymi z młodych gałązek.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Czeremcha zwyczajna",
+          "url": "https://pl.wikipedia.org/wiki/Czeremcha_zwyczajna"
+        },
+        "cytat": "Surowcem zielarskim jest kora czeremchy (Cortex padi) pozyskiwana z młodych gałązek, razem z pąkami liściowymi."
+      },
+      {
+        "id": "s2150",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "kora",
+        "tekst": "W medycynie ludowej korę stosowano jako środek ściągający, moczopędny oraz przeciwreumatyczny.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Czeremcha zwyczajna",
+          "url": "https://pl.wikipedia.org/wiki/Czeremcha_zwyczajna"
+        },
+        "cytat": "Używana była w medycynie ludowej jako środek ściągający, moczopędny i przeciwreumatyczny."
+      },
+      {
+        "id": "s2151",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "liście",
+        "tekst": "Młode liście zawierają glikozydowe związki lotne, które wykazują właściwości odkażające, bakteriobójcze, ale mogą być toksyczne dla wielu owadów.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Czeremcha zwyczajna",
+          "url": "https://pl.wikipedia.org/wiki/Czeremcha_zwyczajna"
+        },
+        "cytat": "młode liście zawierają glikozydowe związki lotne o własnościach odkażających, bakteriobójczych, a także toksycznych dla wielu owadów"
+      },
+      {
+        "id": "s2152",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "kwiaty",
+        "tekst": "Związki lotne wydzielane przez kwiaty zawierają dużą ilość fitoncydów o działaniu bakteriobójczym.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Czeremcha zwyczajna",
+          "url": "https://pl.wikipedia.org/wiki/Czeremcha_zwyczajna"
+        },
+        "cytat": "Związki lotne wydzielane przez kwiaty zawierają dużo bakteriobójczych fitoncydów."
+      },
+      {
+        "id": "s2153",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "nasiona",
+        "tekst": "Nasiona zawierają amigdalinę (około 1,5%), która łatwo ulega rozkładowi, uwalniając silnie trujący cyjanowodór (kwas pruski).",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Czeremcha zwyczajna",
+          "url": "https://pl.wikipedia.org/wiki/Czeremcha_zwyczajna"
+        },
+        "cytat": "Nasiona zawierają amigdalinę (ok. 1,5%), która łatwo ulega hydrolitycznemu rozkładowi, dając w efekcie silnie trujący cyjanowodór (kwas pruski)."
+      },
+      {
+        "id": "s2154",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "kora",
+        "tekst": "Kora oraz pąki liściowe zawierają glikozydy cyjanogenne, takie jak prulaurazyna i prunazyna.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Czeremcha zwyczajna",
+          "url": "https://pl.wikipedia.org/wiki/Czeremcha_zwyczajna"
+        },
+        "cytat": "Kora i pąki liściowe zawierają glikozydy cyjanogenne (prulaurazyna, prunazyna)."
+      },
+      {
+        "id": "s2155",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Czeremcha kwitnie w kwietniu i maju, wytwarzając białe, intensywnie pachnące kwiaty zebrane w grona o długości do 15 cm. Kwiaty te mają na brzegach delikatne ząbkowania.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Czeremcha zwyczajna",
+          "url": "https://pl.wikipedia.org/wiki/Czeremcha_zwyczajna"
+        },
+        "cytat": "Kwitnie w kwietniu i w maju. [...] Białe, mocno pachnące. Na brzegach korony delikatnie ząbkowane. Zebrane są w zwisający kwiatostan – grono o długości do 15 cm."
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-22",
+    "pola": {
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": [
+          "Kwiaty białe, zebrane w długie, zwisające grona (w przeciwieństwie do czeremchy amerykańskiej, u której grona są wzniesione).",
+          "Kora ciemnobrunatna, prawie czarna, po zarysowaniu pachnie intensywnie migdałami/lekarstwem.",
+          "Liście eliptyczne, brzegiem drobno piłkowane, z dwoma miodnikami u nasady blaszki (na ogonku).",
+          "Owoce to kuliste, lśniące, czarne pestkowce o bardzo cierpkim smaku."
+        ],
+        "tresc": [
+          {
+            "tekst": "Kwiaty są białe, intensywnie pachnące i zebrane w długie, zwisające grona o długości do 15 cm, co odróżnia je od czeremchy amerykańskiej, u której grona są wzniesione.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2155"
+            ]
+          },
+          {
+            "tekst": "Kora jest ciemnobrunatna, prawie czarna i po zarysowaniu ma intensywny zapach migdałów lub leku.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Liście mają kształt eliptyczny, brzeg drobno piłkowany oraz dwa miodniki ulokowane u nasady blaszki, na ogonku.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Owoce przedstawiają kuliste, lśniące, czarne pestkowce o bardzo cierpkim smaku.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "67f91f7d50915f12"
+      },
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Drzewo lub duży krzew o gęstej koronie, dorastający do 15 m wysokości. Najbardziej rozpoznawalna dzięki zwisającym, białym gronom kwiatów o intensywnym, wręcz odurzającym zapachu. Kora czeremchy po potarciu wydziela charakterystyczny zapach migdałów (wynik obecności amigdaliny). Jest to roślina wskaźnikowa dla żyznych i wilgotnych siedlisk leśnych, nazywana dawniej 'kocierpką' ze względu na cierpki smak owoców.",
+        "tresc": [
+          {
+            "tekst": "Czeremcha zwyczajna to drzewo lub duży krzew o gęstej koronie, dorastający do 15 m wysokości.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Roślina ta występuje naturalnie w całej Europie, Azji Mniejszej oraz zachodniej Syberii, a w Polsce jest gatunkiem pospolitym.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2148"
+            ]
+          },
+          {
+            "tekst": "Jest najbardziej rozpoznawalna dzięki zwisającym, białym gronom kwiatów charakteryzującym się intensywnym, wręcz odurzającym zapachem.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kora czeremchy po potarciu wydziela charakterystyczny zapach migdałów, co jest wynikiem obecności amigdaliny.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Czeremcha pełni funkcję rośliny wskaźnikowej dla żyznych i wilgotnych siedlisk leśnych, a dawniej bywała nazywana 'kocierpką' ze względu na cierpki smak owoców.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "ee9a887e7d328505"
+      },
+      "czesci_rosliny.kora.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Cortex Pruni padi: Opis surowca",
+        "typ": "tekst",
+        "oryginal": "Kora z młodych gałęzi pozyskiwana wiosną lub jesienią.",
+        "tresc": [
+          {
+            "tekst": "Surowcem zielarskim jest kora (Cortex Pruni padi), którą zbiera się razem z pąkami liściowymi z młodych gałązek.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2149"
+            ]
+          },
+          {
+            "tekst": "Kora z młodych gałęzi pozyskiwana wiosną lub jesienią.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "db78c53950a9100e"
+      },
+      "czesci_rosliny.kora.wlasciwości": {
+        "tytul": "Surowce i zbiory - Cortex Pruni padi: Działanie",
+        "typ": "tekst",
+        "oryginal": "Naprzemienne działanie napotne i moczopędne, uspokajające kaszel (wycisza ośrodek kaszlu), przeciwreumatyczne.",
+        "tresc": [
+          {
+            "tekst": "Kora wykazuje naprzemienne działanie napotne i moczopędne, uspokajające kaszel (wycisza ośrodek kaszlu), przeciwreumatyczne oraz ściągające.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2150"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "9e94140f1045c7fc"
+      },
+      "czesci_rosliny.liście.wlasciwości": {
+        "tytul": "Surowce i zbiory - Liście (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Młode liście zawierają glikozydowe związki lotne, które wykazują właściwości odkażające i bakteriobójcze, choć mogą być toksyczne dla wielu owadów.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2151"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "8fd1714fa26ad48d"
+      },
+      "czesci_rosliny.kwiaty.wlasciwości": {
+        "tytul": "Surowce i zbiory - Flos Pruni padi: Działanie",
+        "typ": "tekst",
+        "oryginal": "Lekko uspokajające i napotne; napary stosowane jako tonik do przemywania oczu (zapalenie spojówek).",
+        "tresc": [
+          {
+            "tekst": "Lekko uspokajające i napotne; napary stosowane jako tonik do przemywania oczu (zapalenie spojówek).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Związki lotne wydzielane przez kwiaty zawierają dużą ilość fitoncydów o działaniu bakteriobójczym.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2152"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "d884042d6fcf41cb"
+      },
+      "zastosowanie.rzemieslnicze": {
+        "tytul": "Praktyczne zastosowanie - Rzemiosło",
+        "typ": "tekst",
+        "oryginal": "Z kory i owoców uzyskuje się naturalne barwniki (odcienie fioletu i szarości). Wyciąg z liści działa owadobójczo (fitoncydy).",
+        "tresc": [
+          {
+            "tekst": "Z kory i owoców uzyskuje się naturalne barwniki (odcienie fioletu i szarości); korę można wykorzystać jako surowiec do barwienia tkanin.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2057"
+            ]
+          },
+          {
+            "tekst": "Wyciąg z liści działa owadobójczo (fitoncydy).",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "10a0ef5286c46cc9"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "Czeremcha produkuje tak silne fitoncydy, że postawienie bukietu kwiatów w małym pokoju może wywołać ból głowy u domowników.",
+          "W medycynie ludowej wierzono, że zapach czeremchy odpędza 'złe powietrze' i zarazę.",
+          "Owoce czeremchy są ulubionym pokarmem ptaków, które nie trawią pestek, przez co przyczyniają się do rozsiewania drzewa.",
+          "Amerykańska kuzynka (Czeremcha amerykańska) jest jednym z najgroźniejszych gatunków inwazyjnych w polskich lasach, wypierając rodzime dęby i sosny."
+        ],
+        "tresc": [
+          {
+            "tekst": "Czeremcha produkuje tak silne fitoncydy, że postawienie bukietu kwiatów w małym pokoju może wywołać ból głowy u domowników.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W medycynie ludowej wierzono, że zapach czeremchy odpędza 'złe powietrze' i zarazę.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Owoce czeremchy są ulubionym pokarmem ptaków, które nie trawią pestek, przez co przyczyniają się do rozsiewania drzewa.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Amerykańska kuzynka (Czeremcha amerykańska) jest jednym z najgroźniejszych gatunków inwazyjnych w polskich lasach, wypierając rodzime dęby i sosny.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Pierwotnie roślina nosiła polską nazwę „trzemcha”, a obecna nazwa „czeremcha” jest rutenizmem wprowadzonym w XVII wieku; w niektórych regionach znana jest także pod nazwami kocierba, korcipa czy śliwa kocierpka.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2147"
+            ]
+          },
+          {
+            "tekst": "Gałązki czeremchy dodawano do gotowanego ryżu, aby uzyskać pożywienie wspomagające rekonwalescencję.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2060"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "f529ffb3543f7150"
+      },
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": "Pestki i kora zawierają amigdalinę, która w organizmie uwalnia toksyczny cyjanowodór. Nie stosować w ciąży, podczas karmienia piersią i u małych dzieci. Przetworów z całych owoców z pestkami nie należy przechowywać dłużej niż rok.",
+        "tresc": [
+          {
+            "tekst": "Pestki i kora zawierają amigdalinę (około 1,5%), która w organizmie uwalnia toksyczny cyjanowodór.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2153"
+            ]
+          },
+          {
+            "tekst": "Nie stosować w ciąży, podczas karmienia piersią i u małych dzieci.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Przetworów z całych owoców z pestkami nie należy przechowywać dłużej niż rok.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "c033c6e2969c8a2b"
+      },
+      "czesci_rosliny.kora.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Cortex Pruni padi: Substancje czynne",
+        "typ": "lista",
+        "oryginal": [
+          "Glikozydy cyjanogenne (pruzyna, amigdalina)",
+          "Garbniki",
+          "Fitoncydy"
+        ],
+        "tresc": [
+          {
+            "tekst": "Kora zawiera glikozydy cyjanogenne, w tym pruzynę, amigdalinę oraz prulaurazynę i prunazynę.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2154"
+            ]
+          },
+          {
+            "tekst": "Garbniki.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Fitoncydy.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "1dfca3cb51937be2"
+      }
+    },
+    "uzyte_fakty": [
+      "s2057",
+      "s2060",
+      "s2147",
+      "s2148",
+      "s2149",
+      "s2150",
+      "s2151",
+      "s2152",
+      "s2153",
+      "s2154",
+      "s2155"
     ]
   }
 }

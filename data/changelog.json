@@ -3,6 +3,47 @@
  "opis": "Kronika Siedziby Kwiatownika - pisze ja agent wdrozen (Siedziba).",
  "wpisy": [
   {
+   "data": "2026-10-22T16:18:04+02:00",
+   "tytul": "Nowa wiedza o 3 roślinach",
+   "opis": "Siedziba zebrała 36 sprawdzonych informacji (źródła: niemieckie, angielskie, japońskie). 4 informacje z sieci trafiły do właściwych rozdziałów i podrozdziałów stron roślin.",
+   "liczby": {
+    "informacje": 36,
+    "przepisy": 0,
+    "rosliny": 3,
+    "nowe_rosliny": 0,
+    "zdjecia": 0,
+    "rozmieszczone": 4
+   },
+   "rosliny": [
+    {
+     "id": "brzoza_brodawkowata",
+     "nazwa": "Brzoza brodawkowata",
+     "nowe": 19,
+     "jezyki": [
+      "de",
+      "en"
+     ]
+    },
+    {
+     "id": "czeremcha_zwyczajna",
+     "nazwa": "Czeremcha zwyczajna",
+     "nowe": 11,
+     "jezyki": [
+      "ja"
+     ]
+    },
+    {
+     "id": "przylaszczka_pospolita",
+     "nazwa": "Przylaszczka pospolita",
+     "nowe": 6,
+     "jezyki": [
+      "ja"
+     ]
+    }
+   ],
+   "przepisy": []
+  },
+  {
    "data": "2026-10-21T20:47:56+02:00",
    "tytul": "Nowa wiedza o 8 roślinach i 3 nowe przepisy",
    "opis": "Siedziba zebrała 92 sprawdzone informacje (źródła: ?, niemieckie, angielskie, japońskie, rosyjskie). 11 informacji z sieci trafiło do właściwych rozdziałów i podrozdziałów stron roślin. Dodano 5 zdjęć z Wikimedia Commons.",
