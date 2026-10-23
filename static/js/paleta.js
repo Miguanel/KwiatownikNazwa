@@ -22,7 +22,8 @@
     const PEWNOSC = { potwierdzone: ['potwierdzone źródłami', 'ok'], tradycyjne: ['tradycja ludowa', 'trad'], niepewne: ['niepewne', 'nie'] };
 
     let D = null, Z = {}, profil = null, planMix = { kroki: [{ godziny: 3.5, skladniki: [] }], plukanki: [] };
-    let wybranyCel = null, aktualne = null;   // aktualne = {plan, zrodlo:'cel'|'mix', dE?, cel?}
+    let wybranyCel = null, aktualne = null;
+    let krokCel = 0;                          // do którego etapu pasty trafiają nowe zioła z listy i atlasu   // aktualne = {plan, zrodlo:'cel'|'mix', dE?, cel?}
 
     // ------------------------------------------------------------------ dane
     async function wczytaj() {
@@ -200,10 +201,18 @@
     }
 
     // ------------------------------------------------------------------ dobór
+    const waski = () => window.matchMedia('(max-width: 900px)').matches;
+    const ruch = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+    // przewinięcie tak, żeby element nie chował się pod przyklejonym nagłówkiem strony (menu + almanach + ciekawostki)
+    function przewinDo(el) {
+        const h = document.querySelector('.main-header');
+        const off = (h ? h.getBoundingClientRect().bottom : 110) + 10;
+        window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - off, behavior: ruch() });
+    }
     function wybierzCel(id) {
         wybranyCel = id;
         odswiezSrodek();
-        przeliczDobor();
+        przeliczDobor(true);
     }
     function opisPlanu(plan) {
         const kroki = plan.kroki.filter(k => k.skladniki.length);
@@ -221,7 +230,7 @@
         return n > 1 ? '2 etapy' : '1 etap';
     }
 
-    function przeliczDobor() {
+    function przeliczDobor(przewin) {
         const box = $('#palPropozycje');
         const tgt = $('#palTarget');
         const c = wybranyCel && D.cele.find(x => x.id === wybranyCel);
@@ -253,6 +262,8 @@
             box.innerHTML = html;
             box._wyniki = r.wyniki;
             if (r.wyniki.length) pokaz({ plan: r.wyniki[0].plan, zrodlo: 'cel', dE: r.wyniki[0].dE, cel: c }, false);
+            // na telefonie propozycje są pod kołem, poza ekranem - pokaż je po kliknięciu odcienia
+            if (przewin && waski()) przewinDo(tgt);
         }, 20);
     }
 
@@ -267,15 +278,19 @@
         }).join('');
         box.addEventListener('click', e => {
             const b = e.target.closest('[data-add]'); if (!b) return;
-            const z = Z[b.dataset.add];
-            if (z.rodzaj === 'plukanka') {
-                if (!planMix.plukanki.some(p => p.id === z.id)) planMix.plukanki.push({ id: z.id, razy: 4, ph: z.ph ? 'obojetne' : undefined });
-            } else {
-                const krok = planMix.kroki[planMix.kroki.length - 1];
-                if (!krok.skladniki.some(s => s.id === z.id)) krok.skladniki.push({ id: z.id, czesci: 5, ph: z.ph ? 'obojetne' : undefined });
-            }
+            dodajDoMiksera(Z[b.dataset.add]);
             rysujMikser(); przeliczMix();
         });
+    }
+
+    function dodajDoMiksera(z) {
+        if (z.rodzaj === 'plukanka') {
+            if (!planMix.plukanki.some(p => p.id === z.id)) planMix.plukanki.push({ id: z.id, razy: 4, ph: z.ph ? 'obojetne' : undefined });
+            return;
+        }
+        krokCel = Math.min(krokCel, planMix.kroki.length - 1);
+        const krok = planMix.kroki[krokCel];
+        if (!krok.skladniki.some(s => s.id === z.id)) krok.skladniki.push({ id: z.id, czesci: 5, ph: z.ph ? 'obojetne' : undefined });
     }
 
     function wierszZiola(z, wartosc, min, max, etyk, attrs, ph) {
@@ -291,14 +306,18 @@
     function rysujMikser() {
         const box = $('#palMixer');
         let html = '';
+        krokCel = Math.max(0, Math.min(krokCel, planMix.kroki.length - 1));
+        const wiele = planMix.kroki.length > 1;
         planMix.kroki.forEach((k, ki) => {
             const suma = k.skladniki.reduce((s, x) => s + x.czesci, 0);
-            html += `<div class="pal-step" data-krok="${ki}"><div class="pal-step-h"><strong>${planMix.kroki.length > 1 ? 'Etap ' + (ki + 1) + ' – pasta' : 'Pasta'}</strong>
+            const tu = ki === krokCel;
+            html += `<div class="pal-step${wiele && tu ? ' cel' : ''}" data-krok="${ki}"><div class="pal-step-h"><strong>${wiele ? 'Etap ' + (ki + 1) + ' – pasta' : 'Pasta'}</strong>
+                ${wiele ? `<button type="button" class="pal-stepsel${tu ? ' on' : ''}" data-krok-cel="${ki}" aria-pressed="${tu}">${tu ? '<i class="bi bi-check2" aria-hidden="true"></i> tu dodajesz zioła' : 'dodawaj tutaj'}</button>` : ''}
                 <label class="pal-time">czas: <input type="range" min="1" max="6" step="0.5" value="${k.godziny}" class="pal-range pal-godz" aria-label="Czas nakładania, etap ${ki + 1}"> <output>${godz(k.godziny)}</output></label>
                 ${ki > 0 ? '<button type="button" class="pal-mdel pal-delstep" aria-label="Usuń etap">×</button>' : ''}</div>`;
             html += k.skladniki.length ? k.skladniki.map((s, si) => wierszZiola(Z[s.id], s.czesci, 1, 10, 'Części', `data-k="${ki}" data-s="${si}"`, s.ph)
                 .replace('</output>', `</output><span class="pal-pct">${suma ? Math.round(s.czesci / suma * 100) : 0}%</span>`)).join('')
-                : '<p class="pal-muted small">Dodaj zioło typu pasta lub olej z listy obok.</p>';
+                : `<p class="pal-muted small">${tu ? 'Kliknij zioło typu pasta lub olej na liście.' : 'Pusty etap – kliknij „dodawaj tutaj”, a potem zioło z listy.'}</p>`;
             html += '</div>';
         });
         if (planMix.kroki.length < 2)
@@ -308,6 +327,10 @@
             : '<p class="pal-muted small">Dodaj zioło typu płukanka.</p>';
         html += `</div><button type="button" class="btn pal-btn-ghost pal-clear"><i class="bi bi-eraser" aria-hidden="true"></i> Wyczyść</button>`;
         box.innerHTML = html;
+        const hint = $('#palPickTarget');
+        if (hint) hint.innerHTML = wiele
+            ? `Pasty i oleje trafią do: <b>Etapu ${krokCel + 1}</b> · płukanki – do płukanek`
+            : 'Pasty i oleje trafią do pasty, płukanki – do płukanek';
         const wPlanie = new Set([...planMix.kroki.flatMap(k => k.skladniki.map(s => s.id)), ...planMix.plukanki.map(p => p.id)]);
         $$('#palPicker [data-add]').forEach(b => { const on = wPlanie.has(b.dataset.add); b.classList.toggle('on', on); b.setAttribute('aria-pressed', on); });
     }
@@ -346,12 +369,17 @@
             if (e.target.closest('.pal-mdel') && row) {
                 if (row.dataset.p != null) planMix.plukanki.splice(row.dataset.p, 1);
                 else planMix.kroki[row.dataset.k].skladniki.splice(row.dataset.s, 1);
+            } else if (e.target.closest('[data-krok-cel]')) {
+                krokCel = Number(e.target.closest('[data-krok-cel]').dataset.krokCel);
             } else if (e.target.closest('.pal-delstep')) {
                 planMix.kroki.splice(Number(e.target.closest('.pal-step').dataset.krok), 1);
+                krokCel = Math.min(krokCel, planMix.kroki.length - 1);
             } else if (e.target.closest('.pal-addstep')) {
                 planMix.kroki.push({ godziny: 3.5, skladniki: [] });
+                krokCel = planMix.kroki.length - 1;            // nowy etap od razu przyjmuje zioła
             } else if (e.target.closest('.pal-clear')) {
                 planMix = { kroki: [{ godziny: 3.5, skladniki: [] }], plukanki: [] };
+                krokCel = 0;
             } else return;
             rysujMikser(); przeliczMix();
         });
@@ -365,17 +393,47 @@
     function przeliczMix() {
         const plan = planZMiksera();
         const prev = $('#palMixPreview');
-        if (!plan.kroki.length && !plan.plukanki.length) { prev.innerHTML = ''; return; }
+        const bar = $('#palMixBar');
+        if (!plan.kroki.length && !plan.plukanki.length) { prev.innerHTML = ''; bar.innerHTML = ''; pasekMiksera(); return; }
         const w = M.przewiduj(profil, plan, Z, D);
-        prev.innerHTML = `<div class="pal-ba">${pasma(w.przed.pig, w.przed.siwy, w.siwizna, 'Przed')}<i class="bi bi-arrow-right" aria-hidden="true"></i>${pasma(w.po.pig, w.po.siwy, w.siwizna, 'Po')}</div>
-            <div class="pal-ba-l"><span>przed</span><span>po</span></div>`;
+        prev.innerHTML = `<div class="pal-ba">
+            <figure>${pasma(w.przed.pig, w.przed.siwy, w.siwizna, 'Przed')}<figcaption>przed</figcaption></figure>
+            <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            <figure>${pasma(w.po.pig, w.po.siwy, w.siwizna, 'Po')}<figcaption>po</figcaption></figure></div>`;
+        const n = plan.kroki.reduce((a, k) => a + k.skladniki.length, 0) + plan.plukanki.length;
+        bar.innerHTML = `${pasma(w.przed.pig, w.przed.siwy, w.siwizna, 'Przed', 'xs')}<i class="bi bi-arrow-right" aria-hidden="true"></i>${pasma(w.po.pig, w.po.siwy, w.siwizna, 'Po', 'xs')}
+            <span class="pal-mixbar-t">${n} ${n === 1 ? 'zioło' : (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 'zioła' : 'ziół'} · ${metoda(plan)}</span>
+            <button type="button" class="pal-mixbar-b" data-do-mieszanki>mieszanka <i class="bi bi-arrow-up" aria-hidden="true"></i></button>`;
+        pasekMiksera();
         pokaz({ plan, zrodlo: 'mix' }, false);
+    }
+
+    // Pasek u dołu ekranu (telefon): podgląd „przed → po”, gdy przewijasz listę ziół i duży podgląd jest poza ekranem.
+    const widoczne = { panel: false, podglad: false };
+    function pasekMiksera() {
+        const bar = $('#palMixBar');
+        const pokazac = waski() && !$('#palPanelMix').hidden && widoczne.panel && !widoczne.podglad && bar.innerHTML.trim() !== '';
+        bar.hidden = !pokazac;
+    }
+    function obserwujMikser() {
+        if (!('IntersectionObserver' in window)) return;
+        const io = new IntersectionObserver(entries => {
+            entries.forEach(en => { widoczne[en.target.id === 'palPanelMix' ? 'panel' : 'podglad'] = en.isIntersecting; });
+            pasekMiksera();
+        }, { rootMargin: '-110px 0px 0px 0px' });   // pod przyklejonym nagłówkiem strony
+        io.observe($('#palPanelMix'));
+        io.observe($('#palMixPreview'));
+        window.addEventListener('resize', pasekMiksera);
+        $('#palMixBar').addEventListener('click', e => {
+            if (e.target.closest('[data-do-mieszanki]')) $('#palMixPreview').scrollIntoView({ behavior: ruch(), block: 'center' });
+        });
     }
     function doMiksera(plan) {
         planMix = {
             kroki: plan.kroki.length ? plan.kroki.map(k => ({ godziny: k.godziny || 3.5, skladniki: k.skladniki.map(s => Object.assign({}, s)) })) : [{ godziny: 3.5, skladniki: [] }],
             plukanki: plan.plukanki.map(p => Object.assign({}, p))
         };
+        krokCel = 0;
         rysujMikser();
         przelaczZakladke('mix');
         przeliczMix();
@@ -401,7 +459,7 @@
             ${stan.cel ? `<figure class="pal-rec-cel"><span class="pal-swatch lg" style="background:${stan.cel.hex}"></span><figcaption>cel: ${esc(stan.cel.nazwa)}<br><span class="pal-q ${M.jakosc(stan.dE).klasa}">${M.jakosc(stan.dE).tekst}</span></figcaption></figure>` : ''}
             </div>`;
         html += `<p class="pal-rec-meta"><span class="pal-tag">${metoda(plan)}</span> <span class="pal-tag t-${slug(R.trwalosc)}">${R.trwalosc}</span>
-            ${R.kroki.length ? `Proszku na jedno nałożenie: <strong>${R.gramy[0]}–${R.gramy[1]} g</strong> <span class="pal-muted">(${esc(dl.nazwa)}, włosy ${profil.grubosc === 'srednie' ? 'średnie' : profil.grubosc})</span>` : ''}</p>`;
+            ${R.kroki.length ? `<span>${iloscProszku(R)} <span class="pal-muted">(${esc(dl.nazwa)}, włosy ${profil.grubosc === 'srednie' ? 'średnie' : profil.grubosc})</span></span>` : ''}</p>`;
 
         R.kroki.forEach((k, i) => {
             html += `<div class="pal-rec-step"><h3>${R.kroki.length > 1 ? `Etap ${i + 1}` : 'Pasta'} <small>– nakładanie ok. ${godz(k.godziny)}</small></h3>
@@ -426,7 +484,13 @@
             ${stan.zrodlo === 'cel' ? '<button type="button" class="btn pal-btn-ghost" id="palDoMix"><i class="bi bi-sliders" aria-hidden="true"></i> Zmień w mieszalniku</button>' : ''}
             <span class="pal-muted small" id="palKopiujInfo" aria-live="polite"></span></div>`;
         box.innerHTML = html;
-        if (przewin) document.getElementById('palWynik').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (przewin) przewinDo(document.getElementById('palWynik'));
+    }
+
+    function iloscProszku(R, tekst) {
+        const [a, b] = R.gramy, n = R.kroki.length;
+        const g = (x, y) => tekst ? `${x}–${y} g` : `<strong>${x}–${y} g</strong>`;
+        return n > 1 ? `Proszku na każdy etap: ${g(a, b)} (razem ${g(a * n, b * n)})` : `Proszku na jedno nałożenie: ${g(a, b)}`;
     }
 
     function tekstReceptury() {
@@ -434,7 +498,9 @@
         const R = M.receptura(profil, aktualne.plan, Z, D);
         const L = ['Kwiatownik – Paleta Barw Zielarza', ''];
         if (aktualne.cel) L.push('Cel: ' + aktualne.cel.nazwa);
-        L.push('Trwałość: ' + R.trwalosc, '');
+        L.push('Trwałość: ' + R.trwalosc);
+        if (R.kroki.length) L.push(iloscProszku(R, true));
+        L.push('');
         R.kroki.forEach((k, i) => {
             L.push((R.kroki.length > 1 ? 'Etap ' + (i + 1) : 'Pasta') + ` (nakładanie ok. ${godz(k.godziny)}):`);
             k.skladniki.forEach(s => L.push(`- ${s.z.nazwa} (${s.z.lat}): ${s.procent}%, ${s.gramy[0]}–${s.gramy[1]} g${s.ph && s.z.ph ? ', pH ' + PH_NAZWY[s.ph] : ''}`));
@@ -526,6 +592,7 @@
         $('#palTabCel').classList.toggle('active', cel); $('#palTabCel').setAttribute('aria-selected', cel);
         $('#palTabMix').classList.toggle('active', !cel); $('#palTabMix').setAttribute('aria-selected', !cel);
         $('#palPanelCel').hidden = !cel; $('#palPanelMix').hidden = cel;
+        pasekMiksera();
     }
 
     let timer = null;
@@ -557,15 +624,13 @@
             if (e.target.closest('#palKopiuj')) kopiuj(tekstReceptury(), info);
             else if (e.target.closest('#palLink')) { history.replaceState(null, '', '#' + stanDoHash()); kopiuj(location.href, info); }
             else if (e.target.closest('#palDrukuj')) window.print();
-            else if (e.target.closest('#palDoMix') && aktualne) { doMiksera(aktualne.plan); document.getElementById('palDobor').scrollIntoView({ behavior: 'smooth' }); }
+            else if (e.target.closest('#palDoMix') && aktualne) { doMiksera(aktualne.plan); przewinDo(document.getElementById('palDobor')); }
         });
         $('#palAtlas').addEventListener('click', e => {
             const b = e.target.closest('[data-dodaj]'); if (!b) return;
-            const z = Z[b.dataset.dodaj];
-            if (z.rodzaj === 'plukanka') { if (!planMix.plukanki.some(p => p.id === z.id)) planMix.plukanki.push({ id: z.id, razy: 4, ph: z.ph ? 'obojetne' : undefined }); }
-            else { const k = planMix.kroki[planMix.kroki.length - 1]; if (!k.skladniki.some(s => s.id === z.id)) k.skladniki.push({ id: z.id, czesci: 5, ph: z.ph ? 'obojetne' : undefined }); }
+            dodajDoMiksera(Z[b.dataset.dodaj]);
             rysujMikser(); przelaczZakladke('mix'); przeliczMix();
-            document.getElementById('palDobor').scrollIntoView({ behavior: 'smooth' });
+            przewinDo(document.getElementById('palDobor'));
         });
     }
 
@@ -590,6 +655,7 @@
         zbudujKolo();
         zbudujPicker();
         zbudujMikser();
+        obserwujMikser();
         zbudujAtlas();
         zbudujZrodla();
         zdarzenia();

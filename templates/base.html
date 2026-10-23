@@ -74,7 +74,7 @@
             #kwiatownikNavbar .navbar-nav::-webkit-scrollbar { display: none; }
             #kwiatownikNavbar .navbar-nav { border-top: 0; }
             #kwiatownikNavbar { border-top: 1px solid rgba(209, 184, 128, 0.25); }
-            #kwiatownikNavbar .nav-item { flex: 1 1 0; min-width: 64px; padding: 0 !important; border: 0; text-align: center; }
+            #kwiatownikNavbar .nav-item { flex: 1 1 0; min-width: 56px; padding: 0 !important; border: 0; text-align: center; }
             #kwiatownikNavbar .nav-link {
                 display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
                 width: 100%; padding: 6px 4px !important; border-radius: 10px; font-size: 0.78rem !important; line-height: 1.1;
@@ -91,11 +91,18 @@
             }
             .frozen-feature.d-none.d-lg-block { display: none; } /* Komentarze i logowanie (wstrzymane) tylko na komputerze */
         }
-        @media (max-width: 380px) {
-            #kwiatownikNavbar .navbar-nav { gap: 2px; }
-            #kwiatownikNavbar .nav-item { min-width: 54px; }
-            #kwiatownikNavbar .nav-link { font-size: 0.7rem !important; padding: 6px 2px !important; letter-spacing: 0; }
+        /* 6 pozycji (od dodania Palety) musi się zmieścić na telefonie bez przewijania paska */
+        @media (max-width: 480px) {
+            #kwiatownikNavbar .navbar-nav { gap: 4px; padding-left: 4px; padding-right: 4px; }
+            /* szerokość pozycji wg podpisu, wolne miejsce rozłożone równo między pozycjami - podpisy się nie sklejają */
+            #kwiatownikNavbar .nav-item { min-width: 0; flex: 0 0 auto; }
+            #kwiatownikNavbar .nav-link { display: inline-flex; width: auto; margin: 0 !important; }
+            #kwiatownikNavbar .nav-link { font-size: 0.66rem !important; padding: 6px 5px !important; letter-spacing: -0.1px; }
             #kwiatownikNavbar .nav-link i { font-size: 1.25rem; }
+        }
+        @media (max-width: 350px) {
+            #kwiatownikNavbar .nav-link { font-size: 0.6rem !important; }
+            #kwiatownikNavbar .nav-link i { font-size: 1.1rem; }
         }
 
         /* --- WSPÓLNE CECHY PRZEWIJANYCH PASKÓW --- */

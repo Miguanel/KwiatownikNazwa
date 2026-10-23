@@ -1,7 +1,72 @@
 {
   "wersja": 1,
-  "opis": "Uzupełnienia Palety Barw z Siedziby Kwiatownika (zadanie 'paleta_barw'). Plik nadpisuje Siedziba; ręczny static/json/paleta.json zostaje nietknięty. Przeglądarka tylko DOPISUJE stąd uwagi, ostrzeżenia i źródła do istniejących ziół oraz dodaje nowe zioła z kompletem pól modelu.",
-  "zaktualizowano": null,
-  "uzupelnienia": {},
-  "nowe_ziola": []
+  "opis": "Uzupełnienia Palety Barw z Siedziby Kwiatownika (zadanie 'paleta_export'). Plik nadpisuje Siedziba; ręczny static/json/paleta.json zostaje nietknięty. Przeglądarka tylko DOPISUJE stąd uwagi, ostrzeżenia i źródła do istniejących ziół.",
+  "zaktualizowano": "2026-10-23T14:29:26+00:00",
+  "uzupelnienia": {
+    "indygo": {
+      "rosliny": [
+        "indygowiec_barwierski"
+      ],
+      "uwagi": [
+        "Wykorzystywano też wysuszone i zmielone liście do farbowania włosów, co pozwala uzyskać odcienie od ciemnobrązowego po czarny. W tym celu surowiec bywał mieszany z innymi roślinami, takimi jak henna, tworząc produkt nazywany 'czarna henna'."
+      ],
+      "ostrzezenia": [],
+      "zrodla": [
+        {
+          "nazwa": "Wikipedia (de): Indigopflanze",
+          "url": "https://de.wikipedia.org/wiki/Indigopflanze",
+          "jezyk": "de"
+        }
+      ],
+      "fakty": [
+        777
+      ]
+    },
+    "rumianek": {
+      "rosliny": [
+        "rumianek_pospolity"
+      ],
+      "uwagi": [
+        "Od wieków kwiaty rumianku były dodawane do szamponów ze względu na ich właściwość nadawania włosom połysku i gładkości.",
+        "Tradycyjnie przypisuje się mu działanie upiększające i nadające włosom połysk, przez co od lat wchodzi w skład szamponów."
+      ],
+      "ostrzezenia": [],
+      "zrodla": [
+        {
+          "nazwa": "Wikipedia (zh): 德國洋甘菊",
+          "url": "https://zh.wikipedia.org/wiki/%E5%BE%B7%E5%9C%8B%E6%B4%8B%E7%94%98%E8%8F%8A",
+          "jezyk": "zh"
+        }
+      ],
+      "fakty": [
+        1172,
+        1265
+      ]
+    }
+  },
+  "nowe_ziola": [],
+  "bez_rosliny_w_siedzibie": [
+    "henna",
+    "cassia",
+    "katam",
+    "urzet",
+    "amla",
+    "sandalowiec",
+    "orzech",
+    "katechu",
+    "brezylka",
+    "alkanna",
+    "hibiskus",
+    "burak",
+    "rzewien",
+    "kurkuma",
+    "nagietek",
+    "cebula",
+    "kawa",
+    "herbata",
+    "szalwia",
+    "rozmaryn",
+    "malwa",
+    "blawatek"
+  ]
 }

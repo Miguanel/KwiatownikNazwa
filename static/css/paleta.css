@@ -37,11 +37,13 @@
 .pal-chips label.pal-chip-risk:has(input:checked) { background: var(--kw-red-bg); border-color: var(--kw-red); color: var(--kw-red); }
 .pal-pills label:focus-within, .pal-chips label:focus-within { outline: 2px solid var(--kw-gold); outline-offset: 1px; }
 
-.pal-profil-sum { display: flex; align-items: center; gap: 14px; padding: 10px 12px; border-radius: 8px; background: var(--kw-parch); border: 1px dashed var(--kw-line); }
+.pal-profil-sum { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; padding: 10px 12px; border-radius: 8px; background: var(--kw-parch); border: 1px dashed var(--kw-line); }
+.pal-profil-sum > div { flex: 1 1 170px; min-width: 0; }      /* tekst obok pasm nie może rozpychać strony */
 .pal-profil-sum.pal-risk { border: 1px solid var(--kw-red); background: var(--kw-red-bg); }
 
 .pal-strands { width: 160px; height: 104px; display: block; border-radius: 10px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18); flex: none; }
 .pal-strands.sm { width: 96px; height: 62px; }
+.pal-strands.xs { width: 46px; height: 30px; border-radius: 6px; box-shadow: none; }
 
 /* ---------- zakładki ---------- */
 .pal-tabs { display: flex; gap: 6px; border-bottom: 1px solid var(--kw-line); margin-bottom: 14px; }
@@ -59,7 +61,11 @@
 .pal-seg.on path, .pal-seg:focus-visible path { stroke: var(--kw-gold); stroke-width: 3; }
 .pal-qnum { font: 700 15px 'Playfair Display', Georgia, serif; fill: var(--kw-gold); }
 .pal-center-ring { fill: none; stroke: var(--kw-gold); stroke-width: 2; stroke-dasharray: 2 4; }
-.pal-center-t { font: 600 12px 'Crimson Text', Georgia, serif; }
+.pal-center-t { font: 700 16px 'Crimson Text', Georgia, serif; letter-spacing: 0.3px; }
+.pal-wheel-cap { text-align: center; color: var(--kw-muted); font-size: 0.92rem; margin: 6px 0 0; line-height: 1.3; }
+.pal-half { display: inline-block; width: 7px; height: 14px; vertical-align: -2px; background: var(--kw-muted); }
+.pal-half.l { border-radius: 7px 0 0 7px; }
+.pal-half.r { border-radius: 0 7px 7px 0; background: var(--kw-gold); }
 #palCenterL, #palCenterR { stroke: var(--kw-paper); stroke-width: 2; transition: fill 0.3s; }
 .pal-legend { list-style: none; padding: 0; margin: 10px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 4px 10px; font-size: 0.95rem; }
 .pal-dot { display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.18); flex: none; }
@@ -121,11 +127,24 @@
 .pal-mdel { border: 0; background: transparent; color: var(--kw-red); font-size: 1.3rem; line-height: 1; padding: 0 6px; }
 .pal-mix-preview { margin: 0 0 10px; }
 .pal-mix-preview:empty { display: none; }
-.pal-ba { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.pal-ba { display: flex; align-items: center; gap: 10px; }
+.pal-ba figure { margin: 0; text-align: center; min-width: 0; }
+.pal-ba figcaption { color: var(--kw-muted); font-size: 0.9rem; margin-top: 3px; }
 .pal-ba i { color: var(--kw-gold); font-size: 1.3rem; }
-.pal-ba-l { display: flex; gap: 10px; color: var(--kw-muted); font-size: 0.9rem; }
-.pal-ba-l span { width: 160px; text-align: center; }
-.pal-ba-l span + span { margin-left: 32px; }
+
+/* mieszalnik: do którego etapu trafiają zioła */
+.pal-pick-target { margin: 0 0 6px; padding: 6px 10px; border-radius: 8px; background: var(--kw-parch); border-left: 3px solid var(--kw-gold); font-size: 0.95rem; }
+.pal-step.cel { border-color: var(--kw-gold); box-shadow: inset 3px 0 0 var(--kw-gold); }
+.pal-stepsel { border: 1px dashed var(--kw-green); background: transparent; color: var(--kw-green); border-radius: 999px; padding: 1px 10px; font: inherit; font-size: 0.85rem; }
+.pal-stepsel.on { border-style: solid; background: var(--kw-green); color: #fff; }
+
+/* telefon: pasek z podglądem mieszanki u dołu ekranu */
+.pal-mixbar { position: fixed; left: 8px; right: 8px; bottom: 8px; z-index: 900; display: flex; align-items: center; gap: 8px;
+    padding: 6px 8px; border-radius: 12px; background: var(--kw-paper); border: 1px solid var(--kw-gold); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25); }
+.pal-mixbar[hidden] { display: none; }
+.pal-mixbar i { color: var(--kw-gold); }
+.pal-mixbar-t { flex: 1; min-width: 0; font-size: 0.9rem; color: var(--kw-ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pal-mixbar-b { border: 1px solid var(--kw-green); background: transparent; color: var(--kw-green); border-radius: 999px; padding: 3px 10px; font: inherit; font-size: 0.85rem; white-space: nowrap; }
 
 /* ---------- receptura ---------- */
 .pal-rec-top { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; margin-bottom: 8px; }
@@ -179,6 +198,12 @@ html[data-theme="night"] .pal-tag.t-poltrwala { background: #33301a; color: #e8d
 html[data-theme="night"] .pal-tag.t-zmywalna { background: #172d33; color: #9fd0dc; border-color: #355a64; }
 html[data-theme="night"] .pal-herb-src a, html[data-theme="night"] .pal-sources a { color: #8ab4f8; }
 html[data-theme="night"] .pal-btn { background: #3f6b38; border-color: #3f6b38; }
+html[data-theme="night"] .pal-tag.p-ok { color: #a9d68f; border-color: #4f7a42; }
+html[data-theme="night"] .pal-tag.p-trad { color: #e3c77a; border-color: #7a6630; }
+html[data-theme="night"] .pal-tag.p-sied { color: #c6b5f0; border-color: #5d4f8c; }
+html[data-theme="night"] .pal-dot { box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.35); }
+html[data-theme="night"] .pal-stepsel.on { background: #3f6b38; border-color: #3f6b38; }
+html[data-theme="night"] .pal-mixbar { box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6); }
 
 /* ---------- telefon / tablet ---------- */
 @media (max-width: 900px) {
@@ -186,17 +211,31 @@ html[data-theme="night"] .pal-btn { background: #3f6b38; border-color: #3f6b38; 
     .pal-wheel-wrap, .pal-mix-right { position: static; }
     .pal-mix-right { order: -1; }
     .pal-wheel { max-width: 340px; }
+    .pal-page { padding-bottom: 64px; }             /* miejsce na pasek mieszanki */
 }
 @media (max-width: 560px) {
-    .pal-card { padding: 14px 12px 16px; margin: 12px 0; }
+    /* bez podwójnych ramek: strona jest już w karcie z base.html */
+    .pal-page { padding-left: 0; padding-right: 0; }
+    .pal-card { padding: 16px 2px 18px; margin: 0; border: 0; border-top: 1px solid var(--kw-line); border-radius: 0; box-shadow: none; background: transparent; }
+    .pal-hero + .pal-card { border-top: 0; }
     .pal-hero h1 { font-size: 1.6rem; }
     .pal-lead { font-size: 1.05rem; }
     .pal-levels button { height: 36px; }
     .pal-legend { grid-template-columns: 1fr; }
     .pal-prop { flex-direction: column; }
     .pal-strands { width: 128px; height: 84px; }
-    .pal-strands.sm { width: 100%; height: 54px; }
-    .pal-ba-l span { width: 128px; }
+    .pal-prop-sw .pal-strands.sm { width: 100%; height: 54px; }
+    .pal-ba { justify-content: center; }
+
+    /* receptura: tabela jako lista - gramy zawsze widoczne */
+    .pal-table { min-width: 0; }
+    .pal-table thead { display: none; }
+    .pal-table tr { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; padding: 8px 0; border-bottom: 1px solid var(--kw-line-soft); }
+    .pal-table td { border: 0; padding: 0; }
+    .pal-table td:first-child { grid-column: 1 / -1; }
+    .pal-table td:nth-child(2) { color: var(--kw-muted); }
+    .pal-table td:nth-child(2)::before { content: "udział "; }
+    .pal-table td:nth-child(3) { text-align: right; font-weight: 700; }
     .pal-mrow { grid-template-columns: auto 1fr 26px auto; }
     .pal-mrow .pal-mval { grid-column: 1 / -1; grid-row: 2; }
     .pal-mrow .pal-mout { grid-column: 3; grid-row: 1; }
@@ -210,7 +249,7 @@ html[data-theme="night"] .pal-btn { background: #3f6b38; border-color: #3f6b38; 
 
 /* ---------- druk: tylko receptura ---------- */
 @media print {
-    .main-header, header.main-header, footer, nav, .pal-hero, .pal-card:not(#palWynik), .pal-rec-btns, #kwFireflies { display: none !important; }
+    .main-header, header.main-header, footer, nav, .pal-hero, .pal-card:not(#palWynik), .pal-rec-btns, .pal-mixbar, #kwFireflies { display: none !important; }
     body { padding-top: 0 !important; background: #fff !important; }
     .pal-card { box-shadow: none; border: 0; }
     .pal-strands { box-shadow: none; -webkit-print-color-adjust: exact; print-color-adjust: exact; }

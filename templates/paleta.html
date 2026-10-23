@@ -101,6 +101,7 @@
             <div class="pal-cel-grid">
                 <div class="pal-wheel-wrap">
                     <svg id="palWheel" class="pal-wheel" viewBox="0 0 320 320" role="group" aria-label="Koło barw – wybierz kolor docelowy"></svg>
+                    <p class="pal-wheel-cap"><span class="pal-half l" aria-hidden="true"></span> lewa połowa środka: Twój włos teraz · <span class="pal-half r" aria-hidden="true"></span> prawa: wybrany kolor</p>
                     <ol class="pal-legend" id="palLegend"></ol>
                 </div>
                 <div class="pal-cel-side">
@@ -118,7 +119,8 @@
         <div class="pal-panel" id="palPanelMix" role="tabpanel" aria-labelledby="palTabMix" hidden>
             <div class="pal-mix-grid">
                 <div class="pal-mix-left">
-                    <p class="pal-muted">Kliknij zioło, aby dodać je do pasty albo do płukanek. Suwakiem ustawiasz proporcje.</p>
+                    <p class="pal-muted">Kliknij zioło, aby dodać je do mieszanki. Suwakiem ustawiasz proporcje.</p>
+                    <p class="pal-pick-target" id="palPickTarget" aria-live="polite"></p>
                     <div id="palPicker" class="pal-picker"></div>
                 </div>
                 <div class="pal-mix-right">
@@ -132,7 +134,7 @@
     <!-- 3. RECEPTURA -->
     <section class="pal-card" id="palWynik" aria-labelledby="palWynikH">
         <h2 class="section-title" id="palWynikH">3. Receptura</h2>
-        <div id="palReceptura" data-wiki-scan><p class="pal-muted">Tu pojawi się receptura: wybierz propozycję z koła albo wymieszaj zioła.</p></div>
+        <div id="palReceptura"><p class="pal-muted">Tu pojawi się receptura: wybierz propozycję z koła albo wymieszaj zioła.</p></div>
     </section>
 
     <!-- 4. ATLAS -->
@@ -149,6 +151,9 @@
         <p class="pal-muted small">Informacje mają charakter edukacyjny. Podgląd koloru jest symulacją – na wynik wpływają też odmiana i świeżość proszku, woda, czas i temperatura. Przed farbowaniem zrób test na paśmie i próbę uczuleniową. Przy chorobach skóry głowy zapytaj dermatologa.</p>
     </section>
 </div>
+
+<!-- telefon: pasek z podglądem mieszanki, gdy duży podgląd jest poza ekranem (static/js/paleta.js: pasekMiksera) -->
+<div class="pal-mixbar" id="palMixBar" hidden aria-live="polite"></div>
 
 <script src="{{ url_for('static', filename='js/paleta_model.js') }}"></script>
 <script src="{{ url_for('static', filename='js/paleta.js') }}"></script>

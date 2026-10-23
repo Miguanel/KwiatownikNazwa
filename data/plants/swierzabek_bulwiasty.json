@@ -267,7 +267,7 @@
     "Korzeń": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Chaerophyllum_bulbosum_001.JPG/960px-Chaerophyllum_bulbosum_001.JPG"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-16",
+    "zaktualizowano": "2026-10-23",
     "w_url": true,
     "zdjecia": [
       {
@@ -310,9 +310,9 @@
   },
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-10-15",
-    "uporzadkowano": "2026-10-15",
-    "uklad": "deterministyczny: pominiete informacje: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",
+    "zaktualizowano": "2026-10-23",
+    "uporzadkowano": "2026-10-23",
+    "uklad": "deterministyczny: pominiete informacje: [4, 8, 12, 13, 15, 17, 18, 21, 22, 23]",
     "zrodla": [
       {
         "nazwa": "Wikipedia (pl): Świerząbek bulwiasty",
@@ -354,6 +354,16 @@
             ]
           },
           {
+            "tekst": "Kwiaty są drobne, zebrane w baldachy liczące od 8 do 20 nierównych promieni, a płatki są białe, odwrotnie jajowate i głęboko wcięte do połowy.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2211"
+            ]
+          },
+          {
             "tekst": "Pojedynczy okaz świerząbka bulwiastego wytwarza od 10 do 200 baldachów, co łącznie daje od 1 000 do nawet 36 000 drobnych kwiatów na roślinie.",
             "czesc": "kwiaty",
             "zrodla": [
@@ -372,6 +382,16 @@
             "fakty": [
               "s824"
             ]
+          },
+          {
+            "tekst": "Łodyga rośliny jest pusta w środku, prosto wzniesiona i może osiągać wysokość do 2 m.",
+            "czesc": "ziele",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2210"
+            ]
           }
         ]
       },
@@ -389,6 +409,26 @@
             ],
             "fakty": [
               "s668"
+            ]
+          },
+          {
+            "tekst": "Świerząbek bulwiasty kwitnie od czerwca do sierpnia.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2209"
+            ]
+          },
+          {
+            "tekst": "Gatunek jest charakterystyczny dla zespołu roślinnego Chaerophylletum bulbosi, który tworzy się w nasłonecznionych częściach lasów łęgowych i wilgotnych grądów.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2212"
             ]
           },
           {
@@ -716,6 +756,36 @@
             ]
           },
           {
+            "tekst": "Na tej roślinie mogą wystąpić choroby typowe dla marchwi, takie jak muchnik marchwiowy, podgryzienie magazynowe czy mszyce korzeniowe, a także wirus mozaiki seleru.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2214"
+            ]
+          },
+          {
+            "tekst": "Rozpylaczami siewnymi dla tej rośliny są głównie muchy oraz chrząszcze.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2215"
+            ]
+          },
+          {
+            "tekst": "W stanie dzikim gatunek występuje w Europie od Ukrainy po Francję i od Szwecji po Włochy, a w Azji Zachodniej w Turcji i na Kaukazie, rosnąc głównie wzdłuż brzegów rzek.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2216"
+            ]
+          },
+          {
             "tekst": "Na surowo korzenie mają ostry smak zbliżony do rzodkiewki, natomiast po ugotowaniu zyskują delikatny posmak ziemniaków i kasztanów jadalnych z nutą selera i pasternaku. Duża część aromatu koncentruje się w skórce bulwy.",
             "czesc": "korzeń",
             "zrodla": [
@@ -744,6 +814,16 @@
             "fakty": [
               "s1773"
             ]
+          },
+          {
+            "tekst": "Pierwszą nazwaną odmianą hodowlaną w czasach nowożytnych była francuska odmiana 'Altan' zarejestrowana w 1986 roku, po której pojawiły się kolejne, takie jak 'Véga' i 'M4.10'.",
+            "czesc": "nasiona",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2213"
+            ]
           }
         ]
       }
@@ -758,6 +838,7 @@
         "s1772"
       ],
       "kwiaty": [
+        "s2211",
         "s1771",
         "s1774"
       ],
@@ -765,13 +846,15 @@
         "s824",
         "s825"
       ],
+      "ziele": [
+        "s2210",
+        "s826"
+      ],
       "nasiona": [
         "s1713",
         "s1775",
-        "s1773"
-      ],
-      "ziele": [
-        "s826"
+        "s1773",
+        "s2213"
       ]
     },
     "fakty": [
@@ -1170,12 +1253,108 @@
           "url": "https://en.wikipedia.org/wiki/Chaerophyllum_bulbosum"
         },
         "cytat": "known by several common names, including turnip-rooted chervil, tuberous-rooted chervil, bulbous chervil, and parsnip chervil."
+      },
+      {
+        "id": "s2209",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Świerząbek bulwiasty kwitnie od czerwca do sierpnia.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Świerząbek bulwiasty",
+          "url": "https://pl.wikipedia.org/wiki/%C5%9Awierz%C4%85bek_bulwiasty"
+        },
+        "cytat": "Kwitnie od czerwca do sierpnia."
+      },
+      {
+        "id": "s2210",
+        "sekcja": "opis",
+        "czesc": "ziele",
+        "tekst": "Łodyga rośliny jest pusta w środku, prosto wzniesiona i może osiągać wysokość do 2 m.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Świerząbek bulwiasty",
+          "url": "https://pl.wikipedia.org/wiki/%C5%9Awierz%C4%85bek_bulwiasty"
+        },
+        "cytat": "Pusta w środku, prosto wzniesiona, osiąga do 2 m wysokości."
+      },
+      {
+        "id": "s2211",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Kwiaty są drobne, zebrane w baldachy liczące od 8 do 20 nierównych promieni, a płatki są białe, odwrotnie jajowate i głęboko wcięte do połowy.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Świerząbek bulwiasty",
+          "url": "https://pl.wikipedia.org/wiki/%C5%9Awierz%C4%85bek_bulwiasty"
+        },
+        "cytat": "Drobne, zebrane w baldachy o 8–20 nierównych i nagich promieniach. Płatki korony białe, odwrotnie jajowate, głęboko, do około połowy wcięte, te na brzegach baldaszków większe od tych skierowanych do jego środka."
+      },
+      {
+        "id": "s2212",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Gatunek jest charakterystyczny dla zespołu roślinnego Chaerophylletum bulbosi, który tworzy się w nasłonecznionych częściach lasów łęgowych i wilgotnych grądów.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Świerząbek bulwiasty",
+          "url": "https://pl.wikipedia.org/wiki/%C5%9Awierz%C4%85bek_bulwiasty"
+        },
+        "cytat": "Jest gatunkiem charakterystycznym dla okrajkowego zespołu Chaerophylletum bulbosi wykształcającym się w miejscach nasłonecznionych w kompleksach lasów łęgowych i wilgotnych grądów."
+      },
+      {
+        "id": "s2213",
+        "sekcja": "ciekawostki",
+        "czesc": "nasiona",
+        "tekst": "Pierwszą nazwaną odmianą hodowlaną w czasach nowożytnych była francuska odmiana 'Altan' zarejestrowana w 1986 roku, po której pojawiły się kolejne, takie jak 'Véga' i 'M4.10'.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Chaerophyllum bulbosum",
+          "url": "https://en.wikipedia.org/wiki/Chaerophyllum_bulbosum"
+        },
+        "cytat": "the first named cultivar in modern times seems to have been developed in France, named \"Altan\" (1986), followed by new cultivars \"Véga\" and \"M4.10."
+      },
+      {
+        "id": "s2214",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Na tej roślinie mogą wystąpić choroby typowe dla marchwi, takie jak muchnik marchwiowy, podgryzienie magazynowe czy mszyce korzeniowe, a także wirus mozaiki seleru.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Chaerophyllum bulbosum",
+          "url": "https://en.wikipedia.org/wiki/Chaerophyllum_bulbosum"
+        },
+        "cytat": "These are mainly the carrot fly, storage decay and root aphids. Furthermore, it can be host for other aphids, erysiphe heraclei or celery mosaic virus."
+      },
+      {
+        "id": "s2215",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Rozpylaczami siewnymi dla tej rośliny są głównie muchy oraz chrząszcze.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Chaerophyllum bulbosum",
+          "url": "https://en.wikipedia.org/wiki/Chaerophyllum_bulbosum"
+        },
+        "cytat": "Pollinators for Chaerophyllum bulbosum includes flies and beetles."
+      },
+      {
+        "id": "s2216",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "W stanie dzikim gatunek występuje w Europie od Ukrainy po Francję i od Szwecji po Włochy, a w Azji Zachodniej w Turcji i na Kaukazie, rosnąc głównie wzdłuż brzegów rzek.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Chaerophyllum bulbosum",
+          "url": "https://en.wikipedia.org/wiki/Chaerophyllum_bulbosum"
+        },
+        "cytat": "Native, wild populations are distributed in Europe from Ukraine to France and from Sweden to Italy... It can also be found in Western Asia as in Turkey and Caucasus. In the wild, tuberous-rooted chervil grows in dense populations, mainly al"
       }
     ]
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-15",
+    "zaktualizowano": "2026-10-23",
     "pola": {
       "czesci_rosliny.korzeń.opis_botaniczny": {
         "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Opis surowca",
@@ -1183,26 +1362,17 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Surowcem farmaceutycznym jest jadalna bulwa hipokotylowa o stożkowatym lub kulistym kształcie, która osiąga grubość 3 do 6 centymetrów, długość 1,5 do 10 centymetrów oraz masę 140 do 200 gramów.",
+            "tekst": "Surowcem jest jadalna bulwa hipokotylowa o kształcie stożkowatym do kulistego, osiągająca 3–6 cm grubości, 1,5–10 cm długości oraz masę 140–200 g.",
             "zrodla": [
               2
             ],
             "fakty": [
               "s677"
             ]
-          },
-          {
-            "tekst": "W trakcie przechowywania świeżo zebranych bulw w temperaturze 4 stopni Celsjusza przez okres czterech miesięcy dochodzi do przekształcenia znacznej części zawartej w nich skrobi w cukier.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s680"
-            ]
           }
         ],
         "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "2a48db65b5ab05a5"
+        "wejscie": "77c16e0711670733"
       },
       "identyfikacja.cechy_kluczowe": {
         "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
@@ -1210,26 +1380,62 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Pojedynczy okaz świerząbka bulwiastego tworzy od 10 do 200 baldachów, co w sumie daje od 1 000 do nawet 36 000 drobnych kwiatów roślinie [1].",
+            "tekst": "Kwiaty są drobne, białe, odwrotnie jajowate i głęboko wcięte do połowy, zebrane w baldachy liczące od 8 do 20 nierównych promieni [1].",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2211"
+            ]
+          },
+          {
+            "tekst": "Pojedynczy okaz rośliny wytwarza od 10 do 200 baldachów, co łącznie stanowi od 1 000 do nawet 36 000 kwiatów [2].",
             "zrodla": [
               3
             ],
             "fakty": [
               "s1771"
             ]
-          },
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "72735011624c1420"
+      },
+      "czesci_rosliny.kłącze.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Kłącze (nowa część z sieci): Opis surowca",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
           {
-            "tekst": "Roślina ta wykazuje duże podobieństwo morfologiczne do rodzimego i silnie trującego szczwołu plamistego [2].",
+            "tekst": "Zgrubienie podziemne ma stożkowaty lub kulisty kształt, osiąga 3-6 cm grubości i 1,5-10 cm długości, ważąc od 140 do 200 gramów przy szarej powierzchni.",
             "zrodla": [
               2
             ],
             "fakty": [
-              "s828"
+              "s824"
             ]
           }
         ],
         "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "29933dbfddbeb09a"
+        "wejscie": "7bed3eaf6a1def1d"
+      },
+      "czesci_rosliny.ziele.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Opis surowca",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Łodyga rośliny jest pusta w środku, prosto wzniesiona i może osiągać wysokość do 2 m.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2210"
+            ]
+          }
+        ],
+        "model": "gemini/gemini-3.5-flash",
+        "wejscie": "3f39e45b2ecb9901"
       },
       "wymagania.stanowisko": {
         "tytul": "Natura i siedlisko - Stanowisko",
@@ -1237,17 +1443,36 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Świerząbek bulwiasty (Chaerophyllum bulbosum) rośnie w zaroślach, lasach oraz na brzegach rzek, preferując nasłonecznione miejsca w kompleksach lasów łęgowych i wilgotnych grądów. W Polsce jest gatunkiem typowym dla równin, natomiast w górach występuje rzadko.",
+            "tekst": "Świerząbek bulwiasty rośnie w zaroślach, lasach oraz na brzegach rzek, preferując nasłonecznione miejsca w kompleksach lasów łęgowych i wilgotnych grądów.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s668",
+              "s2212"
+            ]
+          },
+          {
+            "tekst": "W Polsce jest gatunkiem typowym dla równin, natomiast w górach występuje rzadko.",
             "zrodla": [
               1
             ],
             "fakty": [
               "s668"
             ]
+          },
+          {
+            "tekst": "Gatunek ten jest charakterystyczny dla zespołu roślinnego Chaerophylletum bulbosi, który tworzy się w nasłonecznionych częściach lasów łęgowych i wilgotnych grądów.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2212"
+            ]
           }
         ],
-        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "f96ac8649ea85a85"
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "dcb697772c969f3c"
       },
       "permakultura.funkcje": {
         "tytul": "Cykl życia i ekosystem - Permakultura - funkcje",
@@ -1261,22 +1486,22 @@
         ],
         "tresc": [
           {
-            "tekst": "Roślina na rabaty warzywne, przyspiesza rozkład materii organicznej i poprawia strukturę gleby.",
+            "tekst": "Jest to roślina przeznaczona na rabaty warzywne, która przyspiesza rozkład materii organicznej oraz poprawia strukturę gleby.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Tworzy głębokie bulwy, które spulchniają i napowietrzają glebę.",
+            "tekst": "Tworzy głębokie bulwy, które skutecznie spulchniają i napowietrzają glebę.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Nadaje się na współrzędne uprawy z cebulą, czosnkiem, selerem i marchwią – odstrasza niektóre szkodniki.",
+            "tekst": "Doskonale nadaje się do uprawy współrzędnej z cebulą, czosnkiem, selerem i marchwią, ponieważ odstrasza niektóre szkodniki.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Może być uprawiany jako roślina przełamująca monokultury na grządkach warzywnych.",
+            "tekst": "Może być uprawiany na grządkach warzywnych jako roślina przełamująca monokultury.",
             "zrodla": [],
             "fakty": []
           },
@@ -1286,18 +1511,35 @@
             "fakty": []
           },
           {
-            "tekst": "W warunkach naturalnych roślina jest zapylana głównie przez muchy i chrząszcze, co jest nietypowe wśród roślin z rodziny selerowatych.",
+            "tekst": "Roślina jest zapylana głównie przez muchy i chrząszcze, co jest nietypowe wśród roślin z rodziny selerowatych.",
             "zrodla": [
               3
             ],
             "fakty": [
-              "s1722",
+              "s1722"
+            ]
+          },
+          {
+            "tekst": "Rozpylaczami siewnymi dla tej rośliny są głównie muchy oraz chrząszcze.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2215"
+            ]
+          },
+          {
+            "tekst": "Do głównych owadów zapylających kwiaty świerząbka bulwiastego należą muchówki oraz chrząszcze.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
               "s1774"
             ]
           }
         ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "775f4d47a48fcc37"
+        "model": "gemini/gemini-3.5-flash",
+        "wejscie": "d1da8d2025428292"
       },
       "zastosowanie.kulinarne": {
         "tytul": "Praktyczne zastosowanie - Kuchnia",
@@ -1361,7 +1603,7 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Korzeń zawiera duże ilości błonnika oraz witaminy B i C, a także sole mineralne.",
+            "tekst": "Korzeń świerząbka bulwiastego zawiera duże ilości błonnika, witaminy B i C, a także sole mineralne.",
             "zrodla": [
               3
             ],
@@ -1370,8 +1612,8 @@
             ]
           }
         ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "14aa46870c10d698"
+        "model": "gemini/gemini-3.6-flash",
+        "wejscie": "3348855bb0520f7d"
       },
       "czesci_rosliny.kłącze.skladniki_aktywne": {
         "tytul": "Surowce i zbiory - Kłącze (nowa część z sieci): Substancje czynne",
@@ -1379,7 +1621,7 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Bulwa jest bogata w skrobię i białko, a zarazem uboga w tłuszcz; suszona postać podgatunku typowego zawiera do 57% skrobi i 5% cukru.",
+            "tekst": "Bulwa jest bogata w skrobię oraz białko, a zarazem uboga w tłuszcz, natomiast suszona postać podgatunku typowego zawiera do 57% skrobi i 5% cukru.",
             "zrodla": [
               2
             ],
@@ -1388,7 +1630,7 @@
             ]
           }
         ],
-        "model": "bez LLM: brak modelu",
+        "model": "gemini/gemini-3.6-flash",
         "wejscie": "f7d7be010959567f"
       },
       "czesci_rosliny.nasiona.wlasciwości": {
@@ -1406,7 +1648,7 @@
             ]
           }
         ],
-        "model": "bez LLM: brak modelu",
+        "model": "groq/qwen/qwen3.8-27b",
         "wejscie": "ec86431d46484bdd"
       },
       "czesci_rosliny.ziele.wlasciwości": {
@@ -1424,7 +1666,7 @@
             ]
           }
         ],
-        "model": "bez LLM: brak modelu",
+        "model": "groq/qwen/qwen3.8-27b",
         "wejscie": "1d327c37a14484dd"
       },
       "ciekawostki": {
@@ -1488,17 +1730,44 @@
             ]
           },
           {
-            "tekst": "Roślina jest dwuletnim byliną, a w pierwszym roku wytwarza rozetę liści, w której gromadzi duże ilości skrobi niezbędne do kwitnienia w drugim roku.",
+            "tekst": "W warunkach dzikich nasiona tej rośliny rozprzestrzeniane są za pośrednictwem wody (hydrochoria), co wiąże się z jej częstym występowaniem na brzegach rzek.",
             "zrodla": [
               3
             ],
             "fakty": [
-              "s1712"
+              "s1773"
+            ]
+          },
+          {
+            "tekst": "Pierwszą nazwaną odmianą hodowlaną w czasach nowożytnych była francuska odmiana 'Altan' zarejestrowana w 1986 roku, po której pojawiły się kolejne, takie jak 'Véga' i 'M4.10'.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2213"
+            ]
+          }
+        ],
+        "model": "bez LLM: za duzo zdan spoza zrodel",
+        "wejscie": "a94718cf50a45644"
+      },
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Roślina ta wykazuje duże podobieństwo morfologiczne do rodzimego i silnie trującego szczwołu plamistego, co stwarza ryzyko pomyłki.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s828"
             ]
           }
         ],
         "model": "bez LLM: brak modelu",
-        "wejscie": "09e378e38a7086e7"
+        "wejscie": "398101f589c95e8f"
       },
       "zastosowanie.ogrodowe": {
         "tytul": "Praktyczne zastosowanie - Ogród",
@@ -1540,10 +1809,19 @@
             "fakty": [
               "s1775"
             ]
+          },
+          {
+            "tekst": "Na tej roślinie mogą wystąpić choroby typowe dla marchwi, takie jak muchnik marchwiowy, podgryzienie magazynowe czy mszyce korzeniowe, a także wirus mozaiki seleru.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2214"
+            ]
           }
         ],
         "model": "bez LLM: brak modelu",
-        "wejscie": "041030fd794213fa"
+        "wejscie": "c94fdad1f02a0a25"
       },
       "wymagania.gleba": {
         "tytul": "Natura i siedlisko - Gleba",
@@ -1562,6 +1840,33 @@
         ],
         "model": "bez LLM: brak modelu",
         "wejscie": "3d0894723fbd5780"
+      },
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Roślina jest dwuletnim byliną, a w pierwszym roku wytwarza rozetę liści, w której gromadzi duże ilości skrobi niezbędne do kwitnienia w drugim roku.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1712"
+            ]
+          },
+          {
+            "tekst": "W stanie dzikim gatunek występuje w Europie od Ukrainy po Francję i od Szwecji po Włochy, a w Azji Zachodniej w Turcji i na Kaukazie, rosnąc głównie wzdłuż brzegów rzek.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2216"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "112a4334f7b413d5"
       },
       "profil_energetyczny.smak": {
         "tytul": "Natura i siedlisko - Smak",
@@ -1604,19 +1909,27 @@
       "s1722",
       "s1771",
       "s1772",
+      "s1773",
       "s1774",
       "s1775",
       "s1776",
       "s1777",
       "s1778",
+      "s2210",
+      "s2211",
+      "s2212",
+      "s2213",
+      "s2214",
+      "s2215",
+      "s2216",
       "s668",
       "s669",
       "s670",
       "s672",
       "s674",
       "s677",
-      "s680",
       "s681",
+      "s824",
       "s825",
       "s826",
       "s827",
@@ -1625,9 +1938,9 @@
   },
   "rozmieszczenie": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-16",
-    "jak": "llm:groq/qwen/qwen3.8-27b",
-    "wejscie": "c6bf1585b743fed3",
+    "zaktualizowano": "2026-10-23",
+    "jak": "reguly",
+    "wejscie": "6e53bf7941dc077f",
     "wstawki": [
       {
         "miejsce": "natura/wystepowanie",
@@ -1636,6 +1949,17 @@
         "ikona": "ra-compass",
         "nowy": true,
         "punkty": [
+          {
+            "tekst": "Świerząbek bulwiasty kwitnie od czerwca do sierpnia.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2209"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          },
           {
             "tekst": "W warunkach naturalnych gatunek rozprasza nasiona za pośrednictwem wód powierzchniowych (hydrochory).",
             "zrodla": [
@@ -1650,31 +1974,31 @@
         ]
       },
       {
-        "miejsce": "surowce/czesc:kłącze",
+        "miejsce": "surowce/czesc:korzeń",
         "rozdzial": "Surowce i zbiory",
-        "tytul": "Kłącze",
+        "tytul": "Korzeń",
         "ikona": "ra-potion",
         "nowy": true,
         "punkty": [
           {
-            "tekst": "Zgrubienie podziemne ma stożkowaty lub kulisty kształt, osiąga 3-6 cm grubości i 1,5-10 cm długości, ważąc od 140 do 200 gramów przy szarej powierzchni.",
+            "tekst": "Przechowywanie świeżo zebranych bulw w temperaturze 4 stopni Celsjusza przez okres czterech miesięcy powoduje przekształcenie znacznej części zawartej w nich skrobi w cukier.",
             "zrodla": [
               2
             ],
             "fakty": [
-              "s824"
+              "s680"
             ],
-            "sekcja": "opis",
-            "czesc": "kłącze"
+            "sekcja": "sklad",
+            "czesc": "korzeń"
           }
         ]
       },
       {
-        "miejsce": "cykl/biologia",
-        "rozdzial": "Cykl życia i ekosystem",
-        "tytul": "Kwitnienie, zapylanie i rozsiewanie",
-        "ikona": "ra-cycle",
-        "nowy": true,
+        "miejsce": "zastosowanie/ogrod",
+        "rozdzial": "Praktyczne zastosowanie",
+        "tytul": "Ogród",
+        "ikona": "ra-pine-tree",
+        "nowy": false,
         "punkty": [
           {
             "tekst": "Siewniki tej rośliny rozpylają się naturalnie drogą wodną (hydrochory), co sprzyja gęstym zbiorowiskom na brzegach rzek.",
@@ -1686,17 +2010,6 @@
             ],
             "sekcja": "uprawa",
             "czesc": null
-          },
-          {
-            "tekst": "W warunkach dzikich nasiona tej rośliny rozprzestrzeniane są za pośrednictwem wody (hydrochoria), co wiąże się z jej częstym występowaniem na brzegach rzek.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s1773"
-            ],
-            "sekcja": "ciekawostki",
-            "czesc": "nasiona"
           }
         ]
       }
