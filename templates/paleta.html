@@ -5,10 +5,11 @@
 {% block content %}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/paleta.css') }}">
 
+<!-- data-plant-url: zwykly wzorzec, NIE url_for - Frozen-Flask zamrazalby wtedy adres /plant/__ID__/ (404 na Renderze) -->
 <div class="container py-4 pal-page" id="paleta"
      data-json="{{ url_for('static', filename='json/paleta.json') }}"
      data-json-siedziba="{{ url_for('static', filename='json/paleta_siedziba.json') }}"
-     data-plant-url="{{ url_for('plants.plant_detail', plant_id='__ID__') }}">
+     data-plant-url="/plant/__ID__/">
 
     <header class="pal-hero">
         <h1><i class="bi bi-palette" aria-hidden="true"></i> Paleta Barw Zielarza</h1>
