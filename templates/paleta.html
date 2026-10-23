@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+{% block title %}Paleta Barw Zielarza – dobierz zioła do farbowania włosów | Kwiatownik{% endblock %}
+{% block meta_description %}Interaktywna paleta ziół barwiących: podaj kolor, siwiznę, porowatość i historię włosów, a Kwiatownik dobierze mieszankę henny, indygo, cassii lub płukanek ziołowych i pokaże przewidywany kolor.{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/paleta.css') }}">
+
+<div class="container py-4 pal-page" id="paleta"
+     data-json="{{ url_for('static', filename='json/paleta.json') }}"
+     data-json-siedziba="{{ url_for('static', filename='json/paleta_siedziba.json') }}"
+     data-plant-url="{{ url_for('plants.plant_detail', plant_id='__ID__') }}">
+
+    <header class="pal-hero">
+        <h1><i class="bi bi-palette" aria-hidden="true"></i> Paleta Barw Zielarza</h1>
+        <p class="pal-lead">Opisz swoje włosy, a potem wybierz odcień na kole albo sam wymieszaj zioła. Kwiatownik pokaże przewidywany kolor, ilości na Twoją długość, sposób przygotowania i&nbsp;ostrzeżenia.</p>
+        <p class="pal-note"><i class="bi bi-info-circle" aria-hidden="true"></i> Zioła nie rozjaśniają włosów – barwnik osadza się na kolorze, który już masz. Podgląd jest przybliżeniem, więc zanim nałożysz mieszankę na całą głowę, zrób test na paśmie.</p>
+    </header>
+
+    <!-- 1. PROFIL WŁOSA -->
+    <section class="pal-card" id="palProfil" aria-labelledby="palProfilH">
+        <h2 class="section-title" id="palProfilH">1. Twój włos</h2>
+        <form class="pal-profil" id="palProfilForm" autocomplete="off" onsubmit="return false">
+            <div class="pal-field pal-field-wide">
+                <label for="palPoziom">Kolor wyjściowy (bez siwych): <strong id="palPoziomOut">6 – ciemny blond</strong></label>
+                <div class="pal-levels" id="palLevels" role="radiogroup" aria-label="Poziom koloru 1–10"></div>
+                <input type="range" id="palPoziom" name="poziom" min="1" max="10" step="1" value="6" class="pal-range" aria-describedby="palPoziomHelp">
+                <small id="palPoziomHelp" class="pal-help">Skala fryzjerska: 1 – czarny, 10 – platynowy. Wybierz kolor przy nasadzie, w dziennym świetle.</small>
+            </div>
+
+            <div class="pal-field">
+                <label for="palSiwizna">Siwe włosy: <strong id="palSiwiznaOut">0%</strong></label>
+                <input type="range" id="palSiwizna" name="siwizna" min="0" max="100" step="5" value="0" class="pal-range">
+                <small class="pal-help">Henna na siwych pasmach wychodzi dużo jaśniejsza niż na reszcie włosów.</small>
+            </div>
+
+            <div class="pal-field">
+                <span class="pal-label" id="palGruboscL">Grubość włosa</span>
+                <div class="pal-pills" role="radiogroup" aria-labelledby="palGruboscL">
+                    <label><input type="radio" name="grubosc" value="cienkie"> cienkie</label>
+                    <label><input type="radio" name="grubosc" value="srednie" checked> średnie</label>
+                    <label><input type="radio" name="grubosc" value="grube"> grube</label>
+                </div>
+            </div>
+
+            <div class="pal-field">
+                <span class="pal-label" id="palPorL">Porowatość</span>
+                <div class="pal-pills" role="radiogroup" aria-labelledby="palPorL">
+                    <label title="gładkie, długo schną, kosmetyki „leżą” na włosie"><input type="radio" name="porowatosc" value="niska"> niska</label>
+                    <label><input type="radio" name="porowatosc" value="srednia" checked> średnia</label>
+                    <label title="szorstkie, puszą się, szybko chłoną i szybko tracą kolor"><input type="radio" name="porowatosc" value="wysoka"> wysoka</label>
+                </div>
+                <small class="pal-help">Niska porowatość: włosy gładkie i długo schną. Wysoka: włosy puszą się i szybko chłoną wodę.</small>
+            </div>
+
+            <div class="pal-field">
+                <label for="palDlugosc" class="pal-label">Długość</label>
+                <select id="palDlugosc" name="dlugosc" class="form-select pal-select"></select>
+            </div>
+
+            <fieldset class="pal-field pal-field-wide">
+                <legend class="pal-label">Zabiegi chemiczne (kiedykolwiek na obecnych długościach)</legend>
+                <div class="pal-chips">
+                    <label><input type="checkbox" name="chemia.farba"> farba chemiczna</label>
+                    <label><input type="checkbox" name="chemia.rozjasniane"> rozjaśnianie / balejaż</label>
+                    <label><input type="checkbox" name="chemia.trwala"> trwała ondulacja</label>
+                    <label><input type="checkbox" name="chemia.prostowanie"> prostowanie chemiczne</label>
+                    <label><input type="checkbox" name="chemia.keratyna"> keratynowe prostowanie</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="pal-field pal-field-wide">
+                <legend class="pal-label">Produkty używane wcześniej</legend>
+                <div class="pal-chips">
+                    <label><input type="checkbox" name="produkty.henna"> czysta henna</label>
+                    <label><input type="checkbox" name="produkty.indygo"> indygo / katam</label>
+                    <label class="pal-chip-risk"><input type="checkbox" name="produkty.henna_zlozona"> henna „złożona” (z dodatkami metali)</label>
+                    <label class="pal-chip-risk"><input type="checkbox" name="produkty.farby_progresywne"> odsiwiacz stopniowy (sole metali)</label>
+                    <label class="pal-chip-risk"><input type="checkbox" name="produkty.czarna_henna"> „czarna henna”</label>
+                    <label class="pal-chip-risk"><input type="checkbox" name="produkty.uczulenie_ppd"> reakcja alergiczna na farbę (PPD)</label>
+                    <label><input type="checkbox" name="produkty.silikony"> odżywki z silikonami</label>
+                    <label><input type="checkbox" name="produkty.oleje"> olejowanie</label>
+                    <label><input type="checkbox" name="produkty.suchy_szampon"> suchy szampon / stylizacja</label>
+                </div>
+                <small class="pal-help">Jeśli nie wiesz, czym farbowano włosy wcześniej, zaznacz „henna złożona” – Paleta przypomni o teście pasma.</small>
+            </fieldset>
+
+            <div class="pal-profil-sum pal-field-wide" id="palProfilSum" aria-live="polite"></div>
+        </form>
+    </section>
+
+    <!-- 2. DOBÓR / MIESZANIE -->
+    <section class="pal-card" id="palDobor" aria-labelledby="palDoborH">
+        <h2 class="section-title" id="palDoborH">2. Kolor</h2>
+        <div class="pal-tabs" role="tablist" aria-label="Tryb">
+            <button type="button" role="tab" id="palTabCel" aria-controls="palPanelCel" aria-selected="true" class="active"><i class="bi bi-bullseye" aria-hidden="true"></i> Dobierz do koloru</button>
+            <button type="button" role="tab" id="palTabMix" aria-controls="palPanelMix" aria-selected="false"><i class="bi bi-sliders" aria-hidden="true"></i> Mieszaj sam</button>
+        </div>
+
+        <div class="pal-panel" id="palPanelCel" role="tabpanel" aria-labelledby="palTabCel">
+            <div class="pal-cel-grid">
+                <div class="pal-wheel-wrap">
+                    <svg id="palWheel" class="pal-wheel" viewBox="0 0 320 320" role="group" aria-label="Koło barw – wybierz kolor docelowy"></svg>
+                    <ol class="pal-legend" id="palLegend"></ol>
+                </div>
+                <div class="pal-cel-side">
+                    <div class="pal-target" id="palTarget"><p class="pal-muted">Kliknij odcień na kole, a Paleta dobierze zioła do Twojego włosa.</p></div>
+                    <div class="pal-chips pal-filters" aria-label="Ograniczenia">
+                        <label><input type="checkbox" id="palOptRodzime"> tylko rośliny rosnące w Polsce</label>
+                        <label><input type="checkbox" id="palOptBezTrwalych"> bez trwałych farb (henna, indygo…)</label>
+                        <label><input type="checkbox" id="palOptPlukanki"> tylko płukanki</label>
+                    </div>
+                    <div id="palPropozycje" class="pal-props" aria-live="polite"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pal-panel" id="palPanelMix" role="tabpanel" aria-labelledby="palTabMix" hidden>
+            <div class="pal-mix-grid">
+                <div class="pal-mix-left">
+                    <p class="pal-muted">Kliknij zioło, aby dodać je do pasty albo do płukanek. Suwakiem ustawiasz proporcje.</p>
+                    <div id="palPicker" class="pal-picker"></div>
+                </div>
+                <div class="pal-mix-right">
+                    <div class="pal-mix-preview" id="palMixPreview" aria-live="polite"></div>
+                    <div id="palMixer"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. RECEPTURA -->
+    <section class="pal-card" id="palWynik" aria-labelledby="palWynikH">
+        <h2 class="section-title" id="palWynikH">3. Receptura</h2>
+        <div id="palReceptura" data-wiki-scan><p class="pal-muted">Tu pojawi się receptura: wybierz propozycję z koła albo wymieszaj zioła.</p></div>
+    </section>
+
+    <!-- 4. ATLAS -->
+    <section class="pal-card" id="palAtlasSec" aria-labelledby="palAtlasH">
+        <h2 class="section-title" id="palAtlasH">Atlas ziół barwiących</h2>
+        <div class="pal-chips pal-atlas-filter" id="palAtlasFilter"></div>
+        <div class="pal-atlas" id="palAtlas"></div>
+    </section>
+
+    <section class="pal-card pal-foot" aria-labelledby="palZrodlaH">
+        <h2 class="section-title" id="palZrodlaH">Źródła</h2>
+        <ol class="pal-sources" id="palZrodla"></ol>
+        <p class="pal-thanks"><i class="bi bi-book" aria-hidden="true"></i> <strong>Podziękowanie dla Wikipedii</strong> – opisy roślin i barwników w dymkach pochodzą z otwartej bazy wiedzy Wikipedii i Wikidanych.</p>
+        <p class="pal-muted small">Informacje mają charakter edukacyjny. Podgląd koloru jest symulacją – na wynik wpływają też odmiana i świeżość proszku, woda, czas i temperatura. Przed farbowaniem zrób test na paśmie i próbę uczuleniową. Przy chorobach skóry głowy zapytaj dermatologa.</p>
+    </section>
+</div>
+
+<script src="{{ url_for('static', filename='js/paleta_model.js') }}"></script>
+<script src="{{ url_for('static', filename='js/paleta.js') }}"></script>
+{% endblock %}

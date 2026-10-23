@@ -103,6 +103,14 @@ def porownaj():
     return render_template('porownaj.html', all_plants=all_plants, rows=rows)
 
 
+@plants_bp.route('/paleta/')
+def paleta():
+    """Paleta Barw Zielarza: dobor ziol do farbowania wlosow wedlug koloru, siwizny, porowatosci i historii wlosa.
+    Dane (static/json/paleta.json + paleta_siedziba.json z Siedziby) i obliczenia (static/js/paleta_model.js)
+    sa w przegladarce, wiec strona dziala tez w wersji statycznej (freeze.py zapisze ja do build/paleta/)."""
+    return render_template('paleta.html')
+
+
 @plants_bp.route('/szukaj_terapeutyczna/', methods=['GET', 'POST'])
 def szukaj_terapeutyczna():
     suggestions = get_all_therapeutic_keywords()

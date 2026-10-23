@@ -213,6 +213,7 @@
                     {% set kw_p = request.path if request else '' %}
                     <li class="nav-item"><a class="nav-link{% if kw_p.startswith('/generator') %} kw-active" aria-current="page{% endif %}" href="{{ url_for('plants.generator') }}"><i class="ra ra-flask"></i> Generatory</a></li>
                     <li class="nav-item"><a class="nav-link{% if kw_p.startswith('/przepisy') %} kw-active" aria-current="page{% endif %}" href="{{ url_for('recipes.przepisy') }}"><i class="ra ra-bubbling-potion"></i> Przepisy</a></li>
+                    <li class="nav-item"><a class="nav-link{% if kw_p.startswith('/paleta') %} kw-active" aria-current="page{% endif %}" href="{{ url_for('plants.paleta') }}"><i class="bi bi-palette"></i> Paleta</a></li>
                     <li class="nav-item"><a class="nav-link{% if kw_p.startswith('/gildie') %} kw-active" aria-current="page{% endif %}" href="{{ url_for('plants.gildie') }}"><i class="ra ra-pawn"></i> Gildie</a></li>
                     <li class="nav-item"><a class="nav-link{% if kw_p.startswith('/porownaj') %} kw-active" aria-current="page{% endif %}" href="{{ url_for('plants.porownaj') }}"><i class="ra ra-scroll-unfurled"></i> Porównaj</a></li>
                     <li class="nav-item d-none d-lg-block"><a class="nav-link frozen-feature" href="#"><i class="ra ra-speech-bubble"></i> Komentarze</a></li>
