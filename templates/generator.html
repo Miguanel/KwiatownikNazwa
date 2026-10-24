@@ -190,6 +190,25 @@
         margin-bottom: 0; /* Usuwamy dolny margines z samej tabeli */
         min-width: 600px; /* Wymuszamy minimalną szerokość, żeby kolumny się nie zgniotły */
     }
+    /* Telefon: tabela jako lista kart – waga i płyn zawsze widoczne (bez przewijania w bok) */
+    @media (max-width: 640px) {
+        .table-responsive-wrapper { overflow-x: visible; border: 0; }
+        .lab-table { min-width: 0; }
+        .lab-table thead { display: none; }
+        .lab-table tbody tr { display: grid; grid-template-columns: 1fr 1fr auto; gap: 6px 10px; padding: 10px 4px; border-bottom: 1px solid #ddd; position: relative; }
+        .lab-table tbody td { display: block; padding: 0 !important; border: 0 !important; text-align: left !important; }
+        .lab-table tbody td:nth-child(1) { grid-column: 1 / 3; grid-row: 1; }
+        .lab-table tbody td:nth-child(5) { grid-column: 3; grid-row: 1; }
+        .lab-table tbody td:nth-child(2) { grid-column: 1; grid-row: 2; }
+        .lab-table tbody td:nth-child(3) { grid-column: 2 / 4; grid-row: 2; }
+        .lab-table tbody td:nth-child(4) { grid-column: 1 / -1; grid-row: 3; margin: 0; }
+        .lab-table tbody td:nth-child(2)::before { content: "Waga: "; color: #666; font-weight: normal; }
+        .lab-table tbody td:nth-child(3)::before { content: "Płyn (ml):"; display: block; color: #666; font-size: 0.85rem; }
+        .lab-table tbody td:nth-child(3) .lock-btn { top: auto !important; bottom: 4px; }
+        .lab-table tfoot tr { display: grid; grid-template-columns: auto 1fr 1fr; gap: 6px; padding: 8px 4px; }
+        .lab-table tfoot td { padding: 0 !important; }
+        .lab-table tfoot td[colspan] { display: none; }
+    }
 
     /* --- STYL KLIKALNEGO SKŁADNIKA (WIKIPEDIA) --- */
     .wiki-clickable {

@@ -1,0 +1,45 @@
+/* =====================================================================
+   FARBIARNIA (templates/farbiarnia.html) – korzysta z klas Palety (paleta.css),
+   tu tylko motki, próbki zapraw i układ wyboru rośliny.
+   ===================================================================== */
+.fb-masa { display: flex; align-items: center; gap: 8px; }
+.fb-masa input { max-width: 140px; }
+.fb-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 22px; align-items: start; }
+.fb-right { position: sticky; top: 130px; }
+.fb-wybrana h3 { margin-bottom: 4px; }
+.fb-ilosc { display: block; margin: 8px 0 0; }
+.fb-ilosc input { display: block; margin-top: 4px; }
+.fb-probki { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 12px 0 4px; }
+.fb-probka { border: 2px solid transparent; background: var(--kw-parch); border-radius: 10px; padding: 6px 4px; display: flex; flex-direction: column; align-items: center; gap: 2px; font: inherit; font-size: 0.88rem; color: var(--kw-ink); }
+.fb-probka.on { border-color: var(--kw-gold); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); }
+.fb-probka:focus-visible { outline: 2px solid var(--kw-green); outline-offset: 2px; }
+.fb-motek { width: 120px; height: 64px; display: block; filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.2)); }
+.fb-motek.sm { width: 100%; max-width: 110px; height: auto; aspect-ratio: 120 / 64; }
+.fb-motek.lg { width: 180px; height: 96px; }
+.fb-dobarw { margin-top: 14px; padding-top: 10px; border-top: 1px dashed var(--kw-line); }
+.fb-dobarw .pal-select { max-width: 100%; }
+.fb-rec-top { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-bottom: 10px; }
+.fb-rec-top > i { color: var(--kw-gold); font-size: 1.4rem; }
+.fb-rec-top code { color: var(--kw-muted); font-size: 0.85rem; }
+.fb-rec-top .pal-swatch { width: 18px; height: 18px; vertical-align: -3px; }
+.fb-atlas-sw { display: flex; flex-direction: column; gap: 4px; flex: none; }
+.fb-atlas-sw span { width: 30px; height: 26px; border-radius: 7px; box-shadow: inset 0 -5px 8px rgba(0, 0, 0, 0.2); }
+.pal-page .pal-table td:nth-child(2) { white-space: normal; }
+
+@media (max-width: 900px) {
+    .fb-grid { grid-template-columns: 1fr; }
+    .fb-right { position: static; order: -1; }
+}
+@media (max-width: 560px) {
+    .fb-motek.lg { width: 140px; height: 75px; }
+    .fb-motek { width: 96px; height: 52px; }
+    /* tabela ilości: tylko 2 kolumny – zostaje tabelą */
+    #fbReceptura .pal-table thead { display: table-header-group; }
+    #fbReceptura .pal-table tr { display: table-row; padding: 0; }
+    #fbReceptura .pal-table td { display: table-cell; padding: 6px 4px; border-bottom: 1px solid var(--kw-line-soft); }
+    #fbReceptura .pal-table td:nth-child(2)::before { content: none; }
+    #fbReceptura .pal-table td:nth-child(3) { display: none; }
+}
+@media print {
+    #farbiarnia .pal-card:not(#fbWynik), #farbiarnia .pal-hero, .pal-rec-btns { display: none !important; }
+}

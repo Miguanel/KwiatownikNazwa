@@ -203,3 +203,8 @@ footer i { color: var(--kw-gold); }
 }
 .main-header .kw-brand:hover .kw-logo { transform: rotate(-8deg) scale(1.06); }
 @media (max-width: 768px) { .main-header .kw-brand .kw-logo { width: 34px; height: 34px; flex-basis: 34px; } }
+
+/* ---------- Telefon: tytuły stron nie zajmują pół ekranu i nie wychodzą poza ekran ---------- */
+@media (max-width: 576px) {
+    .container h1:not(.hero-title) { font-size: clamp(1.6rem, 7.2vw, 2.1rem) !important; line-height: 1.2; overflow-wrap: anywhere; hyphens: auto; }
+}

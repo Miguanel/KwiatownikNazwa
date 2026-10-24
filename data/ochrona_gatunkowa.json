@@ -1,0 +1,53 @@
+{
+  "wersja": 1,
+  "sprawdzono": "2026-10-24",
+  "opis": "Ochrona gatunkowa roślin Kwiatownika w Polsce. Klucz = id pliku rośliny (data/plants). Plik ręczny – przy zmianie przepisów poprawić tutaj (app/utils/ochrona.py, strona rośliny, Mój zielnik).",
+  "akt": {
+    "nazwa": "Rozporządzenie Ministra Środowiska z dnia 9 października 2014 r. w sprawie ochrony gatunkowej roślin",
+    "publikator": "Dz.U. 2014 poz. 1409",
+    "url": "https://eli.gov.pl/eli/DU/2014/1409/ogl",
+    "pdf": "https://api.sejm.gov.pl/eli/acts/DU/2014/1409/text.pdf"
+  },
+  "statusy": {
+    "scisla": {"nazwa": "ochrona ścisła", "ikona": "bi-shield-fill-x", "zbior": "Zbiór zabroniony."},
+    "czesciowa": {"nazwa": "ochrona częściowa", "ikona": "bi-shield-fill-exclamation", "zbior": "Ze stanu dzikiego nie wolno zrywać, niszczyć ani przenosić okazów."},
+    "inwazyjny": {"nazwa": "gatunek obcy, inwazyjny", "ikona": "bi-exclamation-octagon", "zbior": "Nie sadzić i nie rozsiewać w pobliżu lasów i terenów cennych przyrodniczo."}
+  },
+  "rosliny": {
+    "czosnek_niedzwiezi": {
+      "status": "czesciowa",
+      "zalacznik2_lp": 218,
+      "zalacznik3_lp": 8,
+      "pozyskiwanie": "Załącznik nr 3: zbiór ręczny z licznych populacji, wyłącznie w województwach śląskim, małopolskim i podkarpackim; zostawić nie mniej niż 75% populacji, nie uszkadzać części podziemnych. Dotyczy podmiotów z zezwoleniem regionalnego dyrektora ochrony środowiska.",
+      "porada": "Na własny użytek: kupuj liście z upraw albo posadź czosnek niedźwiedzi w ogrodzie. Uwaga na pomyłkę z konwalią i zimowitem – obie są trujące."
+    },
+    "kocanki_piaskowe": {
+      "status": "czesciowa",
+      "zalacznik2_lp": 298,
+      "zalacznik3_lp": 12,
+      "pozyskiwanie": "Załącznik nr 3: zbiór ręczny koszyczków; zostawić nie mniej niż 75% populacji. Dotyczy podmiotów z zezwoleniem regionalnego dyrektora ochrony środowiska.",
+      "porada": "Surowiec (Helichrysi inflorescentia) kupuj w zielarni – pochodzi z upraw lub z legalnego zbioru."
+    },
+    "rokitnik_zwyczajny": {
+      "status": "czesciowa",
+      "zalacznik2_lp": 230,
+      "zalacznik3_lp": 9,
+      "pozyskiwanie": "Załącznik nr 3: zbiór owoców bez uszkadzania krzewów, poza siedliskami wydmowymi i klifowymi. Dotyczy podmiotów z zezwoleniem regionalnego dyrektora ochrony środowiska.",
+      "porada": "Ochrona dotyczy dziko rosnących krzewów (głównie wydmy nadmorskie). Owoce z ogrodów i plantacji odmian uprawnych możesz zbierać bez ograniczeń."
+    },
+    "dab_czerwony": {
+      "status": "inwazyjny",
+      "porada": "Gatunek z Ameryki Północnej, wymieniany przez GDOŚ wśród roślin inwazyjnych: rozsiewa się do lasów i wypiera rodzime gatunki. Liście rozkładają się wolno i zakwaszają glebę."
+    }
+  },
+  "ogolne": [
+    "W parkach narodowych i rezerwatach przyrody nie wolno zrywać roślin ani zbierać ich części (ustawa o ochronie przyrody).",
+    "Ochrona gatunkowa dotyczy roślin dziko rosnących. Okazy z własnego ogrodu lub z upraw możesz zbierać.",
+    "Zbieraj tylko rośliny, które znasz na pewno, i nie więcej, niż potrzebujesz – zostaw większość stanowiska."
+  ],
+  "zrodla": [
+    {"nazwa": "Dz.U. 2014 poz. 1409 – rozporządzenie w sprawie ochrony gatunkowej roślin (ISAP / ELI)", "url": "https://eli.gov.pl/eli/DU/2014/1409/ogl"},
+    {"nazwa": "Ustawa o ochronie przyrody – tekst jednolity Dz.U. 2024 poz. 1478", "url": "https://eli.gov.pl/eli/DU/2024/1478/ogl/pol/pdf"},
+    {"nazwa": "Rośliny inwazyjne według GDOŚ (materiał Starostwa Powiatowego w Dębicy)", "url": "https://powiatdebicki.pl/pro_debicki/zasoby/files/21-04/rosliny-inwazyjne.pdf"}
+  ]
+}

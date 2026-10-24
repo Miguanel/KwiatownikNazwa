@@ -1,0 +1,207 @@
+/* =====================================================================
+   MÓJ ZIELNIK (/zielnik/) – korzysta z wyglądu Palety (paleta.css: pal-card, pal-tabs, pal-btn…)
+   ===================================================================== */
+.zl-stat { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 10px; margin-top: 10px; }
+.zl-stat span { padding: 3px 12px; border: 1px solid var(--kw-line); border-radius: 999px; background: var(--kw-parch); font-size: 0.92rem; color: var(--kw-muted); }
+.zl-stat strong { color: var(--kw-green); }
+.zl-stat .zl-stat-pilne { border-color: var(--kw-gold); }
+.zl-stat .zl-stat-pilne strong { color: var(--kw-gold); }
+
+/* wyszukiwarka */
+.zl-szukaj { position: relative; max-width: 460px; }
+.zl-szukaj .pal-select { max-width: none; width: 100%; }
+.zl-podp { position: absolute; z-index: 30; left: 0; right: 0; top: calc(100% + 2px); background: var(--kw-paper); border: 1px solid var(--kw-line); border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12); overflow: hidden; }
+.zl-podp button { display: flex; width: 100%; justify-content: space-between; align-items: baseline; gap: 10px; text-align: left; background: none; border: 0;
+    border-bottom: 1px solid var(--kw-line-soft); padding: 8px 12px; color: var(--kw-ink); font: inherit; }
+.zl-podp button:last-child { border-bottom: 0; }
+.zl-podp button:hover, .zl-podp button.on { background: rgba(45, 90, 39, 0.09); }
+.zl-podp em { color: var(--kw-muted); font-size: 0.88em; }
+.zl-podp small { color: var(--kw-green); white-space: nowrap; font-weight: 700; }
+.zl-podp-brak { padding: 8px 12px; color: var(--kw-muted); }
+
+.zl-prop:empty { display: none; }
+.zl-prop { margin-top: 12px; }
+.zl-info, .zl-start { background: var(--kw-parch); border: 1px dashed var(--kw-line); border-radius: 8px; padding: 10px 12px; margin: 10px 0; }
+.zl-info p, .zl-start p { margin: 0 0 8px; }
+.zl-info i { color: var(--kw-gold); }
+.zl-chipy { display: flex; flex-wrap: wrap; gap: 6px; }
+.zl-chip { border: 1px solid var(--kw-line); background: var(--kw-paper); color: var(--kw-ink); border-radius: 999px; padding: 4px 12px; font: inherit; font-size: 0.93rem; }
+.zl-chip small { color: var(--kw-muted); margin-left: 2px; }
+.zl-chip:hover, .zl-chip:focus-visible { border-color: var(--kw-green); color: var(--kw-green); }
+.zl-chip.on { background: rgba(45, 90, 39, 0.12); border-color: var(--kw-green); color: var(--kw-green); font-weight: 700; }
+.zl-kat { margin-bottom: 12px; }
+.zl-podglad-h { margin: 0 0 6px; color: var(--kw-muted); font-style: italic; }
+.zl-pusto { color: var(--kw-muted); text-align: center; padding: 18px 8px; margin: 0; }
+.zl-pusto i { color: var(--kw-sage); font-size: 1.4em; display: block; margin-bottom: 4px; }
+
+/* karty roślin */
+.zl-rosliny { display: grid; gap: 10px; }
+.zl-karta { border: 1px solid var(--kw-line); border-radius: 10px; background: var(--kw-paper); }
+.zl-karta.zl-podglad { border-style: dashed; border-color: var(--kw-gold); }
+.zl-karta > summary { list-style: none; display: flex; align-items: center; gap: 12px; padding: 10px 12px; cursor: pointer; border-radius: 10px; }
+.zl-karta > summary::-webkit-details-marker { display: none; }
+.zl-karta > summary:hover { background: rgba(45, 90, 39, 0.04); }
+.zl-karta > summary:focus-visible { outline: 2px solid var(--kw-gold); outline-offset: 1px; }
+.zl-karta img, .zl-img-brak { width: 64px; height: 64px; flex: 0 0 64px; border-radius: 8px; object-fit: cover; border: 1px solid var(--kw-line-soft); background: var(--kw-parch); }
+.zl-img-brak { display: grid; place-items: center; color: var(--kw-sage); font-size: 1.6rem; }
+.zl-karta-t { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.zl-karta-t strong { font-family: 'Playfair Display', Georgia, serif; font-size: 1.08rem; color: var(--kw-moss); overflow-wrap: anywhere; }
+.zl-karta-t em { color: var(--kw-muted); font-size: 0.88rem; }
+.zl-karta-m { font-size: 0.88rem; color: var(--kw-green); }
+.zl-znaki { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 2px; }
+.zl-znaki:empty { display: none; }
+.zl-znak { font-size: 0.75rem; padding: 0 7px; border-radius: 999px; border: 1px solid var(--kw-line); color: var(--kw-muted); }
+.zl-znak-czesciowa, .zl-znak-scisla { border-color: var(--kw-gold); color: var(--kw-gold); }
+.zl-znak-inwazyjny { border-color: var(--kw-red); color: var(--kw-red); }
+.zl-znak-zap { border-color: var(--kw-green); color: var(--kw-green); }
+.zl-rozwin { flex: 0 0 auto; color: var(--kw-green); font-size: 0.9rem; font-weight: 700; white-space: nowrap; }
+.zl-karta[open] .zl-rozwin { visibility: hidden; }
+.zl-karta-body { padding: 0 14px 14px; border-top: 1px solid var(--kw-line-soft); }
+.zl-karta-body h4 { font-family: 'Playfair Display', Georgia, serif; font-size: 1.02rem; color: var(--kw-moss); margin: 16px 0 6px; border: 0; padding: 0; }
+.zl-karta-body ul { padding-left: 1.1rem; margin: 0; }
+.zl-karta-body li { margin: 3px 0; line-height: 1.4; }
+
+/* szybkie możliwości */
+.zl-mozl-wrap { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 8px; margin: 12px 0 4px; }
+.zl-mozl { display: block; padding: 8px 10px 8px 38px; position: relative; border: 1px solid var(--kw-line); border-radius: 8px; background: var(--kw-parch);
+    color: var(--kw-ink); text-decoration: none; font-weight: 700; line-height: 1.3; }
+.zl-mozl > i { position: absolute; left: 11px; top: 9px; color: var(--kw-gold); font-size: 1.1rem; }
+.zl-mozl small { display: block; font-weight: 400; color: var(--kw-muted); }
+a.zl-mozl:hover, a.zl-mozl:focus-visible { border-color: var(--kw-green); color: var(--kw-green); }
+.zl-mozl-lista a { color: var(--kw-green); }
+
+.zl-och { margin: 10px 0 0; padding: 8px 10px; border-left: 4px solid var(--kw-gold); background: var(--kw-parch); border-radius: 6px; font-size: 0.94rem; }
+.zl-och-inwazyjny { border-left-color: var(--kw-red); background: var(--kw-red-bg); }
+.zl-och i { color: var(--kw-gold); }
+.zl-och-inwazyjny i { color: var(--kw-red); }
+.zl-ostr { margin: 14px 0 0; padding: 8px 10px; background: var(--kw-red-bg); border-radius: 6px; font-size: 0.94rem; }
+.zl-ostr i { color: var(--kw-red); }
+
+.zl-przepisy { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+.zl-kat-box { border: 1px solid var(--kw-line-soft); border-radius: 8px; padding: 8px 10px; }
+.zl-kat-box h5 { font-size: 0.95rem; margin: 0 0 4px; color: var(--kw-moss); font-weight: 700; }
+.zl-kat-box h5 span { color: var(--kw-muted); font-weight: 400; }
+.zl-kat-box a, .zl-co a, .zl-gil a, .zl-teraz a, .zl-spi a { color: var(--kw-green); }
+.zl-wiecej { list-style: none; margin-left: -1.1rem !important; }
+.zl-brak { color: var(--kw-gold); }
+.zl-ok { color: var(--kw-green); font-weight: 700; }
+.zl-zast { display: grid; grid-template-columns: max-content 1fr; gap: 4px 12px; margin: 0; }
+.zl-zast dt { font-weight: 700; color: var(--kw-moss); }
+.zl-zast dd { margin: 0; }
+.zl-czesci li span { display: block; font-size: 0.9rem; }
+.zl-czas { color: var(--kw-green); }
+.zl-dz { color: var(--kw-muted); }
+.zl-prace li.teraz { background: rgba(154, 123, 47, 0.1); border-radius: 4px; }
+.zl-mies { display: inline-block; min-width: 4.5em; font-size: 0.82rem; color: var(--kw-muted); text-transform: uppercase; letter-spacing: 0.02em; }
+.zl-mini { border: 1px solid var(--kw-line); background: var(--kw-paper); color: var(--kw-green); border-radius: 999px; padding: 0 9px; font: inherit; font-size: 0.82rem; line-height: 1.6; }
+.zl-mini:hover, .zl-mini:focus-visible { border-color: var(--kw-green); }
+.zl-wyczysc { color: var(--kw-red) !important; border-color: var(--kw-line) !important; }
+.zl-wyczysc:hover, .zl-wyczysc:focus-visible { border-color: var(--kw-red) !important; background: var(--kw-red-bg) !important; }
+.zl-notatka { display: block; margin-top: 14px; font-weight: 700; color: var(--kw-moss); }
+.zl-notatka textarea { max-width: none; width: 100%; margin-top: 4px; font-weight: 400; }
+.zl-akcje { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+
+/* spiżarnia */
+.zl-zbior-form { border: 1px solid var(--kw-line-soft); border-radius: 8px; padding: 12px; background: var(--kw-parch); margin-bottom: 12px; }
+.zl-zbior-form h3 { margin-bottom: 10px; }
+.zl-pola { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px 12px; margin-bottom: 12px; }
+.zl-pola label { display: flex; flex-direction: column; gap: 3px; font-size: 0.9rem; font-weight: 700; color: var(--kw-moss); min-width: 0; }
+.zl-pola .pal-select { max-width: none; width: 100%; font-weight: 400; }
+.zl-pola .zl-pelna { grid-column: 1 / -1; }
+.zl-ilosc { display: flex; gap: 6px; }
+.zl-ilosc input { flex: 1 1 60%; min-width: 0; }
+.zl-ilosc select { flex: 1 1 40%; min-width: 0; }
+.zl-zbior-form .pal-btn { margin-right: 8px; }
+.zl-spi-bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; margin: 6px 0 10px; }
+.zl-check { display: inline-flex; align-items: center; gap: 6px; color: var(--kw-muted); }
+.zl-check input { accent-color: var(--kw-green); }
+.zl-spi { list-style: none; padding: 0; margin: 0 0 10px; display: grid; gap: 6px; }
+.zl-spi li { display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; padding: 8px 10px; border: 1px solid var(--kw-line-soft); border-left: 4px solid var(--kw-sage);
+    border-radius: 6px; background: var(--kw-paper); }
+.zl-spi li.wkrotce { border-left-color: var(--kw-gold); }
+.zl-spi li.po { border-left-color: var(--kw-red); background: var(--kw-red-bg); }
+.zl-spi li.zuzyte { opacity: 0.6; border-left-color: var(--kw-line); }
+.zl-spi-t { font-weight: 700; min-width: 0; }
+.zl-spi-t span { font-weight: 400; color: var(--kw-muted); }
+.zl-spi-m { grid-column: 1; display: flex; flex-wrap: wrap; gap: 2px 14px; font-size: 0.88rem; color: var(--kw-muted); }
+.zl-spi li.wkrotce .zl-termin { color: var(--kw-gold); font-weight: 700; }
+.zl-spi li.po .zl-termin { color: var(--kw-red); font-weight: 700; }
+.zl-spi-n { grid-column: 1; font-size: 0.88rem; font-style: italic; }
+.zl-spi-a { grid-column: 2; grid-row: 1 / span 3; display: flex; flex-direction: column; gap: 4px; align-self: center; }
+
+/* co zrobić */
+.zl-co { list-style: none; padding: 0; margin: 0 0 10px; display: grid; gap: 6px; }
+.zl-co li { padding: 7px 10px; border: 1px solid var(--kw-line-soft); border-radius: 6px; background: var(--kw-paper); }
+.zl-co a { font-weight: 700; }
+#zlCo h4 { font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; color: var(--kw-moss); margin: 16px 0 6px; border: 0; padding: 0; }
+.zl-tagi { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
+.zl-tag { font-size: 0.78rem; padding: 0 8px; border-radius: 999px; background: rgba(45, 90, 39, 0.1); color: var(--kw-green); }
+.zl-tag.zap { background: var(--kw-green); color: #fff; }
+.zl-tag.brak { background: transparent; border: 1px dashed var(--kw-gold); color: var(--kw-gold); }
+
+/* kalendarz */
+.zl-teraz { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-bottom: 14px; }
+.zl-teraz > div { border: 1px solid var(--kw-line-soft); border-radius: 8px; padding: 10px 12px; background: var(--kw-paper); }
+.zl-teraz h4, .zl-kal-wrap h4 { font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; color: var(--kw-moss); margin: 0 0 6px; border: 0; padding: 0; }
+.zl-teraz h4 i { color: var(--kw-gold); }
+.zl-teraz h5 { font-size: 0.95rem; margin: 12px 0 4px; color: var(--kw-gold); font-weight: 700; }
+.zl-teraz ul { padding-left: 1.1rem; margin: 0; }
+.zl-teraz li { margin: 4px 0; line-height: 1.35; }
+.zl-teraz li span { display: block; font-size: 0.88rem; color: var(--kw-muted); }
+.zl-kal { display: grid; grid-template-columns: minmax(90px, 200px) repeat(12, minmax(14px, 1fr)); gap: 2px; align-items: stretch; }
+.zl-kal-n { font-size: 0.88rem; padding: 2px 6px 2px 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.zl-kal-n a { color: var(--kw-ink); text-decoration: none; }
+.zl-kal-n a:hover { color: var(--kw-green); text-decoration: underline; }
+.zl-kal-h { font-size: 0.72rem; text-align: center; color: var(--kw-muted); font-weight: 700; }
+.zl-kal-h.teraz { color: var(--kw-gold); }
+.zl-kal-c { min-height: 20px; border-radius: 3px; background: var(--kw-line-soft); }
+.zl-kal-c.on { background: var(--kw-sage); }
+.zl-kal-c.teraz { box-shadow: inset 0 0 0 2px var(--kw-gold); }
+
+.zl-kopia { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.zl-kopia label.btn { margin: 0; }
+
+/* noc */
+html[data-theme="night"] .zl-tag.zap { background: #3f6b38; }
+html[data-theme="night"] .zl-podp { box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5); }
+html[data-theme="night"] .zl-kal-c.on { background: #6f8a4d; }
+
+/* telefon */
+@media (max-width: 576px) {
+    .zl-karta > summary { gap: 10px; padding: 8px; }
+    .zl-karta img, .zl-img-brak { width: 52px; height: 52px; flex-basis: 52px; }
+    .zl-rozwin { display: none; }
+    .zl-karta-body { padding: 0 10px 12px; }
+    .zl-zast { grid-template-columns: 1fr; }
+    .zl-zast dd { margin-bottom: 6px; }
+    .zl-przepisy, .zl-mozl-wrap { grid-template-columns: 1fr; }
+    .zl-pola { grid-template-columns: 1fr 1fr; }
+    .zl-pola label:first-child { grid-column: 1 / -1; }
+    .zl-spi li { grid-template-columns: 1fr; }
+    .zl-spi-a { grid-column: 1; grid-row: auto; flex-direction: row; }
+    .zl-kal { grid-template-columns: minmax(70px, 1fr) repeat(12, 15px); gap: 1px; }
+    .zl-kal-n { font-size: 0.8rem; }
+    .zl-spi-bar .btn { width: 100%; }
+}
+@media (max-width: 360px) {
+    .zl-pola { grid-template-columns: 1fr; }
+}
+
+/* druk etykiet na słoiki */
+.zl-druk { display: none; }
+@media print {
+    body.zl-drukuje * { visibility: hidden !important; }
+    body.zl-drukuje .zl-druk, body.zl-drukuje .zl-druk * { visibility: visible !important; }
+    body.zl-drukuje .zl-druk { display: block !important; position: absolute; left: 0; top: 0; width: 100%; }
+    body.zl-drukuje .container::before, body.zl-drukuje .container::after { display: none !important; }
+    .zl-etykiety { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; }
+    .zl-ety { border: 1.2pt solid #3e4a3d; border-radius: 3mm; padding: 3mm 4mm; text-align: center; break-inside: avoid; font-family: Georgia, serif; color: #222;
+        min-height: 36mm; display: flex; flex-direction: column; justify-content: center; gap: 0.6mm; box-shadow: inset 0 0 0 1.4mm #fff, inset 0 0 0 1.8mm #9a7b2f; }
+    .zl-ety-n { font-size: 13pt; font-weight: bold; color: #2d5a27; }
+    .zl-ety-l { font-size: 8.5pt; font-style: italic; }
+    .zl-ety-c { font-size: 9pt; }
+    .zl-ety-d { font-size: 8pt; }
+    .zl-ety-m { font-size: 7.5pt; color: #555; }
+    .zl-ety-k { font-size: 6.5pt; letter-spacing: 0.15em; text-transform: uppercase; color: #9a7b2f; margin-top: 1mm; }
+}

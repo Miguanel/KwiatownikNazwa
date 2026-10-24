@@ -218,7 +218,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="kwiatownikNavbar">
                 <ul class="navbar-nav align-items-center">
                     {% set kw_p = request.path if request else '' %}
-                    <li class="nav-item"><a class="nav-link{% if kw_p.startswith('/generator') %} kw-active" aria-current="page{% endif %}" href="{{ url_for('plants.generator') }}"><i class="ra ra-flask"></i> Generatory</a></li>
+                    <li class="nav-item"><a class="nav-link{% if kw_p.startswith('/generator') %} kw-active" aria-current="page{% endif %}" href="{{ url_for('plants.generator') }}"><i class="ra ra-flask"></i> Generator</a></li>
                     <li class="nav-item"><a class="nav-link{% if kw_p.startswith('/przepisy') %} kw-active" aria-current="page{% endif %}" href="{{ url_for('recipes.przepisy') }}"><i class="ra ra-bubbling-potion"></i> Przepisy</a></li>
                     <li class="nav-item"><a class="nav-link{% if kw_p.startswith('/paleta') %} kw-active" aria-current="page{% endif %}" href="{{ url_for('plants.paleta') }}"><i class="bi bi-palette"></i> Paleta</a></li>
                     <li class="nav-item"><a class="nav-link{% if kw_p.startswith('/gildie') %} kw-active" aria-current="page{% endif %}" href="{{ url_for('plants.gildie') }}"><i class="ra ra-pawn"></i> Gildie</a></li>
@@ -226,8 +226,8 @@
                     <li class="nav-item d-none d-lg-block"><a class="nav-link frozen-feature" href="#"><i class="ra ra-speech-bubble"></i> Komentarze</a></li>
 
                     <li class="nav-item dropdown px-2">
-                        <button class="nav-link dropdown-toggle" type="button" id="favDropdownBtn" data-bs-toggle="dropdown" aria-expanded="false" style="background: none; border: none; font-weight: bold; font-size: 0.95rem;">
-                            <i class="ra ra-hearts"></i> Ulubione
+                        <button class="nav-link dropdown-toggle{% if kw_p.startswith('/zielnik') %} kw-active{% endif %}" type="button" id="favDropdownBtn" data-bs-toggle="dropdown" aria-expanded="false" style="background: none; border: none; font-weight: bold; font-size: 0.95rem;">
+                            <i class="ra ra-hearts"></i> Zielnik
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" id="favoritesDropdownMenu">
                         </ul>
@@ -437,10 +437,23 @@ window.renderFavoritesDropdown = function() {
             .replace(/\-\-+/g, '_');
     };
 
-    let html = '';
+    // Mój zielnik (static/js/zielnik_store.js, localStorage kw_zielnik_v1): rośliny zapisane na stronach roślin
+    let zielnik = {};
+    try { zielnik = (JSON.parse(localStorage.getItem('kw_zielnik_v1')) || {}).rosliny || {}; } catch (e) { zielnik = {}; }
+    const zIds = Object.keys(zielnik);
+    const escN = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    let html = '<li><a class="dropdown-item" href="/zielnik/"><i class="ra ra-sprout"></i> <strong>Mój zielnik</strong> – zbiory i co z nich zrobić</a></li>';
+    if (zIds.length) {
+        html += '<li><hr class="dropdown-divider"></li><li><h6 class="dropdown-header"><i class="ra ra-leaf"></i> W Moim zielniku</h6></li>';
+        zIds.slice(0, 12).forEach(id => {
+            const n = (zielnik[id] && zielnik[id].nazwa) || id.replace(/_/g, ' ');
+            html += `<li><a class="dropdown-item" href="/plant/${encodeURIComponent(id)}/">${escN(n)}</a></li>`;
+        });
+    }
     if (favPlants.length === 0 && favRecipes.length === 0) {
-        html = '<li><span class="dropdown-item text-muted">Twój zielnik jest pusty.</span></li>';
+        if (!zIds.length) html += '<li><span class="dropdown-item text-muted">Twój zielnik jest pusty – dodaj roślinę przyciskiem na jej stronie.</span></li>';
     } else {
+        html += '<li><hr class="dropdown-divider"></li>';
         if (favPlants.length > 0) {
             html += '<li><h6 class="dropdown-header"><i class="ra ra-leaf"></i> Twoje Zioła</h6></li>';
             favPlants.forEach(p => {

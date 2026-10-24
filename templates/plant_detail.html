@@ -107,7 +107,23 @@
             <p class="hero-subtitle">{{ plant.nazwa_lat }}{% if plant.rodzina %} <span class="hero-family">| {% set rd = plant.rodzina|string %}<span data-wiki-term="{{ rd.split('(')[0].strip() }}{% if '(' in rd %}|{{ rd.split('(')[1].split(')')[0].strip() }}{% endif %}">{{ rd }}</span></span>{% endif %}</p>
             <div class="hero-divider"></div>
             <p class="hero-desc" data-wiki-scan>{{ pole(plant, 'opis', plant.opis) }}</p>
-            <a class="compare-link" href="{{ url_for('plants.porownaj', a=plant_id) }}"><i class="ra ra-scroll-unfurled"></i> Porównaj z inną rośliną</a>
+            {% if ochrona %}
+            {# Ochrona gatunkowa w Polsce (data/ochrona_gatunkowa.json, app/utils/ochrona.py) #}
+            <aside class="kw-ochrona kw-ochrona-{{ ochrona.status }}" aria-label="Ochrona gatunkowa">
+                <p class="kw-ochrona-h"><i class="bi {{ ochrona.ikona }}" aria-hidden="true"></i> <strong>{{ ochrona.nazwa|capitalize }}</strong>{% if ochrona.status != 'inwazyjny' %} w Polsce{% endif %}</p>
+                {% if ochrona.zbior %}<p>{{ ochrona.zbior }}</p>{% endif %}
+                {% if ochrona.porada %}<p>{{ ochrona.porada }}</p>{% endif %}
+                {% if ochrona.pozyskiwanie %}<details><summary>Kiedy zbiór jest dozwolony?</summary><p>{{ ochrona.pozyskiwanie }}</p>
+                    {% if ochrona.akt.url %}<p class="kw-ochrona-src">Podstawa: <a href="{{ ochrona.akt.url }}" target="_blank" rel="noopener nofollow">{{ ochrona.akt.publikator }}</a>{% if ochrona.zalacznik2_lp %} – załącznik nr 2, lp. {{ ochrona.zalacznik2_lp }}{% endif %}{% if ochrona.zalacznik3_lp %}; załącznik nr 3, lp. {{ ochrona.zalacznik3_lp }}{% endif %}</p>{% endif %}
+                </details>{% endif %}
+            </aside>
+            {% endif %}
+            <div class="hero-actions">
+                <a class="compare-link" href="{{ url_for('plants.porownaj', a=plant_id) }}"><i class="ra ra-scroll-unfurled"></i> Porównaj z inną rośliną</a>
+                <button type="button" class="kw-zielnik-btn" id="kwZielnikBtn" data-id="{{ plant_id }}" data-nazwa="{{ plant.nazwa_pl }}" aria-pressed="false" hidden>
+                    <i class="bi bi-flower1" aria-hidden="true"></i> <span>Dodaj do Mojego zielnika</span></button>
+                <a class="compare-link" href="{{ url_for('plants.zielnik') }}#r={{ plant_id }}">Co zrobić z tą rośliną? →</a>
+            </div>
 
             {% if galeria %}
             <div class="plant-gallery">
@@ -559,6 +575,20 @@
     .hero-desc { font-size: 1.12rem; line-height: 1.75; color: var(--kw-ink); max-width: 760px; margin: 0 auto; text-align: left; }
     .compare-link { display: inline-block; margin-top: 14px; color: var(--kw-green); font-size: 0.95rem; text-decoration: underline; text-underline-offset: 3px; }
     .compare-link:hover { color: var(--kw-gold); }
+    .hero-actions { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 6px 18px; margin-top: 10px; }
+    .hero-actions .compare-link { margin-top: 0; }
+    .kw-zielnik-btn { border: 1px solid var(--kw-green); background: transparent; color: var(--kw-green); border-radius: 999px; padding: 3px 12px; font: inherit; font-size: 0.95rem; }
+    .kw-zielnik-btn[aria-pressed="true"] { background: var(--kw-green); color: #fff; }
+    html[data-theme="night"] .kw-zielnik-btn[aria-pressed="true"] { background: #3f6b38; border-color: #3f6b38; }
+    .kw-ochrona { max-width: 760px; margin: 14px auto 4px; text-align: left; padding: 10px 14px; border-radius: 8px; border-left: 4px solid var(--kw-gold); background: var(--kw-paper); box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+    .kw-ochrona p { margin: 0 0 4px; line-height: 1.4; }
+    .kw-ochrona-h { font-size: 1.05rem; color: var(--kw-moss); }
+    .kw-ochrona-czesciowa .kw-ochrona-h i { color: #b7791f; }
+    .kw-ochrona-scisla { border-left-color: var(--kw-red); background: var(--kw-red-bg); }
+    .kw-ochrona-scisla .kw-ochrona-h, .kw-ochrona-scisla .kw-ochrona-h i { color: var(--kw-red); }
+    .kw-ochrona-inwazyjny { border-left-color: #8a5a00; }
+    .kw-ochrona details summary { cursor: pointer; color: var(--kw-green); font-size: 0.95rem; }
+    .kw-ochrona-src { font-size: 0.88rem; color: var(--kw-muted); }
 
     /* GALERIA ZDJĘĆ */
     .photo-credits { margin: 12px auto 0; max-width: 700px; font-size: 0.8rem; color: var(--kw-muted); text-align: left; }
@@ -931,4 +961,6 @@
         update();
     })();
 </script>
+<script src="{{ url_for('static', filename='js/zielnik_store.js') }}"></script>
+<script>window.KwZielnik && KwZielnik.przycisk(document.getElementById('kwZielnikBtn'));</script>
 {% endblock %}

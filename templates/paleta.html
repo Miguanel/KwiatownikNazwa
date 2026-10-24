@@ -12,6 +12,10 @@
      data-plant-url="/plant/__ID__/">
 
     <header class="pal-hero">
+        <nav class="pal-switch" aria-label="Barwienie">
+            <a href="{{ url_for('plants.paleta') }}" class="on" aria-current="page"><i class="bi bi-palette" aria-hidden="true"></i> Włosy</a>
+            <a href="{{ url_for('plants.farbiarnia') }}"><i class="bi bi-flower3" aria-hidden="true"></i> Wełna i tkaniny</a>
+        </nav>
         <h1><i class="bi bi-palette" aria-hidden="true"></i> Paleta Barw Zielarza</h1>
         <p class="pal-lead">Opisz swoje włosy, a potem wybierz odcień na kole albo sam wymieszaj zioła. Kwiatownik pokaże przewidywany kolor, ilości na Twoją długość, sposób przygotowania i&nbsp;ostrzeżenia.</p>
         <p class="pal-note"><i class="bi bi-info-circle" aria-hidden="true"></i> Zioła nie rozjaśniają włosów – barwnik osadza się na kolorze, który już masz. Podgląd jest przybliżeniem, więc zanim nałożysz mieszankę na całą głowę, zrób test na paśmie.</p>

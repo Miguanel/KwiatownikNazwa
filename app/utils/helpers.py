@@ -27,9 +27,20 @@ def get_plant_data(pid):
         return legacy_as_plant(plants_dir(), slug)
     try:
         with open(path, 'r', encoding='utf-8') as f:
-            return json.load(f)
+            data = json.load(f)
     except json.JSONDecodeError:
         return None
+    if isinstance(data, dict) and not data.get('nazwa_pl'):
+        data['nazwa_pl'] = _nazwa_zastepcza(data, slug)
+    return data
+
+def _nazwa_zastepcza(data, slug):
+    """Plik rosliny bez 'nazwa_pl' (np. swierzabek_bulwiasty.json z Siedziby): bierzemy polska nazwe
+    z 'nazwa_zbioru' (ostatnia pozycja pasujaca do sluga), a w ostatecznosci slug z wielka litera."""
+    for n in reversed(data.get('nazwa_zbioru') or []):
+        if isinstance(n, str) and normalize_slug(n.strip()) == slug:
+            return n.strip()
+    return slug.replace('_', ' ').capitalize()
 
 def get_all_plants_list():
     folder = os.path.join(current_app.root_path, '..', 'data', 'plants')

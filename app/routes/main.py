@@ -60,6 +60,8 @@ SITEMAP_STATIC_PAGES = [
     ('recipes.przepisy', 'weekly', '0.8'),
     ('plants.porownaj', 'weekly', '0.6'),
     ('plants.paleta', 'monthly', '0.6'),
+    ('plants.farbiarnia', 'monthly', '0.6'),
+    ('plants.zielnik', 'monthly', '0.4'),
     ('plants.szukaj_terapeutyczna', 'monthly', '0.5'),
     ('plants.gildie', 'monthly', '0.5'),
     ('plants.generator', 'monthly', '0.5'),

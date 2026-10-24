@@ -111,6 +111,7 @@
             const th = document.createElement('th'); th.scope = 'row'; th.textContent = name; tr.appendChild(th);
             cols.forEach(id => {
                 const td = tr.insertCell(); const v = DATA[id][key];
+                td.dataset.roslina = DATA[id].nazwa_pl || id;     // podpis kolumny na telefonie (CSS ::before)
                 if (DANGER.includes(key) && flat(v)) td.className = 'danger-cell';
                 if (!fillSpecial(td, key, v)) fill(td, v);
             });
@@ -145,5 +146,16 @@
     .compare-sources { margin: 0; padding-left: 18px; font-size: 0.9rem; }
     .compare-sources a { color: #2d5a27; text-decoration: underline; word-break: break-word; }
     .compare-hint-term { text-decoration: underline dotted; text-underline-offset: 3px; }
+    /* Telefon: zamiast szerokiej tabeli – każda cecha jako blok, a pod nią rośliny jedna pod drugą */
+    @media (max-width: 640px) {
+        .compare-table { min-width: 0; }
+        .compare-table thead { display: none; }
+        .compare-table, .compare-table tbody, .compare-table tr, .compare-table th, .compare-table td,
+        .compare-table th[scope=row] { display: block; width: 100% !important; }
+        .compare-table tr { border-bottom: 2px solid #d8cfb4; padding: 6px 0 8px; }
+        .compare-table > tbody > tr > th { border: 0 !important; padding: 4px 2px !important; font-family: 'Playfair Display', serif; color: #3e4a3d; background: transparent; }
+        .compare-table > tbody > tr > td { border: 0 !important; border-left: 3px solid #e5dcc3 !important; padding: 4px 2px 6px 10px !important; margin: 2px 0; }
+        .compare-table > tbody > tr > td::before { content: attr(data-roslina); display: block; font-weight: 700; font-size: 0.85rem; color: #8a7a4a; }
+    }
 </style>
 {% endblock %}

@@ -8,7 +8,7 @@
 <div class="container">
     <header style="text-align: center; margin-bottom: 30px; margin-top: 20px;">
         <h1 style="font-family: 'Playfair Display', serif; color: #3e4a3d; font-weight: bold;">Przepiśnik Zielarza</h1>
-        <p style="font-style: italic; color: #666;">"Starodawne receptury na zdrowie i smak, zebrane z kart botanicznych."</p>
+        <p style="font-style: italic; color: #666;">Receptury zielarskie: napary, nalewki, maści, kosmetyki i barwniki – z dawnych ksiąg i ze świata, ze źródłami.</p>
     </header>
 
     <div class="search-container">
@@ -37,6 +37,20 @@
         {% if lead_count %}<button type="button" class="btn btn-sm btn-outline-secondary" onclick="setOriginFilter('lead', this)" title="Przepisy, o których piszą strony, ale bez pełnego wykonania – Siedziba Kwiatownika szuka ich składników i kroków">🔎 Wzmianki ({{ lead_count }})</button>{% endif %}
     </div>
 
+    {# Kategorie = stemple kart (Apteka, Farbiarnia, Toaletka, Rzemiosło) - filtrowane w static/js/recipes.js #}
+    {% set nk = namespace(apteka=0, farbiarnia=0, toaletka=0, rzemioslo=0) %}
+    {% for recipe in results %}{% set t0 = recipe.get('typ') or '' %}
+        {% if 'medyczn' in t0 %}{% set nk.apteka = nk.apteka + 1 %}{% elif t0.startswith('barwiersk') %}{% set nk.farbiarnia = nk.farbiarnia + 1 %}{% elif t0.startswith('kosmetyczn') %}{% set nk.toaletka = nk.toaletka + 1 %}{% else %}{% set nk.rzemioslo = nk.rzemioslo + 1 %}{% endif %}
+    {% endfor %}
+    <div class="kat-filter d-flex justify-content-center gap-2 mb-4 flex-wrap" role="group" aria-label="Kategoria przepisu">
+        <button type="button" class="btn btn-sm btn-outline-secondary active" data-kat="all">Każda kategoria</button>
+        <button type="button" class="btn btn-sm btn-outline-secondary" data-kat="apteka">⚕ Apteka ({{ nk.apteka }})</button>
+        <button type="button" class="btn btn-sm btn-outline-secondary" data-kat="toaletka">🌸 Toaletka ({{ nk.toaletka }})</button>
+        <button type="button" class="btn btn-sm btn-outline-secondary" data-kat="rzemioslo">♨ Rzemiosło ({{ nk.rzemioslo }})</button>
+        {% if nk.farbiarnia %}<button type="button" class="btn btn-sm btn-outline-secondary" data-kat="farbiarnia">🎨 Farbiarnia ({{ nk.farbiarnia }})</button>{% endif %}
+        <a class="btn btn-sm btn-outline-secondary" href="{{ url_for('plants.farbiarnia') }}" title="Barwienie wełny i tkanin roślinami – kalkulator zapraw i kolorów">🎨 Barwienie tkanin →</a>
+    </div>
+
     <div id="noResultsMessage" class="text-center py-5" style="display: none;">
         <div style="background: #fff; padding: 30px; border: 1px dashed #d1c7a7;">
             <h3 style="color: #666; font-family: 'Playfair Display', serif;">Brak wyników w księdze.</h3>
@@ -48,7 +62,8 @@
     <div class="row g-4" id="recipesGrid" data-search-src="{{ url_for('api.api_przepisnik') }}">
         {% if results %}{% filter kw_squash %}
             {% for recipe in results %}
-            <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch recipe-wrapper" data-origin="{{ 'lead' if recipe.get('_wzmianka') else ('web' if recipe.get('_z_sieci') else 'book') }}" data-nr="{{ recipe._nr }}">
+            {% set t1 = recipe.get('typ') or '' %}
+            <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch recipe-wrapper" data-origin="{{ 'lead' if recipe.get('_wzmianka') else ('web' if recipe.get('_z_sieci') else 'book') }}" data-kat="{{ 'apteka' if 'medyczn' in t1 else ('farbiarnia' if t1.startswith('barwiersk') else ('toaletka' if t1.startswith('kosmetyczn') else 'rzemioslo')) }}" data-nr="{{ recipe._nr }}">
                 <div class="recipe-card w-100{% if recipe.get('_wzmianka') %} recipe-card-lead{% endif %}">
                     <div style="display: flex; justify-content: space-between; align-items: start;">
                         {% set typ = recipe.get('typ') or '' %}
@@ -96,6 +111,10 @@
             </div>
             {% endfor %}
         {% endfilter %}{% endif %}
+    </div>
+    {# Stronicowanie: na start widać pierwsze karty, reszta po kliknięciu (lżej na telefonie) #}
+    <div class="text-center my-4">
+        <button type="button" id="recipesMore" class="btn-details" style="max-width: 320px; margin: 0 auto; display: none;"></button>
     </div>
 </div>
 

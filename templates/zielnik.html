@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% block title %}Mój zielnik – rośliny, zbiory i co z nich zrobić | Kwiatownik{% endblock %}
+{% block meta_description %}Mój zielnik w Kwiatowniku: zapisz swoje rośliny i zbiory, sprawdź, jakie przepisy, barwienie i zastosowania z nich wyjdą, kiedy zbierać i co zużyć najpierw. Etykiety na słoiki do druku.{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/paleta.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/zielnik.css') }}">
+
+<div class="container py-4 pal-page" id="zielnik" data-json="{{ url_for('api.api_zielnik') }}">
+
+    <header class="pal-hero">
+        <h1><i class="ra ra-sprout" aria-hidden="true"></i> Mój zielnik</h1>
+        <p class="pal-lead">Twoje rośliny i zbiory w jednym miejscu: co możesz z nich zrobić, kiedy zbierać i co zużyć najpierw.</p>
+        <p class="pal-note"><i class="bi bi-info-circle" aria-hidden="true"></i> Zielnik zapisuje się tylko w tej przeglądarce. Na dole strony możesz zrobić kopię w pliku i przenieść ją na inne urządzenie.</p>
+        <div class="zl-stat" id="zlStat" aria-live="polite"></div>
+    </header>
+
+    <section class="pal-card zl-dodaj" aria-labelledby="zlDodajH">
+        <h2 class="section-title" id="zlDodajH">Dodaj roślinę</h2>
+        <div class="zl-szukaj">
+            <label for="zlSzukaj" class="visually-hidden">Nazwa rośliny</label>
+            <input type="search" id="zlSzukaj" class="form-control pal-select" placeholder="np. pokrzywa, rumianek, Urtica…" autocomplete="off" aria-autocomplete="list" aria-controls="zlPodpowiedzi">
+            <div class="zl-podp" id="zlPodpowiedzi" role="listbox" hidden></div>
+        </div>
+        <div id="zlProp" class="zl-prop"></div>
+    </section>
+
+    <section class="pal-card" aria-label="Mój zielnik">
+        <div class="pal-tabs" role="tablist" aria-label="Widok">
+            <button type="button" role="tab" id="zlTabRos" aria-controls="zlPanelRos" aria-selected="true" class="active"><i class="bi bi-flower1" aria-hidden="true"></i> Rośliny</button>
+            <button type="button" role="tab" id="zlTabSpi" aria-controls="zlPanelSpi" aria-selected="false"><i class="bi bi-archive" aria-hidden="true"></i> Spiżarnia</button>
+            <button type="button" role="tab" id="zlTabCo" aria-controls="zlPanelCo" aria-selected="false"><i class="bi bi-magic" aria-hidden="true"></i> Co zrobić</button>
+            <button type="button" role="tab" id="zlTabKal" aria-controls="zlPanelKal" aria-selected="false"><i class="bi bi-calendar3" aria-hidden="true"></i> Kalendarz</button>
+        </div>
+
+        <div class="pal-panel" id="zlPanelRos" role="tabpanel" aria-labelledby="zlTabRos">
+            <div id="zlRosliny" class="zl-rosliny"></div>
+        </div>
+
+        <div class="pal-panel" id="zlPanelSpi" role="tabpanel" aria-labelledby="zlTabSpi" hidden>
+            <form id="zlZbiorForm" class="zl-zbior-form" autocomplete="off" onsubmit="return false">
+                <h3>Nowy zbiór lub zapas</h3>
+                <div class="zl-pola">
+                    <label>Roślina <select name="id" class="form-select pal-select" required></select></label>
+                    <label>Część <select name="czesc" class="form-select pal-select"></select></label>
+                    <label>Postać <select name="forma" class="form-select pal-select"></select></label>
+                    <label>Ilość <span class="zl-ilosc"><input name="ilosc" type="number" min="0" step="any" class="form-control pal-select"><select name="jedn" class="form-select pal-select"><option>g</option><option>ml</option><option>szt.</option><option>słoik</option><option>pęczek</option></select></span></label>
+                    <label>Data <input name="data" type="date" class="form-control pal-select"></label>
+                    <label>Miejsce <input name="miejsce" type="text" maxlength="80" class="form-control pal-select" placeholder="np. łąka za domem"></label>
+                    <label class="zl-pelna">Notatka <input name="notatka" type="text" maxlength="200" class="form-control pal-select" placeholder="np. suszone w cieniu na strychu"></label>
+                </div>
+                <button type="submit" class="btn pal-btn"><i class="bi bi-plus-lg" aria-hidden="true"></i> Dodaj do spiżarni</button>
+                <span class="pal-muted small" id="zlZbiorInfo" aria-live="polite"></span>
+            </form>
+            <div class="zl-spi-bar">
+                <label class="zl-check"><input type="checkbox" id="zlPokazZuzyte"> pokaż zużyte</label>
+                <button type="button" class="btn pal-btn-ghost btn-sm" id="zlEtykiety"><i class="bi bi-printer" aria-hidden="true"></i> Drukuj etykiety na słoiki</button>
+            </div>
+            <div id="zlSpizarnia"></div>
+            <p class="pal-muted small">Terminy „zużyj do” są orientacyjne (susz liści i kwiatów ok. roku, korzeni i kory dłużej). Zawsze sprawdź zapach, kolor i czy nie ma pleśni.</p>
+        </div>
+
+        <div class="pal-panel" id="zlPanelCo" role="tabpanel" aria-labelledby="zlTabCo" hidden>
+            <p class="pal-muted">Przepisy z Twoimi roślinami – najpierw te, do których masz wszystkie zioła (zapasy ze spiżarni liczą się podwójnie).</p>
+            <div class="pal-chips zl-kat" id="zlKat"></div>
+            <div id="zlCo"></div>
+        </div>
+
+        <div class="pal-panel" id="zlPanelKal" role="tabpanel" aria-labelledby="zlTabKal" hidden>
+            <div id="zlTeraz"></div>
+            <div id="zlKalendarz" class="zl-kal-wrap"></div>
+        </div>
+    </section>
+
+    <section class="pal-card" aria-labelledby="zlKopiaH">
+        <h2 class="section-title" id="zlKopiaH">Kopia zapasowa</h2>
+        <div class="zl-kopia">
+            <button type="button" class="btn pal-btn-ghost" id="zlEksport"><i class="bi bi-download" aria-hidden="true"></i> Zapisz kopię (plik)</button>
+            <label class="btn pal-btn-ghost" for="zlImport"><i class="bi bi-upload" aria-hidden="true"></i> Wczytaj kopię</label>
+            <input type="file" id="zlImport" accept="application/json,.json" hidden>
+            <button type="button" class="btn pal-btn-ghost zl-wyczysc" id="zlWyczysc"><i class="bi bi-trash" aria-hidden="true"></i> Wyczyść zielnik</button>
+            <span class="pal-muted small" id="zlKopiaInfo" aria-live="polite"></span>
+        </div>
+    </section>
+
+    <div id="zlDruk" class="zl-druk" aria-hidden="true"></div>
+</div>
+
+<script src="{{ url_for('static', filename='js/zielnik_store.js') }}"></script>
+<script src="{{ url_for('static', filename='js/zielnik.js') }}"></script>
+{% endblock %}

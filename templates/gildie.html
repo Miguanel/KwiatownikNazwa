@@ -133,18 +133,20 @@
         border-radius: 0 15px 15px 0;
         line-height: 1.6;
     }
+    .guild-title { font-size: 2.5rem; overflow-wrap: anywhere; hyphens: auto; }
+    @media (max-width: 576px) { .guild-title { font-size: 1.7rem; } }
 </style>
 
 <div class="perma-section">
     <header style="text-align: center; margin-bottom: 40px;">
-        <h1 style="color: #3e4a3d; font-family: 'Georgia', serif; font-size: 2.5rem; margin-bottom: 10px;">🕸️ Księga Gildii Permakulturowych</h1>
+        <h1 class="guild-title" style="color: #3e4a3d; font-family: 'Georgia', serif; margin-bottom: 10px;">🕸️ Księga Gildii Permakulturowych</h1>
         <p style="color: #555; font-size: 1.1rem; font-style: italic;">Odkryj synergię między roślinami i buduj stabilne ekosystemy.</p>
     </header>
 
     <div class="search-container">
         <form id="guildSearchForm" style="display: flex; flex-direction: column; gap: 10px; align-items: center; position: relative;">
             <label for="search_query" style="font-weight: bold; color: #5a4f41;">Wybierz Serce Gildii (Wpisz roślinę):</label>
-            <input type="text" id="search_query" placeholder="np. Modrzew, Wrotycz, Jabłoń..." required autocomplete="off"
+            <input type="text" id="search_query" placeholder="np. Pokrzywa, Wrotycz, Modrzew..." required autocomplete="off"
                    style="width: 100%; padding: 12px 20px; border-radius: 4px; border: 2px solid #3e4a3d; outline: none; font-size: 1rem; font-family: 'Georgia', serif;">
 
             <div id="suggestionsList" class="list-group position-absolute w-100" style="z-index: 1000; display: none; top: 100%; margin-top: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"></div>
@@ -174,7 +176,7 @@
                 </h3>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 30px;">
                 <div class="info-box">
                     <h4 style="color: #3e4a3d; display: flex; align-items: center; gap: 10px;">
                         <span style="font-size: 1.5rem;">🌿</span> Rola w gildii
@@ -221,11 +223,15 @@ document.addEventListener("DOMContentLoaded", () => {
         return 'ra-leaf';
     }
 
-    // Pobieramy całą bazę
-    fetch("{{ url_for('api.api_all_plants') }}")
+    // Lekka baza tylko do gildii (nazwy, permakultura) – zamiast ~500 KB pełnych plików roślin
+    fetch("{{ url_for('api.api_gildie') }}")
         .then(res => res.json())
         .then(data => {
             allPlants = data;
+            // /gildie/?q=Pokrzywa – z Mojego zielnika i innych stron: od razu pokaż gildię
+            const q = new URLSearchParams(location.search).get('q');
+            const start = q && szukaj(q)[0];
+            if (start) { input.value = start.nazwa_pl; generateGuild(start); }
         })
         .catch(err => console.error("Błąd ładowania bazy do gildii:", err));
 
@@ -239,7 +245,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        const filteredPlants = allPlants.filter(p => p.nazwa_pl && p.nazwa_pl.toLowerCase().includes(val)).slice(0, 6);
+        const filteredPlants = szukaj(val).slice(0, 6);
 
         if (filteredPlants.length > 0) {
             suggestionsList.style.display = "block";
@@ -266,8 +272,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     form.addEventListener("submit", (e) => {
         e.preventDefault();
-        const query = input.value.toLowerCase().trim();
-        const plant = allPlants.find(p => (p.nazwa_pl && p.nazwa_pl.toLowerCase() === query) || p.slug === query);
+        const plant = szukaj(input.value)[0];   // dokładna nazwa, potem początek nazwy, potem fragment (też łacińska)
+        suggestionsList.style.display = "none";
+        if (plant) input.value = plant.nazwa_pl;
 
         if (plant) {
             generateGuild(plant);
@@ -275,6 +282,34 @@ document.addEventListener("DOMContentLoaded", () => {
             showError(`Nie znaleziono rośliny "${input.value}" w bazie.`);
         }
     });
+
+    // --- dopasowanie nazw: bez wielkości liter i polskich znaków ---
+    const norm = s => String(s || '').toLowerCase().replace(/ł/g, 'l').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim();
+    function szukaj(text) {
+        const q = norm(text);
+        if (!q) return [];
+        const exact = [], start = [], part = [];
+        allPlants.forEach(p => {
+            const n = norm(p.nazwa_pl), l = norm(p.nazwa_lat);
+            if (n === q || l === q || p.slug === text.trim()) exact.push(p);
+            else if (n.startsWith(q) || l.startsWith(q)) start.push(p);
+            else if (n.includes(q) || l.includes(q)) part.push(p);
+        });
+        const byName = (a, b) => a.nazwa_pl.localeCompare(b.nazwa_pl, 'pl');
+        return [...exact, ...start.sort(byName), ...part.sort(byName)];
+    }
+    // Partner gildii ("Malina", "Bez czarny (Sambucus nigra)") -> karta rośliny w Kwiatowniku albo null
+    function znajdzPartnera(nazwa) {
+        if (!nazwa) return null;
+        const lat = (String(nazwa).match(/\(([^)]+)\)/) || [])[1];
+        const base = norm(String(nazwa).split('(')[0]);
+        if (!base) return null;
+        return allPlants.find(p => norm(p.nazwa_pl) === base)
+            || (lat && allPlants.find(p => norm(p.nazwa_lat).startsWith(norm(lat))))
+            || allPlants.find(p => norm(p.nazwa_pl).startsWith(base + ' '))      // "Malina" -> "Malina właściwa"
+            || allPlants.find(p => norm(p.nazwa_lat) === base)
+            || null;
+    }
 
     function generateGuild(plant) {
         errorMessage.style.display = "none";
@@ -302,8 +337,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const compNazwa = typeof companion === 'string' ? companion : companion.nazwa;
             const compRola = typeof companion === 'string' ? 'Powiązanie symbiotyczne' : companion.rola;
 
-            const baseName = compNazwa ? compNazwa.split('(')[0].trim().toLowerCase() : '';
-            const foundCompanion = allPlants.find(p => p.nazwa_pl && p.nazwa_pl.toLowerCase() === baseName);
+            const foundCompanion = znajdzPartnera(compNazwa);
 
             compNode.className = `companion-node ${foundCompanion ? 'linked' : 'unlinked'}`;
 

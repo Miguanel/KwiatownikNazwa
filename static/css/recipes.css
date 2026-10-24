@@ -442,3 +442,7 @@ details.grimoire-subdetails > summary:hover {
 /* ~1300 kart: przegladarka rysuje tylko te, ktore sa blisko ekranu (szybsze przewijanie na telefonie) */
 .recipe-wrapper { content-visibility: auto; contain-intrinsic-size: auto 300px; }
 .btn-details.is-loading { opacity: 0.7; cursor: progress; }
+
+/* Stronicowanie Przepiśnika (static/js/recipes.js: stronicuj) */
+.recipe-wrapper.kw-ponad { display: none !important; }
+.kat-filter .btn.active { background-color: #3e4a3d; color: #fdfaf0; border-color: #3e4a3d; }

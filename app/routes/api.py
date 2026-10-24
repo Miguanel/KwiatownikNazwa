@@ -125,6 +125,21 @@ def api_zrodla_podglad():
     except (OSError, ValueError):
         return jsonify({'zrodla': {}})
 
+@api_bp.route('/gildie.json')
+def api_gildie():
+    """Lekkie dane Ksiegi Gildii: nazwy i permakultura roslin (zamiast ~500 KB /api/all_plants.json)."""
+    from app.utils.zielnik_data import gildie_payload
+    return _json_utf8(gildie_payload())
+
+
+@api_bp.route('/zielnik.json')
+def api_zielnik():
+    """Moj zielnik (static/js/zielnik.js): co mozna zrobic z kazda roslina - przepisy, Paleta, Farbiarnia,
+    czesci i terminy zbioru, gildie, ostrzezenia i ochrona gatunkowa."""
+    from app.utils.zielnik_data import zielnik_payload
+    return _json_utf8(zielnik_payload())
+
+
 @api_bp.route('/all_plants.json')
 def api_all_plants():
     return jsonify([get_plant_data(pid) | {'slug': pid} for pid in get_all_plants_list() if get_plant_data(pid)])

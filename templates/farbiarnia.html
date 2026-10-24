@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %}Farbiarnia – barwienie wełny i tkanin roślinami, zaprawy i kolory | Kwiatownik{% endblock %}
+{% block meta_description %}Farbiarnia Kwiatownika: wybierz włókno i roślinę barwierską, a policzymy ałun, żelazo i ilość rośliny, pokażemy przewidywany kolor wełny, jedwabiu, bawełny lub lnu i kolejne kroki barwienia.{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/paleta.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/farbiarnia.css') }}">
+
+<div class="container py-4 pal-page" id="farbiarnia"
+     data-json="{{ url_for('static', filename='json/farbiarnia.json') }}">
+
+    <header class="pal-hero">
+        <nav class="pal-switch" aria-label="Barwienie">
+            <a href="{{ url_for('plants.paleta') }}"><i class="bi bi-palette" aria-hidden="true"></i> Włosy</a>
+            <a href="{{ url_for('plants.farbiarnia') }}" class="on" aria-current="page"><i class="bi bi-flower3" aria-hidden="true"></i> Wełna i tkaniny</a>
+        </nav>
+        <h1><i class="bi bi-flower3" aria-hidden="true"></i> Farbiarnia</h1>
+        <p class="pal-lead">Wybierz włókno, roślinę i zaprawę. Kwiatownik policzy ałun, żelazo, ilość rośliny i wody na Twoją partię włóczki lub tkaniny i pokaże przewidywany kolor.</p>
+        <p class="pal-note"><i class="bi bi-info-circle" aria-hidden="true"></i> Kolory są przybliżeniem – zależą od wody, pory zbioru i temperatury. Zrób najpierw próbkę na kawałku włóczki.</p>
+    </header>
+
+    <section class="pal-card" aria-labelledby="fbWlH">
+        <h2 class="section-title" id="fbWlH">1. Włókno i zaprawa</h2>
+        <form class="pal-profil" id="fbForm" onsubmit="return false" autocomplete="off">
+            <div class="pal-field">
+                <span class="pal-label" id="fbWlokL">Włókno</span>
+                <div class="pal-pills" id="fbWlokna" role="radiogroup" aria-labelledby="fbWlokL"></div>
+            </div>
+            <div class="pal-field">
+                <label for="fbMasa" class="pal-label">Masa suchego włókna</label>
+                <div class="fb-masa"><input type="number" id="fbMasa" min="10" max="5000" step="10" value="100" class="form-control pal-select"> <span>g</span></div>
+                <small class="pal-help">Motek wełny to zwykle 50–100 g.</small>
+            </div>
+            <div class="pal-field pal-field-wide">
+                <span class="pal-label" id="fbZapL">Zaprawa</span>
+                <div class="pal-pills" role="radiogroup" aria-labelledby="fbZapL">
+                    <label><input type="radio" name="zaprawa" value="brak"> bez zaprawy</label>
+                    <label><input type="radio" name="zaprawa" value="alun" checked> <span id="fbAlunNazwa">ałun</span></label>
+                    <label><input type="radio" name="zaprawa" value="zelazo"> ałun + kąpiel żelazowa</label>
+                </div>
+                <small class="pal-help">Zaprawa wiąże barwnik z włóknem: kolor jest trwalszy i jaśniejszy. Żelazo przyciemnia i „przygasza” barwy – żółcie robią się oliwkowe, brązy szare.</small>
+            </div>
+        </form>
+    </section>
+
+    <section class="pal-card" aria-labelledby="fbRoH">
+        <h2 class="section-title" id="fbRoH">2. Roślina</h2>
+        <div class="fb-grid">
+            <div class="fb-left">
+                <div id="fbPicker" class="pal-picker"></div>
+            </div>
+            <div class="fb-right">
+                <div id="fbWybor"></div>
+                <div class="fb-dobarw">
+                    <label class="pal-label" for="fbDrugi">Dobarwienie drugą rośliną (opcjonalnie)</label>
+                    <select id="fbDrugi" class="form-select pal-select"><option value="">— bez dobarwiania —</option></select>
+                    <div id="fbDrugiIlosc"></div>
+                    <small class="pal-help">Np. najpierw rezeda lub nawłoć na żółto, potem indygo – wyjdzie zieleń.</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pal-card" id="fbWynik" aria-labelledby="fbWyH">
+        <h2 class="section-title" id="fbWyH">3. Receptura</h2>
+        <div id="fbReceptura"><p class="pal-muted">Wybierz roślinę z listy.</p></div>
+    </section>
+
+    <section class="pal-card" aria-labelledby="fbAtH">
+        <h2 class="section-title" id="fbAtH">Atlas roślin barwierskich</h2>
+        <p class="pal-muted">Próbki na białej wełnie: bez zaprawy · z ałunem · z ałunem i żelazem.</p>
+        <div class="pal-atlas" id="fbAtlas"></div>
+    </section>
+
+    <section class="pal-card pal-foot" aria-labelledby="fbZrH">
+        <h2 class="section-title" id="fbZrH">Źródła</h2>
+        <ol class="pal-sources" id="fbZrodla"></ol>
+        <p class="pal-muted small">Informacje mają charakter edukacyjny. Pracuj w rękawicach i przy otwartym oknie, a naczynia do barwienia trzymaj osobno od kuchennych.</p>
+    </section>
+</div>
+
+<script src="{{ url_for('static', filename='js/farbiarnia.js') }}"></script>
+{% endblock %}

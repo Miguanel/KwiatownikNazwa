@@ -605,9 +605,40 @@ window.addEventListener('load', () => {
 
 // 4. LOGIKA FILTROWANIA KART
 let currentOrigin = 'all';   // 'all' | 'book' (z ksiąg) | 'web' (z sieci)
+let currentKat = 'all';      // 'all' | 'apteka' | 'toaletka' | 'rzemioslo' | 'farbiarnia'
+const KART_NA_STRONE = 48;   // tyle kart naraz – kolejne po kliknięciu „Pokaż kolejne”
+let limitKart = KART_NA_STRONE;
+
+document.querySelectorAll('.kat-filter [data-kat]').forEach(btn => btn.addEventListener('click', () => {
+    currentKat = btn.dataset.kat;
+    document.querySelectorAll('.kat-filter [data-kat]').forEach(b => b.classList.toggle('active', b === btn));
+    limitKart = KART_NA_STRONE;
+    filterRecipes(searchInput ? searchInput.value.trim() : '');
+}));
+const moreBtn = document.getElementById('recipesMore');
+if (moreBtn) moreBtn.addEventListener('click', () => {
+    limitKart += KART_NA_STRONE;
+    stronicuj();
+});
+
+// pokazuje tylko pierwsze `limitKart` kart spośród pasujących (klasa d-none = nie pasuje, kw-ponad = dalej w kolejce)
+function stronicuj() {
+    let n = 0;
+    document.querySelectorAll('.recipe-wrapper').forEach(w => {
+        if (w.classList.contains('d-none')) { w.classList.remove('kw-ponad'); return; }
+        n++;
+        w.classList.toggle('kw-ponad', n > limitKart);
+    });
+    if (moreBtn) {
+        const zostalo = Math.max(0, n - limitKart);
+        moreBtn.style.display = zostalo ? 'block' : 'none';
+        moreBtn.textContent = `Pokaż kolejne ${Math.min(KART_NA_STRONE, zostalo)} (zostało ${zostalo})`;
+    }
+}
 
 window.setOriginFilter = function(origin, btn) {
     currentOrigin = origin;
+    limitKart = KART_NA_STRONE;
     document.querySelectorAll('.origin-filter .btn').forEach(b => b.classList.toggle('active', b === btn));
     filterRecipes(searchInput ? searchInput.value.trim() : '');
 };
@@ -620,7 +651,8 @@ function filterRecipes(query) {
         // tekst karty + (gdy już przyszedł) pełny tekst przepisu – oba znormalizowane
         const dataText = wrapper._kwText || "";
 
-        if (currentOrigin !== 'all' && wrapper.dataset.origin !== currentOrigin) {
+        if ((currentOrigin !== 'all' && wrapper.dataset.origin !== currentOrigin) ||
+            (currentKat !== 'all' && wrapper.dataset.kat !== currentKat)) {
             wrapper.classList.add('d-none');
         } else if (cleanQuery === "") {
             wrapper.classList.remove('d-none');
@@ -643,12 +675,14 @@ function filterRecipes(query) {
     if (noResultsMessage) {
         noResultsMessage.style.display = visibleCount === 0 ? 'block' : 'none';
     }
+    stronicuj();
 }
 
 // 5. NASŁUCHIWANIE ZDARZEŃ FORMULARZA
 if (searchInput) {
     searchInput.addEventListener('input', function() {
         const val = this.value.trim();
+        limitKart = KART_NA_STRONE;
         suggestionsList.innerHTML = '';
         suggestionsList.style.display = 'none';
 
@@ -769,6 +803,7 @@ document.addEventListener("DOMContentLoaded", () => {
         loadSearchTexts();          // pełny tekst dołoży wyniki, gdy przyjdzie
     } else {
         sortResultsByFavorites();
+        stronicuj();
     }
 
     // --- NOWOŚĆ: AUTOMATYCZNE OTWIERANIE PRZEPISU ---

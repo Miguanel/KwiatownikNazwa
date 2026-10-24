@@ -258,3 +258,10 @@ html[data-theme="night"] .pal-mixbar { box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6)
 @media (prefers-reduced-motion: reduce) {
     .pal-seg, #palCenterL, #palCenterR { transition: none; }
 }
+
+/* ---------- przełącznik Włosy / Wełna i tkaniny (Paleta ↔ Farbiarnia) ---------- */
+.pal-switch { display: inline-flex; gap: 4px; padding: 3px; border-radius: 999px; background: var(--kw-parch); border: 1px solid var(--kw-line); margin-bottom: 10px; }
+.pal-switch a { padding: 5px 14px; border-radius: 999px; color: var(--kw-muted) !important; text-decoration: none; font-weight: 700; font-size: 0.95rem; }
+.pal-switch a.on { background: var(--kw-green); color: #fff !important; }   /* !important: .container a:not(…) z celtic.css */
+.pal-switch a:hover:not(.on) { color: var(--kw-green) !important; }
+html[data-theme="night"] .pal-switch a.on { background: #3f6b38; }

@@ -8,6 +8,7 @@ from app.utils.legacy import get_legacy_plant
 from app.utils.merged import czesci_generatora, ostrzezenia_generatora
 from app.routes.recipes import recipes_for_plant, is_from_web, is_lead
 from app.utils.seo import plant_seo
+from app.utils.ochrona import ochrona
 from astro_engine import get_astrological_data
 
 plants_bp = Blueprint('plants', __name__)
@@ -37,7 +38,8 @@ def plant_detail(plant_id):
 
     legacy = get_legacy_plant(plants_dir(), plant_id)
     return render_template('plant_detail.html', plant=plant_data, plant_id=plant_id, comments=comments,
-                           plant_recipes=plant_recipes, legacy=legacy, seo=plant_seo(plant_data, plant_id, bool(full_recipes)))
+                           plant_recipes=plant_recipes, legacy=legacy, seo=plant_seo(plant_data, plant_id, bool(full_recipes)),
+                           ochrona=ochrona(plant_id))
 
 
 def _compare_sources(data, legacy):
@@ -109,6 +111,19 @@ def paleta():
     Dane (static/json/paleta.json + paleta_siedziba.json z Siedziby) i obliczenia (static/js/paleta_model.js)
     sa w przegladarce, wiec strona dziala tez w wersji statycznej (freeze.py zapisze ja do build/paleta/)."""
     return render_template('paleta.html')
+
+
+@plants_bp.route('/farbiarnia/')
+def farbiarnia():
+    """Farbiarnia: barwienie welny, jedwabiu, bawelny i lnu roslinami - zaprawy, ilosci i przewidywany kolor.
+    Dane static/json/farbiarnia.json, obliczenia w przegladarce (static/js/farbiarnia.js)."""
+    return render_template('farbiarnia.html')
+
+
+@plants_bp.route('/zielnik/')
+def zielnik():
+    """Moj zielnik: rosliny i zbiory uzytkownika (localStorage) + co mozna z nich zrobic (/api/zielnik.json)."""
+    return render_template('zielnik.html')
 
 
 @plants_bp.route('/szukaj_terapeutyczna/', methods=['GET', 'POST'])

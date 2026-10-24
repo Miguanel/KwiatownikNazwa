@@ -1,0 +1,680 @@
+{
+  "wersja": 1,
+  "zaktualizowano": "2026-10-24",
+  "opis": "Dane Farbiarni (static/js/farbiarnia.js). 'kolory' = barwa na białej wełnie przy pełnej ilości rośliny (górna granica 'wof'): bez zaprawy, z ałunem, z ałunem i kąpielą żelazową. Model nakłada barwnik mnożąco na kolor włókna, więc ciemne włókno zawsze da ciemniejszy wynik. 'wof' = ilość rośliny w % masy suchego włókna [od, do]. Kolory są przybliżeniem – zależą od wody, odmiany rośliny, pory zbioru i temperatury.",
+  "wlokna": [
+    {
+      "id": "welna",
+      "nazwa": "wełna (biała)",
+      "rodzaj": "bialkowe",
+      "kolor": "#f1ead8",
+      "chlonnosc": 1.0
+    },
+    {
+      "id": "jedwab",
+      "nazwa": "jedwab",
+      "rodzaj": "bialkowe",
+      "kolor": "#f5efe1",
+      "chlonnosc": 0.9
+    },
+    {
+      "id": "bawelna",
+      "nazwa": "bawełna (biała)",
+      "rodzaj": "celulozowe",
+      "kolor": "#f3eee3",
+      "chlonnosc": 0.7
+    },
+    {
+      "id": "len",
+      "nazwa": "len (naturalny, szary)",
+      "rodzaj": "celulozowe",
+      "kolor": "#d6cab0",
+      "chlonnosc": 0.7
+    }
+  ],
+  "zaprawy": {
+    "bialkowe": {
+      "pranie": "Wypierz włókno w ciepłej wodzie z łagodnym środkiem do prania (ok. 5% masy włókna), żeby usunąć tłuszcz i apreturę; wypłucz.",
+      "alun": {
+        "proc": [
+          10,
+          15
+        ],
+        "dodatek": {
+          "nazwa": "kamień winny (opcjonalnie)",
+          "proc": 6,
+          "po_co": "rozjaśnia kolory i zmiękcza wełnę; z modrzejcem może przesunąć fiolet w brąz"
+        },
+        "opis": "Rozpuść ałun we wrzątku, wlej do garnka z wodą, włóż mokre włókno. Podgrzewaj powoli do ok. 80 °C i trzymaj 45 min, obracając. Ostudź, wypłucz w wodzie o podobnej temperaturze."
+      },
+      "na_zimno": "Wełnę można też zaprawić na zimno: ciepła woda z ałunem i co najmniej 4 dni moczenia."
+    },
+    "celulozowe": {
+      "pranie": "Wypierz bawełnę lub len w gorącej wodzie z mydłem i odrobiną sody (ok. 2% masy włókna), żeby usunąć woski i apreturę; wypłucz.",
+      "alun": {
+        "proc": [
+          5,
+          10
+        ],
+        "nazwa_zaprawy": "octan glinu",
+        "dodatek": {
+          "nazwa": "kreda – węglan wapnia (kąpiel utrwalająca)",
+          "proc": 5,
+          "po_co": "utrwala zaprawę"
+        },
+        "opis": "Octan glinu rozrób w zimnej wodzie, potem rozpuść we wrzątku. Kąpiel ok. 45 °C, 45 min, obracając. Bez płukania przełóż do kąpieli z kredą na 15–30 min i lekko wypłucz."
+      },
+      "tradycyjnie": "Dawniej włókna roślinne najpierw garbowano taninami (np. wywar z kory dębu), a potem zaprawiano ałunem."
+    },
+    "zelazo": {
+      "proc": [
+        0.5,
+        1
+      ],
+      "max": 3,
+      "opis": "Kąpiel dopełniająca po barwieniu: siarczan żelaza(II) rozpuść w szklance zimnej wody, wlej do garnka z zimną wodą, zanurz ufarbowane włókno i wyjmij, gdy kolor ściemnieje (często kilka minut). Wypłucz.",
+      "uwaga": "Za dużo żelaza usztywnia i osłabia wełnę i jedwab – używaj możliwie mało i w niskiej temperaturze."
+    }
+  },
+  "kapiel": {
+    "litry_na_kg": [
+      30,
+      40
+    ],
+    "opis": "Wody tyle, żeby włókno swobodnie pływało (ok. 30–40 l na 1 kg włókna)."
+  },
+  "bezpieczenstwo": [
+    "Używaj osobnych garnków i łyżek – nie wracają już do kuchni.",
+    "Przy odmierzaniu proszków (ałun, octan glinu, siarczan żelaza) załóż maseczkę i rękawice, pracuj przy otwartym oknie.",
+    "Nie używaj zapraw z miedzią, chromem ani cyną – są toksyczne dla ludzi i środowiska.",
+    "Siarczan żelaza przechowuj poza zasięgiem dzieci i zwierząt.",
+    "Zużyty roztwór ałunu wylewaj do kanalizacji, nigdy do rowów, stawów i rzek."
+  ],
+  "rosliny": [
+    {
+      "id": "cebula",
+      "nazwa": "Łuski cebuli",
+      "lat": "Allium cepa",
+      "karta": null,
+      "czesc": "suche łuski zewnętrzne",
+      "stan": "suszone",
+      "typ": "zaprawowy",
+      "wof": [
+        20,
+        50
+      ],
+      "trwalosc": "średnia",
+      "rodzime": true,
+      "pewnosc": "potwierdzone",
+      "kolory": {
+        "brak": "#c48a3f",
+        "alun": "#d6932b",
+        "zelazo": "#6c5a2d"
+      },
+      "przygotowanie": "Łuski gotuj 30–45 min, przecedź; w wywarze barw włókno 45–60 min w ok. 80 °C.",
+      "uwagi": [
+        "Na wełnie złoto-pomarańczowy, na bawełnie słabszy, żółtobrązowy."
+      ],
+      "zrodla": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "marzanna",
+      "nazwa": "Marzanna barwierska (korzeń)",
+      "lat": "Rubia tinctorum",
+      "karta": "marzanna_barwierska",
+      "czesc": "suszony, rozdrobniony korzeń",
+      "stan": "suszone",
+      "typ": "zaprawowy",
+      "wof": [
+        50,
+        100
+      ],
+      "trwalosc": "dobra",
+      "rodzime": true,
+      "pewnosc": "potwierdzone",
+      "kolory": {
+        "brak": "#b07a64",
+        "alun": "#b3432f",
+        "zelazo": "#6a4049"
+      },
+      "przygotowanie": "Korzeń namocz na noc, gotuj delikatnie, nie przekraczaj ok. 80 °C – w wyższej temperaturze czerwień brązowieje. Szczypta kredy (ok. 1%) w kąpieli pogłębia czerwień.",
+      "uwagi": [
+        "Z żelazem daje głęboki szarofioletowy odcień."
+      ],
+      "zrodla": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "id": "nawloc",
+      "nazwa": "Nawłoć (kwiatostany)",
+      "lat": "Solidago virgaurea",
+      "karta": "nawloc",
+      "czesc": "kwitnące wierzchołki",
+      "stan": "świeże",
+      "typ": "zaprawowy",
+      "wof": [
+        100,
+        200
+      ],
+      "trwalosc": "średnia",
+      "rodzime": true,
+      "pewnosc": "tradycyjne",
+      "kolory": {
+        "brak": "#c6b56a",
+        "alun": "#d4bc35",
+        "zelazo": "#76763b"
+      },
+      "przygotowanie": "Świeże kwiatostany gotuj 45 min, przecedź; barw w wywarze ok. 1 h.",
+      "uwagi": [
+        "Nawłoć kanadyjska i późna (gatunki inwazyjne) barwią podobnie – zbierając je, pomagasz przyrodzie."
+      ],
+      "zrodla": [
+        1
+      ]
+    },
+    {
+      "id": "wrotycz",
+      "nazwa": "Wrotycz (koszyczki)",
+      "lat": "Tanacetum vulgare",
+      "karta": "wrotycz_pospolity",
+      "czesc": "koszyczki kwiatowe",
+      "stan": "świeże",
+      "typ": "zaprawowy",
+      "wof": [
+        100,
+        200
+      ],
+      "trwalosc": "średnia",
+      "rodzime": true,
+      "pewnosc": "tradycyjne",
+      "kolory": {
+        "brak": "#c2b16c",
+        "alun": "#c8b03d",
+        "zelazo": "#6b7142"
+      },
+      "przygotowanie": "Koszyczki gotuj 45 min, przecedź; barw ok. 1 h.",
+      "uwagi": [
+        "Roślina trująca przy spożyciu – pracuj w rękawicach i nie używaj kuchennych naczyń."
+      ],
+      "zrodla": [
+        1
+      ]
+    },
+    {
+      "id": "piolun",
+      "nazwa": "Piołun (ziele)",
+      "lat": "Artemisia absinthium",
+      "karta": "piolun",
+      "czesc": "ziele",
+      "stan": "świeże",
+      "typ": "zaprawowy",
+      "wof": [
+        100,
+        200
+      ],
+      "trwalosc": "średnia",
+      "rodzime": true,
+      "pewnosc": "tradycyjne",
+      "kolory": {
+        "brak": "#bdb06c",
+        "alun": "#c3b45a",
+        "zelazo": "#6e7a56"
+      },
+      "przygotowanie": "Ziele gotuj 45–60 min, przecedź; barw ok. 1 h.",
+      "uwagi": [
+        "Z żelazem daje oliwkowe i seledynowe zielenie."
+      ],
+      "zrodla": [
+        1
+      ]
+    },
+    {
+      "id": "dziurawiec",
+      "nazwa": "Dziurawiec (kwiaty)",
+      "lat": "Hypericum perforatum",
+      "karta": "dziurawiec_zwyczajny",
+      "czesc": "kwitnące wierzchołki",
+      "stan": "świeże",
+      "typ": "zaprawowy",
+      "wof": [
+        100,
+        200
+      ],
+      "trwalosc": "średnia",
+      "rodzime": true,
+      "pewnosc": "tradycyjne",
+      "kolory": {
+        "brak": "#c7ad62",
+        "alun": "#cfa63a",
+        "zelazo": "#6f6a3a"
+      },
+      "przygotowanie": "Kwiaty gotuj 45 min, przecedź; barw wełnę z ałunem ok. 1 h.",
+      "uwagi": [
+        "Na jedwabiu z wyciągiem alkoholowym daje purpurowoczerwone odcienie."
+      ],
+      "zrodla": [
+        1
+      ]
+    },
+    {
+      "id": "pokrzywa",
+      "nazwa": "Pokrzywa (liście)",
+      "lat": "Urtica dioica",
+      "karta": "pokrzywa_zwyczajna",
+      "czesc": "liście i pędy",
+      "stan": "świeże",
+      "typ": "zaprawowy",
+      "wof": [
+        150,
+        300
+      ],
+      "trwalosc": "średnia",
+      "rodzime": true,
+      "pewnosc": "tradycyjne",
+      "kolory": {
+        "brak": "#bdb685",
+        "alun": "#b8af70",
+        "zelazo": "#7a7c5b"
+      },
+      "przygotowanie": "Liście gotuj 1 h, przecedź; barw ok. 1 h. Korzeń z ałunem daje żółty kolor.",
+      "uwagi": [
+        "Delikatne, szarozielone i żółtawe odcienie."
+      ],
+      "zrodla": [
+        1
+      ]
+    },
+    {
+      "id": "kora_debu",
+      "nazwa": "Kora dębu",
+      "lat": "Quercus robur",
+      "karta": "dab_szypulkowy",
+      "czesc": "kora z gałęzi (np. po cięciu)",
+      "stan": "suszone",
+      "typ": "bezposredni",
+      "wof": [
+        50,
+        100
+      ],
+      "trwalosc": "dobra",
+      "rodzime": true,
+      "pewnosc": "potwierdzone",
+      "kolory": {
+        "brak": "#9e7951",
+        "alun": "#a6814e",
+        "zelazo": "#4b4540"
+      },
+      "przygotowanie": "Korę namocz na noc i gotuj 1–2 h, przecedź; barw ok. 1 h. Garbniki wiążą się z włóknem także bez zaprawy.",
+      "uwagi": [
+        "Z żelazem szarości aż do czerni.",
+        "Wywar z kory to też tradycyjna zaprawa taninowa dla lnu i bawełny."
+      ],
+      "zrodla": [
+        1,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "olcha",
+      "nazwa": "Olsza czarna (szyszki i kora)",
+      "lat": "Alnus glutinosa",
+      "karta": "olcha_czarna",
+      "czesc": "szyszki, kora",
+      "stan": "suszone",
+      "typ": "bezposredni",
+      "wof": [
+        50,
+        100
+      ],
+      "trwalosc": "dobra",
+      "rodzime": true,
+      "pewnosc": "potwierdzone",
+      "kolory": {
+        "brak": "#8d6c50",
+        "alun": "#93734f",
+        "zelazo": "#3d3936"
+      },
+      "przygotowanie": "Szyszki lub korę namocz i gotuj 1 h, przecedź; barw ok. 1 h.",
+      "uwagi": [
+        "Młode szyszki dają beże i brązy, kora z żelazem – czerń."
+      ],
+      "zrodla": [
+        1
+      ]
+    },
+    {
+      "id": "orzech",
+      "nazwa": "Orzech włoski (łupiny, liście)",
+      "lat": "Juglans regia",
+      "karta": null,
+      "czesc": "zielone łupiny lub liście",
+      "stan": "świeże",
+      "typ": "bezposredni",
+      "wof": [
+        100,
+        200
+      ],
+      "trwalosc": "dobra",
+      "rodzime": true,
+      "pewnosc": "potwierdzone",
+      "kolory": {
+        "brak": "#73553a",
+        "alun": "#7a5a3b",
+        "zelazo": "#3d342c"
+      },
+      "przygotowanie": "Łupiny lub liście namocz na noc i gotuj 1 h, przecedź; barw 1 h. Zaprawa nie jest potrzebna.",
+      "uwagi": [
+        "Juglon mocno brudzi skórę – rękawice."
+      ],
+      "zrodla": [
+        1,
+        7
+      ]
+    },
+    {
+      "id": "brzoza",
+      "nazwa": "Brzoza (liście)",
+      "lat": "Betula pendula",
+      "karta": "brzoza_brodawkowata",
+      "czesc": "młode liście",
+      "stan": "świeże",
+      "typ": "zaprawowy",
+      "wof": [
+        100,
+        200
+      ],
+      "trwalosc": "średnia",
+      "rodzime": true,
+      "pewnosc": "tradycyjne",
+      "kolory": {
+        "brak": "#c4b878",
+        "alun": "#d0bf4e",
+        "zelazo": "#7a7848"
+      },
+      "przygotowanie": "Liście gotuj 45–60 min, przecedź; barw ok. 1 h.",
+      "uwagi": [
+        "Wiosenne liście barwią mocniej niż jesienne."
+      ],
+      "zrodla": [
+        0
+      ]
+    },
+    {
+      "id": "krwawnik",
+      "nazwa": "Krwawnik (ziele z kwiatami)",
+      "lat": "Achillea millefolium",
+      "karta": "krwawnik_pospolity",
+      "czesc": "kwitnące ziele",
+      "stan": "świeże",
+      "typ": "zaprawowy",
+      "wof": [
+        100,
+        200
+      ],
+      "trwalosc": "średnia",
+      "rodzime": true,
+      "pewnosc": "tradycyjne",
+      "kolory": {
+        "brak": "#c9bf8a",
+        "alun": "#d0c27a",
+        "zelazo": "#7c7b5a"
+      },
+      "przygotowanie": "Ziele gotuj 45 min, przecedź; barw ok. 1 h.",
+      "uwagi": [
+        "Jasne, kremowożółte odcienie."
+      ],
+      "zrodla": [
+        0
+      ]
+    },
+    {
+      "id": "rumianek",
+      "nazwa": "Rumianek (koszyczki)",
+      "lat": "Matricaria chamomilla",
+      "karta": "rumianek_pospolity",
+      "czesc": "koszyczki kwiatowe",
+      "stan": "suszone",
+      "typ": "zaprawowy",
+      "wof": [
+        50,
+        100
+      ],
+      "trwalosc": "średnia",
+      "rodzime": true,
+      "pewnosc": "tradycyjne",
+      "kolory": {
+        "brak": "#d2c58e",
+        "alun": "#d7c25b",
+        "zelazo": "#7e7a4e"
+      },
+      "przygotowanie": "Koszyczki gotuj 30–45 min, przecedź; barw ok. 1 h.",
+      "uwagi": [
+        "Mocniejsze żółcie daje rumian żółty (Cota tinctoria)."
+      ],
+      "zrodla": [
+        1
+      ]
+    },
+    {
+      "id": "rezeda",
+      "nazwa": "Rezeda żółtawa (ziele)",
+      "lat": "Reseda luteola",
+      "karta": null,
+      "czesc": "ziele",
+      "stan": "suszone",
+      "typ": "zaprawowy",
+      "wof": [
+        50,
+        100
+      ],
+      "trwalosc": "dobra",
+      "rodzime": true,
+      "pewnosc": "potwierdzone",
+      "kolory": {
+        "brak": "#cbc472",
+        "alun": "#dfcd3a",
+        "zelazo": "#7e8a3d"
+      },
+      "przygotowanie": "Ziele gotuj 45 min, przecedź; barw ok. 1 h. Szczypta kredy (ok. 1%) w kąpieli rozjaśnia żółć.",
+      "uwagi": [
+        "Historycznie najważniejszy trwały żółty barwnik Europy; z indygo daje zieleń."
+      ],
+      "zrodla": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "kocanki",
+      "nazwa": "Kocanki piaskowe (koszyczki)",
+      "lat": "Helichrysum arenarium",
+      "karta": "kocanki_piaskowe",
+      "czesc": "koszyczki",
+      "stan": "suszone",
+      "typ": "zaprawowy",
+      "wof": [
+        50,
+        100
+      ],
+      "trwalosc": "średnia",
+      "rodzime": true,
+      "pewnosc": "tradycyjne",
+      "kolory": {
+        "brak": "#cdb879",
+        "alun": "#d6b84b",
+        "zelazo": "#7d7546"
+      },
+      "przygotowanie": "Koszyczki gotuj 45 min, przecedź; barw ok. 1 h.",
+      "uwagi": [
+        "Gatunek pod ochroną częściową – używaj surowca z zielarni lub upraw, nie zbieraj ze stanu dzikiego."
+      ],
+      "zrodla": [
+        1
+      ]
+    },
+    {
+      "id": "indygo",
+      "nazwa": "Indygo / urzet (kadź)",
+      "lat": "Indigofera tinctoria, Isatis tinctoria",
+      "karta": "indygowiec_barwierski",
+      "czesc": "barwnik z liści (indygotyna)",
+      "stan": "proszek",
+      "typ": "kadziowy",
+      "wof": [
+        1,
+        6
+      ],
+      "jednostka": "zanurzenia",
+      "trwalosc": "dobra",
+      "rodzime": false,
+      "pewnosc": "potwierdzone",
+      "kolory": {
+        "brak": "#3b5a86",
+        "alun": "#3b5a86",
+        "zelazo": "#2f3f55"
+      },
+      "przygotowanie": "Indygo nie rozpuszcza się w wodzie: potrzebna kadź, w której barwnik zostaje zredukowany w środowisku zasadowym (np. kadź fruktozowa z wapnem). Zanurz włókno na kilka minut, wyjmij – kolor zmienia się z żółtozielonego na niebieski na powietrzu. Każde kolejne zanurzenie pogłębia błękit. Zaprawa nie jest potrzebna.",
+      "uwagi": [
+        "Indygo na żółtym (rezeda, nawłoć, cebula) daje zielenie."
+      ],
+      "zrodla": [
+        1
+      ]
+    },
+    {
+      "id": "modrzejec",
+      "nazwa": "Modrzejec kampeszowy (wióry)",
+      "lat": "Haematoxylum campechianum",
+      "karta": "modrzejec_kampechanski",
+      "czesc": "wióry drewna",
+      "stan": "suszone",
+      "typ": "zaprawowy",
+      "wof": [
+        10,
+        30
+      ],
+      "trwalosc": "średnia",
+      "rodzime": false,
+      "pewnosc": "tradycyjne",
+      "kolory": {
+        "brak": "#6d4a42",
+        "alun": "#573967",
+        "zelazo": "#2b2733"
+      },
+      "przygotowanie": "Wióry namocz na noc i gotuj 30–45 min, przecedź; barw ok. 45 min.",
+      "uwagi": [
+        "Z ałunem fiolety, z żelazem granaty i czernie.",
+        "Kamień winny w zaprawie może przesunąć fiolet w brąz."
+      ],
+      "zrodla": [
+        3,
+        6
+      ]
+    },
+    {
+      "id": "bez_czarny",
+      "nazwa": "Czarny bez (owoce)",
+      "lat": "Sambucus nigra",
+      "karta": "bez_czarny",
+      "czesc": "dojrzałe owoce",
+      "stan": "świeże",
+      "typ": "zaprawowy",
+      "wof": [
+        100,
+        200
+      ],
+      "trwalosc": "słaba",
+      "rodzime": true,
+      "pewnosc": "tradycyjne",
+      "kolory": {
+        "brak": "#8a6878",
+        "alun": "#7c5a7a",
+        "zelazo": "#5b5566"
+      },
+      "przygotowanie": "Owoce rozgnieć, podgrzej 30 min, przecedź; barw ok. 45 min w niższej temperaturze.",
+      "uwagi": [
+        "Barwnik antocyjanowy – blaknie na słońcu i zmienia kolor od pH; lepiej do jedwabiu i drobnych rzeczy."
+      ],
+      "zrodla": [
+        1
+      ]
+    },
+    {
+      "id": "kurkuma",
+      "nazwa": "Kurkuma",
+      "lat": "Curcuma longa",
+      "karta": null,
+      "czesc": "mielone kłącze",
+      "stan": "proszek",
+      "typ": "bezposredni",
+      "wof": [
+        10,
+        25
+      ],
+      "trwalosc": "słaba",
+      "rodzime": false,
+      "pewnosc": "tradycyjne",
+      "kolory": {
+        "brak": "#e0b02c",
+        "alun": "#e2b52a",
+        "zelazo": "#8a7a32"
+      },
+      "przygotowanie": "Proszek rozmieszaj w gorącej wodzie; barw 30–45 min.",
+      "uwagi": [
+        "Bardzo intensywna żółć, ale szybko blaknie na słońcu."
+      ],
+      "zrodla": [
+        0
+      ]
+    }
+  ],
+  "zrodla": [
+    {
+      "nr": 0,
+      "nazwa": "Tradycja farbiarska – do sprawdzenia przez Siedzibę Kwiatownika",
+      "url": null
+    },
+    {
+      "nr": 1,
+      "nazwa": "Murator Dom – Rośliny barwiące, które można uprawiać w ogrodzie",
+      "url": "https://muratordom.pl/ogrod/rosliny/rosliny-barwiace-ktore-mozna-uprawiac-w-ogrodzie-jakie-rosliny-mozna-wykorzystac-do-farbowania-aa-6hWd-1Fbt-Yeyo.html"
+    },
+    {
+      "nr": 2,
+      "nazwa": "Dharma Trading – Fiber preparation and mordanting (NDEP)",
+      "url": "https://www.dharmatrading.com/blogs/a/fiber-preparation-and-mordanting-ndep"
+    },
+    {
+      "nr": 3,
+      "nazwa": "Botanical Colors – How to mordant with aluminum potassium sulfate",
+      "url": "https://botanicalcolors.com/how-to-mordant-aluminum-potassium-sulfate"
+    },
+    {
+      "nr": 4,
+      "nazwa": "Dharma Trading – Iron mordant (siarczan żelaza jako modyfikator)",
+      "url": "https://dharmatrading.com/dyes/iron-mordant.html"
+    },
+    {
+      "nr": 5,
+      "nazwa": "Botanical Colors – How to mordant plant fibers (octan glinu)",
+      "url": "https://botanicalcolors.com/how-to-mordant-plant-fibers/"
+    },
+    {
+      "nr": 6,
+      "nazwa": "Wikipedia – Haematoxylin",
+      "url": "https://en.wikipedia.org/wiki/Haematoxylin"
+    },
+    {
+      "nr": 7,
+      "nazwa": "K. Grzeszczuk, Barwienie naturalne – opis doświadczeń (UAP Poznań)",
+      "url": "https://uap.edu.pl/wp-content/uploads/2023/03/Grzeszczuk-Karolina_Barwienie-naturalne_Opis-doswiadczen.pdf"
+    }
+  ]
+}
