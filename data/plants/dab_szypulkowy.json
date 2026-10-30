@@ -223,7 +223,7 @@
   },
   "ostrzezenia": "Nie stosować wewnętrznie odwarów z kory przy dużych uszkodzeniach skóry oraz w ostrych stanach niewydolności serca. Nadmiar garbników hamuje wchłanianie żelaza i witamin.",
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-21",
+    "zaktualizowano": "2026-10-30",
     "w_url": false,
     "zdjecia": [
       {
@@ -276,6 +276,214 @@
         "zrodlo": "Wikimedia Commons",
         "reczne": true
       }
+    ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-10-30",
+    "uporzadkowano": "2026-10-30",
+    "uklad": "llm:ollama/qwen3:8b",
+    "zrodla": [
+      {
+        "nazwa": "Weblio (slowniki i encyklopedie JP)",
+        "url": "https://www.weblio.jp/content/%E3%83%A8%E3%83%BC%E3%83%AD%E3%83%83%E3%83%91%E3%83%8A%E3%83%A9",
+        "jezyk": "ja",
+        "typ": "strona",
+        "nr": 1
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "opis",
+        "tytul": "Opis i wygląd",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Liście mają długość 7–14 cm, charakterystycznie sięgają wąską osią i posiadają brzegi z ząbkami (wykrojone).",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2341"
+            ]
+          },
+          {
+            "tekst": "Orzechy (zwykle nazywane żołędziami) mają długość 2–2,5 cm i rozwijają się na długich szypułkach (od 3 do 7 cm), po których jesiennych zbiorach owocuje.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2342"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "wystepowanie",
+        "tytul": "Występowanie",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Naturalnie występuje w Europie, Małej Azji, na Kaukazie oraz w częściach Północnej Afryki. Preferuje nieco wilgotne niziny, wzgórza i niskie góry na wysokości do 1300 metrów n.p.m.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2340"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "liście": [
+        "s2341"
+      ],
+      "owoce": [
+        "s2342"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s2340",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Naturalnie występuje w Europie, Małej Azji, na Kaukazie oraz w częściach Północnej Afryki. Preferuje nieco wilgotne niziny, wzgórza i niskie góry na wysokości do 1300 metrów n.p.m.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Weblio (slowniki i encyklopedie JP)",
+          "url": "https://www.weblio.jp/content/%E3%83%A8%E3%83%BC%E3%83%AD%E3%83%83%E3%83%91%E3%83%8A%E3%83%A9"
+        },
+        "cytat": "ヨーロッパから小アジア、カフカース、北アフリカの一部に原生する広葉樹である。...やや湿度が高い平野、丘陵、標高1300メートル (m) までの低山に広がる"
+      },
+      {
+        "id": "s2341",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Liście mają długość 7–14 cm, charakterystycznie sięgają wąską osią i posiadają brzegi z ząbkami (wykrojone).",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Weblio (slowniki i encyklopedie JP)",
+          "url": "https://www.weblio.jp/content/%E3%83%A8%E3%83%BC%E3%83%AD%E3%83%83%E3%83%91%E3%83%8A%E3%83%A9"
+        },
+        "cytat": "切れ込みのある殆ど無柄の（短い主軸のある）葉は長さ7 - 14センチメートル (cm)"
+      },
+      {
+        "id": "s2342",
+        "sekcja": "opis",
+        "czesc": "owoce",
+        "tekst": "Orzechy (zwykle nazywane żołędziami) mają długość 2–2,5 cm i rozwijają się na długich szypułkach (od 3 do 7 cm), po których jesiennych zbiorach owocuje.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Weblio (slowniki i encyklopedie JP)",
+          "url": "https://www.weblio.jp/content/%E3%83%A8%E3%83%BC%E3%83%AD%E3%83%83%E3%83%91%E3%83%8A%E3%83%A9"
+        },
+        "cytat": "開花は春の中頃であり、同年の秋に果実（いわゆるドングリ）が熟す。ドングリは長径2 - 2.5 cmあり、3 - 7 cmの柄一つから1 - 4個なる。"
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-30",
+    "pola": {
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": [
+          "Liście posiadają charakterystyczne 'uszka' u nasady blaszki (obejmują ogonek).",
+          "Żołędzie osadzone są na długich szypułkach (stąd nazwa gatunkowa), po 1-3 sztuki.",
+          "Kora u starszych drzew głęboko i podłużnie spękana, ciemnoszara."
+        ],
+        "tresc": [
+          {
+            "tekst": "Liście posiadają wyraźne uszka u nasady blaszki, które obejmują ogonek [1].",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Blaszka liściowa osiąga długość 7–14 cm, ma charakterystycznie wąskie wyrostki u nasady oraz brzegi z wyraźnymi ząbkami [1, P1].",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2341"
+            ]
+          },
+          {
+            "tekst": "Żołędzie osadzone są na długich szypułkach, co nawiązuje do nazwy gatunkowej, zwykle po 1-3 sztuki.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kora starszych drzew jest głęboko i podłużnie spękana, ma ciemnoszarą barwę.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "1b21a23ef8e9f1cf"
+      },
+      "czesci_rosliny.owoce.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Glandes Quercus (Żołędzie): Opis surowca",
+        "typ": "tekst",
+        "oryginal": "Jednonasienne orzechy osadzone w miseczkach. Zbierane, gdy są w pełni dojrzałe (brązowe) i same opadają z drzewa.",
+        "tresc": [
+          {
+            "tekst": "Surowcem są jednonasienne orzechy, zwane żołędziami, o długości 2–2,5 cm, rozwijające się na długich szypułkach o długości 3–7 cm.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2342"
+            ]
+          },
+          {
+            "tekst": "Orzechy te są osadzone w miseczkach.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Zbiera się je jesienią, gdy są w pełni dojrzałe (brązowe) i same opadają z drzewa.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "c70c595c44973a6d"
+      },
+      "wymagania.stanowisko": {
+        "tytul": "Natura i siedlisko - Stanowisko",
+        "typ": "tekst",
+        "oryginal": "Pełne słońce (szczególnie w fazie wzrostu), w starszym wieku toleruje półcień.",
+        "tresc": [
+          {
+            "tekst": "Dąb szypułkowy preferuje pełne słońce, szczególnie w fazie wzrostu, natomiast w starszym wieku toleruje półcień.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Naturalnie rośnie na nieco wilgotnych nizinach, wzgórzach oraz w niskich górach, osiągając wysokość do 1300 metrów n.p.m.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2340"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "211619f2d5d52938"
+      }
+    },
+    "uzyte_fakty": [
+      "s2340",
+      "s2341",
+      "s2342"
     ]
   }
 }

@@ -121,7 +121,7 @@
     "Nasiona": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Ash_mast_at_Eglinton.JPG/960px-Ash_mast_at_Eglinton.JPG"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-10-30",
     "w_url": true,
     "zdjecia": [
       {
@@ -170,5 +170,950 @@
         "zrodlo": "Wikimedia Commons"
       }
     ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-10-30",
+    "uporzadkowano": "2026-10-30",
+    "uklad": "llm:groq/qwen/qwen3.8-27b",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (pl): Jesion wyniosły",
+        "url": "https://pl.wikipedia.org/wiki/Jesion_wynios%C5%82y",
+        "jezyk": "pl",
+        "typ": "wikipedia",
+        "nr": 1
+      },
+      {
+        "nazwa": "Wikipedia (de): Gemeine Esche",
+        "url": "https://de.wikipedia.org/wiki/Gemeine_Esche",
+        "jezyk": "de",
+        "typ": "wikipedia",
+        "nr": 2
+      },
+      {
+        "nazwa": "Plants For A Future (PFAF)",
+        "url": "https://pfaf.org/user/Plant.aspx?LatinName=Fraxinus+excelsior",
+        "jezyk": "en",
+        "typ": "strona",
+        "nr": 3
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "opis",
+        "tytul": "Opis i wygląd",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W warunkach silnego oświetlenia liści nie zrzuca; jesion potrafi przyrastać w wysokości nawet 1,5 metra rocznie w pierwszych latach życia, co czyni go szybko rosnącym gatunkiem.",
+            "czesc": "liście",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2352"
+            ]
+          },
+          {
+            "tekst": "System korzeniowy jesionu zmienia się z początkowo palowego na silne korzenie boczne o bardzo szerokim zasięgu, co czyni drzewo odpornym na powalanie przez wiatr. Posiada największy zasięg korzeni bocznych spośród wszystkich rodzimych europejskich drzew.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2344"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "wystepowanie",
+        "tytul": "Występowanie",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Jesion wyniosły jest uważany za najwyższe rodzime drzewo liściaste w Europie. Żyje od 200 do 300 lat, choć zdarzają się osobniki dożywające 400 lat. W Białowieskim Parku Narodowym odnotowano osobnik o wysokości 45,2 m, co czyni go najwyższym notowanym drzewem liściastym w Polsce.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2343",
+              "s2349"
+            ]
+          },
+          {
+            "tekst": "Jesion często współwystępuje z bukiem, ale z powodu silnej konkurencji ze strony tego ostatniego buduje większe zbiorowiska głównie na stanowiskach bardziej wilgotnych lub suchych, gdzie siła konkurencyjna buka słabnie.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2355"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "czesci_rosliny",
+        "tytul": "Części rośliny i surowce",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Surowcem zielarskim jest wysuszony liść jesionu, który powinien zawierać nie mniej niż 2,5% sumy pochodnych kwasu hydroksycynamonowego w przeliczeniu na kwas chlorogenowy.",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2345"
+            ]
+          },
+          {
+            "tekst": "Liście jesionu stanowiły dawniej cenną paszę zimową dla zwierząt; zbierano je latem (również poprzez cięcie gałęzi), suszono i magazynowano na okres chłodniejszy.",
+            "czesc": "liście",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2350"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": "Jesion wyniosły ma szerokie zastosowanie w medycynie ludowej: liście stosowano przeczyszczająco i w leczeniu reumatyzmu, kora jako tonik i środek przeciwgorączkowy, a nasiona wspomagająco przy dolegliwościach trawiennych.",
+        "podsumowanie_zrodla": [
+          1,
+          3
+        ],
+        "punkty": [
+          {
+            "tekst": "W medycynie ludowej napar z liści jesionu stosowano jako środek przeczyszczający oraz poprawiający przemianę materii, czyniąc go łagodną alternatywą dla mącznicy lekarskiej (senny). W połączeniu z innymi ziołami liście wykorzystywano również do leczenia dolegliwości reumatycznych.",
+            "czesc": "liście",
+            "zrodla": [
+              1,
+              3
+            ],
+            "fakty": [
+              "s2346",
+              "s2357"
+            ]
+          },
+          {
+            "tekst": "Kora jesionu uznawana była za gorzki tonik oraz środek przeciwgorączkowy, który tradycyjnie stosowano w leczeniu stanów febrilnych.",
+            "czesc": "kora",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2358"
+            ]
+          },
+          {
+            "tekst": "Nasiona wraz z ich skrzydełkami wykorzystywano ludowo jako środek wiatropędny (karminatywum) wspomagający trawienie i zmniejszający wzdęcia.",
+            "czesc": "nasiona",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2359"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "barwienie",
+        "tytul": "Barwienie i rzemiosło",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Z liści jesionu można uzyskać naturalny zielony barwnik do tkanin.",
+            "czesc": "liście",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2360"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "historia",
+        "tytul": "Historia i nazwa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Mieszkańcy Wysp Brytyjskich nazywali angielskich Wikingów „ashmen” (ludzie jesionu), ponieważ wyspiarze chłoń wycinali z jesionowego drewna swoje łuki i drzewca włóczni.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2347"
+            ]
+          },
+          {
+            "tekst": "W 1967 roku jesion wyniosły został wybrany na „Drzewo Roku” w Niemczech przez fundację Dr. Silvius-Wodarz i Radę Konsultacyjną Drzewa Roku.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2353"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kultura",
+        "tytul": "Wierzenia i tradycje",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Górale na Podhalu sadzili jesiony przy narożnikach domów, wierząc, że drzewa te „odciągają” wodę z podłoża, chroniąc chałupę przed wilgocią, a ich wysoka korona działa jak naturalny piorunochron.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2348"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Jesion wyniosły jest trujący dla przeżuwaczy, a kontakt z rośliną może u niektórych osób wywoływać stany zapalne skóry (dermatozę).",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2356"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "uprawa",
+        "tytul": "Uprawa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Nasiona jesionu mają zahamowany kiełkowanie i wymagają zwykle dwóch zim okresów spoczynku przed kiełkowaniem, choć mogą pozostać w glebie zdolne do kiełkowania nawet przez sześć lat.",
+            "czesc": "nasiona",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2351"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "ciekawostki",
+        "tytul": "Ciekawostki",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Liście jesionu rozkładają się w glebie bardzo szybko, co wspomaga tworzenie próchnicy i poprawę struktury gleby, dlatego drzewa te stosowano do umacniania brzegów rzek.",
+            "czesc": "liście",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2354"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "liście": [
+        "s2352",
+        "s2345",
+        "s2350",
+        "s2346",
+        "s2357",
+        "s2360",
+        "s2354"
+      ],
+      "kora": [
+        "s2358"
+      ],
+      "nasiona": [
+        "s2359",
+        "s2351"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s2343",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Jesion wyniosły jest uważany za najwyższe rodzime drzewo liściaste w Europie, a jego osobnik rosnący w Białowieskim Parku Narodowym mierzy 45,2 m, czyniąc go najwyższym notowanym drzewem liściastym w Polsce. Żyje od 200 do 300 lat, choć zdarzają się osobniki dożywające 400 lat.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Jesion wyniosły",
+          "url": "https://pl.wikipedia.org/wiki/Jesion_wynios%C5%82y"
+        },
+        "cytat": "Jesion wyniosły jest uważany za najwyższe rodzime drzewo liściaste w Europie. Rosnący na terenie Białowieskiego Parku Narodowego osobnik mierzący 45,2 m wysokości jest najwyższym notowanym obecnie (2019) drzewem liściastym w Polsce. Jest te"
+      },
+      {
+        "id": "s2344",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "System korzeniowy jesionu zmienia się z początkowo palowego na silne korzenie boczne o bardzo szerokim zasięgu, co czyni drzewo odpornym na powalanie przez wiatr. Posiada największy zasięg korzeni bocznych spośród wszystkich rodzimych europejskich drzew.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Jesion wyniosły",
+          "url": "https://pl.wikipedia.org/wiki/Jesion_wynios%C5%82y"
+        },
+        "cytat": "Początkowo rozwija korzeń palowy, który później ustępuje systemowi silnych korzeni bocznych o szerokim zasięgu, co czyni go w znacznym stopniu odpornym na powalanie przez wiatr. Jesion wyniosły posiada największy zasięg korzeni bocznych spo"
+      },
+      {
+        "id": "s2345",
+        "sekcja": "czesci_rosliny",
+        "czesc": "liście",
+        "tekst": "Surowcem zielarskim jest wysuszony liść jesionu, który powinien zawierać nie mniej niż 2,5% sumy pochodnych kwasu hydroksycynamonowego w przeliczeniu na kwas chlorogenowy.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Jesion wyniosły",
+          "url": "https://pl.wikipedia.org/wiki/Jesion_wynios%C5%82y"
+        },
+        "cytat": "Liść jesionu (Fraxini folium) – wysuszony liść jesionu wyniosłego lub jesionu wąskolistnego lub mieszańców tych dwóch gatunków. Surowiec powinien zawierać nie mniej niż 2,5% sumy pochodnych kwasu hydroksycynamonowego w przeliczeniu na kwas "
+      },
+      {
+        "id": "s2346",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "liście",
+        "tekst": "W medycynie ludowej napar z liści jesionu stosowano jako środek przeczyszczający oraz poprawiający przemianę materii, a w połączeniu z innymi ziołami do leczenia dolegliwości reumatycznych.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Jesion wyniosły",
+          "url": "https://pl.wikipedia.org/wiki/Jesion_wynios%C5%82y"
+        },
+        "cytat": "W medycynie ludowej naparu z liści używano jako środka przeczyszczającego i poprawiającego przemianę materii, a w mieszance z innymi ziołami – do leczenia reumatyzmu."
+      },
+      {
+        "id": "s2347",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Mieszkańcy Wysp Brytyjskich nazywali angielskich Wikingów „ashmen” (ludzie jesionu), ponieważ wyspiarze chłoń wycinali z jesionowego drewna swoje łuki i drzewca włóczni.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Jesion wyniosły",
+          "url": "https://pl.wikipedia.org/wiki/Jesion_wynios%C5%82y"
+        },
+        "cytat": "Kiedy wikingowie dopłynęli do Anglii, nazwano ich tam ashmen – od drewna jesionu, z którego wykonywali łuki i drzewca włóczni."
+      },
+      {
+        "id": "s2348",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "Górale na Podhalu sadzili jesiony przy narożnikach domów, wierząc, że drzewa te „odciągają” wodę z podłoża, chroniąc chałupę przed wilgocią, a ich wysoka korona działa jak naturalny piorunochron.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Jesion wyniosły",
+          "url": "https://pl.wikipedia.org/wiki/Jesion_wynios%C5%82y"
+        },
+        "cytat": "Panowało przekonanie, że jesiony rosnące przy czterech narożnikach domu skutecznie „odciągają” wodę z podłoża, przez co chronią chałupę przed zawilgoceniem. Wysokie drzewa, górujące bezpośrednio nad zabudowaniami miały działać jak „piorunoc"
+      },
+      {
+        "id": "s2349",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "W Białowieskim Parku Narodowym odnotowano osobnik jesionu wyniosłego o wysokości 45,2 m, co czyni go obecnie najwyższym notowanym drzewem liściastym w Polsce.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Jesion wyniosły",
+          "url": "https://pl.wikipedia.org/wiki/Jesion_wynios%C5%82y"
+        },
+        "cytat": "Rosnący na terenie Białowieskiego Parku Narodowego osobnik mierzący 45,2 m wysokości jest najwyższym notowanym obecnie (2019) drzewem liściastym w Polsce."
+      },
+      {
+        "id": "s2350",
+        "sekcja": "czesci_rosliny",
+        "czesc": "liście",
+        "tekst": "Liście jesionu stanowiły dawniej cenne paszę zimową dla zwierząt; zbierano je latem (również poprzez cięcie gałęzi), suszono i magazynowały na okres chłodniejszy.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gemeine Esche",
+          "url": "https://de.wikipedia.org/wiki/Gemeine_Esche"
+        },
+        "cytat": "Eschenlaub war früher ein wichtiges Futtermittel für den Winter. Das Laub wurde im Sommer geschnitten (unter anderem in Form der Schneitelung), getrocknet und für die spätere Verwendung gelagert."
+      },
+      {
+        "id": "s2351",
+        "sekcja": "uprawa",
+        "czesc": "nasiona",
+        "tekst": "Nasiona jesionu mają zahamowany kiełków i wymagają zwykle dwóch zim okresów spoczynku przed przepuszczeniem, choć mogą pozostać w glebie zdolne do kiełkowania nawet przez sześć lat.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gemeine Esche",
+          "url": "https://de.wikipedia.org/wiki/Gemeine_Esche"
+        },
+        "cytat": "Die Samen sind keimgehemmt und ruhen etwa zwei Winter, bevor sie austreiben, sie können aber auch sechs Jahre keimfähig im Boden verbleiben."
+      },
+      {
+        "id": "s2352",
+        "sekcja": "uprawa",
+        "czesc": "liście",
+        "tekst": "W warunkach silnego oświetlenia liścia nie przerywa, jesion potrafi przyrastać w wysokości nawet 1,5 metra rocznie w pierwszych latach życia, co czyni go szybko rosnącym gatunkiem.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gemeine Esche",
+          "url": "https://de.wikipedia.org/wiki/Gemeine_Esche"
+        },
+        "cytat": "Unter günstigen Lichtbedingungen auf Freiflächen oder in stark aufgelichteten Altbeständen nimmt die Esche rasch an Höhe zu; das Wachstum ist in einem Alter von 2 bis 15 Jahren am stärksten. Die Esche kann dann Trieblängen von bis zu 1,5 m "
+      },
+      {
+        "id": "s2353",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "W 1967 roku jesion wyniosły został wybrany na „Drzewo Roku” w Niemczech przez fundację Dr. Silvius-Wodarz i Radę Konsultacyjną Drzewa Roku.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gemeine Esche",
+          "url": "https://de.wikipedia.org/wiki/Gemeine_Esche"
+        },
+        "cytat": "Im Jahr 1967 wurde die Esche in Deutschland durch die Dr. Silvius-Wodarz-Stiftung Menschen für Bäume und deren Fachbeirat, das Kuratorium Baum des Jahres, zum Baum des Jahres ausgewählt."
+      },
+      {
+        "id": "s2354",
+        "sekcja": "ciekawostki",
+        "czesc": "liście",
+        "tekst": "Liście jesionu rozkładają się w glebie bardzo szybko, co wspomaga tworzenie próchnicy i poprawę struktury gleby, dlatego drzewa te stosowano do umacniania brzegów rzek.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gemeine Esche",
+          "url": "https://de.wikipedia.org/wiki/Gemeine_Esche"
+        },
+        "cytat": "Das Laub der Esche zersetzt sich schnell, wirkt Humus bildend und Boden verbessernd."
+      },
+      {
+        "id": "s2355",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Jesion często współwystępuje z bukiem, ale z powodu silnej konkurencji strony tej ostatniej buduje większe zbiorowiska głównie na stanowiskach bardziej wilgotnych lub suchych, gdzie siła konkurencyjna buka słabnie.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gemeine Esche",
+          "url": "https://de.wikipedia.org/wiki/Gemeine_Esche"
+        },
+        "cytat": "Durch die starke Konkurrenz der Buche, mit der sie häufig vergesellschaftet vorkommt, ist sie in größeren Beständen überwiegend in Waldgesellschaften auf feuchteren (Hartholzaue, Auwald) oder trockeneren Standorten (flachgründige Kalkböden)"
+      },
+      {
+        "id": "s2356",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Jesion wyniosły jest trujący dla przeżuwaczy, a kontakt z roślina może u niektórych osób wywoływać stany zapalne skóry (dermatozę).",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Plants For A Future (PFAF)",
+          "url": "https://pfaf.org/user/Plant.aspx?LatinName=Fraxinus+excelsior"
+        },
+        "cytat": "Poisonous to ruminants[76], it has also caused dermatitis in some people[76]."
+      },
+      {
+        "id": "s2357",
+        "sekcja": "medycyna_wschodu",
+        "czesc": "liście",
+        "tekst": "W dawnych praktykach zielarskich liście jesionu stosowano jako naturalny środek przeczyszczający, stanowiąc łagodną alternatywę dla mącznicy lekarskiej (senny).",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Plants For A Future (PFAF)",
+          "url": "https://pfaf.org/user/Plant.aspx?LatinName=Fraxinus+excelsior"
+        },
+        "cytat": "The have been used as a laxative, making a mild substitute for senna pods[254]."
+      },
+      {
+        "id": "s2358",
+        "sekcja": "medycyna_wschodu",
+        "czesc": "kora",
+        "tekst": "Kora jesionu uznawana była za gorzki tonik oraz środek przeciwgorączkowy, który tradycyjnie stosowano w leczeniu stanów febrilnych.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Plants For A Future (PFAF)",
+          "url": "https://pfaf.org/user/Plant.aspx?LatinName=Fraxinus+excelsior"
+        },
+        "cytat": "The bark is antiperiodic, astringent and a bitter tonic[4, 240]. Little used in modern herbalism, it is occasionally taken in the treatment of fevers[254]."
+      },
+      {
+        "id": "s2359",
+        "sekcja": "medycyna_wschodu",
+        "czesc": "nasiona",
+        "tekst": "Nasiona wraz z ich skrzydełkami wykorzystywano ludowo jako środek wiatropędny (karminatywum) wspomagający trawienie i zmniejszający wzdęcia.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Plants For A Future (PFAF)",
+          "url": "https://pfaf.org/user/Plant.aspx?LatinName=Fraxinus+excelsior"
+        },
+        "cytat": "The seeds, including their wings, have been used as a carminative[4]."
+      },
+      {
+        "id": "s2360",
+        "sekcja": "barwienie",
+        "czesc": "liście",
+        "tekst": "Z liści jesionu można uzyskać naturalny zielony barwnik do tkanin.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Plants For A Future (PFAF)",
+          "url": "https://pfaf.org/user/Plant.aspx?LatinName=Fraxinus+excelsior"
+        },
+        "cytat": "A green dye is obtained from the leaves[7]."
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-30",
+    "pola": {
+      "wymagania.stanowisko": {
+        "tytul": "Natura i siedlisko - Stanowisko",
+        "typ": "tekst",
+        "oryginal": "Słoneczne do półcienistego. Młode okazy znoszą cień, starsze potrzebują pełnego światła.",
+        "tresc": [
+          {
+            "tekst": "Jesion rośnie w stanowiskach od słonecznych po półcieniste; w warunkach silnego oświetlenia nie zrzuca liści i może przyrastać nawet 1,5 m rocznie, co czyni go szybko rosnącym gatunkiem.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2352"
+            ]
+          },
+          {
+            "tekst": "Młode okazy znoszą cień, starsze potrzebują pełnego światła, a ze względu na silną konkurencję ze strony buka, budują większe zbiorowiska głównie na stanowiskach bardziej wilgotnych lub suchych, gdzie siła konkurencyjna buka słabnie.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2355"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "e2a67853cb653526"
+      },
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Wysokie, majestatyczne drzewo liściaste, osiągające do 40 m wysokości. Charakteryzuje się prostym pniem i luźną, wysoko osadzoną koroną. Jesion jest bliskim krewnym oliwki, co przejawia się w składzie chemicznym jego kory. Jest to drzewo długowieczne (do 300 lat), które kocha wilgoć i żyzne gleby. Jego drewno jest legendarne ze względu na połączenie twardości z ekstremalną elastycznością.",
+        "tresc": [
+          {
+            "tekst": "Wysokie, majestatyczne drzewo liściaste, osiągające do 40 m wysokości, uważane za najwyższe rodzime drzewo liściaste w Europie; w Białowieskim Parku Narodowym odnotowano osobnik o wysokości 45,2 m, co czyni go najwyższym notowanym drzewem liściastym w Polsce.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2343",
+              "s2349"
+            ]
+          },
+          {
+            "tekst": "Charakteryzuje się prostym pniem i luźną, wysoko osadzoną koroną.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jesion jest bliskim krewnym oliwki, co przejawia się w składzie chemicznym jego kory.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jest to drzewo długowieczne (do 300 lat), które kocha wilgoć i żyzne gleby; żyje od 200 do 300 lat, choć zdarzają się osobniki dożywające 400 lat.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2343",
+              "s2349"
+            ]
+          },
+          {
+            "tekst": "Jego drewno jest legendarne ze względu na połączenie twardości z ekstremalną elastycznością.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "cbba9c4e486e120c"
+      },
+      "czesci_rosliny.liscie.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Folium Fraxini: Opis surowca",
+        "typ": "tekst",
+        "oryginal": "Młode liście zbierane na początku lata (czerwiec).",
+        "tresc": [
+          {
+            "tekst": "Surowcem zielarskim jest liść jesionu, którego świeże odmiany zbiera się na początku lata, w czerwcu.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Surowiec po wysuszeniu powinien zawierać nie mniej niż 2,5% sumy pochodnych kwasu hydroksycynamonowy w przeliczeniu na kwas chlorogenowy.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2345"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "eb751cb3b7af8800"
+      },
+      "czesci_rosliny.liscie.czas_zbioru": {
+        "tytul": "Surowce i zbiory - Folium Fraxini: Zbiór",
+        "typ": "tekst",
+        "oryginal": "Czerwiec.",
+        "tresc": [
+          {
+            "tekst": "Liście jesionu wyniosłego zbiera się w czerwcu.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Liście jesionu stanowiły dawniej cenną paszę zimową dla zwierząt; zbierano je latem (również poprzez cięcie gałęzi), suszono i magazynowano na okres chłodniejszy.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2350"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "88a7296c23ea33d1"
+      },
+      "czesci_rosliny.liscie.wlasciwości": {
+        "tytul": "Surowce i zbiory - Folium Fraxini: Działanie",
+        "typ": "tekst",
+        "oryginal": "Moczopędne, oczyszczające krew (depurativum), wspomagające usuwanie kwasu moczowego, przeciwreumatyczne.",
+        "tresc": [
+          {
+            "tekst": "Lście jesionu wyniosłego przypisuje się działanie moczopędne, oczyszczające krew (depurativum) oraz wspomagające usuwanie kwasu moczowego.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Działanie to obejmuje również właściwości przeciwreumatyczne, co w medycynie ludowej tłumaczono stosowaniem naparów z liści do łagodzenia dolegliwości reumatycznych, często w połączeniu z innymi ziołami.",
+            "zrodla": [
+              1,
+              3
+            ],
+            "fakty": [
+              "s2346",
+              "s2357"
+            ]
+          },
+          {
+            "tekst": "W tradycji ludowej napar z liści jesionu wyniosłego bywał też stosowany jako środek przeczyszczający oraz poprawiający przemianę materii, pełniąc funkcję łagodnej alternatywy dla mącznicy lekarskiej (senny).",
+            "zrodla": [
+              1,
+              3
+            ],
+            "fakty": [
+              "s2346",
+              "s2357"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "caa8c9c84767a5f2"
+      },
+      "czesci_rosliny.kora.wlasciwości": {
+        "tytul": "Surowce i zbiory - Cortex Fraxini: Działanie",
+        "typ": "tekst",
+        "oryginal": "Przeciwgorączkowe, przeciwzapalne, wzmacniające naczynia włosowate, żółciopędne.",
+        "tresc": [
+          {
+            "tekst": "Cortex Fraxini wykazuje działanie przeciwgorączkowe, przeciwzapalne, wzmacniające naczynia włosowate oraz żółciopędne.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Surowiec ten bywa również stosowany jako gorzki tonik, którego właściwości przeciwgorączkowe wykorzystywano tradycyjnie w leczeniu stanów febrilnych.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2358"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "8b5005f1669167eb"
+      },
+      "czesci_rosliny.nasiona.wlasciwości": {
+        "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Nasiona wraz z ich skrzydełkami wykorzystywano ludowo jako środec wiatropędny (karminatywum) wspomagający trawieniez i zmniejszający wzdęcia.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2359"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "c272200d180ecbd8"
+      },
+      "zastosowanie.rzemieslnicze": {
+        "tytul": "Praktyczne zastosowanie - Rzemiosło",
+        "typ": "tekst",
+        "oryginal": "Drewno jesionowe jest cenione wyżej niż dębowe w produkcji trzonków narzędzi, kijów hokejowych, nart, wioseł i łuków ze względu na swoją sprężystość.",
+        "tresc": [
+          {
+            "tekst": "Drewno jesionowe jest cenione wyżej niż dębowe w produkcji trzonków narzędzi, kijów hokejowych, nart, wioseł i łuków ze względu na swoją sprężystość.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Z liści jesionu można uzyskać naturalny zielony barwnik do tkanin.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2360"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "94c6ccb3fb0e77ef"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "W mitologii nordyckiej jesion Yggdrasil łączył świat bogów, ludzi i zmarłych. Wierzono, że pierwszy mężczyzna, Ask, został stworzony właśnie z pnia jesionu.",
+          "Jesionowe drewno jest tak elastyczne, że można je giąć po sparowaniu do niemal dowolnego kształtu, co wykorzystywano przy budowie dawnych kół wozów.",
+          "W medycynie ludowej wierzono, że przesunięcie chorego dziecka przez rozszczepiony pień młodego jesionu uleczy go z krzywicy lub przepukliny.",
+          "Jesion jest drzewem 'egoistycznym' – jego liście rozwijają się jako ostatnie na wiosnę, a opadają jako jedne z pierwszych jesienią (często jeszcze zielone po pierwszym przymrozku).",
+          "Herbata z liści jesionu była niegdyś nazywana 'herbatą myśliwych', ponieważ pomagała łagodzić bóle stawów po długich wędrówkach."
+        ],
+        "tresc": [
+          {
+            "tekst": "W mitologii nordyckiej jesion Yggdrasil łączył świat bogów, ludzi i zmarłych, a wierzono, że pierwszy mężczyzna, Ask, został stworzony właśnie z pnia jesionu.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Mieszkańcy Wysp Brytyjskich nazywali angielskich Wikingów „ashmen” (ludzie jesionu), ponieważ wyspiarze chłoń wycinali z jesionowego drewna swoje łuki i drzewca włóczni.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2347"
+            ]
+          },
+          {
+            "tekst": "Jesionowe drewno jest tak elastyczne, że można je giąć po sparowaniu do niemal dowolnego kształtu, co wykorzystywano przy budowie dawnych kół wozów.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W medycynie ludowej wierzono, że przesunięcie chorego dziecka przez rozszczepiony pień młodego jesionu uleczy go z krzywicy lub przepukliny.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jesion jest drzewem 'egoistycznym' – jego liście rozwijają się jako ostatnie na wiosnę, a opadają jako jedne z pierwszych jesienią, często jeszcze zielone po pierwszym przymrozku.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Herbata z liści jesionu była niegdyś nazywana 'herbatą myśliwych', ponieważ pomagała łagodzić bóle stawów po długich wędrówkach.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W 1967 roku jesion wyniosły został wybrany na „Drzewo Roku” w Niemczech przez fundację Dr. Silvius-Wodarz i Radę Konsultacyjną Drzewa Roku.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2353"
+            ]
+          },
+          {
+            "tekst": "Górale na Podhalu sadzili jesiony przy narożnikach domów, wierząc, że drzewa te „odciągają” wodę z podłoża, chroniąc chałupę przed wilgocią, a ich wysoka korona działa jak naturalny piorunochron.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2348"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "9d332d2c9758c91d"
+      },
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": "Obecnie jesiony w Europie są zagrożone przez grzyba *Hymenoscyphus fraxineus* (zamieranie jesionów) – przy zbiorze należy unikać drzew wykazujących objawy choroby (uschnięte wierzchołki pędów).",
+        "tresc": [
+          {
+            "tekst": "Obecnie jesiony w Europie są zagrożone przez grzyba *Hymenoscyphus fraxineus* (zamieranie jesionów) – przy zbiorze należy unikać drzew wykazujących objawy choroby (uschnięte wierzchołki pędów).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jesion wyniosły jest trujący dla przeżuwaczy, a kontakt z rośliną może u niektórych osób wywoływać stany zapalne skóry (dermatozę).",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2356"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "2601247d69cc945d"
+      },
+      "zastosowanie.ogrodowe": {
+        "tytul": "Praktyczne zastosowanie - Ogród",
+        "typ": "tekst",
+        "oryginal": "Wspaniałe drzewo parkowe i alejowe. W ogrodach permakulturowych służy jako dostawca biomasy i stabilizator wilgotnych stref.",
+        "tresc": [
+          {
+            "tekst": "Wspaniałe drzewo parkowe i alejowe.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W ogrodach permakulturowych służy jako dostawca biomasy i stabilizator wilgotnych stref.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Nasiona jesionu mają zahamowany kiełkowanie i wymagają zwykle dwóch zim okresów spoczynku przed kiełkowaniem, choć mogą pozostać w glebie zdolne do kiełkowania nawet przez sześć lat.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2351"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "f6ad58c17e8266ac"
+      },
+      "permakultura.funkcje": {
+        "tytul": "Cykl życia i ekosystem - Permakultura - funkcje",
+        "typ": "lista",
+        "oryginal": [
+          "Dynamiczny akumulator wapnia i magnezu.",
+          "Producent wysokiej jakości opału (jesion pali się dobrze nawet gdy jest świeżo ścięty).",
+          "Napowietrzanie gleby dzięki głębokiemu systemowi korzeniowemu.",
+          "Prowiant zimowy dla niektórych zwierząt leśnych (owoce)."
+        ],
+        "tresc": [
+          {
+            "tekst": "Dynamiczny akumulator wapnia i magnezu.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Producent wysokiej jakości opału (jesion pali się dobrze nawet gdy jest świeżo ścięty).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Napowietrzanie gleby dzięki głębokiemu systemowi korzeniowemu.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Prowiant zimowy dla niektórych zwierząt leśnych (owoce).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Liście jesionu rozkładają się w glebie bardzo szybko, co wspomaga tworzenie próchnicy i poprawę struktury gleby, dlatego drzewa te stosowano do umacniania brzegów rzek.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2354"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "147807fd47e2e55c"
+      }
+    },
+    "uzyte_fakty": [
+      "s2343",
+      "s2345",
+      "s2346",
+      "s2347",
+      "s2348",
+      "s2349",
+      "s2350",
+      "s2351",
+      "s2352",
+      "s2353",
+      "s2354",
+      "s2355",
+      "s2356",
+      "s2357",
+      "s2358",
+      "s2359",
+      "s2360"
+    ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-30",
+    "jak": "reguly",
+    "wejscie": "f5f1169ecb5f8294",
+    "wstawki": [
+      {
+        "miejsce": "natura/wystepowanie",
+        "rozdzial": "Natura i siedlisko",
+        "tytul": "Występowanie i zasięg",
+        "ikona": "ra-compass",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "System korzeniowy jesionu zmienia się z początkowo palowego na silne korzenie boczne o bardzo szerokim zasięgu, co czyni drzewo odpornym na powalanie przez wiatr. Posiada największy zasięg korzeni bocznych spośród wszystkich rodzimych europejskich drzew.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2344"
+            ],
+            "sekcja": "opis",
+            "czesc": null
+          }
+        ]
+      }
+    ],
+    "duplikaty": []
   }
 }

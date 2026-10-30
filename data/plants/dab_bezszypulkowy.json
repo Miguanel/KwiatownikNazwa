@@ -174,7 +174,7 @@
   },
   "ostrzezenia": "Nie stosować wewnętrznie odwarów z kory przy niedokrwistości (garbniki blokują żelazo). Kąpiele dębowe są przeciwwskazane przy nadciśnieniu III stopnia.",
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-10-30",
     "w_url": false,
     "zdjecia": [
       {
@@ -218,5 +218,384 @@
         "reczne": true
       }
     ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-10-30",
+    "uporzadkowano": "2026-10-30",
+    "uklad": "deterministyczny: zly tekst punktu [3]",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (en): Quercus petraea",
+        "url": "https://en.wikipedia.org/wiki/Quercus_petraea",
+        "jezyk": "en",
+        "typ": "wikipedia",
+        "nr": 1
+      },
+      {
+        "nazwa": "Wikipedia (ja): フユナラ",
+        "url": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%83%A6%E3%83%8A%E3%83%A9",
+        "jezyk": "ja",
+        "typ": "wikipedia",
+        "nr": 2
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "opis",
+        "tytul": "Opis i wygląd",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Blaszka liściowa ma zazwyczaj 7–14 cm długości i 4–8 cm szerokości, z pięcioma do sześciu klapami po każdej stronie oraz ogonkiem o długości 1 cm.",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2332"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "wystepowanie",
+        "tytul": "Występowanie",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W lasach zachodniej Albanii jest to drzewo bardzo powszechne, rozprzestrzenione na równinach i terenach pagórkowatych.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2324"
+            ]
+          },
+          {
+            "tekst": "Drewno tego dębu wykazuje wysoką odporność na gnicie w wilgotnym środowisku, co czyni je idealnym do budowy łodzi i konstrukcji narażonych na kontakt z wodą.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2325"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Drewno tego gatunku posiada naturalne właściwości mikrobiobójcze, co tradycyjnie było jedną z przyczyn jego szerokiego użycia w budownictwie.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2336"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Larwy dębosza ość (Pyrrhidium sanguineum), nazwanego na cześć tego dębu, żywią się tkanką na styku kory i drewna martwych pni.",
+            "czesc": "kora",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2334"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "uprawa",
+        "tytul": "Uprawa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W przeciwieństwie do dębu szypułkowego, gatunek ten preferuje tereny o wysokości powyżej 300 m n.p.m., z większym opadem deszczu oraz glebami słabo zasobnymi, kamienistymi i piaszczystymi, o odczynie łącznym do lekko kwaśnego.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2335"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "liście": [
+        "s2332"
+      ],
+      "kora": [
+        "s2334"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s2324",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "W lasach zachodniej Albanii jest to drzewo bardzo powszechne, rozprzestrzenione na równinach i terenach pagórkowatych.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): フユナラ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%83%A6%E3%83%8A%E3%83%A9"
+        },
+        "cytat": "スペインからノルウェーまで、さらにアルバニア西部の森ではごく一般的な樹木で、平野や丘陵地帯に分布する。"
+      },
+      {
+        "id": "s2325",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Drewno tego dębu wykazuje wysoką odporność na gnicie w wilgotnym środowisku, co czyni je idealnym do budowy łodzi i konstrukcji narażonych na kontakt z wodą.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): フユナラ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%83%A6%E3%83%8A%E3%83%A9"
+        },
+        "cytat": "木材は、木骨造等の建設や造船、ワイン用のオーク樽の製造等に用いられる。"
+      },
+      {
+        "id": "s2332",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Blaszka liściowa ma zazwyczaj 7–14 cm długości i 4–8 cm szerokości, z pięcioma do sześciu klapami po każdej stronie oraz ogonkiem o długości 1 cm.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Quercus petraea",
+          "url": "https://en.wikipedia.org/wiki/Quercus_petraea"
+        },
+        "cytat": "The leaves are 7–14 centimetres (2+3⁄4–5+1⁄2 inches) long and 4–8 cm (1+1⁄2–3 in) broad, evenly lobed with five to six lobes on each side and a 1 cm-long (1⁄2 in) petiole."
+      },
+      {
+        "id": "s2334",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "kora",
+        "tekst": "Larwy dębosza ość (Pyrrhidium sanguineum), nazwanego na cześć tego dębu, żywią się tkanką na styku kory i drewna martwych pni.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Quercus petraea",
+          "url": "https://en.wikipedia.org/wiki/Quercus_petraea"
+        },
+        "cytat": "The Welsh oak longhorn beetle (Pyrrhidium sanguineum) is named after its host tree; the larvae feed at the bark interface of dead wood."
+      },
+      {
+        "id": "s2335",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "W przeciwieństwie do dębu szypułkowego, gatunek ten preferuje tereny o wysokości powyżej 300 m n.p.m., z większym opadem deszczu oraz glebami słabo zasobnymi, kamienistymi i piaszczystymi, o odczynie łącznym do lekko kwaśnego.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Quercus petraea",
+          "url": "https://en.wikipedia.org/wiki/Quercus_petraea"
+        },
+        "cytat": "It occurs in upland areas of altitudes over 300 m (984 ft) with higher rainfall and shallow, acidic, sandy soils."
+      },
+      {
+        "id": "s2336",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": null,
+        "tekst": "Drewno tego gatunku posiada naturalne właściwości mikrobiobójcze, co tradycyjnie było jedną z przyczyn jego szerokiego użycia w budownictwie.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Quercus petraea",
+          "url": "https://en.wikipedia.org/wiki/Quercus_petraea"
+        },
+        "cytat": "The wood also has antimicrobial properties."
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-30",
+    "pola": {
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": [
+          "Owoce (żołędzie) są 'siedzące' – wyrastają bezpośrednio na gałązkach, bez długich szypułek.",
+          "Liście mają długie ogonki (1-3 cm), co nadaje koronie bardziej 'miękki' wygląd.",
+          "Nasada liścia jest klinowata, bez charakterystycznych 'uszek' (w przeciwieństwie do dębu szypułkowego).",
+          "Kora jest nieco cieńsza i płyciej spękana niż u dębu szypułkowego."
+        ],
+        "tresc": [
+          {
+            "tekst": "Owoce (żołędzie) są siedzące – wyrastają bezpośrednio na gałązkach i nie posiadają długich szypułek.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Liście dąbu bezszypułkowego mają blaszki o długości 7–14 cm, szerokości 4–8 cm, z pięcioma do sześciu klapami i długim ogonkiem o długości 1–3 cm, co nadaje koronie miękki wygląd.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2332"
+            ]
+          },
+          {
+            "tekst": "Nasada liścia jest klinowata i nie posiada charakterystycznych 'uszek', w przeciwieństwie do dębu szypułkowego.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kora dębu bezszypułkowego jest nieco cieńsza i bardziej płytko spękana w porównaniu z kora dębu szypułkowego.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/openai/gpt-oss-20b",
+        "wejscie": "f0ccdca4c537b6fe"
+      },
+      "wymagania.stanowisko": {
+        "tytul": "Natura i siedlisko - Stanowisko",
+        "typ": "tekst",
+        "oryginal": "Słoneczne do lekko zacienionego. Jest bardziej światłożądny od dębu szypułkowego w fazie dojrzałej.",
+        "tresc": [
+          {
+            "tekst": "Dąb bezszypułkowy preferuje nasłonecznione do lekko zacienionego stanowiska i jest bardziej światłożądny od dębu szypułkowego w fazie dojrzałej.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W lasach zachodniej Albanii drzewo to jest bardzo powszechne, rozprzestrzenione na równinach i terenach pagórkowatych.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2324"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-20b",
+        "wejscie": "63c757f1c460c7f9"
+      },
+      "zastosowanie.rzemieslnicze": {
+        "tytul": "Praktyczne zastosowanie - Rzemiosło",
+        "typ": "tekst",
+        "oryginal": "Drewno dębu bezszypułkowego jest wyżej cenione w stolarstwie artystycznym niż dębu szypułkowego ze względu na prostsze słoje i mniejszą skłonność do pękania. Główne źródło dębiny na beczki do wina (tzw. francuski dąb).",
+        "tresc": [
+          {
+            "tekst": "Drewno dębu bezszypułkowego jest wyżej cenione w stolarstwie artystycznym niż dębu szypułkowego ze względu na prostsze słoje i mniejszą skłonność do pękania.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Główne źródło dębiny na beczki do wina (tzw. francuski dąb).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Drewno tego dębu wykazuje wysoką odporność na gnicie w wilgotnym środowisku, co czyni je idealnym do budowy łodzi i konstrukcji narażonych na kontakt z wodą.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2325"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "be7de6900ebe4ef9"
+      },
+      "wymagania.gleba": {
+        "tytul": "Natura i siedlisko - Gleba",
+        "typ": "tekst",
+        "oryginal": "Lżejsza, piaszczysto-gliniasta, przepuszczalna. Dobrze radzi sobie na glebach kamienistych i uboższych.",
+        "tresc": [
+          {
+            "tekst": "Gleba preferowana przez dąb bezszypułkowy jest lżejsza, piaszczysto-gliniasta i przepuszczalna, co pozwala roślinie dobrze radzić sobie na glebach kamienistych i uboższych.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W przeciwieństwie do dębu szypułkowego, dąb bezszypułkowy preferuje tereny o wysokości powyżej 300 m n.p.m., z większym opadem deszczu oraz glebami słabo zasobnymi, kamienistymi i piaszczystymi, o odczynie łącznym do lekko kwaśnego.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2335"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-20b",
+        "wejscie": "2deea5a0eaa3b8a3"
+      }
+    },
+    "uzyte_fakty": [
+      "s2324",
+      "s2325",
+      "s2332",
+      "s2335"
+    ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-10-30",
+    "jak": "llm:groq/openai/gpt-oss-20b",
+    "wejscie": "5f40e515f709ed33",
+    "wstawki": [
+      {
+        "miejsce": "zastosowanie/rzemioslo",
+        "rozdzial": "Praktyczne zastosowanie",
+        "tytul": "Rzemiosło",
+        "ikona": "ra-hammer",
+        "nowy": false,
+        "punkty": [
+          {
+            "tekst": "Drewno tego gatunku posiada naturalne właściwości mikrobiobójcze, co tradycyjnie było jedną z przyczyn jego szerokiego użycia w budownictwie.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2336"
+            ],
+            "sekcja": "zastosowanie_lecznicze",
+            "czesc": null
+          }
+        ]
+      },
+      {
+        "miejsce": "bezpieczenstwo/przeciwwskazania",
+        "rozdzial": "Bezpieczeństwo i interakcje",
+        "tytul": "Przeciwwskazania",
+        "ikona": "ra-lightning-bolt",
+        "nowy": false,
+        "punkty": [
+          {
+            "tekst": "Larwy dębosza ość (Pyrrhidium sanguineum), nazwanego na cześć tego dębu, żywią się tkanką na styku kory i drewna martwych pni.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2334"
+            ],
+            "sekcja": "bezpieczenstwo",
+            "czesc": "kora"
+          }
+        ]
+      }
+    ],
+    "duplikaty": []
   }
 }

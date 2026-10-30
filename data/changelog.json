@@ -3,6 +3,87 @@
  "opis": "Kronika Siedziby Kwiatownika - pisze ja agent wdrozen (Siedziba).",
  "wpisy": [
   {
+   "data": "2026-10-30T18:14:42+01:00",
+   "tytul": "Nowa wiedza o 5 roślinach i 82 nowe przepisy",
+   "opis": "Siedziba zebrała 64 sprawdzone informacje (źródła: niemieckie, angielskie, japońskie). 13 informacji z sieci trafiło do właściwych rozdziałów i podrozdziałów stron roślin.",
+   "liczby": {
+    "informacje": 64,
+    "przepisy": 82,
+    "rosliny": 5,
+    "nowe_rosliny": 0,
+    "zdjecia": 0,
+    "rozmieszczone": 13
+   },
+   "rosliny": [
+    {
+     "id": "swierzabek_bulwiasty",
+     "nazwa": "swierzabek_bulwiasty",
+     "nowe": 22,
+     "jezyki": [
+      "de",
+      "en"
+     ]
+    },
+    {
+     "id": "buk_zwyczajny",
+     "nazwa": "Buk zwyczajny",
+     "nowe": 17,
+     "jezyki": [
+      "de",
+      "en"
+     ]
+    },
+    {
+     "id": "jesion_wyniosly",
+     "nazwa": "Jesion wyniosły",
+     "nowe": 16,
+     "jezyki": [
+      "de",
+      "en"
+     ]
+    },
+    {
+     "id": "dab_bezszypulkowy",
+     "nazwa": "Dąb bezszypułkowy",
+     "nowe": 6,
+     "jezyki": [
+      "en",
+      "ja"
+     ]
+    },
+    {
+     "id": "dab_szypulkowy",
+     "nazwa": "Dąb szypułkowy",
+     "nowe": 3,
+     "jezyki": [
+      "ja"
+     ]
+    }
+   ],
+   "przepisy": [
+    {
+     "tytul": "Karpacka herbata „Dla mężczyzn”",
+     "zrodlo": "komoratravnyka.com.ua"
+    },
+    {
+     "tytul": "Nalewka z pokrzywy",
+     "zrodlo": "piwniczkachomika.pl"
+    },
+    {
+     "tytul": "Nalewka z kwiatów czarnego bzu",
+     "zrodlo": "piwniczkachomika.pl"
+    },
+    {
+     "tytul": "Nalewka z aronii",
+     "zrodlo": "piwniczkachomika.pl"
+    },
+    {
+     "tytul": "Prosta nalewka z wiśni dla początkujących",
+     "zrodlo": "piwniczkachomika.pl"
+    }
+   ]
+  },
+  {
    "data": "2026-10-22T16:18:04+02:00",
    "tytul": "Nowa wiedza o 3 roślinach",
    "opis": "Siedziba zebrała 36 sprawdzonych informacji (źródła: niemieckie, angielskie, japońskie). 4 informacje z sieci trafiły do właściwych rozdziałów i podrozdziałów stron roślin.",
