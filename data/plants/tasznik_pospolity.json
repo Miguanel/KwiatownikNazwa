@@ -102,7 +102,7 @@
     "Liście": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Herderstasje_bladrozet_%28Capsella_bursa-pastoris%29.jpg/960px-Herderstasje_bladrozet_%28Capsella_bursa-pastoris%29.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-11-03",
     "w_url": true,
     "zdjecia": [
       {
@@ -132,6 +132,173 @@
         "licencja_url": "http://creativecommons.org/licenses/by-sa/3.0/",
         "zrodlo": "Wikimedia Commons"
       }
+    ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-11-03",
+    "uporzadkowano": "2026-11-03",
+    "uklad": "deterministyczny",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (zh): 荠菜",
+        "url": "https://zh.wikipedia.org/wiki/%E8%8D%A0%E8%8F%9C",
+        "jezyk": "zh",
+        "typ": "wikipedia",
+        "nr": 1
+      },
+      {
+        "nazwa": "stronazdrowia.pl",
+        "url": "https://stronazdrowia.pl/te-ziola-zebralam-w-weekend-na-podlasiu-5-chwastow-ktore-warto-zbierac-wiosna-przygotujesz-z-nich-lecznicze-napary-syropy-i/ar/c14-18445165",
+        "jezyk": "pl-PL",
+        "typ": "strona",
+        "nr": 2
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "opis",
+        "tytul": "Opis i wygląd",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Roślina ma białe, smukłe korzenie główne oraz wzniesiony główny pęd, z którego odchodzą cienkie, boczne łodygi. Liście łodygowe mają kształt podłużny lub liniowy, z listkami bazalnymi przylegającymi do łodygi, często z ząbkowanymi krawędziami i gęstym owłosieniem.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2461"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "czesci_rosliny",
+        "tytul": "Części rośliny i surowce",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Liście, ziele i kwiaty zawsze zbiera się dni bezdeszczowe i po obeschnięciu rosy. Nie wolno zbierać mokrych kwiatów, liści i ziela.",
+            "czesc": "ziele",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2477"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "ziele": [
+        "s2477"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s2461",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Roślina ma białe, smukłe korzenie główne oraz wzniesiony główny pęd, z którego odchodzą cienkie, boczne łodygi. Liście łodygowe mają kształt podłużny lub liniowy, z listkami bazalnymi przylegającymi do łodygi, często z ząbkowanymi krawędziami i gęstym owłosieniem.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 荠菜",
+          "url": "https://zh.wikipedia.org/wiki/%E8%8D%A0%E8%8F%9C"
+        },
+        "cytat": "白色的主根瘦长。主茎直立，分出细茎。...长圆形或线状披针形的茎生叶，顶部的叶片大都接近线形，叶基成耳状抱茎，边缘或有缺刻或锯齿，叶有细柔毛。"
+      },
+      {
+        "id": "s2477",
+        "sekcja": "czesci_rosliny",
+        "czesc": "ziele",
+        "tekst": "Liście, ziele i kwiaty zawsze zbiera się dni bezdeszczowe i po obeschnięciu rosy. Nie wolno zbierać mokrych kwiatów, liści i ziela.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/te-ziola-zebralam-w-weekend-na-podlasiu-5-chwastow-ktore-warto-zbierac-wiosna-przygotujesz-z-nich-lecznicze-napary-syropy-i/ar/c14-18445165"
+        },
+        "cytat": "Liście, ziele i kwiaty zawsze zbiera się dni bezdeszczowe i po obeschnięciu rosy. Nie wolno zbierać mokrych kwiatów, liści i ziela."
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-03",
+    "pola": {
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": [
+          "Owoce to małe, spłaszczone, trójkątno-sercowate łuszczynki.",
+          "Liście odziomkowe zebrane w rozetę, pierzastowcięte (podobne do mniszka), liście łodygowe mniejsze, lancetowate, obejmujące łodygę.",
+          "Kwiaty bardzo drobne, białe, czteropłatkowe, zebrane w wydłużone grona.",
+          "Łodyga pojedyncza lub rozgałęziona, wzniesiona, do 50 cm wysokości."
+        ],
+        "tresc": [
+          {
+            "tekst": "Owoce to małe, spłaszczone, trójkątno-sercowate łuszczynki.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Liście odziomkowe zebrane w rozetę, pierzastowcięte (podobne do mniszka), liście łodygowe mniejsze, lancetowate, obejmujące łodygę.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwiaty bardzo drobne, białe, czteropłatkowe, zebrane w wydłużone grona.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Łodyga pojedyncza lub rozgałęziona, wzniesiona, do 50 cm wysokości.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Roślina ma białe, smukłe korzenie główne oraz wzniesiony główny pęd, z którego odchodzą cienkie, boczne łodygi. Liście łodygowe mają kształt podłużny lub liniowy, z listkami bazalnymi przylegającymi do łodygi, często z ząbkowanymi krawędziami i gęstym owłosieniem.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2461"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "304f4e200400c73e"
+      },
+      "czesci_rosliny.ziele.czas_zbioru": {
+        "tytul": "Surowce i zbiory - Herba Bursae pastoris: Zbiór",
+        "typ": "tekst",
+        "oryginal": "Kwiecień - Wrzesień.",
+        "tresc": [
+          {
+            "tekst": "Kwiecień - Wrzesień.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Liście, ziele i kwiaty zawsze zbiera się dni bezdeszczowe i po obeschnięciu rosy. Nie wolno zbierać mokrych kwiatów, liści i ziela.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2477"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "3ae87bc02df2e5f0"
+      }
+    },
+    "uzyte_fakty": [
+      "s2461",
+      "s2477"
     ]
   }
 }

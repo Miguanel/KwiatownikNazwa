@@ -112,7 +112,7 @@
     "Rycina": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Fragaria_vesca_Sturm21.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-16",
+    "zaktualizowano": "2026-11-02",
     "w_url": true,
     "zdjecia": [
       {
@@ -164,8 +164,8 @@
   },
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-10-16",
-    "uporzadkowano": "2026-10-16",
+    "zaktualizowano": "2026-11-02",
+    "uporzadkowano": "2026-11-02",
     "uklad": "deterministyczny: pominiete informacje: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",
     "zrodla": [
       {
@@ -211,6 +211,16 @@
         "podsumowanie": null,
         "podsumowanie_zrodla": [],
         "punkty": [
+          {
+            "tekst": "Roślina dorasta do wysokości 5–20 cm, rzadko do 30 cm.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2217"
+            ]
+          },
           {
             "tekst": "Poziomka kwitnie w maju i czerwcu, a czasem ponownie w okresie jesiennym.",
             "czesc": "kwiaty",
@@ -310,6 +320,16 @@
             ]
           },
           {
+            "tekst": "Roślina najlepiej radzi sobie w miejscach o cienistym charakterze, na południu swego ареalu rośnie praktycznie wyłącznie w cieniu, podczas gdy na północy toleruje większe nasłonecznienie.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2219"
+            ]
+          },
+          {
             "tekst": "Poziomka pospolita uznawana jest za gatunek inwazyjny na Hawajach, Reunionie oraz w Nowej Zelandii, gdzie tworzy bardzo gęste, płożące się płaty.",
             "czesc": null,
             "zrodla": [
@@ -328,6 +348,16 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
+            "tekst": "Wytwarza sympodialne, długie i cienkie rozłogi, które zwykle nie występują u odmian uprawnych.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2218"
+            ]
+          },
+          {
             "tekst": "Jako zioło lecznicze wykorzystuje się czasami także korzenie, pędy oraz kwiaty poziomki do parzenia naparów.",
             "czesc": "korzeń",
             "zrodla": [
@@ -345,6 +375,16 @@
             ],
             "fakty": [
               "s950"
+            ]
+          },
+          {
+            "tekst": "Oprócz rozmnażania się przez rozłogi, poziomka posiada liczne nasiona w warstwie gleby, które kiełkują po zaburzeniu podłoża.",
+            "czesc": "nasiona",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2225"
             ]
           }
         ]
@@ -634,6 +674,16 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
+            "tekst": "Uprawa odmian wieloowocujących może być problematyczna z powodu szybkiego osłabiania się roślin po kilku latach, co wynika z obfitego kwitnienia i owocowania oraz podatności na choroby wirusowe.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2220"
+            ]
+          },
+          {
             "tekst": "Osoby przyjmujące leki lub będące pod opieką lekarza powinny przed użyciem poziomki skonsultować się z lekarzem.",
             "czesc": null,
             "zrodla": [
@@ -689,6 +739,26 @@
             ],
             "fakty": [
               "s965"
+            ]
+          },
+          {
+            "tekst": "W hodowlach poziomki opracowano odmiany o wydłużonym okresie kwitnienia, zwane często wysokogórskimi truskawkami, które dają większe i dłużej dojrzewające owoce.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2226"
+            ]
+          },
+          {
+            "tekst": "Pomimo powszechnych opinii o trudności uprawy z nasion, przy odpowiedniej pielęgnacji bardzo drobnego materiału siewnego można osiągnąć 80% wschodów w ciągu jednego do dwóch tygodni.",
+            "czesc": "nasiona",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2221"
             ]
           },
           {
@@ -770,6 +840,16 @@
             ]
           },
           {
+            "tekst": "Pierwszą nowoczesną odmianą bezrozłogową, wieloowocującą i dużoplodową był 'Rügen', wyhodowaną na zamku Putbus w Niemczech i wprowadzoną do sprzedaży w 1920 roku.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2222"
+            ]
+          },
+          {
             "tekst": "W Turcji co roku zbiera się i wykorzystuje setki ton dzikich poziomek.",
             "czesc": null,
             "zrodla": [
@@ -790,6 +870,16 @@
             ]
           },
           {
+            "tekst": "W zapisach uprawowych występowała odmiana 'Monophylla', znana jako poziomka wersalska, która wyróżnia się posiadaniem jednego dużego listka zamiast typowych trzech.",
+            "czesc": "liście",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2223"
+            ]
+          },
+          {
             "tekst": "Liście poziomki stanowią pokarm dla wielu lądowych zwierząt kopytnych, takich jak mulak czarnoogonowy czy wapiti.",
             "czesc": "liście",
             "zrodla": [
@@ -807,7 +897,8 @@
         "s1919",
         "s1603",
         "s962",
-        "s1616"
+        "s1616",
+        "s2226"
       ],
       "liście": [
         "s1604",
@@ -818,6 +909,7 @@
         "s1579",
         "s1612",
         "s1577",
+        "s2223",
         "s966"
       ],
       "owoce": [
@@ -833,6 +925,10 @@
       ],
       "korzeń": [
         "s972"
+      ],
+      "nasiona": [
+        "s2225",
+        "s2221"
       ],
       "ziele": [
         "s1613",
@@ -1439,72 +1535,121 @@
           "url": "https://pl.wikipedia.org/wiki/Poziomka_pospolita"
         },
         "cytat": "Kwitnie w maju i czerwcu, czasem też powtórnie jesienią."
+      },
+      {
+        "id": "s2217",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Roślina dorasta do wysokości 5–20 cm, rzadko do 30 cm.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Poziomka pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Poziomka_pospolita"
+        },
+        "cytat": "Wysokość 5-20 (30) cm."
+      },
+      {
+        "id": "s2218",
+        "sekcja": "czesci_rosliny",
+        "czesc": null,
+        "tekst": "Wytwarza sympodialne, długie i cienkie rozłogi, które zwykle nie występują u odmian uprawnych.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Poziomka pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Poziomka_pospolita"
+        },
+        "cytat": "Wytwarza sympodialne, długie i cienkie rozłogi (brak ich zwykle u odmian uprawnych)."
+      },
+      {
+        "id": "s2219",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Roślina najlepiej radzi sobie w miejscach o cienistym charakterze, na południu swego ареalu rośnie praktycznie wyłącznie w cieniu, podczas gdy na północy toleruje większe nasłonecznienie.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Fragaria vesca",
+          "url": "https://en.wikipedia.org/wiki/Fragaria_vesca"
+        },
+        "cytat": "In the southern part of its range, it can grow only in shady areas; further north it tolerates more sun."
+      },
+      {
+        "id": "s2220",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Uprawa odmian wieloowocujących może być problematyczna z powodu szybkiego osłabiania się roślin po kilku latach, co wynika z obfitego kwitnienia i owocowania oraz podatności na choroby wirusowe.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Fragaria vesca",
+          "url": "https://en.wikipedia.org/wiki/Fragaria_vesca"
+        },
+        "cytat": "Plants tend to lose vigour after a few years due to their abundant fruiting and flowering with final decline caused by viral diseases."
+      },
+      {
+        "id": "s2221",
+        "sekcja": "uprawa",
+        "czesc": "nasiona",
+        "tekst": "Pomimo powszechnych opinii o trudności uprawy z nasion, przy odpowiedniej pielęgnacji bardzo drobnego materiału siewnego można osiągnąć 80% wschodów w ciągu jednego do dwóch tygodni.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Fragaria vesca",
+          "url": "https://en.wikipedia.org/wiki/Fragaria_vesca"
+        },
+        "cytat": "In reality, with proper handling of the very small seeds (which can easily be washed away with rough watering), 80% germination rates at 70 °F (21 °C) in 1–2 weeks are easily achievable."
+      },
+      {
+        "id": "s2222",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Pierwszą nowoczesną odmianą bezrozłogową, wieloowocującą i dużoplodową był 'Rügen', wyhodowaną na zamku Putbus w Niemczech i wprowadzoną do sprzedaży w 1920 roku.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Fragaria vesca",
+          "url": "https://en.wikipedia.org/wiki/Fragaria_vesca"
+        },
+        "cytat": "Rügen, the first modern cultivar, i.e., runnerless, everbearing and large fruited — originating from Castle Putbus in Germany, first offered 1920 by the strawberry grower Emil Spangenberg from Morsleben."
+      },
+      {
+        "id": "s2223",
+        "sekcja": "ciekawostki",
+        "czesc": "liście",
+        "tekst": "W zapisach uprawowych występowała odmiana 'Monophylla', znana jako poziomka wersalska, która wyróżnia się posiadaniem jednego dużego listka zamiast typowych trzech.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Fragaria vesca",
+          "url": "https://en.wikipedia.org/wiki/Fragaria_vesca"
+        },
+        "cytat": "Monophylla (“Strawberry of Versailles”; has one large leaflet instead of the normal three leaflets) - Vilmorin-Andrieux (1885) stated as being raised by Duchesne."
+      },
+      {
+        "id": "s2225",
+        "sekcja": "czesci_rosliny",
+        "czesc": "nasiona",
+        "tekst": "Oprócz rozmnażania się przez rozłogi, poziomka posiada liczne nasiona w warstwie gleby, które kiełkują po zaburzeniu podłoża.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 野草莓",
+          "url": "https://zh.wikipedia.org/wiki/%E9%87%8E%E8%8D%89%E8%8E%93"
+        },
+        "cytat": "雖然野草莓多透過匍匐莖（變態莖的一種）繁殖，但在泥土種子庫（soil seed bank）中也找到為數不少的種子。當土壤受到干擾後便會發芽，並遠離原本群落生長。"
+      },
+      {
+        "id": "s2226",
+        "sekcja": "uprawa",
+        "czesc": "kwiaty",
+        "tekst": "W hodowlach poziomki opracowano odmiany o wydłużonym okresie kwitnienia, zwane często wysokogórskimi truskawkami, które dają większe i dłużej dojrzewające owoce.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 野草莓",
+          "url": "https://zh.wikipedia.org/wiki/%E9%87%8E%E8%8D%89%E8%8E%93"
+        },
+        "cytat": "大部份栽培種均有較長的花期。其中一些常稱作高山草莓的品種實際為本種的栽培變種（學名：Fragaria vesca ssp. vesca f. semperflorens，異名：Fragaria alpina）。多形成匍匐莖或呈多冠狀的簇，能結出較大及較長時間的果。"
       }
     ]
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-16",
+    "zaktualizowano": "2026-11-02",
     "pola": {
-      "opis": {
-        "tytul": "Opis - Opis ogólny",
-        "typ": "tekst",
-        "oryginal": "Mała, wieloletnia bylina leśna tworząca liczne rozłogi. Słynie z niepowtarzalnego aromatu owoców, ale w zielarstwie jej liście są cenione wyżej niż owoce jako jeden z najbezpieczniejszych i najskuteczniejszych środków oczyszczających drogi moczowe i krew.",
-        "tresc": [
-          {
-            "tekst": "Poziomka pospolita (Fragaria vescea) to mała, wieloletnia bylina leśna, tworząca liczne rozłogi, słynąca z niepowtarzalnego aromatu owoców, ale w zielarstwie jej liście są cenione wyżej niż owoce jako jeden z najbezpieczniejszych i najskuteczniejszych środków oczyszczających drogi moczowe i krew.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Poziomka kwitnie w maju i czerwcu, a czasem ponownie w okresie jesiennym.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s1919"
-            ]
-          },
-          {
-            "tekst": "Roślina ta rośnie dziko w całej Europie, w niemal całej Ameryce Północnej oraz w Azji, z wyjątkiem jej wschodniej i południowej części.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s947"
-            ]
-          },
-          {
-            "tekst": "Gatunek występuje dziko w całej Europie, Azji (z wyjątkiem wschodniej i południowej części) oraz Ameryce Północnej, a w Polsce jest pospolity na całym obszarze kraju.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s1575"
-            ]
-          },
-          {
-            "tekst": "W górach gatunek ten występuje nawet do piętra kosówki, a w Tatrach można go spotkać na wysokości do 1710 metrów n.p.m.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s1583"
-            ]
-          },
-          {
-            "tekst": "Poziomka pospolita uznawana jest za gatunek inwazyjny na Hawajach, Reunionie oraz w Nowej Zelandii, gdzie tworzy bardzo gęste, płożące się płaty.",
-            "zrodla": [
-              4
-            ],
-            "fakty": [
-              "s964"
-            ]
-          }
-        ],
-        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "348ab80754910554"
-      },
       "identyfikacja.cechy_kluczowe": {
         "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
         "typ": "lista",
@@ -1520,7 +1665,7 @@
             "fakty": []
           },
           {
-            "tekst": "Kwiaty pięciopłatkowe, białe z wyraźnym żółtym środkiem, osadzone na szypułkach.",
+            "tekst": "Kwiaty pięciopłatkowe, białe z wyraźnym żółtym środkiem, osadzone na szypuszkach.",
             "zrodla": [],
             "fakty": []
           },
@@ -1528,6 +1673,24 @@
             "tekst": "Owoce drobne, czerwone, o nasionach (orzeszkach) osadzonych na powierzchni dna kwiatowego.",
             "zrodla": [],
             "fakty": []
+          },
+          {
+            "tekst": "Roślina dorasta do wysokości 5–20 cm, rzadko do 30 cm.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2217"
+            ]
+          },
+          {
+            "tekst": "Poziomka kwitnie w maju i czerwcu, a czasem ponownie w okresie jesiennym.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1919"
+            ]
           },
           {
             "tekst": "Kwiaty poziomki pospolitej są miękkie, białe i pokryte włoskami, rosną na cienkiej, zielonej szponie.",
@@ -1546,20 +1709,6 @@
             "fakty": [
               "s1604"
             ]
-          }
-        ],
-        "model": "bez LLM: brak modelu",
-        "wejscie": "b3bcf6fc4a28e43e"
-      },
-      "czesci_rosliny.owoce.opis_botaniczny": {
-        "tytul": "Surowce i zbiory - Fructus Fragariae: Opis surowca",
-        "typ": "tekst",
-        "oryginal": "Owoce rzekome (rozrośnięte dno kwiatowe).",
-        "tresc": [
-          {
-            "tekst": "Owoce rzekome (rozrośnięte dno kwiatowe).",
-            "zrodla": [],
-            "fakty": []
           },
           {
             "tekst": "Owoc poziomki utrzymuje się średnio przez 1,2 dnia, co prawdopodobnie stanowi najkrótszy czas trwania wśród mięsistych owoców w Europie.",
@@ -1571,8 +1720,8 @@
             ]
           }
         ],
-        "model": "bez LLM: brak modelu",
-        "wejscie": "5e77c2c87cf3aff4"
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "fb03d6f0c0f2ee34"
       },
       "wymagania.stanowisko": {
         "tytul": "Natura i siedlisko - Stanowisko",
@@ -1585,15 +1734,6 @@
             "fakty": []
           },
           {
-            "tekst": "Roslina występuje w miejscach takich jak ścieżki, drogi, zbocza, łąki, młode lasy, rzadkie lasy, krawędzie lasów i otwarte miejsca.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s1605"
-            ]
-          },
-          {
             "tekst": "W południowych rejonach swojego występowania poziomka pospolita rośnie wyłącznie w miejscach ocienionych, natomiast w północnej części zasięgu dobrze znosi większe nasłonecznienie.",
             "zrodla": [
               3
@@ -1601,28 +1741,19 @@
             "fakty": [
               "s1828"
             ]
-          }
-        ],
-        "model": "bez LLM: brak modelu",
-        "wejscie": "950e47b1720163d3"
-      },
-      "czesci_rosliny.korzeń.wlasciwości": {
-        "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Działanie",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
+          },
           {
-            "tekst": "Jako zioło lecznicze wykorzystuje się czasami także korzenie, pędy oraz kwiaty poziomki do parzenia naparów.",
+            "tekst": "Roślina najlepiej radzi sobie w miejscach o cienistym charakterze, na południu swego ареalu rośnie praktycznie wyłącznie w cieniu, podczas gdy na północy toleruje większe nasłonecznienie.",
             "zrodla": [
-              4
+              3
             ],
             "fakty": [
-              "s972"
+              "s2219"
             ]
           }
         ],
         "model": "bez LLM: brak modelu",
-        "wejscie": "66b16331c2f4317d"
+        "wejscie": "40b6960be94160d9"
       },
       "czesci_rosliny.liscie.opis_botaniczny": {
         "tytul": "Surowce i zbiory - Folium Fragariae: Opis surowca",
@@ -1630,7 +1761,7 @@
         "oryginal": "Młode liście zbierane bez ogonków przed owocowaniem rośliny.",
         "tresc": [
           {
-            "tekst": "Młode liście zbierane bez ogonków przed owocowaniem rośliny.",
+            "tekst": "Młodsze liście zbierane bez ogonków przed owocowaniem rośliny.",
             "zrodla": [],
             "fakty": []
           },
@@ -1644,7 +1775,7 @@
             ]
           }
         ],
-        "model": "bez LLM: brak modelu",
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
         "wejscie": "eda85f67b84c682d"
       },
       "czesci_rosliny.liscie.skladniki_aktywne": {
@@ -1658,6 +1789,15 @@
         ],
         "tresc": [
           {
+            "tekst": "Młodsze liście poziomki zawierają flawonoidy, kwasy organiczne, olejki eteryczne i witaminy.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1578"
+            ]
+          },
+          {
             "tekst": "Garbniki katechinowe (do 10%)",
             "zrodla": [],
             "fakty": []
@@ -1666,25 +1806,6 @@
             "tekst": "Flawonoidy (kwercetyna, rutyna)",
             "zrodla": [],
             "fakty": []
-          },
-          {
-            "tekst": "Witamina C",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Kwasy organiczne",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Młode liście stanowią surowiec zielarski i zawierają flawonoidy, kwasy organiczne, olejki eteryczne oraz witaminy.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s1578"
-            ]
           },
           {
             "tekst": "Liście poziomki zawierają skoncentrowane taniny (gminy elagiowane), takie jak peduncuagina i agrymonina, a także flawonoidy i leukoantocyjany, przy czym kwas askorbinowy i olejki eteryczne występują w śladowych ilościach.",
@@ -1696,7 +1817,7 @@
             ]
           }
         ],
-        "model": "bez LLM: brak modelu",
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
         "wejscie": "fa216e55b1c10a5d"
       },
       "czesci_rosliny.owoce.skladniki_aktywne": {
@@ -1710,22 +1831,7 @@
         ],
         "tresc": [
           {
-            "tekst": "Sole mineralne (żelazo, wapń)",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Witaminy z grupy B i C",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Kwas salicylowy",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Pektyny",
+            "tekst": "Sole mineralne (żelazo, wapń) Witaminy z grupy B i C Kwas salicylowy Pektyny",
             "zrodla": [],
             "fakty": []
           },
@@ -1748,7 +1854,7 @@
             ]
           }
         ],
-        "model": "bez LLM: brak modelu",
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
         "wejscie": "dbb2747d450ac7ad"
       },
       "czesci_rosliny.liscie.wlasciwości": {
@@ -1784,13 +1890,13 @@
         "model": "bez LLM: brak modelu",
         "wejscie": "52876d6ef9f7b7a3"
       },
-      "czesci_rosliny.owoce.ostrzezenia": {
-        "tytul": "Surowce i zbiory - Fructus Fragariae: Ostrzeżenia",
+      "czesci_rosliny.owoce.wlasciwości": {
+        "tytul": "Surowce i zbiory - Fructus Fragariae: Działanie",
         "typ": "tekst",
-        "oryginal": "U osób wrażliwych mogą wywoływać reakcje alergiczne (pokrzywkę).",
+        "oryginal": "Odkwaszające organizm, ogólnie wzmacniające, przeciwreumatyczne.",
         "tresc": [
           {
-            "tekst": "U osób wrażliwych mogą wywoływać reakcje alergiczne (pokrzywkę).",
+            "tekst": "Odkwaszające organizm, ogólnie wzmacniające, przeciwreumatyczne.",
             "zrodla": [],
             "fakty": []
           },
@@ -1802,28 +1908,10 @@
             "fakty": [
               "s954"
             ]
-          },
-          {
-            "tekst": "Zielone ziarna na owocach zawierają substancję gorzką, która uwalnia się dopiero po kilku minutach gotowania, przez co dżem z samych poziomek może smakować gorzkawo.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s961"
-            ]
-          },
-          {
-            "tekst": "Ekstrakt aromatyczny owoców może zawierać około 80 różnych substancji chemicznych, w tym estery kwasów tłuszczowych oraz alkohole wyższe.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s1611"
-            ]
           }
         ],
-        "model": "bez LLM: brak modelu",
-        "wejscie": "ed927f95236945c9"
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "0b1e4faed0372b24"
       },
       "czesci_rosliny.ziele.wlasciwości": {
         "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Działanie",
@@ -1831,7 +1919,7 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "W średniowieczu i później ziele poziomki bywało stosowane w medycynie, między innymi jako lek do leczenia ran.",
+            "tekst": "W średniowieczu i później ziele poziomki bywalo stosowane w medycynie, między innymi jako lek do leczenia ran.",
             "zrodla": [
               2
             ],
@@ -1840,21 +1928,16 @@
             ]
           }
         ],
-        "model": "bez LLM: brak modelu",
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
         "wejscie": "1425b8bb5f6a32fd"
       },
-      "zastosowanie.kulinarne": {
-        "tytul": "Praktyczne zastosowanie - Kuchnia",
+      "zastosowanie.rzemieslnicze": {
+        "tytul": "Praktyczne zastosowanie - Rzemiosło",
         "typ": "tekst",
-        "oryginal": "Owoce deserowe o najwyższym aromacie. Liście po poddaniu procesowi fermentacji dają herbatę o smaku zbliżonym do Earl Grey.",
+        "oryginal": "Sok z owoców poziomki był historycznie używany jako naturalny, czerwony barwnik spożywczy oraz kosmetyczny (naturalny róż do policzków).",
         "tresc": [
           {
-            "tekst": "Owoce deserowe o najwyższym aromacie.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Liście po poddaniu procesowi fermentacji dają herbatę o smaku zbliżonym do Earl Grey.",
+            "tekst": "Sok z owoców poziomki był historycznie używany jako naturalny, czerwony barwnik spożywczy oraz kosmetyczny (naturalny róż do policzków).",
             "zrodla": [],
             "fakty": []
           },
@@ -1868,8 +1951,8 @@
             ]
           }
         ],
-        "model": "bez LLM: brak modelu",
-        "wejscie": "9bf97870698f21d8"
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "45df26fdc434b866"
       },
       "ciekawostki": {
         "tytul": "Wiedza tajemna - Ciekawostki",
@@ -1937,7 +2020,8 @@
               3
             ],
             "fakty": [
-              "s1834"
+              "s1834",
+              "s2222"
             ]
           },
           {
@@ -2068,6 +2152,15 @@
             ]
           },
           {
+            "tekst": "W zapisach uprawowych występowała odmiana 'Monophylla', znana jako poziomka wersalska, która wyróżnia się posiadaniem jednego dużego listka zamiast typowych trzech.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2223"
+            ]
+          },
+          {
             "tekst": "Liście poziomki stanowią pokarm dla wielu lądowych zwierząt kopytnych, takich jak mulak czarnoogonowy czy wapiti.",
             "zrodla": [
               4
@@ -2077,8 +2170,26 @@
             ]
           }
         ],
-        "model": "bez LLM: 21 punktow",
-        "wejscie": "aacac325f4b6c802"
+        "model": "bez LLM: 23 punktow",
+        "wejscie": "cc0f71392136bf5a"
+      },
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Uprawa odmian wieloowocowujących może byc problematyczna z powodu szybkiego osłabiania sie rosli po kilku latach, co wynika z obfitego kwitnienia i owocowania or az podatnosci na choroby wirusowe.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2220"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "a4d282862149afa7"
       },
       "interakcje": {
         "tytul": "Bezpieczeństwo i interakcje - Interakcje z lekami",
@@ -2086,17 +2197,7 @@
         "oryginal": "Brak znanych szkodliwych interakcji z lekami syntetycznymi. Bezpieczna dla osób przyjmujących leki na nadciśnienie.",
         "tresc": [
           {
-            "tekst": "Brak znanych szkodliwych interakcji z lekami syntetycznymi.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Bezpieczna dla osób przyjmujących leki na nadciśnienie.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Osoby przyjmujące leki lub będące pod opieką lekarza powinny przed użyciem poziomki skonsultować się z lekarzem.",
+            "tekst": "Brak znanych szkodliwych interakcji z lekami syntetycznymi. Bezpieczna dla osób przyjmowaćcych leki lub byc pod opieka lekarza przed uzyciem poziomki skonsultowac sie z lekarzem.",
             "zrodla": [
               5
             ],
@@ -2105,8 +2206,40 @@
             ]
           }
         ],
-        "model": "bez LLM: brak modelu",
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
         "wejscie": "9b687a4b7209533c"
+      },
+      "czesci_rosliny.owoce.ostrzezenia": {
+        "tytul": "Surowce i zbiory - Fructus Fragariae: Ostrzeżenia",
+        "typ": "tekst",
+        "oryginal": "U osób wrażliwych mogą wywoływać reakcje alergiczne (pokrzywkę).",
+        "tresc": [
+          {
+            "tekst": "U osób wrażliwych mogą wywoływać reakcje alergiczne (pokrzywkę).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Zielone ziarna na owocach zawierają substancję gorzką, która uwalnia się dopiero po kilku minutach gotowania, przez co dżem z samych poziomek może smakować gorzkawo.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s961"
+            ]
+          },
+          {
+            "tekst": "Ekstrakt aromatyczny owoców może zawierać około 80 różnych substancji chemicznych, w tym estery kwasów tłuszczowych oraz alkohole wyższe.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1611"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "354a0b97fdc5580e"
       },
       "wymagania.woda": {
         "tytul": "Natura i siedlisko - Woda",
@@ -2128,7 +2261,7 @@
             ]
           }
         ],
-        "model": "bez LLM: brak modelu",
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
         "wejscie": "c4528506682935db"
       },
       "zastosowanie.ogrodowe": {
@@ -2151,6 +2284,24 @@
             ]
           },
           {
+            "tekst": "W hodowlach poziomki opracowano odmiany o wydłużonym okresie kwitnienia, zwane często wysokogórskimi truskawkami, które dają większe i dłużej dojrzewające owoce.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2226"
+            ]
+          },
+          {
+            "tekst": "Pomimo powszechnych opinii o trudności uprawy z nasion, przy odpowiedniej pielęgnacji bardzo drobnego materiału siewnego można osiągnąć 80% wschodów w ciągu jednego do dwóch tygodni.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2221"
+            ]
+          },
+          {
             "tekst": "Wyhodowano odmiany poziomki pospolitej, które wydają owoce w kolorze białym i żółtym zamiast czerwonego.",
             "zrodla": [
               4
@@ -2161,7 +2312,7 @@
           }
         ],
         "model": "bez LLM: brak modelu",
-        "wejscie": "822a83eaf9c18df9"
+        "wejscie": "4428f319590e3ecc"
       },
       "wymagania.gleba": {
         "tytul": "Natura i siedlisko - Gleba",
@@ -2183,13 +2334,12 @@
             ]
           }
         ],
-        "model": "bez LLM: brak modelu",
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
         "wejscie": "42831eb0bb0ebcdb"
       }
     },
     "uzyte_fakty": [
       "s1574",
-      "s1575",
       "s1576",
       "s1577",
       "s1578",
@@ -2197,10 +2347,8 @@
       "s1580",
       "s1581",
       "s1582",
-      "s1583",
       "s1603",
       "s1604",
-      "s1605",
       "s1609",
       "s1610",
       "s1611",
@@ -2217,8 +2365,14 @@
       "s1834",
       "s1836",
       "s1919",
+      "s2217",
+      "s2219",
+      "s2220",
+      "s2221",
+      "s2222",
+      "s2223",
+      "s2226",
       "s946",
-      "s947",
       "s948",
       "s949",
       "s950",
@@ -2230,14 +2384,135 @@
       "s959",
       "s961",
       "s962",
-      "s964",
       "s965",
       "s966",
       "s967",
       "s968",
       "s970",
-      "s971",
-      "s972"
+      "s971"
     ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-02",
+    "jak": "reguly",
+    "wejscie": "d35f4ae0f970bae7",
+    "wstawki": [
+      {
+        "miejsce": "natura/wystepowanie",
+        "rozdzial": "Natura i siedlisko",
+        "tytul": "Występowanie i zasięg",
+        "ikona": "ra-compass",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Gatunek występuje dziko w całej Europie, Azji (z wyjątkiem wschodniej i południowej części) oraz Ameryce Północnej, a w Polsce jest pospolity na całym obszarze kraju.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s947",
+              "s1575"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          },
+          {
+            "tekst": "W górach gatunek ten występuje nawet do piętra kosówki, a w Tatrach można go spotkać na wysokości do 1710 metrów n.p.m.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1583"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          },
+          {
+            "tekst": "Roslina występuje w miejscach takich jak ścieżki, drogi, zbocza, łąki, młode lasy, rzadkie lasy, krawędzie lasów i otwarte miejsca.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1605"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          },
+          {
+            "tekst": "Poziomka pospolita uznawana jest za gatunek inwazyjny na Hawajach, Reunionie oraz w Nowej Zelandii, gdzie tworzy bardzo gęste, płożące się płaty.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s964"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          }
+        ]
+      },
+      {
+        "miejsce": "surowce/czesc:korzeń",
+        "rozdzial": "Surowce i zbiory",
+        "tytul": "Korzeń",
+        "ikona": "ra-potion",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Jako zioło lecznicze wykorzystuje się czasami także korzenie, pędy oraz kwiaty poziomki do parzenia naparów.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s972"
+            ],
+            "sekcja": "czesci_rosliny",
+            "czesc": "korzeń"
+          }
+        ]
+      },
+      {
+        "miejsce": "surowce/czesc:nasiona",
+        "rozdzial": "Surowce i zbiory",
+        "tytul": "Nasiona",
+        "ikona": "ra-potion",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Oprócz rozmnażania się przez rozłogi, poziomka posiada liczne nasiona w warstwie gleby, które kiełkują po zaburzeniu podłoża.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2225"
+            ],
+            "sekcja": "czesci_rosliny",
+            "czesc": "nasiona"
+          }
+        ]
+      },
+      {
+        "miejsce": "surowce/inne",
+        "rozdzial": "Surowce i zbiory",
+        "tytul": "Surowce całej rośliny",
+        "ikona": "ra-potion",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Wytwarza sympodialne, długie i cienkie rozłogi, które zwykle nie występują u odmian uprawnych.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2218"
+            ],
+            "sekcja": "czesci_rosliny",
+            "czesc": null
+          }
+        ]
+      }
+    ],
+    "duplikaty": []
   }
 }

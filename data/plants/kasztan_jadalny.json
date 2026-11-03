@@ -12,9 +12,9 @@
   "_siedziba_nowa": true,
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-10-15",
-    "uporzadkowano": "2026-10-15",
-    "uklad": "deterministyczny: punkt [27, 28] odbiega od oryginalow",
+    "zaktualizowano": "2026-11-02",
+    "uporzadkowano": "2026-11-02",
+    "uklad": "deterministyczny: punkt [27, 28, 44] odbiega od oryginalow",
     "zrodla": [
       {
         "nazwa": "Wikipedia (pl): Kasztan jadalny",
@@ -66,11 +66,18 @@
         "nr": 7
       },
       {
+        "nazwa": "stronazdrowia.pl",
+        "url": "https://stronazdrowia.pl/jak-wybrac-masc-na-zylaki-polecane-skladniki-aktywne-i-produkty-wzmacniajace-zyly-nog-oraz-wspomagajace-leczenie-hemoroidow/ar/c14-14626593",
+        "jezyk": "pl-PL",
+        "typ": "strona",
+        "nr": 8
+      },
+      {
         "nazwa": "www.majofesa.com",
         "url": "https://www.majofesa.com/tablones-de-madera/bois-de-chataignier/",
         "jezyk": "es",
         "typ": "strona",
-        "nr": 8
+        "nr": 9
       }
     ],
     "sekcje": [
@@ -80,6 +87,36 @@
         "podsumowanie": null,
         "podsumowanie_zrodla": [],
         "punkty": [
+          {
+            "tekst": "Kasztan jadalny należy do rodziny bukowatych (Fagaceae).",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2258"
+            ]
+          },
+          {
+            "tekst": "Pni kasztanowca pokrywa kora o siatkowatym wzorze z głębokimi bruzdami i szczelinami, biegnącymi spiralnie w obu kierunkach wzdłuż pnia.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2228"
+            ]
+          },
+          {
+            "tekst": "Drzewo może dorastać do 35 m wysokości, a pień przekracza 4 m średnicy.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2361"
+            ]
+          },
           {
             "tekst": "Drzewa owocowe tego gatunku cechują się dużą odpornością na mróz oraz długowiecznością.",
             "czesc": null,
@@ -121,6 +158,16 @@
             ]
           },
           {
+            "tekst": "Kwiaty kasztana jadalnego są osadzone w czterodzielnej okrywie, czyli mają czterodzielny kielich.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2259"
+            ]
+          },
+          {
             "tekst": "Liście osiągają długość do 25 cm, są skórzaste z ciemnozieloną górną stroną i jasniejszą spodem, a ich blaszka ma około 30 ostro piłkowanych ząbków.",
             "czesc": "liście",
             "zrodla": [
@@ -138,6 +185,16 @@
             ],
             "fakty": [
               "s411"
+            ]
+          },
+          {
+            "tekst": "Orzechy (kasztany) są spłaszczone z jednej strony i na szczycie mają mały wyrostek powstały z wyschniętych resztek szyjek słupka.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2260"
             ]
           },
           {
@@ -187,6 +244,26 @@
             "fakty": [
               "s556"
             ]
+          },
+          {
+            "tekst": "Kasztan jadalny preferuje siedliska z glebami kwaśnymi lub obojętnymi oraz dobrze przepuszczalnymi.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2230"
+            ]
+          },
+          {
+            "tekst": "Preferuje gleby o odczynie neutralnym do kwaśnego, dobrze odprowadzające wodę i jest stosunkowo odporna na suszę.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2363"
+            ]
           }
         ]
       },
@@ -205,6 +282,16 @@
             "fakty": [
               "s419"
             ]
+          },
+          {
+            "tekst": "Kasztany zawierają 41‑59 % wilgoci oraz są dobrym źródłem miedzi, fosforu, manganu i potasu.",
+            "czesc": "nasiona",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2362"
+            ]
           }
         ]
       },
@@ -214,6 +301,16 @@
         "podsumowanie": null,
         "podsumowanie_zrodla": [],
         "punkty": [
+          {
+            "tekst": "Ekstrakt z kory kasztanowca stosowany w maściach na żylaki odbytu wzmacnia ściany żył i poprawia krążenie.",
+            "czesc": "kora",
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s2422"
+            ]
+          },
           {
             "tekst": "Kasztan jadalny jest rośliną miododajną, a uzyskiwany z jego kwiatów miód charakteryzuje się specyficznym, gorkawym smakiem.",
             "czesc": "kwiaty",
@@ -242,6 +339,16 @@
             ],
             "fakty": [
               "s574"
+            ]
+          },
+          {
+            "tekst": "Ekstrakt z nasion kasztanowca zawiera escynę, która hamuje enzym rozkładający kwas hialuronowy, przywracając elastyczność żył i wykazując działanie przeciwbólowe.",
+            "czesc": "nasiona",
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s2421"
             ]
           }
         ]
@@ -427,6 +534,16 @@
             "fakty": [
               "s422"
             ]
+          },
+          {
+            "tekst": "Drzewa zaczynają owocować dopiero po około 25 latach; żyją naturalnie 500‑600 lat, a w uprawie mogą przekraczać tysiąc lat.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2364"
+            ]
           }
         ]
       },
@@ -454,6 +571,16 @@
         "podsumowanie": null,
         "podsumowanie_zrodla": [],
         "punkty": [
+          {
+            "tekst": "Roślina wykazuje wyraźną odporność na suszę.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2231"
+            ]
+          },
           {
             "tekst": "Kobiety w ciąży oraz kobiety karmiące piersią powinny unikać spożywania dużych dawek kory ze względu na wysoką zawartość tanin.",
             "czesc": "kora",
@@ -524,7 +651,7 @@
             "tekst": "Drewno kasztana jadalnego tradycyjnie wykorzystywano w rzemiośle do budowy okien, drzwi, podłóg oraz do produkcji beczek, trumien, słupów, lasek, rączek parasoli i przyborów kuchennych.",
             "czesc": null,
             "zrodla": [
-              8
+              9
             ],
             "fakty": [
               "s1780"
@@ -556,11 +683,13 @@
     "czesci": {
       "kora": [
         "s409",
+        "s2422",
         "s439"
       ],
       "kwiaty": [
         "s554",
         "s555",
+        "s2259",
         "s435"
       ],
       "liście": [
@@ -571,17 +700,20 @@
       ],
       "owoce": [
         "s411",
+        "s2260",
         "s412",
         "s437"
       ],
       "pąki": [
         "s553"
       ],
+      "nasiona": [
+        "s2362",
+        "s2421",
+        "s438"
+      ],
       "korzeń": [
         "s575"
-      ],
-      "nasiona": [
-        "s438"
       ]
     },
     "fakty": [
@@ -1051,18 +1183,189 @@
           "url": "https://www.majofesa.com/tablones-de-madera/bois-de-chataignier/"
         },
         "cytat": "Traditionnellement, le bois de châtaignier a été utilisé pour la construction, la menuiserie et la fabrication de meubles, de tonneaux, de cercueils, de poteaux, de béquilles, de poignées pour parapluies ou des ustensiles de cuisine et des "
+      },
+      {
+        "id": "s2228",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Pni kasztanowca pokrywa kora o siatkowatym wzorze z głębokimi bruzdami i szczelinami, biegnącymi spiralnie w obu kierunkach wzdłuż pnia.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sweet chestnut",
+          "url": "https://en.wikipedia.org/wiki/Sweet_chestnut"
+        },
+        "cytat": "The bark often has a net-shaped (retiform) pattern with deep furrows or fissures running spirally in both directions up the trunk."
+      },
+      {
+        "id": "s2230",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Kasztan jadalny preferuje siedliska z glebami kwaśnymi lub obojętnymi oraz dobrze przepuszczalnymi.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sweet chestnut",
+          "url": "https://en.wikipedia.org/wiki/Sweet_chestnut"
+        },
+        "cytat": "The tree favours neutral to acidic and well draining soils."
+      },
+      {
+        "id": "s2231",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Roślina wykazuje wyraźną odporność na suszę.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sweet chestnut",
+          "url": "https://en.wikipedia.org/wiki/Sweet_chestnut"
+        },
+        "cytat": "It is reasonably drought resistant."
+      },
+      {
+        "id": "s2258",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Kasztan jadalny należy do rodziny bukowatych (Fagaceae).",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Kasztan jadalny",
+          "url": "https://pl.wikipedia.org/wiki/Kasztan_jadalny"
+        },
+        "cytat": "Kasztan jadalny (Castanea sativa Mill.) – gatunek rośliny z rodziny bukowatych (Fagaceae)."
+      },
+      {
+        "id": "s2259",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Kwiaty kasztana jadalnego są osadzone w czterodzielnej okrywie, czyli mają czterodzielny kielich.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Kasztan jadalny",
+          "url": "https://pl.wikipedia.org/wiki/Kasztan_jadalny"
+        },
+        "cytat": "Kwiaty wsparte są czterodzielną okrywą."
+      },
+      {
+        "id": "s2260",
+        "sekcja": "opis",
+        "czesc": "owoce",
+        "tekst": "Orzechy (kasztany) są spłaszczone z jednej strony i na szczycie mają mały wyrostek powstały z wyschniętych resztek szyjek słupka.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Kasztan jadalny",
+          "url": "https://pl.wikipedia.org/wiki/Kasztan_jadalny"
+        },
+        "cytat": "Są one ciemnobrązowe, spłaszczone z jednej strony i zwieńczone wyrostkiem na szczycie z zeschniętymi resztkami szyjek słupka."
+      },
+      {
+        "id": "s2361",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Drzewo może dorastać do 35 m wysokości, a pień przekracza 4 m średnicy.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sweet chestnut",
+          "url": "https://en.wikipedia.org/wiki/Sweet_chestnut"
+        },
+        "cytat": "Growing up to 35 m (115 ft) tall and with trunks over 4 m (13 ft) wide"
+      },
+      {
+        "id": "s2362",
+        "sekcja": "sklad",
+        "czesc": "nasiona",
+        "tekst": "Kasztany zawierają 41‑59 % wilgoci oraz są dobrym źródłem miedzi, fosforu, manganu i potasu.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sweet chestnut",
+          "url": "https://en.wikipedia.org/wiki/Sweet_chestnut"
+        },
+        "cytat": "The chestnut provides a good source of copper, phosphorus, manganese and potassium ... high moisture content, which ranges from 41% to 59%."
+      },
+      {
+        "id": "s2363",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Preferuje gleby o odczynie neutralnym do kwaśnego, dobrze odprowadzające wodę i jest stosunkowo odporna na suszę.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sweet chestnut",
+          "url": "https://en.wikipedia.org/wiki/Sweet_chestnut"
+        },
+        "cytat": "The tree favours neutral to acidic and well draining soils. It is reasonably drought resistant."
+      },
+      {
+        "id": "s2364",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Drzewa zaczynają owocować dopiero po około 25 latach; żyją naturalnie 500‑600 lat, a w uprawie mogą przekraczać tysiąc lat.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Sweet chestnut",
+          "url": "https://en.wikipedia.org/wiki/Sweet_chestnut"
+        },
+        "cytat": "Trees must be around 25 years in age before they start bearing fruit. Sweet chestnut trees live to an age of 500 to 600 years. In cultivation they may even grow as old as 1,000 years or more."
+      },
+      {
+        "id": "s2421",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "nasiona",
+        "tekst": "Ekstrakt z nasion kasztanowca zawiera escynę, która hamuje enzym rozkładający kwas hialuronowy, przywracając elastyczność żył i wykazując działanie przeciwbólowe.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/jak-wybrac-masc-na-zylaki-polecane-skladniki-aktywne-i-produkty-wzmacniajace-zyly-nog-oraz-wspomagajace-leczenie-hemoroidow/ar/c14-14626593"
+        },
+        "cytat": "Escyna – tak jak zawierający ją wyciąg z nasion kasztanowca hamuje aktywność enzymu rozkładającego kwas hialuronowy, który jest spoiwem śródbłonka naczyń krwionośnych. Pomaga przywracać elastyczność żył, usprawnia rozpuszczanie zakrzepów or"
+      },
+      {
+        "id": "s2422",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "kora",
+        "tekst": "Ekstrakt z kory kasztanowca stosowany w maściach na żylaki odbytu wzmacnia ściany żył i poprawia krążenie.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/jak-wybrac-masc-na-zylaki-polecane-skladniki-aktywne-i-produkty-wzmacniajace-zyly-nog-oraz-wspomagajace-leczenie-hemoroidow/ar/c14-14626593"
+        },
+        "cytat": "wyciąg z kory kasztanowca, który wzmacnia ściany żył i poprawia krążenie"
       }
     ]
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-15",
+    "zaktualizowano": "2026-11-02",
     "pola": {
-      "wymagania.mrozoodpornosc": {
-        "tytul": "Natura i siedlisko - Mrozoodporność",
-        "typ": "tekst",
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
         "oryginal": null,
         "tresc": [
+          {
+            "tekst": "Kasztan jadalny należy do rodziny bukowatych (Fagaceae).",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2258"
+            ]
+          },
+          {
+            "tekst": "Pni kasztanowca pokrywa kora o siatkowatym wzorze z głębokimi bruzdami i szczelinami, biegnącymi spiralnie w obu kierunkach wzdłuż pnia.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2228"
+            ]
+          },
+          {
+            "tekst": "Drzewo może dorastać do 35 m wysokości, a pień przekracza 4 m średnicy.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2361"
+            ]
+          },
           {
             "tekst": "Drzewa owocowe tego gatunku cechują się dużą odpornością na mróz oraz długowiecznością.",
             "zrodla": [
@@ -1071,16 +1374,7 @@
             "fakty": [
               "s565"
             ]
-          }
-        ],
-        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
-        "wejscie": "0d4d5041558eff8c"
-      },
-      "czesci_rosliny.kora.opis_botaniczny": {
-        "tytul": "Surowce i zbiory - Kora (nowa część z sieci): Opis surowca",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
+          },
           {
             "tekst": "Pień drzewa pokrywa głęboko spękana kora, a młode pędy są początkowo delikatnie omszone, by z czasem stać się nagimi.",
             "zrodla": [
@@ -1089,16 +1383,7 @@
             "fakty": [
               "s409"
             ]
-          }
-        ],
-        "model": "bez LLM: brak modelu",
-        "wejscie": "8fa128e4897c641a"
-      },
-      "identyfikacja.cechy_kluczowe": {
-        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
-        "typ": "lista",
-        "oryginal": null,
-        "tresc": [
+          },
           {
             "tekst": "Żółte kwiaty męskie posiadają od dziesięciu do dwudziestu pręcików i tworzą stojące, kłosopodobne kwiatostany osiągające do dwudziestu centymetrów długości.",
             "zrodla": [
@@ -1115,6 +1400,15 @@
             ],
             "fakty": [
               "s555"
+            ]
+          },
+          {
+            "tekst": "Kwiaty kasztana jadalnego są osadzone w czterodzielnej okrywie, czyli mają czterodzielny kielich.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2259"
             ]
           },
           {
@@ -1136,6 +1430,15 @@
             ]
           },
           {
+            "tekst": "Orzechy (kasztany) są spłaszczone z jednej strony i na szczycie mają mały wyrostek powstały z wyschniętych resztek szyjek słupka.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2260"
+            ]
+          },
+          {
             "tekst": "Młode pąki są omszone i pokryte od dwóch do czterech skrętoległych łusek, a roślina nie wytwarza pąków szczytowych.",
             "zrodla": [
               1
@@ -1146,66 +1449,70 @@
           }
         ],
         "model": "bez LLM: brak modelu",
-        "wejscie": "fbc164af8a7ad12f"
+        "wejscie": "4ba787ad85f7dc20"
       },
-      "opis": {
-        "tytul": "Opis - Opis ogólny",
+      "wymagania.ph_gleby": {
+        "tytul": "Natura i siedlisko - pH gleby",
         "typ": "tekst",
-        "oryginal": "Pień drzewa pokrywa głęboko spękana kora, a młode pędy są początkowo delikatnie omszone, by z czasem stać się nagimi.",
+        "oryginal": null,
         "tresc": [
           {
-            "tekst": "Pień drzewa pokrywa głęboko spękana kora, a młode pędy są początkowo delikatnie omszone, by z czasem stać się nagimi.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Rodzinnym obszarem gatunku są południowe Bałkany, Azja Mniejsza, Kaukaz oraz północny Iran, a szeroko rozpowszechniony jest w basenie Morza Śródziemnego.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s407"
-            ]
-          },
-          {
-            "tekst": "W Polsce roślinność z tego gatunku występuje głównie na Pomorzu Zachodnim i Dolnym Śląsku, gdzie stanowi okrznek (zadomowiony antropofit) poza oficjalnymi uprawami.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s408"
-            ]
-          },
-          {
-            "tekst": "Kasztan jadalny występuje naturalnie w południowej Europie i Anatolii, a także jest szeroko uprawiany w zachodniej i środkowej Europie.",
+            "tekst": "Kasztan jadalny preferuje siedliska z glebami kwaśnymi lub obojętnymi oraz dobrze przepuszczalnymi.",
             "zrodla": [
               3
             ],
             "fakty": [
-              "s556"
+              "s2230"
+            ]
+          },
+          {
+            "tekst": "Preferuje gleby o odczynie neutralnym do kwaśnego, dobrze odprowadzające wodę i jest stosunkowo odporna na suszę.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2363"
             ]
           }
         ],
         "model": "bez LLM: brak modelu",
-        "wejscie": "21ecafe0f60236b7"
+        "wejscie": "787a05cb3230fcb1"
       },
-      "czesci_rosliny.kora.skladniki_aktywne": {
-        "tytul": "Surowce i zbiory - Kora (nowa część z sieci): Substancje czynne",
+      "czesci_rosliny.nasiona.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Substancje czynne",
         "typ": "lista",
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Kora, drewno i łuski nasion zawierają duże ilości tanin (kora 6,8 %, drewno 13,4 %, łuski 10‑13 %); liście także są bogate w taniny.",
+            "tekst": "Kasztany zawierają 41‑59 % wilgoci oraz są dobrym źródłem miedzi, fosforu, manganu i potasu.",
             "zrodla": [
               3
             ],
             "fakty": [
-              "s419"
+              "s2362"
             ]
           }
         ],
         "model": "bez LLM: brak modelu",
-        "wejscie": "702b228a441aa5d7"
+        "wejscie": "77851d5de8d78376"
+      },
+      "czesci_rosliny.kora.wlasciwości": {
+        "tytul": "Surowce i zbiory - Kora (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Ekstrakt z kory kasztanowca stosowany w maściach na żylaki odbytu wzmacnia ściany żył i poprawia krążenie.",
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s2422"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "a1db45379160513c"
       },
       "czesci_rosliny.kwiaty.wlasciwości": {
         "tytul": "Surowce i zbiory - Kwiaty (nowa część z sieci): Działanie",
@@ -1244,8 +1551,26 @@
         "model": "bez LLM: brak modelu",
         "wejscie": "93b599074d49f262"
       },
-      "czesci_rosliny.korzeń.wlasciwości": {
-        "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Działanie",
+      "czesci_rosliny.nasiona.wlasciwości": {
+        "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Ekstrakt z nasion kasztanowca zawiera escynę, która hamuje enzym rozkładający kwas hialuronowy, przywracając elastyczność żył i wykazując działanie przeciwbólowe.",
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s2421"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "18f0c775bed8f29b"
+      },
+      "profil_energetyczny.opis": {
+        "tytul": "Natura i siedlisko - Opis energetyczny",
         "typ": "tekst",
         "oryginal": null,
         "tresc": [
@@ -1403,6 +1728,24 @@
             ]
           },
           {
+            "tekst": "Kasztan jadalny jest jednym ze składników 38‑elementowego zestawu remediów kwiatowych Bacha.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s422"
+            ]
+          },
+          {
+            "tekst": "Drzewa zaczynają owocować dopiero po około 25 latach; żyją naturalnie 500‑600 lat, a w uprawie mogą przekraczać tysiąc lat.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2364"
+            ]
+          },
+          {
             "tekst": "W tradycji symboliki roślin kasztan jadalny jest uznawany za znak mądrej przezorności.",
             "zrodla": [
               1
@@ -1432,7 +1775,7 @@
           {
             "tekst": "Drewno kasztana jadalnego tradycyjnie wykorzystywano w rzemiośle do budowy okien, drzwi, podłóg oraz do produkcji beczek, trumien, słupów, lasek, rączek parasoli i przyborów kuchennych.",
             "zrodla": [
-              8
+              9
             ],
             "fakty": [
               "s1780"
@@ -1457,26 +1800,26 @@
             ]
           }
         ],
-        "model": "bez LLM: brak modelu",
-        "wejscie": "d580861936a899b2"
+        "model": "bez LLM: 20 punktow",
+        "wejscie": "96e6f45b465068b1"
       },
-      "zastosowanie.kulinarne": {
-        "tytul": "Praktyczne zastosowanie - Kuchnia",
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
         "typ": "tekst",
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Kasztan jadalny jest jednym ze składników 38‑elementowego zestawu remediów kwiatowych Bacha.",
+            "tekst": "Roślina wykazuje wyraźną odporność na suszę.",
             "zrodla": [
               3
             ],
             "fakty": [
-              "s422"
+              "s2231"
             ]
           }
         ],
         "model": "bez LLM: brak modelu",
-        "wejscie": "ba2f24b1f4e6663f"
+        "wejscie": "2f4406b7faee8741"
       },
       "czesci_rosliny.kora.ostrzezenia": {
         "tytul": "Surowce i zbiory - Kora (nowa część z sieci): Ostrzeżenia",
@@ -1526,8 +1869,18 @@
     },
     "uzyte_fakty": [
       "s1780",
-      "s407",
-      "s408",
+      "s2228",
+      "s2230",
+      "s2231",
+      "s2258",
+      "s2259",
+      "s2260",
+      "s2361",
+      "s2362",
+      "s2363",
+      "s2364",
+      "s2421",
+      "s2422",
       "s409",
       "s410",
       "s411",
@@ -1536,7 +1889,6 @@
       "s414",
       "s416",
       "s417",
-      "s419",
       "s421",
       "s422",
       "s424",
@@ -1554,7 +1906,6 @@
       "s553",
       "s554",
       "s555",
-      "s556",
       "s557",
       "s559",
       "s560",
@@ -1574,7 +1925,7 @@
     "Kora": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Edelkastanie.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-15",
+    "zaktualizowano": "2026-11-02",
     "w_url": true,
     "zdjecia": [
       {
@@ -1623,5 +1974,76 @@
         "zrodlo": "Wikimedia Commons"
       }
     ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-02",
+    "jak": "reguly",
+    "wejscie": "a9ecdd28bb22fab1",
+    "wstawki": [
+      {
+        "miejsce": "natura/wystepowanie",
+        "rozdzial": "Natura i siedlisko",
+        "tytul": "Występowanie i zasięg",
+        "ikona": "ra-compass",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Rodzinnym obszarem gatunku są południowe Bałkany, Azja Mniejsza, Kaukaz oraz północny Iran, a szeroko rozpowszechniony jest w basenie Morza Śródziemnego.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s407"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          },
+          {
+            "tekst": "W Polsce roślinność z tego gatunku występuje głównie na Pomorzu Zachodnim i Dolnym Śląsku, gdzie stanowi okrznek (zadomowiony antropofit) poza oficjalnymi uprawami.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s408"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          },
+          {
+            "tekst": "Kasztan jadalny występuje naturalnie w południowej Europie i Anatolii, a także jest szeroko uprawiany w zachodniej i środkowej Europie.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s556"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          }
+        ]
+      },
+      {
+        "miejsce": "surowce/sklad",
+        "rozdzial": "Surowce i zbiory",
+        "tytul": "Skład i substancje czynne",
+        "ikona": "ra-fizzing-flask",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Kora, drewno i łuski nasion zawierają duże ilości tanin (kora 6,8 %, drewno 13,4 %, łuski 10‑13 %); liście także są bogate w taniny.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s419"
+            ],
+            "sekcja": "sklad",
+            "czesc": null
+          }
+        ]
+      }
+    ],
+    "duplikaty": []
   }
 }

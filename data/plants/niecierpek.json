@@ -120,7 +120,7 @@
     "Kwiaty": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/20200820_xl_0169-Wanderung-zum-Naturschutzgebiet-Heilige-Hallen-Feldberger-Seenlandschaft.jpg/960px-20200820_xl_0169-Wanderung-zum-Naturschutzgebiet-Heilige-Hallen-Feldberger-Seenlandschaft.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-11-03",
     "w_url": true,
     "zdjecia": [
       {
@@ -141,6 +141,120 @@
         "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
         "zrodlo": "Wikimedia Commons"
       }
+    ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-11-03",
+    "uporzadkowano": "2026-11-03",
+    "uklad": "deterministyczny",
+    "zrodla": [
+      {
+        "nazwa": "stronazdrowia.pl",
+        "url": "https://stronazdrowia.pl/nazbieraj-i-zaparz-wystarczy-pic-codziennie-za-darmo-zadba-o-urode-wygladzi-zmarszczki-i-pomoze-zrobic-kupe/ar/c14p2-26384217",
+        "jezyk": "pl-PL",
+        "typ": "strona",
+        "nr": 1
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W medycynie ludowej i ziołolecznictwie tradycyjnie stosowano napar z pąków (płatki) niecierpka, parząc je około 10 minut we wrzątku.",
+            "czesc": "pąki",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2555"
+            ]
+          },
+          {
+            "tekst": "Płatki niecierpka są łączone z innymi roślinami, takimi jak dzika róża, wrzos, dziewanna, bławatek, jaśmin, wierzba czy niecierpek, w celu przygotowania smakowitych naparów ziołowych.",
+            "czesc": "pąki",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2556"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "pąki": [
+        "s2555",
+        "s2556"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s2555",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "pąki",
+        "tekst": "W medycynie ludowej i ziołolecznictwie tradycyjnie stosowano napar z pąków (płatki) niecierpka, parząc je około 10 minut we wrzątku.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/nazbieraj-i-zaparz-wystarczy-pic-codziennie-za-darmo-zadba-o-urode-wygladzi-zmarszczki-i-pomoze-zrobic-kupe/ar/c14p2-26384217"
+        },
+        "cytat": "Suszone płatki wsyp do szklanki. Zalej wrzątkiem i parz pod przykryciem (lub bez) ok. 10 minut."
+      },
+      {
+        "id": "s2556",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "pąki",
+        "tekst": "Płatki niecierpka są łączone z innymi roślinami, takimi jak dzika róża, wrzos, dziewanna, bławatek, jaśmin, wierzba czy niecierpek, w celu przygotowania smakowitych naparów ziołowych.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/nazbieraj-i-zaparz-wystarczy-pic-codziennie-za-darmo-zadba-o-urode-wygladzi-zmarszczki-i-pomoze-zrobic-kupe/ar/c14p2-26384217"
+        },
+        "cytat": "Dr Henryk Różański poleca również przygotowanie naparu z mieszanki płatków dzikiej róży z ziołami takimi jak kwiat wrzosu, kwiat dziewanny, bławatka lub jaśminu, ziele wierzbówki lub wierzbownicy czy niecierpka."
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-03",
+    "pola": {
+      "czesci_rosliny.pąki.wlasciwości": {
+        "tytul": "Surowce i zbiory - Pąki (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "W medycynie ludowej i ziołolecznictwie tradycyjnie stosowano napar z pąków niecierpka, parząc je około 10 minut we wrzątku.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2555"
+            ]
+          },
+          {
+            "tekst": "Płatki tej rośliny są łączone z innymi gatunkami, takimi jak dzika róża, wrzos, dziewanna, bławatek, jaśmin czy wierzba, w celu przygotowania naparów ziołowych.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2556"
+            ]
+          }
+        ],
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "79743a6042cb1484"
+      }
+    },
+    "uzyte_fakty": [
+      "s2555",
+      "s2556"
     ]
   }
 }

@@ -115,7 +115,7 @@
     "Rycina": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Illustration_Galium_aparine0.jpg/960px-Illustration_Galium_aparine0.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-11-02",
     "w_url": true,
     "zdjecia": [
       {
@@ -163,6 +163,271 @@
         "licencja_url": null,
         "zrodlo": "Wikimedia Commons"
       }
+    ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-11-02",
+    "uporzadkowano": "2026-11-02",
+    "uklad": "llm:ollama/qwen3:8b",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (en): Galium aparine",
+        "url": "https://en.wikipedia.org/wiki/Galium_aparine",
+        "jezyk": "en",
+        "typ": "wikipedia",
+        "nr": 1
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Tradycyjnie przygotowano okłady i płukanki z całej przytulii, które stosowano na różne problemy skórne, drobne rany i oparzenia; roztłuczone rośliny wykorzystywano także do łagodzenia ukąszeń i użądleń.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2517"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "historia",
+        "tytul": "Historia i nazwa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Nazwa „Galium” pochodzi od greckiego słowa oznaczającego mleko, ponieważ kwiaty niektórych gatunków tego rodzaju używano do zsiadania mleka; epitet „aparine” wywodzi się od greckiego apairo – „przyczepiać, chwytać”.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2514"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Kontakt z przytulią może wywołać podrażnienie skóry, a drobne haczyki mogą drapać wrażliwe miejsca, przypominając wysypkę.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2515"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "ciekawostki",
+        "tytul": "Ciekawostki",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Liście i łodygi przytulii można spożywać jako warzywo liściowe, pod warunkiem że zostaną zebrane przed zasklepieniem owoców.",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2516"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "liście": [
+        "s2516"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s2514",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Nazwa „Galium” pochodzi od greckiego słowa oznaczającego mleko, ponieważ kwiaty niektórych gatunków tego rodzaju używano do zsiadania mleka; epitet „aparine” wywodzi się od greckiego apairo – „przyczepiać, chwytać”.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Galium aparine",
+          "url": "https://en.wikipedia.org/wiki/Galium_aparine"
+        },
+        "cytat": "Galium is Dioscorides's name for the plant. It is derived from the Greek word for milk, because the flowers of Galium verum were used to curdle milk in cheese making. Aparine ... means 'clinging' or 'seizing', and is derived from the Greek "
+      },
+      {
+        "id": "s2515",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Kontakt z przytulią może wywołać podrażnienie skóry, a drobne haczyki mogą drapać wrażliwe miejsca, przypominając wysypkę.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Galium aparine",
+          "url": "https://en.wikipedia.org/wiki/Galium_aparine"
+        },
+        "cytat": "For some people, contact with the plant can cause skin irritation. Although the plant's hairs are small, they can scratch more sensitive parts of the skin. Numerous such scratches can resemble a rash."
+      },
+      {
+        "id": "s2516",
+        "sekcja": "ciekawostki",
+        "czesc": "liście",
+        "tekst": "Liście i łodygi przytulii można spożywać jako warzywo liściowe, pod warunkiem że zostaną zebrane przed zasklepieniem owoców.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Galium aparine",
+          "url": "https://en.wikipedia.org/wiki/Galium_aparine"
+        },
+        "cytat": "Galium aparine is edible. The leaves and stems of the plant can be cooked as a leaf vegetable if gathered before the fruits harden."
+      },
+      {
+        "id": "s2517",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": null,
+        "tekst": "Tradycyjnie przygotowano okłady i płukanki z całej przytulii, które stosowano na różne problemy skórne, drobne rany i oparzenia; roztłuczone rośliny wykorzystywano także do łagodzenia ukąszeń i użądleń.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Galium aparine",
+          "url": "https://en.wikipedia.org/wiki/Galium_aparine"
+        },
+        "cytat": "Poultices and washes made from cleavers were traditionally used to treat a variety of skin ailments, light wounds, and burns. As a pulp, it has been used to relieve venomous bites and stings."
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-02",
+    "pola": {
+      "zastosowanie.medyczne": {
+        "tytul": "Praktyczne zastosowanie - Medycyna",
+        "typ": "tekst",
+        "oryginal": "Powiększone węzły chłonne, obrzęki (limfatyczne i nerkowe), zapalenie migdałków, cysty piersi, trądzik, łuszczyca, egzemy, kamica nerkowa, stany lękowe (pomocniczo).",
+        "tresc": [
+          {
+            "tekst": "Powiększone węzły chłonne, obrzęki (limfatyczne i nerkowe), zapalenie migdałków, cysty piersi, trądzik, łuszczyca, egzemy, kamica nerkowa, stany lękowe (pomocniczo).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Tradycyjnie przygotowano okłady i płukanki z całej przytulii, które stosowano na różne problemy skórne, drobne rany i oparzenia; roztłuczone rośliny wykorzystywano także do łagodzenia ukąszeń i użądleń.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2517"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "3c3a0a1284d2b632"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "Wraz z łopianem była inspiracją dla twórcy zapięcia Velcro (rzepy).",
+          "W medycynie ludowej nazywana 'gęsipępkiem', ponieważ gęsi uwielbiają ją jeść i instynktownie szukają jej dla poprawy trawienia.",
+          "W Anglii nazywana 'Cleavers' (od 'to cleave' - lgnąć/przylegać).",
+          "Historycznie używano jej do wypychania materacy – haczykowate włoski sprawiały, że ziele nie przesuwało się wewnątrz, tworząc jednolitą, sprężystą warstwę (stąd nazwa 'Bedstraw').",
+          "Przytulia zawiera enzymy zdolne do ścinania mleka, co czyni ją jednym z niewielu roślinnych źródeł podpuszczki."
+        ],
+        "tresc": [
+          {
+            "tekst": "Wraz z łopianem była inspiracją dla twórcy zapięcia Velcro (rzepy).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W medycynie ludowej nazywana 'gęsipępkiem', ponieważ gęsi uwielbiają ją jeść i instynktownie szukają jej dla poprawy trawienia.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W Anglii nazywana 'Cleavers' (od 'to cleave' - lgnąć/przylegać).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Historycznie używano jej do wypychania materacy – haczykowate włoski sprawiały, że ziele nie przesuwało się wewnątrz, tworząc jednolitą, sprężystą warstwę (stąd nazwa 'Bedstraw').",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Przytulia zawiera enzymy zdolne do ścinania mleka, co czyni ją jednym z niewielu roślinnych źródeł podpuszczki.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Nazwa „Galium” pochodzi od greckiego słowa oznaczającego mleko, ponieważ kwiaty niektórych gatunków tego rodzaju używano do zsiadania mleka; epitet „aparine” wywodzi się od greckiego apairo – „przyczepiać, chwytać”.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2514"
+            ]
+          },
+          {
+            "tekst": "Liście i łodygi przytulii można spożywać jako warzywo liściowe, pod warunkiem że zostaną zebrane przed zasklepieniem owoców.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2516"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "b1e20dd8574aa8e6"
+      },
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": "Przytulia jest bardzo bezpieczna, jednak jej silne działanie moczopędne może u niektórych osób powodować przejściową suchość w ustach. Zawsze pij dodatkową szklankę wody podczas kuracji.",
+        "tresc": [
+          {
+            "tekst": "Przytulia jest bardzo bezpieczna, jednak jej silne działanie moczopędne może u niektórych osób powodować przejściową suchość w ustach.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Zawsze pij dodatkową szklankę wody podczas kuracji.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kontakt z przytulią może wywołać podrażnienie skóry, a drobne haczyki mogą drapać wrażliwe miejsca, przypominając wysypkę.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2515"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "8c36579918f9a373"
+      }
+    },
+    "uzyte_fakty": [
+      "s2514",
+      "s2515",
+      "s2516",
+      "s2517"
     ]
   }
 }

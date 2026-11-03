@@ -171,7 +171,7 @@
     "Rycina": "https://upload.wikimedia.org/wikipedia/commons/4/45/Skrzyp_polny.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-11-03",
     "w_url": true,
     "zdjecia": [
       {
@@ -210,6 +210,246 @@
         "licencja_url": null,
         "zrodlo": "Wikimedia Commons"
       }
+    ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-11-03",
+    "uporzadkowano": "2026-11-03",
+    "uklad": "deterministyczny",
+    "zrodla": [
+      {
+        "nazwa": "stronazdrowia.pl",
+        "url": "https://stronazdrowia.pl/to-polne-ziele-wzmacnia-wlosy-odtruwa-organizm-i-poprawia-wyglad-skory-przygotujesz-z-niego-plukanki-i-herbatki-wyprobuj-skrzyp/ar/c14-16422075",
+        "jezyk": "pl-PL",
+        "typ": "strona",
+        "nr": 1
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "ciekawostki",
+        "tytul": "Ciekawostki",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Skrzyp polny (Equisetum arvense), o uroczej angielskiej nazwie „horsetail” (z ang. koński ogon), to charakterystyczna, dorastająca do 40 cm zielona roślina z ołówkowo rozgałęzionymi łodygami. Rośnie dziko w Europie, Ameryce Północnej i Środkowej. Spotkamy ją na łąkach, polach, a także w naszych ogrodach, w których jest trudnym do zwalczenia chwastem.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2575"
+            ]
+          },
+          {
+            "tekst": "Jego właściwości potwierdzają współczesne badania, które pokazują, że sprawdza się m.in. jako środek: - antyseptyczny, - moczopędny, - przeciwzapalny, - przeciwutleniający, - rozszerzający naczynia krwionośne.",
+            "czesc": "ziele",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2576"
+            ]
+          },
+          {
+            "tekst": "Zawarte w skrzypie flawonoidy i krzemionka działają przeciwzapalnie na organizm i wzmacniają naczynia krwionośne. Dzięki zawartości saponinów i kwasów organicznych skrzyp pomaga odtruwać organizm. Dostarcza także wapń, magnez i potas.",
+            "czesc": "ziele",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2577"
+            ]
+          },
+          {
+            "tekst": "Napary, odwary, płukanki i suplementy na bazie ziela skrzypu polnego mają udowodnione działanie lecznicze.",
+            "czesc": "ziele",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2578"
+            ]
+          },
+          {
+            "tekst": "Jak podkreśla uznany fitoterapeuta dr Henryk Różański, podczas zażywania preparatów zawierających skrzyp konieczne jest uzupełnianie witaminy B1, bowiem skrzyp zawiera antywitaminę B1 (antyaneurynę).",
+            "czesc": "ziele",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2579"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "kwiaty": [
+        "s2575"
+      ],
+      "ziele": [
+        "s2576",
+        "s2577",
+        "s2578",
+        "s2579"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s2575",
+        "sekcja": "ciekawostki",
+        "czesc": "kwiaty",
+        "tekst": "Skrzyp polny (Equisetum arvense), o uroczej angielskiej nazwie „horsetail” (z ang. koński ogon), to charakterystyczna, dorastająca do 40 cm zielona roślina z ołówkowo rozgałęzionymi łodygami. Rośnie dziko w Europie, Ameryce Północnej i Środkowej. Spotkamy ją na łąkach, polach, a także w naszych ogrodach, w których jest trudnym do zwalczenia chwastem.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/to-polne-ziele-wzmacnia-wlosy-odtruwa-organizm-i-poprawia-wyglad-skory-przygotujesz-z-niego-plukanki-i-herbatki-wyprobuj-skrzyp/ar/c14-16422075"
+        },
+        "cytat": "Skrzyp polny (Equisetum arvense), o uroczej angielskiej nazwie „horsetail” (z ang. koński ogon), to charakterystyczna, dorastająca do 40 cm zielona roślina z ołówkowo rozgałęzionymi łodygami. Rośnie dziko w Europie, Ameryce Północnej i Środ"
+      },
+      {
+        "id": "s2576",
+        "sekcja": "ciekawostki",
+        "czesc": "ziele",
+        "tekst": "Jego właściwości potwierdzają współczesne badania, które pokazują, że sprawdza się m.in. jako środek: - antyseptyczny, - moczopędny, - przeciwzapalny, - przeciwutleniający, - rozszerzający naczynia krwionośne.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/to-polne-ziele-wzmacnia-wlosy-odtruwa-organizm-i-poprawia-wyglad-skory-przygotujesz-z-niego-plukanki-i-herbatki-wyprobuj-skrzyp/ar/c14-16422075"
+        },
+        "cytat": "Jego właściwości potwierdzają współczesne badania, które pokazują, że sprawdza się m.in. jako środek: - antyseptyczny, - moczopędny, - przeciwzapalny, - przeciwutleniający, - rozszerzający naczynia krwionośne."
+      },
+      {
+        "id": "s2577",
+        "sekcja": "ciekawostki",
+        "czesc": "ziele",
+        "tekst": "Zawarte w skrzypie flawonoidy i krzemionka działają przeciwzapalnie na organizm i wzmacniają naczynia krwionośne. Dzięki zawartości saponinów i kwasów organicznych skrzyp pomaga odtruwać organizm. Dostarcza także wapń, magnez i potas.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/to-polne-ziele-wzmacnia-wlosy-odtruwa-organizm-i-poprawia-wyglad-skory-przygotujesz-z-niego-plukanki-i-herbatki-wyprobuj-skrzyp/ar/c14-16422075"
+        },
+        "cytat": "Zawarte w skrzypie flawonoidy i krzemionka działają przeciwzapalnie na organizm i wzmacniają naczynia krwionośne. Dzięki zawartości saponinów i kwasów organicznych skrzyp pomaga odtruwać organizm. Dostarcza także wapń, magnez i potas."
+      },
+      {
+        "id": "s2578",
+        "sekcja": "ciekawostki",
+        "czesc": "ziele",
+        "tekst": "Napary, odwary, płukanki i suplementy na bazie ziela skrzypu polnego mają udowodnione działanie lecznicze.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/to-polne-ziele-wzmacnia-wlosy-odtruwa-organizm-i-poprawia-wyglad-skory-przygotujesz-z-niego-plukanki-i-herbatki-wyprobuj-skrzyp/ar/c14-16422075"
+        },
+        "cytat": "Napary, odwary, płukanki i suplementy na bazie ziela skrzypu polnego mają udowodnione działanie lecznicze."
+      },
+      {
+        "id": "s2579",
+        "sekcja": "ciekawostki",
+        "czesc": "ziele",
+        "tekst": "Jak podkreśla uznany fitoterapeuta dr Henryk Różański, podczas zażywania preparatów zawierających skrzyp konieczne jest uzupełnianie witaminy B1, bowiem skrzyp zawiera antywitaminę B1 (antyaneurynę).",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/to-polne-ziele-wzmacnia-wlosy-odtruwa-organizm-i-poprawia-wyglad-skory-przygotujesz-z-niego-plukanki-i-herbatki-wyprobuj-skrzyp/ar/c14-16422075"
+        },
+        "cytat": "Jak podkreśla uznany fitoterapeuta dr Henryk Różański, podczas zażywania preparatów zawierających skrzyp konieczne jest uzupełnianie witaminy B1, bowiem skrzyp zawiera antywitaminę B1 (antyaneurynę)."
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-03",
+    "pola": {
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "Skrzyp jest jedną z nielicznych roślin, która potrafi akumulować w swoich tkankach złoto (choć w ilościach śladowych).",
+          "Gdyby nie paprotniki (w tym przodkowie skrzypów), nie mielibyśmy dzisiaj złóż węgla kamiennego.",
+          "Szum, jaki słychać podczas chodzenia po skrzypach, to odgłos pękających kryształków krzemionki.",
+          "W kosmetyce 'płukanka skrzypowa' to najstarszy znany sposób na nadanie włosom 'szklanego' blasku i twardości."
+        ],
+        "tresc": [
+          {
+            "tekst": "Skrzyp jest jedną z nielicznych roślin, która potrafi akumulować w swoich tkankach złoto (choć w ilościach śladowych).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Gdyby nie paprotniki (w tym przodkowie skrzypów), nie mielibyśmy dzisiaj złóż węgla kamiennego.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Szum, jaki słychać podczas chodzenia po skrzypach, to odgłos pękających kryształków krzemionki.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W kosmetyce 'płukanka skrzypowa' to najstarszy znany sposób na nadanie włosom 'szklanego' blasku i twardości.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Skrzyp polny (Equisetum arvense), o uroczej angielskiej nazwie „horsetail” (z ang. koński ogon), to charakterystyczna, dorastająca do 40 cm zielona roślina z ołówkowo rozgałęzionymi łodygami. Rośnie dziko w Europie, Ameryce Północnej i Środkowej. Spotkamy ją na łąkach, polach, a także w naszych ogrodach, w których jest trudnym do zwalczenia chwastem.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2575"
+            ]
+          },
+          {
+            "tekst": "Jego właściwości potwierdzają współczesne badania, które pokazują, że sprawdza się m.in. jako środek: - antyseptyczny, - moczopędny, - przeciwzapalny, - przeciwutleniający, - rozszerzający naczynia krwionośne.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2576"
+            ]
+          },
+          {
+            "tekst": "Zawarte w skrzypie flawonoidy i krzemionka działają przeciwzapalnie na organizm i wzmacniają naczynia krwionośne. Dzięki zawartości saponinów i kwasów organicznych skrzyp pomaga odtruwać organizm. Dostarcza także wapń, magnez i potas.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2577"
+            ]
+          },
+          {
+            "tekst": "Napary, odwary, płukanki i suplementy na bazie ziela skrzypu polnego mają udowodnione działanie lecznicze.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2578"
+            ]
+          },
+          {
+            "tekst": "Jak podkreśla uznany fitoterapeuta dr Henryk Różański, podczas zażywania preparatów zawierających skrzyp konieczne jest uzupełnianie witaminy B1, bowiem skrzyp zawiera antywitaminę B1 (antyaneurynę).",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2579"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "cb871b527d802cf9"
+      }
+    },
+    "uzyte_fakty": [
+      "s2575",
+      "s2576",
+      "s2577",
+      "s2578",
+      "s2579"
     ]
   }
 }

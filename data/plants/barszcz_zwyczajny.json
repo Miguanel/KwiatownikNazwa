@@ -12,9 +12,9 @@
   "_siedziba_nowa": true,
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-10-01",
-    "uporzadkowano": "2026-10-01",
-    "uklad": "deterministyczny: ID spoza listy: [1, 2, 19, 20, 29, 31, 32, 35, 50, 51, 52, 59]",
+    "zaktualizowano": "2026-11-02",
+    "uporzadkowano": "2026-11-02",
+    "uklad": "deterministyczny: pominiete informacje: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",
     "zrodla": [
       {
         "nazwa": "Wikipedia (pl): Barszcz zwyczajny",
@@ -66,18 +66,25 @@
         "nr": 7
       },
       {
+        "nazwa": "stronazdrowia.pl",
+        "url": "https://stronazdrowia.pl/ta-roslina-pomoze-przy-dnie-moczanowej-i-niestrawnosci-to-darmowy-i-naturalny-sposob-na-bol-i-obrzek-stawow-wyprobuj-napar-z/ar/c14-16296157",
+        "jezyk": "pl-PL",
+        "typ": "strona",
+        "nr": 8
+      },
+      {
         "nazwa": "www.agroxxi.ru",
         "url": "https://www.agroxxi.ru/mirovye-agronovosti/odomashnit-obyknovennyi-borschevik-dlja-hleba-napitkov-i-desertov-predlozhili-italjanskie-uchenye.html",
         "jezyk": "ru",
         "typ": "strona",
-        "nr": 8
+        "nr": 9
       },
       {
         "nazwa": "www.pflanzenfreunde.com",
         "url": "https://www.pflanzenfreunde.com/heilpflanzen/wiesenbaerenklau.htm",
         "jezyk": "de",
         "typ": "strona",
-        "nr": 9
+        "nr": 10
       }
     ],
     "sekcje": [
@@ -125,6 +132,16 @@
             ],
             "fakty": [
               "s392"
+            ]
+          },
+          {
+            "tekst": "Podagrycznik pospolity to wieloletnia roślina z rodziny selerowatych, dorastająca 60‑90 cm wysokości i kwitnąca od początku maja do końca września.",
+            "czesc": null,
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s2267"
             ]
           },
           {
@@ -188,10 +205,20 @@
             ]
           },
           {
+            "tekst": "Liście barszczu zwyczajnego są złożone, składają się z 5–7 drobnych listków o ząbkowanych brzegach i mogą osiągać długość do 50 cm, pokryte są miękkim puchem.",
+            "czesc": "liście",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2263"
+            ]
+          },
+          {
             "tekst": "Liście rośliny są dużymi, nieco nierówno złożonymi, a ich kształt przypomina stopy zwierząt, co wpłynęło na nazwę rośliny.",
             "czesc": "liście",
             "zrodla": [
-              9
+              10
             ],
             "fakty": [
               "s111"
@@ -205,6 +232,16 @@
             ],
             "fakty": [
               "s391"
+            ]
+          },
+          {
+            "tekst": "Owoce barszczu są okrągłe, płaskie z tyłu, nieposiadające włosków i mają długość około 12 mm.",
+            "czesc": "owoce",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2264"
             ]
           },
           {
@@ -274,6 +311,26 @@
             "fakty": [
               "s393"
             ]
+          },
+          {
+            "tekst": "Roślina najczęściej rośnie w zacienionych i wilgotnych lasach, w dolnych partiach gór, w zaroślach, rowach oraz na wysypiskach śmieci.",
+            "czesc": null,
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s2268"
+            ]
+          },
+          {
+            "tekst": "W Wielkiej Brytanii nasiona barszczu zwykle rozprzestrzeniają się od końca września do początku października.",
+            "czesc": "nasiona",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2266"
+            ]
           }
         ]
       },
@@ -283,6 +340,16 @@
         "podsumowanie": null,
         "podsumowanie_zrodla": [],
         "punkty": [
+          {
+            "tekst": "Surowcami zielarskimi są liście, łodygi, kwiaty i korzeń; liście i łodygi zbiera się przez cały sezon, kwiaty od czerwca do sierpnia, a korzenie jedynie jesienią.",
+            "czesc": null,
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s2270"
+            ]
+          },
           {
             "tekst": "Korzenie rosliny wykopuje się wczesną wiosną lub późną jesienią, dokładnie myje, kroi na 10-centymetrowe kawałki i suszy w cieniu lub w przewiewnym pomieszczeniu przez około miesiąc.",
             "czesc": "korzeń",
@@ -311,6 +378,16 @@
         "podsumowanie": null,
         "podsumowanie_zrodla": [],
         "punkty": [
+          {
+            "tekst": "W roślinie występuje furanokumaryna o nazwie 呋喃香豆素, która może wywoływać reakcję fototoksyczną przy ekspozycji na UV.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2262"
+            ]
+          },
           {
             "tekst": "W korzeniach rośliny znajdują się takie związki jak pimpinellina, izopimpinellina, sfondyna i bergapten, natomiast w owocach występują dodatkowo ksantotoksyna i imperatoryna.",
             "czesc": "korzeń",
@@ -370,6 +447,16 @@
             ]
           },
           {
+            "tekst": "W kuchni ziołowej niedojrzałe oraz dojrzałe nasiona stosuje się w małych ilościach jako przyprawę, nadającą dań słodkim lub zupom wyrazisty, aromatyczny smak.",
+            "czesc": "korzeń",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2257"
+            ]
+          },
+          {
             "tekst": "Tradycyjnie odwaru z korzeni barszczu używano do płukania jamy ustnej przy stanach zapalnych dziąseł i błony śluzowej, a także przy bólach zębów stosowano nalewkę alkoholową.",
             "czesc": "korzeń",
             "zrodla": [
@@ -383,7 +470,7 @@
             "tekst": "Korzeń barszczu zwyczajnego stosowano jako środek przeciwko impotencji.",
             "czesc": "korzeń",
             "zrodla": [
-              8
+              9
             ],
             "fakty": [
               "s118"
@@ -423,7 +510,7 @@
             "tekst": "Młode liście barszczu zwyczajnego były używane jako składnik sałatek i zup.",
             "czesc": "liście",
             "zrodla": [
-              8
+              9
             ],
             "fakty": [
               "s119"
@@ -433,10 +520,20 @@
             "tekst": "Liście barszczu zwyczajnego były używane w leczeniu problemów ginekologicznych.",
             "czesc": "liście",
             "zrodla": [
-              8
+              9
             ],
             "fakty": [
               "s125"
+            ]
+          },
+          {
+            "tekst": "Suszone nasiona barszczu zwyczajnego używa się jako przyprawę o smaku przypominającym kardamon.",
+            "czesc": "nasiona",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2261"
             ]
           },
           {
@@ -457,6 +554,16 @@
         "podsumowanie": null,
         "podsumowanie_zrodla": [],
         "punkty": [
+          {
+            "tekst": "Niedojrzałe nasiona barszczu można macerować w alkoholu obojętnym, co nadaje należącemu lekkiemu żelowi intensywnie zieloną barwę, wizualnie przypominającą absynt.",
+            "czesc": "nasiona",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2256"
+            ]
+          },
           {
             "tekst": "Niedojrzałe nasiona można macerować w alkoholu jako dodatek do likierów, co nadaje płynowi intensywnie zieloną barwę przypominającą absynt.",
             "czesc": "owoce",
@@ -479,7 +586,7 @@
             "tekst": "Suszony liść barszczu zwyczajnego można używać do przyprawy do herbaty.",
             "czesc": "liście",
             "zrodla": [
-              8
+              9
             ],
             "fakty": [
               "s121"
@@ -534,6 +641,16 @@
             ]
           },
           {
+            "tekst": "Istnieje wysoka prawdopodobieństwo, że słowo 'barszcz' (borschtsch) wywodzi się ze słowiańskiej nazwy oznaczającej tę roślinę, która stanowiła jej podstawowy składnik w starożytności.",
+            "czesc": "liście",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2255"
+            ]
+          },
+          {
             "tekst": "Młode liście i pędy barszczu zwyczajnego były powszechnie zbierane przez wieśniaków jako pokarm, a także kwaszone lub suszone w cieniu na kształt selerów.",
             "czesc": "ziele",
             "zrodla": [
@@ -562,10 +679,20 @@
             ]
           },
           {
+            "tekst": "Lokalne nazwy podagrycznika to śnitka, barszlica, ger, krzemionka i kozia stopka.",
+            "czesc": null,
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s2269"
+            ]
+          },
+          {
             "tekst": "W Anglii roślinę nazywa się „cow parsnip”, a w języku niemieckim – „Wiesenbärenklau”.",
             "czesc": null,
             "zrodla": [
-              9
+              10
             ],
             "fakty": [
               "s113"
@@ -613,7 +740,7 @@
             "tekst": "Sap barszczu zwyczajnego może powodować fototoksyczne reakcje skóry.",
             "czesc": null,
             "zrodla": [
-              8
+              9
             ],
             "fakty": [
               "s123"
@@ -655,6 +782,16 @@
             ],
             "fakty": [
               "s388"
+            ]
+          },
+          {
+            "tekst": "Kwitnie przyciąga owady – głównie chrząszcze, osy i muchy, a na jego kwiatach odnotowano obecność muszki Euleia heraclei oraz larw Phytomyza spondylii żerujących na liściach.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2265"
             ]
           },
           {
@@ -746,6 +883,7 @@
         "s19",
         "s114",
         "s24",
+        "s2257",
         "s115",
         "s118"
       ],
@@ -761,6 +899,7 @@
       ],
       "liście": [
         "s106",
+        "s2263",
         "s111",
         "s84",
         "s109",
@@ -768,11 +907,13 @@
         "s119",
         "s125",
         "s121",
+        "s2255",
         "s22",
         "s55"
       ],
       "owoce": [
         "s391",
+        "s2264",
         "s25",
         "s6",
         "s57"
@@ -785,11 +926,14 @@
         "s86",
         "s56"
       ],
+      "nasiona": [
+        "s2266",
+        "s2261",
+        "s2256",
+        "s404"
+      ],
       "kłącze": [
         "s83"
-      ],
-      "nasiona": [
-        "s404"
       ]
     },
     "fakty": [
@@ -1476,50 +1620,278 @@
           "url": "https://arthropedia.co.uk/heavenly-hogweed/"
         },
         "cytat": "Pammene aurana whose larvae actually feed on the seeds, tucked up in a little silken retreat."
+      },
+      {
+        "id": "s2255",
+        "sekcja": "historia",
+        "czesc": "liście",
+        "tekst": "Istnieje wysoka prawdopodobieństwo, że słowo 'barszcz' (borschtsch) wywodzi się ze słowiańskiej nazwy oznaczającej tę roślinę, która stanowiła jej podstawowy składnik w starożytności.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Wiesen-Bärenklau",
+          "url": "https://de.wikipedia.org/wiki/Wiesen-B%C3%A4renklau"
+        },
+        "cytat": "Die jungen Blätter und Sprossen der Wiesen-Bärenklau waren im Mittelalter Bestandteil des Borschtsch. Höchstwahrscheinlich liegt der Ursprung des Namens Borschtsch im slawischen Namen für die Bärenklau."
+      },
+      {
+        "id": "s2256",
+        "sekcja": "barwienie",
+        "czesc": "nasiona",
+        "tekst": "Niedojrzałe nasiona barszczu można macerować w alkoholu obojętnym, co nadaje należącemu lekkiemu żelowi intensywnie zieloną barwę, wizualnie przypominającą absynt.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Wiesen-Bärenklau",
+          "url": "https://de.wikipedia.org/wiki/Wiesen-B%C3%A4renklau"
+        },
+        "cytat": "Auch kann man unreife Samen als Liköransatz in Neutralalkohol einlegen. Sie geben dem Alkohol eine intensive grüne Farbe, die an Absinth erinnert."
+      },
+      {
+        "id": "s2257",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "korzeń",
+        "tekst": "W kuchni ziołowej niedojrzałe oraz dojrzałe nasiona stosuje się w małych ilościach jako przyprawę, nadającą dań słodkim lub zupom wyrazisty, aromatyczny smak.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Wiesen-Bärenklau",
+          "url": "https://de.wikipedia.org/wiki/Wiesen-B%C3%A4renklau"
+        },
+        "cytat": "Unreife sowie reife Samen können in kleinen Mengen als Gewürz genutzt werden. Sie sind sehr aromatisch und eignen sich gut für süße Speisen oder Suppe."
+      },
+      {
+        "id": "s2261",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "nasiona",
+        "tekst": "Suszone nasiona barszczu zwyczajnego używa się jako przyprawę o smaku przypominającym kardamon.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 牛防風",
+          "url": "https://zh.wikipedia.org/wiki/%E7%89%9B%E9%98%B2%E9%A2%A8"
+        },
+        "cytat": "牛防风的种子可以在干燥后作为香料食用，其味道类似于豆蔻。"
+      },
+      {
+        "id": "s2262",
+        "sekcja": "sklad",
+        "czesc": null,
+        "tekst": "W roślinie występuje furanokumaryna o nazwie 呋喃香豆素, która może wywoływać reakcję fototoksyczną przy ekspozycji na UV.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 牛防風",
+          "url": "https://zh.wikipedia.org/wiki/%E7%89%9B%E9%98%B2%E9%A2%A8"
+        },
+        "cytat": "牛防风植株内含有可引起植物日光性皮炎的化合物呋喃香豆素，但含量比较低。"
+      },
+      {
+        "id": "s2263",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Liście barszczu zwyczajnego są złożone, składają się z 5–7 drobnych listków o ząbkowanych brzegach i mogą osiągać długość do 50 cm, pokryte są miękkim puchem.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 牛防風",
+          "url": "https://zh.wikipedia.org/wiki/%E7%89%9B%E9%98%B2%E9%A2%A8"
+        },
+        "cytat": "宽阔的复叶长度可达到50厘米，亦布满绒毛，由5—7片小叶片组成，叶边缘呈锯齿状。"
+      },
+      {
+        "id": "s2264",
+        "sekcja": "opis",
+        "czesc": "owoce",
+        "tekst": "Owoce barszczu są okrągłe, płaskie z tyłu, nieposiadające włosków i mają długość około 12 mm.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 牛防風",
+          "url": "https://zh.wikipedia.org/wiki/%E7%89%9B%E9%98%B2%E9%A2%A8"
+        },
+        "cytat": "果实圆形，背部扁平，果身无绒毛，长约12毫米。"
+      },
+      {
+        "id": "s2265",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Kwitnie przyciąga owady – głównie chrząszcze, osy i muchy, a na jego kwiatach odnotowano obecność muszki Euleia heraclei oraz larw Phytomyza spondylii żerujących na liściach.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 牛防風",
+          "url": "https://zh.wikipedia.org/wiki/%E7%89%9B%E9%98%B2%E9%A2%A8"
+        },
+        "cytat": "主要依靠甲虫、黄蜂及苍蝇等昆虫来采蜜授粉，甚至有一种苍蝇因其被发现在牛防风上而被命名为“Euleia heraclei”。另有学名为“Phytomyza spondylii”的植潜蝇采食牛防风的叶子。"
+      },
+      {
+        "id": "s2266",
+        "sekcja": "wystepowanie",
+        "czesc": "nasiona",
+        "tekst": "W Wielkiej Brytanii nasiona barszczu zwykle rozprzestrzeniają się od końca września do początku października.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 牛防風",
+          "url": "https://zh.wikipedia.org/wiki/%E7%89%9B%E9%98%B2%E9%A2%A8"
+        },
+        "cytat": "在英国地区，种子的传播则发生在九月分点前后的9月下旬至10月上旬间。"
+      },
+      {
+        "id": "s2267",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Podagrycznik pospolity to wieloletnia roślina z rodziny selerowatych, dorastająca 60‑90 cm wysokości i kwitnąca od początku maja do końca września.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/ta-roslina-pomoze-przy-dnie-moczanowej-i-niestrawnosci-to-darmowy-i-naturalny-sposob-na-bol-i-obrzek-stawow-wyprobuj-napar-z/ar/c14-16296157"
+        },
+        "cytat": "Podagrycznik pospolity (Aegopodium podagraria) to wieloletnia roślina z rodziny selerowatych ... Podagrycznik pospolity osiąga wysokość 60-90 cm i kwitnie od początku maja, aż do końca września."
+      },
+      {
+        "id": "s2268",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Roślina najczęściej rośnie w zacienionych i wilgotnych lasach, w dolnych partiach gór, w zaroślach, rowach oraz na wysypiskach śmieci.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/ta-roslina-pomoze-przy-dnie-moczanowej-i-niestrawnosci-to-darmowy-i-naturalny-sposob-na-bol-i-obrzek-stawow-wyprobuj-napar-z/ar/c14-16296157"
+        },
+        "cytat": "Najczęściej można spotkać ją w zacienionych i wilgotnych lasach, w niższych partiach gór oraz w zaroślach, rowach i na wysypiskach śmieci."
+      },
+      {
+        "id": "s2269",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "Lokalne nazwy podagrycznika to śnitka, barszlica, ger, krzemionka i kozia stopka.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/ta-roslina-pomoze-przy-dnie-moczanowej-i-niestrawnosci-to-darmowy-i-naturalny-sposob-na-bol-i-obrzek-stawow-wyprobuj-napar-z/ar/c14-16296157"
+        },
+        "cytat": "Potocznie na podagrycznik mówi się również śnitka, barszlica, ger, krzemionka lub kozia stopka."
+      },
+      {
+        "id": "s2270",
+        "sekcja": "czesci_rosliny",
+        "czesc": null,
+        "tekst": "Surowcami zielarskimi są liście, łodygi, kwiaty i korzeń; liście i łodygi zbiera się przez cały sezon, kwiaty od czerwca do sierpnia, a korzenie jedynie jesienią.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/ta-roslina-pomoze-przy-dnie-moczanowej-i-niestrawnosci-to-darmowy-i-naturalny-sposob-na-bol-i-obrzek-stawow-wyprobuj-napar-z/ar/c14-16296157"
+        },
+        "cytat": "Jako surowiec zielarski wykorzystuje się liście, łodygi, kwiaty oraz korzeń. Liście oraz łodygi pozyskuje się przez cały sezon, korzenie tylko jesienią, a kwiaty od początku czerwca do sierpnia."
       }
     ]
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-11-02",
     "pola": {
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Barszcz zwyczajny to okazana roślina osiągająca wysokość 50–150 cm, która po roztarciu wydziela silny, specyficzny i nieprzyjemny zapach.",
+        "tresc": [
+          {
+            "tekst": "Barszcz zwyczajny to okazana roślina osiągająca wysokość 50–150 cm, która po roztarciu wydziela silny, specyficzny i nieprzyjemny zapach.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "d8263ebd6e974a0e"
+      },
       "identyfikacja.cechy_kluczowe": {
         "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
         "typ": "lista",
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Barszcz zwyczajny to okazała roślina zielna osiągająca od 50–150 cm do nawet 1,5–2,5 metra wysokości (dzięki czemu cały rodzaj zyskał nazwę nawiązującą do Heraklesa), która po roztarciu wydziela silny, specyficzny i nieprzyjemny zapach.",
+            "tekst": "Liście złożone, składające się z 5–7 listków o ząbkowanych brzegach, mogą osiągać długość do 50 cm i są pokryte miękkim puchem.",
             "zrodla": [
-              1,
+              5
+            ],
+            "fakty": [
+              "s389",
+              "s2263"
+            ]
+          },
+          {
+            "tekst": "Dolne liście odziomkowe są bardzo duże, z długimi ogonkami i mogą mieć nawet 60 cm długości.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s106"
+            ]
+          },
+          {
+            "tekst": "Kształt dużych, nieco nierówno złożonych liści przypomina stopy zwierząt, co wpłynęło na nazwę rośliny.",
+            "zrodla": [
+              10
+            ],
+            "fakty": [
+              "s111"
+            ]
+          },
+          {
+            "tekst": "Kwiatostanem jest baldach złożony z 15–30 baldaszków, a kwiaty mają najczęściej białe płatki.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2"
+            ]
+          },
+          {
+            "tekst": "Kwiaty są białe, często z lekkim zielonkawym lub jasnoróżowym odcieniem.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s107"
+            ]
+          },
+          {
+            "tekst": "Kwiaty zebrane są w duże kwiatostany, przy czym kwiaty na obrzeżach posiadają powiększone płatki od strony zewnętrznej.",
+            "zrodla": [
               4
             ],
             "fakty": [
-              "s1",
-              "s53"
+              "s52"
             ]
           },
           {
-            "tekst": "Szerokie liście złożone mają do 50 centymetrów długości, są owłosione i składają się z 5–7 ząbkowanych na brzegach listków.",
+            "tekst": "Łodyga jest prosto wzniesiona, dęta, rozgałęziona oraz żebrowana.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s88"
+            ]
+          },
+          {
+            "tekst": "Pod ziemią roślina posiada grube i wielogłowe kłącze.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s88"
+            ]
+          },
+          {
+            "tekst": "Owoce są okrągłe, o spłaszczonym grzbiecie i bezwłosej powierzchni, a ich długość wynosi około 12 milimetrów.",
             "zrodla": [
               5
             ],
             "fakty": [
-              "s389"
-            ]
-          },
-          {
-            "tekst": "Owoce mają około 12 milimetrów długości, są okrągłe, bezwłose oraz posiadają spłaszczony grzbiet.",
-            "zrodla": [
-              5
-            ],
-            "fakty": [
-              "s391"
+              "s391",
+              "s2264"
             ]
           }
         ],
-        "model": "gemini/gemini-3.7-flash",
-        "wejscie": "d8798c6f5ef61fe9"
+        "model": "groq/qwen/qwen3.8-27b",
+        "wejscie": "26e37a0b1404fac9"
       },
       "czesci_rosliny.korzeń.opis_botaniczny": {
         "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Opis surowca",
@@ -1548,120 +1920,23 @@
         "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
         "wejscie": "7eb95797b6fdf842"
       },
-      "czesci_rosliny.kwiaty.opis_botaniczny": {
-        "tytul": "Surowce i zbiory - Kwiaty (nowa część z sieci): Opis surowca",
+      "wymagania.gleba": {
+        "tytul": "Natura i siedlisko - Gleba",
         "typ": "tekst",
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Kwiatostanem rośliny jest baldach złożony z 15–30 baldaszków, a jej kwiaty mają najczęściej białe płatki.",
+            "tekst": "Barszcz zwyczajny rośnie głównie na suchych, nawadnianych, bogatych w azot glebach, w łąkach, brzozowiskach, na ścieżkach, torowiskach kolejowych i terenach zabudowanych.",
             "zrodla": [
-              1
+              3
             ],
             "fakty": [
-              "s2"
-            ]
-          },
-          {
-            "tekst": "Kwiaty barszczu zwyczajnego są białe, często z lekkim zielonkawym lub jasnoróżowym odcieniem.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s107"
-            ]
-          },
-          {
-            "tekst": "Kwiaty rośliny zebrane są w duże kwiatostany, przy czym kwiaty na obrzeżach posiadają powiększone płatki od zewnętrznej strony.",
-            "zrodla": [
-              4
-            ],
-            "fakty": [
-              "s52"
-            ]
-          }
-        ],
-        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "585440e8000960fe"
-      },
-      "czesci_rosliny.liście.opis_botaniczny": {
-        "tytul": "Surowce i zbiory - Liście (nowa część z sieci): Opis surowca",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "Dolne liście oddziomkowe mogą być bardzo duże i osiągać długość do 60 centymetrów, posiadając długie ogonki.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s106"
-            ]
-          },
-          {
-            "tekst": "Liście rośliny są dużymi, nieco nierówno złożonemi, a ich kształt przypomina stopy zwierząt, co wpłynęło na nazwę rośliny.",
-            "zrodla": [
-              7
-            ],
-            "fakty": [
-              "s111"
-            ]
-          }
-        ],
-        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "4f8d636e55ef1ad0"
-      },
-      "czesci_rosliny.kłącze.opis_botaniczny": {
-        "tytul": "Surowce i zbiory - Kłącze (nowa część z sieci): Opis surowca",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "Pod ziemią roślina posiada grube i wielogłowe kłącze.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s88"
-            ]
-          }
-        ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "f4f3bb8218bb4373"
-      },
-      "opis": {
-        "tytul": "Opis - Opis ogólny",
-        "typ": "tekst",
-        "oryginal": "Barszcz zwyczajny to okazana roślina osiągająca wysokość 50–150 cm, która po roztarciu wydziela silny, specyficzny i nieprzyjemny zapach.",
-        "tresc": [
-          {
-            "tekst": "Barszcz zwyczajny to okazana roślina osiągająca wysokość 50–150 cm, która po roztarciu wydziela silny, specyficzny i nieprzyjemny zapach.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Barszcz zwyczajny występuje w niemal całej Europie, w dużej części Azji, w Maroku oraz w północno‑zachodniej Afryce; w Polsce jest gatunkiem pospolitym, a w Islandii, Finlandii i Nowej Zelandii występuje jako neofit.",
-            "zrodla": [
-              1,
-              2
-            ],
-            "fakty": [
-              "s3",
-              "s108"
-            ]
-          },
-          {
-            "tekst": "Główny okres kwitnienia w kontynentalnej Europie przypada na miesiące od czerwca do września, przy czym najobfitsze kwitnienie i owocowanie występuje w lipcu i sierpniu.",
-            "zrodla": [
-              5
-            ],
-            "fakty": [
-              "s393"
+              "s18"
             ]
           }
         ],
         "model": "groq/openai/gpt-oss-120b",
-        "wejscie": "360f67175f3380a2"
+        "wejscie": "a4cff64a706fa9a5"
       },
       "wymagania.stanowisko": {
         "tytul": "Natura i siedlisko - Stanowisko",
@@ -1669,26 +1944,17 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Barszcz zwyczajny (Heracleum sphondylium L.) preferuje suche, nawodzone i bogate w azot gleby, występujące na łąkach, brzozowiskach, ścieżkach, torowiskach kolejowych oraz terenach zabudowanych.",
+            "tekst": "Barszcz zwyczajny najczęściej rośnie w zacienionych i wilgotnych lasach, w dolnych partiach gór, w zaroślach, rowach oraz na wysypiskach śmieci.",
             "zrodla": [
-              3
+              8
             ],
             "fakty": [
-              "s18"
-            ]
-          },
-          {
-            "tekst": "Ponadto, roślina ta można znaleźć na łąkach, polanach, obrzeżach lasów, w lasach oraz na polach.",
-            "zrodla": [
-              4
-            ],
-            "fakty": [
-              "s54"
+              "s2268"
             ]
           }
         ],
-        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "7ef7634434048947"
+        "model": "groq/openai/gpt-oss-20b",
+        "wejscie": "16bbe95483d7bf7d"
       },
       "czesci_rosliny.korzeń.czas_zbioru": {
         "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Zbiór",
@@ -1714,17 +1980,18 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Ziele barszczu zwyczajnego zbiera się wiosną lub wczesnym latem, a owoce i korzenie jesienią.",
+            "tekst": "Ziele (młode liście i pędy) barszczu zwyczajnego zbiera się wiosną lub wczesnym latem, były one powszechnie zbierane przez wieśniaków jako pokarm oraz suszone w cieniu na kształt selerów.",
             "zrodla": [
               1
             ],
             "fakty": [
-              "s4"
+              "s4",
+              "s86"
             ]
           }
         ],
-        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "75fd09775d732b44"
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "6cb71cebf22cd78e"
       },
       "czesci_rosliny.korzeń.skladniki_aktywne": {
         "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Substancje czynne",
@@ -1822,28 +2089,19 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Tradycyjnie korzeń barszczu zwyczajnego był używany do płukania jamy ustnej przy stanach zapalnych dziąseł i błony śluzowej, a także przy bólach zębów stosowano nalewkę alkoholową.",
+            "tekst": "Korzeń barszczu zwyczajnego był tradycyjnie stosowany jako odwar do płukania jamy ustnej przy stanach zapalnych dziąseł i błony śluzowej oraz w postaci nalewki alkoholowej w celu łagodzenia bólów zębów, a także jako środek przeciwko impotencji.",
             "zrodla": [
-              5,
-              6
+              7,
+              9
             ],
             "fakty": [
               "s115",
               "s118"
             ]
-          },
-          {
-            "tekst": "Korzeń barszczu zwyczajnego stosowano również jako środek przeciwko impotencji.",
-            "zrodla": [
-              6
-            ],
-            "fakty": [
-              "s118"
-            ]
           }
         ],
-        "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
-        "wejscie": "5d1d920bc8972f1c"
+        "model": "groq/openai/gpt-oss-20b",
+        "wejscie": "49c8566f6cdf685b"
       },
       "czesci_rosliny.kwiaty.wlasciwości": {
         "tytul": "Surowce i zbiory - Kwiaty (nowa część z sieci): Działanie",
@@ -1869,27 +2127,50 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "W medycynie ludowej okłady z rozparzonych liści stosowano przy bólach stawów i reumatyzmie.",
+            "tekst": "Młode liście barszczu zwyczajnego były używane jako składnik zupy borschtsch oraz sałatek.",
             "zrodla": [
-              7
+              2,
+              9
             ],
             "fakty": [
-              "s116"
+              "s109",
+              "s119",
+              "s125"
             ]
           },
           {
-            "tekst": "Liście barszczu zwyczajnego były również wykorzystywane w leczeniu problemów ginekologicznych.",
+            "tekst": "W medycynie ludowej liście barszczu zwyczajnego stosowano jako okłady przy bólach stawów i reumatyzmie oraz w leczeniu problemów ginekologicznych.",
             "zrodla": [
-              8
+              7,
+              9
             ],
             "fakty": [
+              "s116",
               "s119",
               "s125"
             ]
           }
         ],
-        "model": "groq/qwen/qwen3.8-27b",
+        "model": "groq/openai/gpt-oss-120b",
         "wejscie": "3a884efb916d02cd"
+      },
+      "czesci_rosliny.nasiona.wlasciwości": {
+        "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Suszone nasiona barszczu zwyczajnego używa się jako przyprawę o smaku przypominającym kardamon.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2261"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "2d455c2b76fad943"
       },
       "czesci_rosliny.ziele.wlasciwości": {
         "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Działanie",
@@ -1897,7 +2178,7 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Kwaszony barszcz pita w febrach i gorączkach uśmierza pragnienie i kolerę oraz pobudza chciwość jedzenia.",
+            "tekst": "Marcin z Urzędowa pisał, że kwaszony barszcz pita w febrach i gorączkach uśmierza pragnienie i kolerę oraz pobudza chciwość jedzenia.",
             "zrodla": [
               1
             ],
@@ -1909,38 +2190,37 @@
         "model": "groq/openai/gpt-oss-120b",
         "wejscie": "1350eca932c20f21"
       },
+      "zastosowanie.kosmetyczne": {
+        "tytul": "Praktyczne zastosowanie - Kosmetyka",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Niedojrzałe nasiona barszczu można macerować w alkoholu, co nadaje produktowi intensywnie zieloną barwę przypominającą absynt; w zależności od zastosowania, macerat może być użyty jako lekki żel kosmetyczny lub jako dodatek do likierów.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2256",
+              "s25"
+            ]
+          }
+        ],
+        "model": "groq/openai/gpt-oss-20b",
+        "wejscie": "fee1d1c14a834c43"
+      },
       "zastosowanie.kulinarne": {
         "tytul": "Praktyczne zastosowanie - Kuchnia",
         "typ": "tekst",
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Niedojrzałe nasiona barszczu zwyczajnego można macerować w alkoholu, co nadaje likierom intensywnie zieloną barwę przypominającą absynt.",
+            "tekst": "Suszony liść barszczu zwyczajnego można używać jako przyprawę do herbaty.",
             "zrodla": [
-              2,
-              8
-            ],
-            "fakty": [
-              "s25",
-              "s121"
-            ]
-          },
-          {
-            "tekst": "Suszony liść tej rośliny stosuje się jako przyprawę do herbaty.",
-            "zrodla": [
-              8
+              9
             ],
             "fakty": [
               "s121"
-            ]
-          },
-          {
-            "tekst": "Młode liście i pędy barszczu zwyczajnego były tradycyjnie zbierane jako pokarm, a także poddawane kwaszeniu lub suszeniu w cieniu, tworząc produkt podobny do selerów.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s86"
             ]
           },
           {
@@ -1951,37 +2231,10 @@
             "fakty": [
               "s87"
             ]
-          },
-          {
-            "tekst": "Tradycyjnie spożywano łodygi i liście, a młode liście dodawano do pikantnych sałatek, zielonych barszczów, zup oraz kapuśniaku.",
-            "zrodla": [
-              4
-            ],
-            "fakty": [
-              "s55"
-            ]
-          },
-          {
-            "tekst": "Wysuszone nasiona używa się jako przyprawę, której smak jest podobny do kardamonu.",
-            "zrodla": [
-              4
-            ],
-            "fakty": [
-              "s57"
-            ]
-          },
-          {
-            "tekst": "Na Powołżu młode, miękkie pędy z nierozwiniętymi pąkami parzono wrzątkiem, obtaczano w mące i smażono, a ogonki liściowe po obraniu i pokrojeniu marynowano w occie.",
-            "zrodla": [
-              4
-            ],
-            "fakty": [
-              "s56"
-            ]
           }
         ],
         "model": "groq/openai/gpt-oss-120b",
-        "wejscie": "e4a3686cbfea045f"
+        "wejscie": "18a41ebd33de4cec"
       },
       "ciekawostki": {
         "tytul": "Wiedza tajemna - Ciekawostki",
@@ -2007,7 +2260,7 @@
             ]
           },
           {
-            "tekst": "W średniowieczu w celach leczniczych gatunki te określano w źródłach jako berenclawe oraz pod łacińskim mianem Branca ursina.",
+            "tekst": "W średniowieczu w celach leczniczych gatunki te określał się w źródłach jako berenclawe oraz łacińskim mianem Branca ursina.",
             "zrodla": [
               2
             ],
@@ -2025,27 +2278,43 @@
             ]
           },
           {
+            "tekst": "Istnieje wysoka prawdopodobieństwo, że słowo 'barszcz' (borschtsch) wywodzi się ze słowiańskiej nazwy oznaczającej tę roślinę, która stanowiła jej podstawowy składnik w starożytności.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2255"
+            ]
+          },
+          {
             "tekst": "W Anglii roślinę nazywa się „cow parsnip”, co nie należy mylić z Heracleum maximum, które występuje w Ameryce Północnej.",
             "zrodla": [
-              3,
-              9
+              3
             ],
             "fakty": [
-              "s21",
-              "s113"
+              "s21"
             ]
           },
           {
-            "tekst": "W języku niemieckim roślina nosi nazwę „Wiesenbärenklau”.",
+            "tekst": "Lokalne nazwy podagrycznika to śnitka, barszlica, ger, krzemionka i kozia stopka.",
             "zrodla": [
-              9
+              8
+            ],
+            "fakty": [
+              "s2269"
+            ]
+          },
+          {
+            "tekst": "W Anglii roślinę nazywa się „cow parsnip”, a w języku niemieckim – „Wiesenbärenklau”.",
+            "zrodla": [
+              10
             ],
             "fakty": [
               "s113"
             ]
           },
           {
-            "tekst": "Roślina nosi również ludową nazwę Bärentap(e), co wynika stąd, że jej klapowane, osadzone na ogonkach i owłosione liście przypominają zwierzęce stopy.",
+            "tekst": "Roślina nosi również ludową nazwę Bärentap(p)e, co wynika stąd, że jej klapowane, osadzone na ogonkach i owłosione liście przypominają zwierzęce stopy.",
             "zrodla": [
               2
             ],
@@ -2054,18 +2323,98 @@
             ]
           },
           {
-            "tekst": "Pojedynczy kwiatostan oraz duże baldachy barszczu zwyczajnego stanowią doskonałą platformę dla owadów, które przybywają nie tylko w celu żerowania, lecz także łączenia się w pary, korzystając z łatwo dostępnego nektaru i pyłku.",
+            "tekst": "Barszcz zwyczajny jest rośliną żywicielską dla gąsienic wielu gatunków motyli, m.in. dla Silberpunkt-Höckereule i Bärenklau-Blütenspanner.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s388"
+            ]
+          },
+          {
+            "tekst": "Kwitnie przyciąga owady – głównie chrząszcze, osy i muchy, a na jego kwiatach odnotowano obecność muszki Euleia heraclei oraz larw Phytomyza spondylii żerujących na liściach.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2265"
+            ]
+          },
+          {
+            "tekst": "Kwiaty rośliny stanowią obfite źródło nektaru dla owadów zapylających i znalazły się w czołówce zestawienia pod względem produkcji nektaru w Wielkiej Brytanii.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s387"
+            ]
+          },
+          {
+            "tekst": "Pojedynczy kwiatostan barszczu zwyczajnego stanowi idealne miejsce spotkań dla owadów, które przybywają tam nie tylko w celu żerowania, lecz także łączenia się w pary.",
             "zrodla": [
               6
             ],
             "fakty": [
-              "s401",
+              "s401"
+            ]
+          },
+          {
+            "tekst": "Sezon kwitnienia barszczu zwyczajnego rozpoczyna się na przełomie maja i czerwca, trwa przez całe lato i nierzadko przeciąga się aż do września.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s402"
+            ]
+          },
+          {
+            "tekst": "Duże baldachy tej rośliny stanowią doskonałą platformę ułatwiającą owadom korzystanie z łatwo dostępnego nektaru i pyłku.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
               "s403"
+            ]
+          },
+          {
+            "tekst": "Tradycyjnie łodygi i liście spożywano, a młode liście dodawano do pikantnych sałatek, zielonych barszczów, zup i kapuśniaku.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s55"
+            ]
+          },
+          {
+            "tekst": "Larwy motyla z gatunku Pammene aurana rozwijają się bezpośrednio na nasionach barszczu, schowane w małych, jedwabistych schronieniach.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s404"
+            ]
+          },
+          {
+            "tekst": "Wysuszone nasiona można stosować jako przyprawę, która smakiem przypomina kardamon.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s57"
+            ]
+          },
+          {
+            "tekst": "Na Powołżu młode, miękkie i soczyste pędy z nierozwiniętymi pąkami parzono wrzątkiem, obtaczano w mące i smażono, natomiast ogonki liściowe po obraniu ze skórki i pokrojeniu marynowano w occie.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s56"
             ]
           }
         ],
-        "model": "groq/openai/gpt-oss-120b",
-        "wejscie": "43ebb55fcb7222c2"
+        "model": "bez LLM: 19 punktow",
+        "wejscie": "d5d7ac28a9721093"
       },
       "ostrzezenia": {
         "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
@@ -2115,51 +2464,13 @@
         ],
         "model": "ollama/SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
         "wejscie": "608db7e3004ab279"
-      },
-      "permakultura.funkcje": {
-        "tytul": "Cykl życia i ekosystem - Permakultura - funkcje",
-        "typ": "lista",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "Barszcz zwyczajny jest rośliną żywicielską dla gąsienic wielu gatunków motyli, w tym dla Silberpunkt‑Höckereule i Bärenklau‑Blütenspanner, a larwy motyla Pammene aurana rozwijają się bezpośrednio na jego nasionach, schowane w małych, jedwabistych schronieniach.",
-            "zrodla": [
-              2,
-              6
-            ],
-            "fakty": [
-              "s388",
-              "s404"
-            ]
-          }
-        ],
-        "model": "groq/openai/gpt-oss-120b",
-        "wejscie": "4b9be9de8508d1cf"
-      },
-      "zastosowanie.ogrodowe": {
-        "tytul": "Praktyczne zastosowanie - Ogród",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "Kwiaty barszczu zwyczajnego stanowią obfite źródło nektaru dla owadów zapylających, czego dowodem jest ich obecność w czołówce zestawień pod względem produkcji nektaru w Wielkiej Brytanii.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s387"
-            ]
-          }
-        ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "8e3814bd92391060"
       }
     },
     "uzyte_fakty": [
       "s1",
       "s106",
       "s107",
-      "s108",
+      "s109",
       "s111",
       "s113",
       "s114",
@@ -2179,26 +2490,31 @@
       "s20",
       "s21",
       "s22",
+      "s2255",
+      "s2256",
+      "s2261",
+      "s2263",
+      "s2264",
+      "s2265",
+      "s2268",
+      "s2269",
       "s23",
       "s24",
       "s25",
       "s26",
-      "s3",
       "s385",
       "s386",
       "s387",
       "s388",
       "s389",
       "s391",
-      "s393",
       "s4",
       "s401",
+      "s402",
       "s403",
       "s404",
       "s5",
       "s52",
-      "s53",
-      "s54",
       "s55",
       "s56",
       "s57",
@@ -2220,7 +2536,7 @@
     "Pąki": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Berce_sphondyle-28_avril_2014-Sainpuits.jpg/960px-Berce_sphondyle-28_avril_2014-Sainpuits.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-11-02",
     "w_url": true,
     "zdjecia": [
       {
@@ -2272,10 +2588,94 @@
   },
   "rozmieszczenie": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-16",
-    "jak": "llm:gemini/gemini-3.5-flash",
-    "wejscie": "05499fea8bbf3755",
+    "zaktualizowano": "2026-11-02",
+    "jak": "llm:groq/openai/gpt-oss-20b",
+    "wejscie": "4be62e396ecad7d8",
     "wstawki": [
+      {
+        "miejsce": "natura/wystepowanie",
+        "rozdzial": "Natura i siedlisko",
+        "tytul": "Występowanie i zasięg",
+        "ikona": "ra-compass",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Roślina występuje w niemal całej Europie, w dużej części Azji, w Maroku oraz jest gatunkiem pospolitym w Polsce.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          },
+          {
+            "tekst": "Gatunek ten rośnie naturalnie w Europie oraz w północno-zachodniej Afryce, natomiast w Islandii, Finlandii i Nowej Zelandii występuje jako neofit.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s108"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          },
+          {
+            "tekst": "Roślina występuje na łąkach, polanach, obrzeżach lasów, w lasach oraz na polach.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s54"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          },
+          {
+            "tekst": "Główny okres kwitnienia w kontynentalnej Europie przypada na miesiące od czerwca do września, przy czym najobfitsze kwitnienie i owocowanie występuje w lipcu i sierpniu.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s393"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          }
+        ]
+      },
+      {
+        "miejsce": "rozpoznawanie/cechy",
+        "rozdzial": "Rozpoznawanie w terenie",
+        "tytul": "Cechy kluczowe",
+        "ikona": "ra-leaf",
+        "nowy": false,
+        "punkty": [
+          {
+            "tekst": "Jest to jedna z największych roślin zielnych, osiągająca wysokość od 1,5 do 2,5 metra, dzięki czemu cały rodzaj zyskał nazwę nawiązującą do herosa Heraklesa.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s53"
+            ],
+            "sekcja": "opis",
+            "czesc": null
+          },
+          {
+            "tekst": "Podagrycznik pospolity to wieloletnia roślina z rodziny selerowatych, dorastająca 60‑90 cm wysokości i kwitnąca od początku maja do końca września.",
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s2267"
+            ],
+            "sekcja": "opis",
+            "czesc": null
+          }
+        ]
+      },
       {
         "miejsce": "rozpoznawanie/pomylki",
         "rozdzial": "Rozpoznawanie w terenie",
@@ -2297,6 +2697,66 @@
         ]
       },
       {
+        "miejsce": "surowce/sklad",
+        "rozdzial": "Surowce i zbiory",
+        "tytul": "Skład i substancje czynne",
+        "ikona": "ra-fizzing-flask",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "W roślinie występuje furanokumaryna o nazwie 呋喃香豆素, która może wywoływać reakcję fototoksyczną przy ekspozycji na UV.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2262"
+            ],
+            "sekcja": "sklad",
+            "czesc": null
+          }
+        ]
+      },
+      {
+        "miejsce": "surowce/inne",
+        "rozdzial": "Surowce i zbiory",
+        "tytul": "Surowce całej rośliny",
+        "ikona": "ra-potion",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Surowcami zielarskimi są liście, łodygi, kwiaty i korzeń; liście i łodygi zbiera się przez cały sezon, kwiaty od czerwca do sierpnia, a korzenie jedynie jesienią.",
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s2270"
+            ],
+            "sekcja": "czesci_rosliny",
+            "czesc": null
+          }
+        ]
+      },
+      {
+        "miejsce": "zastosowanie/kuchnia",
+        "rozdzial": "Praktyczne zastosowanie",
+        "tytul": "Kuchnia",
+        "ikona": "ra-meat",
+        "nowy": false,
+        "punkty": [
+          {
+            "tekst": "W kuchni ziołowej niedojrzałe oraz dojrzałe nasiona stosuje się w małych ilościach jako przyprawę, nadającą dań słodkim lub zupom wyrazisty, aromatyczny smak.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2257"
+            ],
+            "sekcja": "zastosowanie_lecznicze",
+            "czesc": "korzeń"
+          }
+        ]
+      },
+      {
         "miejsce": "cykl/biologia",
         "rozdzial": "Cykl życia i ekosystem",
         "tytul": "Kwitnienie, zapylanie i rozsiewanie",
@@ -2304,35 +2764,15 @@
         "nowy": true,
         "punkty": [
           {
-            "tekst": "Sezon kwitnienia barszczu zwyczajnego rozpoczyna się na przełomie maja i czerwca, trwa przez całe lato i nierzadko przeciąga się aż do września.",
+            "tekst": "W Wielkiej Brytanii nasiona barszczu zwykle rozprzestrzeniają się od końca września do początku października.",
             "zrodla": [
-              6
+              5
             ],
             "fakty": [
-              "s402"
+              "s2266"
             ],
-            "sekcja": "ciekawostki",
-            "czesc": "kwiaty"
-          }
-        ]
-      },
-      {
-        "miejsce": "tajemna/historia",
-        "rozdzial": "Wiedza tajemna",
-        "tytul": "Historia i nazwa",
-        "ikona": "ra-hourglass",
-        "nowy": true,
-        "punkty": [
-          {
-            "tekst": "Młode liście i pędy tej rośliny były w średniowieczu składnikiem tradycyjnej zupy borschtsch.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s109"
-            ],
-            "sekcja": "zastosowanie_lecznicze",
-            "czesc": "liście"
+            "sekcja": "wystepowanie",
+            "czesc": "nasiona"
           }
         ]
       }

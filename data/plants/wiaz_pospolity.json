@@ -123,7 +123,7 @@
     "Kora": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/%D0%9F%D0%BE%D0%BB%D1%81%D0%BA%D0%B8_%D0%B1%D1%80%D1%8F%D1%81%D1%82_%E2%80%93_%D0%BA%D0%BE%D1%80%D0%B0_5.jpg/960px-%D0%9F%D0%BE%D0%BB%D1%81%D0%BA%D0%B8_%D0%B1%D1%80%D1%8F%D1%81%D1%82_%E2%80%93_%D0%BA%D0%BE%D1%80%D0%B0_5.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-11-03",
     "w_url": true,
     "zdjecia": [
       {
@@ -171,6 +171,102 @@
         "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
         "zrodlo": "Wikimedia Commons"
       }
+    ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-11-03",
+    "uporzadkowano": "2026-11-03",
+    "uklad": "deterministyczny",
+    "zrodla": [
+      {
+        "nazwa": "stronazdrowia.pl",
+        "url": "https://stronazdrowia.pl/to-pogromca-kaszlu-oczysci-pluca-i-oskrzela-nazbierasz-w-lesie-lub-na-lace-miodunka-chroni-tez-przed-smogiem-i-wspiera-odpornosc/ar/c14-17193351",
+        "jezyk": "pl-PL",
+        "typ": "strona",
+        "nr": 1
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "medycyna_wschodu",
+        "tytul": "Medycyna chińska, kampo, ajurweda",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Miodunka (Pulmonaria) jest rośliną wieloletnią, która rośnie w całej Europie oraz wschodniej części Azji. W Polsce można ją spotkać już wczesną wiosną na polach, łąkach, w lasach, a także w ogrodach. W naszym kraju najpowszechniejsze są jej 2 gatunki: miodunka plamista (Pulmonaria officinalis) i miodunka ćma (Pulmonaria obscura).",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2583"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "kwiaty": [
+        "s2583"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s2583",
+        "sekcja": "medycyna_wschodu",
+        "czesc": "kwiaty",
+        "tekst": "Miodunka (Pulmonaria) jest rośliną wieloletnią, która rośnie w całej Europie oraz wschodniej części Azji. W Polsce można ją spotkać już wczesną wiosną na polach, łąkach, w lasach, a także w ogrodach. W naszym kraju najpowszechniejsze są jej 2 gatunki: miodunka plamista (Pulmonaria officinalis) i miodunka ćma (Pulmonaria obscura).",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/to-pogromca-kaszlu-oczysci-pluca-i-oskrzela-nazbierasz-w-lesie-lub-na-lace-miodunka-chroni-tez-przed-smogiem-i-wspiera-odpornosc/ar/c14-17193351"
+        },
+        "cytat": "Miodunka (Pulmonaria) jest rośliną wieloletnią, która rośnie w całej Europie oraz wschodniej części Azji. W Polsce można ją spotkać już wczesną wiosną na polach, łąkach, w lasach, a także w ogrodach. W naszym kraju najpowszechniejsze są jej"
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-03",
+    "pola": {
+      "profil_energetyczny.opis": {
+        "tytul": "Natura i siedlisko - Opis energetyczny",
+        "typ": "tekst",
+        "oryginal": "Wiąz to 'uszczelniacz tkanek'. Jego energia działa stabilizująco na błony śluzowe i skórę. Chłodzi stany zapalne układu pokarmowego i 'ściąga' rozproszone soki ustrojowe, przywracając ciału integralność strukturalną.",
+        "tresc": [
+          {
+            "tekst": "Wiąz to 'uszczelniacz tkanek'.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jego energia działa stabilizująco na błony śluzowe i skórę.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Chłodzi stany zapalne układu pokarmowego i 'ściąga' rozproszone soki ustrojowe, przywracając ciału integralność strukturalną.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Miodunka (Pulmonaria) jest rośliną wieloletnią, która rośnie w całej Europie oraz wschodniej części Azji. W Polsce można ją spotkać już wczesną wiosną na polach, łąkach, w lasach, a także w ogrodach. W naszym kraju najpowszechniejsze są jej 2 gatunki: miodunka plamista (Pulmonaria officinalis) i miodunka ćma (Pulmonaria obscura).",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2583"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "e0bfd84ef6780cf7"
+      }
+    },
+    "uzyte_fakty": [
+      "s2583"
     ]
   }
 }

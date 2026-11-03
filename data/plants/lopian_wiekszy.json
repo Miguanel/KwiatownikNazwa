@@ -119,7 +119,7 @@
     "Korzeń": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/367_Melrand.jpg/960px-367_Melrand.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-11-02",
     "w_url": true,
     "zdjecia": [
       {
@@ -167,6 +167,554 @@
         "licencja_url": "https://creativecommons.org/licenses/by/4.0",
         "zrodlo": "Wikimedia Commons"
       }
+    ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-11-02",
+    "uporzadkowano": "2026-11-02",
+    "uklad": "llm:ollama/qwen3:8b",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (de): Große Klette",
+        "url": "https://de.wikipedia.org/wiki/Gro%C3%9Fe_Klette",
+        "jezyk": "de",
+        "typ": "wikipedia",
+        "nr": 1
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "wystepowanie",
+        "tytul": "Występowanie",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Łopian większy występuje na przydrożnych, przybocznych i w zalewowych siedliskach Europy i Azji, preferując żyzne gliniaste gleby i wysokości do 1300 m n.p.m.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2497"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "czesci_rosliny",
+        "tytul": "Części rośliny i surowce",
+        "podsumowanie": "Korzeń łopianu był spożywany jako warzywo w średniowieczu, a młode liście i łodygi są używane w kuchni azjatyckiej. Włókna rośliny są wykorzystywane jako surowiec celulozowy.",
+        "podsumowanie_zrodla": [
+          1
+        ],
+        "punkty": [
+          {
+            "tekst": "Korzeń łopianu był w średniowieczu powszechnie spożywany jako warzywo, podobnie jak dzisiejsza czarna marchwia.",
+            "czesc": "korzeń",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2491"
+            ]
+          },
+          {
+            "tekst": "Młode liście i łodygi rośliny są wykorzystywane jako warzywo, zwłaszcza w kuchni japońskiej (gobō), chińskiej (Niúbàng) i koreańskiej (ueong).",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2492"
+            ]
+          },
+          {
+            "tekst": "Włókna łopianu są wykorzystywane jako surowiec celulozowy.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2498"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Z korzenia wyizolowano rozpuszczalny w wodzie fruktan o silnych właściwościach przeciwutleniających, badany pod kątem farmaceutycznym.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2494"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W tradycyjnej medycynie ludowej korzeń stosowano na choroby skóry, w tym suchą skórę, łuszczycę i egzemy, a także na reumatyzm i dolegliwości wątrobowe.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2495"
+            ]
+          },
+          {
+            "tekst": "Ziołowy wyciąg zawierający arctigenin wykazał działanie antywirusowe i przeciwnowotworowe w badaniach laboratoryjnych.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2496"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "historia",
+        "tytul": "Historia i nazwa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Łopian większy był wymieniony już w IX‑wiecznym „Capitulare de villis“ Karola Wielkiego jako roślina użytkowa, pod nazwą parduna.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2490"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "ciekawostki",
+        "tytul": "Ciekawostki",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Z korzenia pozyskuje się olej (Klettenwurzelöl), który znajduje zastosowanie w kosmetyce.",
+            "czesc": "korzeń",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2493"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "korzeń": [
+        "s2491",
+        "s2493"
+      ],
+      "liście": [
+        "s2492"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s2490",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Łopian większy był wymieniony już w IX‑wiecznym „Capitulare de villis“ Karola Wielkiego jako roślina użytkowa, pod nazwą parduna.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Große Klette",
+          "url": "https://de.wikipedia.org/wiki/Gro%C3%9Fe_Klette"
+        },
+        "cytat": "wurde im 9. Jahrhundert im Capitulare de villis vel curtis imperii Karls des Großen als Nutzpflanze erwähnt. Im Kapitel 70 ist sie als parduna aufgelistet."
+      },
+      {
+        "id": "s2491",
+        "sekcja": "czesci_rosliny",
+        "czesc": "korzeń",
+        "tekst": "Korzeń łopianu był w średniowieczu powszechnie spożywany jako warzywo, podobnie jak dzisiejsza czarna marchwia.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Große Klette",
+          "url": "https://de.wikipedia.org/wiki/Gro%C3%9Fe_Klette"
+        },
+        "cytat": "Die Wurzel wurde, ähnlich wie die Garten-Schwarzwurzel heute, im Mittelalter häufig als Gemüse gegessen"
+      },
+      {
+        "id": "s2492",
+        "sekcja": "czesci_rosliny",
+        "czesc": "liście",
+        "tekst": "Młode liście i łodygi rośliny są wykorzystywane jako warzywo, zwłaszcza w kuchni japońskiej (gobō), chińskiej (Niúbàng) i koreańskiej (ueong).",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Große Klette",
+          "url": "https://de.wikipedia.org/wiki/Gro%C3%9Fe_Klette"
+        },
+        "cytat": "die Wurzel, junge Laubblätter und Stängel können als Wildgemüse verwendet werden... wo sie gobō (jap. 牛蒡) genannt wird, sowie in der Küche Chinas als Niúbàng (chin. 牛蒡) oder Koreas, wo man sie ueong (kor. 우엉) nennt."
+      },
+      {
+        "id": "s2493",
+        "sekcja": "ciekawostki",
+        "czesc": "korzeń",
+        "tekst": "Z korzenia pozyskuje się olej (Klettenwurzelöl), który znajduje zastosowanie w kosmetyce.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Große Klette",
+          "url": "https://de.wikipedia.org/wiki/Gro%C3%9Fe_Klette"
+        },
+        "cytat": "Klettenwurzelöl findet in der Kosmetik Anwendung."
+      },
+      {
+        "id": "s2494",
+        "sekcja": "sklad",
+        "czesc": null,
+        "tekst": "Z korzenia wyizolowano rozpuszczalny w wodzie fruktan o silnych właściwościach przeciwutleniających, badany pod kątem farmaceutycznym.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Große Klette",
+          "url": "https://de.wikipedia.org/wiki/Gro%C3%9Fe_Klette"
+        },
+        "cytat": "Ein wasserlösliches Polysaccharid, ein sogenanntes Fructan, der Großen Klette zeigt in vitro und in vivo hohe antioxidative Wirkungen"
+      },
+      {
+        "id": "s2495",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": null,
+        "tekst": "W tradycyjnej medycynie ludowej korzeń stosowano na choroby skóry, w tym suchą skórę, łuszczycę i egzemy, a także na reumatyzm i dolegliwości wątrobowe.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Große Klette",
+          "url": "https://de.wikipedia.org/wiki/Gro%C3%9Fe_Klette"
+        },
+        "cytat": "Unter den volkstümlichen Verwendungen der Klettenwurzel als Heilpflanze finden sich Hauterkrankungen, Leberleiden, Haarausfall und rheumatische Erkrankungen."
+      },
+      {
+        "id": "s2496",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": null,
+        "tekst": "Ziołowy wyciąg zawierający arctigenin wykazał działanie antywirusowe i przeciwnowotworowe w badaniach laboratoryjnych.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Große Klette",
+          "url": "https://de.wikipedia.org/wiki/Gro%C3%9Fe_Klette"
+        },
+        "cytat": "Für Arctigenin, ein Aglykon von Arctiin ... konnten antivirale und antitumorale Wirkungen beobachtet werden."
+      },
+      {
+        "id": "s2497",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Łopian większy występuje na przydrożnych, przybocznych i w zalewowych siedliskach Europy i Azji, preferując żyzne gliniaste gleby i wysokości do 1300 m n.p.m.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Große Klette",
+          "url": "https://de.wikipedia.org/wiki/Gro%C3%9Fe_Klette"
+        },
+        "cytat": "Sie wächst an Wegrändern, Zäunen, Ruderalstellen, auf Flussschottern und in Auwäldern... Sie gedeiht am besten auf frischen, nährstoffreichen Lehm-Böden... bis in die montane Höhenstufe meist bis in Höhenlagen von 1300 Metern."
+      },
+      {
+        "id": "s2498",
+        "sekcja": "czesci_rosliny",
+        "czesc": null,
+        "tekst": "Włókna łopianu są wykorzystywane jako surowiec celulozowy.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Große Klette",
+          "url": "https://de.wikipedia.org/wiki/Gro%C3%9Fe_Klette"
+        },
+        "cytat": "Die Fasern der Großen Klette sind als Zellstoff verwendbar."
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-02",
+    "pola": {
+      "wymagania.stanowisko": {
+        "tytul": "Natura i siedlisko - Stanowisko",
+        "typ": "tekst",
+        "oryginal": "Słoneczne do półcienistego. Wymaga dużej przestrzeni.",
+        "tresc": [
+          {
+            "tekst": "Słoneczne do półcienistego, występuje na przydrożnych, przybocznych i w zalewowych siedliskach, preferując żyzne gliniaste gleby.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2497"
+            ]
+          },
+          {
+            "tekst": "Wymaga dużej przestrzeni.",
+            "zrodla": [],
+            "fakty": []
+          }
+        ],
+        "model": "groq/openai/gpt-oss-120b",
+        "wejscie": "4d95dbacc0773d41"
+      },
+      "czesci_rosliny.korzen.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Radix Bardanae: Opis surowca",
+        "typ": "tekst",
+        "oryginal": "Wykopywany jesienią (z roślin jednorocznych) lub wczesną wiosną (z dwuletnich, zanim wypuszczą pęd).",
+        "tresc": [
+          {
+            "tekst": "Wykopywany jesienią (z roślin jednorocznych) lub wczesną wiosną (z dwuletnich, zanim wypuszczą pęd).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Korzeń łopianu był w średniowieczu powszechnie spożywany jako warzywo, podobnie jak dzisiejsza czarna marchwia.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2491"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "5817d6be431c8722"
+      },
+      "czesci_rosliny.liscie.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Folium Bardanae: Opis surowca",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Młode liście i łodygi rośliny są wykorzystywane jako warzywo, zwłaszcza w kuchni japońskiej (gobō), chińskiej (Niúbàng) i koreańskiej (ueong).",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2492"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "e88d04619fd2021a"
+      },
+      "zastosowanie.rzemieslnicze": {
+        "tytul": "Praktyczne zastosowanie - Rzemiosło",
+        "typ": "tekst",
+        "oryginal": "Sok z korzenia był bazą do produkcji tradycyjnych preparatów wzmacniających czarne barwniki tkanin.",
+        "tresc": [
+          {
+            "tekst": "Sok z korzenia był bazą do produkcji tradycyjnych preparatów wzmacniających czarne barwniki tkanin.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Włókna łopianu są wykorzystywane jako surowiec celulozowy.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2498"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "016790889ce8db20"
+      },
+      "czesci_rosliny.korzen.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Radix Bardanae: Substancje czynne",
+        "typ": "lista",
+        "oryginal": [
+          "Inulina (do 45% - potężny prebiotyk)",
+          "Poliacetyleny (działanie antybiotyczne)",
+          "Fitosterole",
+          "Olejek eteryczny",
+          "Kwasy fenolowe",
+          "Sole mineralne (bogactwo potasu i magnezu)"
+        ],
+        "tresc": [
+          {
+            "tekst": "Inulina (do 45% - potężny prebiotyk)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Poliacetyleny (działanie antybiotyczne)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Fitosterole",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Olejek eteryczny",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwasy fenolowe",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Sole mineralne (bogactwo potasu i magnezu)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Z korzenia wyizolowano rozpuszczalny w wodzie fruktan o silnych właściwościach przeciwutleniających, badany pod kątem farmaceutycznym.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2494"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "1214944dec89c1f8"
+      },
+      "czesci_rosliny.korzen.wlasciwości": {
+        "tytul": "Surowce i zbiory - Radix Bardanae: Działanie",
+        "typ": "tekst",
+        "oryginal": "Silnie oczyszczające krew, żółciopędne, moczopędne, przeciwcukrzycowe (obniża cukier), przeciwbakteryjne i przeciwgrzybicze.",
+        "tresc": [
+          {
+            "tekst": "Silnie oczyszczające krew, żółciopędne, moczopędne, przeciwcukrzycowe (obniża cukier), przeciwbakteryjne i przeciwgrzybicze.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W tradycyjnej medycynie ludowej korzeń stosowano na choroby skóry, w tym suchą skórę, łuszczycę i egzemy, a także na reumatyzm i dolegliwości wątrobowe.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2495"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "9cbda91dfadb2c23"
+      },
+      "zastosowanie.medyczne": {
+        "tytul": "Praktyczne zastosowanie - Medycyna",
+        "typ": "tekst",
+        "oryginal": "Trądzik, czyraczność, łuszczyca, egzemy, łojotokowe zapalenie skóry, cukrzyca (pomocniczo), reumatyzm, kamica nerkowa, wypadanie włosów i łupież (zewnętrznie).",
+        "tresc": [
+          {
+            "tekst": "Trądzik, czyraczność, łuszczyca, egzemy, łojotokowe zapalenie skóry, cukrzyca (pomocniczo), reumatyzm, kamica nerkowa, wypadanie włosów i łupież (zewnętrznie).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Ziołowy wyciąg zawierający arctigenin wykazał działanie antywirusowe i przeciwnowotworowe w badaniach laboratoryjnych.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2496"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "414b6e787fe3c101"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "Inżynier Georges de Mestral w 1941 roku po powrocie ze spaceru z psem zauważył rzepy łopianu na swojej kurtce. Pod mikroskopem zobaczył tysiące haczyków – tak narodził się pomysł na zapięcia Velcro.",
+          "W Japonii łopian (Gobo) jest uznawany za klucz do długowieczności i zdrowego przewodu pokarmowego.",
+          "Łopian był jednym ze składników słynnej herbaty 'Essiac', używanej w tradycyjnej medycynie Kanady jako wsparcie w chorobach nowotworowych.",
+          "Korzeń łopianu w połączeniu z korzeniem mniszka tworzy klasyczny brytyjski napój bezalkoholowy 'Dandelion and Burdock', pity od średniowiecza.",
+          "W medycynie ludowej wierzono, że liść łopianu przyłożony do głowy potrafi wyciągnąć ból migrenowy."
+        ],
+        "tresc": [
+          {
+            "tekst": "Inżynier Georges de Mestral w 1941 roku po powrocie ze spaceru z psem zauważył rzepy łopianu na swojej kurtce. Pod mikroskopem zobaczył tysiące haczyków – tak narodził się pomysł na zapięcia Velcro.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W Japonii łopian (Gobo) jest uznawany za klucz do długowieczności i zdrowego przewodu pokarmowego.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Łopian był jednym ze składników słynnej herbaty 'Essiac', używanej w tradycyjnej medycynie Kanady jako wsparcie w chorobach nowotworowych.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Korzeń łopianu w połączeniu z korzeniem mniszka tworzy klasyczny brytyjski napój bezalkoholowy 'Dandelion and Burdock', pity od średniowiecza.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W medycynie ludowej wierzono, że liść łopianu przyłożony do głowy potrafi wyciągnąć ból migrenowy.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Łopian większy był wymieniony już w IX‑wiecznym „Capitulare de villis“ Karola Wielkiego jako roślina użytkowa, pod nazwą parduna.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2490"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "00f699f22de32896"
+      },
+      "zastosowanie.kosmetyczne": {
+        "tytul": "Praktyczne zastosowanie - Kosmetyka",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Z korzenia pozyskuje się olej (Klettenwurzelöl), który znajduje zastosowanie w kosmetyce.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2493"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "e10bbe341322a391"
+      }
+    },
+    "uzyte_fakty": [
+      "s2490",
+      "s2491",
+      "s2492",
+      "s2493",
+      "s2494",
+      "s2495",
+      "s2496",
+      "s2497",
+      "s2498"
     ]
   }
 }

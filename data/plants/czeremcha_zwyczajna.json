@@ -129,7 +129,7 @@
     "Kora": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Prunus_padus_bark.jpg/960px-Prunus_padus_bark.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-22",
+    "zaktualizowano": "2026-11-02",
     "w_url": true,
     "zdjecia": [
       {
@@ -181,9 +181,9 @@
   },
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-10-22",
-    "uporzadkowano": "2026-10-22",
-    "uklad": "llm:groq/qwen/qwen3.8-27b",
+    "zaktualizowano": "2026-11-02",
+    "uporzadkowano": "2026-11-02",
+    "uklad": "deterministyczny: pominiete informacje: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",
     "zrodla": [
       {
         "nazwa": "Wikipedia (pl): Czeremcha zwyczajna",
@@ -193,11 +193,25 @@
         "nr": 1
       },
       {
+        "nazwa": "Wikipedia (de): Gewöhnliche Traubenkirsche",
+        "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche_Traubenkirsche",
+        "jezyk": "de",
+        "typ": "wikipedia",
+        "nr": 2
+      },
+      {
+        "nazwa": "Wikipedia (en): Prunus padus",
+        "url": "https://en.wikipedia.org/wiki/Prunus_padus",
+        "jezyk": "en",
+        "typ": "wikipedia",
+        "nr": 3
+      },
+      {
         "nazwa": "Wikipedia (ja): エゾノウワミズザクラ",
         "url": "https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%BE%E3%83%8E%E3%82%A6%E3%83%AF%E3%83%9F%E3%82%BA%E3%82%B6%E3%82%AF%E3%83%A9",
         "jezyk": "ja",
         "typ": "wikipedia",
-        "nr": 2
+        "nr": 4
       }
     ],
     "sekcje": [
@@ -209,12 +223,42 @@
         "punkty": [
           {
             "tekst": "Czeremcha kwitnie w kwietniu i maju, wytwarzając białe, intensywnie pachnące kwiaty zebrane w grona o długości do 15 cm. Kwiaty te mają na brzegach delikatne ząbkowania.",
-            "czesc": "kwiaty",
+            "czesc": null,
             "zrodla": [
               1
             ],
             "fakty": [
               "s2155"
+            ]
+          },
+          {
+            "tekst": "Czeremcha rośnie jako gęste drzewo osiągające wysokość do 15 m, rzadko jako krzew do 10 m.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2403"
+            ]
+          },
+          {
+            "tekst": "Kora jest gładka, ciemnobrązowa i przy uszkodzeniu wydziela nieprzyjemny, ostry zapach.",
+            "czesc": "kora",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2404"
+            ]
+          },
+          {
+            "tekst": "Kwiaty czeremchy tworzą charakterystyczne, długie wiechy (総状花序) i są zapylane przez pszczoły oraz muchy.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2408"
             ]
           }
         ]
@@ -258,11 +302,19 @@
       {
         "klucz": "zastosowanie_lecznicze",
         "tytul": "Ziołolecznictwo i medycyna ludowa",
-        "podsumowanie": "Czeremchę wykorzystywano w medycynie ludowej jako środek ściągający, moczopędny i przeciwreumatyczny (kora), a także ze względu na właściwości odkażające i bakteriobójcze (liście i kwiaty).",
-        "podsumowanie_zrodla": [
-          1
-        ],
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
         "punkty": [
+          {
+            "tekst": "Gałązki czeremchy dodawano do gotowanego ryżu, aby uzyskać pożywienie wspomagające rekonwalescencję.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2060"
+            ]
+          },
           {
             "tekst": "W medycynie ludowej korę stosowano jako środek ściągający, moczopędny oraz przeciwreumatyczny.",
             "czesc": "kora",
@@ -274,7 +326,17 @@
             ]
           },
           {
-            "tekst": "Młode liście zawierają glikozydowe związki lotne, które wykazują właściwości odkażające i bakteriobójcze, ale mogą być toksyczne dla wielu owadów.",
+            "tekst": "Związki lotne wydzielane przez kwiaty zawierają dużą ilość fitoncydów o działaniu bakteriobójczym.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2152"
+            ]
+          },
+          {
+            "tekst": "Młode liście zawierają glikozydowe związki lotne, które wykazują właściwości odkażające, bakteriobójcze, ale mogą być toksyczne dla wielu owadów.",
             "czesc": "liście",
             "zrodla": [
               1
@@ -284,13 +346,13 @@
             ]
           },
           {
-            "tekst": "Związki lotne wydzielane przez kwiaty zawierają dużą ilość fitoncydów o działaniu bakteriobójczym.",
-            "czesc": "kwiaty",
+            "tekst": "Mięsko owocu jest nieszkodliwe, choć gorzkie, i po ugotowaniu może być używane do dżemów i soków.",
+            "czesc": "owoce",
             "zrodla": [
-              1
+              2
             ],
             "fakty": [
-              "s2152"
+              "s2405"
             ]
           }
         ]
@@ -305,10 +367,56 @@
             "tekst": "Korę można wykorzystać jako surowiec do barwienia tkanin.",
             "czesc": "kora",
             "zrodla": [
-              2
+              4
             ],
             "fakty": [
               "s2057"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "historia",
+        "tytul": "Historia i nazwa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Według Herodota Argippaeani przekonywali, że są ludem świętym, który z nieba ściągał kawałki chleba i ziół, a ich obóz składał się wyłącznie z namiotów namiastkowych schronionych pod koronami czeremch.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2424"
+            ]
+          },
+          {
+            "tekst": "Herodot opisywał plemeń Argippaeanych, które niegdyś z owoców czeremchy wyciskało czarny, pitny sok, a z wypreżonych resztek sporządzało rodzaj placka stanowiący podstawę ich diety.",
+            "czesc": "owoce",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2423"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "magia",
+        "tytul": "Magia i zabobony",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W miejscowości Advie w północno-wschodniej Szkocji panował tabu dotyczący użycia drewna czeremchy, uważanej za drzewo czarownic.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2428"
             ]
           }
         ]
@@ -328,6 +436,16 @@
             "fakty": [
               "s2147"
             ]
+          },
+          {
+            "tekst": "Roślina jest znana w języku niemieckim pod nazwami Ahlkirsche, Sumpfkirsche i Elsenkirsche.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2402"
+            ]
           }
         ]
       },
@@ -338,16 +456,6 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Nasiona zawierają amigdalinę (około 1,5%), która łatwo ulega rozkładowi, uwalniając silnie trujący cyjanowodór (kwas pruski).",
-            "czesc": "nasiona",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s2153"
-            ]
-          },
-          {
             "tekst": "Kora oraz pąki liściowe zawierają glikozydy cyjanogenne, takie jak prulaurazyna i prunazyna.",
             "czesc": "kora",
             "zrodla": [
@@ -355,6 +463,16 @@
             ],
             "fakty": [
               "s2154"
+            ]
+          },
+          {
+            "tekst": "Nasiona zawierają amigdalinę (około 1,5%), która łatwo ulega rozkładowi, uwalniając silnie trujący cyjanowodór (kwas pruski).",
+            "czesc": "nasiona",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2153"
             ]
           }
         ]
@@ -366,31 +484,100 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Gałązki czeremchy dodawano do gotowanego ryżu, aby uzyskać pożywienie wspomagające rekonwalescencję.",
+            "tekst": "Drewno jest jasne, sercowo żółto‑czerwone, mniej twarde niż drewno czereśniowe i znajduje zastosowanie w toczeniu, intarsjach oraz wytwarzaniu lasków i elementów narzędziowych.",
             "czesc": null,
             "zrodla": [
               2
             ],
             "fakty": [
-              "s2060"
+              "s2406"
+            ]
+          },
+          {
+            "tekst": "Roślina osiąga wysokość do 16 metrów, a w rzadkich przypadkach do 20 metrów, przy średnicy pnia wynoszącej do 80 cm.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2426"
+            ]
+          },
+          {
+            "tekst": "Wariant czeremchy komutata, nazywany w Ameryce Północnej 'mayday', jest hodowany jako drzewo ozdobne, cenione za mroźną wytrzymałość i wiosenne, pachnące białe kwiaty.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2430"
+            ]
+          },
+          {
+            "tekst": "Kwiaty czeremchy są obupłciowe i zapylane są przez pszczoły oraz muchy.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2429"
+            ]
+          },
+          {
+            "tekst": "Glikozydy, takie jak prulaurazyna i amigdalina, obecne w liściach, pędach i owocach, mogą być toksyczne dla niektórych ssaków.",
+            "czesc": "liście",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2427"
+            ]
+          },
+          {
+            "tekst": "Dojrzałe owoce są czarne, o średnicy około 8 mm, i są silnie adstringujące ze względu na wysoką zawartość garbników.",
+            "czesc": "owoce",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2425"
+            ]
+          },
+          {
+            "tekst": "Ptaki chętnie spożywają owoce czeremchy, ponieważ nie odczuwają gorzkiego posmaku wyciągowego jako czegoś nieprzyjemnego.",
+            "czesc": "owoce",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2431"
             ]
           }
         ]
       }
     ],
     "czesci": {
-      "kwiaty": [
-        "s2155",
-        "s2152"
-      ],
       "kora": [
+        "s2404",
         "s2149",
         "s2150",
         "s2057",
         "s2154"
       ],
+      "kwiaty": [
+        "s2408",
+        "s2152",
+        "s2429"
+      ],
       "liście": [
-        "s2151"
+        "s2151",
+        "s2427"
+      ],
+      "owoce": [
+        "s2405",
+        "s2423",
+        "s2425",
+        "s2431"
       ],
       "nasiona": [
         "s2153"
@@ -527,12 +714,192 @@
           "url": "https://pl.wikipedia.org/wiki/Czeremcha_zwyczajna"
         },
         "cytat": "Kwitnie w kwietniu i w maju. [...] Białe, mocno pachnące. Na brzegach korony delikatnie ząbkowane. Zebrane są w zwisający kwiatostan – grono o długości do 15 cm."
+      },
+      {
+        "id": "s2402",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "Roślina jest znana w języku niemieckim pod nazwami Ahlkirsche, Sumpfkirsche i Elsenkirsche.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gewöhnliche Traubenkirsche",
+          "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche_Traubenkirsche"
+        },
+        "cytat": "Sie wird auch Ahlkirsche, Sumpfkirsche oder Elsenkirsche genannt"
+      },
+      {
+        "id": "s2403",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Czeremcha rośnie jako gęste drzewo osiągające wysokość do 15 m, rzadko jako krzew do 10 m.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gewöhnliche Traubenkirsche",
+          "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche_Traubenkirsche"
+        },
+        "cytat": "Die raschwüchsige Gewöhnliche Traubenkirsche wächst als sommergrüner, bis zu 15 Meter hoher dichter Baum oder seltener als ein bis zu 10 Meter hoher Strauch"
+      },
+      {
+        "id": "s2404",
+        "sekcja": "opis",
+        "czesc": "kora",
+        "tekst": "Kora jest gładka, ciemnobrązowa i przy uszkodzeniu wydziela nieprzyjemny, ostry zapach.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gewöhnliche Traubenkirsche",
+          "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche_Traubenkirsche"
+        },
+        "cytat": "Die Rinde ist glatt und dunkelgrau; bei Verletzung der Rinde verströmt das Holz einen unangenehmen, scharfen Geruch."
+      },
+      {
+        "id": "s2405",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "owoce",
+        "tekst": "Mięsko owocu jest nieszkodliwe, choć gorzkie, i po ugotowaniu może być używane do dżemów i soków.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gewöhnliche Traubenkirsche",
+          "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche_Traubenkirsche"
+        },
+        "cytat": "Die roh bitter schmeckenden Früchte können gekocht als Wildobst zu Marmelade oder Säften verarbeitet werden."
+      },
+      {
+        "id": "s2406",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Drewno jest jasne, sercowo żółto‑czerwone, mniej twarde niż drewno czereśniowe i znajduje zastosowanie w toczeniu, intarsjach oraz wytwarzaniu lasków i elementów narzędziowych.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gewöhnliche Traubenkirsche",
+          "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche_Traubenkirsche"
+        },
+        "cytat": "Das Splintholz ist hell, das Kernholz braungelb/rötlich ... lässt sich gut verarbeiten und kann u. a. zum Drechseln, für Intarsien oder zur Herstellung von Spazierstöcken ... verwendet werden."
+      },
+      {
+        "id": "s2408",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Kwiaty czeremchy tworzą charakterystyczne, długie wiechy (総状花序) i są zapylane przez pszczoły oraz muchy.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): エゾノウワミズザクラ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%BE%E3%83%8E%E3%82%A6%E3%83%AF%E3%83%9F%E3%82%BA%E3%82%B6%E3%82%AF%E3%83%A9"
+        },
+        "cytat": "総状花序は雌雄同体で、ハチやハエによって授粉される。"
+      },
+      {
+        "id": "s2423",
+        "sekcja": "historia",
+        "czesc": "owoce",
+        "tekst": "Herodot opisywał plemeń Argippaeanych, które niegdyś z owoców czeremchy wyciskało czarny, pitny sok, a z wypreżonych resztek sporządzało rodzaj placka stanowiący podstawę ich diety.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Prunus padus",
+          "url": "https://en.wikipedia.org/wiki/Prunus_padus"
+        },
+        "cytat": "would pick the bean-sized fruits of a tree called \"pontic\" and squeeze from them a drinkable black juice, making afterwards, from the residue of the pressing, a type of cake."
+      },
+      {
+        "id": "s2424",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Według Herodota Argippaeani przekonywali, że są ludem świętym, który z nieba ściągał kawałki chleba i ziół, a ich obóz składał się wyłącznie z namiotów namiastkowych schronionych pod koronami czeremch.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Prunus padus",
+          "url": "https://en.wikipedia.org/wiki/Prunus_padus"
+        },
+        "cytat": "These people are wronged by no man, for they are said to be sacred; nor have they any weapon of war."
+      },
+      {
+        "id": "s2425",
+        "sekcja": "ciekawostki",
+        "czesc": "owoce",
+        "tekst": "Dojrzałe owoce są czarne, o średnicy około 8 mm, i są silnie adstringujące ze względu na wysoką zawartość garbników.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Prunus padus",
+          "url": "https://en.wikipedia.org/wiki/Prunus_padus"
+        },
+        "cytat": "The fruit is black when ripe, 8 mm diameter, with deciduous sepals; it is strongly astringent due to its tannin content."
+      },
+      {
+        "id": "s2426",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Roślina osiąga wysokość do 16 metrów, a w rzadkich przypadkach do 20 metrów, przy średnicy pnia wynoszącej do 80 cm.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Prunus padus",
+          "url": "https://en.wikipedia.org/wiki/Prunus_padus"
+        },
+        "cytat": "It is a deciduous small tree or large shrub up to 16 metres (52 ft), rarely to 20 m tall, with a trunk up to 80 cm diameter."
+      },
+      {
+        "id": "s2427",
+        "sekcja": "ciekawostki",
+        "czesc": "liście",
+        "tekst": "Glikozydy, takie jak prulaurazyna i amigdalina, obecne w liściach, pędach i owocach, mogą być toksyczne dla niektórych ssaków.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Prunus padus",
+          "url": "https://en.wikipedia.org/wiki/Prunus_padus"
+        },
+        "cytat": "The glycosides prulaurasin and amygdalin, which can be poisonous to some mammals, are present in some parts of P. padus, including the leaves, stems and fruit."
+      },
+      {
+        "id": "s2428",
+        "sekcja": "magia",
+        "czesc": null,
+        "tekst": "W miejscowości Advie w północno-wschodniej Szkocji panował tabu dotyczący użycia drewna czeremchy, uważanej za drzewo czarownic.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Prunus padus",
+          "url": "https://en.wikipedia.org/wiki/Prunus_padus"
+        },
+        "cytat": "A taboo on the use of the wood of the bird cherry was reported by natives of Advie, in northeast Scotland, who believed it to be a \"witches' tree\"."
+      },
+      {
+        "id": "s2429",
+        "sekcja": "ciekawostki",
+        "czesc": "kwiaty",
+        "tekst": "Kwiaty czeremchy są obupłciowe i zapylane są przez pszczoły oraz muchy.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Prunus padus",
+          "url": "https://en.wikipedia.org/wiki/Prunus_padus"
+        },
+        "cytat": "The flowers are hermaphroditic and pollinated by bees and flies."
+      },
+      {
+        "id": "s2430",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Wariant czeremchy komutata, nazywany w Ameryce Północnej 'mayday', jest hodowany jako drzewo ozdobne, cenione za mroźną wytrzymałość i wiosenne, pachnące białe kwiaty.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Prunus padus",
+          "url": "https://en.wikipedia.org/wiki/Prunus_padus"
+        },
+        "cytat": "It is valued for its hardiness and spring display of fragrant, white flowers."
+      },
+      {
+        "id": "s2431",
+        "sekcja": "ciekawostki",
+        "czesc": "owoce",
+        "tekst": "Ptaki chętnie spożywają owoce czeremchy, ponieważ nie odczuwają gorzkiego posmaku wyciągowego jako czegoś nieprzyjemnego.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Prunus padus",
+          "url": "https://en.wikipedia.org/wiki/Prunus_padus"
+        },
+        "cytat": "The fruit is readily eaten by birds, which do not perceive astringency as unpleasant."
       }
     ]
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-22",
+    "zaktualizowano": "2026-11-02",
     "pola": {
       "identyfikacja.cechy_kluczowe": {
         "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
@@ -545,7 +912,27 @@
         ],
         "tresc": [
           {
-            "tekst": "Kwiaty są białe, intensywnie pachnące i zebrane w długie, zwisające grona o długości do 15 cm, co odróżnia je od czeremchy amerykańskiej, u której grona są wzniesione.",
+            "tekst": "Kwiaty białe, zebrane w długie, zwisające grona (w przeciwieństwie do czeremchy amerykańskiej, u której grona są wzniesione).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kora ciemnobrunatna, prawie czarna, po zarysowaniu pachnie intensywnie migdałami/lekarstwem.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Liście eliptyczne, brzegiem drobno piłkowane, z dwoma miodnikami u nasady blaszki (na ogonku).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Owoce to kuliste, lśniące, czarne pestkowce o bardzo cierpkim smaku.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Czeremcha kwitnie w kwietniu i maju, wytwarzając białe, intensywnie pachnące kwiaty zebrane w grona o długości do 15 cm. Kwiaty te mają na brzegach delikatne ząbkowania.",
             "zrodla": [
               1
             ],
@@ -554,84 +941,81 @@
             ]
           },
           {
-            "tekst": "Kora jest ciemnobrunatna, prawie czarna i po zarysowaniu ma intensywny zapach migdałów lub leku.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Liście mają kształt eliptyczny, brzeg drobno piłkowany oraz dwa miodniki ulokowane u nasady blaszki, na ogonku.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Owoce przedstawiają kuliste, lśniące, czarne pestkowce o bardzo cierpkim smaku.",
-            "zrodla": [],
-            "fakty": []
-          }
-        ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "67f91f7d50915f12"
-      },
-      "opis": {
-        "tytul": "Opis - Opis ogólny",
-        "typ": "tekst",
-        "oryginal": "Drzewo lub duży krzew o gęstej koronie, dorastający do 15 m wysokości. Najbardziej rozpoznawalna dzięki zwisającym, białym gronom kwiatów o intensywnym, wręcz odurzającym zapachu. Kora czeremchy po potarciu wydziela charakterystyczny zapach migdałów (wynik obecności amigdaliny). Jest to roślina wskaźnikowa dla żyznych i wilgotnych siedlisk leśnych, nazywana dawniej 'kocierpką' ze względu na cierpki smak owoców.",
-        "tresc": [
-          {
-            "tekst": "Czeremcha zwyczajna to drzewo lub duży krzew o gęstej koronie, dorastający do 15 m wysokości.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Roślina ta występuje naturalnie w całej Europie, Azji Mniejszej oraz zachodniej Syberii, a w Polsce jest gatunkiem pospolitym.",
+            "tekst": "Czeremcha rośnie jako gęste drzewo osiągające wysokość do 15 m, rzadko jako krzew do 10 m.",
             "zrodla": [
-              1
+              2
             ],
             "fakty": [
-              "s2148"
+              "s2403"
             ]
           },
           {
-            "tekst": "Jest najbardziej rozpoznawalna dzięki zwisającym, białym gronom kwiatów charakteryzującym się intensywnym, wręcz odurzającym zapachem.",
-            "zrodla": [],
-            "fakty": []
+            "tekst": "Kora jest gładka, ciemnobrązowa i przy uszkodzeniu wydziela nieprzyjemny, ostry zapach.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2404"
+            ]
           },
           {
-            "tekst": "Kora czeremchy po potarciu wydziela charakterystyczny zapach migdałów, co jest wynikiem obecności amigdaliny.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Czeremcha pełni funkcję rośliny wskaźnikowej dla żyznych i wilgotnych siedlisk leśnych, a dawniej bywała nazywana 'kocierpką' ze względu na cierpki smak owoców.",
-            "zrodla": [],
-            "fakty": []
+            "tekst": "Kwiaty czeremchy tworzą charakterystyczne, długie wiechy (総状花序) i są zapylane przez pszczoły oraz muchy.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2408"
+            ]
           }
         ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "ee9a887e7d328505"
+        "model": "bez LLM: brak modelu",
+        "wejscie": "8561e092a91337a6"
       },
-      "czesci_rosliny.kora.opis_botaniczny": {
-        "tytul": "Surowce i zbiory - Cortex Pruni padi: Opis surowca",
+      "czesci_rosliny.kora.czas_zbioru": {
+        "tytul": "Surowce i zbiory - Cortex Pruni padi: Zbiór",
         "typ": "tekst",
-        "oryginal": "Kora z młodych gałęzi pozyskiwana wiosną lub jesienią.",
+        "oryginal": "Kwiecień lub Październik.",
         "tresc": [
           {
-            "tekst": "Surowcem zielarskim jest kora (Cortex Pruni padi), którą zbiera się razem z pąkami liściowymi z młodych gałązek.",
+            "tekst": "Kwiecień lub Październik.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Surowcem zielarskim jest kora (Cortex padi), którą zbiera się razem z pąkami liściowymi z młodych gałązek.",
             "zrodla": [
               1
             ],
             "fakty": [
               "s2149"
             ]
-          },
-          {
-            "tekst": "Kora z młodych gałęzi pozyskiwana wiosną lub jesienią.",
-            "zrodla": [],
-            "fakty": []
           }
         ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "db78c53950a9100e"
+        "model": "bez LLM: brak modelu",
+        "wejscie": "091647ade2cd2cd7"
+      },
+      "zastosowanie.medyczne": {
+        "tytul": "Praktyczne zastosowanie - Medycyna",
+        "typ": "tekst",
+        "oryginal": "Biegunki, nieżyty jelit, uporczywy kaszel (zapalenie oskrzeli), reumatyzm, stany zapalne układu moczowego. Zewnętrznie: do przemywania ran i oczu.",
+        "tresc": [
+          {
+            "tekst": "Biegunki, nieżyty jelit, uporczywy kaszel (zapalenie oskrzeli), reumatyzm, stany zapalne układu moczowego. Zewnętrznie: do przemywania ran i oczu.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Gałązki czeremchy dodawano do gotowanego ryżu, aby uzyskać pożywienie wspomagające rekonwalescencję.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2060"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "12adbd158b1e39bc"
       },
       "czesci_rosliny.kora.wlasciwości": {
         "tytul": "Surowce i zbiory - Cortex Pruni padi: Działanie",
@@ -650,24 +1034,6 @@
         ],
         "model": "groq/qwen/qwen3.8-27b",
         "wejscie": "9e94140f1045c7fc"
-      },
-      "czesci_rosliny.liście.wlasciwości": {
-        "tytul": "Surowce i zbiory - Liście (nowa część z sieci): Działanie",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "Młode liście zawierają glikozydowe związki lotne, które wykazują właściwości odkażające i bakteriobójcze, choć mogą być toksyczne dla wielu owadów.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s2151"
-            ]
-          }
-        ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "8fd1714fa26ad48d"
       },
       "czesci_rosliny.kwiaty.wlasciwości": {
         "tytul": "Surowce i zbiory - Flos Pruni padi: Działanie",
@@ -692,6 +1058,47 @@
         "model": "groq/openai/gpt-oss-120b",
         "wejscie": "d884042d6fcf41cb"
       },
+      "czesci_rosliny.liście.wlasciwości": {
+        "tytul": "Surowce i zbiory - Liście (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Młodsze liście zawierają glikozydowe związki lotne, które wykazują właściwości odkażające, bakteriobójcze, ale mogą być toksyczne dla wielu owadów.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2151"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "8fd1714fa26ad48d"
+      },
+      "czesci_rosliny.owoce.wlasciwości": {
+        "tytul": "Surowce i zbiory - Fructus Pruni padi: Działanie",
+        "typ": "tekst",
+        "oryginal": "Silnie ściągające, przeciwbiegunkowe, uszczelniające naczynia krwionośne, moczopędne.",
+        "tresc": [
+          {
+            "tekst": "Silnie ściągające, przeciwbiegunkowe, uszczelniające naczynia krwionośne, moczopędne.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Mięsko owocu jest nieszkodliwe, choć gorzkie, i po ugotowaniu może być używane do dżemów i soków.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2405"
+            ]
+          }
+        ],
+        "model": "ollama/SpeakLeash/bielik-1.5b-v3.0-instruct:Q8_0",
+        "wejscie": "cbc319bb827e7856"
+      },
       "zastosowanie.rzemieslnicze": {
         "tytul": "Praktyczne zastosowanie - Rzemiosło",
         "typ": "tekst",
@@ -700,7 +1107,7 @@
           {
             "tekst": "Z kory i owoców uzyskuje się naturalne barwniki (odcienie fioletu i szarości); korę można wykorzystać jako surowiec do barwienia tkanin.",
             "zrodla": [
-              2
+              4
             ],
             "fakty": [
               "s2057"
@@ -746,7 +1153,25 @@
             "fakty": []
           },
           {
-            "tekst": "Pierwotnie roślina nosiła polską nazwę „trzemcha”, a obecna nazwa „czeremcha” jest rutenizmem wprowadzonym w XVII wieku; w niektórych regionach znana jest także pod nazwami kocierba, korcipa czy śliwa kocierpka.",
+            "tekst": "Według Herodota Argippaeani przekonywali, że są ludem świętym, który z nieba ściągał kawałki chleba i ziół, a ich obóz składał się wyłącznie z namiotów namiastkowych schronionych pod koronami czeremch.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2424"
+            ]
+          },
+          {
+            "tekst": "Herodot opisywał plemeń Argippaeanych, które niegdyś z owoców czeremchy wyciskało czarny, pitny sok, a z wypreżonych resztek sporządzało rodzaj placka stanowiący podstawę ich diety.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2423"
+            ]
+          },
+          {
+            "tekst": "Pierwotnie roślina nosiła polską nazwę „trzemcha”, a obecna nazwa „czeremcha” jest rutenizmem wprowadzonym w XVII wieku. W regionach występują też lokalne określenia, takie jak kocierba, korcipa czy śliwa kocierpka.",
             "zrodla": [
               1
             ],
@@ -755,17 +1180,103 @@
             ]
           },
           {
-            "tekst": "Gałązki czeremchy dodawano do gotowanego ryżu, aby uzyskać pożywienie wspomagające rekonwalescencję.",
+            "tekst": "Roślina jest znana w języku niemieckim pod nazwami Ahlkirsche, Sumpfkirsche i Elsenkirsche.",
             "zrodla": [
               2
             ],
             "fakty": [
-              "s2060"
+              "s2402"
+            ]
+          },
+          {
+            "tekst": "Drewno jest jasne, sercowo żółto‑czerwone, mniej twarde niż drewno czereśniowe i znajduje zastosowanie w toczeniu, intarsjach oraz wytwarzaniu lasków i elementów narzędziowych.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2406"
+            ]
+          },
+          {
+            "tekst": "Roślina osiąga wysokość do 16 metrów, a w rzadkich przypadkach do 20 metrów, przy średnicy pnia wynoszącej do 80 cm.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2426"
+            ]
+          },
+          {
+            "tekst": "Wariant czeremchy komutata, nazywany w Ameryce Północnej 'mayday', jest hodowany jako drzewo ozdobne, cenione za mroźną wytrzymałość i wiosenne, pachnące białe kwiaty.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2430"
+            ]
+          },
+          {
+            "tekst": "Kwiaty czeremchy są obupłciowe i zapylane są przez pszczoły oraz muchy.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2429"
+            ]
+          },
+          {
+            "tekst": "Glikozydy, takie jak prulaurazyna i amigdalina, obecne w liściach, pędach i owocach, mogą być toksyczne dla niektórych ssaków.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2427"
+            ]
+          },
+          {
+            "tekst": "Dojrzałe owoce są czarne, o średnicy około 8 mm, i są silnie adstringujące ze względu na wysoką zawartość garbników.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2425"
+            ]
+          },
+          {
+            "tekst": "Ptaki chętnie spożywają owoce czeremchy, ponieważ nie odczuwają gorzkiego posmaku wyciągowego jako czegoś nieprzyjemnego.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2431"
             ]
           }
         ],
-        "model": "groq/openai/gpt-oss-120b",
-        "wejscie": "f529ffb3543f7150"
+        "model": "bez LLM: brak modelu",
+        "wejscie": "99871b6d6a44336a"
+      },
+      "czesci_rosliny.kora.ostrzezenia": {
+        "tytul": "Surowce i zbiory - Cortex Pruni padi: Ostrzeżenia",
+        "typ": "tekst",
+        "oryginal": "Wymaga precyzyjnego dawkowania – zawiera prekursory kwasu pruskiego (cyjanowodoru).",
+        "tresc": [
+          {
+            "tekst": "Wymaga precyzyjnego dawkowania – zawiera prekursory kwasu pruskiego (cyjanowodoru).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kora oraz pąki liściowe zawierają glikozydy cyjanogenne, takie jak prulaurazyna i prunazyna.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2154"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "b5d590dbda5a7d97"
       },
       "ostrzezenia": {
         "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
@@ -794,52 +1305,84 @@
         ],
         "model": "groq/openai/gpt-oss-120b",
         "wejscie": "c033c6e2969c8a2b"
-      },
-      "czesci_rosliny.kora.skladniki_aktywne": {
-        "tytul": "Surowce i zbiory - Cortex Pruni padi: Substancje czynne",
-        "typ": "lista",
-        "oryginal": [
-          "Glikozydy cyjanogenne (pruzyna, amigdalina)",
-          "Garbniki",
-          "Fitoncydy"
-        ],
-        "tresc": [
-          {
-            "tekst": "Kora zawiera glikozydy cyjanogenne, w tym pruzynę, amigdalinę oraz prulaurazynę i prunazynę.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s2154"
-            ]
-          },
-          {
-            "tekst": "Garbniki.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Fitoncydy.",
-            "zrodla": [],
-            "fakty": []
-          }
-        ],
-        "model": "groq/openai/gpt-oss-120b",
-        "wejscie": "1dfca3cb51937be2"
       }
     },
     "uzyte_fakty": [
       "s2057",
       "s2060",
       "s2147",
-      "s2148",
       "s2149",
       "s2150",
       "s2151",
       "s2152",
       "s2153",
       "s2154",
-      "s2155"
+      "s2155",
+      "s2402",
+      "s2403",
+      "s2404",
+      "s2405",
+      "s2406",
+      "s2408",
+      "s2423",
+      "s2424",
+      "s2425",
+      "s2426",
+      "s2427",
+      "s2429",
+      "s2430",
+      "s2431"
     ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-02",
+    "jak": "reguly",
+    "wejscie": "77aecc69d6169b9b",
+    "wstawki": [
+      {
+        "miejsce": "natura/wystepowanie",
+        "rozdzial": "Natura i siedlisko",
+        "tytul": "Występowanie i zasięg",
+        "ikona": "ra-compass",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Czeremcha występuje naturalnie w całej Europie, Azji Mniejszej oraz zachodniej Syberii, a w Polsce jest rośliną pospolitą.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2148"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          }
+        ]
+      },
+      {
+        "miejsce": "magia/czarownice",
+        "rozdzial": "Magia i zabobony",
+        "tytul": "Rośliny czarownic",
+        "ikona": "ra-cauldron",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "W miejscowości Advie w północno-wschodniej Szkocji panował tabu dotyczący użycia drewna czeremchy, uważanej za drzewo czarownic.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2428"
+            ],
+            "sekcja": "magia",
+            "czesc": null
+          }
+        ],
+        "rozdzial_ikona": "ra-cauldron",
+        "rozdzial_po": "tajemna"
+      }
+    ],
+    "duplikaty": []
   }
 }

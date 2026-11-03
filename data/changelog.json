@@ -3,6 +3,136 @@
  "opis": "Kronika Siedziby Kwiatownika - pisze ja agent wdrozen (Siedziba).",
  "wpisy": [
   {
+   "data": "2026-11-03T18:29:00+01:00",
+   "tytul": "Nowa wiedza o 21 roślinach",
+   "opis": "Siedziba zebrała 242 sprawdzone informacje (źródła: niemieckie, angielskie, hiszpańskie, francuskie, japońskie). 63 informacje z sieci trafiły do właściwych rozdziałów i podrozdziałów stron roślin.",
+   "liczby": {
+    "informacje": 242,
+    "przepisy": 0,
+    "rosliny": 21,
+    "nowe_rosliny": 0,
+    "zdjecia": 0,
+    "rozmieszczone": 63
+   },
+   "rosliny": [
+    {
+     "id": "kasztanowiec_zwyczajny",
+     "nazwa": "Kasztanowiec zwyczajny (biały)",
+     "nowe": 114,
+     "jezyki": [
+      "de",
+      "en",
+      "ja",
+      "zh"
+     ]
+    },
+    {
+     "id": "czeremcha_zwyczajna",
+     "nazwa": "Czeremcha zwyczajna",
+     "nowe": 15,
+     "jezyki": [
+      "de",
+      "en"
+     ]
+    },
+    {
+     "id": "lopian_mniejszy",
+     "nazwa": "Łopian mniejszy",
+     "nowe": 15,
+     "jezyki": [
+      "de",
+      "en",
+      "fr"
+     ]
+    },
+    {
+     "id": "barszcz_zwyczajny",
+     "nazwa": "Barszcz zwyczajny",
+     "nowe": 13,
+     "jezyki": [
+      "de",
+      "en",
+      "ru",
+      "uk"
+     ]
+    },
+    {
+     "id": "kasztan_jadalny",
+     "nazwa": "Kasztan jadalny",
+     "nowe": 12,
+     "jezyki": [
+      "de",
+      "en",
+      "es",
+      "ja"
+     ]
+    },
+    {
+     "id": "gwiazdnica_pospolita",
+     "nazwa": "Gwiazdnica pospolita",
+     "nowe": 11,
+     "jezyki": [
+      "de",
+      "en",
+      "ja",
+      "ru"
+     ]
+    },
+    {
+     "id": "lopian_wiekszy",
+     "nazwa": "Łopian większy",
+     "nowe": 9,
+     "jezyki": [
+      "de"
+     ]
+    },
+    {
+     "id": "poziomka",
+     "nazwa": "Poziomka pospolita",
+     "nowe": 9,
+     "jezyki": [
+      "de",
+      "en",
+      "ja",
+      "zh"
+     ]
+    },
+    {
+     "id": "swierzabek_bulwiasty",
+     "nazwa": "Świerząbek bulwiasty",
+     "nowe": 8,
+     "jezyki": [
+      "ru"
+     ]
+    },
+    {
+     "id": "dab_bezszypulkowy",
+     "nazwa": "Dąb bezszypułkowy",
+     "nowe": 7,
+     "jezyki": [
+      "zh"
+     ]
+    },
+    {
+     "id": "jesion_wyniosly",
+     "nazwa": "Jesion wyniosły",
+     "nowe": 6,
+     "jezyki": [
+      "ru"
+     ]
+    },
+    {
+     "id": "czosnaczek_pospolity",
+     "nazwa": "Czosnaczek pospolity",
+     "nowe": 5,
+     "jezyki": [
+      "uk"
+     ]
+    }
+   ],
+   "przepisy": []
+  },
+  {
    "data": "2026-10-30T18:14:42+01:00",
    "tytul": "Nowa wiedza o 5 roślinach i 82 nowe przepisy",
    "opis": "Siedziba zebrała 64 sprawdzone informacje (źródła: niemieckie, angielskie, japońskie). 13 informacji z sieci trafiło do właściwych rozdziałów i podrozdziałów stron roślin.",

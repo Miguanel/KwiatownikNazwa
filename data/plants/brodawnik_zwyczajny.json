@@ -91,7 +91,7 @@
   },
   "ostrzezenia": "Brak.",
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-15",
+    "zaktualizowano": "2026-11-03",
     "w_url": false,
     "zdjecia": [
       {
@@ -118,9 +118,9 @@
   },
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-09-30",
-    "uporzadkowano": "2026-09-30",
-    "uklad": "llm:gemini/gemini-3.5-flash-lite",
+    "zaktualizowano": "2026-11-03",
+    "uporzadkowano": "2026-11-03",
+    "uklad": "deterministyczny",
     "zrodla": [
       {
         "nazwa": "Wikipedia (pl): Brodawnik zwyczajny",
@@ -152,17 +152,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Prosta łodyga osiąga wysokość od 10 do 40 cm i jest wyraźnie zgrubiała pod główką kwiatową, posiadając na niej jeden lub dwa łuskowate liście.",
-            "czesc": "ziele",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s247"
-            ]
-          },
-          {
-            "tekst": "Koszyczki kwiatowe mają średnicę od 2 do 4 centymetrów, otwierają się wczesnym rankiem i zamykają po południu, a przed rozkwitnięciem są zazwyczaj pochylone w dół.",
+            "tekst": "Kwiaty Koszyczek o średnicy 2–4 cm, przeważnie pochylony w dół przed rozkwitnięciem. Po przekwitnięciu zwisły z wierzchołkiem łodygi. Kwiaty otwierają się wczesnym rankiem, a zamykają się po południu.",
             "czesc": "kwiaty",
             "zrodla": [
               1
@@ -172,7 +162,7 @@
             ]
           },
           {
-            "tekst": "W odróżnieniu od wielu form europejskich, rośliny z północnego Iranu wyróżniają się posiadaniem rzadkich dwuramiennych włosków na liściach.",
+            "tekst": "W odróżnieniu od wielu form europejskich, rośliny z północnego Iranu wyróżniają się posiadaniem rzadkich dwuramiennych włosków (tzw. pióropuszek) na liściach.",
             "czesc": "liście",
             "zrodla": [
               2
@@ -180,37 +170,33 @@
             "fakty": [
               "s256"
             ]
+          },
+          {
+            "tekst": "Łodyga Prosta, nie rozgałęziona jak u brodawnika jesiennego. Wysokość 10–40 cm. Pod główką kwiatową wyraźnie zgrubiała, z 1–2 łuskowatymi liśćmi.",
+            "czesc": "ziele",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s247"
+            ]
           }
         ]
       },
       {
         "klucz": "wystepowanie",
         "tytul": "Występowanie",
-        "podsumowanie": "Gatunek pochodzi z Europy, gdzie jest pospolity na niżu i w górach, a także został zawleczony do Ameryki Północnej. Populacje różnią się zmiennością morfologiczną w zależności od regionu występowania.",
-        "podsumowanie_zrodla": [
-          1,
-          2,
-          3
-        ],
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Gatunek ten jest w Polsce pospolity zarówno na niżu, jak i w górach, gdzie rośnie na wysokościach do 2000 metrów n.p.m., porastając żyzne gleby i łąki.",
+            "tekst": "W Polsce jest pospolity na niżu i w górach. (...) Porasta łąki, żyzne gleby. Rośnie do wysokości 2000 m n.p.m.",
             "czesc": null,
             "zrodla": [
               1
             ],
             "fakty": [
               "s249"
-            ]
-          },
-          {
-            "tekst": "Roślina pochodzi z Europy, ale występuje również jako gatunek zawleczony w całej Ameryce Północnej.",
-            "czesc": null,
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s250"
             ]
           },
           {
@@ -221,6 +207,16 @@
             ],
             "fakty": [
               "s255"
+            ]
+          },
+          {
+            "tekst": "Brodawnik zwyczajny pochodzi z Europy, ale występuje również jako gatunek zawleczony w całej Ameryce Północnej.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s250"
             ]
           }
         ]
@@ -268,13 +264,22 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "W brytyjskich badaniach nad wydajnością nektarową flory łąkowej gatunek ten zajął pierwsze miejsce wśród wieloletnich roślin nienależących do chwastów, a produkcja nektaru była niemal dwukrotnie wyższa niż u najlepiej ocenionej rośliny jednorocznej niebędącej chwastem.",
+            "tekst": "W brytyjskich badaniach nad wydajnością nektarową flory łąkowej gatunek ten zajął pierwsze miejsce wśród wieloletnich roślin nienależących do chwastów.",
             "czesc": "kwiaty",
             "zrodla": [
               3
             ],
             "fakty": [
-              "s251",
+              "s251"
+            ]
+          },
+          {
+            "tekst": "Produkcja nektaru przez brodawnika zwyczajnego była niemal dwukrotnie wyższa niż u najlepiej ocenionej rośliny jednorocznej niebędącej chwastem.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
               "s252"
             ]
           }
@@ -282,9 +287,6 @@
       }
     ],
     "czesci": {
-      "ziele": [
-        "s247"
-      ],
       "kwiaty": [
         "s248",
         "s251",
@@ -292,6 +294,9 @@
       ],
       "liście": [
         "s256"
+      ],
+      "ziele": [
+        "s247"
       ],
       "korzeń": [
         "s253"
@@ -302,7 +307,7 @@
         "id": "s247",
         "sekcja": "opis",
         "czesc": "ziele",
-        "tekst": "Prosta łodyga brodawnika zwyczajnego osiąga wysokość od 10 do 40 cm i jest wyraźnie zgrubiała pod główką kwiatową, posiadając na niej jeden lub dwa łuskowate liście.",
+        "tekst": "Łodyga Prosta, nie rozgałęziona jak u brodawnika jesiennego. Wysokość 10–40 cm. Pod główką kwiatową wyraźnie zgrubiała, z 1–2 łuskowatymi liśćmi.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Brodawnik zwyczajny",
@@ -314,7 +319,7 @@
         "id": "s248",
         "sekcja": "opis",
         "czesc": "kwiaty",
-        "tekst": "Koszyczki kwiatowe mają średnicę od 2 do 4 centymetrów, otwierają się wczesnym rankiem i zamykają po południu, a przed rozkwitnięciem są zazwyczaj pochylone w dół.",
+        "tekst": "Kwiaty Koszyczek o średnicy 2–4 cm, przeważnie pochylony w dół przed rozkwitnięciem. Po przekwitnięciu zwisły z wierzchołkiem łodygi. Kwiaty otwierają się wczesnym rankiem, a zamykają się po południu.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Brodawnik zwyczajny",
@@ -326,7 +331,7 @@
         "id": "s249",
         "sekcja": "wystepowanie",
         "czesc": null,
-        "tekst": "Gatunek ten jest w Polsce pospolity zarówno na niżu, jak i w górach, gdzie rośnie na wysokościach do 2000 metrów n.p.m., porastając żyzne gleby i łąki.",
+        "tekst": "W Polsce jest pospolity na niżu i w górach. (...) Porasta łąki, żyzne gleby. Rośnie do wysokości 2000 m n.p.m.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Brodawnik zwyczajny",
@@ -422,7 +427,7 @@
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-11-03",
     "pola": {
       "identyfikacja.cechy_kluczowe": {
         "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
@@ -435,30 +440,27 @@
         ],
         "tresc": [
           {
-            "tekst": "Łodyga (głąbik) jest pełna w środku, a nie rurkowata i pusta jak u mniszka, osiąga wysokość od 10 do 40 cm, jest wyraźnie zgrubiała pod główką kwiatową i posiada na niej jeden lub dwa łuskowate liście.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s247"
-            ]
-          },
-          {
-            "tekst": "Łodyga i liście są często pokryte sztywnymi, rozwidlonymi włoskami, przy czym rośliny z północnego Iranu wyróżniają się posiadaniem rzadkich dwuramiennych włosków na liściach.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s256"
-            ]
-          },
-          {
-            "tekst": "Brak soku mlecznego lub jest go bardzo niewiele i jest wodnisty.",
+            "tekst": "Łodyga (głąbik) jest PEŁNA w środku, a nie rurkowata i pusta jak u mniszka.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Pączki kwiatowe przed rozwinięciem zwisają ku dołowi, będąc przed rozkwitnięciem zazwyczaj pochylone w dół, podczas gdy u mniszka są wzniesione.",
+            "tekst": "Łodyga i liście są często pokryte sztywnymi, rozwidlonymi włoskami.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Brak soku mlecznego (lub jest go bardzo niewiele i jest wodnisty).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Pączki kwiatowe przed rozwinięciem zwisają ku dołowi (u mniszka są wzniesione).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwiaty Koszyczek o średnicy 2–4 cm, przeważnie pochylony w dół przed rozkwitnięciem. Po przekwitnięciu zwisły z wierzchołkiem łodygi. Kwiaty otwierają się wczesnym rankiem, a zamykają się po południu.",
             "zrodla": [
               1
             ],
@@ -467,59 +469,49 @@
             ]
           },
           {
-            "tekst": "Podczas gdy podgatunki w Alpach i Przedalpiach wykazują silną zmienność, populacje na wschodzie Iranu są morfologicznie znacznie bardziej jednostajne.",
+            "tekst": "W odróżnieniu od wielu form europejskich, rośliny z północnego Iranu wyróżniają się posiadaniem rzadkich dwuramiennych włosków (tzw. pióropuszek) na liściach.",
             "zrodla": [
               2
             ],
             "fakty": [
-              "s255"
-            ]
-          }
-        ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "b4c17630e4bcd674"
-      },
-      "opis": {
-        "tytul": "Opis - Opis ogólny",
-        "typ": "tekst",
-        "oryginal": "Bylina łąkowa bardzo często mylona z mniszkiem lekarskim ze względu na żółte koszyczki kwiatowe i rozetę liści odziomkowych. Jednak w przeciwieństwie do mniszka, liście brodawnika są zazwyczaj szorstko owłosione, a jego bezlistna łodyga nie jest dętą rurką. Tworzy typowy krajobraz tradycyjnych łąk kośnych.",
-        "tresc": [
-          {
-            "tekst": "Brodawnik zwyczajny to bylina łąkowa, która pochodzi z Europy, a jako gatunek zawleczony występuje również w całej Ameryce Północnej.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s250"
+              "s256"
             ]
           },
           {
-            "tekst": "W Polsce jest gatunkiem pospolitym zarówno na niżu, jak i w górach, porastając żyzne gleby i łąki na wysokościach do 2000 metrów n.p.m.",
+            "tekst": "Łodyga Prosta, nie rozgałęziona jak u brodawnika jesiennego. Wysokość 10–40 cm. Pod główką kwiatową wyraźnie zgrubiała, z 1–2 łuskowatymi liśćmi.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s247"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "7d90be6990bc6f50"
+      },
+      "wymagania.gleba": {
+        "tytul": "Natura i siedlisko - Gleba",
+        "typ": "tekst",
+        "oryginal": "Preferuje gleby wilgotne, łąkowe, żyzne, wapienne.",
+        "tresc": [
+          {
+            "tekst": "Preferuje gleby wilgotne, łąkowe, żyzne, wapienne.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W Polsce jest pospolity na niżu i w górach. (...) Porasta łąki, żyzne gleby. Rośnie do wysokości 2000 m n.p.m.",
             "zrodla": [
               1
             ],
             "fakty": [
               "s249"
             ]
-          },
-          {
-            "tekst": "Roślina ta słynie z tego, że jest bardzo często mylona z mniszkiem lekarskim ze względu na żółte koszyczki kwiatowe i rozetę liści odziomkowych.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Jednak w przeciwieństwie do mniszka, liście brodawnika są zazwyczaj szorstko owłosione, a jego bezlistna łodyga nie jest dętą rurką.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Brodawnik tworzy typowy krajobraz tradycyjnych łąk kośnych.",
-            "zrodla": [],
-            "fakty": []
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "77f3fc1d98dbb3e6"
+        "model": "bez LLM",
+        "wejscie": "c411be539cb16515"
       },
       "ciekawostki": {
         "tytul": "Wiedza tajemna - Ciekawostki",
@@ -543,34 +535,39 @@
             ]
           },
           {
-            "tekst": "W brytyjskich badaniach nad wydajnością nektarową flory łąkowej gatunek ten zajął pierwsze miejsce wśród wieloletnich roślin nienależących do chwastów, a produkcja nektaru była niemal dwukrotnie wyższa niż u najlepiej ocenionej rośliny jednorocznej niebędącej chwastem.",
+            "tekst": "W brytyjskich badaniach nad wydajnością nektarową flory łąkowej gatunek ten zajął pierwsze miejsce wśród wieloletnich roślin nienależących do chwastów.",
             "zrodla": [
               3
             ],
             "fakty": [
-              "s251",
+              "s251"
+            ]
+          },
+          {
+            "tekst": "Produkcja nektaru przez brodawnika zwyczajnego była niemal dwukrotnie wyższa niż u najlepiej ocenionej rośliny jednorocznej niebędącej chwastem.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
               "s252"
             ]
           }
         ],
-        "model": "groq/openai/gpt-oss-120b",
+        "model": "bez LLM",
         "wejscie": "8457500efa004513"
       },
-      "permakultura.funkcje": {
-        "tytul": "Cykl życia i ekosystem - Permakultura - funkcje",
-        "typ": "lista",
-        "oryginal": [
-          "Stabilizacja luźnych gleb łąkowych.",
-          "Pokarm dla bydła."
-        ],
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": "Brak.",
         "tresc": [
           {
-            "tekst": "Stabilizacja luźnych gleb łąkowych.",
+            "tekst": "Brak.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Pokarm dla bydła, gdyż roślina jest chętnie zjadana przez bydło, które potrafi przeżuwać przylegające liście, ale zwykle zostawia w tyle twardy, włóknisty łodygowy głąb ich.",
+            "tekst": "Roślina jest chętnie zjadana przez bydło, które potrafi przeżuwać przylegające liście, ale zwykle zostawia w tyle twardy, włóknisty łodygowy głąbich.",
             "zrodla": [
               2
             ],
@@ -579,21 +576,59 @@
             ]
           }
         ],
-        "model": "groq/openai/gpt-oss-120b",
-        "wejscie": "8d4c238bf07be1b7"
+        "model": "bez LLM",
+        "wejscie": "440e506c00cfc996"
       }
     },
     "uzyte_fakty": [
       "s247",
       "s248",
       "s249",
-      "s250",
       "s251",
       "s252",
       "s253",
       "s254",
-      "s255",
       "s256"
     ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-03",
+    "jak": "reguly",
+    "wejscie": "d791301f03106fde",
+    "wstawki": [
+      {
+        "miejsce": "natura/wystepowanie",
+        "rozdzial": "Natura i siedlisko",
+        "tytul": "Występowanie i zasięg",
+        "ikona": "ra-compass",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Podczas gdy podgatunki w Alpach i Przedalpiach wykazują silną zmienność, populacje na wschodzie Iranu są morfologicznie znacznie bardziej jednostajne.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s255"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          },
+          {
+            "tekst": "Brodawnik zwyczajny pochodzi z Europy, ale występuje również jako gatunek zawleczony w całej Ameryce Północnej.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s250"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          }
+        ]
+      }
+    ],
+    "duplikaty": []
   }
 }

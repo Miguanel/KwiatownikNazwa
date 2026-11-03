@@ -104,7 +104,10 @@
     "zadania": [
       {
         "czynnosc": "Zbiór młodych pędów kulinarnych",
-        "miesiace": [4, 5],
+        "miesiace": [
+          4,
+          5
+        ],
         "opis": "Zbiór bardzo młodych, soczystych pędów do bezpośredniego spożycia w sałatkach (przed wykształceniem pąków kwiatowych).",
         "faza_ksiezyca": "Księżyc przybywający",
         "pora_dnia": "Poranek",
@@ -113,7 +116,11 @@
       },
       {
         "czynnosc": "Główny zbiór ziela",
-        "miesiace": [6, 7, 8],
+        "miesiace": [
+          6,
+          7,
+          8
+        ],
         "opis": "Ścinanie wierzchołków pędów (15-20 cm) w okresie pełni kwitnienia. Używać nożyc, by nie wyrywać rośliny z korzeniami.",
         "faza_ksiezyca": "Pełnia",
         "pora_dnia": "Suche popołudnie (w pełnym słońcu)",
@@ -122,7 +129,11 @@
       },
       {
         "czynnosc": "Suszenie pędów",
-        "miesiace": [6, 7, 8],
+        "miesiace": [
+          6,
+          7,
+          8
+        ],
         "opis": "Suszyć cienkimi warstwami w przewiewnym, ocienionym miejscu. Należy unikać ugniatania wilgotnego ziela, gdyż zaparzy się i zczernieje.",
         "faza_ksiezyca": "Księżyc ubywający",
         "pora_dnia": "Dowolna",
@@ -131,5 +142,209 @@
       }
     ]
   },
-  "ostrzezenia": "Roślina uchodzi za wyjątkowo bezpieczną. Należy zachować ostrożność i umiar w przypadku współistnienia chorób wymagających leczenia silnymi lekami diuretycznymi, aby nie obciążyć zbytnio nerek. Zawsze zbieraj surowiec z miejsc odległych od dróg asfaltowych."
+  "ostrzezenia": "Roślina uchodzi za wyjątkowo bezpieczną. Należy zachować ostrożność i umiar w przypadku współistnienia chorób wymagających leczenia silnymi lekami diuretycznymi, aby nie obciążyć zbytnio nerek. Zawsze zbieraj surowiec z miejsc odległych od dróg asfaltowych.",
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-11-02",
+    "uporzadkowano": "2026-11-02",
+    "uklad": "deterministyczny: punkt [3] odbiega od oryginalow",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (de): Wiesen-Labkraut",
+        "url": "https://de.wikipedia.org/wiki/Wiesen-Labkraut",
+        "jezyk": "de",
+        "typ": "wikipedia",
+        "nr": 1
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "wystepowanie",
+        "tytul": "Występowanie",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W Alpach Allgäus, w części tyrolskiej, roślina spotykana jest na wysokościach sięgających 1800 metrów n.p.m., preferując żyzne, wilgotne gleby gliniaste na obrzeżach lasów i polan.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2512"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "czesci_rosliny",
+        "tytul": "Części rośliny i surowce",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Taksonomicznie odróżnia się ją od przytulii białej (Galium album) mniejszą liczbą chromosomów (2n = 22 względem 44 u gatunku białego), co utrudnia pewne zidentyfikowanie pospolitego gatunku w terenie.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2513"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Dojrzewające latem nasiona po uprażeniu można stosować jako aromatyczną kawe zastępczą.",
+            "czesc": "nasiona",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2511"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "nasiona": [
+        "s2511"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s2511",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "nasiona",
+        "tekst": "Dojrzewające latem nasiona po uprażeniu można stosować jako aromatyczną kawe zastępczą.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Wiesen-Labkraut",
+          "url": "https://de.wikipedia.org/wiki/Wiesen-Labkraut"
+        },
+        "cytat": "Im August und September reifen die Samen, die geröstet ein aromatischer Kaffeeersatz sind."
+      },
+      {
+        "id": "s2512",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "W Alpach Allgäus, w części tyrolskiej, roślina spotykana jest na wysokościach sięgających 1800 metrów n.p.m., preferując żyzne, wilgotne gleby gliniaste na obrzeżach lasów i polan.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Wiesen-Labkraut",
+          "url": "https://de.wikipedia.org/wiki/Wiesen-Labkraut"
+        },
+        "cytat": "In den Allgäuer Alpen steigt es im Tiroler Teil zwischen Dürnau (Gemeinde Reutte) und Vorderer Mutte bis zu einer Höhenlage von 1800 Metern auf."
+      },
+      {
+        "id": "s2513",
+        "sekcja": "czesci_rosliny",
+        "czesc": null,
+        "tekst": "Taksonomicznie odróżnia się ją od przytulii białej (Galium album) mniejszą liczbą chromosomów (2n = 22 względem 44 u gatunku białego), co utrudnia pewne zidentyfikowanie pospolitego gatunku w terenie.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Wiesen-Labkraut",
+          "url": "https://de.wikipedia.org/wiki/Wiesen-Labkraut"
+        },
+        "cytat": "Sie besitzen aber verschiedene Chromosomenzahlen. Galium album hat 2n = 44, Galium mollugo 2n = 22. ... muss jede Angabe zu Galium mollugo erst überprüft werden, ob sie auch für diese spezielle Art zutrifft."
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-02",
+    "pola": {
+      "wymagania.gleba": {
+        "tytul": "Natura i siedlisko - Gleba",
+        "typ": "tekst",
+        "oryginal": "Niewymagająca. Rośnie na glebach piaszczystych, gliniastych, a także na suchych i jałowych nieużytkach. Toleruje zasolenie (stąd jej obecność przy drogach).",
+        "tresc": [
+          {
+            "tekst": "Niewymagająca.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Rośnie na glebach piaszczystych, gliniastych, a także na suchych i jałowych nieużytkach.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Toleruje zasolenie (stąd jej obecność przy drogach).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W Alpach Allgäus, w części tyrolskiej, roślina spotykana jest na wysokościach sięgających 1800 metrów n.p.m., preferując żyzne, wilgotne gleby gliniaste na obrzeżach lasów i polan.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2512"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "d5e405aa5d9062be"
+      },
+      "czesci_rosliny.nasiona.wlasciwości": {
+        "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Dojrzewające latem nasiona po uprażeniu można stosować jako aromatyczną kawe zastępczą.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2511"
+            ]
+          }
+        ],
+        "model": "bez LLM: brak modelu",
+        "wejscie": "3ef7bfb10fd9f13a"
+      }
+    },
+    "uzyte_fakty": [
+      "s2511",
+      "s2512"
+    ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-02",
+    "jak": "reguly",
+    "wejscie": "7c695b5f1bbc3ed9",
+    "wstawki": [
+      {
+        "miejsce": "rozpoznawanie/pomylki",
+        "rozdzial": "Rozpoznawanie w terenie",
+        "tytul": "Możliwe pomyłki",
+        "ikona": "ra-skull",
+        "nowy": false,
+        "punkty": [
+          {
+            "tekst": "Taksonomicznie odróżnia się ją od przytulii białej (Galium album) mniejszą liczbą chromosomów (2n = 22 względem 44 u gatunku białego), co utrudnia pewne zidentyfikowanie pospolitego gatunku w terenie.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2513"
+            ],
+            "sekcja": "czesci_rosliny",
+            "czesc": null
+          }
+        ]
+      }
+    ],
+    "duplikaty": []
+  }
 }
