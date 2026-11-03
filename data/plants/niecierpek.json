@@ -165,7 +165,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "W medycynie ludowej i ziołolecznictwie tradycyjnie stosowano napar z pąków (płatki) niecierpka, parząc je około 10 minut we wrzątku.",
+            "tekst": "Suszone płatki wsyp do szklanki. Zalej wrzątkiem i parz pod przykryciem (lub bez) ok. 10 minut.",
             "czesc": "pąki",
             "zrodla": [
               1
@@ -175,7 +175,7 @@
             ]
           },
           {
-            "tekst": "Płatki niecierpka są łączone z innymi roślinami, takimi jak dzika róża, wrzos, dziewanna, bławatek, jaśmin, wierzba czy niecierpek, w celu przygotowania smakowitych naparów ziołowych.",
+            "tekst": "Dr Henryk Różański poleca również przygotowanie naparu z mieszanki płatków dzikiej róży z ziołami takimi jak kwiat wrzosu, kwiat dziewanny, bławatka lub jaśminu, ziele wierzbówki lub wierzbownicy czy niecierpka.",
             "czesc": "pąki",
             "zrodla": [
               1
@@ -198,7 +198,7 @@
         "id": "s2555",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": "pąki",
-        "tekst": "W medycynie ludowej i ziołolecznictwie tradycyjnie stosowano napar z pąków (płatki) niecierpka, parząc je około 10 minut we wrzątku.",
+        "tekst": "Suszone płatki wsyp do szklanki. Zalej wrzątkiem i parz pod przykryciem (lub bez) ok. 10 minut.",
         "jezyk": "pl-PL",
         "zrodlo": {
           "nazwa": "stronazdrowia.pl",
@@ -210,7 +210,7 @@
         "id": "s2556",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": "pąki",
-        "tekst": "Płatki niecierpka są łączone z innymi roślinami, takimi jak dzika róża, wrzos, dziewanna, bławatek, jaśmin, wierzba czy niecierpek, w celu przygotowania smakowitych naparów ziołowych.",
+        "tekst": "Dr Henryk Różański poleca również przygotowanie naparu z mieszanki płatków dzikiej róży z ziołami takimi jak kwiat wrzosu, kwiat dziewanny, bławatka lub jaśminu, ziele wierzbówki lub wierzbownicy czy niecierpka.",
         "jezyk": "pl-PL",
         "zrodlo": {
           "nazwa": "stronazdrowia.pl",
@@ -230,7 +230,7 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "W medycynie ludowej i ziołolecznictwie tradycyjnie stosowano napar z pąków niecierpka, parząc je około 10 minut we wrzątku.",
+            "tekst": "Suszone płatki wsyp do szklanki. Zalej wrzątkiem i parz pod przykryciem (lub bez) ok. 10 minut.",
             "zrodla": [
               1
             ],
@@ -239,7 +239,7 @@
             ]
           },
           {
-            "tekst": "Płatki tej rośliny są łączone z innymi gatunkami, takimi jak dzika róża, wrzos, dziewanna, bławatek, jaśmin czy wierzba, w celu przygotowania naparów ziołowych.",
+            "tekst": "Dr Henryk Różański poleca również przygotowanie naparu z mieszanki płatków dzikiej róży z ziołami takimi jak kwiat wrzosu, kwiat dziewanny, bławatka lub jaśminu, ziele wierzbówki lub wierzbownicy czy niecierpka.",
             "zrodla": [
               1
             ],
@@ -248,7 +248,7 @@
             ]
           }
         ],
-        "model": "groq/qwen/qwen3.8-27b",
+        "model": "bez LLM",
         "wejscie": "79743a6042cb1484"
       }
     },

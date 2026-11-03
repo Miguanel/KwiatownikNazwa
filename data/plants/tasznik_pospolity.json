@@ -141,18 +141,46 @@
     "uklad": "deterministyczny",
     "zrodla": [
       {
+        "nazwa": "Wikipedia (pl): Tasznik pospolity",
+        "url": "https://pl.wikipedia.org/wiki/Tasznik_pospolity",
+        "jezyk": "pl",
+        "typ": "wikipedia",
+        "nr": 1
+      },
+      {
+        "nazwa": "Wikipedia (de): Gewöhnliches Hirtentäschel",
+        "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliches_Hirtent%C3%A4schel",
+        "jezyk": "de",
+        "typ": "wikipedia",
+        "nr": 2
+      },
+      {
+        "nazwa": "Wikipedia (en): Capsella bursa-pastoris",
+        "url": "https://en.wikipedia.org/wiki/Capsella_bursa-pastoris",
+        "jezyk": "en",
+        "typ": "wikipedia",
+        "nr": 3
+      },
+      {
+        "nazwa": "Wikipedia (ja): ナズナ",
+        "url": "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%82%BA%E3%83%8A",
+        "jezyk": "ja",
+        "typ": "wikipedia",
+        "nr": 4
+      },
+      {
         "nazwa": "Wikipedia (zh): 荠菜",
         "url": "https://zh.wikipedia.org/wiki/%E8%8D%A0%E8%8F%9C",
         "jezyk": "zh",
         "typ": "wikipedia",
-        "nr": 1
+        "nr": 5
       },
       {
         "nazwa": "stronazdrowia.pl",
         "url": "https://stronazdrowia.pl/te-ziola-zebralam-w-weekend-na-podlasiu-5-chwastow-ktore-warto-zbierac-wiosna-przygotujesz-z-nich-lecznicze-napary-syropy-i/ar/c14-18445165",
         "jezyk": "pl-PL",
         "typ": "strona",
-        "nr": 2
+        "nr": 6
       }
     ],
     "sekcje": [
@@ -163,13 +191,131 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
+            "tekst": "Jej korzenie sięgają głębokości do 90 centymetrów.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2175"
+            ]
+          },
+          {
             "tekst": "Roślina ma białe, smukłe korzenie główne oraz wzniesiony główny pęd, z którego odchodzą cienkie, boczne łodygi. Liście łodygowe mają kształt podłużny lub liniowy, z listkami bazalnymi przylegającymi do łodygi, często z ząbkowanymi krawędziami i gęstym owłosieniem.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2461"
+            ]
+          },
+          {
+            "tekst": "Główny korzeń rośliny ma białą barwę i jest smukły. W pierwszym etapie życia liśćki włośnikowe chodzą promienie po powierzchni ziemi, a liście pędowe są wydłużone lub równoległoboczne.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2180"
+            ]
+          },
+          {
+            "tekst": "Pojedynczy, biały korzeń palowy, często rozwidlający się na głębokości ok. 10 cm. W luźnych glebach osiąga ok. 33 cm, w zbitych jest krótszy.",
+            "czesc": "korzeń",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2590"
+            ]
+          },
+          {
+            "tekst": "Kwiaty, które pojawiają się na Wyspach Brytyjskich o każdej porze roku, są białe i niewielkie, mają średnicę 2,5 mm (1⁄8 cala), cztery płatki i sześć pręcików.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2595"
+            ]
+          },
+          {
+            "tekst": "Owoc Trójkątna, silnie spłaszczona łuszczynka z sercowatym (łukowatym) wycięciem na wierzchołku z trwałą, krótką szyjką.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1906"
+            ]
+          },
+          {
+            "tekst": "Kwiaty, które na Wyspach Brytyjskich pojawiają się w każdym miesiącu roku, są białe i małe, o średnicy 2,5 mm (1/8 cala), z czterema płatkami i sześcioma pręcikami. Znajdują się one w luźnych gronach i tworzą spłaszczone, dwukomorowe strąki nasienne, znane jako silikule, które mają około 6 mm długości i kształt od trójkątnego do",
+            "czesc": "owoce",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1914"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "wystepowanie",
+        "tytul": "Występowanie",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Współcześnie tasznik pospolity jest gatunkiem kosmopolitycznym, tj. rozprzestrzenionym na całym świecie.",
             "czesc": null,
             "zrodla": [
               1
             ],
             "fakty": [
-              "s2461"
+              "s1907"
+            ]
+          },
+          {
+            "tekst": "W Polsce gatunek występuje pospolicie na całym niżu i w niższych położeniach górskich, rzadko pojawiając się w piętrze kosodrzewiny.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1908"
+            ]
+          },
+          {
+            "tekst": "Pochodzi ze wschodniej Europy i Azji Mniejszej, ale w wielu częściach świata uległa naturalizacji i jest uważana za pospolity chwast, zwłaszcza w chłodniejszych klimatach, w tym na Wyspach Brytyjskich (gdzie uznaje się ją za archeofit), w Ameryce Północnej i Chinach, a także w regionie Morza Śródziemnego i Afryce Północnej.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2594"
+            ]
+          },
+          {
+            "tekst": "Pochodzi z Europy Wschodniej i Azji Mniejszej, a obecnie jest powszechnie spotykana na całym świecie.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2181"
+            ]
+          },
+          {
+            "tekst": "Występuje w strefach umiarkowanych na całym świecie, preferuje ciepło, ale charakteryzuje się dużą odpornością na mróz. Występuje dziko na polach, można ją również uprawiać.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2620"
             ]
           }
         ]
@@ -181,21 +327,526 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Liście, ziele i kwiaty zawsze zbiera się dni bezdeszczowe i po obeschnięciu rosy. Nie wolno zbierać mokrych kwiatów, liści i ziela.",
+            "tekst": "Nasiona Jajowate lub eliptyczne, bocznie spłaszczone, u dołu zaokrąglone, a na szczycie ścięte i tu z mięsistym, białawym znaczkiem (hilum).",
+            "czesc": "nasiona",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1909"
+            ]
+          },
+          {
+            "tekst": "Jako środek leczniczy stosuje się suszone, zebrane w okresie kwitnienia nadziemne części rośliny (Bursae pastoris herba).",
             "czesc": "ziele",
             "zrodla": [
               2
+            ],
+            "fakty": [
+              "s2168"
+            ]
+          },
+          {
+            "tekst": "Liście, ziele i kwiaty zawsze zbiera się dni bezdeszczowe i po obeschnięciu rosy. Nie wolno zbierać mokrych kwiatów, liści i ziela.",
+            "czesc": "ziele",
+            "zrodla": [
+              6
             ],
             "fakty": [
               "s2477"
             ]
           }
         ]
+      },
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Jest także rośliną olejo- i miododajną, znajduje zastosowanie w biotechnologii, biomonitoringu, fitoremediacji gleb.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1910"
+            ]
+          },
+          {
+            "tekst": "Składniki to: aminokwasy i białka (ok. 32 %), flawonoidy (m.in. kempferol, luteolina, diosmetyna, kwercetyna, rutyna, diosmina), kwasy fenolokarboksylowe, sole potasu i wapnia, witamina C oraz związki terpenoidowe.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2169"
+            ]
+          },
+          {
+            "tekst": "Z tej rośliny wyizolowano kwas fumarowy.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2596"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W alzackim rękopisie z drugiej połowy XV wieku (Cpg 226) jako sposób na krwawienie z nosa zalecano przyłożenie garści zioła do nosa.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2173"
+            ]
+          },
+          {
+            "tekst": "podobno w celu zatamowania krwawienia",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1915"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "barwienie",
+        "tytul": "Barwienie i rzemiosło",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W Azji spożywa się ją jako warzywo liściaste i uprawia jako komercyjną roślinę spożywczą.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1916"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "historia",
+        "tytul": "Historia i nazwa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Gatunek charakteryzuje się dużą zmiennością budowy... Nazwa rodzajowa Capsella stanowi zdrobnienie od łacińskiego słowa capsa znaczącego „schowek, torbę”, z kolei nazwa gatunkowa búrsa-pastóris to po łacinie „torba pasterska” i po raz pierwszy opublikowana została w odniesieniu do tego gatunku przez",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2160"
+            ]
+          },
+          {
+            "tekst": "W przeszłości nazywano to po łacinie (obok innych nazw, takich jak zapożyczona nazwa „Crispula”, używana również w odniesieniu do innych roślin) „Bursa pastoris”... co nawiązuje do tego, że strączki mają kształt przypominający torby dawnych pasterzy",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2165"
+            ]
+          },
+          {
+            "tekst": "W starożytności i w średniowieczu roślina ta, znana również pod nazwami Thlaspi (por. również Thlaspi) i Mia, była stosowana w celach leczniczych jako środek przeczyszczający i wymiotny, w celu wywołania miesiączki, jako środek poronny oraz w celu usunięcia szkodliwych płynów z jelit.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2167"
+            ]
+          },
+          {
+            "tekst": "Pogląd ten został odrzucony przez niemieckich prekursorów botaniki – Otto Brunfelsa, Hieronymusa Bocka i Leonharta Fuchsa. Ponieważ nie znaleźli oni u Dioskuridesa rośliny odpowiadającej pospolitej torebce pasterskiej, oparli się wyłącznie na informacjach pochodzących z medycyny ludowej.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2174"
+            ]
+          },
+          {
+            "tekst": "Jest to jeden ze składników symbolicznej potrawy spożywanej podczas japońskiego wiosennego święta Nanakusa-no-sekku.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1917"
+            ]
+          },
+          {
+            "tekst": "Uważa się, że jest to prehistoryczna roślina naturalizowana, która pojawiła się w Japonii wraz z wprowadzeniem uprawy pszenicy.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2186"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kultura",
+        "tytul": "Wierzenia i tradycje",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Nazwa „taszka, taszki” używana w Wielkopolsce i Małopolsce pochodzi od dawnego znaczenia odnoszącego się do sakiewki, kieski, kieszeni.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1911"
+            ]
+          },
+          {
+            "tekst": "Herb: Yatsunazuna – herb przedstawiający osiem liści rzepiku ułożonych w kształt rozety.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2188"
+            ]
+          },
+          {
+            "tekst": "W języku japońskim funkcjonuje idiom „tam nawet penpengusa nie urośnie”, nawiązujący do faktu, że tasznik rośnie nawet na skrajnie wyjałowionych nieużytkach – powiedzenie to oznacza miejsce kompletnie zrujnowane, na którym nie ocalało nic.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2191"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "magia",
+        "tytul": "Magia i zabobony",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W Japonii w epoce Edo praktykowano zwyczaj wieszania pęczków ziela tasznika pod papierowymi lampionami w ósmym dniu czwartego miesiąca księżycowego, co miało magicznie odstraszać uciążliwe owady.",
+            "czesc": "ziele",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2189"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "nazwy_ludowe",
+        "tytul": "Nazwy ludowe",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Nazwa „kaleta pasterska, kaleta, kaletka” znaczyła skórzaną torebkę na pieniądze, sakiewkę noszoną przy pasie. Nazwa „gęsia rzeżucha” (od niem. Gansecrase), „pastusza trawa” i „strzelica” (okolice Międzyrzeca), „krwawnik” (ze względu na zastosowanie przy tamowaniu krwawień), „stulidupa” (okolice Wie",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1912"
+            ]
+          },
+          {
+            "tekst": "Bardziej lokalnie stosowane były nazwy „gęsia rzeżucha” (od niem. Gansecrase), „pastusza trawa” i „strzelica” (okolice Międzyrzeca), „krwawnik” (ze względu na zastosowanie przy tamowaniu krwawień), „stulidupa” (okolice Wieliczki, od zastosowania w leczeniu biegunki)...",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2162"
+            ]
+          },
+          {
+            "tekst": "„wszy, wszybój” (okolice Wołkowyska, ze względu na stosowanie do tępienia wszy u bydła), „motyle, motylki” (Kaszuby, od kształtu owoców), „bydlnik” (Lubelszczyzna), „sumki pastusze” (Białostocczyzna), „gryczka” (Mazowsze), „tobołki pastusze” (Kielecczyzna).",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2163"
+            ]
+          },
+          {
+            "tekst": "W odniesieniu do zwykłej torebki pasterskiej… znanych jest wiele nazw ludowych, takich jak „krwawica”, „zioło torebkowe”, „torebka krawiecka”, „łyżeczka”, „zioło sercowe” i „gorczyca chłopska”.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2166"
+            ]
+          },
+          {
+            "tekst": "W języku chińskim roślina znana jest pod ludowymi nazwami takimi jak 'Hushengcao' (roślina opiekująca się życiem), 'Dice' (ziemska warzywna), 'Dimicai' (ziemska marchewka) oraz 'Lingzhacai'.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2179"
+            ]
+          },
+          {
+            "tekst": "„Penpen” to onomatopeja naśladująca dźwięk gry na shamisenie; nazwa ta pochodzi od tego, że kształt owoców rosnących pod kwiatami bardzo przypomina pałeczki do gry na shamisenie. Podobnie nazwa „shamisengusa” wywodzi się z faktu, że owoce tej rośliny przypominają pałeczki do gry na shamisenie.",
+            "czesc": "owoce",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2187"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Rosnąc w uprawach, jest szkodliwy głównie dlatego, że ułatwia porażanie ich przez pasożyty i patogeny, dla których jest żywicielem pośrednim.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1913"
+            ]
+          },
+          {
+            "tekst": "Torebka pasterska zwyczajna bardzo często pada ofiarą Albugo candida, czyli białej rdzy, co powoduje wyraźną zmianę jej pokroju.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2176"
+            ]
+          },
+          {
+            "tekst": "Również Plasmodiophora brassicae, czynnik wywołujący guzy kapustne i budzący strach szkodnik w uprawie warzyw, atakuje torebkę pasterską.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2177"
+            ]
+          },
+          {
+            "tekst": "Mimo istnienia morfologicznych różnic diagnostycznych gatunki z rodzaju Capsella bywają z racji swej zmienności, dużej zwłaszcza u tasznika pospolitego, bardzo do siebie podobne i konieczne jest stosowanie metod molekularnych dla ich identyfikacji.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2164"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "ciekawostki",
+        "tytul": "Ciekawostki",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Znaleziska nasion tasznika na Wyspach Brytyjskich z plejstocenu wskazują na to, że tasznik pospolity mógł stanowić w Europie północno-zachodniej element ówczesnej flory późnoglacjalnej lub preborealnej.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2589"
+            ]
+          },
+          {
+            "tekst": "Tasznik pospolity od Capsella thracica i C. grandiflora różni się krótką szyjką słupka (poniżej 0,5 mm, podczas gdy u tych dwóch osiąga 0,7 mm), C.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2591"
+            ]
+          },
+          {
+            "tekst": "Gatunek charakteryzuje się dużą zmiennością budowy, w zależności od warunków środowiska, a także wieku rośliny i pory roku.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2592"
+            ]
+          },
+          {
+            "tekst": "W kuchni koreańskiej (pod nazwą naengi) do zup i sałatek używa się młodych liści oraz korzeni tej rośliny.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2171"
+            ]
+          },
+          {
+            "tekst": "Pęcherzyca pospolita stanowi obiekt badań nad rozwojem embrionalnym – z jednej strony ze względu na przezroczystą łupinę nasienną, z drugiej zaś dlatego, że w jednym kwiatostanie można zaobserwować wszystkie fazy rozwoju, od niezapłodnionej komórki jajowej w pączku aż po dojrzałe nasiona.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2178"
+            ]
+          },
+          {
+            "tekst": "Kwitnie wiosną, tworząc pojedyncze małe białe kwiaty w kłosowatych kwiatostanach, mających cztery białe płatki.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2183"
+            ]
+          },
+          {
+            "tekst": "Preferuje ciepło, ale jest bardzo odporna na mróz.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2185"
+            ]
+          },
+          {
+            "tekst": "Roślinę tę określono mianem proto-mięsożercy, ponieważ jej nasiona zawierają śluz, który zatrzymuje nicienie.",
+            "czesc": "nasiona",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2593"
+            ]
+          },
+          {
+            "tekst": "Młoda roślina chętnie wysiewa się w polach, a łodyga jest w stanie rosnąć, jeśli jest wystarczająca ilość światła i gleba nie jest zbyt sucha.",
+            "czesc": "nasiona",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2182"
+            ]
+          },
+          {
+            "tekst": "Po zawilgoceniu nasiona wydzielają lepką substancję, która przyciąga i przykleja owady, a także może wchłaniać ich składniki odżywcze.",
+            "czesc": "nasiona",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2184"
+            ]
+          },
+          {
+            "tekst": "W kuchni kontynentalnych Chin nasiona, liście i korzenie rośliny są łatwo dostępne jako składnik dań smażonych, gotowanych lub jedzonych na zimno, często stanowiąc element nadzienia do knedli.",
+            "czesc": "nasiona",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2460"
+            ]
+          },
+          {
+            "tekst": "W różnych dawnych źródłach gatunek określany był nazwami nawiązującymi głównie do kształtu owoców: „bydelnik, bygielnik, czyszpula, gygielnyk, igielnik, kaleta pasterska, mieszki, taszki, tobołki, pastewne ziele, kaletnik, kaszka, podbiał polny”.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2161"
+            ]
+          },
+          {
+            "tekst": "Po zerwaniu łodygi kwiatowej z owocami należy pociągnąć za szypułkę owocu w dół, co spowoduje jej odłamanie, a owoc zawiśnie na skórce. Gdy wiele owoców zwisa w ten sposób, należy obrócić łodygę kwiatową (jak przy graniu na bębnie „denden-daiko”), a owoce, ocierając się o siebie, wydadzą delikatny dźwięk „czara-czara”.",
+            "czesc": "owoce",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2190"
+            ]
+          }
+        ]
       }
     ],
     "czesci": {
+      "korzeń": [
+        "s2590"
+      ],
+      "kwiaty": [
+        "s2595"
+      ],
+      "owoce": [
+        "s1906",
+        "s1914",
+        "s2187",
+        "s2164",
+        "s2161",
+        "s2190"
+      ],
+      "nasiona": [
+        "s1909",
+        "s2593",
+        "s2182",
+        "s2184",
+        "s2460"
+      ],
       "ziele": [
-        "s2477"
+        "s2168",
+        "s2477",
+        "s2189"
       ]
     },
     "fakty": [
@@ -222,6 +873,629 @@
           "url": "https://stronazdrowia.pl/te-ziola-zebralam-w-weekend-na-podlasiu-5-chwastow-ktore-warto-zbierac-wiosna-przygotujesz-z-nich-lecznicze-napary-syropy-i/ar/c14-18445165"
         },
         "cytat": "Liście, ziele i kwiaty zawsze zbiera się dni bezdeszczowe i po obeschnięciu rosy. Nie wolno zbierać mokrych kwiatów, liści i ziela."
+      },
+      {
+        "id": "s1906",
+        "sekcja": "opis",
+        "czesc": "owoce",
+        "tekst": "Owoc Trójkątna, silnie spłaszczona łuszczynka z sercowatym (łukowatym) wycięciem na wierzchołku z trwałą, krótką szyjką.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Tasznik pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Tasznik_pospolity"
+        },
+        "cytat": "Owoc Trójkątna, silnie spłaszczona łuszczynka z sercowatym (łukowatym) wycięciem na wierzchołku z trwałą, krótką szyjką."
+      },
+      {
+        "id": "s1907",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Współcześnie tasznik pospolity jest gatunkiem kosmopolitycznym, tj. rozprzestrzenionym na całym świecie.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Tasznik pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Tasznik_pospolity"
+        },
+        "cytat": "Współcześnie tasznik pospolity jest gatunkiem kosmopolitycznym, tj. rozprzestrzenionym na całym świecie."
+      },
+      {
+        "id": "s1908",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "W Polsce gatunek występuje pospolicie na całym niżu i w niższych położeniach górskich, rzadko pojawiając się w piętrze kosodrzewiny.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Tasznik pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Tasznik_pospolity"
+        },
+        "cytat": "W Polsce gatunek występuje pospolicie na całym niżu i w niższych położeniach górskich, rzadko pojawiając się w piętrze kosodrzewiny."
+      },
+      {
+        "id": "s1909",
+        "sekcja": "czesci_rosliny",
+        "czesc": "nasiona",
+        "tekst": "Nasiona Jajowate lub eliptyczne, bocznie spłaszczone, u dołu zaokrąglone, a na szczycie ścięte i tu z mięsistym, białawym znaczkiem (hilum).",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Tasznik pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Tasznik_pospolity"
+        },
+        "cytat": "Nasiona Jajowate lub eliptyczne, bocznie spłaszczone, u dołu zaokrąglone, a na szczycie ścięte i tu z mięsistym, białawym znaczkiem (hilum)."
+      },
+      {
+        "id": "s1910",
+        "sekcja": "sklad",
+        "czesc": null,
+        "tekst": "Jest także rośliną olejo- i miododajną, znajduje zastosowanie w biotechnologii, biomonitoringu, fitoremediacji gleb.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Tasznik pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Tasznik_pospolity"
+        },
+        "cytat": "Jest także rośliną olejo- i miododajną, znajduje zastosowanie w biotechnologii, biomonitoringu, fitoremediacji gleb."
+      },
+      {
+        "id": "s1911",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "Nazwa „taszka, taszki” używana w Wielkopolsce i Małopolsce pochodzi od dawnego znaczenia odnoszącego się do sakiewki, kieski, kieszeni.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Tasznik pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Tasznik_pospolity"
+        },
+        "cytat": "Nazwa „taszka, taszki” używana w Wielkopolsce i Małopolsce pochodzi od dawnego znaczenia odnoszącego się do sakiewki, kieski, kieszeni."
+      },
+      {
+        "id": "s1912",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "Nazwa „kaleta pasterska, kaleta, kaletka” znaczyła skórzaną torebkę na pieniądze, sakiewkę noszoną przy pasie. Nazwa „gęsia rzeżucha” (od niem. Gansecrase), „pastusza trawa” i „strzelica” (okolice Międzyrzeca), „krwawnik” (ze względu na zastosowanie przy tamowaniu krwawień), „stulidupa” (okolice Wie",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Tasznik pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Tasznik_pospolity"
+        },
+        "cytat": "Nazwa „kaleta pasterska, kaleta, kaletka” znaczyła skórzaną torebkę na pieniądze, sakiewkę noszoną przy pasie. Nazwa „gęsia rzeżucha” (od niem. Gansecrase), „pastusza trawa” i „strzelica” (okolice Międzyrzeca), „krwawnik” (ze względu na zas"
+      },
+      {
+        "id": "s1913",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Rosnąc w uprawach, jest szkodliwy głównie dlatego, że ułatwia porażanie ich przez pasożyty i patogeny, dla których jest żywicielem pośrednim.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Tasznik pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Tasznik_pospolity"
+        },
+        "cytat": "Rosnąc w uprawach, jest szkodliwy głównie dlatego, że ułatwia porażanie ich przez pasożyty i patogeny, dla których jest żywicielem pośrednim."
+      },
+      {
+        "id": "s1914",
+        "sekcja": "opis",
+        "czesc": "owoce",
+        "tekst": "Kwiaty, które na Wyspach Brytyjskich pojawiają się w każdym miesiącu roku, są białe i małe, o średnicy 2,5 mm (1/8 cala), z czterema płatkami i sześcioma pręcikami. Znajdują się one w luźnych gronach i tworzą spłaszczone, dwukomorowe strąki nasienne, znane jako silikule, które mają około 6 mm długości i kształt od trójkątnego do",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Capsella bursa-pastoris",
+          "url": "https://en.wikipedia.org/wiki/Capsella_bursa-pastoris"
+        },
+        "cytat": "The flowers, which appear in any month of the year in the British Isles, are white and small, 2.5 mm (1/8 in) in diameter, with four petals and six stamens. They are borne in loose racemes, and produce flattened, two-chambered seed pods kno"
+      },
+      {
+        "id": "s1915",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": null,
+        "tekst": "podobno w celu zatamowania krwawienia",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Capsella bursa-pastoris",
+          "url": "https://en.wikipedia.org/wiki/Capsella_bursa-pastoris"
+        },
+        "cytat": "reportedly to stop bleeding"
+      },
+      {
+        "id": "s1916",
+        "sekcja": "barwienie",
+        "czesc": null,
+        "tekst": "W Azji spożywa się ją jako warzywo liściaste i uprawia jako komercyjną roślinę spożywczą.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Capsella bursa-pastoris",
+          "url": "https://en.wikipedia.org/wiki/Capsella_bursa-pastoris"
+        },
+        "cytat": "It is eaten as a leaf vegetable and cultivated as a commercial food crop in Asia."
+      },
+      {
+        "id": "s1917",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Jest to jeden ze składników symbolicznej potrawy spożywanej podczas japońskiego wiosennego święta Nanakusa-no-sekku.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Capsella bursa-pastoris",
+          "url": "https://en.wikipedia.org/wiki/Capsella_bursa-pastoris"
+        },
+        "cytat": "It is one of the ingredients of the symbolic dish consumed in the Japanese spring-time festival, Nanakusa-no-sekku."
+      },
+      {
+        "id": "s2160",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Gatunek charakteryzuje się dużą zmiennością budowy... Nazwa rodzajowa Capsella stanowi zdrobnienie od łacińskiego słowa capsa znaczącego „schowek, torbę”, z kolei nazwa gatunkowa búrsa-pastóris to po łacinie „torba pasterska” i po raz pierwszy opublikowana została w odniesieniu do tego gatunku przez",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Tasznik pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Tasznik_pospolity"
+        },
+        "cytat": "Gatunek charakteryzuje się dużą zmiennością budowy... Nazwa rodzajowa Capsella stanowi zdrobnienie od łacińskiego słowa capsa znaczącego „schowek, torbę”, z kolei nazwa gatunkowa búrsa-pastóris to po łacinie „torba pasterska” i po raz pierw"
+      },
+      {
+        "id": "s2161",
+        "sekcja": "ciekawostki",
+        "czesc": "owoce",
+        "tekst": "W różnych dawnych źródłach gatunek określany był nazwami nawiązującymi głównie do kształtu owoców: „bydelnik, bygielnik, czyszpula, gygielnyk, igielnik, kaleta pasterska, mieszki, taszki, tobołki, pastewne ziele, kaletnik, kaszka, podbiał polny”.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Tasznik pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Tasznik_pospolity"
+        },
+        "cytat": "W różnych dawnych źródłach gatunek określany był nazwami nawiązującymi głównie do kształtu owoców: „bydelnik, bygielnik, czyszpula, gygielnyk, igielnik, kaleta pasterska, mieszki, taszki, tobołki, pastewne ziele, kaletnik, kaszka, podbiał p"
+      },
+      {
+        "id": "s2162",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "Bardziej lokalnie stosowane były nazwy „gęsia rzeżucha” (od niem. Gansecrase), „pastusza trawa” i „strzelica” (okolice Międzyrzeca), „krwawnik” (ze względu na zastosowanie przy tamowaniu krwawień), „stulidupa” (okolice Wieliczki, od zastosowania w leczeniu biegunki)...",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Tasznik pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Tasznik_pospolity"
+        },
+        "cytat": "Bardziej lokalnie stosowane były nazwy „gęsia rzeżucha” (od niem. Gansecrase), „pastusza trawa” i „strzelica” (okolice Międzyrzeca), „krwawnik” (ze względu na zastosowanie przy tamowaniu krwawień), „stulidupa” (okolice Wieliczki, od zastoso"
+      },
+      {
+        "id": "s2163",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "„wszy, wszybój” (okolice Wołkowyska, ze względu na stosowanie do tępienia wszy u bydła), „motyle, motylki” (Kaszuby, od kształtu owoców), „bydlnik” (Lubelszczyzna), „sumki pastusze” (Białostocczyzna), „gryczka” (Mazowsze), „tobołki pastusze” (Kielecczyzna).",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Tasznik pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Tasznik_pospolity"
+        },
+        "cytat": "wszy, wszybój” (okolice Wołkowyska, ze względu na stosowanie do tępienia wszy u bydła), „motyle, motylki” (Kaszuby, od kształtu owoców), „bydlnik” (Lubelszczyzna), „sumki pastusze” (Białostocczyzna), „gryczka” (Mazowsze), „tobołki pastusze”"
+      },
+      {
+        "id": "s2164",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "owoce",
+        "tekst": "Mimo istnienia morfologicznych różnic diagnostycznych gatunki z rodzaju Capsella bywają z racji swej zmienności, dużej zwłaszcza u tasznika pospolitego, bardzo do siebie podobne i konieczne jest stosowanie metod molekularnych dla ich identyfikacji.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Tasznik pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Tasznik_pospolity"
+        },
+        "cytat": "Mimo istnienia morfologicznych różnic diagnostycznych gatunki z rodzaju Capsella bywają z racji swej zmienności, dużej zwłaszcza u tasznika pospolitego, bardzo do siebie podobne i konieczne jest stosowanie metod molekularnych dla ich identy"
+      },
+      {
+        "id": "s2165",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "W przeszłości nazywano to po łacinie (obok innych nazw, takich jak zapożyczona nazwa „Crispula”, używana również w odniesieniu do innych roślin) „Bursa pastoris”... co nawiązuje do tego, że strączki mają kształt przypominający torby dawnych pasterzy",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gewöhnliches Hirtentäschel",
+          "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliches_Hirtent%C3%A4schel"
+        },
+        "cytat": "Früher lateinisch (neben anderen Benennungen wie der auch für andere Pflanzen benutzte entlehnte Name Crispula) mit Bursa pastoris bezeichnet ... bezieht sich darauf, dass die Schötchen wie die Taschen früherer Hirten geformt sind"
+      },
+      {
+        "id": "s2166",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "W odniesieniu do zwykłej torebki pasterskiej… znanych jest wiele nazw ludowych, takich jak „krwawica”, „zioło torebkowe”, „torebka krawiecka”, „łyżeczka”, „zioło sercowe” i „gorczyca chłopska”.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gewöhnliches Hirtentäschel",
+          "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliches_Hirtent%C3%A4schel"
+        },
+        "cytat": "Für das Gewöhnliche Hirtentäschel ... sind viele volkstümliche Namen wie Blutwurz, Taschenkraut, Schneiderbeutel, Löffeli, Herzkraut und Bauernsenf bekannt."
+      },
+      {
+        "id": "s2167",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "W starożytności i w średniowieczu roślina ta, znana również pod nazwami Thlaspi (por. również Thlaspi) i Mia, była stosowana w celach leczniczych jako środek przeczyszczający i wymiotny, w celu wywołania miesiączki, jako środek poronny oraz w celu usunięcia szkodliwych płynów z jelit.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gewöhnliches Hirtentäschel",
+          "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliches_Hirtent%C3%A4schel"
+        },
+        "cytat": "In der Antike und im Mittelalter wurde die auch als Thlaspi (vgl. auch Thlaspi) und Mia benannte Pflanze therapeutisch als Abführ- und Brechmittel, zur Anregung der Monatsblutung, als Abtreibungsmittel und zur Auflösung schlechter Körpersäf"
+      },
+      {
+        "id": "s2168",
+        "sekcja": "czesci_rosliny",
+        "czesc": "ziele",
+        "tekst": "Jako środek leczniczy stosuje się suszone, zebrane w okresie kwitnienia nadziemne części rośliny (Bursae pastoris herba).",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gewöhnliches Hirtentäschel",
+          "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliches_Hirtent%C3%A4schel"
+        },
+        "cytat": "Als Heildroge dienen die getrockneten zur Blütezeit gesammelten oberirdischen Pflanzenteile (Bursae pastoris herba)."
+      },
+      {
+        "id": "s2169",
+        "sekcja": "sklad",
+        "czesc": null,
+        "tekst": "Składniki to: aminokwasy i białka (ok. 32 %), flawonoidy (m.in. kempferol, luteolina, diosmetyna, kwercetyna, rutyna, diosmina), kwasy fenolokarboksylowe, sole potasu i wapnia, witamina C oraz związki terpenoidowe.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gewöhnliches Hirtentäschel",
+          "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliches_Hirtent%C3%A4schel"
+        },
+        "cytat": "Inhaltsstoffe sind: Aminosäuren und Proteine (ca. 32 %), Flavonoide (u. a. Kämpferol, Luteolin, Diosmetin, Quercetin, Rutin, Diosmin), Phenolcarbonsäuren, Kalium- und Kalziumsalze, Vitamin C und terpenoide Verbindungen."
+      },
+      {
+        "id": "s2171",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "W kuchni koreańskiej (pod nazwą naengi) do zup i sałatek używa się młodych liści oraz korzeni tej rośliny.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gewöhnliches Hirtentäschel",
+          "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliches_Hirtent%C3%A4schel"
+        },
+        "cytat": "In der koreanischen Küche wird Gewöhnliches Hirtentäschelkraut (koreanisch naengi, 냉이) beispielsweise die zarten Blätter und Wurzel für Suppen oder Salate verwendet."
+      },
+      {
+        "id": "s2173",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": null,
+        "tekst": "W alzackim rękopisie z drugiej połowy XV wieku (Cpg 226) jako sposób na krwawienie z nosa zalecano przyłożenie garści zioła do nosa.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gewöhnliches Hirtentäschel",
+          "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliches_Hirtent%C3%A4schel"
+        },
+        "cytat": "In einer Elsässer Handschrift aus der zweiten Hälfte des 15. Jh. (Cpg 226) wurde zur Behandlung des Nasenblutens empfohlen, eine Handvoll des Krautes vor die Nase zu halten."
+      },
+      {
+        "id": "s2174",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Pogląd ten został odrzucony przez niemieckich prekursorów botaniki – Otto Brunfelsa, Hieronymusa Bocka i Leonharta Fuchsa. Ponieważ nie znaleźli oni u Dioskuridesa rośliny odpowiadającej pospolitej torebce pasterskiej, oparli się wyłącznie na informacjach pochodzących z medycyny ludowej.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gewöhnliches Hirtentäschel",
+          "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliches_Hirtent%C3%A4schel"
+        },
+        "cytat": "Diese Sicht wurde von den deutschen Vätern der Botanik – Otto Brunfels, Hieronymus Bock und Leonhart Fuchs – verworfen. Da sie bei Dioskurides keine dem Gemeinen Hirtentäschel entsprechende Pflanze finden konnten, so übernahmen sie ausschli"
+      },
+      {
+        "id": "s2175",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Jej korzenie sięgają głębokości do 90 centymetrów.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gewöhnliches Hirtentäschel",
+          "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliches_Hirtent%C3%A4schel"
+        },
+        "cytat": "Sie wurzelt bis zu 90 Zentimeter tief."
+      },
+      {
+        "id": "s2176",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Torebka pasterska zwyczajna bardzo często pada ofiarą Albugo candida, czyli białej rdzy, co powoduje wyraźną zmianę jej pokroju.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gewöhnliches Hirtentäschel",
+          "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliches_Hirtent%C3%A4schel"
+        },
+        "cytat": "Das Gewöhnliche Hirtentäschel wird sehr oft von Albugo candida, dem Weißen Rost befallen, dabei verändert sich sein Habitus deutlich."
+      },
+      {
+        "id": "s2177",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Również Plasmodiophora brassicae, czynnik wywołujący guzy kapustne i budzący strach szkodnik w uprawie warzyw, atakuje torebkę pasterską.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gewöhnliches Hirtentäschel",
+          "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliches_Hirtent%C3%A4schel"
+        },
+        "cytat": "Auch Plasmodiophora brassicae, der Erreger der Kohlhernie und gefürchteter Schädling im Gemüsebau, befällt das Hirtentäschel."
+      },
+      {
+        "id": "s2178",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Pęcherzyca pospolita stanowi obiekt badań nad rozwojem embrionalnym – z jednej strony ze względu na przezroczystą łupinę nasienną, z drugiej zaś dlatego, że w jednym kwiatostanie można zaobserwować wszystkie fazy rozwoju, od niezapłodnionej komórki jajowej w pączku aż po dojrzałe nasiona.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gewöhnliches Hirtentäschel",
+          "url": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliches_Hirtent%C3%A4schel"
+        },
+        "cytat": "Das Gewöhnliche Hirtentäschel ist ein Untersuchungsobjekt für Studien zur Embryonalentwicklung, einerseits wegen seiner durchsichtigen Samenschale, andererseits weil man in einem Blütenstand alle Entwicklungsphasen von der unbefruchteten Ei"
+      },
+      {
+        "id": "s2179",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "W języku chińskim roślina znana jest pod ludowymi nazwami takimi jak 'Hushengcao' (roślina opiekująca się życiem), 'Dice' (ziemska warzywna), 'Dimicai' (ziemska marchewka) oraz 'Lingzhacai'.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 荠菜",
+          "url": "https://zh.wikipedia.org/wiki/%E8%8D%A0%E8%8F%9C"
+        },
+        "cytat": "荠菜（學名：Capsella bursa-pastoris），又名护生草、地菜、地米菜、菱闸菜等"
+      },
+      {
+        "id": "s2180",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Główny korzeń rośliny ma białą barwę i jest smukły. W pierwszym etapie życia liśćki włośnikowe chodzą promienie po powierzchni ziemi, a liście pędowe są wydłużone lub równoległoboczne.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 荠菜",
+          "url": "https://zh.wikipedia.org/wiki/%E8%8D%A0%E8%8F%9C"
+        },
+        "cytat": "白色的主根瘦长。... 幼苗时，根出叶辐射状的平铺地面，有羽状深裂；长圆形或线状披针形的茎生叶"
+      },
+      {
+        "id": "s2181",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Pochodzi z Europy Wschodniej i Azji Mniejszej, a obecnie jest powszechnie spotykana na całym świecie.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 荠菜",
+          "url": "https://zh.wikipedia.org/wiki/%E8%8D%A0%E8%8F%9C"
+        },
+        "cytat": "起源于东欧和小亚细亚，目前在世界各地都很常见。"
+      },
+      {
+        "id": "s2182",
+        "sekcja": "ciekawostki",
+        "czesc": "nasiona",
+        "tekst": "Młoda roślina chętnie wysiewa się w polach, a łodyga jest w stanie rosnąć, jeśli jest wystarczająca ilość światła i gleba nie jest zbyt sucha.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 荠菜",
+          "url": "https://zh.wikipedia.org/wiki/%E8%8D%A0%E8%8F%9C"
+        },
+        "cytat": "野生于田野，也可人工栽培。...只要有足够的阳光，土壤不太干燥，荠菜都可以生长。"
+      },
+      {
+        "id": "s2183",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Kwitnie wiosną, tworząc pojedyncze małe białe kwiaty w kłosowatych kwiatostanach, mających cztery białe płatki.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 荠菜",
+          "url": "https://zh.wikipedia.org/wiki/%E8%8D%A0%E8%8F%9C"
+        },
+        "cytat": "春天开白色细长的小花，集成总状花序，顶生或腋生，绿色的花萼和白色的花冠，花瓣为4。"
+      },
+      {
+        "id": "s2184",
+        "sekcja": "ciekawostki",
+        "czesc": "nasiona",
+        "tekst": "Po zawilgoceniu nasiona wydzielają lepką substancję, która przyciąga i przykleja owady, a także może wchłaniać ich składniki odżywcze.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 荠菜",
+          "url": "https://zh.wikipedia.org/wiki/%E8%8D%A0%E8%8F%9C"
+        },
+        "cytat": "种子受潮后分泌出粘稠的分泌物，可以吸引並粘住虫子，並可能吸收蟲子的養分。"
+      },
+      {
+        "id": "s2185",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Preferuje ciepło, ale jest bardzo odporna na mróz.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 荠菜",
+          "url": "https://zh.wikipedia.org/wiki/%E8%8D%A0%E8%8F%9C"
+        }
+      },
+      {
+        "id": "s2186",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Uważa się, że jest to prehistoryczna roślina naturalizowana, która pojawiła się w Japonii wraz z wprowadzeniem uprawy pszenicy.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): ナズナ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%82%BA%E3%83%8A"
+        },
+        "cytat": "ムギ栽培の伝来と共に日本に渡来した史前帰化植物と考えられている。"
+      },
+      {
+        "id": "s2187",
+        "sekcja": "nazwy_ludowe",
+        "czesc": "owoce",
+        "tekst": "„Penpen” to onomatopeja naśladująca dźwięk gry na shamisenie; nazwa ta pochodzi od tego, że kształt owoców rosnących pod kwiatami bardzo przypomina pałeczki do gry na shamisenie. Podobnie nazwa „shamisengusa” wywodzi się z faktu, że owoce tej rośliny przypominają pałeczki do gry na shamisenie.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): ナズナ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%82%BA%E3%83%8A"
+        },
+        "cytat": "「ペンペン」は三味線を弾く擬音語で、花の下に付いている果実の形が、三味線の撥（バチ）によく似ていることから名付けられている。また、シャミセングサの由来も同様に、果実が三味線のバチの形に似ることによる。"
+      },
+      {
+        "id": "s2188",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "Herb: Yatsunazuna – herb przedstawiający osiem liści rzepiku ułożonych w kształt rozety.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): ナズナ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%82%BA%E3%83%8A"
+        },
+        "cytat": "家紋: 八薺（やつなずな） - ロゼット状に広がったナズナの8枚の葉を図案化した家紋。"
+      },
+      {
+        "id": "s2189",
+        "sekcja": "magia",
+        "czesc": "ziele",
+        "tekst": "W Japonii w epoce Edo praktykowano zwyczaj wieszania pęczków ziela tasznika pod papierowymi lampionami w ósmym dniu czwartego miesiąca księżycowego, co miało magicznie odstraszać uciążliwe owady.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): ナズナ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%82%BA%E3%83%8A"
+        },
+        "cytat": "江戸時代には、旧暦4月8日に、糸で束ねて行灯の下に吊るし、虫除けのまじないにする習俗が広くあった。"
+      },
+      {
+        "id": "s2190",
+        "sekcja": "ciekawostki",
+        "czesc": "owoce",
+        "tekst": "Po zerwaniu łodygi kwiatowej z owocami należy pociągnąć za szypułkę owocu w dół, co spowoduje jej odłamanie, a owoc zawiśnie na skórce. Gdy wiele owoców zwisa w ten sposób, należy obrócić łodygę kwiatową (jak przy graniu na bębnie „denden-daiko”), a owoce, ocierając się o siebie, wydadzą delikatny dźwięk „czara-czara”.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): ナズナ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%82%BA%E3%83%8A"
+        },
+        "cytat": "果実が付いた花茎を折り取り、果実の柄を持って下に引くと、柄がちぎれて皮でぶら下がった状態になる。このように多数の果実をぶら下げた状態にして、花茎を持ってくるくる回す（でんでん太鼓を鳴らすように）と、果実が触れ合ってちゃらちゃらと小さな音がする"
+      },
+      {
+        "id": "s2191",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "W języku japońskim funkcjonuje idiom „tam nawet penpengusa nie urośnie”, nawiązujący do faktu, że tasznik rośnie nawet na skrajnie wyjałowionych nieużytkach – powiedzenie to oznacza miejsce kompletnie zrujnowane, na którym nie ocalało nic.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): ナズナ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%82%BA%E3%83%8A"
+        },
+        "cytat": "ぺんぺん草も生えない 荒廃した場所で育つナズナでさえも生育しない様子から、転じて何も残っていない状態、一切合財が残らない状態を揶揄した表現で"
+      },
+      {
+        "id": "s2460",
+        "sekcja": "ciekawostki",
+        "czesc": "nasiona",
+        "tekst": "W kuchni kontynentalnych Chin nasiona, liście i korzenie rośliny są łatwo dostępne jako składnik dań smażonych, gotowanych lub jedzonych na zimno, często stanowiąc element nadzienia do knedli.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 荠菜",
+          "url": "https://zh.wikipedia.org/wiki/%E8%8D%A0%E8%8F%9C"
+        },
+        "cytat": "荠菜的种子、叶和根都可以食用。可作涼拌或煮、炒食。在中國大陆经常用來炒年糕或作為餛飩或餃子餡的一部分"
+      },
+      {
+        "id": "s2589",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Znaleziska nasion tasznika na Wyspach Brytyjskich z plejstocenu wskazują na to, że tasznik pospolity mógł stanowić w Europie północno-zachodniej element ówczesnej flory późnoglacjalnej lub preborealnej.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Tasznik pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Tasznik_pospolity"
+        },
+        "cytat": "Znaleziska nasion tasznika na Wyspach Brytyjskich z plejstocenu wskazują na to, że tasznik pospolity mógł stanowić w Europie północno-zachodniej element ówczesnej flory późnoglacjalnej lub preborealnej."
+      },
+      {
+        "id": "s2590",
+        "sekcja": "opis",
+        "czesc": "korzeń",
+        "tekst": "Pojedynczy, biały korzeń palowy, często rozwidlający się na głębokości ok. 10 cm. W luźnych glebach osiąga ok. 33 cm, w zbitych jest krótszy.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Tasznik pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Tasznik_pospolity"
+        },
+        "cytat": "Pojedynczy, biały korzeń palowy, często rozwidlający się na głębokości ok. 10 cm. W luźnych glebach osiąga ok. 33 cm, w zbitych jest krótszy."
+      },
+      {
+        "id": "s2591",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Tasznik pospolity od Capsella thracica i C. grandiflora różni się krótką szyjką słupka (poniżej 0,5 mm, podczas gdy u tych dwóch osiąga 0,7 mm), C.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Tasznik pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Tasznik_pospolity"
+        },
+        "cytat": "Tasznik pospolity od Capsella thracica i C. grandiflora różni się krótką szyjką słupka (poniżej 0,5 mm, podczas gdy u tych dwóch osiąga 0,7 mm), C."
+      },
+      {
+        "id": "s2592",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Gatunek charakteryzuje się dużą zmiennością budowy, w zależności od warunków środowiska, a także wieku rośliny i pory roku.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Tasznik pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Tasznik_pospolity"
+        },
+        "cytat": "Gatunek charakteryzuje się dużą zmiennością budowy, w zależności od warunków środowiska, a także wieku rośliny i pory roku."
+      },
+      {
+        "id": "s2593",
+        "sekcja": "ciekawostki",
+        "czesc": "nasiona",
+        "tekst": "Roślinę tę określono mianem proto-mięsożercy, ponieważ jej nasiona zawierają śluz, który zatrzymuje nicienie.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Capsella bursa-pastoris",
+          "url": "https://en.wikipedia.org/wiki/Capsella_bursa-pastoris"
+        },
+        "cytat": "It has been described as a protocarnivore because its seeds contain mucilage, which traps nematodes."
+      },
+      {
+        "id": "s2594",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Pochodzi ze wschodniej Europy i Azji Mniejszej, ale w wielu częściach świata uległa naturalizacji i jest uważana za pospolity chwast, zwłaszcza w chłodniejszych klimatach, w tym na Wyspach Brytyjskich (gdzie uznaje się ją za archeofit), w Ameryce Północnej i Chinach, a także w regionie Morza Śródziemnego i Afryce Północnej.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Capsella bursa-pastoris",
+          "url": "https://en.wikipedia.org/wiki/Capsella_bursa-pastoris"
+        },
+        "cytat": "It is native to eastern Europe and Asia minor, but is naturalized and considered a common weed in many parts of the world, especially in colder climates, including the British Isles (where it is regarded as an archaeophyte), North America, "
+      },
+      {
+        "id": "s2595",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Kwiaty, które pojawiają się na Wyspach Brytyjskich o każdej porze roku, są białe i niewielkie, mają średnicę 2,5 mm (1⁄8 cala), cztery płatki i sześć pręcików.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Capsella bursa-pastoris",
+          "url": "https://en.wikipedia.org/wiki/Capsella_bursa-pastoris"
+        },
+        "cytat": "The flowers, which appear in any month of the year in the British Isles, are white and small, 2.5 mm (1⁄8 in) in diameter, with four petals and six stamens."
+      },
+      {
+        "id": "s2596",
+        "sekcja": "sklad",
+        "czesc": null,
+        "tekst": "Z tej rośliny wyizolowano kwas fumarowy.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Capsella bursa-pastoris",
+          "url": "https://en.wikipedia.org/wiki/Capsella_bursa-pastoris"
+        },
+        "cytat": "Fumaric acid has been isolated from the plant."
+      },
+      {
+        "id": "s2620",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Występuje w strefach umiarkowanych na całym świecie, preferuje ciepło, ale charakteryzuje się dużą odpornością na mróz. Występuje dziko na polach, można ją również uprawiać.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 荠菜",
+          "url": "https://zh.wikipedia.org/wiki/%E8%8D%A0%E8%8F%9C"
+        },
+        "cytat": "分布在全世界的温带地区，性喜温暖但耐寒力强。野生于田野，也可人工栽培。"
       }
     ]
   },
@@ -260,17 +1534,223 @@
             "fakty": []
           },
           {
+            "tekst": "Jej korzenie sięgają głębokości do 90 centymetrów.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2175"
+            ]
+          },
+          {
             "tekst": "Roślina ma białe, smukłe korzenie główne oraz wzniesiony główny pęd, z którego odchodzą cienkie, boczne łodygi. Liście łodygowe mają kształt podłużny lub liniowy, z listkami bazalnymi przylegającymi do łodygi, często z ząbkowanymi krawędziami i gęstym owłosieniem.",
             "zrodla": [
-              1
+              5
             ],
             "fakty": [
               "s2461"
             ]
+          },
+          {
+            "tekst": "Główny korzeń rośliny ma białą barwę i jest smukły. W pierwszym etapie życia liśćki włośnikowe chodzą promienie po powierzchni ziemi, a liście pędowe są wydłużone lub równoległoboczne.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2180"
+            ]
+          },
+          {
+            "tekst": "Pojedynczy, biały korzeń palowy, często rozwidlający się na głębokości ok. 10 cm. W luźnych glebach osiąga ok. 33 cm, w zbitych jest krótszy.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2590"
+            ]
+          },
+          {
+            "tekst": "Kwiaty, które pojawiają się na Wyspach Brytyjskich o każdej porze roku, są białe i niewielkie, mają średnicę 2,5 mm (1⁄8 cala), cztery płatki i sześć pręcików.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2595"
+            ]
+          },
+          {
+            "tekst": "Owoc Trójkątna, silnie spłaszczona łuszczynka z sercowatym (łukowatym) wycięciem na wierzchołku z trwałą, krótką szyjką.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1906"
+            ]
+          },
+          {
+            "tekst": "Kwiaty, które na Wyspach Brytyjskich pojawiają się w każdym miesiącu roku, są białe i małe, o średnicy 2,5 mm (1/8 cala), z czterema płatkami i sześcioma pręcikami. Znajdują się one w luźnych gronach i tworzą spłaszczone, dwukomorowe strąki nasienne, znane jako silikule, które mają około 6 mm długości i kształt od trójkątnego do",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1914"
+            ]
+          },
+          {
+            "tekst": "Jest także rośliną olejo- i miododajną, znajduje zastosowanie w biotechnologii, biomonitoringu, fitoremediacji gleb.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1910"
+            ]
+          },
+          {
+            "tekst": "Składniki to: aminokwasy i białka (ok. 32 %), flawonoidy (m.in. kempferol, luteolina, diosmetyna, kwercetyna, rutyna, diosmina), kwasy fenolokarboksylowe, sole potasu i wapnia, witamina C oraz związki terpenoidowe.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2169"
+            ]
+          },
+          {
+            "tekst": "Z tej rośliny wyizolowano kwas fumarowy.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2596"
+            ]
+          },
+          {
+            "tekst": "Mimo istnienia morfologicznych różnic diagnostycznych gatunki z rodzaju Capsella bywają z racji swej zmienności, dużej zwłaszcza u tasznika pospolitego, bardzo do siebie podobne i konieczne jest stosowanie metod molekularnych dla ich identyfikacji.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2164"
+            ]
           }
         ],
         "model": "bez LLM",
-        "wejscie": "304f4e200400c73e"
+        "wejscie": "c11c9a47182cca43"
+      },
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Jednoroczna lub dwuletnia roślina zielna, pospolita na całym świecie. Tasznik jest niesamowicie plastyczny – potrafi osiągnąć 50 cm wysokości na żyznej glebie lub zaledwie 5 cm w szczelinie chodnika. Jego najbardziej rozpoznawalną cechą są małe, trójkątne, sercowate łuszczynki (owoce). Jest to jedna z pierwszych roślin budzących się do życia wiosną, często kwitnąca nawet podczas łagodnych zim.",
+        "tresc": [
+          {
+            "tekst": "Jednoroczna lub dwuletnia roślina zielna, pospolita na całym świecie.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Tasznik jest niesamowicie plastyczny – potrafi osiągnąć 50 cm wysokości na żyznej glebie lub zaledwie 5 cm w szczelinie chodnika.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jego najbardziej rozpoznawalną cechą są małe, trójkątne, sercowate łuszczynki (owoce).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jest to jedna z pierwszych roślin budzących się do życia wiosną, często kwitnąca nawet podczas łagodnych zim.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Współcześnie tasznik pospolity jest gatunkiem kosmopolitycznym, tj. rozprzestrzenionym na całym świecie.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1907"
+            ]
+          },
+          {
+            "tekst": "W Polsce gatunek występuje pospolicie na całym niżu i w niższych położeniach górskich, rzadko pojawiając się w piętrze kosodrzewiny.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1908"
+            ]
+          },
+          {
+            "tekst": "Pochodzi ze wschodniej Europy i Azji Mniejszej, ale w wielu częściach świata uległa naturalizacji i jest uważana za pospolity chwast, zwłaszcza w chłodniejszych klimatach, w tym na Wyspach Brytyjskich (gdzie uznaje się ją za archeofit), w Ameryce Północnej i Chinach, a także w regionie Morza Śródziemnego i Afryce Północnej.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2594"
+            ]
+          },
+          {
+            "tekst": "Pochodzi z Europy Wschodniej i Azji Mniejszej, a obecnie jest powszechnie spotykana na całym świecie.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2181"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "a3af2a08bc17a49c"
+      },
+      "wymagania.stanowisko": {
+        "tytul": "Natura i siedlisko - Stanowisko",
+        "typ": "tekst",
+        "oryginal": "Słoneczne. Jako roślina pionierska kocha pełne światło.",
+        "tresc": [
+          {
+            "tekst": "Słoneczne.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jako roślina pionierska kocha pełne światło.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Występuje w strefach umiarkowanych na całym świecie, preferuje ciepło, ale charakteryzuje się dużą odpornością na mróz. Występuje dziko na polach, można ją również uprawiać.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2620"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "d25defa6048e5ef0"
+      },
+      "czesci_rosliny.ziele.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Herba Bursae pastoris: Opis surowca",
+        "typ": "tekst",
+        "oryginal": "Całe nadziemne części rośliny zbierane w czasie kwitnienia, gdy mają już pierwsze zielone owoce.",
+        "tresc": [
+          {
+            "tekst": "Całe nadziemne części rośliny zbierane w czasie kwitnienia, gdy mają już pierwsze zielone owoce.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jako środek leczniczy stosuje się suszone, zebrane w okresie kwitnienia nadziemne części rośliny (Bursae pastoris herba).",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2168"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "9f254c7c0ca7bb86"
       },
       "czesci_rosliny.ziele.czas_zbioru": {
         "tytul": "Surowce i zbiory - Herba Bursae pastoris: Zbiór",
@@ -285,7 +1765,7 @@
           {
             "tekst": "Liście, ziele i kwiaty zawsze zbiera się dni bezdeszczowe i po obeschnięciu rosy. Nie wolno zbierać mokrych kwiatów, liści i ziela.",
             "zrodla": [
-              2
+              6
             ],
             "fakty": [
               "s2477"
@@ -294,11 +1774,519 @@
         ],
         "model": "bez LLM",
         "wejscie": "3ae87bc02df2e5f0"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "Tasznik jest rośliną 'protomięsożerną' – jego nasiona po zmoczeniu wydzielają lepki śluz, który wabi i zabija drobne organizmy glebowe (np. nicienie), dostarczając kiełkującej roślinie azotu.",
+          "Podczas I wojny światowej tasznik był powszechnie używany w szpitalach polowych jako zamiennik sporyszu (ergotu) do hamowania krwotoków macicznych.",
+          "Jedna roślina może wyprodukować do 40 000 nasion, które zachowują zdolność kiełkowania w ziemi przez kilkanaście lat.",
+          "W Chinach tasznik jest symbolem szczęścia i bogactwa (ze względu na sakiewkowaty kształt owoców).",
+          "Ziele tasznika zaatakowane przez grzyba (biała rdza) staje się białe i zniekształcone – takiego surowca nie wolno zbierać!"
+        ],
+        "tresc": [
+          {
+            "tekst": "Tasznik jest rośliną 'protomięsożerną' – jego nasiona po zmoczeniu wydzielają lepki śluz, który wabi i zabija drobne organizmy glebowe (np. nicienie), dostarczając kiełkującej roślinie azotu.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Podczas I wojny światowej tasznik był powszechnie używany w szpitalach polowych jako zamiennik sporyszu (ergotu) do hamowania krwotoków macicznych.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jedna roślina może wyprodukować do 40 000 nasion, które zachowują zdolność kiełkowania w ziemi przez kilkanaście lat.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W Chinach tasznik jest symbolem szczęścia i bogactwa (ze względu na sakiewkowaty kształt owoców).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Ziele tasznika zaatakowane przez grzyba (biała rdza) staje się białe i zniekształcone – takiego surowca nie wolno zbierać!",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W alzackim rękopisie z drugiej połowy XV wieku (Cpg 226) jako sposób na krwawienie z nosa zalecano przyłożenie garści zioła do nosa.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2173"
+            ]
+          },
+          {
+            "tekst": "Gatunek charakteryzuje się dużą zmiennością budowy... Nazwa rodzajowa Capsella stanowi zdrobnienie od łacińskiego słowa capsa znaczącego „schowek, torbę”, z kolei nazwa gatunkowa búrsa-pastóris to po łacinie „torba pasterska” i po raz pierwszy opublikowana została w odniesieniu do tego gatunku przez",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2160"
+            ]
+          },
+          {
+            "tekst": "W przeszłości nazywano to po łacinie (obok innych nazw, takich jak zapożyczona nazwa „Crispula”, używana również w odniesieniu do innych roślin) „Bursa pastoris”... co nawiązuje do tego, że strączki mają kształt przypominający torby dawnych pasterzy",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2165"
+            ]
+          },
+          {
+            "tekst": "W starożytności i w średniowieczu roślina ta, znana również pod nazwami Thlaspi (por. również Thlaspi) i Mia, była stosowana w celach leczniczych jako środek przeczyszczający i wymiotny, w celu wywołania miesiączki, jako środek poronny oraz w celu usunięcia szkodliwych płynów z jelit.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2167"
+            ]
+          },
+          {
+            "tekst": "Pogląd ten został odrzucony przez niemieckich prekursorów botaniki – Otto Brunfelsa, Hieronymusa Bocka i Leonharta Fuchsa. Ponieważ nie znaleźli oni u Dioskuridesa rośliny odpowiadającej pospolitej torebce pasterskiej, oparli się wyłącznie na informacjach pochodzących z medycyny ludowej.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2174"
+            ]
+          },
+          {
+            "tekst": "Jest to jeden ze składników symbolicznej potrawy spożywanej podczas japońskiego wiosennego święta Nanakusa-no-sekku.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1917"
+            ]
+          },
+          {
+            "tekst": "Uważa się, że jest to prehistoryczna roślina naturalizowana, która pojawiła się w Japonii wraz z wprowadzeniem uprawy pszenicy.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2186"
+            ]
+          },
+          {
+            "tekst": "Nazwa „taszka, taszki” używana w Wielkopolsce i Małopolsce pochodzi od dawnego znaczenia odnoszącego się do sakiewki, kieski, kieszeni.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1911"
+            ]
+          },
+          {
+            "tekst": "Herb: Yatsunazuna – herb przedstawiający osiem liści rzepiku ułożonych w kształt rozety.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2188"
+            ]
+          },
+          {
+            "tekst": "W języku japońskim funkcjonuje idiom „tam nawet penpengusa nie urośnie”, nawiązujący do faktu, że tasznik rośnie nawet na skrajnie wyjałowionych nieużytkach – powiedzenie to oznacza miejsce kompletnie zrujnowane, na którym nie ocalało nic.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2191"
+            ]
+          },
+          {
+            "tekst": "Nazwa „kaleta pasterska, kaleta, kaletka” znaczyła skórzaną torebkę na pieniądze, sakiewkę noszoną przy pasie. Nazwa „gęsia rzeżucha” (od niem. Gansecrase), „pastusza trawa” i „strzelica” (okolice Międzyrzeca), „krwawnik” (ze względu na zastosowanie przy tamowaniu krwawień), „stulidupa” (okolice Wie",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1912",
+              "s2162"
+            ]
+          },
+          {
+            "tekst": "„wszy, wszybój” (okolice Wołkowyska, ze względu na stosowanie do tępienia wszy u bydła), „motyle, motylki” (Kaszuby, od kształtu owoców), „bydlnik” (Lubelszczyzna), „sumki pastusze” (Białostocczyzna), „gryczka” (Mazowsze), „tobołki pastusze” (Kielecczyzna).",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2163"
+            ]
+          },
+          {
+            "tekst": "W odniesieniu do zwykłej torebki pasterskiej… znanych jest wiele nazw ludowych, takich jak „krwawica”, „zioło torebkowe”, „torebka krawiecka”, „łyżeczka”, „zioło sercowe” i „gorczyca chłopska”.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2166"
+            ]
+          },
+          {
+            "tekst": "W języku chińskim roślina znana jest pod ludowymi nazwami takimi jak 'Hushengcao' (roślina opiekująca się życiem), 'Dice' (ziemska warzywna), 'Dimicai' (ziemska marchewka) oraz 'Lingzhacai'.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2179"
+            ]
+          },
+          {
+            "tekst": "„Penpen” to onomatopeja naśladująca dźwięk gry na shamisenie; nazwa ta pochodzi od tego, że kształt owoców rosnących pod kwiatami bardzo przypomina pałeczki do gry na shamisenie. Podobnie nazwa „shamisengusa” wywodzi się z faktu, że owoce tej rośliny przypominają pałeczki do gry na shamisenie.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2187"
+            ]
+          },
+          {
+            "tekst": "Znaleziska nasion tasznika na Wyspach Brytyjskich z plejstocenu wskazują na to, że tasznik pospolity mógł stanowić w Europie północno-zachodniej element ówczesnej flory późnoglacjalnej lub preborealnej.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2589"
+            ]
+          },
+          {
+            "tekst": "Tasznik pospolity od Capsella thracica i C. grandiflora różni się krótką szyjką słupka (poniżej 0,5 mm, podczas gdy u tych dwóch osiąga 0,7 mm), C.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2591"
+            ]
+          },
+          {
+            "tekst": "Gatunek charakteryzuje się dużą zmiennością budowy, w zależności od warunków środowiska, a także wieku rośliny i pory roku.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2592"
+            ]
+          },
+          {
+            "tekst": "Pęcherzyca pospolita stanowi obiekt badań nad rozwojem embrionalnym – z jednej strony ze względu na przezroczystą łupinę nasienną, z drugiej zaś dlatego, że w jednym kwiatostanie można zaobserwować wszystkie fazy rozwoju, od niezapłodnionej komórki jajowej w pączku aż po dojrzałe nasiona.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2178"
+            ]
+          },
+          {
+            "tekst": "Kwitnie wiosną, tworząc pojedyncze małe białe kwiaty w kłosowatych kwiatostanach, mających cztery białe płatki.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2183"
+            ]
+          },
+          {
+            "tekst": "Roślinę tę określono mianem proto-mięsożercy, ponieważ jej nasiona zawierają śluz, który zatrzymuje nicienie.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2593"
+            ]
+          },
+          {
+            "tekst": "Młoda roślina chętnie wysiewa się w polach, a łodyga jest w stanie rosnąć, jeśli jest wystarczająca ilość światła i gleba nie jest zbyt sucha.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2182"
+            ]
+          },
+          {
+            "tekst": "Po zawilgoceniu nasiona wydzielają lepką substancję, która przyciąga i przykleja owady, a także może wchłaniać ich składniki odżywcze.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2184"
+            ]
+          },
+          {
+            "tekst": "W różnych dawnych źródłach gatunek określany był nazwami nawiązującymi głównie do kształtu owoców: „bydelnik, bygielnik, czyszpula, gygielnyk, igielnik, kaleta pasterska, mieszki, taszki, tobołki, pastewne ziele, kaletnik, kaszka, podbiał polny”.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2161"
+            ]
+          },
+          {
+            "tekst": "Po zerwaniu łodygi kwiatowej z owocami należy pociągnąć za szypułkę owocu w dół, co spowoduje jej odłamanie, a owoc zawiśnie na skórce. Gdy wiele owoców zwisa w ten sposób, należy obrócić łodygę kwiatową (jak przy graniu na bębnie „denden-daiko”), a owoce, ocierając się o siebie, wydadzą delikatny dźwięk „czara-czara”.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2190"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "b20496127fbc13ea"
+      },
+      "zastosowanie.medyczne": {
+        "tytul": "Praktyczne zastosowanie - Medycyna",
+        "typ": "tekst",
+        "oryginal": "Zbyt obfite miesiączki, krwawienia z nosa, drobne krwawienia z przewodu pokarmowego, żylaki odbytu (hemoroidy), rany cięte (zewnętrznie), wspomaganie pracy serca.",
+        "tresc": [
+          {
+            "tekst": "Zbyt obfite miesiączki, krwawienia z nosa, drobne krwawienia z przewodu pokarmowego, żylaki odbytu (hemoroidy), rany cięte (zewnętrznie), wspomaganie pracy serca.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "podobno w celu zatamowania krwawienia",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1915"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "2f74006cb33c088f"
+      },
+      "zastosowanie.kulinarne": {
+        "tytul": "Praktyczne zastosowanie - Kuchnia",
+        "typ": "tekst",
+        "oryginal": "Młode liście z rozety (marzec) mają ostry, rzeżuchowy smak i są doskonałe do sałatek. Nasiona mogą służyć jako zamiennik pieprzu. W Azji tasznik jest cenionym warzywem uprawnym.",
+        "tresc": [
+          {
+            "tekst": "Młode liście z rozety (marzec) mają ostry, rzeżuchowy smak i są doskonałe do sałatek.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Nasiona mogą służyć jako zamiennik pieprzu.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W Azji tasznik jest cenionym warzywem uprawnym.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W Azji spożywa się ją jako warzywo liściaste i uprawia jako komercyjną roślinę spożywczą.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1916"
+            ]
+          },
+          {
+            "tekst": "W kuchni koreańskiej (pod nazwą naengi) do zup i sałatek używa się młodych liści oraz korzeni tej rośliny.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2171"
+            ]
+          },
+          {
+            "tekst": "W kuchni kontynentalnych Chin nasiona, liście i korzenie rośliny są łatwo dostępne jako składnik dań smażonych, gotowanych lub jedzonych na zimno, często stanowiąc element nadzienia do knedli.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2460"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "c1447d72fc02ce5a"
+      },
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": "BEZWZGLĘDNIE NIE STOSOWAĆ W CIĄŻY (może powodować skurcze macicy). Nie stosować przy zakrzepicy i skłonności do zatorów.",
+        "tresc": [
+          {
+            "tekst": "BEZWZGLĘDNIE NIE STOSOWAĆ W CIĄŻY (może powodować skurcze macicy).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Nie stosować przy zakrzepicy i skłonności do zatorów.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Rosnąc w uprawach, jest szkodliwy głównie dlatego, że ułatwia porażanie ich przez pasożyty i patogeny, dla których jest żywicielem pośrednim.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1913"
+            ]
+          },
+          {
+            "tekst": "Torebka pasterska zwyczajna bardzo często pada ofiarą Albugo candida, czyli białej rdzy, co powoduje wyraźną zmianę jej pokroju.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2176"
+            ]
+          },
+          {
+            "tekst": "Również Plasmodiophora brassicae, czynnik wywołujący guzy kapustne i budzący strach szkodnik w uprawie warzyw, atakuje torebkę pasterską.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2177"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "f13f591ec6e0d98a"
+      },
+      "profil_energetyczny.termika": {
+        "tytul": "Natura i siedlisko - Termika",
+        "typ": "tekst",
+        "oryginal": "Chłodna",
+        "tresc": [
+          {
+            "tekst": "Chłodna",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Preferuje ciepło, ale jest bardzo odporna na mróz.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s2185"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "53c48c4023c8fcb6"
       }
     },
     "uzyte_fakty": [
+      "s1906",
+      "s1907",
+      "s1908",
+      "s1910",
+      "s1911",
+      "s1912",
+      "s1913",
+      "s1914",
+      "s1915",
+      "s1916",
+      "s1917",
+      "s2160",
+      "s2161",
+      "s2162",
+      "s2163",
+      "s2164",
+      "s2165",
+      "s2166",
+      "s2167",
+      "s2168",
+      "s2169",
+      "s2171",
+      "s2173",
+      "s2174",
+      "s2175",
+      "s2176",
+      "s2177",
+      "s2178",
+      "s2179",
+      "s2180",
+      "s2181",
+      "s2182",
+      "s2183",
+      "s2184",
+      "s2185",
+      "s2186",
+      "s2187",
+      "s2188",
+      "s2190",
+      "s2191",
+      "s2460",
       "s2461",
-      "s2477"
+      "s2477",
+      "s2589",
+      "s2590",
+      "s2591",
+      "s2592",
+      "s2593",
+      "s2594",
+      "s2595",
+      "s2596",
+      "s2620"
     ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-03",
+    "jak": "llm:groq/qwen/qwen3.8-27b",
+    "wejscie": "c2b6c758fde8ecbe",
+    "wstawki": [
+      {
+        "miejsce": "rozpoznawanie/budowa",
+        "rozdzial": "Rozpoznawanie w terenie",
+        "tytul": "Budowa: kwiaty, owoce i nasiona",
+        "ikona": "ra-flower",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Nasiona Jajowate lub eliptyczne, bocznie spłaszczone, u dołu zaokrąglone, a na szczycie ścięte i tu z mięsistym, białawym znaczkiem (hilum).",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1909"
+            ],
+            "sekcja": "czesci_rosliny",
+            "czesc": "nasiona"
+          }
+        ]
+      },
+      {
+        "miejsce": "tajemna/kultura",
+        "rozdzial": "Wiedza tajemna",
+        "tytul": "Wierzenia i legendy",
+        "ikona": "ra-crystal-ball",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "W Japonii w epoce Edo praktykowano zwyczaj wieszania pęczków ziela tasznika pod papierowymi lampionami w ósmym dniu czwartego miesiąca księżycowego, co miało magicznie odstraszać uciążliwe owady.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2189"
+            ],
+            "sekcja": "magia",
+            "czesc": "ziele"
+          }
+        ]
+      }
+    ],
+    "duplikaty": []
   }
 }

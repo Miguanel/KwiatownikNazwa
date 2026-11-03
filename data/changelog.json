@@ -3,16 +3,16 @@
  "opis": "Kronika Siedziby Kwiatownika - pisze ja agent wdrozen (Siedziba).",
  "wpisy": [
   {
-   "data": "2026-11-03T18:29:00+01:00",
-   "tytul": "Nowa wiedza o 21 roślinach",
-   "opis": "Siedziba zebrała 242 sprawdzone informacje (źródła: niemieckie, angielskie, hiszpańskie, francuskie, japońskie). 63 informacje z sieci trafiły do właściwych rozdziałów i podrozdziałów stron roślin.",
+   "data": "2026-11-03T20:16:28+01:00",
+   "tytul": "Nowa wiedza o 18 roślinach",
+   "opis": "Siedziba zebrała 312 sprawdzonych informacji (źródła: niemieckie, angielskie, hiszpańskie, francuskie, japońskie). 72 informacje z sieci trafiły do właściwych rozdziałów i podrozdziałów stron roślin.",
    "liczby": {
-    "informacje": 242,
+    "informacje": 312,
     "przepisy": 0,
-    "rosliny": 21,
+    "rosliny": 18,
     "nowe_rosliny": 0,
     "zdjecia": 0,
-    "rozmieszczone": 63
+    "rozmieszczone": 72
    },
    "rosliny": [
     {
@@ -24,6 +24,24 @@
       "en",
       "ja",
       "zh"
+     ]
+    },
+    {
+     "id": "tasznik_pospolity",
+     "nazwa": "Tasznik pospolity",
+     "nowe": 52,
+     "jezyki": [
+      "de",
+      "en",
+      "ja"
+     ]
+    },
+    {
+     "id": "przytulia_czepna",
+     "nazwa": "Przytulia czepna",
+     "nowe": 18,
+     "jezyki": [
+      "en"
      ]
     },
     {
@@ -112,25 +130,14 @@
      "jezyki": [
       "zh"
      ]
-    },
-    {
-     "id": "jesion_wyniosly",
-     "nazwa": "Jesion wyniosły",
-     "nowe": 6,
-     "jezyki": [
-      "ru"
-     ]
-    },
-    {
-     "id": "czosnaczek_pospolity",
-     "nazwa": "Czosnaczek pospolity",
-     "nowe": 5,
-     "jezyki": [
-      "uk"
-     ]
     }
    ],
-   "przepisy": []
+   "przepisy": [],
+   "aktualizacje": 2,
+   "godziny": [
+    "18:29",
+    "20:16"
+   ]
   },
   {
    "data": "2026-10-30T18:14:42+01:00",

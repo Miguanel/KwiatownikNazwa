@@ -115,7 +115,7 @@
     "Rycina": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Illustration_Galium_aparine0.jpg/960px-Illustration_Galium_aparine0.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-11-02",
+    "zaktualizowano": "2026-11-03",
     "w_url": true,
     "zdjecia": [
       {
@@ -167,19 +167,160 @@
   },
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-11-02",
-    "uporzadkowano": "2026-11-02",
-    "uklad": "llm:ollama/qwen3:8b",
+    "zaktualizowano": "2026-11-03",
+    "uporzadkowano": "2026-11-03",
+    "uklad": "deterministyczny",
     "zrodla": [
+      {
+        "nazwa": "Wikipedia (pl): Przytulia czepna",
+        "url": "https://pl.wikipedia.org/wiki/Przytulia_czepna",
+        "jezyk": "pl",
+        "typ": "wikipedia",
+        "nr": 1
+      },
       {
         "nazwa": "Wikipedia (en): Galium aparine",
         "url": "https://en.wikipedia.org/wiki/Galium_aparine",
         "jezyk": "en",
         "typ": "wikipedia",
-        "nr": 1
+        "nr": 2
       }
     ],
     "sekcje": [
+      {
+        "klucz": "opis",
+        "tytul": "Opis i wygląd",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Cleavers to rośliny jednoroczne o pełzających, rozłożystych łodygach, które rozgałęziają się i rosną wzdłuż ziemi oraz pną się po innych roślinach.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2643"
+            ]
+          },
+          {
+            "tekst": "Rdestnica ma drobne, gwiaździste kwiaty w kolorze od białego do zielonkawego, które kwitną od wczesnej wiosny do lata.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2644"
+            ]
+          },
+          {
+            "tekst": "Liście Wyrastają w okółkach w liczbie od 6–10 w jednym okółku. Poszczególne listki mają 3–8 mm szerokości, są jednonerwowe, klinowatolancetowate i podobnie jak łodyga zadzierzyste.",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2628"
+            ]
+          },
+          {
+            "tekst": "Liście są proste, o kształcie od wąsko odwrotnie lancetowatego do liniowego, ułożone w okółki po sześć do ośmiu.",
+            "czesc": "liście",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2642"
+            ]
+          },
+          {
+            "tekst": "Rozłupnia rozpadająca się na dwie rozłupki o długości 4–7 mm, pokryte haczykowatymi szczecinkami, wyrastającymi na dość dużych brodawkach.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2629"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "wystepowanie",
+        "tytul": "Występowanie",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W Polsce występuje pospolicie na całym terenie.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2631"
+            ]
+          },
+          {
+            "tekst": "Gatunek ten występuje naturalnie na rozległym obszarze Europy, Afryki Północnej i Azji, od Wielkiej Brytanii i Wysp Kanaryjskich po Japonię.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2640"
+            ]
+          },
+          {
+            "tekst": "Roślinę tę można spotkać w żywopłotach i na nieużytkach, na piargach wapiennych oraz jako chwast ogrodowy.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2641"
+            ]
+          },
+          {
+            "tekst": "Roślina jednoroczna. Kwitnie od czerwca do sierpnia, czasami nawet do października.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2632"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Zawiera kumarynę i czerwony barwnik oraz enzym, który powoduje, że mleko krów, które najedzą się tej rośliny, zsiada się.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2630"
+            ]
+          },
+          {
+            "tekst": "Składniki chemiczne Galium aparine obejmują: glikozydy irydoidowe, takie jak kwas asperulozydowy i kwas 10-deacetylasperulozydowy; asperulozyd; monotropeinę; aukubinę; alkaloidy, takie jak kofeina; flawonoidy; kumaryny; kwasy organiczne, takie jak kwas cytrynowy i czerwony barwnik; związki fenolowe, takie jak kwas fenolowy; oraz pochodne antrachinonu, takie jak aldehyd nordamnakantal (1,3-dihydroksyantrachinon-2-al).",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2645"
+            ]
+          }
+        ]
+      },
       {
         "klucz": "zastosowanie_lecznicze",
         "tytul": "Ziołolecznictwo i medycyna ludowa",
@@ -187,13 +328,51 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Tradycyjnie przygotowano okłady i płukanki z całej przytulii, które stosowano na różne problemy skórne, drobne rany i oparzenia; roztłuczone rośliny wykorzystywano także do łagodzenia ukąszeń i użądleń.",
+            "tekst": "Młode pędy są jadalne.",
             "czesc": null,
             "zrodla": [
               1
             ],
             "fakty": [
+              "s2626"
+            ]
+          },
+          {
+            "tekst": "Okłady i płukanki z przytulią tradycyjnie stosowano w leczeniu różnych dolegliwości skórnych, niewielkich ran i oparzeń. W postaci miazgi roślina ta była wykorzystywana do łagodzenia skutków ukąszeń i użądleń jadowitych owadów.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
               "s2517"
+            ]
+          },
+          {
+            "tekst": "Z owoców wytwarzano substytut kawy.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2627"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "barwienie",
+        "tytul": "Barwienie i rzemiosło",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Z korzeni przytuliec można uzyskać trwały czerwony barwnik.",
+            "czesc": "korzeń",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2639"
             ]
           }
         ]
@@ -208,10 +387,48 @@
             "tekst": "Nazwa „Galium” pochodzi od greckiego słowa oznaczającego mleko, ponieważ kwiaty niektórych gatunków tego rodzaju używano do zsiadania mleka; epitet „aparine” wywodzi się od greckiego apairo – „przyczepiać, chwytać”.",
             "czesc": null,
             "zrodla": [
-              1
+              2
             ],
             "fakty": [
               "s2514"
+            ]
+          },
+          {
+            "tekst": "Dioskorides podał, że starożytni greccy pasterze wykorzystywali kolczaste łodygi przytuliec do wyrobu „prymitywnego sita”, które służyło do odcedzania mleka.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2637"
+            ]
+          },
+          {
+            "tekst": "W Europie suszone, splątane liście tej rośliny były niegdyś wykorzystywane do wypełniania materacy.",
+            "czesc": "liście",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2638"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "nazwy_ludowe",
+        "tytul": "Nazwy ludowe",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Galium aparine znane jest pod wieloma potocznymi nazwami w języku angielskim. Należą do nich: bedstraw, bobby buttons, catchweed, cleavers, clivers, (small) goosegrass, grip grass, hitchhikers, robin-run-the-hedge, stickeljack, stickyback, sticky bob, stickybud, sticky grass, stickyjack, sticky molly, stickyweed, sticky willow, sticky willy, sweetheart, velcro plant oraz whippysticks.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2633"
             ]
           }
         ]
@@ -223,13 +440,23 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Kontakt z przytulią może wywołać podrażnienie skóry, a drobne haczyki mogą drapać wrażliwe miejsca, przypominając wysypkę.",
+            "tekst": "U niektórych osób kontakt z tą rośliną może powodować podrażnienie skóry. Chociaż włoski tej rośliny są niewielkie, mogą zadrapać bardziej wrażliwe partie skóry. Liczne takie zadrapania mogą przypominać wysypkę.",
             "czesc": null,
             "zrodla": [
-              1
+              2
             ],
             "fakty": [
               "s2515"
+            ]
+          },
+          {
+            "tekst": "U niektórych osób kontakt z tą rośliną może powodować podrażnienie skóry.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2634"
             ]
           }
         ]
@@ -241,10 +468,10 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Liście i łodygi przytulii można spożywać jako warzywo liściowe, pod warunkiem że zostaną zebrane przed zasklepieniem owoców.",
+            "tekst": "Galium aparine nadaje się do spożycia. Liście i łodygi tej rośliny można przyrządzać jako warzywo liściaste, o ile zostaną zebrane, zanim owoce stwardnieją.",
             "czesc": "liście",
             "zrodla": [
-              1
+              2
             ],
             "fakty": [
               "s2516"
@@ -254,8 +481,22 @@
       }
     ],
     "czesci": {
+      "kwiaty": [
+        "s2644",
+        "s2632"
+      ],
       "liście": [
+        "s2628",
+        "s2642",
+        "s2638",
         "s2516"
+      ],
+      "owoce": [
+        "s2629",
+        "s2627"
+      ],
+      "korzeń": [
+        "s2639"
       ]
     },
     "fakty": [
@@ -275,7 +516,7 @@
         "id": "s2515",
         "sekcja": "bezpieczenstwo",
         "czesc": null,
-        "tekst": "Kontakt z przytulią może wywołać podrażnienie skóry, a drobne haczyki mogą drapać wrażliwe miejsca, przypominając wysypkę.",
+        "tekst": "U niektórych osób kontakt z tą rośliną może powodować podrażnienie skóry. Chociaż włoski tej rośliny są niewielkie, mogą zadrapać bardziej wrażliwe partie skóry. Liczne takie zadrapania mogą przypominać wysypkę.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Galium aparine",
@@ -287,7 +528,7 @@
         "id": "s2516",
         "sekcja": "ciekawostki",
         "czesc": "liście",
-        "tekst": "Liście i łodygi przytulii można spożywać jako warzywo liściowe, pod warunkiem że zostaną zebrane przed zasklepieniem owoców.",
+        "tekst": "Galium aparine nadaje się do spożycia. Liście i łodygi tej rośliny można przyrządzać jako warzywo liściaste, o ile zostaną zebrane, zanim owoce stwardnieją.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Galium aparine",
@@ -299,20 +540,432 @@
         "id": "s2517",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": null,
-        "tekst": "Tradycyjnie przygotowano okłady i płukanki z całej przytulii, które stosowano na różne problemy skórne, drobne rany i oparzenia; roztłuczone rośliny wykorzystywano także do łagodzenia ukąszeń i użądleń.",
+        "tekst": "Okłady i płukanki z przytulią tradycyjnie stosowano w leczeniu różnych dolegliwości skórnych, niewielkich ran i oparzeń. W postaci miazgi roślina ta była wykorzystywana do łagodzenia skutków ukąszeń i użądleń jadowitych owadów.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Galium aparine",
           "url": "https://en.wikipedia.org/wiki/Galium_aparine"
         },
         "cytat": "Poultices and washes made from cleavers were traditionally used to treat a variety of skin ailments, light wounds, and burns. As a pulp, it has been used to relieve venomous bites and stings."
+      },
+      {
+        "id": "s2626",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": null,
+        "tekst": "Młode pędy są jadalne.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Przytulia czepna",
+          "url": "https://pl.wikipedia.org/wiki/Przytulia_czepna"
+        },
+        "cytat": "Młode pędy są jadalne."
+      },
+      {
+        "id": "s2627",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "owoce",
+        "tekst": "Z owoców wytwarzano substytut kawy.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Przytulia czepna",
+          "url": "https://pl.wikipedia.org/wiki/Przytulia_czepna"
+        },
+        "cytat": "Z owoców wytwarzano substytut kawy."
+      },
+      {
+        "id": "s2628",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Liście Wyrastają w okółkach w liczbie od 6–10 w jednym okółku. Poszczególne listki mają 3–8 mm szerokości, są jednonerwowe, klinowatolancetowate i podobnie jak łodyga zadzierzyste.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Przytulia czepna",
+          "url": "https://pl.wikipedia.org/wiki/Przytulia_czepna"
+        },
+        "cytat": "Liście Wyrastają w okółkach w liczbie od 6–10 w jednym okółku. Poszczególne listki mają 3–8 mm szerokości, są jednonerwowe, klinowatolancetowate i podobnie jak łodyga zadzierzyste."
+      },
+      {
+        "id": "s2629",
+        "sekcja": "opis",
+        "czesc": "owoce",
+        "tekst": "Rozłupnia rozpadająca się na dwie rozłupki o długości 4–7 mm, pokryte haczykowatymi szczecinkami, wyrastającymi na dość dużych brodawkach.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Przytulia czepna",
+          "url": "https://pl.wikipedia.org/wiki/Przytulia_czepna"
+        },
+        "cytat": "Rozłupnia rozpadająca się na dwie rozłupki o długości 4–7 mm, pokryte haczykowatymi szczecinkami, wyrastającymi na dość dużych brodawkach."
+      },
+      {
+        "id": "s2630",
+        "sekcja": "sklad",
+        "czesc": null,
+        "tekst": "Zawiera kumarynę i czerwony barwnik oraz enzym, który powoduje, że mleko krów, które najedzą się tej rośliny, zsiada się.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Przytulia czepna",
+          "url": "https://pl.wikipedia.org/wiki/Przytulia_czepna"
+        },
+        "cytat": "Zawiera kumarynę i czerwony barwnik oraz enzym, który powoduje, że mleko krów, które najedzą się tej rośliny, zsiada się."
+      },
+      {
+        "id": "s2631",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "W Polsce występuje pospolicie na całym terenie.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Przytulia czepna",
+          "url": "https://pl.wikipedia.org/wiki/Przytulia_czepna"
+        },
+        "cytat": "W Polsce występuje pospolicie na całym terenie."
+      },
+      {
+        "id": "s2632",
+        "sekcja": "wystepowanie",
+        "czesc": "kwiaty",
+        "tekst": "Roślina jednoroczna. Kwitnie od czerwca do sierpnia, czasami nawet do października.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Przytulia czepna",
+          "url": "https://pl.wikipedia.org/wiki/Przytulia_czepna"
+        },
+        "cytat": "Roślina jednoroczna. Kwitnie od czerwca do sierpnia, czasami nawet do października."
+      },
+      {
+        "id": "s2633",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "Galium aparine znane jest pod wieloma potocznymi nazwami w języku angielskim. Należą do nich: bedstraw, bobby buttons, catchweed, cleavers, clivers, (small) goosegrass, grip grass, hitchhikers, robin-run-the-hedge, stickeljack, stickyback, sticky bob, stickybud, sticky grass, stickyjack, sticky molly, stickyweed, sticky willow, sticky willy, sweetheart, velcro plant oraz whippysticks.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Galium aparine",
+          "url": "https://en.wikipedia.org/wiki/Galium_aparine"
+        },
+        "cytat": "Galium aparine is known by a variety of common names in English. They include bedstraw, bobby buttons, catchweed, cleavers, clivers, (small) goosegrass, grip grass, hitchhikers, robin-run-the-hedge, stickeljack, stickyback, sticky bob, stic"
+      },
+      {
+        "id": "s2634",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "U niektórych osób kontakt z tą rośliną może powodować podrażnienie skóry.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Galium aparine",
+          "url": "https://en.wikipedia.org/wiki/Galium_aparine"
+        },
+        "cytat": "For some people, contact with the plant can cause skin irritation."
+      },
+      {
+        "id": "s2637",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Dioskorides podał, że starożytni greccy pasterze wykorzystywali kolczaste łodygi przytuliec do wyrobu „prymitywnego sita”, które służyło do odcedzania mleka.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Galium aparine",
+          "url": "https://en.wikipedia.org/wiki/Galium_aparine"
+        },
+        "cytat": "Dioscorides reported that ancient Greek shepherds would use the barbed stems of cleavers to make a \"rough sieve\", which could be used to strain milk."
+      },
+      {
+        "id": "s2638",
+        "sekcja": "historia",
+        "czesc": "liście",
+        "tekst": "W Europie suszone, splątane liście tej rośliny były niegdyś wykorzystywane do wypełniania materacy.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Galium aparine",
+          "url": "https://en.wikipedia.org/wiki/Galium_aparine"
+        },
+        "cytat": "In Europe, the plant's dried, matted foliage was once used to stuff mattresses."
+      },
+      {
+        "id": "s2639",
+        "sekcja": "barwienie",
+        "czesc": "korzeń",
+        "tekst": "Z korzeni przytuliec można uzyskać trwały czerwony barwnik.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Galium aparine",
+          "url": "https://en.wikipedia.org/wiki/Galium_aparine"
+        },
+        "cytat": "The roots of cleavers can be used to make a permanent red dye."
+      },
+      {
+        "id": "s2640",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Gatunek ten występuje naturalnie na rozległym obszarze Europy, Afryki Północnej i Azji, od Wielkiej Brytanii i Wysp Kanaryjskich po Japonię.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Galium aparine",
+          "url": "https://en.wikipedia.org/wiki/Galium_aparine"
+        },
+        "cytat": "The species is native to a wide region of Europe, North Africa, and Asia, from Britain and the Canary Islands to Japan."
+      },
+      {
+        "id": "s2641",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Roślinę tę można spotkać w żywopłotach i na nieużytkach, na piargach wapiennych oraz jako chwast ogrodowy.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Galium aparine",
+          "url": "https://en.wikipedia.org/wiki/Galium_aparine"
+        },
+        "cytat": "The plant can be found growing in hedges and waste places, limestone scree, and as a garden weed."
+      },
+      {
+        "id": "s2642",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Liście są proste, o kształcie od wąsko odwrotnie lancetowatego do liniowego, ułożone w okółki po sześć do ośmiu.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Galium aparine",
+          "url": "https://en.wikipedia.org/wiki/Galium_aparine"
+        },
+        "cytat": "The leaves are simple, narrowly oblanceolate to linear, and borne in whorls of six to eight."
+      },
+      {
+        "id": "s2643",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Cleavers to rośliny jednoroczne o pełzających, rozłożystych łodygach, które rozgałęziają się i rosną wzdłuż ziemi oraz pną się po innych roślinach.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Galium aparine",
+          "url": "https://en.wikipedia.org/wiki/Galium_aparine"
+        },
+        "cytat": "Cleavers are annuals with creeping straggling stems that branch and grow along the ground and over other plants."
+      },
+      {
+        "id": "s2644",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Rdestnica ma drobne, gwiaździste kwiaty w kolorze od białego do zielonkawego, które kwitną od wczesnej wiosny do lata.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Galium aparine",
+          "url": "https://en.wikipedia.org/wiki/Galium_aparine"
+        },
+        "cytat": "Cleavers have tiny, star-shaped, white to greenish flowers, which emerge from early spring to summer."
+      },
+      {
+        "id": "s2645",
+        "sekcja": "sklad",
+        "czesc": null,
+        "tekst": "Składniki chemiczne Galium aparine obejmują: glikozydy irydoidowe, takie jak kwas asperulozydowy i kwas 10-deacetylasperulozydowy; asperulozyd; monotropeinę; aukubinę; alkaloidy, takie jak kofeina; flawonoidy; kumaryny; kwasy organiczne, takie jak kwas cytrynowy i czerwony barwnik; związki fenolowe, takie jak kwas fenolowy; oraz pochodne antrachinonu, takie jak aldehyd nordamnakantal (1,3-dihydroksyantrachinon-2-al).",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Galium aparine",
+          "url": "https://en.wikipedia.org/wiki/Galium_aparine"
+        },
+        "cytat": "Chemical constituents of Galium aparine include: iridoid glycosides such as asperulosidic acid and 10-deacetylasperulosidic acid; asperuloside; monotropein; aucubin; alkaloids such as caffeine; flavonoids; coumarins; organic acids such as c"
       }
     ]
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-11-02",
+    "zaktualizowano": "2026-11-03",
     "pola": {
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Jednoroczna roślina o płożącej lub wspinającej się łodydze, dorastająca do 1,5 m długości. Jej najbardziej charakterystyczną cechą są haczykowate szczecinki, dzięki którym 'czepia się' ubrań, sierści zwierząt i sąsiednich roślin. Przytulia jest bliską krewną kawowca, co zdradza zapach jej palonych nasion. Jest rośliną pospolitą, często traktowaną jako uciążliwy chwast, mimo swojej potężnej mocy uzdrawiającej układ chłonny.",
+        "tresc": [
+          {
+            "tekst": "Jednoroczna roślina o płożącej lub wspinającej się łodydze, dorastająca do 1,5 m długości.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jej najbardziej charakterystyczną cechą są haczykowate szczecinki, dzięki którym 'czepia się' ubrań, sierści zwierząt i sąsiednich roślin.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Przytulia jest bliską krewną kawowca, co zdradza zapach jej palonych nasion.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jest rośliną pospolitą, często traktowaną jako uciążliwy chwast, mimo swojej potężnej mocy uzdrawiającej układ chłonny.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Cleavers to rośliny jednoroczne o pełzających, rozłożystych łodygach, które rozgałęziają się i rosną wzdłuż ziemi oraz pną się po innych roślinach.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2643"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "ea5d76fac13809d2"
+      },
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": [
+          "Łodyga czworokątna, z haczykowatymi włoskami na krawędziach, które 'czepiają się' dotyku.",
+          "Liście zebrane w okółki po 6-8 sztuk, lancetowate, również zakończone małym haczykiem.",
+          "Kwiaty drobne, białe, wyrastające z kątów liści na długich szypułkach.",
+          "Owoce to małe, kuliste rozłupki pokryte gęstymi, haczykowatymi włoskami (rzepy)."
+        ],
+        "tresc": [
+          {
+            "tekst": "Łodyga czworokątna, z haczykowatymi włoskami na krawędziach, które 'czepiają się' dotyku.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Liście zebrane w okółki po 6-8 sztuk, lancetowate, również zakończone małym haczykiem.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwiaty drobne, białe, wyrastające z kątów liści na długich szypułkach.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Owoce to małe, kuliste rozłupki pokryte gęstymi, haczykowatymi włoskami (rzepy).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Rdestnica ma drobne, gwiaździste kwiaty w kolorze od białego do zielonkawego, które kwitną od wczesnej wiosny do lata.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2644"
+            ]
+          },
+          {
+            "tekst": "Liście Wyrastają w okółkach w liczbie od 6–10 w jednym okółku. Poszczególne listki mają 3–8 mm szerokości, są jednonerwowe, klinowatolancetowate i podobnie jak łodyga zadzierzyste.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2628"
+            ]
+          },
+          {
+            "tekst": "Liście są proste, o kształcie od wąsko odwrotnie lancetowatego do liniowego, ułożone w okółki po sześć do ośmiu.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2642"
+            ]
+          },
+          {
+            "tekst": "Rozłupnia rozpadająca się na dwie rozłupki o długości 4–7 mm, pokryte haczykowatymi szczecinkami, wyrastającymi na dość dużych brodawkach.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2629"
+            ]
+          },
+          {
+            "tekst": "Roślina jednoroczna. Kwitnie od czerwca do sierpnia, czasami nawet do października.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2632"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "a39fa52a162ebb45"
+      },
+      "wymagania.stanowisko": {
+        "tytul": "Natura i siedlisko - Stanowisko",
+        "typ": "tekst",
+        "oryginal": "Półcień do słońca. Lubi miejsca wilgotne, ale jest niezwykle adaptacyjna.",
+        "tresc": [
+          {
+            "tekst": "Półcień do słońca.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Lubi miejsca wilgotne, ale jest niezwykle adaptacyjna.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W Polsce występuje pospolicie na całym terenie.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2631"
+            ]
+          },
+          {
+            "tekst": "Gatunek ten występuje naturalnie na rozległym obszarze Europy, Afryki Północnej i Azji, od Wielkiej Brytanii i Wysp Kanaryjskich po Japonię.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2640"
+            ]
+          },
+          {
+            "tekst": "Roślinę tę można spotkać w żywopłotach i na nieużytkach, na piargach wapiennych oraz jako chwast ogrodowy.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2641"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "69d423e6710a0969"
+      },
+      "zastosowanie.kulinarne": {
+        "tytul": "Praktyczne zastosowanie - Kuchnia",
+        "typ": "tekst",
+        "oryginal": "Młode pędy (marzec-kwiecień) po ugotowaniu smakują jak szpinak. Prażone nasiona to 'kawa z przytulii'. Świeży sok dodawany do zielonych smoothie.",
+        "tresc": [
+          {
+            "tekst": "Młode pędy (marzec-kwiecień) po ugotowaniu smakują jak szpinak.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Prażone nasiona to 'kawa z przytulii'.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Świeży sok dodawany do zielonych smoothie.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Młode pędy są jadalne.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2626"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "bd7471d19b731792"
+      },
       "zastosowanie.medyczne": {
         "tytul": "Praktyczne zastosowanie - Medycyna",
         "typ": "tekst",
@@ -324,17 +977,63 @@
             "fakty": []
           },
           {
-            "tekst": "Tradycyjnie przygotowano okłady i płukanki z całej przytulii, które stosowano na różne problemy skórne, drobne rany i oparzenia; roztłuczone rośliny wykorzystywano także do łagodzenia ukąszeń i użądleń.",
+            "tekst": "Okłady i płukanki z przytulią tradycyjnie stosowano w leczeniu różnych dolegliwości skórnych, niewielkich ran i oparzeń. W postaci miazgi roślina ta była wykorzystywana do łagodzenia skutków ukąszeń i użądleń jadowitych owadów.",
             "zrodla": [
-              1
+              2
             ],
             "fakty": [
               "s2517"
             ]
           }
         ],
-        "model": "bez LLM: brak modelu",
+        "model": "bez LLM",
         "wejscie": "3c3a0a1284d2b632"
+      },
+      "czesci_rosliny.owoce.wlasciwości": {
+        "tytul": "Surowce i zbiory - Owoce (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Z owoców wytwarzano substytut kawy.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2627"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "bf74a4d73dff3d59"
+      },
+      "zastosowanie.rzemieslnicze": {
+        "tytul": "Praktyczne zastosowanie - Rzemiosło",
+        "typ": "tekst",
+        "oryginal": "Dawniej używana do wyrobu sit (ze względu na czepne właściwości) oraz jako podpuszczka do ścinania mleka przy wyrobie serów (stąd nazwa 'aparine' od gr. 'apairo' - chwytać/ścinać).",
+        "tresc": [
+          {
+            "tekst": "Dawniej używana do wyrobu sit (ze względu na czepne właściwości) oraz jako podpuszczka do ścinania mleka przy wyrobie serów (stąd nazwa 'aparine' od gr.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "'apairo' - chwytać/ścinać).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Z korzeni przytuliec można uzyskać trwały czerwony barwnik.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2639"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "bfea17a1e27bc531"
       },
       "ciekawostki": {
         "tytul": "Wiedza tajemna - Ciekawostki",
@@ -375,24 +1074,51 @@
           {
             "tekst": "Nazwa „Galium” pochodzi od greckiego słowa oznaczającego mleko, ponieważ kwiaty niektórych gatunków tego rodzaju używano do zsiadania mleka; epitet „aparine” wywodzi się od greckiego apairo – „przyczepiać, chwytać”.",
             "zrodla": [
-              1
+              2
             ],
             "fakty": [
               "s2514"
             ]
           },
           {
-            "tekst": "Liście i łodygi przytulii można spożywać jako warzywo liściowe, pod warunkiem że zostaną zebrane przed zasklepieniem owoców.",
+            "tekst": "Dioskorides podał, że starożytni greccy pasterze wykorzystywali kolczaste łodygi przytuliec do wyrobu „prymitywnego sita”, które służyło do odcedzania mleka.",
             "zrodla": [
-              1
+              2
+            ],
+            "fakty": [
+              "s2637"
+            ]
+          },
+          {
+            "tekst": "W Europie suszone, splątane liście tej rośliny były niegdyś wykorzystywane do wypełniania materacy.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2638"
+            ]
+          },
+          {
+            "tekst": "Galium aparine znane jest pod wieloma potocznymi nazwami w języku angielskim. Należą do nich: bedstraw, bobby buttons, catchweed, cleavers, clivers, (small) goosegrass, grip grass, hitchhikers, robin-run-the-hedge, stickeljack, stickyback, sticky bob, stickybud, sticky grass, stickyjack, sticky molly, stickyweed, sticky willow, sticky willy, sweetheart, velcro plant oraz whippysticks.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2633"
+            ]
+          },
+          {
+            "tekst": "Galium aparine nadaje się do spożycia. Liście i łodygi tej rośliny można przyrządzać jako warzywo liściaste, o ile zostaną zebrane, zanim owoce stwardnieją.",
+            "zrodla": [
+              2
             ],
             "fakty": [
               "s2516"
             ]
           }
         ],
-        "model": "bez LLM: brak modelu",
-        "wejscie": "b1e20dd8574aa8e6"
+        "model": "bez LLM",
+        "wejscie": "11fe566e2e20326c"
       },
       "ostrzezenia": {
         "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
@@ -410,24 +1136,89 @@
             "fakty": []
           },
           {
-            "tekst": "Kontakt z przytulią może wywołać podrażnienie skóry, a drobne haczyki mogą drapać wrażliwe miejsca, przypominając wysypkę.",
+            "tekst": "U niektórych osób kontakt z tą rośliną może powodować podrażnienie skóry. Chociaż włoski tej rośliny są niewielkie, mogą zadrapać bardziej wrażliwe partie skóry. Liczne takie zadrapania mogą przypominać wysypkę.",
             "zrodla": [
-              1
+              2
             ],
             "fakty": [
               "s2515"
             ]
+          },
+          {
+            "tekst": "U niektórych osób kontakt z tą rośliną może powodować podrażnienie skóry.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2634"
+            ]
           }
         ],
-        "model": "bez LLM: brak modelu",
-        "wejscie": "8c36579918f9a373"
+        "model": "bez LLM",
+        "wejscie": "21af1ccbf1f3233c"
       }
     },
     "uzyte_fakty": [
       "s2514",
       "s2515",
       "s2516",
-      "s2517"
+      "s2517",
+      "s2626",
+      "s2627",
+      "s2628",
+      "s2629",
+      "s2631",
+      "s2632",
+      "s2633",
+      "s2634",
+      "s2637",
+      "s2638",
+      "s2639",
+      "s2640",
+      "s2641",
+      "s2642",
+      "s2643",
+      "s2644"
     ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-03",
+    "jak": "llm:groq/openai/gpt-oss-20b",
+    "wejscie": "c0194be3aad69872",
+    "wstawki": [
+      {
+        "miejsce": "surowce/sklad",
+        "rozdzial": "Surowce i zbiory",
+        "tytul": "Skład i substancje czynne",
+        "ikona": "ra-fizzing-flask",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Zawiera kumarynę i czerwony barwnik oraz enzym, który powoduje, że mleko krów, które najedzą się tej rośliny, zsiada się.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2630"
+            ],
+            "sekcja": "sklad",
+            "czesc": null
+          },
+          {
+            "tekst": "Składniki chemiczne Galium aparine obejmują: glikozydy irydoidowe, takie jak kwas asperulozydowy i kwas 10-deacetylasperulozydowy; asperulozyd; monotropeinę; aukubinę; alkaloidy, takie jak kofeina; flawonoidy; kumaryny; kwasy organiczne, takie jak kwas cytrynowy i czerwony barwnik; związki fenolowe, takie jak kwas fenolowy; oraz pochodne antrachinonu, takie jak aldehyd nordamnakantal (1,3-dihydroksyantrachinon-2-al).",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2645"
+            ],
+            "sekcja": "sklad",
+            "czesc": null
+          }
+        ]
+      }
+    ],
+    "duplikaty": []
   }
 }

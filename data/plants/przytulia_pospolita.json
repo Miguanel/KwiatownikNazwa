@@ -145,9 +145,9 @@
   "ostrzezenia": "Roślina uchodzi za wyjątkowo bezpieczną. Należy zachować ostrożność i umiar w przypadku współistnienia chorób wymagających leczenia silnymi lekami diuretycznymi, aby nie obciążyć zbytnio nerek. Zawsze zbieraj surowiec z miejsc odległych od dróg asfaltowych.",
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-11-02",
-    "uporzadkowano": "2026-11-02",
-    "uklad": "deterministyczny: punkt [3] odbiega od oryginalow",
+    "zaktualizowano": "2026-11-03",
+    "uporzadkowano": "2026-11-03",
+    "uklad": "deterministyczny",
     "zrodla": [
       {
         "nazwa": "Wikipedia (de): Wiesen-Labkraut",
@@ -165,7 +165,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "W Alpach Allgäus, w części tyrolskiej, roślina spotykana jest na wysokościach sięgających 1800 metrów n.p.m., preferując żyzne, wilgotne gleby gliniaste na obrzeżach lasów i polan.",
+            "tekst": "W Alpach Allgäu, w części tyrolskiej, między Dürnau (gmina Reutte) a Vorderer Mutte, wznosi się na wysokość 1800 metrów.",
             "czesc": null,
             "zrodla": [
               1
@@ -183,7 +183,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Taksonomicznie odróżnia się ją od przytulii białej (Galium album) mniejszą liczbą chromosomów (2n = 22 względem 44 u gatunku białego), co utrudnia pewne zidentyfikowanie pospolitego gatunku w terenie.",
+            "tekst": "Mają one jednak różną liczbę chromosomów. Galium album ma 2n = 44, a Galium mollugo 2n = 22. ... każdą informację dotyczącą Galium mollugo należy najpierw sprawdzić, czy odnosi się ona również do tego konkretnego gatunku.",
             "czesc": null,
             "zrodla": [
               1
@@ -201,7 +201,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Dojrzewające latem nasiona po uprażeniu można stosować jako aromatyczną kawe zastępczą.",
+            "tekst": "W sierpniu i wrześniu dojrzewają nasiona, które po uprażeniu stanowią aromatyczny zamiennik kawy.",
             "czesc": "nasiona",
             "zrodla": [
               1
@@ -223,7 +223,7 @@
         "id": "s2511",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": "nasiona",
-        "tekst": "Dojrzewające latem nasiona po uprażeniu można stosować jako aromatyczną kawe zastępczą.",
+        "tekst": "W sierpniu i wrześniu dojrzewają nasiona, które po uprażeniu stanowią aromatyczny zamiennik kawy.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Wiesen-Labkraut",
@@ -235,7 +235,7 @@
         "id": "s2512",
         "sekcja": "wystepowanie",
         "czesc": null,
-        "tekst": "W Alpach Allgäus, w części tyrolskiej, roślina spotykana jest na wysokościach sięgających 1800 metrów n.p.m., preferując żyzne, wilgotne gleby gliniaste na obrzeżach lasów i polan.",
+        "tekst": "W Alpach Allgäu, w części tyrolskiej, między Dürnau (gmina Reutte) a Vorderer Mutte, wznosi się na wysokość 1800 metrów.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Wiesen-Labkraut",
@@ -247,7 +247,7 @@
         "id": "s2513",
         "sekcja": "czesci_rosliny",
         "czesc": null,
-        "tekst": "Taksonomicznie odróżnia się ją od przytulii białej (Galium album) mniejszą liczbą chromosomów (2n = 22 względem 44 u gatunku białego), co utrudnia pewne zidentyfikowanie pospolitego gatunku w terenie.",
+        "tekst": "Mają one jednak różną liczbę chromosomów. Galium album ma 2n = 44, a Galium mollugo 2n = 22. ... każdą informację dotyczącą Galium mollugo należy najpierw sprawdzić, czy odnosi się ona również do tego konkretnego gatunku.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Wiesen-Labkraut",
@@ -259,48 +259,15 @@
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-11-02",
+    "zaktualizowano": "2026-11-03",
     "pola": {
-      "wymagania.gleba": {
-        "tytul": "Natura i siedlisko - Gleba",
-        "typ": "tekst",
-        "oryginal": "Niewymagająca. Rośnie na glebach piaszczystych, gliniastych, a także na suchych i jałowych nieużytkach. Toleruje zasolenie (stąd jej obecność przy drogach).",
-        "tresc": [
-          {
-            "tekst": "Niewymagająca.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Rośnie na glebach piaszczystych, gliniastych, a także na suchych i jałowych nieużytkach.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Toleruje zasolenie (stąd jej obecność przy drogach).",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "W Alpach Allgäus, w części tyrolskiej, roślina spotykana jest na wysokościach sięgających 1800 metrów n.p.m., preferując żyzne, wilgotne gleby gliniaste na obrzeżach lasów i polan.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s2512"
-            ]
-          }
-        ],
-        "model": "bez LLM: brak modelu",
-        "wejscie": "d5e405aa5d9062be"
-      },
       "czesci_rosliny.nasiona.wlasciwości": {
         "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Działanie",
         "typ": "tekst",
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Dojrzewające latem nasiona po uprażeniu można stosować jako aromatyczną kawe zastępczą.",
+            "tekst": "W sierpniu i wrześniu dojrzewają nasiona, które po uprażeniu stanowią aromatyczny zamiennik kawy.",
             "zrodla": [
               1
             ],
@@ -309,30 +276,49 @@
             ]
           }
         ],
-        "model": "bez LLM: brak modelu",
+        "model": "bez LLM",
         "wejscie": "3ef7bfb10fd9f13a"
       }
     },
     "uzyte_fakty": [
-      "s2511",
-      "s2512"
+      "s2511"
     ]
   },
   "rozmieszczenie": {
     "wersja": 1,
-    "zaktualizowano": "2026-11-02",
+    "zaktualizowano": "2026-11-03",
     "jak": "reguly",
-    "wejscie": "7c695b5f1bbc3ed9",
+    "wejscie": "6031c222412e9cf5",
     "wstawki": [
       {
-        "miejsce": "rozpoznawanie/pomylki",
-        "rozdzial": "Rozpoznawanie w terenie",
-        "tytul": "Możliwe pomyłki",
-        "ikona": "ra-skull",
-        "nowy": false,
+        "miejsce": "natura/wystepowanie",
+        "rozdzial": "Natura i siedlisko",
+        "tytul": "Występowanie i zasięg",
+        "ikona": "ra-compass",
+        "nowy": true,
         "punkty": [
           {
-            "tekst": "Taksonomicznie odróżnia się ją od przytulii białej (Galium album) mniejszą liczbą chromosomów (2n = 22 względem 44 u gatunku białego), co utrudnia pewne zidentyfikowanie pospolitego gatunku w terenie.",
+            "tekst": "W Alpach Allgäu, w części tyrolskiej, między Dürnau (gmina Reutte) a Vorderer Mutte, wznosi się na wysokość 1800 metrów.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2512"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          }
+        ]
+      },
+      {
+        "miejsce": "surowce/inne",
+        "rozdzial": "Surowce i zbiory",
+        "tytul": "Surowce całej rośliny",
+        "ikona": "ra-potion",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Mają one jednak różną liczbę chromosomów. Galium album ma 2n = 44, a Galium mollugo 2n = 22. ... każdą informację dotyczącą Galium mollugo należy najpierw sprawdzić, czy odnosi się ona również do tego konkretnego gatunku.",
             "zrodla": [
               1
             ],

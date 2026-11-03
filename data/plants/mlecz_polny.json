@@ -108,7 +108,7 @@
     "Rycina": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Illustration_Sonchus_arvensis_clean.jpg/960px-Illustration_Sonchus_arvensis_clean.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-15",
+    "zaktualizowano": "2026-11-03",
     "w_url": true,
     "zdjecia": [
       {
@@ -151,9 +151,9 @@
   },
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-10-09",
-    "uporzadkowano": "2026-10-09",
-    "uklad": "llm:gemini/gemini-3.5-flash-lite",
+    "zaktualizowano": "2026-11-03",
+    "uporzadkowano": "2026-11-03",
+    "uklad": "deterministyczny",
     "zrodla": [
       {
         "nazwa": "Wikipedia (pl): Mlecz polny",
@@ -181,24 +181,11 @@
       {
         "klucz": "opis",
         "tytul": "Opis i wygląd",
-        "podsumowanie": "Mlecz polny charakteryzuje się sinymi, kolczasto ząbkowanymi liśćmi oraz koszyczkami kwiatowymi o średnicy 4-5 cm, które kwitną od lipca do października i zawierają do 100 kwiatów. Owoce rośliny to ciemnobrunatne niełupki z puchiem kielichowym, posiadające pięć żeberek, które są rozsiewane przez wiatr.",
-        "podsumowanie_zrodla": [
-          1,
-          2
-        ],
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Liście mleczu polnego charakteryzują się nierówno kolczasto ząbkowanymi brzegami, wrębną lub pierzastodzielną budową o sercowatej nasadzie i często siną barwą.",
-            "czesc": "liście",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s1367"
-            ]
-          },
-          {
-            "tekst": "Kwitnie od lipca do października, a kwiatostany mają 4-5 cm średnicy i mogą zawierać do 100 kwiatów.",
+            "tekst": "Okres kwitnienia trwa od lipca do października. ... Złocistożółte koszyczki kwiatowe ... osiągają wielkość od 4 do 5 cm. Każdy koszyczek zawiera do 100 kwiatów języczkowych.",
             "czesc": "kwiaty",
             "zrodla": [
               2
@@ -208,7 +195,17 @@
             ]
           },
           {
-            "tekst": "Owoce rośliny to ciemnobrunatne niełupki z puchiem kielichowym, które posiadają obustronnie pięć żeberek i są rozsiewane przez wiatr.",
+            "tekst": "Liście na brzegach nierówno kolczasto ząbkowane, wrębne lub pierzastodzielne o sercowatej nasadzie. Często o sinej barwie.",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1367"
+            ]
+          },
+          {
+            "tekst": "Ciemnobrunatna niełupka z puchem kielichowym, obustronnie 5-żebrowa.",
             "czesc": "owoce",
             "zrodla": [
               1
@@ -226,7 +223,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Gatunek ten występuje na obszarze całej Europy, w środkowej i zachodniej Azji, na Syberii, Kaukazie oraz w Afryce Północnej, a w Polsce jest pospolity na niżu i w niższych położeniach górskich.",
+            "tekst": "Występuje w całej Europie, w środkowej i zachodniej Azji, na Syberii, Kaukazie i w Afryce Północnej (Algieria, Maroko, Tunezja). Rozprzestrzenił się też gdzieniegdzie poza tym rodzimym obszarem swojego występowania. W Polsce jest pospolity na niżu i w niższych położeniach górskich.",
             "czesc": null,
             "zrodla": [
               1
@@ -236,7 +233,7 @@
             ]
           },
           {
-            "tekst": "Poza macierzystym obszarem Eurazji, mlecz polny zadomowił się w wielu regionach świata, gdzie w niektórych miejscach, takich jak Nowa Zelandia czy Australia, jest uznawany za inwazyjny chwast.",
+            "tekst": "Roślina ta zadomowiła się również w wielu innych regionach i w niektórych miejscach, takich jak Ameryka Północna (w tym Wyspa Księcia Edwarda), Rosja, Nowa Zelandia i Australia, jest uznawana za inwazyjny, szkodliwy chwast.",
             "czesc": null,
             "zrodla": [
               3
@@ -254,7 +251,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Roślina zawiera mleczny sok, charakterystyczny dla jej części zielnych.",
+            "tekst": "Części roślin zawierają mleczny sok.",
             "czesc": "sok",
             "zrodla": [
               2
@@ -272,7 +269,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "W języku angielskim roślina ta znana jest pod wieloma nazwami ludowymi, w tym milk thistle, sowthistle, dindle, gutweed, swine thistle oraz tree sow thistle.",
+            "tekst": "ostropest polny, ostropest polny, ostropest wieloletni, ostropest kukurydziany, dindle, gutweed, ostropest świński lub ostropest drzewiasty",
             "czesc": null,
             "zrodla": [
               3
@@ -290,17 +287,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Roślina może stać się szkodliwa w glebach bogatych w związki azotu, ponieważ kumuluje azotany w niebezpiecznych dawkach.",
-            "czesc": null,
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s1370"
-            ]
-          },
-          {
-            "tekst": "Mlecz polny bywał dawniej opisywany jako roślina trująca dla bydła i owiec z powodu rzekomej obecności alkaloidów, jednak ich zawartość jest w rzeczywistości śladowa.",
+            "tekst": "Gatunek opisywany był jako roślina trująca dla bydła i, zwłaszcza, dla owiec, co przypisywano zawartości alkaloidów. W istocie jednak ich zawartość jest śladowa, niższa niż u innych zielonych warzyw liściastych.",
             "czesc": null,
             "zrodla": [
               1
@@ -308,29 +295,37 @@
             "fakty": [
               "s1369"
             ]
+          },
+          {
+            "tekst": "Inne badania sugerują, że mlecz polny sam w sobie nie jest trujący, ale – podobnie jak wiele innych roślin liściastych – w glebach o wysokiej zawartości związków azotu (azotanów – głównie azotanu potasu, czyli sztucznych nawozów) może kumulować je w szkodliwych dawkach.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1370"
+            ]
           }
         ]
       },
       {
         "klucz": "ciekawostki",
         "tytul": "Ciekawostki",
-        "podsumowanie": "Młode liście nadają się do spożywania na surowo w sałatkach lub do krótkiego gotowania. Żółte koszyczki kwiatowe stanowią ważne źródło pokarmu dla owadów, szczególnie muchówek z rodzaju Eristalis. Ponadto badania wykazały, że wzrost stężenia dwutlenku węgla w atmosferze przyspiesza wzrost tej rośliny.",
-        "podsumowanie_zrodla": [
-          3
-        ],
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Młode liście, które mają zaledwie kilka cali długości i nie są gorzkie w smaku, można spożywać na surowo w sałatkach lub gotować krótko w niewielkiej ilości wody.",
-            "czesc": "liście",
+            "tekst": "S. arvensis wykazuje przyspieszony wzrost wraz ze wzrostem stężenia dwutlenku węgla w atmosferze, co mogłoby potencjalnie spowodować rozszerzenie jego zasięgu i wyparcie gatunków rodzimych",
+            "czesc": null,
             "zrodla": [
               3
             ],
             "fakty": [
-              "s1372"
+              "s1375"
             ]
           },
           {
-            "tekst": "Żółte koszyczki kwiatowe tej rośliny są istotnym źródłem pokarmu dla owadów, a w szczególności dla muchówek z rodzaju Eristalis.",
+            "tekst": "wyraźnie widoczne żółte kwiatostany o szerokości około 3–5 cm (1+1⁄4–2 cali), które odwiedzają różne gatunki owadów — zwłaszcza bzygowate z rodzaju Eristalis",
             "czesc": "kwiaty",
             "zrodla": [
               3
@@ -340,26 +335,26 @@
             ]
           },
           {
-            "tekst": "Badania wykazały, że w warunkach wzrostu stężenia dwutlenku węgla w atmosferze roślina ta wzrasta szybciej, co mogłoby sprzyjać poszerzaniu jej zasięgu i wypieraniu rodzimych gatunków.",
-            "czesc": null,
+            "tekst": "Młode liście, gdy mają mniej niż kilka cali długości i nie są gorzkie w smaku, można dodawać do innych warzyw liściastych, przygotowując sałatkę. Można je również gotować w niewielkiej ilości wody, zmieniając ją raz.",
+            "czesc": "liście",
             "zrodla": [
               3
             ],
             "fakty": [
-              "s1375"
+              "s1372"
             ]
           }
         ]
       }
     ],
     "czesci": {
-      "liście": [
-        "s1367",
-        "s1372"
-      ],
       "kwiaty": [
         "s1377",
         "s1373"
+      ],
+      "liście": [
+        "s1367",
+        "s1372"
       ],
       "owoce": [
         "s1368"
@@ -373,7 +368,7 @@
         "id": "s1366",
         "sekcja": "wystepowanie",
         "czesc": null,
-        "tekst": "Gatunek ten występuje na obszarze całej Europy, w środkowej i zachodniej Azji, na Syberii, Kaukazie oraz w Afryce Północnej, a w Polsce jest pospolity na niżu i w niższych położeniach górskich.",
+        "tekst": "Występuje w całej Europie, w środkowej i zachodniej Azji, na Syberii, Kaukazie i w Afryce Północnej (Algieria, Maroko, Tunezja). Rozprzestrzenił się też gdzieniegdzie poza tym rodzimym obszarem swojego występowania. W Polsce jest pospolity na niżu i w niższych położeniach górskich.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Mlecz polny",
@@ -385,7 +380,7 @@
         "id": "s1367",
         "sekcja": "opis",
         "czesc": "liście",
-        "tekst": "Liście mleczu polnego charakteryzują się nierówno kolczasto ząbkowanymi brzegami, wrębną lub pierzastodzielną budową o sercowatej nasadzie i często siną barwą.",
+        "tekst": "Liście na brzegach nierówno kolczasto ząbkowane, wrębne lub pierzastodzielne o sercowatej nasadzie. Często o sinej barwie.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Mlecz polny",
@@ -397,7 +392,7 @@
         "id": "s1368",
         "sekcja": "opis",
         "czesc": "owoce",
-        "tekst": "Owoce rośliny to ciemnobrunatne niełupki z puchiem kielichowym, które posiadają obustronnie pięć żeberek i są rozsiewane przez wiatr.",
+        "tekst": "Ciemnobrunatna niełupka z puchem kielichowym, obustronnie 5-żebrowa.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Mlecz polny",
@@ -409,7 +404,7 @@
         "id": "s1369",
         "sekcja": "bezpieczenstwo",
         "czesc": null,
-        "tekst": "Mlecz polny bywał dawniej opisywany jako roślina trująca dla bydła i owiec z powodu rzekomej obecności alkaloidów, jednak ich zawartość jest w rzeczywistości śladowa.",
+        "tekst": "Gatunek opisywany był jako roślina trująca dla bydła i, zwłaszcza, dla owiec, co przypisywano zawartości alkaloidów. W istocie jednak ich zawartość jest śladowa, niższa niż u innych zielonych warzyw liściastych.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Mlecz polny",
@@ -421,7 +416,7 @@
         "id": "s1370",
         "sekcja": "bezpieczenstwo",
         "czesc": null,
-        "tekst": "Roślina może stać się szkodliwa w glebach bogatych w związki azotu, ponieważ kumuluje azotany w niebezpiecznych dawkach.",
+        "tekst": "Inne badania sugerują, że mlecz polny sam w sobie nie jest trujący, ale – podobnie jak wiele innych roślin liściastych – w glebach o wysokiej zawartości związków azotu (azotanów – głównie azotanu potasu, czyli sztucznych nawozów) może kumulować je w szkodliwych dawkach.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Mlecz polny",
@@ -433,7 +428,7 @@
         "id": "s1371",
         "sekcja": "nazwy_ludowe",
         "czesc": null,
-        "tekst": "W języku angielskim roślina ta znana jest pod wieloma nazwami ludowymi, w tym milk thistle (mlecz), sowthistle (mlecz), dindle, gutweed, swine thistle oraz tree sow thistle.",
+        "tekst": "ostropest polny, ostropest polny, ostropest wieloletni, ostropest kukurydziany, dindle, gutweed, ostropest świński lub ostropest drzewiasty",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Sonchus arvensis",
@@ -445,7 +440,7 @@
         "id": "s1372",
         "sekcja": "ciekawostki",
         "czesc": "liście",
-        "tekst": "Młode liście, które mają zaledwie kilka cali długości i nie są gorzkie w smaku, można spożywać na surowo w sałatkach lub gotować krótko w niewielkiej ilości wody.",
+        "tekst": "Młode liście, gdy mają mniej niż kilka cali długości i nie są gorzkie w smaku, można dodawać do innych warzyw liściastych, przygotowując sałatkę. Można je również gotować w niewielkiej ilości wody, zmieniając ją raz.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Sonchus arvensis",
@@ -457,7 +452,7 @@
         "id": "s1373",
         "sekcja": "ciekawostki",
         "czesc": "kwiaty",
-        "tekst": "Żółte koszyczki kwiatowe tej rośliny są istotnym źródłem pokarmu dla owadów, a w szczególności dla muchówek z rodzaju Eristalis (muchówki pszczołowate).",
+        "tekst": "wyraźnie widoczne żółte kwiatostany o szerokości około 3–5 cm (1+1⁄4–2 cali), które odwiedzają różne gatunki owadów — zwłaszcza bzygowate z rodzaju Eristalis",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Sonchus arvensis",
@@ -469,7 +464,7 @@
         "id": "s1374",
         "sekcja": "wystepowanie",
         "czesc": null,
-        "tekst": "Poza macierzystym obszarem Eurazji, mlecz polny zadomowił się w wielu regionach świata, gdzie w niektórych miejscach, takich jak Nowa Zelandia czy Australia, jest uznawany za inwazyjny chwast.",
+        "tekst": "Roślina ta zadomowiła się również w wielu innych regionach i w niektórych miejscach, takich jak Ameryka Północna (w tym Wyspa Księcia Edwarda), Rosja, Nowa Zelandia i Australia, jest uznawana za inwazyjny, szkodliwy chwast.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Sonchus arvensis",
@@ -481,7 +476,7 @@
         "id": "s1375",
         "sekcja": "ciekawostki",
         "czesc": null,
-        "tekst": "Badania wykazały, że w warunkach wzrostu stężenia dwutlenku węgla w atmosferze roślina ta wzrasta szybciej, co mogłoby sprzyjać poszerzaniu jej zasięgu i wypieraniu rodzimych gatunków.",
+        "tekst": "S. arvensis wykazuje przyspieszony wzrost wraz ze wzrostem stężenia dwutlenku węgla w atmosferze, co mogłoby potencjalnie spowodować rozszerzenie jego zasięgu i wyparcie gatunków rodzimych",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Sonchus arvensis",
@@ -493,7 +488,7 @@
         "id": "s1376",
         "sekcja": "czesci_rosliny",
         "czesc": "sok",
-        "tekst": "Roślina zawiera mleczny sok, charakterystyczny dla jej części zielnych.",
+        "tekst": "Części roślin zawierają mleczny sok.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Acker-Gänsedistel",
@@ -505,7 +500,7 @@
         "id": "s1377",
         "sekcja": "opis",
         "czesc": "kwiaty",
-        "tekst": "Kwitnie od lipca do października, a kwiatostany mają 4‑5 cm średnicy i mogą zawierać do 100 kwiatów.",
+        "tekst": "Okres kwitnienia trwa od lipca do października. ... Złocistożółte koszyczki kwiatowe ... osiągają wielkość od 4 do 5 cm. Każdy koszyczek zawiera do 100 kwiatów języczkowych.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Acker-Gänsedistel",
@@ -517,77 +512,74 @@
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-09",
+    "zaktualizowano": "2026-11-03",
     "pola": {
-      "czesci_rosliny.liscie.opis_botaniczny": {
-        "tytul": "Surowce i zbiory - Folium Sonchi: Opis surowca",
-        "typ": "tekst",
-        "oryginal": "Młode liście zbierane wczesną wiosną, błyszczące z wierzchu.",
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": [
+          "Łodyga dęta (pusta w środku), ulistniona i rozgałęziona.",
+          "Obecny biały sok mleczny po przełamaniu.",
+          "Liście na łodydze mają zaokrąglone uszka, którymi obejmują pęd.",
+          "Włoski gruczołowe (często żółtawe) na szypułkach pod koszyczkami kwiatowymi.",
+          "Wiele kwiatostanów na jednej roślinie."
+        ],
         "tresc": [
           {
-            "tekst": "Młode liście mleczu polnego zbierane są wczesną wiosną i charakteryzują się błyszczącą powierzchnią z wierzchu.",
+            "tekst": "Łodyga dęta (pusta w środku), ulistniona i rozgałęziona.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Liście te wyróżniają się nierówno kolczasto ząbkowanymi brzegami, wrębną lub pierzastodzielną budową o sercowatej nasadzie i często siną barwą.",
+            "tekst": "Obecny biały sok mleczny po przełamaniu.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Liście na łodydze mają zaokrąglone uszka, którymi obejmują pęd.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Włoski gruczołowe (często żółtawe) na szypułkach pod koszyczkami kwiatowymi.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Wiele kwiatostanów na jednej roślinie.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Okres kwitnienia trwa od lipca do października. ... Złocistożółte koszyczki kwiatowe ... osiągają wielkość od 4 do 5 cm. Każdy koszyczek zawiera do 100 kwiatów języczkowych.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1377"
+            ]
+          },
+          {
+            "tekst": "Liście na brzegach nierówno kolczasto ząbkowane, wrębne lub pierzastodzielne o sercowatej nasadzie. Często o sinej barwie.",
             "zrodla": [
               1
             ],
             "fakty": [
               "s1367"
             ]
-          }
-        ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "598420b51126ab73"
-      },
-      "opis": {
-        "tytul": "Opis - Opis ogólny",
-        "typ": "tekst",
-        "oryginal": "Bylina polna, uciążliwy chwast upraw o silnym, rozgałęzionym systemie korzeniowym (rozłogi). Wytwarza wysokie (do 150 cm), wzniesione i ulistnione łodygi. Kwiatostany są żółte, znacznie większe niż u mlecza zwyczajnego, zebrane w baldachokształtne wiechy na szczytach pędów. Charakterystyczne są gruczołowate włoski na szypułkach i okrywach koszyczków.",
-        "tresc": [
-          {
-            "tekst": "Mlecz polny to bylina polna oraz uciążliwy chwast upraw, który poza macierzystym obszarem Eurazji zadomowił się w wielu regionach świata, gdzie w niektórych miejscach, takich jak Nowa Zelandia czy Australia, jest uznawany za inwazyjny chwast.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s1374"
-            ]
           },
           {
-            "tekst": "Gatunek ten występuje na obszarze całej Europy, w środkowej i zachodniej Azji, na Syberii, Kaukazie oraz w Afryce Północnej, a w Polsce jest pospolity na niżu i w niższych położeniach górskich.",
+            "tekst": "Ciemnobrunatna niełupka z puchem kielichowym, obustronnie 5-żebrowa.",
             "zrodla": [
               1
             ],
             "fakty": [
-              "s1366"
+              "s1368"
             ]
-          },
-          {
-            "tekst": "Charakteryzuje się silnym, rozgałęzionym systemem korzeniowym z rozłogami.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Wytwarza wysokie, wzniesione i ulistnione łodygi osiągające do 150 cm wysokości.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Jego żółte kwiatostany są znacznie większe niż u mlecza zwyczajnego i zebrane są w baldachokształtne wiechy na szczytach pędów.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Cechą charakterystyczną rośliny są gruczołowate włoski występujące na szypułkach i okrywach koszyczków.",
-            "zrodla": [],
-            "fakty": []
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "78ac55e926402ef8"
+        "model": "bez LLM",
+        "wejscie": "66ccf74e66103b16"
       },
       "ciekawostki": {
         "tytul": "Wiedza tajemna - Ciekawostki",
@@ -598,7 +590,17 @@
         ],
         "tresc": [
           {
-            "tekst": "W języku angielskim roślina ta znana jest pod wieloma nazwami ludowymi, takimi jak milk thistle, sowthistle, dindle, gutweed, swine thistle oraz tree sow thistle.",
+            "tekst": "Niezwykle trudny do wyplewienia w rolnictwie z powodu kruchych korzeni, z których każdy fragment tworzy nową roślinę.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwiaty zamykają się popołudniu (około godziny 14) i podczas deszczu.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "ostropest polny, ostropest polny, ostropest wieloletni, ostropest kukurydziany, dindle, gutweed, ostropest świński lub ostropest drzewiasty",
             "zrodla": [
               3
             ],
@@ -607,53 +609,25 @@
             ]
           },
           {
-            "tekst": "Mlecz polny jest niezwykle trudny do wyplewienia w rolnictwie z powodu kruchych korzeni, z których każdy fragment tworzy nową roślinę.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Kwiaty tej rośliny zamykają się popołudniu, około godziny 14, a także podczas deszczu.",
-            "zrodla": [],
-            "fakty": []
-          }
-        ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "174f42ce7230a6ce"
-      },
-      "ostrzezenia": {
-        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
-        "typ": "tekst",
-        "oryginal": "Brak istotnych przeciwwskazań, roślina bezpieczna.",
-        "tresc": [
-          {
-            "tekst": "Współcześnie mlecz polny uznaje się za roślinę bezpieczną, która nie posiada istotnych przeciwskaazań, czym odróżnia się od historycznych opisów przedstawiających go jako gatunek trujący dla bydła i owiec z powodu rzekomej obecności alkaloidów, których zawartość jest jednak w rzeczywistości śladowa.",
+            "tekst": "S. arvensis wykazuje przyspieszony wzrost wraz ze wzrostem stężenia dwutlenku węgla w atmosferze, co mogłoby potencjalnie spowodować rozszerzenie jego zasięgu i wyparcie gatunków rodzimych",
             "zrodla": [
-              1
+              3
             ],
             "fakty": [
-              "s1369"
+              "s1375"
             ]
           },
           {
-            "tekst": "Roślina może okazać się szkodliwa jedynie w przypadku uprawy na glebach bogatych w związki azotu, ponieważ kumuluje wówczas we francz częściach azotany w niebezpiecznych dawkach.",
+            "tekst": "wyraźnie widoczne żółte kwiatostany o szerokości około 3–5 cm (1+1⁄4–2 cali), które odwiedzają różne gatunki owadów — zwłaszcza bzygowate z rodzaju Eristalis",
             "zrodla": [
-              1
+              3
             ],
             "fakty": [
-              "s1370"
+              "s1373"
             ]
-          }
-        ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "a03ac5cc176ffb44"
-      },
-      "zastosowanie.kulinarne": {
-        "tytul": "Praktyczne zastosowanie - Kuchnia",
-        "typ": "tekst",
-        "oryginal": "Młode liście traktowane jak dzikie warzywo, zazwyczaj po ugotowaniu lub blanszowaniu ze względu na goryczkę.",
-        "tresc": [
+          },
           {
-            "tekst": "Młode liście o zaledwie kilku calach długości można spożywać na surowo w sałatkach albo traktować jak dzikie warzywo i gotować krótko w niewielkiej ilości wody lub blanszować, zazwyczaj ze względu na goryczkę.",
+            "tekst": "Młode liście, gdy mają mniej niż kilka cali długości i nie są gorzkie w smaku, można dodawać do innych warzyw liściastych, przygotowując sałatkę. Można je również gotować w niewielkiej ilości wody, zmieniając ją raz.",
             "zrodla": [
               3
             ],
@@ -662,80 +636,77 @@
             ]
           }
         ],
-        "model": "gemini/gemini-3.5-flash-lite",
-        "wejscie": "bf437c2764636963"
+        "model": "bez LLM",
+        "wejscie": "6423e23abba4b442"
       },
-      "permakultura.funkcje": {
-        "tytul": "Cykl życia i ekosystem - Permakultura - funkcje",
-        "typ": "lista",
-        "oryginal": [
-          "Roślina wskaźnikowa gleb ciężkich, gliniastych i podmokłych."
-        ],
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": "Brak istotnych przeciwwskazań, roślina bezpieczna.",
         "tresc": [
           {
-            "tekst": "Roślina wskaźnikowa gleb ciężkich, gliniastych i podmokłych.",
+            "tekst": "Brak istotnych przeciwwskazań, roślina bezpieczna.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Żółte koszyczki kwiatowe tej rośliny są istotnym źródłem pokarmu dla owadów, a w szczególności dla muchówek z rodzaju Eristalis.",
+            "tekst": "Gatunek opisywany był jako roślina trująca dla bydła i, zwłaszcza, dla owiec, co przypisywano zawartości alkaloidów. W istocie jednak ich zawartość jest śladowa, niższa niż u innych zielonych warzyw liściastych.",
             "zrodla": [
-              3
+              1
             ],
             "fakty": [
-              "s1373"
+              "s1369"
+            ]
+          },
+          {
+            "tekst": "Inne badania sugerują, że mlecz polny sam w sobie nie jest trujący, ale – podobnie jak wiele innych roślin liściastych – w glebach o wysokiej zawartości związków azotu (azotanów – głównie azotanu potasu, czyli sztucznych nawozów) może kumulować je w szkodliwych dawkach.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1370"
             ]
           }
         ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "fe3e13504ee9d76d"
+        "model": "bez LLM",
+        "wejscie": "a03ac5cc176ffb44"
       }
     },
     "uzyte_fakty": [
-      "s1366",
       "s1367",
+      "s1368",
       "s1369",
       "s1370",
       "s1371",
       "s1372",
       "s1373",
-      "s1374"
+      "s1375",
+      "s1377"
     ]
   },
   "rozmieszczenie": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-16",
-    "jak": "llm:groq/qwen/qwen3.8-27b",
-    "wejscie": "e3008e7571c109be",
+    "zaktualizowano": "2026-11-03",
+    "jak": "reguly",
+    "wejscie": "184e99c3951d9384",
     "wstawki": [
       {
-        "miejsce": "rozpoznawanie/budowa",
-        "rozdzial": "Rozpoznawanie w terenie",
-        "tytul": "Budowa: kwiaty, owoce i nasiona",
-        "ikona": "ra-flower",
+        "miejsce": "natura/wystepowanie",
+        "rozdzial": "Natura i siedlisko",
+        "tytul": "Występowanie i zasięg",
+        "ikona": "ra-compass",
         "nowy": true,
         "punkty": [
           {
-            "tekst": "Kwitnie od lipca do października, a kwiatostany mają 4-5 cm średnicy i mogą zawierać do 100 kwiatów.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s1377"
-            ],
-            "sekcja": "opis",
-            "czesc": "kwiaty"
-          },
-          {
-            "tekst": "Owoce rośliny to ciemnobrunatne niełupki z puchiem kielichowym, które posiadają obustronnie pięć żeberek i są rozsiewane przez wiatr.",
+            "tekst": "Występuje w całej Europie, w środkowej i zachodniej Azji, na Syberii, Kaukazie i w Afryce Północnej (Algieria, Maroko, Tunezja). Rozprzestrzenił się też gdzieniegdzie poza tym rodzimym obszarem swojego występowania. W Polsce jest pospolity na niżu i w niższych położeniach górskich.",
             "zrodla": [
               1
             ],
             "fakty": [
-              "s1368"
+              "s1366"
             ],
-            "sekcja": "opis",
-            "czesc": "owoce"
+            "sekcja": "wystepowanie",
+            "czesc": null
           }
         ]
       },
@@ -747,7 +718,7 @@
         "nowy": true,
         "punkty": [
           {
-            "tekst": "Roślina zawiera mleczny sok, charakterystyczny dla jej części zielnych.",
+            "tekst": "Części roślin zawierają mleczny sok.",
             "zrodla": [
               2
             ],
@@ -767,14 +738,14 @@
         "nowy": true,
         "punkty": [
           {
-            "tekst": "Badania wykazały, że w warunkach wzrostu stężenia dwutlenku węgla w atmosferze roślina ta wzrasta szybciej, co mogłoby sprzyjać poszerzaniu jej zasięgu i wypieraniu rodzimych gatunków.",
+            "tekst": "Roślina ta zadomowiła się również w wielu innych regionach i w niektórych miejscach, takich jak Ameryka Północna (w tym Wyspa Księcia Edwarda), Rosja, Nowa Zelandia i Australia, jest uznawana za inwazyjny, szkodliwy chwast.",
             "zrodla": [
               3
             ],
             "fakty": [
-              "s1375"
+              "s1374"
             ],
-            "sekcja": "ciekawostki",
+            "sekcja": "wystepowanie",
             "czesc": null
           }
         ]
