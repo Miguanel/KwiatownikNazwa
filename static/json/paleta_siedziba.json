@@ -1,7 +1,7 @@
 {
   "wersja": 1,
   "opis": "Uzupełnienia Palety Barw z Siedziby Kwiatownika (zadanie 'paleta_export'). Plik nadpisuje Siedziba; ręczny static/json/paleta.json zostaje nietknięty. Przeglądarka tylko DOPISUJE stąd uwagi, ostrzeżenia i źródła do istniejących ziół.",
-  "zaktualizowano": "2026-10-23T14:29:26+00:00",
+  "zaktualizowano": "2026-11-03T21:40:21+00:00",
   "uzupelnienia": {
     "indygo": {
       "rosliny": [
@@ -41,6 +41,39 @@
       "fakty": [
         1172,
         1265
+      ]
+    },
+    "dziewanna": {
+      "rosliny": [
+        "dziewanna_drobnokwiatowa"
+      ],
+      "uwagi": [
+        "Napar z tych kwiatów jest czasami stosowany do barwienia włosów na złoty kolor[4, 200].",
+        "Napar z kwiatów stosowany był według jednych autorów do rozjaśniania włosów, według innych do nadawania im połysku.",
+        "Ekstrakt z dziewanny zwiększa liczbę komórek zawierających białko CD34, będących zalążkiem komórek macierzy włosa, dzięki czemu wykorzystuje się go w preparatach stymulujących porost włosów."
+      ],
+      "ostrzezenia": [],
+      "zrodla": [
+        {
+          "nazwa": "Plants For A Future (PFAF)",
+          "url": "https://pfaf.org/user/Plant.aspx?LatinName=Verbascum+thapsus",
+          "jezyk": "en"
+        },
+        {
+          "nazwa": "Wikipedia (pl): Dziewanna drobnokwiatowa",
+          "url": "https://pl.wikipedia.org/wiki/Dziewanna_drobnokwiatowa",
+          "jezyk": "pl"
+        },
+        {
+          "nazwa": "Wikipedia (ja): ビロードモウズイカ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%83%93%E3%83%AD%E3%83%BC%E3%83%89%E3%83%A2%E3%82%A6%E3%82%BA%E3%82%A4%E3%82%AB",
+          "jezyk": "ja"
+        }
+      ],
+      "fakty": [
+        2138,
+        2106,
+        2132
       ]
     }
   },

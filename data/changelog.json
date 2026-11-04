@@ -3,6 +3,134 @@
  "opis": "Kronika Siedziby Kwiatownika - pisze ja agent wdrozen (Siedziba).",
  "wpisy": [
   {
+   "data": "2026-11-04T15:55:26+01:00",
+   "tytul": "Nowa wiedza o 12 roślinach",
+   "opis": "Siedziba zebrała 62 sprawdzone informacje (źródła: ?, niemieckie, angielskie, hiszpańskie, japońskie). 21 informacji z sieci trafiło do właściwych rozdziałów i podrozdziałów stron roślin.",
+   "liczby": {
+    "informacje": 62,
+    "przepisy": 0,
+    "rosliny": 12,
+    "nowe_rosliny": 0,
+    "zdjecia": 0,
+    "rozmieszczone": 21
+   },
+   "rosliny": [
+    {
+     "id": "sosna_zwyczajna",
+     "nazwa": "Sosna zwyczajna",
+     "nowe": 20,
+     "jezyki": [
+      "de",
+      "en",
+      "ja"
+     ]
+    },
+    {
+     "id": "dziewanna_drobnokwiatowa",
+     "nazwa": "Dziewanna drobnokwiatowa",
+     "nowe": 19,
+     "jezyki": [
+      "en",
+      "ja"
+     ]
+    },
+    {
+     "id": "krwawnik_pospolity",
+     "nazwa": "Krwawnik pospolity",
+     "nowe": 18,
+     "jezyki": []
+    },
+    {
+     "id": "pokrzywa_zwyczajna",
+     "nazwa": "Pokrzywa zwyczajna",
+     "nowe": 3,
+     "jezyki": []
+    },
+    {
+     "id": "brodawnik_zwyczajny",
+     "nazwa": "Brodawnik zwyczajny",
+     "nowe": 1,
+     "jezyki": [
+      "de",
+      "en"
+     ]
+    },
+    {
+     "id": "gwiazdnica_pospolita",
+     "nazwa": "Gwiazdnica pospolita",
+     "nowe": 1,
+     "jezyki": [
+      "es"
+     ]
+    },
+    {
+     "id": "babka_lancetowata",
+     "nazwa": "Babka lancetowata",
+     "nowe": 0,
+     "jezyki": [
+      "de",
+      "en",
+      "ru",
+      "uk"
+     ]
+    },
+    {
+     "id": "bluszczyk_kurdybanek",
+     "nazwa": "Bluszczyk kurdybanek",
+     "nowe": 0,
+     "jezyki": [
+      "de",
+      "en",
+      "ja",
+      "uk"
+     ]
+    },
+    {
+     "id": "czeremcha_zwyczajna",
+     "nazwa": "Czeremcha zwyczajna",
+     "nowe": 0,
+     "jezyki": [
+      "de",
+      "en",
+      "ja"
+     ]
+    },
+    {
+     "id": "czosnaczek_pospolity",
+     "nazwa": "Czosnaczek pospolity",
+     "nowe": 0,
+     "jezyki": [
+      "de",
+      "en",
+      "uk"
+     ]
+    },
+    {
+     "id": "kasztan_jadalny",
+     "nazwa": "Kasztan jadalny",
+     "nowe": 0,
+     "jezyki": [
+      "de",
+      "en",
+      "es",
+      "ja"
+     ]
+    },
+    {
+     "id": "tarnina",
+     "nazwa": "Śliwa tarnina",
+     "nowe": 0,
+     "jezyki": [
+      "?",
+      "de",
+      "en",
+      "ja"
+     ]
+    }
+   ],
+   "przepisy": []
+  },
+  {
    "data": "2026-11-03T20:16:28+01:00",
    "tytul": "Nowa wiedza o 18 roślinach",
    "opis": "Siedziba zebrała 312 sprawdzonych informacji (źródła: niemieckie, angielskie, hiszpańskie, francuskie, japońskie). 72 informacje z sieci trafiły do właściwych rozdziałów i podrozdziałów stron roślin.",

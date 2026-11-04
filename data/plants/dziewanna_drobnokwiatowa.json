@@ -220,5 +220,945 @@
         "reczne": true
       }
     ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-11-03",
+    "uporzadkowano": "2026-11-03",
+    "uklad": "deterministyczny",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (pl): Dziewanna drobnokwiatowa",
+        "url": "https://pl.wikipedia.org/wiki/Dziewanna_drobnokwiatowa",
+        "jezyk": "pl",
+        "typ": "wikipedia",
+        "nr": 1
+      },
+      {
+        "nazwa": "Wikipedia (ja): ビロードモウズイカ",
+        "url": "https://ja.wikipedia.org/wiki/%E3%83%93%E3%83%AD%E3%83%BC%E3%83%89%E3%83%A2%E3%82%A6%E3%82%BA%E3%82%A4%E3%82%AB",
+        "jezyk": "ja",
+        "typ": "wikipedia",
+        "nr": 2
+      },
+      {
+        "nazwa": "Plants For A Future (PFAF)",
+        "url": "https://pfaf.org/user/Plant.aspx?LatinName=Verbascum+thapsus",
+        "jezyk": "en",
+        "typ": "strona",
+        "nr": 3
+      },
+      {
+        "nazwa": "stronazdrowia.pl",
+        "url": "https://stronazdrowia.pl/slowianska-roslina-to-leczniczy-skarb-zachwyca-wygladem-i-wlasciwosciami-zdrowotnymi/ar/c14-14837106",
+        "jezyk": "pl-PL",
+        "typ": "strona",
+        "nr": 4
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "czesci_rosliny",
+        "tytul": "Części rośliny i surowce",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Po wysuszeniu kwiaty dziewanny pakuje się do szczelnych naczyń szklanych lub metalowych, silnie ugniatając; najlepiej sprasować je w cegiełki i zawinąć w celofan.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2103"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Kwiaty dziewanny zawierają flawonoidy (0,5-4%) – między innymi rutozyd, garbniki, saponiny trójpentenowe, glikozydy fenyloetanoidowe (werbaskozyd, arenariozyd, forsytozyd B, leukosceptozyd), polisacharydy i oligosacharydy, związki śluzowe (3-5%), kumarynę, żywice, kwasy organiczne, hesperydynę (1,5-",
+            "czesc": "kwiaty",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2144"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W medycynie ludowej Niemiec olejek pozyskiwany z kwiatów dziewanny stosowano w leczeniu przeziębień, bólów brzucha, bólów uszu, a także odmrożeń, egzemy i innych ran.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2136"
+            ]
+          },
+          {
+            "tekst": "Flawonoidy zawarte w dziewannie mają działanie przeciwzapalne i antyoksydacyjne, garbniki działają bakteriobójczo, zaś saponiny mają właściwości moczopędne i przeciwzapalne.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2145"
+            ]
+          },
+          {
+            "tekst": "Substancje obecne w kwiatach dziewanny mają też działanie wykrztuśne, osłonowe na błony śluzowe jamy ustnej i przewodu pokarmowego, a także przeciwwirusowe.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2146"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "medycyna_wschodu",
+        "tytul": "Medycyna chińska, kampo, ajurweda",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W tradycyjnej medycynie Unani dziewanna klasyfikowana jest jako roślina o zimnej naturze czwartego stopnia, co oznacza poziom, przy którym mogą występować niepożądane działania leku.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2131"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kosmetyka",
+        "tytul": "Kosmetyka",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Ekstrakt z dziewanny zwiększa liczbę komórek zawierających białko CD34, będących zalążkiem komórek macierzy włosa, dzięki czemu wykorzystuje się go w preparatach stymulujących porost włosów.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2132"
+            ]
+          },
+          {
+            "tekst": "Napar z kwiatów stosowany był według jednych autorów do rozjaśniania włosów, według innych do nadawania im połysku.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2106"
+            ]
+          },
+          {
+            "tekst": "Napar z tych kwiatów jest czasami stosowany do barwienia włosów na złoty kolor[4, 200].",
+            "czesc": "kwiaty",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2138"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "historia",
+        "tytul": "Historia i nazwa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Epitet gatunkowy „thapsus” wprowadził Teofrast w odniesieniu do nieokreślonego ziela leczniczego pochodzącego z Tapsos, starożytnej greckiej kolonii w pobliżu dzisiejszych Syrakuz na Sycylii.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2134"
+            ]
+          },
+          {
+            "tekst": "Rzymianie chronili figi przed zepsuciem zawijając je w liście dziewanny.",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2105"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "magia",
+        "tytul": "Magia i zabobony",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "To właśnie to ziele miało chronić Odyseusza przed czarami złej Kirke.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2104"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "nazwy_ludowe",
+        "tytul": "Nazwy ludowe",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W Japonii znana jest pod takimi nazwami jak „tytoń Ainu” czy „tytoń ogrodowy”. Z kolei w środkowo-zachodniej części Stanów Zjednoczonych, obejmującej Teksas, Kolorado, Nowy Meksyk i Arizonę, roślina ta jest powszechnie nazywana „Cowboy Toilet Paper” (papier toaletowy kowboja).",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2133"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Jednak ze względu na brak wystarczających danych nie zaleca się stosowania leku u dzieci w wieku poniżej 12 lat.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2135"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "ciekawostki",
+        "tytul": "Ciekawostki",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Martwe, suche pędy po zanurzeniu w łoju lub wosku używane były jako pochodnie, przy czym płomienie opalizują kolorami tęczy.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2108"
+            ]
+          },
+          {
+            "tekst": "Pszczoły z rodziny miesierkowatych (Megachilidae), zwłaszcza gatunki z rodzaju Anthidium używają włosków dziewanny do budowy swoich gniazd.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2109"
+            ]
+          },
+          {
+            "tekst": "Dziewanna omijana jest na pastwiskach przez bydło domowe, ponieważ włoski, którymi jest pokryta, drażnią błony śluzowe.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2110"
+            ]
+          },
+          {
+            "tekst": "W przypadku innych gatunków ptaków odnotowano przypadki wykorzystywania liści (gęś hawajska), kwiatów (hawajski sikorek białobrody) (Loxioides bailleui) lub też wykorzystywania tej rośliny jako źródła pożywienia w postaci owadów, np. przez dzięcioła białogłowego.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2137"
+            ]
+          },
+          {
+            "tekst": "Kwiaty służą także do aromatyzowania likierów, w kremach także do zmiękczania i wygładzania skóry.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2107"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "kwiaty": [
+        "s2103",
+        "s2144",
+        "s2136",
+        "s2145",
+        "s2146",
+        "s2106",
+        "s2138",
+        "s2107"
+      ],
+      "liście": [
+        "s2105"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s2103",
+        "sekcja": "czesci_rosliny",
+        "czesc": "kwiaty",
+        "tekst": "Po wysuszeniu kwiaty dziewanny pakuje się do szczelnych naczyń szklanych lub metalowych, silnie ugniatając; najlepiej sprasować je w cegiełki i zawinąć w celofan.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Dziewanna drobnokwiatowa",
+          "url": "https://pl.wikipedia.org/wiki/Dziewanna_drobnokwiatowa"
+        },
+        "cytat": "Po wysuszeniu kwiaty dziewanny pakuje się do szczelnych naczyń szklanych lub metalowych, silnie ugniatając; najlepiej sprasować je w cegiełki i zawinąć w celofan."
+      },
+      {
+        "id": "s2104",
+        "sekcja": "magia",
+        "czesc": null,
+        "tekst": "To właśnie to ziele miało chronić Odyseusza przed czarami złej Kirke.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Dziewanna drobnokwiatowa",
+          "url": "https://pl.wikipedia.org/wiki/Dziewanna_drobnokwiatowa"
+        },
+        "cytat": "To właśnie to ziele miało chronić Odyseusza przed czarami złej Kirke."
+      },
+      {
+        "id": "s2105",
+        "sekcja": "historia",
+        "czesc": "liście",
+        "tekst": "Rzymianie chronili figi przed zepsuciem zawijając je w liście dziewanny.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Dziewanna drobnokwiatowa",
+          "url": "https://pl.wikipedia.org/wiki/Dziewanna_drobnokwiatowa"
+        },
+        "cytat": "Rzymianie chronili figi przed zepsuciem zawijając je w liście dziewanny."
+      },
+      {
+        "id": "s2106",
+        "sekcja": "kosmetyka",
+        "czesc": "kwiaty",
+        "tekst": "Napar z kwiatów stosowany był według jednych autorów do rozjaśniania włosów, według innych do nadawania im połysku.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Dziewanna drobnokwiatowa",
+          "url": "https://pl.wikipedia.org/wiki/Dziewanna_drobnokwiatowa"
+        },
+        "cytat": "Napar z kwiatów stosowany był według jednych autorów do rozjaśniania włosów, według innych do nadawania im połysku."
+      },
+      {
+        "id": "s2107",
+        "sekcja": "ciekawostki",
+        "czesc": "kwiaty",
+        "tekst": "Kwiaty służą także do aromatyzowania likierów, w kremach także do zmiękczania i wygładzania skóry.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Dziewanna drobnokwiatowa",
+          "url": "https://pl.wikipedia.org/wiki/Dziewanna_drobnokwiatowa"
+        },
+        "cytat": "Kwiaty służą także do aromatyzowania likierów, w kremach także do zmiękczania i wygładzania skóry."
+      },
+      {
+        "id": "s2108",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Martwe, suche pędy po zanurzeniu w łoju lub wosku używane były jako pochodnie, przy czym płomienie opalizują kolorami tęczy.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Dziewanna drobnokwiatowa",
+          "url": "https://pl.wikipedia.org/wiki/Dziewanna_drobnokwiatowa"
+        },
+        "cytat": "Martwe, suche pędy po zanurzeniu w łoju lub wosku używane były jako pochodnie, przy czym płomienie opalizują kolorami tęczy."
+      },
+      {
+        "id": "s2109",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Pszczoły z rodziny miesierkowatych (Megachilidae), zwłaszcza gatunki z rodzaju Anthidium używają włosków dziewanny do budowy swoich gniazd.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Dziewanna drobnokwiatowa",
+          "url": "https://pl.wikipedia.org/wiki/Dziewanna_drobnokwiatowa"
+        },
+        "cytat": "Pszczoły z rodziny miesierkowatych (Megachilidae), zwłaszcza gatunki z rodzaju Anthidium używają włosków dziewanny do budowy swoich gniazd."
+      },
+      {
+        "id": "s2110",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Dziewanna omijana jest na pastwiskach przez bydło domowe, ponieważ włoski, którymi jest pokryta, drażnią błony śluzowe.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Dziewanna drobnokwiatowa",
+          "url": "https://pl.wikipedia.org/wiki/Dziewanna_drobnokwiatowa"
+        },
+        "cytat": "Dziewanna omijana jest na pastwiskach przez bydło domowe, ponieważ włoski, którymi jest pokryta, drażnią błony śluzowe."
+      },
+      {
+        "id": "s2131",
+        "sekcja": "medycyna_wschodu",
+        "czesc": null,
+        "tekst": "W tradycyjnej medycynie Unani dziewanna klasyfikowana jest jako roślina o zimnej naturze czwartego stopnia, co oznacza poziom, przy którym mogą występować niepożądane działania leku.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): ビロードモウズイカ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%83%93%E3%83%AD%E3%83%BC%E3%83%89%E3%83%A2%E3%82%A6%E3%82%BA%E3%82%A4%E3%82%AB"
+        },
+        "cytat": "また、イスラム文化圏の伝統医学であるユナニー医学においては、薬の悪影響も見られる、とされるレベルの寒性第4度に分類される"
+      },
+      {
+        "id": "s2132",
+        "sekcja": "kosmetyka",
+        "czesc": null,
+        "tekst": "Ekstrakt z dziewanny zwiększa liczbę komórek zawierających białko CD34, będących zalążkiem komórek macierzy włosa, dzięki czemu wykorzystuje się go w preparatach stymulujących porost włosów.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): ビロードモウズイカ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%83%93%E3%83%AD%E3%83%BC%E3%83%89%E3%83%A2%E3%82%A6%E3%82%BA%E3%82%A4%E3%82%AB"
+        },
+        "cytat": "また、ビロードモウズイカのエキスには、毛母細胞のもとになるCD34蛋白質を含む細胞を増やす効果があることが判明し、育毛剤に応用されている。"
+      },
+      {
+        "id": "s2133",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "W Japonii znana jest pod takimi nazwami jak „tytoń Ainu” czy „tytoń ogrodowy”. Z kolei w środkowo-zachodniej części Stanów Zjednoczonych, obejmującej Teksas, Kolorado, Nowy Meksyk i Arizonę, roślina ta jest powszechnie nazywana „Cowboy Toilet Paper” (papier toaletowy kowboja).",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): ビロードモウズイカ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%83%93%E3%83%AD%E3%83%BC%E3%83%89%E3%83%A2%E3%82%A6%E3%82%BA%E3%82%A4%E3%82%AB"
+        },
+        "cytat": "日本では「アイヌタバコ」「ニワタバコ」などの異名がある。一方、テキサス、コロラド、ニューメキシコ、アリゾナを含むアメリカ中西部において、モウズイカは普通\"Cowboy Toilet Paper\"(カウボーイのトイレットペーパー)と呼ばれる。"
+      },
+      {
+        "id": "s2134",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Epitet gatunkowy „thapsus” wprowadził Teofrast w odniesieniu do nieokreślonego ziela leczniczego pochodzącego z Tapsos, starożytnej greckiej kolonii w pobliżu dzisiejszych Syrakuz na Sycylii.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): ビロードモウズイカ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%83%93%E3%83%AD%E3%83%BC%E3%83%89%E3%83%A2%E3%82%A6%E3%82%BA%E3%82%A4%E3%82%AB"
+        },
+        "cytat": "この種小名\"thapsus\"は、テオプラストスにより、タプソス(\"θαψοζ\")として、初めて使われた。この名は（しばしば古代チュニジアの都市タプススと同一視されがちだが）、現在のシチリア島のシラクサ付近にあった古代ギリシア植民地タプソスの名前であり"
+      },
+      {
+        "id": "s2135",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Jednak ze względu na brak wystarczających danych nie zaleca się stosowania leku u dzieci w wieku poniżej 12 lat.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): ビロードモウズイカ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%83%93%E3%83%AD%E3%83%BC%E3%83%89%E3%83%A2%E3%82%A6%E3%82%BA%E3%82%A4%E3%82%AB"
+        },
+        "cytat": "ただし、十分なデータがないため、12歳以下の小児に対しての使用は推奨されない。"
+      },
+      {
+        "id": "s2136",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "kwiaty",
+        "tekst": "W medycynie ludowej Niemiec olejek pozyskiwany z kwiatów dziewanny stosowano w leczeniu przeziębień, bólów brzucha, bólów uszu, a także odmrożeń, egzemy i innych ran.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): ビロードモウズイカ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%83%93%E3%83%AD%E3%83%BC%E3%83%89%E3%83%A2%E3%82%A6%E3%82%BA%E3%82%A4%E3%82%AB"
+        },
+        "cytat": "その花から採れる精油は、ドイツで感冒、腹痛、耳痛、凍傷、湿疹、その他の外傷に用いられた。"
+      },
+      {
+        "id": "s2137",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "W przypadku innych gatunków ptaków odnotowano przypadki wykorzystywania liści (gęś hawajska), kwiatów (hawajski sikorek białobrody) (Loxioides bailleui) lub też wykorzystywania tej rośliny jako źródła pożywienia w postaci owadów, np. przez dzięcioła białogłowego.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): ビロードモウズイカ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%83%93%E3%83%AD%E3%83%BC%E3%83%89%E3%83%A2%E3%82%A6%E3%82%BA%E3%82%A4%E3%82%AB"
+        },
+        "cytat": "他の鳥類では、葉を利用する（ハワイガン)、花を利用する(キムネハワイマシコ)?(Loxioides bailleui) 、あるいは、昆虫を採餌する資源としてこの植物を利用するシロガシラキツツキ などが報告されている。"
+      },
+      {
+        "id": "s2138",
+        "sekcja": "kosmetyka",
+        "czesc": "kwiaty",
+        "tekst": "Napar z tych kwiatów jest czasami stosowany do barwienia włosów na złoty kolor[4, 200].",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Plants For A Future (PFAF)",
+          "url": "https://pfaf.org/user/Plant.aspx?LatinName=Verbascum+thapsus"
+        },
+        "cytat": "An infusion of the flowers is sometimes used to dye the hair a golden colour[4, 200]."
+      },
+      {
+        "id": "s2144",
+        "sekcja": "sklad",
+        "czesc": "kwiaty",
+        "tekst": "Kwiaty dziewanny zawierają flawonoidy (0,5-4%) – między innymi rutozyd, garbniki, saponiny trójpentenowe, glikozydy fenyloetanoidowe (werbaskozyd, arenariozyd, forsytozyd B, leukosceptozyd), polisacharydy i oligosacharydy, związki śluzowe (3-5%), kumarynę, żywice, kwasy organiczne, hesperydynę (1,5-",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/slowianska-roslina-to-leczniczy-skarb-zachwyca-wygladem-i-wlasciwosciami-zdrowotnymi/ar/c14-14837106"
+        },
+        "cytat": "Kwiaty dziewanny zawierają flawonoidy (0,5-4%) – między innymi rutozyd, garbniki, saponiny trójpentenowe, glikozydy fenyloetanoidowe (werbaskozyd, arenariozyd, forsytozyd B, leukosceptozyd), polisacharydy i oligosacharydy, związki śluzowe ("
+      },
+      {
+        "id": "s2145",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "kwiaty",
+        "tekst": "Flawonoidy zawarte w dziewannie mają działanie przeciwzapalne i antyoksydacyjne, garbniki działają bakteriobójczo, zaś saponiny mają właściwości moczopędne i przeciwzapalne.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/slowianska-roslina-to-leczniczy-skarb-zachwyca-wygladem-i-wlasciwosciami-zdrowotnymi/ar/c14-14837106"
+        },
+        "cytat": "Flawonoidy zawarte w dziewannie mają działanie przeciwzapalne i antyoksydacyjne, garbniki działają bakteriobójczo, zaś saponiny mają właściwości moczopędne i przeciwzapalne."
+      },
+      {
+        "id": "s2146",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "kwiaty",
+        "tekst": "Substancje obecne w kwiatach dziewanny mają też działanie wykrztuśne, osłonowe na błony śluzowe jamy ustnej i przewodu pokarmowego, a także przeciwwirusowe.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/slowianska-roslina-to-leczniczy-skarb-zachwyca-wygladem-i-wlasciwosciami-zdrowotnymi/ar/c14-14837106"
+        },
+        "cytat": "Substancje obecne w kwiatach dziewanny mają też działanie wykrztuśne, osłonowe na błony śluzowe jamy ustnej i przewodu pokarmowego, a także przeciwwirusowe."
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-03",
+    "pola": {
+      "czesci_rosliny.kwiaty.czas_zbioru": {
+        "tytul": "Surowce i zbiory - Flos Verbasci: Zbiór",
+        "typ": "tekst",
+        "oryginal": "Lipiec - Wrzesień.",
+        "tresc": [
+          {
+            "tekst": "Lipiec - Wrzesień.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Po wysuszeniu kwiaty dziewanny pakuje się do szczelnych naczyń szklanych lub metalowych, silnie ugniatając; najlepiej sprasować je w cegiełki i zawinąć w celofan.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2103"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "60cacd5a5dfaef81"
+      },
+      "czesci_rosliny.kwiaty.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Flos Verbasci: Substancje czynne",
+        "typ": "lista",
+        "oryginal": [
+          "Śluzy roślinne (do 3%)",
+          "Saponiny triterpenowe",
+          "Flawonoidy",
+          "Karotenoidy",
+          "Irydoidy"
+        ],
+        "tresc": [
+          {
+            "tekst": "Śluzy roślinne (do 3%)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Saponiny triterpenowe",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Flawonoidy",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Karotenoidy",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Irydoidy",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwiaty dziewanny zawierają flawonoidy (0,5-4%) – między innymi rutozyd, garbniki, saponiny trójpentenowe, glikozydy fenyloetanoidowe (werbaskozyd, arenariozyd, forsytozyd B, leukosceptozyd), polisacharydy i oligosacharydy, związki śluzowe (3-5%), kumarynę, żywice, kwasy organiczne, hesperydynę (1,5-",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2144"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "f5815c1ab6b4cf35"
+      },
+      "czesci_rosliny.kwiaty.wlasciwości": {
+        "tytul": "Surowce i zbiory - Flos Verbasci: Działanie",
+        "typ": "tekst",
+        "oryginal": "Powlekające, wykrztuśne, przeciwzapalne, spazmolityczne (rozkurczowe).",
+        "tresc": [
+          {
+            "tekst": "Powlekające, wykrztuśne, przeciwzapalne, spazmolityczne (rozkurczowe).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W medycynie ludowej Niemiec olejek pozyskiwany z kwiatów dziewanny stosowano w leczeniu przeziębień, bólów brzucha, bólów uszu, a także odmrożeń, egzemy i innych ran.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2136"
+            ]
+          },
+          {
+            "tekst": "Flawonoidy zawarte w dziewannie mają działanie przeciwzapalne i antyoksydacyjne, garbniki działają bakteriobójczo, zaś saponiny mają właściwości moczopędne i przeciwzapalne.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2145"
+            ]
+          },
+          {
+            "tekst": "Substancje obecne w kwiatach dziewanny mają też działanie wykrztuśne, osłonowe na błony śluzowe jamy ustnej i przewodu pokarmowego, a także przeciwwirusowe.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2146"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "805fa73ba3d18ddd"
+      },
+      "profil_energetyczny.termika": {
+        "tytul": "Natura i siedlisko - Termika",
+        "typ": "tekst",
+        "oryginal": "Lekko chłodząca",
+        "tresc": [
+          {
+            "tekst": "Lekko chłodząca",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W tradycyjnej medycynie Unani dziewanna klasyfikowana jest jako roślina o zimnej naturze czwartego stopnia, co oznacza poziom, przy którym mogą występować niepożądane działania leku.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2131"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "78379accb288f7a6"
+      },
+      "zastosowanie.kosmetyczne": {
+        "tytul": "Praktyczne zastosowanie - Kosmetyka",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Ekstrakt z dziewanny zwiększa liczbę komórek zawierających białko CD34, będących zalążkiem komórek macierzy włosa, dzięki czemu wykorzystuje się go w preparatach stymulujących porost włosów.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2132"
+            ]
+          },
+          {
+            "tekst": "Napar z kwiatów stosowany był według jednych autorów do rozjaśniania włosów, według innych do nadawania im połysku.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2106"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "2c26827004087a8e"
+      },
+      "zastosowanie.rzemieslnicze": {
+        "tytul": "Praktyczne zastosowanie - Rzemiosło",
+        "typ": "tekst",
+        "oryginal": "Wyschnięte pędy, po zanurzeniu w łoju lub smole, służyły w starożytności jako pochodnie. Kwiaty dostarczają silnego żółtego barwnika do tkanin.",
+        "tresc": [
+          {
+            "tekst": "Wyschnięte pędy, po zanurzeniu w łoju lub smole, służyły w starożytności jako pochodnie.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwiaty dostarczają silnego żółtego barwnika do tkanin.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Napar z tych kwiatów jest czasami stosowany do barwienia włosów na złoty kolor[4, 200].",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2138"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "42726377a6d9fb3e"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "Rzymscy żołnierze używali suchych pędów dziewanny nasączonych łojem jako długo palących się pochodni.",
+          "Według legend, roślina chroniła przed czarami, stąd ludowa nazwa 'świeca gromniczna'.",
+          "Gęsty puch z liści dziewanny był używany jako doskonała hubka do rozpalania ognia krzesiwem.",
+          "Nasiona dziewanny są niezwykle liczne (jedna roślina potrafi wyprodukować ich ponad 100 tysięcy), a w odpowiednich warunkach w glebie potrafią zachować zdolność kiełkowania przez blisko wiek!"
+        ],
+        "tresc": [
+          {
+            "tekst": "Rzymscy żołnierze używali suchych pędów dziewanny nasączonych łojem jako długo palących się pochodni.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Według legend, roślina chroniła przed czarami, stąd ludowa nazwa 'świeca gromniczna'.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Gęsty puch z liści dziewanny był używany jako doskonała hubka do rozpalania ognia krzesiwem.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Nasiona dziewanny są niezwykle liczne (jedna roślina potrafi wyprodukować ich ponad 100 tysięcy), a w odpowiednich warunkach w glebie potrafią zachować zdolność kiełkowania przez blisko wiek!",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Epitet gatunkowy „thapsus” wprowadził Teofrast w odniesieniu do nieokreślonego ziela leczniczego pochodzącego z Tapsos, starożytnej greckiej kolonii w pobliżu dzisiejszych Syrakuz na Sycylii.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2134"
+            ]
+          },
+          {
+            "tekst": "Rzymianie chronili figi przed zepsuciem zawijając je w liście dziewanny.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2105"
+            ]
+          },
+          {
+            "tekst": "W Japonii znana jest pod takimi nazwami jak „tytoń Ainu” czy „tytoń ogrodowy”. Z kolei w środkowo-zachodniej części Stanów Zjednoczonych, obejmującej Teksas, Kolorado, Nowy Meksyk i Arizonę, roślina ta jest powszechnie nazywana „Cowboy Toilet Paper” (papier toaletowy kowboja).",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2133"
+            ]
+          },
+          {
+            "tekst": "Martwe, suche pędy po zanurzeniu w łoju lub wosku używane były jako pochodnie, przy czym płomienie opalizują kolorami tęczy.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2108"
+            ]
+          },
+          {
+            "tekst": "Pszczoły z rodziny miesierkowatych (Megachilidae), zwłaszcza gatunki z rodzaju Anthidium używają włosków dziewanny do budowy swoich gniazd.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2109"
+            ]
+          },
+          {
+            "tekst": "Dziewanna omijana jest na pastwiskach przez bydło domowe, ponieważ włoski, którymi jest pokryta, drażnią błony śluzowe.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2110"
+            ]
+          },
+          {
+            "tekst": "W przypadku innych gatunków ptaków odnotowano przypadki wykorzystywania liści (gęś hawajska), kwiatów (hawajski sikorek białobrody) (Loxioides bailleui) lub też wykorzystywania tej rośliny jako źródła pożywienia w postaci owadów, np. przez dzięcioła białogłowego.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2137"
+            ]
+          },
+          {
+            "tekst": "Kwiaty służą także do aromatyzowania likierów, w kremach także do zmiękczania i wygładzania skóry.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2107"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "58bd5720d2f3cc17"
+      },
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": "Wszystkie nadziemne części dziewanny pokryte są charakterystycznym kutnerem (drobnymi, sztywnymi włoskami). Włoski te, w przypadku dostania się do przewodu pokarmowego, mogą silnie podrażniać błony śluzowe gardła, przełyku i żołądka. Z tego powodu **każdy płynny preparat domowy (napar, odwar, olej, nalewkę) z dziewanny należy wyjątkowo starannie filtrować** – najlepiej przez papierowy filtr do kawy lub kilkukrotnie złożoną, gęstą gazę.",
+        "tresc": [
+          {
+            "tekst": "Wszystkie nadziemne części dziewanny pokryte są charakterystycznym kutnerem (drobnymi, sztywnymi włoskami).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Włoski te, w przypadku dostania się do przewodu pokarmowego, mogą silnie podrażniać błony śluzowe gardła, przełyku i żołądka.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Z tego powodu **każdy płynny preparat domowy (napar, odwar, olej, nalewkę) z dziewanny należy wyjątkowo starannie filtrować** – najlepiej przez papierowy filtr do kawy lub kilkukrotnie złożoną, gęstą gazę.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jednak ze względu na brak wystarczających danych nie zaleca się stosowania leku u dzieci w wieku poniżej 12 lat.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2135"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "af8b5ddd77e77f59"
+      }
+    },
+    "uzyte_fakty": [
+      "s2103",
+      "s2105",
+      "s2106",
+      "s2107",
+      "s2108",
+      "s2109",
+      "s2110",
+      "s2131",
+      "s2132",
+      "s2133",
+      "s2134",
+      "s2135",
+      "s2136",
+      "s2137",
+      "s2138",
+      "s2144",
+      "s2145",
+      "s2146"
+    ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-03",
+    "jak": "llm:groq/openai/gpt-oss-20b",
+    "wejscie": "1eae68215db55a58",
+    "wstawki": [
+      {
+        "miejsce": "magia/ochrona",
+        "rozdzial": "Magia i zabobony",
+        "tytul": "Ochrona i odpędzanie zła",
+        "ikona": "ra-tower",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "To właśnie to ziele miało chronić Odyseusza przed czarami złej Kirke.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2104"
+            ],
+            "sekcja": "magia",
+            "czesc": null
+          }
+        ],
+        "rozdzial_ikona": "ra-cauldron",
+        "rozdzial_po": "tajemna"
+      }
+    ],
+    "duplikaty": []
   }
 }

@@ -174,7 +174,7 @@
     "Nasiona": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Urtica_dioica_kz09.jpg/960px-Urtica_dioica_kz09.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-11-04",
     "w_url": true,
     "zdjecia": [
       {
@@ -223,5 +223,188 @@
         "zrodlo": "Wikimedia Commons"
       }
     ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-11-04",
+    "uporzadkowano": "2026-11-04",
+    "uklad": "deterministyczny",
+    "zrodla": [
+      {
+        "nazwa": "stronazdrowia.pl",
+        "url": "https://stronazdrowia.pl/darmowy-sposob-na-swedzenie-obrzeki-i-grzybice-stop-masz-5-powodow-aby-wyprobowac-moczenie-nog-w-pokrzywie-na-co-pomaga/ar/c14-17697541",
+        "jezyk": "pl-PL",
+        "typ": "strona",
+        "nr": 1
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Ze względu na działanie moczopędne jej spożywanie może być korzystne dla osób cierpiących z powodu: - zapalenia układu moczowego, - nadciśnienia tętniczego, - kamicy nerkowej, - obrzęków, - zatrzymania wody w organizmie.",
+            "czesc": "ziele",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2693"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kosmetyka",
+        "tytul": "Kosmetyka",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Stosowanie naparów z pokrzywy na skórę wykazuje działanie: - bakteriobójcze, - łagodzące stany zapalne skóry, - zmniejszające łojotok, wypryski i zmiany ropne, - wspomagające leczenia ran.",
+            "czesc": "ziele",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2694"
+            ]
+          },
+          {
+            "tekst": "- Złagodzić swędzenie i zapalenie skóry – ze względu na właściwości przeciwzapalne i antyhistaminowe, co jest wyjątkowo istotne u osób ciepiących na grzybicę stóp lub atopowe zapalenie skóry.",
+            "czesc": "ziele",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2695"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "ziele": [
+        "s2693",
+        "s2694",
+        "s2695"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s2693",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "ziele",
+        "tekst": "Ze względu na działanie moczopędne jej spożywanie może być korzystne dla osób cierpiących z powodu: - zapalenia układu moczowego, - nadciśnienia tętniczego, - kamicy nerkowej, - obrzęków, - zatrzymania wody w organizmie.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/darmowy-sposob-na-swedzenie-obrzeki-i-grzybice-stop-masz-5-powodow-aby-wyprobowac-moczenie-nog-w-pokrzywie-na-co-pomaga/ar/c14-17697541"
+        },
+        "cytat": "Ze względu na działanie moczopędne jej spożywanie może być korzystne dla osób cierpiących z powodu: - zapalenia układu moczowego, - nadciśnienia tętniczego, - kamicy nerkowej, - obrzęków, - zatrzymania wody w organizmie."
+      },
+      {
+        "id": "s2694",
+        "sekcja": "kosmetyka",
+        "czesc": "ziele",
+        "tekst": "Stosowanie naparów z pokrzywy na skórę wykazuje działanie: - bakteriobójcze, - łagodzące stany zapalne skóry, - zmniejszające łojotok, wypryski i zmiany ropne, - wspomagające leczenia ran.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/darmowy-sposob-na-swedzenie-obrzeki-i-grzybice-stop-masz-5-powodow-aby-wyprobowac-moczenie-nog-w-pokrzywie-na-co-pomaga/ar/c14-17697541"
+        },
+        "cytat": "Stosowanie naparów z pokrzywy na skórę wykazuje działanie: - bakteriobójcze, - łagodzące stany zapalne skóry, - zmniejszające łojotok, wypryski i zmiany ropne, - wspomagające leczenia ran."
+      },
+      {
+        "id": "s2695",
+        "sekcja": "kosmetyka",
+        "czesc": "ziele",
+        "tekst": "- Złagodzić swędzenie i zapalenie skóry – ze względu na właściwości przeciwzapalne i antyhistaminowe, co jest wyjątkowo istotne u osób ciepiących na grzybicę stóp lub atopowe zapalenie skóry.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/darmowy-sposob-na-swedzenie-obrzeki-i-grzybice-stop-masz-5-powodow-aby-wyprobowac-moczenie-nog-w-pokrzywie-na-co-pomaga/ar/c14-17697541"
+        },
+        "cytat": "- Złagodzić swędzenie i zapalenie skóry – ze względu na właściwości przeciwzapalne i antyhistaminowe, co jest wyjątkowo istotne u osób ciepiących na grzybicę stóp lub atopowe zapalenie skóry."
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-04",
+    "pola": {
+      "czesci_rosliny.ziele.wlasciwości": {
+        "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Ze względu na działanie moczopędne jej spożywanie może być korzystne dla osób cierpiących z powodu: - zapalenia układu moczowego, - nadciśnienia tętniczego, - kamicy nerkowej, - obrzęków, - zatrzymania wody w organizmie.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2693"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "527b13c22a779d4b"
+      },
+      "zastosowanie.kosmetyczne": {
+        "tytul": "Praktyczne zastosowanie - Kosmetyka",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Stosowanie naparów z pokrzywy na skórę wykazuje działanie: - bakteriobójcze, - łagodzące stany zapalne skóry, - zmniejszające łojotok, wypryski i zmiany ropne, - wspomagające leczenia ran.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2694"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "36fbaa58556ff37c"
+      }
+    },
+    "uzyte_fakty": [
+      "s2693",
+      "s2694"
+    ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-04",
+    "jak": "llm:groq/qwen/qwen3.8-27b",
+    "wejscie": "6b74c7284055cd09",
+    "wstawki": [
+      {
+        "miejsce": "zastosowanie/kosmetyka",
+        "rozdzial": "Praktyczne zastosowanie",
+        "tytul": "Kosmetyka",
+        "ikona": "ra-flower",
+        "nowy": false,
+        "punkty": [
+          {
+            "tekst": "- Złagodzić swędzenie i zapalenie skóry – ze względu na właściwości przeciwzapalne i antyhistaminowe, co jest wyjątkowo istotne u osób ciepiących na grzybicę stóp lub atopowe zapalenie skóry.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2695"
+            ],
+            "sekcja": "kosmetyka",
+            "czesc": "ziele"
+          }
+        ]
+      }
+    ],
+    "duplikaty": []
   }
 }

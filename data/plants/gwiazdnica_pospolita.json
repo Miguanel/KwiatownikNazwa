@@ -12,9 +12,9 @@
   "_siedziba_nowa": true,
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-11-02",
-    "uporzadkowano": "2026-11-02",
-    "uklad": "deterministyczny: pominiete informacje: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",
+    "zaktualizowano": "2026-11-03",
+    "uporzadkowano": "2026-11-03",
+    "uklad": "deterministyczny",
     "zrodla": [
       {
         "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -66,11 +66,18 @@
         "nr": 7
       },
       {
+        "nazwa": "www.botanical-online.com",
+        "url": "https://www.botanical-online.com/botanica/pamplina-caracteristicas",
+        "jezyk": "es",
+        "typ": "strona",
+        "nr": 8
+      },
+      {
         "nazwa": "www.lektrava.ru",
         "url": "https://www.lektrava.ru/encyclopedia/zvezdchatka-srednyaya/",
         "jezyk": "ru",
         "typ": "strona",
-        "nr": 8
+        "nr": 9
       }
     ],
     "sekcje": [
@@ -81,7 +88,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Gwiazdnica pospolita to drobna i delikatna roślina tworząca łany, z rozesłanymi lub wzniesionymi łodygami o długości od 3 do 40 cm.",
+            "tekst": "Roślina tworząca łany, drobna i delikatna. Łodyga Rozesłane, podnoszące się lub wzniesione, długie na 3–40 cm, obłe, z pojedynczym szeregiem włosków.",
             "czesc": null,
             "zrodla": [
               1
@@ -91,7 +98,7 @@
             ]
           },
           {
-            "tekst": "Dawna nazwa łacińska Morsus gallinae oznacza \"huczy bite\", a polskie oraz niemieckie nazwy nawiązują do tego, że całe rośliny chętnie zjadane są przez ptaki.",
+            "tekst": "Starożytną łacińską nazwą jest Morsus gallinae („ukąszenie kurczaka”). ... Ptaki chętnie zjadają wszystkie części tej rośliny, do czego nawiązuje również jej niemiecka nazwa potoczna.",
             "czesc": null,
             "zrodla": [
               2
@@ -101,7 +108,7 @@
             ]
           },
           {
-            "tekst": "Nazwy związane z jelitami wynikają z pełzających, okrągłych i krętych łodyg lub z tego, że po rozerwaniu łodygi jej wnętrze przypomina białe jelito.",
+            "tekst": "Nazwa „jelito” wywodzi się od pełzających, okrągłych i poskręcanych łodyg lub od tego, że po rozciągnięciu łodygi jej wewnętrzna część wygląda jak białe jelito.",
             "czesc": null,
             "zrodla": [
               2
@@ -111,7 +118,7 @@
             ]
           },
           {
-            "tekst": "U nasady liŻci w dolnej części łodygi występują krótkie ogonki, natomiast liŻcie górne wyrastają bezpośrednio z łodygi.",
+            "tekst": "Liście mają kształt jajowaty i spiczasty wierzchołek. Liście rosnące w dolnej części łodygi mają zazwyczaj krótkie ogonki, natomiast liście górne są osadzone bezpośrednio na łodydze.",
             "czesc": null,
             "zrodla": [
               2
@@ -121,7 +128,7 @@
             ]
           },
           {
-            "tekst": "Łodygi mają średnicę 1 mm i opatrzone są linią prostych włosów biegnących wzdłuż pełnej długości, z naprzemiennym przebiegiem na węzłach.",
+            "tekst": "Łodygi są cylindryczne i nagie, o luźnym i rozłożystym pokroju, osiągają długość do 40 cm (16 cali) i średnicę 1 milimetra (1⁄16 cala); wzdłuż całej długości biegnie wzdłużna linia (bardzo rzadko dwie linie) włosków, które w węzłach przechodzą na drugą stronę.",
             "czesc": null,
             "zrodla": [
               3
@@ -141,7 +148,7 @@
             ]
           },
           {
-            "tekst": "Gwiazdnica pospolita jest jednoroczną rośliną o słabym, cylindrycznym pędzie z wyraźnymi wzdłużnymi brzegami; jedną stroną pokrywa krótkie, miękkie włoski, a pozostała część jest gładka i rośnie przyziemnie, rozgałęziając się w sposób rozdzielny.",
+            "tekst": "Łodyga jest delikatna, cylindryczna, z podłużnymi żebrami, z jednej strony pokryta krótkimi, miękkimi włoskami, a z pozostałych stron całkowicie bezowłosiona; rozciąga się po ziemi i rozgałęzia się w kształcie widelca.",
             "czesc": null,
             "zrodla": [
               5
@@ -151,7 +158,17 @@
             ]
           },
           {
-            "tekst": "System korzeniowy rośliny składa się ze słabego korzenia głównego oraz licznych korzeni bocznych, przez co ukorzenia się ona bardzo płytko.",
+            "tekst": "Jednoroczna roślina zielna o charakterze samosiewnym, o intensywnie zielonym kolorze, która często porasta nawożone i spulchnione tereny, a nawet ogrody.",
+            "czesc": null,
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s2648"
+            ]
+          },
+          {
+            "tekst": "Słaby korzeń główny, liczne korzenie boczne, ukorzenia się płytko.",
             "czesc": "korzeń",
             "zrodla": [
               1
@@ -161,7 +178,7 @@
             ]
           },
           {
-            "tekst": "Kwiaty mają trzy do dziesięciu pręcików z fioletowymi pylnikami oraz trzy szyjki słupka.",
+            "tekst": "Trzy do dziesięciu pręcików ma fioletowe pylniki. Kwiat posiada trzy słupki.",
             "czesc": "kwiaty",
             "zrodla": [
               2
@@ -171,7 +188,7 @@
             ]
           },
           {
-            "tekst": "Kwiaty pojawiają się w niewielkich kwiatostanach typu dichazium i charakteryzują się fioletowymi pylnikami na pręcikach oraz trzema szyjkami słupka.",
+            "tekst": "Nieliczne kwiaty zebrane są w baldaszkowate dichazje... Trzy do dziesięciu pręcików ma fioletowe pylniki. Występują trzy słupki.",
             "czesc": "kwiaty",
             "zrodla": [
               2
@@ -181,7 +198,7 @@
             ]
           },
           {
-            "tekst": "Kwiaty mają białe, dwudzielne płatków, które są znacznie krótsze kielichokwiatów (dł. 1–3 mm vs 3–5 mm), a liczba pręcików zwykle wynosi 3, choć może sięgać do 8.",
+            "tekst": "Często występują tylko 3 pręciki, ale czasami jest ich więcej (do 8) oraz 3 słupki. Kwiaty są małe, o średnicy mniejszej niż 1 cm, z 5 rozszczepionymi białymi płatkami o długości 1–3 mm, schowanymi wewnątrz większych (o długości 3–5 mm) działek kielicha.",
             "czesc": "kwiaty",
             "zrodla": [
               3
@@ -191,7 +208,7 @@
             ]
           },
           {
-            "tekst": "Na zewnątrz, na stronach distalnych owalnych kielichokwiatów, rosną długie, faliste (mistkowe) włoski.",
+            "tekst": "Te działki kielicha mają długie, faliste (włoskowate) włoski na zewnętrznych (dystalnych) stronach, są owalne i zazwyczaj występują w liczbie 5.",
             "czesc": "kwiaty",
             "zrodla": [
               3
@@ -231,7 +248,7 @@
             ]
           },
           {
-            "tekst": "Drobne, białe kwiaty gwiazdnicy pospolitej tworzą kwiatostany typu wierzchotka, usytuowane na szczytach pędów lub w kątach liści, a każdy z nich posiada trzy szyjki słupka.",
+            "tekst": "Kwiatostan baldaszkowaty, osadzony na końcach gałęzi lub w kątach liści; szypułki kwiatowe smukłe; 5 działek kielicha; 5 płatków, głęboko dwukrotnie rozciętych; trzy słupki.",
             "czesc": "kwiaty",
             "zrodla": [
               5
@@ -241,7 +258,7 @@
             ]
           },
           {
-            "tekst": "Kwiaty są białe, z pięcioma kielichami i pięcioma płatkami głęboko dwupodzielonymi, a roślina posiada trzy słupki.",
+            "tekst": "5 działek kielicha; 5 płatków, głęboko dwukrotnie rozciętych; trzy słupki",
             "czesc": "kwiaty",
             "zrodla": [
               5
@@ -251,7 +268,7 @@
             ]
           },
           {
-            "tekst": "Liście i liście zarodkowe wykonują ruchy senne, rozwijając się rano przy suchej pogodzie i zamykając się w warunkach dużej wilgotności.",
+            "tekst": "Liścienie i liście wykonują ruchy senne i przyjmują pozycję dzienną/nocną. Przy suchej pogodzie rozwijają się około dziewiątej rano i kwitną do wieczora. Przy wilgotnej pogodzie kwiaty pozostają zamknięte.",
             "czesc": "liście",
             "zrodla": [
               2
@@ -261,7 +278,7 @@
             ]
           },
           {
-            "tekst": "Dolne liście posiadają krótkie ogonki, natomiast liście rosnące w górnej części łodygi wyrastają bezpośrednio z niej.",
+            "tekst": "Liście mają kształt jajowaty i spiczasty wierzchołek. Liście rosnące w dolnej części łodygi mają zazwyczaj krótkie ogonki, natomiast liście górne są osadzone bezpośrednio na łodydze.",
             "czesc": "liście",
             "zrodla": [
               2
@@ -271,7 +288,7 @@
             ]
           },
           {
-            "tekst": "Liście gwiazdnicy pospolitej są proste, zielone i owalne, mierzą od 6 do 25 mm długości oraz od 3 do 10 mm szerokości i posiadają charakterystyczny hydathod na wierzchołku, co powoduje wydzielanie kropli wody.",
+            "tekst": "Liście są zielone, nagie, owalne i przeciwległe, o długości od 6 do 25 mm (od 1⁄4 do 1 cala) i szerokości od 3 do 10 mm (od 1⁄8 do 3⁄8 cala), z hydatodą na końcu.",
             "czesc": "liście",
             "zrodla": [
               3
@@ -281,7 +298,7 @@
             ]
           },
           {
-            "tekst": "Ogonki liściowe gwiazdnicy pospolitej osiągają długość od 5 do 8 mm i posiadają owłosione brzegi.",
+            "tekst": "Ogonki liściowe mają od 5 do 8 mm długości i są owłosione na krawędziach.",
             "czesc": "liście",
             "zrodla": [
               3
@@ -291,7 +308,7 @@
             ]
           },
           {
-            "tekst": "Naprzeciwległe, jajowate liście tej rośliny charakteryzują się wyjątkową delikatnością i kruchością, przez co bardzo łatwo ulegają uszkodzeniu.",
+            "tekst": "Liście jajowate, małe, przeciwległe, z ostro zakończonymi wierzchołkami, kruche i łatwo łamliwe",
             "czesc": "liście",
             "zrodla": [
               5
@@ -301,7 +318,7 @@
             ]
           },
           {
-            "tekst": "Liście gwiazdnicy są małe, owalne, ustawione naprzeciwlegle, z ostrym końcem i są kruche oraz łatwo łamliwe.",
+            "tekst": "Liście jajowate, małe, przeciwległe, z ostro zakończonymi wierzchołkami, kruche i łatwo łamliwe",
             "czesc": "liście",
             "zrodla": [
               5
@@ -311,7 +328,7 @@
             ]
           },
           {
-            "tekst": "Rótowo-brązowe nasionamają średnicę od 0,9 do 1,3 milimetra i są pokryte płaskimi, tupymi brodawkami.",
+            "tekst": "Czerwono-brązowe nasiona mają średnicę od 0,9 do 1,3 mm i płaskie, tępe guzki.",
             "czesc": "nasiona",
             "zrodla": [
               2
@@ -321,7 +338,7 @@
             ]
           },
           {
-            "tekst": "Nasiona mają czerwonobrązową barwę, średnicę od 0,9 do 1,3 mm oraz płaskie, tępe brodawki na powierzchni.",
+            "tekst": "Czerwono-brązowe nasiona mają średnicę od 0,9 do 1,3 mm i płaskie, tępe guzki.",
             "czesc": "nasiona",
             "zrodla": [
               2
@@ -331,7 +348,7 @@
             ]
           },
           {
-            "tekst": "Owoce mają postać podługowatej torebki, która jest dłuższa od kielicha i pęka sześcioma ząbkami niemal do połowy swojej długości.",
+            "tekst": "Podługowata torebka dłuższa od kielicha. Pęka 6 ząbkami niemal do połowy długości.",
             "czesc": "owoce",
             "zrodla": [
               1
@@ -341,7 +358,7 @@
             ]
           },
           {
-            "tekst": "Pięcio- lub sześcioklapowa kapselfrucht osiąga około 3 do 5 milimetrów długości i zwisa w dół na wygiętym szypułku.",
+            "tekst": "Owoc w postaci kapsułki z pięcioma lub sześcioma klapami ma około 3–5 mm długości i zwisa, wygięty w dół, na szypułce.",
             "czesc": "owoce",
             "zrodla": [
               2
@@ -351,7 +368,7 @@
             ]
           },
           {
-            "tekst": "Owocem jest pękająca pięcio- lub sześcioklapowa torebka, która w trakcie dojrzewania zwisa łukowato w dół na szypułce.",
+            "tekst": "Owoc w postaci kapsułki z pięcioma lub sześcioma klapami ma około 3–5 mm długości i zwisa, wygięty w dół, na szypułce.",
             "czesc": "owoce",
             "zrodla": [
               2
@@ -371,7 +388,7 @@
             ]
           },
           {
-            "tekst": "Roślina jest jednoroczna i ma zwężającą się, wrzecionowatą korzeń o charakterze spłaszczonym.",
+            "tekst": "Gwiazdnica pospolita to jednoroczna roślina zielna… o wrzecionowatym, płaskim korzeniu.",
             "czesc": "ziele",
             "zrodla": [
               2
@@ -399,7 +416,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Jest gatunkiem kosmopolitycznym występującym na całym świecie, na półkuli południowej sięgającym po wyspy wokół Antarktydy, a na północnej po Svalbard.",
+            "tekst": "Gatunek kosmopolityczny występujący na całym świecie. Na półkuli południowej sięga po wyspy wokół Antarktydy, na półkuli północnej po archipelag Svalbard (około 78° szerokości geograficznej).",
             "czesc": null,
             "zrodla": [
               1
@@ -409,7 +426,7 @@
             ]
           },
           {
-            "tekst": "RoŻlina występuje od nizin aż po góry, osiągając w Szwajcarii w kantonie Valais wysokość 2694 m n.p.m.",
+            "tekst": "Występuje od równin aż po góry. W Alpach Allgäu, w części tyrolskiej, na szczycie Jöchelspitze osiąga wysokość 2226 metrów na pastwiskach dla owiec; w kantonie Valais osiąga wysokość 2694 metrów.",
             "czesc": null,
             "zrodla": [
               2
@@ -419,7 +436,7 @@
             ]
           },
           {
-            "tekst": "Pierwotne obszary występowania obejmują Eurazję oraz północną Afrykę.",
+            "tekst": "Jej pierwotnym obszarem występowania jest Eurazja i północna Afryka.",
             "czesc": null,
             "zrodla": [
               2
@@ -429,7 +446,7 @@
             ]
           },
           {
-            "tekst": "W Alpach Allgäu roślina dociera aż do szczytu Jöchelspitze w Tyrolu, osiągając wysokość 2226 m n.p.m., a w kantonie Valais notowana jest do 2694 m n.p.m.",
+            "tekst": "W Alpach Allgäu, w części tyrolskiej, na szczycie Jöchelspitze rozciąga się na pastwiskach dla owiec aż do wysokości 2226 metrów; w kantonie Valais osiąga wysokość 2694 metrów.",
             "czesc": null,
             "zrodla": [
               2
@@ -439,7 +456,7 @@
             ]
           },
           {
-            "tekst": "W Wielkiej Brytanii wartości Ellenberga wskazują na preferencję dobrze nawodnionych i bogatych w azot siedlisk (L=7, N=7) oraz przystosowanie do gleb o umiarkowanej zasobności (F=5) i kwasowości (S=0).",
+            "tekst": "W Wielkiej Brytanii wartości w skali Ellenberga wynoszą: L = 7, F = 5, R = 6, N = 7 i S = 0.",
             "czesc": null,
             "zrodla": [
               3
@@ -449,7 +466,7 @@
             ]
           },
           {
-            "tekst": "Gwiazdnica pospolita występuje m.in. na polach uprawnych, nieużytkach i przydrożach.",
+            "tekst": "Pochodzi z Eurazji i jest naturalizowana na całym świecie, gdzie występuje jako chwast na nieużytkach, polach uprawnych i w ogrodach.",
             "czesc": null,
             "zrodla": [
               3
@@ -477,7 +494,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Całą roślinę suszy się na słońcu, a uzyskany w ten sposób susz nazywany jest hanrou i jest stosowany jako surowiec zielarski w Japonii.",
+            "tekst": "Cała roślina wysuszona na słońcu stanowi surowiec leczniczy zwany „hanrou”, choć czasami stosuje się również świeżą roślinę.",
             "czesc": null,
             "zrodla": [
               4
@@ -487,7 +504,7 @@
             ]
           },
           {
-            "tekst": "Suszone na słońcu całe rośliny zwane w Japonii hanrou są używane jako ziołowy lek.",
+            "tekst": "Cała roślina wysuszona na słońcu stanowi surowiec leczniczy zwany hanrou,",
             "czesc": null,
             "zrodla": [
               4
@@ -497,7 +514,7 @@
             ]
           },
           {
-            "tekst": "Surowcem zielarskim jest świeże ziele, które ze względu na całoroczny wzrost przeważnie nie wymaga suszenia i może być zbierane do czasu zawiązywania nasion.",
+            "tekst": "Surowiec zielarski Ziele Herba Stellariae mediae. [...] Ponieważ rośnie przez cały rok, przeważnie nie ma potrzeby jej suszenia. Zbiera się świeże ziele.",
             "czesc": "ziele",
             "zrodla": [
               1
@@ -535,7 +552,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Roślina zawiera w swoim składzie witaminy, saponiny, flawonoidy, kumaryny, minerały, kwas szczawiowy, cynk oraz olejki eteryczne.",
+            "tekst": "Wśród składników wymieniane są witaminy, saponiny, flawonoidy, kumaryny, minerały, kwas szczawiowy, cynk oraz olejki eteryczne.",
             "czesc": null,
             "zrodla": [
               2
@@ -545,7 +562,7 @@
             ]
           },
           {
-            "tekst": "Ziele zawiera saponiny, witaminy C, E, PP, B1, B2, flawonoid rutynę, kwas paraaminobenzoesowy, kwas gamma-linolenowy oraz liczne sole mineralne.",
+            "tekst": "Zawiera saponiny, witaminy C, E, PP, B1, B2, flawonoid rutynę, kwas paraaminobenzoesowy, Kwas γ-linolenowy, sole mineralne (potas, fosfor, wapń, żelazo, magnez, sód, selen, jod, krzem).",
             "czesc": "ziele",
             "zrodla": [
               1
@@ -555,7 +572,7 @@
             ]
           },
           {
-            "tekst": "W skład ziela wchodzą liczne sole mineralne, takie jak potas, fosfor, wapń, żelazo, magnez, sód, selen, jod oraz krzem.",
+            "tekst": "sole mineralne (potas, fosfor, wapń, żelazo, magnez, sód, selen, jod, krzem).",
             "czesc": "ziele",
             "zrodla": [
               1
@@ -565,7 +582,7 @@
             ]
           },
           {
-            "tekst": "Roślina zawiera dwukrotnie więcej wapnia, trzykrotnie więcej potasu i magnezu oraz siedmiokrotnie więcej żelaza niż sałata masłowa.",
+            "tekst": "Gwiazdnica zawiera dwa razy więcej wapnia, trzy razy więcej potasu i magnezu oraz siedem razy więcej żelaza niż sałata głowiasta.",
             "czesc": "ziele",
             "zrodla": [
               2
@@ -583,7 +600,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "W naturopatii ekstrakt ze świeżej rośliny wykorzystuje się w leczeniu reumatyzmu i bólów stawów, a napar stosuje się zarówno zewnętrznie, jak i wewnętrznie.",
+            "tekst": "Wyciąg ze świeżej rośliny stosuje się więc w leczeniu reumatyzmu i bólów stawów. W postaci herbaty znajduje zastosowanie zarówno do użytku zewnętrznego, jak i wewnętrznego.",
             "czesc": null,
             "zrodla": [
               2
@@ -593,7 +610,7 @@
             ]
           },
           {
-            "tekst": "Roślina może rozprzestrzeniać się wegetatywnie za pomocą oderwanych fragmentów łodyg, które są zdolne do ukorzenienia się.",
+            "tekst": "Możliwe jest również rozmnażanie wegetatywne poprzez odłamane fragmenty łodyg, które się ukorzeniają.",
             "czesc": null,
             "zrodla": [
               2
@@ -613,7 +630,7 @@
             ]
           },
           {
-            "tekst": "Ainu wykorzystywali łodygi gwiazdnicy pospolitej do leczenia siniaków i bólów kości, namaczając je wcześniej w gorącej wodzie przed nałożeniem zewnętrznie na bolące miejsca.",
+            "tekst": "Roślina ta była stosowana przez Ajnów w leczeniu siniaków i bólu kości. Łodygi moczono w gorącej wodzie, a następnie nakładano je zewnętrznie na dotknięte obszary.",
             "czesc": null,
             "zrodla": [
               3
@@ -623,67 +640,67 @@
             ]
           },
           {
-            "tekst": "Roślina wykazuje działanie przeciwzapalne, przeciwbakteryjne, żółciopędne, przeciwcyngetyczne, rozszerzające naczynia wieńcowe oraz obniżające ciśnienie krwi.",
+            "tekst": "Gwiazdnica średnia wykazuje umiarkowane działanie przeciwzapalne, przeciwbakteryjne, żółciopędne, przeciwszkorbutowe, rozszerzające naczynia wieńcowe oraz hipotensyjne.",
             "czesc": null,
             "zrodla": [
-              8
+              9
             ],
             "fakty": [
               "s589"
             ]
           },
           {
-            "tekst": "W lecznictwie homeopatycznym przygotowywana jest z niej esencja ze świeżo zebranych okazów rośliny.",
+            "tekst": "Homeopaci przygotowują leczniczą esencję na bazie świeżo zebranej gwiazdnicy średniej.",
             "czesc": null,
             "zrodla": [
-              8
+              9
             ],
             "fakty": [
               "s590"
             ]
           },
           {
-            "tekst": "Napar i nalewka z rośliny stosowane są w leczeniu obrzęków sercowych i nerkowych, neurastenii, padaczki, drgawek oraz anemii i niedoborów witamin.",
+            "tekst": "Nalewka z gwiazdnicy średniej jest pomocna w przypadku obrzęków pochodzenia sercowego i nerkowego, nerwicach, padaczce, napadach nerwowych, drgawkach, chorobach zakaźno-zapalnych i układu oddechowego, niedoborach witamin, niedoborach odpornościowych, szkorbutie i niedokrwistości.",
             "czesc": null,
             "zrodla": [
-              8
+              9
             ],
             "fakty": [
               "s591"
             ]
           },
           {
-            "tekst": "Tradycyjnie ziele i kwiaty wykorzystywano do leczenia chorób żołądkowo-jelitowych, w tym zapalenia żołądka, śródnej i trzewnej zapalenia jelit, biegunki oraz kolek.",
+            "tekst": "Mokryca jest również pomocna w przypadku chorób przewodu pokarmowego, na przykład w przypadku zapalenia żołądka, zapalenia jelit, zapalenia okrężnicy, zapalenia jelit i okrężnicy, biegunki oraz kolki.",
             "czesc": null,
             "zrodla": [
-              8
+              9
             ],
             "fakty": [
               "s592"
             ]
           },
           {
-            "tekst": "Wlewki (kompresy) z rośliny przygotowuje się w celu łagodzenia dolegliwości związanych z chorobami stawów, nadwyrężeniem więzadeł, zapaleniem mięśni, reumatyzmem oraz obrzękami nóg.",
+            "tekst": "Okłady z mokrycy można stosować w przypadku chorób stawów, skręceń więzadeł, zapalenia mięśni, zapalenia stawów, reumatyzmu, rwy kulszowej, mastopatii oraz obrzęków nóg.",
             "czesc": null,
             "zrodla": [
-              8
+              9
             ],
             "fakty": [
               "s593"
             ]
           },
           {
-            "tekst": "Tradycyjnie wierzane jest, że roślina może wykorzystywać do stymulacji laktacji u kobiet w okresie karmienia oraz w leczeniu niedoborów witaminowych.",
+            "tekst": "Może być również stosowana w celu pobudzenia laktacji oraz w leczeniu niedoborów witamin.",
             "czesc": null,
             "zrodla": [
-              8
+              9
             ],
             "fakty": [
               "s595"
             ]
           },
           {
-            "tekst": "Zewnętrznie wyciągi ze świeżej rośliny stosuje się do okładania ran w celu przyspieszenia gojenia oraz w schorzeniach skórnych, natomiast kąpiele z dodatkiem naparu łagodzą swędzenie.",
+            "tekst": "Zewnętrznie przy schorzeniach skórnych, na okładanie ran (przyspiesza ich gojenie). Stosuje się w postaci świeżych, zmiażdżonych roślin przyłożonych na skórę. Kąpiel w wodzie z dodatkiem naparu z gwiazdnicy pospolitej łagodzi swędzenie i podrażnienie skóry.",
             "czesc": "ziele",
             "zrodla": [
               1
@@ -693,7 +710,7 @@
             ]
           },
           {
-            "tekst": "Wyciągi wodne z rośliny stosuje się wewnętrznie w leczeniu reumatyzmu, artretyzmu, nadciśnienia, zaparć oraz dolegliwości ze strony nerek i serca.",
+            "tekst": "Wewnętrznie wyciągi wodne stosuje się przy reumatyzmie i artretyzmie, nieprawidłowej przemianie materii, schorzeniach skórnych, hemoroidach, niedomaganiach serca, chorobach nerek, zaparciach, nadciśnieniu, kaszlu, chrypce, szkorbucie oraz przy stanach zapalnych.",
             "czesc": "ziele",
             "zrodla": [
               1
@@ -703,7 +720,7 @@
             ]
           },
           {
-            "tekst": "Wyciągi wodne z ziela stosuje się wewnętrznie przy nieprawidłowej przemianie materii, hemoroidach, chrypce oraz szkorbucie.",
+            "tekst": "Wewnętrznie wyciągi wodne stosuje się przy reumatyzmie i artretyzmie, nieprawidłowej przemianie materii, schorzeniach skórnych, hemoroidach, niedomaganiach serca, chorobach nerek, zaparciach, nadciśnieniu, kaszlu, chrypce, szkorbucie oraz przy stanach zapalnych.",
             "czesc": "ziele",
             "zrodla": [
               1
@@ -713,7 +730,7 @@
             ]
           },
           {
-            "tekst": "Odwarem z ziela można nacierać skórę w miejscach występowania dolegliwości reumatycznych.",
+            "tekst": "Można też odwarem nacierać skórę w miejscu dolegliwości reumatycznych.",
             "czesc": "ziele",
             "zrodla": [
               1
@@ -723,7 +740,7 @@
             ]
           },
           {
-            "tekst": "Ziele wykazuje działanie stabilizujące na wątrobę oraz skraca czas rozpuszczania płytek miażdżycowych w naczyniach krwionośnych.",
+            "tekst": "Działa stabilizująco na wątrobę, przyspiesza gojenie się ran i skraca czas rozpuszczania płytek miażdżycowych w naczyniach krwionośnych.",
             "czesc": "ziele",
             "zrodla": [
               1
@@ -733,7 +750,7 @@
             ]
           },
           {
-            "tekst": "Ziele stosuje się wewnętrznie w leczeniu reumatyzmu, artretyzmu, nieprawidłowej przemianie materii, schorzeniach skórnych, hemoroidach, niedomaganiach serca, chorobach nerek, zaparciach, nadciśnieniu, kaszlu, chrypce, szkorbucie oraz przy stanach zapalnych.",
+            "tekst": "Wewnętrznie wyciągi wodne stosuje się przy reumatyzmie i artretyzmie, nieprawidłowej przemianie materii, schorzeniach skórnych, hemoroidach, niedomaganiach serca, chorobach nerek, zaparciach, nadciśnieniu, kaszlu, chrypce, szkorbucie oraz przy stanach zapalnych.",
             "czesc": "ziele",
             "zrodla": [
               1
@@ -743,7 +760,7 @@
             ]
           },
           {
-            "tekst": "Zewnętrznie stosuje się ziele do okładania ran i łagodzenia swędzenia skóry.",
+            "tekst": "Zewnętrznie przy schorzeniach skórnych, na okładanie ran (przyspiesza ich gojenie). Stosuje się w postaci świeżych, zmiażdżonych roślin przyłożonych na skórę. Kąpiel w wodzie z dodatkiem naparu z gwiazdnicy pospolitej łagodzi swędzenie i podrażnienie skóry.",
             "czesc": "ziele",
             "zrodla": [
               1
@@ -753,7 +770,7 @@
             ]
           },
           {
-            "tekst": "Ziele stosuje się do produkcji preparatów do pielęgnacji cery.",
+            "tekst": "Wykorzystywana jest do produkcji preparatów do pielęgnacji cery. Na skórę wykazuje działanie łagodzące i nawilżające.",
             "czesc": "ziele",
             "zrodla": [
               1
@@ -763,7 +780,7 @@
             ]
           },
           {
-            "tekst": "Ziele wykazuje działanie odtruwające, przeciwkrwotoczne, przeciwnowotworowe, moczopędne, przeciwreumatyczne, ściągające, wykrztuśne, wiatropędne i przeczyszczające.",
+            "tekst": "Działa stabilizująco na wątrobę, przyspiesza gojenie się ran i skraca czas rozpuszczania płytek miażdżycowych w naczyniach krwionośnych. Wykazuje również działanie odtruwające, przeciwkrwotoczne, przeciwnowotworowe, moczopędne, przeciwreumatyczne, ściągające, wykrztuśne, wiatropędne i przeczyszczają",
             "czesc": "ziele",
             "zrodla": [
               1
@@ -773,7 +790,7 @@
             ]
           },
           {
-            "tekst": "Ziele stosuje się w leczeniu hemoroidów i zaparć.",
+            "tekst": "Wewnętrznie wyciągi wodne stosuje się przy reumatyzmie i artretyzmie, nieprawidłowej przemianie materii, schorzeniach skórnych, hemoroidach, niedomaganiach serca, chorobach nerek, zaparciach, nadciśnieniu, kaszlu, chrypce, szkorbucie oraz przy stanach zapalnych.",
             "czesc": "ziele",
             "zrodla": [
               1
@@ -783,7 +800,7 @@
             ]
           },
           {
-            "tekst": "Ziele stosuje się w leczeniu kaszlu i chrypki.",
+            "tekst": "Wewnętrznie wyciągi wodne stosuje się przy reumatyzmie i artretyzmie, nieprawidłowej przemianie materii, schorzeniach skórnych, hemoroidach, niedomaganiach serca, chorobach nerek, zaparciach, nadciśnieniu, kaszlu, chrypce, szkorbucie oraz przy stanach zapalnych.",
             "czesc": "ziele",
             "zrodla": [
               1
@@ -793,7 +810,7 @@
             ]
           },
           {
-            "tekst": "Wyciągi wodne z zielę stosowane są wewnętrznie między innymi na kaszel i chrypkę, a także wspomagająco przy szkorbucie.",
+            "tekst": "Wewnętrznie wyciągi wodne stosuje się przy reumatyzmie i artretyzmie, nieprawidłowej przemianie materii, schorzeniach skórnych, hemoroidach, niedomaganiach serca, chorobach nerek, zaparciach, nadciśnieniu, kaszlu, chrypce, szkorbucie oraz przy stanach zapalnych.",
             "czesc": "ziele",
             "zrodla": [
               1
@@ -803,7 +820,7 @@
             ]
           },
           {
-            "tekst": "Roślina wykazuje działanie stabilizujące na wątrobę, ponadto ma właściwości odtruwające, przeciwkrwotoczne oraz przeciwnowotworowe.",
+            "tekst": "Działa stabilizująco na wątrobę, przyspiesza gojenie się ran i skraca czas rozpuszczania płytek miażdżycowych w naczyniach krwionośnych. Wykazuje również działanie odtruwające, przeciwkrwotoczne, przeciwnowotworowe, moczopędne, przeciwreumatyczne, ściągające, wykrztuśne, wiatropędne i przeczyszczają",
             "czesc": "ziele",
             "zrodla": [
               1
@@ -813,7 +830,7 @@
             ]
           },
           {
-            "tekst": "Ziele gwiazdnicy pospolitej stanowi jeden ze składników preparatów odchudzających.",
+            "tekst": "Jest jednym ze składników preparatów odchudzających.",
             "czesc": "ziele",
             "zrodla": [
               1
@@ -823,7 +840,7 @@
             ]
           },
           {
-            "tekst": "Oprócz okładów i kąpieli, do nacierania skóry w miejscach reumatycznych używa się odwaru z rośliny.",
+            "tekst": "Można też odwarem nacierać skórę w miejscu dolegliwości reumatycznych.",
             "czesc": "ziele",
             "zrodla": [
               1
@@ -833,7 +850,7 @@
             ]
           },
           {
-            "tekst": "W medycynie ludowej ziele stosuje się przy chorobach dróg oddechowych, a także pomocniczo w stanach zapalnych, bólach, skurczach, dolegliwościach wątroby, gośćcu i chorobach pęcherza moczowego.",
+            "tekst": "W medycynie ludowej stosuje się ją w leczeniu chorób układu oddechowego; ponadto uważa się, że pomaga ona w stanach zapalnych, bólach, skurczach, dolegliwościach wątroby, reumatyzmie i chorobach pęcherza moczowego",
             "czesc": "ziele",
             "zrodla": [
               2
@@ -843,7 +860,7 @@
             ]
           },
           {
-            "tekst": "W medycynie ludowej ziele stosuje się ogólnie do oczyszczania i wzmacniania całego organizmu.",
+            "tekst": "W medycynie ludowej… uważa się, że pomaga ona w stanach zapalnych, bólach, skurczach, dolegliwościach wątroby, reumatyzmie i schorzeniach pęcherza moczowego, a także ogólnie przyczynia się do oczyszczenia i wzmocnienia całego organizmu.",
             "czesc": "ziele",
             "zrodla": [
               2
@@ -891,7 +908,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "W przeszłości z ziela gwiazdnicy pospolitej pozyskiwano szary barwnik.",
+            "tekst": "Dawniej z ziela otrzymywano szary barwnik.",
             "czesc": "ziele",
             "zrodla": [
               1
@@ -901,7 +918,7 @@
             ]
           },
           {
-            "tekst": "W dawnych czasach z zielonej masy rośliny pozyskiwano szary barwnik.",
+            "tekst": "Dawniej z ziela otrzymywano szary barwnik.",
             "czesc": "ziele",
             "zrodla": [
               1
@@ -919,7 +936,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Roślina wykazuje działanie łagodzące i nawilżające na skórę, dlatego jest wykorzystywana do produkcji preparatów do pielęgnacji cery.",
+            "tekst": "Wykorzystywana jest do produkcji preparatów do pielęgnacji cery. Na skórę wykazuje działanie łagodzące i nawilżające.",
             "czesc": null,
             "zrodla": [
               1
@@ -957,7 +974,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Dawniej roślina wykorzystywana była jako wartościowa pasza dla młodych kurcząt i indyków.",
+            "tekst": "Roślina używana była dawniej jako dobra pasza dla kurcząt i indyków.",
             "czesc": null,
             "zrodla": [
               1
@@ -967,7 +984,7 @@
             ]
           },
           {
-            "tekst": "Epitet gatunkowy „media” w łacińskiej nazwie naukowej gwiazdnicy pospolitej oznacza „pośrednia” lub „środkowa”.",
+            "tekst": "Przedrostek „media” oznacza „pośrodku”.",
             "czesc": null,
             "zrodla": [
               5
@@ -985,7 +1002,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Smak rośliny przypomina młody, surowy kukurydziany kolb, a zaledwie 50 gramów sałatki z tego ziela pokrywa dzienne zapotrzebowanie dorosłego człowieka na witaminę C.",
+            "tekst": "Ich smak przypomina młodą, surową kukurydzę. Już 50 gramów sałatki z gwiazdnicy pokrywa w przybliżeniu dzienne zapotrzebowanie osoby dorosłej na witaminę C.",
             "czesc": null,
             "zrodla": [
               2
@@ -995,7 +1012,7 @@
             ]
           },
           {
-            "tekst": "W Japonii liście gwiazdnicy są jednym z siedmiu ziół spożywanych w siódmym dniu Nowego Roku i służą do przygotowania zupy ryżowej zwanej hakobe.",
+            "tekst": "W Japonii często na wiosnę z gwiazdnicy z ryżem robi się zupę ryżową zwaną hakobe. Liście gwiazdnicy są jednym z siedmiu ziół (haru no nanakusa) spożywanych w siódmym dniu Nowego Roku",
             "czesc": "liście",
             "zrodla": [
               1
@@ -1005,7 +1022,7 @@
             ]
           },
           {
-            "tekst": "W przeszłości zbierano nasiona rośliny i dodawano je do zup, jednak ze względu na bardzo drobne rozmiary wymagało to dużej determinacji.",
+            "tekst": "Dawniej zbierano nawet jej nasiona i dodawano je do zup, jednak ze względu na drobne rozmiary jest to zajęcie tylko dla bardzo zdeterminowanych.",
             "czesc": "nasiona",
             "zrodla": [
               1
@@ -1033,7 +1050,7 @@
             ]
           },
           {
-            "tekst": "W prowincji Hubei, w regionie Badong, roślina znana jest regionalnie pod ludową nazwą e'er shenjin.",
+            "tekst": "Gęsie ucho (Badong, prowincja Hubei)",
             "czesc": null,
             "zrodla": [
               5
@@ -1043,7 +1060,7 @@
             ]
           },
           {
-            "tekst": "W tradycji chińskiej gwiazdnica pospolita posiada barwne nazwy ludowe, takie jak „warzywo z gęsich jelit” (odnotowane w klasycznym dziele Bencao Gangmu), „rozciągacz gęsich ścięgien” czy „kurze jelito”.",
+            "tekst": "„Gęsie jelita” (Ben Cao Gang Mu) „Gęsie ucho rozciągające ścięgna” (Badong, prowincja Hubei) „Kurze jelita” (Jiangsu) „Gęsie jelita” (Syczuan)",
             "czesc": null,
             "zrodla": [
               5
@@ -1053,7 +1070,7 @@
             ]
           },
           {
-            "tekst": "W chińskich nazwach ludowych roślina znana jest jako „鹅肠菜”, „鹅耳伸筋”, „鸡儿肠” i „鹅儿肠”.",
+            "tekst": "„Gęsie jelita” (Ben Cao Gang Mu) „Gęsie ucho rozciągające ścięgna” (Badong, prowincja Hubei) „Kurze jelita” (Jiangsu) „Gęsie jelita” (Syczuan)",
             "czesc": null,
             "zrodla": [
               5
@@ -1071,7 +1088,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Na polach uprawnych roślina jest chwastem, który największe szkody wyrządza młodym siewkom uprawianym przez siew, rozwijając się od nich szybciej i je zagłusząjąc.",
+            "tekst": "Największe szkody wyrządza młodym siewkom roślin uprawianych przez siew, rozwija się bowiem szybciej od nich i zagłusza je.",
             "czesc": null,
             "zrodla": [
               1
@@ -1081,7 +1098,7 @@
             ]
           },
           {
-            "tekst": "Ze względu na zawartość saponin nie należy spożywać zbyt dużych ilości tej rośliny.",
+            "tekst": "Ze względu na zawartość saponin nie należy jednak spożywać ich w zbyt dużych ilościach.",
             "czesc": null,
             "zrodla": [
               2
@@ -1091,7 +1108,7 @@
             ]
           },
           {
-            "tekst": "W uprawach roślina może stanowić wektor dla mszyc przenoszących wirusa mozaiki ogórka.",
+            "tekst": "Jest ona nosicielem mszyc (Myzus persicae i Aphis fabae), które mogą przenosić wirusa mozaiki ogórka.",
             "czesc": null,
             "zrodla": [
               2
@@ -1101,7 +1118,7 @@
             ]
           },
           {
-            "tekst": "Roślina zawiera saponiny, które mogą być toksyczne dla niektórych gatunków, zwłaszcza ryb, choć niewielkie ilości nie wpłyną negatywnie na większość zwierząt lądowych; nie zaleca się jej spożywania w okresie ciąży i karmienia piersią.",
+            "tekst": "Gwiazdnica pospolita zawiera substancje roślinne zwane saponinami, które mogą być toksyczne dla niektórych gatunków (zwłaszcza ryb). Jest mało prawdopodobne, aby miało to wpływ na większość zwierząt lądowych, ponieważ ilości tych substancji nie są duże. Nie zaleca się jednak jej stosowania w okresie ciąży lub karmienia piersią.",
             "czesc": null,
             "zrodla": [
               3
@@ -1111,7 +1128,7 @@
             ]
           },
           {
-            "tekst": "W uprawach roślina ta bywa uciążliwym chwastem, który może ograniczyć plony jęczmienia nawet o 80%.",
+            "tekst": "Jednak na polach uprawnych jest traktowany jako chwast utrudniający wzrost innych zbóż i uważa się, że może spowodować spadek plonów jęczmienia nawet o 80%.",
             "czesc": null,
             "zrodla": [
               4
@@ -1121,7 +1138,7 @@
             ]
           },
           {
-            "tekst": "Na polach uprawnych roślina ta bywa uciążliwym chwastem, który może ograniczyć wzrost innych zbóż, w tym zmniejszyć plony jęczmienia nawet o 80%.",
+            "tekst": "Na polach uprawnych jest traktowany jako chwast utrudniający wzrost innych zbóż i uważa się, że może spowodować spadek plonów jęczmienia nawet o 80%.",
             "czesc": null,
             "zrodla": [
               4
@@ -1131,10 +1148,10 @@
             ]
           },
           {
-            "tekst": "Spożywanie i stosowanie gwiazdnicy jest przeciwwskazane dla kobiet w ciąży, dzieci, osób z niedociśnieniem oraz osób skłonnych do reakcji alergicznych.",
+            "tekst": "Gwiazdnica średnia jest przeciwwskazana dla kobiet w ciąży i dzieci, osób z niedociśnieniem, a także osób podatnych na reakcje alergiczne.",
             "czesc": null,
             "zrodla": [
-              8
+              9
             ],
             "fakty": [
               "s594"
@@ -1149,7 +1166,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Roślina preferuje gleby wilgotne, żyzne i zasobne w azot, a występuje m.in. na polach uprawnych, nieużytkach i przydrożach.",
+            "tekst": "Roślina azotolubna. Preferuje wilgotne, żyzne i przenawożone azotem gleby, ale rośnie na różnych glebach. Na polach uprawnych jest chwastem, szczególnie w uprawach roślin ozimych, rzepaku, buraków, roślin strączkowych, kukurydzy i ziemniaków.",
             "czesc": null,
             "zrodla": [
               1
@@ -1159,7 +1176,7 @@
             ]
           },
           {
-            "tekst": "Nasiona gatunku kiełkują już przy temperaturze 2 °C, a optymalna temperatura dla tego procesu wynosi 13–20 °C.",
+            "tekst": "Kiełkują już przy temperaturze 2 °C, temperatura optymalna wynosi 13–20 °C.",
             "czesc": null,
             "zrodla": [
               1
@@ -1169,7 +1186,7 @@
             ]
           },
           {
-            "tekst": "Roślina może rozmnażać się wegetatywnie, ponieważ jej łodygi łatwo ukorzeniają się w węzłach.",
+            "tekst": "Rozmnaża się przez nasiona, ale również wegetatywnie, jej łodygi bowiem łatwo ukorzeniają się w węzłach.",
             "czesc": null,
             "zrodla": [
               1
@@ -1179,7 +1196,7 @@
             ]
           },
           {
-            "tekst": "Gwiazdnica pospolita rozprzestrzenia się zarówno przez nasiona, jak i wegetatywnie, ponieważ jej łodygi łatwo ukorzeniają się w miejscach stycznych z podłożem tzw. węzłach.",
+            "tekst": "Rozmnaża się przez nasiona, ale również wegetatywnie, jej łodygi bowiem łatwo ukorzeniają się w węzłach.",
             "czesc": null,
             "zrodla": [
               1
@@ -1189,7 +1206,7 @@
             ]
           },
           {
-            "tekst": "Roślina może być podawana jako dodatek do świeżej paszy dla ptaków ozdobnych i gryzoni.",
+            "tekst": "Można je również stosować jako dodatek do świeżej karmy dla ptaków ozdobnych i gryzoni.",
             "czesc": null,
             "zrodla": [
               2
@@ -1199,7 +1216,7 @@
             ]
           },
           {
-            "tekst": "Dzięki obfitemu wytwarzaniu nasion oraz zdolności do szybkiego ukorzeniania się oderwanych fragmentów łodyg roślina bardzo łatwo się rozprzestrzenia.",
+            "tekst": "Ze względu na intensywne rozmnażanie się i wczesne tworzenie nasion jest ona jednak często uważana za szczególnie uciążliwy „chwast”. Możliwe jest również rozmnażanie wegetatywne poprzez odłamane fragmenty łodyg, które się ukorzeniają.",
             "czesc": null,
             "zrodla": [
               2
@@ -1209,7 +1226,7 @@
             ]
           },
           {
-            "tekst": "Roślina jest podatna na mączniaka rzekomego wywoływanego przez zoosporofory gatunku Peronospora alsinearum.",
+            "tekst": "Jest podatna na mączniaka rzekomego wywoływanego przez gatunek oomycety Peronospora alsinearum.",
             "czesc": null,
             "zrodla": [
               3
@@ -1219,7 +1236,7 @@
             ]
           },
           {
-            "tekst": "Czasem uprawiany jako roślina sałatowa lub jako pasza dla drobiu.",
+            "tekst": "Czasami uprawia się ją jako warzywo sałatkowe lub jako pokarm dla drobiu.",
             "czesc": null,
             "zrodla": [
               3
@@ -1229,7 +1246,7 @@
             ]
           },
           {
-            "tekst": "Nasiona gwiazdnicy pospolitej są zdolne do kiełkowania już przy temperaturze od +2 do +4°C, a ich żywotność w glebie utrzymuje się do 5 lat.",
+            "tekst": "✔️ Rozmnażanie – nasionami, które są zdolne do kiełkowania już w temperaturze +2…+4°C i zachowują żywotność do 5 lat.",
             "czesc": "nasiona",
             "zrodla": [
               6
@@ -1247,7 +1264,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Nasiona gwiazdnicy pospolitej zachowują zdolność kiełkowania od 6 do 68 lat i mogą bez uszczerbku przechodzić przez przewód pokarmowy zwierząt.",
+            "tekst": "Zachowują zdolność kiełkowania od 6 do 68 lat. Rozsiewane są przez wiatr, ale także przez zwierzęta – bez utraty zdolności kiełkowania przechodzą bowiem przez ich przewód pokarmowy (endochoria).",
             "czesc": null,
             "zrodla": [
               1
@@ -1257,7 +1274,7 @@
             ]
           },
           {
-            "tekst": "W Japonii rytuał spożywania siedmiu ziół wiosennych (haru no nanakusa), w których wchodzi gwiazdnica, dawniej wypadał w siódmy dzień pierwszego miesiąca według chińskiego kalendarza księżycowego.",
+            "tekst": "Liście gwiazdnicy są jednym z siedmiu ziół (haru no nanakusa) spożywanych w siódmym dniu Nowego Roku (dawniej w chińskim kalendarzu księżycowym był to siódmy dzień pierwszego miesiąca).",
             "czesc": null,
             "zrodla": [
               1
@@ -1267,7 +1284,7 @@
             ]
           },
           {
-            "tekst": "Linia włosków na łodydze pomaga roślinie w gospodarce wodnej, kierując krople rosy do najbliższej pary liści lub w dół łodygi.",
+            "tekst": "Linia włosków na łodydze, będąca charakterystyczną cechą rozpoznawczą, wspomaga roślinę w zaopatrzeniu w wodę. Krople rosy spływają wzdłuż tej linii do najbliższej pary liści, gdzie w razie potrzeby pobierana jest niewielka ilość wody.",
             "czesc": null,
             "zrodla": [
               2
@@ -1277,7 +1294,7 @@
             ]
           },
           {
-            "tekst": "W uprawach takich jak winnice i ogrody roślina chroni glebę przed wysuszeniem latem i mrozem zimą oraz ogranicza erozję, pełniąc pożyteczną rolę.",
+            "tekst": "nie należy jednak lekceważyć ich korzyści, zwłaszcza w takich uprawach jak winnice i ogrody, ponieważ gęste, płaskie i sięgające nawet 40 centymetrów długości rozłogi chronią glebę latem przed wysychaniem, a zimą przed bezpośrednim działaniem mrozu oraz ogólnie ograniczają erozję.",
             "czesc": null,
             "zrodla": [
               2
@@ -1287,7 +1304,7 @@
             ]
           },
           {
-            "tekst": "Po uwolnieniu z kapselfrucztek nasiona są dalej rozsiewane przez mrówki, które przyciągają zawarte na nich wyrosłe tkanki.",
+            "tekst": "Mrówki roznoszą nasiona z brodawkami po ich rozsypaniu.",
             "czesc": null,
             "zrodla": [
               2
@@ -1297,7 +1314,7 @@
             ]
           },
           {
-            "tekst": "Gatunki owadów z rzędu motyli, takie jak Haematopis grataria czy Camptogramma bilineata, wykorzystują liście gwiazdnicy jako pokarm dla swoich larw.",
+            "tekst": "Larwy następujących gatunków motyli żywią się gwiazdnicą: ćma z rodziny geometerów (Haematopis grataria), żółtka (Camptogramma bilineata)...",
             "czesc": null,
             "zrodla": [
               3
@@ -1307,7 +1324,7 @@
             ]
           },
           {
-            "tekst": "Roślina jest jadalna i odżywcza, regularnie stosowana jako warzywo liściowe, często na surowo w sałatkach.",
+            "tekst": "Stellaria media jest jadalna i odżywcza; wykorzystuje się ją jako warzywo liściaste, często na surowo w sałatkach.",
             "czesc": null,
             "zrodla": [
               3
@@ -1317,7 +1334,7 @@
             ]
           },
           {
-            "tekst": "Niektóre odmiany lub blisko spokrewnione gatunki mogą być zbyt włókniste, by nadawały się do jedzenia.",
+            "tekst": "Niektóre odmiany lub podobne gatunki mogą być zbyt włókniste, by je spożywać.",
             "czesc": null,
             "zrodla": [
               3
@@ -1337,7 +1354,7 @@
             ]
           },
           {
-            "tekst": "Nasadka nasion zawiera proantonocyjany.",
+            "tekst": "Proantocyjanidyny występują w osłonce nasion.",
             "czesc": null,
             "zrodla": [
               3
@@ -1347,7 +1364,7 @@
             ]
           },
           {
-            "tekst": "Wykazano obecność triterpenowych saponin typu uwodornionej kwasu oleanolowego.",
+            "tekst": "Roślina ta zawiera również saponiny triterpenoidowe z grupy hydroksylowanych kwasów oleanolowych.",
             "czesc": null,
             "zrodla": [
               3
@@ -1357,7 +1374,7 @@
             ]
           },
           {
-            "tekst": "Gwiazdnica pospolita jest podatna na rdzę (downy mildew) wywoływaną przez oomicete Peronospora alsinearum.",
+            "tekst": "Jest podatna na mączniaka rzekomego wywoływanego przez gatunek oomycety Peronospora alsinearum.",
             "czesc": null,
             "zrodla": [
               3
@@ -1367,7 +1384,7 @@
             ]
           },
           {
-            "tekst": "W kontekście różnorodności biologicznej w ogrodzie gwiazdnicę pospolitą traktuje się nie jako chwast, ale jako roślinę jadalną (dziką sałatę) oraz wskaźnik gleby bogatej w azot.",
+            "tekst": "Gwiazdnica średnia (Stellaria media) | tak, rośnie aż do zapełnienia grządki | jadalna (sałata polna), roślina wskaźnikowa dla gleby bogatej w azot",
             "czesc": null,
             "zrodla": [
               7
@@ -1377,7 +1394,7 @@
             ]
           },
           {
-            "tekst": "Roślina może się rozrastać wegetatywnie przez ukorzenienie się odpadających fragmentów łodygi.",
+            "tekst": "Możliwe jest również rozmnażanie wegetatywne poprzez odłamane fragmenty łodyg, które się ukorzeniają.",
             "czesc": "korzeń",
             "zrodla": [
               2
@@ -1387,7 +1404,7 @@
             ]
           },
           {
-            "tekst": "Nektar wydzielany jest u nasady pręcików wyłącznie podczas słonecznej pogody, co przyciąga nieliczne owady błonkoskrzydłe, muchówki i wciornastki.",
+            "tekst": "Nektar wydzielany jest u podstawy pręcików, i to wyłącznie przy słonecznej pogodzie. Odwiedziny owadów są rzadkie. Jako zapylacze występują błonkówki, dwuskrzydłe i frędzlowoskrzydłe (Thysanoptera).",
             "czesc": "kwiaty",
             "zrodla": [
               2
@@ -1397,7 +1414,7 @@
             ]
           },
           {
-            "tekst": "Kwiaty wydzielają nektar u nasady pręcików wyłącznie w słoneczne dni, a głównym sposobem zapylania jest samopylność.",
+            "tekst": "Nektar jest wydzielany u podstawy pręcików, i to wyłącznie przy słonecznej pogodzie... Ponieważ kwiaty są obupłciowe, zazwyczaj dochodzi do samozapylenia",
             "czesc": "kwiaty",
             "zrodla": [
               2
@@ -1407,7 +1424,7 @@
             ]
           },
           {
-            "tekst": "Dojrzałe nasiona są początkowo wyrzucane z torebek przez samą roślinę, a następnie dalej rozprzestrzeniane przez mrówki.",
+            "tekst": "Owoce są to dmuchawki, które rozrzucają nasiona w sposób samorozsiewczy. Mrówki roznoszą te brodawkowate nasiona po ich rozrzuceniu.",
             "czesc": "nasiona",
             "zrodla": [
               2
@@ -1417,7 +1434,7 @@
             ]
           },
           {
-            "tekst": "Nasiona są szarobrunatne lub popielate, kuliste bądź nerkowate, o matowej powierzchni ozdobionej czterema rzędami brodawek.",
+            "tekst": "szarobrunatne lub popielate, kuliste lub nerkowate, matowe nasiona. Mają pomarszczoną powierzchnię z 4 rzędami brodawek.",
             "czesc": "owoce",
             "zrodla": [
               1
@@ -1521,7 +1538,7 @@
         "id": "s358",
         "sekcja": "opis",
         "czesc": null,
-        "tekst": "Gwiazdnica pospolita to drobna i delikatna roślina tworząca łany, z rozesłanymi lub wzniesionymi łodygami o długości od 3 do 40 cm.",
+        "tekst": "Roślina tworząca łany, drobna i delikatna. Łodyga Rozesłane, podnoszące się lub wzniesione, długie na 3–40 cm, obłe, z pojedynczym szeregiem włosków.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -1533,7 +1550,7 @@
         "id": "s359",
         "sekcja": "wystepowanie",
         "czesc": null,
-        "tekst": "Jest gatunkiem kosmopolitycznym występującym na całym świecie, na półkuli południowej sięgającym po wyspy wokół Antarktydy, a na północnej po Svalbard.",
+        "tekst": "Gatunek kosmopolityczny występujący na całym świecie. Na półkuli południowej sięga po wyspy wokół Antarktydy, na półkuli północnej po archipelag Svalbard (około 78° szerokości geograficznej).",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -1545,7 +1562,7 @@
         "id": "s360",
         "sekcja": "czesci_rosliny",
         "czesc": "ziele",
-        "tekst": "Surowcem zielarskim jest świeże ziele, które ze względu na całoroczny wzrost przeważnie nie wymaga suszenia i może być zbierane do czasu zawiązywania nasion.",
+        "tekst": "Surowiec zielarski Ziele Herba Stellariae mediae. [...] Ponieważ rośnie przez cały rok, przeważnie nie ma potrzeby jej suszenia. Zbiera się świeże ziele.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -1557,7 +1574,7 @@
         "id": "s361",
         "sekcja": "sklad",
         "czesc": "ziele",
-        "tekst": "Ziele zawiera saponiny, witaminy C, E, PP, B1, B2, flawonoid rutynę, kwas paraaminobenzoesowy, kwas gamma-linolenowy oraz liczne sole mineralne.",
+        "tekst": "Zawiera saponiny, witaminy C, E, PP, B1, B2, flawonoid rutynę, kwas paraaminobenzoesowy, Kwas γ-linolenowy, sole mineralne (potas, fosfor, wapń, żelazo, magnez, sód, selen, jod, krzem).",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -1569,7 +1586,7 @@
         "id": "s362",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": "ziele",
-        "tekst": "Zewnętrznie wyciągi ze świeżej rośliny stosuje się do okładania ran w celu przyspieszenia gojenia oraz w schorzeniach skórnych, natomiast kąpiele z dodatkiem naparu łagodzą swędzenie.",
+        "tekst": "Zewnętrznie przy schorzeniach skórnych, na okładanie ran (przyspiesza ich gojenie). Stosuje się w postaci świeżych, zmiażdżonych roślin przyłożonych na skórę. Kąpiel w wodzie z dodatkiem naparu z gwiazdnicy pospolitej łagodzi swędzenie i podrażnienie skóry.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -1581,7 +1598,7 @@
         "id": "s363",
         "sekcja": "kosmetyka",
         "czesc": null,
-        "tekst": "Roślina wykazuje działanie łagodzące i nawilżające na skórę, dlatego jest wykorzystywana do produkcji preparatów do pielęgnacji cery.",
+        "tekst": "Wykorzystywana jest do produkcji preparatów do pielęgnacji cery. Na skórę wykazuje działanie łagodzące i nawilżające.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -1593,7 +1610,7 @@
         "id": "s364",
         "sekcja": "barwienie",
         "czesc": "ziele",
-        "tekst": "W przeszłości z ziela gwiazdnicy pospolitej pozyskiwano szary barwnik.",
+        "tekst": "Dawniej z ziela otrzymywano szary barwnik.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -1605,7 +1622,7 @@
         "id": "s365",
         "sekcja": "kultura",
         "czesc": "liście",
-        "tekst": "W Japonii liście gwiazdnicy są jednym z siedmiu ziół spożywanych w siódmym dniu Nowego Roku i służą do przygotowania zupy ryżowej zwanej hakobe.",
+        "tekst": "W Japonii często na wiosnę z gwiazdnicy z ryżem robi się zupę ryżową zwaną hakobe. Liście gwiazdnicy są jednym z siedmiu ziół (haru no nanakusa) spożywanych w siódmym dniu Nowego Roku",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -1617,7 +1634,7 @@
         "id": "s366",
         "sekcja": "ciekawostki",
         "czesc": null,
-        "tekst": "Nasiona gwiazdnicy pospolitej zachowują zdolność kiełkowania od 6 do 68 lat i mogą bez uszczerbku przechodzić przez przewód pokarmowy zwierząt.",
+        "tekst": "Zachowują zdolność kiełkowania od 6 do 68 lat. Rozsiewane są przez wiatr, ale także przez zwierzęta – bez utraty zdolności kiełkowania przechodzą bowiem przez ich przewód pokarmowy (endochoria).",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -1629,7 +1646,7 @@
         "id": "s367",
         "sekcja": "opis",
         "czesc": "liście",
-        "tekst": "Liście gwiazdnicy pospolitej są proste, zielone i owalne, mierzą od 6 do 25 mm długości oraz od 3 do 10 mm szerokości i posiadają charakterystyczny hydathod na wierzchołku, co powoduje wydzielanie kropli wody.",
+        "tekst": "Liście są zielone, nagie, owalne i przeciwległe, o długości od 6 do 25 mm (od 1⁄4 do 1 cala) i szerokości od 3 do 10 mm (od 1⁄8 do 3⁄8 cala), z hydatodą na końcu.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Stellaria media",
@@ -1641,7 +1658,7 @@
         "id": "s368",
         "sekcja": "opis",
         "czesc": "kwiaty",
-        "tekst": "Kwiaty mają białe, dwudzielne płatków, które są znacznie krótsze kielichokwiatów (dł. 1–3 mm vs 3–5 mm), a liczba pręcików zwykle wynosi 3, choć może sięgać do 8.",
+        "tekst": "Często występują tylko 3 pręciki, ale czasami jest ich więcej (do 8) oraz 3 słupki. Kwiaty są małe, o średnicy mniejszej niż 1 cm, z 5 rozszczepionymi białymi płatkami o długości 1–3 mm, schowanymi wewnątrz większych (o długości 3–5 mm) działek kielicha.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Stellaria media",
@@ -1653,7 +1670,7 @@
         "id": "s369",
         "sekcja": "bezpieczenstwo",
         "czesc": null,
-        "tekst": "Roślina zawiera saponiny, które mogą być toksyczne dla niektórych gatunków, zwłaszcza ryb, choć niewielkie ilości nie wpłyną negatywnie na większość zwierząt lądowych; nie zaleca się jej spożywania w okresie ciąży i karmienia piersią.",
+        "tekst": "Gwiazdnica pospolita zawiera substancje roślinne zwane saponinami, które mogą być toksyczne dla niektórych gatunków (zwłaszcza ryb). Jest mało prawdopodobne, aby miało to wpływ na większość zwierząt lądowych, ponieważ ilości tych substancji nie są duże. Nie zaleca się jednak jej stosowania w okresie ciąży lub karmienia piersią.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Stellaria media",
@@ -1677,7 +1694,7 @@
         "id": "s372",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": null,
-        "tekst": "Ainu wykorzystywali łodygi gwiazdnicy pospolitej do leczenia siniaków i bólów kości, namaczając je wcześniej w gorącej wodzie przed nałożeniem zewnętrznie na bolące miejsca.",
+        "tekst": "Roślina ta była stosowana przez Ajnów w leczeniu siniaków i bólu kości. Łodygi moczono w gorącej wodzie, a następnie nakładano je zewnętrznie na dotknięte obszary.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Stellaria media",
@@ -1689,7 +1706,7 @@
         "id": "s373",
         "sekcja": "ciekawostki",
         "czesc": null,
-        "tekst": "Gatunki owadów z rzędu motyli, takie jak Haematopis grataria czy Camptogramma bilineata, wykorzystują liście gwiazdnicy jako pokarm dla swoich larw.",
+        "tekst": "Larwy następujących gatunków motyli żywią się gwiazdnicą: ćma z rodziny geometerów (Haematopis grataria), żółtka (Camptogramma bilineata)...",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Stellaria media",
@@ -1701,7 +1718,7 @@
         "id": "s374",
         "sekcja": "uprawa",
         "czesc": null,
-        "tekst": "Roślina jest podatna na mączniaka rzekomego wywoływanego przez zoosporofory gatunku Peronospora alsinearum.",
+        "tekst": "Jest podatna na mączniaka rzekomego wywoływanego przez gatunek oomycety Peronospora alsinearum.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Stellaria media",
@@ -1713,7 +1730,7 @@
         "id": "s377",
         "sekcja": "sklad",
         "czesc": "ziele",
-        "tekst": "Roślina zawiera dwukrotnie więcej wapnia, trzykrotnie więcej potasu i magnezu oraz siedmiokrotnie więcej żelaza niż sałata masłowa.",
+        "tekst": "Gwiazdnica zawiera dwa razy więcej wapnia, trzy razy więcej potasu i magnezu oraz siedem razy więcej żelaza niż sałata głowiasta.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -1725,7 +1742,7 @@
         "id": "s378",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": "ziele",
-        "tekst": "W medycynie ludowej ziele stosuje się przy chorobach dróg oddechowych, a także pomocniczo w stanach zapalnych, bólach, skurczach, dolegliwościach wątroby, gośćcu i chorobach pęcherza moczowego.",
+        "tekst": "W medycynie ludowej stosuje się ją w leczeniu chorób układu oddechowego; ponadto uważa się, że pomaga ona w stanach zapalnych, bólach, skurczach, dolegliwościach wątroby, reumatyzmie i chorobach pęcherza moczowego",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -1737,7 +1754,7 @@
         "id": "s379",
         "sekcja": "opis",
         "czesc": "liście",
-        "tekst": "Liście i liście zarodkowe wykonują ruchy senne, rozwijając się rano przy suchej pogodzie i zamykając się w warunkach dużej wilgotności.",
+        "tekst": "Liścienie i liście wykonują ruchy senne i przyjmują pozycję dzienną/nocną. Przy suchej pogodzie rozwijają się około dziewiątej rano i kwitną do wieczora. Przy wilgotnej pogodzie kwiaty pozostają zamknięte.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -1761,7 +1778,7 @@
         "id": "s470",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": "ziele",
-        "tekst": "Wyciągi wodne z rośliny stosuje się wewnętrznie w leczeniu reumatyzmu, artretyzmu, nadciśnienia, zaparć oraz dolegliwości ze strony nerek i serca.",
+        "tekst": "Wewnętrznie wyciągi wodne stosuje się przy reumatyzmie i artretyzmie, nieprawidłowej przemianie materii, schorzeniach skórnych, hemoroidach, niedomaganiach serca, chorobach nerek, zaparciach, nadciśnieniu, kaszlu, chrypce, szkorbucie oraz przy stanach zapalnych.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -1773,7 +1790,7 @@
         "id": "s471",
         "sekcja": "kultura",
         "czesc": "nasiona",
-        "tekst": "W przeszłości zbierano nasiona rośliny i dodawano je do zup, jednak ze względu na bardzo drobne rozmiary wymagało to dużej determinacji.",
+        "tekst": "Dawniej zbierano nawet jej nasiona i dodawano je do zup, jednak ze względu na drobne rozmiary jest to zajęcie tylko dla bardzo zdeterminowanych.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -1785,7 +1802,7 @@
         "id": "s472",
         "sekcja": "barwienie",
         "czesc": "ziele",
-        "tekst": "W dawnych czasach z zielonej masy rośliny pozyskiwano szary barwnik.",
+        "tekst": "Dawniej z ziela otrzymywano szary barwnik.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -1797,7 +1814,7 @@
         "id": "s473",
         "sekcja": "uprawa",
         "czesc": null,
-        "tekst": "Roślina preferuje gleby wilgotne, żyzne i zasobne w azot, a występuje m.in. na polach uprawnych, nieużytkach i przydrożach.",
+        "tekst": "Roślina azotolubna. Preferuje wilgotne, żyzne i przenawożone azotem gleby, ale rośnie na różnych glebach. Na polach uprawnych jest chwastem, szczególnie w uprawach roślin ozimych, rzepaku, buraków, roślin strączkowych, kukurydzy i ziemniaków.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -1809,7 +1826,7 @@
         "id": "s474",
         "sekcja": "ciekawostki",
         "czesc": null,
-        "tekst": "Roślina jest jadalna i odżywcza, regularnie stosowana jako warzywo liściowe, często na surowo w sałatkach.",
+        "tekst": "Stellaria media jest jadalna i odżywcza; wykorzystuje się ją jako warzywo liściaste, często na surowo w sałatkach.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Stellaria media",
@@ -1821,7 +1838,7 @@
         "id": "s475",
         "sekcja": "uprawa",
         "czesc": null,
-        "tekst": "Czasem uprawiany jako roślina sałatowa lub jako pasza dla drobiu.",
+        "tekst": "Czasami uprawia się ją jako warzywo sałatkowe lub jako pokarm dla drobiu.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Stellaria media",
@@ -1833,7 +1850,7 @@
         "id": "s476",
         "sekcja": "opis",
         "czesc": null,
-        "tekst": "Łodygi mają średnicę 1 mm i opatrzone są linią prostych włosów biegnących wzdłuż pełnej długości, z naprzemiennym przebiegiem na węzłach.",
+        "tekst": "Łodygi są cylindryczne i nagie, o luźnym i rozłożystym pokroju, osiągają długość do 40 cm (16 cali) i średnicę 1 milimetra (1⁄16 cala); wzdłuż całej długości biegnie wzdłużna linia (bardzo rzadko dwie linie) włosków, które w węzłach przechodzą na drugą stronę.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Stellaria media",
@@ -1845,7 +1862,7 @@
         "id": "s477",
         "sekcja": "opis",
         "czesc": "kwiaty",
-        "tekst": "Na zewnątrz, na stronach distalnych owalnych kielichokwiatów, rosną długie, faliste (mistkowe) włoski.",
+        "tekst": "Te działki kielicha mają długie, faliste (włoskowate) włoski na zewnętrznych (dystalnych) stronach, są owalne i zazwyczaj występują w liczbie 5.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Stellaria media",
@@ -1857,7 +1874,7 @@
         "id": "s478",
         "sekcja": "ciekawostki",
         "czesc": null,
-        "tekst": "Niektóre odmiany lub blisko spokrewnione gatunki mogą być zbyt włókniste, by nadawały się do jedzenia.",
+        "tekst": "Niektóre odmiany lub podobne gatunki mogą być zbyt włókniste, by je spożywać.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Stellaria media",
@@ -1881,7 +1898,7 @@
         "id": "s480",
         "sekcja": "ciekawostki",
         "czesc": null,
-        "tekst": "Nasadka nasion zawiera proantonocyjany.",
+        "tekst": "Proantocyjanidyny występują w osłonce nasion.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Stellaria media",
@@ -1893,7 +1910,7 @@
         "id": "s481",
         "sekcja": "ciekawostki",
         "czesc": null,
-        "tekst": "Wykazano obecność triterpenowych saponin typu uwodornionej kwasu oleanolowego.",
+        "tekst": "Roślina ta zawiera również saponiny triterpenoidowe z grupy hydroksylowanych kwasów oleanolowych.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Stellaria media",
@@ -1905,7 +1922,7 @@
         "id": "s482",
         "sekcja": "ciekawostki",
         "czesc": null,
-        "tekst": "Gwiazdnica pospolita jest podatna na rdzę (downy mildew) wywoływaną przez oomicete Peronospora alsinearum.",
+        "tekst": "Jest podatna na mączniaka rzekomego wywoływanego przez gatunek oomycety Peronospora alsinearum.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Stellaria media",
@@ -1917,7 +1934,7 @@
         "id": "s483",
         "sekcja": "wystepowanie",
         "czesc": null,
-        "tekst": "W Wielkiej Brytanii wartości Ellenberga wskazują na preferencję dobrze nawodnionych i bogatych w azot siedlisk (L=7, N=7) oraz przystosowanie do gleb o umiarkowanej zasobności (F=5) i kwasowości (S=0).",
+        "tekst": "W Wielkiej Brytanii wartości w skali Ellenberga wynoszą: L = 7, F = 5, R = 6, N = 7 i S = 0.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Stellaria media",
@@ -1929,7 +1946,7 @@
         "id": "s484",
         "sekcja": "opis",
         "czesc": null,
-        "tekst": "Dawna nazwa łacińska Morsus gallinae oznacza \"huczy bite\", a polskie oraz niemieckie nazwy nawiązują do tego, że całe rośliny chętnie zjadane są przez ptaki.",
+        "tekst": "Starożytną łacińską nazwą jest Morsus gallinae („ukąszenie kurczaka”). ... Ptaki chętnie zjadają wszystkie części tej rośliny, do czego nawiązuje również jej niemiecka nazwa potoczna.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -1941,7 +1958,7 @@
         "id": "s485",
         "sekcja": "opis",
         "czesc": null,
-        "tekst": "Nazwy związane z jelitami wynikają z pełzających, okrągłych i krętych łodyg lub z tego, że po rozerwaniu łodygi jej wnętrze przypomina białe jelito.",
+        "tekst": "Nazwa „jelito” wywodzi się od pełzających, okrągłych i poskręcanych łodyg lub od tego, że po rozciągnięciu łodygi jej wewnętrzna część wygląda jak białe jelito.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -1953,7 +1970,7 @@
         "id": "s486",
         "sekcja": "sklad",
         "czesc": null,
-        "tekst": "Roślina zawiera w swoim składzie witaminy, saponiny, flawonoidy, kumaryny, minerały, kwas szczawiowy, cynk oraz olejki eteryczne.",
+        "tekst": "Wśród składników wymieniane są witaminy, saponiny, flawonoidy, kumaryny, minerały, kwas szczawiowy, cynk oraz olejki eteryczne.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -1965,7 +1982,7 @@
         "id": "s487",
         "sekcja": "kultura",
         "czesc": null,
-        "tekst": "Smak rośliny przypomina młody, surowy kukurydziany kolb, a zaledwie 50 gramów sałatki z tego ziela pokrywa dzienne zapotrzebowanie dorosłego człowieka na witaminę C.",
+        "tekst": "Ich smak przypomina młodą, surową kukurydzę. Już 50 gramów sałatki z gwiazdnicy pokrywa w przybliżeniu dzienne zapotrzebowanie osoby dorosłej na witaminę C.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -1977,7 +1994,7 @@
         "id": "s488",
         "sekcja": "bezpieczenstwo",
         "czesc": null,
-        "tekst": "Ze względu na zawartość saponin nie należy spożywać zbyt dużych ilości tej rośliny.",
+        "tekst": "Ze względu na zawartość saponin nie należy jednak spożywać ich w zbyt dużych ilościach.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -1989,7 +2006,7 @@
         "id": "s489",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": null,
-        "tekst": "W naturopatii ekstrakt ze świeżej rośliny wykorzystuje się w leczeniu reumatyzmu i bólów stawów, a napar stosuje się zarówno zewnętrznie, jak i wewnętrznie.",
+        "tekst": "Wyciąg ze świeżej rośliny stosuje się więc w leczeniu reumatyzmu i bólów stawów. W postaci herbaty znajduje zastosowanie zarówno do użytku zewnętrznego, jak i wewnętrznego.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -2001,7 +2018,7 @@
         "id": "s490",
         "sekcja": "uprawa",
         "czesc": null,
-        "tekst": "Roślina może być podawana jako dodatek do świeżej paszy dla ptaków ozdobnych i gryzoni.",
+        "tekst": "Można je również stosować jako dodatek do świeżej karmy dla ptaków ozdobnych i gryzoni.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -2013,7 +2030,7 @@
         "id": "s491",
         "sekcja": "ciekawostki",
         "czesc": null,
-        "tekst": "Linia włosków na łodydze pomaga roślinie w gospodarce wodnej, kierując krople rosy do najbliższej pary liści lub w dół łodygi.",
+        "tekst": "Linia włosków na łodydze, będąca charakterystyczną cechą rozpoznawczą, wspomaga roślinę w zaopatrzeniu w wodę. Krople rosy spływają wzdłuż tej linii do najbliższej pary liści, gdzie w razie potrzeby pobierana jest niewielka ilość wody.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -2025,7 +2042,7 @@
         "id": "s492",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": null,
-        "tekst": "Roślina może rozprzestrzeniać się wegetatywnie za pomocą oderwanych fragmentów łodyg, które są zdolne do ukorzenienia się.",
+        "tekst": "Możliwe jest również rozmnażanie wegetatywne poprzez odłamane fragmenty łodyg, które się ukorzeniają.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -2037,7 +2054,7 @@
         "id": "s493",
         "sekcja": "ciekawostki",
         "czesc": null,
-        "tekst": "W uprawach takich jak winnice i ogrody roślina chroni glebę przed wysuszeniem latem i mrozem zimą oraz ogranicza erozję, pełniąc pożyteczną rolę.",
+        "tekst": "nie należy jednak lekceważyć ich korzyści, zwłaszcza w takich uprawach jak winnice i ogrody, ponieważ gęste, płaskie i sięgające nawet 40 centymetrów długości rozłogi chronią glebę latem przed wysychaniem, a zimą przed bezpośrednim działaniem mrozu oraz ogólnie ograniczają erozję.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -2073,7 +2090,7 @@
         "id": "s500",
         "sekcja": "opis",
         "czesc": "korzeń",
-        "tekst": "System korzeniowy rośliny składa się ze słabego korzenia głównego oraz licznych korzeni bocznych, przez co ukorzenia się ona bardzo płytko.",
+        "tekst": "Słaby korzeń główny, liczne korzenie boczne, ukorzenia się płytko.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -2085,7 +2102,7 @@
         "id": "s501",
         "sekcja": "opis",
         "czesc": "owoce",
-        "tekst": "Owoce mają postać podługowatej torebki, która jest dłuższa od kielicha i pęka sześcioma ząbkami niemal do połowy swojej długości.",
+        "tekst": "Podługowata torebka dłuższa od kielicha. Pęka 6 ząbkami niemal do połowy długości.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -2097,7 +2114,7 @@
         "id": "s502",
         "sekcja": "ciekawostki",
         "czesc": "owoce",
-        "tekst": "Nasiona są szarobrunatne lub popielate, kuliste bądź nerkowate, o matowej powierzchni ozdobionej czterema rzędami brodawek.",
+        "tekst": "szarobrunatne lub popielate, kuliste lub nerkowate, matowe nasiona. Mają pomarszczoną powierzchnię z 4 rzędami brodawek.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -2109,7 +2126,7 @@
         "id": "s521",
         "sekcja": "wystepowanie",
         "czesc": null,
-        "tekst": "Gwiazdnica pospolita występuje m.in. na polach uprawnych, nieużytkach i przydrożach.",
+        "tekst": "Pochodzi z Eurazji i jest naturalizowana na całym świecie, gdzie występuje jako chwast na nieużytkach, polach uprawnych i w ogrodach.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Stellaria media",
@@ -2121,7 +2138,7 @@
         "id": "s522",
         "sekcja": "opis",
         "czesc": null,
-        "tekst": "U nasady liŻci w dolnej części łodygi występują krótkie ogonki, natomiast liŻcie górne wyrastają bezpośrednio z łodygi.",
+        "tekst": "Liście mają kształt jajowaty i spiczasty wierzchołek. Liście rosnące w dolnej części łodygi mają zazwyczaj krótkie ogonki, natomiast liście górne są osadzone bezpośrednio na łodydze.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -2133,7 +2150,7 @@
         "id": "s523",
         "sekcja": "opis",
         "czesc": "kwiaty",
-        "tekst": "Kwiaty mają trzy do dziesięciu pręcików z fioletowymi pylnikami oraz trzy szyjki słupka.",
+        "tekst": "Trzy do dziesięciu pręcików ma fioletowe pylniki. Kwiat posiada trzy słupki.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -2145,7 +2162,7 @@
         "id": "s524",
         "sekcja": "opis",
         "czesc": "owoce",
-        "tekst": "Pięcio- lub sześcioklapowa kapselfrucht osiąga około 3 do 5 milimetrów długości i zwisa w dół na wygiętym szypułku.",
+        "tekst": "Owoc w postaci kapsułki z pięcioma lub sześcioma klapami ma około 3–5 mm długości i zwisa, wygięty w dół, na szypułce.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -2157,7 +2174,7 @@
         "id": "s525",
         "sekcja": "opis",
         "czesc": "nasiona",
-        "tekst": "Rótowo-brązowe nasionamają średnicę od 0,9 do 1,3 milimetra i są pokryte płaskimi, tupymi brodawkami.",
+        "tekst": "Czerwono-brązowe nasiona mają średnicę od 0,9 do 1,3 mm i płaskie, tępe guzki.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -2169,7 +2186,7 @@
         "id": "s526",
         "sekcja": "wystepowanie",
         "czesc": null,
-        "tekst": "RoŻlina występuje od nizin aż po góry, osiągając w Szwajcarii w kantonie Valais wysokość 2694 m n.p.m.",
+        "tekst": "Występuje od równin aż po góry. W Alpach Allgäu, w części tyrolskiej, na szczycie Jöchelspitze osiąga wysokość 2226 metrów na pastwiskach dla owiec; w kantonie Valais osiąga wysokość 2694 metrów.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -2181,7 +2198,7 @@
         "id": "s527",
         "sekcja": "wystepowanie",
         "czesc": null,
-        "tekst": "Pierwotne obszary występowania obejmują Eurazję oraz północną Afrykę.",
+        "tekst": "Jej pierwotnym obszarem występowania jest Eurazja i północna Afryka.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -2193,7 +2210,7 @@
         "id": "s528",
         "sekcja": "ciekawostki",
         "czesc": "kwiaty",
-        "tekst": "Nektar wydzielany jest u nasady pręcików wyłącznie podczas słonecznej pogody, co przyciąga nieliczne owady błonkoskrzydłe, muchówki i wciornastki.",
+        "tekst": "Nektar wydzielany jest u podstawy pręcików, i to wyłącznie przy słonecznej pogodzie. Odwiedziny owadów są rzadkie. Jako zapylacze występują błonkówki, dwuskrzydłe i frędzlowoskrzydłe (Thysanoptera).",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -2205,7 +2222,7 @@
         "id": "s529",
         "sekcja": "ciekawostki",
         "czesc": null,
-        "tekst": "Po uwolnieniu z kapselfrucztek nasiona są dalej rozsiewane przez mrówki, które przyciągają zawarte na nich wyrosłe tkanki.",
+        "tekst": "Mrówki roznoszą nasiona z brodawkami po ich rozsypaniu.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -2217,7 +2234,7 @@
         "id": "s530",
         "sekcja": "uprawa",
         "czesc": null,
-        "tekst": "Dzięki obfitemu wytwarzaniu nasion oraz zdolności do szybkiego ukorzeniania się oderwanych fragmentów łodyg roślina bardzo łatwo się rozprzestrzenia.",
+        "tekst": "Ze względu na intensywne rozmnażanie się i wczesne tworzenie nasion jest ona jednak często uważana za szczególnie uciążliwy „chwast”. Możliwe jest również rozmnażanie wegetatywne poprzez odłamane fragmenty łodyg, które się ukorzeniają.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -2229,7 +2246,7 @@
         "id": "s531",
         "sekcja": "bezpieczenstwo",
         "czesc": null,
-        "tekst": "W uprawach roślina może stanowić wektor dla mszyc przenoszących wirusa mozaiki ogórka.",
+        "tekst": "Jest ona nosicielem mszyc (Myzus persicae i Aphis fabae), które mogą przenosić wirusa mozaiki ogórka.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -2313,7 +2330,7 @@
         "id": "s540",
         "sekcja": "bezpieczenstwo",
         "czesc": null,
-        "tekst": "W uprawach roślina ta bywa uciążliwym chwastem, który może ograniczyć plony jęczmienia nawet o 80%.",
+        "tekst": "Jednak na polach uprawnych jest traktowany jako chwast utrudniający wzrost innych zbóż i uważa się, że może spowodować spadek plonów jęczmienia nawet o 80%.",
         "jezyk": "ja",
         "zrodlo": {
           "nazwa": "Wikipedia (ja): コハコベ",
@@ -2325,7 +2342,7 @@
         "id": "s541",
         "sekcja": "ciekawostki",
         "czesc": null,
-        "tekst": "W kontekście różnorodności biologicznej w ogrodzie gwiazdnicę pospolitą traktuje się nie jako chwast, ale jako roślinę jadalną (dziką sałatę) oraz wskaźnik gleby bogatej w azot.",
+        "tekst": "Gwiazdnica średnia (Stellaria media) | tak, rośnie aż do zapełnienia grządki | jadalna (sałata polna), roślina wskaźnikowa dla gleby bogatej w azot",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "pflanzjahr.de",
@@ -2337,7 +2354,7 @@
         "id": "s566",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": "ziele",
-        "tekst": "Wyciągi wodne z ziela stosuje się wewnętrznie przy nieprawidłowej przemianie materii, hemoroidach, chrypce oraz szkorbucie.",
+        "tekst": "Wewnętrznie wyciągi wodne stosuje się przy reumatyzmie i artretyzmie, nieprawidłowej przemianie materii, schorzeniach skórnych, hemoroidach, niedomaganiach serca, chorobach nerek, zaparciach, nadciśnieniu, kaszlu, chrypce, szkorbucie oraz przy stanach zapalnych.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -2349,7 +2366,7 @@
         "id": "s567",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": "ziele",
-        "tekst": "Odwarem z ziela można nacierać skórę w miejscach występowania dolegliwości reumatycznych.",
+        "tekst": "Można też odwarem nacierać skórę w miejscu dolegliwości reumatycznych.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -2361,7 +2378,7 @@
         "id": "s568",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": "ziele",
-        "tekst": "Ziele wykazuje działanie stabilizujące na wątrobę oraz skraca czas rozpuszczania płytek miażdżycowych w naczyniach krwionośnych.",
+        "tekst": "Działa stabilizująco na wątrobę, przyspiesza gojenie się ran i skraca czas rozpuszczania płytek miażdżycowych w naczyniach krwionośnych.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -2373,7 +2390,7 @@
         "id": "s569",
         "sekcja": "sklad",
         "czesc": "ziele",
-        "tekst": "W skład ziela wchodzą liczne sole mineralne, takie jak potas, fosfor, wapń, żelazo, magnez, sód, selen, jod oraz krzem.",
+        "tekst": "sole mineralne (potas, fosfor, wapń, żelazo, magnez, sód, selen, jod, krzem).",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -2385,7 +2402,7 @@
         "id": "s570",
         "sekcja": "uprawa",
         "czesc": null,
-        "tekst": "Nasiona gatunku kiełkują już przy temperaturze 2 °C, a optymalna temperatura dla tego procesu wynosi 13–20 °C.",
+        "tekst": "Kiełkują już przy temperaturze 2 °C, temperatura optymalna wynosi 13–20 °C.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -2397,7 +2414,7 @@
         "id": "s571",
         "sekcja": "uprawa",
         "czesc": null,
-        "tekst": "Roślina może rozmnażać się wegetatywnie, ponieważ jej łodygi łatwo ukorzeniają się w węzłach.",
+        "tekst": "Rozmnaża się przez nasiona, ale również wegetatywnie, jej łodygi bowiem łatwo ukorzeniają się w węzłach.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -2409,7 +2426,7 @@
         "id": "s572",
         "sekcja": "bezpieczenstwo",
         "czesc": null,
-        "tekst": "Na polach uprawnych roślina jest chwastem, który największe szkody wyrządza młodym siewkom uprawianym przez siew, rozwijając się od nich szybciej i je zagłusząjąc.",
+        "tekst": "Największe szkody wyrządza młodym siewkom roślin uprawianych przez siew, rozwija się bowiem szybciej od nich i zagłusza je.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -2421,7 +2438,7 @@
         "id": "s577",
         "sekcja": "opis",
         "czesc": "ziele",
-        "tekst": "Roślina jest jednoroczna i ma zwężającą się, wrzecionowatą korzeń o charakterze spłaszczonym.",
+        "tekst": "Gwiazdnica pospolita to jednoroczna roślina zielna… o wrzecionowatym, płaskim korzeniu.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -2433,7 +2450,7 @@
         "id": "s578",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": "ziele",
-        "tekst": "W medycynie ludowej ziele stosuje się ogólnie do oczyszczania i wzmacniania całego organizmu.",
+        "tekst": "W medycynie ludowej… uważa się, że pomaga ona w stanach zapalnych, bólach, skurczach, dolegliwościach wątroby, reumatyzmie i schorzeniach pęcherza moczowego, a także ogólnie przyczynia się do oczyszczenia i wzmocnienia całego organizmu.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -2445,7 +2462,7 @@
         "id": "s579",
         "sekcja": "opis",
         "czesc": "liście",
-        "tekst": "Dolne liście posiadają krótkie ogonki, natomiast liście rosnące w górnej części łodygi wyrastają bezpośrednio z niej.",
+        "tekst": "Liście mają kształt jajowaty i spiczasty wierzchołek. Liście rosnące w dolnej części łodygi mają zazwyczaj krótkie ogonki, natomiast liście górne są osadzone bezpośrednio na łodydze.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -2457,7 +2474,7 @@
         "id": "s580",
         "sekcja": "opis",
         "czesc": "kwiaty",
-        "tekst": "Kwiaty pojawiają się w niewielkich kwiatostanach typu dichazium i charakteryzują się fioletowymi pylnikami na pręcikach oraz trzema szyjkami słupka.",
+        "tekst": "Nieliczne kwiaty zebrane są w baldaszkowate dichazje... Trzy do dziesięciu pręcików ma fioletowe pylniki. Występują trzy słupki.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -2469,7 +2486,7 @@
         "id": "s581",
         "sekcja": "opis",
         "czesc": "owoce",
-        "tekst": "Owocem jest pękająca pięcio- lub sześcioklapowa torebka, która w trakcie dojrzewania zwisa łukowato w dół na szypułce.",
+        "tekst": "Owoc w postaci kapsułki z pięcioma lub sześcioma klapami ma około 3–5 mm długości i zwisa, wygięty w dół, na szypułce.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -2481,7 +2498,7 @@
         "id": "s582",
         "sekcja": "opis",
         "czesc": "nasiona",
-        "tekst": "Nasiona mają czerwonobrązową barwę, średnicę od 0,9 do 1,3 mm oraz płaskie, tępe brodawki na powierzchni.",
+        "tekst": "Czerwono-brązowe nasiona mają średnicę od 0,9 do 1,3 mm i płaskie, tępe guzki.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -2493,7 +2510,7 @@
         "id": "s583",
         "sekcja": "ciekawostki",
         "czesc": "kwiaty",
-        "tekst": "Kwiaty wydzielają nektar u nasady pręcików wyłącznie w słoneczne dni, a głównym sposobem zapylania jest samopylność.",
+        "tekst": "Nektar jest wydzielany u podstawy pręcików, i to wyłącznie przy słonecznej pogodzie... Ponieważ kwiaty są obupłciowe, zazwyczaj dochodzi do samozapylenia",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -2505,7 +2522,7 @@
         "id": "s584",
         "sekcja": "ciekawostki",
         "czesc": "nasiona",
-        "tekst": "Dojrzałe nasiona są początkowo wyrzucane z torebek przez samą roślinę, a następnie dalej rozprzestrzeniane przez mrówki.",
+        "tekst": "Owoce są to dmuchawki, które rozrzucają nasiona w sposób samorozsiewczy. Mrówki roznoszą te brodawkowate nasiona po ich rozrzuceniu.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -2517,7 +2534,7 @@
         "id": "s585",
         "sekcja": "wystepowanie",
         "czesc": null,
-        "tekst": "W Alpach Allgäu roślina dociera aż do szczytu Jöchelspitze w Tyrolu, osiągając wysokość 2226 m n.p.m., a w kantonie Valais notowana jest do 2694 m n.p.m.",
+        "tekst": "W Alpach Allgäu, w części tyrolskiej, na szczycie Jöchelspitze rozciąga się na pastwiskach dla owiec aż do wysokości 2226 metrów; w kantonie Valais osiąga wysokość 2694 metrów.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -2529,7 +2546,7 @@
         "id": "s586",
         "sekcja": "nazwy_ludowe",
         "czesc": null,
-        "tekst": "W prowincji Hubei, w regionie Badong, roślina znana jest regionalnie pod ludową nazwą e'er shenjin.",
+        "tekst": "Gęsie ucho (Badong, prowincja Hubei)",
         "jezyk": "zh",
         "zrodlo": {
           "nazwa": "Wikipedia (zh): 繁缕",
@@ -2540,7 +2557,7 @@
         "id": "s587",
         "sekcja": "czesci_rosliny",
         "czesc": null,
-        "tekst": "Całą roślinę suszy się na słońcu, a uzyskany w ten sposób susz nazywany jest hanrou i jest stosowany jako surowiec zielarski w Japonii.",
+        "tekst": "Cała roślina wysuszona na słońcu stanowi surowiec leczniczy zwany „hanrou”, choć czasami stosuje się również świeżą roślinę.",
         "jezyk": "ja",
         "zrodlo": {
           "nazwa": "Wikipedia (ja): コハコベ",
@@ -2564,7 +2581,7 @@
         "id": "s589",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": null,
-        "tekst": "Roślina wykazuje działanie przeciwzapalne, przeciwbakteryjne, żółciopędne, przeciwcyngetyczne, rozszerzające naczynia wieńcowe oraz obniżające ciśnienie krwi.",
+        "tekst": "Gwiazdnica średnia wykazuje umiarkowane działanie przeciwzapalne, przeciwbakteryjne, żółciopędne, przeciwszkorbutowe, rozszerzające naczynia wieńcowe oraz hipotensyjne.",
         "jezyk": "ru",
         "zrodlo": {
           "nazwa": "www.lektrava.ru",
@@ -2576,7 +2593,7 @@
         "id": "s590",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": null,
-        "tekst": "W lecznictwie homeopatycznym przygotowywana jest z niej esencja ze świeżo zebranych okazów rośliny.",
+        "tekst": "Homeopaci przygotowują leczniczą esencję na bazie świeżo zebranej gwiazdnicy średniej.",
         "jezyk": "ru",
         "zrodlo": {
           "nazwa": "www.lektrava.ru",
@@ -2588,7 +2605,7 @@
         "id": "s591",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": null,
-        "tekst": "Napar i nalewka z rośliny stosowane są w leczeniu obrzęków sercowych i nerkowych, neurastenii, padaczki, drgawek oraz anemii i niedoborów witamin.",
+        "tekst": "Nalewka z gwiazdnicy średniej jest pomocna w przypadku obrzęków pochodzenia sercowego i nerkowego, nerwicach, padaczce, napadach nerwowych, drgawkach, chorobach zakaźno-zapalnych i układu oddechowego, niedoborach witamin, niedoborach odpornościowych, szkorbutie i niedokrwistości.",
         "jezyk": "ru",
         "zrodlo": {
           "nazwa": "www.lektrava.ru",
@@ -2600,7 +2617,7 @@
         "id": "s592",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": null,
-        "tekst": "Tradycyjnie ziele i kwiaty wykorzystywano do leczenia chorób żołądkowo-jelitowych, w tym zapalenia żołądka, śródnej i trzewnej zapalenia jelit, biegunki oraz kolek.",
+        "tekst": "Mokryca jest również pomocna w przypadku chorób przewodu pokarmowego, na przykład w przypadku zapalenia żołądka, zapalenia jelit, zapalenia okrężnicy, zapalenia jelit i okrężnicy, biegunki oraz kolki.",
         "jezyk": "ru",
         "zrodlo": {
           "nazwa": "www.lektrava.ru",
@@ -2612,7 +2629,7 @@
         "id": "s593",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": null,
-        "tekst": "Wlewki (kompresy) z rośliny przygotowuje się w celu łagodzenia dolegliwości związanych z chorobami stawów, nadwyrężeniem więzadeł, zapaleniem mięśni, reumatyzmem oraz obrzękami nóg.",
+        "tekst": "Okłady z mokrycy można stosować w przypadku chorób stawów, skręceń więzadeł, zapalenia mięśni, zapalenia stawów, reumatyzmu, rwy kulszowej, mastopatii oraz obrzęków nóg.",
         "jezyk": "ru",
         "zrodlo": {
           "nazwa": "www.lektrava.ru",
@@ -2624,7 +2641,7 @@
         "id": "s594",
         "sekcja": "bezpieczenstwo",
         "czesc": null,
-        "tekst": "Spożywanie i stosowanie gwiazdnicy jest przeciwwskazane dla kobiet w ciąży, dzieci, osób z niedociśnieniem oraz osób skłonnych do reakcji alergicznych.",
+        "tekst": "Gwiazdnica średnia jest przeciwwskazana dla kobiet w ciąży i dzieci, osób z niedociśnieniem, a także osób podatnych na reakcje alergiczne.",
         "jezyk": "ru",
         "zrodlo": {
           "nazwa": "www.lektrava.ru",
@@ -2636,7 +2653,7 @@
         "id": "s595",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": null,
-        "tekst": "Tradycyjnie wierzane jest, że roślina może wykorzystywać do stymulacji laktacji u kobiet w okresie karmienia oraz w leczeniu niedoborów witaminowych.",
+        "tekst": "Może być również stosowana w celu pobudzenia laktacji oraz w leczeniu niedoborów witamin.",
         "jezyk": "ru",
         "zrodlo": {
           "nazwa": "www.lektrava.ru",
@@ -2648,7 +2665,7 @@
         "id": "s624",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": "ziele",
-        "tekst": "Ziele stosuje się wewnętrznie w leczeniu reumatyzmu, artretyzmu, nieprawidłowej przemianie materii, schorzeniach skórnych, hemoroidach, niedomaganiach serca, chorobach nerek, zaparciach, nadciśnieniu, kaszlu, chrypce, szkorbucie oraz przy stanach zapalnych.",
+        "tekst": "Wewnętrznie wyciągi wodne stosuje się przy reumatyzmie i artretyzmie, nieprawidłowej przemianie materii, schorzeniach skórnych, hemoroidach, niedomaganiach serca, chorobach nerek, zaparciach, nadciśnieniu, kaszlu, chrypce, szkorbucie oraz przy stanach zapalnych.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -2660,7 +2677,7 @@
         "id": "s625",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": "ziele",
-        "tekst": "Zewnętrznie stosuje się ziele do okładania ran i łagodzenia swędzenia skóry.",
+        "tekst": "Zewnętrznie przy schorzeniach skórnych, na okładanie ran (przyspiesza ich gojenie). Stosuje się w postaci świeżych, zmiażdżonych roślin przyłożonych na skórę. Kąpiel w wodzie z dodatkiem naparu z gwiazdnicy pospolitej łagodzi swędzenie i podrażnienie skóry.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -2672,7 +2689,7 @@
         "id": "s626",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": "ziele",
-        "tekst": "Ziele stosuje się do produkcji preparatów do pielęgnacji cery.",
+        "tekst": "Wykorzystywana jest do produkcji preparatów do pielęgnacji cery. Na skórę wykazuje działanie łagodzące i nawilżające.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -2684,7 +2701,7 @@
         "id": "s627",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": "ziele",
-        "tekst": "Ziele wykazuje działanie odtruwające, przeciwkrwotoczne, przeciwnowotworowe, moczopędne, przeciwreumatyczne, ściągające, wykrztuśne, wiatropędne i przeczyszczające.",
+        "tekst": "Działa stabilizująco na wątrobę, przyspiesza gojenie się ran i skraca czas rozpuszczania płytek miażdżycowych w naczyniach krwionośnych. Wykazuje również działanie odtruwające, przeciwkrwotoczne, przeciwnowotworowe, moczopędne, przeciwreumatyczne, ściągające, wykrztuśne, wiatropędne i przeczyszczają",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -2696,7 +2713,7 @@
         "id": "s628",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": "ziele",
-        "tekst": "Ziele stosuje się w leczeniu hemoroidów i zaparć.",
+        "tekst": "Wewnętrznie wyciągi wodne stosuje się przy reumatyzmie i artretyzmie, nieprawidłowej przemianie materii, schorzeniach skórnych, hemoroidach, niedomaganiach serca, chorobach nerek, zaparciach, nadciśnieniu, kaszlu, chrypce, szkorbucie oraz przy stanach zapalnych.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -2708,7 +2725,7 @@
         "id": "s629",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": "ziele",
-        "tekst": "Ziele stosuje się w leczeniu kaszlu i chrypki.",
+        "tekst": "Wewnętrznie wyciągi wodne stosuje się przy reumatyzmie i artretyzmie, nieprawidłowej przemianie materii, schorzeniach skórnych, hemoroidach, niedomaganiach serca, chorobach nerek, zaparciach, nadciśnieniu, kaszlu, chrypce, szkorbucie oraz przy stanach zapalnych.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -2720,7 +2737,7 @@
         "id": "s630",
         "sekcja": "opis",
         "czesc": "liście",
-        "tekst": "Ogonki liściowe gwiazdnicy pospolitej osiągają długość od 5 do 8 mm i posiadają owłosione brzegi.",
+        "tekst": "Ogonki liściowe mają od 5 do 8 mm długości i są owłosione na krawędziach.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Stellaria media",
@@ -2732,7 +2749,7 @@
         "id": "s632",
         "sekcja": "ciekawostki",
         "czesc": "korzeń",
-        "tekst": "Roślina może się rozrastać wegetatywnie przez ukorzenienie się odpadających fragmentów łodygi.",
+        "tekst": "Możliwe jest również rozmnażanie wegetatywne poprzez odłamane fragmenty łodyg, które się ukorzeniają.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "Wikipedia (de): Gewöhnliche Vogelmiere",
@@ -2744,7 +2761,7 @@
         "id": "s633",
         "sekcja": "historia",
         "czesc": null,
-        "tekst": "Epitet gatunkowy „media” w łacińskiej nazwie naukowej gwiazdnicy pospolitej oznacza „pośrednia” lub „środkowa”.",
+        "tekst": "Przedrostek „media” oznacza „pośrodku”.",
         "jezyk": "zh",
         "zrodlo": {
           "nazwa": "Wikipedia (zh): 繁缕",
@@ -2756,7 +2773,7 @@
         "id": "s634",
         "sekcja": "nazwy_ludowe",
         "czesc": null,
-        "tekst": "W tradycji chińskiej gwiazdnica pospolita posiada barwne nazwy ludowe, takie jak „warzywo z gęsich jelit” (odnotowane w klasycznym dziele Bencao Gangmu), „rozciągacz gęsich ścięgien” czy „kurze jelito”.",
+        "tekst": "„Gęsie jelita” (Ben Cao Gang Mu) „Gęsie ucho rozciągające ścięgna” (Badong, prowincja Hubei) „Kurze jelita” (Jiangsu) „Gęsie jelita” (Syczuan)",
         "jezyk": "zh",
         "zrodlo": {
           "nazwa": "Wikipedia (zh): 繁缕",
@@ -2768,7 +2785,7 @@
         "id": "s635",
         "sekcja": "opis",
         "czesc": "kwiaty",
-        "tekst": "Drobne, białe kwiaty gwiazdnicy pospolitej tworzą kwiatostany typu wierzchotka, usytuowane na szczytach pędów lub w kątach liści, a każdy z nich posiada trzy szyjki słupka.",
+        "tekst": "Kwiatostan baldaszkowaty, osadzony na końcach gałęzi lub w kątach liści; szypułki kwiatowe smukłe; 5 działek kielicha; 5 płatków, głęboko dwukrotnie rozciętych; trzy słupki.",
         "jezyk": "zh",
         "zrodlo": {
           "nazwa": "Wikipedia (zh): 繁缕",
@@ -2780,7 +2797,7 @@
         "id": "s636",
         "sekcja": "opis",
         "czesc": "liście",
-        "tekst": "Naprzeciwległe, jajowate liście tej rośliny charakteryzują się wyjątkową delikatnością i kruchością, przez co bardzo łatwo ulegają uszkodzeniu.",
+        "tekst": "Liście jajowate, małe, przeciwległe, z ostro zakończonymi wierzchołkami, kruche i łatwo łamliwe",
         "jezyk": "zh",
         "zrodlo": {
           "nazwa": "Wikipedia (zh): 繁缕",
@@ -2828,7 +2845,7 @@
         "id": "s642",
         "sekcja": "bezpieczenstwo",
         "czesc": null,
-        "tekst": "Na polach uprawnych roślina ta bywa uciążliwym chwastem, który może ograniczyć wzrost innych zbóż, w tym zmniejszyć plony jęczmienia nawet o 80%.",
+        "tekst": "Na polach uprawnych jest traktowany jako chwast utrudniający wzrost innych zbóż i uważa się, że może spowodować spadek plonów jęczmienia nawet o 80%.",
         "jezyk": "ja",
         "zrodlo": {
           "nazwa": "Wikipedia (ja): コハコベ",
@@ -2840,7 +2857,7 @@
         "id": "s643",
         "sekcja": "uprawa",
         "czesc": "nasiona",
-        "tekst": "Nasiona gwiazdnicy pospolitej są zdolne do kiełkowania już przy temperaturze od +2 do +4°C, a ich żywotność w glebie utrzymuje się do 5 lat.",
+        "tekst": "✔️ Rozmnażanie – nasionami, które są zdolne do kiełkowania już w temperaturze +2…+4°C i zachowują żywotność do 5 lat.",
         "jezyk": "ru",
         "zrodlo": {
           "nazwa": "agroexp.com.ua",
@@ -2852,7 +2869,7 @@
         "id": "s1893",
         "sekcja": "czesci_rosliny",
         "czesc": null,
-        "tekst": "Suszone na słońcu całe rośliny zwane w Japonii hanrou są używane jako ziołowy lek.",
+        "tekst": "Cała roślina wysuszona na słońcu stanowi surowiec leczniczy zwany hanrou,",
         "jezyk": "ja",
         "zrodlo": {
           "nazwa": "Wikipedia (ja): コハコベ",
@@ -2900,7 +2917,7 @@
         "id": "s2410",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": "ziele",
-        "tekst": "Wyciągi wodne z zielę stosowane są wewnętrznie między innymi na kaszel i chrypkę, a także wspomagająco przy szkorbucie.",
+        "tekst": "Wewnętrznie wyciągi wodne stosuje się przy reumatyzmie i artretyzmie, nieprawidłowej przemianie materii, schorzeniach skórnych, hemoroidach, niedomaganiach serca, chorobach nerek, zaparciach, nadciśnieniu, kaszlu, chrypce, szkorbucie oraz przy stanach zapalnych.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -2912,7 +2929,7 @@
         "id": "s2411",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": "ziele",
-        "tekst": "Roślina wykazuje działanie stabilizujące na wątrobę, ponadto ma właściwości odtruwające, przeciwkrwotoczne oraz przeciwnowotworowe.",
+        "tekst": "Działa stabilizująco na wątrobę, przyspiesza gojenie się ran i skraca czas rozpuszczania płytek miażdżycowych w naczyniach krwionośnych. Wykazuje również działanie odtruwające, przeciwkrwotoczne, przeciwnowotworowe, moczopędne, przeciwreumatyczne, ściągające, wykrztuśne, wiatropędne i przeczyszczają",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -2924,7 +2941,7 @@
         "id": "s2412",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": "ziele",
-        "tekst": "Ziele gwiazdnicy pospolitej stanowi jeden ze składników preparatów odchudzających.",
+        "tekst": "Jest jednym ze składników preparatów odchudzających.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -2936,7 +2953,7 @@
         "id": "s2413",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": "ziele",
-        "tekst": "Oprócz okładów i kąpieli, do nacierania skóry w miejscach reumatycznych używa się odwaru z rośliny.",
+        "tekst": "Można też odwarem nacierać skórę w miejscu dolegliwości reumatycznych.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -2948,7 +2965,7 @@
         "id": "s2414",
         "sekcja": "ciekawostki",
         "czesc": null,
-        "tekst": "W Japonii rytuał spożywania siedmiu ziół wiosennych (haru no nanakusa), w których wchodzi gwiazdnica, dawniej wypadał w siódmy dzień pierwszego miesiąca według chińskiego kalendarza księżycowego.",
+        "tekst": "Liście gwiazdnicy są jednym z siedmiu ziół (haru no nanakusa) spożywanych w siódmym dniu Nowego Roku (dawniej w chińskim kalendarzu księżycowym był to siódmy dzień pierwszego miesiąca).",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -2960,7 +2977,7 @@
         "id": "s2415",
         "sekcja": "historia",
         "czesc": null,
-        "tekst": "Dawniej roślina wykorzystywana była jako wartościowa pasza dla młodych kurcząt i indyków.",
+        "tekst": "Roślina używana była dawniej jako dobra pasza dla kurcząt i indyków.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -2972,7 +2989,7 @@
         "id": "s2416",
         "sekcja": "uprawa",
         "czesc": null,
-        "tekst": "Gwiazdnica pospolita rozprzestrzenia się zarówno przez nasiona, jak i wegetatywnie, ponieważ jej łodygi łatwo ukorzeniają się w miejscach stycznych z podłożem tzw. węzłach.",
+        "tekst": "Rozmnaża się przez nasiona, ale również wegetatywnie, jej łodygi bowiem łatwo ukorzeniają się w węzłach.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Gwiazdnica pospolita",
@@ -2984,7 +3001,7 @@
         "id": "s2417",
         "sekcja": "opis",
         "czesc": null,
-        "tekst": "Gwiazdnica pospolita jest jednoroczną rośliną o słabym, cylindrycznym pędzie z wyraźnymi wzdłużnymi brzegami; jedną stroną pokrywa krótkie, miękkie włoski, a pozostała część jest gładka i rośnie przyziemnie, rozgałęziając się w sposób rozdzielny.",
+        "tekst": "Łodyga jest delikatna, cylindryczna, z podłużnymi żebrami, z jednej strony pokryta krótkimi, miękkimi włoskami, a z pozostałych stron całkowicie bezowłosiona; rozciąga się po ziemi i rozgałęzia się w kształcie widelca.",
         "jezyk": "zh",
         "zrodlo": {
           "nazwa": "Wikipedia (zh): 繁缕",
@@ -2996,7 +3013,7 @@
         "id": "s2418",
         "sekcja": "opis",
         "czesc": "liście",
-        "tekst": "Liście gwiazdnicy są małe, owalne, ustawione naprzeciwlegle, z ostrym końcem i są kruche oraz łatwo łamliwe.",
+        "tekst": "Liście jajowate, małe, przeciwległe, z ostro zakończonymi wierzchołkami, kruche i łatwo łamliwe",
         "jezyk": "zh",
         "zrodlo": {
           "nazwa": "Wikipedia (zh): 繁缕",
@@ -3008,7 +3025,7 @@
         "id": "s2419",
         "sekcja": "opis",
         "czesc": "kwiaty",
-        "tekst": "Kwiaty są białe, z pięcioma kielichami i pięcioma płatkami głęboko dwupodzielonymi, a roślina posiada trzy słupki.",
+        "tekst": "5 działek kielicha; 5 płatków, głęboko dwukrotnie rozciętych; trzy słupki",
         "jezyk": "zh",
         "zrodlo": {
           "nazwa": "Wikipedia (zh): 繁缕",
@@ -3020,45 +3037,48 @@
         "id": "s2420",
         "sekcja": "nazwy_ludowe",
         "czesc": null,
-        "tekst": "W chińskich nazwach ludowych roślina znana jest jako „鹅肠菜”, „鹅耳伸筋”, „鸡儿肠” i „鹅儿肠”.",
+        "tekst": "„Gęsie jelita” (Ben Cao Gang Mu) „Gęsie ucho rozciągające ścięgna” (Badong, prowincja Hubei) „Kurze jelita” (Jiangsu) „Gęsie jelita” (Syczuan)",
         "jezyk": "zh",
         "zrodlo": {
           "nazwa": "Wikipedia (zh): 繁缕",
           "url": "https://zh.wikipedia.org/wiki/%E7%B9%81%E7%BC%95"
         },
         "cytat": "鹅肠菜（本草纲目） 鹅耳伸筋（湖北巴东） 鸡儿肠（江苏） 鹅儿肠（四川）"
+      },
+      {
+        "id": "s2648",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Jednoroczna roślina zielna o charakterze samosiewnym, o intensywnie zielonym kolorze, która często porasta nawożone i spulchnione tereny, a nawet ogrody.",
+        "jezyk": "es",
+        "zrodlo": {
+          "nazwa": "www.botanical-online.com",
+          "url": "https://www.botanical-online.com/botanica/pamplina-caracteristicas"
+        },
+        "cytat": "Planta herbácea anual de carácter adventicio, de color verde intenso, que suele tapizar terrenos abonados y removidos e incluso jardines."
       }
     ]
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-11-02",
+    "zaktualizowano": "2026-11-03",
     "pola": {
-      "opis": {
-        "tytul": "Opis - Opis ogólny",
-        "typ": "tekst",
-        "oryginal": "Gwiazdnica pospolita to drobna i delikatna roślina tworząca łany, z rozesłanymi lub wzniesionymi łodygami o długości od 3 do 40 cm.",
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": null,
         "tresc": [
           {
-            "tekst": "Gwiazdnica pospolita to drobna i delikatna roślina tworząca łany, z rozesłanymi lub wzniesionymi łodygami o długości od 3 do 40 cm.",
+            "tekst": "Roślina tworząca łany, drobna i delikatna. Łodyga Rozesłane, podnoszące się lub wzniesione, długie na 3–40 cm, obłe, z pojedynczym szeregiem włosków.",
             "zrodla": [
               1
             ],
             "fakty": [
               "s358"
             ]
-          }
-        ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "e177849f564685f7"
-      },
-      "ciekawostki": {
-        "tytul": "Wiedza tajemna - Ciekawostki",
-        "typ": "lista",
-        "oryginal": null,
-        "tresc": [
+          },
           {
-            "tekst": "Dawna nazwa łacińska Morsus gallinae oznacza \"huczy bite\", a polskie oraz niemieckie nazwy nawiązują do tego, że całe rośliny chętnie zjadane są przez ptaki.",
+            "tekst": "Starożytną łacińską nazwą jest Morsus gallinae („ukąszenie kurczaka”). ... Ptaki chętnie zjadają wszystkie części tej rośliny, do czego nawiązuje również jej niemiecka nazwa potoczna.",
             "zrodla": [
               2
             ],
@@ -3067,7 +3087,7 @@
             ]
           },
           {
-            "tekst": "Nazwy związane z jelitami wynikają z pełzających, okrągłych i krętych łodyg lub z tego, że po rozerwaniu łodygi jej wnętrze przypomina białe jelito.",
+            "tekst": "Nazwa „jelito” wywodzi się od pełzających, okrągłych i poskręcanych łodyg lub od tego, że po rozciągnięciu łodygi jej wewnętrzna część wygląda jak białe jelito.",
             "zrodla": [
               2
             ],
@@ -3076,178 +3096,17 @@
             ]
           },
           {
-            "tekst": "Dawniej roślina wykorzystywana była jako wartościowa pasza dla młodych kurcząt i indyków.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s2415"
-            ]
-          },
-          {
-            "tekst": "Epitet gatunkowy „media” w łacińskiej nazwie naukowej gwiazdnicy pospolitej oznacza „pośrednia” lub „środkowa”.",
-            "zrodla": [
-              5
-            ],
-            "fakty": [
-              "s633"
-            ]
-          },
-          {
-            "tekst": "W Chinach roślina znana jest pod nazwą „ge cháng cai”, a w innych regionach nosi nazwy takie jak „ge er xin jin”, „ji er cháng” i „ge er cháng”.",
-            "zrodla": [
-              5
-            ],
-            "fakty": [
-              "s498"
-            ]
-          },
-          {
-            "tekst": "W prowincji Hubei, w regionie Badong, roślina znana jest regionalnie pod ludową nazwą e'er shenjin.",
-            "zrodla": [
-              5
-            ],
-            "fakty": [
-              "s586"
-            ]
-          },
-          {
-            "tekst": "W tradycji chińskiej gwiazdnica pospolita posiada barwne nazwy ludowe, takie jak „warzywo z gęsich jelit” (odnotowane w klasycznym dziele Bencao Gangmu), „rozciągacz gęsich ścięgien” czy „kurze jelito”.",
-            "zrodla": [
-              5
-            ],
-            "fakty": [
-              "s634"
-            ]
-          },
-          {
-            "tekst": "W chińskich nazwach ludowych roślina znana jest jako „鹅肠菜”, „鹅耳伸筋”, „鸡儿肠” i „鹅儿肠”.",
-            "zrodla": [
-              5
-            ],
-            "fakty": [
-              "s2420"
-            ]
-          },
-          {
-            "tekst": "Nasiona gwiazdnicy pospolitej zachowują zdolność kiełkowania od 6 do 68 lat i mogą bez uszczerbku przechodzić przez przewód pokarmowy zwierząt.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s366"
-            ]
-          },
-          {
-            "tekst": "W Japonii rytuał spożywania siedmiu ziół wiosennych (haru no nanakusa), w których wchodzi gwiazdnica, dawniej wypadał w siódmy dzień pierwszego miesiąca według chińskiego kalendarza księżycowego.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s2414"
-            ]
-          },
-          {
-            "tekst": "Linia włosków na łodydze pomaga roślinie w gospodarce wodnej, kierując krople rosy do najbliższej pary liści lub w dół łodygi.",
+            "tekst": "Liście mają kształt jajowaty i spiczasty wierzchołek. Liście rosnące w dolnej części łodygi mają zazwyczaj krótkie ogonki, natomiast liście górne są osadzone bezpośrednio na łodydze.",
             "zrodla": [
               2
             ],
             "fakty": [
-              "s491"
+              "s522",
+              "s579"
             ]
           },
           {
-            "tekst": "Po uwolnieniu z kapselfrucztek nasiona są dalej rozsiewane przez mrówki, które przyciągają zawarte na nich wyrosłe tkanki.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s529"
-            ]
-          },
-          {
-            "tekst": "Gatunki owadów z rzędu motyli, takie jak Haematopis grataria czy Camptogramma bilineata, wykorzystują liście gwiazdnicy jako pokarm dla swoich larw.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s373"
-            ]
-          },
-          {
-            "tekst": "Roślina może się rozrastać wegetatywnie przez ukorzenienie się odpadających fragmentów łodygi.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s632"
-            ]
-          },
-          {
-            "tekst": "Nektar wydzielany jest u nasady pręcików wyłącznie podczas słonecznej pogody, co przyciąga nieliczne owady błonkoskrzydłe, muchówki i wciornastki.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s528"
-            ]
-          },
-          {
-            "tekst": "Kwiaty wydzielają nektar u nasady pręcików wyłącznie w słoneczne dni, a głównym sposobem zapylania jest samopylność.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s583"
-            ]
-          },
-          {
-            "tekst": "Dojrzałe nasiona są początkowo wyrzucane z torebek przez samą roślinę, a następnie dalej rozprzestrzeniane przez mrówki.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s584"
-            ]
-          },
-          {
-            "tekst": "Nasiona są szarobrunatne lub popielate, kuliste bądź nerkowate, o matowej powierzchni ozdobionej czterema rzędami brodawek.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s502"
-            ]
-          },
-          {
-            "tekst": "Pojedynczy egzemplarz rośliny może wyprodukować do 15 000 nasion, a w ciągu roku mogą rozwinąć się dwie lub trzy pokolenia.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s380"
-            ]
-          }
-        ],
-        "model": "bez LLM: 19 punktow",
-        "wejscie": "4df30fad84d26d60"
-      },
-      "identyfikacja.cechy_kluczowe": {
-        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
-        "typ": "lista",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "U nasady liŻci w dolnej części łodygi występują krótkie ogonki, natomiast liŻcie górne wyrastają bezpośrednio z łodygi.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s522"
-            ]
-          },
-          {
-            "tekst": "Łodygi mają średnicę 1 mm i opatrzone są linią prostych włosów biegnących wzdłuż pełnej długości, z naprzemiennym przebiegiem na węzłach.",
+            "tekst": "Łodygi są cylindryczne i nagie, o luźnym i rozłożystym pokroju, osiągają długość do 40 cm (16 cali) i średnicę 1 milimetra (1⁄16 cala); wzdłuż całej długości biegnie wzdłużna linia (bardzo rzadko dwie linie) włosków, które w węzłach przechodzą na drugą stronę.",
             "zrodla": [
               3
             ],
@@ -3265,7 +3124,7 @@
             ]
           },
           {
-            "tekst": "Gwiazdnica pospolita jest jednoroczną rośliną o słabym, cylindrycznym pędzie z wyraźnymi wzdłużnymi brzegami; jedną stroną pokrywa krótkie, miękkie włoski, a pozostała część jest gładka i rośnie przyziemnie, rozgałęziając się w sposób rozdzielny.",
+            "tekst": "Łodyga jest delikatna, cylindryczna, z podłużnymi żebrami, z jednej strony pokryta krótkimi, miękkimi włoskami, a z pozostałych stron całkowicie bezowłosiona; rozciąga się po ziemi i rozgałęzia się w kształcie widelca.",
             "zrodla": [
               5
             ],
@@ -3274,7 +3133,16 @@
             ]
           },
           {
-            "tekst": "System korzeniowy rośliny składa się ze słabego korzenia głównego oraz licznych korzeni bocznych, przez co ukorzenia się ona bardzo płytko.",
+            "tekst": "Jednoroczna roślina zielna o charakterze samosiewnym, o intensywnie zielonym kolorze, która często porasta nawożone i spulchnione tereny, a nawet ogrody.",
+            "zrodla": [
+              8
+            ],
+            "fakty": [
+              "s2648"
+            ]
+          },
+          {
+            "tekst": "Słaby korzeń główny, liczne korzenie boczne, ukorzenia się płytko.",
             "zrodla": [
               1
             ],
@@ -3283,7 +3151,7 @@
             ]
           },
           {
-            "tekst": "Kwiaty mają trzy do dziesięciu pręcików z fioletowymi pylnikami oraz trzy szyjki słupka.",
+            "tekst": "Trzy do dziesięciu pręcików ma fioletowe pylniki. Kwiat posiada trzy słupki.",
             "zrodla": [
               2
             ],
@@ -3292,7 +3160,7 @@
             ]
           },
           {
-            "tekst": "Kwiaty pojawiają się w niewielkich kwiatostanach typu dichazium i charakteryzują się fioletowymi pylnikami na pręcikach oraz trzema szyjkami słupka.",
+            "tekst": "Nieliczne kwiaty zebrane są w baldaszkowate dichazje... Trzy do dziesięciu pręcików ma fioletowe pylniki. Występują trzy słupki.",
             "zrodla": [
               2
             ],
@@ -3301,7 +3169,7 @@
             ]
           },
           {
-            "tekst": "Kwiaty mają białe, dwudzielne płatków, które są znacznie krótsze kielichokwiatów (dł. 1–3 mm vs 3–5 mm), a liczba pręcików zwykle wynosi 3, choć może sięgać do 8.",
+            "tekst": "Często występują tylko 3 pręciki, ale czasami jest ich więcej (do 8) oraz 3 słupki. Kwiaty są małe, o średnicy mniejszej niż 1 cm, z 5 rozszczepionymi białymi płatkami o długości 1–3 mm, schowanymi wewnątrz większych (o długości 3–5 mm) działek kielicha.",
             "zrodla": [
               3
             ],
@@ -3310,7 +3178,7 @@
             ]
           },
           {
-            "tekst": "Na zewnątrz, na stronach distalnych owalnych kielichokwiatów, rosną długie, faliste (mistkowe) włoski.",
+            "tekst": "Te działki kielicha mają długie, faliste (włoskowate) włoski na zewnętrznych (dystalnych) stronach, są owalne i zazwyczaj występują w liczbie 5.",
             "zrodla": [
               3
             ],
@@ -3346,25 +3214,17 @@
             ]
           },
           {
-            "tekst": "Drobne, białe kwiaty gwiazdnicy pospolitej tworzą kwiatostany typu wierzchotka, usytuowane na szczytach pędów lub w kątach liści, a każdy z nich posiada trzy szyjki słupka.",
+            "tekst": "Kwiatostan baldaszkowaty, osadzony na końcach gałęzi lub w kątach liści; szypułki kwiatowe smukłe; 5 działek kielicha; 5 płatków, głęboko dwukrotnie rozciętych; trzy słupki.",
             "zrodla": [
               5
             ],
             "fakty": [
-              "s635"
-            ]
-          },
-          {
-            "tekst": "Kwiaty są białe, z pięcioma kielichami i pięcioma płatkami głęboko dwupodzielonymi, a roślina posiada trzy słupki.",
-            "zrodla": [
-              5
-            ],
-            "fakty": [
+              "s635",
               "s2419"
             ]
           },
           {
-            "tekst": "Liście i liście zarodkowe wykonują ruchy senne, rozwijając się rano przy suchej pogodzie i zamykając się w warunkach dużej wilgotności.",
+            "tekst": "Liścienie i liście wykonują ruchy senne i przyjmują pozycję dzienną/nocną. Przy suchej pogodzie rozwijają się około dziewiątej rano i kwitną do wieczora. Przy wilgotnej pogodzie kwiaty pozostają zamknięte.",
             "zrodla": [
               2
             ],
@@ -3373,16 +3233,7 @@
             ]
           },
           {
-            "tekst": "Dolne liście posiadają krótkie ogonki, natomiast liście rosnące w górnej części łodygi wyrastają bezpośrednio z niej.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s579"
-            ]
-          },
-          {
-            "tekst": "Liście gwiazdnicy pospolitej są proste, zielone i owalne, mierzą od 6 do 25 mm długości oraz od 3 do 10 mm szerokości i posiadają charakterystyczny hydathod na wierzchołku, co powoduje wydzielanie kropli wody.",
+            "tekst": "Liście są zielone, nagie, owalne i przeciwległe, o długości od 6 do 25 mm (od 1⁄4 do 1 cala) i szerokości od 3 do 10 mm (od 1⁄8 do 3⁄8 cala), z hydatodą na końcu.",
             "zrodla": [
               3
             ],
@@ -3391,7 +3242,7 @@
             ]
           },
           {
-            "tekst": "Ogonki liściowe gwiazdnicy pospolitej osiągają długość od 5 do 8 mm i posiadają owłosione brzegi.",
+            "tekst": "Ogonki liściowe mają od 5 do 8 mm długości i są owłosione na krawędziach.",
             "zrodla": [
               3
             ],
@@ -3400,25 +3251,27 @@
             ]
           },
           {
-            "tekst": "Naprzeciwległe, jajowate liście tej rośliny charakteryzują się wyjątkową delikatnością i kruchością, przez co bardzo łatwo ulegają uszkodzeniu.",
+            "tekst": "Liście jajowate, małe, przeciwległe, z ostro zakończonymi wierzchołkami, kruche i łatwo łamliwe",
             "zrodla": [
               5
             ],
             "fakty": [
-              "s636"
-            ]
-          },
-          {
-            "tekst": "Liście gwiazdnicy są małe, owalne, ustawione naprzeciwlegle, z ostrym końcem i są kruche oraz łatwo łamliwe.",
-            "zrodla": [
-              5
-            ],
-            "fakty": [
+              "s636",
               "s2418"
             ]
           },
           {
-            "tekst": "Owoce mają postać podługowatej torebki, która jest dłuższa od kielicha i pęka sześcioma ząbkami niemal do połowy swojej długości.",
+            "tekst": "Czerwono-brązowe nasiona mają średnicę od 0,9 do 1,3 mm i płaskie, tępe guzki.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s525",
+              "s582"
+            ]
+          },
+          {
+            "tekst": "Podługowata torebka dłuższa od kielicha. Pęka 6 ząbkami niemal do połowy długości.",
             "zrodla": [
               1
             ],
@@ -3427,20 +3280,12 @@
             ]
           },
           {
-            "tekst": "Pięcio- lub sześcioklapowa kapselfrucht osiąga około 3 do 5 milimetrów długości i zwisa w dół na wygiętym szypułku.",
+            "tekst": "Owoc w postaci kapsułki z pięcioma lub sześcioma klapami ma około 3–5 mm długości i zwisa, wygięty w dół, na szypułce.",
             "zrodla": [
               2
             ],
             "fakty": [
-              "s524"
-            ]
-          },
-          {
-            "tekst": "Owocem jest pękająca pięcio- lub sześcioklapowa torebka, która w trakcie dojrzewania zwisa łukowato w dół na szypułce.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
+              "s524",
               "s581"
             ]
           },
@@ -3454,6 +3299,15 @@
             ]
           },
           {
+            "tekst": "Gwiazdnica pospolita to jednoroczna roślina zielna… o wrzecionowatym, płaskim korzeniu.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s577"
+            ]
+          },
+          {
             "tekst": "Łodygi rośliny mają czerwonawofioletowy odcień, rozgałęziają się od nasady i płożą się, a zimą zachowują zielone liście rozłożone na ziemi.",
             "zrodla": [
               4
@@ -3463,147 +3317,8 @@
             ]
           }
         ],
-        "model": "bez LLM: 25 punktow",
-        "wejscie": "2ac5d474ca1c8d79"
-      },
-      "czesci_rosliny.nasiona.opis_botaniczny": {
-        "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Opis surowca",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "Ich powierzchnia pokryta jest płaskimi, tępiymi brodawkami.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s525",
-              "s582"
-            ]
-          }
-        ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "52d9c5113618b295"
-      },
-      "czesci_rosliny.ziele.opis_botaniczny": {
-        "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Opis surowca",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "Roślina jest jednoroczna i ma zwężającą się, wrzecionowatą korzeń o charakterze spłaszczonym.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s577"
-            ]
-          }
-        ],
-        "model": "bez LLM: za duzo zdan spoza zrodel",
-        "wejscie": "3cbfa9e46ceffa15"
-      },
-      "profil_energetyczny.termika": {
-        "tytul": "Natura i siedlisko - Termika",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "Jest gatunkiem kosmopolitycznym występującym na całym świecie, na półkuli południowej sięgającym po wyspy wokół Antarktydy, a na północnej po Svalbard.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s359"
-            ]
-          },
-          {
-            "tekst": "Roślina zawiera w swoim składzie witaminy, saponiny, flawonoidy, kumaryny, minerały, kwas szczawiowy, cynk oraz olejki eteryczne.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s486"
-            ]
-          }
-        ],
-        "model": "bez LLM: za duzo zdan spoza zrodel",
-        "wejscie": "08cb2a4e5e36dd94"
-      },
-      "wymagania.stanowisko": {
-        "tytul": "Natura i siedlisko - Stanowisko",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "Pierwotne obszary występowania gwiazdnicy pospolitej obejmują Eurazję oraz północną Afrykę, przy czym obecnie roślina jest notowana na całym świecie, w tym w Chinach.",
-            "zrodla": [
-              2,
-              5
-            ],
-            "fakty": [
-              "s527",
-              "s499"
-            ]
-          },
-          {
-            "tekst": "Gwiazdnica pospolita występuje od nizin aż po wysokie stany, osiągając w Szwajcarii w kantonie Valais wysokość 2694 m n.p.m.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s526",
-              "s585"
-            ]
-          },
-          {
-            "tekst": "W Alpach Allgäu gatunek dociera aż do szczytu Jöchelspitze w Tyrolu, gdzie osiąga wysokość 2226 m n.p.m.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s585"
-            ]
-          },
-          {
-            "tekst": "Gwiazdnica pospolita występuje m.in. na polach uprawnych, nieużytkach i przydrożach.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s521"
-            ]
-          }
-        ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "98bb4bf4044a86ea"
-      },
-      "wymagania.gleba": {
-        "tytul": "Natura i siedlisko - Gleba",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "Roślina preferuje gleby wilgotne, żyzne oraz zasobne w azot, występując m.in. na polach uprawnych, nieużytkach i przydrożach.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s473"
-            ]
-          },
-          {
-            "tekst": "Wartości Ellenberga wskazują na preferencję dobrze nawodnionych siedlisk o umiarkowanej zasobności i kwasowości gleb.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s483"
-            ]
-          }
-        ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "1e0f5ee6a6849a02"
+        "model": "bez LLM",
+        "wejscie": "1552b25fc2898e67"
       },
       "czesci_rosliny.ziele.czas_zbioru": {
         "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Zbiór",
@@ -3611,7 +3326,7 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Surowcem zielarskim jest świeże ziele, które ze względu na całoroczny wzrost przeważnie nie wymaga suszenia i może być zbierane do czasu zawiązywania nasion.",
+            "tekst": "Surowiec zielarski Ziele Herba Stellariae mediae. [...] Ponieważ rośnie przez cały rok, przeważnie nie ma potrzeby jej suszenia. Zbiera się świeże ziele.",
             "zrodla": [
               1
             ],
@@ -3620,25 +3335,18 @@
             ]
           },
           {
-            "tekst": "W Japonii wczesnym latem cała roślina jest suszona na słońcu, a uzyskany w ten sposób susz nazywany jest hanrou (lub hanrō) i jest stosowany jako surowiec zielarski.",
+            "tekst": "Wczesnym latem suszy się na słońcu całą roślinę, z której uzyskuje się surowiec zielarski o nazwie hanrō.",
             "zrodla": [
               4
             ],
             "fakty": [
-              "s587",
-              "s1893",
               "s534",
               "s637"
             ]
-          },
-          {
-            "tekst": "Czasem w Japonii stosuje się również świeże ziele.",
-            "zrodla": [],
-            "fakty": []
           }
         ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "bf73e41b9846bd44"
+        "model": "bez LLM",
+        "wejscie": "84aeedef1a309585"
       },
       "czesci_rosliny.ziele.skladniki_aktywne": {
         "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Substancje czynne",
@@ -3646,25 +3354,7 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Ziele gwiazdnicy pospolitej zawiera saponiny, witaminy C, E, PP, B1 oraz B2.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s361"
-            ]
-          },
-          {
-            "tekst": "W składzie surowca znajdują się flawonoidy (rutyна), kwas paraaminobenzoesowy oraz kwas gamma-linolenowy.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s361"
-            ]
-          },
-          {
-            "tekst": "Ziele obfituje w liczne sole mineralne, w tym potas, fosfor, wapń, żelazo, magnez, sód, selen, jod i krzem.",
+            "tekst": "Zawiera saponiny, witaminy C, E, PP, B1, B2, flawonoid rutynę, kwas paraaminobenzoesowy, Kwas γ-linolenowy, sole mineralne (potas, fosfor, wapń, żelazo, magnez, sód, selen, jod, krzem).",
             "zrodla": [
               1
             ],
@@ -3674,7 +3364,7 @@
             ]
           },
           {
-            "tekst": "Roślina zawiera dwukrotnie więcej wapnia, trzykrotnie więcej potasu i magnezu oraz siedmiokrotnie więcej żelaza niż sałata masłowa.",
+            "tekst": "Gwiazdnica zawiera dwa razy więcej wapnia, trzy razy więcej potasu i magnezu oraz siedem razy więcej żelaza niż sałata głowiasta.",
             "zrodla": [
               2
             ],
@@ -3683,7 +3373,7 @@
             ]
           }
         ],
-        "model": "groq/qwen/qwen3.8-27b",
+        "model": "bez LLM",
         "wejscie": "855a7ab57abc0480"
       },
       "zastosowanie.medyczne": {
@@ -3692,36 +3382,7 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Gwiazdnica pospolita wykazuje działanie przeciwzapalne, przeciwbakteryjne, żółciopędne, przeciwcyngetyczne, rozszerzające naczynia wieńcowe oraz obniżające ciśnienie krwi.",
-            "zrodla": [
-              8
-            ],
-            "fakty": [
-              "s589"
-            ]
-          },
-          {
-            "tekst": "Tradycyjnie ziele i kwiaty tej rośliny wykorzystywano do leczenia chorób żołądkowo-jelitowych, w tym zapalenia żołądka, śródnej i trzewnego zapalenia jelit, biegunki oraz kolek.",
-            "zrodla": [
-              8
-            ],
-            "fakty": [
-              "s592"
-            ]
-          },
-          {
-            "tekst": "W praktyce zielarskiej napar z gwiazdnicy stosuje się zarówno zewnętrznie, jak i wewnętrznie, aby łagodzić dolegliwości takie jak obrzęki sercowe i nerkowe, neurastenię, padaczkę, drgawki, anemię oraz niedobory witamin.",
-            "zrodla": [
-              2,
-              8
-            ],
-            "fakty": [
-              "s489",
-              "s591"
-            ]
-          },
-          {
-            "tekst": "Ekstrakt ze świeżej rośliny znajduje zastosowanie w naturopatii w leczeniu reumatyzmu i bólów stawów.",
+            "tekst": "Wyciąg ze świeżej rośliny stosuje się więc w leczeniu reumatyzmu i bólów stawów. W postaci herbaty znajduje zastosowanie zarówno do użytku zewnętrznego, jak i wewnętrznego.",
             "zrodla": [
               2
             ],
@@ -3730,61 +3391,7 @@
             ]
           },
           {
-            "tekst": "Inną formą leczenia reumatycznych bólów, anemii z niedoboru żelaza oraz bronchytów jest stosowanie rośliny przez współczesnych zielarzy, co nawiązuje do historycznych zaleceń Johna Gerarda z XVII wieku, który odradzał ją jako środek na świerzbiączkę.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s371"
-            ]
-          },
-          {
-            "tekst": "Aby złagodzić stany zapalne stawów, reumatyzm, nadwyrężenia więzadeł, zapalenie mięśni oraz obrzęki nóg, tradycyjnie przygotowuje się wlewki kompresowe z gwiazdnicy.",
-            "zrodla": [
-              8
-            ],
-            "fakty": [
-              "s593"
-            ]
-          },
-          {
-            "tekst": "Łudzie Ainu stosowali łodygi rośliny w leczeniu siniaków i bólów kości, po zamoczeniu ich w gorącej wodzie i nałożeniu na bolące miejsca.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s372"
-            ]
-          },
-          {
-            "tekst": "Uznaje się, że gwiazdnica może wspierać stymulację laktacji u kobiet karmiących oraz wspierać organizm w przypadku niedoborów witaminowych.",
-            "zrodla": [
-              8
-            ],
-            "fakty": [
-              "s595"
-            ]
-          },
-          {
-            "tekst": "W lecznictwie homeopatycznym z gwiazdnicy pospolitej przygotowuje się esencję z wykorzystaniem świeżo zebranych okazów rośliny.",
-            "zrodla": [
-              8
-            ],
-            "fakty": [
-              "s590"
-            ]
-          }
-        ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "0b678820cbce7a41"
-      },
-      "permakultura.funkcje": {
-        "tytul": "Cykl życia i ekosystem - Permakultura - funkcje",
-        "typ": "lista",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "Roślina może rozprzestrzeniać się wegetatywnie za pomocą oderwanych fragmentów łodyg, które są zdolne do ukorzenienia się.",
+            "tekst": "Możliwe jest również rozmnażanie wegetatywne poprzez odłamane fragmenty łodyg, które się ukorzeniają.",
             "zrodla": [
               2
             ],
@@ -3793,17 +3400,80 @@
             ]
           },
           {
-            "tekst": "W uprawach takich jak winnice i ogrody roślina chroni glebę przed wysuszeniem latem i mrozem zimą oraz ogranicza erozję, pełniąc pożyteczną rolę.",
+            "tekst": "W XVII wieku ziołoznawca John Gerard zalecał gwiazdnicę jako środek na świerzbiączkę (mange), a współcześni zielarze stosują ją na anemię z niedoboru żelaza, bronchyty i reumatyczne bóle.",
             "zrodla": [
-              2
+              3
             ],
             "fakty": [
-              "s493"
+              "s371"
+            ]
+          },
+          {
+            "tekst": "Roślina ta była stosowana przez Ajnów w leczeniu siniaków i bólu kości. Łodygi moczono w gorącej wodzie, a następnie nakładano je zewnętrznie na dotknięte obszary.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s372"
+            ]
+          },
+          {
+            "tekst": "Gwiazdnica średnia wykazuje umiarkowane działanie przeciwzapalne, przeciwbakteryjne, żółciopędne, przeciwszkorbutowe, rozszerzające naczynia wieńcowe oraz hipotensyjne.",
+            "zrodla": [
+              9
+            ],
+            "fakty": [
+              "s589"
+            ]
+          },
+          {
+            "tekst": "Homeopaci przygotowują leczniczą esencję na bazie świeżo zebranej gwiazdnicy średniej.",
+            "zrodla": [
+              9
+            ],
+            "fakty": [
+              "s590"
+            ]
+          },
+          {
+            "tekst": "Nalewka z gwiazdnicy średniej jest pomocna w przypadku obrzęków pochodzenia sercowego i nerkowego, nerwicach, padaczce, napadach nerwowych, drgawkach, chorobach zakaźno-zapalnych i układu oddechowego, niedoborach witamin, niedoborach odpornościowych, szkorbutie i niedokrwistości.",
+            "zrodla": [
+              9
+            ],
+            "fakty": [
+              "s591"
+            ]
+          },
+          {
+            "tekst": "Mokryca jest również pomocna w przypadku chorób przewodu pokarmowego, na przykład w przypadku zapalenia żołądka, zapalenia jelit, zapalenia okrężnicy, zapalenia jelit i okrężnicy, biegunki oraz kolki.",
+            "zrodla": [
+              9
+            ],
+            "fakty": [
+              "s592"
+            ]
+          },
+          {
+            "tekst": "Okłady z mokrycy można stosować w przypadku chorób stawów, skręceń więzadeł, zapalenia mięśni, zapalenia stawów, reumatyzmu, rwy kulszowej, mastopatii oraz obrzęków nóg.",
+            "zrodla": [
+              9
+            ],
+            "fakty": [
+              "s593"
+            ]
+          },
+          {
+            "tekst": "Może być również stosowana w celu pobudzenia laktacji oraz w leczeniu niedoborów witamin.",
+            "zrodla": [
+              9
+            ],
+            "fakty": [
+              "s595"
             ]
           }
         ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "c11ebf139bfa2feb"
+        "model": "bez LLM",
+        "wejscie": "fb849fef04ec6977"
       },
       "czesci_rosliny.ziele.wlasciwości": {
         "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Działanie",
@@ -3811,70 +3481,52 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Zewnętrznie wyciągi ze świeżej rośliny stosuje się do okładania ran w celu przyspieszenia gojenia oraz w schorzeniach skórnych, natomiast kąpiele z dodatkiem naparu łagodzą swędzenie.",
+            "tekst": "Zewnętrznie przy schorzeniach skórnych, na okładanie ran (przyspiesza ich gojenie). Stosuje się w postaci świeżych, zmiażdżonych roślin przyłożonych na skórę. Kąpiel w wodzie z dodatkiem naparu z gwiazdnicy pospolitej łagodzi swędzenie i podrażnienie skóry.",
             "zrodla": [
               1
             ],
             "fakty": [
-              "s362"
-            ]
-          },
-          {
-            "tekst": "Wyciągi wodne z rośliny stosuje się wewnętrznie w leczeniu reumatyzmu, artretyzmu, nadciśnienia, zaparć oraz dolegliwości ze strony nerek i serca.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s470"
-            ]
-          },
-          {
-            "tekst": "Wyciągi wodne z ziela stosuje się wewnętrznie przy nieprawidłowej przemianie materii, hemoroidach, chrypce oraz szkorbucie.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s566"
-            ]
-          },
-          {
-            "tekst": "Odwarem z ziela można nacierać skórę w miejscach występowania dolegliwości reumatycznych.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s567"
-            ]
-          },
-          {
-            "tekst": "Ziele wykazuje działanie stabilizujące na wątrobę oraz skraca czas rozpuszczania płytek miażdżycowych w naczyniach krwionośnych.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s568"
-            ]
-          },
-          {
-            "tekst": "Ziele stosuje się wewnętrznie w leczeniu reumatyzmu, artretyzmu, nieprawidłowej przemianie materii, schorzeniach skórnych, hemoroidach, niedomaganiach serca, chorobach nerek, zaparciach, nadciśnieniu, kaszlu, chrypce, szkorbucie oraz przy stanach zapalnych.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s624"
-            ]
-          },
-          {
-            "tekst": "Zewnętrznie stosuje się ziele do okładania ran i łagodzenia swędzenia skóry.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
+              "s362",
               "s625"
             ]
           },
           {
-            "tekst": "Ziele stosuje się do produkcji preparatów do pielęgnacji cery.",
+            "tekst": "Wewnętrznie wyciągi wodne stosuje się przy reumatyzmie i artretyzmie, nieprawidłowej przemianie materii, schorzeniach skórnych, hemoroidach, niedomaganiach serca, chorobach nerek, zaparciach, nadciśnieniu, kaszlu, chrypce, szkorbucie oraz przy stanach zapalnych.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s470",
+              "s566",
+              "s624",
+              "s628",
+              "s629",
+              "s2410"
+            ]
+          },
+          {
+            "tekst": "Można też odwarem nacierać skórę w miejscu dolegliwości reumatycznych.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s567",
+              "s2413"
+            ]
+          },
+          {
+            "tekst": "Działa stabilizująco na wątrobę, przyspiesza gojenie się ran i skraca czas rozpuszczania płytek miażdżycowych w naczyniach krwionośnych.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s568",
+              "s627",
+              "s2411"
+            ]
+          },
+          {
+            "tekst": "Wykorzystywana jest do produkcji preparatów do pielęgnacji cery. Na skórę wykazuje działanie łagodzące i nawilżające.",
             "zrodla": [
               1
             ],
@@ -3883,52 +3535,7 @@
             ]
           },
           {
-            "tekst": "Ziele wykazuje działanie odtruwające, przeciwkrwotoczne, przeciwnowotworowe, moczopędne, przeciwreumatyczne, ściągające, wykrztuśne, wiatropędne i przeczyszczające.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s627"
-            ]
-          },
-          {
-            "tekst": "Ziele stosuje się w leczeniu hemoroidów i zaparć.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s628"
-            ]
-          },
-          {
-            "tekst": "Ziele stosuje się w leczeniu kaszlu i chrypki.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s629"
-            ]
-          },
-          {
-            "tekst": "Wyciągi wodne z zielę stosowane są wewnętrznie między innymi na kaszel i chrypkę, a także wspomagająco przy szkorbucie.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s2410"
-            ]
-          },
-          {
-            "tekst": "Roślina wykazuje działanie stabilizujące na wątrobę, ponadto ma właściwości odtruwające, przeciwkrwotoczne oraz przeciwnowotworowe.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s2411"
-            ]
-          },
-          {
-            "tekst": "Ziele gwiazdnicy pospolitej stanowi jeden ze składników preparatów odchudzających.",
+            "tekst": "Jest jednym ze składników preparatów odchudzających.",
             "zrodla": [
               1
             ],
@@ -3937,29 +3544,12 @@
             ]
           },
           {
-            "tekst": "Oprócz okładów i kąpieli, do nacierania skóry w miejscach reumatycznych używa się odwaru z rośliny.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s2413"
-            ]
-          },
-          {
-            "tekst": "W medycynie ludowej ziele stosuje się przy chorobach dróg oddechowych, a także pomocniczo w stanach zapalnych, bólach, skurczach, dolegliwościach wątroby, gośćcu i chorobach pęcherza moczowego.",
+            "tekst": "W medycynie ludowej stosuje się ją w leczeniu chorób układu oddechowego; ponadto uważa się, że pomaga ona w stanach zapalnych, bólach, skurczach, dolegliwościach wątroby, reumatyzmie i chorobach pęcherza moczowego",
             "zrodla": [
               2
             ],
             "fakty": [
-              "s378"
-            ]
-          },
-          {
-            "tekst": "W medycynie ludowej ziele stosuje się ogólnie do oczyszczania i wzmacniania całego organizmu.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
+              "s378",
               "s578"
             ]
           },
@@ -3991,7 +3581,7 @@
             ]
           }
         ],
-        "model": "bez LLM: 20 punktow",
+        "model": "bez LLM",
         "wejscie": "d4566f127435e8ed"
       },
       "zastosowanie.rzemieslnicze": {
@@ -4000,7 +3590,7 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "W przeszłości z ziela oraz zielonej masy gwiazdnicy pospolitej pozyskiwano szary barwnik.",
+            "tekst": "Dawniej z ziela otrzymywano szary barwnik.",
             "zrodla": [
               1
             ],
@@ -4010,7 +3600,7 @@
             ]
           }
         ],
-        "model": "groq/qwen/qwen3.8-27b",
+        "model": "bez LLM",
         "wejscie": "98ee2338b2f83e3a"
       },
       "zastosowanie.kosmetyczne": {
@@ -4019,43 +3609,61 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Gwiazdnica pospolita wykazuje działanie łagodzące i nawilżające na skórę, w związku z czym jest wykorzystywana do produkcji preparatów służących do pielęgnacji cery.",
+            "tekst": "Wykorzystywana jest do produkcji preparatów do pielęgnacji cery. Na skórę wykazuje działanie łagodzące i nawilżające.",
             "zrodla": [
               1
             ],
             "fakty": [
               "s363"
             ]
+          },
+          {
+            "tekst": "W dawnych czasach z suszonego ziela utartego na proszek z dodatkiem soli przygotowywano tradycyjny preparat o nazwie hako-be-jio, który służył do higieny zębów.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s536"
+            ]
+          },
+          {
+            "tekst": "Dawniej proszek z wysuszonego ziela mieszano z solą kuchenną w proporcji trzy do jednego, otrzymując tzw. sól habokeri, która była tradycyjnie używana do czyszczenia zębów.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s639"
+            ]
           }
         ],
-        "model": "groq/qwen/qwen3.8-27b",
+        "model": "bez LLM",
         "wejscie": "2730ddbbda6cfe8d"
       },
-      "zastosowanie.kulinarne": {
-        "tytul": "Praktyczne zastosowanie - Kuchnia",
-        "typ": "tekst",
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Roślina jest jadalna i odżywcza, co sprawia, że jest regularnie stosowana jako warzywo liściowe, często bezpośrednio na surowo w sałatkach.",
+            "tekst": "Roślina używana była dawniej jako dobra pasza dla kurcząt i indyków.",
             "zrodla": [
-              3
+              1
             ],
             "fakty": [
-              "s474"
+              "s2415"
             ]
           },
           {
-            "tekst": "Niektóre odmiany lub blisko spokrewnione gatunki mogą wykazywać zbyt dużą włóknistość, co dyskwalifikuje je do spożycia, ale pospolita gwiazdnica jest przyjemna w smaku, przypominając młody, surowy kolbek kukurydzy.",
+            "tekst": "Przedrostek „media” oznacza „pośrodku”.",
             "zrodla": [
-              3
+              5
             ],
             "fakty": [
-              "s478"
+              "s633"
             ]
           },
           {
-            "tekst": "Zaledwie 50 gramów sałatki z tego ziela pozwala pokryć dzienne zapotrzebowanie dorosłego człowieka na witaminę C.",
+            "tekst": "Ich smak przypomina młodą, surową kukurydzę. Już 50 gramów sałatki z gwiazdnicy pokrywa w przybliżeniu dzienne zapotrzebowanie osoby dorosłej na witaminę C.",
             "zrodla": [
               2
             ],
@@ -4064,7 +3672,7 @@
             ]
           },
           {
-            "tekst": "W Japonii plisom kwiatów i liści jest tradycyjnym składnikiem zupy ryżowej hakobe, przyrządzanej w siódmym dniu Nowego Roku jako jeden z siedmiu ziół celebracyjnych.",
+            "tekst": "W Japonii często na wiosnę z gwiazdnicy z ryżem robi się zupę ryżową zwaną hakobe. Liście gwiazdnicy są jednym z siedmiu ziół (haru no nanakusa) spożywanych w siódmym dniu Nowego Roku",
             "zrodla": [
               1
             ],
@@ -4073,7 +3681,7 @@
             ]
           },
           {
-            "tekst": "W przeszłości zbierano nasiona rośliny i dodawano je do zup, jednak ze względu na bardzo drobne rozmiary wymagało to dużej determinacji.",
+            "tekst": "Dawniej zbierano nawet jej nasiona i dodawano je do zup, jednak ze względu na drobne rozmiary jest to zajęcie tylko dla bardzo zdeterminowanych.",
             "zrodla": [
               1
             ],
@@ -4082,104 +3690,105 @@
             ]
           },
           {
-            "tekst": "Czasem uprawiany jako roślina sałatowa lub jako pasza dla drobiu.",
+            "tekst": "W Chinach roślina znana jest pod nazwą „ge cháng cai”, a w innych regionach nosi nazwy takie jak „ge er xin jin”, „ji er cháng” i „ge er cháng”.",
             "zrodla": [
-              3
+              5
             ],
             "fakty": [
-              "s475"
+              "s498"
             ]
-          }
-        ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "181069c4bd258067"
-      },
-      "ostrzezenia": {
-        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
+          },
           {
-            "tekst": "Ze względu na zawartość saponin nie należy spożywać zbyt dużych ilości tej rośliny.",
+            "tekst": "Gęsie ucho (Badong, prowincja Hubei)",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s586"
+            ]
+          },
+          {
+            "tekst": "„Gęsie jelita” (Ben Cao Gang Mu) „Gęsie ucho rozciągające ścięgna” (Badong, prowincja Hubei) „Kurze jelita” (Jiangsu) „Gęsie jelita” (Syczuan)",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s634",
+              "s2420"
+            ]
+          },
+          {
+            "tekst": "Zachowują zdolność kiełkowania od 6 do 68 lat. Rozsiewane są przez wiatr, ale także przez zwierzęta – bez utraty zdolności kiełkowania przechodzą bowiem przez ich przewód pokarmowy (endochoria).",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s366"
+            ]
+          },
+          {
+            "tekst": "Liście gwiazdnicy są jednym z siedmiu ziół (haru no nanakusa) spożywanych w siódmym dniu Nowego Roku (dawniej w chińskim kalendarzu księżycowym był to siódmy dzień pierwszego miesiąca).",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2414"
+            ]
+          },
+          {
+            "tekst": "Linia włosków na łodydze, będąca charakterystyczną cechą rozpoznawczą, wspomaga roślinę w zaopatrzeniu w wodę. Krople rosy spływają wzdłuż tej linii do najbliższej pary liści, gdzie w razie potrzeby pobierana jest niewielka ilość wody.",
             "zrodla": [
               2
             ],
             "fakty": [
-              "s488"
+              "s491"
             ]
           },
           {
-            "tekst": "Roślina zawiera saponiny, które mogą być toksyczne dla niektórych gatunków, zwłaszcza ryb, choć niewielkie ilości nie wpłyną negatywnie na większość zwierząt lądowych; nie zaleca się jej spożywania w okresie ciąży i karmienia piersią.",
+            "tekst": "nie należy jednak lekceważyć ich korzyści, zwłaszcza w takich uprawach jak winnice i ogrody, ponieważ gęste, płaskie i sięgające nawet 40 centymetrów długości rozłogi chronią glebę latem przed wysychaniem, a zimą przed bezpośrednim działaniem mrozu oraz ogólnie ograniczają erozję.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s493"
+            ]
+          },
+          {
+            "tekst": "Mrówki roznoszą nasiona z brodawkami po ich rozsypaniu.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s529"
+            ]
+          },
+          {
+            "tekst": "Larwy następujących gatunków motyli żywią się gwiazdnicą: ćma z rodziny geometerów (Haematopis grataria), żółtka (Camptogramma bilineata)...",
             "zrodla": [
               3
             ],
             "fakty": [
-              "s369"
+              "s373"
             ]
           },
           {
-            "tekst": "Spożywanie i stosowanie gwiazdnicy jest przeciwwskazane dla kobiet w ciąży, dzieci, osób z niedociśnieniem oraz osób skłonnych do reakcji alergicznych.",
+            "tekst": "Stellaria media jest jadalna i odżywcza; wykorzystuje się ją jako warzywo liściaste, często na surowo w sałatkach.",
             "zrodla": [
-              8
+              3
             ],
             "fakty": [
-              "s594"
-            ]
-          }
-        ],
-        "model": "bez LLM: brak modelu",
-        "wejscie": "a121e6f404b73a67"
-      },
-      "zastosowanie.ogrodowe": {
-        "tytul": "Praktyczne zastosowanie - Ogród",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "Nasiona gatunku kiełkują już przy temperaturze 2 °C, a optymalna temperatura dla tego procesu wynosi 13–20 °C.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s570"
+              "s474"
             ]
           },
           {
-            "tekst": "Roślina może rozmnażać się wegetatywnie, ponieważ jej łodygi łatwo ukorzeniają się w węzłach.",
+            "tekst": "Niektóre odmiany lub podobne gatunki mogą być zbyt włókniste, by je spożywać.",
             "zrodla": [
-              1
+              3
             ],
             "fakty": [
-              "s571"
+              "s478"
             ]
           },
-          {
-            "tekst": "Gwiazdnica pospolita rozprzestrzenia się zarówno przez nasiona, jak i wegetatywnie, ponieważ jej łodygi łatwo ukorzeniają się w miejscach stycznych z podłożem tzw. węzłach.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s2416"
-            ]
-          },
-          {
-            "tekst": "Nasiona gwiazdnicy pospolitej są zdolne do kiełkowania już przy temperaturze od +2 do +4°C, a ich żywotność w glebie utrzymuje się do 5 lat.",
-            "zrodla": [
-              6
-            ],
-            "fakty": [
-              "s643"
-            ]
-          }
-        ],
-        "model": "bez LLM: brak modelu",
-        "wejscie": "c43bbdf4fcf899e6"
-      },
-      "czesci_rosliny.ziele.ostrzezenia": {
-        "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Ostrzeżenia",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
           {
             "tekst": "Oprócz wcześniej wymienionych, roślina zawiera antrachinony (emodina, parietyna, kwestyna), flawonoid kaempferol-3,7-O-α-L-dirhamnozyd, fitosterole (β-sitosterol, daucosterol) oraz alkohol tłuszczowy 1-hexacosanol.",
             "zrodla": [
@@ -4190,39 +3799,256 @@
             ]
           },
           {
-            "tekst": "Wykazano obecność triterpenowych saponin typu uwodornionej kwasu oleanolowego.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s481"
-            ]
-          }
-        ],
-        "model": "bez LLM: brak modelu",
-        "wejscie": "a12e1e477728bceb"
-      },
-      "czesci_rosliny.nasiona.skladniki_aktywne": {
-        "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Substancje czynne",
-        "typ": "lista",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "Nasadka nasion zawiera proantonocyjany.",
+            "tekst": "Proantocyjanidyny występują w osłonce nasion.",
             "zrodla": [
               3
             ],
             "fakty": [
               "s480"
             ]
+          },
+          {
+            "tekst": "Roślina ta zawiera również saponiny triterpenoidowe z grupy hydroksylowanych kwasów oleanolowych.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s481"
+            ]
+          },
+          {
+            "tekst": "Jest podatna na mączniaka rzekomego wywoływanego przez gatunek oomycety Peronospora alsinearum.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s482"
+            ]
+          },
+          {
+            "tekst": "Gwiazdnica średnia (Stellaria media) | tak, rośnie aż do zapełnienia grządki | jadalna (sałata polna), roślina wskaźnikowa dla gleby bogatej w azot",
+            "zrodla": [
+              7
+            ],
+            "fakty": [
+              "s541"
+            ]
+          },
+          {
+            "tekst": "Możliwe jest również rozmnażanie wegetatywne poprzez odłamane fragmenty łodyg, które się ukorzeniają.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s632"
+            ]
+          },
+          {
+            "tekst": "Nektar wydzielany jest u podstawy pręcików, i to wyłącznie przy słonecznej pogodzie. Odwiedziny owadów są rzadkie. Jako zapylacze występują błonkówki, dwuskrzydłe i frędzlowoskrzydłe (Thysanoptera).",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s528"
+            ]
+          },
+          {
+            "tekst": "Nektar jest wydzielany u podstawy pręcików, i to wyłącznie przy słonecznej pogodzie... Ponieważ kwiaty są obupłciowe, zazwyczaj dochodzi do samozapylenia",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s583"
+            ]
+          },
+          {
+            "tekst": "Owoce są to dmuchawki, które rozrzucają nasiona w sposób samorozsiewczy. Mrówki roznoszą te brodawkowate nasiona po ich rozrzuceniu.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s584"
+            ]
+          },
+          {
+            "tekst": "szarobrunatne lub popielate, kuliste lub nerkowate, matowe nasiona. Mają pomarszczoną powierzchnię z 4 rzędami brodawek.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s502"
+            ]
+          },
+          {
+            "tekst": "Pojedynczy egzemplarz rośliny może wyprodukować do 15 000 nasion, a w ciągu roku mogą rozwinąć się dwie lub trzy pokolenia.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s380"
+            ]
           }
         ],
-        "model": "bez LLM: brak modelu",
-        "wejscie": "85a8be7165ca3ebd"
+        "model": "bez LLM",
+        "wejscie": "5212d9c5689ce1d0"
+      },
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Największe szkody wyrządza młodym siewkom roślin uprawianych przez siew, rozwija się bowiem szybciej od nich i zagłusza je.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s572"
+            ]
+          },
+          {
+            "tekst": "Ze względu na zawartość saponin nie należy jednak spożywać ich w zbyt dużych ilościach.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s488"
+            ]
+          },
+          {
+            "tekst": "Jest ona nosicielem mszyc (Myzus persicae i Aphis fabae), które mogą przenosić wirusa mozaiki ogórka.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s531"
+            ]
+          },
+          {
+            "tekst": "Gwiazdnica pospolita zawiera substancje roślinne zwane saponinami, które mogą być toksyczne dla niektórych gatunków (zwłaszcza ryb). Jest mało prawdopodobne, aby miało to wpływ na większość zwierząt lądowych, ponieważ ilości tych substancji nie są duże. Nie zaleca się jednak jej stosowania w okresie ciąży lub karmienia piersią.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s369"
+            ]
+          },
+          {
+            "tekst": "Jednak na polach uprawnych jest traktowany jako chwast utrudniający wzrost innych zbóż i uważa się, że może spowodować spadek plonów jęczmienia nawet o 80%.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s540",
+              "s642"
+            ]
+          },
+          {
+            "tekst": "Gwiazdnica średnia jest przeciwwskazana dla kobiet w ciąży i dzieci, osób z niedociśnieniem, a także osób podatnych na reakcje alergiczne.",
+            "zrodla": [
+              9
+            ],
+            "fakty": [
+              "s594"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "0109a14b3d3f31d1"
+      },
+      "wymagania.gleba": {
+        "tytul": "Natura i siedlisko - Gleba",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Roślina azotolubna. Preferuje wilgotne, żyzne i przenawożone azotem gleby, ale rośnie na różnych glebach. Na polach uprawnych jest chwastem, szczególnie w uprawach roślin ozimych, rzepaku, buraków, roślin strączkowych, kukurydzy i ziemniaków.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s473"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "050d72b22274d0f6"
+      },
+      "zastosowanie.ogrodowe": {
+        "tytul": "Praktyczne zastosowanie - Ogród",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Kiełkują już przy temperaturze 2 °C, temperatura optymalna wynosi 13–20 °C.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s570"
+            ]
+          },
+          {
+            "tekst": "Rozmnaża się przez nasiona, ale również wegetatywnie, jej łodygi bowiem łatwo ukorzeniają się w węzłach.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s571",
+              "s2416"
+            ]
+          },
+          {
+            "tekst": "Można je również stosować jako dodatek do świeżej karmy dla ptaków ozdobnych i gryzoni.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s490"
+            ]
+          },
+          {
+            "tekst": "Ze względu na intensywne rozmnażanie się i wczesne tworzenie nasion jest ona jednak często uważana za szczególnie uciążliwy „chwast”. Możliwe jest również rozmnażanie wegetatywne poprzez odłamane fragmenty łodyg, które się ukorzeniają.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s530"
+            ]
+          },
+          {
+            "tekst": "Jest podatna na mączniaka rzekomego wywoływanego przez gatunek oomycety Peronospora alsinearum.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s374"
+            ]
+          },
+          {
+            "tekst": "Czasami uprawia się ją jako warzywo sałatkowe lub jako pokarm dla drobiu.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s475"
+            ]
+          },
+          {
+            "tekst": "✔️ Rozmnażanie – nasionami, które są zdolne do kiełkowania już w temperaturze +2…+4°C i zachowują żywotność do 5 lat.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s643"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "d6ffc9c6804a69ed"
       }
     },
     "uzyte_fakty": [
-      "s1893",
       "s1894",
       "s1896",
       "s1898",
@@ -4237,8 +4063,8 @@
       "s2418",
       "s2419",
       "s2420",
+      "s2648",
       "s358",
-      "s359",
       "s360",
       "s361",
       "s362",
@@ -4252,6 +4078,7 @@
       "s371",
       "s372",
       "s373",
+      "s374",
       "s377",
       "s378",
       "s379",
@@ -4268,41 +4095,43 @@
       "s479",
       "s480",
       "s481",
-      "s483",
+      "s482",
       "s484",
       "s485",
-      "s486",
       "s487",
       "s488",
       "s489",
+      "s490",
       "s491",
       "s492",
       "s493",
       "s498",
-      "s499",
       "s500",
       "s501",
       "s502",
-      "s521",
       "s522",
       "s523",
       "s524",
       "s525",
-      "s526",
-      "s527",
       "s528",
       "s529",
+      "s530",
+      "s531",
       "s534",
       "s535",
+      "s536",
       "s537",
       "s538",
       "s539",
+      "s540",
+      "s541",
       "s566",
       "s567",
       "s568",
       "s569",
       "s570",
       "s571",
+      "s572",
       "s577",
       "s578",
       "s579",
@@ -4311,9 +4140,7 @@
       "s582",
       "s583",
       "s584",
-      "s585",
       "s586",
-      "s587",
       "s588",
       "s589",
       "s590",
@@ -4335,7 +4162,9 @@
       "s635",
       "s636",
       "s637",
+      "s639",
       "s641",
+      "s642",
       "s643"
     ]
   },
@@ -4347,7 +4176,7 @@
     "Rycina": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Stellaria_spp_Sturm5.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-11-02",
+    "zaktualizowano": "2026-11-03",
     "w_url": true,
     "zdjecia": [
       {
@@ -4399,181 +4228,124 @@
   },
   "rozmieszczenie": {
     "wersja": 1,
-    "zaktualizowano": "2026-11-02",
+    "zaktualizowano": "2026-11-03",
     "jak": "reguly",
-    "wejscie": "ce72365ab8b840b7",
+    "wejscie": "6f886f7463c58e9d",
     "wstawki": [
       {
-        "miejsce": "zastosowanie/kosmetyka",
-        "rozdzial": "Praktyczne zastosowanie",
-        "tytul": "Kosmetyka",
-        "ikona": "ra-flower",
-        "nowy": false,
-        "punkty": [
-          {
-            "tekst": "W dawnych czasach z suszonego ziela utartego na proszek z dodatkiem soli przygotowywano tradycyjny preparat o nazwie hako-be-jio, który służył do higieny zębów.",
-            "zrodla": [
-              4
-            ],
-            "fakty": [
-              "s536"
-            ],
-            "sekcja": "kosmetyka",
-            "czesc": "ziele"
-          }
-        ]
-      },
-      {
-        "miejsce": "zastosowanie/ogrod",
-        "rozdzial": "Praktyczne zastosowanie",
-        "tytul": "Ogród",
-        "ikona": "ra-pine-tree",
-        "nowy": false,
-        "punkty": [
-          {
-            "tekst": "Roślina jest podatna na mączniaka rzekomego wywoływanego przez zoosporofory gatunku Peronospora alsinearum.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s374"
-            ],
-            "sekcja": "uprawa",
-            "czesc": null
-          }
-        ]
-      },
-      {
-        "miejsce": "zastosowanie/gospodarstwo",
-        "rozdzial": "Praktyczne zastosowanie",
-        "tytul": "Pasza i gospodarstwo",
-        "ikona": "ra-wooden-sign",
+        "miejsce": "natura/wystepowanie",
+        "rozdzial": "Natura i siedlisko",
+        "tytul": "Występowanie i zasięg",
+        "ikona": "ra-compass",
         "nowy": true,
         "punkty": [
           {
-            "tekst": "Roślina może być podawana jako dodatek do świeżej paszy dla ptaków ozdobnych i gryzoni.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s490"
-            ],
-            "sekcja": "uprawa",
-            "czesc": null
-          }
-        ]
-      },
-      {
-        "miejsce": "bezpieczenstwo/chwast",
-        "rozdzial": "Bezpieczeństwo i interakcje",
-        "tytul": "Chwast i inwazyjność",
-        "ikona": "ra-bleeding-eye",
-        "nowy": true,
-        "punkty": [
-          {
-            "tekst": "Na polach uprawnych roślina jest chwastem, który największe szkody wyrządza młodym siewkom uprawianym przez siew, rozwijając się od nich szybciej i je zagłusząjąc.",
+            "tekst": "Gatunek kosmopolityczny występujący na całym świecie. Na półkuli południowej sięga po wyspy wokół Antarktydy, na półkuli północnej po archipelag Svalbard (około 78° szerokości geograficznej).",
             "zrodla": [
               1
             ],
             "fakty": [
-              "s572"
+              "s359"
             ],
-            "sekcja": "bezpieczenstwo",
+            "sekcja": "wystepowanie",
             "czesc": null
           },
           {
-            "tekst": "W uprawach roślina może stanowić wektor dla mszyc przenoszących wirusa mozaiki ogórka.",
+            "tekst": "Występuje od równin aż po góry. W Alpach Allgäu, w części tyrolskiej, na szczycie Jöchelspitze osiąga wysokość 2226 metrów na pastwiskach dla owiec; w kantonie Valais osiąga wysokość 2694 metrów.",
             "zrodla": [
               2
             ],
             "fakty": [
-              "s531"
+              "s526",
+              "s585"
             ],
-            "sekcja": "bezpieczenstwo",
+            "sekcja": "wystepowanie",
             "czesc": null
           },
           {
-            "tekst": "Na polach uprawnych roślina ta bywa uciążliwym chwastem, który może ograniczyć wzrost innych zbóż, w tym zmniejszyć plony jęczmienia nawet o 80%.",
-            "zrodla": [
-              4
-            ],
-            "fakty": [
-              "s540",
-              "s642"
-            ],
-            "sekcja": "bezpieczenstwo",
-            "czesc": null
-          },
-          {
-            "tekst": "W kontekście różnorodności biologicznej w ogrodzie gwiazdnicę pospolitą traktuje się nie jako chwast, ale jako roślinę jadalną (dziką sałatę) oraz wskaźnik gleby bogatej w azot.",
-            "zrodla": [
-              7
-            ],
-            "fakty": [
-              "s541"
-            ],
-            "sekcja": "ciekawostki",
-            "czesc": null
-          }
-        ]
-      },
-      {
-        "miejsce": "cykl/biologia",
-        "rozdzial": "Cykl życia i ekosystem",
-        "tytul": "Kwitnienie, zapylanie i rozsiewanie",
-        "ikona": "ra-cycle",
-        "nowy": true,
-        "punkty": [
-          {
-            "tekst": "Dzięki obfitemu wytwarzaniu nasion oraz zdolności do szybkiego ukorzeniania się oderwanych fragmentów łodyg roślina bardzo łatwo się rozprzestrzenia.",
+            "tekst": "Jej pierwotnym obszarem występowania jest Eurazja i północna Afryka.",
             "zrodla": [
               2
             ],
             "fakty": [
-              "s530"
+              "s527"
             ],
-            "sekcja": "uprawa",
+            "sekcja": "wystepowanie",
             "czesc": null
-          }
-        ]
-      },
-      {
-        "miejsce": "tajemna/ciekawostki",
-        "rozdzial": "Wiedza tajemna",
-        "tytul": "Ciekawostki",
-        "ikona": "ra-emerald",
-        "nowy": false,
-        "punkty": [
+          },
           {
-            "tekst": "Gwiazdnica pospolita jest podatna na rdzę (downy mildew) wywoływaną przez oomicete Peronospora alsinearum.",
+            "tekst": "W Wielkiej Brytanii wartości w skali Ellenberga wynoszą: L = 7, F = 5, R = 6, N = 7 i S = 0.",
             "zrodla": [
               3
             ],
             "fakty": [
-              "s482"
+              "s483"
             ],
-            "sekcja": "ciekawostki",
+            "sekcja": "wystepowanie",
+            "czesc": null
+          },
+          {
+            "tekst": "Pochodzi z Eurazji i jest naturalizowana na całym świecie, gdzie występuje jako chwast na nieużytkach, polach uprawnych i w ogrodach.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s521"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          },
+          {
+            "tekst": "Roślina występuje na całym świecie, w tym w Chinach, na polach uprawnych, nieużytkach i przydrożach.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s499"
+            ],
+            "sekcja": "wystepowanie",
             "czesc": null
           }
         ]
       },
       {
-        "miejsce": "tajemna/historia",
-        "rozdzial": "Wiedza tajemna",
-        "tytul": "Historia i nazwa",
-        "ikona": "ra-hourglass",
+        "miejsce": "surowce/sklad",
+        "rozdzial": "Surowce i zbiory",
+        "tytul": "Skład i substancje czynne",
+        "ikona": "ra-fizzing-flask",
         "nowy": true,
         "punkty": [
           {
-            "tekst": "Dawniej proszek z wysuszonego ziela mieszano z solą kuchenną w proporcji trzy do jednego, otrzymując tzw. sól habokeri, która była tradycyjnie używana do czyszczenia zębów.",
+            "tekst": "Wśród składników wymieniane są witaminy, saponiny, flawonoidy, kumaryny, minerały, kwas szczawiowy, cynk oraz olejki eteryczne.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s486"
+            ],
+            "sekcja": "sklad",
+            "czesc": null
+          }
+        ]
+      },
+      {
+        "miejsce": "surowce/inne",
+        "rozdzial": "Surowce i zbiory",
+        "tytul": "Surowce całej rośliny",
+        "ikona": "ra-potion",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Cała roślina wysuszona na słońcu stanowi surowiec leczniczy zwany „hanrou”, choć czasami stosuje się również świeżą roślinę.",
             "zrodla": [
               4
             ],
             "fakty": [
-              "s639"
+              "s587",
+              "s1893"
             ],
-            "sekcja": "kosmetyka",
-            "czesc": "ziele"
+            "sekcja": "czesci_rosliny",
+            "czesc": null
           }
         ]
       }
