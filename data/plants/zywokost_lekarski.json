@@ -123,7 +123,7 @@
     "Rycina": "https://upload.wikimedia.org/wikipedia/commons/f/f2/86_Symphytum_officinale.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-11-04",
     "w_url": true,
     "zdjecia": [
       {
@@ -171,6 +171,356 @@
         "licencja_url": null,
         "zrodlo": "Wikimedia Commons"
       }
+    ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-11-04",
+    "uporzadkowano": "2026-11-04",
+    "uklad": "deterministyczny",
+    "zrodla": [
+      {
+        "nazwa": "sacredplantco.com",
+        "url": "https://sacredplantco.com/zh/blogs/natures-pharmacy-exploring-the-historical-uses-and-health-benefits-of-medicinal-herbs/comfrey-leaf-powerful-external-ally",
+        "jezyk": "zh-CN",
+        "typ": "strona",
+        "nr": 1
+      },
+      {
+        "nazwa": "www.naturesway.jp",
+        "url": "https://www.naturesway.jp/column/naturesway/140909c/",
+        "jezyk": "ja",
+        "typ": "strona",
+        "nr": 2
+      },
+      {
+        "nazwa": "www.rxlist.com",
+        "url": "https://www.rxlist.com/comfrey/generic-drug.htm",
+        "jezyk": "en",
+        "typ": "strona",
+        "nr": 3
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "opis",
+        "tytul": "Opis i wygląd",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Liście i łodygi pokryte są białymi, cienkimi włoskami, a w dotyku są szorstkie. Japońska nazwa „Hireharisou” wywodzi się z faktu, że od podstawy liścia aż po łodygę rozciąga się skrzydełko, które upodabniano do płetwy (hire).",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2778"
+            ]
+          },
+          {
+            "tekst": "Żywokost to pochodząca z Europy wieloletnia roślina z rodziny fiołkowatych, należąca do rodzaju Symphytum. Dorasta do wysokości około 60–90 cm, a od wczesnego lata do lata kwitnie białymi lub jasnofioletowymi kwiatami w kształcie dzwonków o średnicy około 2 cm. Kwiaty te mają rurkowaty kształt, zwężają się w środkowej części, a od tego miejsca rozszerzają się ku końcowi, tworząc urocze kwiaty przypominające sukienki lub suknie.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2777"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "- Liście żywokostu lekarskiego (Symphytum officinale) zawierają aloesynę, związek, który, jak wykazano, stymuluje proliferację komórek i regenerację tkanki łącznej.",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2776"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "historia",
+        "tytul": "Historia i nazwa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Ze względu na urocze kwiaty żywokost sprowadzono do Japonii w epoce Meiji jako roślinę ozdobną. Liście żywokostu zawierają duże ilości witamin, minerałów, wapnia i białka, dlatego w regionie Kaukazu spożywano je jako warzywo zapewniające długowieczność.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2779"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "- Ten lek zawiera żywokost. Nie należy przyjmować preparatów o nazwach: „Black Root”, „Blackwort”, „Bruisewort”, „Common Comfrey”, „Gum Plant”, „Healing herb”, „Knitbone”, „Prickley Comfrey”, „Salsify”, „Slippery Root”, „Symphytum officinale” ani „Wallwort”, jeśli występuje uczulenie na żywokost lub którykolwiek ze składników zawartych w tym leku.",
+            "czesc": "ziele",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2775"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "kwiaty": [
+        "s2777"
+      ],
+      "liście": [
+        "s2776"
+      ],
+      "ziele": [
+        "s2775"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s2775",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "ziele",
+        "tekst": "- Ten lek zawiera żywokost. Nie należy przyjmować preparatów o nazwach: „Black Root”, „Blackwort”, „Bruisewort”, „Common Comfrey”, „Gum Plant”, „Healing herb”, „Knitbone”, „Prickley Comfrey”, „Salsify”, „Slippery Root”, „Symphytum officinale” ani „Wallwort”, jeśli występuje uczulenie na żywokost lub którykolwiek ze składników zawartych w tym leku.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "www.rxlist.com",
+          "url": "https://www.rxlist.com/comfrey/generic-drug.htm"
+        },
+        "cytat": "- This medication contains comfrey. Do not take Black Root, Blackwort, Bruisewort, Common Comfrey, Gum Plant, Healing herb, Knitbone, Prickley Comfrey, Salsify, Slippery Root, Symphytum officinale, or Wallwort If you are allergic to comfrey"
+      },
+      {
+        "id": "s2776",
+        "sekcja": "sklad",
+        "czesc": "liście",
+        "tekst": "- Liście żywokostu lekarskiego (Symphytum officinale) zawierają aloesynę, związek, który, jak wykazano, stymuluje proliferację komórek i regenerację tkanki łącznej.",
+        "jezyk": "zh-CN",
+        "zrodlo": {
+          "nazwa": "sacredplantco.com",
+          "url": "https://sacredplantco.com/zh/blogs/natures-pharmacy-exploring-the-historical-uses-and-health-benefits-of-medicinal-herbs/comfrey-leaf-powerful-external-ally"
+        },
+        "cytat": "- 紫草叶（Symphytum officinale）含有尿囊素，一种经证实可刺激细胞增殖和结缔组织修复的化合物。"
+      },
+      {
+        "id": "s2777",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Żywokost to pochodząca z Europy wieloletnia roślina z rodziny fiołkowatych, należąca do rodzaju Symphytum. Dorasta do wysokości około 60–90 cm, a od wczesnego lata do lata kwitnie białymi lub jasnofioletowymi kwiatami w kształcie dzwonków o średnicy około 2 cm. Kwiaty te mają rurkowaty kształt, zwężają się w środkowej części, a od tego miejsca rozszerzają się ku końcowi, tworząc urocze kwiaty przypominające sukienki lub suknie.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "www.naturesway.jp",
+          "url": "https://www.naturesway.jp/column/naturesway/140909c/"
+        },
+        "cytat": "コンフリーはヨーロッパ原産のムラサキ科ヒレハリソウ属多年草です。60cm〜90cmほどまで成長し、初夏から夏にかけて2cmほどの釣鐘状をした白〜薄紫色の花を咲かせます。筒状の花は中間部分で細くなり、そこから先端に向かってふっくらと広がる形は、ワンピースやドレスのようにも見えるかわいらしい花です。"
+      },
+      {
+        "id": "s2778",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Liście i łodygi pokryte są białymi, cienkimi włoskami, a w dotyku są szorstkie. Japońska nazwa „Hireharisou” wywodzi się z faktu, że od podstawy liścia aż po łodygę rozciąga się skrzydełko, które upodabniano do płetwy (hire).",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "www.naturesway.jp",
+          "url": "https://www.naturesway.jp/column/naturesway/140909c/"
+        },
+        "cytat": "葉や茎は白く細い毛で覆われており、触るとザラザラとした感触があります。和名の「ヒレハリソウ」は葉の基部から茎にかけて翼（よく）があり、この部分がヒレ（鰭）と見立てられたことが由来とされています。"
+      },
+      {
+        "id": "s2779",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Ze względu na urocze kwiaty żywokost sprowadzono do Japonii w epoce Meiji jako roślinę ozdobną. Liście żywokostu zawierają duże ilości witamin, minerałów, wapnia i białka, dlatego w regionie Kaukazu spożywano je jako warzywo zapewniające długowieczność.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "www.naturesway.jp",
+          "url": "https://www.naturesway.jp/column/naturesway/140909c/"
+        },
+        "cytat": "コンフリーはその可愛らしい花の姿から、日本には明治時代に観賞用として渡来しました。コンフリーの葉には、ビタミン類やミネラル、カルシウム、タンパク質が多く含まれていて、コーカサス地方では長寿の野菜として食べられていました。"
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-04",
+    "pola": {
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": [
+          "Liście wielkie, lancetowate, bardzo szorstkie (pokryte kłującymi włoskami).",
+          "Górne liście zbiegają po łodydze, tworząc charakterystyczne 'skrzydełka' (listewki).",
+          "Kwiaty dzwonkowate, zwisające w nibyokółkach, o barwie fioletowej, purpurowej lub kremowobiałej.",
+          "Korzeń po przełamaniu jest śliski, śluzowaty, o czarnej skórce i śnieżnobiałym wnętrzu."
+        ],
+        "tresc": [
+          {
+            "tekst": "Liście wielkie, lancetowate, bardzo szorstkie (pokryte kłującymi włoskami).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Górne liście zbiegają po łodydze, tworząc charakterystyczne 'skrzydełka' (listewki).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwiaty dzwonkowate, zwisające w nibyokółkach, o barwie fioletowej, purpurowej lub kremowobiałej.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Korzeń po przełamaniu jest śliski, śluzowaty, o czarnej skórce i śnieżnobiałym wnętrzu.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Liście i łodygi pokryte są białymi, cienkimi włoskami, a w dotyku są szorstkie. Japońska nazwa „Hireharisou” wywodzi się z faktu, że od podstawy liścia aż po łodygę rozciąga się skrzydełko, które upodabniano do płetwy (hire).",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2778"
+            ]
+          },
+          {
+            "tekst": "Żywokost to pochodząca z Europy wieloletnia roślina z rodziny fiołkowatych, należąca do rodzaju Symphytum. Dorasta do wysokości około 60–90 cm, a od wczesnego lata do lata kwitnie białymi lub jasnofioletowymi kwiatami w kształcie dzwonków o średnicy około 2 cm. Kwiaty te mają rurkowaty kształt, zwężają się w środkowej części, a od tego miejsca rozszerzają się ku końcowi, tworząc urocze kwiaty przypominające sukienki lub suknie.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2777"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "9cbd6397db243028"
+      },
+      "czesci_rosliny.liscie.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Folium Symphyti: Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "- Liście żywokostu lekarskiego (Symphytum officinale) zawierają aloesynę, związek, który, jak wykazano, stymuluje proliferację komórek i regenerację tkanki łącznej.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2776"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "09e0db00241563f0"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "W medycynie ludowej żywokost nazywano 'kawalerskim korzeniem' – wierzono, że kąpiel w żywokoscie potrafi 'zrosnąć' utracone dziewictwo.",
+          "Alantoina z żywokostu jest tak skuteczna, że nie wolno jej stosować na rany brudne lub zakażone, ponieważ skóra zrośnie się tak szybko, że uwięzi ropę i bakterie wewnątrz.",
+          "Korzeń żywokostu jest tak twardy i czarny z zewnątrz, że przypomina węgiel, ale po obraniu ukazuje białe wnętrze, co w 'doktrynie podpisów' oznaczało leczenie kości pod skórą.",
+          "W Anglii żywokost nazywany jest 'Knitbone' (dziergający kości), co idealnie oddaje jego funkcję."
+        ],
+        "tresc": [
+          {
+            "tekst": "W medycynie ludowej żywokost nazywano 'kawalerskim korzeniem' – wierzono, że kąpiel w żywokoscie potrafi 'zrosnąć' utracone dziewictwo.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Alantoina z żywokostu jest tak skuteczna, że nie wolno jej stosować na rany brudne lub zakażone, ponieważ skóra zrośnie się tak szybko, że uwięzi ropę i bakterie wewnątrz.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Korzeń żywokostu jest tak twardy i czarny z zewnątrz, że przypomina węgiel, ale po obraniu ukazuje białe wnętrze, co w 'doktrynie podpisów' oznaczało leczenie kości pod skórą.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W Anglii żywokost nazywany jest 'Knitbone' (dziergający kości), co idealnie oddaje jego funkcję.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Ze względu na urocze kwiaty żywokost sprowadzono do Japonii w epoce Meiji jako roślinę ozdobną. Liście żywokostu zawierają duże ilości witamin, minerałów, wapnia i białka, dlatego w regionie Kaukazu spożywano je jako warzywo zapewniające długowieczność.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2779"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "e701b352ae174d92"
+      },
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": "STOSOWAĆ WYŁĄCZNIE ZEWNĘTRZNIE. Alkaloidy pirolizydynowe mogą uszkodzić wątrobę przy spożyciu. Nie stosować na rany głębokie i zakażone (ryzyko uwięzienia infekcji pod szybko zrastającą się tkanką). Nie stosować u kobiet w ciąży i dzieci.",
+        "tresc": [
+          {
+            "tekst": "STOSOWAĆ WYŁĄCZNIE ZEWNĘTRZNIE.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Alkaloidy pirolizydynowe mogą uszkodzić wątrobę przy spożyciu.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Nie stosować na rany głębokie i zakażone (ryzyko uwięzienia infekcji pod szybko zrastającą się tkanką).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Nie stosować u kobiet w ciąży i dzieci.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "- Ten lek zawiera żywokost. Nie należy przyjmować preparatów o nazwach: „Black Root”, „Blackwort”, „Bruisewort”, „Common Comfrey”, „Gum Plant”, „Healing herb”, „Knitbone”, „Prickley Comfrey”, „Salsify”, „Slippery Root”, „Symphytum officinale” ani „Wallwort”, jeśli występuje uczulenie na żywokost lub którykolwiek ze składników zawartych w tym leku.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2775"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "a6e1a0c960ec464c"
+      }
+    },
+    "uzyte_fakty": [
+      "s2775",
+      "s2776",
+      "s2777",
+      "s2778",
+      "s2779"
     ]
   }
 }

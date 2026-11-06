@@ -123,7 +123,7 @@
     "Kora": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/%D0%9F%D0%BE%D0%BB%D1%81%D0%BA%D0%B8_%D0%B1%D1%80%D1%8F%D1%81%D1%82_%E2%80%93_%D0%BA%D0%BE%D1%80%D0%B0_5.jpg/960px-%D0%9F%D0%BE%D0%BB%D1%81%D0%BA%D0%B8_%D0%B1%D1%80%D1%8F%D1%81%D1%82_%E2%80%93_%D0%BA%D0%BE%D1%80%D0%B0_5.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-11-03",
+    "zaktualizowano": "2026-11-06",
     "w_url": true,
     "zdjecia": [
       {
@@ -175,19 +175,44 @@
   },
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-11-03",
-    "uporzadkowano": "2026-11-03",
+    "zaktualizowano": "2026-11-04",
+    "uporzadkowano": "2026-11-04",
     "uklad": "deterministyczny",
     "zrodla": [
+      {
+        "nazwa": "Wikipedia (zh): 欧洲野榆",
+        "url": "https://zh.wikipedia.org/wiki/%E6%AC%A7%E6%B4%B2%E9%87%8E%E6%A6%86",
+        "jezyk": "zh",
+        "typ": "wikipedia",
+        "nr": 1
+      },
       {
         "nazwa": "stronazdrowia.pl",
         "url": "https://stronazdrowia.pl/to-pogromca-kaszlu-oczysci-pluca-i-oskrzela-nazbierasz-w-lesie-lub-na-lace-miodunka-chroni-tez-przed-smogiem-i-wspiera-odpornosc/ar/c14-17193351",
         "jezyk": "pl-PL",
         "typ": "strona",
-        "nr": 1
+        "nr": 2
       }
     ],
     "sekcje": [
+      {
+        "klucz": "wystepowanie",
+        "tytul": "Występowanie",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Wiąz polny (nazwa naukowa: Ulmus minor; ang. European field elm) jest jednym z trzech gatunków z rodzaju wiąz występujących w Europie. Podobnie jak wiąz biały i wiąz górski, wiąz polny jest podatny na holenderską chorobę wiązów, jednak wykazuje nieco większą odporność.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2819"
+            ]
+          }
+        ]
+      },
       {
         "klucz": "medycyna_wschodu",
         "tytul": "Medycyna chińska, kampo, ajurweda",
@@ -198,7 +223,7 @@
             "tekst": "Miodunka (Pulmonaria) jest rośliną wieloletnią, która rośnie w całej Europie oraz wschodniej części Azji. W Polsce można ją spotkać już wczesną wiosną na polach, łąkach, w lasach, a także w ogrodach. W naszym kraju najpowszechniejsze są jej 2 gatunki: miodunka plamista (Pulmonaria officinalis) i miodunka ćma (Pulmonaria obscura).",
             "czesc": "kwiaty",
             "zrodla": [
-              1
+              2
             ],
             "fakty": [
               "s2583"
@@ -224,49 +249,96 @@
           "url": "https://stronazdrowia.pl/to-pogromca-kaszlu-oczysci-pluca-i-oskrzela-nazbierasz-w-lesie-lub-na-lace-miodunka-chroni-tez-przed-smogiem-i-wspiera-odpornosc/ar/c14-17193351"
         },
         "cytat": "Miodunka (Pulmonaria) jest rośliną wieloletnią, która rośnie w całej Europie oraz wschodniej części Azji. W Polsce można ją spotkać już wczesną wiosną na polach, łąkach, w lasach, a także w ogrodach. W naszym kraju najpowszechniejsze są jej"
+      },
+      {
+        "id": "s2819",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Wiąz polny (nazwa naukowa: Ulmus minor; ang. European field elm) jest jednym z trzech gatunków z rodzaju wiąz występujących w Europie. Podobnie jak wiąz biały i wiąz górski, wiąz polny jest podatny na holenderską chorobę wiązów, jednak wykazuje nieco większą odporność.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 欧洲野榆",
+          "url": "https://zh.wikipedia.org/wiki/%E6%AC%A7%E6%B4%B2%E9%87%8E%E6%A6%86"
+        },
+        "cytat": "欧洲野榆（學名：Ulmus minor；英語：European field elm）是欧洲的三种榆属植物之一。和欧洲白榆、欧洲山榆一样，欧洲野榆也易感荷兰榆树病，但欧洲野榆的抗性稍高。"
       }
     ]
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-11-03",
+    "zaktualizowano": "2026-11-04",
     "pola": {
-      "profil_energetyczny.opis": {
-        "tytul": "Natura i siedlisko - Opis energetyczny",
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
         "typ": "tekst",
-        "oryginal": "Wiąz to 'uszczelniacz tkanek'. Jego energia działa stabilizująco na błony śluzowe i skórę. Chłodzi stany zapalne układu pokarmowego i 'ściąga' rozproszone soki ustrojowe, przywracając ciału integralność strukturalną.",
+        "oryginal": "Długowieczne drzewo liściaste dorastające do 30 m wysokości, o gęstej, kopulastej koronie. Charakterystyczne dla wiązu są jego liście – szorstkie i wyraźnie asymetryczne u nasady. Kora jest ciemnobrunatna, głęboko spękana, czasem z naroślami korkowymi na młodszych gałęziach. Wiąz to drzewo dolin rzecznych, które dzięki swojej potężnej strukturze i giętkości przez wieki dostarczało drewna do zadań specjalnych.",
         "tresc": [
           {
-            "tekst": "Wiąz to 'uszczelniacz tkanek'.",
+            "tekst": "Długowieczne drzewo liściaste dorastające do 30 m wysokości, o gęstej, kopulastej koronie.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Jego energia działa stabilizująco na błony śluzowe i skórę.",
+            "tekst": "Charakterystyczne dla wiązu są jego liście – szorstkie i wyraźnie asymetryczne u nasady.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Chłodzi stany zapalne układu pokarmowego i 'ściąga' rozproszone soki ustrojowe, przywracając ciału integralność strukturalną.",
+            "tekst": "Kora jest ciemnobrunatna, głęboko spękana, czasem z naroślami korkowymi na młodszych gałęziach.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Miodunka (Pulmonaria) jest rośliną wieloletnią, która rośnie w całej Europie oraz wschodniej części Azji. W Polsce można ją spotkać już wczesną wiosną na polach, łąkach, w lasach, a także w ogrodach. W naszym kraju najpowszechniejsze są jej 2 gatunki: miodunka plamista (Pulmonaria officinalis) i miodunka ćma (Pulmonaria obscura).",
+            "tekst": "Wiąz to drzewo dolin rzecznych, które dzięki swojej potężnej strukturze i giętkości przez wieki dostarczało drewna do zadań specjalnych.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Wiąz polny (nazwa naukowa: Ulmus minor; ang. European field elm) jest jednym z trzech gatunków z rodzaju wiąz występujących w Europie. Podobnie jak wiąz biały i wiąz górski, wiąz polny jest podatny na holenderską chorobę wiązów, jednak wykazuje nieco większą odporność.",
             "zrodla": [
               1
             ],
             "fakty": [
-              "s2583"
+              "s2819"
             ]
           }
         ],
         "model": "bez LLM",
-        "wejscie": "e0bfd84ef6780cf7"
+        "wejscie": "019e8ef379514872"
       }
     },
     "uzyte_fakty": [
-      "s2583"
+      "s2819"
     ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-04",
+    "jak": "llm:groq/openai/gpt-oss-20b",
+    "wejscie": "de3c29dc034fa22d",
+    "wstawki": [
+      {
+        "miejsce": "surowce/kwiaty_miodunku",
+        "rozdzial": "Surowce i zbiory",
+        "tytul": "Kwiaty miodunku",
+        "ikona": "ra-leaf",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Miodunka (Pulmonaria) jest rośliną wieloletnią, która rośnie w całej Europie oraz wschodniej części Azji. W Polsce można ją spotkać już wczesną wiosną na polach, łąkach, w lasach, a także w ogrodach. W naszym kraju najpowszechniejsze są jej 2 gatunki: miodunka plamista (Pulmonaria officinalis) i miodunka ćma (Pulmonaria obscura).",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2583"
+            ],
+            "sekcja": "medycyna_wschodu",
+            "czesc": "kwiaty"
+          }
+        ],
+        "od_agenta": true
+      }
+    ],
+    "duplikaty": []
   }
 }

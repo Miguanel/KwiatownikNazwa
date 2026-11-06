@@ -223,7 +223,7 @@
   },
   "ostrzezenia": "Nie stosować wewnętrznie odwarów z kory przy dużych uszkodzeniach skóry oraz w ostrych stanach niewydolności serca. Nadmiar garbników hamuje wchłanianie żelaza i witamin.",
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-11-03",
+    "zaktualizowano": "2026-11-04",
     "w_url": false,
     "zdjecia": [
       {
@@ -280,16 +280,23 @@
   },
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-10-30",
-    "uporzadkowano": "2026-10-30",
-    "uklad": "llm:ollama/qwen3:8b",
+    "zaktualizowano": "2026-11-04",
+    "uporzadkowano": "2026-11-04",
+    "uklad": "deterministyczny",
     "zrodla": [
+      {
+        "nazwa": "Wikipedia (de): Stieleiche",
+        "url": "https://de.wikipedia.org/wiki/Stieleiche",
+        "jezyk": "de",
+        "typ": "wikipedia",
+        "nr": 1
+      },
       {
         "nazwa": "Weblio (slowniki i encyklopedie JP)",
         "url": "https://www.weblio.jp/content/%E3%83%A8%E3%83%BC%E3%83%AD%E3%83%83%E3%83%91%E3%83%8A%E3%83%A9",
         "jezyk": "ja",
         "typ": "strona",
-        "nr": 1
+        "nr": 2
       }
     ],
     "sekcje": [
@@ -300,20 +307,40 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Liście mają długość 7–14 cm, charakterystycznie sięgają wąską osią i posiadają brzegi z ząbkami (wykrojone).",
+            "tekst": "Szczególnie w przypadku młodych drzew zwiędłe liście pozostają na drzewie podczas spoczynku zimowego (marcescencja).",
             "czesc": "liście",
             "zrodla": [
               1
+            ],
+            "fakty": [
+              "s2814"
+            ]
+          },
+          {
+            "tekst": "Liście, prawie bez ogonków (z krótką trzonką), z nacięciami, mają długość 7–14 centymetrów (cm)",
+            "czesc": "liście",
+            "zrodla": [
+              2
             ],
             "fakty": [
               "s2341"
             ]
           },
           {
-            "tekst": "Orzechy (zwykle nazywane żołędziami) mają długość 2–2,5 cm i rozwijają się na długich szypułkach (od 3 do 7 cm), po których jesiennych zbiorach owocuje.",
-            "czesc": "owoce",
+            "tekst": "To przede wszystkim sójka przyczynia się do rozprzestrzeniania dębu szypułkowego poprzez gromadzenie zapasów pożywienia (nasion dębu).",
+            "czesc": "nasiona",
             "zrodla": [
               1
+            ],
+            "fakty": [
+              "s2816"
+            ]
+          },
+          {
+            "tekst": "Kwitnienie następuje w połowie wiosny, a owoce (tzw. żołędzie) dojrzewają jesienią tego samego roku. Żołędzie mają długość 2–2,5 cm i rosną w grupach po 1–4 sztuki na jednym szypułce o długości 3–7 cm.",
+            "czesc": "owoce",
+            "zrodla": [
+              2
             ],
             "fakty": [
               "s2342"
@@ -328,13 +355,61 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Naturalnie występuje w Europie, Małej Azji, na Kaukazie oraz w częściach Północnej Afryki. Preferuje nieco wilgotne niziny, wzgórza i niskie góry na wysokości do 1300 metrów n.p.m.",
+            "tekst": "W porównaniu z dębem szlachetnym jego zasięg występowania sięga znacznie dalej na wschód, ponieważ znacznie lepiej znosi klimat kontynentalny.",
             "czesc": null,
             "zrodla": [
               1
             ],
             "fakty": [
+              "s2815"
+            ]
+          },
+          {
+            "tekst": "Naturalnie występuje w Europie, Małej Azji, na Kaukazie oraz w częściach Północnej Afryki. Preferuje nieco wilgotne niziny, wzgórza i niskie góry na wysokości do 1300 metrów n.p.m.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
               "s2340"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "historia",
+        "tytul": "Historia i nazwa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Dąb szypułkowy został wybrany „Drzewem Roku” w 1989 roku.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2813"
+            ]
+          },
+          {
+            "tekst": "Z punktu widzenia historii Ziemi obecność dębów potwierdzono już w trzeciorzędzie.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2817"
+            ]
+          },
+          {
+            "tekst": "Ponadto dęby były już od dawna celowo uprawiane ze względu na ich cenne drewno oraz owoce, które stanowią pożywienie dla zwierząt gospodarskich.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2818"
             ]
           }
         ]
@@ -342,7 +417,11 @@
     ],
     "czesci": {
       "liście": [
+        "s2814",
         "s2341"
+      ],
+      "nasiona": [
+        "s2816"
       ],
       "owoce": [
         "s2342"
@@ -365,7 +444,7 @@
         "id": "s2341",
         "sekcja": "opis",
         "czesc": "liście",
-        "tekst": "Liście mają długość 7–14 cm, charakterystycznie sięgają wąską osią i posiadają brzegi z ząbkami (wykrojone).",
+        "tekst": "Liście, prawie bez ogonków (z krótką trzonką), z nacięciami, mają długość 7–14 centymetrów (cm)",
         "jezyk": "ja",
         "zrodlo": {
           "nazwa": "Weblio (slowniki i encyklopedie JP)",
@@ -377,19 +456,91 @@
         "id": "s2342",
         "sekcja": "opis",
         "czesc": "owoce",
-        "tekst": "Orzechy (zwykle nazywane żołędziami) mają długość 2–2,5 cm i rozwijają się na długich szypułkach (od 3 do 7 cm), po których jesiennych zbiorach owocuje.",
+        "tekst": "Kwitnienie następuje w połowie wiosny, a owoce (tzw. żołędzie) dojrzewają jesienią tego samego roku. Żołędzie mają długość 2–2,5 cm i rosną w grupach po 1–4 sztuki na jednym szypułce o długości 3–7 cm.",
         "jezyk": "ja",
         "zrodlo": {
           "nazwa": "Weblio (slowniki i encyklopedie JP)",
           "url": "https://www.weblio.jp/content/%E3%83%A8%E3%83%BC%E3%83%AD%E3%83%83%E3%83%91%E3%83%8A%E3%83%A9"
         },
         "cytat": "開花は春の中頃であり、同年の秋に果実（いわゆるドングリ）が熟す。ドングリは長径2 - 2.5 cmあり、3 - 7 cmの柄一つから1 - 4個なる。"
+      },
+      {
+        "id": "s2813",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Dąb szypułkowy został wybrany „Drzewem Roku” w 1989 roku.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Stieleiche",
+          "url": "https://de.wikipedia.org/wiki/Stieleiche"
+        },
+        "cytat": "Die Stieleiche war „Baum des Jahres“ 1989."
+      },
+      {
+        "id": "s2814",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Szczególnie w przypadku młodych drzew zwiędłe liście pozostają na drzewie podczas spoczynku zimowego (marcescencja).",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Stieleiche",
+          "url": "https://de.wikipedia.org/wiki/Stieleiche"
+        },
+        "cytat": "Insbesondere bei jungen Bäumen verbleiben die verwelkten Blätter während der Winterruhe am Baum (Marzeszenz)."
+      },
+      {
+        "id": "s2815",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "W porównaniu z dębem szlachetnym jego zasięg występowania sięga znacznie dalej na wschód, ponieważ znacznie lepiej znosi klimat kontynentalny.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Stieleiche",
+          "url": "https://de.wikipedia.org/wiki/Stieleiche"
+        },
+        "cytat": "Gegenüber der Traubeneiche reicht ihr Verbreitungsgebiet weitaus weiter in den Osten, da sie kontinentales Klima wesentlich besser verträgt."
+      },
+      {
+        "id": "s2816",
+        "sekcja": "opis",
+        "czesc": "nasiona",
+        "tekst": "To przede wszystkim sójka przyczynia się do rozprzestrzeniania dębu szypułkowego poprzez gromadzenie zapasów pożywienia (nasion dębu).",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Stieleiche",
+          "url": "https://de.wikipedia.org/wiki/Stieleiche"
+        },
+        "cytat": "Vor allem der Eichelhäher sorgt durch Anlage von Nahrungsdepots für die Verbreitung der Stieleiche (Hähersaaten)."
+      },
+      {
+        "id": "s2817",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Z punktu widzenia historii Ziemi obecność dębów potwierdzono już w trzeciorzędzie.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Stieleiche",
+          "url": "https://de.wikipedia.org/wiki/Stieleiche"
+        },
+        "cytat": "Erdgeschichtlich sind Eichen bereits aus dem Tertiär nachgewiesen."
+      },
+      {
+        "id": "s2818",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Ponadto dęby były już od dawna celowo uprawiane ze względu na ich cenne drewno oraz owoce, które stanowią pożywienie dla zwierząt gospodarskich.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Stieleiche",
+          "url": "https://de.wikipedia.org/wiki/Stieleiche"
+        },
+        "cytat": "Auch wurden die Eichen wegen ihres wertvollen Holzes und ihrer als Viehfutter nützlichen Früchte schon historisch gezielt gefördert."
       }
     ]
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-30",
+    "zaktualizowano": "2026-11-04",
     "pola": {
       "identyfikacja.cechy_kluczowe": {
         "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
@@ -401,89 +552,183 @@
         ],
         "tresc": [
           {
-            "tekst": "Liście posiadają wyraźne uszka u nasady blaszki, które obejmują ogonek [1].",
+            "tekst": "Liście posiadają charakterystyczne 'uszka' u nasady blaszki (obejmują ogonek).",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Blaszka liściowa osiąga długość 7–14 cm, ma charakterystycznie wąskie wyrostki u nasady oraz brzegi z wyraźnymi ząbkami [1, P1].",
+            "tekst": "Żołędzie osadzone są na długich szypułkach (stąd nazwa gatunkowa), po 1-3 sztuki.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kora u starszych drzew głęboko i podłużnie spękana, ciemnoszara.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Szczególnie w przypadku młodych drzew zwiędłe liście pozostają na drzewie podczas spoczynku zimowego (marcescencja).",
             "zrodla": [
               1
+            ],
+            "fakty": [
+              "s2814"
+            ]
+          },
+          {
+            "tekst": "Liście, prawie bez ogonków (z krótką trzonką), z nacięciami, mają długość 7–14 centymetrów (cm)",
+            "zrodla": [
+              2
             ],
             "fakty": [
               "s2341"
             ]
           },
           {
-            "tekst": "Żołędzie osadzone są na długich szypułkach, co nawiązuje do nazwy gatunkowej, zwykle po 1-3 sztuki.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Kora starszych drzew jest głęboko i podłużnie spękana, ma ciemnoszarą barwę.",
-            "zrodla": [],
-            "fakty": []
-          }
-        ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "1b21a23ef8e9f1cf"
-      },
-      "czesci_rosliny.owoce.opis_botaniczny": {
-        "tytul": "Surowce i zbiory - Glandes Quercus (Żołędzie): Opis surowca",
-        "typ": "tekst",
-        "oryginal": "Jednonasienne orzechy osadzone w miseczkach. Zbierane, gdy są w pełni dojrzałe (brązowe) i same opadają z drzewa.",
-        "tresc": [
-          {
-            "tekst": "Surowcem są jednonasienne orzechy, zwane żołędziami, o długości 2–2,5 cm, rozwijające się na długich szypułkach o długości 3–7 cm.",
+            "tekst": "To przede wszystkim sójka przyczynia się do rozprzestrzeniania dębu szypułkowego poprzez gromadzenie zapasów pożywienia (nasion dębu).",
             "zrodla": [
               1
             ],
             "fakty": [
-              "s2342"
+              "s2816"
             ]
           },
           {
-            "tekst": "Orzechy te są osadzone w miseczkach.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Zbiera się je jesienią, gdy są w pełni dojrzałe (brązowe) i same opadają z drzewa.",
-            "zrodla": [],
-            "fakty": []
+            "tekst": "Kwitnienie następuje w połowie wiosny, a owoce (tzw. żołędzie) dojrzewają jesienią tego samego roku. Żołędzie mają długość 2–2,5 cm i rosną w grupach po 1–4 sztuki na jednym szypułce o długości 3–7 cm.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2342"
+            ]
           }
         ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "c70c595c44973a6d"
+        "model": "bez LLM",
+        "wejscie": "5271e0450500a34e"
       },
-      "wymagania.stanowisko": {
-        "tytul": "Natura i siedlisko - Stanowisko",
+      "wymagania.woda": {
+        "tytul": "Natura i siedlisko - Woda",
         "typ": "tekst",
-        "oryginal": "Pełne słońce (szczególnie w fazie wzrostu), w starszym wieku toleruje półcień.",
+        "oryginal": "Lubi gleby świeże i wilgotne, znosi okresowe zalewanie wodami rzecznymi (lasy łęgowe), ale jest też odporny na okresowe susze dzięki palowemu systemowi korzeniowemu.",
         "tresc": [
           {
-            "tekst": "Dąb szypułkowy preferuje pełne słońce, szczególnie w fazie wzrostu, natomiast w starszym wieku toleruje półcień.",
+            "tekst": "Lubi gleby świeże i wilgotne, znosi okresowe zalewanie wodami rzecznymi (lasy łęgowe), ale jest też odporny na okresowe susze dzięki palowemu systemowi korzeniowemu.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Naturalnie rośnie na nieco wilgotnych nizinach, wzgórzach oraz w niskich górach, osiągając wysokość do 1300 metrów n.p.m.",
+            "tekst": "Naturalnie występuje w Europie, Małej Azji, na Kaukazie oraz w częściach Północnej Afryki. Preferuje nieco wilgotne niziny, wzgórza i niskie góry na wysokości do 1300 metrów n.p.m.",
             "zrodla": [
-              1
+              2
             ],
             "fakty": [
               "s2340"
             ]
           }
         ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "211619f2d5d52938"
+        "model": "bez LLM",
+        "wejscie": "a6a3198ba0e2706e"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "Dąb 'Bartek', najsłynniejszy polski dąb, ma około 670 lat, choć legendy przypisują mu ponad 1000.",
+          "W medycynie ludowej woda zbierająca się w dziuplach dębowych była uważana za lekarstwo na brodawki i kurzajki.",
+          "Szynka Parmeńska zawdzięcza swój smak temu, że świnie są karmione żołędziami dębowymi.",
+          "Drewno dębu czernieje pod wpływem długotrwałego przebywania w wodzie (tzw. czarny dąb), stając się twardym jak kamień i cennym materiałem jubilerskim."
+        ],
+        "tresc": [
+          {
+            "tekst": "Dąb 'Bartek', najsłynniejszy polski dąb, ma około 670 lat, choć legendy przypisują mu ponad 1000.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W medycynie ludowej woda zbierająca się w dziuplach dębowych była uważana za lekarstwo na brodawki i kurzajki.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Szynka Parmeńska zawdzięcza swój smak temu, że świnie są karmione żołędziami dębowymi.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Drewno dębu czernieje pod wpływem długotrwałego przebywania w wodzie (tzw. czarny dąb), stając się twardym jak kamień i cennym materiałem jubilerskim.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Dąb szypułkowy został wybrany „Drzewem Roku” w 1989 roku.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2813"
+            ]
+          },
+          {
+            "tekst": "Z punktu widzenia historii Ziemi obecność dębów potwierdzono już w trzeciorzędzie.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2817"
+            ]
+          },
+          {
+            "tekst": "Ponadto dęby były już od dawna celowo uprawiane ze względu na ich cenne drewno oraz owoce, które stanowią pożywienie dla zwierząt gospodarskich.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2818"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "4a34eceb074ae559"
       }
     },
     "uzyte_fakty": [
       "s2340",
       "s2341",
-      "s2342"
+      "s2342",
+      "s2813",
+      "s2814",
+      "s2816",
+      "s2817",
+      "s2818"
     ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-04",
+    "jak": "reguly",
+    "wejscie": "413947c346967661",
+    "wstawki": [
+      {
+        "miejsce": "natura/wystepowanie",
+        "rozdzial": "Natura i siedlisko",
+        "tytul": "Występowanie i zasięg",
+        "ikona": "ra-compass",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "W porównaniu z dębem szlachetnym jego zasięg występowania sięga znacznie dalej na wschód, ponieważ znacznie lepiej znosi klimat kontynentalny.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2815"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          }
+        ]
+      }
+    ],
+    "duplikaty": []
   }
 }

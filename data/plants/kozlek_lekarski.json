@@ -103,7 +103,7 @@
     "Rycina": "https://upload.wikimedia.org/wikipedia/commons/7/73/156_Valeriana_officinalis_L.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-01",
+    "zaktualizowano": "2026-11-05",
     "w_url": true,
     "zdjecia": [
       {
@@ -151,6 +151,494 @@
         "licencja_url": null,
         "zrodlo": "Wikimedia Commons"
       }
+    ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-11-05",
+    "uporzadkowano": "2026-11-05",
+    "uklad": "deterministyczny",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (ja): セイヨウカノコソウ",
+        "url": "https://ja.wikipedia.org/wiki/%E3%82%BB%E3%82%A4%E3%83%A8%E3%82%A6%E3%82%AB%E3%83%8E%E3%82%B3%E3%82%BD%E3%82%A6",
+        "jezyk": "ja",
+        "typ": "wikipedia",
+        "nr": 1
+      },
+      {
+        "nazwa": "Kotobank (Nipponica, Heibonsha, Britannica JP, Mypedia)",
+        "url": "https://kotobank.jp/word/%E3%81%9B%E3%81%84%E3%82%88%E3%81%86%E3%81%8B%E3%81%AE%E3%81%93%E3%81%9D%E3%81%86-1350639",
+        "jezyk": "ja",
+        "typ": "strona",
+        "nr": 2
+      },
+      {
+        "nazwa": "resources.ancientpurity.com",
+        "url": "https://resources.ancientpurity.com/comprehensive-adaptogenic-herbs-guide-how-nature-helps-combat-stress/",
+        "jezyk": "en-GB",
+        "typ": "strona",
+        "nr": 3
+      },
+      {
+        "nazwa": "stronazdrowia.pl",
+        "url": "https://stronazdrowia.pl/ukoi-nerwy-i-stres-pomoze-spokojnie-zasnac-zaparz-te-korzenie-i-pij-przed-snem-herbata-z-waleriany-na-uspokojenie/ar/c14p2-27582055",
+        "jezyk": "pl-PL",
+        "typ": "strona",
+        "nr": 4
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "wystepowanie",
+        "tytul": "Występowanie",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Waleriana, a dokładnie kozłek lekarski (Valeriana officinalis) to roślina pospolicie występująca w Europie, Azji i Ameryce Północnej.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2917"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "czesci_rosliny",
+        "tytul": "Części rośliny i surowce",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Kwitnie od czerwca do sierpnia, ale surowcem zielarskim jest jej kłącze i korzeń, które najlepiej zbierać na wiosnę lub na jesieni, czyli poza okresem kwitnienia.",
+            "czesc": "korzeń",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2918"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W składzie znajduje się kwas valerianowy. Zawiera również terpeny, składniki lotne oraz alkaloidy. Kłącza i korzenie zawierające te składniki nazywane są w Europie „korzeniem waleriany”. Zawartość olejku eterycznego jest mniejsza niż w przypadku kanokosou.",
+            "czesc": "korzeń",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2912"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Zioło to, znane ze swoich właściwości uspokajających, delikatnie działa kojąco na układ nerwowy, pomagając wyciszyć niespokojny umysł i sprzyjając głębokiemu, regenerującemu senowi.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2915"
+            ]
+          },
+          {
+            "tekst": "…Olejek eteryczny zawiera różne seskwiterpeny i monoterpeny, ma charakterystyczny zapach i jest stosowany jako środek uspokajający w stanach niestabilności psychicznej i histerii. Jednak pod względem właściwości leczniczych lepsza jest waleriana japońska niż waleriana lekarska (V. officinalis L.) pochodząca z Europy, z której pozyskuje się korzeń waleriany. Ponadto w Chinach kilka gatunków z tej rodziny jest wykorzystywanych w medycynie ludowej pod nazwą „ketsuso”.…",
+            "czesc": "korzeń",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2913"
+            ]
+          },
+          {
+            "tekst": "Korzeń kozłka lekarskiego: Korzeń kozłka lekarskiego od dawna cieszy się uznaniem jako silny naturalny środek leczniczy, powszechnie stosowany ze względu na swoją niezwykłą zdolność do łagodzenia bezsenności i zmniejszania niepokoju.",
+            "czesc": "korzeń",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2914"
+            ]
+          },
+          {
+            "tekst": "Wspomagając relaksację i łagodząc napięcie, które często towarzyszy stresowi i niepokojowi, korzeń waleriany stanowi holistyczne podejście do osiągnięcia spokoju bez skutków ubocznych, jakie zwykle wiążą się z farmaceutycznymi środkami nasennymi lub lekami przeciwlękowymi.",
+            "czesc": "korzeń",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2916"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Do łagodnych i rzadkich skutków ubocznych należą: - bóle głowy, - zawroty głowy, - nadmierna senność, - uczucie otępienia, - suchość w ustach, - dolegliwości żołądkowo-jelitowe (np. bóle brzucha, nudności).",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2919"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "korzeń": [
+        "s2918",
+        "s2912",
+        "s2913",
+        "s2914",
+        "s2916"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s2912",
+        "sekcja": "sklad",
+        "czesc": "korzeń",
+        "tekst": "W składzie znajduje się kwas valerianowy. Zawiera również terpeny, składniki lotne oraz alkaloidy. Kłącza i korzenie zawierające te składniki nazywane są w Europie „korzeniem waleriany”. Zawartość olejku eterycznego jest mniejsza niż w przypadku kanokosou.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): セイヨウカノコソウ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%BB%E3%82%A4%E3%83%A8%E3%82%A6%E3%82%AB%E3%83%8E%E3%82%B3%E3%82%BD%E3%82%A6"
+        },
+        "cytat": "成分に吉草酸が含まれる。他にテルペン類、揮発油成分、アルカロイドが含まれる。それらの成分を含む根茎と根を、ヨーロッパでは「ワレリアナ根」と呼ぶ。精油の含量はカノコソウよりも少ない。"
+      },
+      {
+        "id": "s2913",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "korzeń",
+        "tekst": "…Olejek eteryczny zawiera różne seskwiterpeny i monoterpeny, ma charakterystyczny zapach i jest stosowany jako środek uspokajający w stanach niestabilności psychicznej i histerii. Jednak pod względem właściwości leczniczych lepsza jest waleriana japońska niż waleriana lekarska (V. officinalis L.) pochodząca z Europy, z której pozyskuje się korzeń waleriany. Ponadto w Chinach kilka gatunków z tej rodziny jest wykorzystywanych w medycynie ludowej pod nazwą „ketsuso”.…",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Kotobank (Nipponica, Heibonsha, Britannica JP, Mypedia)",
+          "url": "https://kotobank.jp/word/%E3%81%9B%E3%81%84%E3%82%88%E3%81%86%E3%81%8B%E3%81%AE%E3%81%93%E3%81%9D%E3%81%86-1350639"
+        },
+        "cytat": "…精油は種々のセスキテルペンおよびモノテルペンを含み，特有の臭気があり，精神不安定やヒステリーの鎮静薬として用いられる。しかし，このワレリアナ根をとるヨーロッパ産のセイヨウカノコソウV.officinalis L.よりカノコソウの方が薬用としては優良である。また，中国では纈草（けつそう）の名で，この仲間の数種が民間薬として利用される。…"
+      },
+      {
+        "id": "s2914",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "korzeń",
+        "tekst": "Korzeń kozłka lekarskiego: Korzeń kozłka lekarskiego od dawna cieszy się uznaniem jako silny naturalny środek leczniczy, powszechnie stosowany ze względu na swoją niezwykłą zdolność do łagodzenia bezsenności i zmniejszania niepokoju.",
+        "jezyk": "en-GB",
+        "zrodlo": {
+          "nazwa": "resources.ancientpurity.com",
+          "url": "https://resources.ancientpurity.com/comprehensive-adaptogenic-herbs-guide-how-nature-helps-combat-stress/"
+        },
+        "cytat": "Valerian Root: Valerian Root has long been revered as a powerful natural remedy, widely embraced for its remarkable ability to ease insomnia and alleviate anxiety."
+      },
+      {
+        "id": "s2915",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": null,
+        "tekst": "Zioło to, znane ze swoich właściwości uspokajających, delikatnie działa kojąco na układ nerwowy, pomagając wyciszyć niespokojny umysł i sprzyjając głębokiemu, regenerującemu senowi.",
+        "jezyk": "en-GB",
+        "zrodlo": {
+          "nazwa": "resources.ancientpurity.com",
+          "url": "https://resources.ancientpurity.com/comprehensive-adaptogenic-herbs-guide-how-nature-helps-combat-stress/"
+        },
+        "cytat": "Known for its calming properties, this ancient herb gently soothes the nervous system, helping to quiet restless minds and foster deep, restorative sleep."
+      },
+      {
+        "id": "s2916",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "korzeń",
+        "tekst": "Wspomagając relaksację i łagodząc napięcie, które często towarzyszy stresowi i niepokojowi, korzeń waleriany stanowi holistyczne podejście do osiągnięcia spokoju bez skutków ubocznych, jakie zwykle wiążą się z farmaceutycznymi środkami nasennymi lub lekami przeciwlękowymi.",
+        "jezyk": "en-GB",
+        "zrodlo": {
+          "nazwa": "resources.ancientpurity.com",
+          "url": "https://resources.ancientpurity.com/comprehensive-adaptogenic-herbs-guide-how-nature-helps-combat-stress/"
+        },
+        "cytat": "By promoting relaxation and reducing the tension that often accompanies stress and anxiety, Valerian Root offers a holistic approach to achieving tranquillity without the side effects commonly associated with pharmaceutical sleep aids or an"
+      },
+      {
+        "id": "s2917",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Waleriana, a dokładnie kozłek lekarski (Valeriana officinalis) to roślina pospolicie występująca w Europie, Azji i Ameryce Północnej.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/ukoi-nerwy-i-stres-pomoze-spokojnie-zasnac-zaparz-te-korzenie-i-pij-przed-snem-herbata-z-waleriany-na-uspokojenie/ar/c14p2-27582055"
+        },
+        "cytat": "Waleriana, a dokładnie kozłek lekarski (Valeriana officinalis) to roślina pospolicie występująca w Europie, Azji i Ameryce Północnej."
+      },
+      {
+        "id": "s2918",
+        "sekcja": "czesci_rosliny",
+        "czesc": "korzeń",
+        "tekst": "Kwitnie od czerwca do sierpnia, ale surowcem zielarskim jest jej kłącze i korzeń, które najlepiej zbierać na wiosnę lub na jesieni, czyli poza okresem kwitnienia.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/ukoi-nerwy-i-stres-pomoze-spokojnie-zasnac-zaparz-te-korzenie-i-pij-przed-snem-herbata-z-waleriany-na-uspokojenie/ar/c14p2-27582055"
+        },
+        "cytat": "Kwitnie od czerwca do sierpnia, ale surowcem zielarskim jest jej kłącze i korzeń, które najlepiej zbierać na wiosnę lub na jesieni, czyli poza okresem kwitnienia."
+      },
+      {
+        "id": "s2919",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Do łagodnych i rzadkich skutków ubocznych należą: - bóle głowy, - zawroty głowy, - nadmierna senność, - uczucie otępienia, - suchość w ustach, - dolegliwości żołądkowo-jelitowe (np. bóle brzucha, nudności).",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/ukoi-nerwy-i-stres-pomoze-spokojnie-zasnac-zaparz-te-korzenie-i-pij-przed-snem-herbata-z-waleriany-na-uspokojenie/ar/c14p2-27582055"
+        },
+        "cytat": "Do łagodnych i rzadkich skutków ubocznych należą: - bóle głowy, - zawroty głowy, - nadmierna senność, - uczucie otępienia, - suchość w ustach, - dolegliwości żołądkowo-jelitowe (np. bóle brzucha, nudności)."
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-05",
+    "pola": {
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Wieloletnia, wysoka bylina (do 1,5 m) występująca na wilgotnych łąkach i w zaroślach. Charakteryzuje się baldachowatymi kwiatostanami o słodkim, mdłym zapachu, które w miarę suszenia korzenia zmieniają się w bardzo intensywny, charakterystyczny aromat. Kozłek jest jednym z najstarszych znanych ludzkości środków uspokajających, stosowanym już w starożytnej Grecji i Rzymie jako 'panaceum' na dolegliwości nerwowe.",
+        "tresc": [
+          {
+            "tekst": "Wieloletnia, wysoka bylina (do 1,5 m) występująca na wilgotnych łąkach i w zaroślach.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Charakteryzuje się baldachowatymi kwiatostanami o słodkim, mdłym zapachu, które w miarę suszenia korzenia zmieniają się w bardzo intensywny, charakterystyczny aromat.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kozłek jest jednym z najstarszych znanych ludzkości środków uspokajających, stosowanym już w starożytnej Grecji i Rzymie jako 'panaceum' na dolegliwości nerwowe.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Waleriana, a dokładnie kozłek lekarski (Valeriana officinalis) to roślina pospolicie występująca w Europie, Azji i Ameryce Północnej.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2917"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "f01fba8fa012f5e9"
+      },
+      "czesci_rosliny.korzen_i_klacze.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Radix Valerianae cum Rhizomate: Opis surowca",
+        "typ": "tekst",
+        "oryginal": "Wykopywane jesienią (wrzesień/październik) lub wczesną wiosną u roślin dwuletnich.",
+        "tresc": [
+          {
+            "tekst": "Wykopywane jesienią (wrzesień/październik) lub wczesną wiosną u roślin dwuletnich.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwitnie od czerwca do sierpnia, ale surowcem zielarskim jest jej kłącze i korzeń, które najlepiej zbierać na wiosnę lub na jesieni, czyli poza okresem kwitnienia.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2918"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "d1f0cb8f666fbfed"
+      },
+      "czesci_rosliny.korzen_i_klacze.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Radix Valerianae cum Rhizomate: Substancje czynne",
+        "typ": "lista",
+        "oryginal": [
+          "Waleropotriaty (działanie uspokajające)",
+          "Olejek eteryczny (kwas walerenowy - hamuje rozkład GABA w mózgu)",
+          "Alkaloidy pirydynowe",
+          "Garbniki",
+          "Kwasy organiczne"
+        ],
+        "tresc": [
+          {
+            "tekst": "Waleropotriaty (działanie uspokajające)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Olejek eteryczny (kwas walerenowy - hamuje rozkład GABA w mózgu)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Alkaloidy pirydynowe",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Garbniki",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwasy organiczne",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W składzie znajduje się kwas valerianowy. Zawiera również terpeny, składniki lotne oraz alkaloidy. Kłącza i korzenie zawierające te składniki nazywane są w Europie „korzeniem waleriany”. Zawartość olejku eterycznego jest mniejsza niż w przypadku kanokosou.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2912"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "cf0ad3150148ab63"
+      },
+      "zastosowanie.medyczne": {
+        "tytul": "Praktyczne zastosowanie - Medycyna",
+        "typ": "tekst",
+        "oryginal": "Bezsenność, stany lękowe, nerwice serca i przewodu pokarmowego, bolesne miesiączki, migreny na tle nerwowym, trudności w koncentracji wywołane stresem.",
+        "tresc": [
+          {
+            "tekst": "Bezsenność, stany lękowe, nerwice serca i przewodu pokarmowego, bolesne miesiączki, migreny na tle nerwowym, trudności w koncentracji wywołane stresem.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Zioło to, znane ze swoich właściwości uspokajających, delikatnie działa kojąco na układ nerwowy, pomagając wyciszyć niespokojny umysł i sprzyjając głębokiemu, regenerującemu senowi.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2915"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "2e8f7eada86bca6e"
+      },
+      "czesci_rosliny.korzen_i_klacze.wlasciwości": {
+        "tytul": "Surowce i zbiory - Radix Valerianae cum Rhizomate: Działanie",
+        "typ": "tekst",
+        "oryginal": "Silnie uspokajające, ułatwiające zasypianie, rozkurczowe (mięśnie gładkie), obniżające pobudliwość kory mózgowej.",
+        "tresc": [
+          {
+            "tekst": "Silnie uspokajające, ułatwiające zasypianie, rozkurczowe (mięśnie gładkie), obniżające pobudliwość kory mózgowej.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "…Olejek eteryczny zawiera różne seskwiterpeny i monoterpeny, ma charakterystyczny zapach i jest stosowany jako środek uspokajający w stanach niestabilności psychicznej i histerii. Jednak pod względem właściwości leczniczych lepsza jest waleriana japońska niż waleriana lekarska (V. officinalis L.) pochodząca z Europy, z której pozyskuje się korzeń waleriany. Ponadto w Chinach kilka gatunków z tej rodziny jest wykorzystywanych w medycynie ludowej pod nazwą „ketsuso”.…",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2913"
+            ]
+          },
+          {
+            "tekst": "Korzeń kozłka lekarskiego: Korzeń kozłka lekarskiego od dawna cieszy się uznaniem jako silny naturalny środek leczniczy, powszechnie stosowany ze względu na swoją niezwykłą zdolność do łagodzenia bezsenności i zmniejszania niepokoju.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2914"
+            ]
+          },
+          {
+            "tekst": "Wspomagając relaksację i łagodząc napięcie, które często towarzyszy stresowi i niepokojowi, korzeń waleriany stanowi holistyczne podejście do osiągnięcia spokoju bez skutków ubocznych, jakie zwykle wiążą się z farmaceutycznymi środkami nasennymi lub lekami przeciwlękowymi.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2916"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "d9dd63d427c727af"
+      },
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": "Nie stosować u dzieci poniżej 12 roku życia bez konsultacji. U niektórych osób kozłek może powodować tzw. 'hangover' (ociężałość poranną). Przerwać stosowanie co najmniej 2 tygodnie przed planowaną operacją (wpływ na narkozę).",
+        "tresc": [
+          {
+            "tekst": "Nie stosować u dzieci poniżej 12 roku życia bez konsultacji.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "U niektórych osób kozłek może powodować tzw.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "'hangover' (ociężałość poranną).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Przerwać stosowanie co najmniej 2 tygodnie przed planowaną operacją (wpływ na narkozę).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Do łagodnych i rzadkich skutków ubocznych należą: - bóle głowy, - zawroty głowy, - nadmierna senność, - uczucie otępienia, - suchość w ustach, - dolegliwości żołądkowo-jelitowe (np. bóle brzucha, nudności).",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2919"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "94f51c87d9dea052"
+      }
+    },
+    "uzyte_fakty": [
+      "s2912",
+      "s2913",
+      "s2914",
+      "s2915",
+      "s2916",
+      "s2917",
+      "s2918",
+      "s2919"
     ]
   }
 }
