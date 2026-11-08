@@ -126,7 +126,7 @@
     "Rycina": "https://upload.wikimedia.org/wikipedia/commons/8/87/Tanacetum_vulgare_L_-_plate_179_-_MAS_Atl_Pl_France_2_183_no-description.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-11-06",
+    "zaktualizowano": "2026-11-07",
     "w_url": true,
     "zdjecia": [
       {
@@ -174,6 +174,98 @@
         "licencja_url": null,
         "zrodlo": "Wikimedia Commons"
       }
+    ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-11-06",
+    "uporzadkowano": "2026-11-06",
+    "uklad": "deterministyczny",
+    "zrodla": [
+      {
+        "nazwa": "Weblio (slowniki i encyklopedie JP)",
+        "url": "https://www.weblio.jp/content/%E3%82%BF%E3%83%B3%E3%82%B8%E3%83%BC",
+        "jezyk": "ja",
+        "typ": "strona",
+        "nr": 1
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "- Zawiera składniki, które są ogólnie toksyczne.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3115"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {},
+    "fakty": [
+      {
+        "id": "s3115",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "- Zawiera składniki, które są ogólnie toksyczne.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Weblio (slowniki i encyklopedie JP)",
+          "url": "https://www.weblio.jp/content/%E3%82%BF%E3%83%B3%E3%82%B8%E3%83%BC"
+        },
+        "cytat": "- 全体に毒性を持つ成分が含まれている。"
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-06",
+    "pola": {
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": "BEZWZGLĘDNIE NIE STOSOWAĆ W CIĄŻY (powoduje skurcze macicy i może doprowadzić do poronienia). Przedawkowanie powoduje zawroty głowy, krwiomocz i omamy. Przechowywać z dala od dzieci!",
+        "tresc": [
+          {
+            "tekst": "BEZWZGLĘDNIE NIE STOSOWAĆ W CIĄŻY (powoduje skurcze macicy i może doprowadzić do poronienia).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Przedawkowanie powoduje zawroty głowy, krwiomocz i omamy.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Przechowywać z dala od dzieci!",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "- Zawiera składniki, które są ogólnie toksyczne.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3115"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "d8a80efe5e5615d2"
+      }
+    },
+    "uzyte_fakty": [
+      "s3115"
     ]
   }
 }

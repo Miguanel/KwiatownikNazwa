@@ -141,7 +141,7 @@
     "Kora": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Hazel%2C_Corylus_avellana._Epicormic_growth._River_Ayr._Holehouse_Holm%2C_East_Ayrshire.jpg/960px-Hazel%2C_Corylus_avellana._Epicormic_growth._River_Ayr._Holehouse_Holm%2C_East_Ayrshire.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-21",
+    "zaktualizowano": "2026-11-06",
     "w_url": true,
     "zdjecia": [
       {
@@ -193,19 +193,385 @@
   },
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-10-24",
-    "uporzadkowano": "2026-10-21",
-    "uklad": "deterministyczny: sekcja nie jest obiektem",
+    "zaktualizowano": "2026-11-06",
+    "uporzadkowano": "2026-11-06",
+    "uklad": "deterministyczny",
     "zrodla": [
+      {
+        "nazwa": "Wikipedia (pl): Leszczyna pospolita",
+        "url": "https://pl.wikipedia.org/wiki/Leszczyna_pospolita",
+        "jezyk": "pl",
+        "typ": "wikipedia",
+        "nr": 1
+      },
       {
         "nazwa": "Wikipedia (de): Gemeine Hasel",
         "url": "https://de.wikipedia.org/wiki/Gemeine_Hasel",
         "jezyk": "de",
         "typ": "wikipedia",
-        "nr": 1
+        "nr": 2
+      },
+      {
+        "nazwa": "Wikipedia (en): Corylus avellana",
+        "url": "https://en.wikipedia.org/wiki/Corylus_avellana",
+        "jezyk": "en",
+        "typ": "wikipedia",
+        "nr": 3
+      },
+      {
+        "nazwa": "Wikipedia (ja): セイヨウハシバミ",
+        "url": "https://ja.wikipedia.org/wiki/%E3%82%BB%E3%82%A4%E3%83%A8%E3%82%A6%E3%83%8F%E3%82%B7%E3%83%90%E3%83%9F",
+        "jezyk": "ja",
+        "typ": "wikipedia",
+        "nr": 4
+      },
+      {
+        "nazwa": "Wikipedia (zh): 歐榛",
+        "url": "https://zh.wikipedia.org/wiki/%E6%AD%90%E6%A6%9B",
+        "jezyk": "zh",
+        "typ": "wikipedia",
+        "nr": 5
+      },
+      {
+        "nazwa": "www.pflanzen-vielfalt.net",
+        "url": "https://www.pflanzen-vielfalt.net/baeume-straeucher-a-z/baeume-uebersicht-a-k/hasel-gemeine/",
+        "jezyk": "de",
+        "typ": "strona",
+        "nr": 6
+      },
+      {
+        "nazwa": "www.typology.com",
+        "url": "https://www.typology.com/carnet/tout-savoir-sur-l-huile-de-noisette?srsltid=AU7gw4WcwdYyiVp6r7QlYOMqEV__j3OmYpkmCueQ7LgcTblSOO19796V",
+        "jezyk": "fr",
+        "typ": "strona",
+        "nr": 7
       }
     ],
     "sekcje": [
+      {
+        "klucz": "opis",
+        "tytul": "Opis i wygląd",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Liczba chromosomów wynosi 2n = 22.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1591"
+            ]
+          },
+          {
+            "tekst": "Leszczyna pospolita zwykle dorasta wysokości od 3 do 8 metrów.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1990"
+            ]
+          },
+          {
+            "tekst": "Leszczyna pospolita jest wieloletnim, sommerzielonym i wielostemnym krzewem o wysokości od 5 do 6 metrów, który rzadko rośnie jako małe drzewo.",
+            "czesc": null,
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1524"
+            ]
+          },
+          {
+            "tekst": "Lamberts-hasel to bliski krewny leszczyny pospolitej, który różni się od niej rurkowato wydłużonym, zwężonym i całkowicie otaczającym orzech owocostaniem.",
+            "czesc": null,
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1531"
+            ]
+          },
+          {
+            "tekst": "Starsze gałęzie mają gładką, błyszczącą korę w kolorze od ciemnobrązowego do szarobrązowego, która jest charakterystycznie pokryta poprzecznymi, jasnymi przetchlinkami.",
+            "czesc": "kora",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1525"
+            ]
+          },
+          {
+            "tekst": "Męskie kwiaty to zwisające, żółtawo pylące kätzchen o długości od 8 do 10 cm, natomiast żeńskie są bardzo niepozorne i mają małe, jaskrawo purpurowe znamiona wystające z pąków.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1528"
+            ]
+          },
+          {
+            "tekst": "Liście są opadające, okrągłe, mają długość 6‑12 cm, są miękko owłosione po obu stronach i mają podwójnie piłkowany brzeg.",
+            "czesc": "liście",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1991"
+            ]
+          },
+          {
+            "tekst": "Liście są ułożone naprzemianlegle, mają okrągły lub odwrotnie jajowaty kształt, długość od 6 do 10 cm, a ich brzeg jest grubo podwójnie piłkowany.",
+            "czesc": "liście",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1527"
+            ]
+          },
+          {
+            "tekst": "Orzechy leszczyny mają kształt zbliżony do kulistego lub owalnego, osiągają długość 15-20 mm i szerokość 12-20 mm, a u odmian uprawnych mogą być nieco większe.",
+            "czesc": "owoce",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1512"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "wystepowanie",
+        "tytul": "Występowanie",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Leszczyna pospolita występuje w stanie dzikim w całej Europie, w Azji Mniejszej oraz na Kaukazie, a jako gatunek introdukowany rośnie także w zachodniej Syberii.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1391"
+            ]
+          },
+          {
+            "tekst": "Leszczyna pospolita rośnie w ozeanizmowym i subozeanizmowym klimacie, w miejscach ciepłych. Występuje w lasach, przy granicach leśnych i na obronach polnych.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1517"
+            ]
+          },
+          {
+            "tekst": "Pojedyncze osobniki leszczyny spotkać można na Orkadach oraz w Norwegii aż po równoleżnik Północny, natomiast w Szwecji występuje do 64., a w Finlandii do 63. równoleżnika.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1997"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "czesci_rosliny",
+        "tytul": "Części rośliny i surowce",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Orzechy są osadzone w krótkim liściastym owocostaniu, które zakrywa około trzech czwartych nasienia.",
+            "czesc": "owoce",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1992"
+            ]
+          },
+          {
+            "tekst": "Skórka nasiona jest cienka, ciemnobrązowa, gorzka i często przed gotowaniem jest usuwana.",
+            "czesc": "owoce",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1993"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Jadalne nasiona leszczyny charakteryzują się dużą zawartością białka i tłuszczów nienasyconych, a także manganu, miedzi, witaminy E, tiaminy i magnezu.",
+            "czesc": "nasiona",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1513"
+            ]
+          },
+          {
+            "tekst": "W nasionach i ich przetworach występują fenolowe związki takie jak katechina, kwas galusowy, sinapowy, kawowy, p‑kumarynowy oraz ferulowy wraz z ich estrami i flawonoidami.",
+            "czesc": "owoce",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1994"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Tradycyjnie liście europejskiej odmiany leszczyny były wykorzystywane jako substrogat, czyli zamiennik tytoniu.",
+            "czesc": "liście",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s1520"
+            ]
+          },
+          {
+            "tekst": "W medycynie ludowej suszone liście tradycyjnie stosowano ze względu na łagodną zawartość garbniki jako łagodny środek ściągający przy powierzchownych stanach zapalnych skóry lub jako dodatek oczyszczający krew w mieszankach ziołowych.",
+            "czesc": "liście",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1529"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "barwienie",
+        "tytul": "Barwienie i rzemiosło",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Drewno leszczyny jest miękkie i nietrwałe, używane jako węgiel rysunkowy.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1509"
+            ]
+          },
+          {
+            "tekst": "Z owoców leszczyny pozyskuje się olej, który znajduje zastosowanie między innymi w przemyśle farbiarskim.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1392"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kosmetyka",
+        "tytul": "Kosmetyka",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Olej uzyskiwany z orzechów laskowych jest wykorzystywany w branży kosmetycznej.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1393"
+            ]
+          },
+          {
+            "tekst": "Olej leszczynowy jest stosowany w kosmetyce do nawilżania skóry i poprawy jej wygładzenia.",
+            "czesc": "sok",
+            "zrodla": [
+              7
+            ],
+            "fakty": [
+              "s1540"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "historia",
+        "tytul": "Historia i nazwa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Epitet gatunkowe avellana nawiązuje do antycznego włoskiego miasta Abella (dzisiejsza Avella w Kampanii), regionu słynącego z uprawy orzechów laskowych od starożytności.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1996"
+            ]
+          },
+          {
+            "tekst": "W epoce środkowego neolitu (ok. 7000–6000 p.n.e.) leszczyna dominowała w runie środkowoeuropejskiej, zanim została wyparta przez dąbrowy, a jej szybka ekspansja po wylodowaceniu wiąże się częściowo z osiedlaniem się człowieka.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1998"
+            ]
+          },
+          {
+            "tekst": "Wysokiej Anglii leszczyna odgrywała istotną rolę w tworzeniu żywopłotów, które służyły jako tradycyjne granice pól.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1592"
+            ]
+          },
+          {
+            "tekst": "Historycznie drewno leszczyny było uprawiane w systemie sadzy (coppice), a otrzymane pole wykorzystywano do budowy ogrodów oraz konstrukcji typu pryticzo-glinianych (wattle-and-daub).",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1593"
+            ]
+          }
+        ]
+      },
       {
         "klucz": "kultura",
         "tytul": "Wierzenia i tradycje",
@@ -216,7 +582,7 @@
             "tekst": "Leszczynie przypisywano zdolność przewodzenia „strumieni siły”, dlatego z jej witek robiono różdżki do szukania skarbów, żył kruszcu i źródeł; taką różdżkę pokazuje już „De re metallica” Georgiusa Agricoli z 1556 roku, a zwyczaj przetrwał do dziś.",
             "czesc": null,
             "zrodla": [
-              1
+              2
             ],
             "fakty": [
               "s2003"
@@ -226,17 +592,27 @@
             "tekst": "Zwyczaj stawiania ukochanej 1 maja brzózki pod oknem miał złośliwą odmianę: krzak leszczyny pod oknem wystawiał dziewczynę na pośmiewisko, bo leszczynę kojarzono z pozamałżeńskimi schadzkami. W Normandii ten obyczaj zapisano już w 1393 roku.",
             "czesc": null,
             "zrodla": [
-              1
+              2
             ],
             "fakty": [
               "s2004"
             ]
           },
           {
+            "tekst": "Wierzono też, że krzew leszczyny chroni przed uderzeniem pioruna i odprowadza szkodliwe „promieniowanie ziemi i wód”.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2005"
+            ]
+          },
+          {
             "tekst": "W starożytnym Rzymie leszczyna była symbolem pokoju: posłowie na rokowania o rozejm i pokój trzymali w dłoni gałązkę leszczyny na znak dobrych intencji.",
             "czesc": null,
             "zrodla": [
-              1
+              2
             ],
             "fakty": [
               "s1999"
@@ -246,7 +622,7 @@
             "tekst": "Jeszcze w czasach historycznych w Niemczech miejsca zgromadzeń i sądów wytyczano letnimi pędami leszczyny (tzw. „Summerlatten”), jej gałązki znaczyły granice, a laskę władzy sądowej i leśnej robiono z leszczynowego drewna.",
             "czesc": null,
             "zrodla": [
-              1
+              2
             ],
             "fakty": [
               "s2000"
@@ -256,30 +632,182 @@
             "tekst": "Niemieckie powiedzenie „jemanden mit Haselsaft erquicken” („pokrzepić kogoś sokiem z leszczyny”) znaczyło sprawić komuś lanie leszczynowym kijem.",
             "czesc": null,
             "zrodla": [
-              1
+              2
             ],
             "fakty": [
               "s2227"
             ]
           },
           {
-            "tekst": "Wierzono też, że krzew leszczyny chroni przed uderzeniem pioruna i odprowadza szkodliwe „promieniowanie ziemi i wód”.",
+            "tekst": "W Europie leszczyna była używana jako symbol mądrości i jako element w magicznych obrzędach.",
             "czesc": null,
             "zrodla": [
-              1
+              4
             ],
             "fakty": [
-              "s2005"
+              "s1521"
             ]
           },
           {
             "tekst": "Leszczynie, kojarzonej z płodnością i miłością, przypisywano działanie afrodyzjaku: spaloną na proszek korę dodawano do jedzenia albo używano oleju z orzechów laskowych.",
             "czesc": "kora",
             "zrodla": [
-              1
+              2
             ],
             "fakty": [
               "s2002"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "nazwy_ludowe",
+        "tytul": "Nazwy ludowe",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Leszczyna pospolita znana jest również pod nazwami takimi jak Frau Hasel, Haselbaum, Haselbusch, Haselnot, Haselstude i inne.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1519"
+            ]
+          },
+          {
+            "tekst": "W Japonii leszczyna znana jest pod nazwą セイヨウハシバミ, a w Europie jako Frau Hasel, Haselbaum itp.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1523"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Wszystkie części rośliny leszczyny pospolitej są nieszkodliwe i nietrujące.",
+            "czesc": null,
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1526"
+            ]
+          },
+          {
+            "tekst": "Orzechy laskowe posiadają cienką, ciemnobrązową skórkę o gorzkim smaku, którą czasem usuwa się przed gotowaniem.",
+            "czesc": "nasiona",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1594"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "uprawa",
+        "tytul": "Uprawa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W uprawie spotyka się szereg odmian i mieszańców uprawnych, zarówno ozdobnych jak i sadowniczych.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1511"
+            ]
+          },
+          {
+            "tekst": "W uprawie znajduje się obecnie około 400 nazwanych odmian leszczyny pospolitej, w tym polskie odmiany Kataloński i Webba Cenny.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1515"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "ciekawostki",
+        "tytul": "Ciekawostki",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Miękkie i nietrwałe drewno leszczyny bywa wykorzystywane do wyrobu węgla rysunkowego.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1394"
+            ]
+          },
+          {
+            "tekst": "Odmiana 'Contorta', nazywana również kijami Harry'ego Lauder'a, charakteryzuje się kręto-ślimaczanym wzrostem pędów i pofałdowanymi liśćmi; została odkryta w żywopłocie w Gloucestershire w 1863 roku.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1596"
+            ]
+          },
+          {
+            "tekst": "W 2003 r. amerykańska FDA uznała orzechy, w tym leszczynowe, za produkty „sercowo‑zdrowe”.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1995"
+            ]
+          },
+          {
+            "tekst": "W historycznych okresach głodu zbierano bogate w białko męskie kotki pyłkowe, suszono je i drobno mielono, aby wzbogacić mąkę chlebową i zbożową.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1530"
+            ]
+          },
+          {
+            "tekst": "W miąższu orzechów leszczynowych kumuluje się wiele polifenoli, w tym katechinę, galusową, sinapową, kawową, p-kumarową oraz ferulę kwasu, a także ich estrów i flawonoidów.",
+            "czesc": "nasiona",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1595"
+            ]
+          },
+          {
+            "tekst": "Liści leszczyny tradycyjnie wykorzystuje się jako pokarm dla wielu zwierząt, w tym dla owadów mocnych, takich jak Coleophora anatipennella.",
+            "czesc": "ziele",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1597"
             ]
           }
         ]
@@ -287,7 +815,37 @@
     ],
     "czesci": {
       "kora": [
+        "s1525",
         "s2002"
+      ],
+      "kwiaty": [
+        "s1528",
+        "s1530"
+      ],
+      "liście": [
+        "s1991",
+        "s1527",
+        "s1520",
+        "s1529"
+      ],
+      "owoce": [
+        "s1512",
+        "s1992",
+        "s1993",
+        "s1994",
+        "s1392",
+        "s1393"
+      ],
+      "nasiona": [
+        "s1513",
+        "s1594",
+        "s1595"
+      ],
+      "sok": [
+        "s1540"
+      ],
+      "ziele": [
+        "s1597"
       ]
     },
     "fakty": [
@@ -374,13 +932,784 @@
           "url": "https://de.wikipedia.org/wiki/Gemeine_Hasel"
         },
         "cytat": "Eine prosaische Verwendung der Hasel versteckt sich hinter der Redewendung „jemanden mit Haselsaft erquicken“: als Prügelstock."
+      },
+      {
+        "id": "s1391",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Leszczyna pospolita występuje w stanie dzikim w całej Europie, w Azji Mniejszej oraz na Kaukazie, a jako gatunek introdukowany rośnie także w zachodniej Syberii.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Leszczyna pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Leszczyna_pospolita"
+        },
+        "cytat": "Występuje w stanie dzikim w całej Europie, w Azji Mniejszej i na Kaukazie. Jako introdukowany także w zachodniej Syberii."
+      },
+      {
+        "id": "s1392",
+        "sekcja": "barwienie",
+        "czesc": "owoce",
+        "tekst": "Z owoców leszczyny pozyskuje się olej, który znajduje zastosowanie między innymi w przemyśle farbiarskim.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Leszczyna pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Leszczyna_pospolita"
+        },
+        "cytat": "Z owoców uzyskuje się olej, który znajduje zastosowanie w przemyśle spożywczym, farmaceutycznym, farbiarskim oraz kosmetycznym."
+      },
+      {
+        "id": "s1393",
+        "sekcja": "kosmetyka",
+        "czesc": "owoce",
+        "tekst": "Olej uzyskiwany z orzechów laskowych jest wykorzystywany w branży kosmetycznej.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Leszczyna pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Leszczyna_pospolita"
+        },
+        "cytat": "Z owoców uzyskuje się olej, który znajduje zastosowanie w przemyśle spożywczym, farmaceutycznym, farbiarskim oraz kosmetycznym."
+      },
+      {
+        "id": "s1394",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Miękkie i nietrwałe drewno leszczyny bywa wykorzystywane do wyrobu węgla rysunkowego.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Leszczyna pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Leszczyna_pospolita"
+        },
+        "cytat": "Drewno jest miękkie i nietrwałe, używane jako węgiel rysunkowy."
+      },
+      {
+        "id": "s1509",
+        "sekcja": "barwienie",
+        "czesc": null,
+        "tekst": "Drewno leszczyny jest miękkie i nietrwałe, używane jako węgiel rysunkowy.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Leszczyna pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Leszczyna_pospolita"
+        },
+        "cytat": "Drewno jest miękkie i nietrwałe, używane jako węgiel rysunkowy."
+      },
+      {
+        "id": "s1511",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "W uprawie spotyka się szereg odmian i mieszańców uprawnych, zarówno ozdobnych jak i sadowniczych.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Leszczyna pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Leszczyna_pospolita"
+        },
+        "cytat": "W uprawie spotyka się szereg odmian i mieszańców uprawnych, zarówno ozdobnych jak i sadowniczych."
+      },
+      {
+        "id": "s1512",
+        "sekcja": "opis",
+        "czesc": "owoce",
+        "tekst": "Orzechy leszczyny mają kształt zbliżony do kulistego lub owalnego, osiągają długość 15-20 mm i szerokość 12-20 mm, a u odmian uprawnych mogą być nieco większe.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Corylus avellana",
+          "url": "https://en.wikipedia.org/wiki/Corylus_avellana"
+        },
+        "cytat": "The nut is roughly spherical to oval, 15–20 mm (5⁄8–3⁄4 in) long and 12–20 mm (1⁄2–3⁄4 in) broad (larger, up to 25 mm long, in some cultivated selections)"
+      },
+      {
+        "id": "s1513",
+        "sekcja": "sklad",
+        "czesc": "nasiona",
+        "tekst": "Jadalne nasiona leszczyny charakteryzują się dużą zawartością białka i tłuszczów nienasyconych, a także manganu, miedzi, witaminy E, tiaminy i magnezu.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Corylus avellana",
+          "url": "https://en.wikipedia.org/wiki/Corylus_avellana"
+        },
+        "cytat": "Hazelnuts are rich in protein and unsaturated fat. They also contain significant amounts of manganese, copper, vitamin E, thiamine, and magnesium."
+      },
+      {
+        "id": "s1515",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "W uprawie znajduje się obecnie około 400 nazwanych odmian leszczyny pospolitej, w tym polskie odmiany Kataloński i Webba Cenny.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Corylus avellana",
+          "url": "https://en.wikipedia.org/wiki/Corylus_avellana"
+        },
+        "cytat": "There are many cultivars of the hazel, up to 400 cultivars (in 2011) of C. avellana have been named. [...] It also includes Polish hazelnuts cultivars: Kataloński and Webba Cenny."
+      },
+      {
+        "id": "s1517",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Leszczyna pospolita rośnie w ozeanizmowym i subozeanizmowym klimacie, w miejscach ciepłych. Występuje w lasach, przy granicach leśnych i na obronach polnych.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gemeine Hasel",
+          "url": "https://de.wikipedia.org/wiki/Gemeine_Hasel"
+        },
+        "cytat": "Die Hasel wächst bevorzugt in ozeanischem und subozeanischem Klima in sommerwarmen Lagen. Sie wächst in lichten Wäldern, an Waldrändern und Feldhecken."
+      },
+      {
+        "id": "s1519",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "Leszczyna pospolita znana jest również pod nazwami takimi jak Frau Hasel, Haselbaum, Haselbusch, Haselnot, Haselstude i inne.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gemeine Hasel",
+          "url": "https://de.wikipedia.org/wiki/Gemeine_Hasel"
+        },
+        "cytat": "Für die Gemeine Hasel bestehen bzw. bestanden auch die weiteren deutschsprachigen Trivialnamen Augstnuss (Schwaben), Drateln, Frau Hasel, Hagnuss (Bern), Hasel (Norddeutschland), Haselbaum (Norddeutschland), Haselbusch, Haselbusk (Nordwestd"
+      },
+      {
+        "id": "s1520",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "liście",
+        "tekst": "Tradycyjnie liście europejskiej odmiany leszczyny były wykorzystywane jako substrogat, czyli zamiennik tytoniu.",
+        "jezyk": "zh",
+        "zrodlo": {
+          "nazwa": "Wikipedia (zh): 歐榛",
+          "url": "https://zh.wikipedia.org/wiki/%E6%AD%90%E6%A6%9B"
+        }
+      },
+      {
+        "id": "s1521",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "W Europie leszczyna była używana jako symbol mądrości i jako element w magicznych obrzędach.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): セイヨウハシバミ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%BB%E3%82%A4%E3%83%A8%E3%82%A6%E3%83%8F%E3%82%B7%E3%83%90%E3%83%9F"
+        },
+        "cytat": "ヨーロッパでは、古くからヤナギとともに占い棒として使われていた。セイヨウハシバミの枝は英知の象徴とされ、隠れたものを探し出す力を持っているとされてきた。"
+      },
+      {
+        "id": "s1523",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "W Japonii leszczyna znana jest pod nazwą セイヨウハシバミ, a w Europie jako Frau Hasel, Haselbaum itp.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ja): セイヨウハシバミ",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%BB%E3%82%A4%E3%83%A8%E3%82%A6%E3%83%8F%E3%82%B7%E3%83%90%E3%83%9F"
+        },
+        "cytat": "セイヨウハシバミ（西洋榛、学名: Corylus avellana）は、カバノキ科の落葉低木。"
+      },
+      {
+        "id": "s1524",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Leszczyna pospolita jest wieloletnim, sommerzielonym i wielostemnym krzewem o wysokości od 5 do 6 metrów, który rzadko rośnie jako małe drzewo.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "www.pflanzen-vielfalt.net",
+          "url": "https://www.pflanzen-vielfalt.net/baeume-straeucher-a-z/baeume-uebersicht-a-k/hasel-gemeine/"
+        },
+        "cytat": "Wuchsform: Sommergrüner, vielstämmiger und aufrechter Strauch (selten als Kleinbaum) - Wuchshöhe: 5 bis 6 Meter (in Baumform bis 10 Meter)"
+      },
+      {
+        "id": "s1525",
+        "sekcja": "opis",
+        "czesc": "kora",
+        "tekst": "Starsze gałęzie mają gładką, błyszczącą korę w kolorze od ciemnobrązowego do szarobrązowego, która jest charakterystycznie pokryta poprzecznymi, jasnymi przetchlinkami.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "www.pflanzen-vielfalt.net",
+          "url": "https://www.pflanzen-vielfalt.net/baeume-straeucher-a-z/baeume-uebersicht-a-k/hasel-gemeine/"
+        },
+        "cytat": "Die Rinde älterer Äste ist glatt, glänzend dunkelbraun bis graubraun und markant besetzt mit querstehenden, hellen Korkwarzen (Lentizellen)."
+      },
+      {
+        "id": "s1526",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Wszystkie części rośliny leszczyny pospolitej są nieszkodliwe i nietrujące.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "www.pflanzen-vielfalt.net",
+          "url": "https://www.pflanzen-vielfalt.net/baeume-straeucher-a-z/baeume-uebersicht-a-k/hasel-gemeine/"
+        },
+        "cytat": "Giftigkeit: Ungiftig in allen Pflanzenteilen"
+      },
+      {
+        "id": "s1527",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Liście są ułożone naprzemianlegle, mają okrągły lub odwrotnie jajowaty kształt, długość od 6 do 10 cm, a ich brzeg jest grubo podwójnie piłkowany.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "www.pflanzen-vielfalt.net",
+          "url": "https://www.pflanzen-vielfalt.net/baeume-straeucher-a-z/baeume-uebersicht-a-k/hasel-gemeine/"
+        },
+        "cytat": "Blätter: Wechselständig angeordnet, rundlich bis verkehrt eiförmig und 6 bis 10 cm lang. (...) Der Rand ist grob doppelt gesägt."
+      },
+      {
+        "id": "s1528",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Męskie kwiaty to zwisające, żółtawo pylące kätzchen o długości od 8 do 10 cm, natomiast żeńskie są bardzo niepozorne i mają małe, jaskrawo purpurowe znamiona wystające z pąków.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "www.pflanzen-vielfalt.net",
+          "url": "https://www.pflanzen-vielfalt.net/baeume-straeucher-a-z/baeume-uebersicht-a-k/hasel-gemeine/"
+        },
+        "cytat": "Männliche Blüte: Auffällige, 8 bis 10 cm lange, gelblich stäubende Kätzchen, die schlaff herabhängen. - Weibliche Blüte: Sehr unscheinbar und leicht zu übersehen. (...) winzige, leuchtend purpurrote Narbenfäden"
+      },
+      {
+        "id": "s1529",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "liście",
+        "tekst": "W medycynie ludowej suszone liście tradycyjnie stosowano ze względu na łagodną zawartość garbniki jako łagodny środek ściągający przy powierzchownych stanach zapalnych skóry lub jako dodatek oczyszczający krew w mieszankach ziołowych.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "www.pflanzen-vielfalt.net",
+          "url": "https://www.pflanzen-vielfalt.net/baeume-straeucher-a-z/baeume-uebersicht-a-k/hasel-gemeine/"
+        },
+        "cytat": "In der Volksheilkunde wurden die getrockneten Blätter traditionell wegen ihres milden Gerbstoffgehaltes als leichtes Adstringens bei oberflächlichen Hautentzündungen oder als blutreinigende Beigabe in Teemischungen verwendet."
+      },
+      {
+        "id": "s1530",
+        "sekcja": "ciekawostki",
+        "czesc": "kwiaty",
+        "tekst": "W historycznych okresach głodu zbierano bogate w białko męskie kotki pyłkowe, suszono je i drobno mielono, aby wzbogacić mąkę chlebową i zbożową.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "www.pflanzen-vielfalt.net",
+          "url": "https://www.pflanzen-vielfalt.net/baeume-straeucher-a-z/baeume-uebersicht-a-k/hasel-gemeine/"
+        },
+        "cytat": "Die männlichen Pollenkätzchen sind sehr proteinreich. Sie wurden historisch in Notzeiten gesammelt, getrocknet und fein vermahlen, um Brot- und Getreidemehle nahrhaft zu strecken."
+      },
+      {
+        "id": "s1531",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Lamberts-hasel to bliski krewny leszczyny pospolitej, który różni się od niej rurkowato wydłużonym, zwężonym i całkowicie otaczającym orzech owocostaniem.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "www.pflanzen-vielfalt.net",
+          "url": "https://www.pflanzen-vielfalt.net/baeume-straeucher-a-z/baeume-uebersicht-a-k/hasel-gemeine/"
+        },
+        "cytat": "Lamberts-Hasel (Corylus maxima): Ein enger, in Europa häufig kultivierter Verwandter (...) Unterscheidet sich deutlich durch den Fruchtbecher: Bei der Lamberts-Hasel ist dieser röhrenförmig verlängert, oft eingeschnürt und umschließt die Nu"
+      },
+      {
+        "id": "s1540",
+        "sekcja": "kosmetyka",
+        "czesc": "sok",
+        "tekst": "Olej leszczynowy jest stosowany w kosmetyce do nawilżania skóry i poprawy jej wygładzenia.",
+        "jezyk": "fr",
+        "zrodlo": {
+          "nazwa": "www.typology.com",
+          "url": "https://www.typology.com/carnet/tout-savoir-sur-l-huile-de-noisette?srsltid=AU7gw4WcwdYyiVp6r7QlYOMqEV__j3OmYpkmCueQ7LgcTblSOO19796V"
+        },
+        "cytat": "Très nourrissant pour la peau, il la rend plus souple et plus douce mais aussi plus éclatante."
+      },
+      {
+        "id": "s1591",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Liczba chromosomów wynosi 2n = 22.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Leszczyna pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Leszczyna_pospolita"
+        },
+        "cytat": "Liczba chromosomów 2n = 22."
+      },
+      {
+        "id": "s1592",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Wysokiej Anglii leszczyna odgrywała istotną rolę w tworzeniu żywopłotów, które służyły jako tradycyjne granice pól.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Corylus avellana",
+          "url": "https://en.wikipedia.org/wiki/Corylus_avellana"
+        },
+        "cytat": "The shrub is common in many European woodlands. It is an important component of the hedgerows that were the traditional field boundaries in lowland England."
+      },
+      {
+        "id": "s1593",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Historycznie drewno leszczyny było uprawiane w systemie sadzy (coppice), a otrzymane pole wykorzystywano do budowy ogrodów oraz konstrukcji typu pryticzo-glinianych (wattle-and-daub).",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Corylus avellana",
+          "url": "https://en.wikipedia.org/wiki/Corylus_avellana"
+        },
+        "cytat": "The wood was traditionally grown as coppice, the poles cut and used for wattle-and-daub building and agricultural fencing."
+      },
+      {
+        "id": "s1594",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "nasiona",
+        "tekst": "Orzechy laskowe posiadają cienką, ciemnobrązową skórkę o gorzkim smaku, którą czasem usuwa się przed gotowaniem.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Corylus avellana",
+          "url": "https://en.wikipedia.org/wiki/Corylus_avellana"
+        },
+        "cytat": "The seed has a thin, dark brown skin which has a bitter flavour and is sometimes removed before cooking."
+      },
+      {
+        "id": "s1595",
+        "sekcja": "ciekawostki",
+        "czesc": "nasiona",
+        "tekst": "W miąższu orzechów leszczynowych kumuluje się wiele polifenoli, w tym katechinę, galusową, sinapową, kawową, p-kumarową oraz ferulę kwasu, a także ich estrów i flawonoidów.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Corylus avellana",
+          "url": "https://en.wikipedia.org/wiki/Corylus_avellana"
+        },
+        "cytat": "The prevalent phenolics accumulates in Corylus avellana kernels and its by-products are catechin, gallic acid, sinapic acid, caffeic acid, p-coumaric acid, ferulic acid, their esters and flavonoids."
+      },
+      {
+        "id": "s1596",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Odmiana 'Contorta', nazywana również kijami Harry'ego Lauder'a, charakteryzuje się kręto-ślimaczanym wzrostem pędów i pofałdowanymi liśćmi; została odkryta w żywopłocie w Gloucestershire w 1863 roku.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Corylus avellana",
+          "url": "https://en.wikipedia.org/wiki/Corylus_avellana"
+        },
+        "cytat": "'Contorta' (corkscrew hazel, Harry Lauder's walking stick) This variety has stems that grow in curves and spirals unlike other hazel varieties and puckered leaves. It was discovered in a hedge in 1863 in Gloucestershire"
+      },
+      {
+        "id": "s1597",
+        "sekcja": "ciekawostki",
+        "czesc": "ziele",
+        "tekst": "Liści leszczyny tradycyjnie wykorzystuje się jako pokarm dla wielu zwierząt, w tym dla owadów mocnych, takich jak Coleophora anatipennella.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Corylus avellana",
+          "url": "https://en.wikipedia.org/wiki/Corylus_avellana"
+        },
+        "cytat": "The leaves provide food for many animals, including Lepidoptera such as the case-bearer moth Coleophora anatipennella."
+      },
+      {
+        "id": "s1990",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Leszczyna pospolita zwykle dorasta wysokości od 3 do 8 metrów.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Corylus avellana",
+          "url": "https://en.wikipedia.org/wiki/Corylus_avellana"
+        },
+        "cytat": "The shrubs usually grow 3–8 metres (10–26 feet) tall."
+      },
+      {
+        "id": "s1991",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Liście są opadające, okrągłe, mają długość 6‑12 cm, są miękko owłosione po obu stronach i mają podwójnie piłkowany brzeg.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Corylus avellana",
+          "url": "https://en.wikipedia.org/wiki/Corylus_avellana"
+        },
+        "cytat": "The leaves are deciduous, rounded, 6–12 centimetres (2+1⁄2–4+1⁄2 inches) long and across, softly hairy on both surfaces, and with a double-serrate margin."
+      },
+      {
+        "id": "s1992",
+        "sekcja": "czesci_rosliny",
+        "czesc": "owoce",
+        "tekst": "Orzechy są osadzone w krótkim liściastym owocostaniu, które zakrywa około trzech czwartych nasienia.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Corylus avellana",
+          "url": "https://en.wikipedia.org/wiki/Corylus_avellana"
+        },
+        "cytat": "each nut held in a short leafy involucre (\"husk\") which encloses about three-quarters of the nut."
+      },
+      {
+        "id": "s1993",
+        "sekcja": "czesci_rosliny",
+        "czesc": "owoce",
+        "tekst": "Skórka nasiona jest cienka, ciemnobrązowa, gorzka i często przed gotowaniem jest usuwana.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Corylus avellana",
+          "url": "https://en.wikipedia.org/wiki/Corylus_avellana"
+        },
+        "cytat": "The seed has a thin, dark brown skin which has a bitter flavour and is sometimes removed before cooking."
+      },
+      {
+        "id": "s1994",
+        "sekcja": "sklad",
+        "czesc": "owoce",
+        "tekst": "W nasionach i ich przetworach występują fenolowe związki takie jak katechina, kwas galusowy, sinapowy, kawowy, p‑kumarynowy oraz ferulowy wraz z ich estrami i flawonoidami.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Corylus avellana",
+          "url": "https://en.wikipedia.org/wiki/Corylus_avellana"
+        },
+        "cytat": "the prevalent phenolics accumulates in Corylus avellana kernels and its by-products are catechin, gallic acid, sinapic acid, caffeic acid, p-coumaric acid, ferulic acid, their esters and flavonoids."
+      },
+      {
+        "id": "s1995",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "W 2003 r. amerykańska FDA uznała orzechy, w tym leszczynowe, za produkty „sercowo‑zdrowe”.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Corylus avellana",
+          "url": "https://en.wikipedia.org/wiki/Corylus_avellana"
+        },
+        "cytat": "In 2003, the US Food and Drug Administration recognized edible nuts as \"heart healthy\" foods."
+      },
+      {
+        "id": "s1996",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Epitet gatunkowe avellana nawiązuje do antycznego włoskiego miasta Abella (dzisiejsza Avella w Kampanii), regionu słynącego z uprawy orzechów laskowych od starożytności.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gemeine Hasel",
+          "url": "https://de.wikipedia.org/wiki/Gemeine_Hasel"
+        },
+        "cytat": "Das Art-Epitheton avellana bezieht sich auf die antike italienische Stadt Abella, heute Avella, in der heutigen Provinz Avellino in Kampanien nahe dem Vesuv. Die Region ist für ihren Haselnussanbau schon seit dem Altertum bekannt."
+      },
+      {
+        "id": "s1997",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Pojedyncze osobniki leszczyny spotkać można na Orkadach oraz w Norwegii aż po równoleżnik Północny, natomiast w Szwecji występuje do 64., a w Finlandii do 63. równoleżnika.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gemeine Hasel",
+          "url": "https://de.wikipedia.org/wiki/Gemeine_Hasel"
+        },
+        "cytat": "Im Norden reicht das natürliche Verbreitungsgebiet bis zu den Orkney-Inseln sowie in Norwegen bis zum Polarkreis. In Schweden kommt die Hasel bis zum 64., in Finnland bis zum 63. Breitengrad vor."
+      },
+      {
+        "id": "s1998",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "W epoce środkowego neolitu (ok. 7000–6000 p.n.e.) leszczyna dominowała w runie środkowoeuropejskiej, zanim została wyparta przez dąbrowy, a jej szybka ekspansja po wylodowaceniu wiąże się częściowo z osiedlaniem się człowieka.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Gemeine Hasel",
+          "url": "https://de.wikipedia.org/wiki/Gemeine_Hasel"
+        },
+        "cytat": "Von 7000 bis 6000 v. Chr., während der Mittleren Steinzeit, war die Hasel das dominierende Gehölz in Mitteleuropa. Danach wurde sie in Mitteleuropa von Eichenmischwäldern zurückgedrängt. ... Ihre schnelle Wiederverbreitung wird von einigen "
       }
     ]
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-24",
+    "zaktualizowano": "2026-11-06",
     "pola": {
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": [
+          "Kwiaty męskie (kotki) zwisają z gałęzi całą zimę, żółkną i pylą w lutym/marcu.",
+          "Liście szerokojajowate, sercowate u nasady, miękko owłosione z obu stron.",
+          "Młode pędy pokryte są charakterystycznymi, gruczołowatymi włoskami o czerwonawym zabarwieniu."
+        ],
+        "tresc": [
+          {
+            "tekst": "Kwiaty męskie (kotki) zwisają z gałęzi całą zimę, żółkną i pylą w lutym/marcu.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Liście szerokojajowate, sercowate u nasady, miękko owłosione z obu stron.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Młode pędy pokryte są charakterystycznymi, gruczołowatymi włoskami o czerwonawym zabarwieniu.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Liczba chromosomów wynosi 2n = 22.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1591"
+            ]
+          },
+          {
+            "tekst": "Leszczyna pospolita zwykle dorasta wysokości od 3 do 8 metrów.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1990"
+            ]
+          },
+          {
+            "tekst": "Leszczyna pospolita jest wieloletnim, sommerzielonym i wielostemnym krzewem o wysokości od 5 do 6 metrów, który rzadko rośnie jako małe drzewo.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1524"
+            ]
+          },
+          {
+            "tekst": "Lamberts-hasel to bliski krewny leszczyny pospolitej, który różni się od niej rurkowato wydłużonym, zwężonym i całkowicie otaczającym orzech owocostaniem.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1531"
+            ]
+          },
+          {
+            "tekst": "Starsze gałęzie mają gładką, błyszczącą korę w kolorze od ciemnobrązowego do szarobrązowego, która jest charakterystycznie pokryta poprzecznymi, jasnymi przetchlinkami.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1525"
+            ]
+          },
+          {
+            "tekst": "Męskie kwiaty to zwisające, żółtawo pylące kätzchen o długości od 8 do 10 cm, natomiast żeńskie są bardzo niepozorne i mają małe, jaskrawo purpurowe znamiona wystające z pąków.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1528"
+            ]
+          },
+          {
+            "tekst": "Liście są opadające, okrągłe, mają długość 6‑12 cm, są miękko owłosione po obu stronach i mają podwójnie piłkowany brzeg.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1991"
+            ]
+          },
+          {
+            "tekst": "Liście są ułożone naprzemianlegle, mają okrągły lub odwrotnie jajowaty kształt, długość od 6 do 10 cm, a ich brzeg jest grubo podwójnie piłkowany.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1527"
+            ]
+          },
+          {
+            "tekst": "Orzechy leszczyny mają kształt zbliżony do kulistego lub owalnego, osiągają długość 15-20 mm i szerokość 12-20 mm, a u odmian uprawnych mogą być nieco większe.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1512"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "6dd75438f582d542"
+      },
+      "czesci_rosliny.owoce.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Nux Coryli (Orzechy laskowe): Opis surowca",
+        "typ": "tekst",
+        "oryginal": "Twarde orzechy zamknięte w listkowatych, powycinanych okrywach owocowych.",
+        "tresc": [
+          {
+            "tekst": "Twarde orzechy zamknięte w listkowatych, powycinanych okrywach owocowych.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Orzechy są osadzone w krótkim liściastym owocostaniu, które zakrywa około trzech czwartych nasienia.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1992"
+            ]
+          },
+          {
+            "tekst": "Skórka nasiona jest cienka, ciemnobrązowa, gorzka i często przed gotowaniem jest usuwana.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1993"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "112464479a3abb87"
+      },
+      "czesci_rosliny.nasiona.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Jadalne nasiona leszczyny charakteryzują się dużą zawartością białka i tłuszczów nienasyconych, a także manganu, miedzi, witaminy E, tiaminy i magnezu.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1513"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "18479c7217dfbddb"
+      },
+      "czesci_rosliny.owoce.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Nux Coryli (Orzechy laskowe): Substancje czynne",
+        "typ": "lista",
+        "oryginal": [
+          "Nienasycone kwasy tłuszczowe",
+          "Witamina E (tokoferol)",
+          "Magnez",
+          "Potas",
+          "Białka roślinne"
+        ],
+        "tresc": [
+          {
+            "tekst": "Nienasycone kwasy tłuszczowe",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Witamina E (tokoferol)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Magnez",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Potas",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Białka roślinne",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W nasionach i ich przetworach występują fenolowe związki takie jak katechina, kwas galusowy, sinapowy, kawowy, p‑kumarynowy oraz ferulowy wraz z ich estrami i flawonoidami.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1994"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "a213da877389808a"
+      },
+      "czesci_rosliny.liscie.wlasciwości": {
+        "tytul": "Surowce i zbiory - Folium Coryli: Działanie",
+        "typ": "tekst",
+        "oryginal": "Uszczelniające naczynia krwionośne, przeciwzapalne, ściągające, przeciwobrzękowe.",
+        "tresc": [
+          {
+            "tekst": "Uszczelniające naczynia krwionośne, przeciwzapalne, ściągające, przeciwobrzękowe.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Tradycyjnie liście europejskiej odmiany leszczyny były wykorzystywane jako substrogat, czyli zamiennik tytoniu.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s1520"
+            ]
+          },
+          {
+            "tekst": "W medycynie ludowej suszone liście tradycyjnie stosowano ze względu na łagodną zawartość garbniki jako łagodny środek ściągający przy powierzchownych stanach zapalnych skóry lub jako dodatek oczyszczający krew w mieszankach ziołowych.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1529"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "ff14680dd2c149a6"
+      },
+      "zastosowanie.rzemieslnicze": {
+        "tytul": "Praktyczne zastosowanie - Rzemiosło",
+        "typ": "tekst",
+        "oryginal": "Witki leszczynowe to najlepszy surowiec do wyplatania koszy, płotów oraz tradycyjnych konstrukcji ogrodowych (np. wsporników do fasoli). Tradycyjny surowiec na różdżki radiestezyjne.",
+        "tresc": [
+          {
+            "tekst": "Witki leszczynowe to najlepszy surowiec do wyplatania koszy, płotów oraz tradycyjnych konstrukcji ogrodowych (np. wsporników do fasoli).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Tradycyjny surowiec na różdżki radiestezyjne.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Drewno leszczyny jest miękkie i nietrwałe, używane jako węgiel rysunkowy.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1509"
+            ]
+          },
+          {
+            "tekst": "Z owoców leszczyny pozyskuje się olej, który znajduje zastosowanie między innymi w przemyśle farbiarskim.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1392"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "799583ae8c9996b3"
+      },
+      "zastosowanie.kosmetyczne": {
+        "tytul": "Praktyczne zastosowanie - Kosmetyka",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Olej uzyskiwany z orzechów laskowych jest wykorzystywany w branży kosmetycznej.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1393"
+            ]
+          },
+          {
+            "tekst": "Olej leszczynowy jest stosowany w kosmetyce do nawilżania skóry i poprawy jej wygładzenia.",
+            "zrodla": [
+              7
+            ],
+            "fakty": [
+              "s1540"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "13816d975e650cad"
+      },
       "ciekawostki": {
         "tytul": "Wiedza tajemna - Ciekawostki",
         "typ": "lista",
@@ -391,13 +1720,9 @@
         ],
         "tresc": [
           {
-            "tekst": "W tradycji ludowej leszczyna była uznawana za drzewo magiczne, chroniące przed urokami i piorunami; wierzono też, że odprowadza szkodliwe „promieniowanie ziemi i wód”.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s2005"
-            ]
+            "tekst": "W tradycji ludowej leszczyna była uznawana za drzewo magiczne, chroniące przed urokami i piorunami.",
+            "zrodla": [],
+            "fakty": []
           },
           {
             "tekst": "Wiewiórka potrafi ocenić, czy orzech jest pełny, sprawdzając jego ciężar – rzadko myli się i gryzie pusty owoc.",
@@ -408,107 +1733,366 @@
             "tekst": "Pyłek leszczyny jest pierwszym, wysokobiałkowym pokarmem, który pozwala pszczołom na regenerację po zimie.",
             "zrodla": [],
             "fakty": []
-          }
-        ],
-        "model": "groq/openai/gpt-oss-120b",
-        "wejscie": "fae611d6f47520ba"
-      },
-      "czesci_rosliny.kora.wlasciwości": {
-        "tytul": "Surowce i zbiory - Cortex Coryli: Działanie",
-        "typ": "tekst",
-        "oryginal": "Przeciwgorączkowe, ściągające, stosowane w leczeniu żylaków i hemoroidów.",
-        "tresc": [
-          {
-            "tekst": "Przeciwgorączkowe, ściągające, stosowane w leczeniu żylaków i hemoroidów.",
-            "zrodla": [],
-            "fakty": []
           },
           {
-            "tekst": "Korze leszczyny przypisywano też działanie afrodyzjaku: spaloną na proszek dodawano do jedzenia, a w tym samym celu używano oleju z orzechów laskowych.",
+            "tekst": "Epitet gatunkowe avellana nawiązuje do antycznego włoskiego miasta Abella (dzisiejsza Avella w Kampanii), regionu słynącego z uprawy orzechów laskowych od starożytności.",
             "zrodla": [
-              1
+              2
+            ],
+            "fakty": [
+              "s1996"
+            ]
+          },
+          {
+            "tekst": "W epoce środkowego neolitu (ok. 7000–6000 p.n.e.) leszczyna dominowała w runie środkowoeuropejskiej, zanim została wyparta przez dąbrowy, a jej szybka ekspansja po wylodowaceniu wiąże się częściowo z osiedlaniem się człowieka.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1998"
+            ]
+          },
+          {
+            "tekst": "Wysokiej Anglii leszczyna odgrywała istotną rolę w tworzeniu żywopłotów, które służyły jako tradycyjne granice pól.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1592"
+            ]
+          },
+          {
+            "tekst": "Historycznie drewno leszczyny było uprawiane w systemie sadzy (coppice), a otrzymane pole wykorzystywano do budowy ogrodów oraz konstrukcji typu pryticzo-glinianych (wattle-and-daub).",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1593"
+            ]
+          },
+          {
+            "tekst": "Leszczynie przypisywano zdolność przewodzenia „strumieni siły”, dlatego z jej witek robiono różdżki do szukania skarbów, żył kruszcu i źródeł; taką różdżkę pokazuje już „De re metallica” Georgiusa Agricoli z 1556 roku, a zwyczaj przetrwał do dziś.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2003"
+            ]
+          },
+          {
+            "tekst": "Zwyczaj stawiania ukochanej 1 maja brzózki pod oknem miał złośliwą odmianę: krzak leszczyny pod oknem wystawiał dziewczynę na pośmiewisko, bo leszczynę kojarzono z pozamałżeńskimi schadzkami. W Normandii ten obyczaj zapisano już w 1393 roku.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2004"
+            ]
+          },
+          {
+            "tekst": "Wierzono też, że krzew leszczyny chroni przed uderzeniem pioruna i odprowadza szkodliwe „promieniowanie ziemi i wód”.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2005"
+            ]
+          },
+          {
+            "tekst": "W starożytnym Rzymie leszczyna była symbolem pokoju: posłowie na rokowania o rozejm i pokój trzymali w dłoni gałązkę leszczyny na znak dobrych intencji.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1999"
+            ]
+          },
+          {
+            "tekst": "Jeszcze w czasach historycznych w Niemczech miejsca zgromadzeń i sądów wytyczano letnimi pędami leszczyny (tzw. „Summerlatten”), jej gałązki znaczyły granice, a laskę władzy sądowej i leśnej robiono z leszczynowego drewna.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2000"
+            ]
+          },
+          {
+            "tekst": "Niemieckie powiedzenie „jemanden mit Haselsaft erquicken” („pokrzepić kogoś sokiem z leszczyny”) znaczyło sprawić komuś lanie leszczynowym kijem.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2227"
+            ]
+          },
+          {
+            "tekst": "W Europie leszczyna była używana jako symbol mądrości i jako element w magicznych obrzędach.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1521"
+            ]
+          },
+          {
+            "tekst": "Leszczynie, kojarzonej z płodnością i miłością, przypisywano działanie afrodyzjaku: spaloną na proszek korę dodawano do jedzenia albo używano oleju z orzechów laskowych.",
+            "zrodla": [
+              2
             ],
             "fakty": [
               "s2002"
             ]
+          },
+          {
+            "tekst": "Leszczyna pospolita znana jest również pod nazwami takimi jak Frau Hasel, Haselbaum, Haselbusch, Haselnot, Haselstude i inne.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1519"
+            ]
+          },
+          {
+            "tekst": "W Japonii leszczyna znana jest pod nazwą セイヨウハシバミ, a w Europie jako Frau Hasel, Haselbaum itp.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s1523"
+            ]
+          },
+          {
+            "tekst": "Miękkie i nietrwałe drewno leszczyny bywa wykorzystywane do wyrobu węgla rysunkowego.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1394"
+            ]
+          },
+          {
+            "tekst": "Odmiana 'Contorta', nazywana również kijami Harry'ego Lauder'a, charakteryzuje się kręto-ślimaczanym wzrostem pędów i pofałdowanymi liśćmi; została odkryta w żywopłocie w Gloucestershire w 1863 roku.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1596"
+            ]
+          },
+          {
+            "tekst": "W 2003 r. amerykańska FDA uznała orzechy, w tym leszczynowe, za produkty „sercowo‑zdrowe”.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1995"
+            ]
+          },
+          {
+            "tekst": "W historycznych okresach głodu zbierano bogate w białko męskie kotki pyłkowe, suszono je i drobno mielono, aby wzbogacić mąkę chlebową i zbożową.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1530"
+            ]
+          },
+          {
+            "tekst": "W miąższu orzechów leszczynowych kumuluje się wiele polifenoli, w tym katechinę, galusową, sinapową, kawową, p-kumarową oraz ferulę kwasu, a także ich estrów i flawonoidów.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1595"
+            ]
+          },
+          {
+            "tekst": "Liści leszczyny tradycyjnie wykorzystuje się jako pokarm dla wielu zwierząt, w tym dla owadów mocnych, takich jak Coleophora anatipennella.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1597"
+            ]
           }
         ],
-        "model": "groq/openai/gpt-oss-120b",
-        "wejscie": "9b5347a735209309"
+        "model": "bez LLM",
+        "wejscie": "24c0d4224c3f7518"
+      },
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
+        "typ": "tekst",
+        "oryginal": "Alergia na orzechy laskowe może być bardzo silna. Osoby z niedokrwistością powinny ograniczyć picie herbat z liści (garbniki).",
+        "tresc": [
+          {
+            "tekst": "Alergia na orzechy laskowe może być bardzo silna.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Osoby z niedokrwistością powinny ograniczyć picie herbat z liści (garbniki).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Wszystkie części rośliny leszczyny pospolitej są nieszkodliwe i nietrujące.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s1526"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "823215af5ccca037"
+      },
+      "czesci_rosliny.nasiona.ostrzezenia": {
+        "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Ostrzeżenia",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Orzechy laskowe posiadają cienką, ciemnobrązową skórkę o gorzkim smaku, którą czasem usuwa się przed gotowaniem.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1594"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "3bcfcb5c86e30893"
+      },
+      "zastosowanie.ogrodowe": {
+        "tytul": "Praktyczne zastosowanie - Ogród",
+        "typ": "tekst",
+        "oryginal": "Doskonała roślina osłonowa i żywopłotowa. Produkuje ogromne ilości biomasy i wysokiej jakości ziemi liściowej.",
+        "tresc": [
+          {
+            "tekst": "Doskonała roślina osłonowa i żywopłotowa.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Produkuje ogromne ilości biomasy i wysokiej jakości ziemi liściowej.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W uprawie spotyka się szereg odmian i mieszańców uprawnych, zarówno ozdobnych jak i sadowniczych.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1511"
+            ]
+          },
+          {
+            "tekst": "W uprawie znajduje się obecnie około 400 nazwanych odmian leszczyny pospolitej, w tym polskie odmiany Kataloński i Webba Cenny.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1515"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "bf6dcaa48d3b6be8"
       }
     },
     "uzyte_fakty": [
+      "s1392",
+      "s1393",
+      "s1394",
+      "s1509",
+      "s1511",
+      "s1512",
+      "s1513",
+      "s1515",
+      "s1519",
+      "s1520",
+      "s1521",
+      "s1523",
+      "s1524",
+      "s1525",
+      "s1526",
+      "s1527",
+      "s1528",
+      "s1529",
+      "s1530",
+      "s1531",
+      "s1540",
+      "s1591",
+      "s1592",
+      "s1593",
+      "s1594",
+      "s1595",
+      "s1596",
+      "s1597",
+      "s1990",
+      "s1991",
+      "s1992",
+      "s1993",
+      "s1994",
+      "s1995",
+      "s1996",
+      "s1998",
+      "s1999",
+      "s2000",
       "s2002",
-      "s2005"
+      "s2003",
+      "s2004",
+      "s2005",
+      "s2227"
     ]
   },
   "rozmieszczenie": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-24",
-    "jak": "llm:groq/openai/gpt-oss-120b",
-    "wejscie": "58d53809c17c0416",
+    "zaktualizowano": "2026-11-06",
+    "jak": "reguly",
+    "wejscie": "22dfe0f69edb6c1e",
     "wstawki": [
       {
-        "miejsce": "tajemna/kultura",
-        "rozdzial": "Wiedza tajemna",
-        "tytul": "Wierzenia i legendy",
-        "ikona": "ra-crystal-ball",
+        "miejsce": "natura/wystepowanie",
+        "rozdzial": "Natura i siedlisko",
+        "tytul": "Występowanie i zasięg",
+        "ikona": "ra-compass",
         "nowy": true,
         "punkty": [
           {
-            "tekst": "Leszczynie przypisywano zdolność przewodzenia „strumieni siły”, dlatego z jej witek robiono różdżki do szukania skarbów, żył kruszcu i źródeł; taką różdżkę pokazuje już „De re metallica” Georgiusa Agricoli z 1556 roku, a zwyczaj przetrwał do dziś.",
-            "czesc": null,
+            "tekst": "Leszczyna pospolita występuje w stanie dzikim w całej Europie, w Azji Mniejszej oraz na Kaukazie, a jako gatunek introdukowany rośnie także w zachodniej Syberii.",
             "zrodla": [
               1
             ],
             "fakty": [
-              "s2003"
+              "s1391"
             ],
-            "sekcja": "kultura"
+            "sekcja": "wystepowanie",
+            "czesc": null
           },
           {
-            "tekst": "Zwyczaj stawiania ukochanej 1 maja brzózki pod oknem miał złośliwą odmianę: krzak leszczyny pod oknem wystawiał dziewczynę na pośmiewisko, bo leszczynę kojarzono z pozamałżeńskimi schadzkami. W Normandii ten obyczaj zapisano już w 1393 roku.",
-            "czesc": null,
+            "tekst": "Leszczyna pospolita rośnie w ozeanizmowym i subozeanizmowym klimacie, w miejscach ciepłych. Występuje w lasach, przy granicach leśnych i na obronach polnych.",
             "zrodla": [
-              1
+              2
             ],
             "fakty": [
-              "s2004"
+              "s1517"
             ],
-            "sekcja": "kultura"
+            "sekcja": "wystepowanie",
+            "czesc": null
           },
           {
-            "tekst": "W starożytnym Rzymie leszczyna była symbolem pokoju: posłowie na rokowania o rozejm i pokój trzymali w dłoni gałązkę leszczyny na znak dobrych intencji.",
-            "czesc": null,
+            "tekst": "Pojedyncze osobniki leszczyny spotkać można na Orkadach oraz w Norwegii aż po równoleżnik Północny, natomiast w Szwecji występuje do 64., a w Finlandii do 63. równoleżnika.",
             "zrodla": [
-              1
+              2
             ],
             "fakty": [
-              "s1999"
+              "s1997"
             ],
-            "sekcja": "kultura"
-          },
-          {
-            "tekst": "Jeszcze w czasach historycznych w Niemczech miejsca zgromadzeń i sądów wytyczano letnimi pędami leszczyny (tzw. „Summerlatten”), jej gałązki znaczyły granice, a laskę władzy sądowej i leśnej robiono z leszczynowego drewna.",
-            "czesc": null,
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s2000"
-            ],
-            "sekcja": "kultura"
-          },
-          {
-            "tekst": "Niemieckie powiedzenie „jemanden mit Haselsaft erquicken” („pokrzepić kogoś sokiem z leszczyny”) znaczyło sprawić komuś lanie leszczynowym kijem.",
-            "czesc": null,
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s2227"
-            ],
-            "sekcja": "kultura"
+            "sekcja": "wystepowanie",
+            "czesc": null
           }
         ]
       }

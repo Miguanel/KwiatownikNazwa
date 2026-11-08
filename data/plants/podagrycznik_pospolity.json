@@ -29,6 +29,13 @@
         "jezyk": "en",
         "typ": "wikipedia",
         "nr": 2
+      },
+      {
+        "nazwa": "www.diagram.com.ua",
+        "url": "https://www.diagram.com.ua/info/plants/plants498.shtml",
+        "jezyk": "ru",
+        "typ": "strona",
+        "nr": 3
       }
     ],
     "sekcje": [
@@ -163,6 +170,16 @@
             "fakty": [
               "s2957"
             ]
+          },
+          {
+            "tekst": "Znaczenie gospodarcze: Snyć pospolita, jako roślina lecznicza, jest stosowana jako środek moczopędny i żółciopędny. Snyć znajduje również zastosowanie w kuchni jako przyprawa, a jej liście można dodawać do sałatek.",
+            "czesc": "liście",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3118"
+            ]
           }
         ]
       },
@@ -251,6 +268,42 @@
         ]
       },
       {
+        "klucz": "kultura",
+        "tytul": "Wierzenia i tradycje",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Gorczyca pospolita symbolizuje również pokój i harmonię. W niektórych kulturach jej wizerunki są wykorzystywane w sztuce jako symbol pokoju i równowagi.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3117"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "magia",
+        "tytul": "Magia i zabobony",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W starożytnych kulturach roślina ta była uważana za świętą, a jej liście wykorzystywano w obrzędach mających chronić przed złymi duchami. W średniowiecznej Europie rdest zwyczajny stosowano jako amulet chroniący przed chorobami i nieszczęściami.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3116"
+            ]
+          }
+        ]
+      },
+      {
         "klucz": "bezpieczenstwo",
         "tytul": "Bezpieczeństwo",
         "podsumowanie": null,
@@ -307,7 +360,8 @@
         "s2954",
         "s2955",
         "s2956",
-        "s2957"
+        "s2957",
+        "s3118"
       ],
       "ziele": [
         "s2948",
@@ -554,6 +608,42 @@
           "url": "https://en.wikipedia.org/wiki/Aegopodium_podagraria"
         },
         "cytat": "However it is banned in several states owing to its invasiveness."
+      },
+      {
+        "id": "s3116",
+        "sekcja": "magia",
+        "czesc": null,
+        "tekst": "W starożytnych kulturach roślina ta była uważana za świętą, a jej liście wykorzystywano w obrzędach mających chronić przed złymi duchami. W średniowiecznej Europie rdest zwyczajny stosowano jako amulet chroniący przed chorobami i nieszczęściami.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "www.diagram.com.ua",
+          "url": "https://www.diagram.com.ua/info/plants/plants498.shtml"
+        },
+        "cytat": "В древних культурах растение считалось священным, и его листья использовались в обрядах защиты от злых духов. В средневековой Европе сныть обыкновенная использовали как амулет для защиты от болезней и бед."
+      },
+      {
+        "id": "s3117",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "Gorczyca pospolita symbolizuje również pokój i harmonię. W niektórych kulturach jej wizerunki są wykorzystywane w sztuce jako symbol pokoju i równowagi.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "www.diagram.com.ua",
+          "url": "https://www.diagram.com.ua/info/plants/plants498.shtml"
+        },
+        "cytat": "Сныть обыкновенная также символизирует мир и гармонию. В некоторых культурах ее изображения используются в искусстве как символ мира и баланса."
+      },
+      {
+        "id": "s3118",
+        "sekcja": "czesci_rosliny",
+        "czesc": "liście",
+        "tekst": "Znaczenie gospodarcze: Snyć pospolita, jako roślina lecznicza, jest stosowana jako środek moczopędny i żółciopędny. Snyć znajduje również zastosowanie w kuchni jako przyprawa, a jej liście można dodawać do sałatek.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "www.diagram.com.ua",
+          "url": "https://www.diagram.com.ua/info/plants/plants498.shtml"
+        },
+        "cytat": "Хозяйственное значение: Сныть обыкновенная в качестве лекарственного растения используется как мочегонное и желчегонное средство. Сныть также применяется в кулинарии как пряность, а листья могут добавляться в салаты."
       }
     ]
   },
@@ -596,60 +686,6 @@
         ],
         "model": "bez LLM",
         "wejscie": "78b9295d1d46e876"
-      },
-      "zastosowanie.kulinarne": {
-        "tytul": "Praktyczne zastosowanie - Kuchnia",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "Delikatne liście można wykorzystywać jako wiosenne warzywo liściaste, podobnie jak szpinak; stosuje się je w ten sposób już od starożytności.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s2954"
-            ]
-          },
-          {
-            "tekst": "Często dodaje się go do zup.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s2955"
-            ]
-          },
-          {
-            "tekst": "Można jednak zapobiec kwitnieniu, usuwając kwiaty, dzięki czemu roślina pozostaje jadalna, o ile jest stosowana w mniejszych ilościach jako zioło do potraw.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s2957"
-            ]
-          }
-        ],
-        "model": "bez LLM",
-        "wejscie": "42989f42785ff238"
-      },
-      "profil_energetyczny.smak": {
-        "tytul": "Natura i siedlisko - Smak",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "Jeśli zostanie zebrana po tym terminie, ma ostry smak i działa przeczyszczająco.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s2956"
-            ]
-          }
-        ],
-        "model": "bez LLM",
-        "wejscie": "cd4580000695174c"
       },
       "czesci_rosliny.ziele.wlasciwości": {
         "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Działanie",
@@ -729,6 +765,15 @@
             ]
           },
           {
+            "tekst": "Gorczyca pospolita symbolizuje również pokój i harmonię. W niektórych kulturach jej wizerunki są wykorzystywane w sztuce jako symbol pokoju i równowagi.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3117"
+            ]
+          },
+          {
             "tekst": "Odmiana o barwnym ulistnieniu jest uprawiana jako roślina ozdobna.",
             "zrodla": [
               2
@@ -748,7 +793,7 @@
           }
         ],
         "model": "bez LLM",
-        "wejscie": "0d1efd52419affd7"
+        "wejscie": "1211daa548569c78"
       },
       "ostrzezenia": {
         "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
@@ -775,24 +820,21 @@
       "s2949",
       "s2950",
       "s2952",
-      "s2954",
-      "s2955",
-      "s2956",
-      "s2957",
       "s2958",
       "s2959",
       "s2960",
       "s2961",
       "s2964",
       "s2965",
-      "s2966"
+      "s2966",
+      "s3117"
     ]
   },
   "rozmieszczenie": {
     "wersja": 1,
     "zaktualizowano": "2026-11-06",
-    "jak": "llm:groq/openai/gpt-oss-120b",
-    "wejscie": "c2f806800d26fdb0",
+    "jak": "reguly",
+    "wejscie": "07e97efb7c9a8ea6",
     "wstawki": [
       {
         "miejsce": "natura/wystepowanie",
@@ -855,6 +897,99 @@
             "czesc": "kłącze"
           }
         ]
+      },
+      {
+        "miejsce": "surowce/czesc:liście",
+        "rozdzial": "Surowce i zbiory",
+        "tytul": "Liście",
+        "ikona": "ra-potion",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Delikatne liście można wykorzystywać jako wiosenne warzywo liściaste, podobnie jak szpinak; stosuje się je w ten sposób już od starożytności.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2954"
+            ],
+            "sekcja": "czesci_rosliny",
+            "czesc": "liście"
+          },
+          {
+            "tekst": "Często dodaje się go do zup.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2955"
+            ],
+            "sekcja": "czesci_rosliny",
+            "czesc": "liście"
+          },
+          {
+            "tekst": "Jeśli zostanie zebrana po tym terminie, ma ostry smak i działa przeczyszczająco.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2956"
+            ],
+            "sekcja": "czesci_rosliny",
+            "czesc": "liście"
+          },
+          {
+            "tekst": "Można jednak zapobiec kwitnieniu, usuwając kwiaty, dzięki czemu roślina pozostaje jadalna, o ile jest stosowana w mniejszych ilościach jako zioło do potraw.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2957"
+            ],
+            "sekcja": "czesci_rosliny",
+            "czesc": "liście"
+          }
+        ]
+      },
+      {
+        "miejsce": "zastosowanie/kuchnia",
+        "rozdzial": "Praktyczne zastosowanie",
+        "tytul": "Kuchnia",
+        "ikona": "ra-meat",
+        "nowy": false,
+        "punkty": [
+          {
+            "tekst": "Znaczenie gospodarcze: Snyć pospolita, jako roślina lecznicza, jest stosowana jako środek moczopędny i żółciopędny. Snyć znajduje również zastosowanie w kuchni jako przyprawa, a jej liście można dodawać do sałatek.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3118"
+            ],
+            "sekcja": "czesci_rosliny",
+            "czesc": "liście"
+          }
+        ]
+      },
+      {
+        "miejsce": "tajemna/kultura",
+        "rozdzial": "Wiedza tajemna",
+        "tytul": "Wierzenia i legendy",
+        "ikona": "ra-crystal-ball",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "W starożytnych kulturach roślina ta była uważana za świętą, a jej liście wykorzystywano w obrzędach mających chronić przed złymi duchami. W średniowiecznej Europie rdest zwyczajny stosowano jako amulet chroniący przed chorobami i nieszczęściami.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3116"
+            ],
+            "sekcja": "magia",
+            "czesc": null
+          }
+        ]
       }
     ],
     "duplikaty": []
@@ -867,7 +1002,7 @@
     "Rycina": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/BGTransp_L_Illustration_Aegopodium_podagraria0_clean_no-description.png/960px-BGTransp_L_Illustration_Aegopodium_podagraria0_clean_no-description.png"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-11-06",
+    "zaktualizowano": "2026-11-08",
     "w_url": true,
     "zdjecia": [
       {

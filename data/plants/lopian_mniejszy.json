@@ -108,7 +108,7 @@
     "Nasiona": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Arctium_minus_2018-04-28_9676.jpg/960px-Arctium_minus_2018-04-28_9676.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-11-03",
+    "zaktualizowano": "2026-11-06",
     "w_url": true,
     "zdjecia": [
       {
@@ -160,9 +160,9 @@
   },
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-11-03",
-    "uporzadkowano": "2026-11-03",
-    "uklad": "deterministyczny: nieznana sekcja bezwzględna",
+    "zaktualizowano": "2026-11-06",
+    "uporzadkowano": "2026-11-06",
+    "uklad": "deterministyczny",
     "zrodla": [
       {
         "nazwa": "Wikipedia (pl): Łopian mniejszy",
@@ -191,6 +191,13 @@
         "jezyk": "fr",
         "typ": "strona",
         "nr": 4
+      },
+      {
+        "nazwa": "www.ontario.ca",
+        "url": "https://www.ontario.ca/fr/document/guide-dindentification-des-mauvaises-herbes-agricoles-de-lontario/petite-bardane",
+        "jezyk": "fr",
+        "typ": "strona",
+        "nr": 5
       }
     ],
     "sekcje": [
@@ -201,7 +208,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Łopian mniejszy wytwarza bardzo głęboką korzeń palowy, która może sięgać do 30 cm w głąb ziemi.",
+            "tekst": "Roślina ta wytwarza niezwykle głęboki korzeń palowy, sięgający nawet 30 cm (12 cali) w głąb ziemi.",
             "czesc": null,
             "zrodla": [
               2
@@ -211,7 +218,7 @@
             ]
           },
           {
-            "tekst": "Kwiatostany mają około 2 cm średnicy i są otoczone łuskami, z których zewnętrzne zakończone są haczykami. Po wyschnięciu te haczyki powodują przyczepianie się rośliny do ludzi i zwierząt.",
+            "tekst": "Główki kwiatowe mają około 2 cm (3⁄4 cala) szerokości i są otoczone skupiskiem przylistków. Zewnętrzne przylistki zakończone są haczykami, co po wyschnięciu główki kwiatowej powoduje efekt „rzepu” – przylistki przyczepiają się wówczas do ludzi i zwierząt, umożliwiając przenoszenie główki nasiennej.",
             "czesc": "kwiaty",
             "zrodla": [
               2
@@ -221,7 +228,7 @@
             ]
           },
           {
-            "tekst": "Dolne liście rośliny posiadają bardzo długie ogonki, które mogą osiągać nawet do 50 cm, a ich blaszki mają kształt szeroko jajowaty z sercowatą nasadą.",
+            "tekst": "Osadzone są na ogonkach osiągających (w przypadku dolnych liści) do 50 cm długości... Blaszki są szeroko jajowate, mają sercowatą nasadę",
             "czesc": "liście",
             "zrodla": [
               1
@@ -231,7 +238,17 @@
             ]
           },
           {
-            "tekst": "Owoce mają postać ciemnobrązowych, odwrotnie jajowatych niełupków o długości 5–8 mm, które są zwieńczone ostkami puchu kielichowego.",
+            "tekst": "- Wyglądają jak liście rabarbaru, ale ich spodnia strona jest białawy z powodu drobnych, wełnistych włosków pokrywających powierzchnię.",
+            "czesc": "liście",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s3113"
+            ]
+          },
+          {
+            "tekst": "Ciemnobrązowe niełupki długości 5–8 mm, odwrotnie jajowate... Zwieńczone ostkami puchu kielichowego długości do 3,5 mm.",
             "czesc": "owoce",
             "zrodla": [
               1
@@ -249,7 +266,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "W polskich górach gatunek ten spotkać można na wysokościach sięgających do 700 metrów nad poziomem morza.",
+            "tekst": "W polskich górach sięga do rzędnej 700 m n.p.m.",
             "czesc": null,
             "zrodla": [
               1
@@ -267,7 +284,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Surowcem zielarskim jest korzeń, który zbiera się z roślin jednorocznych jesienią lub wiosną następnego roku.",
+            "tekst": "Wykorzystywane części rośliny: korzeń; okres zbioru: Korzeń tej jednorocznej rośliny zbiera się jesienią lub następnej wiosny.",
             "czesc": "korzeń",
             "zrodla": [
               3
@@ -285,7 +302,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "W surowcu występują takie substancje czynne jak inulina, związki śluzowe, olejek eteryczny, substancje gorzkie (laktony seskwiterpenowe) oraz flawonoidy.",
+            "tekst": "Składniki aktywne: inulina, substancje śluzowe, olejek eteryczny, substancje gorzkie (laktony seskwiterpenowe), flawonoidy",
             "czesc": "korzeń",
             "zrodla": [
               3
@@ -303,7 +320,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Roślina wykazuje działanie przeciwzapalne, delikatnie przeciwdrobnoustrojowe, moczopędne oraz pobudzające apetyt.",
+            "tekst": "Właściwości: przeciwzapalne, lekko przeciwbakteryjne, moczopędne, pobudzające apetyt",
             "czesc": null,
             "zrodla": [
               3
@@ -313,7 +330,7 @@
             ]
           },
           {
-            "tekst": "Korzenie są jadalne po ugotowaniu, ale należy zmienić wodę w trakcie gotowania. Rośliny starsze niż rok mają drewniaste korzenie nadające się do jedzenia.",
+            "tekst": "Korzenie nadają się do spożycia po ugotowaniu z kilkukrotną zmianą wody, choć w roślinach starszych niż rok stają się zbyt zdrewniałe, by je jeść.",
             "czesc": "korzeń",
             "zrodla": [
               2
@@ -323,7 +340,7 @@
             ]
           },
           {
-            "tekst": "Łodygi liściowe, listki oraz łodygi kwiatowe (do wieku roku) można spożywać na surowo lub gotowane, a z liści można przyrządzać herbatę ziołową.",
+            "tekst": "Ogonki liściowe (w wieku do jednego roku), liście i łodygi kwiatowe można spożywać na surowo lub po ugotowaniu. ... Z liści można również przygotować herbatę ziołową.",
             "czesc": "ziele",
             "zrodla": [
               2
@@ -341,7 +358,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "W niektórych regionach gatunek ten znany jest pod nazwą ludową 'dziki rabarbar' (wild rhubarb).",
+            "tekst": "Arctium minus, znany powszechnie jako łopian mniejszy, łopian mały, łopian wszywy, łopian pospolity, łopian guzikowy, guzik kukułki lub dziki rabarbar",
             "czesc": null,
             "zrodla": [
               2
@@ -351,7 +368,7 @@
             ]
           },
           {
-            "tekst": "Łopian mniejszy jest rodzimy dla Europy, co wskazuje na jego naturalne występowanie w tym regionie.",
+            "tekst": "Łopian mniejszy (Arctium minus) nazywany jest również łopianem o małych główkach lub łopianem o małych kwiatostanach. Pochodzi z Europy.",
             "czesc": null,
             "zrodla": [
               4
@@ -369,7 +386,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Roślina ta znana jest także pod nazwami 'łopian o małych kępkach' albo 'łopian o małych koszyczkach'.",
+            "tekst": "Łopian mniejszy (Arctium minus) nazywany jest również łopianem o małych główkach lub łopianem o małych kwiatostanach.",
             "czesc": null,
             "zrodla": [
               4
@@ -387,7 +404,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Łopian mniejszy jest często mylony z jeżami ze względu na podobieństwo kwiatów, jednak można go odróżnić na podstawie bardzo dużych liści oraz haczykowatych łusek.",
+            "tekst": "Kwiaty przypominają osty i łatwo je z nimi pomylić, ale łopian można rozpoznać po niezwykle dużych liściach i haczykowatych przylistkach.",
             "czesc": null,
             "zrodla": [
               2
@@ -405,7 +422,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Łopian mniejszy ma zdolność tworzenia mieszańców z trzema innymi gatunkami łopianów: pajęczynowatym, większym i gajowym.",
+            "tekst": "Tworzy mieszańce z: łopianem pajęczynowatym – A. × mixtum (Simk.) Nym., większym – A. × nothum (Ruhmer) Weiss i gajowym – A. × maassii (M. Schulze) Rouy.",
             "czesc": null,
             "zrodla": [
               1
@@ -422,7 +439,8 @@
         "s2522"
       ],
       "liście": [
-        "s2478"
+        "s2478",
+        "s3113"
       ],
       "owoce": [
         "s2479"
@@ -441,7 +459,7 @@
         "id": "s2478",
         "sekcja": "opis",
         "czesc": "liście",
-        "tekst": "Dolne liście rośliny posiadają bardzo długie ogonki, które mogą osiągać nawet do 50 cm, a ich blaszki mają kształt szeroko jajowaty z sercowatą nasadą.",
+        "tekst": "Osadzone są na ogonkach osiągających (w przypadku dolnych liści) do 50 cm długości... Blaszki są szeroko jajowate, mają sercowatą nasadę",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Łopian mniejszy",
@@ -453,7 +471,7 @@
         "id": "s2479",
         "sekcja": "opis",
         "czesc": "owoce",
-        "tekst": "Owoce mają postać ciemnobrązowych, odwrotnie jajowatych niełupków o długości 5–8 mm, które są zwieńczone ostkami puchu kielichowego.",
+        "tekst": "Ciemnobrązowe niełupki długości 5–8 mm, odwrotnie jajowate... Zwieńczone ostkami puchu kielichowego długości do 3,5 mm.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Łopian mniejszy",
@@ -465,7 +483,7 @@
         "id": "s2480",
         "sekcja": "wystepowanie",
         "czesc": null,
-        "tekst": "W polskich górach gatunek ten spotkać można na wysokościach sięgających do 700 metrów nad poziomem morza.",
+        "tekst": "W polskich górach sięga do rzędnej 700 m n.p.m.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Łopian mniejszy",
@@ -477,7 +495,7 @@
         "id": "s2482",
         "sekcja": "ciekawostki",
         "czesc": null,
-        "tekst": "Łopian mniejszy ma zdolność tworzenia mieszańców z trzema innymi gatunkami łopianów: pajęczynowatym, większym i gajowym.",
+        "tekst": "Tworzy mieszańce z: łopianem pajęczynowatym – A. × mixtum (Simk.) Nym., większym – A. × nothum (Ruhmer) Weiss i gajowym – A. × maassii (M. Schulze) Rouy.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "Wikipedia (pl): Łopian mniejszy",
@@ -489,7 +507,7 @@
         "id": "s2521",
         "sekcja": "opis",
         "czesc": null,
-        "tekst": "Łopian mniejszy wytwarza bardzo głęboką korzeń palowy, która może sięgać do 30 cm w głąb ziemi.",
+        "tekst": "Roślina ta wytwarza niezwykle głęboki korzeń palowy, sięgający nawet 30 cm (12 cali) w głąb ziemi.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Arctium minus",
@@ -501,7 +519,7 @@
         "id": "s2522",
         "sekcja": "opis",
         "czesc": "kwiaty",
-        "tekst": "Kwiatostany mają około 2 cm średnicy i są otoczone łuskami, z których zewnętrzne zakończone są haczykami. Po wyschnięciu te haczyki powodują przyczepianie się rośliny do ludzi i zwierząt.",
+        "tekst": "Główki kwiatowe mają około 2 cm (3⁄4 cala) szerokości i są otoczone skupiskiem przylistków. Zewnętrzne przylistki zakończone są haczykami, co po wyschnięciu główki kwiatowej powoduje efekt „rzepu” – przylistki przyczepiają się wówczas do ludzi i zwierząt, umożliwiając przenoszenie główki nasiennej.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Arctium minus",
@@ -513,7 +531,7 @@
         "id": "s2523",
         "sekcja": "bezpieczenstwo",
         "czesc": null,
-        "tekst": "Łopian mniejszy jest często mylony z jeżami ze względu na podobieństwo kwiatów, jednak można go odróżnić na podstawie bardzo dużych liści oraz haczykowatych łusek.",
+        "tekst": "Kwiaty przypominają osty i łatwo je z nimi pomylić, ale łopian można rozpoznać po niezwykle dużych liściach i haczykowatych przylistkach.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Arctium minus",
@@ -525,7 +543,7 @@
         "id": "s2524",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": "korzeń",
-        "tekst": "Korzenie są jadalne po ugotowaniu, ale należy zmienić wodę w trakcie gotowania. Rośliny starsze niż rok mają drewniaste korzenie nadające się do jedzenia.",
+        "tekst": "Korzenie nadają się do spożycia po ugotowaniu z kilkukrotną zmianą wody, choć w roślinach starszych niż rok stają się zbyt zdrewniałe, by je jeść.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Arctium minus",
@@ -537,7 +555,7 @@
         "id": "s2525",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": "ziele",
-        "tekst": "Łodygi liściowe, listki oraz łodygi kwiatowe (do wieku roku) można spożywać na surowo lub gotowane, a z liści można przyrządzać herbatę ziołową.",
+        "tekst": "Ogonki liściowe (w wieku do jednego roku), liście i łodygi kwiatowe można spożywać na surowo lub po ugotowaniu. ... Z liści można również przygotować herbatę ziołową.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Arctium minus",
@@ -549,7 +567,7 @@
         "id": "s2526",
         "sekcja": "historia",
         "czesc": null,
-        "tekst": "W niektórych regionach gatunek ten znany jest pod nazwą ludową 'dziki rabarbar' (wild rhubarb).",
+        "tekst": "Arctium minus, znany powszechnie jako łopian mniejszy, łopian mały, łopian wszywy, łopian pospolity, łopian guzikowy, guzik kukułki lub dziki rabarbar",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Arctium minus",
@@ -561,7 +579,7 @@
         "id": "s2550",
         "sekcja": "czesci_rosliny",
         "czesc": "korzeń",
-        "tekst": "Surowcem zielarskim jest korzeń, który zbiera się z roślin jednorocznych jesienią lub wiosną następnego roku.",
+        "tekst": "Wykorzystywane części rośliny: korzeń; okres zbioru: Korzeń tej jednorocznej rośliny zbiera się jesienią lub następnej wiosny.",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "krautundwurzel.com",
@@ -573,7 +591,7 @@
         "id": "s2551",
         "sekcja": "sklad",
         "czesc": "korzeń",
-        "tekst": "W surowcu występują takie substancje czynne jak inulina, związki śluzowe, olejek eteryczny, substancje gorzkie (laktony seskwiterpenowe) oraz flawonoidy.",
+        "tekst": "Składniki aktywne: inulina, substancje śluzowe, olejek eteryczny, substancje gorzkie (laktony seskwiterpenowe), flawonoidy",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "krautundwurzel.com",
@@ -585,7 +603,7 @@
         "id": "s2552",
         "sekcja": "zastosowanie_lecznicze",
         "czesc": null,
-        "tekst": "Roślina wykazuje działanie przeciwzapalne, delikatnie przeciwdrobnoustrojowe, moczopędne oraz pobudzające apetyt.",
+        "tekst": "Właściwości: przeciwzapalne, lekko przeciwbakteryjne, moczopędne, pobudzające apetyt",
         "jezyk": "de",
         "zrodlo": {
           "nazwa": "krautundwurzel.com",
@@ -597,7 +615,7 @@
         "id": "s2553",
         "sekcja": "historia",
         "czesc": null,
-        "tekst": "Łopian mniejszy jest rodzimy dla Europy, co wskazuje na jego naturalne występowanie w tym regionie.",
+        "tekst": "Łopian mniejszy (Arctium minus) nazywany jest również łopianem o małych główkach lub łopianem o małych kwiatostanach. Pochodzi z Europy.",
         "jezyk": "fr",
         "zrodlo": {
           "nazwa": "www.gerbeaud.com",
@@ -609,43 +627,32 @@
         "id": "s2554",
         "sekcja": "nazwy_ludowe",
         "czesc": null,
-        "tekst": "Roślina ta znana jest także pod nazwami 'łopian o małych kępkach' albo 'łopian o małych koszyczkach'.",
+        "tekst": "Łopian mniejszy (Arctium minus) nazywany jest również łopianem o małych główkach lub łopianem o małych kwiatostanach.",
         "jezyk": "fr",
         "zrodlo": {
           "nazwa": "www.gerbeaud.com",
           "url": "https://www.gerbeaud.com/jardin/decouverte/bardane-plante-medicinale-potagere,1913.html"
         },
         "cytat": "La petite Bardane (Arctium minus) est aussi appelée bardane à petites têtes ou bardane à petits capitules."
+      },
+      {
+        "id": "s3113",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "- Wyglądają jak liście rabarbaru, ale ich spodnia strona jest białawy z powodu drobnych, wełnistych włosków pokrywających powierzchnię.",
+        "jezyk": "fr",
+        "zrodlo": {
+          "nazwa": "www.ontario.ca",
+          "url": "https://www.ontario.ca/fr/document/guide-dindentification-des-mauvaises-herbes-agricoles-de-lontario/petite-bardane"
+        },
+        "cytat": "- Elles ressemblent aux feuilles de la rhubarbe mais l’envers des feuilles est blanchâtre à cause des petits poils laineux qui recouvrent la surface."
       }
     ]
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-11-03",
+    "zaktualizowano": "2026-11-06",
     "pola": {
-      "czesci_rosliny.korzen.opis_botaniczny": {
-        "tytul": "Surowce i zbiory - Radix Bardanae (minor): Opis surowca",
-        "typ": "tekst",
-        "oryginal": "Gruby, palowy korzeń wykopywany w pierwszym roku życia rośliny (jesienią) lub wiosną drugiego roku.",
-        "tresc": [
-          {
-            "tekst": "Gruby, palowy korzeń wykopywany w pierwszym roku życia rośliny (jesienią) lub wiosną drugiego roku.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Korzeń jest bardzo głęboki, sięgający do 30 cm w głąb ziemi.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s2521"
-            ]
-          }
-        ],
-        "model": "groq/openai/gpt-oss-120b",
-        "wejscie": "2617147f695d7753"
-      },
       "identyfikacja.cechy_kluczowe": {
         "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
         "typ": "lista",
@@ -657,12 +664,36 @@
         ],
         "tresc": [
           {
-            "tekst": "Ogonki liściowe są PUSTE w środku (w przekroju poprzecznym widać wyraźny kanał), co stanowi najważniejszą cechę odróżniającą łopian mniejszy od łopianu większego.",
+            "tekst": "Ogonki liściowe są PUSTE w środku (w przekroju poprzecznym widać wyraźny kanał). To najważniejsza cecha odróżniająca go od łopianu większego.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Koszyczki kwiatowe, o średnicy 1,5–2,5 cm, zbierają się w wydłużone grona; ich kształt i rozmiar odpowiadają kwiatostanom o średnicy około 2 cm otoczonymi łuskami z haczykami, które po wyschnięciu przyczepiają się do ludzi i zwierząt.",
+            "tekst": "Koszyczki kwiatowe mniejsze (1.5 - 2.5 cm średnicy), zebrane w wydłużone grona (u łopianu większego tworzą baldachogrona).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Listki okrywy (haczyki) są zazwyczaj zielone lub lekko pajęczynowato osnute.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Liście dolne są sercowate, ale mniejsze i częściej faliste na brzegach niż u gatunku większego.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Roślina ta wytwarza niezwykle głęboki korzeń palowy, sięgający nawet 30 cm (12 cali) w głąb ziemi.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2521"
+            ]
+          },
+          {
+            "tekst": "Główki kwiatowe mają około 2 cm (3⁄4 cala) szerokości i są otoczone skupiskiem przylistków. Zewnętrzne przylistki zakończone są haczykami, co po wyschnięciu główki kwiatowej powoduje efekt „rzepu” – przylistki przyczepiają się wówczas do ludzi i zwierząt, umożliwiając przenoszenie główki nasiennej.",
             "zrodla": [
               2
             ],
@@ -671,12 +702,7 @@
             ]
           },
           {
-            "tekst": "Listki okrywy, zwykle zielone lub lekko pajęczynowato osnute, posiadają haczyki na końcach łusek, zwiększając ich przyczepność.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Liście dolne są sercowate, mniejsze i częściej faliste na brzegach niż u gatunku większego; ich długie ogonki mogą osiągać do 50 cm, a blaszki są szeroko jajowate z sercowatą nasadą.",
+            "tekst": "Osadzone są na ogonkach osiągających (w przypadku dolnych liści) do 50 cm długości... Blaszki są szeroko jajowate, mają sercowatą nasadę",
             "zrodla": [
               1
             ],
@@ -685,40 +711,26 @@
             ]
           },
           {
-            "tekst": "Łopian mniejszy często mylony jest z jeżami ze względu na podobieństwo kwiatów, lecz można go odróżnić na podstawie bardzo dużych liści oraz haczykowatych łusek.",
+            "tekst": "- Wyglądają jak liście rabarbaru, ale ich spodnia strona jest białawy z powodu drobnych, wełnistych włosków pokrywających powierzchnię.",
             "zrodla": [
-              2
+              5
             ],
             "fakty": [
-              "s2523"
+              "s3113"
             ]
-          }
-        ],
-        "model": "groq/openai/gpt-oss-20b",
-        "wejscie": "fd68200f9f5211f8"
-      },
-      "wymagania.stanowisko": {
-        "tytul": "Natura i siedlisko - Stanowisko",
-        "typ": "tekst",
-        "oryginal": "Słoneczne do półcienistego. Bardzo plastyczny gatunek.",
-        "tresc": [
-          {
-            "tekst": "Roślina preferuje nasłonecznienie od słonecznego do półcienistego i jest bardzo plastyczna.",
-            "zrodla": [],
-            "fakty": []
           },
           {
-            "tekst": "W polskich górach gatunek ten spotkać można na wysokościach sięgających do 700 metrów nad poziomem morza.",
+            "tekst": "Ciemnobrązowe niełupki długości 5–8 mm, odwrotnie jajowate... Zwieńczone ostkami puchu kielichowego długości do 3,5 mm.",
             "zrodla": [
               1
             ],
             "fakty": [
-              "s2480"
+              "s2479"
             ]
           }
         ],
-        "model": "groq/openai/gpt-oss-20b",
-        "wejscie": "7e11f469273f14fb"
+        "model": "bez LLM",
+        "wejscie": "3bf35f76149b02b7"
       },
       "czesci_rosliny.korzen.czas_zbioru": {
         "tytul": "Surowce i zbiory - Radix Bardanae (minor): Zbiór",
@@ -731,7 +743,7 @@
             "fakty": []
           },
           {
-            "tekst": "Surowcem zielarskim jest korzeń, który zbiera się z roślin jednorocznych jesienią lub wiosną następnego roku.",
+            "tekst": "Wykorzystywane części rośliny: korzeń; okres zbioru: Korzeń tej jednorocznej rośliny zbiera się jesienią lub następnej wiosny.",
             "zrodla": [
               3
             ],
@@ -740,7 +752,7 @@
             ]
           }
         ],
-        "model": "groq/openai/gpt-oss-20b",
+        "model": "bez LLM",
         "wejscie": "d6730fd34463ec92"
       },
       "czesci_rosliny.korzen.skladniki_aktywne": {
@@ -755,32 +767,32 @@
         ],
         "tresc": [
           {
-            "tekst": "Inulina, będąca prebiotykiem, występuje w surowcu.",
+            "tekst": "Inulina (prebiotyk)",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Poliacetyleny, naturalne antybiotyki.",
+            "tekst": "Poliacetyleny (naturalne antybiotyki)",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Lignany, czyli arktygenina.",
+            "tekst": "Lignany (arktygenina)",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Garbniki.",
+            "tekst": "Garbniki",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Śluzy, czyli związki śluzowe, występują w surowcu.",
+            "tekst": "Śluzy",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "W surowcu występują takie substancje czynne jak inulina, związki śluzowe, olejek eteryczny, substancje gorzkie (laktony seskwiterpenowe) oraz flawonoidy.",
+            "tekst": "Składniki aktywne: inulina, substancje śluzowe, olejek eteryczny, substancje gorzkie (laktony seskwiterpenowe), flawonoidy",
             "zrodla": [
               3
             ],
@@ -789,7 +801,7 @@
             ]
           }
         ],
-        "model": "groq/openai/gpt-oss-20b",
+        "model": "bez LLM",
         "wejscie": "7353b8298df94a79"
       },
       "zastosowanie.medyczne": {
@@ -798,12 +810,12 @@
         "oryginal": "Problemy skórne (trądzik, egzemy), wspomaganie detoksykacji wątroby, łagodzenie stanów zapalnych dróg moczowych, regulacja flory bakteryjnej jelit (dzięki inulinie).",
         "tresc": [
           {
-            "tekst": "Problemy skórne, takie jak trądzik i egzemy, wspomaganie detoksykacji wątroby oraz regulacja flory bakteryjnej jelit dzięki inulinie.",
+            "tekst": "Problemy skórne (trądzik, egzemy), wspomaganie detoksykacji wątroby, łagodzenie stanów zapalnych dróg moczowych, regulacja flory bakteryjnej jelit (dzięki inulinie).",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Roślina wykazuje działanie przeciwzapalne, łagodzenie stanów zapalnych dróg moczowych, delikatnie przeciwdrobnoustrojowe, moczopędne oraz pobudzające apetyt.",
+            "tekst": "Właściwości: przeciwzapalne, lekko przeciwbakteryjne, moczopędne, pobudzające apetyt",
             "zrodla": [
               3
             ],
@@ -812,8 +824,31 @@
             ]
           }
         ],
-        "model": "groq/openai/gpt-oss-20b",
+        "model": "bez LLM",
         "wejscie": "c1b9bed6e90a4d80"
+      },
+      "czesci_rosliny.korzen.wlasciwości": {
+        "tytul": "Surowce i zbiory - Radix Bardanae (minor): Działanie",
+        "typ": "tekst",
+        "oryginal": "Oczyszczające krew, wspomagające przemianę materii, żółciopędne, przeciwzapalne, regulujące poziom cukru.",
+        "tresc": [
+          {
+            "tekst": "Oczyszczające krew, wspomagające przemianę materii, żółciopędne, przeciwzapalne, regulujące poziom cukru.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Korzenie nadają się do spożycia po ugotowaniu z kilkukrotną zmianą wody, choć w roślinach starszych niż rok stają się zbyt zdrewniałe, by je jeść.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2524"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "fe081e3d2f47f0cf"
       },
       "czesci_rosliny.ziele.wlasciwości": {
         "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Działanie",
@@ -821,7 +856,7 @@
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Łodygi liściowe, listki oraz łodygi kwiatowe (do wieku roku) można spożywać na surowo lub gotowane, a z liści można przyrządzać herbatę ziołową.",
+            "tekst": "Ogonki liściowe (w wieku do jednego roku), liście i łodygi kwiatowe można spożywać na surowo lub po ugotowaniu. ... Z liści można również przygotować herbatę ziołową.",
             "zrodla": [
               2
             ],
@@ -830,7 +865,7 @@
             ]
           }
         ],
-        "model": "groq/qwen/qwen3.8-27b",
+        "model": "bez LLM",
         "wejscie": "1caad6820406d614"
       },
       "ciekawostki": {
@@ -849,23 +884,12 @@
             "fakty": []
           },
           {
-            "tekst": "Roślina ta znana jest także pod nazwami 'łopian o małych kępkach' albo 'łopian o małych koszyczkach' oraz, w niektórych regionach, pod nazwą ludową 'dziki rabarbar'.",
-            "zrodla": [
-              2,
-              4
-            ],
-            "fakty": [
-              "s2526",
-              "s2554"
-            ]
-          },
-          {
-            "tekst": "W niektórych regionach Polski liście łopianu mniejszego przykładano pod kapelusz, aby chronić się przed udarem słonecznym, korzystając z efektu chłodzącego kutneru.",
+            "tekst": "W niektórych regionach Polski liście łopianu mniejszego przykładano pod kapelusz, aby chronić się przed udarem słonecznym (efekt chłodzący kutneru).",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Nasiona łopianu mniejszego są bogate w oleje, które ptaki, szczególnie szczygły, uwielbiają wydziobywać zimą.",
+            "tekst": "Nasiona łopianu mniejszego są bogate w oleje, które ptaki (szczególnie szczygły) uwielbiają wydziobywać zimą.",
             "zrodla": [],
             "fakty": []
           },
@@ -875,7 +899,26 @@
             "fakty": []
           },
           {
-            "tekst": "Łopian mniejszy ma zdolność tworzenia mieszańców z trzema innymi gatunkami łopianów: pajęczynowatym, większym i gajowym.",
+            "tekst": "Arctium minus, znany powszechnie jako łopian mniejszy, łopian mały, łopian wszywy, łopian pospolity, łopian guzikowy, guzik kukułki lub dziki rabarbar",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2526"
+            ]
+          },
+          {
+            "tekst": "Łopian mniejszy (Arctium minus) nazywany jest również łopianem o małych główkach lub łopianem o małych kwiatostanach. Pochodzi z Europy.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s2553",
+              "s2554"
+            ]
+          },
+          {
+            "tekst": "Tworzy mieszańce z: łopianem pajęczynowatym – A. × mixtum (Simk.) Nym., większym – A. × nothum (Ruhmer) Weiss i gajowym – A. × maassii (M. Schulze) Rouy.",
             "zrodla": [
               1
             ],
@@ -884,102 +927,74 @@
             ]
           }
         ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "58799f61eba675e3"
+        "model": "bez LLM",
+        "wejscie": "06b5c01e725add6f"
       },
-      "opis": {
-        "tytul": "Opis - Opis ogólny",
+      "ostrzezenia": {
+        "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
         "typ": "tekst",
-        "oryginal": "Dwuletnia roślina zielna, wyraźnie mniejsza od łopianu większego, osiągająca zazwyczaj od 50 do 120 cm wysokości. Choć na pierwszy rzut oka bardzo podobny do swojego większego krewniaka, charakteryzuje się bardziej krzaczastym pokrojem i mniejszymi koszyczkami kwiatowymi, które są zebrane w grona. Jest to roślina wybitnie nitrofilna (lubiąca azot), często spotykana na gruzowiskach, w rowach i na obrzeżach dróg.",
+        "oryginal": "Zbiór korzeni drugorocznych (po zakwitnięciu) jest bezcelowy – stają się one zdrewniałe, puste w środku i pozbawione wartości leczniczych.",
         "tresc": [
           {
-            "tekst": "Łopian mniejszy (Arctium minus) jest dwuletnią rośliną zielną, rodzimą dla Europy, o wyraźnie mniejszych rozmiarach niż łopian większy [1].",
+            "tekst": "Zbiór korzeni drugorocznych (po zakwitnięciu) jest bezcelowy – stają się one zdrewniałe, puste w środku i pozbawione wartości leczniczych.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwiaty przypominają osty i łatwo je z nimi pomylić, ale łopian można rozpoznać po niezwykle dużych liściach i haczykowatych przylistkach.",
             "zrodla": [
-              4
+              2
             ],
             "fakty": [
-              "s2553"
+              "s2523"
             ]
-          },
-          {
-            "tekst": "Osiąga zazwyczaj od 50 do 120 cm wysokości.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Choć na pierwszy rzut oka jest bardzo podobny do swojego większego krewniaka, charakteryzuje się bardziej krzaczastym pokrojem oraz mniejszymi koszyczkami kwiatowymi zebranymi w grona.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Jest to roślina wybitnie nitrofilna, czyli lubiąca azot, Spotykana na gruzowiskach, w rowach i na obrzeżach dróg.",
-            "zrodla": [],
-            "fakty": []
           }
         ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "7024ba7fb2374ac0"
+        "model": "bez LLM",
+        "wejscie": "6573714153721ea5"
       }
     },
     "uzyte_fakty": [
       "s2478",
-      "s2480",
+      "s2479",
       "s2482",
       "s2521",
       "s2522",
       "s2523",
+      "s2524",
       "s2525",
       "s2526",
       "s2550",
       "s2551",
       "s2552",
       "s2553",
-      "s2554"
+      "s2554",
+      "s3113"
     ]
   },
   "rozmieszczenie": {
     "wersja": 1,
-    "zaktualizowano": "2026-11-03",
+    "zaktualizowano": "2026-11-06",
     "jak": "reguly",
-    "wejscie": "1a5ec7a9e4b3ada9",
+    "wejscie": "9987924f4e91aaae",
     "wstawki": [
       {
-        "miejsce": "rozpoznawanie/budowa",
-        "rozdzial": "Rozpoznawanie w terenie",
-        "tytul": "Budowa: kwiaty, owoce i nasiona",
-        "ikona": "ra-flower",
+        "miejsce": "natura/wystepowanie",
+        "rozdzial": "Natura i siedlisko",
+        "tytul": "Występowanie i zasięg",
+        "ikona": "ra-compass",
         "nowy": true,
         "punkty": [
           {
-            "tekst": "Owoce mają postać ciemnobrązowych, odwrotnie jajowatych niełupków o długości 5–8 mm, które są zwieńczone ostkami puchu kielichowego.",
+            "tekst": "W polskich górach sięga do rzędnej 700 m n.p.m.",
             "zrodla": [
               1
             ],
             "fakty": [
-              "s2479"
+              "s2480"
             ],
-            "sekcja": "opis",
-            "czesc": "owoce"
-          }
-        ]
-      },
-      {
-        "miejsce": "zastosowanie/medycyna",
-        "rozdzial": "Praktyczne zastosowanie",
-        "tytul": "Medycyna",
-        "ikona": "ra-health",
-        "nowy": false,
-        "punkty": [
-          {
-            "tekst": "Korzenie są jadalne po ugotowaniu, ale należy zmienić wodę w trakcie gotowania. Rośliny starsze niż rok mają drewniaste korzenie nadające się do jedzenia.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s2524"
-            ],
-            "sekcja": "zastosowanie_lecznicze",
-            "czesc": "korzeń"
+            "sekcja": "wystepowanie",
+            "czesc": null
           }
         ]
       }

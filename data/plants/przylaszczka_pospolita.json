@@ -107,7 +107,7 @@
     "Rycina": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Illustration_Hepatica_nobilis0_clean.jpg/960px-Illustration_Hepatica_nobilis0_clean.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-10-30",
+    "zaktualizowano": "2026-11-06",
     "w_url": true,
     "zdjecia": [
       {
@@ -159,9 +159,9 @@
   },
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-10-22",
-    "uporzadkowano": "2026-10-22",
-    "uklad": "llm:groq/openai/gpt-oss-120b",
+    "zaktualizowano": "2026-11-06",
+    "uporzadkowano": "2026-11-06",
+    "uklad": "deterministyczny",
     "zrodla": [
       {
         "nazwa": "Wikipedia (en): Anemone hepatica",
@@ -193,7 +193,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Liście mają trzy klapki, są mięsiste, pozbawione włosków, ciemnozielone z białawymi paskami po stronie górnej i fioletowo‑brązowe od spodu.",
+            "tekst": "Liście mają trzy klapy, są mięsiste i pozbawione włosków, o szerokości 7–9 cm... Górna strona jest ciemnozielona z białawymi paskami, a dolna – fioletowa lub czerwono-brązowa.",
             "czesc": "liście",
             "zrodla": [
               1
@@ -211,7 +211,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Przylaszczka pospolita występuje w lasach, zaroślach i na łąkach, szczególnie w górach Europy kontynentalnej, Ameryki Północnej i Japonii.",
+            "tekst": "Występuje w lasach, zaroślach i na łąkach, zwłaszcza w górach Europy kontynentalnej, Ameryki Północnej i Japonii.",
             "czesc": null,
             "zrodla": [
               1
@@ -223,37 +223,29 @@
         ]
       },
       {
-        "klucz": "zastosowanie_lecznicze",
-        "tytul": "Ziołolecznictwo i medycyna ludowa",
-        "podsumowanie": null,
-        "podsumowanie_zrodla": [],
-        "punkty": [
-          {
-            "tekst": "W średniowiecznej Europie liście tej rośliny używano do leczenia chorób wątroby ze względu na ich podobieństwo do tego organu.",
-            "czesc": "liście",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s2015"
-            ]
-          }
-        ]
-      },
-      {
         "klucz": "historia",
         "tytul": "Historia i nazwa",
         "podsumowanie": null,
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "W 2006 roku przylaszczka została wybrana oficjalnym kwiatem partii Sweden Democrats w Szwecji.",
+            "tekst": "Od 2006 roku jest to oficjalny kwiat partii politycznej „Szwedzcy Demokraci” w szwedzkiej polityce.",
             "czesc": null,
             "zrodla": [
               1
             ],
             "fakty": [
               "s2010"
+            ]
+          },
+          {
+            "tekst": "W średniowiecznej Europie liście tej rośliny używano do leczenia chorób wątroby, ze względu na ich podobieństwo do tego organu.",
+            "czesc": "liście",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2015"
             ]
           }
         ]
@@ -283,13 +275,22 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "W polskich wierzeniach przylaszczka pospolita posiada moc odpędzania złych duchów i uroków oraz była wykorzystywana w rytuałach przepowiadania przyszłości.",
+            "tekst": "Według wierzeń ludowych ma moc odpędzania złych duchów i uroków.",
             "czesc": null,
             "zrodla": [
               3
             ],
             "fakty": [
-              "s2207",
+              "s2207"
+            ]
+          },
+          {
+            "tekst": "Wykorzystywana w rytuałach z przepowiadaniem przyszłości.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
               "s2208"
             ]
           }
@@ -302,7 +303,7 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Kwiaty przylaszczki produkują pyłek, ale nie nektar; przyciągają najpierw pszczoły Lasioglossum i małe pszczoły drążarki, a później powracają po pyłek.",
+            "tekst": "Kwiaty przylaszczki wytwarzają pyłek, ale nie wytwarzają nektaru. W Ameryce Północnej kwiaty te najpierw przyciągają pszczoły z rodzaju Lasioglossum oraz małe pszczoły stolarze… a gdy pręciki zaczynają uwalniać pyłek, pszczoły powracają, by go zebrać i nim się pożywić.",
             "czesc": null,
             "zrodla": [
               1
@@ -325,7 +326,7 @@
         "id": "s2006",
         "sekcja": "wystepowanie",
         "czesc": null,
-        "tekst": "Przylaszczka pospolita występuje w lasach, zaroślach i na łąkach, szczególnie w górach Europy kontynentalnej, Ameryki Północnej i Japonii.",
+        "tekst": "Występuje w lasach, zaroślach i na łąkach, zwłaszcza w górach Europy kontynentalnej, Ameryki Północnej i Japonii.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Anemone hepatica",
@@ -337,7 +338,7 @@
         "id": "s2008",
         "sekcja": "opis",
         "czesc": "liście",
-        "tekst": "Liście mają trzy klapki, są mięsiste, pozbawione włosków, ciemnozielone z białawymi paskami po stronie górnej i fioletowo‑brązowe od spodu.",
+        "tekst": "Liście mają trzy klapy, są mięsiste i pozbawione włosków, o szerokości 7–9 cm... Górna strona jest ciemnozielona z białawymi paskami, a dolna – fioletowa lub czerwono-brązowa.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Anemone hepatica",
@@ -349,7 +350,7 @@
         "id": "s2010",
         "sekcja": "historia",
         "czesc": null,
-        "tekst": "W 2006 roku przylaszczka została wybrana oficjalnym kwiatem partii Sweden Democrats w Szwecji.",
+        "tekst": "Od 2006 roku jest to oficjalny kwiat partii politycznej „Szwedzcy Demokraci” w szwedzkiej polityce.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Anemone hepatica",
@@ -373,7 +374,7 @@
         "id": "s2013",
         "sekcja": "ciekawostki",
         "czesc": null,
-        "tekst": "Kwiaty przylaszczki produkują pyłek, ale nie nektar; przyciągają najpierw pszczoły Lasioglossum i małe pszczoły drążarki, a później powracają po pyłek.",
+        "tekst": "Kwiaty przylaszczki wytwarzają pyłek, ale nie wytwarzają nektaru. W Ameryce Północnej kwiaty te najpierw przyciągają pszczoły z rodzaju Lasioglossum oraz małe pszczoły stolarze… a gdy pręciki zaczynają uwalniać pyłek, pszczoły powracają, by go zebrać i nim się pożywić.",
         "jezyk": "en",
         "zrodlo": {
           "nazwa": "Wikipedia (en): Anemone hepatica",
@@ -397,7 +398,7 @@
         "id": "s2207",
         "sekcja": "magia",
         "czesc": null,
-        "tekst": "W polskich wierzeniach przylaszczka pospolita posiada moc odpędzania złych duchów i uroków.",
+        "tekst": "Według wierzeń ludowych ma moc odpędzania złych duchów i uroków.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "poznan.pl",
@@ -406,7 +407,6 @@
         "cytat": "Według wierzeń ludowych ma moc odpędzania złych duchów i uroków.",
         "magia": {
           "rodzaj": "ochrona",
-          "kraj": "Polska",
           "tradycja": "wierzenia ludowe"
         }
       },
@@ -414,7 +414,7 @@
         "id": "s2208",
         "sekcja": "magia",
         "czesc": null,
-        "tekst": "Roślina była wykorzystywana w rytuałach przepowiadania przyszłości.",
+        "tekst": "Wykorzystywana w rytuałach z przepowiadaniem przyszłości.",
         "jezyk": "pl",
         "zrodlo": {
           "nazwa": "poznan.pl",
@@ -422,16 +422,14 @@
         },
         "cytat": "Wykorzystywana w rytuałach z przepowiadaniem przyszłości.",
         "magia": {
-          "rodzaj": "wrozby",
-          "kraj": "Polska",
-          "tradycja": "wierzenia ludowe"
+          "rodzaj": "wrozby"
         }
       }
     ]
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-22",
+    "zaktualizowano": "2026-11-06",
     "pola": {
       "identyfikacja.cechy_kluczowe": {
         "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
@@ -444,13 +442,9 @@
         ],
         "tresc": [
           {
-            "tekst": "Liście trójklapowe, o sercowatej nasadzie, mięsiste, pozbawione włosków, ciemnozielone z białawymi paskami po stronie górnej oraz spodem często przebarwione na fioletowo‑brązowe.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s2008"
-            ]
+            "tekst": "Liście trójklapowe, o sercowatej nasadzie, spodem często przebarwione na fioletowo.",
+            "zrodla": [],
+            "fakty": []
           },
           {
             "tekst": "Kwiaty zazwyczaj błękitne lub fioletowe (rzadziej różowe lub białe) z licznymi pręcikami.",
@@ -466,66 +460,19 @@
             "tekst": "Brak płatków korony – ich rolę pełnią barwne działki kielicha.",
             "zrodla": [],
             "fakty": []
-          }
-        ],
-        "model": "groq/openai/gpt-oss-120b",
-        "wejscie": "b654f7ef30033d7d"
-      },
-      "opis": {
-        "tytul": "Opis - Opis ogólny",
-        "typ": "tekst",
-        "oryginal": "Niewielka, wieloletnia bylina leśna, osiągająca 10-20 cm wysokości. Jest jednym z najwcześniej kwitnących gatunków w Europie Środkowej, często przebijając się przez zeszłoroczne liście jeszcze przed pojawieniem się nowej zieleni. Jej trójklapowe liście są skórzaste i zimozielone, a błękitnofioletowe kwiaty zamykają się na noc i podczas deszczu. W Polsce jest pod ścisłą ochroną gatunkową.",
-        "tresc": [
-          {
-            "tekst": "Niewielka, wieloletnia bylina leśna, osiągająca 10‑20 cm wysokości.",
-            "zrodla": [],
-            "fakty": []
           },
           {
-            "tekst": "Występuje w lasach, zaroślach i na łąkach, szczególnie w górach Europy kontynentalnej, Ameryki Północnej i Japonii.",
+            "tekst": "Liście mają trzy klapy, są mięsiste i pozbawione włosków, o szerokości 7–9 cm... Górna strona jest ciemnozielona z białawymi paskami, a dolna – fioletowa lub czerwono-brązowa.",
             "zrodla": [
               1
             ],
             "fakty": [
-              "s2006"
-            ]
-          },
-          {
-            "tekst": "Jest jednym z najwcześniej kwitnących gatunków w Europie Środkowej, często przebijając się przez zeszłoroczne liście jeszcze przed pojawieniem się nowej zieleni.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Jej trójklapowe liście są skórzaste i zimozielone, a błękitnofioletowe kwiaty zamykają się na noc i podczas deszczu.",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "W Polsce jest pod ścisłą ochroną gatunkową.",
-            "zrodla": [],
-            "fakty": []
-          }
-        ],
-        "model": "groq/openai/gpt-oss-120b",
-        "wejscie": "eec8336d9a1aeb68"
-      },
-      "czesci_rosliny.liście.wlasciwości": {
-        "tytul": "Surowce i zbiory - Liście (nowa część z sieci): Działanie",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "W średniowiecznej Europie liście przylaszczki pospolitej (Hepatica nobilis) używano do leczenia chorób wątroby ze względu na ich podobieństwo do tego organu.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s2015"
+              "s2008"
             ]
           }
         ],
-        "model": "groq/openai/gpt-oss-120b",
-        "wejscie": "d113f9899e09c4b5"
+        "model": "bez LLM",
+        "wejscie": "b654f7ef30033d7d"
       },
       "ciekawostki": {
         "tytul": "Wiedza tajemna - Ciekawostki",
@@ -538,31 +485,27 @@
         ],
         "tresc": [
           {
-            "tekst": "Nasiona przylaszczki są roznoszone przez mrówki (myrmekochoria), ponieważ posiadają specjalne wyrostki zwane elajosomami, stanowiące przysmak dla tych owadów.",
+            "tekst": "Nazwa 'Hepatica' pochodzi od greckiego 'hepar' (wątroba), co odnosi się do kształtu liści.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "Przylaszczka zaczyna kwitnąć dopiero po około 7 latach od wykiełkowania z nasiona.",
+            "tekst": "Nasiona przylaszczki są roznoszone przez mrówki (myrmekochoria) – posiadają specjalne wyrostki (elajosomy), które są przysmakiem mrówek.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "W Polsce zbioru przylaszczki ze stanu dzikiego jest prawem zabronione, a surowiec można pozyskiwać wyłącznie z uprawnionych plantacji ogrodowych.",
+            "tekst": "Przylaszczka kwitnie dopiero po około 7 latach od wykiełkowania z nasiona.",
             "zrodla": [],
             "fakty": []
           },
           {
-            "tekst": "W Japonii roślina nosi nazwy Yukiwariso (雪割草) lub Misumisō (ミスミソウ) i współorganizuje zimowe festiwale kwiatowe w Tokio oraz Niigacie.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s2011"
-            ]
+            "tekst": "W Polsce zbiór ze stanu dzikiego jest zabroniony – surowiec można pozyskiwać wyłącznie z upraw ogrodowych.",
+            "zrodla": [],
+            "fakty": []
           },
           {
-            "tekst": "W 2006 roku przylaszczka została wybrana na oficjalny kwiat partii Sweden Democrats w Szwecji.",
+            "tekst": "Od 2006 roku jest to oficjalny kwiat partii politycznej „Szwedzcy Demokraci” w szwedzkiej polityce.",
             "zrodla": [
               1
             ],
@@ -571,49 +514,38 @@
             ]
           },
           {
-            "tekst": "Nazwa 'Hepatica' pochodzi od greckiego 'hepar' (wątroba), co odnosi się do kształtu liści.",
-            "zrodla": [],
-            "fakty": []
-          }
-        ],
-        "model": "groq/qwen/qwen3.8-27b",
-        "wejscie": "36a85c48f838e666"
-      },
-      "permakultura.funkcje": {
-        "tytul": "Cykl życia i ekosystem - Permakultura - funkcje",
-        "typ": "lista",
-        "oryginal": [
-          "Wczesnowiosenny pożytek pyłkowy dla pierwszych dzikich pszczół i trzmieli.",
-          "Roślina okrywowa do głębokiego cienia pod drzewami liściastymi.",
-          "Bioindykator gleb wapiennych i lasów o charakterze naturalnym."
-        ],
-        "tresc": [
+            "tekst": "W średniowiecznej Europie liście tej rośliny używano do leczenia chorób wątroby, ze względu na ich podobieństwo do tego organu.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2015"
+            ]
+          },
           {
-            "tekst": "Wczesnowiosenny pożytek pyłkowy dla pierwszych dzikich pszczół i trzmieli, ponieważ kwiaty przylaszczki produkują pyłek, ale nie nektar i przyciągają najpierw pszczoły Lasioglossum oraz małe pszczoły drążarki",
+            "tekst": "W Japonii roślina znana jest jako Yukiwariso (雪割草) lub Misumisō (ミスミソウ) i jest tematem zimowych festiwali kwiatowych w Tokio i Niigacie.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2011"
+            ]
+          },
+          {
+            "tekst": "Kwiaty przylaszczki wytwarzają pyłek, ale nie wytwarzają nektaru. W Ameryce Północnej kwiaty te najpierw przyciągają pszczoły z rodzaju Lasioglossum oraz małe pszczoły stolarze… a gdy pręciki zaczynają uwalniać pyłek, pszczoły powracają, by go zebrać i nim się pożywić.",
             "zrodla": [
               1
             ],
             "fakty": [
               "s2013"
             ]
-          },
-          {
-            "tekst": "Roślina okrywowa do głębokiego cienia pod drzewami liściastymi",
-            "zrodla": [],
-            "fakty": []
-          },
-          {
-            "tekst": "Bioindykator gleb wapiennych i lasów o charakterze naturalnym",
-            "zrodla": [],
-            "fakty": []
           }
         ],
-        "model": "groq/openai/gpt-oss-120b",
-        "wejscie": "b9f5285a138754b0"
+        "model": "bez LLM",
+        "wejscie": "aae09527b0fbf2bd"
       }
     },
     "uzyte_fakty": [
-      "s2006",
       "s2008",
       "s2010",
       "s2011",
@@ -623,10 +555,52 @@
   },
   "rozmieszczenie": {
     "wersja": 1,
-    "zaktualizowano": "2026-10-22",
-    "jak": "llm:groq/openai/gpt-oss-120b",
-    "wejscie": "3e412b78111c173d",
+    "zaktualizowano": "2026-11-06",
+    "jak": "reguly",
+    "wejscie": "a2cf867862fc984e",
     "wstawki": [
+      {
+        "miejsce": "natura/wystepowanie",
+        "rozdzial": "Natura i siedlisko",
+        "tytul": "Występowanie i zasięg",
+        "ikona": "ra-compass",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Występuje w lasach, zaroślach i na łąkach, zwłaszcza w górach Europy kontynentalnej, Ameryki Północnej i Japonii.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2006"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          }
+        ]
+      },
+      {
+        "miejsce": "magia/ochrona",
+        "rozdzial": "Magia i zabobony",
+        "tytul": "Ochrona i odpędzanie zła",
+        "ikona": "ra-tower",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Według wierzeń ludowych ma moc odpędzania złych duchów i uroków.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2207"
+            ],
+            "sekcja": "magia",
+            "czesc": null
+          }
+        ],
+        "rozdzial_ikona": "ra-cauldron",
+        "rozdzial_po": "tajemna"
+      },
       {
         "miejsce": "magia/wrozby",
         "rozdzial": "Magia i zabobony",
@@ -635,12 +609,11 @@
         "nowy": true,
         "punkty": [
           {
-            "tekst": "W polskich wierzeniach przylaszczka pospolita posiada moc odpędzania złych duchów i uroków oraz była wykorzystywana w rytuałach przepowiadania przyszłości.",
+            "tekst": "Wykorzystywana w rytuałach z przepowiadaniem przyszłości.",
             "zrodla": [
               3
             ],
             "fakty": [
-              "s2207",
               "s2208"
             ],
             "sekcja": "magia",
