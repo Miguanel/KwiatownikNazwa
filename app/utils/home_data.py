@@ -186,6 +186,47 @@ def bestiary(plants=None):
     return rows
 
 
+def _source_keys(p):
+    """Adresy zrodel wiedzy rosliny (wiedza.zrodla) i kody jezykow tych zrodel (en-US -> en)."""
+    w = p.get('wiedza') if isinstance(p.get('wiedza'), dict) else {}
+    urls, langs = set(), set()
+    for z in w.get('zrodla') or []:
+        if not isinstance(z, dict):
+            continue
+        if z.get('url'):
+            urls.add(str(z['url']).split('#')[0])
+        code = str(z.get('jezyk') or '').strip().lower()[:2]
+        if code.isalpha() and len(code) == 2:
+            langs.add(code)
+    return urls, langs
+
+
+def summary(plants=None, rows=None):
+    """Zbiory Siedziby na stronie glownej (nad Kronika): ile informacji zebrano w sieci, z ilu zrodel i jezykow,
+    ile roslin, przepisow (w tym z internetu), wzmianek i informacji z archiwum. Liczby jak na kartach Bestiariusza."""
+    from app.routes.recipes import is_lead, is_from_web
+    plants = plants if plants is not None else _plants()
+    rows = rows if rows is not None else bestiary(plants)
+    urls, langs = set(), set()
+    for p in plants:
+        u, l = _source_keys(p)
+        urls |= u
+        langs |= l
+    recipes = [r for r in get_all_recipes() if isinstance(r, dict)]
+    full = [r for r in recipes if not is_lead(r)]
+    return {
+        'informacje': sum((r.get('staty') or {}).get('siec') or 0 for r in rows),
+        'zrodla': len(urls),
+        'jezyki': len(langs - {'pl'}),
+        'rosliny': len(rows),
+        'rosliny_z_wiedza': sum(1 for r in rows if (r.get('staty') or {}).get('siec')),
+        'przepisy': len(full),
+        'przepisy_z_sieci': sum(1 for r in full if is_from_web(r)),
+        'wzmianki': len(recipes) - len(full),
+        'archiwum': sum((r.get('staty') or {}).get('archiwum') or 0 for r in rows),
+    }
+
+
 def _js_join(items):
     """Jak Array.join(', ') w JS (zagniezdzone listy splaszczone, obiekty jako '[object Object]')."""
     out = []

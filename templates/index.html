@@ -56,6 +56,44 @@
 <!-- PAPIRUS – Kronika Siedziby: historia aktualizacji Kwiatownika (z data/changelog.json i plikow roslin).
      Tylko wpisy z konkretnymi datami i tym, co zebrano – bez stanu "Siedziba pracuje" i czasow "X temu". -->
 <link rel="stylesheet" href="{{ url_for('static', filename='css/papirus.css') }}">
+{% macro odm(n, one, few, many) %}{{ one if n == 1 else (few if n % 10 in (2, 3, 4) and n % 100 not in (12, 13, 14) else many) }}{% endmacro %}
+{% macro liczba(n) %}{{ '{:,}'.format(n or 0).replace(',', ' ') }}{% endmacro %}
+<!-- ZBIORY SIEDZIBY – ile wiedzy zebrano do tej pory (app/utils/home_data.py: summary) -->
+{% if zbiory %}
+<section class="kw-zbiory" aria-labelledby="kwZbioryTitle">
+    <h3 class="section-title" id="kwZbioryTitle"><i class="ra ra-book"></i> Zbiory Siedziby</h3>
+    <div class="kw-zbiory-grid">
+        <div class="kw-zbior kw-zbior-glowny" title="Sprawdzone informacje o roślinach zebrane w internecie przez Siedzibę Kwiatownika – każda ze źródłem">
+            <b>{{ liczba(zbiory.informacje) }}</b>
+            <span>{{ odm(zbiory.informacje, 'informacja zebrana', 'informacje zebrane', 'informacji zebranych') }} w sieci</span>
+            <small>o {{ zbiory.rosliny_z_wiedza }} {{ odm(zbiory.rosliny_z_wiedza, 'roślinie', 'roślinach', 'roślinach') }}, ze źródłami</small>
+        </div>
+        <div class="kw-zbior" title="Różne strony i artykuły, z których pochodzą informacje">
+            <b>{{ liczba(zbiory.zrodla) }}</b><span>{{ odm(zbiory.zrodla, 'źródło', 'źródła', 'źródeł') }}</span>
+        </div>
+        <div class="kw-zbior" title="Języki obce, w których czytane były źródła (poza polskim)">
+            <b>{{ zbiory.jezyki }}</b><span>{{ odm(zbiory.jezyki, 'język obcy', 'języki obce', 'języków obcych') }}</span>
+        </div>
+        <div class="kw-zbior" title="Rośliny w Bestiariuszu Kwiatownika">
+            <b>{{ zbiory.rosliny }}</b><span>{{ odm(zbiory.rosliny, 'roślina', 'rośliny', 'roślin') }}</span>
+        </div>
+        <a class="kw-zbior" href="/przepisy/" title="Przepisy w Przepiśniku{% if zbiory.przepisy_z_sieci %}, w tym {{ zbiory.przepisy_z_sieci }} z internetu{% endif %}">
+            <b>{{ liczba(zbiory.przepisy) }}</b><span>{{ odm(zbiory.przepisy, 'przepis', 'przepisy', 'przepisów') }}</span>
+            {% if zbiory.przepisy_z_sieci %}<small>{{ zbiory.przepisy_z_sieci }} z sieci</small>{% endif %}
+        </a>
+        {% if zbiory.wzmianki %}
+        <div class="kw-zbior" title="Wzmianki o przepisach – Siedziba szuka ich pełnego wykonania">
+            <b>{{ liczba(zbiory.wzmianki) }}</b><span>{{ odm(zbiory.wzmianki, 'wzmianka', 'wzmianki', 'wzmianek') }}</span>
+        </div>
+        {% endif %}
+        {% if zbiory.archiwum %}
+        <div class="kw-zbior" title="Informacje z archiwum pierwszego Kwiatownika">
+            <b>{{ liczba(zbiory.archiwum) }}</b><span>z archiwum</span>
+        </div>
+        {% endif %}
+    </div>
+</section>
+{% endif %}
 <section class="kw-papyrus-wrap" id="kwPapyrus" aria-labelledby="kwPapyrusTitle">
     <h3 class="section-title" id="kwPapyrusTitle"><i class="ra ra-scroll-unfurled"></i> Kronika Siedziby
         {% if kronika %}<span class="kw-count">ostatnia aktualizacja: {{ kronika[0].kiedy }}</span>{% endif %}</h3>

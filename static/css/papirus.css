@@ -101,3 +101,39 @@ html[data-theme="night"] .kw-chronicle-plants a { background: rgba(255, 255, 255
     .kw-live { font-size: 1rem; }
 }
 @media (prefers-reduced-motion: reduce) { .kw-live.is-alive .kw-live-dot { animation: none; } }
+
+/* =====================================================================
+   ZBIORY SIEDZIBY – licznik zebranej wiedzy nad Kronika (templates/index.html, home_data.summary)
+   ===================================================================== */
+.kw-zbiory { max-width: 980px; margin: 30px auto 0; }
+/* szeroko: duza liczba po lewej na dwa wiersze, obok 3 kolumny; srednio: duza liczba u gory; telefon: 2 kolumny */
+.kw-zbiory-grid {
+    display: grid; grid-template-columns: minmax(0, 1.7fr) repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 14px;
+}
+.kw-zbior {
+    display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+    gap: 2px; padding: 12px 8px; min-width: 0; line-height: 1.15;
+    background: var(--kw-parch); border: 1px solid var(--kw-line); border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(62, 74, 61, .08); color: var(--kw-ink); text-decoration: none;
+}
+a.kw-zbior:hover, a.kw-zbior:focus-visible { border-color: var(--kw-gold); color: var(--kw-ink); }
+.kw-zbior b {
+    font-family: 'Playfair Display', Georgia, serif; font-size: 1.55rem; color: var(--kw-green);
+    font-variant-numeric: tabular-nums; white-space: nowrap;
+}
+.kw-zbior span { font-family: 'Crimson Text', Georgia, serif; font-size: .98rem; }
+.kw-zbior small { font-size: .78rem; color: var(--kw-muted); font-style: italic; }
+.kw-zbior-glowny { grid-row: span 2; border-top: 3px solid var(--kw-gold); }
+.kw-zbior-glowny b { font-size: 2.3rem; }
+.kw-zbior-glowny span { font-size: 1.1rem; }
+.kw-zbiory + .kw-papyrus-wrap { margin-top: 26px; }
+@media (max-width: 800px) {
+    .kw-zbiory-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .kw-zbior-glowny { grid-row: auto; grid-column: 1 / -1; }
+}
+@media (max-width: 560px) {
+    .kw-zbiory-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+    .kw-zbior { padding: 10px 6px; }
+    .kw-zbior b { font-size: 1.3rem; }
+    .kw-zbior-glowny b { font-size: 1.9rem; }
+}

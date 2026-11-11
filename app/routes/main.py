@@ -126,7 +126,7 @@ def robots_txt():
 def index():
     # Strona glowna jest lekka: Bestiariusz renderowany tutaj (z miniaturami), a dane wyszukiwarki przegladarka
     # pobiera w tle z /api/szukaj.json (app/utils/home_data.py). Wczesniej w HTML bylo ok. 5 MB JSON-a.
-    from app.utils.home_data import bestiary
+    from app.utils.home_data import bestiary, summary, _plants
     lat, lon = '49.95', '18.38'
     city_name = "Z (Domyślnie)"
 
@@ -153,11 +153,18 @@ def index():
     else:
         knowledge = [{"roslina": "Kwiatownik", "tresc": "Wiedza o roślinach jest kluczem do zdrowia."}]
 
-    rows = bestiary()
+    all_plants = _plants()
+    rows = bestiary(all_plants)
+    try:
+        zbiory = summary(all_plants, rows)
+    except Exception:                       # licznik to dodatek - blad nie moze wywrocic strony glownej
+        current_app.logger.exception('summary')
+        zbiory = None
     return render_template(
         'index.html',
         plants=rows,
         bestiary=rows,
+        zbiory=zbiory,
         astro=astro,
         knowledge=knowledge,
         kronika=kronika(12),

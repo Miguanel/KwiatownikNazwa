@@ -417,6 +417,17 @@ details.grimoire-subdetails > summary:hover {
 }
 .recipe-card.recipe-card-lead { border-style: dashed; }
 .alchemical-tag.lead-tag { background: #fbf3df; border-color: #d4b46a; color: #8a6116; }
+/* Dymek-ciekawostka Wu Xing / Galen (przepisy lecznicze) - po najechaniu, dotknieciu albo z klawiatury */
+.alchemical-tag.tradition-tag { position: relative; cursor: help; background: #f6f1e4; border-color: #cdbb8c; color: #6b5626; }
+.tradition-tag .tooltip-text {
+    visibility: hidden; opacity: 0; transition: opacity .2s; position: absolute; z-index: 1056; top: 130%; right: 0;
+    width: 280px; max-width: 80vw; background: #3e4a3d; color: #fdfaf0; text-align: left; border-radius: 4px; padding: 10px;
+    font-size: .9rem; line-height: 1.35; font-family: 'Crimson Text', serif; white-space: normal; box-shadow: 0 4px 14px rgba(0,0,0,.2);
+}
+.tradition-tag .tooltip-text small { color: #d7d2bf; }
+.tradition-tag:hover .tooltip-text, .tradition-tag:focus .tooltip-text, .tradition-tag:focus-within .tooltip-text {
+    visibility: visible; opacity: 1;
+}
 .lead-notice { margin: 0 0 14px; padding: 10px 14px; background: #fbf7ec; border: 1px dashed #d4b46a;
     border-left: 4px solid #d4b46a; color: #5b4a2c; font-family: 'Crimson Text', serif; font-size: 1.02rem; }
 .lead-notice p { margin: 0 0 6px; }
@@ -446,3 +457,5 @@ details.grimoire-subdetails > summary:hover {
 /* Stronicowanie Przepiśnika (static/js/recipes.js: stronicuj) */
 .recipe-wrapper.kw-ponad { display: none !important; }
 .kat-filter .btn.active { background-color: #3e4a3d; color: #fdfaf0; border-color: #3e4a3d; }
+.warn-list { margin: 4px 0 0; padding-left: 18px; }
+.warn-list li { margin-bottom: 4px; }

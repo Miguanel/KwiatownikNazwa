@@ -25,7 +25,12 @@ const kampoDict = {
 // Tresci z internetu (Siedziba Kwiatownika) wstawiamy przez innerHTML - zawsze je escapujemy.
 // Pary [etykieta, wartosc] -> "<strong>etykieta:</strong> wartosc" tylko dla niepustych wartosci.
 function labeledRows(pairs, sep = '<br><br>') {
-    return pairs.filter(p => p[1]).map(p => (p[0] ? `<strong>${p[0]}:</strong> ` : '') + esc(p[1])).join(sep);
+    return pairs.filter(p => p[1]).map(p => (p[0] ? `<strong>${p[0]}:</strong> ` : '') + bulletText(p[1])).join(sep);
+}
+// Ostrzezenia z kart roslin (Siedziba skleja je znakiem " • ") - jako lista, kazda roslina osobno
+function bulletText(value) {
+    const parts = String(value).split(' • ').map(x => x.trim()).filter(Boolean);
+    return parts.length > 1 ? `<ul class="warn-list">${parts.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : esc(value);
 }
 function subDetails(summary, content) {
     return content ? `
@@ -61,6 +66,36 @@ function normalizeSources(recipe) {
 function getContextTooltip(title, text) {
     if(!text) return '';
     return `<span class="info-tooltip">?<span class="tooltip-text"><strong>${title}</strong><br>${text}</span></span>`;
+}
+
+// Dymek-ciekawostka "Wu Xing / Galen" przy przepisach leczniczych (decyzja 2026-11-02): to nie jest glowny
+// czynnik przepisu, tylko ciekawostka z dawnych systemow. Nowe przepisy z Siedziby maja pole ciekawostka_tradycyjna
+// (liczone algorytmem z profilu energetycznego rosliny); stare przepisy Kwiatownika - dawne bloki Wu Xing / Galena.
+function traditionTip(recipe) {
+    if (!String(recipe.typ || '').startsWith('medyczne')) return '';
+    const lines = [];
+    const c = recipe.ciekawostka_tradycyjna;
+    if (c && typeof c === 'object') {
+        if (c.wu_xing && c.wu_xing.tekst) lines.push(esc(c.wu_xing.tekst));
+        if (c.galen && c.galen.tekst) lines.push(esc(c.galen.tekst));
+    } else {
+        const kd = recipe.klasyfikacja_dzialania || {};
+        const wx = kd.matryca_wu_xing;
+        if (wx && typeof wx === 'object') {
+            let t = 'W tradycji Pięciu Przemian (Wu Xing)';
+            if (wx.zywiol_leczony) t += `: żywioł ${esc(wx.zywiol_leczony)}`;
+            if (wx.narzad_matczyny_do_wsparcia) t += `; wsparcie: ${esc(wx.narzad_matczyny_do_wsparcia)}`;
+            lines.push(t + '.' + (wx.porada_matrycy ? ` <em>${esc(wx.porada_matrycy)}</em>` : ''));
+        }
+        const hg = kd.humory_galena;
+        if (hg && typeof hg === 'object' && hg.jakosc) {
+            lines.push(`W tradycji Galena: ${esc(hg.jakosc)}${hg.stopien ? ` (stopień ${esc(hg.stopien)})` : ''}.`);
+        }
+    }
+    if (!lines.length) return '';
+    return `<span class="alchemical-tag tradition-tag" tabindex="0" role="button" aria-label="Ciekawostka: dawne systemy ziołolecznictwa">`
+        + `☯ Ciekawostka<span class="tooltip-text" role="tooltip"><strong>Z dawnych tradycji</strong><br>${lines.join('<br><br>')}`
+        + `<br><small>Ciekawostka historyczna, nie porada medyczna.</small></span></span>`;
 }
 
 function extractContext(fullText) {
@@ -212,6 +247,7 @@ function showRecipeModal(recipe) {
             });
         }
 
+        tagsHtml += traditionTip(recipe);
         originTags.innerHTML = tagsHtml;
         tooltipText.innerHTML = `<strong>Pochodzenie i System:</strong><br>${plainTextTags}`;
 
@@ -224,6 +260,8 @@ function showRecipeModal(recipe) {
                 facts.push(`<span><strong>Roślina:</strong> ${plantLink}</span>`);
             }
             if (recipe.metoda) facts.push(`<span><strong>Metoda:</strong> ${esc(recipe.metoda)}</span>`);
+            // czas zbioru czesci rosliny - z karty rosliny (Siedziba, bez LLM)
+            if (recipe.zbior && recipe.zbior.kiedy) facts.push(`<span title="z karty rośliny ${esc(recipe.zbior.roslina || '')}"><strong>Zbiór${recipe.zbior.czesc ? ' (' + esc(recipe.zbior.czesc) + ')' : ''}:</strong> ${esc(recipe.zbior.kiedy)}</span>`);
             if (recipe.porcje) facts.push(`<span><strong>Porcje:</strong> ${esc(recipe.porcje)}</span>`);
             if (recipe.czas_przygotowania) facts.push(`<span><strong>Czas:</strong> ${esc(recipe.czas_przygotowania)}</span>`);
             const tags = Array.isArray(recipe.tagi) ? recipe.tagi.filter(t => typeof t === 'string' && t && !(lead && t === 'wzmianka')) : [];
@@ -338,6 +376,7 @@ function showRecipeModal(recipe) {
             let html = `<details class="grimoire-details">
                             <summary>⚕️ Matryce Alchemiczne i Działanie</summary>
                             <div class="details-content" style="padding: 10px 20px;">`;
+            const emptyLen = html.length;
 
             if (kd.skalowanie_toksykologiczne) {
                 html += `
@@ -346,17 +385,7 @@ function showRecipeModal(recipe) {
                         <div class="subdetails-content">${esc(kd.skalowanie_toksykologiczne)}</div>
                     </details>`;
             }
-            if(kd.matryca_wu_xing) {
-                html += `
-                    <details class="grimoire-subdetails">
-                        <summary>Matryca Wu Xing ${getContextTooltip("Matryca Wu Xing", dict["Matryca Wu Xing"])}</summary>
-                        <div class="subdetails-content">
-                            ${labeledRows([["Leczy żywioł", kd.matryca_wu_xing.zywiol_leczony],
-                                           ["Wsparcie", kd.matryca_wu_xing.narzad_matczyny_do_wsparcia]], '<br>')}
-                            ${kd.matryca_wu_xing.porada_matrycy ? `<br><br><small style="color:#666;">📝 ${esc(kd.matryca_wu_xing.porada_matrycy)}</small>` : ''}
-                        </div>
-                    </details>`;
-            }
+            // Wu Xing i humory Galena: tylko dymek-ciekawostka przy tytule (traditionTip), nie osobne sekcje
             if(kd.triada_kampo) {
                 // Rozpoznawanie konkretnego terminu (Sui, Ketsu, Ki, Tokuso) i dodawanie dymka do wartości "Cel główny"
                 let kampoCtx = extractContext(kd.triada_kampo.cel_glowny || '');
@@ -383,11 +412,6 @@ function showRecipeModal(recipe) {
                 html += subDetails(`Doktryna Sygnatur ${getContextTooltip("Doktryna Sygnatur", dict["Doktryna Sygnatur"])}`,
                     labeledRows([["Sygnatura", kd.doktryna_sygnatur.sygnatura], ["Interpretacja", kd.doktryna_sygnatur.interpretacja]]));
             }
-            if (kd.humory_galena) {
-                html += subDetails(`Humory Galena ${getContextTooltip("Humory Galena", dict["Humory Galena"])}`,
-                    labeledRows([["Jakość", kd.humory_galena.jakosc], ["Stopień", kd.humory_galena.stopien],
-                                 ["", kd.humory_galena.wyjasnienie]]));
-            }
             if (kd.alchemia_spageryczna) {
                 html += subDetails(`Alchemia Spageryczna ${getContextTooltip("Alchemia Spageryczna", dict["Alchemia Spageryczna"])}`,
                     labeledRows([["Zasada", kd.alchemia_spageryczna.zasada], ["", kd.alchemia_spageryczna.wyjasnienie]]));
@@ -396,11 +420,12 @@ function showRecipeModal(recipe) {
                 html += subDetails('Wskazówki tradycyjne',
                     `<ul style="margin:0; padding-left:18px;">${recipe.wskazowki_tradycyjne.map(t => `<li>${esc(t)}</li>`).join('')}</ul>`);
             }
-            if (recipe.opracowanie && recipe.opracowanie.uwaga) {
+            const hasContent = html.length > emptyLen;          // np. przepis mial tylko Wu Xing (teraz w dymku)
+            if (hasContent && recipe.opracowanie && recipe.opracowanie.uwaga) {
                 html += `<p class="enrich-note">ℹ️ ${esc(recipe.opracowanie.uwaga)}</p>`;
             }
             html += `</div></details>`;
-            alchemicalContainer.innerHTML = html;
+            alchemicalContainer.innerHTML = hasContent ? html : '';
         } else {
             alchemicalContainer.innerHTML = '';
         }
