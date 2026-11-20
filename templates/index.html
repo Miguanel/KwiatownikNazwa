@@ -53,6 +53,29 @@
     <div id="kwResults" class="kw-results" aria-live="polite" hidden></div>
 </section>
 
+<section>
+    <h2 class="bestiary-header">Bestiariusz Roślin</h2>
+    <div id="bestiaryGrid" class="bestiary-grid">
+        {% for p in bestiary %}
+        <a class="witcher-card" href="{{ url_for('plants.plant_detail', plant_id=p.id) }}" aria-label="Zbadaj: {{ p.nazwa }}">
+            <div class="witcher-card-img">{% if p.img %}<img src="{{ p.img }}"{% if p.img2x %} srcset="{{ p.img }} 330w, {{ p.img2x }} 500w" sizes="(max-width: 560px) 92vw, 280px"{% endif %} alt="" loading="lazy" decoding="async" width="330" height="220"{% if p.full %} data-full="{{ p.full }}" onerror="this.onerror=null;this.removeAttribute('srcset');this.src=this.dataset.full"{% endif %}>{% endif %}</div>
+            <div class="witcher-card-content">
+                <h3 class="witcher-card-title">{{ p.nazwa }}</h3>
+                {% if p.lat %}<p class="witcher-card-latin">{{ p.lat }}</p>{% endif %}
+                <p class="witcher-card-desc">{{ p.rodzina }}</p>
+                {% set st = p.staty or {} %}
+                <div class="kw-card-stats" aria-label="{{ st.siec or 0 }} informacji z sieci, {{ st.przepisy or 0 }} przepisów, {{ st.archiwum or 0 }} informacji z archiwum">
+                    <span class="kw-stat{% if not st.siec %} kw-stat-0{% endif %}" title="Informacje zebrane w sieci przez Siedzibę Kwiatownika (ze źródłami)"><b><i aria-hidden="true">🌐</i>{{ st.siec or 0 }}</b><small>z sieci</small></span>
+                    <span class="kw-stat{% if not st.przepisy %} kw-stat-0{% endif %}" title="Przepisy z tą rośliną w Przepiśniku"><b><i aria-hidden="true">📜</i>{{ st.przepisy or 0 }}</b><small>przepisy</small></span>
+                    <span class="kw-stat{% if not st.archiwum %} kw-stat-0{% endif %}" title="Informacje z archiwum pierwszego Kwiatownika"><b><i aria-hidden="true">📚</i>{{ st.archiwum or 0 }}</b><small>archiwum</small></span>
+                </div>
+            </div>
+            <span class="witcher-btn">Zbadaj <i class="ra ra-eye"></i></span>
+        </a>
+        {% endfor %}
+    </div>
+</section>
+
 <!-- PAPIRUS – Kronika Siedziby: historia aktualizacji Kwiatownika (z data/changelog.json i plikow roslin).
      Tylko wpisy z konkretnymi datami i tym, co zebrano – bez stanu "Siedziba pracuje" i czasow "X temu". -->
 <link rel="stylesheet" href="{{ url_for('static', filename='css/papirus.css') }}">
@@ -120,29 +143,6 @@
             </ol>
         </div>
         <div class="kw-papyrus-rod" aria-hidden="true"></div>
-    </div>
-</section>
-
-<section>
-    <h2 class="bestiary-header">Bestiariusz Roślin</h2>
-    <div id="bestiaryGrid" class="bestiary-grid">
-        {% for p in bestiary %}
-        <a class="witcher-card" href="{{ url_for('plants.plant_detail', plant_id=p.id) }}" aria-label="Zbadaj: {{ p.nazwa }}">
-            <div class="witcher-card-img">{% if p.img %}<img src="{{ p.img }}"{% if p.img2x %} srcset="{{ p.img }} 330w, {{ p.img2x }} 500w" sizes="(max-width: 560px) 92vw, 280px"{% endif %} alt="" loading="lazy" decoding="async" width="330" height="220"{% if p.full %} data-full="{{ p.full }}" onerror="this.onerror=null;this.removeAttribute('srcset');this.src=this.dataset.full"{% endif %}>{% endif %}</div>
-            <div class="witcher-card-content">
-                <h3 class="witcher-card-title">{{ p.nazwa }}</h3>
-                {% if p.lat %}<p class="witcher-card-latin">{{ p.lat }}</p>{% endif %}
-                <p class="witcher-card-desc">{{ p.rodzina }}</p>
-                {% set st = p.staty or {} %}
-                <div class="kw-card-stats" aria-label="{{ st.siec or 0 }} informacji z sieci, {{ st.przepisy or 0 }} przepisów, {{ st.archiwum or 0 }} informacji z archiwum">
-                    <span class="kw-stat{% if not st.siec %} kw-stat-0{% endif %}" title="Informacje zebrane w sieci przez Siedzibę Kwiatownika (ze źródłami)"><b><i aria-hidden="true">🌐</i>{{ st.siec or 0 }}</b><small>z sieci</small></span>
-                    <span class="kw-stat{% if not st.przepisy %} kw-stat-0{% endif %}" title="Przepisy z tą rośliną w Przepiśniku"><b><i aria-hidden="true">📜</i>{{ st.przepisy or 0 }}</b><small>przepisy</small></span>
-                    <span class="kw-stat{% if not st.archiwum %} kw-stat-0{% endif %}" title="Informacje z archiwum pierwszego Kwiatownika"><b><i aria-hidden="true">📚</i>{{ st.archiwum or 0 }}</b><small>archiwum</small></span>
-                </div>
-            </div>
-            <span class="witcher-btn">Zbadaj <i class="ra ra-eye"></i></span>
-        </a>
-        {% endfor %}
     </div>
 </section>
 

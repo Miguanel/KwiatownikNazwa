@@ -12,8 +12,8 @@
   "_siedziba_nowa": true,
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-11-06",
-    "uporzadkowano": "2026-11-06",
+    "zaktualizowano": "2026-11-19",
+    "uporzadkowano": "2026-11-19",
     "uklad": "deterministyczny",
     "zrodla": [
       {
@@ -31,11 +31,25 @@
         "nr": 2
       },
       {
+        "nazwa": "Wikipedia (fr): Égopode podagraire",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89gopode_podagraire",
+        "jezyk": "fr",
+        "typ": "wikipedia",
+        "nr": 3
+      },
+      {
+        "nazwa": "Wikipedia (ru): Сныть обыкновенная",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BD%D1%8B%D1%82%D1%8C_%D0%BE%D0%B1%D1%8B%D0%BA%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F",
+        "jezyk": "ru",
+        "typ": "wikipedia",
+        "nr": 4
+      },
+      {
         "nazwa": "www.diagram.com.ua",
         "url": "https://www.diagram.com.ua/info/plants/plants498.shtml",
         "jezyk": "ru",
         "typ": "strona",
-        "nr": 3
+        "nr": 5
       }
     ],
     "sekcje": [
@@ -56,6 +70,26 @@
             ]
           },
           {
+            "tekst": "Jej liczne i głęboko sięgające korzenie pozwalają jej przetrwać w warunkach panujących w podszyciu; pachną one jak marchewka.",
+            "czesc": "korzeń",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3233"
+            ]
+          },
+          {
+            "tekst": "Parasolka wierzchołkowa jest owocująca, a boczne — bezowocowe.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s3230"
+            ]
+          },
+          {
             "tekst": "Ta wieloletnia roślina zielna osiąga wysokość 1 metra (3 i 1⁄2 stopy), wyrastając z podziemnych kłączy.",
             "czesc": "kłącze",
             "zrodla": [
@@ -73,6 +107,26 @@
             ],
             "fakty": [
               "s2952"
+            ]
+          },
+          {
+            "tekst": "Zmięte liście pachną podobnie jak seler, marchew czy pietruszka.",
+            "czesc": "liście",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3232"
+            ]
+          },
+          {
+            "tekst": "Smak delikatnych liści, łodyg i pąków rdestu przypomina mieszankę pietruszki i marchwi. Kwiaty mają słodszy smak, a owoce — ostrzejszy.",
+            "czesc": "liście",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s3225"
             ]
           }
         ]
@@ -175,10 +229,28 @@
             "tekst": "Znaczenie gospodarcze: Snyć pospolita, jako roślina lecznicza, jest stosowana jako środek moczopędny i żółciopędny. Snyć znajduje również zastosowanie w kuchni jako przyprawa, a jej liście można dodawać do sałatek.",
             "czesc": "liście",
             "zrodla": [
-              3
+              5
             ],
             "fakty": [
               "s3118"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W nadziemnej części przytuliacza znajdują się witamina C (0,044–0,1 %), karoten (do 0,008 %), substancje białkowe (do 22 %), wapń i kobalt.",
+            "czesc": "ziele",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s3228"
             ]
           }
         ]
@@ -264,6 +336,36 @@
             "fakty": [
               "s2959"
             ]
+          },
+          {
+            "tekst": "Nazwa naukowa Aegopodium pochodzi od greckich słów aïx, aïgos, oznaczających „kozę”, oraz podion, czyli „stopę”, co nawiązuje do bocznych listków, które zazwyczaj są podzielone na dwie części, przypominając kopyta kozy.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3231"
+            ]
+          },
+          {
+            "tekst": "Według niektórych źródeł, czcigodny Serafim z Sarowa przez trzy lata, prowadząc ascetyczny tryb życia, żywił się wyłącznie liśćmi rdestu.",
+            "czesc": "liście",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s3223"
+            ]
+          },
+          {
+            "tekst": "W szczególności w latach Wielkiej Wojny Ojczyźnianej pracownicy moskiewskich placówek gastronomicznych wyjeżdżali wiosną i latem poza miasto, aby zebrać liście rdestu na zimę dla stołówek w stolicy.",
+            "czesc": "liście",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s3224"
+            ]
           }
         ]
       },
@@ -277,7 +379,7 @@
             "tekst": "Gorczyca pospolita symbolizuje również pokój i harmonię. W niektórych kulturach jej wizerunki są wykorzystywane w sztuce jako symbol pokoju i równowagi.",
             "czesc": null,
             "zrodla": [
-              3
+              5
             ],
             "fakty": [
               "s3117"
@@ -295,10 +397,28 @@
             "tekst": "W starożytnych kulturach roślina ta była uważana za świętą, a jej liście wykorzystywano w obrzędach mających chronić przed złymi duchami. W średniowiecznej Europie rdest zwyczajny stosowano jako amulet chroniący przed chorobami i nieszczęściami.",
             "czesc": null,
             "zrodla": [
-              3
+              5
             ],
             "fakty": [
               "s3116"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "nazwy_ludowe",
+        "tytul": "Nazwy ludowe",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Rosyjskie nazwy potoczne: snitka, snyd, sned-trawa, borina, borszczówka, dyaglica, jaglyca, ger, gir, khawa, szelest, dedilnica, snit.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s3222"
             ]
           }
         ]
@@ -317,6 +437,44 @@
             ],
             "fakty": [
               "s2964"
+            ]
+          },
+          {
+            "tekst": "Podobnie jak wiele roślin z tej samej rodziny (w tym marchew), egopoda wytwarza substancje fotouczulające; osoby uczulone na rośliny z tej rodziny powinny obchodzić się z nią ze szczególną ostrożnością i/lub unikać ekspozycji na słońce po kontakcie z nią lub spożyciu jej na surowo.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3234"
+            ]
+          },
+          {
+            "tekst": "U gatunków trujących łodygi są grubsze, rozgałęzione i wyższe (ponad 1 m), często z purpurowym lub fioletowym odcieniem, a liście znacznie węższe niż u snitki.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s3229"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "uprawa",
+        "tytul": "Uprawa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Jeśli wyrwie się ją, pozostawiając system korzeniowy na miejscu, odrośnie. Nawet niewielki fragment korzenia, który został pominięty, może dać początek nowej roślinie. Roślina ta rozmnaża się również przez nasiona. Jedna roślina może wydać setki nasion…",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3235"
             ]
           }
         ]
@@ -346,24 +504,57 @@
             "fakty": [
               "s2966"
             ]
+          },
+          {
+            "tekst": "Plon miodu przy uprawie monokulturowej wynosi do 200 kg/ha. Miód jest jasny, o żółtawo-zielonym kolorze, o dobrym smaku i wysokiej jakości.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s3227"
+            ]
+          },
+          {
+            "tekst": "Ogonki liściowe można marynować w occie; wykorzystuje się je również do przygotowywania ikry i dodatków.",
+            "czesc": "liście",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s3226"
+            ]
           }
         ]
       }
     ],
     "czesci": {
+      "korzeń": [
+        "s3233"
+      ],
+      "kwiaty": [
+        "s3230",
+        "s3227"
+      ],
       "kłącze": [
         "s2960",
         "s2953"
       ],
       "liście": [
         "s2952",
+        "s3232",
+        "s3225",
         "s2954",
         "s2955",
         "s2956",
         "s2957",
-        "s3118"
+        "s3118",
+        "s3223",
+        "s3224",
+        "s3226"
       ],
       "ziele": [
+        "s3228",
         "s2948",
         "s2949"
       ]
@@ -644,18 +835,191 @@
           "url": "https://www.diagram.com.ua/info/plants/plants498.shtml"
         },
         "cytat": "Хозяйственное значение: Сныть обыкновенная в качестве лекарственного растения используется как мочегонное и желчегонное средство. Сныть также применяется в кулинарии как пряность, а листья могут добавляться в салаты."
+      },
+      {
+        "id": "s3222",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "Rosyjskie nazwy potoczne: snitka, snyd, sned-trawa, borina, borszczówka, dyaglica, jaglyca, ger, gir, khawa, szelest, dedilnica, snit.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ru): Сныть обыкновенная",
+          "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BD%D1%8B%D1%82%D1%8C_%D0%BE%D0%B1%D1%8B%D0%BA%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F"
+        },
+        "cytat": "Русские обиходные названия: снитка, сныд, снедь-трава, борина, борщевка, дяглица, яглыця, гер, гир, хава, шелест, дедильница, снить."
+      },
+      {
+        "id": "s3223",
+        "sekcja": "historia",
+        "czesc": "liście",
+        "tekst": "Według niektórych źródeł, czcigodny Serafim z Sarowa przez trzy lata, prowadząc ascetyczny tryb życia, żywił się wyłącznie liśćmi rdestu.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ru): Сныть обыкновенная",
+          "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BD%D1%8B%D1%82%D1%8C_%D0%BE%D0%B1%D1%8B%D0%BA%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F"
+        },
+        "cytat": "Согласно некоторым источниками, преподобный Серафим Саровский на протяжении трёх лет аскет питался только листьями сныти."
+      },
+      {
+        "id": "s3224",
+        "sekcja": "historia",
+        "czesc": "liście",
+        "tekst": "W szczególności w latach Wielkiej Wojny Ojczyźnianej pracownicy moskiewskich placówek gastronomicznych wyjeżdżali wiosną i latem poza miasto, aby zebrać liście rdestu na zimę dla stołówek w stolicy.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ru): Сныть обыкновенная",
+          "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BD%D1%8B%D1%82%D1%8C_%D0%BE%D0%B1%D1%8B%D0%BA%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F"
+        },
+        "cytat": "В частности в годы Великой Отечественной войны работники московского общепита выезжали весной и летом за город, чтобы заготовить листья сныти на зиму для столичных столовых."
+      },
+      {
+        "id": "s3225",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Smak delikatnych liści, łodyg i pąków rdestu przypomina mieszankę pietruszki i marchwi. Kwiaty mają słodszy smak, a owoce — ostrzejszy.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ru): Сныть обыкновенная",
+          "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BD%D1%8B%D1%82%D1%8C_%D0%BE%D0%B1%D1%8B%D0%BA%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F"
+        },
+        "cytat": "Вкус нежных листовых частей растения, стеблей и почек сныти напоминает смесь петрушки и моркови. Цветки слаще, а плоды — острее на вкус."
+      },
+      {
+        "id": "s3226",
+        "sekcja": "ciekawostki",
+        "czesc": "liście",
+        "tekst": "Ogonki liściowe można marynować w occie; wykorzystuje się je również do przygotowywania ikry i dodatków.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ru): Сныть обыкновенная",
+          "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BD%D1%8B%D1%82%D1%8C_%D0%BE%D0%B1%D1%8B%D0%BA%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F"
+        },
+        "cytat": "Черешки листьев можно мариновать с уксусом, из них готовят икру и гарниры."
+      },
+      {
+        "id": "s3227",
+        "sekcja": "ciekawostki",
+        "czesc": "kwiaty",
+        "tekst": "Plon miodu przy uprawie monokulturowej wynosi do 200 kg/ha. Miód jest jasny, o żółtawo-zielonym kolorze, o dobrym smaku i wysokiej jakości.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ru): Сныть обыкновенная",
+          "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BD%D1%8B%D1%82%D1%8C_%D0%BE%D0%B1%D1%8B%D0%BA%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F"
+        },
+        "cytat": "Продуктивность мёда при сплошном произрастании до 200 кг/га. Мёд светлый, желтовато-зелёного цвета, хорошего вкуса и высокого качества."
+      },
+      {
+        "id": "s3228",
+        "sekcja": "sklad",
+        "czesc": "ziele",
+        "tekst": "W nadziemnej części przytuliacza znajdują się witamina C (0,044–0,1 %), karoten (do 0,008 %), substancje białkowe (do 22 %), wapń i kobalt.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ru): Сныть обыкновенная",
+          "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BD%D1%8B%D1%82%D1%8C_%D0%BE%D0%B1%D1%8B%D0%BA%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F"
+        },
+        "cytat": "В надземной части сныти содержатся витамин C (0,044–0,1 %), каротин (до 0,008 %), белковые вещества (до 22 %), кальций, кобальт."
+      },
+      {
+        "id": "s3229",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "U gatunków trujących łodygi są grubsze, rozgałęzione i wyższe (ponad 1 m), często z purpurowym lub fioletowym odcieniem, a liście znacznie węższe niż u snitki.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ru): Сныть обыкновенная",
+          "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BD%D1%8B%D1%82%D1%8C_%D0%BE%D0%B1%D1%8B%D0%BA%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F"
+        },
+        "cytat": "У ядовитых видов стебли более толстые, ветвистые и высокие (более 1 м), часто с пурпурным или фиолетовым оттенком, листья гораздо уже, чему сныти."
+      },
+      {
+        "id": "s3230",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Parasolka wierzchołkowa jest owocująca, a boczne — bezowocowe.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ru): Сныть обыкновенная",
+          "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BD%D1%8B%D1%82%D1%8C_%D0%BE%D0%B1%D1%8B%D0%BA%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F"
+        },
+        "cytat": "Верхушечный зонтик плодущий, боковые — бесплодные."
+      },
+      {
+        "id": "s3231",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Nazwa naukowa Aegopodium pochodzi od greckich słów aïx, aïgos, oznaczających „kozę”, oraz podion, czyli „stopę”, co nawiązuje do bocznych listków, które zazwyczaj są podzielone na dwie części, przypominając kopyta kozy.",
+        "jezyk": "fr",
+        "zrodlo": {
+          "nazwa": "Wikipedia (fr): Égopode podagraire",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89gopode_podagraire"
+        },
+        "cytat": "Le nom scientifique Aegopodium est formé sur le grec aïx, aïgos, « chèvre », et podion « pied », allusion aux folioles latérales habituellement divisées en deux comme les sabots d'une chèvre."
+      },
+      {
+        "id": "s3232",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Zmięte liście pachną podobnie jak seler, marchew czy pietruszka.",
+        "jezyk": "fr",
+        "zrodlo": {
+          "nazwa": "Wikipedia (fr): Égopode podagraire",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89gopode_podagraire"
+        },
+        "cytat": "Les feuilles froissées ont une odeur qui évoque celles du céleri, de la carotte ou du persil."
+      },
+      {
+        "id": "s3233",
+        "sekcja": "opis",
+        "czesc": "korzeń",
+        "tekst": "Jej liczne i głęboko sięgające korzenie pozwalają jej przetrwać w warunkach panujących w podszyciu; pachną one jak marchewka.",
+        "jezyk": "fr",
+        "zrodlo": {
+          "nazwa": "Wikipedia (fr): Égopode podagraire",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89gopode_podagraire"
+        },
+        "cytat": "Ses racines, nombreuses et profondes lui permettent de résister aux conditions de sous-bois, elles ont une odeur de carotte."
+      },
+      {
+        "id": "s3234",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Podobnie jak wiele roślin z tej samej rodziny (w tym marchew), egopoda wytwarza substancje fotouczulające; osoby uczulone na rośliny z tej rodziny powinny obchodzić się z nią ze szczególną ostrożnością i/lub unikać ekspozycji na słońce po kontakcie z nią lub spożyciu jej na surowo.",
+        "jezyk": "fr",
+        "zrodlo": {
+          "nazwa": "Wikipedia (fr): Égopode podagraire",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89gopode_podagraire"
+        },
+        "cytat": "Comme de nombreuses plantes de la même famille (carotte y compris), l'Égopode produit des substances photosensibilisantes ; les personnes allergiques aux plantes de cette famille devraient le manipuler avec des précautions particulières et/"
+      },
+      {
+        "id": "s3235",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "Jeśli wyrwie się ją, pozostawiając system korzeniowy na miejscu, odrośnie. Nawet niewielki fragment korzenia, który został pominięty, może dać początek nowej roślinie. Roślina ta rozmnaża się również przez nasiona. Jedna roślina może wydać setki nasion…",
+        "jezyk": "fr",
+        "zrodlo": {
+          "nazwa": "Wikipedia (fr): Égopode podagraire",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89gopode_podagraire"
+        },
+        "cytat": "Si on l'arrache en laissant son système racinaire en place, elle repousse. Un petit morceau de racine oublié peut redonner une nouvelle plante . Cette plante se reproduit également par graines. Un pied peut donner des centaines de graines…"
       }
     ]
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-11-06",
+    "zaktualizowano": "2026-11-19",
     "pola": {
-      "identyfikacja.cechy_kluczowe": {
-        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
-        "typ": "lista",
-        "oryginal": null,
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Charakterystyczną cechą gatunkową pozwalającą na rozróżnienie tego gatunku od innych, poza tym podobnych roślin, jest budowa ogonków liściowych.",
         "tresc": [
+          {
+            "tekst": "Charakterystyczną cechą gatunkową pozwalającą na rozróżnienie tego gatunku od innych, poza tym podobnych roślin, jest budowa ogonków liściowych.",
+            "zrodla": [],
+            "fakty": []
+          },
           {
             "tekst": "Łodygi są wyprostowane, puste w środku i rowkowane.",
             "zrodla": [
@@ -663,6 +1027,33 @@
             ],
             "fakty": [
               "s2961"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "1bc5c9461135dcd3"
+      },
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Jej liczne i głęboko sięgające korzenie pozwalają jej przetrwać w warunkach panujących w podszyciu; pachną one jak marchewka.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3233"
+            ]
+          },
+          {
+            "tekst": "Parasolka wierzchołkowa jest owocująca, a boczne — bezowocowe.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s3230"
             ]
           },
           {
@@ -682,10 +1073,82 @@
             "fakty": [
               "s2952"
             ]
+          },
+          {
+            "tekst": "Zmięte liście pachną podobnie jak seler, marchew czy pietruszka.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3232"
+            ]
           }
         ],
         "model": "bez LLM",
-        "wejscie": "78b9295d1d46e876"
+        "wejscie": "0d10305abac51137"
+      },
+      "profil_energetyczny.smak": {
+        "tytul": "Natura i siedlisko - Smak",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Smak delikatnych liści, łodyg i pąków rdestu przypomina mieszankę pietruszki i marchwi. Kwiaty mają słodszy smak, a owoce — ostrzejszy.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s3225"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "7639d6fa3899ee22"
+      },
+      "zastosowanie.kulinarne": {
+        "tytul": "Praktyczne zastosowanie - Kuchnia",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Delikatne liście można wykorzystywać jako wiosenne warzywo liściaste, podobnie jak szpinak; stosuje się je w ten sposób już od starożytności.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2954"
+            ]
+          },
+          {
+            "tekst": "Często dodaje się go do zup.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2955"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "e34e4a0ae3daad90"
+      },
+      "czesci_rosliny.ziele.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "W nadziemnej części przytuliacza znajdują się witamina C (0,044–0,1 %), karoten (do 0,008 %), substancje białkowe (do 22 %), wapń i kobalt.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s3228"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "f13506b8fceb3d72"
       },
       "czesci_rosliny.ziele.wlasciwości": {
         "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Działanie",
@@ -765,12 +1228,48 @@
             ]
           },
           {
-            "tekst": "Gorczyca pospolita symbolizuje również pokój i harmonię. W niektórych kulturach jej wizerunki są wykorzystywane w sztuce jako symbol pokoju i równowagi.",
+            "tekst": "Nazwa naukowa Aegopodium pochodzi od greckich słów aïx, aïgos, oznaczających „kozę”, oraz podion, czyli „stopę”, co nawiązuje do bocznych listków, które zazwyczaj są podzielone na dwie części, przypominając kopyta kozy.",
             "zrodla": [
               3
             ],
             "fakty": [
+              "s3231"
+            ]
+          },
+          {
+            "tekst": "Według niektórych źródeł, czcigodny Serafim z Sarowa przez trzy lata, prowadząc ascetyczny tryb życia, żywił się wyłącznie liśćmi rdestu.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s3223"
+            ]
+          },
+          {
+            "tekst": "W szczególności w latach Wielkiej Wojny Ojczyźnianej pracownicy moskiewskich placówek gastronomicznych wyjeżdżali wiosną i latem poza miasto, aby zebrać liście rdestu na zimę dla stołówek w stolicy.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s3224"
+            ]
+          },
+          {
+            "tekst": "Gorczyca pospolita symbolizuje również pokój i harmonię. W niektórych kulturach jej wizerunki są wykorzystywane w sztuce jako symbol pokoju i równowagi.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
               "s3117"
+            ]
+          },
+          {
+            "tekst": "Rosyjskie nazwy potoczne: snitka, snyd, sned-trawa, borina, borszczówka, dyaglica, jaglyca, ger, gir, khawa, szelest, dedilnica, snit.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s3222"
             ]
           },
           {
@@ -790,10 +1289,28 @@
             "fakty": [
               "s2966"
             ]
+          },
+          {
+            "tekst": "Plon miodu przy uprawie monokulturowej wynosi do 200 kg/ha. Miód jest jasny, o żółtawo-zielonym kolorze, o dobrym smaku i wysokiej jakości.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s3227"
+            ]
+          },
+          {
+            "tekst": "Ogonki liściowe można marynować w occie; wykorzystuje się je również do przygotowywania ikry i dodatków.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s3226"
+            ]
           }
         ],
         "model": "bez LLM",
-        "wejscie": "1211daa548569c78"
+        "wejscie": "6d520a4b31fdbd18"
       },
       "ostrzezenia": {
         "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
@@ -808,10 +1325,46 @@
             "fakty": [
               "s2964"
             ]
+          },
+          {
+            "tekst": "Podobnie jak wiele roślin z tej samej rodziny (w tym marchew), egopoda wytwarza substancje fotouczulające; osoby uczulone na rośliny z tej rodziny powinny obchodzić się z nią ze szczególną ostrożnością i/lub unikać ekspozycji na słońce po kontakcie z nią lub spożyciu jej na surowo.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3234"
+            ]
+          },
+          {
+            "tekst": "U gatunków trujących łodygi są grubsze, rozgałęzione i wyższe (ponad 1 m), często z purpurowym lub fioletowym odcieniem, a liście znacznie węższe niż u snitki.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s3229"
+            ]
           }
         ],
         "model": "bez LLM",
-        "wejscie": "87fbe4258f7e9dbd"
+        "wejscie": "cc6cfeccec0dd736"
+      },
+      "zastosowanie.ogrodowe": {
+        "tytul": "Praktyczne zastosowanie - Ogród",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Jeśli wyrwie się ją, pozostawiając system korzeniowy na miejscu, odrośnie. Nawet niewielki fragment korzenia, który został pominięty, może dać początek nowej roślinie. Roślina ta rozmnaża się również przez nasiona. Jedna roślina może wydać setki nasion…",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3235"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "4c56c24f61b0d53a"
       }
     },
     "uzyte_fakty": [
@@ -820,6 +1373,8 @@
       "s2949",
       "s2950",
       "s2952",
+      "s2954",
+      "s2955",
       "s2958",
       "s2959",
       "s2960",
@@ -827,14 +1382,28 @@
       "s2964",
       "s2965",
       "s2966",
-      "s3117"
+      "s3117",
+      "s3222",
+      "s3223",
+      "s3224",
+      "s3225",
+      "s3226",
+      "s3227",
+      "s3228",
+      "s3229",
+      "s3230",
+      "s3231",
+      "s3232",
+      "s3233",
+      "s3234",
+      "s3235"
     ]
   },
   "rozmieszczenie": {
     "wersja": 1,
-    "zaktualizowano": "2026-11-06",
+    "zaktualizowano": "2026-11-19",
     "jak": "reguly",
-    "wejscie": "07e97efb7c9a8ea6",
+    "wejscie": "9363cc8f98952aa3",
     "wstawki": [
       {
         "miejsce": "natura/wystepowanie",
@@ -906,28 +1475,6 @@
         "nowy": true,
         "punkty": [
           {
-            "tekst": "Delikatne liście można wykorzystywać jako wiosenne warzywo liściaste, podobnie jak szpinak; stosuje się je w ten sposób już od starożytności.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s2954"
-            ],
-            "sekcja": "czesci_rosliny",
-            "czesc": "liście"
-          },
-          {
-            "tekst": "Często dodaje się go do zup.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s2955"
-            ],
-            "sekcja": "czesci_rosliny",
-            "czesc": "liście"
-          },
-          {
             "tekst": "Jeśli zostanie zebrana po tym terminie, ma ostry smak i działa przeczyszczająco.",
             "zrodla": [
               2
@@ -961,7 +1508,7 @@
           {
             "tekst": "Znaczenie gospodarcze: Snyć pospolita, jako roślina lecznicza, jest stosowana jako środek moczopędny i żółciopędny. Snyć znajduje również zastosowanie w kuchni jako przyprawa, a jej liście można dodawać do sałatek.",
             "zrodla": [
-              3
+              5
             ],
             "fakty": [
               "s3118"
@@ -981,7 +1528,7 @@
           {
             "tekst": "W starożytnych kulturach roślina ta była uważana za świętą, a jej liście wykorzystywano w obrzędach mających chronić przed złymi duchami. W średniowiecznej Europie rdest zwyczajny stosowano jako amulet chroniący przed chorobami i nieszczęściami.",
             "zrodla": [
-              3
+              5
             ],
             "fakty": [
               "s3116"
@@ -1002,7 +1549,7 @@
     "Rycina": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/BGTransp_L_Illustration_Aegopodium_podagraria0_clean_no-description.png/960px-BGTransp_L_Illustration_Aegopodium_podagraria0_clean_no-description.png"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-11-08",
+    "zaktualizowano": "2026-11-19",
     "w_url": true,
     "zdjecia": [
       {

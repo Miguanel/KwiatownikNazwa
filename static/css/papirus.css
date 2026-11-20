@@ -105,7 +105,7 @@ html[data-theme="night"] .kw-chronicle-plants a { background: rgba(255, 255, 255
 /* =====================================================================
    ZBIORY SIEDZIBY – licznik zebranej wiedzy nad Kronika (templates/index.html, home_data.summary)
    ===================================================================== */
-.kw-zbiory { max-width: 980px; margin: 30px auto 0; }
+.kw-zbiory { max-width: 980px; margin: 56px auto 0; }
 /* szeroko: duza liczba po lewej na dwa wiersze, obok 3 kolumny; srednio: duza liczba u gory; telefon: 2 kolumny */
 .kw-zbiory-grid {
     display: grid; grid-template-columns: minmax(0, 1.7fr) repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 14px;

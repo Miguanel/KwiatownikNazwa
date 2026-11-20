@@ -127,7 +127,7 @@
     "Nasiona": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Common_hornbeam_growing_in_plastic_tree_shelter_tube_inside_view.jpg/960px-Common_hornbeam_growing_in_plastic_tree_shelter_tube_inside_view.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-11-06",
+    "zaktualizowano": "2026-11-18",
     "w_url": true,
     "zdjecia": [
       {
@@ -176,5 +176,572 @@
         "zrodlo": "Wikimedia Commons"
       }
     ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-11-18",
+    "uporzadkowano": "2026-11-18",
+    "uklad": "deterministyczny",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (fr): Charme commun",
+        "url": "https://fr.wikipedia.org/wiki/Charme_commun",
+        "jezyk": "fr",
+        "typ": "wikipedia",
+        "nr": 1
+      },
+      {
+        "nazwa": "Wikipedia (ru): Граб обыкновенный",
+        "url": "https://ru.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D0%B1_%D0%BE%D0%B1%D1%8B%D0%BA%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9",
+        "jezyk": "ru",
+        "typ": "wikipedia",
+        "nr": 2
+      },
+      {
+        "nazwa": "Wikipedia (uk): Граб звичайний",
+        "url": "https://uk.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D0%B1_%D0%B7%D0%B2%D0%B8%D1%87%D0%B0%D0%B9%D0%BD%D0%B8%D0%B9",
+        "jezyk": "uk",
+        "typ": "wikipedia",
+        "nr": 3
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "opis",
+        "tytul": "Opis i wygląd",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Owoc — niewielki orzech o długości 3–6 mm, o owalnym kształcie, brązowym ubarwieniu, w dotyku żebrowany.",
+            "czesc": "owoce",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3126"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "czesci_rosliny",
+        "tytul": "Części rośliny i surowce",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Z drewna grabowego wytwarza się instrumenty muzyczne, fornir, wyroby toczone, uchwyty narzędziowe, formy szewskie oraz parkiet.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s3132"
+            ]
+          },
+          {
+            "tekst": "Grab ma cenne, twarde i ciężkie drewno.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3127"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Kora grabu zawiera 4–6 % tanin, a liście — 9–15,5 %.",
+            "czesc": "liście",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3128"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Gałęzie, liście i owoce grabu zwyczajnego nadają się na paszę dla zwierząt domowych.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3130"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "medycyna_wschodu",
+        "tytul": "Medycyna chińska, kampo, ajurweda",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Służy do tworzenia bonsai.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s3133"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "barwienie",
+        "tytul": "Barwienie i rzemiosło",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Wewnętrzna część kory grabu zwyczajnego dostarcza żółtego barwnika, nadającego się do barwienia wełny.",
+            "czesc": "kora",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3129"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "historia",
+        "tytul": "Historia i nazwa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Wydajność oleju z nasion wynosi 11,7 % w stosunku do nasion całkowicie suchych; olej nadaje się do zastosowań technicznych.",
+            "czesc": "nasiona",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s3131"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "ciekawostki",
+        "tytul": "Ciekawostki",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Gęstość: od 0,8 do 0,9. Niewytrzymałe, podatne na działanie owadów i grzybów.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3136"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "owoce": [
+        "s3126"
+      ],
+      "liście": [
+        "s3128"
+      ],
+      "kora": [
+        "s3129"
+      ],
+      "nasiona": [
+        "s3131"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s3126",
+        "sekcja": "opis",
+        "czesc": "owoce",
+        "tekst": "Owoc — niewielki orzech o długości 3–6 mm, o owalnym kształcie, brązowym ubarwieniu, w dotyku żebrowany.",
+        "jezyk": "uk",
+        "zrodlo": {
+          "nazwa": "Wikipedia (uk): Граб звичайний",
+          "url": "https://uk.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D0%B1_%D0%B7%D0%B2%D0%B8%D1%87%D0%B0%D0%B9%D0%BD%D0%B8%D0%B9"
+        },
+        "cytat": "Плід — невеликий горіх, 3-6 мм в довжину, овальної форми, бурого забарвлення, ребристий на дотик."
+      },
+      {
+        "id": "s3127",
+        "sekcja": "czesci_rosliny",
+        "czesc": null,
+        "tekst": "Grab ma cenne, twarde i ciężkie drewno.",
+        "jezyk": "uk",
+        "zrodlo": {
+          "nazwa": "Wikipedia (uk): Граб звичайний",
+          "url": "https://uk.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D0%B1_%D0%B7%D0%B2%D0%B8%D1%87%D0%B0%D0%B9%D0%BD%D0%B8%D0%B9"
+        },
+        "cytat": "Граб має цінну тверду важку деревину."
+      },
+      {
+        "id": "s3128",
+        "sekcja": "sklad",
+        "czesc": "liście",
+        "tekst": "Kora grabu zawiera 4–6 % tanin, a liście — 9–15,5 %.",
+        "jezyk": "uk",
+        "zrodlo": {
+          "nazwa": "Wikipedia (uk): Граб звичайний",
+          "url": "https://uk.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D0%B1_%D0%B7%D0%B2%D0%B8%D1%87%D0%B0%D0%B9%D0%BD%D0%B8%D0%B9"
+        },
+        "cytat": "У корі граба міститься 4-6 % танідів, у листках — 9-15,5 %."
+      },
+      {
+        "id": "s3129",
+        "sekcja": "barwienie",
+        "czesc": "kora",
+        "tekst": "Wewnętrzna część kory grabu zwyczajnego dostarcza żółtego barwnika, nadającego się do barwienia wełny.",
+        "jezyk": "uk",
+        "zrodlo": {
+          "nazwa": "Wikipedia (uk): Граб звичайний",
+          "url": "https://uk.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D0%B1_%D0%B7%D0%B2%D0%B8%D1%87%D0%B0%D0%B9%D0%BD%D0%B8%D0%B9"
+        },
+        "cytat": "Внутрішня частина кори граба звичайного дає жовту фарбу, придатну для фарбування вовни."
+      },
+      {
+        "id": "s3130",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": null,
+        "tekst": "Gałęzie, liście i owoce grabu zwyczajnego nadają się na paszę dla zwierząt domowych.",
+        "jezyk": "uk",
+        "zrodlo": {
+          "nazwa": "Wikipedia (uk): Граб звичайний",
+          "url": "https://uk.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D0%B1_%D0%B7%D0%B2%D0%B8%D1%87%D0%B0%D0%B9%D0%BD%D0%B8%D0%B9"
+        },
+        "cytat": "Гілля, листя й плоди граба звичайного придатні як корм для домашніх тварин."
+      },
+      {
+        "id": "s3131",
+        "sekcja": "historia",
+        "czesc": "nasiona",
+        "tekst": "Wydajność oleju z nasion wynosi 11,7 % w stosunku do nasion całkowicie suchych; olej nadaje się do zastosowań technicznych.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ru): Граб обыкновенный",
+          "url": "https://ru.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D0%B1_%D0%BE%D0%B1%D1%8B%D0%BA%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9"
+        },
+        "cytat": "Выход масла из семян 11,7 % от абсолютно сухих семян; масло пригодно для технических целей."
+      },
+      {
+        "id": "s3132",
+        "sekcja": "czesci_rosliny",
+        "czesc": null,
+        "tekst": "Z drewna grabowego wytwarza się instrumenty muzyczne, fornir, wyroby toczone, uchwyty narzędziowe, formy szewskie oraz parkiet.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ru): Граб обыкновенный",
+          "url": "https://ru.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D0%B1_%D0%BE%D0%B1%D1%8B%D0%BA%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9"
+        },
+        "cytat": "Из граба изготавливают музыкальные инструменты, шпон, токарные изделия, рукоятки инструмента и сапожные колодки, паркет."
+      },
+      {
+        "id": "s3133",
+        "sekcja": "medycyna_wschodu",
+        "czesc": null,
+        "tekst": "Służy do tworzenia bonsai.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ru): Граб обыкновенный",
+          "url": "https://ru.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D0%B1_%D0%BE%D0%B1%D1%8B%D0%BA%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9"
+        },
+        "cytat": "Используется для создания бонсаев."
+      },
+      {
+        "id": "s3136",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Gęstość: od 0,8 do 0,9. Niewytrzymałe, podatne na działanie owadów i grzybów.",
+        "jezyk": "fr",
+        "zrodlo": {
+          "nazwa": "Wikipedia (fr): Charme commun",
+          "url": "https://fr.wikipedia.org/wiki/Charme_commun"
+        },
+        "cytat": "Densité : 0,8 à 0,9. Peu durable, sensible aux insectes et champignons."
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-18",
+    "pola": {
+      "identyfikacja.cechy_kluczowe": {
+        "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
+        "typ": "lista",
+        "oryginal": [
+          "Pień o charakterystycznym 'umięśnionym' przekroju, kora gładka ze smugami.",
+          "Liście podłużnie jajowate, wyraźnie harmonijkowato pofałdowane, o podwójnie piłkowanych brzegach.",
+          "Pąki zimowe są wąskie, długie, ale w przeciwieństwie do buka – ściśle przylegają do gałązki.",
+          "Owoce to małe orzeszki opatrzone dużym, trójklapowym skrzydełkiem (liściem okrywowym), zebrane w zwisające owocostany."
+        ],
+        "tresc": [
+          {
+            "tekst": "Pień o charakterystycznym 'umięśnionym' przekroju, kora gładka ze smugami.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Liście podłużnie jajowate, wyraźnie harmonijkowato pofałdowane, o podwójnie piłkowanych brzegach.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Pąki zimowe są wąskie, długie, ale w przeciwieństwie do buka – ściśle przylegają do gałązki.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Owoce to małe orzeszki opatrzone dużym, trójklapowym skrzydełkiem (liściem okrywowym), zebrane w zwisające owocostany.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Owoc — niewielki orzech o długości 3–6 mm, o owalnym kształcie, brązowym ubarwieniu, w dotyku żebrowany.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3126"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "3acb1a39fa3c2201"
+      },
+      "zastosowanie.rzemieslnicze": {
+        "tytul": "Praktyczne zastosowanie - Rzemiosło",
+        "typ": "tekst",
+        "oryginal": "Drewno grabowe ('żelazne drewno') używane do wyrobu elementów maszyn, kół zębatych, trzonków do młotków, strugów stolarskich, a nawet części mechanicznych fortepianów.",
+        "tresc": [
+          {
+            "tekst": "Drewno grabowe ('żelazne drewno') używane do wyrobu elementów maszyn, kół zębatych, trzonków do młotków, strugów stolarskich, a nawet części mechanicznych fortepianów.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Z drewna grabowego wytwarza się instrumenty muzyczne, fornir, wyroby toczone, uchwyty narzędziowe, formy szewskie oraz parkiet.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s3132"
+            ]
+          },
+          {
+            "tekst": "Grab ma cenne, twarde i ciężkie drewno.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3127"
+            ]
+          },
+          {
+            "tekst": "Wewnętrzna część kory grabu zwyczajnego dostarcza żółtego barwnika, nadającego się do barwienia wełny.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3129"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "17783c0f9365a797"
+      },
+      "czesci_rosliny.liscie.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Folium Carpini: Substancje czynne",
+        "typ": "lista",
+        "oryginal": [
+          "Garbniki",
+          "Flawonoidy",
+          "Witamina C",
+          "Kwasy polifenolowe"
+        ],
+        "tresc": [
+          {
+            "tekst": "Garbniki",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Flawonoidy",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Witamina C",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwasy polifenolowe",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kora grabu zawiera 4–6 % tanin, a liście — 9–15,5 %.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3128"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "8c1822d9936a04b6"
+      },
+      "zastosowanie.ogrodowe": {
+        "tytul": "Praktyczne zastosowanie - Ogród",
+        "typ": "tekst",
+        "oryginal": "Najlepsza roślina na formowane żywopłoty (tzw. ściany grabowe). Może być stosowany do budowy altan z 'żywego drewna' (pleaching).",
+        "tresc": [
+          {
+            "tekst": "Najlepsza roślina na formowane żywopłoty (tzw. ściany grabowe).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Może być stosowany do budowy altan z 'żywego drewna' (pleaching).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Służy do tworzenia bonsai.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s3133"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "1e7f35cfeedfc4f0"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "Drewno grabu jest tak gęste i twarde, że dawniej wykonywano z niego jarzma dla wołów oraz osie wozów, które musiały wytrzymać ogromne przeciążenia.",
+          "Grab posiada niesamowitą zdolność do zrastania się gałęzi – jeśli dwa pędy będą się o siebie ocierać, z czasem stworzą jedną całość, co wykorzystuje się w rzeźbiarstwie ogrodowym.",
+          "W przeciwieństwie do wielu innych drzew, grab rzadko pada ofiarą jemioły.",
+          "Zasuszone liście grabu często pozostają na gałązkach przez całą zimę, co chroni pąki przed mroźnym wiatrem i zapewnia prywatność w ogrodowych żywopłotach nawet w styczniu.",
+          "Węgiel drzewny z grabu jest uważany za jeden z najbardziej kalorycznych i był ceniony przez dawnych kowali."
+        ],
+        "tresc": [
+          {
+            "tekst": "Drewno grabu jest tak gęste i twarde, że dawniej wykonywano z niego jarzma dla wołów oraz osie wozów, które musiały wytrzymać ogromne przeciążenia.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Grab posiada niesamowitą zdolność do zrastania się gałęzi – jeśli dwa pędy będą się o siebie ocierać, z czasem stworzą jedną całość, co wykorzystuje się w rzeźbiarstwie ogrodowym.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W przeciwieństwie do wielu innych drzew, grab rzadko pada ofiarą jemioły.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Zasuszone liście grabu często pozostają na gałązkach przez całą zimę, co chroni pąki przed mroźnym wiatrem i zapewnia prywatność w ogrodowych żywopłotach nawet w styczniu.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Węgiel drzewny z grabu jest uważany za jeden z najbardziej kalorycznych i był ceniony przez dawnych kowali.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Wydajność oleju z nasion wynosi 11,7 % w stosunku do nasion całkowicie suchych; olej nadaje się do zastosowań technicznych.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s3131"
+            ]
+          },
+          {
+            "tekst": "Gęstość: od 0,8 do 0,9. Niewytrzymałe, podatne na działanie owadów i grzybów.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3136"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "82beac005168ce65"
+      }
+    },
+    "uzyte_fakty": [
+      "s3126",
+      "s3127",
+      "s3128",
+      "s3129",
+      "s3131",
+      "s3132",
+      "s3133",
+      "s3136"
+    ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-18",
+    "jak": "llm:groq/openai/gpt-oss-120b",
+    "wejscie": "f635f5909d44c791",
+    "wstawki": [
+      {
+        "miejsce": "zastosowanie/gospodarstwo",
+        "rozdzial": "Praktyczne zastosowanie",
+        "tytul": "Pasza i gospodarstwo",
+        "ikona": "ra-wooden-sign",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "Gałęzie, liście i owoce grabu zwyczajnego nadają się na paszę dla zwierząt domowych.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3130"
+            ],
+            "sekcja": "zastosowanie_lecznicze",
+            "czesc": null
+          }
+        ]
+      }
+    ],
+    "duplikaty": []
   }
 }

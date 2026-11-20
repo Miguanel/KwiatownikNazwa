@@ -118,7 +118,7 @@
     "Nasiona": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Young_trees_of_Sorbus_aucuparia.jpg/960px-Young_trees_of_Sorbus_aucuparia.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-11-05",
+    "zaktualizowano": "2026-11-20",
     "w_url": true,
     "zdjecia": [
       {
@@ -166,6 +166,690 @@
         "licencja_url": "https://creativecommons.org/licenses/by-sa/4.0",
         "zrodlo": "Wikimedia Commons"
       }
+    ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-11-20",
+    "uporzadkowano": "2026-11-20",
+    "uklad": "deterministyczny",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (pl): Jarząb pospolity",
+        "url": "https://pl.wikipedia.org/wiki/Jarz%C4%85b_pospolity",
+        "jezyk": "pl",
+        "typ": "wikipedia",
+        "nr": 1
+      },
+      {
+        "nazwa": "sklepnaturawita.pl",
+        "url": "https://sklepnaturawita.pl/en/blog/post/27-czerwone-korale-korale-czerwone-niczym-wino",
+        "jezyk": "en",
+        "typ": "strona",
+        "nr": 2
+      },
+      {
+        "nazwa": "stronazdrowia.pl",
+        "url": "https://stronazdrowia.pl/ten-napoj-to-prawdziwy-cud-jeden-lyk-i-jak-reka-odjal/ar/c14p2-26671387",
+        "jezyk": "pl-PL",
+        "typ": "strona",
+        "nr": 3
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "opis",
+        "tytul": "Opis i wygląd",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Jarząb pospolity, jarzębina, jarząb zwyczajny (Sorbus aucuparia L.) – gatunek rośliny wieloletniej z rodziny różowatych.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2899"
+            ]
+          },
+          {
+            "tekst": "Jej owoce są aromatyczne, ale też gorzkie. Zawierają szkodliwy kwas parasorbowy (który po wysuszeniu, przegotowaniu lub zamrożeniu owoców zanika), a także alkohol cukrowy zwany sorbitolem oraz garbniki, ale także mnóstwo witaminy C (więcej niż cytryna!) i beta-karotenu.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2908"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "czesci_rosliny",
+        "tytul": "Części rośliny i surowce",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Zbiór i suszenie: owoce zrywa się gdy już są czerwone, ale przed przymrozkami i suszy się rozłożone cienką warstwą (najlepiej w temp. ok. 40 °C)",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2900"
+            ]
+          },
+          {
+            "tekst": "Wystarczy przemrozić umyte i osuszone owoce w zamrażarce przez ok. 24 godziny. Zawierają one wtedy mniej witaminy C, ale mają słodszy i lepszy smak. Następnie należy je wysuszyć w uchylonym piekarniku rozgrzanym do temp. 50-80 st. C.",
+            "czesc": "owoce",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2910"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Zawierają dwukrotnie więcej karotenu niż marchew oraz alkaloid sorbinę, który nadaje im gorzki smak.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2901"
+            ]
+          },
+          {
+            "tekst": "Surowiec zielarski: owoce. Mają dużo witaminy C, E, P, K, B3, nieco witaminy A, cukier sorbozę, garbniki i pektyny.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2902"
+            ]
+          },
+          {
+            "tekst": "Jak informuje znany fitoterapeuta dr Henryk Różański owoce jarzębiny bogate są w flawonoidy (kwercetyna, kaempferol), fitosterole, związki fenolowe, lignany. Zawierają też alkohole cukrowe (sorbitol), sorbozę, metylopentozany, karotenoidy (alfa- i beta-karoten, kryptoksantyna), cukry (sacharoza, glukoza), garbniki, pektyny, a także kwasy organiczne: chinowy, chlorogenowy, izochlorogenowy, neochlorogenowy, kawowy i cynamonowy.",
+            "czesc": "owoce",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2909"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Działanie: słabe moczopędne oraz korzystnie wpływające na błony śluzowe i pracę układu pokarmowego. Jest stosowana przy nieżytach jelit, przewlekłych biegunkach, różnych schorzeniach wątroby i pęcherzyka żółciowego.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2903"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kosmetyka",
+        "tytul": "Kosmetyka",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Napar lub odwar z owoców jarzębiny można także stosować do pielęgnacji twarzy, szczególnie do cery suchej, z przebarwieniami i plamami. Rozjaśnia, nawadnia i uelastycznia skórę. Sprawdzi się także do okładów na oczy, ponieważ zmniejsza worki i cienie pod oczami.",
+            "czesc": "owoce",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2911"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "historia",
+        "tytul": "Historia i nazwa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Łacińska nazwa rośliny w dosłownym tłumaczeniu oznacza jarzębina łowiąca ptaki.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2906"
+            ]
+          },
+          {
+            "tekst": "Jarzębina została introdukowana do Ameryki Północnej jako drzewo ozdobne.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2907"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "bezpieczenstwo",
+        "tytul": "Bezpieczeństwo",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Surowe owoce są niejadalne, nie tylko z powodu gorzkiego smaku, ale również zawartości trującego składnika (kwas parasorbowy).",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2904"
+            ]
+          },
+          {
+            "tekst": "Natomiast po przemrożeniu, lub po zanurzeniu na chwilę we wrzątku (tzw. blanszowanie) tracą trujące właściwości i gorzki smak.",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2905"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "kwiaty": [
+        "s2908"
+      ],
+      "owoce": [
+        "s2900",
+        "s2910",
+        "s2901",
+        "s2902",
+        "s2909",
+        "s2903",
+        "s2911",
+        "s2904",
+        "s2905"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s2899",
+        "sekcja": "opis",
+        "czesc": null,
+        "tekst": "Jarząb pospolity, jarzębina, jarząb zwyczajny (Sorbus aucuparia L.) – gatunek rośliny wieloletniej z rodziny różowatych.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Jarząb pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Jarz%C4%85b_pospolity"
+        },
+        "cytat": "Jarząb pospolity, jarzębina, jarząb zwyczajny (Sorbus aucuparia L.) – gatunek rośliny wieloletniej z rodziny różowatych."
+      },
+      {
+        "id": "s2900",
+        "sekcja": "czesci_rosliny",
+        "czesc": "owoce",
+        "tekst": "Zbiór i suszenie: owoce zrywa się gdy już są czerwone, ale przed przymrozkami i suszy się rozłożone cienką warstwą (najlepiej w temp. ok. 40 °C)",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Jarząb pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Jarz%C4%85b_pospolity"
+        },
+        "cytat": "Zbiór i suszenie: owoce zrywa się gdy już są czerwone, ale przed przymrozkami i suszy się rozłożone cienką warstwą (najlepiej w temp. ok. 40 °C)"
+      },
+      {
+        "id": "s2901",
+        "sekcja": "sklad",
+        "czesc": "owoce",
+        "tekst": "Zawierają dwukrotnie więcej karotenu niż marchew oraz alkaloid sorbinę, który nadaje im gorzki smak.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Jarząb pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Jarz%C4%85b_pospolity"
+        },
+        "cytat": "Zawierają dwukrotnie więcej karotenu niż marchew oraz alkaloid sorbinę, który nadaje im gorzki smak."
+      },
+      {
+        "id": "s2902",
+        "sekcja": "sklad",
+        "czesc": "owoce",
+        "tekst": "Surowiec zielarski: owoce. Mają dużo witaminy C, E, P, K, B3, nieco witaminy A, cukier sorbozę, garbniki i pektyny.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Jarząb pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Jarz%C4%85b_pospolity"
+        },
+        "cytat": "Surowiec zielarski: owoce. Mają dużo witaminy C, E, P, K, B3, nieco witaminy A, cukier sorbozę, garbniki i pektyny."
+      },
+      {
+        "id": "s2903",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "owoce",
+        "tekst": "Działanie: słabe moczopędne oraz korzystnie wpływające na błony śluzowe i pracę układu pokarmowego. Jest stosowana przy nieżytach jelit, przewlekłych biegunkach, różnych schorzeniach wątroby i pęcherzyka żółciowego.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Jarząb pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Jarz%C4%85b_pospolity"
+        },
+        "cytat": "Działanie: słabe moczopędne oraz korzystnie wpływające na błony śluzowe i pracę układu pokarmowego. Jest stosowana przy nieżytach jelit, przewlekłych biegunkach, różnych schorzeniach wątroby i pęcherzyka żółciowego."
+      },
+      {
+        "id": "s2904",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "owoce",
+        "tekst": "Surowe owoce są niejadalne, nie tylko z powodu gorzkiego smaku, ale również zawartości trującego składnika (kwas parasorbowy).",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Jarząb pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Jarz%C4%85b_pospolity"
+        },
+        "cytat": "Surowe owoce są niejadalne, nie tylko z powodu gorzkiego smaku, ale również zawartości trującego składnika (kwas parasorbowy)."
+      },
+      {
+        "id": "s2905",
+        "sekcja": "bezpieczenstwo",
+        "czesc": "owoce",
+        "tekst": "Natomiast po przemrożeniu, lub po zanurzeniu na chwilę we wrzątku (tzw. blanszowanie) tracą trujące właściwości i gorzki smak.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Jarząb pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Jarz%C4%85b_pospolity"
+        },
+        "cytat": "Natomiast po przemrożeniu, lub po zanurzeniu na chwilę we wrzątku (tzw. blanszowanie) tracą trujące właściwości i gorzki smak."
+      },
+      {
+        "id": "s2906",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Łacińska nazwa rośliny w dosłownym tłumaczeniu oznacza jarzębina łowiąca ptaki.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Jarząb pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Jarz%C4%85b_pospolity"
+        },
+        "cytat": "Łacińska nazwa rośliny w dosłownym tłumaczeniu oznacza jarzębina łowiąca ptaki."
+      },
+      {
+        "id": "s2907",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Jarzębina została introdukowana do Ameryki Północnej jako drzewo ozdobne.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Jarząb pospolity",
+          "url": "https://pl.wikipedia.org/wiki/Jarz%C4%85b_pospolity"
+        },
+        "cytat": "Jarzębina została introdukowana do Ameryki Północnej jako drzewo ozdobne."
+      },
+      {
+        "id": "s2908",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Jej owoce są aromatyczne, ale też gorzkie. Zawierają szkodliwy kwas parasorbowy (który po wysuszeniu, przegotowaniu lub zamrożeniu owoców zanika), a także alkohol cukrowy zwany sorbitolem oraz garbniki, ale także mnóstwo witaminy C (więcej niż cytryna!) i beta-karotenu.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "sklepnaturawita.pl",
+          "url": "https://sklepnaturawita.pl/en/blog/post/27-czerwone-korale-korale-czerwone-niczym-wino"
+        },
+        "cytat": "Jej owoce są aromatyczne, ale też gorzkie. Zawierają szkodliwy kwas parasorbowy (który po wysuszeniu, przegotowaniu lub przemrożeniu owoców ten związek zanika) oraz alkohol cukrowy zwany sorbitolem i garbniki, ale też mnóstwo witaminy C (wi"
+      },
+      {
+        "id": "s2909",
+        "sekcja": "sklad",
+        "czesc": "owoce",
+        "tekst": "Jak informuje znany fitoterapeuta dr Henryk Różański owoce jarzębiny bogate są w flawonoidy (kwercetyna, kaempferol), fitosterole, związki fenolowe, lignany. Zawierają też alkohole cukrowe (sorbitol), sorbozę, metylopentozany, karotenoidy (alfa- i beta-karoten, kryptoksantyna), cukry (sacharoza, glukoza), garbniki, pektyny, a także kwasy organiczne: chinowy, chlorogenowy, izochlorogenowy, neochlorogenowy, kawowy i cynamonowy.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/ten-napoj-to-prawdziwy-cud-jeden-lyk-i-jak-reka-odjal/ar/c14p2-26671387"
+        },
+        "cytat": "Jak informuje znany fitoterapeuta dr Henryk Różański owoce jarzębiny bogate są w flawonoidy (kwercetyna, kaempferol), fitosterole, związki fenolowe, lignany. Zawierają też alkohole cukrowe (sorbitol), sorbozę, metylopentozany, karotenoidy ("
+      },
+      {
+        "id": "s2910",
+        "sekcja": "czesci_rosliny",
+        "czesc": "owoce",
+        "tekst": "Wystarczy przemrozić umyte i osuszone owoce w zamrażarce przez ok. 24 godziny. Zawierają one wtedy mniej witaminy C, ale mają słodszy i lepszy smak. Następnie należy je wysuszyć w uchylonym piekarniku rozgrzanym do temp. 50-80 st. C.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/ten-napoj-to-prawdziwy-cud-jeden-lyk-i-jak-reka-odjal/ar/c14p2-26671387"
+        },
+        "cytat": "Wystarczy przemrozić umyte i osuszone owoce w zamrażarce przez ok. 24 godziny. Zawierają one wtedy mniej witaminy C, ale mają słodszy i lepszy smak. Następnie należy je wysuszyć w uchylonym piekarniku rozgrzanym do temp. 50-80 st. C."
+      },
+      {
+        "id": "s2911",
+        "sekcja": "kosmetyka",
+        "czesc": "owoce",
+        "tekst": "Napar lub odwar z owoców jarzębiny można także stosować do pielęgnacji twarzy, szczególnie do cery suchej, z przebarwieniami i plamami. Rozjaśnia, nawadnia i uelastycznia skórę. Sprawdzi się także do okładów na oczy, ponieważ zmniejsza worki i cienie pod oczami.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/ten-napoj-to-prawdziwy-cud-jeden-lyk-i-jak-reka-odjal/ar/c14p2-26671387"
+        },
+        "cytat": "Napar lub odwar z owoców jarzębiny można także stosować do pielęgnacji twarzy, szczególnie do cery suchej, z przebarwieniami i plamami. Rozjaśnia, nawadnia i uelastycznia skórę. Sprawdzi się także do okładów na oczy, ponieważ zmniejsza work"
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-20",
+    "pola": {
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Niewielkie drzewo lub krzew o gładkiej, szarej korze i charakterystycznych, pierzastych liściach. Jarząb jest gatunkiem pionierskim, niezwykle odpornym na trudne warunki klimatyczne, rosnącym od nizin aż po piętro kosodrzewiny w górach. Jego jaskrawoczerwone owoce są nie tylko ozdobą, ale i cennym surowcem zielarskim, który ze względu na zawartość kwasu parasorbowego wymaga specjalnej obróbki przed spożyciem.",
+        "tresc": [
+          {
+            "tekst": "Niewielkie drzewo lub krzew o gładkiej, szarej korze i charakterystycznych, pierzastych liściach.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jarząb jest gatunkiem pionierskim, niezwykle odpornym na trudne warunki klimatyczne, rosnącym od nizin aż po piętro kosodrzewiny w górach.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jego jaskrawoczerwone owoce są nie tylko ozdobą, ale i cennym surowcem zielarskim, który ze względu na zawartość kwasu parasorbowego wymaga specjalnej obróbki przed spożyciem.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jarząb pospolity, jarzębina, jarząb zwyczajny (Sorbus aucuparia L.) – gatunek rośliny wieloletniej z rodziny różowatych.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2899"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "689b75c105092271"
+      },
+      "czesci_rosliny.owoce.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Fructus Sorbi: Substancje czynne",
+        "typ": "lista",
+        "oryginal": [
+          "Witamina C (porównywalnie do cytrusów)",
+          "Karotenoidy (prowitamina A)",
+          "Sorbitol (naturalny słodzik bezpieczny dla diabetyków)",
+          "Kwasy organiczne (jabłkowy, winowy)",
+          "Garbniki",
+          "Pektyny"
+        ],
+        "tresc": [
+          {
+            "tekst": "Witamina C (porównywalnie do cytrusów)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Karotenoidy (prowitamina A)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Sorbitol (naturalny słodzik bezpieczny dla diabetyków)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwasy organiczne (jabłkowy, winowy)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Garbniki",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Pektyny",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jej owoce są aromatyczne, ale też gorzkie. Zawierają szkodliwy kwas parasorbowy (który po wysuszeniu, przegotowaniu lub zamrożeniu owoców zanika), a także alkohol cukrowy zwany sorbitolem oraz garbniki, ale także mnóstwo witaminy C (więcej niż cytryna!) i beta-karotenu.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s2908"
+            ]
+          },
+          {
+            "tekst": "Zawierają dwukrotnie więcej karotenu niż marchew oraz alkaloid sorbinę, który nadaje im gorzki smak.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2901"
+            ]
+          },
+          {
+            "tekst": "Surowiec zielarski: owoce. Mają dużo witaminy C, E, P, K, B3, nieco witaminy A, cukier sorbozę, garbniki i pektyny.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2902"
+            ]
+          },
+          {
+            "tekst": "Jak informuje znany fitoterapeuta dr Henryk Różański owoce jarzębiny bogate są w flawonoidy (kwercetyna, kaempferol), fitosterole, związki fenolowe, lignany. Zawierają też alkohole cukrowe (sorbitol), sorbozę, metylopentozany, karotenoidy (alfa- i beta-karoten, kryptoksantyna), cukry (sacharoza, glukoza), garbniki, pektyny, a także kwasy organiczne: chinowy, chlorogenowy, izochlorogenowy, neochlorogenowy, kawowy i cynamonowy.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2909"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "8c0ff485636dc870"
+      },
+      "czesci_rosliny.owoce.czas_zbioru": {
+        "tytul": "Surowce i zbiory - Fructus Sorbi: Zbiór",
+        "typ": "tekst",
+        "oryginal": "Wrzesień - Październik (najlepiej po przymrozkach).",
+        "tresc": [
+          {
+            "tekst": "Wrzesień - Październik (najlepiej po przymrozkach).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Zbiór i suszenie: owoce zrywa się gdy już są czerwone, ale przed przymrozkami i suszy się rozłożone cienką warstwą (najlepiej w temp. ok. 40 °C)",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2900"
+            ]
+          },
+          {
+            "tekst": "Wystarczy przemrozić umyte i osuszone owoce w zamrażarce przez ok. 24 godziny. Zawierają one wtedy mniej witaminy C, ale mają słodszy i lepszy smak. Następnie należy je wysuszyć w uchylonym piekarniku rozgrzanym do temp. 50-80 st. C.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2910"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "a724cd6fcb478604"
+      },
+      "czesci_rosliny.owoce.wlasciwości": {
+        "tytul": "Surowce i zbiory - Fructus Sorbi: Działanie",
+        "typ": "tekst",
+        "oryginal": "Moczopędne, przeciwzapalne w obrębie jelit i dróg moczowych, lekko przeczyszczające, witaminizujące, przeciwmiażdżycowe.",
+        "tresc": [
+          {
+            "tekst": "Moczopędne, przeciwzapalne w obrębie jelit i dróg moczowych, lekko przeczyszczające, witaminizujące, przeciwmiażdżycowe.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Działanie: słabe moczopędne oraz korzystnie wpływające na błony śluzowe i pracę układu pokarmowego. Jest stosowana przy nieżytach jelit, przewlekłych biegunkach, różnych schorzeniach wątroby i pęcherzyka żółciowego.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2903"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "214f28f5c3cd91df"
+      },
+      "zastosowanie.kosmetyczne": {
+        "tytul": "Praktyczne zastosowanie - Kosmetyka",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Napar lub odwar z owoców jarzębiny można także stosować do pielęgnacji twarzy, szczególnie do cery suchej, z przebarwieniami i plamami. Rozjaśnia, nawadnia i uelastycznia skórę. Sprawdzi się także do okładów na oczy, ponieważ zmniejsza worki i cienie pod oczami.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s2911"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "529de9d9e45cb7a9"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "W tradycji celtyckiej jarzębina była drzewem życia i ochrony – sadzono ją przy domach, aby odstraszała złe duchy i czarownice.",
+          "Owoce jarzębiny zawierają kwas sorbowy, który jest jednym z najpopularniejszych na świecie naturalnych konserwantów żywności (E200).",
+          "Gorycz owoców znika po przemrożeniu, ponieważ skrobia przekształca się w cukry, a kwas parasorbowy ulega rozpadowi.",
+          "Jarzębina potrafi przetrwać w górach na wysokościach, gdzie inne drzewa liściaste już nie dają sobie rady."
+        ],
+        "tresc": [
+          {
+            "tekst": "W tradycji celtyckiej jarzębina była drzewem życia i ochrony – sadzono ją przy domach, aby odstraszała złe duchy i czarownice.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Owoce jarzębiny zawierają kwas sorbowy, który jest jednym z najpopularniejszych na świecie naturalnych konserwantów żywności (E200).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Gorycz owoców znika po przemrożeniu, ponieważ skrobia przekształca się w cukry, a kwas parasorbowy ulega rozpadowi.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Jarzębina potrafi przetrwać w górach na wysokościach, gdzie inne drzewa liściaste już nie dają sobie rady.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Łacińska nazwa rośliny w dosłownym tłumaczeniu oznacza jarzębina łowiąca ptaki.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2906"
+            ]
+          },
+          {
+            "tekst": "Jarzębina została introdukowana do Ameryki Północnej jako drzewo ozdobne.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2907"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "58703b1634e6de62"
+      },
+      "czesci_rosliny.owoce.ostrzezenia": {
+        "tytul": "Surowce i zbiory - Fructus Sorbi: Ostrzeżenia",
+        "typ": "tekst",
+        "oryginal": "Zawsze poddawać obróbce termicznej lub przemrożeniu – to neutralizuje toksyczny kwas parasorbowy.",
+        "tresc": [
+          {
+            "tekst": "Zawsze poddawać obróbce termicznej lub przemrożeniu – to neutralizuje toksyczny kwas parasorbowy.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Surowe owoce są niejadalne, nie tylko z powodu gorzkiego smaku, ale również zawartości trującego składnika (kwas parasorbowy).",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2904"
+            ]
+          },
+          {
+            "tekst": "Natomiast po przemrożeniu, lub po zanurzeniu na chwilę we wrzątku (tzw. blanszowanie) tracą trujące właściwości i gorzki smak.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2905"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "68942b45f73475b7"
+      }
+    },
+    "uzyte_fakty": [
+      "s2899",
+      "s2900",
+      "s2901",
+      "s2902",
+      "s2903",
+      "s2904",
+      "s2905",
+      "s2906",
+      "s2907",
+      "s2908",
+      "s2909",
+      "s2910",
+      "s2911"
     ]
   }
 }

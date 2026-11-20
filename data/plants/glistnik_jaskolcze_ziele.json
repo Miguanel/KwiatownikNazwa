@@ -118,7 +118,7 @@
     "Nasiona": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Chelidonium_majus_kz05.jpg/960px-Chelidonium_majus_kz05.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-11-06",
+    "zaktualizowano": "2026-11-20",
     "w_url": true,
     "zdjecia": [
       {
@@ -167,5 +167,401 @@
         "zrodlo": "Wikimedia Commons"
       }
     ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-11-20",
+    "uporzadkowano": "2026-11-20",
+    "uklad": "deterministyczny",
+    "zrodla": [
+      {
+        "nazwa": "Wikipedia (ru): Чистотел большой",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D1%82%D0%BE%D1%82%D0%B5%D0%BB_%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B9",
+        "jezyk": "ru",
+        "typ": "wikipedia",
+        "nr": 1
+      },
+      {
+        "nazwa": "Wikipedia (uk): Чистотіл звичайний",
+        "url": "https://uk.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D1%82%D0%BE%D1%82%D1%96%D0%BB_%D0%B7%D0%B2%D0%B8%D1%87%D0%B0%D0%B9%D0%BD%D0%B8%D0%B9",
+        "jezyk": "uk",
+        "typ": "wikipedia",
+        "nr": 2
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Protopin zmniejsza reaktywność autonomicznego układu nerwowego i działa tonizująco na mięśnie gładkie macicy.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3316"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "barwienie",
+        "tytul": "Barwienie i rzemiosło",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Uważa się, że glistnik może być źródłem barwnika luminescencyjnego dla obiektów biologicznych. Ekstrakt z tej rośliny przewyższa bowiem barwniki takie jak primulina i erytrozyna, które znajdują zastosowanie w przemyśle mikrobiologicznym.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3315"
+            ]
+          },
+          {
+            "tekst": "Sok z glistnika stosuje się w technice do trawienia i czernienia metali.",
+            "czesc": "sok",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s3312"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "magia",
+        "tytul": "Magia i zabobony",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W Grecji glistnik zwany jest Chelidonium majus, od słowa „chelidon” — „jaskółka”. Istniało przekonanie, że jaskółki zbierają sok z glistnika i niosą go do dzieci urodzonych niewidomych, aby przywrócić im wzrok.",
+            "czesc": "sok",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s3310"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "nazwy_ludowe",
+        "tytul": "Nazwy ludowe",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Nazwy lokalne — bordun, gladuśnik, prozornyk, brodawnik itp. [źródło?]",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s3309"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "ciekawostki",
+        "tytul": "Ciekawostki",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Dzięki tej metodzie suszenia w ziołach zachowuje się do 96% alkaloidów, 52% witaminy C i do 66% prowitaminy A.",
+            "czesc": "ziele",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s3311"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "sok": [
+        "s3312",
+        "s3310"
+      ],
+      "ziele": [
+        "s3311"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s3309",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "Nazwy lokalne — bordun, gladuśnik, prozornyk, brodawnik itp. [źródło?]",
+        "jezyk": "uk",
+        "zrodlo": {
+          "nazwa": "Wikipedia (uk): Чистотіл звичайний",
+          "url": "https://uk.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D1%82%D0%BE%D1%82%D1%96%D0%BB_%D0%B7%D0%B2%D0%B8%D1%87%D0%B0%D0%B9%D0%BD%D0%B8%D0%B9"
+        },
+        "cytat": "Місцеві назви — бордун, гладушник, прозорник, бородавник, тощо.[джерело?]"
+      },
+      {
+        "id": "s3310",
+        "sekcja": "magia",
+        "czesc": "sok",
+        "tekst": "W Grecji glistnik zwany jest Chelidonium majus, od słowa „chelidon” — „jaskółka”. Istniało przekonanie, że jaskółki zbierają sok z glistnika i niosą go do dzieci urodzonych niewidomych, aby przywrócić im wzrok.",
+        "jezyk": "uk",
+        "zrodlo": {
+          "nazwa": "Wikipedia (uk): Чистотіл звичайний",
+          "url": "https://uk.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D1%82%D0%BE%D1%82%D1%96%D0%BB_%D0%B7%D0%B2%D0%B8%D1%87%D0%B0%D0%B9%D0%BD%D0%B8%D0%B9"
+        },
+        "cytat": "Чистотіл в Греції одержав назву Хелідоніум Майус (Chelidonium majus), від слова «хелідон» (chelidon) — «ластівка». Існувало повір'я, ніби ластівки збирають сік чистотілу і летять з ним до сліпонароджених дітей для повернення їм зору."
+      },
+      {
+        "id": "s3311",
+        "sekcja": "ciekawostki",
+        "czesc": "ziele",
+        "tekst": "Dzięki tej metodzie suszenia w ziołach zachowuje się do 96% alkaloidów, 52% witaminy C i do 66% prowitaminy A.",
+        "jezyk": "uk",
+        "zrodlo": {
+          "nazwa": "Wikipedia (uk): Чистотіл звичайний",
+          "url": "https://uk.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D1%82%D0%BE%D1%82%D1%96%D0%BB_%D0%B7%D0%B2%D0%B8%D1%87%D0%B0%D0%B9%D0%BD%D0%B8%D0%B9"
+        },
+        "cytat": "При такому способі сушіння у траві зберігається до 96% алкалоїдів, 52% вітаміну С і до 66% провітаміну А."
+      },
+      {
+        "id": "s3312",
+        "sekcja": "barwienie",
+        "czesc": "sok",
+        "tekst": "Sok z glistnika stosuje się w technice do trawienia i czernienia metali.",
+        "jezyk": "uk",
+        "zrodlo": {
+          "nazwa": "Wikipedia (uk): Чистотіл звичайний",
+          "url": "https://uk.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D1%82%D0%BE%D1%82%D1%96%D0%BB_%D0%B7%D0%B2%D0%B8%D1%87%D0%B0%D0%B9%D0%BD%D0%B8%D0%B9"
+        },
+        "cytat": "Сік чистотілу використовується у техніці для травлення і воронування металів."
+      },
+      {
+        "id": "s3315",
+        "sekcja": "barwienie",
+        "czesc": null,
+        "tekst": "Uważa się, że glistnik może być źródłem barwnika luminescencyjnego dla obiektów biologicznych. Ekstrakt z tej rośliny przewyższa bowiem barwniki takie jak primulina i erytrozyna, które znajdują zastosowanie w przemyśle mikrobiologicznym.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ru): Чистотел большой",
+          "url": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D1%82%D0%BE%D1%82%D0%B5%D0%BB_%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B9"
+        },
+        "cytat": "Считают, что чистотел может быть источником люминесцентного красителя биологических объектов. Так, экстракт из него превосходит красители примулин и эритрозин, которые применяются в микробиологической промышленности."
+      },
+      {
+        "id": "s3316",
+        "sekcja": "sklad",
+        "czesc": null,
+        "tekst": "Protopin zmniejsza reaktywność autonomicznego układu nerwowego i działa tonizująco na mięśnie gładkie macicy.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ru): Чистотел большой",
+          "url": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D1%82%D0%BE%D1%82%D0%B5%D0%BB_%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B9"
+        },
+        "cytat": "Протопин уменьшает реактивность вегетативной нервной системы, тонизирует гладкую мускулатуру матки."
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-20",
+    "pola": {
+      "czesci_rosliny.ziele.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Herba Chelidonii: Substancje czynne",
+        "typ": "lista",
+        "oryginal": [
+          "Alkaloidy izochinolinowe (chelidonina, chelerytryna, sangwinaryna, koptyzyna)",
+          "Kwasy organiczne (chelidonowy)",
+          "Flawonoidy",
+          "Saponiny",
+          "Enzymy proteolityczne (rozpuszczające białka wirusowe w kurzajkach)"
+        ],
+        "tresc": [
+          {
+            "tekst": "Alkaloidy izochinolinowe (chelidonina, chelerytryna, sangwinaryna, koptyzyna)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwasy organiczne (chelidonowy)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Flawonoidy",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Saponiny",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Enzymy proteolityczne (rozpuszczające białka wirusowe w kurzajkach)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Protopin zmniejsza reaktywność autonomicznego układu nerwowego i działa tonizująco na mięśnie gładkie macicy.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3316"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "91f1f6b0dc7ce117"
+      },
+      "zastosowanie.rzemieslnicze": {
+        "tytul": "Praktyczne zastosowanie - Rzemiosło",
+        "typ": "tekst",
+        "oryginal": "Pomarańczowy sok był dawniej używany jako barwnik oraz składnik preparatów do trawienia metali.",
+        "tresc": [
+          {
+            "tekst": "Pomarańczowy sok był dawniej używany jako barwnik oraz składnik preparatów do trawienia metali.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Uważa się, że glistnik może być źródłem barwnika luminescencyjnego dla obiektów biologicznych. Ekstrakt z tej rośliny przewyższa bowiem barwniki takie jak primulina i erytrozyna, które znajdują zastosowanie w przemyśle mikrobiologicznym.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3315"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "c41c906388263100"
+      },
+      "czesci_rosliny.sok_mleczny.wlasciwości": {
+        "tytul": "Surowce i zbiory - Succus Chelidonii: Działanie",
+        "typ": "tekst",
+        "oryginal": "Świeży sok z łodygi stosowany wyłącznie zewnętrznie na kurzajki, brodawki i kłykciny.",
+        "tresc": [
+          {
+            "tekst": "Świeży sok z łodygi stosowany wyłącznie zewnętrznie na kurzajki, brodawki i kłykciny.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Sok z glistnika stosuje się w technice do trawienia i czernienia metali.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s3312"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "6fb349e33e6283a0"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "Starożytni Grecy wierzyli, że jaskółki przemywają oczy piskląt sokiem z glistnika, aby przywrócić im wzrok.",
+          "Alkaloidy glistnika mają strukturę zbliżoną do morfiny, co tłumaczy ich silne działanie przeciwbólowe i uspokajające.",
+          "Nasiona glistnika posiadają elajosomy (wyrostki tłuszczowe), które przyciągają mrówki – to one roznoszą roślinę po całym ogrodzie.",
+          "W medycynie ludowej nazywany 'niebieskim olejem' (mimo pomarańczowego koloru soku), co odnosiło się do jego 'niebiańskiej' skuteczności."
+        ],
+        "tresc": [
+          {
+            "tekst": "Starożytni Grecy wierzyli, że jaskółki przemywają oczy piskląt sokiem z glistnika, aby przywrócić im wzrok.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Alkaloidy glistnika mają strukturę zbliżoną do morfiny, co tłumaczy ich silne działanie przeciwbólowe i uspokajające.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Nasiona glistnika posiadają elajosomy (wyrostki tłuszczowe), które przyciągają mrówki – to one roznoszą roślinę po całym ogrodzie.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W medycynie ludowej nazywany 'niebieskim olejem' (mimo pomarańczowego koloru soku), co odnosiło się do jego 'niebiańskiej' skuteczności.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Nazwy lokalne — bordun, gladuśnik, prozornyk, brodawnik itp. [źródło?]",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s3309"
+            ]
+          },
+          {
+            "tekst": "Dzięki tej metodzie suszenia w ziołach zachowuje się do 96% alkaloidów, 52% witaminy C i do 66% prowitaminy A.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s3311"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "612df18b45584c07"
+      }
+    },
+    "uzyte_fakty": [
+      "s3309",
+      "s3311",
+      "s3312",
+      "s3315",
+      "s3316"
+    ]
+  },
+  "rozmieszczenie": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-20",
+    "jak": "llm:groq/openai/gpt-oss-120b",
+    "wejscie": "48ad76b752e6dfeb",
+    "wstawki": [
+      {
+        "miejsce": "tajemna/kultura",
+        "rozdzial": "Wiedza tajemna",
+        "tytul": "Wierzenia i legendy",
+        "ikona": "ra-crystal-ball",
+        "nowy": true,
+        "punkty": [
+          {
+            "tekst": "W Grecji glistnik zwany jest Chelidonium majus, od słowa „chelidon” — „jaskółka”. Istniało przekonanie, że jaskółki zbierają sok z glistnika i niosą go do dzieci urodzonych niewidomych, aby przywrócić im wzrok.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s3310"
+            ],
+            "sekcja": "magia",
+            "czesc": "sok"
+          }
+        ]
+      }
+    ],
+    "duplikaty": []
   }
 }

@@ -12,8 +12,8 @@
   "_siedziba_nowa": true,
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-11-03",
-    "uporzadkowano": "2026-11-03",
+    "zaktualizowano": "2026-11-20",
+    "uporzadkowano": "2026-11-20",
     "uklad": "deterministyczny",
     "zrodla": [
       {
@@ -38,32 +38,46 @@
         "nr": 3
       },
       {
+        "nazwa": "Wikipedia (fr): Alliaire officinale",
+        "url": "https://fr.wikipedia.org/wiki/Alliaire_officinale",
+        "jezyk": "fr",
+        "typ": "wikipedia",
+        "nr": 4
+      },
+      {
+        "nazwa": "Wikipedia (ru): Чесночница черешчатая",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D1%81%D0%BD%D0%BE%D1%87%D0%BD%D0%B8%D1%86%D0%B0_%D1%87%D0%B5%D1%80%D0%B5%D1%88%D1%87%D0%B0%D1%82%D0%B0%D1%8F",
+        "jezyk": "ru",
+        "typ": "wikipedia",
+        "nr": 5
+      },
+      {
         "nazwa": "www.danielharper.org",
         "url": "https://www.danielharper.org/yauu/2023/08/natural-dyes-from-invasives/",
         "jezyk": "en-US",
         "typ": "strona",
-        "nr": 4
+        "nr": 6
       },
       {
         "nazwa": "www.kostbarenatur.net",
         "url": "https://www.kostbarenatur.net/anwendungen-und-inhaltsstoffe/knoblauchsrauke/",
         "jezyk": "de",
         "typ": "strona",
-        "nr": 5
+        "nr": 7
       },
       {
         "nazwa": "www.plantura.garden",
         "url": "https://www.plantura.garden/kraeuter/knoblauchsrauke/knoblauchsrauke-pflanzenportrait",
         "jezyk": "de",
         "typ": "strona",
-        "nr": 6
+        "nr": 8
       },
       {
         "nazwa": "www.zelena-planeta.ua",
         "url": "https://www.zelena-planeta.ua/kinskij-chasnik-chereshkovij",
         "jezyk": "uk",
         "typ": "strona",
-        "nr": 7
+        "nr": 9
       }
     ],
     "sekcje": [
@@ -212,6 +226,16 @@
             "fakty": [
               "s350"
             ]
+          },
+          {
+            "tekst": "Owoce — nagie, czworokątne strąki, wystające ukośnie do góry, o długości 2–8 cm i średnicy około 2 mm, z nasionami ułożonymi w jednym rzędzie.",
+            "czesc": "owoce",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s3301"
+            ]
           }
         ]
       },
@@ -333,7 +357,7 @@
             "tekst": "Korzeń zbiera się jednak dopiero w pierwszym roku wzrostu. Później (w drugim roku) korzeń staje się zdrewniały i nie nadaje się do spożycia.",
             "czesc": "korzeń",
             "zrodla": [
-              5
+              7
             ],
             "fakty": [
               "s551"
@@ -368,6 +392,16 @@
             ]
           },
           {
+            "tekst": "Nasiona zawierają 30% oleju tłustego, ale nie wykorzystuje się go.",
+            "czesc": "nasiona",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s3298"
+            ]
+          },
+          {
             "tekst": "W części nadziemnej rośliny zawarty jest olejek gorczyczny o bardzo ostrym smaku, flawonoid alliarozyd, glukozynolany (m.in. synigryna), sinapina, witamina C i A.",
             "czesc": "ziele",
             "zrodla": [
@@ -375,6 +409,16 @@
             ],
             "fakty": [
               "s342"
+            ]
+          },
+          {
+            "tekst": "Trawa i korzenie zawierają glikozyd syningrynę (CA10HA16OA9NSA2K), z której powstaje 0,033–0,093 % ostrego olejku allilowego o zapachu czosnku.",
+            "czesc": "ziele",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s3302"
             ]
           }
         ]
@@ -426,10 +470,30 @@
             ]
           },
           {
-            "tekst": "Tradycyjnie czosnek niedźwiedzi stosuje się w przypadku kaszlu, zapalenia oskrzeli, dolegliwości trawiennych oraz w celu gojenia ran. Zawarte w nim glikozydy oleju gorczycznego – przede wszystkim sinigrina – wykazują łagodne działanie przeciwbakteryjne. Saponiny wspomagają rozrzedzanie śluzu w drogach oddechowych",
+            "tekst": "Roślina ta jest tradycyjnie stosowana ze względu na swoje właściwości moczopędne, a także w leczeniu reumatyzmu, astmy i dny moczanowej. Świeżej roślinie przypisuje się również właściwości antyseptyczne, dlatego stosuje się ją w postaci okładów.",
+            "czesc": null,
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s3304"
+            ]
+          },
+          {
+            "tekst": "Roślina miododajna. Kwitnie w kwietniu i maju przez 30 dni.",
             "czesc": null,
             "zrodla": [
               5
+            ],
+            "fakty": [
+              "s3300"
+            ]
+          },
+          {
+            "tekst": "Tradycyjnie czosnek niedźwiedzi stosuje się w przypadku kaszlu, zapalenia oskrzeli, dolegliwości trawiennych oraz w celu gojenia ran. Zawarte w nim glikozydy oleju gorczycznego – przede wszystkim sinigrina – wykazują łagodne działanie przeciwbakteryjne. Saponiny wspomagają rozrzedzanie śluzu w drogach oddechowych",
+            "czesc": null,
+            "zrodla": [
+              7
             ],
             "fakty": [
               "s547"
@@ -454,6 +518,26 @@
             "fakty": [
               "s519"
             ]
+          },
+          {
+            "tekst": "Rozgniecione nasiona były stosowane w medycynie ludowej jako miejscowy środek drażniący (zamiast plastrów musztardowych); roślinę tę stosowano również w leczeniu czyraków i oparzeń, w przypadku astmy oskrzelowej, szkorbutu, biegunki oraz jako środek przeciwrobaczy.",
+            "czesc": "nasiona",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s3299"
+            ]
+          },
+          {
+            "tekst": "W medycynie wojennej ubiegłego wieku stosowano ją w postaci roztworu alkoholowego do przemywania, a następnie w postaci okładów w celu dezynfekcji i przyspieszenia gojenia się ropnych owrzodzeń.",
+            "czesc": "sok",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s3305"
+            ]
           }
         ]
       },
@@ -467,7 +551,7 @@
             "tekst": "Czosnek dziki (Alliaria petiolata) — podobno z całych roślin można uzyskać żółty barwnik lub bladozielony po zastosowaniu zaprawy żelazowej",
             "czesc": null,
             "zrodla": [
-              4
+              6
             ],
             "fakty": [
               "s544"
@@ -485,7 +569,7 @@
             "tekst": "Liście stosowano zewnętrznie w leczeniu oparzeń, ran ropnych i owrzodzeń — mają one działanie antyseptyczne.",
             "czesc": "liście",
             "zrodla": [
-              7
+              9
             ],
             "fakty": [
               "s2395"
@@ -553,7 +637,7 @@
             "tekst": "Odkrycia stanowisk kuchennych sprzed 5000 lat wykazały, że czosnek niedźwiedzi był już wówczas stosowany jako przyprawa, a prawdopodobnie także jako zioło lecznicze. Jeszcze w czasach nowożytnych był cenioną rośliną przyprawową, zwłaszcza wśród ubogiej ludności",
             "czesc": null,
             "zrodla": [
-              5
+              7
             ],
             "fakty": [
               "s545"
@@ -578,6 +662,16 @@
             "fakty": [
               "s2392"
             ]
+          },
+          {
+            "tekst": "Nasiona tej rośliny w postaci fitolitów zidentyfikowano w osadach pokarmowych na prehistorycznej ceramice. Jest to pierwszy bezpośredni dowód na stosowanie przyprawy w kuchni europejskiej w okresie od 6 100 do 5 750 lat przed teraźniejszością (cal BP).",
+            "czesc": "nasiona",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s3303"
+            ]
           }
         ]
       },
@@ -591,7 +685,7 @@
             "tekst": "W medycynie ludowej uważano ją za wiosenne zioło oczyszczające: miała „oczyszczać krew” – czyli działać moczopędnie – oraz wzmacniać organizm po zimie. Rolnicy podawali ją również zwierzętom hodowlanym, aby uodpornić je na choroby.",
             "czesc": null,
             "zrodla": [
-              5
+              7
             ],
             "fakty": [
               "s546"
@@ -674,10 +768,30 @@
             ]
           },
           {
-            "tekst": "W większych ilościach czosnek niedźwiedzi, ze względu na zawarte w nim olejki gorczyczne, może powodować podrażnienia żołądka u osób wrażliwych",
+            "tekst": "Zjadają ją kozy i bydło. Konie, owce i świnie jej nie jedzą.",
             "czesc": null,
             "zrodla": [
               5
+            ],
+            "fakty": [
+              "s3296"
+            ]
+          },
+          {
+            "tekst": "Z powodu obecności oleju allilowego w trawie, którą jedzą krowy, mleko nabiera czosnkowego zapachu, czerwono-żółtego koloru oraz ostrego, gryzącego posmaku.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s3297"
+            ]
+          },
+          {
+            "tekst": "W większych ilościach czosnek niedźwiedzi, ze względu na zawarte w nim olejki gorczyczne, może powodować podrażnienia żołądka u osób wrażliwych",
+            "czesc": null,
+            "zrodla": [
+              7
             ],
             "fakty": [
               "s548"
@@ -725,7 +839,7 @@
             "tekst": "Od marca należy utrzymywać glebę stale wilgotną. Podczas długich okresów suszy rośliny należy podlewać.",
             "czesc": null,
             "zrodla": [
-              6
+              8
             ],
             "fakty": [
               "s659"
@@ -790,10 +904,20 @@
             ]
           },
           {
+            "tekst": "Jego korzenie mają smak zbliżony do rzodkiewki i również nadają się do spożycia.",
+            "czesc": "korzeń",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s3307"
+            ]
+          },
+          {
             "tekst": "Z jej korzeni wydziela się substancja, dzięki której odstrasza inne rośliny.",
             "czesc": "korzeń",
             "zrodla": [
-              5
+              7
             ],
             "fakty": [
               "s550"
@@ -850,6 +974,7 @@
         "s551",
         "s510",
         "s646",
+        "s3307",
         "s550"
       ],
       "kwiaty": [
@@ -867,20 +992,28 @@
       "owoce": [
         "s1880",
         "s350",
+        "s3301",
         "s1875"
       ],
       "nasiona": [
         "s511",
+        "s3298",
         "s519",
+        "s3299",
         "s2392",
+        "s3303",
         "s355",
         "s1885"
       ],
       "ziele": [
         "s342",
+        "s3302",
         "s344",
         "s644",
         "s354"
+      ],
+      "sok": [
+        "s3305"
       ]
     },
     "fakty": [
@@ -1687,12 +1820,144 @@
           "url": "https://www.zelena-planeta.ua/kinskij-chasnik-chereshkovij"
         },
         "cytat": "Зовнішньо листя використовували для лікування опіків, гнійних ран, виразок — воно має антисептичну дію."
+      },
+      {
+        "id": "s3296",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Zjadają ją kozy i bydło. Konie, owce i świnie jej nie jedzą.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ru): Чесночница черешчатая",
+          "url": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D1%81%D0%BD%D0%BE%D1%87%D0%BD%D0%B8%D1%86%D0%B0_%D1%87%D0%B5%D1%80%D0%B5%D1%88%D1%87%D0%B0%D1%82%D0%B0%D1%8F"
+        },
+        "cytat": "Поедается козами и крупным рогатым скотом. Лошади, овцы и свиньи не едят."
+      },
+      {
+        "id": "s3297",
+        "sekcja": "bezpieczenstwo",
+        "czesc": null,
+        "tekst": "Z powodu obecności oleju allilowego w trawie, którą jedzą krowy, mleko nabiera czosnkowego zapachu, czerwono-żółtego koloru oraz ostrego, gryzącego posmaku.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ru): Чесночница черешчатая",
+          "url": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D1%81%D0%BD%D0%BE%D1%87%D0%BD%D0%B8%D1%86%D0%B0_%D1%87%D0%B5%D1%80%D0%B5%D1%88%D1%87%D0%B0%D1%82%D0%B0%D1%8F"
+        },
+        "cytat": "Из-за присутствия аллилового масла при поедании травы молоко коров приобретает чесночный запах, красновато-жёлтый цвет и острый едкий привкус."
+      },
+      {
+        "id": "s3298",
+        "sekcja": "sklad",
+        "czesc": "nasiona",
+        "tekst": "Nasiona zawierają 30% oleju tłustego, ale nie wykorzystuje się go.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ru): Чесночница черешчатая",
+          "url": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D1%81%D0%BD%D0%BE%D1%87%D0%BD%D0%B8%D1%86%D0%B0_%D1%87%D0%B5%D1%80%D0%B5%D1%88%D1%87%D0%B0%D1%82%D0%B0%D1%8F"
+        },
+        "cytat": "В семенах 30 % жирного масла, но его не используют."
+      },
+      {
+        "id": "s3299",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "nasiona",
+        "tekst": "Rozgniecione nasiona były stosowane w medycynie ludowej jako miejscowy środek drażniący (zamiast plastrów musztardowych); roślinę tę stosowano również w leczeniu czyraków i oparzeń, w przypadku astmy oskrzelowej, szkorbutu, biegunki oraz jako środek przeciwrobaczy.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ru): Чесночница черешчатая",
+          "url": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D1%81%D0%BD%D0%BE%D1%87%D0%BD%D0%B8%D1%86%D0%B0_%D1%87%D0%B5%D1%80%D0%B5%D1%88%D1%87%D0%B0%D1%82%D0%B0%D1%8F"
+        },
+        "cytat": "Истолчённые семена использовались в народной медицине как местное раздражающее средство (вместо горчичников), растение применялось также для лечения фурункулов и ожогов, при бронхиальной астме, цинге, диарее, как противоглистное средство."
+      },
+      {
+        "id": "s3300",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": null,
+        "tekst": "Roślina miododajna. Kwitnie w kwietniu i maju przez 30 dni.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ru): Чесночница черешчатая",
+          "url": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D1%81%D0%BD%D0%BE%D1%87%D0%BD%D0%B8%D1%86%D0%B0_%D1%87%D0%B5%D1%80%D0%B5%D1%88%D1%87%D0%B0%D1%82%D0%B0%D1%8F"
+        },
+        "cytat": "Медоносное растение. Цветёт в апреле — мае на протяжении 30 дней."
+      },
+      {
+        "id": "s3301",
+        "sekcja": "opis",
+        "czesc": "owoce",
+        "tekst": "Owoce — nagie, czworokątne strąki, wystające ukośnie do góry, o długości 2–8 cm i średnicy około 2 mm, z nasionami ułożonymi w jednym rzędzie.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ru): Чесночница черешчатая",
+          "url": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D1%81%D0%BD%D0%BE%D1%87%D0%BD%D0%B8%D1%86%D0%B0_%D1%87%D0%B5%D1%80%D0%B5%D1%88%D1%87%D0%B0%D1%82%D0%B0%D1%8F"
+        },
+        "cytat": "Плоды — голые четырёхгранные косо вверх торчащие стручки длиной 2—8 см, диаметром около 2 мм, с расположенными в один ряд семенами."
+      },
+      {
+        "id": "s3302",
+        "sekcja": "sklad",
+        "czesc": "ziele",
+        "tekst": "Trawa i korzenie zawierają glikozyd syningrynę (CA10HA16OA9NSA2K), z której powstaje 0,033–0,093 % ostrego olejku allilowego o zapachu czosnku.",
+        "jezyk": "ru",
+        "zrodlo": {
+          "nazwa": "Wikipedia (ru): Чесночница черешчатая",
+          "url": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D1%81%D0%BD%D0%BE%D1%87%D0%BD%D0%B8%D1%86%D0%B0_%D1%87%D0%B5%D1%80%D0%B5%D1%88%D1%87%D0%B0%D1%82%D0%B0%D1%8F"
+        },
+        "cytat": "Трава и корни содержат глюкозид синигрин (CA10HA16OA9NSA2K) из которого образуется 0,033—0,093 % острого аллилового масла, обладающего чесночным запахом."
+      },
+      {
+        "id": "s3303",
+        "sekcja": "historia",
+        "czesc": "nasiona",
+        "tekst": "Nasiona tej rośliny w postaci fitolitów zidentyfikowano w osadach pokarmowych na prehistorycznej ceramice. Jest to pierwszy bezpośredni dowód na stosowanie przyprawy w kuchni europejskiej w okresie od 6 100 do 5 750 lat przed teraźniejszością (cal BP).",
+        "jezyk": "fr",
+        "zrodlo": {
+          "nazwa": "Wikipedia (fr): Alliaire officinale",
+          "url": "https://fr.wikipedia.org/wiki/Alliaire_officinale"
+        },
+        "cytat": "Des graines de cette plante sous forme de phytolithes ont été identifiées dans des dépôts de nourriture sur des poteries préhistoriques. C'est la première preuve directe de l’utilisation d'une épice dans la cuisine en Europe entre 6 100 et "
+      },
+      {
+        "id": "s3304",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": null,
+        "tekst": "Roślina ta jest tradycyjnie stosowana ze względu na swoje właściwości moczopędne, a także w leczeniu reumatyzmu, astmy i dny moczanowej. Świeżej roślinie przypisuje się również właściwości antyseptyczne, dlatego stosuje się ją w postaci okładów.",
+        "jezyk": "fr",
+        "zrodlo": {
+          "nazwa": "Wikipedia (fr): Alliaire officinale",
+          "url": "https://fr.wikipedia.org/wiki/Alliaire_officinale"
+        },
+        "cytat": "Elle est traditionnellement utilisée pour ses vertus diurétiques, contre les rhumatismes, l'asthme et la goutte. On prête aussi des vertus antiseptiques à la plante fraîche, alors utilisée en cataplasme."
+      },
+      {
+        "id": "s3305",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "sok",
+        "tekst": "W medycynie wojennej ubiegłego wieku stosowano ją w postaci roztworu alkoholowego do przemywania, a następnie w postaci okładów w celu dezynfekcji i przyspieszenia gojenia się ropnych owrzodzeń.",
+        "jezyk": "fr",
+        "zrodlo": {
+          "nazwa": "Wikipedia (fr): Alliaire officinale",
+          "url": "https://fr.wikipedia.org/wiki/Alliaire_officinale"
+        },
+        "cytat": "En médecine de guerre au siècle passé, elle est utilisée sous forme d'alcoolature en lavage puis en compresse pour désinfecter et favoriser la cicatrisation d'ulcérations suppurées."
+      },
+      {
+        "id": "s3307",
+        "sekcja": "ciekawostki",
+        "czesc": "korzeń",
+        "tekst": "Jego korzenie mają smak zbliżony do rzodkiewki i również nadają się do spożycia.",
+        "jezyk": "fr",
+        "zrodlo": {
+          "nazwa": "Wikipedia (fr): Alliaire officinale",
+          "url": "https://fr.wikipedia.org/wiki/Alliaire_officinale"
+        },
+        "cytat": "Ses racines possèdent un goût proche du radis et sont également consommables."
       }
     ]
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-11-03",
+    "zaktualizowano": "2026-11-20",
     "pola": {
       "identyfikacja.cechy_kluczowe": {
         "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
@@ -1709,76 +1974,12 @@
             ]
           },
           {
-            "tekst": "Nasiona są silnie pomarszczone, szorstkie, brunatne do czarnych, długości od 2 do 4,5 mm i szerokości ok. 1 mm.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s1868"
-            ]
-          },
-          {
-            "tekst": "Czosnek niedźwiedzi to dwu- lub wieloletnia roślina zielna, osiągająca wysokość od 20 do 100 centymetrów. Posiada długi korzeń palowy. Łodyga jest lekko czworokątna",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s351"
-            ]
-          },
-          {
-            "tekst": "Na ubogich stanowiskach znaleziono jednak owocujące rośliny o wysokości zaledwie 5 centymetrów, co stanowi dobry przykład zakresu adaptacji tego gatunku.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s1879"
-            ]
-          },
-          {
             "tekst": "W pierwszym roku wzrostu rośliny tworzą kępy okrągłych, lekko pomarszczonych liści, które po zgnieceniu pachną czosnkiem.",
             "zrodla": [
               3
             ],
             "fakty": [
               "s514"
-            ]
-          },
-          {
-            "tekst": "Korzeń: Smukły, palowy, czasem z rozgałęzioną główną osią.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s505"
-            ]
-          },
-          {
-            "tekst": "Jest to dwuletnia roślina zielna, wyrosła z głęboko sięgającego, cienkiego, białawego korzenia palowego o zapachu przypominającym chrzan.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s515",
-              "s2391"
-            ]
-          },
-          {
-            "tekst": "Czosnek niedźwiedzi kwitnie od kwietnia do lipca. W końcowym, groniaste kwiatostanie znajduje się wiele kwiatów. Kwiaty obupłciowe mają, jak to jest typowe dla roślin z rodziny krzyżowych, cztery części i osiągają wielkość od 5 do 8 milimetrów. Cztery białe płatki korony",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s353"
-            ]
-          },
-          {
-            "tekst": "Te małe białe kwiaty mają dość nieprzyjemny zapach, który przyciąga komary i bzygowate, choć zazwyczaj zapylają się one samodzielnie.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s1874"
             ]
           },
           {
@@ -1816,16 +2017,93 @@
             "fakty": [
               "s350"
             ]
+          },
+          {
+            "tekst": "Owoce — nagie, czworokątne strąki, wystające ukośnie do góry, o długości 2–8 cm i średnicy około 2 mm, z nasionami ułożonymi w jednym rzędzie.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s3301"
+            ]
           }
         ],
         "model": "bez LLM",
-        "wejscie": "31b869ad99d61d64"
+        "wejscie": "d08d968bf7cf9942"
       },
-      "wymagania.gleba": {
-        "tytul": "Natura i siedlisko - Gleba",
+      "czesci_rosliny.nasiona.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Opis surowca",
         "typ": "tekst",
         "oryginal": null,
         "tresc": [
+          {
+            "tekst": "Nasiona są silnie pomarszczone, szorstkie, brunatne do czarnych, długości od 2 do 4,5 mm i szerokości ok. 1 mm.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1868"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "aed47458055b0b81"
+      },
+      "opis": {
+        "tytul": "Opis - Opis ogólny",
+        "typ": "tekst",
+        "oryginal": "Owoc to wydłużona, czterostronna torebka (silika) o długości 4–5,5 cm, w której znajdują się dwa rzędy czarnych nasion uwalnianych po rozpadzie torebki.",
+        "tresc": [
+          {
+            "tekst": "Owoc to wydłużona, czterostronna torebka (silika) o długości 4–5,5 cm, w której znajdują się dwa rzędy czarnych nasion uwalnianych po rozpadzie torebki.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Czosnek niedźwiedzi to dwu- lub wieloletnia roślina zielna, osiągająca wysokość od 20 do 100 centymetrów. Posiada długi korzeń palowy. Łodyga jest lekko czworokątna",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s351"
+            ]
+          },
+          {
+            "tekst": "W Polsce gatunek jest pospolity niemal na całym obszarze, rzadziej spotykany jest tylko w północno-wschodniej części kraju i w łódzkim.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s503"
+            ]
+          },
+          {
+            "tekst": "Występuje naturalnie w Europie, zachodniej i środkowej Azji, północno-zachodniej Afryce, Maroku, na Półwyspie Iberyjskim i na Wyspach Brytyjskich, na północy sięgając aż do północnej Skandynawii, a na wschodzie – do północnego Pakistanu i Xinjiangu w zachodnich Chinach.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s345"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "c7d62655d1b556ec"
+      },
+      "wymagania.stanowisko": {
+        "tytul": "Natura i siedlisko - Stanowisko",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Na ubogich stanowiskach znaleziono jednak owocujące rośliny o wysokości zaledwie 5 centymetrów, co stanowi dobry przykład zakresu adaptacji tego gatunku.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1879"
+            ]
+          },
           {
             "tekst": "W Polsce jest to gatunek pospolity. (...) zasiedla głównie lasy liściaste, w których występuje zwykle na glebach żyznych i próchnicznych.",
             "zrodla": [
@@ -1836,214 +2114,142 @@
             ]
           },
           {
+            "tekst": "W górach rośnie tylko w niższych położeniach; w Tatrach tylko w Dolinie Kościeliskiej, najwyżej sięga ok. 1100 m n.p.m. w Bieszczadach Zachodnich.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s1869"
+            ]
+          },
+          {
             "tekst": "Właściwie jest to gatunek roślin występujący w lasach liściastych, ale szczególnie dobrze rośnie w zaroślach i żywopłotach, a także przy murach i na poboczach dróg, w ogrodach oraz na terenach porośniętych roślinnością ruderalną... Podobnie jak te rośliny, preferuje świeże, bogate w azot gleby gliniaste.",
             "zrodla": [
               2
             ],
             "fakty": [
-              "s356"
+              "s356",
+              "s543"
             ]
           },
           {
-            "tekst": "Od marca należy utrzymywać glebę stale wilgotną. Podczas długich okresów suszy rośliny należy podlewać.",
+            "tekst": "Często występuje tam w sąsiedztwie pokrzyw. [...] Może również rosnąć epifitycznie w rozgałęzieniach drzew.",
             "zrodla": [
-              6
+              2
             ],
             "fakty": [
-              "s659"
+              "s1881"
+            ]
+          },
+          {
+            "tekst": "W Alpach Allgäu w Bawarii, w pobliżu Scheuen-Alpe, na południowy wschód od Balderschwang, wznosi się ona na wysokość do 1080 metrów nad poziomem morza. W kantonie Valais osiąga nawet 1800 metrów.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1882"
             ]
           }
         ],
         "model": "bez LLM",
-        "wejscie": "c65fafa67537a780"
+        "wejscie": "f9ef45ff1f380456"
       },
-      "czesci_rosliny.korzeń.czas_zbioru": {
-        "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Zbiór",
+      "czesci_rosliny.korzeń.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Opis surowca",
         "typ": "tekst",
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Korzeń zbiera się jednak dopiero w pierwszym roku wzrostu. Później (w drugim roku) korzeń staje się zdrewniały i nie nadaje się do spożycia.",
-            "zrodla": [
-              5
-            ],
-            "fakty": [
-              "s551"
-            ]
-          }
-        ],
-        "model": "bez LLM",
-        "wejscie": "213c2bd8865ca99e"
-      },
-      "czesci_rosliny.korzeń.skladniki_aktywne": {
-        "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Substancje czynne",
-        "typ": "lista",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "W korzeniach stwierdzono glukonasturcynę (glukozynolan)",
+            "tekst": "Korzeń: Smukły, palowy, czasem z rozgałęzioną główną osią.",
             "zrodla": [
               1
             ],
             "fakty": [
-              "s510"
+              "s505"
+            ]
+          },
+          {
+            "tekst": "Jest to dwuletnia roślina zielna, wyrosła z głęboko sięgającego, cienkiego, białawego korzenia palowego o zapachu przypominającym chrzan.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s515",
+              "s2391"
             ]
           }
         ],
         "model": "bez LLM",
-        "wejscie": "347d084575787160"
+        "wejscie": "196b2c0375612874"
       },
-      "czesci_rosliny.nasiona.skladniki_aktywne": {
-        "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Substancje czynne",
-        "typ": "lista",
+      "czesci_rosliny.kwiaty.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Kwiaty (nowa część z sieci): Opis surowca",
+        "typ": "tekst",
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "a w nasionach kardenolidy (glikozydy).",
+            "tekst": "Czosnek niedźwiedzi kwitnie od kwietnia do lipca. W końcowym, groniaste kwiatostanie znajduje się wiele kwiatów. Kwiaty obupłciowe mają, jak to jest typowe dla roślin z rodziny krzyżowych, cztery części i osiągają wielkość od 5 do 8 milimetrów. Cztery białe płatki korony",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s353"
+            ]
+          },
+          {
+            "tekst": "Te małe białe kwiaty mają dość nieprzyjemny zapach, który przyciąga komary i bzygowate, choć zazwyczaj zapylają się one samodzielnie.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s1874"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "0398b4aacf247209"
+      },
+      "zastosowanie.ogrodowe": {
+        "tytul": "Praktyczne zastosowanie - Ogród",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Kiełkowanie następuje wiosną, głównie w marcu i kwietniu, po opadach i w czasie ociepleń. Część siewek pojawia się także po intensywnych opadach w maju i na początku czerwca.",
             "zrodla": [
               1
             ],
             "fakty": [
-              "s511"
-            ]
-          }
-        ],
-        "model": "bez LLM",
-        "wejscie": "60c3a9b259288c12"
-      },
-      "czesci_rosliny.ziele.skladniki_aktywne": {
-        "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Substancje czynne",
-        "typ": "lista",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "W części nadziemnej rośliny zawarty jest olejek gorczyczny o bardzo ostrym smaku, flawonoid alliarozyd, glukozynolany (m.in. synigryna), sinapina, witamina C i A.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s342"
-            ]
-          }
-        ],
-        "model": "bez LLM",
-        "wejscie": "6d197a3d8efd4bec"
-      },
-      "zastosowanie.medyczne": {
-        "tytul": "Praktyczne zastosowanie - Medycyna",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "W medycynie tradycyjnej stosuje się go między innymi jako środek moczopędny.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s349",
-              "s1726"
+              "s1872"
             ]
           },
           {
-            "tekst": "Czosnek dziki był niegdyś stosowany w medycynie jako środek dezynfekujący, a czasami wykorzystywano go również do opatrywania ran.",
+            "tekst": "Rozmnażanie wegetatywne odbywa się za pomocą podziemnych rozłogów i odrostów korzeniowych. [...] Oprócz zapylenia krzyżowego czosnek niedźwiedzi może również zapylać się samodzielnie.",
             "zrodla": [
-              3
+              2
             ],
             "fakty": [
-              "s517",
-              "s1730"
-            ]
-          },
-          {
-            "tekst": "Tradycyjnie czosnek niedźwiedzi stosuje się w przypadku kaszlu, zapalenia oskrzeli, dolegliwości trawiennych oraz w celu gojenia ran. Zawarte w nim glikozydy oleju gorczycznego – przede wszystkim sinigrina – wykazują łagodne działanie przeciwbakteryjne. Saponiny wspomagają rozrzedzanie śluzu w drogach oddechowych",
-            "zrodla": [
-              5
-            ],
-            "fakty": [
-              "s547"
+              "s1884"
             ]
           }
         ],
         "model": "bez LLM",
-        "wejscie": "3052479654c4b3a9"
-      },
-      "czesci_rosliny.kwiaty.wlasciwości": {
-        "tytul": "Surowce i zbiory - Kwiaty (nowa część z sieci): Działanie",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "Obecnie posiekane liście wykorzystuje się do przyprawiania sałatek i sosów, takich jak pesto, a czasami dodaje się do nich również kwiaty i owoce.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s520"
-            ]
-          }
-        ],
-        "model": "bez LLM",
-        "wejscie": "d5c71bb27b386376"
-      },
-      "czesci_rosliny.nasiona.wlasciwości": {
-        "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Działanie",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "We Francji nasiona te są czasami wykorzystywane do przyprawiania potraw.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s519"
-            ]
-          }
-        ],
-        "model": "bez LLM",
-        "wejscie": "126f5e71c986e7ea"
-      },
-      "zastosowanie.rzemieslnicze": {
-        "tytul": "Praktyczne zastosowanie - Rzemiosło",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "Czosnek dziki (Alliaria petiolata) — podobno z całych roślin można uzyskać żółty barwnik lub bladozielony po zastosowaniu zaprawy żelazowej",
-            "zrodla": [
-              4
-            ],
-            "fakty": [
-              "s544"
-            ]
-          }
-        ],
-        "model": "bez LLM",
-        "wejscie": "6cb769102de040bb"
-      },
-      "zastosowanie.kosmetyczne": {
-        "tytul": "Praktyczne zastosowanie - Kosmetyka",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "Liście stosowano zewnętrznie w leczeniu oparzeń, ran ropnych i owrzodzeń — mają one działanie antyseptyczne.",
-            "zrodla": [
-              7
-            ],
-            "fakty": [
-              "s2395"
-            ]
-          }
-        ],
-        "model": "bez LLM",
-        "wejscie": "17c2315f0701018f"
+        "wejscie": "273ce020dbe574a0"
       },
       "ciekawostki": {
         "tytul": "Wiedza tajemna - Ciekawostki",
         "typ": "lista",
         "oryginal": null,
         "tresc": [
+          {
+            "tekst": "Czosnek niedźwiedzi jest w Ameryce Północnej i Południowej neofitem uznawanym za roślinę inwazyjną.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1883"
+            ]
+          },
           {
             "tekst": "Naukowa nazwa rodzajowa rodzajowa Alliaria utworzona została przez Leonharta Fuchsa ze względu na podobieństwo zapachu rośliny do czosnku (Alium).",
             "zrodla": [
@@ -2093,7 +2299,7 @@
           {
             "tekst": "Odkrycia stanowisk kuchennych sprzed 5000 lat wykazały, że czosnek niedźwiedzi był już wówczas stosowany jako przyprawa, a prawdopodobnie także jako zioło lecznicze. Jeszcze w czasach nowożytnych był cenioną rośliną przyprawową, zwłaszcza wśród ubogiej ludności",
             "zrodla": [
-              5
+              7
             ],
             "fakty": [
               "s545"
@@ -2118,9 +2324,18 @@
             ]
           },
           {
+            "tekst": "Nasiona tej rośliny w postaci fitolitów zidentyfikowano w osadach pokarmowych na prehistorycznej ceramice. Jest to pierwszy bezpośredni dowód na stosowanie przyprawy w kuchni europejskiej w okresie od 6 100 do 5 750 lat przed teraźniejszością (cal BP).",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s3303"
+            ]
+          },
+          {
             "tekst": "W medycynie ludowej uważano ją za wiosenne zioło oczyszczające: miała „oczyszczać krew” – czyli działać moczopędnie – oraz wzmacniać organizm po zimie. Rolnicy podawali ją również zwierzętom hodowlanym, aby uodpornić je na choroby.",
             "zrodla": [
-              5
+              7
             ],
             "fakty": [
               "s546"
@@ -2163,39 +2378,12 @@
             ]
           },
           {
-            "tekst": "Rozmnażanie wegetatywne odbywa się za pomocą podziemnych rozłogów i odrostów korzeniowych. [...] Oprócz zapylenia krzyżowego czosnek niedźwiedzi może również zapylać się samodzielnie.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s1884"
-            ]
-          },
-          {
-            "tekst": "Motyl dzienny Pararge aegeria chętnie żeruje na nektarze czosnku niedźwiedziego. Roślina ta służy również motylowi Anthocharis cardamines jako źródło nektaru, a jednocześnie – obok szczawiu łąkowego – stanowi pożywienie dla jego gąsienic. Jako roślinę pokarmową wykorzystuje ją również silnie zagrożony motyl mącznik",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s1886"
-            ]
-          },
-          {
             "tekst": "Obecnie stała się ona uporczywą rośliną inwazyjną na terenie północnych Stanów Zjednoczonych, zwłaszcza ze względu na to, że pojawia się wiosną wcześniej niż wiele gatunków rodzimych, często w podszyciu lasu.",
             "zrodla": [
               3
             ],
             "fakty": [
               "s1724"
-            ]
-          },
-          {
-            "tekst": "Z jej korzeni wydziela się substancja, dzięki której odstrasza inne rośliny.",
-            "zrodla": [
-              5
-            ],
-            "fakty": [
-              "s550"
             ]
           },
           {
@@ -2214,6 +2402,197 @@
             ],
             "fakty": [
               "s1885"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "05db8f5741c61efd"
+      },
+      "czesci_rosliny.korzeń.czas_zbioru": {
+        "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Zbiór",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Korzeń zbiera się jednak dopiero w pierwszym roku wzrostu. Później (w drugim roku) korzeń staje się zdrewniały i nie nadaje się do spożycia.",
+            "zrodla": [
+              7
+            ],
+            "fakty": [
+              "s551"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "213c2bd8865ca99e"
+      },
+      "czesci_rosliny.korzeń.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Korzeń (nowa część z sieci): Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "W korzeniach stwierdzono glukonasturcynę (glukozynolan)",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s510"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "347d084575787160"
+      },
+      "czesci_rosliny.nasiona.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "a w nasionach kardenolidy (glikozydy).",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s511"
+            ]
+          },
+          {
+            "tekst": "Nasiona zawierają 30% oleju tłustego, ale nie wykorzystuje się go.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s3298"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "0049328c0380c04f"
+      },
+      "czesci_rosliny.ziele.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "W części nadziemnej rośliny zawarty jest olejek gorczyczny o bardzo ostrym smaku, flawonoid alliarozyd, glukozynolany (m.in. synigryna), sinapina, witamina C i A.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s342"
+            ]
+          },
+          {
+            "tekst": "Trawa i korzenie zawierają glikozyd syningrynę (CA10HA16OA9NSA2K), z której powstaje 0,033–0,093 % ostrego olejku allilowego o zapachu czosnku.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s3302"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "28c614fd9cbe8610"
+      },
+      "zastosowanie.medyczne": {
+        "tytul": "Praktyczne zastosowanie - Medycyna",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "W medycynie tradycyjnej stosuje się go między innymi jako środek moczopędny.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s349",
+              "s1726"
+            ]
+          },
+          {
+            "tekst": "Czosnek dziki był niegdyś stosowany w medycynie jako środek dezynfekujący, a czasami wykorzystywano go również do opatrywania ran.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s517",
+              "s1730"
+            ]
+          },
+          {
+            "tekst": "Roślina ta jest tradycyjnie stosowana ze względu na swoje właściwości moczopędne, a także w leczeniu reumatyzmu, astmy i dny moczanowej. Świeżej roślinie przypisuje się również właściwości antyseptyczne, dlatego stosuje się ją w postaci okładów.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s3304"
+            ]
+          },
+          {
+            "tekst": "Tradycyjnie czosnek niedźwiedzi stosuje się w przypadku kaszlu, zapalenia oskrzeli, dolegliwości trawiennych oraz w celu gojenia ran. Zawarte w nim glikozydy oleju gorczycznego – przede wszystkim sinigrina – wykazują łagodne działanie przeciwbakteryjne. Saponiny wspomagają rozrzedzanie śluzu w drogach oddechowych",
+            "zrodla": [
+              7
+            ],
+            "fakty": [
+              "s547"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "9ead0081c736066e"
+      },
+      "permakultura.funkcje": {
+        "tytul": "Cykl życia i ekosystem - Permakultura - funkcje",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Roślina miododajna. Kwitnie w kwietniu i maju przez 30 dni.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s3300"
+            ]
+          },
+          {
+            "tekst": "Zioło to sadzono również w celu zapobiegania erozji.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s518"
+            ]
+          },
+          {
+            "tekst": "Jest to jeden z nielicznych inwazyjnych gatunków roślin zielnych, które potrafią zdominować runo lasów północnoamerykańskich, co spowodowało zmniejszenie różnorodności biologicznej na wielu obszarach.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s646"
+            ]
+          },
+          {
+            "tekst": "Motyl dzienny Pararge aegeria chętnie żeruje na nektarze czosnku niedźwiedziego. Roślina ta służy również motylowi Anthocharis cardamines jako źródło nektaru, a jednocześnie – obok szczawiu łąkowego – stanowi pożywienie dla jego gąsienic. Jako roślinę pokarmową wykorzystuje ją również silnie zagrożony motyl mącznik",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s1886"
+            ]
+          },
+          {
+            "tekst": "Z jej korzeni wydziela się substancja, dzięki której odstrasza inne rośliny.",
+            "zrodla": [
+              7
+            ],
+            "fakty": [
+              "s550"
             ]
           },
           {
@@ -2236,7 +2615,106 @@
           }
         ],
         "model": "bez LLM",
-        "wejscie": "a604935f30d63ed7"
+        "wejscie": "397e007a712eca09"
+      },
+      "czesci_rosliny.kwiaty.wlasciwości": {
+        "tytul": "Surowce i zbiory - Kwiaty (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Obecnie posiekane liście wykorzystuje się do przyprawiania sałatek i sosów, takich jak pesto, a czasami dodaje się do nich również kwiaty i owoce.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s520"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "d5c71bb27b386376"
+      },
+      "czesci_rosliny.nasiona.wlasciwości": {
+        "tytul": "Surowce i zbiory - Nasiona (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "We Francji nasiona te są czasami wykorzystywane do przyprawiania potraw.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s519"
+            ]
+          },
+          {
+            "tekst": "Rozgniecione nasiona były stosowane w medycynie ludowej jako miejscowy środek drażniący (zamiast plastrów musztardowych); roślinę tę stosowano również w leczeniu czyraków i oparzeń, w przypadku astmy oskrzelowej, szkorbutu, biegunki oraz jako środek przeciwrobaczy.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s3299"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "f455d4ed2bef40cd"
+      },
+      "czesci_rosliny.sok.wlasciwości": {
+        "tytul": "Surowce i zbiory - Sok (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "W medycynie wojennej ubiegłego wieku stosowano ją w postaci roztworu alkoholowego do przemywania, a następnie w postaci okładów w celu dezynfekcji i przyspieszenia gojenia się ropnych owrzodzeń.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s3305"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "d128cf42365f5339"
+      },
+      "zastosowanie.rzemieslnicze": {
+        "tytul": "Praktyczne zastosowanie - Rzemiosło",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Czosnek dziki (Alliaria petiolata) — podobno z całych roślin można uzyskać żółty barwnik lub bladozielony po zastosowaniu zaprawy żelazowej",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s544"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "6cb769102de040bb"
+      },
+      "zastosowanie.kosmetyczne": {
+        "tytul": "Praktyczne zastosowanie - Kosmetyka",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Liście stosowano zewnętrznie w leczeniu oparzeń, ran ropnych i owrzodzeń — mają one działanie antyseptyczne.",
+            "zrodla": [
+              9
+            ],
+            "fakty": [
+              "s2395"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "17c2315f0701018f"
       },
       "ostrzezenia": {
         "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
@@ -2262,9 +2740,27 @@
             ]
           },
           {
-            "tekst": "W większych ilościach czosnek niedźwiedzi, ze względu na zawarte w nim olejki gorczyczne, może powodować podrażnienia żołądka u osób wrażliwych",
+            "tekst": "Zjadają ją kozy i bydło. Konie, owce i świnie jej nie jedzą.",
             "zrodla": [
               5
+            ],
+            "fakty": [
+              "s3296"
+            ]
+          },
+          {
+            "tekst": "Z powodu obecności oleju allilowego w trawie, którą jedzą krowy, mleko nabiera czosnkowego zapachu, czerwono-żółtego koloru oraz ostrego, gryzącego posmaku.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s3297"
+            ]
+          },
+          {
+            "tekst": "W większych ilościach czosnek niedźwiedzi, ze względu na zawarte w nim olejki gorczyczne, może powodować podrażnienia żołądka u osób wrażliwych",
+            "zrodla": [
+              7
             ],
             "fakty": [
               "s548"
@@ -2272,7 +2768,7 @@
           }
         ],
         "model": "bez LLM",
-        "wejscie": "ba488dc523a9b7a6"
+        "wejscie": "1362759fe7631f95"
       },
       "czesci_rosliny.ziele.ostrzezenia": {
         "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Ostrzeżenia",
@@ -2301,41 +2797,41 @@
         "model": "bez LLM",
         "wejscie": "a68ad9f96366e01c"
       },
-      "zastosowanie.ogrodowe": {
-        "tytul": "Praktyczne zastosowanie - Ogród",
-        "typ": "tekst",
-        "oryginal": null,
-        "tresc": [
-          {
-            "tekst": "Zioło to sadzono również w celu zapobiegania erozji.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s518"
-            ]
-          }
-        ],
-        "model": "bez LLM",
-        "wejscie": "846b1ad189f0365a"
-      },
       "wymagania.woda": {
         "tytul": "Natura i siedlisko - Woda",
         "typ": "tekst",
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Jest to jeden z nielicznych inwazyjnych gatunków roślin zielnych, które potrafią zdominować runo lasów północnoamerykańskich, co spowodowało zmniejszenie różnorodności biologicznej na wielu obszarach.",
+            "tekst": "Od marca należy utrzymywać glebę stale wilgotną. Podczas długich okresów suszy rośliny należy podlewać.",
             "zrodla": [
-              3
+              8
             ],
             "fakty": [
-              "s646"
+              "s659"
             ]
           }
         ],
         "model": "bez LLM",
-        "wejscie": "e189b5c7e182e5cd"
+        "wejscie": "5f941194fec02fb9"
+      },
+      "zastosowanie.kulinarne": {
+        "tytul": "Praktyczne zastosowanie - Kuchnia",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Jego korzenie mają smak zbliżony do rzodkiewki i również nadają się do spożycia.",
+            "zrodla": [
+              4
+            ],
+            "fakty": [
+              "s3307"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "c2d175d3c56cf825"
       }
     },
     "uzyte_fakty": [
@@ -2344,8 +2840,10 @@
       "s1730",
       "s1867",
       "s1868",
+      "s1869",
       "s1870",
       "s1871",
+      "s1872",
       "s1873",
       "s1874",
       "s1875",
@@ -2353,6 +2851,9 @@
       "s1878",
       "s1879",
       "s1880",
+      "s1881",
+      "s1882",
+      "s1883",
       "s1884",
       "s1885",
       "s1886",
@@ -2361,10 +2862,22 @@
       "s2393",
       "s2394",
       "s2395",
+      "s3296",
+      "s3297",
+      "s3298",
+      "s3299",
+      "s3300",
+      "s3301",
+      "s3302",
+      "s3303",
+      "s3304",
+      "s3305",
+      "s3307",
       "s341",
       "s342",
       "s343",
       "s344",
+      "s345",
       "s346",
       "s347",
       "s348",
@@ -2376,6 +2889,7 @@
       "s354",
       "s355",
       "s356",
+      "s503",
       "s505",
       "s510",
       "s511",
@@ -2388,6 +2902,7 @@
       "s518",
       "s519",
       "s520",
+      "s543",
       "s544",
       "s545",
       "s546",
@@ -2408,7 +2923,7 @@
     "Nasiona": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Alliaria_petiolata_kz03.jpg/960px-Alliaria_petiolata_kz03.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-11-06",
+    "zaktualizowano": "2026-11-20",
     "w_url": true,
     "zdjecia": [
       {
@@ -2457,111 +2972,5 @@
         "zrodlo": "Wikimedia Commons"
       }
     ]
-  },
-  "rozmieszczenie": {
-    "wersja": 1,
-    "zaktualizowano": "2026-11-03",
-    "jak": "reguly",
-    "wejscie": "2716261bf038e0cf",
-    "wstawki": [
-      {
-        "miejsce": "natura/wystepowanie",
-        "rozdzial": "Natura i siedlisko",
-        "tytul": "Występowanie i zasięg",
-        "ikona": "ra-compass",
-        "nowy": true,
-        "punkty": [
-          {
-            "tekst": "W Polsce gatunek jest pospolity niemal na całym obszarze, rzadziej spotykany jest tylko w północno-wschodniej części kraju i w łódzkim.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s503"
-            ],
-            "sekcja": "wystepowanie",
-            "czesc": null
-          },
-          {
-            "tekst": "W górach rośnie tylko w niższych położeniach; w Tatrach tylko w Dolinie Kościeliskiej, najwyżej sięga ok. 1100 m n.p.m. w Bieszczadach Zachodnich.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s1869"
-            ],
-            "sekcja": "wystepowanie",
-            "czesc": null
-          },
-          {
-            "tekst": "Kiełkowanie następuje wiosną, głównie w marcu i kwietniu, po opadach i w czasie ociepleń. Część siewek pojawia się także po intensywnych opadach w maju i na początku czerwca.",
-            "zrodla": [
-              1
-            ],
-            "fakty": [
-              "s1872"
-            ],
-            "sekcja": "wystepowanie",
-            "czesc": null
-          },
-          {
-            "tekst": "W rzeczywistości jest to gatunek roślin występujący w lasach liściastych, ale szczególnie dobrze rozwija się w zaroślach i żywopłotach, a także przy murach i na poboczach dróg, w ogrodach oraz na terenach porośniętych roślinnością ruderalną.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s543"
-            ],
-            "sekcja": "wystepowanie",
-            "czesc": null
-          },
-          {
-            "tekst": "Często występuje tam w sąsiedztwie pokrzyw. [...] Może również rosnąć epifitycznie w rozgałęzieniach drzew.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s1881"
-            ],
-            "sekcja": "wystepowanie",
-            "czesc": null
-          },
-          {
-            "tekst": "W Alpach Allgäu w Bawarii, w pobliżu Scheuen-Alpe, na południowy wschód od Balderschwang, wznosi się ona na wysokość do 1080 metrów nad poziomem morza. W kantonie Valais osiąga nawet 1800 metrów.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s1882"
-            ],
-            "sekcja": "wystepowanie",
-            "czesc": null
-          },
-          {
-            "tekst": "Czosnek niedźwiedzi jest w Ameryce Północnej i Południowej neofitem uznawanym za roślinę inwazyjną.",
-            "zrodla": [
-              2
-            ],
-            "fakty": [
-              "s1883"
-            ],
-            "sekcja": "wystepowanie",
-            "czesc": null
-          },
-          {
-            "tekst": "Występuje naturalnie w Europie, zachodniej i środkowej Azji, północno-zachodniej Afryce, Maroku, na Półwyspie Iberyjskim i na Wyspach Brytyjskich, na północy sięgając aż do północnej Skandynawii, a na wschodzie – do północnego Pakistanu i Xinjiangu w zachodnich Chinach.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s345"
-            ],
-            "sekcja": "wystepowanie",
-            "czesc": null
-          }
-        ]
-      }
-    ],
-    "duplikaty": []
   }
 }

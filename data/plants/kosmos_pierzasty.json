@@ -12,8 +12,8 @@
   "_siedziba_nowa": true,
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-11-06",
-    "uporzadkowano": "2026-11-06",
+    "zaktualizowano": "2026-11-19",
+    "uporzadkowano": "2026-11-19",
     "uklad": "deterministyczny",
     "zrodla": [
       {
@@ -43,6 +43,27 @@
         "jezyk": "ja",
         "typ": "wikipedia",
         "nr": 4
+      },
+      {
+        "nazwa": "Wikipedia (lt): Paprastoji kosmėja",
+        "url": "https://lt.wikipedia.org/wiki/Paprastoji_kosm%C4%97ja",
+        "jezyk": "lt",
+        "typ": "wikipedia",
+        "nr": 5
+      },
+      {
+        "nazwa": "Wikipedia (uk): Космея звичайна",
+        "url": "https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D1%81%D0%BC%D0%B5%D1%8F_%D0%B7%D0%B2%D0%B8%D1%87%D0%B0%D0%B9%D0%BD%D0%B0",
+        "jezyk": "uk",
+        "typ": "wikipedia",
+        "nr": 6
+      },
+      {
+        "nazwa": "Weblio (slowniki i encyklopedie JP)",
+        "url": "https://www.weblio.jp/content/%E3%82%AA%E3%82%AA%E3%83%8F%E3%83%AB%E3%82%B7%E3%83%A3%E3%82%AE%E3%82%AF",
+        "jezyk": "ja",
+        "typ": "strona",
+        "nr": 7
       }
     ],
     "sekcje": [
@@ -73,6 +94,36 @@
             ]
           },
           {
+            "tekst": "Ząbki są duże, kwiaty języczkowe są białe, różowawe, fioletowe; kwiaty rurkowate są żółte.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s3263"
+            ]
+          },
+          {
+            "tekst": "Kwitnie od lipca do października.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s3264"
+            ]
+          },
+          {
+            "tekst": "Kielichy rozłożyste, przykwiatki od liniowych do lancetowatych, o długości 6–13 mm, z zaostrzonymi wierzchołkami.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s3241"
+            ]
+          },
+          {
             "tekst": "Jego liście wyglądają, jakby były precyzyjnie pocięte na nitkowate fragmenty.",
             "czesc": "liście",
             "zrodla": [
@@ -90,6 +141,16 @@
             ],
             "fakty": [
               "s3059"
+            ]
+          },
+          {
+            "tekst": "Liście: ogonki o długości 0 lub do 1 cm; blaszki liściowe o długości 6–11 cm, końcowe klapki o szerokości do 1,5 mm, brzegi całe, wierzchołki ostre (stwardniałe).",
+            "czesc": "liście",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s3240"
             ]
           },
           {
@@ -129,6 +190,36 @@
             "fakty": [
               "s3056"
             ]
+          },
+          {
+            "tekst": "Rośnie na poboczach dróg na wysokości 0–1000 m n.p.m.",
+            "czesc": null,
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s3242"
+            ]
+          },
+          {
+            "tekst": "Kwitnie od lata do jesieni.",
+            "czesc": null,
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s3243"
+            ]
+          },
+          {
+            "tekst": "Wprowadzony na Karaiby, do Ameryki Środkowej, Ameryki Południowej i Azji.",
+            "czesc": null,
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s3244"
+            ]
           }
         ]
       },
@@ -146,6 +237,24 @@
             ],
             "fakty": [
               "s3055"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kultura",
+        "tytul": "Wierzenia i tradycje",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Są one co roku ofiarowywane księciu tronu. Nasiona żółtego kampasu można nabyć w sklepie Uniwersytetu Tamagawa oraz w niektórych kwiaciarniach.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              7
+            ],
+            "fakty": [
+              "s3123"
             ]
           }
         ]
@@ -213,6 +322,16 @@
             "fakty": [
               "s3064"
             ]
+          },
+          {
+            "tekst": "W Litwie uprawia się ją w ogrodach, na cmentarzach i w gospodarstwach wiejskich.",
+            "czesc": null,
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s3265"
+            ]
           }
         ]
       },
@@ -222,6 +341,16 @@
         "podsumowanie": null,
         "podsumowanie_zrodla": [],
         "punkty": [
+          {
+            "tekst": "Jest to ulubiona roślina ogrodowa, która zadomowiła się w wielu innych miejscach niemal na całym świecie; wysiewa się ją na poboczach dróg.",
+            "czesc": null,
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s3245"
+            ]
+          },
           {
             "tekst": "Podobnie jak jadalne kwiaty rumianku i dalii, kwiaty Cosmos bipinnatus zawierają flawonoid o nazwie apigenina.",
             "czesc": "kwiaty",
@@ -246,17 +375,22 @@
       }
     ],
     "czesci": {
+      "kwiaty": [
+        "s3263",
+        "s3264",
+        "s3241",
+        "s3055",
+        "s3123",
+        "s3066",
+        "s3065"
+      ],
       "liście": [
         "s3058",
-        "s3059"
+        "s3059",
+        "s3240"
       ],
       "owoce": [
         "s3060"
-      ],
-      "kwiaty": [
-        "s3055",
-        "s3066",
-        "s3065"
       ]
     },
     "fakty": [
@@ -439,12 +573,132 @@
           "url": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%82%AA%E3%83%8F%E3%83%AB%E3%82%B7%E3%83%A3%E3%82%AE%E3%82%AF"
         },
         "cytat": "オオハルシャギク（大春車菊、大波斯菊、学名：Cosmos bipinnatus Cav.）は、キク科コスモス属の一年草。コスモス、アキザクラ（秋桜）とも呼ぶ。一般的にコスモスは、この種を指す。"
+      },
+      {
+        "id": "s3123",
+        "sekcja": "kultura",
+        "czesc": "kwiaty",
+        "tekst": "Są one co roku ofiarowywane księciu tronu. Nasiona żółtego kampasu można nabyć w sklepie Uniwersytetu Tamagawa oraz w niektórych kwiaciarniach.",
+        "jezyk": "ja",
+        "zrodlo": {
+          "nazwa": "Weblio (slowniki i encyklopedie JP)",
+          "url": "https://www.weblio.jp/content/%E3%82%AA%E3%82%AA%E3%83%8F%E3%83%AB%E3%82%B7%E3%83%A3%E3%82%AE%E3%82%AF"
+        },
+        "cytat": "これらは毎年皇太子に献上されている。イエローキャンパスの種は玉川大学購買部のほか一部の一般生花店で購入可能である。"
+      },
+      {
+        "id": "s3240",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Liście: ogonki o długości 0 lub do 1 cm; blaszki liściowe o długości 6–11 cm, końcowe klapki o szerokości do 1,5 mm, brzegi całe, wierzchołki ostre (stwardniałe).",
+        "jezyk": "uk",
+        "zrodlo": {
+          "nazwa": "Wikipedia (uk): Космея звичайна",
+          "url": "https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D1%81%D0%BC%D0%B5%D1%8F_%D0%B7%D0%B2%D0%B8%D1%87%D0%B0%D0%B9%D0%BD%D0%B0"
+        },
+        "cytat": "Листя: черешки 0 або до 1 см; лопаті 6-11 см, кінцеві частки до 1,5 мм завширшки, краї цілі, верхівки гострі (затверділі)."
+      },
+      {
+        "id": "s3241",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Kielichy rozłożyste, przykwiatki od liniowych do lancetowatych, o długości 6–13 mm, z zaostrzonymi wierzchołkami.",
+        "jezyk": "uk",
+        "zrodlo": {
+          "nazwa": "Wikipedia (uk): Космея звичайна",
+          "url": "https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D1%81%D0%BC%D0%B5%D1%8F_%D0%B7%D0%B2%D0%B8%D1%87%D0%B0%D0%B9%D0%BD%D0%B0"
+        },
+        "cytat": "Чашечки розлогі, приквітки від лінійних до ланцетних 6–13 мм, верхівки загострені."
+      },
+      {
+        "id": "s3242",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Rośnie na poboczach dróg na wysokości 0–1000 m n.p.m.",
+        "jezyk": "uk",
+        "zrodlo": {
+          "nazwa": "Wikipedia (uk): Космея звичайна",
+          "url": "https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D1%81%D0%BC%D0%B5%D1%8F_%D0%B7%D0%B2%D0%B8%D1%87%D0%B0%D0%B9%D0%BD%D0%B0"
+        },
+        "cytat": "Зростає на узбіччях доріг на висоті 0–1000 м над рівнем моря."
+      },
+      {
+        "id": "s3243",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Kwitnie od lata do jesieni.",
+        "jezyk": "uk",
+        "zrodlo": {
+          "nazwa": "Wikipedia (uk): Космея звичайна",
+          "url": "https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D1%81%D0%BC%D0%B5%D1%8F_%D0%B7%D0%B2%D0%B8%D1%87%D0%B0%D0%B9%D0%BD%D0%B0"
+        },
+        "cytat": "Цвіте з літа по осінь."
+      },
+      {
+        "id": "s3244",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "Wprowadzony na Karaiby, do Ameryki Środkowej, Ameryki Południowej i Azji.",
+        "jezyk": "uk",
+        "zrodlo": {
+          "nazwa": "Wikipedia (uk): Космея звичайна",
+          "url": "https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D1%81%D0%BC%D0%B5%D1%8F_%D0%B7%D0%B2%D0%B8%D1%87%D0%B0%D0%B9%D0%BD%D0%B0"
+        },
+        "cytat": "Інтродукований у Вест-Індії, Центральній Америці, Південній Америці, Азії."
+      },
+      {
+        "id": "s3245",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Jest to ulubiona roślina ogrodowa, która zadomowiła się w wielu innych miejscach niemal na całym świecie; wysiewa się ją na poboczach dróg.",
+        "jezyk": "uk",
+        "zrodlo": {
+          "nazwa": "Wikipedia (uk): Космея звичайна",
+          "url": "https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D1%81%D0%BC%D0%B5%D1%8F_%D0%B7%D0%B2%D0%B8%D1%87%D0%B0%D0%B9%D0%BD%D0%B0"
+        },
+        "cytat": "Улюблена рослина у садах, вона натуралізувалася в багатьох інших місцях майже по всьому світу, його висівають на узбіччях доріг."
+      },
+      {
+        "id": "s3263",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Ząbki są duże, kwiaty języczkowe są białe, różowawe, fioletowe; kwiaty rurkowate są żółte.",
+        "jezyk": "lt",
+        "zrodlo": {
+          "nazwa": "Wikipedia (lt): Paprastoji kosmėja",
+          "url": "https://lt.wikipedia.org/wiki/Paprastoji_kosm%C4%97ja"
+        },
+        "cytat": "Graižai dideli, liežuviški žiedai balti, rausvi, violetiniai; vamzdiški žiedai geltoni."
+      },
+      {
+        "id": "s3264",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Kwitnie od lipca do października.",
+        "jezyk": "lt",
+        "zrodlo": {
+          "nazwa": "Wikipedia (lt): Paprastoji kosmėja",
+          "url": "https://lt.wikipedia.org/wiki/Paprastoji_kosm%C4%97ja"
+        },
+        "cytat": "Žydi liepos – spalio mėn."
+      },
+      {
+        "id": "s3265",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "W Litwie uprawia się ją w ogrodach, na cmentarzach i w gospodarstwach wiejskich.",
+        "jezyk": "lt",
+        "zrodlo": {
+          "nazwa": "Wikipedia (lt): Paprastoji kosmėja",
+          "url": "https://lt.wikipedia.org/wiki/Paprastoji_kosm%C4%97ja"
+        },
+        "cytat": "Lietuvoje auginama darželiuose, kapinėse, sodybose."
       }
     ]
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-11-06",
+    "zaktualizowano": "2026-11-19",
     "pola": {
       "identyfikacja.cechy_kluczowe": {
         "tytul": "Rozpoznawanie w terenie - Cechy kluczowe",
@@ -470,6 +724,33 @@
             ]
           },
           {
+            "tekst": "Ząbki są duże, kwiaty języczkowe są białe, różowawe, fioletowe; kwiaty rurkowate są żółte.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s3263"
+            ]
+          },
+          {
+            "tekst": "Kwitnie od lipca do października.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s3264"
+            ]
+          },
+          {
+            "tekst": "Kielichy rozłożyste, przykwiatki od liniowych do lancetowatych, o długości 6–13 mm, z zaostrzonymi wierzchołkami.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s3241"
+            ]
+          },
+          {
             "tekst": "Jego liście wyglądają, jakby były precyzyjnie pocięte na nitkowate fragmenty.",
             "zrodla": [
               3
@@ -488,6 +769,15 @@
             ]
           },
           {
+            "tekst": "Liście: ogonki o długości 0 lub do 1 cm; blaszki liściowe o długości 6–11 cm, końcowe klapki o szerokości do 1,5 mm, brzegi całe, wierzchołki ostre (stwardniałe).",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s3240"
+            ]
+          },
+          {
             "tekst": "Słupki przybierają czarnawy kolor, są gładkie lub pokryte krótkimi włoskami. Mają kształt wrzecionowaty.",
             "zrodla": [
               3
@@ -498,7 +788,7 @@
           }
         ],
         "model": "bez LLM",
-        "wejscie": "7da66cf14a19796d"
+        "wejscie": "c3de56dd60dc2eec"
       },
       "wymagania.mrozoodpornosc": {
         "tytul": "Natura i siedlisko - Mrozoodporność",
@@ -533,12 +823,30 @@
         "oryginal": null,
         "tresc": [
           {
+            "tekst": "Są one co roku ofiarowywane księciu tronu. Nasiona żółtego kampasu można nabyć w sklepie Uniwersytetu Tamagawa oraz w niektórych kwiaciarniach.",
+            "zrodla": [
+              7
+            ],
+            "fakty": [
+              "s3123"
+            ]
+          },
+          {
             "tekst": "Cosmos bipinnatus, zwany potocznie kosmosem ogrodowym, asterem meksykańskim lub kosmeą, to średniej wielkości kwitnąca roślina zielna z rodziny astrowatych (Asteraceae), pochodząca z obu Ameryk.",
             "zrodla": [
               3
             ],
             "fakty": [
               "s3057"
+            ]
+          },
+          {
+            "tekst": "Jest to ulubiona roślina ogrodowa, która zadomowiła się w wielu innych miejscach niemal na całym świecie; wysiewa się ją na poboczach dróg.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s3245"
             ]
           },
           {
@@ -561,7 +869,7 @@
           }
         ],
         "model": "bez LLM",
-        "wejscie": "f99a9a1e9a252fde"
+        "wejscie": "cc199ad4dcbf5cb1"
       },
       "wymagania.ph_gleby": {
         "tytul": "Natura i siedlisko - pH gleby",
@@ -612,10 +920,19 @@
             "fakty": [
               "s3063"
             ]
+          },
+          {
+            "tekst": "W Litwie uprawia się ją w ogrodach, na cmentarzach i w gospodarstwach wiejskich.",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s3265"
+            ]
           }
         ],
         "model": "bez LLM",
-        "wejscie": "3f4a062e84b0e4e6"
+        "wejscie": "c8438c020daf2812"
       }
     },
     "uzyte_fakty": [
@@ -631,14 +948,21 @@
       "s3064",
       "s3065",
       "s3066",
-      "s3067"
+      "s3067",
+      "s3123",
+      "s3240",
+      "s3241",
+      "s3245",
+      "s3263",
+      "s3264",
+      "s3265"
     ]
   },
   "rozmieszczenie": {
     "wersja": 1,
-    "zaktualizowano": "2026-11-06",
+    "zaktualizowano": "2026-11-19",
     "jak": "reguly",
-    "wejscie": "b020cb2a007365c1",
+    "wejscie": "cb54d1ed8f3942be",
     "wstawki": [
       {
         "miejsce": "natura/wystepowanie",
@@ -654,6 +978,39 @@
             ],
             "fakty": [
               "s3056"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          },
+          {
+            "tekst": "Rośnie na poboczach dróg na wysokości 0–1000 m n.p.m.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s3242"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          },
+          {
+            "tekst": "Kwitnie od lata do jesieni.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s3243"
+            ],
+            "sekcja": "wystepowanie",
+            "czesc": null
+          },
+          {
+            "tekst": "Wprowadzony na Karaiby, do Ameryki Środkowej, Ameryki Południowej i Azji.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s3244"
             ],
             "sekcja": "wystepowanie",
             "czesc": null
@@ -691,7 +1048,7 @@
     "Pąki": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Knospe_des_Schmuckk%C3%B6rbchens.JPG"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-11-06",
+    "zaktualizowano": "2026-11-19",
     "w_url": true,
     "zdjecia": [
       {
