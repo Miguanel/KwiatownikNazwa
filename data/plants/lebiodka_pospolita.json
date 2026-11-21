@@ -12,33 +12,82 @@
   "_siedziba_nowa": true,
   "wiedza": {
     "wersja": 2,
-    "zaktualizowano": "2026-11-06",
-    "uporzadkowano": "2026-11-06",
+    "zaktualizowano": "2026-11-20",
+    "uporzadkowano": "2026-11-20",
     "uklad": "deterministyczny",
     "zrodla": [
+      {
+        "nazwa": "Wikipedia (pl): Lebiodka pospolita",
+        "url": "https://pl.wikipedia.org/wiki/Lebiodka_pospolita",
+        "jezyk": "pl",
+        "typ": "wikipedia",
+        "nr": 1
+      },
+      {
+        "nazwa": "Wikipedia (de): Oregano",
+        "url": "https://de.wikipedia.org/wiki/Oregano",
+        "jezyk": "de",
+        "typ": "wikipedia",
+        "nr": 2
+      },
+      {
+        "nazwa": "Wikipedia (en): Oregano",
+        "url": "https://en.wikipedia.org/wiki/Oregano",
+        "jezyk": "en",
+        "typ": "wikipedia",
+        "nr": 3
+      },
       {
         "nazwa": "Wikipedia (ja): オレガノ",
         "url": "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%AC%E3%82%AC%E3%83%8E",
         "jezyk": "ja",
         "typ": "wikipedia",
-        "nr": 1
+        "nr": 4
       },
       {
         "nazwa": "Plants For A Future (PFAF)",
         "url": "https://pfaf.org/user/Plant.aspx?LatinName=Origanum+vulgare",
         "jezyk": "en",
         "typ": "strona",
-        "nr": 2
+        "nr": 5
       },
       {
         "nazwa": "www.botanical-online.com",
         "url": "https://www.botanical-online.com/plantas-medicinales/oregano-propiedades",
         "jezyk": "es",
         "typ": "strona",
-        "nr": 3
+        "nr": 6
       }
     ],
     "sekcje": [
+      {
+        "klucz": "opis",
+        "tytul": "Opis i wygląd",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Kwiaty, które mogą być białe, różowe lub jasnofioletowe, mają długość 3–4 mm (0,12–0,18 cala) i pojawiają się latem w postaci skupionych, wyprostowanych kłosów.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3026"
+            ]
+          },
+          {
+            "tekst": "Na liściach występują drobne, przeświecające gruczoły zawierające olejki eteryczne.",
+            "czesc": "liście",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3023"
+            ]
+          }
+        ]
+      },
       {
         "klucz": "wystepowanie",
         "tytul": "Występowanie",
@@ -46,10 +95,20 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
+            "tekst": "W górach sięga zwykle do górnego regla, rzadziej do piętra kosodrzewiny.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3024"
+            ]
+          },
+          {
             "tekst": "Jest szeroko stosowany w kuchni indyjskiej oraz w diecie śródziemnomorskiej; Indie są dużym producentem tego zioła, jednak wydaje się, że Maroko i Grecja są największymi producentami na świecie.",
             "czesc": null,
             "zrodla": [
-              3
+              6
             ],
             "fakty": [
               "s3052"
@@ -64,13 +123,61 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
+            "tekst": "Zbiór i suszenie: zbiera się ziele w okresie kwitnienia i suszy w przewiewnym miejscu w temperaturze nieprzekraczającej 35 stopni Celsjusza (zawieszone w pęczkach).",
+            "czesc": "ziele",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3020"
+            ]
+          },
+          {
             "tekst": "Roślinę można stosować w postaci świeżej lub suszonej – pod koniec lata należy zebrać całą roślinę (z wyjątkiem korzeni), a następnie wysuszyć ją i przechowywać do wykorzystania w okresie zimowym[244].",
+            "czesc": "ziele",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s3042"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W owocach obecny śluz (ok. 6%).",
+            "czesc": "owoce",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3018"
+            ]
+          },
+          {
+            "tekst": "Głównym składnikiem jest olejek eteryczny zwany olejkiem tymolowym, zawierający tymol, karwakrol i seskwiterpeny.",
+            "czesc": "ziele",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3017"
+            ]
+          },
+          {
+            "tekst": "Zawartość witaminy C w świeżej surowicy wynosi 0,2672 g na 100 g masy świeżej.",
             "czesc": "ziele",
             "zrodla": [
               2
             ],
             "fakty": [
-              "s3042"
+              "s3031"
             ]
           }
         ]
@@ -82,10 +189,20 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
+            "tekst": "Zewnętrznie olejek tymolowy wykorzystuje się do płukania gardła, wzmacniających kąpieli oraz przy trudno gojących się ranach skóry i świądzie.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3019"
+            ]
+          },
+          {
             "tekst": "W medycynie zewnętrznej oregano stosuje się w leczeniu zapalenia oskrzeli, astmy, zapalenia stawów i bólu mięśni[238].",
             "czesc": null,
             "zrodla": [
-              2
+              5
             ],
             "fakty": [
               "s3043"
@@ -95,7 +212,7 @@
             "tekst": "Kilka kropli olejku eterycznego naniesionych na wacik i umieszczonych w zagłębieniu bolącego zęba często łagodzi ból zęba[4, 207].",
             "czesc": null,
             "zrodla": [
-              2
+              5
             ],
             "fakty": [
               "s3044"
@@ -105,7 +222,7 @@
             "tekst": "Oprócz wspomagania trawienia żołądkowego, właściwości hepatoprotekcyjne kwasu ursolowego – którego działanie przeciwnowotworowe zostało potwierdzone – sprawiają, że jest on bardzo odpowiedni w leczeniu chorób wątroby.",
             "czesc": null,
             "zrodla": [
-              3
+              6
             ],
             "fakty": [
               "s3047"
@@ -115,7 +232,7 @@
             "tekst": "Jego działanie przeciwbakteryjne wykazano między innymi w odniesieniu do bakterii Salmonella typhimurium, Escherichia coli, Staphylococcus aureus oraz Staphylococcus epidermidis.",
             "czesc": null,
             "zrodla": [
-              3
+              6
             ],
             "fakty": [
               "s3048"
@@ -125,10 +242,20 @@
             "tekst": "Gorące napary z kwiatów tej rośliny pomogą obniżyć gorączkę.",
             "czesc": "kwiaty",
             "zrodla": [
-              3
+              6
             ],
             "fakty": [
               "s3050"
+            ]
+          },
+          {
+            "tekst": "Olejek z oregano jest stosowany w medycynie ludowej od wieków.",
+            "czesc": "liście",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3027"
             ]
           }
         ]
@@ -140,13 +267,41 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
-            "tekst": "Z kwitnących wierzchołków uzyskuje się czerwony lub fioletowy barwnik[4, 7, 13, 100], który nie jest ani intensywny, ani trwały[115].",
-            "czesc": "kwiaty",
+            "tekst": "Poza tym nawet na początku XX wieku książki botaniczne wspominają jedynie o tym, że oregano jest rośliną leczniczą i magiczną oraz że jej czerwonym barwnikiem można farbować wełnę.",
+            "czesc": null,
             "zrodla": [
               2
             ],
             "fakty": [
+              "s3032"
+            ]
+          },
+          {
+            "tekst": "Z kwitnących wierzchołków uzyskuje się czerwony lub fioletowy barwnik[4, 7, 13, 100], który nie jest ani intensywny, ani trwały[115].",
+            "czesc": "kwiaty",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
               "s3046"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kosmetyka",
+        "tytul": "Kosmetyka",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Wchodzi w skład niektórych kosmetyków, jest składnikiem płynów do kąpieli i do płukania ust.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3022"
             ]
           }
         ]
@@ -158,10 +313,20 @@
         "podsumowanie_zrodla": [],
         "punkty": [
           {
+            "tekst": "Hipokrates z Kos stosował tę roślinę w celu przyspieszenia porodu oraz w leczeniu hemoroidów.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s3033"
+            ]
+          },
+          {
             "tekst": "Łodygi i liście z kwiatami zawierają 0,2–0,4% olejków eterycznych (m.in. tymol i karwakrol). W dawnych czasach w Wielkiej Brytanii herbata z oregano była popularna jako środek rozgrzewający brzuch oraz skuteczny w walce z nudnościami i chorobą morską. Uważa się, że herbata z oregano wspomaga trawienie, dlatego w dawnych czasach często można ją było znaleźć na półkach aptek.",
             "czesc": null,
             "zrodla": [
-              1
+              4
             ],
             "fakty": [
               "s3040"
@@ -171,7 +336,7 @@
             "tekst": "Jest to przyprawa niezbędna jako składnik proszku chili, często stosowanego w kuchni meksykańskiej, oraz sosu do pizzy w kuchni włoskiej; stanowi również nieodzowny element potraw kuchni teksańsko-meksykańskiej, takich jak fasola chili i chili con carne. Przyprawa powszechnie nazywana „przyprawą do pizzy” często zawiera głównie oregano. W pamiętniku Johna Lightfoota znajduje się wzmianka o tym, że rolnicy ze szwedzkich gór dodawali oregano do piwa typu ale, aby zneutralizować kwaśny smak i podnieść zawartość alkoholu.",
             "czesc": null,
             "zrodla": [
-              1
+              4
             ],
             "fakty": [
               "s3041"
@@ -181,10 +346,74 @@
             "tekst": "Od starożytności bardzo ceniono jego zastosowanie w żywieniu. Sięga ono czasów starożytnych Egipcjan, którzy – oprócz innych właściwości – przypisywali mu działanie wzmacniające.",
             "czesc": null,
             "zrodla": [
-              3
+              6
             ],
             "fakty": [
               "s3051"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "kultura",
+        "tytul": "Wierzenia i tradycje",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W mitologii greckiej oregano zostało stworzone przez boginię Afrodytę jako symbol szczęścia i zasadzone w jej ogrodzie na górze Olimp.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3028"
+            ]
+          },
+          {
+            "tekst": "Starożytni Grecy używali oregano podczas ceremonii ślubnych oraz jako ofiary pogrzebowe.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3029"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "magia",
+        "tytul": "Magia i zabobony",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Oregano, zwane też „dost”, wkładano do buta panny młodej i wplatało się w bukiet ślubny jako ochronę przed złymi siłami.",
+            "czesc": null,
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s3038"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "nazwy_ludowe",
+        "tytul": "Nazwy ludowe",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Inna nazwa: dziki majeranek.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3016"
             ]
           }
         ]
@@ -199,22 +428,101 @@
             "tekst": "Kobiety w ciąży nie powinny stosować go w celach leczniczych, choć w niewielkich ilościach jest on całkowicie bezpieczny do celów kulinarnych[254].",
             "czesc": null,
             "zrodla": [
-              2
+              5
             ],
             "fakty": [
               "s3045"
             ]
           }
         ]
+      },
+      {
+        "klucz": "uprawa",
+        "tytul": "Uprawa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Oregano sadzi się wczesną wiosną, zachowując odstępy 30 cm (12 cali) między roślinami, w dość suchej glebie, w pełnym słońcu.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3030"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "ciekawostki",
+        "tytul": "Ciekawostki",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Używana jest do przyprawiania niektórych wódek, wina wermut, likierów.",
+            "czesc": null,
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3021"
+            ]
+          },
+          {
+            "tekst": "Pochodzi z regionu śródziemnomorskiego, ale szeroko zadomowiła się również w innych częściach umiarkowanej strefy klimatycznej półkuli północnej, zwłaszcza w Stanach Zjednoczonych i Meksyku.",
+            "czesc": null,
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3025"
+            ]
+          },
+          {
+            "tekst": "Oregano dostarcza nektar, który może zawierać nawet 76% cukru.",
+            "czesc": "kwiaty",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s3034"
+            ]
+          },
+          {
+            "tekst": "Zauważono również, że dżdżownice chętniej zjadają owoce.",
+            "czesc": "owoce",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s3035"
+            ]
+          }
+        ]
       }
     ],
     "czesci": {
-      "ziele": [
-        "s3042"
-      ],
       "kwiaty": [
+        "s3026",
         "s3050",
-        "s3046"
+        "s3046",
+        "s3034"
+      ],
+      "liście": [
+        "s3023",
+        "s3027"
+      ],
+      "ziele": [
+        "s3020",
+        "s3042",
+        "s3017",
+        "s3031"
+      ],
+      "owoce": [
+        "s3018",
+        "s3035"
       ]
     },
     "fakty": [
@@ -361,22 +669,436 @@
           "url": "https://www.botanical-online.com/plantas-medicinales/oregano-propiedades"
         },
         "cytat": "Muy utilizado en la cocina India y en la dieta mediterránea, país gran productor de esta hierba, sin embargo parece que Marruecos y Grecia son los primeros productores del mundo."
+      },
+      {
+        "id": "s3016",
+        "sekcja": "nazwy_ludowe",
+        "czesc": null,
+        "tekst": "Inna nazwa: dziki majeranek.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Lebiodka pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Lebiodka_pospolita"
+        },
+        "cytat": "Inna nazwa: dziki majeranek."
+      },
+      {
+        "id": "s3017",
+        "sekcja": "sklad",
+        "czesc": "ziele",
+        "tekst": "Głównym składnikiem jest olejek eteryczny zwany olejkiem tymolowym, zawierający tymol, karwakrol i seskwiterpeny.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Lebiodka pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Lebiodka_pospolita"
+        },
+        "cytat": "Głównym składnikiem jest olejek eteryczny zwany olejkiem tymolowym, zawierający tymol, karwakrol i seskwiterpeny."
+      },
+      {
+        "id": "s3018",
+        "sekcja": "sklad",
+        "czesc": "owoce",
+        "tekst": "W owocach obecny śluz (ok. 6%).",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Lebiodka pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Lebiodka_pospolita"
+        },
+        "cytat": "W owocach obecny śluz (ok. 6%)."
+      },
+      {
+        "id": "s3019",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": null,
+        "tekst": "Zewnętrznie olejek tymolowy wykorzystuje się do płukania gardła, wzmacniających kąpieli oraz przy trudno gojących się ranach skóry i świądzie.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Lebiodka pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Lebiodka_pospolita"
+        },
+        "cytat": "Zewnętrznie olejek tymolowy wykorzystuje się do płukania gardła, wzmacniających kąpieli oraz przy trudno gojących się ranach skóry i świądzie."
+      },
+      {
+        "id": "s3020",
+        "sekcja": "czesci_rosliny",
+        "czesc": "ziele",
+        "tekst": "Zbiór i suszenie: zbiera się ziele w okresie kwitnienia i suszy w przewiewnym miejscu w temperaturze nieprzekraczającej 35 stopni Celsjusza (zawieszone w pęczkach).",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Lebiodka pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Lebiodka_pospolita"
+        },
+        "cytat": "Zbiór i suszenie: zbiera się ziele w okresie kwitnienia i suszy w przewiewnym miejscu w temperaturze nieprzekraczającej 35 stopni Celsjusza (zawieszone w pęczkach)."
+      },
+      {
+        "id": "s3021",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Używana jest do przyprawiania niektórych wódek, wina wermut, likierów.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Lebiodka pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Lebiodka_pospolita"
+        },
+        "cytat": "Używana jest do przyprawiania niektórych wódek, wina wermut, likierów."
+      },
+      {
+        "id": "s3022",
+        "sekcja": "kosmetyka",
+        "czesc": null,
+        "tekst": "Wchodzi w skład niektórych kosmetyków, jest składnikiem płynów do kąpieli i do płukania ust.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Lebiodka pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Lebiodka_pospolita"
+        },
+        "cytat": "Wchodzi w skład niektórych kosmetyków, jest składnikiem płynów do kąpieli i do płukania ust."
+      },
+      {
+        "id": "s3023",
+        "sekcja": "opis",
+        "czesc": "liście",
+        "tekst": "Na liściach występują drobne, przeświecające gruczoły zawierające olejki eteryczne.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Lebiodka pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Lebiodka_pospolita"
+        },
+        "cytat": "Na liściach występują drobne, przeświecające gruczoły zawierające olejki eteryczne."
+      },
+      {
+        "id": "s3024",
+        "sekcja": "wystepowanie",
+        "czesc": null,
+        "tekst": "W górach sięga zwykle do górnego regla, rzadziej do piętra kosodrzewiny.",
+        "jezyk": "pl",
+        "zrodlo": {
+          "nazwa": "Wikipedia (pl): Lebiodka pospolita",
+          "url": "https://pl.wikipedia.org/wiki/Lebiodka_pospolita"
+        },
+        "cytat": "W górach sięga zwykle do górnego regla, rzadziej do piętra kosodrzewiny."
+      },
+      {
+        "id": "s3025",
+        "sekcja": "ciekawostki",
+        "czesc": null,
+        "tekst": "Pochodzi z regionu śródziemnomorskiego, ale szeroko zadomowiła się również w innych częściach umiarkowanej strefy klimatycznej półkuli północnej, zwłaszcza w Stanach Zjednoczonych i Meksyku.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Oregano",
+          "url": "https://en.wikipedia.org/wiki/Oregano"
+        },
+        "cytat": "It is native to the Mediterranean region but widely naturalised elsewhere in the temperate Northern Hemisphere, particularly the United States and Mexico."
+      },
+      {
+        "id": "s3026",
+        "sekcja": "opis",
+        "czesc": "kwiaty",
+        "tekst": "Kwiaty, które mogą być białe, różowe lub jasnofioletowe, mają długość 3–4 mm (0,12–0,18 cala) i pojawiają się latem w postaci skupionych, wyprostowanych kłosów.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Oregano",
+          "url": "https://en.wikipedia.org/wiki/Oregano"
+        },
+        "cytat": "The flowers, which can be white, pink or light purple, are 3–4 mm (0.12–0.18 in) long and produced in clustered, erect spikes in summer."
+      },
+      {
+        "id": "s3027",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "liście",
+        "tekst": "Olejek z oregano jest stosowany w medycynie ludowej od wieków.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Oregano",
+          "url": "https://en.wikipedia.org/wiki/Oregano"
+        },
+        "cytat": "Oregano oil has been used in folk medicine over centuries."
+      },
+      {
+        "id": "s3028",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "W mitologii greckiej oregano zostało stworzone przez boginię Afrodytę jako symbol szczęścia i zasadzone w jej ogrodzie na górze Olimp.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Oregano",
+          "url": "https://en.wikipedia.org/wiki/Oregano"
+        },
+        "cytat": "In Greek mythology, oregano was created by the goddess Aphrodite as a symbol of happiness and planted in her garden on Mount Olympus."
+      },
+      {
+        "id": "s3029",
+        "sekcja": "kultura",
+        "czesc": null,
+        "tekst": "Starożytni Grecy używali oregano podczas ceremonii ślubnych oraz jako ofiary pogrzebowe.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Oregano",
+          "url": "https://en.wikipedia.org/wiki/Oregano"
+        },
+        "cytat": "The ancient Greeks used oregano in wedding ceremonies and as funerary offerings."
+      },
+      {
+        "id": "s3030",
+        "sekcja": "uprawa",
+        "czesc": null,
+        "tekst": "Oregano sadzi się wczesną wiosną, zachowując odstępy 30 cm (12 cali) między roślinami, w dość suchej glebie, w pełnym słońcu.",
+        "jezyk": "en",
+        "zrodlo": {
+          "nazwa": "Wikipedia (en): Oregano",
+          "url": "https://en.wikipedia.org/wiki/Oregano"
+        },
+        "cytat": "Oregano is planted in early spring, the plants being spaced 30 cm (12 in) apart in fairly dry soil, with full sun."
+      },
+      {
+        "id": "s3031",
+        "sekcja": "sklad",
+        "czesc": "ziele",
+        "tekst": "Zawartość witaminy C w świeżej surowicy wynosi 0,2672 g na 100 g masy świeżej.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Oregano",
+          "url": "https://de.wikipedia.org/wiki/Oregano"
+        },
+        "cytat": "Der Vitamin-C-Gehalt der frischen Droge beträgt 0,2672 g pro 100 g Frischgewicht."
+      },
+      {
+        "id": "s3032",
+        "sekcja": "barwienie",
+        "czesc": null,
+        "tekst": "Poza tym nawet na początku XX wieku książki botaniczne wspominają jedynie o tym, że oregano jest rośliną leczniczą i magiczną oraz że jej czerwonym barwnikiem można farbować wełnę.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Oregano",
+          "url": "https://de.wikipedia.org/wiki/Oregano"
+        },
+        "cytat": "Ansonsten lassen sich botanische Bücher selbst noch zu Beginn des 20. Jahrhunderts lediglich darüber aus, dass Oregano Heil- und Zauberpflanze sei und dass man mit seinem roten Farbstoff Wolle färben könne."
+      },
+      {
+        "id": "s3033",
+        "sekcja": "historia",
+        "czesc": null,
+        "tekst": "Hipokrates z Kos stosował tę roślinę w celu przyspieszenia porodu oraz w leczeniu hemoroidów.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Oregano",
+          "url": "https://de.wikipedia.org/wiki/Oregano"
+        },
+        "cytat": "Hippokrates von Kos diente diese Pflanze zur Geburtsbeschleunigung und zur Heilung von Hämorrhoiden."
+      },
+      {
+        "id": "s3034",
+        "sekcja": "ciekawostki",
+        "czesc": "kwiaty",
+        "tekst": "Oregano dostarcza nektar, który może zawierać nawet 76% cukru.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Oregano",
+          "url": "https://de.wikipedia.org/wiki/Oregano"
+        },
+        "cytat": "Der Oregano bietet Nektar an, der bis zu 76 % Zucker enthalten kann."
+      },
+      {
+        "id": "s3035",
+        "sekcja": "ciekawostki",
+        "czesc": "owoce",
+        "tekst": "Zauważono również, że dżdżownice chętniej zjadają owoce.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Oregano",
+          "url": "https://de.wikipedia.org/wiki/Oregano"
+        },
+        "cytat": "Auch wurde beobachtet, dass Regenwürmer bevorzugt die Früchte aufnehmen."
+      },
+      {
+        "id": "s3038",
+        "sekcja": "magia",
+        "czesc": null,
+        "tekst": "Oregano, zwane też „dost”, wkładano do buta panny młodej i wplatało się w bukiet ślubny jako ochronę przed złymi siłami.",
+        "jezyk": "de",
+        "zrodlo": {
+          "nazwa": "Wikipedia (de): Oregano",
+          "url": "https://de.wikipedia.org/wiki/Oregano"
+        },
+        "cytat": "Oregano oder Dost wurde als Schutz vor bösen Mächten in den Brautschuh gelegt und in den Brautstrauß eingebunden."
       }
     ]
   },
   "scalone": {
     "wersja": 1,
-    "zaktualizowano": "2026-11-06",
+    "zaktualizowano": "2026-11-20",
     "pola": {
+      "czesci_rosliny.kwiaty.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Kwiaty (nowa część z sieci): Opis surowca",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Kwiaty, które mogą być białe, różowe lub jasnofioletowe, mają długość 3–4 mm (0,12–0,18 cala) i pojawiają się latem w postaci skupionych, wyprostowanych kłosów.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3026"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "fb6ec6fa52658140"
+      },
+      "czesci_rosliny.liście.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Liście (nowa część z sieci): Opis surowca",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Na liściach występują drobne, przeświecające gruczoły zawierające olejki eteryczne.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3023"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "1cf02641a8fd2cc3"
+      },
+      "wymagania.stanowisko": {
+        "tytul": "Natura i siedlisko - Stanowisko",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "W górach sięga zwykle do górnego regla, rzadziej do piętra kosodrzewiny.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3024"
+            ]
+          },
+          {
+            "tekst": "Pochodzi z regionu śródziemnomorskiego, ale szeroko zadomowiła się również w innych częściach umiarkowanej strefy klimatycznej półkuli północnej, zwłaszcza w Stanach Zjednoczonych i Meksyku.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3025"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "39a75fd36b671fbd"
+      },
+      "zastosowanie.kulinarne": {
+        "tytul": "Praktyczne zastosowanie - Kuchnia",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Jest szeroko stosowany w kuchni indyjskiej oraz w diecie śródziemnomorskiej; Indie są dużym producentem tego zioła, jednak wydaje się, że Maroko i Grecja są największymi producentami na świecie.",
+            "zrodla": [
+              6
+            ],
+            "fakty": [
+              "s3052"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "fab8038f2f78c4e5"
+      },
+      "czesci_rosliny.ziele.czas_zbioru": {
+        "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Zbiór",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Zbiór i suszenie: zbiera się ziele w okresie kwitnienia i suszy w przewiewnym miejscu w temperaturze nieprzekraczającej 35 stopni Celsjusza (zawieszone w pęczkach).",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3020"
+            ]
+          },
+          {
+            "tekst": "Roślinę można stosować w postaci świeżej lub suszonej – pod koniec lata należy zebrać całą roślinę (z wyjątkiem korzeni), a następnie wysuszyć ją i przechowywać do wykorzystania w okresie zimowym[244].",
+            "zrodla": [
+              5
+            ],
+            "fakty": [
+              "s3042"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "9ea0a58bb9edfcd9"
+      },
+      "czesci_rosliny.owoce.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Owoce (nowa część z sieci): Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "W owocach obecny śluz (ok. 6%).",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3018"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "176e9ae278043ddd"
+      },
+      "czesci_rosliny.ziele.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Ziele (nowa część z sieci): Substancje czynne",
+        "typ": "lista",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Głównym składnikiem jest olejek eteryczny zwany olejkiem tymolowym, zawierający tymol, karwakrol i seskwiterpeny.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3017"
+            ]
+          },
+          {
+            "tekst": "Zawartość witaminy C w świeżej surowicy wynosi 0,2672 g na 100 g masy świeżej.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s3031"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "fea6ce42cf61ec68"
+      },
       "zastosowanie.medyczne": {
         "tytul": "Praktyczne zastosowanie - Medycyna",
         "typ": "tekst",
         "oryginal": null,
         "tresc": [
           {
+            "tekst": "Zewnętrznie olejek tymolowy wykorzystuje się do płukania gardła, wzmacniających kąpieli oraz przy trudno gojących się ranach skóry i świądzie.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3019"
+            ]
+          },
+          {
             "tekst": "W medycynie zewnętrznej oregano stosuje się w leczeniu zapalenia oskrzeli, astmy, zapalenia stawów i bólu mięśni[238].",
             "zrodla": [
-              2
+              5
             ],
             "fakty": [
               "s3043"
@@ -385,7 +1107,7 @@
           {
             "tekst": "Kilka kropli olejku eterycznego naniesionych na wacik i umieszczonych w zagłębieniu bolącego zęba często łagodzi ból zęba[4, 207].",
             "zrodla": [
-              2
+              5
             ],
             "fakty": [
               "s3044"
@@ -394,7 +1116,7 @@
           {
             "tekst": "Oprócz wspomagania trawienia żołądkowego, właściwości hepatoprotekcyjne kwasu ursolowego – którego działanie przeciwnowotworowe zostało potwierdzone – sprawiają, że jest on bardzo odpowiedni w leczeniu chorób wątroby.",
             "zrodla": [
-              3
+              6
             ],
             "fakty": [
               "s3047"
@@ -403,7 +1125,7 @@
           {
             "tekst": "Jego działanie przeciwbakteryjne wykazano między innymi w odniesieniu do bakterii Salmonella typhimurium, Escherichia coli, Staphylococcus aureus oraz Staphylococcus epidermidis.",
             "zrodla": [
-              3
+              6
             ],
             "fakty": [
               "s3048"
@@ -411,7 +1133,7 @@
           }
         ],
         "model": "bez LLM",
-        "wejscie": "96a3fe1c01de6d41"
+        "wejscie": "edaf0ee92455fa17"
       },
       "czesci_rosliny.kwiaty.wlasciwości": {
         "tytul": "Surowce i zbiory - Kwiaty (nowa część z sieci): Działanie",
@@ -421,7 +1143,7 @@
           {
             "tekst": "Gorące napary z kwiatów tej rośliny pomogą obniżyć gorączkę.",
             "zrodla": [
-              3
+              6
             ],
             "fakty": [
               "s3050"
@@ -431,15 +1153,42 @@
         "model": "bez LLM",
         "wejscie": "3c9e8793af7fc73a"
       },
+      "czesci_rosliny.liście.wlasciwości": {
+        "tytul": "Surowce i zbiory - Liście (nowa część z sieci): Działanie",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Olejek z oregano jest stosowany w medycynie ludowej od wieków.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3027"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "7dcc688cf65cd177"
+      },
       "zastosowanie.rzemieslnicze": {
         "tytul": "Praktyczne zastosowanie - Rzemiosło",
         "typ": "tekst",
         "oryginal": null,
         "tresc": [
           {
-            "tekst": "Z kwitnących wierzchołków uzyskuje się czerwony lub fioletowy barwnik[4, 7, 13, 100], który nie jest ani intensywny, ani trwały[115].",
+            "tekst": "Poza tym nawet na początku XX wieku książki botaniczne wspominają jedynie o tym, że oregano jest rośliną leczniczą i magiczną oraz że jej czerwonym barwnikiem można farbować wełnę.",
             "zrodla": [
               2
+            ],
+            "fakty": [
+              "s3032"
+            ]
+          },
+          {
+            "tekst": "Z kwitnących wierzchołków uzyskuje się czerwony lub fioletowy barwnik[4, 7, 13, 100], który nie jest ani intensywny, ani trwały[115].",
+            "zrodla": [
+              5
             ],
             "fakty": [
               "s3046"
@@ -447,7 +1196,25 @@
           }
         ],
         "model": "bez LLM",
-        "wejscie": "29adcae1021d7983"
+        "wejscie": "5e8cc0632cceb9bb"
+      },
+      "zastosowanie.kosmetyczne": {
+        "tytul": "Praktyczne zastosowanie - Kosmetyka",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Wchodzi w skład niektórych kosmetyków, jest składnikiem płynów do kąpieli i do płukania ust.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3022"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "edda040288b2a604"
       },
       "ciekawostki": {
         "tytul": "Wiedza tajemna - Ciekawostki",
@@ -455,9 +1222,18 @@
         "oryginal": null,
         "tresc": [
           {
+            "tekst": "Hipokrates z Kos stosował tę roślinę w celu przyspieszenia porodu oraz w leczeniu hemoroidów.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s3033"
+            ]
+          },
+          {
             "tekst": "Łodygi i liście z kwiatami zawierają 0,2–0,4% olejków eterycznych (m.in. tymol i karwakrol). W dawnych czasach w Wielkiej Brytanii herbata z oregano była popularna jako środek rozgrzewający brzuch oraz skuteczny w walce z nudnościami i chorobą morską. Uważa się, że herbata z oregano wspomaga trawienie, dlatego w dawnych czasach często można ją było znaleźć na półkach aptek.",
             "zrodla": [
-              1
+              4
             ],
             "fakty": [
               "s3040"
@@ -466,7 +1242,7 @@
           {
             "tekst": "Jest to przyprawa niezbędna jako składnik proszku chili, często stosowanego w kuchni meksykańskiej, oraz sosu do pizzy w kuchni włoskiej; stanowi również nieodzowny element potraw kuchni teksańsko-meksykańskiej, takich jak fasola chili i chili con carne. Przyprawa powszechnie nazywana „przyprawą do pizzy” często zawiera głównie oregano. W pamiętniku Johna Lightfoota znajduje się wzmianka o tym, że rolnicy ze szwedzkich gór dodawali oregano do piwa typu ale, aby zneutralizować kwaśny smak i podnieść zawartość alkoholu.",
             "zrodla": [
-              1
+              4
             ],
             "fakty": [
               "s3041"
@@ -475,15 +1251,69 @@
           {
             "tekst": "Od starożytności bardzo ceniono jego zastosowanie w żywieniu. Sięga ono czasów starożytnych Egipcjan, którzy – oprócz innych właściwości – przypisywali mu działanie wzmacniające.",
             "zrodla": [
-              3
+              6
             ],
             "fakty": [
               "s3051"
             ]
+          },
+          {
+            "tekst": "W mitologii greckiej oregano zostało stworzone przez boginię Afrodytę jako symbol szczęścia i zasadzone w jej ogrodzie na górze Olimp.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3028"
+            ]
+          },
+          {
+            "tekst": "Starożytni Grecy używali oregano podczas ceremonii ślubnych oraz jako ofiary pogrzebowe.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3029"
+            ]
+          },
+          {
+            "tekst": "Inna nazwa: dziki majeranek.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3016"
+            ]
+          },
+          {
+            "tekst": "Używana jest do przyprawiania niektórych wódek, wina wermut, likierów.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s3021"
+            ]
+          },
+          {
+            "tekst": "Oregano dostarcza nektar, który może zawierać nawet 76% cukru.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s3034"
+            ]
+          },
+          {
+            "tekst": "Zauważono również, że dżdżownice chętniej zjadają owoce.",
+            "zrodla": [
+              2
+            ],
+            "fakty": [
+              "s3035"
+            ]
           }
         ],
         "model": "bez LLM",
-        "wejscie": "4fd350a939c8cb70"
+        "wejscie": "0988d12e4ec0a2c8"
       },
       "ostrzezenia": {
         "tytul": "Bezpieczeństwo i interakcje - Przeciwwskazania",
@@ -493,7 +1323,7 @@
           {
             "tekst": "Kobiety w ciąży nie powinny stosować go w celach leczniczych, choć w niewielkich ilościach jest on całkowicie bezpieczny do celów kulinarnych[254].",
             "zrodla": [
-              2
+              5
             ],
             "fakty": [
               "s3045"
@@ -502,11 +1332,50 @@
         ],
         "model": "bez LLM",
         "wejscie": "ad93076449fc1b59"
+      },
+      "zastosowanie.ogrodowe": {
+        "tytul": "Praktyczne zastosowanie - Ogród",
+        "typ": "tekst",
+        "oryginal": null,
+        "tresc": [
+          {
+            "tekst": "Oregano sadzi się wczesną wiosną, zachowując odstępy 30 cm (12 cali) między roślinami, w dość suchej glebie, w pełnym słońcu.",
+            "zrodla": [
+              3
+            ],
+            "fakty": [
+              "s3030"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "1e241da39b4ede78"
       }
     },
     "uzyte_fakty": [
+      "s3016",
+      "s3017",
+      "s3018",
+      "s3019",
+      "s3020",
+      "s3021",
+      "s3022",
+      "s3023",
+      "s3024",
+      "s3025",
+      "s3026",
+      "s3027",
+      "s3028",
+      "s3029",
+      "s3030",
+      "s3031",
+      "s3032",
+      "s3033",
+      "s3034",
+      "s3035",
       "s3040",
       "s3041",
+      "s3042",
       "s3043",
       "s3044",
       "s3045",
@@ -514,54 +1383,37 @@
       "s3047",
       "s3048",
       "s3050",
-      "s3051"
+      "s3051",
+      "s3052"
     ]
   },
   "rozmieszczenie": {
     "wersja": 1,
-    "zaktualizowano": "2026-11-06",
-    "jak": "reguly",
-    "wejscie": "b7d047bd2ae76e8e",
+    "zaktualizowano": "2026-11-20",
+    "jak": "llm:groq/openai/gpt-oss-120b",
+    "wejscie": "7a6527c80df1460f",
     "wstawki": [
       {
-        "miejsce": "natura/wystepowanie",
-        "rozdzial": "Natura i siedlisko",
-        "tytul": "Występowanie i zasięg",
-        "ikona": "ra-compass",
+        "miejsce": "magia/ochrona",
+        "rozdzial": "Magia i zabobony",
+        "tytul": "Ochrona i odpędzanie zła",
+        "ikona": "ra-tower",
         "nowy": true,
         "punkty": [
           {
-            "tekst": "Jest szeroko stosowany w kuchni indyjskiej oraz w diecie śródziemnomorskiej; Indie są dużym producentem tego zioła, jednak wydaje się, że Maroko i Grecja są największymi producentami na świecie.",
-            "zrodla": [
-              3
-            ],
-            "fakty": [
-              "s3052"
-            ],
-            "sekcja": "wystepowanie",
-            "czesc": null
-          }
-        ]
-      },
-      {
-        "miejsce": "surowce/czesc:ziele",
-        "rozdzial": "Surowce i zbiory",
-        "tytul": "Ziele",
-        "ikona": "ra-potion",
-        "nowy": true,
-        "punkty": [
-          {
-            "tekst": "Roślinę można stosować w postaci świeżej lub suszonej – pod koniec lata należy zebrać całą roślinę (z wyjątkiem korzeni), a następnie wysuszyć ją i przechowywać do wykorzystania w okresie zimowym[244].",
+            "tekst": "Oregano, zwane też „dost”, wkładano do buta panny młodej i wplatało się w bukiet ślubny jako ochronę przed złymi siłami.",
             "zrodla": [
               2
             ],
             "fakty": [
-              "s3042"
+              "s3038"
             ],
-            "sekcja": "czesci_rosliny",
-            "czesc": "ziele"
+            "sekcja": "magia",
+            "czesc": null
           }
-        ]
+        ],
+        "rozdzial_ikona": "ra-cauldron",
+        "rozdzial_po": "tajemna"
       }
     ],
     "duplikaty": []
@@ -572,7 +1424,7 @@
     "Rycina": "https://upload.wikimedia.org/wikipedia/commons/a/a7/254_Origanum_vulgare_L.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-11-19",
+    "zaktualizowano": "2026-11-20",
     "w_url": true,
     "zdjecia": [
       {

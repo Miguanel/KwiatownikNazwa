@@ -122,7 +122,7 @@
     "Rycina": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Salix_alba_%28as_S._vitellina%29_Thom%C3%A9_1904%2C_2nd_ed.%2C_vol_2%2C_plate_159%2C_cropped%2C_clean%2C_no_caption.jpg/960px-Salix_alba_%28as_S._vitellina%29_Thom%C3%A9_1904%2C_2nd_ed.%2C_vol_2%2C_plate_159%2C_cropped%2C_clean%2C_no_caption.jpg"
   },
   "zdjecia_wiki": {
-    "zaktualizowano": "2026-11-04",
+    "zaktualizowano": "2026-11-20",
     "w_url": true,
     "zdjecia": [
       {
@@ -170,6 +170,344 @@
         "licencja_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
         "zrodlo": "Wikimedia Commons"
       }
+    ]
+  },
+  "wiedza": {
+    "wersja": 2,
+    "zaktualizowano": "2026-11-20",
+    "uporzadkowano": "2026-11-20",
+    "uklad": "deterministyczny",
+    "zrodla": [
+      {
+        "nazwa": "stronazdrowia.pl",
+        "url": "https://stronazdrowia.pl/kora-wierzby-wlasciwosci-zdrowotne-i-lecznicze-roslinna-aspiryna-ma-wiele-zastosowan-na-co-pomaga-kora-wierzby/ar/c14-15156826",
+        "jezyk": "pl-PL",
+        "typ": "strona",
+        "nr": 1
+      }
+    ],
+    "sekcje": [
+      {
+        "klucz": "czesci_rosliny",
+        "tytul": "Części rośliny i surowce",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Dawniej sięgano głównie po liście i sok z wierzby, natomiast obecnie surowcem leczniczym jest najczęściej kora pozyskiwana z wierzby białej (Salix alba), rzadziej z wierzby purpurowej (Salix purpura).",
+            "czesc": "kora",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2822"
+            ]
+          },
+          {
+            "tekst": "Kora wierzby powinna być zbierana wiosną, gdy tylko w drzewie zaczną krążyć soki, ale zanim pojawią się na nim liście i tak zwane bazie albo kotki.",
+            "czesc": "kora",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2826"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "sklad",
+        "tytul": "Skład i substancje czynne",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Kora wierzby (Salicis cortex) zawiera duże ilości glikozydów fenolowych, przede wszystkim salicyny oraz salikortyny, które są salicylanami mają działanie podobne do popularnego, syntetycznego kwasu acetylosalicylowego.",
+            "czesc": "kora",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2823"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "zastosowanie_lecznicze",
+        "tytul": "Ziołolecznictwo i medycyna ludowa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "Kora wierzby stymuluje też wydzielanie żółci i wykazuje działanie uspokajające.",
+            "czesc": "kora",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2824"
+            ]
+          }
+        ]
+      },
+      {
+        "klucz": "historia",
+        "tytul": "Historia i nazwa",
+        "podsumowanie": null,
+        "podsumowanie_zrodla": [],
+        "punkty": [
+          {
+            "tekst": "W 1829 roku, czyli ponad 100 lat przed otrzymaniem kwasu salicylowego, wyodrębniono z kory wierzby salicynę, związek czynny o działaniu przeciwbakteryjnym.",
+            "czesc": "kora",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2825"
+            ]
+          }
+        ]
+      }
+    ],
+    "czesci": {
+      "kora": [
+        "s2822",
+        "s2826",
+        "s2823",
+        "s2824",
+        "s2825"
+      ]
+    },
+    "fakty": [
+      {
+        "id": "s2822",
+        "sekcja": "czesci_rosliny",
+        "czesc": "kora",
+        "tekst": "Dawniej sięgano głównie po liście i sok z wierzby, natomiast obecnie surowcem leczniczym jest najczęściej kora pozyskiwana z wierzby białej (Salix alba), rzadziej z wierzby purpurowej (Salix purpura).",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/kora-wierzby-wlasciwosci-zdrowotne-i-lecznicze-roslinna-aspiryna-ma-wiele-zastosowan-na-co-pomaga-kora-wierzby/ar/c14-15156826"
+        },
+        "cytat": "Dawniej sięgano głównie po liście i sok z wierzby, natomiast obecnie surowcem leczniczym jest najczęściej kora pozyskiwana z wierzby białej (Salix alba), rzadziej z wierzby purpurowej (Salix purpura)."
+      },
+      {
+        "id": "s2823",
+        "sekcja": "sklad",
+        "czesc": "kora",
+        "tekst": "Kora wierzby (Salicis cortex) zawiera duże ilości glikozydów fenolowych, przede wszystkim salicyny oraz salikortyny, które są salicylanami mają działanie podobne do popularnego, syntetycznego kwasu acetylosalicylowego.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/kora-wierzby-wlasciwosci-zdrowotne-i-lecznicze-roslinna-aspiryna-ma-wiele-zastosowan-na-co-pomaga-kora-wierzby/ar/c14-15156826"
+        },
+        "cytat": "Kora wierzby (Salicis cortex) zawiera duże ilości glikozydów fenolowych, przede wszystkim salicyny oraz salikortyny, które są salicylanami mają działanie podobne do popularnego, syntetycznego kwasu acetylosalicylowego."
+      },
+      {
+        "id": "s2824",
+        "sekcja": "zastosowanie_lecznicze",
+        "czesc": "kora",
+        "tekst": "Kora wierzby stymuluje też wydzielanie żółci i wykazuje działanie uspokajające.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/kora-wierzby-wlasciwosci-zdrowotne-i-lecznicze-roslinna-aspiryna-ma-wiele-zastosowan-na-co-pomaga-kora-wierzby/ar/c14-15156826"
+        },
+        "cytat": "Kora wierzby stymuluje też wydzielanie żółci i wykazuje działanie uspokajające."
+      },
+      {
+        "id": "s2825",
+        "sekcja": "historia",
+        "czesc": "kora",
+        "tekst": "W 1829 roku, czyli ponad 100 lat przed otrzymaniem kwasu salicylowego, wyodrębniono z kory wierzby salicynę, związek czynny o działaniu przeciwbakteryjnym.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/kora-wierzby-wlasciwosci-zdrowotne-i-lecznicze-roslinna-aspiryna-ma-wiele-zastosowan-na-co-pomaga-kora-wierzby/ar/c14-15156826"
+        },
+        "cytat": "W 1829 roku, czyli ponad 100 lat przed otrzymaniem kwasu salicylowego, wyodrębniono z kory wierzby salicynę, związek czynny o działaniu przeciwbakteryjnym."
+      },
+      {
+        "id": "s2826",
+        "sekcja": "czesci_rosliny",
+        "czesc": "kora",
+        "tekst": "Kora wierzby powinna być zbierana wiosną, gdy tylko w drzewie zaczną krążyć soki, ale zanim pojawią się na nim liście i tak zwane bazie albo kotki.",
+        "jezyk": "pl-PL",
+        "zrodlo": {
+          "nazwa": "stronazdrowia.pl",
+          "url": "https://stronazdrowia.pl/kora-wierzby-wlasciwosci-zdrowotne-i-lecznicze-roslinna-aspiryna-ma-wiele-zastosowan-na-co-pomaga-kora-wierzby/ar/c14-15156826"
+        },
+        "cytat": "Kora wierzby powinna być zbierana wiosną, gdy tylko w drzewie zaczną krążyć soki, ale zanim pojawią się na nim liście i tak zwane bazie albo kotki."
+      }
+    ]
+  },
+  "scalone": {
+    "wersja": 1,
+    "zaktualizowano": "2026-11-20",
+    "pola": {
+      "czesci_rosliny.kora.opis_botaniczny": {
+        "tytul": "Surowce i zbiory - Cortex Salicis: Opis surowca",
+        "typ": "tekst",
+        "oryginal": "Pozyskiwana wiosną z 2-3 letnich gałęzi, gdy soki zaczynają krążyć (łatwo oddziela się od drewna).",
+        "tresc": [
+          {
+            "tekst": "Pozyskiwana wiosną z 2-3 letnich gałęzi, gdy soki zaczynają krążyć (łatwo oddziela się od drewna).",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Dawniej sięgano głównie po liście i sok z wierzby, natomiast obecnie surowcem leczniczym jest najczęściej kora pozyskiwana z wierzby białej (Salix alba), rzadziej z wierzby purpurowej (Salix purpura).",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2822"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "343198ad73c91e93"
+      },
+      "czesci_rosliny.kora.czas_zbioru": {
+        "tytul": "Surowce i zbiory - Cortex Salicis: Zbiór",
+        "typ": "tekst",
+        "oryginal": "Marzec - Kwiecień.",
+        "tresc": [
+          {
+            "tekst": "Marzec - Kwiecień.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kora wierzby powinna być zbierana wiosną, gdy tylko w drzewie zaczną krążyć soki, ale zanim pojawią się na nim liście i tak zwane bazie albo kotki.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2826"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "8c0e7832b02e923f"
+      },
+      "czesci_rosliny.kora.skladniki_aktywne": {
+        "tytul": "Surowce i zbiory - Cortex Salicis: Substancje czynne",
+        "typ": "lista",
+        "oryginal": [
+          "Glikozydy fenolowe (salicyna, salikortyna, populina) - w organizmie metabolizowane do kwasu salicylowego",
+          "Garbniki (do 10%)",
+          "Flawonoidy",
+          "Kwasy fenolowe"
+        ],
+        "tresc": [
+          {
+            "tekst": "Glikozydy fenolowe (salicyna, salikortyna, populina) - w organizmie metabolizowane do kwasu salicylowego",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Garbniki (do 10%)",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Flawonoidy",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kwasy fenolowe",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kora wierzby (Salicis cortex) zawiera duże ilości glikozydów fenolowych, przede wszystkim salicyny oraz salikortyny, które są salicylanami mają działanie podobne do popularnego, syntetycznego kwasu acetylosalicylowego.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2823"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "129b2ef0e0078675"
+      },
+      "czesci_rosliny.kora.wlasciwości": {
+        "tytul": "Surowce i zbiory - Cortex Salicis: Działanie",
+        "typ": "tekst",
+        "oryginal": "Przeciwgorączkowe, przeciwzapalne, przeciwbólowe (antyneuralgiczne), przeciwreumatyczne, odkażające.",
+        "tresc": [
+          {
+            "tekst": "Przeciwgorączkowe, przeciwzapalne, przeciwbólowe (antyneuralgiczne), przeciwreumatyczne, odkażające.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Kora wierzby stymuluje też wydzielanie żółci i wykazuje działanie uspokajające.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2824"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "348d10e7e1e9315d"
+      },
+      "ciekawostki": {
+        "tytul": "Wiedza tajemna - Ciekawostki",
+        "typ": "lista",
+        "oryginal": [
+          "Syntetyczna aspiryna (kwas acetylosalicylowy) została stworzona jako stabilniejsza wersja salicyny odkrytej w wierzbie.",
+          "Wierzba posiada niesamowitą zdolność do ukorzeniania się – świeżo ścięty kołek wierzbowy wbity w wilgotną ziemię prawie zawsze wypuści liście.",
+          "W tradycji ludowej 'bazie' wierzbowe poświęcone w Palmową Niedzielę połykano, aby zapobiec bólom gardła i głowy przez cały rok.",
+          "Wierzba jest nazywana 'energetycznym wampirem' – wierzono, że przytulenie się do starej wierzby pomaga 'oddać' drzewu gorączkę i ból."
+        ],
+        "tresc": [
+          {
+            "tekst": "Syntetyczna aspiryna (kwas acetylosalicylowy) została stworzona jako stabilniejsza wersja salicyny odkrytej w wierzbie.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Wierzba posiada niesamowitą zdolność do ukorzeniania się – świeżo ścięty kołek wierzbowy wbity w wilgotną ziemię prawie zawsze wypuści liście.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W tradycji ludowej 'bazie' wierzbowe poświęcone w Palmową Niedzielę połykano, aby zapobiec bólom gardła i głowy przez cały rok.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "Wierzba jest nazywana 'energetycznym wampirem' – wierzono, że przytulenie się do starej wierzby pomaga 'oddać' drzewu gorączkę i ból.",
+            "zrodla": [],
+            "fakty": []
+          },
+          {
+            "tekst": "W 1829 roku, czyli ponad 100 lat przed otrzymaniem kwasu salicylowego, wyodrębniono z kory wierzby salicynę, związek czynny o działaniu przeciwbakteryjnym.",
+            "zrodla": [
+              1
+            ],
+            "fakty": [
+              "s2825"
+            ]
+          }
+        ],
+        "model": "bez LLM",
+        "wejscie": "c36aadbb6bdf82c0"
+      }
+    },
+    "uzyte_fakty": [
+      "s2822",
+      "s2823",
+      "s2824",
+      "s2825",
+      "s2826"
     ]
   }
 }
